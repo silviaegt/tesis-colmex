@@ -1,0 +1,1254 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRO EN ECONOMIA CENTRO DE ESTUDIOS ECONOMICOS EL COLEGIO DE MEXICO 
+un análisis empirico del programa ambiental "Hoy no circula" 
+JOSE WIS GUTIERREZ PONCE 
+PROMOCION 1992-1994 
+Enero, 1995. 
+ASESOR: Dr. Carlos Manuel Urz Macías 
+A mis Padres. 
+A mis hermanos. 
+A mis abuelos, dos y primos. 
+A mis amigos y compalieros. 
+A mi asesor Dr. Carlos M. Urz Macias. 
+Al coordinador de la maestría Dr. Jorge Fernández Ruiz. 
+A El Colegio de México. 
+RESUMEN 
+En este trabajo se analizan los alcances y limitaciones del Programa Ambiental "Hoy No Circula" asi como su influencia sobre los mercados de gasolina y de automiles en la Zona Metropolitana de la Ciudad de México. A partir de la relaci que guardan estos tres fenenos, se realizun análisis econométrico para la evaluaci del programa. La evaluaci consistien introducir variables dicoticas a un vector autorregresivo para analizar la efectividad del programa ambiental en estos mercados. Nuestros resultados econométricos fundamentales muestran que el programa tuvo efecto so en el mercado de gasolinas y exclusivamente durante su vigencia temporal 
+INDICE 
+Tema Página 
+Introducci 1 
+1 La Contaminaci 3 
+2 Las Soluciones 5 
+2.1 El Programa "Hoy No CircuJa" 6 
+3 El Parque VehicuJar 9 
+3.1 Las Ventas de Automiles 9 
+4 Metodología 14 
+4.1 Análisis Estadístico de los Datos 16 4:2 Transformaciones 22 
+4.3 Raíces Unitarias 26 
+4.4 Procesos ARlMA 28 
+4.4.1 Criterios de Selecci 29 4.4.2 Ajustes 33 4.5 Causalidad 34 
+4.6 Vectores Autorregresivos 36 
+4.6.1 Criterios de Selecci 40 
+4.6.2 Otros Modelos 42 
+5 El Modelo 44 
+5.1 Un Vector Autorregresivo 44 
+5.2 Variables Exenas 47 
+5.2.1 Las Variables de Intervenci 48 
+5.3 Evaluaci del Verano 51 
+5.4 El Pacto en el Corto Plazo 53 
+5.5 Determinaci del Modelo 56 5.6 lmpuJsos 56 
+5.6. 1 Análisis de los impulsos 59 
+6 Conclusionés 64 7 Apéndices 71 
+A Los Contaminantes 71 
+B El Convertidor Catalítico 77 
+C Gráficos de las Funciones de 83 Autocorrelaci y Autocorrelaci 
+D Parámetros de los Modelos Estimados 91 D1 Parámetros de los Modelos ARJMA 91 D2 Parámetros del Modelo VAR-1 92 D3 Parámetros del Modelo VAR-2 93 D4 Parámetros del Modelo V AR-3 94 D5 Parámetros del Modelo V AR-4 95 06 Parámetros del Modelo V AR-5 96 
+E Gráficos de las Series Diferenciadas 98 
+8 Bibliografla 101 
+ÍNDICE DE GRÁFICOS 
+Gráfico Página 
+l Ventas mensuaJes de automiles a nivel naciona1 1 O 2 Ventas de vehículos en la ZMCM y el resto del país 11 3 Precio del automil relativo al precio de 1980 12 4 Consumo de gasolina en la ZMCM 13 5 Índices de precios y precio deflactado de los automiles 16 6 PIB Trimestral e índice del volumen de la producci industrial 17 7 Tasa inflacionaria en la Ciudad de México 18 8 Tasa de interés nominal anuaJizada Cetes a 28 días 19 9 Tasa de interés reaJ anuaJizada 20 1 O Precios nominales de la gasolina 21 11 Precio real de la gasolina 22 12 Consumo de gasolina en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos ARIMA. 33 13 Precio del automil en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos ARIMA. 34 14 Consumo de gasolina en la Zona MetropoJitana del Distrito Federal. Estimaciones con modelos ARIMA 
+y VAR-1 46 
+15 Precio del automil en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos ARIMA. yU~I  ~  
+16 Consumo de gasolina en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos VAR 1 y 2  50  
+17 Precio del automil en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos VAR 1y 2  50  
+18 Consumo de gasolina en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos VAR 2 y 3  52  
+19 Precio del automil en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos VAR 2 y 3  53  
+20 Consumo de gasolina en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos VAR 3 y 4  54  
+21 Precio del automil en la Zona Metropolitana del Distrito Federal. Estimaciones con modelos VAR 3 y 4  55  
+22 Respuesta de la tasa de crecimiento del precio del automil a un choque exeno  60  
+23 Respuesta de la tasa de crecimiento del consumo de gasolina a un choque exeno en el precio del automil  61  
+24 Respuesta de la tasa de crecimiento del consumo de gasolina a un choque exeno  62  
+25 Respuesta de la tasa de crecimiento del precio del automil a un choque exeno en el consumo de gasolina  63  
+
+
+ÍNDICE DE CUADROS 
+Cuadro Página 
+1 Notaci 23 
+2 Resultados de la prueba de raíces unitarias de Dickey-Fuller 27 
+3 Resultados de las pruebas de causalidad de 35 Granger 
+INTRODUCCION. 
+La contaminaci ambiental es un problema que afecta la salud y. por lo tanto, la vida cotidiana de la Ciudad de México. Alrededor del 700/o de las emisiones de contaminantes que existen en la atmfera del D.F. provienen de vehículos con motor a gasolina, una situaci grave en términos sociales que Hev desde hace algunos aiios, a la necesidad de instrumentar acciones tendientes a solucionar el problema de 1a contaminaci. Dentro de la estrategia para disminuir 1a presencia de contaminantes, destaca el Programa Ambiental "Hoy No Circula", que dispone el descanso obligatorio del parque vehicu1ar un día a la semana para contribuir a la soluci de este problema. 
+El impacto de este programa co1110 estrategia de combate a 1a contaminaci exige de nuevas evaluaciones. Las cuales a su vez requieren establecer qué relaci existe entre esta medida y el desarro11o de la demanda de gasolina; y cuál es la relaci entre el mercado de gasolina y el mercado de automiles. 
+En virtud de e11o, este trabajo realiza una evaluaci econométrica de la relaci entre estas dos variables econicas y se enriquece con 1a introducci de variables exenas a e11as. Asimismo, se introducen variables dicoticas con duraciones distintas para evaluar los efectos que ha tenido el Programa en el corto o mediano plazo y su significado actual. 
+Con este propito en mente, se aborda en la primera secci del trabajo, el problema de la contaminaci, sus componentes y los das que causan. En la segunda parte, se mencionan de manera suscinta, las medidas que se han tomado para solucionar dicho problema. El tercer apartado se dedica al comportamiento del parque vehicular y las ventas de automiles El capítulo cuarto se ocupan del tratamiento estadístico de los datos para, en funci de ello, en el capítulo quinto construir un modelo y evaluar sus bondades. El sexto apartado se dedica a analizar las reacciones que los choques exenos provocan en las variables del sistema. Una tima secci recoge las conclusiones fundamentales que se desprenden de todo el trabajo. 
+1. LA CONTAMINACION. 
+La contaminaci atmosférica es producto principalmente de los procesos de combusti en los que la fuente de energía son combustibles files. La industria, los vehículos y los establecimientos de servicios, en conjunto, producen a1rededor del 90°/o de las emisiones de contaminantes hacia la atmfera de la Zona Metropolitana de la Ciudad de México (ZMCM)1 • De ahí que la emisi de contaminantes se encuentre relacionada con el consumo de energía de las actividades productivas y otras relacionadas como el transporte. 
+La ZMtM produce alrededor del 500/o del producto interno bruto del país. Esto suporte un consumo muy alto de energía y, por ende, una elevada emisi de contaminantes. Desde este punto de vista, el problema de la contaminaci se resolvería con la descentra1iz.aci de la economía, pero involucraría costos muy elevados en el corto plazo tanto para el gobierno como para la industria y los particulares. 
+Desde la perspectiva inter-temporal, a pesar de ser elevados los costos de la descentraliz.aci resultarían menores que los que implica continuar brindando servicios a una poblaci en constante crecimiento, pues los costos marginales son crecientes, sin dejar de considerar que al continuar subsidiando 
+1La Zona Metropolitana de la Ciudad de México comprende al Distrito Federal y los diecisiete municipios conurbados del Estado de México. 
+servicios. se estimula a más la expansi de los asentamientos dado que el precio por vivir en esta Ciudad resulta más barato de lo que en realidad cuesta. 
+Las emisiones de contaminantes realizadas por vehículos representan el 76% del total emitido a la atmfera de la ZMCM2 • Estos contaminantes son principalmente biido de carbono, idos nitrosos, idos plbicos e hidrocarburos residuales de una combusti no exhaustiva. La industria y el sector servicios por su parte generan partículas y idos sulfurosos, además de la contaminaci que ocasionan en los ríos por desechos no tratados. Para una profundizaci en el tema de los contaminantes diríjase al apéndice A. 
+2 Seg el Programa Integral Contra la Contaminaci Atmosférica de la .zona Metropolitana de la Ciudad de México el transporte plico concesionado ene el 24% de las emisiones vehiculares, el sistema Ruta 100 ene el 1%, los camiones de carga a gasolina el 24% y los camiones de carga a diese! el 2%, aunque la contribuci en partículas y biido de azuíre de los camiones es sumamente importante. 
+2. LAS SOLUCIONES. 
+La contaminaci del aire es un mal que se considera como mta extemalidad sobre consumidores y productores. Para controlarla se han venido realizando ciertas acciones y estrategias tendientes a solventar esta problemática. Entre e11as destacan las siguientes: 
+Para disminuir la cantidad de contaminantes emitidos a la atmfera se han tomado varias medidas, que van desde el control de los pr<;>cesos de combusti en los automiles y la industria por medio de normas de calidad en las emisiones y la reducci de la capacidad contaminante de los combustibles, hasta la restricci del uso de los automiles un día a la semana y la suspensi de la actividad industrial. 
+Para controlar la cantidad de plomo se realizla sustin,.ci de las gasolinas con plomo. A partir de septiembre de 1989 se introdujo al mercado la gasolina sin plomo en lugar de la gasolina Extra que no era muy comercial. Esta ha sido denominada Magna Sin la cual es, por razones técnicas, exigida por automiles modelo 1991 en adelante con convertidor catalítico. Esta gasolina tiene un contenido de plomo casi nulo, O.Olg/gal, mientras que la Nova Plus contiene de 0.5 a 1 mi/gal de tetraetilo de plomo. La demanda de esta tima ha ido disminuyendo paulatinamente pues la Magna Sin es indispensable para modelos recientes. Una medida más adoptada hacia finales de 1993 es la elaboraci del Diesel Sin que tiene el objetivo de disminuir las emisiones de compuestos sulfurados. 
+Para disminuir los niveles de contaminaci y controlar las cantidades de monido de carbono y idos nitrosos, en enero de 1989, se instalel sistema de verificaci de automiles. Este sistema tiene el objetivo de supervisar que los automiles se encuentre dentro de una nonna establecida en cuanto a emisi de contaminantes arrojados hacia el ambiente. Una medida más fue la adopci del programa "Hoy No Circula". 
+La tima medida tomada para los automiles es la inclusi de convertidores catalíticos para disminuir la concentraci de contaminantes emitidos en los gases de combusti. Para profundiz.ar en este tema refiérase a1 apéndice B. 
+En a1gunos otros países, europeos por lo generaJ, se han implementado políticas impositivas en las que aquellos ciudadanos que poséan automiles que excedan una edad determinada deben pagar un impuesto. Ello ha dado resultados importantes en materia de prevenci de la ciudadanía en cuanto a contaminaci. 
+
+2.1. EL PROGRAMA "HOY NO CIRCULA" 
+Durante la temporada invernal, las concentraciones de contaminantes alcanzan sus niveles más elevados por las bajas temperaturas y las inversiones térmicas. 
+Por esta raz en novietpbre de 1988 el Departamento del Distrito Federal realizuna campa de convencimiento para que los ciudadanos desistieran voluntariamente de utilizar su automil un día a la semana y así disminuir la cantidad de emisiones ticas. Este programa no tuvo el efecto deseado porque los automovilistas siempre esperaron que el problema 1o solucionara la participaci de los demás y no la propia, considerando que ellos podían excluirse de participar en el programa sin afectar marginalmente los resultados. Como consecuencia se presentel comportamiento del "poliz"3 • 
+El 20 de noviembre de 1989 el Departamento del Distrito Federal implementel programa "Hoy No Circula',4 . Este programa ha consistido en prohibir la circulaci de los automiles un dfa a la semana de manera temporal. El programa tendría duraci hasta febrero de 1990 y su objetivo central fue el de disminuir la contaminaci en un monto más que proporcional al de los autos que no circulan, por un doble efecto: la no emisi de los automiles que dejan de circular y, con dicha reducci en el parque vehicu]ar, se agilizaría el tránsito disminuyendo los congestionamientos y aumentando la velocidad media de circulaci. 
+Para adaptarse a estas nuevas condiciones, los ciudadanos capitalinos se 
+organizaron vecinalmente para trasladarse de manera conjunta, ya fuera a la 
+3 El problema del poli7. es commente conocido en inglés como el "Free-Rider". 4 La implementaci del programa "Hoy No Circula" se publicen el Diario Oficial de la Federaci con fecha 8 de noviembre de 1989. 
+escuela o aJ trabajo, así utilizarían y harían un mayor uso del transporte plico, bajo el considerando de que esta contingencia era temporal, lo cual lleven su primera etapa a una disminuci inmediata del parque vehicular en circulaci. Al analizar los resultados inmediatos del programa se pensque eran buenos y podrían extrapoJarse a largo plazo. Fue entonces que se decidirenovar el programa "Hoy No,CircuJa" con carácter permanente el 1° de marzo de 1990. 
+Al conocerse que el programa era permanente, los individuos cambiaron su actitud para, de acuerdo a sus posibilidades econicas, mantenerse en una situaci semejante a la que prevalecía antes de la implementaci del programa. En algunos casos, ello se tradujo en la compra de un automil más, para su utilizaci el día en que el auto principal no circulaba. Ello consecuent en el mediano plazo, que la cantidad de automiles en circuJaci aumentara en términos absolutos aJ igualarse con la existente antes de el programa. Es decir, a diferencia de la actitud adoptada cuando el programa era emergente y transitorio, los individuos desplazaron sus curvas de demanda, las cuales se ajustaron a un nuevo nivel de equilibrio. 
+3. EL PARQUE VEfflCULAR. 
+En la ZMCM el parque vehicular tenía un comportamiento constante hasta 1990, afio en que empeza presentar una tendencia-creciente. Mientras en 1987 la proporci de automiles registrados en la Ciudad de México del total registrado en el país era del 19.9°/o, y en 1989 tenía una participaci del 18.8%, para 1991 ya alcanzaba una participaci del 22.8%. 
+La participaci de los automiles respecto al total del parque vehicular en el D.F. se ha mantenido alrededor del 90°/o, mientras que en el resto del país esta proporci es del 700/o. Mientras en 1987 el 25.5% de los automiles particulares se hallaban registrados en la capital y en 1989 el 24.So/o, para 1991 ya eran el 30.2%. 
+De acuerdo a informaci del INEGI (1994) la tasa de crecimiento del parque vehicular en el Distrito Federal se incrementa partir de 1990 a valores entre un 15 y 22o/o, mientras que en los aftos inmediatos anteriores estuvo por debajo del 100/o, reflejando los resultados de los datos mencionados anteriormente. 
+3.1. LAS VENTAS DE AUTOMOVILES. 
+A partir de el establecimiento del Pacto de Solidaridad Econica en diciembre de 1987. las ventas de automiles5 empezaron a incrementarse con un 
+sEntendiéndose como ventas de automiles a aquellas de automiles nuevos. 
+comportamiento constante que al parecer no fue alterado por el programa "Hoy No Circula". En el gráfico 1 se presentan las ventas de automiles a nivel nacional. En este mercado, los automiles populares son los de mayor venta; los compactos contribuyen en un volmnen considerable pero menor y los automiles deportivos. de lujo e importados so fonnan una parte peque del mismo. 
+Gnfflco 1 
+VENTAS MENSUALES NACIONALES DE AUTOMO~ES 
+
+Las ventas sufrieron una disminuci en su tendencia durante 1992• como respuesta a la contracci de la economía que. a su vez. se debial cambio en ]as expectativas de crecimiento del país. El reajuste en las proporciones de la actividad econica del país se debia1 imperativo de adaptarse al nuevo entorno de mercado abierto y de competitividad a nivel internacional. No obstante, las ventas en provincia han aumentado su participaci en los timos as (véase gráfico 2). 
+Gráfico 2 
+VENTA DE VEHlCULOS EN LA ZMCM 
+V EL RESTO DEL PAIS 
+
+RESTO DEL PAIS 
+
+
+i:::::..1 
+I~­
+-~~~ 
+"º 
+100 
+,o 
+o 
+
+rea] de los automiles ha disminuido hasta principios de 1992, aunque desde entonces se ha comportado de manera estable (véase gráfico 3). Si el precio ya no decrece, el incremento en las ventas dependerá de otros factores. 
+A pesar de que las ventas de automiles no se vieron afectadas por el Program~ la cantidad de automiles nuevos se incrementdebido a la aparici de sistemas crediticios de autofinanciamiento. 
+Griflco 3 
+PRECIO DEL AUTOMOVD., RELATIVO AL PRECIO DE t980 0.) 0.l 0,1 -0.1 -0.2 -O.) -0., ..........................................................................................................................................................................................................~ 1-01 1!117:01 198t:OI 1"99:01 1990:01 1991:01 1m:01 1119):01 ._.,-..,_........-..111 ....... - 
+
+De acuerdo al censo de 1990, el INEGI determina que los automiles componen el 9()0/o del parque vehicular lo cual, por razones obvias, implica que son los automiles ]os que generan la mayor parte de la contaminaci. 
+Muy relacionado con el uso de los automiles se encuentra el consumo de gasolina que es su fuente de energi~ haciéndolos bienes complementarios. A raíz de la introducci de la gasolina Magna Sin, el consumo de la gasolina sin 
+plomo se ha incrementado; en contraposici la demanda por gasolina Nova Plus ha venido disminuyendo (gráfico 4). Esto se manifiesta sobre todo a partir de 1991 cuando se introducen los automiles con convertidor catalítico. 
+Griflco 4 
+CONSUMO DE GASOLINA EN LA ZMCM 
+
+... 
+4. METODOLOGÍA 
+En este proyecto se pretende analizar la relaci existente entre variables que constituyen a dos mercados complementarios, el de automiles y el de gasolina. 
+Con el propito de realizar un modelo que eval el programa ambiental "Hoy no circula" se procede a evaluar las variables que se consideran pertinentes para dicho fin. 
+Los individuos tienen una de demanda por transporte, la cual está íntimamente ligada a los mercados que se han mencionado, pero éstos se encuentran relacionados con otras variables. Por ejemplo, la demanda de automiles depende de sus precios y del nivel de ingreso. Debido a que la mayoría de los automiles nuevos no son comprados al contado, sino a plazos 
+o con créditos bancarios, debe considerarse la tasa de interés como otra variable de influencia. El mercado de gasolinas también depende del nivel de ingreso y de sus precios. 
+De las variables arriba mencionadas se obtuvieron las senes encontrándose algunas diferencias en las frecuencias con que aparecen en la bibliografia por lo que se utilizaron todas aquellas que fueran determinantes en el problema con una misma frecuencia para su evaluaci estadística. En este mismo proceso se evaln las transformaciones necesarias para el manejo más adecuado de ]as series. así como su tendencia y funciones de autocorre]aci y autocorrelaci parcial para realizar el procedimiento con o sin variab]es diferenciadas con el fin de obtener W1 proceso estacionario y el estudio de la existencia de ciclos que favorezcan la obtenci de W1 mejor modelo. 
+Las variables principales del mode]o se eva1n por procesos autorregresivos y de promedios miles. de manera de observar su ajuste. Para obtener un modeJo con W1 menor error se procedia realizar pruebas de causaJidad de Granger y determinar dependencia de estas variables entre sí y respecto de otras consideradas relacionadas. Una vez establecidas estas relaciones. se realizla evaluaci de W1 vector autorregresivo para observar la bondad del ajuste. 
+Dada W1a mejor estimaci que la evaluaci de las variables por si mismas y continuando con la pretensi de obtener W1 mejor mode]o. merced a este W1 ajuste más "bondadoso" se introdujeron variables exenas a este vector obteniendo una variante del modelo de vectores autorregresivos que se conoce comoVARX. 
+Entre las variables exenas se contemplaron a1gunas dicoticas que 
+st bien no son de carácter econico, permiten evaluar la efectividad del 
+programa ambiental generando así, un modelo a1temativo. 
+Con la determinaci de este modelo se ana1iz.an los efectos de choques 
+exenos sobre estas variables. 
+4.1. ANÁLISIS ESTADiSTICO DE LOS DATOS. 
+La demanda de gasolina en la ZMCM y sus precios tienen frecuencia mensual. Las ventas de automiles a nivel nacional también aparecen mensualmente, pero en la ZMCM so existen semestralmente. Para el mejor manejo estadístico de los datos es necesario tener series largas, por lo que se prefieren aquellas con frecuencia mensual. 
+Griflco 5 
+INDICES DE PRF.CIOS Y PRECIO DEFI..ACTAOO DE LOS AUTOMOVILES 
+
+"-'l'llloam6l-o..... -....... ­
+Debido a esta situaci las ventas de autos no se pueden utilizar6 . Entonces se decidiutilizar el precio relativo del automil como una variable del sistema. la cuaJ es detenninante en la demanda de autos. Esta variable se obtuvo por el cociente del índice de precios para automiles entre el índice de precios al consumido del Distrito Federal, ambos con base en 1980, (véase gráfico 5). 
+Grllflco 8 
+PIB TRIMESTRAL E INDICE DE LA PRODUCCION MENSUAL BASE 1980 = 100 
+140 r-----------------------------~ 
+
+IJO 
+120 
+INDIC1! DEL \'OLUlolllN DE 1A PllODUCCION INDUml.lAL 100 
+
+-
+6 Se dice que no pueden u1ilimrse porque, aunque pudieron interpolarse los datos a nivel mensual siempre involucrarla un error en la estimaci, que al ser util.iz.ado como un insumo para el modcl¿arrojarla errores potenciados. 
+Con el propito de realizar lDl modelo que eval el programa ambiental "Hoy no circula" se procede a evaluar las variables que se consideran pertinentes para dicho fin. 
+GnHlco 7 
+TASA INFLACIONARIA EN LA CruDAD DE MEXICO 
+MENSUAL 
+.. ~......:....--------------------------,,_,.=··-­
+14 
+u 
+11 
+
+CClllllnlÍdl con doloo del Indice de Preáol al C-idaren la Ciudad de Mcxico de los lndicadorcs economiCC1 del Ranoo de Mcxico 
+También se contemplaron otras variables relacionadas a estos mercados. El nivel de ingreso que tiene frecuencia trimestra1, no puede utiliz.arse en el modelo. pero considerando que es una variable importante, se utiliz.a una proxi con frecuencia mensual, el índice del volmnen de la producci industrial, (véase gráfico 6). 
+Como se mencionanterionnente es posible que la tasa de interés afecté al mercado de automiles. La tasa real de interés (i*), (véase gráfico 9), se detenninmediante la diferencia de la tasa nominal (i), (véase gráfico8), que se entiende como la tasa 1íder7 , y la tasa inflacionaria en el Distrito Federal(nj,que se obtuvo como la tasa de crecimiento del índice de precios al consumidor en la ciudad de México (véase gráfico 7) . 
+.• .
+I =1+,r 
+Gréflco 8 
+TASA DE INTERES NOMINAL ANUALIZADA CETES a 28 dias 
+
+'La tasa de interés de los certificados de la tcson:rla a 28 dias es considerada como la tasa lider. 
+Gréflco 9 
+TASA DE INTI:RES REAL ANUALIZADA 
+
+·80 ¡___---1.,.___¡____¡___ __.___......___ ____.'------'----'-------'--' Fol>-83 fcl>-91
+··­
+-
+Una variable más que se considera es el precio de la gasolina. En el gráfico I O se muestra el comportamiento de los precios nominaJes de las gasolinas. 
+Los precios nominaJes no reflejan el comportamiento de las variables econicas por lo que se utilizel precio reaJ de la gasolin~ el cual se obtuvo por un costo ponderado de los precios reaJes de las gasolinas Nova Plus y Magna Sin8, (véase gráfico 11). 
+8 Los datos de gasolina Magna Sin antes de septieJnJ>re de 1989 son los correspondientes a la gasolina F.xtra. 
+Gráfico 10 
+PRF.CIOS NOMINALES DE LA GASOLINA 
+
+
+Ea-'11 
+~ : Pl!Ml!X 
+
+
+a 
+donde: PR =precio real de Ja gasolina. PN =precio nominal de la gasolina Nova Plus. PM =precio nominal de la gasolina Magna Sin. CN =consumo de la gasolina Nova Plus. CM =consumo de la gasolina Magna Sin. 
+21 
+Gritico 11 
+_.. ,., PRI::CIO REAL DE I.A GASOLINA 
+-
+
+4.2. TRANSFORMACIONES. 
+A las variables involucradas en el modelo se les realiz.aron transformaciones para su mejor manejo estadístico. En particuJar se obtuvieron los logaritmos para estabiliz.ar las vari8117.8S a todas las series, excepto a la tasa de interés pues existen valores negativos. De aquí en adelante se denominará a las variables también con la notaci descrita en el cuadro 1. 
+A estas variables se les reaJizaron pruebas de raíces m1itarias9 para detenninar si debían diferenci~ de antemano para obtener un proceso estacionario y evitar que las series se relacionen icamente por la tendencia de su comportamiento y generar así relaciones espurias. 
+Cuadro 1. Notaci 
+Precio Relativo del Automil  LPA  
+Coosumo de Gasolina  LCG  
+Indice del Vol. de la Producci lndustrial  LIP  
+Precio ReaJ de la Gasblina  PRG  
+Tasa de Interés  TIR  
+
+Un proceso debe ser estacionario para estar en una condici particular de "equi1ibrio estadístico". Un proceso estocástico es estacionario si sus propiedades no son afectadas por un cambio en el periodo de origen. Esto es, que la distribuci de probabilidad conjunta asociada con m observaciones Zt,, :zv, ..., 2.t., hecha en cualquier conjunto de tiempos t1, t2, ••• , tm, es la misma que aque11a asociada a las m observaciones Zt••t. ZtN, ... , Zt-·• , hecha en el conjlDlto de tiempos t1+k, t2+k, .•• , tm+k. Para que cualquier proceso discreto sea estrictamente estacionario, la distribuci de probabilidad conjunta de cualquier conjunto de observaciones no debe ser afectada al cambiar los tiempos de las 
+9 Para una explicaci del término de rafees unitarias VQSC el apanado 4.2 
+observaciones hacia adelante o hacia atrás (Box-Jenkins, 1976, pp 26). El proceso estocástico estacionario tiene una media constante: 
+µ = E[z, / = fzp(z)dz 3 
+
+
+
+con una varianza: 
+U: =f.."/(z,-µ f / = f(z-µ f p(z)dz 
+.. 
+Dado que la distribuci de probabilidad p(z) es la misma para cualquier tiempo, la media µ del proceso estocástico puede ser estimada por la media: 
+I N z ,., N ~z, 
+5 
+de la serie de tiempo y la varianza el, . del proceso estocástico, puede ser estimada por la varianza de la serie de tiempo. 
+I N ~ --N ~(z,-i f 
+,.,,, • 
+El supuesto de estacionaridad también implica que la distribuci de probabilidad conjunta p(z11, z,i) es la misma para todos los tiempos t1, t2, que se encuentran separados por un intervalo constante. De aquí viene el término de correlaci, el cual consiste en evaluar la relaci existente entre datos de la 
+serie separados por periodos de tiempo determinados. La covarianz.a entre z. y Zt+k separada por k intervaJos de tiempo, es llamada autocovarianz.a con k rezagos y se define por: 
+Yk = cov/z, ,z,+t} = E.¡(z, -µ }(Zr+k -µ )/ 7 
+De forma similar la autocorrelaci con k rezagos es: 
+E[(z,-µ)(z,+1:-µ)J 
+
+8 
+o lo que es lo mismo: 
+E{(z,-µ)(z,+k -µ)/ 
+cr; 
+• 
+pero para un proceso estacionario, la varianz.a cr; = Yo es la misma a1 tiempo t+k que a1 tiempo l. Así pues, la autocorrelaci6n10 con k rezagos es: 
+
+La autocovarianza se estima de la siguiente forma: 
+j N-k 
+L(z,-i)(z1+1-z), k =O, 1,2, ... , K 11
+Ct = N ,~, 
+y la autocorrelaci: 
+Ct 
+12 
+Co 
+10 La funci de autocorrelaci anterionnente era conocida como correlograma. 2.S 
+4.3. RAfCES UNITARIAS 
+Una raíz unitaria indica que ]a serie debe diferenciarse para eliminar la tendencia y hacer]a estacionaria. La prueba de raíces unitarias de Dickey-Fu11er ( 1979) consiste en probar la hipesis nula Ho: Existe raíz unitaria contra la hipesis alternativa H1: No existe raíz. La prueba consiste en evaluar e] proceso: 
+;(BJ(l-aB)z, = (Jºª' 13 
+donde: B es el operador de rezago, Zt es la variable en e] tiempo t, (,(B) es la matriz que comprende los parámetros a, de ]os rezagos de z en el tiempo t (proceso autorregresivo ), a1 es un proceso de innovaci, ~ contiene los parámetros de los rezagos de ]os errores a1 (proceso de promedios miles), en que 80 = ;(1)(1 -a)µ , con µ siendo la media de z, , entonces la ecuaci puede 
+reescribirse: 
+Vz, = 80+ ;(l)(a -l)z,.,+ ;;vz,.,+... + ;:vz,_p+ a, 14 
+donde: Vz. =Zt -Zt-1 ;~ = a;, i = 1,2, ... ,p 
+Los coeficientes de la ecuaci son estimados consistentemente por mínimos cuadrados ordinarios. Dada la hipesis nula de que (,(/) :;é O, se utiliza el estadístico de prueba "raz-f' del estimado de t/J(J)(a-1) a su error estándar estimado. Dickey y Fuller ( 1979) demostraron que este estadístico no tiene una distribuci " t " de Student, a en el lí.mite cuando el tama de la muestra tiende a infinito. Para apreciar las diferencias entre este estadístico, denotado rµ, y el estadístico convencional t1 1, para una muestra grande y usando un nivel de significancia de 0.05 se requiere de un valor crítico Tµ de -2.86, mientras que para la aproximaci nonnal de la t de Student se necesita-1.96. 
+En el cuadro 2 se muestran los resultados de dicha prueba. Cuadro 2. Resultados de la prueba de Raíces Unitarias de Dickey-Fuller 
+Rezruro  LPA  DLPA  LCG  DLCG  LIP  DLIP  LPRG  TIR  
+o  0.13  -51,58  -0.52  -115.03  -5,94  -137.04  -21.40  -49,06  
+1  -0,46  -45,82  0,20  -115,04  -2.02  -192.58  -17.09  -52.68  
+2  -0.66  -42,97  -0.32  -58,24  -1,46  -196,03  -11,85  -34,02  
+3  -0.53  -43.08  -0.08  -92.67  -1.17  445.69  -8,36  -30,67  
+4  -0.60  -26,08  0.56  -43,12  -0.52  251,87  -] 1.43  -16.92  
+
+Al realizar la evaluaci de la prueba de raíces unitarias con un criterio de significancia del 5%, se encontrque tanto para el precio relativo de los automiles, como para el consumo de la gasolina y el índice del volumen de la producci industrial no puede rechazarse la hipesis de la existencia de una raíz unitaria; estos resultados son convenientes pues al utilizar las diferencias de logaritmos se trabaja con tasas de crecimiento. Estos resultados concuerdan con las funciones de correlaci para las series que se presentan en los gráficos del 
+11 Las tablas de este estadístico están publicadas en Fuller ( 1976, pp 373) y Dickey ( 1986, tabla 1) 
+apéndice C. Por otro lado se rechazla hipesis de que el precio real de la gasolina y 1a tasa de interés tuvieran raíces unitarias. 
+Una vez establecidas las transformaciones necesarias se procedia anaJizar un modelo. Las series transformadas se observan en el apéndice E. 
+4.4. PROCESOS ARIMA. 
+A ]as variables consideradas endenas se les aplicla metodología de Box­Jenkins ( 1976) para modelarlas como procesos de tipo ARIMA con Jo cual se eligieron varios modelos. Un proceso ARIMA -"autoregressive integrated moving average"-es un modelo para series no estacionarias, que se expresa de la siguiente forma: 
+t/>(B) Vdz, = lJ(B) a, 15 donde: t/>(B) es el operador autorregresivo de orden p. 
+81
+;(BJ = l -;1B -;2B1 -...-; 1 18 lJ(B) es el operador de promedio mil de orden q. 
+8 1
+8(8) = / -8,B -82'81-... -81 17 Vdz, = ( 1 -B l z, 18 
+B es el operador de rezago y d es e1 orden de la diferencia, entonces se dice que el modelo es un proceso ARlMA(p,d,q). 
+Si d = O el proceso es un filtro lineal inestable que corresponde a un ruido blanco. Alternativamente se puede decir que es una transfonnaci del proceso z, altamente dependiente y posiblemente no estacionario a una secuencia de variables aleatorias no correlacionadas a,; para transfonnar el proceso a un ruido blanco. 
+Los parámetros de estos procesos se detenninan de acuerdo a las ecuaciones de Yule-W alker12 • 
+4.4.1. CRITERIOS DE SELECCIÓN. 
+Los criterios de selecci utilizados en la metodología de Box-Jenkins consisten en una serie de análisis que se muestran a continuaci: 1.-Análisis de las funciones de autocorrelaci (ACF) y autocorrelaci parcial 
+(PACF). 2.-Observaci de los valores del estadístico "f' para los rezagos. 3.-Observaci de los valores Q de Ljung-Box para comprobar que los residuos 
+se comportan como un ruido blanco. 4.-Análisis de los errores estándar de la regresi. 5.-Una vez elegidos los modelos más adecuados con los criterios anteriores se 
+procede a utilizar otros que penniten una elecci de aquel modelo, de entre estos ya previamente seleccionados, determinado por la varianza. 
+12 En Box-Jenkins (1976) pp. 64-125 
+De estos, los criterios de selecci más importantes para los modelos ARMA y como consecuencia para los modelos ARIMA cuando ya se ha establecido el orden de las diferencias, son estructurados en términos de la varianza estimada 
+a1 más un ajuste debido al nero de parámetros estimados, y es en esta extensi del ajuste donde difieren los criterios. 
+Mencionaremos a los tres criterios que son más utilizados en la bibliografia, de los cuales el primero es el criterio informaci de Akaike (1974) AIC, que se define como: 
+AIC(p,q) = lnu2 + 2(p + q)T·' 19 donde T es el nero de observaciones en la serie y los demás parámetros ya son conocidos. Un segundo criterio es BIC (Rissanen (1978), Schuarz (1978)): 
+BIC(p,q) = In u2 + (p + q) r·1 1n T mientras que un tercer criterio es <I> {H811Dan (1980)), definido para valores de c mayores que 2, por: 
+<l>(p,q) = In u2 + (p + q)c r' lnln T 21 Dados estos criterios alternativos Hannan demostrque los criterios BIC y <J> son fuertemente consistentes en la determinaci asintica del modelo verdadero, mientras que para AIC un modelo con más parámetros será elegido sin importar la longitud de los rezagos. Así se entiende que los criterios de Schuarz y Hannan deben preferirse al de Akaike (Sims, 1990). 
+En base a estos criterio se detenninaron dos posibles modelos para cada una de ]as dos series principales involucradas 13 • 
+Precio de los automiles. 
+ARIMA (2. 1.1) 
+{1 + 8,L)e, 
+PA, = "" "" "" 1 "" 22 
+1-(J 1 .,,1)L-(.,,2 -.,,1)L + .,,1LJ 
+ARIMA (1.1.0) 
+e, 
+23
+PA, = "" "" 1
+1-(/+ .,, ,)L + .,, 1 L 
+Consumo de gasolina 
+ARIMA (2.1.2) 
+• , {I 1 (}, L t (} 1 l 1)e, CG, =1-(I+ ; 1)/,-(;1-;1JL1 1 ; 1e 
+ARIMA (1, 1.2) 
+
+Los coeficientes se pueden ver en el apéndice D 1. 
+13 En las funciones de correlaci y autocorrelaci se cstudla posibilidad de la existencia de ciclos, pero no se presentaron, 
+4.4.2. AJUSTES. 
+Como las seiies se trabajaron con diferencias, se procedia obtener la sene estimada considerando que si la serie P tiene diferencias DP y la estimaci de las diferencias es DP: 
+DP, = DP, + e, 28 
+como sabemos que: .. , + p",_,
+DP, P 27 despejando f:,, obtenemos: f:,, f:,,_, + ÍJP, 28 y sustituyendo recursivamente obtenemos: 
+P, -= DP, + ÍJP,_, + DP,_2 + ... + DPo t Po 29 
+Considerando que Po es el dato inicia] y es conocido, se obtienen los datos estimados: 
+1 
+f:,, Po + L(DP; + e,) 38 
+;~1 
+De esta fonna los ajustes que se obtienen por los modelos ARIMA se ven en el gráfico 12 para el consumo de Gasolina y para el precio de los automiles en el gráfico 13. 
+Se observa que para ambas series el comportamiento se conserva, pero las estimaciones se encuentran alejadas de la serie real, por lo que se considera que estas variables no pueden justificarse por si mismas. Por esta raz se decidihacer pruebas de causalidad de Granger (Granger, 1969). 
+Gráfico 12 
+CONSUMO DE GASOLINA EN LA ZMCM 
+ESTIMArlONES CON MODELOS ARIMA
+,,......,. 
+-REAL 
+,~
+ARIMA(2.l.2) 11,1 ·· -·AIUMA(l,l,l) 
+. ······· ......... .... ··;·-----.,.-"'·-_7: 
+,~ 
+I -\-' r-! 
+r -'-\ /,J ·. \ 
+_1 \ / 
+/ ,,_.,, 
+I.,,. ~ _1 . .. 
+'­
+1 
+I ••· l_l 
+,, ..... 
+¡' ,, I 
+,.... 
+,~ /, ¡ 't' ·-. v\ .J / •. ·.\I · 
+/ 
+1.1 .. .-,·::,,-.r,j_· /' 
+0.9 L..U.J...L.U.....................................................u....u.............LJ..1..L............................................................................................u...L..........u..J...L.................................................... 
+1996:01 1987111 19118111 1990:01 1991:01 1992:01 1993:91 l'IMlld!lobondo «>11 loo~do loo modoloo........,. 
+-
+Gráfico 13 
+PRECIO DEL AUTOMOVll.. 
+ES'llMACIONES CON MODELOS A.RIMA
+
+
+
+
+4.5. CAUSALIDAD. 
+La idea original de Granger es que la causa no puede venir después del efecto. Esto es que si una variable x, afecta a otra Zt, entonces la predicci de z, es más eficiente si la infonnaci en el proceso x, es tomada en cuenta además de toda la: informaci existente en el universo, entonces x1 tiene efecto de causalidad de Granger sobre z,. 
+Para fonnaliz.ar la idea si suponemos que '1t es el conjunto de informaci que contiene toda la informaci relevante en el universo 
+disponible hasta el período t. Sea z(hl!lJ .el conjunto timo de predicci de h períodos del proceso z, con origen en t, basado en la infonnaci de O.. entonces la matriz de errores de predicci es .E,(hl!lJ. Se dice que x1 causa z1 si: 
+
+para alg h = 1.2. 
+La causalidad de Granger se eval considerando procesos de vectores autorregresivos (V AR)14 en que se eval la variable que se piensa es dependiente con las que se cree son causales como exenas, y otro proceso en que no se consideran las exenas. Con los errores estándar de cada evaluaci se realiza una prueba estadística ·,.,2 en la que se pretende probar la hipesis nula Ho: No hay causalidad contra la hipesis alternativa H 1: Si hay causalidad. (LkepohJ 1991, pp. 35-42). 
+Los resultados de estas evaluaciones se muestran en el cuadro 3. 
+Cuadro 3. Resultados de las pruebas de Causalidad de Granger. 15 
+Variables causales  Variable dependiente  Estadístico Chi-Cuadrada  Nivel de si~ificancia  Resultado de la prueba  
+DLPA  DLCG  23.344970  0.99897139  Rechazada H,  
+LPRG  DLCG  12.986621  0.96634040  Rechazada H.  
+DLIP  DLCG  34.605740  0.53488709  Rechazada H,  
+TIR  DLPA  21.064920  0.97755629  Rechazada He  
+DLCG  DLPA  12.783793  0.99987636  Rechazada H.  
+DLIP  DLPA  4.750874  1.00000000  Rechazada He  
+
+14 Más adelante se hablará sobre estos térnos. 1 sEvaluaciones, que al igua) que todas las demás fueron realizadas con el programa RATS 4.1 
+Los resuJtados de las pruebas de causalidad de Granger indican que existe causalidad de el precio de los automiles, el precio de la gasolina y el índice de la producci sobre el consumo de gasolina, así como del consumo de gasolina, la tasa de interés y el índice de la producci sobre el precio de los automiles. Ello justifica la utilizaci de un V AR. 
+4.6. VECTORES AUTORREGRESIVOS. 
+Un vector autorregresivo es un modelo en que una variable depende de sus rezagos, como en el proceso autorregresivo, pero también de los rezagos de las otras variables involucradas en el modelo. 
+Un proceso autorregresivo se define como: 
+z, = (,,z,., + (,2z,.1 + ... + (>,z,., + a, 32 
+o bien, 
+(,(B)z, = (/ -(,1B -(,2 B2 -...-(,,B')z, a, 33 
+de donde se puede escribir 
+z, = tp1(B)a, 34 en donde z es una serie de tiempo. Para un vector autorregresivo, el concepto es el mismo excepto que ahora z, es un vector de variables. 
+y, = V+ A,y,_¡ + ... + AnYt-p + u, 35 
+donde y, = Ú'tt. ... .}'kt)' es un vector aleatorio de dimensi (Kxl), las A¡ son matrices de coeficientes fijos de tama (KxK.), Vt = (v1., ..• , vk1)' es un vector fijo de interceptos de tama (/(xi), que pennite la posibilidad de una media diferente de cero E(yJ. Finalmente u, = (u11, ••• , uk1)' es un proceso de innovaci o ruido blanco de dimensi K, esto es E(uJ = O, E(u,u, ') = i;;,, y. E(u,us ') =Opara todas :;e t. 
+La matriz de varianzas y covarianzas ..!;, se asume no singular a menos que se indique otro estado. 
+Ahora de la misma fonna que el proceso autorregresivo, un vector autorregresivo de orden 1 V AR( 1) es: 
+y, = V + A, Yt-1 + u, 38 
+Si el mecanismo empieza en un tiempo dado t =1, entonces tenemos 
+y,= v+A,yo+u, 37 Y2 = v + A, y, + U2 = v +A,( v + AtYo + u,) + U2 = (/k + A,) v + A1 2Yo + A,u, + U2 
+,.1 
+Y, (IK + A,+... + A~·1 Jv+ A~Yo + ~A~u,-1 
+,~o 
+Dado que los vectores y1, .•• ,y, están determinados icamente por yo, u1, ... •u,. Tambi~ la distribuci conjunta de y1, ••• ,y, está determinada por la distribuci conjwita de yo, u1, .•. , u,. 
+J 
+Y, = ( /" + A, +••• + A~ )v + At'y,_1_+ LA~u,-1
+1 
+loa() 
+88 
+cuando j -+ r.c . A/+1 converge a cero rápidamente, diciendo que Y• es tm proceso estocástico bien definido. 
+ao 
+Y, = µ + LA~u,-1 i = 0,±/¡±2,... 39 
+i•O 
+donde: 
+µ = ( JK -A,l' V 
+El primero y segundo momentos del procesoY• son: 
+E(y,) = µ 
+para todat 41 y 
+" " 
+f 7 (h) = E(Y, -µ)(Y,.,, -µ)' = lim rrA~E(u,.,u,,.,,_1)(A{)' 
+n->., 1-0 J-0 
+" ao 
+ry{h) = lim r At+I t. A~ = L Ar' t. A~ 42 
+
+
+'"'° ,~ 
+porque H(u,u, ~ = l;,, para toda t y E(u,us ') = Opara toda s ~ t. Si todos los valores de AI tienen mulos menores a 1, se dice que el proceso es estable, que es equivalente a: para lzl S 1 41 
+Esta condici de estabilidad asume que el proceso empie.za en -oo. 
+Las consideraciones previas pueden ser extendidas a un V AR(p) como en (H), correspondiente a un VAR(I) de dimensi Kp. 
+Y,= v+ AY,-1 +U, donde: 
+u,
+Y, 
+o
+Y,-1 
+U·­
+.Y,:= 
+,.­
+. 
+o
+Y,-,..1 
+(Kpx 1) (Kpx 1) 
+A1  A2  A,-1  A,  
+I"  o  o  o  
+A:=  o  lk  o  o  
+...  ..  ...  ...  
+o  o  I"  o  
+
+(KpxKp) 
+De acuerdo a las condiciones mencionadas, para un VAR(p), Yi es estable si: 
+det( lt,, -Az) ~ O para lzl ~ 1 
+el vector de medias es: µ = E(YJ = (lt,, -Az) :1;; O para lzl ~ 1 48 las autocovariall7.as son: 
+~ 
+r,(h) = ~A~' Iu (A'')' 47 
+i=O 
+donde: L'u := E(U,U, J. 
+Dado que U, comprende a1 proceso de ruido blanco ua, el proceso Ya es determinado por su ruido blanco o proceso de innovaci. Generalmente se toma el supuesto de que ua es Wl ruido blanco de tipo Gaussiano. Es decir, ua =N(O, Xu) para toda t; y u,, u" son independientes para s # t. En ese caso se puede seftalar que Ya es un proceso Gaussiano y que todos los componentes y,. ... ,Yt+h. tienen una distribuci normal multivariada para toda t y h (Lkepohl, 1991, pp. 9-62). 
+Para la construcci del vector autorregresivo, pnmero se debe identificar el orden del proceso (p), es decir, la longitud de los rez.agos que describen con mayor precisi el comportamiento de las variables. Generalmente se determina una cota máxima (M) para evitar un proceso de orden muy alto. El modelo se evalucon diferentes longitudes de rezagos, que van desde uno basta doce, considerando que no es pertinente utilimr un rez.ago mayor a lll1 ailo (M=12). 
+4,6.1. CRITERIOS DE SELECCION. 
+Los criterios básicos son los mismos mencionados para los procesos ARIMA en el apartado 4.4.1, en que se analiz.an las funciones de autocorrelaci y autocorrelaci parcia], los estadísticos "r y "Q", los errores estándar y 
+finalmente los criterios de selecci basados en el análisis de la varianz.a, pero con una modificaci adecuada a estos procesos. 
+Al igual que para los modelos ARIMA existen varios métodos para detenninar el orden del VAR. El Criterio de Infonnaci de Akaike (Akaike, 1973, 1974) para 1lll proceso VAR(m) se define: 
+2 
+AIC(m) = Jnj:E.(m)I+ (nero de parámetros libremente estimados) 
+7 
+2mK2 
+A/C(m) = lnl :E.(m)I+ T 
+La estimaci p(AIC) para p es elegida de tal manera que este criterio sea minimiz.ado. Cuando la dimensi del VAR es menor a 5, como es nuestro caso, el estadístico no garantim que el orden del proceso no esté sobrestimado, raz por la cual se eligen otros criterios consistentes. 
+El primero es de Hannan y Quinn (1979) y Quinn (1980) y se denota 
+HQ (criterio de Hannan-Quinn). 
+21nlnT 
+HQ(m) = lnl:Eu(m)I+ T (nero de parámetros libremente estimados) 
+2 In In T 
+HQ(m) = Jnl:E.(m)I+ T mK 2 ... 
+El estimado p(HQ) es e] orden que minimiz.a HQ(m) para m = O, l ..... ,M. Comparándo1o con (21) cr = 2K2 In In T, Jo que dice que HQ es consistente para todo K. 
+Utilizando argumentos Bayesianos Schuarz (1978) derivel siguiente criterio: 1nT 
+SC(m) = 1nll:u(m)l+r(nero de parámetros libremente estimados) ]n r 
+SC(m) = lnll:u(m)I+ ---;¡-mK 1 
+Nuevamente e1 orden estimado p(SC) es elegido ta1 que minimice el valor del criterio. Comparándolo con (19) cr = K2 In T, y además es fuertemente consistente para cuaJquier dimensi de K. 
+Para muestras pequeftas AIC ftmciona mejor que HQ y SC. 
+Utilizando estos criteri~s se procedia estimar los coeficientes del modelo, ]os que son estimados por mínimos cuadrados ordinarios, ajustando los rez.agos y variables significativas al 5%. 
+4.6.2. OTROS MODEWS. 
+Un modelo de espacio de estado16 consiste en una ecuaci de transici o sistema de ecuaciones 
+z, = B,_1z,_1 +F,_1x,_1 +w,_1 para t = 1,2, .. 
+donde: 
+z, : es el vector de estad.o. 
+16Conocido como "'Statc Spacc" en la literatura en inglés. 
+x, : es el vector de variables observables o variables de política. 
+Bt: es la matriz de transici y 
+F,: es la matriz de datos de la ecuaci de transici. 
+Como puede observarse, el modelo VAR se ajusta a esta descripci si el vector x no existe, por lo que es un caso de los modelos de estado. Entre otros casos se encuentra el modelo VARX que consiste en involucrar un vector de variables exenas al VAR (Aoki (1990) y Lkephol (1991)). 
+y, = A1y,-1+.. .+A,y, -, + B,x, + .. .+B1 x,_1 + u, 
+que puede representarse Yt= AYt-1 +BXt+Ut 
+donde: 
+Y, 
+Y,-1
+Y,:= 
+Yt-p+I 
+X,:= 
+A,  A2  A,....1  A,  
+,..  o  o  o  
+A:=  o ...  ,.. ..  o . :  o . :  
+o  o  ,..  o  
+
+x, 
+x,-1 
+.
+. 
+x,_. 
+B:= 
+U,:= 
+B, B1 
+o
+~ 
+o ,.. 
+. .
+. . . .
+. . . . 
+o o ,.. o 
+SI 
+sa 
+u, 
+o 
+o 
+B,-1 B, 
+o o o o 
+. 
+5. EL MODELO. 
+Un modelo que involucra los rezagos de otras variables para explicar su comportamiento siempre justifica las alteraciones exenas que sufre la variable en estudio. Uno de estos modelos es el de ecuaciones simultáneas que para explicar a la variable yII utiliza los re7.agos de otras variables Y21 , Y111 ••• , pero tiene el defecto de no involucrar re7.agos de la variable dependiente, además de que generalmente implica una correlaci contemporánea de los residuos, lo que conlleva a la obtenci de estimadores sesgados. 
+Otro modelo que para explicar una variable los re7.agos de otras es el de vectores autorregresivos, que cubre las desventajas existentes en las ecuaciones simultáneas pues si incluye rc7.ag0s de la variable dependiente. 
+Como consecuencia de esta discusi se procedia evaluar como modelo del sistema a un vector autorregresivo. 
+5.1. UN VECTOR AUTORREGRESIVO. 
+Originalmente, se planteutili7.Bt un VAR de dimensi K =3 que involucrara a1 conswno de gasolina, a1 precio relativo de los automiles y a1 índice de la producci industrial, porque se piensa que las dos primeras variables están relacionadas íntimamente al participar en mercados complementarios y la tercera como wia variable explicativa de las anteriores. 
+En el modelo obtenido, el índice de la producci participa en las ecuaciones explicativas de las otras variables, lo que indicaba que el mercado de gasolinas y el mercado de automiles tienen como wia variable de su funci de demanda a dicho índice, pero no a la inversa por lo que entonces se decidiso reali7.8J' el VAR con estas dos variables. 
+Se realizla evaluaci de la longitud de los rezagos, encontrando con los tres criterios que el VAR debe ser de orden 12, una vez detenninado el orden de los rezagos, se procedia obtener el modelo significativo~ que de acuerdo a la ecuaci (aa): Y, = v+Aiy, -1+A2Y,-2 +AsY,-s +A6Y,-6 +A,y,_, +A,oY,-10 +A11Y,-11 +A,:i.Y,-12 +u, 
+54 
+[ DLPA, J ["'']
+donde: Y, = DLCG, y u, = Ult es el vector de errores. 
+Las matrices A¡, y el vector v están en el apéndice (02). Los ajustes de este modelo se obtuvieron por medio de la ecuaci (ao) y se presentan en los Gráficos 14 y 15. El ajuste de la estimaci conserva la tendencia y se observa que, para ambas variables, es mejor que por la evaluaci de los modelos ARIMA. Se observa, a su vez, que el precio de los automiles depende de su rezago inmediato y del nero 11, y al ser diferencias indica estacionalidad anual, 
+también del rezago 12 del consumo de gasolina. Mientras este timo tiene dependencia de sus ra.agos 2, 5, 6, 8, 12, es decir, se encuentra muy relacionado a su pasado con estacionalidad semestral y anual. Es significativo que en este caso se resalte este punto, pues en los análisis de los correlogramas de estas variables no resultaron significativos los rezagos con periodicidad semestral o anual. 
+Gr6flco 14 
+CONSUMO DE GASOLINA EN U. ZMCM 
+D11MACKJNEI 
+I 
+· AIUMA(2.I.J) 
+I 
+IJ . · · ARIMA(l,l,.l) ............. ......... . ........ .... -............ .......... ,. .... ........... ··· ·-· ... ........... ,,._•........../'"... ..... 
+I\.,,,,. I / .. 
+,....1 \r I f .. I -. ~ .: 
+f.,-'" I _! • j \ .·'
+/ 1 ,, ~ 
+,,.. 1 / 1
+-,/ / .... . •-' .I 
+/ .···-' \ /
+/:/__ ...· \ .. 
+•·. · 
+1.J 
+••· ·-· · ··· ·····-·· • •··· -· •······• ... ........ .... ····· ••• ••• .....
+..............r_, ........... · · ......... · ................... · ................ 
+,: 
+¡i 
+r'/
+, rJ 
+,-, (Í 
+, .-•.•• " ' ,f
+/ '·. 
+'t' 
+1,1 
+... · ........................... .................. ........../'?'..,,../....................... .................................................... .... ............... 
+1 ··/'"'-_,7 
+F· \ ~" f 
+.1 \ ' ··1
+/' '.,.... /·l, !.. 
+OJI LU.L.U.U..U...UU..U.U..U...........u...u..........u..u.....................................................u...uu..u.u..u..L.U.L..U...U..........U..U............................U 
+19116:0I 1917111 1911:0I 1919:0I 1990:01 1991:01 1992:01 1993:01 
+-
+Se introdujeron más variables al sistema para realiz.ar otros modelos y observar si el ajuste mejoraba. 
+Gréflco 15 
+PRECIO DEL AlJTOMOVIL 
+E3'11MAaONIIS 
+~4 ....--------------------------­-wtEAI. 
+•···A.RJMA(2.l,I) -• ARIMA(l,l,D) 
+G,2 
+.... .•.. .....•.•.. ·····-·-·· ··•······· .......................................................... .._-v_AJt_._l--­
+~4 
+.. 
+191111:0I 1!117:01 19:01 lie:01 1990:01 1991:01 l~I 1991.-01 
+-
+5.2. VARIAl,ILES EXÓGENAS. 
+Inicialmente, para considerar un segundo modelo (VAR-2), se introdujeron tres variables exenas: el indice de la producci industrial para ambas variables, como consecuencia de lo seftalado al principio de este capítulo, el precio de la gasolina para el consumo de la misma y la tasa de interés al precio de los automiles, así como algunas variables de política econica como el "Pacto de Estabilidad y Crecimiento Econico" que se finnen diciembre de 1987 (García Alba, 1993), y el programa "Hoy No Circula" como una variable de 
+política ecolica. Estas variables al ser determinadas para tener vigencia a partir o durante cierto periodo serán manejadas como variables dicoticas. 17 
+
+5.2.1. LAS VARIABLES DE INTERVENCIÓN. 
+El programa ambiental inicia partir del 20 de noviembre de 1989 y tuvo duraci temporal hasta el timo día de febrero de 1990. A partir del 1° de marzo del mismo afto, el programa se hace permanente. En base a estas consideraciones se determinan las siguientes variables: 
+HNC con vigencia desde noviembre de 1989 en adelante, HNCT de noviembre de 1989 a febrero de 1990, HNCP de marzo a juJio de 1990, HNC 1 de juJio a noviembre de 1990. 
+Para la evaluaci del Pacto se detenninla variable P ACTOL que funciona a partir de diciembre de 1987 y en adelante. Una vez evaJuado este modelo se encontrque so algunas de estas variables fueron significativas: HNCT para el consumo de gasolin~ y HNC, HNCT y PACTOL para el precio de los autontiles, obteniéndose el siguiente modelo: 
+17 Al involucrar al vector w con variables exenas el modelo es un VARX 
+rDJ.IP,--,, ] PACTOL]
+DLPA,]
+donde: Y, = [DJ.CG, x,_.,, =l11R,_.,, W= HNC
+[
+LPRG,_.,, HNCT 
+Las matrices A¡, Bj, C están en el apéndice (D3). De este modelo se observa que el precio de los automiles por medio de la intervenci de] Pacto es afectado de manera estructura], y también por el "Hoy No Circula" durante su duraci temporal y permanente; mientras que el consumo de gasolina es afectado icamente por el programa "Hoy No Circula" de manera temporal. Los ajustes que se obtuvieron con la ecuaci (30) se observan en los gráficos 16 y 17 donde se pueden comparar con los dados por el primer V AR. Al comparar los ajustes del VAR-1 con e] VAR-2 se observa que al introducir más variables explicativas al modelo, este se ajusta mejor, aunque la mejoria ya no es tan marcada como ocurricon los ARJMA's. 
+Griflco 16 
+CONSUMO DE GASOLINA EN l.A ZMCM 
+ESTlMACIO= CON VEC'TOREI AllTOIIIUiOIIESOS
+L...­
+
+1996'01 l'll7'01 1992:0I 19"o01
+-
+1911:0I 1919111 1990:01 1991-01 
+Griflco 17 
+PRECIO DEL AlffOMOVIL 
+
+.0.6 
+1'96.01 1'97:01 1911:01 1-01 1990:01 1991111 l!lnOI 199):01
+-
+
+5.3. EVALUACIÓN DEL VERANO. 
+En un nuevo modelo (V AR-3) en el que además de las variables ya consideradas, se incluye una nueva variable dicotica que se denomina VER, con la que se pretende evaluar si existe alguna tendencia estacional de las variables en estudio durante el periodo de las vacaciones veraniegas de las instituciones educativas; periodo que considerlos meses de julio y agosto. 
+Al evaluar este modelo se encontrque HNCT y VER fueron significativas para el conswno de gasolina y para el precio de los automiles so lo fue PACTOL, obteniéndose el siguiente modelo: 
+
+DLIP,_,,]
+DLPA, l rlPACTOL]
+x,_,, = 11R,_,, w= HNCT
+donde: y,= [DLCG,J 
+[
+LPRG,_,, VER 
+Las matrices A¡, Bj, C están en el apéndice (D4). 
+De este modelo se observa que el precio de los automiles es afectado por la intervenci del Pacto de la misma forma que en el modelo anterior, pero ya no es impactado pc,r las variables del programa ambiental. Por otro 
+51 
+lado el conswno de gasolina es afectado por el '~Hoy No Circula" icamente durante su vigencia temporal y por la variable verano. 
+Los ajustes se observan en los gráficos 18 y 19 que se obtuvieron con la ecuaci (so). 
+Gráfico 18 
+CONSUMO DE GASOLINA EN LA ZMCM 
+E:ITIMACIONES CON ~AUTOIUlEOR&VVOS 
+1,) ~--------,--------------------~ 
+1.2 
+1,1 
+0,9 ~ ~~~~~~­
+
+.........~~~~................... 
+19116'01 1991:0I 1911:GI 1919:0I 1990:01 1991,01 1992:01 199}:0I 
+..... 
+-
+El ajuste que se obtiene es mejor a que el del V AR-2, recalcando que ya no es muy notoria la diferencia para el conswno de gasolina, pero si para el precio de los automiles. 
+Gréflco 19 
+PRECIO DEL AlITOMOVIL 
+ES?1MAC10NES CON Vl!CT0ltES ALm>llRl!OIDIV05 
+~4 .---------,--------.------------~ 
+
+
+
+
+
+
+/.'\ 1-.:=J 
+.._¡/ ';\ L­
+1. ·li ; ' "­
+\ \, "­
+o,2 
+.... 
+·\~:·.
+:··.... ····-······,.
+..l~:~···1................... 
+····-·· .
+...... 
+\ ... ~ ­
+-G.2 ...... ··--··-·· ..E1:J..... .... .......
+..... ... . 
+-0.4 ..............................................................................~~............................................................................................................~............................. IIJIIIS:01 191'7:0I 1911:0I 1!119:0I 1990:01 1991:01 1992:01 1993:01 
+-
+S.4 EL PACTO EN EL CORTO PLAZO. 
+Se consideruna variable en la que e1 Pacto tuviera un efecto inmediato en el sistema, denominada PACTOC con duraci de diciembre de 1987 a abril de 1988. En la evaluaci de] modelo se encontrque HNCT, PACTOC y VER fueron significativas para el consumo de gasolina y para el precio de los automiles so lo fue PACTOC y HNCT. 
+El modelo obtenido es el siguiente: 
+
+DUP,_k] PACTOC]
+DLPA,] 
+x,_t = 11R,_k
+donde: Y, =[DLCG, w=
+
+
+
+[ [ H:T 
+LPRG,_t 
+Las matrices A¡, Bj, C estén en el apéndice (OS). 
+Gréflco 20 
+CONSUMO DE GASOLINA EN LA ZMCM 
+I.J .--------------~---,,---------------, 
+1,2 
+··········· ..... ... ••..•........ 
+1,1 
+·-· .......... ... · · ......... 
+....... · ·• ···· ...... . 
+~, ""-'-" ....................................................................... u...u. ............................................................................................ u...u. .................................. ..... 
+1•:01 IIIT:01 1-.111 1991:01 1,no1 1"3.111 
+-
+Se observa que el precio de los automiles es afectado por la intervenci del Pacto~ y por la variable del programa ambiental en el periodo 
+temporal. El conswno de gasolina es afectado por el "Hoy No Circula" 
+imicamente dmante su vigencia temporal, por el pacto y por la variable verano. 
+Los ajustes que se obtuvieron con la ecuaci (ae) se observan en los gráficos 20 y 21. 
+Para el consumo de gasolina el ajuste del VAR-4 es muy bueno, excepto en el periodo de finales de 1990 a principios de 1992. Este modelo se considera, salvo esta situaci, el que mejor se ajusta al proceso. 
+Mientras que para el precio del automil el ajuste es bueno, pero no mejor que el anterior. 
+
+Griflco 21 
+PRECIO DEL AUTOMOVIL 
+IIBTNACIOIUCON WCT0IEI A~ 
+
+Cl,4------------------------------, 
+
+5.5. DETERMINACIÓN DEL MODELO. 
+De los ajustes obtenidos para los cuatro vectores autorregresivos anteriormente evaluados, podemos observar que el tercer modelo tiene un mejor ajuste para el precio de los automiles y el cuarto para el conswno de gasolina. Por este motivo se detenninun quinto modelo como definitivo, el cual comprende a los dos ajustes mencionados. 
+De ello resulta el siguiente modelo: 
+
+PACTOL 
+DUP,_"] 
+PACTOC
+DLPA,]
+donde: y,=[DLCG, x,_1r = TIR,_" w= 
+HNCT
+[
+LPRG,_" 
+VER 
+Las matrices A¡, :&j, C están en el apéndice (06). 
+Este modelo se determinpara su utili7.8ci porque es el que presenta los menores valores (absolutos) de las vari8117.8S y covari8117.8S, y de los errores estandar. 
+5.6. IMPULSOS. 
+En la secci anterior, se realizW1a partici del conjunto de variables en subconjuntos x, y z, para determinar la causalidad de Granger. La definici involucra las variables de] sistema, sin embargo, es de interés saber como responde una variable a impulsos en otra de un sistema que involucra a algunas más. Podemos decir que si una variable responde a un impulso, en otra existe causalidad de la segunda a la primera. A continuaci. se estudiará este tipo de causalidad graficando el efecto de un choque exeno o innovaci en una de las variables sobre alguna otra. Esta respuesta a impulsos es frecuentemente llamada análisis del multiplicador. 
+Un supuesto problemático en la respuesta a este tipo de análisis a impulsos es que el choque ocurre so en una variable a un tiempo dado. Si un choque en una variable se debe a fuenas que afectan a todas ellas, puede ser interpretado como una respuesta de coeficientes dinámicos de la matriz A¡. Esta es W1a raz de porqué las respuestas a impulsos son elaboradas en ténninos de W1a representaci de promedios miles (MA). Así la ecuaci 
+(34) se expresa como lD1 MA infinito de la siguiente forma: 
+V, =A-1 (L)u, 
+que se puede representar como: 
+CD 
+V,= ~)>,wt-1 .. 
+t=O 
+donde los componentes de w, no están correlacionados y tienen variam.a unitaria, Iw = I," que es obtenida por una descomposici Iw = PP t , donde P 
+es cualquier matriz triangular inferior que resuelva la ecuaci y definirnos 
+
+Dado que la varianz.a de los componentes es m10, m1a innovaci unitaria es so aquella que tiene tamafto de una desviaci estándar. Los elementos de ~ son interpretados como las respuestas del sistema a tales innovaciones (Lkephol, 1991 ). La diferencia de la representaci del modelo en ténninos de A¡ y de ~ corresponde a la diferencia entre lá forma reducida y la forma estructural del sistema. Graficar las respuestas del VAR a un choque aleatorio es equivalente a obtener la representaci estructural del sistema. 
+Existen varias posibles factoriz.aciones de la matriz .L;, que es positiva definida, entre las que se encuentra la matriz de Choleski (Doan, 1992). Esta matriz tiene el problema de que, al cambiar el orden de las variables en el sistema, cambian los resultados de los choques en las variables, entendiéndose como una representaci semi-estructural. 
+Debido a que no es fácil determinar cuál debe ser el orden de las variables, Bemanke (1986) y Sims (1980) han propuesto formas alternativas que dependen de cierta intuioi respecto a las variables del modelo (Doan, 1992). 
+De la representaci del VAR: 
+Y,= tA,y,_, +u, con E(u,u, ~ = l;, 81 
+r-=I 
+Los coeficientes de rezago A. pueden estimarse por medio de mínimos cuadrados ordinarios. sin considerar restricciones en l;,. Sí suponemos un modelo para un proceso de innovaci u, no ortogonal: 
+uu=vu U2t =Ylltt + V2t donde aswnimos que v u y V2t son ortogonales. Esto impone una restricci a l;, : Hay cuatro elementos libres y so tres en esta condici. y y las varianz.as de vil, Si escribimos el proceso de innovaci como: Au, = v,' E(v,v,~ = D D = diagonal u necesitamos minimiz.ar sobre los parámetros libres de A y D en la funci de verosimilitud: -2 /nlAI + En(ASA J,, donde Ses la matriz de varianz.as y covariamas de los residuos de la muestra. Este tipo de descomposici estructural se empleada para consttuir las respuestas a impulsos en las variables. 
+S.6.1. ANALISIS DE LOS IMPULSOS. 
+La descomposici de Choleski, que es semi-estructmal, resultser casi igual a la descomposici de Bemanke-Sims que es estructural. De donde puede deducirse entonces que este modelo es de tipo estructural. 
+Los choques exenos, como ya se mencion pueden darse al haber Wl8 alteraci sobre la variable en cuesti, o bien, al ser afectada por modificaciones en las variables exenas. 
+Primero analicemos los efectos que causa lD1 choque en el precio de los automiles. 
+Griflco 22 
+RESPUESTA DE LA TASA DE CRECIMIENTO DEL PRECIO DEL AUTOMOVIL A UN CHOQUE EXOOENO 
+D,DI 
+. ·-· -·· • 
+0,00, 
+····• .....•......... ·• ········-·-······--·-···"'····· . -····•························· ..............•... ·• •••···············•··········•······•···· •·•·••••···• 
+
+6 12 11 24 ]O 
+
+.......,_.......................... 
+-
+En el gráfico 22 se observa co afecta lD1 choque exeno a la tasa de crecimiento del precio de los automiles a si misma. El efecto se diluye de manera exponencial durante los siguientes nueve meses; se mantiene estable por lD1 periodo semejante y posteriormente se incrementa durante diez meses, 
+pero de una fonna mod~ para diluirse a lo largo del tiempo de fonna 
+oscilatoria. 
+Gréflco 23 
+RF.SPUESTA DE LA TASA DE CRECIMIENTO DEL CONSUMO DE GASOLINA A UN CHOQUE EXOOENO EN El, PRECIO DEL AUTOMOVJL 
+D. 7 1 
+6.--------------------------, 
+4 ' . ... . . .... .. 
+-4 . ..... , .......................................... .. .............. .. , ....................... ....... -.................................................................... 
+-10 ..... • · .......... ..... . 
+6 12 11 24 lO
+~-.......................... -.,. • 
+En cuanto a la tasa de crecimiento del conswno de gasolina, ésta se ve afectada un afto después de que sucediel choque sobre la tasa de crecimiento del precio de los autos, notándose una disminuci sita que se recupera a los seis meses y tiene un efecto positivo durante el siguiente semestre, para mantener una disminuci oscilatoria moderada que tiende a diluirse en el largo plam, como se puede observar en el gráfico 23. 
+Un choque exeno sobre la tasa de crecimiento del conswno de gasolina tjene un efecto sobre si mismo tal que se ve reducido de manera oscilatoria con respuestas semestrales de signo alternante, tendiendo a establiliz.arse en el largo plazo al mismo nivel existente antes del choque (véase el gráfico 24). 
+GrMlco 24 
+RESPUESTA DE LA TASA DE CRECIMIENlU DEL CONSUMO DE GASOLINA A UN CHOQUE EXOOENO 
+
+La tasa de crecimiento del precio del automil responde a un choque sobre la tasa del consumo de gasolina seis meses después de haber ocmrido, con ID18 disminuci considerable que se recupera a los diez meses e 
+62 
+incrementándose un semestre más. Después de este período el efecto se diluye de forma oscilatoria (véase gráfico 25). 
+Gréflco 25 
+RESPUESTA DE LA TASA DE CRF.CIMIENTO DEL PRECIO DEL Al!TOMOVIL A UN CHOQUE EXOOENO EN EL CONSUMO DE GASOLINA 
+o., 
+. . ......... . 
+-1 -•..... ··•····· ....•, .•. ...........,.., ............ ..... ············-·············· ··•••••·· •·•····••·· ··· . ................ ····•····· ........... ... . 
+-1,5 ..................... .... . .. 
+...... ....... .............. . .................. ........................ ······•• ·····•·················•·• ..,.................. 
+-2 ..... -............. .... ... ......................................... ............................................ . .... ··-·············..••······· .. · .... .. 
+6 12 11 30 
+l!loloomdo............................. 
+
+63 
+
+CONCLUSIONES. 
+El objetivo de este trabajo fue la utilimci de un modelo econométrico para evaluar la relaci existente entre algunas variables relacionadas a los mercados de gasolina y de automiles. Para de esta forma poder introducir variables dicoticas que contemplen la efectividad del programa ambiental "Hoy No Circula". 
+Para la evaluaci del programa ambiental "Hoy No Circula" se construyun modelo con base al cual se estudiel impacto del mismo para cuatro periodos, con el fin de medir su efecto inmediato, de corto, mediano y largo plazo del cual se obtienen las siguientes conclusiones: 
+1. 
+Los resultados nos indican que dicha medida ímicamente resultsignificativa en su efecto inmediato en el cual se logruna disminuci en el consumo de gasolina, esto es que en tanto fue una medida temporal, el comportamiento de los automovilistas fue el esperado. 
+
+2. 
+No tuvo efecto real en la demanda de gasolina en ning otro período diferente. Es decir, una vez que el programa fue instalado de manera permanente perdisu efectividad. 
+
+3. 
+Los individuos al conocer la nueva situaci de permanencia del programa se adaptaron, en algunos casos comprando otro automil para utilim'lo cuando su vehículo principal no circulaba, y en otros 
+
+
+utili7.8Jldo más intensamente los automiles en los días que podían 
+circular, e incluso los sábados se incremento el tráfico para realizar las actividades que no se pudieron hacer en ese día. 
+4. De esta manera el patr de consumo de gasolina se restablecirápidamente, es decir, al conocer los individuos las nuevas condiciones del mercado, se crea Wl nuevo nivel de equilibrio y se despl87.811 sus curvas de demanda. 
+El estudio de la demanda de gasolina arroja las siguientes conclusiones: 
+1. 
+A pesar de que hubo una disminuci real en la demanda de gasolina, cuyo nivel se restablecihasta julio de 1990, el modelo indica que el período comprendido entre marzo y julio de dicho afto es explicado por la propia tendencia de la cmva. 
+
+2. 
+Una conclusi importante también es que el consumo de gasolina se ve disminuido cada ailo durante las vacaciones de verano, explicando un comportamiento estacional que justifica la no necesidad del transporte hacia los centros educativos. 
+
+3. 
+El Pacto de Solidaridad Econica al estabilizar la situaci econica del país incrementen el corto pluo la demanda de gasolina. 
+
+4. 
+El modelo comprueba la dependencia de demanda de gasolina del nivel de ingreso. 
+
+5. 
+También se observa como la demanda de gasolina es determinada por sus precios comprobando condiciones de mercado (precios y cantidades). 
+
+6. 
+Una observaci más es que la demanda de gasolina tiene una estacionalidad semestral respecto a si misma . 
+
+
+7 También se observa la relaci de este mercado con el de automiles al · depencler la demanda de gasolina del precio de aquellos, justificando así la complementaridad de los mercados. 
+8. 
+Las conclusiones respecto al Programa que indican la no efectividad del mismo a partir de su vigencia permanente justifican el aumento de la demanda de gasolina por W1 incremento en el parque vehicular. 
+
+9. 
+Este aumento en la existencia de automiles principalmente fue debido a vehículos usados, incrementando asf la vida promedio de estos. 
+
+
+Los resultados para el precio de los automiles arroJan las siguientes conclusiones: 
+1. 
+El precio de los automiles tiene dependencia con la demanda de gasolina, así como del nivel de ingreso. 
+
+2. 
+También se observa que esta variable depende ímicamente de su rezago inmediato anterior, de donde puede decirse que respecto a si misma sigue lUl proceso de tipo Marlcov. 
+
+3. 
+Se consideraba que la tasa de interés tenía una incidencia directa sobre el precio de los automiles, pero el modelo indica que esta variable no es determinante para el sistema. 
+
+4. 
+Considerando las variables de intervenci, el precio de los automiles ímicamente fue afectado por el Pacto en fonna permanente. Es decir, tuvo una incidencia directa sobre el precio, observándose que en cuanto a este mercado, el Pacto cumplicon su objetivo de controlar los precios y estabiliz.arlos. 
+
+
+De la evaluaci del modelo pueden obtenerse las siguientes conclusiones complementarias. 
+1. 
+Una evaluaci por vectores autorregresivos tiene un poder de ajuste mucho mejor que el de lUl proceso tipo ARIMA. Esta situaci se comprende porque al depender Wla variable de la informaci existente sobre si misma no involucra comportamientos exenos a ella, mientras que al involucrar la informaci de otras variables relacionadas se contemplan más de los fenenos que afectan al entomo. 
+
+2. 
+En general, con Wl VAR se obtienen buenas aproximaciones a los comportamientos de las variables, pero éstas pueden ser mejoradas si se introducen variables exenas al sistema. 
+
+3. 
+La consideraci de variables de intervenci explica ciertos cambios que sufre la serie, mejorando el ajuste que se obtiene en el modelo. 
+
+
+A pesar de que el programa ambiental no tiene Wl efecto positivo real en estos momentos, su cancelaci tendria efectos negativos awnentando la emisi de contaminantes por el incremento sito del parque vehicular en circulaci. 
+Asimismo se piensa que para un mejor control de la calidad del aire, la proposici contemplada por el Departamento del Distrito Eederal que otorgarla una exenci del programa a los ciudadanos que tengan automiles con convertidor catalítico es buena, porque de esta fonna se crearán incentivos para que la ciudadanía renueve el parque vehicuJar. 
+Con la consideraci de una vida promedio de entre 80,000 y 100,000 Km. para un convertidor catalítico, la exenci del programa debería reconsiderarse cuando los automiles estén cerca de cumplir con este recorrido. 
+Los gobiernos de algunos países, como en el caso espaftol, hacen 
+esfuerzos para sacar de la circulaci los automiles que han cwnplido cierto periodo de vida comprándolos a sus prapietarios para posterionnente destruirlos. En otros pafses, como el Jap, se ha optado por cargar un impuesto a aquellos automiles que pennanezcan en circulaci después de haber pasado su periodo de vida il, para que asf paguen la externalidad que generan o se vean motivados a cambiar su automil por uno de modelo más reciente. Con estas polfticas lo que se pretende es tener un parque vehicular ron una vida promedio corta, y asi disminuir la contaminaci emitida por los mtsmos. 
+Medidas de esta naturaleza, si bien parecen en una primera lectura como elitistas bajo el supuesto de que atentan contra una poblaci de recursos bajos; viéndolas desde una perspectiva social que cuide la salud de la poblaci en su conjunto, resultarán más democráticas, el falso populismo asociado al uso de medios de transporte que arrojan externalidades negativas para la generalidad, a más de daftar a la vida misma, constituyen una medida de 
+1 
+privilegio para grupos en particular y, por lo tanto, adversa al interés general ico objetivo de las acciones de gobierno. 
+En suma. todo autotransporte que cause altos indices de contaminaci debe ser gravado de acuerdo a la magnitud del daí\o social que provoca y cuando más en el mediano plam se debe retirar de la circulaci. 
+Desde luego los resultados de la lucha contra la contaminaci 
+mejorarían si los medios de transporte plico fuesen los primeros en cmnplir con las nonnas de verificaci. También si el gobierno se autoobligara a cumplir con las normas que impone a los particulares, y se las impusiera a los concesionarios del transporte plico, en ta1 sentido el parque vehicular de los concesionados debería cambiar Wta vez cumplida la vida il del mismo. Complementando esta medida, se deberla exigir el cumplimiento del reg]arnento de tránsito asf como Wta educaci vial y ciudadana que induzca a todo aquel trabajador o propietario de un transporte a tener vocaci de servicio hacia la ciudadaoia. 
+7. APtNDICES. 
+Apéndice A Los Contaminantes 
+El monido de carbono (CO) es un gas incoloro e inodoro, producto intermedio de la combusti incompleta que, al ser inhalado, ocupa el lugar del oxígeno fonnando carboxihemoglobina lo cual disminuye la cantidad transportada de éste hacia las células. Esto, a su vez, provoca una disminuci en la actividad celular relacionada con cansancio y somnolencia llegando a causar, cuando los niveles de este gas son elevados, irritaciones en las vías respiratorias, alteraciones en los sistemas cardiovascular, nervioso central e incluso intoxicaciones. La principal fuente de este gas es la combusti incompleta que se realim en los motores de Otto impulsados por gasolina y la cantidad emitida depende del grado de afinaci y de las condiciones viales que prevalecen en la ciudad. El monido de carbono es el contaminante arrojado en mayores cantidades por los vehículos¡ . 
+Los hidrocarburos residuales son aquellos que no fueron degradados completamente durante la combusti interna de los motores y los que se escaparon por evaporaci en el carburador y el tanque de gasolina. Existen 
+1Seg Gomález ( 1989) la cantidad de monido de carbono que emiten los automiles puede llegar a ser ha.u el 85% del total de las emisiones. 
+71 
+más de 200 tipos de estos hidrocarburos, entre los que destacan parafinas, naftenos, acetilenos, aromáticos y olefinas siendo, estas timas, las más daftinas y reactivas. Estas timas representan del 4S al SS% de los hidrocarburos de escape de los motores de gasolina y son el principal componente del smogfotoqulmico. No sobra seftalar que son ticos causantes de irritaci en las mucosas y producen daftos en estos tejidos, así como lesiones irreversibles en las células cerebrales. 
+Los idos de nitreno se producen durante la combusti como consecuencia de la oxidaci del nitreno atmosférico, el cual en el ambiente reacciona con el agua mediante la acci catalizadora de los rayos ultravioleta. Se puede oxidar nuevamente para producir ácido nítrico, nitratos y oxígeno atico. El ácido nítrico posteriormente contribuye a la lluvia ácida, los nitratos incrementan la cantidad de partículas suspendidas en el aire y el oxígeno que al combinarse con el oxígeno molecular forman ozono (03). El ozono es considerado como uno de los contaminantes de más importancia porque al reaccionar con los hidrocarburos residuales forma aldehidos y compuestos oxigenados que reaccionan con más ido nitroso y oxígeno para producir peroxiacilnitratos. Estos, jlDlto con el ozono -los aldehidos y el ido nitroso-son los componentes del smog fotoquimico que ataca aJ sistema respiratorio, causa irritaci en las mucosas, reduce la visibilidad, además de daftar plantas, animales y deteriorar materiales y construcciones (González, 
+72 
+1989). 
+Los biidos de azufre, producidos por los motores a diese] y por la utilizaci de combusteo en la actividad industrial y de servicios, son el segundo gas emitido en orden de cantidades, pero el primero en cuanto a toxicidad. Al igual que los idos nitrosos, se oxidan en la atmfera para producir ácido sulfico y sulfatos. 
+Las partículas suspendidas en el aire además de las sales de nitratos y sulfatos también incluyen a los polvos provenientes de terrenos erocionados, basura y desechos biolicos, minerales pesados y carb que son generados por los procesos industriales (MacKenzie, 1990). Las partículas tienen un diámetro de entre 0.01 a 100 µm siendo, las más peligrosas, las que miden 
+menos de ISµm y particularmente las menores a 1 µm porque penetran a los pulmones perforándolos en ocasiones y causan irritaciones en las mucosas que provocan tos, asma, enfisema y bronquitis. 
+Las partículas contribuyen a disminuir la visibilidad y no permiten la entrada natural de los rayos solares, provocando el efecto de invernadero que. afecta el desarrollo normal de los sistemas biolicos. 
+Otro elemento importante en el ambiente es el plomo (Pb), producido por los vehículos que usan gasolinas con ese contaminante. El plomo es agregado a la gasolina como un antidetonante que también aumenta su eficiencia de combusti. Este metal es altamente tico, interviene a nivel de 
+73 
+Ja respiraci celular intoxicando al organismo de manera letal, evitando que el proceso de la respiraci se lleve a cabo. 
+Gráfico Al 
+CONTRIBUCIONES DEL HOBMRE AL EFECTO DE INVERNADERO EN LA DECADA DE LOS so·s 
+
+El biido de carbono (C02) es un gas producido por la quema de combustibles files. Este contaminante desvía los rayos infrarrojos perturbando el balance de energía en la tierra, ya que al evitar la salida de los rayos solares provoca un aumento en la temperatura. Con la presencia del biido de carbono, compuestos clorofluorocarbonados, idos de nitreno y metano se da el efecto invernadero. Los compuestos que participan en el 
+• El efecto de invernadero es también conocido como inversi térmica. 
+74 
+efecto invernadero se muestran en el gráfico A1. 
+. Es notorio que el biido de carbono contribuye más que cualquier otro gas al efecto invemadero, lo que se relaciona con una cantidad elevada de procesos de combusti implicando W1 consumo energético considerable que se refleja en una emisi alta del gas (véase gráfico A2). 
+
+Gráfico Al 
+ACTIVTDADES CONTRJBlNENTES AL CALENTAMIENTO GLOBAL EN LA DECADA DE LOS 80's 
+
+De manera global, cerca de dos terceras partes de las emisiones de biido de carbono provienen de la quema de combustibles files; el resto primordialmente de la deforestaci (MacKenzie, 1990, pp. 3-6). 
+15 
+Un contaminante que no es tico pero que sin duda dafta a la salud es el ruido, el cual provoca daftos al oído tras exposiciones prolongadas y alteraciones al sistema nervioso central. Asimismo, ocasiona irritabilidad y todo lo relacionado con esta sensaci. 
+76 
+ApéndiceB El Convertidor Catalltlco 
+Un catalizador es un material biolico o químico que tiene la funci de acelerar una reacci por la exposici de las partes reactivas de los participantes, sin que el catalizador sea un reactivo o un producto. En nuestro caso y de acuerdo a los límites legales establecidos y al tipo de motor, pueden utilizarse varios métodos para la purificaci de los gases de escape. La pwificaci de estos gases mediante un catalizador ha sido aceptada como el método más efectivo a nivel mundial. En Estados Unidos y Jap los vehículos para pasajeros han sido equipados con convertidor catalítico desde 1974 (Engler, B. 1994). 
+Existen tres principales tipos de convertidores catalíticos para motores a gasolina. 
+a) 
+Convertidor de una cama con catali7.8dor de oxidaci. Este convertidor tiene la funci de eliminar los hidrocarburos y el monido de catbono. 
+
+b) 
+Convertidor de doble cama. Son dos convertidores catalíticos conectados uno tras otro, el primero de fimci mtiple y el segundo de oxidaci. 
+
+
+¡¡¡En e1 diario oficial del martes 29 de octubre de 1991 se public1Dl acuerdo interseaetarial en que las secretarias de Desarrollo Urbano y Ecología. de Energía Minas e Industria Paraestatal y de Comercio y Fomento Industrial establecen las caracterlsticas y los porcentajes de eficiencia de cooversi mfnima de gases contaminantes de los oonvertidores catalíticos. 
+77 
+c) Cataliz.ador de tres vías. Tiene un convertidor equipado con un cata1iz.ador de funci mtiple. 
+Mientras que el convertido (a) es conveniente para la eliminaci de monido de carbono y de los hidrocarburos, los convertidores (b) y ( c) penniten, además, la eliminaci de idos de nitreno. 
+El cata1i7.ador utilizado en el convertidor puede ser de dos tipos dependiendo del material de soporte utilizado y del recubrimiento activo: los de material de gránulos que consisten en esferas con diámetro de 2-3 mm., y los monolitos de soporte metálico o cerámico que son cuerpos en forma de panal con pasajes paralelos para el gas de escape. 
+Los catalizadores de gdnulos tienen mayor estabilidad mecánica que los de monolito, mientras que estos timos ofrecen una mayor superficie de intercambio. Los canales de )os monolitos están recubiertos con una capa intermedia de ido, llamado washcoat e impregnados con metales preciosos como componentes activos y posteriormente varios tratamientos cerámicos. Debido a Ja irregularidad de la superficie, estos convertidores ofrecen una superficie activa de aproximadamente 10,000 m2• El washcoat está constituido principalmente por idos de aluminio y de cerio, mientras que los metales preciosos se encuentran insertados en los poros en forma de cristales. Los metales que se utilizan en los cataliz.adores de oxidaci son el platino y el paladio, mientras que para los catali:mdores de tres vías se utilizan platino, 
+78 
+paladio y rodio. En promedio se requieren de 1.5 a 2 gramos de metales preciosos por vehículo, los cuales podrán ser recuperados cuando el catalizador sea destruido. 
+El objetivo de los cataliz.adores es la conversi química de los contaminantes en compuestos inofensivos. Este proceso debe realiz.arse con la mayor eficiencia posible dado el corto tiempo de permanencia de los gases en el convertidor. En los Estados Unidos los requerimientos de emisi indican que la conversi debe ser aproximadamente del 9()0/o, 
+De los tres tipos de convertidores catalíticos mencionados so dos son considerados para automiles, los de oxidaci y los de tres vías (Engler, B. 1994). Las reacciones más importantes para eliminar contaminantes de los escapes de los automiles son: las reacciones de oxidaci en que los hidrocarburos y monido de carbono se convierten en CC>i; reacciones de reducci en las que los idos de nitreno se se convierten en Nitreno y Oxígeno moleculares; Reacciones de hidrataci. Debe seftalarse que en el convertidor catalítico se llevan a cabo algunas otras reacciones que son no deseadas por la producci de sustancias ticas. Estas reacciones se muestran continuaci: 
+79 
+Reacciones con oxigeno (oxidaci): 
+CAHk + (A + B/4) 02 > AC02 + B/2H20 A co + ½ 02 > C02 B H2 + ½ 02 > H20 e 
+La reacci (A) es la oxidaci de los hidrocarburos para producir biido de carbono y agua. En (B) el monido de carbono se oxida para fonnar biido de carbono y en (C) el Hidreno se oxida para fonnar agua. 
+Reacciones con ido nitroso (reducci): 
+co + NO 
+
+D 
+
+
+En (D) el monido de carbono y el ido nitroso reaccionan para producir biido de carbono y nitreno molecular. En (E) los hidrocarburos al reaccionar con el ido nitroso forman los mismos compuestos que en la reacci anterior más agua. En (F) el hidreno con el ido nitroso forma nitreno molecular y agua. 
+Reacciones con agua (hidrataci): 
+
+-----+ H2 + C02 6 -----+ (2 + A/2) H2 + C02 H 
+80 
+Al reaccionar con agua, los hidrocarburos fonnan biido de carbono e hidreno, mientras que el mon,ido de carbono forma biido más hidreno. 
+En los convertidores catalíticos también se llevan a cabo algunas reacciones que no son deseables porque producen compuestos ticos: 
+S02 + ½ 02 1 __.,.. NH3 + H20
+5/2 H2 + NO J S02 + 3H2 ---• H2S + 2 H20 K __.,. HCN + 3H20 L Estas reacciones no son deseables, pues causan la emisi secwidaria de amoniaco, triido de azufre, ácido sulfhídrico y ácido cianhídrico. Asimismo cabe seftalar que los depitos de plomo y aditivos de aceite envenenan el catalizador deteriorando la conversi de hidrocarburos y idos de nitrenoiv. En un catalizador de tres vfas la emisi de hidrocarburos como la de monido de carbono se reduce en mi 9()0/o, la de idos de nitreno en un 95%. Los hidrocarburos altamente ticos como el benzeno en 87°/o, las cianidas en 94o/o, los aldehídos en 95% y los hidrocarburos aromáticos 
+
+"Esta es la ramo por la cual los automiles de reciente modelo no pueden utilil.ar guolina con plomo. 
+81 
+po1inuc1eados en Wl 93%v. E1 convertidor catalítico más aceptado en la industria automotriz es el de tres vfas por su mayor capacidad de conversi. 
+"Los hiclrocmbun,s arom&líticoe polinucJeedne como los antnlcenos, pirmos y OuuiiiDtl'mDB IQll c:onsidaados como carc:incpicos. 
+82 
+A ndice C: Funciones de correlacl autocorrelacl. 
+FUNCION DE AUTOCORRELACION LOGARITMO DEL CONSUMO DE GASOLINA 3 7 9 11 13 1, 17 19 21 2J....  
+o.a D,6 0.4 ~3  FUNCION DE AUTOCORRELACION PARCIAL LOO. CONSUMO DE GASOLINA . ····· ... .... . 
+,..,_............... ..... ......... ····· ·-···-··--·-··· -················--·············-····--·························­·········· ··············· ... .......... ... .. • -· ········­----· ...__________________________. 1 l J 4 , 6 7 1 9 10 11 ll u 14 ., 16 1, 11 19 :zo ll n 2J l4 F.labondo con resultados dol programa RATS  
+
+83 
+FUNOON DE AUfOCORRELAOON DIFERENOAS DEL LOG. CONSUMO DE GASOLINA 
+
+~,....__________________________....... 
+1 2 l 4 , O 7 8 9 10 11 12 13 14 IS 10 17 19 19 20 21 22 2l 24 
+F.laborado eco rosu111dos del prosram1 RATS 
+FUNCION DE AUfOCORRELACION PARCIAL DIFERENOAS DEL LOG. CONSUMO DE GASOLINA 
+
+1 2 3 4 S O 7 1 9 10 11 12 13 14 IS 10 17 11 19 20 21 22 Z3 24 
+Ellbondo con mul11dos dol progr11111 RATS 
+84 
+FUNCION DE AUTOCORRELACION LOG. PRECIO DE LOS AUTOMOVILES 
+1~ ~---------------------------, 
+
+1234,67891011 12 u 14 u 16 11 18 19 20 21 n 23 24 
+RNlp
+Elaborado"°" reaullldol del propama RATS 
+Ft.JNCION DE AUTOCORRELACION PARCIAL LOG. PRECIO DEL AUfOMOVIL 
+
+1 2 l 4 , , 7 8 9 10 11 12 13 14 u 111 11 11 19 20 21 n n 24 
+
+85 
+FUNCION DE AUTOCORRELACION DIFERENCIAS LOG. PRECIO DEL AUTOMOVIL 0,5 0A O,l n0,2 . 0,1 o -0,I .............................. .. .................. .. ... . .. . ......... .. ..................... .. ............. _. ·­· 1L..-.11·"--· · ............................ -0,Z '----------------------------' 1 2 J 4 ~ 6 7 11 9 10 11 12 13 14 15 16 17 JI 19 ZO 21 ZZ Zl 24 Elabondo con l'OIUJ1ldos del proarama RATS  
+FUNCION DE AUTOCORRELACION PARCIAL DIFERENCIAS LOG. PRECIO DEL AUTOMOVIL 0,l 0,1 -0,I .................... ··"" ................... .... ... .................. .......................................... ····· .......................................... . 1 2 l 4 5 6 7 1 9 10 11 12 13 14 15 16 17 JI 19 ZO 21 ZZ Zl 24 Ellbondo con r.ahadol del programa RATS  
+
+86 
+FUNCION DE AUTOCORRELACION LOG. INDICE DEL VÓLUMEN DE PRODUCCION INDUSTRIAL 
+
+1  2  3  4  5  6  7  8  9  JO  JI  12  13  14  U  16  11  18  19  20  21  22  23  24  
+llnlFI  
+Elaborado con resultados del prognma RA TS  
+
+FUNCION AUTOCORRELACION PARCIAL LOO. INDICE DEL VOLUMEN DE PRODUCCION INDUSTRIAL 
+
+~.l LJ 
+-0,4 ...____________________________. 1 2 3 4 5 11 7 8 9 10 11 12 13 14 1' 111 17 18 19 20 21 22 23 24 
+Elaborado con resollados del pognma RATS 
+87 
+FUNCION DEAUTOCORRELACION INDICE DEL VOLUMEN DE LA PRODUCCION INDUSTRIAL DIFERENCIAS DE LOGARITMOS 0,4 .------------~----------------, n n n0,2 · ...... ............... ... .. --0,2 --0,4 .................. . ........... ............. ........ , .. _ ...... ..... ............ ............... ................................... ........... ........... .... ... .. ......... . --0,6 ,____________________________ 1 2 3 4 S 6 1 11 9 10 11 12 13 14 U 16 17 111 19 20 21 22 23 24 Elaborado coa resuhlldos del pr081'11111 RATS  
+FUNCION DE AUTOCORRELACION PARCIAL INDICE DEL VOLUMEN DE LA PRODUCCION lNDUSTRIAL DIFERENCIAS DEL LOGARITMO 1 2 3 4 s 6 1 B 9 10 11 12 13 14 15 16 11 11 19 20 :n 22 23 24 11a...,. Elaborado coa resultados del programa RATS  
+
+88 
+FUNCION DE AUTOCORRELACJON LOGARITMO DEL PRECIO REAL DE LA GASOLINA o,a,-----------------------------, 0,6 0.4 O,l o -0,2 ._____________________________, 1 2 3 4 S 6 7 8 9 10 11 12 13 14 IS 16 17 11 19 20 21 22 23 24  
+FUNCION DE AUTOCORRELACION PARCIAL LOGARITMO DEL PRECIO REAL DE LA GASOLINA 0.6 ..... ···· ········· ··­·····. -·· ,... ... -..... • •...•................... ... ...• ... ................ ·· ····· · ­··········· ·· ·········· ····· ·· ·· ··· ····· ·· ···· ··· ·· ··· 0.4 ......................... .... ... ............ . . ... .. .. .. .... .......~ ......................... .. .... . , .. ... -~--..... .... ­............... ................ ..... .. 0,2 .......________________________... ~,l._____________________________. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 11 19 20 21 22 23 24  
+
+89 
+
+FUNCJON DE AUTOCORRELACJON TASA DE INTERES 
+0,6 -----------------------------. 
+0,4 
+0,2 
+o 
+
+
+1 2 3 4 , 6 7 11 9 10 11 12 13 14 1' 16 17 111 19 :ZO 21 22 Z3 24 
+Elaborado con resuhados del programa RATS 
+FUNCION DE AUTOCORRELACION PARCIAL TASA DE INTERES 
+o,,.------------------------------, 
+0,4 
+0,J 
+0,2 
+0.1 
+o 
+..0,1 
+1 2 1 4 , o 1 a 9 10 11 12 11 14 " 10 11 11 19 :zo 21 22 Z3 24 
+Elaborado con rcsuJ1ldos del prosnma RATS 
+90 
+Apéndice O: Panlmetros de los Modelos Estimados Apéndice D1 Parámetros de los modelos ARIMA. 
+Precio de los automiles. 
+ARIMA (2,1,1) 
+
+(J+ 8,L)e, 
+;, = -0.518515697 ;1 =0.450474525 8, = l .091287812 
+ARIMA(l,1,0) 
+PA, = e, 
+l -{J + ; ,)L + ; / L1 ; / = 0.486837597 l 
+Consumo de gasolina 
+ARIMA (2,1,2) 
+
+;,=-0.824557850 ;1=-0.649262099 8,=1.048010084 81=1.172408449 
+ARIMA (1,1,2) 
+
+; / = -0.522404625 8 / =0.802579882 81 = -0.303049935 
+91 
+Apéndice D2 Parámetros del modelo VAR-1. 
+En el modelo: 
+Las matrices y vectores tienen la fonna: 
+
+
+
+
+
+
+u=[ ~J [DLl'Ar]
+21
+.... y,= DLCGT 
+donde los coeficientes son: 
+au = 0.521172394 aa,11 = 0.193037228 Pa.12 = -0.25639912S 
+1C1 = 0.002492498 ª2,6 = -0.145119974 «2,10= -0.143293440 Pu= 0.245062398 ~= 0.129534009 132.6 = -0. 796633908 P2.• = o. 195533315 Pi.12 = -0.121952988 
+Los coeficientes que no se mencionan son iguales a cero. La matriz de variamas y covariam.as es: 
+0.000185099602 0.1286239540 ] 
+[
+1:, = 0.000010126405 0.000033485853 
+92 
+Apéndice D3 Parámetros del modelo VAR-2. 
+En el modelo: 
+DLIP,_"] PACTOL]DLPA,]
+donde: Y,= [DLCG, x,_1t = 11R,_" w= HNC
+[ [
+LPRG,_" HNCT 
+Las matrices Ai., B:; y C tienen la forma: 
+B:; =lr rl.J AiJ]
+61.J r2., 62,1 ~.J e=[: ~ :J 
+y donde los coeficientes son: 
+µ•. = -0.014988143 V1 = 0.010326488 <01 = -0.0217S4191 C11,1 = 0.235693311 P1.11 = 0.264022293 l>t,3 = 0.018487557 
+<02 = -0.004605598 Cl2,6 = -0.107608186 C12,9 = -0.139055066 Cl2.10 = -0.098963033 132.2 = O. 135540201 132., = -0.551550671 'Y2.1 = -0.049747374 'Yl.2 = -0.056526285 'Yi,, = 0.056842214 Y2,1 = 0.061322189 'Y2.1 = 0.079260940 y']j) = 0.091070572 A2,1 = -0.012044330 A2,6 = 0.013317158 
+Los coeficientes que no se mencionan son iguales a cero. 
+La matriz de variam.as y covariamas es: 
+r0.000150686056 0.0005446483 ] Lu = lo.000000031s32 0.000022668142 
+93 
+Apéndice 04 Parámetros del modelo VAR-3. 
+En el modelo: 
+[DLPA,] DUP,_"] rlPAC1VL]
+donde: y, = DLCG, x,_1c = TIR,_" w= HNCT
+[
+LPRG,_" VER 
+Las matrices A¡,, B,¡ y e tienen la forma: 
+B,¡=[Y1.1 61J AiJ] 
+
+e=[: ~ :J
+r2.1 62J A:z.1 
+y donde los coeficientes son: 
+µ¡. = -0.003635936 a.1,1 = 0.493446550 
+131,12 = -0.242796595 Y1,1 = -0.093395179 
+0n = -O.OOS864476 T\2 = 0.004850538 a.2,6 = -0.086040117 a.2,9 = -0.126722131 a.2.10 = -0.107686115 J3zi = 0.164948184 ~, = 0.178242693 P2.6 = -0.529039337 = -0.050588108 = -0.069286001 
+Y2.1 'Y2.2 
+Y2.1 = 0.080679117 Y2.1 = 0.086716094 
+"(2,9 = 0.059497123 Al,1 = -0.011663360 A.2,6 = 0.012212870 
+Los coeficientes que no se mencionan son iguales a cero. 
+La matriz de varianzas y covarianzas es: 
+Í0.000173959S6S O.On0996266 J z:, = lo.000004120115 0.000021551311 
+94 
+ApéndiceD5 Parámetros del modelo VAR-4. 
+En el modelo: 
+DUP,_1:] PACTOC]
+DU'A,]
+donde: y, = [DLCG, x,_1: = TIR,_" w= U'RG,_"
+
+[ [ n:r 
+Las matrices Ai,, B,; y C tienen la forma: 
+y donde los coeficientes son: 
+(1)1. = -0.039097254 0>1. = -0.013026562 a1,1 = 0.465786072 P1.12 = -0.268647815 Yt,I = -0.087590506 61,2 = -0.016136492 
+<P2 = -0.008441855 COi = -0.005972042 1")2 = 0.004731469 a2,6 = -0.084748943 a2,9 = -0.117413246 a2.10 = -0.091693377 J3i.i = 0.153942266 Pz, = 0.185918383 Pi.6 = -0.517190744 Y2.1 = -0.052005366 Y2,1. = -0.074381943 Y2,1 = 0.080232781 Y2,1 = 0.079344449 Y2,9 = 0.053363543 A2,4 = -0.013123369 A2,6 = 0.014004217 
+Los coeficientes que no se mencionan son iguales a cero. 
+La matriz de varianz.as y covariamas es: 
+10.00012841584 -0.0220419284] l:, = l-0.00000112083 0.00002013565 
+95 
+ApáldlceD6 Parámetros del modelo VAR-5. 
+En el modelo: 
+
+DUP,_" l 
+[ DU'A, J
+donde: y,= DLCG, x,_1c = [ 17R,_" J 
+LPRG,_" 
+Las matrices Ai., 11;¡ y C tienen la forma: 
+A¡= 61J
+[ª" p,,] 11; =[r,, ~,] 
+ª2,J P2., Y2.1 62,J AiJ 
+y donde tos coeficientes son: 
+m, 
+q,J 
+~ 1/2 
+-0.003635936 -0.242796595 
+-0.008441855 
+0.004731469 -0.117413246 0.153942266 -0.517190744 -0.074381943 0.079344449 -0.013123369 
+µ,. 
+131,12 
+(1)2 
+112 
+a2,,9 
+13:z.i 
+13:z.6 Y2.2 Yu A.:z.4 
+Los coeficientes que no se mencionan son iguales a cero. 
+= = 
+= 
+= = = = = = = 
+<11,1 
+Yt,I 
+mi 
+a.;z.6 
+a2.10 
+P:z.5 Y:z.t Y:z.1 
+Yu A.:z.6 
+= = 
+= 
+= = = = = = = 
+PACTOL PACTOC 
+W= 
+HNCT 
+VER 
+'P1
+e=[µ.
+µ2 '1'2 
+0.493446550 -0.093395179 
+-0.005972042 -0.084748943 -0.091693377 0.185918383 -0.052005366 0.080232781 0.053363543 0.014004217 
+96 
+Lamatriz de variamas y covariamas es: = [ 0.00017395957 -0.0089676703] L, -0.00000053075 0.00002013S65 Lamatriz de Descomposici de CHOLESKI es: _r o.on2 0.000 ] l:..tcl,olakJJ -l-o.0000040240 0.00044871 
+La matriz deFactores deladescomposici de Si~Bemanke es: 
+Í 0.0132 0.0000 J ~&rnanb) = l-o.000040252 0.0044871 
+97 
+Apéndice E: Transformaciones 
+El análisis de las series indicque la serie del logaritmo del consumo de gasolina tiene una raiz unitaria. por lo que el proceso es estacionario si se observan las primeras diferencias de la serie. El mismo resultado es arrojado para el logaritmo del precio real del automil y para el logaritmo del índice del volwnen de la producci industrial. 
+El análisis también indicque el logaritmo del precio real de la gasolina y la tasa real de interés ya son procesos estacionarios por lo que no necesitan diferenciarse. 
+A continuaci se muestran las senes diferenciadas de aquellas variables que lo requirieron: 
+98 
+CONSUMO DE OASOLINA PRIMERAS DIFERENCIAS DEL LOOARITMO 
+o.n~-------------------------------, 
+0.1 .... 
+. ..............••.••.•.•. •..••..... ······· .. ..... " ............... , .... .....•...••.....•...........• ········ .......... ... .. ..... ······ ·· 
+
+-0.1 
+
+INDICE DEL VOLUMEN DE LA PRODOCCION INDUSTRIAL PRIMERAS DIFERENCIAS DEL LOGARJTMO 
+0.1 ~-------------------------------, 
+0.01 
+0.06 
+0.1M 
+-G.GJ · ·· 
+-0.04 
+. .... .. ............ ...... ..•..••. ....••.. . .••...•... ·•········· ... .... ....... . ......... ,............,....... ············ ··· ... ... . ..... . 
+-0.06 -0,CI ...._______________________________...J 
+
+
+~ 
+
+2--91 
+
+99 
+PRECIO RELATIVO DEL AlJTOMOVll. DIFERENCIAS DE LOOARITMOS 
+0.04 
+0.02 
+.... ., .. , .. 
+
+-0,04 
+<00" ••• 000 ... . . . .. ,._ o00 .. 00•0000 Oo • •• 00••••••••••• • • •• • • 
+-0,06 ......................................................................................................................................................................................................................... ....... 
+19116.:01 lll87:0l 19R01 lll99;01 1990:01 1991:01 1992.:01 1993:01 
+Fuado:Ellbondo con da1DI del Hinco do Mmco ­
+100 
+8. BIBLIOGRAFíA: 
+Akaike, H.• (1973), "Infonnation Theory and the Extension of the Maximum Likelihood Principies". en Second lnternational Simposium on Information Theory, Budapest, B.N. Petrov, F. Csáki. 
+Akaike, H.• (1974), "A New Look at Statistical Model Identification", IEEE Transactions on Automatic Control, AC-19,71 
+Aoki, M ., (1990), State Space Modeling of Time Series, Berlin, Springer­Verlag 
+Asociaci Mexicana de la Industria Automotriz, A. C. Boletín Informativo, varios neros desde 1984 a 1994 
+Banco de México, Indicadores Econicos, varios neros, 1983-1994. 
+Bernanke, B.. (1986), "Altemative Explanations of the Money lncome Correlation ", Carnegie-Rochester Conference Series on Public Policy, Vol., 25 pp 49-100. 
+Beveridge, S. y Nelson, C. H.,(1981), "A New Approach to Decomposition of Economic Time Series into Pennanent and Transitory Components with Particular Attention to Measurement of the Business Cycle", Journal of Monetary Economics, Vol. 7, No. 2, pp. 151-174. 
+Box, G. E. P. and Jenkins, G. M.(1976), Time Series Analysis Forecastingand Control, N. J., Prentice Hall. 
+Box, G. E. P. y Tiao, G. C., (1975), "Intervention Analysis with Applications to Economic and Environmental Problems", Journa/ of the American Statistical Association, Vol. 70, pp. 70-79 
+101 
+Campbell, J. Y., y Perron, P., (1991), "Pitfalls and Opportunities: What Macroeconomists Sbould Know about Unit Roots", Princeton University. en NBER Macroeconomics Conference, Cambridge, MIT Press. 
+Cbatfield, C., (1985), "The Initial Examination of Data", Journal of Royal Statistics Society, pp. 214-253 
+Departamento del Distrito Federal, ( 1990), "Programa Integral Contra la Contaminaci Atmosférica de la Zona Metropolitana de la Ciudad de México", México 
+Dickey, D., y Fuller, W.A., (1979), "Distributions of the Stimators for Time Series Regression witb a Unit Root'', Joumal of American Statistical A.vsociation, Vol. 74, pp. 427-431. 
+Dickey, D., Bell, W.A., y Miller, R.B., (1986), "Unit Roots in Time Series Models: Tesets and lmplications", American Statiscian, 40, 12-26. 
+Doan, T. A., (1992), RATS User's Manual, Version 4, U.S.A. Estima 
+Doan , T. A., Littennan, R.B. y Sims, C.A., (1984), "Forecasting and Conditional Projection using Realistic Prior Distributions", Econometric Reviews, 3, 1-100. 
+El Colegio de México, Programa de Estud.ios A vanz.ados en Desarrollo Sustentable y Medio Ambiente, (1993), La Iniciativa Privada y el Medio Ambiente, Cámara Nacional de la Industria de la Transformaci. 
+Engler, B., Lox, E., Leyrer, J., Ostgathe, K., Muller, W., (-), Catalizadores Automotrices Para Control de Emisiones, Alemania, DEGUSSA AG. 
+Engler, B., Lox, E., Leyrer, J., Ostgathe, K., Muller, W., (-), Catalizadores Automotrices Para Control de Emi.viones, Sistemas y Funciones , Alemania, DEGUSSA AG. 
+102 
+Fuller, W.A., (1976), Introduction to Statistical Time Series, New York, John Wiley. 
+García Alba, l. P., (1993), Testimonios de Polftica Econica, 1982-1988, México, Universidad Automa Metropolitana. 
+González, E. J. M., (1989), La Contaminaci Del Aire y su Control Ocasionada Por Fuentes Vehiculares en Monterrey, Monterrey, Programa Ambiental contra la Contaminaci. 
+Granger, C.WJ., (1969), "lnvestigating Causal Relations by Econometric Mode1s and Gross Spectral Models", Econometrica Vol. 37, pp. 424­438. 
+Hannan, EJ. and Quinn, B.O., (1979), ''The Detennination of the Order of an Autoregression", Journal of the Royal Statistical Society", B41, pp. 190-195. 
+Hannan, EJ., (1980), "The Estimation of die Order of an ARMA Process", Annals o/Statistics, 8, 1071-81. 
+Harvey, A. C. y Durbin, J.,(1986) "The Eff'ects of Seat Belt Legislation on British Road Causalities: A Case Study in Structural Time Series Modeling", Journal ofRoyal Statistics Society, part 3, pp. 187-227 
+INEGI, (1994), Gaceta Informativa INEGI, Vol. 4, oct.-dic. 1993, México, Instituto Nacional de Estadistica Geografia e lnfonnática 
+Judge, G., Hill, R. C., Griffiths, W. E., Lkephol H. Lee, T. (1988), lntroduction to the Theory and Practice of Econometrics, Singapore, John Wiley. 
+Lkephol, H.,(1991) lntroduction to Mu/tiple Time Series Analysis, Ber1ín, Springer-Verlag. 
+103 
+MacKenzie, J., y Walsh, M. P.,(1990), Driving Forces: Motor Vehicle Trends and Their lmplications for Global Warming, Energy Strategies, and Transportation Planning, Washington D.C., World Resource Institute. 
+Milis, T. C., (1990), Time Series Techniques For Economists, Cambridg~ Cambridge University Press. 
+Quadri de la Torre, G. y Sánchez, C. L.,(1992), La Ciudad de Mexico y la Contaminaci Atmosférica, México, Limusa-Noriega. 
+Quadri de la Torre, G., (1993), "Consideraciones Sobre Medio Ambiente y Actores Sociales en México", Contribucionts 1,93 
+Quinn, B.G., (1980), "Order Determination for Multivariate Autorregression", Journal ofthe Royal Statistic Society, B42, 182-185. 
+Rissanen, J., (1978), "Modelling by Shortest Data Description", Automatica, 14, 465-71. 
+Rosales, P. P. V., (1992), El Efecto del Programa "Hoy No Circula" En la Demanda por Gasolinas y Contaminantes, Tesis de licencia~ México, Instituto Tecnolico Automo de México. 
+Schuarz, G., (1978), "Stimating the Dimension of a Model", Analysls of Statistics, Vol. 6, pp. 461-464. 
+Sims, C.A., (1980), "Macroeconomics and Reality'', Econometrica, Vol. 48, pp. 1-48. 
+Sims, C.A., Stac~ J.K. and Watson, M.W., (1990), ''Inference in Linear Time Series Models with Sorne Unit Roots", Econometrica, Vol. 58, pp 113­144. 
+104 
+Tiao, G.C. y Box, G.E.P., (1981), "Modelling Multiple Time Series with Applications"", Joumal ofthe American Statistica/ Society, 16, 802-16. 
+Toda, H. Y., y Phillips, P. C. B., (1993) "Vector Autoregressions and Causality'', Econometrica, Vol. 61 pp., No. 6, November 
+Willars A. J. M., (1984), El Petreo en México: Efectos Macroeconicos, Elementos de Politica y Perspectivas. México, El Colegio de México. 
+IOS 
+
+
+
+
+
+

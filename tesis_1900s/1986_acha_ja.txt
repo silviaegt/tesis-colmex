@@ -1,0 +1,2404 @@
+EL COLEGIO DE MEXICO 
+CENTRO DE ESTUDIOS ECONOMICOS 
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRIA EN ECONOMIA 
+Aplicación de la Prorrramación Lineal a un Problema Microeconórnico Específico: El Caso de Industrial La Fama S.A. de C.V. 
+Jor0e A. Acha Daza 
+Promoción 1983-85 
+1986 
+Asesor: Profr. Alv:rro Baillet 
+I ND I C E 
+Pagina. 
+Prefacio ...................................................... 3• 
+1.-Introducción ............................................. 5. 1.1.-Análisis marginal o programación lineal ............ 5• 
+1.1-.1.-Análisis marginal ................... 5• 1.1.2.-Programación lineal ••• 6. 1.1.3.-Análisis marginal Vs. Programación lineal .. 
+.. 10• 1.2.-Industria jabonera ................................. 11. 1.2.1.-Industria jabonera en México................ 11. 1.2.2.-Tipología del mercado 12. 1.2.3.-Industrial La F.una S.A. de C.V. .............. 17• 
+2.-Planteamiento y solución de los problemas 20. 2.1.-Compra de materias primas .......................... 21. 2.1.1.-.Solución ................................. 25• 2.2.-Producción .................. 27• 2.2.1.-Solución .................. 29. 2.3.-Venta del producto elaborado • • • • • • • • • • • • • • • • A--· ••••••• 30• 2.3.1,-Solución 32. 2.4.-Comentarios a las soluciones 33. 
+3.-Análisis de sensibilidad ................ 35. 3.1.-Compra de materias primas 35. 3.1.1.-Solución •.•.•.. .... 37. 3.2.-Producción .......................... 38. 3.2.1.-Aumento del 3%en la calidad 39. 3.2.1.1.-Solución 39. 3.2.2.-Disminución del 3% en la calidad 40. 3.2.2.1.-Solución 41. 3.3.-Venta del producto elaborado ••...•••• 41. 3.3.1.-Solución ...•.•••. 42. 3.4.-Comparación de resultados 42. 
+Página. 
+4.-Conclusiones ............................................ 44. 
+Bibliografía ................................................... 48. 
+Apéndice A.-Programación lineal •••••••••...•.•••••••••.....•.• 49. A.1.-Teoría de solución de programas lineales 51. A.2.-Método Simplex ......................... 59. A.3.-Método Simplex en forma de ta~leau 66. 
+Apéndice B.-Listados con la solución de los problemas 68. 
+PREFACIO. 
+Medida fundamental de la vida económica de un país, es su activi dad industrial, la cual refleja también el grado de desarrollo de la -nación en cuestión. 
+En nuestro país, la industria es una de las principales fuentes de empleo y por tanto se considera primordial para el bienestar de la población. 
+Uno de los agentes que participa en la economía son las empresas, que se ocupan de diferentes actividades tanto en el comercio como en ­la industria y en la prestación de servicios. 
+Toda empresa que se desenvuelve en la industria enfrenta proble-mas con respecto al uso eficiente de los bienes de que dispone, estan-do, en la mayoría de los casos, este uso alejado del mejor debido a la complejidad de las operaciones que se realizan en una fabrica y a que, por el costo que representa, las empresas, prefieren no contar con de­partamentos especializados en actividades que no estén directamente re lacionadas con la producción. 
+Este trabajo se enfoca a resolver los problemas que una fabrica en particular tiene que resolver a diario, tales como la compra de ma-terias primas al mínimo costo, la minimización del costo de la produc­ción, la venta del producto elaborado con la mejor ganancia, etc. 
+La empresa objeto de este trabajo esta ubicada en la ciudad in-­dustrial de Morelia, Mich., su razón social es Industrial La Fama S.A. de C.V., produce principalmente jabón de lavandería y además, botella de PVC para aceite de cocina. 
+El trabajo se enmarca en la tradición neoclásica de la maximiza~ ción del beneficio, considerando que Industrial La Fama dispone de un número limitado de formas de producción y que sus funciones de produc 
+ción tienen rendimientos constantes a escala. 
+La herramienta de optimización utilizada es la programación li­neal, técnica que nos lleva al optimo de problemas de maximizacion o minimización de funciones lineales con restricciones también lineales. 
+El trabajo determina las soluciones optimas para los diferentes problemas planteados orientando a la empresa hacia una mejor utiliza­ción de sus recursos. 
+1.-INTRODUCCION. 
+En un primer contacto con la Economía se aprende, que el proble 
+ma fundamental a resolver por ésta, es el de asignar los recursos es-
+casos de manera tal que se maximice algún objetivo determinado. 
+Existen en esta disciplina dos caminos para solucionar los pro-blemas de optimización. Por un lado se encuentra el análisis marginal, que supone la existencia de un número infinito de formas de produc--­ción para un bien, y por el otro la programación lineal en la que se asume que el número de formas de producción es limitado. 
+Se describirán enseguida ambos métodos y en un tercer apartado se contrastarán. 
+1.1.-Análisis marginal o programación lineal. 
+1.1.1.-Análisis marginal. 
+Analizando un problema clásico en la Economía se verá como cada uno de los métodos de optimización son utilizados en diferentes casos. 
+El problema es el de la utilización óptima de dos factores, con vencionalmente llamados trabajo y capital. En el análisis marginal se formula concibiendo que cada uno de los factores coopera con el otro de acuerdo a una función de producción que determina la cantidad máxi ma de producto que se puede obtener con todas y cada una de las combi naciones de factores productivos específicos. Se define para un esta-do dado de conocimientos técnicos. 
+El problema señalado se pu~de representar gráficamente en un --diagrama como el de la fig. l. 
+
+trabo/o. 
+Fig. 1.-Maximización en el análisis marginal. 
+Si los precios por unidad de trabajo y capital son conocidos, ­la combinación total que de éstos puede ser comprada con una cantidad fija, puede ser mostrada por una línea recta como CC' cuya pendiente depende sólo de los precios relativos. Del diagrama pued~n obtenerse de inmediato dos conclusiones: primera, el costo mínimo de la produc­ción, representada por cualquier isocuanta puede alcanzarse usando la combinación de trabajo y capital que corresponde al punto en que esa isocuanta es tangente a la línea de precios; segunda, la más grande -producción alcanzable con cualquier gasto dado esta representada por la isocuanta que es tangente a la línea de precios correspondiente a ese gasto. 
+El diagrama descansa sobre el supuesto de que ambos factores -­son perfectamente sustituibles el uno por el otro, pero la mayor par-te de los procesos no incluyen esta posibilidad. 
+Se verá ahora como trata la programación lineal a este tipo de problemas. 
+1.1.2.-Programación lineal.* 
+La idea motivadora de la programación lineal es la de "proceso" 
+o "actividad". Un proceso es un método específico de desarrollar una 
+* Para una descripción más detallada de los métodos de solución en programación lineal puede revisarse el apéndice de este trabajo o consultar las referencias bibliográficas. 
+tarea productiva. 
+Para algunas tareas puede existir un número infinito de procesos, para otras este número será finito. Una empresa optará por uno de ellos. 
+Al desear cambiar un proceso por otro, la fábrica podrá hacerlo si la tarea desarrollada por el segundo es igual a la del primero y lo hará cuando el uso del nuevo proceso le signifique un ahorro de insumos. El -logro de este objetivo implica un desarrollo tecnológico. 
+Ante la gama de posibilidades que un empresario encuentre tendrá -que decidir por la que considere más adecuada tomando en cuenta las res-tricciones que de capital, fuerza de trabajo o de materia prima enfren-­te. 
+La programac::.ón lineal persü~ue como objetivo, determinar los nive les óptimos de los procesos productivos cuando se considera que dichos -procesos se comportan en forma lineal y que las restricciones a las que se enfrentan los mismos procesos son también de forma lineal. 
+Los métodos de solución en programación lineal son relativamente -recientes, ya que han sido desarrollados durante los últimos treinta a-­ños, se considera a George Dantzig como el descubridor del método Sim--­plex de solución. La programación lineal ha tenido mucha aceptación debí do a la aparición de las computadoras electrónicas, ya que si bien las o peraciones a realizar en el método Simplex no son de gran complejidad, se requiere un gran número de ellas, lo que hace prácticamente imposible aplicar el método en forma manual para problemas relativamente complica-dos. 
+Analizando ahora un proceso en el que solo se cuenta con una tecn~ logía dada, en el que se considera que se produce con trabajo y capital únicamente y representándolo gráficamente, se tendrá: 
+
+Producto. 
+Canlidad d~ fra/Jajo. 
+Fig. 2.-Un proceso. 
+Si se desea aumentar la cantidad producida habrá que aumentar la -cantidad de capital utilizado y al mismo tiempo, en una proporción fija, la cantidad de trabajo. Al hacer lo anterior se esta suponiendo que no existen economías o deseconomías de escala y que habrá una razón cons-­tante entre el-producto y cualquiera de los insumos. Aquí aparece el su puesto fundamental de la programación lineal, el de rendimientos cons-­tantes a escala; es decir, se puede aumentar la producción por ejemplo al doble con solo aumentar la cantidad de insumos utilizada al doble. 
+Sin embargo, frecuentemente habrá varios procesos disponibles; la figura 3 representa una situa en la que se cuenta con dos procesos. El proceso (A) estará representado por la línea OA y el proceso (B), --por la línea OB. El producto se mide en cada uno de los rayos y la esca la para cada rayo no es necesariamente la misma, ya que esta refleja la productividad en cada uno de los procesos y no tendrá conexión con nin­gún otro proceso. Si los puntos L y M representan la misma producción -para ambos procesos, entonces LM, la línea recta que los une represent~ rá una combinación de los procesos A y B con la que se obtiene el mismo producto. 
+
+Ira/Jo/o. 
+Fig. 3.-Dos procesos. 
+S~ considera ahora una situación en la que hay disponible~ para -producir cuatro procesos; se tendrá una situación análoga a la de un --programa lineal; la figura 4 muestra tal situación. 
+o
+,t 
+}""'
+'6~
+...., 
+~.~
+a~ 
+y 
+
+A 
+
+
+Ira/Jo/a 
+Fig. 4.-Cuatro procesos. 
+Cada uno de los rayos muestra un proceso diferente. Si se supone que los puntos J, K, L y M corresponden a una misma cantidad de produc-to, se podrán unir y de esta forma determinar una isocuanta. Cualquier sucesión de segmentos de recta paralelos a JKLM representan también una isocuanta; se muestran algunas. Se pueden dibujar líneas de precios en la misma figura, XX' y YY' representan dos casos posibles. De la forma en que está dibujada XX', el máximo producto alcanzable se obtiene utili zando únicamente el proceso C, así que este proceso es óotimo para la lí nea de precios relativos XX'. Por lo que respecta a YY' es paralela al -segmento de recta JK. En este caso el producto máximo alcanzable se pue­de obtener mediante el uso de los procesos C o Do una combinación de am bos. 
+Resulta evidente al aplicar la programación lineal a un problema -de este tipo, que el óptimo puede ser alcanzado utilizando únicamente un proceso que dependera siempre de la pendiente de la línea de precios. 
+1.1.3.-Análisis marginal Vs. Programación lineal. 
+La diferencia fundamental entre el análisis marginéll y la progr~ ción lineal es que áquel considera que a partir de cierto punto el costo promedi9 de lo producido .se incrementará, mientras que la segunda lo asu me constante. 
+El suponer que el costo promedio se incrementa dá lugar a conside­rar rendimientos decrecientes a escala, y el considerarlo constante sup~ ne que los rendimientos son constantes a escala. 
+Siendo Industrial La Fama S.A. (INFASA) una fábrica de tamaño rela tivamente pequeño, no tendrá oportunidad de influir, tanto en los pre--­cios del mercado de insumos, como en el del producto elaborado; sus cos-tos por unidad producida pueden asumirse entonces constantes. 
+En el análisis marginal se asume que existen disponibles un número infinito de formas de producción, mientras que en la programación lineal ese número es limitado. 
+Para el caso de INFASA se cuenta con un número limitado de formas de producción, debido a que resultaría muy complicado, costoso y poco m~ nos que imposible contar con Un número infinito de procesos productivos, 
+Es importante hacer notar que no es posible aplicar el criterio --convencional de tangencia a una situación en la que se cuenta con un nú­mero finito de formas de producción, ya que la derivada no existe en los puntos de quiebre de las isocuantas, los cuales corresponderán siempre a un óptimo. 
+Se ve pues, que para resolver los problemas que se plantearán para INFASA, será adecuado hacer uso de la programación lineal dejando de la-do el análisis marginal. 
+Se pasa ahora a señalar algunos aspectos importantes de ~3 indus-­tria jabonera y de INFASA. 
+1.2.-Industria jabonera. 
+1.2.1.-Industria jabonera en México. 
+La industria jabonera en nuestro país aparece concentrada en los -estados de México y Jalisco y en el Distrito Federal. Existen además en otras partes de la República, fábricas de diferente tamaño. En el cuadro 1 se señalan algunos aspectos importantes de esta industria. 
+Cuadro 1.-Aspectos importantes de la industria jabonera. 
+Año  Número de  Número de  Capital Social  
+empleados  obreros  (miles de pesos)  
+1981  3,347  6,841  4,731,307  
+1982  3,684  6,586  5,409,482  
+1983  3,388  7,272  6,269,037  
+
+Fuente. Cámara Nacional de Grasas, Aceites y Jabones. 
+Los totales anteriores corresponden a las empresas dedicadas a la producción de jabones, detergentes y otros productos para lavado y aseo. 
+Las ventas de jabón de lavandería, que es el producto que intere­sa por ser el que fábrica la empresa de la que este trabajo se ocupa, -fueron para el año de 1981 de 152,000 toneladas; en 1982 de 156,000 to-neladas y en 1983 de 165,000 toneladas. Se tiene un estimado para el a-ño de 1984 de 173,000 toneladas. (Misma fuente del cuadro 1). 
+1.2.2.-Tipología del mercado.* 
+Para clasificar el mercado de esta industria se hará uso de los -datos disponibles del Censo Industrial de 1975 (último censo efectuado), el cual desafortunadamente sólo presenta sus cifras a nivel de zrupo de productos y el jabón de lavandería queda incluido en el grupo de "Fábri cas de jabones, detergentes y otros productos para lavado y aseo". 
+Podría utilizarse el número de empresas censadas para determinar las características del mercado, pero éste es sólo un indicador vago de la influencia particular de cada una de las empresas, por lo que se se­guirá el procedimiento de la Curva de Lorenz y el Coeficiente de Gini. 
+Este procedimiento refleja la desigualdad o concentración relati­va mejor que ningún otro, ya que toma en cuenta la participación de ca-da una de las diferentes empresas en el mercado. 
+Para aplicarlo es necesario contar con los siguientes datos: ero--presas divididas en estratos de acuerdo al valor de su producción bruta, inversión fija bruta o personal ocupado y el número de empresas conteni do en cada estrato. 
+Para este caso se utilizará el valor de la producción bruta por considerarse como el reflejo más fiel de la posición de las empresas en el mercado. 
+Una vez que se cuenta con la información requerida, se procede de la siguiente manera: 
+* Para una descripción detallada del método aquí utilizado, consul tar Creer.• 
+a) 
+Se ordenan las empresas de acuerdo al valor de su producción, de menor a mayor. 
+
+b) 
+Se representa en un plano coordenado los puntos que nos indi-­can en el eje horizontal el número de firmas en porciento, acumuladas -desde la menor hasta la mayor, y por el otro eje su producción bruta a-cumulada en la misma forma. La línea diagonal al cuadrado es la línea -de igualdad absoluta. 
+
+c) 
+Se unen los puntos obtenidos en el paso anterior, encontrándo­se así la Curva de Lorenz. 
+
+d) 
+Una vez que se ha encont~ado la Curva de Lorenz se procede a -calcular el área contenida entre la línea de igualdad absoluta y la Cur va de Lorenz. El cociente de esta área entre 5,000, el área de la mitad del cuadrado, dará el valor del Coeficiente de Gini. 
+
+
+El valor del Coeficiente de Gini es un indicador del grado de con centración en la industria. Si su valor está cercano a cero se dice que cada uno de los oferentes participa con una proporción semejante de las ventas del mercado, Si por otro lado, el valor se acerca a uno, se est~ rá en una situación cercana al monopolio. Cuando el valor del Coeficien te de Gini se encuentra entre cero y uno, se dice que hay diferentes --grados de oligopolio. Se entiende por oligopolio al mercado en el que -un número reducido de empresas controla una gran parte, o la totalidad, de las ventas. 
+Aplicando el procedimiento descrito a la Industria Jabonera, se -tendrá: En el cuadro 2 se encuentran anotados los datos necesarios para ­el desarrollo del problema. 
+Cuadro 2.-Principales características por estrato de valor de la producción bruta para las fábricas de jabones, deter-­gentes y otros productos para lavado y ase.o. 
+Número de es  Personal  Inversión  Producción  
+tablecimien­ ocupado  bruta  bruta  
+tos censados  total  Miles  de  pesos  
+Hasta 100  10  21  104  508  
+101 a 500  30  120  392  7,618  
+501 a 1,500  19  128  406  18,973  
+1,501 a 3,000  13  163  548  28,916  
+3,001 a 5,000  11  203  750  42,276  
+5,001 a 10000  18  408  1,620  135,661  
+10001 a 20000  8  564  3,280  103,549  
+20001 a 35000  9  607  3,920  223,107  
+35001 a 50000  5  673  231  207,572  
+50001 a 100000  5  1,412  7,665  407,376  
+100001 y más  7  4,811  102,654  5,553,454  
+TOTAL  135  9,110  121,570  6,729,010  
+
+Fuente. Censo Industrial 1975. Resúmen general, Tomo I. Cuadro 10. 
+En el cuadro 3 se anotan los datos necesarios para construir la --Curva de Lorenz. 
+Cuadro 3.-Datos para la Curva de Lorenz. 
+Valor de la % del % acumulado Número de %del % acumulado producción total (eje Y) establecí total (eje X) bruta (mi-mientas. les de pesos) 
+508 o o 10 7 7 
+Cuadro 3.-Continuación. 
+Valor de la %del % acumulado Número de %del % acumulado producción total (eje Y) establecí total (eje X) bruta (mi-mientas.,. les de pesos) 
+7,618 o o 30 22 29 18,973 o o 19 14 43 28,916 o o 13 10 53 42,276 1 1 11 8 61 103,549 2 3 8 6 67 135,661 2 5 18 13 80 207,572 3 8 5 4 84 223,107 3 11 9 7 91 407,376 6 17 5 4 95 5,553,454 83 100 7 5 100 
+En la figura 5 se presenta el dibujo de la Curva de Lorenz corres­pondiente a estos datos. 
+Determinación del Coeficiente de Gini. 
+(8) ( 1) 
+= 4 uz.
+Ai 
+2 
+(1+3)6
+Az = 12 u2•
+2 
+(3+5)13 2
+A3 = 52 u .
+2 
+(5+8)4 2
+A,. = 26 u . 
+2 
+(8+11)7 2
+As = 67 u •
+2 
+
+Por tanto el área entre la diagonal y la Curva de Lorenz es: A= 4487 u2• 
+42487
+Coeficiente de Gini = = 0.8974 
+(11+17)4
+A6 
+2 
+(l7+100)5 2 
+2
+A== 513 u • 
+t 
+100 
+90 
+80 
+~ 
+~ 7'0 
+e
+-
+::,... .D. 60 
+e: 
+-o ü u 50 
+.,,::, 
+o
+... 
+Q. 
+40 e
+-
+CI
+.,, 30 
+... 
+.!:? 
+e 
+
+> 20 
+'º 
+o 
+5,000 
+Numero de empresas acumulado desde la moa pequelia (%) curvo de Lorenz 
+2
+== 56 u • 
+2
+= 292 u• 
+Fig. 5.-Curva de Lorenz para la Industria fabricante de jabones, detergentes y otros productos para lavado y aseo. 
+Observando que el valor del Coeficiente de Gini es muy alto y que el número de empresas de esta industria no es pequeño se afirma que es-ta industria tiene un caracter oligopolico~ en donde las empresas más -grandes, que son un número reducido, controlan la casi totalidad del --mercado nacional. 
+No hay que olvidar que el cálculo del Coeficiente de Gini se hizo con datos a nivel nacional; este valor variará cuando se consideren mer cados regionales, pero no fue posible encontrar los datos necesarios a nivel regional. 
+El resultado obtenido concuerda con lo afirmado por la Cámara Na-cional de Aceites, Grasas y Jaboni:as en donde se informa que las cinco empresas productoras de jabón de lavandería más grandes, La Corona de -México, D.F., Mariano Saleado de Toluca, Méx., Sánchez y Martín de Gua­dalajara, Jal., La Esperanza de Gómez Palacio, Dgo., y la Unión de To-­rreón, Coah., venden alrededor del 90% de la producción nacional. 
+De acuerdo con la encuesta de Ingresos y Gastos Familiares de 1977 las familias gastaron el 6% de su presupuesto en de~ergentes y blanqueadores. De esta cantidad sólo una parte corresponde al jabón de lavandería, ya que si bien es un artículo de uso indispensable, se ve desplazado por productos substitutos tales como los detergentes. 
+El consumo de jabón de lavandería se considera de origen tradicio nal, muestra clara de este hecho es que, las exportaciones del sector a los Estados Unidos de América se concentran en lugares en donde el núm~ ro de mexicanos o de descendientes de éstos forma una gran parte de la población. 
+1.2.3.-Industrial La Fama S.A. de C.V. 
+INFASA es una empresa de reciente creación, constituída como so-­ciedad en julio de 1979, empezó a funcionar en enero de 1980. Forma parte 
+de un grupo industrial integrado por ésta y otras tres empresas: Tron --hermanos, prQductora de aceite y manteca vegetal; Molinos Morelia, pro--ductora de harina de trigo y Oleomich, productora de aceite de coco. Al-gunos de los subproductos de estas empresas sirven a otra del mismo gru­po, ésto explica el porqué alguna de las empresas del grupo debe ser el proveedor de cierto insumo. 
+Dentro de la industria jabonera nacional, INFASA se enmarca en el grupo de pequeñas empresas que comparten mercados regionales con las grandes productoras de jabón de lavandería. 
+La región en la que INFASA vende su producto comprende los estados de Michoacan, Jalisco, Guanajuato, San Luis Potosí, México y el Distrito Federal. 
+La participación de INFASA en el mercado nacional es de apenas un 1%, lo que la coloca en una posición precio aceptante, seguidora de las empresas líderes del mercado. 
+El capital social de la empresa es de 45 millones de pesos y ocupa alrededor de treinta obreros, cifra que no se da en forma exacta debido a que varios de ellos prestan servicios como trabajadores eventuales. Por lo que respecta a empleados, la fabrica cuenta con nueve. 
+Al arrancar la fábrica, el producto elaborado era únicamente el j~ bón de lavandería, pero ahora produce también botella de PVC para aceite de cocina. 
+Actualmente se encuentra en una etapa de expansión, hecho que se -refleja en la compra de nueva maquinaria que hará aumentar la producción y aparejado a ella, una mayor compra de materias primas y más problemas inherentes a la actividad productiva. 
+Los problemas que serán planteados y resueltos en este trabajo ay~ 
+darán a un mejor desempeño de INFASA, logrando un más buen aprovechamien to de los recursos tanto materiales como humanos de que dispone. 
+Una vez descrito el marco económico y de programación lineal del trabajo, en el segundo apartado se formulan los problemas y se determi­na su solución. En el tercer apartado se hará un análisis de sensibili-dad. En el apartado 4 se presentan las conclusiones. Se anexan además, para aquellos interesados en la programación lineal, el apéndice respec tivo, acompañado de los listados de computadora de cada una de las solu cienes específicas. 
+2.-PLANTEAMIENTO Y SOLUCION DE LOS PROBLEld.AS. 
+Para producir la botella se utiliza como única materia prima el PVC, del cual la empresa cuenta con un solo proveedor. Tron hermanos, em presa del mismo grupo, consume la totalidad de la botella producida por INFASA, por lo que esta última cuenta con un mercado cautivo en lo que a este producto se refiere y por tanto no hay ningún problema a resolver ­en este caso. A partir de este momento, se prestará atención únicamente a los problemas relacionados con el jabón de lavandería. 
+Por lo que respecta al jabón de lavandería, INFASA adquiere sus ma terias primas de diferentes prove.edores, las procesa para obtener el ja­bón y finalmente vende su producto a los distribuidores, los que se en--cargan de su venta al público. En el diagrama de flujo de la figura 6, -se representa esquematicamente la actividad de INFASA. 
+COMPRA PRODUCCION VENTA
+r-----------------------------------------------------, ~---­
+1 Cocimient Jabó Lavad Recocido Cortado lHateria!i 
+Producto 
+1 1 
+1 · de grasas
+primas 
+
+de jabón Troquelado I terminado 
++ sosa bon Silicat Empaquetad l1 
+'------------------------------------------------------' 
+Fig. 6.-Diagrama de flujo para la producción de jabón de lavandería. 
+Se ve entonces que los problemas que INFASA enfrenta respecto a la producción son de tres tipos: 
+a) 
+Problemas relacionados con la compra de materias primas. 
+
+b) 
+Problemas relacionados con la producción. 
+
+c) 
+Problemas relacionados con la venta del producto elaborado. 
+
+
+Formulando los problemas a resolver se tendrá: 
+2.1.-Compra de materias primas. 
+Se ha observado que las materias primas necesarias para el jabón se adquieren en cantidades mensuales, de acuerdo con el cuadro 4. 
+El problema de INFASA es en este caso el de determinar que combi­nación de próveedores le resultará en un más bajo costo en la adquisi-­ción de las materias primas, tomando en cuenta que debe satisfacer ade­cuadamente sus necesidades y que debe comprar a las empresas del mismo grupo los productos que éstas ofrezcan y que le sean útiles. 
+Cuadro 4.-Datos necesarios para la adquisición de las materias primas. 
+Materia prima.  Requerimientos  Proveedores  Costo  Restricciones.  
+promedio. por  L.A.B.  
+mes.  Morelia.*  
+
+Aceite de coco 12 toneladas. Oleomich, Morelia $235.00/ Venta ilimitada. Mich. kg•. Oleaginosas del -$235.00/ Venta máxima 8 sur, Morelia, kg. toneladas. Mich. 
+Sebo de res 12 toneladas. CONASUPO, México, $140.00/ Se debe comprar 
+D.F. kg. carro tanque de 70 toneladas. 
+Soapstock 60 toneladas. Tron hermanos, $ 80.00/ Venta máxima Morelia, Mich. 45 toneladas. 
+Cuadro 4.-Continuación.  
+Materia prima.  Requerimientos promedio por mes.  Proveedores  Costo L.A.B. Morelia*  Restricciones.  
+
+~gydsa, Guadalaja-$ 80.00/kg. Venta ilimi­ra, Jal. tada. !pesa, Guadalajara $ 80.00/kg. Venta ilimi-Jal. tada. 
+Sosa Caústica 10 toneladas. .Cloro Tehuantepec, $ 75.50/kg. Venta ilimi-Pajaritos, Ver. tada. Sosa Texcoco, Eca-$ 95.00/kg. Venta ilimi­tepec, Méx. tada. 
+Acidos Grasos 6 toneladas. Tron hermanos, Mo-$100.00/kg. Venta máxima relia, Mich. 7 toneladas. 
+Silicato de 15 toneladas. Silicatos del Ba--$ 61.90/kg. Venta ilimi-Sodio jío, Irapuato, Gto. tada. 
+Cloruro de 10 toneladas. Sosa Texcoco, Eca-$8385.00/ Venta ilimi~ Sodio tepec, Méx. ton. tada. 
+Perfume 300 kilogramos. Productos Aromati-$434.00/kg, Venta ilimi-cos, México, D.F. tada. 
+23 
+Cuadro 4.-Continuación. 
+Materia prima. Requerimientos Proveedores Costo Restricciones. promedio por L.A.B. mes. Morelia* 
+Caja de cartón 15 millares. United, México, $32819.00/ Venta ilimitada. 
+para empaque D.F. millar. Industrial Pape-$30222.00/ Venta ilimitada. lera San Luis, millar. San Luis Potosí. 
+* El costo esta dado libre a bordo en Morelia, Mich., es decir in-cluye costos de transporte y es por entrega directa en el domicilio de ­la planta. 
+Con los datos anteriores se puede formular el programa lineal a re 
+solver, haciendo: X1= Cantidad de aceite de coco comprado a Oleomich, en toneladas. X2= Cantidad de aceite de coco comprado a Oleaginosas del sur en -
+toneladas. X3= Cantidad de sebo de res comprado a CONASUPO en toneladas. x••= Cantidad de Soapstock comprado a Tron hermanos, en toneladas. Xs= Cantidad de Soapstock comprado a Agydsa, en toneladas. X5= Cantidad de Soapstock comprado a !pesa, en toneladas. X7= Cantidad de Sosa Caústica comprada a Cloro Tehuantepec, en to-
+neladas. X8= Cantidad de Sosa Caústica comprada a Sosa Texcoco, entonela-­das. X9= Cantidad de Acidos Grasos comprados a Tron hermanos, entonela das. X= Cantidad de silicato de sodio comprado a Silicatos del Bajío,
+JO 
+en toneladas. 
+X11~ Cantidad de Cloruro de Sodio comprado a Sosa Texcoco, en tone ladas. X12= Cantidad de perfume comprado a Productos Aromáticos, en tone-
+ladas. X13= Cantidad de cajas de cartón compradas a United, en millares. X14= Cantidad de cajas de cartón compradas a Industrial Papelera ­
+San Luis, en millares. 
+El programa matemático será entonces: 
+Minimizar C = 235 X1 + 235 X2 + 140 X3 + 80 X4 + 80 X5 + 80 X6 
++ 
+75.5 X1 + 95 Xa + 100 Xg + 61.9 X!o + 8.385 X11 
+
++ 
+434 X12 + 32.819 X13 + 30.222 X¡4• 
+
+
+sujeto a X1 == 12. = o. 
+> 70. = 45. > 60. 
+
+X¡+Xa > 10 
+-> 6. < 7. > 15. 
+-> 10.
+-
+> 0.3. 
+-> 15. 
+= 
+Con X. > O para i = 1,2,...,14.
+1 
+Nota.-Los costos se dan en miles de pesos por tonelada o por mi-­llar, y las cantidades en toneladas o en millares para facilidad de cóm­puto. 
+Se verá ahora como se explica cada una de las restricciones. 
+La restricéión X1 = 12 nos indica que la totalidad del aceite de coco debe de ser comprada a Oleomich, ya que esta empresa es del grupo de INFASA, consecuencia de lo anterior es la restricción X2 = O, que nos dice que no se comprará aceite de coco a Oleaginosas del sur. 
+La restricción X3 ~ 70 nos indica que deberá comprarse por lo me-nos un carro-tanque de sebo de res a CONASUPO y debido a que no se uti­lizará totalmente en un mes, se almacenará para su consumo en los meses subsiguientes al de compra, meses en los que no será necesario volver a adquirir sebo hasta que se agoten las existencias almacenadas. 
+La restricción X4 = 45 nos dice que INFASA deberá consumir total-mente el Soapstock producido por Tron hermanos y como sus necesidades ­son de por lo menos 60 toneladas, tendrá que adquirir el re.sto a Agydsa e Ipesa; ésto explica la restricción X4 + X5 + X6 > 6e;..) 
+La restricción X8 + X7~ 10 nos indica que las compras de Sosa ---Caústica a Cloro Tehuantepec y Sosa Texcoco deberán ser de por lo menos 10 toneladas mensuales. 
+La restricción X9 ~ 6 nos dice que se deberá comprar por lo menos 6 toneladas de ácidos grasos mensuales. 
+La restricción X9 ~ 7 nos indica que la producción máxima de áci-dos grasos en Tron hermanos es de 7 toneladas y por tanto no se podrá -comprar más de esta cantidad. 
+Las restricciones restantes nos indican que deberán cubrirse en -todos los casos por lo menos los requerimientos mínimos de Silicato de Sodio, Cloruro de sodio, perfume y cajas de cartón. 
+2.1.1.-Solución. Una vez planteado el problema se procede a apli_ car el método Simplex de solución descrito en el apéndice. En este tra­bajo se hizo uso del programa elaborado por la Unidad de Computo de El 
+Colegio de México, el que resulta de una muy sencilla aplicación y rapi 
+dez. 
+Una vez corrido el programa, se determinaron los siguientes valo-res para la solución Óptima.* 
+X1 
+::::1 12 toneladas. X2 = o toneladas. 70 toneladas.
+
+
+X3 "' 
+X4 =45 toneladas. 
+X5_ = 15 toneladas. 
+x6 = o toneladas. 
+X7 • 10 toneladas. 
+Xa = o toneladas. 
+Xg = 6 toneladas. 
+X10= 15 toneladas. 
+X11= 10 toneladas. 
+X12= 0.3 toneladas. 
+X13= omillares. 
+X14= 15 millares. 
+Este problema tiene soluciones múltiples, ya que en el caso de a_!_ gunas materias primas, como lo es el del Soapstock, más de algún provee dor ofrece el precio más bajo del mercado al que se puede comprar dichas materias primas y por tanto es posible comprar a uno o a otro o bien e-fectuar una combinación entre proveedores. El hacer ésto no implica de-­jar de tener una solución óptima. 
+El costo mínimo de las materias primas necesarias para la produc­ción de un mes es: C* = $ 20,370,880.00 
+El costo mínimo total aparece incrementado por tener que comprar las 70 toneladas de sebo de res, pero se verá reducido en los meses en que no haya necesidad de adquirir dicha materia prima. 
+* El listado de la solución se presenta en el apéndice respectivo. 
+Una vez resuelto el problema de la compra de las materias primas, se puede pasar a la segunda fase de la actividad de INFASA. 
+2.2.-Producción. 
+Se ha descrito ya en el diagrama de flujo como se desarrolla la -producción y-el problema se enfoca~á únicamente a reducir el costo de ­las materias primas empleadas en el proceso, manteniendo un nivel de ca lidad. 
+La calidad del jabón se determina por una característica especial conocida como "Títer", que está relacionada con el punto de fusión del mismo y que depende de la combinación que de las diferentes grasas ( --Soapstock, sebo, aceite de coco, ácidos grasos) se haga. Se considera lineal el comportamiento de esta prop_iedad. 
+Analizando la producción de una tonelada de jabón en el cuadro 5 se tiene que: 
+Cuadro 5.-Producción de una tonelada de jabón. 
+Materia prima.  Cantidad necesaria.  
+Sosa Caustica.  67 kilogramos.  
+Silicato de sodio.  100 kilogramos.  
+Cloruro de sodio.  67 kilogramos.  
+Perfume.  2 kilogramos.  
+Agua.  164 kilogramos.  
+Grasas.  600 kilogramos.  
+
+Las grasas deberán combinarse de manera tal que cumplan con la si guiente especificación: 
+Títer deseado 34. 
+Títer del aceite de coco 18. !íter del sebo 38.4. Títer del Soapstock 20. Títer de los ácidos grasos 36.6 
+Con los datos anteriores se puede formular el programa matemático a resolver. Haciendo: 
+X1 = Cantidad de Sosa Caustica usada, en kilogramos. X2 = Cantidad de Silicato de sodio usado, en kilogramos. X3 = Cantidad de Cloruro de .:;odio usado, en kilogramos. X4 = Cantidad de perfume usado, en kilogramos. X5 = Cantidad de agua, en kilogramos. X6 = Cantidad de aceite de coco usado en kilogramos. X7 = Cantidad de sebo usado, en kilogramos. X8 • Cantidad de Soapstock usado, en kilogramos. X9 = Cantidad de ácidos grasos usados, en kilogramos. 
+El programa matemático sera: 
+Minimizar C = 75.50 X1 + 61.90 X2 + 8.385 X3 + 434 X4 + O X5 + 
++ 235 X6 + 140 X7 + 80 X8 + 100 X9• 
+Sujeto a X1 + X2 + X3 + X4 + Xs + x6 + X7 + Xe + X9 = 1000. 
+X1 = 67. = 100. = 67. 
+x.. = 2. Xs = 164. 
+
+0.18 X6 + 0.384 X7 + 0.20 X8 + 0.366 X9 > 204. 
+= 
+Con Xi~ O para i=l,2,•.•,9. 
+Los costos están dados en pesos/kg. y se obtienen de la solución 
+óptima del problema anterior. 
+Explicación de las restricciones: 
+La primera restricción nos indíca que el total de las materias --primas debe sumar una tonelada de jabón. 
+Las restricciones de igualdad nos dicen que las materias primas -que no son grasas no sufren ninguna modificación durante el proceso, en lo que a su cantidad se refiere. 
+La ultima restricción nos indica la forma en que deben combinarse las grasas afín de obtener la calidad deseada, el valor de 204 se oh--tiene como el 34%, que es la calidad deseada, de 600 que es el total de grasas en el jabón. 
+Se considera que el costo del agua es nulo. 
+2.2.1.-Solución.* Una vez planteado el problema se procede a a--plicar el método Simplex de solución, determinandose la solución óptima siguiente: 
+X1 = 67 kilogramos. 
+X2 = 100 kilogramos. 
+X3 = 67 kilogramos. 
+X4 = 2 kilogramos. 
+Xs = 164 kilogramos. 
+x6 = o kilogramos. 
+X1 = okilogramos. 
+Xa = 93.976 kilogramos. 
+Xg = 506.024 kilogramos. 
+La solución a este problema es única, teniéndose que el costo mí­nimo de las materias primas para elaborar una tonelada de jabón es de: 
+* El listado de la solución se presenta en el apéndice respectivo. 
+C* = $ 70,798.78, 
+Una vez que se ha resuelto el problema de la producción se pasará al de la venta del producto elaborado. 
+2.3.-Venta del producto elaborado. 
+Se desea maximizar el beneficio obtenido por la venta del jabón, para lo que se cuenta con los datos siguientes: 
+Precio por caja de 10 kg. $ 1,300.00, por tanto, el precio de ven ta por tonelada es de$ 130,000.00. 
+Las ventas promedio de la empresa son de 150 toneladas por mes, 
+El margen neto de utilidad en ventas realizadas en Morelia, Mich., es del 6%, lo que dá como resultado$ 7,800.00 por tonelada, En ventas a otras localidades se debe descontar el costo del flete ya que se ofre ce al mismo precio para ventas en Morelia o fuera. 
+En el cuadro 6 se anotan los lugares en donde se vende el produc-to, el costo del flete y sus restricciones de venta. 
+Cuadro 6.-Datos sobre la venta del producto. 
+Lugar de venta Flete por Precio de venta Ganancia por Restricciones. tonelada. por tonelada. tonelada. 
+Morelia, Mich. $ º·ºº $ 130,000.00 $ 7,800.00 Venta máxima 50 Ton/mes. México, D.F. $ 3,990.00 $ 130,000,00 $ 3,810.00 Venta máxima 200 Ton/mes. 
+Cuadro 6.-Continuación. 
+Lugar de venta Flete por Precio de venta Ganancia por Restricciones. tonelada. por tonelada. tonelada. 
+Guadalajara, Jal. Irapuato, Gto. 
+Lázaro Cárdenas, Mich. San Luis Potosí, S.L.P. 
+$ 3,990.00  $ 130,000.00  $ 3,810.00  
+$ 2,800.00  $ 130,000.00  $ 5,000.00  
+$ 3,990.00  $ 130,000.00  $ 3,810.00  
+$ 4,720.00  $ 130,000.00  $ 3,080.00  
+
+Venta máxima 150 Ton/mes. Venta máxima 150 Ton/mes. Venta máxima SO Ton/mes. Venta máxima 100 Ton/mes. 
+Se puede entonces formular el problema matemático a resolver. Ha-ciendo: 
+X1 == Ventas en la ciudad de Morelia, Mich., en Ton/mes. 
+X2 == Ventas en México, D.F. en Ton/mes. 
+X3 == Ventas en la ciudad de Guadalajara, Jal., en Ton/mes. 
+x.. == Ventas en la ciudad de Irapuato, Gto., en Ton/mes. 
+Xs = Ventas en la ciudad de Lázaro Cárdenas, Mich., en Ton/mes. 
+Xs == Ventas en la ciudad de San Luis Potosí, S.L.P., en Ton/mes. 
+El programa matemático será entonces: 
+Maximizar P = 7800 X1 + 3810 X2 + 3810 X3 + 5000 X~+ 3810 X5 + + 3080 X6• 
+Sujeto a X1 + X2 + X3 + x~ + X5 + x6 < 150 
+-X1 < 50 
+= X2 < 200 
+-X3 < 150 x.. < 150 
+= 
+Xs < 50 Xs < 100 
+= 
+Con X.> O para i = 1,2,•••,6.
+l.= 
+La primera restricción indica que el total de ventas no deberá -exceder a la producción. 
+Las restricciones restantes nos dicen que las ventas en cada lu-­gar no deberán exceder el máximo permisible. 
+2.3.1.--Solución.* Al igual que en los problemas anteriores, la -solución se determina mediante la aplicación del método Simplex en una computadora digital, obteniéndose los siguientes resultados: 
+X1 = so toneladas. X2 = o toneladas. X3 = o toneladas. x.. =100 toneladas. Xs = o toneladas. Xs = o toneladas. 
+La solución es Única, con ganancias máximas de: P* = $ 890,000.00 mensuales. 
+La solución indica que INFASA debe vender su producción en More-­lia e Irapuato, sin embargo se mantienen los otros puntos de venta debí do a que no siendo el de INFASA el único jabón de lavandería que se ven de en estos lugares no es posible adueñarse del mercado y por tanto és­te tiene que compartirse con otras empresas, las que ofrecen un jabón -de diferente calidad o presentaciOn. 
+* El listado de la solución se presenta en el apéndice respectivo. 
+2.4.-Comentario a las soluciones. 
+Puede verse que los problemas de compra de materias primas y de -producción están Íntimamente relacionados ya que las cantidades de ma-teria prima deberán determinarse de acuerdo con los resultados que se -encuentren en el problema de producción. Así por ejemplo en el problema aquí resuelto no será necesario adquirir aceite de coco y sebo debido a que la calidad deseada se obtiene mezclando únicamente Soapstock y áci-dos grasos. 
+Por lo que respecta a la compra de materias primas, ésta siempre se deberá hacer al proveedor que ofrezca el mejor precio. Cuando la pr~ ducción de la empresa que ofrece el mejor precio no sea suficiente para satisfacer las necesidades de la planta, se deberá comprar al proveedor cuyo precio sea e1. segundo mejor y así sucesivamente hasta completar las cantidades requeridas. Si más de algún proveedor ofrece el mejor precio, las compras deberán hacerse tomando en cuenta otros factores co mo pueden ser el tiempo de entrega o condiciones de pago. 
+En el caso de que alguna de las empresas del grupo de INFASA no o freciera el mejor precio, no se deberá dejar de comprar la materia pri-ma a esta empresa, ya que si bien una compra a un precio que no es el -mejor resulta en pérdidas para INFASA, el ingreso producto de la venta beneficiará al mismo grupo. Esto se propone suponiendo que no existe o-tro comprador de dicha materia prima. 
+En lo que a la producción se refiere, la solución determinada ha-ce ver que habrá forma de tener un costo mínimo manteniendo el nivel de calidad. La combinación de las diferentes grasas se deberá hacer encon­trando la solución del problema y en el caso de existir limitaciones en las cantidades de materia prima disponibles, éstas deberán aparecer co-mo restricciones en la formulación matemática del problema. Así por e-­jemplo, si la producción deseada es de 150 toneladas y sólo se cuenta ­con 30 toneladas de ácidos grasos, no se podrá usar más de 200 kilogra­
+mos por tonelada de jabón. 
+La venta del producto elaborado responderá directamente a la cali dad del producto. El mercado regional que abastece INFASA deberá tratar de reducirse lo más posible en lo que a extensión geográfica respecta, manteniendo el nivel de ventas, ésto implicará un aumento en las utili­dades po~la reducción en los costos de transporte. 
+3.-ANALISIS DE SENSIBILIDAD. 
+El análisis de sensibilidad consiste en hacer cambios en los dife rentes programas afín de observar como se comporta la solución Óptima; dichos cambios se efectúan ya sea en los costos de la función objetivo 
+o en las restricciones, agregando algunas, quitando otras, modificando el valor de los parámetros, etc. 
+Los cambios que se harán en este trabajo corresponderán a cada u-no de los programas planteados en el capítulo anterior. 
+3.1.-Compra de materias primas. 
+INFASA tiene proyectado en breve aumentar su producción que pasa­rá de 150 toneladas mensuales a 600 toneladas mensuales. 
+hecho que sig­nifica que las compras de materias primas se deberán incrementar en la misma proporción, así pues, se harán las modificaciones pertinentes al programa de compra de materias primas, aumentando los requerimientos en tres veces más. 
+Las compras de materias primas serán entonces: 
+Aceite de coco 48 toneladas. Sebo de res 48 toneladas. Soapstock 240 toneladas. Sosa Caústica 40 toneladas. Acidos grasos 24 toneladas. Silicato de sodio 60 toneladas. Cloruro de sodio 40 toneladas. Perfume 1.2 toneladas. Caja de cartón 60 millares. 
+Estableciendo la misma convención para las incognitas, se tandrá que el nuevo programa matemático será: 
+Minimizar C = 235 X1 + 235 X2 + 140 X3 + 80 X~+ 80 X5 + 80 X6 + 
++ 75.5 X1 + 95 Xa + 100 Xg + 61.9 X10+ 8.385 X11+ + 434 X12+ 32.819 X13+ 30.222 X1~· 
+Sujeto a X1 = 48. =-o. 
+> 70.
+-= 45. 
+> 240.
+-
+X1 + Xa > 40. > 2.:.. < 7. 
+X1 o > 60 > 40 1.2. 60. 
+Con X.> O para i=l,2,•••,14.
+l. 
+Cantidades en toneladas o en millares y costos en miles de pesos por tonelada o por millar. 
+Explicación de las restricciones: es la misma que para el progra-ma ya resuelto. 
+El programa matemático así descrito no tiene solución, ya que ap~ recen dos restricciones contradictorias. Por un lado se pide que X9~ 24, es decir que se necesitan por lo menos 24 toneladas de ácidos grasos, y por el otro se pide que X95= 7, es decir que el único proveedor de ác_!_ dos grasos produce cuando más 7 toneladas, lo que resulta en un conjun-to vacío. Para resolver este programa se establece el supuesto de que~ se podrá contar con un nuevo proveedor de ácidos grasos, que surtirá al mismo precio y que cubrirá la diferencia existente, 
+Haciendo: 
+X~s,= Cantidad de ácidos grasos comprada al nuevo proveedor. 
+El programa matemático resultante es: 
+Minimizar C = 235 X1 + 235 X2 _..,_ 140 X3 + 80 x.. + 80 Xs + 80 x6 +
+-
++ 
+75.5 X1 + 95 Xe + 100 Xg + 61.9 X10+ 8.385 X11+ 
+
++ 
+434 X12+ 32.819 X13+ 30.222 X14+ 100 X1s. 
+
+
+Sujeto a: X1 = 48. = o. > 70. 
+= = 45. 
+
+> 240. 
+= 
+x, + Xe ::-40. 
+= Xg + X1 s~ 24. Xg < 7.
+-X1 o > 60.
+-X11 > 40.
+-X12 > l.2.
+-X13+ X1 i. > 60.
+-
+Con X.> O para i=l,2,.••,15.
+1= 
+3.1.1. Solución.* Se determina aplicando el método Simplex, obte­niendose los siguientes valores: 
+X1 = 48 toneladas. X2 == o toneladas. X3 = 70 toneladas. X4 = 45 toneladas. Xs = 195 toneladas. X = o toneladas. 
+* El listado de la solución se presenta en el apéndice respectivo. 
+X1 -40 toneladas. Xa = O-toneladas. Xg = 7 toneladas. X1 o= 60 toneladas. X11= 40 toneladas. X12= 1.2 toneladas. X13= Q_ millares. X1i.= 60 millares. X1 s= 17 toneladas. 
+Con soluciones múltiples, po! la misma causa del programa original. 
+El costo mínimo de las materias primas por mes es de: C* = $ 52,083,520.00. 
+Cabe hacer notar que en este valor se está incluyendo el costo de 22 toneladas de sebo que se almacenarán para el mes siguiente. Esto ha-rá variar el costo mínimo, mes con mes, ya que no siempre será necesa-­rio adquirir un carro~tanque de sebo. 
+Puede verse que las compras de materia prima han aumentado por --cuatro, a excepción del Soapstock comprado a Tron hermanos y de los áci dos grasos comprados a este mismo proveedor. 
+El costo total de las materias primas se incrementa por mucho me-nos de cuatro veces debido a que se está comprando una menor cantidad -excedente de la necesaria de sebo de res. 
+3.2.-Producción. 
+Por lo que respecta a la producción, se tiene la posibilidad de -aumentar o reducir la calidad del jabón, lo cual se refleja en el costo de la producción. Se resolverá para dos casos específicos: 
+3.2.1.-Aumento del 3% en la calidad. 
+Para variar la calidad del jabón se cambia el valor deseado del "Títer", en este caso pasa del 34% al 37%. 
+Conservando las mismas restricciones del problema original y ha-­ciendo únicamente el cambio en el parámetro que mide la calidad, se ten drá que el nuevo programa a resolver es: 
+Minimizar C = 75.5 X1 + 61.9 X2 + 8.385 X3 + 434 x., + O X5 + 
++ 235 x6 + 140 X7 + 80 Xa + 100 Xg. 
+Sujeto ~ X1 + X2 + X3 + X1t + X5 + X6 + X7 + X8 + X9 = 1000. X1 = 67. = 100. = 67. Xi. = 2. Xs = 164. 
+0.18 X6 + 0.384 X7 + 0.20 X8 + 0.366 X9 > 222. 
+= 
+Con X. > O para i=l,2,•.•,9.
+l. = 
+El valor de 222 en la última restricción se obtiene como el 37% -de 600, siendo ésta la calidad mínima requerida. 
+3.2.1.1.-Solución.* Aplicando el método Simplex, se obtienen los siguientes valores: 
+X1 = 67 kilogramos. X2 = 100 kilogramos. X3 = 67 kilogramos. Xi. = 2 kilogramos. Xs = 164 kilogramos. X = o kilogramos. 
+* El listado de la solución se presenta en el apéndice respectivo. 
+X7 = 133.33 kilogramos. Xa = O kilogramos. X9 = 466.67 kilogramos. 
+La solución es única y el costo· mínimo de la-producción de una to nelada de jabón es: C* = $ 78,011.63. 
+Como puede verse, un aumento de un 3% en la calidad aumentó el --costo de producción en poco menos de 8 mil pesos. En este caso se dejó de utilizar el Soapstock, cambiándolo por el sebo. 
+3.2.2.-Disminución del 3% en la calidad. 
+Para este caso se varia el .l'Titer" del 34% al 31%, lo que nos da-
+.. .,. ) 
+~a como resultado que el nuevo vaLor para el parámetro en la restric--­ción de la calidad será de 186. 
+Conservando las convenciones del problema original, se tendrá que el nuevo programa a resolver es: 
+Minimizar C = 75.5 X1 + 61.9 X2 + 8.385 X3 + 434 X4 + O X5 + 
++ 235 X6 + 140 X1 + 80 Xa + 100 X9• 
+Sujeto a X1 + X2 + X3 + X4 + Xs + Xs + X1 + Xa + X9 = 1000. = 67. = 100. = 67. = 2. 
+Xs 164. 
+
+
+0.18 X6 + 0.384 X1 + 0.20 Xa + 0.366 X9 > 186. 
+Con X.> O para i=l,2,•..,9.
+l. 
+.41 
+Las restricciones se explican igual que en el problema original. 
+3.2.2.1.-Solución.* Aplicando el método Simplex, se obtienen los siguientes valores: 
+x·l 67 kilogramos.
+'"' X2 = 100 kilogramos. X3 = 67 kilogramos. 
+x .... 2 kilogramos. Xs = 164 kilogramos. Xs·= o kilogramos. 
+X1 = o kilogramos. Xa = 202.41 kilogramos. Xg"' 397.59 kilogramos. 
+Con solución única y un costo mínimo por tonelada de jabón de: C* = $ 68,630.10. 
+Como puede verse una reducción del 3% en la calidad del jabón le significa a la empresa un ahorro de poco más de 2 mil pesos y se siguen usando las mismas grasas del problema original, sólo que ahora mezcla-­das en diferentes proporciones. 
+3.3.-Venta del producto elaborado. 
+Se tiene proyectado aumentar las ventas de jabón, que pasaran de 150 a 600 toneladas por mes. Haciendo los cambios en el programa origi~ na! y conservando la misma convención, se tendrá que el nuevo programa matemático es: 
+Maximizar P = 7800 X1 + 3810 ~ + 3810 ~ + 5000 X.. + 3810 X5 + + 3080 X•
+6 
+
+* El listado de la solución se presenta en el apéndice respectivo, 
+X1 < 50 
+= X2. < 200 
+-X3 < 150 
+= x.. < 150 
+= Xs < 50 
+= x6 < 100 
+= 
+Con X.> O para i =1,2, •..,6.
+1= 
+Las restricciones se explican igual que en el problema original. 
+3.3.1.-Solución.* Aplicando el método Simplex de la misma forma que en los prQblemas anteriores, se obtienen los siguientes resultados: 
+X1 = 50 toneladas. X2 = 200 toneladas. X3 = 150 toneladas. x.. = 150 toneladas. Xs = 50 toneladas. x6 = o toneladas. 
+Con solución única, siendo las ganancias máximas: P* = $ 2,664,000.00 mensuales. 
+Al comparar con el problema original, se ve que ahora se venderá en todos los puntos posibles de venta, a excepción de San Luis Potosí, en donde la ganancia resulta menos atractiva para la empresa y únicamen te se venderá en este lugar cuando la producción exceda las 600 tonela­das por mes. 
+3.4.-Comparación de resultados. 
+Al comparar las soluciones de los apartados 2 y 3 se puede obser-var lo siguiente: 
+Por lo que respecta a las compras de materias primas, éstas se han visto incrementadas en la misma proporción en que se aumentó la produc­ción. A excepción del nuevo proveedor incluído para satisfacer la dema~ da de ácidos grasos, siguen siendo los mismos, ya que su capacidad de -producción les permite satisfacer adecuadamente las demandas de INFASA. 
+El costo de las materias primas sigue incrementado por el exceden te adquirido de sebo de res, pero este excedente se ha visto reducido -lográndose que el almacenamiento sea por un menor tiempo. 
+En lo que a la producción se refiere, la variación en la calidad del jabón redunda en una variación en la composición de las mezclas de grasas. El costo resulta una función creciente de la calidad y a la em-presa le resulta mas benéfico reducir la calidad, sin embargo el hacer ésto le hará perder ventas y por tanto se deberá buscar el equilibrio -entre reducir el costo de las materias primas utilizadas y reducir las ventas. 
+La venta del producto elaborado cuando este se aumenta a 600 tone ladas por mes no agota los posibles compradores en el mercado regional al que concurre INFASA, sin embargo se debe buscar un aumento en las --ventas de los puntos más cercanos a la fábrica, ya que ésto hará aumen-tar las ganancias y no agotará el mercado potencial del jabón de lavan­dería que produce INFASA. 
+4.-CONCLUSIONES. 
+Industrial La Fama aparece ubicada en el grupo de pequeñas empre­
+sas que en nuestro país, preocupadas por la rápida recuperación de su -
+inversión y por obtener altos beneficios, dejan de lado la planeación 
+a largo plazo de sus objetivos. 
+Muestra clara de lo anterior es el hecho de contar con el menor -número posible de empleados, lo que redunda, es cierto, en menores cos-tos de operación para la empresa, pero también en una multiplicación de las a~tividades que las personas que ahí trabajan desempeñan. 
+El uso de la programación lineal, aún cuando no se limita a pro-­bl~s de planeación, resulta de mucha mayor utilidad cuando se desean elaborar proyectos de inversión para una empresa, ya que una vez que u-na fábrica está produciendo un bi~n, será muy complicado el cambiar a ­la elaboración de otro cuya línea de producción sea ~ompletamente dife­rente. 
+Ahora bien, la programación lineal asume que los costos promedio por unidad producida son constantes. Este supuesto está muy cercano a ­la realidad en el caso de INFASA, ya que los costos fijos de la empresa no representan un cargo muy alto por cada unidad, mientras que los cos-tos variables no cambian con el número de unidades producidas puesto --que INFASA por estar inmersa en un mercado con estructura de tipo olig~ pólico, en donde sólo participa con el 1% aproximadamente de la produc­ción nacional de jabón de lavandería, estará en una posición precio a-­ceptante, tanto en el mercado de insumos como en el del producto elabo­rado. 
+Resulta pues adecuado hacer uso de la programación lineal ya que se considera que INFASA tiene rendimientos constantes a escala, lo que dá origen a funciones de tipo lineal. 
+El método Simplex de solución de los problemas lineales aplicado resulta el más adecuado, ya que de no utilizarse tomaría un buen tiempo efectuar los tanteos necesarios para obtener la solución óptima. 
+Todos los resultados cumplen con lo esperado ya que no se presen-tan soluciones disparadas o irreales. Esto hace confiable al método pa-ra trabajos futuros en la fábrica m~~1cionada. 
+La mayor parte de los resultados aquí obtenidos concuerda con lo que actualmente se está haciendo en INFASA; ésto tiene un sentido lógi-co por el hecho de que en muchos de los casos la opción es única y no -da lugar a ningún cambio. 
+Revisando las soluciones encontradas se pueden hacer los siguien-­tes comentarios: 
+Por lo que respecta a la compra de materias primas, esta se efec túa actualmente en forma adecuada y se debe seguir comprando las mate-rias primas que las empresas del grupo de INFASA ofrecen. En el caso -de otros proveedores se deberá vigilar que estos ofrezca1. siempre el mejor precio y en caso contrario recurrir a algún otro. 
+En cuanto a la producción, se debe buscar que se aplique en todo momento un programa de optimización, ya que los cambios ocurren aquí -­con mucha frecuencia, como puede verse en los diferentes problemas re--sueltos, en donde cada uno de ellos determina una combinación diferente de las distintas grasas. 
+Se debe tratar de utilizar siempre al máximo las materias primas disponibles, reduciendo de esta forma los volúmenes almacenados. 
+En lo que a la venta del producto elaborado se refiere, se debe -buscar que ésta se efectúe en un alto porcentaje en los lugares situa-­dos cerca de la fábrica ya que esto reducirá costos de transporte y --­
+tiempos de entrega. 
+Por otro lado no se debe olvidar que las ventas responden directa mente a la calidad y presentación del producto, si existe forma de mej~ rar ambas sin un gran incremento en el costo, es conveniente que se ha-ga. 
+Es importante que día a día se revisen las actividades de la em-­presa y se analicen las nuevas opciones que se presenten, para tratar -de desarrollar de una mejor forma esas actividades. Tal es el caso de -consider-ar nuevos proveedores de materias primas, el aumentar. la cali-­dad del producto, para así contar con nuevos compradores que consuman -un mayor volúmen, o incluso llegar a dominar mercados aprovechando las ventajas que de bajo costo de transporte se tengan en determinada re--­gión. 
+La solución a los diferentes problemas proporciona una guía exac­ta de lo que se debe hacer en INFASA respecto a la compra de materias -primas, a la producción y a la venta del producto elaborado, observando cada uno de los resultados se podrá decidir correctamente que hacer en cada uno de los casos sin temor de cometer ningún error. 
+Debe hacerse notar que por los datos obtenidos, al parecer, se --desliga actualmente en la fábrica los problemas de producción y compra de materias primas. Estas dos partes del proceso productivo permanecen estrechamente unidas y por tanto se debe buscar la forma de resolver am bos problemas de manera simultanea. 
+Los problemas planteados y resueltos pudieran no ser la totalidad de los que posiblemente se resolverían con el auxilio de la· programa--­ción lineal en esta empresa, como sería el caso de formular un programa para comparar el método actual de producción y el que pronto se imple-­mentará, el que, debido a la carencia de datos no fue posible resolver, pero se debe toinar en cuenta que ocurrirá una retroalimentación para la empresa al enterarse de los resultados aquí contenidos, lo que llevará 
+a la aplicación de algunos de los mismos y a la necesidad de solución -de problemas diferentes. 
+El trabajo de campo resultó indispensable, ya que la obtención de datos se debe hacer en forma directa y de primera mano por tratarse de un estudio de caso específico. 
+Para finalizar es conveniente mencionar la utilidad del análisis de sensibilidad, cuya aplicación resulta inmediata y puede considerar -los cambios que en los programas aquí resueltos ocurran en el futuro en esta tábrica. 
+BIBLIOGRAFIA. Bronson, Richard. Investigación de operaciones, México: Me Graw-Hill. 1983. Dorfman, R. Mathematical or linear programming, American Economic Re--­view, Vol. 43, diciembre 1953. Dorfman, Samuelson y Solow. Programación lineal y análisis económico, -
+México: Aguilar. 1962. Gass, Saul I. Programación lineal, México: C.E.C.S.A. 1962. Greer, Douglas F. Industrial organization and public policy, New York: 
+Macmillan. 1984. Cap. 6. 
+México, Secretaría de Programación y Presupuesto. Censo Industrial 1975. México, D.F.: 1976. 
+Swanson, L.W. Linear programming. Basic theory and aplications, Tokyo: Me Graw-Hill. 1980. 
+
+Apéndie-e A.-PROGRAMACION LINEAL. En este apéndice se presentan los elementos de la programación li nea! usados en el trabajo. 
+El problema básico de la programación lineal es el de maximizar o minimizar una_ función, llamada objetivo, que contiene una o más varia-­bles, sujetas a diferentes restricciones, siendo estas últimas junto -­con la función objetivo, lineales. 
+Cuando los problemas a resolver tienen únicamente en su nlantea-­miento dos variables, es posible resolverlos en forma gráfica, sin nece sidad de efectuar ningún procedimiento algebraico. 
+Ejemplos de este tipo se presentan enseguida. 
+Ejemplo 1.-Maximización. 
+Maximizar z = 25 X1 + 30 X2. Sujeto a 3.5 X1 + 4.0 X2 < 50
+= 1.5 X1 + 3.0 X2 < 30
+-con X1 y X2 no negativas. 
+Solución.-Se presenta en la Fig. A-1 y es: 
+X2 Z= 366.67 para X1; 20/3 y X2 = 20/3 
+20 
+15 
+21=0 
+Ejemplo 2.-Minimización. 
+Minimizar z = 30 X1 + 20 X2. 
+Sujeto a X1 < 10
+-X2 < 8
+-2 X1 + X2 < 25
+= X1 + 2 X2 < 20
+-
+
+X1 > 5
+-
+
+Con ~1 y X2 ~o. Solución.-Se presenta en la Fig. A-2 y es: Z* = 250 para X1 = 5 y X2 = 5. 
+
+Se dá por descontado que los ejemplos gráficos aquí presentados ­no cubren todas las posibilidades para este tipo de problemas, pero el lector interesado puede consultar por ejemplo a Swanson, en donde encon trará una descripción detallada de la solución gráfica y ejemplos com-­plementarios. 
+A.1.-Teoría de solución de programas lineales. 
+Ya que el número de problemas que puede resolverse en forma grafi:_ ca es muy limitado por la restricción en el número de variables, se de.§_ cribirá a continuación como se resuelven los problemas que involucran -más de dos variables. 
+En forma general, los problemas para más de dos variables se pue-den expresar como sigue: 
+Problema de Maximización. Problema de minimización. 
+Forma estándar Forma estándar 
+n n Maximizar z = 'L c. X. Minimizar z = ¿ c. X. 
+J J
+j=l J j=l J 
+sujeta a: sujeta a: 
+n n ¿ a.. X. = .b. ¿ a.. X. = b. 
+j=l l.J J l. j=l l.J J l. para i = 1,2,••.,m para i = 1,2,...,m j = 1,2,•••,n j = 1,2,...,n con X. > O con X.> O 
+J J 
+Forma canónica Forma canónica 
+n n Maximizar Z = E C. X . Minimizar Z = E C. X. . 1 J J . 1 J ]
+sujeta a: J= sujeta a: J= 
+n n E a.. X. < b. E a.. X. > b . 
+. 1 l.J J = l. . 1 l.J J = l.
+J= J= 
+para i = 1,2,••.,m para i = 1,2,•..,m j = 1,2,...,n j = 1,2,..•,n con X.> O con X. > O 
+J J 
+Plantamiento de los problemas en programación lineal. 
+Paso 1.-Determinar la función matemática lineal que se desea op-timizar y al mismo tiempo definir las variables de decisión del proble-ma. 
+Paso 2.-Identificar todos los requerimientos y limitaciones esti puladas y expresarlos matemáticamente. Estos requerimientos constituyen las restricciones. 
+Paso 3.-Expresar todas aquellas condiciones ocultas. Tales condi_ ciones no están estipuladas explícitamente en el problema, pero se ha-­cen evidentes de la situación física del problema. Generalmente involu­cran requerimientos de no negatividad o de ser enteras para las varia-­bles de decisión, 
+Un programa: lineal de la forma: 
+Max Z = C1X1 + C2X2 + ••• + C X 
+n n Sujeto a: a11x1 + a12x2 + + a x < b1
+1n n= 
++ a x < b2
+2n n= 
+a x1 + a x2 + ••• +a x < b 
+mn n= m con x.> O 
+m1 m2 
+1= 
+puede expresarse en forma matricial como: 
+Max Z =-C•X Sujeto a AX < b con X> O en su forma canónica. 
+O Max Z = C•X Sujeto a AX = b con X> O en su forma estándar. 
+en donde: e= lc1,c2, .•.,cn 1 
+x1  b1  
+X2  b2  
+X=  b ::s  
+
+Xn  
+y  
+a11 a12••• a1n  
+a21 a22  a2n  
+A=  
+am1  a ... am2 mn  
+
+Definiciones básicas. La función Z : Rn ~ R con Z(x1,x2, .•.,x) = 
+n 
+b 
+m 
+c1x1 c2x2 + ... + c x 
+n n 
+se conoce como función objetivo. C • lc1, cz,••., c I es el vector de costos. 
+Xl 
+Xz 
+X3
+X = 
+X 
+n 
+b1 b2 b "" b 
+m 
+n 
+es el vector de variables de decisión. 
+es el vector de requerimientos. 
+Los sistemas: AX < b, AX > b o AX = b, se conocen como restric·ciones. 
+= 
+Un ejemplo de región factible es: 
+S={xe:Rn AX< b } 
+si xe;S, x se llama solución factible. si xe:S es una solución factible del programa: 
+Max Z = c.x 
+S.a AX< b con X > O 
+Tal que para todo xe:S, CX* > CX entonces X* es llamada solución óptima y Z* • C•X* es el vaior objetivo óptimo. 
+Manejo de restricciones de ~gualdad o de desigualdad. 
+a) Una desigualdad se puede reescribir como una igualdad usando ­
+variables de holgura. Ejemplo.-a11x1 + a12x2 + a13x3 < b se reescribe 
+= ª11X1 + ª12X2 + a13X3 + X4 = b con X4 > O. 
+( X4 variable de holgura). 
+Ejemplo.-al¡X l + ª12X2 + a¡3X3 > b se reescribe 
+=a 
+al¡Xl + al2X 2 + a¡3X3 + X4 = b con X4 > o.
+-( X4 variable superflua). 
+b) Una desigualdad del tipo~ se puede reescribir como del tipo< al multiplicar ambos miembros por (-1). 
+Ejemplo.-a 1x 1 + a zX 2 > b se reescribe -a1x 1 -a zX 2 < -b. 
+e) Una ecuación se puede reescribir como dos desigualdades. Ejemplo. a 1x 1+ a 2x 2 + a ye 3 = b se reescribe 
+a1x1 + a2x2 + a3X3 ~b a1X1 + a2x2 + a3X3 < b
+= o a1X1 + a2X2 + a3X3 ~b 
+a1x1 + a2x2 + a3X3 ~ ;_b 
+d) Si en un programa lineal la variable X. no esta restringida, ­
+1 
+se puede reescribir como: xi= ui -vi con ui ~ Oy vi> O. 
+Ejemplo.-Max Z = 3 x1 + 10 x2 + 11 x3 Sujeta a x1 + X2 + X3 > 8 2 X1 -X3 > 1 con x1 ~ O, X2 no restringida y X3~ O, 
+Si x2 = u -v con u,v ~ O, el programa se reesci:?~~: 
+Max Z = 3 Xl + 10 U -10 V+ 11 X3 
+S. a XI+ u -V+ 
+2 XI -u+ V ­
+
+con x1, x2, u, v, > O.
+= 
+e) El mínimo de Z = C•X coincide con el negativo del mínimo de W= (-C) X, es decir si Z = C•X; W = (-C) X 
+min Z = min (C•X) = -min (W) = -min (-C)X 
+ya que si X* es tal que: 
+Z* = C•X* > C•X entonces -C•X* < (-C)X o sea W* = (-C)X* < (-C)X 
+para todo X y además Z* = -W*. 
+Las posibilidades de solución son: 
+a) 
+Unica. 
+
+b) 
+Multiple. 
+
+c) 
+No acotada. 
+
+d) 
+No existe. 
+
+
+La región factible para todos los problemas es un conjunto convexo. Pero¿ que significa lo anterior? Si S c Rn se dice que Ses un convexo si dados dos elementos del 
+conjunto x, y ES el segmento de recta que los une pertenece al conjunto, 
+Es decir, si dados x,yE S, implica que para todo adO,l} ax + (1 -a) yE S. Ejemplos de conjuntos convexos. 
+
+·~ 
+Q 
+..,________x, ...._______..x, Fig. A-3. Ejemplos de conjuntos no convexos. 
+
+p Q 
+~ 
+
+
+--------x, 
+Fig. A-4. 
+Si x,y E Rn a número real y etE{O,l} la combinación lineal ax+ (1 -a) y se conoce como combinación convexa de x,y. 
+n
+En general, si X¡, X2,•••, X e; R
+-r r .E1cx x. con.Ea = 1 
+r 
+1.= l. 1.=! 
+se llama combinación convexa de los vectores x1, x2, •••, x 
+r 
+Definición.-Si Ses un convexo, un punto extremo es un punto de S que no puede representarse como una combinación convexa de elementos de S distintos a él 
+~............. 
+
+
+----------x, 
+Fig. A-5. 
+Definición.-Cualquier vector en un conjunto convexo cerrado y a-cotado que tenga un número finito de puntos extremos, puede expresarse como una combinación convexa de los puntos extremos. 
+
+Fig. A-6. 
+X es una combinación convexa de V4 y Y. 
+X= aV4 + (1 -a) Y con aE{O,l} 
+a su vez Y es una combinación convexa de V2 y V3 • 
+por tanto Y= BV2 + (1 -8) V3 con 8E{0,l} 
+así que X= aV4 + (1 -a) {SV2 + (1 -B) V3} 
+pero a+ (1 -a)S + (1 -a)(l -B) =a+ 8 -a8 + 1-a -S + ~6 = 1 por tanto X es una combinación convexa de V2, V3 y V4. 
+
+Definición.-El espacio solució de un conjunto de ecuaciones li-­neales simultaneas es un conjunto convexo con un número finito de pun-­
+AX= b, A , b 1} es un convexo con un número finito
+mxn mx de puntos extremos. 
+Viendo ahora la utilidad de los puntos extremos en la busqueda de una solución ( caso de región factible acotada). 
+Sea el problema Max Z = C•X 
+S. a AX = b Convexo con un número finito de x~o puntos extremos V1, V2, ..., Vr 
+Si Xestá en la región factible, puede espresarse como X= A1V1 + A2V2 + + A V 
+r r 
+con A1 + A2 + A3 + + A = 1, el problema origi_
+r nal se reescribe: 
+Max z =e U1V1) + e U2V2) + ••• + e (A V ) 
+r r con A1+ A2 + ••• + A = 1 
+r A 1, A2, .••, A e {O,l}
+r 
+o lo que es lo mismo 
+Max Z = A1(CV1) + A2(CV2) + ... +A (CV)
+r r 
+s. a A1 + A2+ ••• + A = l
+r A1, A2, •••, A e {O,l}
+r Si C•Vf es el valor máximo de los productos CV1, CV2, ..., CVr la 
+solución óptima se logra con Ak = 1 y las otras Ai = O con 
+Z* = C•V
+k Por tanto si existe solución óptima al problema, ésta ocurre en -un punto extremo. 
+A.2.-Método Simplex. 
+Considerando el sistema: AX = b, X> O, Amxn, Xnxl' bmxl y supo­
+niendo que Rango de A= m. n m
+A~: R +R. Si Ran A= m A es sobreyectiva. Si n>m existen (n-m) "variables libres" en la solución de AX= b. La matriz A se puede particionar como: 
+
+donde B es invertible, N ( )º El sistema original queda
+mxm mx n-m AX = b IB I NI X= b. Si pa-:-timos X como } m componentes,
+¾
+X= 
+} (m-n) componentes. 
+AX= b equivale a IB I NI l~l= b, es decir n 
+B X. + N X = b, si hacemos X = O entonces
+-o n n B ¾=by por tanto¾= B-1b 
+Definición.-La solución }m componentes
+¾ 
+~ 
+X = 
+= }n -m componentes
+o
+X
+n es llamada solución básica del sistema AX = b 
+A: Rn+ Rm Rango A= m Si además¾~ O, entonces 
+
+una solución básica factible 
+del sistema AX= b; X 2:, O. Bes llamada matriz básica. N matriz no-básica. ¾ vector de variables básicas y X vector de variables no-básicas. 
+n 
+Si¾> O; X =l:les una solución básica factible no degenerada. 
+Si¾ tiene al menos una componente cero 
+X=: 
+es sal~ción básica factible degenerada. 
+Ejemplo.-Sea K el conjunto definido por los (X1 , X2)E:R2tal que X1 + X2 < 6 X2 < 3 
+X1, X2 ~ O 
+Agregando variables de holgura. X1 + X2 + X3 = 6 X2 + X1¡ = 3 con X¡' X2' X3' X1¡~ o. 
+Las ecuaciones pueden reescribirse como: 
+
+l l l O X1 
+6 
+O l O l 
+= 3
+X2 X3 X1¡ 
+
+Soluciones básicas.-Su número está dado por n!
+L 
+m! (n -m) ! que es el número de combinaciones que pueden lograrse con los n vecto-­res columna de A tomándolos de m en m. Para este ejemplo: 
+4! 24
+L =2-!_(_4___2_)-! = 2 ( 2) 6. 
+
+la. Solución básica. 
+
+
+X = 
+X3 
+= 
+IºO
+n 
+Xi+ 
+
+Solución básica: X1 X2 X3 Xi+ 
+= 
+3 3 
+o o 
+esta solución es básica factible no degenerada. 2a. Solución básica. 
+B =1a1, a3I =I~ ~I b =l~I ¾=I::1 X n =1::1=1~1 
+¾= B-1b; como Bes singular, no existe su inversa y por tanto es... ta no es una solución básica. 3a. Solución básica. b =l~I 
+
+
+Solución básica: X1 X2 X3 Xi+ 
+= 
+6 
+o o 
+3 
+Esta solución es básica factible no degenerada. 
+4a. Solución básica. 
+
+
+X11-1O
+X =­
+n 
+X1t -O 
+
+X1 X2 X3 X1t 
+Solución básica: 
+= 
+o 
+3 3 
+o 
+Esta solución es básica factible no degenerada. Sa. Solución básica. 
+
+o 6 
+Solución básica: 
+X1 
+
+= 
+o 
+-3 Esta solución es básica no factible, ( x~ = -3< O). 6a. Solución básica. 
+B "' la3, ªi+ 1 =I~ ~, b =l~I 
+X3 
+X1 
+X = 
+=
+¾= 
+n
+Xi+ 
+X2 
+~I 
+X¡, = 
+B-1b =I~ ~I l~I = l~l 
+Solución básica: X1 X2 
+X3 Xi+ 
+= 
+o o 
+6 3 
+Esta solución es básica factible no degenerada. 
+Puede observarse que los puntos ( X1, X2) de las soluciones bási cas factibles corresponden con los puntos extremos de la región facti-­ble. 
+Para cualquier problema de programación lineal del tipo Max o Min Z = C•X Sujeto a AX= b 
+x~o 
+Un punto x es un punto extremo de la región factible si y solo si x es solución factible básica del sistema AX= b. 
+La función objetivo logra su óptimo en un punto extremo de la re-gión factible siempre que dicho óptimo exista. 
+Método Simplex. Resúmen. 
+Suponiendo que se tiene: Máximizar z = C•X 
+s. a AX b 
+X > o 
+= 
+Amxn Xnxl bmxl con Ran A= m si A= IBINI con B invertible N 
+mxm m x (n-m) el sistema original es: B ¾+ N Xn = b si se particiona el vector e como e= eb + en si X =1:1 es solución básica factible, la función objetivo vale Zo = e•X = 
+/eb enl ,~, = -1 
+
+
+pero ¾= B b por tanto Z = eb B-lb ( 1 ) 
+si X fuera una solución factible cualquiera. 
+X=¾ 
+con¾> O, Xn ~ O 
+X 
+n ~ntonces la relación B ¾+ NXn = b se podría reescribir como: 
+¾= B-lb -B-lNXn ( 2 ) 
+con Nm x (n-m); N = 'ªj' con "j" índice asociado a variables no básicas. Si jES (Ses el con-­junto de índices no básicos), entonces la ecuación (2) queda X.. = B -lb -í: (B-la. ) X. ( 3 ) 
+-o j ES J J entonces el valor de la función objetivo asociado con la solución gene-rica X =·1~ I • ¾ > O, Xn ~ O es: 
+n Z = e•x Z = eb ¾+en Xn, sustituyendo en (3) 
+-1 
+se tiene z = eb B-lb -í: (B a.) X. 1 + en Xn
+jES J J 
+-1
+z = eb B-lb -í: (B a.) X. 1 +¿e. X.
+j ES J J j E:S J J 
+-1 -1
+z = ebB b -_¿ ¡ebB a. -e.¡x.
+JES J J J pero ebB-1b = Z0 de (1), entonces: 
+Z e Z0 -í: (Z. -e.) X. 
+0 
+ES J J J
+-1 J 
+con¿; Z. = ebB a.
+jcS J J. 
+Si X.= O estamos en el punto extremo original, si ahora (Z. -C.) < O 
+J J J para algún jES la variable X. puede hacerse que tome valores positivos
+J 
+( deja de ser no básica) con lo cual la función objetivo mejora. 
+Si para todo jES índice no básico ocurre (Z. -C) > O ninguna va
+J j = riable no básica deja de ser cero ( la función objetivo empeoraría), en 
+ese caso X= ld'les la solución óptima. 
+Resúmen.  
+1) El método inicia con una solución básica factible.  
+Z.J  - -12) Se calcula B , Cb ( vector de costos básicos) y el producto -1C.= CbB a. -C. para los índices j no básicos.J J J  
+3) Si todos los valores (Z.J  -C.) son positivos la solución pro-­J  
+
+puesta es Óptima. Sí existe (Zk -Ck) <Ose usa el siguiente criterio: 
+Entra la variable no básica que tenga el mayor valor absoluto
+~ 
+para (Zk -Ck). Esto es debido a que es la que contribuye más a mejorar el valor de la función objetivo. Sale la variable básica ¾r que cumpla con 
+b b. 
+r 
+--= min {-1 1 yki > O}ykr ykí para r = 1, 2, ... , m. k el índice de la variable que entra. para i = 1, 2, , m. -1
+donde Yk = B ªk 
+Se elige éste porque es el que menos contribuye a la función obj~ tivo. 
+-1
+Si ~ variable no básica con Yk = B ªk <Ose tiene una solución no acotada Max Z = 00• 
+66 
+A.3.-Método Sim~lex en forma de tableau. El problema Max Z = C•X 
+Sujeta a AX= b 
+
+con X > O se puede representar en el tableau siguiente: 
+z  ¾  X n  Lado derecho  
+o,o,o,o,o  C B-lN ­b  e n  C B-lb b  
+I  B-lN  B-lb  
+
+Fila objetivo 
+o en forma desarrollada: 
+
+z 
+X Xn, ... XnD 
+/Lado de
+¾t' ¾,'...' ¾m 
+n1 
+C B-lb
+1 
+z -e z -e z -e 
+o o ... o 
+n, n1 n, n-, no no 
+b 
+-
+-1 -1 -1
+y y y 
+B-lb
+1 o o 
+= B a = B a ... =B a
+n, 1 n, no
+? 1~ ­
+o 1 o 
+-
+o o 1 
+-
+
+En general: 
+-1
+Y . = B a.
+nJ J donde:¾= Variables básicas. X = Variables no básicas. 
+n 
+Z. C.= Costos reducidos asociados a las variables no ha 
+J J sicas. 
+A=IBJNl=JBla ,a , ...,a J
+n1 n2 np 
+Procedimiento par la solución de un programa lineal por el método Simplex en forma de tableau: 
+O) Para iniciar la solución del problema habrá que contar con una matriz identioad, en caso de no tenerse habrá que reducir la matriz A. 
+1) Si Z. C. > Opara todo índice no básico, la solución es ópti
+J J 
+ma. 
+2) Se elige una variable no básica Xnk con Znk -Ck < O ( la co-­lumna correspondiente es la colunma de trabajo o columna pivote). Si --más de alguna variable no básica tiene Znk -Ck <Ose elige la de ma-­yor valor absoluto, porque será el que mejore más la función objetivo, esta será la variable no básica que entra. 
+3) Si todas las entradas de la columna de trabajo son negatiyas o cero, se tendrá una solución no acotada. 
+4) Se divide cada entrada del vector del lado derecho a excepción del elemento de la primera fila ( fila objetivo) entre la correspon--­diente entrada de la columna de trabajo, siempre que la entrada de la -columna de trabajo sea positiva. El elemento de la columna de trabajo que dé el cociente mínimo será el elemento pivote y el r0nglón en el --que está colocado es el del índice básico que sale. 
+5) Se pivotea en el elemento pivote y se regresa al paso 1 hasta que todos los valores del renglón de la función objetivo sean positivos 
+o cero. 
+Los problemas de minimización se resuelven exactamente en la mis-ma forma, sólo se modifica el criterio de selección de la columna pivo­te; será aquella donde Z. -C. >Osea el mayor,
+J J 
+Se ha dejado de considerar las llamadas variables artificiales, -que se agregan c~ando se tienen condiciones de igualdad o de desigual-­dad mayor que, pero con los elementos que se han visto no habrá necesi-dad de utilizar tal tipo de variables, ya que siempre se partirá de una solución básica factible. 
+Apén9ice B.-LISTADOS CON LA SOLUCION DE LOS PROBLEMAS. 
+••••••••••••••~•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••V 
+f 1. •'EXICO 
+' 
+•• f ••••• 
+·····························································~·················· 
+N 
+.... 
+-------·-·--------------------------------------------------------------------------------------------·---------------­
+-------·--------------------------------. ---------------------------------.-------------------------------------------­
+.·1. ~1 ~ ..::, ,;.1: :1,..:: ~ ;-J). ·. l. ~~ v.:..,.;,1~:.llC:::i ~··~~:1~!:.:·.~1.":~ 11 r~ \'-\ 111 ',~L:::; , !' ._¡'.lL;':¡if,,:. st:,•Ar.~~ 1 
+~1 r~•. 1:.,, .. ~;; ,f nn::Pt.,> t::-o-;r1::-1y; : l . ·1, :·, v~,i:-;. ,.: r111:-l:\LfS c:-·v.,)[(:J,11. ··;.\.JF J 1 ::1,~ .. ) r~ \. ~ i: 1:, 1·. ~ -:.. :,;. 1 •• t·. ~ '1 ¡,t;l, ¡.; :. ;;.r·~ r.\ r_i :.. ~ 
+r,:i1. .. , . .-,., 1~rLC:S 
+______ .. -------------------·-----------------------------------------------------------------·-----------------------·­
+-;: 35. ,, )·.1 -73S.Of10 ;. • 1 l ,.l.t!0 1"'lf'I -~,1. (lOf.v i, -:,;J.:ucuo -~o.or.uoo -1s.soov,1 -<i5. Oí•ú1.•0 
+• 1(t(l • JI i":,) • t·1 •. ~:if10 \.l -... JF:5~0(1 -4 34.(\lJ(\\l -1~.dl~GO -30.222•lú -9QC>99.0ll
+º·º"ººº"º 
+-9'l99 l.úJ -'lQQ09.úO -Q~999.00 -9Q<lQQ.\)I) -'1'19H.OO -<>999~.oo -'19999.C'O -ciqq9Q. r.o -9QQq ,.oc, -~QC><l9.ú0 ¡¡. ,1110.iJon º·Cl(l00lll)0 º·(lQ;J():)()sl o.ooooooc O.úl,OOOOv o¡00000,~o 0.000)000 ,:, • onr.0000 
+VECTOR 6 
+7. or, 'iCU:'I l'i.Cl~l"..~J u. ·:oonooo 45,00000 ó0.0~00 70.000CIO ó.(,00000 10.oooc,o 
+15.CI -~i.°'•1 1,·.• ,~o,.,,,o ,1.31'l'ºº'-'º J~.'10t:Oú 
+··--·-----------------------------------------------------------------------------------------------------------------· 
+-~.24E•03 -0.24E+O) -o.t4t:•03 -~o. -110. -eo. •7b. -9~. IS '1. o o.(lú (I.O(I-0,10[•06 16 12. 1.(l 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-o. 10f•(•6 o.oc, º·ºº 1.0 º·ºº º·ºº º·ºº º·ºº º·ºº 
+11 0.00 !).OC º·ºº 
+-o. tú[+,,;, 1~ 45. C. C,(, o.(1,) º·ºº º·ºº º·ºº º·ºº º·ºº 
+1.;, 0.00 
+1g (, ·ºº º·ºº º·ºº º·ºº 
+-O, lOf•'.!6 tí(i. o.1)(1 o.no (,.(10 1.:. 1.0 t.(J o.oc, 
+ll.ºº 
+-(;, 1e::,:,,, i~ 11:,, ~. :,u ,, • c)Q 1.0 ú.~0 o.ov O.úO -0. 1Oi+Oi-. 6.,, o.ó!l '.l. ;,0 O. Oü o.ov o.vCI
+<I J.O~ (,. O(I º·ºº º·ºº (,. 00 (\.(l(l o.(,íl
+-•,, IO(+~t ~2 1(\. c.on C'. llO º·\),) º·00 1.ú 1.e 
+. ...... 11)E ,Vr. 2 3 15. ~.;, ü 0.úú ü.\;(, J.00 J, CJO
+"·jJ
+-,.. 10t.nt-24 I('. .),H ü,OlJ ll.CIO !) • ;),j o.Q() º·ºº o.uo º·ºº 25 V.''') ·\: .•Hi 
+-
+,_10~•.~,.. (\. 3 ,, ü.•)0 ,1. l; ,) 1. -:: j o.,)\) º·ºº ').(,1.1 º·ºº f, • O\, -•.. 1o~:• ,:,r, i •.\ 1~-0,•..,:) f,. •:!~, 0.llQ ,) • .).J f,. úV v.,,v J.ú0 (,. i,ú -o.2 4 3 3 ,: • :, d -0.11;;.'>f •(,. 1 (\F• 0t -C,l<'E+Cin -J. ~=·LtOr, •ú, \ú[+•)n -0.1 0,:•lle -J , !Ot:•Ot, -ú. \,) 1-. +t) f-. 
+• 1),11H:+:. J -~l . •o .~ ·v.4J~•)l -11. •.!), o.;,,·, -0.IOf«Jt> 
+1.n (. .úl\ .., • l.•.) ,-. • t)f: [,. (\1\ J.:.' J l 1 0.00
+\~ 
+(¡ . i.,·) r • l'r, t1 1 .J J {• • '),) (•. ¡,¡, ) .').'\ .) • ,. J 1 • .;, 
+(,. 1),J l: .• ,i,: •j .. ,) [, l:. !\ti [·.1)( ) • J:, (j. ,,o 
+º·ºº
+0. \J1l fl. Pl·, 1). \·ü {1. Ot) L',<,) ~.j') C• • "º 0,0u 
+'.' . )f\ 1'.· . (,('-G. {•) 1). \lit (\•(lo) J. );i 11 • i'IO ú,CO 1·. , ,.(, 
+.i.Ju :-• :1 ,1. (.1) 
+1. n t,;. 1',1,1 •.", . l· ..) \,. ,),. o.1.'l\ J.,)•) ú, (10 ll. OC\ 
+V. r:, 1· . .. ,'0 (\. ()¡_": ,·1.(,(' J • .11i ,j.00 0,00 
+r. • ; ~ (1 ) ,1) l' • (·~ 1) 1 (!.'1 ('. ( (. J.:,ti :", .-~· (, O,üO 1; .<. V 1, ~ ll, 00 j.(;,, º·r,o 
+~.()(1 ¡',,\¡(, 
+¡). ,,0 i: •.·1'; ,'\ .. ·"' 1.1) (~. or· .) ..., 1 (", • ,~, 1.1
+·,1. º" 
+\.j. (.iQ í: .V\l 1.'. c1t· :1. e,:., 1.,1 1. ~ l•. (q) 1). 00 
+•O. !Oi•ll~ ••i .1 Gf+!',--0.tC~•ü~ •f'.l~E•O~ -n.11,f•N, -:>. 1;1:::+:>1:, ('. Ol, 
+º·ºº 
+sú.lOE•Ot> -o.101::•06 -0.IOE+Oó -O.!Ot:+Ob -0.tOE+Ob -0,tOE+Ob -0,tOE•Ob -0,lOt.+Ob (1.000,01) O.CIO
+i ·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+1 ·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+1.0 Cl.í!C o> oo o.co o.oc 
+O. (10 º·ºº º·ºº º·ºº 
+e • oo 1.0 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+C .OJ 1.(\ o.oo
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+li,00 1,O o.co
+º·ºº º·ºº
+º·ºº º·ºº c.co C.CIO 1.0 º·ºº o.oo
+º·ºº º·ºº º·ºº º·ºº,) ,o~
+o.co o.co o.oo c.. 00 l.o
+º·ºº º·ºº 
+1\. 00 (1, üO r,. (l(' ) • J'• 1 • ;' l,.tlO
+º·ºº º·ºº 
+LO
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+
+o.co o.co o.co o.co o.co o.co o.co º·ºº 
+º·ºº 
+o.co
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+·--------------------------------------------------------------------------------------------------------------------­
+-•1.IOF+lli, •,). lvl+Of. O.CJ i).¡)() 
+,.or, 1) • (\(1 C.Oü º·ºº º·ºº º·ºº º·ºº 
+O.OG ,_.e·.:; o.<,O o. C'O 0.('0 
+º·ºº º·ºº º·ºº º·ºº 
+O,Oú º·ºº º·ºº º·ºº o·ºº
+... ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+''·oJ 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+...... 00 o.oc -1.0 º·ºº º·ºº 
+,.00 º·ºº º·ºº º·ºº º·ºº 0.00 º·ºº 
+-1.O 
+1. ºº º·ºº e,. r.o º·ºº -1 º·ºº·º O. º·ºº0() º·ºº 
+O. vO 
+O.OL º·ºº º·ºº º·ºº 
+'.co o.oJ -1.0 o.oc 
+l.Oú o.no º·ºº º·ºº º·ºº
+o.o.:, lJ. Ú\) o.oc -1.0
+º·ºº º·ºº
+i,uO o.oc o.(;Q ) .(\ () .:>.oo -1.0
+º·ºº o.ºº
+l.o ú.Q[. o.oc 0,(\1) o • .)C, O,úO I)·. (1C
+º·ºº 
+'·00 1.r, ·J •,~e, o.,)l) O.JO O. l•O C.00 
+,.r, ú ú,00 O. IOE•Oo O. L)E+Ob º·ºº O, IM.+Oó J,t:H:+Oó O. l ü<:+06 0,lOf+úb 
+Cí:t.T. D~ 1.:, !'4tl:i. 
+o. CiJ \¡ . 11\_.' :.. (,,', 1.r
+-(,. \".; ,· ..-,(. 
+-' .~­
+i:.•n0 ·,. t t'. 
+-1. ' (, •:) ú •• • 'J (, ~ '., . (', ...,~.., . • t·(, r,\,. e. u,.) -1.,; 0,1!1' O .. f.1L1 -1.J 
+r.. 1 G •1. l ('.1 0 -1. ,'to.'. :j 1 .. ..... -1. 
+J 
+-l.:1 ( ·'·t" -1.·' -1.•· 
+;·.. \{, -1 •.·, 
+TAbU 12 
+----------------------------------------------------~------------~---------------------------------------------------­
+-0.24E+03 -0.24E:•03 -O.l4E+Ol -110. •80, -eo. •lb, •95, o.oc 1 5 1.0 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-0,24E•Ol 1 12. 1.0 O.Oll ú,00
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+-o.HE+03 2 l.O
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-so. 4 45. o • .io o.(\0 1.0 o.oc,
+º·ºº º·ºº º·ºº º·ºº 
+-~o. ~ l!J. o. ::-e O.'.lo 1.0 o.ou O, 00
+º·ºº º·ºº l ·º 
+• ..,.l~F:"13 J 7'1. o.;;,r, o.{.,!1 l.o O. C·O 11. \1\) O. (·O u.oo 
+"·ºº 
+-~.~,•y. •) Q f.• ;,I ~.;·: ;, e.:-:, o. ( ,: 1.l-0 0.11,1 lJ. (,C, 0. (1\) o.,r,r, ,; • '.) ,"1 ll,vo 0.0..i (,.(jl¡ J ,(i t.G
+-7f,. 10. 
+,• ..) º·ºº (\. º·"º t,\)
+-til. 1;1 15, 0,0J (;.(nl o.0(1 (' • 1)11 c.oo
+º·ºº 
+-~.• 1 , t j(,. ~·..-. ~ • (\f1 0.c,n 0.00 v.vu 0,úO 
+-
+., . º·ºº º·ºº 
+~ ~ \'. •'¡. '\ ,, :1 • ., r~. 11 \ 0. :,(; ~. :),... r:. no o. ,~q J. i)l) ,, •oc. ; ; ,, ,, ....,.. ,, ..., ) ..,·, • .• r, r, 
+' 
+-----------------------------·-----------------------------------------~----------·-----------------------------------­
+•O. ¡,lF.+Ol -~,. -~.. •l).43E•O) -33. •0.10E+06
+• 30 •
+o.,11) º·ºº 
+o.~o o.o~ ú • (10 1.0
+º·ºº º·ºº º·00
+1.o
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+O. (10 Q • 1)ú 0 .(1 t) o. ú;i o.oc O.JO 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº o.ºº
+o.co c,.110 e,. oo o.oc,
+o."'º º·ºº º·ºº º·00
+C.. Gil G. ci(, O. u:) o.no O •. JO O.Oü 1·º ii.00 u.00 ú.Oú o.!uo O. 110 º·c,o
+i,.l•O º·ºº º·ºº 
+o.[¡.) c. .i;ri o. e:, (¡. 00 O.JO
+º·ºº º·ºº º·ºº
+
+0.0ú 1.() '). Q ,o o.(,(, J.JO o.r,o ú.00
+º·ºº
+0. (,ij '., .vú 1. J l;.(¡(, e.e.o ~•:ir, o.(.Q
+r,.0 ,) (,. -J J 1.o (;. Oú j.OO o.en o·ºº
+º·ºº ,-1,')I) º·ºº
+1) • i')(j ,) •or, 1.0 1. ~ ('I. O·i (). (ji) n.J) º·ºº ? ••. .;.0~ º·ºº º·00 
+l.•) (lf i ÜI)
+º·ºº º·ºº 
+.. ~; • l •1;.-+ "l t .. -~ • t ( • f" • (;.., -e' • J Jt.:.• ·,,.:, -1.). 1:.;·.f.~ -1'. 1P • 0h ·f,lvE•11b •v.".(/\) l úl'H•ll (. • 1j 1~ ", • (, \' '.I • \;.., G.0C -1 • (-j. -:, •,; 1.1.1J(! 
+~.~-~ 0,L·G ~.~J C,. J:l (,•OC .) • ~'0 0 • IJO 0. t¡(¡ 1•;) ·,J. l~(! : . • :. :; ;,,. {)tJ ¡',. ei. "". J.-, V•,·,,¡ ,,.t)0 (, r i l • (' '.J • .: _~, ,.,1-1 r,.-ú. lv v. ,1l) (; • ,rn -1 • 1) l n' r,. r,o P • {1 (, C;.Oll 
+".-_).) • :·-; :1 ºº '.) 
+º·ºº
+0.,1': ,~,_I;,.) C.(.J 1 • e (,. t (, 1) ~ ,) Ó G.úO .~. \_, .J :.: • ,·, (, ; •.; ~' 0. J{_, 1.e J.,_, ·.i 0, ;,,) u.uú (\. 1>1 (.• ,:"J 0.¡,J r1. 011 i.•.li(' 1. u V•¡,,, (¡. (, ,1 ¡",.li•') "'l.(:l~ L:.,1j ·.1. Ot º·{j(.. .) .) ,, 1.,J o.(;(, 
+•.) ••·,.) ;, • l, ,, 1: • ./ ~· .) • ()1) '~. f\\ ·¡ •., ., l .\1 V.t,') ,,.(í"i ~•.vJ C' • (JV o. o,-ü.OG ~· • '~ t·, ••• 1; ,·¡ () • ~! r_. ,:(' º·ºº ,·1. 0\i 
+º·ºº 
+".,1 '· 
+º·ºº º·ºº 
+o.1c·E•nb v. 1(¡f+,·b ;¡. 1o¡:. :,b n.10,:•0b 0.101:+vb 
+----------·------.--------------------------------------------------------------------------------------~-------------­
+('f'l,T. DE L:, Hf\V. 12 
+---------------·--------·---------------------------------------------------------------------------------------------­
+-('.Jfl•:+-;~ -0.10!'•% ().0J º·(\1) o.('(' J. ;o o.(\(¡
+º·ºº 
+0. ¡~ n v.no 0.0:, <•.00 l.t, o.¡)I) 0.,in G. Ofl 
+¡). \ -~ O.ilO ü.00 o.no c.~c o.or,º·ºº o.¡)I) o.(¡') o.o) º·ºº 
+O.úO
+º·ºº º·ºº º·ºº º·ºº
+O.GO (' • OJ O. !iO
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+-1.0 o.IJO o.oc
+º·ºº º·ºº º·ºº º·ºº
+º·ºº º·ºº o.oc -t·º o.o o 
+º·ºº º·ºº º·ºº º·ºº
+o.(,() o.oo -1.O O. CIO
+º·ºº º·ºº º·ºº º·ºº 
+n.oo
+º·ºº º·ºº º·ºº º·ºº -1·º º·ºº º·ºº
+ú.uo c.oo (,. 00 o.ou -1.0
+º·ºº º·ºº º·ºº 
+o.(_,) o.no e,.¡ j P.Oii J. -J ~ 0.00 • 1. v
+º·ºº 
+1.O (;.º'·' ~). o.:j ,, • Oll ¡/.\.10 o.o~ o. (,ú o.ºª o.;):) ;.,.,_!;) ,J. Vl~ o.oü ...,.~,-. (!. ()0 ú.1:0
+1·º 
+O. 1,,::.. t"'lh 0.10E•Cn t•O. ii. Hf:+'•3 1). l íiE+C•3 7b. b2. ri.·1 
+--------·----------------------------·----------------------------------------------------~---------------------------­
+e.:·0 
+O.O') 
+o.cu 
+O.0•)
+o.r,,)
+º·ºº 
+º·ºº 
+O.O() 
+O. Oll
+o.(¡[, 
+(1. il\1 
+-1.,j 
+r,.ú•) o • .;F•i·3 
+º·ºº
+0 .(,,, 
+o.l)Q
+º·ºº
+o.(,(¡ 
+o.ou 
+,l,00 O.01\ 
+º·ºº 
+o.(10 
+o.oc 
+o./\(; 
+-1.0 3ú • 
+... ........ . ·-·.......................................................' 
+s o L ti r I n ,, JPfl~~ 
+VHIA~.u: fA:-1~~ V~l. lP 
+-----·---------­
+X ( 15) 1, O (/l/
+= 
+.({ 11 = 12 • .-,00 1.( 2) o.en,,
+= 
+u ~) = ,5.('[¡() u 5) = 15.00C· X ( 31 = 7ú. út,G u 'l) = o.o,;0 XC 7) = 10, 01)() XCI O) 15.(),)/)
+= 
+X(lll = to.noo XC 1¿) O, 30,l
+= 
+X ( 14) = 
+15.ºº" 
+LAS DE"~S V/.PI~rl,C:S XC J l = o.o
+•
+•
+• CIHJ fUllCION Of\JETIVO -OPTJl!lZAOA 
+f(X) = 
+.....'....... 
+• 
+N 
+..... ..... 
+• 
+U) 
+o 
+.... 
+¡: 
+n
+.... 
+••• 0\ 
+• •• •••• ::i 
+• 
+• 
+········~··························''''''*'''··································· 
+EXISTEN SOLU:JONES ~ULTJPLES 
+••••••••••••••*••••••••••••••••••~•••~•••••••••••••••••••••••••••••••••••••••C• 
+:01.,c:10 D t: ~ E '( l C O • 
+• •
+•
+• r~IOA~ DE :o~PUTO 
+• • 
+·······~···············~·········,~·······················~····················· 
+,·1. !i '-t,;1 ... 1:.:r\,·.¡~ ' l r•f V!.~-1~,-.1.,:s rr:1sJt'•,:.1..-s e¡ ,"'J. n. v:..._ ¡ ~,11.t.s rr. «nt.,;u,.-~ :SL,... ~r;~s ~ . J. ~.: v:,,,¡~'-'Lr.S ~•-TIFl::l:.LFS ccn,;11c1,.,,. =).:J. íf ,C..•S. ,\~T!f JCLAl.f.-~ ('.:'1',fl!C"IOI ';.'í(lf 'J Ic.u:,LJ " 1 ..; ~ . í:t V-,', J!,,,LU, r-r· 1',.11.Gf;~ t. P~_ST ,\! ~:, J 
+. ). Tll:"-l.-uf· ,.h.J~l:-LtS 17 
+N N 
+1 
+~
+·-----------------------------------11 
+o 
+~ 
+i= 
+n 
+n 
+1-'• O\ ::3 
+VECTOi, 
+-75.51)0'1'1 •h!.00r.0J -,.3~5nc,r, -434.Gi),,(• J,OOOvOOJ •235.0000 -140.000ú -llf,,011l)()0 
+-1 \)\";. <1,100 -Q<¡99c:¡. ,,¡; -')Q<¡Q<;. l'fl ..Q<¡<¡QQ. ÚlJ -9Q<l9'1,00 -99999,DD •99949,DO -Q9999.N, 
+O.OOC'Ml~0 
+H:CTOR 8 1000.coo t,7.00000 1(10,(l('OQ 67.00000 2,00DODO lb4,0000 204,00CJO 
+------------------------------------------------------·---------------------------------------------------------------­
+ueu 
+-11',. -b2. -6.~ -<l. BE+{)l -0.2-IE+Ul -a.14{·+03 -PO. -u. 1r.s+º" 1n G.l~l'.+O~ 1.o 1. Q 1.0 l.(¡ º·''º l.(¡ l.o
+1·º 1·º 
+-o.1n~+~1... 11 67. 1.ú o.,;o c,.oo O. CIO u.oo 
+1, º·ºº º·ºº º·ºº
+-J • 1(. i..·.+~~ h \).10f+Ci3 ,) • , . l• l • ,/ l'.(JI) o.()(¡ J.(1 0 Ci.Ou O.úO (:. 00 -a.1 c,~:+,);, 1) b7. o.v,1 G. fl,) 1.O 0.01)
+-o. 1(¡i.· .. r..., ¡,¡ "·ºº º·ºº º·ºº º·ºº 
+1. (1 ~. :j() ,) • 01) 1.0 .;) • C,0 ú.<,\) 0.00
+º·f.Ü 
+º·ºº
+-"J .. l .":!'"-+"., ro: 1~ e'·. 1t L+ ..J 3 \J.: ,.1. (; (,. (, (, o.r,o I.IJ 0 e 1.)lj u.•)(J ;, .•;(, -O•\ r.;:: +,·•.., 1& (: .,.. ,.. +)) ,, • V,J c. •('~, ' o.en O. 1b :,. • 3') ,, • 2(·
+º·ºº º·ºº
+-·:,.1 t-, 4, .. ~~t·)'f -~-'.'2 ,. r.. ·1 ~. -o.ir.~+·1t:°' -l'.2•)t-:+dt. -o. 2,j¿:+i:,r, -(1. 21>r:+1)t, -CJ.\tt.+ÚD -:, • 1 \t::+Ut, .-, • 1t 1::-+ (, { 
+r;;q. U: L;. Tl.. i (.,'. 
+---·------------------------------------------------~-----------------------·---~--------------------------------------· 
+• :·, • \ -~ ;.: + t' 1 • ,) • ] ,·;. i r -('. t nL+rl ~ -(). t <,r:-+\H:, -0. 1n1--+P«-,
+t.... 1.1 .-.• uv f\. (; ¡': l.. l,1' ) • :'ill i"J . (\ ·.) o. C,() ·l. -. 
+l • ( V. ·J~I ~/ • t) t, : • (¡) ü.e,, C\. \,O ;; .;.. ) ·,. [•' r.• •:,.J 1.u ,·,.C'(' J •O•) o.un O.CJO 
+l).,·:) ,·!. (i 1> 
+r;. 011 (). 00 1.O .J.:'>'.'\ •.) • i'I ,.1 ,1. ºº (\. -1\) ..... ¡,: '·. ·)J l; • .-:o 0.(',<' 1. :, ¡). (•fl 
+1 
+• "-'º 
+("\ .... •\ 1¡.li(· (•. C•G (.li t• ;, . ,}•' 1.~ () . Úl) ,·,. ~ 1 •) •,·.:~ '.). :"'r; ,:.(,(i (,. ,.{\ :') • _;r, (\ .,.\; 1.O -n•, as.,'¡~. !: •,,..., •: .,) ~· ( .(, ... :,..,.-. Ú • ()1'\ (J. ¡Jt) 
+(1. ( ;) 
+:'.JC:~:+,•J 
+o.o~ -1.i) 
+-1.,, ü.t"''lfl -1.,, ,1.,·-1 • t.() 
+n.r" 
+o. Jf.l ~¡ • ) t-~.-+ rI J • 1.O -1.ú O. IOC::•06 
+TAI\LII 10 
+-u,. -62. -B.4 -0.43E+03 o.no •0.24E+03 •0.14E+03 •80. -eo. 8 94. 1.1 ·-0.11 1.0
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+•76. 1 67. 1.0 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-62. 2 O.IOE:+03 1.0
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+•B.4 3 b7. t.o
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-0.43f+03 4 2.0 1.0
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+c.oo 5 0.16f•03 0,01) 1.0
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº
+•O.\Or.+03 9 O.SIF:+03 -0.12 l.l 
+-{l.7QROf+05 º·ºº º·ºº º·ºº º·ºº º·ºº O. lbl:'.+O) 39. º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº -----------------------------------------------------------------------·--------------------------------------·-------· 
+COHT. O~ LA TA~LA 10 
+-------------------------------------------------~--------------------------------~-----------------------------------· 
+-o.1or.+03 -(,. I Üt.+1)6 -c.1uE+C6 -r,. 1o~·,c.1, -o.10E,út1 -0,10€:+Cb -O.lOf:+06 -0.tOE:+'(')b0.()0 2., -',;.1 -2.'l -2.¿ -,.2 -2.2 -6.0o.o,) {t • (~ 1) ! • v :> •:rn O. UJO
+º·ºº º·ºº º·ºº
+1) .•JO o.vl' 0 0 (10 0~01)ri.oc. t.v
+.º·ºº Q.OfJ r .oo r, ... ~.; '·º o.()() º·ºº 0.0(1 º·ºº 
+0.º'' fJ. llO 1) .,.'ü C..C\O (\. (li¡ 1. o il,üO º·ºº 
+o.oCi 
+O.l'O !:.tlO (\. \' (\ r.oo l,O 0,(10
+º·º" º•:H'
+1.(, ~ 1. 2 l.2 1.2 1 • :; l.2 ! . 2 b.ú 0.1')0 <,.101::+M, O. 1Oc.+ú6 o. IOl'+"b O. Ji;F+<•b .l.tOEtvb O,tvr.+Oti O.!Ot:+Ob 
+----~----------------------------------------------------------------------------------------------------------. -----­
+CONT. DE Ll r~BLA to 
+----------------------------------------------------------------------------.----------------------------------------­º·ºº 
+"·o
+o.no O.(lO
+º·ºº 
+º·ºº 
+º·ºº 
+-b.:' 
+0.1:.>f'.+C] 
+••••••••t•••····································································• •
+• PROBLE~A hU~. 
+S0LllC10t. O P T l ~ A N 
+Vl.Rl~RI,[ Bl<SlCA VALOR N 
+•• 1-' 
+X( ~) : 93.97b
+• ~ ( 1) : t;7 .N•(• t/l 
+1( 7) o
+= • 
+: 'ºº·ºº" ....
+A( 3) t,7.000 
+• i::
+q 4) 2.,1or,
+= n
+'( ',) : ln4.0uC, t-'• X( 9) = 5116.(124 • ::l 
+O\ 
+1 
+L~S (1 ~: ~.· !.~ './MHfiLE$ X(J) = o.v • 
+lP ri,,¡ z~r-A
+•
+• = 
+...,.,......,..,,.,...........................•...............,................, 
+••••t••······'··~·····*·········4···························••*•••············~· 
+• • • • * •
+E 1, :: O L f. r. I o í) E ,. ~ X I C O • 
+' 
+U~J04D DE :OMPUTO •
+• 
+' 
+t 
+N 
+.w 
+1 
+<l(g 
+rt 
+IU 
+A,(1)
+r I Tl,S U:L ;>il :1-,Li:.•.1;. 
+1-' 
+'d
+ti 
+o 
+A, 
+~ 
+, . .:. lr ~·t5l ¡. 1:~ Iür,ts 1 n r¡· \',,qk L,;:; N:::1:-1'.l"<t.1,•:S t, rt o .. ~l • ('~ \1 ,\P. l ~t;t.L.S Cr H:1LGl'f,l Sllf.~,\fi~S 1 (1)
+N ·::..r l~d.,.5 i.n LFI:::H,L>.s CCütlCJ:::¡m; ;:;) t,
+·-· r-J
+[ F V.~f:S. A~l'IFI::t~u:s C:::'lr-OJrJOI. •·t,y'Qp J IG~t.l,,l o ·."} .. !'F V.:.r-l :_rLt:~ [ t. ,, -_,1.Gli~: ~ ll1:.Snt ~::; (¡ ~ . ' Tf,TAI, Li .~q¡.¡.Lr,5 13 o
+·--ti 
+IU 
+p.
+w-------------------------------------------••••~••••-•--••••--•--••--•-•••••W•----------------------~---••------•-•-•• o 
+7~~·1'."·)O 3fl!U.00) ,~10.1'1'1() ':>C'Oo. l>C.O ~Ql0.000 30BO.OOO 
+'). üOCOé ,',l i•. c,r,0000,1 o.o,:,¡¡,Jooo o.c,ooouo<i O.OúOOvOO º·ººººººº º·ººººººº \'ECTílR B 
+151).000,1 so.ocooo 200.onoo 1so.oooo 1so.oooo so.00000 100.0000 
+·--------------------------------------------------------------~--·-------------------------------~-----·-------------­
+0.78E+04 O,J8f.+04 º·lllf:+04 ~-50t;+04 O.lBE+04 O.llf:+04 0.00 7 í.e, l,O 1.0 º·ºº 
+O.l5E:+03 1.0 1.O 1.o 1.0
+º·ºº º·ºº 
+9 50a l.o 0,00 0,00 1,0
+º·ºº º·ºº º·ºº º·ºº 
+0,00 9 l',,Of.+03 0,GO l,O o.oc º·ºº 
+0,00 10 (,,J!')f.+03 1.o º·ºº º·ºº º·ºº º·ºº º·ºº 
+o.ºº
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+l l r.15F.tvl O,01) O,C,O o,\;Ó 1.o 0,00
+º·ºº º·ºº º·ºº º·ºº 
+12 50, o,cc O,úO l.o C,, 00 1 l 0,JOF+el G,(,0 0,(\1) (), vO o.co 1.0 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº 
+O,C'OOOE+OO •t',Hf.+04 •O,Hf.+04 -o.Jet:+04 -o.Svf.+04 •í•. l8E+04 •O,llt:+04 
+º·ºº º·ºº 
+ú.•}(' .. ,.,.(, o.:'),j (,.i"1(! 
+º·ºº
+o.o,, f! • 1,.~ IJ ('). Ü'~ o.(\( l,15ft)l .1·\J ,) • ,JV o. ~i u (:, 00 5!). 1'1) O. 0 ~¡ c.oo ".fh~ -1.0 
+! • .-, (1. ••Ú l • ;,ti (.. l1P • I ,I' (\. ·i·) : 1 • 1 : 1 ~ 1.¡) IJ. Pu 'J. i)¡, • l ,,)1 1). Od .1,,1 (,. ~i.i 1 • (, 0. (,( • I ,C, r, ••)O '.·· •,·v 11 • .:10 1 • (, •l,0 
+o. Jt, '..\.' (, ti.(};,) o.l~O (i,Cll 
+-----------------------------------------------~----------------------------------------------------------------------­-------------------------------·-------------·--------------·-·---------------------~-----------···-------------------­
+Q,Hf.+t/l 0, )Rf;t04 l',llit:+04 o.soe:+o4 o,HE+04 O.llf+04 
+º·ºº º·ºº
+o.01) 7 v.lO"'.+v3 o.ro 1,r, 1,P 1,0 l,O l,O -1.0
+1·º 
+o,nr+o4 1 !,\\, 1,0 O,\iO o. r.o
+º·ºº 1 o·ºº º·ºº º·ºº 1·º 
+1), 1)(1 .;¡ o,;,o~:• 01 O,1'0 1,0 l,,,,)(, O.úO 
+º·ºº º·ºº º·ºº º·ºº
+ri.o<, \(\ O, l'H:+íll r.o 0,00
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+11 0,l!iE+OJ 1,0 0,00
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+0.0(1 l, 50. 1,0 0,00
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+13 0,l0E+03 0,:10 0.00 ·1,0 0,00
+º·ºº º·ºº º·ºº 
+0,39ÓOE:•Ob •O,lRF.:+04 º·ºº º·ºº •0,38Et04
+•O.lBE:+04 -o.50E+04 •0.31E+04 0,00 o.1t1r.+04
+º·ºº ----------·-------~-------~---------------------··------------------------------------------------------------------·---
+CllHT, Df: L.\ Tid\LA 2 
+--------·---------------~------------~---------.---------~-----.--------------~---------------------------------------· 
+ú.lY,:, r,. (i 1) r. c,o
+,•,,¡ 
+f'i.i'·t' .) • 1 ·,i. • ·) l 
+(l .Oll ('. (\1) C.00 o.r,o O.M •I.O 
+1.e !"'. Q(1 ,-¡ .,)V O. Ct\ •I , O 
+º·ºº 
+ú.vo t.ll c.oo -1.0
+º·ºº º·ºº 
+o.ov o.ou 1.G o.co e:. \\0 0.151::•03 
+o.or. o.(l\) 1.0 • I • O 
+º·ºº º·ºº 
+o.co o.co 1.o -1.0
+º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+l~lllCE 1;.:i t!.\Sl::::J Qllf: f"fflA 4 
+p:r, !Cf: "~Sl:D Jl'I:: ~1,u 7 
+--------------------------------·-------~-----------------------------------------------------------------------------­
+\,. 71:' l • ,; 4 0.3~,·..04 (.• 3d.•ú4 C. '.>úE, 1,4 v. Jol::H•4 o. 3u;+v4 o.or, 0.00 1J. 51:'°'• º"' (,. \ í'F•c1 3 ;-• üG 1,'.I l.e, 1.O l.() 1.O -1.ú
+1·º 
+:1. 7,;f•04 50. 1.0 "."I. r,•, ú.(,/• ti. •J(J º·ºº (¡. Ú\.i a.ro l.o !J.()i, {1. 2e: r ,:J 3 ú.li() t.n (·.(.1..: 0.ú:1 \·1 • Gu O. Oc; c.uo ,, • 110 l •(,,e ).i l·.! c.¡· .. ;j j :,.,.(,(í (i.(,._• 1.r '1.eJ u.C>ú 0.00 f·.fdi
+0.ºº 
+".~ ,~ 11 ~:,. ·'.;-e -1. ~. -l.( :"l ••·,u -1 .( -1.O -1.(; 1.r, 
+;_. • •jP 1 2 ~ ... IJ.•lt, ::,.•·:·· !,.f,(1 O. Oú 1.\) ü.h) ~. ,;o (1. 11(1 
+(1 • (i •J 1> () 0 11) L: 4 1,l ,: • uf, C: • Oí, i',.(;U O.úO O.llO 1.O o.('0 (,. 00 
+1
+G • ~ 11 ¡' l, F+~I ~ ~i .. vci ú. 17;.·• 1)'1 (,. 1,~: .. o,i. ,i.e,.i C.l?i::t(,4 ,1.!9f.t04 r,.so~:+04 O.?~F•04 
+(1. (10 (1. (\0 (l. (\0 (1. (\0 O.tH\ 
+(). (;l)
+o.ce o.ce o.ce o.ce 
+c.co c.co c.co c.co (l. (\0 
+1.() o.~o í'). (, l) o.ce
+º·ºº 
+1.!' (1.00 n.oo c.co
+º·ºº 
+O.Cü 1." '.l. 0(1 o.(>\l
+º·ºº 
+0.00 (\.Oú 1.0
+(, ·ºº º·ºº 
+ú.00 0.(1(: C•. (•O (l.(\(\ 
+1·º 
+i).,,0 0. l)(J c.oo
+º·ºº º·ºº 
+• 
+PRJE>LE''A •:11u. 
+SélLllClON üPTil4A
+•• ••• VARIABLE ~ASICA VALOR ••••• 
+....
+*
+• 
+X ( 4) : 100.000 • . 
+
+• 
+X ( 1) : so.ooo 1 
+
+
+X ( 'l l = 2íl0.000 • Cll X( 10 l : l~0.000 • o 
+....
+X ( 1 l l : 50.000 
+¡::
+X ( 1 ~ l : 50.000 n 
+X ( 1 3) = 1co.oco .... 
+0\
+:::,
+..
+¡,;.s flt•·:.s 'iAI ll.BL~S ¡( ( J) = o.o 
+fO) = 
+.,...,.,........•...........................,.•........,.......,........•,....,, 
+•••••••••••••••••••••••••••r••••••••••••••••••••••••••••••••••••••••••••..,.•••••• 
+• f.L ::'.lLf.CIO DE -~EXICO • 
+•
+••• UNIDAD DE :o~PUTO ••••••• 
+• •
+.....,.........................•..................................•............. ·------------------------------------------------------------------------------------------------------------------­.... 
+···---------------··-----------------------------------------------------------------------------------------------· in 
+,,CD 
+.... 
+';J. [;[ Fá.STU::;:1.;,,U; l.: lll \'.J. f'l V~f;l.\f>Lt:S L'f:JsIOlii.LC:S 1 4 rn 'iJ. !,F V.\~l~bLC:S [•F HOL,GIIJ: a Sll'l~(lAS 1 
+•,). ~! [. V,H'Jt,,f;l,:::S ~FTfflC'I~L~-s (Cí'J'T IC 1•Jr, =) 3 "d,,~). l'I: V.\PS. ~RTlfJCl~US (C''lO:O ICJ()ti "AYOP ) IGUAL) fi .... ~-J. ['f VI,~ 1 :i.rLE:S r,¡· W>l,GUFr, OFSTAf1AS ¡; 
+~ 
+'1). Tl!Tl.L OE: \.'A~ l ArLE:S J~ 
+(ll 
+\'t.CTUF. :: 
+-235.0000 -ns.0000 -Ho.0000 •60.r>OO(lú ·A'l• .Ji.1000 -80.000(10 -75.50000 -95.00000 -100.oouo -61.0 0000 -A.385000 -434.00(10 -32.81900 -30.22200 o.oooooüo •99999.00 .99999,0,., -90999.,JO •99999.00 •9'1999.00 -9H99.00 -99999.0C -9<i99'l.OO -')l)Q99.00 -99999.00 -99999.00 
+o_ooooouo º·ººººººº º·ººººººº º·ººººººº º·ººººººº º·ººººººº º·ººººººº º·ººººººº 
+VECTOR B 
+1.000000 48.oooou 45.00000 '2~0.0000 70.00000 24.00000 40.00000 60.OOf.,lO 40.01)1)(10 1.200000 60.000('0 
+º·ººººººº 
+T~FLA 
+-0.24[+03 -0.24F.+03 -0.14E•Ol -ao. -eo. -so. •76. •95. 
+15 1.n o.()t) O.O')-0.!0(+06 15 4B. 1.0 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+·O.!~E+06 1 7 r,. r,o º·ºº 1.J º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº (\. (\Q º·ºº '.\.00
+-o. 10[+06 1 8 45. º·ºº C,. 00 º·ºº º·ºº º·ºº º·ºº 
+o.t'ú 1.:i
+º·ºº º·ºº º·ºº 
+•0.!0F+Of, 1 9 0.24..103 1.:i 1.O 1.0 0.00
+º·ºº (). ºº º·ºº
+º·ºº 
+·O.liiE+Ob 2:, 70. o. o•) LO o.ca 
+·0.I O<:• Ot', 21 24. º·ºº O. C(1 º·ºº o.o::. 'l.00 º·ºº º·ºº º·ºº 
+O. (;O
+-e. 1,,e:, o,; -10. º·ºº º·ºº º·ºº º·ºº 
+72 Ú • i1() o.e.o 1.O 1.O
+º·ºº º·ºº º·ºº º·ºº
+•Q.lúF:Ht:> 2~ t.O. o.r,o O. (·U J.00
+º·ºº º·ºº
+~o. r1. nr, o.ro º·ºº º·ºº
+-e.1:¡,:+0;, i4 (•(':O Ü • {IÚ º·"º 0.(',(i {). ()() 
+-0.. l U''.• l;f-. } "> u.~. ,) o.:in (). ,,,) ').(h) .1. ve (\. ,){) ••.). 1::,~ • G ('\ ;i f-, ~v. V. l' ~' O• l)r, 0.0(; ).00 •l. Oll 0 i ÍJU :, • O,) ll. f¡ (, -(.f,?~7r+% -,.tnF+Ot, -o. 1·~~ t ()t; ·ú.lf.f:+·)h •J.2)¿+:)t:, -J. I(,[tút> -0.)(.~+0" -:,.10En,n -li. 1GF +0t. 
+
+
+
+
+1.2 '.'I. J J º·ºº º·,,•) º·ºº 
+-0.1 r-~:•11J -~.t -<,.~]~.t'.'1 -n. -l•J. o.·c1u -O.!úf+Uo 
+I .'' r,.•,-.,._1 Ü • .)ij (1 • (.íl O• '10 c.10 1.O 0.(1(\ ().,.11.J iJ. ';(· o.\..·'J ,•• ()1'! J. :ic, o.·~·e 1.() ¡,.:j J C. t·V e • ,)1: ) • :) ¡) (.•. 1);) 
+,). i)ü 
+r:.• ,J·: r,. 00 G. OC' 'l.or, ;¡. 1'l o.~n O.úO (,.(..'¡ n.e•) e. or, ,l.')\ ) • ,; V :J.\)(¡ 0. er, 
+) -, e.,~. J '.1. i: v (.. ()\) 0. J-~ ·.J • ¡'I \l l." c.• JO (•.•)0 ~I e f1,) ) .·)~ ('l.('\¡, ,) •co
+r,.r,,_, ',.n¡. .., .~..·. r.:.--(: ,:..l'~ (\. Qf, ).un 0.n1) o.,,r, OJ) 1.·• 0.)~· e.r··' ¡,.1)1• ) • '.l ll Ú .ú1) 
+0.0,) ,, .(. ,·, J • r., O. "0 íl.flll ). 00 0. ¡1/) r:. •._,,) ·: .f'1· l.:} 1, )) ú .u,:, º·ºº
+,1 .. l;1.' 1 • f, ,: ,; • 00 
+O. ·~•O ·,..(,( (:. ('•J O. ()0 1.o 1.(1 ~l • CI \J -O.l•·o+06 •t•.Jn:+Oh •0.ICE1Jf ·D.lOl+()~ -O. IOH0b .¡¡. l 'lt:+06 o.e.o º·ºº 
+º·ºº 
+-(1.!C'~+Ot> •O.IOl':i06 -o.1í1t;+Qt, -o. 101::+06 -0.10f+C6 -0.lOE+Ob -ú.lOf.+Oó -0.lúE:+Ob 
+o.ú(> 0.00 o.oo o.na O.úO 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+¡,.ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+I.G O .(10 o.oo
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+C. 0•1 t.e 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+o.ov 1.0
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº O.O) º·ººr.oo 1.o º·ºº o.no º·ºº º·ºº
+º·ºº º·ºº 
+l.O
+º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ººº·ºº º·ºº º·ºº º·ºº º·ºº 1,0 1. l) º·ºº
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 1.O
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+O. OO.
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+·--------------~------------~---------------------------------·--------------·----------------------------------------­
+-0.10€•1l~ -ú.101:,+0f, o.oo
+º·ºº º·ºº
+o.')(, o.e,o º·ºº º·ºº o.ov º·º" o.ca
+º·"º º·ºº º·ºº º·ºº 
+o.ca O.úO e.oc o.oc
+º·ºº º·ºº º·ºº º·ºº 
+o.no c,.oo
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+o.oo o.oo
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+o.(IO -1.:>
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+0.-liO o.oo
+º·ºº º·ºº º·ºº -1 ·º º·ºº º·ºº 
+~.oo o.co O. úO -1.0 o.oo
+º·ºº º·ºº º·ºº
+O.O,) 'l.(•0 -1.0 o.oo 
+o.'),) º·(\0 O.llO (; ·ºº º·ºº (). 00 º·ºº 
+c.oo -1.0
+º·ºº º·ºº 
+o.o:> o.co !1 • (lO O .O(l o .<io º·ºº
+o.co -1.0 
+l.o o.~o o.(¡() o.c,r. º·ºº ,) • 00 o.(¡I) (J. 00 l.iJ o.<io º·ºº ('.(10 o.oo
+ü.or:,
+º·ºº 
+11.(,f, º·ºº 0.lúi•')b o.1c,f+06 O.l(,f.+06o.(,;/) O. 1l)[+Of. º·ºº sl. l OE+üb O. 1OF+l,f, 
+-------------------------------------------------------------------------------~-------------------------------------·­
+-----------------------------------------------------------------------·----------------------------------------------­
+0. e.1 o.(d~ -1.} 11 ••,(; ú .~¡; -1. ·' 
+0. :;,) ·,,,!. (,•) -1. l 
+l,.t'tl 1~.
+º·º" 
+0 • P•) (\ .e," ". 2.¡ t•:, 3 
+; • i'l•) u.uv -1. iJ 
+o.ne o.·oo -1 • G 
+11.:.·H· O. fiC -1.r. 
+,; .:, ._-, ~: • \ l 1"', -1.J 
+o.e:, n.r.r -1. (1 -,.u ,, .vr _,.f, 
+0.00 -1 .,:, -t.n 
+O. 1('[+ >)~ () • 1 Of"+',"' 
+---------------·------------------------------------------------------------------------------------------------------­
+lAFU 12 
+------------------------·--------------------·------------------------------------------------------------------------­
+-0.24E+03 -0.24f.+03 -0.14E+Ol -eo. -eo. -All. -76. -9S. -0.10E+O) 9 1.0 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-0.24~+0] l 48. 1.0 O. C•O 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-o.HE:+'l3 2 
+º·ºº 45. º·ºº o.oc, '·º º·ºº 0·1 º·ºº .u º·ºº º·ºº º·ºº º·ºº 
+-ao. 4 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+s 01• 00 1.0 º·ºº 
+-ilO. O.:!OE+OJ o.oo l.o
+º·ºº º·ºº º·ºº º·ºº 
+-O.Hl".+OJ J 70. O. C•O 1.0 o.oo o.no 
+o.('(l º·ºº o o o.,,e ú.O<' º·ºº O. C,0 º·ºº º·ºº 
+-o .1 O,'.•% 21 17. 'l. 
+O. l•0 º·ºº \l. (1 (: º·ºº º·ºº 
+-?t,.. 7 .¡(\. n.on (l, 00 fi.llC l.o 1.O -~1. 1~ t l'. O.O<', º·ºº a. JJ o. ll(J (;•el:
+º·ºº º·ºº º·ºº º·ºº 
+-~.4 11 40. O. 1iO u.(:O O. <;O o.cu
+º·ºº n. "º º·ºº
+º·ºº ,,• r0
+-·.) ••\ J ::-• ~ 1 \? l.? o. l··~· ÍJ • (1,j ,,.('(. ;.,.c•r. ri.t"º fl. (l(' :, .')(: -1: r, • ·.·, • .n ("· •.• l°'"ll .•.1.: i;.¡·,1 ;', • '\ ~ 1 ~, •(.' 1:, ., .!·,(. 
+------------------------------------------------------------·-·-------------------------------------·-----------------­
+rrn;T. DE LA' nFt,1, 12 
+-0.tOF:+!'3 -02. -&.4 -0.43E•03 -33. -30. O.•)O -0.101::+0ó 
+1. O o.ov 1).00 1.O 
+o.on º·ºº º·ºº 1.0 
+º·ºº 1). 00 º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+O.()O 
+(¡. º·ºº 00 º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+LOO o.c-o O.DO
+º·ºº º·ºº º·ºº º·ºº
+o.()¡) O. (,O O.OC) o.{',í) o.no
+º·ºº º·ºº 
+o.ov 0.(\{l O. 'JO v.oo o.,'.;:) º·ºº 
+o.00 
+l,.vi) º·ºº º·ºº
+O.tH1 t1 .tJ() •!.O
+º·ºº º·ºº ª·ºº º·ºº
+n. (,O ,1. 00 (\.0(\ O. O•J
+,).ºº º·ºº
+º·ºº 
+ú.00 !.O ú.:;n o.:>o o. J,; º·ººQ• 1)1) o.oc,o. (¡0 V.\:'I 1• ,. G. 0') º·ºº o.ÍJt)
+J.O'J o.,JO u. ,~I) \). l,::, l .o íl.(,O D. on u.o.:, º·ºº
+º·Ú\l 
+º·ºº
+".i •(J1i r1. t,C n.00 r, •r,') l .v 1. -~ o.oc o.~o 
+n. l,0 ~\ .\ •,·, ;) .,,:, 1i. ,·,o ~.)(J O. 1út::t Oli O.lúE+Oc.
+'·" 
+------------------------------------------------------------·-·-------------------------------------·-----------------­
+•(,. ' ._¡;:.º" .,.• 1,·.¡,:. (t, -u. 1,,t:• •') i;, -.). h1t.+r,~ •(.• 1\°1 t •\lo ... J• l=.1t.•\;b •O.!Of.•uh -u.lOf+Jt,. 
+o.t,,·, f. • {ql s.l) ~ ,'.. (1C (, . ,·. f ~. :) 11 0.l) ~) (,.(lll 
+(,. (1 \J l).(,() o.oc
+º·(!(¡ P.(lú c. n,, (l.(,0 J.)') 
+1. 0 ¡'-• ~· íi .,.:i:, o.(l·j t). (:C, J.),) o•,,~, e,. e, o 
+v,C, ¡,(, 1). r,·. '.'. \.•(: e·. r. 0 D.Jr. í<. 00 ü.0(• f). ~/) ·l.n 1• ,. r,. OC' o.or, J. tiC• 
+º·ºº º·ºº 
+r,. 'J0 ,•• lll'• o.cu 1. L o. ne, :;) • :_1/') (>. 00 o.oc ,) .(' ..
+. í, 9 ( (1 1,.": 9 1/ ~I n.G\1 1.,. J.")(, {... \.)•) O. C, ú o•.) ~-' ( •,, e, O,()[, r,.1111 ci. c.,. 1.,-. o. ~ll 
+o.r.,) r,."º (). o,, º·ºº
+() .ü() C. (·G '-'. Of1 l.o ll. O<.' 
+O. O•: ;_', • 111} l"\.f'\."1 :'.,)J v. rr, ) .1() ,,• (·Cl 1. u 
+e.1, r, ,).\).) r, .·no (· . (,(l J.(l() 1). ('r. O. OC1 ü. Jl· ~ . 1)0 (1. ov 
+º·ºº\l .o,, :·, .n·> (). (,O ll.ti.) ,, ('(t
+,,
+Ct. 1Of.+í·~ ~ ... 1n~· • r,f) C'. 1n:•(·t, Cl.ll'HOh .. 1..'t' o. 10~:ttH, \.!,.t\irt\1 0 <l. 1(\f.+Uo 
+(Cll<T. n.: LA n¡.u. 12 
+-O.lllf•0h •;J.1Of.+ o,; ú.00 l.co o.00 O. 0(­
+º·ºº º·ºº 
+o.úú O.Ov o.uú o.o\\ S.co 0.00
+º·ºº o·ºº
+O,0() _ Q.QO o,oo
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+o.llú
+º·"º º·ºº -t.o º·ºº º·ºº º·ºº º·ºº º·ºº 
+o.oo
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+•I.o o.00
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-1.0
+º·ºº º·ºº º·ºº º·ºº 0,00 O.O() º·ºº º·ºº º·ºº 
+-1.O
+º·ºº º·ºº º·ºº º·ºº º·ºº 
+(). 00 O. Oú O. 0() -1.O
+º·ºº º·ºº º·ºº ,, • ()0 º·ºº 
+O. O!) t: . r, r O. ,'O 1'.0C O.:>~ -1. O
+º·"º 
+l.;) C:. 0(' e.,·~ ú.00 ().(lú '.l. ~D o.:li' o. ü(l 
+o.e'.· l.o G.. 00 <). 00 :; • (,(l ,),:11 •,). li (l (l. ú~ 0.10,,r~ u.1N:+oh t,,·,. 0. 14r,+ ,)l C•. l l•E+06 j b. u. 11. 4 
+rt•liT. DE LA TAf\LA 12 
+---·---------------------------------------------------------------------------------------------~----------~--------­º·ºº º·ºº 
+O.CIO
+º·ºº 
+O. O•) 
+º·ºº 
+o.oú C0 CCl o.uu \•.en 
+(', • l~ o
+"·''º 
+O• {, r, ('.,·u 
+o.(/() e.(.e, 
+º·ºº º·ºº
+r, .t 'J ().f,f¡ l).G'.l (;. ,:o -1 .(• Q. co o.~-,') -,• n e,.; lf.~] H, • 
+..........,..........,.......................................................... 
+• 
+[l, :aLFGIO DE: "1E:XICO •
+• • 
+• 111, l ['A[l DE: :n~PUTJ • 
+• 
+.,..............•..,..........•.....................................,.~......•.. 
+----------------------------------.-------------------------------------,-----------------------------------------------w 
+. . 
+·: l. í' ~-i: ~ S r!· I:, : 1~ 1 ·; ~-~-lt ·.1. f". [ ·.;r..~t~~·!.c:~ rr:1s1iv::.t.~s I'.> .... ¡~f. \";,:--I!..:-~.c::s l'·F ¡~qLGU~:. 5l;o.·;.r:.f 1 
+·.'. rf •; ~ ,.. P ,, L ~.; t, r11f, :-1.\1,, <; eeo·,L1e1o·1 => • .) . r, ·;~-.:c.. ~.ri,·1::-1:.1,,:~ c:111.'.l1c1,11, ~ ... YnF J ¡.;u~L,1 ~ 
+n: ,'Aí,l\6Lt:S l'f: HC\l,GtlH, H:ST~r~:, a ' rrT•L ~i r~kll~LfS .15
+·-·· --------------------------------------------------------------------------------------------·-------------------------­
+n:cro1,. 
+• 23 5 .. o,: ;1 l) -;3~.('(,a_,,, -140. ,1'.>00 -~ll. O(,(l(,,l •éí'.Ov,lOO -R0.00000 -7~.50000 •9S.C!JOOC -100.nz~ ·,n -~1.90,,r., • ti • 3~ ~.-,o0 -4J~. r,,,oc, -32.i,l'H,O -10.22200 -100.oouo i:,, enr,ooc>n .Q-lqO·-~,. ,'(\ -9CIJQC1.t'2 -<J;Q,l<l.00 .qy<;c<l.()U -'l9999. 00 -<,99<¡,¡.00 •\19999.00 -9aq9q_oc 
+•',l99'l9.··J -Q9'l'l9. t>v .q9aaQ.OQ O. C,(>l•OOOO o.oooooon 0.0000000 o.oOOClüi".•v e.000on0li O.OC>ú0(l00 º·ººººººº º·ººººººº 
+VECTOR 8 
+-, ."00•);.)~JJ 4~.0fl(1f,(l o. cooro,:r 45.00000 70.00001) 24.C>OOOO 40.00(1(,0 t<. t'.)(\0fi(' ~,. t'.)(\0fi(' 1.;0(\0fi(' b(I • t'.)(\0fi(\ 
+·-----------~-----------------------------------·--------------------------------------------~------·~----------------­
+------------------~-----------------------------------------------------------·---------------------------------------­
+-~.24E•03 -0.24E•03 -0.14t:•03 -80. -so. -so. -7b. -95. 16 7.0
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-0.1üEt06 1 7 4R. 1.o 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+-O. 1o•:• Ot> lil 0.00 1. O ú .ilO o. c,o 0,00 O.úü n.vo 
+-o.l·JF:tOo 19 º·ºº v.oo 0.00 º·ºº 
+45. c,.oo 1.ú 
+º·ºº º·ºº º·ºº º·ºº 
+-o).! Of:+06 21 0.24F.+03 ¡).0(1 o.n~ o.(,(, 1. O 1.c 1.u c..oo 
+;1 º·ºº 
+-0.lOE.,ln 70. ;) ..)(., (1. l:O l.o o. ,J:., O.úO o.uo O,LO e,• r,O -v.tr,HOb 21 ~4. 0.vo O. 0(, o.Oú 0.(10
+º·ºº º·ºº º·ºº º·ºº
+-o.t1)t"•16 n 40. o.e.o o. <11) o.o~ r,. oo 1.O 1.o
+º·ºº º·ºº
+-0.IOE•Ot> 2~ t,(,. :, •~n O. (•O {;. (10 v.n o, r.o o.(•(¡ 
+•U. l Jr.+1/c o. 0(1 O. (,u o. r,o O.f,G
+,:. ~r. a.no o.no o.on 0.00 º·ºº º·ºº 
+l_¡ r,.
+-•.). ! ."\"•• ~~ 1 •; l.:.;; '.). ¡, (') o.,,('. !'l. l,::) l).liC' fj. (!(J o.¡,n ,, .co -1,). 1';'-_ .. ,~ .... '7 t (" • v. ~ ,·¡ ·1.,.,,l ú .f.•ú ,) • J0 1) • ú(• u.cu ,).. 00 r, • (, r. -<,. IH'+vt> ._,
+-, • t-2 t. 7f t 1.J i:= -~.li';ft;,f, -fi. t r,1,-+r,c; -). ¡e,;.?,, •O. 1í,Et \In -0.11.·t."+í)o ---~ 1<)1:.H1i; -r.. 1úf.+01'1 
+------------------------·---------------------------------------------------------------------------------------------­
+-r. t ·_,,.... ,~.3 -"·.¡ -•,.4ltti",j -n. -j •• 1 • IJ ,).ll\) ~;. uú \,. uC e,. ,1u C-. )0
+\ .,.,1 ,1. 1,(, j.,_-\. (.. )(, ••.G(, v O ) 1 
+,":.l.·.. ,, • 1,.", (• 
+;:,.\,0 0.no l'.('! l) o.)() 1). l.:) o. l'\' (, e 1) ~ i).ll(, ll,. \)(, J.:,.; ¡"· • r. ·~, ., •,,G (). ·) ~. :"1. (1 ,1 ,,.0,; J.(,1 [ • !' ., :\,1,C. ,·•• e-(1 ; • ~:.1 
+l.u \~. vo 0.·:"0 \1,. ¡_)(J 0.00 0.(· J 
+11. ~o :: .,.n ,·,.,J,:' r; •Oü r. (> C· ) • ::in 0.r-0 1.r, .:, • l·~ 0.\0IJ ,·: . Ol· ~. '.)0 e~ .:·, ,1 0.(',(: 1. J n. ·)<1 i"1. r 0 ,1 .l!Ó ;).::,·, •j. :·,) '.(¡ ,-..1''' J·• ...i 
+,·,. :··-) e. LÜ :) • ,.. j .·,.'.i •l 1.(1 1. ~ -o. 1,)~·,,,.. •t,e1VE••'6 -0.tJ~+Oti -G.lO~tOf, -O. 10t:H'6 -J. I Ot::+Ot, 
+-fl, 1•1!:•<·3 
+O. v,l 0.•:111 0.v•.1 :(,. 00 
+O. Cn) (,.1)\1 
+1,ü 0,CO (1.00 
+ú.0(>
+(J. C(: 
+(\.00-0.!0[+(Jó 
+(j.(; (• 
+1.O 
+o,(I(; 
+o.oc O.Oú 
+o.no C'.OC 
+C,. (, (l 
+º·ºº
+e.,,e, 
+O. 00 
+fl.<, (. fl.ce 0.()(\ 
+--------------------------------------------·------------.--------------------.--------------------------------------­
+-0.lOE•fi~ -o.1of+<•n -,).1 Ol+Ct> -o. !('Etl)6 -0,IOH·I.'& -0.IOt.tOb -ü.!Ol+Ot, -G.IOt•úb o.oc ~.(ji) o.oo
+º·ºº º·ºº º·ºº º·ºº º·iº
+l.o 0.00 o.oo o. o
+º·ºº º·ºº º·ºº º·ºº 
+1,0
+() ·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+O.Oil 1. () o.(',(¡
+º·ºº º·ºº ª·ºº º·ºº º·ºº 
+(),00 1.0
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+('),00 t.ll o. 00
+º·ºº o·ºº º·ºº º·ºº º·ºº 
+ll, <)O 1,O i),00
+º·ºº º·ºº º·ºº º·ºº º·ºº
+1).(l('t O.Cú 1,0 O. 00
+, 
+·ºº º·ºº º·ºº º·ºº 1.()
+º·ºº
+º·ºº (),00 º·ºº º·ºº º·ºº º·ºº º·ºº 
+(),00 (),00 (),00 (),00 (),00 (),00 
+º·ºº 
+(),00
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº º·ºº 
+CONT. 0l LA fA&LA 
+-0.11\[+l\h -o.1,,,·+r,,; •O.!CE:+Ot (1.00 11.(lf) v.oo o.uo O. O(¡ 1). 1)0 º·ºº :J.00 O.•hl º·ºº
+(, ·ºº º·ºº º·ºº 
+ú.CO f•. ºº n. ,,o ().()(\ 1). º" J. :,o o.ÍJ') (j. (1(, º·ºº
+ú.l\U O.ú~ 0.C·O o.cú ;) • '.10 Ú • 1)() o.iJ(' 
+O. 0:, IJ • lli.) o. •)O v.oo o.º" G.00 (\. ,)1) (, • t;O o.uo • I .n º·ºº J.oo O. r,ü o.úo
+º·ºº 
+f.;.,,,.,.... º·ºº
+í.l•C• <l.0(.\ (1. CIO -1.,) J.J) o.(«j il.00 ,J • r, :°' l.: .V11 l•. t:) r.,·,ú (). ;,.., -1. ~ '). ,)í, 0. ()() ",. \-(¡ J. v·, ·}.·:1(1 l.• 0 •., .) .::, ,) -1.(, o.no { j • \ 1 ~, :-•.t•C: V•:; J l,.(.:i'¡ e. ;.:,j ~. ',) ~·¡ • ~ l l 1 • 1.u 
+-~ ,• ' 
+l.,, ,, • úí• J.\· j C,. ·}u iJ. (1,\ J.:, 1 •J. i.)(J lJ. "':,', 1.1) ,~. e,:. 0 • f,1·1 j.Ú:) ) •., ,l º·ºº 
+o. r¡ e 
+C,. :':) 1 •., ,: • 1')(', u.;.:, \). J ü V.(-') e,. e,.,i. -, :-i ,.,, • r, r o.:_~:} ,-, • 1 ·~ f • 0 f> 0.1,lf+Có :>. 1o:,;• Jo O. 1,)l':+(,i) Ú • 1l1f +\lt, 
+CONT. 0l LA fA&LA 
+!.,·,¡ l, • 11 L1 
+o. ~ ...1 •1.lrlJ ., • ll ~) • I.v !',.,:\: ·. • l•r. .·..·:: -l.:\ ú. 1·: .~ ••\·, (l • \! :_l -1.
+·~ 
+~ 
+-~ • 11 r 1·1 • ,) ,) ~s. 
+,·, . •.
+o. ,tr : • r 1_, ! .\ ,_ •'.).;F+~l 
+\ ·'i_"i \!•\ \' -1.0 .•1)1 ,:·. :, ... -1..-,
+1 
+0 '· ' ,~,( :, • ·Jú -1.\) 
+V.11ll ,,.l ...) -1.,'-1.r, f, .. f,tl i_). ~... ü -1 .e º·'-1:i •IJ ._,. o::: -1.li (\. liC\ .......,l·· -1 • ~, -1.ll 
+O. l(•E+G~ ,·, • 1 ,',[ • I• f, 11. l('i:+'lb 
+-------·----------------------------------------------------------·---------------------------------------------------­
+-0.1~f.+(;] .,•• 24••·'3 •C·.24t +Jl 
+-5(•. 
+-~o. 
+--:.• 14~• V4 
+-(·.\ .~.t"'. ;'\ ~ 
+-7t:-. 
+-."', • ..; i ~-. ,) l 
+-'~·. 
+·.• \ .-,,·.,' l 
+l. 
+···l' 
+."I., ~,i1 ,·.• ('f. 
+.i .oc 
+,"l.,1","\ 
+1 
+2 4 
+5 
+¡', 
+1 
+¡;, 
+\\ 12 
+T,\CJ..\ 13 
+-J.24f.•Ql -0.24E+03 ·ú.14E+03 -~o. -i.o. •tO. •7b. •'il!,. 
+7.C O• n'.l o.,.r. (¡. Í/•) :, • OJ u.oo 
+4;. ,, •00 º·ºº º·ºº º·ºº
+l.·:, ,1.(·~ •). 00 J.0(\ o.oc o.uo º·ººc.r,o ;.).Cl1l 1.o o.•!l) u.~\."¡ O.(\0 O.N; o.{.C, O. (10 .¡ '5. -_,1. ~...::: (\.(10 (\.(·:> \ • •"j º·;¡r, <'. 'l1' V• <,,.J f•.or, ~.,,)f•fl ,) • ;i, r.• .-.,. :". ~ .~ :., 1.(· 1• ~; O. uC.. (\.f,(1 '7(;. ~ • l• f..::..: l.e,~ <, •(· v iJ •.\..,\.1 (l(.
+.... 
+1) • ~.,,
+17. _-, • ,·' l' .) • •JJ í: • lH) ()•'!V :) • (}1) r.c,ri ,-,.' ,, (1 .0··. 1·,.,,( 11. ,·.v o.(!'Ü \.,C, 1.(. "···\" \".•·', (.•;.1: :, • .:· L• 1) • .1.1!'1 l'.Hl v.11u 0.()Cú •._· :: ..\.\li"l (.. ,· (, ~. J ,) IV.ún (1. r,; 0. (,/) 1). ¡,~ 1.' ,,:. :, (,. 'i ,',.".; j .,. l);", e.t, "; 0. f¡Í• ,·1.(,(, t,ti. ;J • ~·' 1·:.·i;j ,•• 0c ~) • fIl• V• (1\1 l·.(;(. -,~.C.j,•;l:~ .~~~ "·(·(· , . ... J 11. o,·, ú .\11,; J.0,1 ?ú. 
+(•·'T.;•;· l..', T,\<:f..\ 13 
+....,. . ..... .; . ,.·.~ 3t.·, ! -3). • l,'. • •ti ., l\.,~:•03 (,.Ou 11:\ ,. ..< ( .• ,¡ l' ~ ~ •r :, i. j () (I.H 1.c, \· • t, :1 í':. r.,· ; • .\t, ,·,., \IÍf (). 1,)0
+'"·• ,·r 
+• ~'l'I ··1.:.:,·. l•. :"!·:· j. >,, :).:1'.1 ú.( () ·
+.l'(: ('': . :11"\ ) .~') ....,u O. (-0
+· 
+;, .,,,' 
+, ••1(\ ·).·-,'i o.i•(\ 
+...,.. ·: t', .).·,lt') :i. :al• o.(·Ú ., l ú :) .,~. p. (':t, ~. )ti l.ú -1.O .1.,\•tl ,·•• ú -~ i:. J(J ('. ,,¡ '). :') \) ().,1c o.(\(l 
+\.'' ;"1 • vV •i.(·\: 0.,(\\1 :, .(,') ·).t·fl 1,,)., (10 =.l. l.,"1 1.ú ,'\.(\\) (.,01) :>.JO o.(.() o.oo ,J.1,,1(• 1.u r..Ol• ).;),' ,, •rio o.ou 
+------------------------------------------------------------------------------------·--------------------------­
+-O. l•)E+O& -(\.10l+06 -0.10E+06 -0.1Qf.t06 -O.t0E+06 -O.IOE+ú6 •O. l OE:-tt>6 -0.IC'E+Ob 
+c, ,<JO o.oo
+º·ºº º·ºº º·ºº º·ºº º·ºº
+l.(\ (),úO 1) . (\ C, I). ()0 O. Ot) º·ºº
+O. 00 o.~o J.1,0 1.,, o.(,(1 O. ()0 ).~o ú.1)() 
+º·ºº 
+º·ºº
+n. ~t, (,.(\Q ti. 01) ) ._:,, º·ºº 
+1.0 v.l,o O. ()0 0.00 
+1) . (n1 ;) .1h) -1. j 1.() ~¡. Oú J .lJJ O. llO 
+(, .,.,(\ l• º·ºº
+o.c,0 l ·)J ,) •vu J • .)) (). (¡ () u.oc
+1·º 
+(,.,~ :) r •í ,) " ~,-,) • ._ir, l.'.l 'O. üO {l.00
+\. ·-\J 
+o.::.l/ r.l·,j ·,'.J • .:.,n º·ºº 1• r, ú,.Gü
+c.. .\, o.,:,v :'I. 0,) ( • 1, :• (, . r-11 0. J :· 1) 6 1_,q 1) • t1(1 ) .:.) ,l.;,(', 1.O e.•.: .., \,) .(·,~ 1~. •·. ~ ,) .,~, ,) ,~. í!ú J . ;. ;1 .J. ,) ,) v . C(­,, • 1~· :! '.· .cr. ·•.l.,\, f, . r. ::· ) ..) .-. .J. ,.(, ,•• v\·, ~.• ·1:·, !) • :_. ¡·, j • •-.u -... • ~·v .; .:_. .""; \) • -~ .j l: . úú 
+f.l ....... ~t t' ,l . 1v:..: •\i t ~•• ,11r,.,;~ i1 • l \·.~ +1 • f-. .) • 1.·,:.• Jb .:, • 1,,~:• r.b (,. 1f\f +l.(" 
+--·---------------------------------------------------~-------------------------------------------------------­
+-\" .. , , • + ,-r •. 
+,.. ) .~· ·, ,·:.el~ 
+1.•:· ( , r .11,-J • .1) ') . ·'t) ('.lií.j 
+,: • l,l !I • 1) j ) ·. ,j . ,'q\ O, (.'(, 
+·,.,_.,"-. 
+,.,
+,, 0;. ,i 1.', ,) • lJl} .-.,.i. ....(< ,,.·':1 /). r-: O. vil () • (: ÍI
+'l.""' 
+• • \ 1,.l (;.(J\', ,: ..;;. c.c0
+-1 • .
+•.. ,, ,,
+;..,'.:, ·........ ...,•.:\1 -1." } ,! (¡ • :. ¡,I 0. (-\: 
+,:.,:) !' • ' ,, ,, .,-,-.) n.r.r. ;, • (,O \.l. ('ll
+-•'. , ,
+) .,~•"-......j ·) ·'.(1\) :;. ) , ·l.(: .;:, •r:-, l · . '-·.', ,.:..:. ,~ .·:, .~ ,·, · " j ~.~·..):.., ,·, . ;1() -1.0 1•. "i. \.. ,) -~ • ~·, l• 1). ,·. '· :¡ . ~~ n 11 . r,~. 
+,,..-., 
+1.\1 ,). \•" () , l l ,) '·'·>. )'j ) ..,~ \: (•• C!'I 
+0. ,:0 ( ." (· 1• ., n. ·1,., n.o, J.) ~ ...: • t)Q f·. v(1 !'1• 1l F: +.," t··. 1.-,r+ 'lt--} • 1:'t:+ ~ t' ~(.. "·t-H:+CJ 1.,, .,2. 
+----------------------------------------------------------~----------------------------------------------~---­
+l'.~ -.j ',.1,.r:-... J . -' '-' (. ,\H ,, .(l(I o.,,o Ú,\•() o.,~I)
+''·º'' 
+•)JO O.(10 
+ll.00 t), º·"º()U
+º·ºº o.l){l
+o.l)() (I.QO 
+l'.t"ll) !).1'0 r, •.;;,) Q• ¡;(1 O. :) 0 
+º·ºº 
+,,., 
+:,
+·: ..t'l' 
+-1.,· ! • l'CI .) • ¡' ·' 
+.-,.1,) -\ .\-e 
+-l :-+ ... l 
+...............,...........,.........•...•....•.•............................... 
+• S O L U C l O N OPll~lA •
+•• •• ..... .....
+• Vl\~lAf\LE f.f.SIC'A l'AVJR •• ----------------••
+Xl 9 ). = ..7.uOO Cll
+• o
+X( l l ~"".úOI.J ....
+= 
+,:¡ 21 0.rh··v e
+= 
+X( ~) ,~.\n•v n
+= ....
+,¡ '>l 1'15.,il•f' 
+0\ 
+l.( 3 l :: "; (1 • (:~"'.1; .. 
+::s 
+• fl~ l 17.O(\i ~( 1) ~·) . Ju f·
+= 
+.:e 1,.,1 ~ ') . í,\)l, 
+HII ) = d ,) • :, ,.., .j 
+'( )¡) = 1.}v•' X1 Pl t. ~ • r;JI•
+= l.:, ,< .,.-.,~s •:;." 1~«1.-;:; X\Jl 
+"·"· 
+~ C X l = -••.5}:'i,)St[+u~ 
+••••, ..............................................................................,4 
+• 
+' 
+f ..................................................................
+•
+E L C O L E G l O o E. ~ E X l C O 
+;~~.sr1-1-::-1w'.',! :~ ; , "· 1 ,. ·<.t.:: r ·, ;· 1s¡,r~. 1-l.•:S v-\~: 1.\-.-~~-s 1·i·. H~1t.\~u¡.::.. .~e:1,-.~Lc:s id i'!F r::rars 
+\'~~s . :.~TTF1 '.'.1~1.Fs 1::n1,r,1c1n:; :-1,dlw J '¡ 1. f·~ ·~ :,'r-. l ·~~Lt..:S :· ~-ur11.1:t;i>t. HL:=;T~[it.~ ·.. ). n.:r.:..1. -;r .~¡, ¡ :,FL~.:; 
+r:.TC·S f1Fi.. 
+:=;1,·.-~r ~~ 
+1-:0ro1;1CIU!, => 
+7 o 
+e 
+1:;lit,l,l 1 
+1 1 7 
+•JS.SuúllO 
+•tl• Q00,1.) .... 1~50(-0 •434,00uO 0 0 0HH);)OO -B~.0000 -140.00úú 
+
+•100.üll,.lt) 
+• ., .. q99.o:> •"19<lO<J . l)(l •991199.00 •9Q999.1)1) -99999.00 -'!9999.tlO 0.0000001) 
+
+
+Vf.CTOR ti 
+b 7.()í,(:1¡() 1 f>4. ,,CtO<• 
+w
+w 
+N
+N 
+t­
+1-' 
+"ti 
+ti 
+o
+>i:: o.. 
+i::
+8 
+n 
+~ rr
+::, 
+1-'•
+rt 
+O\
+o 
+::, 
+fü' 
+1-' 
+w 
+N 
+11)
+::, 
+..... 
+11> 
+n 
+11> 
+1-' 
+1-'• 
+o.. 
+11> 
+o.. 
+-f'(l,000l'ú
+.90099.00 
+-------------------------------·--------------------------------------------------------------------------------------­
+-----------------------------------------------------------------------------------------------------------------~----­
+•H,. •t,2. •R.4 •0.41E+OJ O,úu -0.24UC>J -ü.14t:.+ú3 •kO. -O• 1r,r·+,jr,. H O. 1l• E+ J~ l.(• 1.1) 1.(, 1.O 1.0 t.e 
+l ·º 1·º 
+-c.1.1~.r1h ll j,7. 1. ~ (¡. ;lJ (·.(,1) ".!)ü o. (llJ ú.tl(• O.OC> (, .oú -fJ. ¡ J ¡;_· t (, t; . ' '-n. 1·
+1i:: +iJ 3 V• ·,"j\1 l • ~J O.,H. ú.Jü Ú • ()1_1 ú.~) u r, •oo v.<ie, 
+• 0 • 1n~ •(,t; t, i. J _., .. ,..,~ ·, 1• ,, ,·j • t°, ~I r,. 0,, ü • r,v ,·, .ul1 l. • (',( -1.1. \ ,,f+·; r. ~ ... ,). 1,·: ::~ .:' '-, 1_1t, l .i· ;, .(:\) (..'.)lj :, • 00 .011
+' 
+-u.1v~+)r r,. 1•.,:• ' ¡ l.'.:.,...¡ •). (.. '., ,; • l·(: \J. vv 1.() u.('\\·, '.·•• úfi ( •r, r. -n. 1 ,. +1)n n.;·¡r+)J J • ··111 ."j. e:-'-' (: .1J1,."r 1.(. :, l'.0ll (\. 1f1 .j. j ~ .., • ¡() 
+• I: • 1f)-¡ /¡. ..,J .¡ -,¡. 2·)r.1. -1~.}t,v+nt: -(·• ;¿,:~ +Of"l -). l.V~:+(1c--r1. ;¿,·1E+ i)r. -i''. 1¿¡. +C1t -:, • l 't:.+ t'1t, •(,. t,f+0f, 
+• 1 • • 1,: ,. .+ 1. -f' • } •) J-. i \·. t, • ·:. • 1•J t.+ L, t· -_..• 1·~· r +.-,,.: -~j. 1.) ~-t.} t1 -1). 1,it-.+ ~,o -e.1,n +~·.r. 
+1•.1 1• .) , • ~-1 :.; ,·,. J,"l: J•.l ) ").,:(' ,).t)\',.:, ,·.• r.. ; .:,;•.J•, .:.i,•:; o.t,n (; • l~.:) C, • 1J /) ~· • :., C, t.•:. 0. (\1_1 ,;:'. :, ·, '-•. ·-·'-' :J. eo (, • 1j ,) (:., \ ¡, t) • \"'; ,'¡ '' • :1 .~. 1 .:. ),Y, •·.('l' ').•lí. 
+'~ • :'. \; , •• 1.·. '. -: · • ."j ,) ,'¡ • ,~ ,, ·.i. 1)1.' 1.:: ...... ::') ··1.\1(.. 
+,:, ••,.) : .. '. (; ', • .•) (1 ,·,.G1; 11. (";._) 
+0.c0 1. O u.úú (.• ) 7 11. I; l; .·.• v 1i ., • .)(1 ,..,),, ) .., .\ \1 . ........, 1.(¡ 
+• (: • \ ~ ...-• r, ~: :_) • t •1: ..,, • ·1 .,.·:,\: !i.rJ1¡ -.) ._,r,(. ú.00 
+-------------------------------------------------------------------------------------------------~--------------·------­
+t.\. i';;) ( .1 N • ,:~ t\.,h) -1 .1, f .110 -\.{1 
+n.t! ,> -1 .0 -1.0
+º·()0 ­
+ú.(,O n, 1n~+03 -1.,) -1.0 
+o.1or+nn 
+-------------------------------------------------------------------~--------------------------------------------------­
+TAOLA 10 
+-7t. -t-. 2. .¡• . , •C. l3f•Ol º·f,;·, -(.. },H t0J •ll.1H.•ll3 -~ r. • -e. 1 .-,.:, .11 ~ (i. _.? F+ (, 3 u. ,1(: ll. l10 (,. vl• l."•• :·,u l),(1C1 1 t. 10.
+J ·''º 
+•7f. l· 7. 1 • .:, (\ • v,) e. e,, ;) • 1).) i'• ••·,ü r.,.1v {.,•u,, e,. r.c 
+\) • 1 • ., ~-+ ~¡ l 1.'· r,,·,r.-,', ...; (, ,, • (, t· (,. '.'l' t). (:l) (,,('(¡ -F.. l r-. 7. (..,,,, 1,i :),:::, (1 1 1',(1 V• ,~.U r,. r,;; Í'.(\ o 
+• j • .; ) ~.-+j¡ l l ; • f· j.,) (; l .l·, 1•.1 i,.11\} (1 1 •. I~/ (; • (1(1 ,, • n r, 
+•). (. .) ~ (, • 1 ~ \: + ~I 1 o.l)(, l'.~·J d. J ·j 1.,1 o. ,1u u.(¡() :: • 1)r. 
+-0.i.,:•)) 7 11.1 ~l•l\j ,,.º'• \',r},) (1. ,\ ,j 1). \IÍJ -10. 1. O -<l • ¿ -o. 7P ( 1f + ., 5 o.,),) 0.,10 <' ,ú0 n. O•); e,."º C.5~HúJ o.uo 0.35E:.+<'3 
+CO~T. DE ~A TAOLA 10 
+·-------------·------------------------------------------·-;~--------------------------------------------------·------­
+-.o.io,:+03 -e,•\O[+(l" •O. I Ot.telt, •O. !Ol+Of> -O.!C\F+út •:l,1 Ol::tO~ •O.IOEtO& •ú,IOE+Ob 
+t.0 21. -ll. -21. -2\. • 2 1 • -21. •5b. o.c,o (;. C,(\ 1.(1 L\.úO r.oc ,).O() n.co 
+o.(·v (,. f,(l (),í)í) l.o O.Oú J.00 º·ºº v.oo G,00 o. ú(\ (l.01) o.oo 1 • (, O.úO º·ºº O. C,O
+º·ºº
+o.co e,. úO 0.00 o.c,o o.OC, 1. O J.00 ú.00 O,('I() C\. r,c, <,.uo O.<'(, 0,0(\ 1. O o.00.
+º·ºº
+o.. :'ii) -20. io. 20. 1c,. io. 2(,. 56. 
+O.M \\. 1c.~ .. ,) t> .-1. ~9t' t\: s ".•_lQf.•O~ ".q<>¡ ~(,~ ú.'-"~t.t0S !l. 'h,.+C·5 (l, C¡ of.•l1~ 
+--------------------------------------•M•••·--·---·---·------·--------~-----------------------------·------------·-·---­
+CO~T. DE ~A TAOLA 10 
+····························~~··········································~······· 
+• PP.O~Ll"A t:UM. • 
+w 
+• SDLUClOtl '.l P T I !-4 A 
+N 
+••• V~PJ~RLE rASICk Vl>.LOR ••• 
+XC 9) :: 4t>b.bb1 
+••• o Ul 
+~ ( 1) :: t,7.ü(;O 
+X ( 2 l = IO(i 0úO • 1-' X ( 3) = r, 7.01) • ~ 
+0 
+n
+X ( .i) :: 2.MiO 
+1-'• 
+q ~) : 1"~.,),,') O\ q 1) 1 l l. ~ 3l ::s 
+q J) = \).(·
+------·-':-----------'••----------.---­
+' 
+• 
+CU•I filtCl(·I• llfJr~fl'J.j J¡'fl'>!Z.~l)i. ,·eX l = -, , 7~,,I lt>H.+ü~ 
+•••••••f•••••·········································f···············'········· 
+••****··········································································• •
+* EL COLF.GlO DE MEXICO * 
+*
+* 
+• 
+l,J * ••• 
+"' 
+...
+••• N 
+llNJf'AI'! OE ::;J'll?UTO .
+' 1•• • ' t;j
+• * .... 
+• * 
+~ 
+.... 
+::s 
+~ 
+n
+.... 
+O\
+::s 
+o. 
+(D
+1-' 
+w 
+~ 
+ro
+::s 
+1-'
+111 
+n
+111 
+1-'
+.... 
+i'.!· ~: .:J:"1 1~.: l~-:.. r·~ 7 o. ..... ·~·:...r'.J4.i:it,~.-; !:i-:'l~[,.1•"AL~-~ o. .,. t, ;·~··I.;,,Le.e; ,·!" .,..,1.,:l·í·i sl:"'~r:.s 
+.'• 111 
+"
+'·,. i'r" V,\,.,¡.;ol..i..'; AP!1~·tc1:.1,s:·.; tC'f1'~1 ICl1.1', ¡, '• l. ff ~~PS, APf)FT:I~~~s 1:n~n1cJnh ~a\0~ ! ·.·1. 1 , 1 :..-l ,...l,r.s t,1-.,.,1,r.111, .\ 1>1-.~u,,~:; 1 .'. í•.: ~i. r~ .: \""' 1:.~ 1. L.-o,; (7 
+-------------------------------------------------------------------------~------------~-------------------------------­
+n:cro" ;: 
+-l· t • ·:. [¡ .~.'' :, l ~: ._, ..., -~ J • f• '),,,· ~ J,; ,:.: .l • i ' ' ... '-~ ').l·')'-'ti -l 1,..;_,.J'•" -:--(1., (;1,11·1 1, 
+... t ~' I,,,,' • \ •••~ '~ • .JC,1•l•·. --l•J,1r.1J .. ,:·t'l -'t"LJ .....)~ .,\" -·) ~..;-i':". :i ,) -·-)·_i•)•4'l.(1\1 -i.... ~·Jt',•,1.:_,r. -•JljQQ<).t.\; 
+·) • · 11., ·~ ~ ··1 ,)t! 
+v~:cruR a 
+1000,0\)) 67.00000 2,JOOlOO 16.i.oooo 166,0000 
+-----------------------··-----------------------------------~-----------------------------------·---------------------­
+TA'ILA 
+-7". ·ti·i. -~.4 -,i.pE+úl u.ve. -0.24t+o3 -o.t4f;+(13 -so. -u.1,·,,:. e,"' 1 J 0.1 nr. ;J.1 1.11 1. <, 1.r, 1, O 1,0 1.O l.o 1.(, 
+• Ó• \ ,-,,.• (I f, 11 t,,. c.. n.-; 1,.0() c.oo o.(•(\ 0 • (1() e,. uO c.oo
+l.' 
+• •:,. \;~F+i:,-12 •~.1(1~·. c.3 ~) • ~· ,·1 l.(\ ú,JO O. (nJ ;¡. ,,e, l1.0(1 -~.,,.,í'.(' t, o."~ º·ºº º·ºº 
+1l ~.7. J.11·) 1.ú ('l.J.) ú.(,() ü.1°' \ i O. ,'O ii . \)(¡ -·.,. 1:·,;·• ·)r. H ..).,::· "\. (.,... ü.·,li'; 1• j e.fi•, u. :J\; o.vv t"1. (J(, ... -~.'·..~ '' .,:., \') (.• 1~--+ l l ~·...:....) .·,.:,\.• r,• :J\; '). ,, j 1• ;. o•.-,,. \) . (¡() ,, • 1íO -;·,.) .:..·.··,:. I" (;• l '<t t\Cl .
+.:·(, v.v(, ,.) .;:-, :i.1:,• e.1, ,). 3¡¡ :) .'(\
+~, • 1, .., 
+-•·:. L•: ..~ •1·: o -n.2c,r.:•1.1b -,). 4':"}~.thb. -l•. lh+vr -j,JJl+OI) -(.1,f+d) 
+------------------------------------------------------------------------------------------------------------------·---­
+r, •.•· • .;, 1. ,\ TA'ILA 
+-:.• 1,'¡' • ,. l -· • 1,',l • •·t· -\ • l ·.1 ~ •••, t -(1• l 1JF• l·t--a. 1,,,:+ )" ·-n. t 1> ~~ • r. f. -0.lff+Ul> 
+1. i ... :, •...:, l-. •1,; i=. r '., :'! • .),) C•. n,) o.l' (¡ '.,.\ • \ .I • ( ,; 1.J .... o,. .:, • ~·O :) • <)Ú v.C,J ¡·,. l.) ;) • i";l) \·.• ¡,,.) 1.J e,.(', ', !) • ~ '.l ·O.1.10 ,,.ºº ,'"l.,,:·1 ,, • ~ V ,_; ~·: • (\ 1~ 1••• ~. ,·1,) ,-, .nú e,. r, r, 
+' .'•) •.' J ( • ,I·' r •t.(\ l. ~ e.ro o.<1 e , , • ,"I .) ú.,_,;·, ,..... 0\1 O.J~ 1.O c,.or, I·. ; 7 r. • ,i ,\ .) ...;) (•. t,.~ r. ,,e J./),1 C.<H' 1. 1) 
+1
+•v • 11t • i.rs l.,.\ ' l • l, :; f•. r: •l ú.J3 o.('IJ o.cu 
+------------------------------------------------------------------------·----------------------------------------------­
+r,:i T. (l>. L', TA'ILA 
+n. n,1 ,, • 1,11 • ll ~ 
+o·'·l' 
+('),. l• (1 -1.G 0.:.,1 -1.(¡ l~. "..1 -1.(¡ 
+Ú • 1"111 •I.o íl .()~ (l.l1>f+CÍ) .. -t.,) -1.<' 0,IOE•un 
+--------------------------------------------------------------------------------.---------------------------------·-··-­
+THI.A lt) 
+-----~----------------------------------------------------------------------------------------------------------------­
+-7&. -&2. -ll. 4 -~.4·]E;+03 -(l. 24E+03 -0.141::+03 -so.
+º·ºº 
+-e ,. ¡¡ il.,OF+O) o.(l,J O.l'O (l. ;)O O. 00 1.1 -o.11 1.O
+.º·ºº 
+_, .. 1 f,1 . 1.0 O.úO ) • ,)J O. úO o.l'IO
+e,·ºº º·ºº º·ºº 
+-6 !• 2 O.IOF.:+OJ u.oo 1.,) o.no ) • Ji.• º·(I(¡ o.r,¡¡ o.O() 
+-8 . 4 l t'o7. o.~tt) o.e~ 1.f¡ ,:¡. ,1,1 O.\"'U (1.00 
+º·ºº 
+-o. ;1,.·.,n e,.or, ,,• 0(\
+4 2.r, :.; • ú() o.uo l.v º·ºº º·u,:, º·ºº 
+º·:o º·ºº o.n,-, º·ºº º·ºº
+~ 0.1 i,¡'tO! o.'J\) u.l.i(l j. ·ll) 1.j o.vo 11. 00 -O.t (••:+03 q C.4C1~·•~l 0 • V'l o.(IO e,.e,; f) . üO l•.()1) -r. 1; 1.1 o.no -l·. t.r'"' ~-:-..~·,s r¡ • ·:; (i ". l. a'1 \, •1...-u 1·
+. v i) o. ,:.) O. tut-.+Cj H. (:. (ll, 
+-----·----------------------------------------------------------·-----------------------------------------------------­
+----------------------------------------------------·----------·------------------------------------------------------­
+-t.l>~•r.3 ·>.11·~•''" -r,.tv~. --,t,: -".1r.;.:.. ('I;, -:-.1r.r.. úti -J. t 1'C:•úó -0.1Of'.+\'.f, -Cl.10Hvi> 
+: .. .~;: ;. 2 •1..:.. -1.i -,.~ -7. 7 -2.2 -...o ;,. ~,; 1• ·; 1:. 0,·, ').;)', O. C·ú o.ve (,.i, (, ,.,\) f1• ('. l~• ' '' n.;,·.) C' . C·O
+"' •'. 
+t' . i·1.1 ·.: ..~.\., e•lit• 1.,·, '). ~ ·., 1) . ,,o 1) . (;(l 
+e . \',) ...,: ~· ,· .(· ;J e.<'0 1.() u.uo 
+' r , (" •,_':,~! ¡,. C.,1 º·ºº 
+V • '. ~. /l.) u.,\ü J.;¡:) 1.0 
+º·ºº 
+l.·:, -1.J 1• ~ 1.2 1.7 1.l 1.2 "·ü(',.:i.) ,:,• 1(,t.. (),::,, !l.t \.~ :_ t ., n 1' • \ 1) ~-t {' t. l.1 ·,::. ~ t, ~1• l 0F.+,·:6 C·. 1<1E••)t') 
+-----------------------------------------------------.-----------------------------------------------------------------­
+c,.r.T. 0t L~ f~r'I ;:, 111 
+--------------------------------------------------------------------------------------------------------~-------------· 
+n.. i:: C' . i' r: o.),) 
+e.0 ·; ú. Of" 
+·············································~·································· 
+* P~Oi'>LE:~t, t¡\I"'•
+• 
+S O L U C l O H OP?lHA w 
+N
+·--------·--------------·---­
+Vi.RJl,f\l.E P.As1c:. VAl,OF • N
+• ....
+• 
+X( i!l = 2<'2.4111 • 
+XC l l h7.0t'ü
+= Cll
+XC 2) : lv".n,10 
+•••• o
+q J) : t17 • ül'" 1-' ;,; ( 4 l 2.o;,,; e
+= 
+A( ~ l 1r.-l.()\IU • o
+= 1-•
+X( g) H7.5Q(•
+= O\
+::s 
+L'-~ r1, 1.;.,., ·;;,.,. l~a, t.. :::s qJ) = :·,.;.· • 
+• 
+fOl = •( .t>••.J .. J .1,:<1,'> 
+...,....•..........•••,....•................................•.....•.....••...,.. 
+•
+• f L :;OLf:GIO D ¡; ME' X I C O • 
+* • 
+·~ , * 
+•••1••···········••1••····································4····················· 
+--------------------------------------------------------------------------------------------------------·-----·--------...,
+..., 
+1 
+<
+11) 
+------------------------------------------------------··----··---------------------------------------------------------::, 
+rt 
+11> 
+Q.
+11)
+.... 
+"é 
+t1 
+o 
+Q.
+e:: 
+n 
+rt 
+rt r.·~.s rr ¡~;._·l...:!,¡.: ~ o ·,). n v~k!Ldl.S r-~:1~1:1•.~1.~s " 11) .·,. 1-l V~t<!Af.Lt:'-cr ,;•\t.Gl'Fl. S\l''/,11~1' 7 .... 
+rr vi.;:q;,~u.,:; nnr1:Ht.•c:: 1c1w1>1::1n:i => r, 11> 
+o"
+'.). l't VAHS. J.i'flfI::11.u.s c:,·.~1r1111, •:1.y1)1' ) IGUAL) r, 
+o
+·.). q \'~Rl~~Lt.5 rr f;0J.G(:~·A P.U;TA(;}/', O t1 ~J. TGT~L DE ~A~I;~LlS 13 11> 
+Q.
+o 
+~ t::: fll¡> 
+7PuC.1101J HI0.000 3R!O.COO so1:o.ec.o 3Plú.OUO 30A0.00Cl 0.(1000000o.oc,onol'lo C' • (\(10000(1 0.0000000 O. c,O(llJúOCl º·ººººººº 
+º·ººººººº 
+VECTOR B 
+~····.0000 50."0000 ;,,,0. 0000 1sr..oooo ¡c;o.0000 so.00000 100.0000 
+----------------------·-----------------------------------------------------------------------------------------------­
+J.7t.,l••'4 ,, . J;.E:+(J~ o.Jlil:+C'.\ O. Svt: t ;,4 .;.)~E:+04 O.JH.+u.¡ o.vo ~•.úO 7 ,. • t,(I<'.(. ) 1• V 1.a 1.C· l.~ 1.0 l.ú º·ºº 
+1·º º·ºº
+IJ • (,;, .¡ ..,.. 1.·j :,.(, ~' o.(,,; o.c,a O.(IO O.OC· o.oc, l.ú () •.;n ~ ( .?OEtl• l V. 0~' l . í, e,.e,•.· ~-l.:, ~t ú.(\l' o.oc, il.C,O 
+l, • 1,f1 º·ºº 
+\, .. V·' 1~ • 1~,-.n J. : . 1•(. ,l.J<' "•(, O 0.00 c.oG 11 \.• 1~ ..~. ,, j .. 
+:.".\ \:.,,l· 1.v" G.oo o.nt, o.c,o (,. í,u
+,,.''" ' ~.,.,, º·ºº 
+(, . ( \, l] ~11. V• ,·.•·. t'.'i . ,.,1, (1. \: \1 h.l,:. l .l' (>•,)u ~.oo e, .c,u 
+~1. vo 1l u.10.•.i l J. ,J i) V.u,1 u.(,( (1.1(, n•.00 l .l' ~.ob ,·,•1,1_,,,nr.,,, 
+-•). 3;.,,·• r, -l -(.)ar•r'!., -1), .lAf.+(!4 º·ºº 
+..·~·• 7"' ~'+"d -o.S:é:•t4 -O.)IHO~ C.vo (,.00 
+--------------------------------------------------------------------------·-------------------------------------------­
+crr,. DE LA TABLA 
+,·...,. f • (, ') ( •'°!¡ ·.
+e. l· •• .·...···) \·· ...~-;') • (11,1 ".1,r· ~-~~.:.0) 
+'•'"" 
+1} • \i ·~, 1.• 11 c,. 1•:, •J.\_:¡, ,) • ,,(1 SJ. 
+l .'l 1, • d·J e.01. (, . (\í. -1.) 
+~I • (' ,·1
+¡) • 1) :l ,.. r,.,... -1• :) 
+• ~ 1. 1. ,J 11 .,,n n.Ot· -1. j 
+O. 0•) .,.,.1 o.~; r.•(\f. -, • J
+1·º 
+.... 01) ~· .(, \' º·(tJ (<. 1)1 , 1.I -1.0 
+I} • 1) ') :, • i,1\'1 0. ,ii) ,:) • i")(1 C.l~ 
+••••------•--•w••--•·~---------•-••••••••••••••-••--••••--••••••••••••••••••••••.••••••••••••••••••-••••••••••••••••••• 
+UBLA ,, 
+···----------------------·-··-----------------·----------------------~--------·~·-·-------------·-·--·----------------­
+0.78E+04 O.JAf.i-04 o.J8t:+o4 0,50&+04 O.l8t+04 0.3lt+04 
+º·ºº
+O.lBEi-04 5 so. o.oo o.oo 1.0 1.0 1.0 -, º·ºº·º 
+0.78E+04 1 so. º·ºº1.0 º·ºº o.oo 1.0
+º·ºº º•ºº º·ºº º·ºº º·ºº
+o.Jee:+o4 '2 0.20E+03 1.0 o.oo Cll
+0.39E+04 u.1S[+v3 º·ºº 0.0(1 º·ºº º·ºº º·ºº º·ººo.oo º·ºº
+3 1.0
+• 0.15r:+Ol º·ººo.c,o O.OG º·ºº º·ºº o.e.o 1-'0.5CIE+04 t.O º·ºº º·ºº 
+O.ú'l º·ºº º·ºº º·ºº º·ºº.1. O o r:
+12 • l .O • I ,O
+º·ºº 0.1 (1('.'.+(JJ º·ºº o.oo º·ºº º·ºº º·ºº n
+1l 0,00 º·ºº 1.0 \oo ....
+º·ºº º·ºº º·ºº º·ºº º·ºº
+Q...2t>ó.U:.t.U7 Q.c..o o:oo <1.no O.O!> Ct,00 º·n~.•o-, o.1t1no4 0.40E.-04 O\ i::s
+. 
+·····-----------------------------------------·--------------~-------------------------------------------------------· 
+crr,. DE LA TABLA ~ 
+·-------------------------------------------------------------------------------------·----------------------·-------· 
+(;.1 ú o.vo
+º·ºº º·ºº º·ºº 
+•I.o -1.0 •I.O 
+".C-(1 .),00 º·ºº º·ºº 
+º·ºº º·ºº º·ºº 
+1.0 C., .úO •). li"V C,,Oll íl .i:o 1.,. Q,C,{l O. O~• (!.º·ºº(t(j C,,GO {¡. PO 1.ll ll.uo o.t,íJ 
+l.{, 1., 1.u ü '·º.·1j ".\. (,(, O,M) o. o::i º·ºº1.(, 
+•1. ti') r .i ,·. 0, I ,i,;+G4 G. 0r) o.r,o 
+·················••t••••·······························'··························
+• 
+s (1 L 11 r l O " U?fl!"~ 
+--~·-·-------·----~----~----· 
+~( ',) Stl .,,vu
+= 
+X( l l .e 5(,·.•',()¡j )( n = ·\J.uó,; X( 3) P.>O, OOC>
+"' •
+XC 4) • 150.000 
+XCl2) = •••
+º·ººº 
+X ( n l 1or,.ooo
+= 
+* ). ( J) = 
+.. 
+•
+,:-u,, fl;li('1(,1, Of\JErtVJ OPfl"lZAOA 
+' 
+f(l() .. 
+········~······································································· 
+lXISTE~ SULUCIU~(S MULTlPLES 
+
+
+
+

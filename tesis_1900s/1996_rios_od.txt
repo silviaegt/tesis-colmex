@@ -1,0 +1,434 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE 
+MAESTRO EN ECONOMIA 
+CENTRO DE ESTUDIOS ECONOMICOS EL COLEGIO DE MEXICO 
+Flujos de comercio, precios relativos y tipo de cambio real. Un VAR para México 
+Octavio Daniel Ríos Lázaro Promoci 1992-1994 
+1996 
+ASESOR: Dr. Carlos Manuel Urz Macías 
+Deseo expresar mi agradecimiento a todas las personas que intervinieron directa o indirectamente para la realizaci de la presente tesis. En particular agradezco a Carlos Manuel Urz Macías por dedicar parte de su valioso tiempo para la direcci de este trabajo. Asimismo, agradezco al coordinador de la maestría 
+J orge Fernández Ruiz por el apoyo que  nos brindpara llevar a  buen  
+t érmino  nuestros  estudios.  También  quiero  agradecer  a  mis  
+comparos  su  ayuda  constante durante  estos dos as.  
+Al  Colegio de México,  gracias.  
+
+Resumen. 
+En este trabajo se encuentra la relaci que existe entre los flujos de comercio internacional (importaciones y exportaciones) con sus precios relativos y el tipo de cambio. Con este objetivo se construye un Vector Autorregresivo (VAR) que vincule tales variables. Se ajusta el modelo que mejor represente el feneno en estudio y se llevan a cabo pruebas de causalidad. Asimismo, se simularon choques externos sobre precios relativos y el tipo de cambio para analizar la respuesta de los flujos de comercio de nuestro país con el exterior. No se incluye el PIB de México o el de Estados Unidos en virtud de que, al hacerlo, los ajustes no mejoran, mientras que al incluir cualquiera de ellos se pierden grados de libertad en la estimaci. 
+Indice. Introducci 1 Capítulo I 3 
+I. Apertura comercial de México 4 Capítulo II 13 II.1 Definiciones 14 
+II.2 El Modelo 16 
+II.3 Identificaci del VAR 19 
+II.4 Análisis estructural 26 
+II.4.1 Causalidad de Granger 26 
+II.4.2 Respuesta a Impulsos 29 Capítulo III 40 III. Conclusiones 41 Apéndice Gráficas de las series originales 44 Gráficas de las series usadas en el modelo 49 Tablas 2 y 3 55 Bibliografía 56 
+Introducci6n 
+De acuerdo con el modelo de desarrollo propuesto por México a partir del gobierno de Miguel de la Madrid, se plantea la apertura comercial como uno de los ejes sobre los que gira la recuperaci econica de nuestro país. Es así que se quiere emular de alguna manera el planteamiento seguido por países del pacifico oriental que basaron su desarrollo econico en la capacidad exportadora que pudiesen lograr. 
+La apertura comercial se produce en medio de una serie de reformas econicas que involucran variables que influyen en los flujos de comercio de nuestro país como lo son los precios relativos y el tipo de cambio. Estas variables son instrumento de política econica que pueden tener importantes repercusiones. 
+Existen algunos trabajos que encuentran relaciones directas entre tales variables y los flujos de comercio internacional para algunos países. Iniciando con Orcutt (1950) quien remarca que el comercio puede responder de manera diferente a peques cambios temporales en precios que cuando ocurren cambios mayores y permanentes originados, por ejemplo, por una devaluaci. Esto ha sido interpretado como que el ajuste de los flujos de comercio es más rápido cuando se dan cambios considerables en precios y en el tipo de cambio que cuando se tienen variaciones menores. Sin embargo, la evidencia empírica no es concluyente (Goldstein y Kahn 1976) . 
+Existen pocos trabajos que efectn pruebas sobre la respuesta 
+de los flujos de comercio a variaciones en tipo de cambio y precios relativos. Junz y Rhombery (1973) analizan 13 países industrializados y concluyen que la respuesta al tipo de cambio es similar a la respuesta a precios. Bahmani-Oskooee (1986) apoyan la conjetura de Orcutt de que los flujos de comercio responden de manera diferente a diferentes variaciones en precios. Tegene (1991) realiza un estudio sobre flujos de comercio en Etiopía y concluye que las respuestas de importaciones y exportaciones son mayores y su ajuste toma más tiempo cuando se originan cambios en precios relativos que cuando varía el tipo de cambio. Este resultado 
+coincide con el resultado de Bahmani-Oskooee. 
+Este trabajo se basa en la idea original de Tegene de construir un VAR para la economía mexicana que relacione el tipo de cambio real y los precios relativos con las importaciones y las exportaciones. 
+En el primer capítulo se habla de las políticas comercial y cambiaria y su influencia sobre los flujos de comercio de nuestro país. En la segunda parte se plantean las definiciones de las variables y la metodología que se siguipara construir el modelo y las pruebas que se realizaron. Finalmente, en el tercer capítulo se plantean las conclusiones a las que se llega después de analizado el modelo. En el apéndice pueden encontrarse las gráficas para el comportamiento de las importaciones y exportaciones y de las series que se usaron para la construcci del VAR. 
+Capítulo I 
+r. Apertura comercial de Mbico. 
+La creciente participaci de México en el comercio internacional en los timos as se debe en gran parte a la política gubernamental de apertura de nuestro país hacia el exterior. Tal proceso se ha llevado a cabo a partir de 1985, cuando fueron reducidos los requisitos para la importaci de mercancías y se buscacomodo a productos nacionales en diferentes mercados. En particular, la principal muestra que nuestro país se proponía entrar de lleno en el contexto del comercio internacional fue la adhesi al Acuerdo General de Aranceles y Comercio (GATT) a finales de 1986. Este cambio se inserta en un profundo proceso de modificaciones estructurales que a partir de 1983 incluían también el saneamiento de las finanzas plicas y la reestructuraci del sector paraestatal. 
+A partir de 1983 se ha sustituido, de manera importante, la protecci comercial basada anteriormente en permisos previos de importaci por aranceles. Como se observa en la tabla 1, en 1983 se tenía que el cien por ciento de las importaciones requerían el permiso previo, mientras que para 1989 so el 20 por ciento lo necesitaron. Asimismo, se redujo la tasa de protecci arancelaria promedio de la economía mexicana, de 16 . 4 por ciento a 9. 5 por ciento para 1989. Estos cambios fueron el reflejo de que el país necesitaba una fuerza externa que reactivara la actividad productiva, en virtud de que para éstos as no se tenía la capacidad interna que estimulara el producto nacional, ni siquiera 
+por medio de financiamientos externos. 
+Tabla 1 Porcentaje de las importaciones sujetas a permiso previo. 
+A  Porcentaje  
+1983  100  
+1984  83  
+1985  35  
+1986  27  
+1987  27  
+1988  22  
+1989  20  
+Fuente:  SECOFI  
+Uno  de  los  resultados más  notables  de  los  cambios  llevados  a  
+cabo  ha  sido  el  desempe  del  sector  exportador  durante  los  
+ochenta.  Las  exportaciones  no  petroleras  sobresalieron  por  el  
+
+comportamiento tan dinámico que tuvieron, en un panorama de estancamiento econ6mico con la caída del producto interno. Fue en esos as en que las ventas externas de productos no petroleros crecieron a una tasa promedio anual superior al 20 por ciento 
+Un objetivo que se plante6 como fundamental para que tuviera l ugar la apertura fue la diversificaci6n de las exportaciones para i ntroducir a nuestro país en el contexto econ6mico mundial como exportador de productos para consumo final. También con esta f i nalidad se abatieron diferentes barreras para la introducci de i mportaciones de bienes intermedios y de capital que tuvieran corno 
+propito la fabricaci de productos destinados a la exportaci. 
+De esta manera, se lleva cabo un proceso gradual de desgravaci y de exenci de aranceles para determinadas importaciones y otorgar estímulos fiscales a las industrias que fabricaran productos que fueran a ser exportados. 
+Tal comportamiento tuvo lugar debido a que el plan de desarrollo de los as cincuenta demostrque el tener una economía sobreprotegida lo ico que logren el largo plazo fue el conformismo de la planta productiva afectando a los consumidores, que de ésta manera veían reducida su capacidad de elecci y se veían forzados a consumir productos nacionales de mala calidad. El plan de desarrollo estabilizador, que implantaba la sustituci de importaciones, resultefectivo en los primeros as, pero para 1982 finalmente se reconocique tal modelo de desarrollo era muy rígido y no estimulaba, en el largo plazo, la implantaci de nuevas tecnologías para la fabricaci de los bienes. Es en éste momento en que el gobierno quiere retomar los altos índices de crecimiento que tuvieron lugar en as anteriores y se plantea una nueva filosofía de crecimiento basada en las posibilidades exportadoras de nuestro país. Sin embargo, el momento que se eligino fue el más propicio ya que comenzaba una crisis econica de largo plazo a nivel mundial en la cual nuestros principales socios comerciales experimentaban una reducci de su ingreso y, por consecuencia, de sus importaciones. Pero no obstante lo anterior, se plantean las bases en nuestro país de una estructura que 
+fortalece las exportaciones en el largo plazo y se quiere mantener 
+una estabilidad cambiaría a través del tiempo que fortalezca la 
+i nversi y el desarrollo. 
+Sin embargo, no obstante los grandes cambios que han tenido l ugar y a la posici de apertura que se ha querido implantar, nuestro país mantiene en los Estados Unidos a su principal socio comercial, siendo que a lo largo del tiempo el valor de las importaciones dirigidas a éste mercado ha ido en aumento, situaci que se verá acentuada con el establecimiento del Tratado de Libre Comercio para América del Norte (TLC). Esto no tiene que ser, en principio, una situaci desventajosa. Sin embargo, y debido a las políticas comerciales que se han llevado a cabo en ese país, la situaci de nuestras exportaciones se ve perjudicada en la medida que los Estados Unidos quieran mantener o aumentar ciertas medidas proteccionistas. Es por ésto que se debe diversificar los países con los que se tenga relaciones comerciales y evitar, o al menos atomizar, los posibles efectos negativos de posibles barreras a nuestros productos en el exterior. 
+Un factor al que nos enfrentamos cuando se analiza el comercio exterior, es el tipo de cambio al que se están realizando l as operaciones comerciales. Es en éste sentido en el que considero que ha fallado l a estrategia gubernamental de apertura comercial. Debido a la anulaci de los permisos de importaci y a la desgravaci o reducci arancelaria que han experimentado los productos importados, el tipo de cambio y los precios relativos de l as importaciones se vuelven los icos controles reales de la acti vidad comercial con los cuales se controlará el proceso de 
+apertura. Si el tipo de cambio está sobrevaluado ésto repercute en una pérdida de competitividad de los productos nacionales, mientras que si el nivel de crecimiento de los precios internos es mayor que el de los precios de nuestros socios comerciales, se abaratan sus productos y de ésta manera se puede esperar que aumente la demanda de ellos. 
+Por esta raz es necesario el establecimiento de una política comercial y cambiaria acorde con el objetivo que se busca, que es el de generar suficientes divisas para financiar el gasto que origina la creciente demanda de productos importados, y no financiar éstos por medio de endeudamiento externo. 
+A principio del período que se analiza en este trabajo (Enero de 1987) el valor del tipo de cambio real estaba muy por arriba comparado con el valor que tenía al final del período (Diciembre de 1993). No es el objetivo de este trabajo el definir el tipo de cambio real de equilibrio, sino icamente se plantea la brecha que existe en el nivel del tipo de cambio al inicio y al final del período para establecer, como un posible efecto, el hecho de que las importaciones a lo largo del período hayan seguido una tendencia a aumentar y por otro lado que los aumentos anuales que tuvieron las exportaciones se hayan neutralizado hasta el punto en que de dos as a la fecha se estabilicen y no se registre un aumento real en su volumen. 
+En el transcurso del tiempo podemos identificar diferentes etapas por las que han pasado las políticas comerciales y cambiarías. Empezando desde el a de 1983 y como resultado de la 
+devaluaci6n del peso de 1982 y el excesivo control de importaciones, se tuvo un resultado favorable en la balanza comercial. Por el lado de la política cambiaría, existían dos tipos de cambio. El tipo de cambio controlado incluía las operaciones de compra-venta de mercancías con el exterior y operaciones crediticias y financieras. Por su parte, en el mercado libre de d6lares se realizaban las transacciones de tipo turístico y algunas de tipo fronterizo. El tipo de cambio controlado mantuvo una devaluaci6n constante frente al d6lar, pero como el aumento en el nivel de precios fue muy elevado, tuvo lugar una revaluaci del tipo de cambio real. No obstante, en virtud de la gran devaluaci que se había concretado, el tipo de cambio real continu6 siendo alto y las exportaciones pudieron continuar con un nivel alto de competitividad, por lo menos, por el lado de los precios relativos. 
+La situaci posterior a éste a se ve caracterizada, sobre t odo, de una disminuci6n del tipo de cambio real. Esta situaci se presenta en virtud de que el nivel de precios aumenta con una mayor velocidad que la tasa de depreciaci del tipo de cambio nominal lo que lleva a que para 1989 se pase de un saldo positivo en balanza comercial a una situaci deficitaria, misma que se mantiene hasta nuestros días. Además, aunado a la revaluaci del peso, se l iberalizan una gran cantidad de fracciones arancelarias, i ncrementándose el volumen de las importaciones y este aumento no f ue compensado por un aumento en la misma proporci de las exportaciones. 
+Esto se produce dentro de una situaci coyuntural de la economía mexicana, ya que en el mes de diciembre de 1987 se implementa el Pacto de Solidaridad Econica (PSE), en el que se da un reajuste general de los precios y del tipo de cambio. La finalidad del pacto era controlar la inflaci y con este objetivo el tipo de cambio nominal se congelo después de sufrir una devaluaci al inicio del pacto, aunque se producen dos ligeras devaluaciones en el transcurso de 1988 y posteriormente se mantiene un peque deslizamiento diario. La política para controlar la inflaci fue efectiva, pero hubo un deterioro en la balanza comercial producto del crecimiento en la demanda de bienes importados que no fue correspondido por un crecimiento en las exportaciones. La pérdida en la competitividad de los precios de los productos nacionales, como resultado de la continua revaluaci que se registren el tipo de cambio real y el aumento en los precios de las exportaciones, originque la dinámica con la que venían creciendo las exportaciones se estancara. Sin embargo, no se registrun decrecimiento en el valor de las exportaciones, icamente que ahora se crecía a un ritmo mucho menor. La maquila 
+se convirtien el principal rengl exportador mientras que los demás sectores registraron incrementos moderados. 
+El encarecimiento de nuestros productos en el exterior originado por la revaluaci del tipo de cambio real y el aumento de los precios de las exportaciones provocan un creciente déficit en la cuenta comercial, mismo que fue acompado por la entrada de capitales, la mayoría de los cuales fue invertido en la Bolsa Mexicana de Valores por los atractivos rendimientos que ofrecía. A 
+partir de 1990 se entablan diferentes negociaciones, mismas que culminan con la entrada en vigor de diferentes acuerdos comerciales con algunos países grupos comerciales, el más importante de ellos es el TLC. 
+Ahora, la competitividad de los productos mexicanos se debía originar por el lado de la productividad, ya que ante un tipo de cambio sobrevaluado se tenían que atacar los costos de producci y con ello poder insertar bienes a precios internacionales. El PSE congela salarios y por este lado los exportadores tienen la seguridad que la mano de obra que emplean se mantendrá barata en el largo plazo y lo que procede es la capacitaci del personal para que se tenga un incremento en la productividad y con esto una baja en los costos de producci. Sin embargo, la revaluaci del tipo de cambio, neutraliza en parte la disminuci de los costos. 
+En resumen, la liberalizaci del sector comercial y la diversificaci de las exportaciones se ha convertido en una realidad, sin embargo es necesario mantener un tipo de cambio real competitivo para poder enfrentar los mercados internacionales en i gualdad de circunstancias con los demás países para que de ésta forma no se ocasione que los bienes nacionales se vuelvan demasiado caros en el extranjero ni se fomenten excesos de importaciones de mercancía para consumo final que se financie con endeudamiento externo. La apertura comercial es una medida sana que debe de i mplementarse con inteligencia para que en el largo plazo no se t engan que pagar las consecuencias de algunos problemas que pudiera generar una apertura sin ning tipo de planeaci. 
+De esta manera, el presente trabajo trata encontrar la relaci que existe entre los flujos de comercio internacional 
+(exportaciones e importaciones) de nuestro país con respecto a sus precios relativos y al tipo de cambio real. Es importante tratar de determinar si existe o no una relaci real entre las variables anteriores así como la magnitud de las posibles respuestas de los flujos de comercio de nuestro país con relaci al tipo de cambio y la inflaci interna y externa, ya que, una vez establecida tal dependencia, podemos emplear dichas variables como instrumentos de política econica. 
+Capitulo n 
+II.1 Definiciones. 
+Dos objetivos de este trabajo son, primero, definir qué tanto el patr de respuesta de las transacciones comerciales a los precios relativos difiere de su respuesta a el tipo de cambio y, segundo, los tiempos en que tal respuesta se diluye. Con esta idea se construyel siguiente modelo. 
+Definimos los precios relativos como el cociente del indice de precios de las exportaciones o importaciones con respecto a los precios mundiales y los precios domésticos respectivamente. Es importante notar que tenemos un precio relativo para cada tiempo de comercio y no so un cociente de un índice de precios internos y precios mundiales. Por otro lado, definimos el tipo de cambio real como el poder de compra que tiene el peso con respecto al dar a través del tiempo. Dicho poder de compra está relacionado, por un lado, con el tipo de cambio nominal y el poder de compra de una cierta canasta de bienes mundiales y por otro con el índice de precios nacionales, que act como un deflactor y un indice de precios mundiales. Para la definici de dicho tipo de cambio real, véase el Informe Anual del Banco de México, 1986. De esta manera, se mide el vinculo que existe entre las variables definidas anteriormente con los flujos de comercio de nuestro país para poder explicar la forma en que se presenta la dinámica de las transacciones mundiales de México a lo largo de los timos siete as, período en el cual se da la apertura comercial más importante de nuestro país. 
+La forma en que fueron definidas las variables es la siguiente: 
+IM= VALOR DE LAS IMPORTACIONES EN DOLARES IPEU80 
+PIM= INDICE DE PRECIOS DE LAS IMPORTACIONES INDICE DE PRECIOS MUNDIALES 
+EX VALOR DE LAS EXPORTACIONES EN DOLARES IPEU80 
+PEX= INDICE DE PRECIOS DE LAS EXPORTACIONES INDICE DE PRECIOS MUNDIALES 
+E = TIPO DE CAMBIO NOMINAL p• 4 • 6 5 e VALOR MUNDIAL DEL DOLAR P 12. 50 
+IPEU80 = INDICE DE PRECIOS AL CONSUMIDOR ESTADOS UNIDOS BASE 1980 
+p• = INDICE DE PRECIOS MUNDIALES. P = INDICE DE PRECIOS AL CONSUMIDOR EN MEXICO. 
+Los datos empleados para la construcci del VAR son mensuales y fueron tomados de los Indicadores Econicos del Banco de México y del compendio estadístico del Fondo Monetario Internacional 
+International Financia] Statistics. 
+15 
+II.2 Bl Modelo. 
+Con el objetivo anterior, se procedia la construcci de un VAR (Vector Autorregresivo) para las exportaciones y otro para las importaciones de las siguientes características: 
+
+(9) 
+De esta manera, suponemos que la relaci entre el volumen de las exportaciones (EX), precio relativo de las exportaciones (PEX) y tipo de cambio real (E) puede expresarse por medio de una relaci lineal e invariante en el tiempo. Análogamente, definimos la relaci para las importaciones (IM), el precio relativo de las importaciones (PIM) y el tipo de cambio real. De la ecuaci 1 tenemos que A(L) es la matriz polinomial del operador de rezagos A (L) =I+A1L+AiL2+ . .. +AmLm, donde las At son matrices de 3 x 3 de coeficientes invariantes en el tiempo;~ es un vector aleatorio1 de observaciones de dimensi 3 x 1 y el término U1 es un vector de ruidos blancos, esto es, un vector correlacionado contemporáneamente pero independiente para diferentes momentos en el tiempo: 
+
+Cada uno de los distintos componentes de ~ se supone que es 
+1 en éste caso: 
+
+endeno a los demás componentes de Xi y la estructura de rezagos es simétrica entre variables y ecuaciones en la ecuaci l. Con estos supuestos, los mínimos cuadrados ordinarios proveen estimadores consistentes de A1,Az, .. ·A...· 
+Para la construcci y análisis de las series de tiempo, es necesario contar con datos que cumplan determinados criterios, como lo son que el proceso a estimar sea estable y estacionario. Un proceso es estable cuando su valor esperado no cambia con el t ranscurso del tiempo, es decir, E(Yi)=µ para t=l,2, .. ,T. Se dice que es estable cuando la varianza se mantiene constante sin i mportar el período de las que se toman las observaciones, esto es E(y1y1 • ) =o 2 para todo t. 
+Inicialmente se hicieron pruebas de raíces unitarias para determinar si era necesario diferenciar las series de tiempo con la f inalidad de obtener un proceso estable y estacionario a lo largo del período de estudio. Debe verificarse la existencia de raíces unitarias para evitar que ciertos procesos en el tiempo coincidan simplemente por una cierta tendencia y evadir de esta manera la posibilidad de que se puedan generar lo que se conoce como "regresiones espurias". Las series originales fueron convertidas a l ogaritmos naturales. Se aplicla prueba Dickey-Fuller (1979) para determinar la posible existencia de raíces unitarias. Otra ventaja de proceder de esta forma es que al tener las series en logaritmos naturales y di ferenciarlas, lo que se analiza en este caso son t asas de crecimiento. De acuerdo al procedimiento propuesto por Dickey-Fuller, se prueba ffo: Existe raíz unitaria vs. H1: No 
+existe; se rechaza Ho si el valor del estadístico de prueba es mayor que el de una prueba t con nivel de significancia a. En este caso, usamos a= 5%. La ica serie que presenta un valor elevado del estadístico de prueba es la del volumen de importaciones (EX), cuyo valor es de -6.8. Sin embargo, en virtud de que la potencia de la prueba es baja y que la gráfica de la serie nos lo sugería, nos permitimos no rechazar la hipesis nula y por tanto también se diferenciesta serie. 
+Conviene hacer la observaci de que en un principio se incluyo el PIB de México para el modelo de importaciones, pensando que el ingreso es una variable que influye en estas y se incluyo el PIB de E.U. como un determinante del vector de exportaciones, intuyendo que las mismas podrían responder positivamente a aumentos del ingreso de E.U., principal socio comercial de nuestro país. De esta manera, se diferenciaron también estas series y se incluyeron en el modelo a estimar. Sin embargo, los resultados que se obtenían para cada modelo resultaban poco satisfactorios ya que se obtenían signos y rezagos contraintuitivos, lo que en principio no ocasiono su exclusi pero si dio pie a que se cuestionara su existencia en el modelo. Una posible explicaci esto es que se tuvo que aproximar el PIB mensual por medio de datos trimestrales. Por otro lado, al incluir el PIB en ambos modelos los ajustes para los mismos no superan a los ajustes que se obtienen al excluirlos, mientras que en el segundo caso la estimaci mejora al aumentar grados de libertad, por lo que se tomo la decisi de no considerar el PIB de México y el PIB de EU para la construcci de nuestro VAR. 
+II.3 Identificaci6n del VAR 
+Una vez caracterizadas las series, se procede a la construcci del VAR (Vector Autorregresivo), identificando inicialmente el orden de dicho vector, es decir, el nero de rezagos máximo que con mayor precisi puedan describir el comportamiento de nuestro feneno. A este nero de rezagos lo llamamos p. Así, nuestro proceso será un VAR(p) -Vector Autorregresivo de orden p. Es una práctica com que se imponga una cota superior Mal nero de rezagos para evitar procesos de orden muy grande. La intuici y la t eoría econica nos guían para la elecci de dicho valor máximo. En nuestro caso, se propone analizar diferentes modelos con rezagos que van desde uno hasta doce, pensando que un rezago mayor, es decir, de más de un a, ya no era pertinente considerarlo. 
+Existen diferentes procedimientos para la elecci del orden del VAR {p) , entre ellos se encuentra el Criterio de Informaci de Akaike (AIC). Matemáticamente, el AIC(m) se define co: 
+AIC(m) =lnl¿(m) I+;(nero de parámetros estimados libremente)
+0 
+=lnl Lo (m) I+ 2rn.; 
+Sin embargo, cuando M > p, el ~ por medio del criterio 
+anterior no es consistente, es decir, la probabilidad de subestimar el orden del VAR es cero, así que se tiene que asinticamente se sobreestima el orden verdadero con probabilidad positiva. Sin embargo, la probabilidad de sobreestimar el orden declina cuando se 
+incrementa la dimensi del VAR y es insignificante para K > S. Es decir, se escoge el orden correcto del VAR casi con probabilidad uno si la dimensi del VAR es grande. 
+Pero no es éste nuestro caso, ya que en nuestro modelo K=3, así que también se obtuvieron otros estadísticos para tratar de determinar de manera precisa el orden real del proceso. Dichos estadísticos son los propuestos por Hannan y Quinn (1979) y por Schuarz (1978}. El criterio de Hannan-Quinn se define como: 
+HQ(m) =ln I Ea (m) I+ 2 ln/nT (n. de parámetros estimados libremente) 
+=lnl Ea (m) I+ 2 lnTln TmJ(2 
+Usando argumentos bayesianos, Schwarz propone el siguiente criterio: 
+SC(m) =lnl Ea (m) 1 + lnT T (n. de parámetros estimados libremente) 
+=lnl Ea (m) I+ lnTTmJ(2 
+De acuerdo a los estadísticos anteriores, se obtienen los estadísticos para correspondientes los rezagos del 1 al 12 y se escoge para el VAR de exportaciones el que corresponde a 4 rezagos y para el caso del modelo de las importaciones se elige el de 10. Los valores para los estadísticos se puede apreciar en las tablas 2 y 3 que se encuentran en el apéndice. Posteriormente se i dentifican los coeficientes que son significativos, mismos que son obtenidos por medio de la estimaci por mínimos cuadrados ordinarios que implementa el programa RATS para de esta manera 
+20 
+encontrar el modelo que se ajusta a nuestras observaciones. Gráfica 1 
+AJUSTE EN PRECIOS RELATIVOS 
+EXPORTACIONES 
+
+1-SERIE ORIGINAL ---SERIE AJUSTADA 
+A partir de los modelos que mejor se acoplaron, se procede ahora a construir los ajustes para las series originales. Dicho ajuste se puede ver gráficamente para cada serie en las gráficas 1, 2 y 3 para las exportaciones y 4, 5, 6 para las importaciones. Existen dos gráficas de ajuste para el tipo de cambio real ya que estamos manejando dos vectores autorregresivos. Se puede ver que cada serie es aproximada cercanamente por el modelo ya que al analizar el 
+
+comportamiento de las series originales (en lugar de las Gráfica 2 
+AJUSTE EN TIPO DE CAMBIO REAL 
+POR MEDIO DEL MODELO DE EXPORTACIONES 
+
+
+
+81"T'."'.""------------------------------, 
+1988 1989 1990 1991 1992 1993 
+1-SERIE ORIGINAL ---SERIE AJUSTADA 
+diferencias de logaritmos) la tendencia está bien definida. En particular, estamos interesados en el comportamiento que pueda tener las importaciones y exportaciones y el ajuste que se dé para estas series, ya que es el feneno que queremos explicar. Aunado a esto se hicieron pruebas de causalidad de Granger. 
+Gráfica 3 
+
+Gráfica 4 
+AJUSTE EN EL TIPO DE CAMBIO REAL 
+POR MEDIO DEL MODELO CON l'*ORTACIONES 
+
+1-SERIE OAIQNAl ---SERIE AJUSTADA 1 
+Gráfica 5 
+
+AJUSTE PARA LAS IMPORTACIONES 
+3500...-------------------------, 
+3000 
+2500 
+2000 
+1500 
+
+1992 1993 
+AÑO -SERIE AJUSTADA 
+24 
+Gráfica 6 
+AJUSTE EN EXPORTACIONES
+1900,--------------------------­
+
+-SERIE ORIGINAL 
+AJUSTE EN EXPORTACIONES
+1800.......-------------------------­
+1700 
+
+25 
+II.4 Anllisis Estructural. 
+Dado que un modelo VAR representa la correlaci6n entre un conjunto de variables, es com que sean usados para analizar ciertos aspectos de las relaciones entre las variables de interés. A continuaci se presentan dos maneras de interpretaci del VAR que acabamos de construir. 
+II.4.1 Causalidad de Granger. 
+La idea de causalidad es la de que la causa no puede venir después del efecto. Así, si una variable x afecta a una variable z, entonces la primera debe ayudar a mejorar la predicci de la 
+segunda variable. Para formalizar esta idea, supongamos que Ce es 
+el conjunto que contiene toda la informaci6n relevante en el 
+universo disponible hasta, inclusive, el tiempo t. Sea z(hl o, ) el 
+conjunto timo de predicci de h periodos del proceso z, con 
+origen en t, basado en informaci de Ce. Entonces la matriz de 
+errores de predicci6n será Ee (h I Ce> . 
+Se dice que el proceso x, causa z, en el sentido de Granger si: 
+Ee(h I Oe>< Ee(h I Qt\[x8 I s~t]) para algh=l,2, ... De acuerdo al sentido que tiene el presente trabajo, so se 
+quiere probar la causalidad que tengan los precios relativos y el tipo de cambio real, una a una y en conjunto sobre las exportaciones e importaciones. En el contexto de RATS, lo que se está probando es la hipesis nula Ho: z, no causa a Xi VS. H1: z1 sí causa a Xi. Una primera hipesis de interés es ver si tendrá sentido afirmar que los precios relativos y el tipo de cambio real tienen (individualmente o en conjunto) un efecto econométrico medible sobre los flujos de comercio de México. En la presente línea, la hipesis nula, por ejemplo, de que los precios de las importaciones y el tipo de cambio real no tienen un efecto relevante sobre las importaciones se interpreta como que los términos A¡ correspondientes a PIM y a E en la ecuaci de las importaciones no son ambas significativamente diferentes de cero. A continuaci se presentan los resultados de las pruebas de causalidad. 
+PIM • B, IM. En este caso, el estadístico que se obtiene de la prueba es mayor que una x2 con 24 grados de libertad, por lo que rechazamos Ho, es decir, rechazamos que PIM no cause a E e IM. Esto es significativo ya que lo que tenemos es que en realidad PIM sí influye sobre E y sobre IM. 
+B • PDI, IM. Nuevamente, obtenemos que el valor del estadístico indica que debemos rechazar la hipesis nula, esto es, existe causalidad entre E y el otro par de variables. No obstante, para esta prueba el nivel de significancia es menor al caso anterior. 
+27 
+Esto es probablemente el reflejo de que el tipo de cambio no afecta tan directamente como los precios relativos a las importaciones, sino que el efecto es un tanto indirecto. 
+PIM, B • IM. En este caso, el efecto de ambas variables sobre las importaciones era de esperarse. Después de todo, en los casos anteriores ya se había detectado la causalidad de ambas sobre las i mportaciones y sobre la otra variable, s6lo que en este caso, considero que el principal objeto de influencia son las i mportaciones y no la otra variable. 
+En el caso del modelo ajustado para las exportaciones tenemos r esultados muy parecidos a los del modelo de las importaciones, s6lo que ahora obtenemos valores mayores para los estadísticos. 
+PBX • B, BX. En este caso la hipesis nula no se rechaza. El precio relativo de las exportaciones influye significativamente sobre las otras dos variables. Considero que principalmente la i nfluencia se da sobre el volumen de exportaciones. 
+B • PBX, EX. Nuevamente encontramos evidencia econométrica suficiente para argumentar causalidad de el tipo de cambio sobre los precios relativos de las exportaciones y el volumen de las mismas. 
+PBX, E• BX. La influencia de las variables anteriores se hace 
+patente después de verificar el estadistico de prueba y verificar que se rechaza la exogeneidad de el volumen de importaciones con respecto al par de variables considerado. Esto no debe sorprender, ya que es de esperarse que un resultado como el anterior se obtenga al realizar la prueba de causalidad. 
+Estos resultados proveen evidencia de que en realidad hay bastante influencia de los precios relativos y el tipo de cambio r eal sobre las importaciones y las exportaciones, ya sea i ndividualmente o en conjunto. Esto es el reflejo de que en r ealidad no podemos desechar a dichas variables cuando se trata de estudiar la dinámica del comercio exterior sino que, por el contrario, debemos buscar otras variables que sean complementarias a las anteriores y de esta manera construir mejores modelos que expliquen la realidad con mayor fidelidad y complementen la teoria econica. 
+El análisis realizado anteriormente incluye icamente la 
+relaci "causal", sin establecer el signo de dicha relaci debido 
+a que no es clara y consistente la direcci de la causalidad, sino 
+que, como se verá mas adelante en el análisis de respuesta a 
+i mpulsos, se t i ene que la relaci a través del tiempo entre las 
+variables no se da en un solo sentido, siendo la respuesta a lo 
+l argo del tiempo la que mas nos interesa, ya que es muy dificil 
+establecer un vinculo contemporáneo entre las variables que 
+componen el modelo. 
+II.4.2 Respuesta a Impulsos. 
+En al apartado anterior hemos hecho una partici del conjunto de variables en subconjuntos zt y xt y definimos causalidad de Granger. Esta definici involucra todas las variables del sistema. Sin embargo, es de interés pensar en co responde una variable a un impulso en otra variable de un sistema que involucra además algunas otras variables. A continuaci analizaremos este tipo de causalidad graficando el efecto de un choque exeno o innovaci en una de las variables sobre las demás. Un aspecto importante al analizar lo que se refiere a las respuestas de impulsos es el hecho de que éstas deben ser obtenidas de la representaci de promedio~ miles (MA) de nuestro modelo VAR. As1 pues, la ecuaci (1) puede escribirse como un proceso MA infinito de la forma 
+lo cual puede ser representado de manera equivalente como 
+(3) 
+Encontrar los coeficientes Bes equivalente a invertir la matriz polinomial de rezagos A(L). Excepto por la escala, trazar las respuestas del VAR a un choque aleatorio es equivalente a derivar la representaci MA del sistema. De aqu1 que la matriz A-1(L) sea conocida como la matriz de respuesta a los impulsos y provee los ingredientes básicos para nuestro análisis. La representaci MA nos permite examinar la respuesta dinámica de cada componente de Xt a un choque unitario originado en una de las variables. 
+Inicializando todas las innovaciones y los niveles del vector igual a cero, excepto u0 y x0, podemos trazar la respuesta del vector X a través del tiempo. Esta simulaci periodo a periodo puede ser l levada a cabo de manera indefinida para dibujar la respuesta del VAR a un choque unitario y de una sola vez en una serie en particular. Simulando un choque unitario en Xj (j=l,2,3) obtendremos la j-ésima columna de la matriz B s periodos adelante, de cada variable en X, de un choque inicial en la j-ésima variable. 
+Sin embargo, simular la respuesta del VAR a un choque unitario (innovaci) en una serie en particular, no considera la correlaci contemporánea en el vector de innovaci ut. As1 pues, es problemático asumir que, para un cierto momento, un choque externo en una variable afecta so a esa variable. Tal supuesto es s6lo válido si uno pudiera pensar que los choque en diferentes variables son independientes. Si no se diera el caso de que fuesen i ndependientes, se podr1a argumentar que los términos de error consisten en todas las influencias y variables que no están directamente incluidas en el sistema. As1, además de las fuerzas que afectan todas las variables, habría otras fuerzas que afectan a una sola vari able, digamos la vari abl e i. Si un choque en esta vari able es debido a tales fuerzas externas, puede ser razonable i nterpretar los coeficientes Bi como las respuestas dinámicas. Por otro lado, la correlaci en los términos de los errores pueden 
+i ndicar que es probable que un choque en una variable sea acompafiado de un choque en otra variable. En este caso, suponiend9 
+que inicialmente todos los otros residuales son cero, puede ocasionar que las gráficas de respuesta dinámica de las otras variables sean erreas. Esta es la raz por la cual al analizar la respuesta a impulsos de nuestro sistema se tenga que llevar a la representaci de promedios miles. 
+Si ten~mos dicha representaci, es posible encontrar más de una forma de escribir tal proceso MA. Esto es, dado un proceso MA, podemos encontrar una matriz G no singular tal que la ecuaci (3) · pueda ser expresada como 
+-
+donde los componentes de Wt no están correlacionados y tienen como matriz de varianzas a la identidad, es decir Ew = Ik • Dicha 
+representaci se puede obtener debido a que podemos descomponer la 
+matriz Eu como Eu = PP1 , donde P es una matriz triangular inferior, 
+y definiendo G8=B8P y Wt=P'Ut. De esta manera hemos ortogonalizado nuestro sistema, es decir, las nuevas innovaciones Wt no están correlacionadas en el tiempo ni entre ecuaciones. La matriz P puede 
+ser cualquier soluci de PP1 = Eu • Hay varias posibles 
+factorizaciones de la matriz positiva definida~, entre ellas ae encuentra la matriz de factorizaci de Choleski. 
+32 
+Sin embargo, la factorizaci de Choleski descrita anteriormente tiene el problema de que cuando cambiamos el orden de las variables en el VAR cambian los resultados de los choques en las variables y en ese sentido podemos decir que tiene una representaci e interpretaci semi-estructural. Por ejemplo, una innovaci de la variable i es diferente, y en ocasiones significativamente, si ponemos dicha variable primero que si la ponemos al final del sistema. Es claro que es muy dificil encontrar una manera idea de colocar las variables que sea generalmente aceptada. Bernanke y Sims han propuesto formas alternas para evitar este problema, que dependen de imponer alguna estructura econica2• 
+De la siguiente representaci del VAR 
+M 
+Ye = ¿ AtYt-s+ut con E ( ueu/) =~u s•O 
+los coeficientes de rezagos A8 pueden ser estimados por medio de minimos cuadrados ordinarios sin considerar alguna restricci en la matriz ~-Supongamos ahora que escribimos el modelo de tal forma que 
+
+u2t = au1t+v2t 
+U3t = Pu1t+v3t donde suponemos que los vit (i=l,2,3) son ortogonales. Esto impone una restricci sobre la matriz~: hay seis parámetros libres en ~ y so cinco en esta especificaci, a saber, o, p y las 
+2 Ver Doan (1992). 
+varianzas de vit. Podemos obtener una factorizaci de Choleski agregando ya sea u2t a la ecuaci de u3t o viceversa. As1, tal modelo origina que u2t y u3t están relacionados so a través de 
+ult. 
+En general, si escribimos el modelo de innovaci como 
+D diagonal 
+necesitamos minimizar sobre los parámetros libres de A y D la funci de verosimilitud 
+-2ln I A 1 + Eln (ASA1) donde s es la matriz de covarianzas de los residuales de la muestra. As1, cuando consideramos el modelo de innovaciones, éste se asemeja mucho a un sistema de ecuaciones simultáneas. Sin embargo, no existen variables exenas. Esta tima forma de descomposici estructural es la que empleamos para construir las respuestas a impulsos en las variables, debido a que evitamos el problema de considerar un orden estricto que deban seguir las variables, considerando que en la realidad existe cierta interdependencia de unas variables macroecon6micas con otras y no podemos hablar de una que en particular sea totalmente independiente de las demás. 
+34 
+GrAfica 7 
+Respuesta de Exportaciones a: 
+
+Periodo 
+1-lrrp.Jso en PEX ---1~en ITCR 
+An6lisis de las gr6ficas de respuesta a impulsos. 
+Una vez que se ha encontrado que tanto los precios relativos y el tipo de cambio tienen una influencia sobre los flujos comerciales, pasamos a analizar impactos de estas variables individualmente sobre las importaciones y exportaciones. De esta manera, se simula un choque exeno en cualquiera de estas variables y se grafica la respuesta a dicho estimulo sobre las otras variables. Como se puede apreciar en la gráfica 7, las 
+35 
+respuestas de impulsos en el caso del modelo de las exportaciones se dan de una manera inmediata. Se aprecia que efectivamente hay una respuesta inmediata de las exportaciones al tipo de cambio y al precio de las exportaciones. 
+Al darse el impacto sobre el precio de las exportaciones, también aumenta de manera positiva la tasa de crecimiento del volumen de las exportaciones. Esto podria explicarse de la siguiente manera: al darse el incremento de los precios, los exportadores están dispuestos a ofrecer una mayor cantidad de bienes. Sin embargo, con el paso del tiempo, el efecto tiende a revertirse, es decir, la tasa de crecimiento de las exportaciones se vuelve negativa. Esto ocurre porque también la dinámica de la tasa de cambio en el precio de las exportaciones va decreciendo a l o largo del tiempo hasta volverse negativa. De hecho, esta tima variable se vuelve negativa un poco antes de que la primera lo haga y al revertirse la tendencia del impacto inicial es natural pensar que el flujo de las exportaciones disminuye también. Dicha tendencia negativa se mantiene asi durante aproximadamente seis meses, tiempo en que la tasa de cambio en los precios regresa a una tendencia positiva y poco tiempo después la tasa de cambio de las 
+exportaciones toma la misma tendencia. Sin embargo, este efecto es mucho menor que el inicial y se diluye a lo largo del tiempo hasta volverse casi nulo. 
+En lo tocante a la tasa de crecimiento del tipo de cambio real, al aumentar esta tasa de cambio las exportaciones no responden de manera inmediata sino que hay un periodo, de aproximadamente dos 
+meses, en que no hay respuesta de las exportaciones. Esto coincide de alguna manera con los resultados que obtuvimos cuando iniciamos l a fase de identificaci del modelo, ya que éste nos indica que l as exportaciones dependen indirectamente de la tasa de crecimiento del tipo de cambio real y el impacto no se tiene de manera i nmediata. Sin embargo, las exportaciones no son insensibles al tipo de cambio , ya que el aumento ex6geno en el mismo impacta positivamente al tercer periodo. Aunque el choque desaparece r ápidamente a lo largo del tiempo y tiene un pico (negativo) en el cuarto periodo, para luego recuperarse lentamente y hacerse positivo en el sexto periodo, fecha en la cual tiende a estabilizarse. Esto ocurre asi debido a que el choque externo sobre el tipo de cambio también se disipa velozmente y en virtud de que hay un cierto periodo de desfase entre las variables, los impactos no se dan de manera simultánea. 
+Analizamos ahora la respuesta de las importaciones. De la gráfica 8 vemos que su comportamiento es un poco más irregular que e l de las exportaciones. En primer lugar, el choque en el precio r elativo de las importaciones se resiente de una manera inmediata, aunque contraintuitiva, en el volumen de las importaciones. En el periodo cero, se da un aumento en éste, pero dicho aumento se vuelve negativo en el periodo inmediato posterior y se conserva con s igno negativo de éste punto en adelante, alcanzando un pico en el t ercer periodo. El efecto del impulso se diluye prácticamente después de que pase un a en que tuvo lugar el choque. 
+Grifica 8 
+Restpuesta de Importaciones a: 
+
+n 
+1 \ ' 1 \ \ I \ 
+r ,
+' 
+o. 
+1 
+-0. 1' 
+1 1 
+1 
+1 
+-0.004 
+1 
+' 
+' 
+-o.ooe 
+-0.008 
+-0.01 
+-0.01~­
+
+2 3 • s e 1 e o 10 11 12 13 M 1s 1e 11 1e 10 20 21 22 23 ~ Periodo 
+¡-IMPULSO EN PIM ---IMPULSO EN ITCR 
+Un comportamiento similar, aunque de signo contrario, es el que s e produce cuando tiene lugar un estimulo externo sobre el tipo de cambi o. Inicialmente, sobre las importaciones se da un crecimiento negativo, mismo que se ve anulado y al siguiente periodo se r evierte, cambiando a positivo a partir del periodo uno, manten16ndose positivo por casi todo el afio con excepci6n del cuarto y noveno periodos, en los que se vuelve negativo. Dicho comportamiento es fácil de explicar cuando se analiza la dinámica que sigue el tipo de cambio real. En el tiempo cero, cuando se da el impulso, aumenta, aunque rápidamente se vuelve negativo a partir 
+38 
+del primer periodo, conservando este signo hasta el sexto periodo, que es cuando se vuelve nuevamente positivo por un par de periodos (aunque el efecto del impulso prácticamente se ha diluido). Estindica que cuando las importaciones tienen una tendencia positiva (tienden a aumentar) es cuando el precio de las mismas tiende a 
+disminuir y viceversa. El mayor aumento en el crecimiento de las importaciones se tiene alrededor del quinto periodo, aunque éste disminuye poco a poco a después de cinco periodos. Una posible explicaci para éste comportamiento es que la respuesta de las importaciones al tipo de cambio sea rápida y los ajustes toman poco tiempo para llevarse a cabo. 
+Capítulo ID. 
+III. Conclusiones. 
+El comportamiento de los flujos de comercio internacional de nuestro país se puede determinar por varios factores, entre ellos el tipo de cambio y los precios relativos. Sin embargo, la política comercial juega un papel fundamental en el volumen de dichos flujos. Esto es, la apertura comercial que ha tomado forma en nuestro país en los timos ocho as ha conseguido altas tasas de crecimiento de las importaciones y exportaciones. En un principio, y ante un tipo de cambio subvaluado, las importaciones mantuvieron niveles bajos de crecimiento que con el transurso del tiempo fueron sufriendo aumentos cada vez mas grandes hasta que en los timos tres as registran altas tasas de crecimiento. Las exportaciones se comportaron de una manera inversa, ya que cuando el tipo de cambio real se fue apreciando, éstas fueron disminuyendo su ritmo de crecimiento, hasta que prácticamente dejaron de crecer. 
+El ajuste del modelo de las exportaciones fue mejor que para el modelo de importaciones, sin embargo en ninguno de los dos casos se logrexplicar, de manera clara, el patr de comercio de nuestro país. Tal situaci puede deberse a que, al menos en los timos as, ante la estabilidad del tipo de cambio real y la casi nula variaci en los precios relativos, la demanda de productos extranjeros en nuestro país y la oferta de bienes nacionales para el exterior dejara de responder a los cambios en el tipo de cambio real y en los precios relativos, que en realidad no sufrieron cambios significativos para este período. Así las cosas, los 
+agentes solamente responden a la dinámica con la que crecen los insumos de procedencia extranjera requeridos para la fabricaci de bienes nacionales, así como a la demanda que se tiene en el país por determinados productos. 
+Por el lado de las exportaciones, el estancamiento en la tasa de crecimiento que se produce se explica debido a que, como el tipo de cambio está casi invariante y el índice de precios de los productos de exportaci tiende a decrecer con peques cambios a partir de 1991, la forma de hacer más competitivos los productos nacionales en el extranjero es por medio de un aumento en la productividad y un abaratamiento de los costos para los exportadores. Estos timos factores habían ya experimentado ciertas mejorías en períodos anteriores y para los timos dos as ya no se pueden lograr aumentos considerables en productividad, mientras que los costos no pueden reducirse más, debido a que el ancla principal de los mismos, el salario, se encuentra en un punto en que ya no puede disminuir. De esta forma, el volumen de las exportaciones no sufre casi variaci para estos dos as. 
+Ya se dijo que no es el objetivo de este trabajo el mostrar o encontrar el tipo de cambio real de equilibrio en el largo plazo. Sin embargo, es importante la tarea de encontrar un tipo de cambio real que mantenga atractivos los mercados internacionales para los exportadores y que no propicie un encarecimiento considerable de los productos nacionales con respecto a los importados y ocasione un crecimiento en la demanda de bienes extranjeros ocasionado icamente por el abaratamiento de éstos y no por un aumento 
+42 
+relativo en su calidad con respecto a los bienes mexicanos. 
+Por otro lado, con el control de la inflaci se evitará que los bienes importados resulten cada vez más baratos, ya que no se perderá competitividad por el lado de los precios relativos y cuando se logre tener una inflaci equiparable a la internacional dejarán de verse afectados los términos de intercambio y el papel de regulador de importaciones que tienen los precios relativos ya no será tan importante y el tipo de cambio real será el principal i nstrumento para regular el comercio. 
+Gráficas de las series originales. 
+
+DATOS REALES (BASE 1980) 
+2000 
+·1 
+1rco-l 
+500 1 ¡
+! 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 'J.¡ 1 1 1 1 1 1 1 1 1 'J.' 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+E'lll MatMay Jut S.pNovEne MatMay Jul Sep NovEne ~ JIA SepNo,,Ene May Jul SepfllovC_ne MarMay Jul SepNo11EneMar.,1ay Jul Sep llloYEr.e Mar~ Ju1 Sept,;ov Feb Abt JunAgoOct Die Feb AbtJun AgoO..""t Die Feb AbtJunAgo Oct Ole Feb N:ir .lwgoOct Die FebAbt JunAgoOct Die Feb AbtJunAgoOct Die Feb A!x w'unAgo 0ct Die: 
+-+-EXPORTACIONES-¾-IMPORTACIONES 
+Tipo de Cambio Real (Base 1980) 
+
+7­
+1 
+:., ­
+5,5 
+" ' 
+
+i 
+'5-1 , ~ -T"""l"'T...,.....,....,...........~T"T"'T"...........................r-r-rT"T'TT'T"T""'T"'T'"il""T'T'TT'T.,..,..,-rrir-rrT"T"TT'T"'l"T"T'1r-T"'T'T"T'TT'T"T-rr"'l"'T'T"T'T"'T'"'T"T""l""T"'T""~ 
+1987 1988 1989 1990 1991 1992 1993 
+Precio Relativo de las Exportaciones 
+20~---------------------------------­
+18 
+16 
+14 
+12 
+10 
+
+
+Precio Relativo de las Importaciones 
+8;~----------------------------------, 
+
+' \ 
+4 
+3 
+2 
+1........,.....--r-m -,.--,-,....,....,...,........-r-.-,,..,--,,--.....-r-,......,.."T"T"",.........'"r""P"'.....,.........-r-T'"T""lr-T"T".........,......,.."T"T"" ..........'"T"T""T'"T"T""T"T"T'"T""lr-T"T"...-r-,....,...,.'"T"T""m..,.,....,.,..-,'""Í""T"rrirt' 
+
+1987 1988 1989 1990 1991 1992 1993 
+Gráficas de las series usadas en el modelo. 
+Exportaciones 
+Tasa de Crecimiento Mensual 0,2 0,15 ­0,1 ­0,05 
+-0,05 -0,1 -0,15 
+-0,2 
+-0,25 1987 1988 1989 1990 1991 1992 1993 
+
+Precio Relativo de las Exportaciones 
+Tasa de Crecimiento Mensual 
+0,2.....-------------------------------, 
+0,15 
+0,1 
+0,05 
+\ /\ 
+-0,05 
+-0, 1 
+-0, 15...1____......,..,......,..,......,..,~..........,..._........................................__...__..........................................................................~.,......,.~.,......,..,...,.. 
+
+1987 1988 1989 1990 1991 1992 1993 
+Importaciones 
+Tasa de Crecimiento Mensual 
+0,3-,--------------------------------, 
+0,2 
+-o. 1 
+-0,2 
+-0, 3--',,-r....,.....,.-r"l'""'l'.........,,..,........,...,..,...,.....,........,...,.......,...,......,r'"'l""T"T"T"T"T"'l"'"'l"..,..,........,......,r"T"T"',...,..,..T"T'T'T"'T"T"T"T"'l,...........,r'"'l""T"T"T"T"'T"'T"T"T"T"'l""T"T""r'"'l""T"T"T"T"TTT..,..,.. 
+
+
+1987 1988 1989 1990 1991 1992 1993 
+Precio Relativo de las Importaciones 
+Tasa de Crecimiento Mensual 
+0.02~----------------------------. 
+
+-0,06 I'\ (\ 
+-0,08 
+VV\ 
+-0,1 -0,12 -0,1 4 
+-O,16.....,._,..,........,..............,......,..P"T""l"".,......,..r,""l""l"'T"'l""ll"'T"'P"'i..........,.....,...,e"T"T"',..,...,...,...,...,...,......-,-P.....-,-P.........."'l'""T"T.........."'l'""T"T..........'T"T"'T.........."T"T"T"T"T"T"T"T"T"T"T"T"T"T' 
+1987 1988 1989 1990 1991 1992 1993 
+Indice del Tipo de Cambio Real 
+Tasa de Crecimiento Mensual 
+
+1987 1988 1989 1990 1991 1992 1993 
+TaiJié:t .2 r Cntenos para selecc,onar el orden del' VAR 
+Cv"'""'r+"""'""",...,,.
+....... ¡-·· •. . • .. .. .. .. ... 
+¡ 
+i Rezagos Akaike Hannan-Quin Schwarz 1 1 ., 
+..-.A ._._ftAA
+1 •.:::U,"+00.J~ -20,í3595 -í9,97542
+1 1 2 -21,02212 -20,35013 -20,02655 1 3 -21 .2518-9 -20.~'301 -19,74-313 1 "'"' l'lnl'IC'., <1n "'~"'"' 
+"1" " • ..:;, 1 ,v.:1...,:.JI -20,420,s • 1 .:1,vv,,
+1 
+5 -20,5150tS -1ij,779:J2 -18,~1
+l 
+1 6 -20,6641 -19,55785 -18,55551 
+'>t\ n,xu:n 10 ,,Qs;~
+7 &-U,.J4...,._,..., H},4444
+• '"'•~"'"'"~ 1 
+8 -2i,22552 -19,35264 -17,99384
+1 1 9 -20,44538 -19,17574 -17,63414 
+l .1AQQnAA .17?R?7R
+10 -20,66616 ·-,-..... ---.. ·---· ­
+., J¡
+1 --~ .. ,,.,,.....
+1 1 -21,10874 -19,01703 -11,1uv101 
+1 12 -20,52007 -19,00232 -16,89278 
+Tat>ta3 -··-·------------------------.
+Criterios para seleccionar el orden del VAR Importaciones 
+Rezagos  Akaike  
+1  -21,66567  
+2  -22.00507  
+".:>  -22,15308  
+4  -22,28838  
+5  -21 ,51715  
+6  -21,79582  
+7  -22,09992  
+8  -22.33011  
+9  -21,73416  
+10  -23,71113  
+11  -23,14588  
+12  -22,71617  
+
+Hannan-Ou!n  Schwarz  
+-21,33323  -21,17269  
+-21 .33309  -21.0096  
+-21,1342  -20,64498  
+-20,915  -20,25751  
+-20,78141  -19,9529  
+-20,68957  -19,68723  
+-20,61472  -19,43565  
+-20.45723  -19.09843  
+-20,46452  -18,92291  
+-20,43533  -18,70773  
+-21,05417  -19,13729  
+-21, 19841  -19,08887  
+
+Bibliografía. 
+Bahmani-Oskooee. M. (1986). Determinant• of international trade flow•. Journal of development Economics, 20, 107-123. 
+Brillinger, David R. (1980). Time aeries. Data Analysis and Theory. Holden-Day, Inc. 
+Doan, Thomas A. (1992). RATS. Uaer'a Manual. 
+Goldstein, M. y Khan, S. (1976) Large versus amall price changea and the demand for exporta. International Monetary Found Staff Papera, 23, 200-225. 
+Junz, H. y Rhombery, R. (1973) Price competitiveneaa in export trade among industrial countrie•. American Economic Review, 63, 412-418. 
+Lkepohl, Helmut. (1991). Introduction to Multiple Time Serie• Analyaia. Springer-Verlag. 
+Orcutt. G. H. (1950) Meaaurement of price elaaticitiea in i international trade. Review of Economics and Statistics, 32, 117-132. 
+Pankratz, Alan. (1983). Porecaating with univariate Box-Jenkina model•. John Wiley & Sons. Sims, Christopher A. (1980). Macroeconomica and reality. Econometrica 48, pp 1-48. 
+Tegene, Abebayehu. (1991). Trade flowa, relative prices and -~~active exchang• rat••• a VAR on Bthiopian data. Applied Economics, 23, pp 1369-1376. 
+57 
+

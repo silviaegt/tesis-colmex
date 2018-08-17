@@ -1,0 +1,2173 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE 
+MAESTRIA EN ECONOMIA EL COLEGIO DE MEXICO CENTRO DE ESTUDIOS ECONOMICOS 
+EVALUACION DE PRUEBAS OMNIBUS DE NORMALIDAD MEDIANTE ESTUDIOS DE MONTE CARLO. 
+ANTONIO GARCIA CARREÑO PROMOCION 1989-91 
+ENERO, 1992 ASESOR: Dr. Carlos Manuel Urz Macías REVISOR: Dr. Angel Calder Madrid 
+A mis padres 
+AGRADECIMIENTOS 
+-A mis padres y hermanos por su incondicional apoyo para la realizaci de mis estudios. 
+-A mis maestros de El Colegio de México, en especial a Carlos Urz, quién paciente y desinteresadamente me asesoren este trabajo. 
+A Laura Urdapilleta, quién con su compafiia y apoyo me ayuda sobrellevar la carga académica sin desistir. 
+A mis comparos y amigos, con quienes comparti momentos dificiles, pero también muy gratos, durante el programa de maestria. 
+A todas aquellas personas que de una u otra manera contribuyeron positivamente para que lograra este objetivo. 
+RESUMEN 
+Mediante estudios de Monte Carla, se eval el poder de tres pruebas nibus de normalidad: la LM de Bowman-Shenton­Jarque-Bera, la K2 de D'Agostino-Pearson, y una recientemente propuesta por Urz (1991) llamada aqui JBU. 
+La evaluaci de las pruebas se realiza tanto sobre observaciones como sobre residuos, generando las primeras computacionalmente y estimando los segundos mediante minimos cuadrados ordinarios en base a las observaciones generadas. Para el caso de observaciones se consideran 12 distribuciones de probabilidad, y valores de significancia calculados empiricamente para cada uno de los 19 tamas de muestra; y 5 distribuciones para el caso de residuos, con vaiores de significancia tanto empiricos como asinticos, también considerando 19 tamas de muestra. 
+Los resultados del trabajo se resumen como sigue: i) el estadistico JBU es eficiente, teniendo mejor convergencia que el K2 y el LM, ii) el poder de cada prueba depende de la distribuci de probabilidad sobre la cual se eval, iii) el poder relativo de las pruebas no se altera al evaluarse sobre residuos o sobre observaciones, iv) el poder absoluto de ellas es menor en el caso de residuos, confirmándonos la idea de supernormalidad de los errores de regresi, v) al considerar valores de significancia asinticos, la prueba LM se comporta muy mal en tamas de muestra peques, en comparaci con la k2 y la JBU, ya que sobrestima la normalidad de la muestra y vi) de lo anterior, se sugiere la prueba JBU como una buena alternativa a la LM para muestras peques, y a la K2 dado su mejor comportamiento asintico y la facilidad de su cálculo. 
+
+INDICE 
+Introducci ....................................................
+......................................
+...... ........................................................... 1 
+l. Descripci de las pruebas utilizadas .........
+..................................... 3 
+11. Principios y métodos generales de generaci de neros aleatorios ................................................................. 9 
+111. Resultados de los experimentos de Monte Cario .................................................................................................................................................. 28 
+Conclusiones .
+...................................................
+....................................................................................................... 34 
+Bibliografía 36 Apendice A Resumen de resultados Apendice B Programas utilizados 
+
+INTRODUCCION 
+INTRODUCCION 
+Las pruebas de normalidad son técnicas de inferencia estad1stica disedas para probar si la distribuci de una muestra difiere de la normal o no. Existe una larga historia de estas pruebas, abarcando entre otras las basadas en el tercer y cuarto momento respecto al origen, /bl y b2, la de análisis de varianza W de Shapiro-Francia, la K2 de D'Agostino-Pearson, y la LM de Bowman-Shenton-Jarque-Bera (buenas exposiciones de ellas aparecen en Pearson-D'Agostino­Bowman, 1977, White-Macdonald, 1980, y Jarque-Bera, 1981). Las pruebas W, K2 y LM tienen la caracter1stica de ser pruebas nibus, en el sentido de que son capaces de detectar desviaciones de normalidad debido tanto a asimetr1a corno a kurtosis. Las pruebas /bl y b2 tienen excelentes propiedades para detectar no-normalidad asociada con asimetr1a y con kurtosis, respectivamente. 
+En el presente trabajo se eval el poder de tres pruebas nibus, siendo dos de éstas ampliamente conocidas, la LM y la K2, y una tercera recientemente sugerida por Urz (1991), llamada aquí JBU, la cual es una modificaci de la prueba LM que consiste en sustituir la estandarizaci del cuarto momento, por la estandarizaci del inverso del mismo cuarto momento. Esto se hace para acelerar la convergencia del estadístico. La raz de que no se estudien otras pruebas, tales como la W de Shapiro y Wilk, y la R de Pearson, D'Agostino y Bowman, es que Jarque y Bera (1981) han mostrado anteriormente que son inferiores a la prueba LM. 
+En este trabajo se eval el poder de las tres pruebas citadas tanto sobre observaciones corno sobre residuos estimados, generando las primeras cornputacionalmente, y estimando los segundos mediante mínimos cuadrados ordinarios en base a las observaciones generadas. Para el caso de observaciones, se consideraron 12 distribuciones, y se 
+evaluaron las pruebas con 19 tamas de muestra, considerando valores de significancia calculados empiricamente para cada estadistico y para cada tama de muestra. Los mismos tamas de muestra fueron tomados para la evaluaci sobre residuos, so que en este caso se consideraron icamente cinco distribuciones; se utilizaron valores de significancia tanto empiricos como asinticos, esto timo debido a que en aplicaciones econométricas prácticas los valores de tablas son los comunmente utilizados. 
+En el capitulo 2 se describen los tres estadisticos de prueba (a través del documento se usa indistintamente los términos "prueba" y "estadístico de prueba"). Luego en el capitulo 3 se exponen los principios generales de simulaci computacional, asi como los programas utilizados en la generaci de variables seudoaleatorias con distribuci de probabilidad especifica. El capitulo 4 comenta los resultados del estudio de simulaci, comparando el poder estimado de las distintas pruebas. En el capitulo 5 se resumen las conclusiones del trabajo. Para finalizar aparecen dos apéndices: el apéndice A presenta las tablas de resultados a las que se hace referencia en el texto, y el B incluye los programas usados en el presente trabajo. 
+
+DESCRIPCION DE LAS PRUEBAS UTILIZADAS 
+I.-DESCRIPCION DE LAS PRUEBAS UTILIZADAS 
+Los estadisticos muestrales de asimetria /bl y kurtosis b2 se han usado en forma separada, junto con muchos otros como el o* de D'Agostino, el estadistico R de Pearson­D'Agostino y el W de Shapiro-Wilk, para probar la hipesis nula de normalidad de las observaciones, y muchos de ellos pueden ser modificados para probar normalidad de los errores de regresi (para un excelente resumen de estas pruebas ver White y Macdonald, 1980). A partir de la aparici del trabajo de Jarque y Bera (1981) , la prueba de normalidad mediante el uso del estadístico LM, se ha convertido en la más popular, debido a su buen desempe, asi como a la facilidad de su cálculo. Extra sin embargo, el poco interés mostrado por la prueba propuesta ya desde 1973 por D'Agostino y Pearson (D'Agostino y Pearson, 1973) los cuales sugieren una prueba nibus similar a la LM en que usa estandarizaciones del tercer y cuarto momento, cuya suma de cuadrados, llamada K2, se distribuye asinticamente como una chi-cuadrada con 2 grados de 1 ibertad (por prueba nibus entendemos aquella capaz de detectar desviaciones de la distribuci normal, debido tanto a asimetria como a kurtosis). Empíricamente se muestra en este trabajo las mejores propiedades de convergencia del estadistico K2 en comparaci con el LM. 
+Los problemas de una lenta convergencia a la distribuci chi-cuadrada con 2 grados de libertad del 
+estadistico LM tiene su origen en los problemas que muestra la distribuci del estadistico de kurtosis b2. En la tabla 1 se muestran los resultados de valores de significancia empíricos obtenidos con 10,000 repeticiones, tanto para Jbl como para b2, para distintos tamas de muestra. De estos resultados, es fácil observar una marcada asimetria hacia la derecha de b2 para muestras chicas, no siendo ése el caso de /bl, lo cual nos corrobora la idea de que b2, aunque 
+asinticamente simétrico, no lo es para muestras paques. Ello nos conduce a una sobrestimaci de la significancia de valores altos y a una subestimaci de la significancia de valores bajos, cuando en muestras chicas suponemos una distribuci normal del estadístico b2. 
+Similarmente, la tabla 2 nos confirma la convergencia lenta y asimétrica de la estandarizaci de b2. 
+Muchos estudios se han realizado para determinar la distribuci del cuarto momento estandarizado b2, y entre ellos sobresale el de Bowman y Shenton (1988), quienes sugieren un mejor comportamiento asintico hacia la distribuci normal del inverso de b2 (1/b2). Retomando esta idea, Urz(1991) propone una modificaci al estadistico LM de Jarque-Bera-Bowman-Shenton, al sustituir la estandarizaci del b2 por la estandarizaci de 1/b2. Se muestra empiricamente una mas rápida convergencia de este estadistico (llamado en lo subsecuente JBU) en relaci al LM convencional, y una convergencia más estable en relaci al K2 de D'Agostino y Pearson. En la tabla 3 se observa este resultado de manera clara: concentrándonos en a=.1 y .05, los valores calculados empiricamente de los 3 estadisticos difieren considerablemente, sobre todo en tamas de muestra chicos, siendo estos muy distantes del valor asintico para el caso de LM, no asi para el caso de los otros dos estadisticos, cuyos valores son desde muestras chicas, mucho mas cercanos al valor de tablas de una chi-cuadrada con 2 grados de libertad. Vale mencionar el comportamiento de los valores calculados de K2, los cuales para el caso de a=.1 son desde N=lO casi iguales al valor asintico, y también para el caso de a=.05, solo que aqui la convergencia parece ser hacia abajo, con ciertos picos en N=35 y N=300. En general la mejor convergencia, considerando estabilidad y rapidez, es la del estadístico JBU. 
+Como se mencionen la introducci, se consideraron tres pruebas nibus basadas en los estadísticos LM, K2 y JBU, todos ellos con distribuci asintica chi-cuadrada(2). Muchas pruebas no fueron incluidas ya que anteriormente se ha reportado que para una amplia gama de distribuciones, la prueba Jarque-Bera ha tenido un mejor comportamiento en la detecci de no normalidad. A continuaci se describen los tres estadisticos en los cuales se basan las pruebas utilizadas. 
+I.1.-ESTADISTICO LM DE BOWMAN-SHENTON-JARQUE-BERA 
+Suponiendo que las alternativas a la normal son, otros miembros de la familia de Pearson, y mediante el uso del multiplicador de Lagrange, Jarque y Bera (1981,1987) derivan la expresi del estadístico LM (esta misma expresi es derivada por Urz (1989) para el caso cuando las alternativas son de máxima entropía). Esta expresi está dada por 
+Este estadistico se distribuye como una chi-cuadrada con 2 grados de libertad, siempre que la distribuci de la muestra sobre la que se calcula sea la normal. La hipesis nula de normalidad es rechazada cuando el valor calculado de LM excede el valor critico de la distribuci chi-cuadrada(2) para un a determinado. Para el caso de la evaluaci empírica de esta prueba, se calcularon los valores de significancia de 
+LM  para  distintos  tamas  de  muestra  (tabla  8),  dada  la  
+dificultad  de  obtener  la  distribuci  muestra!  del  LM  
+mediante métodos analíticos.  
+
+Suponiendo una distribuci normal con media cero, la 
+expresi (1) se reduce a 
+LM = N[(./bl) 2 /6+(b2-3) 2 /24] 
+equivalente a la propuesta por Bowman-Shenton (1975). 
+I.2.-EL ESTADISTICO K2 DE D'AGOSTINO-PEARSON 
+En 1973, D1Agostino y Pearson proponen una prueba nibus para normalidad, mediante la previa transformaci de ./bl y de b2 a nuevas variables Zl(./bl) y Z2(b2), obteniendo el estadístico K2 = z12 + z22 , el cual tiene asinticamente una distribuci chi-cuadrada(2). La transformaci de cada 
+. 
+momento es la siguiente (D'Agostino et. al., 1990) (N representa el tama de muestra): 
+Para el caso de ./bl 
+-Se calcula ./bl de la muestra, y luego se cai~uia -Y= ./bl{(N+l) (N+3)/6(N-2) }1/2 -P2 = 3(N2 +27N-70) (N+l) (N+3)/(N-2) (N+5) (N+7) (N+9) -w2 = -1+{2CP2-l)}1¡2 -& = 1//ln(W) -a= {2/(W2 -1)}1/ 2 
+Finalmente Z(./bl) = &ln(Y/a+{(Y/a) 2 +1} 1/ 2) es distribuida normalmente bajo la hipesis nula de normalidad de la poblaci. 
+Para el caso de b2: 
+-Se calcula b2 de la muestra, y luego se calcula -E(b2) = 3(N-l)/(N+l) -var(b2) = 24N(N-2) (N-3)/(N+l) 2 (N+3) (N+5) -x = (b2-E(b2))//var(b2) -P1=6(N2 -5N+2)/(6(N+3) (N+5))/((N+7) (N+9)/(N(N-2) (N-3))) 
+-A= 6+(8/P1)[2/P1+/(1+4/(P1) 2 )] 
+-Z(b2)=((1-(2/9A))-[(l-2A)/(l+x/(2/(A-4))]1/ 3 )//(2/9A) 
+Z(b2) se distribuye normalmente bajo la hipesis nula de normalidad de la poblaci. 
+La  tabla  4  nos  muestra  las  distribuciones  empiricas  de  
+Z(/bl)  y  de  Z(b2),  siendo  éstas  bastante  cercanas  a  la  
+normal.  
+
+I.3.-ESTADISTICO JBU DE JARQUE-BERA-URZUA 
+Como se mencionanteriormente, una de las principales razones de la lenta convergencia del estadistico LM es la
+. 
+fuerte asimetria en la distribuci de la estandarizaci de b2, siendo ésta especialmente preocupante en muestras de tama inferior a 150. Esto puede llevarnos a una errea utilizaci de este estadístico, cuando queremos detectar normalidad en residuos de regresiones econicas, donde el tama de muestra es por lo regular peque. Es en el afán de lograr una mejor convergencia de LM que Urz propone el siguiente estadistico: 
+JBU = N[(/bl) 2 /6+27(1/b2-1/3) 2 /8] 
+que como se puede observar, es muy similar al LM que hemos trabajado, diferenciándose de él en que ahora se sustituyb2 por su inverso. Para estandarizar dicho inverso se tuvo que calcular la varianza de 1/b2, la cual se obtuvo de la manera siguiente (Urz,1991): 
+Se expresa 1/b2 como g(m2,m4) = (m2) 2 /m4, donde m2 y m4 son el segundo y cuarto momento respecto al origen. Posteriormente se obtienen las derivadas parciales con respecto al segundo y cuarto momento, definidas estas como 91 y 92, respectivamente 
+de esta manera la expresi de la varianza de 1/b2 es (ver Stuart y Ord, 1987 pp324 y Urz, 1991): 
+v(l/b2) = (2m2/m4) 2 v(m2)+((-m2) 2 /(m4) 2 v(m4)+ 2(-2(m2) 3/(m4) 3cov(m2,m4)+o(l/N) 
+donde el timo termino de la derecha (orden de 1/N) tiende a cero cuando N crece. El desarrollo de esta expresi nos conduce a la siguiente expresi de la varianza: 
+v(l/b2) = 8/(27N) 
+la cual es usada para estandarizar el inverso de b2, pudiendo asi establecer una nueva versi del IM de Bowman-Shenton­Jarque-Bera, llamado aqui JBU 
+JBU = N[(/bl) 2 /6+27(1/b2-1/3) 2 /8)] 
+cuya convergencia a una chi-cuadrada(2) se ilustra en la tabla 3. 
+Teniendo definidas las tres pruebas a evaluar, se procedia realizar los estudios de Monte Carla, para de esta manera comparar la capacidad de rechazo de las mismas. 
+Antes de pasar a describir el poder de las pruebas, vale la pena describir las técnicas y los programas de simulaci utilizados, lo cual se hace en el siguiente capitulo. 
+
+PRINCIPIOS Y METODOS GENERALES DE GENERACION DE NUMEROS ALEATORIOS 
+II.1.-GENERACION DE NUMEROS ALEATORIOS UNIFORMES 
+Cuatro métodos alternativos se han usado hasta ahora para generar secuencias de neros aleatorios uniformes (en lo subsecuente me referiré a ellos como neros aleatorios). El Manual, el de Tablas (Library Tables), el de Analogia Computacional (Analog Computer), y el método de Computadoras Digitales. Los dos primeros son lentos y más bien pedagicos: el tercero consiste en la traducci de un proceso fisico aleatorio a forma numérica, siendo la computadora el intérprete. Este timo método genera verdaderos neros aleatorios, pero no es capaz de reproducir una secuencia de dichos neros. 
+El método de computadoras digitales tiene 3 variantes, dependiendo de la provisi de neros a ser usados: provisi externa, generaci interna mediante un proceso fisico, y generaci interna de secuencia de dígitos mediante una relaci de recurrencia. 
+La provisi externa consiste en grabar tablas de nero aleatorios en discos, y cargarlos a la máquina. La generaci mediante un proceso fisico es similar al de computadoras análogas y tiene la desventaja de que sus secuencias no son reproducibles. La tercera variante de 
+este  método  es  la más  usual,  y  consiste  en  la  generaci  
+de  neros  aleatorios  mediante  transformaciones  
+indefinidamente  continuas  de  un  grupo  de  neros  
+arbitrariamente  elegidos.  Esta  variante  supera  los  
+
+principales obstáculos de las anteriores, ya que con este no existen problemas de capacidad de memoria, y además el proceso y el resultado de él es completamente reproducible. 
+En general, el método más aceptable de generaci de neros aleatorios, deberá producir una secuencia de neros tal que: 
+1.-Estén uniformemente distribuidos 
+2.-Sean estadisticamente independientes 
+3.-Se puedan reproducir 
+4.-No se repitan para un tama de muestra dado 
+5.-Se generen a alta velocidad 
+6.-Usen un minimo de memoria. 
+El primer método para generar neros seudoaleatorios en una computadora digital fue propuesto por Von Neumann y Metropolis en 1946, en el cual cada nero en una secuencia se obtiene usando los digitos del centro de la raíz cuadrada del nero anterior de la secuencia. Sin embargo, este método fue abandonado por su lentitud en favor de los métodos de congruencia, los cuales, con algunas variantes, se usan en la actualidad. 
+Los métodos de congruencia para generar neros aleatorios son deterministicos, debido a que el proceso aritmético usado en el cálculo determina de manera ica cada término de la secuencia. En efecto, existen fmulas con las cuales se puede calcular a priori el valor exacto del i-ésimo nero en una secuencia, antes de que ésta sea generada. Estos métodos se basan en una relaci fundamental de congruencia, la cual se expresa de la manera siguiente: 
+ªi+l = aai+c(mod m) •...............•. (1) 
+donde a, a, c y m son todos enteros no negativos; mod=mulo. 
+Expandiendo la ecuaci (1) tenemos 
+a1 = aao + c(mod m) 
+a2 = aa1 + c =a2ao + (a+l)c(mod m) 
+(2) 
+ªi = aiao + (c(ai-1)/(a-l)) (mod m) 
+Asi, dado un valor inicial ao y las constantes a y c, con la ecuaci 2 obtenemos una relaci de congruencia (con modulo m) para cualquier valor i sobre la secuencia {nl, n2, ••• ,ni••. }. De los enteros de la secuencia {ni}, se pueden obtener neros racionales dentro del intervalo (0,1), formando la secuencia (ri}={ni/m}. 
+En la práctica se ha mostrado que no es posible obtener secuencias no repetidas mediante métodos de congruencia. Sin embargo, eligiendo un mulo suficientemente grande se puede generar una secuencia satisfactoria de acuerdo a los objetivos de cada trabajo. 
+II.2.-GENERACION DE NUMEROS ALEATORIOS CON DISTRIBUCIÓN ESPECIFICA 
+La  teoria  de  generaci  de  neros  aleatorios  con  
+cierta  distribuci  de  probabili dad,  descansa  en  los  
+siguientes dos supuestos:  
+
+Supuesto 1: Existe un generador perfecto de neros aleatorios uniformes, es decir, un generador capaz de reproducir una secuencia Ul,U2, .•• ,Un de variables, con una distribuci uniforme en (O, 1) • Habiendo hecho este supuesto, uno puede construir una buena teoria de generaci de neros aleatorios. 
+Supuesto 2: La computadora puede guardar y manipular neros reales. Este supuesto junto al anterior nos garantiza la existencia de diversos generadores de las distintas distribuciones de probabilidad. 
+Lo que sigue es una descripci de los principios básicos usados en la generaci de neros aleatorios no uniformes; estos principios se aplican a menudo, pero no siempre, tanto a variables continuas como a variables 
+discretas. 
+Se define F(x) como la funci de distribuci acumulada de x, la cual denota la probabilidad de que una variable x tome un valor x menos. cuando F ( x) es continua sobre el dominio de x, es posible diferenciarla y definir 
+f(x)=dF(x)/dx.  La  derivada  f(x)  es  llamada  la  funci  de  
+densidad  de  prob abilidad.  De  esta  manera  F(x)  se  puede  
+expresar como  
+
+F(x) = p(X~x) = J~oo f(t)dx (3) 
+donde O~F(x)~l y f(t) representa el valor de la funci de 
+densidad de probabilidad, de la variable aleatoria X cuando 
+X=t. 
+Existen 3 principios básicos (métodos) para generar neros aleatorios con distribuci de probabilidad especifica: el de inversi, el de rechazo y el de composici. Estos métodos o algunas variantes de ellos, son la base para la simulaci de distribuciones del siguiente capitulo. 
+METODO DE INVERSION: 
+Si deseamos generar neros aleatorios x•s de una poblaci estadística cuya funci de densidad es dada por f(x), obtenemos la funci acumulada F(x). Dado que F(x) se define sobre el rango de O a 1, podemos generar neros aleatorios U y establecer F(x) = u. Es claro que x es determinado de manera ica por u = F ( x) • Se sigue de ahi, que para cualquier valor particular u, digamos u0, es posible encontrar valores de x, digamos x0 , el cual corresponde a u0 , mediante la funci inversa de F. Esto es: 
+-1
+Xo = F (Uo) (4) 
+14 
+donde F-1(u) es la transformaci inversa de u en el intervalo unitario, a el dominio de x. F-1 (u) es una variable con funci de densidad f(x). De esta manera, la variable x resultante tendrá funci de distribuci f(x). 
+Podemos asi calcular x tan rápido como sea posible calcular la inversa de la funci. Desafortunadamente, muchas veces es dificil expresar x en términos de la inversa F-1(u), en cuyo caso se puede obtener una aproximaci a F-1 , usar alguno de los métodos que se describen enseguida. 
+METODO DE RECHAZO: 
+La condici para poder aplicar este método es que f(x) sea acotada, y que x tenga un rango finito, digamos aSxSb. El método consiste en primero normalizar el rango f mediante un escalar c, tal que c.f(x)Sl, aSxSb. Posteriormente se define x como una funci lineal de u, x = a+ (b-a) u. A continuaci se generan pares de neros aleatorios uniformes (ul, u2). Finalmente, cuando encontramos un par (ul, u2) tal que usc.f.(a+(b-a)ul), se aceptará el par y se usará x = a+(b-a) ul, como la variable aleatoria cuya densidad de probabilidad es f(x). 
+Se ha encontrado que el nero esperado de intentos antes de aceptar un par (ul, u2) es igual a 1/c, lo cual implica que el método puede ser ineficiente para ciertas funciones de densidad de probabilidad. 
+
+METODO DE COMPOSICION (O DE DESCOMPOSICION EN COMBINACIONES DISCRETAS): 
+Si nuestra densidad objetivo f (x) se puede descomponer en combinaciones discretas, entonces: 
+(5) 
+donde  fi'S  son  funciones  de  densidad  elegidas  por  criterios  
+de  "mejor  ajuste",  y  que  además  minimizan  la  sumatoria  
+:ETi. Pi;  Ti  es  el  tiempo  de  computaci  en  la  generaci  de  
+neros  aleatorios  de  la  funci  fi;  Pi's  constituye  un  
+vector de probabilidad tal que ~Pi=l.  
+
+METODO DE ACEPTACION Y COMPLEMENTO: 
+El método consiste en lo siguiente: sea f(x) una funci de densidad la cual se puede descomponer en la suma de dos funciones no negativas f(x) = fl(x)+f2(x). Suponga más a que existe una funci de densidad g (x) "fácil" tal que fl(x)Sg(x). Entonces el siguiente algoritmo se usa para generar x con densidad f (x), suponiendo que tenem9s las funciones fl(x), f2(x) y g(x), además de neros aleatorios U(O,l): 
+Si 
+U> fl(x)/g(x), entonces genere los neros aleatorios x 
+con densidad f2(x)/ Jf2(x) = f(x) • 
+Hasta aqui se han descrito los principios básicos utilizados en la elaboraci de algoritmos para la generaci de neros aleatorios con distribuci especifica. Algunos de ellos se exponen a continuaci. 
+II.3.-PROGRAMAS DE GENERACION DE DENSIDADES CONTINUAS 
+En la presente secci se plantean los algoritmos de generaci de neros aleatorios de 10 distribuciones continuas. La mayoría de los programas de generaci toman como base los neros aleatorios uniformes y normales estándar, los cuales ya están programados en GAUSS, el 
+lenguaje que se uspara las simulaciones o experimentos de Monte Carla. 
+Dado que el objetivo del trabajo es evaluar el poder de distintas pruebas de normalidad, se consideraron aquellas 
+funciones  de  densidad  que,  con  determinados  valores  de  los  
+parámetros,  tienen  cierta  semejanza  con  la  funci  normal.  
+Además  se  evalula normal misma.  Las  distribuciones  son  las  
+siguientes:  
+
+1.-Distribuci Gamma(2,l) 
+2.-Distribuci Beta(3,2) 
+3.-Distribuci Beta(2,2) 
+4.-Distribuci chi-cuadrada 
+5.-Distribuci t-student 
+6.-Distribuci F 
+7.-Distribuci Cauchy 
+8.-Distribuci Tukey 
+9.-Distribuci "Mezcla de dos Normales" 10.-Distribuci Lognormal 11.-Distribuci Exponencial CUártica 12.-Distribuci Normal 
+A continuaci describiré de manera breve los programas usados como generadores de las distintas distribuciones, asi como algunas características de las distribuciones mismas. En todos los programas se incluye la letras (semilla) cuando se generan neros uniformes (rndus), asi como cuando se generan neros normales (rndns); ésto con el fin de generar la misma 
+. 
+secuencia de neros cuando sea de nuestro interés, por ejemplo evaluar normalidad de una misma secuencia de neros, utilizando distintas pruebas de normalidad. 
+DISTRIBUCION GAMMA 
+Si un proceso consiste de k eventos sucesivos, y si el tiempo total del proceso se puede considerar como la suma de akx(k-l)e-ax 
+k  variables  exponenciales  independientes,  cada  una  con  
+parámetro a,  entonces  la distribuci de probabilid ad de  esta  
+suma  será  la  gamma,  con  parámetros  k  y  a,  esto  es,  
+gamma(k,a).  Su  funci de densidad  se  expresa  
+
+f(x) = 
+(k-1)! 
+Aqui k>O es el parámetro de forma, y a>O es el parámetro de escala. Cuando k es grande, la forma de la distribuci se asemeja a una normal. Por ello, en la simulaci se usaran valores de k grandes, digamos 20. 
+Para la generaci de variables de una distribuci 
+. 
+gamma se supuso ésta como la suma de k variables exponenciales xi, i= 1,2, •.• ,k, con idéntico valor esperado 1/a. Además se utilizel hecho de que una variable exponencial exp, se genera a partir de una variable uniforme u como exp = (1/a)*ln(u). 
+El programa que se usen Gauss es el siguiente: 
+proc rndgs(k,a,n,s}; local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp; 
+donde n significa el nero de variables gamma generadas, "a" equivale a a, y el resto se ha definido ya. 
+DISTRIBUCION BETA 
+La distribuci beta es el cociente de dos variables gamma xl y (xl+x2), donde xl y x2 son variables gamma independientes con el mismo parámetro a y distinto parámetro 
+k, kl y k2. Asi, el parámetro del numerador será kl y el del denominador k = kl+k2. La variable beta es dada por: 
+Xl X=-----0 < X < 1 (Xl+X2) 
+con una funci de densidad 
+r(kl + k2)xkl-l(l-x)k2-1 f(x) = rck1)r(k2) 
+Existen diversos métodos de generaci, siendo el más rápido y com el del cociente de dos gammas: 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; u2=u[.,(kl+l):(kl+k2)]: gl=-ln(prodc(ul')); g2=-ln(prodc(u2'))' 
+g3=gl+g2; 
+x=gl./g3; retp(x); endp; 
+donde la variable x tiene una distribuci beta(kl,k2), con kl, k2 > 1 (para la evaluaci de las pruebas de normalidad, la distribuci beta fue generada con parámetros (2, 1) y 
+(2,2),  la primera para poder comparar  los resultados  con  los  
+de  Jarque  y  Bera(1981),  y  la  segunda  para  obtener  una  
+distribuci  simétrica  mas  parecida  a  la  normal  que  la  
+primera).  
+
+DISTRIBUCION CHI-CUADRADA 
+Esta distribuci es un caso particular de la funci de 
+distribuci gamma, con k = 1 y a = 1/2. otra manera alternativa de ver a esta distribuci, es como la sumatoria de los cuadrados den variables aleatorias normales estándar, siendo n-1 los grados de libertad de la funci chi-cuadrada resultante. 
+La densidad de una chi-cuadrada(m) es la de una gamma con k=m/2 y a=l/2: -x/2
+xm/2-1 e
+f(x) = 
+2m/2 (m/2-1)1 
+El método de generaci fue en base a la suma de cuadrados de n variables normales: 
+proc rndchs(m,n,s): 
+local ch: 
+ch=sumc(rndns(m,n,s)A2): 
+retp(ch): endp: 
+DISTRIBUCION T-STUDENT 
+Esta distribuci resulta de dividir una variable aleatoria normal estándar, sobre la raiz cuadrada de una chi­cuadrada previamente dividida por sus grados de libertad. Esto es, si z tiene una distribuci normal estándar, y u tiene una distribuci chi-cuadrada con k grados de libertad, y si además ambas son independientes, entonces 
+z 
+X= 
+/(u/k) 
+tiene una distribuci t-student con k grados de libertad. Su funci de densidad se define como: 
+re (k+1) ¡21 
+f(x) = r (k/2) J (k1r) (l+x2/k) (k+l) /2 
+Como caso especial de esta distribuci tenemos a la Cauchy, la cual resulta cuando k = 1, y a la funci F, la cual resulta de la raiz cuadrada de una variable t. Cuando k es mayor que 30, se usa directamente la distribuci normal; por ello para el caso de nuestro trabajo consideraremos un valor de k de 5, con la idea de comparar los resultados con los de Jarque y Bera (1981). 
+Esta distribuci es de las de mayor semejanza con la normal estándar, ya que también es simétrica con respecto a cero, y tiene por lo tanto el mismo valor esperado que la normal. Solo varia en una mayor varianza y en una menor kurtosis, diferencias que se atenn cuando k crece. 
+Una vez que se han generado variables con distribuci 
+chi-cuadrada,  y  teniendo las  normales  estándar dentro  de  las  
+subrutinas  de  Gauss,  el  algoritmo  de  generaci  resulta  
+sencillo:  
+
+proc rndts(m,n,s); local t,x,y,u; u=rndns(n,m+l,s); x=u(.,1]; y=u[., 2: (m+l)]: t=x./sqrt(sumc((yA2) ')/m); retp(t): 
+endp: 
+DISTRIBUCION F 
+La distribuci F resulta del cociente de dos variables chi-cuadradas independientes, dividida cada una por sus grados de libertad. Esto es, si V y U son dos variables independientes con distribuci chi-cuadrada, con m y n grados de libertad respectivamente, entonces la variable x, definida como 
+V/m 
+X= 
+U/n 
+tiene una distribuci F con m grados de libertad en el 
+numerador y nen el denominador, o sea, F(m,n). 
+Su funci de densidad se expresa 
+r[(m+n)/2] x(m-2)/2 f(x) = -------(m/n)m/2 r(m/2)r(n/2) [l+(m/n)x](m+n)/2 
+Esta distribuci se puede generar a partir de variables normales (el cociente del cuadrado de ellas, dividida cada una por sus grados de libertad). El programa con el cual se generaron las variables es el siguiente: 
+proc rndfs(m,k,n,s); local rn,x,y,f; 
+rn=rndns(m+k,n,s); 
+x=sumc(rn[l:m,.]A2)/m; y=sumc(rn[m+l:m+k,.]A2)/k; 
+f=x./y; retp(f); endp; 
+
+
+
+
+DISTRIBUCION CAUCHY 
+La funci de densidad Cauchy 
+1 f(x) = ---­71" ( l+x2 ) 
+es otra de las funciones con las cuales evaluaremos las 
+pruebas de normalidad. Esta distribuci no tiene parámetros, y su media no existe. Para generar variables Cauchy el método de inversi pareceria el más adecuado, ya que su funci de distribuci es 
+F(x) = 1/2 + 1/~(arc tan x) 
+lo cual nos sugiere un generador como tan(~u), donde u es una variable uniforme. Sin embargo este método se puede agilizar y generar las variables cauchy mediante el cociente de 2 normales estándar, lo cual nos conduce al siguiente algoritmo: 
+proc rndcs(n,s); 
+local c,x; 
+x=rndns(n,2,s); 
+c=x[.,1] ./ x[.,2]; 
+retp(c); endp; 
+DISTRIBUCION TUKEY 
+Esta distribuci es muy importante considerarla, ya que con ciertos valores de los parámetros, se asemeja mucho a la normal. La funci de distribuci original es 
+F-1 (U) = 1/a (Ua-(1-U)a) 
+donde a es el parámetro de forma y U una variable uniforme[O,l]. Esta distribuci ha sido generalizada de manera tal que se incluye un parámetro de escala. Esta nueva distribuci se define 
+donde al es el parámetro de localizaci y a2 es el parámetro de escala. El mérito de esta familia es su versatilidad en la 
+rnodelaci de datos, y su fácil generaci. Las formas más comunes que puede tornar esta distribuci son: 
+-Cuando a3=a4=0, la densidad de la distribuci tiende a una logistica. -Cuando al=a3 y a2=a4 -->O, la funci de densidad tiende a una densidad exponencial. -Cuando al=O,a2=.1975,a3=a4=.1349, la funci asi obtenida difiere de la normal en solo .002. 
+La funci de densidad no es conocida en su forma cerrada. 
+El programa de generaci usado es el siguiente: 
+proc rndtuks(ll,12,13,14,n,s): local u,z; u=rndus(n,1,s); z=ll+(l/12)*((U)Al3-(1-U)Al4); retp(z): 
+endp: 
+donde se a sustituido la letra a por la letra 1, y donde, como siempre, s significa la semilla y n el tama de la muestra generada. 
+Tratando de obtener una distribuci Tukey casi normal, los parámetros considerados fueron los dados arriba. 
+DISTRIBUCION "MEZCIA DE DOS NORMALES" 
+Este tipo de distribuci resulta de una combinaci lineal de dos variables aleatorias normales. Esta distribuci tendrá dos modas, cada uno de ellas correspondiendo al valor de la media de cada normal. El programa de generaci resulta sencillo, toda vez que se tiene incorporado dentro de GAUSS la rutina de generaci de las variables normales. 
+A el programa le tendremos que dar las medias mi de cada variable, asi como sus desviaciones estándar Si, para poder asi, en base a la normal estándar que nos da GAUSS, generar las dos variables aleatorias normales. 
+El programa de generaci es el siguiente: 
+proc rndmns(c,ml,m2,sl,s2,n,s): 
+local z,mn: 
+z=rndns(n,2,s): 
+mn=c*(sl*z[.,l]+ml)+(l-c)*(s2*z[.,2]+m2): 
+retp(mn): endp; 
+DISTRIBUCION LOGNORMAL 
+Si el logaritmo de una variable aleatoria positiva tiene una distribuci normal, entonces esa variable aleatoria tiene una distribuci continua con asimetria positiva, conocida como distribuci lognormal. Esta distribuci se usa frecuentemente para describir procesos aleatorios productos de muchos eventos peques e independientes. Esta propiedad de la lognormal es conocida como la ley de los efectos proporcionales y provee la base sobre la cual se pude asumir que un proceso tiene distribuci lognormal. 
+La funci de densidad de una variable lognormal x, con mediaµ y varianza a2 es: 
+f (x;µ, a2 ) = l/x/1ra exp[-1/2a2 ( lnx-µ) 2 ] 
+Para elaborar el programa generador de las variables aleatorias lognormales x, se utilizel hecho de que tanto la media como la varianza de las variable y= ln(x), se pueden expresar en términos de los mismos momentos de la variable x. O sea que para generar variables lognormales, necesitamos darle al programa su media y su varianza. El programa es el 
+siguiente: 
+proc rndlogs(a,b,n,s): local x,c,d,z; d=ln(l+b/(aA2)): c=ln(a)-.5*d: z=rndns(n,1,s): x=exp(c+sqrt(d)*z): retp(x): 
+endp: 
+donde a y b representen la media y la varianza de la variable lognormal a ser generada. 
+DISTRIBUCION EXPONENCIAL CUARTICA 
+Esta distribuci es un caso especial de la familia Q­exponencial (Urz, 1988), la cual incluye como caso particular a la normal. La distribuci exponencial cuártica es de la forma 
+f(x) = 8(a)exp(-Q(x)) 
+donde 8(a) es la constante de normalizaci, y Q(x) un 
+. 
+polinomio de orden cuártico. 
+La distribuci exponencial cuártica con Q(x)=exp(x4/4) tiene gran semejanza a la normal, por lo cual resultinteresante evaluar el comportamiento de las pruebas ante este tipo de distribuci, que de hecho junto con la Tukey, fue donde las pruebas mostraron menor poder. El programa de generaci de variables aleatorias con distribuci exponencial cuártica se basen el método de rechazo, y es el siguiente: 
+proc rndecs(n,s); local i,j,x,ut,ec,sl,s2: i=l: 
+j=O; ec=zeros(n,l); do until i>n; 
+sl=s+j; s2=sl+l; x=rndns(l,l,sl); ut=exp((xA4)/4)*rndus(l,l,s2); if ut<=l; 
+ec[i,l]=x; 
+i=i+l; endif; j=j+l; 
+endo; retp(ec); endp; 
+DISTRIBUCION NORMAL 
+La distribuci normal es la de uso mas frecuente en estadistica. Esto debido a que teica y empiricamente se ha mostrado que bajo ciertas condiciones se justifica suponer distribuciones normales. La utilidad de esta distribuci se deriva del Teorema del Limite Central, el cual establece que la distribuci de probabilidad de la suma de N variables aleatorias independientes e idénticamente distribuidas, se aproxima a una distribuci normal. 
+se dice entonces que una variable X es normalmente distribuida si su densidad es 
+2 2
+f(x) = (l//2w)e-x/ 
+cuando X es normalmente distribuida, entonces µ+ax se dice es normal(µ,o). Por ello es que para fines de generaci de 
+02
+variablesµ y (media y varianza) son irrelevantes. 
+El método de generaci presentado en GAUSS es el de 
+composici y rechazo, propuesto en el trabajo de Kinderman y Ramage, al cual referimos (Ver Devroye, 1986 pp 382). 
+RESULTADO DE LOS EXPERIMENTOS DE MONTE CARLO 
+III.-RESULTADOS DE LOS EXPERIMENTOS DE MONTE CARLO 
+En esta capítulo se presentan los resultados de los experimentos de Monte Carla, realizados para comparar el poder estimado de las pruebas de normalidad basadas en los estadísticos LM, K2 Y JBU (descritos con anterioridad en el capitulo 3). El ejercicio cubrino solo observaciones, sino también residuos de regresi obtenidos usando cuadrados mínimos ordinarios CMO. 
+La evaluaci del poder de las tres pruebas se hizo utilizando 19 tamas de muestra, comprendidos entre N = 10 y N = 800. Las pruebas fueron evaluadas, para el caso de observaciones, sobre 12 distribuciones, donde los valo!es de significancia de cada estadístico se calcularon empíricamente para cada tama de muestra, y donde siempre se usun mismo nivel de significancia de 10%. Las distribuciones consideradas fueron las descritas en el capítulo anterior. 
+Bajo la hipesis nula de normalidad H0, el poder estimado de cada prueba se obtuvo dividiendo el nero de veces que H0 fue rechazada, sobre el nero de veces que se repitiel experimento, en nuestro caso 10,000. 
+Para el caso de residuos, las pruebas fueron evaluadas solo sobre las distribuciones citadas en el trabajo de Jarque y Bera(l981) y ellas fueron: la normal, gamma(2,1), beta(3,2), t-student(5), y la distribuci lognormal. Para la estimaci de los residuos se utilizuna matriz de dise (N,3), cuya primera columna fueron unos, y las dos restantes neros extraídos de una distribuci uniforme u(O, 1). Al igual que en el caso de las observaciones, los valores de significancia de cada estadístico fueron calculados empíricamente y sobre ellos fue evaluado el poder de cada prueba. Para el caso de residuos, las pruebas también se evaluaron tomando el valor de significancia asintico de 
+cada estadistico, el cual coincide con el de una chi­cuadrada(2), que para a=.1 tiene un valor de 4.61. 
+Debe también notarse que para el cálculo tanto de los valores critices como de las estimaciones de poder de cada prueba, se realizaron 10000 repeticiones para cada tama de muestra; los programas fueron ejecutados en una computadora ACER 80386, con un coprocesador 80387, usando GAUSS, y una velocidad de 33MHZ. 
+A continuaci se comentan los resultados obtenidos, los cuales se resumen en las tablas 5, 6, 7 y 8 del apéndice A. 
+III.1.-PRUEBAS DE NORMALIDAD DE OBSERVACIONES 
+En la tabla 5, bajo el titulo de "poder estimado sobre observaciones", se presentan las doce distribuciones trabajadas, con especificaci tanto del tama de muestra N, como de los tres estadisticos de prueba considerados. Cada valor presentado significa la proporci de veces que se rechazH0 =normalidad, en 10,000 repeticiones, en base a el valor de significancia calculado (ver tabla 8, y los programas 1-36 del apéndice); esto para cada distribuci, tama de muestra y estadistico considerado. En todas las distribuciones no normales, la mejor prueba fue aquella que rechazel mayor nero de veces la hipesis nula de normalidad (es decir, la de mayor poder estimado) , excepto por supuesto cuando consideramos la distribuci normal. En todos los casos, aparece subrayado el valor que corresponde a aquella prueba que mostrser mejor, excepto cuando dos o más pruebas igualan. 
+En el caso de las dos distribuciones beta, es evidente la superioridad de la prueba JBU, mostrando el mayor poder para todos los tamas de muestra. En el caso de la 
+distribuci cauchy, la LM es la prueba preferida, al igual que con la distribuci chi-cuadrada(2}, gamma(2,l} y la distribuci F(J, 4); siguiendo la misma tabla vemos nuevamente una superioridad clara de la prueba JBU cuando se eval sobre la distribuci exponencial cuártica, no importando para ello el tama de la muestra. Evaluando la lognormal, vuelve a ser preferida la prueba LM, aunque se observa una convergencia mayor de la JBU hacia el rechazo completo de esta distribuci. Cuando se consideran las timas cuatro distribuciones, el predominio de alguna prueba sobre las otras ya no es tan claro; asi por ejemplo, con la mezcla de dos normales la prueba LM se desempe mejor en la detecci de no normalidad en muestras peques hasta de N=40, pero en muestras mayores es superada por la prue~a JBU. Por otro lado, con la distribuci normal es dificil decidir entre las pruebas K2 y JBU, sucediendo algo muy similar en el caso de la distribuci Tukey. Es en la t(S} donde la prueba LM vuelve a ser preferida sobre las demás para todos los tamas de muestra. 
+De lo descrito hasta aqui, se observa un mejor desempe del estadistico de prueba JBU cuando se eval en distribuciones similares a la normal (beta(2,2}, exponencial 
+cuártica,  tukey,  beta(3,2),  y  la  misma  normal),  siendo  
+superado  por  el  LM  en  distribuciones  mas  disímiles  de  la  
+normal  (F(J,4), gamma(2,l},  lognormal) •  
+
+. 
+III.2.-PRUEBAS DE NORMALIDAD DE RESIDUOS DE REGRESION 
+En la tabla 6, aparecen los resultados del poder estimado para cada prueba, siendo éste calculado sobre los residuos de regresi usando CMO. El poder se calcula de manera semejante a la descrita en la secci anterior, so que ahora se sustituyen las observaciones, por los residuos estimados en base a la expresi 
+Ü==(I-V)u, 
+la cual resulta después de estimar los coeficientes de la regresi usando minimos cuadrados ordinarios. 
+ el vector estimado de residuos, es una transformaci lineal de los residuos no observados u, que en este caso son vectores con distribuci dada generados por simulaci. La matriz de transformaci V se calcula en base a la matriz de 
+dise  X  (ya  definida  al  inicio  del  capitulo)  siendo  su  
+expresi  
+V= X(X'X)-1x•.  
+
+En las 5 distribuciones consideradas se observa un mayor poder de la prueba K2 para N==lO, lo cual se explica en parte por el valor de significancia calculado para este tama de muestra, 3.52, muy superior al mismo valor calculado para LM y JBU, 1.43 y 2.85, respectivamente (tabla 8). Sin considerar N=lO, con la distribuci beta(3,2) la prueba JBU es preferida, si bien la superioridad de esta prueba sobre las demás no es tan grande. Aplicando las pruebas sobre residuos con distribuci gamma(2,l) y lognormal, la LM es preferida para tamas de muestra menores a 65, siendo superada a partir de aqui por la prueba JBU; para el caso de la distribuci t-student(5), nuevamente la prueba LM es la mejor, superada solo en una ocasi por la K2 cuando N=lO. En la distribuci normal no hay aparentemente ninguna prueba que domine sobre las otras, siendo quizá la JBU la mas aceptable. 
+La comparaci de las tablas 5 y 6 nos arroja un resultado interesante, y es la confirmaci de la tendencia de los residuos a ser más normales. Esto se manifiesta en que, en casi todos los casos, las pruebas evaluadas sobre residuos nos dan un menor poder estimado que las mismas pruebas aplicadas a las observaciones, tendiendo a igualarse conforme el tama de la muestra N crece. Algunos estadisticos como R. Gnanadesikan (ver Bera y McKenzie 1986,pp 45) llaman a este resultado "supernormalidad" de los residuos de regresi. 
+En general, el poder relativo de las tres pruebas es el mismo, es decir, la jerarquizaci de las pruebas no varia sustancialmente de cuando consideramos observaciones a cuando consideramos residuos. 
+Un ejercicio más que se pensrealizar fue el modificar la matriz de dise, tanto en el nero de variables independientes como en la naturaleza de las mismas. Sin embargo se desistide este intento al consultar los resultados de Jarque y Bera (1981), los cuales demuestran que, si bien los valores estimados del poder de diferentes pruebas varian al cambiar la matriz de dise, el poder relativo de las mismas no se altera. 
+III.3.-PRUEBAS DE NORMALIDAD DE RESIDUOS, CONSIDERANDO VALORES DE SIGNIFICANCIA ASINTOTICOS 
+Los resultados de las dos secciones anteriores, fueron obtenidos al considerar los valores de significancia (a=l0%) calculados empiricamente para cada estadistico de prueba. En la práctica, las pruebas de normalidad se aplican considerando los valores asinticos, para el nivel de significancia deseado y usando las tablas de aquella distribuci a la que asinticamente converge el estadístico de prueba en cuesti. Esto significa que en nuestro caso usariamos las tablas de la chi-cuadrada, buscando los valores correspondientes a 2 grados de 1ibertad. Como para a=. 1 el valor critico de la distribuci chi-cuadrada(2) es 4.61, es en base a este valor de significancia que se obtuvieron los resultados de la tabla 8. 
+Aqui cambian considerablemente los resultados. Evaluados sobre r~siduos con distribuci beta(3,2), la prueba que domina es la K2, seguida por la JBU; para el caso de la gamma(2,l) y la lognormal sucede lo mismo, siendo nuevamente mejor la prueba K2, seguida de cerca por la prueba JBU. Cuando se considera la distribuci normal, el estadistico LM muestra ser el mejor (obsérvese que aqui la prueba con menor poder resulta ser la mejor), en todos los tamas de muestra; esto es porque LM esta sesgada en favor de normalidad cuando se usa el valor asintico. Por timo, con la t-student(5) sucede que para muestras relativamente chicas, hasta de 80, la prueba preferida es la K2, siendo superada por la LM en tamas de muestra mayores e iguales a 100. 
+CONCLUSIONES 
+CONCLUSIONES 
+Se ha evaluado el poder de las pruebas LM, K2 Y JBU en distintos tamas de muestra, y sobre distintas distribuciones de probabilidad. La prueba basada en el estadistico LM modificado, o sea la JBU, se ha seguido con especial interés, ya que nunca antes su poder había sido evaluado en relaci a las demás pruebas. Un primer resultado fue que el estadistico JBU es eficiente, teniendo de hecho una convergencia más rápida a la distribuci chi­cuadrada (2), que el estadistico LM, y una convergencia mas estable que el estadistico K2. Lo anterior, sumado a la mayor facilidad en el cálculo del estadistico JBU, si se le compara por ejernplo con el cálculo de K2, nos hacen pensar . en la posibilidad de usar la prueba JBU para el caso de tamas de muestra relativamente chicos. 
+La estimaci del poder de cada prueba sobre muestras de observaciones, considerando los valores de significancia calculados empiricamente, nos condujo a un segundo resultado, y es que el poder de cada prueba depende de la distribuci de probabilidad de la muestra sobre la cual se evaln dichas pruebas. Esto se refleja en el hecho de que para distribuciones muy parecidas a la normal, la prueba preferida 
+fue  la  JBU,  no  asi  para  otras  distribuciones,  digamos  mas  
+"lejanas"  a  la  normal,  donde  la  prueba  LM  mostr mejor  
+desempe.  
+
+La evaluaci de las pruebas (modificadas) sobre residuos estimados en base al uso de cuadrados minimos ordinarios CMO, nos arrojun tercer resultado. Este fue que el poder relativo de las pruebas no se altera, resultando ser igual al caso de considerar muestras de observaciones. Sin embargo, al considerar el poder absoluto, se observa que éstos en general son menores para el caso de residuos, lo cual nos confirma la idea de que los residuos tienden a ser más normales que las observaciones. 
+Las mismas muestras de residuos se consideraron para estimar el poder de las pruebas, so que ahora considerando el valor de significancia asintico de los tres estadísticos. Aqui el resultado fue interesante, siendo éste que para muestras chicas, la prueba LM se comporta muy mal, en comparaci con las pruebas K2 y JBU, explicado esto claramente por la lenta convergencia que muestra el estadístico LM. Lo anterior nos lleva al resultado de que el uso de la prueba LM para detectar no-normalidad de errores de CMO, en muestras digamos inferiores a 100, sobrestima la normalidad de los mismos, recomendándose en estos casos el uso de las pruebas JBU y K2, ambas con un poder muy superior a la LM en muestras chicas. De estos dos timos, el, mejor comportamiento asintico, asi como la facilidad de su cálculo, nos sugiere a la prueba JBU como una buena alternativa de la LM para muestras de tama peque. 
+BIBLIOGRAFIA 
+BIBLIOGRAFIA 
+-ANSCOMBE F.J. Y GLYNN W.J. (1983). Distribution of the kurtosis statistic b2 for norma samples. Biometrika 70,1,pp 227 1 34. 
+-BERA A. K. Y JARQUE C. M.(1981) Efficient test for normality, homoscedasticity and serial independence of regression residual. Monte Carla evidence. Economic Letters. 7, 4, pp. 313-318. 
+-BERA A. K. Y JARQUE C. M.(1981) An efficient large-sample test far normality of observations and regression residuals. The Australian National University, Working paper No. 040. 
+-BERA A. Y JOHN S. (1983). Test for multivariate normality with Pearson alternatives. Communication in Statistics. Theory and Methods. 12(1),pp 103-117. 
+-BERA A. K. Y MC KENZIE C. R. (1986). Test for normality with stable alternatives. Journal of Statistical Computation and Simmulation, Vol. 25, pp 37-52. 
+-BOWMAN K.O. Y SHENTON L.R. (1975) Omnibus test contours for departures from normality based on /bl y b2. Biometrika, 62,2,pp 243-250. 
+-BOWMAN K.O. Y SHENTON L.R. (1988) Properties of Estimators for the Gamma Distribution. Marcel Dekker, New York. 
+-D'AGOSTINO R.B. (1978) Transformation to normality of the null distribution of gl. Biometrika, 57, 3, pp 679-681. 
+-D'AGOSTINO R.B. Y PEARSON E.S. (1973) Test for departure from normality. Empirical results far the distributions of b2 and bl. Biometrika, 60, 3, pp 613-622. 
+-D'AGOSTINO R.B., BELANGER A. Y D'AGOSTINO R.B.(Jr.) (1990). A Suggestion for using powerful and informative test of normality. The American Statistician, 44, 4, pp 316­321. 
+-DEVROYE LUC NON (1986). Uniform Random Variate Generation, Springer-Verlag, New York. 
+-JARQUE C. M. Y BERA A. K. (1980) Efficient test for normality, homoscedasticity and serial independence of regression residual. Economics Letters, 6, 3, pp. 225-259. 
+-JARQUE C. M. Y BERA A. K. (1987) A test for normality of observations and regression residuals. International Statistical Review, 55,2, pp 163-172. 
+-JOINER B. L. Y ROSENBLATT J. R. (1971). Some properties of the range in samples from Tukey's symmetric lambda distribution. Journal of the American Statistical Association, 66, 334, pp 394-399. 
+-JUDGE G. et. al. (1988) Introduction to the Theory and Practice of Econometrics. John Wiley & Sons. New York. 
+-MOOD A.M., GRAYBILL F. A., BOES D. C. (1974). Introduction to the theory of statistics. McGraw Hill. 
+-NAYLOR R.H., BALINTFY J.L., BURDICK D.S., CHU K. (1966). Computer Simulation Techniques. John Wiley & Sons, New York. 
+-PEARSON E. S., D'AGOSTINO R. B. Y BOWMAN K.O. (1977). Test for departure from normality; comparison of powers. Biometrika, 64, 2, pp 231-246. 
+-SHAPIRO S. S. Y FRANCIA R. S. (1972). An approximate analysis of variance test normality. 
+Journal of the American Statistical Association. 67,337, pp 215-216. 
+-STUART A. Y ORO J. K. (1987). Kendall's Advanced Theory of Statistics vol. 1, Fifth edition. Oxford University Press. 
+-URZUA C. M. (1988) A class of maximum-entropy multivariate distributions. 
+Communications in Statistics. Theory and Methods, 
+17(12), pp 4039-4057. 
+-URZUA C. M. (1989) Test for multivariate normality of observations and residuals. Communications in statistics. Theory and Methods, 17 (12), pp 4039-4057. 
+-URZUA C. M. (1991) A note on the Sarque-Bera Test for normality. El Colegio de México, manuscrito. 
+-WHITE H. Y MACDONALD G. M. (1980). Sorne large-sample tests for normality in the linear Regression Model. Journal of the American Statistical Association, 75, 369 pp 16-31. 
+APENDICEA 
+APENDICE A RESUMEN DE RESULTADOS 
+TABLA 1: VALORES DE SIGNIFICANCIA DE LOS ESTADISTICOS DE ASIMETRIA y 
+KURTOSIS (A y K, RESPECTIVAMENTE). 10000 REPETICIONES SIG=SIGNIFICANCIA 
+SIG = 0.99 0.95 0.90 0.85 o.so 
+
+SIG = 0.15 0.10 o.os 0.01 
+J/JHI:?/  :/::!:I! :rnt  •@fKf••M  i!M?i\JM  ::::::rn:s•
+rnr  (\jfal ]@ j Ifii:KUiJ  :::'.:Jt;.t•f?'i.  rrr,m:n  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.58  3.18  0.74  3.46  0.97  3.95  1.42  5.06  
+0.53  3.32  0.66  3.62  0.84  4.16  1.23  5.37  
+0.47  3.41  0.58  3.69  0.76  4.17  1.15  5.44  
+0.43  3.41  0.54  3.71  0.73  4.18  1.08  5.37  
+0.41  3.43  0.52  3.69  0.67  4.10  98.00  5.15  
+0.39  3.43  0.48  3.66  0.62  4.05  0.92  5.02  
+0.35  3.44  0.44  3.66  0.58  4.02  0.84  5.02  
+0.32  3.41  0.39  3.62  0.51  3.96  o.n  4.88  
+0.30  3.42  0.37  3.61  0.48  3.93  0.69  4.66  
+0.26  3.40  0.33  3.56  0.43  3.86  0.64  4.55  
+0.24  3.38  0.30  3.54  0.39  3.79  0.56  4.38  
+0.22  3.34  0.27  3.47  0.35  3.69  0.51  4.33  
+0.20  3.33  0.24  3.45  0.32  3.65  0.47  4.14  
+0.17  3.29  0.21  3.40  0.27  3.57  0.40  4.03  
+0.15  3.27  0.19  3.36  0.25  3.53  0.37  3.86  
+0.14  3.26  0.18  3.35  0.23  3.48  0.34  3.76  
+0.13  3.22  0.16  3.29  0.20  3.41  0.28  3.67  
+0.11  3.21  0.14  3.27  0.18  3.37  0.25  3.59  
+0.09  3.17  0.11  3.22  0.14  3.30  0.20  3.46  
+
+TABLA 2: CONVERGENCIA A NORMALIDAD DE LOS EST ADISTICOS DE ASIMETRIA Y KURTOSIS ESTANDARIZADOS (SK Y K RESPEC­TIVAMENTE) INF. = VALOR ASINTOTICO 
+SIG = 0.99 0.95 0.90 0.85 0.50 
+r:=:rn; :1:=:i[\$R@J\ :Jt:l<')ft {$Rfl l\t:KJWl )$Kll1\Jl fab\ ts&:\\Mi: fIK/tl B$&mit 1:1:ltmrn 
+10  -1.79  -1 .04  -1.21  -0.93  -0.93  -0.85  -0.73  -0.79  -0.01  -0.46  
+15  -2.07  -1 .15  -1 .37  -1 .01  -1.03  -0.91  -0.80  -0.83  0.00  -0.43  
+20  -2.08  -1.24  -1.39  -1.08  -1.05  -0.97  -0.83  -0.88  0.01  -0.41  
+
+25 -2.14 
+-1.30 
+-1.43 -1.09 -1.09 -0.96 -0.88 -0.88 0.01 
+-0.38 
+30 -2.25 
+-1.34 
+-1.48 -1.15 -1.13 -1.02 -0.90 -0.92 0.00 
+-0.38 
+35 -2.20 
+-1 .39 
+-1.53 -1.17 -1.17 -1.03 -0.93 -0.93 0.00 
+-0.36 
+40 -2.25 
+-1.42 
+-1.53 -1.18 -1.16 -1.04 -0.93 -0.93 0.00 
+-0.35 
+50 -2.30 
+-1.51 
+-1.52 -1 .24 -1.67 -1.08 -0.93 -0.95 -0.01 
+-0.33 
+65 -2.31 
+-1.57 
+-1.57 -1 .28 -1.21 -1.10 -0.97 -0.98 -0.02 
+-0.30 
+80 -2.35 
+-1.61 
+-1.59 -1.30 -1.20 -1.12 -0.97 -0.98 0.01 
+-0.29 
+-1.59 -1.31 -1.23 -1.14 -0.99 -1 .00 0.02
+100 -2.29 
+-1.66 
+-0.27 
+-1.57 -1.36 -1 .22 -1.15 -0.99 -1.01 0.00
+125 -2.28 
+-1.70 
+-0.25 
+150 -2.27 
+-1.76 
+-1.60 -1 .38 -1.24 -1.15 -0.99 -1.00 -0.01 
+-0.22 
+200 -2.33 
+-1.61 -1.39 -1.23 -1.17 -1.00 -1 .01 0.01 
+-0.20
+-1.n 
+-1.58 -1.44 -1.22 -1.20 -1.00 -1 .03 0.00
+250 -2.34 
+-1.83 
+-0.~8 
+-1.62 -1.47 -1.26 -1.22 -1.02 -1.04 0.01 
+-0.19
+300 -2.31 
+-1.88 
+-1.65 -1.49 -1.27 -1.22 -1 .02 -1.04 -0.01 
+-0.16
+400 2.35 
+-1.89 
+-1 .97 
+-1.63 -1.48 -1.25 -1.20 -1 .02 -1.01 0.00 
+-0.14
+500 -2.38 
+-1.63 -1.50 -1.25 -1.22 -1.02 -1.02 0.02 
+0.00
+800 -2.33 
+-2.00 
+1.64 -1 .28 -1 .03 0.00
+INF. 2 
+SIG = 0.15 0.10 0.05 0.01 
+:t::11@=)  JIK@\@ =:[tflt\f)::J  JI&:%%\, :::11:&lif  @$.ffif1  111r:n;:i  t:~ JM;  lli\8:lf:·  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800 INF.  0.72  0.11  0.92  0.30  1.23  0.62  1.79  1.32  
+0.82  0.28  1.03  0.51  1.34  90.00  2.05  1.87  
+0.85  0.36  1.05  0.60  1.39  1.04  2.10  2.25  
+0.88  0.42  1.09  0.67  1.44  1.12  2.18  2.38  
+0.92  0.48  1.14  0.74  1.47  1.24  2.13  2.58  
+0.93  O.SS  1.15  0.84  1.52  1.33  2.27  2.48  
+0.92  0.57  1.16  0.84  1.50  1.34  2.25  2.55  
+0.94  0.63  1.17  0.94  1.55  1.47  2.27  2.95  
+0.98  0.68  1.21  1.00  1.59  1.51  2.30  2.81  
+1.00  0.74  1.23  1.06  1.58  1.55  2.26  2.79  
+1.00  0.75  1.23  1.06  1.59  1.55  2.27  2.87  
+1.00  0.80  1.25  1.11  1.60  1.60  2.32  2.85  
+1.00  0.80  1.24  1.10  1.61  1.58  2.36  2.86  
+1.00  0.83  1.22  1.14  1.58  1.66  2.26  2.98  
+1.04  0.88  1.28  1.19  1.64  1.64  2.29  2.61  
+1.02  0.88  1.26  1.18  1.60  1.65  2.28  2.74  
+1.00  0.89  1.25  1.19  1.63  1.65  2.32  2.68  
+1.03  0.96  1.27  1.25  1.61  1.70  2.28  2.72  
+1.04  1.00  1.28  1.26  1.65  1.74  2.35  2.68  
+1.03  1.28  1.64  2.33  
+
+TABLA 3: CONVERGENCIA A LA DISTRIBUCION CHI-CUADRADA (2) DE LOS ESTADISTICOS LM, K2, y JBU 
+SIG = 0.99 0.95 0.90 
+r:r•:;1rrn:  ;:::mr:~:m:r; MOfgf  rnJtl.Y F lFf\M@t :J{~ ff:  J\Jatrt: J?IMlit ;tit~ f ft Ifi§Yil  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800 INF.  0.03  0.02  0.03  0.12  0.10  0.15  0.21  0.21  0.28  
+0.02  0.02  0.02  0.10  0.10  0.12  0.20  0.21  0.25  
+0.02  0.02  0.02  0.10  0.10  0.12  0.20  0.21  0.23  
+0.02  0.02  0.02  0.09  0.10  0.11  0.19  0.20  0.21  
+0.02  0.01  0.02  0.10  0.10  0.11  0.20  0.20  0.22  
+0.02  0.02  0.02  0.10  0.11  0.10  0.19  0.22  0.21  
+0.02  0.02  0.02  0.10  0.10  0.10  0.19  0.20  0.21  
+0.02  0.02  0.02  0.10  0.10  0.11  0.20  0.21  0.22  
+0.02  0.02  0.02  0.10  0.11  0.10  0.20  0.21  0.21  
+0.02  0.02  0.03  0.10  0.10  0.11  0.20  0.21  0.21  
+0.02  0.02  0.02  0.10  0.10  0.09  0.20  0.22  0.20  
+0.02  0.02  0.02  0.10  0.10  0.10  0.20  0.21  0.21  
+0.02  0.02  0.02  0.10  0.10  0.11  0.20  0.20  0.21  
+0.02  0.02  0.02  0.10  0.10  0.10  0.20  0.22  0.20  
+0.02  0.02  0.02  0.10  0.10  0.10  0.20  0.21  0.20  
+0.02  0.02  0.02  0.10  0.10  0.11  0.21  0.22  0.21  
+0.02  0.02  0.02  0.10  0.10  0.10  0.20  0.22  0.20  
+0.02  0.02  0.02  0.10  0.10  0.09  0.21  0.20  0.20  
+0.02  0.02  0.02  0.10  0.10  0.10  0.21  0.20  0.20  
+0.02  0.10  0.21  
+
+• 
+SIG = 0.85 o.so 0.15 SIG = 0.10 0.05 0.01 
+r::::::::itrn%  ?tt\M:i!]! :: 
+:
+n:<.?.rnt  ]:JOltEt ]ftJiittf ¡:¡;Jggf?  )14.fffl!Ji t W!Mi@:  !)J(ll tfij!'JQI!i:  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800 INF.  0.29  0.31  0.40  0.69  1.20  1.11  1.30  3.37  2.44  
+0.29  0.32  0.36  0.86  1.25  1.12  1.61  3.45  2.62  
+0.29  0.31  0.34  0.86  1.27  1.18  1.80  3.43  2.66  
+0.30  0.30  0.32  0.91  1.30  1.17  2.02  3.68 2.78  
+0.29  0.31  0.32  0.96  1.27  1.18  2.18  3.52  2.88  
+0.28  0.34  0.31  0.97  1.31  1.20  2.32  3.60 2.91  
+0.30  0.32  0.31  1.00  1.33  1.20  2.34  3.58 2.93  
+0.29  0.32  0.32  1.04  1.33  1.23  2.52  3.59  3.05  
+0.29  0.32  0.32  1.08  1.35  1.24  2.65  3.71  3.10  
+0.29  0.31  0.31  1.13  1.30  1.23  2.86  3.64  3.28  
+0.30  0.32  0.31  1.16  1.33  1.28  2.93  3.80 3.36  
+0.30  0.32  0.31  1.17  1.33  1.27  3.04  3.63 3.28  
+0.30  0.31  0.33  1.21  1.31  1.30  3.14  3.56  3.38  
+0.30  0.33  0.31  1.24  1.35  1.30  3.29  3.74  3.42  
+0.30  0.32  0.32  1.25  1.38  1.33  3.29  3.71  3.48  
+0.31  0.34  0.33  1.27  1.38  1.30  3.38  3.84  3.46  
+0.31  0.33  0.32  1.26  1.38  1.33  3.42  3.76  3.54  
+0.32  0.31  0.30  1.32  1.36  1.32  3.51  3.78 3.57  
+0.32  0.31  0.32  1.32  1.37  1.36  3.58  3.78  3.75  
+0.32  1.39  3.80  
+
+iti\NM/:  ttt.AMtf iffifgJM  @ll.J.;l.Yrn :;;;;;:::11::;;;;  rnrggiii ;¡&U,mJtt rn1111@  ;:;tiggrn::::  Mítffil!W  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800 INF.  1.69  4.36  2.93  2.61  6.45  3.77  6.25  12.23  5.64  
+2.08  4.47  3.15  3.33  6.22  4.16  5.56  11.87  6.69  
+2.33  4.34  3.25  3.77  6.39  4.42  9.55  11.92  7.29  
+2.60  4.60  3.37  4.11  6.48  4.49  10.51  11.64  7.89  
+2.79  4.44  3.52  4.39  6.17  4.63  11.05  11.19  7.96  
+2.99  4.48  3.56  4.75  6.34  4.70  10.91  11.22  8.26  
+2.98  4.53  3.57  4.65  6.20  4.75  11.58  10.81  8.68 .  
+3.23  4.49  3.64  5.10  6.25  4.86  12.02  11.15  8.38  
+3.33  4.61  3.78  5.05  6.34  5.10  13.32  10.97  8.80  
+3.57  4.51  4.02  5.38  6.34  5.29  11.96  11.69  9.68  
+3.62  4.61  4.07  5.37  6.22  5.43  11.94  10.95  9.34  
+3.84  4.46  4.00  5.55  6.12  5.28  11.98  10.75  8.89  
+3.92  4.39  7.07  5.68  6.03  5.38  12.69  10.53  9.16  
+4.03  4.59  4.15  5.59  6.15  5.44  12.13  10.18  9.16  
+4.09  4.50  4.32  5.63  6.14  5.73  11.10  10.29  9.32  
+4.19  4.66  4.22  5.74  6.35  5.50  11.28  10.26  8.84  
+4.21  4.56  4.34  5.81  6.00  5.80  10.44  10.11  9.48  
+4.28  4.65  4.30  5.71  6.07  5.68  10.45  9.90  8.97  
+4.38  4.66  4.57  5.83  6.02  5.92  10.38  9.60  9.70  
+4.61  5.99  9.21  
+
+TABLA 4: CONVERGENCIA A NORMALIDAD DE LOS EST ADISTICOS Zl Y 22 INF. = VALOR ASINTOTICO 
+SIG = 0.99 0.95 0.90 0.85 O.SO 
+L';;J~~:';';~;: :ttz.i'D:: :::::z.gm:: :r;::z.1:::::=c:':=:=::>~;%'.:: ':;~=;z.1r1r: &\:a2t:t 2:2.tn::::: :::::;:::~tt::'::::~:%.'.L::\:::::22?':::::::': 
+10 -2.33 -2.03 -1.65 -1.53 -1.25 -1.21 -1.01 -1.02 0.00 -0.06 15 -2.36 -2.19 -1.66 -1.55 -1.28 -1 .21 -1.04 -0.99 0.01 -0.02 20 -2.35 -2.23 -1.66 -1.63 -1.27 -1.27 -1.03 -1.03 0.00 -0.04 25 -2.40 -2.33 -1.67 -1.63 -1.28 -1.26 -1.04 -1.00 -0.02 0.00 30 -2.33 -2.39 -1.67 -1.64 -1.31 -1.28 -1.06 -1.04 -0.02 -0.01 35 -2.29 -2.41 -1.64 -1.63 -1.27 -1.26 -1.04 -1.03 0.00 0.00 40 -2.26 -2.46 -1.63 -1.66 -1.30 -1.29 -1.05 -1.03 -0.01 0.01 50 -2.40 -2.41 -1.69 -1.71 -1.33 -1.29 -1.08 -1.04 -0.02 0.03 65 -2.36 -2.42 -1 .66 -1.67 -1.31 -1 .29 -1.06 -1.04 0.00 0.02 80 -2.36 -2.43 -1.66 -1.68 -1.29 -1.31 -1.04 -1.05 0.00 0.03 
+100 -2.22 -2.52 -1.61 -1.73 -1.25 -1.31 -1.01 -1.03 0.01 0.00 125 -2.27 -2.48 -1.62 -1.69 -1.27 -1.31 -1.02 -1.03 0.03 0.02 150 -2.33 -2.43 -1.66 -1.67 -1.30 -1.29 -1.05 -1.05 0.00 0.01 200 -2.35 -2.44 -1.68 -1.71 -1.28 -1.29 -1.05 -1.06 -0.01 0.01 250 -2.32 -2.39 -1.63 -1.69 -1.27 -1.31 -1.03 -1.05 0.00 0.03 300 -2.32 -2.37 -1.65 -1.64 -1.27 -1.26 -1.03 -1.01 0.01 0.01 400 -2.34 -2.41 -1.65 -1.68 -1.29 -1.29 -1.03 -1.05 0.01 -0.02 500 -2.32 -2.42 -1.63 -1.68 -1.27 -1.30 -1.02 -1.03 0.00 0.02 800 -2.34 -2.34 -1.64 -1.64 -1.29 -1.26 -1.05 -1.01 0.00 0.01 
+INF. -2.33 -1.64 -1.28 -1.03 0.00 
+SIG = 0.15 0.10 O.OS 0.01 
+t~iitfttw:: ;~t%.1tfa{ 11:4.?Wt f\:®.iifj!}f~ trn fWZtil :Jf~ JW:Mi~ MJ: f!.\zg;JJ: 
+1O 1.05 1.04 1.29 1.32 1.66 1.71 2.43 2.31 15 1.02 1.05 1.28 1.30 1.65 1. 71 2.28 2.44 20 1.05 1.03 1.30 1.28 1.68 1.67 2.30 2.31 25 1.02 1.03 1.26 1.28 1.61 1.65 2.30 2.32 30 1.01 1.02 1.25 1.27 1.63 1.65 2.26 2.33 35 1.05 1.03 1.31 1.28 1.67 1.66 2.32 2.32 40 1.04 1.03 1.29 1.26 1.65 1.63 2.30 2.28 so 1.03 1.05 1.28 1.31 1.63 1.64 2.35 2.32 
+65 
+1.04 1.04 1.30 1.28 1.67 1.65 2.32 2.32 
+
+80 
+1.02 1.04 1.25 1.27 1.65 1.61 2.31 2.23 100 1.06 1.02 1.29 1.26 1.67 1.60 2.40 2.28 125 1.05 1.02 1.30 1.26 1.67 1.61 2.34 2.31 150 1.01 1.04 1.27 1.28 1.63 1.65 2.30 2.28 200 1.03 1.05 1.27 1.29 1.64 1.65 2.32 2.35 250 1.00 1.03 1.26 1.27 1.64 1.64 2.32 2.32 300 1.04 1.02 1.29 1.27 1.66 1.63 2.35 2.36 400 1.04 1.00 1.29 1.26 1.63 1.62 2.26 2.33 500 1.05 1.07 1.30 1.31 1.66 1.66 2.29 2.36 800 1.04 1.05 1.28 1.28 1.63 1.65 2.29 2.34 
+
+
+INF. 1.03 1.28 1.64 2.33 
+TABLA 5: PODER ESTIMADO SOBRE OBSERVACIONES VALORES DE SIGNIFICANCIA ESTIMADOS 
+BETA(3,2) BETA(2,2) 
+=rntNf  %tt.!M@i1  :\faiJJ\  I!l$.ft::!{  IitM@}  il~ }j/  fMIU:!1  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.076  0.074  0.131  0.049  0.055  0.044  
+0.063  0.076  0.141  0.030  0.063  0.163  
+0.068  0.097  0.162  0.023  0.090  0.196  
+0.067 0,083  0.102 0.130  0.183 0.201  0.020 0.027  0.118 0.165  0.230  
+0.267  
+0.083  0.159  0.242  0.028  0.208  0.312  
+0.099  0.185  0.280  0.037  0.262  0.364  
+0.124  0.252  0.350  0.052  0.370  0.464  
+0.227  0.338  0.457  0.154  0.501  0.581  
+0.316  0.462  0.527  0.248  0.648  0.673  
+0.482  0.593  0.674  0.427 0.628  o.n1 0.890  0.793  
+0.662  0.768  0.825  0.903  
+0.798  0.877  0.906  0.777  0.947  0.949  
+0.930  0.962  0.976  0.926  0.989  0.990  
+0.986  0.993  0.994  0.983  0.998  0.998  
+0.997  0.998  0.999  0.997  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+
+CAUCHY CHl,2 
+
+EXP. CUARTICA F(3,4} 
+JfN\f  IMJJM?:t  tt~:::m  {Jml/f r:::;g1rt  fi.:~ f  Q#.Q!l:M  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.008  0.008  0.016  0.716  0.646  0.581  
+0.007  0.007  0.010  0.878  0.815  0.811  
+0.012  0.011  0.015  0.959  0.917 0.959 0.986 0.995 0.999 1.000 1.000  0.927 0.976 0.993 0.998 0.999 1.000 1.000  
+0.009  0.007  0.030  0.985  
+0.011  0.013  0.047  0.996  
+0.009  0.027  0.075  0.999  
+0.008  0.044  0.098  1.000  
+0.007  0.069  0.129  1.000 1.000 
+0.008  0.122  0.151  
+0.012  0.124  0.129  1.000  1.000  1.000  
+0.014  0.087  0.093  1.000  1.000  1.000  
+0.003  0.062  0.069  1.000  1.000  1.000  
+0.002  0.052  0.053  1.000  1.000  1.000  
+0.006  0.144  0.176  1.000  1.000  1.000  
+0.079  0.343  0.369  1.000  1.000  1.000  
+0.220  0.513  0.663  1.000  1.000  1.000  
+0.842  0.899  0.941  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+
+GAMMA(2,1) LOGNORMAL 
+Mfl@rn  :t;:gM@I  g:::Rg]J  WU$t.Uf  MJJMf  lff~!MI  rn1~t1.rn  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.328  0.287  0.238  0.552  0.500  0.425  
+0.455  0.400  0.375  0.731  0.658  0.640  
+0.587  0.514  0.510  0.857  0.790  0.797  
+0.678  0.578  0.621  0.925  0.861 0.927  0.893 0.946 
+0.771  0.675  0.708  0.967  
+0.828  0.745  0.796  0.985  0.960  0.975  
+0.878  0.803  0.861  0.993  0.980  0.992  
+0.938  0.900  0.942  0.999  0.996  0.999  
+0.986  0.967  0.985  1.000  1.000  1.000  
+0.996  0.992  0.995  1.000  1.000  1.000  
+0.999  0.999  0.999  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+
+MEZCLA DE NORMALES NORMAL 
+Jf/Hft11  tiJllM:f:ii  :ff~\M  m1rn,rn  Ji]llMWi l?~~tl  'tf~Yfi  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.104  0.103  0.096  0.101  0.099  0.097  
+0.099  0.098  0.099  0.098  0.099  0.102  
+0.106  0.105  0.102  0.106  0.106  0.104  
+0.107  0.101  0.104  0.106  0.099  0.107  
+0.108  0.105  0.100  0.103  0.104  0.100  
+0.102  0.102  0.100  0.102  0.102  0.103  
+0.104  0.101  0.102  0.105  0.100  0.105  
+0.100  0.102  0.105  0.100  0.105  0.108  
+0.105  0.100  0.105  0.108  0.102  0.106  
+0.101  0.101  0.092  0.101  0.104  0.096  
+0.101  0.097  0.095  0.099  0.096  0.097  
+0.106  0.106  0.104  0.103  0.108  0.101  
+0.104  0.109  0.101  0.105  0.111  0.100  
+0.095  0.099  0.101  0.098  0.098  0.104  
+0.096  0.101  0.093  0.101  0.107  0.097  
+0.099  0.095  0.103  0.094  0.095  0.106  
+0.097  0.097  0.096  0.103  0.103  0.106  
+0.100  0.095  0.103  0.104  0.099  0.110  
+0.098  0.097  0.096  0.099  0.098  0.096  
+
+T -STUDENT{5) TUKEY 
+l~fRgt{l~
+tfiJ;M:1:W 
+W~ !!M 
+NJIUWlt.:l1f.MtJ
+Wfl if 
+ff4.ªºª 
+0.201 
+0.201 
+0.138 
+0.102 
+0.104 
+0.099
+10 
+0.260 
+0.253 
+0.195 
+0.092 
+0.093 
+0.095
+15 
+0.234 
+0.099 
+0.099
+20 
+0.316 
+0.301 
+0.100 
+0.352 
+0.337 
+0.2n 
+0.096 
+0.089 
+0.099
+25 
+0.091
+0.375 
+0.305 
+0.103 
+0.098
+30 
+0.396 
+0.096 
+0.092
+0.428 
+0.401 
+0.337 
+0.098
+35 
+0.462 
+0.426 
+0.367 
+0.099
+0.100 
+0.098
+40 
+0.487 
+0.429 
+0.096 
+0.099 
+0.099
+0.514
+50 
+0.096 
+0.092
+0.588 
+0.543 
+0.495 
+0.089
+65 
+0.086
+0.644 
+0.605 
+0.543 
+0.093 
+0.095
+80 
+0.713 
+0.673 
+0.629 
+0.091 
+0.087 
+0.084
+100 
+0.091
+125 
+0.778 
+0.747 
+0.708 
+0.090 
+0.094 
+150 
+0.836 
+0.800 
+0.768 
+0.092 
+0.097 
+0.090 
+0.087
+200 
+0.902 
+0.877 
+0.863 
+0.084 
+0.083 
+0.924 
+0.911 
+0.084 
+0.087 
+0.080
+250 
+0.945 
+0.955 
+0.084 
+0.081 
+0.087
+0.970 
+0.953
+300 
+400 
+0.989 
+0.984 
+0.983 
+0.080 
+0.081 
+0.082 
+0.081
+0.997 
+0.995 
+0.995 
+0.078 
+0.073
+500 
+0.076
+1.000 
+1.000 
+1.000 
+0.079 
+0.077
+800 
+TABLA 6: PODER ESTIMADO SOBRE RESIDUOS VAWRES DE SIGNJFICANCIA ESTIMADOS 
+BETA(3,2) GAMMA(2,1) 
+:)@{N.i'f: tt.m.tt lfKZ\tl 1:taau:::1  lffffllt@ ittJflt[t fJ.$.U:rn  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.103  0.128  0.125 0.127  0.188 0.362  0.286  0.150  
+0.081  0.086  0.328  0.282  
+0.068  0.091  0.145  0.469  0.428  0.396  
+0.067  0.095  0.153  0.578  0.515  0.506  
+0.084  0.116  0.178  0.699  0.606  0.620  
+0.073  0.128  0.199  0.750  0.670  0.710  
+0.082  0.152  0.226  0.811  0.735  0.784  
+0.119  0.205  0.306  0.905  0.844  0.898  
+0.165  0.309  0.392  0.968  0.948  0.969  
+0.257  0.394  0.490  0.991 0.999  0.983 0.997  0.992  
+0.446  0.548  0.652  0.999  
+0.607  0.715  0.775  1.000  1.000  1.000  
+0.740  0.818  0.869  1.000  1.000  1.000  
+0.917 0.982  0.947 0.990  0.963  1.000  1.000  1.000  
+0.993  1.000  1.000  1.000  
+0.996  0.998  0.999  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+
+LOGNORMAL NORMAL T-STUDENT(S) 
+:@MN.t:;::::::  MffitM\W  MtKat@  ?f.®.M  UUi\MW@  ft::Ka.t%  lW.$.li#  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.346  0.375  0.234  0.109  0.131  0.106  
+0.597  0.544  0.477  0.107  0.105  0.104  
+0.754  0.696  0.674  0.102  0.104  0.102  
+0.860  0.803  0.807  0.104  0.105  0.102  
+0.931  0.883  0.897  0.113  0.111  0.103  
+0.959  0.925  0.943  0.104  0.102  0.102  
+0.978  0.960  0.974  0.104  0.103  0.102  
+0.995  0.989  0.995  0.102  0.102  0.110  
+0.999  0.999  1.000  0.099  0.106  0.103  
+1.000  1.000  1.000  0.100  0.100  0.102  
+1.000  1.000  1.000  0.105  0.100  0.109  
+1.000  1.000  1.000  0.103  0.103  0.101  
+1.000  1.000  1.000  0.099  0.096  0.096  
+1.000  1.000  1.000  0.103  0.100  0.100  
+1.000  1.000  1.000  0.101  0.104  0.102  
+1.000  1.000  1.000  0.102  0.105  0.104  
+1.000  1.000  1.000  0.109  0.098  0.104  
+1.000  1.000  1.000  0.098  0.109  0.101  
+1.000  1.000  1.000  0.101  0.098  0.101  
+
+~ititlli{{  IfMltt  H!~tm  &UJllt  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.145  0.232  0.103  
+0.225  0.211  0.159  
+0.273  0.263 0.304  0.199 0.243 
+0.324  
+o.3n  0.341  0.281  
+0.393  0.365  0.310  
+0.424  0.392  0.334  
+0.490  0.451  0.404  
+0.567  0.532 0.581  0.475 0.532 
+0.626  
+0.708  0.657  0.626  
+0.768  0.728  0.693  
+0.819  o.n1 0.867  0.751 0.854 
+0.896  
+0.936  0.919  0.907  
+0.966  0.954  0.950  
+0.988  0.982  0.981  
+0.996  0.995 1.000  0.994 1.000 
+1.000  
+
+TABLA 7: PODER ESTIMADO SOBRE RESIDUOS VALOR DE SIGNIFICANCIA ASINTOTICO SIG = 10% 
+BETA(3,2) GAMMA(2,1) 
+': :
+:,:j'::;~ :f:':}: HM4'0Wf  iiu.tl Mlt\YM:  f#.MfrP  mt1.S~lf M\ªªQtf  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.010  0.066  0.035 0.047  0.105 0.237  0.272  0.104 0.235 
+0.012  0.071  0.391  
+0.013  0.083  0.063  0.354  0.494  0.359  
+0.013  0.101  0.080 0.095 0.119  0.466 0.568 0.658  0.577  0.474 0.579 0.675 0.756 0.873  
+0.014  0.121  0.659  
+0.016  0.148  0.734  
+0.017  0.178  0.147  0.734  0.795  
+0.025  0.239  0.202  0.852  0.892  
+0.049  0.338  0.303  0.952  0.967  0.964 0.992 
+0.102  0.446  0.417  0.988  0.991  
+0.221  0.593  0.570  0.998  0.999  0.999  
+0.428  0.751  0.739  1.000  1.000  1.000  
+0.628  0.856  0.851  1.000  1.000  1.000  
+0.878  0.961  0.961  1.000  1.000  1.000  
+0.973  0.992  0.992  1.000  1.000  1.000  
+0.994  0.999  0.998  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+1.000  1.000  1.000  1.000  1.000  1.000  
+
+LOGNORMAL NORMAL 
+t?JN?  :IJ]i.MM;:  41.Uif !liiU\/ :iii.P.&f)\  tJ(2f  ;:;:;:u.W,i/  
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  0.268  0.483  0.258  0.015  0.096 0.096 0.098 0.102 0.102 0.101 0.103  0.026 0.038 0.042 0.049 0.054 0.056 0.060  
+0.506  0.650  0.512  0.032  
+0.684  0.776  0.685  0.037  
+0.805  0.860  0.808  0.045  
+0.889  0.922  0.893  0.052  
+0.935  0.956  0.942  0.055  
+0.966  0.979  0.972 0.995 1.000  0.056  
+0.993  0.996  0.058  0.102 0.101 0.100  0.061 0.065 0.070  
+1.000  1.000  0.061  
+1.000  1.000  1.000  0.064  
+1.000  1.000  1.000  0.068  0.101 0.095  0.073 0.074 
+1.000  1.000  1.000  0.069  
+1.000  1.000  1.000  0.072  0.096  0.076  
+1.000  1.000  1.000  0.080  0.102 0.099 0.101 0.104 0.103 0.101  0.085 0.086 0.087 0.094 0.093 0.095  
+1.000  1.000  1.000  0.082  
+1.000  1.000  1.000  0.084  
+1.000  1.000  1.000  0.091  
+1.000  1.000  1.000  0.091  
+1.000  1.000  1.000  0.091  
+
+MMN.H# 
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800 
+T -STUDENT(5) 
+M'.l#i4MI 
+0.064 
+0.137 
+0.231 
+0.256 
+0.297 
+0.343 
+0.381 
+0.448 
+0.523 
+0.597 
+0.671 
+0.747 
+0.808 
+0.889 
+0.938 
+0.965 
+0.988 
+0.996 
+1.000 
+YlK2M/·1::;:1e.J;ur 
+0.188 
+0.246 
+0.288 
+0.328 
+0.357 
+0.396 
+0.425 
+0.478 
+0.540 
+0.601 
+0.667 
+0.736 
+0.793 
+o.0n 
+0.928 
+0.957 
+0.984 
+0.995 
+1.000 
+0.056 
+0.121 
+0.169 
+0.213 
+0.244 
+0.282 
+0.311 
+0.367 
+0.440 
+0.508 
+0.590 
+0.672 
+0.741 
+0.847 
+0.911 
+0.947 
+0.981 
+0.994 
+1.000 
+TABLA 8: VALORES DE SIGNIFICANCIA CALCULADOS EMPIRICAMENTE CON 10000 REPETICIONES. S1G=10% 
+OBSERVACIONES RESIDUOS 
+~1::~tN.:?11;  tWl\lf!t lli~ tf) @µJJIM  tl!!í3MJ  \\fg @;:  iJB,Pif 
+10 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800  1.610  4.360  2.930  1.430  3.530  2.850  
+2.080  4.470  3.150  1.880  4.190  3.110  
+2.310  4.350  3.250  2.260  4.260  3.250  
+2.550  4.590  3.370  2.510  4.420  3.410  
+2.660  4.440  3.520  2.560  4.420  3.460  
+2.850  4.480  3.560  2.860  4.590  3.540  
+2.960  4.530  3.570  3.010  4.570  3.630  
+3.240  4.490  3.640  3.160  4.620  3.610  
+3.330  4.610  3.780  3.460  4.490  3.830  
+3.530  4.510  4.020  3.590  4.630  3.930  
+3.640  4.610  4.070  3.610  4.610  3.910  
+3.760  4.460  4.010  3.760  4.570  4.070  
+3.840  4.390  4.070  3.920  4.670  4.180  
+4.120  4.590  4.150  4.030  4.620  4.250  
+4.160  4.520  4.320  4.130  4.530  4.270  
+4.190  4.660  4.220  4.160  4.510  4.250  
+4.250  4.560  4.340  4.180  4.740  4.410  
+4.320  4.650  4.310  4.460  4.510  4.470  
+4.430  4.660  4.570  4.440  4.660  4.480  
+
+APENDICEB 
+APENDICEB PROGRAMAS UTILIZADOS 
+PROGRAMA PARA PRUEBA DE PODER DEL ESTADISTICO LM,CONSIDERANDO DISTINTOS TAMAÑOS DE MUESTRA, DE OBSERVACIONES CON DISTRIBUCIONES 
+DADAS: 
+1.-BETA (3, 2) (SIG ES EL VECTOR DE VALORES CRITICO$ DE LM PARA 
+DISTINTOS TAMAÑOS DE MUESTRA, CALCULADOS EMPIRIRICAMENTE REALIZANDO 10000 REPETICIONES, SUPONIENDO DISTRIBUCION NORMAL 
+DE LA MUESTRA SOBRE LA CUAL SE NIVEL DE SIGNIFICANCIA CONSIDERADO  CALCULAN ES DE 10%).  DICHOS  VALORES.  EL  
+new ,65520; output file= b:rprjbb.doc reset;  
+
+let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 
+3.84,4.12,4.16,4.19,4.25,4.32,4.43}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO¡ 
+x=rndbs(l,5,nsize[jj],j+jj+2); a[j,l]=pruebajb(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; ende; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print 11 FRACCION =";;b[jj]; 
+output off; jj=jj+l; ende; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndbs(kl,k2,a,n,s); local gl,x,g2,g3,u,ul,u2; u=rndus(kl+k2,n,s); 
+ul=u(l:kl,.]; u2=u[(kl+l): (kl+k2),.]; gl=-ln(prodc(ul))/a; g2=-ln(prodc(u2))/a; g3=gl+g2; x=gl. /g3; retp(x); 
+endp; 
+2.-BETA(2,2) 
+new ,65520; output file= b:rprjbb2.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndbs(2,2,nsize[jj],j+jj); a[j,lJ=pruebajb(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jjJ; print "FRACCION =";;b[jjJ; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl={sumc{{x-ml)A3)/n)/{m2Al.5); b2={sumc({x-ml)A4)/n)/{m2A2); jb=n*{((sbl)A2/6)+{(b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; u2=u[., (kl+l): (kl+k2)]; gl=-ln(prodc(ul')); 
+g2=-ln(prodc(u2'}}; g3=gl+g2; x=gl. /g3; retp(x}; 
+endp; 
+3.-CAUCHY 
+new ,65520; output file= b:rprjbc.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 
+3.84,4.12,4.16,4.19,4.25,4.32,4.43}; 
+jj=l; b=zeros(rows(nsize},l}; do while jj <= rows(nsize}; 
+a=zeros{lOOOO,l}; j=l; do while j<=lOOOO¡ 
+x=rndcs{nsize[jj],j+jj+2}; a[j,l]=pruebajb{x}; if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb{x); 
+local ml,m2,n,sbl,b2,jb; n=rows{x}; ml=meanc{x}; m2=sumc{{x-ml}A2}/n; sbl={sumc((x-ml}A3}/n}/{m2Al.5}; b2={sumc{(x-ml}A4}/n)/{m2A2}; jb=n*{{(sbl}A2/6)+{{b2-3}A2)/24}; retp{jb}; 
+endp; 
+proc rndcs{n,s}; local c,x; x=rndns(n,2,s}; c=x[.,1] ./ x[.,2]; retp(c); 
+endp; 
+4.-CHI-CUADRADA, 2 g.l. 
+new ,65520; output file= b:rprjbchi.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndchs(2,nsize(jj],j+jj); a(j,l]=pruebajb(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp (jb); 
+endp; 
+proc rndchs(m,n,s); local ch; ch=sumc(rndns(m,n,s)A2); retp(ch); 
+endp; 
+5.-EXPONENCIAL CUARTICA 
+new ,65520; output file= b:rprjbec.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize),1); 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndecs(nsize[jj],j+jj); a(j,l]=pruebajb(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local rnl,rn2,n,sbl,b2,jb; n=rows(x); ml=rneanc(x); rn2=surnc((x-ml)A2)/n; sbl=(surnc((x-ml)A3)/n)/(m2Al.5); b2=(surnc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndecs(n,s); local i,j,x,ut,ec,sl,s2; i=l; j=O; ec=zeros(n,1); do until i>n; 
+sl=s+j; s2=sl+l; x=rndns(l,1,sl); ut=exp((xA4)/4)*rndus(l,1,s2); if ut<=l; 
+ec(i,l]=x; 
+i=i+l; endif; j=j+l; 
+endo; retp(ec); endp; 
+6.-F(3,4) 
+new ,65520; output file= b:rprjbf.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800¡ 
+sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize) ,1); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; do while j<=lOOOO¡ 
+x=rndfs(3,4,nsize[jj],j+jj); a[j,l]=pruebajb(x); if a[j,l] >= sig[jj,l]; 
+b[jj,l]=b[jj,l]+l; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndfs(m,k,n,s); local rn,x,y,f; rn=rndns(m+k,n,s); x=sumc(rn[l:m,.]A2)/m; y=sumc(rn[m+l:m+k,.]A2)/k; f=x. /y; retp(f); 
+endp; 
+7.-GAMMA(2,l) 
+new ,65520; output file= b:rprjbg.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize),l); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); 
+j=l; 
+do while j<=lOOOO¡ x=rndgs(2,1,nsize(jj],j+jj); a(j,l]=pruebajb(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo¡ b[jj,l]=b[jj,1]/10000¡ output on¡ print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off¡ 
+jj=jj+l¡ endo¡ proc pruebajb(x)¡ 
+local ml,m2,n,sbl,b2,jb¡ n=rows(x); ml=meanc(x)¡ m2=sumc((x-ml)A2)/n¡ sbl=(sumc((x-ml)A3)/n)/(m2Al.5)¡ b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a¡ retp(g); 
+endp; 
+8.-LOGNORMAL 
+new ,65520; output file= c:rprjblog.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l¡ b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndlogs(l,1,nsize[jj],j+jj); a[j,l]=pruebajb(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1)+1¡ endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndlogs(a,b,n,s); local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x)¡ 
+endp; 
+9.-MEZCLA DE DOS NORMALES 
+new ,65520¡ output file= c:rprjbmn.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 
+3.84,4.12,4.16,4.19,4.25,4.32,4.43}; 
+jj=l¡ b=zeros(rows(nsize),1)¡ do while jj <= rows(nsize); 
+a=zeros(l0000,1)¡ j=l¡ do while j<=lOOOO¡ 
+x=rndmns(.5,0,1,1,1,nsize[jj],j+jj); a[j,l]=pruebajb(x)¡ if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1¡ endif¡ j=j+l; 
+endo¡ b[jj,l]=b[jj,1]/10000; output on¡ print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndmns(c,ml,m2,sl,s2,n,s)¡ local z,mn; z=rndns(n,2,s)¡ mn=c*(sl*z[.,l]+ml)+(l-c)*(s2*z[.,2]+m2); retp(mn); 
+endp; 
+10.-NORMAL 
+new ,65520; output file= c:rprjbn.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 
+3.84,4.12,4.16,4.19,4.25,4.32,4.43}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; s=j+jj; do while j<=lOOOO¡ 
+x=rndns(nsize[jj],1,s); a[j,l]=pruebajb(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; 
+sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+11.-T-STUDENT (5) 
+new ,65520; output file= b:rprjbt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30,2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndts(5,nsize[jj],j+jj); a[j,l]=pruebajb(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(m+l,n,s); x=u[l,.]'; y=u[2:(m+l),.]; t=x./sqrt(sumc(yA2)/m); retp(t); 
+endp; 
+12.-TUKEY 
+new ,65520; output file= b:rprjbtuk.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.61,2.08,2.30¡2.55,2.66,2.85,2.96,3.24,3.33,3.53,3.64,3.76, 3.84,4.12,4.16,4.19,4.25,4.32,4.43}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; do while j<=lOOOO; 
+x=rndtuks(0,.1975,.1349,.1349,nsize[jjJ,j+jj); a(j,l]=pruebajb(x); if a(j,1] >= sig(jj,lJ; 
+b[jj,l]=b(jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndtuks(ll,12,13,14,n,s); local u,z; u=rndus(n,1,s); z=ll+(l/12)*((uA13)-(1-u)Al4); retp(z); 
+endp; 
+PROGRAMAS PARA LA EVALUACIOH DEL ESTADISTICO K2.AQUI SE HA 
+SUSTITUIDO  LOS  VALORES  CRITICOS  DE  LOS  PROGRAMAS  ANTERIORES  POR  
+LOS  ESTIMADOS  EMPIRICAMEHTE  PARA  K2,  PARA  EL  MISMO  NIVEL  DE  
+SIGHIFICAHCIA DE  10%.  
+
+13. -BETA(3, 2) 
+new ,65520; output file= b:rprdpb.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; , sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndbs(3,2,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1;endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; 
+zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; 
+u=rndus(n,kl+k2,s); 
+ul=u(.,1:kl]; u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl. /g3; retp(x); endp; 
+14.-BETA(2,2) 
+new ,65520; output file= b:rprdpbb.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 4.39,4.59,4.50,4.66,4.56,4.65,4.66}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndbs(2,2,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=:j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); 
+y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[., 1 :kl]; u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); g3=gl+g2; x=gl. /g3; retp(x); 
+endp; 
+15.-CAUCHY 
+new ,65520; output file= b:rprdpc.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; 
+do while j<=lOOOO; 
+x=rndcs(nsize[jjJ,j+jj); a[j,l]=pruebadp(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=rneanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); . sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndcs(n,s); local c,x; x=rndns(n,2,s); c=x[.,1] ./ x[.,2]; retp(c); 
+endp; 
+16.-CHI-CUADRADA, 2 g.l. 
+new ,65520; output file= b:rprdpchi.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 4.39,4.59,4.50,4.66,4.56,4.65,4.66}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndchs(2,nsize[jj],j+jj); a(j,l]=pruebadp(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-l)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp¡ 
+proc rndchs(m,n,s); local ch; ch=sumc(rndns(m,n,s)A2); retp(ch); 
+endp; 
+17.-EXPONENCIAL CUARTICA 
+new ,65520; output file= b:rprdpec.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 4.39,4.59,4.50,4.66,4.56,4.65,4.66}; jj=l; b=zeros(rows(nsize},l}; do while jj <= rows(nsize)¡ 
+a=zeros(lOOOO,l); j=l; do while j<=lOOOO; 
+x=rndecs(nsize(jjJ,j+jj); a(j,l)=pruebadp(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-l)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((l-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa));k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndecs(n,s); local i,j,x,ut,ec,sl,s2; i=l; j=O; ec=zeros(n,1); do until i>n; 
+sl=s+j; s2=sl+l; x=rndns(l,l,sl); ut=exp((xA4)/4)*rndus(l,1,s2); if ut<=l; 
+ec(i,l)=x; 
+i=i+l; endif; j=j+l; 
+endo; retp(ec); endp; 
+18.-F(3,4) 
+new ,65520; output file= b:rprdpf.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndfs(3,4,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000¡ output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndfs(m,k,n,s); local rn,x,y,f; rn=rndns(m+k,n,s); x=sumc(rn[l:m,.]A2)/m; y=sumc(rn[m+l:m+k,.]A2)/k; f=x./y; retp(f); 
+endp; 
+19 • -GAMMA ( 2 , 1) 
+new ,65520; output file= b:rprdpg.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 ~50 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 4.39,4.59,4.50,4.66,4.56,4.65,4.66}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndgs(2,1,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,1]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); 
+b2sbl={3*{nA2+27*n-70)*{n+l)*{n+3))/{{n-2)*{n+5)*{n+7)*{n+9)); w2=-l+sqrt{2*{b2sbl-1)); d=l/sqrt(.5*ln{w2)); a=sqrt{2/{w2-1)); zsbl=d*ln{y/a+sqrt{l+{y/a)A2)); eb2=3*{n-1)/{n+l); vb2=24*n*{n-2)*{n-3)/{{{n+l)A2)*(n+3)*{n+5)); sb2={b2-eb2)/{sqrt{vb2)); sblb2={6*{nA2-{5*n)+2))*sqrt{6*{n+3)*{n+5)/{n*{n-2)*{n­
+3)))/{{n+7)*{n+9)); aa=6+16/{sblb2A2)+8*sqrt{1+4/{sblb2A2))/sblb2; zb2={1-2/{9*aa)-{{1-2/aa)/{l+sb2*sqrt{2/{aa-
+4))))A{l/3))/sqrt{2/{9*aa)); k2={{zsbl)A2+{zb2)A2); retp{k2); 
+endp; 
+proc rndgs{k,a,n,s); local g,u; u=rndus{n,k,s); g=-ln{prodc{u'))/a; retp{g); 
+endp; 
+20.-LOGNORMAL 
+new ,65520; output file= b:rprdplog.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros{rows{nsize),1); do while jj <= rows{nsize); 
+a=zeros{l0000,1); j=l; 
+do while j<=lOOOO¡ 
+x=rndlogs{l,1,nsize[jj],j+jj); a[j,l]=pruebadp{x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; endo; proc pruebadp{x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9));aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndlogs(a,b,n,s); local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+21.-MEZCLA DE DOS NORMALES 
+new ,65520; output file= b:rprdpmn.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndmns(.5,0,1,1,1,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1)/10000; output on; print "PARA N=";;nsize(jjJ; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((l-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndmns(c,ml,m2,sl,s2,n,s); local z,mn; z=rndns(n,2,s); mn=c*(sl*z[.,l]+ml)+(l-c)*(s2*z[.,2]+m2); retp(mn); 
+endp; 
+22.-NORMAL 
+new ,65520; output file= c:rprdpn.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 4.39,4.59,4.50,4.66,4.56,4.65,4.66}; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; s=j+jj; 
+do while j<=lOOOO; x=rndns(nsize[jj],1,s); a[j,l]=pruebadp(x); if a[j,1] >= sig[jj,l]; 
+b[jj,l]=b[jj,1)+1; endif; j=j+l; 
+endo; b[jj,lJ=b[jj,1)/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-l)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+23.-T-STUDENT (5) 
+new ,65520; output file= b:rprdpt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); 
+j=l¡ 
+do while j<=lOOOO¡ x=rndts(5,nsize[jj],j+jj)¡ a[j,l]=pruebadp(x)¡ if a[j,1] >= sig[jj,1]¡ 
+b[jj,l]=b[jj,1]+1¡ endif¡ j=j+l¡ 
+endo¡ b[jj,l]=b[jj,1)/10000¡ output on¡ print "PARA N=";;nsize[jj]; print "FRACCION ="¡¡b[jj)¡ output off¡ 
+jj=jj+l¡ endo¡ proc pruebadp(x)¡ 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa. 
+zb2,k2¡ n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n¡ sbl=(sumc((x-ml)A3)/n)/(m2Al.5)¡ b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa))¡ k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(m+l,n,s); x=u [1, . ] '; y=u(2:(m+l),.]; t=x./sqrt(sumc(yA2)/m); retp(t); 
+endp; 
+24.-TUKEY 
+new ,65520; 
+output file= b:rprdptuk.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={4.36,4.47,4.35,4.59,4.44,4.48,4.53,4.49,4.61,4.51,4.61,4.46, 
+4.39,4.59,4.50,4.66,4.56,4.65,4.66}; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; 
+do while j<=lOOOO; 
+x=rndtuks(0,.1945,.1349,.1349,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a(j,l] >= sig(jj,l]; 
+b[jj,lJ=b[jj,lJ+l; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1)/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b(jjJ; 
+output off; jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-l)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndtuks(ll,12,13,14,n,s); local u,z; u=rndus(n,1,s); z=ll+(l/12)*((uA13)-(1-u)Al4); 
+retp(z); endp; 
+PROGRAMAS PARA EVALUACION DEL ESTADISTICO JBU, CON SUS RESPECTIVOS VALORES CRITICOS. SIGNIFICANCIA DE 10%. 
+25.-BETA(3,2} 
+new ,65520; output file= b:rprurb.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; jj=l; b=zeros(rows(nsize},l}; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndbs(J,2,nsize(jj],j+jj); a(j,l]=pruebaur(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; x=gl./g3; retp(x}; 
+endp; 
+26.-BETA(2,2} 
+new ,65520; output file= b:rprurbb.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; 
+jj=l; b=zeros(rows(nsize},1}; do while jj <= rows(nsize}; 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO; 
+x=rndbs(2,2,nsize(jjJ,j+jj}, a(j,l]=pruebaur(x}; if a(j,1] >= sig[jj,1]; 
+b[jj,l)=b[jj,1)+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1)/10000; 
+output on; print "PARA N=";;nsize(jj]; 
+print "FRACCION =";;b[jj); 
+output off; jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; 
+n=rows(x); 
+ml=meanc(x); m2=sumc((x-ml)A2}/n; sbl=(sumc((x-ml)A3)/n}/(m2Al.5}; b2=(sumc((x-ml}A4}/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2}-(l/3})A2)); retp(jbur); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); Ul=U(.,l:kl]¡ U2=U[.,(kl+l):(kl+k2)]¡ gl=-ln(prodc(ul')}; g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl./g3; retp(x); 
+endp; 
+27.-CAUCHY 
+new ,65520; output file= c:rprurc.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndcs(nsize[jj],j+jj); a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000¡ output on; print "PARA N=";;nsize[jj]; print 11 FRACCI0N =";;b[jj]; output off; 
+jj=jj+l; ende; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndcs(n,s); local c,x; x=rndns(n,2,s); c=x(.,l] ./ x[.,2]; retp(c); 
+endp; 
+28.-CHI-CUADRADA, 2 
+new ,65520; output file= b:rprurchi.doc reset; 
+let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO; 
+x=rndchs(2,nsize(jjJ,j+jj); a[j,lJ=pruebaur(x); if a(j,lJ >= sig[jj,1); 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize(jjJ; print "FRACCION =";;b[jjJ; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); 
+b2=(sumc((x-ml)A4)/n)/(m2A2); 
+jbur=n*(((sb1A2)/6)+(27/8)*(({1/b2)-(l/3))A2)); 
+retp ( jbur) ; endp; proc rndchs(m,n,s); 
+local ch; ch=sumc(rndns(m,n,s)A2); retp(ch); 
+endp; 
+29.-EXPONENCIAL CUARTICA 
+new ,65520; output file= c:rprurecl.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; jj=l; b=zeros(rows(nsize),1)¡ do while jj <= rows(nsize)¡ 
+a=zeros(lOOOO,l)¡ j=l; 
+do while j<=lOOOO; 
+x=rndecs(nsize[jjJ,j+jj); a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,l]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jjJ; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndecs(n,s); local i,j,x,ut,ec,sl,s2; i=l; 
+j=O; 
+ec=zeros(n,l); 
+do until i>n; sl=s+j; S2=sl+l¡ x=rndns(l,l,sl); 
+ut=exp((xA4)/4)*rndus(l,1,s2); 
+if ut<=l; 
+ec[i,l]=x; 
+i=i+l; endif; j=j+l; 
+endo; retp(ec); endp; 
+30.-F(3,4) 
+new ,65520¡ output file= b:rprurf.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; jj=l; 
+b=zeros(rows(nsize),1); 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndfs(3,4,nsize[jj],j+jj); a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,l]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5)¡ b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp ( j bur) ¡ 
+endp; 
+proc rndfs(m,k,n,s); local rn,x,y,f¡ rn=rndns(m+k,n,s); x=sumc(rn(l:m,.]A2)/m; y=sumc(rn[m+l:m+k,.]A2)/k¡ 
+f=x./y; 
+retp(f); endp; 
+3 1 • -GAMMA ( 2 , 1 ) 
+new ,65520¡ output file= b:rprurg.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndgs(2,1,nsize[jjJ,j+jj); 
+a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-m1)~3)/n)/(m2Al.5); b2=(sumc((x-m1)~4)/n)/(m2~2); jbur=n*(((sb1~2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(m+l,n,s); x=u[l,.]'; y=u(2:(m+l),.]; t=x./sqrt(sumc(yA2)/m); retp(t); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp; 
+32.-LOGNORMAL 
+new ,65520; output file= c:rprurlog.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO; 
+x=rndlogs(l,1,nsize[jj],j+jj); 
+a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndlogs(a,b,n,s); local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+33.-MEZCLA DE DOS NORMALES 
+new ,65520; output file= c:rprurmn.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; do while j<=lOOOO; 
+x=rndmns(.5,0,1,1,l,nsize(jj],j+jj); a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,l]+l; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; ende; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(l/3))A2)); retp(jbur); 
+endp; 
+proc rndmns(c,ml,m2,sl,s2,n,s); local z,mn; z=rndns(n,2,s); mn=c*(sl*z(.,l]+ml)+(l-c)*(s2*z[.,2]+m2); retp(mn); 
+endp; 
+34.-NORMAL 
+new ,65520; output file= b:rprurn.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO¡ 
+s=j+jj; x=rndns(nsize(jj],1,s); a(j,l]=pruebaur(x); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; ende; 
+proc pruebaur(x); local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(l/3))A2)); retp(jbur); 
+endp; 
+35.-T-STUDENT (5) 
+new ,65520; output file= b:rprurt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO; 
+x=rndts(5,nsize[jj],j+jj); a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; 
+n=rows(x); 
+ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(l/3))A2)); retp (jbur); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(m+l,n,s); 
+x=u[l,.]'; 
+y=u[2: (m+l),.); t=x./sqrt(sumc(yA2)/m); retp(t); 
+endp; 
+36.-TUKEY 
+new ,65520; output file= b:rprurtuk.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.93 3.15 3.25 3.37 3.52 3.56 3.57 3.64 3.78 4.02 4.07 
+4.00 4.07 4.15 4.32 4.22 4.34 4.30 4.57; jj=l; b=zeros(rows(nsize) ,1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndtuks(0,.1975,.1349,.1349,nsize[jj],j+jj); a[j,l]=pruebaur(x); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1)/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndtuks(ll,12,13,14,n,s); local u,z; u=rndus(n,1,s); z=ll+(l/12)*((uA13)-(1-u)Al4); retp(z); 
+endp; 
+PROGRAMAS UTILIZADOS PARA EVALUAR LOS ESTADISTICOS LM, K2 Y JBU, CONSIDERANDO AHORA LOS RESIDUOS DE CMO (LOS VALORES CRITICOS SON LOS CALCULADOS EMPIRICAMENTE PARA EL CASO DE RESIDUOS) 
+PROGRAMAS PARA LM 
+37.-BETA{3,2) 
+new ,65520; output file= c:rprjbbr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ sig={l.43,1.88,2.26,2.50,2.56,2.86,3.0l,3.16,3.46,3.59, 
+3.60,3.76,3.92,4.03,4.13,4.16,4.18,4.46,4.44}; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jjJ,1)-z; do while jj <= rows(nsize); 
+a=zeros{l0000,1); j=l; do while j<=lOOOO¡ 
+er=rndbs{3,2,nsize[jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebajb(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; 
+n=rows(x); 
+ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/{m2Al.5); b2={sumc((x-ml)A4)/n)/{m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; proc rndbs{kl,k2,n,s); 
+local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl. /g3; retp(x); endp; 
+38.-GAMMA(2,1) 
+new ,65520; output file= c:rprjbgr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.43,1.88,2.26,2.50,2.56,2.86,3.0l,3.16,3.46,3.59, 
+3.60,3.76,3.92,4.03,4.13,4.16,4.18,4.46,4.44}; 
+jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+er=rndgs(2,1,nsize[jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebajb(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; z=zjrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a retp(g); 
+endp; 
+39.-LOGNORMAL 
+new ,65520; output file= c:rprjblogr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ sig={l.43,l.88,2.26,2.50,2.56,2.86,3.0l,3.16,3.46,3.59, 
+3.60,3.76,3.92,4.03,4.13,4.16,4.18,4.46,4.44}; 
+jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; do while j<=lOOOO; 
+er=rndlogs(l,l,nsize[jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebajb(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1)/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1)),2); x=ones(nsize[jj],1)-z; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+x=rndlogs(a,b,10000,200); proc rndlogs(a,b,n,s); 
+local x,c,d,z; d=ln(l+b/(a"2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+40.-NORMAL 
+new ,65520; output file= b:rprjbnr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ sig={l.43,1.88,2.26,2.50,2.56,2.86,3.0l,3.16,3.46,3.59, 
+3.60,3.76,3.92,4.03,4.13,4.16,4.18,4.46,4.44}; 
+jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+s=j+jj; er=rndns(nsize[jj],1,s); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebajb(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; . 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)"2)/n; sbl=(sumc((x-ml)"3)/n)/(m2"1.5); b2=(sumc((x-m1)"4)/n)/(m2"2); jb=n*(((sb1)"2/6)+((b2-3)"2)/24); retp(jb); 
+endp; 
+41.-T-STUDENT 
+new ,65520; output file= b:rprjbtr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; sig={l.43,1.88,2.26,2.50,2.56,2.86,3.0l,3.16,3.46,3.59, 
+3.60,3.76,3.92,4.03,4.13,4.16,4.18,4.46,4.44}; 
+jj=l; b=zeros(rows(nsize),1); z=rndu(nsize(jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1i; j=l; do while j<=lOOOO; 
+er=rndts(S,nsize(jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a(j,l]=pruebajb(esig); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj]-nsize(jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebajb(x); 
+local ml,rn2,n,sbl,b2,jb; n=rows(x); ml=rneanc(x); rn2=sumc((x-ml)A2)/n; sbl=(surnc((x-rnl)A3)/n)/(rn2Al.5); b2=(surnc((x-rnl)A4)/n)/(rn2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(m+l,n,s); x=u(l,.]'; y=u(2:(m+l),.]; t=x./sqrt(sumc(yA2)/rn); retp(t); 
+endp; 
+PROGRAMAS PARA K2 
+42.-BETA(3,2) 
+new ,65520; output file= c:rprdpbr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=J.52 4.19 4.26 4.42 4.42 4.59 4.58 4.62 4.49 4.63 4.60 
+4.57 4.67 4.62 4.53 4.51 4.74 4.50 4.66; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+er=rndbs(J,2,nsize[jjJ,j+jj); esig=er-x*(invpd(x'x))*(x'*er); a(j,l]=pruebadp(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zjrndu((nsize(jj]-nsize[jj-1]),2); x=ones(nsize(jj],1)-z; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(rn2Al.5); b2=(surnc((x-rnl)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/{sblb2A2)+8*sqrt{1+4/(sblb2A2))/sblb2; zb2=(1-2/{9*aa)-((1-2/aa)/{l+sb2*sqrt{2/(aa-
+4))))A{l/3))/sqrt(2/(9*aa)); 
+k2=((zsbl)A2+{zb2)A2); 
+retp(k2); endp; proc rndbs{kl,k2,n,s); 
+local gl,g2,g3,x,u,u1,u2; u=rndus(n,kl+k2,s); Ul=u[. 1 1:kl] i u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc{ul')); g2=-ln(prodc{u2')); 
+g3=gl+g2; 
+x=gl./g3; retp(x); endp; 
+43.-GAMMA{2,1) 
+new ,65520; output file= c:rprdpgr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ let sig=3.52 4.19 4.26 4.42 4.42 4.59 4.58 4.62 4.49 4.63 4.60 
+4.57 4.67 4.62 4.53 4.51 4.74 4.50 4.66; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize(jj],2); x=ones(nsize[jj],1)-z; do whilé jj <= rows(nsize); 
+a=zeros{l0000,1); j=l; do while j<=lOOOO¡ 
+er=rndgs{2,1,nsize[jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebadp(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj)-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-l)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/{w2-l)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*{n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2}A2); retp(k2); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp; 
+44.-LOGNORMAL 
+new ,65520; output file= c:rprdplogr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=3.52 4.19 4.26 4.42 4.42 4.59 4.58 4.62 4.49 4.63 4.60 
+4.57 4.67 4.62 4.53 4.51 4.74 4.50 4.66; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize(jj],2); x=ones(nsize(jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+er=rndlogs(l,1,nsize[jjJ,j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebadp(esig); if a(j,l] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; 
+j=j+l; endo; b[jj,l]=b[jj,1)/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj)-nsize[jj-1)),2); x=ones(nsize[jj],1)-z; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); ' d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; x=rndlogs(a,b,10000,200); proc rndlogs(a,b,n,s); 
+local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+45.-NORMAL 
+new ,65520; output file= b:rprdpnr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=3.52 4.19 4.26 4.42 4.42 4.59 4.58 4.62 4.49 4.63 4.60 
+4.57 4.67 4.62 4.53 4.51 4.74 4.50 4.66; 
+jj=l; b=zeros(rows(nsize),1); z=rndu(nsize(jjJ,2); x=ones(nsize(jjJ,1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO¡ 
+s=j+jj; er=rndns(nsize(jj],1,s); esig=er-x*(invpd(x'x))*(x'*er); a(j,l]=pruebajb(esig); if a(j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; ende; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zjrndu((nsize[jj]-nsize(jj-1]),2); x=ones(nsize[jjJ,1)-z; ende; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa,
+zb2,k2; · n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-l)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-l)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9));aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+46.-T-STUDENT 
+new ,65520; output file= b:rprdptr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=3.52 4.19 4.26 4.42 4.42 4.59 4.58 4.62 4.49 4.63 4.60 
+4.57 4.67 4.62 4.53 4.51 4.74 4.50 4.66; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize(jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+er=rndts(5,nsize(jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebadp(esig); if a[j,1] >= sig(jj,1]; 
+b[jj,l]=b(jj,l]+l; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize(jj]; 
+print "FRACCION =";;b[jj]; 
+output off; jj=jj+l; z=zlrndu((nsize(jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, zb2,k2; 
+n=rows(x); 
+ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa­
+4))))A{l/3))/sqrt{2/{9*aa)); k2={{zsbl)A2+(zb2)A2); retp(k2)¡ 
+endp; 
+proc rndts{m,n,s); local t,x,y,u; u=rndns(m+l,n,s); x=u[l,.]'; y=u[2:(m+l),.]; t=x./sqrt{sumc{yA2)/m); retp(t); 
+endp; 
+PROGRAMAS PARA JBU 
+47.-BETA{2,1) 
+new ,65520; output file= b:rprurbr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.85 3.10 3.25 3.41 3.46 3.54 3.63 3.61 3.83 3.93 3.91 
+4.07 4.18 4.25 4.27 4.25 4.41 4.47 4.48; 
+jj=l; b=zeros{rows{nsize),1); z=rndu{nsize[jj],2); x=ones{nsize[jj],1)-z; do while jj <= rows{nsize); 
+a=zeros{l0000,1); j=l; 
+do while j<=lOOOO¡ 
+er=rndbs{3,2,nsize[jj],j+jj); esig=er-x*{invpd{x'x))*{x'*er); a[j,l]=pruebaur{esig)¡ if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]¡ output off; 
+jj=jj+l¡ z=zjrndu{(nsize[jj]-nsize[jj-1]),2); x=ones{nsize[jj],1)-z; endo; proc pruebaur{x); 
+local ml,m2,n,sbl,b2,jbur; n=rows{x); 
+ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl./g3; retp(x); endp; 
+48.-GAMMA(2,l) 
+new ,65520; output file= b:rprurgr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.85 3.10 3.25 3.41 3.46 3.54 3.63 3.61 3.83 3.93 3.91 
+4.07 4.18 4.25 4.27 4.25 4.41 4.47 4.48; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+er=rndgs(2,1,nsize[jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebaur(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,l]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jjJ,1)-z; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(l/3))A2)); retp(jbur); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp; 
+49.-LOGNORMAL 
+new ,65520; output file= b:rprurlor.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; let sig=2.85 3.10 3.25 3.41 3.46 3.54 3.63 3.61 3.83 3.93 3.91 
+4.07 4.18 4.25 4.27 4.25 4.41 4.47 4.48; jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+er=rndlogs(l,l,nsize[jj],j+jj); esig=er-x*(invpd(x'x))*(x'*er); a[j,l]=pruebaur(esig)¡ if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; 
+j=j+l; endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z¡ endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); 
+m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndlogs(a,b,n,s); local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+50.-NORMAL 
+new ,65520; output file= b:rprurnr.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+let sig=2.85 3.10 3.25 3.41 3.46 3.54 3.63 3.61 3.83 3.93 3.91 
+4.07 4.18 4.25 4.27 4.25 4.41 4.47 4.48; 
+jj=l; b=zeros(rows(nsize),1); z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO¡ 
+s=j+jj; er=rndns(nsize[jj],1,s); esig=er-x*(invpd.(x'x))*(x'*er); a[j,l]=pruebaur(esig); if a[j,1] >= sig[jj,1]; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; 
+n=rows(x); 
+ml=meanc(x); 
+m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sblA2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+51.-T-STUDENT (5) 
+new ,65520; 
+output file= c:rprurtr.doc reset; 
+let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+let sig=2.85 3.10 3.25 3.41 3.46 3.54 3.63 3.61 3.83 3.93 3.91 
+~:07 4.18 4.25 4.27 4.25 4.41 4.47 4.48; 
+JJ=l; 
+b=zeros(rows(nsize),1); 
+z=rndu(nsize[jj],2); 
+x=ones(nsize[jj],1)-z; 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO¡ er=rndts(5,nsize[jj],j+jj); esig=er-x*(invpd.(x'x))*(X'*er); a(j,l]=pruebaur(esig); if a(j,1] >= sig[jj,1]; b[jj,l)=b[jj,1]+1; endif; j=j+l; endo; b[jj,l]=b[jj,1)/10000; output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1)),2); 
+x=ones(nsize[jj],1)-z; 
+endo; 
+proc pruebaur(x); local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur) ; 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(m+l,n,s); 
+x=u(l,.]'; y=u[2:(m+l),.]; t=x./sqrt(sumc(yA2)/m); retp(t); 
+endp; 
+PROGRAMAS UTILIZADOS PARA EVALUAR LOS ESTADISTICOS LM, K2 Y JBU, CONSIDERANDO COMO VALOR CRITICO EL PRESENTADO EN LAS TABLAS DE CHI-CUADRADA PARA 2 g. 1. , O SEA, EL VALOR ASINTOTICO 4 • 611 CORRESPONDIENTE UN NIVEL DE SIGNIFICANCIA DE 10%. 
+PROGRAMAS PARA LM 
+52.-BETA(3,2) 
+new ,65520; output file= c:rprjbbt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO¡ 
+x=rndbs(3,2,nsize[jj],j+jj); a[j,l]=pruebajb(x); if a(j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000¡ 
+output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; proc rndbs(kl,k2,n,s); 
+local gl,g2,g3,x,u,u1,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl./g3; retp(x); endp; 
+53.-GAMMA(2,1) 
+new ,65520; 
+output file= c:rprjbgt.doc reset; 
+let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 
+400 500 800; 
+jj=l; 
+b=zeros(rows(nsize),1); 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO; x=rndgs(2,l,nsize[jj],j+jj); a[j,l]=pruebajb(x); if a[j,1] >= 4.61; b[jj,l]=b[jj,1]+1; endif; j=j+l; endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; jj=jj+l; 
+endo; 
+proc pruebajb(x); local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp¡ 
+250 300 
+54.-LOGNORMAL 
+new ,65520; output file= c:rprjblot.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndlogs(l,1,nsize[jj],j+jj); a[j,l]=pruebajb(x); if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo¡ b[jj,l]=b[jj,1]/10000¡ output on¡ print "PARA N=";;nsize[jj]¡ print "FRACCION ="¡¡b[jj]¡ output off¡ 
+jj=jj+l; endo; proc pruebajb(x)¡ 
+local ml,m2,n,sbl,b2,jb¡ n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2)¡ jb=n*(((sbl)A2/6)+((b2-3)A2)/24)¡ retp(jb); 
+endp¡ 
+proc rndlogs(a,b,n,s); local x,c,d,z¡ d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z)¡ retp(x); 
+endp; 
+55.-NORMAL 
+new ,65520; output file= c:rprjbnt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO¡ 
+s=j+jj; x=rndns(nsize(jj],1,s); a[j,l]=pruebajb(x); if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000¡ 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+•
+56.-T-STUDENT (5) 
+new ,65520; output file= c:rprjbtt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+s=j+jj; x=rndts(5,nsize(jj],j+jj); a[j,l]=pruebajb(x); if a(j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]¡ print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-J)A2)/24); retp(jb); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(n,m+l,s); x=u[.,1]; y=u[.,2:(m+l)]; t=x./sqrt(sumc((yA2) ')/m); retp(t); 
+endp; 
+PROGRAMAS PARA K2 
+57.-BETA(J,2) 
+new ,65520; output file= c:rprdpbt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndbs(3,2,nsize[jj],j+jj); a[j,l]=pruebadp(x); if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; U2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl./g3; retp(x); endp; 
+58.-GAMMA(2,1) 
+new ,65520; output file= c:rprdpgt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndgs(2,1,nsize[jj],j+jj); a[j,l]=pruebadp(x); 
+if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)'(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp; 
+59.-LOGNORMAL 
+new ,65520; output file= c:rprdplot.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndlogs(l,1,nsize[jjJ,j+jj); a[j,lJ=pruebadp(x); if a(j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+ende; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; ende; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; x=rndlogs(a,b,10000,200); proc rndlogs(a,b,n,s); 
+local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+60.-NORMAL 
+new ,65520; output file= c:rprdpnt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO; 
+s=j+jj; x=rndns(nsize[jj],1,s); a[j,l]=pruebadp(x); if a(j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n~2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa)); k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+61.-T-STUDENT (5) new ,65520; output file= c:rprdptt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; 
+do while j<=lOOOO; 
+x=rndts(5,nsize[jjJ,j+jj); a[j,l]=pruebadp(x); if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]¡ print "FRACCION =";;b[jj]¡ output off; 
+jj=jj+l¡ endo¡ proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2¡ n=rows(x)¡ ml=meanc(x)¡ m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5)¡ b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2)))¡ b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9))¡ w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-l)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sbly/a) "2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+1)"2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(n"2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2"2)+8*sqrt(l+4/(sblb2"2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))"(1/3))/sqrt(2/(9*aa)); k2=((zsb1)"2+(zb2)"2); retp(k2); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(n,m+l,s); x=u[.,1]; y=u[ • , 2 : ( m+1) ] ; t=x./sqrt(sumc((yA2)')/m); retp(t); 
+endp; 
+PROGRAMAS PARA JBU 
+62.-BETA(J,2) 
+new ·, 65520; output file= c:rprurbt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndbs(J,2,nsize[jj],j+jj); a[j,l]=pruebaur(x); if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,l]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION ="; ;b[jj]; . output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/J))A2)); retp(jbur); 
+endp; 
+proc rndbs(kl,k2,n,s); local gl,g2,g3,x,u,ul,u2; u=rndus(n,kl+k2,s); ul=u[.,1:kl]; 
+u2=u[.,(kl+l):(kl+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=gl+g2; 
+x=gl./g3; retp(x); endp; 
+63. -GAMMA(2, 1) 
+new ,65520; output file= c:rprurgt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800¡ jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndgs(2,1,nsize[jjJ,j+jj); a[j,l]=pruebaur(x); if a[j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]. print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-m1)A2)/n; sb1=(sumc((x-m1)AJ)/n)/(m2A1.5); b2=(sumc((x-m1)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndbs(kl,k2,n,s); local g1,g2,g3,x,u,u1,u2; u=rndus(n,k1+k2,s); Ul=U[.,1:kl]¡ u2=u[.,(k1+1):(k1+k2)]; gl=-ln(prodc(ul')); g2=-ln(prodc(u2')); 
+g3=g1+g2; x=g1./g3; 
+retp(x); 
+endp; 
+proc rndgs(k,a,n,s); local g,u; u=rndus(n,k,s); g=-ln(prodc(u'))/a; retp(g); 
+endp; 
+64.-LOGNORMAL 
+new 1 65520; 
+output file= c:rprurlot.doc reset; 
+let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; 
+b=zeros(rows(nsize),1); 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO; x=rndlogs(l,1,nsize[jj],j+jj); a[j,l]=pruebaur(x); if a(j,1] >= 4.61; b[jj,l]=b[jj,1]+1; endif; j=j+l; endo; b[jj,l]=b[jj,1]/10000; output on; print "PARA N=";;nsize[jj]; print "FRACCION =11 ;;b[jj]; output off; jj=jj+l; 
+endo; 
+proc pruebaur(x); local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndlogs(a,b,n,s); local x,c,d,z; d=ln(l+b/(aA2)); c=ln(a)-.5*d; z=rndns(n,1,s); x=exp(c+sqrt(d)*z); retp(x); 
+endp; 
+65.-NORMAL 
+new ,65520; output file= c:rprurnt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(lOOOO,l); j=l; 
+do while j<=lOOOO; 
+s=j+jj; x=rndns(nsize[jj],1,s); a(j,l]=pruebaur(x); if a(j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; 
+endif; j=j+l; ende; 
+b[jj,l]=b[jj,1]/10000; 
+output on; print "PARA N=";;nsize[jj]; print "FRACCION =";;b[jj]; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+66.-T-STUDENT (5) 
+new ,65520; output file= c:rprurtt.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; b=zeros(rows(nsize),1); do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO¡ 
+x=rndts(5,nsize[jj],j+jj); a[j,l]=pruebaur(x); 
+if a(j,1] >= 4.61; 
+b[jj,l]=b[jj,1]+1; endif; j=j+l; 
+endo; b[jj,l]=b[jj,1]/10000¡ output on; print "PARA N=";;nsize(jj]; print "FRACCION =";;b[jjJ; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x);m2=sumc((x-ml)Á2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+proc rndts(m,n,s); local t,x,y,u; u=rndns(n,m+l,s); x=u[.,1]; y=u[.,2: (m+l) ] ; t=x./sqrt(sumc((yA2)')/m); retp(t); 
+endp; 
+PROGRAMAS UTILIZADOS PARA ESTIMAR LOS VALORES CRITICOS DE OBSERVACIONES Y RESIDUOS DE LOS TRES ESTADISTICOS. 
+PROGRAMA PARA LM, OBSERVACIONES 
+new ,65520; output file= b:rjbsiaut.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndn(nsize[jj],1); a[j,l]=pruebajb(x); j=j+l; 
+endo; b=sortc(a,1); output on; 
+print "PARA N=";;nsize(jj]; print 11 99% =";;b[l00,1]; print 11 95% =";;b[500,1]; print "90% =";;b[l000,1]; print 11 85% =";;b[1500,1]; print 11 50% =";;b[5000,l]; print "15% =";;b[8500,1]; print "10% =";;b[9000,1]; print 11 5% =";;b[9500,1]; print "1% =";;b[9900,1]; print" "; output off; 
+jj=jj+l; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml}A4)/n)/(m2A2); jb=n*(((sbl)A2/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+PROGRAMA PARA K2, OBSERVACIONES 
+new ,65520; output file= b:rdpsiaut.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; do while jj <= rows(nsize); 
+a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndn(nsize[jj],1); a[j,l]=pruebadp(x); j=j+l; 
+endo; b=sortc(a,1); output on; print "PARA N=";;nsize[jj]; print 11 99% =";;b[l00,1]; print 11 95% =";;b(S00,1]; print "90% =";;b[l000,1]; print "85% =";;b(lS00,1]; print 11 50% =";;b[5000,1]; print 11 15% =";;b[8500,l]; print 11 10% =";;b(9000,l]; print 11 5% =";;b[9500,1]; print "1% =";;b[9900,1]; print" "; 
+output off¡ jj=jj+l; endo¡ proc pruebadp(x); 
+local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, 
+zb2,k2; 
+n=rows(x)¡ ml=meanc(x); m2=sumc((x-ml)A2)/n¡ sbl=(sumc((x-ml)A3)/n)/(m2Al.5)¡ b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9))¡ w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l)¡ vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5))i sb2=(b2-eb2)/(sqrt(vb2))¡ sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9));aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa))¡k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+PROGRAMA PARA JBU, OBSERVACIONES 
+new ,65520; output file= b:rursiaut.doc reset¡ let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800¡ 
+jj=l; 
+do while jj <= rows(nsize); a=zeros(l0000,1); j=l; do while j<=lOOOO; 
+x=rndn(nsize[jj],1)¡ a[j,l]=pruebaur(x) ¡ j=j+l; 
+endo; b=sortc(a,1); output on; print "PARA N=";;nsize[jj]; print "99% =";;b[lOO,l]; print "95% =";;b[500,1]; print 11 90% =";;b[l000,1]; print "85% =";;b[l500,1]; print 11 50% =";;b[5000,l]; print 11 15% =";;b[8500,1]; 
+print "10% =";;b[9000,1]; print "5% =";;b[9500,1]; print "1% =";;b[9900,1]; print" "; output off; 
+jj=jj+l; endo; proc pruebaur(x); 
+local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp¡ 
+PROGRAMA PARA LM, RESIDUOS 
+new ,65520¡ output file= b:rjbsiuni.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 400 500 800; jj=l; 
+z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(x); a=zeros(l0000,1)¡ 
+ixx=invpd.(x'x); 
+j=l; 
+do while j<=lOOOO¡ 
+er=rndn(nsize[jj],1); esig=er-(x*ixx)*(x'*er); a[j,l]=pruebajb(esig); j=j+l; 
+endo; b=sortc(a,1); output on; print "PARA N=";;nsize[jj]; print "99% =";;b[l00,1]; print "95% =";;b[500,1]; print "90% =";;b[l000,1]; print "85% =";;b[1500,1]; print "50% =";;b[5000,1]¡ print "15% =";;b[8500,1]; print "10% =";;b[9000,1]; print 11 5% =";;b[9500,1]; print "1% =";;b[9900,1]¡ print" "; output off; jj=jj+l; z=zlrndu((nsize[jj]-nsize[jj-1]),2)¡ 
+x=ones(nsize[jj],1)-z; endo; proc pruebajb(x); 
+local ml,m2,n,sbl,b2,jb; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; b2=(sumc((x-ml)A4)/n)/(m2A2); sbl=(sumc((x-ml)A3)/n)/(m2Al.5); jb=n*(((sblA2)/6)+((b2-3)A2)/24); retp(jb); 
+endp; 
+PROGRAMA PARA K2 1 RESIDUOS 
+NEW, 65520; output file= b:rdpsiuni.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800; 
+jj=l; z=rndu(nsize[jj],2); x=ones(nsize[jj],1)-z; do while jj <= rows(x); a=zeros(lOOOO,l);
+ixx=invpd(x'x); 
+j=l; 
+do while j<=lOOOO¡ 
+er=rndn(nsize(jj],l); esig=er-(x*ixx)*(x'*er); a[j,l]=pruebadp(esig); j=j+l; 
+endo; b=sortc(a,l); output on; print "PARA N=";;nsize[jj]; print "99% =";;b[lOO,l]; print 1195% =";;b[500,l]; print 11 90% =";;b(lOOO,l]; print 1185% =";;b[l500,l]; print 11 50% =";;b[5000,l]; print "15% =";;b[8500,l]; print 1110% =";;b[9000,l]; print 11 5% =";;b[9500,l]; print "1% =";;b[9900,l]; print" "; output off; jj=jj+l; z=zlrndu((nsize[jj]-nsize(jj-1]),2); x=ones(nsize[jj],1)-z; 
+endo; proc pruebadp(x); local ml,m2,n,sbl,b2,d,y,b2sbl,w2,d,a,zsbl,eb2,vb2,sb2,sblb2,aa, zb2,k2; 
+n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)A3)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); y=sbl*sqrt((n+l)*(n+3)/(6*(n-2))); b2sb1=(3*(nA2+27*n-70)*(n+l)*(n+3))/((n-2)*(n+5)*(n+7)*(n+9)); w2=-l+sqrt(2*(b2sbl-1)); d=l/sqrt(.5*ln(w2)); a=sqrt(2/(w2-1)); zsbl=d*ln(y/a+sqrt(l+(y/a)A2)); eb2=3*(n-1)/(n+l); vb2=24*n*(n-2)*(n-3)/(((n+l)A2)*(n+3)*(n+5)); sb2=(b2-eb2)/(sqrt(vb2)); sblb2=(6*(nA2-(5*n)+2))*sqrt(6*(n+3)*(n+5)/(n*(n-2)*(n­
+3)))/((n+7)*(n+9)); aa=6+16/(sblb2A2)+8*sqrt(1+4/(sblb2A2))/sblb2; zb2=(1-2/(9*aa)-((1-2/aa)/(l+sb2*sqrt(2/(aa-
+4))))A(l/3))/sqrt(2/(9*aa));k2=((zsbl)A2+(zb2)A2); retp(k2); 
+endp; 
+PROGRAMA PARA JBU, RESIDUOS 
+new ,65520; output file= b:rursiuni.doc reset; let nsize=lO 15 20 25 30 35 40 50 65 80 100 125 150 200 250 300 
+400 500 800¡ 
+jj=l; z=rndu(nsize(jj],2); x=ones(nsize(jj],1)-z; do while jj <= rows(x); a=zeros(l0000,1); 
+ixx=invpd(x'x); 
+j=l; 
+do while j<=lOOOO¡ 
+er=rndn(nsize(jj],1); esig=er-(x*ixx)*(x'*er); a(j,l]=pruebaur(esig); j=j+l; 
+endo; b=sortc(a,1); output on; print "PARA N=";;nsize[jj]; print 11 99% =";;b[l00,1]; print "95% =";;b[500,l]; 
+print 11 90% =";;b(lOOO,l]; 
+print "85% =";;b[l500,1]; print 11 50% =";;b(5000,1]; print "15% =";;b(8500,l]; print "10% =";;b(9000,l]; print "5% =";;b[9500,l]; 
+print 11 1% =";;b[9900,1];print 11 "; output off; jj=jj+l; z=zjrndu((nsize[jj]-nsize[jj-1]),2); x=ones(nsize[jj],1)-z; 
+endo; 
+proc pruebaur(x); local ml,m2,n,sbl,b2,jbur; n=rows(x); ml=meanc(x); m2=sumc((x-ml)A2)/n; sbl=(sumc((x-ml)AJ)/n)/(m2Al.5); b2=(sumc((x-ml)A4)/n)/(m2A2); jbur=n*(((sb1A2)/6)+(27/8)*(((1/b2)-(1/3))A2)); retp(jbur); 
+endp; 
+
+
+
+

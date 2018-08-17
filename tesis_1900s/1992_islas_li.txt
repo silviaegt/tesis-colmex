@@ -1,0 +1,1759 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRIA EN ECONOMIA EL COLEGIO DE MEXICO 
+CENTRO DE ESTUDIOS ECONOMICOS 
+Estimaci de funciones de costo para la economía mexicana. LUIS IGNACIO ISLAS TAPIA PROMOCION 1989-91 
+Abril. 1992 ASESOR: Dr. José Anton io Romero Tellaeche REVISOR: Dr. Horacio Enrique Sobarzo Fimbres 
+RESUMEN.­
+En El Colegio de México se han desarrollado varios modelos de equilibrio general aplicado (MEGA) para el caso de la economía mexicana, tratando de medir el impacto de un eventual tratado de libre comercio con América de norte. Uno de los modelos corre a cargo del profesor José Romero, quién ha propuesto implementar el enfoque econométrico. El presente trabajo tiene corno objetivo principal realizar la estimaci de los parámetros de las funciones de costo para cada sector considerado; se decidiutilizar la funci Translog implementando un programa computacional en lenguaje GAUSS de acuerdo al método de Zellner. La economía fué dividida en doce sectores dada la poca informaci disponible ( 19 as solamente), así que hubo que optimizar los grados de libertad disponibles para las pruebas estadísticas. Se hicieron varias pruebas y ajustes para asegurar que el modelo satisfaciera las observaciones de un a de referencia. Los resultados obtenidos para las demandas por insumos entre sectores no son satisfactorios ya que se obtienen demandas "negativas"; sin embargo para el global la falla se elimina. El problema no pudo ser salvado; pero a pesar de ello los resultactos 
+obtenidos  al  simular  la  demanda  intermedia  son  
+satisfactorios;  éste  hecho  fue  decisivo  para  aceptar  las  
+funciones  de  costo  estimadas.  
+
+Agradezco infinitamente al Prof. José Romero T. por su ayuda y paciencia. 
+INDICE .­
+PAGINA INTRODUCCION 1 ESTIMACION 5 METODOLOGIA 13 DATOS 24 RESULTADOS 34 APENDICE #1 (DATOS) 38 APENDICE #2 (PROGRAMAS) 56 APENDICE #3 (RESULTADOS) 72 BIBLIOGRAFIA 107 
+
+INTRODUCCION.­
+Los modelos de equilibrio general aplicados (MEGA) han tenido un gran desarrollo a lo largo de muchos as de investigaci. Los temas fundamentales de los modelos de equilibrio general son extremadamente sencillos y pertenecen a la parte medular de la teoria econica. El lado de la producci de la economía, encargado de la transformaci de cieTtos bienes en otros bienes para su venta, se distingue del lado del consumo, el cual se encarga de la adquisisi y el consumo eventual de bienes y sevicios. El ingreso de los consumidores, o riqueza, está determinado al evaluar su acervo de bienes en términos de aquellos precios a los cuales los bienes pueden ser vendidos. El ingreso y el conocimiento de los precios relativos permiten al consumidor expresar sus demandas por bienes y servicios así como sus ofertas de trabajo y otros acervos que son puestos a disposici para el lado productivo de la economía. 
+En los timos as se han .tenido grandes avances en la implementaci de los modelos de equilibrio general aplicado. Los parámetros en los modelos aplicados de "la primera generaci", sin embargo, no han sido estimados econométricamente. En lugar de ello, se han derivado por medio de una técnica llamada "calibraci" desarrollada por Mansur y Whalley. 
+Muchas críticas se han dado a las dos técnicas de 
+implementaci, Calibraci y Estimaci¡ sin embargo, a pesar de que el enfoque de calibrac da "buenos" 
+resultados, no es suficiente para establecer la robustes de tal enfoque en general. El enfoque econométrico puede ser implementado con éxito. En suma, el enfoque econométrico provee errores estadísticos que pueden usarse como base para juzgar el desempe de los parametros . 
+El Colegio de México ha desarrollado varios modelos de equilibrio general aplicado para el caso de México en los cuales se ha tratado de medir el impacto de un eventual tratado de libre comercio con América del norte. Uno de los modelos, corre a cargo del profesor José Romero, quién ha propuesto implementar el enfoque econométrico. El modelo desarrollado es multi-periodo , tiene tres sectores bienes de capitaly nueve sectores de bienes de consumo intermedio. En cada periodo la producci tiene lugar usando trabajo, bienes de capital y bienes intermedios. Los bienes de capital en cada sector se deprecian a tasas observadas empíricamente, mientras que la inversi es determinada endenamente por medio de la maximizaci de beneficios como parte de las condiciones del modelo dinámico. La parte innovadora en la técinca desarrollada es el uso consistente de "dualidad" en un modelo dinámico de una economía abierta. 
+Dixit y Norman* establecen al enfoque dual como el método estándar de presentaci de las cuestiones teicas en economía internacio,nal debido a la claridad y la economía que resulta cuando las condiciones de primer orden para las elecciones de los consumidores y los productores son impuestas en las funciones duales especificando su comportamiento. En el trabajo del profesor Romero, se sientan todas las condiciones de equilibrio del modelo en términos de las funciones de costo estimadas. Como las funciones de costo son construidas en las elecciones de insumos intra-período timas de las firmas, se pueden obviar las condiciones de primer orden para tales elecciones. 
+El presente trabajo tiene como objetivo principal realizar la estimaci de los parámetros de las funciones de costo para cada sector considerado. En el primer capitulo se presenta el problema de la elecci de la forma funcional, se decidiutilizar la funci Translog. En el capitulo s,egundo se muestra la metodología utilizada para llevar a cabo la estimaci de los parímetros de la funci elegida; cabe mencionar que para la realizaci de las estimaciones (doce funciones, una para cada sector de la economía) se realizun programa computacional en lenguaje II GAUSS 11 , el cual se muestra en el apéndice A2 de programas. El capitulo 
+* Dixit, A. K. and Norman, V. (198 O ) . «Th eory of International Trade» 
+tres presenta las fuentes diversas de los datos utilizados en la estimaci, hay que selar que uno de los motivos principales en la divisi a doce sectores de la economía fue la poca cantidad de datos disponibles (19 as solamente), así que hubo que enfrentar optimizar los pocos grados de libertad disponibles para las pruebas 
+estadísticas;  en  el  apéndice  Al  se  muestran  las  tablas  de  
+datos  utilizados.  Finalmente,  en  el  capítulo  cuatro  se  
+presentan  las  conclusiones  a  que  se  lleg  Teniendo  en  
+cuenta  la  deficiencia  en  la  informaci  y  un  poco  en  la  
+
+metodología implantada, se hicieron muchas pruebas y ajustes para asegurar que el modelo satisfaciera las observaciones de un a de referencia, logrando éste objetivo de manera satisfactoria; sin embargo, se tuvo un problema en la determinaci de las demandas por insumos, en el apéndice A4 se presentan los resultados de las pruebas donde encontrarnos demandas por insumos negativas. Problema grave pero no fundamental a la hora de realizar las pruebas que nos refieren a la representaci del a de referencia. 
+
+ESTIMACION.­
+El problema comienza desde la elecci de la forma funcional que se utilizará para describir la manera en que los bienes son producidos por los distintos sectores de la economía*, dado que la funci verdadera es desconocida. Existen varias alternativas dependiendo del enfoque a que hagamos referencia; por ejemplo, podemos comenzar con el criterio del orden de aproximaci de la forma funcional a una funci arbitraria en una vecindad del nivel de producci registrado. En este sentido, se decidipor un tipo de aproximaci de segundo orden debido a que un orden menor implica sustituci perfecta entre los distintos insumos y un producto marginal constante, siendo éstos suposiciones que deseamos evitar; además de que se pretende alejarnos de funciones tradicionales como la forma funcional Leontief (o funci de producci de coeficientes fijos). 
+En los modelos de equilibrio general aplicado (MEGA) se han usado tradicionalmente formas funcionales del tipo Cobb-Douglas y también del tipo e.E. S., las cuales permiten cierto grado de sustituci entre lbs insumos, siendo la segunda más general; desafortunadamente éstas son adecuadas so para el caso de dos insumos, ya que sus generalizaciones a más insumos imponen restricciones severas 
+* En el artículo de L.J. Lau 
+(1986) se muestra  una  gran  
+cantidad de  formas  funcionales  que describen  funciones  de  
+producci.  
+
+a las posibilidades de sustituci, y en el trabajo presente deseamos quitar el mayor nero posible de restricciones. 
+La tarea de romper con las restricciones mencionadas ha dado pie, a través de varios trabajos realizados desde los as sesenta, a las llamadas formas 
+funcionales  II f 1exibles"*  que  comparten  las  características  
+comunes  de  ser  lineales  en  los  parámetros,  y  de  proveer  
+aproximaciones  de  segundo  orden  a  cualquier  funci  
+arbitraria.  
+
+Para atacar el problema de la especificaci de una funci de producci, recurrirnos al enfoque II dual" de determinar las demandas de factores vía la funci de costos suponiendo que cada sector de la economía opera como "minimizador de costos 11 ; de ahí la necesidad de tener una funci homogénea de grado uno, no decreciente y ccava en los precios de los insumos, y no decreciente en la cantidad de producto. Diewert (1971) muestra co el teorema de dualidad de Shephard puede ser utilizado para obtener un sistema de ecuaciones de demanda que son lineales en los parámetros tecnolicos, de ahí que se brinde una gran facilidad para la estimaci econométrica. La gran ventaja de ésta formulaci está en generar demandas (de insumos) como funciones explícitas de precios relativos. 
+* Entre las que destacan la funci Leontief Generalizada (GL), y la Trascendental Logarítmica (Translog). 
+Otra característica que se requiere de la forma funcional a elegir, es la de "flexibilidad"; es decir, la capacidad de la forma funcional algebraica para aproximar de manera arbitraria, pero teicamente consistente, el comportamiento a través de una elecci apropiada de los parámetros. Lo que buscamos de las funciones de costo unitarias estimadas es, que sean capaces de generar funciones de demanda de insumos cuyas elasticidades-precio propias y cruzadas puedan tomar valores arbitrarios sujetos solamente a los requerimientos de consistencia teica para cualquier conjunto arbitrario de precios, mediante una elecci apropiada de los parámetros. A éste respecto, la introducci de una nueva medida de sustituci*, "la elasticidad de participaci" (Share Elasticity) ha hecho posible rebasar las limitaciones de las formas paramétricas basadas en las elasticidades de sustituci constantes. Las elasticidades de participaci están definidas en términos de las participaciones de los insumos en el valor de la producci. La elasticidad de participaci de un insumo cualquiera es la respuesta de la participaci de ése insumo dado un cambio proporcional en el precio de otro ( o él mismo) insumo. Tomando las elasticidades de participaci como parámetros fijos, las funciones de demanda por insumos pueden obtenerse por integraci. Las participaciones de cada insumo en el· valor del producto pueden suponerse funciones lineales del logaritmo de los precios de los 
+* Por Christensen, Jorgenson, y Lau (1971,1973). 
+insumos. Las elasticidades de participaci pueden estimarse como parámetros desconocidos de ésas funciones. La forma de elasticidad de participaci constante de las funciones de demanda por insumos pueden integrarse una segunda vez para obtener la funci de costo. Por ejemplo, el logaritmo del precio de la producci puede expresarse como una funci cuadrática de los logarítmos del precio de los insumos. "El precio de la producci puede expresarse como una funci trascendental o, de forma más específica, una funci exponencial de los logarítmos del precio de los insumos. De acuerdo con Christensen, Jorgenson, y Lau (1971,1973) nos referimos con ésta forma paramétrica a la funci translogº. Dicha funci provee una aproximaci local de segundo orden a cualquier frontera de producci. Un modelo completo de producci incluye la frontera de posibilidades de producci y condiciones necesarias para alcanzar el equilibrio en la producci. Bajo rendimientos constantes a escala éste modelo implica la existen~ia de una frontera de posibilidades de precio, definiendo al conjunto de precios de f arma consistente con beneficios cero. Las condiciones necesarias para la producci de equilibrio, dados los precios relativos como una funci del producto relativo y de la intensidad de los factores, implican la existencia de condiciones que determinan al producto relativo y a las intensidades de los factores como una funci de los precios relativos. 
+En un artículo, Parks (1969) examintres especificaciones econométricas para el modelo de demanda del consumidor; comparlas propiedades teicas, los problemas de estimaci, y el comportamiento de los siguientes modelos 
+11
+de demanda El modelo "Diferencial Rotterdam , el modelo 
+11 II
+"Addilog indirecto *, y el sistema de gasto lineal" . Los modelos fueron comparados sobre la base del ajuste de los datos muestrales para cada bien de forma separada, y fueron contrastadas las elasticidades estimadas. El porcentaje de variaci no explicado fué bajo para todos los modelos. Las predicciones del modelo Rotterdam para bienes individuales fué generalmente bueno, pero el modelo de gasto lineal (con tendencia) mostrpredicciones un poco mejores para muchos bienes. El modelo de gasto lineal sin tendencia y el modelo Addilog indirecto mostraron resultados inferiores, generalmente, aunque operaron con desventaja en término del 
+nero  de  parámetros  utilizados.  Las  estimaciones  del  
+ingreso  y  las  elasticidades  precio  propias  mostraron  
+diferencias  estadísticamente  insignificantes  para  algunos  
+
+bienes, pero para otros las diferencias fueron grandes y significativas. Como conclusi, ninguno de los modelos domina a sus contrincantes, ya sea por la dificultad en la estimaci, o por el desempe. 
+Uno de los objetivos que pretendemos al estimar las funciones de-costo es el uso en los MEGAs. En lo que se 
+* Modelo "muy" parecido al translog. 
+refiere al desempe de las formas funcionales flexibles (FFF), la flexibilidad es su mayor ventaja, pero al mismo tiempo su mayor lirnitaci. Mientras que las FFF pueden reflejar realmente cualquier combinaci de efectos econicos en cualquier punto, una vez que sus parámetros han sido asentados; resulta cierto entonces, que reflejan diferentes combinaciones para distintos puntos. Esto implica que las FFF son "bien comportadas" en una regi limitada, a la cual nos referirernos corno el dominio exterior (outer dornain) de la funci. Diremos que una FFF es "superior" a otra· si tiene un dominio exterior más grande*. Despotakis (1986) afirma que para juzgar el desempe de las FFF no debernos tornar en cuenta so el tama del dominio exterior, sino también debernos tornar en cuenta los efectos econicos demostrados. El concepto de desempe econico, corno el conjunto de efectos econicos en un punto marcando una funci sobre cierta regi, está relacionado.. con el concepto de dominio interior (inner dornain)**· Debernos hacer notar que el dominio interior no es cuantificable en la práctica, lo que implica que la verdadera tecnología no es observable. La alternativa práctica es estudiar el desempe econico de alguna funci con respecto a otra. En su 
+* Caves y Christensen estudian el comportamiento "global" de las FFF en el lado de la demanda; concluyen que para un conjunto dado de valores para las participaciones en el punto inicial, la superioridad depende de los valores de las elasticidades de sustituci en ése punto.** El dominio interior de una funci que representa la tecnología del productor se define como la subregiqn del dominio exterior sobre el cual la funci es una "buena aproximaci" de la "verdadera" tecnología. 
+articulo, Despotakis estudia el d~sempefio de las funciones GL y TL en comparaci a la funci C.E.S .. La conclusi general es que las diferencias en el desempefio econico de las FFF, y de acuerdo con resultados de modelos econicos que emplean FFF en equilibrio general o parcial, pueden ser sustanciales. Una examinaci y una comprensi cuidadosas de las diferencias especificas del caso deben ser uno de los primeros pasos en la construcci del modelo. 
+Dentro de las formas funcionales más conocidas, destacan tres; a saber, La funci Translog (TL), la funci Leontief Generalizada (GL) y la funci Cobb-Douglas Generalizada (GCD). Para efectos del trabajo de estimaci de las funciones de costo para la economía mexicana se tiene en mente ocupar alguna forma funcional de la citadas. 
+Berndt, Darrough y Diewert (1977) compararon las tres formas funcionales, TL, GL y GCD. Encontraron que la forma funcional TL es preferible bajo fundamentos teicos y econométricos, ya que no se puede rechazar la restricci de simetría*, y los datos ajustan mejor. En lo que se refiere a la convergencia (usando el algoritmo de Gauss-Newton), encontraron mayor dificultad al emplear el modelo GDC en comparaci a los otros dos; sin embargo, la convergencia con el modelo TL implicmenor cantidad de iteraciones. 
+* Más adelante profundizaremos sobre el concepto de la restricci de simetría en la estimaci de la funci TL. 
+En lo que se refiere al grado de sustituci entre los insumos, considerando la tecnología en México , tenemos la hipesis de que no está caracterizado por ser ni 
+II 11
+extremadamente fácil II ni II difícil *. Este hecho, y lo mencionado en páginas anteriores dipauta a que adoptaramos el modelo translog en la estimaci de las funciones de costos. 
+* Ver artículo de Guilkey y Lovell (1980). 
+METODOLOGIA.-
+Escribimos a la funci de costos translog como 
+
+i = 1,2, ... ,N. j=l,2, ... ,N. 
+donde C(W) es la funci de costos, W es el vector de precios de los insumos y los factores, y las letras griegas denotan parámetros. 
+Existen ciertas restricciones que debemos imponer para definir al conjunto de valores de las variables independientes, a fin de que la forma funcional satisfaga los requerimientos de consistencia teica*. En nuestro caso, el dominio de aplicabilidad de la forma funcional algebraica, para valores dados de los parámetros, consta de los valores que pertenecen al conjunto siguiente : 
+{WIW~O, C(W)~O, C(W)~O, 2c(W) es negativo semidefinido} 
+Para obtener el dominio de aplicabilidad, es necesario imponer las siguientes restricciones a los paramétros Bij : (se pueden clasificar en tres tipos) 
+i) La· matriz [Bij] debe ser seminegativa definida. 
+ii) La matriz [BijJ debe ser simétrica,i.e., Bij = Bji· 
+iii) La matriz [BijJ debe ser singular, i. e. , ¿• Bij = o.
+J 
+* Nos referimos al "Dominio de Aplicabilidad". 
+Observaci (1).­
+La restricci (iii) sobre la matriz [ l3ij J será asumida cierta en los cálculos de la estimaci, pero la restricci de simetría se pondrá a prueba (estadística), y de ser aceptada con base en los datos disponibles, entonces se impondrá. 
+Las  estimaciones  derivadas  bajo  (iii),  pero  no  
+bajo  (ii),  se  llamarán  sin  restricci,  cuando  usemos  las  
+dos  restricciones,  las  llamaremos  estimaciones  con  
+restriccion de  simetría.  
+
+Observaci (2).­
+Las funciones de demanda por insumos, Ci(W), que se generan de la translog vía el lema de Shephard, no son lineales en los parámetros desconocidos. Sin embargo, al diferenciar la funci Ln C(W) con respecto a los logarítmos de los precios, obtenemos las ecuaciones de participaci (de ahora en adelante llamadas "Shares") : 
+Ln C(W) 
+
+( 1 ) 
+l = 1,2, ... ,N. que resultan lineales en los parámetros desconocidos. 
+Para calcular los valores de los shares recurrimos a la definici : 
+
+
+= 
+
+C(W) 
+1 = 1,2, ... ,N. 
+Dado que ~i Si (W) = 1, se tiene la siguiente restricci para los parámetros ªi : 
+
+i = 1,2, ... ,N. 
+Una vez especificado el conjunto de restricciones, notamos que podemos eliminar una de las ecuaciones del sistema ( 1) ya que resulta redundante*, i. e. , so N-1 de las N ecuaciones pueden ser estadísticamente independientes; sin considerar al parámetro a0• Formaremos entonces un sistema de N-1 ecuaciones de la forma : 
+Wi Si(W) = ªi + ~j Sij Ln(--) (2 ) Wn 
+i = 1,2, ... ,N-1; j-= 1,2, ... ,N-1. 
+Por lo tanto, debemos estimar ( N2 + N 2)/2 parámetros independientes, en lugar de los (N2 N) que habría si no se tuvieran las restricciones. Los parámetros restantes se encuentran de la siguiente manera: 
+* El método que se utilizará es independiente de la elecci de la ecuaci omitida. 
+
+i = 1,2, ... ,N-l j = 1,2, ... ,N-1 
+
+i = 1,2, ... ,N. j = 1,2, ... ,N. 
+ESTIMACION SIN RESTRICCION.-
+Vamos a estimar a los parámetros desconocidos suponiendo un comportamiento como e l siguiente para el sitema de ecuaciones (2): 
+
+Wjt = ªi + ~j Sij Ln(--) + ( 2 1 ) Wnt 
+i = 1,2, ... ,N-1 j=l,2, ... ,N-1 
+t = 1,2, ... ,T 
+Las variables aleatorias E:it se suponen con media cero, varianzas y covarianzas contemporáneas constantes, y todas las covarianzas rezagadas igual a cero; i.e., 
+w· · si s=t
+J. J E( <it ºis) = [ 
+O si s t 
+NOTACION,-
+Arreglamos los valores de (2') en las siguientes cuatro matrices : 
+5il 5i2 
+Y·l. = 
+5iT 
+1 1 
+X = 
+1 
+a·
+l. 
+f3i1 
+e· =
+í3i = 
+l. 
+f3i,n-l 
+(i 
+Wn-1,1 
+WnT 
+Las (N-1) ecuaciones (2' ) combinadas se escriben entonces corno 
+Y·l. Y·l. 
+= 
+Y·l. 
+X o • • • o 
+o X • • • o • • 
+• o o • • • X 
+WnT 
+para 
+a1 
+í32 
+l3n-1 
+E:il E:i2 
+( 3) 
+EiT 
+= 1,2, ..• ,N-1) 
+
+. . . Ln [ Wnl J Wn-1,2 Ln [ Wn2 J 
+( 4) 
+Wn-1, T J
+Ln [-wl_TJ ... Ln [ 
+las observaciones 
++ 
+e1 
+e2 
+( 5) 
+en-1 
+6 y= xa + e 
+El vector e con (N-l)*T elementos, tiene la siguiente matriz de covarianzas : 
+a11•I a12•I • • • ªl,n-1•I a21•I a22•I • • • ª2,n-1•I Var(e) = 
+( 6 ) • • ªn-1,1•I ªn-1,2•I • • • ªn-l,n-1• 1 
+• 
+Expresada en términos del producto de Kroneker Var (e) = I: o I donde 
+• • • 0 1,n-l• • • 0 2,n-l• 
+( 7) 
+• • ªn-1,1 ªn-1,2 • • • ªn-1,n-l 
+es una matriz singular, i la dimensi de I es (n-l)*(n-1). 
+Regresando al conjunto general de ecuaciones (5), el estimador por mínimos cuadrados generalizados para a es: 
+con: v-l = I:-l o I = [ I: o I ]-1 
+y la matriz de covarianzas asociada es Var (b*) = ( ·X• v-1 x )-l 
+
+La dificultad operativa con la ecuaci (8) es que los valores de la matriz E son desconocidos. Zellner (1962) propuso la construcci de un estimador factible de la siguiente forma : 
+1) Consideremos al estimador sin restricci 
+b1  (X'X)-l  X'Y1  
+b2  (X'X)-l  X'Y1  
+b  =  =  ( 9)  
+.  
+bn-1  (X'X)_ 1 ·x·Yn-l  
+
+i. e., apliquemos mínimos cuadrados ordinarios a cada ecuaci en (8), y calculemos los residuos muestrales, denotados por 
+
+en-li mediante la fmula
+.' 
+siguiente ei = [ I -X(X'X)-l X'] Yi i = 1,2, ... ,N. 
+2) Calculemos a los elementos ªij de la matriz E de la siguiente forma: 
+
+de este modo calculamos una matriz E que sustituimos en (8) para obtener un estimador factible. 
+Observaci (3).­
+Como X = I o X, resulta entonces que {X' v-l X )-l X' [ ¡:-l o I ] X 
+= ( I o X' ) [ I:-l o I ] ( I o X ) = I:-l o (X' X) 
+cuya inversa es I: o (X'X)-l , por lo tanto el vector b* resulta igual a b 
+I: o (X' X) -l ] ( I o X' ) [ ¡:-l o I ] Y = I o (X'X)-l X'] Y = b 
+Prueba sobre la simetría 
+Consideraremos la restricci de simetría para los parámetros de la matriz [f3ij] de la siguiente forma 
+R 13 = o 
+con R la matriz de restricci definida como sigue (supongamos que N = 4, entonces el sistema consta de N-1 = 3 ecuaciones) 
+ª1 f311 [312 f313 ª2 f321 f322 f323 a3 f331 f332 [33 3 o o 1 o o -1 o o o o o o 
+R = 
+o o o 1 o o o o o -1 o o 
+(10) 
+o o o o o o o 1 o o -1 o 
+Suponiendo  que  se  acepte  la  restricci  de  
+simetría,  para  imponerla,  entonces  recurrim os  al  siguiente  
+estimador  
+
+(11) con b* dado en (8), R en (10) y C = [ X' (E-lo I) X ]-l = E o (X'X)-l (12) por lo tanto, 
+b** = b -C R' [ R C R' 1-1 R b ( 11' ) 
+Reemplazando E por E obtenemos e= E o (X'X)-1 , y de ahí b** de (11'). 
+Una vez calculado b** , lo usamos para estimar una segunda aproximaci para E 
+ªij = (1/T) (Yi -Xb**i)(Yj -Xb**j) (13) 
+con b**i el i-ésimo subvector de b**· 
+Como b** satisface la restricci de simetría, esperamos que la matriz E sea una mejor estimaci para E que la encontrada por mínimos cuadrados, si la hipesis nula es en realidad cierta. 
+El procedimiento de prueba está basado en el siguient€ estadístico (después de ciertos cambios): 
+(14) 
+(q es el rango de la matriz R) que tiene una distribuci F con (q,T -N) grados de libertad, bajo las siguientes hipesis 
+i) Las del modelo lineal estándar. 
+ii) Normalidad. 
+iii) La hipesis nula r = Ra. 
+La prueba estuvo basada en considerar que bajo las hipesis mencionadas, ( T -N) s 2/a2 se distribuye como Ji­cuadrada con (T -N) grados de libertad; la forma cuadrática con r -Rb como vector y (R(X'X)-1R 1 ]-l como matriz se distribuye como ji-cuadrada con (q) grados de libertad; y su 
+2
+forma es independiente de s . También asumiremos normalidad, así como la validez de la hipesis nula (iii), pero el modelo lineal estándar tendrá que ser modificado. 
+2
+Reemplazaremos a ( T -N) s por una forma cuadrática en el vector de residuos Y -xa, que en general, no tiene una forma diagonal. Específicamente, usaremos las formas cuadráticas siguientes : 
+i) (Y -Xb)' (E-lo I)(Y -Xb) (15) 
+que se distribuye corno Ji-cuadrada con (N-l)*(T-N) grados de libertad; 
+ii) (r -Rb)'{R[X' (E-lo I)X]-1R'}-1 (r -Rb) (16) que se distribuye corno Ji-cuadrada con (q) grados de libertad; con (15) y (16) independientes. 
+La conclusi es que el estadístico de prueba (14) lo utilizaremos con la siguiente modificaci 
+(N-l)*T (r -Rb)'{R[X' (E-lo I)X]-lR'}-1 (r -Rb) X (17) q (Y -Xb)' (E-lo I)(Y -Xb) 
+que tiene una distribuci F con (q,(N-l)*(T-N)) grados de libertad cuando la hipesis nula es cierta. 
+De pasar la prueba, impondremos la simetría y estimarnos~ de acuerdo a (11') con C aproximada por: 
+C = E o (X'X)-l 
+y usarnos C -CR' (RCR')-1RC corno una matriz de covarianzas aproximada de éste estimador de acuerdo a 
+• 
+Va+(b**) = e -CR' (RCR')-1Rc. 
+
+
+DATOS.­
+Para la estimaci de las funciones de costo se necesitaron los siguientes datos 
+i) Salarios. 
+ii) Pago al Capital. 
+iii) Precio del Bien final. 
+iv) Shares* de la Mano de Obra. 
+v) Shares del Capital. 
+vi) Shares del Consumo Intermedio.** 
+En el Sistema de Cuentas Nacionales de México se encuentran series de datos anuales de las Cuentas Consolidadas de la naci (cuentas de producci, gastos de consumo y formaci de capital, cuentas de ingresos y gastos, y de financiaci del capital) que muestran las principales transacciones econicas realizadas en el país, así como cuentas de producci por actividades econicas a precios corrientes · y constantes. Además, se cuenta con series anuales del producto interno bruto seg las ramas de actividad econica en que se clasificaron las transacciones en la matriz de insumo-producto. 
+Las series de producci por tipos de actividad se complementan con datos del personal ocupado asalariado 
+* Participaci del factor en la prodNcci de cada bien. ** Calculado por sector de la producci. 
+(inferidos corno promedio anual de ocupaciones) y sus correspondientes remuneraciones medias anuales. 
+A continuaci se detalla el contenido de las cuentas consolidadas que se utilizaron : 
+CUENTA 1.-PRODUCTO Y GASTO INTERNO BRUTO. 
+Muestra el valor alcanzado anualmente por el producto interno bruto a través de la suma de las rentas originadas en la producci, i. e., engloba los siguientes conceptos : 
+1.1. Remuneraci de Asalariados 
+Incluye todos los pagos de sueldos y salarios realizados por los productores a sus obreros y empleados, así corno las contribuciones a la seguridad social. 
+1.2. Excedente de Explotaci 
+Es el resultado de la diferencia entre la producci bruta a precios de productor, por un lado, menos la suma total del consumo intermedio a precios de comprador, la remuneraci de los asalariados, el consumo de capital fijo y los impuestos indirectos netos. 
+1.3. Consumo de capital fijo 
+Es la parte del producto bruto que se requiere para reemplazar el capital fijo desgastado en el proceso de producci durante el periodo contable, medido a precios de reposici del bien. 
+Producto Interno Bruto* 
+Es la diferencia entre el valor de la producci bruta medida a precios de productor, y el valor del consumo intermedio medido en valores de comprador. 
+2.2. Gasto Privado de Consumo Final 
+Comprende el valor de las compras de bienes y de servicios, hechas en el mercado interior por las unidades familiares y las instituciones privadas sin fines de lucro, que sirven a los hogares. 
+4.2.6 Formaci bruta de capital Fijo 
+Ilustra la compra de bienes que llevan a cabo las unidades productoras para incrementar sus activos fijos, estando los mismos valuados a precios de comprador y pueden 
+* Se calcula como la suma de Remuneraci de asalariados, más Excedente de explotaci, más Consumo de capital fijo, más Impuestos indirectos, menos Subsidios. 
+ser obtenidos mediante compra o producci por cuenta propia. 
+Las Cuentas Consolidadas de la Naci que integran 
+la  serie  I  de  cuentas,  se  nutren  de  la  informaci  que  
+suministran  las  cuentas  de  producci ,  acumulaci  y  
+consumo.  
+
+Las cuentas de producci se elaboran por tipo de actividad econica, haciéndose referencia, en las salidas de las mismas, a los insumos no factoriales a los que se recurripara obtener la producci, tales corno las compras de bienes y servicios de consumo intermedio, el consumo de capital fijo y los impuestos indirectos netos de subsidios; estas salidas se complementan con los insumos de factores, corno en el caso de la remuneraci de asalariados y el excedente de explotaci. 
+La producci se encuentra valuada a los precios corrientes recibidos por el productor, los que representan el valor de la producci de los bienes y servicios en la puerta del establecimiento del productor. Este valor es igual a la suma de los insumos factoriales, tales corno la remuneraci de asalariados y el excedente de explotaci, más los no factoriales: impuestos indirectos netos, consumo de capital fijo, y el valor de los bienes y servicios de consumo intermedio a precios de comprador, es decir, que se 
+incluye el margen de comercializaci el cual se considera a cargo del productor. 
+Las cuentas de agregaci utilizadas en el modelo para el cual se estimaron las funciones de costo son las siguientes : 
+1) AGRICULTURA, GANADERIA, SILVICULTURA Y PESCA (AG) 
+1 Agricultura 2 Ganadería 3 Slivicultura 4 Caza y Pesca 
+2) MINERIA ( MI ) 
+5 Carb y sus Derivados 7 Minerales de Hierro 8 Mineralea metálicos no ferrosos 9 Canteras, Arena Grava y Arcilla 
+10 Otros minerales no Metálicos 
+3) PETROLEO CRUDO Y REFINACION (PE) 
+6 Extracci de Petreo y Gas 33 Refinaci de Petreo 34 Petroquímica Básica 
+4)  ALIMENTOS  BEBIDAS  Y TABACO  (AL)  
+ALIMENTOS  11  Productos  Cárnicos  y  lácteos  
+12  Envasado  de  frutas  y  Legumbres  
+13 Molienda de  Trigo y  Productos  
+14  Molienda de  Nixtamal  y  Prod.  de Maíz  
+15  Procesamiento de  Café  
+16  Azar  y  Subproductos  
+17  Aceites  y  Grasas  Vegetales  Comestibles  
+18  Alimentos  para Animales  
+19  Otros  Productos Alimenticios  
+
+BEBIDAS  20 21 22  Bebidas Alcohicas Cerveza Refrescos Embotellados  
+TABACO  23  Tabaco  y  sus  Productos  
+
+5) TEXTILES, ROPA Y PIEL (TE) 
+TEXTILES 24 Hilado y Tejido de Fibras Blandas 25 Hilado y Tejido de fibras Duras 26 Otras Industrias Textiles 
+PRENDAS DE 27 Prendas de vestir VESTIR 
+CUERO Y 28) Cuero y sus Productos SUS PRODUCTOS 
+6) OUIMICOS (QU) 
+35 Química Básica 36 Abono y Fertilizantes 37 Resinas Sintéticas y Fibras Artific. 38 Productos Medicinales 39 Jabones Detergentes, Perfu. y Cosmét. 40 Otras Industrias Químicas 
+7) METALES (HA) 
+HIERRO Y 46) Industrias básicas de Hierro y Acero ACERO 
+METALES 47 Industrias Básicas de Metales no Ferr. NO FERROSOS 
+PRODUCTOS 48 Muebles y Accesorios Metálicos METALICOS 49 Productos Metálicos Estructurales 50 Otros Productos Metálicos 
+8) MAQUINARIA (MQ) 
+MAQUINARIA 51 Maquinaria y Equipo no Eléctrico NO ELECTRICA 
+MAQUINARIA 52 Maquinaria y Aparatos .Eléctricos ELECTRICA 53 Aparatos Electrodomésticos 
+54 Equipos y Accesorios Electricos 55 Otros Equipos y Aparatos Eléctricos 
+9)  VEHICULOS  DE  MOTOR  (EQ)  
+EQUIPO  DE  56 Vehículos Automiles  
+TRANSPORTE  57  Carrocerías y  Partes Automotrices  
+58  Otros Equipos y  Material de Transporte  
+
+10) CONSTRUCCION (CO) 
+60 Construcci e Instalaciones 
+11) SERVICIOS (EC) 
+ELECTRICIDAD 61 Electricidad, Gas y Agua 
+COMERCIO, 62 Comercio RESTAURANTES 63 Restaurantes y Hoteles Y HOTELES 
+TRANSPORTE Y 64 Transporte COMUNICACIONES 65 Comunicaciones 
+SERVICIOS FINANCIEROS, 66 Servicios Financieros SEGUROS E 67 Alquiler de Inmuebles INMUEBLES 
+SERVICIOS 68 Servicios Profesionales COMUNALES, 69 Servicios de Educaci SOCIALES Y 70 Servicios Médicos PERSONALES 71 Servicios de Esparcimiento 
+72 Otros Servicios 73 Administraci Plica y Defensa 
+12) MANUFACTURAS DIVERSAS (MD) 
+MADERA Y SUS 29 Aserraderos Incluso Triplay PRODUCTOS 30 Otras Industrias de Madera 
+PRODUCTOS 31 Papel y Cart DE PAPEL 32 Imprentas y Editoriales 
+PRODUCTOS 41 Productos de hule DE HULE 42 Artículos de Plástico 
+PRODUCTOS DE 43 Vidrio y sus Productos MINERALES 44 Cemento NO METALICOS 45 Otros pruductos de Minerales no Metál. 
+OTRAS INDUSTRIAS 59 Otras Industrias Manufactureras MANUFACTURERAS' 
+El modelo, por lo tanto, contempla diez sectores de bienes de consumo intermedio y dos sectores de bienes de capital. En cada periodo, la producci tiene 1ugar usando trabajo, bienes de capital y bienes intermedios. 
+La elecci de los sectores obedece a dos razones principales. La primera, obedece a la necesidad de tomar en cuenta la mayor desagregaci posible de la economía de manera consistente con las fuentes disponibles. La segunda, 
+obedece  a  la  restricci  del  tama  de  la  muestra  que  en  
+nuestro  caso  es  de  19  as  (1970  -1988),  por  lo  cual  se  
+consider que  una  desagregaci  mayor  dificulta ría  el  
+trabajo  econométrico.  
+
+Otra fuente de datos consultada fué Las Cuentas Nacionales y Acervos de Capital, Consolidadas y por Tipo de Actividad Econica elaboradas pqr El Banco de México. Dicha fuente sirvipara tomar las series de datos para cada rama de actividad econica a precios corrientes y de 1970, así como indices de precios para cada tipo de bien de capital en cada rama, y datos de acervo de formaci de capital. 
+Para obtener los datos requeridos en la estimaci de las funciones de costo se hizo lo siguiente 
+i) Salario : Se tornel dato de remuneraci a los trabajadores y se dividipor el personal ocupado. 
+ii) Pago al Capital : Se tomel dato de excedente de explotaci y se dividipor el acervo de capital. 
+iii) Precio del bien final : Se tomdirectamente del sistema de cuentas nacionales de México, dividiendo el valor corritnte entre el valor constante. 
+iv) Consumo Intermedio : Al producto Interno Bruto se le restla remuneraci a los trabajadores y el excedente bruto de explotaci así como los impuestos indirectos y se le agreglos subsidios. 
+v) Shares Se sumcada cuenta (salario, precio del capital, y consumo intermedio) y se dividicada rengl por el total, de forma tal que la suma de las participaciones resultara igual a la unidad. 
+vi) Para el caso del share del consumo intermedio se realizaron cálculos extra, pues había que tenerlos para cada sector, por lo que se tomaron los coeficientes fijos de la matriz de contabilidad social elaborada por el Prof. José Romero para el afio de 1985*~y se multipliccada coeficiente (ponderado de acuerdo a su participaci en el total) por la participaci del consumo intermedio, obteniendo así doce participaciones que sumadas igualan al share del consumo intermedio, y representan a cada sector de la producci. 
+Los datos obtenidos para la estimaci de las funciones de costo, se encuentran en el apéndice Al referido a los datos. 
+* A base del modelo de equilibrio general en donde se utilizaron las funciones de costo estimadas. 
+RESULTADOS.­
+Para el cálculo de las funciones de costo translog se hizo un programa computacional en lenguaje "GAUSS" que tornara los datos por sector y realizara la estimaci de los parámetros de acuerdo al método descrito en el capitulo anterior. En el Apéndice A3 se muestra el programa llamado TRANS.LOG al cual hacernos menci. 
+Para cada sector se realizuna prueba de hipesis para validar la restricci de simetría de la matriz de coeficientes denominada "Matriz de beta [ í3ij J" 
+encontrando  que  en  ninguna  de  las  funciones  estimadas  se  
+pudo  rechazar  la  hipesis  nula  de  simetría,  así  que  en  
+todos  los  sectores  se  impuso  tal restricci.  
+
+Una vez cubierto el requisito de simetría para la matriz [í3ij] el siguiente paso fué calcular el término independiente denominado "Alfa Cero", para lo cual se recurria un programa elaborado por el prof. José Romero, que torna los parámetros estimados por el programa TRANS.LOG y arma la funci translog exceptuando al parámetro en cuesti, tornando corno dato del costo al precio, ya que suponernos competencia perfecta. Restando al logarítrno del costo la funci tranlog incompleta se obtiene el valor de el parámetro faltante en la funci estimada para cada sector. Los valores de los parámetros estimados, así corno la 
+matriz de covarianzas estimada por el metodo de Zellner se pueden consultar en el apéndice A2 de resultados. 
+Los parámetros obtenidos fueron sometidos a prueba. Tal prueba consistien ver qué tan bien ( o mal) reproducían las demandas por insumos observadas en cada sector para un a en particular . Se tomaron los precios mundiales así como las tarifas oficiales para los productos elaborados por cada uno de los sectores modelados. También se tomen cuenta la depreciaci del capital para cada sector de la producci, y también los distintos niveles de producci que se presentaron. Todos los datos mencionados se combinaron y, mediante otro programa computacional elaborado por el prof. José Romero, se modella demanda por insumos de cada sector considerado. Los resultados de las pruebas se encuentran en el apéndice A4, donde además se incorpora la prueba de restricciones para los precios domésticos, industrias y bienes de capital. 
+Observando los resultados obtenidos para las demandas por insumos entre sectores, se tiene una gran falla al encontrar "demandas negativas"; sin embargo en el global, tal falla se·borra, excepto para el sector (5). 
+Usando un •tercer programa (ver apéndice A3), se modelel estado estacionario de la economía de acuerdo a la formulaci dada en el artículo de Young-Romero (Scratch Notes), modelando además los costos de producci para cada sector, así como el pago al capital y la demanda por trabajo, además del precio de la maquinaria (sector 8), de la construcci (sector 10), y el precio de los vehículos de motor (sector 9). 
+Los resultados obtenidos muestran una buena aproximaci a los datos observados de demanda por bienes de capital, maquinaria, vehiculos y construcci. 
+Como se menciona en la introducci, el objetivo de la estimaci de las funciones de costo es para su utilizaci en un modelo de equilibrio general aplicado dinámico, a cargo del prof. José Romero. La prueba que se hace con los resultados obtenidos es satisfactoria en cuanto a que reproduce de manera eficiente las demandas globales por construcci, mano de obra, bienes de capital y vehículos; sin embargo, desde el punto de vista particular, no estamos satisfechos con los resultados obtenidos en el sentido de demandas negativas, ya que éstas no tienen explicaci econica. 
+Una justificaci a tal hecho es la manera en que se desglozal consumo interciedio;· ya que al tomar todos los valores de los doce sectores, se incluyeron valores muy 
+peques*  no  significativos,  pero  en donde  no  contamos  con  
+alg  criter io  especifico  para  no  incluir los  en  los  
+cálculos.  
+
+Para terminar, solo basta decir que el problema arriba mencionado no pudo ser salvado; sin embargo los resultactos obtenidos al simular la demanda intermedia, son satisfactorios. Este hecho fue el decisivo para aceptar y trabajar con las funciones de costo estimadas. 
+FIN EL COLEGIO DE MEXICO (Agosto 1991) 
+* Ver apéndice (l) donde se muestra la tabla de coeficientes técnicos. 
+(APENOICE #1) 11 DATOS 11 
+INDICE DE PRECIOS !1979:1) 
+Pl P2 P3 P4 P5 P6 P7 P8 P9 PlO Pll P12 
+1970: 1.000000 1 0.999947 1 1 1 1 1 1 1 1 1.087936 1971: 1.039669 0.923504 1.101086 1.104988 1.027711 1.015768 1.006868 1.010961 1.025227 1.003729 1.058662 1.124990 1972: 1.089377 0.962127 1.087397 1.136361 1.109348 1.028191 1.011341 1.076625 1.082419 1.112254 1.128648 1.165920 1973: 1.323456 1.164353 1.261494 1.101715 1.328543 1.099910 1.079927 1.162142 1.164358 1.194635 1.259426 1.445665 1974: 1.673339 1.604943 1.862104 1.685321 1.613481 1.330106 1.474941 1.433051 1.302600 1.535018 1.523498 1.646433 1975: 1.934343 1.740096 1.973135 1.903378 1.798649 1.509181 1.721997 1.658352 1.471251 1.902903 1.770879 1.876957 1976: 2.271457 2.120459 2.060901 2.273069 2.149820 1.724635 2.029127 1.950064 1.707742 2.299731 2.142651 2.164919 1977: 2.841088 3.163393 2.á65517 3.022058 2.658678 2.304595 2.560536 2.500677 2.471187 2.971116 2.774406 2.842237 1978: 3.36B744 3.431319 3.155999 3.440662 3.0B1913 2.563350 3.046817 2.854943 2.985449 3.505517 3.275610 3.274262 1979: 3.966964 4.781074 4.301884 3.679071 3.685044 2.958350 3.799435 3.302216 3.565825 4.394491 3.880370 3.764491 1980: 4.67B212 6.1B9815 7.053790 4.488108 4.703910 3.672949 4.749902 4.092125 4.404965 5.678506 4.852942 4.900208 1981: 5.892457 5.708362 8.024554 5.571872 5. 775307 4.487714 5.911853 5.117569 5.483738 7;432555 6.247851 6.178765 1982: 8.591658 ].283884 18.07126 8.396425 9.111385 7.165793 9.388493 8.244420 9.292316 11.53523 9.811524 9.480909 1983: 16.54902 21.66561 44.20773 15.54899 18.81379 15.67119 19.97960 16.71560 19.71267 21.58736 18.16150 19.61482 1984: 28.85860 31.27333 64.85487 27.04480 30.07461 25.48721 35.88076 27.33195 32.79825 34.46550 29.64555 32.30495 1985: 54.28542 49.61799 39.71565 47.54832 45.68065 38.85073 49.82976 41.51654 53.31189 53.71791 55.14020 53.78528 1986: 92.87345 100.1737 57.46945 86.61990 82.54112 75.81132 99.48231 76.27184 106.2229 98.21249 40.32681 99.51052 1987: 202.3261 247.1640 165.5232 197.2629 213.4242 194.5316 246.4174 198.1486 266.7934 226.5744 226.7756 245.5567 1988: 403.6859 508.7131 276.5284 405.4844 426.9204 393.9482 540.(1040 407.0293 476.3815 470.2088 466.4921 497.2422 
+SALARIOS 
+WLl WL2 WL4 WL5 WL6 WL7 WL8 WLlU WLll WL12 
+1970: 0.003381 0.019777 0.057065 0.017887 0.018506 0.036778 0.026930 0.025861 0.032170 0.017993 0.014866 0.021033 1971: 0.003558 0.020058 0.057480 0.019209 0.019450 0.039321 0.030353 0.027608 0.035933 0.017993 0.015913 0.022687 1972: 0.004021 0.023213 0.060470 0.021718 0.021980 0.044273 0.031966 0.029858 0.038515 0.021357 0.018580 0.025291 1973: 0.004559 0.024535 0.01i9116 0.024797 0.024706 0.048690 0.037179 0.033460 0.041760 0.022473 0.021048 0.048938 1974: 0.005978 0.032858 0.083633 0.032710 0.031086 0.061970 0.046562 0.042591 0.053760 0.028807 0.026982 0.036626 1975: 0.00673i 0.038979 0.099972 0.039884 0.038116 0.075248 0.057630 0.054526 0.066061 0.036706 0.032603 0.045220 i976: 0.008399 0.050519 0.123347 0.049337 0.049331 0.093624 0.071927 0.069733 0.084966 0.047484 0.041735 0.056898 1977: 0.010168 0.064929 0.154318 0.061239 0.061760 0.119604 0.096228 0.089909 0.113779 0.062832 0.052786 0.071869 1978: 0.012187 0.072628 0.197597 0.070602 0.071539 0.135897 0.112111 0.106830 0.131880 0.072494 0.061862 0.084069 1979: 0.015111 0.085798 0.249994 0.083806 0.087748 0.160507 0.135164 0.123645 0.156948 0.087212 0.075800 0.099310 1980: 0.018399 0.107295 0.315363 0.102581 0.107535 0.195814 0.165003 0.152332 0.183379 0.105260 0.095433 0.124073 1981: 0.024240 0.141836 0.412684 0.133450 0.138659 0.259228 0.219400 0.199636 0.247423 0.139575 0.127870 0.163027 1982: b.034176 0.219892 0.611319 0.204923 0.214517 0.394509 0.350469 0.327172 0.380028 0.217672 0.198348 0.253653 1983: 0.053403 0.359694 0.838022 0.312499 0.339395 0.612264 0.554193 0.501089 0.608104 0.337993 0.295935 0.401821 1984: 0.084935 0.544803 1.317846 0.489137 0.522568 0.953151 0.870223 0.783277 0.888556 0.522532 0.467445 ~.630588 1985: 0.136652 0.797049 2.145944 0.756895 0.804930 1.580942 1.378973 1.229178 1.458925 0.694435 0.765290 0.972340 1986: 0.255606 1.354943 3.377802 1.290073 1.353297 2.801221 2.360497 2.133939 2.495911 l.i55714 1.270922 1.695101 1987: 0.552592 3.006501 7.999852 2.898858 3.024037 6.467844 5.540666 4.985896 5.776078 2.591596 2.858522 3.833243 1988: 1.035707 5.871378 17.13761 5.885098 6.383658 14.41036 11.77376 10.79159 12.60876 4.873049 5.562968 7.976305 
+PAGO AL CAPITAL (RENTA) 
+RK1 RX2 RK3 RK4 RK5 RKS RX7 RK8 RK9 RK10 R K 11 RX12 
+1970: 0.540580 0.728222 0.268963 0.620593 0.641474 0,564586 0.465609 0.318828 0.310094 0.627617 0.637821 0.620984 1971: 0.439426 0.456012 0.443903 0.502420 0.557742 0.390025 0.313892 0.201568 0.228276 0.419969 0.592594 0.468434 1972: 0.408546 0.394555 0.285819 0.458325 0.487209 0.322035 0.326306 0.234303 0.290054 0.479599 0.613763 0.375924 1973: 0.427867 0.480122 0.326946 0.484795 0.414797 0.306504 0.328791 0.313004 0.358108 0.509111 0.691085 0.345859 1974: 0.537112 0.656552 1.002665 0.542870 0.433256 0.294181 0.435283 0.368901 0.349387 0.569116 0.773816 0.390688 1975: 0.546101 0.634888 1.045576 0.581423 0.466548 0.300683 0.481158 0.363602 0.229201 0.547416 0.870867 0.388933 1976: 0.511311 0.626770 0.521581 0.649603 0.459707 0.311882 0.581975 0.460422 o. 131066 0,498577 0.992453 0.390379 1977: 0.705415 0.888623 1. 181461 0.917782 0.663458 0.524194 0.669823 0.567631 0.275480 0.531996 1. 156155 0.490171 1978: 0.763100 0.878826 0.602445 1.018686 0.804526 0.613243 0.629419 0.734693 0.610339 0.699792 1.450889 0.625510 1979: 0.941604 1.468483 0.405438 1. 102448 0.985434 0.782i50 0.873787 1.013606 0,791423 0.832109 1.819604 0.835744 1980: 1.271615 1.801284 1, 154451 1.598503 0.973833 1.053565 1.084281 1.276917 0.993200 1.292588 2.397518 1.178118 1981! 1,434446 1.346339 0.828585 1.930086 1.059891 1.310854 1.340426 1,477771 1. 185992 1.845792 3.009105 1.461412 1982: 2.132524 1.976400 2,774885 2.736604 1.513309 2.288408 1.837635 1.817691 1.269107 2.403238 4.235686 1.962063 1983: 4.576774 4.550261 12.48485 4.276079 3.265456 5. 166154 3.333304 2.838636 1.552261 4.636948 7.249487 3.369288 1984: 7,499016 6.300809 15.83096 7,798303 5,732798 9. 188635 6.977116 4.966663 3.430251 8.231426 12.79104 5.747407 1985: 12. 18496 10.86688 21.62981 15.57750 9.064075 15.01446 12.22449 8.690135 7.694137 9.215064 20.73622 11.55155 1986: 20.40387 22.21291 24.09949 28.81283 15.74637 24.58358 24.37985 14.63872 10.65464 16.23928 36.50395 20.74927 1987: 55.36934 57,37680 90.73369 67.47424 39.55795 74.80619 69.75794 39.26440 31.36525 36.07008 85.24995 56.21010 1988: 103.2370 115.4980 70.73567 137.0069 85.04384 153.5931 130.2922 90.03667 65.33226 78.83025 188.2309 110,5839 
+COKFICIKNTKS TKCNICOS ············-·············· 
+ACT-AG ACT·MI ACT·PK ACT·AL ACT·TK ACT·QU ACT·HA ACT•MQ ACT·KQ ACT·CO ACT-KC ACT-lrn ········-·········································································································· 
+COM·CMP  708250  60  o  2888859  80249  25598  o  o  o  o  22793  189662  
+COl!-Cl!P  49?4  163446  20944  13?6  23?6  41182  226195  8509  1?32  162378  4799  105171  
+COIHMP  57382  5571  986212  22852  5768  441499  9500  3254  2635  52769  501746  44456  
+COM·Cl!P  282045  23  61  1152676  85042  117725  o  o  158  o  63340  24393  
+COIHMP  23708  670  1869  42452  484275  7543  1905  2073  7507  6175  84832  28511  
+COJHHP  228525  20329  31124  58653  298945  469175  53405  28238  22707  79567  411393  383101  
+COH·CMP  38652  19922  26176  94002  13537  28383  895606  216689  208571  837118  165478  86894  
+COl!·CHP  13984  7256  35250  6225  2450  3624  20494  138084  15668  101178  103808  11563  
+COl!·CMP  8588  7379  1692  5897  2375  4480  8360  25502  492252  258888  7061  
+COM·CHP  o  o  o  o  o  o  o  o  o  o  o  o  
+COl!·CMP  300587  111164  245979  819391  366686  350283  337120  266691  424902  774116  5221605  613043  
+COM·CHP  86621  12807  8489  126082  65344  136373  42714  94323  131976  814433  862640  742912  
+
+·······----------------------------------------------------·····································------------------­
+PARTICIPACIONKS DKL CONSUMO INTRRMRDIO 
+SCI1 SCI2 SCI3 SCI4 SCI5 SCI6 SCI7 SCI8 SCI9 SCI10 SCill SCI12 
+1970: 0.287691 0.410849 0.691064 0.716856 0.593402 0.616033 0.674985 0.562754 0.668629 0.527478 0.196394 0.541447 1971: 0.288412 0.393397 0.659385 0.701314 0.598404 0.600236 0.679447 0.562599 0.704328 0.546814 0.194142 0.536529 1972: 0.300485 0.399064 0.701483 0.698436 0.588479 0.609807 0.677913 0.554854 0.682171 0.519969 0.193431 0.538855 1973: 0.291318 0.410502 0.725626 0.705276 0.593834 0.600816 0.684149 0.533317 0.680273 0.524725 0.190282 0.466492 1974: 0.289433 0.426137 0.664384 0.709464 0.603317 0.626372 0.682809 0.543751 0.690046 0.517497 0.196461 0.554076 1975: 0.294164 0.388221 0.639807 0.710063 0.585869 0.631863 0.663506 0.555535 0.713289 0.507546 0.202580 0.548755 1976: 0.297546 0.391865 0.701052 0.709109 0.594931 0.628537 0.652094 0.531194 0.721948 0.492037 0.199308 0.546775 1977: 0.300663 0.409788 0.557310 0.699930 0.573273 0.612981 0.644719 0.539228 0.693574 0.502878 0.196516 0.545230 1978: 0.295432 0.394463 0.634021 0.701527 0.571430 0.607988 0.654555 0.539079 0.664488 0.512834 0.195904 0.541555 1979: 0.304698 0.381167 0.648269 0.706896 0.571251 0.609320 0.636757 0.536710 0.670335 0.513505 0.193756 0.533521 1980: 0.295600 0.374010 0.549485 0.668317 0.565095 0.604763 0.635703 0.533676 0.072264 0.523032 0.195021 0.527061 1981: 0.294276 ·0.377138 0.593237 0.661527 0.562001 0.598791 0.629570 0.528352 0.675105 0.515071 0.190635 0.518168 1982: 0.297323 0.384227 0.443596 0.653789 0.545702 0.581918 0.618272 0.515449 0.665990 0.525160 0.192062 0.507421 1983: 0.304811 0.422224 0.366984 0.667062 0.562487 0.590005 0.637505 0.528727 0.671145 0.523355 0.204149 0.519844 1~84: 0.289647 0.431870 0.426920 0.670296 0.565376 0.593537 0.632254 0.527466 0.665160 0.528630 0.203930 0.515612 1985: 0.295685 0.404182 0.315542 0.655522 0.559655 0.586345 0.607993 0.520907 0.622988 0.579124 0.242095 0.485714 1986: 0.299972 0.413926 0.436213 0.643238 0.559169 0.583722 0.594550 0.512887 0.614165 0.581211 0.258768 0.483647 1987: 0.301206 0.406386 0.348882 0.640593 0.564923 0.568377 0.589408 0.504684 0.607110 0.592099 0.270173 0.483472 1988: 0.342068 0.408582 0.526048 0.649916 0.555193 0.565097 0.632287 0.496059 0.627412 0.605891 0.269442 0.491678 
+RSHARKSn SKCTOR IAG) 
+A\O S1Al S1A2 S1A3 S1A4 S1A5 S1A6 S1A7 S1A11 S1A12 
+1970: 0.117728 0.000826 0.009538 0.046882 0.003940 0.037986 0.006424 0.049964 0.014398 1971: 0.118023 0.000828 0.009562 0.047000 0.003950 0.038081 0.006440 0.050090 0.014434 1972: 0.122963 0.000863 0.009962 0.048967 0.004116 0.039675 0.006710 0.052186 0.015038 1973: 0.119212 0.000837 0.00~658 0.047473 0.003990 0.038465 0.006505 0.050594 0.014580 1974: 0.118440 0.000831 0.009596 0.047166 0.003964 0.038216 0.006463 0.050267 0.014485 1975: 0.120377 0.000845 0.009752 0.047937 0.004029 0.038841 0.006569 0.051088 0.014722 1976: 0.121761 0.000855 0.009865 0.048488 0.004075 0.039287 0.006644 0.051676 0.014891 1977: 0.123036 0.000864 0.009968 0.048996 0.004118 0.039699 0.006714 0,052217 0.015047 1978: 0,120895 0.000849 0.009794 0.048144 0.004046 0.039008 0.006597 0.051309 0.014785 1979: 0.124687 0.000875 0.010102 0.049654 0.004173 0.040231 0.006804 0.052918 0.015249 1980: 0.120964 0.000849 0.009800 0.048171 0.004049 0.039030 0.006601 0.051338 0.014794 1981: 0.120422 0.000845 0.009756 0.047955 0.004031 0.038855 0.006571 0.051108 0.014728 1982: 0.121670 0.000854 0.009857 0.048452 0.004072 0.039258 0.006640 0.051637 0.014880 1983: 0.124733 0.000875 0.010105 0.049672 0.004175 0.040246 0.006807 0.052938 0.015255 1984: 0.118528 0.000832 0.009603 0.047201 0.003967 0.038244 0.006468 0.050304 0.014496 1985: 0.120999 0.000849 0.009803 0.048185 0.004050 0.039041 0.006603 0.051353 0.014798 1986: 0.122753 0.000862 0.009945 0.048884 0.004109 0.039607 0.006699 0.052097 0.015013 1987: 0.123258 0.000865 0.009986 0.049085 0.004125 0.039770 0.006726 0.052312 0.015074 1988: 0.139980 0.000983 0.011341 0.055744 0.004685 0.045166 0.007639 0.059408 0.017119 
+SHARHSff SKCTOR (MI) 
+A\O S2Al S2A2 S2AJ S2A4 S2A5 S2A6 S2A7 S2All S2A12 
+1970: 0.000073 0.199741 0.006808 0.000028 0.000818 0.024843 0.024346 0.138538 0.015651 1971: 0.000070 0.191257 0.006518 0.000026 0.000784 0.023788 0.023311 0.132653 0.014986 1972: 0.000071 0.194012 0.006612 0.000027 0.000795 0.024130 0.023647 0.134564 0.015202 1973: 0.000073 0.199573 0.006802 0.000028 0.000818 0.024822 0.024325 0.138421 0.015637 1974: 0.000076 0.207174 0.007061 0.000029 0.000849 0.025767 0.025251 0.143693 0.016233 1975: 0.000069 0.188741 0.006433 0.000026 0.000773 0.023475 0.023005 0.130908 0.014789 1976: 0.000069 0.190512 0.006493 0.000026 0.000780 0.023695 0.023221 0.132137 0.014927 1977: 0.000073 0.199226 0.006790 0.000028 0.000816 0.024779 0.024283 0.138180 0.015610 1978: 0.000070 0.191775 0.006536 0.000026 0.000786 0.023852 0.023375 0.133013 0.015026 1979: 0.000068 0.185311 0.006316 0.000026 0.000759 0.023048 0.022587 0.128529 0.014520 1980: 0.000066 0.181832 0.006197 0.000025 0.000745 0.022615 O.2163 0.126116 0.014247 1981: o.nooo67 0.183352 0.006249 0.000025 o.0001s1 0.022904 0.022349 0.121111 0.014366 1982: 0.000068 0.186799 0.006366 0.000026 0.000765 0.023233 0.022768 0.129561 0.014636 1983: 0.000075 0.205272 0.006996 0.000028 0.000841 0.025531 0.025020 0.142374 .016084 1984: 0.000077 0.209962 0.007156 0.000029 0.000860 0.026114 0.025591 0.145626 0.016451 1985: 0.000072 0.196500 0.006697 0.000027 0.000805 0.024440 0.023950 0.136290 0.015397 1986: 0.000073 0.201238 0.006859 0.000028 0.000824 0.025029 0.024528 0.139576 0.015768 1987: 0.000072 0.197572 0.006734 0.000027 0.000809 0.024573 0.024081 0.137033 0.015481 1988: 0.000072 0.198640 0.006770 0.000027 0.000814 0.024706 0.024211 0.137774 0.015564 
+nsHARBS' SECTOR jPK) 
+A\0 S3A2 S3A3 S3A4 S3A5. S3A6 S3A7 S3All S3A12 
+1970: 0.010957 0.515981 0.000031 0.000977 0.016283 0.013695 0.128694 0.004441 1971: 0.010455 0.492328 0.000030 0.000933 0.015537 0.013067 0.122795 0.004237 1972: 0.011123 0.523760 0.000032 0.000992 0.016529 0.013901 0.130635 0.004508 1973: 0.011505 0.541787 0.000033 0.001026 0.017098 0.014380 0.135131 0.004663 1974: 0.010534 0.496061 0.000030 0.000940 0.015655 0.013166 0.123726 0.004269 1975: 0.010145 0.477710 0.000029 0.000905 0.015076 0.012679 0.119149 0.004111 1976: 0.011116 0.523438 0.000032 0.000991 0.016519 0.013893 0.130555 0.004505 1977: 0.008836 0.416114 0.000025 0.000788 0.013132 0.011044 0.103786 0.003581 1978: 0.010053 0.473390 0.000029 0.000897 0.014939 0.012564 0.118072 0.004074 1979: 0.010279 0.484028 0.000029 0.000917 0.015275 0.012847 0.120725 0.004166 1980: O.P08712 0.410271 0.000025 0.000777 0.012947 0.010889 0.102329 0.003531 1981: 0.009406 0.442939 0.000027 0.000839 0.013978 0.011756 0.110477 0.003812 1982: 0.007033 0.331210 0.000020 0.000627 0.010452 0.008790 0.082609 0.002850 1983: 0.005819 0.274007 0.000016 0.000519 0.008647 0.007272 0.068342 0.002358 1984: 0.006769 0.318758 0.000019 0.000604 0.010059 0.008460 0.079504 0.002743 19B5: 0.005003 0.235598 0.000014 0.000446 0.007435 0.006253 0.059762 0.002027 1986: 0.006916 0.325697 0.000020 0.000617 0.010278 0.008644 0.081234 0.002803 1987: 0.005532 0.260492 0.000016 0.000493 0.008220 0.006913 0.064971 0.002242 1988: 0.008341 0.392772 0.000024 0.000744 0.012395 0.010424 0.097964 0.003380 
+nsHARKS" SKCTOR (AL) 
+S4A1 S4A2 S4A3 S4A4 S4A5 S4A6 S4A7 S4A11 S4A12 
+··········-··································---~---···································· 
+1970: 0.397764 0.000189 0.003146 0.158710 0.005845 0.008075 0.012943 0.112821 0.017360 1971: 0.389140 0.000185 0.003078 0.155269 0.005718 0.007900 0.012662 0.110375 0.016983 1972: 0.387543 0.000184 0.003065 0.154632 0.005694 0.007868 0.012610 0.109922 0.016914 1973: 0.391339 0.000186 0.003095 0.156147 0.005750 0.007945 0.012733 0.110998 0.017079 1974: 0.393662 0.000187 0.003114 0.157074 0.005784 0.007992 0.012809 0.111657 0.017181 1975: 0.393995 0.000187 0.003116 0.157206 0.005789 0.007999 0.012820 0.111752 0.017195 1976: 0.393465 0.000187 0.003112 0.156995 0.005782 0.007988 0.012803 0.111601 0.017172 1977: 0.388372 0.000184 0.003072 0.154963 0.005707 0.007885 0.012637 0.110157 0.016950 1978: 0.389258 0.000185 0.003079 0.155317 0.005720 0.007903 0.012666 0.110408 0.016988 1979: 0.392237 0.000186 0.003102 0.156505 0.005763 0.007963 0.012763 0.111253 0.017118 1980: .0.370831 0.000176 0.002933 0.147964 0.005449 0.007529 0.012066 0.105181 0.016184 1981: 0.]67063 0.000174 0.002903 0.146461 0.005394 0.007452 0.011944 0.104113 0.016020 1982: 0.362770 0.000172 0.002869 0.144747 0.005330 0.007365 0.011804 0.102895 0.015832 1983: 0.370134 0.000176 0.002927 0.147686 D.005439 0.007514 0.012043 0.104984 0.016154 1984: 0.371929 0.000177 0.002942 0.148402 0,005465 0.007551 0.012102 0.105493 0.016232 1985: 0.363731 0.000173 0.002877 0.145131 0.005345 0.007384 0.011835 0.103168 0.015874 1986: 0.356915 ·0.000110 0.002823 0.142411 0.005244 0.007246 0.011613 0.101234 0.015577 1987: 0.355448 0.000169 0.002811 0.141826 0,005223 0.007216 0.011566 0.100818 0.015513 1988: 0.360621 0.000171 0.002852 0,143890 0.005299 0.007321 0.011734 0.102286 0.015739 
+6 SHARKSn SKCTOR (TK) 
+A\O S5A1 S5A2 S5A3 S5A5 S5A6 S5A7 S5A11 S5A12 
+1970: 0.033960 0.001005 0.002440 0.035988 0.204939 0.126509 0.005728 0.155176 0.027652 1971: 0.034246 0.001013 0.00i461 0.036292 0.206666 0.127576 0.005776 0.156484 0.027885 1972: 0.033678 0.000997 0.002420 0.035690 0.203238 0.125460 0.005681 0.153889 0.027423 1973: 0.033985 0.001006 0.002442 0.036014 0.205088 0.126601 0.005732 0.155289 0.027672 1974: 0.034527 0.001022 0.002481 0.036590 0.208363 0.128623 0.005824 0.157769 0.028114 1975: 0.033529 0.000992 0.002409 0.035531 0.202337 0.124903 0.005655 0.153206 0.027301 1976: 0.034047 0.001008 0.002447 0.036081 0.205467 0.126835 0.005743 0.155576 0.027723 1977: 0.032808 0.000971 0.002358 0.034767 0.197987 0.122218 0.005534 0.149912 0.026714 1978: 0.032702 0.000968 0.002350 0.034656 0.197350 0.121825 0.005516 0.149431 0.026628 1979: 0.032692 0.000967 0.002349 0.034645 0.197288 0.121787 0;005514 0.149384 0.026620 1980: ·0.-032340 0.000957 0.002324 o.034271 0.195162 0.120474 0.005455 0.147774 0.026333 1981: 0.032163 0.000952 0.002311 0.034084 0.194094 0.119815 0.005425 0.146965 0.026189 1982: 0.031230 0.000924 0.002244 0.033095 0.188465 0.116340 0.005268 0.142703 0.025429 1983: 0.032191 0.000953 0.002313 0.034113 0.194262 0.119918 0.005430 0.147092 0.026212 1984: 0.032356 0.000958 0.002325 0.034288 0.195259 0.120534 0.005458 0.147847 0.026346 1985: 0.032029 0.000948 0.002302 0.033941 0.193284 0.119315 0.005402 0.146351 0.026080 1986: 0.032001 0.000947 0.002300 0.033912 0.193116 0.119211 0.005398 0.146224 0.026057 1987: 0.032330 0.000957 0.002323 0.034261 0.195103 0.120438 0.005453 0.147729 0.026325 1988: 0.031773 0.000940 0.002283 0.033671 0.191743 0.118363 0.005359 0.145185 0.025872 
+nsHARKSn SKCTOR (QUJ 
+A\O S6Al S6A2 S6A3 S6A4 S6A5 S6A6 S6A7 S6All S6Al2 
+1970: 0.009747 0.015681 0.168120 0.044828 0.002872 0.178659 0.010808 0.133385 0.051930 1971: 0.009497 0.015279 0.163808 0.043679 0.002798 0.174077 0.010530 0.129965 0.050598 1972: 0.009649 0.015523 0.166421 0.044375 0.002843 0.176853 0.010698 0.132037 0.051405 1973: 0.009506 0.015294 0.163967 0.043721 0.002801 0.174245 0.010541 0.130090 0.050647 1974: 0.009911 0.015945 0.170941 0.045581 0.002920 0.181657 0.010989 0.135624 0.052801 1975: 0.009998 0.016084 0.172440 0.045980 0.002946 0.183249 0.011085 0.136813 0.053264 1976: 0.009945 0.016000 0.171532 0.045738 0.002930 0.182285 0.011027 0.136092 0.052984 1977: 0.009699 0.015604 0.167287 0.044606 0.002858 0.177773 0.010754 0.132724 0.051672 1978: 0.009620 0.015477 0.165924 0.044243 0.002834 0.176325 0.010666 0.131643 0.051251 1979: 0.009641 0.015510 0.166287 0.044340 0.002841 0.176711 .0.010690 0.131932 0.051364 1980: O.P09569 0.015394 0.165044 0.044008 0.002819 0.175390 0.010610 0.130945 0.050979 1981 : 0.009474 0.015242 0.163414 0.043574 0.002791 0.173658 0.010505 0.129652 0.050476 1982: 0.009207 0.014813 0.158810 0.042346 0.002713 0.168765 0.010209 0.125999 0.049054 1983: 0.009335 0.015019 0.161016 0.042934 0.00275D 0.171110 0.010351 0.127749 O.D49735 1984: 0.009391 0.015109 0.161980 0.043191 0.002767 0.172134 0.010413 0.128514 0.050033 1985: 0.009277 0.014926 0.160017 0.042668 0.002733 0.170048 0.010287 0.126957 0.049427 1986: 0.009236 0.014859 0.159302 0.042477 0.002721 0.169288 0.010241 0.126389 0.049206 1987: 0.008993 0.014468 0.155114 0.041361 0.002650 0.164837 0.009971 0.123066 O.D47912 1988: 0.008941 0.014385 0.154219 0.041122 0.002634 0.163886 0.009914 0.122356 0.047636 
+nsHARKSª SKCTOR [HAi 
+A\0 S7A2 S7A3 S7A5 S7A6 S7A7 S7All S7A12 
+1970: 0.097468 0.004093 0.000820 0.023012 0.385919 0.145265 0.018405 1971: 0.098112 0.004120 O.OOD826 0.023164 0.388470 0.146226 0.019527 1972: 0.097890 0.004111 0.000824 0.023112 0.387593 0.145896 0.018485 1973: 0.098791 0.004149 0.000832 0.023324 0.391158 0.147238 0.018655 1974: 0.098597 0.004141 0.000830 0.023279 0.390392 0.146949 0.018618 1975: 0.095810 0.004023 0.000806 0.022621 0.379356 0.142795 0.018092 1976: 0,094162 0.003954 0.000793 0.022231 0.372831 0.140339 0.017781 1977: 0.093097 0.003910 0.000784 0.021980 0.368614 0.138752 0.017580 1978: 0.094517 0.003969 0.000796 0.022315 0.374238 0.140869 0.017848 1979: 0.091947 0.003861 O.OD0774 0.021709 0.364062 0.137038 0.017363. 1980: ·0,091795 0.003855 0.000773 0.021673 0.363459 0.136811 0.017334 1981: 0.090910 0.003818 D.000765 0.021464 0.359953 0.135492 0.017167 1982: 0.089278 0.003749 0.000751 0.021078 0.353493 0.133060 0.016859 1983: 0.092055 0.003866 0.000775 0.021734 0.364490 0.137199 0.017383 1984: 0.091297 0.003834 0.000768 0.021555 0.361487 0.136069 0.017240 1985: 0.087794 0.003687 0.000739 0.020728 0.347616 0.130848 0.016578 1986: 0.085853 0.003605 0.000723 0.020270 0.339930 0.127955 0.016212 1987: 0.085i10 0.003574 0.000716 0.020094 0.336991 0.126848 0.016072 1988: 0.091302 0.003834 0.000768 0.021556 0.361506 0.136076 0.017241 
+nsHARKSA SKCTOR(MQ) 
+A\0 S8A2 S8A3 S8A5 S8A6 S8A7 S8All S8A12 
+1970: 007726 0.002954 0.001882 0.025639 0.196752 0.242153 0.085644 1971: 0.007724 0.002953 O.OOJ881 0.025632 0.196698 0.242087 0.085621 1972: 0.007617 0.002913 0.001855 0.025280 0.193990 0.238754 0.084442 1973: 007321 0.002800 0.001783 0.024298 0.186460 0.229487 0.081164 1974: 0.007465 0.002854 0.001818 0.024774 0.190108 0.233977 0.082752 1975: 0.007627 0.002916 0.001858 0.025311 0.194228 0.239047 0.084546 1976: 0.007292 0.002788 0.001776 0.024202 0.185718 0.228573 0.080841 1977: 0.007403 0.002831 0.001803 0.024568 0.188527 0.232031 0.082064 1978: 0.007401 0.002830 0.001803 0.024561 0.188475 0.231966 0.082041 1979: 0.007368 0.002817 0.001795 0.024453 0.187647 0.230947 0.081681 1980: o.~07326 0.002801 0.001105 0.024315 0.186586 0.229641 o.os1219 1981: a.001253 0.002113 0.001767 0.024012 0.184724 0.221350 o.oso409 1982: 0.007076 0.002706 0.001724 0.023484 0.180213 0.221798 0.078445 1983: 0.007258 0.002775 0.001768 0.024089 0.184855 0.227512 0.080466 1934: 0.007241 0.002769 0.001764 0.024032 0.184415 0.226969 0.080274 1985: 0.007151 0.002734 0.001742 0.023733 0.182121 0.224147 0.079276 1986: 0.007041 0.002692 0.001715 0.023367 0.179317 0.220696 0.078055 1987 : 0.006928 0.002649 O.D01688 0.022994 0.176449 0.~17166 0.076807 1988: 0.006810 0.002604 0.001659 0.022601 0.173434 0.213455 0.075494 
+A\0 S9A2 S9A3 S9A4 S9A5 S9A6 S9A7 S9A11 S9A12 
+1970: 0.001447 0.002201 0.000132 0.006272 0.018973 0.174279 0.355043 0.110277 1971: 0.001524 0.002319 0.000139 0.006607 0.019986 0.183584 0.374000 0.116165 1972: 0.001476 0.002246 0.000134 0.006399 0.019358 0.177809 0.362234 0.112511 1973: 0.001472 0.002240 0.000134 0.006382 0.019304 0.177314 0.361226 0.112198 1974: 0.001493 0.002272 0.000136 0.006473 0.019581 0.179862 0.366416 0.113810 1975: 0.001543 0.002348 0.000140 0.006691 0.020241 0.185920 0.378758 0.117643 1976: 0.001562 0.002377 0.000142 0.006772 0.020486 0.188177 0.383356 0.119071 1977: 0.001501 0.002283 0.000136 0.006506 0.019681 0.180782 0.368290 0.114392 1978: 0.001438 0.002188 0.000131 0.006233 0.018856 0.173200 0.352845 0.109594 1979: 0.001450 0.002207 O.DOD132 0.006288 0.019022 0.174724 0.355950 0.110559 1980: 0.001455 0.002213 0.000132 0.006306 0.019076 0.175227 0.356974 0.110877 1981: 0.001461 0.002223 0.000133 0.006333 0.019157 0.175967 0.358482 0.111346 1982: 0.001441 0.002193 0.000131 0.006248 0.018898 0.173591 0.353642 0.109842 1983: 0.001452 D.002210 0.000132 0.006296 0.019045 D.174935 0.356379 0.110692 1984: 0.001439 0.002190 0.000131 0.006240 0.018875 0.173375 0.353202 0.109705 1985: 0.001348 0.002051 0.000123 0.005844 0.017678 0.162383 0.330808 0.102750 1986: 0.001329 0.002022 0.000121 0.005761 0.017428 0.160083 0.326123 0.101295 1987: O.OD1314 0.001999 0.000119 0.005695 0.017228 0.158244 D.322377 0.100131 1988: 0.001358 0.002066 0.000123 0.005886 0.017804 0.163536 0.333157 0.103479 
+nsHARKSíl SKCTOR (CO) 
+A\O S10A2 S10A3 S10A5 S10A6 S10A7 S10A11 S10A12 
+1970: 0.031413 0.010208 0.001194 0.015393 0.161948 0.149760 0.157559 1971: 0.032565 0.010582 0.001238 0.015957 0.167885 0.155249 0.163335 1972: 0.030966 0.010063 0.001177 0.015173 0.159643 0.147628 0.155316 1973: 0.031249 0.010155 0.001188 0.015312 0.161103 0.148978 0.156737 1974: 0.030819 0.010015 0.001172 0.015101 0.158884 0.146926 0.154578 1975: 0.030226 0.009822 0.001149 0.014811 0.155829 0.144101 0.151606 1976: 0.029302 0.009522 0.001114 0.014358 0.151067 0.139697 0.146973 1977: 0.02994B 0.009732 0.001138 0.014675 0.154395 O. 142775 0.150211 1978: 0.030541 0.009925 0.001161 0.014965 0.157452 0.145602 0.153185 1979: 0.030581 0.009938 D.001162 0.014985 0.157658 0.145792 0.153385 1980: 0.031148 0.010122 0.001184 0.015263 0.160583 0.148497 0.156231 19B1: o.~30674 0.009968 0.001166 0.015030 0.158139 0.146237 0.153853 1982: 0.031275 0.010163 0.001189 0.015325 0.161236 0.149102 0.156867 1983: 0.03116B 0.010129 0.001185 0.015272 0.160682 0.148589 0.156328 1984: 0.031482 0.010230 0.001197 0.015426 0.162302 0.150087 0.157903 1985: 0.034489 0.011208 0.001311 0.016900 0.177805 0.164423 0.172986 1986: 0.034613 0.011248 0.001316 0.016961 0.178445 0.165015 0.173610 1987: 0.035262 0.011459 0.001340 0.017278 0.181788 0.168107 0.176862 1988: 0.036083 0.011726 0.001372 0.017681 0.186023 0.172023 0.180982 
+"SHARKSn SKCTOR (KC) 
+A\O SllAl SllA2 S11A3 S11A4 S11A5 Sl1A6 SllA7 S11All S11Al2 
+1970: 0.000609 0.000128 0,013427 0.001695 0.002270 0.011009 0.00442S 0.139739 0.023085 1911: 0,000602 0.000126 0.013273 0.001675 0,002244 0.010883 0.004377 0.138136 0.02~820 1972: 0,000600 0.000126 0,013225 0.001669 0.002236 0.010843 0.004361 0.137631 0.022737 1973: 0.000590 0.000124 0.013009 0.001642 0,002199 0.010666 0.004290 0.135390 0.021367 1974: 0.000610 0.000128 0.013432 0.001695 0.002271 0.011013 0.004429 0.139787 0.023093 1975: 0.000629 0.000132 0.013850 0.001748 0.002341 0.011356 0.004567 0.144141 0.023812 1976: 0.000619 0,000130 0.013626 0.001720 0.002303 0.011172 0.004494 0.141812 0.023428 1917: 0.000610 0.000128 0.013435 0.001696 0.002271 0.011016 0.004431 0.139825 O.u23101978: 0.000608 0.000128 0.013394 0.001690 0.002264 0.010982 0.004417 0.139390 0.023028 1979: 0.000601 0.000126 0.013247 0.001672 0.002239 0.010861 0.004319 0.137862 0.022775 1980: º"000605 0.000127 0.013333 0.001683 0.002254 0.010932 0.004397 0.138762 0.022924 1981: 0.000592 0.000124 0.013033 0.001645 0.002203 0.010686 0.004298 0.135641 G.0:2408 1982: 0.000596 0.000125 0.013131 0.001657 0.002220 0.010766 0.004330 0.136656 0.022576 1983: 0.000634 0.000133 0.013957 0.001762 0.002359 0.011444 0.004603 0.145257 0.02JY97 1984: 0.000633 0.000133 0.013942 0.001760 0.002357 0.011432 0.004598 0.145101 0.023971 i985: 0.000751 0.000158 0.016552 0.002089 0.002798 0.013571 0.005458 0.172256 0.02845; 1986: 0.000803 0.000169 0.017692 0.002233 0.002991 0.014506 0.005834 0.184119 0.030417 1987: 0.000839 0.000176 O.Oi8471 0.002331 0.003123 0.015145 0.006092 0.192234 0.031758 1988: 0.000836 0.000176 0.018421 0.002325 0.003114 0.015104 0.006075 0.191714 0.031672 
+ílSHARRS 1 SHC'POR (MD) 
+A\0 S12Al S12A2 S12A3 S12A4 S12A5 S12A6 S12A7 S12All S12A12 
+1970: 0.046296 0.025672 0.010851 0.005954 0.006959 0.093514 0.021210 0.149643 0.181344 1971: 0.045875 0.025439 0.010753 0.005900 0.006896 0.092665 0.021018 0.148284 0.179697 1972: 0.046074 0.025549 0.010799 0.005925 0.006926 0.093067 0.021109 0.148927 0.180476 1973: 0.039887 0.022118 0.009349 0.005130 0.005996 0.080569 0.018274 0.128927 0.156240 1974: 0.047376 0.026270 0.011104 0.006093 0.007121 0.095695 0.021705 0.153133 0.185574 1975: 0.046921 0.026018 0.010998 0.006034 0.007053 0.094776 0.021497 0.151663 0.183791 1976: 0.046751 0.025924 0.010958 0.006012 0.007027 0.094434 0.021419 0.151115 0.183128 1977: 0.046619 0.025851 0.010927 0.005995 0.007008 0.094168 0.021358 0.150688 0.182611 1978: 0.046305 0.025677 0.010853 0.005955 0.006960 0.093533 0.021215 0.149673 0.181380 1979: 0.045618 0.025296 0.010692 0.005867 0.006857 0.092145 0.020900 0.147452 0.178689 1980: 0.045066 0.024990 0.010563 0.005796 0.006774 0.091030 0.020647 0.145667 0.176526 1981: 0:044305 0.024568 0.010385 0.005698 0.006660 0.089494 0.020298 0.143209 0.173547 1982: 0.043386 0.024058 0.010169 0.005580 0.006522 0.087638 0.019877 0.140239 0.169948 1983: 0.044449 0.024647 0.010418 0.005716 0.006681 0.089783 0.020364 0.143672 0.174108 1984: 0.044087 0.024447 0.010333 0.005670 0.006627 0.089052 0.020198 0.142503 0.172691 1985: 0.041530 0.023029 0.009734 0.005341 0.006243 0.083888 0.019027 0.134240 o. 16267P. 1986: 0.041354 0.022931 0.009693 0.005318 0.006216 0.083531 0.018946 0.133668 0.161985 1987: 0.041339 0.022923 0.009689 0.005316 0.006214 D.083501 0.018939 0.133620 0.161926 1988: 0.042040 0.023312 0.009854 0.005407 0.006319 0.084919 0.019261 0.135888 0.164675 
+(APENDICE #2) 11 PROGRAMAS 11 
+/.i PROGRAMA TRANS. LC•G 
+UTILIZADO PARA CALCULAR LOS 
+COEFICIENTES DE LAS FUNCIONES DE COSTO 
+TRANSLC•G *' 
+;• SE ETIQUETA CADA SALI9A DEPENDIENDO DEL SECTOR CORRESPONDIENTE*/ 
+QUTPUT FILE : C:RESU1.PRN RESET; OUTPUT OFF j 
+3 1
+/* INVERSA DE LA 0ISTRI8UCI0N f */ 
+FN !NVF(DF1,DF2,ALPHA) : 
+0.95 +0,05*MININDC(A85(CDFFC(SEQA( 1,.05 12000),DFl 1DF2J·ALPHA)); 
+¡t CARGA LCS DATOS (PRECIOS) i/ 
+:iECTOR : 1; 
+
+,: Ls; ri 1 : 2; /* FACTORES */ rJ2 : 3; /i INSUMOS */ 
+T : :9; /i t DE DATOS */ 
+N : N 1 t 117; 
+/l RENTA DEL CAPITAL l/ 
+LOAD REllT[57,•] : C:RK.PRN; IENT1 : RENT[l: 19, 1:•]; IENT2 : RENT(20:38, 1:4]¡ RENTl : 8ENT[l9:~7, 1:4]¡ 
+miK = wn 1'rnm 'rnm; 
+.fi SALARIOS i¡ 
+LOAD WAGES[57,•] : C:WAGE.PRNj l/AGEI = 'I/AGES[l:19,1:4jj WAGE2 : WA6E5[20:38 1 1 :•] ¡ WAGE3 : ~AGES[39:57 1 1:•j¡ 
+WAG123 = WAGE1"WAGE2"WAGE3¡ 
+¡t PRECIOS t/ 
+LOAD BETA[57 14j : C:PRICES.PRN; 8ETA1 : BETA[ 1: 19 1 1:11) ¡ BETA2 : BETA[20:38, 1:4j ¡ oETA3 : BETA[39:57 1 1 :4)¡ /ifftttJJIIJIJJii 
+8AUX : 8ETAl 0 BETA2[. 1 l:3] "BETA3[.,3:4]¡ 
+ji SELECCION DEL SECTOR i/ 
+RKA : RENK[ •:SECTOR]¡ WAG : WAG123[, ,SECTOR]¡ 
+ji ~ATRIZ DE PRECIOS*/ 
+8AUX : ~AG"RKA"BAUX¡ 
+ji TRANSFORMA LOS DATOS. CREA LA MATRIZ » X ~ t/ 
+BAUX : LN(SAUX)j IJLT: 3AUX[. 1t1j¡ M : 11 • 1; 
+XI : 8AUX -ULTj XBAR : i1[. 1 l:Mj j XSAR : ONES(T,l}"IBAR; IM: EVE(M)¡ 
+X: XBAR ,i, IM¡ 
+ji CARGA LOS DATOS (SHARES). CREA EL VECTOR íl V » t/ 
+¡t SHARE DEL CAPITAL */ 
+LOAD SHK[57,4f: C:SK.PRN; SHK1 : SHK[ 1: 19, 1:hj¡ SHK2 : SHK[20:38 1 l:4j¡ SHKJ = SHK[39:57, 1:4]¡ 
+SHK123 : 5HK! "SHK2"5HK3¡ 
+SKI\: St1K123[.,SECTORj¡ 
+/i SHARE DEL SALARIO i/ 
+lDAD SWA[57 14] : C:SW.PRN; SWl : SWA[ 1: 1911:4] ¡ SW2 : SWA[20:38 1 l:hj; 5W3 : SWA[39:57 1 1:4]; 
+sw123 = sw1 · sw2 · sw1; 
+SWH : SW123[. ,SECTOR]; 
+/* SHARES POR SECTOR t/ 
+LOAD S1NSA[38 14] : C:510.PRN; / *LOAD SINSA[Sl,4] : C:S12.PRN; Jit SECTOR ltt */ SJNSI : SJNSA[ 1: 19 1 1:4]¡ S1NS2 : 5INSA[20:38,1:3]¡ /iSJNSl : SJNSA[39:57 1 1);*/ 
+SJ~S : SINS1 "SJNS2; 
+/* MATRIZ DE SHARES */ 
+~SHARE : SWH"SKH"SJNS; 
+/l VECTOR íl Yíl */ 
+VAUX : MSHARE[ , 1 l:M]; 
+1 : VEC(VAUX); 
+I
+/t CALCULA EL ESTIMADOR b n SIN RESTRICCION DE SIMETRIA */ 
+YIJ : YAUX¡ 
+_BIJ : ZEROS(N,M)¡ ~ONI : 1; DO WHILE CONT (: M¡ 
+BIJ[ .,CONT) YIJ[.,CONT]/XBAR; CONT : CONT t 1¡ ~NDD¡ 
+8 : VEC(BIJ)¡ 
+/t CALCULA LA MATRIZ DE COVAR!ANZAS ESTIMADA*/ 
+E=ZEROS(M,M)¡ EAUX= /EROS(T 1M); CONT : 1; 00 WHILE CDNT (: M; 
+iAIJX[. ,:Olllj : l!J[, 1CQtlT] · iSAR•SI.J[. ,Clll] j ,:DNT : •:Gil! t 1; tllOO; 
+,:1 : . 1 
+~ 2 : 1 j 
+t}Q WH ILE C! <= M; : 2 : l j 
+00 WHILE C2 <= ~; E(Cl,C2] :( EAUX[. ,et] ) i t EAUX[. ,e ,) C2=C,flj 
+rnoo ¡ 
+eI e, t 1; urno; CQV EST E/( T·N); 
+t CALCULA LA MATRIZ ~ C " *i 
+IXISAR = INVIXBAR'XBAR)¡ ~ : CQVEST ,i, !XXBAR¡ 
+/* CREA LA MATRIZ il R 1 */ 
+1 : N*M; 
+G, : il*(M-1 )/ 2; ,:=l tRDSi O, ,O i); 
+' = o; ¡ : J; :0111, 1. 
+' 
+,:otm :) : :Aii IA M ,; CQtll A 1; •: OTA=M-7; QO WHILE 1 (: CQIA¡ 
+DQ WHILE CONIA ( : VARIA; 
+J : (K i N) 1 (CONT2 1 i); R[COIJíl, .Jj: 1¡ -:OtlTA ;: Oll TA t 1 ; 
+•:Dtll I CDNT I t 1; 
+:0NT2 CQNT2 1 1: UIOO¡ 
+:oN r A 1; 
+:01m o; 
+i : 1 t I j 
+'.< : X I l j 
+JAR IA -JAR!A 1¡ 
+dH} 
+I'1 ., , 
+11 
+:oT A : 11 • 1; : 01i 11 1; :0tm = o; :}N l3 : 1; jQ '~HILE [ <= M: 
+00 WHILE CDNI] (: (OIA; 
+1 : 1(KICDH12) * ») 1 ! ; qcorn, .Jj , -1¡ :DNl1 (QN11 1 1 i ~QNJ2 CQN12 1 1¡ CQN13 CQNll 1 1; 
+étlOO; 
+X : X t 1 ; 
+r , r , 1 ; 
+,:JNl2 ;); :c,tm i<: urna; 
+!* CALCULA EL ESIJ~ADOR " E I CON RESTRl CCJQN DE SIMETRIA 1/ 
+RPB : ~:is; f:CRAUX : R•CiR 1; :ALL CR01Jl(i.OHO)j :ALL CRQUJ(ERROR(2)) ¡ iRCRA : INV(RCRAUX) ¡ AESTA : ~*R 1 *IRCRAIRPB¡ iRESI : 8 · RESIA; 
+i (~LCijlA lA MAIR!l DE COVARIANlAS CON LA iESTRl CC[ON */ 1 ~EGUNDA APROXI~ACIDN t/ 
+2~!.J : ~ESHAPE(BRESI ,N,~)i m = , HOSl,M,M)¡ ·* WH t 0IHAIJX : i HOSI l 1~); /i tHU l ,:011 r = 1; CJ ~HILE C0Nl \' -; 
+1
+•.:,MEAUX[, 1 CHj: iiJ(,,COtlT] · XBAR 8RIJ(.,COUT]; 
+:jNJ : CQtJT t 1¡ UIGD: 
+·.1 : : : 
+JQ WhILE (1 (: M¡ 
+e; = 
+1 : 
+00 IHILE C~ (: M¡ ,!lE( Cl 1C2j: ,}MEAUX[. 1 .:1] )' i ,JflEAIJX(.p]¡ .: 2 : e2 + 1: 
+é!JDO i 
+: ¡ = e1 , 1 ; :t/00; JMEESI 0ME/(1); 
+·• PRUEBA SOBRE LA SIMETRlA t/ 
+~RIM : M i ( 1 -Nj/D2; NIJME2 : JMEEST ,i, IXXBAI; NUME2 = l&NIJME2iRi ; :ALL CRQIJT(I.OE-30); 0:ALL •:ROLITI.ERROR(?)!; INUME : INV(NUME2); NUME RPS 1iJNUME*RP8; lDcl = ;•1t1T); iOME = :NV(OMEEST); DEND1 : (1 -X * Bl;; DEND2 : iOME .1 • IDET¡ GEIHl3 = orno Ii; DENO = 0END1 1 GEND2 t DENGJ: LAM~DA : PRIM t INUME / DENO)¡ 
+0f 1 : 02; Df2 : PRJM i 02¡ ALPHA : .; ~ S T A T = llP/ F ( D f 1 , D Fi I AL PHA ) j 
+•} U T PU T C• ll ; 
+1 RESULTADOS DE LA ~RUESA DE STMETRJAíl; 
+1 VALQR D/L ESIADISTICQ ·1 LAMBDA; 11 '/AIOR OH ~IJANT!L ''1 fSTAT; [f LAMBDA >= fSTAT¡ 
+.•. ,. ii,::;c
+• ! • , RECHAZA Ho:SJMETR!A 1 ; HSE; 
+f& SE IMPONE STMETRIA ¡/ 
+,: : •)MEEST ,l, TXX8AR; ~CR : Rl[iR 1 ; CALL ~ROIJTi 1.0E·iO); ~ALL ( 20\Jl(ERRORl2)); IRCR : INV( RCI' 1; :!éSTA : ;lp,•&]R[RJRPB; 8GQR : 8 -iESTA¡ :PORR=.•P. 1: ~E52 CPQRR*IRCR*R'C: !HB RES?.¡ 
+HlD!f; 
+~ESPIJE cDIJ( 11 1); :F LAMaDA· , = FSTAT; 
+a SE PRESENTAN LOS RESULTADOS */ 
+1 MATRIZ ESTIMADA OE COVARIANZAS (SIN RESTRICCION)u; 
+.·, , 
+~OVEST[. 1 l:bj;?; : OVEST[ .,S:8]¡?; / iCOVEST[. 13] ¡1;ij 
+/•ttttti##tl##itt*/ 
+1MATRIZ ESTIMADA OE CDVARIANZAS (CON RESTRICClDN DE SIMETRIA)i; 
+• 1 
+•!MEEST[. 1 1:~j¡?¡ 'JIHE_STÍ , 1 5: 8] ;? ; / ilJMEEST[. ,3] ¡?;1j 
+i MATRIZ VAR(bit): C·CR'(RCR') (·l)RC tt¡ 
+... 
+; ! 
+VARB[, 1 i :ii]; VARB[ .,S:3jj VARS[. ,3: 10] ;?; 
+BGORIJ : RESHAPE(BGDR 1N,M); BREST : BG0RIJ[2:N, .] ; 
+i SE IMPONE LA SIMETRIA 1/ 
+3REST : (SREST' i BREST)/i; 
+/* SE COMPLETA LA ~ATRJZ i/ 
+GAMAN: SUMC(SREST); iAMAII : · 1 i G.l.MAII; 3REST : ~REST I GAMAt1•; ;A : SUMC(GAMAN); GA:-1i,:;A¡ GIMAN : GIMANiGA¡ BREST =BREST "GAMAN; 
+·~ATRIZ DE PARAMETROS ESTIMADOS/GAMMA i ,j)íl; 
+.. 
+BREST[.,i:b];?; 
+1LfAN : ~GQRIJ[ 1,. ); llfAN : jlfAN'; ~ARALF : SUMC(ALFANl; ALN : 1 • PARALF; AliAN : AiFANjALN; ~LfA ! : lLFAN¡; 
+-, . 
+'1 
+Uf Al [., 1: 4) i ! ; UfAI[. ,5:Sj;?; ,HfAl[. 19] ¡i¡ 
+f. LSE; 
+END!f ; 
+* 
+PROGRAMA UTIL IZAC••=• PARA 
+ENCC•NTRAR LOS ~VALC•RES DE LC•S PARAM ET RC•S INDEPENDIENTES *DE CADA SE•=TC•R 
+JTITLE MODELO YOUNG-ROMERD(CALYR) iSTITLE J) Sets 
+iiUHUUij 
+i 4CCQIJtHS l 
+1UHi.iHil! 
+;ET S p rnputs WL P,ice of Labor \:IK !·r, ce of Capital At A9ricuiture ,l.,1 Mi ni ng ,13 Di i ~nd refi nery ~4 food beve,ages ,\ s Té Xt Í ie5 and appareai A6 Ch~rnicai Al Meta1ic products .\ 8 Machinery .. 9 Motor ,ehicies A 1 0 Construction ,l t t Ser·1ices .\ 17 Other ro~ nuf aet u r i n ,3 
+i: P1 Industries i oll A,:¡ricui ture .' Mining
+"' 
+:d Oii and refinery H food beverages ,15 Textiies a no appareai ~6 Quimichai A; Metaiic products A8 1'lachinery A9 Moror vehicles ;¡jQ Construnion l 11 S~rv1ce3 l 17 Other manufacturi n,3 i 
+•orid P and tariffs / ~i 4orld pr1ces Tf Tari ffs ¡ 
+HlASt.f',Qjj U IAS(I 1.J) j ALJAS(l 1 U); 
+i11i1l11iiliilliiitiililii 
+1 WORLD PR!CES ~NO !AXES ¡ 
+i1i1iiiitititiiilii1iiiii! 
+' ABLE PTAXll ,1) ílworld prices ano tariffs" 
+fW  " , r  
+.\i  393,840  G.025  
+.., <l  438,617  0.041  
+.\l  :J0.5)6  J.O,Z  
+~4  l)) , 19 5  0.075  
+~5  l 65, 5 14  O. 16 8  
+.:.6  36Ul8  :), 08)  
+.l 7  ~88.691  Q, 1 O 5  
+:.8  153.884  O. 13 1  
+l ·J  ~ 1s, a. 1   i 5 O  
+:.10  .; 0,209  
+:. l 1  4 6 6 .• i 8  
+.\12  4Sl.310  O. 119  
+
+liitiititilitii* 
+1 ~ AC TQR P~ICES* 
+iiitiiiiiiiiiiii 
+iCALARS W1 í 1. O 'JI] 5.3
+i 
+'fl i 1).1 
+i 
+,¡4 / 5. 9 
+~5 / u ! 
+·¡5 1ii, 4 
+¡/) ; 11, a
+! 
+~8 ¡ lO. 8 
+~9 1].6 \ilO i b,9 i ·m 5.6 1112 / 8.0 ! 
+cCA LARS ~ 1 j 09.4 R2 i 17 O,• ! 
+¡
+n l s'o Ru ¡ 4 9 2, 6 ! R5 
+~ºº·º i 
+R6 ?31.3 "-, , , ?09. 4 ~8 ] 1 5, 2
+! 
+R3 i 2)7',4 
+R l O 3; 8. J 
+~ 1I \3]') 
+R12 415. n 
+•íiiiiiiitiiiiii 
+í DE PRECIAT!Otl t 
+iiiiii!iiiliiiii 
+,CALARS rn 1 i 0.111970 i ~02 ; 0,100210¡
+! 
+XD3 i 0,071577 / XD4 0,129339i KnS i o. 122037 i KD6 i ll,0995?6 Í K07 / 0.106182 / rna ! 0.118089j X09 0.115924i KD10 i 0,18588b i rn, 1 Í 0,074130 / KD 12 j 0.108775 j 
+iitiiiitititiii!ii 
+i !NTEREST RAJES i 1tiiiiiiiitii*iiii 
+SCALARS rw Í .20 
+iittiiiitiitiiiiiiii 
+i OTHER PARAMETERS t iiiitiiiiiiiiiiiiiii 
+SCALA~S ,~ / .03 i 
+1 OOMESTJC PRICES i iiiiliiiiiiiiitiiii 
+PARAMETER PO!P,*) Do~estic prices; 
+POI f .ºPDíl): ~TAXil ºPWil)i( 1IPTAII 1,ílTF")l:
+• ' ' ' 1 ' ' ' ' " ' 
+
+í1iiiitti***iiiiitiiitti t TRANSLDG COEFICIENTS l 1itiiiitit¡iitttii1tiiii 
+1 1 :):3 U;~ ro s J.JTTL [ /ADD :': AqUT PUEDEN :0:FR , .. ::,¡·J':: 111 TA DO :': (:rJ l· I A¡.;·i: tJDJC:f jt ) L•F RF:0:tJL lAU0:'· 1, 
+iiii!JiU 
+1 ,~HECK i iiUUiU 
+PARAMETER ELAS(P,*J "Check restrictions 1 ¡ 
+1lA51.Q, uDIRECT") SUM(P:OELAS(P,Q)) ¡ ELAS(P!uCROSSIº) SUMIQ:CROSS1(P,Q)); flAS(P, 11CR05S2;1) SUM(Q,CROSS2(P 1Q)); ELAS1P:ªCRDSS3") SUM(Q,CRD553(P 1Q)); 
+ilAStP,ROSS4 11 ) ilJM(Q,CROm(P ,Q)) i : IASI f•, ;;CRO'.::S5 11 ) SUM!Q,CROSSS(P:Ql) ¡ !LAS!P,ijCRQS56ij) SUM(Q,CROSS6(P,Q)); iL AS(P,iCRDSS7il) SUM(Q 1CROS57(P:Q)! ¡ ELAS[P,iCRQSS8 11 1 SUM(Q,CRD558(P,Q)) i ELAS(P,i~AQSS9il) SUM(Q,CROSS9(P,Q)) ¡ ELAS(P 1¡CRQ5SI0 11 : 5UM(Q:CROSS10(P,Q) ELAS!P,íl•:ROSS11;; : SUM(Q,CRDSS11(P,Q) iLAS(P 1 ¡¡CROSS 12 11 : SUM(Q,CROSS12(P,Q) 
+DISPLA1 1Check Rastrictionsª, ELAS¡ 
+J:iUUUHU'I 
+i CQMSTAtlTS i 
+iUHUiHiH 
+PARAMETER 101 Check AOlj 
+11 W11
+~ O1 : '11 P *(OEl AS:: i; WL 1 1 
+A111 !+•Si (CROSS 11, ;; WL;i 1 Lil !* 
+LOG!Wl) 1CROSS1( 11 '11K 11 1 ;;WL 11 )*LOG(R1)t S1)1111 1 CROSS 1( l / WLi;) *LOG ( PD (11 11 PO 11))))} i Rl*i(OELAS( 11 WX": 1 A1 11 )+.Si(CRQSS1( 11 ~L 11 , 1 WKíl)i lDGIWl)tCR0SS!("WK 11 1 11 '11K 11 )1LDG(R1)+ : IJM ( j I CRQS S1( j / 1/K II) j LOG {Pll ( j, 11 PD 11 ))))) Í 
+~·RGD( .J I PQ( .J 1 ;1~G 1¡ \ H(QELAS( .J 1 11 A1n) •. Si( CROSS 1( 11 \ill ;i ,.J) i 
+:. OG1: '1/ 1!1CAOS 511: "\11 Ki; 1 .J )i LOG[ R1) ) 1 
+,S:i(SIJM(l,CROSS1!l 1,.:)llQG(PD(I,uPD;1)) )) ) ); 
+:ArntEfEA .\01 Check All2; 
+102 : ~2*•(DELAS(ílWL 11 , 1 A2 1 )+.5'(CROSS2( 11 Wlil,ílWLíl)i L0G('l/2)+CRDSS2( 11 Wl 11 : 1 Wl;;)iLDG(R2)t SUM(l,CROS52(l 1 11 Wl 11 1*LDG(PD(I 1 dPD 1 \))))* R2**(DELAS(ílW~;;, 11 ~2 11 lt.5l(CROSS2! 1•L 1,1WXI 
+L0G(W2)+CROSS2( 11 WK 11 1"WKíl)tLOG(R2)t 
+iUMi I ,CROSS2( I ,'1WKi1)iloJG(PO( I, 11 PQº)))) )i PP.OD(J,PD(J,"PDil)iS(DELA5(J,"A2 11 )t.S*(CR05S2(i1WL 11 ,J)* LDG(W2)1Caoss2("WK 11 ,J)*LDG(A2))+ .S*(SIJM(l,CROSS2(1,.J)*LOG(PD(I,uPll~))))) ); 
+PARAMETER .\03 Check AOJ ¡ 
+1311 WL11
+AJ 3 : W3:ii ( DE LAS 1, n)1 L11 1 ' A ) +. 5t (CROS S3( '1\11 L;i / ) * lQG(WJf+CRQSS3("W~ 11 ,ºWL 1 )*LOG(Rl)+ SUM(l,CADS53(1 ,•wt 11 )*LJG(PD(l, 11 PD 11 l )))!* R3H (DEL A5l. "1/K 11, 11 A3 11 ) +, S*(CRDS S3 ! 11 )IL 11 11 WK 11 ¡i
+1 
+LOG(WJ)ICRGS5Ji"WK 1 ,ijWXil)tLQG(R3lt 
+1 
+
+:,:rn !I 'e~ os s3(1' 11 '¡/ K11 !*LOG 1¡, D( I 1 poil) ) ) ) i 
+· ?Roo(.J ,Pli(J 1 ;iPOil)H(DELAS(,J 1 ¡¡A3 11 ) t, S* CROSS3 (;¡ \ill 11 :J)! i.OG W3)tCRDS53('1WK;1 1.J)*LOG(Rl)) t .5* SUM(l,CROS53(1 1J)tLQG(PD(I 1ilpQil)) J) ) ) ; 
+PARAMETER AOh Check AO~; 
+A04 ~4tl(OELAS( 1\IIL".ºA•"Jt,5*(CRD S4( 1Wlil,ij\llldl1 : DG(\114)tCRQSS4\il\l/Ku,awln)*lDG R4ll SUM(l,CRQS54(1 1 "\lll 1 )*LDG\PD(l 1 1 POº)))))I ~ 4H 1, oEL AS l. il w~ il 1 11 H II i ¡ '5 *(eROS s4!'1'ill il 'il 1//X il) i LOG(\114) •CRDSS4\¡¡\IIK",ijWKil)!LOG{R4)t SUM(l 1CROS54(1,1\IIK 0)1LOG(PD(I,"PDº)))J)* PRO J, PO( .J 111P0 11 ) H(DHAS( .J, 11 Ali 11 )t,51 (CRQSS4 l, 11 \1/l 11 ,.J)i LDGi\ll4)tCRDSS4( ;1'n 11 1.J )iLOGlR4))i . .s•ISUM(I,CROSS4(1 1J)tLOG(PO(I ,npoil)) )) ) ); 
+PARAMElER AOS Check AOSj 
+A05 : WS**(DElAS( il 'illn , nAS")t.S*(CRDS35( 11 Wln 1 n\lll 11 )* LOG(\115)+CROSS5(º\I/Kn, 11 \IIL 11 )*LOG(R5)+ SUM( 1,CRDS55(1 1 1\I/Lil)ILDG(PD(l 1¡¡PD")))))i R5**(0ELAS("WK",ºA5U)+,51(CROSS5("WL"1ttwx"1• cilG('/15) tCR0SS5( 11 \IIK 1 ¡ t 11 1a 11 )*LOG(RS)+ SUMI !1CROSS5(1 11WK")tLOG(PD(I 11PD")))))! PROO\.l :P(¡.,,•pod!1i(OELAS(J, 11AS")t.5*(CROSS5("WL",J)i : OG ('il 5) +CROSS 5( ¡¡ '11 K11 1.J)t !_ OG ( R5) ) + . S*( Slrn(l,CROSSS(I,J)iLDG(PD(I/PDn)) )) ! ); 
+) ARAMETER l06 Check AD6; 
+: O6 : 'il 6' i (r., El AS i, 11 '1/l ;i • '1 ~ 6'1 l t . 5l (CROSS 6f. 11 \11 L11 1 '1'il l '1 p 
+~:JG ~W t~R0SS6{ 1¡WK !;:.¡ Wl 1;)iLQG{~6)• ; l)M l. 1:,: RJSs6( ! 1 il 'wl ¡¡ : i I ilG ( PD \ r1 ,¡ ~·o il)) .; j) i ~s ·• ~O ELAS~"WK~, ¡·~s ·1 ~~. s•(CR0S S6t~ wt~! 5i~ij ~t 
+·:G( W6)• 1:RGS~ S~¡1w~ :¡:¡1~iiL0G~RC ) t :. i.l ~11. I 1 eRGss6¡ l l ,¡ 1 X¡¡ :: .• i. nG'· ~ o{1: ;i ; C·ii ) j ; .! :, ~ 
+)RO Df .1 , PD(.J , "PD11 ) ti tr: El AS 1..J, 11 A6'1 ) f , 5t f CR OS S6¡ ;, ·~ Lu ,._..: i 
+•}Gi\/6 1tCRD SS6; '1\:/K;; , .i) i1_1 •, (R 6) ¡, 
+1 sl t. sI.IM '· l :( JGS s6(_I ! .; ) • t OG {PO i, I t !i ~-~I iÍ; ! .~! 
+~ARAMETER A07 Chec~ AD); 
+AOl : 'i/Jli/OELAS(uWLu,i47 u) 1.Si(CRDS 57(ºWL",u~L 1 ll 1 DG(\117\tCROSSl(º'i11 11 ,"WLº)tLOG(Rl}I ' IJM \I I CROSS 7( : , 1 
+'~l 1 
+\ t LDG (p(l , ªpO11) ) ) ) ) a Nlt*fDELASi;¡~Kil, 0JlªJ+.5*(CROSS7fi1WL¡¡, 1WKu¡t LOG(Wl)ICRDSS7\il'IIK¡¡,¡¡~Kil)iLDG(Rl¡+ i IJM ( 1,CRQSS 7i 1, '1WKII i il % ( PD( J , 11 PO") ) ) ) )t PRQO( JI PO( J ' 1
+por.) ti ( QE L'4S\J: ;¡ 0 11 1t. 5i !CRDS~}: ~Wl il ,·li ' 
+'1
+l •}G (~ 7) 1eRos s7( li \11 K 1.J i aLOG (R7) i t 
+.Si(SllM(J,CROSS71J 1.J_i'LDG(PD(J,ilPD;1)))}) ;; 
+~A RAMETER A08 Check A08¡ 
+~ a8 : '1/8 u (oEL AS 1;; ',r/l ¡¡: ¡¡ ~ 8") 1. 5*' eRDS s81 ;¡ \1/l 11 ' 11 1:/l it 1* i.GG W8)+CR0SS8(íl'IIK 11 . "•Lil)ILOGiA8)t SUH J,CROSS8(J,"Wlíl)1LDG(PD(J,i1PD 11 ))¡)Ji R8 1 (GELAS(ílWK", "~8 11 )+.5l(CRQSS8(i1WL 11 ,ºNKd)i LQG W8l1CR0SS8("WK 1 11 \I/ Kil)iLOG(R8)1 SUM I 1CROSS8(1, 1~KiliiLDG(PD(I,"PG •)) )))I 
+i RílD (.J, PD 1: .J 1 ª;·ou:1li (DEL AS (.J , ,; A8 ;i I t. 5i (,:ROS S8i ;¡ lil ;i 1.J) 1 
+, DGi 'ff 8) tCROS 38( "i/K 11 ,.J) iLOGi R8l) 1 .'i •i SIJM\ I 1CROSS8( 11J)iLOGI PO( l, ;1~!) ;1)) j) ) ) ¡ 
+PAiAMEiER A09 Check A09: 
+A09 : ~9*i(DELAS(ijWlij,ªA9ª)1,5i([R05S9( 11 Wl 11 ,nWLª)i l0G(W9)tCROSS9{ 11 Wl 11 ,iWL 11 )iLGG\R9Jt 'i1Jlli_l ,CROSS9( I, "'lll 11)iLGG(PO( I, 11P0 11 ! ) ) ) / 1 R9it(DELAS( 11 WK" 1 11 A9ª)+.Si(CROSS9( 11 Wln,nwK•¡i l0G(li9JtCROSS9( 11 1iK 11 1 il1iK 11 )iL0G(R9)t '.IJM ( l I CROSS 91.1,8WK 11 ) *L OG (PO (11 11 PD 11))))) • 
+PROO ( J , PD (.J InPO 1
+) H (DE LAS i.J: nA9n) t . 5i (CROSS 9{;i ill 11, .J) t 
+LOGiW9} tCROSS9\ 11 )1X 11 ,.J)*LOG(R9),: t ,5l( ~ 11~(1 1CROSS9(l 1.J)iLOG(PD(l/PD 11 )))}) } ; 
+PA2AMET ER 4010 Check A010: 
+AO1O: 1i 1OH (OEl AS (11 Wl ;\ ;; A1O11 ) t . 5i ( CP. 05 S1O( 1 
+i/ l ;¡ 1 ;¡ Wl ;; )l 
+lOG(W10ltCR0551"WK 8 1 11 WLª)ILOG(R10)t iUM( l,CROSS10(! 1 nWLª\tLOG(Pll\1 1 11 P8 11 ))))!* R1Qit:QE LA S(~wx", 11 A1Dª)+.5i (CRQS51D [º lil 11 , 11 i/K 11 J* l0G(W10)tCR OSS IO(ªWK 11 , 11 ilK")*lGG(R10 )1 
+11 WK11
+SIJ M( l I CROS SIO( l 1 ) i l 0G( P!l ( I , ;; PO n) ) ) } ) i PRQD( ,J i·DI .u~o 11 )H(OElAS/..J1 11 AIOn) l .5*ICR0SS 10( 11 \il 11 ,J) * 
+1 JI 
+tDG(WIO)tCROSSi0( 1WX;¡,J )*LOG(RI0 ))1 .Si(SIJM(l,CROSSIOl,1 1.J)*L0'3(PD(f 1'1P0'1))))) ) ; 
+?ARAMfTfR A011 Check 1011; 
+lo 11: il 11H I oEl AS/. ;¡ '¡/ l il I R,11 1n:: t • 5i ( eR,J ss 111 '1Wl '1 ' ¡¡ \i' li). l0G(W1\JtCROS5111 i1WX 11 , 11Wl1lttOGiR11)+ :IJM 1. [ 1 C?.G:; SIli, l I nwl 11) i l OG 1,Pll i 11 11 PO '1)))) )i ~1:ii1DELAS(ªWK 11 ,ªA 11 1 ¡ +.Si(CROSS11(nlilª, 1 WX 1 )* LOG(i/1 l)•CR05S11(uWl 11 1 "WX 11 )tLQGIR11)t :,IJM ( I 1,: ROS S11( l ¡'1WK ;¡) i l OG ( PO ( 1, 11 PD 11))) ) ) t 
+0 ROD( _: JO\ .J ªPO" ·1i i (DEL AS(.J , ;¡ .111 11 ) t . 5t ( CRQ3S11 (11 i/l 11 , .J )i
+1 
+LDG(lil 1)tCROSS11( 11WKn,J)iLOG(R11))t .Si( SUN( I,CROSSllll,J)*lDG\PO(l,nPDn!) )! ! ); 
+' ARAME!ER 1012 Check A0\2; 
+~O i 2: :.112 H : 
+DEL AS (nill 1
+1 11 ,11 2n) t. 5i (CROSS 12 1.;; \i/l ;i 1 1 
+Wl ;¡) i 
+; !JG i'!/ l ,) t CROSS 12 (11 ·~K 11 , ;1,~l '1) i l OG IRl 2i t '1M(l ,C~OSS12( I,"Wl 1)*LQG(PD\I ,ilPD"i);!I* 
+R:2u r DEL A51,¡ i/X li 1 '1,11 2¡¡ ) 1 • si (eRos s12: il wl. 1Í ' 11 ·n ;¡ ) t 11
+: OG!w1,) 1eRoss121,¡¡,n ¡¡ ' ·n 11) t lIJG' P. 1?) 1 
+'JM(l,CR0SS121 I 1 ijWl 1 )*LOG(PD\I 1 11 P0 1 )))J)* ,:, ~ 00 (.J , PD (J , 11 PO 11) i 1(DE l A51..J , ;; A12;¡ ) t . 5:i (CROSS 12( "\11 l ;¡ , .J ) i lGG(W12 +CROSS12\nWxil,J)*lDG(R12l)1 .5*(5UM l,CRDS512(1 1J)!LDG(PD{l 1"PDu¡) )) ) ) ; 
+'iRAMETER AI E Check AIE; 
+PARANETER A2E Check A2E; 
+PARAMETER  AJE  
+PARAMETfR  A4E  
+~ARAMETER  ASE  
+PARAME TER  .\6E  
+JJAAMETER  AJE  
+~ARAMETER  .\8E  
+PA~ANETER  AiE  
+~AR~METER  AlOE  
+PARAME ~ER  rnE  
+
+Check 
+Check 
+C~eck 
+ChHk 
+~he~k 
+A3E; 
+A4f ; 
+ASE; 
+A6E; 
+AJE¡ 
+Ch¿ck A8E¡ 
+Check A9E¡ 
+Check AIOE¡ 
+1:h¿ck A1H; 
+lllE : LOG( PD( 1AI 11 1 1 PD 1 ) / A011); PARAMETER A12E Ch.;Ck Ala; 
+DTSPLAY JD PON EJITS : " : A I E : A 2E , A3 E : A 4E , AS E , A 5 E , AI EI A8~: A 9 E , A I OEI A11 E , l l2E: 
+liitiiii•ttiiitlilillitttiitittiiiltiititttitit•ttttittttttttiitttltiltt 
+tllO 
+liiittiiiiiiiiiiititittttitittiiittiiiiittittittiiiitittttittiittttttiti 
+(APENDICE #3) 
+11 RESULTAD05 11 
+~:JKNTA #1 (AG) 
+RESULTADOS DE LA PRUEBA DK SIHKTRIA 
+VALDP DEL iSTADISTICO : o. 00(10002066 VALOR DKL CUANTIL : l. 5500000000 
+SE ACEPTA He: SIMETRIA 
+ttrr••r••r••ttrrrtitritttti*rrrttrJrttrttrtrr 
+MATRIZ ESTIMADA DE COVARIANZAS ISIN RESTRICCICNl 
+J.OOOOC97C33 -C.00003253C8 O.C000093422 G.0000000658 Q.0000007572 -D.0000325308 0.0001384749 -D.0000433563 -0 .000D003050 -0.0000035126 U.0000093422 -0.0000433563 0.0000139197 O.OOOOCOC979 0.G000011276 0.0~000JD658 -0.0000003050 0.0000000979 o.ooooooooc~ 0.0000000019 8.0000007572 ·G.0000035126 D.0000011276 C.C000000079 0.0000000913 D.0 J0D037~0 J ·U.00DD1"2549 D.D00005S430 0.0000000390 D.0000004490 0.U000313~ ·0.0000014532 O.OOOC004665 0.0000000033 0.0000000378 D.000003~144 · 0.~000139903 0.0000044917 0. DDOOOD0316 G.0000003639 O.OOOOOG510~ ·0 .0000023681 0.0000007603 0.0000000053 0.0000000616 O.DD00C396Cl -0.0000183978 G.D000059067 0.00000~D415 G.0000004785 
+0.0003?:jO 0.0000003132 0.0000030144 0.0000005102 0.0000039641 ·D.D~00172649 •G.OOOD014532 ·0.0000139903 -o.ooooo:3681 ·0.00001B3978 J.00UOC55430 C.0000004665 0.0000044917 0.0000007603 O.OOD0059067 ,; .t10 D0009j ~000000033  f:000000316 o.~ oooonoo53 0.0000000415 J. 0000004490 Q.0000000378 0.0000003639 O.D0D0000616 O.000U4785 !U%OO:~n (:. OODOflí:1858 l.'.1000017887 O.OOOOD03028 O. ~000023521 OG00001á5B 0.000000015íi 0.0000001505 0.0000000155 C. 0000001980 C·.'.JODJíW 0.000000;505 0.C000014494  '.iUOO!W' 453 Q. jfJ00019060 O.OCCCGC3023 o.ooocooom 0.0000002453 O.OOC0000415 G.0000003226 UJ(:u&23~~1 l. 0()()0~019dl [;.[:[;00019060 O.O03: ~é S,j0025065 
+MATRIZ KSTIHADA DE COVARIANZAS !~ON RKSTRICCION DE SIMKTRIA) 
+: .:0523530jÜ -~ .3~22255000 ·0.1361019500 0.5990886300 0.3356781000 ·j.3622 255000 56 .0399760000 0.9529338800 -4.1559549000 ·2.3300135000 -r .13E1Dl9~~o ~.9529338800 ~.0210809680 ·D.0668430540 ·.03828087~0 0.5990836iCO -4.1559549000 -0.0668430640 2979600500 0.1668357400 [:. 3~ 56, g1'. l: u • 2 . 3 3 O O 13 5(, O O • O .~ 3 8 2 8 O 8 7 9 O U .16 6 8 3 5" 4f: f; O.Oii:J 5 4 8 li 56G ·0. 15~812~~~0 1.é4531l400C C.0161~12340 -50544960 -e.0419411660 ·0.159~9985 00 ¡ .1363838000 G.0180813500 ·D.0792201360 ·D.0444099270 ·D.3¿17952:0C ~.2339956000 0.0367349850 -0.1599411800 ·0.G896780670 ·O. J: 08655340 0.1448323300 0.0023559680 ·0.D103816420 ·0.0058139321 ·D.66&9116500 4.64144070 00 0.0757665470 -0.l3248723DO ·0.1863137600 
+·C .15G~J~7~D0 ·D.15939985DD ·D.32J795210D ·O.U20865534D ·0.6689116500 l .04531~4000 l.1063838000 2.2339956000 .1448323300 ~.6414407000 J. 01613i234~ D.Ol8C81350D C.0367349853 D.DD23559680 G.J757665470 
+·0.0150544960 ·O.C792201360 ·0.!5994118CD -0.01G38l642D -33248723DC -~.D4l9Cllb6D ·0.04J4D9921D ·0.a896780§70 ·O.~D5&13~3~1 · 0.18631276)0 0.0216501360 0.0206675440 0405234530 C.0024021895 C.0817419730 ~. G2D66'i54H '.: .0212998690 :), j426798150 e. 002?061363 0.0884861390 G.0405::34530 O.04267981 SG 0.0860742710 O. 0055622:13 o. 1786433500 (:. Ol·~40'.:HY5 8. Q0:"7DE1363 O. (1055622213 l' .:: (J G 3 8 2 2í:'. :1 .0 115828920 0.0837419730 O.G88486i390 O. 1736433500 0.0115828920 .3 713476300 
+HATRIZ DE PARAHETROS ESTJHACOS !BETA 1,j¡ 
+o. 1198987800 ·0.0338880170 ·0.1310981900 ·0.0076666159 ·.0052227200 ·G.~338880'.70 D.069014830D D.38255515DO -0.03l50:5fi3D 0.0214311830 ·0 .1310981900 u.3825551500 0.9?03064800 ·0.0?89614540 O.G043578338 -t.007666615~ ·031502563G -Q.0789614540 0.0105090660 0.J00285155i ·0 .0052227200 0.0244317830 0.0043578338 0.0002851551 0.00133369]3 ·0.0321936050 ·0.0880410290 ·l.3743719600 D.G33863l29D 0.027~982250 ·0.0955789940 ·0.08646018DO 1.0413088000 ·0.0557597920 D.0481242220 O.O4.S•l5524 2561990900 l.57838310CO ·0.1395114800 0.090~825710 ·0.0079731026 ·G.1171392500 ·l .4416089000 O. 1063605000 ·0.0941848030 D.0813322280 ·0.2629693300 -0455957300 O.D309992370 -0.0022082386 o. 1029356800 ·0.1122004800 ·l.9052751000 o. 1313848200 ·0.0949977200 
+·D.03~1936050 ·D.D95579994G 0.hC94545524 ·O.DD79731D26 ~.D813322~90 O.lD293S6i~( ·0.08804J039G ·0864601800 0.2561990900 ·0.1171392500 ·2629693300 ·0.1122C04800 ·0.314371960[! 1.04:308800(1 1.5733831000 ·l .44160890(!0 .¡¡ .0455957200 -t.9052751 ¡¡{;[: 0.0338631290 -0 .0557597920 ·O. 1395114800 O. 1063605000 0309992370 0.1313848200 C.D2º?982250 C48124222C O.D2825710 ·0.094184BD3C ·D.0022082386 ·D.094997::oG 9.325&628~00 ·0.353200730C -~.4111212900 0.~7177911CO G. 073642964C C. 525982380D ·C. 353~PD73DO ·D.567341GO ·D.24518DDC 0.3686D0~10C ·G.54231014JC.451075~~~~ ·0.4111~1290D ·0.2C845180CO 1.~963262000 ·0.8413748800 ·D.8693083800 ·0.7608777300 t.2"J 1"~ll C.3686DD~100 ·0.8~13748800 0. 2G~03~8100 1.2638192008 C.~896880~0f 0.0736429540 ·0.S4~31Cl400 ·D.26930838CO l .2638192000 ·C. HOC081U90U 1.~7667930CO G.52598238~0 0.451D7546DO ·J.16081773DC 0.28968RC90D ~.C766J9300D ~.295605~)t~ 
+?ARAMI!'l'ROS KS'l'HiADOS \:.1FA i i PARAHRTRO KST. ª;,LFA CEROª: :. 98l00G0DOC 
+(i.8112930500 '.;,4737268400 J. 251637750(; ·0 .1 l856!CO 0.034075[1)90 ·0.348i670700 ·O. 719890'.'i'.:t: 0.6997305':00 ·.3622666600 ·O. 03U9077540  306854590(1 
+CUENTA ª2 (MI) RESULTADOS DK LA PRUKBA DH SIMKTRIA 
+UALOR DEL ESTADISTICO : VALOR DKL CUANTIL : 
+SE ACEPTA Ho : SIMETRIA 
+MATRIZ ESTIMADA DE COVARIANZAS 
+0.UOOOOOOOll 
+l. 5500000000 
+!SIN RESTRICCION) 
+!CON RKSTRICCIOH DK SIMKTRIA! 
+·0.0000003554 -0.0000029632 0.0000000006 0.0000016134 0.0000000550 0.0000000003 0.0000000066 C.0000002007 0.0000001967 C.O01!90 
+-o. 0000072350 ·0.0000602656 e. 0000000124 c.~00032s111 O. OOOOOlll 90 0.0000000055 G.OOOCQOJ341 ~.0000040815 0.00000400Cl O.Q00022762C 
+·0.3264244600 O.2827318400 -C.G212110810 C.0307406160 0.028652í400 O. 02'.l8695200 O. 0009í69660 G. O6l78540 0.0081855246 0.0390551210 
+·0.4516229600 e. 392228floo 
+. -o. 0295005920 0.0417590440 G.0390551210 
+0.0000076000 0.0000138557 -0.0000000037 ·O. 00DJ431 l ·.0000003554 ·G.O006 -0.0000000428 ·U. OOOO(ll 2972 ·0 .0000012712 ·0.0000072350 
+·0000000016 ·0.0000000146 ii.OOOOOCOOOO ~.0000000079 0.0000000003 í:.Ot:OOOOOOOO.OOOOOOOO ~.000(;000010 0.0OCOOOOlO '.! OO~O5 
+0.0000138557 Q.0001648617 ·0.0000000331 -0.0000868879 ·0.0000029632 -o. 0000000146 ·0.0000003550 -0.000010&06~ ·0.0000105911 -0.0000602656 
+-0.0000000428 ·0000003550 0.0000000001 O.O0001934 0.0000000066 O.t:OOOOOno 0000000008 0.0000000241 J.iiOOC000236 0.0000001341 
+t~ATRI Z ESTIMADA DK COVARIANZAS 
+},;670532000 -3.27~0342000 '.i.2 460102&00 · G.3488990400 ·3:'.64244600
+·,·0.:759689900 ·(1• 0112324190 ·J .?1847710 ·'.'.19412Y&140 ·4516229600 
+·U.2759689900 J.2198204000 -0. 0180328450 U254846820 0.0238695200 
+·3. 27203420(;0 2.8451761000 ·O. 2138,44%00 e.3016762100 G.282731840() 2398204000 0,0j97490535 o.061n542s5o D.0815945860 0.3922~83100 
+·0.0112324190 J .0097490535 -0007334545 0.0010472089 0009769660 
+-0.0000000037 ·0.0000000331 C.0000000000 0.0000000179 0.G000000006 ~.oeoooooooo j,0000000001 r:-. '.!000000022 O. 0000000022 0.0000000124 
+·O. 0000012972 ·0.00(:0108065 0.0000000022 '.:. '.)~00058845 0.0000002007 '.;. OOOOOOCOl O '..OOC0000241 0.0000007319 C. GOOOU0717 3 (. O0040815 
+·0.0000104311 -0.0000868879 0.0000000179 0.00il04í3140 O.GOOOOJ6134 0.0000000079 G.0000001934 0.0000058845 0.0000057672 O.i,00032817J 
+-0.00012712 ·0.0000105911 0.0000000022 0.0000057672 0.0000001967 0,(!0000(!0D 0.0000000236 O. 0000007173 0.0000007030 '.l. 0000040001 
+t. 2460102800 -~. 2138449600 Olb0714650 ·0.0227163260 ·li.Od2710810 ·0.0180328450 ·G.0()07334545 · 050451016 -(!. 0061412126 ·0.0295005920 
+·0.0771847710 0.0610542550 ·d050451016 ~.0070819313 D.0066378540 -Q.3488990400 0.3016762100 -0.0~27168260 C.0333021780 0.03074ilh160.0254846820 0010472089 Q.0070819313 0.008787515i 0.0417590440 
+-0.0941298140 0.0815945860 -o. 0061412126 0.0087875157 0.0081855246 
+U20¿3i8o80 &.0008230599 llJ8230:99 G. 00336143 Q.0056653636 C.0002298721 U.0B9468B3 O. 0002814262 C.0330847430 D.OG13434149 
+0.0056653636 0. 0002298721 il.0016008615 0.0019332469 C.0092803272 
+G.0068946883 O.Oii02814'.:6: 0.0019332469 o. 0023697365 0.0112807430 
+0.0330847430 0013434249 Q,0092803272 0.0112807430 0.0544650100 
+MATRIZ ;;¡: PARAHKTROS ESTIHADOS 
+0.266336d800 0.0323300630 U3:.33f!Cb3l' 0.0015654432 -0.0539252170 0.0780810760 •[. 2935523900 G.1968923000 
+-0.37430050 ·0.0572802900 
+¡, . O:. 39 l 969 8 O -23i66854 0.0874646830 -0.2628604900 ·Ul939091 0J l' . 19199005[10 G.U225285380 ·0. 0056070062 . ( .. ~3'.' 01';9620 -0 .1985179900 -0.0098903180 8.2550753800 
+u. 0::3~196980 0.08'i4646830 ·G.2316685400 ·0.2628604900 -¡U3:'.61 ~30 O.1453129200 U7047431CO O. 4113594000 
+1 
+0797225::30 ·0.0144194970 
+·0.3310569800 ·0.0342909170 
++ 0342%917(: -o. 7741752000 
+-v. 65?7762400 ·O .7174397700 
+: . 48o4::,60¡ 6525591300 
+< .Ol556270 ·O. 5313:l0320G 
+(: .4f! l 6l! 257 O O 1. 0478200000 
+-~• 
+?ARA~KTROS ESTIMADOS !ALFA i) 
+U 483441 ill 
+0.5168250400 
+·U:00156730 
+•IJ. 5016699500 
+·U . 2047695200 
+-H617448500 
+·i' . 2935361i l 
+u. S156224400 
+·0.0883:980b0 
+-O.i847663300 
+j, 3í40411il!O 
+(BETA i, J¡ 
+-0.0539252170 0.0780810760 O.1272673500 -0.1232074900 
+0.0251877530 
+·0.0326001130 0.1453129200 0.2442965300 -0.2040692100  l087217900 -0.3150653900 
+·0.0193909700 1919900500  2442965300 0.4361394800 ·C.1571631500 -0.6577762400 ·O. 7i74397700 
+l.4654338000 
+·1.2423361000 l. 1332083000 -0.6769619800 
+·0.2935523900  -0.0187430050  
+O. 1968923(;fi0  -o. 05Íi802900  
+-o. 1232074900  0.0251877530  
+·0.3169741000  0.1168969200  
+0.1168969200  -0.0080756206  
+O. 47C4743ll  ·0.0797225230  
+0.4113594000  -C.0244194970  
+O.4361394800  -0.1571631500  
+·0.5374074200  O.1G53003800  
+O. 42'l0Sí26(l 0'.:30071230  
+·O. 7877076700  0.0750119110  
+O.~5'.'8538fi  ·0.037077~620  ·O.OG98¼0~1h i:  
+-0.0056070062  -o .l 985179900  0.2550753800  
+-o. 204069 21(l(:  e.1081211900  ·O.HS06 S}~t,(:  
+·O. 5374074200  0.4270872600  ·O. 7877076700  
+1053D03800  D230071230  0.075G1Jq11t:  
+O. 4880743600  ·0.0169556270  0.4016025700  
+0.65255~1800  ·0.5313303200  l. 04782 0[~ ¡:~  
+·! .W3361000  l.1332083000  -0.67696198  
+0.448208950 (;  -u.3059481300  0.5?8696C V  
+·0.3059481300  -1.2142685000  C.6120740C  
+G.5786964::líf:  6120740000  ·l. l80654g;;f;[;  
+PARAMKTRO RST "ALFA CERO":  3. 7850000000  
+
+CUKNTA #,3 (PKl RESULTADOS DK LA PRUKBA DR SIUKTRIA 
+VALOR DEL KSTADISTICD : VALOR DKL CUANTIL : 
+SE ACEPTA Ho : SIHKTRIA 
+HATRIZ ESTIMADA DE COVARIANZAS 
+Q.0000000123 
+1. 5500000000 
+ISIN RESTRICCIONI 
+0.0001604814 -o. 0005188835 0.0000056823 D.0002676022 0000000170 0. 0000005,069 O. 0000084440 0000071035 0.0000667464 
+0.0000000170 -Q.0000001527 0.0000000022 0.0000001013 0.0000000000 0.0000000002 O.:lOOC000032 0000000027 G.000053 -0.0005188835 0.0038706452 -0.0000531389 -0.0025025983 
+-0.0000001527 
+-o. ooooorn 97 -0.0000789792 -0.0000664302 -0.0006241948 
+o.~oooooso69 -0.0000047497 0.00000006"3 0.0000031679 000000000¿ 0000000060 ::.0000001000 0.0000000841 0.0000007901 
+Q.0766511!50 ·u.451619150C D.0331566060 -0.3085766000 -0.0053226461 0.0'127136690 ·0.0057256936 ·0050196110 ·D.0368564110 
+·0053226461 J.0321288400 ·0.03764569 
+G.0233069250 •  000407 41'59 -0.53126907  0004459189 l~D00362372B 0.0029150885 -0.4516191500 2.6948098000 ·O. 19849742DO l. 8791554000 o. 03212884 o.a ·0.4386497600 O. 0351728480 0.J309260230 O. 227137930(! 
+G.C727136690 ·0.4386497600 0.0327426790 -0. 3216 73Hlli0 ·0.0053126907 
+[,. 013395971 O -0.0061039223 ·0.0055722616 ·0.0399232890 
+0.0000056823 ·0.0000531389 0.0000007524 G.0000354335 0.0000000022 0000000673 0.0000011183 0000009406 0.0000088378 
+O. 0000084440 -~.0000789792 O.00Clll83 0.0000526653 0.0000000032 0.0000001000 r:.0000016621 0.0000013980 0{i[i0l31357 0.0002676022 -0.~025025983 G.0000354335 00166876:9 C.COOOOOll 0.0000031679 0.0000526653 O. OOOOW964 0004162196 
+O. 00000710}5 ·0.0000664302 0.0000009406 0.0000442964  000001:0(:27 C.0000000841 o. 0oooomso G. 00000117 58 U.OOil0110483 
+iCGN RKSTRICCION DK SIMKTRIA) 
+0.0331566060 ·O. 1984974200  0147471600 ·0.1417195400 
+-0 .L\023764569 
+0. 27426790 ·C.Ofl26645990 ·0.0023976834 -o. (1173319640 
+-0.0057256936 
+0.0351728480 ·0.0026645990 0.0276538200 0.0004459189 ·0.0061039223 G.0005378376 0.0004896489 0.0035675054 -0.30857hbfl(ií: 1.8791554000 -0 .1417 f Ot: 1.4385606000 023'.;069250 -(1.3216734000  027653920[: 0.0255281320 
+J.1828271301"' 
+·0.0050196110 0.030926023(: ·0.0023976834 0.0255281321) 0.0003623729 -0.00557;;2616 C.0004896489 0.0005538103 0.0033049045 
+O. 0000667464 -0.0006241948 D.0000088378 0.0004162196 0.0000000253 J.0000007901 0.0000131357 0.0000110483 0.0001038127 
+-o .0368564110 e. m 1379300 ·0.0173319640 Q.1828271300 U.0029150885 -0399232890 0.0035675054 0.0033049045 0.0239082730 
+MATRIZ ESTIMADA DK COVARIANZAS 
+tlATRIZ DE PARAHETROS ESTHIADOS 
+C.2185968400 ·0262028310 ·li. D2b283l O 1923450400 0.0038813~16 0.0539019930 ·0.03139J'i29(' -t,.OH':311970 0.0180250680 ·0.?576374500 ·2093$49500 ·U.5555767500 0.1731588700 2906649300 Ll.0087?17003 ·.0988103120 ·0.1362063300 G.8628354700 ·O. 019247988é C.0832111060 
+·O. 209:i849500 o. 1731598700 ·0. 555h~50C [:. 2906&49300 0.4148616100 0.1:43928000 C.9918664900 ·0.1418482000 ·O .1760297300 ·2. 5575380000 ·U2': 040200(J ll . 44324~8000 
+0.4432498000 ~.0680904000 
+·(:. \191632DOO ·1.8931157000 1. 0550326000 3.72114l.4000 : .3821843000 ·2.:2819630l0 
+,ARAMKTROS KSTIMADOS :ALFA l) 
+'. . ) 6 e 9ii 5& [: [1 r 0. 6729404000 0.1836S2'i30D U449291ii00 <. 19560j60: ·2. L36937000 1. 5'.'.6132':00(: ·G.4163356200 :: .3646382000 ·0.0241539500 
+t. RETA i:] j 
+O. 0038813416 
+0539019930 
+0106705820 ·G.0695037260 ·0.2378469200 4}48616100 
+U.1243928000 
+-(i .1720670800 0.2884504900 ·0.4167410800 
+0.0087717003 
+·(i.0988103120 
+·0.1720670800 ·0.0612440210 3.2030033000 ·1191632000 ·1 .8931157000 i. 8632359000 -~. S813280000 ¿. 15C':174DOO 
+·Ú. 0313917290 -o. 0447311970 ·O .06951)37260 ·O. 0572'.'.27070 0.2370682800 0.991866490{1 
+-.1418482000 
+·0612440210 ·0.3953875900 ·O. 4276056000 
+·0.1362063300 O. 86283~470(: 0.2884504900 ·0.3953875900 ·3.2806624000 1. 05503~6(1(10 3. ~211414000 ·4. 881328(:(:(1(: 7.1198013000 -4. 3536~7nr:r1r: 
+PARAMKTRO &ST. 
+0.0180250680 
+·0.?576374500 
+·0.2378469200 0.2370682800 0.9723011900 ·0.1760297300 · 2. 5575380000 3.2030033000 ·3.2806624000 2.5793167000 
+·0.0192479880 0,0832111060 
+·0.4167410800 ·0.4276056000 2. 5793167000 
+'.:.3821843000 
+·2.2281963000 2.1507174000 ·4. 3536770000 0.2500384300 
+"ALFA C&ROrt: 2.3740000000 
+CUENTA #4 (AL) RESULTADOS DE LA PRUEBA DK SIMBTRIA 
+VALOR DEL ESTADISTICD  :  0.0000000097  
+VALOR DKL CUANTIL  :  l.55COOOOOOO  
+SE ACEPTA  Ho  : SIMRTRIA  
+
+ttrrttxttttritttittrri~*tttttxtrrrttxrKrrrixr 
+MATRIZ ESTIMADA DE COVARIA!IZAS 
+O.G000000286 ·O. D0(:0007106 G.0000003784 0.0000000002 O.GOOC000030 U000001510 Q.0000000056 l;, fiOCG00007'; 0.0000000123 U000001073 
+Q.0 000 01 0256 · .0000254761 ;; .00 00135669 ~. dOQ006 4 J.() 000001073 l;. (' 00()054134 G.~000001 995 D.8 0000 G2 755 O. Ui000415 '.:. (: (; 0003848~ 
+· '.i .G7&C530 
+:.~ 543505900 '.: .i4Cms6oo -D.~4il246990 O.tn91383420 .') 3588 14190 U058561533 : .iOS3543425 0.'.iom15rn J.~254750580 
+·O.·, G46200600 '.J .3322718800 0.·,37;3f3'.:D0 ·1.~ 546064110 ~. ~:snmo i .': ~81015280 
+0.0000021427 -0.0000086585 0.0000036156 0.0000000017 0.0000000286 0.0000014426 0.0000000528 0.0000000734 0.00 00001175 0.0000010256 
+0.0000014426 -0.0000358380 0.0000190851 0.0000000090 0.0000001510 0.0000076153 O.OOC0002806 0.00 00003875 0.0000006210 0.0000054134 -0.0000086585 0.000i705253 -0 .0000898158 -0 .0000000424 -0.0000007106 -0 .0000358380 -0 .0000013203 -0.0000018236 -0 .0000029225 -o .0000254761 
+0.0000000528 -0.000001320'.l 0.0000007033 0.0000000003 0.0000000056 0.0000002806 0.0000000103 0.0000000143 O.OOOC000229 0.0000001995 
+MATRIZ ESTIMADA DK COVARIANZAS 
+0.322G7i8400 -1. 0436831000 -0.5166125100.1685510400 -0.0'184750130 -0.1475965 300 -0.0239 287::30 -0.0220102760 -0.0 2'.:8990920 -0.10462006 00 
+-0.1475965300 0.47790613 CO O.Z63331'.:200 -0. 0769923460 0.0358814190 0.0692094840 -1.0436831000 3.3849186000 1. 8670751 !)00 -0 .5465476600 o. ~543505900 0.4779061300 0.0773607890 0.0713290120 O. 0741E99820 O. 3382718800 
+-0.0239:8í230 0.0713607890 0.0434003080 -0.0125691230 0.0058561533 C.0105155770 
+¡SIN RKSTRICCICll ! 
+0.0000036156 -0.0000898158 0.0000478302 0.0000000226 0.0000003784 O.OOOOB0851 0.0000007033 0.0000009í12 0.0000015564 0.0000135669 
+0.0000000734 -0.0000018236 0.0 000009712 0.0000000005 o.ocoooooon 0.00000038 75 0.0000000143 0.0000000197 0.0000000316 U000002755 
+0.0CCCCCUH7 -0. 0D0l·~4'.' 4 O. OOOG00e225 
+o. Q(l(;O(:[:¡;f '.=O O.OC02 O.llOíiG t:U0% O.OOOOO GC00 3 
+o. on,.:~fií,;·: r:ri: 
+O.OCC GC G%0; 
+O. (i0[;() t:~:·· ~J64 
+O.OOGO CO ll~S · O. O:0(; ~_9~: :. O.CCG~:': ~:;~ 
+C.L'.;'.::,:,;->;." 
+o.uo ri~~c:_ ;_ -~:: 
+0. GfiL:; ·~·'.·~~ ~ ~ 
+O. 000t'..:C~~ 
+O. 6(;f¡;;(,;'::~'. :
+, ~ ~  CC t~~· ~ ._:6 ~; .(::;~ ;·:; ~ ~ : 3 
+!CDN RKSTRICCIO:l GK SI'.1E~E;. , 
+-0.576672510(: 1.8670761000 1.03651350(:U -0 .3022294800 0.1406998600 0.2633112200 0.0434003080 o. 0392746290 0.041026105[; C.1877363200 
+
+-0.02:0102760 O. 0713290l 20 O.G392746290 -0 .011494544C 0.0053543425 Cl0231529G 
+0. ,68~:·, ,:< •G. 54:; 3-: ' ~é,< .. (i. ~ ~:-·~: ·:. s'1 ~ : .. f; 
+0.34i S~.~··~J ·0 .041}~·~:. -:~ :· -O.J76j~ 2~ ~:;.~ -D .l:L~S~:~~'. ·Ú, }11.¡1}:Jc!; -o .() ~ l ~ ~ ~:. ::.. ¡ -O . 0S4tC;~:: ~ 
+-0.!<~ ~ ~; ·S_l' 0.0?4 ~3~ .:~~~­
+(l . D41~:~ ~ -. ~ í: 
+-e.:11~~~ ; :~_:.~! 
+• . o
+e. f!f::::: 
+~
+0.CL ~~-... 
+0.0105155770 0.0019495938 0.0015891990 0.0016698741 0.0078346591 0.0102315290 0.0015891990 0.0015183917 0.0015737653 0.0071561986 0.0106017980 0.0016698741 0.0015737653 0.0016417678 0.0074347309 0.0481015280 0.0078346591 0.0071561986 0.0074347309 0.0343239300 
+MATRIZ DK PARAMETROS ESTIHADOS 
+0.0676897040 ·O. 0081147351 ·0.0081i47351 0.0393313610 ·0.0311164360 ·0.0117805840 ·0.0038155114 ·0.0315844200 ·0.004864041:l 0,0067983376 ·0.~401617020 -0.0433065650 0.0160311290 ·0.1950447000 -o. 0147150850 O.1647237600 0.00167763 ·0.0968224590 0.0022954976 0.0348611300 0.0150844050 0.1409388800 
+·0.0401617020 0.0160311290 ·0.0433065650 ·0.1950447000 o.54m;~c 0.1129835600 ·0.0486619220 ·0.0643555330 0.0124371680 O.0283314540 O. 0821338870 ·0.1005962700 
+·O. l0059627(1D -0.917773(1800 ·0.2720266800 ·O. 9440%7700 0. 2258501500 0.9132964200 -0.0063975120 0.0714976120 0.165::3910 1. 079?26200(1 
+PARAKKTROS KSTIKADOS (ALFA i) 
+0.34157529(1{¡ 0.2691020200 0.2379614600 -0 .0874374070 -0. 0013390185 ·0.i125241500 ·0.381045740() 
+0.4021119400 -0.2848595600 0.4294045500 0.1870506300 
+(BET~ i,j) 
+·0.0311164360 ·0 .0117805840 0.0494287910 0.0181336250 ·0.0005536259 0.0254853540 0.1129835600 -0.0445949420 0.0269462310 ·0.0276300290 ·0.1173019400 
+-0.0147150850 0.1647237600 -0.044594~420 ·0.1620624800 O. B2021060 ·0.2720266800 -o. 9440967700 1.6089145000 ·l.2289253000 1.4640893000 ·0 .5995084100 
+·0.0038155114 ·0.0315844200 0.0181336250 0. 0174248670 ·0.0077322805 ·0 .0486619220 -0.0643555330 ·O .1620624800 0.1402970200 0.0245769270 0.1177797100 
+0.0016867763 ·0.0968224590 0.0269462310 O.1402970200 ·0.0284034300 0.2258501500 0.9132964200 ·1.2289253000 o. 7836282700 -1. 0902340000 0.352fi802100 
+PARAKKTRO KST. 
+•0 .0048640413 0.0067983376 •0.0005536259 ·O. 0077322805 0.0021502926 o. 0124371680 O. 0283314540 0.0282021060 •0.0284034300 0.0004885799 •0.0368545600 
+0.0022954976 0.0348611300 ·O. 0276300290 0.0245769270 0.0004885799 ·0.0063975120 D. 0714976120 1.4640893000 ·1.0902340000 ·0.6534737900 0.1799262900 
+mALFA CERO~: 
+0.0150844050 0.1409388800 ·O .1113019400 0.1177797100 ·0.0368545600 0.1652391000 1.0797262000 •0 ,5995084100 D. 3526802700 0.1799262900 -1. 2977099000 
+0.8010000000 
+CUliNTA #5 (TE) 
+RESULTADOS DE LA PRUEBA DE  SIMKTRIA  
+VALOR  DEL ESTADISTICD  :  0.0 00 000098 7  
+VALOR DliL CUANTIL  :  l .5500000000  
+
+SE ACEPTA He : SillETRIA 
+lttlltwtllrltlTllttrtttlllltlttttttllltlXtXXI 
+llATRIZ ESTIMADA DE CDVARIANZAS 
+0.0000333616 ·0.0000468970 ·O. 0000468970 0.0000990026 0.0000007748 ·0.0000029825 0.0000000223 ·0.0000000879 0.0000000555 ·0.0000002147 0.0000008201 -0.0000031593 0.0000046754 -0.0000179973 0.0000028849 ·0.00001110í7 0.0000001302 ·0.0000005020 0.00000353B6 ·0.0000136240 
+0.0000008201 0.0000046754 -0.0000031593 ·O. 0000179973 0.0000001339 0.0000007625 0.0000000040 0.0000000226 0.0000000097 0.0000000550 O. 0000001419 0.0000008079 0.00008079 0.0000046013 O.00000049&7 0.00000284Cl 0. 0000 000225 O. 00 00001284 0.00000061 17 0. 0000034834 
+MATRIZ &$TIMADA DK CDVARIANZAS 
+0.2697494400 ·l. 0323346000 ·1.0323346000 3.9531164000 -0.0886705750 0.3396416000 0.1315731300 ·0.5039283500 ·0.0298627290 O.1143840í00 ·0.0337194790 0.1291216900 -0.15966 23800 o. 6117976600 ·0.1363643300 0.5227237500 ·0.0701884(i 0.2689120800 ·0.14 26478700 o. 5469373600 
+-0.0337194790 ·0.]596623800 0.1291216900 0.6117976600 O. 01 l 0743840 0.05257640SD -0.0164740010 ·0.0780367000 O. OD3í393729 0.0177119570 O. 0043188938 0199383370 
+(SIN .RESTRICCIDN I 
+O. 00000077 48 -0.0000029825 0.0000001264 0.0000000038 0.0000000091 0.0000001 339 0.0000007625 0.0000004707 0.0000000213 0.0000005í73 
+O.OOG0028849 ·0.0000111077 0.0000004707 o. 00000 00140 0.0000000339 O.OOOOOC498í 0.0000028401 0.0000C11530 0.0 000000793 0.0000021501 
+O.G OOO OC0223 ·O. OOO!:B'i~ O.COOUOOC0 38 o.00000f1 0l 0.0000 C003 O. OO!il:O í: (,:; 40 0.G OO C026 
+o. oonr:0Pn1Jr: 
+o.oooouu~m 
+O. OG 0D001 ' ; 
+O. 0 01W 
+-0 . 0000 :Jf: 5~; ¡¡: 
+O.cooo ccul 3 
+O. D~:Q('.(·:·.·,:·:r:[;5 
+O.OUC OOl)C('i ~ 
+o. ~jo~ r:n:·¡'.·-:~: o.0ouovc1~:4 
+o. r:t;f;[~Ji:/· ~~ 0. 0QCOGC: (;C~2f 
+0. '.11/ (:: ¡,::,~-. 
+(CON RKSTRICCION GE 5!~1Tar; : 
+·0.088670 5750 0.1396416000 ·0. 5 923j5 S0 0.02923 79890 -o. r: 43~·~s~;:.r 
+·0.0432989680 . J6U:.'.~60.009833896í -.::1EW< li. .011074 3840 
+0.0525í64080 · O. :0 78~3S' ::(,:, 0.0449203650 -O.J6 ~"C25 ~2'. 0.0231064690 0.0469938010 
+·0.1363643300 O. 5227237500 O.0449203650 
+·O.O7036230 o. 01514 24200 0.0171473 250 o.c os·1 359 -~·~:. 
+C. 0000000555 ·O . 00000147 0.0000000091 O.OOO OO OC003 0.0000000007 0. 0000000097 J.0 000000550 G.0000000339 ~.0000000015 U000000416 
+G.000  5386 · 0.Q OU0136240 G. 0000005773 0.D0 U00 J7l Q.OOCCC004i6 (i.(i000 05 i17 '.l .OOG0034834 0. (J000021501 :) . OOOOU00972 U. t0000163'/2 
+· G. 02 986 2:2 90 e.1143840500 0.0098338967 . (¡. Gl 45847640 O. 0}33114538 0.0 03 7193 729 0.0 177119570 J. Jl514 24200 (;,f;Q7 784i168 
+1
+J.Ó]584876J0 
+<. i4 Z6478700 0. 5469373600 J.0 469938010 -Q. 06 B200290 Ul 3487630 '; .0 1 951 07?0 
+0.0199383370 0.0949528390 0.0811018700 0.0416837840 0.0849652460 0.0171473250 0.0811018700 0.0694763220 0.0356317510 0.0727886380 0.0087859791 0.0416837840 0.0356317510 0.0183127860 0.0373109910 0.0179510770 0.0849652460 0.0727886380 0.0373109910 0.0763592620 
+HATRIZ DE PARAHETRDS ESTIMADOS  (BXTA i,j)  
+0.1035693900  -0.0212809230  -0.0745760310  -o. 0041191325  -o. 0053641791  
+-0.0212809230  O. 0466530440  0.0766112450  ·0.0034019836  0.0075925376  
+-0.0745760310  0.0766112450  0.2646319100  -o. 0203310520  0.0172532630  
+-0.0041191325  ·0.0034019836  -0.0203310520  0.0019491059  o. 0004072773  
+-0.0053641791  0.0075925376  O. 0172532630  0.0004072773  O. 0017 412071  
+0.0283205960  -0.0896297310  -0.1437830500  0.0164825600  -0.0070679842  
+-0.0572533470  -0,1475286400  0.2500818900  -0.0008057869  0.0177451830  
+-0.079078t280  0.2170817700  0.4039166300  -0.0251627120  0.0407714360  
+0.0384795550  -0.0899836420  -0.3499656000  0.0126211670  ·0.0363501700  
+0.0652í50870  -0.0440135890  0.1190412100  O. 0076830037  0.0098560615  
+0.0060270145  0.0478999180  -0.5428804200  0.0146775520  -0.0465846330  
+0.0283205960  -0.0572533470  -0.0790780280  O. 0384795550  0.0652750870  O. 00602'/0145  
+-0.0896297310  -o .1475286400  0.2170817700  -0.0899836420  -0.0440135890  0.0478999180  
+.-0.143783~500  0.2500818900  0.4039166300  ·0.3499656000  0.1190412100  -0.5428804200  
+0.0164825600  -0.0008057869  -0.0251627120  0.0126211670  0.0076830037  0.0146775520  
+-0.0070679842  0.0177451830  o. 0407714360  -0.036351i1700  0.0098560615  -o. 0465846330  
+0.0708790920  ·0.2279654100  -0.4586934700  0.3848225900  -0.0851179800  0.5117527900  
+-0.2279654100  ·0.2816220800  -0.6622351600  0.5810696200  -0.0439528450  0.5724665800  
+-0.4586934700  -0.6622351600  l. 7788112000  ·1.3918351000  1. 2371952000  -1.0607717000  
+0.3848225900  0.5810696200  -1.3918351000  0.5782473200  -0.4805156400  0.7534099300  
+-0.0851179800  -0.0439528450  1.2371952000  -0.4805156400  ·1.1670141000  0.3815636000  
+0.5117527900  0.5724665800  -1 .0607717000  0.7534099300  0.3815636000  -0.6375606100  
+PARAHRTRDS KSTIKADOS  (ALFA ii  PARAMKTRO XST.  nALFA CKRO n:  1.3900000000  
+O. 5292784300  
+0.2716348400  
+-0.0788856720  
+-0.0244208930  
+-0.0007875584  
+-0.0644735070  
+-0.3614489000  
+0.3856724800  
+-0.1898434700  
+0.5784847400  
+-0.0452104900  
+
+CUHNTA #6 (QUi 
+RESULTADOS DK LA PRUEBA DK SIMHTRIA 
+VALOR DEL ESTADISTICD : 0.00000038?5 VALOR DHL CUANTIL : 1.5500000000 
+SE ACEPTA Ho : SIHETRIA 
+ttttt~1ttttttt~xt,*tttx,txttttrtttt1t,t*i*ttt 
+MATRIZ ESTIMADA DE COVARIANZAS (SIN RESTRICCI0l! \ 
+0.0000662141 -0.0001041106 0.0000005996 0.000096 29 
+·O. 0001041 l 0.0002128921 ·0.0000017216 ·0.000i2 "66 : 0.0000005996 -0.0000017216 0.0000000178 O. G00('02á5 0.0000009629 -0.0000027665 0.0000000285 o.oo on i• Ui4~~ 
+0.0000103418 ·0.0000296878 0.0000003062 0.ooocnom2 
+o. 0000027580 ·O. 0000079150 0.0000000816 o. (:oon ur.::~ 1: 0.0000001758 ·O.OOC0005057 O.OOOOOOC052 o.ooccccccs4 0.0000109~07 
+·0.00003i5490 0.0000003254 O. D000t:f:5::~~ 0.0000006652 ·0.0000019097 0.0000000197 O.COOOC03:; 0.0000082068 
+·0.0000235543 0.0000002m G. ODDt:39(~5 
+0.0000027580 0.0000001758 0.0000109907 o. uooou~552 ·0.0000079150 ·0.0000(;05057 ·0.0000315490 ·D. ~00(:J¡ ~f;q: 
+0.0000000816 0.0000000052 0.0000003254 c. ~oeto,0H' 
+O.C0~0005231 t. [·::;:··¡ ,,.;
+0.000DC01312 0.0000000084 O. 0000014075 0.0000000900 0.0000056108 o. aoccc~2~·j ~ 0.0000003752 O. 00000(:024 O 0.0000014956 o. u:=r;~:::·;::s '.·:: 
+O. ·)O CL~i CSj
+0.0000000240 0.0000000015 0.0000000957 
+0.0000000957 0.0000059624 o. oc~;t; r~::~: t;·~
+0.0000014956 0.0000000~05 O.OOOOOOOC58 0.0000003609 O. OOL ~~~ ~: 9 0.0000011166 O. 0(100000714 0.00li0044511 Q' ~:(!~; ~;'."·: " ... 
+~ 
+MATRIZ ESTIMADA DK COVARIANZAS (CON RHSTRICCION C5 S:ME~J! A: 
+0.0468649050 ·O. 3407765300 0.013633649(: -0 . D S· 3 ~ ~ -~ ~ :: l· O. -J7< 4s~ J[!
+·0.3407765300 2.5687328000 ·0.1023S74400 o.~136336490 ·0.1023814400 ~. 0189801 -n. ~221s::s.~.2 ~. 
+·O. 09314 71300 o. 7078244600 ·O. OM858630 0.195C M0 
+0.046;:;; J"" (:
+·0.0211584590 0.1676991100 ·0.0066567554 -0.0018587855 n. ~~·1. 9~ ,:~~(; 
+·O. 0129137960 0.098415 2360 
+-0.0009234935 0.007324680') ·0.0002830172 o. (:J'.': ;:~3 á5 ·0.0986286810 O. 752892') 500 -o. 0299202000 o.: ~HC~ 431 Ct 0.0028725486 ·0.0218459830 0.0008715265 -t 1 0(; ~::3-~. ~ ~~ O. 0034489135 ·0.0192593800 0.0008270779 ·0. C0 4éi'T96 
+·0.012913:960 ·0.0009234935 ·O.D986286 &10 o. :·:e::·3_-:~-~~~-t O. 0984:152360 O. 0071246807 o. 7528927500 -0. -~-2 :3~S92:'. ~ ·0.0038587855 ·O. 0002830172 -o. o;: 99202000 V.[<1 f; c.~ ·: : :. ~ ~ 0.0271946260 0.0020452866 0.2C809487DO ·U. -~' L_ ~ ~:S8: 0.006591630'1 0.0(;0465871 1 0.0499828430 -~: . (: ~} ~ J:: ~ :. : ~ 
+0.0041109782 O.0002590 703 O.9020885C -~. ~J .L3!~ 
+0.0000103418 ·O.D000296878 D.0000003062 0. 0000004923 0.0000052799 0.~0CG014075 0.COOOOOC900 Q.0000056108 a.0000003397 D.0000041886 
+ 000008 2068 ·J.~000235543 0.0000002429 C.000 0003905 ~.0000041886 ~. C00lll66 }.GOGC000714 OOG0044511 0 000002695 ~;. ~00~033¡29 
+-u. 11sm90 u. :676991100 · l .00 66557554 U467191070 8.0119634760 C 065916307 Q.l:004658711 }.J499828430 ·D.J0144C53 29 ·O.C006522380 
+[:. (}034489135 ·1. 0192593800 ~.S270779 ·0.0048779796 · U 0065::L38<. 06 i 46960 
+0.0002590703 0.0000350486 0.0022074316 ·0.0000633959 ·0.0000231298 0.0290208850 0.0022074316 0.2218115800 -0.0064212990 ·0.0048949095 -0.00083ii3514 -0.0000633959 -0.0064212990 0.0001865609 0.0001528857 -o. 0006146960 -0.0000231298 -0.0048949095 0.0001528857 0.0007038167 
+MATRIZ DE PARAMETROS ESTIMADOS 
+0.0838122890 -0.0467900790 ·0.0467900790 0.0655264010 ·0.1015645200 0.0007563090 -0.0147113360 ·0.0019944512 0.0007065712 0.0013290194 0.0501256200 ·0.0468340510 0.0046043001 ·0.1596230600 ·0.1321088100 0.2241013200 0.0211988550 ~0.1044099500 0.0609082520 ·0.0260460580 O. 0738188580 0.0939846010 
+0.0501256200 0.0046043001 ~0.0468340510 ·0.1596230600 O. 0952647620 0.16103297 -o. 0074710350 0.0243601260 0.0335271880 0.034530B540 •0,0078699473 ·0.4624105400 ·0.462410540(1 ·0.5785058100 ·0.0854794120 -0.3870511300 0.1655293900 0.4867063800 ·O .1533625600 O. 2209231300  41898058(10 6554327800 
+PARAM&TROS KSTIHADOS (ALFA i) 
+0.320279300D 0.2404588400 ·0.3303408300 ·0.0379718800 0.1702634700 0.0979421240 ·0.354762000C 0.3519039200 ·O. 3253887200 0.5912398900 0.2763758800 
+(BETA i,j) 
+-0.1015645200 0.0007563090 ·0.0855974210 0.0085603518 0.0015346185 0.0952647620 0.1610329700 -0.0734682930 ·0.0292493220 0.1585526400 ·O .1358221000 
+·0.1321088100 0.2241013200 ·0.0734682930 -0.0121067800 -0.0051883336 ·0.0854794120 ·0.3870511300 1.4402267000 -1.3717676000 1.5774828000 -1.174 6405000 
+-0.0147113360 ·0.0019944512 0.0085603518 0.0035259553 ·0.0004123716 ·O. 0074710350 O. 0243601260 ·0.0121067800 O. 0026830118 0.0204S82680 ·0.0229217400 
+0.0211988550 ·0.1044099500 ·0.0292493220 0.0026830118 0.0035917369 0.165529:1900 0.4867063800 ·l.3717676000 5973662400 ·0.5899957400 0.8183470100 
+PARAMKTRO KST. 
+0.0007065712 0.0013290194 0.0015346185 ·0.0004123716 0.0007423831 0.0335271880 
+0.0345308540 
+·0.0051883336 O. 0035917369 ·0.0257633090 ·0.0445983560 
+0.0609082520 ·0.0260460580 
+0.1585526400 
+O. 0204882680 ·0.0257633090 ·0.1533625600 0.2209231300 1.5774828000 
+·0.5899957400 
+•1.3324145000 0.0892270720 
+8ALFA CERO": 
+0.0738188580 
+0.0939846010 ·0.1358221000 ·0.0229217400 ·0.0445983560 
+0.4189805800 
+O. 6554327800 
+·1.1746405000 
+0.8183470100 0.0892270720 ·O. 771808DOO 
+0.7860000000 
+CUENTA #7 (HA) 
+iiiiiiiiiiiii*iiii*iiiiiiiiiiiiiiiiijiiíiiiii 
+RESULTADOS DE LA PRUEBA DE SIMETRIA 
+VALOR DEL ESTAGISllCO 0.0000000107 VALOR DEL CUANlll : 1.6000000000 
+SE ACEPTA Ho : SIMETRIA 
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii 
+MATRIZ ESTIMADA GE CO VARIANZAS {S I~ RESTRICCJON l 
+0.0000403256 -0.0000701236 0.0000043035 O.OOG000180; -0.0000701236 0.0003639391 -D.0000421.291 -O .CGOi1 01 ;é,7 ' 0.0000043035 -0.0000424291 0.0000055055 O. D0000 0:3; 3 
+0,000000180) -o.0000017 827 O. 00000023 13 O.OO OGOGOns: 0.0000000366 -0.0000003575 0.0000000463 o.oooooooa19 0.0000010150 -o.0000100180 O. 00000 1300 ; O. OOOGG ,lOS:.r; 
+0.00001)0359 ·0.0001679835 0. 00002179)) O.J000009i59 0.00(;0064124 -0.0000632316 0.0000082050 O. GOr:o,~i.~ 
+0.0000000366 0.0000010150 0.00001)0359 O. 3000 (16:. 174 -0.0000003575 -0.0000100180 ·0.0001679835 -O .J OO~~7?. 1t o.ooooooon63 O, 0000013001 0.00002179)) O.JOO JJ8~8 50 0,0000000019 O. 0000000546 0.0000009 l59 O.OO 0;;1 ~•.: 
+0.0000000109 0.000000i8j5 0.1000053 1
+º·ººººººººº" 
+0.0000000109 0.0000003070 0.00000514 ;¡ O.GO QOG'~,> 0.0000001835 o. ooooorn 73 0. 000086301 8 O. GO OJ:'. ,~ 5:. 0.0000000691 O.OOOOOIS375 0.0000324855 
+o. coc,o•·:·:; 
+~A TRI l ESIMADA DE COVARWZAS (CON RESTRECION [ E ~:. I ~,¿r ~: I ;. ; 
+o. : m 221 100 · 1.150280HOO -o. , m5moo o. ,55•ffC:' ' 1'. -1.1502804000 1.6818251000 0.310591ij000 ~o .;·¿ 555: ~3:~n -0.212851 i 000 0,3105943000 0. 051781)510 -o. ~~;e .. -·:.;: -.r· 
+D.155 1665 30 0 ·0. 226 565 113 00 ·0.0 42 04 286)0 iJ . J:.:15 ; L~ti8S 1} 
+·0,01090 25980 0.01591083~0 0.007957859, -o. uo; · ·
+.:. ¡~ .i:":s ·0.0367075230 0,0534830640 0,0100408150 ·O .O ui i 3: S! ~; ·0,4712764100 0.6871882?00 O. li 81343SOC -c. :93·':: · ,,'. ·0. 26 082)41 00 0.3803455100 0.070936 i9 50 -O. ,}5:S~ i) :~ : : :. 
+-0.0109025980 -0.03670i5HO ·0.4112164100 -c. :sns··:.· 1: :-· 0.0159108320 0.0534330640 0.6871882200 0, ]803, 0 5:J,; 
+O. O;  1 ;·, '.· 0. .-;·
+o. 0029578592 0.0100408150 0.1281343500 ·0.0021546009 ·0.0072815142 ·0.0931507110 ·O.é51 ~d8'·, ) 0.0001517623 0.000514li201 0.0065588 i7: O. :) O: f, :· ¡; --'·' 
+G. O! i ~ ~ :)-. -.i} i]
+0,0005144101 0.0017822564 o.om 25a 04u 0.0065588))1 0.0223758040 0.?84395 5100 c. is:i.:·¡2~·c : 
+0.0036257355 O. O123562200 o, 1574398800 ;J.,:,n::: ~;:J 
+MAlRIZ OE PARAMETROS éSTl~AOOS (SETA i,j) 
+0.1493799100  ·0.0186399160  
+·0,0186399160  0,0837872360  
+·0.0183283170  ·0.0186012140  
+0.006f219  0.0052540941  
+·0.0683421990  ·0.2831364400  
+0.0674136510  O. 7252893400  
+-o .105274 7500  ·O.D8335W70  
+0.0105903590  ·0 . 0571311230  
+·0.0230424590  0.1465334300  
+-o. 0683421990  0. 0674136510  
+-0.2831364400  0.2252893400  
+0.0403183640  ·0.0832826670  
+·0,0003996400  0.0290358890  
+-o. 5231374800  ·1 .23408380CO  
+-1.2340838000  1.6182362000  
+1.2270182000  • 1.3654767000  
+0.0884165180  0.8319372700  
+o. 75rnmoo  ·0.0890691290  
+
+PARAMETROS ESTl~AOOS {ALFA i) 
+0.6521232300 0.3176135700 · 0.0177616450 0.0404007620 · 0,9853879000 0.9051685200 ·0.3584995800 O. 2349996SOO 0.,113434100 
+·0.0183283170 ·0.0186022140 0.0112829690 ·0,0D43695837 0.0403183640 ·D.0832826670 0.0683864400 ·0.0022548197 0.0068498282 
+·0.1052H7500 ·0.08335U 170 0.0683864400 -0.023490?660 1 .2270182000 ·1.3654767000 0.4381998100 ·0,2491387200 0.0931304070 
+0.0062437219 
+0.00515409/¡ 1 
+·0.0043695837 
+0,0009233324 
+·0.0003996400 
+0.0290358890 
+·O. 0134901660 
+·0 . 0070265891 
+·0.0061709585 
+0.0105903590 
+·0.0571311230 
+·O. 0022548197 
+·O.OD70265891 
+0.0884165180 
+O. 83193 72700 
+-0.21191387200 
+-o. 7822435100 
+0.1668506100 
+PARAMElRD ESl. 
+-0.0230424590 0.1465334300 0.0068498282 
+-0.0061709585 o. 7533464300 
+·0.0890691290 0.0931304070 O. 1668506100 
+· l. 0484282000 
+uALFA CERO": 1. 7970DD0000 
+CUENTA #8 (HQ) RESULTADOS DK LA PRURBA DE SIMKTRIA VALOR DEL ESTADISTICD : O. 0000006444 
+VALOR DKL CUANTIL : 1.6000000000 SK ACEPTA Ho : SIHETRIA 
+tttttiYtY.!ttYiitt,tt?ttxtttttttttttxtttriYXrt 
+l!ATRIZ ESTIIIADA DE CDVARIA!IZAS (SIN RESTRICCIO!I; 
+0.0000563904  -0.0000857232  0.0000004039  ~.C00000153l  
+-0.000085723 2  0.0002334448  -0.0000020312  -0.0flOC00:'7~6  
+0.0000004039  -0.0000020312  0.0000000224  G.00GUCC85  
+0.0000001531  -o. 0000007726  0.0000000085  O. 000l '.:OC32  
+0.0000000980  -o. 0000004944  0.0000000054  0.0000000021  
+0.0000013365  ·0.0000067313  0.0000000742  O. !iQODf1C '. ?S~  
+0.0000102557  -0.0000516474  0.0000005689  O.OOOCCG1166  
+O.OOOC126220  ·0000635639  0.0000007002  O. fl0Di:6H  
+
+0.0000000980 0.0000013365 0.0000102557 C.00001~62~0 -0.0000004944 -0.0000067313 -0 .0000516474 -o .noo%356~~ 0.0000000054 0.0000000742 0.0000005689 ~.COOCOC7G2 
+~. GflDOr:(;:\ 5;;
+O. 0000000021 0.0000000282 0.0000002166 O. 0000000013 0.0000000181 O. 0000001386 O.OOG0'.º 05 0.0000(100181 0.0000002458 0000018862 ~.:·;t t~~: =~~ 0.0000001386 0.0000018862 0.0000144716 o.~oct~:~a~:~;s 
+0.0000178105 o. :·.: ur:r;:; ~; ~~0.0(:00001705 0.0000023214 
+MATRIZ ESTH!ADA DK COVARIAllZAS \CON RRSTRICCION ;;& :iilff:'E,, 
+0.3490283100 ·O. 9865843000 -0. 1351013200 G. 28U.l S>< -0.9865843000 2. 79)1540000 0.3829380400 ·l.G ?9~Cl6 ~~ t1 -0 .1351013200 0.3829380400 0.052579947 0 • O • ; : :. : ; é ': •· 
+0.3806208000 ·l.0790 016000 -o. i481574400 C.~1'"5:il"' DC ·O. 0062302547 O. 0176620680 
+0.0024247100 ·Df&~::·: :·:~~:é -0.0221779270 0.0629462230 0.0086541848 ·0.~4 ~:6 5~ C ·0 .1715::22600 0.4866640400 ~.0668608270 · :S~:f~,;:-: 
+-0.2 244333100 0.6375840100 0.0877426810 -o.~4 ·; ~s1~: J:.Jo 
+-0.006 2302547 ·0.0221779270 -0 .1715222600 -o. 2~1 44~:~:~~} :·,: 0.0176620680 O. 0629462230 0.4866640400 0.637Sf GU 0.0024247100 0.0086541848 0.06686082 70 o. ese:: ~~f;·;s 
+·0.0068333308 ·O. 0244026590 -0 .1885868800 -.~~7 ~5~5: :~G 0.0001119603 0.0003993513 0.0030859764 o. ~;04 ~":Jt, ~~~~ 0.0003993513 U014299150 0.0110507720 .0 1~5 l~j5~t: 0.0030859764 0.01105C'l720 0.0854874720 J . 1 1 :, } 4~ ~ ~ :/ 
+(t ~~ "! 1 .•c ..:·~ t. 11
+O. 00404 89681 0.0145143580 0.1121458800 u.l-t , 1•t..;,. ... :..u 
+MATRIZ DE PARAHETROS ESTIMADOS \BETA i,j) 
+0.1328946200 ·O. 0243472310 ·O. 024347:31 O 0.0532416320 ·0.0239264250 ·0 .0337861260 ·Ü.011560481(: .(:, 0081888861 0.1002993500 -0 .20317 19800 -!i .0277(ll~ 520 0.14661193~0 ·0.047 39696 00 0.0067 826698 -046 WO -0 .:3 62760000 -063714867{) 0.2991319900 
+.1 Q[:2993500 -.D2770 135 20 ·0.20317198GO 0.1466119300 -00359"70 154 -0. 227 0646"70 [: G. 0236213860 -0.0682979290 ·L.56 26S8bJ 0(I ·1.155715b{i00 ·l. 15j71580 1.3915525000 O. 8055848liOC -u. 7828925000 -o .1040651100 J .0003617000 1. GW33 ·O .~768536700 
+PARAMKTROS KSTTM~DOS !ALFA i! 
+U49S4377 O. ~6987865GO -o .J7186866 -0623849610 •(l . 180~527100 0.36%55~4G-0.1M5335 ·ll. 063411 208 0 O. '.:890~153(!(i 
+·0.0239264250 -0.0337861260 0380151950 -0.0031196623 -0.0035970154 ·0.2270646700 0.1295622900 0.0281690850 O. 0957467270 
+-0.0473969600 0.0067826698 o. 1295622900 0.0438083560 0.8055848000 -o. 7828926000 -0.0920201960 -0.0842635240 O. 0S351640 ·0.0115604810 ·0.008188886] ·O. 0031196623 -o. 0013(10611] 0.0236213860 -0 .0682979290 0.0438083560 0.0173236180 O. 0077142089 
+-0.0345466490 ·0.2362760000 0.0281690850 0.0173236180 -0.1040651100 1.0003617000 -0.0842635240 ·1.4380883000 O.8513851700 
+PARAMKTRO KST. 
+·0.0637148670 0.2991339900 0.0957467270 O.0077142089 1. 0997330000 -0.2768536700 0.0208351640 0.8513851700 ·2. 0339?9BOOO 
+"ALFA CEROij: 1.4900000000 
+CUBNTA #9 (BQ) RBSULTADOS DB LA PRUBBA DB SIMBTRIA VALOR DEL ESTADISTICO : 0.0000000059 
+VALOR DBL CUANTIL : 1. 5500000000 SB ACEPTA Ho : SIHBTRIA rtYitxYrrrxxttittttt~ríitttíijttttttrtrir~itt 
+MATRIZ ESTIHADA DE COVARIA!IZAS (SIN RESTRICCIOll' 
+0.0000532805  -0.0001102362  O. 0000001236  0.COOOC01863  
+-0.0001102362  0.0003889553  -0.0000006034  ·D.OO DOf:091 5:  
+0.0000001236  -0.0000006034  0.0000000010  O.CCi6  
+0.0000001863  -0.0000009151  0000000016  O.lOGOOGOn:·~  
+0.0000000119  -0.0000000552  0.0000000001  o.coccoccco1  
+0.0000005341  -0.0000026152  0.0000000045   CGOOlit:::~68  
+0.0000016141 O. 0000148450  -0. OOOC079059 -0.000072 6474  0.0000000136 0.0000001251  0.00000002C7 o. ooo n~:1 g;~  
+O. 0000302417  -0.0001479967  O. 0000002548  Q. COCQOOf  
+0.0000005341  0.0000016141  0.0000148450  n.nno c~i ' 4'~  
+-0.0000026152  -0.0000079059  -0.0000726474  -o. 0001479957  
+O.OOOU000045  O.0000000136  0.00000~51  0.0fW~~~f  
+0.0000000068  0.0000000207  C.0000001899  O.OOCC003869  
+0.0000000004  0.0000000012  0.000000Gll3  Q. [1(;(:(\f;:·:;;:­:·;; .  
+0.0000000195  0.0000000590  0.0000005424  o.cooocnc; o  
+0.000000059(! 0.0000005424 0.000001105[)  0.0000001785 0.0000016400 0.0000033409  0.00000164U0.0000150661 C.C00030692 7  O. COO il:J ::~ :S G.COCC~06~~? e. n~:c o5 :-: ~ ~: "' ·:.  
+
+MATRIZ BSTIMADA DR COVARIAllZAS i COH RBSTRICC!Gll ;}l! srlff?~: .; , 
+0.16'9505500 -0. 4310072800 0158264940 -~. (14 5~~~-;: ;::·· -o. 43100728[;0 l.1478578000 -Q.0421693500 0.1 ~~5i5j ~.. ~ 0.015&26494[1 ·0.0421693SOO D.0015536742 -o. DL4~ b~:· :·ic4 -0.04563081 00 O.i2157595CO -0.00448 20004 O . 29 4S~~~G -0.000118~171 0.0Q0317:39J -ll.000~116963  [;QJ ~:~~ ": s>~ -0.0038997854 0.0103833880 -0.(003829398 u.0011 ::,s:,: -0.01 2,23287[; 0.03:~070540 -o. 001: 935&99 D.G03J~)~~~: -0.1190813900 G.3171542400 -0.0117070180 G. 033~094 '~:: ~; -0.2184~15200 0.5824578500 -0. D215747S60 0.06W~;:· :, 
+-0.0038997854 -0.0121232870 -o .1190813900 ·O. ~:S45, :~ >; 
+0.55 2~1 7~~;:;·.
+O.03833S80 0.0323070540 O.~n15WOO -O.O3829398 -0.0011935899 -0.0117070180 -0.C215'4726J 
+O.6: ~ 9:·: i ,•..-.:,
+0.0011nm 0.0034541085 0.033909493C 
+0.00028769 0.0000090429 O. 0000885916 G.oe:: L6~s3~ -~ O. OOD0950120 0.0002959644 0.00291(:1C31 D.CG53f~;2~~;  0002959644 0.0009253456 O.90886402 O.C1578 S~iJ; G O. 00291D1031 0.0090886402 O. 0894671330  1648"9;:-:,o 
+0.0053603914 O. 0167884690 0.1648795CCC G.3~~653~J 
+J.uCOQOOC119 -0000000552 0.000UOOOCOl Q,jOOCGGGOOl G.0 000000000 G.OQO OQ~0 004 O.OCOOOG0012 U000DG~i13 0.UG00000230 
+• f .. tDl l &71 'J 1 :.0003171391 
+-i. [,j(:01 :6963 :; .GOCC 33? 800 
+0.GD(:0DDC9J4 
+;; .C,OC002276S ~. ;)f:~~09(1; ~9 ).0~00885916 U. Dn(: 1638326 
+!IATRIZ DE PARAHETROS KSTIKADOS (BETA i,j) 
+0.0596497360 ·0.0384944030 ·0.0384944030 O. 0694902430 O. 0274046690 ·0.0139870510 ·O. 44453570 ·0.0061253301 -0.0096346673 ·0.0772319160 o. 0525804630 -0.2444409800 ·0.11i5961500 0.3676479800 0.0455467900 -0.i192585200 0.0603165170 ·O. 0422133270 -0.0113276[)20 0.1046133000 
+0.0525804630 ·0.1715961500 ·0.2444409800 0.3676479800 -0.0810901930 -0.0478506630 0.0078013332 ·0.0426380600 ·0.1750422200 ·0.4105355800 ·0.8160394600 ·1.2170491000 ·1.2170491000 J.1037092000 0.5516096800 ·1.6286197000 O.1687929800 2.5262496000 1.7528775000 ·2.4793176000 
+PARAHRTROS ESTIMADOS (ALFA i) 
+0.2599 1 9830() O. 2181129300 0.0593881470 ·0.0641091630 ·O. :393916400 ·0.4649028500 0.537371'!900 •0.1414892500 0.9805885100 ·0.1455483000 
+0.0274046690 ·0.0139870510 O. 0056383611 ·0.0025260616 ·0.0198297940 ·0.0810901930 ·0.0478506630 0.0257683310 ·0.0349450790 0.1414174800 
+0.0455467900 ·0.1192585200 0.0257683310 0.0138842500 0.1776142700 0.5516096800 ·1.6286197000 0.4298257500 ·0.5940213900 1.0976505000 
+·0.0144453570 ·0.0096346673 ·0.0061253301 -o. 0772319160 ·0.0025260616 ·0.0198297940 O. 0009439534 -0.0025515959 ·0.0025515959 -0.0671618700 0.0078013332 ·0.1750422200 ·0.0426380600 -0.4105355800 o. 0138842500 0.1776142700 O. 0342325270 0.1037139800 0.0114243420 0.4806593900 
+0.0603165170 -o. 0113276020 ·O. 0422133270 0.1046133000 ·0.0349450790 0.1414174800 0.0342325270 0.0114243420 0.1037139800 O. (806593900 0.1687929800 1.7528775000 2.5262496000 -2.4793176000 ·0.5940213900 1.0976505000 ·l.9995841000 ·0.2225417800 -0.2225417800 -0.8754555200 
+PARAHRTRO XS7. nALFA CBRon: 0.8190000000 
+MATRIZ Dl PARAMKTROS ES'l'INADOS (BE'l'A i' j) 
+o. 0863425100 0.0059956233 0.0059956233 -0.0039245964 0.0245279450 -o. 0396535590 -0.0369301460 0.03256h7 740 0.1225425200 0.075555 07 90 0.0283892620 -0.042094 243 0 -0.1452092800 0.1549696900 0.1216113900 -0.2744612300 -0.2132698300 0.0910464660 
+0.1225425200 0.0283892620 0,0755550790 -0.0420942430 -0.1626637800 -0.3209157500 O.1332925800 0.2628565200 
+·0.9775074600 l.0841795000 1.0841795000 -0.8567749700 -0.7384417900 0,6318085300 0.2607243800 -0.7904585600 0.2023190000 0.0030097464 
+PARAMKTROS ESTIMADOS (ALFA i) 
+0.6673908900 O.1780108900 0.036513í3 7-0.0617858630 0.70329 26 500 ·0.0310175320 -0.22 062579 00 0.33481 63 200 -0.6065953000 
+0.0245279450 -0.0396535590 0.0099654112 -0.0001501042 -0.162b637800 -0.320915 7500.2902377300 ·0 .1 165471 200 0.315199 22 00 
+-0.1452092800 0.154969690C 0.290237730(1 -0.2503451 700 -o. 7384417900 0.6318085300 -1.7190312000 1.8096931000 -0 .033 68]5490 
+-0.0369301460 0.032566'741: -0 .COOJ 5042 
+o !\,\ ..; ~ ..J ¡;; ~ .\ ·)-; 
+, UU.J.., ,¡ •.•• ".I:.; 1 
+O. !3329f0 
+o.2rnm;::,0 -0. :so2451 7uo 0.13~5 816~('[¡ · O. 2?740759GO 
+0.1276i }29;;[i ·O. :7446123 -0 .116~47L :'G 0.1 32Sgl00 o. :607:·rn::o -o. 790~5856 0
+1. B09 1i (iO(' 
+-2.461511:002 
+1.31 ~~16:~tri:1 
+·U.2 132 698300 C.091046 4660 3151992200 ·O .277 4076900 0.i0231 9000C 0.00300 97464 -G336 Bl 5490 1. :i123é 75000 ·] .399582%01.9550000000 
+CUKNTA #1 o (ca) 
+RESULTADOS DK LA PRUEBA DE SIMETRIA 
+VALOR DEL &STADISTICO : 0.0000001835 VALOR DKL CUANTIL : 1.6000000000 
+SE ACEPTA Ho : SIMKTRIA 
+1tiitii1iitttiiti1iititttiittrttiitttiitttttt 
+:U.TRIZ ESTIMADA DE COVARIANZAS (SIN RESTRICCIDNi 
+0.0000263462 ·0.0000203908 ·0.0000003544 ·0.0000001153 -0.0000203908 0.0001192136 ·0.0000058861 ·0.0000019130 -0.0000003544 ·0.0000058861 0.0000003717 0.0000001208 ·0.0000001153 ·0.0000019130 0.0000001208 0.0000000393 ·0.0000000133 ·0.0000002240 0.0000000141 0.0000000046 •0.0000001733 ·0.0000028845 0.0000001821 0.0000000592 -0.0000018282 ·0.0000303405 0.0000019159 O.0000006227 ·O .00000lb895 ·0.0000280586 0.0000017718 0.0000005758 
+-0.0000000133 ·0.0000001733 ·0.0000018282 ·0.0000016895 
+·0.0000002240 ·0.0000028845 ·0 .0000303405 ·0.0000280586 
+0.0000000141 0.0000001821 0.0000019159 0.0000017718 
+0.0000000046 0.0000000592 0.0000006227 0.0000005758 
+0.0000000005 0.0000000069 0.0000000729 0.0000000674 
+0.0000000069 0.0000000892 0.0000009388 0.0000008682 
+0.0000000729 0.0000009388 0.0000098764 0.0000091332 
+O. 0000000674 0.0000008682 o. 0000091332 O. 0000084459 
+MATRIZ ESTIMADA OK COVARIANZAS (CON RKSTRICCION DK SIMHTRIA) 
+o.702001920(: ·0.8476468900 ·0.0345796130 ·0.0694086190 ·0.8476468900 1. 0240224000 0.0417108710 0.0838725630 ·0.0345796130 0.0417308730 0.0017095482 o. 0034178542 -0.0694086190 0.0838725630 0.0034178542 0.0068816548 ·0.0003234178 0.0003919581 0.0000159054 0.0000323665 ·O .0192745110 0.0232848500 O. 0009516377 0.0019107425 ·0.1996627200 o. 2410622200 0.0098537818 0.0197560380 ·0.2070050000 0.2500073100 0.0102107190 0.0204992680 
+·0.0003234178 •0,0192745110 -o .1996627200 ·0.2070050000 0.0003919581 0.0232848500 0.2410622200 O. 2500073100 0.0000159054 0. 0009516377 0.0098537818 0.0102107190 0.0000323665 0.0019107425 0.0197560380 0.0204992680 0.0000003359 0.0000091242 0.0000932236 0.0000970725 0.0000091242 0.0005323058 o. 0054953723 0.0056990317 G.0000932236 O. 0054953723 0.0568694900 0.0589566910 O. 0000970725 0.0056990317 0.0589566910 0.0611495510 
+CUKNTA ~11 (KC) RESULTADOS DK LA PRUEBA DK SIMKTRIA VALOR DEL ESTADISTICO : 0.0000000426 
+VALOR DKL CUANTIL : 1.5500000000 SE ACEPTA Ho : SIMETRIA 
+rtittrTrr??rrrxrrtrrtttirttrrrrrrtrrtrttttrtt 
+MATRIZ ESTI~ADA DK  COVARIANZAS  (SIN RESTRICCION i  
+0.0000413369  ·0.0000455035  O. 0000000141  0.0000000025  0.0000002829  
+·O.OOOQ455 D3 5  O. 0000938432  ·0.0000001518  · 0. 0(1000(10309  ·0.0000033036  
+O.0000000141  ·0.0000001518  0.0000000004  0.0000000001  0.0000000094  
+O. OO uD00 0025 O. 0000002&29  ·0.0000000309 ·0.0000033036  0.000000 0001 0.0000000094  º·ºººººººººº 0.0000000019  0. 000000 0019 0.0000002066  
+O. t,tC00368  ·0.000000417 0  0.0000000012  0.0000000002  0.0000000260  
+O.OOOOOOC474  ·O.OOU0005595  0.0000000016  0.0000000003  0.0000000350  
+o.0oo~mc:  ·C.000002794  O. 000fl000071  0.0000000016  0.0000001693  
+0.0 000000945  -0.000001 08 91  0.0000000031  0.0000000006  0.0000000680  
+ 0003029643  ·O.t00034~9~2  O.00000980  0.0000000202  0. 00 00021494  
+0. 0000 000368  o.oocoocom  0.0000002330  0.0000000945  0.0000029643  
+·O .OOOOff -0.0000005595  ·O. 0000021094  -0.0000010891  ·0 .0000343952  
+O.O OC G0000 12  O.OCC0000016  0.0000000077  0.0 000000031  0.0000 000980  
+0.0:iO&OO D2  O. 0000(100(:03  0.0000D016  0.0000000006  0.000000020 2  
+O.OO CO OCC26G  0.0000000350  0.0000001693  0.0000000680  0.0000021494  
+O. (iQu000003 3  0.00000004  0.00(10000213  0.0000000086  0.0000002706  
+0. 00í:004  O.OO OOOOG05 9  O.OOOOOG0 287  0.0000000115  0.0000003644  
+O. JCtJO213  O. OOU OUI028 7  0.0000001388  0.0000000558  0.0000017621  
+OOOOOOCC86  0.000000 0115  0.0000000558  0.0000000224  0.0000007078  
+e. Uit !:oc17o6  .U:UJ3644  O.0000017621  0. 0000007078  0.0000223643  
+
+t-!ATRI: ~STI ~ADA DE COVARIANZAS (CON RESTRICCICN DK SIMKTRIA) 
+l.070i:Gl7~0·2 .36&8&76G0j 0.32741~7900 ·0.383653í700 ·0 .0 078767319 ·2.3688876000 5.2468851000 ·0.~248452600 0.8496821600 0.0171629750 t:.3174J279DO ·C .724B45::6f;ll O.1001743900 ·0.11 7395470 0 ·0.0023939137 -323653noo 0.8496821600 -0.1173954700 O.1376114400 0.0027893004 ·O. J0"8W319 O.Ul71629750 ·0.00;:3939137 0.0027893004 0.0000747405 
+o. 0119176840 ·0.0265308910 0.0036674198 ·0.0042963741 · 0.0000868435 
+•(,. (i(1g;3 68 (i 0.0193298450 ·0.002670HOO 0. 0031304519 0.0000642505 ·0.0399585560 O. D88375322C ·0.0122182240 0.0143172790 0.0002976657 · Íi . 28%~L:1 0.0~6i42&246 ·.00085260!7 0.0009958918 0.0000242479 
+·0. 2564895100 O. 570 469 2300 ·0.G789488010 0.0924462660 0.0019895491 
+e.on97,mo ·0. '.'087368004 ·0.0399585560 ·0.0028060121 ·0.2584895100 ·O.026530&9lá O.0193298450 O.C883753220 0.00614 28246 0.5704692300 0.356,mS ·0.G  6707400 -0.0122182240 ·0.0008526017 ·0.0789488010 ·0.0042963741 O.OC.11.iU4519 0.0143172790 o.ooo99589ia 0.0924462660 ·O.868435 0.00(1(:642505 C.0002916651 0.0000242479 0.0019895491 0.0001152834 ·0.0000975436 ·0.0004463921 ·0.0000308672 ·0.0028780~2~ 
+·0.0000975436 0.0000714698 0.000326260S o.r:oon~'.3141(: 0.0021116940 ·0.0004463921 0.0003262608 0.0014932259 O.0001C54487 0.;)096726587 ·0.0000308672 O.O023141G 0.00014487 O.GO:[;86719 0.0006980569 ·0.0023780234 0.0021116940 O.C096726587 6006980569 0.0629623480 
+MATRIZ DE PARAHETROS ES~IHADDS 
+0.1795042300 0.002465i881 C.0024651881 ·O. 0227021520 0.0382662910 0.0146478530 (1, 0122862°º'.: ·[.0357506520 ·O. 0052904416 :.c2:rE:·f ·0.GJ92201590 0.0043839622 0.0134419790 •0,¿373953700 o. 056'.:398080 O. 0778592540 ·O.C47¿G22390 O.Q5il65838-0.03135&1068 ·0. 19070959'.iC ·O .129?3283CO 0.3081477J:JO 
+·O.Q3922590 0134419'i9D 
+O. 4~8396'.:Z ·~3:39537 -o.:.nnuo -D.c¡;9g~34g~ ·O.C32617B860 -o .042:rnm t.'.~0678H94U237043900 0.1S81146600 -0.l2141900 -0.L14i68900 ·0.43615558l;C ·O.U37591S80 ·0. 8795715300 -0. Ci8?l l992D t:.76221420GD 0~46540690 0.1839998700 O. l'7492i95GC o. 762mmn 
+PARAM!?ROS ESTIMADOS ,AL~A il 
+UH3M GOO 
+0.4 6B504400 
+O. 2C2~3425Dl: 
+·O .D34U904a10 
+C.ltS2s31e -G .159254Ci00 ·0.53374'.:2b O. 469563~5()0 ·O. lSL'.!·O. 44áD841800 0.0Bi665~460 
+iBETA l,J ! 
+0.03826629lJ 0.014647353D 0.0562435990 ·UOnt36603 ·0.0056996982 ·O. Gf:12 7 ~~::: ·0.0279843480 0.109917~800 ·O. 031611774G ·0.09(1241993(: ·O.9196L98 
+0.J~6d8D8C 0.J?7859254C 
+D.109917:80{: - l24729C90Q 
+·0.033759138C 
+-o.nrns:i% 
+O. :G~%&33Gl: ·0.436i493SGC 0.29%U03lGC Q. J¡;6J385 (;(! 
+G. c1:8a62 178 ·0.035:~ ~ES ~L · 0.00:2; 366 J3 O.OC83bijJb4 ·J.J0~8 1:64:0 · l.J:i~ ~, '286L' 
+a. ¡¡5:3i1•0co.~cc~3;4~,: 
+; .I C'1~~ :~0C 
+• ~i • ,: ; ' ... . • .. 
+.. :. ~: . . . .. ­
+·C.C D52904416 J.D2788?956C ·0.0056996981 ·D.~048:26420 ·0.0001132932 Q.~306788940 
+-o.oe11299csc ·D.Cl6991D64D ·0 .0 671964970 
+:_·,.:,0 4935475~ 
+0.3G8147:;CO 
+·O. '.;C~1%L% -0.25~;9f;ff¡ :.G7492!950C li. l2:603850C 8. :37430020G 
+3. ~ 76C0U 
+CUKIITA JU (MD) 
+RESULTADOS DE LA PRUEBA DE SIMETRIA 
+VALOR DEL ESTADISTICO : 0.000000040i VALOR DEL CUANTIL : 1.5500000000 
+SE ACEPTA rtO : S1HETR1A 
+r,,rtrtrrt,trrrr,,rxrtrírrrrrrTTtttTtTtTrtrtr 
+MATRIZ ESTIHADA DE COVARIANZAS iSIN RESTRICCION\ 
+0.0000733653 -0.00007041B9 ·O .OOOOC02504 -0.0000001389 
+-000070418~ 0.0001380346 -o. 0000057 835 -0.00(1(1032066 
+·0.0000002504 -0.0000057835 0.0000005160 0.0000002861 
+-0.0000001389 -O.C000032066 0.0000002861 0.0000001586 
+·O.OOOCOOOS87 -0.0000013569 0.0000001211 0.0000000671 
+-0 .OOOOD305 ·O. G000007 446 0.0000000663 0.0000000367 
+-0.COG00387 -0.0000008676 O. 0000000775 0.0000000430 
+·UOOGt:05~ -0.0000116?78 0.00000104tl 0.0000005778 
+-0.0000001150 ·O.OOOOG26493 0.0000002364 0.0000001311 
+·0.0000008139 -o. 0000186876 0.0000016676 0.0000009246 
+·0.00G00305 -0.0000000387 ·0.0000005C93 ·0.0000001150 -0.0000007446 -0.00C0008676 -(}000116778 -0.00D0026493 0.0000000663 0.0000000775 0.0000010421 0.0000002364 O.03E7 O. '.IOOO,0410 0000005778 0.0000001311 0.0000000155 O.OOOU000182 G.0000002445 0.0000000555 j. eC0'.:0~85 o.oooooorno 0.0000001339 0.0000000304 J.OOOlOG 0.0000000110.0000001565 0.0000000355 j. 00!i239 o. oouuDOJ5&5 0000021049 0.0000004774 O, 1j000000304 o.cocooocm 0.0000004774 0.0000001083 j,lUL0DC214? 0.tJOliOUl'.:505 O.C000033682 0.0000007640 
+t<l,"i'RI: ESTIHADA ;:g COVARIA)IZAS ¡CON RKSTRICCION DK SHIKTRIA) 
+~.483292l~ ·l. 5450 23b 0(i(, ·U.0807154430 -0.03005í9440 
+·l .5450233000 4.~523843GOC 0.2590387800 0.0967177010 
+·0.~8UUH30 o.~59P&00 c.ms713630 0.0050623980 
+·O. 03005794m O. 096717701G 0.0050623980 0.0019200182 
+0.(514":1780) ·Ú. 16~88662nt: ·O.00863077 87 ·O. 0032254069 
+·U2352'.:9~30 0.0755~54230 0.0039698687 0.0014791472 
+·O.rn813&7j0 O.11:81798[1(: 0.005883363'7 0.0021928312 
+·0.:3319~2800 0.5883906400 0.0309510330 0.0115515920 
+-'.U2418U40 o.omsMflG 0041180423 0.0015316205 
+·O .1 ~ 12265600.3582014200 0.0189787760 0.0070748098 
+·L ~235:39230 ·0.~348138750 ·Ú .1831992800 -0.0241893440 0755254 230 0.1118179800 0.5883906400 O. 0777849400 o. l:03969868i 0.0058833637 0.0309510330 0.0041180423 UC14791472 O. 0021928312 O.Oi15515920 0.0015316205 ·O.bj2515935i -o.oor:mm ·01%069460 -0.0025937260 i. COJ:5ii2C37 0.001;115088 O. 0090087715 0011955185 
+-0.0000000587 
+·0.0000013569 0.0000001211 
+0.0000000671 
+0.0000000284 0.0000000i55 0.0000000182 
+0.0000002445 
+0.0000000555 0.0000003912 
+-0.0000008139 ·0.0000186876 0.0000016676 
+0.0000009246 
+0.0000003912 0.0000002142 
+0.0000002505 
+0.0000033682 0.0000007640 0.0000053897 
+0.0514i17800 
+-0.1648866200 
+·O. 0086307787 ·0.0032254069 
+0.0054916306 
+-0.0025159351 ·0.0037259367 -0.0196069460 ·0.0025931260 -o. 0119485450 
+-0.1112265600 
+0.3582014200 0.0189787760 O. 0070748098 
+-0.0119485450 
+0.0055119247 
+G.00171i5088 O.D025376133 O.GI33495430 D.0017"3611& D.D:774827 CU900á7715 0.0133496430 O.02616800 J.G093325265 J.0430445370 0.G011955J85 D.0017736718 0.0093325265 D.00~246"t75 ~.0857514~28 Q,Q055119247 0.008177482" 0.04304452?0 0.JOS'\1~228 U.U265818l~U 
+MATR!Z DE PARAHETRDS ESTJNA~05 IALYA 1! 
+0.lá12400700  ·0.021577991U  ·0.0040998208  
+·D.0215;79910  0.067349160l  o.2~!392:~au  
+·0.0040998208  0.2283921000  Q. 787015400Q  ·G.lC856JU60 J.0505!46~0D  
+·0.U~5162726C  ·0.02985033;Q  ·D.108561U5DO  
+·U.0155006440  ·G.0028903502  0.C505146900  ·0.~U3136S~':  ·G,j0116!56  
+·0.02559ll75D  ·0.253DD955DD  ·0.3004631900  0.U6~:3b&4~[  -~.8434100990  
+·0.044814042 ·0.24779940CG  0.445968~700  ·0.CI1397 1 ~QC  J.03 13!1G440  
+D.0916505060  D.32120332ílG  1.386853!~00  -0.:u678J~:::r¡  -)i9885639C  
+·0.U580269220  ·0.0468808600  ·0.992865:9  C96&4973HL  ·G.0050790335  
+·0.1]7]~23700  ·0.028J97368D  ·0.29055719DO  
+0.039G751160  0.0132612730  -1.:021974000  
+·O.J25591175D  ·D.D448J;D42C  a.091E5a506D  ·U.~5~~ b~:_:  · .. :1119231~0  0.039Ql5il6r  
+·0.2530095500  ·0.~477994000  3.32l2D332GD  ·U.6~¿~860C  ·).2~81973680  O.CJ32612730  
+·0.300463I90J  0.44596847  l.396853l~JD  ·0.Sj~B'''~~~  · •. ~9D55718CD  ·l.2821974GC0  
+0.G621866420  ·G113977200  ·0.:067845700  0.. 963~q·9~~  !.0~69770840  162~193500  
+·0.8C347~D99Q  D.D37lll~440  ·b.D19H8S5~9D  -;;,~~)r -~' '~­ ~.J~23l3~80&  ·D.JDC~~47~2~  
+·0.0926730300  ·Q.4596409000  ·l.42075!70UJ  l.~9':¿~ ',~J  :._~66252300  l.1897030000  
+·0.~5964D90DO  ·D.9593485500  ·l.1373792jG~  O.Gs~=· ,::,  [.:6&2~:~D40  1.31:~56§~:c  
+·l.~2G7517DOO  ·!.13~3793DOC  3.133551:~oc  .¡ .~~'9i,~~~:  : .SS!C90CC  ·1.89]548ICCO  
+1.09708C70DD  D.9955:14SD0  ·l.83799890jC  ).:~:,:  ·,.,53S6316:u  D.9l497~2~~~  
+0.2466252300  D.C688~24C  l.S8I09D0COD  ·c .• ~~S'\.~cc  ·J.3~~55!310D  ·2J7655350D  
+1.189?G~80LO  1.31~7569UD0  ·1 .8915481~:f;D  ).~=~~  -:.~: ~bJj~  -:.~20i;IJ4 1 D0  
+
+PARAMET?OS ISTIMAD8S iALlA 1¡ 
+D.E4565'.850C 0.36~10369 0.6~lSBB2lGO ·0.1506884lCO 
+·0.05~0765730 
+·0.7:91:69500 ·0.;64C6158DD 1.3999982000 ·O. 5475"620L ·O. 329131510 O. 513S2~B8U 
+2.:59GGOC~ 
+.¡:;;, :F: ·:3 ¡¡ .11 11 . r ,ir.'h,, U:) •C:) ::: :¡; 11 :) ;F:" L.. ..é!b.. :'.''3: 11:.:.• :i:;~: 11. 11 :i:::: .¡ ) ;E:: ¡¡,,.ru ,,!'.:!,._ !\''·JI ILJ• /\. T ri,.¡ :;:~¡; H..11 ll'i.;D C:h S 1.JI 'l" 
+~AM S : .:l DC S-186 91/08/15 01:08:52 PAGE ~QOf :. ·1°JI_IIJ,j-RQ~ER01. IN~Ul: E X E C :J r i rJ G 
+160 CHECX Faa DQNESTIC PRICES: 
+!60 PAR AMETER VD DONfSTIC PRJCES 
+PO 
+:): ,03,686 
+l' SO 8. ; 13 
+l] ?76.'.>29 
+A~ :ios.~as is ~25 ,320 l6 i 93.948 .) ; 140,00:. l8 1io :· .J29 
+¡g !1; 8.: i llO  1J.709 l 1; :.66.á78 
+A.I{ ' ~as.o:6 
+' JI ~HECI ~ESTRIC1I0~S 
+·11 i·HMIEiER fl A~. •:HE CX REmICl JONS IN JtlDIJS1 RIES 
+~m·:1 1:R :5~ 1 C~:S7 CROSS3 CROSS4 CROSS5 
+~l. 3.JOJOOOE-S 1,: OOOOOf ·5 1.iOOODOE·S UOODOOE-5 3.000000E-5 ~K ,.900000E-5 ;.JOOOOOE ·5 1. 500000E ·5 2. IOOOOOE-5 2.600000E-5 .u : 'o oo , .900000E-5 2,bJOOOOE-5 1.SOOOOOE-5 l.300000E-5 .,,, \ . Qoo ,' ,OJOO OOE -5 ?, JOOOOOE-5 I.SOOQOQE-5 1.900000H 1.900000E-5 ll l • oo;) ?.OOOOOOE-S ,. IOOOOOE-5 j,~OOJOOE-5 l.600000E • 5 1.SOOOOOE-5 H ; . JOO OOOOJOE-6 2.900000E·5 3.JOOOOOE·S ,.900000E-5 3. SOOOOOE-5 lS '. 030 :. iJOOOOE ·5 2.bOOOOOE-5 L 200000E ·5 U OOOOOE-5 3. 1OOOOOE-5 .5 1. JOO 7.400000f-5 2.600000E-5 7. ~OOOOOE ·S 3. SOOOOOE-5 2.400000E·S ., 
+: . JOO ;,300JOOf-S 3. SOOOOOE ·S 7.600000E-5 1.300000E-S I.JOOOOOE-5 is ! . Jo o A3 1, ,:oo .\ 1O 1. OOO A11 1, JO O l.i0000Gf·5 J.: OOOOOf ·5 ,.900000E-5 1.,00000E-5 2. 3OOOOOE-5 ,l' ' l.OD¡) 1.8GOOOOE-5 UOOOQOE-5 ~.SOOOOOE·S 2.200000f-5 3.OOOOOOH
+" 
+, Re; ;5 CROS57 •:R!1SS8 CROSS9 CROSSIO CR05S 11 
+11?, /.!h.. ::::::; IU• ¡¡::::: J[ 11 ... ][ ;?~' .11r.~1,. j¡'':,J! I[) (~) 
+40 
+~l I, 1OOOOOE-5 2, SO;JOOOE • S J.JOOJOOr-~ :.~OG:JO,]: ·S l .6:JOODOE-5 ,.IOOOOOE-5 'IIK 2,600000[·5 ?.JOOOOOE-5 ?.iJOOJOE-: : .OOOOJ,H · ) ·. lílJOG J H I .J OOOOOH U OOOOOE-5
+~ 1 ?.300000E-S 
+1. soooooc -s i ,SOOJOOE-S 3.?GOOOO,-~ . . ':]1J;) }: -: i .300JOOE-S ,.SOOOOOE-5
+~, 
+-~3 1. 900000E-S ; •SOOJOOt ·S 2.600000h : .kuJ,jo,i:-: : . JJ1000E-'J 3, i OOGOOE -5 
+;j¡ PARAMETER ELA S 
+CRQ,S 6 CRQS S11 
+a UOOOOOE-5 '. .5,D:Ht -~ i .OOOODOH ~5 i .QOOOOOE · 6 UOOOOOE-5 2.IOOOOOE-5 ; . 3JnJJ GE ·' ;,:;JOOOOE-5 ?•600000t · 5 :.6 id OOOOOE ·5 ; . 000000 [ -~ 2. .000JOE-~ .. SGG})J r-·i : . ::iO OODt · 5 2. BO OOO JH ~) J.OOOOOOH /,iOOOOOE-5 l.10 0000i·: ;,,O;JIH·i :.-~OOOOE·S 2.6 00000H 
+"\ \ 2.OOOOOOc ·5 ,, JOOOODE-5 2.800000f ·S : . ~,J ;JVG ~i: · } 1. 5:JOOOGc · S ; . IOOOE-5 ." : ,300 0:) 0f-5 1.SOOJOOE · S 1. 6:lOQ ,iOE · ' : . •JJO!JJ·H-, : .JOC.JQOE ·5 ;,JOOOOGE-5
+111 i 
+(RQSS 12 
+~L :i. SOOOOOE -5 ~K 1.SOOOGOE·S ~ 1 3.200000E ·5 A2 , • IOOOOOE-5 l.] : .SOOOOOE -5 .\4 1. aoooooE -s :.5 UOOOOOf-5 -~6 l . JOOOOOE-5 :.7 UOOOOOE-5 :. 1l l.)OOOOGE·S ~ li ?.40 00 00é ·5 
+~3 !,JOO ,. OOOOOOE-5 ~.551:::-1' ,;j,]' ... -·.J;JJOO i -5 7, OOGE-6 ~g :.JQO :.OOOOJOE-5 :, ;'SS6é·'' ·,.,
+, ,, ·.J!);)J01E-~ 5.JOOJO-B 1 , ;; QO ·1.00000E·ii : . DJOD ~Ji=-~ · , .O!l i!GOf ·5 5 .OOOOOilE-6 
+CR QS'.:.Kll 
+~3 5.DOODOGt·i s. 000000, -., .. ,jQ00-J: ·;i ' :L ·L· · : . .,OQG JO f·~ 1. JOOGt-6 ¡9 5, Qa13QOE -6 ·7,D OilOOf-5 ••• 0;) 0;);)f · 5 · i . . ·: ,-;:; · , . jG ,JJO OE·o ·i .Joon~E-5 
+l 1o : . GOOOE ·'> 2.DuOOG OE-5 -~.OO > i , , ,. ;_::, .JD ;JQ0~-6 · ?.;J 00 :1Gi·6 
+AJ -~ .JOJOOE-6 
+A9 -2.JOOOOE-6 
+839 CHECK fOR RESULTS: 
+ll9 PliAMEIER DYI 1 PAiA~ETER 0112 ~ARAMETER Olll PARAMETER OY14 ~ARAME!ER DYIS PARAMEIER 0116 PARAMEfER OVIi PARAMETER 0118 PARAMETER 0113 lARA~ETER OYI 11 PA~AMETER OY112 
+l30 CHECK fQR RESOLIS: 
+330 PARA~ETER GY21 ~ARAMETER 0122 PARAMETER DY23 ?ARAMETER DY24 PARAMEIER OY25 ~ARAMETER JY26 ~ARAMETER ov;; PARAMETER DY78 PARA»ETEA 0129 PaRAMEfER OY~11 PARA~ETER 01212 
+102! CHECK FQR RESULTS: 
+·o~: PARAMETE2 DYJ i ~,aa~E:EA (Y32 ~JRA~ElE~ DYJJ ?lRAMETER 0Yl4 ; lRAMElER GYJ5 )ARAMETER 0136 ;ARAMETER DY3l 0ARAMETER DY38 ~ARA~ETER 0139 PARANETER [Y311 ~ARANE 1ER GY31~ 
+; 112 (HECX fGR ~ESULTS: 
+: 112 PARAMETER OY41 
+3531 .201 CHECK RESlRICTIONS ·221.890 CHECK RESTRICTIONS 
+0.000 CHECK RESTRICTIONS 51863,615 CHECK IESTRICTIONS 
+830.763 CHECK RESTRICTIONS 
+345.004 CHECK RESTRTCTIONS 0,000 CHECK RESTRICTTONS 
+0.000 CHECK RESTRICTIONS 
+0.000 CHECK RESTRICTIONS 
+-398.289 CHECK RESTRICTIDNS ·1068.342 CHECK RESTRICTIONS 
+551.819 CHECK RESTRJCTJQNS 3590. 112 CHECK RESTRICT!S ·516,75• CHECK RESTRICTIONS 
+•3.603 CHECK RESTRICTIONS 14,619 CHECK RESTRICTIONS 
+749.9•) CHECK RESTRICTIDNS 4480,712 CHECK RESTRICTIONS 
+53.501 CHECK RESTRICTIONS 
+101.286 CHECK RESTRICTIO~S 
+105.940 CHECK RESTRICTIONS 2369.055 CHECK RESTRICTJO~S 
+1728. 153 CHECK RESTRICTJGNS 
+234.352 CHECK RESTRICTJS 23493. 159 CHECK RESTRICJIONS 
+606.875 CHECK RESTRJCTIONS 98,312 CHECK RESTRICTIDNS 
+16622. 1,1 CHECK RESTRICTIDNS 3•S.b61 CHECK RESTRICTIONS 
+15.314 CHECK RESTRICTJONS 
+34.715 CHECK RESTRICTIONS 
+20164.728 CHECK RESTRICTIONS 992,048 CHECX RESTRICTIONS 
+1509.150 CHECX RESTRJCTIQNS 
+PARAMEHR OY42 
+1112 ;JARA~ETER O'( 4 3 PARAMETE R O'/hli PAWIETER O'/ 4 5 ~ARAMETER OY46 PARAMETER OH; iARA~ETE R 0'/48 PA~AliE if R DY49 PArn1EHR 0'1411 í ARAMEIER !: '14 12 
+1203 ;~HECK FQR RES IJ LIS: 
+1203 PAWIEHR 0'/51 ~ARmTER 0'152 PARAMETER 0'153 ?ARA~ETfR 0'15~ PARAMETE R 0'155 ?ARmm O'15 6 PARAIHiER D'/ 5 7 ;JAWIEHR O'15 8 PAWIETE R D'l 59 ~ARAMETER O V 511 PAR AME TER ovs:; 
+!294 CHECI fQR RESULIS: 
+!294 PAaAMETER Q'/6i P.\RAMETER C'/6; ;>ARAMfTER 0'/63 ;·ARA11tTER 0'164 PARHtETER /GS ~AWIEHR D'/66 ~A~,l~tTFR 0'/51 ~AR~~E IER C'/68 PA~ANt!ER 0'/6 :~ jAR~1tE T H 0'/611 ~ARAMETER D'/6 \2 
+1¡as (HECK ;oR RESULIS: 
+;J85 PIRAMETER O'/l 1 PARA ,4EHR O'{)? PARAMETER OYJ3 ~AW1ETER D'/i4 
+1185 PIRAMEiER G'/15 
+42:,059 CHECK RES TRI C T !Oll S 
+:s1;:.;45 CHEO RESTRICTIOIJS 
+11957.676 CHECK RESTRICT IOllS 
+204J,465 CHECK RES TRI CTI Dll S 
+?008.,13 CHECK RETRTCTIOIJS 
+000 CHECK RESTRICIJ,JNS 
+0.000 •:HE CK RES TRI CTI OIJS · l 1:. t08 •:HE CK ~ESTR1CTl01l5 
+-' 8 6) , J9l :HECX RESTRICIIDrlS 16 t 6.4i6 CHf CK RESTRICT !DllS 
+·5i84, ;92 CHECK RES!RICIIQtlS -:-? :.9,0 :HtCX RESTRICTlOtlS
+1
+gJg, •• a CHECK HSTf.'ICT!OllS -i 8)5 ,286 •:HEO RE :3T RICT 1DtlS ·Jl)86, ; 84 •:HE CK HSTRICTIONS -: 08 :, 50! .:HEC K P.ESTRETIOllS -~ 48,514 •:HE C:< ~ES TRI C T !011 S -l ~ ¡:). 5J 4 CH,CK H STP.E il E ~ ; ; 1 . 1a1 (HfCK RfSTRICTIOllS 
+• 1 2~ ~ ! 1;;: •:HE CX RESTRICTIOtlS , :; ; 8 .. 5 5 :~ECI RESTRICTIGNS 
+·, ] JL,G~J ~HECK ~ESTRICTIOtl S _,d:,¡:: CHECK RESTRICTIGNS ' i 5~. ·: 6 CHECK RESTRICTiGNS ·jJS O,. 'i ~HE CI RES TRlCTIDN ~ h J : .sa : ( HECI RESTRICTTQU S -; ; ;: ,J1 0 CHf•:I RcSTRIC i lOU 5 n ••. •:i i C~Ec:: RE :'. ,ICT [Oll S ·' '1Q ij ,J?2 :HECI RESlRICTIQNS a1S5, ''6 CHECK RESlRICTIG~S 
+;:; ;], 15! :HE -~K P. b TRICTIQIJS •JO: .Jh3 [ HECK RESTRICTIONS :'& J .: 59 ~HECK RESTRICTlONS 
+-... :·: .~ ;3 ·~H·~K RESTRICTilS ·~' .. 11 CHE~X RESTRICTIQtlS 
+PARAMETER llY76 ~AWIETER OYJJ PARAMETER DY78 PARAMEHR D'/J9 PARAMETER OYJII PHAMETER OY71] 
+1476 CHECK ~GR RESULIS: 
+1476 PARAMEIEP. OY111 PARAMETER 0Yl12 PARAMETER OYl13 PARAMETER llYI 14 PARAMETE RO'/ 115 PARAMETER OY 116 PARAMETER 0'1117 PARA!tETER 0'1118 PAWtETER DY119 ~ARAMETER DYllll íiARAMETER llYll 12 
+1561 CHECK FOR RESULTS: 
+1567 PAP.AMEIER 01121 ?ARAMETER nvm PARAIIETER G'l 123 PARAMETE R 0'/ 124 ''A~A~EIER 0Yl7S PHA~ETE~ 0'1126 PARAMETER DYI)) PARAMETER DY 128 PH,\MfHR DY129 PARAME1Ef: DY1211 i'ARAMEHR OYl]I] 
+1935 CkECX FOR RESOLIS: 
+, 935 P,IRAMETER 011 PAR AME TER OV2 PARAMETER DYJ PARAIIEHP. GY4 nRAMEíER D'/5 PARAMETER DV6 
+1935 PARAME íER DYJ PARAMETE R QY 11 PARAltErER QYI ; 
+-1602.538 CHECK RESIRJCIJDNS 14578,079 CHECK RESIRJCTIONS 3109.957 CHECK RESIRICIIONS 3835.822 CHECK RESIRICIJONS 19687,073 CHECK RESIRICTJONS ]099.148 CHECK RESIRJCTJONS 
+4314. 766 CHECK RES1RJCTl0tl5 
+971.781 CHECK RESIRICIIONS 
+-20391.423 CHECK RESIRJCIIDNS 4081.278 CHECK RESIRICTJONS 2321.997 CHECX RESIRICTJONS 2521.718 CHECK RESIRICIIONS 4052.803 CHECK RESIRICTJOtlS 1540. 765 CHECK RE SIR ICTIDNS 8780,267 CHECK RESIRICTJOtlS 
+57726.269 CHECK RESTRJCTJONS 8981. 005 CHECK RESTRJCIIOtlS 
+12777.671 CHECK RESIRJCIJOUS 1016. 105 CHECK RESIRICIIONS 5543.952 CHECK RESIRICIJONS 13806.717 CHECK RESIRJCIJONS 6046,480 CHECK RESIRICIJOUS 9108,620 CHECK RESIRICIIONS 1111.323 CHECK RES1R1CIJONS 6106,865 CHECK RESIRICIJONS 5391.692 CHECK RESIRICIJONS 91904,533 CHECK RESIRJCIJONS 19438.973 CHECK RESIRICIJOUS 
+66882.062 CHECK RESIRJCIJONS 14285.404 CHECK RESIRICIIDNS 66058.089 CHECK RESIRJCIJONS 58566.388 CHECK RESIRJCIIONS ·]9503.906 CHECK RESIRJCIJONS 24518.208 CHECK RESIRJCIJONS 81809.842 CHECK RESIRICIJOUS 72207.885 CHECK RESIRICIJONS 209944,251 CHECK RESIRICIIONS 
+RESULTADOS DE LAS PRUEBAS DE COSTOS V PRECIOS UTILIZANDO LOS PARAMETROS ESTIMADOS­
+~00EL 10JNG·A0MER01 5l EAD1·S TATE) E l E ,: il T i 11 S 
+:60 CHECK fOR OOMESTIC PRICES: 
+i60 ~AR AMETEr. PO OQ~ES TIC PR iCES 
+PO 
+:. 1 10 3. 53.6 ..,, , SO 8, ¡ 1J AJ ,;un ~~ , OS. ~85 .s ii , 6, 9, D A6 193, 9/18 ,l ) 5u0 ,0 04 l8 ~Di . 029 ~9 .)8,,24 ~IQ i. ; O.: O9 
+,. ' 
+J
+.. , ,66 . ~)8 
+:. 1? 'i05 . O16 
+; 1 ( HE CX RESTRJ CII ONS 
+CHECK RESTRICTIONS QN INDUSTRIES 
+CROS52 CRO SS l CG'. OSS & CRO SS5 
+•t J.JOOOOOf-5 1. lD OOOOE ·S , . 1DODOO E· 5 2.500000 E·5 3.000000E· 5 , ~ 2.90 il DOOE· 5 2.J DOOODE· 5 l. 600000E ·5 2.100000E·5 2.600000E·5 ll !.0 00 , .3 00 0D OE·S , . • O,JOOOE·S 1.500000E·5 t.JOOOOOE·S </ :.ooa 2.000000E-5 , .í OOOOOc·S l.500000E·5 l.900000E·5 1.900000E·5 ,J 1, :JO O ! .O OO OOO E-5 2.i OOOOOE-5 3. 400 000 E·5 l.600000E·5 1.SOOOOOE-5 l h 1,0 00 6.000000 t·6 : . 900000E· 5 J,300000E·5 2.900DOOE·5 3,SOOOODE-5 ~5 1.000 7.l OOOOOE·S :.400000E·5 2.700000E·5 2.400000E·5 3. tOOOOOt-5 lo 1,000 ?. oOOOOOE-5 7. GOOOOOF.·S ?.40DOOOE·5 3.800000E-5 UOOOOOE-5 ¡¡ l .J OO 7.JO~OOOE· S l. 5000DGE·5 2, 600000 f ·5 l.300000E·5 I.JOOOOOE·S :.:3 i. 000 l9 l ,.JOO l 10 1.00 0 i1; 1 .000 i. 100000E·5 3, 700GOOE·5 7.900000E·5 1 .200000E·5 2.300000E·5 ll l U OO 1. 3000 00E· 'i 1.8000 00E·S ;, SOOO OOE·S 7.2 00000E·5 3.000000E-6 
+CRQSS6 CRDSS7 CR0 SS3 :;
+·o; ·; g CRQ~.S10 CRO SSI 1 
+Wl ! , l,JOOOO t -5 /.SOOOOOH 1.30GOilOt·~ '. :1 000 0J; -s : . 5JOQ:}QE-5 l. :OilOOOf -5 '1/K 2.600000[-5 ; •JOOOOQE-5 7.. iOOJOOt ·5 J. DOOO!Ot : . !OOGtlO.:-~ l, 300 0OH l 1 ;', 300000f -5 l.JOGOOOE·S A2 l .ti OOOOOE-5 2.5000JOH J. : OOGjOh ; . ',;Jo i) o; .~ ;. 3000 :JOE-5 ',500000i·5 A3 UOOOOOE ·5 2.SOOOOOf-5 , . SOOJOO t · ' : . sO JJ :-•~ : .QOO ~;JOf -5 3. \OO OOOH .\4 , ,:iOOOOOE-5 : .5iJOQ .j.J'.'. -~ 3. OOOOOOE · 5 
+i .O OOO OOE·6 UOOOOOE·S i, :ooJOOE·S l.1000J:jé·) . ¡00008F. ·5 2. 60000JH A6 4 .900000E ·5 1.000000E-5 ~, 400000[ S ,.~OJG i · ' .. \JOOOG i ·5 2.800000h A1 !. OOOOJO E·S 2.JOOOOOE-5 l.1000 00 i -~ : . .j JOQ ~;Jt. -~ : . ¡QQG;JJ E·S 2.600000H -~11 2.000000E·S 2. iOOOJOE ·5 U OOOJOE ·S 1. :GOO:)i -~ : . SOOOOOf ·S : • i OOOO OE-5 A12 l ,3 000;JOE·5 1. 80 00JOE ·5 l. 600000[-5 ;· .aooow -~ ; .JOJnDE -5 2.\00000E-5 
+.\S 
+( RS I{ 
+i/l 3. SOOJ!Jilf ·5 wx l. 500000E ·5 A\ l. ~OOO OOE ·S A2 , .1GO OO OE·5 A3 2.SO OOOJF.-5 A4 \ , 800000E · 5 AS J.300000E ·5 ,16 3. lOOOOOE-5 .A1 ;.,OOOOO E·5 ~ \ \ ;,) 0000 :JE -5 :. \? 2.4tlOO;JOf-~ 
+153 CHEC~ iESTRICIIONS 
+.:f:JS::< 5 
+~8 1.000 ;,Q,)OOOGE-6 s.ss11:,-1; 'i.iJiGL :,, ,)O,W·:i i,J¡jOJOOE-5 .\9 :.000 ;,OOOODOf-~ ,,;'S5·:; S.~.:J(::;:--: J;Ji]J:iOE·S S.00800DE·5 ~ 1 O . JGO · 1 • JOOQO E· 5 : . OOOJDO f • ; · 1 • ' :J ' ; DQ.J ·l i · 5. OOOOO:j f · 5 
+UOOOOOE-i, 5. jQOOE ·6 ·; .D008:,¡-j : ••; ;'; ; ,; ; : • . • _; 1JOOGQ, -6 : •aOO:)OGE • S
+~ª 
+.\9 ), ilOtlOOn¿-& -2.0tlQE·ii -~.j000' -5 .e::>·, º,;;OG0:Jf-:; ·3.:JOOf-~ ~ 1') ; . OOOOGOE ·6 , . OOOilOOf · 6 ·i .00Gi)Oi· 1 ·: .. ,, , -.~JOOQi-6 ·2.JOCJOE-~ 
+:.8 ·2 .O OOf -6 l~ ·J. JOOOJE·6 
+115 ~HEC K F0i CQS!: 
+g15 PARAMEIEP. COSTI PHAMEIER ,:QSTt ¡;ARfER CQSTJ PA RAMETER CoJSl4 ilARAma CQSIS i ARAM 1EP. C0516 PAWIETER CQS II PA?.fTER cosTa f'ARAIIEIER CC•S19 PAliAME TER COST 10 PARAMETER C0ST11 PA~AllflER C0ST12 
+1056 CHECM fQR PK: 
+:066 PAliAMETER PK! PARAMtTER PO ~·AR AME TER PXJ PAR AME TER f·K/¡ F'ARAMETH PKS PARAMETER PK6 f·ARAMEHR PXJ PARAMEHR PK8 PARAl!ETER ;xg PARAMETER PXID PHWTERnll :·u~.iHTER n12 
+11, 5 PARHiE TER Dl: ;·HAMiTER Ol2 PA ~A~ElfR ll PhA Mf;ER LJl4 :-A ~AMEIU [•l~ PHAltfTH ,~l6 r· ARA~ETER ~Ll ~Ai:A~tTU C•L S C·ARA.~EHP. [,[9 ~A R~MEiER Dl. 10 iARAME:ER Hll P.IRAMETER Dl 17 
+1~36 CHECK fQR P Of MA CHINERY: 
+1? 3 6 ~ARAME TE P. KM! PAP.AMtlE ~ IM2 "-IRA,~ETE~ KM3 nP.AMEHR KM/¡ 
+/i03,8/i3 CHECK CDS! 508,672 CHECK CDS! 276./i07 CHECK CDST /i05.293 CHECK CDS! /i26.736 CHECK CDST 
+393.923 CHECK CDST 
+540.163 CHECK COST 
+•07.209 CHECK CQSl 
+478.233 CHECK COSl 
+470.296 CHECK COST 
+466.640 CHECK CDST 
+505.214 CHECK CDST 
+430,/¡/¡5 PRICE Of CAPITAL 
+428.993 PRICE Qf CAPITAL /¡/¡ 6. O O 1 PRICE Of CAPITAL 
+433.058 PRICE Of CAPITAL 
+4
+14 . 6 3 1 PRICE Of CAPITAL 
+
+423 
+.091 PRICE Of CAPITAL b2 1 . 14 O PRICE Df CAPITAL 
+
+
+420.070 
+PRICE Df CAPITAL 
+
+421.934 
+PRICE !)f CAPITAL • 27. 97 1 PRICE Of CAPIW 4 3 8. 117 PRICE Of CAPITAL 
+
+
+•21.418 PRI CE Of CAP 11 AL 
+5993369.225 CHECK D fOR L 22 0219.948 CHECK D fOR L 126976.346 CHECK D fOR L 669500.252 CHECK D fOR L 410499.595 CHECK D FDR l 178533.911 CHECK O FOR L 196478.457 CHECK D FOR l 202652.452 CHECK D fOR l 170034,753 CHECK O fOP. L 1945330.079 CHECK D fDR L 
+l. l37797E+7 CHECK D fOR l 563964.352 CHECK D fOR L 
+0.599 P Of MACH 
+0.643 P Df MACH 
+O. 18 O P Df MACH 
+O. 5 9 5 P O f MAC H 
+PAR~METER rns .] . 8 8 O JF MACH PARA ME TER KM6 ,]. i?9 ,JF MACH 
+".C
+PHAMETER m o."1; :, ., p ·.:r MACH PARWTER rns O.; 92 ,JF MACH PARAIHTER m J. 312 ,JF MACH PAWiETER KM 1 O ¡J. 8 ~ JF MACH PARAMEHR KU\ 1 ,].Si 3 :J F MACH PARAMEIER KM! 2 ] . 7.11. ~· 'J F .1iACH 
+~
+132; CHEK rnR r OF rn~s m1c r; :::u 
+1327 PARAMEaR m j, : .' 5 OF CC•tlSl PAWIEHR XC2 ~. =~ 3 "JF ,: l sl PARAMElER m :). 6 3 1 OF CONSl PA~mm XC~ o' :'l9 p •jf' -~O NST PARAMElER m :; • S2 'JF eoti s r ~ARAMEHR XC6 J. i") iJF :otm ~ARAMElER KCl ]. 13~ ·JF CGtlSl PARAMf lER m J. : ] 3 QF :Ctl S l 
+PARmTER m U66 JF ,: QtlS l 
+."C 
+'_,·f
+PARAMEHR KC10 ·1. ; ::i? : DtlS l 
+m1 ,) • j g; p ;_:r ,:,JtET
+PAP.AMElER 
+PARAl1EH R KC \/ ). : J ~ ~· OF j~QNST 
+'l 8, CHECX FDR QF VEHICLES 
+:38: PAWIE;cR X11 I u:.~ ,. '1F :wis 
+•. : Q.;
+?AWIETER KV1 r r. JF 'RAIJ3 :: ARAMErER XV3 ¡. ';] g ,]F ;mis 
+PARAiHlER KV~ ) . )6 0F iRAtlS PHAMEHR !'V5 ;.,B e ;JF ;RAtE PARAl1E HR KV6 ·.: r ~VIIS
+l , :·' ,"C 
+), ¡J :-, RAt/S
+;ARAf1EH R KV) JF PAWETER KVB 1 ' '~ J f: f ;u,43 ·. ' . ..., ",·
+1~1 r
+"AWidtR KV9 .', 1: '.RAtE 
+PHA>íEiER KV I.'' ... : 3 ·JF '.RANS 
+C,
+PAR lN ETf. R KV 11 ·}.;) · 1 e ]F TRAtJS ¡ARA~HER X'•i 1? .895 -:ir r~~NS 
+1506 CHE ,2X f ·JR DEMAIJO [1~ ,AP ,j C1 GO -~ 
+1506 PARAMEH R DY8 ~ :_; ~~ 3 . :. ~ : QEf1MJG F•)R MACH ~ARAMETER 9 . ; ~ ' ·: ~ : CUIAtlG ~OR '/EH ~ARAMf TER [;YIO ~.3:~~ -~. S~3 GfWJD fiJR C(HJS l 
+1561 CHEO F•}R ~ 1/, ~..: ;-P. 
+1561  PARAMEIER PVRI PARANEiER PVR;, PARfER PVRJ PARAMETER PVP.4 PAR AME TER PVR5 µARAMUH PVR6 PAf:AMETER PvR 7 PARAMEIU PVR8 PAWIEIER PVR3 i' ARAMEHR ?VR1G PA~A~ElfR PVR l1 f'ARAMETER iVR 12  1459 . 641 P V OF 851. 106 P V OF 203.990 P V OF 214 7. 912 P V OF 1801.502 P V Of 1H2.967 P V OF 1015.608 P V QF 1445.282 P V OF 12 84. 711 P V Of 3213.541 P V OF 1106.644 P V QF 1987.786 P Y OF  R R R R R R R  
+1641  (HECX  FQ~  RESU LTS:  
+1641  PARA~ilH ,j K! DARAMEHR GO ?ARm :a DKJ PARmm OK4 PARAIHTER QK5 PA~ AMETfR OK6 µARAMm QKJ PARAME !ER OKS •·AR AME TU QK9 PARAMEHR OK 10 PARA~ETER OK1 1 PARAMETfR OKl2  80790.779 CHECK OK1 24866.871 CHECK OK2 206584.091 CHECK OK3 39188.323 CHECK DK4 17186.419 CHECK OK5 34824.013 CHECK DK6 36857.856 CHECK DK7 17020.516 CHECK OK8 20701.475 CHECK DX9 6668.742 CHECK DK10 728284.881 CHECK DK11 42090.706 CHECK DK12  
+1ih ; Ilt SIJHMAR'I  
+EXW!II::tl  TIME  S.110  SECGIJOS  VER:  386·EK·009  
+
+BIBLIOGRAFIA.-
+Banco de México S.A. 
+«Cuentas Nacionales y Acervos de Capital, Consolidadas y por tipo de Actividad Econica» Documento del Departamento de Estimaci Econica. 
+Berndt, E.R., M.N. Darrough and W.E. Diewert (1977) 
+«Flexible Functional Forms and Expenditure Distributions An Application to Canadian Consumer Demand Functions» International Economic Review, Vol. 18 (3): 651 -675. 
+-and Laurits R. Christensen (1973) 
+«The Translog Function and the Substitution of Equipment, Structures and Labor in U.S. Manufacturing 1929 -1968» Journal of Econometrics, (1) : 81 -114. 
+Burgess,  David F.  (1974)  
+«A EquThe  Cost Minimization Apations» Review of Economics and  proach to Statistics,  Import Demand Vol.56:225-234.  
+
+Christensen, L.R., D.W. Jorgenson and L.J. Lau (1971) 
+«Conjugate Duality and the Trascendental Logarithmic Production Function» Econometrica, July 39(3), pp. 225 -256. 
+(1973) «Trascendental Logarithmic Production Frontiers» Review of Economics and Statistics, February 55(1), pp.28 -45. 
+Despotakis, Kostas A. (1986) 
+((Economic Performance of Flexible Functional Forms Implications for Equilibrium Modeling» European Economic Review, 30:1107 -1143. 
+Diewert,  W.E.  (1971)  
+«An Application of the Shephard Generalized Leontief Production FuJournal of Political Economy, Vol.  Duality nction» 79 (3):  The481  ore- m A 507.  
+
+Guilkey, David K. and C.A. Knox Lovell (1980) 
+«On The Flexibility of the Translog Approximation» International Economic Review, Vol. 21 (1): 137 -147. 
+I.N.E.G.I. «Sistema de Cuentas Nacionales de México Tomo I 
+(Resumen General), y II (Cuentas de Producci a Precios Corrientes y Constantes» 
+Johnston, John (1984) 
+C<Econometric Methods» Me Graw Hill ed. (Third edition) 
+Jorgenson, Dale W. (1986) 
+«Econometric Methods for Modeling Producer Behavior» Handbook of econometrics, Volume III. Edited by z. Griliches and M.D. Intriligator pp. 1841 -1915. 
+Judge, George G., R. Carter Hill, William E. Griffiths, Helmut Lkepohl, Tsoung-Chao Lee (1988) Kmenta; Jan and Roy F. Gilbert (1968) 
+C<Introduction  to  the  Theory  and  Practice  of  
+Econometrics»  
+John Wiley  and  Sons  ed.  (Second edition)  
+
+«Small Sample Properties of Alternative Estimators of Seemingly Unrelated Regressions» Journal of The American Statistical Association, Vol.63 pp. 118O -12 00. 
+Lau, Laurence J. (1986) 
+«Functional Forms in Econometric Model Building» Handbook of econometrics, Volume III. Edited by Z. Griliches and M.D. Intriligator pp . 1515 -155 6 . 
+Parks, Richard W. (1969) 
+«Systems of Demand Equations : An Empirical Comparision of Alternative Functional Forms» Econometrica, Vol. 37, No. 4. 
+Perroni, Carlo and Thomas Rutherford (1989) 
+«Regularly Flexible Functional Forms for Applied General Equilibrium Analysis» The Centre for the Study of Intrenational Economic Relations. Department of Economics. The University of Western Ontario; London, Canada. Working Paper No.8906c. 
+Pollak, Robert A. , Robin C. Sickles and Terence J. Wales (1984) 
+«The CES-Translog : Specification and Estimation of a New Cost Function» Review of Economics and Statistics, Vol. 66: 602 -607. 
+Pollak, Robert A. and Terence J. Wales (1987) 
+«Specification and Estimation of Nonseparable Two­Stages Technologies The Leontief-CES and The Cobb-Douglas-CES» _J_o~u~r_n_a~l~_o_f_P_o~l_i=·t~i~c~a~l~E~c_o~n~o=m~y, Vol. 95 (21): 311 -333. 
+Sant, Donald T. (1978) 
+«Partially Restricted Reduced Forms Asymptotic Relative Efficiency» International Economic Review Vol.19, pp. 739 -774. 
+Theil, Henry (1971) 
+«Principles of Econometrics» John Wiley and Sons ed. 
+Villalpando, Luis Hernández y Jes Fernández Morán 
+«La Encuesta de Acervos, Depreciaci y Formaci de Capital» Banco de México. Direcci de Investigaci Econica. Gerencia del Sector Real. 
+White, Halbert (1980) 
+«Using Least Squares to Approximate Unknown Regression Functions» International Economic Review, Vol. 21 (1): 149 -169. 
+Young, Leslie and José Romero. 
+«Dynamic General Eguilibrium Model An Application for Mexico» Scratch Notes. 
+Zellner, Arnold (1962) 
+«An Efficient Method of Estimating Seemingly Unrelated Regressions and Tests for Aggregation Bias» 
+Journal of The American Statistical Association, Vol.57 pp . 3 4 8 -3 7 5 . 
+(1963)  «Estimators  for  Seemingly  Unrelated  
+Regression  Equations  Sorne  Exact  Finite  Sample  
+Results >>  
+Journal  of  The  American  Statistical Association,  Vol.58  
+
+pp . 9 7 7 -9 9 2 . 
+
+
+
+
+

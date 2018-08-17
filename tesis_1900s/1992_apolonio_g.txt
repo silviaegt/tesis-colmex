@@ -1,0 +1,2394 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE 
+MAESTRIA EN ECONOMIA EL COLEGIO DE MEXICO CENTRO DE ESTUDIOS ECONOMICOS 
+Impuesto sobre los activos de las empresas. Un enfoque de equilibrio general computable. 
+GUADALUPE APOLONIO ZU~IGA 
+PROMOCION 1989-91 
+Junio, 1992 ASESOR: Dr. Carlos Manuel Urz Macías REVISOR: Dr. José Antonio Romero Tellaeche 
+RESUMEN 
+EL presente estudio expone la directriz principal que guila política econica de fines de los ochentas. En particular, 
+mediante  el  dise  de  un  modelo  de  equilibrio general,  de  
+amplia  desagregaci  multisectorial,  se  aplica  en  la  
+economía  para  evaluar  los  efectos  que  resultarían  de  la  
+implementaci  del  impuesto  del  dos  porciento  sobre  los  
+activos  de  las  empresas  sobre  la  economía  total.  Con  tal  
+
+cuantificaci se define la coherencia entre los principales objetivos de la política fiscal y la consecusi de sus estrategias. Después de realizar el experimento anterior se concluye que el gravamén sobre los activos de las empresas está con los lineamientos planteados ,por la política econica de su momento y además no se deprime la actividad econica del país, como aseguraban los opositores al establecimiento del impuesto tratado. 
+INDICE 
+PAGINA 
+INTRODUCCION 3 CAPITULO l. LA RECIENTE POLITICA FISCAL EN MEXICO 5 1.1 Antecedentes 5 
+1.2 El Pacto de Solidaridad Econica 6 
+CAPITULO 2. ANALISIS DE EFECTOS IMPOSITIVOS 12 
+2.1 Incidencia de los Impuestos en la Economía 12 
+CAPITULO 3. MODELO DE EQUILIBRIO GENERAL 17 
+3.1 Marco Teico 17 
+3.2 Desarrollo de los Modelos de Equilibrio General Computacional 19 
+3.3 El Modelo 26 3. 3. 1 Producci 26 3.3.2 Mercado de Factores 29 3.3.3 Demanda 31 3.3.3.1 Consumidores Privados 31 3.3.3.2 Inversi 34 3.3.3.3 Gobierno 35 
+3.3.3.4 Sector Externo 38 
+
+
+
+3.3.4 Mercado de Productos 40 
+3.3.4.1 Precios 40 
+3.3.4.2 Equilibrio en el Mercado de Producto 
+CAPITULO 4. SIMULACION DEL IMPUESTO DEL 2% SOBRE LOS ACTIVOS DE LAS EMPRESAS 46 
+4.1 Aspectos Generales 46 
+4.1.1 Nivel de Agregaci 47 4. 1.2 Parámetros 49 4.2 Simulaci 50 4.3 Resultados 51 
+4.3.1 Efectos en el Bienestar Social 51 
+4.3.2 Efectos en el Producto y Asignaci de Recursos 53 
+CONCLUSIONES 61 ANEXOS 63 BIBLIOGRAFIA 105 
+INTRODUCCION 
+El propito del presente trabajo es evaluar el impacto de la reforma impositiva de 1987, en particular, el impuesto sobre los activos de las empresas, y definir la factibilidad de los objetivos trazados en la implementaci de la política econica vigente. Mediante el desarrollo de un modelo de equilibrio general de la economía mexicana, aplicando una amplia desagregaci multisectorial, se determinarán los principales efectos de un nuevo impuesto sobre el desempe de las actividades productivas, desglosadas éstas en 27 sectores productivos. Este modelo también analizará el impacto de dicha reforma impositiva sobre los precios relativos, el déficit fiscal, la reasignaci de recursos y bienestar social. 
+La disposici del trabajo es como sigue: en el primer capítulo se selan los objetivos de la política fiscal al instrumentarse las reformas fiscales de 1987 y posteriores. En el capítulo dos se analiza el impacto potencial de dicha reforma impositiva. Asimismo, se expone la pertinencia del análisis de la política fiscal en el marco de un modelo de equilibrio general. En el capítulo tres se desarrolla un esbozo teico y el modelo propuesto, el cual incluye además de cuatro diferentes agentes: productores, consumidores privados, sector plico y sector externo, de dos sectores productivos uno interno y otro externo. 
+Una vez planteado el modelo, en el capítulo cuatro se procede a su 
+aplicaci y se simula el impacto del impuesto al activo de las empresas (IMPAC) sobre la economía mexicana. 
+Finalmente, se exponen las principales conclusiones a que condujo el desarrollo del modelo y se presenta un anexo metodolico que contiene los datos estadísticos y el programa de computo utilizado para la elaboraci del modelo. 
+CAPITULO 1 
+LA RECIENTE POLITICA FISCAL EN MEXICO 
+1.1 ANTECEDENTES 
+El papel que desempen las finanzas plicas en la economía son de diversa índole, tanto macroeconico como microeconico. Las políticas de ingreso y gasto afectan la asignaci sectorial de gran cantidad de recursos, influyen en el comportamiento y decisiones de productores y consumidores pudiendo distorsionar la estructura de precios relativos y, asimismo, la distribuci del ingreso y el bienestar. 
+Un gasto plico excesivo con respecto a la capacidad del sistema econico de generar ingresos puede ocasionar: a) endeudameiento externo excesivo y crisis de balanza de pagos; b) aceleraci del proceso inflacionario dentro del circulo vicioso déficit-inflaci-déficit; y c) distorsi de la estructura de precios relativos, con la consiguiente asignaci ineficiente de los recursos globales de la economía. 
+Con el fin de disminuir el déficit fiscal, el gobierno debe disminuir sus gastos e incrementar sus recursos. Sin embargo, dentro de un ambiente de creciente inflaci, como el que viviel 
+país en as recientes, un programa fiscal restrictivo para 
+reducir el déficit puede inducir una recesi y una caída del bienestar social. Por ello, es importante evaluar la política de finanzas plicas desde el punto de vista de eficiencia econica y de costo social. 
+En el período 1983-1988 el déficit fiscal se intentreducir a través de grandes disminuciones en el gasto programable y aumento de los ingresos. La reducci del gasto comprendireducciones en el gasto corriente, saneamiento del sector paraestatal a través de la venta de sus empresas y ajustes de personal. Los ingresos aumentaron mediante reformas fiscales disedas para contrarrestar el efecto negativo de la inflaci sobre la base gravable de las empresas, con el fin de rnej orar la administraci tributaria y corregir los rezagos en precios y tarifas plicas, agudizadas bajo la inflaci creciente, y distorsiones en sus estructuras 1 
+1.2 EL PACTO DE SOLIDARIDAD ECONOMICA 
+De acuerdo a la experiencia, en México no era posible sostener un crecimiento econico bajo presiones inflacionarias. Esta situaci lleval Gobierno a la implementaci de El Pacto de Solidaridad Econica ( PSE). En 1988, la política de ingresos fue diseda corno parte del PSE y de apoyo a la reforma de 1987. El PSE es un programa ortodoxo de estabilizaci, de ajuste fiscal, política monetaria y crediticia restrictiva y apertura comercial e 
+Baillet y Zirnrnerrnann. 
+incluye dos elementos adicionales: 1) un paquete antiinercial; 2) 
+convocar el diálogo con los diferentes sectores productivos, para establecer una estrategia concertada, coherente e integral, para que pudiera funcionar el paquete antiinercial. 
+Con el propito de detener la carrera inflacionaria, el Pacto siguiuna doble estrategia econica: primero, una correci adicional de las cuentas del gobierno y, segundo, un congelamiento de precios y salarios para abatir la inercia inflacionaria. 
+El programa tenía dos fases en el tiempo. La primera fase era de correcci con costos inflacionarios inevitables y la fase dos de desinflaci concertada y sostenida. 
+La primera fase requeride una correcci efectiva de las cuentas plicas, aumentando ingresos y reduciendo gastos. Por ello el H. Congreso de la Uni aprueba los recortes al gasto plico y el aumento de precios y tarifas del sector plico anunciadas en diciembre de 1987. 
+Concluido este período de correcci, el programa entren una segunda etapa, en la que, mes con mes, las distintas variables se ajustarían concertadamente. 
+MEDIDAS DE POLITICA ECONOMICA 
+Estas medidas debían asegurar la primera fase, de correcci, para evitar presiones inflacionarias en la segunda etapa. Enmarcadas en un programa integral que coordinará los diferentes instrumentos de política econica, entre estas la política salarial y abasto, política comercial y cambiaría, política 
+monetaria y política fiscal. Brevemente selaré en que consisten 
+tales políticas y profundizaré respecto a la política fiscal. 
+De manera concertada se aumentaron los salarios, estos se ajustaron en 38%, porcentaje acumulado entre el 15 de diciembre y el lº de enero de 1988. Se aplicespecial control de precios sobre los productos de la canasta básica, con el fin de asegurar el buen comportamiento de los precios y el abasto regular de los productos básicos. 
+El tipo de cambio controlado, después de su ajuste de 22% el 14 de diciembre, permanecilo más estable posible hasta el lº de marzo. Las tasas de interés aseguraron un rendimiento atractivo para el ahorrador. Finalmente, la disminuci de los impuestos a la importaci debieron permitir que la competencia externa regulara parcialmente la evoluci de los precios internos. 
+Las tasas de interés en diciembre, enero y febrero fueron altas debido a los niveles iniciales de inflaci derivados de los ajustes cambiarios, salariales y de precios y tarifas. Pero a medida que disminuyeron las necesidades de financiamiento del sector plico y la marcada tendencia decreciente de la inflaci se redujeron significativamente las tasas de interés. En los créditos de la banca comercial y de desarrollo, salvo de los sectores agropecuario y de mediana y peque industria, fueron limitados para evitar un exceso de liquidez en la economía, que pusiera en riesgo la estrategía antiinflacionaria. 
+Como resultfavorable la evoluci de la inflaci en enero y febrero se concertno mover precios y tarifas del sector 
+plico, tipo de cambio, precios de la canasta básica y salarios a 
+partir de marzo, decisi que se prolonghasta agosto de 1988. 
+Las finanzas plicas trataron de corregirse de forma que el gasto del gobierno no excedierá sus ingresos. Se logro un superávit en el sector plico 2 gracias a los ajustes tributarios propuestos y ciertos aumentos de precios y tarifas, como por los recortes de gasto previstos para 1989. Para conseguir este saneamiento de finanzas plicas, fue indispensable consolidar la Reforma Fiscal de 1987 y adecuar otras disposiciones fiscales en congruencia con los propitos del Pacto de Solidaridad. Con este fin, "El H. Congreso de la Uni aprobmodificaciones legales que consolidaron la Reforma Fiscal en vigor a partir de 1987, con el objeta de fortalecer la recaudaci, eliminar los efectos de la inflaci sobre la base de los impuestos y aumentar la equidad y eficiencia del sistema tributario. Asimismo, se pondrá especial atenci en la simplificaci de la legislaci y de la administraci tributaria, en la descentralizaci del aparato recaudatorio y en el combate a 
+3
+la evasi fiscal" 
+El gobierno de México no so tenía que enfrentar la creciente inflaci y la necesidad de reducir su déficit presupuesta! necesitaba aumentar sus ingresos debido a: la 
+2 Adecuaciones Fiscales, p. 21-22 
+3 
+Ibid p.22 
+disminuci de los ingresos petroleros (por la caída de precios), los altos pagos por el servicio de la deuda, las crecientes tareas y funciones y por la necesidad de mejorar la deteriorada distribudi del ingreso 4 
+Dentro de este contexto el sistema impositivo hasta 1987 era oficialmente muy exigente, con tasas impositivas formalmente elevadas para los ingresos altos además de una alta progresividad, pero realmente con una imposici mínima a los grupos de ingresos altos por la evasi y elusi. Impuestos reales relativamente altos a los ingresos contractuales de los grupos de ingresos medios. 
+Los más importantes aspectos y soluciones del sistema impositivo fueron: 
+l. El sistema impositivo a la renta con tasas formalmente altas y muy progresivo daba lugar a efectos contraproducentes como la evasi y la elusi fiscal. Tal situaci propiciaba reducci de los ingresos estatales, efectos distributivos negativos (regresivos) y reducci de la inversi 
+2. 
+Debido a estas restricciones de sistema con altas tasas y elevada progresividad algunos expertos consideraban como alternativa un sistema impositivo alto al consumo, especialmente a los productos de lujo. 
+
+3. 
+Las consecuencias de ese tipo de gravaci en un país semindustrializado eran: cuotas peques de consumo de los grupos de altos ingresos, gran parte de sus ingresos quedaba 
+
+
+4 
+Baillet, A. y Zimmermann 
+sin gravar y, por tanto, los ingresos estatales reducidos. 
+4. 
+Como posibilidad alternativa para evitar esos efectos negativos, se propusun sistema impositivo a los ingresos que estuvierá adaptada a las condiciones, desarrollos, experiencias y posibilidades administrativas del país. Entre estas propuestas eran: Con objeto de distribuir más equitativamente la carga fiscal se efectuaron reformas en el impuesto a la renta eliminando privilegios, como bases especiales o execiones. -Imposici amplia a los ingresos de los factores como fuente de la riqueza nacional. Por ello, gravámenes amplios y progresivos a los ingresos y ganancias. 
+
+5. 
+Para reducir la resistencia al pago de los impuestos, el Estado tuvque reducir las tasas impositivas y evitar la alta progresividad. Esto fué posible por la ampliaci del nero de contribuyentes. 
+
+6. 
+El nuevo impuesto empresarial del 2% a los activos netos de las empresas (efectivo a partir de enero de 1989), deducible por pagos de impuestos a las ganancias. La introducci de este impuesto dilugar al mejor cumplimiento de las obligaciones fiscales, y asegurun pago de impuesto mínimo de las empresas. 
+
+7. 
+-El conjunto de estas medidas y amplios programas de fiscalizaci, la mejor asistencia de los contribuyentes y el aumento de la eficiencia administrativa para la recaudaci, dilugar a un importante crecimiento en términos reales de la recaudaci impositiva. 
+
+
+11 
+CAPITULO 2 
+ANALISIS DE EFECTOS IMPOSITIVOS 
+2.1 INCIDENCIA DE LOS IMPUESTOS EN LA ECONOMIA 
+Uno de los más importantes campos del análisis econico de las finanzas plicas esta relacionado a determinar si la persona que paga el impuesto es necesariamente la misma en quien recae el impuesto. Se ha encontrado que determinar la incidencia real de un impuesto o proyecto plico es un asunto muy complicado.Es frecuente que el cambio en el ingreso real de la persona sobre la que se grava el impuesto sea menor que la magnitud del impuesto pagado. Lo que significaría que el impuesto ha sido desplazado a otros en la economía. Una aproximaci de lo que ha sucedido a cada individuo en la economía, después de aplicar cierto impuesto, es bastante complicado, por ello el análisis de políticas econicas se ha enfocado sobre la incidencia en diferentes grupos en la economía. La identificaci de tales grupos es una cuesti critica 5 para el estudio de la incidencia de impuestos. 
+Los impuestos tienen diversos efectos en la economía, entre los tres principales se tienen: 
+a) 
+Efecto ingreso: debido a que los impuestos dismunuyen el ingreso de los individuos. 
+
+b) 
+Efecto sustituci: No todas las actividades econicas son gravadas o son gravadas a diferentes tasa. Los productores tratarán evitar aquellas actividades más altamente gravadas, siguiendo su comportamiento minimizador de costos. 
+
+c) 
+Efecto financiero: Surgue cuando la misma actividad real puede corresponder a diversas formas de pago y con tasas impositivas diferentes. 
+
+
+5 ver, Atkinson A. B. and Stiglitz J. E. (1980). 
+Los efectos anteriores pueden trabajar en la misma direcci, positiva o negativa, sobre las diversas categorías econicas ya sea incrementandose o anulandose unos a los otros. La suma de estos efectos en la economía global son dificiles de evaluar. 
+Se considera que todos los impuestos son distorsionantes, debido a que se comparan respecto a la diferencia entre los efectos de un impuestos dado y su correspondiente impuesto lump-sum, ya que este timo se considera como no distorsionante (el impacto de un impuesto lump-sum da un efecto ingreso puro, o no distorsionante). 
+IMPUESTO AL CAPITAL 
+El desarrollo de largo plazo de una economía es funci del ahorro de individuos y firmas. Porque este ahorro es fuente de fondos para obtener nuevos recursos necesarios en el desarrollo de la economía. Por tanto, las políticas fiscales deben tener en mente los efectos que sobre el ahorro tienen los impuestos al capital. 
+Tipos de impuestos al capital: 1.-Impuesto sobre el ingreso de los intereses. 
+2.-Impuestos sobre ganancias del capital, que es el aumento en el 
+valor de un stock de activos, este impuesto se puede dividir de forma intemporal (corto, mediano y largo plazo) y tipos de tasas. 3.-Impuestos a la riqueza sobre el valor neto de los activos. 
+4. -Impuesto sobre las transferencias de riqueza, herencias o donaciones. 4.-Impuestos sobre la propiedad real en forma de casas, tierra, etc. 5.-Impuesto sobre ganancias corporativas aplicado a firmas, que en realidad es un impuesto a los individuos ya que ellos son los dues de las propiedades y, además, las ganancias son distribuidas entre los individuos. Por tanto, es un impuesto sobre una forma particular de ahorro de los individuos. 
+El impuesto a los activos de las empresas (IMPAC) que se analizara en este trabajo tiene una tasa impositiva de 2% y su base impositiva es el monto de activos fijos, activos financieros, inventarios y terrenos. Este impuesto se establece en el artículo de ley de 1988 y aplicado a partir de 1989. Actualmente el impuesto ha sido modificado principalmente en su forma de pago pero la base irnpositiva y su tasa no son alterados. El modelo aplicado aquí estima la base de este impuesto sin considerar los activos financieros ya que las empresas del sector financiero estan excluidas del pago del IMPAC. Por timo considerarnos el IMPAC corno un impuesto al capital. 
+Harberger (1962) fué pionero en los estudios sobre impuestos el ingreso del capital y demostrque los modelos de equilibrio son los más adecuados para analizar los efectos distorsionantes de estos impuestos. Sin embargo, Harberger estudia la incidencia fiscal en un equilibrio parcial con la inconveniencia de que no toma en cuenta todas la relaciones de la economía. Shoven y Whalley 
+(1977) replican el modelo de Harberger incrementando el nero de sectores de 2 a 12 y encuentran que el grado de desagregaci puede influir en la determinaci de los resultados, punto que en el Capítulo 5 trataremos ampliamente. 
+El modelo de Harberger fué disedo para examinar la distorsi interindustrial del impuesto al ingreso corporativo y estaba compuesto por dos sectores. Cada sector producía un producto simple en competencia perfecta, usando factores homogeneos, trabajo y capital, con perfecta mobilidad, las ofertas fueron fijadas en el agregado. Los resultados de Harberger respecto al impuesto del ingreso corporativo dependen en parte de la sustitubilidad del trabajo y capital en la producci. Simula el modelo bajo varios supuestos de elasticidad de sustituci en cada sector, supone movilidad entre industrias y con oferta total fija. 
+Del Lado de demanda so hay un consumidor, entonces analiza la funcional,y no personal, distribuci del ingreso. El gobierno tiene similares preferencias de gusto que el consumidor. 
+Harberger usa intensidad de factor y un rango de supuestos respecto a las elasticidades de demanda. 
+El modelo original no supone preexistencia de impuestos distorsionantes. Shoven corrige el modelo Harbeger de errores conceptuales en la medida del 11 surtax11 • Error conceptual sobre la definici de unidades de capital. 
+En este trabajo calculamos el equilibrio general de la economía antes del cambio impositivo y recalculamos el equilibrio después del cambio. Y obtenemos los cambios que nos proporcionan una descripci de la incidencia del impuesto. Con esto se quiere decir si el ingreso cae o no, si los precios relativos han cambiado, etc. 
+CAPITULO 3 
+MODELO DE EQUILIBRIO GENERAL 
+
+
+
+
+
+3.1 MARCO TEORICO 
+El término modelo de equilibrio general computable ( MEGC) incluye diversos modelos econicos que tienen en com ciertas características 6• Entre éstas tenernos: 
+1) Los MEGC determinan endenarnente los precios relativos y las cantidades. 
+2) Los MEGC se solucionan para precios que equilibran todos los mercados de productos y factores. 
+3) Se enfocan en el lado real de la economía, son pocos los modelos que incluyen instrumentos y mercados financieros. 
+4) Los modelos son realizados para un análisis cuantitativo de estática comparada del impacto de cambios no marginales en parámetros exenos 7 
+6 Una exposici objetiva es presentada por Bergrnan L. J. y Zalai E. (1990). 
+7 Estos análisis tornan la forma de diversas comparaciones cruzadas de patrones de asignaci de recursos. 
+5) No obstante el carácter multisectorial de los MEGC, en general 
+proporcionan una representaci muy agregada de la economía. Entonces estos modelos no presentan interaciones de las unidades microeconicas de la economía 8 
+Las diferencias entre los modelos de EGC se deben principalmente al enfoque y propito de análisis, al nivel de agregaci y al enfásis de la representaci econica. En el presente trabajo se dise un MEGC para el análisis específico de la reforma fiscal dentro de un particular contexto. 
+Muchos de los MEGC se emplean en ejercicios de simulaci para problemas en los que las soluciones analíticas son difíciles de obtener. Esta dificultad se debe a que la magnitud de los diferentes efectos no son netamente materiales. Los MEGC pueden verse como herramientas que proporcionan informaci cuantitativa a los resultados cualitativos. 
+En fin, los MEGC reflejan la estructura actual de la economía y los resultados obtenidos de estática comparada reflejan la existencia de distorsiones en la economía. 
+8 Por tanto, los modelos EGC no son, en el sentido estricto, modelos de equilibrio general ya que no incluye tales interacciones. A pesar, que el dise de los modelos de EGC tipícamente tienen fuerte influencia de la teoría Walrasiana de equilibrio general. Por ejemplo, los mercados se consideran competitivos con funciones de demanda homogeneas de grado cero en precios y que satisfacen la ley de Walras 
+3.2 DESARROLLO DE LOS MODELOS DE EQUILIBRIO GENERAL COMPUTACIONAL 
+Una breve descripci cronolica del desarrollo de los MEGC es presentada en este apartado. Pero se hace un examen más detallado del tipo de modelo que se utilizen el presente trabajo (el que aquí se nombra HSSW). Los enfoques presentados son: 
+1.-Modelo de crecimiento multisectorial (MCM). 
+su fundador fué Leif Johansen quien estudiel crecimiento econico en Noruega. En particular en algunos aspectos de crecimiento econico 9 y manejando como herramienta analítica básica un modelo de desagregaci numérica. 
+10
+El modelo es esencialmente de economía cerrada Los recursos son capital y trabajo, y la tasa de cambio tecnolico exenamente determinado. 
+Constituyen al modelo 20 sectores reales de producci. Cada uno de estos, usa los productos de los demás como insumos dentro de su propio proceso de producci. La tecnología en los sectores se basa en una funci de tipo Leontief con coeficientes fijos de insumos producidos internamente y de insumos importados. En el proceso de valor agregado se usa una funci de tipo Cobb­
+9 En fenenos de reasignac1on sectorial de trabajo y capital y cambios de los términos de intercambio. 
+10 
+Las importaciones de ciertos insumos que no podian ser producidos domésticamente eran endenos y el resto del comercio exterior era tratado exenamente. 
+Douglas 11 • 
+Johansen intenta que su MCM sea un reflejo de lo que pasaría a mediano plazo, por esta raz supone completa utilizaci de los recursos disponibles, y le sirva como herramienta de la planeaci econica y de prontico. 
+En un intento por aproximarse a un "modelo verdadero" introduce tasas salariales diferentes entre los sectores, de acuerdo con una estructura salarial dada exenamente. Así también, supone al capital homogeneo y con plena movilidad, cuya tasa de retorno es la misma para todos los sectores 12 • 
+El consumo de mercancías de parte del consumo plico, inversi neta y exportaciones netas fueron exenamente determinados. Entonces el consumo privado, en el que hay un so tipo de consumidor, fue el ico componente de demanda final. endenamente determinado en el MCM. La funci de demanda del consumidor se deriva del supuesto de maximizaci de la utilidad bajo la restricci presupuestaria, formalizaci muy com en los 
+MEGC. 
+La especificaci del MCM fue totalmente no estocástica, donde las relaciones estructurales implementadas por el modelo se asumieron eran las correctas. Entonces, gran nero de parámetros del modelo fueron estimados sobre la base de una sencilla 
+11 Las posibilidades de sustituci de insumos son restringidas al proceso del valor agregado. 
+12 Dichas formulaciones introducen fenenos persistentes como son las diferencias intersectoriales con respecto a la composici de la fuerza laboral, condiciones de trabajo, incertidumbre de propitos futuros y gradual monopolizaci. 
+observaci de la asignaci de recursos entre los sectores del modelo. Por supuesto esto no era muy satisfactorio, pero la carencia de datos convenientes efectivamente excluyeron una total especificaci estocástica y utilizaci de técnicas econométricas para estimar los parámetros. La estimaci de Johansen ha sido reinventada y rebautizada con el nombre de "método de equilibrio de referencia". El método de estimaci de parámetros ha ido evolucionando y se puede utilizar como referencia de clasificaci de los MEGC. 
+El MCM adopta un método que especifica los totales con aproximaciones lag-lineales a la soluci de equilibrio general y entonces resuelve las ecuaciones lineales resultantes de los cambios en las variables endenas como funciones de cambios en las variables exenas. Así la soluci describe tasas relativas de cambio en las variables endenas de la asignaci de recursos original. 
+La ventaja del método de Johansen es su sencillez y fácil aplicaci. Una desventaja del modelo es que los resultados se ven afectados por errores y éstos tienden a incrementarse con la magnitud de cambios en variables exenas. Se han desarrollado algoritmos para lograr soluciones precisas de los MEGC en su forma no lineal. 
+2.-Extensiones del análisis de Johansen 
+La tima versi del modelo de equilibrio de crecimiento multisectorial incluye un incremento del nero de sectores, mayor aplicaci de métodos econométricos en la estimaci de los parámetros y menos hipesis restrictivas de la restricci tecnolica. Por otro lado, el manejo del sector externo de manera exena se mantiene. 
+El modelo ORAN! es un ejemplo de la continuidad en el uso de modelos de MCM en el sistema de planeaci econica y de evaluaci de políticas. Este es un proyecto llamado IMPACT de Australia, compartido por instituciones universitarias y gubernamentales (en particular la Comisi de Asistencia a Industrias). Esencialmente es un modelo especificado a la manera del MCM mencionado arriba: es un modelo de asignaci sectorial de capital y trabajo, de distribuci de productos sectoriales entre diferentes usos. No trata, al igual que el MCM, la distribuci del ingreso disponible entre los diferentes tipos de consumidores. El modelo se resuelve por medio de una versi elaborada de la técnica original de Johansen. 
+Dentro de las diferencias del modelo ORAN! y el MCM tenemos: 
+a) 
+El significativo incremento en tama del modelo, 113 sectores productivos, 115 categorías de mercancías producidas domésticamente e igual nero de mercancías importadas, 9 tipos de trabajos, 7 tipos de tierra agrícola y 113 tipos de capital ( industrial­específico). 
+
+b) 
+Incorpora una representaci detallada del sistema inicial de 
+
+
+impuestos y subsidios. El ORAN! fué disedo para una comparaci estática numérica del segundo mejor a un mayor nivel de desagregaci. 
+c) El ORAN! trata la economía como una economía verdaderamente abierta 13 
+3. -Modelos de equilibrio general computacional para países en desarrollo. 
+Es otra extensi del modelo de Johansen pero enfocado a los países en desarrollo. Trabajos iniciados en los 70's bajo el auspicio del Banco Mundial. El trabajo más relevante fue presentado por Irma Adelman y Sherman Robinson, en 1978. Enfatizan aspectos de economías en desarrollo tanto en política comercial como econica. El modelo se compone de 29 sectores productivos y cada uno de estos tiene cuatro tamas de firmas, 6 tipos de categorías de trabajo calificado y 15 tipos de consumidores privados. 
+La estrategía básica del modelo fué incorporar todos los mecanismos mediante los cuales la distribuci del ingreso fuese afectado en un horizonte de tiempo de 10 as. Incorpora inflaci y racionalidad, rigideces en el funcionamiento de los mercados de 
+13 Esto es una extensi del enfoque de Johansen, pero si lo vemos a través del modelo de Hecksher-Ohlin de la teoría de comercio internacional podría verse como el punto de partida para el dise de un modelo de EGC de una "economía abierta peque". 
+factores y producto. Este modelo, de acuerdo a sus bases teicas 
+y derivaciones de las relaciones estructurales, tiene características tanto Walrasianas como estructuralistas. 
+El modelo fue resuelto directamente en términos de los niveles de las variables endenas, permitiendo incorporar una dimensi explícita de tiempo en el modelo. Entonces el modelo fué especificado como un modelo estático con el período ligado a un modelo dinámico de ajuste intertemporal. 
+Este tipo de modelos de economías en desarrollo han sido ampliamente utilizados 14 • La tendencia de los modelos recientes son modelos más peques y menos detallados que el de Adelman­Robinson, elucidando el impacto de alguna política específica sobre la asignaci de recursos y distribuci del ingreso, antes que explicar la determinaci y evoluci de este feneno como una funci de operaciones simultáneas de un gran nero de factores. 
+4.-La aproximaci de Harberger-Scarf-Shoven-Whalley (HSSW) 
+El primero en modelar los MEGC bajo este enfoque fué Arnold Harberger (1962) en sus estudios sobre la incidencia de la imposici en un modelo numérico de los sectores. Después Herbert en 1967 Scarf computun algoritmo para la determinaci numérica del equilibrio de un sistema Walrasiano. La existencia de un 
+14 La bibliografía contiene alrededor de 200 títulos. En su mayoría bajo enfoques diferentes a los sugeridas por Adelman­Robinson. Bergman L. J. y Zalai E. (1990), p. 13. 
+equilibrio general con impuestos fue probada por Shoven J. y Whalley J. dentro de un procedimiento computacional. Esta aproximaci se diferencia del tradicional MCM en tres aspestos principalmente: 
+a) 
+Diferente nivel de agregaci en el sector consumidor privado, incorpora explicítamente dos o más tipos de consumidores, especifican la asignaci inicial y la restricci presuspuestal de cada grupo. De este modo, manipulan sistema de impuestos y transferencias de forma explícita. 
+
+b) 
+El tipo de aplicaciones de los modelos es diferente. La corriente del MCM permite elucidar el impacto de la asignaci de recursos ante los cambios en las condiciones exenas y relegan los 
+
+c) 
+La forma en que la teoría de equilibrio general es incorporada en los modelos. En el MCM es un intento de aproximarse a un modelo "verdadero'', lo cual lleva a la inclusi de aspectos más complejos, desconocidos y reales que en un sentido estricto son inconsistentes con la teoría general de equilibrio Walrasiano, por ejemplo el capital agregado es homogéneo y totalmente mil pero con diferente remuneraci entre sectores. 
+
+
+aspectos  de  distribuci.  En  HSSW  se  evaln  los  cambios  de  
+política  en  términos  tanto de  efectos  en  eficiencia  como  de  
+distribuci.  
+
+El modelo de HSSW es la contraparte numérica de los modelos de equilibrio general Walrasiano. Shoven y Whalley probaron la existencia de un equilibrio general con impuestos y diseron un procedimiento para encontrar el equilibrio. El método de Shoven y 
+Whalley ha sido aplicado en un gran nero de estudios de efectos de los impuestos en la distribuci del ingreso y eficiencia. Los modelos HSSW son resueltos directamente en los niveles de 
+las  variables  endenas.  Inicialmente  las  soluciones  fueron  
+determinadas  por  medio  de  los  algoritmos  de  Scarf,  pero  
+timamente,  debido  a  su  mayor  rápidez,  se  utilizan  más  las  
+técnicas de  linealizaci local de Newton.  
+
+3 . 3 EL MODELO 
+El modelo a utilizarse en este trabajo es de equilibrio general estático Walrasiano, en el que se determina, junto con las decisiones de demanda y producci, los precios de equilibrio, niveles de actividad de equilibrio y el ingreso de equilibrio. En el equilibrio la demanda y oferta de cada sector son iguales. 
+La economía tiene 27 sectores productivos, dos factores de producci (capital y trabajo), demanda final de 27 bienes. Los agentes econicos son los consumidores privados, el gobierno, y el sector externo. 
+3.3.1 PRODUCCION 
+El modelo se compone de 27 sectores productivos (ver Anexo A). La descripci de los productores se hace en dos partes; una concerniente a la tecnología, por ejemplo las combinaciones 
+factibles tecnolicamente, y una descripci de las reglas usadas para selecionar una de estas combinaciones factibles. Cada sector productivo utiliza funciones de producci anidadas en los siguientes tres niveles: Primer nivel. 
+El bien xi resulta de combinar tanto bienes intermedios y valor agregado combinados con coeficientes fijos (no hay sustituibilidad entre ellos) definidos por una funci de producci Leontief (IO). Segundo nivel. 
+El valor agregado se obtiene de la combinaci de los factores productivos, trabajo y capital, en una funci de producci Cobb­Douglas (CD) . Tercer nivel. 
+Los insumos intermedios, en total 27, son complementarios entre sí y se utilizan en proporciones fijas mediante una funci de Leontief (IO). Estos insumos son proporcionados por cada sector productivo en que hemos divido la economía y por 27 insumos importados del resto del mundo. El conjunto de insumos intermedios se denominan COM-COM-j, estos bienes se componen a su vez de insumos domésticos, COM-DOM-j, e insumos importados, IMPORT-j, ambos tipos de insumos son agregados en funciones de elasticidad de sustituci constante CES, donde j toma valores de 1 a 27. 
+Más precisamente la funci de producci para el sector j es: 
+j=l , . .....27 (1) 
+donde Qj es la cantidad producida del bien j y Aj representa los 
+insumos intermedios para el sector j, los cuales se obtienen de utilizar los 27 bienes compuestos (COM-COM-j) de la economía combinados en proporciones fijas en una funci tipo Leontief: 
+(2) 
+donde Xij representan las cantidades físicas del insumo i usado en la producci de j, aij es un nero no positivo que representa el minímo consumo del insumo i requerido para producir ajj unidades de producto de j , entonces a .. son coeficientes técnicos que no
+lJ 
+dependen de los precios. La cantidad del bien compuesto X¡ j se obtiene de agregar importaciones M-1 y bienes producidos domésticamente D¡, agregados en una funci Cobb-Douglas: 
+(3) 
+El valor agregado en el sector j se representa mediante VA.,
+J 
+el cual se obtiene de utilizar capital y trabajo mediante una funci de producci de Cobb-Douglas: 
+(4) 
+donde ºj es la distribuci o intensidad insumo, Kj y Lj son las cantidades de capital y trabajo utilizados por el sector j. 
+
+
+
+3.3.2 MERCADO DE FACTORES 
+La combinaci de los factores primarios depende de los precios. El productor selecciona las cantidades de insumos y productos que maximizan sus ganancias bajo la hipesis de competencia perfecta y que el productor no puede influir en los precios. El precio del capital es endogeno en el modelo. 
+La minimizaci de los costos de los factores productivos sujeta a la funci de producci rinde un conjunto de condiciones de primer orden que define las demandas de los factores productivos. Formalmente el lagrangiano respectivo es: 
+2 ( 5) 
+¿ Pk xk + }.. ( VAJ -cJ L;1 K;-"1 ) ] k•l 
+donde Pk es el precio del factor k, capital y trabajo. Esto nos lleva a las siguientes demandas por los factores k en el sector j: 
+(6) 
+(7) 
+donde, I es la tasa de renta del capital, PL el precio del factor productivo trabajo. 
+La demanda total del trabajo esta dada por la suma de las cantidades demandadas de trabajo en cada sector: 
+(8) 
+El mercado de trabajo se encuentra en equilibrio al igualarse la demanda de trabajo con su respectiva oferta: 
+(9) 
+La demanda total de capital se da por la suma respectiva de capital demandado en cada sector: 
+Kd = L27 Kj (10) 
+j=l 
+Y el equilibrio del mercado de capital se da por la igualdad de la oferta y demanda respectiva: 
+(11) 
+donde K-es la dotaci inicial de capital empleado completamente, enfoque clásico de pleno empleo del factor productivo capital. 
+La demanda de insumos intermedios i por el sector j es: 
+(12) 
+Por tanto, la demanda total de insumos intermedios es la suma de las demandas de todos los sectores: 
+27 
+Cii = L ªiJ QJ (13) 
+jzl 
+3.3.3 DEMANDA 
+El lado de la demanda de la economía está representado por un tipo de consumidor privado, las empresas, el gobierno y el consumidor externo, este timo está representado por el resto del mundo. Tales consumidores tienen diferente comportamiento porque tienen diferentes dotaciones iniciales y sus funciones de utilidad también son distintas. 
+El gobierno consume una cantidad fija de bienes compuestos por ende su demanda está exenarnente determinada. El ingreso del gobierno proviene de los impuestos que cobra a los demás agentes. 
+Las empresas demandan insumos intermedios y factores productivos corno ya se selanteriormente. 
+3.3.3.1 CONSUMIDORES PRIVADOS 
+El consumidor privado es un consumidor representativo que demanda bienes compuestos bajo un comportamiento rnaxirnizador. Este 
+consumidor es propietario de los factores productivos trabajo y 
+capital que, cuando son evaluados a los precios de mercado, generan su ingreso. El ingreso recibido por la venta de estos factores productivos se le tiene que deducir los impuestos pagados al gobierno, ya sean directos o indirectos, y sumarle la cantidad de transferencias que en este caso particular se asumen igual a cero, al final, el consumidor se queda con un ingreso disponible (Yd) para efectuar su consumo en bienes compuestos y ahorro (es una fracci constante, s, del ingreso Yd), formalmente es: 
+27 27 Yd = [PL ~ Lj] [ 1-tl ] + [ I L Kj] [ 1-t k ] (14) 
+J•l j-1 
+tl es la tasa del impuesto directo que se carga al ingreso del trabajo; tk es la tasa de impuesto directo sobre el ingreso del capital ( cantidad fija de capital). ECUACIONES DE DEMANDA 
+Las ecuaciones de los consumidores privados describen sus patrones de consumo y definen los indices de precios al consumidor y el consumo real. Se supone que el consumidor máximiza su funci de utilidad, sujeto a su restricci presupuestaria: 
+max u ( C1 ) 
+27 (15) 
+sujeto a L pi C1 S ( 1-S ) Yd 
+i•l 
+Las condiciones de primer orden de optimizaci para este problema de optimizaci dan el sistema de consumo definido como una funci del ingreso y de los precios. En este modelo suponemos que la funci de utilidad es del tipo Cobb-Douglas: 
+27 
+u ( ci ) = ¿ ai log ( ci ) (16) 
+i =l 
+donde suponemos por conveniencia que: 
+27 
+~ ª1 = 1 
+La demanda que tiene el consumidor, como resultado de este problema de optimizaci es: 
+ci = ai ( 1-s ) Yd / Pi 
+<17> 
+Donde la cantidad consumida de cada mercancía varía directamente con el ingreso disponible para el consumo e inversamente con el precio de la mercancía. La ecuaci que relaciona precio y cantidad gastada es: 
+Así el sistema de consumo puede ser derivado en pagos en lugar de cantidades y obtenemos: 
+= ( l -S ) Yd
+E1 a1 
+Esto significa que el gasto en cada bien compuesto es una 
+proporci  fija  del  ingreso  total  para  el  consumo  ésta  es  la  
+especificaci  que  utilizarnos  (VSHR)  en  el  presente  trabajo  
+respecto al  consumo  del consumidor privado.  
+
+
+
+3.3.3.2 INVERSION 
+El introducir la inversi significa que se produce un "bien" llamado capital futuro ( INVtotal ) . 
+Se supone que la inversi total es igual al ahorro interno total en la economía más el ahorro externo. Este timo, se compone de la entrada neta de recursos del exterior: 
+INV total = Sp + Sg + te ROW 
+donde, INVtotal es la inversi total. Sp = s Yd, y Sg son el ahorro privado y de gobierno, respectivamente. te es el tipo de cambio. ROW es el ahorro externo, se considera aquí determinado exogenarnente. 
+El ahorro externo es idéntico al monto del déficit comercial y, considerando la restricci presupuestaria, del valor de mercado de la asignaci de importaciones del resto del mundo. El gobierno demanda inversi corno un residuo de su consumo de 
+bienes compuestos y es Sg. 
+Una vez establecida la inversi su distribuci sectorial debe ser especificada en el proceso de asignaci de inversi,los coeficientes fijados son usados para dividir el volumen total entre sectores 15 • Fijados para un a dado, pero pueden cambiar en un modelo de ajuste intertemporal que reflejen la hipesis sobre la movilidad intersectorial de recursos de inversi. 16 
+3.3.3.3 GOBIERNO 
+El gobierno recolecta impuestos, directos e indirectos, 
+otorga subsidios y compra mercancías. 
+Existen cuatro tipos de impuestos: impuestos sobre el ingreso, 
+impuestos sobre las mercancías compradas, aranceles y el impuesto 
+IMPAC. El impuesto al ingreso es aquel que el consumidor privado 
+paga con una base gravable igual al ingreso que obtiene de vender 
+o rentar sus factores productivos, cuya asignaci es anterior a 
+15 Al respecto, básicamente se siguen las especificaciones del MEGC de Serra Puche (1982) quien considera que el ahorro es equivalente a comprar un paquete fijo ponderado de bienes de capital. 
+16 El proceso de asignac1on de inversi no es explicítamente modelado y el papel de los mercados financieros en la asignaci de fondos prestables es ignorado. Por lo tanto, se debería extender el MCGE a tales mercados con el fin de acercarnos a la demanda de inversi deseada en cada sector y el proceso de asignaci por el cual la inversi agregada y la inversi sectorial deseada son reconciliadas, el tomar en consideraci lo anterior nos permitiría construir un modelo más apegado a la realidad econica. 
+cualquier proceso productivo y antes de ning otro pago de 
+impuestos, con tasas impositiva tk y t 1, sobre el ingreso del capital y del trabajo, respectivamente; así, el gobierno recibe del consumidor privado por concepto de impuesto a su ingreso factorial igual a: 
+27 
+ID = PL L Lj ] t1 + I 
+j-1 
+Donde ID son los impuestos directos. Los impuestos indirectos en el modelo se consideran corno el total de impuestos indirectos menos subsidios. 
+27 27 
+II = E Qj Pdj tdj -te> (19) 
+J•l Ñ 
+Donde: II, son los impuestos indirectos; Qj, es el producto doméstico; Pdj, son los precios de los bienes domésticos; td, es la tasa impositiva sobre el bien doméstico; indica las exportaciones; Pej, es el precio de las exportaciones; tsi, es la tasa de subsidios. 
+Este tipo de impuestos se carga sobre las compras de los bienes finales e intermedios. Los aranceles sobre las importaciones son otra fuente de ingreso del gobierno, irnplicítarnente es una demanda final de bienes 
+que son utilizados corno insumos en las actividades productivas y por los consumidores privados y el gobierno. El ingreso del impuesto a las importaciones es: 
+27 
+M = te ¿ Mi Pmi tm(20) 
+1 
+i=l 
+Donde: M, son los aranceles totales: M¡, son las importaciones: Prn¡, es el precio de las importaciones: tmi' es la tasa arancelaria. 
+El cuarto tipo de impuesto el IMPAC, incluido en el modelo, se nombra "impuesto'', pero fiscalmente se conoce corno el impuesto del 2% sobre los activos a las empresas, discutido en el capítulo 3. Su monto es igual a cero en el a base. Posteriormente, en la simulaci aplicada al modelo, se carga a la correspondiente base del impuesto con el fin de definir los efectos subsecuentes a su aplicaci. La base del impuesto se compone de activos fijos más los inventarios. Esta es aproximada con datos de activos fijos proporcionados por el Banco de México, correspondientes a cada sector productivo en que se dividio la economía y sus respectivos inventarios 17 • El ingreso obtenido por concepto de este impuesto 
+17 Los inventarios se tornaron corno aproximados al rubro de variaciones de existencias de la matriz raseada de 1985. Este rubro y los activos fijos se presentan en el Anexo B. 
+será: 
+27 
+IMP = . 02 [ E ACTIVOSj ] (21) 
+1 •l 
+Donde: IMP, es el impuesto total del 2% sobre los activos; ACTIVOSJ, son los activos fijos más inventarios del sector j. 
+El ingreso total que recibe el gobierno es, R : 
+9 
+Rg = ID + M + I I + IMP (22) 
+3.3.3.4 SECTOR EXTERNO 
+Se hace el supuesto que el país nacional es peque, de manera que el precio de las importaciones está exenamente determinado. En cuanto a las exportaciones sus precios son determinados por este país a través de la política comercial (subsidios). 
+El precio de importaciones y flujos de exportaci con especificaciones exenas de entradas de cambio extranjero, da la condici de equilibrio del mercado externo. En la especificaci del tipo de cambio es flexible. 
+La funci de demanda de importaciones ( M¡ ) se deriva del comportamiento minimizador de los consumidores, apartir de la ecuaci (3): 
+(23) 
+Y la funci de demanda de la exportaciones: 
+Donde: ~i , son las elasticidades precio de la demanda por exportaciones; E-i es el valor que tendrían las exportaciones si los precios nacionales coincidieran con el precio mundial promedio correspondiente del a base; PMj, son los precios mundiales promedio de las exportaciones del bien j, en dolares. 
+El equilibrio de la balanza de pagos se da por la ecuaci: 
+27 27 
+-F = o (25)
+E E 
+i=l i=l 
+Donde: F-es la entrada de capitales. 
+3.3.4 MERCADO DE PRODUCTOS 
+3.3.4.1 PRECIOS 
+Las condiciones de demanda y oferta dan lugar a ecuaciones de demanda en exceso para bienes domésticos que pueden resolverse para precios internos. Por la ley de Walras las ecuaciones de exceso de demanda no son independientes y alguna regla de normalizaci de precios se requiere para completar el sistema. En el modelo presentado aquí se usa un indice agregado de precios compuestos como regla de normalizaci, o regla de cierre. 
+REGLAS DE CIERRE 
+El problema a tratar aquí es definir qué precios y cantidades deberan ser exenos para que el modelo tenga el mismo nero de variables y ecuaciones. Las reglas de cierre estan sujetas a los mercados de factores y al balance entre inversi y ahorro. 
+Mercado de Factores Productivos 
+Dos  hipesis  pueden  tomarse  respecto  a  los  factores  
+productivos:  
+1)  la cantidad  es  exena.  
+2)  el precio  es  exeno.  
+La  primera  hipesis  es  conocida  como  regla  de  cierre  
+
+neoclásica y significa que el factor productivo esta disponible en 
+una cantidad fija y, por ello, los precios se ajustan para asegurar la completa utilizaci de éste. 
+La segunda, dice que las restricciones institucionales determinan el precio de un factor dado y que hay suficiente cantidad disponible de tal factor, al precio exeno, para satisfacer su demanda. Esta regla de cierre se llama keynesiana. 
+La hipesis de equilibrar el mercado laboral se relaja permitiendo el tipo keynesiano de rigídez del salario nominal o posibles rigideces en alg o todos los mercados laborales. Esta especificaci es la más apropiada que equilibra los mercados para muchos países en desarrollo. 18 
+Consideramos en nuestro modelo los dos tipos de específicaciones anteriores para el mercado de factores. La especificaci clásica de ajuste de precios con oferta dada se aplica en el factor productivo capital ya que el modelo se desarrolla en un período de tiempo suficientemente corto para que sea tratado como fijo. El tipo de específicacion keynesiana se aplica en el caso del restante factor productivo, el trabajo, ya que supone salario rígido. Balance de Inversi-Ahorro 
+Mecanismo necesario para mantener el balance macro en el flujo nominal apropiado para encontrar la soluci generada por el 
+18 Hipesis que aparece en trabajos recientes de Taylor, él maneja el salario nominal fijo y la regla de cierre que hace ahorro igual a inversi. Esta hipesis keynesiana se aplica en MEGC del Brasil realizados por Lysy y Taylor en 1980, en MEGC para Malaysia de Ahluwcha y Lysy en 1980, ver Taylor (1979). 
+modelo. Existen dos estándares de cierre para balancear el resto 
+del modelo: 
+Primero, la inversi es exena y el déficit de la cuenta corriente es un residual que permite el balance entre ahorro e inversi, este tipo de especificaci se conoce corno inversi dada. Regla clásica que fija la tasa de ahorro, endenarnente determina el volumen de ahorro agregado inversi agregada 
+Especificaci exogena de inversi ya sea con tasas de ahorro determinadas endenarnente, o, en moda Kaldoriana, con tasas fijas de ahorro por grupos y la determinaci endena de la distribuci del ingreso para validar la inversi especificada exenarnente 
+Segundo, el déficit de cuenta corriente es exeno y la inversi se ajusta a la cantidad de ahorro disponible, este tipo de modelo se conoce corno ahorro dado. En el modelo presentado nosotros suponernos el ahorro dado exenarnente. 
+La selecci de la regla de cierre y el mercado de factores no son independientes. En un modelo de precio fijo de los factores, que en parte es el caso de nuestro modelo, necesitarnos al menos una cantidad exena para determinar el nivel de actividad en la economía, tal cantidad exena puede ser el consumo de gobierno o la inversi, nosotros considerarnos el consumo de gobierno corno exeno, ya que la inversi es endena. 
+Cuando el déficit de la cuenta corriente se considera exena 19 entonces se puede suponer que el tipo de cambio es flotante o endena, que es el caso de nuestro país, y que este se ajusta para equilibrar la oferta de cambio extranjero, obtenido de exportaciones, con la demanda por este, principalmente para el pago de importaciones. Pero considerar el tipo de cambio flotante involucra la necesidad de un numerario, y al no poder ser este el tipo de cambio, entonces podemos escoger cualquier otro precio; después de todo el numerario es arbitrario y no afecta las varianbles reales, como arriba se expuso. Nosotros consideramos como numerario al indice de precios al consumidor, por ende el conjunto de los 27 diferentes bienes compuestos que demanda. 
+ECUACIONES DE PRECIOS 
+Para distinguir bienes internos y externos el modelo define una mercancía compuesta que es una agregaci Cobb-Douglas de importaciones y bienes domésticos. Los consumidores y productores demandan esta mercancía compuesta, así se constituye la demanda por importaciones y bienes comerciables domésticos. Ya que los demandantes minimizan el costo de adquirir una cantidad dada de bien compuesto y la relaci de demanda del bien compuesto se deriva de las condiciones de primer orden y es una funci de los precios relativos del bien doméstico y del importado. 
+19 Por ejmplo, que la cantidad de moneda extranjera a prestarse sea fija. 
+La especificaci de funciones de producci y comportamiento 
+empresarial (minimizaci de costos de insumos nacionales e importados) da lugar a las relaciones de oferta del producto interno. Resultado de este proceso es el precio de la mercancia compuesta: 
+p.l. = 1/ b. [P / A.] 11; [P / (1-A .) 1-P;] 1-P1 (26)
+.1 m; t-' .1 t-' .1
+d 1 
+Los precios de las importaciones estan dados por los precios internacionales, por hipesis el país es peque: 
+(27) 
+Donde: P1¡, es el precio internacional de la mercancía i, dado exenamente. Las exportaciones del país nacional tienen precios: 
+(28) 
+3.3.4.2 EQUILIBRIO EN EL MERCADO DE PRODUCTOS 
+La demanda nacional de bienes domésticos es una proporci de la demanda total por bienes de consumo ( privado y plico), de inversi, e insumos intermedio, so privados ya que el gobierno, se supone, no es productor, o sea, la demanda total del bien i es: 
+(29) 
+La raz 1'1; raz de uso doméstico puede ser obtenida a partir de minimizar los costos de utilizar insumos nacionales e importados sujetos a la funci Cobbb-Douglas : 
+La demanda total por bienes producidos domésticamente es la suma de la demanda interna, ecuaci (29), y externa: 
+Y el equilibrio en el mercado de productos es: 
+x.d -x.s = o (32)
+l l 
+CAPITULO 4 
+SIMULACION: IMPUESTO DE 2% SOBRE LOS ACTIVOS DE LAS EMPRESAS 
+
+
+4.1 ASPECTOS GENERALES 
+La simulaci del modelo se realizutilizando el paquete GAMS-HERCULES (Highlevel Economic Representation for Creating and using Large Economywide Systems). Este paquete fué elaborado por Arne Drud y David Kendrick (1986) quienes aplican un enfoque de valores de las transaciones (TV) que consiste en utilizar una matriz de contabilidad social (MCS) para la estimaci de los modelos de equilibrio general. La MCS es una representaci de los flujos econicos realizados durante un cierto lapso de tiempo y se basa en la ley econica fundamental: a todo gasto corresponde un ingreso. Por tanto, la MCS tiene igual nero de renglones, ingreso de los agentes, y columnas, que es su gasto. 
+La MCS es una sistematizaci numérica de las actividades e instituciones de la economía. Implicítamente la MCS posee un específico comportamiento en cada celda, expresado en términos de pagos e ingresos, este comportamiento funcional, la forma en la cual el valor de cada transaci es determinado, se puede especificar de manera explicíta en una matriz que, en el modelo, da lugar a una matriz de especificaciones. El modelo se construye en base a la MCS y sobre ésta se dise la matriz de 
+especificaciones donde se asigna una determinada especificaci a cada celda de la matriz, y en cada una se específica si es una variable endena o exena. Este enfoque de modelo econico para calcular un EGC se debe al reconocimiento de la existencia de las dos matrices seladas anteriormente y la relaci entre ellas. 
+La MCS que se utilizpara calibrar el modelo es de 1985, proporcionadas por Arturo Peréz Mendoza. Esta MCS se dise con las matrices de insumo producto e importaciones de 1985, estas timas se calcularon por medio del método de raseo de la matriz de insumo producto de 1980 y de la matriz de importaciones. 
+4.1.1 NIVEL DE AGREGACION 
+La desagregaci de los sectores productivos es justificado principalmente por la existencia de diferentes tasas impositivas en cada industria y por la utilizaci de los factores productivos con diversos grados de intensidad. Nos permite captar las diversas respuestas en cada sector sujetas a las características propias de cada industria y la ventaja de evaluar políticas fiscales específicas relacionadas con la intensidad de utilizaci de los factores productivos al hacer simulaciones de impuestos corporativos y de ingreso personal. 20 Si el sector corporativo es 
+20 En modelos desagregados se ha determinado que los servicios domésticos se caracterizan por industrias intensivas de capital; en los modelos de Fullerton-Shoven-Holle (1978, 1981, 1983)estas industrias son la agricultura, los servicios, de igual forma lo son para Piggot-Walley (1976, 1982) además de la industria del papel, las imprentas y la minería son intensivas de capital. 
+desagregado en algunas industrias que pagan altos impuestos y otras 
+industrias de bajos impuestos, como se hizo en el modelo de Fullerton-Gordon, de 1983, es posible capturar los errores de asignaci, permitiendo una mejor evaluaci del bienestar. Los datos revelan que hay mas varianza en las tasas impositivas entre las industrias del sector corporativo tal contraste explica el cambio adicional en el bienestar estimado el desagregar del modelo en los sectores. 
+Shoven (1977) usun algoritmo en lugar de la aproximaci lineal utilizada por Harberger además con una mayor desagregaci, y prueba que la ganancia de bienestar es considerablemente mejor aproximada en este modelo que en la versi original de Harberger, ya que las industrias son agrupadas más apropiadamente. 
+En el MEGC de Piggot y Whalley (1985) la desagregaci que también hacen es de industria privada e industria plica. Esta ultima categoría puede evaluar subsidios específicos al capital, reginal, etc, en industrias nacionalizadas. Piggot y Walley encuentran que la distorsi del ahorro es un factor peque comparado a la gra distorci intersectorial del sistema impositivo del Reino Unido. Pero hay gran ganancia de eficacia si el impuesto al ingreso se reemplaza. 
+En resumen un MEGC con uno o más sectores debe ser capaz de captar la esencia de la política a desemperse. Tal cuesti so puede ser analizada en un modelo que esté lo suficientemente desagregado para distinguir los sectores críticos que compiten por los recursos econicos. En un marco de MEGC Robison y Tyson 21 afirman que, en procesos de desarrollo definidos bajo transformaciones estructurales de producci no pueden ser adecuadamente capturadas, dichas transformaciones estructurales, en modelos de uno o dos sectores. 
+Robinson y Tyson establecen que un modelo multisectorial, y en funci del problema a estudiar, debe incluir, al menos, sector agrícola, consumidores de bienes finales, insumos intermedios, bienes de capital, industrias exportadoras, industrias de no comerciables y servicios. 
+El modelo que desarrollamos aqui posee los requerimientos minímos, selados por Robinson y Tyson, de desagregaci y que permitan captar los efectos macroeconicos de la aplicaci del IMPAC. El modelo incluye 27 sectores productivos, cada sector produce una mercancia, de las cuales 21 se consideran comerciables y 6 no comerciables (ver ANEXO C). 
+4 • 1 • 2 PARAMETROS 
+Los parámetros aplicados en el modelo se consideraron con valor de uno. Excepto para el caso de las elasticidades de demanda de exportaciones, obtenidas del trabajo empiríco de Kenneth A. Reinert y Clinton R. Shiells calculadas por tipo de mercancias. 
+21 Scarf y Shoven, (1984) . 
+
+
+4.2 SIMULACION 
+La simulaci consiste en aplicar un impuesto nuevo al conjunto de actividades productivas. Este impuesto consiste en el pago de cierta cantidad, el monto de ésta se obtiene de calcular el dos porciento (tasa impositiva) a los activos de las empresas ( base del impuesto). El valor de los activos, que constituyen la base del impuesto, se aproximaron mediante la suma de activos fijos, datos proporcionados por el Banco de México, y del valor de la variaci de existencias de cada sector productivo en que la economía fue dividida, este se obtuvde la matriz de insumo producto para 198 5 raseada de 198o. Los datos respectivos se presentan en el ANEXO B. 
+Para determinar los efectos que provoca la implementaci del 
+IMPAC  en  la  economía  mexicana  se  dise  un  modelo  econico  
+adecuado  al  problema  a  tratar,  este  modelo  se  incluye  en  el  
+ANEXO  C.  
+
+En el a base el IMPAC tiene un valor de cero y la simulaci consiste en calcular el impuesto que las empresas deberían pagar por concepto de tal impuesto e incorporarlo al modelo propuesto. 
+4.3. RESULTADOS 
+4.3.1 EFECTOS EN EL BIENESTAR SOCIAL 
+El consumo privado se presenta en el CUADRO 1, en este se observa detrimento en la tasa de consumo privado en todos los sectores de los bienes consumidos. Además el monto total de consumo disminuy 
+El efecto sobre el bienestar se estimo con la valoraci de la variaci equivalente (EV). De acuerdo a la siguiente formulaci: 
+EV = [ ( un -Uº ) / Uº ] Iº 
+donde un,uo son los niveles de utilidad final e inicial e Iº es el ingreso original. La evaluaci de la utilidad inicial y final se obtuvieron de los datos necesarios ( ANEXO D). El valor de la EV se evalupara el conjunto de la economía considerando que so hay un consumidor y su valor es: -1450329301. Esto indica que el impuesto aplicado provocun detrimento en la utilidad (el bienestar del consumidor representativo) . 
+CUADRO 1 
+CONSUMO 
+SECTOR 
+1 
+2 3 4 5 6 7 8 9 10 
+11 
+12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 
+TOTAL 
+INICIAL 2176604 1358 446667 4882628 1093376 207909 540299 835622 441037 352132 246687 808198 285384 280782 o 34759 154518 25956 339104 514918 383653 4897320 58488 7647866 2523967 2412294 3437754 35129280 
+FINAL 2171885 1343 
+443777 4868355 1087635 206160 537054 831840 439413 350967 245276 802205 283911 278954 o 34535 153454 25782 336714 511617 381597 
+4923176 
+156485 7634041 2509650 2404722 3429237 
+35049787 
+CRECIM -0.21681 -1. 07466 -0.64711 -0.29231 -0.52507 -0.84101 -0.60064 -0.45259 -0.36813 -0.33077 -0.57217 -0.74155 -0.51604 -0.65087 
+o -0.64310 -0.68845 -0.67110 -0.70478 -0.64098 -0.53583 0.527954 -1. 26385 -0.18076 -0.56722 -0.31389 -0.24773 -13.7596 
+4.3.2 EFECTOS EN EL PRODUCTO Y ASIGNACION DE RECURSOS 
+El CUADRO 2 resume los resultados obtenidos de la simulaci respecto al desempe de los bienes domésticos, bienes compuestos, bienes de exportacion, y bienes importados. La tasa de crecimiento de producci de mercancías domésticas es decreciente en todos los sectores productivos excepto en el sector de la minería, de la madera, de productos de minerales no metálicos, de metales no ferrosos, de productos metálicos, de maquinaría eléctrica y no eléctrica y de la industria automotriz, estos sectores tuvieron tasas de crecimiento positivas. 
+Las tasas de crecimiento de las mercancías compuestas tienen, en cada sector productivo, el mismo signo que las tasas de crecimiento de las mercancías domésticas y so difieren entre sí en la magnitud de éstas, aunque sus valores son poco diferentes. Esto puede explicarse si tomamos en cuenta, primero, que las mercancías domésticas son afectadas más directamente por el IMPAC en comparaci a las mercancías importadas; segundo, las mercancías compuestas son la suma de mercancías domésticas e importadas; entonces, las mercancías domésticas trasladan los efectos que sufren a las mercancías compuestas. Pero, dicha transmisi so es cualitativa (signo de la tasa de crecimiento) y no cuantitativa. 
+Las mercancías importadas decrecen en sectores agrícola, minero, del petrero, de alimentos, de bebidas, de textiles, de vestir, del cuero, de la madera, de papel, químico, de plásticos, de otras manufacturas, de construcci, de comercio, de transporte, de sercicios financieros y personales. En los demás sectores se tiene crecimiento. 
+En lo que respecta a las mercancías exportadas también se presentan tasa decrecientes, en sectores minero, de petreo, del tabaco, químico, de plásticos, de minerales no metálicos, de hierro y acero, de metáles, de maquinaria y equipo no eléctrico y no electrice y de electricidad. En los restantes sectores se tienen tasas de crecimiento positivas. 
+CUADRO 2 TASA DE CRECIMIENTO DE PRODUCTOS (porcentaje) SECTOR COM-DOM-lCOM-CMP-lEXPOR-1 IMPORT-1 
+1  -0.147  
+2  0.054  
+3  -0.214  
+4  -0.236  
+5  -0.479  
+6  -0.799  
+7  -0.396  
+8  -0.387  
+9  -0.3  
+10  0.054  
+11  -0.146  
+12  -0.265  
+13  -0.158  
+14  0.07  
+15  0.077  
+16  0.114  
+17  0.071  
+18  0.404  
+19  0.015  
+20  0.151  
+21  -0.072  
+22  0.528  
+23  -0.307  
+24  -0.077  
+25  -0.316  
+26  -0.215  
+27  -0.117  
+
+-0.178 
+0.112 -0.213 -0.254 -0.483 -0.799 -0.398 -0.396 -0.304 
+0.044 -0.155 -0.247 -0.169 
+0.07 
+0.268 
+0.113 
+0.079 
+0.444 
+0.039 
+0.148 -0.142 
+0.528 -0.306 -0.083 -0.321 -0.218 
+-0.12 
+0.463  -0.607  
+-0.563  0.546  
+-0.002  -0.212  
+0.287  -0.607  
+0.051  -0.603  
+-0.12  
+0.147  -0.443  
+0.754  -0.589  
+0.135  -0.581  
+0.415  -0.272  
+0.094  -0.229  
+-0.109  -0.15  
+0.145  -0.299  
+-0.004  0.075  
+-1.281  0.886  
+0.005  0.111  
+-0.051  0.123  
+-0.091  0.47  
+-0.087  0.099  
+0.007  0.144  
+0.181  -0.252  
+-1. 633  O. 319  
+0.474  -0.548  
+0.079  -0.4  
+0.336  -0.55  
+0.404  -0.518  
+
+CUADRO 3  
+NIVEL DE  PRECIOS  SOLUCION  
+SECTOR  PBASE  COM-DOM  COM-CMP  EXPOR  IMPORT  
+1  1  0.998  0.999  0.998  1.003  
+2  1  1.008  1.007  1.008  1.003  
+3  1  1.003  1.003  1.003  1.003  
+4  1  0.999  0.999  0.999  1.003  
+5  1  1.002  1.002  1.002  1.003  
+6  1  1.005  1.005  1.005  1.003  
+7  1  1.003  1.003  1.003  1.003  
+8  1  1.001  1.001  1.001  1.003  
+9  1  1  1  1  1.003  
+10  1  1  1  1  1.003  
+11  1  1.002  1.002  1.002  1.003  
+12  1  l.004  1.004  1.004  1.003  
+13  1  l.002  1.002  1.002  1.003  
+14  1  1.003  1.003  1.003  1.003  
+15  1  1.011  1.009  l.011  1.003  
+16  1  1.003  1.003  1.003  1.003  
+17  1  l.004  1.003  1.004  1.003  
+18  1  1.004  1.003  1.004  1.003  
+19  1  1.004  1.004  1.004  1.003  
+20  1  l.003  1.003  1.003  1.003  
+21  1  1.001  1.002  1.001  1.003  
+22  1  1.002  1.002  1.009  1.003  
+23  1  1.009  1.009  0.998  1.003  
+24  1  0.998  0.998  1.002  1.003  
+25  1  1.002  1.002  1  1.003  
+26  1  1  1  0.999  
+27  1  0.999  0.999  
+
+CUADRO 4 
+TASA DE CRECIMIENTO DE PRECIOS (porcentaje) 
+SECTOR COM-DOM COM-CMP EXPOR IMPORT 1 -0.20040 -0.10010 -0.20040 0.299102 2 0.793650 0.695134 0.793650 0.299102 3 0.299102 0.299102 0.299102 0.299102 4 -0.10010 -0.10010 -0.10010 0.299102 5 0.199600 0.199600 0.199600 0.299102 6 0.497512 0.497512 0.497512 0.299102 7 0.299102 0.299102 0.299102 0.299102 8 0.099900 0.099900 0.099900 0.299102 9 o o o 0.299102 
+10 o o o 0.299102 
+11 0.199600 0.199600 0.199600 0.299102 
+12 0.398406 0.398406 0.398406 0.299102 
+13 0.199600 0.199600 0.199600 0.299102 
+14 0.299102 0.299102 0.299102 0.299102 
+15 l. 088031 0.891972 1.088031 0.299102 
+16 0.299102 0.299102 0.299102 0.299102 
+17 0.398406 0.299102 0.398406 0.299102 
+18 0.398406 0.299102 0.398406 0.299102 
+19 0.398406 0.398406 0.398406 0.299102 
+20 0.299102 0.299102 0.299102 0.299102 
+21 0.099900 0.199600 0.099900 0.299102 
+22 0.199600 0.199600 0 . 891972 0.299102 
+23 0.891972 0.891972 -0.20040 0.299102 
+24 -0.20040 -0.20040 0.199600 0.299102 
+25 0.199600 0.199600 o 0.299102 
+26 o o -0.10010 
+27 -0.10010 -0.10010 
+57 
+Respecto a los precios de las mercancías anteriormente seladas los resultados obtenidos se resumen en los cuadros CUADRO 3 y CUADRO 4. El crecimiento de los precios de las mercancías domésticas y compuestas es idéntico y positivo en casi todos los sectores y so negativo en el sector agrícola, de alimentos, de comercio, y de servicios sociales. Este comportamiento también lo siguen todas las mercancías de exportaci salvo en el caso del sector electricidad. Los precios de las mercancías importadas aumentan a una tasa constante y positiva, debido a la especificaci que se le asigno en el modelo. 
+DESEMPEÑO DE LA ECONOMIA Las condiciones globales de la situaci econica del a base y después de la simulaci se dan en el CUADRO 5. 
+Corno asumirnos que el a base tiene precios unitarios entonces las cantidades de los productos y sus valores son iguales. Se realizará una comparaci entre los dos estados el inicial y el final. 
+El producto interno bruto (PIB) a precios de factores cayen . 26587 % el ingreso de impuestos indirectos se incrementa en 2.417765 %. El efecto global en las exportaciones e importaciones es positivo con incrementos de .17 % y .298 %, en forma similar sucede con el PIB a precios de mercado, estos resultados se calcularon con datos a precios constantes. 
+El uso de recursos productivos se vio afectado de manera negativa, a nivel global, tanto en el capital como en el trabajo. El precio del primer factor se redujo en.377%, ya que asumimos que su cantidad es exena, significa que su demanda fué reducida en relaci al a base. El precio del trabajo permanecio igual a uno ( por hipesis) pero la cantidad demandada se redujen 
+.286%. Esto dio lugar a la caída en el ingreso en .3484% y de manera similar en el consumo de los consumidores privados, 0.3473%. Por ello, los impuestos directos disminuyen, no así los impuestos indirectos que son incrementados en .1055 %. 
+El ingreso del gobierno por concepto del impuesto aplicado, IMPAC, fue de un monto igual a 121122.056 destinado al pago del impuesto aplicado en el modelo y que recibe el gobierno. Esta instituci aumenta su ingreso en 1.6436 % y su consumo es reducido en .02753 % , esta reducci se traduce en un aumento en el ahorro total de la economía, el incremento es de .7305 % . 
+Los resultados obtenidos revelan que las repercuciones sobre la economía al aplicar el IMPAC son negativas para el consumidor, pero positivos para el conjunto de la economía ya que el producto total aumenta, a a costa del bienestar social. Además, las repercusiones en los precios son muy peques, lo cual evita los temidos impactos inflacionarios, y se logra que el ahorro se incremente. Este timo punto es importante de selar y recalcar, porque implica el derrumbe de la ica defensa que sostenían los productores en contra del IMPAC, o sea, que desincentiva la inversi. Consecuentemente, que fuese a provocar la caída de la actividad industrial. 
+CUADRO 5 
+RESUMEN DE RESULTADOS 
+PRECIOS PRECIOS PRECIOS 
+BASE CORRIENTES CONSTANTES INDICE PIB A COSTO DE FACTOR 41614374.000 41469291.542 41579841.198 .997 IMPUESTOS INDIRECTOS 5384529.000 5511327.391 5381222.080 EFECTO INGRESO -92.277 
+USO FINAL 44499123.000 44473362.406 44452300.701 1.000 EXPORTACIONES 6934986.000 6955233.963 6943406.452 1.002 IMPORTACIONES -4435206.000 -4447985.530 -4434736.152 1.003 
+PIB A PRECIOS DE MDO. 46998903.000 46980610.839 46960971.000 l. 000 
+TERMINOS DE INTERCAMBIO -8890.300 INGRESO BRUTO INTERNO 46998903.000 46980610.839 46952080.701 BRECHA DE RECURSOS -2499780.000 -2507248.433 -2499780.000 
+R E S U M E N S O L U C I O N 
+PSOL QSOL YSOL YBASE RESIDUAL CAPITAL 0.996 2.9371E+7 2.9260E+7 2.9371E+7 TRABAJO 1.000 l. 2209E+7 l.2209E+7 l. 2244E+7 CONSUMIDOR-I 4.1469E+7 4.1614E+7 CONSUMIDOR-e 1.000 3.0127E+7 3.0127E+7 3.0232E+7 GOBIERNO-I 7427284.319 7307181. 000 GOBIERNO-e 1.000 3178773.000 3177897.788 3178773 . 000 AHORRO-INV 1.002 l.1147E+7 l.1169E+7 l.1088E+7 IMPUESTOS INDIRECTOS 5390213.347 5384529.000 IMPUESTOS DIRECTOS 1915948.953 1922652.000 IMPUESTO 121122.056 
+CONCLUSIONES 
+La economía mexicana viviuna aguda crisis econica en la que fué necesario adoptar medidas acertadas, o al menos no danas, para el desarrollo econico. Entre estas medidas se encuentran la eliminaci del déficit gubernamental mediante la disminuci de su gasto o aumento de sus ingresos. Entre algunas formas de incrementar sus ingresos se encuentra el aumento de impuestos o bien aplicar nuevos impuestos. 
+El implantar un nuevo impuesto da lugar a la inmediata interrogante de su incidencia sobre la economía. Este sería el caso del IMPAC, impuesto que genergran resistencia por parte de los agentes objetos del pago de éste, aduciendo que la economía no podía pagar más impuestos, y menos aplicados a las empresas. 
+Para definir la incidencia real del IMPAC sobre la actividad econica se dise el modelo de EGC el cual permitidelimitar los alcances que tuvel impuesto, en relaci a los objetivos que el gobierno perseguía y a sus efectos sobre la economía. 
+Entre los resultados obtenidos se puede afirmar que el déficit gubernamental disminuyy la economía no se sumien recesi. Pero es importante notar que esto se logro a costa de un detrimento en el bienestar social. 
+Otro objetivo, implicítamente deseado, era evitar el 
+crecimiento de la inflaci, que era, un problema grave, al cual 
+se podía incurrir fácilmente porque el IMPAC elevaría la contabilidad de las empresas. Pero el resultado obtenido indica tasas de crecimiento de precios peques, prácticamente despreciables. 
+No obstante, el producto de los sectores en que fue dividida la economía decrecien ciertos sectores pero aumento en otros, principalmente las exportaciones. Y la suma global fue el crecimiento del PIB. Estos resultados son importantes debido a la apertura de la economía al exterior. 
+En suma, se podría afirmar, de acuerdo a los resultados del modelo, que el IMPAC es una política fiscal adecuada a los objetivos plicos y a las condiciones de la economía. Además contribuyal desarrollo de la economía, aunque es necesario notar el efecto negativo sobre el bienestar social; sin embargo, sería adecuado hacer un modelo intertemporal para definir si a largo plazo se sostienen los resultados obtenidos y si el bienestar continua en declive o mejora. Lo mismo se puede decir respecto a los demás aspectos econicos, ya que este tipo de impuesto afecta las percepciones futuras de los agentes. 
+ANEXOS 
+ANEXO A. SECTORES PRODUCTIVOS 
+1. AGRICULTURA 
+l. AGRICULTURA 
+2. 
+GANADERIA 
+
+3. 
+SILVICULTURA 
+
+4. 
+CAZA Y PESCA 
+
+
+2. MINERIA 
+5. CARBON, GRAFITO Y DERIVADOS 
+7. 
+MINERAL DE HIERRO 
+
+8. 
+MINERALES METALICOS NO FERROSOS 
+
+9. 
+CANTERAS, ARENA, GRAVA Y ARCILLA 
+
+10. 
+OTROS MINERALES NO METALICOS 
+
+
+3. PETROLEO CRUDO Y GAS 
+6. PETROLEO CRUDO Y GAS 
+33. 
+PETROLEO Y DERIVADOS 
+
+34. 
+PETROQUIMICA BASICA 
+
+
+4. PRODUCTOS ALIMENTICIOS 
+11. 
+CARNES Y LACTEOS 
+
+12. 
+FRUTAS Y LEGUMBRES 
+
+13. 
+MOLIENDA DE TRIGO 
+
+14. 
+MOLIENDA DE NIXTAMAL 
+
+15. 
+BENEFICIO Y MOLIENDA DE CAFE 
+
+16. 
+AZUCAR 
+
+17. 
+ACEITE Y GRASAS COMESTIBLES 
+
+18. 
+ALIMENTOS PARA ANIMALES 
+
+19. 
+PRODUCTOS ALIMENTICIOS 
+
+
+S. BEBIDAS 
+20. 
+BEBIDAS ALCOHOLICAS 
+
+21. 
+CERVEZA Y MALTA 
+
+22. 
+REFRESCOS Y AGUAS GASEOSAS 
+
+
+6. TABACO 
+23. TABACO 
+7. TEXTILES 
+24. 
+HILO Y TEJIDOS DE FIBRAS BLANDAS 
+
+25. 
+HILO Y TEJIDO DE FIBRAS DURAS 
+
+26. 
+OTRAS INDUSTRIAS TEXTILES 
+
+
+63 
+8. PRENDAS DE VESTIR 
+27. PRENDAS DE VESTIR 
+9. INDUSTRIA DEL CUERO 
+28. CUERO Y CALZADO 
+10. INDUSTRIA DE LA MADERA Y PRODUCTOS DE MADERA 
+29. 
+ASERRADEROS, TRIPLAY 
+
+30. 
+OTROS PRODUCTOS, MADERA Y CORCHO 
+
+
+11. PAPEL, PRODUCTOS DE PAPEL, IMPRENTAS Y EDITORIALES 
+31. 
+PAPEL Y CARTON 
+
+32. 
+IMPRENTAS Y EDITORIALES 
+
+
+12. SUSTANCIAS QUIMICAS 
+35. 
+QUIMICA BASICA 
+
+36. 
+ABONOS Y FERTILIZANTES 
+
+37. 
+RESINAS SINTETICAS Y FIBRAS ARTIFICIALES 
+
+38. 
+PRODUCTOS FARMACEUTICOS 
+
+39. 
+JABONES, DETERGENTES Y COSMETICOS 
+
+40. 
+OTROS PRODUCTOS QUIMICOS 
+
+
+13. PRODUCTOS DE CAUCHO Y PLASTICOS 
+41. 
+PRODUCTOS DE HULE 
+
+42. 
+ARTICULOS DE PLASTICO 
+
+
+14. PRODUCTOS DE MINERALES NO METALES 
+43. 
+VIDRIO Y PRODUCTOS 
+
+44. 
+CEMENTO 
+
+45. 
+PRODUCTOS DE MINERALES NO METALICOS 
+
+
+15. HIERRO Y ACERO 
+46. HIERRO Y ACERO 
+16. METALES NO FERROSOS 
+47. METALES NO FERROSOS 
+17. PRODUCTOS METALICOS 
+48. 
+MUEBLES METALICOS 
+
+49. 
+METALICOS ESTRUCTURALES 
+
+50. 
+OTROS METALICOS, EXCEPTO MAQUINARIA 
+
+
+18. MAQUINARIA Y EQUIPO NO ELECTRICO 
+51. MAQUINARIA Y EQUIPO NO ELECTRICO 
+19. MAQUINARIA Y APARATOS ELECTRICOS 
+52. 
+MAQUINARIA Y APARATOS ELECTRICOS 
+
+53. 
+ELECTRO-DOMESTICOS 
+
+54. 
+APARATOS ELECTRONICOS 
+
+55. 
+APARATOS ELECTRICOS 
+
+
+20. INDUSTRIA AUTROMOTRIZ 
+56. 
+AUTOMOVILES 
+
+57. 
+MOTORES Y ACCESORIOS PARA AUTOMOVILES 
+
+58. 
+EQUIPO Y MATERIAL DE TRANSPORTE 
+
+
+21. OTRAS INDUSTRIAS MANUFACTURERAS 
+59. OTRAS INDUSTRIAS MANUFACTURERAS 
+22. CONSTRUCCION 
+60. CONSTRUCCION 
+23. ELECTRICIDAD, GAS Y AGUA 
+61. ELECTRICIDAD, GAS Y AGUA 
+24. COMERCIO, RESTAURANTES Y HOTELES 
+62. 
+COMERCIO 
+
+63. 
+RESTAURANTES Y HOTELES 
+
+
+25. TRANSPORTE Y COMUNICACIONES 
+64. 
+TRANSPORTE 
+
+65. 
+COMUNICACIONES 
+
+
+26. SERVICIOS FINANCIEROS, SEGUROS Y BIENES INMUEBLES 
+66. 
+SERVICIOS FINANCIEROS 
+
+67. 
+ALQUILER DE INMUEBLES 
+
+
+27. SERVICIOS COMUNALES, SOCIALES Y PERSONALES 
+68. 
+SERVICIOS PROFESIONALES 
+
+69. 
+SERVICIOS DE EDUCACION 
+
+70. 
+SERVICIOS MEDICOS 
+
+71. 
+SERVICIOS DE ESPARCIMIENTO 
+
+72. 
+OTROS SERVICIOS 
+
+
+ANEXO B. 
+I. ACERVOS DE CAPITAL E INVENTARIOS 
+SECTOR 
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 
+24 
+25 
+26 
+27 
+ACERVOS NETOS (1) 
+MILL. 
+223319 
+544890 144123.56 76671. 896 21580.244 69875.292 
+15192.576 92883.456 303364.292 28659.708 139264.708 318065.137 13211. 99 42549.195 48318.359 77500.311 182488.768 11164 23028 309311 223753 609559 258435 
+(1) INCLUYE: 
+FUENTES: BANCO 
+INVENTARIOS  BASE  IMPUESTO  
+(2)  0.02  
+DE  PESOS  CORRIENTES  
+
+108631 7297 o 96166 28382 5990 31322 31479 22100 26556 28200 112582 22847 27499 72295 11241 27380 26282 36449 o 23637 o o o o 
+o 
+o 
+EDIFICIOS, 
+108631  2172.62  
+230616  4612.32  
+544890  10897.8  
+240289.56  4805.7912  
+105053.896  2101.07792  
+27570.244  551. 40488  
+101197.292  2023.94584  
+31479  629.58  
+22100  442  
+41748.576  834.97152  
+121083.456  2421.66912  
+415946.292  8318.92584  
+51506.708  1030.13416  
+166763.708  3335.27416  
+390360.137  7807.20274  
+24452.99  489.0598  
+69929.195  1398.5839  
+74600.359  1492.00718  
+113949.311  2278.98622  
+182488.768  3649.77536  
+34801  696.02  
+23028  460.56  
+309311  6186.22  
+223753  4475.06  
+609559  12191.18  
+258435  5168.7  
+o  o  
+CONSTRUCCIONES  E  
+
+INSTALACIONES FIJAS MAQUINARIA Y EQUIPO DE EQUIPO DE TRANSPORTE MOBILIARIO Y EQUIPO DE  OPERACION OFICINA  
+DE  MEXICO  
+
+MATRIZ INSUMO PRODUCTO 1985 
+II. COEFICIENTES UTILIZADOS EN LA SIMULACION 
+SECTOR CAPITAL COEFICIENTE 
+( K ) (2) 
+1 3494264 0.0006217676 2 365893 0.0126056525 3 1679500 0.0064887169 4 1864760 0.0025771634 
+359123 0.0058505802 6 52746 0.0104539658 7 343625 0.0058899843 8 245988 0.0025593931 9 179108 0.0024677848 
+319485 0.0026134921 11 442294 0.0054752475 12 914356 0.0090981257 13 293001 0.0035158042 14 590906 0.0056443396 
+371298 0.0210267837 16 103227 0.004737712 17 274395 0.005096973 18 215065 0.0069374709 19 279830 0.0081441812 
+570946 0.0063925054 21 209724 0.0033187427 22 702445 0.0006556528 23 384422 0.0160922632 24 7701256 0.0005810818 
+2306810 0.0052848652 26 2223912 0.0023241477 27 2882198 o 
+(2) coeficiente= capital/ monto de impuesto 
+ANEXO C. 
+$TITLE MSEG: PROGRAMA GENERAL 
+* 
+PROGRAMA DE EQUILIBRIO GENERAL USANDO HERCULES 
+
+* 
+MODELO DE POLITICA FISCAL 
+
+* 
+EFECTOS EN LA ECOMOMIA POR IMPLANTAR UN NUEVO 
+
+* 
+CASO DEL IMPUESTO DEL 2% SOBRE LOS ACTIVOS DE 
+
+* 
+1) CUENTAS UTILIZADAS 
+
+
+SET I CUENTAS/ 
+CAPITAL CAPITAL 
+LABOR TRABAJO 
+VAL-NET-1 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-2 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-3 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-4 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-5 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-6 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-7 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-8 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-9 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-10 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-11 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-12 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-13 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-14 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-15 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-16 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-17 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-18 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-19 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-20 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-21 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-22 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-23 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-24 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-25 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-26 VALOR AGREGADO SIN IMPUESTO SECTOR 
+VAL-NET-27 VALOR AGREGADO SIN IMPUESTO SECTOR 
+HOUSEHLD-I INGRESO DE LAS FAMILIAS 
+HOUSEHLD-C CONSUMO DE LAS FAMILIAS 
+GOVERMNT-I INGRESO DEL GOBIERNO 
+GOVERMNT-C CONSUMO DEL GOBIERNO 
+IMPUESTO LAS EMPRESAS 
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 SAVING-INV AHORRO E INVERSION INDR-TAX IMPUESTOS INDIRECTOS DIR-TAX IMPUESTOS DIRECTOS IMPUESTO IMPUESTO 2% SOBRE LOS ACERVOS DE CAPITAL VAL-ADD-1 VALOR AGREGADO DE SECTOR 1 VAL-ADD-2 VALOR AGREGADO DE SECTOR 2 VAL-ADD-3 VALOR AGREGADO DE SECTOR 3 VAL-ADD-4 VALOR AGREGADO DE SECTOR 4 VAL-ADD-5 VALOR AGREGADO DE SECTOR 5 VAL-ADD-6 VALOR AGREGADO DE SECTOR 6 VAL-ADD-7 VALOR AGREGADO DE SECTOR 7 VAL-ADD-8 VALOR AGREGADO DE SECTOR 8 VAL-ADD-9 VALOR AGREGADO DE SECTOR 9 VAL-ADD-10 VALOR AGREGADO DE SECTOR 10 VAL-ADD-11 VALOR AGREGADO DE SECTOR 11 VAL-ADD-12 VALOR AGREGADO DE SECTOR 12 VAL-ADD-13 VALOR AGREGADO DE SECTOR 13 VAL-ADD-14 VALOR AGREGADO DE SECTOR 14 VAL-ADD-15 VALOR AGREGADO DE SECTOR 15 VAL-ADD-16 VALOR AGREGADO DE SECTOR 16 VAL-ADD-17 VALOR AGREGADO DE SECTOR 17 VAL-ADD-18 VALOR AGREGADO DE SECTOR 18 VAL-ADD-19 VALOR AGREGADO DE SECTOR 19 VAL-ADD-20 VALOR AGREGADO DE SECTOR 20 VAL-ADD-21 VALOR AGREGADO DE SECTOR 21 VAL-ADD-22 VALOR AGREGADO DE SECTOR 22 VAL-ADD-23 VALOR AGREGADO DE SECTOR 23 VAL-ADD-24 VALOR AGREGADO DE SECTOR 24 VAL-ADD-25 VALOR AGREGADO DE SECTOR 25 VAL-ADD-26 VALOR AGREGADO DE SECTOR 26 VAL-ADD-27 VALOR AGREGADO DE SECTOR 27 ACT-1 ACTIVIDAD PRODUCTIVA DEL SECTOR 1 ACT-2 ACTIVIDAD PRODUCTIVA DEL SECTOR 2 ACT-3 ACTIVIDAD PRODUCTIVA DEL SECTOR 3 ACT-4 ACTIVIDAD PRODUCTIVA DEL SECTOR 4 ACT-5 ACTIVIDAD PRODUCTIVA DEL SECTOR 5 ACT-6 ACTIVIDAD PRODUCTIVA DEL SECTOR 6 ACT-7 ACTIVIDAD PRODUCTIVA DEL SECTOR 7 ACT-8 ACTIVIDAD PRODUCTIVA DEL SECTOR 8 ACT-9 ACTIVIDAD PRODUCTIVA DEL SECTOR 9 ACT-10 ACTIVIDAD PRODUCTIVA DEL SECTOR 10 ACT-11 ACTIVIDAD PRODUCTIVA DEL SECTOR 11 ACT-12 ACTIVIDAD PRODUCTIVA DEL SECTOR 12 ACT-13 ACTIVIDAD PRODUCTIVA DEL SECTOR 13 ACT-14 ACTIVIDAD PRODUCTIVA DEL SECTOR 14 ACT-15 ACTIVIDAD PRODUCTIVA DEL SECTOR 15 ACT-16 ACTIVIDAD PRODUCTIVA DEL SECTOR 16 ACT-17 ACTIVIDAD PRODUCTIVA DEL SECTOR 17 ACT-18 ACTIVIDAD PRODUCTIVA DEL SECTOR 18 ACT-19 ACTIVIDAD PRODUCTIVA DEL SECTOR 19 ACT-20 ACTIVIDAD PRODUCTIVA DEL SECTOR 20 ACT-21 ACTIVIDAD PRODUCTIVA DEL SECTOR 21 ACT-22 ACT-23 ACT-24 ACT-25 ACT-26 ACT-27 COM-DOM-1 COM-DOM-2 COM-DOM-3 COM-DOM-4 COM-DOM-5 COM-DOM-6 COM-DOM-7 COM-DOM-8 COM-DOM-9 COM-DOM-10 COM-DOM-11 COM-DOM-12 COM-DOM-13 COM-DOM-14 COM-DOM-15 COM-DOM-16 COM-DOM-17 COM-DOM-18 COM-DOM-19 COM-DOM-20 COM-DOM-21 COM-DOM-22 COM-DOM-23 COM-DOM-24 COM-DOM-25 COM-DOM-26 COM-DOM-27 
+IMPORT-1 
+IMPORT-2 
+IMPORT-3 
+IMPORT-4 
+IMPORT-5 
+IMPORT-7 
+IMPORT-8 
+IMPORT-9 IMPORT-10 IMPORT-11 
+IMPORT-12 IMPORT-13 IMPORT-14 IMPORT-15 IMPORT-16 IMPORT-17 IMPORT-18 IMPORT-19 IMPORT-20 
+ACTIVIDAD PRODUCTIVA DEL SECTOR 22 ACTIVIDAD PRODUCTIVA DEL SECTOR 23 ACTIVIDAD PRODUCTIVA DEL SECTOR 24 ACTIVIDAD PRODUCTIVA DEL SECTOR 25 ACTIVIDAD PRODUCTIVA DEL SECTOR 26 ACTIVIDAD PRODUCTIVA DEL SECTOR 27 BIEN DOMESTICO DE SECTOR 1 BIEN DOMESTICO DE SECTOR 2 BIEN DOMESTICO DE SECTOR 3 BIEN DOMESTICO DE SECTOR 4 BIEN DOMESTICO DE SECTOR 5 BIEN DOMESTICO DE SECTOR 6 BIEN DOMESTICO DE SECTOR 7 BIEN DOMESTICO DE SECTOR 8 BIEN DOMESTICO DE SECTOR 9 BIEN DOMESTICO DE SECTOR 10 BIEN DOMESTICO DE SECTOR 11 BIEN DOMESTICO DE SECTOR 12 BIEN DOMESTICO DE SECTOR 13 BIEN DOMESTICO DE SECTOR 14 BIEN DOMESTICO DE SECTOR 15 BIEN DOMESTICO DE SECTOR 16 BIEN DOMESTICO DE SECTOR 17 BIEN DOMESTICO DE SECTOR 18 BIEN DOMESTICO DE SECTOR 19 BIEN DOMESTICO DE SECTOR 20 BIEN DOMESTICO DE SECTOR 21 BIEN DOMESTICO DE SECTOR 22 BIEN DOMESTICO DE SECTOR 23 BIEN DOMESTICO DE SECTOR 24 BIEN DOMESTICO DE SECTOR 25 BIEN DOMESTICO DE SECTOR 26 BIEN DOMESTICO DE SECTOR 27 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 1 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 2 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 3 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 4 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 5 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 7 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 8 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 9 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 10 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 11 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 12 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 13 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 14 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 15 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 16 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 17 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 18 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 19 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 20 
+IMPORT-21 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 21 IMPORT-23 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 23 IMPORT-24 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 24 IMPORT-25 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 25 IMPORT-26 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 26 IMPORT-27 IMPORTACIONES DEL RESTO DEL MUNDO DEL SECTOR 27 COM-CMP-1 BIEN COMPUESTO DE SECTOR 1 COM-CMP-2 BIEN COMPUESTO DE SECTOR 2 COM-CMP-3 BIEN COMPUESTO DE SECTOR 3 COM-CMP-4 BIEN COMPUESTO DE SECTOR 4 COM-CMP-5 BIEN COMPUESTO DE SECTOR 5 COM-CMP-6 BIEN COMPUESTO DE SECTOR 6 COM-CMP-7 BIEN COMPUESTO DE SECTOR 7 COM-CMP-8 BIEN COMPUESTO DE SECTOR 8 COM-CMP-9 BIEN COMPUESTO DE SECTOR 9 COM-CMP-10 BIEN COMPUESTO DE SECTOR 10 COM-CMP-11 BIEN COMPUESTO DE SECTOR 11 COM-CMP-12 BIEN COMPUESTO DE SECTOR 12 COM-CMP-13 BIEN COMPUESTO DE SECTOR 13 COM-CMP-14 BIEN COMPUESTO DE SECTOR 14 COM-CMP-15 BIEN COMPUESTO DE SECTOR 15 COM-CMP-16 BIEN COMPUESTO DE SECTOR 16 COM-CMP-17 BIEN COMPUESTO DE SECTOR 17 COM-CMP-18 BIEN COMPUESTO DE SECTOR 18 COM-CMP-19 BIEN COMPUESTO DE SECTOR 19 COM-CMP-20 BIEN COMPUESTO DE SECTOR 20 COM-CMP-21 BIEN COMPUESTO DE SECTOR 21 COM-CMP-22 BIEN COMPUESTO DE SECTOR 22 COM-CMP-23 BIEN COMPUESTO DE SECTOR 23 COM-CMP-24 BIEN COMPUESTO DE SECTOR 24 COM-CMP-25 BIEN COMPUESTO DE SECTOR 25 COM-CMP-26 BIEN COMPUESTO DE SECTOR 26 COM-CMP-27 BIEN COMPUESTO DE SECTOR 27 EXPOR-1 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 1 EXPOR-2 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 2 EXPOR-3 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 3 EXPOR-4 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 4 EXPOR-5 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 5 EXPOR-6 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 6 EXPOR-7 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 7 EXPOR-8 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 8 EXPOR-9 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 9 EXPOR-10 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 10 EXPOR-11 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 11 EXPOR-12 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 12 EXPOR-13 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 13 EXPOR-14 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 14 EXPOR-15 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 15 EXPOR-16 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 16 EXPOR-17 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 17 EXPOR-18 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 18 EXPOR-19 EXPORTACION HACIA EL RESTO DEL MUNDO DEL SECTOR 19 
+71 
+20 21 23 24 25 26 27 
+EXPOR-20  EXPORTACION  
+EXPOR-21  EXPORTACION  
+EXPOR-23  EXPORTACION  
+EXPOR-24  EXPORTACION  
+EXPOR-25  EXPORTACION  
+EXPOR-26  EXPORTACION  
+EXPOR-27  EXPORTACION  
+
+HACIA HACIA HACIA HACIA HACIA HACIA HACIA EL RESTO EL RESTO EL RESTO EL RESTO EL RESTO EL RESTO EL RESTO 
+DEL MUNDO DEL MUNDO DEL MUNDO DEL MUNDO DEL MUNDO DEL MUNDO DEL MUNDO 
+DEL SECTOR DEL SECTOR DEL SECTOR DEL SECTOR DEL SECTOR DEL SECTOR DEL SECTOR 
+RW SECTOR EXTERNO RESTO DEL MUNDO/; 
+ALIAS ( I , J) ; 
+* 2) ABREVIATURAS 
+ACRONYMS MF INSTC INST TAX AC ROW NP Q 
+p CD CES EXPORT IDIST IMPORT IO ITAX QEXO QSHR UNSPEC VEXO DTAX FEXO VSHR 
+CUENTA CUENTA CUENTA CUENTA CUENTA CUENTA PRECIO 
+DEL MERCADO DE FACTORES DE CONSUMO DE INSTITUCIONES DE INGRESO DE INSTITUCIONES DE IMPUESTOS INDIRECTOS DE ACTIVIDAD O MERCANCIAS DEL RESTO DEL MUNDO EXOGENO-NUMERARIO 
+CANTIDAD EXOGENA PRECIO EXOGENO FUNCION DE PRODUCCION COBB-DOUGLAS FUNCION DE PRODUCCION CES DEMANDA RESTO DEL MUNDO POR EXPORT DISTRIBUCION DEL INGRESO PAGOS POR IMPORTACIONES ESPECIFICACION I-P IMPUESTO INDIRECTO CANTIDAD EXOGENA PROPORCION FIJA (CANTIDAD) VALOR RESIDUAL VALOR EXOGENO IMPUESTO DIRECTO VALOR FIJO EN MONEDA EXTRANJERA PROPORCION FIJA (MONETARIA); 
+72 
+* 3) MATRIZ DE CONTABILIDAD SOCIAL TABLE SAM (I,J) MATRIZ DE CONTABILIDAD SOCIAL 
+HOUSEHLD-C  
+HOUSEHLD-C  
+GOVERMNT-I  
+SAVING-INV  
+DIR-TAX  
+COM-CMP-1  2176604  
+COM-CMP-2  1358  
+COM-CMP-3  446667  
+COM-CMP-4  4882628  
+COM-CMP-5  1093376  
+COM-CMP-6  207909  
+COM-CMP-7  540299  
+COM-CMP-8  835622  
+COM-CMP-9  441037  
+COM-CMP-10  352132  
+COM-CMP-11  246687  
+COM-CMP-12  808198  
+COM-CMP-13  285384  
+COM-CMP-14  280782  
+COM-CMP-15  
+COM-CMP-16  34759  
+COM-CMP-17  154518  
+COM-CMP-18  25956  
+COM-CMP-19  339104  
+COM-CMP-20  514918  
+COM-CMP-21  383653  
+COM-CMP-22  
+COM-CMP-23  158488  
+COM-CMP-24  7647866  
+COM-CMP-25  2523967  
+COM-CMP-26  2412294  
+COM-CMP-27  3437754  
++  LABOR  
+HOUSEHLD-I  12243797  
+GOVERMNT-C  
+GOVERMNT-I  
+SAVING-INV  
++  VAL-ADD-1  
+VAL-NET-1  4327346  
+VAL-NET-2  
+VAL-NET-3  
+VAL-NET-4  
+VAL-NET-5  
+IMPUESTO  
+
+GOVERMNT-C 
+15808 156 205372 8309 
+1209 9556 
+822 
+1008 65887 28642 1252 31143 5117 
+14 
+5782 11528 12903 11216 11192 
+36176 34546 85808 174351 2420976 
+CAPITAL 
+29370577 
+VAL-ADD-2 
+535977 
+SAVING-INV 
+215725 31149 63874 173200 43749 6295 46932 42851 23854 72125 53931 242808 54780 44332 196068 74306 273314 
+1177157 509217 1366061 
+218450 4897320 1 1084102 157972 1 18816 
+DIR-TAX 
+1922652 
+VAL-ADD-3 
+1895837 
+HOUSEHLD-I IMPUESTO 30231960 
+9459762 
+1922652 
+GOVERMNT-I INDR-TAX 
+3178773 5384529 4128408 
+VAL-ADD-4 VAL-ADD-5 
+2231300 473019 
++ VAL-NET-6 VAL-NET-7 VAL-NET-8 VAL-NET-9 VAL-NET-10 IMPUESTO 
++ 
+VAL-NET-11 VAL-NET-12 VAL-NET-13 VAL-NET-14 VAL-NET-15 
+IMPUESTO 
++ 
+VAL-NET-16 VAL-NET-17 VAL-NET-18 VAL-NET-19 VAL-NET-20 
+IMPUESTO 
++ 
+VAL-NET-21 VAL-NET-22 VAL-NET-23 VAL-NET-24 VAL-NET-25 
+IMPUESTO 
++ 
+VAL-NET-26 VAL-NET-27 IMPUESTO 
++ 
+LABOR CAPITAL 
++ 
+LABOR CAPITAL 
+VAL-ADD-6 70008 
+VAL-ADD-11 568965 
+VAL-ADD-16 133346 
+VAL-ADD-21 260014 
+VAL-ADD-26 2898275 
+VAL-NET-1 833082 3494264 
+VAL-NET-6 17262 52746 
+VAL-ADD-7 497348 
+VAL-ADD-12 1191119 
+VAL-ADD-17 405050 
+VAL-ADD-22 2060403 
+VAL-ADD-27 6397886 
+VAL-NET-2 170084 365893 
+VAL-NET-7 153723 343625 
+VAL-ADD-8 337150 
+VAL-ADD-13 409394 
+VAL-ADD-18 308388 
+VAL-ADD-23 585668 
+VAL-NET-3 216337 1679500 
+VAL-NET-8 91162 245988 
+VAL-ADD-9 
+278760 
+VAL-ADD-14 
+748353 
+VAL-ADD-19 
+428654 
+VAL-ADD-24 
+9596484 
+VAL-NET-4 366540 1864760 
+VAL-NET-9 99652 179108 
+VAL-ADD-10 
+399855 
+VAL-ADD-15 
+516179 
+VAL-ADD-20 
+817433 
+VAL-ADD-25 
+3242163 
+VAL-NET-5 113896 359123 
+VAL-NET-10 80370 319485 
++ VAL-NET-11 VAL-NET-12 VAL-NET-13 VAL-NET-14 VAL-NET-15 LABOR 126671 276763 116393 157447 144881 CAPITAL 442294 914356 293001 590906 371298 
++ VAL-NET-16 VAL-NET-17 VAL-NET-18 VAL-NET-19 VAL-NET-20 LABOR 30119 130655 93323 148824 246487 CAPITAL 103227 274395 215065 279830 570946 
++ VAL-NET-21 VAL-NET-22 VAL-NET-23 VAL-NET-24 VAL-NET-25 LABOR 50290 1357958 201246 1895228 935353 CAPITAL 209724 702445 384422 7701256 2306810 
++ VAL-NET-26 VAL-NET-27 LABOR 674363 3515688 CAPITAL 2223912 2882198 
++ ACT-1 ACT-2 ACT-3 ACT-4 ACT-5 
+VAL-ADD-1 4327346 
+VAL-ADD-2 535977 
+VAL-ADD-3 1895837 
+VAL-ADD-4 2231300 
+VAL-ADD-5 473019 COM-CMP-1 708250 60 2805139 71412 COM-CMP-2 4974 163446 20944 1335 41 COM-CMP-3 57382 5571 986212 17418 4495 COM-CMP-4 279310 23 61 967136 135482 COM-CMP-5 2735 335 30425 COM-CMP-6 COM-CMP-7 22455 602 201 41329 276 COM-CMP-8 185 68 1213 347 312 COM-CMP-9 1068 455 COM-CMP-10 4617 1664 7 330 COM-CMP-11 10126 1010 2709 22062 31321 COM-CMP-12 228525 20329 31124 42281 9564 COM-CMP-13 61430 2436 1762 11285 1651 COM-CMP-14 7616 7663 2868 30581 24587 COM-CMP-15 7276 4246 16930 921 13879 COM-CMP-16 1621 5799 878 3448 734 COM-CMP-17 29755 9877 8368 36274 35109 COM-CMP-18 10885 5028 30052 3549 893 COM-CMP-19 3099 2228 5198 1155 462 COM-CMP-20 8588 7379 1692 4656 1127 COM-CMP-21 2832 34 1150 17 COM-CMP-22 
+COM-CMP-23  24668  29156  36084  25868  7276  
+COM-CMP-24  167607  43841  71965  436131  78060  
+COM-CMP-25  54163  12314  60119  140426  28206  
+COM-CMP-26  34260  5730  8033  15115  7417  
+COM-CMP-27  19889  22323  69778  37461  29288  
++  ACT-6  ACT-7  ACT-8  ACT-9  ACT-10  
+VAL-ADD-6  70008  
+VAL-ADD-7  497348  
+VAL-ADD-8  337150  
+VAL-ADD-9  278760  
+VAL-ADD-10  399855  
+COM-CMP-1  12308  68355  937  10957  151224  
+COM-CMP-2  44  2332  
+COM-CMP-3  939  1479  428  3861  1407  
+COM-CMP-4  1167  33  83842  226  
+COM-CMP-5  
+COM-CMP-6  19298  
+COM-CMP-7  159  152167  225870  5685  12429  
+COM-CMP-8  29  278  4125  39  116  
+COM-CMP-9  18  5949  90144  179  
+COM-CMP-10  16  1317  1150  133155  
+COM-CMP-11  4177  8961  14722  2121  2033  
+COM-CMP-12  6808  205331  71106  22508  21778  
+COM-CMP-13  48  6854  14786  12025  2439  
+COM-CMP-14  252  487  1161  
+COM-CMP-15  120  53  2689  
+COM-CMP-16  3463  1318  411  1133  828  
+COM-CMP-17  174  3645  3757  3100  10959  
+COM-CMP-18  137  1298  400  189  397  
+COM-CMP-19  29  394  108  61  118  
+COM-CMP-20  114  1592  507  276  522  
+COM-CMP-21  13  610  2046  5  
+COM-CMP-22  
+COM-CMP-23  385  9859  2455  2371  3099  
+COM-CMP-24  7576  95191  90955  57057  65381  
+COM-CMP-25  2256  26451  24026  13521  18316  
+COM-CMP-26  1139  7078  10460  3516  6171  
+COM-CMP-27  2787  12013  9658  2075  6393  
++  ACT-11  ACT-12  ACT-13  ACT-14  ACT-15  
+VAL-ADD-11  568965  
+VAL-ADD-12  1191119  
+VAL-ADD-13  409394  
+VAL-ADD-14  748353  
+VAL-ADD-15  516179  
+COM-CMP-1  10366  25598  24615  311  
+COM-CMP-2  1129  41182  681  73706  155264  
+COM-CMP-3  5886  441499  12782  9063  7029  
+COM-CMP-4  23678  117713  
+
+COM-CMP-5  12  
+COM-CMP-6  
+COM-CMP-7  2742  7232  6439  753  124  
+COM-CMP-8  257  184  148  316  180  
+COM-CMP-9  78  127  54  
+COM-CMP-10  26833  5584  715  600  
+COM-CMP-11  334647  84188  9252  31449  3599  
+COM-CMP-12  69828  469175  212736  60283  6482  
+COM-CMP-13  3460  21903  29457  3610  1081  
+COM-CMP-14  607  24631  1642  114415  4869  
+COM-CMP-15  842  439  1220  4728  549490  
+COM-CMP-16  10876  8974  2519  4101  7274  
+COM-CMP-17  7797  18970  4637  17404  42068  
+COM-CMP-18  2642  2767  722  3424  8445  
+COM-CMP-19  438  857  327  1392  5728  
+COM-CMP-20  635  4480  888  4650  6133  
+COM-CMP-21  2568  67  137  9  18  
+COM-CMP-22  
+COM-CMP-23  21864  71339  11278  53061  38126  
+COM-CMP-24  80105  181881  74890  49926  62624  
+COM-CMP-25  21910  63146  20207  20933  23014  
+COM-CMP-26  14446  10697  7339  10613  4065  
+COM-CMP-27  20125  23220  11294  30003  16744  
++  ACT-16  ACT-17  ACT-18  ACT-19  ACT-20  
+VAL-ADD-16  133346  
+VAL-ADD-17  405050  
+VAL-ADD-18  308388  
+VAL-ADD-19  428654  
+VAL-ADD-20  817433  
+COM-CMP-1  
+COM-CMP-2  61621  9310  961  7548  1732  
+COM-CMP-3  752  1719  1242  2012  2635  
+COM-CMP-4  158  
+COM-CMP-5  
+COM-CMP-6  
+COM-CMP-7  163  1005  1251  489  6710  
+COM-CMP-8  71  168  87  185  768  
+COM-CMP-9  12  182  61  29  
+COM-CMP-10  7614  2491  20332  6384  
+COM-CMP-11  2267  7357  3558  10456  32830  
+COM-CMP-12  19292  27631  5643  22595  22707  
+COM-CMP-13  2292  7562  7826  23905  67355  
+COM-CMP-14  674  4895  1906  22597  24359  
+COM-CMP-15  1544  158666  51322  34461  133936  
+COM-CMP-16  39882  35255  23314  57559  34615  
+COM-CMP-17  7362  54065  20564  29469  40020  
+COM-CMP-18  436  4672  61946  4184  7755  
+COM-CMP-19  150  1063  4489  67465  7913  
+COM-CMP-20  440  1787  22949  2553  492252  
+
+COM-CMP-21  486  338  914  1048  
+COM-CMP-22  
+COM-CMP-23  8739  8891  3828  5409  14026  
+COM-CMP-24  35446  76009  62080  110703  255272  
+COM-CMP-25  10224  21009  16053  29124  70286  
+COM-CMP-26  2200  10092  6285  11509  17253  
+COM-CMP-27  5371  14566  7973  13727  68065  
++  ACT-21  ACT-22  ACT-23  ACT-24  ACT-25  
+VAL-ADD-21  260014  
+VAL-ADD-22  2060403  
+VAL-ADD-23  585668  
+VAL-ADD-24  9596484  
+VAL-ADD-25  3242163  
+COM-CMP-1  3146  134  
+COM-CMP-2  29655  162378  24  22  
+COM-CMP-3  15318  52769  217716  26438  229153  
+COM-CMP-4  489  32  
+COM-CMP-5  
+COM-CMP-6  
+COM-CMP-7  4659  6175  130  18580  2707  
+COM-CMP-8  36  515  3144  480  
+COM-CMP-9  305  184  536  
+COM-CMP-10  5913  216556  600  708  105  
+COM-CMP-11  12954  21130  3105  269885  13388  
+COM-CMP-12  18476  79567  10236  74621  5232  
+COM-CMP-13  6633  52991  502  84027  171620  
+COM-CMP-14  6976  522198  1373  4072  1504  
+COM-CMP-15  2785  627389  1190  802  1028  
+COM-CMP-16  12129  51881  547  14013  4373  
+COM-CMP-17  3380  157848  3509  55642  11717  
+COM-CMP-18  508  61119  1127  12721  5911  
+COM-CMP-19  1595  40059  6802  11137  7332  
+COM-CMP-20  366  1976  22615  142207  
+COM-CMP-21  12242  1558  739  2423  995  
+COM-CMP-22  
+COM-CMP-23  2135  17534  40387  128484  13505  
+COM-CMP-24  44582  326380  60208  366387  227687  
+COM-CMP-25  11610  189850  10032  381556  278259  
+COM-CMP-26  4330  78749  4805  411153  35792  
+COM-CMP-27  3032  161603  17317  819283  277642  
++  ACT-26  ACT-27  
+VAL-ADD-26  2898275  
+VAL-ADD-27  6397886  
+COM-CMP-1  22659  
+COM-CMP-2  2405  2348  
+COM-CMP-3  4443  23996  
+COM-CMP-4  62113  
+COM-CMP-5  1195  
+
+COM-CMP-6 COM-CMP-7 193 COM-CMP-8 329 COM-CMP-9 COM-CMP-10 1043 COM-CMP-11 47248 COM-CMP-12 26067 COM-CMP-13 2967 COM-CMP-14 14981 COM-CMP-15 11 COM-CMP-16 1921 COM-CMP-17 11208 COM-CMP-18 1063 COM-CMP-19 1140 COM-CMP-20 1714 COM-CMP-21 4916 COM-CMP-22 COM-CMP-23 33460 COM-CMP-24 50212 COM-CMP-25 40310 COM-CMP-26 604529 COM-CMP-27 324276 
++ COM-DOM-1 INDR-TAX -22338 ACT-1 5911884 ACT-2 ACT-3 ACT-4 ACT-5 
++ COM-DOM-6 INDR-TAX 105429 ACT-6 128073 ACT-7 ACT-8 ACT-9 ACT-10 
++ COM-DOM-11 INDR-TAX 65870 ACT-11 1213799 ACT-12 
+ACT-13 
+ACT-14 ACT-15 
+20310 2143 35581 
+5311 93498 295237 36721 79926 1013 9526 48978 12343 44232 90376 20983 
+33226 268225 128384 205465 461021 
+COM-DOM-2 
+9436 
+675154 
+COM-DOM-7 
+38408 
+1047099 
+COM-DOM-12 
+-1735 
+2674892 
+COM-DOM-3  COM-DOM-4  COM-DOM-5  
+892881  -181454  179164  
+1744486  
+6597026  
+960893  
+COM-DOM-8  COM-DOM-9  COM-DOM-10  
+72522  6316  27477  
+790290  
+587637  
+814974  
+COM-DOM-13  COM-DOM-14  COM-DOM-15  
+70182  49890  -22053  
+833813  
+1164831  
+1410410  
+
++ 
+INDR-TAX ACT-16 ACT-17 ACT-18 ACT-19 ACT-20 
++ 
+INDR-TAX ACT-21 ACT-22 ACT-23 ACT-24 ACT-25 
++ 
+INDR-TAX ACT-26 ACT-27 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
+COM-DOM-16 11507 321311 
+COM-DOM-21 25197 383607 
+COM-DOM-26 74809 4018274 
+IMPORT-1 50546 383516 
+IMPORT-7 13242 30526 
+IMPORT-11 30147 136742 
+IMPORT-16 23659 90994 
+IMPORT-21 90398 170241 
+IMPORT-26 
+31804 
+COM-DOM-17 106014 
+831857 
+COM-DOM-22 9183 
+4888137 
+COM-DOM-27 76406 
+8218858 
+IMPORT-2 13343 77812 
+IMPORT-8 13737 27203 
+IMPORT-12 125317 366336 
+IMPORT-17 48013 123386 
+IMPORT-23 
+2197 
+IMPORT-27 
+69209 
+COM-DOM-18 28855 
+547784 
+COM-DOM-23 -129192 
+968173 
+IMPORT-3 1148 211042 
+IMPORT-9 2080 4642 
+IMPORT-13 22014 54035 
+IMPORT-18 211935 670680 
+IMPORT-24 
+152983 
+COM-DOM-19  COM-DOM-20  
+29571  82062  
+733124  
+1688115  
+COM-DOM-24  COM-DOM-25  
+1279272  -72748  
+10780640  
+4278181  
+IMPORT-4  IMPORT-5  
+78894  14629  
+241134  17141  
+IMPORT-10  
+7650  
+18209  
+IMPORT-14  IMPORT-15  
+13955  75181  
+34421  354627  
+IMPORT-19  IMPORT-20  
+93392  276293  
+220108  668199  
+IMPORT-25  
+278019  
+
++ 
+COM-DOM-1 COM-DOM-2 COM-DOM-3 COM-DOM-4 COM-DOM-5 IMPORT-1 IMPORT-2 IMPORT-3 IMPORT-4 IMPORT-5 
++ 
+COM-DOM-6 COM-DOM-7 COM-DOM-8 COM-DOM-9 COM-DOM-10 IMPORT-7 IMPORT-8 IMPORT-9 IMPORT-10 
++ 
+COM-DOM-11 COM-DOM-12 COM-DOM-13 COM-DOM-14 COM-DOM-15 IMPORT-11 IMPORT-12 IMPORT-13 IMPORT-14 IMPORT-15 
++ 
+COM-DOM-16 COM-DOM-17 COM-DOM-18 COM-DOM-19 COM-DOM-20 IMPORT-16 IMPORT-17 IMPORT-18 IMPORT-19 IMPORT-20 
+COM-CMP-1 5889546 
+434062 
+COM-CMP-6 233502 
+COM-CMP-11 1279669 
+166889 
+COM-CMP-16 332818 
+114653 
+COM-CMP-2 684590 
+91155 
+COM-CMP-7 1085507 
+43768 
+COM-CMP-12 2673157 
+491653 
+COM-CMP-17 937871 
+171399 
+COM-CMP-3 2637367 
+212190 
+COM-CMP-8 862812 
+40940 
+COM-CMP-13 903995 
+76049 
+COM-CMP-18 576639 
+882615 
+COM-CMP-4 COM-CMP-5 
+6415572  
+1140057  
+320028  
+31770  
+COM-CMP-9  COM-CMP-10  
+593953  
+842451  
+6722  
+25859  
+COM-CMP-14  COM-CMP-15  
+1214721  
+1388357  
+48376  
+429808  
+COM-CMP-19  COM-CMP-20  
+762695  
+1770177  
+313500  
+944492  
+
++ 
+COM-DOM-21 COM-DOM-22 COM-DOM-23 COM-DOM-24 COM-DOM-25 IMPORT-21 IMPORT-23 IMPORT-24 IMPORT-25 
++ 
+COM-DOM-26 
+COM-DOM-27 
+IMPORT-26 
+IMPORT-27 
++ 
+INDR-TAX ACT-1 ACT-2 ACT-3 ACT-4 ACT-5 
++ 
+INDR-TAX ACT-6 ACT-7 ACT-8 ACT-9 ACT-10 
++ 
+INDR-TAX ACT-11 ACT-12 ACT-13 ACT-14 ACT-15 COM-CMP-21 408804 
+260639 
+COM-CMP-26 4093083 
+31804 
+EXPOR-1 2755 168778 
+EXPOR-6 
+3777 
+EXPOR-11 
+18925 
+COM-CMP-22 4897320 
+COM-CMP-27 8295264 69209 
+EXPOR-2 211650 
+EXPOR-7 55444 
+EXPOR-12 142092 
+COM-CMP-23 838981 
+2197 
+EXPOR-3 1365140 
+1509147 
+EXPOR-8 
+28163 
+EXPOR-13 
+9560 
+COM-CMP-24 COM-CMP-25 
+12059912 4205433 
+152983 278019 
+EXPOR-4 EXPOR-5 122 
+278550 24473 
+EXPOR-9 EXPOR-10 8 
+11672 25906 
+EXPOR-14 EXPOR-15 
+78272 48126 
++ 
+INDR-TAX ACT-16 ACT-17 ACT-18 ACT-19 ACT-20 
++ 
+INDR-TAX ACT-21 ACT-23 ACT-24 ACT-25 
++ 
+INDR-TAX ACT-26 ACT-27 
++ 
+SAVING-INV EXPOR-1 EXPOR-2 EXPOR-3 EXPOR-4 EXPOR-5 EXPOR-6 EXPOR-7 EXPOR-8 EXPOR-9 
+EXPOR-10 EXPOR-11 EXPOR-12 EXPOR-13 EXPOR-14 EXPOR-15 EXPOR-16 EXPOR-17 EXPOR-18 EXPOR-19 EXPOR-20 EXPOR-21 EXPOR-23 EXPOR-24 EXPOR-25 EXPOR-26 EXPOR-27 
+EXPOR-16  EXPOR-17  EXPOR-18  EXPOR-19  EXPOR-20  
+10973  
+27197  
+66771  
+172726  
+437426  
+EXPOR-21  EXPOR-23  EXPOR-24  EXPOR-25  
+79661  
+685  
+1523535  
+395177  
+EXPOR-26  EXPOR-27  
+54437  
+183838  
+RW  
+-2499780  
+171533  
+211650  
+2874287  
+278672  
+24473  
+3777  
+55444  
+28163  
+11680  
+25906  
+18925  
+142092  
+9560  
+78272  
+48126  
+10973  
+27197  
+66771  
+172726  
+437426  
+79661  
+685  
+1523535  
+395177  
+54437  
+18 3838  
+
+* 4) MATRIZ DE ESPECIFICACIONES TABLE SPEC(I,J) MATRIZ DE ESPECIFICACION 
+HOUSEHLD-C GOVERMNT-I SAVING-INV DIR-TAX COM-CMP-1 COM-CMP-2 COM-CMP-3 COM-CMP-4 COM-CMP-5 COM-CMP-6 COM-CMP-7 COM-CMP-8 COM-CMP-9 COM-CMP-10 COM-CMP-11 COM-CMP-12 COM-CMP-13 COM-CMP-14 COM-CMP-15 COM-CMP-16 COM-CMP-17 COM-CMP-18 COM-CMP-19 COM-CMP-20 COM-CMP-21 COM-CMP-22 COM-CMP-23 COM-CMP-24 COM-CMP-25 COM-CMP-26 COM-CMP-27 
++ 
+HOUSEHLD-I GOVERMNT-C GOVERMNT-I SAVING-INV HOUSEHLD-C 
+VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR VSHR 
+VSHR VSHR VSHR VSHR VSHR VSHR 
+VSHR VSHR VSHR VSHR VSHR 
+LABOR IDIST GOVERMNT-C 
+QEXO QEXO QEXO QEXO 
+QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO QEXO 
+QEXO QEXO QEXO QEXO QEXO 
+CAPITAL IDIST 
+SAVING-INV  HOUSEHLD-I  IMPUESTO  
+IDIST  
+IDIST  
+IDIST  
+DTAX  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+QSHR  
+DIR-TAX  GOVERMNT-I  INDR-TAX  
+UNSPEC  
+IDIST  IDIST  
+UNSPEC  
+
++  VAL-ADD-1  VAL-ADD-2  VAL-ADD-3  VAL-ADD-4  VAL-ADD-5  
+VAL-NET-1  ro  
+VAL-NET-2  ro  
+VAL-NET-3  ro  
+VAL-NET-4  ro  
+VAL-NET-5  ro  
+IMPUESTO  ITAX  ITAX  ITAX  ITAX  ITAX  
++  VAL-ADD-6  VAL-ADD-7  VAL-ADD-8  VAL-ADD-9  VAL-ADD-10  
+VAL-NET-6  ro  
+VAL-NET-7  ro  
+VAL-NET-8  ro  
+VAL-NET-9  ro  
+VAL-NET-10  ro  
+IMPUESTO  ITAX  ITAX  ITAX  ITAX  ITAX  
++  VAL-ADD-11  VAL-ADD-12  VAL-ADD-13  VAL-ADD-14  VAL-ADD-15  
+VAL-NET-11  ro  
+VAL-NET-12  ro  
+VAL-NET-13  ro  
+VAL-NET-14  ro  
+VAL-NET-15  ro  
+IMPUESTO  ITAX  ITAX  ITAX  ITAX  ITAX  
++  VAL-ADD-16  VAL-ADD-17  VAL-ADD-18  VAL-ADD-19  VAL-ADD-20  
+VAL-NET-16  ro  
+VAL-NET-17  ro  
+VAL-NET-18  ro  
+VAL-NET-19  ro  
+VAL-NET-20  ro  
+IMPUESTO  ITAX  ITAX  ITAX  ITAX  ITAX  
++  VAL-ADD-21  VAL-ADD-22  VAL-ADD-23  VAL-ADD-24  VAL-ADD-25  
+VAL-NET-21  ro  
+VAL-NET-22  ro  
+VAL-NET-23  ro  
+VAL-NET-24  ro  
+VAL-NET-25  ro  
+IMPUESTO  ITAX  ITAX  ITAX  ITAX  ITAX  
++  VAL-ADD-26  VAL-ADD-27  
+VAL-NET-26  ro  
+VAL-NET-27  ro  
+IMPUESTO  ITAX  ITAX  
+
++ VAL-NET-1 VAL-NET-2 VAL-NET-3 VAL-NET-4 VAL-NET-5 LABOR CD CD CD CD CD CAPITAL CD CD CD CD CD 
++ VAL-NET-6 VAL-NET-7 VAL-NET-8 VAL-NET-9 VAL-NET-10 LABOR CD CD CD CD CD CAPITAL CD CD CD CD CD 
++ VAL-NET-11 VAL-NET-12 VAL-NET-13 VAL-NET-14 VAL-NET-15 LABOR CD CD CD CD CD CAPITAL CD CD CD CD CD 
++ VAL-NET-16 VAL-NET-17 VAL-NET-18 VAL-NET-19 VAL-NET-20 LABOR CD CD CD CD CD CAPITAL CD CD CD CD CD 
++ VAL-NET-21 VAL-NET-22 VAL-NET-23 VAL-NET-24 VAL-NET-25 LABOR CD CD CD CD CD CAPITAL CD CD CD CD CD 
++ VAL-NET-26 VAL-NET-27 LABOR CD CD CAPITAL CD CD 
++ ACT-1 ACT-2 ACT-3 ACT-4 ACT-5 
+VAL-ADD-1 IO 
+VAL-ADD-2 IO 
+VAL-ADD-3 IO 
+VAL-ADD-4 IO 
+VAL-ADD-5 IO COM-CMP-1 IO IO IO IO COM-CMP-2 IO IO IO IO IO COM-CMP-3 IO IO IO IO IO COM-CMP-4 IO IO IO IO IO COM-CMP-5 IO IO IO COM-CMP-6 COM-CMP-7 IO IO IO IO IO COM-CMP-8 IO IO IO IO IO COM-CMP-9 IO IO COM-CMP-10 IO IO IO IO COM-CMP-11 IO IO IO IO IO COM-CMP-12 IO IO IO IO IO COM-CMP-13 IO IO IO IO IO 
+COM-CMP-14  ro  ro  ro  ro  ro  
+COM-CMP-15  ro  ro  ro  ro  ro  
+COM-CMP-16  ro  ro  ro  ro  ro  
+COM-CMP-17  ro  ro  ro  ro  ro  
+COM-CMP-18  ro  ro  ro  ro  ro  
+COM-CMP-19  ro  ro  ro  ro  ro  
+COM-CMP-20  ro  ro  ro  ro  ro  
+COM-CMP-21  ro  ro  ro  ro  
+COM-CMP-22  
+COM-CMP-23  ro  ro  ro  ro  ro  
+COM-CMP-24  ro  ro  ro  ro  ro  
+COM-CMP-25  ro  ro  ro  ro  ro  
+COM-CMP-26  ro  ro  ro  ro  ro  
+COM-CMP-27  ro  ro  ro  ro  ro  
++  ACT-6  ACT-7  ACT-8  ACT-9  ACT-10  
+VAL-ADD-6  ro  
+VAL-ADD-7  ro  
+VAL-ADD-8  ro  
+VAL-ADD-9  ro  
+VAL-ADD-10  ro  
+COM-CMP-1  ro  ro  ro  ro  ro  
+COM-CMP-2  ro  ro  
+COM-CMP-3  ro  ro  ro  ro  ro  
+COM-CMP-4  ro  ro  ro  ro  
+COM-CMP-5  
+COM-CMP-6  ro  
+COM-CMP-7  ro  ro  ro  ro  ro  
+COM-CMP-8  ro  ro  ro  ro  ro  
+COM-CMP-9  ro  ro  ro  ro  
+COM-CMP-10  ro  ro  ro  ro  
+COM-CMP-11  ro  ro  ro  ro  ro  
+COM-CMP-12  ro  ro  ro  ro  ro  
+COM-CMP-13  ro  ro  IO  ro  ro  
+COM-CMP-14  ro  ro  ro  
+COM-CMP-15  ro  ro  ro  
+COM-CMP-16  ro  ro  ro  ro  ro  
+COM-CMP-17  ro  ro  ro  ro  ro  
+COM-CMP-18  ro  ro  IO  ro  ro  
+COM-CMP-19  ro  ro  ro  ro  ro  
+COM-CMP-20  ro  ro  ro  ro  ro  
+COM-CMP-21  ro  ro  ro  ro  
+COM-CMP-22  
+COM-CMP-23  ro  ro  ro  ro  ro  
+COM-CMP-24  ro  ro  ro  ro  ro  
+COM-CMP-25  ro  ro  ro  ro  ro  
+COM-CMP-26  ro  ro  ro  ro  ro  
+COM-CMP-27  ro  ro  ro  ro  ro  
+
++  ACT-11  ACT-12  ACT-13  ACT-14  ACT-15  
+VAL-ADD-11  IO  
+VAL-ADD-12  IO  
+VAL-ADD-13  IO  
+VAL-ADD-14  IO  
+VAL-ADD-15  IO  
+COM-CMP-1  IO  IO  IO  IO  
+COM-CMP-2  IO  IO  IO  IO  IO  
+COM-CMP-3  IO  IO  IO  IO  IO  
+COM-CMP-4  IO  IO  
+COM-CMP-5  IO  
+COM-CMP-6  
+COM-CMP-7  IO  IO  ro  ro  ro  
+COM-CMP-8  ro  IO  ro  ro  ro  
+COM-CMP-9  IO  IO  ro  
+COM-CMP-10  IO  IO  ro  ro  
+COM-CMP-11  IO  IO  ro  ro  ro  
+COM-CMP-12  IO  IO  IO  ro  IO  
+COM-CMP-13  IO  IO  IO  IO  ro  
+COM-CMP-14  IO  IO  IO  IO  ro  
+COM-CMP-15  IO  IO  IO  IO  ro  
+COM-CMP-16  IO  IO  IO  IO  ro  
+COM-CMP-17  IO  ro  IO  IO  ro  
+COM-CMP-18  IO  ro  IO  ro  ro  
+COM-CMP-19  IO  ro  IO  ro  ro  
+COM-CMP-20  IO  ro  ro  ro  ro  
+COM-CMP-21  IO  ro  ro  ro  ro  
+COM-CMP-22  
+COM-CMP-23  IO  ro  ro  ro  ro  
+COM-CMP-24  IO  ro  IO  ro  ro  
+COM-CMP-25  IO  ro  IO  IO  ro  
+COM-CMP-26  IO  IO  IO  IO  ro  
+COM-CMP-27  IO  ro  IO  ro  ro  
++  ACT-16  ACT-17  ACT-18  ACT-19  ACT-20  
+VAL-ADD-16  IO  
+VAL-ADD-17  IO  
+VAL-ADD-18  ro  
+VAL-ADD-19  ro  
+VAL-ADD-20  ro  
+COM-CMP-1  
+COM-CMP-2  IO  IO  ro  ro  ro  
+COM-CMP-3  IO  IO  ro  IO  IO  
+COM-CMP-4  ro  
+COM-CMP-5  
+COM-CMP-6  
+COM-CMP-7  IO  IO  ro  ro  ro  
+COM-CMP-8  IO  IO  ro  IO  ro  
+COM-CMP-9  IO  IO  IO  ro  
+COM-CMP-10  IO  IO  ro  ro  
+
+COM-CMP-11  ro  ro  ro  ro  ro  
+COM-CMP-12  ro  ro  ro  ro  ro  
+COM-CMP-13  ro  ro  ro  ro  ro  
+COM-CMP-14  ro  ro  ro  ro  ro  
+COM-CMP-15  ro  ro  ro  ro  ro  
+COM-CMP-16  ro  ro  ro  ro  ro  
+COM-CMP-17  ro  ro  ro  ro  ro  
+COM-CMP-18  ro  ro  ro  ro  ro  
+COM-CMP-19  ro  ro  ro  ro  ro  
+COM-CMP-20  ro  ro  ro  ro  ro  
+COM-CMP-21  ro  ro  ro  ro  
+COM-CMP-22  
+COM-CMP-23  ro  ro  ro  ro  ro  
+COM-CMP-24  ro  ro  ro  ro  ro  
+COM-CMP-25  ro  ro  ro  ro  ro  
+COM-CMP-26  ro  ro  ro  ro  ro  
+COM-CMP-27  ro  ro  ro  ro  ro  
++  ACT-21  ACT-22  ACT-23  ACT-24  ACT-25  
+VAL-ADD-21  ro  
+VAL-ADD-22  ro  
+VAL-ADD-23  ro  
+VAL-ADD-24  ro  
+VAL-ADD-25  ro  
+COM-CMP-1  ro  ro  
+COM-CMP-2  ro  ro  ro  ro  
+COM-CMP-3  ro  ro  ro  ro  ro  
+COM-CMP-4  ro  ro  
+COM-CMP-5  
+COM-CMP-6  
+COM-CMP-7  ro  ro  ro  ro  ro  
+COM-CMP-8  ro  ro  ro  ro  
+COM-CMP-9  ro  ro  ro  
+COM-CMP-10  ro  ro  ro  ro  ro  
+COM-CMP-11  ro  ro  ro  ro  ro  
+COM-CMP-12  ro  ro  ro  ro  ro  
+COM-CMP-13  ro  ro  ro  ro  ro  
+COM-CMP-14  ro  ro  ro  ro  ro  
+COM-CMP-15  ro  ro  ro  ro  ro  
+COM-CMP-16  ro  ro  ro  ro  ro  
+COM-CMP-17  ro  ro  ro  ro  ro  
+COM-CMP-18  ro  ro  ro  ro  ro  
+COM-CMP-19  ro  ro  ro  ro  ro  
+COM-CMP-20  ro  ro  ro  ro  
+COM-CMP-21  ro  ro  ro  ro  ro  
+COM-CMP-22  
+COM-CMP-23  ro  ro  ro  ro  ro  
+COM-CMP-24  ro  ro  ro  ro  ro  
+COM-CMP-25  ro  ro  ro  ro  ro  
+
+COM-CMP-26  IO  
+COM-CMP-27  IO  
++  ACT-26  
+VAL-ADD-26  IO  
+VAL-ADD-27  
+COM-CMP-1  
+COM-CMP-2  IO  
+COM-CMP-3  IO  
+COM-CMP-4  
+COM-CMP-5  
+COM-CMP-6  
+COM-CMP-7  IO  
+COM-CMP-8  IO  
+COM-CMP-9  
+COM-CMP-10  IO  
+COM-CMP-11  IO  
+COM-CMP-12  IO  
+COM-CMP-13  IO  
+COM-CMP-14  IO  
+COM-CMP-15  IO  
+COM-CMP-16  IO  
+COM-CMP-17  IO  
+COM-CMP-18  IO  
+COM-CMP-19  IO  
+COM-CMP-20  IO  
+COM-CMP-21  IO  
+COM-CMP-22  
+COM-CMP-23  IO  
+COM-CMP-24  IO  
+COM-CMP-25  IO  
+COM-CMP-26  IO  
+COM-CMP-27  IO  
++  COM-DOM-1  
+INDR-TAX  ITAX  
+ACT-1  IO  
+ACT-2  
+ACT-3  
+ACT-4  
+ACT-5  
++  COM-DOM-6  
+INDR-TAX  ITAX  
+ACT-6  IO  
+ACT-7  
+ACT-8  
+ACT-9  
+ACT-10  
+
+IO IO 
+ACT-27 
+IO IO IO IO IO IO 
+IO IO IO IO IO IO IO IO IO IO IO IO IO IO IO 
+IO IO IO IO IO 
+COM-DOM-2 ITAX 
+IO 
+COM-DOM-7 ITAX 
+IO 
+IO IO IO IO IO IO 
+COM-DOM-3 ITAX  COM-DOM-4 ITAX  COM-DOM-5 ITAX  
+IO  IO  IO  
+COM-DOM-8 ITAX  COM-DOM-9 ITAX  COM-DOM-10 ITAX  
+IO  IO  IO  
+
++ 
+INDR-TAX ACT-11 ACT-12 ACT-13 ACT-14 ACT-15 
++ 
+rNDR-TAX ACT-16 ACT-17 ACT-18 ACT-19 ACT-20 
++ 
+INDR-TAX ACT-21 ACT-22 ACT-23 ACT-24 ACT-25 
++ 
+INDR-TAX ACT-26 ACT-27 
++ 
+rNDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
+COM-DOM-11 ITAX IO 
+COM-DOM-16 ITAX ro 
+COM-DOM-21 rTAX ro 
+COM-DOM-26 ITAX ro 
+IMPORT-1 rTAX rMPORT 
+rMPORT-7 rTAX rMPORT 
+rMPORT-11 rTAX rMPORT 
+COM-DOM-12 ITAX 
+ro 
+COM-DOM-17 rTAX 
+ro 
+COM-DOM-22 rTAX 
+ro 
+COM-DOM-27 rTAX 
+ro 
+IMPORT-2 ITAX rMPORT 
+rMPORT-8 ITAX rMPORT 
+rMPORT-12 ITAX rMPORT 
+COM-DOM-13 ITAX 
+ro 
+COM-DOM-18 ITAX 
+ro 
+COM-DOM-23 ITAX 
+ro 
+IMPORT-3 rTAX IMPORT 
+rMPORT-9 rTAX rMPORT 
+rMPORT-13 rTAX rMPORT 
+COM-DOM-14 ITAX 
+IO 
+COM-DOM-19 rTAX 
+ro 
+COM-DOM-24 rTAX 
+ro 
+IMPORT-4 ITAX rMPORT 
+rMPORT-10 ITAX rMPORT 
+rMPORT-14 ITAX rMPORT 
+COM-DOM-15 ITAX 
+IO 
+COM-DOM-20 ITAX 
+IO 
+COM-DOM-25 ITAX 
+IO 
+IMPORT-5 ITAX rMPORT 
+rMPORT-15 ITAX rMPORT 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+INDR-TAX RW 
++ 
+COM-DOM-1 COM-DOM-2 COM-DOM-3 COM-DOM-4 COM-DOM-5 IMPORT-1 IMPORT-2 IMPORT-3 IMPORT-4 IMPORT-5 
++ 
+COM-DOM-6 
+COM-DOM-7 
+COM-DOM-8 
+COM-DOM-9 
+COM-DOM-10 
+IMPORT-7 
+IMPORT-8 
+IMPORT-9 
+IMPORT-10 
++ 
+COM-DOM-11 COM-DOM-12 COM-DOM-13 COM-DOM-14 COM-DOM-15 IMPORT-11 IMPORT-12 IMPORT-13 IMPORT-16 ITAX IMPORT 
+IMPORT-21 ITAX IMPORT 
+IMPORT-26 
+IMPORT 
+COM-CMP-1 CES 
+CES 
+COM-CMP-6 CES 
+COM-CMP-11 CES 
+CES 
+IMPORT-17 ITAX IMPORT 
+IMPORT-23 IMPORT 
+IMPORT-27 IMPORT 
+COM-CMP-2 CES 
+CES 
+COM-CMP-7 CES 
+CES 
+COM-CMP-12 CES 
+CES 
+IMPORT-18 ITAX IMPORT 
+IMPORT-24 
+IMPORT 
+COM-CMP-3 CES 
+CES 
+COM-CMP-8 CES 
+CES 
+COM-CMP-13 CES 
+CES 
+IMPORT-19  IMPORT-20  
+ITAX  ITAX  
+IMPORT  IMPORT  
+IMPORT-25  
+IMPORT  
+
+COM-CMP-4  COM-CMP-5  
+CES  
+CES  
+CES  
+CES  
+COM-CMP-9  COM-CMP-10  
+CES  
+CES  
+CES  
+CES  
+COM-CMP-14  COM-CMP-15  
+CES  
+CES  
+
+IMPORT-14 IMPORT-15 
++ 
+COM-DOM-16 COM-DOM-17 COM-DOM-18 COM-DOM-19 COM-DOM-20 IMPORT-16 IMPORT-17 IMPORT-18 IMPORT-19 IMPORT-20 
++ 
+COM-DOM-21 COM-DOM-22 COM-DOM-23 COM-DOM-24 COM-DOM-25 IMPORT-21 IMPORT-23 IMPORT-24 IMPORT-25 
++ 
+COM-DOM-26 
+COM-DOM-27 IMPORT-26 IMPORT-27 
++ 
+INDR-TAX ACT-1 ACT-2 ACT-3 ACT-4 ACT-5 
+COM-CMP-16 CES 
+CES 
+COM-CMP-21 CES 
+CES 
+COM-CMP-26 CES 
+CES 
+EXPOR-1 ITAX IO 
+COM-CMP-17 CES 
+CES 
+COM-CMP-22 CES 
+COM-CMP-27 CES CES 
+EXPOR-2 
+IO 
+COM-CMP-18 CES 
+CES 
+COM-CMP-23 CES 
+CES 
+EXPOR-3 ITAX 
+IO 
+CES CES 
+COM-CMP-19 COM-CMP-20 
+CES CES 
+CES CES 
+COM-CMP-24 COM-CMP-25 
+CES CES 
+CES CES 
+EXPOR-4 EXPOR-5 ITAX 
+IO IO 
++ 
+INDR-TAX ACT-6 ACT-7 ACT-8 ACT-9 ACT-10 
++ 
+INDR-TAX ACT-11 ACT-12 ACT-13 ACT-14 ACT-15 
++ 
+INDR-TAX ACT-16 ACT-17 ACT-18 ACT-19 ACT-20 
++ 
+INDR-TAX ACT-21 ACT-23 ACT-24 ACT-25 
++ 
+INDR-TAX ACT-26 ACT-27 
++ 
+SAVING-INV EXPOR-1 EXPOR-2 
+EXPOR-6 IO 
+EXPOR-11 IO 
+EXPOR-16 IO 
+EXPOR-21 IO 
+EXPOR-26 IO 
+RW 
+FEXO EXPORT EXPORT 
+EXPOR-7 IO 
+EXPOR-12 IO 
+EXPOR-17 IO 
+EXPOR-23 IO 
+EXPOR-27 IO 
+EXPOR-8 
+IO 
+EXPOR-13 
+IO 
+EXPOR-18 
+IO 
+EXPOR-24 
+IO 
+EXPOR-9  EXPOR-10  
+ITAX  
+IO  
+IO  
+EXPOR-14  EXPOR-15  
+IO  
+IO  
+EXPOR-19  EXPOR-20  
+IO  
+IO  
+EXPOR-25  
+IO  
+
+EXPOR-3 EXPOR-4 EXPOR-5 EXPOR-6 EXPOR-7 EXPOR-8 EXPOR-9 EXPOR-10 EXPOR-11 EXPOR-12 EXPOR-13 EXPOR-14 EXPOR-15 EXPOR-16 EXPOR-17 EXPOR-18 EXPOR-19 EXPOR-20 EXPOR-21 EXPOR-23 EXPOR-24 EXPOR-25 EXPOR-26 EXPOR-27 
+EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT EXPORT 
+SET EXP(I) BIENES DE /EXPOR-1, EXPOR-2, EXPOR-7, EXPOR-8, EXPOR-13, EXPOR-14, EXPOR-19, EXPOR-20, EXPOR-25, EXPOR-26, 
+PARAMETER ETAS (EXP) /EXPOR-1=1, EXPOR-2=1. 15, EXPOR-3=1.17, EXPOR-4=0.77, EXPOR-5=0. 41, EXPOR-6=0.61, EXPOR-7=3.14, EXPOR-8=3.70, EXPOR-9=0.48, EXPOR-10=1.27, 
+EXPORTACION AL RESTO  DEL MUNDO  
+EXPOR-3,  EXPOR-4,  EXPOR-5,  EXPOR-6,  
+EXPOR-9,  EXPOR-10,  EXPOR-11,  EXPOR-12  
+EXPOR-15,  EXPOR-16,  EXPOR-17,  EXPOR-18  
+EXPOR-21,  EXPOR-23,  EXPOR-24,  
+EXPOR-27/;  
+
+ELASTICIDAD DE DEMANDA POR EXPORTACIONES EXPOR-11=1.13, EXPOR-21=1, EXPOR-12=0.95, EXPOR-23=2.63, EXPOR-13=1. 03, EXPOR-24=1, EXPOR-14=0.65, EXPOR-25=0.94, EXPOR-15=1.6, EXPOR-26=1, EXPOR-16=1.6, EXPOR-27=1, EXPOR-17=1, EXPOR-18=1.39, EXPOR-19=1.03, EXPOR-20=1/; 
+PARAMETER CT(I,J,*) TABLA DE CELDAS; 
+CT (I, J, "TBASE") =SAM (I, J) ; CT (I, J, "SPECS 11 ) =SPEC ( I, J) ; CT (EXP, "RW", "ETA") =ETAS (EXP) ; 
+TABLE  AT(I,*)  TABLA  DE  CUENTAS  
+TYPE  FIX  SIGMA  
+CAPITAL  MF  Q  
+LABOR  MF  p  
+VAL-NET-1  AC  
+VAL-NET-2  AC  
+VAL-NET-3  AC  
+VAL-NET-4  AC  
+VAL-NET-5  AC  
+VAL-NET-6  AC  
+VAL-NET-7  AC  
+VAL-NET-8  AC  
+VAL-NET-9  AC  
+VAL-NET-10  AC  
+VAL-NET-11  AC  
+VAL-NET-12  AC  
+VAL-NET-13  AC  
+VAL-NET-14  AC  
+VAL-NET-15  AC  
+VAL-NET-16  AC  
+VAL-NET-17  AC  
+VAL-NET-18  AC  
+VAL-NET-19  AC  
+VAL-NET-20  AC  
+VAL-NET-21  AC  
+VAL-NET-22  AC  
+VAL-NET-23  AC  
+VAL-NET-24  AC  
+VAL-NET-25  AC  
+VAL-NET-26  AC  
+VAL-NET-27  AC  
+HOUSEHLD-I  INST  
+HOUSEHLD-C  INSTC  NP  
+GOVERMNT-I  INST  
+GOVERMNT-C  INSTC  
+SAVING-INV  INSTC  
+INDR-TAX  TAX  
+DIR-TAX  TAX  
+IMPUESTO  TAX  
+VAL-ADD-1  AC  
+VAL-ADD-2  AC  
+VAL-ADD-3  AC  
+VAL-ADD-4  AC  
+VAL-ADD-5  AC  
+96  
+
+VAL-ADD-6 VAL-ADD-7 VAL-ADD-8 VAL-ADD-9 VAL-ADD-10 VAL-ADD-11 VAL-ADD-12 VAL-ADD-13 VAL-ADD-14 VAL-ADD-15 VAL-ADD-16 VAL-ADD-17 VAL-ADD-18 VAL-ADD-19 VAL-ADD-20 VAL-ADD-21 VAL-ADD-22 VAL-ADD-23 VAL-ADD-24 VAL-ADD-25 VAL-ADD-26 VAL-ADD-27 ACT-1 ACT-2 ACT-3 ACT-4 ACT-5 ACT-6 ACT-7 ACT-8 ACT-9 ACT-10 ACT-11 ACT-12 ACT-13 ACT-14 ACT-15 ACT-16 ACT-17 ACT-18 ACT-19 ACT-20 ACT-21 ACT-22 ACT-23 ACT-24 ACT-25 ACT-26 ACT-27 COM-DOM-1 COM-DOM-2 COM-DOM-3 
+AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC 
+COM-DOM-4 COM-DOM-5 COM-DOM-6 COM-DOM-7 COM-DOM-8 COM-DOM-9 COM-DOM-10 COM-DOM-11 COM-DOM-12 COM-DOM-13 COM-DOM-14 COM-DOM-15 COM-DOM-16 COM-DOM-17 COM-DOM-18 COM-DOM-19 COM-DOM-20 COM-DOM-21 COM-DOM-22 COM-DOM-23 COM-DOM-24 COM-DOM-25 COM-DOM-26 COM-DOM-27 
+IMPORT-1 
+IMPORT-2 
+IMPORT-3 
+IMPORT-4 
+IMPORT-5 
+IMPORT-7 
+IMPORT-8 
+IMPORT-9 
+IMPORT-10 
+IMPORT-11 
+IMPORT-12 
+IMPORT-13 
+IMPORT-14 
+IMPORT-15 
+IMPORT-16 
+IMPORT-17 
+IMPORT-18 
+IMPORT-19 
+IMPORT-20 
+IMPORT-21 
+IMPORT-23 
+IMPORT-24 
+IMPORT-25 
+IMPORT-26 
+IMPORT-27 COM-CMP-1 COM-CMP-2 COM-CMP-3 
+AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC AC 
+1 
+1 
+1 
+COM-CMP-4 COM-CMP-5 COM-CMP-6 COM-CMP-7 COM-CMP-8 COM-CMP-9 COM-CMP-10 COM-CMP-11 COM-CMP-12 COM-CMP-13 COM-CMP-14 COM-CMP-15 COM-CMP-16 COM-CMP-17 COM-CMP-18 COM-CMP-19 COM-CMP-20 COM-CMP-21 COM-CMP-22 COM-CMP-23 COM-CMP-24 COM-CMP-25 COM-CMP-26 COM-CMP-27 
+EXPOR-1 
+EXPOR-2 
+EXPOR-3 
+EXPOR-4 
+EXPOR-5 
+EXPOR-6 
+EXPOR-7 
+EXPOR-8 
+EXPOR-9 
+EXPOR-10 
+EXPOR-11 
+EXPOR-12 
+EXPOR-13 
+EXPOR-14 
+EXPOR-15 
+EXPOR-16 
+EXPOR-17 
+EXPOR-18 
+EXPOR-19 
+EXPOR-20 
+EXPOR-21 
+EXPOR-23 
+EXPOR-24 
+EXPOR-25 
+EXPOR-26 
+EXPOR-27 
+RW 
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  1  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+AC  
+ROW  
+
+PARAMETER TOTALS(I,*) CUENTAS TOTALES Y DESEQUILIBRIOS PARA SAM; 
+TOTALS(I,"ROW-TOTAL")=SUM(J,SAM(I,J)); TOTALS(J,"COL-TOTAL")=SUM(I,SAM(I,J)); TOTALS(I,"DIFFERENCE")=TOTALS(I,"ROW-TOTAL")-TOTALS(I,"COL-TOTAL"); 
+DISPLAY "CHECAR EL BALANCE DEL ANO TOTALS; 
+SET COM ( I) "BIENES" /COM-DOM-1, COM-CMP-1, EXPOR-1, COM-DOM-2, COM-CMP-2, EXPOR-2, COM-DOM-3, COM-CMP-3, EXPOR-3, COM-DOM-4, COM-CMP-4, EXPOR-4, COM-DOM-5, COM-CMP-5, EXPOR-5, COM-DOM-6, COM-CMP-6, EXPOR-6, COM-DOM-7, COM-CMP-7, EXPOR-7, COM-DOM-8, COM-CMP-8, EXPOR-8, COM-DOM-9, COM-CMP-9, EXPOR-9, COM-DOM-10, COM-CMP-10, EXPOR-10, COM-DOM-11, COM-CMP-11, EXPOR-11, COM-DOM-12, COM-CMP-12, EXPOR-12, COM-DOM-13, COM-CMP-13, EXPOR-13, COM-DOM-14, COM-CMP-14, EXPOR-14, COM-DOM-15, COM-CMP-15, EXPOR-15, COM-DOM-16, COM-CMP-16, EXPOR-16, COM-DOM-17, COM-CMP-17, EXPOR-17, COM-DOM-18, COM-CMP-18, EXPOR-18, COM-DOM-19, COM-CMP-19, EXPOR-19, COM-DOM-20, COM-CMP-20, EXPOR-20, COM-DOM-21, COM-CMP-21, EXPOR-21, COM-DOM-22, COM-CMP-22, EXPOR-23, COM-DOM-23, COM-CMP-23, EXPOR-24, COM-DOM-24, COM-CMP-24, EXPOR-25, COM-DOM-25, COM-CMP-25, EXPOR-26, COM-DOM-26, COM-CMP-26, EXPOR-27, COM-DOM-27, COM-CMP-27/; 
+SET CONS(I) "CONSUMO PRIVADO" 
+/COM-DOM-1, COM-DOM-11, COM-DOM-21, COM-DOM-2, COM-DOM-12, COM-DOM-22, COM-DOM-3, COM-DOM-13, COM-DOM-23, COM-DOM-4, COM-DOM-14, COM-DOM-24, BASE DE LA SAM: " 
+IMPORT-1, IMPORT-2, IMPORT-3, IMPORT-4, IMPORT-5, IMPORT-7, IMPORT-8, IMPORT-9, IMPORT-10, IMPORT-11, IMPORT-12, IMPORT-13, IMPORT-14, IMPORT-15, IMPORT-16, IMPORT-17, IMPORT-18, IMPORT-19, IMPORT-20, IMPORT-21, IMPORT-23, IMPORT-24, IMPORT-25, IMPORT-26, IMPORT-27, 
+COM-DOM-5, COM-DOM-15, COM-DOM-25, COM-DOM-6, COM-DOM-16, COM-DOM-26, COM-DOM-7, COM-DOM-17, COM-DOM-27, COM-DOM-8, COM-DOM-18, COM-DOM-9, COM-DOM-19, COM-DOM-10, COM-DOM-20/; 
+MODEL MSEG /I,AT,CT/; 
+SOLVE MSEG USING HERCULES; 
+PARAMETER REPORTQ(COM,*) CANTIDADES DE TODOS LOS BIENES REPORTP(COM,*) PRECIOS DE TODOS LOS BIENES; 
+* REPORTE DEL ANO BASE: 
+DISPLAY "TABLAS DE CUENTAS Y CELDAS DESPUES DE RESOLVER" AT,CT; 
+* 
+INFORMACION DEL EXPERIMENTO 
+
+* 
+NUEVO IMPUESTO: IMPUESTO 2% SOBRE LOS ACTIVOS DE LAS EMPRESAS 
+
+
+CT( IMPUESTO", "VAL-ADD-1 "THETA") = 0.000621767 ; CT( IMPUESTO", "VAL-ADD-2 "THETA") = 0.012605652 . 
+' 
+CT( IMPUESTO", "VAL-ADD-3 "THETA") = 0.006488716 ; CT( IMPUESTO", "VAL-ADD-4 "THETA") = 0.002577163 ; CT( IMPUESTO", "VAL-ADD-5 "THETA") = 0.005850580 ; CT ( IMPUESTO", "VAL-ADD-6 "THETA") = 0.010453965 . 
+' 
+CT( IMPUESTO", "VAL-ADD-7 "TRETA") = 0.005889984 . 
+' 
+CT( IMPUESTO", "VAL-ADD-8 "TRETA") = 0.002559393 ; CT( IMPUESTO", "VAL-ADD-9 "TRETA") = 0.002467784 . 
+' ' 
+CT( IMPUESTO", "VAL-ADD-10 "THETA") = 0.002613492 ; CT( IMPUESTO", "VAL-ADD-11 "TRETA") = 0.005475247 ; CT( IMPUESTO 11 , "VAL-ADD-12 "TRETA") = 0.009098125 . 
+' 
+CT ( IMPUESTO", "VAL-ADD-13 "TRETA") = 0.003515804 CT( IMPUESTO", "VAL-ADD-14 "TRETA") = 0.005644339 CT ( 'IMPUESTO", "VAL-ADD-15 "TRETA") = 0.021026783 . 
+' 
+CT( IMPUESTO", "VAL-ADD-16 "TRETA") = 0.004737712 . 
+' 
+CT( IMPUESTO", "VAL-ADD-17 "TRETA") = 0.005096973 ; CT( IMPUESTO", "VAL-ADD-18 "TRETA") = 0.006937470 . 
+' 
+CT( IMPUESTO", "VAL-ADD-19 "TRETA") = 0.008144181 ; CT( IMPUESTO", "VAL-ADD-20 "TRETA") = 0.006392505 ; CT( IMPUESTO", "VAL-ADD-21 "TRETA") = 0.003318742 . 
+' 
+CT( IMPUESTO", "VAL-ADD-22 "TRETA") = 0.000655652 ; 
+CT( IMPUESTO", "VAL-ADD-23 "TRETA") = 0.016092263 . 
+' .
+CT( IMPUESTO", "VAL-ADD-24 "TRETA") = 0.000581081 
+' .
+CT( IMPUESTO", "VAL-ADD-25 "TRETA") = 0.005284865 
+' 
+CT ( IMPUESTO", "VAL-ADD-26 "TRETA") = 0.002324147 . 
+' .
+CT( IMPUESTO", "VAL-ADD-27 "TRETA") = o 
+' 
+SOLVE MSEG USING HERCULES; 
+DISPLAY "TABLAS DE INFORMACION DE CUENTAS Y CELDAS DESPUES DEL EXPE: 11 AT,CT; 
+PARAMETER CURSAM(I,J) SOLUCION DESAMA PRECIOS CORRIENTES CONSAM(I,I) SOLUCION SE SAMA PRECIOS CONSTANTES; 
+CURSAM(I,J) = CT(I,J,"TSOL"); CONSAM(I,J) = CT(I,J,"QCSOL"); 
+DISPLAY CURSAM, CONSAM; 
+* 
+REPORTE DESPUES DEL EXPERIMENTO: 
+
+REPORTQ(COM,"BASE-SOLUT") = AT(COM,"QSOL"); REPORTP(COM,"BASE-SOLUT") = AT(COM,"PSOL"); 
+
+* 
+TABLA DE RESUMENES DISPLAY REPORTQ,REPORTP; 
+
+
+PARAMETER COMCRE; COMCRE(COM,"SOLUCION") = ((AT(COM,"QSOL")/AT(COM,"YBASE"))-1)*100; DISPLAY COMCRE; 
+PARAMETER CONSUMO; CONSUMO(CONS,"SOLUCION")= ((AT(CONS,"QSOL")/ AT(CONS,"YBASE"))-1)*100; 
+DISPLAY CONSUMO; 
+PARAMETER PRODUCCION; PRODUCCION(COM,"SOLUCION")=((AT(COM,"QSOL")/AT(COM,"YBASE"))-1)*100; DISPLAY PRODUCCION; 
+ANEXO D. 
+"UTILIDAD DEL AÑO BASE 
+HOUSEHLD-C  COEFICIENTE-A  log Cj  aj*log Cj  
+COM-CMP-1  2176604  0.072  6.337779423  0.4563201185  
+COM-CMP-2  1358  0.000044919  3.1328997699  0.0001407267  
+COM-CMP-3  446667  0.015  5.6499838677  0.084749758  
+COM-CMP-4  4882628  0.162  6.6886536373  1.0835618892  
+COM-CMP-5  1093376  0.036  6.0387695367  0.2173957033  
+COM-CMP-6  207909  0.007  5.3178732896  0.037225113  
+COM-CMP-7  540299  0.018  5.7326341637  0.1031874149  
+COM-CMP-8  835622  0.028  5.9220098654  0.1658162762  
+COM-CMP-9  441037  0.015  5.6444750253  0.0846671254  
+COM-CMP-10  352132  0.012  5.5467054934  0.0665604659  
+COM-CMP-11  246687  0.008  5.3921462635  0.0431371701  
+COM-CMP-12  808198  0.027  5.9075177714  0.1595029798  
+COM-CMP-13  285384  0.009  5.4554296208  0.0490988666  
+COM-CMP-14  280782  0.009  5.4483692632  0.0490353234  
+COM-CMP-15  
+COM-CMP-16  34759  0.001  4.5410672735  0.0045410673  
+COM-CMP-17  154518  0.005  5.1889790782  0.0259448954  
+COM-CMP-18  25956  0.00085856  4.4142377655  0.003789888  
+COM-CMP-19  339104  0.011  5.5303329127  0.060833662  
+COM-CMP-20  514918  0.017  5.7117380737  0.0970995473  
+COM-CMP-21  383653  0.013  5.5839385985  0.0725912018  
+COM-CMP-22  
+COM-CMP-23  158488  0.005  5.199996385  0.0259999819  
+COM-CMP-24  7647866  0.253  6.88354027  1.7415356883  
+COM-CMP-25  2523967  0.083  6.4020836724  0.5313729448  
+COM-CMP-26  2412294  0.08  6.3824302366  0.5105944189  
+COM-CMP-27  3437754  0.114  6.5362747961  0.7451353268  
+TOTAL  1.000903479  6.4198375536  
+
+"UTILIDAD FINAL 
+CQM-CMP-1 COM-CMP-2 COM-CMP-3 COM-CMP-4 COM-CMP-5 COM-CMP-6 COM-CMP-7 COM-CMP-8 COM-CMP-9 COM-CMP-10 COM-CMP-11 COM-CMP-12 COM-CMP-13 COM-CMP-14 COM-CMP-15 COM-CMP-16 COM-CMP-17 COM-CMP-18 COM-CMP-19 COM-CMP-20 COM-CMP-21 COM-CMP-22 COM-CMP-23 COM-CMP-24 COM-CMP-25 COM-CMP-26 COM-CMP-27 TOTAL 
+HOUSEHLD-C 2171884.849 1343.406 443776.532 4868355.419 1087634.968 206160.449 537053.735 831839.979 439413.4 350967.221 245275.525 802204.731 283911.28 278954.447 
+34535.464 153454.22 25781.807 336714.051 511617.433 381597.247 
+156484.937 7634041.373 2509650.316 2404721.829 3429237.479 
+log Cj 6.3368367957 3.1282072836 5.6471643319 6.6873822768 6.0364831619 5.3142053514 5.7300177413 5.9200397891 5.6428732967 5.5452665569 
+5.389654214 5.9042852189 5.4531826477 5.4455332892 
+4.5382652953 5.1859788361 
+4.411313353 5.5272612398 5.7089453343 5.5816052329 
+5.1944725394 6.8827545093 
+6.399613213 6.3810648457 6.5351975616 
+aj*log Cj 0.4562522493 0.0001405159 
+0.084707465 l.0833559288 0.2173133938 0.0371994375 0.1031403193 0.1657611141 0.0846430995 0.0665431987 0.0431172337 0.1594157009 0.0490786438 0.0490097996 
+0.0045382653 0.0259298942 0.0037873772 0.0607998736 0.0970520707 0.072560868 
+0.0259723627 l.7413368909 0.5311678967 0.5104851877 
+0.745012522 6.4183213089 
+BIBLIOGRAFIA 
+Atkinson A. B. and J. E. Stiglitz (1980) Lectures in Public Economics, Me Graw Hill, Great Britain. 
+Baillet A. y Zimmermann H. (1989) "La Evoluci Reciente del Sistema Impositivo de México y Alemania" en Documentos de Trabajo, Fundaci Friedrich Ebert, México. 
+Bergman L. Jorgenson W. D. y Zalai E. (1990) General Eguilibrium Modeling and Economic Policy Analisis, Basil Blackwell, 
+U. S. A. 
+Boskin, J. Michael and Charles E. Mclure (1990) World Tax Reform Case Studies of Developed and Developing Countries, I.C.E.G., New York. 
+Drud A. and David Kendrick (1986), Hercules and System for Large Economywide Models, Development Research Department, World Bank, U. s. A. 
+Harberger, A. c. (1962) "The incidence of the Corporation Income Tax" en Journal of Political Economy, Nº 70, U. s. A. 
+Pérez Mendoza A. (1989) Efectos de la Apertura Comercial en el Empleo y el Bienestar en México: Un Enfoque de Equilibrio General, Centro de Estudios Econicos, El Colegio de México, México D.F. 
+Piggot J. and Whalley J. (Editors) (1985) New Developments in Applied General Eguilibrium Analysis Cambridge University Press, U. s. A. 
+Piggot J. and Whalley J. (1985) UK Tax Policy and Applied General Eguilibrium Analisis Cambridge University Press, U. s. A. 
+Reinert A. Kenneth and Clinton R. Shiells (1991) Trade Substitution Elasticities far Analysis of North American Free Trade Area, Research Division Working Paper # 91-01-b, U. s. A. 
+Scarf E. H. and Shoven B. j. (1984) Applied General Eguilibrium Analisis, Cambridge University Press, u. s. A. 
+Secretaría de Hacienda y Crédito Plico (1991) Cigo Fiscal de la Federaci. Leyes y Cigos de México, México. (1988) Adecuaciones Fiscales, México. 
+Serra Puche J. ( 1984) 11 A General Equilibrium Model far the Mexican Economy", en Scarf and Shoven Applied General Eguilibrium Analisis, Cambridge University Press, u. s. A. 
+Shoven B. j. and Whaley J. (1972) 11A General Equilibrium 
+Calculation of the Effects of Differential Taxation of 
+Income fron Capital in U. S. 11 en Journal of Public 
+Economics, l. North Holland Publishing Company. 
+11
+(1977) Equal Yield Tax Alternatives General Equilibrium Computacional Techniques" en Journal of Public Economics 8 (1977). North Holland Publishing Company. 
+(1984) " Applied General-Equilibrium Models of Taxation and International Trade: An Introdution and Survey" en Journal of Economic Literature, Vol. XXII, U.S.A. 
+Sobarzo E. Horacio (1991) General Eguilibrium Analysis of Gains from Trade for Mexican Economy of a North American Free Trade Agreement, El Colegio de Mexico, Centro de Estudios Economicos, Documentos de Trabajo, México. 
+Taylor (1979) Macro Models for Developing contries. Me Graw Hill, New York. 
+
+
+
+

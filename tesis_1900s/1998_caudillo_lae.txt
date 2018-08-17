@@ -1,0 +1,1181 @@
+TRABAJO DE INVESTIOACION PARA OBTENER EL ORADO DE 
+MAESTRO EN ECONOMÍA CENTRO DE ESTUDIOS ECONOMICOS EL COLEGIO DE MÉXICO 
+eJllUllJ lll ,,1e,o IE o,e,01111 EQIO,EAI IE llJMPIA euro AlTIVIJ IUBYAlE//11 "º 111//E 1/ITIIBUl/Ó/l llJI/IIJIMAl 
+llJMPAIAl/Ó// llJ// El MÉTIJIIJ BlAlK Y llNOlEI 
+LUZ ADRIANA ENCARNAC16N CAUDILLO FUENTES PROMOCIÓN 199S-1997 
+SEPTIEMBRE DE 1998 
+ASESOR: MOGENS BLADT PETERSEN 
+Con todo carillo para Dios, para mis papás, y para mis amigos que me apoyaron en esta etapa. 
+Graciasª por otra meta lograda! 
+AGRADECIMIENTOS 
+Esta tesis, asf corno el trabajo efectuado durante los dos afios que durla maestrfa, no hubieran sido posibles sin el apoyo de muchas personas, a las cuales les doy mi más profundo agradecimiento. Primeramente, agrade:zco a mis padres su respaldo incondicional durante todo el desarrollo de mis estudios, hasta la fecha. 
+No menos importantes son todos los profesores de la maestrfa, a quienes también agradezco que compartieran con nosotros sus conocimientos. En especial, deseo agradecer al Dr. Mogens Bladt Petersen, quien dirigiel desarrollo de esta tesis, e impartiel curso de Econometría D. 
+Asimismo, deseo agradecer a los profesores Sergio Hemández Castafieda y Paloma Zapata Lillo, quienes me alentaron a cursar la Maestría en El Colegio de México; y durante el desarrollo de esta tesis me permitieron usar su equipo de cputo en la Facultad de Ciencias de la UNAM. 
+Finalmente, agrade:zco su apoyo a mis compafieros de la maestría; en particular, a José Alberto Cuéllar y a mis amigos con quienes estudié varios temas: Noé Serrano, Antonio Ruiz, Marco Veláz.quez; y a todos los amigos que aunque no compartieron estos estudios me acompaftaron en esta etapa. 
+Cáculo del precio de opciones europeas de compra cuyo activo subyacente no tiene distribuci lognormal. 
+Comparaci con el método de Black y Scholes. 
+Luz Adriana Caudillo 
+Presentaci 
+Usualmente, para calcular el precio de opciones financieras, no se hacen pruebas para verificar si se cumplen los supuestos del modelo de Black y Scholes, que es el más utilizado en la actualidad para este fin. Uno de los supuestos más fuertes que tiene este modelo es el de que el activo subyacente tiene distribuci lognormal. Sin embargo, en países como México es poco probable que los activos tengan dicha distribuci. Como ejemplo de ello, en el apéndice se 
+encontrarán los precios diarios de acciones de Bimbo, Kimberly Clark, y Maizoro para periodos superiores a seis meses. Se encontrarán asimismo pruebas efectuadas con el paquete E-Views para determinar si su logaritmo tiene o no distribuci normal. En los tres casos, el resultado es concluyente. La probabilidad de que los precios de las acciones tengan distribuci lognormal es menor a .00126. De esta manera, cabe preguntarse si el método seria realmente il en el cálculo del precio de opciones cuando los activos no tienen distribuci lognormal. En el presente trabajo se pretende medir la diferencia del precio obtenido por medio de la fmula de Black y Scholes y el precio de la opci calculado con un método propuesto por Samuelson (l965) para datos simulados con distribuciones diferentes de la lognormal. 
+Indice 
+Presentaci 1 Opciones financieras 3 Breve revisi de los modelos usualmente empleados en la valoraci de opciones financieras 4 Modelo de Black y Scholes 4 Modelo Binomial 10 Enfoque actuaria! para el cálculo del precio de opciones financieras 13 Metodología 17 Distribuciones empleadas 17 Simulaci 18 Obtenci de los precios 18 Explicaci de las sesiones en MapleV2 20 Gráficas 25 Resultados 26 Precios de Samuelson obtenidos en el análisis 27 Comparaci de los precios de distintas distribuciones con el de la distribuci lognormal 30 Gráficas comparativas 32 Conclusiones 35 Bibliografla 36 
+Opciones financieras 
+Una opci europea de compra sobre el acervo, con fecha de vencimiento T y precio de ejercicio K, es un documento que da a su poseedor el derecho, mas no la obligaci, de comprar una ~cci de acervo en el tiempo T (y so en ese tiempo) por un precio de SK. Así el contrato tiene un pago final de: 
+max(Sr-K., O) • (Sr -K)+ 
+y ning pago inmediato. 
+De manera análoga, una opci de venta da a su poseedor el derecho, mas no la obligaci, de vender el acervo a un cierto precio en una cierta fecha de vencimiento, i.e. la opci de venta da un pago final de (K-S,)+. 
+Sean C I y P I respectivamente los pagos de una opci europea de compra. Usando un argumento simple de cobertura, se puede mostrar que para prevenir las oportunidades de arbitraje, se debe satisfacer la siguiente relaci, conocida como la Paridad Compra-Venta: 
+P,= C 1+ BK1-S, 
+Esta relaci tiene lugar cuando se supone que no hay costos de transacci, no hay restricciones de ventas en corto y todos los activos son pectamente divisibles. Además, se permitirá a los inversionistas reajustar continuamente sus portafolios. Además de las opciones europeas, existen las opciones americanas, las cuales permiten ejercer el derecho de compra o de venta (seg sea el caso) en cualquier momento entre la fecha de contrataci y la de vencimiento. En este trabajo se considerarán so las opciones europeas de compra, aunque es importante comentar que el método expuesto es completamente análogo para las opciones europeas de venta. 
+Breve revisi de los modelos usualmente empleados en la valoraci de opciones financieras 
+Modelo de Black y Scholes 
+Considérese un acervo que no paga dividendos, y asase que su precio satisface la ecuaci diferencial estocástica: 
+dS, 
+-=µdt + adW1
+S, 
+dondeµ y o-son constantes y (W,) es un Movimiento Browniano Estándar, i.e. Además considérese un bono cuya dinámica de precios está dada por: 
+dB,
+-=rdt Br= 1
+B, , 
+donde res la tasa (continuamente compuesta) de interés, que se supone constante. 
+Supgase que se desea calcular el precio de una opci europea de compra sobre el acervo, con fecha de vencimiento T y precio de ejercicio K. Como se ha explicado, tal contrato tiene un pago final de: 
+max(S, -K, O) • (S1 -¡q+ 
+y ning pago inmediato. 
+Estrechamente vinculada con la opci de compra, está la opci de venta, cuyo ico 
+pago ·es de (K -S,)+. Sean C I y PI respectivamente los pagos de una opci europea de compra. 
+Usando un argumento simple de cobertura de riesgo (hedge ), se puede mostrar que para prevenir 
+las oportunidades de arbitraje, se debe satisfacer la siguiente relaci, conocida como la Paridad 
+Compra-Venta: 
+P,= C1+ BK1 -S1 
+Esta relaci tiene lugar cuando se supone que no hay costos de transacci, no hay restricciones de ventas en corto y todos los activos son perfectamente divisibles. Además, se pemÍitirá a los inversionistas reajustar continuamente sus portafolios. 
+Es posible representar una estrategia de intercambio (a1 , b1) mediante un proceso estocástico predecible (de dos dimensiones).I En este caso a1 representa la cantidad de unidades de acervo que se tienen en el tiempo,. mientras que b1 es la cantidad de bonos. V1 =a,S1 + h1B1 es el valor del proceso. Una estrategia de intercambio se llama autofinanciable si: 
+dV, =a1dS1 + b1dB1 
+lo que significa que so se tiene que invertir hoy. Las ganancias se reinvierten, y no se usan fondos adicionales para cubrir las pérdidas. Una oportunidad de arbitraje es una estrategia autofinanciable tal que ocurre una de ambas cosas: 
+VSO, P(Vr~ O)= 1, P(Vr> O)> O 
+0 
+o bien: 
+V0 < O, P(Vr~ O)= 1 
+Así, una oportunidad de arbitraje es una "comida gratis". Intuitivamente es claro que no existe este tipo de estrategias en el equilibrio. Habría una demanda infinita de la estrategia de arbitraje, mientras que ning agente estaría dispuesto a ofrecerla. Por consideraciones de arbitraje estático so se pueden deducir las siguientes cotas para el precio de una opci de compra: 
+
+Black y Scholes hallaron una fmula que da el precio exacto de la opci utilizando argumentos dinámicos de arbitraje. 
+Fmula de Black y Scboles 
+1 Duffie ( 1992), Dynamic Asset pricing theory. 
+Con los supuestos anteriores, para prevenir oportunidades de arbitraje, se debe tener C(S1 ,t), donde C(x,t) =xcp(z) -e-r(T-t) K cp (z -cr !~ <s..1 >) 
+t{f) +(r+f)<T-t) 
+z• 
+cr.JT-t 
+y q, denota la funci de distribuci acumulativa de la distribuci normal estándar ( N(O,I) ). Para replicar el pago de la opci de compra se deben mantener a, acciones de acervo y b1 bonos. 
+ac 
+a1 = c3S (S, ,t) = cp(z), b1 = C(S1 ,t) -a1 S1 
+Una propiedad notable de este método es que el valor esperado instantáneo del acervo, µ, no aparece en la expresi. Esto quiere decir que los inversionistas no tienen que estar de acuerdo sobre el rendimiento esperado del acervo para poder estarlo en el precio de la opci. 
+Andreasen et al (1996) presentan la técnica usada por Black y Scholes para la obtenci de la fmula de la siguiente manera: 
+Sea r, el precio de una opci de compra con precio de ejercicio K y vencimiento en T. Asase que Y1 puede escribirse como una funci dos veces continuamente diferenciable de S1 (por lo tanto no hay dependencia de las S., 's) y t. Esto es 
+Y1 =C(S1,t) 
+Antes de proseguir, se enunciará un lema que se utiliza en el análisis: 
+Lemadelto 
+Sea F(S1 ,t) una funci dos veces diferenciable de t y del proceso estocástico S1 
+dS • a1dt +crt<JW1, t ~ O con los parámetros flujo y de difusi (a1, o¡ respectivamente) integrables en (S,, t). Entonces: 
+
+Aplicando el Lema de lto a Y1 se obtiene: 
+oc oc 1 2 2 &e) oc 
+dY, =(µS, as + a, +2ª s, asi dt + as aS,dW, 
+Supgase que existe una estrategia autofinanciable (a, ,b1) tal que Y, =a,S1 + b1B1 \:/t e [O,TJ de manera que a1 es el nero de acciones de acervo mantenidas y b1 es el nero de bonos mantenidos en el tiempo t. Así, se tiene: dY, -d(_a,S, + b,B1) =a,<JS1 + b,dB1 =(a, µS1 + b,rB1)dt + aaSt<fWI' 
+donde la segunda desigualdad se sigue de la condici de autofinanciamiento. Así se tienen dos expresiones de lto para dY1 • Esto significa (por el Teorema de Descomposici Única), que los términos flujo y de difusi en ambas deben ser iguales. Igualándolos y utilizando el hecho de que S1 > O en P casi seguramente, se obtiene que el nero de acciones de acervo que se deben mantener es: 
+ac 
+a1 = as (S, ,t) 
+Por otro lado: 
+. oC Y,= S, as (S,,t) + b1B1 \:/te [0,7] 
+De donde se desprende que: 
+b1 = ~ (e,(S,,t)-S, ~(S,,I))
+, 
+De los ténninos de flujo (drift) se obtiene: 
+oe .!. e oe _
+rS, as(S,,t)+ <J2x2 a~ 11 (S,,t)+81(S,,t)-rC(S1 ,t)
+2 
+, 
+Esto ocurre si la funci C satisface la siguiente ecuaci diferencial parcial: 
+oe 1 a1e oe 
+rx ~ (x,t)+-<J2x2-(x,t)+-(x,t)= rC(x ,t) VA 2 0X1 at Algo semejante ocurre para todos los activos cuyos precios so dependen des, y de t. Por lo tanto, esta ecuaci recibe el nombre de la Ecuaci Diferencial Parcial para el cálculo del precio de no-arbitraje de activos. Puesto que se está considerando una opci europea de compra, C debe satisfacer la condici de frontera: 
+C(x,7)=(x-K)+ 
+Asf para hallar el precio se debe encontrar C que satisfaga las dos ecuaciones anteriores. El 
+precio hallado es ico, dado que si existiese otro, entonces existirfa una oportunidad de arbitraje al 
+vender la opci y volver a comprarla a otro precio (o viceversa, dependiendo qué alternativa es 
+más barata). 
+Es posible demostrar mediante un procedimiento algebraico extenso que la fnula de 
+Black y Scholes satisface tanto la ecuaci diferencial parcial fundamental, como la condici de 
+frontera enunciada anterionnente. 
+Finalmente, falta demostrar que la estrategia propuesta es autofinanciable. Para ello obsérvese que: 
+oc 
+ox (x,t) =cp(z(x)) 
+Puesto que q> y z son dos veces diferenciables en x y t (para t < 1), es posible usar el Lema de Ito. Se desea demostrar que: 
+dY1 =a,dS1 + b¡dB1 
+De las definiciones de Y1, a1, y b1, aplicando el Lema de Ito se obtiene: 
+dY, =d(a,S,) + d(b,B,) =(a,dS1 + da,S1 + da,dS1) + d(C-a,S,) =a,dS, + (da,S1 + da,dS1 + dC-da,dS1 -da,S1 -a,dS1) =a,dS, + (dC-a,dS1) 
+Se ha hallado previamente una expresi para dC, y como a, = ~ (S, ,t) se tiene: 
+(oc 1 2 2 &e)
+dY, = a,dS, + ot + 2 a s, asi dt 
+Puesto que C resuelve la ecuaci diferencial parcial fundamental ocurre que: 
+oc 1 2 ,J2c oc 
+-+-a S -=rC-rS ­
+a, 2 'as2 'as 
+Sustituyendo en la expresi recién obtenida para dY1 y dado que dB1 =rB,dt: 
+dY, =a,dS, + ~ (e-St ~)dB, 
+1 
+=a1dS1 + b1dB1 
+con lo que se ha demostrado que esta estrategia es autofinanciable. 
+Modelo Binomial 
+Este modelo fue desarrollado por Co~ Ross y Rubinstein (1979) y tiene un enfoque discreto, en contraste con el enfoque dado por Black y Scholes, que es continuo. Primeramente se verá el modelo binomial de una etapa, y posterionnente su versi generalii.ada. 
+Supgase que existe un acervo cuyo precio actual es So , y que en el siguiente periodo puede subir a uSo bajar a dSo ,con probabilidades p y ( 1 -p) respectivamente. Supgase que hay un bono con vencimiento en el siguiente periodo, sin cupones, que da una tasa (discreta) de interés r, y que se satisface la siguiente desigualdad: u> 1 + r > d. Ahora, supgase que se desea calcular el precio de una opci de compra sobre el acervo con precio de ejercicio K. De los supuestos mencionados se deduce que la opci da un pago final de (uSo -K)+ bien de (<LS'o -K)+. 
+Considérese el portafolio de a acciones y b bonos, con: 
+c.-c4 
+a= 
+(u-d)S0 
+b= uC4 -dC. (u-d)S0 
+El precio .A de este portafolio es: 
+1 ( 
+(R-d) (R-u))
+A= aS, + b/R = R C. u-d -C4 u-d =R-1 (qCu +(1 -q)Cd) 
+R-d 
+conq= -­
+u-d 
+Este portafolio replica a la opci, en el sentido de que en cualquiera de los estados da los 
+mismos pagos que ésta, lo cual se puede demostrar efectuando varias operaciones algebraicas. 
+Para que no existan oportunidades de arbitraje, se requiere entonces que el precio de la a opci Co sea igual al precio de la opci, de manera que la expresi obtenida para A puede utilizarse para conocer el precio buscado. Una propiedad importante de esta expresi, es que no intervienen las probabilidades p de que ocurra uno u otro estado. En otras palabras, el precio de la opci no depende de dichas probabilidades. 
+De manera análoga, si hay más de un período, el análisis se hace mediante un "árbol binomial'', en el cual se selan todos los posibles estados. Un ejemplo de este tipo de árboles es el siguiente: 
+S;,k es el valor del acervo en el periodo i, asociado con el estado k en dicho período; C;,k el valor de la opci en el período i, asociado con el estado k en dicho período; y N es el nero de estados que hay en el período T. 
+Para calcular el valor de la opci en el nodo (T-J,a) basta aplicar el mismo procedimiento que se aplicpara una sola etapa. Supgase que: 
+Sr,¡= uSr.J,a, Sr,¡= dSr.1,a; R =r + 1, 
+con r la tasa de interés (discreta) en el período T-l. El costo de la opci en el nodo mencionado es: Cr.J,a =R·1 (qCu +(1 • q)Cd) R-d 
+conq= -­
+u-d 
+De manera semejante, se puede hallar el precio de la opci en todos los demás nodos del período T -1. Aplicando este procedimiento repetidamente hacia atrás, se puede obtener, el precio inicial de la opci Co. Es posible demostrar que cuando el nero de períodos que se consideran tiende a infinito, el precio obtenido por el método binomial tiende al precio obtenido por el método de Black y Scholes. El hecho de que se considere un mayor nero de períodos no implica la extensi del período de vencimiento de la opci, sino una partici más fina del mismo. 
+Enfoque actuarial para el cálculo del precio de opciones financieras 
+Este método aparece por primera vez en Samuelson ( l 965). Fue generalizado por Merton y Samuelson (1969). Bladt y Rydberg (1998) presentan un enfoque actuaria! del mismo. 
+Considérese un mercado financiero en el que se tienen dos activos: un bono (activo l) con tasa de interés (instantánea) r, la cual se interpreta como la tasa de interés libre de riesgo, y un activo que se describe mediante el proceso estocástico de su pago S, en el tiempo t (activo 2). Supgase que dicho proceso da una tasa de retomo esperada (instantánea) de µ en el tiempo T, definida como 
+
+Es importante notar que no se ha hecho ninguna suposici sobre el proceso S1 y por lo tanto µ puede depender de T. 
+Se considerará un intervalo de tiempo (O,T], donde O es el tiempo inicial y Tes el tiempo final. Se denotará con So el precio del activo 2 en el tiempo O. Supgase que se desea calcular el precio de una opci europea de compra C(a, 1) sobre el activo 2, con precio de ejercicio a y fecha de vencimiento T. Para calcular el precio de la opci, se utilizará un enfoque de aseguramiento. Supgase que se tiene un portafolio de opciones que son independientes e idénticamente distribuidas, y que se considera una opci como una pérdida potencial desde el punto de vista del emisor. Si fuera posible asegurarse contra esta pérdida utili7.ando un premio justo, entonces, éste es igual al precio de la opci. 
+Este premio justo por asegurar la pérdida potencial causada por el ejercicio de la opci, está ~ado por la pérdida esperada cuando se ejerce la opci en valores presentes. Bladt y Rydberg aclaran que para calcular el valor presente de Sr se debe usar su tasa esperada de retomo (exp(µ7)}. En otras palabras, el valor presente de S1 es S1 (exp(-µ7)). Para calcular el valor presente del precio de ejercicio a se debe usar la tasa de interés libre de riesgo r, dado que a es un precio de ejercicio libre de riesgo en el futuro. Con esta manera de calcular el valor presente se está moviendo la variaci aleatoria de S, alrededor de su valor medio al tiempo O, y se está haciendo lo análogo para a. La justificaci de descontar s, de esta manera, es que s, tiene que ser descontada por e-rT por la evoluci normal de los precios y además por su tasa de retomo neta, que es exp(-(µ-r) T), de manera que el factor de descuento total es exp(-µ7'). Este principio de descuento es una generalizaci del principio determinístico usualmente empleado, lo cual es más claro considerando que a puede verse como una variable aleatoria degenerada, cuyo valor presente es a descontada con su tasa esperada de retomo, la cual es e-rr, dado que a es libre de riesgo. Cabe seftalar, que So y el valor presente de Sr son en general diferentes, y que la mejor predicci que se puede hacer sobre el valor que tomari Sr es ESr, independientemente de como se defina Sr . Asf, el método propuesto queda resumido en el siguiente teorema: 
+Teorema 
+El precio C(a,7) de una opci europea de compra con vencimiento en T y precio de ejercicio a, está dado por: 
+C(a,1) • E ( (e-J'TSr-e-rTa) /( e-"TSr> e-rTa)) 
+Demostraci: 
+La opci será ejercida, en valores presentes, si y so si 
+y la pérdida que sufrirla el emisor es e-"'TSr-e-rra. Asf, el premio justo que el emisor debe cargar, es simplemente la esperanza de esta pérdida, sujeta al evento de que la opci sea ejercida, de lo cual se desprende inmediatamente la expresi buscada. 
+Este teorema es equivalente al método de Black y Scholes cuando Sr es lognormal, lo cual se ve en el siguiente corolario, que Bladt y Rydberg demuestran en su artfculo 
+Corolario Supgase que el proceso {Sr} está dado por: 
+con valor inicial So, donde W1 denota el proceso estándar de Wiener. Entonces la expresi propuesta en el teorema para el cálculo del precio de la opci es consistente con la fmula de Black y Scholes. 
+Para el caso de las opciones americanas, el método puede resumirse en el siguiente teorema, cuya demostraci se omitirá. 
+Teorema 
+El precio de una opci americana de compra (sin dividendos), C0 ,,. (a,1), con vigencia hasta el período T, y precio de ejercicio a, está dado por: 
+Cam (a,1), = T•JJ(t-x-e.,.a)I(i x > e-a)fs, (x)f(t Ix)dxdt 
+o. , , donde Is, es la densidad de Sr. 
+Se puede demostrar, mediante el cálculo de las variaciones, que la funci 
+
+resuelve el problema: 
+max¡ Cam 
+sujeto a: 
+T 
+J/(t Ix)dl = 1 
+o 
+De ello se desprende que Cam (a,t)¡• ~ Cam (a,t)¡. Pero Cam (a,t)¡. =Ceu (a,t), ya que/o (T-t) =Ir (t) Por timo, es necesario mencionar que para opciones de venta, basta poner el signo contrario a los argumentos del valor esperado y cambiar el signo de la desigualdad de la 
+funci indicadora /. Así, para obtener el precio de una opci de venta con precio de ejercicio a y fecha de vencimiento en T, basta calcular: 
+Metodologia 
+Se usará el método de Samuelson para calcular el precio de opciones sobre activos con distintas funciones de distribuci, y se comparará con el precio que se obtendría utilizando la fnula de Black y Scholes, que supone que los activos se distribuyen lognonnal. Para estimar el precio que la fmula de Black y Scholes asignaría a opciones sobre activos con distribuci distinta de la lognormal, se harán simulaciones de neros aleatorios generados por la distribuci y se calculará la volatilidad a partir de ellos para evaluar la fmula. 
+Distribuciones empleadas 
+En el análisis se utilizaron las siguientes distribuciones, cuyos parámetros se escogieron de manera que E[X] = 120 y Var [X]= 152 = 225: 
+Distribuci6n  Esperanza  Varianza  
+Gamma ().=8/1S,p=64)  E[X)=pl).  Var[X)=pl).l  
+Normal (µa120,a..1S)  E[XJ•µ  Var[X)=al  
+Lognormal (M=4. 779739650,:E=O.l245158062)  E[X)=cxp(M+D'/2)  Var(X]• exp[2(M+I:l)-exp(2M+I:l)J  
+Parcto (v=I06.7S82667,~.062257733)  E[XJ-6v/O-I  Var[XJ=8vl/((8-1 )l(8-2)]  
+Wcibull (k•.6590658796 IO·"'v, b-9.602733020)  E[XJ-k· 1tl>f( 1 + 1/b)  Var[X)= k·lll>(f( 1+2/b)-f(1+2/b)l)  
+
+Las distribuciones tienen como funci de densidad: 
+D1stribuci6n  Funci6n de densidad/  Ranco relevante  
+Gamma ().,p)  .ft.x) • )PxP-le·A.X (f(p))·l  (O,«>)  
+Normal (µ.a)  .ft.x) =cxp(-(x-µ)212a2) ((2,r)lf2a)·I  (-«>,a:>)  
+Lognormal (M,I:)  .ft.x) =cxp(-(ln(x)-M)212I:2) (x (2,r)112I:)-I  (0,a:>)  
+Parcto (v,8)  .ft.x) ""8""1 / (8-1)  (v,«>)  
+Wcibull (k, b)  .ft.x)•/cbx0-1 cxp(-axl>)  (0,a:>)  
+
+Simulaci 
+El método que se presentará a continuaci se conoce como el método de la transformada inversa para generaci de neros generados por una variable aleatoria con distribuci no uniforme.2 
+Dado un conjunto X= {x;, i = t ... n} de neros aleatorios generados por una distribuci continua uniforme con parámetros O, t (ie fu(x) = t, con/u la funci de densidad de x), es posible crear un conjunto de neros aleatorios Y= {y; , ;== l .. . n} generado por una distribuci continua d de la siguiente manera: 
+F(y;) = x; 'ti i = l.. .n 
+En el presente trabajo se utilizdicho método para las distribuciones de Pareto y de Weibull, y para generar los neros aleatorios uniformemente distribuidos entre O y t, se utilizel generador integrado en el paquete de cputo Maple. Para generar los neros aleatorios provenientes de las distribuciones Gamma y Normal, se utilizel generador que para este fin trae el mismo paquete. 
+Obtenci de los precios 
+Como se había mencionado en la secci de Distribuciones Empleadas, se escogieron parámetros de las mismas tales que ESr = 120. Asimismo se supuso So =100, y a= 110. 
+En el análisis se utilizaron cinco tasas diferentes de interés anual (R): 1%, 5%, 10%, 15%, y 20%. Para el cálculo de la tasa instantánea r se utilizla siguiente expresi: 
+r =In ( t + R) / T, 
+con T el nero de períodos antes del vencimiento de la opci. En este trabajo, se consideraron opciones con vencimiento a los 12 meses (ie T= 12). 
+2 Existen otros métodos de simulaci. Para mayores referencias, consultar: Coss Bu, Ra 
+Simulaci 
+Cálculo del precio utilizando el método de Samuelson 
+Como se ha mencionado ya, se utilizaron distribuciones diferentes de la lognormal para modelar el comportamiento del activo subyacente, lo cual rompe con uno de los supuestos del modelo de Black y Scholes. Para obtener los precios de las opciones de acuerdo con la verdadera distribuci de su activo subyacente, se utilizla expresi mencionada anteriormente: 
+C(a,7) = E ( (e-llTSr-e-rTa) /( e-µTSr> e-rTa)) 
+Esto se hizo con ayuda del paquete Maple, mediante el cual se pueden resolver integrales definidas por métodos numéricos. En el análisis se supuso, como se explicen el planteamiento del modelo, que 
+So =e -µT 
+EsT 
+Precio para la opci de acuerdo con los valores obtenidos en la simulaci, utilizando la fmula B-S 
+Para hacer la comparaci del precio de Samuelson con el precio que asignaría la fmula de Black y Scholes a activos con distribuci distinta de la lognormal, se siguiel siguiente procedimiento: Se simularon primeramente 50 precios del activo subyacente utilizando cada distribuci. Con estos 50 datos simulados, se estimla volatilidad necesaria para utilizar la fmula B-S.3 Este procedimiento se repiti500 veces para así obtener 500 precios diferentes provenientes de datos simulados con la misma distribuci. El "precio para los datos simulados", que aparece en el cuadro de resultados que aparece posteriormente, es el promedio de los precios obtenidos. Con estos precios, además, se procedia construir un intervalo con el 95% de confianza centrado en el precio para los datos simulados .. 4 
+Como se hizo notar anteriormente, si el activo subyacente tiene una distribuci lognormal, 
+el precio obtenido por la fmula de Black y Scholes coincidé con el precio de Samuelson de la 
+3 Se utilizla librería financiera del paquete Maple, que ya contiene la fmula. Para los parámetros T, a, y So 
+se utilizaron los valores ya definidos anteriormente. De manera análoga, se utilizaron las cinco tasas R 
+previamente enunciadas. 
+4 Se utilizpara ello la distribuci normal, lo cual se justifica por la Ley de los Grandes Neros . 
+opci. Por ello, para la distribuci lognonnal no fue necesario efectuar simulaciones. En este caso se utilizla fnula de Black y Scholes. 
+Para el cálculo, se tomen consideraci que en el modelo de Black y Scholes se supone que el comportamiento del activo subyacente está dado por: 
+dSF µS, dt + crS, dW, 
+La ecuaci diferencial estocástica que describe al proceso tiene como ica soluci: 
+S, =So exp ((µ-cr2/2)t + crW,) ie In {S,/So) -N{(µ -cr2/2)t, cr2t) 
+De ello se desprende que la distribuci de Sr , que es la que se necesita para el cálculo del precio seg el Método de Bladt y Rydberg es: 
+ie In (Sr/So) -N ((µ -cr2/2)T, cr2T) 
+Como se recordará, de la secci de Distribuciones Empleadas, la distribuci Lognonnal con parámetros M = 4.779739650 y ! = 0.1245158062 tiene la propiedad de que: E[X] = 12 y Var [X]= 152. De esta manera, el valor de a que se debe utilizar en la Fnula de Black y Scholes es a=!/T 1/2 =0.1245158062 / 121/2 =0.03594461711397. 
+Explicaci de las sesiones en MapleV2 
+Se darán a continuaci dos ejemplos de las sesiones en Maple con las que se efectuaron los cálculos recién explicados: 
+J) Sesi en MapleY2 para la distribuci Gamma 
+Para esta distribuci, se utilizel generador de neros aleatorios con distribuci Gamma que viene integrado en el paquete. Este generador se cargcon la instrucci: > with(stats): G := RandGamma(64): Asimismo, en todas las distribuciones analizadas, para estimar el precio para los datos 
+simulados se utilizla funci que tiene el paquete para calcular el precio seg la fnula de Black y Scholes. Para poder emplear la funci, se utilizel comando: 
+> readlib(finance): 
+Como se ha comentado, se simularon SO precios de activo, para calcular el precio de la opci. El procedimiento se repiti500 veces. Se supuso un precio actual del activo (So) de 100, un período T de vencimiento de 12 meses, un precio de ejercicio a de 11Oy distintas tasas de interés ~ de las que se obtuvo la tasa continua de interés r mediante la fnula explicada anterionnente. Los valores de todos los parámetros se indican con los siguientes comandos; 
+>NUM:=SO; > NUMSIM:=500; > S0:=100; >T:=12; > r:=ln(l.OlYf; > a:~110; > price 1 :=array[ l..NUMSIM]; 
+Con los siguientes comandos se indicen que archivo se guardarían los resultados: 
+> readlib(write): 
+> open('outgamma'): 
+Los comandos "for j to NUMSIM do" y "od" encierran el conjunto de instrucciones que permite generar los datos y obtener el precio para los datos simulados una vez. El procedimiento se repite 500 (NUMSIM) veces. 
+> for j to NUMSIM do > DA TA:=seq(l S/8•GQ,i= l .. NUM): > Sl:•sum('ln(DATA[i]/SO)/NUM','i'=l ..NUM): > S2:=sum('ln(DA TA[i]/S0)1'2/NUM', 'i'=l..NUM): > sigmahat:=sqrt(l/T•(S2-S l "2)): 
+> price 1 [j]:=blackscholes(a, T,SO,sigmahat, r): 
+> writeln(price 1 [j]): 
+>od: 
+Con el comando "DATA:=seq(IS/8*GQ,i=l..NUM):" se simulan los SO precios del activo que se distribuye Gamma (A=8/IS,p=64). La constante 15/8 que multiplica a "G()'' se debe a que los neros que se generaron con "RandGamma(64):" tienen distribuci Gamma (A= 1, p=64). Para obtener los neros generados por la distribuci con los parámetros deseados, se utiliza la siguiente propiedad de la distribuci Gamma: Gamma («A. p) = a Gamma (A. p). 
+Por lo explicado en la secci anterior, para obtener la volatilidad (a) es necesario calcular la expresi ln(S/So) = ln(DA TA/So). Con estos datos se estima la varianza mediante la expresi tx2 / num + X (x = ln(DA TA/So)). Por lo expuesto anteriormente, para estimar a se puede 
+emplear la expresi: a = {Var (ln(DATA/So)) / T)l/2. Con el estimador de a y los datos previamente definidos, se calcula el precio para los datos simulados mediante la fmula de Black y Scboles. Por ejemplo, la volatilidad de los primeros SO datos simulados con la distribuci Gamma fue de 0.3113319306. Por lo tanto el primer precio obtenido por la fmula de Black y Scholes para datos simulados con la distribuci Gamma fue 1.37220968. 
+Una vez se obtuvieron los 500 precios, se cierra el archivo y se obtienen la correspondiente media y desviaci estándar. La media es el precio que aparece en la columna de resultados como "Precio para los datos simulados". Con la desviaci estándar se construye el intervalo ae confianza para este precio. 
+> close('outgamma'); > meansim:=0: meanl:-0: > for i to NUMSIM do meansim:=meansim+pricel[i]/NUMSIM od: > for i to NUMSIM do mean 1 :=mean 1 +price 1 [i]"2/NUMS1M od: > var:=(mean 1-meansim"2); > price:=meansim; > lowerprice:=evalf(price-l .96*sqrt(var)); > upperprice:=evalf(price+ l .96*sqrt(var)); 
+Para el cálculo del precio de Samuelsori, se calcula la expresi E ( (e-PTSr-e-rTa) J( e-PTSr> e-lTa) ). Esto se hace mediante los siguientes comandos: 
+> f:=lambdaAmo/GAMMA(rho)•x"(rho-1 )•exp(-lambda•x); 
+> rho:=64; 
+> lambda:=8/15; 
+> media:=evalf(int(x•f,x=O..infinity)); 
+> varianza:-evalf(int((x-media)"2•f,x-0..infinity)); 
+> factorl:=SO/media•x-exp(-~l)•a; 
+> factor2:=factorl •Heaviside(factorl); 
+> factor3:=factor2•f; 
+> priceN:=int(factor3,x=O ..infinity); 
+Para el caso específico de la distribuci Gamma, fue necesario partir la integral en dos sumandos. Las instrucciones mediante las que se him esto aparecen a continuaci: 
+> int(x"64•exp(-8/15•x),x=130.6930693 . .infinity); 
+> sumandol:=.1700911293•10"(-104)•5/6•("); 
+> int(x"63 •exp(-8/1 s•x),x= 130.6930693..infinity); 
+> sumando2:•.1700911293 • 10"(-104)• 108.9108911•("); 
+> precio:=sumando 1-sumando2; 
+2) Sesi en Map/e V2 para la distribuci Pareto 
+Para esta distribuci, se utilizel método de la transformada inversa para la generaci de neros aleatorios. Primero se cargel generador de neros aleatorios con distribuci uniforme. 
+> with(stats): U:= RandUniform(0 . .1): 
+Nuevamente se utilizla funci que tiene el paquete para calcular el precio seg la fmula de Black y Scholes. Para poder emplear la funci, se utilizel comando: 
+> rcadlib(finance): 
+También se indicaron los parámetros que se emplearían en el análisis. 
+>NUM:=SO; > NUMSIM:=SOO; > S0:=100; >T:=12; > r:=ln(l.OIYT; > a:=110; 
+Con los siguientes pasos, se obtuvo una expresi explícita para los neros y que satisfacen: 
+F(y¡) =x¡ V i =l.. .n 
+F en este caso es la funci de distribuci de Pareto, la cual se obtuvo integrando la 
+funci de densidad/. 
+> pricel:=array[l..NUMSIM]; > f:=theta•nu"(theta)/x"(theta+ 1 ); #Pareto > nu:=106.7S82667; > theta:=-120/(nu-120); > print (f); > ecuacion:=F=int(f,x=nu .. y); > y:=solve( ecuacion,y); 
+Se indicel archivo en donde se guardarían los datos: 
+> readlib(write): > open('outpare'): 
+Con las instrucciones comprendidas entre los comandos "for j to NUMSIM do" y 
+"od" se simularon los neros con distribuci Pareto. Primero, con "seq(UQ,i=l..NUM):" se 
+generaron los neros con distribuci uniforme. Con la expresi para y obtenida anteriormente 
+(transformada inversa), se obtuvo la sucesi de neros generados con la distribuci de Pareto 
+> for j to NUMSIM do > seq(U(),i=l..NUM): > for i from 1to NUM do F:=U(i): > P(i):=y: od: > DATA:=seq(P(i),i=l..NUM): 
+Se obtuvo la volatilidad (o), de manera análoga a lo hecho para la distribuci Gamma. Con ella se calculel precio para los datos simulados, utilizando la fmula de Black Scholes. 
+> SJ:=sum('ln(DA T A[i]/SO)/NUM','i'=I••NUM): > S2:=sum('ln(DA T A[i]/S0)"'2/NUM','i'• J••NUM): > sigmahat:=sqrt( t/T•(S2-S 1 "2)): > price 1 [j]:=blackscholes(a, T,SO,sigmahat, r): > writeln(price 1 U]): 
+>od: 
+El procedimiento ya enunciado se repitiSOO (NUMSIM) veces, por lo que se obtuvieron 
+SOO precios. Se cerrel archivo donde se guardaron los datos, y se obtuvieron la media y la 
+desviaci estándar correspondientes. El precio para los datos simulados es la media. Con la 
+desviaci estándar se obtuvo el intervalo de confianza. 
+> close('outpare'): > meansim:=0: meant:=O: > for i to NUMSIM do meansim:-rneansim+pricel [i]/NUMSIM od: > for i to NUMSIM do meanl:=meanl+pricel[i]"2/NUMS1M od: > var:=(mean 1-meansim"2); > price:=meansim; > lowerprice:-evalf{price-t .96•sqrt(var)); > upperprice:=evalf{price+ l .96•sqrt(var)); 
+Nuevamente, para el cálculo del precio de Samuelson se usla expresi E ( (e-PTSr-e-rTa) /( e-"TSr> e-l'Ta) ). 
+> print (t); 
+> media:=evalf{int(x•f,x=nu..infinity)); 
+> varianza:=evalf{ int( ( x-media)"'2•f,x=nu ..infinity)); 
+> factorl:=SO/media•x-exp(-~n•a; 
+> factor2:=factorl •Heaviside(factorl); 
+> factor3:=factor2•f; 
+> priceN:=int(factor3,x~u..infinity); 
+Grificas 
+Para la elaboraci de las gráficas comparativas de los precios obtenidos por ambos métodos para las distribuciones Gamma, Pareto y Normal, se empleel paquete Maple. Se obtuvieron ambos precios en funci de r, y después se hicieron las gráficas mediante el comando "Plot". Sin embargo, para elaborar la gráfica análoga para la distribuci de Weibull, el procedimiento seguido fue distinto, dado que el software fue incapaz de obtener expresiones para los precios en funci de una r arbitraria. Puesto que el programa era capaz de obtener los precios valores especificos de r (por ejemplo r=.17, etc), se procedide la siguiente manera. Se dividiel intervalo (0,.2)5 en 100, y se hizo un programa en Maple que evaluara los precios en cada una de las 100 r's obtenidas de partir el intervalo. Se guardaron los resultados y la gráfica se construyen la hoja de cálculo Excel. 
+Para la gráfica en la que se comparan los precios reales de las diferentes distribuciones para distintas tasas de interés, se realizla gráfica en Maple considerando las distribuciones Gamma, Pareto y Normal. La gráfica se importal programa Paint y alli se editpara aftadirle la línea correspondiente a los precios para la distribuci de Weibull, tomando en cuenta los precios previamente guardados en la hoja de cálculo Excel. 
+En la secci de anexos, se hallan impresiones de las sesiones de Maple con las cuales se obtuvieron los precios (para la tasa de interés de 1% anual) y de las sesiones en las que se crearon las gráficas que se exhiben más adelante (se incluyen también las hojas de Excel para la distribuci de Weibull). También se encuentran gráficas de los quinientos precios obtenidos mediante la fmula de Black y Scholes para los datos simulados utilizando otras distribuciones. 
+Resaltados 
+En la tabla que se encuentra en la siguiente página se presentan los precios obtenidos por los dos métodos, y las cotas inferior y superior del intervalo de confianza para el precio obtenido por la Fmula de Black y Scholes .. 
+Se observa que el precio aumenta con la tasa de interés. Esto se debe a que el precio es la esperanza de la pérdida que sufriría el emisor en caso de que se ejerciera la opci, la cual es e-"'l'Sr -e-rTa (cuando e""TSr > e-rTa). Cuando r aumenta, el valor presente del precio de ejercicio disminuye, con lo que la pérdida esperada por el emisor es mayor. 
+Obsérvese que para bajas tasas de interés el precio de Samuelson para la distribuci de Pareto es el más alto. Esto se debe a que bajo la distribuci de Pareto es más probable que ocurran eventos extremos, ya que esta distribuci tiene la cola al infinito más pesada. 
+S Recuirdese que la tasa de interés se encuentra en el rango (O,ln(l.25)/12). Si se eval ln(l.25)/12 se obtiene aproximadamente O.t86. Se considermás conveniente extender el dominio de 1a gráfica a 0.2, en vez de dejarlo entre O y 0.186 
+Precios de Samaelson obtenidos en el aaAlisis 
+Black-Scholcs (Lomonnal)  Gamma  Normal  Pareto  Weibull  
+0.01  1.90048902  1.8SSS3911  1.74738478  2.1601S933  1.40680273  
+o.os  3.0S160872  3.030164SS  2.96336Sl 1  2.9S446836  2.72331331  
+0.1  4.9642S481  4.9802896  4.986778S  4.29896839  4.94039281  
+O.IS  7.33600804  7.384Sl784  7.4S934431  6.ISl87338  7.S9129301  
+0.2  10.0382703  10.104S917  10.2223289  8.67012S22  10.4679039  
+
+En la siguiente página se presentan dos gráficas en las que se observa que las distribuciones con colas al infinito sucesivamente menos pesadas son: Pareto, Lognonnal, Gamma, Nonnal y Weibull. De los resultados expuestos en la tabla se observa que para tasas bajas de interés, una opci cuyo activo subyacente tiene una distribuci con cola m'5 pesada que otra tiene un precio m'5 alto. 
+
+Colas de las fanciones de distribuci empleadas en el análisis 
+0.012 
+1 0 150 160 170 180 190 200 
+
+180 190 200 
+Para tasas de interés altas la situaci cambia. Esto se debe a que para tasas bajas de interés exp(-r7)a es grande. En cambio, para tasas de interés altas, exp(-r7)a disminuye y cobran mayor importancia la cola inferior (-oo) y la parte de enmedio (el "cuerpo") de la funci de densidad. Así, ante distintas tasas de interés, no es tarea trivial saber si el precio para una opci cuyo activo subyacente tiene una distribuci con cola pesada es más alto o no que el precio para una distribuci con cola poco pesada. Esto se aprecia con claridad en la siguiente gráfica. 
+Precio 
+
+r 
+En esta grifica se observa como la sensibilidad a la tasa de interés depende de 'la distribuci del activo subyacente, siendo la distribuci de Weibull la que hace aumentar el precio con mayor rapidez, y la de Pareto, la que lo hace crecer más lentamente. Esto se debe, evidentemente, a que la distribuci de Pareto tiene la cola más pesada ( con el cuerpo de la distribuci menos grueso), mientras que la distribuci de Weibull tiene la cola más ligera. 
+En los siguientes cuadros se muestran: el precio para los datos simulados, las cotas del intervalo de confianu para este precio, el precio de Samuelson. y, para fines de comparaci, el precio de Black y Scholes para el caso en que los activos efectivamente se distribuyen como lognormal. 
+Comparaci de los precios de distintas distribuciones coa el de la distribuci lognormal 
+Gamma  Lognonnal  
+R  Precio para los datos simulados  Cota inferior  Cota superior  Precio Samuelson  Precio Samuclson-Prccio 8-S  
+0.01  l.13584033  0.52058805  l.7510926  l.85553977  l.90048902  
+o.os  2.11949107  l.33867215  2.90031  3.03016455  3.05160872  
+0.1  3.9653296  3.11367435  4.81698485  4.9802896  4.96425481  
+O.IS  6.43816153  S.68490907  7.19141398  7.38451784  7.33600804  
+0.2  9.34515093  8.78866699  9.90163486  10.10459)7  10.0382703  
+
+Normal  Lognonnal  
+R  Precio para los datos simulados  Cota inferior  Cota superior  Precio Samuelson  Precio Samuclson-Prccio 8-S  
+0.01  l.93519009  l.02580903  2.84457116  l.74738478  l.90048902  
+o.os  3.08164057  2.02874985  4.1345313  2.963365) l  3.05160872  
+0.1  4.99119968  3.887048  6.09535136  4.9867785  4.96425481  
+O.IS  7.36451967  6.3S22S216  8.37678658  7.45934431  7.33600804  
+0.2  10.070254  9.24357097  10.8969371  10.2223289  10.0382703  
+
+Pareto  Lognonnal  
+R  Precio para los datossimulados  Cota inferior  Cota superior  Precio Samuelson  Precio Samuclson-Prccio 8-S  
+0.01  l.33394893  0.13629801  2.53159986  2.16015933  l.90048902  
+o.os  2.34649937  0.88521624  3.8077825  2.95446836  3.05160872  
+0.1  4.20169779  2.63071848  s.m6111  4.29896839  4.96425481  
+O.IS  6.65629168  S.2484460S  8.06413732  6.15187338  7.33600804  
+0.2  9.52530614  8.43947387  10.6111384  8.67012522  10.0382703  
+
+Weibull  Lognonnal  
+R  Precio para los datos simulados  Cota inferior  Cota superior  Precio Samuelson  Precio Samuclson-Prccio B-s  
+0.01  2.18327128  0.88466471  3.48187786  1.40680273  1.90048902  
+o.os  3.359)0767  l.88617449  4.83204085  2.72331331  3.05)60872  
+0.1  S.27782167  3.74630639  6.80933695  4.94039281  4.96425481  
+O.IS  7.63093484  6.2)588786  9.04598)8  7.59129301  7.33600804  
+0.2  10.2961989  9.11431973  l l.4780781  10.4679039  10.0382703  
+
+En este análisis se observa que dada una tasa del 1 % anual y las distribuciones ya mencionadas, ocurre que la fnula de Black y Scholes subval las opciones cuyos activos subyacentes tengan las distribuciones Gamma, o Pareto (con los parámetros especificados); y sobreval las opciones cuyos activos subyacentes tengan distribuci Nonnal o Weibull. Así, para esta tasa de interés, la fnula de Black y Scholes da el precio sucesivamente más bajos a las opciones cuyos activos subyacentes tienen distribuci Weibull, Nonnal, Lognonnal, Pareto y Gamma. Sin embargo, los precios reales (los dados por la verdadera distribuci del activo subyacente) no se comportan de esa manera. En orden decreciente los precios reales son: Pareto, Lognonnal, Gamma, Nonnal, Weibull. Esto cambia con la tasa de interés. 
+En las siguientes páginas se hallan gráficas que comparan los precios obtenidos por ambos métodos para las distintas distribuciones. Los casos de las distribuciones Pareto, Nonnal y Weibull, son interesantes porque en ellos ocurre que para tasas de interés bajas la fnula de Black y Scholes subval la opci, y. para tasas de interés más altas la sobreval. El caso de la distribuci de Gamma es distinto, puesto que para el rango estudiado, la fnula de Black y Scholes siempre subval la opci. Además, como se ve en el cuadro de la página anterior, en todos los casos estudiados el precio real está fuera del intervalo de confianza del precio para los datos simulados. Recuérdese que éste precio se obtuvo empleando la fmula de Black y Scholes, la cual presupone que el activo subyacente tiene distribuci lognormal, condici que no es satisfecha por los activos considerados en el análisis. Esta es la raz de la diferencia en ambos precios, y de que en algunos casos el precio de Samuelson (que se obtiene basándose en la verdadera distribuci del activo subyacente) no se encuentre dentro del intervalo de confianza que se obtendría para la opci utilii.ando la fmula de Black y Scholes. 
+Gráficas comparativas 
+Comparaci del precio real con el precio B-S para la distribuci Gamma 
+Precio 
+
+0.01 0.01 2 0.014 0.01 6 0.018 r 
+1 
+Comparaci del precio real con el precio B-S para la distribuci Normal 
+Precio 
+
+O 0.002 0.004 0.006 0.008 0.01 0.012 0.014 0.016 0.018 r 
+1 
+Comparaci del precio real con el precio B-S para la distribuci Pareto 
+Precio 
+12 
+1 
+r 
+
+O 0.002 0.004 0.006 0.008 ,0.01 0.012 0.014 0.01 6 0.018 
+Comparaci del precio real con el precio B-Spara la distribuci Normal 
+o 0.008 0 .012 O.OH 0 .02
+º·º°' 
+Tasa de irier6s 
+Precios para diferentes tasas de interés. Distribuci Lognormal. 
+Precio 
+
+
+O 0.002 0.004 0.006 0.008 0.01 0.012 0.014 
+r 
+
+Conclusioaes 
+Del análisis realizado, se desprende que es importante efectuar pruebas para verificar cuál es la distribuci de los activos sobre los cuáles se escriben opciones financieras para saber que tan confiable es la fmula de Black y Scholes en el cálculo del precio. Como ya se ha visto, existen distribuciones para las cuales el precio de Samuelson, calculado en base a la verdadera distribuci del activo subyacente, no se encuentra dentro de un intervalo de confianza al 5% de significancia centrado en el precio para los datos simulados, calculado mediante la fmula de Black y Scholes. La diferencia entre ambos se debe a que la fmula de Black y Scholes supone que el activo tiene distribuci lognormal. 
+Además, es necesario notar que hasta el momento no existe un criterio sencillo que permita distinguir si la fmula de Black y Scholes está sobrevalorando o subvaluando la opci en cuesti. Cabe seftalar que las diferencias encontradas oscilan entre 0.1 O y .90 unidades monetarias aproximadamente. Tomando en consideraci que en los mercados de derivados generalmente se venden lotes de 100 opciones5, y que las unidades monetarias empleadas usualmente son dares, es claro que la diferencia entre los dos precios no es despreciable, a cuando el precio real se encontrara en el intervalo de confianza del precio para los datos simulados, obtenido por la fmula de Black y Scholes. 
+Por otro lado, con respecto al método de Samuelson, es importante notar la importancia que tiene la probabilidad de ocurrencia de eventos extremos (determinada por la cola d.e ,la distribuci) en el precio de las opciones cuando la tasa de interés es baja. En los países desarrollados, esta conclusi es importante, dadas las bajas de interés que enfrentan. 
+El modelo de Bladt y Rydberg abre un nuevo campo de estudio que podría permitir en un futuro obtener precios de opciones confiables, en el sentido de que no se estarían transgrediendo un supuesto esencial para la validez del modelo con el que se calculan: el de log normalidad. 
+5 V~ Manscll Carstens Catherine Las nuevas Finanzas en M~xico 
+Bibliografía 
+Andreasen et al (1996) 
+
+"The Black-Scholes Formula", Documento de trabajo, Universidad de Aarhus. 
+Bladt & Rydberg (1998) 
+
+"An actuaria/ Approach to Optio11 Pricing under the Physica/ Measure and without Market 
+Assumptions" en Insurance, Mathematics and Economics (Prima aparici) 
+Samuelson, P. A. (1965) 
+
+"Rational Theory o/Warrant Pricing", en Industrial Management Review, 6, 13-31. 
+Merton, R. & Samuelson P. A. (1969) "A Complete Modelo/ Warrant Pricing that Maximizes Utility" en Sloan Management Review, 17-46. 
+Merton (1963) 
+
+"Theory o/Rational Option Pricing " en Bel! Joumal of Economics and Managemente Science, 4, 141-183 
+Anexos 
+Anexo 1: Pruebas de Normalidad para Series de Maizoro, Kimberly Clark y Bimbo 
+Anexo 2: Sesiones en MapleV2. J>ara la distribuci de Weibull se incluye también la hoja de cálculo en Excel de Microsoft con la que se elaborla gráfica 
+Anexo 3: Gráficas de los datos simulados para las distribuciones Gamma, Normal, Pareto y Weibull 
+30 25 20 15 10 
+
+
+Series: MAi Sample 1179 Observations 179 
+Mean 1.173391 
+
+Median Maximum Minimum Stcl. Dev. Skewness Kurtosis  1.101940 1.526056 0.916291 0.182995 0.621123 1.923182  
+Jarque-Bera Probab11ity  20.1sn3 0.000042  
+
+25 20 . 15 10 . 5 
+o 
+
+
+Series: KIM Sample 1223 Observations 223 
+Mean 5.002028 
+
+Median Maximum Mlnimum Std. Dev. Skewness Kurtosis  5.023222 5.158480 4.848900 0.086123 0.125441 1.670013  
+Jarque-Bera Probability  17.02054 0.000201 
+
+~ 
+-~'
+-
+. 
+4.85 
+~ ~ ~ ~ 
+> 
+), ), 
+~ 
+14') 
+"' 
+~ 
+~ 
+)(~ )C ~) 
+~ 
+> 
+~) 5c 
+4.90 
+
+40 
+30 
+20 
+10 
+
+3.8 3.9 4.0 
+
+~with(stats): G := RandGamma(64): 
+>readlib(finance): 
+.>NUM:=50; 
+
+NUM:=50 
+> NUMSIM:=500; 
+
+NUMSIM := 500 
+> S0:=100; 
+
+SO:= 100 
+>T:=12; 
+
+T:= 12 
+>r:=ln(1.01 )/T; 
+
+r:=.0008291942377 
+> a:=110; 
+
+a:= 110 
+> price1 :=array[1 ..NUMS1M); 
+pricel := ª"ay[ 1 .. 500] 
+> readlib(write): 
+> open('outgamma'): 
+> for j to NUMSIM do 
+
+> DATA:=seq(15/8*G(),1=1 .. NUM): 
+> S1 :=sum('ln(DA TA[i]/SO)/NUM', 'i'=1 •.NUM): 
+> S2:=sum('ln(DATA[i]/SO)" 2/NUM', 'i'=1 .•NUM): 
+> sigmahat:=sqrt(1/T*(S2-51 "2)): 
+> price1 [j]:=blackscholes(a,T,SO,sigmahat, r): 
+> writeln(price1 U]): 
+> od: 
+> close('outgamma'); 
+
+> meansim:=O: mean1 :=O: 
+> for i to NUMSIM do meansim:=meansim+price1 [i]/NUMSIM od: 
+> for i to NUMSIM do mean1 :=mean1+price1[i]"2/NUMS1M od: 
+>var:=(mean1-meansim"2); 
+var:=.098535~62 
+>pnce:=meansim; 
+
+price := 1.135840325 
+>lowerprice:=evalf(price-1.96*sqrt(var)); 
+lowerprice := .5205880456 
+>upperprice:=evalf(price+1.96*sqrt(var)); 
+upperprice := l.751092604 
+>f:=lambda"rho/GAMMA(rho)"'x "(rho-1 rexp(-larnhda"x); (p-1) -AX 
+iPx e / := J;"(p) 
+>rho:=64; 
+
+p:=64 
+> lambda:=8/15; 8 
+"':= 15 
+>media:=evalf(int(x"f,x=O..infinity)); media := 120. >varianza:=evalf(int((x-media)"2*f,x=O .. infinity),; 
+varianza:= 225.0000061 
+>factor1 :=SO/media*x-exp(-r"T)*a; 
+factor}:= .8333333333 x-108.9108911 
+> factor2:=factor1*Heaviside(factor1 ); 
+factor2 := (.8333333333 x-108.9108911) Heaviside(.8333333333 x-108.9108911) 
+> factor3:=factor2*f; factor3 := 43556142965880123323311949751266331066368/25607533531377618862965214 \ 335165431558938437813241219292186908312696899702615206611029191845252328408\ 179091912000302500018733553588390350341796875 
+8 
+--X 
+15
+63
+
+(.8333333333 x-108.9108911) Heaviside(.8333333333 x-108.9108911) xe 
+> priceN:=int(factor3,x=O .. infinity); 
+priceN:= 
+
+333333333
+¡ 00 •J700911293 JO"J04 (.8333333333X -J08,9108911 ) X63 e • .5 X dx 130.6930693 
+> int(xA64*exp(-8/15*x),x=130.6930693 ..infinity); 
+.1909220944 1 O l 07 
+> sumando1:=.1700911293"10"(-104)*5/6"("); sumando! := 27.06179555 
+>int(x"63*exp(-8/15*x),x=130.6930693..infinity); 
+.1360678000 1Ol05 >sumando2:=.1700911293*10"(-104)*108.9108911"("); sumando2 := 25.20625578 >precio:=sumando1-sumando2; precio := 1.85553977 
+) 
+
+>with(stats): N := RandNormal(120,15): 
+>readlib(finance): 
+> NUM:=50; 
+
+NUM:=50 
+> NUMSIM:=500; 
+
+NUMSIM := 500 
+> S0:=100; 
+
+so:= 100 
+> T:-12; 
+
+T:= 12 
+> r:=ln(1.01 )/T; 
+
+r:=.0008291942377 
+> a:=110; 
+
+a:= 110 
+> price1:-array(1 ..NUMS1M]; 
+pricel := array[l .. 5001 
+> readlib(write): 
+> open('outnorm'): 
+> for j to NUMSIM do 
+
+> DATA:=seq(N(),1=1 ..NUM): 
+> S1 :=sum('ln(DA TA[i]/SO)/NUM', 'i'=1 ..NUM): 
+> S2:=sum('ln(DA TA[i]/S0)" 2/NUM', 'i'=1 ..NUM): 
+> sigmahat:=sqrt(1/T*(S2-S1 "2)): 
+> price1[j]:=blackscholes(a,T,S0,sigmahat, r): 
+> writeln(price1 [j]): 
+> od: 
+> close('outnorm'): 
+
+> meansim:=O: mean1 :=O: 
+> for i to NUMSIM do meansim:=meansim+price1 [i)/NUMSIM od: 
+> for i to NUMSIM do mean1 :=mean1+price1[i]"2/NUMS1M od: >var:=(mean1-meansim"2); 
+var:= .215268098 
+>price:=meansim; 
+price := 1.935190092 
+>lowerprice:=evalf(price-1.96*sqrt(var)); 
+· /owerprice := 1.025809025 
+>upperprice:=evalf(price+1.96*sqrt(var)); upperprice := 2.844571159 >f:=1/(sqrt(2*Pi)*15)*exp(-(x-120)"2/(2*15"2)); 
+1 2 
+-(x-120)
+450 
+! ·=~ fi e 
+
+. 30 ---fo-=7t=---­
+>media:=evalf(lnt(x*f,x=-infinity .. infinity)); 
+media:= 120.0000000 
+> varlanza:=evalf(int((x-media)"2*f,x=-infinity..lnfinlty)); 
+varianza:= 225.0000000 
+> factor1 :=SO/media*x-exp(-r*T)*a; factor} := .8333333333 x-108.9108911 > factor2:=factor1*Heavlside(factor1 ); 
+factor2 := (.8333333333 x-108.9108911) Heaviside(.8333333333 x-108.9108911) 
+> factor3:=factor2*f; 
+1
+
+factor3 := ( 18333333333 x-108.9108911) Heaviside(.8333333333 x-108.9108911) Ji
+30 
+1 
+---(x-120)2 
+450 r:;; 
+e /...¡1t 
+
+> priceN:=lnt(factor3,x=-infinlty .. infinity); priceN := 1.747384776 
+>with(stats): U := RandUniform(0 ..1): >readlib(finance): >NUM:=50; 
+NUM:=50 
+>NUMSIM:=500; NUMSIM := 500 >S0:=100; 
+so:= 100 
+>T:=12; 
+
+T:= 12 >r:=ln(1.01 )/T; r:=.0008291942377 
+>a:=110; a:= 110 >price1 :=array[1 ..NUMS1M]; 
+pricel := array[ 1 .. 5001 
+> f:=theta•nuA(theta)/xA(theta+1 ); #Pareto ev8 /:= (8 + 1) 
+X 
+> nu:=106.7582667; 
+
+V:= 106.7582667 
+> theta:=-120/(nu-120); 8 := 9.062257733 > print (f); 
+20 1 
+
+.2183402062 1 O l O 06225773 
+X • 
+
+> ecuacion:=F=int(f,x=nu..y); ecuacion := F= -.2409335650 1019 ~ + 1.000000014
+9062 5773 100000000 
+y 
+> y:=solve(ecuacion,y); 
+100000000
+
+19 1 
+y :=l·,2409335650 10 F-l.OOOOOOOl4 r6225773 
+> readlib(write): > open('outpare'): 
+
+>for j to NUMSIM do >seq(U(),i=1 ..NUM): >for i from 1 to NUM do F:=U(i): >P(i):=y: od: >OATA:=seq(P(i),i=1 ..NUM): >S1 :=sum('ln(DA TA[i]/SO)/NUM', ;i'=1 ..NUM): >S2:=sum('ln(DATA[i]/S0)"2/NUM', 'i'=1 ..NUM): > sigmahat:=sqrt(1/T*(S2-S1 "2)): >price1[i]:=blackscholes(a,T,S0,sigmahat, r): >writeln(price1 U]): > od: > close('outpare'): > meansim:=O: mean1 :=O: > for i to NUMSIM do meansim:=meansim+price1 [i]/NUMSIM od: > for i to NUMSIM do mean1:=mean1+price1[i]"2INUMS1M od: > var:=(mean1-meansim"2); 
+VQT := .373377690 > price:=meansim; price := 1.333948932 > lowerprice:=evalf(price-1.96*sqrt(var)); lowerprice := .136298009 > upperprice:=evalf(price+1.96*sqrt(var)); upperprice := 2.531599855 > print (f); 
+20 1 .2183402062 10 xl0.06225773 
+> media:=evalf(int(x*f,x=nu .. infinity)); 
+media:= 120.0000018 
+> varianza:=cvalf(int((x-media)"2*f,x=nu . .infinity)); 
+varianza:= 225.0000225 
+> factor1 :=SO/media*x-exp(-r*T)*a; 
+factor]:= .8333333208 x-108.9108911 
+>factor2:=factor1 *Heaviside(factor1 ); factor2 := (.8333333208 x-108.9108911) Heaviside(.8333333208 x-108.9108911) >factor3:=factor2*f; 
+factor3 := .2183402062 1 o2º (.8333333208 x-108.9108911) Heaviside( .8333333208 x-108.9108911) xl0.06225773 
+>priceN:=int(factor3,x=nu .. infinity); priceN := 2.160159325 
+>with(stats): U := RandUniforrn(0 .. 1): >readlib(finance): >NUM:=50; 
+NUM:=50 
+>NUMSIM:=500; NUMSIM := 500 >S0:=100; so:= 100 > T:=12; T:= 12 
+> r:=ln(1.01 )/T; 
+
+r:=.0008291942377 > a:=110; a:= 110 
+> price1 :=array(1 ..NUMS1M]; 
+pricel := array[ 1 .. 500] > f:=k*b*x"(b-1 )*exp(-k*x"b); #Weibull; #k, b > O 
+b
+
+(b-1) -kx f:=kbx e > b:=1/.104137019945; b := 9.602733020 > k:=(225/(GAMMA(1+2*.104137019945)-(GAMMA(1+.104137019945))"2))"(-1/(2' .104137019 > 945)); 
+k := .6590658796 10-20 
+> print (f); 
+-.6590658796 10-20 x9.602733020 
+
+602733º2ºe 
+19 8.6328833684 10­x ·  
+> ecuacion:=F=int(f,x=O..y);  
+480136651  
+50000000  
+
+-.6590658796 10-20 
+yecuacion := F = -.9999999999 e + .9999999999 
+> y:=solve(ecuacion,y); 
+
+50000000 480136651 y :=[-.1517299000 1021 In(-1.000000000 F+ .9999999999)] 
+> readlib(write): 
+> open('()utweib'): 
+>for j to NUMSIM do >seq(U(),i=1 ..NUM): 
+
+1>for i from 1 to NUNI do F:=U(i): >P(i):=y: od: >OATA:=seq(P(i),i=1 ..NUM): >S1 :=sum('ln(DATA[i]/SO)/NUM' ,'i'=1 ..NUM): >S2:=sum('ln(DATA[i]/S0)"2/NUM' ,'i'=1 .. NUM): > slgmahat:=sqrt(1/T*(S2-S1 "2)): >price1 [j]:=blackscholes(a, T ,SO,sigmahat, r): >writeln(price1 U]): >od: >close('outweib'): > meansim:=O: mean1 :=O: >for i to NUMSIM. do meansim:=meanslm+price1 [i)/NUMSIM od: > for i to NUMSIM do mean1:=mean1+price1[i]"2/NUMS1M od: > var:=(mean1-meansim"2); 
+var := .438978300 > price:=meansim; price := 2.183271282 > lowerprice:=evalf(price-1.96*sqrt(var)); lowerprice := .884664707 > upperprice:=evalf(price+1.96*sqrt(var)); upperprice := 3.481877857 > print (f);~ · _6590658796 10-20 x9.602733020 .6328833684 10·19 x8.602733020 e. 
+> media:=evalf(int(x*f,x=O..infinity)); media := 120.000001O > varianza:=int(x"2*f,x=O..infinity)-2*media•int(x"'f,x=O..infinity)+media"2*int(f,x=O..infinity); 
+varianza:= 224.99998 
+> factor1 :=SO/media*x-exp(-r*T)*a; 
+factor] := .8333333264 x -108.9108911 
+>factor2:::factor1 "Heaviside(factor1 ); factor2 := (.8333333264x-108.9108911) Heaviside(.8333333264x-108.9108911) > factor3:=factor2*f; 
+factor3 := .6328833684 10-19 (.8333333264x-108.9108911) -.6590658796 10-20 x9.602733020 
+Heaviside( .8333333264 x -108.9108911) x8·6º2733020 e > int(x"9.602733020*exp(-.6590658796*10"(-20)"' x "9.602733020)*Heaviside(.8333333264"'x-1 > 08.9108911 ),x=O ..infinity); 
+.5447784174 1021 > sumando1 :=.6328833684 .. 1011(-19)*.8333333264*("); 
+sumando] := 28.73176641 > int(x"8.602733020*exp(-.6590658796*10"(-20)*x "9.602733020)*Heaviside(.8333333264~x-1 > 08.9108911 ),x=O ..infinity); 
+.3964282534 10 19 
+> sumando2:=.6328833684 .. 1011(-19)*108.9108911 ..("); 
+sumando2 := 27.32496368 
+> priceN:=sumando1-sumando2; priceN := 1.40680273 
+>readlib(finance): 
+> S0:=100; 
+
+so:= 100 
+>T:=12; 
+
+T:= 12 
+> r:=ln(1 .01 )/T; 
+
+r:= .0008291942377 
+> a:=110; a:= 110 > f:=1 /(x*sqrt(2..Pi)*Sigma)"'exp(-(ln(x)-Mu)"2/(2*Sigma"2)); 
+1 (ln(x)-M/ 
+
+-2 I:2 ! ·=~ Jie
+· 2 ___x_fo_ I: __ 
+> media:=simplify(int(x*f,x=O.. infinity)); 
+M+~I:2 
+2 
+
+media :=e 
+> varianza:=simplify(int((x-media)"2*f,x=O..infinity)); 
+2 M + 2 I:2 2 M + I:2 
+varianza := e -e > Mu:=4.7797396~0; 
+M := 4.779739650 
+> Sigma:=.1245158062; 
+
+I: := .1245158062 
+>. print(media,varianza); 
+
+120.0000000, 224. 99999 
+> priceN:=blackscholes(a, T ,SO,Sigma/sqrt(T),r); 
+priceN := 1.90048902 
+> 
+
+>with(slats): U := RandUniform(0.. 1 ): 
+>readlib(finance): 
+>S0:=100: 
+so:= 100 
+> T:=12; 
+T:= 12 
+> signum(r):=1 ; signum(r) := 1 > a:=110; a:= 110 > prke1 :=array[1 ..NUMS1M]; 
+pricel := array[ 1.. NUMSIM] 
+> f:=k*b•x"(b-1 )*exp(-k*x"b); #Weibull; #k, b > O 
+b
+
+(b-1) -kx f:=kbx e > b:=1/.104137019945; b := 9.602733020 > NUM:=300; 
+NUM:=300 
+> k:=(225/(GAMMA(1+2*.104137019945)-(GAMMA(1+.104137019945))"2))"(-1/(2" .104137019 > 945)): 
+k := .6590658796 10·20 > print (f); 
+-.6590658796 10·20 x9-.602733020 .6328833684 10·19 x8.602733020 e 
+> ecuacion:=F=int(f,x=O..y); 480136651 20 50000000 
+-.6590658796 10· yecuacion := F = -.9999999999 e + .9999999999 > y:=solve(ecuacion,y); 50000000 480136651 y:= [-.1517299000 1021 ln(-1.000000000 F + .9999999999)] > media:==120; 
+media:= 120 > factor1 :==SO/media•x-exp(-r*T)*a; 5 -12 r 
+factor] := 6x-110 e 
+> factor2:==factor1 *Heaviside(factor1 ); 
+5 -12 rl Js -12 r
+factor2 := 6x-110 e Heavisid16 x-110 e 
+1 
+
+> factor3:=factor2*f; 
+19 5 -12 r Js -12 r 8 602733020 factor 3 := .6328833684 1 o-6x -11 O e Heavisid16 x -11 O e 
+x · . -.6590658796 10-20 x9.602733020 
+e > divi:=100; 
+divi := 100 
+> seq(U(),i=1 .. NUM): > for i from 1 to NUM do F:=U(i): > P(i):=y: od: > DATA:=seq(.P(i),i=1 ..NUM): > S1 :=sum('ln(DATA[i]/SO)/NUM','i'=1 .. NUM): > S2:=sum('ln(DATA[i]/S0)"2/NUM'. 'i'=1 ..NUM): > sigmahat:=sqrt(1/T*(S2-S1 "2)); 
+sigmahat:=.03924022872 
+> readlib(write): > open('graf): > for i from Oto divi do > r:=.02/divi•i; 
+> int(x"9.602733020*exp(-.6590658796*10"(-20)*x"9.602733020)*Heaviside(5/6*x-11 O*exp(-1 > 2*r)),x:=O..infinity): 
+> sumando1 :=.6328833684*10"(-19)*5/6*("): 
+> int(x"8.602733020*exp(-.6590658796*10"(-20)*x"9.602733020-12*r)*Heaviside(5/G*x-11 O*e > xp(-12· r)),x=O . .infinity): 
+> sumando2:=.6328833684*10"(-19)*11O*("): 
+> precio:=sumando1-sumando2; >· bs:=blackscholes(a,T,SO,sigmahat, r): > writeln(r,precio,bs): 
+> od: > close('graf); 
+r Real 8-S 
+o 1.1513966 2.03033441 0.0002 1.21000175 2.08927826 0.0004 1.27050427 2.1494778 0.0006 1.33291687 2.21094516 0.0008 1.39725081 2.27369202 
+0.001 1.46351574 2.33772976 0.0012 1.53171999 2.40306946 
+0.0014  1.60187033  2.4697219  16  
+0.0016  1.67397212  2.53769733  
+0.0018  1.7480293  2.60700585  14  
+0.002  1.82404439  2.67765701  
+0.0022  1.90201847  2.74966007  12  
+0.0024  1.98195138  2.82302387  
+0.0026  2.0638415  2.89775683  10  
+0.0028  2.14768595  2.97386695  
+0.003  2.23348057  3.05136183  8  
+0.0032 0.0034  2.32121993 2.41089745  3.13024862 3.210534  6  
+0.0036 0.0038  2.50250528 2.59603448  3.29222428 3.37532524  4  
+0.004  2.69147496  3.45984219  2  
+0.0042  2.78881564  3.54578004  
+0.0044  2.88804427  3.63314316  o  
+0.0046 0.0048  2.98914773 3.09211191  3.72193542 3.81216029  o  0.004  0.008  0.012  0.016  0.02  
+0.005  3.1969217  3.90382064  
+0.0052  3.30356124  3.9969189  
+0.0054  3.41201377  4.09145704  
+0.0056  3.5222617  4.18743641  
+0.0058  3.63428671  4.28485791  
+0.006  3.74806978  4.38372196  
+0.0062  3.8635912  4.4840284  
+0.0064  3.98083056  4.58577658  
+0.0066  4.09976697  4.68896537  
+0.0068  4.22037888  4.79359304  
+0.007  4.34264417  4.89965738  
+0.0072  4.4665404  5.00715571  
+0.0074  4.5920445  5.11608478  
+0.0076  4.71913302  5.22644079  
+0.0078  4.84778219  5.33821945  
+0.008  4.97796786  5.45141601  
+0.0082  5.10966552  5.56602514  
+0.0084  5.24285045  5.68204099  
+0.0086  5.37749757  5.79945729  
+0.0088  5.51358164  5.91826718  
+0.009  5.65107733  6.03846335  
+0.0092  5.78995882  6.16003798  
+0.0094  5.93020058  6.28298276  
+0.0096  6.07177661  6.40728889  
+0.0098  6.21466104  6.53294716  
+0.01  6.35882779  6.65994781  
+0.0102  6.50425085  6.78828063  
+0.0104  6.65090418  6.91793503  
+0.0106  6.79876162  7.04889985  
+0.0108  6.94779728  7.18116364  
+0.011  7.09798508  7.31471439  
+
+0.0112  7.24929913  
+0.0114  7.40171356  
+0.0116  7.55520276  
+0.0118  7.70974095  
+0.012  7.86530271  
+0.0122  8.02186274  
+0.0124  8.17939591  
+0.0126  8.33787713  
+0.0128  8.49728162  
+0.013  8.65758489  
+0.0132  8.81876235  
+0.0134  8.98078999  
+0.0136  9.14364374  
+0.0138  9.3073  
+0.014  9.47173528  
+0.0142  9.63692641  
+0.0144  9.8028504  
+0.0146  9.96948468  
+0.0148  10.1368068  
+0.015  10.3047945  
+0.0152  10.4734262  
+0.0154  10.6426802  
+0.0156  10.8125353  
+0.0158  10.9829705  
+0.016  11 .1539653  
+0.0162  1-1 .3254992  
+0.0164  11.4975521  
+0.0166  11 .6701045  
+0.0168  11 .8431368  
+0.017  12.0166297  
+0.0172  12.1905647  
+0.0174  12.3649231  
+0.0176  12.5396868  
+0.0178  12.7148378  
+0.018  12.8903585  
+0.0182  13.0662317  
+0.0184  13.2424403  
+0.0186  13.4189678  
+0.0188  13.5957977  
+0.019  13.7729139  
+0.0192  13.9503006  
+0.0194  14.1279425  
+0.0196  14.3058244  
+0.0198  14.4839311  
+0.02  14.6622484  
+
+/.44~!>3973 
+7.5856269 7.72296267 7.86153351 
+8.0013254 8.14232408 8.28451482 8.42788259 8.57241201 
+8.7180874 8.86489273 
+9.0128117 9.16182774 9.31192391 9.46308314 9.61528799 9.76852085 9.92276388 
+10.077999 
+10.234208 10.3913723 10.5494735 10.7084926 10.8684108 11 .0292089 
+11 .190868 11 .3533685 11 .5166913 11 .6808167 11 .8457253 12.0113976 12.1778138 12.3449543 12.5127995 12.6813296 12.8505251 13.0203662 13.1908334 
+13.361907 13.5335675 13.7057955 13.8785716 14.0518764 14.2256908 14.3999956 
+
+Distribuci Gamma. R=1 % 
+2.5 -------------------------------------------------..... 
+2 +------,---------------------------------------·------· -·---------·· ­
+1.5 ------------H-----....--.fll--.fl.-r--
+--ll~~l-l-......._._--11---1-11-
+-i-a-&----111-a--1----·
+
+
+0.5 +--------­
+0-------------------------------------------------.....J 
+Distribuci Gamma. R= 5% 
+3.5 -------------------------------------------------. 
+3 +-----1----1---1-------------1-f---------l-------·-­
+-------· --­
+-·­
+
+
+
+·----·-----------­
+-·--­
+1.5 -----t----· 
+1 -------------------·-------------­
+0.5 -------­
+º...._________________________________________________, 
+Distribuci Gamma. R=10% 
+6--------------------------------------------------, 
+s ----------.---,c-------------­
+
+3 ·t--·----­
+2 +--------------------------------------------·----­
+1 -----------··-------­
+º......_________________________________________________. 
+
+
+Distribuci Gamma. R=15% 
+8--------------------------------------------------------­
+
+5 +-----------------------------------------------------­
+4 --------------------------------------------­
+3 -1--------------------------·------------------------------------­
+2 --------------------------·--­
+1 +--------------------------------···-------------··-----.. ---···-· -------·-.. ... . 
+0-------------------------------------------------------..J 
+Distribuci Gamma. R=20% 
+10.5 ------------------------------------------------, 
+10 -f----...----..-~--------------t;---------t--:-----­
+
+8.5 --------------------------------------------------­
+8 -· -----· . . . 
+7.5 -------------------------------------------------' 
+
+
+Distribuci normal. R=1% 
+4-------------------------------------------------­
+3.5 +-----------­
+3-1-------------------------­
+
+1 ..__ _ _ ....______________ 
+0.5 
+o-------------------------------------------------....1 
+Distribuci normal. R=5% 
+
+6------------------------------------------------, 
+5 .¡.._..______ ___________________________ 
+4 +-r--1 
+
+
+
+2 ------------------------•-----------.1-111----1·
+----·­
+---------·-·-­
+
+-----------4-------··----­
+0------------------------------------------------.....J 
+Distribuci Normal. R=10% 
+
+8--------------------------------------------, 
+7 -1----------------·---· -··· -----··-·· ·-­
+6 +---1-.-.--1-----------...---·---
+•­
+·--·----------·-----·· 
+5 
+4 -t------+lt--...,__-----------l'-------1---1--------1 
+·------·-... 
+3 -1--------------------------------------­
+2 +---------------------­
+1 -----­
+0------------------------------------------------...J 
+
+
+Distribuci normal. R=15% 
+10 -----------------------------------------------­
+9 +------------------------------------·---------········---··---..... . 
+
+6 -1-----------------------1--------------'--------··----------· ­
+5 +-----------------------------------·-­
+4 -1-------------------------------------· 3-1---------------------­2-1---------------------­
+1 
+0-----------------------------------------------__J 
+Distribuci Normal. R=20% 
+
+
+14 -----------------------------------------------­
+12 +-----------------------------------------·---·-------· ­
+10 
+8 +-----------------------------------------­
+6 +-------------------------------------------·-----·----· -. 
+4-1------------------------­
+2 +--------------------· 
+0-----------------------------------------------___J 
+Distribuci de Pareto. R= 1% 
+
+
+4--------------------------------------, 
+
+3.5--------------------f-----------:------------·------------.. ---------­
+3 --------------------11--­
+---·-·----·---­
+~
+2.5 
+-----------~ .----11----Ht----t----tl-ll--+­
+
+-------.---------·--­
+11 
+2 .._...._....__..___.__11-1-_-1--~--a-.._._~-1 ~t-l H--H-tl-t--+-a·H -t ­
+1-----• --· 
+MI ,_ ,_
+~
+1.5 
+111 
+
+-11111-1~ 
+,_ l~~I ­
+1 
+1 ~ 
+11111 -,_,_ ­
+
+1 ~!!­
+111
+"~ 
+Hf 
+0.5 ------·--·-·-· --· -... -.-----· .. ---· 
+0-----------------------------------____J 
+Distribuci Pareto. R=5% 
+6---------------------------------.. 
+5 -1--------+-----------------------------· ----------------· 
+4 -------------------1-------a--1---------------------·-·. --. 
+
+-. -­
+3 
+-11: ,_---­
+1MI 
+
+
+tl~I
+JU w~ l. ..., M ~ 
+
+2 
+..... --­
+,,~ 
+'~"­
+
+1 -1-----------1
+-----------------·-f---1------------... 
+--.. -··· 
+
+0-----------------------------------J 
+Distribuci Pareto. R=10% 
+
+1 
+8 
+7 ·>---·--------------·-----------·-·---------------... -... 
+6 --------------------•---------1-----
+--
+----·-------· -··· .. ­
+5 ­
+
+HI 
+
+\ 
+
+)
+j
+-•1-111.11-a l--l+l-'II-H-II­
+
+4 ­
+1~ ~\­
+1~ 
+-~,
+
+3 ----­
+11-------..-------1-t-l---'--lt---l---11-1--1-----,---------------· .. 
+2 1-------------------------------------·-------·-· -·-·-· ··­
+1 -· 
+0-----------------------------------------___J 
+
+Distribuci Pareto. R=15% 
+
+
+10 ----------------------------------------------, 9 ~---1-----½----------------1 
+-.-----------------------------­
+---------------1---.--------a---t· ---------­
+
+8 
+7 
+5 --------------------------------------. . 
+4 -------------------------------------------------------------­
+3-----------­2 ----------------------·---------·--,.__ --·-·--. -·· ----· 1 ----. -·-·-. 
+0----------------------------------------------------J 
+Distribuci Pareto. R=20% 
+
+14 --------------------------------------------------, 
+12 -1----------------------------------·-·-· ---·----.. 
+10 
+8 -1-------------------------------------·-------.. --·-·­
+6 -1---------------------------------------·-----·---·---------­
+4 
+2 ·-·-··------·-·· -..... ···--·-·····----· ··· 
+º_..._________________________________________________, 
+
+
+Distribuci Weibull. R=1 % 
+
+1 -.-------------··-----------·---­
+0-----------------------------------------------.....J 
+6--------------------------------------------------. 
+
+5-----------------------------------------------. -. -. 
+----------·-----------. --.
+
+4 
+3 .f-­
+I-­
+---------. -----­
+
+Distribuci Weibull. R=5% 
+
+7 
+-_.. _
+·------.. .
+6 
+-
+-
+
+5 
+_ ,_ 
+4 
+11 
+~­
+-
+
+· -1111 · '­
+3 
+1 
+---...--·-·-­
+2 
+1 
+o 
+
+Distribuci Weibull. R=10% 
+
+9-----------------------------­
+8 1-­
+------11-------------------------------------·--­
+
+7 ~-----1------r----t----------t-----ll-----­
+_111. _~ _ 
+
+4--~-----------------11----•1-I---H--'-II---I--H-----------·------· ... ­
+3 -1----------------------------------··-·-·---­
+2 --------·--------·------------·-----------·--· -·--. 
+1 
+0-------------------------------' 
+
+
+Distribuci Weibull. R=15% 
+
+12 ----------------------------------------------, 
+10 ~-----­
+
+6 
+4 +--------------------------­
+2 -­
+0-----------------------------------------------' 
+Distribuci Weibull. R=20% 
+
+
+14 -------------------------------------------------, 
+12 -1---------1--------------------------------·-----.. -· -· ­
+
+a-------------------------------­
+6 ------------------------------------------·---·-----· 
+4 --­
+2 · -----------··--·---······ ... ····--·-·-··· 
+0-------------------------------------------------' 
+
+

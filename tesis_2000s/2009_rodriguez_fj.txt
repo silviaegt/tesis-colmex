@@ -1,0 +1,468 @@
+
+1
+E'L C'OLE:G]Q: DE, MÉX]CO 
+CENfTIRQ., IDJE IESJJUDTOS.: ]ECONÓMICOS 
+I I 
+MAESTRIA EN ECONOMIA 
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA 
+MERCADOS DE MATCHING: EL CASO PARTICULAR DE LAS PAREJAS, EN BUSCA DE UN NUEVO ALGORITMO 
+FRANCISCO J. RODRÍGUEZ CARRASCO 
+PROMOCIÓN 2006·2008 
+AsESOR: DAVID RENÉ MICHEL CANTALA 
+ABR!l 2009 
+
+Agradecimientos. 
+Agradezco a Dios, a mis padres que siempre me han apoyado, a todos mis más que comparos amigos de la maestría que de alguna u otra forma contribuyeron a la realizaci de esta tesis. Y un muy merecido agradecimiento a mi asesor el Dr. David Cantala sin cuyo apoyo la realizaci de esta tesis hubiera resultado imposible. 
+Resumen: 
+El mercado de estudiantes de medicina y hospitales provee un campo propicio para poner en practica algoritmos capaces de encontrar los matchings (emparejamientos) estables de dicho mercado. En este sentido se ha puesto en práctica un algoritmo que parecía funcionar adecuadamente en el mercado, sin embargo, trabajos recientes como el de Klaus Klijn y Masso (2003) muestran que en presencia de parejas del lado de los estudiantes no el algoritmo falla al no encontrar el matching estable.  Una vez descubierto el problema se abocan a la tarea de encontrar condiciones (sobre la estructura de las preferencias) que garantizan el adecuado funcionamiento del algoritmo. Si bien esto es un avance las condiciones dadas parecen restrictivas y no capturan adecuadamente las preferencias de las parejas por cercanía, por lo que en el trabajo de Cantala (2004) se sugiere un cambio sobre la estructura de las preferencias que capture mejor este deseo de las parejas por emparejarse en hospitales cercanos. Sin embargo, bajo estas nuevas preferencias el algoritmo actualmente empleado es ineficiente. El presente es un trabajo pretende ya no dar condiciones bajo las cuales el algoritmo pueda funcionar, si no mas bien, se encuentra un algoritmo que resuelve el problema de matching en este mercado sin importar la estructura de las preferencias y sin importar la presencia o ausencia de parejas. El algoritmo que se sugiere pertenece a la familia de algoritmos “Branch and Bound”, los cuales comnmente son usados en problemas de maximizaci donde las variables son discretas o tenemos una mezcla de variables discretas y continuas. El algoritmo ha sido construido de tal forma que se puede garantizar que siempre encontrara los matchings estables siempre y cuando estos existan. 
+Índice 
+1. Introducci ……………………………………………... 5 
+2. El modelo ……………………………………………... 7 
+3. El problema ……………………………………………... 9 
+3.1 Existencia ...……………………………………. 9 
+               3.2 Algoritmo de Aceptaci Diferida (AD) vs. Algoritmo 10                      de Ramificaci Con Parejas (RP)  …………………. 
+4. El Algoritmo de Ramificaci con Parejas (RP)  ………… 11 
+5. Prueba del teorema 3 …………………………………………. 19 
+6. Conclusiones …………………………………………………... 22 
+7. Bibliografía …………………………………………………….. 24 
+1. Introducci 
+Cada a cerca de 20 mil estudiantes de las escuelas de medicina de los Estados Unidos se incorporan al mercado laboral a través de un mecanismo centralizado de matching, el Nacional Resident Matching Program (NRMP, a partir de aquí). El programa nace en la década de los 50’s ante las constantes fallas de procesos descentralizados de organizar el mercado laboral entre graduados de escuelas de medicina y hospitales. Roth (1984) explica como este mecanismo en un principio utilizaba una variante del mecanismo de Aceptaci Diferida desarrollado por Gale y Shapley (1962). Sin embargo, en los as 70’s los estudiantes empezaron hacer uso del NRMP ya no de forma individual sino que ahora eran parejas de estudiantes las que buscaban que el programa las asignara en hospitales de una misma área geográfica. Es incuestionable que la incorporaci de parejas al mercado laboral ha causado que el problema de matching se haga más complejo, ahora no solo hay que buscar una soluci que sea aceptable para ambos lados del mercado, sino que, tenemos  que lidiar con decisiones grupales en el lado de la demanda. Dado que el NRMP no estaba preparado para esta eventualidad los estudiantes comenzaron a utilizar cada vez menos el NRMP y comenzaron a negociar directamente con los hospitales, lo cual provoco que el mercado volviera a caer en la desorganizaci. Ante esta situaci en 1998 el NRMP adopto un  nuevo algoritmo que tenía como intenci incorporar las preferencias de las parejas de manera mas adecuada. Y en un principio parecía que este nuevo algoritmo cumplía bien con su cometido, sin embargo trabajos recientes, por ejemplo el realizado por Klaus Klijn y Mass(2003), han probado que tal vez este nuevo algoritmo no este cumpliendo de manera adecuada para lo que fue disedo. Del trabajo realizado por Roth (1984) se sabe que en presencia de parejas no podemos garantizar que, en general, el conjunto de matchings estables no sea vacío. Klaus y Klijn (2003) dan condiciones bajo las cuales la existencia de un matching estable esta garantizada. La condici que presentan en su trabajo es referente a la estructura de las preferencias de las parejas, que nos dice que si las preferencias de las parejas son “responsive” (se refieren a un tipo de preferencias en el cual la mejoría unilateral de un miembro de la pareja mejora a la pareja) la existencia de un matching estable esta garantizada. En otro trabajo Klaus, Klijn y Mass (2003) muestran que a pesar de que el matching estable existe, el nuevo algoritmo de 1998 del NRMP es incapaz de encontrarlo mientras que el algoritmo de aceptaci diferida si lo logra. Sin embargo, su ejemplo esta construido sobre preferencias responsive que no parecen capturar bien la idea de proximidad geográfica, que es en tima instancia lo que parece preocupar más a las parejas. En el trabajo de Cantala (2004) se sugiere el uso de preferencias lexicograficas, las cuales capturan la idea de que las parejas tienen preferencias sobre las regiones en las cuales se encuentran  los hospitales. En contraparte, bajo preferencias lexicograficas volvemos al caso en donde la existencia de un matching estable ya no esta garantizado. Nuestro trabajo es en cierto sentido más amplio, ya que no definimos condiciones bajo las cuales se garantice la existencia de un matching estable, mas bien construimos un nuevo algoritmo el cual encontrara los matchings estables siempre y cuando estos existan. El algoritmo que se ha construido funciona bien bajo preferencias responsive así como también bajo la presencia de preferencias lexicograficas.  Para la construcci de este algoritmo lo que se ha hecho es adaptar un algoritmo de la familia de algoritmos “Branch and Bound”, los cuales comnmente son usados en problemas de maximizaci donde las variables son discretas o tenemos una mezcla de variables discretas y continuas. El algoritmo ha sido construido de tal forma que se puede garantizar que siempre encontrara los matchings estables siempre y cuando estos existan. Algo importante a mencionar es que, a diferencia del algoritmo de aceptaci diferida nuestro algoritmo encuentra no solo uno sino todos los matchings estables, esto es importante ya que no existe un criterio general para la clasificaci de los matchings es decir no podemos decidir que matching es mejor o peor, resultado que ya ha sido previamente establecido por Aldershof y Carducci (1996), por lo que resulta conveniente tener todos los matchings a nuestra disposici. El resto de la tesis esta organizada como sigue, en la secci 2 presentamos el modelo formal e introducimos nuestro concepto de estabilidad para el caso que tenemos parejas en el mercado. En la secci 3 presentamos el problema que surge con la introducci de parejas en el mercado y discutimos algunas de las características del algoritmo de AD. En la secci 4 presentamos el algoritmo de Ramificaci con Parejas (RP) así como un ejemplo de su funcionamiento. En la secci 5 probamos nuestro principal resultado que es que bajo el algoritmo RP se garantiza que los matchings estables son encontrados. Finalmente en la secci 6 presentamos nuestras conclusiones. 
+2. El modelo 
+Nuestro problema estar definido por los siguientes conjuntos: 
+• 
+H ={h1,h2,K,hL }Conjunto de hospitales. 
+
+• 
+S ={s1, s2,K, sM }Conjunto de estudiantes solteros 
+
+• 
+S ={c ,c ,K,cN }Conjunto de estudiantes con pareja.
+
+
+c 12 
+De tal forma que M + N = L Los estudiantes del conjunto Sc forman parejas, donde una pareja representativa esta dada por Pi =(cl ,ck ) donde l .k y {l, k} = 1,K, N . Estas parejas forman el conjunto 
+..
+de parejas P =.P1, P2,KPN . .Cada hospital solo tiene una plaza disponible. . 2 . 
+Preferencias de los hospitales. Cada hospital h . H tiene una relaci de preferencias estricta, transitiva y completa  f h sobre S . Sc .f . Un ejemplo de esto será:  
+f
+h 
+
+Es decir, el hospital h prefiere al estudiante s1 al estudiante c1 y prefiere 
+s
+1 
+quedarse sin estudiante asignado f ha tener al estudiante s2 . Entonces 
+c
+1 
+definimos f H como los perfiles de preferencias de los hospitales. 
+f 
+s
+2 
+Preferencias de los estudiantes solteros. De manera similar, los estudiantes s . S tienen una relaci de preferencias estricta, transitiva y completa fs sobre H .f . Un ejemplo de esto será: 
+f s 
+
+Es decir, el estudiante s prefiere al hospital h1 al hospital h2  y prefiere 
+h1 quedarse sin ser asignado f ha tener que ser asignado al hospital h3. Entonces
+h2 
+definimos f S como los perfiles de preferencias de los estudiantes solteros 
+f 
+h3 Preferencias de las parejas. Cada miembro de una pareja  c . p tiene una relaci de preferencias estricta, transitiva y completa fc sobre (H .f)2 . Un ejemplo de esto será: 
+
+Es decir, el estudiante c prefiere al hospital h1 y el estudiante c’, 
+ff
+c' c 
+ambos miembros de la pareja p, prefieren al hospital h3 y h , hh , h
+12 14 
+prefieren quedarse sin ser asignado f ha tener que ser asignado a h , hh , h 
+cualquier otro hospital. Como se ve no imponemos condiciones sobre la estructura de preferencias de las parejas.  Definimos 
+34 32 
+ff 
+entonces f P como los perfiles de preferencias de las parejas 
+
+H , S, S ,f ,f ,f 
+
+.Entonces un mercado estará definido por 
+cHSP 
+El problema de matching consiste en asignar cada estudiante a cada hospital teniendo en consideracin las preferencias de ambos lados del mercado. Formalmente definimos un matching µ como un mapeo que va de H .S . Sc a H . S . Sc .f , tal que para 
+todo hospital h . H , s .S y c . Sc : (a) ya sea µ(h) = 1 y µ(h) . S . Sc , o µ(h) =f ; 
+(b) ya sea µ(s) = 1 y µ(s) . H , o µ(s) =f ;(c) µ(c,c') 
+= 2 y µ(c,c') . (H .f)2, o µ(c,c') =f . El matching que buscamos tiene que ser estable, por lo que es necesario definir nuestro concepto de estabilidad en este mercado. Dado un  matching µ decimos que es estable si: 
+1. Es individualmente racional si: 
+a) 
+Para todo hospital h . H : µ(h) f h f , es decir, cada hospital prefiere estrictamente a su actual asignaci a quedarse sin asignacin 
+
+b) 
+Para todo estudiante s . S : µ(s) f s f , es decir, cada estudiante prefiere estrictamente a su actual asignaci a quedarse sin asignacin 
+
+c) 
+Para toda pareja p . P : µ(c,c') f c,c' f , es decir, cada pareja prefiere estrictamente su actual asignaci a quedarse sin asignaci 
+
+
+2. No hay pares bloqueadores. Definimos un par bloqueador como: 
+a) 
+Entre estudiantes solteros y hospitales: es un par (h, s) donde h . H y s .S tal que h fs µ(s) y s f h µ(h) 
+
+b) 
+Entre parejas y hospitales: es una pareja de estudiantes y un par de hospitales (h, h',c,c') donde (h, h') . H y (c,c') . Sc tal que: 
+
+
+i. h fc µ(c) y c f h µ(h) Es decir solo un miembro de la pareja bloquea, en vista de esto el otro miembro renuncia a su plaza 
+ii. (h, h') fµ(c,c') (h, h') f µ(c,c') y c fµ(h) y c f µ(h') es decir
+cc' hh' 
+ambos miembros de la pareja bloquean al mismo tiempo. 
+Definici 1. Un matching µ es estable si es individualmente racional (tanto para los hospitales como para los estudiantes solteros y con pareja) y no existen pares bloqueadores. 
+3. El problema 
+
+
+3.1 Existencia 
+La presencia de parejas en el mercado viene a complicar el problema de matching, en primer lugar al tener parejas en el mercado ya no podemos garantizar que el conjunto de matchings estables sea vaci Roth (1984) ya ha planteado este resultado: 
+Teorema 1. En un mercado donde algunos agentes son pareja, el conjunto de matchings estables puede ser vaci 
+El resultado de Roth da espacio a la bqueda de condiciones bajo las cuales se pueda garantizar que el conjunto de matchings estables sea no vaci  Klaus Klijn y Mass(2003) dan condiciones sobre la estructura de preferencias que garantizan que el conjunto de estables sea no vaci 
+Definici 2. La pareja Pi = (c,c') tiene preferencias responsive si existen unas 
+preferencias individuales fc y f c' tal que para todo hp , hq , hr . H, [hp f c hr implica 
+(hp , hq ) f P (hr , hq )] y [hp f´c' hr implica (hq , hp ) f P (hq , hr )] . Si estas preferencias 
+ii 
+f y f existen, entonces son icas. 
+cc' 
+Lo que estas preferencias implican es que cada miembro de una pareja es en principio un estudiante soltero y al unirse en pareja conservan sus preferencias, otra implicaci es que mejoras unilaterales de un miembro de la pareja mejora a la pareja. Bajo estas preferencias Klaus y Klijn (2003) encuentran que se puede garantizar la existencia de un matching estable: 
+Teorema 2. Sea 
+
+f ,f 
+
+el mercado donde las parejas tienen preferencias responsive. 
+HP 
+Entonces, cualquier matching que es estable en el mercado con solo solteros asociado a este mercado con parejas 
+
+f ,f 
+
+es también estable para 
+
+f ,f 
+
+. En particular,
+HS (P) HP 
+existe un matching estable para 
+
+f ,f
+HP 
+
+Este teorema aprovecha el hecho de que las preferencias responsive nos permiten descomponer a las parejas en individuos, lo que nos lleva a tener el mismo mercado matching con solteros que teníamos antes, y sabemos que cuando tenemos solo estudiantes solteros podemos garantizar la existencia de matching estables. Klaus Klijn y Mass(2003) dan en este trabajo un ejemplo, usando sus preferencias responsive, en el cual el nuevo algoritmo del NRMP no encuentre el matching estable que sabemos existe dado el teorema 2. El ejemplo es el siguiente: 
+
+Bajo este ejemplo, el NRMP no encuentra el matching estable existente que es µ(H ) = {z , z , z , z } Las iteraciones que se siguen con el nuevo algoritmo del NRMP 
+2 314 
+son las siguientes: el algoritmo empieza con el matching vaciµ 0(H) = {f,f,f,f} y hace ciclos sobre matchings inestables µ I (H ) = {f, s , s ,f}, µ II (H ) ={s , s ,f,f} ,
+34 12 
+III IV
+µ (H ) = {s ,f, s ,f}, µ (H ) = {s , s ,f,f} y finalmente de regreso a µ I (H ) . Con
+34 21 este ejemplo queda establecido que el NRMP no captura bien las preferencias de las parejas. Aun que esta condici sobre las preferencias garantiza la existencia de estabilidad, esta estructura de preferencias no parece capturar bien la distancia geográfica que es en el ltimo caso lo mas importante para las parejas este problema se analiza en el trabajo de Cantala (2004). Es por eso también que nosotros hemos decidido no imponer restricciones a las preferencias de las parejas 
+3.2 Algoritmo de Aceptaci Diferida (AD) vs. Algoritmo de Ramificaci Con Parejas (RP). 
+En el ejemplo anterior el matching estable puede ser encontrado con el  AD, entonces, una buena pregunta es ¿por que necesitamos un nuevo algoritmo? Algo que debemos tener presente es que el AD si bien a probado ser eficaz cuando las preferencias son responsive, sin embargo, en general no sabemos como responde ante diferentes estructuras de preferencias, y dado que es complicado distinguir a que estructura de preferencias nos enfrentamos lo mas conveniente es contar con un mecanismo que no nos limite a solo cierto tipo de estructura de preferencias, ya que la otra soluciones seria encontrar un mecanismo para identificar cuando podemos usar el algoritmo de AD pero eso parece mas difícil, además aun cuando podamos identificar cuando usarlo ¿que pasaría con los casos cuando no lo podamos usar? En este sentido contar con un algoritmo que nos permita prescindir de definir estructuras de preferencias es mejor que tener un algoritmo que solo sirva para un contado numero de estructura de preferencias. Otra ventaja del algoritmo RP es que nos permite encontrar todos los matchings estables. Algo que sabemos que usando el algoritmo AD es que si son los hospitales los que aceptan o rechazan las ofertas de los estudiantes llegaremos a un matching estable que es el menos preferido para los estudiantes y el más preferido para los hospitales, y viceversa. Es decir el resultado del AD dependerá de que lado del mercado  haga las ofertas y que lado del mercado las acepte, mientras que nuestro algoritmo nos permite encontrar todos los matching estables lo cual resulta en una mejora ya que existiran casos en que para algunos estudiantes (o para algunos hospitales) un matching resultara mejor que otro, sin embargo, para el resto de los estudiantes (u hospitales) ese mismo matching resultara ser el peor, lo que tenemos es que no hay acuerdo entre estudiantes de que matching es mejor. Resulta entonces mejor tener todos los matchings disponibles. 
+4. El Algoritmo de Ramificaci con Parejas (RP) 
+El algoritmo que aquí se presenta pertenece a la familia de algoritmos “Branch and Bound”, es decir es un algoritmo de “Acotaci y Ramificaci.” En este caso no existe una fase de acotaci por lo que solo usamos la parte de la ramificaci. Que  como veremos resulta bastante conveniente ya que nos permite encontrar todos los matchings estables siempre y cuando estos existan. 
+Consideremos el siguiente mercado con parejas: 
+
+H , S, S ,f ,f ,f
+cHSP 
+
+Para el algoritmo RP definimos el siguiente conjunto: Z ={z1, z2,K, zM +N } donde z . S . Sc . Es decir Z es un conjunto uni de los conjuntos de estudiantes solteros y 
+con pareja, es decir, es un conjunto que agrupa en un solo conjunto tanto a los estudiantes solteros como a los estudiantes con pareja: donde los primeros M estudiantes son solteros y los siguientes N son miembros de alguna pareja. 
+Definimos también el conjunto RP 
+H , S, S ,f ,f ,f 
+
+como el conjunto de
+cHSP 
+soluciones obtenidas a través del algoritmo RP en el mercado definido por 
+
+H , S, S ,f ,f ,f 
+
+. Para todos los hospitales h . H , sea ßh ={z . Z | z f h f} es
+cH SP 
+decir el conjunto de estudiantes individualmente racionales para el hospital h. Para todos los estudiantes z . Z sea ßz = {h . H | h f z f} es decir el conjunto de hospitales individualmente racionales para el estudiante z. En cada iteraci escogeremos solo estudiantes del conjunto ßh  y cada estudiante solo 
+será escogido si el hospital para el que es propuesto pertenece al conjunto ßz 
+Paso 0. 
+ Acomodamos a los estudiantes siguiendo un criterio de optimalidad reciproca: -Un estudiante soltero y un hospital cumplen con optimalidad reciproca si y solo si: Para un estudiante zi tenemos que h f h . m . l y para el hospital
+l zm
+i 
+hl tenemos que zi fh zj . j . i . 
+l 
+-Una pareja de estudiantes {zi , zj } y una pareja de hospitales {hl,hk } cumplen 
+con optimalidad reciproca si y solo si: Para zi tenemos que (hl , hk ) f z (hm , hn )
+i 
+y para zj tenemos que (h , h ) f(h , h ) . (h , h ) . (h , h ) y para el
+klznm nm lk
+i 
+hospital hl tenemos que z f z . n . j y para el hospital hk tenemos que
+i hn
+l 
+zj fh zn . n . j . 
+k 
+Los estudiantes y hospitales emparejados por este criterio son retirados de las listas de preferencias, de los estudiantes y hospitales remanentes. El proceso es iterativo por lo que una vez retirados dichos estudiantes y hospitales volvemos acomodar a lo estudiantes que cumplen con el criterio de optimalidad reciproca. El proceso se repite hasta que ya no hay estudiantes y hospitales que cumplan con el principio de optimalidad reciproca. 
+Paso Principal 
+Antes de continuar definimos el conjunto O que será el conjunto de todas las soluciones que hay que escudriar, este conjunto tiene 2 características: -Solo contiene soluciones de todos los matchings individualmente racionales (es decir solo contienen estudiantes asignados que se encuentran en ßh  y los estudiantes solo están asignados a hospitales que se encuentran en ßz ) y -Los estudiantes y hospitales timamente recíprocos ya se encuentran asignados de manera fija. 
+En cada iteraci tomaremos un conjunto de soluciones .= {z1,..., zi ,f,...,f} este conjunto nos representa que tenemos i estudiantes asignados en los primeros i hospitales y representa todas las soluciones que tienen esta asignaci en sus primeros i hospitales; dicho conjunto es retirado del conjunto O es decir tenemos ahora O :=O \ . , nuestra intenci será decidir si dentro de este  conjunto de soluciones se encuentra el matching estable que buscamos: -Si el matching no se encuentra dentro de este conjunto de soluciones estas son retiradas permanentemente de O . Es decir son descartadas todas las soluciones que tienen la estructura de . . Tomamos entonces otro grupo de soluciones .2 = {z2,..., zi ,f,...,f} -Si la soluci puede encontrarse dentro de este conjunto en la siguiente iteraci ramificamos, es decir, de . tomamos un subgrupo .' donde .'= {z1,..., zi , zi+1,...,f} . Donde zi+1 .ßhi+1 y hi+1 .ßzi+1 . Por tanto tendremos 
+tantos subgrupos como estudiantes sin asignar tengamos en . . En cada iteraci subsiguiente estos subgrupos serán verificados siguiendo el mismo proceso. Adimos estos subgrupos al conjunto de soluciones de tal forma que ahora tenemos O :=O.{.',.'',...}. 
+Continuaremos con este proceso hasta que O=f  es decir ya no haya más soluciones 
+que verificar. Para decidir si dentro de . se puede encontrar la soluci buscada nos preguntamos: En el matching final estable ¿Pueden estar los estudiantes {z1,..., zi }  asignados a los 
+hospitales {h1,...,hi } ? La respuesta a esta pregunta dependerá de en que iteracin del proceso nos encontremos: 
+Primer Iteraci: 
+En la primera iteraci escogemos el . mas general, es decir escogemos el . donde solo haya un estudiante asignado a un hospital (además de los estudiantes que ya se encuentran fijos debido al proceso de optimalidad reciproca). Tomamos .1 = {z1,f,f,...,f}, entonces para responder la pregunta en esta primera iteraci solo 
+tenemos que verificar si el estudiante z .ß y h .ß lo que resulta trivial por la 
+1 h 1 z
+11 
+forma en que hemos definido . . Dado que la respuesta a la pregunta fue afirmativa ramificamos ahora tenemos el . 2 = {z1, z2,f,...,f} Antes de continuar definimos el siguiente conjunto .i (h) = {h1,...,hi }  que será el conjunto de hospitales que en la iteraci i tienen un estudiante asignado del mismo modo definimos .i (z) = {z1,..., zi } como el conjunto de estudiantes que en la iteraci i 
+ya están asignados a alg hospital. Además definimos µ i (hj ) como el matching del 
+hospital hj en la iteraci i, y µ i (zj ) como el matching del estudiante zj en la iteraci i. 
+I-esima Iteraci: 
+Nos preguntamos: En el matching final estable ¿Pueden estar los estudiantes {z1,..., zi } asignados a los hospitales {h1,...,hi } ?. Para responder tenemos que verificar si el estudiante y el hospital en esta ramificaci pueden bloquear. Para esto seguimos el 
+siguiente proceso: 
+-Verificamos si dentro del conjunto .i-1(h) hay alg hospital con el que el estudiante asignado en esta ramificaci pueda bloquear. En este caso tenemos que preguntarnos si ¿el estudiante zi puede bloquear con alg hospital 
+h ..i-1(h)? 
+-Verificamos si dentro del conjunto .i-1(z) hay alg estudiante con el que el hospital asignado en esta ramificaci pueda bloquear. En este caso tenemos que preguntarnos si ¿el hospital hi puede bloquear con alg estudiante z ..i-1(z)? 
+Para llevar a cabo estas verificaciones definimos los siguientes conjuntos: 
+Caso 1 Bloqueos en el caso de solteros 
+ii-1
+a) .(hi ) = {z f h µ (h)| z .. (z)} Es decir el conjunto de estudiantes que ya
+i 
+han sido asignados en las iteraciones anteriores y que son estrictamente preferidos para el hospital hi al que estamos asignando un estudiante en esta iteraci. Entonces, . zx ..(hi ) n S es decir para los estudiantes solteros con los que quiere bloquear construimos el conjunto .(z) = {h f z µ(z)| h ..i (h)}. Si hi . U.(z) entonces hay un estudiante soltero z ..i-1(z) con el que el hospital hi puede bloquear. Ahora vemos que pasa cuando quiere bloquear con estudiantes miembros de una pareja, entonces . z ..(hi ) n Sc  construimos el conjunto .(z, z') = {(h, h') fz µ(z)| h ..i (h)} Si hi . U.(zx )y . h'..i (h) 
+x 
+tal que: (h, h') f (µ(z), µ(z'))y (h', h) f (µ(z'), µ(z)) entonces hay un
+zz' i-1( )
+estudiante con pareja z ..z con el que el hospital hi puede bloquear. 
+ii-1
+b) .(zi ) = {h f z µ (zi )| h .. (h)} Es decir el conjunto de hospitales que ya han
+i 
+sido asignados en las iteraciones anteriores y que son  estrictamente preferidos para el estudiante zi que es asignado en esta iteraci. Entonces . h ..(zi ) 
+construimos el conjunto .(h) = {z f h µ(h)| z ..i (z)} . Si zi .U.(h) 
+entonces hay un hospital h ..i-1(h)  con el que el estudiante zi puede bloquear 
+Caso 2 de bloqueos con parejas 
+En este caso en la iteraci I se ha acomodado a un estudiante del conjunto Sc . 
+a) De manera similar al caso de los solteros formamos el conjunto 
+ii-1
+.(hi ) = {z f h µ (h)| z .. (z)} es decir el conjunto de estudiantes que son
+i 
+más preferidos para el hospital hi que su actual asignaci. Entonces, . zx ..(hi ) n S es decir para los estudiantes solteros con los que quiere 
+bloquear construimos el conjunto .(z) = {h f z µ(z)| h ..i (h)}. Si i-1( )
+hi .U.(x, z) entonces hay un estudiante soltero z .. z con el que el 
+x 
+hospital hi puede bloquear. Ahora vemos que pasa cuando quiere bloquear con estudiantes miembros de una pareja, entonces . z ..(hi ) n Sc  construimos el conjunto .(z, z') = {(h, h') fz µ(z)| h ..i (h)} Si hi . U.(z)y . h'..i (h) 
+x 
+tal que: (h, h') f z (µ(z), µ(z'))y (h', h) f z'(µ(z'), µ(z)) entonces hay un estudiante con pareja z ..i-1(z) con el que el hospital hi puede bloquear. 
+ii-1
+b) .(zi ) = {h f z µ (zi )| h .. (h)} es decir el conjunto de hospitales que ya han
+i 
+sido asignados en las iteraciones anteriores y que son  estrictamente preferidos para el estudiante zi que es asignado en esta iteraci, zi es miembro de la 
+pareja (z , zj ) . Entonces . h ..(zi ) . h'..i-1(h) tal que
+i 
+(h, h') f z (µ(z), µ(z'))y (h', h) f z'(µ(z'), µ(z)) además zj fh' µ(h')  también 
+construimos el conjunto .(h) = {z f h µ(h)| z ..i (z)}. Si zi .U.(h) i-1( )
+entonces hay un hospital h ..h  con el que el estudiante zi puede bloquear 
+Si alguna de las dos condiciones a) y/o b) (ya sea para el caos 1 o el caso 2)  anteriores se cumple retiramos todas las soluciones que tengan la estructura .i = {z1,..., zi ,f,...,f} 
+es decir ahora tenemos O :=O \ .i . Habiendo hecho esto tendremos que volver a la primera iteraci con el conjunto . más general es decir .1 = {z1,f,f,...,f}. 
+i+1
+Si ninguna de las condiciones  se cumple, ramificamos a  .= {z ,K, zi , z 1,f,K,f}.
+1 i+ 
+Cuando ya no queden estudiantes que asignar o todos los hospitales ya tengan algn estudiante asignado podemos decir que hemos encontrado un matching estable, sin embargo si O.f esto quiere decir que aun existen aun soluciones por verificar y por 
+tanto es posible que mas matchings estables. Por lo el proceso habrá de repetirse hasta 
+que O=f . Una vez que hemos definido el proceso del algoritmo podemos dar nuestro resultado principal. Primero definamos el conjunto E(H , S, S , f ,f ,f ) como el conjunto de 
+cHSS
+c 
+matchings estables en le mercado definido por 
+
+H , S, Sc ,f H ,f S ,f P 
+
+. 
+Teorema 3. 
+. 
+
+H , S, Sc ,f H ,f S ,f P 
+
+E(H, S, Sc , fH ,f S ,f Sc ) = RP 
+H , S, Sc ,f ,f S ,f
+HP 
+
+En palabras sencillas lo que este teorema implica es que con el algoritmo RP siempre encuentra el matching (o los matchings estables) siempre y cuando este exista, es decir, cuando el conjunto de soluciones estables sea no vaci 
+Ejemplos: 
+Consideremos el siguiente mercado de matching: H ={h ,h ,h ,h4 }
+123 
+S={s , s , s , s4 }
+c 123 
+P ={P1, P2 } con P1 ={s1, s2} y P2 = {s3, s4} 
+Formamos el conjunto Z = {z , z , z , z }
+1234 El ejemplo que resolvemos es el que ya habíamos presentado en la secci 3 y que como vimos hace fallar al NRMP. A continuaci se muestra las listas de preferencias de los hospitales y de las parejas: 
+
+Siguiendo nuestro algoritmo tenemos: Paso 0. Ninguna pareja ni ning hospital cumplen con optimalidad reciproca 
+Iteraci 11. 
+Escogemos .1 = {z1, z2,f,f} como la pareja es aceptable para la pareja de hospitales {h ,h }. Ramificamos a . 2 = {z , z , z , z }
+12 1234 
+Iteraci 2 
+-Formamos el conjunto: .(3,4, z, z) = {(h ,h ),(h ,h ),(h ,h ),(h ,h ),(h ,h ),(h ,h )}
+121413 2124 23 
+-Formamos el conjunto: .(3,4,h, h) = {(z2, z1)} 
+a) Para las parejas de hospitales que forman parte del conjunto .(3,4, z, z) 
+encontramos el conjunto de estudiantes estrictamente mas preferidos. .(1,2,h,h) = {f} .(1,4,h,h) = {(z , z ),(z , z ),(z , z )}
+3412 21 
+.(1,3,h,h) = {(z , z ),(z , z ),(z , z )}
+3412 21 
+.(2,1,h,h) = {f} .(2,4,h,h) = {(z2, z1)} .(2,3,h,h) = {f} Entonces (z3, z4) .U.(x, y,h,h) 
+x, y 
+b) Haciendo lo mismo para el conjunto de estudiantes que forma parte del conjunto .(3,4,h, h) = {(z2, z1)} .(2,1, z, z) = {f} 
+Dado que la condici a) se cumple podemos decir que hay un par bloqueador y por tanto podemos descartar todas las soluciones con la forma .2 = {z , z , z , z }
+1234 
+Iteraci 3. 
+Escogemos .3 = {z1,f, z2,f} como la pareja es aceptable para la pareja de hospitales {h ,h }. Ramificamos a .4 = {z , z , z , z }.
+24 2324 
+1 Los conjuntos . han sido escogido ad hoc, lo que no hace diferencia ya que el algoritmo es exhaustivo y no se detiene hasta haber revisado todas las soluciones. Simplemente se escoge este orden por cuestiones de hacer un poco más breve el ejemplo. El resultado del algoritmo será el mismo independientemente de los . que se nos ocurra utilizar. 
+Iteraci 4 
+-Formamos el conjunto: 
+.(3,4, z, z) = {(h2,h3)} -Formamos el conjunto: .(2,4,h,h) = {(z2, z1)} 
+a) Para las parejas de hospitales que forman parte del conjunto .(3,4, z, z) 
+encontramos el conjunto de estudiantes estrictamente mas preferidos. .(2,3, h, h) = {z2, z1} 
+U
+.
+(
+x, y,h,h
+)
+Entonces 
+(, ) .
+z 
+z
+3 
+4 
+x, y 
+b) Haciendo lo mismo para el conjunto de estudiantes que forma parte del conjunto 
+.(2,4,h,h) = {(z2, z1)} .(2,1, z, z) = {f} 
+U yx
+, 
+.
+Entonces (h1, h3) . (x, y, z, z) 
+Dado que las condiciones no se cumplen el matching final es: .4 = {z , z , z , z }
+2 314 A destacar que este es el ejemplo planteado por Klaus Klijn y Massen su paper del 2003 en el cual el actual algoritmo del NRMP no encontraba el matching estable. 
+5. Prueba Del Teorema 3 
+Consideremos el siguiente mercado: 
+= 
+{h 
+,
+hL }
+H 
+,
+h2 
+,
+K
+1
+= 
+{s 
+sM }
+S
+K
+,
+s
+, 
+,
+12 
+= 
+{c 
+,
+c
+N }
+S 
+,
+K
+c
+,
+12
+c 
+De tal forma que M + N = L .. 
+(ck )
+P
+P1, P2 
+PN 
+Conjunto de parejas. Donde Pn
+,
+K
+= 
+. 
+. 
+c
+= 
+,
+l 
+. 2 . 
+Dado este mercado el problema de matching podemos garantizar que el algoritmo que se ha construido esta disedo de forma tal que siempre encuentra el matching estable si es que este existe. La prueba se realiza en 2 etapas: primero verificamos que nuestro criterio de optimalidad reciproca sea estable y segundo verificamos que todo la demás parte del algoritmo genere resultados estables 
+Optimalidad Reciproca y Estabilidad 
+Lo primero ha hacer notar es que el paso cero, en donde asignamos de manera fija hospitales y estudiantes siguiendo nuestro criterio de optimalidad reciproca, provoca que estos estudiantes al final del algoritmo quieran bloquear o que durante alguna iteraci del algoritmo RP alg estudiante u hospital pueda bloquear con estos estudiantes y hospitales que aquí se han asignado. Estos bloqueos nunca ocurriran, la prueba de que esto no sucede se sigue directamente de nuestra definici de pares bloqueadores y de la definici de nuestro criterio de optimalidad reciproca. Supongamos que un estudiante asignado por medio de este criterio una vez obtenida nuestra soluci (o soluciones) final quiere bloquear con alg hospital, esto no puede pasar ya que al ser asignado por nuestro criterio de optimalidad reciproca el estudiante se encuentra asignado a su mejor opci disponible, y dado que solo bloqueara con hospitales que sean mejor a su actual asignaci esto nunca pasara. Lo mismo pasa para hospitales una vez asignados con nuestro criterio de optimalidad reciproca no podrán bloquear. 
+Ramificaciones y Estabilidad 
+Seg hemos definido para nuestro algoritmo O será el conjunto de todas las soluciones que hay que escudrir. Lo primero que podemos decir que O será un conjunto finito, esto claro por que el hecho de que el conjunto de estudiantes así como el conjunto de hospitales es finito y por tanto el conjunto de mathings posibles será finito. De lo anterior se desprende que nuestro algoritmo siempre termina. Esto es claro ya que lo que hacemos en cada iteraci del algoritmo es escoger un conjunto de soluciones con cierta estructura, .= {z1,..., zi ,f,...,f}, que pueden ser o no ser retiradas 
+de O , dado que este es un conjunto finito después de cierto numero de iteraciones habremos descartado todas las soluciones que no forman parte del resultado de forma tal que O=f . 
+En principio podrían presentar diferentes errores, se argumenta que estos errores no se pueden cometer siguiendo nuestro algoritmo. 
+Error 1. Una soluci no fue escudrida. 
+Dado que el algoritmo no se detiene hasta que O=f es imposible que queden soluciones sin escudrir. 
+Error 2. Una soluci que no debía ser descartada fue descartada. 
+Supongamos que tenemos la soluci .i = {z1,..., zi ,f,...,f}, si esta por ser descartada tiene que ser el caso que alguna de las 2 condiciones se este cumpliendo (o ambas): 
+ii-1
+1. Dado el conjunto .(zi ) = {h f z µ (z)| h .. (h)} . Entonces 
+i 
+.hx ..(i, z)  construimos .(x,h) = {z f hx µ x (h)/ z ..i (x)}. Y sabemos que zi .U.(x,h). 
+x ii-1
+2. Dado el conjunto .(hi ) = {z fhi µ (h)| z .. (z)} . Entonces .zx ..(i,h)  construimos .(x,h) = {z f hx µ x (h)/ z ..i (x)}. Y sabemos que zi .U.(x,h). 
+x 
+Si la soluci no debía de ser descardada aun cuando estas condiciones se estén cumpliendo significa que las soluciones finales tendrán un par bloqueador, por lo cual no podría ser una soluci de nuestro problema, por tanto si la soluci es descartada es por que debide ser descarta. Nunca se descartan soluciones que no deban serlo.  
+Error 3. Se acepta una soluci que no debide haber sido aceptada. 
+Supongamos que tenemos la soluci .i = {z1,..., zi ,f,...,f} , y esta por ser aceptada tiene que ser el caso que alguna ninguna de las 2 condiciones se este cumpliendo: 
+ii-1
+1. Dado el conjunto .(i, z) = {h f zi µ (z)/ h .. (h)} . Entonces .hx ..(i, z)  construimos .(x,h) = {z f hx µ x (h)/ z ..i (x)}. Y sabemos que zi .U.(x,h). 
+x ii-1
+2. Dado el conjunto .(i, h) = {z f hi µ (h)/ z .. (z)} . Entonces .zx ..(i,h)  construimos .(x,h) = {z f hx µ x (h)/ z ..i (x)}. Y sabemos que zi .U.(x,h). 
+x 
+Si la solucin esta siendo aceptada es por que no hay pares bloqueadores, y por tanto el soluci final será estable. El algoritmo nunca acepta soluciones que tengan pares bloqueadores por tanto si las soluciones son aceptadas es por que deben de ser aceptadas. 
+6. Conclusi 
+En este trabajo hemos elaborado un algoritmo que considera de manera adecuada las preferencias de las parejas para resolver el problema de matching. Nuestro algoritmo de “Acotaci y Ramificaci” nos permite encontrar todos los matchings estables cuando estos existan, lo cual es una mejora al algoritmo de aceptaci diferida que solo nos permitía encontrar un matching estable. Este resultado es importante ya que no existe un  criterio sobre que matchings deben ser más preferidos, es decir, no hay una convenci sobre el ranking de los matchings.  Otra característica importante del algoritmo es que no fue necesario imponer condiciones sobre las preferencias de las parejas, caso contrario al trabajo realizado por Klaus Klijn y Mass(2003) en donde se hace uso de las preferencias responsive para encontrar los matchings estables y a partir de ellas se demuestra que el nuevo algoritmo del NRMP falla al tratar de obtener matchings estables en presencia de parejas. En este sentido nuestro trabajo es un buen complemento del trabajo de Klaus Klijn y Massya que mientras ellos encuentran la falla en el algoritmo del NRMP nosotros hemos encontrado un nuevo algoritmo que parece corregir este desperfecto.  Una de las propiedades más importantes del algoritmo RP es que nos da todos los matchings estables que el problema pudiera tener, para ver como funciona esto, y más que nada para ver por que es esto importante, consideremos el siguiente ejemplo: 
+H = {h , h , h , h }
+1234 
+S= {c ,c ,c ,c } donde P ={s , s } y P = {s , s }
+c 1234 112 2 34 
+Las preferencias tanto de las parejas como los hospitales son: 
+h1  h2  h3  h4  (c c )1 2  (c c )3 4  
+c1  c3  c1  c3  h h1 2  h h2 1  
+c4  c2  c4  c2  h h3 4  h h4 3  
+f  f  f  f  f  f  
+
+Usamos nuestro algoritmo RP: 
+Paso 0 
+No hay optimalidad reciproca 
+Iteraci 1. 
+Escogemos .1 = {c1,c2,f,f} como la pareja es aceptable para la pareja de hospitales {h ,h }. Ramificamos a . 2 = {z , z , z , z }
+12 1234 
+Iteraci 2 
+-Formamos el conjunto: .(3,4,c,c) = {(h1, h2 )} -Formamos el conjunto: .(3,4, h, h) = {(f)} 
+c) Para la pareja de hospitales que forman parte del conjunto .(3,4,c,c) encontramos el conjunto de estudiantes estrictamente mas preferidos. 
+.(1,2,h,h) = {f} Entonces (c3,c4) . U.(x, y, h, h) 
+x, y 
+d) No hay conjunto que formar para los estudiantes mas preferidos  Dado que ni la condici a) ni b) se cumplen podemos decir que no hay un par bloqueador y por tanto podemos decir que  . 2 = {c1,c2,c3,c4} es un matching estable. 
+Sin embargo quedan soluciones por verificar. 
+Iteraci 3 
+Escogemos .3 = {c3,c4,f,f} como la pareja es aceptable para la pareja de 
+hospitales {h ,h }. Ramificamos a . 4 = {c ,c ,c ,c }
+12 3412 
+Iteraci 4 
+-Formamos el conjunto: .(1,2,c,c) = {(h1, h2 )} -Formamos el conjunto: .(3,4, h, h) = {(f)} 
+a) Para la pareja de hospitales que forman parte del conjunto .(1,2, c, c) encontramos el conjunto de estudiantes estrictamente mas preferidos. 
+.(1,2,h,h) = {f} Entonces (c1, c2) . U.(x, y, h, h) 
+x, y 
+b) No hay conjunto que formar para los estudiantes mas preferidos  Dado que ni la condici a) ni b) se cumplen podemos decir que no hay un par bloqueador y por tanto podemos decir que  . 2 = {c ,c ,c ,c } es un matching estable. 
+3412 
+Aun quedan soluciones por verificar, sin embargo se puede verificar que estos son los icos matchings estables, por lo que detendremos el algoritmo aquí. 
+Algo que podemos notar es que la pareja P = {c ,c } prefieren el matching 
+1 12 
+µ(H ) =. 2 = {c ,c ,c ,c } al matching µ'(H ) =. 4 = {c ,c ,c ,c } y para la pareja
+1234 3412 
+P2 = {c3,c4} es el matching µ'(H ) el más preferido. Este ejemplo nos muestra que 
+cuando tenemos mas de un matching estable no tenemos un criterio claro para decidir cual matching es mejor. Si tuviéramos un algoritmo que solo nos de uno de los matchings estables no sabríamos si este es mejor o el peor matching que podemos obtener, pero con nuestro algoritmo tenemos la oportunidad de ver todos los matchings estables y decidir que es lo que mas nos conviene. 
+Referencias. 
+Aldershof B., Carducci O. M.(1996) “Stable matchings with couples”, Discrete Applied Mathematics, 68, 203-207. 
+Cantala D. (2004) “Matching markets: The particular case of couples”, Economic Bulletin, Vol. 3, No 45 pp. 1-11 
+Klaus B., Klijn F. (2003) “Stable matching and preference of couples”, Mimeo Universitat Automa de Barcelona 
+Klaus B., Klijn F. y MassJ. (2003) “Some things couples always wanted to know about stable matchings (but were afraid to ask)”, Mimeo Universitat Automa de Barcelona 
+Roth A.E. (1984). “The evolution of the labor market for medical interns and residents: a case study in game theory”, Journal of political Economy 92. 991-1016 
+
+
+
+

@@ -1,0 +1,501 @@
+MAESTRÍA EN ECONOMÍA 
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMIA 
+No LINEALIDAD EN LA BOLSA MEXICANA DE VALORES: UN ANÁLISIS MEDIANTE FRACTALES Y LA PRUEBA BDS 
+EDUARDO EMILIO THEUREL FtLIX 
+PROMOCIÓN 2000-2002 
+ASESOR: 
+ENEAS CALDIÑO GARdA 
+ABRIL DE 2003 
+A mi bebl, a Miriam, a mis padres. 
+Agradecimientos 
+a A Miriam, por estar siempre involucrada en mis proyectos, por tolerar pacientemente las ausencias y desatenciones que de ellos se derivan y por todo su amor. 
+a A mis padres, por TODO lo que les debo. A mis hermanos, por razones muy parecidas. 
+a A los seres Roberto y Rosaura Durán, por su gran apoyo incondicional. 
+a A mi tío Nicolás Félix, por su ayuda y sus consejos. 
+a A El Colegio de México, por esta oportunidad. 
+a A todos mis profesores. que a lo largo de esta Maestría tantas ensenzas dejaron en mí. En especial a Eneas Caldi G., no so por haber aceptado amablemente asesorar esta tesis, sino porque de sus lecciones nacien mí este gran interés por el tema de la misma. 
+a A todos mis comparos, por su insustituible amistad y por todo lo que les aprendí. Particularmente, a mi coterráneo y amigo Lázaro Ávila, por haber encarado juntos muchas de las batallas que ofrecila Maestría. 
+Resumen 
+En este trabajo se estudia el comportamiento histico del Índice de Precios y Cotizaciones de la Bolsa Mexicana de Valores de más de veintitrés as, a través de la tica de la geometría fractal y el estadístico de Brock-Dechert-Shein/cman (BDS), para probar la independencia de su serie de rendimientos, lo cual lleva su rechazo. Además, aquí se presentan argumentos que sostienen la idea de que la dependencia de largo plazo puede estar compuesta por dependencias en el corto plazo. En general, se concluye que el paradigma lineal no es del todo satisfactorio en el presente feneno. Los agentes acumulan informaci. lo cual contradice al supuesto de la martingala, elemento crucial de la Teoría de los Mercados Eficientes. Finalmente, en el presente estudio se logra precisar, mediante las referidas técnicas, el éxito de los modelos de la familia GARCH en períodos anuales, en la tarea de limpiar a las series de los elementos determinísticos que obstaculizan la independencia. 
+, 
+Indice 
+1. Introducci 1 
+2. Los Datos 3 Rendimientos 7 Pruebas de normalidad 8 
+3. Dimensi Fractal 12 
+3.1 Exponente de Hurst 13 
+3.2 Semivariograma 21 
+4. Estadístico BDS 25 
+5. Aplicaci de modelos GARCH y sus derivados 31 
+6. Conclusiones 37 
+7. Referencias 39 
+
+
+
+l. Introducci 
+En el terreno de las finanzas, el uso de técnicas econométricas basadas en la line~idad ha sido, por lo menos hasta hace poco, un lugar com tanto en el medio académico como en el práctico. Sus principales algoritmos, fmulas y elaborados planteamientos descansan sobre tal supuesto. Quizá sea la usual práctica de obtener las auto correlaciones de las series cotidianas de datos la responsable de sustentar el alegre paradigma lineal. Sin embargo. la linealidad ha sido ya puesta en entredicho en muchas áreas del pensamiento y, por supuesto, también en el relativo a las finanzas. De entrada, parece ser que una de las principales explicaciones para la habitual presencia de rachas en la bolsa de valores es el almacenamiento de la informaci, lo cual, como ya analizaremos, no concuerda con el principio de linealidad. 
+De esta forma, se han explorado caminos alternativos en busca de mejores dises, como lo han sido la no linealidad estocástica y la determinista pero altamente compleja, mejor conocida como Teoría del Caos. Esta tima ,·ertiente llama sobremanera· la atenci porque encama fluctuaciones endenas al sistema y no exenas, como típicamente se suele manejar. Al propio tiempo, se han incorporado en la teoría financiera y econica confecciones propias de la Física y sus ramificaciones. particularmente la Geoestadística, para enfrentarse a las dificultades que conlleva la ausencia de linealidad. 
+Básicamente, la eficiencia de los mercados financieros, piedra angular de las construcciones teicas más relevantes en finanzas. supone que los agentes no almacenan informaci. Esto es, que toda la informaci de que disponen en un período t, es usada para tratar de vaticinar alguna variable de su interés en el período t+ 1. Así, un corolario de ~~to es que para hacer lo propio para t+ 2, t quedará en el olvido y so será usada la informaci generada en t+ 1 y no prevista en t. Este hecho es conocido en el argot financiero como la propiedad de la martingala. Como ya veremos. existe un vínculo muy íntimo entre este concepto y el de linealidad. 
+El objetivo de este trabajo consiste en utilizar la'i referidas confecciones de la Física para determinar en qué medida se viola el gran supuesto de linealidad e independencia en la Bolsa Mexicana de V alores. Así mismo, sin que éste sea el principal propito del estudio, se proponen algunos modelos de uso reciente para las series financieras con el objeto de indagar si logran éstos corregir el citado problema. 
+No resulta sorprendente que los estudios má'i refinados al respecto sean para países de avanzada en las áreas econica y educativa. Así, podemos encontrar investigaciones principalmente para la economía estadounidense, como la de Hsieh ( 1991 ), la de Willey ( 1992) o el libro de Peters ( 1991 ), que resultser en su tiempo un excelente compendio de ideas relativas al caos en finanzas. Son también dignos de menci los trabajos que Opong, et al (1999) y Vessereau (2000) hacen en la misma tica para el Reino Unido y Francia, respectivamente. 
+Para México, no obstante, es escaso el trabajo realizado en esta cuesti. A pesar de ello. es necesario reconocer el trabajo de Feliz y Mayer ( 1992), en el cual se analizan bajo una perspectiva afín varias bolsas de valores, entre ellas la mexicana. Empero, además de que dicho trabajo considera un período más corto que el aquí analizado, al momento de su publicaci se carecía de importantes desarrollos tanto teicos como computacionales que en parte explican la diferencia con el presente estudio. 
+La organizaci del trabajo es la siguiente. En la Secci 2 se explica lo referente a la fuente de datos utilizada en el resto de las secciones. Se comenta la obtenci de la serie con la cual se habrá de trabajar, sus características, sus inconvenientes y la forma de intentar sortearlos. Posteriormente, la Secci 3 se ocupa de explorar la dimensi fractal de la serie, primero a través del método de Hurst (3.1) y luego a través del semivariograma (3.2). El cálculo de la dimensi fractal de la serie nos dirá qué tan "mordisqueada" o estocástica es la misma. La Secci 4 usa la prueba BDS, la que a su vez emplea integrales de correlaci, para determinar la independencia o dependencia de la serie. En la secci 5 se proponen algunos modelos de la familia GARCH para averiguar si éstos son capaces, y en qué grado, de corregir el problema de no linealidad y dependencia que la serie original de rendimientos posee. Finalmente. la Secci 6 manifiesta algunas de las principales conclusiones arrojadas por el presente estudio. 
+2. Los Datos 
+Para el presente estudio será utilizada la serie histica del índice de Precios y Cotizaciones (IPC) de la Bolsa Mexicana de Valores (BMV). Dicha serie diaria abarca un período de más de veintitrés as. Específicamente, va del 20 de febrero de 1979 al 15 de noviembre de 2002. Los precios considerados son los del cierre de la jornada bursátil. Descontando días feriados, fines de semana, y cierres forzados de la BMV, la serie que aquí habrá de ser utilizada contiene un total de 5909 observaciones 1• Los datos fueron obtenidos directamente en la BMV, ya sea a través de sus recursos electrico~ o bien de sus anuarios bursátiles impresos. 
+El hecho de manejar una serie tan grande y tan detallada se debe a que los métodos matemáticos aquí empleados, como es el cálculo de la dimensi fractal, así lo precisan. Por otro lado, se podría considerar de igual forma a las series de precios de algunos instrumentos o acciones. Empero, el hecho de que las empresas a través del tiempo hayan estado sometidas a cambios, fusiones, divisiones, etc., pone en entredicho que tales series se refieran al mismo feneno, de ahí que se opte por tomar en cuenta so al mejor representante de ellas, i. e., al IPC. 
+El IPC, seg la definici dada por la misma BMV, es un "indicador de la evoluci del mercado accionario en su conjunto. Se calcula en funci de las variaciones de precios de una selecci de acciones, llamada muestra, balanceada, ponderada y representativa de todas las acciones cotizadas en la BMV"2• Esto nos permite evadir de alguna forma el riesgo implícito al considerar emisoras aisladamente. Si bien la muestra de acciones es dinámica en el tiempo, no deja de ser representativa del conjunto de acciones y emisoras constituyentes de la BMV. En las Gráficas l y 2 se muestra el comportamiento del IPC en el lapso considerado. 
+1 Entre las fechas más relevantes de suspensi obligada de actividades, están los primeros días de septiembre de 1982. por motivo de la inestabilidad creada por la nacionalizaci bancaria que se viventonces en México. así como el 24 de marzo de 1994, día siguiente al asesinato del candidato del' PRI a las elecciones presidenciales de 1994. Finalmente. no puede obviarse la interrupci debida a los atentados del 11 de septiembre de 2001 en Nueva York. 1 Definici extraída de la página de la BMV: www.bmv.com.mx 
+3 
+GnRca l. lPC aomlaal 
+GnRca 2. IPC aomlaal ea logaritmos 
+En la escasa literatura que existe respecto al tema de este trabajo, hay una inexactitud que aquí se tratará de sortear: el trabajar con rendimientos derivados de series nominales puede llevarnos a conclusiones erreas, por no incorporar el crecimiento de los precios en la economía. Para el caso de México, es sabido que el trienio 1986-1988 es caracterizado por un crecimiento muy alto de éstos. De soslayar este hecho, aun si centráramos nuestra atenci no en la serie de precios sino en la de rendimientos, estaríamos erreamente considerando un período de formidable éxito. Esta es la ilusi que causa el obtener los rendimientos sin descontar la inflaci. Después de todo, en lo que estamos interesados es en el crecimiento de los precios por los prospectos de las acciones que representan, no porque éste provenga de un proceso inflacionario generalizado. 
+Si, como sucede en otras economías, la inflaci fuera más o menos constante en el tiempo, se reduciría la necesidad de deflactar. En el caso extremo en el que el INPC sea lineal respecto al tiempo y suponiendo que los movimientos de éste sean un buen indicador de la inflaci contenida en los del IPC, sería ocioso deflactar las series, ya que los cambios porcentuales del IPC nominal serían directamente comparables, como sucede para los del IPC real. Sin embargo, como en México la persistente variabilidad de la inflaci ha sido muy importante, no podemos obviar el hecho. 
+Una vez que hemos decidido deflactar, nos encontramos con que la inexistencia de alg indicador del movimiento de los precios de la economía en frecuencia diaria representa un obstáculo. En los timos as del período aquí considerado se cuenta con las Unidades de Inversi (UDI's), instrumento financiero que de cierta forma confiesa la dinámica inflacionaria. Desafortunadamente, para los as anteriores so se dispone de indicadores mensuales y en algunos casos quincenales. 
+Así pues, para construir una serie de índices que nos permitan deflactar, fue necesario establecer el supuesto de que, a lo largo de un mes, el crecimiento de los precios se prorratea por igual en los días que lo componen. Este supuesto obligado, si bien por un lado puede llegar a opacar algunos movimientos en los precios reales al interior del mes, en lo general parece ser salvable. Además, a~í estaremos contribuyendo de alguna manera a desestacionalizar la serie, i. e. a incorporar la distinta calidad que tienen los lunes y los días siguientes a los feriados, por ejemplo. De esta forma se construyla serie índice a partir de los datos de inflaci mensual proporcionados por el Banco de México. El periodo base de dicha serie es agosto del 2000 igual a 1 OO. La serie se exhibe en la Gráfica 3. 
+Gnflca 3. Serle (adlce. 
+Para intentar ponderar más los cambios en los precios reales de las acciones que los cambios nominales, se utilizel fndice Nacional de Precios al Consumidor (INPC) en su versi subyacente para todos los as, con excepci de los primeros, donde ésta no existía a y fue utilizado el INPC com. La inflaci subyacente es la que resulta de excluir del INPC bienes con precios volátiles, por lo que resulta ser una tendencia de mediano plazo, libre de vicisitudes propias del corto plazo. Esto nos permitirá minimizar el ruido creado irremediablemente al deflactar el IPC. Una vez hechas las anteriores aclaraciones, la Gráfica 4 presenta el IPC real o deflactado. 
+6 
+ráfic -'· IP r al 
+Rendimientos 
+En la práctica cotidiana el rendimiento del IPC (y de cualquier activo o bolsa en el mundo) se visualiza como la variaci porcentual de un período a otro. En este trabajo, sin embargo, usaremos rendimientos logarítmicos, definidos así: 
+r, 
+= In(:,_,)l 
+en donde: 
+r, = rendimiento logarítmico en el período t. 
+P, = IPC en el período t. 
+La ventaja de usar rendimientos logarítmicos en lugar de cambios porcentuales es que la suma de los primeros es igual al rendimiento acumulado, lo que no sucede con los segundos (Peters, 1991, p. 81 ). La Gráfica 5 da cuenta de los rendimientos logarítmicos de la serie del IPC real. 
+ráfi a . R ndimi nto I arítmico d la ri deflactada del IP . 
+V ale comentar que los puntos álgidos de la serie de rendimientos son, por un lado, a la baja, el tremendo desplome del 19 de octubre de 1987, el famoso "lunes negro". A la alza, por otro lado, se da el 22 de septiembre de 1982, aunque aparentemente de manera artificial, ya que corrían entonces justamente los días en que se presenta la nacionalizaci de la banca mexicana y tal ascenso quizá no sería explicable sin la ingerencia del gobierno en tumo. 
+Pruebas de normalidad 
+Al analizar la serie de rendimientos, nos percatamos de que efectivamente se presenta uno de los problemas más típicos de las series financieras: la ausencia de nonnalidad. En específico, la presencia de una alta curtosis (mayor que 3 en una normal) revela la existencia de colas gordas. Esto es, hay una probabilidad mayor a la que da la distribuci normal de que se presenten variaciones extremas. Por otro lado, encontramos que hay un 
+8 
+sesgo positivo. En una distribuci simétrica, como la normal, el sesgo es cero. En nuestro caso, tendremos que la cola derecha es más gorda que la izquierda o lo que es su implicaci, que la probabilidad de obtener rendimientos positivos es mayor que la de obtenerlos negativos. 
+3000 Serias: ranclmiad0B nominales
+-
+2500 
+Observaciones 5908 
+-
+2000 Media 0.144489 Mediana 0.111459 Mé>Clmo 27.43843
+1500 Mínimo ·20.24210 d.e. 2.057494 
+1000 Sesgo 0.255833 Curtosis 22.81259 
+500­
+n_ 
+Jarque-Bera 96694.41 
+Prob. 0.000000 
+o s 
+. .
+1
+l ' l 
+' 
+-20 -10 o 10 20 
+3000 2500 --­2000 ­1500 ­1000. 
+500 
+l_
+s
+o 1 
+1 ' . 
+-20 -10 o 10 20 
+Series: RENDIMIENTO 
+Observaciones 5908 
+Media 0.024359 Mediana 0.008435 Máximo 27.25865 Minino ·21.14857 d. e. 2.065244 sesgo 0.109434 Curtosis 22.99473 
+Ja,que-Bera 98426.58 Probabllldad 0.000000 
+-
+
+· Ilustraci 1. Descripci de los datos y prueba de normalidad 
+En la Ilustraci 1 hemos retomado, por ica vez, la serie de rendimientos calculada sobre el IPC nominal para corroborar lo que ya antes habíamos advertido: el no deflactar nos lleva a considerar erreamente una media (y una mediana) y un sesgo mayores que al hacerlo. Por otro lado, la prueba de Jarque-Bera, habitual en la jerga econométrica, rechaza la normalidad de la serie. 
+9 
+Otra vía para verificar si existe normalidad es mediante pruebas empíricas. La Tabla l muestra los resultados de diferentes pruebas. En todas, el valor de probabilidad ínfimo nos indica el rechazo de la hipesis nula de normalidad. 3 
+
+Método Valor ¡-bilidadajustado 
+--LiiÜefors (Ó)---·-: 0.083539 · --NA--, 0.0000---­
+Cramer-von Mises ~-OOOO
+17.48252 ; 17.48400 
+(W2) 
+Watson (U2) ~ 17.4n31 ! 17.47879 1 0.0000 . --·· ·······-. ·· ----------,--------,
+Anderson-Darling · · 1oa.n31 . : 103.7863 1 0.0000 ¡
+(A2) : ! ¡ 
+: i 
+Tabla l. Prueba de dlstribud6n empfrlca 
+En esta secci hemos demostrado que no existe normalidad' en los rendimientos logarítmicos de la serie del IPC. Este no es un asunto menor. Buena parte de los métodos estadísticos y econométricos de uso frecuente suponen que los errores de una serie son independientes e idénticamente distribuidos (iid). En el trabajo de Peters ( 1991, cap. 3), se pueden encontrar explicaciones muy intuitivas de lo que representa para los mercados financieros (y la literatura detrás de ellos) esta anomalía. Esencialmente, la idea tiene que ver con el rompimiento del paradigma lineal. 
+·' La explicaci y el análisis de las pruebas empicadas escapa a los propitos de este trabajo. Sin embargo, quien manifieste particular interés en ellas puede acudir a la ayuda del programa E-Views 4.0 o bien directamente a las fuentes ahí seladas. 
+Una buena porci de literatura financiera pionera bassus aseveraciones en un principio fundamental: la eficiencia de los mercados o, lo que es equivalente, la propiedad de la martingala. Esta tima dice, grosso modo, que para tratar de pronosticar el valor de alguna serie en el período t+ 1, so se requiere la informaci al período t, ya que en éste se ha incorporado ya toda la informaci previa. En otras palabras, los inversionistas deberían reaccionar a la informaci conforme ésta es recibida. En la misma tesitura, no es nada heroico el supuesto de que los hechos de los que la informaci se nutre, al ser estocásticos, se distribuyan aproximadamente como una normal. 
+De todo lo anterior concluimos que la inexistencia de normalidad tiene en su seno ( al menos) una de dos explicaciones: que los inversionistas no usen de forma lineal la informaci, o bien, que sí la usen de forma lineal, pero que ésta no les llegue de forma lineal. En cualquier caso, no obstante, se violan los supuestos fundamentales utilizados para construir la Hipesis de los Mercados Eficientes (EMH por sus siglas en inglés) y como consecuencia algunos modelos desarrollados sobre esta base, como el célebre Capital Asset Pricing Model (CAPM). 
+11 
+
+
+
+
+
+
+3. Dimensi Fractal 
+En las primas secciones estudiaremos el comportamiento de la serie· de rendimientos del IPC, visto a través de una tica de uso no muy extendido en e~onomía y finanzas pero sí en las ciencias exactas, como la Física y sus derivadas. Como una alternativa a la clásica geometría creada por Euclides, Benoit Mandelbrot, notable matemático polaco, desarrolluna versi de la geometría más rica y comprehensiva (Mandelbrot, 1982). Mientras que la primera trata so con formas y cuerpos fáciles y puros e.g. líneas, cuadrados, circunferencias, conos, esferas, etc., la segunda estudia formas más complicadas cuya dimensi no podría ser explicada por los desarrollos de Euclides, dada su descomunal imperfecci. 
+Expliquemos concisamente la esencia de la geometría fractal. En la geometría euclidiana, por ejemplo, un punto tiene dimensi cero. una línea uno y un plano dos. Sin embargo, una línea quebrada -pensemos en la~ que caracterizan a los rendimientos-tiene más que una dimensi uno pero menos que dos. De ser totalmente estocástica y de prolongarse al infinito, pensaremos que esta figura podrá llenar todos los puntos del plano y llegar así a una dimensi 2. Así, la referida línea quebrada, se dice, tendrá una dimensi fraccionaria o fractal (Vanouplines). Esta dimensi también se conoce como de Hausdorff. Mandelbrot ( 1982) pone sobre la mesa la siguiente definici: 
+Un fractal es por definici un conjunto para el cual la dimensi de Hausdorff excede la dimensi topolica. 
+Otra definici pertinente para un fractal es la siguiente (Feder, 1988): 
+Un fractal es un objeto en el cual las partes C!'-tán en ciena forma rdacionadas al todo. 
+Ciertamente, una peculiaridad de los fractales es que gozan de auto afinidad. esto es. cualquier porci del todo es cualitativamente igual al todo mismo. 
+La importancia de la dimensi fractal en el tema que aquí nos ocupa estriba en que si logramos encontrar que la serie de rendimientos tiene una dimensi fractal menor a dos, nunca alcanzará a llenar un plano, dejará algunos huecos, con lo que podremos establecer que no es del todo estocástica. El movimiento browniano o proceso de Wiener, piedra de toque de las finanzas modernas, tiene naturalmente una dimensi fractal de dos, dada su perfecta aleatoriedad. En las siguientes secciones habremos de establecer algunos métodos que nos acerquen a la dimensi fractal de la serie de rendimientos del IPC. 
+3.1 Exponente de Hurst 
+Esta secci nos introducirá a la técnica llamada exponente de Hurst, Rango re-escalado o RIS (Hurst, 1965). Harold Edwin Hurst, un hidrogo británico de principios del siglo XX que trabajaba para el gobierno de su país, analizel nivel que el río Nilo tomen 800 as. Logrestablecer que luego de un a bueno (malo) había cierta proclividad para que el siguiente también fuera bueno (malo). Esto es, no había independencia en niveles de as sucesivos (Grabbe, 1995). En el terreno de las series de tiempo, de forma análoga, este método nos sirve para detectar correlaciones de largo plazo en procesos estocásticos. 
+Hurst desarrollla técnica de rango re-escalado o R/S, la cual será esclarecida en las siguientes líneas4• 
+Primero consideremos el rendimiento medio en un lapso de N períodos: 
+] V 
+f.v = -1>~ (1) 
+N •=• donde r, es el rendimiento durante la jornada i . 
+.a Este desarrollo proviene del trabajo de Vessereau (20(X}). 
+Sea: 
+J 
+x1..v =I,<r, -rN>, j =1, 2,...N (2) 
+i=I 
+la desviaci acumulada. 
+Ahora definamos al rango, R, como la diferencia entre la desviaci máxima y la mínima del rendimiento a la media acumulada: 
+
+(3) 
+Luego, cada rango R es redimensionado con la finalidad de hacer la medici independiente de la longitud N del período; esto se logra al dividir el rango entre la desviaci estándar de las observaciones en tal lapso, definida por: 
+J N 
+S= -~(r -r )2 (4)
+'\ N¿_, , N 
+,.. Finalmente, dividiendo (3) entre (4) obtenemos el rango re-escalado (RIS). 
+Hurst encontrque: 
+(RIS) ...+ /cN H , si N ...+ oo • 
+Donde, en panicular, 
+
+
+
+k =(,r ,~ 
+(5) 
+2 / y Hes el exponente de Hurst. 
+Tomemos como dado que: (RIS) =kNH (6) Para calcular H, basta tomar logaritmos de ambos lados de (6): ln(R / S) = ln(k) + H ln(N) (7) 
+luego, se corre una regresi lineal para estimar b en: 
+ln(R/ S) = a+bln(N). (8) Finalmente, b será nuestro estimado del coeficiente de Hurst. Hurst también encontrque seg el valor de H, la serie se puede clasificar así:5 
+i) H = .5 : la serie es plenamente aleatoria, las observaciones siguen una caminata aleatoria. 
+ii) OS H < .5 : hay anti persistencia o reversi hacia la media Esto es, si el sistema estuvo alto en un período, hay proclividad para que esté bajo en el siguiente y viceversa. De ser así, el sistema se dice ergico. 
+iii) .5 < H s 1: la serie es persistente. La tendencia se refuerza, es decir, se presentan racha~. La probabilidad de que la observaci en t+ 1 se desvíe de la media hacia el mismo lado que lo hizo la observaci en t es alta y crece conforme H se acerca a 1. 
+5 Pctcr . op. dt. pp 64-65. 
+En la regresi lineal, podemos revisar si la H obtenida es estadísticamente diferente de 0.5 mediante la prueba t 6: 
+b-.5 
+t=--(9) s 
+dondes es el error estándar, definido así: 
+l sY r;--:;­
+s=--vl-r-
+N s.t 
+donde a su vez, res la correlaci entre la variable dependiente x y la independiente y, 
+en tanto que s.t y sY son sus respectivas desviaciones estándar. 
+Finalmente. mencionemos el vínculo existente entre la H de Hurst y la dimensi fractal. 7 Hay dos formas de relacionarlas. La primera es geométrica (misma que habíamos ya adelantado) y mide a qué grado la serie llena el espacio 2D. Esta medida se logra con 2-H. Un ruido blanco acumulativo tendría una dimensi fractal de 1.5, una línea la tendría de l y una serie altamente antipersistente la tendría de 2, es decir, llenaría 2D. 
+La segunda forma de relaci se da con l/H. La ventaja de esta alternativa es que usa el espacio de probabilidad y no el espacio geométrico como la anterior. Aquí, un ruido blanco acumulado o movimiento browniano tendría una dimensi de 2 y llenaría así el espacio d~ la esperanza. Una serie con efecto <le memoria tendrá una dimensi fractal entre uno y dos. Dicho de otra forma si la dimensi fractal es menor a 2 las variaciones de la serie no serán independientes. 
+'' V csscrcau ( 2000). up. cit .. 7 Rd~H.:ioncs ohtcnidas del mende ayuda del programa Autosignal. 
+Resultados empíricos 
+La Gráfica 6 muestra los resultados del cálculo del exponente de Hurst.8 En ella podemos observar a (RIS) en funci de N (en escala logarítmica). También, se ha incluido una línea que expresa la pendiente obtenida a través de regresi lineal, es decir, la H de Hurst. 
+
+Gnflca 6. Espoaeate de H•nt para la •rle de nadlml•tol. 
+Los resultados aparecen en la Tabla. 2. Como vemos, la H de Hurst obtenida es estadísticamente mayor que 0.5. Esto nos indica que en el devenir de la serie de rendimientos del IPC existe proclividad hacia las rachas: es probable (más que lo contrario) que a un buen día le siga uno también bueno y lo propio sucede con los días malos. La dimensi fractal resultante para el espacio geométrico es de poco menos de 
+1.36. Esto implica que la persistencia hace que no se llene el espacio 2D. Por su parte, en el espacio de probabilidad, tenemos una dimensi fractal de 1.56, esto nos dice que 
+8 Estos cálculos fueron hechos utilizando el programa Autosignal. 
+
+efectivamente hay memoria en la serie, contrario a lo que supondría el que la serie de rendimientos siga una caminata aleatoria. 
+-. ...--~---.· . ____,,. 
+. .,,............~=---~-,,.. ¡
+' ' . ' dimensi.fráctal .· 
+... .·. i 
+[··.%2~it~-·;:; (~ ·11~~:::;¡ 
+1 a 0.5) ·L(~spacio -· f, ·i~~Pªdº~ª 
+1 
+j geométrico)·' r probabilidad) 
+' ' ... ~--· ..•_J.i.Í L,.;..;.. " .. . ..
+4 
+Completo····· ;·· o:64f09 ···· 
+¡·········o.00121601-·· ' ·116.Ó27Ó06 ····1--···1.35891 -·r··· 1.55984339 ··¡ 
+i ' 1 1 ¡
+-·······-·-··-····-·-·--··-···--' ··-·-··---,.....-...
+.....
+.,,...._,--·-------
+-
+---. -v·--·-···-······
+········--r ··············································-····-r---··-····--
+··
+·--·-·-··--·-----·
+·---··
+·--·--·-·-···
+·
+-·· !i Completo y :.· 0.531409 ¡ 0.00339574 ¡ 9.24953029 j 1.468591 ¡ 1.8817897 j 
+· Desordenado : ! ---,--' _____ ____¡ ---~ -¡ o.794845 r-:oo511 ¡ sTs944322·;¡:-¡ 1.205155 f 1.25810693 ! ¡ • . ----~ ---· . / ~ 945-¡ 0.598457 1 .000891912 1 110.3886931-f 1.401543 1 1.67096383 1 
+; 1 1 , ___________J 
+Tabla 2. Resultados para la H de Hurst. 
+Para verificar que existe estructura en la serie, ahora procedemos a desordenar la serie de rendimientos, a intercambiar fechas arbitriamente siguiendo un orden aleatorio. Los resultados de este experimento se expresan en el segundo rengln de la Tabla 2. Aunque sigue siendo H estadísticamente distinto de un medio, ahora está más cercano a dicho valor que con la serie original. Después de todo, lo que le falta para llegar a 0.5 se explica por las imperfecciones que inevitablemente pueda tener el método con el cual se haya desordenado la serie. 
+La dependencia que recién hemos selado ha sido obtenida realizando la regresi para obtener H considerando N desde 3 hasta 2945 . Podemos, a partir de cambiar este rango, obtener dependencias de corto y de largo plazo. En la Gráfica 7 aparecen dos regresiones obtenidas de esta forma. En la primera, N corride 3 a 20 días, y se obtiene una H de 0.79. Esto nos revela que en el muy corto plazo, 20 días en este caso, mismos que coinciden aproximadamente con un mes bursátil, la relaci de persistencia es a más fuerte. En cambio, en un horizonte más amplio, dicha relaci se debilita pero sin llegar a manifestar aleatoriedad completa (H sigue siendo mayor a 0.5). Ello aparece en el timo rengl de la Tabla 2. 
+18 
+Gnftca 7. H de Bant pan diferentes laplOI 
+Un estadístico usado por Vessereau (2000) para detectar de forma más directa los posibles quiebres temporales en la dependencia es VN , que está dado por: 
+(10) 
+En la siguiente gráfica aparece el resultado de calcular tal estadístico. En la misma, hemos puesto dos pendientes resultantes de llevar a cabo la regresi con rangos de N distintos. Por ejemplo, si log10 (N)está entre O y 1.3 (es decir, aproximadamente 20 días bursátiles) la pendiente es 0.28. A partir de ahí, en el segmento restante, la pendiente resultante es 0.09. Esto da cuenta de una fuerte dependencia en el cono plazo, dependencia que en el mediano y largo plazo paulatinamente se desvanece. 
+
+G~flca 8. Obtend6n de VN 
+Vale la pena emprender, bajo este mismo enfoque, un análisis para la variabilidad que ha manifestado el IPC en el periodo de estudio. Hemos construido la serie de desviaci estándar mensual a ·partir de los datos reales diarios. Con ella fue calculado el coeficiente de Hurst respectivo. En la Gráfica 9 se ilustra lo anterior. Ahí aparece una pendiente de 0.732157, que es dicho coeficiente. La implicaci que este hecho conlleva es clara: la volatilidad, enfocada en una frecuencia mensual, también ostenta rachas. Esto es, si en un mes la volatilidad estuvo por encima de la media, existe una tendencia para que en el mes siguiente ocurra lo mismo. 
+Con esto concluimos esta secci en la que hemos puesto en evidencia la dependencia de largo plazo que existe en la serie. En la siguiente secci veremos el método alternativo del semivariograma. 
+
+Gnftca 9. R de Hant pan la varlabllldad de IN nadlmlelltOL 
+
+
+3.2 Semivarlognma 
+En la presente secci nos dedicaremos a aproximar la dimensi fractal de la serie de rendimientos del IPC a través de un método que de nueva cuenta se importa de la rama de las disciplinas provenientes de la Física. Concretamente, el método del semivariograma, la técnica aquí empleada, tiene sus raíces en la geoestadística Ésta, a diferencia de la mera estadística que so considera la magnitud de los datos, se preocupa por la posici de cada punto y su relaci con la de otros puntos. 9 
+La idea básica estriba en estimar las varianzas medias 1(h) de la serie de rendimientos 
+utilizando diferentes intervalos de tiempo h, a través de la siguiente relaci: 10 
+9 Ordez, Almudena. "Cálculo de reservas". Universidad de Oviedo, Escuela de Minas. http://www.etsimo.uniovi.es/usr/almudena/Documentos/CALCUL0%20DE%20RESERVAS.pdf10 Vessercau (2000), op cit 
+1 .V(/1) 2 
+(11)
+r(h) = 2N(h) ~L] 
+donde r,.,, es el rendimiento del IPC en el lapso que va de i a i+h, en tanto que N(h) es el nero de posibles pares r,,h que se pueden construir sobre la serie. Bajo la hipesis de auto afinidad, se da la siguiente relaci: 
+y(h) = r(l)h2H (12) 
+por lo que, tomando logaritmos de ambos lados de la anterior ecuaci, podemos estimar la codimensi fractal Ha través de la siguiente regresi: 
+In(} (h)) =a+ pln(h) +e (13) 
+Puede demostrarse que la relaci entre nuestro estimador y la dimensi fractal está dada por (Kenkel, et a/, 1996): 
+p= 4-2D (14) por lo que, despejando: 
+1
+D=2--P (15)
+2 
+La interpretaci es similar a la usada en la secci precedente para el caso del espacio geométrico ( euclideano ). En el ruido blanco p=O y la dimensi fractal será D=2; para una simple tendencia lineal ( dependencia espacial plena) p=2 y D=l; el caso más 
+interesante, en tanto, será el de series estadísticamente auto afines, que arrojará p=l y por lo tanto una dimensi fractal de 1.5, un ejemplo pertinente es el de un movimiento browniano geométrico. 
+
+Resultados 
+En la Gráfica 10 se muestran los valores del logaritmo de ¡(h) en funci del logaritmo de 
+h, así como dos líneas resultantes de sendas regresiones entre éstos. La primer regresi, 
+con h corriendo de l a 1750, arrojuna R2 = 0.99 y una pendiente de b = 1.08518; en tanto que la segunda, con h de 1 a 48, tramo con el que la pendiente toma un valor crítico 
+R2
+(máximo), caus= 0.99 y b = 1.20607. Con ello, obtenemos que las respectivas 
+dimensiones son y D1 = 1.457 408 D2 = 1.396986 . 
+Esto nos permite extraer algunas conclusiones. En primer lugar, las altas R2 nos indican que es viable modelar la serie de rendimientos en la forma de fractales auto afines. En segundo lugar, ya estando ciertos de dicha viabilidad, vemos que el resultado obtenido coincide a grandes rasgos con el de la anterior secci: en el corto plazo, con D2 menos cercana a 1.5 y más a t, existe una fuerte dependencia, misma que parece disiparse al considerar períodos más largos, como el que tiene que ver con D1 • 
+Sería muy optimista esperar que los valores numéricos de la dimensi fractal obtenida por ambos métodos fueran el mismo. Sin embargo, el que esto no se cumpla no representa serios problemas siempre y cuando la intuici que ellos representan sea la misma, como efectivamente sucede en este caso. Seg Vessereau (2000), es verosímil el hecho de que sean precisamente las dependencias en el corto plazo las que, al acumularse, explican la dependencia en el largo plazo. Así, en la serie de rendimientos reales del IPC, la acumulaci de informaci cotidiana puede ser la responsable de la dependencia en períodos largos. En las secciones siguientes este punto podrá quedar más claro. 
+Gnflca 10. Semlvarlognma 
+24 
+
+
+4. Estadístico BDS 
+En esta secci será utilizada la prueba elaborada por Brock, Dechert, Scheinkman y LeBaron ( 1996) 11 para confrontar la hipesis de independencia en contra de algunas desviaciones, como son dependencia lineal y dependencia no lineal (caos). 
+La intuici sobre la que reposa este método es muy sencilla. Primeramente, elegimos una distancia dada por E. >O . Luego, tomamos dos puntos cualesquiera de nuestras observaciones. De ser los rendimientos independientes e idénticamente distribuidos (iid), la probabilidad de que la distancia entre esos dos puntos en el espacio de fase ( o diagrama de fa~e) sea menor o igual que E., que denominaremos c1(E.), será constante. 12 
+Este mismo ejercicio lo podemos hacer si desplegamos el espacio de fase en m dimensiones. Con ello, obtendremos un nero determinado de vectores de m componentes o "m-historias". La forma de hacerlo es la siguiente: 
+Consideremos las observaciones s y t de la serie X. A partir de ellas, podemos construir el conjunto de pares: 
+
+(16) 
+donde m es la dimensi del espacio de fase, conocida como "dimensi de inserci" 
+(emmbedding dimension). Análogamente, la probabilidad conjunta de que cada pareja de 
+11 Una exposici muy clara del significado de la prueba BDS. misma que aquí es empleada. proviene del mende ayuda del programa EViews 4.1. Existen mtiples trabajos en donde de igual forma se pueden encontrar tanto desarrollos teicos del BDS como aplicaciones prácticas. Un buen ejemplo se halla en el trabajo de Mauro Galleta y Domenico Mignacca. ··Is US real GNP ChaoticTº. cuya referencia está al final de este 1rahajo. 11 Para entender mejor el concepto de ··espacio de fase··. veamos d ejemplo para el cual m=2. En este caso. para una serie X de rv elementos. el espacio de fase estará Jado por el conjunto de los N-1 puntos bidimensionales: 
+y(2) =(Xº}( x, }····{ x, 
+}··· . Su rcprcscntaci6n gráfica será la del espacio 2D, con x, en el eje X1 x1 X,+I 
+horizontal y x,.1 en funci de x, en el eje vertical ( Balacco y Maradona. ~000). 
+25 
+puntos esté distanciada en una cantidad menor o igual a E. será denotada por c,,. (E.) . Naturalmente, de ser independientes las observaciones, la probabilidad conjunta será igual al producto de las probabilidades marginales, esto es: 
+c,,.(E) =c1"'(e) (17) 
+A grandes rasgos, el estadístico BDS prueba si estadísticamente la serie puede soportar esta igualdad. Para estimar la probabilidad para una dimensi m, usando una serie de n elementos usamos la siguiente expresi: 
+2 n-m+I n-•+I •-1 
+c,,..n(E)=----r r file(Xs+1,X,+1) (18) 
+(n-m +l)(n-m) .r-:1 1=.,+1 1=0 
+donde / e es la funci indicadora, la cual tomará un valor de 1 si lx -~ S E o cero de lo contrario. 
+Así, c,,,.n(E.)resulta ser la raz de los pares que satisfacen la condici de distancia para un E. dado y el total de pares posibles. En la literatura afín se le conoce como integral de correlaci. Bajo independencia, esperaremos que este estadístico sea estadísticamente indistinto de cero. Sea: 
+b,,,_,, (E)= c,,,,,, (E)-c,,,,,,_,,,+1(e)"' (19) 
+Brock, et al (1996) demostraron que: 
+( ; n -m + 1) b,,,,,, (E.) --+ N(0,1) 
+(20)
+O',,,_,,(E) 
+donde om.,, (E) es la desviaci estándar de las integrales de correlaci. 
+Como es fácil percibir, los resultados a obtener son sensibles al parámetro E, de ahí que su elecci sea muy importante. Vessereau (2000) propone usar E = o , donde o es la desviaci estándar de la serie. 
+La relevancia del estimador BDS se pone de manifiesto en la medida en que la simple correlaci puede dar cuenta de independencia de una serie que, al ser evaluada con el BDS, resulta no serlo. 13 Esta pifia suele ser com en los análisis financieros. 
+Antes de pasar a los resultados obtenidos, vale la pena mencionar que el antecedente inmediato al estadístico BDS fue elaborado por Grassberger y Procaccia (1983). El estadístico obtenido por ellos, conocido en el argot como GyP, es usado por Feliz y Mayer ( 1992) en un trabajo que explora la hipesis del caos determinista en las variaciones diarias de los índices de algunas bolsas, entre ellas la de México, para el período 1986 a inicios de 1990. Sin embargo, como lo sela Hsieh (1991) en un artículo de obligada referencia de la teoría del caos en finanzas, es sensato priorizar al estadístico BDS sobre el GyP. Adicional a Jas muchas razones técnicas para esto, se tiene que GyP precisa de series de datos excesivamente grandes, lo que no necesariamente sucede con BDS. Así, pese a que el referido trabajo de Feliz y Mayer es ciertamente bueno, manifiesta un inconveniente al modelar con una serie relativamente corta. 
+
+Resultados 
+Se han calculado los estadísticos BDS para diferentes dimensiones, como lo podemos constatar en la Tabla 3. Notemos que en todo caso se rechaza la hipesis nula de que el estadístico BDS es estadísticamente igual a cero, con lo que al propio tiempo estamos rechazando la hipesis de independencia. 
+1.1 Por ejemplo, si consideramos la serie y, = u, +8u,_1u,_2, donde u, es variable aleatoria distribuida 
+como una normal, encontraremos que su correlograma nos indica que no existen correlaciones significativas, no bien la prueba BDS recha1.a independencia. Ver el mende ayuda de EViews 4.1. 
+
+Periodo completo Dimensi : -estacilstlco . Error ¡ Estadlstlco 
+
+í roiiiii,1í1c1ad 
+BDS · estindar z 
+2 -·---·o:-o3á43 __ .001222 21-.-3650_3_ 1
+__: o_______ o 
+3 0.054034. --:-·0.001752 30.84902 1 o 
+
+4 0.062904 1 0.00188333.41154 ! O
+¡----­
+5 o.063459 : o.001n2 35.81878 ¡ o--! 
+i
+----.---­
+
+6 0.059547 ¡ 0.001543 38.59535 1 o 
+! 
+1 : 0.053644 · 0.0012n 42.01215 1 o 8 --· ··-o.04669--! 0.001019 ..-45-.-804-14-,-o-­9 .. --. -0.039722 '-Ó.000792-i 50.14088 1 o 
+10 ;. o.033236 ; o.000603 ¡ ss.11492 ¡-0 --­
+1 
+--15 --i 0.011939 ' 0.000127 ! 94.28198 1 o 20 -·--·o.004069 ·-2.2fe-os : 183.7599 1 o 
+1 ! 1 
+30 .·---0-.000473-! 5.30E-07-·j-892-.6-717 ¡ o-··-l 40 5.32E-<>5 , 1.09E-08 4872.97 1 O ! 
+..-31-865-.8-2-, O
+50 6.70E-06 2.10E-10 
+-----·. ------------------------­
+Tabla 3. Pruebas BDS pan los rendimientos. 
+Para evadir el riesgo de que sean el período excesivamente largo que aquí consideramos y los inminentes cambios de estructura a lo largo del mismo, los responsables del rechazo de la independencia, hemos dividido la serie en muestras anuales. Los resultados aparecen en la Tabla 4. En ésta, los valores no indistintos estadísticamente de cero, a un nivel de confianza del 95% aparecen en negritas. Para el resto de los casos podemos decir que no existe independencia. Llama particularmente la atenci los as de 1999, 2000 y 2001, para los cuales la prueba indica independencia. V ale mencionar que en este período, al igual que en 1993, la inflaci no so fue baja sino también estable. Eso probablemente hace que, ante un panorama de mayor certidumbre para los inversionistas, las variaciones reales sean efectivamente independientes. 
+28 
+, Prueba BDS para subperlodos · A: ·;•·· '.J'iÁv/ • \ ~ • .V
+1• ·-· .•• • ,¡.., r. :.._.• t """"'"'"-,1,_k~~ -~ .¡..¡i, .·.;4¡1..\t,,:~ .m.:...,,.. X .:~::J 
+r-···-····-···
+·-·····
+--·-¡···-···--··-·--·-Dimensi·del espacio de fase -----­
+r· perfodo-.. ;. .. m;r-· -,---m-;;-s·-·-¡-·-·m,;1-0 -r·--m=ff-­
+1
+,---· 1979 -·-·· 0.048561 •·· ! o.05731.·-¡0.018141• f<>-000325· ¡--·--1980_____ ···o.046385* ' 0.079105*·-r o.029259• ·-¡ 0.002255* .. 
+. 1 1 ¡·-· 1981 --¡··
+o.047857·-¡ 0.079845--1 o.030433 -¡ 0.000303 r-1982 --T o.046323··-fo.112165 ¡ o.098149 10.021212·­
+1 
+i 1983 : 0.041389 ! 0.055594 I 0.015659 1 3.15E-05 í 1984 ¡ 0.037418 : 0.070036 1 0.031112 f 0.001529 1 1985 ! 0.032334 j 0.040399 1 0.011239 1 0.000602 1 1986 j 0.024901 ! 0.033527 l 0.013734 1 0.000686 1987 • 0.056794 0.140915 0.106345 0.022201 
+1 1 1 ¡·-1sas ·--; 0.049813 ; 0.110101 1 o.o5n27 1 0.011111 
+1 1 1 1 
+~ ¡¡-9 -¡--0.031476 1 o.046946 0.011213 ¡.--0-.0-0-11_9_9_ 
+1 1990 -¡ 0.015638 1 0.020589 0.004116 1 -1.37E-05
+1 , _____ 1 
+¡ 1~:0.018586 !--0-.0-25__4_6_5 _ 0.009329 ro:oo~ 
+1992-,· 0.026218 , 0.030211 0.005537 1 -3.30E-06 
+¡ I ¡1993 ¡ 0.000408 j 0.015418 1,--0-.0-03_8_6_2 _¡ -2.91E-06 ~ gg¡--¡ 0.019213· : 0.019484 1 0.00443 1 0.000134 r--1995-~ 0.033905 ¡ 0.043494 0.014099 0.000887 
+1 1 
+1 
+-fggs--o.oo454¡ 0.005119 0.002922 1·---3.31 E-o5 
+1 
+Í1997 i 0.028877 ! 0.057395 -10.029098 1 0.00257 ¡--:¡-gg¡f-¡ 0.016439 ; 0.023879 1 0.012023 1 0.000879 ¡1999--Í0.00076T -; 0.007092 -IQ.0013251-2.68E-06 
+1 1 ·-:-:----,--; 1 -·­1 2000 -0.002688 0.004316 1 0.000542 1 -4.18E-06 ¡ 2001 0.007899 0.006709 1 0.000346 1 -1.08E-05 1 -2002--· 0.012492 -!-0.016824-j 0.001963 -,-4.91 E-06 . !" 1999-2001 -f°" 0.005693 -r· 0.013217 -,·· 0.003521 -r4.31E-05·-­
+I l ! 
+Tabla 4. BDS para subperíodos. 
+29 
+Sin embargo, para aclarar el punto hemos realizado el análisis para un periodo de tres as que inicia en 1999. Es decir, hemos hecho un alejamiento en nuestra visi (zoom out) para, por un lado, llevar a cabo un análisis más comprehensivo y por otro, aumentar el nero de observaciones, potenciando con ello el BDS. El resultado aparece en el timo rengl de la tabla. Notemos que nuevamente parece haber independencia. Sirva ello para desvanecer la posible duda que se original ver dichos as por separado. Así, como ya lo habían hecho las pruebas de la secci anterior, aquí el BDS nos muestra que los rendimientos reales no siguen un movimiento browniano. En la siguiente secci habremos de aplicar las técnicas aquí esbozadas para analizar los residuales de algunos modelos de uso frecuente en estas tareas. 
+
+
+
+5. Aplicaci de modelos GARCH y sus derivados 
+En las secciones previas hemos establecido la existencia de dependencia en la serie de rendimientos del IPC. Aunque la tica ahí utilizada da cuenta de una dependencia de largo plazo, ésta bien puede estar conformada por el aglutinamiento de dependencias de corto plazo, como ya lo apuntamos ligeramente. 
+En esta secci emplearemos algunos modelos enormemente usados en las finazas para intentar eliminar, en la medida de lo posible, la parte determinística que evita que los rendimientos sean independientes. No está por demác; indicar que el propito timo de este trabajo no es precisamente el de obtener el modelo mejor para el comportamiento de la serie, sino que a través del uso de estos modelos. veremos co se comporta la parte no explicada por el mismo, en funci de las técnicas que a lo largo del presente trabajo se han esbozado. 
+Concretamente, los procesos aquí implementados pertenecen a la familia de los modelos Auto Regresivos de Heteroscedasticidad Condicional (ARCH por sus siglas en inglés) y su principal peculiaridad es que se adecuan a series cuya dispersi varía por conglomerados (Engel, 1982). Usaremos, pues, los modelos GARCH, TARCH y EGARCH. De manera muy compendiosa asentaremos su derivaci teica para posteriormente apuntar algunos resultados obtenidos. El lector que quede insatisfecho con la misma, como siempre, deberá remitirse a las fuentes aquí citadas. 
+GARCH 
+Este tipo de modelos consisten básicamente en generalizar los modelos ARCH, raz por la cual se conocen como Modelos General izados de Heteroscedasticidad Condicional (GARCH por sus siglas en inglés). Su precursor fue Bollerslev ( 1986). 
+Detallemos el caso de un GARCH( l,l ), adicionado con un rezago de la variable dependiente como regresor: 
+r, =a+ /jr,_, +E., (21) con: 
+E., ._,(0,h,) (22) 
+donde a su vez: 
+(23) 
+las anteriores ecuaciones describen un modelo en donde el rendimiento de hoy depende del de ayer, pero el error esperado depende a su vez del de ayer e igualmente su varianza Es decir, en r, se incorpora a través de (23) la volatilidad que el mercado ha presenciado en el 
+pasado reciente. 
+A partir de los residuales E., podemos construir la serie estandarizada Z, , con (Vessereau, 2000): 
+z =-5_ (24)'~ 
+El carácter (1,1,) del modelo GARCH se debe a que en la ecuaci (23) hemos incluido un rezago para h,, así ~orno uno para e,2 • La generalizaci es inmediata a un GARCH(p,q) si 
+tomamos p rezagos para h, y q para e,2 , con lo que (23) quedaría: 
+h, = a, +L,q a,e,2__, +L,p P1h,_1 (25) 
+l=l J=I 
+
+TARCH 
+En raz de que frecuentemente se observa en los mercados que movimientos a la baja son seguidos por volatilidades mayores que en el caso de movimientos alcistas de la misma magnitud, es que nace la idea de considerar un modelo asimétrico (Engel y Ng, 1993 ). Esto es, las malas noticias producen más fluctuaciones que las buenas. 
+Esta es una extensi a los modelos ARCH en el sentido de que se trata de manera asimétrica a la varianza condicional. Lo más com es que el umbral (threshold, en inglés, de ahí el prefijo T) sea el origen y que por lo tanto se trate de manera distinta a los residuales positivos que a los negativos (Zakoian, 1990). Sencillamente, la diferencia con lo que hemos desarrollado es que la ecuaci 23 ahora será: 
+
+(26) 
+donde la variable d, toma el valor 1 si i, < O , y O en otro caso. 
+
+EGARCH 
+Estos modelos manejan también la asimetría pero con otra metodología. Propuestos por Nelson ( 1991 ), consideran a la varianza de los términos de error de la siguiente forma: 
+log(h,) = mi +m2 log(h,_1) +a,3 
+~ 
++aJ4 ~ (27) 
+. 
+vh,_, 
+vh,_, en este esquema habrá asimetría si aJ4 :,: O . 
+Resultados 
+En la tabla 5 se muestran los resultados de aplicar algunos modelos supradichos a los residuales estandarizados de cada modelo, seg la ecuaci (24). En las primeras dos columnas aparece el estadístico BDS para dimensiones de inserci de 2 y 5 respectivamente. Si bien en general son muy cercanos, no son estadísticamente distintos de O (los valores de probabilidad, p-values, en todos los casos son casi cero y no aparecen en la tabla por motivos de presentaci). Esto podría ser desalentador ya que estaría implicando que de poco han servido los modelos aquí empleados. Sin embargo, hay razones para no sentir que este análisis ha sido estéril. Por un lado, sería muy ambicioso pedirle a alg modelo, por complicado, sofisticado o atinado que pudiera ser, ajustarse a las observaciones diarias de más de 23 as de datos. Es irrebatible que en tan amplio período muchas modificaciones han sufrido los fenenos de los que el IPC es el mero indicador. 
+BDS 
+
+-,-m-2m-S
+~~!:':.:[;l.i,i,;
+-.--¡-­
+-GARCH-,1-,1,-, 0.00847 10.00921 
+o:sii2661UTu~i!~~,-­
+GARCH(1,1)c 10.01308 10.02023 
+EGARCH(1,1) 10.00809 10.00839 
+,-T ARCH(1,1) 10.00759 10.00888 
+1
+-TARc~1-,c 0.01309 ¡º·~ . GA-RCH(2,2)c !0.00564 !0.00649 
+1 
+·--·-----· ---------­
+Tabla S. Praebu BDS y de H de H•nt pan alpa• modelOI. 
+Nota: H calculada a panir del segmento de la regresi en el que una tendencia parece tornar forma. En todos los casos. se 
+homologtal segmento para N de 60 a 600. 
+No obstante, no todo está perdido. Hemos calculado la H de Hurst para las mismas series de residuales y los resultados se aprecian en las timas columnas de la tabla. En ellas aparece la prueba t para detectar si las H obtenidas son diferentes de 0.5. Si bien en todos los casos no es posible rechazar esta diferencia, es consolador el hecho de que son más cercanas a 0.5 que los valores de H calculados para los rendimientos mismos, de los cuales ya arriba comentamos. 
+Para encarar esta aparente debilidad de los modelos de la familia GARCH al lidiar con los residuales, y bajo la justificaci de que resulta harto difícil modelar para períodos tan prolongados, hemos hecho el mismo análisis pero ahora para cada a. Podría objetarse que en el presente trabajo desde el principio se ha considerado a la serie completa y que sería un tanto tramposo enfocar ahora series anuales. El objetivo de este ejercicio, vale aclarar, tiene sustento en el manifestado en la Tabla 4, donde, para la misma periodicidad de un a, en la mayoría de los casos se rechazaba que los rendimientos fueran iid. 
+En la tabla 6, por el contrario, vemos que para diferentes modelos en la generalidad de los as hay alg modelo que, por lo menos para una dimensi, arroja residuales estandarizados que sí son iid. La salvedad de la regla, es interesante apuntarlo, se da no de manera fortuita para los as de 1982 y 1995, ailos en los que la volatilidad fue la mayor (junto con 1987). En el referido cuadro, como las muestras son relativamente peques, se usan valores probabilísticos generados por el método del bootstrap, ya que la distribuci del estadístico BDS puede resultar muy diferente de la distribuci normal asintica. 14 
+14 El procedimiento detrás del método bootstrap consiste en primero calcular el BDS en el orden en el que aparece en la serie. Después. se realiza un nero muy grande de repeticiones donde en cada una se extrae aleatoriamente sin reemplazo un conjunto de observaciones de tama igual al original. Para cada conjunto se ~akula el BDS y se divide el menor del nero de repeticiones debajo o encima del estadístico original por el 
+De todo lo anterior, podemos concluir que de los modelos de la familia GARCH, los 
+elementales (o de corto plazo), como (1,1 ), son exitosos en la tarea de limpiar las series de rendimientos de aspectos determinísticos. Esto se traduce en que el fracaso de la independencia en el largo plazo bien puede estar nutrido por fracasos en el corto plazo, como ya arriba lo habíamos conjeturado. 
+_...., __,,,_··--· ----·--··------.. -·-··--------·----­
+BDS BDS 
+·~-· '"··
+·--·----.------·-..... -···-· ·--_--.-·-----·---, ,._______ ---r-----i' 
+' 
+' A Especificaci m=2 ! m=S ¡A· J Especificaci I m=2 ¡m=S ¡ 
+: 1 
+1979 GÁRCH{i ;1) 0.0054 O.ÓOÓ4 . 
+-1 991~-! GARci:f({1)c " ...... ¡--o·.o·iffa --f ~oofá 1980 GARCH(1.1 )e -"os . .o.0008· ...r 1:992.: •¡ GA.RCH({fj --···-¡1fo2 ...f"'ifo7 ...I 1981 GARCH(1 ,1)c ·-··-¡ 0.0041 ·, 0.0044···!-1992 -j EGARCH(1 ,1) 10.0022 -t¡ 0.004 -· 
+t I l,
+_ l .., 1982 : TAACH(1,1) ' 0.0487 0.1177 ~ 93 ! GAACH(2,1) (*) r ,0002 10.0079 
+.
+1982 EGAACH(1,1) . ··. O.á4°43··¡·0 .'()975--j ·---GAACH(1,1) ji0.0063 , -0.0005 . . . GAACH(f,1) . -0.0075 .. -0.0006·--¡ 1994 j 
+t ¡ 
+; ·TARCH(1-;-1-) ---·--Ó~ÓÓ91-o.oo·-·-,-~~ , EGARCH(1 ,1)e [o."1f3 ¡0.0051 1983 EGARc"i::j{1:1r .. -,--~<osf' ! o.cfooI"'"'" ¡--:¡-~.9_5 .1EGARCH({T) ---, 0.0206 °fcf0229·-·; 11984 'G".i,RCH(1, 1). ---· '"'"' ;·0.001··-r·f¡f'; ¡··GARCH(<1TI·r -·r o.003y-¡-o.of"-; 
+¡ f f:" A, • • é~,-~~ l ·----1 : 
+, ETAGRACRHC(H1(,1), ) ¡ 0.0014 ¡ 0.0071 r · ¡GARCH(1,1) ¡,· 0.0021 j"0.0077 i 1 1 ·-c,.002s o.001f-----1997 -¡ ! 
+··· ·
+· o.75 0.016 ··· -·-··..-:f·EGARCH(1 ;f¡--···r o.s:z -j-.:0:0oás 
+1986  : GARCH(1,1)  0.0028  -.--~Ó--()Ó04  ¡  1998. .¡ ARCH(O,1) . .  r-mf r ~ifof •  
+..TeáY  GARCH(1,1)e  .  0.0044  ; 0.0036 .í  .  199g:¡ GAACH(1 ,1)(**) '  f 0.0039 1  0.0099_,1 
+1988  GARCH((1)c  0.0004  i 0.0119  f"'GA"Fi"CH°(:  ' T  ·0.0094  r·-0.0053  . 
+ 
+-TAACH(1 ,1)  .  0.0014  : 0.0096  1 2~0 ; [ TAACH(1,1)  1 0.0017  r=-o~O9  
+: GAACH(1 ,1)  ..  • 0.0012  r0.0102  ! 2901 , ! EGAACH(1 ,1)  j 0.003  r -0.0006  .  
+..fifo9  .  GARCH(O,1)  .  0.0064  . .. 0.0255  ¡·2002 . '  EGAACH(O, 1)  / 0.00s'a" r o."0099 ··--.,  
+f  (***)  1 ¡  j1  ' :  
+1990  .EGAACH(1, 1)  . 0.0064  ! 0.0048  '  
+·----·  
+
+Tabla 6. BDS para subpcríodos anuales, modelos GARCH. 
+Notas• el nivel de significancia considerado para los modelos es del 95%, salvo el caso de:(*) al 94%, (**) al 90% y(***) al 84%. La letra e indica que la regresin fue corrida con una constante (intercepto) diferente de cero y sin constante cuando no aparece. Las negriw.s indican valores estadísticamente indistintos de cero al 95% de significancia. 
+nero de repeticiones total y se multiplica por dos, por las dos colas de la distribucin. Ver el mende ayuda de EVicws 4.1. 
+36 
+6. Conclusiones 
+A lo largo del presente trabajo se han empleado algunas técnicas de los campos de la geoestadística, la matemática fractal y de la econometría para determinar en qué medida se viola el supuesto de linealidad e independencia en la serie de rendimientos del IPC de la Bolsa Mexicana de Valores. Para un período de poco más de veintitrés as, se obtuvo una serie diaria de rendimientos logarítmicos nominales del IPC, con cac,i 6000 observaciones. Para depurar esta serie y eliminar su contenido inflacionario, ella fue deflactada usando una serie diaria, construida a partir de los datos mensuales de inflaci subyacente. 
+La referida serie deflactada fue sometida a pruebas para verificar si cumple con el supuesto de normalidad. A través de la prueba de Jarque-Bera, así como de algunas pruebas de distribuci empírica, se logrdeterminar que tal serie no se distribuye como una normal. Lo anterior, vinculado con el supuesto de que los hechos de los que se nutre la informaci de los agentes sí pueden distribuirse normalmente, nos despierta la sospecha de que también se viola la independencia de los rendimientos cotidianos. Este hecho, a la par, pone en jaque a los planteamientos convencionales de la teoría financiera, los cuales hacen descansar la eficiencia de los mercados en la propiedad de la martingala o la no acumulaci de informaci. 
+El exponente de Hurst ( o técnica del rango reescalado o RIS), por un lado y la técnica del semivariograma, por otro, fueron utilizados para tratar de aproximar la dimensi fractal de la serie. En ambos casos se arribal resultado de que la serie no puede considerarse como una caminata aleatoria. Existe memoria en su comportamiento y muestra inclinaci hacia 1~ persistencia. Esta condici está ligada a la presencia de rachas, tanto negativas como positivas, que con mucha frecuencia se suelen presentar. Es decir, si un día fue bueno para la bolsa, existe cierta proclividad para que el día siguiente también lo sea, por ejemplo. 
+En estos mismos análisis pudo ser detectado un hecho que sin duda llama la atenci: la dependencia en el largo plazo de la serie es construida por sucesivas dependencias en el cono plazo. De la misma forma, se precisque la volatilidad de la serie, medida a través de la desviaci estándar mensual, también es persistente. Un mes tranquilo tiene propensi a ser seguido por otro mes tranquilo y análogamente para los períodos mensuales con turbulencias. 
+El estadístico BDS, herramienta de avanzada en materia de integrales de correlaci, fue empleado para someter a prueba, una vez más, la hipesis de independencia. Para el período completo, así como para la mayoría de los subperíodos anuales, la prueba rechaza la hipesis. La conclusi general que se obtiene de esta prueba, así como de las anteriores, es que el movimiento browniano, elemento decisivo de la teoría financiera, no es concordante que lo que ha sucedido en el devenir del IPC. 
+Finalmente, en el presente estudio fueron usados algunos modelos de la familia de los GARCH, elaboraciones creadas para lidiar con problemas de dependencia de corto plazo en las series financieras. La serie de residuales estandarizados que la aplicaci de tales modelos arroj mostrresultados confortadores para períodos anuales, en el sentido de que se logrlimpiar a las series de los aspectos determinísticos que hacían fallar la independencia. Así mismo, se corroborque el fracaso de la independencia en el largo plazo bien puede estar nutrido por fracasos en el corto plazo. 
+A manera de conclusi general , podemos decir que las t6cnicas supradichas nos han dado la pauta para ser más rigurosos al juzgar y emplear técnicas convencionales lineales, a la hora de pronosticar el comportamiento del IPC de la Bolsa Mexicana de V al ores. 
+Referencias 
+Balacco, Hugo y Gustavo Maradona (2000). "Sel de Caos en Series de tiempo 
+financieras. El spectrum de Lyapunov en el análisis de 'sensibilidad a condiciones 
+iniciales"'. 
+Universidad Nacional de Cuyo, Mendoza-Argentina. 
+http://www.aaep.org.ar/espa/anales/pdf_OO/balacco_maradona.pdf 
+Bollerslev, Tim (1986). "Generalized Autoregressive Conditional Heteroskedasticity", Journal ofEconometrics, 31, 307-327. 
+Brock, William, Davis Dechert, Jose Sheinkman & Blake LeBaron (1996). "A Test for lndependence Based on the Correlation Dimension", Econometric Reviews, August, 15(3), 197-235. 
+Engle, Robert F. (1982). "Autoregressive Conditional Heteroskedasticity with Estimates of the Variance of U.K. Inflation", Econometrica, 50, 987-1008. 
+Engle, Robert F. and Victor K. Ng (1993). "Measuring and Testing the Impact of News on Volatility", Journal ofFinance, 48. 1022-1082. 
+Feliz, Ra y David Mayer (1992). "Dinámica No Lineal en la Bolsa de Valores", Documento de Trabajo 3, Economía. CIDE. México. 
+Feder, J. (1988). Fractals. Plenum Press, New York and London. 
+Galleta, Mauro y Domenico Mignacca (1994). "Is US Real GNP chaotic?", Jnternational Finance. Clasificaci JEL: C22.1 
+Grabbe, J. Orlin ( 1995). Chaos & Fractals in Financia/ Mar/cets. Prentice Hall. 
+Grassberger. Peter e Itamar Procaccia ( 1983). "Measuring the Strangeness of Strange Attractors'9, Physica, num. 9D, pp.189-208. 
+Hsieh, D. ( 1991). "Chaos and Nonlinear Dynamics: Application to Financia! Markets", Journalo/Finance,46, 1839-1877. 
+Hurst, H.E., Black, R.P. and Simaika, Y.M. (1965). Long-Term Storage: An Experimental Study. Constable, London. 
+Kenkel, N.C. y D.J. Walter (1996). "Fractals in the Biological Sciences", Quantitative Plant Ecology Lab. Department of Botany, University of Manitoba, Canada. 
+Mandelbrot, B.B. ( 1982). The Fractal Geometry o/Nature. Freeman, San Francisco. 
+Nelson, Daniel B. (1991). "Conditional Heteroskedasticity in Asset Returns: A New Approach," Econometrica, 59, 347-370. 
+Opong, K., G. Mulholand, A. Fox and K. Farahmand (1999). ''The Behaviour of sorne UK Equity Indices: An Application of Hurst and BDS Tests", Journal o/Empirical Finance, 6, 267-282. 
+Ordez, Almudena (sin fecha). "Cálculo de Reservas". Universidad de Oviedo, Escuela de Minas. http://www.etsimo.uniovi.es/usr/almudena/Documentos/CALCUL0'1,20DE,.20RESERV AS.pdf 
+Peters, E. (1991). Fractal Market Analysis: Applying Chaos Theory to lnvestment and Economics. Wiley, New York. 
+V anouplines, P. ( 1996). Rescaled Range Analysis and the Fractal Dimension o/pi. University Library, Free University. Brussels, Belgium 
+Vessereau, Thierry·(2000). "Aspects non Linéaires du Marché des actions Francaises". Cirano Papers. Université de Montréal. 
+Willey, T. (1992). ''Testing for Nonlinear Dependence in Daily Stock Indices", Journal o/ Economics, 44, 63-77. 
+Zako"ian, J. M. ( 1990). "Threshold Heteroskedastic Models," Journal o/ Economic Dynamics and Control, 18, 931-944. 
+40 
+
+
+

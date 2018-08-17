@@ -1,0 +1,432 @@
+EL COLEGIO DE MÉXICO CENTRO DE ESTUDIOS ECONÓMICOS 
+, , 
+MAESTRIA EN ECONOMIA 
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRÍA EN ECONOMÍA 
+CONSUMPTION CAPITAL ASSET PRICING MODEL, CCAPM: UNA APLICACIÓN PARA MÉXICO 
+DIANA TERRAZAS SANTAMARÍA 
+. PROMOCIÓN 2007 -2009 
+AsESOR: DR. ENEAS A. CALDIÑO GARCÍA 
+JULIO 2009 
+1 8 A60 2009 
+
+
+Resumen 
+Este trabajo analiza empíricamente el modelo de valuacin de activos basado en el consumo (CCAPM) para el caso de México para el periodo de 1993-2007. Se utilizan los datos de consumo privado de bienes no duraderos y servicios, así como el Índice de Precios y Cotizaciones de la Bolsa Mexicana de Valores. Para la estimacin del modelo se consideran dos especificaciones de la funcin de utilidad y por medio del Método Generalizado de Momentos se obtienen el factor de descuento subjetivo y la elasticidad de sustitucin intertemporal del consumo. Finalmente, se verifica si se presenta el llamado enigma de la prima de riesgo. 
+Agradecimientos 
+A mis padres que siempre han confiado en mis proyectos y me han apoyado incondicionalmente. 
+A mi hermano que ha sido mi amigo más leal. A mis comparos del Colegio que se convirtieron en comparos de sues y me inspiraron para ser una mejor persona. 
+A todas aquellas personas involucradas en este difícil, pero muy recompensante camino. 
+
+Índice 
+Página 
+1. Introducci y revisi de literatura..................................................... 3 
+2. Modelos de valuaci de activos y CCAPM........................................7 
+3. Estimaci del modelo ....................................................................... 19 
+4. Datos...................................................................................................21 
+5. Resultados........................................................................................... 25 
+6. Conclusiones....................................................................................... 30 
+7. Bibliografía.........................................................................................32 
+
+Índice de tablas 
+Tabla 1. Principales estadísticos de la tasa de crecimiento del CBNDYS Tabla 2. Principales estadísticos de la tasa de rendimiento del IPC Tabla 3. Principales estadísticos de la tasa libre de riesgo y de la inflaci Tabla 4.  Estimaci con variables instrumentales de la funci Hansen & Singleton Tabla 5.  Estimaci con variables instrumentales de la funci de Abel 
+
+Índice de gráficas 
+Gráfica 1. Capital Asset Pricing Model Gráfica 2. Tasa de crecimiento del CBNDYS Gráfica 3. Tasa de rendimiento del IPC Gráfica 4. Rendimiento real de los activos libres de riesgo Gráfica 5. Prima de riesgo Gráfica 6. Gamma vs Tasa libre de riesgo 
+1. Introduccin y revisin de literatura 
+El objetivo de la teoría de valuaci de activos es entender el comportamiento de pagos futuros que son inciertos. Para valuar un activo es necesario tomar en cuenta dos aspectos: el tiempo y el riesgo. 
+Existen dos enfoques muy populares para la valuaci de activos: 
+. Fijaci absoluta de precios 
+Se basa fundamentalmente en la exposici de cada activo a los riesgos meramente macroeconicos. Este enfoque es el más com en los trabajos académicos, ya que da una idea clara de la explicaci econica del porqué los precios se mueven en tal o cual direcci. El objetivo principal es entender y medir las fuentes de riesgo macroeconico que llevan al movimiento de los precios. 
+Los modelos basados en el consumo, así como los modelos de equilibrio general son dos ejemplos de este tipo. 
+. Fijaci relativa de precios 
+Se centra en la idea de fijar el precio de un activo, dados los precios de otros activos, aunque se utiliza poca informaci de los factores que determinan el riesgo del activo en cuesti. Se suponen como dados los precios de los otros activos. El modelo de valuaci de opciones de Black-Scholes es un ejemplo. 
+En el presente trabajo se considera el modelo de valuaci de activos basado en el consumo que pertenece al primer enfoque mencionado. 
+En modelos estáticos de varios periodos, los activos son comerciados en cada periodo, dependiendo de la informaci que se va conociendo en cada tiempo. De este modo, las decisiones se hacen de manera secuencial, teniendo en cuenta que la decisi que se tome hoy tendrá un impacto en las oportunidades de mana. En un marco dinámico es posible establecer un vínculo entre el sector real de la economía y los sectores financieros. 
+Merton (1973) introduce un modelo de maximizaci intertemporal para el mercado de capitales en el cual los inversionistas actn de tal manera que maximizan la utilidad esperada del consumo de toda su vida, además de que pueden comerciar continuamente en el tiempo. Las funciones de demanda explícitas de los activos se ven afectadas por la posibilidad de que ocurran cambios inciertos en las oportunidades de inversi en el futuro. Encuentra que los rendimientos esperados de los activos riesgosos pueden diferir de la tasa libre de riesgo, a cuando no tengan riesgo sistemático, debido a que se capturan efectos que de otra manera no aparecerían en el modelo estático de un solo periodo. 
+Breeden (1979) reconcilia el modelo intertemporal de activos de Merton (1973) con el modelo clásico (Capital Asset Pricing Model, CCAPM) destacando la dicotomía entre la riqueza y el consumo. En un marco intertemporal, Breeden muestra que las preferencias de los agentes deben ser definidas sobre el consumo: “always, when the value of an additional dollar payoff in a state is high, consumption is low in that state, and when the value of additional investment is low, optimal consumption is high. This is not always true for wealth, when investment opportunities are uncertain1”. 
+Hansen y Singleton (1982) proponen el Método Generalizado de Momentos (GMM por sus siglas en inglés) para estimar y probar modelos no lineales de expectativas racionales utilizando directamente la ecuaci de Euler. De manera empírica utilizan datos de consumo de EU de 1959 a 1978 y los rendimientos obtenidos del New York Stock Exchange. Formulan un modelo canico basado en el consumo, el cual considera a un inversionista representativo que tiene una funcin de utilidad con coeficiente de aversi relativo al riesgo constante (CARRC) y separable en el tiempo. Encuentran que el modelo se rechaza y que con los resultados obtenidos se es incapaz de explicar de manera conjunta la variaci de las tasas de interés y los rendimientos promedio de los activos. 
+1 Siempre, cuando el valor de un dlar adicional en un estado es alto, el consumo en ese mismo estado es bajo, y cuando el valor de una inversin adicional es bajo, el consumo ptimo es alto. Para la riqueza esto no siempre es cierto, cuando las oportunidades de inversin son inciertas. 
+Mehra y Prescott (1985) desarrollan la idea del enigma de la prima de riesgo que consiste en que la baja volatilidad del crecimiento del consumo so puede ser reconciliada con los rendimientos observados de los activos si el coeficiente de aversi relativo al riesgo (CARR) es mucho más grande que los valores considerados como plausibles. Para que ese coeficiente fuese plausible, se necesitaría una tasa libre de riesgo muy grande; lo cual resultaría incompatible con la evidencia. Utilizan datos de EU para el periodo 1889-1978 y encuentran una prima de riesgo estimada de 6.18% que resulta incongruente con la teoría. Estiman que con un CARR igual a 2, el modelo implicaría una tasa libre de riego de 3.7% anual, que es considerablemente mayor a la media muestral que es de 0.80% con una desviaci estándar de 0.60% 
+En el modelo original de Breeden (1979), los activos son valuados de acuerdo a su contribuci marginal al consumo y no a la riqueza. Este modelo fue conocido después como el modelo de valuaci de activos basado en el consumo (Consumption Capital Asset Pricing Model, CCAPM). 
+Diversos autores han probado empíricamente el CCAPM y han obtenido resultados decepcionantes, que se puede deber en gran medida a la especificaci de la funci de utilidad. En el CCAPM, la tasa de sustituci intertemporal es una funci de la tasa de crecimiento del flujo del consumo de bienes no durables y servicios. 
+En algunos intentos de mejorar el comportamiento del CCAPM, se han utilizado distintas funciones de utilidad. Por ejemplo, Mankiw (1985) introduce bienes duraderos, Aschauer (1985) incorpora los servicios y los gastos de gobierno y Abel (1990) con su modelo 'Catching up with the Joneses' agrega la formaci de hábitos en el consumo. 
+Gordon y Samson (2002) analizan el comportamiento del CCAPM para el caso de Canadá. En su trabajo comparan seis especificaciones de la funci de utilidad. Utilizan datos cuatrimestrales del consumo de bienes no durables y servicios per cápita y el índice del Toronto Stock Exchange para el periodo de 1969-1992. Encuentran que ninguna especificaci alternativa a la funci de utilidad con CARRC se comporta mejor que ésta tima. 
+Márquez (2004) examina el caso de Espa, donde además de incorporar los bienes no duraderos y servicios, introduce los servicios que proveen los bienes duraderos. Usa datos anuales del consumo y del Índice General Total de la Bolsa de Madrid para el periodo 1964-2002. En cuanto a la forma de la funci de utilidad, utiliza la de CARRC y la de Abel con formaci de hábitos. Concluye que utilizando la funci de CARRC, el CARR estimado es muy elevado para ser plausible, lo que daría lugar al enigma de la prima de riesgo. Sin embargo, cuando utiliza la funci de Abel, los valores de la estimaci del CARR resultan plausibles. Sin embargo, las estimaciones resultan muy sensibles a la medida de consumo que se utilice. 
+Diversos estudios han probado empíricamente el CCAPM para otros países. Por ejemplo, Arango y Ramírez (2007) lo hacen para Colombia para el periodo de 1971­2003, utilizan la funcin de CARRC y encuentran que la elasticidad de sustituci intertemporal del consumo es de -0.1334. Además, estiman el factor de descuento subjetivo en 0.87, lo que implicaría que el consumidor colombiano representativo es impaciente. 
+El mercado brasile es analizado por Pessoa y Bonomo (2007), utilizando cuatro tipos de funciones de utilidad. Encuentran que el factor de descuento subjetivo estimado está dentro de los niveles plausibles y que el CARR es bajo. Con dichos valores estimados no se presenta el enigma de la prima de riesgo. 
+Li (2007) estudia el caso australiano utilizando cuatro especificaciones de la funci de utilidad. Concluye que la funci de utilidad con CARRC propuesta por Hansen y Singleton es capaz de explicar los datos, sin que se presente el enigma de la prima de riesgo. 
+Jap es analizado por Kubota, et al (2008) para el periodo 1986-1998. Los datos de este trabajo demuestran que so un peque porcentaje de los hogares japoneses tienen en com el mismo tipo de activos. Por lo tanto, se esperaría que el CARR difiriera entre los distintos niveles de ingreso. Sus estimaciones reflejan que esto timo efectivamente sucede. Además, para los hogares con ingresos más altos, el CCAPM es rechazado. En general, los CARR estimados no son significativos. 
+Recientemente, Javid y Ahmad (2009) analizan la implementaci del CCAPM para el caso pakistaní, utilizando datos de 49 acciones comerciadas en el Karachi Stock Exchange para el periodo de 1993-2004. 
+Ho (2009) ocupa datos de Estados Unidos para el periodo de 1999-2003 para estimar el CCAPM, ocupando la idea original de Epstein-Zin. En ésta se usa una funci de utilidad recursiva, que da como resultado una ecuaci de Euler con CARR que varía en el tiempo. Los resultados rechazan la hipesis de que el CARR es constante, reforzando la utilizaci de este tipo de funci de utilidad. 
+En este trabajo se pretende estimar el coeficiente de aversi relativa al riesgo y la tasa de descuento subjetiva para el mercado mexicano para el periodo de 1993-2007. Se utiliza informaci del consumo privado de bienes no duraderos y servicios, además del Índice de Precios y Cotizaciones de la Bolsa Mexicana de Valores. Con los coeficientes estimados se analizará si se presenta el llamado enigma de la prima de riesgo. 
+
+2. Modelos de valuacin de activos y CCAPM 
+La hipesis del ingreso permanente de Friedman y la hipesis del ciclo de vida de Modigliani fueron aproximaciones para vincular a las variables del ingreso con el consumo, donde se ubicaba claramente el hecho de que los cambios transitorios en el ingreso tienen menos impacto en el consumo que los cambios permanentes. 
+Lucas (1976) con su teoría de las expectativas racionales, explica que existe una relaci estructural entre el ingreso permanente y el consumo. Critica que la funci de utilidad impone una relaci entre el ingreso observado y el ingreso permanente y que no hay raz para esperar una relaci estable de ese tipo. Por ejemplo, una política fiscal, puede tener efecto en la decisi tima del consumidor al momento de hacer inferencia de cuál será su ingreso permanente a través de su ingreso observado. Referente al consumo, comenta que los agentes utilizan toda la informaci disponible acerca del comportamiento de otros agentes en la economía al momento de procesar la informaci, incluyendo al gobierno. 
+Hall (1978) utiliza el contexto de las expectativas racionales de Lucas para probar empíricamente que los agentes maximizan el valor esperado de la utilidad de toda su vida, sujeta a una tasa de interés que no cambia en el tiempo. La idea básica de su trabajo, es analizar la ecuaci de Euler que describe el comportamiento timo de un consumidor representativo. Dicha ecuaci, caracteriza la igualdad entre la tasa marginal de sustituci entre el consumo presente y el consumo del siguiente periodo y el costo presente de cada unidad de consumo futuro debidamente descontada. Concluye que so el consumo en el periodo t-1 es il para pronosticar el consumo en el periodo t. 
+Hall (1985) estudia la relaci que existe entre el consumo y las tasas de interés. Usualmente, se esperaría que un alza en las tasas de interés incite a los agentes a aplazar su consumo, manteniendo todo lo demás constante. La magnitud de esta sustituci intertemporal es muy importante, debido a que si un incremento peque en las tasas de interés implica un cambio importante en el consumo, entonces: 
+. Incrementos en las tasas de interés harán que el consumo disminuya, siempre que los otros componentes de la demanda agregada constantes. El ingreso total no se verá afectado por estos cambios. 
+. La carga de la deuda gubernamental será muy poco importante. 
+. El consumo se moverá junto con las tasas de interés, más que con el ciclo econico. 
+Concluye que, en general, el consumo no se incremente más rápidamente en periodos en los que hay expectativas de altas tasas de interés. 
+Medir el riesgo no diversificable2 juega un papel crítico en la teoría de la valuaci de activos. El modelo CAPM (Capital Asset Pricing Model) mide el riesgo de un activo a través de la covarianza de éste con el rendimiento de un portafolio de mercado. En comparaci con el CCAPM que mide el riesgo de un activo por medio de la covarianza de su rendimiento con el consumo per cápita. 
+Es sabido que los activos riesgosos tienen tanto un mayor rendimiento esperado, como una mayor varianza de sus rendimientos. El CAPM tiene sus bases en la teoría moderna del portafolio y establece una relaci entre el riesgo y el rendimiento esperado. Sus principales características son: 
+. Los agentes toman en cuenta cierta informaci estadística -media, varianza, covarianza-del rendimiento del activo para tomar sus decisiones y no existe la vinculaci del sector financiero con el sector real de la economía. 
+. Tiene como supuesto que la oferta de los activos existentes es igual a la demanda de los mismos y que por lo tanto, los precios observados son los de equilibrio. 
+. Expresa el equilibrio en términos de las relaciones existentes entre las funciones de distribuci de los rendimientos de los activos individuales y el rendimiento del portafolio que contiene a todos esos activos. 
+En el CAPM se consideran agentes con expectativas homogéneas, además de que existe un activo libre de riesgo que da una tasa de rendimiento rf. Esto garantiza que el portafolio timo de todos los agentes tenga la misma estructura: una fracci de la riqueza inicial que es invertida en el activo libre de riesgo y el resto en el portafolio de mercado, T (Market portofolio)3. 
+2 El riesgo no diversificable es aquel que no se puede reducir o eliminar, mediante la adicin de activos a un portafolio diversificado. 3 El portafolio de mercado es el portafolio tangente que está formado por todos los activos, cuya proporcin invertida en cada activo corresponde a su valor relativo de mercado. El valor relativo de mercado es igual al valor agregado del mercado de este activo, dividido entre la suma del valor agregado del mercado de todos los activos. 
+Sea wij la proporci que el individuo i invierte en el activo j de su riqueza inicial Yoi. Entonces, si existieran I individuos en la economía, el valor total del activo j sería 
+..
+..=1 ........0..que se interpretaría como la demanda de ese activo. 
+..
+En el equilibrio se debe obtener que ........0.., donde pj es el precio de 
+..=1 = ........equilibrio del activo j, ....es el nero total de títulos activo j que están en circulaci. Por lo tanto,  ........es la capitalizaci de mercado del activo j. 
+Debido a que todos los inversionistas tienen la misma estructura del portafolio T y a que no realizan otras inversiones riesgosas, entonces todos los activos riesgosos existentes, deben estar en T. Es decir, si existiera otro activo riesgoso que no estuviera en T, entonces no habría demanda para el mismo. 
+El rendimiento esperado de un activo j, seg el CAPM, está dado por: 
+......(...., ....)
+..(....)= ....+ ..(....-....)
+......(....) 
+donde: 
+E(rj) es la tasa de rendimiento esperada de capital sobre el activo j. E(rm - rf) es el exceso de rendimiento del portafolio de mercado. rm es el rendimiento del mercado. rf es el rendimiento del activo libre de riesgo. 
+En el CAPM, el exceso de rendimiento del activo j, será una proporci del exceso de rendimiento del portafolio de mercado. 
+En la figura 1 se muestra la representaci gráfica del CAPM. 
+
+Es interesante notar que el CAPM tiene ciertas limitaciones por ser un modelo de equilibrio parcial estático. Sin embargo, existe el modelo estático Arrow-Debreu para valuaci de activos que se enfoca en un equilibrio total, aplicable para mtiples periodos. Este timo, no requiere supuestos sobre las preferencias de los agentes o sobre la distribuci de los rendimientos. 
+Suponga que existen dos tiempos t=0,1 y que existen N posibles estados de la naturaleza en el tiempo 1 que se denotarán como .=1,2,…,N con probabilidad .. cada uno. Además, so existe un bien no duradero para el consumo. 
+En esta economía, existen K agentes, k=1,2,…,K cuyas preferencias están denotadas por 
+........
+..0 ..0+ ................y cada agente tiene como dotaci {..0 ..,(......)..=1,2,…,..}.
+..=1 
+..
+....denota el consumo del agente k en el único bien de consumo en el estado ., U es la representaci de la utilidad sobre las preferencias y ....es el factor de descuento subjetivo del agente k. 
+Esta teoría permite que se utilicen preferencias cuya funci de utilidad sea 
+........
+intertemporalmente separables, ....(..0, ....1, ....2, …, ......). 
+Existe una sola unidad de un solo activo ., cuyo precio es q., que paga una unidad de consumo si ocurre el estado . y cero en otro caso. El consumo de un agente k, si ocurre el estado ., es igual al número de unidades del activo . que haya comprado. De aquí se desprende que comprar el activo . es la única manera de asegurarse consumo futuro, ya 
+que el bien es no duradero. 
+El problema del agente en el modelo Arrow-Debreu es: 
+............+ ..........(..0 ..,..1 ..,..2 ..,…,......) ..0 ..0 ..........=1 
+s.a. 
+..........
+..0+ ..........=..0+ ..........=1 ..=1 
+........=0
+..0, ..1, ..2, …, ....
+Aunque esta teoría es la más general, es poco il en la práctica porque requiere identificar los estados de la naturaleza individuales; y a cuando un estado es identificado, no siempre se puede verificar su ocurrencia. 
+Tanto el CAPM como el modelo Arrow-Debreu son modelos estáticos con dos periodos: 0 y 1. Las decisiones de compra de los activos, so se hacen en el periodo cero. En la realidad, los activos son comerciados conforme la nueva informaci se va haciendo disponible y los agentes hacen sus decisiones de manera secuencial, siempre teniendo en cuenta que la decisi de hoy afectará las oportunidades de maana. 
+El modelo CCAPM está hecho bajo un entorno dinámico, donde se asume que la poblaci está conformada por muchos hogares, que son idénticos entre ellos. Por lo tanto, se reduce a analizar a uno de ellos -a un agente representativo. De aquí subyace la idea de que ning agente puede comerciar con otro. Si un agente quisiera pedir prestado, como todos son idénticos, todos los demás agentes querrían pedir prestado también y ninguno estaría dispuesto a prestar. Por consiguiente, el comercio de activos debe venir de negocios, bancos, etc. 
+En el CCAPM, igual que en el modelo Arrow-Debreu, la posesi de activos permite asegurar consumo en el futuro, debido a que los bienes en la economía son no duraderos. 
+Para analizar modelo CCAPM se utiliza a un agente representativo que enfrenta el siguiente problema: 
+max   u(ct) + Et[ßu(ct+1)] . 
+s.a. 
+ct = et - pt. 
+ct+1 = et+1 + Xt+1. 
+donde: 
+ß es el factor de descuento subjetivo que captura la impaciencia del agente u(.) es la funci de utilidad instantánea del agente ct es el consumo en el tiempo t et es el nivel  original de consumo en el tiempo t (si el agente no compra ning activo) pt es el precio del activo en el tiempo t . es la cantidad del activo que compra Xt+1 es el pago del activo en el tiempo t+1 
+Obteniendo las condiciones de primer orden del problema de maximizaci: ptu’(ct) = Et[ßu’(ct+1)Xt+1]................................................................................... (1) 
+La ecuaci (1) implica que la pérdida de utilidad, si el inversionista compra otra unidad del activo, se ve compensada con el incremento descontado de la utilidad esperada de un pago extra en el tiempo t+1. 
+Despejando pt de la ecuaci (1), se obtiene: 
+u’(ct+1) 
+pt = Et[ß Xt+1]........................................................................................... (2) 
+u’(ct) 
+La ecuaci (2) es la frmula central de la valuaci de activos. Relaciona una variable endena, el precio, con otras dos variables exenas, el consumo y el pago del activo. 
+La idea principal de la ecuaci (2) es que dado un pago (Xt+1) y una vez que se conoce la decisi de consumo del agente (ct y ct+1) se podría saber qué precio esperar (pt). 
+u’(ct+1) 
+Sea m t+1 =ß el factor de descuento estocástico. Sustituyéndolo en la ecuaci 
+u’(ct) 
+(2), se puede expresar pt como: 
+pt = Et[m t+1 Xt+1] ................................................................................................ (3) 
+La ecuaci (3) se puede reescribir como: Et[m t+1 Xt+1 -pt]=0 ............................................................................................. (4) 
+La ecuaci (4) estaría proporcionando las condiciones de momentos para utilizar el Método Generalizado de Momento en la estimacin. 
+El Método Generalizado de Momentos lo introdujo Hansen en 1982 y desde entonces ha sido ampliamente utilizado para el análisis financiero y econico. El GMM tiene dos principales ventajas sobre el Método de Máxima Verosimilitud (MLE por sus siglas en inglés): 
+a) 
+El MLE provee buenos estimadores si la distribuci asumida está correctamente especificada. Pero la teoría econmica, rara vez proporciona la especificaci completa de la distribuci de probabilidad de los datos. Una soluci, es elegir una distribuci de manera arbitraria, pero se corre el riesgo de que el estimador resultante no sea timo y esto lleve a hacer inferencias incorrectas. 
+
+b) 
+So en algunos casos, el modelo econico coincide con la funci de distribuci conjunta de los datos; pero el problema surge cuando se trata de estimar la funci de verosimilitud ya que es complicada de evaluar numéricamente. En otros casos, el modelo terico so cubre algunos aspectos de la funci de distribuci y para completar las estimaciones es necesario estimar parámetros adicionales. 
+
+
+En contraste, el GMM es un método computacionalmente conveniente, ya que no requiere una especificaci de la funci de verosimilitud. 
+La piedra angular del GMM es establecer una serie de condiciones que se deducen de los supuestos del modelo econométrico. La naturaleza de estas condiciones, difiere de aplicaci a aplicaci. Sin embargo, la validez de éstas es esencial para las propiedades del estimador resultante. 
+Suponga .0 un vector de parámetros desconocidos, vt un vector de variables aleatorias y f(.) un vector de funciones, entonces las condiciones de momentos poblacionales estarán dadas por: 
+E[ f (vt ,.0)]=0 para toda t...................................................................................(5) 
+El estimador del GMM basado en la ecuaci (5) es el valor de . que minimice: 
+....
+......= ..-1 ..(...., ..)......-1 ..(...., ..).............................................. (6) 
+..=1 ..=1 
+donde ....es una matriz positiva semi-definida que depende de los datos, pero que converge en probabilidad a una matriz positiva definida de constantes. 
+La matriz ....asegura que ......=0 para cualquier . y que ........=0, si ..
+..-1 ......, ....=0 . Sin embargo, la condici de que sea positiva semi-definida 
+..=1 deja abierta la posibilidad de que ........=0 para un valor de ....que no satisfaga las condiciones de momentos muestrales. 
+Si el nero de condiciones excede al nero de parámetros a estimar, entonces la elecci de la matriz W es fundamental para asegurar que el estimador sea de mínima varianza. 
+Una manera de analizar si el modelo está correctamente especificado es a través de una prueba de hipesis. 
+Ho : E[ g(vt,.0) ] = 0 vs. Ha : E[ g(vt,.0) ] . 0.................................................... (7) 
+En el CCAPM el vector de parámetros a estimar es b = {ß , .}, antes llamado ., que está en funci del factor de descuento subjetivo y de la forma de la funci de utilidad. 
+Sean ut+1(b)= m t+1 (b) Xt+1 -pt los errores, cuya media debe ser cero. Sustituyendo los errores en la ecuaci (4), se tiene que: 
+Et[ut+1(b)]=0........................................................................................................ (8) 
+Definiendo gT(b) como la media muestral de los errores, implica que: 
+1 
+gT(b)= ......(..) = Et[ut+1(b)] = Et[m t+1 Xt+1 -pt] ......................................... (9) 
+..=1 ..
+La primera etapa del GMM consiste en estimar b, tal que minimice la forma cuadrática de la media muestral de los errores. 
+..1= ............{..}......'..................................................................................... (10) 
+Generalmente, en esta primera etapa se utiliza la matriz identidad como W. El estimador de ..1 es consistente y asinticamente normal 
+En la segunda etapa del GMM se elige una matriz de ponderaci, W, bajo ciertas consideraciones estadísticas. La matriz de covarianza de ....es la varianza de la media muestral. 
+Explotando el supuesto de que Et[ut+1(b)]=0 y que ut+1(b) es estacionario, se obtiene: 
+1 
+Var(....) = Var( ......)
+..=1 
+..
+1 
+= ..2[........' ....+ ..-1 ......' ....-1+ ......' ....+1 + .] ........ (11) 
+(..-..)
+Cuando T 8, entonces 1. Utilizando esto en la ecuaci (11): 
+..
+11
+8
+Var(....) ......' ....= .................................................................. (12) 
+..=-8
+....
+Lo anterior sugiere que la inversa de S podría ser una buena matriz de ponderaci en la segunda etapa para asegurar que el estimador tenga varianza mínima. Utilizando el estimado de la primera etapa, ..1, se estima S como: 
+1 
+8' 
+S= =-8 .................................................................................. (13) 
+..........-..(..)' 
+Una vez estimada S, se obtiene: ..2= ............{..}......1 '..-1......1 ......................................................................... (14) 
+..2 es un estimador consistente, asinticamente normal y asinticamente eficiente del ..
+vector de parámetros, (). 
+..
+De la ecuaci (4) se observa que el escenario ideal sería que Et[m t+1 Xt+1] – Et[pt]=0. 
+La prueba de sobreidentificaci examina qué tan grandes son los errores entre los precios predichos y los precios observados. El estadístico de prueba es: TJT = ..[......'..-1......]~..2 
+(#................-#......á............) ....+1 
+Dividiendo la ecuaci (4) por pt y renombrando ....+1 = como el rendimiento 
+....
+bruto, se tiene que: 
+Et[m t+1(b) Rt+1-1] = 0 ....................................................................................... (15) 
+Reescribiendo la ecuacin (15), se obtiene: Et[m t+1(b) Rt+1] = 1............................................................................................ (16) 
+Para una variable Zt observada en el tiempo t, utilizando la ecuaci (16) y antes de tomar esperanzas no condicionales: 
+E[m t+1(b) Rt+1 Zt] = E(Zt) .................................................................................. (17) 
+Reescribiendo la ecuacin (17): E{[m t+1(b) Rt+1 -1] Zt} = 0................................................................................ (18) 
+
+3. Estimacin del modelo 
+Como ya se selanteriormente, el GMM resulta adecuado para estimar el CCAPM. 
+En este trabajo se utilizan dos funciones de utilidad para estimar el factor de descuento estocástico. Las funciones son: 
+a) Hansen y Singleton (1983), funci aditivamente separable de CARRC. 
+Posiblemente, la funci de utilidad más utilizada en el contraste empírico del CCAPM. 
+Se deriva de considerar una economía con agentes idénticos que eligen su consumo e inversi tales que maximicen el valor esperado de una funci de utilidad intertemporalmente separable von Neumann-Morgenstern, donde la distribuci conjunta del consumo y los rendimientos se asume como lognormal y las preferencias exhiben CARRC. 
+1-..
+....
+Considere ......= , donde ....es el consumo real agregado per cápita. 
+1-..
+Dada esta funci, el factor de descuento estocástico a estimar será: 
+....+1 
+....+1 = ..()-................................................................................................ (19) 
+....
+Sustituyendo la ecuaci (19) en la (15), se obtiene: 
+....+1 
+Et[..()-..Rt+1-1] = 0....................................................................................(20) 
+....
+Donde ..es el factor de descuento subjetivo y ..es el coeficiente de aversi relativo al riesgo, y su inverso es la elasticidad de sustituci intertemporal del consumo. 
+
+b) Abel (1990), funci de utilidad con formaci externa de hábitos. 
+Abel introdujo una funci de utilidad que engloba tres aspectos: 
+. Separable intertemporalmente 
+. Funcion de utilidad "catching up with the Joneses" que depende del nivel de 
+consumo individual relativo al promedio del nivel de consumo rezagado . Formaci de hábitos. 
+Se asume que el crecimiento del consumo es independiente e idénticamente distribuido. 
+Considere la siguiente funci de utilidad: 
+1-..
+....
+()
+....-1
+......, ....-1= . 
+1-..
+El factor de descuento estocástico a estimar es: 
+....+1 )-......+1 = ..( .................................................................................................. (21) 
+( ....)1-......-1 
+Sustituyendo la ecuaci (21) en la (15), se obtiene: 
+....+1 )-..Et[..( ........Rt+1-1] = 0.................................................................................... (22) 
+)1-..
+(
+....-1 
+Donde ..es el factor de descuento subjetivo y ..es el coeficiente de aversi relativo al riesgo, y su inverso es la elasticidad de sustituci intertemporal del consumo. 
+
+
+4. Datos 
+Los datos del consumo se obtuvieron del Sistema de Cuentas Nacionales de México publicado por el Instituto Nacional de Estadística y Geografía. Se consideraron los gastos de consumo privado en bienes no duraderos y servicios a precios de 1993 con frecuencia trimestral, para el periodo de 1993:01 a 2007:04. 
+La tabla 1 muestra los principales estadísticos de la tasa de crecimiento trimestral del consumo de bienes no duraderos y servicios (CBNDYS). 
+Tabla 1. Principales estadísticos de la tasa de crecimiento del CBNDYS  
+Media 0.00719  
+Mediana 0.01072  
+Desviaci estándar 0.02323  
+Asimetría -0.76172  
+Curtosis 3.64378  
+
+Para obtener la tasa de rendimiento de los activos financieros se utilizel Índice de Precios y Cotizaciones (IPC)4 de la Bolsa Mexicana de Valores para el periodo de 1993­2007. 
+La prima de riesgo es calculada como la tasa de rendimiento real del IPC menos la tasa de rendimiento real de los activos libres de riesgo. En la gráfica 5, se presenta el comportamiento de la prima de riesgo. 
+En la tabla 2 se recogen los principales estadísticos de la tasa de rendimiento trimestral del IPC. 
+Tabla 2. Principales estadísticos de la tasa de rendimiento del IPC  
+Media 1.06005  
+Mediana 1.07501  
+Desviaci estándar 0.13609  
+Asimetría 0.14892  
+Curtosis 2.96329  
+
+En la gráfica 2 se observa la evoluci de la tasa de crecimiento trimestral del 
+CBNDYS para el periodo ya selado. 
+4 A partir del 1° de julio de 2002 se utilizel Índice de Rendimiento Total (IRT) que tiene su base en octubre de 1978. Antes de esta fecha, comparte histrico con el Índice de Precios y Cotizaciones (IPC). El IRT quedcomo la contraparte de Rendimiento Total del IPC considerando además de las fluctuaciones del mercado accionario del IPC, los ajustes correspondientes por Dividendos en Efectivo decretados, debido a que el IPC dejde ajustar su nivel por dividendos en efectivo decretados 
+Gráfica  2. Tasa de crecimiento del CBNDYS 
+0.08 
+0.06 
+0.04 
+0.02 
+0.00 
+-0.02 
+-0.04 
+-0.06 
+-0.08 
+191919191919191919191919191920202020202020202020202020202020 93/0193/0394/0194/0395/0195/0396/0196/0397/0197/0398/0198/0399/0199/0300/0100/0301/0101/0302/0102/0303/0103/0304/0104/0305/0105/0306/0106/0307/0107/03  
+
+El deflactor es obtenido del Índice Nacional de Precios al Consumidor (INPC) con base en 2002 para el periodo de 1993-2007. La tasa libre de riesgo está dada por el rendimiento trimestral de la tasa de rendimiento en CETES a 28 días. Ambos publicados por el Banco de México. En la tabla 3 se muestran los principales estadísticos de la inflaci trimestral obtenida a partir del INPC y de la tasa libre de riesgo. 
+Tabla 3. Principales estadísticos de la tasa libre de riesgo y de la inflacin  
+Inflaci Tasa libre de riesgo  
+Media 0.02765 0.16339  
+Mediana 0.01686 0.14000  
+Desviaci estándar 0.03034 0.11877  
+Asimetría 2.61313 1.70949  
+Curtosis 10.8127 5.87446  
+
+En la gráfica 3 se muestran las tasas de rendimiento bruta del IPC con frecuencia trimestral. 
+Rend real activo libre de riesgo  
+Inflacin  
+
+
+
+ 
+
+ 
+
+ 
+
+
+1993/011993/031994/011994/031995/011995/031996/011996/031997/011997/031998/011998/031999/011999/032000/012000/032001/012001/032002/012002/032003/012003/032004/012004/032005/012005/032006/012006/032007/012007/03 
+0.55 0.45 0.35 0.25 0.15 0.05 -0.05 
+
+1993/011993/031994/011994/031995/011995/031996/011996/031997/011997/031998/011998/031999/011999/032000/012000/032001/012001/032002/012002/032003/012003/032004/012004/032005/012005/032006/012006/032007/012007/03 
+Para obtener el rendimiento real de un activo libre de riesgo se utiliza el deflactor correspondiente a cada periodo. En la gráfica 4 se muestra la evoluci trimestral de la inflaci, de la tasa libre de riesgo y del rendimiento real de un activo libre de riesgo. 
+Gráfica  4. Rendimiento real de los activos libres de riesgo 
+0.65 
+La prima de riesgo es calculada como la tasa de rendimiento real del IPC menos la tasa de rendimiento real de los activos libres de riesgo. En la gráfica 5, se presenta el comportamiento de la prima de riesgo. 
+Gráfica 5. Prima de riesgo 
+0.40 
+0.20 
+0.00 
+-0.20 
+-0.40 
+-0.60 
+-0.80 
+1993/011993/031994/011994/031995/011995/031996/011996/031997/011997/031998/011998/031999/011999/032000/012000/032001/012001/032002/012002/032003/012003/032004/012004/032005/012005/032006/012006/032007/012007/03  
+
+
+5. Resultados 
+La serie de CBNDYS se desestacionalizutilizando el método de ratio to moving average. 
+Recordando que para asegurar que el estimador del GMM sea eficiente, se utiliza la 
+1
+-18' 
+inversa de S como matriz de ponderaci, W=S. Donde S= ............-..(..)' .
+..=-8..
+De la ecuaci (16), el valor estimado del vector de parámetros b es: 
+5
+..2= ............{..}......1 '..-1......1 
+De acuerdo a la metodología utilizada por Hansen y Singleton (1982), en el presente trabajo se utilizan como variables instrumentales rezagos el cambio en el consumo y del rendimiento del IPC, donde el nero de rezagos utilizados son de 1, 2, 4 y 6. 
+En la siguiente tabla, se presentan los resultados para la funcin de utilidad intertemporalmente separable de Hansen y Singleton, donde la ecuaci estimada es: 
+....+1 
+Et[..()-..Rt+1-1] = 0 
+....
+Tabla 4. Estimaci con GMM de la funci Hansen & Singleton  
+6No.de rezagos ..SE....SE..Grados de libertad 7Prob.  
+1 0.9818 0.0242 2.1253 1.8402 1  0.6799  
+2 0.9551 0.0221 0.0475 1.4557 3  0.3073  
+4 0.9440 0.0139 -0.2586 0.8125 7  0.4771  
+6 0.9372 0.0125 -0.5632 0.8083 11  0.7464  
+
+Los principales resultados son: 
+Donde ..1 es el estimador de la primera etapa, cuando se utiliza W=I. 
+i.  El factor de descuento subjetivo es significativo en todos los casos y menor que la unidad. Además de no ser sensible al nero de rezagos considerados.  
+ii.  El CARR, ., estimado no es estadísticamente distinto de cero en ning caso.  
+
+
+6Se refiere a los grados de libertad de la chi cuadrada estimada para la prueba de sobreidentificacin de restricciones del GMM. 
+7 Se refiere a la probabilidad de que una variable chi cuadrada, con los grados de libertad indicados en la columna anterior, sea menor que el valor calculado del estadístico de prueba bajo la hiptesis de que las restricciones (15) son satisfechas. 
+iii. De acuerdo al test de sobreidentificaci el modelo no se puede rechazar en ning caso. 
+En la tabla 5, se presentan los resultados para la funci de utilidad de Abel con formaci externa de hábitos. Recordando que la ecuaci estimada es: 
+....+1 )-..
+( 
+Et[..........Rt+1-1] = 0 
+)1-..
+(
+....-1 
+Tabla 5. Estimaci con GMM de la funci de Abel  
+No.de rezagos ..SE....SE..Grados de libertad  Prob.  
+1 0.9746 0.0160 1.3836 0.4878 1  0.9412  
+2 0.9655 0.0162 1.0476 0.4386 3  0.2840  
+4 0.9552 0.0106 0.7715 0.3643 7  0.5173  
+6 0.9474 0.0092 0.9786 0.2845 11  0.7431  
+
+Los principales resultados son: 
+i. El factor de descuento subjetivo es significativo en todos los casos y los valores 
+estimados de ß son muy similares a los arrojados por la función de utilidad 
+anterior (mayor que 9 y menor que la unidad) que resultan similares a los estimados por Hansen y Singleton (1982). 
+ii. En este caso, los coeficientes estimados de . son significativos al 5% en todos los casos considerados. Los valores estimados son muy sensibles a los instrumentos utilizados, dichos valores están entre 0.7 y 1.3 
+iii. De acuerdo al test de sobreidentificaci el modelo no se rechaza en ning caso. 
+Siguiendo el trabajo de Mehra y Prescott (2003) se verifica si se presenta el enigma de la prima de riesgo para el caso de México durante el periodo considerado. 
+Suponiendo que la tasa de crecimiento del consumo de distribuye de forma lognormal, entonces: 
+1
+ln ....= -......+ ......-..2....2 .......................................................................... (23) 
+2 
+donde: 
+....es la media de la tasa libre de riesgo ..es el factor de descuento subjetivo ..es el coeficiente de aversi relativa al riesgo ....es la media de la tasa de crecimiento del consumo ....2 es la varianza de la tasa de crecimiento del consumo 
+El primer término del lado derecho de la ecuacin (23), -lnß, representa la impaciencia de los agentes. Si ß<1, entonces el agente prefiere el consumo presente al consumo futuro. Entonces, en un contexto sin incertidumbre y sin crecimiento del consumo, la ica tasa de interés en la economía sería Rf=1/ß. 
+El segundo término, ......, surge debido al crecimiento del consumo. Entre mayor sea la curvatura de la funci de utilidad y mayor sea la tasa de crecimiento del consumo, se incrementará el deseo de suavizar el consumo. Resultando, en el equilibrio, en una mayor tasa de interés. 
+1 
+El tercer término, ..2....2, aparece debido a la demanda de ahorro precautorio. En un 
+2 
+mundo con incertidumbre, los agentes se protegen contra el consumo futuro poco favorable a través de stocks de bienes de consumo. En el equilibrio, la tasa de interés debe disminuir para contrarrestar estos ahorros precautorios. 
+En la figura 5 se muestra la ecuaci (23) para diversos valores de ß y ., considerando ....= 0.0072 y ....= 0.232. 
+Gráfica 6. Gamma vs Tasa libre de riesgo 
+ln Rf 
+
+Recordando que la media del rendimiento de la tasa libre de riesgo es 16.3%, entonces los valores plausibles -de acuerdo a los datos de consumo considerados-serían 5<.<7y ß˜0.9. En las estimaciones anteriores el valor más grande estimado del coeficiente de aversi relativa al riesgo es de 2.12 y el promedio del factor de descuento subjetivo es de 0.95. Con estos datos el rendimiento de la tasa libre de interés sería de 5% que está muy por debajo de lo que muestran los datos en el periodo estudiado. 
+
+6. Conclusiones 
+En este trabajo se probempíricamente el modelo de valuaci de activos basado en el consumo (CCAPM) para el caso de México para el periodo de 1993-2007. Se utilizprincipalmente la metodología utilizada por Hansen & Singleton (1983) que involucra el Método Generalizado de Momentos para la estimaci. Se ocuparon los datos de consumo privado en bienes no duraderos y servicios, así como del Índice de Precios y Cotizaciones de la Bolsa Mexicana de Valores. 
+En cuanto a las funciones de utilidad consideradas, se comprobque la funci de utilidad intertemporalmente separable y con coeficiente de aversi relativo al riesgo, ., 
+o constante es incapaz de modelar de manera correcta lo que los datos mexicanos reflejan, ya que en ninguno de los casos considerados el coeficiente de aversi relativo al riesgo resultestadísticamente distinto de cero. Sin embargo, cuando se utilizla funci de utilidad con formaci de hábitos, se encontrque el valor estimado del coeficiente de aversi relativo al riesgo resultaba muy sensible al nero de rezagos utilizados. Las estimaciones del factor de descuento subjetivo resultaron robustas a la funci de utilidad y al nero de rezagos, arrojando un valor aproximado de 0.95. 
+Por otro lado, si se considera la media del crecimiento del consumo y su desviaci estándar, ambas resultan muy bajas para explicar el rendimiento de la tasa de interés libre de riesgo, durante el periodo considerado. Entonces, para empatar lo observado con lo estimado, se requeriría un coeficiente de aversi relativo al riesgo mucho mayor al estimado y un factor de descuento subjetivo ligeramente menor al encontrado. Debido a lo anterior, estaríamos en el caso del enigma de la prima de riesgo. 
+7. Bibliografía 
+Abel, A., 1990, “Asset Prices under Habit Formation and Catching Up with the Joneses”, American Economic Review, vol. 80, 38-42. 
+Arango, M. & Ramírez, A., 2007, “Aversi al riesgo y tasa subjetiva de descuento: el caso colombiano, 1970-2003”, Revista de Ingenierías Universidad de Medellin, vol. 6, 93-99. 
+Breeden, Douglas T., 1979, “An Intertemporal Asset Pricing Model with Stochastic Consumption and Investment Opportunities”, Journal of Financial Economics, vol. 7, 265-296. 
+Cochrane, John H., 2001, AssetPricing, Princeton Press. 
+Danthine, J.. & Donald, J., 2001, Intermediate Financial Theory, Prentice Hall. 
+Gordon, S. & Samson, L., 2002, “Comparing Consumption-Based Asset-Pricing Models”, Canadian Journal of Economics, vol. 35, 586-610. 
+Hall, Alastair, 2005, Generalized Method of Moments, Oxford University Press. 
+Hall, Robert, 1978, “Stochastic Implications of the Life Cycle-Permanent Income Hypothesis: Theory and Evidence”, Journal of Political Economy, vol. 86, 971-987. 
+Hall, Robert, 1985, “Real Interest and Consumption”, National Bureau of Economic Research, no. 1964. 
+Hansen, Lars P. & Singleton, Kenneth J., 1982,“Generalized instrumental variables estimation of nonlinear rational expectations models”, Econometrica, vol. 50, 1269­1286. 
+Hansen, Lars P. & Singleton, Kenneth J., 1983, “Stochastic Consumption, Risk Aversion, ans the Temporal Behavior of Asset Returns”, Journal of Political Economy, vol. 91, 249-265 
+Ho, Kun, 2009, “Time Varying Risk Aversion”, Working Paper, University of Chicago. 
+Javid, A. & Ahmad, E., 2009, “Testing Multifactor Capital Asset Pricing Model in Case of Pakistani Market”, International Research Journal of Finance and Economics, vol. 25, 114-138. 
+Kubota, K., Tokunaga, T. & Wada, K., 2008, “Consumption Behavior, Asset Returns, and Risk Aversion: Evidence from Japanese Household Surveys,” Japan and World 
+Economy. 
+Li, Bin, 2007, “Testing Consumption-based Asset Pricing Models in Australia, Working Paper, University of Queensland. 
+Lucas, Robert, 1976, "Econometric Policy Evaluation: A Critique." Carnegie-Rochester Conference Series on Public Policy, vol. 1, 19–46. 
+Márquez, E., 2004, “El modelo CCAPM y el consumo de bienes duraderos: una primera aproximación para el mercado de valores español”, Documento de trabajo, Universidad Complutense de Madrid. 
+Mehra, R., & Prescott, E., 1985, “The Equity Premium: A Puzzle”, Journal of Monetary Economics, vol. 15, 145-161. 
+Mehra, R. & Prescott, E., 2003, “The Equity Premium in Retrospect”, Handbook of the Economics of Finance, vol. 14, 888-915. 
+Merton, Robert C., 1973, "An Intertemporal Capital Asset Pricing Model", Econometrica, vol. 41, 867-887. 
+Pessoa, M. & Bonomo, M., 2007, “Reproducing the Return Moments of Brazilian’s Financial Assets with Generalized Disappointment Aversion”, Fourth Workshop of the Latin Finance Network. 
+
+
+
+

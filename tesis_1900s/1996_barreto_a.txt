@@ -1,0 +1,2630 @@
+EL COLEGIO DE MEXICO A.C. 
+CENTRO DE ESTUDIOS DEMOGRAFICOS Y DE DESARROLLO URBANO 
+LAS ESTRUCTURAS MODELO DE COALE Y TRUSSELL 
+(Aplicadas al caso mexicano) 
+TESIS 
+QUE PARA OBTENER EL GRADO DE MAESTRIA EN DEMOGRAFIA 
+PRESENTA 
+ADAN BARRETO VILLANUEV A 
+Febrero, 1996 
+INDICE Pag. 
+INTRODUCCION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 
+l. EL MODELO DE FECUNDIDAD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 
+1.1 El patr de nupcialidad de Coale-McNeil . . . . . . . . . . . . . . . . . . . . . . . 3 
+1.2 La fecundidad natural de Louis Henry . . . . . . . . . . . . . . . . . . . . . . . . . . S 
+1.3 El modelo de Coale y Trussell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 
+11. APLICACION DE LAS TABLAS MODELO DE COALE Y TRUSSELL . . . . 13 
+11.1 Método de interpolaci . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 
+11.2 Método de Relaciones de paridad PAR 1 y PAR 2. . . . . . . . . . . . . . . . . 18 
+111. ANALISIS DE RESULTADOS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 
+111.1 Edad media a la fecundidad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 
+111.2 Edad inicial a la nupcialidad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 
+111.3 Rapidez de la nupcialidad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 
+111.4 Control natal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 
+APENDICES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 
+A. Método de interpolaci para calcular la media y la desviaci estandar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 
+B. Medidas estadísticas y factores de multiplicaci K.¡ de Williams Brass . . 32 
+C. Programa de Cputo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 
+D. Estadístico y Gráfico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 
+BIBLIOGRAFIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86 
+INTRODUCCION 
+L1 demografía como disciplina que estudia la dinámica poblacional humana, con base para su análisis en las dimensiones de tiempo y espacio, utilizando el primero como fuente primordial y central del .rnálisis demográfico, estudia los cambios a través del tiempo de niveles agregados 
+o en estructuras de l.i pobl.ici y el análisis espacial se enfoca al estudio de los asentamientos humanos. 
+En las investigaciones de tipo demográfico, una de las herramientas más importantes del análisis demográfico es la aplicaci de modelos, ya que estos representan procesos que los individuos experimentan a lo largo de su vida, por medio de una funci o un conjunto de funciones que relacionan variables cuantitativas. El objeto fundamental de los modelos es simplificar la realidad, es decir, reducir el conjunto de relaciones existentes a tan so unos cuantos parámetros básicos y de aquí obtener una noci clara de la realidad sin complejidades. 
+Existen diversos tipos de modelos como por ejemplo: suavizaci, correcci, descriptivos, .ijustes etc., pero de acuerdo al grado de dependencia de los datos observados, los modelos se pueden clasificar en dos categorías: los modelos puros y los patrones modelos. 
+Los modelos puros son los que se pueden derivar a partir de relaciones licas y su validez puede ser probada matemáticamente en su totalidad. 
+Los patrones modelo son el producto de análisis comparativo, en tiempo y espacio del feneno en diferentes poblaciones. Dichos patrones se definen como la expresi matemática que resume y define las regularidades encontradas. 
+Los patrones modelo de nupcialidad y fecundidad surgen a raíz de tres artículos que publica Ansley Coale con Donald McNeil y Jeame Trussell. En estos artículos se examina el patr por edad del estatus marital femenino en diferentes poblaciones, relacionando con la pauta reproductiva de la cohorte. 
+En 1971 Coale muestra la existencia de un patr estándar de primeras nupcias que toma la misma forma básica en poblaciones con diferentes edad media al matrimonio y proporci de célibes definitivos. 
+En 1972 Co.1le y McNeil obtienen la expresi matemática para el estándar de nupcialidad y encuentran una nueva forma de interpretaci para la edad al contraer matrimonio. 
+Por timo en 1974 Coale y Trussell, apoyándose en los trabajos de Fecundidad Natural de Louis Henry (1961), construyen el Patrn Modelo de Fecundidad fundamentandose en el supuento siguiente: "Al incrementarse la edad, la fecundidad marital o bien sigue el componamienco de !..J fecundidad natural (en ausencia de control voluntario), o bien se desvía de 
+ella por debajo del nivel típico dependiendo del grado de control voluntario ejercido por la pareja". 
+Así mismo, en dicho trabajo se publican tablas modelo que representan estructuras modelo de fecundidad, las cuales intentan representar a la mayoría de las distribuciones de fecundidad por edad no los niveles que se presentan en las poblaciones humanas. 
+Respecto a los parámetros que se manejan en este modelo, cada uno de ellos tiene una interpretaci demográfica sencilla, a saber: la edad de inicio de nupcialidad, la rapidez con que se casa la cohorte y el grado de control natal. 
+En la presente investigaci se pretende describir y analizar la metodología de ese modelo, aplicandolo .1 México para los as, 1970, 1980 y 1988, tanto a nivel global como a nivel estatal para observar las tendencias de la fecundidad y los cambios ocurridos en éste período de tiempo. 
+l. EL MODELO DE FECUNDIDAD 
+
+
+
+1.1 El patr de nupcialidad de Coale-McNeil 
+Al estudiarse la nupcialidad en diferentes poblaciones humanas nos permite conocer el ritmo al cual estas poblaciones se casan, es decir, la rapidez con la cual contraen matrimonio sus cohortes, cuáles son los niveles por edad y la proporci de aquéllos que cohabitan. 
+Coale 1971, al analizar la proporci de mujeres alguna vez casadas por edades individuales de diversas poblaciones, encontrque las curvas eran esencialmente las mismas, difiriendo en la edad del ingreso al matrimonio, en el ritmo a la que los matrimonios se incrementan y en la proporci de la poblaci célibe definitiva -intensidad de la nupcialidad-. En otras palabras, difieren en el lugar de origen, en la rapidez de ascenso y en la altura vertical, pero tienen la misma forma funcional. 
+Coale observque si las proporciones de mujeres alguna vez casadas se representaban a partir de un origen com, una escala vertical de tal forma seleccionada que convirtiera la proporci final de casadas en edades avanzadas igual a 1.0, y una escala horizontal elegida de tal forma que la tasa de crecimiento promedio de las curvas sea la misma, así, las escalas y el origen se han alterado en los patrones, pero las gráficas resultantes son prácticamente coincidentes. 
+Coale presentevidencia de que se presenta lo mismo en cohortes que se casan muy jenes como en las que no, en cohortes en que el matrimonio es universal y en cohortes en que el 25% de la poblaci permanece célibe. También es loable en sociedades donde el matrimonio es por arreglo entre familias, sin tomar en cuenta las preferencias de la novia y el novio, y en sociedades en que el matrimonio resulta de la selecci propia de la pareja. 
+Con esto se mostraba un patr com de frecuencia de primeros matrimonios y es posible construir una curva modelo que represente el patr com en forma estándar. El patr estándar se basen las frecuencias de primeros matrimonios registrados en Suecia durante el período comprendido de 1865 a 1869. 
+Es simple observar que las cohortes que experimentan un patr com de frecuencias de primeras nupcias, rebtivo a todas las mujeres a cada edad, deben también presentar un patr com de riesgo, aunque parece ser independiente del tama del grupo de mujeres destinado al celibato definitiYo. 
+Para determinar en términos matemáticos el patr estándar de cualquier cohorte, so es necesario calcubr el origen, y la escala horizontal y vertical relativa al estándar. 
+Sean: 
+x, La edad en la escala estándar, g/xJ Las frecuencias con que ocurren los primeros matrimonios a la edad x,, G/xJ La proporci estándar de mujeres no solteras a la edad x,, y Z/xJ El nero de as personas vividos como no solteras hasta la edad xi. 
+En una corte no expuesta al riego de mortalidad y migraci, entonces se tiene: 
+x', 
+G/xs) = Jgs(x) d.xs o 
+y 
+x', 
+1
+Z/x) = fGs(xs) d.xs siendo 0 < X < X 
+s s 
+o 
+Una cohorte sujeta a un patr de primeras nupcias de forma estándar con parámetros a0 que representa la edad más joven de ingreso al primer matrimonio y llamado origen de la curva, C la proporci de mujeres casadas y K el factor relacionado con la escala del tiempo durante el cual ocurren los primeros matrimonios. Si en la curva estándar el intervalo entre el origen y el valor máximo es x, para otra curva el intervalo es Kx. Por lo tanto, el parámetro K es el factor que relaciona el ritmo de ingreso al primer matrimonio en una poblaci, con el comportamiento de ese ingreso en la poblaci que sirvide base al modelo estándar. El valor de K siempre es positivo, si K es menor que uno, el ingreso al matrimonio en la poblaci real ocurre a un ritmo más rápido que en el modelo; por el contrario, si K es mayor que uno, el ritmo es más lento que en el modelo. Estos tres parámetros son los que permiten caracterizar el comportamiento de la nupcialidad. 
+Aunado a esto, el riesgo de contraer matrimonio se define como la tasa de primeras nupcias a cada edad de la poblaci que se casará y que a no la hacen, es decir: 
+r(x) = g(x) G(w) -G(x) 
+aquí se puede observar que el denominador contiene a los miembros de la cohorte que permanecen solteros pero que se casará ya que G(w) es la proporci definitiva de casadas -intensidad-. 
+El riesgo de contraer nupcias asciende mononamente desde el origen, y después sigue un curso irregular hacia uriba hasta llegar a un punto aproximadamente constante, que es cuando ya se ha casado la mayoría de las mujeres. La funci a la que llegCoale ocupando los datos referentes J los matrimonios registrados en Suecia entre los as 1865 a 1869, por as de edad y ajustados por una doble exponencial es: 
+rs(x) = 0.174e -4.4lle ·º309• 
+Donde r/ x) es el riesgo estándar de nupcialidad, es decir, la probabilidad de que una mujer soltera ingrese .11 estado matrimonial a la edad x de la escala horizontal ajustada. Coale resume de la siguiente forma el riesgo de primeros matrimonios en cualquier cohorte diciendo: 
+"Existe una edad mínima para ingresar al matrimonio ya sea definida por cuesti de ley, religiosas o costumbres; C?Xiste una proporci de la cohorte que se excluye de este riesgo -célibato, etc.-, la proporci de la cohorte que se casará experimenta un riesgo ascendente, desde la edad mínima representada como cero, hasta un riesgo máximo que se mantiene constante en las timas edades y la rapidez con que se incrementa el riesgo y su nivel máximo difieren de poblaci en poblaci" . 
+
+1.2 La fecundidad natural de Louis Henry 
+En los estudios realizados por Louis Henry (1961), encontrque hay un patr característico de fecundidad marital en poblaciones en que hay poco o ning control voluntario de nacimientos, al cual le llam"Fecundidad natural". El autor definicontrol voluntario como la conducta de afectar la fecundidad de manera intencional cuando la paridad1 aumenta, y si tal comportamiento es el mismo antes del primer hijo que después del décimo se tiene la fecundidad natural. 
+Coale y T russell (1974), desarrollaron el patr estándar de fecundidad marital natural promediando los patrones dados por Henry como naturales, pero eliminando patrones basados en estadísticas que era evidente la mala informaci -subregistro-y que dieran distorsi al patr de fecundidad (cuadro 1). 
+Henry, por su parte eliminlos datos de las mujeres menores de 20 as por los efectos tan frecuentes de distorsi de la informaci en sus concepciones premaritales en el registro de tasas de fecundidad marital para esas edades. Por su parte Coale y Trussell estimaron estas tasas de fecundidad natural teniendo en cuenta la edad de las mujeres y que podría ser tÍpico para estas edades si l.1s concepciones premaritales no tuvieran un impacto especial. 
+Seg Henry la fecundidad marital tiene el comportamiento de la fecundidad natural, en ausencia de control volunt.1rio, o se desvía de ella en una trayectoria que se incrementa con la edad de acuerdo .1 un patr tÍpico. Coale y Trussell determinaron la relaci existente entre 
+-;.. ,·nucnJc pnr p.uid.,d l., J,·,,e11,lrn.:1a Je una mujer de ,•dad ,, n ,ca d nmero Je na/los \'i\'oS que ha trn,Jo en su \'id~. 
+l.i fecundid.1d marital m(x) y l.i fecundidad natural n(x) y encontraron que la relaci entre estas es: 
+m(x) = M•em•11<x> n(x) 
+Donde la funci v(x) expresa la tendencia de las mujeres en edad avanzada al uso de anticonceptivos y aborto; m denota el grado de control de los niveles de fecundidad y Mes un factor de escala (como el valor C del modelo estándar de nupcialidad de Coale). 
+CUADRO 1 
+Tasas de fecundidad natural por edad específica, cuando la fecundidad se experimenta en un nivel estándar, con tasa global de fecundidad de 11.85 
+Grupo  Tasa de  
+de  fecundidad  
+edad  natural  
+10-14  0. 1350  
+15-19  0.1421  
+20-24  0.4694  
+25-29  0.4418  
+30-34  0.3988  
+35-39  0.3226  
+40-44  0.1668  
+45-49  0.0252  
+
+Fuente: Coalc Amlc¡•, Allan Hill y Jrmcs Trussdl. 
+Para la derivaci de las funciones v(x) y n(x) se utilizinformaci empírica, los valores de n(,") se obtuvieron para las edades 20-24 hasta 45-49, promediando 10 modelos de fecundidad natur.11 de Henry y los valores v(,") se obtU\ ieron para las mismas edades se determinaron a partir de los patrones de fecundidad marit.11 publicadas en el Anuario Demográfico de la Naciones Unidas 1966; para el i-ésimo patr v,(a) se obtuvo colocando m -1.0 en la ecuaci anterior y aplicando: 
+
+el valor de M se elige de modo que v.(x) es cero para el intervalo de edad 20-24. Los valores de v(x) obtuvieron como el promedio aritmético de los cuarenta y tres valores de v,(x) en cada intervalo de edad (cuadro 2). 
+La ecuaci: 
+
+expresa la fecundidad marital en términos de dos parámetros: M que es la raz de la fecundidad marital y la del patr estándar de fecundidad natural entre los 20 y 24 as, y m la magnitud en que el control voluntario desvía a la fecundidad marital del patr natural. 
+CUADRO 2 
+Patr típico de desvío a reducir la fecundidad marital por debajo de la fecundidad natural, v(x). 
+Grupo  
+de  v{x}  
+edad  
+20-24  
+25-29  -0.316  
+30-34  -0.678  
+35-39  -1.048  
+40-44  -1.424  
+45-49  -1.667  
+
+n{x) 
+0.460 0.431 0.396 0.321 0.167 0.024 
+Fuente: Coalc y Trussdl, 1974. 
+1.3 El modelo de Coale y Trussell En las poblaciones reales existen nac1m1entos 
+Si m O el patr resultante es simplemente un mtiplo del patr natural, es decir, la diferencia so es en el nivel y no en la estructura de las tasas; si m = 1 el patr se desvía del patr natural en una proporci equivalente a la desviaci promedio de los 43 patrones seleccionados en la construcci de v(x). Si m es muy grande, la raz de las tasas maritales y las tasas del patr natural disminuye rápidamente al incrementarse la edad. Hay que observarse que el parámetro M icamente afecta el nivel y el parámetro m es que afecta la estructura relativa de la 
+fecundidad. 
+dentro como fuera del matrimonio y la 
+proporci de la poblaci actualmente casada difiere de la proporci de la poblaci de las alguna vez casadas debido a la viudez y al divorcio. Sin embargo, la estructura de la fecundidad de una poblaci real se puede asemejar estrechamente a una poblaci hipotética sin disoluci marital o fecundidad extramarital si ésta tima poblaci tuviera ligeramente diferentes parámetros de nupcialidad y fecundidad marital de aquellas que se encuentran en poblaciones reales. Por lo que, cuando la fecundidad fuera del matrimonio es despreciable, la estructura por edad de la fecundidad general so depende de la proporci de mujeres casadas, y de un parámetro que expresa el desvide la fecundidad marital del patr natural. 
+El patr modelo de fecundidad se determina por la proporci de mujeres alguna vez casadas G(,Y.) y la fecundidad marital m(x), es decir, las estructuras modelo de Coale y Trussell están apoyadas en los supuestos de que la estructura de la fecundidad por edad, se puede bien describir por el producto de dos sub-estructuras modelos, la nupcialidad y la fecundidad matrimonial por edad. 
+Así, si la proporci de alguna vez casadas en la edad a en las tablas de nupcialidad es G(a), y la proporci de mujeres casadas en edad a experimentan un nacimiento en las tablas modelo de fecu ndidad marital m(a}, la fecundidad específica por edad es: 
+f(x) = G(x) *m(x) 
+Este modelo nos da la tasa de fecundidad por edad específica, es decir, este modelo describe exactamente a la fecundidad de una poblaci hipotética en la que no existan los problemas de nacimientos fuera del matrimonio, y ninguna disoluci del matrimonio antes de su fase terminal de reproducci de la mujer o por caso funesto de alguno de los cyuges. También reproduce bastante adecuadamente la estructura por edad de la fecundidad en poblaciones reales .1 través de la selecci de un G(a} que difiere ligeramente de la proporci de mujeres alguna vez casada de la proporci real, y de una m(a) que difiere ligeramente de la fecundidad marital real. 
+Por lo general, en poblaciones reales la existencia de los nacimientos tanto dentro del matrimonio como fuera de él se dan y la proporci de mujeres casadas se ve realmente afectada por la presencia de divorcios y viudez. La estructura de la fecundidad se puede ajustar si en el pasado no remoto los cambios de los patrones de fecundidad y nupcialidad no tienen cambios de significancia. 
+Por otro lado, la existencia de estos efectos so es equivalente a un patr de primeras nupcias pero difieren en las primeras edades y el efecto de hijos ilegítimos se ve reflejado en las edades avanzadas que es equivalente a un incremento en la fecundidad marital en esas edades. Respecto a la proporci de mujeres casadas el efecto del tiempo se refleja en los divorcios o viudez que asciende con la edad, por lo que la fecundidad se reduce hacia el final de la cohorte así como el patrn de desviv(x) en la fecundidad marital. 
+Por lo que el parámetro m se debe elegir de manera adecuada ya que aproxima el efecto de la disoluci y el control voluntario en la fecundidad marital. 
+U no de los insumos básicos del patr modelo de fecundidad es el patr estándar de primeras nupcias, que ajusta la experiencia de una cohorte a lo largo de su vida. El patr puede variar y no ·er similar a la proporci de mujeres casadas cuando se hace análisis de tipo transversal o si el efecto de l.1 nupcialidad es muy variable. 
+Coale y Trussell ,11 examinar varios patrones observaron que es mejor trabajar con .rnálisis de tipo transversal que cohortes ya que los ajustes eran mejores que los ajustes de cohortes reales, dando como resultado final que el patr modelo se ajuste a cuando los supuestos básicos se hayan violado, sin embargo, los parámetros a0, k y m pierden su interpretaci cuando los cambios son muy bruscos. 
+Esquema práctico: 
+La funci de la fecundidad por edad es: f(a) = G(a)'~m(a) siendo m(a) ""' n(a)*M é"·1:fa) y los parámetros significan; 
+n(a) Es la fecundidad natural a la edad a 
+M Es la raz de la fecundidad marital y la fecundidad natural en el intervalo 20-24, factor escala semejante al valor C en el modelo de nupcialidad de Coale 
+v(a) Expresa la tendencia a reducir la fecundidad por debajo del nivel natural, en poblaciones en que se práctica la anticoncepci o el aborto 
+m Es un factor que expresa el grado de control voluntario 
+El modelo de Coale y T russell emplea la estandarizaci a uno de la suma de las tasas específicas. Para obtener la desagregaci de las tasas de fecundidad en edades individuales se procede de la siguiente manera al cálculo de los siguientes parámetros. 
+49.S 49.S 
+1) m = Edad media a la fecundidad = ¿ a *f(a) donde ¿/(a) = 1.0 
+12.S 12.S 
+49.S l 
+2) a = Desviaci estándar = ¿a2*f(a)-m-­12.s 12 
+19.S 
+¿/(a) 
+12.S 
+3) R1 = Cociente de par:dad = 
+24.S 
+¿/(a) 
+20.S 
+á 
+4) MED = El valor de á tal que = ¿ /(a) = 0.5 
+12.S 
+49.S 
+¿ (a -m)3/(a) 
+5) SKEW = _n_.s ____ 
+03 
+[ Paridad (15 -19)] 
+6) PAR l = Paridad (20 -24) 
+[ Paridad (20 -24)]
+7) PAR 2 = 
+Paridad (25 -29) 
+8) a0 = Edad inicial al matrimonio en funci de nupcialidad 
+9) K = Factor de escala de la funci de nupcialidad 
+10) m = Grado de control de la fecundidad 
+Teniendo en cuenta diferentes combinaciones de los parámetros anteriores los autores crearon tablas que muestran la distribuci de las tasas específicas de fecundidad, a las cuales les llamar estandar para obtener la distribuci de tasas de casos particulares. 
+Para utilizar estas tablas se procede como sigue: 
+i) Se calculan los valores de los parámetros m, <J y R1• 
+ii) Se localiza el valor de R 1 en las tablas tal que abriguen el valor observado de éste parámetro y a los parámetros m y u como se muestra en la siguiente figura. 
+donde: 
+(2) (O) 
+x+l 
+valor 
+observado
+xº 
+X 
+t 
+Edad media 
+(1)' 
+(a+ .5)2 <---Varianza----> 
+d1 = (m+l.0)-m 
+( +0.5) -o 
+2 
+d2 = ( o +0.5) -o
+(0) Es el punto P= [(+0.5)2 ,(m+l.O)]
+0 
+(1) 
+Es el punto P1 = [(+0.5)2 ,m] 
+
+(2) 
+Es el punto P= [o2 ,(m + 1.0)]
+
+
+2 
+El punto (3) debe ser tal que el valor que se tiene para él es el menor de los tres puntos anteriores, siendo el punto que se elimine. 
+iii) De cada punto (P:, P1 y P:) se toman los valores de los parámetros a0, K y m que se dan en las tablas correspondientes. 
+Así se tiene: 
+_______ ... a (O), r.nO). m (O)
+P
+o o ' l\' ' 
+
+-------... a (2). r.n]). m(])
+P2 O • l\' , 
+iv) Se calcula los valores de los parámetros ponderadores, W,, W1 y W2, como sigue: 
+
+di ( 1 -di)
+w =d. = d +---­
+2 2 
+o +0.25 
+
+,·) Se obtienen los valores de los parámetros a0, K y m para la fecundidad observada. 
+vi) Se eval la funci f(a} = G(a}*n(a}é"'Cl(ªJ, obteniéndose los valores, corregidos y desagregados por edad de la distribuci de las tasas específicas de la fecundidad correspondientes a la experiencia observada, mediante el programa de computaci que se encuentra en el .ipéndice C, al final de este documento. 
+II. APLICACION DE LAS TABLAS MODELO DE COALE Y TRUSSELL 
+El propito de este capítulo es dar a conocer la aplicaci de las tablas modelo de Coale y Trussell para obtener el patr de fecundidad de México a nivel Nacional y por Entidad Federativa. Así como, obtener las tasas específicas de fecundidad por edad desagregada, dado que la informaci con que se cuenta es de intervalo quinquenal. 
+Los ajustes que se obtendrán serán diferentes tanto a nivel nacional como para cada entidad federativa ya que las distribuciones observadas presentan características diferentes y así mismo por las estructuras modelo. 
+La informaci con la que se trabajy aplicel modelo son las tasas de fecundidad por intervalos quinquenales de 1970 y 1988 del documento emitido por el Consejo Nacional de Poblaci, que se titula "México Demográfico/breviario 1988 y para el a de 1980, se aplicel modelo a los datos contenidos en el trabajo realizado por Olga Lopez Ríos, llamado "Las estructuras de la fecundidad en México 1970 y 1980. 
+Para accesarse a las tablas modelos existen diferentes maneras, en éste estudio se utilizaron dos de estos, a saber: a) método de interpolaci de modelos tabulados, b) método de relaciones PAR l y PAR 2. En las aplicaciones que se desarrollaron en este trabajo se procursiempre utilizar él método de interpolaci dado que los resultados pueden dar elementos de evaluaci a los parámetros con los cuales se trabajaron. Y por timo, se utilizel modelo de las relaciones de paridez PAR l y PAR 2, dado que al ingresar a las tablas de Coale y T russell no fue posible encontrar los modelos de interpolaci siguiendo el procedimiento de los autores y ellos mismos sugieren que en este caso se aplique ésta relaci y sus gráficos (Coale A. y Trussell J.,1974). 
+II.1 Método de interpolaci 
+Para poder aplicar el modelo de fecundidad de Coale y Trussell a las tasas específicas de fecundidad se deben estandarizar de tal manera que la suma de éstas sea igual a uno (cuadro 3). Considerándose los requerimientos esenciales para poder calcular los ajustes en los valores de tres parámetros, a saber: a) x =-edad media a la fecundidad, b) s .. desviaci estándar y c) RI = cociente de dos paridades. El método se basa en un principio básico de interpolaci, el cual se describe ampliamente en el apéndice A, en la secci final de este documento. 
+CUADRO 3 México 1970: Estandarizaci de las tasas de fecundidad y obtenci de los parámetros. 
+Grupo de edad  a  f(a)  /(a}  a""f(a}  a2""f(a)  R1  
+15-19 20-24 25-29 30-34 35-39 40-44 45-49  17.5 22.5 27.5 32.5 37.5 42.5 47.5  0.0193 0.2839 0.3140 0.2470 0.2097 0.0767 0.0767  0.0703 0.2185 0.2417 0.1901 0.1614 0.0590 0.0590  1.2297 4.9163 6.6459 6.1783 6.0523 2.5089 2.8040  21.54 110.62 182.76 200.80 226.96 106.63 133.19  0.3216  
+1.2993  1.0000  30.3354  982.47  
+
+Fuente : Cálculos propios. 
+de donde: 
+47.5 
+m = ¿ a*F (a) = 30.3354 
+17.5 
+
+= 0.2185/ 0.0703 = 0.3216
+R1 
+Estandarizadas las tasas se obtienen los valores observados y los correspondientes a los modelos tabulados (cuadro 4). 
+Al buscar estas combinaciones de valores en las tablas nos enfrentamos con un problema, ya que dichos valores no se encuentran en estas. Esto es debido a que las tablas han sido seleccionadas para producir edades promedio de 24 a 34 as y valores de desviaci -dentro de los límites estipulados de los tres parámetros-en intervalos de medio a. El rango de desviaci estándar es de 4.0 a 7.5 para algunas combinaciones y es posible no encontrar modelos dentro de los tres parámetros controlados. 
+CUADRO 4 
+México 1970: Parámetros observados y modelos calculados seg procedimiento de Coale y T russell. 
+El método se aplia nivel nacional para el a de 1988 ya que con los datos de este a no se tuvo el problema anterior y 
+Parámetro x n R, 
+así comprender la aplicaci del modelo (Cuadro 5). 
+Distribuci observada 30.335 7.7559 0.321 
+Posteriormente se calculará por el método de relaciones de paridad las estructuras modelos 
+desplegadas de fecundidad para los as de (O) 30.0 8.0 n.a. 
+1970 y 1980. 
+(1) 31.0 8.0 n.a. (2) 30.0 7.5 n.a. 
+Fuentr: C:ilculos propios. 
+CUADRO 5 
+México 1988: Estandarizaci de las tasas de fecundidad y obtenci de los tres parámetros. 
+Grupo de edad  a  !(a}  /{aj  a*f{a)  a*f{a}  R,  
+15-19  17.5  0.0553  0.0875  1.5313  26.80  0.3257  
+20-24  22.5  0.1698  0.2687  6.0451  136.01  
+25-29  27.5  0.1632  0.2582  7.1013  195.28  
+30-34  32.5  0.1235  0.1954  6.3 509  206.40  
+35-39  37.5  0.0814  0.1288  4.8299  181.12  
+40-44  42.5  0.0345  0.0546  2.3200  98.60  
+45-49  47.5  0.0043  0.0068  0.3232  15.35  
+Total  0.6320  1.0000  28.5016  859.57  
+
+Fuente: C:ílculos propios. 
+de donde: 
+47.5 
+m = L a*J5(a) = 28.5016 
+17.5 
+47.5 5 2 
+~ ') -') 
+a= ¿a-*f5(a) -m---= 6.7193 17.5 12 
+R, = 0.2185/0.0703 = 0.3257 
+Estandarizadas las tasas se obtienen los valores observados y los correspondientes a los modelos tabulados (cuadro 6). 
+De esto resulta que:  CUADRO 6  
+Pé=(7.0,28.0); P1 =(7.0,29); y P2 =6.5,28.0) México 1988: Parámetros observados y  
+modelos calculados seg procedimiento  
+
+a/ 1 = 13.95; J<f01 = 0.550; m101 = 0.842 aP1 = 15.87; Kf1 
+= 0.150; m111 = 0.270 a}11 = 14.28; Kf11 = 0.500; m'21 = 0.817 W1 = d1 = 28.5016 -28 = 0.5016 d1 = [72 -6.719YJ/[72 -6.51)] = 0.5705 
+W2 = d~· =d2+[dlI·dJJl[a+0.25} = 0.6064 WJ =J. W1 • W1 = -0.10793 
+Aplicando los ponderadores resulta: 
+• W (O) W (I} W (])
+ª~= : "e + , ªe + 2 ªº = 15.1131 
+de Coaley Trussell. 
+Parámetro x n Distribuci 
+observada 28.501 6.7193 0325 
+modelos  
+(O)  28.0  7.0  0.447  
+(t)  29.0  7.0  0326  
+(2)  28.0  6.5  0319  
+
+Fuente Cálculos propios. 
+
+Conociendo estos parámetros a0, K y m, y haciendo uso del programa de computaci se obtiene la siguiente estructura de fecundidad por edad (cuadro 7). 
+CUADRO 7 
+México 1988: Estructura por edad de la fecundidad utilizando el modelo de Coale y Trussell. 
+Edad  f(x)  Edad  f(x)  Edad  f(x)  Edad  f(x)  
+12  0.00000000  22  0.05682519  32  0.0383519  42  0.01092320  
+13  0.00000000  23  0.05726496  33  0.0357326  43  .00793580.  
+14  0.00000000  24  0.05649989  34  0.0331760  44  00527620.0  
+15  0.00119794  25  0.05521704  35  0.0306717  45  0322920.00  
+16  0.00635920  26  0.05352988  36  0.0281418  56  200020.001  
+17  0.01463924  27  0.05130871  37  0.0256773  47  18080.0006  
+18  0.02547743  28  0.04906089  38  0.0232042  48  1190.00016  
+19  0.03858377  29  0.04658424  39  0.0205126  49  59  
+20  0.04969728  30  0.04384157  40  0.0174241  
+21  0.05461151  31  0.04102387  41  0.0140609  
+
+Fumtc:: Cálculos propios. 
+11.2 Método de Relaciones de paridad PAR 1 y PAR 2 
+El método de las relaciones de paridez PAR 1 y PAR 2 se utilizal no encontrarse las combinaciones de los parámetros. 
+La informaci básica para aplicar éste modelo es contar con los gráficos de relaciones PAR 1 y PAR 2 de Coale y Trussell y la paridez media de los tres primeros grupos quinquenales, es decir, P(I) de 15-19, P(2) de 20-24 y Pr;J de 25-29, con lo cual se puede calcular las relaciones de paridez como siguen: PAR 1 -P(I/P(2) y PAR 2 ... P(1/P(J), para determinar en forma aproximada los valores de a0 y k para tres valores fijos del parametro m -0.00, 0.20 y 0.40. Y a que el parámetro m nos hace referencia a distintos grados de control de la fecundidad, y aplicando nuevamente el programa del apéndice C, obtenemos tres distribuciones correspondientes para cada estado con distinto grado de control de fecundidad, por lo cual se aplicdos medidas estadística para determinar el mejor ajuste. 
+Dado que al aplicar el modelo de interpolaci para la naci en su conjunto en los as de 1970 y 1980, no se pudieron ubicar las estructuras modelos y se procedia calcularlos bajo este método. 
+La intenci es ajustar una estructura dada, en nuestro caso, las tasas específicas de las mujeres para los as antes citados, y con ello, obtener las dos relaciones que sirven de entradas a los gráficos de Coale y Trussell, siendo estas las relaciones de paridez media por grupos de edad, la cual se aplicpara su estimaci de estas los índices sintéticos2 (Fj de Williams Brass y los multiplicadores k, de él mismo. 
+La aplicaci del modelo de relaciones de paridez PAR 1 y PAR 2 se realizpara la Naci correspondiente a los as de 1970 y 1980. 
+Así, teniendo nuestra estructura estandarizada a uno, se procede a hacer lo siguiente: Se calcula la relaci f/h para poder accesarse a los multiplicadores k, y calcular m y k por interpolaci (cuadro 8). 
+Obteniendose la paridad por la formula: 
+Fi = <I> + k/, donde <I> -5(/¡+fi + ...+J..J y f/li =-0.322 
+Este valor se encuentra entre 0.213 y 0.330 de la tabla de multiplicadores resultando por interpolaci lineal la edad media a la fecundidad de m ""' 28.772 y las relaciones de paridad: 
+PAR 1 = 0.135/0.971 ,.. 0.139 y PAR 2 ""'0.971/2.171 = 0.447 
+Véase apéndice B. 
+CUADRO 8 
+México 1970: Cálculo de paridades por medio de índice sintético y multiplicadores de W. Brass. 
+Grupos de edad  f(a}  ffa}  '  ~  k-1  k+l  k;  F;  
+15-19 20-24 25-29 30-34 35-39 40-44 45-49  0.0913 0.2839 0.3140 0.2470 0.2097 0.0767 0.0767  0.0703 0.2185 0.2417 0.1901 0.1614 0.0590 0.0590  1 2 3 4 5 6 7  -0.351 1.444 2.652 3.603 4.410 4.705 5.000  1.950 2.840 3.010 3.095 3.215 3.435 4.150  1.950 2.840 3.010 3.120 3.245 3.510 4.395  1.926 2.836 3.000 3.118 3.243 3.505 4.377  0.135 0.971 2.171 3.245 4.126 4.617 4.963 5.000  
+Total  1.2993  1.0000  
+
+Fuente: Cálculos propios. 
+con lo cual se obtuvieron los valores de a0 y k con ayuda de los gráficos y los indicadores de bondad de ajuste para cada modelo (cuadro 9). 
+CUADRO 9 
+Estimaci de los parámetros a0 y k por variaci del parámetro m 
+m
+k 
+DM
+Modelo 
+ªe 
+x· 
+5.49 
+1.93
+(O) 
+13.75 
+4.75 
+O.O 
+13.50 
+5.10 
+0.2 
+5.05 
+1.69
+(1) 
+13.31 
+0.569 
+0.4 
+5.50 
+1.97
+(2) 
+Fuente: Cálculos propios. 
+Se puede observar que el mejor ajuste corresponde al modelo (1), dado que el valor del indicador estadístico x 1 es más sensible. Para ampliar más a este respecto consulte el apéndice 
+B. Aplicando el programa de computaci, resulta la siguiente estructura de fecundidad (cuadro 10). 
+CUADRO 10 
+México 1970: Estructura por edad de la fecundidad utilizando el modelo de Coale y Trussell. 
+Edad  f{x)  Edad  f{x)  Edad  f(x)  Edad  f(x)  
+12  0.00000000  22  0.04674448  32  0.04103568  42  0.01493580  
+13  .00001960.  23  0.04814582  33  0.03933015  43  .01111280.  
+14  00051100.0  24  0.04875224  34  0.03742568  44  00756670.0  
+15  0282250.00  25  0.04886284  35  0.03545481  45  0472660.00  
+16  828060.016  26  0.04851996  36  0.03332805  56  297790.001  
+17  61810.0262  27  0.04773524  37  0.03115142  47  77610.0009  
+18  3690.03435  28  0.04679367  38  0.02883546  48  2660.00025  
+19  520.040290  29  0.04565929  39  0.02610869  49  22  
+20  90.0442929  30  0.04427236  40  0.02271438  
+21  31  0.04265366  41  0.01877304  
+
+Fuente: Cálculos propios. 
+111. ANALISIS DE RESULTADOS 
+El objetivo del presente capítulo es analizar los resultados de los parámetros del modelo de Coale y Trussell, para conocer el impacto de la anticoncepci, es decir, el cambio de conducta reproductiva, a raíz del programa nacional de planificaci familiar que tuvo su inicio en el a de 197 4; a nivel Nacional como para cada entidad federativa en los as de 1970, 1980 hasta 1988. Así mismo, determinar la tendencia que ha presentado el proceso de fecundidad y los cambios ocurridos en ese lapso de tiempo. 
+En este sentido, en el capítulo se describen los cambios de la fecundidad del país y entre los estados, entre el a de 1970 y 1988, utilizando la metodología descrita en el capítulo antenor. 
+Los parámetros que se analizaran son: la edad media a la fecundidad, la edad más joven al primer matrimonio, la rapidez de la nupcialidad y por timo, el parámetro fundamental del presente trabajo que hace referencia al control natal. 
+111.1 Edad media a la fecundidad 
+En el país durante el a de 1970, las mujeres en edad fértil determinaban una edad media a al fecundidad de 28.8 as, para década posterior éste indicador descendiligeramente, alcanzando el valor de 28.4 as y ocho as más tarde, se vio un incremento mínimo de 0.1 de a. Si bien esto determina que en 18 as no exista cambios de ésta medida en el país, no es así al interior del mismo; el comportamiento no es homogéneo en las entidades federativas que componen a la naci. Si claramente la edad media a la fecundidad no ha tenido cambios notorios, cabe hacer la observaci que dicha medida es una composici de la estructura de las tasas específicas de fecundidad, que a su vez se compone por la estructura poblacional femenina, la cual si ha tenido cambios notables en su conformaci. Además, el indicador es un promedio ponderado por las edades de las mujeres en edades con la capacidad de reproducci -entre los 15 a 49 as-. 
+Lo relativo al cambio en la estructura poblacional femenina es la variaci notable en el aumento que se ha presentado en el volumen de mujeres en edades reproductivas, en estos 18 as, del total de mujeres en el país representaban el 50.1 % en el a de 1970, una década posterioe este indicador ascendia 50.6% y para el a de 1988, ya eran el 51%, asimismo, su participaci delas mujeres en edad reproductiva alcanzabanel 22.2%, 23.7% y 25.6%, respecttvamente. 
+Las generaciones de mujeres nacidas en la década de los as cincuenta, reflejaron en el período de su Yid,1 reproductiva una fecundidad alta y distribuida a lo largo de ésta y, por el contrario, las nuevas generaciones en volumen son mayores con una fecundidad la cual pueden controlar, tiene un nero menor de hijos a edades más tempranas. Por lo cual, al hacer el simple calculo de la edad promedio a la fecundidad no se observel cambio. 
+Además, las mujeres fueron bombardeadas con informaci de planificaci familiar a partir del a de 1974, con lo cual pudieron controlar su fecundidad mediante métodos preventivos a través de casi 20 as, aunado al cambio en las conductas y tradiciones de las mujeres mexicanas. Si bien es cierto, que ya se conocían los métodos anticonceptivos, no eran tan difundidos y usados como en nuestros días. Siendo esto resultado de la política antinatalista desarrollada en esos .is. 
+Otra posible explicaci de los cambios en la conducta reproductiva de las mujeres, los da el cambio de costumbres en las mujeres mexicanas, representado este por el deseo de obtener una mejor posici econica y social, conllevando inherentemente la elevaci de su estatus de vida. Esto esta representado en que la mujer se ha hecho más participativa econicamente y empieza a jugar un rol diferente dentro de la sociedad mexicana. 
+A nivel estatal, se encuentra una gran heterogeneidad en cuanto al valor alcanzado. En el as de 1970 esta medida fluctuaba entre los 27.6 y 30.3 as, lo que representa una diferencia de 2 as y 8 meses entre el Estado de Guanajuato y el de Quintana Roo, los cuales alcanzaron, el valor más alto y el valor mínimo, respectivamente en ese a. De igual manera para el a de 1980, los valores obtenidos entre variaban entre los 27 .6 y 30.3 as, significando un incremento de más de un a en el rango de variaci comparativamente, respecto a la década anterior, es decir, el tama del intervalo de variaci es de 4 as3, si se hace caso omiso de estos resultados, el tama del intervalo de oscilaci sería de 1 a y 8 meses. Por timo, ocho as más tarde, se observa claramente que el tama del rango de variaci de la edad media a la fecundidad se ha estrechado, siendo más homogénea entre las entidades federativas, alcanzando so una diferencia mínima de 6 meses. 
+En ese sentido, los Estados más sobresalientes por haber alcanzado los promedios más altos en el a de 1970, mencionaremos a Guanajuato con 30.3 as, Baja California con 30 as, Tamaulipas con 29.9 as, Aguascalientes con 29.7 as y Sinaloa con 29.6 as. Por el contrario, se encuentra los Estados de Quintana Roo con 27.5 as, Nuevo Le con 28.1 as, Oaxaca con 29.2 ,ts, Tabasco con 28.2 as y Campeche con 28.2 as. De igual manera, una década posterior los Estados que alcanzaron éste promedio más elevado fueron, Tabasco con 31.2 as, Aguascalientes con 30.8 as, Guanajuato con 28.8 as, Michoacán con 28.7 as, el Distrito Federal con 28.7 as y Zacatecas con 28.7 as. De forma contraria, los Estados que se ubican dentro de la clasificaci a la baja, podemos enlistar a Quintana Roo con 17.2 as, Baja California Sur con 27.7 as, Chiapas con 27.9 as, Oaxaca con 27.9 as y Coahuila con 28 as. Dos ,ts antes de 1990, el indicador fue más homogéneo y los estados que obtuvieron el promedio más alto fueron Guerrero, Michoacán y Oaxaca con 28.8 as y 
+Cabe mcnun1ur qu,· ni<' inJ1rJJur "' .-,kuln mrJ1an1< d polonom10 Jr \X'illiJms Brass pJrJ lvs <>1JJos J, T Jb.uco y Agu;iscalirntrs. 10 1 cuales 
+obtuv1t"ron l,1" m.1, .1h," , Jh1n·, dd mJ1(JJor. \ 'J que el mctoJu fue mJpl11..Jh1c J 1,.·~ns J.1tO\ En t"!l t' ,cnt1do. lo~ re ultJdos no son comp.1t1bln um I,>, Jcm.1, J.1hh 
+lo cuatro estados lograron el menor promedio de la edad promedio a la fecundidad como el Distrito Federal, México, Colima y Baja California con 28.2 as. 
+Por lo cual, la edad mediana a la fecundidad disminuyen la década de 1970, observándose en el a de 1980, que las entidades federativas que se encuentran por arriba de los 30 as son los que se obtuvieron mediante el método de Williams Brass, 25 de los estados se localizaron entre los 28 as pero menos de los 29 as y so 5 entidades federativas se ubicaron entre los 27 as y nos más de 28 as. 
+La tendencia que se han presentado en los Estados es al descenso, si bien en 1970, las entidades tenían un promedio alto, el cual descendien la década posterior, y ocho as más tarde se incremento en una cantidad mínima. Este incremento no fue tan sustancial como para asemejarse a los valores presentes en el a de 1970. Para ejemplificar, obsérvese a las entidades de Baja California Sur, Chiapas, Coahuila, Colima Durango, Guerrero, Hidalgo, Nayarit, Oaxaca, Puebla, Querétaro, San Luis Potosí, Sinaloa y Tlaxcala, los cuales descendieron su promedio en la primer década, para volver a incrementarlo ocho as más tarde. Asimismo, los Estados que para el a de 1970 tenían un promedio alto y, diez as después, reflejaron una disminuci y que posteriormente continuaron con un su valor casi invariante mencionaremos a Baja California, Chihuahua, Michoacán, Morelos, Sonora y Nuevo Le. Otra línea tendencial bien definida con un descenso monono, es decir, no volvia incrementar durante el segundo período, están ubicados el Distrito Federal, Guadalajara, Jalisco, México, Tamaulipas y Zacatecas. 
+Las entidades invariantes, por llamarlas de alguna forma, por la mínima variaci en el período de estudio, comprendido de 1970 hasta 1988, son Campeche, Veracruz y Yucatán. Los icos Estados con variaciones exageradas son Aguascalientes y Tabasco y esto por lo expuesto anteriormente. 
+
+111.2 Edad inicial a la nupcialidad 
+La primera aseveraci que surge de la comparaci de la edad a la que inicia la nupcialidad en el país, es el aumento que se logro en el período de estudio, al pasar de 13.5 as en 1970 a 15.1 as en 1988, es decir, la edad mínima a la nupcialidad se incremento en 1 a y 7 meses. 
+En ese sentido, los estados que iniciaron su nupcialidad a edad más temprana en el a de 1970, fueron Quintana Roo con 11.1 as y Guerrero con 11.7 as. Y por el contrario, los que comenz,1ron de forma más tardía este feneno demográfico fueron las entidades federativas de Chihuahua con 16.8 as y Jalisco con 16.6 as. Asimismo, para la década posterior, las entidades federativas que reportaron el indicador mínimo fueron Quintana Roo con 11.4 as y Tabasco con 11.7 as. De forma opuesta se puede mencionar a Aguascalientes 
+y .11 Estado de México con 16.3 y 13.7 as respectivamente. En el a de 1988 fueron Colima 
+con 13.4 aos y Sinaloa con 14.6 as, los cuales tuvieron el origen de la nupcialidad inferior y, Campeche con 15.0 as y Guanajuato con 14.9 as, mostraron su génesis a la nupcialidad de forma más retardada. 
+Al interior de país, el comportamiento del inicio al proceso de la inserci al mercado matrimonial difiere en cada entidad federativa. Si bien en 1970, en el 6.2% de las entidades federativas la edad mínima al ingreso matrimonial se ubicentre los 11 as; en el 21.9% del país las mujeres comenzaron a casarse un poco más tarde, iniciando a los 12 as de edad; en el 56.2% de la naci, donde se presentel mayor porcentaje, el inicio al mercado matrimonial de mayor representatividad tuvo su génesis a la edad de 13 as; en el 9.4% del territorio mexicano las mujeres comprendidas en esta área dieron inicio después de los 14 as y, por timo, en el 6.2% restante, las mujeres en edad de contraer matrimonio lo hicieron pasando los 15 as. 
+Por lo cual, se puede decir, que en el 84.3% de las entidades federativas, la edad a la que empezaron a casarse las mujeres era menor a los 14 as, representando una edad demasiado Joven. 
+En la década posterior, el comportamiento de las mujeres para iniciar vida en pareja, mostrun cambio a la homogeneizaci al interior del país, so en dos estados presentaron un origen a la nupcialidad a la edad de 11 as; en el 31.2% de las entidades federativas los primeros matrimonios se registraron a la edad de 12 as; en el 59.4% del territorio nacional el origen de arranque se presento a los 13 as y icamente en Aguascalientes, los matrimonios de las mujeres decidieron esperar más tiempo, dado que su origen fue a los 16.3 as. En tal virtud, en el 96.9% del territorio que conforma a la naci (excepto Aguascalientes) comenzaron a formarse las parejas en matrimonio antes de los 14 as. 
+En el a de 1988, se puede considerar como universal y homogenea la edad mínima 
+o más joven a la que se inician los matrimonios en el país, ésta edad es de 14 as y es el reflejo de un cambio en la concepci del matrimonio por parte de la mujer mexicana de la actualidad. 
+Además, el tramo existenete entre el Estado el cual diinicio a su primer matrimonio y el que por el contrario el que comenzo de forma tardía, se ha ido acortando. Para 1970 la distancia existente fue de 5 as y 8 meses, diez as más tarde, se redujo a 4 as y 10 meses y, por timo, en 1988, slo fue de 1 a y 7 meses. Sin embargo, si en este timo a no se toman en cuenta los valores que presentaron los Estados de Campeche y Colima, la distancia se acortaría más a, siendo menor a un a. 
+
+111.3 Rapidez de la nupcialidad 
+La estimaci del paramétro k constituye un punto de suma importancia para la determinaci del ritmo al que se fue dando el proceso matrimonial, la prontitud con la que se fueron dando los matrimonios de las mujeres en las entidades federativas y dentro del total del país. Este paramétro es comparJtivo con el ritmo de los matrimonios que se dieron en la poblaci Sueca en el siglo XIX. 
+En ese sentido, si se tiene un valor de k = 1, se tendría un ritmo de casamiento al de la poblaci sueca, en nuestro estudio llamado estandar; si el valor de k = 0.5, los primeros matrimonios se daran a un ritmo doble que el estandar. 
+Tornando en cuenta estas observaciones, se puede verificar claramente que el feneno de la nupcialidad en México se ha convertido en un proceso de mayor rapidez, al observar los cambios en los valores del paramétro k, el cual ha ido disminuyendo constantemente al paso del tiempo de 0.51 a 0.46 y a 0.36, en los as de 1970, 1980 y 1988, respectivamente. Asimismo, los primeros matrimonios que se fueron dando, en 1970, tenían una velocidad doble que el estandar ocupado y una década posterior esta velacidad había aumentado, ya para el timo a de estudio, 1988, la rapidez con la que se dieron los matrimonios fue a una velacidad impresionante de poco menor del tripe. 
+Dentro del país, las entidades federativas que se comportaron de forma semejante al patr, durante el a de 1970, se pueden mencionar a Sonora, Guerrero, Aguascalientes, El Distrito Federal y Michoacán. Por el contrario, los estados considerados como los de mayor rapidez de entrada de sus mujeres al mercado matrimonial son: Tabasco, Tlaxcala, Nayarit, Nuevo Le, Chihuhua y Jalisco. Y por timo, el resto de las entidades tenían una velocidad promedio de entrada al matrimonio, al fluctuar sus valores entre 0.51 hasta 0.77. 
+De forma análoga, en 1980, la velocidad con las mujeres entraban al matrimonio era más rápido que una década anterior, alcanzando el valor de 0.46, lo que se refleja al interior del país en cada uno de las partes que lo componen, once entidades federativas, consideradas como las de mayor retrazo al matrimonio estan muy proximas a alcanzar el valor de que los matrimonios se den en la mitad del tiempo que el estandar y se situan por arriba por arriba del 0.5, entre los cuales encontramos a Baja Californioa, Coahuila, Yucatán, Nuevo Le, Baja California Sur, Sonora, Oaxaca, el Distrito Federal, Querétaro, Veracruz y Jalisco. Mientras que las veintiun restantes, su situaci es la siguiente, Tabasco y Aguascalientes no poseen informaci, Campeche es el estado con la mayor rapidez de los matrimonios con un valor de 0.37 y los diecinueve restantes fluctuan entre 0.40 y 0.5, considerados como estados con un fuerte proceso de nupcialidad o matrimonialidad. 
+Ya para el ,l de 1988, el ritmo de la nupcialidad de las mujeres es la más alta, logr.mdo el valor de 0.36, lo que significa que los primeros matrimonios se dan a una velocidad de c.,si 2.5 veces que el estandar. Sin embargo, el feneno a sufrido un cambio a la homogeniezaci del proceso dentro de las entidades federativas. En ese sentido, la agrupaci de estados y que so los estados de Colima y Campeche se ubica como diferentes del resto, al representar el primero a las de mayor velocidad y por el contrario a los de la nupcialidad más lenta, respectivamente. El resto de las entidades fluctua entre un valor de 0.40 y 0.44, lo que represenu una ,·eloacidad un poco mayor del doble que en el estandar. 
+111.4 Control natal 
+Para análizar el parámetro que esta vinculado con el control de la natalidad m, so se eligieron los as fronteras, dado que la aplicaci del modelo que se utilizo para el a de 1980 y en algunos casos en 1970 fue mediante los graficos de Coale y Trussell, en donde se tiene que fijar el parámetro de análisis y que se prefiere en lo posible eliminar este tipo de uso que obscureceria o dismunuiría la interpretaci de la informaci y se prefiere rescatar los resultados emitidos por el programa de computaci. 
+Cabe mencionar que un valor del paramétro m -O es considerado como fecundidad natural; m -0.2 tiene la clasificaci de control de la fecundidad muy moderada y por timo un valor de m =-0.4 se clasifican como poblaciones con fecundidad bastante moderada. Lo que implica que para un valor superior al 0.4 se considerará como poblaciones con control de la fecundidad. 
+México durante el período de estudio sufrio grandes transformaciones vinculadas con diversos procesos y políticas que se han llevado a cabo al interior de mismo, en particular las políticas de poblaci en su etapa de planificaci familiar hoy día conocido como salud reproductiva, que ha conllevado a las mujeres mexicanas a un proceso de concientizaci y de aceptaci del cambio reproductivo y acepten sin ning prejuicio el uso de alg método anticonceptivo, como se ha hecho en el país, al pasar de un control de la fecundidad de un valor del paramétro de m de 0.2 a 0.5, es decir, paso de una poblaci con una fecundidad con un control muy moderada a ser una poblaci con un control de su fecundidad bastante moderado. 
+En ese sentido, de acuerdo a la aplicaci del método utilizado en este trabajo, para 1970, los estados que histicamente han hecho un uso más activo de alg método de control de la fecundidad son: El distrito Federal, Guerrero, Campeche, Sonora, Colima, Morelos y Coahuila; en menor nivel se encuentran los estados de Puebla, Aguascalientes, Chihuahua, Durango, Michoacán, Baja California Sur, Querétaro, Tlaxcala, Chiapas, Oaxaca, San Luis Potosí, Quintana Roo, Yucatán, Zacatacas, Hidalgo, Nayarit, Sinaloa, Jalisco, Tamaulipas y Guanajuato; y por timo, los de menor control o muy moderado se ubican a Veracruz, Nuevo Le, Tabasco, México. Para el estado de Baja California no se tiene dicha clasificaci puesto que el metodo era inaplicable. 
+Y a para el a de 1988, el control de la fecundidad es de forma universal en el país, sin embargo, siguen existiendo grandes diferencias al interior del mismo, se podría pensar que son por el desarrollo interno de cada entidad federativa, así, los estados que destacan por tener un mayor control de la fecundidad son, de manera decreciente, Colima, el Distrito Federal, el Estado de México, Baja California, Chihuahua, Nuevo Le, Sonora, Quintana Roo, Tamaulipas, Yucatán, Baja California Sur, Coahuila, Campeche, Veracruz, Nayarit, Morelos, Jalisco, Aguascalientes, Guan,tjuato, Sinaloa, Tabasco, Zacatecas, Querétaro, Chiapas, Tlaxcala 
+e Hidalgo; y los donde existe control pero es inferior son las entidades fredertativas de Durango, Oaxaca, puebla, San Luis Potosí, Michoacán y Guerrero. 
+APENDICES 
+A. Método de interpolaci para calcular la media y la desviaci estandar 
+Por lo general, se puede calcular una fecundidad modelo que coincida con los valores observados de la edad promedio, desviaci estandar y R,, empleando no más de tres tablas tabuladas. Los autores Coale y Trussell sugieren el procedimiento de interpolaci ya que este método reproduce casi exactamente la media y la desviaci estándar observadas. 
+Los autores hicieron tablas modelos normalizadas de modo que la suma de las tasas de fecundidad de todas las edades es igual a uno, en estas se incluyen diversas estructuras modelo, ordenadas en primer lugar por el valor de la media, desviaci estándar y de R,, de tal manera, que existen grupos de estructuras con la misma media y desviaci estándar, pero que difiere de otro modelo del valor de R1• De misma forma, la desviaci estándar de los modelos difieren de grupo en grupo en O.SO y la media varia de a en a. 
+Suponga que los valores observados de edad promedio xº y desviaci estándar aº situadas entre x y x+ 1.0, y a y a+0.5, respectivamente como se observa en la suguiente figura. 
+(2) (O) 
+t
+x+l 
+Valor 
+Edad
+observado
+xº 
+media 
+X 
+(1)' 
+(a+ .5)2 
+<---Varianza----> 
+Y a ubicados entre los valores tabulados, estos van ha estar encerrados entre cuatro 
+grupos de modelos tabulados. Para cada una de esas cuatro combinaciones de medias y 
+desviaciones estándar hay por lo general diversos modelos tabulados, con diferentes valores de 
+R1• Y el procedimiento de interpolaci consiste en elegir tres modelos ubicados en diferentes 
+vértices, J. saber: 
+Modelo: 
+(O) 
+Intersecci entre la varianza grande y la media chica. 
+
+(1) 
+Intersecci entre la varianza más grande y la media más grande. 
+
+(2) 
+Intersecci entre la varianza chica y la media chica. 
+
+
+Al identificar estos tres modelos so queda por establecer como se promediarán los modelos que se seleccionen y cual es el criterio para seleccionar un modelo dentro de cada grupo. 
+Sea d1 la distancia entre la media observada a la media en pos1c1on (O) (en valor absoluto) y d1 la dist.mcia de la varianza observada a la varianza en posici (O), como una fracci de la distancia (O) a (2). Para promediar los tres modelos seleccionados, el peso por el que pondera la distribuci de la posici (1) es igual a d1, W1=d1, la ponderaci para la posici (2), W2, se obtiene aumentando d2 en la cantidad d¡{J-dJl(a+0.25) -siendo a el valor de la desviaci estándar menor-, cuando la posici cero corresponda a la mayor desviaci estándar, si (O) es la posici de la desviaci estándar menor, d2 se debe disminuir en igual cantidad a fin de establecer el valor de W1• La ponderaci de la posici (O), W~, se obtiene haciendo, W0 =-1 -W1 -W:. 
+El criterio para elegir un modelo dentro de cada grupo de esas tres posiciones, puesto que el procedimiento anterior calcula las ponderaciones W, que garantiza la reproducci de xº y aº y como esos factores so dependen del valor de la media y la desviaci estándar (ya que son comunes en todos los modelos que se encuentran en una misma posici), con respecto a la media y a la desviaci estándar es indiferente seleccionar cualquiera de los modelos de un grupo, queda, por lo tanto, libertad para seleccionar en cada grupo aquellos que, una vez promediados, reproduzcan el valor R1, o, al menos, proporcione un valor la más aproximado posible. 
+Para ejemplificar se aplicará a los datos de México 1988, los valores observados son: xº -28.5016, aº = 6.7193 y R1 = 0.3257. Estos valores quedan encerrados como se muestra en la siguiente gráfica: 
+(2) (O) 
+29.0 
+t 
+Valor 
+observado 
+Edad 28.5016 
+media 
+28.0 
+(1) ! 
+6.5 6,7 194 7.0 < ------Varianza ------> 
+De .iquí que los modelos correspondientes sean: 
+CUADRO 11 Por lo que se calcula: México 1988: Modelos calculados por el 
+método de interpolaci. 
+
+Modelos (O) (1) (2)  Media Varianza 28.0 7.0 29.0 7.0 28.0 6.5  
+
+.. 1 28.5016-28.0 1 = 0.5046 
+d1 -1[(u1+0.5) · aº2] I [(<r+0.5} · a 1 
+-1 (72 -6.71932)/ (72 -6.52) 1 = 0.5705 
+Fucnt~ Cálculos propios. 
+Este valor se debe incrementar en di(J-dJl(a1+0.25) para obtener el ponderador W1, ya que el modelo (O) correspondio a la mayor desviaci estándar -si le hubiera correspondido la menor hubiera sido necesario disminuir d1 en una cantidad análoga-;ya que a2 se identifica como la menor de las desviaciones estándar, se calcula el valor de correcci: 
+05016 ,¡. (1-0.5016) / (6.5 +0.25) = 0.0359 
+por lo que los factores de ponderaci resultan: 
+w, = 0.5016, 
+-0.5705 + 0.0359 -0.6064, y,
+W2 
+Wc = 1-0.5016 -0.6064 = -0.10793 
+Al aproximar el valor de R, del modelo interpolado al valor de R ,º =-0.3257, se eligide las tablas modelo de Coale y Trussell, para la posici del modelo (O) un R, -0.4470, para b posici del modelo (1) un R, -0.3265 y por timo, para la posici del modelo (2) un R1 = 0.3196. Al interpol.ir estos valores utilizando los ponderadores y aplicando el programa de computaci se obtuvo L1 distribuci del cuadro 7 que se puede observar en el capítulo II, el cual tiene un.1 x = 28.4823, <J = 6.7 414 y una relaci de paridez R1 = 0.3138. 
+B. Medidas estadísticas y factores de multiplicaci ~ de Williams Brass 
+Las medidadas estadísticas que se utilizaron son: el desvio medio (DM) es el promedio de las diferencias entre la fecundidad (porcentual) del modelo y de la estructura observada en cada grupo de edad, tomadas en valor absoluto. 
+La estructura de fecundidad se
+7 
+indicará como distribuci porcentual por
+DM = .! E 1 /{ -/ ~ 1 
+los grupos de edad.
+7 i•l 
+f ,0  =  Porcentaje de fecundidad  en  
+El valor de"chi-cuadrado" se obtiene  el grupo de edad i-ésimo de la  
+de  sumar  los  cuadrados de las  diferencias  estructura observada.  
+entre el valor observado y el del modelo,  
+dividido  por  el  valor  observado  en  cada  f,  =- Porcentaje de fecundidad  en  
+grupo de edad.  el grupo de edad i-ésimo de la  
+estructura del modelo.  
+2x =  7 E  (l;-/' ~  )2  
+donde:  i • I  ! '~ l  
+
+CUADRO 12 
+México 1970: Distribucion observada vs. distribuciones obtenidas de acuerdo al parámetro m. 
+Grupo de edad  Distribuci. observada  m  - O.O  m  =­0.2  m  = 0.4  
+10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49  7.03 21.85 24.17 19.01 16.14 5.90 5.90  0.04 8.14 21.14 22.70 20.91 16.97 8.78 1.32  o.os 8.83 22.82 23.76 20.47 15.49 7.51 1.07  0.07 9.05 24.20 24.87 20.18 14.26 6.49 0.87  
+Total  100.00  100.00  100.00  100.00  
+
+Fuente: C:ílculos propios. 
+CUADRO 13 
+México 1970: Aplicaci de las pruebas estadísticas para obtener el mejor ajuste. 
+Grupo de edad  m .. O.O )(1DM  m -DM  0.2 )(1  m -DM  0.4 )(1  
+10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49  0.04 1.12 0.71 1.47 1.90 0.83 2.88 4.59  0.00 0.18 0.02 0.09 0.19 0.04 1.40 3.56  o.os 1.80 0.97 0.41 1.46 0.65 1.61 4.84  0.00 0.46 0.04 0.01 0.11 0.03 0.44 3.96  0.07 2.03 2.35 0.70 1.17 1.88 0.58 5.03  0.00 0.58 0.25 0.02 0.07 0.22 0.06 4.29  
+Total  1.93  5.49  1.69  5.05  1.96  5.50  
+
+Fuente: Cálculos propios. 
+CUADRO 14 México 1980: Distribuci observada vs. obtenidas de acuerdo al parámetro m 
+Grupo de edad  Distribuci observada  m =­O.O  m =­0.2  m,. 0.4  
+10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49 Total  8.02 21.57 22.32 17.89 13 .84 7.86 8.51 100.00  0.10 9.70 21.36 22.21 20.34 16.49 8.53 1.28 100.00  0.12 9.80 22.80 23.42 20.16 15.25 7.40 1.05 100.00  0.18 10.47 24.32 24.33 19.66 13.88 6.31 0.85 100.00  
+
+Fuente: Cálculos propios. 
+CUADRO 15 
+México 1970: Aplicaci de las pruebas estadísticas para obtener el mejor ajuste. 
+Grupo de edad  m = DM  O.Oxi  m = DM  0.2xi  m -DM  0.4xi  
+10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49  0.10 1.68 0.21 0.11 2.45 2.65 0.67 7.23  0.00 0.35 0.00 0.00 0.34 0.51 0.06 6.14  0.12 1.78 1.23 1.10 2.27 1.41 0.46 7.46  0.00 0.40 0.07 o.os 0.29 0.14 0.03 6.54  0.18 2.45 2.75 2.02 1.77 0.04 1.55 7.66  0.00 0.75 0.35 0.18 0.18 0.00 0.31 6.90  
+Total  2.16  7.40  2.26  7.52  2.63  8.66  
+
+Fuente: Cálculos propios. CUADRO 16 
+Factores de multiplicaci para estimar el valor medio en los grupos quinquenales de edad de la fecundidad acumulada (FJ =-,t, + k; */; 
+Límites exactos del intervalo de edades 
+15-19  1.210  1.310  1.615  1.950  2.305  2.640  2.925  3.170  
+20-24  2.555  2.690  2.780  2.840  2.890  2.925  2.960  2.985  
+25-29  2.925  2.960  2.985  3.010  3.035  3.055  3.075  3.095  
+30-34  3.055  3.075  3.095  3.120  3.140  3.165  3.190  3.215  
+35-39  3.165  3.190  3.215  3.245  3.285  3.325  3.375  3.435  
+40-44  3.325  3.375  3.435  3.510  3.610  3.740  3.915  4.150  
+45-49  3.640  3.895  4.150  4.395  4.630  4.840  4.985  5.000  
+f/h  0.036  0.113  0.213  0.330  0.460  0.605  0.764  0.939  
+m  31 .7  30.7  29.7  28.7  27.7  26.7  25.7  24.7  
+
+Fuente: w1111am Brass. 
+C. Programa de Cputo~ 
+Programa de computaci de la estructura modelo de fecundidad con valores específicos de a0, k y m. 
+Este programa de computaci en fortran 77, contiene los valores de n(a) y v(a) e incluye el calculo de G(a) del modelo estandar de la frecuencia de los primeros matrimonios. Los datos que se requieren son los valores de a0, k y m, designados como AAA, AKK y AMM en la lectura de los datos. 
+Los valores de ·v(a) y n{a), la fecundidad natural, comienzan a la edad de 12.5 as y se extiende hastJ la edad 49.5 as, listados en 38 neros. 
+El programa de computaci fue hecho con el objeto de recurrir a un instrumento de agilizar los procesos de calculo y se encuentra con limitaciones de la elegancia de un programador experto. 
+DIMENSION EM2(38),ZS(420),ZSS(500),H(38),V(38) DIMENSION F(38),T(7),RR(5) CHARACTER''5 CQ(9),C(48) 
+C V(A), CENTRADO EN EL PUNTO MEDIO DE CADA AÑO DE EDAD 
+DATA V /0.,0 ..J.,0.,0..0.,0.,0...004,.Q3,.06,.10,.15,.20,.25,.31, 
+1 .37,.44,.52,.60,.68,.76,.83,.90,.97,l.04,l. l l,l.18, 1.25, 
+1 1.32, 1.39,1.46,1.53,1.59, 1.64, 1.67,1.69,1.70/ 
+e 
+C FECUNDIDAD NATURAL, CENTRADA EN EL PUNTO MEDIO DE CAD AÑO DE EDAD 
+DATA H/.175,.225,.275,.325,.375,.421,.460,.475,.477,.475,.470, 
+1 .465,.460,.455,.449,.442,.435,.428,.420,.410,.400,.389, 
+.375,.360,.34 3 ,.325,.305,.280,.247 ,.207,.167,.126,.087, 
+1 .055,.Q35..021..0l 1,.003/ 
+DATA CQ/' PTY!',' PTY2',' PTY3',' PARl',' PAR2',' 12', 
+1· 13',' 14','10-14'/ 
+DATA C/' 1EAN'.'STDEV',' Rl',' AO',' K',' M ', 
+l' 15'.' 16'.' 17',' 18'.' 19'.'15-19',' 20',' 21', 
+l' 22'.' 23',' 24','20-24',' 25',' 26',' 27',' 28', 
+¡• 29','25-29'.' 30',' JI',' 32',' 33',' 34','30-34', 
+1· 35·; 36'.' :u·: 38'.' 39','35-39',' 40' ,' 41', 
+¡ · 42',' 43',' 44','40-44',' 45',' 46',' 47',' 48', 
+¡· 49','45-49'/ 
+80 FORMAT(IX.'[l] CONTI UAR [2] SALIR',lSX,'OPCION :') 
+81 FORMAT(l2) 
+94 FORMAT{lX.'TECLEA EL NOMBRE DE LA ENTIDAD FEDERATIVA ENTRE APOSTRO 
+IFOS Y E TER'.//IX'ENTIDi\D: ') 
+96 FORMAT(AI5) 
+Progr:im:i m0Jific1do para t'jecut:irlo en Fon:in 77. 
+97 f-ORMAT(IX,IH l,A5,5X,f-8.4) 99 FORMAT(lX,A5,5X.F8.4) 98 FORMAT(35(1X.AS,5X.FI0.8/)) 95 FORMAT(IX.A5,5X,FI0.8) 
+100 FORMAT(IX,'f-A\OR DE INTRODUCIR LOS VALORES DE aO, k ~ m EN LINEAS IEPARADOS POR O MA -Y AL FINAL UN ENTER. RECUERDA QUE LOS PARAMETRO IS SE ENCUENTRA ACOTADOS DE LA SIGUIENTE FORMA:'/IX,'10 < ~ aO < 120'5X,'O.l < k < -2'5X,'O < -m < -4'/) 
+DO 1234 L-1 ,38 1234 V(L)--V(L) 
+DO 637 I-1,80 637 ZSS(l)~o.o 999 CONTINUE 
+
+WRITE (5, 80)  
+READ('>,81) N  
+IF (N.EQ.l) THEN  
+WRITE (5,94)  
+READ (5,96)  
+WRITE (*,100)  
+READ(5/) AAA,AKK,AMM  
+c  
+C  LA SECCION A TRAVES DEL ESTADO 5 ESTABLECE EL ACUMULADO DEL ACUMULADO  
+C  DE CADA MATRThtONIO PROGRAMADO PARA INTERVALOS DE 0.1 DE AÑO CON ORIGEN  
+C  EN CERO.  
+c  
+DO 73 J-1 ,420  
+
+73 ZSU)-0.0 
+X-O.O 
+ZL-G(X,AKK} 
+DO 5 1-1,420 
+AI-I 
+X-AI/10.0 
+ZU -G(X,AKK) 
+ZS(l)-0.1 *((ZU + ZL)/ 2.0) 
+ZL-ZU 
+IF(I.GT. l) ZS(I) -ZS(I) + ZS(I-1) 5 CONTINUE 
+c 
+C LA SECCION DEL ESTADO 4 TRANSFIERE EL ORIGEN HACIA aO. 
+c 
+DO 9 1-81.SOC 9 ZSS(I) -0.0 J -10.0*AAA 
+LAST -500-J 
+DO 41 -1,LAST 
+J=J+l 
+ZSSU) -ZS(I) 4 CONTIN \, 
+C PRO lEDIA DO EL A Ul\1 LADO DEL :\CU tl.JLADO DE CADA MATRIMONIO PROGRAMADO C PARA LO 1:: VALORE DE CADA AÑO INOI\'IDUAL DE EDAD. EL PROMEDIO DE 
+C  CADA MATRIMO  110 POR CADA AÑO DE EDAD ES ESTABLECIDO.  
+c  
+DO 25 12-1,38  
+112= 120+ 10''[2  
+W­ .O  
+DO 24 K-1 ,10  
+
+.H W-W +0.5''(2SS(II2-K + 1) + ZSS(Il2-K)) 25 EM2(12) -W / 1 O.O 58 DO 35 12= l,38 35 F(12)-EM2(I2)*H(l2) '•EXP(AMM*V(l2)) 
+LA SECCION DE 15 A 19 DE LA EDAD DE FECUNDIDAD ESPECIFICA PROGRAMADA C ESTABLECIDA EN EL ESTADO 35 SE TRANFORMA AHORA AJUSTANDO UNA EXPONENCIAL C TENIENDO CONTACTO CON EL EJE DE LA EDAD DE 15 Y LA ORDENADA EN LA 
+EDAD DE 20 Y EL AREA BAJO LA CURVA DESDE 15 A 19 AGUAL A AQUELLA DE C LA SECCION ORIGINAL DE 15 A 19. ESTA TRANSFOR1v1ACION NO SE DESARROLLA A MENOS QUE aO SEA MAYOR DE 15. 
+e 
+DO 1 IL-1,7 BB-o.o DO 2 JL-1,5 KL-JL+ 5*(1L-1) +3 
+2 BB-BB+F(KL) 
+1 T(IL)-BB/5.0 FIRST -(F(l) + F(2) + F(3))/5.0 IF(AAA .LT. 15.0) GO TO 289 TT -T(l)*5.0 FR-.476*ZSS(200) SS-FR''5.0/TT-l.O CONS-FR/(5.0''*SS) A-1.0 DO 44 ML-1,5 RR(ML)-A*''(SS+ 1.0)/(SS + l.O)'·CONS 
+44 A-A+ l. F(4)-RR(l) DO 46 M=2,5 L-M+3 
+46 F(L) =RR(M)-RR(M-1) 289 CONTINUE 
+e 
+C LA ECCION A TRAVES DEL ESTADO 31 ESTABLECE LA MEDIA, LA VARIAZA, C LAS TRES PARIDADES Y R l. 
+e 
+SUMF-0. DO 22212-1,38 222 SUMF =F(I2)+SUMF DO 333 J= 1,7 
+.'133 TO)-TO)/SUMF FIRST -FIRST/ 'UMF SUM-0. SUMSQ-0. A-12.5 DO 33 12= IJ8 F(I2)-F(l2)/SUMF 
+SUM-SUM+A·•F(I2) 
+SUMSQ-SUMSQ +A* A *F(l2) 33 A-A+ 1.0 
+SIGMA -(SUMSQ-SUM''SUM)-1.0/12.0 
+SIGMA-SQR T(SIGMA) 
+SMEAN-SUM 
+Q 1-{4.5'·F(4) + 3.5'·F(5) + 2s•F(6) + 1.5*F(7) + .5*F(8))/5.0 + 5.0*FIRST 
+Q2-(4.5 •• F(9) + 3.5 * F(lO)+ 2.5 * F(ll)+ 1.5 *F(l2)+ .5 * 
+1 F(13)) / 5.0 + 5.0*(T(l) +FIRST} 
+Q3 • (4.5 * F(l4) + 3.5 •• F(l5) + 2.5 * F(16) + 1.5 * F(17) + 
+1 .5 * F(18)} / 5.0 + 5.0* (T(l) + T(2) +FIRST} PAR1-Ql/Q2 PAR2-Q2/ Q3 
+37 Rl-T(l)/T(2) 
+WRITE(5,97) C(l},SMEAN 
+WRITE(5,99) C(2),SIGMA,C(3},Rl,C(4),AAA,C(5},AKK,C(6},AMM,CQ(4), 
+1PAR1 ,CQ(5),PAR2,CQ(l),Ql ,CQ(2),Q2,CQ(3),Q3 
+PAUSE 
+WRITE(5,95) CQ(6),F(l),CQ(7),F(2) 
+WRITE (5,98) CQ(6),F(l),CQ(7),F(2),CQ(8},F(3),CQ(9),FIRST 
+K-3 
+DO 102 IN-1,7 
+N-IN*5+3 
+M-N-4 
+WRITE(5,98) (CU+ K),FU)J -M,N) 
+WRITE(5,98) C(N+K+ 1),T(IN) 
+102 K-K+ 1 GO TO 999 ELSE STOP ENDIF END 
+FUNCTION G(X,AKK) 
+CONS-0.19465/ AKK 
+B-0.1740/ AKK 
+W-0.2881 / AKK 
+G-CONS*EXP(-B*(X-6.06'•AKK)-EXP(-W*(X-6.06*AKK))) 
+RETURN 
+END 
+D. ESTADISTICO Y GRAFICO 
+ESTADOS UNIDOS MEXICANOS: ESTRUCTURADESPLEGADADE LA FECUNDIDAD, 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00001964  0.00006977  0.00000000  
+14 as  0.00051108  0.00097721  0.00000000  
+15 as  0.00282259  0.00430799  0.00119794  
+16 as  O.O(fil8068  0.01078251  0.00635920  
+17 as  0.01661813  0.01928007  0.01463924  
+18 as  0.02623696  0.02803005  0.02547743  
+19 as  0.03435520  0.03461786  0.03858377  
+20 as  0.04029098  0.03897730  0.04969728  
+21 as  0.04429295  0.04181019  0.05461151  
+22 as  0.04674448  0.04344762  0.05682519  
+23 as  0.04814582  0.04441123  0.05726496  
+24 as  0.04875224  0.04490681  0.05649989  
+25 as  0.04886284  0.04508085  0.05521704  
+26 as  0.04851996  0.04493517  0.05352988  
+27 as  0.04773524  0.04453782  0.05130871  
+28 as  0.04679367  0.04403716  0.04906089  
+29 as  0.04565929  0.04346664  0.04658424  
+30 as  0.04427236  0.04274711  0.04384157  
+31 as  0.04265366  0.04179153  0.04102387  
+32 as  0.04103568  0.04081384  0.03835199  
+33 as  0.03933015  0.03971920  0.03573262  
+34 as  0.03742568  0.03830805  0.03317601  
+35 as  0.03545481  0.03678780  0.03067177  
+36 as  0.03332805  0.03505848  0.02814184  
+37 as  0.03115142  0.03322380  0.02567737  
+38 as  0.02883546  0.03118255  0.02320425  
+39 as  0.02610869  0.02862868  0.02051261  
+40 as  0.02271438  0.02525584  0.01742417  
+41 as  0.01877304  0.02116654  0.01406097  
+42 as  0.01493583  0.01707679  0.01092321  
+43 as  O.Oll ll281  0.01288449  0.00793583  
+44 as  0.00756671  0.00889653  0.00527629  
+45 as  O.OO-i7266l  0.00562429  0.00322927  
+46 as  0.00297796  0.0035791 l  0.00200026  
+47 as  0.0017761 I  0.00214747  0.00118087  
+48 as  0.0009266-l  0.00112487  0.00061191  
+49 as  0.00025222  0.00030678  0.00016599  
+
+AGUASCALIENTES:ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980 •  1988  
+BRASS  
+12 afios  0.00000035  0.00000000  0.00000000  
+13 afios  0.00009454  0.00000000  0.00000000  
+14 as  0.00061309  0.00000000  0.00000105  
+15 afios  0.00213683  0.00000000  0.00046151  
+16 afios  0.00539531  0.00000000  0.00399051  
+17 as  0.01083101  o.~30391  0.01330933  
+18 afios  0.01830421  0.01427399  0.02681023  
+19 atíos  0.02628967  0.02130331  0.03935369  
+20 afios  0.03386991  0.02743381  0.04851699  
+21 afios  0.04029118  0.03270745  0.05395307  
+22 afios  0.04547649  0.03716618  0.05669152  
+23 as  0.04936152  0.04085194  0.05753838  
+24 afios  0.05193350  0.04380669  0.05703828  
+25 as  0.05358791  0.04607237  0.05591389  
+26as  0.05434872  0.04769094  0.05430147  
+27 aiios  0.05403369  0.04870433  0.05207208  
+28 aiios  0.05322176  0.04915451  0.04977784  
+29 afios  0.05173057  0.04908342  0.04721176  
+30 as  0.04957345  0.04853301  0.04435018  
+31 aiios  0.04704650  0.04754523  0.04141209  
+32 atíos  0.04446184  0.04616203  0.03862576  
+33 as  0.04176481  0.04442536  0.03590002  
+34 as  0.03902757  0.04237717  0.03325849  
+35 as  0.03625024  0.04005940  0.03067876  
+36 aiios  0.03336678  0.03751401  0.02808161  
+37 afios  0.03050592  0.03478295  0.02556461  
+38 afios  0.02759621  0.03190816  0.02304811  
+39 as  0.02440090  0.02893160  0.02032647  
+40 afios  0.02071844  0.02589521  0.01722510  
+41 afios  0.01670361  0.02284094  0.01386728  
+42 afios  0.01295825  0.01981075  0.01074708  
+43 as  0.00939800  0.01684658  0.00778925  
+44 as  0.~23581  0.01399038  0.00516647  
+45 aiios  0.00380972  0.01128410  0.00315558  
+46 aiios  0.00235625  0.00876969  0.00195128  
+47 afios  0.00139005  o.~8910  0.00115078  
+48 aiios  0.00072004  0.00448428  0.00059591  
+49 aiios  0.00019532  0.00279718  0.00016159  
+
+• m afio de 1980 se estimpor el método del polinomio de W . Brasa. Fuente: Cálculos propios con base co el método de A. J. Coalc y T. J. Trusscll. 
+CUADR03 
+BAJA CALIFORNIA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+1970, 1980 y 1988. 
+Edad  1970 •  1980  1988  
+BRASS  
+12 afios  0.00000000  0.00003138  0.00000000  
+13 afios  0.00000000  0.00048276  0.00000000  
+14 afios  0.00000000  0.00232314  0.00000109  
+15 afios  0.00353247  0.00>60483  0.00047392  
+16 afios  0.01079789  0.01356626  0.00408747  
+17 afios  0.01727900  0.02237424  0.01367375  
+18 afios  0.02300799  0.03171436  0.02766802  
+19 afios  0.02801711  0.03915430  0.04077937  
+20 as  0.03233855  0.04445176  0.05041681  
+21 afios  0.03600453  0.04781462  0.05605242  
+22 as  0.03904727  0.04975150  0.05882118  
+23 afios  0.04149899  0.05065671  0.05953285  
+24 as  0.04339190  0.05073473  0.05876947  
+25 as  0.04475821  0.05036110  0.05735603  
+26 as  0.04563014  0.04955834  0.05544514  
+27 as  0.04603991  0.04823391  0.05286248  
+28 as  0.04601973  0.04677686  0.05023733  
+29 as  0.04560182  0.04506099  0.04731676  
+30 as  0.04481840  0.04304346  0.04409298  
+31 as  0.04370167  0.04084797  0.04084085  
+32 as  0.04228385  0.03870377  0.03778565  
+33 afios  0.04059716  0.03652900  0.03483526  
+34 as  0.03867382  0.03429421  0.03204342  
+35 as  0.03654604  0.03204959  0.02934824  
+36 as  0.03424603  0.02971789  0.02667489  
+37 as  0.03180601  0.02739790  0.02410972  
+38 afios  0.02925820  0.02501348  0.02158194  
+39 as  0.02663481  0.02233681  0.01889810  
+40 as  0.02396806  0.01916507  0.01590079  
+41 as  0.02129016  0.01562088  0.01271007  
+42 as  0.01863333  0.01225611  0.00078018  
+43 afios  0.01602978  0.00099273  0.00703804  
+44 as  0.0135 1173  0.00503829  0.00463500  
+45 as  0.01111140  0.003727  0.00281369  
+46 as  0.00086099  0.00232486  0.00173102  
+47 afios  0.00579273  0.00137832  0.00101776  
+48 as  0.()().t93883  0.00071624  0.00052595  
+49 as  0.00333 15 I  0.00019456  0.00014248  
+
+• El a6o de 1970 se estimpor el método del polinomio de W. llrasa. Puente: Cálculos propios con base en el método de A. J. Coale y T . J . Trussell. 
+BAJA CALIFORNIA SUR: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD, 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00009135  0.00000000  
+13 as  0.00001635  0.00090274  0.00000000  
+14 as  0.00033763  0.00364454  0.00000468  
+15 as  0.00169307  0.()()()14125  0.00060983  
+16 afios  0.00512727  0.01709972  0.00462970  
+17 as  0.01126751  0.02631415  0.01452570  
+18 afios  0.01978671  0.03544267  0.02832976  
+19 as  0.02867551  0.04214088  0.04086817  
+20 as  0.03670232  0.04652691  0.04989685  
+21 as  0.04310176  0.04901684  0.05512344  
+22 as  0.04788504  0.05021198  0.05766092  
+23 as  0.05116123  0.05052520  0.05830587  
+24 as  0.05305684  0.05015041  0.05760055  
+25 as  0.05403772  0.04944057  0.05629535  
+26 as  0.05418339  0.04839721  0.05452170  
+27 as  0.05338419  0.04691385  0.05212351  
+28 as  0.05219276  0.04535551  0.04967957  
+29 as  0.05046422  0.04358746  0.04696006  
+30 as  0.04820367  0.04155938  0.04394648  
+31 as  0.04565346  0.03938385  0.04088049  
+32 afios  0.04310302  0.03727598  0.03798680  
+33 afios  0.04048607  0.03515210  0.03517396  
+34 as  0.03783517  0.03298046  0.03247920  
+35 as  0.03516946  0.03080674  0.02986196  
+36 as  0.03241603  0.02855477  0.02724659  
+37 afios  0.02969228  0.02631805  0.02472166  
+38 afios  0.02692244  0.02402236  0.02221537  
+39 as  0.02386929  0.02144818  0.01952810  
+40 as  0.02032822  0.01840029  0.01649453  
+41 afios  0.01644295  0.01499609  0.01323578  
+42 as  0.01280099  0.01176504  0.01022419  
+43 afios  0.00931849  0.00063194  0.00738608  
+44 as  0.00620709  0.00579578  0.00488307  
+45 as  0.00380487  0.0035772  0.00297414  
+46 afios  0.00235981  0.00223137  0.00183479  
+47 as  0.00139428  0.00132287  0.00108056  
+48 afios  0.00072291  0.00068742  0.00055903  
+49 afios  0.00019616  0.00018673  0.00015152  
+
+CAMPECHE: ESTRUCTURA DESPLEGADA POR EDAD A LA FECUNDIDAD 
+1970, 1980y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00010658  0.00001873  0.00000000  
+14 as  0.00087902  0.00088065  0.00000000  
+15 as  0.00336255  0.00545675  0.00111070  
+16 as  0.00063678  0.01503208  0.00605669  
+17 as  0.01692361  0.02697120  0.01416515  
+18 as  0.02737936  0.03821201  0.02491885  
+19 as  0.03739552  0.04576134  0.03804528  
+20 as  0.04578440  0.05003762  0.04953118  
+21 as  0.05168185  0.05193348  0.05504105  
+22 as  0.05557693  0.05239261  0.05773160  
+23 as  0.05764364  0.05200223  0.05845430  
+24 as  0.05810793  0.05102547  0.05778887  
+25 as  0.05770968  0.04983596  0.05650308  
+26 as  0.05655843  0.04842538  0.05473975  
+27 as  0.05439915  0.04667233  0.05235218  
+28 as  0.05199013  0.04492339  0.04991766  
+29 as  0.04904249  0.04302756  0.04721037  
+30 as  0.04560294  0.04092176  0.04421026  
+31 as  0.04207058  0.03870602  0.04115462  
+32 afios  0.03870922  0.03658256  0.03826921  
+33 as  0.03544698  0.03446191  0.03546181  
+34 as  0.03240157  0.03230773  0.03276657  
+35 afios  0.02946699  0.03016102  0.03014639  
+36 as  0.02657735  0.02794442  0.02752478  
+37 as  0.02382551  0.02574751  0.02499119  
+38 as  0.02114521  0.02349624  0.02247306  
+39 afios  0.01835175  0.02097494  0.01976831  
+40 as  0.01530068  0.01799211  0.01670903  
+41 as  0.01211688  0.01466213  0.01341725  
+42 as  0.00923582  0.01150228  0.01037160  
+43 as  0.00558287  0.00843875  0.00749781  
+44 as  0.00429347  0.00566588  0.00496040  
+45 as  0.00258477  0.00349694  0.00302305  
+46 as  0.00157917  0.00218126  0.00186590  
+47 as  0.00092465  0.00129315  0.00109921  
+48 as  0.00047653  0.00067197  0.00056879  
+49 as  0.00012891  0.00018253  0.00015418  
+
+COAHUILA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00004552  0.00000000  
+13 as  0.00000553  0.00058989  0.00000000  
+14 as  0.00025014  0.00267262  0.00000455  
+15 as  0.00146375  0.00729679  0.00058030  
+16 as  0.00478810  0.01455428  0.00438486  
+17 as  0.01102696  0.02349728  0.01386844  
+18 afios  0.01994025  0.03279377  0.02735064  
+19 as  0.02943547  0.04003129  0.03985318  
+20 as  0.03809864  0.04507096  0.04904477  
+21 as  0.04494844  0.04818271  0.05451336  
+22 as  0.05001039  0.04990398  0.05728258  
+23 aiíos  0.05336351  0.05063577  0.05812279  
+24 as  0.05515230  0.05058024  0.05757169  
+25 afios  0.05594127  0.05010682  0.05638049  
+26 afios  0.05583677  0.04923211  0.05468896  
+27 afios  0.05469116  0.04785959  0.05235091  
+28 as  0.05314815  0.04637142  0.04994861  
+29as  0.05102024  0.04463894  0.04725903  
+30 as  0.04833341  0.04261708  0.04426573  
+31 afios  0.04539778  0.04042633  0.04121049  
+32 afios  0.04250653  0.03829184  0.03832169  
+33 as  0.03959488  0.03613117  0.03550859  
+34 afios  0.03673345  0.03391417  0.03280741  
+35 afios  0.03389749  0.03168972  0.03018073  
+36 afios  0.03101713  0.02938084  0.02755251  
+37 afios  0.02820523  0.02708479  0.02501265  
+38 afios  0.02538923  0.02472595  0.02248873  
+39 as  0.02234745  0.02207890  0.01977874  
+40 as  0.01889492  0.01894303  0.01671491  
+41 as  0.01517350  0.01543944  0.01341955  
+42 as  0.01172772  0.01211346  0.01037149  
+43 aiíos  0.00047583  0.00088791  0.00749634  
+44 afios  0.00560523  0.00596782  0.00495850  
+45 as  0.00341477  0.00368347  0.00302141  
+46 as  0.00210699  0.00229769  0.00186464  
+47 as  0.00124106  0.00136221  0.00109838  
+48 as  0.00064214  0.00070786  0.00056833  
+49 as  0.00017406  0.000 19229  0.00015405  
+
+CUADR07 COLIMA: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 
+1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000157  0.00000458  0.00000000  
+13 aftos  0.00012416  0.00028515  0.00003208  
+14 afios  0.00072291  0.00197290  0.00056666  
+15 as  0.00241269  0.00>46560  0.00279313  
+16 afios  0.00594807  0.01388801  0.00009821  
+17 afios  0.01178508  0.02293369  0.01677178  
+18 afios  0.01978622  0.03199185  0.02769821  
+19 aiios  0.02834481  0.03867467  0.03793737  
+20 as  0.03648281  0.04303703  0.04620345  
+21 as  0.04324355  0.04567741  0.05181232  
+22 afios  0.04863210  0.04706451  0.05532021  
+23 afios  0.05251666  0.04767865  0.05704231  
+24 afios  0.05487520  0.04772183  0.05727226  
+25 afios  0.05623286  0.04743869  0.05671273  
+26 afios  0.05663066  0.04683064  0.05547809  
+27 afios  0.05579695  0.04588010  0.05336845  
+28 afios  0.05445567  0.04483931  0.05105980  
+29 as  0.05234183  0.04365689  0.04830367  
+30 afios  0.04950422  0.04226399  0.04512175  
+31 afios  0.04636019  0.04067219  0.04184215  
+32 as  0.04322843  0.03909697  0.03871769  
+33 as  0.04005915  0.03744953  0.03567108  
+34 afios  0.03699198  0.03562062  0.03278403  
+35 afios  0.03395066  0.03373418  0.02998595  
+36 afios  0.03087553  0.03170339  0.02720720  
+37 afios  0.02788770  0.02962796  0.02454089  
+38 afios  0.02492166  0.02742199  0.02191827  
+39 afios  0.02176736  0.02482673  0.01914588  
+40 as  0.01825606  0.02159773  0.01606790  
+41 as  0.01453751  0.01784934  0.01280936  
+42 as  0.01113880  0.01420048  0.00982950  
+43 afios  0.00797857  0.01056543  0.00705367  
+44 afios  0.00522838  0.00719387  0.00463204  
+45 afios  0.00316028  0.00449365  0.00280499  
+46 as  0.00193726  0.00283117  0.00172211  
+47 afios  0.00113682  0.00168855  0.00101128  
+48 as  0.00058680  0.00088095  0.00052218  
+49 as  0.00015890  0.00023978  0.00014140  
+
+CHIAPAS: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000044  0.00000000  
+13 as  0.00004668  0.00020357  0.00000000  
+14 as  0.00070976  0.00184410  0.00002095  
+15 as  0.00333477  0.00555172  0.00084121  
+16 as  0.00915040  0.01419361  0.00508172  
+17 as  0.01793118  0.02303679  0.01451949  
+18 as  0.02819485  0.03139198  0.02727088  
+19 as  0.03707431  0.03711735  0.03882634  
+20 as  0.04374656  0.04057039  0.04728242  
+21 as  0.04815963  0.04263789  0.05241596  
+22 as  0.05081972  0.04367965  0.05510955  
+23 as  0.05216778  0.04420159  0.05607422  
+24 as  0.05247458  0.04437719  0.05578144  
+25 as  0.05219810  0.04432348  0.05487675  
+26 as  0.05140189  0.04402039  0.05347819  
+27 as  0.05000175  0.04351830  0.05147547  
+28 as  0.04843783  0.04294963  0.04938390  
+29 as  0.04657751  0.04233731  0.04702117  
+30 as  0.04438788  0.04159738  0.04435918  
+31 as  0.04201933  0.04064032  0.04159246  
+32 as  0.03971159  0.03967072  0.03895190  
+33 as  0.03738236  0.03859377  0.03634824  
+34 as  0.03501429  0.03721375  0.03379095  
+35 as  0.03264662  0.03573092  0.03127735  
+36 as  0.03020117  0.03404725  0.02872952  
+37 as  0.02777884  0.03226278  0.024159  
+38 as  0.02530254  0.03027881  0.02373866  
+39 as  0.02254273  0.02779781  0.02100626  
+40 as  0.01929717  0.02452214  0.01786124  
+41 as  0.01569239  0.02055123  0.01442786  
+42 aíios  0.01228395  0.01658013  0.01121917  
+43 as  0.00899252  0.01250964  0.00815876  
+44 as  0.00502433  0.00863764  0.00542975  
+45 as  0.00371110  0.00546059  0.00332594  
+46 as  0.00231116  0.00347493  0.00206156  
+47 as  0.00136886  0.00208496  0.00121757  
+48 as  0.00071086  0.00109212  0.00063110  
+49 as  0.00019304  0.00029785  0.00017121  
+
+CUADR09 
+CHIHUAHUA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. DISTRITO FEDERAL: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. DURANGO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00000000  0.00005514  0.00000000  
+14 as  0.00000000  0.00094987  O .000001 10  
+15 as  0.00002056  0.00450794  0.00048234  
+16 as  0.00048144  0.01167567  0.00417422  
+17 as  0.00275259  0.02120509  0.01390705  
+18 as  0.00)()()498  0.03103561  0.027%976  
+19 as  0.02203610  0.03842695  0.04099650  
+20 as  0.0~2437  0.0-025930  0.05046754  
+21 as  0.04988762  0.04615486  0.05594906  
+22 as  0.05652513  0.04765267  0.05860067  
+23 as  0.05973114  0.04829459  0.05924467  
+24 as  0.06053206  0.04832207  0.05845808  
+25 as  0.06006779  0.04800458  0.05704581  
+26 as  0.05873599  0.04735525  0.05515307  
+27 as  0.05654731  0.04636237  0.05260937  
+28 as  0.05418079  0.04528345  0.05002751  
+29 afios  0.05146347  0.04406712  0.04715999  
+30 afios  0.04839491  0.04264366  0.04399491  
+31 as  0.04522432  0.04102422  0.0407%50  
+32 as  0.04220881  0.03942535  0.03778900  
+33 as  0.03925295  0.03775667  0.03488017  
+34 afios  0.03638215  0.03590740  0.03211874  
+35 as  0.03357581  0.03400191  0.02944878  
+36 as  0.03074987  0.03195229  0.02679518  
+37 as  0.02800475  0.02985867  0.02424477  
+38 as  0.025259S9  0.02763423  0.02172649  
+39 as  0.02228757  0.02501802  0.01904548  
+40 as  0.01889594  0.02176359  0.01604234  
+41 as  0.01521966  0.01798607  0.01283729  
+42 as  0.01180081  0.01430906  0.00988892  
+43 as  0.00055707  0.0 1064611  0.00712410  
+44 as  0.00567848  0.00724876  0.00469683  
+45 as  0.00346974  0.00452791  0.00285392  
+46 as  0.00214628  0.00285274  0.00175714  
+47 as  0.00126604  0.00170141  0.00103361  
+48 as  0.00)65568  0.00088766  0.00053431  
+49 as  0.00017781  0.00024161  0.00014476  
+
+
+Edad  1970  1980  1988  
+12 afios  0.00000000  0.00000000  0.00000000  
+13 afios 14 afios  0.00002694 0.00038989  0.00001959 0.00050913  0.00000000 0.00000474  
+15 as  0.00173067  0.00281086  0.00061109  
+16 afios  0.00501563  0.00024996  0.00462790  
+17 afios  0.01100458  0.01656845  0.01458386  
+18 as  0.01972072  0.02617745  0.02861485  
+19 afios  0.02944517  0.03429873  0.04150268  
+20 afios  0.03886509  0.04024515  0.05087378  
+21 afios  0.04658888  0.04426022  0.05628841  
+22 afios  0.05260380  0.04672442  0.05890444  
+23 afios  0.05669412  0.04813669  0.05951328  
+24 afios  0.05886344  0.04875197  0.05867982  
+25 as  0.05983460  0.04886949  0.05722008  
+26 afios  0.05971145  0.04853184  0.05527802  
+27 as  0.05816395  0.04775089  0.05267121  
+28 as  0.05610272  0.04681200  0.05002857  
+29 afios  0.05319631  0.04567940  0.04709295  
+30 afios  0.04954622  0.04429349  0.04385672  
+31 afios  0.04569498  0.04267522  0.04059685  
+32 afios  0.04196482  0.04105730  0.03753690  
+33 afios  0.03830523  0.03935150  0.03458484  
+34 afios  0.03490609  0.03744644  0.03179615  
+35 afios  0.03161785  0.03547480  0.02910631  
+36 as  0.02838189  0.03334706  0.02644095  
+37 afios  0.02530650  0.03116934  0.02388559  
+38 aiios  0.02232723  0.02885216  0.02136995  
+39 afios  0.01925505  0.02612389  0.01870254  
+40 afios  0.01594649  0.02272765  0.01572788  
+41 afios  0.01254014  0.01878403  0.01256518  
+42 aiios  0.00948934  0.01494460  0.00966355  
+43 afios  0.(0571328  0.01111934  O.CMX,95041  
+44 afios  0.00434523  0.00757116  0.00457485  
+45 as  0.00259880  0.00472939  0.00277592  
+46 aiios  0.00157906  0.00297972  0.00170713  
+47 afios  0.00092166  0.00177716  0.00100349  
+48 afios  0.00047402  0.00092718  0.00051850  
+49 afios  0.00012812  0.00025236  0.00014045  
+
+1970, 1980y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13as  O.OCXX>4701  0.00001315  0.00000000  
+14 as  O .00048194  0.00056085  0.00001077  
+15 as  0.00197325  0.003-47900  0.00069856  
+16 as  0.00540763  0.01009234  0.00470033  
+17 as  0.01129669  0.01918324  0.01404746  
+18 as  0.01938744  0.02851505  0.02687380  
+19 as  0.02788766  0.03540789  0.03851412  
+20 as  0.03571957  0.03981260  0.04698254  
+21 as  0.04212015  0.04254782  0.05210116  
+22 afios  0.04706528  0.04403003  0.05476665  
+23 as  0.05058377  0.04483303  0.05572171  
+24 as  0.05274066  0.04518441  0.05544752  
+25 as  0.05397703  0.04523827  0.05457377  
+26 as  0.05434988  0.04499685  0.05321702  
+27 as  0.05371651  0.04452603  0.05127880  
+28 as  0.05264727  0.04397065  0.04925422  
+29 as  0.05097920  0.04336028  0.04697162  
+30 as  0.04872295  0.04261272  0.04439798  
+31 as  0.04614820  0.04163864  0.04171182  
+32 as  0.04355384  0.04064912  0.03914341  
+33 as  0.04087869  0.03954799  0.03660282  
+34 as  0.03817450  0.03813529  0.03408993  
+35 as  0.03544924  0.03661662  0.03161249  
+36 as  0.032'>3324  0.03489172  0.02909149  
+37 as  0.02984791  0.03306331  0.02662203  
+38 as  0.02701961  0.03103028  0.02412813  
+39 afios  0.02391304  0.02848781  0.02139117  
+40 as  0.02032690  0.02513089  0.01822290  
+41 as  0.01640902  0.02106143  0.01474787  
+42 as  0.01274794  0.01699176  0.01148973  
+43 as  0.0092598-4  0.01282021  0.00837136  
+44 as  0.00615433  0.00885209  0.00558181  
+45 as  0.00376531  0.00559617  0.00342464  
+46 as  0.00233155  0.00356120  0.00212561  
+47 as  0.00137633  0.00213672  0.00125642  
+48 as  0.00071318  0.001 l 1924  0.00065159  
+49 as  0.0001 93-47  0.00030525  0.00017682  
+
+GUANAJUATO:ESTRUCTURADESPLEGADADE LA FECUNDIDAD 
+1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+
+12 as  0.00000000  0.00000000  0.00000000  
+13 afios  0.00000187  0.00001078  0.00000000  
+14 as  0.00016242  0.00040449  0.00000107  
+15 as  0.00103079  0.00245495  0.00047779  
+16 as  0.00350913  0.00748121  0.00415175  
+17 afios  o.~31209  0.01521792  0.01375684  
+18 afios  0.01534855  0.02408790  0.02745058  
+19 as  0.02301576  0.03148142  0.03995115  
+20 afios  0.03019193  0.03682566  0.04892702  
+21 as  0.03631326  0.04054945  0.05415056  
+22 as  0.04116627  0.04291129  0.05670721  
+23 afios  0.04486299  0.04442883  0.05742225  
+24 as  0.04748708  0.04533622  0.05683837  
+25 as  0.04928591  0.04581054  0.05566437  
+26 afios  0.05030295  0.04587828  0.05402782  
+27 afios  0.05055559  0.04562793  0.05179779  
+28as  0.05038999  0.04522665  0.04951406  
+29as  0.04979539  0.04472082  0.04697029  
+30 as  0.04874167  0.04403778  0.04413930  
+31 afios  0.04729439  0.04309399  0.04123301  
+32 as  0.04573889  0.04211459  0.03847735  
+33 as  0.04400181  0.04100536  0.03578066  
+34 as  0.04198839  0.03956268  0.03316347  
+35 afios  0.03985076  0.03800245  0.03060600  
+36 as  0.03750118  0.03622279  0.02803098  
+37 as  0.03506912  0.03433179  0.02552964  
+38 afios  0.03246226  0.03222559  0.02302838  
+39 as  0.02938169  0.02958834  0.02031956  
+40 as  0.02554475  0.02610374  0.01722819  
+41 as  0.02109314  0.02187794  0.01387700  
+42 as  0.0167633 1  0.01765119  0.01076023  
+43 as  0.01245699  0.01331812  0.00780286  
+44 as  o.~1041  0.00019607  0.00517821  
+45 as  0.00528476  0.00581371  0.00316417  
+46 as  0.00332625  0.00369967  0.00195732  
+47 as  0.00198272  0.00221982  0.00115460  
+48 as  0.00103407  0.00116277  0.00059798  
+49 afíos  0.00028142  0.0003171 2  0.00016216  
+
+GUERRERO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. HIDALGO: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00011225  0.00000000  0.00000000  
+13 as  0.00062614  0.00005176  0.00000000  
+14 as  0.00207570  0.00>90506  0.00001064  
+15 as  0.00512468  0.00428948  0.00069493  
+16 aiios  0.01030686  0.01100709  0.00468043  
+17 as  0.01766977  0.01978177  0.01395218  
+18 as  0.02671988  0.02868863  0.02660231  
+19 as  0.03546793  0.03526461  0.03801157  
+20 as  0.04314416  0.03951266  0.04626887  
+21 as  0.04889467  0.04220278  0.05127699  
+22 as  0.05310613  O.O-B70034  0.05390025  
+23 aiios  0.05573961  0.0-1454342  0.05488290  
+24 as  0.05685330  0.04494112  0.05469292  
+25 aiios  0.05710937  0.04503S66  0.05392013  
+26 as  0.05655396  O.O..W83506  0.05267388  
+27 as  0.05484362  0.04-'39524  0.05087339  
+28 as  0.05277478  0.04386411  0.04898195  
+29 as  0.05001197  0.04327232  0.04684654  
+30 as  0.04661709  0.04253893  0.04442813  
+31 as  0.04305889  0.04157574  0.04188117  
+32 as  0.03962421  0.04059434  0.03943589  
+33 as  0.03625487  0.03949939  0.03700215  
+34 as  0.03311346  0.03809172  0.03456493  
+35 as  0.03006751  0.03657705  0.03214906  
+36 as  0.02705887  0.03485557  0.02967412  
+37 as  0.02418949  0.03303010  0.02723684  
+38 aiios  0.02139767  0.03099981  0.02475962  
+39 as  0.01850186  0.02846029  0.02201712  
+40 as  0.01536282  0.02510690  0.01881263  
+41 as  0.012 11255  0.02104149  0.01527101  
+42 as  0.00913939  0.01697576  1  0.01193315  
+43 as  0.0055 1767  O.O l2S0Sl9  0.00872063  
+44 as  0.00422927  0.00084381  0.00583222  
+45 as  0.00253495  0.00559094  0.00358752  
+46 as  0.00154308  0.00355788  0.00223150  
+47 as  0.00090170  0.00213474  0.00132071  
+48 as  0.00046413  0.00111820  0.00068552  
+49 as  0.00012551  0.00030496  0.0001861 l  
+
+Edad 
+1970 
+1980 
+1988 
+12 afios 13 afios 14 as 15 afios 16 afios 17 as 18 as 
+19 as 
+20 afios 0.00000180 0.00019560 0.00142930 0.00502086 0.01163830 0.02058701 0.03039319 0.03842305 0.04422743 
+0.00000000 
+0.00000000 
+0.00003627 
+0.00000000 
+0.00081920 
+0.00001071 
+0.00420874 
+0.00068986 
+0.01112115 
+0.00463661 
+0.02014477 
+0.01389499 
+0.02920156 
+0.02667848 
+0.03578080 
+0.03835831 
+0.03994383 
+0.04691109 
+21 afios 22 as 
+23 afios 
+24 as 
+25 as 26 as 27 as 
+28 as 
+29 as 30 as 
+31 as 
+32 as 
+33 as 34 afios 35 as 
+36 as 37 afios 38 as 39 as 40 as 41 afios 
+42 as 
+43 afios 44 as 45 as 46 afios 47 as 48 as 49 as 
+0.04795454 0.05012456 0.05116492 0.05131064 0.05096309 0.05016010 0.04881762 0.04733552 0.04558974 0.043538% 0.04130947 0.03913354 0.03692841 0.03466420 0.03239147 0.03003190 0.027685 14 0.02527406 0.02256831 0.01936287 0.01578158 0.01238186 0.00908481 O.O<X>lOOOl 0.00376505 0.0023..J858 0.00139237 0.00072354 0.000 19654 
+0.04252031 
+0.05211253 
+0.04390583 
+0.05484469 
+0.04465267 
+0.05584320 
+0.04497280 
+0.05559072 
+0.04501029 
+0.05472538 
+0.04476170 
+0.05336720 
+0.04428928 
+0.05141644 
+0.04373508 
+0.04937564 
+0.04312740 
+0.04707102 
+0.04238384 
+0.04447141 
+0.04141522 
+0.04176024 
+0.04043132 
+0.03916870 
+0.03933638 
+0.03660706 
+0.03793150 
+0.03407786 
+0.03642113 
+0.03158618 
+0.03470560 
+0.02905323 
+0.03288705 
+0.02657404 
+0.03086493 
+0.02407281 
+0.02833606 
+0.02133162 
+0.02499706 
+0.01816320 
+0.02094929 
+0.01469228 
+0.01690130 
+0.01144075 
+0.01275197 
+0.00033154 
+0.00080498 
+0.00555250 
+0.00556638 
+0.00340521 
+0.00354225 
+0.00211280 
+0.00212535 
+0.00124858 
+0.00111328 
+0.00064743 
+0.00030362 
+0.00017568 
+JALISCO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00000000  0.00004236  0.00000000  
+14 as  0.00000000  0.00068179  0.00000106  
+15 as  0.00327463  0.00323185  0.00046361  
+16 as  0.01216110  0.()0067386  0.00400791  
+17 afios  0.02279568  0.01646085  0.01337046  
+18 as  0.03452845  0.02507813  0.02694249  
+19 as  0.04709808  0.03208837  0.03956004  
+20 as  0.05387606  0.03709427  0.04878065  
+21 afios  0.05338180  0.04057542  0.05423735  
+22 as  0.05237104  0.04278007  0.05697502  
+23 afios  0.05120017  0.04420266  0.05780088  
+24 as  0.04989667  0.04505624  0.05726437  
+25 as  0.04862012  0.04550266  0.05610098  
+26 as  0.04726514  0.04555888  0.05444888  
+27 as  0.04569880  0.04530690  0.05217312  
+28 as  0.04417329  0.04490906  0.04983554  
+29 as  0.04255985  0.04440922  0.04722311  
+30 as  0.04077458  0.04373403  0.04431408  
+31 afios  0.03886046  0.04279982  0.04133463  
+32 as  0.03701417  0.04182990  0.03851268  
+33 afios  0.03514322  0.04073052  0.03575696  
+34 afios  0.03317485  0.03929941  0.03309521  
+35 as  0.03118647  0.03775107  0.03049979  
+36 aiios  0.02909670  0.03598433  0.02789382  
+37 as  0.02699720  0.03410663  0.02536824  
+38 as  0.02480968  0.03201487  0.02284980  
+39 as  0.02230310  0.02939533  0.02013282  
+40 as  0.01926593  0.02593376  0.01704513  
+41 afios  0.01581064  0.02173567  0.01370962  
+42 afios  0.01249054  0.01753652  0.01061501  
+43 afios  0.00922829  0.01323167  0.00768637  
+44 as  0.00523959  0.00913641  0.00509348  
+45 afios  0.00387425  0.00577600  0.00310852  
+46 as  0.00242875  0.00367569  0.00192090  
+47 afios  0.00144420  0.00220544  0.00113241  
+48 as  0.00075196  0.00115524  0.00058624  
+49 as  0.00020447  0.00031507  0.00015895  
+
+MEXICO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. MICHOACAN: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. MORELOS: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 afios  0.00000000  0.00000000  0.00000000  
+13 as  0.00001959  0.00000758  0.00000000  
+14 as  O .0005091 3  0.00052514  0.000004 74  
+15 as  0.00281086  0.00363479  0.00061106  
+16 afios  O.OOS24996  0.01101494  0.00462787  
+17 afios  0.01656845  0.02128207  0.01458261  
+18 as  0.02617745  0.03178841  0.02860924  
+19 afios  0.03429873  0.03948513  0.04149042  
+20 afios  0.04024515  0.04430614  0.05085504  
+21 afios  0.04426022  0.04702808  0.05626614  
+22 as  0.04672442  0.04830077  0.05888073  
+23 afios  0.04813669  0.04872598  0.05949034  
+24 as  0.04875197  0.04856817  0.05865938  
+25 as  0.04886949  0.04810294  0.05720265  
+26 as  0.04853184  0.04734078  0.05526384  
+27 as  0.04775089  0.04626524  0.05266105  
+28 as  0.04681200  0.04512778  0.05002221  
+29 as  0.04567940  0.04387177  0.04709072  
+30 as  0.04429349  0.04242343  0.04385872  
+31 as  0.04267522  0.04079045  0.04060252  
+32 as  0.04105730  0.03918544  0.03754568  
+33 afios  0.03935150  0.03751640  0.03459622  
+34 afios  0.03744644  0.03567171  0.03180926  
+35 as  0.03547480  0.03377389  0.029 12074  
+36 as  0.03334706  0.03173479  0.02645626  
+37 as  0.03116934  0.02965328  0.02390143  
+38 ilft05  0.02685216  0.02744273  0.0213&S91  
+39 as  0.02612389  0.02484375  0.01871808  
+40 afios  0.02272765  0.02161144  0.01574226  
+41 as  0.01878403  0.01786002  0.01257773  
+42 afios  0.01494460  0.01420860  0.00967402  
+43 as  0.01111934  0.01057128  0.00695852  
+44 as  0.00757 116  0.007 19776  0.00458058  
+45 as  O.OOn'.!939  0.00449604  0.00277959  
+46 as  0.00297972  0.00283265  0.00170949  
+47 as  0.00177716  0.00168943  0.00100491  
+48 as  0.00092718  0.00088141  0.00051925  
+49 afios  0.00025236  0.00023990  0.00014065  
+
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00006041  0.00001825  0.00000000  
+14 as  0.00052221  0.00048417  0.00001056  
+15 as  0.00201961  0.00268576  0.00068469  
+16 as  0.00537638  0.00783036  0.00460564  
+17 as  0.01106903  0.01556262  0.01377454  
+18 as  0.01887836  0.02433557  0.02637708  
+19 as  0.02711389  0.03160424  0.03783480  
+20 as  0.03476684  0.03684915  0.04619157  
+21 as  0.04111019  0.04050939  0.05129611  
+22 as  0.04609184  0.04283627  0.05399651  
+23 as  0.04971937  0.04433758  0.05502909  
+24 as  0.05203329  0.04523986  0.05486382  
+25 as  0.05344084  0.04571513  0.05410032  
+26 as  0.05398571  0.04578698  0.05285198  
+27 as  0.05352569  0.04554203  0.05103645  
+28 as  0.05261289  0.04514628  0.04912572  
+29 as  0.05109069  0.04464559  0.04696418  
+30 as  0.04896608  0.04396727  0.04451488  
+31 as  0.04649916  0.04302788  0.04193807  
+32 as  0.04399174  0.04205228  0.03946504  
+33 as  0.04138385  0.04094646  0.03700595  
+34 as  0.03872259  0.03950720  0.03454896  
+35 as  0.03602518  0.03795017  0.03211578  
+36 as  0.03322196  0.03617370  0.02962622  
+37 as  0.03043744  0.03428579  0.02717697  
+38 as  0.02759760  0.03218279  0.02469068  
+39 as  0.02446236  0.02954932  0.02194287  
+40 as  0.02082491  0.02606948  0.01873810  
+41 as  0.01683540  0.02184934  0.01520150  
+42 as  0.01309763  0.01762818  0.01187178  
+43 as  0.00052697  0.01330080  0.00067064  
+44 as  0.00534043  0.00018412  0.00579534  
+45 as  0.00388366  0.00580616  0.00356302  
+46 as  0.00240715  0.00369488  0.00221532  
+47 as  0.00142180  0.00221695  0.00131080  
+48 as  0.00073705  0.00116127  0.00068026  
+49 as  0.000 19999  0.00031671  0.00018467  
+
+Edad  1970  1980  1988  
+12 afios  0.00000000  0.00000000  0.00000000  
+13 as  0.00007-483  0.00002339  0.00000000  
+14 as  0.00070759  0.00071121  0.00000106  
+15 as  0.00284-414  0.00399840  0.00046243  
+16 as  0.00752800  0.01096884  0.00399621  
+17 as  0.01504390  0.0201617-4  0.01333750  
+18 as  0.02465972  0.02936580  0.02689427  
+19 as  0.03398021  0.03600866  0.03951358  
+20 as  0.04188-494  0.04016772  0.04874697  
+21 as  0.04770254  0.0-4270761  0.05421898  
+22 afios  0.05172857  0.04404630  0.05697012  
+23 as  0.05415526  0.04474842  0.05780605  
+24 as  0.05517162  0.0-4503037  0.05727624  
+25 as  0.05535318  0.0450372-4  0.05611707  
+26 as  0.05478735  0.04476506  0.05446729  
+27 as  0.05330511  0.04-427510  0.05219216  
+28 as  0.05152620  0.04370822  0.04985433  
+29 as  0.0492-44-47  0.04309160  0.04724081  
+30 as  0.04647458  0.04234200  0.04433008  
+31 afios  0.04351252  0.04136963  0.04134875  
+32 as  0.04062988  0.04038352  0.03852495  
+33 as  0.03775657  0.03928759  0.03576743  
+34 as  0.03495897  0.03788288  0.03310412  
+35 as  0.03220329  0.03637340  0.03050723  
+36 as  0.02942002  0.03465940  0.02789991  
+37 as  0.0267138-4  0.03284281  0.02537310  
+38 as  0.02401-407  0.03082310  0.02285356  
+39 a tíos  0.02111003  0.02829746  0.02013559  
+40 as  0.01782699  0.02496288  0.01704700  
+41 as  0.01429923  0.02092058  0.01371075  
+42 as  0.01103954  0.01687810  0.01061559  
+43 as  0.00796973  0.01273444  0.00768657  
+44 as  0.00526490  0.00079286  0.00509348  
+45 as  0.00320-451  0.00555 72  0.0031084-4  
+46 as  0.001 97576  0.00353737  0.00192081  
+47 as  0.00116322  0.002122-43  0.00113235  
+48 as  0.00060 167  0.00111175  0.00058620  
+49 as  0.00016307  0.00030320  0.00015894  
+
+NAYARIT: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000043  0.00000000  
+13 as  0.00000000  0.00017316  0.00000000  
+14 as  O.<XXH0691  0.00149324  0.00000106  
+15 as  0.00143775  0.00546359  0.00046235  
+16 as  0.00>19345  0.01253519  0.00399521  
+17 as  0.01515275  0.02155171  0.01333517  
+18 as  0.02650853  0.03082753  0.02689261  
+19 as  0.03659070  0.03786404  0.03951520  
+20 as  0.04404180  0.04257017  0.04875278  
+21 as  0.04881229  0.04548924  0.05422787  
+22 afios  0.05152834  0.04708448  0.05698093  
+23 afios  0.05279066  0.04784716  0.05781748  
+24 as  0.05296933  0.04799319  0.05728716  
+25 as  0.05255932  0.04777974  0.05612703  
+26 afios  0.05164966  0.04721677  0.05447596  
+27 as  0.05018518  0.04629263  0.05219904  
+28 as  0.04858755  0.04526618  0.04985941  
+29 as  0.04673776  0.04408893  0.04724384  
+30 afios  0.04459445  0.04269356  0.04433092  
+31 afios  0.04228264  0.04109335  0.04134765  
+32 as  0.04003768  0.03950715  0.03852213  
+33 as  0.03777220  0.03784607  0.03576313  
+34 afios  0.03545085  0.03600027  0.03309877  
+35 as  0.03312593  0.03409539  0.03050104  
+36 aiíos  0.03071562  0.03204397  0.02789308  
+37 as  0.02832041  0.02994699  0.02536583  
+38 afios  0.02586030  0.02771777  0.02284606  
+39 as  0.02309863  0.02509484  0.02012813  
+40 afios  0.01982456  0.02183117  0.01703998  
+41 as  0.01616384  0.01804238  0.01370453  
+42 afios  0.01268676  0.01435412  0.01061032  
+43 as  0.00031236  0.01067977  0.00768244  
+44 as  0.00>25547  0.00727175  0.00509053  
+45 afios  0.003862-B  0.00454231  0.00310653  
+46 as  0.002-H 007  0.00286182  0.00191957  
+47 as  0.001-t2909  0.00170683  0.00113159  
+48 as  0.0007-t271  0.00089049  0.00058581  
+49 as  0.00020176  0.00024238  0.00015883  
+
+NUEVO LEON: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000-BB  0.00000000  
+13 as  0.00012193  O.  2.u 20  0.00000000  
+14 as  0.00148758  0.00161780  0.00000110  
+15 as  0.00504  18  0.00541425  0.0004 256  
+16 afios  0.01414004  0.0121  936  0.004 t7657  
+17 as  0.02398103  0.02117592  0.01391271  
+18 as  0.03353404  0.03091033  0.02797477  
+19 as  0.04027196  0.03879586  0.04099536  
+20 as  0.04440 24  0.04444859  0.05045817  
+21 as  0.04671255  0.04804669  0.05593350  
+22 as  0.04775466  0.05011814  0.05858117  
+23 afios  0.04806374  0.05108753  0.05922377  
+24 as  0.04785613  0.0511  445  0.05843 02  
+25 afios  0.04737665  0.05080444  0.05702748  
+26 as  0.04662030  0.0499Sl 11  0.05513709  
+27 as  0.04556244  0.04862786  0.05259670  
+28 as  0.04444630  0.04714089  0.05001819  
+29 as  0.04321385  0.04539504  0.04715442  
+30 afios  0.04179144  0.04334811  0.04399332  
+31 as  0.04018628  0.04112510  0.04079845  
+32 afios  0.03860776  0.03895666  0.03779403  
+33 afios  0.03696537  0.03676001  0.03488780  
+34 as  0.03514927  0.03450513  0.03212820  
+35 afios  0.03328029  0.03224216  0.02945969  
+36 afios  0.03127171  0.02989303  0.02680716  
+37 as  0.02922107  0.02755684  0.02425746  
+38 as  0.02704308  0.025 15674  0.02173954  
+39 as  0.02..i..i 217  0.021463-B  0.01905838  
+40 as  0.02129704  0.01927282  0.01605444  
+41 as  0.01760028  0.0157081-l  0.01284796  
+42 as  0.01400200  0.01232421  0.00989790  
+43 as  0.01041 759  0.00904250  0.00713112  
+44 as  0.00709313  0.(  507160  0.00470182  
+45 as  0.004..i3069  o.o<n ..i1s1  0.002857 13  
+46 as  0.00279 1..i,  ll.()()233763  0.00175922  
+47 as  0.00166487  0.()()1385  0.00103486  
+48 as  0.00086859  o.  72017  0.00053497  
+49 as  0.000~3642  0.00019563  0.00014494  
+
+CUADR021 OAXACA: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 
+1970, 1980y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00)()5388  0.00001446  0.00000000  
+13 as  0.00055957  0.00039416  0.00000000  
+14 as  0.00235789  0.00224887  0.00002060  
+15 as  0.00533683  0.00576653  0.00)82777  
+16 as  0.01276935  0.01398675  0.00500119  
+17 afios  0.02103710  0.02273858  0.01428255  
+18 as  0.03002529  0.03156425  0.02680938  
+19 afios  0.03743240  0.03815302  0.03814837  
+20 afios  0.04293058  0.04253397  0.04644427  
+21 as  0.04661707  0.04525370  0.05152532  
+22 as  0.04891201  0.04674254  0.05422722  
+23 afios  0.05015954  0.04745779  0.05525796  
+24 as  0.05054040  0.04759134  0.05507609  
+25 as  0.05042046  0.04738384  0.05428987  
+26 as  0.04982270  0.04683660  0.05301216  
+27 as  0.04865632  0.04593308  0.05115117  
+28 as  0.04731766  0.04492751  0.04919299  
+29 as  0.04568493  0.04377052  0.04697406  
+30 as  0.04371927  0.04239484  0.04446091  
+31 as  0.04155052  0.04081357  0.04182555  
+32 as  0.03941614  0.03924425  0.03929975  
+33 as  0.03723671  0.03759892  0.03679426  
+34 as  0.03498519  0.03576869  0.03430468  
+35 as  0.03271515  0.03387867  0.03184491  
+36 as  0.03034964  0.031842::!0  0.02933568  
+37 as  0.02799102  0.02975980  0.02687297  
+38 as  0.02556270  0.02754547  0.02438034  
+39 as  0.02283270  0.02493951  0.02163667  
+40 as  0.01959423  0.02169648  0.01845064  
+41 as  0.01597304  0.01793134  0.01494722  
+42 aiios  0.01253387  0.01426594  0.01165675  
+43 as  0.00919737  0.01061426  0.00050157  
+44 as  0.00517614  0.00722719  0.00567432  
+45 as  0.00381229  0.00451449  0.00348439  
+46 as  0.0023781 7  0.00284431  0.00216425  
+47 as  0.00140998  0.0016%39  0.00127980  
+48 as  0.00)73271  0.00)88505  0.00066391  
+49 as  0.00)19904  0.00)24089  0.00)18019  
+
+
+
+PUEBLA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. QUERETARO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. QUINTANA ROO: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. SAN LUIS POTOSI: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00001663  0.00011781  0.00000000  
+14 as  0.00033894  0.00115748  0.00002060  
+15 as  0.00168675  0.00449559  0.00082958  
+16 as  0.00510441  0.01069022  0.00501262  
+17 as  0.01125462  0.01878996  0.01430941  
+18 as  0.01986505  0.02725124  0.02684603  
+19 as  0.02894865  0.03376770  0.03818306  
+20 as  0.03723784  0.03821339  0.04646971  
+21 as  0.04386033  0.04120284  0.05153981  
+22 as  0.04882815  0.04301458  0.05423193  
+23 as  0.05220854  0.04413996  0.05525516  
+24 as  0.05411712  0.04477425  0.05506806  
+25 as  0.05506472  0.04506161  0.05427842  
+26 as  0.05513756  0.04500538  0.05299867  
+27 as  0.05419423  0.04467636  0.05113690  
+28 as  0.05284264  0.04422667  0.04917863  
+29 as  0.05090861  0.04369332  0.04696029  
+30 as  0.04841036  0.04299960  0.04444822  
+31 as  0.04563626  0.04206017  0.04181414  
+32 as  0.04288075  0.04109215  0.03928964  
+33 as  0.04008009  0.04000163  0.03678545  
+34 as  0.03729424  0.03858876  0.03429705  
+35 as  0.03451440  0.03706327  0.03183840  
+36 as  0.03167047  0.03512514  0.02933023  
+37 as  0.02887848  0.03347939  0.02686851  
+38 as  0.02606526  0.031424-B  0.02437678  
+39 afios  0.02300317  0.02885208  0.02163395  
+40 as  0.01950001  0.02545378  0.01844870  
+41 afios  0.01569969  0.02133296  0.01494596  
+42 as  0.01216528  0.0 1721136  0.01165600  
+43 as  0.00081422  0.01298619  0.00050121  
+44 as  0.00584359  0.00896684  0.00567420  
+45 as  0.00356760  0.00566877  0.00348438  
+46 as  0.00220521  0.00360744  0.00216427  
+47 as  0.00130032  0.00216448  0.00127983  
+48 as  0.00067329  0.00113378  0.00066392  
+49 as  0.000 1S25S  O.O(XH092 l  O.OOOIS019  
+
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00003547  0.00002175  0.00000000  
+14 as  0.00045254  0.00063677  0.00002085  
+15 as  0.00199504  0.00357869  0.00083266  
+16 aíios  0.00564077  0.01001465  0.00502712  
+17 as  0.01189099  0.01884043  0.01439425  
+18 as  0.02035385  0.02799833  0.02710990  
+19 aíios  0.02903729  0.03487413  0.03869208  
+20 as  0.03681235  0.03936103  0.04721010  
+21 as  0.04299303  0.04221266  0.05240675  
+22 as  0.04761613  0.04381146  0.05515255  
+23 afíos  0.05079567  0.04471507  0.05615269  
+24 as  0.05264952  0.04514761  0.05587936  
+25 as  0.05362407  0.04526419  0.05498389  
+26 afíos  0.05378788  0.04506962  0.05358684  
+27 afíos  0.05302878  0.04463266  0.05157720  
+28 as  0.05188436  0.04410116  0.04947560  
+29 as  0.05021109  0.04350716  0.04709842  
+30 afíos  0.04801027  0.04277003  0.04441893  
+31 as  0.04551603  0.04180149  0.04163513  
+32 afíos  0.04301586  0.04081452  0.03897865  
+33 afíos  0.04044340  0.03971334  0.03636042  
+34 as  0.03782759  0.03829779  0.03379169  
+35 aíios  0.03519158  0.03677471  0.03126805  
+36 as  0.03246258  0.03504376  0.02871166  
+37 as  0.02975824  0.03320830  0.02621668  
+38 as  0.02700286  0.03116697  0.02370829  
+39 afíos  0.02395847  0.02861369  0.02097242  
+40 as  0.02041908  0.02524218  0.01782652  
+41 as  0.01652828  0.02115484  0.01439501  
+42 as  0.01287650  0.01706720  0.01118987  
+43 as  0.00937997  0.01287718  0.00013473  
+44 aíios  0.00'>25233  0.00089144  0.00541195  
+45 as  0.00383485  0.00562105  0.00331408  
+46 as  0.00237957  0.00357704  0.00205372  
+47 as  0.00140638  0.00214623  0.00121276  
+48 as  O.OOJ72933  0.00112422  0.00062855  
+49 as  O.OOJ I9792  O.OOJ30660  0.00017051  
+
+Edad  1970  1980  1988  
+12 as  0.00037539  0.00035825  0.00000000  
+13 as  0.00164892  0.Cl0198750  0.00000000  
+14 as  0.()()461276  0.00591350  0.00001114  
+15 as  0.00965063  0.01217688  0.00070448  
+16 as  0.01659643  0.01999276  0.00471900  
+17 as  0.02470434  0.02819743  0.01424351  
+18 as  0.03302441  0.03580215  0.02761468  
+19 as  0.03945289  0.04087589  0.04005566  
+20 as  0.04399844  0.0-4390574  0.04930375  
+21 as  0.04689926  0.0-4557-421  0.05485852  
+22 as  0.04860410  0.04629673  0.05771513  
+23 as  0.04943341  0.04647390  0.05860124  
+24 as  0.04953324  0.0-462-4037  0.05804507  
+25 as  0.04923222  0.045787SS  0.05682382  
+26 as  0.04852778  0.04508608  0.05508232  
+27 as  0.04731367  0.04-409721  0.05266028  
+28 as  0.045%228  0.04304965  0.05016939  
+29 as  0.0-4434553  0.04188435  0.04737332  
+30 as  0.04241909  0.04052900  0.04426332  
+31 as  0.04030-437  0.03899067  0.04110276  
+32 as  0.03822851  0.03747320  0.03812102  
+33 as  0.03611226  0.0358896-4  0.03522798  
+34 as  0.03392800  0.03-413-417  0.03247113  
+35 as  0.03172680  0.03232481  0.02979988  
+36 as  0.02943346  0.03037792  0.02713918  
+37 as  0.02714692  0.02838872  0.02457762  
+38as  0.02479272  0.02627472  0.02204375  
+39 as  0.0221-4574  0.02378789  0.01933999  
+40 as  0.01900534  0.02069394  0.01630410  
+41 as  0.01549346  0.01710238  0.01305763  
+42 as  0.01215787  0.01360620  0.01006699  
+43 as  0.0009216..q  0.0 1012327  0.00725838  
+44 as  0.00599113  O.OCX589282  0.00478930  
+45 as  0.00369S16  0.()()430560  0.00291216  
+46 as  0.00230701  0.00271269  0.00179-406  
+47 as  0.00136780  0.00161789  0.00105569  
+48 as  0.00071080  0.0008-4-408  0.00054585  
+49 as  0.00019309  0.00022975  0.00014791  
+
+Edad  1970  1980  1988  
+12 as  0.00000702  0.00000000  0.00000000  
+13 as  0.00021831  0.00011946  0.00000000  
+14 as  O.CXH23621  0.00117809  0.00002062  
+15 as  0.00398636  0.00457188  0.00082958  
+16 as  0.00915317  0.01084060  0.00501262  
+17 as  0.01659275  0.01899348  0.01430941  
+18 as  0.02541078  0.02746811  0.02684603  
+19 as  0.03337643  0.03395747  0.03818306  
+20 afios  0.03979736  0.03835819  0.04646971  
+21 as  0.04449675  0.04130090  0.05153981  
+22 afios  0.04773308  0.04307066  0.05423193  
+23 as  0.04978616  0.04416131  0.05525516  
+24 afios  0.05082235  0.04476801  0.05506806  
+25 as  0.05121681  0.04503402  0.05427842  
+26 afios  0.05101019  0.04496169  0.05299867  
+27 as  0.05012481  0.04462088  0.05113690  
+28 afios  0.04898336  0.04416271  0.04917863  
+29 as  0.04747502  0.04362340  0.04696029  
+30 afios  0.04557047  0.04292585  0.04444822  
+31 as  0.04341418  0.04198440  0.04181414  
+32 afios  0.04126271  0.04101549  0.03928964  
+33 as  0.03904022  0.03992510  0.03678545  
+34 as  0.03672375  0.03851356  0.03429705  
+35 as  0.03437367  0.03699007  0.03183840  
+36 as  0.03191236  0.03525470  0.02933023  
+37 as  0.02944997  0.03341215  0.02686851  
+38 afios  0.02690788  0.03136099  0.02437678  
+39 as  0.02404328  0.02879361  0.02163395  
+40 as  0.02063927  0.02540205  0.01844870  
+41 as  0.01682893  0.02128952  0.01494596  
+42 as  0.01320794  0.01717626  0.01165600  
+43 as  0.00969344  0.01295968  0.00050121  
+44 as  0.00551001  0.00094852  0.00567420  
+45 as  0.00401875  0.00565718  0.00348438  
+46 as  0.00250715  0.00360006  0.00216427  
+47 as  0.00148653  0.00216005  0.00127983  
+48 as  0.00077253  0.00113146  0.00066392  
+49 as  0.00020986  0.00030858  0.00018019  
+
+SIN ALOA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00003504  0.00007230  0.00000000  
+14 as  0.00046716  0.00102486  0.00002059  
+15 as  0.00210235  0.00450973  0.00081047  
+16 afios  0.00593066  0.01119469  0.00488349  
+17 as  0.01232232  0.01983439  0.01406912  
+18 as  0.02069085  0.02860660  0.02671132  
+19 as  0.02893984  0.03510623  0.03840125  
+20as  0.03604515  0.03933547  0.04712460  
+21 as  0.04160169  0.04204017  0.05251557  
+22 as  0.04566978  0.04356709  0.05541537  
+23 as  0.04847733  0.04444245  0.05651133  
+24 afios  0.05017737  O.O.W870 10  0.05627906  
+25 afios  O.OSI 12012  0.044993 15  0.05539292  
+26 as  0.05136167  0.04481025  0.05398175  
+27 as  0.05086495  0.04438657  0.05192928  
+28 as  0.05003966  0.04386765  0.04977686  
+29as  0.04881140  0.04328488  0.04733387  
+30 as  0.04715338  0.04255799  0.04457865  
+31 afios  0.04518957  0.04159924  0.04172330  
+32 as  0.04319112  0.04062080  0.03900151  
+33 as  0.04108360  0.03952765  0.03632468  
+34 afios  0.03882335  0.03812074  0.03371158  
+35 afios  0.03650045  0.03660614  0.03114994  
+36 as  0.03403371  0.03488415  0.02856245  
+37 as  0.03154105  0.03305777  0.02604298  
+38 as  0.02893902  0.03102617  0.02351722  
+39 as  0.02596507  0.02848474  0.02077325  
+40 as  0.02238026  0.02512863  0.01763168  
+41 as  0.01832270  0.02105980  0.01421687  
+42 as  0.01443845  0.0 1699059  O.O! 103530  
+43 as  0.01063919  0.01281941  0.00801065  
+44 as  0.0071738-t  0.00885157  0.00532162  
+45 as  0.00444376  0.00559586  0.00325469  
+46 afios  0.00278022  0.00356101  0.00201481  
+47 as  0.00165127  0.00213661  0.00118904  
+48 as  0.00085913  0.0011 1918  0.00061599  
+49 as  0.00023352  0.00030523  0.00016707  
+
+SONORA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. TABASCO: ESTRUCTUAADESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00001616  0.00000453  0.00000000  
+13 as  0.00022446  0.000260]8  0.00000000  
+14 afios  0.00096414  0.0017 4570  0.00000109  
+15 as  0.00279430  0.00581933  0.00048143  
+16 as  0.00634307  0.01295400  O .00416578  
+17 as  0.01196901  0.02221617  0.01388108  
+18 as  0.01954887  0.03204521  0.02792388  
+19 afíos  0.02761427  0.03981690  0.04093771  
+20 as  0.03534449  0.04524598  0.05040382  
+21 as  0.04187358  0.04859001  0.05588850  
+22 as  0.04721083  0.05042393  0.05854645  
+23 as  0.05119469  0.05119108  0.05919905  
+24 as  0.05375843  0.05112519  0.05842247  
+25 as  0.05537580  0.05061923  0.05701949  
+26 as  0.05605535  0.04970185  0.05513527  
+27 as  0.05549951  0.04828254  0.05260053  
+28 as  0.05441090  0.04675055  0.05002660  
+29 as  0.05251337  0.04497756  0.04716713  
+30 as  0.04984825  0.04291864  0.04400993  
+31 aíios  0.04683476  0.04069502  0.04081811  
+32 as  0.04379706  0.03853269  0.03781609  
+33 as  0.04068908  0.03634790  0.03491166  
+34 as  0.03765837  0.03410961  0.03215297  
+35 afios  0.03463002  0.03186635  0.02948493  
+36 afios  0.03154676  0.02954017  0.02683242  
+37 as  0.02853551  0.02722844  0.02428238  
+38 as  0.02553232  0.02485478  0.02176371  
+39 aíios  0.02232427  0.02219231  0.01908118  
+40 aííos  0.01873975  0.01903925  0.01607500  
+41 as  0.01493371  0.01551718  0.01286550  
+42 aíios  0.01144934  0.01217404  0.00991224  
+43 as  0.00020505  0.00093212  0.00714205  
+44 aíios  0.00537889  0.00599738  0.00470942  
+45 as  0.00325237  0.00370166  0.00286196  
+46 as  0.0019943]  0.00230901  0.00176230  
+47 as  0.00117067  0.00136890  0.00103671  
+48 as  0.00060445  0.00071134  0.00053594  
+49 as  0.00016373  0.00019323  0.00014521  
+
+Edad  1970  1980  1988  
+llRASS  
+12 as  0.00000000  0.00266756  0.00000000  
+13 as  0.00013951  0.(.l0739923  0.00000000  
+14 as  0.00139518  0.01173133  0.00002076  
+15 as  0.00539417  0.01567662  0.00082441  
+16 as  0.01264619  0.01924790  0.00497359  
+17 as  0.02188406  0.02245792  0.01427627  
+18 as  0.03130524  0.02531947  0.02697410  
+19 as  0.03836169  0.02784533  0.03860965  
+20 as  0.04300261  0.03004827  0.04721636  
+21 as  0.04582020  0.03194108  0.05249182  
+22 as  0.04730847  0.03353651  0.05529744  
+23 as  0.04797451  0.03484736  0.05633178  
+24 as  0.04803956  0.03588640  0.05606906  
+25 as  0.04776152  0.03666640  0.05517147  
+26 as  0.04714888  0.03720014  0.05376305  
+27 as  0.04618810  0.03750040  0.05172989  
+28 as  0.04513542  0.03757995  0.04960211  
+29 as  0.04394031  0.03745157  0.04719244  
+30 as  0.0425340)  0.03712805  0.04447640  
+31 as  0.04092842  0.03662214  0.04165854  
+32 as  0.03934039  0.03594663  0.03897122  
+33 as  0.03768045  0.03511430  0.03632556  
+34 as  0.03583857  0.03413793  0.03373638  
+35 as  0.03393932  0.03303028  0.03119541  
+36 as  0.03189526  0.03180414  0.02862513  
+37 as  0.02980662  0.03047228  0.02611946  
+38 as  0.02758688  0.02904748  0.02360385  
+39 as  0.02497571  0.02754251  0.02086537  
+40 as  0.02172713  0.02597015  0.01772306  
+41 as  0.01795616  0.02434319  0.01430138  
+42 as  0.01428538  0.02267439  0.01110926  
+43 as  0.01062856  0.02097652  0.00807043  
+44 as  0.00723684  0.01926238  0.00536538  
+45 as  0.00452048  0.01754473  0.00328358  
+46 as  0.00284807  0.01583635  0.00203378  
+47 as  0.00169863  0.01415002  0.00120063  
+48 as  0.00088621  0.0 1249851  0.00062213  
+49 as  0.00024121  0.010S9460  0.00016876  
+
+• El a de 1980 se estimpor el método del polinomio de W . Brass. P'ucnlc: C'...ilculos propios con base en el método de A . J . Coale y T. J. Trusscll. 
+TAMAULIPAS:ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. TLAXCALA: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00000213  0.00004439  0.00000000  
+14 as  0.00020757  0.00072920  0.00001119  
+15 as  0.00142218  0.00346185  0.00071237  
+16 as  0.00488838  0.()()')20244  0.00477785  
+17 as  0.01123617  0.01724629  0.01438481  
+18 as  0.01981342  0.02596691  0.02779211  
+19 as  0.02.829447  0.03289980  0.04018582  
+20 afios  0.03546706  0.03773565  0.04934090  
+21 afios  0.04098663  0.04102672  0.05480773  
+22 as  0.04491647  0.04305417  0.05759541  
+23 as  0.04758353  0.04432702  0.05843976  
+24 as  0.04919744  0.04505980  0.05786709  
+25 as  0.05008350  0.04541165  0.05664362  
+26 as  0.05031135  0.04539583  0.05491022  
+27 as  0.04990223  0.04509051  0.05250892  
+28as  0.04920158  0.04465390  0.05004188  
+29 afios  0.04818130  0.04412657  0.04727589  
+30 afios  0.04680200  0.04343317  0.04419978  
+31 as  0.04512280  0.04248887  0.04107063  
+32 as  0.04340521  0.04151390  0.03811704  
+33 afios  0.04156821  0.04041404  0.03524878  
+34 as  0.03951873  0.03898774  0.03251027  
+35 afios  0.03738827  0.03744718  0.02985438  
+36 afíos  0.03508855  0.03569147  0.02720594  
+37 as  0.03273607  0.03382684  0.02465369  
+38 as  0,03024064  0.03175070  0.02212607  
+39 afíos  0.02732149  0.02915172  0.01942462  
+40 afios  0.02371532  0.02571817  0.01638593  
+41 afíos  0.01955403  0.02155456  0.01313159  
+42 afios  0.01551949  0.01739015  0.01013051  
+43 as  0.01151855  0.01312110  0.00730888  
+44 afios  0.00782332  0.00905999  0.00482572  
+45 as  0.00487634  0.00572766  0.00293592  
+46 aiíos  0.00306675  0.00364491  0.00180953  
+47 as  0.00182710  0.00218696  0.00106509  
+48 aiíos  0.00095256  0.00114556  0.00055081  
+49 afios  0.00025918  0.00031243  0.00014926  
+
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 as  0.00000000  O.O<Xl08327  0.00000000  
+14 as  0.00003229  0.001 19602  0.00001072  
+15 as  0.00086637  0.00524898  0.00069120  
+16 as  0.00472992  0.01290406  0.00464604  
+17 as  0.01319310  0.02262459  0.01391994  
+18 as  0.02491189  0.03233887  0.02671790  
+19 as  0.03597763  0.03940708  0.03840406  
+20 as  0.04448734  0.043SS338  0.04695622  
+21 as  0.05003253  0.04647115  0.05215219  
+22 as  0.05324424  0.04772886  0.05487759  
+23 as  0.05473565  0.04819373  0.05586888  
+24 as  0.05493213  0.04809507  0.05560922  
+25 as  0.05443605  0.04768993  0.05473763  
+26 as  0.05337209  0.04698208  0.05337406  
+27 as  0.05166294  0.04595311  0.05141802  
+28 as  0.04980783  0.04485302  0.04937269  
+29 as  0.04765527  0.04362692  0.04706367  
+30 as  0.04517891  0.04220296  0.04445973  
+31 alios  0.04255689  0.04059016  0.04174499  
+32 as  0.04003035  0.03900131  0.03915045  
+33 as  0.03751262  0.03734589  0.03658636  
+34 as  0.03500012  0.03551356  0.03405564  
+35 as  0.03251137  0.03362685  0.03156289  
+36 as  0.02996689  0.03159845  0.02902933  
+37 as  0.02746571  0.02952709  0.02654996  
+38 as  0.02493041  0.02732674  0.02404894  
+39 as  0.02213520  0.02473926  0.02130867  
+40 as  0.01SS8428  0.02152085  0.01814213  
+41 as  0.01530521  0.01778533  0.01467400  
+42 aiios  0.01194105  0.01414928  0.01142556  
+43 as  0.00071260  0.01052720  0.00031977  
+44 as  0.00581760  0.00716777  0.00554419  
+45 as  0.00357365  0.00447732  0.00339987  
+46 as  0.00222034  0.00282086  0.00210936  
+47 as  0.00131321  0.00168240  0.00124650  
+48 as  0.0006 ~ 132  0.00087774  0.00064634  
+49 as  O.OOO! S493  O.OOODS90  0.00017538  
+
+VERACRUZ: ESTRUCTURADESPLEGADA DE LA FECUNDIDAD 1970, 1980 y 1988. 
+Edad  1970  1980  1988  
+12 as  0.00000000  0.00000000  0.00000000  
+13 aiios  0.00010211  0.00008277  0.00000000  
+14 as  0.00092966  0.00092851  0.00000459  
+15 aiios  0.00362632  0.00384459  0.00059514  
+16 as  0.00002317  0.00957754  0.00451206  
+17 as  0.01677268  0.01741479  0.01419153  
+18 afios  0.02564179  0.02587967  0.02777120  
+19 afios  0.03322813  0.03263173  0.04018302  
+20 as  0.0389611 8  0.03739227  0.04918078  
+21 as  0.04301074  0.04068313  0.05446152  
+22 afios  0.04565173  0.04275223  0.05708236  
+23 aiios  0.04729832  0.04408296  0.05782953  
+24 as  0.04815632  0.04487605  0.05723641  
+25 as  0.04849736  0.04528363  0.05603317  
+26 as  0.04835344  0.04531616  0.05435129  
+27 as  0.04773271  0.04505085  0.05204779  
+28 as  0.04692109  0.04464616  0.04968710  
+29 as  0.04588648  0.04414368  0.04705141  
+30 as  0.04457276  0.04346918  0.04411981  
+31 afios  0.04300458  0.04253868  0.04112252  
+32 as  0.04142012  0.04157358  0.03828622  
+33 as  0.03973391  0.04048035  0.03551985  
+34 as  0.03783615  0.03905775  0.03285398  
+35 as  0.03586304  0.03751881  0.03025736  
+36 aiios  Cl.03372592  0.03576292  0.02765367  
+37 aiios  0.03153350  0.03389679  0.02513303  
+38 as  0.02919641  0.03181795  0.02262280  
+39 aftos  0.026440.56  0.02921455  0.01991948  
+40 as  0.02300647  0.02577431  0.01685320  
+41 afios  0.01901658  0.02160207  0.01354616  
+42 as  0.01513088  0.01742875  0.01048141  
+43 afios  0.01125867  0.01315037  0.00758453  
+44 afios  0.00766640  0.00908027  0.00502263  
+45 afios  0.0047S905  0.00574052  0.00306351  
+46 as  0.00301 739  0.00365311  0.00189218  
+47 as  0.00179967  0.00219189  0.00111516  
+48 as  0.00093894  0.00114814  0.00057720  
+49 as  0.00025557  0.00031313  0.00015648  
+
+YUCATAN: ESTRUCTURADESPLEGADADE LA FECUNDIDAD 1970, 1980 y 1988. ZACATECAS: ESTRUCTURADESPLEGADAOE LA FECUNDIDAD 
+Edad  1970  1980  1988  
+12 afios  0.00000042  0.00002196  0.00000000  
+13 as  0.00015037  0.00042643  0.00000000  
+14 as  0.00121858  0.00220727  0.0000045 I  
+15 as  0.00450700  0.00>49632  0.00056633  
+16 afios  0.01081416  0.01356255  0.00426392  
+17 as  0.01959081  0.02252205  0.01355738  
+18 as  0.02940637  0.03199156  0.02694159  
+19 as  0.03761077  0.03949069  0.03953199  
+20 as  0.04365114  0.04478276  0.04891736  
+21 afios  0.04761067  0.04809928  0.05457549  
+22 as  0.04997943  0.04997179  0.05749559  
+23 as  0.05117792  0.05080929  0.05843036  
+24 afios  0.05144377  0.05082416  0.05792132  
+25 afios  0.05118458  0.05039590  0.05674133  
+26 afios  0.05044423  0.04954795  0.05503870  
+27 as  0.04914283  0.04818776  0.05266342  
+28 as  0.04768664  0.04670342  0.05021667  
+29 afios  0.04595410  0.04496777  0.04746971  
+30 as  0.04390595  0.04293704  0.04441091  
+31 afios  0.04167143  0.0~73374  0.04129438  
+32 afios  0.03948635  0.03858553  0.03835022  
+33 as  0.03726846  0.03640988  0.03548799  
+34 as  0.03498850  0.03417679  0.03274995  
+35 afios  0.03269811  0.03193574  0.03009202  
+36 as  0.03031876  0.02960932  0.02743850  
+37 as  0.02795136  0.02729563  0.02487898  
+38 afios  0.02551833  0.02491856  0.02234133  
+39 afios  0.02278726  0.02225097  0.0 1962510  
+40 as  0.01955127  0.01909070  0.01656476  
+41 as  0.01593547  0.01555981  0.01328270  
+42 afios  0.01250279  0.01220791  0.01025311  
+43 afios  0.00) 17365  0.00095721  0.00740167  
+44 as  0.()0'jl5972  0.()0'jQ1436  0.00488986  
+45 as  0.00380193  0.00371219  0.00297644  
+46 as  0.00237159  0.00231561  0.00183527  
+47 as  0.00140602  0.00137283  0.00108051  
+48 as  0.00073306  0.00071338  0.00055889  
+49 as  0.00019847  0.00019378  0.00015146  
+
+1970, 1980y 1988. 
+Edad  1970  1980  1988  
+12 afios  0.00000000  0.00000000  0.00000000  
+13 as  0.00002859  0.00001811  0.00000000  
+14 as  0.00051498  0.00047840  0.00002076  
+15 afios  0.00255657  0.00265115  0.00082441  
+16 as  0.00738602  0.00774105  0.00497359  
+17 as  0.01517043  0.01542040  0.01427627  
+18 as  0.02481857  0.02416749  0.02697410  
+19 as  0.03369306  0.03144617  0.03860965  
+20 as  0.04077191  0.03672127  0.04721636  
+21 as  0.04580748  0.04041731  0.05249182  
+22 as  0.04912131  0.04277847  0.05529744  
+23 afios  0.05108440  0.04430918  0.05633178  
+24 as  0.05193814  0.04523543  0.05606906  
+25 as  0.05211547  0.04572960  0.05517147  
+26 as  0.05168778  0.04581595  0.05376305  
+27 as  0.05059481  0.04558180  0.05172989  
+28 as  0.04927289  0.04519394  0.04960211  
+29 as  0.04761279  0.04469888  0.04719244  
+30 as  0.04558552  0.04402434  0.04447640  
+31 as  0.04333420  0.04308710  0.04165854  
+32 afios  0.04111167  0.04211264  0.03897122  
+33 as  0.03883836  0.04100704  0.03632556  
+34 as  0.03648809  0.03956695  0.03373638  
+35 as  0.03411791  0.03800850  0.03119541  
+36 as  0.03164825  0.03622995  0.02862513  
+37 afios  0.02918620  0.03433958  0.02611946  
+38 as  0.02665204  0.03223360  0.02360385  
+39 as  0.02380398  0.02959618  0.02086537  
+40 as  0.02042645  0.02611098  0.01772306  
+41 as  0.01665055  0.02188420  0.01430138  
+42 as  0.01306489  0.01765636  0.01110927  
+43 as  0.00958666  0.01332209  0.00007043  
+44 as  O.O<X>43734  0.00919884  0.00536538  
+45 afios  0.00397342  0.00581547  0.00328358  
+46 as  0.00247863  0.00370081  0.00203378  
+47 as  0.00146951  0.00222051  0.00120063  
+48 as  0.00076364  0.00116313  0.00062213  
+49 as  0.00020744  0.00031722  0.00016876  
+
+CUADRO 34 EDAD MEDIA A LA FECUNDIDAD 
+
+País / Entidad  1970  1980  1988  
+Estados Unidos Mexicanos  28.77  a_!  28.38  28.50  
+Aguascalientes  29.74  30.77  b_/  28.54  
+Baja California  30.03  b_l  28. 14  28.26  
+Baja California Sur  29.33  27.73  28.46  
+Campeche  28.25  28. 11  28.43  
+Coahuila  29.02  27.96  28.44  
+Colima  29.08  28.01  28.26  
+Chiapas  28.74  27.91  28.65  
+Chihuahua  29.35  28.34  28.30  
+Distrito Federal  28.96  28.71  28.25  
+Durango  29.40  28.52  28.71  
+Guanajuato  30.28  28.81  28.53  
+Guerrero  28.49  28.37  28.81  
+Hidalgo  28.35  a_!  28.30  28.69  
+Jalisco  29.59  28.61  28.49  
+México  28.73  a_;  28.46  28.25  
+Michoacán  29.56  28.74  28.79  
+Morelos  28.84  28.44  28.49  
+Nayarit  28.99  28. 18  28.49  
+Nuevo Le  28.08  a_/  28.30  28.30  
+Oaxaca  28.19  a_/  27.'ll.  28.75  
+Puebla  29.15  28.27  28.75  
+Querétaro  29.33  28.49  28.65  
+Quiuntana Roo  27.55  a_/  27.15  28.36  
+San Luis Potosi  28.59  a_/  28.25  28.75  
+Sinaloa  29.60  28.32  28.60  
+Sonora  29.28  28.22  28.31  
+Tabasco  28.22  a_,  31.15  b_/  28.62  
+Tamaulipas  29.87  28.54  28.38  
+Tlaxcala  28.95  28.27  28.69  
+Veracruz  28.55  ª-'  28.47  28.47  
+Yucatán  28A5  a_!  28. 13  28.40  
+Zacatccas  28.92  a_/  28.70  28.62  
+
+a_/ lodicc sintético b_/ Polinomio de W. Brasa 
+Fuente : Cálculos propios. 
+CUADR035 EDAD INICIAL A LA NUPCIALIDAD 
+País / Entidad  1970  1980  1988  
+Estados Unidos Mexicanos  13.50  a_/  13.25  15.11  
+Aguascalicntes  12.94  16.28  b_/  14.95  
+Baja C.alifornia  14.55  b_l  12.36  14.91  
+Baja C.alifornia Sur  13.59  12.00  14.86  
+Campeche  13.00  13.63  15.05  
+Coahuila  13.76  12.20  14.85  
+Colima  12.87  12.72  13.43  
+Chiapas  13.33  12.~  14.67  
+Chihuahua  16.80  13.31  14.95  
+Distrito Federal  13.46  13.50  14.b'9  
+Durango  13.29  13.66  14.74  
+Guanajuato  13.81  13.66  14.98  
+Guerrero  11.73  13.33  14.75  
+Hidalgo  12.81  a_/  13.42  14.72  
+Jalisco  16.61  13.33  14.92  
+México  13.50  a_¡  13.75  14.~  
+Michoacán  13.20  13.58  14.73  
+Morelos  13.12  13.58  14.92  
+Nayarit  14.27  12.91  14.92  
+Nuevo Le  13.16  a_/  12.73  14.95  
+Oaxaca  12.18  a_!  12.50  14.67  
+Puebla  13.55  13.00  14.67  
+Querétaro  13.40  13.58  14.66  
+Quiuntana Roo  11.10  a_/  11.40  14.75  
+San Luis Potosí  12.63  a_/  13.00  14.67  
+Sinaloa  13.37  13.25  14.61  
+Sonora  12.42  12.73  14.95  
+Tabasco  13.00  a_/  11.47  b_/  14.64  
+Tamaulipas  13.86  13.33  14.78  
+Tlaxcala  14.58  13.25  14.72  
+Vcracruz  13.00  a_!  13.16  14.~  
+Yucalán  12.~  a_/  12.45  14.80  
+Zacatecas  13.42  a_/  13.50  14.64  
+
+a_/ Indice sintftico 
+b_l Polinomio de W. Bra11 
+Fuente: Cálculos propios. 
+CUADR036 
+RAPIDEZ DE LA NUPCIALIDAD 
+País / Entidad  1970  1980  1988  
+Estados Unidos Mexicanos  0.5100  a_!  0.4610  0.3692  
+Aguascalicntcs  0.8724  b_/  0.4092  
+Baja California  b_/  0.5850  0.4 132  
+Baja California Sur  0.7102  0.5410  0.4103  
+Campeche  0.6~1  0.3700  0.3994  
+Coahuila  0.6980  0.5740  0.4204  
+Colima  0.8978  0.4880  0.6003  
+Chiapas  0.5507  0.4260  0.4324  
+Chihuahua  0.3649  OA520  0.4078  
+Distrito Federal  0.8333  0.5 11 0  0.4157  
+Durango  0.7786  0.4180  0.4215  
+Guanajuato  0.7CX>5  0.4910  0.4010  
+Guerrero  0.9243  0.4410  0.4184  
+Hidalgo  0.5590  a_/  0.4240  0.4249  
+Jalisco  0.0%8  0.5040  0.4095  
+México  0.5 110  a_/  0.4CX,O  0.4156  
+Michoacán  0.8052  0.4970  0.4224  
+Morelos  0.6885  0.4130  0.4101  
+Nayarit  0.4669  0.4910  0.4102  
+Nuevo Le  0.4290  a_!  0.5(j()()  0.4076  
+Oaxaca  0.6390  a_/  0.5130  0.4318  
+Puebla  0.7246  0.4930  0.4313  
+Querétaro  0.7257  0.4350  0.435 1  
+Quiuntana Roo  0.6730  a_/  0.5 110  0.4343  
+San Luis Potosí  0.6790  a_/  OA&'90  OA31 l  
+Sinaloa  0.6762  0.4510  0.4432  
+Sonora  0.9836  0.5400  0.4000  
+Tabasco  0.4740  a_/  b_/  0.4383  
+Tamaulipas  0.6005  0.4880  0.4309  
+Tlaxcala  0.4677  0.4400  0.4246  
+Veracruz  0.5750  a_/  0.5090  0.4 133  
+Yucalán  0.5660  a_/  0.5700  0.4276  
+Zacatecas  0.5910  a  0.5000  0.4383  
+
+a_/ Indice sintét ico b_j Polinomio de W. Brass 
+Fuente: Cálculos propios. 
+CUADRO 37 CONTROL NATAL 
+País/ Entidad 
+1970 
+1980 
+1988 
+Estados Unidos Mexicanos 
+0.2000 a_/ 
+0.0000 
+0.5399 
+Aguascalientcs 
+0.5875 
+b_/ 
+0.5741 
+Baja California 
+b_/ 
+0.4000 
+0.6761 
+Baja California Sur 
+0.5198 
+0.4000 
+0.6208 
+Campeche 
+0.8190 
+0.4000 
+0.6108 
+Coabuila 
+0.6224 
+0.4000 
+0.6135 
+Colima 
+0.7682 
+0.2000 
+0.7189 
+Chiapas 
+0.4325 
+0.0000 
+0.5262 
+Chihuahua 
+0.5672 
+0.2000 
+0.6004 
+Distrito Federal 
+0.9396 
+0.2000 
+0.6837 
+Durango 
+0.5557 
+0.0000 
+0.4991 
+Guanajuato 
+0.2257 
+0.0000 
+0.5666 
+Guerrero 
+0.9073 
+0.0000 
+0.4561 
+Hidalgo 
+0.4000 a_¡ 
+0.0000 
+0.5062 
+Jalisco 
+0.2998 
+0.0000 
+0.5874 
+México 
+
+0.2000 a_/ 
+0.2000 
+0.6825 
+Michoacán 
+0.5384 
+0.0000 
+0.4646 
+Morclos 
+0.6364 
+0.0000 
+0.5878 
+Nayarit 
+0.3933 
+0.2000 
+0.5884 
+Nuevo Le 
+
+0.2000 a_/ 
+0.4000 
+0.6593 
+Oaxaca 
+0.4000 a_/ 
+0.2000 
+0.4848 
+Puebla 
+0.5880 
+
+0.0000 , 
+0.4845 
+Qucrétaro 
+0.5106 
+0.0000 
+0.5310 
+Quiuntana Roo 
+0.4000 a_/ 
+0.2000 
+0.6487 
+San Luis Potosí 
+0.4000 a_! 
+0.0000 
+0.4845 
+Sinaloa 
+0.3434 
+0.0000 
+0.5519 
+Sonora 
+0.7721 
+0.4000 
+0.6581 
+Tabasco 
+0.2000 a_¡ 
+b / 
+0.5411 
+Tamaulipas 
+0.2375 
+0.0000 
+0.6395 
+Tlaxcala 
+0.4790 
+0.2000 
+0.5074 
+Vcracruz 
+
+0.2000 a_/ 
+0.0000 
+0.5970 
+Yucatán 
+0.4000 a_¡ 
+0.4000 
+0.6311 
+Zacatecas 
+0.4000 a_/ 
+0.0000 
+0.5411 
+
+a_/ Indice sintftico b_/ Polinomio de W. Urass 
+Fuente: Cálculos propios. 
+
+c;HAFICA 1 
+ESTADOS Ll1"1l>OS MEXICANOS: ESTRUCTURA DESPLEGADA Ut: LA l' Et:UNDIDAJ) 
+nh 
+
+\httuJo dr A. J. <'o•IC' y T. J. l'rui.H"II 1-urnlr: f' uadr• 1 dtl •nt~O ol•d•~li<'O 
+--1970 + 1980 * 1988 
+GRAFICA 3 
+HAJA CALIFORNIA: ESTRUCTURA DESPLEGADA Dt: LA FECUNDIDAD 
+0 .07 r----------------------------, 
+
+GHAFICA 2 
+AGUASCALIENTES: ESTRUCTURA DESPLEGADA DE LA J<'ECUNDIDAD 
+nrx 
+0 .06 
+o.os 
+0 .04 0.03 0.02 0 .01 
+o 
+
+--1970 + 1980 * 1988 
+Mdodo de-A. J. Coalt y T. J. Truudl; y polinomio ch· \\'. Ura.u futnlt': Cuadro.! dtl anuo uladi.)til'a 
+GRAFICA 4 HAJA <..:Al.ffORNIA SUR: t.:STRUCTURA Dt:SPl.tGADA DE I.A n :cUNDIDAD 
+nfx 
+0 .07 ,-----------------------------, 0.06 
+o.os 
+0 .04 0.03 0.02 
+0.01 
+--1970 -19150 * 1988 
+Milod• dC" A. J. Coalt y T. J. Truucll FuC"nlr: f'111dro 4 dC"I atiit•o utadíilico 
+GRAFICA S 
+CAMPF.CIIE: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD nrx 
+0 .07 ,-------------------------, 
+0.06 o.os 0.04 0 .03 0 .02 0 .01 
+20 25 30 35 40 45 49 --1910 -r 1980 * 19aa 
+
+\hlodo d«-,\ , J. C'•alC' y T. J. TtunC'II t·m·nlt: ('1H1dro S dtl anuo uta.ri,ei<"• 
+GRAFICA 7 COLIMA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+níx 
+
+.\hlodo '" A . J. CoalC' y 1'. J. Trwuc-11 tuc-nh·: C'uadro 7 dtl anuo uladi,tico 
+GRAFICA 6 COAIIUILA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD ori. 
+0 .07 ,------------------------~ 0.06 
+o.os 
+0 .04 0.03 
+0.02 
+0.01 
+15 20 25 30 35 40 45 49 --1970 + 1980 *° 1988 
+
+~l..i• de A. J. c..1, y T. J. Truucll 
+Funatc: C1Md,. 6 dtl anca• uladbliC'e 
+GRAFICA 8 CHIAPAS: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+orx 
+0.06 ~----------------------~ 
+o.os 
+0.04 0.03 0.02 0.01 
+20 25 30 35 40 45 49 
+
+Mic..io d• A. J. C•••• y T. J. 1'rus1tll 
+•·u ..nll': C•dro 8 del anca• csta•i•tlce 
+GRAFICA 9 CHIHUAHUA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+nb 
+0.07 .--------------------------~ 
+\hCM• "t' A. J. Coale-y T. J. Tru.sull f,'ut nlt': Cuadro 9 dt'I ann• n ladb li~o 
+DURANGO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+urx 
+o.os 
+0.04 0.03 0.02 0.01 
+15 
+20 25 30 35 40 45 49 -1970 + 1980 * 1988 
+~hlodo dt' A. J. Coatt' y 1: J. Trusnll t·u.,.nlt: ( ·uadro l l de'I anuo ul•di:.lico 
+
+GRAJ,'JCA 10 DISTIUTO FEDERAL: ESTRUCTURA DESPLEGADA DE 1A FECUNDIDAD 
+orx 
+
+
+0.07 .--------------------------~ 
+0.06 
+o.os 
+0 .04 
+0.03 
+0.02 
+0.01 
+15 20 25 30 35 40 45 49 -1970 + 1980 °* 1988 
+Mi lode d• A, J. Ceol• y T. J. Tt"» •II F11m1r. C•dro 10 4cl anexo csla4bllc-e 
+GRAFJCA 12 GUANAJUATO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+ori.: 
+0.06 
+o.os 
+0.04 
+0.03 
+0.02 
+0.01 
+o 
+12 15 20 
+1'hlode d• A. J. CHI• y T. J. Ttuanll F•mtr. Cutl,. U 41'1 aaexo u la4ialico 
+
+GRAFICA 13 
+C;tJEHRF.RO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD nrx 
+o.os 
+0.04 0 .03 0 .02 0 .01 
+15 20 25 30 35 40 45 49 
+
+-1910 -r-19ao * 1988 
+\h1o4o d .. A. J. Coelt' '1 T. J. Tt-uu dl 
+fo"u.-ntf': C..adre U dd anu• Hladislic-o 
+GRAFICA IS JALISCO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+nrx 
+o.os 
+0 .04 0.03 0 .02 0.01 
+15 20 25 30 35 40 45 49 -1970 + 1980 *° 1988 
+
+\htod• 4c A. J. c ..1c y T. J. l'ruucll ~ornlf': (~uat.lr. 15 dd anuo utodbliC'• 
+GRAFICA 14 
+HIDALGO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+níx 
+0.06 
+o.os 
+0.04 0.03 0.02 0.01 
+12 15 
+Mélo4• de A. J. CH le y T. J. Tr11sHII Fu.e111c: Cudro l,. 4d ••••• cata4isllc• 
+
+MEXICO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD nrx 
+0.07 ~----------------------~ 
+
+~l<IM• 4• A. J. C••I• y T. J. Ttuucll Fumlc: Cuadro 16 4d ••••• HladiaUco 
+GRAFICA 17 
+MICHOACAN: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+níx 
+0.06~------------------------, o.os 
+0 .04 0.03 
+0 .02 0 .01 O·~ Hll!io.____________________....:..c:..:i::,i,._ 12 15 20 25 30 35 40 45 49 --1970 -r 1980 * 1988 \hto1to Jf' .\. J. <"o• IC' y 1: J. 1·,uu rlf h1C"nlir: C uadro 17 df'I •nuo cMadi,-1ico 
+
+GRAFICA 19 NAYARIT: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+uh 
+0 .06 
+o.os 
+0 .04 0 .03 0.02 0 .01 
+15 20 25 30 35 40 45 49 
+
+\hto,I• dir A. J. l"oalt' 'J 1·. J. 1·,u,,.uU hH"nh: ( uadro ,_, drl ª"""º f'),ladi,tito 
+GRAFICA 18 
+MORELOS: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+orx 
+o.os 
+0.04 0.03 0.02 0.01 
+15  20  25  30  35  40  45  49  
+--1970 -r 1980 * 1988  
+M~lodo de A. J. <.:oalc y T. J. Truurll  
+t•u,nlr: C..aclro 111 del anf'XO nte4i•liC'o  
+
+GRAl•ICA 20 NUEVO LEON: ESTH.UCTUUA DESPLEGADA DE LA Fi'XUNDmAD 
+nrx 0 .07 ~-----------------------, 
+0 .06 
+o.os 0.04 0.03 0.02 0 .01 
+20 25 30 35 40 45 
+--1970 + 1980 * 1988 MCtMo de,\. J. Coalc y T. J. Truiucll t'uC"nlf': C uadnt !O del anexo e->tadistko 
+
+GRAFICA 21 
+OAXACA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+nfx 
+0.06 r------------------------­
+o.os 
+0.04 0.03 0.02 0.01 
+20 25 30 35 40 45 49 
+-1910 + 19ao *°1988 ~hiedo d« ,\. J. ("oalc-y 1: J. Truut'U 
+• wrntr: CMadr•? 1 dc-1 anu.o uladístic-o 
+GRAFICA 23 QUERETARO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+..,~ 
+0.06,-------------------------­
+o.os 
+0.04 0.03 0.02 0.01 
+º· 
+12 15 20 
+~ht.do dt' ,\ , J. Coalc y T. J. TnuHII turt1fr: ( ·u.,t,o.? \ drl ant'a• ol•dialice 
+25 30 35 40 45 49 
+GRAFICA 22 
+PUEBLA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+orx 
+
+0.06 .---------------------------. 
+o.os 
+0.04 0.03 0.02 0.01 
+Mélocle tle A. J. c..10 yT. J. TrllH•II 
+P11ratr. Cuedre, 22 del ••ea• Hladic• 
+GRAFICA 24 
+QUINTANA ROO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD ofx 
+0.07 ,---------------------------. 
+12 15 20 25 30 
+-1970 +19ao *°1988 
+Miletl• de A. J. CNk y T. J. Tr,...•11 
+•·vn.lc: c...-,. 2,. dd anuo Hta,lí•tlce 
+
+
+GRAFICA 25 
+SAN LUIS POTOSI: ESTRUCl"URA DESPLEGADA llE LA FECUNDIDAD 
+nh: 
+0 .06 ,---------------------------, 
+o.os 
+0 .04 0 .03 0 .02 0 .01 
+0'.111!,------------------------"'"""'llf 12 15 20 25 30 35 40 45 49 
+--1970 -r-1980 * 1988 
+\hlodo df' . J. (' ollf' yl'. J. l'rl1udl htf'nh: C'u•dro ?S dd •ruxo n t•dl!\fico 
+GRAFICA 27 SONORA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+0 .07 ~-----------------------~ 
+
+0 .06  
+o.os  
+0 .04  
+0.03  
+0.02  
+0 .01  
+15  20  25  30  35  40  45  49  
+--1970 + 1980 * 1988  
+\ 1r-lodn d f' \  .1 ( 'oalf' y l ' J. Tru.u,11  
+t-uroh  ( u•dtu ! 7 d.-1 • n f'\U r , t.,l h lÍt."o  
+
+GRAFICA 26 
+SINALOA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+or~ 
+
+0.06 ....-------------------------, 
+o.os 
+0 .04 0.03 0 .02 0.01 
+º'~ """'----------------------"-;.a;;­
+
+12 15 20 25 30 35 40 45 49 
+--1970 + 1980 * 1988 Molo<I• 4• A. J. CH le y T. J. 1'ru»<II F11mlr: Cuadre !6 del anexo u cadíJotico 
+GRAFICA 28 TABASCO: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+níx 0 .06 ~------------------------, 
+o.os 
+0.04 0 .03 0 .02 0.01 
+O~!'lil"o&.--------------------_:...;c..a::~ 12 15 20 25 30 35 40 45 49 --1970 + 1980 * 1988 M~lod• de A. J. C.:01lc y T. J. TraaucU; y poliao..i• de \V. Hnu f'ucntC': C"wtdro !8 dtl anuo u 1odíJolico 
+
+GRAFICA 29 TAMAULll'AS: ESTRUCTURA OESPU:GADA DE LA FECUNDIDAD 
+níx 
+
+0.07 ,-------------­
+0.06 0.05 0 .04 0.03 0.02 0.01 
+-------------, 
+20 25 30 35 40 45 49 
+\hlodo de-A. J. t. ·o•lc-y T. J. 1·ru~ull t·uc-nlc-: Cuadro !9 dc-1 anue utadi)lico 
+GRAFICA 31 VERACRUZ: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+nrx 
+o.os  
+0.04  
+0.03  
+0.02  
+0.01  
+15 20 • \hlodo de-A. J. Coelc y T. J. lhauell t'u"nlC': Cuadro JI drl 1nue uladi~lico  25 --1970 +  30 35 1980 *1988  40  45  49  
+
+GRAFICA 30 
+TLAXCALA: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD orx 
+0.06 0.05 0.04 0.03 0.02 0.01 
+o 
+
+--1970 + 1980 '*e 1988 Mitod• 4• A. J. Culc y T. J. Tru»cll 
+Fuir•t..: Cuadro lO _.c-1 anuo uladi1li<"• 
+GRAFICA 32 YUCATAN: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+nrx 
+
+0.07 ,-------------------------, 
+0.06 o.os 
+0.04 0.03 0.02 0.01 
+15 20 25 30 35 40 
+
+Mitod• de A. J. Coa le y T. J. Truudl 
+Fuirnfc-: C111td,-. J? dc-1 ••n• ealedi~tico 
+GRAFICA 33 
+ZACATECAS: ESTRUCTURA DESPLEGADA DE LA FECUNDIDAD 
+nrx 
+0.06~------------------------~ 
+o.os 
+0.04 0.03 0.02 0.01 
+o,~~.....--------------------~ =...w 12 15 20 25 30 35 40 45 49 
+\fC'todo 41' . J t 'o•II' y T. J. Tru~ l'II t·ut'ntt': C"uadre H dC'I ant'xe nt•d•~•ic• 
+BIBLIOGRAFIA 
+Brass, W. 1974 "Métodos of Analysis and Estimation", The Demography of Tropical Africa. 1968. Publicado en espal en: Métodos para estimar la fecundidad y la mortalidad en poblaciones con datos limitados. Selecci de Trabajos de W. Brass, CELADE, Serie E. No. 14, 1974. 
+Coale, A. J. 1977 The Development of models of nuptiality and fertility, en Population, nero especial, pp. 131-154. 1977. 
+Coale, A. J. 1971 "Age patterns of marriage" en Population Studies (Londres), Vol. 25, No. 2, pp. 193-214. 1971. 
+Coale, A.J. y Trussell,J., 1974 "Model Fertility Schedules: Variation in the Age Structure of Childbering in Human Population", Population Index, April. 
+CONAPO 1988 México demográfico -breviario 1988-México. D.F. pp. 54-55. 
+Lez, O. 1982 Las estructuras de la fecundidad en México en 1970 y 1980. Tesis profesional. pp. 16-27. 
+Fernández, R. 1980 Las estructuras modelo de la fecundidad de Coale y Trussell -Un análisis empleando informaci de América Latina-. CELADE, San José de Costa Rica. 
+Mina, A. 1982 "Consideraciones sobre modelos de ajuste empleados en la Demografía Matemática" en Demo~rafía y Economía. Vol.XVI, N.2(50). 
+Wunsch, G. Técnicas para el análisis de datos demográficos deficientes. El Colegio de México, A.C. pp. 119-152. 
+
+
+
+
+
+

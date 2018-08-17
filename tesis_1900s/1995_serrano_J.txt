@@ -1,0 +1,2254 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRO EN ECONOMIA CENTRO DE ESTUDIOS ECONOMICOS EL COLEGIO DE MEXICO 
+Un modelo de ciclos reales para la economía mexicana 
+Jes Serrano Landeros 
+PROMOCION 1992-1994 
+Mayo, 1995. 
+ASESOR: Dr. Ra Anibal Feliz Ortiz 
+Indice 
+Capitulo I  
+Los Modelos de Ciclos Reales  1  
+Capitulo II Modelo de Crecimiento Estocástico Neoclásico  17  
+Capitulo III consideraciones Econométricas y No Econométricas  47  
+Capitulo IV Modelo propuesto para México  58  
+Conclusiones  85  
+Apéndice I Ecuaci6n de Euler para para construir  un  Modelo  con  Tiempo  88  
+Apéndice II Programas tipo  en  RATS  98  
+Apéndice III Filtrado de Datos  105  
+Bibliografia  112  
+
+Presentaci 
+El objeti vo del presente trabajo es calibrar un modelo de c i clos reales que emule adecuadamente las fluctuaciones ciclicas observadas en el pasado reciente de la economia mexicana y proporcione informaci6n e intuici6n econ6mica il para la comprensi6n de la misma. 
+En el primer capitulo, se presenta una descripci de lo que son los modelos de ciclos reales, sus fundamentos y resultados más i mportantes, asi como consideraciones de teoria econ6mica relacionadas con el tema. En Capitulo II se describen los métodos que la l i teratura ofrece para la soluci6n de modelos del tipo i ntertemporal, al cual pertenecen los modelos de ciclos reales. 
+En el siguiente capitulo se hacen algunas consideraciones econométricas para la estimaci6n de modelos del tipo de los tratados, dando particular atenci al procedimiento de cali braci6n, que es el usado para la estimaci6n de los modelos propuestos en este trabajo. A continuaci6n, en el Capítulo IV, se 
+pl antean  y  calibran  dos  modelos  que  tratan  de  explicar  las  
+variaciones  cíclicas  de  la  economía  mexicana,  comparándose  los  
+resultados obtenidos con  ambas especificaciones.  
+
+Finalmente, se exponen las principales conclusiones que se derivan de los resultados obtenidos en este trabajo. 
+CAPITULOI 
+Loa Modelo• 4• Ciclo• Real•• 
+Tal vez la aportaci más importante de los modelos de ciclos reales, a en sus formas más sencillas, es que han demostrado que los modelos de equilibrio no son necesariamente inconsistentes con muchas de las caracter1sticas atribuidas a los ciclos econicos. 
+Dos de los rasgos principales de estos modelos son, que incluyen de manera explicita la incertidumbre y sus fuentes, as1 como agentes que tienen un comportamiento consistente con los principios de la microeconom1a. El segundo rasgo, como es sabido, fué causa de fuertes criticas a la macroeconomía Keynesiana. 
+Los modelos de ciclos reales tratan de responder dos preguntas básicas: ¿co responden individuos racionales maximizadores de su utilidad a lo largo de toda su vida a cambios en el ambiente econico? y ¿qué implicaciones tienen esas respuestas para los valores de equilibrio de las variables macroeconicas? 
+Para contestar estas preguntas es necesario especificar el ambiente econico y como cambia a lo largo del tiempo. También se requiere especificar los criterios que los agentes econicos usan para elegir los patrones de variables tales como el consumo, la inversi y el empleo. Es importante notar que cuando se habla de ciclos econicos frecuentemente se piensa acerca de nociones de persistencia o correlaci serial en las variables econicas agregadas, movimiento conjunto entre las actividades econicas y diferentes amplitudes y volatilidades de varias series. As1, 
+1 
+el objetivo de cualquier modelo de ciclos econicos es proporcionar una comprensi coherente de co y porqué surgen estas caracter1sticas en las series de tiempo de las variables econicas. 
+El modelo básico de la dinámica econica es el neoclásico de acumulaci de capital. Frecuentemente ha sido interpretado como un modelo de crecimiento econico; sin embargo, el modelo neoclásico genera fluctuaciones en respuesta a alteraciones ex6genas que recuerdan a los ciclos econicos. En consecuencia, es natural considerarlo como el punto de referencia para entender, tanto las fluctuaciones econicas, como el crecimiento. Es notable que las implicaciones para las fluctuaciones econicas del enfoque neoclásico no hab1an sido exploradas seriamente hasta fechas recientes. 
+Un ambiente econico simple a considerar es una econom1a poblada por muchos agentes idénticos que viven para siempre. La utilidad de cada agente es alguna funci del consumo y el ocio que espera disfrutar a lo largo de su vida. Se considera que cada agente tiene acceso a una tecnolog1a para el ico bien de ésta econom1a. La producci requiere de capital, que se deprecia con el tiempo, y trabajo. La tecnolog1a se considera sujeta a variaciones temporales de productividad o cambios tecnolicos que producirán la fuente de variaci en el ambiente econ6mico a la cual los agentes deben responder. Las elecciones que cada 
+consumidor  debe  hacer  son:  co  distribuir  su  tiempo  entre  
+trabajo  y  ocio  y  co  distribuir  el  bien  producido  entre  
+inversi  en  capital futuro y  consumo  presente.  
+
+Este modelo es claramente simple e irrealista, pero no tiene 
+2 
+la intenci6n de capturar la realidad compleja, sino solo proveer un punto de referencia de las caracteristicas de un equilibrio de mercado dinámico. Es un modelo puramente real, conducido por alteraciones a la productividad o a la tecnologia y de aqu1 que haya sido etiquetado como un modelo de ciclos reales. 
+Los trabajos acerca del equilibrio general de Debreu(1954) y Prescott y Lucas(l972) permiten interpretar, bajo los supuestos usuales, las elecciones de consumo, inversi y trabajo derivadas de la maximizaci6n de utilidad del agente representativo como los resultados per capita de una econom1a de mercado competitiva, sin distorsiones ni fallas de mercado. Las cantidades 6ptimas también implican precios de mercado para el trabajo (salario real), para los préstamos de un solo periodo (una tasa de interés real) y también puede valuarse cualquier activo financiero incluyendo los activos contingentes. 
+Otra caracteristica l~portante ae escos moaeios es que, en la ausencia de alteraciones a la productividad, la elecci6n de consumo, trabajo, inversi6n y producto del agente representativo convergerá, bajo un conjunto amplio de condiciones, a un valor constate o estado estacionario. 
+Para ilustrar el tipo de razonomaniento econ6mico implicito 
+en estos modelos, imagine que el agente representativo observa 
+un a l to valor de productividad temporal, ¿c6mo responderá? Una 
+opci para el seria consumir por encima del valor normal 
+manteniendo la inversi y el tiempo dedicado al trabajo 
+constantes, esto implicarla que los choques son totalmente 
+absorbidos en un periodo y no tienen implicaciones para 
+decisiones futuras. Sin embargo, un momento de reflexi6n nos 
+3 
+sugiere que el agente representativo asigna un valor al consumo y ocio futuros adicionalmente al consumo presente, por lo que preferirla consumir más tanto en el presente como en el futuro. Esta transferencia intertemporal puede ser alcanzada en este sentido debido a que la funci de producci permite al agente representativo invertir en capital que ayudará en el futuro a producir output. As1 la inversi responderá positivamente al shock. El efecto sobre el tiempo destinado al trabajo es ambiguo. La productividad presente es temporalmente alta, lo que estimula la sustituci intertemporal de trabajo presente por trabajo futuro y la sustituci intertemporal de consumo presente por ocio. Por otro lado, la riqueza es mayor y act para reducir el trabajo presente y futuro. Para parametrizaciones plausibles del modelo el efecto sustituci domina de manera que el tiempo dedicado a trabajo en el presente se incrementa. As1 el choque temporal es propagado hacia adelante y los efectos del choque se mostrarán como un mayor producto, consumo y ocio en el futuro. 
+Este simple ejemplo ilustra porqué variables como el producto y el consumo están posiblemente correlacionados serialmente aun cuando los choques al ambiente estén no correlacionados y sean puramente temporales. 
+si el choque percibido por el agente representativo es persistente, entonces sus repuestas serian diferentes. Por ejemplo un incremento en la productividad más persistente tender1a a incrementar la riqueza mas significativamente debido al incremento del producto futuro. El incentivo del agente representativo a incrementar la inversi seria reducido y el incentivo a incrementar el consumo presente seria incrementado. 
+4 
+Habria un menor incentivo a trabajar más hoy debido a que el efecto riqueza es más fuerte y el efecto de substituci6n intertemporal es reducido. Los resultados cuantitativos requieren de una formulaci6n más especifica. 
+Recordemos que en esta economia no hay fallas de mercado, as1 que las respuestas del agente representativo a los cambios en productividad son 6ptimas y la econom1a es Pareto eficiente en todos los instantes de tiempo. 
+En modelos más ricos que incluyen gobierno estas reglas de decisi también depender1an de las acciones presentes y futuras del gobierno. 
+Es com referirse a estos modelos de ciclos reales como modelos que son conducidos por "choques de oferta" agregada. Si bien, la mayoria de los análisis a la fecha se han enfocado en el modelo donde las variaciones en la tecnolog1a son la fuente de los cambios en el ambiente, uno podr1a fácilmente especificar cambios que surgen como consecuencia de variaciones en las preferencias y en los gustos. Esto llevarla a modelos de ciclos reales conducidos por lo que alguien llamarla "choques de demanda". Además, el modelo puede ser extendido para incluir un sector gubernamental y un sector externo que también podr1an ser considerados como fuente de "choques de demanda". As1, no hay nada inherente en el modelo de ciclos reales que lo limite al análisis de variaciones en la tecnolog1a o la oferta. 
+Ha sido práctica com el apoyarse en lo que es llamado 
+equivalencia determinista. Este procedimiento toma las reglas de 
+decisi6n lineales obtenidas para la soluci aproximada del 
+modelo determinista y reemplaza los cambios futuros de 
+5 
+productividad con sus valores esperados condicionales dada la i nformaci d i sponible en el instante t. 
+creciaiento Econ6aico y lo• Ciclo• Real•• 
+El modelo neoclásico de acumulaci de capital predice que los valores per cápita del producto, capital y consumo, en ausencia de perturbaciones a la productividad convergerán a constantes o valores de estado estacionario. La evidencia empirica, sin embargo, es que los valores per cápita crecen continuamente a lo largo del tiempo, en consecuencia, el modelo neoclásico básico no ofrece una explicaci de este crecimiento sostenido en los valores per cápita. 
+Robert Solow{l957) en su articulo clásico concluye que alrededor del 85 por ciento del crecimiento real per cápita durante el periodo 1909-1949 para Estados Unidos fue debido a cambios tecnolicos o a la productividad y alrededor de 15% debido a incrementos en el capital por trabajador. Desde el trabajo seminal de Solow ha sido com pensar en el crecimiento econico como algo que puede ser estudiado independientemente de las fluctuaciones econicas. o para ponerlo de otra manera, es frecuente suponer que los factores que influyen el crecimiento tienen so un efecto de segundo orden en las fluctuaciones econicas. 
+En este sentido, Nelson y Plosser {1982) arguyen que el producto per cápita, al igual que muchas otras series de tiempo econicas, se comportan como si tuvieran componentes que describen una senda aleatoria {random walk). Las sendas 
+6 
+aleatorias tienen la importante propiedad de que no hay una tendencia en el proceso estocástico a regresar a un nivel particular o tendencia lineal una vez que es desplazada. Asi, choques a la productividad no pronosticados alteran permanentemente el nivel de productividad. Los mismos autores también alegan que las series de tecnologia de Solow también se comportan como una senda aleatoria. 
+La observaci6n que la productividad sigue una senda aleatoria con paso (drift), tiene algunas implicaciones importantes. Primera, una senda aleatoria es un proceso estocástico no estacionario. Las sendas aleatorias también. son referidas como tendencias estocásticas debido a que mientras ellas pueden exhibir crecimiento no fluctn alrededor de un patr6n determinista. si los choques de productividad son permanentes, cada uno determina una nueva trayectoria de crecimiento. Entonces, el quitar la tendencia a las series de tiempo econicas con una tendencia determinista y suponer que las desviaciones de la tendencia exhibirán una tendencia a regresar a la linea de tendencia seria econométricamente incorrecta y puede ser engaftosa. 
+Segundo, el hecho de que la productividad crezca a lo largo del tiempo trae complicaciones adicionales para el modelo neoclásico. si la productividad e -~á creciendo, entonces, el producto, el consumo y el capital per cápita, también tenderán a crecer a lo largo del tiempo. Si, por ejemplo, el producto y el consumo per cápita crecen a diferentes tasas, en el largo plazo la relaci6n consumo/producto se acercaria a cero o uno. Para evitar esto, en general se requiere que estas variables per 
+7 
+cápita converjan a tasas de crecimiento constantes pero iguales. Además, el tlempo destinado al trabajo no puede crecer en el estado estacionario debido a que el tiempo que se puede disponer para el trabajo está acotado tanto por arriba como por abajo. Para que estas restricciones sean satisfechas deben imponerse condiciones adicionales a la forma del proceso de producci y de la funci de utilidad. Es de particular importancia que el progreso tecnolico permanente sea expresado como un aumento en el trabajo o neutral en el sentido de Harrod. 
+Tercero, King, Plosser y Rebelo(1988) y King, Plosser, Stock y Watson(1987) muestran que el modelo neocl~sico-con progreso tecnolico que sigue una senda aleatoria implica que el producto, el consumo y la inversi per cápita contendrán una componente com de senda aleatoria o tendencia estocástica. Esta estructura es consistente con las observaciones empíricas de Nelson y Plosser discutidas anteriormente. Además King, Plosser, stock y watson (1988) investigan la implicaci de una tendencia estocástica com para el producto, el consumo y la inversi6n y concluyen que proporciona una representaci razonable de los datos. 
+Si estos cambios que aumentan la productividad del trabajo pueden se caracterizados como el motor del crecimiento econico. Además del cambio en estado estacionario originado por un aumento permanente en productividad, hay una dinámica de transici6n asociada a este cambio, la cual es importante para entender las fluctuaciones. Ellas son iniciadas por la necesidad de la economía de moverse hacia un acervo de capital permanentemente mayor. Para alcanzarlo requiere de incrementos substanciales en 
+8 
+la inversi6n, también habrá incrementos graduales en el consumo y en el producto hacia sus niveles mayores de estado estacionario. El tiempo dedicado al trabajo será temporalmente más alto durante la transici6n. En el corto plazo la tasa de interés real se incrementa que induce la substituci6n intertemporal de trabajo presente por trabajo futuro. Las respuestas, y en consecuencia las fluctuaciones que están presentes en el modelo son el resultado de los mismos factores que generan el crecimiento econ6mico. 
+Soluci6n de los Modelos de Ciclos Reales 
+Una de las estrategias más commente empleadas es elegir una forma funcional explicita para la funci6n de utilidad del agente representativo y la funci6n de producci6n y, entonces, calcular el equilibrio aproximado del producto, consumo, inversi, tiempo dedicado al trabajo y salarios implicados por el modelo cuando los cambios en la tecnologia son calculados siguiendo a Solow. Estos valores pronosticados pueden ser comparados con el comportamiento observado de la economia. 
+Una elecci natural para la funci de producci6n que 
+también satisface los requerimientos necesarios para el 
+crecimiento de estado estacionario es la forma de Cobb-Oouglas. 
+King, Plosser y Rebelo(l988) derivan la clase de funciones de 
+utilidad si la economia debe poseer crecimiento en el estado 
+estacionario. Las condiciones impuestas sobre la funci de 
+utilidad para que el crecimiento en el estado estacionario sea 
+compatible con el equilibrio estacionario son: (i) la elasticidad 
+9 
+de sustituci6n intertemporal en el consumo debe ser invariante a la escala del consumo (ii) los efectos ingreso y sustituci6n asociados con el crecimiento sostenido en la productividad del trabajo no deben alterar la oferta de trabajo. Una de estas es la funci6n de utilidad logarítmica. 
+Es sumamente sorprendente que un modelo simple sin gobierno, sin dinero, sin fallas de mercado de cualquier especie, con expectativas racionales, sin costos de ajuste y agentes idénticos podr1a replicar bien la experiencia real. Esto es especialmente cierto dado que la mucha de la investigaci6n macroecon6mica durante cincuenta as subrayla importancia de uno o más de los factores arriba citados en la explicaci6n de las fluctuaciones econ6micas. 
+La presencia de impuestos distorsionadores generalmente rompe la liga entre las decisiones timas del agente representativo y la distribuci Pareto eficiente, puesto que el retirar las distorsiones generalmente elevará el bienestar. Sin embargo el equilibrio competitivo puede ser calculado y analizado. La linea de razonamiento es que en una economía con muchos agentes cada uno de ellos toma el gasto del gobierno y las políticas impositivas como exenas a su problema de elecci. 
+La intuici6n subyacente a los efectos de compras no 
+productivas del gobierno(como se suponen en la mayor1a de 
+análisis Keynesianos) son presentados básicamente en Barro (1981) 
+y Hall(l980). Estos autores enfatizan dos tipos de influencias. 
+La primera, el aumento de las compras del gobierno induce un 
+efecto riqueza negativo que act para reducir el consumo y 
+aumentar el tiempo destinado al trabajo y el producto. La 
+segunda, el aumento de las compras del gobierno induce a una 
+substituci intertemporal cuando el incremento es temporal. Este resultado de menor consumo, menor inversi, mayor tiempo destinado a la producci y un mayor producto. La relativa importancia de los efectos riqueza y de substituci intertemporal permanece a sin resolver. Barro y Hall suponen que el efecto substituci es cuantitativamente más importante ante cambios temporales en las compras del gobierno que el efecto riqueza. Baxter y King(l988) han investigado estos efectos dentro de un modelo de ciclo real y han concluido que para los valores plausibles de los parámetros cambios más persistentes en las compras de gobierno tienen "multiplicadores" de producto mayores que los de cambios menos persistentes. 
+Por otro lado, las compras temporales tienen un mayor impacto más negativo en la inversi que las compras con una mayor persistencia. 
+Cuando los ingresos impositivos están basados en un impuesto al producto y el gasto del gobierno es distribuido como transferencias de suma fija, un cambio positivo en la productividad positivo requiere una reducci de la tasa impositiva con objeto de mantener el presupuesto balanceado. Esta reducci en la tasa impositiva refuerza los efectos del choque productivo sobre la productividad del trabajo después de impuestos y además incrementa el tiempo destinado al trabajo en respuesta a un choque tecnolico. Así el tiempo destinado al trabajo ( y la inversi, por razones análogas) son más volátiles en esta economía. 
+11 
+Mo4ificacionea al Modelo Biaico 
+Como ya se mencion el modelo hasta aqu1 discutido es sumamente simplificado, por lo que varias adiciones con objeto de captar mejor la realidad han sido propuestas, a continuaci se mencionan las más importantes. 
+Long y Plosser (1983) exploran un modelo de mtiples sectores con objeto de entender los movimientos conjuntos entre sectores en respuesta a choques que potencialmente son espec1ficos a un sector. La motivaci de este modelo es que se ha observado que varios sectores de la economia tienden a moverse juntos pero algunos sectores van adelante y otros van rezagados respecto al estado general de la econom1a. 
+B1ack(l987) argumenta que los modelos multisectoriales con importantes, particularmente cuando se trata de explicar el desempleo. Basa su argumento en la noci de que tanto el capital fisico como el humano son altamente especializados. Choques sobre las preferencias o la tecnolog1a generalmente requerirán recursos en la forma de movimientos de capital y trabajo entre sectores. Puesto que los insumos son especializados, será costoso hacer este ajuste y, como resultado, puede ser esperado que el desempleo crezca por encima de su nivel de largo plazo. 
+Un enfoque usado por Kydland y Prescott (1988) subraya la 
+importancia de la estructura de las preferencias que no son 
+separables en el tiempo. En su formulaci la utilidad presente 
+del ocio depende del ocio pasado en forma explicita. Esto permite 
+un incremento en la sustituibilidad intertemporal del ocio que 
+en consecuencia hace que las horas trabajadas sean más volátiles. 
+12 
+Rogerson(1988) y Hanson(l985) exploran las consecuencias de 
+indivisibilidades de la decisi de oferta de trabajo que requiere de los agentes trabajar tiempo completo o no hacerlo. El resultado es que la volatilidad de las horas trabajadas en 
+respuesta  a  los  cambios  en  productividad  se  incrementa  
+significativamente.  
+Otro  enfoque  para  mejorar  la  respuesta  de  las  horas  
+
+trabajadas en el modelo es el permitir heterogeneidad de los agentes en la economía. Ejemplos de este enfoque se pueden encontrar en Cho y Rogerson (1988) Kydland (1984), King, Plosser y Rebelo (1988). Estos artículos sugieren que-puede haber importantes sesgos hacia abajo en los estimados de la elasticidad de la oferta de trabajo agregada cuando hay agentes con diferentes habilidades. 
+La tesis del ensayo de Kydland y Prescott (1982) es que el supuesto de construcci en multiples periodos es crucial para explicar las fluctuaciones agregadas. Fabricas y barcos a medio construir no son parte del acervo de capital productivo. Los movimientos conjuntos de las variables del modelo ajustado para las datos trimestrales de U.S.A. de la posguerra son cuantitativamente consistentes con los correspondientes comovimientos de los datos de U.S.A. Además las correlaciones seriales de producto cíclico para el modelo se ajustan bien con las de los datos. Encuentran más variabilidad en las horas trabajadas que en la productividad pero no tanto como se observa en los datos. Consideran que la discrepancia no es grande por la dificultad para medir el empleo, puede ser también porque los shocks so son de productividad. Los mismos autores presentan 
+13 
+evidencia de que a con costos de ajuste la tecnolog1a de inversi de un so periodo es inadecuada. 
+La opini de muchos investigadores de ciclos reales es que el papel del dinero en una teor1a de equilibrio del crecimiento y las fluctuaciones econicas no está bien comprendido. Algunos investigadores como King y Plosser (1984) , Kydland (1987) y Eichenbaum y Singleton (1986), han explorado formas de incorporar el dinero y sus implicaciones en un modelo de ciclos reales. Sin embargo, hay poco acuerdo sobre cual es el enfoque más fruct1fero. Modelo• de crecimiento End6geno y Ciclos Reales 
+El modelo de crecimiento ex6geno no ha sido satisfactorio para algunos economistas, en particular podemos mencionar lo expresado por Arrow (1962) 1 
+"Una visi del Crecimiento Econico que depende tan grandemente de una variable ex6gena, le da uno la tranquilidad de que la difi cultad para medir como la cantidad de conocimiento, es dif1cilmente intelectualmente satisfactoria. Desde un punto de vista cuantitativo, emp1rico, nos deja con el tiempo como una variable explicativa. Ahora las predicciones de tendencia, aunque pueden ser necesarias en la práctica, son básicamente una confesi de i gnorancia, y, lo que es peor desde un punto de vi sta práctico, no son variables de politica". 
+Los trabajos de Uzawa(1965), Romer (1986), Lucas (1988), Rebelo(1990) y Barro(l990), entre otros, modifican el modelo 
+1Citado por Sala-i-Martin (1990). 
+14 
+básico neoclásico para permitir que el crecimiento sea un producto endeno de la tecnolog1a. La idea es permitir que el capital humano (cambio tecnolico que aumenta el trabajo) sea producido usando capital f1sico y capital humano como insumos con una tecnolog1a de rendimientos constantes a escala. En estos modelos un cambio en la tecnolog1a puramente temporal puede tener efectos permanentes sobre el nivel de la actividad econica. La raz es que un cambio en la productividad que resulte en un mayor producto provocará generalmente un incremento en los recursos destinados a la producci de capital humano adicional. En este sentido las decisiones de distribuci de recursos afectan el nivel de la tecnolog1a y el crecimiento de la econom1a. otras implicaciones adicionales de estos modelos es que variables como el producto, el consumo y la inversi son procesos integrados y poseen tendencias estocásticas. Este resultado es atractivo a la luz de lo encontrado por Nelson y Plosser (1982) en la descomposici con tendencia de senda aleatoria (random walk) que hacen del producto norteamericano. 
+Bvaluaci6n 4• la Politica Bcon6aica y Modelos de Ciclos Reales 
+Los modelos como los descritos podr1an ser usados para predecir las consecuencias de una regla de pol1tica en particular sobre las caracter1sticas operativas de la econom1a. Debido a que se estima la estructura de preferencias-tecnología, los parámetros estructurales serán invariantes a la regla de política seleccionada a cuando las ecuaciones de comportamiento no lo sean. Ejemplos de tales aspectos de pol1tica son descritos en 
+Kydland y Prescott (1980), Kydland y Prescott (1981) y en Barro (1981). 
+Consecuentemente, estas reglas proporcionarían la base para evaluar la política de una manera que no estarla sujeta a la critica de Lucas (1976) a los modelos que suponen relaciones invariantes con respecto a las acciones del gobierno entre las variables econicas pasadas y presentes. 
+
+Loa Modelo• Deterministas 
+Por lo presentado en las lineas anteriores podría quedar la impresi de que un modelo macroeconico que pretenda explicar la realidad debe ser estocástico. Brock y Hirman (1972) sugieren que no necesariamente es asi, en particular dicen que: "Parece razonable que la posibilidad de error en la observaci, en el producto o en la agregaci deberla ser tomado en cuenta cuando se calculan las políticas timas en el presente. Si los errores 
+o los eventos aleatorios son incorporados, las pol1ticas timas serán afectadas por la expectativa de estos eventos. Bajo estas condiciones, es valioso introducir incertidumbre directamente al proceso. La teor1a determinista estar1a entonces justificada en el sentido de que es una aproximaci de un modelo más general. As1, cuando los supuestos del modelo son relajados para incluir incertidumbre los resultados cualitativos no son radicalmente diferentes"2• 
+2Brock y Hirman (1972) pp.480. 
+16 
+CAPITULOil 
+Modelo de Crecimiento Neocl,aico Estoc6atico 
+A continuaci se presentan algunos de lo métodos más comunes y generales para la soluci del modelo de crecimiento neoclásico tanto en su versi determinista como estocástica, los cuales también son iles para la soluci de modelos de ciclos reales y de crecimiento endeno. Puesto que el ico objetivo que se persigue aqu1 es ilustrar éstos métodos se presenta su aplicaci a la versi más simple. M6todoa de soluci6n del modelo determinista 
+Considérese un economía de las siguientes características: 
+a) 
+Hay un solo bien Y que es producido con dos insumos: capital y trabajo. 
+
+b) 
+Hay muchos productores con la misma tecnología. 
+
+c) 
+Hay muchos consumidores con la misma funci de bienestar. 
+
+d) 
+No existe crecimiento de la poblaci. 
+
+
+También se supondrá que la utilidad de los individuos solo depende del consumo y además tiene la propiedad de separabilidad, esto es, la utilidad es igual a la suma descontada de las utilidades derivadas de los consumos en los diferentes instantes 
+(periodos) de tiempo. En el caso discreto, esta economía es descrita por las siguientes ecuaciones: 
+(1.1) 
+(1.2) 
+17 
+(l. 3) (1.4) 
+-
+(l. 5) 
+donde: e;.-Es el consumo del periodo t. It.-Es la inversi6n del periodo t. N1.-Nero de horas destinadas a la producci6n en el periodo t. Ki.-Acervo de capital en el periodo t. 6Ki.-Es el consumo de capital en el periodo t. Y1.-Es el producto del periodo t. U(Ct).-Es la funci6n de utilidad que representa las preferencias de los agentes. F(Ki,~).-Es la funci6n de producci6n que representa la tecnologia con la cuentan los productores. 
+Además se imponen las condiciones de regularidad de Imada 
+sobre la funci de producci y la de utilidad, es decir, F(O,n)=O F(k,O)=O Ft (k, n) >O Ft(O,n)""'"lO 
+lim F1:(k,n) =O 
+k-• 
+F
+0 (k, O)""'"lO 
+18 
+lim Fn (k, n) =O 
+n~• 
+U' (C) >O  
+U''(C)<O  
+Existe  un  planificador  social  benevole nte  con  la  misma  
+funci  de  bienestar  que  los  individuos  el  cual  enfrenta  el  
+problema:  
+
+-
+(1.6) 
+sujeto a: 
+(1.2) 
+(1. 3) 
+(1.4) 
+Debido a que el trabajo no reduce la utilidad e incrementa el producto tendremos una oferta de trabajo totalmente inelástica e igual a su valor máximo, es decir, 
+11i=l 
+De manera semejante, puesto que el producto puede incrementar la utilidad presente en la forma de consumo, o la utilidad futura en forma de inversi, y as1 aumentar el bienestar total del individuo, no se desperdiciará producto por lo que la ecuaci {1.2) se satisfacerá con igualdad. 
+19 
+definiendo ahora la funci f(ki) como: 
+tiene las siguientes propiedades: f{O)=O f' (k) >O 
+lim f1 (k) =O 
+Je-• 
+lirn f1 (k) =oo k-0 
+Sustituyendo la ecuaci (1.3) en (1.2) y usando la definici de la funci f(ki), el problema de maximizaci se transforma en: 
+-
+(P.1) 
+sujeto a: 
+(P. 2) 
+Aunque el problema está planteado como la elecci de una sucesi infinita de valores para el consumo y el acervo de capital, el problema que de hecho enfrenta el planificador social es el elegir el consumo actual y el capital de inicio de periodo de mana y nada más. El resto puede esperar hasta maftana. Además cada periodo t el planificador social encuentra como dado el capital kiY debe elegir timamente el consumo c. y el valor de 
+20 
+capital del siguiente periodo ki+t. Sin embargo, debido a la restricci presupuesta!, en realidad so puede elegir una de estas dos variables. 
+Antes de resolver algebraicamente este problema es preciso notar que dadas las propiedades de la funci de producci que representa la tecnología con que cuenta la economía, la funci f(k) presenta rendimientos decrecientes a escala siempre que a<l como se supondrá. A priori podemos pensar que es improbable que la dotaci inicial sea la tima, en consecuencia el acervo de capital crecerá o disminuirá en una primera instancia. Supgase que aumenta, en consecuencia, su productividad marginal irá disminuyendo reduciéndose la cantidad adicional de producto disponible del que se contará y por consiguiente su utilidad marginal y debido a la presencia de un costo de oportunidad en términos de utilidad representado por el consumir en el presente una unidad adicional de producto no se acumulará capital de manera indefinida. Un razonamiento análogo puede hacerse para el caso en que el acervo de capital comience a reducirse. Como el acervo de capital determina el volumen de producto disponible, esto sugiere que existirá un estado estacionario en que el producto y el acervo de capital serán constantes y la presencia de una depreciaci diferente de cero obligará a que haya una 
+inversi diferente de constante cero para reponer el capital depreciado así como un consumo también constante. Principio de Bellman o Programaci Dinámica 
+Suponga que el problema planteado en las ecuaciones (P.l) y (P.2) ya ha sido resuelto para todos los valores posibles de Ko· Entonces podríamos definir una funci v:1.~1 siendo v(ko) el 
+21 
+valor ma~imizado de la funci objetivo (P.1) para todo Jco. A esta funci se le llama funci de valor. Con v as1 definida, v(k1) nos darla el valor de la utilidad desde el periodo 1 que podria ser obtenida con un acervo de capital k1 , y Pv(k1) seria el valor de esta utilidad descontada al periodo o. Entonces en términos de la funci de valor, el problema del planeador social en el periodo o seria 
+Max [ U{ C0) +pv{k1) 1 
+(P. 3)
+Co, k1 
+sujeto a: 
+Si se conociera la funci v, podria ser usada para definir una funci g: R+~R+ de manera que k1=g (ko) y c0=f (ko) -g (ko) son los valores que maximizan el problema (P.3) • Con g as1 definida la dinámica de la acumulaci de capital a partir de cualquier acervo de capital ko estarla completamente descrita por 
+(S. 1) 
+Si se solucionara el problema (P.3), entonces v(ko) cumplirla con la siguiente condici 
+22 
+Cuando el problema se ve de manera recursiva los sub1dices de tiempo se vuelven molestos. El problema que enfrenta el planeador social con el acervo de capital presente k puede ser reescrito como 
+v(k) = Max {U[f(k) -y] +pv(y)}o,y,f<kl 
+Esta ecuaci en la funci desconocida v es llamada ecuaci funcional y es un objeto muy tratable matemáticamente. El estudio de los problemas de optimizaci dinámica a través de ecuaciones funcionales es llamada programaci dinámica. 
+Si la funci v fuera diferenciable y el problema tuviera soluci interic;>r y -que sabemos es igual a g (k)-las condiciones de primer orden y del teorema de la envolvente quedar1an como 
+U1 [f(k) -g(k) 1=Pv'[g(k) 1 (V.1) 
+v'(k) =f'(k) U1 [f(k) -g(k) 1 
+La primera de estas condiciones iguala la utilidad marginal de consumir una unidad de producto presente a la utilidad marginal de asignarla al capital y disfrutar de un mayor consumo en el siguiente periodo. La segunda condici establece que le valor marginal del capital presente, en términos de utilidad total descontada, está dado por la utilidad marginal de usar el capital en la producci presente y asignar este retorno a consumo presente. 
+cuando se resuelve un problema en particular, es frecuente 
+que no se tenga informaci suficiente para saber cual es la 
+23 
+forma de la funci6n de valor, por lo que es com proponer para ella una forma funcional de acuerdo al nero de variables de estado, la forma de la funci6n de utilidad y de la de producci6n. Con la forma propuesta se sustituye en las condiciones de primer orden y del teorema de la envolvente para determinar si en el dominio de los neros reales existen valores de las constantes 
+involucradas en la forma funcional con los que satisfagan las condiciones de optimalidad. 
+Por ejemplo, suponga que la funci6n de utilidad es logarítmica, la de producci6n es del tipo Cobb Douglas y el factor de depreciaci6n 1 
+en este caso se propone que la funci6n de valor sea de la forma 
+al sustituir en las condiciones de optimalidad se obtiene que 80=~[ ln{1-«) + P«pln«P ]
+1-~ 1-« 
+lo que significa que la forma propuesta es adecuada. La ecuaci6n que determina la trayectoria del capital se puede obtener al sustituir la funci6n de valor obtenida en cualquiera de las condiciones de optimalidad. La trayectoria de consumo se 
+24 
+encuentra al sustituir la funci6n que describe la trayectoria del capital en la restricci presupuestaria. 
+Ecuaci de Euler 
+Este método es menos general que el anterior y consiste en obtener las ecuaciones que determinan la dinámica del problema a partir de las condiciones de optimalidad. 
+La funci Lagrangiana para el problema que enfrenta el planificador social planteado en (P.3) es 
+Las condiciones de primer orden para este problema se obtienen al derivar~ con respecto a las variables a elegir en cada periodo c. y ki+1, las que resultan 
+U1 
+( Ce) -!e=O PAe+i [f'{ke) + (1 -6)] -Ae=O f'(ke) -ke•1 +ce=O 
+despejando~ de la primera de las condiciones, adelantando un periodo también la primera condici6n y sustituyendo ~y ~.1en la segunda condici6n se obtiene 
+que es la ecuaci6n de Euler del problema. Sustituyendo la 
+25 
+pu'(ct.1 ) -u'(et) =O 
+(E) 
+u'(ct) =Pu'[ct.11f'(kt.1 ) 
+restricci6n presupuestaria, las funciones de utilidad y de producci6n, en la ecuaci6n (E), se pueden ·encontrar las ecuaciones que determinan la dinámica de la econom1a. 
+La ecuaci6n de Euler también se puede encontrar a partir de las condiciones de primer orden y de la envolvente de la funci de valor. Recordando que Jc.+1=g(k), al sustituir la restricci presupuestaria en la condici del teorema de la envolvente y adelantarla 1 periodo se obtiene 
+v1(kt.1) =f1(kc.1) U1[f(k) -kc.11 
+v'(kt.1) =f'Ckc.1) U1 ( Ce) 
+que al sustituirla en la condici de primer orden de la funci de valor -la primera del sistema (V)-se obtiene la ecuaci (E). 
+Principio del Máximo 
+Un tercer método para la soluci de este tipo de problemas es el principi o del máximo llamado de Pontryagin, que es un resultado del cálculo variacional. El procedimiento es semejante al del método anterior. Se forma una funci llamada Hamiltoniana para la que se conocen las condiciones de opt~malidad en funci de las variables de estado, de control y de coestado. Las variables de control son aquellas que puede elegir libremente el agente que enfrenta el problema, las variables de estado son 
+26 
+aquellas que el agente decisor toma como dadas al hacer su elecci y las variables de coestado generalmente denotadas con la letra A son los multiplicadores de Lagrange de las restricciones. En el caso del problema que enfrenta el planeador social, la variable de control es c11 la variable de estado es Ki, debido a que la restricci presupuestaria, para un valor dado de la variable de control, determina la variable de estado en el siguiente periodo en este contexto se le conoce como ecuaci de estado. La funci Hamiltoniana es 
+
+para la que las condiciones de optimalidad son 
+
+lim Aeke....O 
+t•• 
+que al sustituir las funciones de utilidad y de producci en ellas y hacer los despejes necesarios se pueden encontrar las ecuaciones (S.1). 
+Tiempo continuo 
+Desde el punto de vista conceptual e intuitivo el 
+27 
+planteamiento del problema del planificador social en tiempo continuo y su interpretaci son iguales al caso de tiempo d i screto so que la forma de expresarlo simbicamente es algo d i ferente. La sumatoria se sustituye por una integral, el factor de descuento 13 por e·", y la restricci presupuestaria que ha sido escrita en forma de ecuaci en diferencias es sustituida por la ecuaci diferencial equivalente. Los métodos descritos se adaptan de manera semejante a como se reescribe el problema, pero desde el punto de vista conceptual no hay ninguna diferencia. 
+Estática comparada 
+Una caracter1stica importante del modelo de crecimiento neoclásico aqu1 resuelto es que puede representarse en un diagrama de fase. Esto permite hacer análisis de estática comparada y determinar la trayectoria de ajuste hacia el nuevo equilibrio debido a alteraciones en el ambiente econico que enfrentan los agentes, entre los que se encuentran la introducci de impuestos, choques tecnolicos, introducci del gobierno y efectos de cambio en sus pol1ticas de gasto, etc. Este diagrama también ilustra la trayectoria hacia el estado estacionario desde las condiciones iniciales. 
+Este diagrama de fase será representado en el plano 
+cartesiano de las variables endenas del modelo; el consumo y 
+el acervo de capital. El diagrama de fase se construye de la 
+siguiente manera: 
+i) Con la restricci presupuestaria de la econom1a se determina 
+28 
+la ecuaci6n que corresponde a ~.,-o, esto es, 
+por las propiedades que se supusieron de la tecnolog1a y la definici de la funci f(k), la ecuaci estará representada en el plano cartesiano una curva que inicialmente tiene una pendiente muy grande y positiva que decrece y en alg momento se vuelve negativa. 
+ii) con la ecuaci de Euler del problema de maximizaci se determina la ecuaci correspondiente a la curva Ac,.1-0 
+u'(Ce) =Pu'(ce.1) f 1 (ke.1> 
+Pf'(ke.1) =1 
+ke•1=f'-1(1/ P> =7é 
+que en el plano cartesiano se verá como una linea vertical. 
+En el diagrama siguiente se presenta este diagrama de fase y su trayectoria estable, donde se ilustran dos situaciones iniciales que convergen al equilibrio, una con un acervo de capital inicial menor al del estado estacionario y el otro caso a la inversa. 
+29 
+( 1 
+
+k
+k o k'O t•I 
+Soluci6n del Modelo de crecimiento Neocl6acio Batoc6atico. 
+La forma más simple de plantear el modelo de crecimiento neoclásico estocástico es: 
+rnax Et [l:;• ~íu (Ct+j)] 
+J •O 
+sujeto a: 
+
+Es el caso más sencillo porque supone separabilidad de la funcin de utilidad, la utilidad solo se deriva del consumo, etc. La soluci exacta a este problema solo se conoce en el caso de utilidad logarítmica y con factor de depreciaci de capital 
+30 
+&=l (Long y Plosser 1983). En consecuencia, para el resto de los 
+casos que se ha hecho hasta la fecha es solucionar numéricamente el problema, estableciendo como prueba de la bondad del algoritmo su convergencia a la soluci exacta cuando se fijan los valores de los parámetros en los valores que corresponden a la funci de utilidad logar1tmica y con factor de descuento igual a l. La funci de utilidad más estudiada en estos modelos es la de elasticidad de sustituci constante (ESC). Los métodos de soluci numérica que se encuentran en la literatura los podemos clasificar de acuerdo a la aproximaci o método de soluci que usan en las siguientes categor1as. 
+a) Aproximaci Lineal Cuadrática. 
+Es en esencia la soluci exacta para una forma aproximada del problema. Es uno de los métodos más usados en la literatura existente y descansa en aproximar las funciones de retorno y transici del problema original tomando aproximaciones de Taylor de segundo y primer orden alrededor del estado estacionario. Debido a que el mayor orden de las expansiones que se hacen es 2, se obtiene como soluci reglas de decisi lineales para las variables de control como funci de las variables de estado. 
+En forma vectorial la forma del problema aproximado para el modelo de crecimiento estocástico aqu1 tratado es: 
+31 
+-
+Max E0E pe (XéOXe+ufRue+2Xf Wue)(uJ;.0 t•O 
+sujetoa: 
+donde: 
+r{Xe,Ue) .-Es una funcion escalar (de utilidad). 
+Xe.-Vector de variables de estado. 
+ue.-Vector de variables de control. 
+ee•i • -Vector de variables aleatorias iid. La tecera y cuarta ecuaciones anteriores corresponden a las expansiones de Taylor de segundo orden de la funci de utilidad 
+y la expansi6n de Taylor de primer orden de la restricci presupuestaria de la economía respectivamente, ambas alrededor del estado estacionario. El estado estacionario se determina dando al vector E,+1 el valor de su media incondicional. 
+Las condiciones de optimalidad y las expansiones de Taylor, después de hacer el álgebra necesaria nos llevan a la ecuaci en diferencias de Riccati 
+donde la soluci  de la matriz P, permitirá encontrar la regla de decisi de las variables de estado como una funci lineal de las variables de estado. Para la soluci de la ecuaci de Riccati se han propuesto varios métodos numéricos entre los que 
+32 
+se encuentra el algoritmo de vaughan. 
+En principio las reglas de decisi6n lineales consecuencia de las aproximaciones cuadráticas pueden ser pobres aproximaciones a las verdaderas reglas de discisi6n no lineales. La calidad de la aproximaci6n dependerá de de la naturaleza de las funciones objetivo (de utilidad) de los agentes, el grado de no linealidad de las restricciones y las procesos estocásticos generadores de choques. 
+Para modelos de ciclos reales con una dinámica como la que presentan los modelos de Kydland y Prescott(l982) y de Hansen y Sargent(l988), la aproximaci6n cuadrática parece ser lo suficientemente exacta para la mayor1a de los prop6sitos. 
+La aproximaci cuadrática también supone que el modelo posee una soluci de estado estacionario para las variables de decisi6n. Este no seria el caso para las econom1as que crecen en ese estado estacionario. Para algunos casos éste problema puede ser evitado transformando las funciones objetivo y las restricciones de los agentes de manera que las variables de decisi posean un estado estacionario, tal es el caso de expresar las variables en unidades de eficiencia (veáse King y Plosser (1988)). 
+b) Métodos iterativos a partir de la ecuaci de Euler. 
+A diferencia del método anterior, estos método consisten en obtener una soluci6n aproximada del problema, tal y como es planteado, partiendo de las condiciones de optimalidad del problema como se obtienen del lagrangiano o en la forma de la ecuaci6n de Euler. Los métodos más frecuentes encontrados en la 
+33 
+literatura son: 
+b.1 Métodos iterativos a partir de la funci6n de valor como punto fijo. 
+La idea básica aqui es aproximar el problema de crecimiento constinuo con un problema de valores dicretos sobre una malla de puntos. En otras palabras los valores del cpaital y los choques son discretizados. Haciendo la malla más fina la soluci6n para la trayectoria del capital puede ser aproximada arbitrariamente cercana. Estas aproximaciones resultan resultan en un modelo de optimizaci6n dinámico que es resuelto iterando sobre la funci de valor. 
+b.2 Métodos de cuadratura en una malla de la funci de Valor. 
+Este método también discretiza el espacio de estados, pero es potencialmente más eficiente que una simple malla pues usa usa una malla que se construye en base a métodos de cuadratura para l os choques tecnolicos del modelo. El modelo discretizado es r esuelto haciendo iteraciones sobre la funci de valor. 
+b.3 Patr determinista extendido. 
+El enfoque tomado por la versi6n determinista del algoritmo del patr extendido es suponer previsi perfecta de la variables aleatorias futuras bajo el supuesto de que el choque es exactamente igual a su valor esperado en todos los periodos f uturos. Este método de soluci tiene una fuente adicional de error de aproximaci debido al supuesto de previsi perfecta. La magnitud del error cometido por este supuesto depende del grado de no linealidad del modelo que essta siendo resuelto. La verdadera ecuaci de Euler requiere la integraci de toda la funci  dentro del operador de esperanza matemática sobre la 
+34 
+funci6n de densidad de los choques futuros. El algoritmo del patr6n determinista extendido, por otro lado, toma escencialmente l a esperanza condicional de la funci6n dentro del signo de esperanza de l a ecuaci de Euler y resuelve la funci6n en el val or condicional esperado de los choque futuros. 
+b . 4 Parametrizaci6n de expectativas. 
+El estudio comparativo~de Taylor y Uhlig {1990), en el cual se pidi6 a i nvestigadores indeividuales aplicar diferentes técnicas de soluci6n al modelo tratado en esta secci, muestra que los patrones meustrales simulados por los diferentes métodos de soluci t i enen propiedades significativamente diferentes. Aunque hubo caracter1sticas comunes de las series de tiempo del comportamiento del consumo y la inversi para todos los métodos. Parametrizaci de Expectativas 
+La descripci de este método que se presenta es siguiendo a Den Haan y Marcet -(1990). Para la el modelo de crecimiento estocástico descrito, con una funci de utilidad del tipo CES sabemos que la ecuaci de Euler es: 
+Se usa la obseervaci de que la esperanza condicional del l ado derecho de la ecuaci anterior es una funci g: R+2 ~ R+ de l as variables de estado {Ki.1 , z,), como una base para sustituir l a esperanza condicional con la funci: 
+donde n, es un vector de parámetros que serán escogidos para 
+35 
+hacer r lo más cercano posible ag. 
+Estableciendo que r pertenezca a una clase de funciones que pueda aproximar cualquier funci arbitrariamente bien, uno puede en principio, aproximar g. Por ejemplo podr1a ser un polinomio; incrementando el orden del polinomio, podemos obtener cualquier precisi. Además, observando como cambia el equilibrio cuando se incrementa el orden del polinomio puede tenerse una idea de cuan cercano se esta de la funci g. 
+La primera elecci para es una funci de potencias: 
+r (kt-1' Zei Ot> =01z~1k~:1 
+Una raz para esta elecci es que su imagen es positiva, como lo es la imagen de la funci g que se desea aproximar. Hablando estrictamente la imagen de es positiva si y solo si 01 >O. Dado el procedimiento iterativo usado para econtrar n,, no está garantizada esta condici para todas las iteraciones. 
+Sea P0 (x) un polinomio de grado n del vector x, la funci de potencias anterior puede ser reescrita como exp(P1 (log Ki, z,)). Puesto que las funciones de la forma exp(P0 (x)) puede aproximar cualquier funci cuyo mapeo sea de R+2 a R+, y g una de dichas funciones, al permitir que n-x>, uno puede aproximar el equilibrio arbitrariamente bien. 
+Sean {C,(O) ,lci(O)} las secuencias de consumo y capital que 
+resuelven 
+36 
+y además satisface la restricci6n presupuestaria para todo t, para un n dado, y para una realizaci de z.. La ecuaci6n anterior es la ecuaci6n de Euler con r en lugar de la esperanza. Para una r y n dadas, encontrar e y k es fácil, puesto que tenemos dos ecuaciones y dos inc6gnitas en cada periodo; primero calulamos C, y con la restricci6n presupuestaria encontramos k.· 
+El vector n, es calculado con el siguiente procedimiento iterativo. Primero se genera la secuencia de valores z. para una muestra de tama T. Esta serie se genera s6lo una vez. Luego se elige un vector inicial nº y se calcula {C, enº) ,k. enº)}. Entonces se corre una regresi6n de m1nimos cuadrados no lineales de 
+sobre la funci6n de serie de potencias r. Ahora al vector n se le asigna el nuevo valor 
+A.E(0,1) 
+donde: 
+S(0ª-1) • -son los coeficientes obtenidos de la regresion de mínimos cuadrados no 1ineales. 
+37 
+Con el nuevo valor den se vuelve a calcular la secuencia de valores {C,(O) ,lci(O)}, se hace nuevamente un regresi6n con mínimos cuadrados no lineales y se calcula nuevamente el valor del vector n, hasta alcanzar el limite de tolerancia establecido. 
+Como ya se mecion6 una forma de verificar la exactitud de 
+las  soluciones  es  incrementar  el  grado  del  polinomio  de  la  
+exponencial.  Para  el  problema  aqu1  tratado,  el  polinomio  de  
+segundo orden será:  
+
+f(ke_1 ,Ze;O) = exp(01 +02 logke_1 +03zt+ 
+O,z:+05 logke_1z t +06 (logke_1} 2) 
+Resulta que los dos timos términos de la expresi6n anterior son casi perfectamente colineales con los otros. Más precisamente, la matriz 
+es muy cercana a ser singular debido a las derivadas con respecto a 05 y 06 • Esto significa que estos términos son redundantes y pueden ser eliminados de r sin pérdida de poder predictivo. 
+Bl Modelo de creciaiento Neocllaico como Equilibrio General 
+En esta secci se muestra que los problemas de planeaci como el tratado en la secci6n anterior, en las condiciones apropiadas, pueden ser interpretados como predicciones acerca del comportamiento de econom1as de mercado. El argumento está basado en la conexi clásica entre el equilibrio competitivo y el 
+38 
+timo de Pareto. Por simplicidad, la atenci se restringe al caso determinista y de horizonte finito, pero los resultados que se presentan se pueden generalizar. 
+Suponga que las familias poseen todos los factores de la producci y las dotaciones de factores están uniformemente distribuidas entre las familias. Cada periodo las familias venden el servicio de los factores a las empresas y compran los bienes producidos por las empresas, consumiendo una parte y acumulando el resto en forma de capital. Suponga que las empresas no poseen cosa alguna; simplemente contratan capital y trabajo sobre la base de un arrendamiento para producir bienes cada periodo, venden el producto a las familias y entregan cualquier beneficio resultante a los accionistas. Finalmente, suponga que todas las transacciones para todos los periodos tienen lugar en un s6lo mercado que se ree una sola vez en el periodo o, de manera que todos los precios y cantidades se determinan simultáneamente. Ning intercambio futuro es negociado después. Después de que este mercado ha sido cerrado en los periodos t = o, 1, ••• , T, los agentes simplemente entregan las cantidades de factores y bienes que se comprometieron a vender y reciben los que se comprometieron a comprar. 
+Sea Pt el precio de una unidad de producto entregada en el periodo t, para t= o, 1, ••. , T, expresado en unidades de cuenta abstractas. Sea Wi el precio de una unidad de trabajo entregada en el periodo t, expresado en unidades de bien del periodo, de manera que wt es el salario real. De manera similar sea r, el precio de renta real del capital en el periodo t. 
+Dados los precios { {p1, r 1, w1)}T1• 0, el problema que enfrenta la empresa representativa es elegir sus demandas de insumos y ofertas de producto { (ki, J\, y1) } T1• 0 que maximice la suma de los beneficios descontados. Esto es, su problema de decisi6n es 
+Max 11: =ET Pe [yt-rJce-Wt1Jel (E.1) 
+t•O 
+sujeto a: 
+t = O, 1, ... , T (E. 2) 
+Dada la misma sucesi6n de precios, la familia representativa debe elegir sus demandas por consumo e inversi6n, y sus ofertas de capital y trabajos { (c1, i 1, ~.,, lci, 1\)}T,.0 , dada su dotaci6n inicial de capital x0• En esta decisi6n enfrenta varias restricciones. La primera es que el valor total de los bienes adquiridos no puede ser mayor al valor total de los salarios mas el ingreso por renta de capital más los beneficios que la familia recibe. En segundo lugar, las tenencias de capital en el periodo t+l son iguales a sus posesiones en el periodo t, menos las depreciaci6n más la nueva inersi6n. Tercera, la cantidad de cada factor ofrecido por la familia en cada per1od debe ser no negativo y no puede exceder la cantidad que le es disponible en ese periodo. Finalmente, los acervos de capital y el consumo de capital deben ser no negativos. En consecuencia su problema de decisi6n es: 
+(E.3) 
+sujeto a: 
+40 
+T T 
+(E.4)
+~P1:Cc1:•i1:l s: ~P1:Crek1:•wen1:l +1t 
+t = O, 1, ... , T dado x0 (E.5) 
+t = O, 1, ... , T (E.6) 
+t = O, 1, ... , T (E.7) 
+Nese que la inversi bruta puede ser negativa. Este supuesto también fué hecho en la secci anterior. 
+Un equilibrio es un conjunto de precios { (p,, r,, w,)}T,.0, y una asignaci { (kd,, nd,, y,) } T,.0 para la empresa representativa y una asiganci de recursos para la familia representativa 
+a) 
+{(kd,, nd,, y1) }T1• 0 satisface las ecuaciones (E.1) y (E.2) a los precios establecidos. 
+
+b) 
+{(e,, i 11 Xi+u k't, n\)}T,.0 satisface las ecuaciones (E.3) a (E.7) a los precios establecidos. 
+
+e) 
+Todos los mercados se vac1an: kd, = k't, nd, = n•,, c, + i, = y,, para todo t. 
+
+
+Para encontrar el equilibrio competitivo, se plantean varias hipesis acerca de determinadas características que debe poseer. Más adelan~e se verifica que estas hipesis sean correctas. La primera es que puesto que las preferencias de la unidad familiar representativa son estrictamente mononas, se presume que los precios de los bienes son estrictamente positivos para cada 
+41 
+periodo: Pt>O. para todo t. También, puesto que ambos factores tienen productividades marginales estrictamente positivas, se presume que l os precios de los factores son estrictamente positivos para todos los períodos: rt>O y wt>O, para todo t. Fi nalmente, puesto que en equilibrio los mercados se vacian, sean ki = k6t= k't, J\ = n6t = n't, para todo t, las cantidades de capital y trabajo intercambiadas. 
+Consideremos ahora la empresa representativa. Si el precio de l os bienes es estrictamente positivo en cada periodo, entonces la empresa ofrecerá en el mercado todo lo que produce en cada período. Esto es, la restricci (E.2) se satisface con igualdad para todo t. También debe notarse que puesto que la empresa simplemente renta capital y contrata trabajo para cada periodo, su problema es equivalente a serie de problemas de maximizaci6n de un s6lo perí odo. Por tanto sus demandas de insumos resuelven 
+t = O, 1, ... , T. 
+(E.8) 
+Por lo tanto los precios (reales) de los factores deben ser i guales a sus productos marginales: 
+t = O, 1, ... , T; (E.9) 
+t = O, 1, ... , T. (E.10) 
+Considérese ahora la unidad familiar representativa. Puesto que los factores disponibles no disminuyen la utilidad de la f amilia, en cada período ofrece la cantidad total de factores de que dispone, esto es, ki =~,para todo t. Usando estos hechos y 
+42 
+sustituyenod (E.5) en (E.4), podemos escribir el problema de la unidad familiar como: 
+(E.11) 
+sujeto a: 
+T 
+~ Pe[ce•ke+i-(re+l-6)ke-we1 ~O (E.12) ~ 
+t = O, 1, ... , T. (E.13) 
+Puesto que el lilllc-~ U'(c) • ~ la condici de no negatividad sobre c, en la ecuaci (E.13) es no restrictiva. 
+Entonces las condiciones de primer orden para la unidad familiar representativa son: 
+(E.14) 
+(E.15) 
+que se satisface con igualdad si k.+ 1>0, t = o, 1, ••• , T. A es el 
+multiplicador de Lagrange asociado a la restricci 
+presupuestaria (E.12). En consecuencia un equilibrio competitivo está caracterizado por una sucesi de precios y cantidades 
+43 
+para todos los bienes y factores, tales que la sucesi 
+{ (Jli=l, k\) }Tt•o satisface la ecuaci (E. 8) a los precios dados y { (ccu kc1+1) }Tt•O satisface las ecuaciones (E.11) a (E.13) a los precios dados, ko = Xo, y además 
+para todo t. (E.16) 
+Ahora que ya ha sido definido y parcialmente caracterizado el equilibrio competitivo de la econom1a de la secci anterior, se analizarán las relaciones que hay entre las asiganciones de equilibrio y las timas. Primero, note que si la sucesi 
+{ ( ce,, ket+t)}Tt•O es una soluci para el problema de planeaci6n presentado en la secci anterior. Para probar esto solo es necesario mostrar que { (ce,, k\+1)}T,..0 es Pareto tima. Supongamos lo contrario, hay una sucesi { (c',, k',+1) }\. 0 que es una asignaci de recursos factible y que {c'.} proporciona una mayor utilidad en la funci objetivo (E.11). Entonces esta no satisface la ecuaci (E.12) o la unidad familiar la habria elegido. Pero si no se cumple (E.12), entonces la ecuaci (E.16) implica que 
+T 
+x' = ~ Pc•[F(k:, l) -rtk:-wc•1 > x• 
+~ 
+contradiciendo la hipesis de que { (Jli =1, ket) }Tt-o era una elecci de insumos maximizadora de beneficios. Este resultado es una versi del primer teorema del bienestar. 
+De manera inversa suponga que { ( c*" k*1+1) } T,.0 es una 
+44 
+soluci del problema del planeador social descrito anteriormente. Entonces { (k*,.1) } T1• 0 es la unica sucesi que sati sface l as condiciones de primer orden y de frontera 
+(E.17) y 
+(E.18) 
+donde la funci f(k)=F(k,1)+(1-&)k está definida de igual forma que en la secci anterior. Para construir un equilibrio competitivo con estas cantidades deben encontrarse precios de soporte { ( p •1, Para hacer esto, observe que las ecuaciones (E.9) y (E.15) sugieren que los precios de los bienes deben satisfacer 
+Pe• = con Po arbitrario (E.19) 
+Por otro lado las ecuaciones (E.9) y (E.10) implican que los salarios reales y las rentas (del capital) deben satisfacer 
+t = 1, 2, , , , , T; (E. 21) 
+t = 1, 2, ... , T (E.22) 
+Estos precios junto con las cantidades de la ecuaciones 
+(E.17) a (E.19), constituyen un equilibrio competitivo. Basta sustituir la definici de la funci f(k) en la ecuaci (E.22) para comprobar que se satisfacen las condiciones de optimalidad 
+45 
+del equilibrio c ompetitivo y sus restricciones presupuestales. Este resultado es una versi del segundo teorema del bienestar. 
+Las relac iones recién mostradas entre el equilibrio competitivo y las asignaciones timas de Pareto, son usadas constantemente para caracterizar el equilibrio en las economías de mercado. El problema de planeaci se resuelve, no con el propito normativo de prescribir cantidades, sino con el propito positivo de pronosticar los resultados de mercado para unas preferencias y tecnología dadas. Debe tenerse presente que esta equivalencia so es válida cuando son aplicables los dos teoremas fundamentales del bienestar, los que no se cumplen en presencia de externalidades, impuestos distorsionarios, rendimientos crecientes a escala, etc. 
+46 
+CAPITULO ID 
+consideraciones Econométricas y No Bconométricas 
+La forma tradicional de estimar y probar un modelo econico es plantear un conjunto de ecuaciones estructurales, estimar los parámetros y probar cualquiera de las restricciones no necesarias para identificar los parámetros. 
+Una estrategia alternativa, que ha sido muy seguida en la literatura de los modelos de ciclos reales y hecha popular en esta literatura por Kydland y Prescott (1982) (pero más ampliamente empleada en la literatura de equilibrio general apli cado como Ballard, Shoven y Whalley (1985)), es la llamada "calibraci". La estrategia consiste en elegir valores para ci ertos parámetros clave de la preferencias y tecnolog1a usando evidencia de otros estudios emp1ricos. Esto .restringe el nero de par6metros libres en el modelo. Usando éstos parámetros, las propiedades estocásticas de ciertas variables, como medias, varianzas, autocorrelaciones y correlaciones cruzadas, son construidas. Los parámetros libres restantes son elegidos para obtener, lo más cercano posible, una correspondencia entre los momentos derivados del modelo y los observados en los datos. 
+Para algunos de los modelos calibrados, en particular los más s i mples, no hay impedimento alguno para el uso de econometr1a estándar, sin embargo los métodos de calibraci están muy di fundidos. Ei chembaum, Hansen y Singleton (1988) estudian modelos de ciclos econicos, desde esta perspectiva. 
+En este punto surge la siguiente pregunta: ¿Porqué el empleo 
+tan difundido de los métodos de calibraci, si parece razonable 
+47 
+esperar que con métodos econométricos convencionales se pueden estimar los parámetros del modelo? El empleo de métodos de estimaci6n econométricos consistentes con los modelos de ciclos reales, tales como la estimaci6n de ecuaciones simultáneas, por un lado está limitado por la falta de soluciones anal1ticas de los modelos, y por otro, requiere de una enorme cantidad de trabajo, que para los fines de estimaci, es muy probable que su ica aportaci6n sea que esa técnica no permite obtener toda la i nformaci6n requerida y debe buscarse otro camino de estimaci6n o que la técnica desarrollada so sea il para unos cuantos casos particulares. Adicionalmente, debido al tipo de especificaci que usualmente se encuentra en los modelos de este tipo, cuando los métodos convenciales de econometr1a se muestran potencialmente aplicables no es claro que pueda haber alguna ventaja por su empleo. Algunas de las razones que conducen a esta 
+respuesta las encontramos en las reflexiones siguientes: 
+Los parámetros a estimar en los modelos de ciclos reales pertenecen a la clase de los llamados "profundos", por esta raz, en la mayor1a de los casos las relaciones econométricas derivadas del modelos deben ser planteadas en forma estructural. Para plantear un conjunto de ecuaciones estructurales es necesario conocer las relaciones funcionales entre las variables que intervienen en el modelo, para este efecto lo más conveniente es conocer la soluci del modelo. A la fecha no se conoce la soluci analí tica de la gran mayor1a de modelos de ciclos reales. 
+Las relaciones funcionales citadas para construir el sistema 
+estructural podrían ser sustituidas por relaciones derivadas de 
+48 
+las condiciones de primer orden o de la ecuaci6n de Euler del problema, estrategia seguida en algunos de los trabajos que han explorado la estimaci de modelos de ciclos reales usando las técnicas econométricas convencionales. A en este caso quedan por salvar otros problemas propios de la estimaci6n, el primero de ellos es el problema de identificaci. De acuerdo con la estructura de los modelos de ciclos reales todas las variables del modelo son end6genas y por otro lado todas las relaciones derivadas de la ecuaci de Euler contienen valores rezagados de las variables, alterándose de esta manera las propiedades de los estimadores de M1nimos Cuadrados Ordinarios, si son empleados. En general, esta estrategia de estimaci no puede ser empleada para modelos que contienen más de un choque estocástico no observable. 
+Sobresale también que es casi norma que los choques estocásticos propios de esta clase de modelos posean correlaci6n serial, que no necesariamente es la misma para todos los choques, lo que cambiará significativamente las propiedades de los estimadores usuales o hará necesario introducir una nueva forma de estimaci, lo cual resultar1a en que para casi cualquier nuevo modelo se tuvier que hacer un estudio paralelo para determinar los estimadores a usar y sus propiedades. 
+La forma en que los choques estocásticos no observables 
+están incluidos en los modelos de ciclos reales como el propuesto 
+por Kydland y Prescott hace imposible el empleo de téc~icas más 
+sofisticadas de medici tales como el filtro de Kalman, pasando 
+por alto que en la estimaci se trabajaría con otra estimaci6n 
+que indudablemente inducir1a un sesgo en los estimadores que se emplearan. 
+A cuando se estuviera en la mejor de las situaciones surge la interrogante ¿El nero de datos con que se cuenta es suficiente para que las estimaciones de los parámetros sean confiables? El nero de observaciones confiables al afio para la variables empleadas en la estimaci6n de modelos de ciclos reales es, a lo sumo, cuatro. Un modelo tan simplificado como los que se tratan en este trabajo requiere de la estimaci6n de parámetros y si se dipusiera de la informaci6n de 10 afios se tendr1an 40 observaciones que no representan una garant1a de las estimaciones que se obtengan. Considérese el caso de un modelo con un mayor nero de parámetros que no podrá hacer uso de mayor informaci6n. 
+otra opci6n para la estimaci6n de modelos de ciclos reales es el método generalizado de momentos, pero también está sumamente limitado para la mayor1a de los casos en que no se conoce la soluci6n anal1tica del problema. Por ejemplo, no es aplicable cuando hay más de un choque estocástico no observable y estos no conducen s6lo a términos de error aditivos. Es preciso notar que, además de ser un método más complicado que la calibraci6n, la forma de incorporar informaci6n adicional es más complicada que en la calibraci6n. 
+En estas condiciones la calibraci6n se erige como un método 
+de estimaci6n con un mayor campo de aplicaci6n, fácil de 
+i mplementar y que permite de manera sencilla incorporar 
+informaci6n adicional a la contenida en los datos. tste timo 
+rasgo distintivo es de particular interés desde el punto de vista 
+práctico, pues en general, es dificil hacerlo de manera directa. 
+50 
+Para ilustrar el empleo de la informaci6n de otros estudios en el método de calibraci6n, consideremos el trabajo de Plosser (1989) . En lo particular, este autor eligiuna funci de utilidad del tipo logar1tmica y como funci de producci del tipo Cobb-Douglas con dos insumos: capital y trabajo. Los datos por él usados fueron, como producto el producto real no agr1cola per cápita, como proxy del empleo la fracci per cápita de la semana destinada al trabajo por los empleados no gubernamentales, para representar la inversi tomla suma de la inversi fija no residencial y el consumo de bienes durables y el salario es la ganancia promedio por hora de todos los trabajadores de la producci. 
+La participaci del trabajo en el producto, es calculada como la raz promedio del total de compensaciones a los empleados al producto nacional bruto para el periodo 1948-1985, para la funci6n de producci considerada esto implica que el exponente del trabajo es a=O. 58. La depreciaci (&=O .1) es supuesta a ser el 10% por afio. El factor de descuento de la utilidad {8=0. 95) es elegido para proporcionar un retorno al capital de 6.5% por afio, que es el retorno real promedio de las acciones para el periodo 1948-1981. Finalmente, el coeficiente del logaritmo del nero de horas dedicadas al ocio es elegido indirectamente de manera que la proporci6n de horas dedicadas al trabajo en el estado estacionario sea de 0.2 que está basado en l a fracci promedio de horas dedicadas al mercado de trabajo en el periodo 1948-1985. 
+Si las preferencias y las tecnolog1as son semejantes a las usadas en estudios emp1ricos, se facilita la revisi en cuanto 
+51 
+a lo razonables que pueden ser muchos valores de los parámetros. Asimismo, se facilita la selecci de valores de los parámetros para los cuales el estado estacionario del modelo está cerca de los valores promedio de la econom1a. Estas dos consideraciones reducen dramáticamente el nero de parámetros libres que serán variados cuando se busca un conjunto que resulte en convarianzas cercanas a las observadas. En la explicaci de Kydland y 
+Prescott  (1982)  de  las  componentes  c1clicas  hay  s6lo  siete  
+parámetros  libres,  con  el  rango  de  dos  de  ellos  estando  
+severamente restringido.  
+
+Una limitaci potencial al empleo de datos obtenidos de estudios microecon6micos es que frecuentemente los modelos microeconicos y los macroecon6micos son sumamente diferentes tanto en la dinámica y las formas de heterogeneidad entre los agentes supuesta. Además de esto tanto en estudios micro y macroeconicos los parámetros algunas veces son estimados de manera imprecisa. 
+La Calibraci6n como Bstimaci6n 
+El enfoque de "calibraci" para la estimaci propuesto por Kydland y Prescott (1982) y Prescott (1986) puede ser reinterpretado, desde el punto de vista econométrico, como un estimador del tipo de método de momentos basado en ciertas condiciones de momentos seleccionadas a priori. Una i nterpretaci6n alternativa de la calibraci6n es que es una prueba del modelo. Si no hay parámetros libres ( y más generalmente si hay más momentos que parámetros), entonces la comparaci6n de los 
+52 
+momentos poblacionales del modelo con aquellos de las series de tiempo histicas puede ser pensado como una prueba, muy semejante a las pruebas de restricciones de sobreidentificaci adoptadas con estimaci del método generalizado de momentos•. Vale la pena mencionar que la calibraci y el método generalizado de momentos fueron introducidos a la macroeconom1a al mismo tiempo y en la misma publicaci: Econometrica 1982.2 
+El método de calibraci consiste en tres etapas. En la primera los datos son suavizados con un filtro arbitrario. Segundo un conjunto de parámetros es seleccionado en relaci a evidencia microeconica o valores de largo plazo -de las series econicas. Por ejemplo, Long y Plosser (1983) encuentran valores para los parámetros de su modelo usando estudios de insumo­producto. 
+El tercer paso en el método de calibraci es la selecci de los parámetros. Estos son elegidos para hacer que ciertas propiedades del modelo o sus simulaciones se ajusten a aquellas de series de tiempo histicas de variables agregadas. 
+En la metodologia de Kydland y Precott (1982), se selecciona el elemento de la malla que minimiza un cierta funci6n de pérdida, como las siguientes: 
+1Una descripci del método generalizado de momentos se 
+encuentra  en  Greene,  w.  H.,  Econometric  Analysis,  New  York,  
+Macmillan 1990.  
+2Gregory,  Allan w. y  Smith,  Gregor w.  (1990)  
+
+53 
+iv = argmin ( Dv(ci) = IVar(p{) -Var(pnc(ci)) 1} (V) 
+c€A 
+im = argmin { Dm(ci) = E[pf-p;(ci)) )2} (M) 
+c€A 
+El criterio (V) ajusta las varianzas de las dos series; la histica Pt y la de las series de calibraci6n Pac, el criterio 
+(C) ajusta las autocovarianzas y el criterio (M) minimiza la media del cuadrado de la diferencia entre las dos series. Además de los tres criterios anteriores, pueden ajustarse las autocorrelaciones de las series o cuando se toma más de una serie datos observados pueden usarse las covarianzas cruzadas entre las diferentes series. Nese también que el criterio (M) es tal vez el menos representativo de los estudios de calibraci bien conocidos. 
+Los estimadores basados en (V) y en (C) son consistentes si a los parámetros no libres de la calibraci se les asigna su verdadero valor o son estimados consistentemente. Los estimadores basados en el criterio (M) son inconsistentes puesto que ellos están basados en un ajuste puntual más que en el método de momentos, estos estimadores ilustran un riesgo potencial en la calibraci. 
+En el estudio de Monte carlo realizado por Gregory y smith (1990) para un modelo de crecimiento estocástico encontraron que los estimadores de acuerdo al criterio (V) dan excelentes resultados cuando a los parámetros no libres de la calibraci le son asignados sus valores verdaderos. La peor calibraci 
+54 
+obtenida por ellos es el resultante de emplear el criterio (M). Su evidencia del estudio de Monte carlo sugiere qye el método generalizado de momentos son los más confiables y convergen rápidamente al valor verdadero de los parámetros. A pesar de esta observaci, hay modelos dinámicos de equilibrio para los cuales la estimaci con el método generalizado de momentos no es práctico o exige una gran capacidad de c6mputo. En los casos en que no es factible usar el método generalizado de momentos los autores sugieren que se ca lculen las expresiones anal1ticas para los momentos para determinar que parámetros parecen más sensibles 
+la elecci6n del momento de calibraci6n. cuando la soluci anal1tica no pueda ser encontrada ellos recomiendan que el modelo sea simulado muchas veces para alcanzar la convergencia. 
+McFadden (1989) y Pakes y Pollard (1989) prueban la consistencia y la normalidad asint6tica de estimadores del método de momentos construidos empleando momentos muestrales generados por método de Monte Carlo. Duffie y Singleton (1988) y Bossaerts {1989a, 1989b) extendieron el método de momentos simulados a un ambiente de fijaci de precios de activos. Estos estimadores son relativamente ineficientes comparados en el caso en el que los momentos de la poblaci6n pueden ser calculados anal1ticamente; la ineficiencia relativa se desvanece conforme el tama de la muestra de simulaci6n N se incrementa relativa a tama de muestra de los datos T. Eichembaum y Hansen (1990) muestran la aplicaci6n del método generalizado de momentos a la estimaci de modelos con sustituci6n intertemporal con funciones de utilidad no separables 
+Los estimadores de simulaci6n (incluidos aquellos usados en 
+la calibraci) serán menos eficientes (para N finito) que los estimadores comparables del método de momentos que usan los datos reales. Pero los errores de medici en los datos pueden dar a la variable de estado un elemento de no observabilidad que hace interesante la comparaci entre estrategias de comparaci. 
+Los estimadores también pueden ser distinguidos por sus diferentes demandas de informaci; la calibraci requiere una completa parametrizaci del modelo e involucra el preestablecimiento de ciertos parámetros. Los estimadores de calibraci de ffl están condicionados a los valores asignados a ff2 y ff3, mientras el método de momentos no restringido no requiere del conocimiento de estos parámetros. Es claro que las propiedades de los estimadores de los parámetros libres en la calibraci dependerán de la exactitud con la cual los otros parámetros son establecidos. La ica raz por la que la calibraci puede ser más eficiente que el método generalizado de momentos convencional es su uso de informaci adicional en 
+la forma de parámetros preestablecidos. 
+Singleton(l988) describe un procedimiento formal para estimar y probar que toma en cuenta el error de estimaci en la evaluaci de ciclos reales. 
+Una distinci más sutil entre los estimadores del método 
+generalizado de momentos es en relaci a su replicabilidad. Note 
+que dos calibradores con las mismas series de datos histicos, 
+usando modelos y momentos idénticos, y adoptando funciones de 
+pérdida idénticas, en principio, podrian llegar a estimaciones 
+enteramente diferentes. Puesto que para las estimaciones de 
+calibraci no se conocen sus errores estándar (aunque en 
+principio podrían encontrarse por replicaci6n) sino que son en si mismas realizaciones de variables aleatorias, no es inmediatamente claro cuanta confianza debe dársele a una estimaci a cuando el modelo fuera cierto. En contraste, las estimaciones aplicando el método generalizado de momentos son icas, sujetas a algunas condiciones de identificaci6n,para un conjunto dado de datos y tienen una teor1a asintotica bien desarrollada, aunque muchos aspectos en muestras de tamaf'lo finito están sin resolver. 
+Adicionalmente debe considerarse que los estudios de calibraci6n t1picamente reportan momentos simulados y momentos observados. Pero ajustes cercanos de momentos puede no ser una evidencia fuerte en favor del modelo. Los calibradores deben proporcionar evidencia de la sensibilidad de los momentos en la econom1a artificial a planteamientos diferentes del modelo. 
+Finalmente, está pendiente a por resolver si se deben emplear los momentos condicionales o los incondicionales de las series para la calibraci, éstos timos, expresados por ejemplo, en el contexto de un vector autoregresivo. Ha sido com el empleo de los momentos incondicionales para realizar la calibraci6n, de manera, que como era posible esperar autores como watson (1993) y Rotemberg y Woodford (1994), encontraron que al menos para algunas de las variantes de los modelos de ciclos reales más aceptadas los resultados de la calibraci6n no eran consistentes con los cambios predecibles en las series de tiempo observadas de las variables agregadas. 
+57 
+CAPITULO IV 
+MODELO PROPUESTO PARA MBXICO 
+Para la economía mexicana se proponen y calibran dos modelos simples de ciclos reales. Ambos ignoran los distrosiones, las imperfecciones de mercado, la heterogeneidad de los agentes productivos y al gobierno. El primero de ellos (Modelo 1), es una versi ligeramente simplificada del presentado por Plosser 
+(1989). Sin embargo, a diferencia de este autor, la funci6n de utilidad que se emplea es del tipo de elasticidad de sustituci6n constante (ESC), que es un caso más general y que incluye como caso particular la funci de utilidad logarítmica por él empleada. El segundo (Modelo 2) es un modelo con tiempo para construir. Es semejante, pero simplificado, al propuesto por Kydland y Prescott (1982) • Este planteamiento es análogo al hecho por Quiroz et al. (1991) para las economías de Bolivia, Chile y Per con un método de soluci6n para el problema estocástico diferente al empleado en los trabajos aquí citados. 
+
+Bspecificaci6n Te6rica 
+Modelo 1 
+Siguiendo la estrategia usual en el planteamiento de los modelos de ciclos reales, a una economía como la descrita en el Capitulo II se le asignan en forma explicita formas funcionales que representen las preferencias, la tecnología y el entorno econico. En particular, esta economía tiene las siguientes 
+caracteristicas: 
+a) 
+Hay un solo bien Y que es producido con dos insumos: capital y trabajo. 
+
+b) 
+Hay muchos productores con la misma tecnolog1a. 
+
+c) 
+Hay muchos consumidores con la misma funci de bienestar. 
+
+d) 
+La utilidad de los individuos solo depende del consumo y, además, tiene la propiedad de separabilidad1, esto es, la utilidad es igual a la suma descontada de las utilidades derivadas de los consumos en los diferentes instantes (periodos) de tiempo. 
+
+e) 
+La econom1a está sujeta choques aleatorios multiplicativos transitorios a la productividad. 
+
+f) 
+Los agentes en cada periodo conocen la productividad de los factores y por tanto el choque presente. Sin embargo desconocen los choques de productividad para los siguientes periodos. 
+
+
+En el caso discreto, esta econom1a es descrita por las siguientes ecuaciones: 
+
+(4 .1) 
+
+(4.2) 
+1Eichembaum y Hanaen (1990a) hacen una critica al supuesto de separabilidad de la funci6n de utilidad. Sin embargo este aupueato •• harA por lo simplificador que resulta. 
+59 
+
+(4.3) (4.4) 
+-
+(4. 5) 
+donde: e;.-Es el consumo del periodo t. I,.-Es la inversi del periodo t. ~.-Nero de horas destinadas a la producci en el periodo t. 1<i.-Acervo de capital en el periodo t. -Es la tasa de depreciaci por periodo del capital. Y,.-Es el producto del periodo t. F(Ki,~).-Es la funci de producci que representa la tecnologia con la que cuentan los productores; cumple, al igual que la funci de utilidad, las condiciones de regularidad de Imada. ett.-Es el choque aleatorio de productividad en el periodo t. 
+Debido a que el trabajo no reduce la utilidad e incrementa el producto, tendremos una oferta de trabajo totalmente inelástica e igual a su valor máximo, lo que permite eliminar al trabajo como argumento de la funci de producci. 
+Como puede observarse, es un caso sumamente sencillo, porque supone separabilidad de la funci de utilidad, porque la utilidad solo se deriva del consumo, porque los choques aleatorios solo son sobre la productividad, etc. Sin embargo, puede proporcionar informaci e intuici sumamente il para la comprensi del comportamiento de los agentes econicos y del 
+60 
+movimiento de las variables macroecon6micas. 
+como ya se mencion6 anteriormente, para una economía sin distorsiones, imperfecciones de mercado y agentes homogéneos, el equilibrio competitivo puede describirse a través de las asignaciones timas en el sentido de Pareto. Estas, a su vez, pueden ser encontradas solucionando el problema de planificador social. El problema de maximizaci6n que enfrenta el planificador social queda de la siguiente manera: 
+• 
+(4. ,, 
+sujeto a: 
+
+
+(4.7) 
+La ecuaci6n de Euler correpondiente a este problema, cuya deducci se presenta en forma detallada en el apéndice I, es la siguiente: 
+
+(4.8) 
+En el presente trabajo se propone que la funci de utilidad es del tipo de elasticidad de sustituci constante, 
+e 1-i 
+U(C) =-t-(4. 9) 
+t 1-'t' 
+Por otro lado se propone que la funci6n de producci6n de la economía sea del tipo Cobb Douglas 
+
+(4.10) 
+que junto con la restricci presupuestaria de la econom1a, permite calcular la trayectoria tima del consumo y el capital para esta econom1a. 
+Además, se supone que los choques a la productividad siguen un proceso autorregresivo de orden l (ARl). 
+~t -N(O,o2) (4.11) Este supuesto se hace por dos razones: la primera es que en la literatura los mejores resultados se han obtenido haciéndolo y la segunda es que es un proceso de tipo Markov, por lo cual posee la propiedad de que toda la informaci del mismo está contenida en la tima observaci. Esta propiedad es benéfica para el método de soluci al problema estocástico aqu1 usado. 
+Modelo 2 
+Se trata de un modelo con tiempo para construir del tipo propuesto por Kydland y Prescott (1982). Estos autores selan que la estructura neoclásica -como la del Modelo 1-es i nconsistente con la asociaci6n positiva entre el precio sombra 
+del  capital  y  la  actividad  inversionista.  As1  como  que  la  
+tecnolog1a  de  costo  de  ajuste  si  es  consistente  con  la  
+observaci  citada,  pero  es  inconsistente  con  los  datos  de  
+secci transversal y  la asociaci entre la inversi y  con los  
+
+precios sombra del capital actuales, as1 como con sus rezagos. Además, la implicaci de que las elasticidades oferta de corto y largo plazo son iguales es una de las que consideramos que la tecnolog1a no debe tener. Lo más destructivo de la tecnolog1a con 
+62 
+costo de ajuste, sin embargo, es el hallazgo de que el tiempo para completar los proyectos de inversi6n no es corto en relaci6n a l os ciclos econ6micos. Mayer (1960) en base a una encuesta, encontrque el tiempo promedio entre la toma de decisi6n de llevar a cabo un proyecto de inversi6n y su terminaci6n era de 21 meses2• Dicen los mismos autores que no encontraron evidencia de que los bienes de capital sean construidos significativamente más rápido cuando la inversi total es más alta más baja. 
+Con estas consideraciones y partiendo del hecho de que las fábricas no se construyen en un dia, plantean la hipesis de que el supuesto de periodos mtiples para construir ea crucial para explicar la fluctuaciones agregadas. En particular, proponen un modelo en el cual la inversi6n tarda cuatro periodos en madurar 
+(1 a), con un distribuci uniforme a lo largo de los cuatro periodos del costo de la inversi6n. 
+Siguiendo esta linea de razonamiento, el segundo modelo que se propone para explicar las fluctuaciones ciclicas de la economia mexicana, es el que corresponde a una economia sin distorsiones, imperfecciones de mercado ni agentes heterogeneos, con las mismas propiedades del Modelo 1, descrito lineas arriba, que incluye una restricci-compromiso de cuatro peridos para la maduraci de la inversi. 
+De igual forma que en el modelo anterior, para encontrar las 
+asignaciones correspondientes al equilibrio competitivo, se 
+resolverá el problema del planificador social. 
+Es pertinente aqu1 selar que desde el punto de vista 
+puramente matemático la introducci del tiempo para construir 
+
+63 
+tiene como consecuencia que la ecuaci en diferencias estocástica asociada a la soluci6n del problema de maximizaci6n pase, de ser de primer orden, a ser de cuarto orden. 
+El problema de maximizaci a resolver por el planificador central en este caso es: 
+• 
+Max Ee Cl: píu(ce•J)] (4.12) 
+J•O 
+sujeto a: 
+(4.13) 
+
+(4.14) 
+(4 .15) 
+j=l,2,3,4. ( 4 .1,) 
+En el apéndice I se presenta de manera detallada la deducci6n de la ecuaci6n de Euler para este problema: 
+u'(Ct ) =.1_Ee{(q,,µ-q,3) U'(Ct+1> +p (cp3µ-q,2) U'(Ce+2>
+q,, 
+
+(4.17) 
++IP(cp211-cp1) U1 (Ct+3> +P3U1 (Ce.,> [f1 (ke.,> +q,1µ]} 
+Con objeto de hacer transparente la comparaci6n de ambos modelos y determinar si la introducci6n de la restricci6n del tiempo mejora los resultados para el Modelo 2 se, supondrán las mismas funciones de utilidad, de producci6n y el mismo proceso 
+64 
+generador de los choques estocásticos a la productividad que en el Modelo l. Sustituyendo las formas funcionales mencionadas en 
+la ecuaci de Euler, se obtiene 
+c;T=J!..Ee{ (cp,µ-cp3) c;!1+p (cp3µ-cp2) c;!2+P2(cp2µ-cp1) c;:3 cp, (4.18) 
++p3 c;:, [f'(ke.,) +cp1µH 
+Al igual que Kydland y Prescott (1982) y Quiroz et al. (1991) se supondrá que el costo total de la inversi6n está distribuido uniformemente a lo largo del periodo de construcci. 
+Soluci Numérica 
+Puesto que para los problemas como los planteados en este capitulo no se conoce la soluci analitica, se hace necesario emplear alguno de los métodos de soluci numérica que se encuentran en la literatura, los cuales se describen en el capitulo II. A diferencia de los autores referidos en el presente capitulo, quienes emplean como método de soluci6n la aproximaci lineal cuadrática, se emplea el método de parametrizaci de expectativas. La raz de esta elecci es que el segundo método es la soluci6n aproximada al problema planteado, partiendo de las condiciones de optimalidad, en tanto que el primer método es la soluci6n exacta a un problema aproximado al planteado. Sin embargo, recordando los resultados del estudio comparativo de Taylor y Uhlig (1990), no puede esperarse que los resultados sean significativamente diferentes empleando un método de soluci o 
+el otro. 
+Modelo 1 
+De acuerdo con lo expuesto en el Capitulo II para el método de parametrizaci6n de expectativas, se propone que la esperanza del lado derecho de la ecuaci6n de Euler 
+
+(4.19) 
+sea una funci6n positiva de las variables de estado de la forma 
+
+(4.20) 
+el algoritmo seguido para la soluci6n de este modelo es el siguiente: 
+a)Se asignan valores a los parámetros del modelo. 
+b) 
+Se especifica un criterio de convergencia para los coeficientes b¡ i=0, ••• ,3 as1 como valores iniciales de los mismos. 
+
+c) 
+Se asignan valores iniciales; al capital un valor semejante al del estado estacionario de la econom1a no estocástica y al choque productivo el valor de cero. 
+
+d) 
+Se genera una serie de choques productivos de acuerdo con el proceso generador propuesto. 
+
+e) 
+Para cada uno de los periodos siguientes: 
+
+
+e.l) Se eval la ecuaci (4.20). 
+e.2) Sustituyendo en la ecuaci de Euler el resultado anterior 
+66 
+se calcula el valor del consumo para ese periodo. 
+e.3) Empleando la restricci6n presupuestaria de la econom1a y el consumo calculado en el paso anterior se determina cual será el acervo de capital para el siguiente periodo. 
+f) 
+Empleando mínimos cuadrados no lineales se estiman los valores de los coeficientes b¡ para i•0, ••• ,3 usando como variable dependiente el lado izquierdo de la ecuaci6n (4.20) sustituyendo los valores de las variables por los valores de la soluci6n obtenido hasta ese momento. 
+
+g) 
+Se observa la diferencia entre los coeficientes obtenidos en la tima regresi6n no lineal, si es menor al valor establecido como criterio de convergencia preestablecido se estiman los momentos de interés y se reportan los resultados. De no ser as1, se asignan nuevos valores a los coeficientes de la ecuaci6n 
+
+
+{4. 20), como una combinaci6n lineal de los valores actuales y los obtenidos de la tima regresi6n. 
+Modelo 2 
+Para este modelo, como el nwnero de variables de estado aumenta por la introducci6n de la restricci6n de tiempo de maduraci6n de la inversi6n, el lado derecho de la ecuaci6n de Euler se aproxima de la siguiente manera: 
+(4.21) 
+que es el análogo de la ecuaci (4.20), usada para la estimaci6n 
+67 
+del Modelo l. El algoritmo de soluci6n es exactamente el mismo que el empleado para el Modelo 1, so que ahora el nero de coeficientes para la aproximaci6n de la expectativa a estimar es mayor y las expresiones algebraicas para la ecuaci de Euler, as1 como para la restricci6n presupuestaria, tienen un mayor nero de términos. 
+Calibraci6n 
+Para la estimaci6n de los parámetros a fJ & p a y f' contenidos en los modelos aqu1 propuestos se seguirá el enfoque de calibraci descrito en el capitulo III. Es claro que para llevar a cabo l a calibraci de un modelo deben especificarse los momentos de las series observadas que se tratan de replicar, as1 como el criterio de selecci6n de los parámetros. De manera análoga a lo hecho por Quiroz et al. (1991) para ambos modelos se tratan de replicar los siguientes momentos de las series observadas: 
+a) 
+Desviaci estándar del logaritmo producto Y. 
+
+b) 
+Desviaci estándar de la raz6n Inversi6n/Producto R. 
+
+c) 
+Correlaci6n cotemporánea entre la raz6n Inversi6n/Producto R y el logaritmo del producto Y. 
+
+d) 
+Autocorrelaciones seriales de orden 1 a 3 del producto Y. 
+
+e 
+) Autocorrelaciones seriales de orden l a 3 de la raz Inversi6n/Producto R. 
+
+
+Se elige como estimaciones de los parámetros al conjunto de valores asigandos a ellos al que correponde el m1nimo de la 
+68 
+funci6n aqu1 llamada criterio de selecci6n, especificada para cada uno de los modelos. 
+El valor asociado del criterio de selecci6n asociado a cada conjunto valores de los parámetros fué la media de los valores obtenidos para dicho criterio de 10 muestras simuladas de 3000 puntos en el tiempo cada una. Con el fin de evitar las variaciones inducidas por el valor inicial del acervo de capital, todos los momentos de las series generadas por la soluci6n de los modelos se calculan con las observaciones 1500 a 3000 de la muestra, ya que claramente corresponden al estado estacionario de la econom1a simulada. 
+Todos los cálculos, tanto para las series observadas como para las simuladas, al igual que las simulaciones mismas, se realizaron en una computadora IBM PC compatible con el auxilio del paquete econométrico RATS versi6n 4.10. En el Apéndice II se presentan el programa elaborado para cada uno de los modelos. Cabe selar que para comprobar la correcta implementaci6n del método de soluci6n propuesto en los programas usados se "corri6" el modelo descrito en Taylor y Uhlig (1990) con los valores de los parámetros también ah1 empleados, obteniéndose resultados que son cualitativamente los mismos y cuantitativamente muy cercanos a los reportados por Marcet y Hansen en ese trabajo por lo que dadas las consideraciones aplicables al caso, podemos conluir que el método de parametrizaci6n de expectativas empleado fué correctamente implementado. 
+Momentos Observados 
+69 
+De acuerdo con la especificaci6n de los modelos, tanto la variable nivel de producto como la de inversi6n en los modelos especificados son valores brutos; en consecuencia, para calcular los valores de los momentos de las series observadas empleados para la calibraci6n, se usan la variable Producto Interno Bruto 
+(PIB) y Formaci6n Bruta de Capital Fijo como estimaciones del nivel de producto y de la inversi6n bruta. Para una mejor estimaci6n es necesario tener el mayor nero de datos posibles, lo que implica que la frecuencia de los mismos debe ser los más alta posible. En este caso el periodo de tiempo mínimo entre cada observaci6n para las variables citadas es un trimestre. Para la estimaci de los momentos observados en la economía mexicana se emplearon los indices trimestrales de 1980 a 1992 y los niveles para el afto base de la publicaci6n del Banco de México "Indicadores Econicos". 
+Debe recordarse que los modelos aqu1 especificados en el largo plazo poseen un estado estacionario alrededor del cual tienen lugar las fluctuaciones de las variables econ6micas. Por tal motivo, a las series observadas se les debe eliminar las componentes tendencia! y estacional. De acuerdo con lo planteado en el Apéndice III en relaci6n a la forma de quitar la tendencia y la componente estacional de las series, el filtrado de las series se aplic6 a los logaritmos de las mismas. Para el cputo de los momentos correspondientes al producto se emplearon los residuos resultantes de una regresi6n lineal estimada con el método de Mínimos Cuadrados Ordinarios donde el logaritmo del nivel observado del PIB es variable dependiente y las variables independientes son el tiempo, para eliminar la tendencia de los 
+70 
+datos, y una variable binaria (dummy) para cada uno de los trimestres del a con objeto de eliminar las componentes estacionales. Debido a que los modelos propuestos requieren que la inversi6n y el producto compartan la misma tendencia, la raz6n Inversi6n/Producto R s6lo fué desestacionalizada. Los resultados obtenidos fueron 
+PROPIEDADES DB LOS DATOS 
+(Rl!ORSSION UNEAL CON MCO) 
+DESVSTI>Y  0.03297  
+DESV STO R  0.03104  
+CORR(Y,R)  0.75633  
+CORR(Y,Y(•l))  0.17184  
+CORR(Y,Y(-2))  0.70411  
+CORR(Y,Y(•l))  O.SOS59  
+CORR(R,R(-1))  0.92681  
+CORR(R,R(-2))  0.13124  
+CORR(R.R(-3))  0.71116  
+
+donde: 
+Y.· LOO NAT PIB R.· FORMACION BRUTA DB CAPITAL FDO / PIB 
+Con fines icamente ilustrativos de c6mo los resultados anteriores pueden diferir por el empleo de filtros diferentes y para subrayar la importancia del empleo de un filtro "neutro", a continuaci6n se muestran los mismos resultados anteriores, pero obtenidos a partir del empleo del filtro de Hodrick y Prescott 
+(1980) filtro usado por Kydland y Prescott. 
+71 
+PROPIEDADES OB LOS DATOS (PILTRO HODRJCK-Plll!SCOTO 
+DP.SV STD Y  0.0'230'2  
+DP.SV STO R  0.03104  
+CORR(Y,lt)  0.41407  
+CORJt(Y,Y(-1))  0.7Sl47  
+CORR(Y,Y(-2))  0.47Sl2  
+CORJt(Y,Y(­3))  0.13399  
+COR.RC-,l(-1))  0.92611  
+CORJtC-,R(-2))  0 .1311"  
+CORlt(lt,R(­3))  0.71116  
+
+Y.-LOO NAT P1B 
+lt.· PORMACION BRtrrA DB CAPITAL PDO f P1B 
+Modelo l 
+En la calibraci6n de este modelo no se tom6 para ningo de los parámetros un valor preestablecido procedente de otra fuente de i nformaci6n, es decir, todos los valores de los parámetros del modelo se eligieron como aquellos que hac1an que el criterio de selecci6n tomara el menor valor cuando ese parámetro era variado manteniendo el resto fijos. Este seria el caso cuando no se contara con informaci econométrica adicional proveniente de otros estudios. El criterio de selecci6n fué 
+En las figuras 1, la y 2 se muestra un patr6n t1pico de las variables econicas de interés obtenidas con este modelo y usando el método de soluci6n descrito. En las figuras 2 a 7 se muestra la variaci6n del criterio de selecci6n cuando cambia el 
+72 
+
+donde: 
+
+(4.22) 
+Ml. -Momento i de la serie simulada. 
+Mi°, -Momento i de la serie de tiempo observada. 
+SS(). -Criterio de seleccion. 
+valor de cada uno de los parámetros del modelo. Cabe hacer notar que de manera semejante a lo reportado por Kydland y Prescott (1982) los resultados, salvo en el caso de un par -de parámetros a y&, fueron poco sensibles a la variaci de los mismos y no indicaban tendencia alguna de su efecto sobre el criterio de selecci. El conjunto de valores finalmente elegido como estimaciones de los parámetros fué 
+u=O. 47 
+~=O. 78 
+P=0.96 a=0.003 6=0.004 p=0.9 
+Estos valores son razonables para todos los parámetros excepto para la desviaci estándar del choque productivo o y el factor de depreciaci &que resultaron muy bajos. Esto puede ser debido a que este procedimiento es una forma de optimizaci local y en consecuencia si los valores de los parámetros que primero se eligen se alejan significativamente de los valores iniciales la optimizaci6n no es todo lo precisa que se deseara. 
+73 
+Es importante notar que: 
+i) Para todos los valores de los parámetros simulados se observ6 que el método de soluci6n efectivamente conducta a un estado estacionario. En este estado estacionario el valor medio del acervo de capital y el consumo es el mismo que el que se obtiene en la soluci6n del modelo determinista. 
+ii) Para todos las simulaciones hechas no se observo ning caso de no convergencia a la soluci6n, para los valores iniciales de los coeficientes~. 
+Como se presenta más adelante los momentos obtenidos en la simulaci de 500 muestras para el conjunto de valores de los parámetros elegido con este procedimiento no son satisfactorios. 
+Modelo II 
+El criterio de selecci6n empleado en este modelo fué 
+donde: 
+
+
+
+(4.23)
+Mt. -Momento i de la serie simulada. 
+MJ.°. -Momento i de la serie de tiempo observada. sss. -Criterio de seleccion. 
+Calibraci6n con optimizaci local 
+como primera aproximaci a la calibraci de este modelo 
+74 
+se empleel mismo procedimiento que en el caso del Modelo l,En la figura 8 se muestra un patr tipico de movimiento a lo largo del tiempo de las variables econicas relevantes en esta economia. Las figuras 9 a 14 se presenta el comportamiento del criterio de selecci al cambiar cada uno de los parámetros del modelo. El conjunto de valores de los parámetros que hac1an que el criterio SSS tuviera el menor valor para los rangos de los parámetros considerados fué 
+cx=0.36 a=0.026 
+p=O. 95 
+'t'=0.84 ~=0.038 p=0.86 
+siendo estos valores de los parámetros más razonables que los obtenidos con el Modelo 1, resultando so un poco alto el valor de la tasa de depreciaci del capital y un poco bajo el valor de el factor de descuento con respecto a los que se podr1an esperar de acuerdo a la informaci disponible del Sistema de cuentas Nacionales del INEGI. Es importante notar que durante la calibraci de este modelo se observlo siguiente: 
+i) La convergencia de la soluci para un conjunto de valores de los parámetros dado es sumamente sensible a los valores iniciales de los coeficientes de la expresi (4.21), al grado que una diferencia de o.1 en el valor inicial de los coeficientes provoca que la soluci no converja. Feneno que no se presenten ninguno caso de los simulados para el Modelo 1. Pero, para todos los valores de los parámetros considerados en este trabajo se 
+75 
+pudo encontraron valores iniciales que con los que se obtuvo convergencia en la soluci6n. 
+ii) Para todos los casos convergentes se observo que la econom1a alcanzaba un estado estacionario alrededor del cual se observaban las fluctuaciones de las variables econ6micas. Este estado estacionario fué muy semejante al correspondiente para el modelo determinista con el mismo nero de periodos de maduraci6n de la inversi6n. 
+iii) Los coeficientes obtenidos de las regresiones no lineales en la expresi6n (4.21) para los términos que contienen el choque estocástico en forma lineal o al cuadrado son significativamente más grandes que sus similares en la ecuaci (4.20) del Modelo l. 
+iv) De manera congruente con lo descrito en el punto i) el criterio de convergencia empleado debe ser sumamente pequef\o para que la aproximaci a la esperanza matemática hecha con la expresi6n (4.21) sea aceptable. 
+v) En ninguna de las simulaciones realizadas la soluci6n soluci6n mostrque para algunos periodos hubiera inversi o consumo negativo. 
+vii) El tiempo máquina requerido para la simulaci de este modelo es entre 5 y 7 veces mayor al que se requiere para la simulaci6n del Modelo l. 
+Estas observaciones coinciden con lo que pod1a esperarse. Por ejemplo, lo descrito en los incisos i) y ii) es fácilmente explicable si tenemos en mente que dada una sucesi6n de choques productivos y un vector de coeficientes bílo que se hace con el algoritmo usado no es otra cosa que sustituir en la ecuaci en 
+76 
+diferencias implícitamente definida por la funci6n de expectativas y la restricci6n presupuestaria, la cual es de cuarto orden que puede tener soluciones explosivas, pero que no satifacen la condici de transversalidad. 
+De igual forma lo observado en el punto nero iii) puede explicarse de la siguiente manera: debido al tiempo de maduraci6n de la inversi6n, la cantidad de producto destinado a incrementar el acervo de capital incorpora un compromiso para los siguientes tres períodos que restringirá las posibilidades de consumo, por lo que el peso relativo que se da a los choques productivos en las expectativas de los períodos futuros es mayor. 
+Por otro lado, puesto que las funciones de producci6n y de utilidad son las mismas en los dos modelos puede esperarse que los estados estacionarios de ambos sean semejantes lo cual hace inferir que los coeficientes de la funci6n que representan las expectativas sean también similares por lo que la estrategia para determinar los valores iniciales de los coeficientes b¡ adecuados para obtener convergencia en la soluci6n del modelo 2, para un conjunto de valores de los parámetros, consisti6 en: 
+a} Asignar a los coeficientes asociados con el choque a la productividad los valores obtenidos para ellos en la tima r egresi6n calculada en la soluci6n del modelo 1 para el mismo conjunto de parámetros 
+b} Para los coeficientes asociados con los acervos de capital se asignaron valores tales que su suma fuera igual al coeficiente del acervo de capital obtenido en la tima regresi6n hecha para e l modelo 1 con el mismo conjunto de valores de los parámetros. 
+Los resultados de la soluci6n así como el éxito de la 
+77 
+estrategia seguida para determinar los valores iniciales de los coeficientes b¡ confirman el supuesto hecho respecto a la relaci6n entre los estados estacionarios de los modelos y que no necesariamente implica el mismo comportamiento de las fluctuaciones alrededor del estado estacionario. 
+Calibraci6n usando una malla con parámetros predeterminados 
+Con objeto de comparar el conjunto de parámetros que minimizan el criterio de selecco6n sss siguiendo el procedimiendto de optimizaci6n local y aquellos que se obtienen al tomar una malla con parámetros preestablecidos como lo hacen Kydland y Prescott (1982) se construyeron 3 mallas donde icamente se variaban los parámetros T ( inverso de la elasticidad de sustituci intertemporal) y a (desviaci6n estándar del término de ruido blanco gaussiano asociado al proceso autorregresivo que genera los choques de productividad. 
+Al resto de los parámetros se les asignaron valores de la manera siguiente: 
+i) a=0.6, /3=0.975, &= 0.01, p=0.9 para la malla 1 cuyos resultados se muestran en las tablas I y II al final de este capitulo. 
+ii) a=0.36, /3=0.975, 6= 0.01, p=0.9 para la malla 2 cuyos resultados se muestran en las tablas III, IV y V al final de este capitulo. 
+i) a=0.6, /3=0.975, 6= 0.02, p=0.9 para la malla 3 cuyos resultados se muestran en las tablas I y II al final de este 
+78 
+capitulo. 
+Los valores de los parámetros predeterminados fueron fijados en lo posible de manera consistente con lo reportado por el sistema de Cuentas Nacionales de INEGI y lo sugerido por los resultados de Kydland y Prescott (1982). A este respecto es necesario notar que si se fija el valor del parámetro Q con la informaci reportada en el Sistema de cuentas Nacionales para el excedente de operaci se se sobreestimará dicho parámetro debido a que este rubro incluye utilidades de profesionistas y otros trabajadores independientes as1 como las utilidades de empresas familiares. Los parámetros que minimizan el criterio sss en las tablas son: 
+i) -r= 0.90 y aa0.01 en la malla l. 
+ii) -r= 0.76 y a=0.01 en la malla 2. 
+iii) -r= 0.90 y a=0.008 en la malla 3. 
+El parámetro T as1 determinado es muy semejante al obtenido anteriormente, sin embargo, la volatilidad de los choques es menor a la que se hab1a elegido, De los resultados que mostrados en las tablas II, IV y VII no rsulta claro cuales son los rangos y el sentido en que debe variarse el parámetro a con objeto de replicar la correlaci entre Y e R, ya que, dado el conjunto de parámetros predeterminados, para ciertos intervalos de este parámetro al incrementar su valor dicho momento se vuelve más negativo y para otros resulta al contrario. 
+Los resultados presentados en estas tablas al igual que los 
+79 
+discutidos previamente también manifiestan una relativa insensibilidad de los resultados a las variaciones de los parámetros como lo reportan en sus resultados Kydland y Prescott (1982), 
+Un hecho sobresaliente que se observ6 en malla 2 y que es presentado en la tabla V es que para todos los parámetros ah1 considerados la media de la raz6n Inversi6n/Producto R fué de 15.2% con variaciones menores 0.11, siendo ésta raz6n una medida no considerada en el criterio de selecci6n y muy semejante al valor obsevado para la econom1a mexicana. 
+Lo referido en los párrafos anteriores sugiere, como lo apuntan Kydland y Prescott (1982), que a cuando los parámetros pueden diferir a través de las econom1as, la naturaleza de los ciclos econicos es muy semejante. 
+siaulaciones 
+Para cada uno de los modelos se realiz6 la simulaci6n de 500 muestras del mismo tamafio usado en la calibraci6n con los parámetros obtenidos por optimizaci6n local, esto con objeto, de que no hubiera duda alguna respecto a la comparabilidad de los resultados. 
+Los resultados de estas simulaciones se presntan en forma de hitogramas de frecuencias en las figuras 15 a 23 para el Modelo 1, en tanto que para el Modelo 2 se presentan en las figuras 24 a 32. 
+80 
+Los siguientes cuadros resumen las propiedades estad1sticas en la simulaci6n de cada uno de los momentos que se buscaban replicar. 
+81 
+Modelo 1 
+Media  
+Criterio SSQ  0.731651  
+Desv.  Std.  Log  y  0.345198  
+Desv.  Std.  Log.  R  0.007912  
+Corr(Y,R)  0.945789  
+Corr(Y" Y..1)  0.994208  
+Corr (Y,, Y,.2)  0.988432  
+Corr (Y,, Y,.3)  0.982733  
+Corr (Ri, Rt,1)  0.984871  
+Corr (Ri, Rt,2 )  0.970523  
+corr (Ri, Rt,3)  0.956402  
+
+Desv Std 0.015792 0.011121 0.006987 0.024632 2.7xl0-5 5.4xlo-s 6.7x10-5 0.003672 0.006966 0.014404 
+Modelo 2  
+Media  Desv Std  
+Desv.  Std.  Log  y  0.053597  0.002847  
+Desv.  Std.  Log.  R  0.028064  0.010990  
+corr(Y,R)  -0.25635  0.089328  
+Corr(Y,, Y,.1)  0.861505  0.012887  
+corr (Y,, Y,.2 )  0.745615  0.023233  
+Corr (Y,, Y,.3)  0.648768  0.031544  
+Corr (Ri, Ri.1)  0.671833  0.071818  
+Corr (Ri, Ri.2)  0.441287  0.086992  
+Corr (Ri, Rt,3)  0.177263  0.141726  
+
+Máximo 0.7616 0.3672 0.0219 0.9890 
+0.9943 
+0.9886 0.9829 0.9918 0.9838 0.9758 
+Máximo 0.0617 0.0481 0.1607 0.8988 0.8149 0.7466 0.7484 0.5499 0.3506 
+M1nimo 0.7137 0.3384 0.0036 0.8980 
+0.9942 0.9884 
+0.9827 0.9791 0.9603 0.7258 
+M1nimo 0.0436 0.0181 -0.409 0.8019 0.6420 0.5128 0.4761 0.1868 -0.228 
+Antes de comparar valores numéricos vale la pena recordar 
+que el criterio de selecci empleado no penaliza de manera 
+82 
+especial las diferencias de signo y penaliza igual una diferencia de valores sin importar que este asociada a una discrepancia, del 100% o del 5% del momento a simular por lo que es de esperarse que con este criterio las diferencias en téminos porcentuales sean más acentuadas en los momentos que tienen un orden de magnitud menor. No fué empleado otro criterio debido a que se descnocer1an del todo las propiedades de convegencia de los estimadores asociados. 
+La comparaci entre los resultados obtenidos con cada uno de los modelos es totalmente favorable al Modelo 2, tanto en los valores numéricos como en las distribuciones que -presentan los histogramas correspondientes. 
+As1, para el Modelo 1, salvo los casos de la correlaci entre el producto y la raz6n Inversi/Producto y las autocorrelaciones de la tima raz6n todos los histogramas muestran una distribuci sumamente concentrada en algunos puntos distantes de los momentos simulados. Este hecho es radicalmente distinto a lo que se observa en los histogramas correspondientes al Modelo 2. 
+Al comparar las medias de los momentos simulados con los valores observados en los datos de la econom1a mexicana es claro que este modelo no replica en forma adecuada el comportamiento observado. En una palabra, se desecha este modelo para fines de representar las variaciones c1clicas de la econom1a mexicana. 
+En cambio, el Modelo 2 replica de manera muy precisa 3 de las caracter1sticas de las series observadas, a saber: la desviaci estándar de la raz inversi/producto, las autocorrelaciones de primer y segundo orden del producto. La 
+83 
+desviaci estándar del logaritmo del producto, si bien no fu6 replicada adecuadamente, el orden de magnitud observado en las simulaciones es el mismo que el observado en los datos. Las autocorrelaciones de la raz6n Inversi/Producto todas ellas resultan menores que las observadas, sin embargo, los signos asi de las correlaciones simuladas y las observadas son los mismos. También, tanto en los datos como en las series simuladas la magnitud de las autocorrelaciones de la raz Inversi/Producto se reducen al aumentar su orden. Por otro lado, la mayor discrepancia entre las series simuladas con el Modelo 2 y los datos se presenta en la correlaci entre. el producto y la raz Inversi/Producto, la cual resultde signo contrario (negativo) al observado, este resultado no significa el que haya una correlaci negativa entre la inversi y el producto sino que la elasticidad de la inversi respecto al producto es menor a 
+l. 
+Los resultados obtenidos permiten asegurar que el tiempo para construir es un supuesto sumamente importante, en el modelo simulado, para explicar las variaciones cíclicas de una economia real. Huelga decir, que en estas circunstancias, entre los dos modelos la elecci es obvia; el Modelo 2. 
+Finalmente es conveniente mencionar que la discrepancia en signos entre los momentos simulados y los observados no es particular de este ejercicio sino un resultado que se ha observado anteriormente en trabajos similares que aparecen en la literatura del tema. Basta mencionar que tal es el caso de Plosser (1989). 
+84 
+
+
+
+Figura l 
+Patron rJlnornlco t!plcoprraelModelo I 
+2.25 ----------------------------------·--------------­
+2.00 ­
+
+
+' ,
+I I " ,. ., .. 1 
+.,\/ , .. ,, t ~ f \ I \ _1 1, "' 'I.., ""' 1" ..,, 1, ,,\J\~ /\ 
+/ ti 11 \ ' ,. .. ' \" .. ", ... ,,, ,., y l. ,, \. .... \.1 \, 
+\,, ,_ J / 
+l .75 ­l .50 ­l .25 ­
+1.00 ­
+
+0.75 · ProdUcto 
+0.50 ­, 
+
+
+eonsumo ---­
+O. 25 · /v\':·~v.~,\,,\,t-,.'Ti,1"°~,'1¡'f \ ""'i1.•1.f'"'".l'n,i\,',"·,·~·,1i\' ~..~"1/V"'i,Ji~\•~,'~V'\ 1 Inverslon --­
+0.00 _l _-----r ----·----------,--------------.---------===-r-===========,:== 
+1592 1942 2292 2642 
+Figura 1 a 
+Potron dlnrmtco t!plco fl(TO elMot11/o I 
+
+
+1.680 ---------------------------------------------------­
+1.640 1.600 1.560 l.520 
+1.480 1.440 
+1.400 
+
+
+----j
+SOICTIO real
+~-------------­
+
+____ __T ___ ---------r------------,----------------­
+l .360 
+1538 1685 1831 1877 
+0.065 0.060 0.055 0.050 0.045 0.040 0.035 0.030 0.025 
+Figura 2 
+Patron rJlnarnlco tlplcoperaelModelo I 
+-----·------------------------------------------------------­
+
+------]
+Rend capital 
+------r-------------r------------,-------------r----------­1539 1685 1831 1977 
+.Figura 3 Modelo No. 1 
+1.45.------------------------------~ 
+1.4 
+1.35 
+
+o  
+(/) (/)  1.3  
+o ·¡:  
+$ ·¡:  1.25  
+(.)  
+1.2  
+1.15  
+
+
+0.46 0.47 0.48 0.49 0.5 0.51 0.52 0.53 0.54 0.55 0.56 0.57 0.58 0.59 0.6 0.61 0.62 0.63 0.64 
+Parametro alfa 
+Figura 4 Modelo No. 1 
+1.8,---------------------------------, 
+1.6 
+1.4 
+o 
+0.8 
+
+0,6 ........_,r---r----,-.....---,--~----r-~--,--..----r--,--"""'T""-r----,----,r---,--~-.....-----r-,--' 
+0.0010.0020.0030.0040.00S0.008 0.01 0.0120.0140.0160.018 0.02 0.0220.0240.02e0.028 0.03 0.0320.0340.0360.038 
+Parametro delta 
+074 
+072 
+07 
+o. 
+o 
+(/) o (/) 
+064 
+062 
+o. 
+0.58 
+o. 
+
+
+Figura 5 Modelo No. 1 
+
+0.12 0.13 0.1~ 01s 078 on 010 019 00 001 002 083 084 086 088 087 088 099 0.9 o~ 002 0.93 o~ 095 a98 097 099 
+
+Parametro Rho 
+Figura 6 Modelo No. 1 
+0.68-.------------------------------­
+0.67 
+0.66 
+o 
+0.64 
+0.63 
+0.62~ ..------r---.---..------.---.--....----.-.......---....----.-----.---,----,,----,---.--.----.-----..-........ 0.9 0.906 0.91 0.915 0.92 0.925 0.93 0.935 0.94 0.946 0.96 0.9155 0.96 0.966 0.97 0.975 0.98 0.986 
+
+Parametro beta 
+Figura 7 Modelo No. 1 
+1.lf,-
+----------------------------------------, 
+1. 
+1.4 
+1.2 
+o 
+(/) (/) 
+
+
+
+
+Figura 8 
+Patron alnarnlco tlplcoperaelModelo 2 
+125 -------------------------­
+100 ­
+75 ­
+
+
+2639 
+Figura 9 Modelo No. 2 
+2.1.----------------------------------, 
+2.09 
+2.08 
+2.07
+(/) (/) (/) 
+o 
+2.06 
+Lo. 
+<l> 
+·¡: 
+-
+o 
+2.~ 
+2.04 
+2.03 
+
+
+0.8 0.82 0.84 0.88 0.88 0.7 0.72 0.74 0.78 0.78 0.8 0.82 0.84 0.86 0.88 0.9 0.92 0.94 0.98 0.98 
+Parametro tau 
+
+1 94 
+1 92 
+1 9 
+1 88 
+(/) 1,86 
+(/) 
+(/) 
+o 1 84 
+·¡: 
+Q) 
+·¡: 
+-
+t 82 
+t 8 
+1 78 
+1.76 
+
+174-r---r--.---.--.---.----,,--.-----.-~--.-....----.--......----.--..----.--,--....,...-,----r--r--.----,.---.----,--.---.~ O 2 O 22 O 24 O 26 O28 O 3 O 32 O 34 O 36 O 38 O4 O 42 O 44 O 46 O 48 O 5 O52 O54 O56 O 58 O 6 O62 O 64 O 66 O68 O 7 O 72 O 74 
+
+Parametro alfa 
+Figura 11  
+Modelo No. 2  
+1.77  
+1.76  
+(/)  
+(/) (/)  1.75  
+o  
+-~  
+Q).... -~  1.74  
+o  
+1.73  
+1.72  
+'-71 -"'-.-----.--~-~~----,.----.----,--...---.-----,.----.------.--...---.---,-""T"'"----r-...---.---,-.l  
+0.4  0.8  0.8  1.0  1.2  1.4  1.8  1.8  2.0  2.2  2.4  2.8  2.8  3.0  3.2  3.4  3.8  3.8  4.0  4.2  4.4  
+Parametro delta (en %)  
+
+Figura 12 Modelo No. 2 
+3.7 
+3.6  
+3.,  
+3.4  
+(/)  
+(/) (/)  3.3  
+o  
+L..  
+Q)- 3.2  
+L..  
+o  
+3.1  
+
+
+
+
+3 
+2.9 
+2,8 _.__r---.--r---.----,.----,-----,--,----,-~---,.---~--,-~~-~~-~--.--.....---' 
+o.s o.62 o.84 0.68 o.68 0.1 0.12 o.74 o.76 o.78 o.e o.82 o.84 o.es o.ea o.9 o.92 o.94 o.96 o.96 Parametro rho 
+Figura 13 Modelo No. 2 
+2.95-.-------------------~------------­
+U) U) U) 
+o 
+·¡: 
+Q) 
+...... 
+·¡: 
+
+
+
+2~-'--,--~-,,--..-...,....--r--.---.--..-....---r--~--.--..--,--..--,--~--,---,--..--.--~--,-~ 0004 00060008 001 0012001'001110018 002 00220024 00260028 003 00320034 00360038 004 00420044 00460048 005 
+Parametro sigma 
+2 34~ 
+2.33 
+2.32 
+2.31 
+(/) (/) (/) 
+o 
+2.3 
+·¡: (l)
+..... 
+·¡: 
+2 29 
+2 28 
+2 27 
+-------------------------------------------, 
+0.36648 0.36494 0.36350 
+>­
+w 0.36206 
+o 
+0.36062 a: 0.35918 c3 o.35n4 0.35630 
+z 
+0.35486 
+~ 
+0.35342 w 0.35198 z 0.35054 o 0.34910 
+(/) 
+-
+0.34766 
+<( 
+0.34622 > 0.34478 
+(/) w 0.34334 o 0.34190 0.34046 0.33902 
+
+Figura 15 Modelo No. 1 
+o 50 100 150 200 
+CASOS 
+Figura 16 Modelo No. 1 
+0.02144 
+a: 
+0.02054 
+w 
+0.01962 
+o 
+0.01871 
+a: 
+<( 0.01779 o 0.01687 z 0.01596 0.01504 
+~ 
+0.01412 
+en 
+w 0.01321 0.01229 
+z 
+o 
+0.01138 0.01046 
+
+<( 0.00954 0.00863 
+>
+en 0.00771 
+w 
+0.00680 
+o 
+0.00588 0.00496 0.00405 
+
+
+o 50 100 150 200 250 300 350 400 
+CASOS 
+0.98723 0.98318 0.97863 
+a: 
+0.97408 
+w 
+0.96953 
+>­
+0.96498 
+w 
+0.96043 
+a: 
+1-0.95588 
+z 
+0.95133 
+w 
+0.94678 
+z 
+o 
+0.94223 
+0.93768 
+o 
+:5 
+0.93313 
+0.92858 
+w 
+o 
+a: 0.92403 a: 0.91 948 0.91493 
+o 
+0.91038 0.90583 0.90128 
+
+o 10 20 30 40 50 
+CASOS 
+0.99430 
+-0.99429 ,.... 
+1 0.99429 
+-
+>-0.99428 
+0.99428 
+w 
+0.99427 
+>­
+0.99427 
+w
+a: 0.99426 
+t­
+0.99426 
+z 
+0.99425 0.99425 
+w 
+z 
+5 
+o 0.99424 (.) 0.99424 0.99423 
+0.99423 
+w
+a: 0.99422 
+a: 
+0.99422 
+o 
+0.99421 
+(.) 
+0.99421 0.99420 
+
+o 50 100 150 200 250 300 350 400 450 500 
+CASOS 
+0.98859 0.98858 
+@' 
+1 0.98857 
+-
+>-0.98856 
+0.98855 
+w 
+0.98854 
+>­
+0.98853 
+w
+a: 0.98852 
+.... 
+0.98851 
+z 
+0.98850 0.98849 
+w 
+z 
+o 0.98848 
+-
+0.98847 
+o 
+:5 
+0.98846 
+0.98845 
+w
+a: 0.98844 
+a: 
+0.98843 
+o 
+0.98842 
+o 
+0.98841 0.98841 
+Figura 19 Modelo No. 1 
+
+
+o 50 100 150 200 250 300 350 
+CASOS 
+0.98289 
+-0.98288 C? 1 0.98287 -
+>-0.98286 0.98285 
+w 
+0.98284 
+>­
+0.98283 
+w 
+a: 0.98282 
+r­
+0.98281 
+z 
+w 0.98280 0.98279 
+z 
+-
+o 0.98278 (.) 0.98277 0.98276 
+~ 
+0.98275 
+w
+a: 0.98274 
+a: 
+0.98274 
+o 
+0.98272 
+(.) 0.98272 0.98271 
+
+o 50 100 150 200 250 300 350 400 
+CASOS 
+0.98321 0.98204 
+-
+e;-0.98086 a: 0.97969 0.97851 
+w 
+o.9n34
+a: 
+0.97616 
+w
+a: 0.97499 
+1­
+0.97381 
+z 
+0.97264 
+w 
+0.97146 
+z 
+o 
+0.97029 -
+0.96911 
+
+:5 
+0.96794 
+0.96676 
+w
+a: 0.96559 
+a: 
+0.96441 
+o 
+0.96324 
+
+0.96206 0.96089 
+
+o 10 20 30 40 50 
+CASOS 
+0.98321 
+-0.98204 (\1 
+1 0.98086 
+-
+a: 0.97969 
+0.97851 
+w 
+o.sn34 
+a: 
+0.97616 
+w
+a: 0.97499 
+.... 
+0.97381 
+z 
+0.97264 
+w 
+0.97148 
+z 
+Q 0.97029 
+0.96911 
+o 
+0.96794 
+::s 
+0.96676 
+w
+a: 0.96559 
+a: 
+0.96441 
+o 
+0.96324 
+
+0.96206 0.96089 
+
+o 10 20 30 40 50 
+CASOS 
+
+o 50 100 150 200 
+CASOS 
+>­
+a: 
+<( 
+o 
+z 
+<(
+1­
+(/) 
+w 
+z 
+o 
+
+<( 
+> 
+(/) 
+w 
+o 
+O 06 2475 O 0603425 0.0594375 O 0585325 O 0576275 O 0567225 O 05 8 175 O 0549125 O 540075 0.053 025 O 052 975 O 0512925 O 0503875 O 0494 25 0048 775 0.0476725 O 0467675 0.0458625 
+O 0449575 O 0440525 
+
+o 10 20 30 40 50 60 
+CASOS 
+O 04735 0.04585 O 04~35 O 04285 
+a: 
+0.04135 
+a: 
+<( 0.03985 
+o 
+0.03835 
+z 
+<( 0.03685 
+1­
+0.03535 
+(/) 
+0.03385 z 0.03235 o 0.03085 0.02935 
+w 
+<( 
+0.02785 
+> 
+0.02635 
+(/) 
+w 0.02485 
+o 
+0.02335 0.02185 0.02035 0.01885 
+
+o 50 100 150 200 250 300 
+CASOS 
+0. 146468 0. 118003 0.089538 a: 0.061073 
+w 
+0.032608 >-0.004143 
+w 
+-0.0243225 
+a:
+.,_ 
+-0.0527875 
+z 
+·0.0812525 
+w 
+-O 1097175 
+z 
+o 
+-0.1381825 
+-O 1666475 
+
+:5 
+-0.1951125 
+-0.2235775 
+w 
+a: -0.2520425 
+a: 
+-0.2805075 
+o 
+-0.3089725 
+
+-0.3374375 -0.3659025 -0.3943675 
+
+o 10 20 30 40 
+CASOS 
+O 963775 -O 91 5325 
+~ 
+1
+-O 8866875 >-O 818425 w O 8769975 >-O 872 525 w O 673075 
+a: 
+O 624625 
+~ 
+z O 576175 
+w 
+O 8527725 
+z 
+O 479275
+o 
+O 8430825 
+
+~ 
+w 
+a: 
+0.8237025 
+cr: 
+o O 18 575 
+0.8 140 125 o 091675 O 043225 
+Figura 27 Modelo No. 2 
+o 10 20 30 40 50 
+CASOS 
+Figura 28 Modelo No. 2 
+0 81 0 775 o. 019325 O 7932875 
+N 
+-
+-
+1 O 7846425 >-O 7759975 
+lJ.J 
+O 7673525 
+>­
+0.7587075 
+lJ.J
+a: 
+O 7500625 1-O 7414175 
+z 
+O 7327725 
+lJ.J 
+z 
+O 7241275 
+o 0.7154825 O 7068375 O 6981925 
+~ 
+lJ.J O 6895475 
+a: 
+0.6809025 
+a: 
+o 
+O 6722575 
+O 6636125 O 6549675 O 6463225 
+o 10 20 30 40 
+CASOS 
+
+0.7407 5 0.729065 0.7 7375 
+-
+1 
+>-
+-C') 0.705685 O 693995 
+LI.J 
+O 682305 
+>­
+O 670615 
+LI.J
+a: 0.658925 
+1­
+O 647235 
+z 
+O 635545 
+LI.J 
+z 
+O 623855 o 0.612165 0.600475 5 O 588785 LI.J 0.577095 
+a: 
+O 565405 
+cr: 
+o 
+0.553715 
+0.542025 O 530335 O 518645 
+
+o 10 20 30 40 50 
+CASOS 
+60 70 60 
+0.7415925 O 7279775
+-0.71 43625 T""" 
+1 O 7007475 
+-ce 
+>-
+0.6871325 0.6735175 
+ce 
+0.6599025 
+w 
+O 6462875
+ce
+..,_ 
+0.6 26725 
+z 
+0.61 90575 
+w 
+z 
+O 6054425 o o. 918275 O 5782125 5 O 5645975 w O 509 25 
+ce 
+0.5373675 
+ce 
+o 
+O 5237525 
+O 5 01375 O 4965225 0.4829075 
+o 10 20 30 40 50 60 70 80 90 
+
+CASOS 
+0.5408225 O 5226675 
+-O 5045125 
+C\I 
+1
+-O 4863575 a: 
+O 4682025 
+>­
+O 4500475 
+a: 
+O 4318925 
+w 
+O 4137375 
+a: 
+1-O 955825
+z 
+O 3774275 
+w 
+z 
+O 592725 o O 341 1 75 0.3229625 0.3048075 
+~ 
+w 0.2866525 
+a: 
+0.2684975 
+a: 
+o 
+O 2503425 
+0.2321875 0.2140325 O 1958775 
+o 10 20 50 60 70
+
+Figura 32 Modelo No. 2 
+C') 
+-
+1
+-ce 
+>­
+ce 
+w 
+ce 
+..,_ 
+as 
+z 
+o 
+
+~ 
+w 
+ce 
+ce 
+o 
+
+o 10 20 30 40 50 
+CASOS 
+
+TABLA 1 
+CIIITERD SSS 
+.,:0.975 c,20.6 5!1!().01 f•0.9 
+,.  (Y  
+0.004  0.01  0.02  
+0.70  1.8127  1.6070  1.6275  
+0.72  1.11 124  1.5H2  1.6232  
+0.74  1.8177  1.6 125  1.63 10  
+0.76  1.81 92  1.6 11111  1.6225  
+0.78  1.8 11 8  1.6220  1.6 158  
+0.80  1.11187  1.6314  1.6428  
+0.82  1.8404  1.61 llB  1.6130  
+0 .84  1.81411  1.6 167  1.6384  
+0 .86  1.8149  1.6034  1.6496  
+0.8B  1.8042  1.5993  1.7062  
+0.90  1.8255  1.5890  1.6702  
+0.92  1.8 137  1.6 120  1.6451  
+0 .94  1.8359  1.6363  1.6771  
+0.96  1.8335  1.5993  1.7031  
+0.98  1.8205  .6249  1.6779  
+1.00  1.8299  1.6000 •  1.6336  
+1.02  1.11086  1.6050  1.6264  
+1.04  1.7970  1.6294  1.6840  
+1.06  1.8129  1.5910  1.7012  
+1.08  1.B050  1.636 1  1.6637  
+1.1 0  1.8255  .59811  1.67 46  
+1.12  1.11 107  .606 2  1.6464  
+1.14  1.8175  1.6243  1.6632  
+1.1 6  1.819!!,  1.!!IUII  1.6406  
+1.18  1.8 104  1.6550  1.6347  
+
+ABLA 11 
+CaN{Y, R) 
+F0.975 c,:0.6 i:0.01 ¡:0.9 
+ti  
+,.  º·ºº'  0.01  0.02  
+0.70  0.01 680  -<l.01 350  -<1 .16000  
+0.72  0.00938  -<1 .02870  -<1.211 00  
+o., ,  -0.003 19  -<1.05810  -<1.22880  
+0.711  0.00535  -<l.04830  -<1 .22320  
+0.78  0.00466  -<1.06750  -<1.21 º'º  
+0.80  -<1 .00462  -C.07600  -<1.21660  
+0.82  -<1.01 590  -<1.05530  -<1.20160  
+0.84  0.00907  -<1.03300  -<1.23170  
+0.86  0.01440  -0.02540  -<l.1 1520  
+0.88  0.0 1380  -<1.05580  -0.25810  
+0.10  -<1.01 850  -<1.02770  -<1.24320  
+•  
+0.92  0.00968  -<1.04800  -0.21190  
+0.94  -0.01 400  -0.06780  -0.25800  
+0.16  0.00549  -0.05600  -<1.25460  
+0.98  0.00401  -<1.0661 O  -0.22440  
+1.00  -0.00773  -<1.0471 O  -<1.24720  
+1.02  0.00742  -<l.04050  -0.23270  
+1.04  0.01250  -<1.09 11 0  -0.22860  
+1.06  0.0171 0  -0.0 1180  -<1 .22150  
+1.08  0.01 120  -0.06080  -<1.2 1530  
+1.1 0  0.00185  -0.03460  -0.22000  
+1.1 2  0.00346  -0.05550  -0.24160  
+1.14  0.0 1320  -0.05170  -0.24690  
+1.1 6  0.00765  -0.038 10  -o.21uo  
+1.18  0.02080  -0.08000  -0.23700  
+
+TABLA 111 
+F0.975 et"0.36 6=0.01 Í"0.9 
+,.  ~  
+0.002  0.004  0.006  0.008  0.01  0.02  
+0.70  .7569  1.8967  1.9364  1.8899  1.7278  .1111,11  
+0.72  1.8021  1.8552  1.9322  1.8 177  1.6762  .8718  
+0.74  1.7835  1.8555  1.9004  1.8955  1.7429  1.8871  
+0.76  1,7653  1.8596  1.9243  1.8323  1.6931  1.8916  
+0.78  1.7775  1..8281  1.8987  1.8197  1.6591  1.8!121  
+o.so  1.7911  .86 13  1.9009  1.8530  1.7'63  1.1047  
+0.82  1.793!1  1.871 6  1.8961  1.8198  1.7248  1.8837  
+0.84  1.8 1,,  1.9084  1.91 15  1.11418  1.7243  1.8548  
+0.86  1.7514  1.86'5  1.8995  1.8339  1.7637  1.9079  
+0.1!8  1,15,7  1.8856  1.8781  1.8366  1.71 04  1.876'  
+o.to  1.7330  1.8394  1.1137  1.8424  1.7616  1.8720  
+0.92  1.8250  1.8293  1.8841  1.8228  1.7406  1.9008  
+0.94  1.7721  1.8'91  1.8752  1.8437  1.7772  1.8950  
+0.96  1.7364  1.8315  1.8908  1.8190  1.7595  1.9158  
+0.98  1.11029  1.8515  1.9200  1.8292  1.7062  1.8745  
+1.00  1,7932  1.11479  1.9233  1.8300  1.7214  1.87!19  
+1.02  1.7914  1.8662  1.91 75  1.11181  1.7.U9  1.11 717  
+1.04  1.7774  1.11749  1.9076  1.81 77  1.74!13  1.11560  
+1.06  1.7!1711  t .8004  1.8116 1  1.116'8  1.7543  1.86'2  
+1.08  1.7691  1.115611  1.1045  1.8401  1.6925  1.81102  
+1.1 0  1.7808  1.8745  1.92 12  1.8331  1.7218  1.8704  
+1.12  1.7'83  1.8378  1.11141  1.8351  1.7807  1.8718  
+1.14  1.7431  1.8785  1.131 O  1.82112  1.7731  1.8800  
+1.16  .7666  1.8235  1.1066  1.8451  1.61153  1.111131  
+1.1 8  1.7871  1.8835  1.9 141  1.8267  1.7423  1.8929  
+
+TAll.A IV 
+COIIR(Y. R) p0.975 cr-0.36 li:0.01 f:0.9 
+
+'t  ti  
+0.002 0.006 0.0011 0.0 1 0.02 º·ºº'  
+0.7  -0.18130  -0.1 8730  -0.19550  -0.2 1250  -0.16530  -0.150110  
+0.72  -0.20600  -0.26000  -0.25380  -0.22770  -0.21590  -0.24070  
+0.74  -0.25260  -0.23330  -0.24250  -0.27580  -0.24020  -0.22490  
+0.76  -0.23320  --0.21250  -0.25340  -0.22740  -0.22220  -0.23950  
+0.71!  -0.24600  -0.22370  -0.21590  -0.22540  -0.20850  -0.21940  
+0.8  -0.245 10  -0.24210  -0.22360  -0.24570  -0.272110  -0.25850  
+0.82  -0.23670  -0.22070  -0.250,0  -0.2'7110  -0.22570  -0.2'470  
+0.84  -0.25510  -0.27530  --0.24970  -0.23280  -0.25070  -0.19870  
+0.86  -0.24660  -0.26030  -0.231!70  --0.2'700  -0.25370  -0.23900  
+0.111!  -0.26210  -0.23950  -0.22'00  --0.25210  --0.21230  --0.2461 O  
+O.t  -0.24'90  -0.21~1!0  -0.2311110  -0.25040  -0.23980  -0.24140  
+0.92  -0.27970  -0.2291!0  -0.22920  -0.23900  -0.251!10  -0.23050  
+0.94  -0.2'840  -0.24040  -0.21220  -0.223BO  -0.27930  -0.25930  
+0.16  -0.22'70  -0.22220  -0.22500  -0.23630  -0.22670  -0.2'380  
+0.98  -0.25330  --0.21250  -0.2'900  -0.23310  --0.24140  -0.25190  
+1  -0,25860  -0.25690  -0.23650  -0.265.40  -0.23970  -0.2'820  
+1.02  -0.2'710  -0.26UO  -0.23,10  -0.22820  -0.22560  -0.21 740  
+1.0,  -0.25890  -0.2'420  -0.231 10  -0.19570  -0.23720  -0.23160  
+1.06  -0.23870  -0.21 UD  -0.25670  -0.23740  -0.24670  -0.. 23750  
+1.08  -0.25670  -0.24080  -0.2'520  -0.27610  -0.21350  -0.23200  
+1.1  -0.25670  -0.21810  -0.27780  -0.2'520  -0.2,300  -0.23820  
+1.12  -0.20320  -0.20220  -0.23630  -0.23550  -0.26010  -0.26300  
+1.14  -0.23050  -0.23170  -0.23910  -0.24830  -0.25450  -0.24730  
+l. 16  -0.23780  -0.239'0  -0.231,0  -0.21500  --0.2121 O  -0.23320  
+1.18  -0.263,0  --0.23580  -0.26310  -0.2,110  -0.23210  -0.23250  
+
+TABLA V 
+
+,=0.975 e1sO.l6 &=0.01 í•0.9 
+,.  (J'  
+0.002 0.004 0.006 0.008 0.01 0.02  
+0.7  15.1 6"  15.14"  15.20"  15.16"  15.16'l  15.21"  
+0.72  15.17"  15.14"  15.191  15.17"  15.16"  15.25"  
+0.74  15.16%  15.14"  15.19%  15.191  15.17"  15.21"  
+0.76  15.18%  15.1 5"  15.20S  15.16"  15.18S  15.25"  
+0.78  15.16"  15.14"  15.19"  15.17"  15.15'l  15.27S  
+0.8  15.16"  15.14"  15.19X  15.17"  15.UX  15.21X  
+0.82  15.16%  15.14"  15.20X  15.18"  15.18"  15.23%  
+0.84  15.16"  15.U"  15.20"  15.18"  15.17'l  15.23X  
+0.86  15.161  15.13%  15.21X  15.15X  15.17"  15.261  
+0.88  15.16S  15.15S  15.20X  15.17X  15.17"  15.23X  
+0.9  15,161  15.14"  15.19%  15.1 61  15.1 5"  15.211  
+0.92  15.161  15.141  15.19%  15.17X  15.1 61  15.22"  
+o.u  15.16"  15.14"  15.191  15.17'.I  15.17'.I  15.22'.I  
+0.96  15.16'.I  15.13"  15.1H  15.17"  15.17"  15.24"  
+0.98  15.16"  15.14"  15.19%  15.17X  15.18"  15.24X  
+1  15.16'.I  15.14"  15.1H  15.161  15.16"  15.22"  
+1.02  15.161  15.UX  15.20,C  15.18'.I  15.17'.I  15.23"  
+1.04  15.16"  15.UI  15.20"  15.18"  15.16"  15.24"  
+1.06  15.161  15.UX  15.20"  15.18"  15.UX  15.23"  
+1.01!  15.16"  15.UX  15.20"  15.1 8"  15.15"  15.21"  
+1.1  15.161  15.14"  15.21"  15.1 H  15.17"  15.251  
+1.12  15.1 6'.I  15.UX  15.1H  15.1 H  15.17"  15.22"  
+1.14  15.16"  15.13"  15.20,i:  15.1H  15. 11,i:  15.2 1'.I  
+1.16  15.16"  15.13"  15.21'.I  15.1 6"  15.17"  15.24"  
+
+ABLA VI 
+...o.97~ or•0.36 0.02 í•0.9 
+T  ~  
+0.002  0.004  0.006  0.0011  0.01  
+0 70  1 7999  l 7456  1 7375  1 6408  1 7550  
+O 72  1 8336  1 6922  1 7472  1 69 15  1 7965  
+O 74  1 7957  17249  1 7420  1 7370  1 8228  
+O76  1 7822  1 7464  1 7574  16464  1 7820  
+O 78  1 8 151  1 7337  17669  1 U54  1 7880  
+080  1 8034  1 7319  730,  1 6631  1 7727  
+082  1 7749  1 6912  1 7497  1 6844  1 8177  
+O84  1 8050  1 7501  1 7865  1 6591  1.8030  
+OH  1 8104  1 7531  1 7469  1 7372  1.7924  
+O88  1 8251  1 7429  1 7687  1 6402  1.7813  
+O 90  1 7976  1.7034  1 7327  1 633S  1.80ft  
+092  1 8159  1.7411  1 7527  6992  1 7Ba0  
+O94  1 8088  1 7183  17366  1 6890  1 7762  
+O96  1,8U2  1 7199  1 7143  1 6781  1.7871  
+O98  1 8394  1 6962  1 7414  1 650,  1.8171  
+1 00  1 8208  1 6705  1 7401  1 HSO  18000  
+1 02  18170  1 7439  1 7533  1 $534  1 7809  
+1 04  18095  1 7400  1 7024  1 7022  1.7951  
+1 oe  1.7812  l 7037  1 7583  1 7416  1 7849  
+1.0t  1.7711  l 7172  1 7370  16629  1.8017  
+1 10  1 7872  1 7624  1 7194  115878  18061  
+1 12  1 7632  1 7051  1 7445  1 7230  1 7401  
+1 14  l 783e  1 7179  1 7261  115845  1 7452  
+1 16  1 8127  1 7260  1 7439  1 7038  1.7521  
+1 18  1 8119  1 7458  1 6774  1 6793  1 8356  
+
+TABLA vn 
+C(R(Y, R) 
+.-0.975 01•0.36 ~0.02 í•0.9 
+T  tS  
+O002 ooo• O 006 O 008 O 0 1  
+O 70  ·O 1227 -O 12•2 ·O 10U -0 091 1 -O 11 9•  
+O 72  ·O 161 7 ·O 1918 ·O 16•3 ·O 1739 -O 1515  
+O 74  ·O 1HO -O 1511 -O 1671 ·O 1743 -O 1653  
+O 76  ·O 5~ ·O 181 3 ·O 1578 -O 1918 ·O 1714  
+O 78  -O 1474 -o 1235 -O 1749 ·O 1508 ·O 1577  
+0 80  -O 1404 -O 1688 -O 1460 -O 1706 -O 1633  
+O82  -O 1472 ·O 131M -O 1642 ·O 1551 ·O 1531  
+O84  -O 1847 ·O 1678 ·O 1599 -O 1984 -0.1685  
+O86  ·O 1880 ·O 1726 -O 1400 ·O 2023 -O 1497  
+O88  ·O 1801 -O 1693 -O 1663 -O 1290 -O 1717  
+0 90  ·O 1468 ·0 1~ 1 -0.1548 ·O 1522 -0.1692  
+0 92  -O 1719 -O 1464 -O 1718 -O 1605 ·O 1442  
+O94  -o 1590 -O 1492 ·O 1721 ·O 1226 ·O 1591  
+O96  ·O 1573 -O 1592 ·O 1451 -O 1407 ·0.1522  
+O 98  ·0.1715 -o 1311 -0.1411 -o 1340 ·O 1780  
+1 00  ·O 161 1 ·O 1590 -018$1 -O 1539 -01605  
+1 02  ·O 1657 -O 1609 ·O 1542 ·O 1957 ·O 1963  
+1 04  ·0.1755 ·O 1572 -0.1583 -O 1595 -O 1230  
+1 06  -0.1606 ·O 1523 -O 181 3 ·O 1853 -O 1592  
+1 08  -o 1468 ·O 1269 ·O 1710 ·O 1286 ·O 1491  
+1 10  ·O.H540 ·O 1652 ·O 1595 ·O 1712 -0.1658  
+1 12  ·O 1416 ·O 1723 -o 1482 ·O 1682 -o 1545  
+1 14  -O 1537 -o 1434 •O 1842 ·O 1563 ·0.1297  
+1 16  ·O 1768 -O 1628 ·O 1612 ·O 1551 -0.1552  
+1.18  ·O 1625 ·O 1446 ·O 1196 ·O 1530 -0.1988  
+
+Conclusiones 
+La conclusi más importante que se deriva de los resultados de este trabajo es que un modelo de equilibrio no es incompatible con los ciclos observados en la econom1a mexicana. A pesar de que este planteamiento ya habla sido comprobado para otras economías, no deja de ser importante tanto teica como prácticamente el corroborarlo para el caso mexicano. 
+Desde el punto de vista práctico este resultado es importante porque permite contemplar la posibilidad de tener un modelo que permita evaluar los efectos de la política econica, donde el comportamiento de los agentes está representado por parámetros "profundos". Además es un modelo macroeconico consistente con los principios de la microeconom1a. 
+Si bien, los resultados obtenidos con el Modelo 2 no son los ideos, particularmente la correlaci entre el producto y la raz inversi producto, es sumamente notable que, a con toda la simplicidad que conlleva, haya podido replicar de manera tan precisa varias de las caracter1sticas más importantes de las series econicas observadas, a saber: la desviaci estándar de l a raz Inversi/Producto R (0.028 vs 0.031 observado], la autocorrelaci de primer orden del producto [0.862 vs 0.872) y l a autocorrelaci de segundo orden del logaritmo del producto 
+[0.745 vs 0.705 ] . Por el contrario, seria por demás sorprendente que las hubiera replicado perfectamente. Esto es a más relevante, porque el modelo no incluye factores tales como i mperfecciones de mercado, externalidades, heterogeneidad de los agentes, pol1ticas plicas y otros, que tuvieron un rol 
+85 
+protag6nico durante largo tiempo en los modelos que trataban de explicar las fluctuaciones econicas. 
+Vale la pena seftalar que los hallazgos obtenidos indican que los resultados del modelo determinista, sin ser exactos, proporcionan elementos adecuados para el análisis del comportamiento de los agentes econicos y son consistentes con la hipesis de Brock y Mirman (1972), citada en el primer capitulo. 
+Desde otra perspectiva, este trabajo era un ejercicio obligado por dos razones. La primera de ellas es que los modelos as1 de simplificados son el punto de partida y de referencia para la comprensi del comportamiento cualquier econom1a. La segunda raz es que permitirá determinar el poder explicativo y los efectos de la adici de .nuevas variables al modelo, as1 como el relajar o incluir supuestos o usar datos con menores problemas de medici. 
+En este sentido algunas modificaciones aparentemente promisorias que podr1an hacerse en trabajos posteriores al Modelo 2 para mejorar los resultados obtenidos son: 
+1) La bqueda de informaci de carácter econométrico proveniente de estudios microecon6micos que permitiera la inclusi6n de variables adicionales o especificar alguna forma funcional que haya demostrado ser más consistente con la realidad de la economia mexicana que las consideradas. 
+2) Modificar el tiempo de maduraci de la inversi as1 como su distribuci en los periodos de construcci con base en una estimaci confiable de estas caracter1sticas para los proyectos que se realizan en la econom1a mexicana. 
+3) La inclusi6n de choques estocAsticos a las preferencias de los consumidores. 
+4) Incorporar un sector externo al modelo, pues los modelos 
+estimados  aqu1  representa  una  economia  cerrada  y,  en  la  
+actualidad,  son  en  realidad pocas  las  economias  que  pueden  
+considerarse as!.  
+
+5) Relajar el supuesto de la oferta de trabajo totalmente inelástica, e incluir el trabajo como otra variable de la funci6n de producci6n. 
+6) considerar funciones de utilidad y/o de producci6n que tengan otras propiedades importantes, como seria la funci6n de utilidad de aversi6n absoluta al riesgo constante. 
+7) Incorporar inventarios y rigideces en salarios y precios. 
+8) Considerar otros tipos de procesos generadores de datos para los choques estocásticos que afectan a la economia. 
+9) Relajar el supuesto de separabilidad de la funci6n de utilidad. 
+Además, si en el futuro, estudios econométricos sugieren que el o los procesos estocásticos motor de la econom1a inducen en las variables econ6micas tendencias estocásticas; deberán considerarse sus efectos, tanto en la forma de filtrar los datos como en la simulaci6n del modelo. 
+Todo ello sin contar que la estrategia empirica más apropiada para esta clase de modelos sigue siendo un área abierta a la investigaci6n. 
+Finalmente, es preciso seftalar que los modelos de los ciclos reales tendrán que enfrentar y satisfacer pruebas empiricas más exigentes de las que han tenido que enfrentar a la fecha. 
+87 
+APENDICEI 
+Ecuaci de Euler para un Modelo con Tiempo para Construir 
+El problema de maximizaci que enfrenta el planificador social es: 
+• 
+sujeto a: 
+(2.1) 
+(2.2) 
+(2. 3) 
+i _ 1•1
+S -8 (2.4)
+t+l t 
+Sustituyendo la ecuaci (2.2) en (2.4) y adelantando, tenemos que: 
+s: ªke+1-(l-6)kt 
+sl =ke.2 -( 1-6) ke...1 s; ªke.3-(l-6)ke+2s: ;::kt+4 -( 1-6) kt•J 
+Sustituyendo las expresiones anteriores en la ecuaci (2.3), el gasto de inversi queda como: 
+88 
+
+I t =q,,kt•• + ( 'f)3 -q,,µ) kt•J + ( 'f>2 -q,31,L) kt•2 + ( 'f>1 -q,21,L) kt•l-q,11,Lke (2.3') 
+Sustituyendo (2.3') en (2.1) 
+Ce= f ( ke) -q,,kt•• -('f)3 -q,,µ) kt•J -('f>2 -q,31,L) ke•2 -('f>1 -q,21,L) ke•1 +q,1J1ke 
+(3) 
+Para resolver este problema empleando el principio de la programaci dinámi ca debemos identificas las variables de estado y de control. Debido a la tecnolog1a para construir la decisi6n de inversi6n que se tome en este periodo s6lo afectará cuatro periodos después, por lo que el planificador toma como dados el capital presente y de los tres periodos siguientes. Las variables de estado son: lci, ~.,, ~.2, ~+:J La variable de control es: ki+4 
+La funcion de valor puede escribirse de la siguiente forma: 
+
+La condici6n de primer orden es: 
+
+89 
+(E) 
+sean  l as  funciones:  ( 5 .1) (5.2)  
+(5.3)  
+(5.4)  
+Sustituyendo las expresiones anteriores en  (3)  (5.5)  
+Reescribiendo la condici de primer orden,  tenemos:  (E')  
+
+Deri vando la funci6n de valor con respecto a ki 
+90 
+
+Sustituyendo (E') 
+
+(6) 
+Derivando la funci de valor con respecto a ki+t 
+
+dG oh ] + 
+dkt•• dkt+l -
+
+Sustituyendo (E') 
+
+Derivando la funci de valor con respecto a ki+2 
+
+sustituyendo (E') 
+
+Derivando la funci de valor con respecto a ki+3 
+91 
+
+Sustituyendo (E') 
+
+Sustituyendo (5.1) en (6) 
+
+Adelantando la ecuaci (10) un periodo oV(ke+11'., ,ke.,) =E {U'(C ) [f'(k ) +mu]}
+cJk 
+t+l t+l t+l Tlr' 
+t+l 
+Tomando el valor esperado en t y aplicando la ley de las eperanzas iteradas 
+
+Sustituyendo (5.2) en (7) 
+
+92 
+sustituyendo (11) en (12) 
+
+Adelantando (13) un periodo 
+
+Tomando el valor esperado en t y aplicando la ley de las eperanzas iteradas 
+
+Sustituyendo (5.3) en (8) 
+
+Sustituyendo (14) en (15) 
+av<kt, ... ,kt..3) _ < _ , _ ,
+ak -Et (q,3µ cp2) U (Ct) +p (q,2µ 'P1) U (Ct•1) + t•2 l16 
++p2u'<ct+2> [f'(ke+2> +cplµ]} 
+Adelantando (16) un periodo Tomando el valor esperado en t y aplicando la ley de las eperanzas iteradas 
+93 
+
+sustituyendo (5.4) en (9) 
+
+Sustituyendo (17) en (18) oV(ke, • • • ,ke+3) -{( '( ) A / 2 I
+ak -Ee 'P,1,L-q,3) U Ce +.., (q,3µ-q,2) U (Ce•1) +p (fP21'-'P1) U (Ct•2) 
+t+) 
++p3u'(Ct•3) [f'(ke+3) +q,1µ)} {19) 
+Adelantando (19) un periodo 
+
+Tomando el valor esperado en t y aplicando la ley de las eperanzas iteradas 
+94 
++p2 ( 'P21l-<1»1) u' (Ce•J) +p3 u' (Ce.,) [f'(ke.,) +<f»11l1} (20) 
+Sustituyendo (20) en (E) 
+U1 (Ct) ... iEe{(q»,µ-cp3) U1 (Ce.1) +p (q,3µ-cp2 ) U1(Ce+2 ) 
+cp, +p2 (cp2µ-q»1) U'(Ce+3) +p3u'(Ce.,) [f'(ke.,) +cp1µ]} 
+( 21) 
+Que es la ecuaci6n de Euler del problema Puede demostrarse que en general cuando el tiempo necesario para construcci6n es den periodos la ecuaci6n de Euler es: 
+Esta misma ecuaci6n la podemos utilizar para encontrar la ecuaci6n de Euler cuando el tiempo de maduraci6n de la inversi6n es de un periodo, simplemente sustituyendo en la ecuaci6n anterior: 
+n=l; <¡»1 =l 
+de esta manera la ecuaci6n de Euler cuando el tiempo de maduraci6n de la inversi6n es un periodo como: 
+95 
+Si se propone que la funci de utilidad sea del tipo de elasticidad de sustituci constante, e i-, 
+U(C) =-e­
+t 1-'t (23) 
+entonces la utilidad marginal del consumo es: 
+(24) 
+Por otro lado se propone que la funci de producci de la econom1a sea el tipo Cobb Douglas 
+(25) 
+en consecuencia el producto marginal del capital es: 
+(26) 
+sustituyendo las ecuaciones (24) y (26) en la ecuaci (21), con los adelantos necesarios, tenemos que 
+96 
+C~=J!_Ee{ ( cp,µ-cp3) c;!1 +p (cp3µ-cpz) c;!2 +pz (cpzµ-cp1) C;!3 
+cp, 
++p3c;:, [f1 (ke.,) +cplµJ} 
+97 
+APENDICEil 
+Progruaaa tipo en RATS 
+Modelo l 
+* 
+Se asigna memoria para series de tiempo
+
+* 
+de hasta 5000 observaciones 
+
+
+all 5000 
+* Define la extension del periodo compute (integer] N•3000 compute (integrer] It = l compute (integrer] MIT =-50 compute [real] s = 0.5 
+** Caracteristicas a replicar declare vect Car(9) compute Car(l) = 0.03297 compute car(2) -0.03104 compute Car(3) -0.87184 compute Car(4) -0.70481 compute Car(5) -0.50559 compute car(6) = 0.75683 compute Car (7) -0.92688 compute car(8) = 0.83824 compute Car(9) -0.71816 
+** Variables auxiliares 
+compute [real] Cr=lO 
+compute (real] tol=0.01 
+declare vect h(4) !(4) 
+* tasa de depreciacion compute (real] d=0.002 
+do tt=-1,18 
+{ 
+compute (real] d = d + 0.002 
+compute (real] suma• o.o 
+do ww=l,10 
+begin 
+compute [integrer] It • l 
+* 
+parametros del modelo: 
+
+* 
+elasticidad capital del producto 
+
+
+98 
+compute [real) a=0.47 
+• 
+inverso de la elasticidad de sustitucion intertemporal compute (real) tau= 0.78 
+
+• 
+parametros del proceso autoregresivo de z compute [real] pl=0.90 compute (real) p0•0.00 
+
+
+* 
+Parametros del proceso estocastico de z 
+
+* 
+variancia de z compute [real] v=0.0003 
+
+* 
+factor de descuento compute [real] b= 0.96 
+
+
+• Funcion consumo esperado, se utiliza un polinomio de orden 
+2. 
+nonlin bO bl b2 bJ 
+compute bO = -1.1 compute bl = 0.42 compute b2 = 0.02 compute bJ = 1.0 
+• Valores iniciales de k y z set k 1 1 = 20 set z 1 1 = o. 
+* 
+Se define la funcion Ec, el valor esperado del consumo set Ec 1 1 = o frml fl Ec • exp( bO + bl*log(k(t-1)) + b2*z(t) + b3*z(t)**2) 
+
+* 
+Secuencia de valores de z set z 2 N = po + pl*z(t-1)+ %ran(v) set c 1 1 = o 
+
+
+frml f2 c = (b*exp( bO+bl*log(k(t-l))+b2*z(t)+b3*z(t)**2 ))**(-1/tau) frml f3 k = exp(z(t))*k(t-1)**ª + (l-d)*k(t-1) -c(t) 
+group CREC f2>>c f3>>k 
+while( (Cr >= tol).and.( It < Mit) ) begin 
+compute h(l) = bO compute h(2) • bl compute h(J) • b2 compute h(4) = bJ 
+• 
+Se calcula la secuencia {c,k} forecast(model•crec) 2 N 2 
+
+• 
+Se evalua la serie de tiempo L = E(C(t)) 
+
+
+set L 2 N-1 • (c(t+l)••-tau)*( a•exp(z(t+l))*k(t)**(a-1)+(1-d) ) 
+* Se estiman los parametros nlls(frml=fl,noprint) L 2 N-1 Resid 
+• Se calcula el criterio de convergencia 
+compute Cr = abs( %beta(l) -h(l) ) do i =2,4 if abs( %beta(i)-h(i) ) > cr compute cr = %beta(i) -h(i) end compute It = it + 1 
+do i=l,4 compute h(i) =(1-s)*h(i) +s•%beta(i) end 
+• Escribe Opcionalmente la secuencia de valores de los parametros 
+• write H 
+end If (It < MIT) 
+• Se reporta la regresion final nlls(frml=fl,noprint) L 2 N-1 Resid else write" El algoritmo no converge en" it" Iteraciones" 
+end 
+SET Q 2 N-1 -EXP(Z(t-l))*K(t-l)**a set In 2 N-1 = k(t)-(l-d)*k(t-1) set iq 2 n-1 = in(t)/q(t) set lq 2 n-1 = log(q (t)) 
+stat(noprint) lq 100 n-1 compute Stdlq == \variance••.s stat(noprint) iq 100 n-1 compute Stdiq = %variance••.s correlate(noprint,number-4) lq 100 n-1 Rhoq correlate(noprint,number=4) iq 100 n-1 Rhoiq cross(noprint) lq iq 100 n-1 O o Giqq compute ssq = ( (Car(l)-stdlq)**2+ (Car(2)-stdiq)**2 $ + (Car(3)-Rhoq(2))**2 + (Car(4)-Rhoq(3))**2 + 
+(Car(S)-Rhoq(4 ) )**2 $ + (Car(6)-Giqq(l))**2 + (Car(7)-Rhoiq(2))**2 + (Car(8)-Rhoiq(3))**2 $ + (Car(9)-Rhoiq(4))**2 )**.5 
+compute suma= suma+ ssq end end 
+compute (real ) prom = suma/10 write prom 
+} 
+end 
+100 
+Modelo 2 
+* 
+Se asigna memoria para series de tiempo
+
+* 
+de hasta 5000 observaciones all 5000 
+
+* 
+Define la extension del periodo 
+
+
+compute [integer) compute [integer) compute (integer] compute [real] s 
+N•3000 
+IT = 1 
+MIT = 50 = 0.5 
+• 
+Variables auxiliares 
+
+•caracteristicas 
+a replicar declare vector Car(9) 
+
+
+compute compute  (real) (real]  Cr=lO tol•0.0 0001  
+declare  vect  h(7)  f(7)  
+
+compute Car(l) compute Car(2) compute car (3) compute Car(4) compute car(5) compute Car(6) compute car(?) compute Car(S) compute car(9) 
+= 0.03297 = 0.03104 
+-0.87184 = 0.70481 = 0.50559 -0.75683 = 0.92688 = 0.83824 = 0.71816 
+• elasticidad capital del producto compute [real) a=0.54 
+do tt=l,20 
+{ compute a• a+ 0.01 compute (real] suma• o.o 
+do WW•l,10 
+compute [integer) It •1 
+* 
+parametros del modelo: 
+
+* 
+factor de descuento compute [real] b= 0.975 
+
+* 
+inverso de la elasticidad de sustitucion intertemporal compute (real] tau-o.as 
+
+* 
+tasa de depreciacion compute (real) d=0.005 compute [real] jl• 0.25 compute [real) j2= 0.25 compute (real) j3= 0.25 
+
+
+101 
+computr (real] j4= 0.25 
+* 
+Parametros del proceso estocastico de z 
+
+* 
+variancia de z compute (real] v=o.oos 
+
+* 
+parametros del proceso autoregresivo de z compute (real] pl=0.90 compute (real] p0=0.00 
+
+* 
+Funcion consumo esperado, se utiliza un polinomio de orden 2. nonlin bO bl b2 b3 b4 b5 b6 compute bO = 1.5 compute bl ,. -0.2210812 compute b2 = 0.1 compute b3 -0.01 compute b4 = -0.1658109 compute b5 = -0.1105406 compute b6 = -0.0552703 
+
+* 
+Valores iniciales de k y z set k l 4 • 20 set z l l = o. 
+
+* 
+Se define la funci9n Ec, el valor esperado del consumo set Ec l l = O frml fl Ec • exp{bO+bl*log(k(t-1))+b2*z(t-l)+b3*z(t-l)**2+b4*1og(k(t-2)) $ 
+
+
++b5*log(k(t-3))+b6*log(k(t-4)) ) 
+* Secuencia de valores de z set z 2 N =-pO + pl*z(t-1)+ lran(v) set c 1 1 = 5.63 set in 1 4 = 0.4 
+frml f2 c=(b*exp( bO+bl*log(k(t-l))+b2*z(t-4)+b3*z(t-4)**2 $ +b4*log(k(t-2)) + b5*log(k(t-3)) +b6*log(k(t-4)) 
+) )**(-1/tau)
+frml f3 
+i n=(exp(z(t-4))*k(t-4)**a-c(t)-jl*in(t-3)-j2*in(t-2)-j3*in(t-l 
+) )/j4 
+frml f4 k = (l-d)*k(t-1) + in(t-3) 
+l 
+group CREC f2>>c f3>>in f4>> k 
+while( (Cr >= tol).and.( It < Mit) ) begin 
+compute h(l) =-bO compute h(2) = bl compute h(3) • b2 compute h(4) = b3 compute h(5) = b4 compute h(6) • b5 compute h(7) = b6 
+• Se calcula la secuencia {c,k} forecast(model=crec) 3 N-4 5 
+• Se evalua la serie de tiempo L = E(C(t)) set L 5 N-4 • (l/j4)*( 
+(j4*(1-d)-j3)*c(t+l)••-tau+b*(j3*(1-d)-j2)*c(t+2)••-tau $ + b*b*(j2*(1-d)-jl)*c(t+3)*•-tau + b*b*b*(c(t+4)••-tau) $ 
+•ca•exp(z(t+4))*k(t+4)**(a-l)+jl*(l-d)) ) 
+• 
+Se estiman los parametros nlls(frml=fl,noprint) L 5 N-4 Resid 
+
+• 
+Se calcula el criterio de convergencia 
+
+
+compute Cr = abs( %beta(l) -h(l) ) do i=2,7 if abs( %beta(i)-h(i) ) > Cr compute Cr = %beta(i) -h(i) end compute It • it + l 
+do i•l,7 compute h(i) •(1-s)•h(i) +s•%beta(i) end 
+• 
+Escribe Opcionalmente la secuencia de valores de los parametros 
+
+• 
+write H 
+
+
+end If (It < MIT) 
+• Se reporta la regresion final 
+nlls(frml=fl) L 5 N-4 Resid else write" El algoritmo no converge en" It" Iteraciones" 
+end 
+set q 5 n-4 = exp(z(t))*k(t)••a set gin 5 n-4 • jl•in(t-3) + j2•in(t-2) +jJ•in(t-1) + j4•in(t) set lq 5 n-4 • log(q(t)) set iq 5 n-4 • gin(t)/q(t) 
+stat(noprint) lq 500 n-4 compute Stdlq = %variance••.5 stat(noprint) iq 500 n-4 compute Stdiq = %variance••.5 correlate(noprint,number=4) lq 500 n-4 Rhoq correlate(noprint,number•4) iq 500 n-4 Rhoiq cross(noprint) lq iq 500 n-4 o o Giqq compute sss • ( Abs(Car(l)-Stdlq) + Abs(Car(2)-Stdiq) + Abs(Car(3)-Rhoq(2)) $ + Abs(Car(4)-Rhoq(3)) + Abs(Car(5)-Rhoq(4)) + Abs(Car(6)-Giqq(l)) $ + Abs(Car(7)-Rhoiq(2)) + Abs(Car(S)-Rhoiq(J)) + Abs(Car(9)-Rhoiq(4)) ) 
+compute suma• suma+ sss 
+end 
+compute [real] prom = suma/10 
+write prom } 
+end grparm keylabeling a labels q c gin # 'Producto' 'Consumo' 'Inversion' graph(header='Figura S',subheader='Patron dinamico típico para el Modelo 2',key=upleft) 3 # q # e # gin 
+104 
+APENDICEill 
+Filtrado de Dato• 
+Como ya se mencion6 en el capítulo I, en general, salvo casos especiales, los modelos de ciclos reales derivados del modelo de crecimiento neoclásico estocástico no poseen una tendencia, esto es, poseen un estado estacionario, alrededor del cual, una vez que ha sido alcanzado, se dan las fluctuaciones econicas. Esto ha suscitado una serie de debates en cuanto a la forma de quitar la tendencia a los datos o filtrado, así como consideraciones realcionadas a la estacionalidad de los datos. En esta línea encontramos la discusi de si las componentes de tendencia y la cíclica se deben a las mismas causas o a diferentes, si dichas causas tienen un carácter determinista o estocástico. Estudios como los de Lucas (1985) y King, Plosser, Stock y Watson sugieren que las componentes secular y cíclica de la series de tiempo econicas están ligadas inextricablemente. 
+Algunas consecuencias de estas observaciones para los estudios econométricos son explorados en el contexto de un ejemplo motivado por el análisis de Kydland y Prescott (1982). En particular se argumenta que el remover las componentes estacional y secular no deterministas, en general, sesgará las estimaciones de los parámetros que determinan las propiedades dinámicas de los modelos. Más a prefiltrar los datos puede conducir a la violaci de las restricciones de momentos implicadas por la teor1a . Específicamente, representaciones de l as horas trabajadas y salarios reales en un vector bivariado autorregresivo (VAR), usando datos ajustados por estacionalidad, 
+no ajustados y datos filtrados usando el procedimiento para quitar tendencia de Kydland y Prescott (1982) indican que el f i 1 trado tiene importantes efectos sobre las interrelaciones dinámicas entre estas series. 
+Para ilustrar las implicaciones que puede tener la forma en que se hace el filtrado de los datos, considérese un consumidor representativo que elige consumo~ y ocio~ para maximizar la utilidad esperada: 
+-
+E0:E pt ({e: (cxlt+ {1-cx) lt_1 ) 1 -ª}Y-1) /y (1) t•O 
+La ecuaci 6n de Euler puede expresarse en la relaci6n econométrica: 
+6 wtlt -ex-A {1-cx) [C / C] ay [1 /l ] <1-a>y-1•u 
+~ e .., t•1 e t·1 t t•1 
+t (2) 
+con: 
+
+y  si  además  los  consumidores  pueden  comerciar  un  activo  
+f i nanciero  riesgoso  con  retorno  r••1  entre  las  fechas  t  y  t+l,  
+tenemos  además  la siguiente relaci6n econométrica:  
+
+
+(3) 
+con: 
+
+Las rel aciones econ6metricas anteriores imponen r estricciones a las componentes secular, c1clica y estacional de 
+e; wt lt y rt. Como punto de partida sup6ngase que las componentes seculares son tendencias deterministas y las componentes estacionales pueden ser representadas en términos de variables binarias (dummy) estacionales. La independencia de lli+a y de vt+t de las variables en el conjunto de informaci de los agentes en la fecha t implica que las secuencias Ui y vt son procesos puramente estocásticos. Consecuentemente, cualquier componente determinista de las secuencias w" e;, r, y 1, debe ser removida de los lados izquierdos de las ecuaciones (2) y (3). 
+Es claro que las componentes deterministas en general no se cancelarán de estas reacciones si son adoptadas descomposiciones aditivas de las series de tiempo en componentes de tendencia, c1clicas y estacionales. Por lo tanto, dichas descomposiciones estad1sticas aditivas son inconsistentes con el ambiente econico que determina las ecuaciones (2) y (3). En este caso, es admisible una descomposici aditiva de los logaritmos de las variables. En general no se especifica un tendencia para el ocio, puesto que las horas dedicadas al ocio per cápita está acotada superiormente por la restricci6n de tiempo. También, consistente con muchos modelos de crecimiento y la evidencia estad1stica se supone que los retornos reales no presentan tendencias. 
+Cuando hay un crecimiento geométrico y las relaciones 
+econométricas involucran razones de las variables como las de las 
+ecuaciones (2) y (3) no es necesario estimar los coeficientes de 
+tendencia. Relaciones como (2) y (3) son funciones de variables 
+estacionarias solamente. Más generalmente uno t1picamente puede 
+remover las tendencias deterministas y luego proceder con la 
+estimaci usando los datos sin tendencia sin afectar la 
+consistencia de la estimaci de los modelos de ciclos econicos de equilibrio. Las componentes estacionales deterministas pueden ser tratadas de manera análoga1 • 
+En la práctica, las restricciones entre las componentes deterministas impuestas por la teor1a pueden ser demasiado simples pueden ser demasiado simples para capturar las interrelaciones entre las componentes deterministas de los datos. En este caso, los investigadores commente proceden a estudiar los datos sin tendencia y desestacionalizados. Esto supone que las componentes deterministas son determinadas por factores diferentes a los que causan los ciclos econicos 6 que estas componentes no distorsionan seriamente las ligas c1clicas. 
+Por estacionalidad no determinista se entiende un proceso con una funci de densidad espectral que es diferente de cero en casi cualquier frecuencia y que tiene picos espectrales pronunciados en las frecuencias estacionales. De manera semejante la componente secular es un proceso con la mayor parte de su densidad concentrada en frecuencias menores a las frecuencias c!clicas, el valor limite entre estos dos rangos de frecuencias sugerido por Kydland y Prescott es n/16. Su presencia per se no viola las condiciones de momentos E;.1{Ui}=O=E;.1{v,} para el modelo descrito antes. Sin embargo, los movimientos seculares o estacionales no deterministas de las variables que determinan Ui y v, deben satisfacer deben satisfacer las restricciones de autocorrelaci por estas restricciones de media condicional. Para modelos que incluyen cambios estacionales en las 
+1K. J. Singleton(l988). 
+preferencias como el tratado por Miron (1986) este enfoque equivale a desestacionalizar ciertas funciones de las variables del modelo en lugar de desestacionalizar cada serie individualmente. 
+En la práctica los filtros usados para ajustar por estacionalidad las series de tiempo son filtros de dos lados. El filtro Census X-11 que es el filtro oficial de ajuste estacional es no lineal. Sin embargo es bien aproximado por un filtro lineal. 
+El trabajar con datos ajustados por estacionalidad aten la retroalimentaci de los salarios a las horas trabajadas y puede conducir a los investigadores a sobreenfatizar la substituci intertemporal u otros mecanismos de amplificaci de la respuesta de las horas a los salarios. 
+El ajuste estacional aten el poder a las frecuencias estacionales. Si el mayor poder de las series que se ajustan es a bajas frecuencias el ajuste puede no tener un efecto importante en las propiedades de las series. Por otro lado, el filtro (1-L), es decir la primera diferencia, amplifica el poder de las altas frecuencias y atenual el poder de las bajas frecuencias, y precisamente, las altas frecuencias muestran la más pronunciada diferencia entre las series ajustadas y no ajustadas. De aqu1 se sigue que el ajuste estacional distorsionará las tasas de crecimiento de varias series de tiempo econicas mucho más que los niveles estimados. 
+Singleton (1988) indica que para los datos usados por 
+Kydland y Prescott (1982) los resultados para los datos filtrados 
+con el filtro por ellos propuesto sin ajuste estacional son 
+109 
+similares a los obtenidos con los datos no ajustados estacionalmente de las tasas de crecimiento de las horas trabajadas y los salarios. Esto es, filtrando con el filtro de Kydland y Prescott tiene efectos similares a diferenciar los datos. La raz es que ambos, dan esencialmente un peso de cero a las frecuencias muy bajas mientras que amplifican el poder en las frecuencias altas. 
+Visto desde de otro punto de vista, los hechos estilizados que se pretenden replicar con los modelos de ciclos reales pueden haber sido distorsionados por los procedimientos de filtrado. 
+Prefiltrar los datos en general conducirá a estimaciones inconsistentes de los parámetros de los modelos de equilibrio de ciclos econicos. Esta inconsistencia puede ser encontrada en la violaci de las restricciones de la media condicional impuestas por los problemas de optimizaci intertemporal de los agentes. En este sentido resulta apropiado el enfoque de informaci limitada para la estimaci y la inferencia. 
+Los efectos de confusi entre lo que es componente secular y c1clica es una consecuencia de que los choques son transmitidos a los resultados visibles de los procesos de decisi6n de los agentes por medio de mecanismos dinámicos, tales como el costo de ajuste y tiempo para construir. Más a patrones cíclicos y de crecimiento pueden ser inducidos endenamente como una consecuencia de una toma de decisi tima. Si es as1 el supuesto de que estos componentes son debidos a distintos fenenos econicos. 
+En general podemos pensar que si los choques a la economia 
+presentan alguna tendencia en general se reflejará en las 
+variables endenas del modelo. Sin embargo, no siempre sucede as1, Eichembaum, Hansen y Singleton (1987) muestran las condiciones para las cuales las series de tiempo de consumo, empleo y salario real pueden mostrar tendencias estocásticas aun cuando los choques externos a la econom1a carezcan de ella. Una condici suficiente para ello es que las series de consumo y salario real estén cointegradas en el sentido de Granger y Engle 
+(1987). 
+Más a las implicaci6n más importante de los modelos de crecimiento end6geno es que los agentes pueden inducir tendencias estocásticas en las variables de decisi6n. 
+En resumen existen razones para estudiar las componentes ciclicas y seculares de las series econ6micas simultáneamente. La más importante de ellas es que ambas componentes provienen de las misma decisi6n de los agentes y en consecuencia las componentes de tendencia de las series de tiempo pueden poseer informaci6n valiosa acerca de la estructura subyacente de la econom1a. 
+BIBIOGRAl'IA 
+Baxter M. et al, (1990): "Solving the stochastic growth model by a discrete-state-space, euler-equation approach", Journal of Business and Economic Statistics, 8, 19-21. 
+Blanchard o. and Fisher s. (1989), Lectures on Macroeconomics,
+MIT Press. 
+Brock, William A. and Hirman, Leonard J. (1972): "Optimal economic growth and uncertainty: the discounted case", Journal of Economic Theory, 4, 479-513. 
+Christiano, Lawrence J. (1990): "Solving the stochastic growth model by linear-quadratic approximation and by value-function iteration", Journal of Business a.nd Economic Statistics, a, 23­26. 
+Christiano, Lawrence J. and Eichenbaum, Martin (1992): "Current real-business-cycle theories and aggregate labor market fluctuations", The American Economic Review, 82, 430-450. 
+Coleman, Wilbur J. II (1990): "Solving the stochastic growth model by policy function iteration", Journal of Business and Economic Statistics, 8, 27-29. 
+Den Haan, Wouter and Marcet Albert (1990): "Solving the stochastic growth model by parameterizing expectations", Journal of Business and Economic statistics, 8, 31-34. 
+Diebold, Francis X. and Rudebusch, Glenn o. (1994): "Measuring business cycles: a modern perspective", NBER Working Papers, No. 
+4643. 
+Fisher Ingram, Beth (1990): "Solving the stochastic growth model by backsolving with an expanded shock space", Journal of Business and Economic Statistics, 8, 37-38. 
+Gagnon, Joseph E. (1990): "Solving the stochastic growth model by deterministic extended path" , Journal of Business and Economic Statistics, 8, 35-36. 
+Eichenbaum, M.S. et al (1988): " A time series analysis of representative agent models of consumption and leisure choice under uncertainty", The Quarterly Journal of Economics, February, 51-78. 
+Eichenbaum Martin and Hansen Lars P. (1990): "Estimating models with intertemporal substitution using aggregate time series data", Journal of Business and Economic Statistics, a, 53-69. 
+Eichembaum, Martin (1991): "Real business-cycle theory. Wisdom or whimsy?", Journal of Economic Dynamics and Control, 15, 607­626. 
+King, Robert, Plosser, Charles and Rebelo, Sergio T. (1988): 
+"Production, growth and business cycles: I. The basic neoclassical model", Journal of Honetary Economics, 21, 195-232. 
+King, Robert, Plosser, Charles and Rebelo, Sergio T. (1988): "Production, growth and business cycles: II. New Directions", Journal of Honetary Economics, 21, 309-342. 
+King, Robert G. and Rebelo, Sergio T. (1993): "Low frecuency filtering and real business cycles", Journal of Economic Dynamicsand Control, 17, 207-231. 
+Kydland, Finn E. and Prescott, Edward c. (1982): "Time to build and aggregate fluctuations", Econometrica, 50, 1345-1370. 
+Labadie, Pamela (1990) Solving the stochastic growth model by using a recu.rsive mapping based on least squares projection", Journal of Business and Economic Statistics, 8, 39-40. 
+tucas Robert E. (1988), Modelos de Ciclos Econicos, Alianza Universidad. 
+McGrattan, Ellen R. (1990): "Solving the stochastic growth modal by linear quadratic approximation", Journal of Business and Economic Statistics, 8, 41-44. 
+Mendoza, Enrique G. (1991): "Real Business Cycles in a Small Open Economy", The American Economic Review, 81, 797-818. 
+Plosser, Charles I. (1989): "Understanding Real Business Cycles", J ournal of Economic Perspectivas, 3, 51-77. 
+Prescott, Edward e. (1986): "Theory ahead of business cycle measurement", Federal Reserve Bank of Hinneapolis Quarterly Review, Fall, 9-22. 
+Quiroz, Jorge A. et al, (1991): "Modelos y realidad: ensef\ando macroeconomía en los noventa", Revista de Analisis Econico, 6, 79-103. 
+Rotemberg, Julio J. and Woodford, Michael (1994): "Is the business cycle a necessary consequence of stochastic growth?", 
+NBER Working Papers,  No.  4650.  
+Ryder, H. E. and Heal G.M. (1973): "Optimal intertemporally dependent preferences", Review studies, 40, 1-31.  growth with of Economic  
+
+Sala-i-Martin, Xavier "Lecture notes on economic growth (I): 
+Introdcution to the literature and neoclassical models", NBER Working Papers, No. 3563. 
+Sims, Christopher A. (1990) "Solving the stochastic growth model by backsolving with a particular nonlinear form for decision rule", Journal of Business and Economic Statistics, 8, 45-47. 
+Singleton, Kenneth J. (1988) "Econometric issues in the analysis of equilibrium business cycle modela", Journal of Monetary Economics, 21, 361-386. 
+stokey, Nancy and Lucas Robert <19s9) , Recursive Methods in 
+Economics pynamics, Harvard University Press. 
+Tauchen, George (1990): "Solving the stochastic growth model by using quadrature methods and value function interations", Journal of Business and Economic Statistics, 8, 49-51. 
+Taylor, John B. and Uhlig, Harald (1990): "Solving nonlinear stochastic growth models: a comparison ot alternativa solution methods", Journal of Business and Economic Statistics, 8, 1-17. 
+watson, Mark w. (1993): "Measures of fit for calibrated models", Journal of Political Economy, 101, 1011-1041. 
+114 
+
+
+

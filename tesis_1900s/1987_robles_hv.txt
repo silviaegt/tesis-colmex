@@ -1,0 +1,1629 @@
+EL COLEGIO DE MEXICO CENTRO DE ESTUDIOS ECONOMICOS 
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRIA EN ECONOMIA 
+IMPUESTOS OPTIMOS EN UN MODELO DE EQUI LIBRIO GENERAL: REFORMAS FISCALES ALTER NATIVAS A LA REFORMA FISCAL MEXICA NA DE 1987 
+H~ctor v. Robles Vásquez 
+Promoci6n 1985-87 
+Asesor: Profr. Alvaro Baillet 
+Revisor: Profr. Eduardo P~rez Motta 
+I MPt)ESI'OS OPTI MOS EN UN MODELO DE EQUI LI BRI O GENERAL ; REFORMAS FISCAL.ES ALTERNATIVAS A LA REFORMA FISCAL MEXICANA DE 1 007 
+ASESOR : AL V ARO BAI LLET ALUMNO : HECTOR V. ROBLES V, CENTRO DE ESTUDIOS ECONOMI COS 
+EL COLEGIO DE MEXICO, SEPTIEMBRE DE 1987. 
+INDir;E 
+1.INlRODUCCION 1 
+1. 1 Las Re·f ornias Fiscal es de 1983 y 1987. 2 
+1.2 Consideraciones preliminares sobre la Reforma Fiscal de 1987 en cuanto a sus efectos sobre la distribuci del ingreso y el bienestar de poblaci. 7 
+1.3 Descripci de los capitulas restantes 8 
+2. MARCO IEORICO 10 
+2.1 Imposici tima a bienes 12 
+2.2 Imposici ti.ma al ingreso 12 
+2.3 La teoria de la Reforma Fiscal 14 
+3. ME·rODO PARA DE·rERM1NAR I MPUES f OS OPT 1 MOS 
+RESIR1NG1L>0S 19 
+3.1 La funci de bienestar social 19 
+3.2 El algoritmo de Lagrange Aumentado 20 
+3.3 Desarrollo de un nuevo algorit~o para determinar impuestos timos. 24 
+4. EL MODELO DE EQUILIBRIO GENERAL UTILIZADO 27 
+4.1 Descripci del modelo 27 
+4.2 El equilibrio en el a~o base 31 
+S. IMPUESlOS OPTIMOS I SIMULACIONES DE REFORMAS OP llMAS ALl ERNA 11 VAS A LA REFORMA FISCAL MEXICANA DE 1987 36 
+5.1 La Reforma FiscaJ de 1987. 37 
+5. 2 Impuestos Optimas Rest·ringi dos 41 
+5.2.1 Algunas observaciones sobre nuestros resultados 44 
+
+
+5.3 Reformas Fiscales Optimas Alternativas a la 'Reforma Fiscal • de 1987. 45 
+5.3.1 El bienestar socia] derivado del uso de los instrumentos timos. 49 
+5.3.2 Algunas conclusidnes del an~lisis comparativo. 51 
+
+
+
+
+6. CONCLUSIONES GENERALES 54 
+APENO ICE 58 
+Bl.BLIOGRAFIA 71 
+PROGRAMACION DEL ALGORlíMO DE LAGRANGE AUMENfADO 73 1. INlRODUCCION 
+Durante el presente sexenio el gobierno ha llevado a cabo dos grandes reformas fiscales en 1983 y en el aRo en curso -que han atendido fundamentalmente a la recuperaci de sus ingresos. La pérdida en bienestar social que cada reforma i111plic6 no fue t0111ada en cuenta explicitamente por el gobierno al disef'lar cada una de dichas reformas. 
+Este trabajo pretende mostrar que existen alternativas fiscales más deseables -en el sentido de minimizar la pérdida en bienestar social-a la reforma fiscal de este ano. 
+Las hipesis -que fueron posteriormente confirmadas-eran& 
+l. Existen alternativas fiscales más deseables que la presente reforma. 
+2. Las tasas impositivas timas sobre la renta en las e•preaas no tienen que ser uniformes como pretende la Reforma Fiscal de 1987. Dificilmente dicha tasa uniforme optimizará el bienestar social permitiendo al mismo tiempo que el gobierno alcance cierta 1Deta recaudatoria. 
+Para verificar , rechazar o matizar las hipesis se a1igi6 el enfoque de los modelos walrasianos de equilibrio general aplicado. El modelo de equilibrio general aplicado <MEGA> utilizado tue el 
+diseftado  por  Estrada  <1987)  para  simular  un  aspecto  de  la  
+Refor1na  Fiscal  actual,  a  saber,  la elíflínacion  del  subsidio,  que  
+en  los  hechos,  el  gobierno  daba  a  las  empresas  al  permitirles  
+
+
+deducir en la determinaci de su base gravable, los intereses nominales sobre sus deudas <anteriormente el +isco no ajustaba ese concepto de la base gravabie de las empresas por la inflaci>. Con este modelo de la economía mexicana, primeramente simula111os la Reforma Fiscal incorporando otro propito de ésta, la imposici uniforme con una tasa de 0.35¼ a la renta de la~ e,npresas. Posteriormente, mediante la aplicaci de un algorit•o nufllérico y de ideas de inteligencia artificial determinamos tres posibles 
+Reformas  Fiscales timas  correspondientes  a  tres  eleccionefi  
+particulares de  la  funci  de  bienestar  social.  
+El  problema  que  se  intent resolver  fue  maximizar  una  funci  
+de  bienestar  social  sujeta  a  una  recaudaci  que  el  gobierno  se  
+
+ha fijado como meta a alcanzar con la reforma fiscal actual y atendiendo además a rigideces institucionales y politicas. La especificaci de aste problema se hace en los capitules 2 y 3 del 
+presente trabajo. 
+En la seccic~n siguiente de este capitulo se revisan someramente los propjtos de las reformas fiscales de 1983 y de 1987. En la que le sigue, se analiza en una primera aproximaci la Reforma Fiscal de 1987 desde el punto de vista de la desigualdad del 
+ingreso y del bienestar. Finalmente se da una visi de conjunto del resto del trabajo~ 
+1. 1 Las re+ o.rm51.s ti scal es de 191:33 y de l C/07. 
+Como respuesta a la crisis econica iniciada en nuestro pa1s por la caída de los precios internacionales del petreo en 1982, el gobierno emprendiun programa de ajuste denominado Programa 
+
+Inmediato de Reordenaci Econica <PlHE) con el obJetiva de amortiguar los efectos de la crisis y eventualmente para orientar 
+a  la ecanomla  a  una  senda  de  crecimiento  con  baJas  tasas  de  
+inflaci  y  desempleo.  
+Co~ponentes  centrales de  este  plan  fueron  los  obJetivos  de  
+reducir  el  déficit  presupuestal  del  gobierno;  de  reestructurar  el  
+sistema financiero  y  de  desarrollar  nuevas  po11ticas cambiarías  y  
+comerciales  que  permitieran  revertir  la tendencia  deficitaria  de  
+nuestra  balanza  comercial.  
+
+La estrategia antiinflacionaria puso énfasis en el mecanismo tradicional de reducir el déficit presupuesta! mediante la disminuci en el gasto y en la elevaci de sus ingresas. Para cumplir esto timo, el gobierno emprendien enero de 1983 una reforaa fiscal que contemplaba en faraa importante la modificaci en las tasas del impuesto al valor agregado <IVA>. Las ~edificaciones más importantes al lVA fueron elevar la tasa general del 10% al 15¾; ampliar la base gravable incluyendo a los alimentos procesados que antes estaban exentos, gravándolos con la mis•a tasa que la aplicada a las transacciones fronterizas tbz,; los articulas de JuJo fueron gravados con una tasa del 2ox. 
+Paralelamente el gobierno redefinisus po11ticas de precio», tarifas y subsidios. Consecuencia de esto, la recaudaci real del gobierno se incrementen 1983, lb.b4Z respecto a 19H2. Sin embargo la recaudaci real cay6 a una tasa de -3X en 1904 respecto al afto anterior. Esta calda en la recaudaci real se dio no obstante que el producto interno bruto de 1984 acusun aumento, en relaci al de 1983 de 3.7%. 
+
+La  contracci  en  la recaudaci  real  junto  a  aumentos  en  el  
+gasto plico  mfji_s  allá  de  lo  programado,  vol vi 6  a  elevar  el  
+déficit presupuesta!.  Esto puede  observarse  en  el  cuadro  1.1  en  
+.  . 1 
+
+el cual se muestra el déficit financiero y pr1111ar10 , se puede observar como ambos déficits se reducen inmediatamente después de la reforma. El déficit primario se torna superavitario de 1983 a 1986. Sin embargo, al incluir en el déficit el pago de intereses éste se eleva a partir de 1985 como proporci del P1B. 
+Cuadro 1.1 Déficits financiero y primario 
+(porcentaje del PIB> 
+__-1..,.Y...a...,2.___ __,,1....,9'""'ª;.,;3.___--'1=-9...,e...4_,___....1__9_=ª=5___..1__.:904• 
+DEFICIT PRIMARIO 9.4 -3.3 -3.0 -2.1 -3.0 DEFICIT FINANCIERO 1 i'. 6 9.0 9.8 9.9 14.b 
+Fuente: Alberro José y Cambiase Jorge, Uocumento de trabajo No. 1966-V, Col-Hex. 
+• Proyectado. 
+Por otro lado, la inflaci en 1984 hablase reducido en 59X casi un 40~ menos que en el afta anterior, pero nuevamente se incrementaba en 1985 a 647.. Esto indicaba que la estrategia ortodoxa de reduci.r el déficit presupuesta! para abatir la inflaci no bastaba. Nuevos mecanismos mediante los cuales la inflaci afecta al déficit plico y •ste afecta a la inflaci 
+
+estaban apareciendo en la econom1a. Uno de los mecanismos más 
+obvios consiste en el circulo vicioso, inflaci-tasas de 
+interés-costos-inflaci que afecta tanto a empresas como al 
+gobierno. Con altas tasas de inflaci los intereses nominales 
+han aumentado para no desmotivar el ahorro, elevando as! los 
+costos nominales de las deudas. Esto presiona el balance 
+presupuestal aumentando el déficit financiero y contribuyendo asi 
+a un incremento en la inflaci. 
+Otro de estos mecanismos perversos que retroalimentan a la inflaci y al déficit presupuesta!, consiste en el deterioro de la base gravable de las empresas al permitirles -antes de la actual reforma fiscal-deducir la totalidad de sus intereses 
+nominales de sus deudas sin ajustarlos por la inflaci., Desde 1985 el Banco de México en su informe anual apuntabas "La causa más importante de la caida que la carga tributaria no petrolera del gobierno Fiscal ha experimentado en los timos afies ha sido la mayor inflaci que distorsionfuertemente el cálculo de la base gravable del Impuesto sobre la Henta. La ley del Impuesto sobre la Renta, al permitir la deduce i .:.."n total de 1 os 1ntereses nominal es sin considerar al mismo tiempo la disminu­ci que la inflaci provoca en el valor real de los pasivos, posibiiita en la prác­tica la deducibilidad de buena parte de la amortizaci real de las empresas" 
+La Subsecretaria de Ingresos de la SHCP ha estiMado que la recaudaci del impuesto sobre la renta diminuyo de 5.8% del PIB en 1981 al 4.2 en 1985 y 4X en 1986 <estimado>, calculando que más del 70~ de esta caída corresponde a las contribuciones de las empresas por este concepto. 
+
+El proble1Ra econico se compl ic-:i a•:m más en 1986. Nuevamente la calda de los precios del petreo en los primeros meses de 1986 agudiz~-!i la crisis y el gobierno acudicomo en noviembre de 1982, a la banca internacional por medio del Fondo Monetario Internacional en busca de recursos frescos. Un nuevo programa de ajuste convenido con el Fondo habria de implementarse. 
+A mediados de 1986 el gobierno e111prendiel Prograaa de Aliento y Crecimiento. Instrumento central de este programa, vuelve a ser la polit1ca de finanzas publicas. Una nueva reforma imposjt1va se 
+iniciarla,  paralelamente  la  pol1tíca  de  ajustes  periodicos  de  
+precios  y  tarifas continuarla;  del  lado  del  gasto  se  plante un  
+recorte  del  gasto programable  y  mantener  el  control  sobre  el  
+gasto  corriente,  asto  se  argumentaba  que  posibili_taria  la  
+inversi  plica.  
+A principios de  19~7  se  inici esta  nueva  reforma  fiscal  que  se  
+ha  fijado  como  metas:  
+
+•incrementar en 1.3% del PIB los ingresos tributarios mediante el ajuste de la base gravable'. 
+'Incrementar a 0.6% del PlB sus ingresos mediante el ajuste de precios y tarifas del sector plico•. 
+'Reducir su gasto en 0.5% del PIB y adem~s incrementar la inversi plica en términos reales en un 15%'. 
+y en cuanto a sus objetivos especificas: 
+'Romper el circulo vicioso, entre inflaci y disminuci de los ingresos plicos•. 'Aumentar la recaudaci, sin elevar las tasas impositivas en el equivalente a 1.3% del PHJ'. 
+'Propiciar el crecimiento econico y el cambio estructural alentando la inversi productiva y la capitalizaci de las 
+
+'Restituir la equidad del sistema tributa­
+rio Nacional'. 
+Combatir la evasi físcal 2 
+La medida más importante es sin lugar a dudas el ajuste en la base gravable de las empresas. Conviene para los propitos de este trabajo destacar dos acciones de este aju~te. Una es que las empresas deduzcan sus intereses reales sobre sus deudas y no los nominales, la restante consiste en uniformizar la tasa impositiva sobre la renta de las empresas a un nivel de 35%. 
+Este breve bosquejo de ambas refor~as nos permite concluir que ellas han tendido fundamentalmente a reducir el déficit presupuestal mediante la recuperaci o elevaci de los ingresos reales del gobierno. 
+1.2 Consideraciones preliminares sobre la Refgrma Fiscal 9§. 1Y~7 m cuantoª sus efectos sobre !A distribuci del mgreso ~ @l. 
+
+Respecto a los efectos sobre la distribuci15n del ingreso, siguiendo a Garcla Alba (1982> es de esperarse una disminuci en la desigualdad del ingreso. En efecto, en su estudio sobre la evasi fiscal en México este autor indicaba que un instrumento fiscal directo para disminuir la desigualdad del ingreso consistia en gravarlo progresivamente. No obstante, en esa época no era recomendable tratar de disminuir la desigualdad por esa v1a debido al alto grado de evasi a este tipo de impuestos por parte de los individuos con mayores ingresos. 
+Dentro de esta perspectiva, la reforma adquiere sentido pues 
+
+por un lado está reduciendo la tasa impositiva y aumentando la base gravabl e del impuesto sobre 1 a renta de las ell'lpresas )' por otro se propone combatir la evasi fiscal 
+Si se logra disminuirla significativamente es muy posible qua la 
+distribuci del ingreso mejore. 
+En cuanto a las consideraciones de bienestar, extrafla que no se haya atendido este aspecto de forma explicita. Sabemos, desda al punto de vista teico y situ~ndose en eJ terreno utilitarista, que es posible diseflar una reforma fiscal que minimice la pérdida en utilidad que surge de un aumento en los gravámenes que enfrentan los agentes econicos. 
+Existe un estudio en esa linea elaborado por Kanosky (l'll:j5) para djseKar Reformas Fiscales alternat1vas a la 1-<eforma Fiscal Mexicana de 1983, sin embargo, no nos arroja pistas seguras para evaluar tentativamente la Reforma Fiscal de 1981. Lo ico que en este momento podemos decir es que parece ser positivo que no se pretenda gravar más el consumo. 
+Como ya mencionamos, este trabaJo intenta mostrar que existen 
+a] ternati vas h scal es m~s deseables a la retorma actual, en base a los efector en bienestarhacer el análisis. 
+1.3 Descripci de los Ci!J)itulos restantes. 
+En el capitulo 2 damos un bosquejo te~rico de la imposici y de las Reformas Fiscales Optimas. En el que le sigue, explicamos el método seguido para resolver el problema de la ma::imizaci6n del bienestar social sujeta a una recaudaci dada y a rigideces 
+institucionales y politicas. 
+
+En el capitulo 4 se revisa someramente el modelo de equilibrio general aplicado <MEGA} que utilizamos. En el capitulo 5 se presenta la eval uaci. ·~n en términos de bienestar de la Heforma Fiscal -o mejor dicho, de lo que aqul se considera como tal-asi como el análisis de las simulaciones de tres retonnas t1scales 
+·.·,Spti mas.  En  el  timo  capitulo  planteamos  las  conclusiones  
+generales  que  pueden  eutraer~e  de  los resultados  y  del  desarrollo  
+del  proyecto.  
+
+Notas: 
+1 ~l d~ficit tinanciero es simplemente la di terenci.a entre ingresos y egresos del gobierno. El déficit primario es el déficit financiero menos el pago de interéses de' la deuda gubernamental. 
+z Fuente: SHCP, "1987, Reforma Fiscal, México 1981, pp. 1~, 14 y 19. 
+
+2. MARCO lEORICO 
+Aqui mostramos en forma esquemática, co ha surgido el enfoque de encontrar impuestos timos en modelos de equilibrio general aplicado. 
+El enfoque moderno de las teorías de la Econom1a Plica~ incorpora el criterio estandar del bienestar econico a través da una funci de bienestar social del tipo 8ergson-Sa,nuelson1 o del 
+criterio de la optimalidad de Pareto en donde el bienestar social se eleva si un individuo puede mejorar sin empeorar a los demás. El uso del timo de Pareto como criterio de bienestar 
+pretende  hacer  de  la  teoria  de  la  Economia  Plica  <IEP>  una  
+'  
+ciencia positiva  como  las  matem,!ticas y  la  -física  teica.  Sin  
+
+embargo, el problema de la maximizaci del bienestar social, en general, no puede resolverse icamente por este criterio ya que como es sabido, de existir alg timo de Pareto es altamente probable que e>dstan una infinidad de ellos. Por esta raz, el uso de la funch.'in de bienestar social ha encontrado aaplia cabida en la lEP actual. aunque por el teorema de imposibilidad de Arrow sabemos que no existe tina funci de bienestar social universal y por ende toda elecci concreta de la funci de bienestar social conlleva juicios ~tices especificas. 
+Existen otras razones para que la fEP adopte esta funci. En efecto, las condiciones que aseguran la existencia de un equilibrio competitivo que sea un "PRIMERO MEJOR" son restrictivas para que este concepto tenga aplicabilidad. Basta 
+
+recordar los dos teoremas básicos de la teoria del Bienestar 
+Econico. 
+feore,na 1. 
+Si existe un conjunto coiapleto de mercados y no e:<isten 
+externalidades entonces el equilibrio competitivo es un timo de 
+Parata. 
+leorema 2. 
+Si además de cumplirse las hipesis del Teorema 1 se cumplen1 
+i > Las funciones de producci presentan rendimientos no crecientes a escala. 
+ii) Las tasas marginales de sustituci entre dos bienes cualesquiera y para cada consumidor son decrecientes. 
+iii> El gobierno tiene capacidad para e•ectuar transferencias e impuestos no di storsi onantes2 <~ 1 ump sum' ta::>. 
+Entonces el sistema econico puede alcanzar cualquier distribuci Pareto-6ptima prescrita. A esta distribuci6n Pareto-Optima prescrita se le conoce en la literatura como el "PRIMERO MEJOR". 
+Como la realidad econica es más compleja que las hipesis de estos teoremas, sobre todo en lo referente a la capacidad del gobierno de ! levar a cabo impuestos neutros o ~no distorsionantes', la teoria de la imposici tiene que moverse en un mundo del 'SEGUNDO MEJOR'. Es precisamente en esta linea de investigaci donde ha surgido la teoria de la imposici6n tima. En ésta se distingue una parte analitica y otra empirica en la cual tienen poca aplicabilidad los resultados teicos de la 
+
+primera. El trabaJo que aquí se presenta cae dentro de la vertiente emplrica y el enfoque es similar al desarrollado por Kanosky <1985> para determinar impuestos timos restringidos. 
+
+2.1 Imposici tima a bienes. 
+Existe una extensa literatura que trata acerca de la imposici indirecta tima. Se inicia con Ramsey (1'127) y destacan los trabajos de Boiteux (1956), Samuelson <1Y51>, Diamond y Mirrless (1971> y ia excelente introducci al tema por Sandmo <1976). 
+El problema central que trata de responder esta teoria as ~Co aumentar la recaudaci del gobierno hasta un nivel dado, gravando los bienes que los consumidores de~andan de forma de minimizar las p~rdidas en utilidad que surgen de la imposici? o equivalentemente ~qué impuestos indirectos le permiten al gobierno recaudar una cantidad prefiJada de modo que el bienestar social sea máxi110? 
+Esta teoria ha avanzado del caso simple de Ha•sey de un solo consu~idor <o de todos los individuos con idénticas preferencias y 
+dotaciones>,  que  ignora  los aspectos  distributivos al  caso  de  
+una  economia  con  distintos  grupos  de  consumidores  que  poseen  
+diferentes  dotaciones.  
+
+
+2.2 Imposici tima al ingreso. 
+Este tico fue iniciado por Mirrlees (19/1). ~n su modelo él examina simultáneamente los problemas de distribuci y de incentivos, indispensables en un análisis del impuesto al ingreso. 
+
+La complejidad técnica de esta teoria es mayor a la da la 
+imposici indirecta tima. Por ejemplo, Mirrlees l1Y71) se 
+limit~ a determinar estructuras impositivas al ingreso de tipo 
+lineal. Para dar una idea del proble•a que enfrenta la teorla de 
+la imposici~,n tima al ingreso, plantearemos el problema qua ella 
+intenta resolver. Supgamos que el modelo considera individuos 
+que difieren anicamente en su salario antes de impuestos y adem~s 
+solo existe un tipo de incentivo -el ocio-. Asl, el problema a 
+resolver es: 
+~Cuál es la estructura impositiva al ingreso que le permite al gobierno ma>dmizar una funci de bienestar social del tipo Bergson-Samuelson sujeta a alcanzar una meta recaudatoria dada? 
+Las hipesis acerca de las caracteristicas de los i~dividuos y de los incentivos, permiten suponer que los individuos poseen la aisma funci de utilidad. Luego, para cada elecci de la estructura impositiva hecha por el gobierno, los consumidores maximizan su utilidad -que depende del consumo y del ocJo-suJeta al salario antes de impuestos y a la estructura impositiva. 
+Como puede notar~e, la optimizaci del bienestar es sobre el conjunto -infinito-de estructuras impositivas al ingreso admisibles, en esto consiste la dificultad de la imposici tima al ingreso. 
+La teoría se simplifica al considerar estructuras imposjtjvas seccionalmente lineales o con un nero finito de individuos. rambién en esta rama de la IE:P existe una extensa llteratura como Guesnerie y Seade (1982>, Stern (1982>, Seade (1985), etc. 
+No obstante, la teorla de imposici tima ha recibido fuertes 
+
+criticas. Las principales son: 
+i) No tiene en cuenta la estructura impositiva e~:istente <Feldstein <1976J>. 
+ii> No indica co alcanzar los niveles impositivos timos <Harris y t1ackinnon <197U)). 
+iii) No considera las restricciones institucionales y politicas que determinan que las tasas impositivas deben situarse entre ciertos rangos tKanosky <1985)). 
+iv) El conocimiento del vector impositivo timo puede ser inil porque ~1os cambios actuales son lentos y por etapas• <Fel dstei n <1976) >. 
+Estas criticas han inducido a economistas a desplazar su interés hacia 1a teor i a de la reforma ti scal que busca ,responder a las interrogantes. 
+iBajo qué condiciones los cambios en la retor~a f 1 scal contribuyen a incrementar el bienestar social?, o mejor dicho, dado un conjunto de juicios de valor, un estado inicial y un mode! o de la econom1 a ¿,E,:iste algun cambio factible en los impuestos que pueda i ncrement.ar el bi emestar':> 
+
+2.3 La teorla de la Reforma Fiscal. 
+La parte de esta teoria ligada a cambios marginales en los impuestos se plante inicialmente, ta b~squeda de las direcciones de cambio en los impuestos en presencia de estructuras fiscales no timas. Véase por ejemplo los trabaJos de Guesnerie <1977>, Viewert (1'i'79), Di: (1979) y trabajos caás recientes como los de J. Tirole t19~1>, Ahmad y Stern (1984> y s. Wibaut(1987>. 
+
+En estos timos trabajos a excepci del de firole,se enfatiza tanto la parte analltica de la teoria como su aplicaci práctica, aunque la literatura inicial de imposici y raformas fiscales enfatizaba los aspectos teicos. Entre los trabajos pioneros y los actuales sur·gi6 un enteque de equilibrio general para calcular numéricamente los impuestos timos. Dentro de esta perspecti~a han contribuido Harris y MacKinnon (1979>, Kanosky <19t35), Heady y Mitra <197bi. 
+La teor1a de la Reforma Fiscal Marginal y las teorias de optimalidad están muy relacionadas. En efecto, supgase que la Reforma pretende modificar los impuestos ti. y tj. Cada par de estos impuestos modificará el equilibrio de la economia. Al restaurarse nuevamente ~ste, se tendri -entre otras variables econ1icas-un nivel de bienestar y una recaudaci fiscal dependientes de ti y tJ. Denotemos estas variable~ por W(tL,tJ> y R (ti.., tj) respecti vainente. 
+Consideremos ahora un incremento de ti y tj suficiente para incrementar en un peso la recaudaci fiscal, por lo tanto (clR/QtU=l y (dR/ittj)=l y el monto en que deben incr·ementarse los impuestos ti-y t .i son& (clf-t/¿ftd ~ y ( <'IR/ clt j) -t respectivamente. La tasa de cambio del bienestar respecto a la modificaci de los impuestos es: 
+<cJW/ clti. >~ y l iJW/ ittj) -t respectivamente. Definiendo la calda en bienestar, Ai.., como la reducci en W a consecuencia de haber incrementado eJ i,npuesto al 
+
+i-ésimo bien resulta: M=-(<lW/éPtU /<<lH/c.ltU •••• t 2. 1 > 
+Este n(1mer0 puede interpretarse como el costo marginal en términos de bienestar de incrementar la recaudaci en un peso aumentando el impuesto i ·-ésimo. De e;;.ta t ar·ma, si el costo ~arginal de modificar el impuesto i e~cede al costo marginal que resulta del cambio del impuesto j, entonces una reforma es benéfica, sí se cambia la imposici en el margen del impuesto i al impuesto j. Esto es, si Ai)). j e::i ste una ganancia en bienestar :>d.-}.¡ de aumentar un peso en la recaudaci via el impuesto j y de reducir un peso via el impuesto i. 
+En una forma más amplia, una re-forma es deseable o benéfica si como resultados de la modificaci de los impuestos, el ,incremento neto de bienestar, ~W, y el incremento en la recaudaci, ~R, son no negativos. El problema de encontrar una reforma benéfica, en general no tiene soluci ica, la elecci de alguna de ellas depende de criterios que no pueden ser puestos directamente en el 
+n10del o. 
+Sin embargo, si definimos un estado timo como aquel estado de la economia en el cual ninguna reforma es posible entonces la optimalidad requiere que .M=-".j=A y de la ec. c:~.1>: 
+(dW/Dtl.H·~(oR/<'Jtl)=O para l.=l,J ••• (2.2) Estas ecuacies son precisamente las condiciones de primer orden del problema. 
+s.a. • ••••••• <2.3) 
+R<ti.11 tj)=R 
+
+con R una recaudacir~ln ti jada por el gobierno. 
+La J.igazon entre ta teoria de ta Reforma y ta imposici tima viene dada por esta ecuaci. Una reforma fiscal que lleva a cabo los impuestos timos que resuelven el problema (2.3) le llamaremos en adelante Reforma Fiscal Optima. 
+Dentro de la linea de determinar empiricamente impuestos timos, mencionaremos el enfoque que se utilizen el trabaJo para determinar Reformas Fiscales Optimas alternativas a la Heforma Fiscal que ya está en mar cha en nuestro pal s. 
+El enfoque utilizado fue el de equilibrio general aplicado, gracias a este enfoque, las reformas graduales en donde parte de la estructura fiscal se modifica y el resto permanece inalterada, pueden modelarse con relativa faciiidad. rambién, permite !a 
+' 
+incorporaci de las restricciones que existen en la eccnom1a contribuyendo as! a resolver el problema del •segundo meJor', esto 
+es,  deterininar  las  tasas  timas  de  un  subconJunto  de  las  tasas  
+impositivas  ~Jjeta  a  una  recaud aci  dada  y  a  rigideces  
+institucionales  y  políticas.  
+
+En lo que sigue, entendemos por 1os,u:, lMPOSl llVAS OPl lMAS RESHUNGIDAS al subconjunto {t1•, ••• , t.;*} de impuestos que ya no son suceptibles de modificaciones que incrementen el bienestar social, manteniendo al mismo tiempo la recaudaci i~n fijada por el gobierno y obedeciendo a rigideces institucionales y politicas. 
+El subconjunto, Ct1•, ••• ,t~}• se obtiene del proceso de maximizar la funci de bienestar social cuando tt, ..• r~ son las ica5 tasas variables y el resto de Ja estructur~ f1scal {tl:il+i, ••• , tm} se man ti ene fiJa. Ademas este proceso de 
+
+maximizaci obedece las restricciones seftaladas. 
+El  problema  de  determinar  tasas  impositivas  timas  que  
+obedezcan  rigideces  del  sistema  econico  y  que  le  permitan  
+recaudar  al  gobierno  una  cantidad H se  puede  expresar  como:  
+N~:<-·~  W<t~'.)  
+U:  
+s. a.  R tt(, =R  
+•••• (2. 4)  
+1 tSU: :SUt  
+i  
+. . . . . . . . .  
+
+Notas: 
+1 En un mundo de k consumidores cada uno con funci de, utilidad 
+' 
+U', i=l, ......<, )a funci de bi~n'¡star racial del tipo Bergson-Samuel son es una funci W=f-= (U , ••• , U >. Vté-ase Samuel son 
+<1946). 
+z Un impuesto es no di storsi enante ( 1ump-·sL1m ta:,> si el i ndi vi duo no puede evitarlo con alguna de sus acciones, por ejemplo los impuestos indirectos sobre un bien son dístorcíonantes porque ba~ta que el individuo no consuma ese bien para que no sea gravado por ese tipo de impuestos. 
+
+3. ME HlOU PARA DE 1t::RM I NAR I MPUES ltlS OP 1 l t10S RES I k l NG 1UUS 
+La bqueda del máximo bienestar de la poblaci en un proceso de reforma fiscal tima conlleva la especificaci de la funci de utilidad social a utilizar. Por eso, en este capitulo primeramente describiremos la forma general de la funci de utilidad social que se utilizpara encontrar los impuestos timos restrinQidos. Posteriormente, describiremos el primer algoritmo conque se intentresolver este problema y finalmente presentaremos las ideas de inteligencia artificial que permitieron resolver exitosamente el problea1a (;¿.4>. 
+
+3.1 La funci de Bienestar Social. 
+Se utilizrS una especificaci aditiva y separable de la funci de Bienestar social del tipo Bergson-Samuelson en la cual, un par.ámetro <oc.> llamado "parámetro de aversi a la desigualdad", permite elegir criterios normativos particulares. En efecto, sí «=·-Q) la funci de Bienestar Social ponderará icamente a los grupos de menaras ingresos al momento de maximizar la utilidad social; si por ei contrario,~ > 1 al optimizar la funci de bienestar social los grupos que se toman en cuenta preferentemente son los de mayores ingresos. Con a=O la funci de bienestar social no da preferencia a ning grupo social. 
+Si u=O la funci de bienestar social tendrá la forma: 
+H 
+W=Z ln{U ) ••• (:J.1)
+h 
+h=t 
+en caso contrario: 
+H ot. 
+W=(l/Gll)I: (Uh) ••• (3.:2) h=t 
+
+en donde Hes el nero de grupos de consumjdores y u.., es la funci de utilidad del grupo h-ésiMo. 
+Cuando c.i=1, W adopta la forma W=UtilJZ+ ••• +U que corresponde
+h 
+a la forma usual del principio utilitario clásico; cuando oi=-(Il, W asumirá la forma determinada por el criterio de Rawls. 
+Sabemos que tanto las func.iones de utilidad de cada grupo social, luego W, dependen de las cantidades ti•as demandadas por cada grupo de consumidores de cada bien de consumo e::istente en la economia, de modo tal que cada consumidor respeta su restricci presupuesta!. Pero aqu1, al variar algunos par~metros impositivos, el sistema econico determinará un nuevo equilibrio competit1vo1 y por ende las cantidades timas demandadas por cada grupo de consumidores. Esto nos muestra que podemos consi d,er ar las funciones de utilidad de cada grupo de consumidores como tunciones de las tasas impositivas que la Reforma Fiscal pretende modjficar. 
+De esta terma: 
+--·-H -> W ( tld = (1 / cO 1: [ Uh ( t Id l Gt: ••• (3.3) h=t 
+para ~O; el vector b: representa el vector de tasas impositivas que la reforma modificará. 
+
+3.2 El algoritmo de Lagrange Aumentado <LA). 
+EJ problema más fuerte a que uno se enfrenta al intentar resolver el problema (2.~) es que no se dispone de expresiones anallticas para W y H (las funciones de bienestar social y recaudaci respectivamente,. Se dispone icamente de un modelo de equiU.brio general aplicado que tunciona como una caJa negra. 
+
+Se varlan algunos impuestos y el modelo nos da como respuestas, entre otras cosas, la valuaci que alcanzan W y R al reestabl ecerse el equilibrio competitivo. E.n forma di agramática: 
+Precios de equilibrio niveles de activid•d modelo de de equ1 ti br·io. (th, ••• , U:s)--.. equj. l ibri o ---+ general W(t , ••• ,t )
+kl b;, aplicado R(tJ.:t' ••• 'tk) 
+De contarse con expresiones anallticas para W y H la forma usual de resolver el problema (2.4) es con el CH>todo de los multiplicadores de Lagrange. No obstante no contarse con esas, se 
+optprimeramente por un algoritmo nu~rico que estin1aria de terma iter·ativa un multiplicador de Lagrange para el problema (2.4>. tte refiero al algoritmo de Lagrange aumentado. 
+El algoritmo de Lagrange au•entado (LAJ resuelve et problema2 
+Min F<t , ••• ,t > 
+1 :s 
+(t, .•• ,t)
+1. ., 
+s.a. •••• <3.4) 
+C ( t , ••. , t ) =R l t , ••• , t ) -R=
+1 s 1 g 
+estimado en forma iterativa su multiplicador de Lagrange. Lomo es usual en los procesos nuffl'5'ricos iterativos, se inicia con cierto valor del par~metro a estimar, digamos, :, ,:,, e':..te vaior 
+
+determina un sistema de ecuaciones que se res.u~L ... e. La solucit!,n de· 
+este sistema m:~ s e u,:i ta~ n?gl as permiten iliOl : 1 car a ~ n. Liamemos 
+a este nuEvc valor, ~t. Lste valor iU&Jye a determinar un sistema 
+de ecuaciones. La solucit!,n de este sistema m~s la;.. n~glas para ca111bi a,.. el val o,-del parámetro dan como res111 tado el valor A.Z' etc. 
+El proceso continuará hasta que se observe que los valores AJ: se acercan (mejor dicho convergen> a cierto valor ).. •• Al trabajar con cálculos numéricos la convergencia se establece con el grado de precisi conque se quiera determinar k.• 
+La necesidad de conocer primeramente el multiplicador de Lagrange -y no en forma simultánea con los puntos criticas deí problema<3.4>-se debe a que no pueden resolverse analiticamente las condiciones de primer orden para el lagrangiano usualª. 
+El lagrangiano aumentado correspondiente al problema es: L<t,•••.• t-.,X.p> =F <t,, ... , bid +AC <ts, ••• , t'.l i +ple< tt, ••• , t·3> 12 (3.5) en el cual, "A, es el ,nultiplicador de lagrange usual 'I f' es un parámetro de sanci. 
+El algoritmo de LA propone inicialmente un valor para ~ y p, 
+,k-t> ~k-t>
+llafD:é.mosles >,.. y p · respectivamente. Estos valores determinan el sistema de ecuaciones4: 
+itF -+l. <l:-t>c1C +·.h·,<lr:-t> · C(t t ) · cJC = O ••• (~.b)Qt r,.. bt • -,-I ' • 0 • ' s '1t • ~ • 4 
+par a i = 1 , ••• , s • 
+La solucit!,n de este sistema m~s las reglas dadas en los 
+... d,;-t' d-:-i>
+apéndices 1 y 2, permiten cambiar ~ y p Estos valores 
+
+per•iten reco,nenzar el proceso y construir l•• sucesicn•• · c~<o>, 
+
+
+(1) (2>
+...) y 
+p ' p ' ... ) ' •1 proceso d&ri hn 
+cut1ndo ')l.ª0 -,x. 
+El •lgorit110 de l.A adolece de severa& restr1cc:ion••, COIK> •• constaten el desarrollo dal proyecto. La mis import•nte de ellas consista en la soluc:i~n del 
+
+La •oluci de C3.b) i•pJJc•b• un proce&o iterativo interno COl'IO •• muestra en al sigui ente di agr.11111a de t J UJO de J a provra•aci del algorit•o de LA. 
+
+,\l\•I) l~•I) 
+" , f c:onoc.ido!> 
+Se 'fe.1.ve\vc. el •i•-\ emes 3.6 1-re~•11 V,l\"ltNTE 
+Se l't'lod.if<~" j..'"'' • ¡'·'' 
+
+FIN 
+
+Del diagrama de flujo pueden observarse que e,ten dos 
+procesos  iterativos.  EJ  m~s  e:<tremo  corresponde  a  los  cambios  en  
+y  •.k-t,p •  El  proceso  iterativo  anidado  corresponde  al.  
+proceso para  resolver  numericamenteel  sistema  (3.b>.  
+
+3. 3 Q.esarrol lo g·-~ Y!l nuevo ª.Lqor í t;_,ao pare!, determí nar i •puestas t1mos. 
+El aJ gori. tmo de U% que se construyno mostrconvergencia precisamente en la fase de resolver el sistema (3.6) que es el n~~teo del aJgorjtmo. S1.n embargo, el trabaJo realizado pudo aprovecharse siguiendo ~todos heuristicos5 para determinar 
+•.;,pt i mos de h.mc i enes. 
+Aclaremos esto. Ya comentamos en la secci anterior , la falta de representaci ~!-.n anal 1 ti ca para W y H. l:.n su Jugar tenemos una caja negra -el modelo de equilibrio general aplicado de ~strada 
+<1 1i>B7>-que recibe valores de los parámetros impositivos y da como respuesta los valores numéricos para W y R correspondientes a esos impuestos. 
+Ahora bien, el proceso iterativo para resolver el sistema de ecuaciones (~3.6> requer1a de la evaluaci de las primeras y segundas parciales para W y R. Esto se tuvo que hacer con la t~cnica de diferencias finitas' que requeria de conocer 1~ puntos cercanos ai punto en el cual se calcularlan las primeras y segundas parciales. Hubo necesidad de recurrir en foraa reiterada a la caja negra en 13 ocasiones consec11tivas. ~l resultado de todo esto fue que la programaci del algoritmo nos suministrinfor,aaci abundante del comportami.ento de W y H en el contorno 
+
+de  alg conjunto de  tasas  impositivas elegidas.  
+El  criterio  seguido  para  resolver  el  problema  (2.4)  r.)  
+equivalente el  <3.4)  fue  entonces:  
+Conociendo  la  meta  recaudatoria,R,  a  alcanzar  par  media  de  la  
+Refor,aa  Físcal  de  1981  encontramos  un  conjunto de  ia.puestos  que  le  
+permiten  al  gobierno recaudar  R  y  en  el  cual  la  funci  de  
+
+bienestar es mayor que en los impuestos propuestos por la Reforaa. Por lo tanto, este nuevo conjunto de impuestos es más deseable que los de la Reforma. Después conseguimos más informaci en al contorno del conjunto de impuestos hallado previamente y procedimos de forma similar. Este proceso lo detendremos cuando alguno algunos impuestos se encuentren en la restricci: 
+i=1, ••• ,s. En el apéndice 3 se justifica este proceso de bqueda del máximo de W sujeto a las restricciones ya se~aladas. 
+
+Notas: 
+1 La noci 6n de equilibrio competí ti vo es la usual a 1 a uti 1 izada en los modelos de equilibrjo general aplicado que analizan impactos fiscales en las economias. En el capltulo 3 de este trabajo se recuerda este concepto. 
+2 El problema de minimizar una funci W equivale al de ma~imizar -W. Por lo tanto el problema <3.4> equivale a maximizar W sujeta a C(t1•••• ,t2> = O sj ~ = -W. 
+a Estas condiciones de primer orden son: 
+= >... <1B para i. = 1 s & H <t:i t~ > = k
+bt. ' ••• ' ' ••• ' 
+~ 
+
+" Como podrá notar el lector este sistema corresponde a las 
+condiciones de primer orden de la minin1izaci sin restricciones de la funci& 
+d:-t) <k-t> z
+F(tt, ••• ,t•>+~ ·C<tt, ••• ,tsi>+p ·[C(tt, ••• ,ta>J 
+'!:" En inteligencia artificial la heur1stica es el estudio de los procesos mentales implicados en un problema a resolver, en la toaas de decisiones, en el aprendizaJe, etc. Un programa heuristico computaciona es aquél en el cual una computadora trata cada uno de varios métodos de resoluci de un problem• y juzga si el programa se acerca más a la soluci después de cada intento. 
+d ~or eje~plo, el cálculo de f~tx > puede aproximarse por el 
+f) 
+cociente f("><o-t"-)-¡f(x.o)+f(l(o-hl Si por ejemplo, h=0.001 la aproximaci es del ~rden de o. 000001. 
+
+4. EL MOOELO DE EQUJblOOlU GENEJ<AL Yl).LllAOO. 
+En este capitulo, describimos el modelo de equilibrio general 
+que se us,~ en estetrabajo para la determinaci de los impuestas 
+timos al uso del capí. tal. 
+El modelo utilizado es el desarrollado por Estrada (1987> cuyo objeto fue analizar el impacto en eficiencia y asignaci de recursos que la reforma fiscal de 1987 tendrá sobre la econoau.a Mexicana, al eliminar el subsidio otorgado por el gobierno a las empresas por endeudarse. Destacamos del ,nodelo lo que tiene relaci directa con el fin de este trabajo, el análisis normativo de la actual Reforaa. 
+
+
+
+4.1 Descripci del modelo 
+Es un modelo Walrasiano de tipo estático con producci simple en el cual los precios de equilibrio, niveles de actividad e ingresos fiscales de equilibrio se determinan de modo que los excesos de demanda de bienes y factores sean cero. Además, todos los sectores tienen ganancias netas de impuestos nulas. Consta icamente de dos grupos de consumidores <pobres y ricos>. El atlo base es el de 1984 y es altamente agregado ya qua consta icamente de b sectores y 3 factores productivos como se Muestra en la siguiente lista. 
+
+Cuadra 4.1 
+t. Sector Primario 
+2. 
+Industria Manufacturera 
+
+3. 
+Servicia 
+
+4. 
+Servicios Aubernamentales 
+
+5. 
+Importaciones y Exportaciones 
+
+6. 
+Inversi Fija y acumulaci de inventarios (capital mal"lana> FACTORES DE PRODUCCION 
+
+7. 
+Trabajo 
+
+
+a. Capital financiada por acciones <capital acci> 
+9. Capital financiado por deuda (capital deuda> 
+Deaanda 
+Los sectores de deaanda de consuao como son por ejemplo abarrotes, carnes y pescada, etc. aparecen modelados da la siguiente forma implicita. Cada bien de demanda de consumo se supone que demanda proporciones fijas de Jos bienes producidos en los 3 primeros sectores productivos. Al asumir para los dos grupos de consumidores funciones de utilidad del tipo Cobb-Douglas -que dependen de las cantidades demandadas de bienes de cansu1n0 final­resulta que, en virtud de la suposici de proporciones fijas de insumos, las funciones de utilidad dependerán directamente de cantidades demandadas a los sectores productivos del modelo. En la especificaci de Estrada <1987) los consumidores demandarán bienes de consumo final que requieren insumos de los tres primeros 
+sectores. Sus funciones de uti.lidad adoptan la forma: a a a 
+Si Zi 31
+U =Kc1 .~,et .xct 
+S U zt 3:l •••• (4.l) 
+[3 B
+2Z
+U =xc2 u xc2 
+
+z u 21 
+
+a con I:BU=t para j=t, 2 ~=t 
+El grupo 1 corresponde a los "pobres", el 2 a los "ricos". 
+Adem~s xct. , xc2. son 1 as de11andas del bien i que requieren 1 os 
+t..i l.i 
+consu11idores 1 y 2 respectivamente. 
+Antes de la producci cada grupo de consu,nidores posee dotaciones iniciales de trabajo y de ambos tipos de capital <ver cuadro (4.S> que evaluados a los precios del mercado dan como resultado el ingreso bruto del grupo, los consumidores derivan sus demandas por bienes, de la maximizaci de sus funciones de utilidad <ecs. 4.1> sujeta a su ingreso neto de impuestos y de una proporci fiJa que se dF.stina ahorro. 
+Producci 
+Como es usual en los modelos de equilibrio general aplicado, las 
+funciones de producci aparecen ,nodeladas como funciones anidadas requiriendo un insumo agregado y el valor agregado por sector. El ínsu11t0 agregado modela el supuesto de insumos intermedios que intervienen en 1 a pt~oducci en proporciones f 1 jas, el valor agregado se supone producido por los factores primarios mediante 
+una funci de producci Cobb-I>ouglas y de este inodo se permite sustituci entre los factores primarios. 
+La caracteristica central del 111odelo consiste en la desagregaci del capital en capital financiado por acciones y el financiado por deuda. Esto permite la simulaci de uno de los 
+objetivos de la Hefor11a Fiscal de 1987, a saber, eli111inar el 
+
+subsidio al capital financiado por deuda y de esa forma subsanar las estructuras ine·Hcientes de financiamiento que han adoptado las empresas en estos timos aftos de altas tasas de inflaci. 
+Los factores aparecen como dotaciones iniciales de los consumidores. Naturalcnente los productores maximizan ganancias. 
+íiobierno 
+El modelo considera al gobierno como el ico agente que produce y consume el bien •servicios gubernamentalesP para lo cual grava con impuestos indirectos al productor y al consumo, al ingreso personal y finalmente al uso del factor capital. Se asunte 
+que  de  la  recaudaci  total  destina  proporciones 1-ijas  al  consumo  
+del  bien  que  él  produce,  el  resto  lo destina  a  la demanda  del  bien  
+6  •capital  maflana»  
+
+Inversi 
+r.omo el modelo es estático la inversi física no se considera, sin embargo, la inversi realizada. en el periodo se toma en cuenta introduciendo el sector cuya actividad consiste en producir un "bien" llamado capital mariana en oposici al capital utilizado en forma corriente en la producci del periodo. 
+El bien capital ma~ana es demandado por los consumidores y el gobierno en proporciones fijas de sus ingresos. 
+
+Sector Externo 
+Se supone que todas las importaciones son no competitivas y 
+forman un bien homogéneo empleado icamente como insu•o en la 
+producci y la inversi6n mediante proporciones fijas. Las cuales 
+son adquiridas mediante las e:<portaciones generadas en cada uno de 
+1 os sectores. 
+En el afio base (1984)se tenia un superavit comercial, el cual, 
+para llegar a un equilibrio con el exterior, se modelo como el 
+componente de importaciones en la inversi total. 
+4.2 El equilibrio fill el ª"º-base El aflo elegido como base para los ejercicios de estática 
+comparativa fue el de 1984. El siguiP.nte cuadra nos muestra el 
+valor de los principales variables econicos en 1984, ajustadas de tal forma que pudieran representar un equilibrio. 
+Cuadro 4.2 
+Valor de las principales variables macroeconicas en 1984 
+(miles de millones de pesos> 
+Consu~o Intermedio lb,441,21b Importaciones 2,367, 060.S Valor Agregado 25,735,792 Impuestos Indirectos netos de subsidios 1,952,502.3 Excedente bruto de Explotaci . 2.0, 02.:i, 199 Producto Bruto Total 44,530,441 Oe~anda Intermedia lb, l!"i 1,216 Demanda Privada neta de Impuestos el Consumo 17,006,940 Consumo del Gobierno 615,423.1 Exportaciones 4,2SO,Ob1.3 Jnversi  b,21b,709 
+Los siguientes cuadros nos muestran los impuestos etectivo!i, las dotaciones iniciales, las proporciones del gasto que cada 
+
+consumidor dedica a la compra de bienes <parámetros de la funci 
+de utilidad> y la proporci de su ingreso neto destina al ahorro. 
+Cuadro 4.3 
+Tasas de Impuestos 
+Tasa de Impuesto Indirecto al consumo 
+Tasa de Impuestos indirectos al productor Sector Primario Sector Industrial Sector Servicios 
+Tasas de Impuestos al uso de factores 
+Capital acci,jn Sector 1 0.3231 Sector 2 0.4511 Sector 3 0.3932 
+Tasas de impuestos al ingreso personal Pobres Ricos 
+Fuente: Estrada (1907> 
+Cuadro 4.4 
+Dotaciones Iniciales 
+<en ,ni les de f!iJ l ones de pesos> 
+Trabajo Capital-Acci 
+Pobres 5929806 4065280 Hicos 2038534 2172518 
+de impuestos que 
+0.053225 
+0.108591 
+().068615 
+0.003035 
+Capital deuda -0.09997 -0.13929 -0.12139 
+0.042095 
+0.113141 
+Capital-Deuda 
+6866154 
+3669327 
+Fuente: Estrada t1907> 
+
+Cuadro 4.5 
+Parámetros de  la funci  de  utilidad  
+y  propensi  media  a  ahorrar.  
+Pobres  Ricos  
+Proporci del gasto destinado al bien producido en el sector Propor<:i del gasto destinado al bien producido en el sector Proporci del gasto destinado al bien producido en el sector  1 2 3  0.1003310507 0.3208b172b9 o. 578807:~225  0.070349245 0.2b327883b4 O.bbb371Y201  
+Propensi  medí.a  a  ahorrar  0.205b01b448  0.2729128492  
+
+Fuente: Estrada <1987> 
+La réplica del equilibrio 
+La definici de equilibrio utilizada es la usual en este tipo de modelos, a saber, un vector de precios de bienes y d~ factores, un vector de análisis de actividades tales que los excesos de demanda en cada mercado sea cero y las actividades productivas generen un nivel de ganancias nulas, además un nivel de recaudaci compatible con estos precios y niveles de actividades. 
+Debido a que no existen estimaciones acerca de la elasticidad de sustituci entre factores para los diferentes sectores productivos utilizados, se asumiuna elasticidad de sustituci entre factores igual a 1 y por tanto las funciones de producci utilizadas son del tipo Cobb-Douglas. La parametrizaci del modelo se escogio de forma da reproducir los datos del aHo base y de que los precios de equilibrio fuesen igual a uno en todas los bienes y factores como se muestra en el siguiente cuadro. 
+
+Cuadro 4.b 
+Precios~ niveles de acttvidad g!!l equilibrio en @l. !V'(Q base 
+Sector Precio Nivel de actividad 
+1. Primario 1,0000 107517..16 O 
+2. Manufacturas 1,0000 17176457 . 0 
+3. Servicios 1,0000 16602758 ,0 
+4. Gobierno 1,0000 2736953.0 
+5. 
+Importaciones Exportaciones 1,0000 425006 2.0 
+
+6. 
+Inversi Fija y Acumulaci de Inv. 1, 0000 8099791 ,0 
+
+
+Fuente: Estimado por el modelo de Equilibrio General. 
+Cuadro 4.7 
+
+precios de EA_t;..tora& 
+1. 
+Trabajo 1. O 
+
+2. 
+Capital Acci 1.0 
+
+3. 
+Capital Deuda 1.0 
+
+
+Fuentez Estimado por el modelo de Equilibrio General. 
+Los cuadros siguientes nos muestran la recaudaci del ano base 
+replicada por el modelo de equilibrio original y los indices de 
+utilidad. 
+
+Cuadro 4.B Estructura de la recaudaci rutl. ~Q base (millones de pesos> 
+Recaudaci  del  IVA  905 195.0  
+Recaudaci  por  ingreso  1601  383.0  
+Recaudaci 6n  por  el  uso  del  factor  capi. tal  1149  568.0  
+Recaudaci  por  impuestos  indirectos al  
+productor  1952  50 ~ .o  
+
+Fuente: Estimado por el modelo de Equilibrio General 
+Cuadro 4.9 
+
+Pobres 4, 8 4?4, 290. 316 Ricos 2,149,358.513 
+Fuente: Estrada <1987) 
+
+Notas: 
+1 El sector primario está constituido por las grandes divisiones& 
+Construcci y electricidad; minerla;y agropecuaria, silvicul­tura y pesca. El sector industria manufacturer~ es ésa gran divisi. El sector servicios est~ constituido por las grandes divisiones: comercio, restaurantes y hoteles; transportes, almacenamiento y comunicaciones1 servicios financieros, seguros y bienes inmuebles y, finalmente, servicios comunalP.s, sociales y perso­nales. El sector 4 está constituido por los servicios gubernamentales. El sector 5 por las actividades de importaciones y exportacio­nes. Finalmente el sector 6 comprende las actividades de inversi. 
+
+5. IMPUESTOS OPTIMOS: 8JMULACIONES DE REFORMAS OPTIMAS ALlERNATIVAS A LA REFORMA FISCAL MEXICANA DE 1987. 
+En los capitulos anteriores se ha planteado en su forma general el problema de determinar impuestos timos restringidos. En este, especificamos el problema concreto que resolvimos y los impuestos timos encontrados para tres diferentes elecciones de la funci(~n de bienestar soci.al. 
+Efectuamos un análisis comparativo entre cada Reforma Fiscal Optima y la Reforma Fiscal de 1987 -simulada-, naturalmente, coaao es usual en estática comparativa, cada nuevo equilibrio que genera cada una de las reformas es referido a lo que se considera como el 
+' 
+estado de equilibrio original -o histico-de la econon. Cabe recordar que tal equilibrio histico se supone es el estado econico de la Econo•ia Me:cicana en 1984 -véase capitulo 4-. 
+F.n la pri.mera secci aclarainos )o que simulamos como Re·f-orma Fiscal de 1987 -en adelante, la 'Reforma Fiscal', mientres no se especifique lo contrario-y analizamos el impacto que tiene en l& economia eniatizando los aspectos de bienestar social. 
+En la secci siguiente, presentamos y discutimos los imi:,uestos timos encontrados para cada especificaci ética de la funci 
+de  bienestar  social  que  elegimos.  En  la  secci  tima  <4.3>  
+comparamos  cada  Reforma  Optima  con  la  'Reforma  Fiscal'  así  cont0  
+algunas  dP.  las  conclusiones  que  pueden  derivarse  de  este  
+ejercicio.  
+
+
+
+
+5.1 La Reforma Fiscal de 1987. 
+En el capltulo 1 se enl1stan las metas y los objetivos 
+especificos que persigue la Reforma Fiscal de este aRo. En este 
+trabajo modelamos dicha Refor,na con~iderando icamente dos de las 
+acciones del ajuste en la base gravable de las empresas más 
+importantes. La primera consiste en permitir ica•ente la de 
+deducci de los intereses reales y la segunda en uniforMizar la 
+tasa impositiva a la renta de las empresas a un nivel de 0.35~. 
+La simulaci de las dos l'ledídas anter;,ores las íncorpora,nos al f'IOdelo de equilibrio general haciendo cero el subsidio que el gobierno da a las empresas por ocupar capital-deuda, y gravando con 35¾ el uso del capital acci. 
+Esto timo requiere de la siguiente anotaci6n1 
+El propito de gravar con 35X las ganancias de las ea.presas, no puede si•ularse directamente en los modelos de equilibrio general aplicado donde la producci esta modelada por funciones de producci6n con rendimientos constantes a escala. Sin embargo, se puede mostrar que si existe un impuesto al uso del capital, representado como una proporci del costo del capital productivo y el t.'.Jni co factor productivo es el capi ta.J, entonces ex i st.e una relaci ica entre los impuestos efectivos al uso del capital y aquel que grava a las ganancias de las e•presas bajo un comportamiento optimizador de los productores. Bajo la hipesis de que esto es generalizable dados los supuestos del MEGA utilizado, la tasa ica de 0.35% de la Refor•a debe tener un• tasa (6 tasas> equivalente Cs) a las tasas al uso del capital. 
+
+Para fines de simulaci escogimos la misma tasa uniforae de 0.351. para gravar al uso del capital como la equivalente a la que propone la reforma. 
+El impacto que estas modificaciones impositivas tienen sobre la economía son expansionarías, el PlB real aumenta 0.2384 respecto al aflo base (1984> pero los niveles de actividad de los sectores primarios, industrial y de servicios caen a tasas de -o.osx, -1.727. y -1.72% respectivamente. Los icos sectores que elevan su producci <a costa de los que la contraen> son el gobierno, el sector de importaciones -exportaciones y la inversi. 
+El gobierno incrementa su actividad en 13.77¾ siguiéndole la inversi con una tasa de crecimiento de 3.1~¾. El sector importador-exportador aumenta a una tasa de 0.779¾. 
+La raz de este gran incremento se deriva de la redistribuci de ingreso en favor del gobierno como consecuencia de la ~Raforma 7 
+• 
+El gobierno incrementa su actividad y destina mayores aontos de sus ingresos a la inversi. Los precios de todos los bienes y de los dos tipos de capital disminuyen en relaci al del trabajo 
+
+Cuadro 5.1 
+Precios y niveles de actividad de equilibrio de la ~Refor•a 
+Fiscal' <Porcentajes en que aumentan lo~ niveles de actividad> 
+Sector Precios relativos Nivel de A¾ de los niveles actividad de actividad de la ~Raforaa~ respecta al al'fo basa. 
+1. Sector Primario 0.9702531661 10,745,810.349 -0.5% 2. Industria 0.9593992184 H,, 941,319.551 -1.72% 3. Servicios 0.96087<15747 lb,316,775.316 -1.72% 4. Gobierno 0.9907014804 :.s, 114,041.6263 13.77"/. 
+5. Jmp.-Exp. 0.9961389321 4,283, 21 ~.• 7647 0.779tl% 
+b. Inversi 
+capital maf'iana 0.9650621584 8,358,480.7082 3.19X 7. Trabajo 1.0 a. Capital-acci 0.9780357811 
+41. Cap í tal -·deuda 0.8350034472 Fuente1 Estimado por MEGA. 
+No obstante la contracci en la producci de los tras primeros sectores, los ingresos fiscales <reales> aumentan a una tasa de 12.710% respecto al afio base (1984). ~l auaento en la recaudaci se debe a la elíminaci6n del subsidio y a la uniformizaci6n del impuesto sobre el uso del capital acci. La recaudaci por estos conceptos aumenten 85.73X respecto a 1904 
+(la eliminaci de un subsidio equivale a un incremento en la tasa impositiva efectiva>. 
+Las recaudaciones por los demás conceptos caen. Lo que vereaos posteriormente que se debe a una contracci en los ingresos de los consumidores. 
+
+Cuadro 5.2 
+Ingresos Fiscales de la tReforma Fiscal' (millones de pesos reales> 
+Concepto Monto  respecto al ano base 
+Recaudacj del lVA 83694.853 -7.54i. 
+Recaudaci por impo­sicici al ingreso 1 4 7 60'"13. 384 -I.U2347. 
+Recaudaci por uso del capital 85.733% 
+Recaudaci impuestos indirectos al productor 1 873741.302 -4.034¾ 
+Recaudaci total b 32;m53. 58 12.7180~ 
+Fuente: Estimado por MEGA 
+5.1.1 El 1mpactn en bienestar de la ·Reiorma Fiscal'' 
+Como el modelo no imcorpora subsidios y transferencias que dependan del nivel de recaudaci total del gobierno. Un au•ento de la recaudaci real disminuye el bienestar de la poblaci reduciendo directamente su ingreso disponible y por tanto sus demandas. La ~Reforma' afecta proporcionalmente más a los ricos que a los pobres. Como puede apreciarse en el cuadro siguiente, en el cual mostramos los niveles de utilidad de ambos grupos asi como su cambio porcentual respecto a 1984. 
+cuadro 5.3 Nivel e indice de utilidad de los consumidores en la Reforma Grupo de Consumidores Nivel de Utilidad '1Zrespecto al at'fo base Pobres 4 72?. 263.028 -3.514% Ricos 2 050 990.450 -4.576Y. 
+
+Como las funciones de utilidad son homogéneas de grado uno, los cambios porcentuales de los indices de utilidad en el cuadro anterior, pueden interpretarse como calllbios porcentuales en el ingreso de cada grupo de consumidores. 
+Es claro entonces que la 'Reforma Fiscal' tendrá efectos 
+redi stributi vos  importantes,  el  beneficiario  principal  de  esa  
+redistribuci  dal  ingreso  es  el  gobi.erno.  Por  otro  lado,  la  
+'Reforma  Fiscal'  cumple  sus  cometidos  en  cuanto  aumentar  su  
+recaudaci  y  propiciar  la  inversi.  
+
+
+
+5.2 ltnpuestos Optimas Restringidos. 
+Como nuestro modelo considera solo dos grupos de consumidores <"pobres y ricos">, 1a funci de bienestar social ec. <3. 3) toma la forma 
+W(tt, ta, tz) = !ÍuªHf~)
+al t z con Ut, y Uz la funci6n de Üti l i dad de pobres V ricos respectivamente. El pará~etro Q es el parámetro de aversi a la desigualdad. La recaudaci que se deriva de la 'Heforma Fiscal' -ver secci anterior-la consideramos como la meta recaudatoria que el gobierno pretende alcanzar mediante la Heforma Fiscal de 1987, la denotaremos por R(:=6322053.5871). En cuanto a los rangos, que representan rigideces institucionales y politicas, en que deben estar co~prendidos los impuestos timos al uso del capital escogimos intervalos uniformes e iguales a [0.3~, 0.40). Las razones fueron por simplicidad y porque en el MEGA utilizado, la 
+
+tasa más baja al uso del capital acci es 0.3231, la más alt.a es de 0.4511 (véase cuadro <4.3>). Asi, los impuestos timos no deben ser muy diferentes de 0.3231; en cuanto al limite superior éste no debe ser grande-en relaci al de otros pai ses-para na desalentar el capital. Se eligi0.40 como limite superior debida a que en Estados Unidos la tasa efectiva que enfrentan las empresas es de 39.89~. 
+El problema (2.4> adoptla forma 
+
+1(i(.)( ve )
+l'U.>; -U (tf., tz, ta)+U (t:,, tz, ta)
+O( t 2 
+<t1, tz, tat 
+s.a. • •••••• <5.1> H(tt, tz, ts) = R 
+0.32 ~ tt,tz,ta S 0.40 
+Los iMpuestos variables, ti, son las tasas iapositiv~s al usa del capital en el sector i, i=l,2,3., 
+El problema (5.1> se resolvipara las tres especificaciones 
+áticas. ot = o. 1, 1, -1 Los ifflpuestos timos para cada,· a, se muestran en al siguiente cuadro. 
+
+Cuadro 5.4 Impuestos timos al uso del capital en cada sector 
+Parámetro de aversi Primario Manufacturas Servicjos 
+a= 0.01 0.3993655b151 0.3440212935 0.31998744427 (.:l = 1.0 0.3999:!26 0.3254938 0.33118/7 a =-1.0 0.37043629029 0.375817644 0.31994571648 
+Fuente: Calculados en base a los métodos descritos en esta trabajo. 
+~~tese la sensibilidad de los impuestos timos al parámetro de aversi a la desigualdad. Por ejemplo, al comparar con las tasas impositivas que enfrentan las empresas antes de la Heforma Fiscal (ver cuadro (4.3)). Por eJemplo para a = 0.01 los impuestos timos gravan más al sec:tor 1 que antes de la ~naiorma Fiscal' tenia la tasa más baja al uso del capital y el subsidio más baja 
+por  capital  deuda  (0.3231  y  -0.09997  respectivamente>.  En  
+términos  generales  es  el  sector  1  el  ~ás  perjudicado  en  la  
+determinaci  de  los  impuestas 6ptint0s.  
+Para  los  tres  valores  de  a,  los  sectores  2  y  3  se  ven  
+fa'llorecidos  con  la  i,nposic1 tima  porque  antes  de  la  Reforma  
+Fiscal  esos  sectores  eran  los  que  en•rentaban  las  tas.as  
+impositivas  más  altas  al  capital-acci  (v~ase  cuadro  (4.3)).  
+Estas con&ideraciones  intuitivas  se  formalizarAn  en  la  secci  
+
+siguiente. En el cuadro 5.5 se muestran los njveles de utilidad social para cada funci de bienestar • Al comparar Jos nivelas de 
+
+utilidad social derivadas de los impuestos que propone la ~Reforma Fiscal• y las 'Reformas t!iptimas• se observa que en términos de 
+bienestar, éstas elevan el bienestar Los neros entre paréntesis son los indices del b1enestar social 1 toiaado como base el correspondiente nivel de utilidad de la Heforma Fiscal. 
+Cuadro 5.5 Niveles e Indices de Bienestar Social para los impuestos Optimes 
+Parámetro de •neforma Fiscal • 'Retor,na Upti,aa• desigualdad 
+a  =  0.01  232. 7.5't ti086  232. 25B:S9H39  
+O.O)  (1.0000Jb.3)  
+a  =  1 .o  b773~53.5b81  b 7828bfi'. 5003  
+a  =-1.0  t 1. O) b.9933217988xl0-7  (1. 001419) -b.YU5Yb~7888K10-7  
+C1 .O)  (-0.99896)  
+
+5.2.1 Algunas observaciones sobre nue5tros re!o>ultados. 
+1.Hemos reportado impuestos timos sin aproximar. la raz6n de esto es que cambios en las tas-as impositivas del orden de 
+milésimas producen variaciones en la recaudaci del orden de 111illones de pesos reales.Esta dificultad tecnica puede salvarse 
+relativamente fácil • 2.Las gan.incias en bienestar social de utilizar los iiapuestos 
+timos  en  Jugar  de  los  propuestos  por  la  'Hetorma  •son  ,nuy  
+pequef'k>s.  Esto  se  debe  a  que  Ja  longitud  del  1ntervalo  en  que  
+deben  estar  comprendidos  dichos  i,npue;;tos  es  muy  paquef'ía  
+(iguala  o.os>.  
+
+3.A diferencia de nosotros Kanosky (1985) encontrreforaas timas alternativas a la Hetorma de 1'183 en las cuales las 
+
+ganancias en bienestar que se derivan de su utilizaci son significativas .Sin embargo, él utiliza más instrumentos 6pti•os -precios de Pemex y las tasas del IVA que las que nosotros ocupa~os,además los rangos en que pueden variar talRs ilftPuestos es relativamente grande.También su aodelo es alta•ente agregado tanto del lado de la producci como a nivel de los consumidores. 
+4.Por timo ,el prop6sito de este trabajo es aostrar la factibilidad de diseMar Reformas timas alternativas. Si sa disponen de modelos con una adecuada desagregaci a nivel de producci, de de•anda y de una adecuada representaci de los objetivos de la Reforma as auy posible que. los resultados sean significativos. 
+5.3 Reformas Fiscales Optimas alternativas a la 'Retorma Fiscal' de 1987. 
+Tomando como base los precios (iguales a 1) del ai'fo de 19B4 
+(que constituye nuestro equi 1 ibrio. hi stl!>ri co> resulta que las distintas alternativas fiscales till4ilS tienen efectos 
+expansionarías sobre la economía. Hin embargo, el creciatiP.nto porcentual en el PIB ocasionado por cada alternativa fiscal tima 
+es  menor  al  generado  por  la Reforma.  Como  puede  observarse  en  el  
+siguiente cuadro  que  nos  muestra  los  incrementos porcentuales  del  
+PIB  respecto al  arlo  base  que  tienen  la  'Refor•a  Fiscal'  y  las  
+distintas Reformas  Fiscales timas.  
+
+
+Cuadro 5.6 Incremento porcentual del PIB <respecto al Af'fo de equilibrio> 
+'Reforma R~·=e~f~o=r~m=ª'----F~i~s=c=a=l~e~s........_timas Fiscal' a = o. 01 a = 1 c. • -1 
+AY. del PIB 0.2381. O.l0b7X 0.1447-Z 0.1235~ 
+De esta forma, la 'Reforma Fiscal' es la más eficiente en térMinos del crecimiento del producto. Pero no as! con respecta al bienestar social, co•o puede verse del valor de los indices da bienestar social de la 'Reforma• y de ias reformas timas en el cuadro 4.2. 
+Ninguna de las tres alternativas c~ptimas varia respecto a la 
+'Refor•a Fiscal' en sus efectos sobre precios, niveles da actividad y recaudaci de equilibrio como lo ~uestran los cuadros 5.7, 5.8 y 5.9. 
+
+Cuadro 5.7 
+Precios de equilibrio del mercado 
+<Numeraire = mano de obra> 
+a= 0.01 ot = 1 oc= -1 
+~T-ºRl:Ji 
+l. Sector Primario o.r1ao2"io 0.9798 3<i o. 97519S 
+2. Industria 
+Manufacturera 0.961232 O.f./58494 0.964334 3. Servicios 0.955426 0.957392 0.95576"/ 4. Gobierno 0.989598 0.989980 0.9B9b4b 
+5. Importaciones-
+Exportaciones 0.970888 0.970704 0.96847b 6. Inversi 0.968874 O.(fb8525 0.96724'1 
+FACTORES DE PROOUCCION 
+7. Trabajo 1. O 1. O 1. O a. Capital acci 0.978649 0.978626 0.918338 9. Capital deuda 0.833870 0.834358 o. U-33818 
+Fuente: Estimado por HEBA. 
+Cada politica impositiva alternativa tiene efectos diferentes 
+en cuanto a magnitud, pero no respecto a la tendencia del caMbio 
+en las magnitudes econicas. Esta tendencia coincide con la 
+generada por la Reforma. 
+
+Cuadro 5.8 
+Niveles de actividad y Cambios porcentuales respecto al afta base 
+Sector et= 0.01 Qt = 1 c.t = -1 
+1. Primario  0.995468  0.99b2b8  0.996532  
+(-0.453'1.)  (-0.373¾)  (-O.::S4bX>  
+2.  Industria  
+Manufacturera  0.984308  0.985b7B  0.983317  
+(-1.56% ">  (-1. 43~,>  (-1. 66:,>  
+3. Servicios  0.985321  0.984386  0.985286  
+(-1. 46¾)  (-1. 56%)  (-1.47'1.)  
+4. Gobierno  1.139028  l. 138589  1.138973  
+CO. 13Y0'1.>  (0.13BS'X.>  (0.1389'1.)  
+s.  lmp-Exp.  l .005000  1. 005742  l .005459  
+(O. 5'1.>  ((). 574'1.)  (O. 545¾)  
+b.  Inversi  fija  y  
+acumul ací(5'n  de  
+Inversi  1. 02i'b31  1. 028136  1.029295  
+(2.76%)  (2.81%)  (2. 921.)  
+
+Fuente: Estimado por MEGA. 
+Cuadro 5.9 
+Recaudaci real que se consigue con las reformas tiaas 
+Concepto ~ = 0.01 (X = 1  = -1 
+
+
+------------------------------~-----. -----------------------------
+Recaudaci del JVA 8366lb.7799 836798.Y505 8365~b.2088 
+(-7.5767.) (-7.559¾) (-7.586¾) Recaudacic.Sn pcr ingreso 1aboral 1475'194.82 14/5829.229 1475328.559 
+(-7.861%> (-7.U.40¾) (-7. 87~,, Recaudaci por uso del capital 2129900.b58 21300b7.b23 2132b79.302 
+(85.2807.) (85.280%) (85.507¼) Recaudaci por impuestos al productor 1880041 • .305 1879357.334 1877519.382 
+(-3. 711 ¼) (-3.746'Y.) (-3.840%) Recaudaci total 6322053.56 b3~'.2U53. 137 6322053.506 <12. 71B¾.) (12.7180¾) <12. 71(:l~) 
+Notas Los cambios porcentuales son respecto al af'ío base. 
+
+5.3.1 El bienestar social derivado del uso de los instrumentos timos 
+indice de Paasche calculado para cada de consumidores 
+Una  for11a  estandar  de  comparar  la situaci de  un  consumidor  en  
+dos  estados econ icos  posibles  es  mediante  el  uso  de  indices.  El  
+z  
+
+grupo nos indica que la situaci de cada consumidor es mejor en la Reforma Optima que en la 'Reforma•ª. 
+Cuadro 5.10 Indices de Paasche para cada grupo de consumidores en las Reformas Opti~as. 
+Grupos de consu•idores oc=o.01 o.=1 e<=-1 
+Pobres 1. 001152 1. 00125 ,1. 000437 Hicos 1.00204 1.00118 1. 00128 
+La  deseabilidad  de  las Reformas  Fiscales  queda  de  manifiesto  
+al  calcular  los cambios  porcentuales de  los indices  de  utilidad  de  
+los consumidores  respecto  a  la  'Reforma•  
+
+Cuadro 5.11 
+Cambios porcentuales de los indices de utilidad de los consumidores respecto a la 'Reforma•. 
+-1Grupos de consumidores 0.01 
+Pobres o. 121-104% 0.125806 % 0.04509¾ Ricos 0.20587bX 0.179084 o. 129?.7t>'Z 
+
+He~os mostrado la deseabilidad de las Reformas Fiscales timas en relaci a la ~Reforma Fiscal' en términos de indices de utilidad. La deseabilidad social de los impuestos timos, es decir, el criterio de maximizar el bienestar social naá.s el supuesto de funciones de utilidad Cobb-Douglas hocnogéneas de grado uno implican los siguientes resultados. El impuesto timo al sector servicios, que es el sector al que los consumidores dedican entre el 587.. y el 66;~ de sus ingresos, es el menor. Lo contrario ocurre en el sector primario que enfrenta lo$ mayores impuestos timos (al sector primari.o dedican 10 y 7 centavos de cada peso los pobres y los ricos respectivamente,. La raz de este tipo de resultados es que por simplicidad en la construcci del modelo de equilibrio general, la utilidad depende directamente de bienes 
+' 
+denandados a los tres primeros sectores productivos. La utilidad de cada consumidor disminuirá más si se grava con la mayor tasa al uso del capi t .al al sector producti ·,10 que produce el bien que lo$ agentes demandan en mayor proporci. Oe esta forma,se espera que Ja mayor tasa impositiva tima a! capital se aplique al sector productivo cuya producci es la que menos demanda tiene por las consumidores. 
+EHisten algunos otros comportamientos en las variables econicas det~rminadas por la pol1ticas timas. Las alternativas fi sea] es ·~t> mas estimulan el crecí miento del producto pero no tanto como en la <Reforma'. Recordemos que el crecimiento del PIB en la 'Reforma 7 se da a costa de una contracci en los niveles de actividad de los sectores 1, 2 y:~ ocasionada por la reducci 
+
+en su correspondiente demanda privada, .,., un aumento en los sectores 
+4, S y 6, las alternativas fiscales ,~ptimas contraen menos la 
+producci en los tres primeros sectores que la contracci6n 
+provocada por ta 'J<eforma Fi sc:al •, adefllás elevan relativamente 
+más el nivel de actividad del gobierno y la inversi <comparese 
+los cuadros 5.1 y 5.8). 
+Respecto a la recaudaci, se tiene que l;i recaudaci por uso 
+del capital acci no se eleva tanto en la altarnativas timas y 
+1~ recaudaci por iva y por el ingreso disminuyen relativamente 
+más. 
+·romando el indice de productos de productos de Paache <vease cuadro 5. 10> o los indices de uti 1 idad respecto a la re·forma nos d;imos cuenta que la reformas timas ponderan más a los,ricos quP. a los pobres. Es.te resultado se d,2be a que el grupo "pobres" no esta ponderado por poblaci y asi, al momento de agregar este grupo tiene la dotaci mayor de factores apareciendo realmentP. como los ricos. Observese el indice correspondiente ~ = -1 que teicamente no debe considerar a los ricos. 
+5.3.2 Algunas conclusiones del análisis comparativo. 
+En un esquema neoclásico de equl1br10 general aplicado, e! análisis normativo permite modelar y analizar el efecto de distintas alternativas fiscales más deseables que la actual. Los responsables del disefto y puesta en marcha de ~ed1das 1mpos1t1vas pueden, bajo este esquema, elegir con criterios econico~ y ~tices especificas una de varias alternativas timas. El costo 
+
+que t.al deci sh,n implica es un i ntP.rcamb1 o entre ef 1 c1 enci a y equidad. En nuestras simulaciones. se observa estP. tenomeno nitidamente pues la reforma aumenta la eficiencia econica re1ativamente más. Sin embargo, la perdida en el bienPstar social es mayor al generado por cada reforma alternativa. 
+Los resultados que se presentan son sensibles al parimetro de aversi a la desigualdad, mostrando que modelos con suficiente desagregaci•jn a nivel de consumidores este parámetro puede ser el criterio que permite elegir una reforma tim~ en forma ica. 
+De manera empírica puede extraerse una regla de imposici tima al uso del capital, a saber: los sectores product1vos con ~ayores gravámenes deben ser aquellos cuyos bienes son demandados por los consumidores en la menores proporciones. Lo ,contrario ocurre para los sectores cuyos bienes son demandados en mayores 
+proporciones. 
+Finalmente, bajo la especificaci del modelo aqu1 utilizado todas las reformas ,5pti mas generan los sigui entes cambios que se propone la reforma fiscal para 1987. Aumentan la recaudaci real , la inversi y el PIB. 
+
+Notas. 
+\_os indices as1 construidos no dicen nada respecto a las comparaciones de bienestar entre las tres reformas timas• 
+.E . p~q~ 2E:1 indice de Paasche se define como: Qp = 1 L L 
+"' ? o 
+l.. ¡_P¡_ 't 
+donde q~ y q~ son las cantidades timas demandadas a los 
+l. ~ 
+precios p. y p~ respectivamente. Es fácil mostrar que si Q > l' 
+l. L p la situaci a los precios p~ es preferible a la de los precios 
+~ 
+p, 
+l. 
+8 Para calcular los indices de Paasche del cuadro, se tomo como situaci O al equilibrio de la "Heforma~ y como situaci 1 a cada reforma tima. 
+
+6. CONCLUSIONES GENERALES. 
+Nos interesa destacar cuatro tipos de conclusiones qua •• pueden extraer del desarrollo del proyecto. 
+Las referentes a la relativizaci de las simulaciones efectuadas; las que se refieren a la aedida en que las hipesis iniciales fueron verificadas; las que plantean la necesidad da caracterizar más las propiedades analíticas de la funci6n de bienestar ligada al modelo de equilibrio general aplicado y finalmente, la propuesta de un ntéotodo flexible para la determinaci de impuestos timos. 
+b.1.­
+Es claro que los resultados de los modelos Walrasianos de equilibrio general dependen de los supuesto en que descansan y de los valores de los parámetros clave, como son las elasticidades de sustituci entre factores o de los pará,netros de las funciones de utilidad de los consumidores. Varios de los autores consultados hacen el análisis de sensibilidad de los paráMetros y encuentran que los resultados varían -no alterando la tendencia general de los cambios de las variables. Estos resultados indican que los cambios cuantitativos que arrojan las simulaciones de aodelos de equilibrio general solo deben indicar la tendencia de los cambjos que ocurren en el modelo econt~ico. Otra de las restricciones es la falta de incorporaci de fenenos 110netarios 
+• 
+inflacionarios. Todo esto conduce a tomar de las simulaciones efectuadas, 
+
+icamente las tendencias de los cambios en las magnitudes de las variables para los que fue construido el modelo -en nuestro caso, la estructura de financiamiento de las empresas-. La determinaci de los impuestos timos a la renta de las empresas necesita de un modelo que presente una mayor desagregaci a nivel da consu•idores, además se requieren e;stimaciones ftlás finas de los parámetros de las funciones de prodwcci6n y de utilidad. 
+6.2.­
+No obstante las dificultades que hacen del modelo neoclásico de equilibrio general una aproximaci a la realidad econica, y sobre todo, a la nuestra, al menos bajo la ~odelaci6n da esos sup~estos la bqueda de alternativas fiscales timas ~ieapra es factible.~ Asi en nuestro modelo, con todas las limitaciones 
+senaladas,  las hipesis de  las que  partimos,  son  confirMadas.  La  
+hipesis empírica  que  se  dedujo  como  regla impositiva  tima  al  
+uso  del  capital  para  no  disminuir  tanto  al  bienestar  de  la  
+poblaci,  parece  ser  obra  de  la modelaci  de  las  funciones  de  
+producci  con  rendimientos  constantes  a  escala.  Parece fácil,  de  
+forma  empirica,  analizar  como  se  modifica  esta  regla  cuando  la  
+elasticidad de  sustituci  no  es  unitaria.  
+
+6.3­
+Los impuestos timos al uso del capital tienen la caracterlstica de que algunos de ellos cumplen con iqualdad alguna de las restricciones. Lo cual nos lleva a suponer que la funci 
+
+de bienestar, u~J,posee propiedades que implican que
+W = ( 1/o<.fl
+l.=-• l. 
+los timos restringidos se encuentran en las fronteras de las restricciones. Luego, es interesante, desde el punto de vista anal1tico caracterizar a W <en funci de los pará,aetros impositivas> para ver a si satisface las propiedades para alcanzar sus timos en las fronteras de sus restricciones. 
+b.4'.­
+En el capitula 3 se comentel algoritmo que se utilizpara resolver el problenta de encontrar los impuestos restringidas ti11os para w. 
+La experiencia acumulada en el desarrollo de este trabaJa. nas hace pensar que un algoritmo de bqueda heurística del iaáximo de la funci de bienestar social es factible. La idea central de este algoritmo es, a partir de un punto en el subespacio de impuestos a medicar, digamos t = <t , ••• ,t > generamos todo un 
+o  .  :t  ..  
+conjunto  de  puntos  /t:., •••• ,ttt ,..,  cercanos  y  uniforaemente  
+distribuidos al  rededor  de~.  Por  medio  de  MEGA  hallamos  los  
+- o  
+correspondientes valores nericos  para  W y  R  <las  funciones  de  
+
+bienestar y la recaudaci de equj.l1brio). Desechamos el punto t 
+" 
+si existe un punto l . con i E. <1, •••• , n> en el cual la 
+" 
+recaudaci R<1t.> = R<1t. > pero donde W<t . > > ltJ<t >. Tales puntos.
+\. 0 L 0 
+siempre e:cisten porque R es una funci continua si t.>O,
+l. 
+i.:t,. . ,a 
+Este tipo de enfoque es meramente empírico y en modelos da 
+
+equilibrio general aplicados la determinaci de impuestos 6pti•os por este método parece ser siempre posible. 
+Este tipo de m~todos heurlstícos no aparece reportada en ningtin articulo-de los consultados-. En éstos se trabajan aétodos nerícos o t~cnicas de punto f1Jo que no garantizan en general la determinaci de impuestos timos restringidos. 
+Notas 
+~ 
+Las limitaciones al final de cuentas son de cputo ya que si el modelo es muy desagregado y el algoritmo para determinar el equilibrio competitivo no es eficiente el tiempo de caputo puede ser demasiado grande. 
+
+APENDlCE 1. EL ALGORJTMO DE LAGRANGE AUMEN1AD0 
+(:1) ., •
+Sabeaos que si 1:k es un vector que resuelve el probl ama de 
+
+
+
+Nin F(t,¿ 
+s.a. 
+
+y las funciones reales de varias¡variables F y e posf!én pri•eras 
+derivadas parciales continuas, entonces 
+
+un punto 
+estacionario de la funci lagrangiana 
+
+•••••••• ( 1) 
+Es decir •t • satisface las ecuaciones 
+k 
+o 
+
+= o 
+o 
+••••••••• (2) 
+= cct •, = o
+k 
+en donde X• también es un punto estacionario de L. 
+1 
+De esta forma la técnica usual para deter~inar los puntos 
+i~os y  nimos  de  una  funci  sujeta  a  una  restricci,  
+consiste  en  determinar  los puntos  estacionarim.  da  L..  es  decir  
+resolver  el  sistema de  ecuaciones  <2>.  
+
+Si además de conocer las primeras parciales, conocemos también las segundas parciales y estas son continuas. Entonces para poder discriminar entre los puntos (1./', ~/) que son puntos 
+
+estacionarios de L, es decir, determi.nar cuales son máxintas o 
+t 
+g1nimos locales o puntos silla, basta conocer la matriz he&siana de L, asi por ejemplo. si ésta es semipositiva definida en el
+• 
+punto (1 • >...) y además satisface la restricci, entonces
+k ' la funci F alcanza un minimo local en lk•. Nuestro problema consiste en que no conocemos las expresiones analiticas para las pri•eras y segundas derivadas parciales, raz por la cual se acude al lagrangiano au111entado. 
+Es sencillo notar que todo punto estacionario de L es tacnbién 
+t 
+punto estacionario de L(lk, µ, ~.). Raz por la cu~l el punto que minimiza a F{l,.?=O, es también un punto estacionario de L("llr:; p,>..), es decir un punto que resuelve al sistema • 
+... . . . . . . .. .. ,:~) 
+que  es  exactamente  equivalente  al  sistema  <2>  
+11 ustremos  el  al gori. tmo  del  lagrangiano  aumentado  para  el  
+problema siguiente  
+
+
+Mín F(t , t )
+S 2 
+s.a. 
+Proponemos L(t, t , A., p) = F(t , t ) + ;\C(t , t ) + p[ C(t , t )] 2 
+1Z 1 Z l 2 t Z 
+o ~) ~, 1
+1 He propone ;\ = o, p = 1 ( ~/' si empre debe ser > O). 2° Se minimiza 
+es decir se encuentra (t~,i) , t <t>) que resuel ve e 1 proh l ema 
+2 
+-·' . d L(t t • '<t>, p<t>)
+y que es un uu. n 1 mo e ., , z, " 3o H 11 d t (t <1> t ,u)
+a a o ei vec .or 1. , 
+2 
+A<Z> x<u + 2p(1) C(t m t <1>)
+se propone: = 1. , 
+2 
+<Z> (i) 
+p = p 
+Si C(t <1>, t (1))" = o
+.. z 
+Si C(t <1>, t "') ;,4 O se propone 
+~ .i 
+~(¡) = )..<1> 
+o
+4 Se calcula el miníma de 
+L (t t • <Z> X<V)
+t!I z'P ' 
+• ,;. Z> ,;;i;
+S1 (t , t ) resuelve este problema se dei i ne 
+z z 
+
+5°  Si  
+Se Si  propone ICC\/2 ',  'l<...<3> = A.ta> t­t3> <Z> p = p t/'') 1 2:. n<t>  ';>piZ>  c(t,'z', ta<Z>) entonces  
+6°  <3> <Z> p = to p Se sigue iterando hasta que: con el grado de aproximacion deseado. Fn cada iteraci a partir de la  ')-.. • segunda  será  necesario  
+
+t (k> (k-t)
+calcular t <k>J t <k>J r, que nos
+( 1 ' z ' z ' 
+perMitirá  proponer  :,,..d:+t) <k+i> p  
+Notas: 1 El teorema  de  Khun  rucker  lo garanti?-a.  
+
+
+
+UN E ..lEMPLO I>ISERADO PARA JLUS1HAH Y VERIFICAR F:L ALGORI H10. Consideremos el problenta 
+
+
+s.a. 
+t' t ~ o •••••• <•> 
+t z 
+t + t = 1
+1 Z 
+
+
+
+1 .. i
+La soluci a este problema es = t ... 2
+2 2
+' 
+Si intentamos resolver el problema <•> con el algoritmo del Lagrangiano aumentados 
+22 2
+L(t , t ; >.., p) = (t: +t: ) + A.(1-t -t )2 + p(1-t -t ) ••• css> 
+t 2 t Z t Z t2 , 
+El algoritmo nos indica que para k=t 
+1) 
+
+,:/1.> = l y tenemos que minimizar 
+>,, (1)'
+el lagrangiano aumentado L(t, p<t>) es decir,
+1 
+resolvemos el proble•a de minimizar sin restricciones a L(t t 21 "A.m m). Asi, resolvemos.el problema
+t' ' p Min L = (t:+t:) + (t-t,-t)2 t ,t
+1 Z 
+Las condiciones de primer orden son: 
+~ = 4t +2t -2 = O 
+en:. t 2 
+' 
+tJl.. = 2t +4t -2 = O 
+c,t:2 1 Z 
+Cuya soluci es: 
+t<t> 1 t <t> 1 
+= 
+= 3
+t 3 ' z 
+
+2) Evaluamos la restricci en (t,<1 >, t_ <t>), es decir1 
+2
+e Ít <t> t <1>) = 1-~ = 1
+l' 1 ' Z 3 3 
+3) Se propone 
+.,._<2> = >--<'>+ 2p<';c(t1<'>, tz"] = ~ 
+<Z> <t> 
+p = p 
+4> Se minimiza la funci 
+2 2
+L(\,t; >..<>,p<2 >J =( t:+t;J + ~<2 >(1-t-t) + p< >(1-t-t)ª
+2 12 12es decir 
+L(t,,t, ~cz>,P<Z>J = t: + t: + i(i-tt-tz) + (1-tt-\,)z
+2 
+Las condicione de primer orden implican: 
+at.. 8 
+= 4t + 2t = o 
+z 3
+ati. ' 
+cJL. B 
+= 2t + 4t == o 
+~ 1 z 3 
+a 
+La soluci a este sistema es: 
+t <.I) -8 t -18 ' 
+5) Evaluamos la restricci en este 
+
+
+
+x<3> = X,<Z>+2 <Z>C(t<Z> t <Z>) p t ' z 
+(3) <2> 
+p = p 
+
+
+2 (t)
+En nuestro caso 1C ( t t <Z> ' t z<Z>J1 = Te TI = 12· Naturalmente se cumple b>. Por lo tanto 
+)'..(1') = >... (%) = 2 3 
+ti> 10 (Z>
+p = p = 10 
+7) Nuevamente tenemos que minimizar sin restricciones a 
+2
+L (t t 2 1A<Z> <3>) = tz + t z + ?:.(1-t-t) + 10(1-t -t J
+t' ,P t 2 3 t 2 t a Las condiciones de primer orden implican un sisteaa de ecuaciones lineales 2X2, cuya soluci es: t <I> 102 t (8) 102 
+== 
+:1 252' a 252 
+8> Evaluando 
+
+. <Z> = 1 1C (t <2> t <2>) 1 = !,_2, = 1 
+n .f 1 ' z 4'-1 e·., ~b Al aplicar a estos valores el paso 6). Resulta que 
+
+<•> (8)
+p = 10 p = 100 
+9> Minimizando L(t,t; >...<z>,P<Z>) = t: + t: + >...<''(1-t-t) + p<'>(1-t-tJz 
+121212Resulta que las condiciones de primer orden se transfor•an en: 602
+202t + 200t­= 
+:1 a -r 2
+200t + 202t = 
+1 z "T 
+e,> __ 1204 t <4> __ 1204
+Cuya soluci es: t ---­
+1 2412' 2 2412 
+10) Utilizando nuevamente el criterio para modificar A ~ p Se tiene: 
+
+
+= ¼(2:~) = 
+
+Naturalmente por al pasa 6) >..(S) = -,... (,> ·+ 2 <•>e t ,a> t (4'> = 602 
+p ( , ' a ) 603 
+
+Etcétera••• 
+11> El  algoritmo  termina cuando  Xk--+ A•  con  cierta  aproxiaaci6n  
+prefijada.  
+Analicemos  por  medio  de  una  tabla  los  valores  que  se  van  
+generando  iterativamente.  
+
+t <k., <k> ~<Ir;) (k> <k-t'>
+Paso k t p T] e ( t d:> t <k>J 
+:i 2 t ' a 
+valores iniciales 1 1 1
+l o 1 NO OEFINlDU
+3 3 3 a 8 2 t 2
+2 1
+19 18 3 12 18 102 102 2 t 48
+3 10
+252 252 3 3b° 252 1204 17.04 2 1
+4 ~ 100
+2412 2412 , .. 603 602
+5 100
+603 
+12> En este caso sencillo, resolver el problema <•>, no 
+
+necesitamos acudir al algoritmo del lagrangiano aumentado. 
+El lagrangiano simple nos da las soluciones timas a esta problema asi como el valor timo df?l multiplicador de lagrange simple. Estos son: 
+t * = 1 t * = 1 
+~· = 1
+1 2 ' 2 2' Si observamos la tabla notamos que: ~<k> ---+ 1 t <le> t <le:> ___. 1 ~ ' 2 2 
+en esos puntos El espíritu del algoritmo consiste precisamente en un mecanismo 
+,. <le.·,
+'),.<l> -+
+iterativo en el cual con "-el mult1pJicador de Lagr.ange timo. 
+
+
+DETERMlNAClUN DE IMPUESTOS OPTIMOS PllR MElllDDS HEURIBl ICOS V 
+MEDIANTE UN MODELO DE EQUILIBRIO GENEHAL. 
+El modelo de equilibrio general aplicado <MEGA> funciona como una caja negra que nos permite calcular numéricamente el valor de equilibrio de la recaudaci y el valor de la funci de bienestar 
+3 
+a las tasas impositivas (t1,t2 ,t). Asumimos que ambas funciones son continuas. El proble111a a resolver es: 
+Max  W(t , t , t )t a a  
+s.a.  R(t ,t ,t)1 Z 8  
+o. 32  :S  t , t t t z a  :S  o. 40  
+Donde  W  es  la  funci  de  bienestar  y  R  la  funci  de  
+recaudaci.  
+
+
+F.l conjunto de puntos (t ,t ,t) tales que t ,t ,t > o 
+~ 2 a , a a y R(t , t , t ) = R 
+1 2 3 
+define una curva en~ª. Para fines prácticos se puede pensar en esta curva en la forma usual. Sabemos que R(O. 35, o. 35, o. 35) = R. Por continuidad de R(t , t , t ) sabemos que la curva R(t , t , t ) = R o parte de ella 
+~ Z 9 1 Z 9 
+están contenjda$ en el paralelepipedo IP=[ 0.32,0.40J x[ o.32,0.40] xi o.:~2,0.40) Para fines prácticos se considerque tl vector de impuestos 
+
+<\., t , t ) p~n~lt~~ recaudar R ~j._ R(t , t: , t ) @.ª-~gual_ ª-~ n_.ast.~ ~ 
+28 129 
+parte enter~ 
+El Algoritmo. 
+Partiendo de lo$ impuestos (t' t z ' t ) = (O. 35, O. 35, O. ~~5)
+
+s. 3 
+generamos mediante alg mecanismo (para nosotros este mecanismo fue el proceso iterativo que se diseflpara resolver el sistema de ecuaciones (3.6)) un conjunto de vectores impositivos alrededor de t =t =t =O. 35. Ade111ás mediante MEGA valuamos W >' n.
+• a a En forma esquemática: 
+---+ W(t , t , t ), R(t , t , t )(t ' t ' t ) ---+
+t Z 3 1 2 a 1 z s et· t• t')---+ ---+ W(t ~ t' t ') R(t' t' t')
+t.' 2' a 1' 2' a' 1' 2' a 
+
+
+
+MEGA
+. . . . . . . . . . ....................... . 
+
+Una terna de impuestos es mas deseable que (0.35,0.35,0.35) si 
+nos permite recaudar R y si W(t ,t ,t) > W(0.35,0.35,0.35).
+t. 2 9 
+De forma intuitiva este proceso de selecci significa moverse 
+sobre la curva (que es una curva continua, "sin cortes") 
+R(t , t , t ) = R, t ,t ,t e {P
+:1. z a t 2 3 en una de las posibles direcciones que incrementan el bienestar social, es decir a w. Por la continuidad de R siempre es posible hallar impuestos (t~,t~,t~) para alg i cuya recaudaci sea igual a R, basta construir un contorno de puntos lo suficientemente cercano a (0.35,0.35,0.35). 
+Hallado un punto <<, t~, t~) más deseable que (O. 35, o. 35, o. 35). 
+
+preguntamos si existe un punto más deseable que éste. El proceso lo interrumpimos cuando alg impuesto o dos de ellos se encuentren en la -frontera del paralelepipedo IP. 
+Mostramos algunos  de los puntos  hallados para o=l  
+w  
+0.35 0.35  0.35  6773253.5681  6322053.5871  
+
+0.3540813 0.3459955 0.3496464 6774029.5884 b33:.l:;053. 307 l 
+1
+. . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . .. . . . . 
+
+0.3632020 0.3395427 0.3473294 bTl~BOl. 9267 6322053.7437 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+0.3999116 0.3254938 0.3311877 6782869.5003 6322053.1550 
+
+Alberro Jos~ y Cambiase ,lorge E. "Caracteristicas del ajuste de la econom!a mexicana", Documento de trabajo No. 1986-V ColMex. 
+Ahmad, E. y N. Stern, "The theory of reform and Indian Indirect taxes", Journal of Public Economics, 1987. 
+Boiteu:<, M., "On the management of Public Monopolies subject to Budgetary Constrai nt", en ,Journal of Economi e Theory, 1971. 
+Diamond, P.A, y J.A. Mirrless, "Optimal taxation and Public Production: I y II", American Economi .c Review, 1'171. 
+Di ewert., W. E., 11 1Jpt1mal tax perturbation" en Journal of Public Economics, 1978. 
+Di:<it, A.K., "Welfare effects of tax and price changes" en Journal of Pubiic Economics, 1975. 
+Estrada E., "El impuesto sobre la renta de las empresas y la 
+Reforma  Fiscal:  Un  Análisis  de  Equilibrio  General  
+Aplicado",Tesis de maestría  en  Economi a,  CEE,  mi meo,  
+Col Mex,  1987.  
+
+Feldstein, M.S., "On the theory of tax reform", en Journal of Public Economics, 1976. 
+Gill, P.E. y W. Murray (eds. >, "Numerical methods far constrained optimization, Academic Press, Londres, 1'1'14. 
+Guesnerie, R., "On the direction of tax reform", en Journal ot Public Economics, 1977. 
+Sarcia Alba, P., "La evasi fiscal en México", UAH Azcapotzalco <1982). 
+Guesnerie, R., y Seade J., "Nonlinear Pr1c1ng in a F1nite Economy" en Journal of Public Economics, 1982. 
+Harris, R.O. y J. l:3. Mac t<innon, "Comput1ng optima} tax equilibria" en Journal of Public Economics, 1979. 
+Heady, C.J. y P.K. Mitra, "The computational of opt1mum linear taxation", en Review of Economic Studies, 1982. 
+Kanosky, May E., "DiseNo de una reforma fiscal tima, el caso de México", El Colegio de México, Mé>tico, 1985. 
+Mirrless, ,1.A., "An exploration in the theory of optimum income ta:cation", en l<eview of E.conomic: Studies, 1971. 
+
+Nilson, N.J., Problem-Bolving methods 1n ~rt1ficial JntPlligenLe, Me. Araw Hill Book Co, 1971. 
+Ramsey, F.P., "A contr1but1on to the Theory of taxati on •·, em Eco.iamic .lournal., 1927. 
+Sandmo, A., "llpti.miaJ taxation an 1nt:1-otlu.:r1on U) tl1e .l.1terat.ure'', en ,Journal of Pub l i e Economi es, 1·1'::?. 
+Saf!'lue l son, F'. A. , 1-·ounai'lt 1 rJn¡¡;; of Economi e nnal J1S1 s, Gambr1oge, 
+Samuelson, P.A., JíJ51, Theory of opt:i.ma..1 taxation, unpubl1shed paper. 
+Serra ··Pnche, .-1., "{\ gP.ne-raJ equil1.hr1um model tor the Mex1can economy" en Appi.ied General Equil'ibr'ium Mode!s, H.E. Scar-f y ,jº Sho-,en (eds.) Cambr-idge Unive,-;;it:y f'ress, L:ambru:tge,. 
+1'i'84. 
+Seade, J.~ "On the shape ot optlmal schedules", en Journal of f-·ublíc Economics, l9Tl. 
+Sen, Amartya, Un Econom1c Inequal1ty, Cla.rendon-Press, Londres, 
+1'tT5. 
+Secretaria de Hacienda y Cr·édito Plica, 11 198'/. Reforma Fiscal",. México, 1987. 
+Shoven, J.B. "A proof of the existence of a general equilJbrium wi th a val orem comodi ty ta,:es", en ,Journal of Economic Theory, 1974. 
+Shoven, J.8. "Applied General-Equilibrium tan Model1ng", en Staff Papers, 1983. 
+Shoven, J.B. y J. Whalley, "General Equilibrium with ta::es: a computational procedure and existence proof", en Review of Economic Studies, 1973. 
+Stern, N.H., "llptimum taxation and Tax Policy", en Staff Papers, 1984. 
+Ti rol e, J. y R. Guesneri e, "Ta): rei orm from the gradi ent projection view point", en ,Journal of Public Economics, 19A1. 
+Wibaut, s., "A model oi taH reform tor Belgium", en Journal of Public Economics, 1987. 
+
+LA PROGRAMACION DEL ALGORITMO DE LAGRANGE AUMENTADO (!OMEGA} LA LLEVO A CABO JOSE ANTONIO DELGADO EN LA UNIDAD DE COMPUTO DE EL COLEGIO DE MEXICO.AGRADECEMOS LA VALIOSA COLABORACION DE J. ANTONIO DELGADO EN ESTA FASE DEL PROYECTO . 
+
+program iomega CEste programa se desarrollo)
+{en la Unidad de Cputo de} C El Colegio de M~xico A.C.> C Ver-si on 31 /VII /87 ) type 
+vertice = array [1 •• 3) of integer ; 
+vertices = array Cl •• 13] of vertice; 
+const 
+c:lebug  =  false  ;  
+ep  =  0 .. 0001;  
+rM  =  22053.52654  
+V  vertices  =  (  º·  o,  0),  
+1.  º·  0).  
+-1.  º·  O)•  
+º•º·  1, -1,  0). 0).  
+o,  o,  1>,  
+º·  º·  -1).  
+1,  1.  0)'  
+-1,  -1.  O)•  
+º·  1,  1>,  
+o,  -1.  -u.  
+1, -1.  º· º·  1). -1)  ) .•  
+type  
+
+v2 = array C1 •• 2J .of real ; mat13 = array c1 •• 1, 1 •• 3) of real v4 = array t 1 •• 4 J of real ; v13 = array t1 •• 13l of real ; 
+mat16 = array t 1 •• 1, 1 •• 6] of real mat23 = array e1.. 2, 1 •• 3] of real mat31 = arra.y e1 •• 3, 1 •• 1J of real mat32 = arra.y e1 •• 3, 1. .2] of real mat33 = arra.y t L. 3, 1 •• 3] of real mat34 = arra.y e1.. 3, 1 •• 4] of real mat36 = arra.y e1.. 3, l •. 6] of real mat61 = arra.y Cl. ,6, 1.. 1] of real mat66 = array· [ 1. .6, 1 •• 6] of real 
+apu = ,·,¡, _o_p_n_2 
+i o _p_n 2 = record
+-
+-
+i 1 real i2 real i3 real lambda real rho real r real
+-
+sig apu end ; 
+var Í ntege1° k integer 
+,: . , 'f":r 
+
+r v13 criterio! boolean criterio2 boolean primero apu paso apu paso_sig apu tmp apu h real gradiente_g mat31 sol _gauss mat31 fO real ro real rho_inp real h_inp real t _inpl real t _inp2 real t _inp3 real 
+ep_inp real epsilon real a.ver real 
+procedure mega(tl, t2, t3, aver real var f_b, r : real> 
+type v2 = arr<-'ly [ 1.. 23 of real ; mat13 = array CL. 1, 1. "3] of real v4 = an·ay C L "4J of real ; mat16 = array e1.. 1, 1. .6J of real mat23 = a1•ray Cl .. 2, 1 •• 33 of real mat31 = array e1 •• 3, 1.,1] of real mat32 arra.y e1.. 3, 1 •• 2J of real mat33 = arra.y e1.. 3, 1. "3] of real mat34 = array t 1 •• 3, 1.. 4:J of real mat36 = arra.y e1.. 3, 1 •• 6J of real inat61 = arra.y e1 •• 6, 1.. 1 J of real mat66 = array Cl .. 6, 1.,6] of real 
+c:onst sh v2 = (0.2056016448, 0,2729128492) 
+t i v2 = <0.0420959, 0.113141) ; 
+b v4 (0.5482831824, 0,3316992953, 0.734564649, 0,76846526234); 
+gamma v4 = <3.200550921, 3,2843262944, 3.0183361363, 1.0167278861); 
+t_p v4 --(0.108591247, 0,0686155368, 0.0030350074, 0.0016974889); 
+w mat23 = < (5929806,4663, 4065280.9686, 6866154.72311, (2038534.9337, 2172518.2773, 3669327.3467)) 
+w dot mat31 = (7968341.4), (6237799. 2459), <10535482. 0698)) 
+alfa mat34 --(0.2634192801, 0,262238867, 0.2314869644, 0.9976472018), (0.4133939025, 0.4233954904, 0,3122832546, O.O), (0,3231868174, 0,3143656629, 0.456229781, 0.0023527982)) 
+beta mat32 = (0,1003310507, 0.070349245), (0.3208617269, 0.2632788364), (0,5788072225, 0,6663719201)) 
+h _,., ., .,,,_,:l}ll~.C.'1f.J .• (', (1 1 ? f'• ·I 1 Oc''\'?/ 
+
+-0019676826, -0.5855786605, -0.3481558111), (-0.2107000115, 0,6969417645, -0.1318654087, -0.0066932090, -0.15510986, ·-O, 29153803 l , (-0.0~38804602, -0.0537751856, 0.9025589398, 
+-0.2161961157, -0.2593115319, -0.2144535719), ( o.o, o. o, o.o, 1. o, o.o, o.' (-0.0324949361, -o. 0960118116, -o. 0213777061, 
+-0.00497988040, 1.0, -o. 2324752367), ( o.o, o.o, o.o, o.o, o.o, 1.' 
+mat66 = 1.3802690856, 0.5012748083, 0,1136352533, 0.0352573773, 0.915475693, o. 820462535· 0,4926707509, 1.7857730185, 0.2834565563, 0,0775178673, 0,6389919415, 0,74679e:,616 0 .1086400392 , 0.1808143111, 1.1485352077, 0.2521004078, 0,3894917858, 0.411729671 o.o, o.o, o.o, 1.0017003753, o. o, o.o 
+) ' 
+0.0944764419, 0.1916095906, 0.0554607959, 0.0189659936, 1. 099425539 , o. 339639252, o.o, o.o, o.o, o. o, o.o, 1. O )) ; 
+real = 0.4879879 
+real = 0.0532250066 
+mat61 ; 
+mat13; 
+mat16; 
+mat33; 
+mat31; 
+mat31; 
+mat36; 
+,t mat36 ; mat61; mat61; mat61; mat61; mat61; 
+,di mat66; mat66; real real real real real 
+1 on: real ; integer 
+J boolean 
+:.a r _de_ajuste real 1 text ; 
+· e dure entrada 
+ir 
+inp te:<t ; i nteger 
+.Ji n 
+fC1,1] := 1.0 _f(l,2J := 1.0 _H1,3J := 1.0 
+'or i : = 1 to 3 do for j := 1 to 3 do t_fCi, jJ := O.O 
+t_f[2,1J := tl l H2.2J := t2 
+,,. ~, ~1 t,--:t 
+
+epsi lon : = 10. O 
+factor_de_ajuste := 0.5 
+end; 
+procedure suma.61 e a, b mat61 var c mat >; 
+var 
+i, j integer 
+tmp real 
+begin 
+for i :~ to 6 do 
+for j := 1 ta 1 do 
+c[i,jl := a[i,jJ + b[i. j] 
+end 
+procedure suma66 Ca, b mat66; vare mat66 >; 
+var 
+i • j integer 
+tmp real 
+begin 
+for i := ta 6 do 
+far j := 1 to 6 da 
+cti,Jl := a[i,jl + b[i,j] 
+end 
+procedure resta66 < a, b mat66 vare ma.t66 >; 
+var 
+i, j integer 
+tmp : real 
+begin 
+for i := to 6 do 
+for j := 1 to 6 do 
+cCi,jJ := ati,JJ -b[i,jl 
+end 
+procedure resta31 < a, b mat31 vare mat31 >; 
+var 
+i. j integer tmp real begin far i : = to 3 do 
+cCi,ll := atí,lJ -bCi,lJ end ; 
+procedure mult36 e a mat36 b mat66 va.r C mat36 >; 
+var 
+i. j • k integer ; tmp real begin for i := 1 to 3 da far j := 1 to 6 do 
+begin tmp := O.O far k := 1 to 6 do 
+tmp := tmp + a[i,kl*bCk,jJ e Ci , j l : = tmp end 
+
+end; 
+proc:edure mult16 ( a mat13; b mat36 vare mat16 >; 
+var j • k integer ; tmp : real ; begin 
+for j := l. to 6 do 
+begin tmp := o.o for k := 1 to 3 do 
+tmp := tmp + aC1,kl*bCk,jJ c:C1,j] := tmp end end 
+proc:edure mult16_ ( a mat 16 b mat66 var e: mat16 >; 
+var j • k integer tmp : real 
+begin 
+for J := 1 to 6 do 
+begin tmp I"' 0,0 ; for k := 1 to 6 do 
+tmp := tmp + aC1,kJ*bCk,J] c:t1,JJ := tmp end end 
+proc:edure mult61 ( a mat66 b mat61 var e: mat61 >; 
+var i, k integer tmp : real 
+begin for i : = 1 to 6 do 
+begin tmp := o.o for k : = 1 to 6 do 
+tmp := tmp + ati,kl*bCk,lJ c:Ci,ll := tmp end end 
+proc:edure mult31 ( a mat36 b mat61 ; var e: mat31 >; 
+var i, k integer tmp : real 
+begin for i : = 1 to 3 do 
+begin tmp : = o. O ; for k : = i to 6 do 
+tmp := tmp + ati, kl*bCk, l J c:Ci,1] := tmp end end 
+
+prccedure mega_a 
+var ingreso_bruto: arrayC1 •• 2l of real ingreso_neto : array[1 •• 2J of real 
+function ala(factor, val : real> : real begin ala:= exp(factor*ln(val>) end; 
+procedure entrada 
+var inp text ; nom: stringt30J; i integer; 
+begin clrscr ; gotoxy(20,5) ; write<'Modelo de gquilibrio General Aplicado') 
+gotoxy(5,8); write<'Nombre del archivo?'> readln<nom> ; assign<inp,nom>; reset <inp> ; 
+readln(inp,p_fC1,1J,p_fC1,2J,p_fC1,3J) 
+for i := 1 to 3 do readln(inp,t_fti,1J, t_fCi,2J, t_fti,3Jl 
+readln(inp,epsilon>; readlnCinp, factor_de_ajuste>; c:loseCinp> 
+end ; 
+procedure calculo_de_c:oefic:ientes_de_factores var 
+i. j integer ; begin 
+i := 1 ; fer j := 1 to 3 do Hi,JJ := <btjl/gammaCJl>* al a (alf at 2, j l, <(p_fC 1, 23* <1+t_fC 2, J l >*ªl f aC 1, j J > / Cp_ftl,1l*alfat2,jJ)ll* alaCalfaC3,Jl, C(p_ftl,3l*<1+t_ft3,Jll*alfaC1,JJ>I (p_ft1,1l*alfaC3,JJ))) 
+i 
+: = 2 ; for j := 1 to 3 do fCi,Jl := (bCJJ/gammaCJl>* ala<alfatl,Jl, <<p_ft1,1l*(1+t_ft1,Jll*alfat2,JJ)/ Cp_ft1,2l*<1+t_fC2,Jl>*alfaC1,JJ))l* 
+
+ala(alfaC3,JJ, ((p_fC1,3J*<1+t_ft3,Jl>*alfaC2,JJ)/ <p_ft1,2J*<1+t_ft2,JJl*alfaC3,JJ))) 
+
+i 
+: = 3 ; for J := 1 to 3 do fCi,JJ := CbCJJ/gammatJll* alaCalfaC1,jJ, C(p_fC1,1J*<1+t_ft1,Jl)*alfaC3,JJl/ <p_fC1,3l*C1+t_fC3,Jll*alfaC1,Jll))* 
+
+
+ala(alfat2,JJ, (Cp_fC1,2l*<1+t_ft2,Jl>*alfaC3,JJ)/ <p_fC1,33*<1+t_fC3,Jl>*alfaC2,JJ))) ; 
+
+j : = 4 
+fC1,JJ 1= <btJJ/gammatJJ>* ala(alfaC3,JJ, <<p_ft1,3l*alfat1,JH/ (p_fC1,1J*alfaC3,JJ))) f[2,Jl := O ; 
+fC3,JJ 1= (bCJJ/gammaCJl>* ala(alfaC1,JJ,((p_fC1,1J*alfaC3,JJ)/ (p_fC1,3J*alfaC1,JJ))I 
+for i := 1 to 3 do for j := 5 to 6 do f[i' JJ := o.o 
+if debug then for i := 1 to 3 do begin for J := 1 to 6 do wrlte(fti,JJ:10:B,• ") ; writeln end 1 
+end ; 
+procedure matriz_de_factores_neta var i, J integer begin for i := 1 to 3 do for j := 1 to 3 do f_dotti,JJ := fCi,Jl*(1+t_fCi,JJ) 
+for i := 1 to 3 do fer j := 4 to 6 do f_dotci,JJ := fti,JJ; 
+if debug then for i := 1 to 3 do begin fer J := 1 to 6 do writeCf_dotCi,JJ:10:8,' ') writeln end 
+end; 
+procedure calculo_de_los_precios_de_los_bienes 
+var tmp1 mat16; i, j integer 
+begin 
+mult16C p_f, f dot tmp 1 > 
+mult16_(tmp1, b_t p_t) ; · 
+if debug then fer i := 1 to 1 do begin fer j := 1 to 6 do writeCp_tCi,JJ:10:8," '> ; writeln end; 
+nn,.,, • 
+
+end • 
+procedure calculo_de_demandas_privadas 
+var i, j : integer; tmp : real ; ingreso_neto_de_ahorro: arrayC1 •• 2J of real 
+begin for i := 1 to 2 do 
+begin tmp :=o.o; for J := 1 to 3 do 
+tmp := tmp + p_fC1,Jl*wCi,JJ ingreso_brutoCil := tmp end ; 
+for i := 1 to 2 do 
+begin ingreso_netoCiJ := ingreso_brutoCiJ*<1-t_iCiJ) ; ingreso_neto_de_ahorroCiJ := ingreso_netoCil*<1-shCil) 
+end ; 
+for i := 1 to 3 do begin xc1ti,1J := (betati,1l*ingreso_neto_de_ahorrot1l)/ <p_tC1,il*<1+t_c>> ; 
+xc2Ci,1J := (betaCi,2J*ingreso_neto_de_ahorrot2J)/ <p_tt1,iJ*(1+t_c>> end 
+for i := 4 to 5 do 
+begin XC 1( i, 1 J : = 0. 0 xc2Ci,1l := o.o 
+end 
+xc1C6,1J := C(shC1l*ingreso_netot1J)/ p_tt1,6J > ; 
+xc2C6,1J := ((shC2J*ingreso_netot2J)/ p_tc1,6] ) ; 
+suma61Cxc1, xc2, xc> ; 
+if debug then begin for i := 1 to 1 do begin for J := 1 to 6 do 
+writeln<xcCJ,1l:10:B,• • :<c1CJ,1J:10:8,' ', xc2CJ, 1]: 10:8) ; 
+writeln end; 
+wr i tel n Ci ngreso_brutoC 1J: 10: B, • ', ingreso_brutoC2l:10:8) ; writeln(ingreso_netoC1l:10:B,' ', ingreso_netot2J:10:8> ; writelnCingreso_neto_de_ahorrot1J:10:B,' ' ingresc_netc_de_ahcrroC2J:10:8l ; 
+end end ; 
+
+procedure calculo_de_niveles_de_actividades 
+var imp mat66 i' j integer tmpi real ; tmp maté1 
+procedure  sol (  coe:  mat66  d:  mat61  var  y  mat61 >  
+var i. a s  j'  k  integer; arrayC1 •• 6,1 •• 7l real ;  of  real  ;  
+begin  
+far i := 1 to 6 do fer j := 1 to 6 do a.Ci,JJ := coeCi,Jl  
+for j := a[j,7l  1 to 6 do := dtj,1J  
+if debug then for i := 1 to 6 do begin fer j := 1 to 7 do write(aCi,jJ:10:2) writeln end  
+for k := 1 to 6 do begin s:=aCk,kJ;  
+for j := atk,jJ  k to 7 do := aCk,jJ/s  
+for i := 1 to 6 do if i <> k then begin s := a.Ci,kJ ; for j := k to 7 do ati,JJ := ati,jJ end end  -s*aCk,jJ  
+end;  for J := yCJ,lJ  1 to 6 do := aCj,7J  
+begin  
+for i := l to 3 do for j := l to 6 do impti,jJ :=o.o;  
+i : = 5 ; far j := 1 to 6 do imp[i,Jl :=o.o;  
+
+
+for j 1m 1 to 3 do impti,jJ 1= Cg/p_tt1,4J>* 
+<t_pCJl*b_CJ,Jl*p_tCl,JJ+ t_fC2,Jl*p_fC1,2l*fC2,JJ+ t_ft3,Jl*p_ftl,3l*fC3,JJ> 
+i :== 6 J for j := 1 to 3 do impCi,jJ := <<1-g)/p_tC1,6l)* 
+(t_p[j]*b_[j,j]*p_ttl,jl+ t_fC2,JJ*p_fC1,2J*fC2,jJ+ t_fC3,Jl*p_fC1,3J*fC3,JJ) 
+i := 4 ; j := 4 ; impCi,JJ := Cg/p_tC1,4l>* <t_ptJJ*b_tJ,JJ*p_tc1,JJ> 
+i := 6 ; j := 4; impti,JJ := ((1-g)/p_tt1,6l)* <t_pCJl*b_CJ,JJ*p_tC1,JJ> 
+for i := 4 to 6 de for J := 5 te 6 de impti,JJ := o.o 
+if debug then begin 
+for i := 1 to 6 do begin for j := 1 to 6 de write(impti,JJ:10:B,' ') writeln end end; 
+resta66(b_, imp, b_modi) ; 
+tiva := t_c*<p_tC1,1l*xcC1,1l+ p_tC1,2J*xcC2,1J+ p_tC1,3J*xcC3,1J) 
+ting := (t_it1l*ingreso_brutot1J+ t_iC2l*ingreso_brutoC2J> 
+j : = 1 ; 
+for i := 1 to 3 do tmpCi,jJ :=O.O; 
+tmpC4,1J := Cg/p_tC1,4l>* (tiva-~ting) 
+tmpt5,1l :=o.o; 
+tmpC6,1J := <<1-g)/p_tC1,6l>* Ctiva+ting) 
+suma61Cxc, tmp, d) 
+sol Cb_modi, d, y) ; 
+
+tind := o 
+for j := 1 to 4 do tind := tind + t_pCJl*b_CJ,Jl*yCj,1J*p_tC1,JJ 
+tmp1 := o.o 
+for j := 1 to 3 do tmp1 := tmp1 + t_ft2,jJ*fC2,jJ*yCJ,1J 
+tmp1 := p_fC1,2J*tmp1 
+tfa.t := o.o 
+for j := 1 to 3 do tfat := tfa.t + t_ft3,JJ*fC3,JJ*yCj,1J 
+tfat := p_fC1,3l*tfat + tmpl ; 
+t := tfat + tind + tiva + ting ; 
+r := t/p_fC1,lJ. 
+if debug then begin for j := 1 to 6 do wr i tel n e y ej , 1 J : 1o1 8, ' ' > 
+for i := 1 to 6 do begin for j := 1 to 6 do write(b_modiCi,JJ:10:8,' •¡ writeln end end; end 
+procedure calculo_de_demanda_de_factores begin mult31Cf, y, demf> ; 
+resta31Cdemf, w_dot, exdf) ; if debug then begin 
+for i := 1 to 3 do begin write(demfti, 1J: 10:8,' ',exdfCi, 1J: 10:8) writeln end end; end; 
+procedure calculo_de_el_bienestar 
+var u1 : real u2: real 
+begin 
+ul := alaCbetatl,1J, xclt1,1l)* alaCbetaC2,1J, xc1C2,1Jl* ala(betat3,1J, xc1C3,1J> ; 
+u2 := ala(betat1,2J, xc2Cl,ll>* ala(beta.C2,2J, xc2C2,1J>* ala<beta.C3,2J, xc2C3,1J) ; 
+
+F b : = e11,:.we1· >* ((ala<aver, u1>> + (ala<aver,u2>>> 
+end; 
+begin calculo_de_coeficientes_de_factores; matriz_de_factores_neta; calculo_de_los_precios_de_los_bienes calculo_de_demandas_privadas; calculo_de_niveles_de_actividades calculo_de_demanda_de...:factores calculo_de_el_bienestar 
+end; 
+procedure ajuste_walrasiano_de_precios_de_factores 
+var 
+j : integer 
+begin far j := 1 to 3 do p_fC1,jJ := p_fC1,jl + factor_de_ajuste*<exdf[j,1J/demf[j,1J> end; 
+procedure genera_salida; 
+var 
+i : integer 
+begin writelnCout1>; writeln<out1,'Numero de iteraci6nes para la convergencia:',j:5>; ~1ri tel n (out 1); writeln(out1,'Precios de factores:'>; writeln<out1,p_fC1,1J:12:B,p_fC1,2l:12:B,p_fC1,3J:12:8) writeln(out1); writeln<out1,'Precios de bienes:'>; 
+far i:= 1 todo 
+writeln<out1,p_tt1,iJ:15:12> ; writeln<out1>; writeln(out1,'Demanda de factores:•>; 
+far i:= 1 to 3 do 
+writelnCoutl,demfti,lJ:15:12) ; writelnCoutll; writeln<outt,'Exceso de demanda de factores:'>; 
+far i:= 1 to 3 do 
+writeln<out1,exdfCi,1J:15:12> ; writelnCoutU; writelnCoutl,'Demanda de los pobres:'>; 
+for i:= 1 todo 
+writeln<out1,xc1Ci,1J:15:12) ; writeln<outt>; writeln<out1,'Demanda de los ricos:'>; 
+far i:= 1 to 6 do 
+writeln(out1,xc2Ci,1J:15:12) ; writeln<outl); writeln<out1,'Demanda privada:">; 
+for i:= 1 to 6 do 
+writeln(out1,xcti,1J:12:10) ; writeln<out1>; writeln(out1,'Niveles de actividad:'>; 
+for i:= 1 to 6 do 
+writeln(out1,yti,1J:12:10) ; writeln<outll; writeln<out1,"Recaudaci total:'>; 
+,.,... •f.~1 .... 1-.. +1 +..1,.,.1A, • 
+
+wrlteln(oLttl)J writeln (outll; writeln(out1,'Recaudaci del iva:'>; writeln(outl,tiva:12:10) ; writeln(out1); writeln(out1,"Recaudaci al ingreso:'); writeln<outl,ting:12:10> ; writeln(outl); writeln(outl,'Recaudaci por uso de factores:'>¡ write<outl,tfat:12:10) 
+wri teln (out 1); writeln(outl,'Recaudaci por impuestos al productor:'); write<outl,tind:12:10) el ose (out 1); 
+end ; 
+begin 
+entrada flag := true 
+j : = o 
+while flag do begin mega_a; j := j + 1 ; 
+gotoxy(l,25> clreol ; {write(j:8,' , 
+exdfCl,1]:15:8,' ' exdfC2,1l:15:8,' ', exdfC3,1l:15:8) ; i 
+if ((abs(exdfCl,lJ) > epsilon) or (abs(exdfC2, 1]) > epsilon) or labsCexdfC3,1J) > epsilon>> then 
+ajuste_walrasiano_de_precios_de_factores else 
+flag : = false end ; {genera_salida ;} 
+end 
+procedure mega13 var 
+i : integer 
+begin 
+wi th paso,.., do for i := 1 to 13 do begin mega( i1 + v[i,1l*h, i2 + vti,2l*h, i3 + vti,3l*h, aver, f[il, rCil) ; writeln( ' -->',(il + vCi,1J*h>,' ', i2 + vC1,2l*h,'' 13 + vCi,3J*h,' ', fCiJ,' ', rCil) ; writeln<lst,'-->',(11 + vti,ll*h>,' ', 12 + vCi,2J*h,' ', i3 + vCi,3l*h,' ' fCiJ,' ', rCiJ) 
+end 
+end 
+
+procedure calculos_de_primeras_y_segundaa_parcialcs ( var sol_gauss, gradiente_g: mat31 ) const rM = 6322053.560602654; 
+var 
+gradf mat31 gradr mat31 gradg mat31 hessf mat33 hessr mat33 hessg mat33 i integer j integer h_h real delta real 
+procedure sol( coe: mat33; d: mat31 var sol_gauss mat31 ) 
+var i' j. k integer ; a arrayC1 •• 3,1 •• 4J of real s real ; 
+begin 
+for i := 1 to 3 do for j := 1 to 3 do aCi,JJ := coeCi,JJ 
+for j := 1 to 3 do aCJ,4J := dCJ,1J 
+if debug then for i := 1 to 3 do begín for j := 1 to 4 do write<aCi,JJ:10:2) writeln end 
+for k := 1 to 3 do begin s :== atk,kJ; 
+for j := k to 4 do aCk,JJ := aCk,JJ/s 
+for i := 1 to 3 do i f i < > k then begin s ="' ati,kJ ; for j := k to 4 do aCi,jJ := ati,JJ -s*aCk,JJ end end 
+for j := 1 to 3 do sol_gaussCJ,1J := atJ,4J end 
+begin 
+
+delta:= 2*h h_h : = h*h 
+for i := 1 to 3 do 
+begin 
+gradf[i,1l := CfC2*il -fC2*i+1J) / delta 
+gradrCi,1] := CrC2*iJ -rC2*i+l]) / delta 
+end; 
+for i := 1 to 3 do 
+gradgCi,ll := gradfCi,lJ -
+paso·" .lambda*gradrCi, 1J ­
+2.0*pasa~ .rho*<rM-rC1l)*gradrCi,1J 
+hessf[1,1l := (f (2] -2.0UC1J + fC3l) I h h 
+hessfC1,2J := Cf CBJ + f[9J + 2.0*fClJ -fC2J ­f[3] -f[4] -f[5]) I h -h 
+hessf[1,3J : ;::: <H12J + H13J + 2.0*f[l] -f[2] ­f[3] -f[ -f[7]) I h_h 
+hessf C2, l J := hessftl,2] ; 
+hessft2,2l :::: (f (4] -2.0HC1l + fC5l) I h -h 
+hessfC2,3J := <fe 10J + f[ll] + 2.0*HlJ -H4l ­f[5J ·-f[6] -fC7]) I h_h 
+hessft3,l] hessfC1,3J
+== 
+hessfC3,2J := hessft2,3J 
+hessfC3,3J := (f ( -2.0UCll + f[7]) I h h 
+hessrtl,ll := (r C2J -2.0*rC1J + rC3J > I h -h 
+hessr e 1, 2l := <rCBJ + rC9J + 2.0*rC1] -rt2J ·­rC3l -rt4J -rC5]) I h_h 
+hessr e1, 3J <re 12J + rt13J +
+== 
+2.0*rCll -rC2J ­rC3J -rt6l -r t7J > I h h 
+hessrC2,1l :== hessr e 1, 2J ; 
+hessrt2,2J := <rt4J -2.0*rtlJ + rt5J) I h h
+-
+hessrt2,3J := (rClOJ + rt 11J + 2.0*rClJ -rt4J ­rC5J -rC6J -rt7J > I h_h 
+hessrC3,1] := hessrC1,3J 
+hessrC3,2J := hessrt2,3J 
+hess1-C3,3] := <rt -2.0*rCll + rt7J l I h_h 
+for i := 1 to 3 do for j := 1 to 3 do. 
+1-\IC">C:=nr; . i1 ,:::: hc.c:ccr; i1 -· 
+
+p;u.10·'·. l ambda*htmsr ei , J l -­
+2. 0*pasoA. rho* <rM-r C 1 J > *hessr Ci, jJ + 2.0*pasoA.rho*gradrCJ, 1l*gradrCi,1J ; 
+{for i := 1 to 3 do for j := 2 to 3 do 
+hessgCi, jJ := hessfCJ, iJ -pasoA.lambda*hessrCJ, iJ ­2.0*pasoA.rho*CrM-rClJl*hessrCJ, iJ + 2.0*pasoA.rho*gradrCJ,1l*gradrCi,1J > 
+sol C hessg, gradg, sol_gaussl ; 
+far i := 1 to 3 do gradiente_gCi,lJ := gradgCi,ll 
+writeln(•sali del gauss con ••• •¡ ; 
+writeln( sol_gaussCl,lJ:10:8, sol_gaussC2,1J:10:8, sol_gaussC3,ll:10:8> ; 
+writelnClst,'sali del gauss con,., ') 
+writeln<lst, sol_gaussCl,ll:10:8, sol_gaussC2,1l:10:8, sol_gaussC3,ll:10:8) 
+writeln< gradgC1,1J:10:B, gradgC2,1l:10:B, gradgC3,1J:10:8> 
+writeln(lst,'sali del gauss con ••• ') 
+writeln(lst, gradgCl,lJ:10:8, gradgC2,lJ:10:8, gradgC3,1J:10:B> 
+end 
+begin {main de iomega> 
+criterio! := true 
+clrscr ; gotoxy<l,5); write('Programa para obtener impuestos optimas mediante un 'l; writelnl'modelo de equlibrio general'> 
+gotoxy es, 7>; writelnl'Ingreso de los parametros de arranque••• ">; gotoxy(7,10); writeC'Valor del paramatro de sanci Crho) ? 'l; readlnlrho_inpl; 
+goto:<yC7,12); 1~rite('Criterio de la soluci (epsilonl ? '>; readln Cep_inp); 
+goto:<y(7, 14); write('Valor del incremento (hl ? '); readln<h_inp>; 
+gotoxy<7, 161; ,,,,.~4-,...1:-11-.1,...,,-.rt"" l.,...= .¡.ff\,-.11oetnc:: rlr.. :,.,..,...:,o,...,.,,,_ ? ''• 
+
+readln<t_inpl, t_inp2, t_inp3)J 
+gotoxy (7, 18); write('Valor del parametro de aversi a la desigualdad <aver)? '>; readln(aver>; 
+h := h_inp 
+epsilon := ep_inp 
+new<pasc> 
+with paso" do 
+begin lambda:= o.o rho := rho_inp r -:= o.o 
+sig := nil end; 
+primero:= paso 
+k : = 1 ; 
+while <k <= 20) and criteriol do begin 
+i : = 1 ; criterio2 :=true; 
+with paso" do 
+begin i 1 := t_inp1 i2 := t_inp2 i3 := t_inp3 
+end 
+while <i <= 5) and criterio2 do begin 
+writeln( ' entre a mega13 valor de ' ,i> ; writeln(lst,•entre a mega13 valor de •,i) mega13; calculos_de_primeras_y_segundas_parciales 
+<sol_gauss, gradiente_g > ; 
+if < (absCgradiente_gC1, 13) > ep) or (abs<gradiente_gC2,1J) > ep) or <absCgrad i ente_gC3,1l) > ep > then 
+begin i := i + 1 ; paso·". i 1 := paso·'·. i 1 -sol _gaussC1,1l paso"' . i2 := paso··' . i2 -sol_gaussC2,ll paso····. i3 :=paso··' .i3 -sol_gausst3,1l 
+end else criterio2 := false end ; 
+new<p"'so_sig) 
+
+with paDo_sig~ do 
+begin i 1 : = paso·". i 1 i 2 : = paso·". i2 i3 : = paso·". i3 
+end 
+pasoA.sig := paso_sig paso_sigA.sig := nil {paso:= paso_sig aguas aguas ojo) 
+with paso_sigA do mega( i1, i2, i3, 1.0, fO, rO) 
+i f ek = 1 ) then begin with paso_sigA do begin lambda:= pasoA.lambda + 
+2.0*pasoA.rho*<rM-rO) rho := pasoA.rho r -: = ro 
+end end else if 14,0*absCrM-rO>> <= CabsCrM-pasoA.r_l)) then begin with paso_sigA do 
+begin lambda:= pasoA,lambda + 2.0*pasoA,rho*CrM-rOI rho := pasoA.rho 
+r : = ro end 
+end 
+else begin with paso_sigA do 
+begin lambda : = paso·''. lambda ; rho := 10.0*pasoA,rho r· : = ro 
+end end 
+if CabsCpasoA.lambda -paso_sigA,lambdal <= 0.0001 ) then criterio1 := false paso:= paso_sig ; 
+k := k + 1 
+clrscr ; tmp := primero while tmp <> nil do 
+begin wi th tmp·'· do begin writeln( i1:8:7,' ',i2:8:7,' ',i3:B:7,' lambda:8:7,' ',rho:8:7,' ',r_) tmp := sig end; end; paso:= paso_sig 
+k := k + 1 end 
+end. 
+
+
+
+
+
+

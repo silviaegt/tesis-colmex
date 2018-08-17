@@ -1,0 +1,520 @@
+f1ldiiaot•ca (i)aruel {,'G.uo ·vu1,egu..) 
+.e~~ ~CR.EGIO DE MEXICO.. A-C 
+e:1 !1Bib!iotera º.";,, rocí,,Ville~as 
+M 1 r 
+·. .. .. ,ano J07 
+1 •• :
+Illllllllllll/1/IIIIIIIIIIII 
+3 9 O 5 O 7 5 8 5 2 5 F 
+1 ------I 
+EL COLEGIO DE MÉXICO, A.C. CENTRO DE ESTUDIOS DEMOGRÁFICOS Y DE DESARROLLO 
+URBANO 
+
+UN MODELO DE OPTIMIZACIÓN. CONCEPCIÓN, DISEÑO E IMPLEMENTACIÓN. 
+Tesis presentada por 
+MIGUEL OCHOA TORRES 
+Para optar por el grado de 
+
+MAESTIÚA EN ESTADÍSTICA 
+Director de Tesis Dr. Tomás Garza Hemández 
+
+MÉXICO, D.F. 2004 
+
+
+Pr6/ogo 
+En 1967 El Colegio de México inici dentro de su Centro de Estudios Econmicos y Demográficos, un Programa de Maestría en Estadística e Investigaci de Operaciones. El autor del presente trabajo formparte de la primera promo­ci de ese Programa. Cursy aprobtodas las asignaturas seg el plan de es­tudios de 1967 a 1969. Desafortunadamente, en el a de 1972 las autoridades de El Colegio decidieron suspender dicho Programa. Con ello se interrumpiel proceso natural para que los egresados pudieran completar todos los requisitos y obtener el grado. 
+En 1985, la Direcci Académica de El Colegio tomla iniciativa de invitar a los egresados a entregar el trabajo de tesis requerido por el plan de estudios para concluir el proceso y obtener el grado. En respuesta a esa iniciativa institu­cional, nacila versi preliminar de este trabajo, que fue entregada en 1986. Por diversas razones -probablemente por falta de seguimiento por parte del suscrito-la expedici del grado y del título correspondiente quedaron en suspenso. El autor ha decidido actuali7.ar este trabajo para satisfacer el requisi­to. Gracias al apoyo y la amplia experiencia académica del Dr. Tomás GaJZa Hernández, promotor y primer Director de la Maestría en Estadística de El Co­legio, hemos incoiporado métodos e instrumental disponibles en del bagaje ac­tual de la Investigaci de Operaciones. El Dr. Manuel Ordorica, profesor del CEDDU, contribuytambién, de manera significativa, a revisar críticamente este trabajo. 
+Agradecemos profundamente a las autoridades de El Colegio de México por contribuir -de manera tan valiosa-a nuestro perfeccionamiento académico. Dejamos constancia de nuestra gratitud a esos dos distinguidos profesores por su ayuda exigente, rigor analítico, critica constructiva y apoyo decidido. A la Dra. Silvia E. Giorguli Saucedo, Coordinadora Académica de la Maestría en Demografia, por su diligencia y espíritu de servicio. 
+Sometemos el presente trabajo de investigaci para dar por concluido el proceso y obtener el grado correspondiente. 
+Miguel Ochoa Torres. 
+2 
+Indice 
+Definici del problema y objetivo 4 Metodologla 8 Diselto de un modelo 'a esca/a' 10 Soluci, interpretaci y recomendaciones 15 Co estimar la demanda 18 Uso de la funci acumulada de probabilidad 19 Co encontrar una distribuci de probabilidad subjetiva para estimar la demanda de un producto 22 Las vivencias: un punto de apoyo 22 La acci perfecciona 24 Qué puede y debe aportar el técnico 25 Beneficios del intercambio entre ambos mundos 25 Necesidad de medir qué tan probable es lo posible 25 Unas pinceladas de teorla 26 Distribuci de Poisson 27 Conviene afrontar las consecuencias de nuestros actos 29 Uno parte ... y el otro escoge 31 Co vincular esa norma con el c•lcu/o de una probabilidad 32 Muestreo de Monte Cario 39 Conclusiones 40 
+Apéndice 41 
+3 
+Definici del problema y objetivo 
+La industria automotriz se ha desarrollado a un ritmo acelerado desde la década de los as setenta hasta principio de los ochenta. Ha generado empleos y valor econico agregado tanto para las plantas armadoras, como para sus redes de distribuidores. 
+Sin embargo, el proceso inflacionario de la década de los as ochenta pro-piciuna serie de tensiones en la cadena de valor de este mercado. 
+Adjuntamos la serie de tiempo que muestra, mes a mes, la producci y las ventas agregadas, excluyendo camiones, desde enero de 1976 hasta diciembre de 1985 por toda la industria automotriz. 1 En ese período, se fabricaron en México 2,630,791 automiles, y se vendieron 1,833,277 . 
+.................. 
+6...•M&lco.1976-1"5 
+Mio eae felt ..... A... ..., )111 jlll Aso ., od ... Die 
+1976 21,045 19,942 21,738 21,475 18,853 21,075 15,204 14,818 11,404 19,294 17,483 10,218 1977 15,349 12,218 14,034 12,880 15,787 18,843 16,429 15,189 11,309 15,744 20,636 19,219 1978 19,380 21,618 19,046 24,659 23,590 21,586 16,086 16,089 13,994 23,249 21,510 21,712 1979 26,866 21,332 23,916 23,226 23,955 25,783 25,410 19,352 14,605 29,265 25,998 20,341 1980 28,524 22,248 26,017 20,919 23,835 29,506 31,384 22,594 16,908 26,150 27,130 27,841 1981 30,100 29,573 31,763 26,973 32,419 33,792 38,597 28,737 22,896 28,163 25,378 27,106 1912 31,885 26,207 34,850 30,831 30,652 29,196 18,059 26,587 16,276 21,232 19,793 IS,011 1913 19,765 19,184 21,043 18,609 17,137 17,975 16,382 17,620 12,365 17,812 16,952 12,293 1914 18,575 17,711 18,902 16,210 22,652 22,575 22,688 21,256 20,693 20,838 24,153 18,451 1915 25,522 26,598 26,804 24,838 26,211 25,473 30,054 21,766 20,510 27,249 23,565 18,474 
+v........alleillll a6.,..•Mco.1'Yl6-1'85 
+lllllo ene felt ..... Altr ...,. )111 jlll ., od aov Die
+• 
+1976 26,544 15,473 19,743 16,231 16,724 18,006 20,724 18,635 10,294 10,446 13,419 12,888 1977 14,032 13,755 15,165 14,678 17,888 23,332 14,661 12,401 10,906 16,956 21,392 17,847 1978 19,087 18,168 16,434 18,498 20,567 19,509 16,338 18,212 14,756 22,189 22,492 20,337 1979 24,347 22,393 22,213 17,135 22,491 22,002 22,746 19,885 15,769 28,803 25,736 23,386 1980 25,280 22,573 24,362 19,783 22,674 27,078 28,149 23,320 18,352 23,124 26,529 24,817 1981 29,129 28,449 29,918 26,107 29,199 31,100 33,880 27,284 24,021 25,436 28,898 26,942 1912 29,193 24,283 33,901 27,073 26,654 25,794 18,580 23,098 20,994 19,716 24,837 12,638 1913 18,942 16,402 20,175 18,613 14,282 15,994 12,602 15,944 10,551 15,544 15,661 17,342 1914 14,947 16,562 16,542 13,980 19,227 20,436 17,346 19,845 16,438 19,829 19,899 22,599 1915 19,809 23,368 22,021 16,749 19,508 22,188 20,517 17,670 12,291 19,905 24,193 23,968 
+1 Ver Boletín nero 241 de la Asociaci Mexicana de la Industria Automotriz, A. C., enero de 1986. 
+4 
+A partir de esos datos, elaboramos la siguiente gráfica. En ella aparecen las diferencias mensuales entre lo producido y lo vendido. Se puede observar cmo, a partir de 1982, esa industria ha experimentado una baja en el volumen de ventas y, en consecuencia, ha tenido que hacer frente a un inventario consistentemente excesivo respecto de la demanda normal. 
+
+Industria autom>triz mexicana Diferencias entre producci y venta nacional 1976-1985 
+
+Meses 
+Como resultado de esta realidad del mercado, se produjo una seria contrac­ci que ha generado el despido de varios miles de obreros de la mayoría de las plantas y la liquidaci o venta de algunas agencias distribuidoras. Baste recor­dar que, en 1986, la planta Renault dejde operar en México, y sus agencias distribuidoras tuvieron que cerrar, o cambiar de marca. 
+Durante 1983, en una de las plantas más importantes de México conservaron su empleo so cinco mil de los diez mil empleados totales que había en ella un a antes. Y muchos de los dues de agencias de esa misma marca se han planteado la posibilidad de venderlas. 
+5 
+Por esas razones, entre la planta y las agencias se produjo un arduo proceso de negociaci. Las plantas quieren ejercer su poder de negociaci por el inte­rés que tienen en desplazar todas las unidades que han producido y que preten­den que el mercado adquiera a través de su red de distribuidores. Por el contra­rio, las agencias perciben la imperiosa necesidad de protegerse contra el riesgo de estar sobre inventariadas a un costo financiero que en dos meses y medio erosiona totalmente su margen de utilidad y las hace incurrir en pérdidas. Peor a, si por la presi de alcanzar los objetivos de venta exigidos por las plantas concediesen descuentos elevados, ese período de dos meses y medio se reduciría todavía más. 
+Como primera etapa en el proceso de análisis, empez.aremos por hacer un breve resumen conceptual del problema desde el punto de vista de la agencia. 
+En los resultados de cualquier agencia intervienen, de manera significativa, dos tipos de variables. Las que proceden del entorno macroeconico: la tasa de inflaci mensual, la paridad cambiaria, el crédito disponible para el consu­mo, así como su costo real, para citar so algunas de las más importantes. Y aquellas otras que proceden del dintorno econico en el que se desenvuelven: sus medidas internas de productividad, su eficiencia operativa, sus procesos de aprovisionamiento, venta y financiamiento de autos nuevos, el servicio post venta y el manejo de sus inventarios. 
+Las tres variables más significativas del entorno son: 1) el nivel de precios, 
+2) el monto del crédito disponible, así como su costo real y, 3) el beneficio, o escudo fiscal para quien compra un auto. El nivel de precios, no obstante ser una variable muy importante, se puede volver poco significativa ~n compara­ci con las otras dos-en caso, por ejemplo, de haber crédito abundante y ba­rato, es decir, proporcionado a la inflaci. Esto es especialmente cierto en el marco de los autos caros y altamente diferenciados que no so representan una capacidad de transporte, sino un estatus social. En éstos, el impacto en los au­mentos de precio es inferior, comparativamente, con aquellos otros, más auste­ros, y que sirven para atender tareas más específicas de transporte. 
+En cualquiera de estos casos, utilizando la metodología denominada stepwise regression, hemos encontrado que, para explicar el comportamiento de las ven­tas, el crédito es un factor de mayor relieve que el precio mismo2, sobre todo si 
+Esto ocurre también en otros sectores. El Puerto de Livapool afinna: ~El factor clave sigue siendo el aédito. Al cierre del 2002 nuestro portafolio de aédito fue de seis mil setecientos millones de pesos, 22% superior al del a.fto 2001. Ver Reporte de esta empresa a sus accionistas del afto 2002. 
+6 
+se consideran aisladamente. La paridad cambiaria es una variable importante dado que ésta es una industria significativamente sensible a este respecto. La parte fiscal es también importante. En 1984, el a en que más se ha abatido el mercado automotriz en los timos veinte as, las autoridades correspondien­tes, como apoyo a esa industria -que representa del orden del 6% del PIB mexicano-concedieron la tasa de depreciaci anual más elevada de ese mis­mo período: el 75%. Sin esa ayuda, muy probablemente se habría presentado una caída, expresada en nero de unidades vendidas, significativamente ma­yor a la observada. 
+Sobre las variables macroeconicas del entorno la agencia no tiene inter­venci directa. En cambio, sobre las primeras variables -las que provienen del dintorno-la agencia sí puede, y debe, ejercer un control estricto para buscar una eficiencia operativa que es fundamental para su propia supervivencia. 
+Los responsables de estas decisiones temen que, independientemente del ac­tivismo que desarrollan, y no obstante su apariencia financiera sana, puedan estar incurriendo en una especie de espejismo pasajero que les induzca final­mente, debido a su incompetencia para enfrentarse a estas realidades, a suponer que están generando valor mientras que, de hecho, pueden estar perdiéndolo a costa de su capital social. Cierta o no esta afirmaci, justificable o no ese mie­do, el hecho inobjetable es que hay muchos que lo piensan de verdad. 
+Sería una pena incurrir en cualquiera de los dos posibles errores -tipo uno y tipo dos-de los que habla la inferencia estadística cuando se plantea una prue­ba de hipesis: rechaz.ar una hipesis cierta, o aceptar una falsa. En el contexto planteado, eso equivaldría a liquidar equivocadamente la agencia al suponer que es un mal negocio, generando con ello un costo de oportunidad, personal y social, por el desempleo que esto podría propiciar o, por el contrario, no saber cerrarla a tiempo y acabar descapitaliz.ándose a pasos agigantados. En este con­texto, ambos, planta y red de distribuidores, tienen que hacer un esfuerzo per­manente y cuidadoso por ser más eficientes en su operaci. En este contexto, desarrollar e implementar un modelo de optimiz.aci financiera reviste especial importancia. 
+A la luz de esta realidad, las agencias automotrices han visto la imperiosa ne­cesidad de buscar el modo de ser más eficientes. En este trabajo de investiga­ci, de naturalez.a académica, propondremos algunos métodos y modelos de Investigaci de Operaciones y Estadística que ofrezcan una soluci potencial a los responsables del manejo de una agencia automotriz de tal manera que 
+7 
+puedan optimizar sus resultados. Tal modelo debe ser completo, ágil, versátil y de fácil comprensi y comunicaci. 
+En este trabajo decidimos concentrarnos en la micro economía de una agen­cia. Propondremos modelos de optimizaci que incidan en aquellos aspectos en los que sí puede ejercer control para lograr la eficiencia financiera interna. Por ejemplo, el manejo de sus inventarios. Propondremos un modelo de optimi­zaci que ayude al responsable de la decisi a asignar, de la mejor manera posible, sus recursos financieros a la luz 1) de las restricciones crediticias del momento y 2) al hecho de estar acostumbrados -quizá mal acostumbrados-a vivir en un entorno menos agresivo y 3) a las circunstancias peculiares de esta industria. 
+Algunos académicos, como F. M. Scherer, han hecho investigaci enfocán­dola desde el punto de vista macro econico de la realidad norteamericana. 3 Otros han hecho un análisis estratégico. 4 Nuestro objetivo es so micro eco­nico. Buscaremos la optimizaci de dos cuentas de su balance: inventarios de autos nuevos y las repercusiones que tal cuenta tenga en eljlujo de efectivo. El saldo de la cuenta de inventarios depende, a su vez, de la oportunidad en las adquisiciones y las ventas. Es en este terreno donde la agencia distribuidora re­cibe de la planta las principales presiones. Y donde debe estar mejor preparado para negociar con ésta. 
+Desarrollar instrumental analítico para que los responsables puedan funda­mentar sus decisiones es la raz de ser de este trabajo. 
+
+Afetodologla 
+La programaci matemática es un método que se ha empleado con éxito en el análisis de proyectos de inversi. Martin Weingartner ha escrito una obra clá­sica que ha generado una gran cantidad de documentos en esa misma línea de pensamiento.5 En su trabajo, este académico propone modelos concretos para analizar y jerarquizar proyectos de inversi mediante Programaci Lineal. Recomienda utilizarlos especialmente en aquellas ocasiones en las que, por la naturaleza misma de los proyectos, éstos se pueden tomar o dejar de manera 
+3 Ver SchereJ", F. M, lntbutrial Markd Stnu:bue and Economic Perfomuuu:e, Rand Me. Nally Publisl,ing Co., 1980. 4 Ver Hamel, Gary, Paha1ad, C. K., Compdingfor tliejidllre. Harvard Business School Press, 1994. s Ver Weingartner, Martin, Mllll,anatical Progrt,,n,,,ing tllld tlie Anolym o/ Capillll &ulgding Pro/Jlems, 
+Prentice Hall, 1974. 
+fraccionada. Es decir, el resultado de las variables de decisi es un nero re­al cualquiera. Por ejemplo, en el caso de un portafolio de inversi en acciones, tiene sentido práctico que el usuario delegue en el modelo la elecci tima, sin restringirlas para que asuman so valores en enteros. 
+Pero también propone el uso de la Programaci en Enteros para aquellos ca­sos en los cuales los proyectos han de seleccionarse o no, pero so de manera integral.6 Ése sería el caso, por ejemplo, si se tratara de invertir en una planta industrial que no puede realiz.arse de manera fraccionaria. Simplemente se hace, 
+o se deja de hacer, pero de manera integral. Eso no significa que el desembolso tenga que hacerse en un solo instante. Significa que el proyecto se toma o se de­ja. En este segundo tipo de casos habría que plantear el modelo incorporándole restricciones adicionales para que las variables de decisi puedan asumir, ex­clusivamente, soluciones en enteros. 7 Y ése sería precisamente el caso en una distribuidora ya que no es factible adquirir fracciones de automil. Hay res­tricciones -que en la jerga de ese medio, se conocen con el nombre de paque­te~ mediante las cuales la planta obliga al distribuidor, por ejemplo, condicionándole de tal forma que la venta de cinco unidades del modelo A, que tiene gran demanda, esté supeditada a que, simultáneamente, adquiera al menos otro modelo B, cuya demanda es inferior. 
+Las finanzas básicas de corto plazo en una empresa se pueden expresar en flujos de efectivo. Por ello, es conveniente expresar el problema en esos térmi­nos. Concretamente, es factible modelar un período, anual por ejemplo, de ope­raci de la distribuidora, considerándolo como un proyecto de inversi. Para conseguirlo, es preciso establecer, período por período, las relaciones que ligan los costos de adquisici y los precios de venta para cada uno de los tipos de unidades a vender; con el nero de unidades a comprar, y con la expectativa de ventas. Se pueden incorporar incluso restricciones para condicionar la solu­ci a enteros, así como las restricciones necesarias para incluir los paquetes. Y, si fuera necesario, el nero de períodos se puede ampliar para ajustarlo a las circunstancias particulares. 8 
+6 Gomález Zubieta, Rulot 0n some aspects o/lnteger Linear Progra,,u,,g, Tesis JHll'fl obtener t!I grado de doctor en Investigaci de Operacionest MITt Cambridget Masst l965. 7 Ochoa Rossot Felipet Applia,tions o/Discrete Optizlltio,, Tecl,niq11es to Capital Investment and Network Syntl,esis Problo,u. Research Report, MITt Cambridget Mass.t 1968. 8 A este respectot la ica limitaci es la capacidad de la computadora a utilizar. 
+9 
+El algoritmo para resolver un problema de programaci matemática es algo sumamente conocido y difundido. 9 
+Hay una enorme variedad de paquetes de cputo que utilmm el método Simplex o variaciones del mismo, para atender el caso de la Programaci en Enteros. En este trabajo utilizaremos LINDO. 
+Diseno de un modelo 'a escala' 
+Para plantear un modelo que refleje a través de la programaci matemática las necesidades expresadas, hemos descrito, en términos de desigualdades, el pro­ceso de adquisici y venta de la agencia distribuidora. Deliberadamente hemos querido plantear, a modo de ejemplo, una versi preliminar simplificada del modelo porque estamos convencidos de que el modelo 'real' no sería sino una versi más voluminosa del que ahora presentamos. Empezar por un modelo simple mejora notablemente la comprensi del problema y las posibilidades de su implantaci posterior. Una vez construido, mostraremos una síntesis de los resultados. Sugeriremos también el modo concreto como se puede mejorar e implementar exitosamente este modelo abreviado. 
+El punto de partida es el inventario inicial de vehículos. A partir de este pun­to supondremos un plan de adquisiciones para los primos tres meses con el cual la empresa planea atender su propio prontico de ventas. Supondremos también que el distribuidor preferiría minimizar el riesgo de inventariarse en exceso que el no vender ya que, en el mercado de vendedores que se observa en el mercado mexicano de 1985, es menos probable conseguir un cliente que una unidad de la planta. 
+Para empezar, y sabiendo pectamente que en el modelo peccionado se­ría preferible utilizar la Programaci Entera Mixta, iniciaremos el plantea­miento utilizando solamente la Programaci Lineal convencional. Considera­mos que las variables continuas nos llevan a una primera aproximaci sufi­cientemente buena. 
+A continuaci, describiremos el modelo, variable por variable, y restricci por restricci. Para hacerlo más fácilmente manejable, vamos a suponer que la agencia so vende dos tipos de vehículos: Automiles, y Camiones. Esto no 
+Shapiro, Roy. Opti,nkation lllt!ll,ods for planning ""d allocotion. Tat ""d cosa in Mllll,OIUllictll Pro­gramming. John Wiley & Sons, 1984. 
+10 
+significa ninguna pérdida de generalidad ya que, una vez disedo, se podrán incorporar en él tantas variables como la realidad pudiera exigir. Los algoritmos de cputo disponibles son abundantes, robustos y eficientes. 
+En cuanto al horizonte de planeaci, consideraremos un período trimestral. De nuevo, una vez diseda la estructura, ese horizonte se podrá ampliar a tan­tos meses como hiciera falta. Aun en el caso de que la computadora tuviera li­mitaciones de memoria, se podrían concatenar modelos de manera sucesiva. 
+Como ya hemos selado, las variables fundamentales del modelo son cua­tro: Caja, Compras, Inventario y Ventas. 
+Para marcar claramente la dinámica de la Caja definiremos, utilizando cuatro variables, el saldo en caja en cada uno de los tres meses a considerar incluyendo el saldo inicial: Co, C1, C2 y C3. Para identificar al Inventario Inicial de cada uno de los dos modelos utilizaremos las variables IAo e leo. 
+Por lo que se refiere a las Compras y a las Ventas de cada uno de los dos ti­pos de vehículos en cada uno de los tres trimestres utilizaremos las siguientes variables cuyo significado mnemotécnico es fácilmente interpretable: 
+CA1 : compras del modelo A en el mes 1 
+Ce1 : compras del modelo C en el mes 1 
+VA1 : ventas del modelo A en el mes 1 
+Vc2: ventas del modelo C en el mes 2 
+IA1: inventario del modelo A al principio del mes 1 
+lc1 : inventario del modelo C al principio del mes 1 
+CA2: ... 
+Cc2: 
+VA2: 
+Vc2: 
+IA2: 
+lc2 : ... etcétera 
+A continuaci, estructuraremos la funci objetivo y las restricciones agru­pándolas por bloques homogéneos. Un primer grupo de restricciones son aque­llas que se refieren a la dinámica de los Inventarios e, implícitamente, a las Compras y a las Ventas. Genéricamente, y para un tipo cualquiera de vehículo, esta relaci podría expresarse de la siguiente manera: 
+Inventario inicial + Compras = Ventas + Inventario final 
+O, más brevemente: 
+De manera semejante, se puede estructurar el primer grupo de restricciones a las que llamaremos, genéricamente, de existencias. Las primeras seis desigual­dades que presentamos en formato de computadora recogen este primer grupo de restricciones. 
+Otra restricci muy simple, aunque fundamental, se refiere a la disponibili­dad en caja al momento cero. Esto es, C0. Esta restricci expresa, en pesos o en miles, el efectivo disponible al iniciar operaciones. 
+
+
+Co=20 
+A continuaci estructuraremos otro grupo de restricciones a las que podría­mos denominar de capacidad de compra. Estas restricciones tienen por objeto relacionar la disponibilidad de efectivo en caja con la mezcla de ambos produc­tos que se pueden adquirir de la planta. En el ejemplo numérico supondremos que el vehículo A cuesta 2.7 en millones de pesos. El C, 4 millones. 
+Utilizando estos elementos, podremos expresar este género de relaciones di­ciendo que las compras totales, de un vehículo cualquiera, tienen necesariamen­te que ser inferiores a la disponibilidad financiera en caja. Simbicamente: 
+-Co + 2.7 CA1 + 4 Cc1 <= O 
+Si suponemos que los precios se mantienen constantes el mes siguiente, la restricci se puede expresar de la siguiente manera: 
+-C1 + 2.7 CA2 + 4 Cc2 <= O 
+Para ilustrar la realidad del actual proceso inflacionario, supongamos que el siguiente mes los precios de los vehículos A y C aumentaran respectivamente a 
+2.9 y 4.2 millones de pesos. En consecuencia, la restricci del mes siguiente tendría esta fonna: 
+-C2 + 2.9 CA3 +4.2 Ce3 <= o 
+De este modo se genera otro grupo de restricciones que vinculan el efectivo disponible con las adquisiciones. En la tabla sintética que aparece al final de es­te apartado mostraremos todas las restricciones seladas. 
+Otro género de restricciones sirve para indicar al modelo las existencias ini­ciales expresadas en términos de nero de unidades de cada uno de los vehí­culos considerados. Simbicamente: 
+
+leo= 7 
+A continuaci estructuraremos un grupo importante de relaciones con el que se busca reflejar los movimientos y las interacciones en el flujo de efectivo co­mo consecuencia del proceso de compra de unidades. Hay dos opciones en las que se puede aplicar el efectivo disponible. Cada una de éstas ofrece rendimien­tos diferentes. Una, es la compra de unidades. La otra, es dejar el efectivo en la caja para mejorar la liquidez. La compra de unidades ofrece como atractivo el diferencial entre el precio de venta y el costo de adquisici. Ese atractivo compite con el que ofrece la liquidez y que está manifestado por el rendimiento financiero del dinero si éste permanece en caja. Si el rendimiento financiero fuera más importante que el margen bruto, esto restaría importancia relativa a la opci de compra-venta. Esto equivale a una 'transacci potencial en compe­tencia'. 
+Para ilustrar numéricamente este proceso, supondremos que cada peso en ca­ja genera un rendimiento del seis por ciento mensual efectivo. Ese remanente en caja se puede expresar relacionando la caja inicial y lo asignado para las com­pras de vehículos del primer mes. Simbicamente se expresa de la siguiente manera: 
+(Co -2. 7 CA1 -4.0 Cc1) 
+Sobre esta cantidad se habría de calcular el rendimiento financiero que, al término de un mes, y al seis por ciento mensual efectivo, es igual a: 
+(Co -2.7 CA1 -4.0 Ce1) (1.06) 
+En consecuencia, el siguiente mes, el uno, habría un saldo que tendría que ser igual a los ingresos por venta más los ingresos por productos financieros. Sitn­bicamente: 
+C1 -3.2 VA1 -4.8 C1-[(1.06) (Cz -2.7CA1 -4.0Ce1)} = O 
+De esta manera se gestan las tres restricciones a las que llamaremos Flujo1, F/ujoz y Flujo3. 
+Para facilitar la interpretaci de los resultados es necesario hacer una acla­raci. Supondremos que en el tercer mes aumentan los costos de adquisici, respectivamente, a 3.1 y 4.3 millones de pesos. A su vez, supondremos que los precios respectivos han aumentado a 3.4 y 4.9 millones. 
+Para terminar, debemos integrar un grupo de restricciones que expresen la demanda por tipo de vehículo y por mes. Ilustraremos genéricamente so dos de ellas. 
+Vc2=20 
+Vale la pena destacar la conveniencia de hacer un análisis mucho más fun­damentado estadísticamente. No obstante, en esta primera etapa en el dise del modelo, utilizaremos estas dos restricciones para hacer un primer boceto del mismo. En una segunda etapa propondremos utiliz.ar la probabilidad subjetiva como una manera eficiente para atender esta necesidad. 
+Una vez agrupadas las restricciones por el concepto que las hace homogé­neas entre sí, resta solamente decir que el objetivo a maximiz.ar es el saldo en caja al final del tercer período. Sitnbicamente: 
+
+ZmC3 
+En síntesis, disponemos ya de una serie de restricciones por grupos homogé­neos de actividad y una funci objetivo. Todo ello configura el programa li­neal abreviado cuyo planteamiento integral adjuntamos en el Apéndice acom­pado de su correspondiente soluci tima y su análisis de sensibilidad. 
+14 
+Soluci, Interpretaci y recomendaciones 
+Planteado y resuelto 10 el primer programa lineal, restan tres tareas importantes: 
+l) 
+interpretar los resultados; 2) hacer las sugerencias concretas de co perfec­cionar el planteamiento y, 3) implantarlo. 
+
+l) 
+Interpretaci de los resultados. El impreso de la computadora muestra cuatro apartados. El primero presenta el resultado numérico de cada una de las variables de decisi en la soluci tima del problema. Comentaremos so algunas. Por ejemplo, la evoluci de la caja durante el período en estudio que­da de manifiesto en los valores: Co = 20, que fue el punto de partida. Es decir, partimos de suponer una disponibilidad de veinte millones de pesos en efectivo como saldo inicial en caja. C1 = 162.0, C2 = 304.00 y C3 = 446.0, que es el va­lor timo de la funci objetivo. En otras palabras, al final del proceso trimes­tral de compra-venta de vehículos automotores, el saldo en caja es igual a 446 millones de pesos. 
+
+
+Las variables IAo e leo tienen una interpretaci análoga puesto que, de nuevo, se trata de datos proporcionados al Programa. Los siguientes resultados sí pro­ceden de la soluci tima generada por el programa lineal. Indica que lo me­jor es comprar dieciocho unidades del modelo A y veinte del modelo C en el primer mes. Con éstas, en adici al inventario inicial, el modelo sugiere ven­der, durante el primer mes, veinte unidades modelo A y veinte del C. Esas compras satisfacen el prontico de demanda establecido, como un supuesto de trabajo, en las restricciones. 
+En el apartado de las variables duales, lo más significativo aparece en las res­tricciones de demanda. Informan al responsable de las decisiones que no vender una unidad adicional tanto de autos, como de camiones, representa un costo de oportunidad del ingreso de venta correspondiente. 
+Con esta informaci a mano, el responsable del manejo de la agencia puede negociar más eficientemente con la planta sabiendo co y cuándo comprar. 
+2) Perfeccionar el modelo. Para dar más realismo a la soluci, convendría incorporar más períodos, todos y cada uno de los modelos que se fabrican y comercializ.an, así como sus posibles colores y atributos que los distinguen tales como dos y cuatro puertas, Station Wagon, etc. Esta incorporaci no cambia 
+10 En el Apéndice presentamos el modelo, la soluci tima y el análisis de sensibilidad. 
+significativamente los conceptos expresados ni tampoco la interpretaci de los resultados. Significa, simplemente, un cambio en las dimensiones y, quizá, en la laboriosidad computacional al tener que resolver un modelo de Programaci matemática cuyas matrices habrán de tener mayores dimensiones. 
+Una de las restricciones más sensibles a cualquier tipo de movimiento es la que se refiere a la demanda de automiles. De hecho, si se cambia ésta, aun­que sea en cantidades peques, se modificaría consistentemente el resultado de la funci objetivo. 
+Otra posibilidad para perfeccionar el modelo seria la de agregar variables que den al responsable de tomar las decisiones algunas otras opciones que por bre­vedad no hemos incluido. Por ejemplo, no necesariamente ha de circunscribirse a vender utilizando fondos propios. Se podría adir la opci de apoyarse en créditos bancarios y, por supuesto, también de concederlos a los clientes. Esto no tendría otra dificultad que la de adir variables y restricciones al modelo de optimizaci. Por ejemplo, la variable Cred1 para recoger en ella la cantidad de efectivo a solicitar el primer mes de operaciones. Adicionalmente, habría que incorporar tantas de éstas como periodos tuviese el modelo: Cred2 ... 
+Otra posible limitaci importante de este modelo es la de suponer un 'mer­cado perfecto'. Es decir, suponer que en cada ocasi que el modelo indique la conveniencia 'tima' de comprar un vehículo, bastará con llamar a la planta para conseguirlo. Esto no es así de fácil. Podría ocurrir que la agencia necesite atender a un cliente con una necesidad específica que la planta no esté en posi­bilidad de surtir de inmediato por compromisos previamente contraídos. 
+A la luz de nuestra experiencia real, la dificultad más seria en la implementa­ci de este modelo reside en la escasa capacidad de asimilaci del usuario, o en su resistencia al cambio. Paradicamente, ha sido ésta la principal barrera a superar en el uso del instrumental planteado en este trabajo. Hay pocas distri­buidoras de vehículos automotores que tengan las capacidades organizacionales y la determinaci requeridas para participar en el disefio, actualizaci y man­tenimiento periico de un modelo de programaci matemática del tamafio que éste supondría en la realidad. En la vida real, la mayoría de los que hemos tratado se resiste a aceptar el reto. Probablemente no hemos sido capaces de comunicar, con la elocuencia que hace falta, las ventajas respecto de las exi­gencias. Paradico, pero cierto. La dificultad preponderante no es para el téc­nico que disefia el modelo. Ésas se pueden resolver con relativa facilidad. La dificultad en la implantaci de esta metodología tiene mucho más relaci con 
+los antecedentes académicos y con las capacidades personales y organiz.aciona­les de la agencia en la que trabaja. Y ésas son realidades que el técnico habrá de cuidar con esmero, si de verdad quiere implantar con éxito estas herramientas. 
+Como ya sefialamos, una opci adicional sería la de utilizar la Programa­ci Entera Mixta para imponer la restricci de que las variables que se refie­ren al nero timo de vehículos puedan tomar so valores enteros no nega­tivos. A la luz de los medios computacionales disponibles, esta opci es muy factible. Hay diversas herramientas eficientes que, a un costo asequible, permi­ten resolver el problema selado. 11 Entre éstas podemos citar cuatro: LINDO, Management Scientist, Solver de Excel y What's best. Cualquiera de éstas ofrece como opci la Programaci Entera Mixta. Si utilizamos el LIN­DO, después de la instrucci END basta con adir otra -GIN-acompada del nombre de las variables cuya soluci está restringida de esa manera. Sin embargo, en la realidad hemos encontrado que la Programaci Lineal es mejor opci porque ofrece más rique7a de posibilidades en el análisis de sensibilidad, concretamente en caso de las variables duales y los costos reducidos. 12 Las va­riables duales, que matemáticamente son la derivada parcial de la funci obje­tivo respecto de cada una de las restricciones, permiten conocer de manera ex­plícita el valor marginal unitario del recurso correspondiente. 
+En la práctica, por ejemplo, esa informaci ofrece al responsable de la deci­si los elementos para asignar eficientemente sus recursos escasos -como vendedores y publicidad-con objeto de estimular la venta de alg tipo de ve­hículo. 
+Podemos afirmar, con hechos, que las empresas que han implantado estas herramientas de análisis han observado resultados espectaculares. 
+11 Ver Calloway, R., Cununins, M, and Freeland, J., Solving Spreadsl,eet-&aetl llllega P,ogrtlllllllin Mod­els: An Exampkfrom lnlalultional TekcolllllUlllicatio,u, Decision Sciences 21, 1990: 808-824. 12 "LINDO can be used to solve pure or mixed IPs. In addition to the optima) solution, the LINDO output for an 1P gives shadow prices and reduced costs. Unfortunately, these refer to sub problems generated during the branch and bound solution, not to the IP. Unlike linear programming, there is no well~eveloped theory of sen­sitivity analysis for integer programming". Ver lntrodlu:tion to Mall,emalical P,ogram,,,i,,g, Applicatioru OIUI Algoritl,nu, Wayne L. Winsto~ Indiana University, Wadsworth Publishing Co., 199S, página SOO. 
+Co estimar la demanda 
+Hay ocasiones en las que una persona tiene que estimar el comportamiento fu­turo de la demanda de un producto o servicio como ingrediente central para de­cidir respecto al aprovisionamiento y la producci de ese bien. Una distribu­ci acumulada de probabilidad es un instrumento eficiente para realizar esta tarea. 
+Por ejemplo, si una casa editorial publica un libro, tiene que decidir el ne­ro de ejemplares que va a reproducir. La estimaci de la demanda resulta cru­cial porque, si se subestima, la empresa incurrirá en un costo de oportunidad por dejar una demanda insatisfecha al menos por el tiempo que requiera una nueva corrida de producci. Esto podría significar un costo importante por mal servicio a sus clientes y por falta de agilidad para atenderlos bien. Por el contra­rio, si se sobrestima, incurrirá en un costo financiero por tener almacenados improductivamente sus libros durante varios meses. 
+Con los nuevos avances en tecnología de la informaci, el dise y la re­producci de textos es cada día más ágil y barata. No obstante, la estimaci fidedigna de la demanda sigue siendo un aspecto fundamental para competir con eficacia. 
+Todo fabricante de ropa de moda enfrenta un problema similar. A principios de la temporada tiene que anticiparse y comprar certeramente cada uno de los componentes de su prenda a la luz del nero de piezas que espera vender. En ocasiones, es. posible hacer compras tardías para corregir errores en la estima­ci de las ventas. No obstante, dados los tiempos de entrega y confecci, es muy importante tener buen tino en la estimaci de la demanda. 
+Otro ejemplo, simple y muy primo, en la literatura de los métodos cuanti­tativos para la toma de decisiones, se conoce como el problema del vendedor de periicos. La Direcci del periico Reforma ha promovido, entre sus ex­pendedores, la figura del micro empresario. Se trata de una persona a la que se le brindan estímulos y apoyos para que se gane la vida vendiendo periicos en la calles de la Ciudad de México. Algo similar han hecho con los expendios de periicos en la Ciudad de Monterrey. Interesa mucho que esta persona sea consciente y responsable de sus actos. Por ello, no se aceptan devoluciones de los diarios solicitados y no vendidos al final del día; ésos se vuelven papel de envoltura. El voceador debe afinar su estimaci porque los periicos que ad­quiere muy temprano por la mana tienen que quedar vendidos por la tarde o pierden su valor casi por completo. Esas personas afrontan dos posibles equivo­caciones: por una parte, absorber la pérdida correspondiente si les quedan ejem­plares sin vender. Por la otra, es casi imposible corregir su decisi de compra si su inventario de pie7.aS se les acaba antes de terminar el día, con lo cual habrían perdido oportunidades de venta. 
+Los ejemplos anteriores sugieren la necesidad de disponer de un instrumental eficiente para hacer una buena estimaci de la demanda. Algunas personas suelen hacer una estimaci puntual que pretende reflejar la realidad de sus ventas, casi siempre incierta. Tal estimaci puntual podría ser un modo equi­vocado de proceder, sobre todo si las consecuencias econicas de comprar de más son significativamente distintas de las que supone comprar de menos. 
+Uso de la funci acumulada de probabilidad 
+Tomemos para ello el timo ejemplo. Lo haga implícita o explícitamente; in­tuitiva o formalmente, todo expendedor de periicos de un estanquillo en cualquier parte del mundo debe resolver el tema de cuántos ejemplares adquirir al día. Por experiencia sabe que la demanda promedio en un día laboral cual­quiera es, digamos, de Q unidades. No obstante, como su nombre lo indica, se trata de un promedio que no necesariamente refleja la demanda de todos los dí­as. Alrededor de ese promedio hay también una variancia. Dependiendo de una serie de factores que están fuera de su control, como el clima -soleado o llu­vioso-los acontecimientos políticos y econicos, la demanda diaria varia en mayor o menor grado. 
+Si el voceador compra siempre Q pie7JlS, a veces se quedará corto y a veces largo. Supongamos que cada ejemplar le cuesta 2 pesos y lo vende en 5 lo que significa que tiene un costo (desembolso) inferior al margen. Si eso es verdad, es peor equivocarse teniendo más demanda que productos, que lo contrario. En consecuencia, parece conveniente adquirir algunas pie7.aS extra respecto del promedio Q. Concretamente, ¿será conveniente adquirir la unidad marginal {Q+1)?, ¿la (Q+2)?, ¿la (Q+3)? 
+Utilicemos un diagrama de árbol para representar la pregunta respecto de si debemos comprar, o no, la unidad (Q+1)ésima. Como estamos hablando de una unidad marginal respecto del promedio, si se piden so Q pie7JlS, el ingre­so marginal es igual a cero. En caso de adquirir esa unidad adicional, y vender­la, el ingreso marginal está representado por Af. Si ocurre lo contrario, es decir, se adquiere y no se vende, el ingreso marginal es negativo, concretamente, -C. 
+19 
+lo rar venderla M 
+
+No venderla 
+-C 
+o 
+Ahora bien, la unidad adicional (Q+1) se venderá si, y so si, la demanda es superior a Q. En caso contrario, no se venderá. Simbicamente hablando, la probabilidad de que se venda se expresa de la siguiente manera: P{d>Q). La probabilidad de que no se venda es igual a: P{d<=Q}. Ambas expresiones nos remiten al concepto de funci acumulada de probabilidad. Tal distribuci acumulada de probabilidad representa la experiencia del responsable de la deci­si y se puede obtener como se indica a continuaci. 
+En el diagrama de árbol que hemos presentado, el valor esperado de la rama inferior, titulada Detenerse en la unidad Q, es igual a cero. El valor esperado de la rama superior, titulada Adquirir la unidad (Q+1), es igual, simbica­mente, a: 
+M [P{d>Q)J -C [P{d<=Q)J 
+Si el valor de esta expresi es mayor que cero, significa que hay una prome­sa econica que atrae al responsable de la decisi en el sentido de inclinarse por pedir la unidad (Q+1)ésima. Si el valor numérico fuese inferior a cero, se­guramente preferiría quedarse en la unidad original, la Q. El valor cero marca el punto de indiferencia. Hagamos algunas transformaciones algebraicas para dar­le otra apariencia a la expresi anterior. 
+Por ejemplo, sustituyamos P{d>Q} por [1-P{<=Q}]. En cuanto lo hagamos, obtendremos: 
+M [1-P{d<=Q}J -C P{d<=Q} = O 
+20 
+Que es equivalente a: 
+
+M -M P{d<=Q} -C P{d<=Q} = O 
+La cual, a su vez, equivale a: 
+
+(M + CJ [P{d<=Q)J = M 
+y también, finalmente, a: 
+
+P{d<=Q} = M / (M + C) 
+Lo cual indica que la mejor decisi, en cuanto a la cantidad de piezas adqui­ridas, es aquella cantidad Q para la cual la probabilidad acumulada P{d<=Q} sea igual a la fracci Ml(M+CJ, llamada también la fracci crítica, o fractila crítica, que siempre se puede obtener si disponemos del costo, del margen y de la distribuci acumulada de probabilidad. 13 A continuaci presentamos la gráfica correspondiente para el caso de una distribuci acumulada discreta: 
+t.  1 0.9 06  1  J  
+l\l•C.  D7  
+(16  
+(1.5  
+C• .d  
+() 3  
+0 2  
+0 1  
+(1  r,  1  o .:;i r.<A filr  
+
+13 Smart choices. A practica[ Guide to Making Better Decisions. Hammond, John S., Keeney, Ralph., Raiffa, Howard, Harvard Business School Press. Boston, Mass, 1999. 
+21 
+Y para una distribuci acumulada continua: 
+
+Co encontrar una distribuci de probabilidad subjetiva para estimar la demanda de un producto 
+Hay multitud de ocasiones en la vida empresarial en las que la persona respon­sable de tomar una decisi tiene que hacer un esfuerzo serio y consistente por enfrentarse a la incertidumbre, estimarla, evaluar sus consecuencias y tomar un curso de acci, de manera muy concreta, ante este tipo de eventualidades in­eludibles. 
+
+Las vivencias: un punto de apoyo 
+Los conocimientos más importantes e imborrables en la vida de las personas se adquieren mucho mejor por la vía de las vivencias que a través del conocimien­to puramente intelectual. 
+Expresémoslo mediante la broma didáctica de aquella persona que afirmaba que, al menos en su caso, su madre jamás habría intentado enserle a caminar explicándole teicamente co conservar en equilibrio su centro de gravedad. Es decir, cuidar lo que en Mecánica clásica se conoce sintéticamente como el primer momento de inercia y se expresa con todo rigor, formalidad y precisi mediante una integral: 
+r ooxf(x)dx 
+22 
+Por más rigor que se le quiera imprimir a la explicaci formal, las madres, aunque sepan mucho de fisica teica, prefieren ayudar a sus hijos a descubrir, por la vía de la experiencia directa -ineludiblemente personal-lo que signifi­ca caminar, caer, levantarse y, desde luego, aprender durante el proceso. Saben que dificilmente hay algo que sustituya a la experiencia personal de sufrir una caída. Sin duda, caerse es algo poco agradable. Pero todos hemos aprendido a caminar por la vía de la experiencia directa. Aprender de la mano de una perso­na en la que hayamos depositado la confianza suele facilitar el proceso. 
+En muchas otras instancias de la vida ocurre algo similar. Una persona puede saber mucho, intelectualmente hablando, por ejemplo, de térmica. Más a, sus conocimientos intelectuales pueden ser superlativos. Pero aprenderá mucho más y de modo indeleble el día que sufra, en carne propia, una quemadura. 14 Podría ocurrir incluso, que la persona que sufre una quemadura sea incapaz de expresar con rigor lo que le ha ocurrido. Pero sin duda alguna habrá aprendido mucho respecto al fuego; entre otras cosas, tomará muchas precauciones para evitarlo. 
+Toda proporci guardada -y tomando en consideraci que lo anterior ha sido so una glosa didáctica para facilitar la comunicaci-queremos insistir en que los conocimientos más importantes del ser humano se adquieren por la vía de las vivencias. Hay quien recomienda que aprendamos en cabeza ajena. Es verdad. Lamentablemente, en ocasiones la persona no tiene la capacidad de asimilar la experiencia ajena hasta que la ha vivido. Peor a, mientras no la sufra en carne propia, a veces llega a imaginar que sí la tiene. Hay también, por desgracia, quien no sabe ni siquiera lo que ignora. Quienes así se comportan, suelen ser personas muy peligrosas tanto por ignorantes, como por soberbias. 
+Cuántas veces ocurre que un joven de quince as está convencido de que ya lo sabe todo respecto, por ejemplo, al matrimonio. Que entiende perfectamente a sus padres y que, cuando él sea adulto, hará sin duda las cosas mucho mejor que ellos. Cuando le llega su turno y tiene él mismo un hijo de quince as, que le hace reclamos similares a los que él mismo solía hacer, comprende mucho mejor esa realidad. Aunque es muy probable que no lo reconozca en plico, y quiz.á tampoco tenga la oportunidad de decirlo a sus padres15, en el fondo de su conciencia tiene una clara certidumbre que le lleva a bammtar en silencio: 'qué sabia era mi madre'. 
+14 Schoo~ Donald, Epistemology o/Science, MIT Press, Cambridge, Mm, 1984. 1s Es probable que ya hayan muerto. 
+Al médico le ocurre algo semejante. Su aprendizaje de la medicina no pro­viene, predominantemente, del libro de anatomía, o de fisiología, sino de sus vivencias frente a los enfermos. La clínica forma ( ojalá que se practique de la mano de un médico prudente, culto, experto, responsable, con vocaci, dis­puesto a enser con mucho cari, disciplina, y de manera exigente). Aunque cueste aceptarlo, para una persona madura que sepa valorar la realidad, incluso el dolor y la muerte contribuyen a su formaci. 16 
+En síntesis, reiteramos lo dicho: el aprendizaje más importante en la vida de las personas se adquiere por la vía de las vivencias. 
+
+
+La acci pecclona 
+Con el hombre de acci ocurre algo similar: aprende por vivencias. El cono­cimiento profundo que posee es un fruto maduro de su experiencia capitalizada en el crisol del manejo de los procesos de negocio que lidera. Muy probable­mente los ha adquirido de manera vivencial. Sin embargo, es una ironía que te­niendo tal conocimiento profundo y enriquecedor, indeleble, la mayor parte de las veces no disponga del lenguaje apropiado, riguroso, sintético y preciso para expresar su e~riencia y su sensibilidad frente a las contingencias que le plan­tea la vida real.17 
+Lo que ocurre es que normalmente, el suyo es un conocimiento no formali­zado, poco sistematizado. Por lo anterior, tenemos el atrevimiento de hacer un par de afirmaciones: 
+1. 
+Gracias precisamente a su experiencia, el director sabe de proba­bilidad y de teoría de la contingencia mucho más de lo que cree saber. 
+
+2. 
+Iricamente, no obstante su conocimiento práctico, no es capaz de expresar con elocuencia esos conocimientos, mucho menos con el rigor y la precisi típicas del académico. Cuando quiere comunicar su experiencia a un tercero, o reflexionar sistemática­mente sobre ello, se produce en él un cierto temor, un respeto re­verencial infundado que lo inhibe y dificulta la comunicaci. 
+
+
+16 "la sabiduría se puede aprender so de alguien que sea sabio". Euripides.17 Christensen, Ro~ EdMClllion for J11dp,e,,t, A,mtry o/Disclusion Leading, Harvard Business Sch.ool Press, Boston, Mass, 1991. 
+24 
+Qué puede y debe aportar el técnico 
+En el otro extremo, el académico dispone de un instrumental muy preciso y ri­guroso, fruto de sus conocimientos en teoría de la probabilidad Pero desafor­tunadamente suele proyectar en el hombre de acci la imagen de una persona que se deleita mucho más en la elegancia de su metodología, que en atender las necesidades que plantea la vida real en un campo de trabajo particular. 
+Beneficios del intercambio entre ambos mundos 
+Lamentablemente, entre el hombre de acci y el técnico suele producirse un vacío, un diálogo de sordos poco productivo; una especie de divorcio, de dis­tanciamiento que carece de sentido porque, en el fondo, se necesitan recíproca­mente. El primero sabe mucho, tiene una gran experiencia práctica, pero no en­cuentra co expresarla ni co manejarla explícitamente. El segundo, tiene una metodología y un lenguaje riguroso, preciso y elegante que no acierta a uti­liz.ar con eficacia en beneficio com.18 
+Esta realidad parece indicar la conveniencia de hacer un esfuerzo por tender un puente entre esas dos conductas extremas. Hemos de ser capaces de conse­guir que se comuniquen mejor pues el trabajo en equipo entre estos dos tipos de personas, cuando se produce, enriquece a ambos. 
+Pero ... ¿co conseguirlo? 
+Necesidad de medir qué tan probable es lo posible 
+Aun en las ciencias que se suelen calificar como 'suaves', ha habido un esfuer­zo serio por medir lo medible. Por ejemplo, en el ámbito de los servicios, que está tan de moda hoy en el mundo, se ha dicho enfáticamente que no se trata de ofrecer buenas intenciones a nuestros clientes, sino de entender y mejorar, pau­latina pero consistentemente, los procesos de negocio involucrados. Y esto re­quiere una medici precisa, consistente y elocuente. 19 
+18 Ver Pfeffer, Jeffrey, Tl,e Knowg-Doing gap. How SIIUll't Comptlllia T.,,,, Knowledge into Action, Har­vard Business School Press, 2000. 19 Ver Heskett, J. L., Sasser, W. E., and Schlesinger, L. A., Tl,e Vah,e Profit e,,_,, The Free Press, 2003. 
+Parece que conviene hacer un esfuerzo serio por medir lo medible, en tanto que se pueda. Además, esa medici ha de ser suficientemente simple para que sea il. 
+Jack Welch, CEO de General Electric, una de las empresas más prestigiosas, sidas y productivas del mundo, ha sugerido la conveniencia de buscar la sim­plicidad a la vez que la eficacia en el proceso de medici. 20 
+Estamos profundamente convencidos de que un tema se conoce de verdad so cuando se puede explicar de manera simple, sin complicaciones. Pero las palabras del ser Welch nos permiten enfatizar, con la fuerza de su enorme éxito profesional, la conveniencia de esforzamos por evitar la complicaci 
+. . 
+tnnecesana. 
+Unas pinceladas de teorla 
+La teoría de la probabilidad ha desarrollado un instrumental poderoso. Ofrece distribuciones -Binomial, Hipergeométrica, Poisson, Exponencial, Normal, Weibu/1 ... -potencialmente iles en la medici de fenenos aleatorios que se manifiestan en la vida real. La Poisson y la Exponencial son un par de distri­buciones iles para buscar el equilibrio, por ejemplo, entre el nero de per­sonas que se espera que demanden determinados servicios bancarios por unidad de tiempo y el nero de cajeras necesarias en la operaci a la luz de su capa­cidad de atender x nero de clientes por unidad de tiempo. En palabras técni­cas, utilizando ese tipo de funciones, se puede calcular la probabilidad de que el nero de personas que demanden servicio, por unidad de tiempo, sea igual a determinado valor. Para cualquier valor entero de x desde cero teicamente hasta infinito, es posible calcularla mediante la siguiente funci de probabili­dad tipo Poisson: 
+e-A. Ax P{X=x}=­
+x! 
+20 'Simplicity applies to measurement. Too often we measure everything and understand nothing. •Tichy, Noel M., She~ S., Controlyourdadny••• orsomeoneelsewill, HarperCollins, NewYork, N. Y. 1993. 
+A partir de esa expresi analítica, se puede encontrar, acumulativamente, la probabilidad de que el nero de personas que demanden servicio, por unidad de tiempo, sea menor o igual a un detenninado valor, llamémoslo z: 
+P {x s z }= Lz 
+x!
+x=O 
+No obstante su poderío, este tipo de instrumentos podrían resultar poco iles para el hombre de acci por varias razones. La primera, porque este modo de expresi lo inhibe, le resulta intimidante y poco comprensible. La segunda, porque su utiliz.aci exige estimar los parámetros de la distribuci, concreta­mente el valor de lambda; esto es, la media de la distribuci. Lo cual, a su vez, exige saber cuál es el mejor estimador de ese parámetro. Y, tercera, porque si, por ejemplo, se tratara de un nuevo negocio, podría ocurrir que no hubiera to­davía datos disponibles para estimar ese parámetro. 
+El rigor, por sí mismo, no conduce a la verdad. 
+Distribuci de Polsson 
+Para ilustrar mejor los conceptos anteriores, analicemos un ejemplo delibera­damente simple. Suponga que le han encomendado preparar el presupuesto anual de ingresos de una distribuidora de automiles. Por facilidad, suponga que vende un solo tipo de auto. 
+Revisando la historia de esa empresa encuentra usted que el promedio de ventas de ese tipo de vehículo por día es igual a .4. Esto equivale a decir que cada dos días y medio se produce una venta. Técnicamente, se dice que lambda, la media de la distribuci, es igual a . 4. 
+Analicemos, en dos versiones, la informaci que ofrece la funci de pro­babilidad y su distribuci acumulativa: primero mediante una tabla y, después, mediante una gráfica. 
+Ventas por unidad de tiempo (en este caso, día)  P{X=x; lambda =.4}  P{X< =x; lambda = .4)  
+o  67.03%  67.03%  
+1  26.81%  93.84%  
+2  5.36%  99.21%  
+3  0.72%  99.92%  
+4  0.07%  99.99%  
+5  0.01%  100.00%  
+6  0.00%  100.00%  
+7  0.00%  100.00%  
+
+La cantidad incierta21 , es decir, el nero de autos vendidos por día, puede tomar valores enteros desde cero en adelante con la probabilidad correspon­diente que se presenta en la segunda columna. Por ejemplo, la probabilidad de que en un día tomado al azar no se venda ning auto es de 67.3%; de que se venda uno, es de 26.81% y así sucesivamente. 22 A partir del valor cinco, la probabilidad es despreciablemente peque. 
+En otras palabras, a la luz de la experiencia y mientras no cambien significa­tivamente las circunstancias, es posible que se produzca una venta de siete au­tos en un día, pero es un evento muy poco probable. Sería sumamente raro. 
+Coloquialmente hablando, la probabilidad acumulativa, P{X<=x}, será siem­pre una gráfica escalonada respecto del cien por ciento.23 La gráfica expresa exactamente la misma informaci aunque en diferente modalidad. Dice, por ejemplo, que en el 26.81% de los días (columna 2, tercer rengl) se producirá una venta; que el 5.36% de los días (columna 2, cuarto rengl) se producirán dos ventas ... 
+Esta distribuci acumulativa de probabilidad nos permite afirmar con segu­ridad, es decir, con una probabilidad igual a cien por ciento, que la venta diaria será inferior a 7 autos. Cuando se den las premisas bajo las cuales fue elabora­da, siempre ocurrirá así. Ver la gráfica siguiente. 
+21 Le llamamos así para facilitar la compremi de la persona no experta. Teicamente se conoce como varia­ble a/eaJoria aunque, en esbicto sentido, no es variable puesto que es una funci cuyo dominio es el espacio muesttal y cuyo contra dominio es un conjunto de neros reales. Tampoco es aleatoria puesto que está total­mente determinada. Ver Goldberg, S., Probobility, An lntrotbu:tion, Prentice Hall, 1960, página IS9. 22 Verifique que los valores de la tabla sean correctos. Sustituya en la Poisson el valor de .4 para lambda y cal­cule la probabilidad para cada uno de los valores de x. 23 En lenguaje matemático diríamos que se trata de unafanci monona no decreciente. 
+Probabilidad y probabilidad acumulada 
+1.000 0.900 
+0.800 0.700 j 0.600 
+:2 
+:is 0.500 
+c,s 
+.a 
+e o.4oo 
+c. 
+0.300 0.200 0.100 
+0.000 
+2 
+
+Con esa informaci a mano, podríamos generar neros aleatorios (uni­formemente distribuidos entre cero y uno) y proyectarlos en el eje vertical de la gráfica. Utilizando la funci acumulativa, podríamos encontrar valores corres­pondientes de la variable con el objeto de hacer un simulacro de flujo de efecti­vo de la situaci descrita. 
+En el lenguaje de los expertos que se dedican a diser simulacros y preparar escenarios, a eso se le llama muestreo de Monte Cario. 
+Conviene afrontar las consecuencias de nuestros actos 
+Reiteramos: la persona de acci sabe mucho -intuitivamente-de probabili­dad. Pero habitualmente no encuentra co expresar sus conocimientos, o sus convicciones. Posee un conocimiento adquirido y avalado por sus vivencias. Sin embargo, suele inhibirse cuando su interlocutor se dirige a él hablándole en términos de funciones exponenciales. 
+Procederemos a explicar un método alterno para construir una funci acu­mulativa de probabilidad, referida a cualquier cantidad incierta, cuyo compor­tamiento probabilístico interese estimar. A diferencia del método analítico, ape­laremos mucho más al sentido com y a la experiencia, que al lenguaje formal. 
+29 
+Con objeto de asegurar que el método produzca resultados, sugerimos partir de un principio muy il en la vida: las personas debemos afrontar las conse­cuencias de nuestros actos. Es conveniente elegir un interlocutor con experien­cia, sentido de responsabilidad y conocimiento de la trascendencia de su elec­ci. De lo contrario, se corre el riesgo de invalidar el proceso. 
+Para evitar posibles errores e incrementar la verosimilitud del proceso, suge­rimos enfáticamente elegir un interlocutor prudente, que tenga experiencia per­sonal en el tema, y asegurarnos de que sea muy consciente del impacto de lo que puede perder. Un contra ejemplo sería el individuo cínico e irresponsable que opina a la ligera y después, ante la fenomenología de los hechos consuma­dos, racionaliza su actuaci, o se evade cuando se le pide afrontar las conse­cuencias de sus actos. 24 En ocasiones las personas hacemos, con la seguridad de un clarividente, declaraciones superficiales y falsamente optimistas respecto de la expectativa de las variables macroeconicas: '... la inflaci de los primos doce meses no llegará al 15% '. 
+Cuando se trata de una persona prudente, es factible ayudarle a reflexionar y perfeccionar su estimaci si lo inducimos a ubicarse en la realidad propiciando así su compromiso vivencial. 25 Se le puede pedir, por ejemplo, que imagine que hay para él una cantidad importante de dinero asociada al acierto de su es­timaci. Es decir, si doce meses después el Banco de México informa que la tasa real de inflaci resultinferior a su prontico, su patrimonio se vería in­crementado en esa cantidad importante. No so eso. Recibiría un reconoci­miento plico por su capacidad de prontico. Pero si, por cualquier azar del destino, la tasa de inflaci real llegara a superar el 15% pronosticado por él con plena seguridad, de su patrimonio tendría que entregar inexorablemente esa misma cantidad. 
+Su reacci ante tal planteamiento nos diría, con claridad meridiana, si de verdad está tan seguro, o no. En caso de rechazar ese pacto, esa persona estaría manifestando, con el lenW,aje elocuente de los hechos, que no está tan seguro, al menos, no al 100%. 6 Habría tenido quizá menos resistencia a aceptar el 
+24 Conviene tener cuidado al negociar con aquellas personas que no tienen nada que perder, o no les importa perder lo que tienen. Sir Winston Churchill solía decir: 'Never wrest/e with a pig. You get dirt, and /he pig seems to enjoy it. 'Ver Tite Cl,11rcl,ill W,t, Edited by Bill Adler, Coward-McCann, Inc, New York, 196S. is Esto es cierto incluso en situaciones tan criticas como el desastre de las Torres gemelas del 9/11/01. Ver en el ejemplar de la Harvard Business Review de mano de 2003, página 72, el artículo de Max H. Bazerman, titulado Predktable Sllrprises: Tl,e Disasters Yo11 Sl,011/d H(IVe Seen Coming. 26 'Common sense is a thing ali need, few hove, and none think they /ack. ' Humes, James C., The W,t el Wu­dom o/Benjamin Franklin, Harper Collins Publishers, 1995. 
+planteamiento si ese límite para la tasa de inflaci estuviese muy por encima de lo que en realidad espera, digamos 20%. Si se viera forzado a jugársela, qui­z.á esa persona habría preferido darse un margen y asegurar que la inflaci anual va a ser menor al 20% o, para tener más seguridad, a un porcentaje inclu­so mayor. 
+Antes de ju~ así nuestro patrimonio habría que estar mucho más seguros del desenlace. 7 Y, para hablar de qué tan seguro se está, vale la pena tener cla­ra conciencia de lo que se puede perder si las cosas salieran mal. En otras pala­bras, debemos ponderar y sentirnos responsables, vivencialmente, de las conse­cuencias de nuestras predicciones. 
+Uno parte ... y el otro escoge 
+Para ilustrar a más el proceso, sugerimos al lector que asuma temporalmente la responsabilidad de encontrar el mejor modo de partir equitativamente un bien, digamos una Coca-Cola, entre dos antagonistas. Quiz.á su primera reac­ci sea la de involucrarse él mismo y buscar los mejores instrumentos de pre­cisi para erigirse en juez y compartir aquel bien entre las dos personas y de­jarlas satisfechas. Sin embargo, la naturaleza humana es tal que, aun con los instrumentos descritos, podría encontrar dificultades para juzgar. 
+Un procedimiento alterno -salomico-se establecer la siguiente nor­ma y dejar que los propios antagonistas resuelvan entre sí el problema: que uno haga las partes sabiendo que el otro tiene el privilegio de escoger: tpartes y yo escojo. 
+Si ambos aceptan la nonna, no será necesario disponer de instrumentos de precisi ni tampoco intervenir directamente. El responsable de partir -sin importar cuál sea-lo hará con un cuidado exquisito ya que no hacerlo atenta contra sus propios intereses. 
+No hay mejor control que aquel que no hace falta. 
+Invitamos al lector a que detenga su lectura y reflexione sobre la eficacia de la sugerencia que acabamos de hacer. Por ejemplo, suponga que dos personas son dues del cien por ciento de las acciones de un negocio. Suponga además 
+27 Con su agudo y penetrante sentido del humor, Benjamin Franklin dijo una vez: 'seguro, lo que se puede lla­mar seguro, so la muerte y los impuestos'. Todo lo demás es probable. Humes, James C., Op. Cit. 
+que, por alg motivo, se tienen que separar y deben fijar el precio de las ac­ciones del negocio para liquidar al que se vaya. Llegar a un acuerdo no debe ser fácil. Sin embargo, les ayudaría dejarse conducir por la norma propuesta: ttie­nes el derecho de poner el precio de las acciones. Una vez que lo hagas, yo ten­go el derecho de decidir si, a ese precio, compro las tuyas, o vendo las mías. 
+Si el primero tratara de abusar fijando un precio elevado, el segundo tendría derecho de exigir que le pagara sus acciones a ese precio. Y si tratara de abusar fijándolo muy bajo, entonces estaría obligado a aceptar que el socio compre las suyas a ese precio y él se quede fuera. Estamos seguros de que, ante tal plan­teamiento, el que fija el precio seria sumamente cuidadoso al seleccionar aquel que resulte más equitativo. No hacerlo así iría en su contra. 
+La experiencia indica que ésta -tpartes y yo escojo-es una norma il porque logra equilibrar no so el rigor, sino la relevancia; que armoniza la lgica con el sentido com, con la vida real. 28 
+Co vincular esa norma con el cálculo de una probabilidad 
+Imagine que quiere encontrar la distribuci de probabilidad de que una canti­dad incierta, por ejemplo el nero de automiles vendidos de cierto modelo, tome en una agencia determinado valor en un período de tiempo. Salvo los cla­rividentes -que suelen ser escasos-nadie puede estar cien por ciento seguro del valor que finalmente tendrá esa variable tan importante para la superviven­cia de la empresa. No obstante, las vivencias y la capacidad de observaci nos pueden ayudar a estimarla. 29 
+La experiencia nos sugiere fijar con cuidado las unidades en las que se debe medir el comportamiento de la cantidad incierta. Debe ser una unidad que ape­le al sentido com del responsable de la decisi. Como un contra ejemplo, si no tuviéramos certidumbre de la distancia entre Nueva York y Mosc carecería de sentido tratar de estimarla expresándola en centímetros cicos (y terminar luego sacando la raíz cica, pirueta numérica engasa y estéril). Sería mucho mejor estimar esa incnita expresándola en miles de kiletros. 
+28 "//you want to convince, do not speak o/reason, speak o/interest." Benjamin Franklin, Humes, J. Op. cit. 29 Jobo Maynard Keynes explica con detalle un concepto estimulante al que llama Degrea o/ Hlkf. Ver Keynes, J. M., A Trame on Probability, London, Macmillan, 192l. Ver Agat tl,e <loa: Tl,e &,,,orlu,b~ Story o/Ris/c, Bernstein, Peter, John Wiley & So~ New York, 1996. 
+Para ayudar al responsable a reflexionar con seriedad, conviene utiliz.ar algu­na analogía que exprese, con elocuencia, el significado de los valores de la can­tidad a estimar. Por ejemplo, hace tiempo hubo una campa en la radio que nos invitaba a vigilar el consumo de agua. Para una persona sin experiencia y sin demasiada sensibilidad, descuidar un grifo que tirase intermitentemente una gota de agua podría parecer despreciable. No obstante, en la radio nos estuvie­ron bombardeando con la idea de que una gota de agua por segundo equivale a x barriles por día; lo cual seria suficiente para dar de beber a n nero de vacas a la semana; lo cual, a su vez, equivale a la leche de tantos nis. Traducido de ese modo, el desperdicio de una gota de agua por unidad de tiempo adquiere un relieve muy cercano a la realidad que debería inducirnos a ser más cuidadosos y evitar el desperdicio de ese vital líquido. Cuando las personas decimos haber considerado todo lo necesario para resolver un problema, esto suele ser falso hasta que hacemos un esfuerzo serio por poner las cosas por escrito. Por ello, conviene escribir la cantidad incierta que queremos estimar, con todos los mati­ces que puedan condicionar su interpretaci, los factores que influyen en que su comportamiento se produzca de determinada manera, así como los supuestos básicos que se consideren pertinentes. 
+En nuestro ejemplo particular, queremos estimar la demanda de automiles del modelo x durante el mes en curso. La definici del problema debe ser cla­ra, concisa y precisa al punto de no permitir interpretaciones ambiguas. Dos personas que la lean deben entender lo mismo. Debe quedar inconfundiblemen­te claro si nos estamos refiriendo a determinado modelo, con tales atributos y condiciones de pago, con impuestos o sin ellos, etcétera. 
+Un segundo paso seria el de encontrar dos valores extremos fuera de los cua­les no creemos que se puedan producir observaciones de la variable. Por ejem­plo, invitar al interlocutor a responder brevemente y por escrito esta pregunta: 
+¿Cuál consideraría usted un valor muy alto? ¿Por qué y co puede ocurrir tal valor? En el extremo inferior, convendría invitarle a responder a esta pre­gunta: ¿Cuál consideraría usted como un valor extremadamente bajo pero to­davía factible? ¿Por qué razones y co podría ocurrir tal valor? Por favor fundamente más su afirmaci. 
+Para responder a estas preguntas, conviene no olvidar que la realidad no siempre es tan apetecible como creemos a la ligera, ni tan imperfecta como te­memos. Conviene reflexionar serenamente sobre ella y fundamentar más nues­tras opiniones comparándolas con las de otras personas. Para hacer eficiente este proceso, hemos disedo una aplicaci de software. 
+En cuanto se ejecuta, la computadora le presentará una pantalla solicitándole 
+la informaci correspondiente: 1) el nombre de la variable a estimar: Nero de Automiles, modelo x, que esperamos vender en esta agencia durante el mes de noviembre de ... 2) dos neros para acotar ese resultado probable entre dos va­lores extremos completamente verosímiles. Para ejemplificar el proceso, su­pondremos 8 y 20 respectivamente. 
+
+El paquete de software hace una partici visual del rango de posibles valo­res de esa variable. La izquierda, en color azul, va desde 8 que es la cota infe­rior, hasta 14, que es el valor central equidistante respecto del extremo superior. La derecha, en rojo, desde 14 hasta 20, que es el límite superior.30 La pregunta es la siguiente. Si tuviéramos que comprometemos porque de nuestra opini profesional depende algo importante, ¿en cuál de las dos partes, azul o roja, preferiríamos apostar a que dentro de un mes se encontrará la cifra que ahora queremos estimar? El paquete parte y nosotros debemos escoger. Si, por ejem­plo, eligiéramos el rojo, querría decir que, aunque los dos trozos son equidistan­tes, no nos parecen equiprobables puesto que preferiríamos apostar a que el va­
+30 El Decision Analysis Group del Stanford Research Institute desarrollen 197 4 un ejemplar plástico de este ingenioso dispositivo para estimar la probabilidad subjetiva de un evento incierto. Nosotros hemos desarrollado el cigo para ejecutarlo en una microcomputadora, o incluso en un PDA como la Palm®, o la iPAQ®. 
+34 
+lor de la variable quedará finalmente en el área roja. Es decir, estimamos subje­tivamente que en ésta hay una mayor probabilidad y, por lo tanto, nos resulta más atractiva. 
+Dicho en términos fisicos, si se tratara de una balanza, de acuerdo a nuestra experiencia, la parte roja tendría, probabilísticamente hablando, más peso. Para mostrar esa preferencia, utilizando el mouse selemos la parte roja y hagamos click una vez. En cuanto hayamos indicado nuestra preferencia por la parte roja, el programa nos ayudará a encontrar el punto de equilibrio. Como se indica a continuaci, hará más grande la parte azul y reducirá la roja. Modificada esa proporci, insistirá con la misma pregunta: ¿qué es preferible?: ¿lo azul?, ¿o lo rojo? 
+
+Ante cada pregunta consecutiva el interpelado so puede dar una respuesta binaria: o prefiere la parte azul, o la roja. Al manifestar su preferencia, de hecho, esa persona estará indicando a cuál de las dos partes le asigna, subjeti­vamente, la mayor probabilidad. A modo de ejemplo, suponga que vuelve a preferir la parte roja sobre la azul. De ser así, estaría indicando que, de acuerdo a su experiencia, es más probable que la venta de este auto se aproxime más al 20, que al 8. 
+35 
+Pero, si es verdad que los extremos fijados por el responsable del proceso de estimaci reflejan la realidad del feneno, llegará necesariamente el punto de equilibrio en el que su preferencia se invierta y le sugiera elegir la parte azul. Eso querría decir que la partici inmediata anterior fue excesiva. Cuando lle­gue a ese punto, el programa dará marcha atrás. De manera semejante a lo que ocurre con cualquier balanza, tendrá necesariamente que haber un punto de in­diferencia en el que ambas partes -azul y roja-se vuelvan tan atractivas una como la otra y, por lo tanto, equiprobables. Ése es un punto de particular inte­rés porque en él se ha producido un equilibrio importante. Querría decir quepa­ra ese valor de la variable habría tanta probabilidad acumulada en la parte azul, como en la parte roja. Técnicamente, se dice que habríamos encontrado enton­ces la mediana de la distribuci. 31 En lenguaje coloquial diríamos que el 17 marca un punto de indiferencia que tiene especial significaci. La gráfica que­daría de la siguiente forma indicando que 17 marca el primer punto de indife­rencia, que es la mediana de la distribuci: 
+El R.iesgetro •• Paso 1 
+17.00 
+8 20 1 Mín. 81 Máx. 201 Continuar 
+1 
+Azul Indiferente j Rojo 
+1 
+Ayuda Nuevo 
+1 
+Premisa: 
+Nero de Automiles, modelo x, que esperamos vender en esta agencia durante el mes de noviembre de ... 
+Salir 
+
+31 Aquel punto en una distribuci de probabilidad a la izquierda del cual y a la derecha del cual hay exacta­mente la misma probabilidad. 
+'3 6 
+Esto equivale a decir que, de acuerdo a la experiencia de quien está haciendo la estimaci, la probabilidad de que la tasa real (la que ocurra de verdad) sea inferior a 1 7 es igual a la probabilidad de que sea superior a esa misma cifra. Expresémoslo también en lenguaje simbico: 
+P{unidades vendidas<= 17) = ?{unidades vendidas>=l 7} = (112) 
+En otras palabras, 17 es la mediana de esa distribuci subjetiva de probabi­lidad. Sigamos explorando. ¿Es posible, y probable, que las unidades vendidas de ese auto en ese período sea un nero inferior a 17? Sí. ¿ Y que sea mayor? También. A la luz de lo expresado, hemos concluido que esos dos eventos son tan probables uno como el otro. 32 Nos debería dar lo mismo utilizar una mone­da para jugar un volado, que utilizar la partici que acabamos de obtener. Si eso es verdad, concentraremos la atenci en la parte derecha para obtener una probabilidad condicional que se expresaría así: suponiendo que supiéramos que el valor de la variable aleatoria fue superior a 17, ¿co se distribuye la pro­babilidad en ese espacio? De nuevo la misma pregunta: ¿azul?, ¿o rojo? 
+
+32 Se trata de una probabilidad condicional del valor de la variable dado que lo suponemos superior a la media­na. 
+37 
+Supongamos que en ese punto el interpelado manifiesta su indiferencia. Si ocurriese así, habría encontrado lo que técnicamente se conoce como el percen­til .75, el valor que marca el 75% en la funci acumulativa de probabilidad. En el ejemplo que estamos utilizando, el valor 18 marcaría precisamente ese per­centil. 
+Para concluir, falta analizar la parte izquierda de la mediana -la que no está surcada-que fue igual a 17. 
+El programa analizará ahora la parte marcada dividiéndola en dos partes. Como siempre, azul y rojo. Suponga que elige rojo en dos ocasiones y que ante el valor 16 se muestra indiferente. Habría encontrado entonces el percentil .25. Es decir, el valor que marca el 25% en la funci acumulativa de probabilidad. Eso querría decir que ha terminado de perfilar el primer boceto de la distribu­ci acumulativa de probabilidad de esa variable aleatoria. 
+El Riesgetro Pa:so 3 
+
+f
+16.00 
+.t
+8 20 Máx. · Continuar
+1 Mín. 1 ªI 171 1 Azul Indiferente J Rojo 
+1 1 
+Ayuda Nuevo 
+1 
+Premisa: 
+Nmero de Automiles, modelo x, que esperamos vender en esta agencia durante el mes de noviembre de ... 
+Salir 
+En la siguiente página mostramos co quedaría gráficamente esa distribu­ci acumulativa de probabilidad. Invitamos al lector a que la interprete y co­mente sobre su significado e importancia en su trabajo cotidiano como hombre de acci. Aunque se refieren a ejemplos diferentes, le sugerimos que comprare 
+38 
+la gráfica de la siguiente distribuci acumulada de probabilidad subjetiva con la expresi analítica de las páginas veintiuno y veintid. 
+Distribuci acumulada 
+1 
+3/4 
+1/2 
+
+
+8 20 
+Muestreo de Monte Cario 
+Una vez construida la funci acumulativa de probabilidad, el responsable de la decisi podrá tener una perspectiva del comportamiento probabilístico del fe­neno que le interesa analizar. 
+Para adquirir una mayor sensibilidad, puede, como ya dijimos, generar nmeros aleatorios entre 0.00 y 1.00 y proyectarlos en sentido horizontal hasta que crucen la línea de la funci acumulativa. En cuanto esto ocurra, hacer una proyecci vertical hasta encontrar el reflejo en el eje de las x. Ese valor repre­senta un resultado posible de lo que puede ocurrir en cuanto realice el experi­
+39 
+mento. Le invitamos a comprobarlo pasando a la acci, aunque sea a modo de un simulacro. 33 
+Conclusiones 
+Utilizando el modelo de Programaci matemática en conjunci con el mode­lo para construir la funci acumulada de probabilidad subjetiva, el responsable puede analiz.ar mejor sus decisiones y llevarlas a cabo con mayores probabili­dades de éxito en tres dimensiones vitales: 1) la negociaci con la planta, 2) la atenci y el servicio a sus clientes 34 y 3) la grave responsabilidad que debe a sus accionistas. 
+El modelo ha sido implementado en varias empresas del ramo automotriz con resultados espectaculares en su desempe financiero. 
+En 2003 la industria automotriz está pasando por circunstancias similares a las que se vivieron en 1986 agravadas por la inminencia de la apertura comer­cial del 2004. En consecuencia, este tipo de modelos cuantitativos tienen enor­me vigencia y utilidad potencial que aconsejan su utiliz.aci. 35 
+33 
+Howard, Ronald, De/01111"'1tion& o/ Decuion Alu,lym, IEEE Trtaulu:tio,u °" Sy*11u Science ""d 
+f!.bemdics, SSC4 211 219. 1968. , 
+Sewel, Carl, CIUllo111aS/or life, Doubleday, 1990. Este es uno de los distribuidores automotrices más exito­sos en la Uni Americana. Opera sus agencias en Dallas, Texas. 3sApm,,rG tl""""'1trk dabiell," los dbtrib11ora IUICionola. Hiroshi Takahashi. Ver El Financiero del 9 de diciembre de 2003. 
+Apéndice 
+Modelo de Programaci Lineal 'a escala' (*) 
+Por brevedad incluye so dos modelos, A y C, y un periodo de tres meses de venta. Esos parámetros pueden incrementarse tanto cuanto sea necesario dependiendo de la capacidad del equipo de cputo. 
+1 •  Zmu  
+co  IAO  ICO  CA1  CC1  VA1  VC1  IA1  IC1  C1  CA2  CC2  VA2  VC2  IA2  IC2  C2  CA3  CC3  VA3  VC3  IA3  IC3  C3  
+lnlA  •  2  
+1n1 e  •  2  
+lnvent A1  -1  -1  <•  o  
+lrwantC1  -1  -1  1  <•  o  
+lnventA2  -1  -1  <•  o  
+lrwant C2  -1  -1  1  <•  o  
+lnventA3  -1  -1  <•  o  
+lrwant C3  -1  -1  <•  o  
+$ Dlap'O  1  •  20  
+Compr1  -1  2.7  4  -2.9  -4.2  1  <•  o  
+Compr2  -1  2.7  4  -2.9  -4.2  1  <•  o  
+Compr3  -1  2.7  4  -2.9  -4.2  1  <•  o  
+lnvlnlA  •  5  
+lnvlnl e  1  •  10  
+Fefvo 1  -1 .08  2.86  4.2  -3.2  -4.8  <•  o  
+Fe1Yo2  -1.08  2.88  4.24  -3.2  -4.8  1  <•  o  
+Fefvo3  -1 .08  3.1  4.3  -3.4  -4.9  1  <=  o  
+DemA1  •  20  
+DemA2  •  20  
+DemA3  •  20  
+DemC1  •  20  
+DemC2  •  20  
+DemC3  1  =  20  
+
+C, Este modelo muestra so la estructura básica de las operaciones de la agencia. Puede y debe expandirse para cubrir las necesidades específicas. 
+Apéndice 1 El Colegio de México, CEDDU, Miguel Ochoa, 2004. 
+El Colegio de México, CEDDU. Resultados del Simplex utilizando el Programa LINDO 
+LP OPTIMUM FOUND AT STEP 13 OBJECTIVE FUNCTION VALUE: 
+Variable 
+co 
+IAO ICO CA1 CC1 VA1 VC1 IA1 IC1 C1 CA2 CC2 VA2 VC2 IA2 IC2 
+C2 CA3 CC3 VA3 VC3 IA3 IC3 C3 
+INVENT A1 C1 A2 C2 A3 C3 INV INIC A e 
+Value 20.0000 2.0000 2.0000 0.0000 0.0000 20.0000 20.0000 0.0000 20.0000 162.0000 0.0000 0.0000 20.0000 20.0000 0.0000 0.0000 304.0000 0.0000 0.0000 20.0000 20.0000 0.0000 0.0000 446.0000 0.0000 18.0000 38.0000 20.0000 0.0000 20.0000 20.0000 8.0000 0.0000 5.0000 0.0000 446.0000 
+Reduced cost 0.0000 0.0000 0.0000 2.7000 4.0000 0.0000 0.0000 0.0000 0.0000 0.0000 2.7000 4.0000 0.0000 0.0000 0.0000 0.0000 0.0000 2.7000 4.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 
+El Colegio de México, CEDDU. 
+Resultados del Simplex utilizando el Programa LINDO 
+ROW Slack or surplus 
+INIA 0.0000 INIB 0.0000 4) 0.0000 5) 0.0000 6) 0.0000 7) 0.0000 8) 0.0000 9) 0.0000 $_D1SP-O 0.0000 COMPR-1 0.0000 COMPR-2 0.0000 COMPR-3 0.0000 FEFV0-1 19.2000 FEFV0-2 27.7200 FEFV0-3 42.2400 DEM A-1 0.0000 DEM A-2 0.0000 DEM A-3 0.0000 DEM C-1 0.0000 DEM C-2 0.0000 DEM C-3 0.0000 
+NO. ITERATIONS=13 
+Dual prices 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 2.9000 2.9000 2.9000 4.2000 4.2000 4.2000 
+El Colegio de México, CEDDU. Resultados del Simplex utilizando el Programa LINDO 
+RANGES IN WHICH THE BASIS IS UNCHANGED: 
+Obj coefficient ranges  
+Variable  Current  
+coef  
+co  0.0000  
+IAO  0.0000  
+ICO  0.0000  
+CA1  0.0000  
+CC1  0.0000  
+VA1  0.0000  
+VC1  0.0000  
+IA1  0.0000  
+IC1  0.0000  
+C1  0.0000  
+CA2  0.0000  
+CC2  0.0000  
+VA2  0.0000  
+VC2  0.0000  
+IA2  0.0000  
+IC2  0.0000  
+C2  0.0000  
+CA3  0.0000  
+CC3  0.0000  
+VA3  0.0000  
+VC3  0.0000  
+IA3  0.0000  
+IC3  0.0000  
+C3  1.0000  
+INVENT  0.0000  
+A1  0.0000  
+C1  0.0000  
+A2  0.0000  
+C2  0.0000  
+A3  0.0000  
+C3  0.0000  
+INV  0.0000  
+INIC  0.0000  
+A  0.0000  
+e  0.0000  
+
+Allowable 
+increase lnfinity lnfinity lnfinity 2.7000 4.0000 lnfinity lnfinity 0.0000 0.0000 lnfinity 2.7000 4.0000 lnfinity lnfinity 0.0000 0.0000 lnfinity 2.7000 4.0000 lnfinity lnfinity 0.0000 0.0000 lnfinity 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 Allowable 
+decrease lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity 0.0000 1.0000 lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity 1.0000 lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity 1.0000 lnfinity 2.7000 0.0000 0.0000 lnfinity 0.0000 0.0000 lnfinity lnfinity lnfinity lnfinity 
+El Colegio de México, CEDDU. Resultados del Simplex utilizando el Programa LINDO 
+jll"fl/11111111/II/III /II/1
+3 9 O 5 O 7 5 8 5 2 5 F 
+RIGHTHAND SIDE RANGES 
+ROW 
+INIA INIB 4 
+5 6 7 8 9 $_01SP-O 
+COMPR-1 COMPR-2 COMPR-3 14 
+15 FEFV0-1 FEFV0-2 FEFV0-3 
+DEM A-1 
+DEM A-2 DEM A-3 DEM C-1 DEM C-2 DEM C-3 
+Current RHS 2.0000 2.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 20.0000 0.0000 0.0000 0.0000 5.0000 10.0000 0.0000 0.0000 0.0000 20.0000 20.0000 20.0000 20.0000 20.0000 20.0000 Allowable increase 18.0000 5.0000 18.0000 38.0000 20.0000 20.0000 20.0000 20.0000 lnfinity 19.2000 27.7200 42.2400 5.0000 lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity Allowable decrease 2.0000 2.0000 lnfinity lnfinity lnfinity lnfinity lnfinity lnfinity 20.0000 162.0000 304.0000 446.0000 lnfinity 5.0000 19.2000 27.7200 
+42.2400 
+18.0000 20.0000 20.0000 20.0000 20.0000 20.0000 
+
+
+
+
+
+
+

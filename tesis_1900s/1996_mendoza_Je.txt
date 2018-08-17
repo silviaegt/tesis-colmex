@@ -1,0 +1,1089 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRO EN ECONOMIA CENTRO DE ESTUDIOS ECONOMICOS EL COLEGIO DE MEXICO 
+La desregulaci de la banca comercial en México Un análisis de series de tiempo 
+José Eduardo Mendoza Contreras 
+PROMOCION 1992-1994 
+1996 
+ASESOR: Dr. Carlos Manuel Urz Macias 
+Agradecimientos 
+Quiero expresar mi agradecimiento al Doctor Carlos Urz Macias, primero; porque en sus clases de microeconomía y econometría se fortalecien mí la idea de lo importante que es realizar trabajos aplicados en economía; y segundo, por su amplia disposici en la revisi del presente trabajo, acerca del cual realizacertados comentarios. 
+Asimismo, agradezco al Doctor Jorge Fernández Ruíz por el apoyo que me brind su amplia disposici y su gran profesionalismo; al Doctor Angel Calder por sus recomendaciones bibliográficas y, en general, a todos mis profesores de la maestría. Este trabajo es, de un modo u otro, el resultado de los conocimientos y la disciplina que todos ellos me infundieron. 
+De manera especial quiero manifestar mi gratitud al Doctor José Luis Alberro Semerena por su calidad como persona y profesor, así como por su gran interés en apoyar el desarrollo profesional de sus colaboradores. Siempre agardeceré la ayuda que me proporciondurante el tiempo de realizaci de esta tesina, pues facilitampliamente mi trabajo. 
+A los Maestros: Manuel Arceo García, Agustín Castro Pérez y al Lic. José Luis Lez Zamudio, quienes son mis jefes directos en Pemex Gas y Petroquímica Básica, les agradezco el que me proporcionaran las condiciones y los espacios de tiempo necesarios para que pudiera llevar a cabo mi labor. 
+A Rocío Contreras, quien es la encargada del Centro de Documentaci del Centro de Estudios Econicos, le doy las gracias por las facilidades otorgadas y su amplia disposici para que pudiera acceder a la informaci requerida para la elaboraci de mi trabajo. 
+Finalmente, quiero dar las gracias a Aída Isabel Santos Barrera por sus atinados comentarios y sugerencias como especialista en temas de la banca comercial, así como por su ayuda directa en la elaboraci de este trabajo y por su apoyo moral durante el tiempo en el que cursé la maestría en economía. 
+Resumen. 
+A la luz de la liberalizaci del sistema financiero mexicano, en el presente trabajo se realiza una revisi global de los aspectos teicos referentes al impacto del sistema financiero en el crecimiento econom1co, de las experiencias internacionales de liberalizaci financiera, de las características específicas de la banca comercial mexicana y se realizan dos ejercicios de series de tiempo que siguen el planteamiento del banco Mundial en cuanto a la bqueda de relaciones intermedias antes de verificar el impacto de la liberalizaci financiera en al economía. 
+En el primer ejercicio, mediante el análisis de intervenci se busca comprobar si la liberaci de las tasas de interés sobre depitos han logrado inducir un cambio estructural en el comportamiento de la captaci en instrumentos de ahorro tradicionales, dando como resultado que no se sostiene la hipesis de cambio estructural. En el segundo, mediante el análisis de cointegraci se inenta encontrar una relaci estadística entre captaci en instrumentos de ahorro tradicionales y financiamiento al sector privado para después, a través de pruebas de causalidad de Granger determinar los efectos de una variable sobre la otra. Los resultados fueron que no se sostiene cointegraci de las series en niveles y que al realizar el estudio sobre las diferencias las pruebas de causalidad no permiten rechazar la hipesis nula de no causalidad. 
+
+
+Contenido 
+Introducci. 
+l. Marco Teico. 1 
+1.1 Fuentes de financiamiento del desarrollo econico. 1 
+1.2 El papel del sector financiero en el crecimiento econico. 3 
+1.2.1 La perspectiva neoliberal. 7 
+1.2.2 El punto de vista neoestructuralista. 16 
+1.2.3 Contribuci teica de los modelos de crecimiento endeno. 18 
+11. Experiencias de Desregulaci Financiera. 27 
+11.1 Innovaci financiera y desregulaci en los países desarrollados. 27 
+11.2 La experiencia en los países subdesarrollados. 29 
+111. El Sistema Bancario Comercial Mexicano. 34 
+111.1 Antecedentes. 35 
+111.2 Evoluci de la banca comercial (1940-1982). 39 
+IV. Aplicaci del Análisis de Series de Tiempo. 56 
+IV.1 Impacto de la liberaci de tasas de interés sobre la captaci bancaria. Un análisis de intervenci. 57 
+IV.2 Captaci bancaria y créditos otorgados al sector privado. Un estudio de cointegraci. 71 Conclusiones. 84 Bibliografía. 88 Anexos. 93 
+
+
+
+
+Introducci. 
+A lo largo del presente sexenio se han implementado una serie de pollticas de liberalizaci econica que han incluido de manera fundamental a las instituciones financieras y su marco regulatorio, para a través de su papel en la captaci y estímulo al ahorro y en la canalizaci del mismo a las actividades productivas1, influir en el crecimiento y en el desarrollo econico. 
+Sin embargo, existe una amplia controversia sobre el papel del sector financiero en la economía y, más a, por las experiencias tanto en países desarrollados como subdesarrollados, acerca de los efectos que la liberalizaci financiera puede tener en el desempe econico. 
+Debido a lo anterior, surge la idea de realizar el presente trabajo cuyos objetivos son: 
+1. 
+Estudiar la literatura existente sobre las posiciones teicas referentes al papel que desempe el sector financiero en el crecimiento econico. 
+
+2. 
+Revisar la experiencia de algunos países que implementaron un proceso de liberalizaci de sus sistemas financieros. 
+
+3. 
+Investigar la evoluci histica de la banca comercial en México de 1925 hasta fechas recientes. 
+
+4. 
+Analizar los efectos de la liberalizaci en las tasas de interés sobre la captaci en instrumentos tradicionales de ahorro2 de la banca comercial, y el papel de dicha captaci en el financiamiento al sector privado como condiciones necesarias para que la liberalizaci financiera propicie el crecimiento econico. 
+
+
+Para cumplir los objetivos mencionados el documento se divide en cuatro capítulos. En el capítulo I se presentan las principales aportaciones teicas en 
+1 Aspe (1993. p.64). 2 Los instrumentos tradicionales son cuentas de ahorro, cuentas de cheque y pagarés: esto es. captaci directa menos aceptaciones bancarias. 
+torno al papel del sector financiero en el desarrollo econico, desde las ideas de Arthur Lewis sobre crecimiento, pasando por los modelos de McKinnon y Shaw hasta los modelos de crecimiento endeno. En el capítulo II se realiza una breve revisi de las experiencias internacionales de liberalizaci financiera y del marco de política econica en la que estas se dieron. El capítulo 111 analiza la evoluci de la banca comercial mexicana, considerando que ésta ha sido la parte fundamental del sistema financiero durante la mayor parte de su historia. Y, finalmente, en el capítulo IV se desarrollan dos ejercicios con la técnica de series de tiempo: uno para medir los efectos de la liberalizaci de las tasas de interés sobre la captaci en instrumentos tradicionales de ahorro de la banca comercial, y otro para estudiar la relaci de ésta con el financiamiento al sector privado. 
+Los ejercicios desarrollados en el capítulo IV intentan probar la hipesis de que la liberalizaci de tasas de interés producirá un incremento en la captaci bancaria, y que, ese proceso, a su vez generará un aumento en el financiamiento al sector privado por la banca comercial. Esto se hará mediante una prueba de cambio estructural en el comportamiento de la captaci a raíz de la liberalizaci de las tasas de interés, en el primer caso, y con una prueba de cointegraci entre las series de instrumentos de ahorro tradicionales y financiamiento al sector privado, para comprobar la existencia de relaciones de equilibrio de largo plazo en las variables, en el segundo caso. 
+Es importante selar que, entre la literatura consultada sobre la liberalizaci del sector financiero mexicano, no se encontraron trabajos que midan por medio de alguna técnica estadística los efectos de la política liberalizadora sobre las variables relevantes que ésta busca impactar, y que, en ese sentido, el esfuerzo realizado en el presente trabajo representa una aportaci original al estudio del problema. 
+l. Marco Teico. 
+1.1 Fuentes de financiamiento del desarrollo econico. 
+Los primeros trabajos que intentaron explicar las causas del desarrollo econico ubicaron a la acumulaci de capital como una condici necesaria, aunque no suficiente, para que éste aparezca en la sociedad. 
+Su condici de no suficiencia radica en el hecho de que para que un incremento en el acervo de capital impacte positivamente en el crecimiento econico, se requiere la existencia de condiciones tales como buena calidad de la mano de obra, empresarios calificados y desarrollos institucionales, 1 entre otras cosas. 
+Sin embargo, como condici necesaria está revestida de una gran importancia, ya que si una economía subdesarrollada ha de convertirse en una desarrollada requiere la movilizaci de un superávit econico (ahorro) que pueda ser convertido en un incremento de la inversi productiva. 
+Más allá de la determinaci de los elementos indispensables en el proceso de crecimiento de una economía, sobre lo cual existe un amplio consenso, se encuentra otro problema a resolver, sobre el que a lo largo del tiempo ha existido una amplia discusi y que se refiere a las fuentes de su financiamiento. Pero, la pregunta no es: cuáles son las fuentes de financiamiento de la inversi, sino qué efectos encierran éstas para el conjunto de la economía. 
+De forma esquemática, es posible clasificar a los recursos para la inversi como: 
+Internos: ahorro voluntario a través de la reducci del consumo, ahorro involuntario mediante impuestos adicionales, préstamos compulsivos del gobierno e inflaci o mediante la absorci de desempleados en el trabajo productivo, etc. 
+Y externos: inversi extranjera directa, restricciones a las importaciones y mejoramiento de los términos de intercambio. 
+1 North (1984, p. 232). 
+Aunque todas son vías para incrementar la inversi, los efectos en el seno de la economía de cada una de éstas son objeto de una amplia discusi entre los economistas. 
+Un ejemplo de esto son las discusiones acerca de los efectos de la inversi extranjera directa, del ahorro forzado a través del impuesto inflacionario etc., que han enriquecido la literatura econica a lo largo de los timos setenta as. 
+Los primeros escritos sobre la cuesti de co financiar el desarrollo econico se enfrentaron a dos problemas básicos: el primero fue. co incrementar los recursos disponibles para la inversi, y, el segundo, co diversificar la estructura de la economía sin producir desequilibrios sectoriales. 
+La primera cuesti puede ser definida en palabras de Arthur Lewis: 
+"El problema central de la teoría del desarrollo econico es entender el proceso mediante el cual una comunidad que estaba ahorrando previamente el 4 o 5 por ciento de su ingreso nacional, se convierte por sí misma en una economía en donde su ahorro voluntario es del 12 a 15 por ciento o más".2 
+Para resolver dicha pregunta Lewis siguila tradici clásica, cuyas raíces se encuentran en Smith y Ricardo, argumentando que en una sociedad dividida entre capitalistas, trabajadores y terratenientes, prácticamente todo el ahorro es realizado por la clase capitalista, ya que los trabajadores mantienen un salario de subsistencia y los terratenientes mantienen un consumo excesivo. 
+En cuanto a la segunda cuesti el modelo planteado por Lewis es también una aplicaci de la tradici clásica del ahorro a los países subdesarrollados, en la cual se reconoce que un problema central en el proceso de desarrollo econico es el cambio de balance entre los sectores productivos de la economía. En este proceso los sectores nuevos dependen, para la inversi de recursos, parcialmente del superávit generado en los viejos sectores. 
+2 Lewis (1954. p. 416). 
+A través de incrementar el ahorro en el sector moderno la participaci de las ganancias en el ingreso nacional se puede incrementar porque, en su modelo, hay oferta ilimitada de mano de obra, la cual puede ser tomada del sector agrícola sin que haya ning crecimiento del consumo agregado. 
+Un punto importante sobre lo anterior es que esta línea de pensamiento, al considerar que so los capitalistas estaban facultados para ahorrar ignora el hecho de que el sector de las familias puede ser una importante fuente de ahorros voluntarios, parte de los cuales pueden ser usados en las empresas familiares mientras que otra parte puede ponerse disponible, mediante las instituciones financieras, para la inversi en el resto de la economía. 
+El presente trabajo se ubicará en el análisis de la movilizaci de los recursos internos para la inversi, dirigiéndose principalmente a estudiar el papel del sector financiero en la misma. Los aspectos referentes a las fuentes externas, quedarán fuera del análisis por escapar a los objetivos del mismo. 3 
+
+1.2 El papel del sector financiero en el crecimiento econico. 
+Al considerar la capacidad de ahorro no solamente de los capitalistas sino del resto de los agentes econicos se produjeron una serie de modelos de crecimiento econico en donde el sector financiero cobra importancia como el medio por el cual es posible transferir los recursos excedentes, tanto entre los sectores como a través de los agentes individuales. La discusi sobre dichos modelos se hará en las secciones siguientes de este capítulo, aquí se realizará una breve presentaci de las principales aportaciones del sistema financiero a la economía. 
+Los sistemas financieros proveen serv1c1os de pagos y permiten movilizar el ahorro y asignar el crédito, además de limitar, valorar, unir e intercambiar los riesgos resultantes de esas actividades. Diversas instituciones (bancos, cooperativas de crédito, compaas de seguros, casas de empe y corredores de bolsa} prestan estos servicios que son usados en diversas combinaciones por 
+3 Para obtener informaci sobre las fuentes externas consultar Meier (1989, pp. 171-212). 
+unidades familiares, empresas y gobiernos, mediante toda una serie de instrumentos (dinero, cheques, tarjetas de crédito, bonos y acciones). 
+"Gracias a los servicios financieros se reducen el costo y el riesgo del intercambio de bienes y servicios y de las actividades relacionadas con la obtenci y el otorgamiento de préstamos. Si no existieran estos servicios la economía tendría que limitarse a la autosuficiencia o al trueque, lo que obstaculizaría la producci especializada, en la cual se basan las economías modernas. El momento en el que se producen los bienes so se podría separar del momento en el que se consumen mediante su almacenamiento durante el tiempo. El tama de las unidades de producci estaría limitado por la capacidad de ahorro del productor. Los ingresos serían menores y las economías complejas no existirían".4 
+Al romper con las limitaciones del autofinanciamiento, el sistema financiero se convierte en un elemento que expande las posibilidades de captaci de recursos invertibles, lo que lo convierte en un elemento importante que puede influir en la velocidad y direcci del crecimiento econico. 
+En la literatura se afirma que el crecimiento en la intermediaci financiera5 puede contribuir al desarrollo econico de tres formas: 
+i) El desarrollo financiero permite que las unidades econicas distribuyan su riqueza de una manera más eficiente. 
+Por ejemplo, una unidad econica puede mantener su riqueza acumulada -y los incrementos a esa riqueza (sus ahorros)-en la forma de un nero amplio de activos, como los que se describen a continuaci: 
+a) 
+activos físicos productivos, como tierra, máquinas e inventarios; 
+
+b) 
+activos físicos improductivos; como oro y metales preciosos, tierra ociosa, y exceso de inventarios; 
+
+c) 
+activos financieros: 
+
+
+4 Banco Mundial (1989, pp. 28). 5 Una medida del tamal'\o de la intennediaci financiera es la relaci de activos bancarios en el sector privado respecto al PIB. 
+1) activos que no ganan interés, básicamente M1; 
+2) activos que ganan interés, la mayoría de los cuales son, en los países subdesarrollados, depitos de ahorro y a plazo con los bancos comerciales M2. 
+En la ausencia de desarrollo financiero so a) y b) están disponibles. 
+De este modo, al distribuirse la riqueza entre los activos mencionados, el desarrollo financiero, que provee una amplia gama de instrumentos financieros, permite la formaci de un portafolio con más altos rendimientos, bajos riesgos y costos de transacci, llamándose a esto el efecto del portafolio. 
+ii) Las instituciones financieras sidamente estructuradas, también incrementan la eficiencia en la asignaci de recursos financieros. Los buenos ahorradores no siempre son buenos inversionistas o no siempre tienen oportunidades de invertir. Las instituciones financieras permiten la separaci del ahorro y la inversi lo que facilita que se puedan llevar los fondos a inversionistas de mayor calidad. Ellas pueden mezclar los ahorros de peques ahorradores y usarlos para financiar grandes inversiones que de otra forma no se hubieran realizado. 
+iii) El desarrollo financiero puede no so afectar la asignaci de la riqueza entre activos alternativos, sino que también puede aumentar la cantidad de la riqueza si pueden estimular a las unidades econicas a ahorrar más. 
+Las instituciones financieras ofrecen una amplia gama de instrumentos de ahorro, que tienen, en ausencia de inflaci, atractivos rendimientos y alta liquidez. La disponibilidad de esa clase de activos induce a los individuos a ahorrar más. Sin embargo, este efecto debe ser tomado con cautela porque los altos y seguros dividendos pueden provocar una situaci totalmente opuesta, ya que la gente con menos ahorro puede obtener el mismo ingreso de sus activos. La direcci de este efecto es ambigua y los recursos empíricos no han logrado arrojar mucha luz al respecto. 
+El hecho de que el incremento en los ahorros financieros acompan el desarrollo financiero es principalmente producto de la sustituci entre activos de un portafolio dado. La sustituci en cuesti es al nivel de las unidades econicas individuales, donde el acto de ahorrar está desconectado de la acumulaci de activos físicos, esto es, de la inversi. Estas unidades obtienen, en lugar de los activos físicos, activos de las unidades financieras, las cuales a su vez, usan estos fondos para financiar la inversi en cualquier lugar. A nivel macro, sin embargo, los niveles de ahorro e inversi pueden no cambiar, pero su distribuci sobre las unidades econicas cambiarán. 
+Es probable que las unidades que obtienen los activos financieros no se encuentren distribuidas aleatoriamente sobre la economía, sino que estén concentrados en sectores y regiones en donde las perspectivas de la inversi no son atractivas, o en áreas en donde el crecimiento del ingreso sea muy rápido o en donde el ahorro por alguna raz sea elevado; es probable que el incremento en la intermediaci financiera pueda tener consecuencias para la asignaci sectorial y regional de los recursos y pueda influenciar la reestructuraci de la economía. 
+Los cambios en el portafolio analizados previamente implican que el desarrollo financiero empieza con un cambio de los recursos hacia las instituciones financieras. Estos recursos provienen de las unidades econicas que de otro modo hubiesen usado estos fondos con menores o más riesgosos dividendos. Suponiendo que las instituciones financieras distribuyen estos recursos en créditos de acuerdo a la tasa de rendimiento sobre los proyectos que serán financiados con ellos, deberá ocurrir un incremento en la eficiencia de la inversi. Ganancias similares pueden realizarse cuando el sistema financiero oficial toma estos recursos del mercado monetario no regulado.6 
+En adici a lo anterior, el desarrollo financiero puede tener otros beneficios. Con la expansi del sistema financiero, pueden lograrse economías de escala debido a que las instituciones financieras distribuyen el riesgo de insolvencia e iliquidez más de lo que un ahorrador individual o el mercado no regulado lo pueden hacer, además de producir una transformaci en la maduraci entre depitos y 
+6 En la siguiente secci se trata más ampliamente el tema de los mercados no regulados. 
+préstamos. El desarrollo financiero puede incrementar la especializaci entre las instituciones financieras, proporcionando los beneficios de la divisi del trabajo e incrementando la formaci de expertos. 
+No obstante todos lo beneficios descritos en la conformaci de un sistema financiero fuerte, existen costos y desventajas potenciales, las cuales se enuncian a continuaci: 
+-El discutido incremento en la eficiencia de la inversi puede confundir fácilmente los rendimientos sociales con los privados. Es posible que los dividendos sean altos so porque las instituciones financieras extienden créditos al sector moderno, donde dichos dividendos pueden estar afectados por el poder oligopico o la protecci arancelaria. 
+-Las instituciones financieras también emiten crédito para usos menos productivos, tales como crédito al consumo o al gobierno. 
+-Existen incentivos a la formaci de burbujas especulativas, si la liberalizaci del sistema no es acompada de una eficiente supervisi bancaria. Lo anterior puede provocar crisis financieras y afectar gravemente la economía porque en ausencia de una adecuada supervisi, los bancos pueden otorgar créditos con un mayor riesgo implícito. 
+1.2.1 La Perspectiva Neoliberal. 
+La observaci de que el desarrollo econico y el financiero van juntos lleva un debate sobre la causalidad entre estos dos fenenos. ¿Es el desarrollo del sistema financiero el que promueve el crecimiento econico o es este timo el que crea la demanda por más servicios financieros? En otras palabras ¿es la direcci de la causalidad de la oferta de servicios financieros a su demanda o de la demanda a la oferta? Varios investigadores analizaron esta cuesti, entre ellos Goldsmith7 y Hugh T. PatrickB, encontraron que las interacciones son complejas y que no se puede establecer claramente la direcci de la causalidad. 
+7 Goldsmith (1969, pp. 78-96). 8 Patrick (1966, pp. 174-177). 
+Los resultados de los estudios de Goldsmith sobre la relaci entre desarrollo financiero y desarrollo econico fueron los siguientes: 
+a) 
+En las etapas primarias del desarrollo econico, la superestructura financiera crece más rápidamente que la economia. 
+
+b) 
+El nivel de indicadores de desarrollo financiero y su evoluci a través del tiempo difiere entre países, dependiendo de sus diferencias entre sus tasas de crecimiento y de su estructura econica . 
+
+c) 
+El desarrollo financiero tiende a iniciar con el sistema bancario y gradualmente a diversificarse en instituciones no bancarias. 
+
+
+Para Hugh T. Patrick 9 el sistema financiero opera en la economla mediante los siguientes dos efectos: 
+1) Demand-Following. El sistema financiero se desarrolla a partir del desarrollo de la economía. Y así, el rezago de éste en los países subdesarrollados se debe al rezago de sus economías. 
+Como consecuencia del rápido crecimiento econico, las firmas se ven en menores posibilidades de financiar su expansi mediante la depreciaci o la reinversi de utilidades, por lo que crece la demanda de fondos prestables. Esta visi, no obstante, implica que el financiamiento es esencialmente pasivo. 
+2) Supply-Leading Finance. Esta forma se refiere a la creaci de instituciones financieras que ofrecen sus activos y sus servicios en adelanto a la demanda de los mismos. 
+Sus funciones principales son: 
+a) 
+Transferir recursos de los sectores tradicionales a los sectores modernos. 
+
+b) 
+Promover y estimular la respuesta empresarial en esos sectores. 
+
+
+9 ldem, p.177. 
+El acceso a estos fondos tiene efectos sobre las expectativas de los empresarios "haciéndolos pensar en grande" y provocando que se realicen proyectos que de otro modo no se hubieran llevado a cabo. 
+No es que esta forma de financiamiento sea condici necesaria para producir el desarrollo econico autosustentado. Pero presenta una oportunidad para inducir el crecimiento con medios financieros. 
+En la práctica hay una interacci de los dos fenenos. Sin embargo, seg el autor. la siguiente secuencia puede ser tomada en cuenta: antes de que el crecimiento industrial sostenido tenga lugar, supply-/eading podrá inducir la inversi real; cuando el proceso de crecimiento real ocurre esta forma pierde fuerza gradualmente y el demand-fol/owing empieza a ser más importante. 
+Los resultados de Goldsmith y las vías propuestas por Patrick no alcanzaron a explicar claramente la relaci causal entre las variables, que de suyo han mostrado una alta correlaci a través del tiempo. 
+El siguiente esfuerzo por explicar el feneno fue realizado por Ronald l. McKinnon 1 O y Edward Shaw 11 quienes intentaron explicar la relaci existente entre ambas variables de una manera indirecta. Ellos basaron sus estudios en los países subdesarrollados en donde los sistemas financieros están sujetos a una serie de restricciones, tales como topes a las tasas de interés, control en el otorgamiento del crédito y altos requerimientos de encaje legal, las cuales impiden que dichos sistemas evolucionen libremente. 
+McKinnon realizun estudio empírico mediante el análisis de regresi de secci cruzada, en donde corriuna regresi entre tasa de crecimiento econico y el nivel de la tasa de interés real, para varios países subdesarrollados y encontrque los países con tasas de interés reales bajas o 
+1O McKinnon (1983, pp.83-103). 11 Shaw (1973, pp. 81-87). 
+negativas mostraron bajas tasas de crecimiento o incluso decrecimiento en sus economías. 
+Los ticos financieros se movieron al centro de la atenci de los debates de la política del desarrollo después de la publicaci de sus obras, mismas que los llevaron a ser considerados los padres de la represi financiera (o de la liberalizaci financiera) a pesar de algunas diferencias significativas en sus contribuciones originales. 
+Ambos observaron que los mercados de capitales en los países subdesarrollados, así como muchos otros mercados, están segmentados por lo que los clientes enfrentan diferentes precios para el crédito y tienen diferente acceso al mismo. Para ellos, dos segmentos pueden ser observados en los mercados de capital: 
+Uno es el mercado crediticio oficial consistente en instituciones de crédito formales que atienden a las firmas importantes en el sector moderno de la economía. Este segmento del mercado está generalmente sujeto a la intervenci gubernamental y de la regulaci que toma las formas mencionadas en líneas anteriores. El efecto de esto es que las instituciones pueden ofrecer tasas bajas de depitos lo que hace que sus activos no sean atractivos y desincentiva el desarrollo financiero. Esto es a lo que se llama "represi financiera". 
+El otro segmento es el mercado no regulado que se relaciona con empresas de escala media o pequet'\a. Este mercado puede fácilmente evadir la intervenci del gobierno. 
+"McKinnon y Shaw realizaron un análisis teico detallado del ahorro y la inversi en los palses subdesarrollados y de las políticas financieras que pueden contribuir al desarrollo econico. Ambos argumentaron en contra de los modelos monetarios neoclásicos en los cuales la acumulaci de los activos financieros son vistos como sustitutos de, y por lo tanto competencia de, la acumulaci real".12 
+12 Jensen (1990. pp. 25). 
+McKinnon supone que en los países subdesarrollados, las inversiones son autofinanciadas debido a que los mercados de capitales son pequenos e imperfectos para generar los fondos requeridos para los proyectos de inversi y, aun más importante el riesgo relacionado con los proyectos de inversi, en las etapas primarias del desarrollo, pueden ser muy grandes para las instituciones financieras para participar en el financiamiento de largo plazo. Dado que muchos proyectos de inversi no son divisibles (poseen un tamar\o mínimo sustancial), las empresas deben acumular saldos monetarios hasta que tengan lo suficiente para financiar el proyecto de inversi planeado. Las obligaciones del sistema financiero, en particular los depitos de ahorro y a plazo frecuentemente son los icos medios de poseer esa clase de saldos temporales. "Tanto como el intervalo promedio de tiempo entre el ingreso y los gastos sea mayor para el caso de la inversi que para el caso del consumo, la demanda por M2 crecerá con un incremento en la tasa de inversi. Los ahorros financieros y la inversi real son por lo tanto complementarios y no sustitutos."13 
+Este descubrimiento fue conocido como la "hipesis de complementariedad"; la cual puede ser explicada en la siguiente funci de demanda por M2 en términos reales: 
+(M2/Pt = f(Y. 1/Y, id-pe) 
+(M2 / Pt= demanda por M2 en términos reales. 
+P = nivel de precios 
+pe = tasa de inflaci esperada 
+id = tasa nominal de interés sobre depitos. 
+La demanda por M2 en términos reales es una funci del nivel del ingreso Y (positiva), de la relaci de inversi a ingreso 1/Y (positiva), y de la tasa real de interés sobre depitos id-pe (positiva). Si las empresas quieren invertir más, ellas demandarán más recursos del sistema financiero. 
+La complementariedad opera en ambos sentidos: "La situaci de la oferta monetaria ejerce un efecto de primer orden sobre las decisiones de ahorro e 
+13 McKinnon, op. cit. p 57. 
+inversi". Por lo tanto la complementariedad de McKinnon puede también expresarse como una funci de inversi de la forma siguiente: 
+ll y= f(rt.íd-pe) 
+donde rt es el rendimiento promedio de capital físico. 
+La complementariedad aparece en las derivadas parciales: 
+d(M/P) / d(I/Y) > O d(I/Y) / d(id-pe) > O 
+Las pruebas empíricas de la hipesis de complementariedad se han concentrado en estimar el signo y la significancia del coeficiente de la variable 1/y en la ecuaci de la demanda de dinero. Los resultados no han llevado a confirmar la hipesis (Fry 1982: Gupta 1987). Estos estudios concluyen que en los países incluidos en las muestras de prueba, el desarrollo financiero ha progresado a un estadio en donde las empresas no se sujetarán más al autofinanciamiento. Por supuesto, las empresas financian una parte significativa de sus inversiones de sus propios fondos aun en los países con alto desarrollo financiero. El acceso al crédito, sin embargo, significa que el tiempo de la inversi no está regido por los ahorros acumulados y que las empresas no necesitan financiar toda su inversi de sus propios fondos. 
+El mensaje básico de McKinnon y Shaw está dirigido a los constructores de la política financiera. Ellos argumentan que la represi financiera mantiene el nivel del desarrollo financiero bajo y con ello detiene el crecimiento econico. La represi financiera toma varias formas y es generalmente el resultado de la inefectiva intervenci del gobierno. 
+Las principales formas que la represi financiera toma son: 
+a) 
+La imposici de topes a las tasas de préstamo de las instituciones financieras. El argumento para esta política puede ser que el bajo costo del crédito puede estimular la inversi privada o mantener bajo el interés sobre la deuda plica. 
+
+b) 
+La instauraci de altos requerimientos de reservas sobre las instituciones financieras, algunas de las cuales deben mantenerse como depitos que no ganan intereses en el banco central, y algunas en activos del gobierno con bajos intereses. 
+
+c) 
+Los controles de crédito selectivos que fuerzan a las instituciones financieras a asignar parte de sus créditos a usos específicos, generalmente a bajas tasas de préstamo. 
+
+d) 
+Instituciones financieras especiales pueden asignar crédito a sectores prioritarios. Las otras instituciones usualmente son forzadas. a su vez, a proveer fondos a bajas tasas a dichas instituciones. 
+
+e) 
+Como resultado de los puntos a)-d), las tasas de interés de préstamo deberán ser bajas y las instituciones financieras necesitarán un alto diferencial entre las tasas de préstamo y depito para cubrir las actividades subsidiadas. 
+
+f) 
+El nivel de la tasa de depitos deberá ser disminuido en términos reales una vez que el impacto de la inflaci sea tomado en cuenta. Las reducidas tasas desaprovechan los esfuerzos para movilizar el ahorro por parte de las instituciones financieras. 
+
+
+En esta línea, el resultado de la represi sobre el sistema financiero es que fragmenta el mercado doméstico de capital, con serias consecuencias para la cantidad y calidad de la acumulaci de capital: 
+1) Los flujos de fondos prestables a través del sistema bancario son disminuidos, forzando a los inversionistas potenciales a depender más del financiamiento propio. 
+2) Las tasas de interés sobre los truncados flujos bancarios varían arbitrariamente de una clase de deudor a otro. 
+3) El proceso de financiamiento de las empresas y los individuos es perjudicado. Si el producto real de los depitos es negativo, las empresas no pueden acumular fácilmente activos líquidos para la realizaci de inversiones. 
+Protegerse de los costos de la inflaci es más atractivo como medio de financiamiento interno. 
+4) La profundizaci financiera del sistema bancario es imposible cuando las firmas no tienen liquidez o la inflaci es alta e inestable. Los mercados abiertos robustos en stocks y bonos, o intermediaci por otros medios organizados, requieren estabilidad monetaria. 
+Para ellos, remediar la represi financiera está implícito en su propia definici, por lo que se sugiere fijar tasas de interés reales positivas y más uniformes que hagan comparable las categorías de los depitos y préstamos bancarios con la eliminaci de los requerimientos de reservas, topes a las tasas de interés y restricciones a la asignaci del crédito por un lado y la estabilizaci del sistema de precios por otro. 
+En un trabajo más reciente, McKinnon 14 ha subrayado la importancia del control de las finanzas plicas como prerrequisito para que tenga éxito la liberalizaci financiera. Y esto es así porque -seg lo explica-los déficit gubernamentales invariablemente se financian a expensas del sistema monetario interno produciendo inflaci. 
+La aplicaci del impuesto inflacionario a la intermediaci financiera interna conduce al establecimiento de controles cambiarios para prevenir la evasi fiscal; a su vez, el control cambiario necesita de un sistema de tipo de cambio fijo.15 Por lo tanto, los cuantiosos déficit del sector plico tienden a ser incompatibles con la liberalizaci y el desarrollo financieros ya que ésta requiere de un tipo de cambio flexible, que sea compatible con una tasa de interés liberalizada 
+Sin embargo, liberar a las instituciones financieras de los controles del tipo de interés y de asignaci del crédito no es suficiente para garantizar la evoluci de los sistemas financieros. Se requiere también una revisi de los sistemas jurídicos y contables (regulaci y supervisi). 
+14 McKinnon (1982. p. 160).15 /dem. p.161. 
+Finalmente, para concluir esta secci, se hacen los siguientes comentarios: 
+1) En lo referente a la hipesis de complementariedad, el argumento de McKinnon puede ser revertido: si la demanda por M2 es incrementada de otra manera, por ejemplo a través de un incremento en la tasa de depitos, esto puede inducir más inversi real, tanto como el costo de oportunidad de mantener los ahorros en saldos monetarios sea reducido.16 
+Esto. sin embargo, no es inmediatamente obvio. Se puede interpretar el modelo de McKinnon como la implicaci de que todo el ingreso ganado en un proyecto de inversi particular está compuesto de (i) la tasa de interés ganada sobre los saldos reales de M2 durante el tiempo que los ahorros fueron acumulados hasta que fueran lo suficientemente grandes para financiar la inversi, (ii) los rendimientos ganados sobre el proyecto una vez completado. La decisi de ahorrar con el objeto de financiar un proyecto de inversi debe ser determinada mucho más por los rendimientos esperados de ese proyecto que por el ingreso de los intereses sobre el tiempo en el que dichos fondos fueron acumulados para financiar el· proyecto. Como los rendimientos sobre el proyecto de inversi son independientes de la tasa de depito, hay muy poca raz para creer que un cambio en la tasa de depito podrá inducir más inversi y con ello mayor ahorro financiero. 
+2) No es claro que la liberalizaci financiera incremente los ahorros totales. Algunos estudiosos del tema han argumentado que un incremento en la tasa de interés real sobre depitos incrementa el ahorro agregado. La evidencia es mixta: existen estudios que muestran una relaci positiva mientras que hay otros que fallan en el establecimiento de resultados significativos. Por lo tanto, parece ser que en este sentido no se debe esperar mucho acerca de la liberalizaci financiera. 
+3) Existe mayor evidencia de que la tasa de interés real incrementa el nivel de ahorro financiero. 
+16 McKinnon (1983, p.26). 
+Entonces, si los ahorros totales no se incrementan pero los ahorros financieros si lo hacen, surge un elemento adicional: ¿qué activos son transformados en activos financieros? Siguiendo esta línea, el argumento por la liberalizaci financiera se convierte en un argumento acerca de una asignaci diferente de recursos, ya que dicha liberalizaci puede cambiar el balance entre el sistema financiero oficial y el mercado crediticio no regulado y puede afectar la asignaci de inversi intersectorial. 
+Bajo la represi financiera los fondos disponibles en el mercado oficial son limitados, por lo que las empresas dependen del mercado no regulado en el que las tasas de interés son altas. El crédito en estos mercados es caro. no tanto por el poder de monopolio, sino por los altos costos de administraci y altos riesgos. La liberalizaci financiera puede incrementar los recursos disponibles en el mercado oficial a expensas del no oficial y de las propias inversiones de los sectores atrasados de la economía. 
+1.2.2 El punto de vista neoestructuralista. 
+Los modelos neoestructuralistas están fundados en cinco supuestos (Taylor 1983) que difieren sustancialmente de las hipesis básicas de McKinnon y Shaw: 
+a) 
+Los salarios se determinan institucional o exenamente mediante el conflicto de clases. 
+
+b) 
+La inflaci está determinada por las fuerzas relativas de los capitalistas y los trabajadores. 
+
+c) 
+El ahorro emana so de las utilidades, no del salario. 
+
+d) 
+El nivel de precios lo determinan los recargos fijos a los costos de mano de obra. las importaciones y el financiamiento del capital de trabajo (tasa de interés) . 
+
+e) 
+Los países en desarrollo tienen una extrema necesidad de importaciones de materias primas, bienes de capital y bienes intermedios. 
+
+
+Los supuestos d y e implican que una polltica monetaria restrictiva que eleve las tasas de interés y una devaluaci que suba el precio de las importaciones pueden producir estanflaci. 
+Basados en la cartera de T obin para la asignaci de los activos de los hogares estos suponen tres categorías de activos: oro o efectivo, depitos bancarios y préstamos del mercado secundario, mientras que los modelos de McKinnon y Shaw especifican so dos activos en las carteras de los hogares: oro (u otras salvaguardas contra la inflaci) y dinero. Por lo tanto, para estos timos la conversi en dinero considerado en su forma amplia, esto es de los saldos monetarios y de los depitos bancarios ante un incremento de la tasa de interés, debe provenir de la sustituci de las salvaguardas contra la inflaci. 
+Pero para los neoestructuralistas esto puede no ser cierto, principalmente por la existencia de los mercados financieros secundarios o mercados no regulados. Los mercados secundarios en los que los prestamistas y los bancos locales intermedian entre ahorradores e inversionistas, constituyen una característica esencial de sus modelos para las economías en desarrollo. Los neoestructuralistas consideran que esos mercados son a menudo competitivos y ágiles además de que no están sujetos a coeficientes de encaje lega117_ 
+El punto es que los bancos comerciales se encuentran sujetos a un coeficiente fijo de encaje legal (1-q), y el banco central no otorga crédito al sector privado. De este modo, un aumento de la tasa de interés para depitos acrecienta la demanda de estos timos y reduce la demanda de efectivo y de préstamos del mercado secundario. Si la sustituci de los préstamos del mercado secundario por depitos es más importante que la sustituci de las tenencias de salvaguardas contra la inflaci por depitos, la oferta total de recursos para la inversi puede declinar y la tasa de interés del mercado secundario elevarse. 
+Edward Buffie 18 y Taylor 19 concluyen que en la práctica es probable que la liberalizaci financiera reduzca la tasa de crecimiento econico, porque aminora la oferta real total de crédito disponible para las empresas comerciales. 
+17 Taylor (1986, pp. 191-198). 18 Buffie (1984, pp. 305-322). 19 Taylor. ldem. 
+Los neoestructuralistas dan por supuesto que los fondos se mueven libremente entre el sistema bancario y el mercado secundario; los ahorradores y los inversionistas pueden, por lo general, usar uno u otro de ambos mercados, al menos en cierta medida. De ahí que la tasa de interés relevante en los modelos neoestructuralistas sea la tasa de mercado secundario, porque, en su contexto, ésta representa el costo marginal de prestar y, por lo tanto, forma parte de la funci de demanda monetaria. 
+Todo aumento de la tasa del mercado secundario acrecienta el nivel de precios, porque incrementa el costo del capital de trabajo (en todos los modelos neoestructuralistas los precios están determinados por los recargos fijos de los costos). Un alza de la tasa del mercado secundario también reduce la producci, al desalentar la inversi. 
+El incremento de la tasa de interés para depitos puede aumentar la tasa del mercado secundario y, por ende, deprimir el crecimiento si reduce la oferta total de capital de trabajo, suministrado ese timo tanto por el sistema bancario como por el mercado secundario. 
+
+1.2.3 Contribuci Teica de los Modelos de Crecimiento Endeno. 
+La principal contribuci de los trabajos realizados durante los as setenta fue mostrar empíricamente la relaci positiva entre el grado de desarrollo de los mercados financieros y la tasa de crecimiento econico (y una relaci negativa entre la represi financiera y el crecimiento). Sin embargo, fallaron en proporcionar un fundamento teico a dicha relaci. Los modelos derivados de dichos trabajos lograron mostrar analíticamente la relaci entre el desarrollo de los mercados financieros con el nivel de productividad, pero no con la tasa de crecimiento de la economía. 
+Recientemente algunos autores han desarrollado modelos, en la línea del crecimiento endeno, que ensen una relaci formal entre la intermediaci financiera y el crecimiento. Esta literatura considera dos interrelaciones: primero, empezando de un sistema financiero exeno dado, analiza co la intermediaci financiera afecta el crecimiento econico; segundo, estudia co el crecimiento econico afecta por sí mismo la evoluci y el crecimiento de la intermediaci financiera. Estos dos puntos son importantes porque, como ya se vio en apartados anteriores, la correlaci empírica observada entre el desarrollo financiero y el crecimiento econico puede ser interpretada de dos modos distintos: que el desarrollo financiero promueve el crecimiento o, viceversa, que un mayor crecimiento provoca el surgimiento de un sistema financiero más desarrollado con un amplio rango de intermediarios financieros, nuevos activos y nuevas transacciones. 
+En lo que sigue del presente apartado se revisará un ejemplo desarrollado por Sala-i-Martin20 que muestra claramente la diferencia entre los modelos de crecimiento endeno y los de crecimiento exenos, asimismo se realizará una revisi general de la literatura del crecimiento endeno que se ha ocupado de modelar al sector financiero. 
+Sala-i-Martin supone una funci de producci Cobb-Douglas y que existen dos insumos agreg~dos. Uno de ellos es capital Kt (considerado en un sentido amplio que incluye conocimiento y destreza) el cual puede ser acumulado y el otro Lt que no puede acumularse, o que crece a una tasa que es independiente de las decisiones individuales y que puede incluir recursos no renovables tales como tierra o energía. 
+Y= LªK11 (1.1)
+1 1 
+El incremento del capital en el tiempo que se denotará por K = dK/dt es la inversi neta agregada. En una economía cerrada la inversi neta debe ser igual a los ahorros menos la depreciaci. Usando (1.1) y el supuesto de una tasa de ahorros fija : 
+
+(1.2) 
+20 Sala -i-Martin Xavier (1990, pp.1-11 ). 
+Donde es la tasa de depreciaci constante. Otro supuesto es que la poblaci 
+es igual al empleo (para abstraerse del desempleo) y que crece a una tasa exena y constante, L/ L =n. Si k es la raz capital-trabajo (o capital por trabajador K/L), tomando derivadas de kt con respecto al tiempo (1 .2) se puede reescribir en términos per cápita como: 
+(1 .2)' 
+dividiendo ambos lados de (1.2)' por kt y definiendo la tasa de crecimiento del capital por trabajador como k1 / k1= y k. Es posible llamar "estado estable" aquel en el que todas las variables crecen a una tasa constante (posiblemente igual a cero). Por lo tanto, en estado estable Yk es constante. Tomando logaritmos y derivadas de ambos lados se obtiene: 
+O=(P-l)yk +n(a+P-I) (1 .3) 
+Esta igualdad requiere una profunda atenci. En el modelo neoclásico de crecimiento original, se supone que la funci de producci muestra rendimientos constantes a escala en el capital y el trabajo (esto es a+P=1) pero rendimientos decrecientes con respecto al capital por sí solo (P<1 ). Nese que por el supuesto de rendimientos constantes a escala el segundo término en el lado derecho de (1.3) es cero por lo que so queda: 
+O= (P-1)yk (1 .3)' 
+pero como producto del supuesto de rendimientos decrecientes de capital (P<1) la igualdad (1.3)' muestra que la ica tasa de crecimiento sostenible es yk=O. Esto es, en el modelo neoclásico de rendimientos constantes a escala, la ica tasa de crecimiento que puede existir en el estado estable es cero. Si la ica tasa de crecimiento posible es cero ¿co es que los teicos neoclásicos de los as 50 y 60 explicaron el crecimiento de largo plazo? Ellos básicamente supusieron que la economia se hace más productiva a lo largo del tiempo. En otras palabras, ellos extendieron la tecnología en (1 .1) a una más general: 
+Y, =A(t)L~ K~ (1 .1)' 
+donde A(t) refleja el nivel de la tecnología, la cual se asume creciente a una tasa constante g, tal que A(t) = A(O)ei;•. El parámetro g es commente llamado la tasa exena de crecimiento de la productividad. 
+Una segunda, y posiblemente más interesante manera de ver la ecuaci (1 .3), es la siguiente: "En un modelo de rendimientos de escala constante(a+p=1) con el propito de tener una tasa de crecimiento positiva (r•k>O), la funci de producci debe mostrar rendimientos constantes de escala sobre los insumos que pueden ser acumulados, P=1"21 . Esta simple raz delimita los modelos de crecimiento endeno con los de rendimientos constantes desarrollados en los 
+80. La funci de producci empleada es la siguiente: 
+Y
+1 =AK1 (1.1)" 
+Nese que este tipo de funci de producci no da ninguna importancia a los recursos no renovables tales como la tierra y el trabajo. Se puede argumentar, sin embargo, que lo que importa para la producci no es el trabajo en general sino el trabajo calificado. La calidad de la fuerza de trabajo (usualmente llamada capital humano) es acumulada con el aumento del conocimiento de cada generaci. 
+Cuando se combina capital físico y humano en una dimensi abierta de capital (afirma el autor), la funci de producci agregada se verá como la funci lineal AK presentada anteriormente. 
+Puede notarse que (como se vio en la ecuaci (1.3)') la tasa de crecimiento de estado estable Yk derivada de estos modelos es positiva aun sin suponer un crecimiento exeno en la productividad. Los parámetros del modelo (en particular la tasa de ahorro) determinarán esta tasa de crecimiento. Dichos parámetros, a su vez, son determinados al interior del modelo (o en otras palabras, son interdependientes). Estos -usualmente-son llamados modelos de crecimiento endeno. 
+21 ldem. p.4 
+Como se ha visto, la clave para el crecimiento endeno es la no existencia de rendimientos decrecientes de los insumos que serán acumulados. Esto implica que el rendimiento de la inversi (RI) en todos estos modelos mantiene una A* constante. 
+r = A* 
+Los modelos de crecimiento endeno combinan este rendimiento de la inversi con el que corresponde al consumo, el cual es derivado de una funci de utilidad con una elasticidad intertemporal de sustituci constante. 
+r=p+cry 
+Esta establece que el rendimiento al consumo (RC) es un premio sobre la tasa de descuento. El premio es tan grande como el crecimiento esperado de la economía (tan grande como y) y tanto como la gente esté dispuesta a disminuir el consumo (tama des). En estado estable la tasa de crecimiento y es constante. 
+Casi toda la literatura sobre el crecimiento endeno gira en torno al parámetro A*, por lo que si se encuentran los determinantes de A*, y como los afectan las políticas, será posible conocer los determinantes del crecimiento de largo plazo de la economía.22 
+Siguiendo con el orden propuesto al principio del apartado, a continuaci se presentará una visi general de diferentes modelos de crecimiento endeno en los que ha incorporado el impacto del sector financiero: 
+Greenwood y Jovanovic (1991) suponen que la economía está sujeta a choques agregados no observados. El intermediario financiero es modelado como una agencia que investiga estos choques y vende la informaci sobre los mismos a los agentes privados. Aquí el intermediario financiero permite una mejor 
+22 Paradicamente, casi ning trabajo ha intentado comprender los determinantes de la tasa de descuento y de la elasticidad de sustituci intertemporal. Hay que notar que si se tuviera la posibilidad de saber por qué algunos países son más impacientes o más dispuestos a sustituir el consumo intertemporal que otros. seria posible saber qué determina el crecimiento de largo plazo dado el rendimiento de la inversi A•. Los parámetros en la funci de utilidad; sin embargo, siempre han sido tomados como dados y por lo tanto no sujetos a acciones de política. Véase Sala-i-Martin (1990, p.2-3). 
+asignaci de los recursos en la economía con lo que estimula la acumulaci de capital y el crecimiento. Por otro lado, como consecuencia del crecimiento econico los inversionistas incrementan su participaci en los mercados financieros: los proyectos de inversi que serían de cualquier modo autofinanciados son ahora financiados por los intermediarios. Este modelo implica que la correlaci empírica entre el tama de la intermediaci financiera y el crecimiento puede ser explicada como una relaci causal en ambos sentidos. 
+En Bencivenga y Smith (1991) la incertidumbre en la economía (que conduce al surgimiento de la intermediaci financiera) se deriva de la existencia de la idea de un choque de liquidez. El surgimiento de intermediarios financieros, en la forma de bancos comerciales que crean depitos, permite mezclar el riesgo de liquidez. Más a, la existencia de bancos permite una mejor asignaci de los ahorros dado que los agentes pueden ahora invertir tanto en proyectos riesgosos, que son altamente ilíquidos, y en depitos bancarios, que son sumamente líquidos pero que producen una tasa de rendimiento menor esperado. 
+Saint-Paul (1990) argumenta que el desarrollo financiero permite a las economías usar tecnologías más especializadas y riesgosas. Por lo tanto no solo el desarrollo financiero permite el crecimiento econico sino que el crecimiento econico incrementa los incentivos para el desarrollo financiero. El modelo despliega un equilibrio mtiple en el sentido de que los países pobres están estancados con bajos niveles de crecimiento y bajos niveles de desarrollo financiero, que detienen circularmente el crecimiento. 
+Finalmente, en un trabajo reciente, Roubini y Sala-i-Martin (1991) construyeron un modelo de represi financiera y crecimiento que estudia los efectos de las políticas de represi financiera en el crecimiento de largo plazo. El modelo tiene la capacidad de explicar por qué los gobiernos optimizadores desean reprimir al sector financiero a pesar de que dicha represi conduce a tasas de crecimiento más bajas. Su punto de vista es que la raz más importante por la que los gobiernos se colocan en el camino de los intermediarios financieros es que el sector financiero es una fuente potencial de recursos fáciles para el presupuesto plico. En el modelo, el gobierno tiene la opci y capacidad de no permitir al sector financiero operar a capacidad plena mediante la introducci de toda clase de regulaciones, leyes y diversas restricciones al comportamiento de los bancos privados y otros intermediarios. Los ingresos plicos provenientes de estas fuentes son modelados como impuesto inflacionario. Este modelo. como todos los modelos de demanda de dinero, tiene la implicaci de que un mayor desarrollo financiero (que puede ser interpretado como una reducci en los costos de transacci de convertir activos ilíquidos en líquidos) reduce las necesidades de la gente de poseer dinero. Así, si el gobierno permite el desarrollo financiero. también verá que la base impositiva, y más a, la oportunidad de colectar sereaje, se reduce. En el entendido de que el sector financiero incrementa la eficiencia de la economía (esto es, incrementa el producto dada una cantidad de insumos) la decisi sobre el grado de sofisticaci financiera tendrá efectos reales sobre el nivel de producto y sobre el producto marginal de capital y con ello habrá efectos sobre el crecimiento de estado estable. 
+Ellos modelan el lado de la producci de la economía con un modelo simple g(A)K de tecnología lineal, como el presentado al principio de esta secci. Suponen que el parámetro A está relacionado con el nivel de desarrollo financiero. Piensan que el sector financiero, al incrementar la eficiencia microeconica de toda la economía, mejora la relaci entre el ahorro y la inversi, lo que contribuye a la eficiente asignaci del acervo de capital y a su mejor uso, esto también ayuda a recolectar y mostrar informaci (en un mundo de informaci costosa e imperfecta los individuos pueden no saber quién quiere pedir o prestar). Más a, si la intermediaci financiera es muy costosa, los empresarios privados son forzados al autofinanciamiento de sus proyectos de inversi. Desde el punto de vista de una funci de producci agregada o macroeconica, todo esto significa que las economías financieramente más desarrolladas están en posibilidades de transformar un monto de insumos dado, K, en un monto de producto mayor, Y. 
+Para explicar por qué los gobiernos desean reprimir al sector financiero, a pesar de los efectos negativos para el crecimiento, ellos consideran el comportamiento del gobierno mediante el siguiente ejercicio: 
+La restricci presupuesta! del gobierno implica que el gasto plico y las transferencias son financiadas con impuestos al ingreso (con una tasa impositiva constante t) y sereaje. 
+Incorporando la posibilidad de evadir los impuestos, "suponga por un instante que la recolecci de impuestos sobre el ingreso no es trk sino, tc;(rk,t), donde s es una funci no lineal de los ingresos y las tasas impositivas que reflejan la evasi fiscal, es posible pensar en e;( ) como el ingreso que es reportado al gobierno que es una funci positiva del ingreso pero una funci negativa de la tasa impositiva. Diferentes paises tienen diferentes funciones e;( ) que producen 
+distintas eficiencias en la recaudaci de impuestos al ingreso y diferentes actitudes privadas con respecto al ingreso privado reportado. 
+Ahora, suponiendo que el gobierno, a través de la regulaci u otras formas de intervenci, puede controlar el grado de desarrollo financiero, (A). Dada una tasa de crecimiento del dinero, una tasa de impuestos sobre el ingreso y una funci de evasi fiscal ½( ). el gobierno enfrenta un intercambio entre la tasa de inflaci y la tasa de impuestos al ingreso. Por un lado, el desarrollo financiero incrementa el ingreso y por lo tanto incrementa la base gravable. Por otro lado, éste decrementa la demanda real de dinero y, por lo tanto, la base del impuesto inflacionario. Puede demostrarse que los países con e;·( ) cerca de cero, esto es, países en los cuales los cambios en el ingreso no llevan a grandes cambios en el ingreso reportado (con amplia evasi fiscal), pueden de manera tima decidirse por reprimir al sector financiero con el objetivo de expandir la demanda de dinero y de incrementar la tasa de crecimiento del dinero"23. 
+En este modelo el sereaje depende claramente del grado de desarrollo financiero, A, a través de diferentes canales. Bajo algunas condiciones generales, puede demostrarse que las tenencias reales de dinero per cápita son una funci decreciente del nivel de desarrollo financiero. 
+En resumen, para incrementar el ingreso proveniente de la creaci monetaria los gobiernos sujetos a una gran evasi fiscal eligen incrementar la demanda real de dinero per cápita mediante la represi del sector financiero. Esta política tenderá a reducir el monto total de los servicios que el sector financiero provee al conjunto de la economía; dado un acervo total de insumos, el monto total de producto se verá disminuido, esto reducirá el producto marginal del capital y, consecuentemente, la tasa de estado estable de crecimiento. 
+23 Xala-i-Martin (1991 , p. 13). 
+El ejemplo explicado tiene las siguientes implicaciones empíricas: los países que son financieramente reprimidos tendrán mayores tasas de in11aci, menores tasas reales de interés, una mayor base monetaria per cápita y un menor crecimiento per cápita que los países que están financieramente desarrollados. 
+11. Experiencias de Desregulaci Financiera. 
+11.1 Innovaci financiera y desregulaci en los países desarrollados. 
+Desde comienzos de los as setenta los países industriales han experimentado un profundo cambio en la estructura y funcionamiento de sus mercados financieros y monetarios como producto. esencialmente, del denominado proceso de innovaci financiera. Las principales fuerzas que han originado este cambio son los avances tecnolicos, un mayor grado de competencia nacional e internacional en el sector financiero y la respuesta de dicho sector ante tres situaciones nuevas: elevadas y fluctuantes tasas de interés e inflaci, crecientes requerimientos financieros provenientes de los gobiernos y el impacto de la flotaci bancaria. Estas fuerzas motivaron el progresivo desmantelamiento de regulaciones y controles a la actividad monetario-financiera. 
+Por su parte, la desregulaci también ha ejercido una importante influencia sobre las innovaciones financieras, si bien en algunos países aquella ha ido a la zaga de éstas, y les ha dado un carácter más sistemático y permanente. 
+El proceso desregulatorio se ha concentrado en la eliminaci o sustancial reducci de controles selectivos al crédito bancario; en la liberalizaci de los topes a las tasas de interés y, en varios países industrializados, en la supresi de las barreras a la entrada y de los impedimentos a la expansi y diversificaci de las operaciones bancarias. 
+Los abultados déficit fiscales de los países industriales en as recientes contribuyeron notablemente al desarrollo de nuevas técnicas e instrumentos financieros. En esencia, el problema es que la colocaci de más títulos de deuda plica requiere de elevar la tasa de interés. De no mediar cambios en las regulaciones, orientados a dar una mayor flexibilidad del sistema bancario, se hubiera presentado un importante grado de desintermediaci financiera bancaria, ante el acelerado desarrollo de los mercados financieros no bancarios. 
+Por otra parte, "el uso generalizado de la flotaci cambiaria y su relaci con los movimientos en la tasa de interés, ha sido una fuente adicional de incertidumbre y riesgo que ha afectado la operaci de los mercados financieros. Para enfrentarlos se ha hecho necesario desarrollar técnicas e instrumentos tendientes a reducir el riesgo cambiario y a diversificar la cartera de préstamos para minimizar los posibles efectos de los desfases de monedas entre activos y pasivos"1. 
+No obstante que el proceso de desregulaci financiera va orientado a estimular una intermediaci financiera más eficiente, los resultados obtenidos en algunos países desarrollados que la implementaron muestran la existencia de fallas en el funcionamiento del sistema, que aumentan la probabilidad de crisis financieras. Lo anterior debido a que se pueden presentar efectos desestabilizadores sobre la liquidez y la solvencia del sistema financiero. Especialmente, los temas de mayor preocupaci para los países desarrollados en torno a los efectos desregulatorios son cinco: 
+1) El creciente riesgo de las operaciones financieras, debido a la mayor volatilidad en las condiciones que afectan a los mercados crediticios y a la presencia del seguro de depitos, en combinaci con una creciente liberalizaci en el manejo de activos financieros. 
+2) El hecho de que gran nero de intermediarios financieros -y sus productos y servicios-no están siendo adecuadamente regulados o supervisados. 
+3) La vulnerabilidad de las instituciones financieras, originada en la fuerte reducci de los márgenes entre las tasas activas y pasivas, que a su vez ha propiciado la caída de su rentabilidad. 
+4) La presencia de firmas no financieras en campos tradicionalmente cubiertos por los bancos, las cuales no están sujetas a las mismas regulaciones que aquellos, afectando por esta vía a la rentabilidad bancaria y generando preocupaci por la necesidad de un manejo prudente. 
+1 Zhaler(1986, p. 196). 
+5) La tendencia a que la economía en su conjunto se endeude excesivamente en relaci a su capital y a la capacidad de generar los flujos de ingresos futuros requeridos para servir dicha deuda. 
+La reacci de estos países ante los problemas que afectan sus sistemas financieros desregulados ha sido intentar reorientar las prácticas actuales de regulaci y supervisi, reforzándolas y adaptándolas a las nuevas circunstancias. Este proceder se ha convertido en una recomendaci general pronunciada por instituciones como el Fondo Monetario lnternaciona12 y el Banco Mundial. 
+11.2 La experiencia en los países subdesarrollados. 
+En los as setenta se generel consenso en torno a que las políticas monetaria, fiscal, financiera y crediticia que se instrumentaron en América Latina y otras regiones en desarrollo desde fines de la Segunda Guerra Mundial tendieron a reprimir el desarrollo del mercado de capitales y a provocar que el sistema bancario constituyera prácticamente el total del sistema financiero. Esta situaci fue producto, principalmente, del control de las tasas reales de interés -que las mantuvo a niveles muy bajos e incluso negativos-; de la determinaci de tasas de encaje legal elevadas -con gran dispersi seg el tipo de depito y de instituci financiera-; de controles de los montos y condiciones de los préstamos bancarios y, de las barreras a la entrada de nuevas instituciones financieras. 
+Varias fueron las razones que se argumentaron en torno a la necesidad de establecer estas políticas financieras, entre ellas se cuentan la discrepancia entre la evaluaci social y privada del uso de los recursos financieros y la necesidad de mantener una tasa de interés baja para estimular la inversi. Sin embargo, se coincide con la opini de que, en la práctica, la necesidad de financiamiento del sector plico fue la causa principal de la creciente intervenci oficial sobre el sistema financiero. 
+2 Aguirre (1993, pp. 25-32). 
+En efecto, "ha sido tradicional que en los países de la regi el sector plico recurra al financiamiento proveniente de la banca central a través de la expansi de la base monetaria. Pero además ha obtenido recursos del sistema financiero a través del incremento en las tasas de encaje legal y requiriendo de las instituciones financieras la compra obligatoria de títulos plicos a tasas de interés inferiores a las del mercado".3 
+Adicionalmente, la generalizaci de la inflaci, las presiones fiscales sobre el sistema financiero, la insuficiencia e ineficiencia del proceso de ahorro-inversi, -sobre todo en el sector privado-y las abundantes críticas a las tasas de interés reales negativas, motivaron a principios de los as setenta la producci de abundante literatura que promovila liberalizaci y la profundizaci financiera (que ha sido discutida en el capítulo I del presente trabajo) y a partir de la cual, durante los as setenta y ochenta, en varios países subdesarrollados se implementaron políticas en ese sentido; no obstante, existen amplias controversias sobre sus resultados, tanto en lo que se refiere al propio impacto solJre el sector como a la influencia sobre el crecimiento econico. 
+Por lo que toca al primer aspecto, la experiencia muestra una amplia variaci dependiendo de cada caso, así, se va de situaciones con un éxito relativo en el desarrollo del sistema financiero, como en el caso espal, y a otras en donde se presentuna importante crisis financiera, como en Argentina y Chile. 
+Sin embargo, parece existir consenso en que fue la forma como se aplicaron las políticas de liberalizaci del sistema financiero y no éstas en sí mismas la que lleva los resultados negativos en algunos países como son los ya citados. 
+Esto es, se afirma que para llevar a cabo un proceso de liberalizaci del sistema financiero se deben seguir algunos principios básicos tanto de orden macroeconico como microeconico, los cuales no fueron aplicados en esos países. 
+En cuanto a los aspectos macroeconicos, el orden en el que las políticas fiscal, comercial, monetaria y de tipo de cambio son implementadas toma una gran 
+3 Zhaler, ídem. p 198. 
+importancia en el proceso de transici de una economía reprimida a una liberalizada. 
+La estabilidad econica, a través de la implementaci de políticas consistentes para el control de las finanzas plicas y de la inflaci, es una condici necesaria para eliminar la represi sobre los procesos financieros. So mediante ésta es posible eliminar los incentivos por parte del gobierno a financiarse a través del sistema financiero, a través del control de las tasas de interés como instrumento para mantener bajo el servicio de la deuda, la imposici de altos requerimientos de reservas en el banco central que den acceso a préstamos directos y el uso del impuesto inflacionario, etc. 
+En cuanto a los aspectos microeconicos destaca la adecuada regulaci y supervisi bancarias, que permitan la detecci del mal manejo en los bancos. ya sea por la falta de cuidado en la minimizaci del riesgo implícito en las operaciones bancarias o por la falta de informaci que permita el adecuado diagntico del ambiente macroeconico en el que las instituciones se encuentran operando4. 
+Sin embargo, se debe incistir en que -seg lo visto en el capitulo 1 -, no se ha demostrado una correlaci clara entre la profundizaci financiera y el crecimiento econico, existiendo también variaciones seg el país de que se trate. Al respecto, resulta importante el trabajo de Robert Barro5 quien encuentra una relaci importante, a través del análisis de regresi cruzada para varios países subdesarrollados, entre el nivel de las tasas de interés reales y el crecimiento econico, concluyendo que los países con tasas reales de interés positivas han sostenido tasas positivas de crecimiento econico. Los resultados son similares a los de McKinnon, por lo que sigue abierto el camino para un análisis más profundo de la causalidad de la mencionada relaci. 
+No obstante, se sef\alan una serie de efectos adversos ocurridos en aquellos países que iniciaron el proceso de liberalizaci financiera, pero que no establecieron las condiciones macro y micro econicas para llevarlo a cabo: 
+4 Thorne (1988, pp. 39). 5 Barro (1986, pp. 437-438). 
+-Uno de los principales efectos de las reformas financieras fue revalorizar los activos financieros ya existentes en lugar de crear nuevas fuentes de riqueza. Esto significgenerar fuertes ganancias de capital e incrementar el valor percibido de la riqueza. Con ello el impacto de las reformas financieras sobre los acervos predominsobre el de los flujos, lo que no so generefectos redistributivos regresivos, sino que atenten contra de los proyectos de inversi real. 
+-El ahorro global no aumentdebido a la existencia de políticas macroeconicas que estimularon el ahorro externo en vez del doméstico. 
+-Por otro lado, la liberalizaci financiera alterel vínculo entre ahorro e inversi. En efecto, el ahorro financiero puede no transformarse en inversi, si es que los recursos captados por el sistema financiero se asignan hacia gastos en consumo. 
+En relaci con este timo punto, una de las tendencias más importantes que se observan en algunos países subdesarrollados, como consecuencia de haber intentado implementar las políticas de liberalizaci y profundizaci financieras, es que, se pasde un sistema financiero reprimido a uno cuasiquebrado. El primero se caracterizaba por tasas de interés reales negativas y el segundo por tasas de interés tan elevadas que terminaron no solo por deprimir la inversi sino que afectaron negativamente la capacidad y viablidad de servir la deuda de una parte importante de las empresas productivas y, consecuentemente, la estabilidad y solidez del sistema financiero. 
+Por lo tanto, si bien la presencia de tasas reales negativas perjudica a los depositantes y desestimula el ahorro financiero, tasas de interés reales positivas elevadas sobre los depitos pueden tener un impacto negativo sobre el proceso de acumulaci de capital y sobre la estabilidad del sistema financiero, ya sea debido a políticas macroeconicas inconsistentes y/o sistemas financieros ineficientes, con elevados costos de intermediaci -o por causas endenas a la actividad financiera y/o por acci u omisi de la autoridad monetaria y supervisora6. 
+6 Zhaler. op. cit., p. 201 
+De este modo, se sela que la liberalizaci financiera implementada en la mayoría de los países subdesarrollados tuvo los resultados que se presentan a continuaci: 
+-Al implementarse en un ambiente inflacionario, estimulel desarrollo de un mercado de capitales de muy corto plazo. Cuanto más alta y errática es la inflaci se hace más costoso y complicado poner de acuerdo a los prestamistas y prestatarios en torno a una com tasa de inflaci esperada, lo que tiende a reducir el plazo de los préstamos. Vinculado a lo anterior está el plazo de los ahorros, por cuanto las expectativas y el riesgo de los ahorradores tienden a favorecer los instrumentos de mayor liquidez. 
+La excesiva importancia y facilidad otorgada al ahorro financiero de cortísimo plazo dificultel otorgamiento por parte de la banca comercial de préstamos de más largo periodo. En efecto, el riesgo para los bancos de transformar pasivos de corto plazo en activos de largo plazo se incrementa si, como ocurrien el pasado reciente, el interés efectivamente recibido por los activos bancarios crece menos rápidamente que el que debe pagar por sus pasivos. Ello induce que los préstamos de largo plazo so se perfeccionen a través de la renovaci continua de créditos a tasas de interés variables, lo que tiende a reducir el plazo efectivo de los préstamos, afectando la capacidad de pago de los deudores, y generando inestabilidad en los sectores real y financiero, la que tiende a agudizarse en periodos recesivos y/o en que el crédito se restringe fuertemente. 
+-En algunos países la liberalizaci financiera, en lugar de promover una mayor competencia entre los intermediarios financieros, tendia acentuar el poder monopico que confiere el crédito, al hacer al sector real más dependiente de éste. A través de la relaci entre empresas no bancarias y el sistema financiero, al incentivar fuertemente la actividad especulativa -en la cual el valor de los préstamos se asocia al valor de las ganancias de capital esperadas y no con su rentabilidad operacional normal-se contribuyal dislocamiento de la actividad productiva. 
+111. El Sistema Bancario Comercial Mexicano. 
+En este capítulo se realizará un breve análisis de la evoluci del sistema bancario mexicano, desde su conformaci en 1925 hasta 1992, a en que concluyel proceso de reprivatizaci de la banca comercial o mtiple. El objetivo es contrastar el marco regulatorio sobre el cual tradicionalmente ha funcionado el sistema, con la implementaci -a partir de 1988-de una serie de políticas de liberalizaci financiera. 
+A lo largo de su historia, el sistema financiero mexicano -conformado principalmente por el sistema bancario-ha sido sujeto de fuertes medidas regulatorias al estilo de las mencionadas en el capítulo I de este trabajo (controles selectivos del crédito, altos requerimientos de encaje legal y fijaci exena de las tasas de interés). 
+Es aceptado que este tipo de regulaci fue compatible con la política econica seguida, principalmente, durante la etapa del desarrollo estabilizador mexicano, ya que a la par del crecimiento econico se dio un proceso de profundizaci financiera, pero no lo fue con la política econica de los as setenta, que estuvo fuertemente ligada al financiamiento deficitario del gasto plico 1. 
+A finales de los as ochenta se iniciun proceso de liberalizaci bancaria, como continuaci del proyecto de liberalizaci econica; el objetivo fue impulsar el desarrollo financiero para a su vez promover el crecimiento econico debido a que, seg las autoridades financieras mexicanas, existen condiciones para que a través de la liberalizaci financiera se incremente el ahorro, y por medio de los intermediarios se canalicen los recursos hacia mejores oportunidades de inversi productiva2. 
+Así, la intenci es construir un marco de referencia para la discusi de los efectos inmediatos que han tenido las medidas de desregulaci, principalmente en lo referente a la liberalizaci de las tasas de interés, sobre el comportamiento del ahorro y el otorgamiento de créditos al sector privado. 
+1 Aspe (1993, pp.66}. 2 ldem. p. 71. 
+111. 1 Antecedentes (1925-1941). 
+Al término de la Revoluci Mexicana, el rudimentario sistema financiero heredado del porfiriato se encontraba destruido casi en su totalidad; de ahí que la fundaci del Banco de México en 1925 significun paso muy importante en la formaci de un sistema financiero moderno. "En contraposici con la mayoría de las naciones occidentales industrializadas, en las que el banco central surgipara coordinar un sistema monetario ya establecido, en nuestro país esa instituci fue una de las primeras que constituyeron el sistema. De hecho, la funci de las autoridades monetarias sería no so coordinar y controlar el sistema financiero a través del banco central, sino también participar en la formaci misma del marco institucional financiero ...3 En estas circunstancias, al igual que en el resto de los países subdesarrollados, el sistema bancario se convirtidesde su inicio en la parte principal de la estructura financiera mexicana. 
+Al iniciar sus operaciones como banca central, el Banco de México afrontdos serios problemas: la desconfianza del plico hacia los procesos financieros en general, debido a las experiencias del período revolucionario, y la falta de instituciones y de mercados financieros, factor que causserias dificultades durante los primeros as de vida del banco. Baste selar que hasta principios de los treintas no se había generalizado la circulaci de billetes, y que a fines de la década el banco central no había logrado el control efectivo sobre la regulaci del sistema bancario. 
+Durante ese decenio, se presentaron en la economía mexicana dos eventos que llevarían a la consolidaci del sistema financiero nacional, debido al impacto que tuvieron en la elaboraci de su marco regulatorio: 
+1) El considerable deterioro experimentado por las cuentas externas del país hasta 1931, el cual repercutien la disminuci de la actividad econica así como en una continua pérdida de reservas de oro. 
+3 Solis (1984, p. 533). 
+2) La aceptaci por parte del gobierno de Estados Unidos de que la deuda contraída por los diferentes países europeos durante la Primera Guerra Mundial se liquidara con pagos en plata. 
+En cuanto al primer evento, las autoridades mexicanas realizaron una reforma monetaria conocida como la "Ley Calles", que fue promulgada el 25 de julio de 1931. Entre las medidas que fijaba esta ley, la más importante fue la desmonetizaci del oro y la prohibici del uso de este metal en los contratos comerciales, exceptuando los de carácter internacional. Además se suspendieron las acuciones de monedas de plata, icas autorizadas para circular. 
+Como resultado de esta medida, "la oferta monetaria en circulaci se redujo en 1931 en 60%, lo cual se tradujo en que la captaci del sistema bancario comercial disminuyera en 40%"4. La menor disponibilidad de recursos financieros provocque el crédito bancario se contrajera . 
+Las anteriores circunstancias justificaron el decreto de cuatro nuevas leyes en 1932: 
+-Una nueva Ley Monetaria -que derogLa Ley Calles-, con el objetivo de permitir nuevamente la acuci de monedas de plata. 
+-La nueva Ley Constitutiva del Banco de México, que reemplaza la de 1925. En ella se confirmaba la prohibici al Banco de México de realizar operaciones directamente con el plico, haciendo de éste un verdadero banco central. 
+-La Ley de Instituciones Generales de Crédito, en la que se permitique cualquier tipo de banco realizara todas las operaciones permitidas y en la que se obliga aquellos bancos que realizaran depitos a la vista o a plazos hasta de 30 días a asociarse al Banco de México, por lo cual el nero de instituciones asociadas en 1932 pasde 14 a 62, fortaleciéndose así el sistema bancario mexicano. 
+4 CIDAC (1990. p.18). 
+-La Ley de Títulos y Operaciones de Crédito. En esta ley se da el antecedente de lo que después sería el control selectivo del crédito, al facultar al Banco de México para decidir qué tipo de títulos eran sujetos a redescuento; con lo cual exenamente se podía dar preferencia a ciertas ramas de la actividad econica. 
+Los resultados de estas cuatro leyes se dejaron sentir inmediatamente en los siguientes aspectos: 
+-Con un mayor nero de bancos asociados y una regulaci que permitiel redescuento de documentos de hasta 180 días; aumentla participaci de los billetes en la oferta monetaria, de 0.4% en 1931 a 18.4% en 1934 y, se incrementla penetraci bancaria en la economía, de 3.3% en 1931 a 4.8% en 1934, permitiendo con ello el otorgamiento de un mayor crédito a las actividades productivas. 
+-Al amparo de la Ley de Instituciones de Crédito de 1932, y hasta 1941, surgieron 63 nuevas instituciones financieras privadas, de las cuales 28 fueron bancos de depito y ahorro y 35 se constituyeron como financieras, bancos capitalizadores e hipotecarios. 5 
+En cuanto al segundo evento, la decisi de los Estados Unidos de que la cuarta parte de su reserva se constituyera en plata provocun aumento inusitado del precio de dicho metal en 1935. Para México las monedas de plata tomaron un mayor valor como mercancía que como dinero; por otra parte, debido a las salidas de plata y para evitar una devaluaci, se reformla Ley Constitutiva del Banco de México, mediante la cual se desmonetizaba la plata, sustituyéndose las monedas de este metal por billetes del Banco de México, con poder liberatorio ilimitado y libre convertibilidad a otras divisas. 
+No obstante, a finales de 1935 la situaci ya había cambiado, por lo que se reformíntegramente la ley que regía el funcionamiento del Banco de México. Adicionalmente, el 28 de agosto de 1936 se expidiuna nueva Ley Orgánica del instituto central. En ella, destacan tres asuntos de importancia: la relaci del 
+5 ldem. p.19. 
+Banco de México y las instituciones bancarias, la relaci entre el Banco de México y el Gobierno Federal y lo concerniente a la emisi de dinero. 
+La relaci del Banco de México y el resto del sistema financiero se reglament principalmente, en los siguientes artículos: 
+Articulo 8. En él se selaba que todas las instituciones nacionales de crédito y las sociedades mexicanas que tuvieran la concesi del Gobierno Federal para recibir depitos bancarios a la vista, o emitir bonos de caja, estaban obligados a asociarse al Banco de México. Con ello se integra todas las instituciones en un sistema bancario coherente. 
+Artículo 38. Se refería a las operaciones de descuento que las instituciones de crédito podían realizar en el Banco de México, estableciéndose las pautas a seguir en la concesi de crédito. 
+Artículo 73. Selaba las obligaciones de las instituciones bancarias en relaci con el encaje legal, pudiéndose aplicar tasas de encaje diferenciadas por tipo de instrumento de captaci o por zonas geográficas. Las tasas de encaje diferenciadas, junto con las prerrogativas sobre el redescuento de documentos, permitieron al Banco de México aplicar un control selectivo del crédito, en detrimento del control monetario y de un funcionamiento eficiente de las diferentes actividades productivas, al limitar a la banca el tipo de crédito que podía otorgar. 
+En cuanto a las relaciones entre el Banco de México y el Gobierno Federal, la exposici de motivos de la Ley establecía que "en una reiteraci del principio de autonomía del banco, como instituci destinada a servir a intereses nacionales permanentes, y que no puede, por ello, volverse, en caso alguno, un instrumento de acci para atender necesidades políticas o financieras extraordinarias del gobierno"6. 
+Sin embargo, hasta 1941 se dio el paso definitivo para la consolidaci del sistema financiero mexicano con la promulgaci de la Ley General de 
+6 ldem. p. 21 . 
+Instituciones de Crédito y Organizaciones Auxiliares, la cual. con numerosas modificaciones, estuvo en vigor hasta 1984. 
+De las regulaciones financieras seladas en esta Ley de 1941, se pueden desprender tres conclusiones principales: en primer término, el sector bancario sería el principal componente del sistema financiero, mientras que el resto de los intermediarios tendrían un papel secundario; la segunda, que los controles selectivos del crédito serían una práctica com, con todas las implicaciones que esto tiene y, la tercera, que debido a que las tasas de interés pasivas eran determinadas exenamente por el Banco de México, existiendo por tanto la garantía de recompra, todo el saldo de captaci bancaria sería sumamente líquido. Además, al ser el Banco de México el prestamista de tima instancia para el sistema bancario, comercial y de desarrollo, toda la captaci del plico era en potencia base monetaria, lo cual podía poner en riesgo los objetivos de la política monetaria, principalmente la estabilidad de los precios y el tipo de cambio. 7 
+111. 2 Evoluci de la banca comercial (1940-1982). 
+Período 1940-1960. 
+En esta etapa aumentsustancialmente el nero de instituciones de crédito de diversa especie -especialmente entre 1940 y 1950-. En el cuadro 1 se muestra el incremento de las instituciones de crédito privadas que conformaban el sistema bancario comercial. Como se observa, si bien el nero de entidades aumentconsiderablemente durante el período, fue todavía más importante el aumento de las sucursales y agencias, lo que propicique para 1960 la mayor parte de los prestatarios y prestamistas en todo el país tuvieran acceso, a través de intermediarios, al mercado de dinero y capitales8. 
+7 Martinez (1991, pp.1-20). 8 Brothers y Solis (1967. pp. 44). 
+Cuadro 1 INSTITUCIONES DE CREDITO PRIVADA, 1940-1960 Nero de Instituciones 
+1940 1950 1955 1960 
+Sistema Bancario  
+Bancos de depito  61  106  106  102  
+Bancos de ahorro  6  85  100  108  
+Sociedad financieras  29  96  92  98  
+Instituciones fiduciarias  8  91  99  113  
+Bancos hipotecarios  2  20  24  26  
+Bancos de capitalizaci  8  16  16  12  
+Soc. de ahorro y préstamo  o  o  4  3  
+Sucursales y agencias  61  846  1,146  2,346  
+
+Fuente: Brothers y Solis (1967, p. 43). 
+Durante el decenio iniciado en 1940, los depitos a la vista y las cuentas de ahorro constituyeron los medios principales de captaci de fondos provenientes del plico, mientras los créditos del sistema bancario se otorgaban en gran parte en forma de préstamos y descuentos comerciales. El importante crecimiento de otras instituciones de crédito privadas entre 1950 -1959 estuvo asociado a una mayor utilizaci de instrumentos tales como bonos financieros y obligaciones a plazo, como medios para captar fondos, en tanto que el activo de los intermediarios financieros consistía cada vez más en créditos de habilitaci y avío, refaccionarios y otros créditos a plazo fijo. 
+En el período, las instituciones financieras privadas fueron la fuente principal de los instrumentos empleados para captar fondos prestables en el mercado interno. A estas instituciones correspondieron prácticamente todos los depitos en cuentas de cheques y de ahorros, y más de la mitad de la obligaciones a la vista y a plazo de todas las instituciones del sistema bancario. 
+Por su parte, la característica más importante de los instrumentos financieros utilizados fue su alto grado de liquidez. Los prestamistas manifestaban una gran preferencia por activos financieros líquidos y, por lo tanto, con el fin de movilizar los fondos necesarios para financiar el gasto deficitario en los sectores plico y privado, las instituciones financieras y otros prestatarios se ajustaron a esta preferencia. La liquidez de las obligaciones de las instituciones financieras y de las empresas más importantes estuvo garantizada por el Banco de México y Nacional Financiera, y en timo término, por el Gobierno Federal. 
+Asimismo, la preferencia del mercado por activos financieros líquidos fue intensificada por el largo período de inflaci, que durdesde los treinta hasta mediados de los cincuenta. Tanto las unidades familiares como las empresas se dieron cuenta de que la propiedad de bienes proporcionaba el mejor medio de protecci contra un nivel de precios al alza y, por consiguiente, consideraron deseables so activos financieros de los que podía disponerse con facilidad para la compra de bienes. 
+No obstante, como argumenta Leopoldo Solís9, la preferencia por la liquidez no fue absoluta ni insensible a las diferencias de rendimiento, ya que el volumen de diversos tipos de tenencias a cargo de instituciones financieras y otros prestatarios aumenten forma regular durante el período. Lo anterior se aprecia en estructura de obligaciones del sistema bancario presentada en el siguiente cuadro: 
+Cuadro 2 OBLIGACIONES DE LAS INSTITUCIONES DEL SISTEMA BANCARIO 1940-1960 (Porciento del total) 
+1940 1950 1955 1960 
+Denominados en pesos 
+Moneda metálica y billetes 41 . 9 27.4 22.7 18.4 Cuentas de cheques 23.5 28.9 24.2 21 .2 Depitos de ahorro 2.2 5 5.4 5.4 Oblig. a la vista y a plazo 9.6 6.7 11.9 15.6 Valores 14.8 18.2 16.5 13.5 Otras 2.7 3.6 2.6 1.9 
+Fuente: Brothers y Solís (op.cit.53) 
+9 Op. cit.. p. 50. 
+Los depitos en cuenta de cheques, constituyeron una proporci relativamente constante de las obligaciones totales de las instituciones que conformaban el sistema bancario. Sin embargo, la proporci de dichas cuentas sobre el total del medio circulante pasde 37.6% en 1940 a 53.4% en 1960.10, lo cual fue reflejde la creciente confianza del plico en los procesos bancarios. y del aumento numérico acompar'lado de una mayor dispersi geográfica de los bancos comerciales y sus sucursales. 
+La proporci de endeudamiento del sistema bancario, representada por los depitos de ahorro, aumentdurante el período, pasando de 2.2% del total en 1940 a 5.4% en 1960. Pese a que la tasa de interés pagadera por depitos de ahorro se mantuvo en un nivel bastante bajo (4.5% para depitos en moneda nacional y 3% para moneda extranjera), fue suficiente para atraer los fondos excedentes de ciertos tipos de ahorradores. 
+Al parecer, la fuente principal de depitos de ahorro estuvo constituida por los peques ahorradores, que desconocían o no podían obtener instrumentos con un rendimiento más elevado. Los depitos de ahorro fueron un medio particularmente eficaz para movilizar fondos de peques ahorradores en provincia, en donde el acceso principal al mercado de dinero y capitales lo proporcionaban los bancos de depito y ahorro y sus sucursales. 
+Otros dos instrumentos de gran importancia para la captaci de recursos fueron los préstamos recibidos por las empresas y particulares a cambio de pagarés y las aceptaciones emitidas con garantía de las instituciones financieras, mismas que se incluyen en el rubro de obligaciones a la vista y a plazo del cuadro anterior y que, como se observa, aumentaron de 9.6% a 15.6% en el período estudiado. 
+Finalmente, debe considerarse, a partir del análisis anterior, que la preferencia de los ahorradores por la liquidez se reflejen el pasivo de las instituciones intermediarias, y el carácter de este pasivo rigien medida considerable los tipos de créditos concedidos a los prestatarios. El grueso de los fondos movilizados procedentes de los ahorradores internos privados, que se canalizaron a través del sistema bancario, se dedica préstamos a corto plazo, y en consecuencia una 
+1Oldem. p. 52. 
+gran parte de la formaci de capital se financicon los fondos internos de la unidad inversionista, o con fondos plicos o créditos del extranjero. 
+Período 1960 a 1971. 
+Cuadro 3 TASAS REALES DE INTERES* 1960-1971 
+Bonos Pagarés Bonos financieros financieros** hipotecarios 
+1960 4.0 4.3 3.2 1961 7.3 7.6 6.5 1962 7.9 8.2 7.1 1963 8.3 8.6 7.5 1964 6.8 8.6 7.0 1965 5.3 5.6 4.5 1966 4.6 4.9 3.8 1967 6.0 6.3 5.2 1968 7.5 7.9 6.8 1969 5.5 5.9 4.6 1970 4.2 5.2 3.1 1971 3.5 3.9 2.8 
+* Tasa neta de interés para personas físicas. ** Sobre depitos de más de un mill de pesos. 
+Fuente: Banco de México.Indicadores Econicos. 
+De 1960 a 1971 el sistema bancario experimenttasas aceleradas de crecimiento, aumentando en consecuencia el grado de penetraci en la economía. Los dos elementos básicos responsables de la evoluci del sistema bancario durante este período fueron: 
+-La estabilidad econica que experimentla economía mexicana y que permitialtas tasas de crecimiento del ingreso real, durante ese lapso la tasa de inflaci fue icamente de 3.1 %, mientras que la tasa promedio anual de crecimiento del producto interno bruto fue de 6.9% . 
+-La política de tasas de interés que estableciel gobierno, y que estaba íntimamente ligada con el objetivo de estabilidad de precios, la cual se orienta pagar sobre los depitos bancarios tasas reales de interés positivas como se muestra en el cuadro 3. 
+Como se puede observar en el cuadro 4, la tasa real de interés pagada sobre los depitos al plico en el sistema bancario, en conjunci con las altas tasas de crecimiento que experimentel ingreso real de la poblaci, se tradujo en altas tasas de crecimiento de los activos no monetarios (captaci) mantenidos por el plico en el sistema bancario, aumentando con ello su penetraci en la economla mexicana. 
+Cuadro 4 ACTIVOS NO MONETARIOS EN PODER DEL PUBLICO EN EL SISTEMA BANCARIO 1960-1971 (miles de mlllones de pesos) 
+Activos no  Tasa real de  %  
+monetarios*  crecimiento  del PIB  
+1960  12.2  7.6  
+1961  14.8  19.3  8.5  
+1962  18.4  23.0  9.9  
+1963  22.7  22.5  10.9  
+1964  27.9  20.3  11 .4  
+1965  34.5  19.4  12.9  
+1966  44.4  23.4  14.9  
+1967  56.2  23.0  17.3  
+1968  67.1  17.8  18.7  
+1969  83.3  19.9  20.9  
+1970  101 .9  16.5  22.9  
+1971  118.8  10.6  24.2  
+
+* Saldos en pesos corrientes Fuente: Banco México. Indicadores Econicos. 
+A pesar del relativamente buen desempe del sistema financiero durante la década de los sesenta, existían ciertas caracteristicas semejantes a las del período anterior que lo hacían particularmente vulnerable a una potencial situaci de inestabilidad macroeconica. 
+En primer lugar, como ya se mencion el crecimiento del sistema financiero estuvo basado casi exclusivamente en el sistema bancario, mientras que el resto de las instituciones financieras se estancaron, presentándose además una concentraci de los depitos en unas cuantas instituciones bancarias. 
+En segundo lugar, los activos mantenidos por el plico en el sistema bancario, seguían siendo sumamente líquidos, y al ser el Banco de México el prestamista de tima instancia, éste se mantenía en una posici muy vulnerable, ya que todos los depitos eran potencialmente una fuente de expansi de la base monetaria. 
+Aunado a esto, al utilizar las reservas de los bancos comerciales para financiar el déficit gubernamental, el banco central requería de cambiar continuamente los porcentajes de encaje legal para el control de la oferta monetaria. 
+Por timo, otro elemento de gran importancia era que al estar fijo el tipo de cambio y haber libre convertibilidad el mercado financiero doméstico estaba íntimamente ligado al mercado financiero internacional. Ello significaba que las tasas de interés domésticas debieron estar alineadas con las externas, principalmente con los instrumentos denominados en dares; sin embargo, esta alineaci no se dio, en primera instancia, por dos factores: 
+-El primero de ellos fue que, con el fin de fomentar un mayor ahorro real las tasas reales de interés pasivas (domésticas), estas fueron mantenidas por arriba de las internacionales. 
+-El segundo elemento fue que la tasa de encaje legal -junto con las disposiciones de asignaci selectiva del crédito-en el mercado bancario doméstico empujaron al alza a las tasas activas de interés.11 
+11 CIDAC , op. cit .. p. 20. 
+Período 1972 a 1976. 
+Los problemas selados en párrafos anteriores no tuvieron gran relevancia mientras la economía se desenvolvien un clima de estabilidad . Sin embargo, cuando entren una etapa de vaivenes, el sistema financiero enfrentuna serie de problemas que lo llevaron a perder penetraci en la economía. 
+Se puede afirmar que la principal rigidez que enfrentel sistema financiero nacional fue la política de tasas de interés. Mientras que en los sesenta, con la estabilidad macroeconica las tasas de interés podían ser fijadas a un nivel que representara tasas reales positivas, incentivando el ahorro, a partir de 1972 cuando la política fiscal y, en consecuencia, la monetaria se volvieron expansivas, la respuesta de las tasas de interés fijadas exenamente fue lenta e insuficiente, resultando en tasas de interés reales negativas. 
+Cuadro 5 
+TASAS REALES DE INTERES* 
+1972-1976 
+Bonos Pagarés Bonos financieros financieros** hipotecarios 
+1972  3.1  4.2  2.7  
+1973  -3.1  -1 .7  -3.5  
+1974  -11.8  -9.3  -12.2  
+1975  -5.2  -2.1  -5.7  
+1976  -6.9  -2.7  -7.2  
+
+* Tasa neta de interés para personas físicas. 
+** Sobre depitos de más de un mill de pesos. Fuente: Banco de México. Indicadores Econicos. 
+De este modo, se sela que la existencia de una política rígida de tasas de interés ante el aumento de la inflaci, trajo las siguientes consecuencias: 
+-La reducci del saldo real de la captaci. 
+-El cambio en la estructura de la captaci hacia depitos de corto plazo y hacia depitos denominados en moneda extranjera. 
+Cuadro 6 ACTIVOS NO MONETARIOS EN PODER DEL PUBLICO EN EL SISTEMA BANCARIO 
+1972-1976 
+Activos  Denominados en  
+(%del PIB)  moneda extranjera  
+(%del total)  
+
+1972  24.5  3.3  
+1973  21.9  4.9  
+1974  19.5  3.9  
+1975  20.7  4.7  
+1976  17.5  17.5  
+
+Fuente: Banco de México. Indicadores Econicos. 
+-Conjuntamente con la expectativa de devaluaci se propiciuna creciente fuga de capitales, con serias consecuencias sobre los recursos financieros disponibles tanto para el sector privado como para el plico. 
+Por otro lado, como resultado de la politica fiscal expansionista, el déficit gubernamental alcanzniveles muy elevados, de tal manera que los recursos financieros canalizados por el sistema bancario no fueron suficientes, por lo que el sector plico recurrien forma creciente al endeudamiento externo, asi como a la utilizaci del impuesto inflacionario, lo que implicun deterioro importante para la economía mexicana. 
+Período 1977 a 1982. 
+Las rigideces del sistema financiero y el ambiente inflacionario, derivaron en una menor penetraci financiera en la economía, y como consecuencia de ello, las autoridades financieras empezaron a introducir cambios, buscando otorgarle mayor flexibilidad a dicho sector. 
+El primer paso se dio en 1976 cuando se iniciel proceso de consolidaci bancaria, esto es, la conformaci de la banca mtiple. Con este proceso se rompila liga entre el plazo de los depitos y el de los créditos, introduciendo así, un elemento de flexibilidad en la operaci bancaria. 
+Además, la conformaci de la banca mtiple cumplicon cuatro objetivos fundamentales que fueron: promover la desconcentraci bancaria; abatir los costos aprovechando economías de escala elevar la intermediaci, mediante el mejor aprovechamiento de las sucursales y, enfrentar en mejores condiciones el mercado internacional 12. 
+Adicionalmente, en 1977 se introdujeron nuevos instrumentos de captaci; además, dentro del proceso de modernizaci financiera, el Gobierno Federal empeza emitir instrumentos financieros propios, destacando en una primera etapa los Certificados de la Tesorería de la Federaci y los Petrobonos. 
+Sin embargo. no obstante las medidas implementadas, persistieron los problemas concernientes a la política de tasas de interés y a la de encaje legal. Así. por lo que respecta a las tasas pasivas de interés, éstas siguieron siendo determinadas exenamente. 
+"Un punto que es importante selar al analizar la política de tasas de interés durante el período 1978-1981 es que, como resultado del significativo influjo de divisas a la economía, tanto por mayores exportaciones de petreo como por un mayor endeudamiento externo, plico y privado, el tipo real de cambio tenía que apreciarse, lo cual implicaba una reducci en las tasas reales de interés, pudiendo incluso ser negativas tal y como efectivamente sucedi Así a pesar de las tasas reales negativas, en el período 1978-1981 la penetraci bancaria en la economía aumentrespecto al nivel alcanzado en 1976, explicándose esto por el efecto riqueza que representpara la economía el petreo y las consecuentes altas tasas de crecimiento del ingreso real, lo cual se tradujo en una mayor demanda de activos financieros y no financieros por parte del plico"13. 
+12 Cardero (1985, p.195). 13 CIDAC. idem, p. 25. 
+Cuadro 7 ACTIVOS NO MONETARIOS EN PODER DEL PUBLICO EN EL SISTEMA BANCARIO 1977-1982 
+Activos  Denominados en  
+(%del PIB)  moneda extranjera  
+(%del total)  
+
+1977  17.6  22.5  
+1978  18.8  19.8  
+1979  19.6  23.3  
+1980  19.9  22.8  
+1981  23.0  26.3  
+1982  24.7  7.4  
+
+Fuente: Banco de México. Indicadores Econicos. 
+No obstante, en 1981 el precio internacional del petreo cay lo que puso de manifiesto la necesidad de un ajuste tanto en las finanzas plicas como en el tipo de cambio. Sin embargo, el gobierno optpor compensar la caída de los ingresos petroleros con un mayor flujo de endeudamiento externo. la mayor parte de éste contratado a corto plazo y amortizable a partir de agosto de 1982. Cuando a principios de 1982 el gobierno ya no fue capaz de conseguir mas crédito externo, tuvo que devaluar el tipo de cambio. 
+De este modo, ante la creciente inestabilidad, las autoridades financieras decidieron suspender, a mediados de 1982, durante una semana. las operaciones cambiarías, y cuando el mercado se reabrise introdujo la modalidad de un sistema de tipo de cambio dual; además, se decretque los depitos denominados en moneda extranjera. al momento del vencimiento (si estos no eran renovados) serían pagaderos en moneda nacional. Por ello, el plico se formla expectativa de un control de cambios. por lo que incrementsu demanda de moneda extranjera, provocando a mayor inestabilidad en los mercados financiero y cambiario. 
+Finalmente, como se anticip el primero de septiembre de ese a se impusieron controles cambiarios y, adicionalmente se expropiel sistema bancario privado, lo cual dio lugar a una reorganizaci del mismo, incluyendo al Banco de México, así como a un proceso de consolidaci de los bancos más peques. 
+Período 1982 a 1992. 
+A finales de 1982 existían 59 instituciones bancarias comerciales, las cuales mediante un proceso de fusiones se redujeron, primero a 29 y posteriormente a 18 instituciones (operando además siete bancos de desarrollo). Las diferentes instituciones bancarias se clasificaron de acuerdo a su cobertura geográfica, agrupándose en bancos nacionales, multirregionales y regionales, asignándole a los multirregionales una operaci sectorial casi especializada. 
+Durante este período se realizaron también varios esfuerzos por modernizar el sistema bancario; sin embargo, el feneno observado fue una caída significativa de la intermediaci financiera, que ni las fusiones bancarias ni la propia modernizaci pudieron evitar. 
+Cuadro 8 ACTIVOS NO MONETARIOS EN PODER DEL PUBLICO EN EL SISTEMA BANCARIO Miles de millones de pesos 1983-1988 
+Activos Porcentaje del bancarios* total de activos 
+1983 
+1984 
+1985 1986 1987 1988 
+3,942 6,623 9,391 17,968 46,352 23,890 
+8.4 81.7 76.2 66.7 64.4 28.9 
+Fuente: Banco de México. Indicadores Econicos. 
+A continuaci se selan algunas de las causas de la mencionada desintermediaci: 
+1) El financiamiento del déficit del sector plico, que a partir de 1982, obligal Gobierno Federal a incrementar su demanda de recursos sobre las instituciones 
+bancarias por medio del mercado de dinero y del encaje legal, y que presional alza las tasas de interés y la liquidez del sistema. Lo anterior provocque las tasas de interés de los instrumentos de captaci bancaria tradicionales (cuentas de ahorro, certificados de depito y pagarés) estuvieran en general por debajo de las tasas de interés ofrecidas por otros instrumentos no bancarios como Cetes y el papel comercial (véase Cuadro 9) llevando a que la captaci bancaria se redujera 3.5 puntos porcentuales, al pasar de 18.2 a 14.7 por ciento promedio, respecto al PIB, en los períodos de 1982­
+1985 a 1986-198914_ 
+Cuadro 9 
+TASAS REALES DE INTERES 
+1983-1988 
+Pagarés Cetes Papel a un mes a un mes comercial 
+1983  59.7  51 .5  58.2  
+1984  46.4  47 .7  49.2  
+1985  67.8  71 .2  74 .9  
+1986  78.6  86 .7  91 .5  
+1987  93.9  96.0  98.2  
+1988  63.6  69.1  69.8  
+
+Fuente: Banco de México. Indicadores Econicos. 
+2) La intensificaci -desde principios del período-de la actividad bursátil provocque los ahorradores exigieran mayores niveles de rendimiento y liquidez, lo que favoreciun entorno muy especulativo y condujo a canalizar los recursos a ese sector; destacándose en este punto, la existencia de tasas de interés inflexibles en el sector bancario que acentuaron la desventaja de éste con respecto al sector bursátil. 
+3) Las restricciones en el otorgamiento de créditos impuestas por el Banco de México. Estas propiciaron que las empresas privadas utilizaran fuentes alternativas de financiamiento, principalmente a través de papel comercial tanto bursátil como no bursátil. 
+14 Asociaci Mexicana de Bancos(1991, p 15). 
+Por su parte, la captaci bancaria en 1986 estaba integrada básicamente por depitos a plazo, los cuales representaban el 64.6% del total; los Cetes participaban en 13.1 %, las cuentas de cheques participaban con un 12.7% y las aceptaciones bancarias con un 9.6%. 
+Esta composici cambiconsiderablemente hacia diciembre de 1988, debido a la incertidumbre econica y a la demanda de instrumentos de mayor liquidez, lo que afectla actividad tradicional de la banca, al desarrollarse incluso mercados paralelos informales (préstamos directos entre empresas). 
+Así pues, en ese mismo a las autoridades financieras iniciaron el proceso de desregulaci, al permitir que la banca emitiera aceptaciones bancarias a su propio cargo y participara en las subastas de Cetes como postores por cuenta propia o de terceros, lo que imprimigran dinamismo a sus mesas de dinero. 
+Todo esto propicique la captaci de instrumentos a plazo se redujera a 17.9%, colocándose las aceptaciones bancarias en primer lugar con 38.2% de la captaci, en segundo lugar se ubicaron los Cetes con 21.8%, seguidos de los Sondes con 13.4% y las cuentas de cheques con 8.7%.15 
+Así, para 1988, el 56.1% del total de la captaci bancaria estaba colocado a tasas libres de interés, por lo que para 1989 se tomla decisi de liberar las tasas sobre todos los instrumentos bancarios, incluyendo las cuentas de cheques, con lo que a finales de 1989 los depitos a plazo se recuperaron. 
+111. 3 Las reformas al sistema financiero 1988-1991. 
+A partir de 1988, como resultado de la grave desintermediaci financiera sufrida por la banca comercial, en conjunci con el creciente desarrollo de intermediarios financieros no bancarios, se iniciun fuerte proceso de liberalizaci de las actividades bancarias, que incluytanto aspectos de orden financiero como de orden operativo. pasando por el cambio en el régimen de propiedad. 
+15 ldem. p. 16. 
+En los aspectos de orden financiero se presenta la siguiente cronología: 
+Noviembre de 1988. Como ya se mencionen el apartado anterior, se autorizla captaci mediante aceptaciones bancarias por cuenta propia a tasas de interés libres, además se concediel permiso de participar también por cuenta propia o de terceros en las subastas de Cetes. 
+Abril de 1989. Se permitila fijaci libre de tasas y plazos en la captaci tradicional, autorizándose el pago de rendimientos en cuentas de cheques; se sustituyel encaje legal por un coeficiente de liquidez igual al 30% de la captaci y se eliminaron los cajones selectivos de crédito. 
+Septiembre de 1991 . Se eliminel coeficiente de liquidez obligatorio del 30% . 
+Por lo que toca a los aspectos de orden operativo: 
+A partir de 1990 se permitique cada instituci bancaria decidiera por sí misma sus presupuestos globales, así como su utilizaci. Cabe mencionar que hasta antes de esta disposici la Secretaría de Hacienda tenía la prerrogativa de autorizar los presupuestos de cada instituci bancaria, incluyendo poder decisivo sobre la instalaci de equipos y sistemas automatizados para la atenci al plico. 
+Además de las reformas seladas, otra importante dentro de la operaci del sistema bancario fue que a partir de ese a se permitique las sociedades nacionales de crédito se consolidaran con otras instituciones auxiliares de crédito para formar grupos financieros. 
+Por timo, en lo referente al cambio de régimen de propiedad: 
+Julio de 1990. Se aprueba la Iniciativa de Reforma Constitucional para Restablecer el Régimen Mixto de la Prestaci del Servicio de Banca y Crédito, donde se establece la posibilidad de que el sector privado posea la mayoría accionaria de dichas instituciones. De esta aprobaci derivla nueva Ley de Instituciones de Crédito, que más adelante se complementcon la promulgaci de la Ley de Organizaciones y Actividades Auxiliares del Crédito y la Ley para Regular las Agrupaciones Financieras. Estas han respondido a los cambios efectuados en el sistema y a las necesidades de la apertura econica. 
+Septiembre de 1990. Se crea el Comité de Desincorporaci Bancaria, que da a conocer las bases generales para iniciar el proceso. 
+Junio de 1991 . Se asigna el primer paquete de bancos a un grupo privado de accionistas, concluyendo el proceso en julio de 1992 con la venta del timo de los 18 bancos subastados. 
+Adicionalmente, las reformas a la legislaci en materia financiera no concluyeron con el cierre de la privatizaci; por el contrario, se ha intensificado con motivo de la aprobaci del Tratado de Libre Comercio de Norteamérica. Las modificacines legislativas pretenden preparar el panorama nacional para una intensificaci de la competencia interna y externa. De hecho, al momento de concluir este documento han sido autorizados para operar un importante nero de bancos. 
+Algunos autores han considerado que el incremento en la captaci en instrumenos tradicionales de ahorro, por parte de la banca comercial, a partir de 1989 -la cual se puede observar en la gráfica de la siguiente página-ha sido producto de la desregulaci implementada en el sector; sin embargo, no se han realizado trabajos empíricos que intenten demostrarlo. En este sentido, los ejercicios que se desarrollarán en el siguiente capítulo representan una aportaci inicial al análisis de esa relaci. 
+INSTRUMENTOS DE AHORRO TRADICIONALES DE AHORRO BANCA COMERCIAL 
+14.00 
+12.00 
+10.00 8.00 6.00 4.00 2.00 
+
+0.00  Ene-83  Ene-84  Ene-85  Ene-86  Ene-87  Ene-88 Ene-89 meses  Ene-90  Ene-91  Ene-92  Ene-93  
+Fuente:  Banco de México. Indicadores Econicos. (Varios neros)  
+
+IV. Aplicaci del análisis de series de tiempo. 
+A continuaci se presentan dos ejercicios de series de tiempo, en el primero el objetivo es medir el impacto de la liberalizaci de la tasa de interés sobre depitos en la captaci bancaria a través de instrumentos tradicionales de ahorro, y en el segundo la relaci que dicha captaci tiene con el financiamiento al sector privado. 
+La raz de analizar estas dos relaciones y su nexo con lo discutido en los capítulos precedentes es que, siguiendo el razonamiento del Banco Mundial1, para establecer el impacto de la liberalizaci financiera en la economía es necesario investigar una serie de cadenas que tengan mayor probabilidad de ir en un sentido. Así, en un primer eslab se investiga qué es lo que sucede con el comportamiento de los ahorradores al cambiar la política de tasas de interés y en un segundo, la existencia de una relaci de equilibrio entre captaci y financiamiento como condiciones necesarias aunque no suficientes para el incremento en la cantidad y calidad de la inversi, y con ello del crecimiento econico. 
+La hipesis es que de tener éxito la liberalizaci de la tasa de interés, la captaci tradicional mostrará un cambio estructural favorable, lo que de existir una relaci de equilibrio entre captaci y financiamiento sentará las bases para incentivar el crecimiento econico, pues la banca tendrá más recursos susceptibles de ser ortogados en préstamo. 
+Los ejercicios parten del hecho de que en México se ha implementado el ajuste macroeconico necesario para proceder a la liberalizaci del sistema financiero, por lo que es pertinente aclarar que de no probarse la existencia de las condiciones necesarias mencionadas anteriormente no se estaría probando la inexistencia de relaci entre liberalizaci financiera y crecimiento econico, un resultado de esa naturaleza lo que proporcionarla -a lo más-es un indicador de las distorsiones que que a prevalecen en la economía y en dicho sistema. 
+1Banco Mundial (1989. pp. 36) 
+IV.1 Impacto de la liberaci de tasas de interés sobre la captaci bancaria. Un análisis de intervenci. 
+En el presente apartado se analizará el efecto de la liberaci de la tasa de interés sobre depitos -implementada en abril de 1989-sobre la captaci bancaria real de instrumentos de ahorro tradicionales (IATR). Para ello se utilizará el análisis de intervenci, el cual es una variante de la técnica de series de tiempo. 
+Este tipo de análisis permite estudiar el efecto que uno o varios cambios de política tienen sobre las variables econicas, en este caso el objetivo es determinar si el cambio en la política sobre tasas de interés produce un cambio estructural o de largo plazo en el comportamiento de la captaci sobre instrumentos de ahorro tradicionales. 
+Para entender co funciona esta técnica considérese lo siguiente: 
+Suponga una intervenci ocurrida en un momento conocido, si la variable IATRt es generada por un proceso ARMA(p,q) el modelo general de intervenci puede escribirse de la siguiente manera: 
+IATRt = v(B)lt + Nt 
+donde 
+Nt = [0(8)/cj,(B)] at 
+es el término estocástico del modelo y v(B) es un polinomio que puede admitir la forma racional: 
+v(B) = [ro(B)/B(B)] sb 
+donde ro(B) y B(B) son los polinomios: y b mide el retardo en el tiempo en el que la intervenci hace efecto. 
+
+lt es una variable dicotica que toma los valores O, 1 para denotar la no ocurrencia y la ocurrencia de una intervenci exena. 
+En el caso que nos ocupa se utilizará el siguiente modelo: 
+v(8) = ro/(1-88) 
+éste sirve para modelar un cambio de nivel y de pendiente de la variable como resultado de la intervenci2. La idea es determinar si la nueva polltica de tasas de interés ha tenido efectos de largo plazo en la captaci, o si estos han sido so de corto plazo. 
+Lo anterior se aclara si se observa que ro mide el salto de la variable y 8 el efecto de largo plazo, de tal modo que sí 8 =O so existe un efecto instantáneo y si 8 = 1 el efecto de la intervenci es permanente, pués l / (l -88) = l + 88 + 82 82 +... 
+Con base en lo anterior, en lo que resta de este apartado se explicará paso a 
+paso la modelaci de la serie y los resultados. 
+Resultados: 
+Como se explicen párrafos anteriores el modelo de intervenci consta de dos partes, una correspondiente al proceso que toman los errores aleatorios y otra en la que interviene la variable dicotica. Para desarrollarlo, lo primero que se debe hacer es determinar el tipo de proceso que seguirían los errores aleatorios Nt, de no considerar la intervenci. 
+1) La gráfica 1 muestra el comportamiento mensual de la captaci real en instrumentos de ahorro tradicionales (IATR) de la banca comercial. Pueden observarse dos tendencias, una que va de 1983 a los primeros meses 1988, que 
+2 Mills (1992, p.237). 
+presenta pendiente negativa y otra con pendiente positiva, que se supone fue el resultado de la liberalizaci de las tasas de interés sobre depitos en abril de 19893. 
+GRAFICA 1 CAPTACION REAL EN INSTRUMENTOS DE AHORRO TRADICIONALES BANCA COMERCIAL (1983-1993) 
+!4 
+
+10 
+6 
+o 
+12 ~3 1 45 56 7 , A~ 1 O ! 11 I:'~ 
+MESES 
+Estos dos comportamientos producen una serie no estacionaria, por lo que para su estudio -con el método Box-Jenkins-es necesario estacionarizarla con primeras diferencias. 
+2) En la gráfica 2 se presenta la serie estacionarizada y se procede a obtener los correlogramas muestrales y las gráficas de la funci de autocorrelaci muestra! (FAM) y de la funci de autocorrelaci parcial muestra! (FAPM). A partir de ellos se determina el tipo de proceso que sigue la serie. 
+3 En el trabajo del CIDAC (1990), realizado por Isaac Katz. se hace alusi a que el repunte observado en la captaci bancaria a través de instrumentos bancarios tradicionales de ahorro ha sido el producto de la liberalizaci de las lasas de interés sobre depitos. 
+GRAFICA 2 
+INSTRUMENTOS DE AHORRO TRADICIONALES BANCA COMERCIAL (1982-1993) -PRIMERAS DIFERENCIAS-
+l. 5 1.0 0.5 
+o.o 
+-0.5 
+-1.0 
+-1. 5 
+_.,.ABRIL DE 1989MILLONES DE NUEVOS PESOS 
+-2.0 
+
+
+-2.5 
+2 1 24 5 46 57 68 79 90 101 l 2 12 
+MESES 
+La FAM representada en la gráfica 3 muestra un decaimiento senoidal, mientras que la de la FAPM (gráfica 4) presenta picos significativos en las posiciones 1, 5 y 9: 
+GRAFICA 3 SERIE ESTACIONARIZADA CON PRIMERAS DIFERENCIAS FUNCION DE AUTOCORRELACION MUESTRAL 
+1 5 9 13 17 21 25 2 3 37 41 45 
+REZAGOS 
+
+GRAFICA4 SERIE EN PRIMERAS DIFERENCIAS FUNCION DE AUTOCORRELACION PARCIAL MUESTRAL 
+1.00 0 . 75 
+o.so 
+0 . 25 0.00 
+rk 
+-0 . 25 -0 .50 -0 .75 -1.00 
+1 
+en este caso la regla de decisi es modelar un proceso autorregresivo como el siguiente: 
+
+
+en donde Zt es la variable estacionarizada con primeras diferencias, la cual en el modelo se nombr(CAPTA). 
+El resultado inicial muestra los parámetros correspondientes a los rezagos 1 y 9 como significativos; sin embargo, la constante y el parámetro del rezago 5 son no significativos, por lo que se decidiretirarlos del modelo, con lo cual mejoraron ligeramente las t's estimadas, mientras que los errores estimados y la suma de cuadrados de los residuales no se vio afectada, como lo muestra la siguiente salida de RATS. 
+Dependent Variable CAPTA -Estimation by Box-Jenkins Uncentered R**2 0.211236 T x R**2 24.503 Mean of Dependent Variable 0.0270420709 Std Error of Dependent Variable 0.4724191091 Standard Error of Estímate 0.4258507739 Sum of Squared Residuals 20.311074739 Durbin-Watson Statistic 2.022312 
+lterations Taken  3  
+Usable Observations  116  Degrees of Freedom 112  
+Centered R**2  0.208629  R Bar **2  0.187432  
+
+Variable Coeff Std Error T-Stat Signif 
+**************·*******************•••••••••••******************'****'****************** ... ** 1. CONSTANT 0.021660670 0.039534749 0.547889 0.58485813 2. AR{1} 0.358755716 0.085372022 4.202263 0.00005334 3. AR{5} -0.077795423 0.087188294 -0.892269 0.37416173 4. AR{9} -0.281720077 0.086638214 -3.251684 0.00151603 
+Dependent Variable CAPTA -Estimation by Box-Jenkins lterations Taken 3 Usable Observations 116 Degrees of Freedom 113 Centered R**2 0.203004 R Bar **2 0.188897 Uncentered R**2 0.205629 T x R**2 23.853 Mean of Dependent Variable 0.0270420709 Std Error of Dependent Variable 0.4724191091 Standard Error of Estímate 0.4254664759 Sum of Squared Residuals 20.455454598 Durbin-Watson Statistic 2.019024 
+Variable Coeff Std Error T-Stat Signif *******************************************•····································· 1. AR{1} 0.346035917 0.084097438 4.114702 0.00007393 2. AR{9} -0.294344630 0.085397955 -3.446741 0.00079766 
+Por otro lado, en ambos casos se cumplicon la condici necesaria aunque no suficiente4 para estacionaridad que requiere que la suma de los parámetros sea menor que 1. 
+3) Como siguiente paso se procedia realizar las pruebas correspondientes sobre los errores, con los resultados que se muestran a continuaci: 
+Las gráficas 5 y 6 presentan las funciones FAM y FAPM de los residuales correspondientes al proceso AR(1,5,9). 
+GRAFICA 5 RESIDUALES AR (1,5,9) . FUNCION DE AUTOCORRELACION MUESTRAL 
+l.00 0.75 0.50 0 .25 0 . 00 
+rk 
+-0.25 -0. 50 -0 .75 -l.00 
+
+4 La condici necesaria y suficiente es la existencia de raíces unitarias. Este método será tratado en el siguiente capitulo. 
+
+GRAFICA6 RESIDUALES AR(1,5,9) . 
+REZAGOS 
+Como se puede apreciar, la gráfica de la FAM presenta un corte abrupto después del primer rezago, mientras que la de la FAPM muestra un pico significativo en el segundo rezago, esto timo hace que los errores del modelo no puedan considerarse ruido blanco. 
+En el caso del modelo AR(1 ,9) las gráficas 7 y 8 muestran la FAM y la FAPM de los errores. De las mismas se observa que estos se comportan de forma similar al caso anterior y por lo consiguiente tampoco son ruido blanco. 
+GRAFICA 7 RESIDUALES AR (1 9) . 
+1.00  
+0.75  
+0.50  
+rk  0. 25 0.00 -0.25  •••• ~ 1····----·  -­ 
+-0 . 50  
+-0.75  
+-1 . 00  1  5  9  11 21 25 REZAGOS  29  3  37  41  
+
+
+1. 00  GRAFICA 8 RESIDUALES AR(1 9) . FUNCION DE AUTOCORRELACIOÑ PARCIAL MUESTRAL  
+0. 75  
+o. 50  
+0 .25  
+0.00 rk -0.25  
+-0 . 50  
+-0. 75  
+-1 . 00  l  5  9  13  17 2 ~ REZAGOS  25  29  33  37  41  
+
+Finalmente, se decidiprobar el proceso AR(1,2,5,9), en donde se incluye el parámetro correspondiente al quinto rezago, que no es significativo en lo individual; con esto se intenta probar si lo es en el conjunto. El parámetro correspondiente al segundo rezago busca corregir la autocorrelaci de segundo orden presentada en los errores. La forma polinomial es: 
+Las gráficas 9 y 10 muestran la FAM y FAPM de los errores de este timo proceso y, como se puede observar, ambas se cortan desde el inicio, por lo que los errores se pueden considerar ruido blanco. 
+GRAFICA 9 RESIDUALES AR (1,2,5,9) . FUNCION DE AUTOCORRELACION MUESTRAL 
+1. 00 0 . 15 
+o.so 
+0. 25 0. 00 
+rk 
+-0 .25 
+-o.so 
+-0 .15 -1. 00 
+S l3 11 2 "S 2 33 37 l 
+REZAGOS 
+GRAFICA 10 RESIDUALES AR(1,2,5,9) . 
+FUNCION DE AUTOCORRELACION PARCIAL MUESTRAL 
+1. 00 
+0 .75 
+o.so 
+0.25 
+0.00 
+rk 
+-0. 25 
+-O.SO 
+-0.75 
+-1. 00 
+1 
+Con el fin de comprobar esto timo se realizla prueba Q de Ljung-Box5 para la determinaci de autocorrelaci de los errores de un orden elevado con los siguientes resultados: 
+Ljung-Box 0-Statistics 0(6) = 3.2117. Significance Level 0.07311570 0(12) = 11.3627. Significance Level 0.12356192 0(18) = 17.3670. Significance Level 0.18306540 0(24) = 23.7090. Significance Level 0.20755077 0(30) = 28.0264. Significance Level 0.30663713 0(36) = 36.8551 . Significance Level 0.21625890 
+Con esto no se puede rechazar la hipesis de que los errores son ruido blanco, ya que las a estimadas son mayores que 0.01 en todos los casos; también, en todos los casos, la Q calculada es menor que la de tablas a un nivel de significancia de 0.01 y 0.05. 
+
+5 En el anexo 1 se explica en qué consiste esta prueba. 
+4) Una vez determinado el tipo de proceso que siguen los errores aleatorios Nt, el paso siguiente es modelar la intervenci, para lo cual se utlizará el polinio descrito al inicio de esta secci. 
+Lo que se busca es determinar si el cambio de política en la reglamentaci de tasas de interés sobre depitos tiene un efecto de largo plazo. Así, se estimel proceso correspondiente al siguiente modelo: 
+Los resultados que se presentan a continuaci muestran que ninguno de los coeficientes de intervenci es significativo, por lo que se rechaza la hipesis de existencia de efectos de largo plazo, causados por el cambio en la política de tasas de interés sobre depitos. 
+Dependen! Variable CAPTA -Estimation by Box-Jenkins 
+lterations Taken 18 
+U sable Observations 116 Degrees of Freedom 109 
+Centered R**2 0.286374 R Bar **2 0.247092 
+Uncentered R**2 0.288725 T x R**2 33.492 
+Mean of Dependent Variable 0.0270420709 
+Std Error of Dependent Variable 0.4724191091 
+Standard Error of Estimate 0.4099194788 
+Sum of Squared Residuals 18.315703720 
+Durbin-Watson Statistic 1.962330 
+Variable Coeff Std Error T-Stat Signif 
+********************************************************••····················· 
+1. AR{1} 0.263823872 0.0893237 41 2.953569 0.00384860 2. AR{2} 0.080692623 0.088874973 0.907934 0.36591599 3. AR{5} -0.138704 703 0.087357330 -1.587786 0.11523150 4. AR{9} -0.328793519 0.086080739 -3.819595 0.00022258 5. N_CHANGE{O} -0.071038885 0.348187626 -0.204025 0.83871462 6. D_CHANGE{1} 0.325539237 1.857721219 0.175236 0.86121947 
+Por su parte el modelo: 
+
+presenta al parámetro de intervenci ro como significativo, como se puede apreciar en la salida de RA TS6, por lo que se procede a realizar las respectivas pruebas sobre los errores aleatorios para determinar si son ruido blanco. 
+Dependent Variable CAPTA -Estimation by Box-Jenkins lterations Taken 5 Usable Observations 116 Degrees of Freedom 111 Centered R-*2 0.286012 R Bar **2 0.260283 Uncentered R**2 0.288364 T x R**2 33.450 Mean of Dependent Variable 0.0270420709 Std Error of Dependent Variable 0.4724191091 Standard Error of Estímate 0.4063126990 Sum of Squared Residuals 18.324991044 
+Durbin-Watson Statistic 1.964042 
+Variable Coeff Std Error T-Stat Signif 
+******************************************************************************* 
+1. AR{1} 0.262856522 0.088024726 2.986167 0.0034 7653 2. AR{2} 0.079207209 0.087856108 0.901556 0.36924478 3. AR{5} -0.134795250 0.085617385 -1.574391 0.11824306 4. AR{9} -0.332661780 0.085358042 -3.897252 0.00016682 5. N_CHANGE{O} 0.189079799 0.054420818 3.474402 0.00073127 
+En las gráficas 11 y 12 se encuentran las funciones FAM y FAPM de los errores del modelo, mismas que muestran picos significativos en los rezagos 21 y 36. 
+6 Es pertinente advertir que se corrieron modelos en los que se eliminaron los coeficientes de los rezagos 2 y 5 -por ser no significativos-buscando mejorar los estadísticos t. sin embargo. los resultados fueron peores por lo que se decidimantenerlos. 
+FUNCION DE AUTOCORRELACION MUESTRAL 
+1.00 o. 75 
+o. so 
+0.25 o. 00 • 
+rk 
+-0. 25 
+
+-o. so -o. 75 , -1.00 
+1 5 9 Í3 17 21 25 29 33 37 4l. 
+REZAGOS 
+GRAFICA 12 RESIDUALES MODELO DE INTERVENCION . FUNCION DE AUTOCORRELACION PARCIAL MUESTRA!. 
+1.00 0 .75 0 . 50 O. 25 0 . 00
+r1< 
+-0 .25 -0 . 50 -0 . 75 -1. 00 
+1 
+
+Para determinar de un modo más eficiente la significancia de estos picos se realizla prueba Q, de la cual se obtuvo lo siguiente: 
+Ljung-Box Q-Statistics Q(9) = 3.8987. Significance Level 0.27261481 Q(18) = 13.1538. Significance Level 0.35796167 Q(27) = 26.4035. Significance Level 0.19147920 Q(36) = 39.2691. Significance Level 0.11981332 
+Las a estimadas son sustancialmente mayores que 0.01 y, en cualquier caso para ese mismo nivel de significancia, las a·s calculadas son menores que las de 
+tablas, con lo que se determina la no existencia de autocorrelaci de orden elevado y se puede aceptar que los errores son ruido blanco 
+Se puede observar cierta mejoría en las pruebas t y en el valor de los parámetros si se eliminan los rezagos 2 y 5, los cuales no son significativos: 
+Dependent Variable CAPTA -Estimation by Box-Jenkins lterations Taken 4 Usable Observations 116 Degrees of Freedom 113 Centered R**2 0.264541 R Bar **2 0.251524 Uncentered R**2 0.266963 T x R**2 30.968 Mean of Dependent Variable 0.0270420709 Std Error of Dependent Variable 0.4724191091 Standard Error of Estimate 0.4087111329 Sum of Squared Residuals 18.876061285 Durbin-Watson Statistic 2.000659 
+Variable Coeff Std Error T-Stat Signif *******************·***********'**********************•••••••·...•••••••••••••••••• 1. AR{1} 0.271296532 0.084500342 3.210597 0.00172501 2. AR{9} -0.345185167 0.085411215 -4.041450 0.00009727 3. N_CHANGE{O} 0.189485189 0.057125173 3.317017 0.00122426 
+De los resultados obtenidos se desprende que la liberalizaci de las tasas de interés sí produjo un salto significativo en el nivel de captaci real de la banca comercial en instrumentos de ahorro tradicionales; sin embargo, no es posible argumentar que los efectos causados por la política se sostengan a largo plazo. 
+Existen otras variables tales como: el ingreso, las expectativas y a lo hábitos de los agentes econicos que se contraponen a los efectos de la liberalizaci de las tasas de interés. Aunque esto pudiera verse como una verdad obvia, la realidad es que en la práctica el argumento utilizado para defender la política de liberalizaci financiera so se fundamenten el aumento observado de los datos de captaci real y no en un análisis profundo del hecho. 
+IV.2 Captaci bancaria y créditos otorgados al sector privado. Un estudio de cointegraci. 
+En esta secci se aplicará el análisis de cointegraci para establecer la relaci existente entre la captaci de instrumentos de ahorro tradicionales por la banca comercial y el financiamiento al sector privado por ésta misma, para un período que va de enero de 1983 a mayo de 1993. 
+La funci primaria de la banca, como reconocen la mayoría de los autores, es captar recursos del plico, generalmente depitos a corto plazo para convertirlos en préstamos a un plazo mayor. Del diferencial de las tasas de interés que pagan por los depitos y que cobran por los préstamos, los bancos hacen su negocio. Es de esperar que exista una relaci causal entre estas dos variables, de modo que el aumento en los depitos produzca un incremento en el financiamiento al sector privado, a través de una mayor disponibilidad de recursos. 
+Para determinar dicha relaci, se ha escogido el análisis de cointegraci porque permite determinar si las series están estadísticamente relacionadas en niveles, y a partir de él es posible realizar pruebas estadísticas de causalidad. 
+Por otro lado, se ha determinado estudiar la relaci de la captaci bancaria sobre instrumentos tradicionales y el financiamiento al sector privado porque si la llamada liberaci financiera de la banca comercial mexicana ha de influir en el crecimiento econico del país, es precisamente a través de los efectos que tenga sobre el nivel de captaci, y de que dicha captaci se traduzca en un mayor volumen de créditos al sector privado, para que sean canalizados a la inversi productiva. No obstante, debe observarse que el análisis no toma en cuenta la eficiencia con que el sector privado invierte dichos créditos 
+Se parte del supuesto de que un resultado mínimo necesario para que la liberalizaci del sistema financiero muestre sus bondades es el incremento de la captaci, pero debe existir relaci entre los depitos y los préstamos al sector privado por la banca comercial, pues de lo contrario esta tima no estará cumpliendo adecuadamente su papel de intermediario financiero. 
+Con el objetivo de aclarar el ejercicio, antes de presentar los resultados se expondrá qué es y para qué sirve el análisis de cointegraci: 
+El análisis de cointegraci fue desarrollado por Granger y Newbold (1974) a partir del estudio de las regresiones sin sentido o espurias 6_ Este tipo de regresiones frecuentemente tienen R2 elevadas y una alta autocorrelaci serial de los residuos representada por un valor peque del estadístico Durbin-Watson (DW). Los autores mencionados realizaron simulaciones de Monte Cario y encontraron que las pruebas convencionales de significancia están seriamente sesgadas hacia el rechazo de la hipesis nula de no relaci y, por lo tanto, hacia la aceptaci de la relaci espuria, aun cuando las series son generadas por procesos estadísticamente independientes. 
+Estos resultados los llevaron a sugerir que en la presencia conjunta de una alta R2 y baja DW, las regresiones deben ser corridas sobre las primeras diferencias de las variables, implicando que las series en la regresi son procesos integrados de orden uno, 1(1)7 . 
+Correr las regresiones en primeras diferencias es la soluci clásica al problema de estacionaridad en series de tiempo, no obstante, esto deja insatisfechos a algunos economistas, pues hay informaci de largo plazo, con un gran valor, que se pierde al estacionarizar las series. 
+Esta preocupaci se centra en la existencia del equilibrio de estado estable de largo plazo, en el que la teoría econica tradicionalmente ha puesto un gran interés. 
+Para explicar el argumento, Mills8 desarrolla un ejemplo con el modelo que se describe a continuaci: 
+
+------------------1 
+6 Milis (1992) pp.264. Arellano (1993) pp. 102. 7 Muchas series econicas son no estacionarias: véase por ejemplo, las gráficas del PNB y el nivel de precios Si las primeras diferencias de una serie son estacionarias. se dice que la serie original es un proceso integrado de orden uno. Una serie estacionaria de orden cero se dice que es un proceso integrado de orden cero. 8 Milis. op.cit. p. 269. 
+En el equilibrio de estado estable en donde Y,== Y,-1 =Ye, X,== X,.,= Xe y u, = O se tiene la soluci: 
+Ye=a'+P'Xe 
+en donde a'= a I (l -&) y 13' = (13 +y)/ (1-6). Si por otro lado se considera el modelo diferenciado : 
+Y, = l3, + y, -1+ &Y, -1+ v, 2 
+se tiene que todas las diferencias son cero en el equilibrio de estado estable y no es posible obtener soluci alguna. No se puede decir nada acerca de la relaci de largo plazo entre Y,, X,. Más a, en un equilibrio con tasa de crecimiento constante en donde Y, = , = g la ecuaci nero 1 tiene la soluci : 
+Ye= a" +13' Xe 
+donde a"=(a-g(g+&))/(1-&) esto se reduce a la soluci de equilibrio de estado estable cuando g=O. La ecuaci en diferencias de nuevo no tiene soluci en términos de Ye y Xe. 
+En este ejemplo, Mills muestra co los modelos que relacionan series con procesos integrados no proveen informaci sobre las relaciones de largo plazo, en ellos esa clase de relaciones simplemente no existen. 
+Hay, sin embargo, un punto de uni entre estas dos apreciaciones que aparentemente son diametralmente opuestas . En los modelos de regresi que relacionan procesos integrados Y, y X,= (X,,... Xm,)' Phillips9 muestra que hay un caso en el que funciona la teoría usual de los mínimos cuadrados. Este es cuando la matriz límite de covarianzas del modelo es singular, en cuyo caso existe una relaci lineal entre Y, y X, que permite que el estimador de mínimos cuadrados sea consistente. Esta singularidad es de hecho una condici necesaria para que(X,,Y,) sean procesos cointegrados. 
+9 ldem. p.269, y Corradi (1990, pp.204-206). 
+El concepto de cointegraci es la liga entre los procesos integrados y el concepto de equilibrio de estado estable. Para ilustrar más claramente el concepto supgase que hay dos series de tiempo (Y, , X1) cada una de las cuales es un proceso integrado de orden uno, en general una nueva serie construida a partir de la combinaci lineal z. = Y, -aX, será integrada de orden uno 1 O. Sin embargo, es posible que Z, -1(0); y cuando esto ocurre, una restricci especial opera en los componentes de largo plazo de x. y Yr. Dado que las variables son ambas 1(1). éstas estarán dominadas por componentes de largo plazo, pero Z, será 1(0) y no estará dominado por dichos componentes: aX, y Y, deben tener componentes de largo plazo que virtualmente se cancelan y producen z .. Dicha combinaci puede ser escrita como: 
+
+Si la relaci entre las series tiene alg sentido, se puede esperar que el término de perturbaci sea estacionario, ya que sí dicho término tiene raíces unitarias su varianza tendrá un comportamiento explosivo. Si, por otro lado, u1 es estacionario, se dice que x. y Y, son series cointegradas en donde (1,-a.) es el vector de cointegraci. Sus sendas temporales se moverán conjuntamente y no divergirán sin límite 11 . 
+Para relacionar esta idea con el equilibrio de largo plazo, suponga que esta clase de equilibrio es definida como la relaci: 
+Y1=aX, 
+Por lo tanto Z, mide el tama de la desviaci del sistema (Y., X1) del equilibrio y puede por tanto ser llamada error de equilibrio. Sin embargo, si x. y Y. son ambos 1(1) entonces el error de equilibrio debe ser 1(0) y z. no se alejará mucho del equilibrio. En otras palabras, el equilibrio ocurrirá muy ocasionalmente si las series no están cointegrados, por lo que z. -1(1) y entonces el error de equilibrio puede ser muy grande, sugiriendo que ante estas circunstancias dicho concepto no tiene implicaciones prácticas. 
+10 Las caracteristicas de los procesos 1(0) e 1(1) se presentan en el anexo 2. 11 Engel y Granger (1987) proveen un análisis general en términos del vector J(d), esto es, un proceso que requiere ser diferenciado d veces para alcanzar estacionaridad. 
+Este es el sentido en el que la cointegraci se relaciona con el análisis de regresi espuria discutido anteriormente. Como se vio, la regresi sobre las diferencias de las series de tiempo no proveen informaci sobre la relaci de equilibrio de largo plazo, la cual so puede ser provista por una regresi estimada sobre los niveles de las variables. Pero si la serie está integrada la inferencia estadística com no es aplicable. En el caso especial de que la matriz de covarianzas sea singular la inferencia es posible usando la teoría asintica desarrollada por Stock y Phillips y Durlauf 12. 
+La combinaci lineal de las variables que provoca esta singularidad es exactamente el vector de cointegraci. Por lo tanto so si las series integradas están cointegradas es posible aplicar la inferencia estadística en modelos estimados sobre los niveles, y so si éstos están cointegrados existe una relaci significativa de equilibrio. Si las series no están cointegradas, entonces no existen relaciones de equilibrio y el análisis debe ser realizado sobre las diferencias. 
+Una vez aclarado en qué consiste el análisis de cointegraci y su utilidad, se presentan cada uno de los pasos seguidos, los resultados y algunos comentarios sobre el ejercicio: 
+Como primer paso para probar cointegraci se procedia determinar si las variables Instrumentos de Ahorro Tradicionales en Términos Reales (IATR) y Financiamiento Real al sector Privado (FINSPR) -para el período enero de 1983 mayo de 1993-son procesos 1(0) o 1(1), para hacerlo se realizaron pruebas de raíces unitarias sobre las variables 13, cuyos resultados fueron los siguientes: 
+1) Tanto para IATR y FINSPR se probla hipesis de no estacionaridad utilizando la prueba ampliada de Dickey-Fuller (ADF) 14 como se muestra a continuaci: 
+AUGMENTED DICKEY-FULLER UROOT(T, 1) IATR 
+DICKEY-FULLER t-STATISTIC -0.9033 
+12 Milis, op. cit., 268. 13 Ver anexo 3 14 Ver anexo 4. 
+MACKINNON CRITICAL VALUES  1%  -4.0355  
+5%  -3.4469  
+10%  -3.1482  
+AUGMENTED DICKEY-FULLER UROOT(T, 1)FINSPR  
+DICKEY-FULLER t-STATISTIC  1.0399  
+MACKINNON CRITICAL VALUES  1%  -4.0355  
+5%  -3.4469  
+10%  -3.1482  
+
+En ambos casos el estadístico t de Dickey-Fuller es menor en valor absoluto que cualquiera de los valores críticos de MacKinnon, por lo que no es posible rechazar la hipesis de existencia de ralees unitarias en las series originales . 
+2) Como segundo paso se prueba si las series son 1(1) buscando raíces unitarias en las series expresadas en primeras diferencias, los resultados obtenidos se muestran a continuaci: 
+AUGMENTED DICKEY-FULLER UROOT(T,2)1ATR 
+DICKEY-FULLER t-STATISTIC  -5.1353  
+MACKINNON CRITICAL VALUES  1%  -4.0367  
+5%  -3.4475  
+10%  -3.1486  
+
+AUGMENTED DICKEY-FULLER UROOT(T,2)FINSPR DICKEY-FULLER t-STATISTIC -5.0838 
+MACKINNON CRITICAL VALUES 1% -4.0367 5% -3.4475 10% -3.1486 
+Como se puede apreciar, el estadlstico t de Dickey-Fuller en ambos casos es mayor en valor absoluto que cualquiera de los valores críticos de Mackinnon, por lo cual es posible rechazar la hipesis de existencia de raíces unitarias en las series expresadas en primeras diferencias, concluyéndose que ambas series en su estado original son procesos integrados de orden 1. 
+3) Una vez realizado lo anterior, y dado que las series IATR, FINSPR son procesos 1(1 ), el método a seguir para probar si están cointegradas es mediante la estimaci de la regresi de cointegraci: 
+FlNSPR, = Bo + P1IATR1 + Ut 
+para luego probar si los residuales estimados lh constituyen un proceso 1(0) o no. 
+Cuando dos o más series están cointegradas el estimador de mínimos cuadrados de la pendiente, el parámetro P1, debe proveer -en muestras grandes-un excelente estimador del parámetro real de cointegraci . 
+El razonamiento es el siguiente: si IATR Y FINSPR están cointegrados para P1=-a entonces Ut tendrá una varianza finita, de otro modo u, -l(I) y por lo tanto tendrá una varianza muy grande. 
+La existencia de cointegraci entre un grupo de variables posibilita la modelaci de las relaciones de equilibrio, mientras que al mismo tiempo elimina los problemas de la inferencia estadística, esto se explica mediante el Teorema de Representaci de Granger 15 . 
+En TSP se realizla prueba de cointegraci mediante el comando UROOT, el paquete corre la regresi de cointegraci de las variables y realiza las prueba del estadístico t aumentado de Dickey-Fuller ADF y presenta los valores críticos de MacKinnon. Los resultados obtenidos fueron los siguientes: 
+AUGMENTED  DICKEY-FULLER UROOT(T,2)1ATR-FINSPR  COINT. VECT.  
+DICKEY-FULLER t -STATISTIC  -2.8092  1  
+MACKINNON CRITICAL VALUES  1%  -4.4562  -0.754651  
+5%  -3.8591  0.063625  
+10%  -3.5552  
+
+15 En el anexo 5 se presenta un resumen del contenido del teorema. 
+Del cuadro se puede observar que el valor absoluto del estadístico t es menor que los valores críticos de MacKinnon, por lo cual no se puede rechazar la hipesis de existencia de raíces unitarias en los residuales de la regresi de cointegraci; de este modo, es posible rechazar la hipesis de que las series estudiadas están cointegradas. 
+Al no existir cointegraci de las series expresadas en niveles entonces el análisis debe realizarse sobre las diferencias -con las implicaciones de pérdida de informaci que ya se han discutido-. 
+Las pruebas de causalidad de Granger sobre las primeras diferencias son las siguientes: 
+GRANGER CAUSALITY TEST  
+NULL HYPOTESIS: (FORTH LAGS)  F-statisic  Probabiltity  
+DIATR is not Granger Caused by DFINSPR  2.054228  0.0912  
+DFINSPR is not Granger Caused by DIATR  1.857741  0.12  
+GRANGER CAUSALITY TEST  
+NULL HYPOTESIS: (EIGTH LAGS)  F-statisic  Probabiltity  
+DIATR is not Granger Caused by DFINSPR  1.536201  0.1545  
+DFINSPR is not Granger Caused by DIATR  0.997639  0.4429  
+GRANGER CAUSALITY TEST  
+NULL HYPOTESIS: (TWELVE LAGS)  F-statisic  Probabiltity  
+DIATR is not Granger Caused by DFINSPR  2.735332  0.0035  
+DFINSPR is not Granger Caused by DIATR  1.023648  0.435  
+
+Se realizaron pruebas a cuatro, ocho y doce rezagos, de las cuales so es posible rechazar la hipesis nula de que las primeras diferencias de los instrumentos de ahorro tradicionales reales (DIATR) no son causadas por las primeras diferencias del financiamiento al sector privado real (DFINSPR) con rezagos de 4 y 12, pero icamente para niveles de significancia mayores a 0.05 y 0.025, respectivamente. En el primer caso la F de tablas es 2.45 y en el segundo caso ésta es 2.89. Con ocho rezagos, la hipesis nula no se puede rechazar en ning caso. 
+De aceptarse niveles de significancia mayores a los mencionados podría determinarse que, en el período considerado, los cambios en la captaci de instrumentos de ahorro tradicionales son explicados por los cambios en el financiamiento al sector privado ocurridos en períodos previos. con lo cual, se tendría un efecto demanda como el sugerido por Hugh T. Patrick, ya tratado en el primer capítulo. Cabe selar, no obstante, que los resultados de las pruebas no son contundentes ya que son suceptibles al nero de rezagos y al nivel de significancia con que se decida trabajar. 
+La falta de relaci estadística entre las variables era de suponerse, debido a la represi financiera del sistema bancario durante la mayor parte del período estudiado, en donde se obliga la banca a seguir una política selectiva en el otorgamiento del crédito. 
+Para aislar estos efectos se realizun segundo ejercicio de cointegraci para el período abril de 1989 -mayo 1993. se tomcomo punto de partida abril de 1989 ya que en esa fecha se liberaron las tasas de interés sobre depitos (medida que se suma la liberaci en el otorgamiento del crédito) y además -sin descartar un cierto rezago que puede verse en la gráfica-es el momento a partir del cual las gráficas de ambas series parecen exhibir la misma tendencia. 
+INSTRUMENTOS DE AHORRO TRADICIONALES Y FINANCIAMIENTO AL SECTOR PRIVADO 
+BANCA COMERCIAL 
+
+000  
+Ene-83 FUENTE:  Ena-84  Ene-85  Ene-86 Ene-87 Ene-88 Ene-89 Ene-90 Ene-91 mean Indicadores Econicos del banco de Mex,co (va00$ neros)  Ene-92  Ene-93  
+
+Los resultados fueron los siguientes: 1) Se realizaron las pruebas correspondientes para determinar el orden de integraci de cada una de las series, de donde al probar para 1(0) se obtuvo que los valores del estadístico son menores en términos absolutos para cualquiera de los niveles de significancia de MacKinnon (como se observa en los cuadros), por lo cual no se puede rechazar la hipesis de existencia de raíces unitarias. 
+AUGMENTED DICKEY-FULLER UROOT(T, 1 )IATR  
+DICKEY-FULLER t -STATISTIC  -2 .4410  
+MACKINNON CRITICAL VALUES  1%  -4.1630  
+5%  -3.5066  
+10%  -3.1828  
+
+AUGMENTED DICKEY-FULLER UROOT(T,1) FINSPR DICKEY-FULLER t -STATISTIC -1 .0372 
+MACKINNON CRITICAL VALUES 1% -4.1630 5% -3.5066 10% -3.1828 
+2) Como paso siguiente, se probsi las series también son procesos integrados de orden uno, como en el caso anterior. Se encontrque en ambos casos, a un nivel de significancia de 1 %, no se puede rechazar la hipesis nula de existencia de raíces unitarias. Los datos se presentan en los siguientes cuadros: 
+AUGMENTED DICKEY-FULLER UROOT(T,2) D(IATR)  
+DICKEY-FULLER t-STATISTIC  -4.0909  
+MACKINNON CRITICAL VALUES  1%  -4.1728  
+5%  -3.5212  
+10%  -3.1854  
+
+AUGMENTED DICKEY-FULLER UROOT(T,2) D(FINSPR) DICKEY-FULLER t -STATISTIC -3.7671 
+MACKINNON CRITICAL VALUES 1% -4.1728 5% -3.5112 10% -3.1854 
+3) El resultado obtenido lleva realizar la prueba de raíces unitarias para buscar un proceso 1(2)17 y, como se puede observar en los datos de los cuadros que se presentan a continuaci, es posible rechazar la hipesis de presencia de raíces unitarias para cualquier nivel de significancia de MacKinnon, por lo que las series son procesos integrados de orden dos. 
+AUGMENTED DICKEY-FULLER UROOT(T,4) D(IATR,2) DICKEY-FULLER t -ST ATISTIC -4.6279 
+MACKINNON CRITICAL VALUES 1% -4.1896 5% -3.5189 10% -3.1898 
+AUGMENTED DICKEY-FULLER UROOT(T.4) D(FINSPR,2) DICKEY-FULLER t -STATISTIC -5.1287 
+MACKINNON CRITICAL VALUES 1% -4.1896 5% -3.5189 10% -3.1898 
+4) De las pruebas realizadas se sabe que ambas series son procesos integrados de orden 2, de modo que es posible aplicar la prueba de cointegraci, de dicha prueba se desprende que no es posible rechazar la hipesis nula de existencia de raíces unitarias en los errores para cualquier valor crítico de MacKinnon lo cual se muestra en el siguiente cuadro: 
+ENGLE-GRANGER D(FINSPR)  COINTEGRATION  TEST  UROOT(T,1)  D(IATR)  
+DICKEY-FULLER t-SATATISTIC MACKINNON CRITICAL VALUES  1% 5% 10%  -2.7620 -4.6725 -3.9882 -3.6510  IATR FINSPR TREND  COINT. VECT. 1 -0.818434 -0.407437  
+
+17 Debe mencionarse que se realizuna prueba de cointegraci para ambas series como procesos 1-( 1) sin tomar el valor critico de MacKinnon al 1%, sin embargo, no se puede rechazar la hipesis de existencia de raices unitarias en los errores. 
+Con esto se sabe que no existe relaci estadística ambas variables para el subperiodo estudiado y que la varianza de los errores aleatorios tenderá a crecer con el tama de la muestra. 
+Como paso siguiente se realizaron pruebas de causalidad de Granger: 
+GRANGER CAUSALITY TEST  
+NULL HYPOTESIS: (FORTH LAGS)  F-statisic  Probabiltity  
+DIATR is not Granger Caused by DFINSPR  1.706863  0.1699  
+DFINSPR is not Granger Caused by DIATR  2.155641  0.0939  
+GRANGER CAUSALITY TEST  
+NULL HYPOTESIS: (EIGTH LAGS)  F-statisic  Probabiltity  
+DIATR is not Granger Caused by DFINSPR  1.942027  0.0998  
+DFINSPR is not Granger Caused by DIATR  2.108202  0.07555  
+GRANGER CAUSALITY TEST  
+NULL HYPOTESIS: (TWELVE LAGS)  F-statisic  Probabiltity  
+OIATR is not Granger Caused by DFINSPR  1.081840  0.4469  
+DFINSPR is not Granger Caused by DIATR  1.399440  0.2847  
+
+Como en el caso anterior, el rechazo de la hipesis nula depende del nero de rezagos y del nivel de significancia que se escoja. Por ejemplo, con un nivel de significancia de 0.05 en ning caso es posible rechazar la hipesis nula de no causalidad; sin embargo, a 8 rezagos y con un nivel de significancia del 10% dicha hipesis podría rechazarse en ambos casos, por lo que los resultados de estas pruebas no son robustos a lo largo de las diferentes estructuras de resagos. 
+Como conclusi del presente ejercicio, se puede decir lo siguiente: 
+1) En el primer caso las series en niveles no se cointregran, por lo que es necesario realizar el análisis sobre las diferencias con la pérdida de informaci de largo plazo que éllo conlleva. Las pruebas de causalidad de Granger presentan resultados débiles debido a que dependen del nero de rezagos y del nivel de significancia que se escoja. 
+Este ejercicio se realizpara un período que incluye los efectos de la represi sobre el sistema, por lo que se pensen la existencia de posibles distorsiones en el comportamiento del crédito y la captaci bancaria, así, se procedia realizar un segundo ejercicio para el lapso abril de 1989 mayo de 1993, que excluye dichos efectos. 
+2) En el segundo caso tampoco existe cointegraci de las series en niveles, por lo que su análisis debe realizarse sobre las diferencias. Las pruebas de causalidad no presentaron resultados robustos. 
+En la gráfica que se presenta al principio de este apartado se puede observar un aumento en el nivel de financiamiento otorgado por la banca comercial al sector privado a partir de la liberaci en el control del mismo; sin embargo, la relaci que muestra la captaci en instrumentos tradicionales de ahorro con el movimiento del financiamiento al sector privado resulta un tanto errática, ya que se distinguen partes en donde la captaci va en descenso y el financiamiento aumenta. 
+Esto timo, en conjunci con el resultado de no cointegraci de las series en niveles en el segundo ejercicio y la falta de robustez de las pruebas de causalidad. lleva a cuestionar la eficiencia con la que la banca comercial desarrolla su funci de intermediario financiero. Si bien, el financiamiento total otorgado por la banca comercial a la economía es el resultado no so de la captaci directa, sino de la captaci total, que incluye la interbancaria y la de acredores por reporto, el hecho de que dicho financiamiento no tenga relaci estadística con la captaci directa -que es una fuente más barata de recursos para los bancos-en presencia de un amplio diferencial de las tasas de interés pasivas y activas, muestra que mientras los bancos puedan seguir realizando negocios redituables con otro tipo de instrumentos de captaci, la liberalizaci del sistema no producirá los incentivos necesarios para que la banca incremente su eficiencia y amplíe sus redes de captaci directa, lo cual repercute en el encarecimiento del crédito. 
+El problema de mecanismos no compatibles con los incentivos en el caso de la liberalizaci del sistema financiero mexicano debe ser revisado a la luz de su estructura competitiva, ya que al parecer dicho sistema mantiene una estructura oligopica que elimina la posibilidad de competencia vía precios, a pesar de la liberaci de las tasas de interés, y le permite otorgar financiamiento basado en una captaci con instrumentos más caros que la tradicional. Sin embargo, éste es un tema que por su amplitud se escapa a los objetivos y posibilidades del presente trabajo. 
+Conclusiones. 
+Como se dijo anteriormente, la idea de realizar este trabajo surgide la observaci de que, a partir de 1988, se inicien el país la implementaci de una serie de políticas tendientes a liberalizar el sistema financiero, y que son parte de una estrategia más amplia de liberalizaci econica. 
+Estas políticas, como también se ha mencionado con anterioridad, parten del supuesto de que el sector financiero y la regulaci del mismo pueden afectar el desarrollo y el crecimiento econico. 
+Sin embargo, al estudiar los desarrollos teicos sobre el tema , se encontrla existencia de amplias discrepancias en torno al papel que el sector financiero desempe en el crecimiento econico, sobre todo en lo que corresponde al sentido de la causalidad . ¿Es el desarrollo del sistema financiero el que impulsa el crecimiento econico? o ¿es este timo. mediante el incremento en la demanda de recursos, el que promueve el crecimiento del sector financiero? 
+Los modelos teicos de los as sesenta y setenta, iniciados por McKinnon y Shaw, intentaron dar respuesta a este problema. En dichos modelos se argumenta que el sentido de la causalidad va del sector financiero a la economía en su conjunto. Los primeros trabajos empíricos que intentaron probar lo anterior mostraron que los palses con sectores financieros poco desarrollados, o reprimidos, tradicionalmente han presentado tasas bajas de crecimiento, que han llegado incluso a ser negativas. No obstante, a través de estos modelos no fue posible aislar claramente los efectos de ambas variables. 
+Es con el desarrollo de los modelos de crecimiento endeno o de dos vías, que se presentaron durante los as ochenta, cuando se logra dar un paso teico determinante en la explicaci del feneno, ya que dichos modelos permiten la retroalimentaci de las variables. Así, el problema de la doble causalidad es resuelto y, teicamente, es posible determinar un impacto positivo del desarrollo del sistema financiero en la economía. 
+Si bien la teoría ha avanzado en la resoluci de sus problemas, otro es el caso en lo que se refiere a la implementaci de las políticas. La liberaci de los sistemas financieros no es un tema nuevo, ya que ha sido probada en varios países subdesarrollados, en diferentes momentos histicos, con resultados que muestran una gran variabilidad. Con algunos casos en donde se ha observado un relativo éxito; como en el espa"'ol o neozelandés, y otros en donde se han desencadenado graves crisis financieras como el argentino y chileno. 
+La diferencia entre estos casos, al parecer, ha sido el ritmo con el que las medidas se han introducido al sistema; y, más importante, la consistencia en la aplicaci de las políticas macroeconicas. Ya que en Chile y Argentina se liberalizel sistema sin un adecuado control de la inflaci y sin la completa liberalizaci de la economía. 
+Por otro lado, en los países desarrollados también se han implementado políticas de liberalizaci financiera, provocadas por la pérdida de competitividad del sector bancario con el resto de los intermediarios. En esos países la principal preocupaci producida por la mencionada liberalizaci gira en torno al riesgo de las operaciones bancarias (por la presencia del seguro sobre depitos) y al hecho de la existencia de una competencia del sector bancario con el resto de los intermediarios, con diferentes reglas del juego que ponen en desventaja a los bancos. 
+Las anteriores lecciones fueron de gran importancia para México, ya que en el proceso de liberalizaci econica han habido avances en la consistencia de las políticas macroeconicas (control de la inflaci, apertura externa, reforma tributaria, control del gasto plico etc.), que son las bases para manejar una economía con un sistema financiero liberalizado. 
+Sin embargo, las recomendaciones de instituciones como el F.M.I., que han recogido los resultados de procesos de liberalizaci en diversos países, insisten en mejorar los sistemas de regulaci y supervisi bancaria con el fin de disminuir el riesgo en las actividades de la banca. 
+En este trabajo se realizaron dos ejercicios de series de tiempo, ambos siguen el planteamiento del Banco Mundial en el sentido de que para que la liberalizaci financiera impacte al crecimiento econico, es necesario que se den primero algunas relaciones intermedias, su finalidad es servir como un primer acercamiento a la medici de los efectos de la liberalizaci de tasas de interés en la captaci de recursos por parte de la banca, y al estudio de la relaci que existe entre captaci y financiamiento al sector privado. 
+En el primero, con el supuesto de que la liberalizaci de las tasas de interés sobre depitos deberá incrementar el ahorro en instrumentos tradicionales, se hace un análisis de intervenci que busca determinar la existencia de efectos de largo plazo en el comportamiento de dicho ahorro, producidos por el cambio en las políticas de tasas de interés, encontrándose que so es posible explicar un salto en la serie, pero que después de éste no se puede aceptar la hipesis de un cambio estructural en el comportamiento de la variable. 
+En el segundo, bajo el supuesto de que un aumento en la captaci mediante instrumentos de ahorro tradicionales deberá ser canalizado al financiamiento del sector privado -como condici necesaria aunque no suficiente 1 _, para que exista un impacto positivo de la liberalizaci financiera en la economía, se realizun análisis de cointegraci de las series, instrumentos tradicionales de ahorro y financiamiento al sector privado, en el que se buscdeterminar la existencia de una relaci estadística de equilibrio entre las variables, para posteriormente realizar pruebas de causalidad. 
+El resultado fue que no se sostiene la hipesis de cointegraci de las series en niveles para el periodo considerado, de modo que no se puede determinar relaci estadística de equilibrio entre ambas. 
+Por otro lado, se obtuvieron resultados muy débiles de las pruebas de causalidad de Granger, por lo que no fue posible determinar alg tipo de relaci causal entre las variables. 
+Los resultados obtenidos llevan a realizar dos preguntas que tienen que ver con el papel de intermediario financiero de la banca comercial: 
+1 La no suficiencia de esta condici radica en el hecho de no considera la eficiencia con la que el sector privado invierte los recursos provenientes del sistema financiero. 
+¿Por qué la liberaci de las tasas de interés no impacta sustancialmente al comportamiento del ahorro en instrumentos tradicionales? ¿Por qué no existe relaci estadística entre la captaci mediante estos instrumentos y el financiamiento al sector privado?. 
+La respuesta a estas interrogantes se escapa al esfuerzo realizado en el presente trabajo; sin embargo, cabe selar que a partir de la liberaci de las tasas de interés sobre depitos no se ha intensificado la competencia entre los bancos -vía precios-por captar recursos mediante estos instrumentos. Por otra parte, en el caso del financiamiento al sector privado, el hecho de que la banca pueda financiar -producto del diferencial de las tasas de interés pasivas y activas-los créditos que otorga mediante otro tipo de captaci -tal como la interbancaria y la de acreedores por reporto, que en la mayoría de los casos tiene un costo mayor-, desestimula la profundizaci bancaria. 
+Un trabajo futuro sobre este tema deberá centrar su atenci en responder por qué en el caso mexicano las políticas de liberalizaci financiera no han tenido el existo esperado y en ese sentido, sin descuidar el análisis de las políticas macroeconicas, requerirá tener cuidado especial en el comportamiento microeconico de los agentes, analizando profundamente el tipo de incentivos producidos por las medidas implementadas. 
+Bibliografía 
+Aguirre, Ernesto (1992). Elementos de Regulaci y Supervisi Bancaria. Análisis y Recomendaciones, Fondo Monetario Internacional (Documento de trabajo), pp. 41. 
+Arellano, Rogelio (1993). "Relaci de Largo Plazo del Mercado Bursátil Mexicano con el Estadunidense. Un Análisis de Cointegraci", en: El Trimestre Econico, vol.60, n. 
+237. Fondo de Cultura Econica, pp. 91-112. 
+Asociaci Mexicana de Bancos (1991). "La Banca Mexicana en Transici: Retos y Perspectivas", en: Comercio Exterior. vol. 41, n.2, Banco Nacional de Comercio Exterior, pp. 44. 
+Aspe. Pedro (1993). El Camino Mexicano de la Transformaci Econica, Fondo de Cultura Econica, México, pp. 215. 
+Banco de México. Indicadores Econicos, varios neros. 
+Banco Mundial (1989). Informe sobre el Desarrollo Mundial 1989, 1a. ed., Washington, D.C., pp. 280. 
+Barro, R. J. (1986). Macroeconomía, McGraw-Hill, 1a. ed., México, pp. 562. 
+Barro, R. J. (1991). "Economic Growth in a Cross Section Countries", en: Quaterly Journal of Economics, pp. 407-443. 
+Bencivenga, B. Valerie y Bruce D. Smith (1991). "Financia! lntermediation and Endogenous Growth", en: Review of Economic Studies, n. 58, pp. 195-209. 
+Borja, Francisco (1991 ). El Nuevo Sistema Financiero Mexicano, Fondo de Cultura Econica, 1a. ed., México, pp. 262. 
+Brothers. D. S., y Leopoldo Solís (1967). Evoluci Financiera de México. Centro de Estudios Monetarios Latinoamericanos, México, pp. 308. 
+Buffie, Edward F. (1984). "Financia! Represion. The New Structuralists and Stabilization Policy in Semi-lndustrialized Economies". en: Journal of Development Economies. n.14, pp. 305-322. 
+Cardero. María Elena. et. al. (1985), "Cambios Recientes en la Organizaci Bancaria y el Caso de México", en: Quijano, José Manuel (Compilador) La Banca Pasado y Presente, Centro de Investigaci y Docencia Econica, 2da. imp., México, pp. 161-219. 
+Centro de Investigaciones para el Desarrollo (CIDAC) (1990). El Sistema Financiero Mexicano: Alternativas para el Futuro, Diana, 1 a. ed., México, pp.113. 
+Cho, Yoon J.E. (1988). "The Effect of Financia! Liberalization on the Efficiency of Credit Allocation. Sorne Evidence of Korea", en: Journal of Development Economics, n. 29, pp. 101-110. 
+Comisi Nacional Bancaria. Boletín Estadístico de Banca Mtiple, México, varios neros. 
+Comisi Nacional Bancaria (1993). Banca Mtiple, 1982-1992, México. 
+Couradi, Valentina, M. Galeotti, y R. Robeli (1990). "A Cointegration Analisys of the Relationship between Bank Reserves, Deposits and Loans. The Case of ltaly 1965-1987", en: Journal of Banking and Finance, n. 14, pp. 199-214. 
+Dale, Richard. (1992). /nternational Banking Deregulation, U.S.A. 1 a. Ed . Blackwell, pp. 
+211 . 
+Dávila, Alejandro (1986). La Crisis Financiera en México, Ediciones de Cultura Popular, 1a. ed., México, pp. 227. 
+De Juan, Aristulo (1987). From Good Bankers to Bad Bankers. /neffective Supervision and Management Deterioration as Majar Elements in Banking Crisis. Mimeo. 
+Doan, Thomas A. (1992). RA TS, versi 4.0, Estima, Evanton, 11. 
+Emmerij, Louis (1992). "Las Transferencias de la Economía Mundial y el Financiamiento del Desarrollo Latinoamericano", en: Comercio Exterior, vol. 42, n. 10, Banco Nacional de Comercio Exterior, México. 
+Engle, R.F. y C.W.J. Granger (1987). "Co-integration and Error Correction: Representation, Estimation and Testing", en: Econometrica, n. 55, pp. 251-276. 
+Fry, Maxwell J. (1982). "Models of Financially Represed Developing Economies", en: World Developement, vol.1 O, n. 9, pp. 731-750. 
+(1990). Dinero Interés y Banca en el Desarrollo Econico, CEMLA­FEPLAN, 1a. imp., México, pp. 525. 
+Greenwood, Jeremy y B. Jovanovic (1990). "Financia! Development Growth and the Distribution of lncome" en: Journa/ of Política/ Economy, n. 5, vol. 98, pp. 1076-1107. 
+González M., Héctor (1993). "Desregulaci Financiera en México", en: Monetaria, abril­junio, pp. 177-219. 
+Gupta, Kanhaya L. (1987). "Aggregate Savings, Financia! lntermediation and lnterest Rate", en: The Review of Economics and Statistics, mayo, pp. 303-311. 
+James Capeal Mexican Research (1992). The Mexican Banking Sector, pp. 77. 
+Jansen, Karel (1990). Finance Growth and Stability, Avebury, Great Britain, pp.255. 
+Kapur, K. Basant (1992). "Formal and Informal Financia! Markets and the Neoestructuralist Critique of the Financia! Liberalization Strategy in Less Developed Countries", en: Journal of Developement Economics, n . 38, pp. 63-77. 
+Lilien David M. (1990). TSP, Quantitative Mivro Software, lnwin, Calif. 
+Mancera, Miguel (1993). "Discurso en la Recepci del Premio de Economía Rey Juan Carlos", en: El Trimestre Econico, Fondo de Cultura Econica, vol. XL, n. 237, enero-marzo, pp. 212-229. 
+Márquez. Javier (1987). La Banca Maxicana: Septiembre de 1982-Junio de 1985, CEMLA, 1er. ed. , México, pp. 299. 
+Martínez, Alberto (1991). La Regulaci y Supervisi de la Banca en México, Comisi Nacional Bancaria, Documento Interno, México, pp. 98. 
+McKinnon, Ronald l. (1982). "The Order of Economic Liberalization. Lessons from Chile and Argentina", en: Camegie Rochester Conference Series on Public Policy. n. 17, pp. 159-186. 
+(1983). Dinero y Capital en el Desarrollo Econico, CEMLA, 2da. ed., México. pp.219. 
+Mcleod, Alex N. (1984). The Principies of Financia/ lntermediation, University Press of América, 1a. ed., New York, pp. 237. 
+Mayer, Helmut, et. al. (1988). "Financia! Market Sructure and Regulatory Change", en: European lnvestiment Bank. lnnovation, Tecnology and Finance, Arnold Heertje, 1er. ed., Great Britain, pp. 211 . 
+Meier, Gerald M. (1989). Leading lssues in Economic Development, Oxford University Press, Oxford, pp. 560. 
+Mills, Terence C. (1990). Time Series Techniques for Economists, Cambridge University Press, 1a. Ed., New York, pp. 377. 
+Moriset, Jaques (1993). "Does Financia! Liberalization Really lmprove Private lnvestment in Developing Countries?", en: Jouma/ of Developing Economics, n. 40, pp. 133-150. 
+North, C. Douglas (1984). Estructura y Cambio en la Historia Econica, Alianza Universidad, Madrid, pp. 244. 
+Ortiz M., Guillermo y Leopoldo Salís (1979). "Financia! Structure and Exchange Rate Experience, México 1954-1977", en: Joumal of Development Economics, n. 6, pp. 515­548. 
+Patrick, Hugh T. (1966). "Financia! Development Countires", en: Economic Development ~nd Cultural Change, vol. 14, n. 2, pp. 174-177. 
+Sala-i-Martin, Xavier (1991 ). Lecture Notes on Economic Growth: lntroduction to the Literature and Neoclassical Models, Yale University, Discussion Paper n. 621 , pp. 44. 
+(1991 ), Lecture Notes on Economic Growth: Five Prototype Models of Endogenous Growth. Yale University, Discussion Paper, n. 622, pp. 48. 
+Sala-i-Martin, Xavier y N. Roubini (1991). Financia/ Development the Trade Regime and Economic Growth, Vale University. Discussion Paper, n 646, pp.53. 
+_____ (1992). A Growth Model of lnflation, Tax Evation and Financia/ Represion, Yale University, Discussíon Paper, n. 658, pp. 40. 
+Shaw. Edward S. (1973). Financia/ Deepening in Economic Development, Oxford University Press, New York, pp. 81-87. 
+Solís, Leopoldo (1984). "El Sistema Financiero Mexicano y la Política Monetaria: Evoluci y Perspectivas", en: Demografía y Economía, vol. XVIII, n. 4, El Colegio de México, México, pp. 533. 
+Solis-Fallas, Otton y Dorian P. Owen (1989). "Unorganized Money Markets and Unproductive Assets in the New Structuralist Critique of Financia! Liberalization", en: Journal of Developement Economics, n. 31, pp. 341 -355. 
+Taylor, Lance (1986). Modelos Macroeconicos para Países en Desarrollo, Fondo de Cultura Econica, México, pp. 358. 
+Thorne, Alfredo (1988). Why a Market Solution to Financia/ Crisis Might Be lnfeasible, The Case for Reestructuring of Financia/ Systems through the Analysis of Twelve Cases. 
+Banco Mundial, pp. 47. 
+Zahler, Roberto (1986). "Politica Monetaria y Política Financiera", en: Cortázar, René (Compilador), Polfticas Macroeconicas. Una Perspectiva Latinoamericana, Grupo Editorial Latinoamericano, Argentina, pp. 158-211. 
+Anexo 1 
+El estadístico de Ljung-Box es : 
+,jc I k 1 }?/\ 
+Q = n ( n + 2 ) ¿ (n -1 ) -r -( a ) 
+1
+1= 1 
+con: 
+n· = n-(d + LO) donde n es el nero de observaciones en las series de tiempo originales, L es el nero de estaciones o temporadas en el a (si las series de tiempo muestran variaciones estacionales) y d, D son, respectivamente los grados de diferenciaci no estacional y estacional usados para transformar la serie de 
+'• , 
+tiempo original en una con valores estacionarios; r12(a) es el cuadrado de r1 (a) las autocorrelaciones muestrales de los errores al rezago 1, esto es las autocorrelaciones muestrales de los residuos separadas por un rezago de 1 unidades de tiempo. 
+Se usa este estadístico para probar que el modelo sea adecuado de la siguiente 
+manera: 
+El proceso de modelaci supone que existe relaci entre las series de tiempo. Si existe dicha relaci entonces los residuos no deben estar relacionados y la autocorrelaci de los mismos debe ser peque. Por lo tanto Q* debe ser peque. Entre mayor sea Q*, mayor será la autocorrelaci de los residuos y más relacionados estarán. Por lo tanto un valor elevado de Q* indica que el modelo no es adecuado. Se puede rechazar el modelo fijando la probabilidad de cometer un error de tipo 1 igual a a sí so sí se tienen cualquiera de las siguientes condiciones equivalentes: 
+1. Si Q* es mayor que x:0/k -np), el valor en la escala de la distribuci chi­
+cuadrada teniendo k-np grados de libertad, entonces el modelo tiene sentido ya que los errores no presentan autocorrelaci de orden elevado. 
+2. El valor probabilístico es menor que a., donde dicho valor representa el área 
+bajo la curva de la distribuci chi-cuadrada con k -np grados de libertad a la derecha de Q*. 
+Frecuentemente, a. es tomada con un valor de 0.05 pero esta elecci no es obligatoria. Usualmente, sin embargo, se escoge a. entre 0.01 y 0.05. Si el valor probabilístico es menor que 0.01 el modelo carecerá de sentido. 
+Anexo 2 
+A continuaci se describen algunas propiedades de los procesos integrados 1(0) e 1(1 ): 
+SiX,-1(0): 
+(i) 
+la varianza de X, es finita 
+
+(ii) 
+una innovaci tiene so un efecto temporal en X, 
+
+
+(iii) las autocorrelaciones rk, decrecen establemente en magnitud para una k suficientemente grande por lo que su suma es finita. 
+SiX,-l(l) : 
+(i) 
+la varianza de X, va a infinito cuanto t crece a infinito. 
+
+(ii) 
+Una innovaci tiene un efecto permanente sobre el valor de X, porque X, es la suma de todos los cambios anteriores 
+
+
+(iii) las autocorrelaciones, rk tienden a uno para toda k en la medida de que t tiende a infinito. 
+Debido al tama relativo de las varianzas la suma de series 1(0) e 1(1) será 1(1) . 
+Anexo 3 
+Una serie es definida como débilmente estacionaria si tiene una media finita, varianza finita y covarianzas finitas, todas las cuales son independientes del tiempo. Para ilustrar la prueba ampliada de Dickey-Fuller considere el siguiente proceso AR(1 ): 
+Y, =m+ pY -1+ e, 
+En donde m y p son parámetros y et es independiente e idénticamente distribuido con media cero y varianza constante. El proceso Ar(1) es estacionario si -1< p < 
+1. Si p = 1 la ecuaci define un camino aleatorio con tendencia, y por lo tanto Y, es no estacionaria. Si el proceso inicia en un punto específico, la varianza de Y, se incrementa establemente con el tiempo, de tal manera que crece a infinito. Si p tiene un valor absoluto mayor que uno, la serie crece explosivamente; por lo tanto, la hipesis nula crucial para probar la no estacionariedad es que el valor absoluto de p sea iguala a uno. Debido a que las series econicas están casi siempre positivamente correlacionadas, la hipesis nula apropiada es: 
+Ho: p = 1 
+Y la prueba de esta hipesis es una prueba de raíces unitarias. 
+La manera más simple de probar esta hipesis nula es mediante la especificaci de la ecuaci AR(1) como: 
+D(Y) =m+yY -1 +e, 
+En donde y = p -1, y D(Y) son las primeras diferencia de la serie Y, esto es Y -Y -1. Por lo tanto, la hipesis nula es ahora: 
+Ho: y= O Los mínimos cuadrados producen un estimador de y y un estadístico t para probar su significancia. Sin embargo, el estadístico t no puede ser referido a los valores críticos en la tabla estándar para valores de t, dado que bajo la hipesis nula Y, es no estacionaria y esta tabla no se aplica. Para comparar esta t se utilizan las tablas construidas por Fuller. El TSP1 contiene los valores críticos de MacKinnon contra los cuales se puede comparar la t obtenida de la regresi de Dlckey-Fuller. 
+La generalizaci a procesos de orden elevado se puede realizar de la siguiente manera: 
+Siendo L un operador de rezago, donde LY =Y -1 , en general un proceso autorregresivo de orden p puede ser escrito como: 
+A(L)Y =m+e, 
+donde A(L) es un polinomio de orden p en el operador de rezago, esto es: 
+
+Reemplazando L por 1 tenemos: 
+
+por lo que A(1) indica la suma de todos los coeficientes en el proceso autorregresivo. Para probar si el proceso de p-ésimo orden tiene raíces unitarias , se reescribe A(L) como: 
+A(L) = (l-pL)B(L) 
+en donde B(L) es un polinomio de grado (p-1) en el operador de rezagos. 
+Sustituyendo L por uno en la expresi anterior se tiene: 
+1 Lilien (1990. pp 16-1,16-11). 
+A( l) =(1-p)B( 1) 
+Por lo tanto, si el proceso tiene una raíz unitaria entonces A(l) es igual a cero, esto es, la suma de los coeficientes autorregresivos será cero. La estimaci de proceso AR(p) produce estimadores de los coeficientes cx.i. 
+Anexo 4 
+La prueba ampliada de Dickey-Fuller 1 consiste en correr una regresi de las primeras diferencias de las series en contra de las series rezagadas una vez, series en diferencias rezagadas y, de manera opcional, una constante y una tendencia. Por ejemplo, si se intenta probar si un proceso es integrado de orden cero se corre una regresi de mínimos cuadrados como la siguiente: 
+t = P1Yt-1 + P26Yt-1 + P26Yt-2 + C + Tendencia. 
+en donde 6Yt son las primeras diferencias de la serie Y. 
+La prueba de raíces unitarias es una prueba sobre el coeficiente P1 de Yt-1, si este es significativamente diferente de cero entonces se rechaza la hipesis de que Y contiene raíz unitaria;. esto es, se acepta la hipesis de que Y es un proceso estacionario (integrado de orden cero). 
+La salida de TSP provee el valor del estadístico t sobre el coeficiente de la variable rezagada y los valores críticos de MacKinnon contra los cuales debe compararse. Si el valor del estadístico de Dlckey-Fuller es más negativo que el presentado pos los valores críticos se rechaza la hipesis de existencia de raíces unitarias. 
+Para probar si el proceso es 1(1) se corre la regresi en segundas diferencias y así sucesivamente. 
+1 Ver: Are llano ( 1993. p.109) para aplicaci. 
+Anexo 5 
+El Teorema de Representaci de Granger1 (Engle y Granger 1987) muestra que si X, y Y, son ambos procesos 1(1) y están cointegrados, entonces existe una representaci de correcci de error, con Z, =Y, -aX, , de la forma: 
+M(B)t1Yt = ro1(B)t1Xt-y1Zt-1 +0(B)Et 
+en donde Et es ruido blanco y o= 1. El caso univariado sin retroelimentaci de Y, a X, que está representado en la ecuaci anterior, es el caso típico utilizado en la mayoría de los ejemplos empíricos del comportamiento de la correcci de error. 
+Un caso especial commente utilizado con fines didácticos es el siguiente: 
+t1Yt = Q + ro1.!1Xt + y(Yt-1 -Xt-1) + Et 
+Aquí el término de error no tiene parte de media mil, el mecanismo de correcci de error MCE presupone que el parámetro de cointegraci es la unidad. Esta clase de formulaci permite ver fácilmente las propiedades esenciales del modelo. 
+Todos los términos en la ecuaci anterior son 1(0), por lo que no surgen problemas de inferencia. Cuando t1Yt =L1Xt =O el equilibrio de estado estable 
+Yt -Xt = roo/y 
+es reproducido y la senda de crecimiento de estado estable obtenida cuando t1Yt =.!1Xt =g toma la forma : 
+Yt-Xt = (roO -g( 1-ro1)] /y 
+1 Arellano (1993. pp.107-108), desarrolla un ejemplo aplicado. 
+Como corolario el Teorema de la Representaci también implica que si Xt y Yt son ambos 1(1) y tienen una representaci de correcci de errores entonces están necesariamente cointegrados.2 
+2 Milis (1992, p. 276). 
+Anexo 6 
+El análisis de cointegraci y los modelos de correcci de errores permiten comprobar la existencia de retroalimentaci de las variables. Del Teorema de la Representaci de Granger se sigue que si Xt y Yt son ambos 1(1) y están cointegrados, entonces siempre existe un par de mecanismos de correcci de errores, lo que permite que la ecuaci del mecanismo de correcci de errores presentada en el anexo 3 pueda ser sustituida por: 
+
+0(8) es la misma en ambas ecuaciones . Dado que :r1: + :r2: -:1; O, el término de correcci de errores Zt-1 debe entrar en una o en ambas ecuaciones y, si entra en ambas entonces ninguna variable puede ser considerada como débilmente exena 1. 
+El paquete TSP provee la prueba de causalidad de Granger2, la cual consiste en observar dadas dos series (X,Y) en qué cantidad Y puede ser explicada por los valores pasados de Y y ver si adicionando valores pasados de X es posible mejorar la explicaci. Se dice que Y es causada por X si esta tima ayuda en la predicci de Y, o de modo equivalente si los coeficientes de los valores rezagados de X son estadísticamente significativos. Es importante observar que si se prueba que X muestra una causalidad de Granger sobre Y, esto no implica que Y sea el efecto o el resultados de X. La causalidad de Granger es una medida de precedencia de la informaci contenida, pero por sí misma no implica causalidad en el sentido com del término. 
+Lo que se obtiene en TSP son dos regresiones, una de X sobre sus propios valores rezagados y los valores rezagados de Y y otra de Y realizada de una manera similar. La prueba se realiza sobre los coeficientes de Y en la regresi de X y de X en la regresi de Y, probándose -mediante el estadístico F-en el primer caso que Y no causa X y en el segundo caso que X no causa Y. 
+1 Para un análisis completo de los conceptos de exogeneidad y causalidad ver Milis (1992, pp 289-302). 2 Ver: Corradi (1990. pp.205-209). 
+
+
+
+
+

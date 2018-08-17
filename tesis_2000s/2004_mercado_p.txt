@@ -1,0 +1,318 @@
+, ,
+MAESTRIA EN ECONOMIA 
+, 
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA 
+ANÁUSIS DE LA VOLATIUDAD DEL MERCADO FINANCIERO A PARTIR DE LA ENTRADA DE LOS FUTUROS 
+PATRICIA MERCADO Sol.ÓRZANO 
+PROMOCIÓN 2000-2002 
+ASESOR: 
+ENEAS CALDIAO GARCÍA 
+2004 
+A mis Papas, A mis hermanos, A mis amigos, En especial a Lazaro y Theurel que me apoyaron para terminar este proyecto. A mis profesores, En especial a Eneas por haberme asesorado en esta tesis Y a ti por tener la curiosidad de hojear estas páginas. 
+Análisis de la Volatilidad del Mercado Financiero a partir de la entrada de los Futuros 
+INDICE 
+l. INTRODUCCION ....................................................................................................................... 1 
+11. CONTEXTO HISTORICO ........................................................................................................ 3 
+111. REVISION DE LA LITERATURA ......................................................................................... 4 
+3.1 Debates teicos ................................................................................................................. 4 
+3.2 Análisis Empírico .................................................................................................................. 6 
+IV. MODELACIÓN DE LA VOLATILIDAD ............................................................................... 9 Modelos GARCH ........................................................................................................................ 9 
+5. DESCRIPCIÓN DE LOS DATOS Y METODOLOGÍA ......................................................... 15 
+6. RESULTADOS ......................................................................................................................... 18 
+7. CONCLUSIONES .................................................................................................................... 25 
+8. BIBLIOGRAFÍA ....................................................................................................................... 26 
+l. INTRODUCCION 
+La volatilidad en el precio spot de cualquier mercancía perjudica al funcionamiento del mercado en el que se intercambia. El precio spot es el que se paga cuando se intercambian las mercancías o los instrumentos financieros día a día en el mercado. En particular, en los mercados financieros, la volatilidad afecta fuertemente las decisiones de inversi debido a que incrementan la incertidumbre y el riesgo financiero. En un ambiente en el que la incertidumbre y el riesgo son singularmente importantes, la posibilidad de que las pérdidas esperadas crezcan exponencialmente se incrementa y, conjuntamente con un aumento de la especulaci, se propicia una reducci en la cantidad de inversi destinada a esos mercados. 
+En México, en los timos as han ocurrido abruptos cambios en los precios spot de algunos instrumentos financieros. Tales cambios han estimulado el interés en la volatilidad del mercado con la intenci de diser productos financieros capaces de reducirla. Dentro de dichos productos se encuentran los derivados financieros, que son instrumentos cuyo precio depende del valor de una mercancía subyacente, que puede ser cualquier producto financiero con valor intrínseco propio o incluso otro derivado, y son usados, generalmente, para reducir la incertidumbre del precio del instrumento subyacente. 1 
+Los productos derivados comenzaron a intercambiarse formalmente en el país a partir de 1999. Dentro de los productos derivados más utilizados en el país se encuentran los futuros, que son contratos que garantizan a su tenedor la compra o venta de una mercancía subyacente en una fecha futura fija a un precio determinado al momento de elaborar el contrato. 
+Aunque los futuros fueron pensados como instrumentos para reducir la volatilidad en el precio de algunas mercancías, en diferentes documentos se ha mostrado que en otros países la entrada de los futuros ha aumentado la volatilidad del precio de los subyacentes, 
+1 ··Los futuros son productos derivados que pueden ser usados como un instrumento para la formaci eficiente de precios en el mercado spor y como un medio de especulaci, de inversi o de protecci contra riesgos.", Díaz Tinoco, J. (1994) 
+contrariamente a lo esperado. En México existe cierta preocupaci de que la entrada de los futuros haya influido en el aumento de la volatilidad del precio de los activos subyacentes. La hipesis mencionada ha intentado comprobarse a través de diversas metodologías. Algunos autores adjudican el aumento de la volatilidad a la especulaci que genera la entrada de los futuros. 
+El objetivo del presente trabajo es probar que, en México, la entrada de los futuros ha influido en la volatilidad del precio de la TIIE. Para lograrlo, se utilizará un modelo de la familia GARCH (Generalized Autoregressive Conditional Heteroskedasticity), en concreto se utilizará la especificaci T ARCH (Threshold Autoregressive Conditional Heteroskedasticity). 
+El trabajo se divide en seis partes: en la primera, se proporciona una breve historia del desarrollo de los contratos de futuros en el mundo y en México; en la segunda parte se realiza una breve revisi de la literatura y se mencionan y explican los artículos más relevantes en esta materia; en la tercera se presentan los modelos analíticos que van a ser utilizados para la modelaci de la volatilidad; la siguiente secci presenta la metodología utilizada para este estudio así como las características de las base de datos empleada; en la quinta se presenta el análisis del caso mexicano y, por timo, se presentan las conclusiones. 
+11. CONTEXTO HISTORICO 
+La utilizaci de los futuros de mercancías se remonta a la edad media. Sin embargo, no fue sino hasta 1848 cuando se establece la Chicago Board of Trade (CBOT) con el fin de estandarizar la cantidad y calidad del grano de referencia y reunir a los comerciantes con los agricultores (inicialmente los futuros se utilizaron para productos agrícolas). Posteriormente, en 1865, se negociaron en el CBOT los primeros Contratos de Futuro estandarizados. En 1874 se establece el Chicago Produce Exchange para la negociaci a futuro de productos perecederos y, en 1898, surgiel Chicago Butter and Egg Board. Ambas instituciones dieron origen al Chicago Mercantile Exchange (CME) que se constituycomo bolsa de futuros sobre diversos productos agroindustriales. El mercado de futuros financieros surgiformalmente en 1972, cuando el CME creel lnternational Monetary Market (IMM), una divisi destinada a operar futuros sobre divisas. 
+En México se realizaron diversos intentos de introducir derivados. Estos productos financieros se cotizaban en la Bolsa Mexicana de Valores. Por la relevancia que adquirieron en su momento son dignos de mencionar algunos ejemplos como los siguientes: en 1978 se cotizaron futuros sobre el tipo de cambio peso/dar, pero se suspendieron en 1982; más adelante, en 1983, la BMV listfuturos sobre acciones individuales y petrobonos, los cuales registraron operaciones hasta 1986; en la década de los noventa se negociaron contratos forward over the counter (OTC) sobre tasas de interés de títulos gubernamentales, pactados en forma interinstitucional, sin un marco operativo formal y fueron suspendidos a mediados de 1992. 
+No fue sino hasta diciembre de 1998 que comenza funcionar el Mercado de Derivados (MexDer). Para julio de 1999, se listaron los principales contratos que se cotizan actualmente en este mercado. En el MexDer se cotizan diversos productos derivados, destacando las opciones y los futuros. Los futuros existentes son sobre acciones individuales (Telmex, o ·FBBB, Gcarso, Cemex y Femsa), sobre el IPC, sobre el tipo de cambio peso/dar, la TIIE a 28 días, CETES a 91 días y el agregado monetario M3. De acuerdo al MexDer se prevé que más adelante, además de los futuros y las opciones, se dispondrá de otros tipos de derivados. 
+111. REVISION DE LA LITERATURA 
+3.1 Debates teicos 
+Los autores Hicks y Grossman sustentan una tesis sobre la eficiencia de los mercados de futuros (Diaz Tinoco, J., 1994). Hicks sela que estos mercados sirven para reducir o compensar las fuentes potenciales de desequilibrio y/o ineficiencia del mercado de bienes. Sostiene que la operaci de estos mercados sirve para hacer que los precios futuros sean observables, con lo que el mercado spot logra un equilibrio eficiente. Grossman, por otro lado, afirma que en una economía que cuenta exclusivamente con mercados spot es necesario reproducir varias veces las situaciones que enfrenta ese mercado en un modelo de expectativas racionales para generar la informaci relevante de mercado. Sin embargo, una economía que cuenta con mercado de futuros dispone de informaci diaria sobre precios futuros de los bienes. Ésta informaci incrementa la eficiencia de los mercados, dado que los agentes incorporan tal informaci en sus planes futuros. 
+Friedman ( 1953) sela que las especulaciones estabilizan los precios pues los especuladores exitosos tienden a comprar cuando el precio es bajo, lo que aumenta el precio, y tienden a vender cuando los precios son altos, lo que hace que éstos bajen. Aquellos especuladores no exitosos serán eliminados rápidamente del mercado, en un proceso de "selecci natural". 
+En contraste con las tesis anteriores, a lo largo de los timos as se ha visto un incremento en la volatilidad de los precios en los mercados spot tanto de mercancías como de productos financieros, pese a la existencia de los contratos futuros. Esto ha preocupado a los inversionistas que realizan transacciones en estos mercados debido a que se incrementa el riesgo financiero y existe mayor incertidumbre. 
+Una de las principales explicaciones para la volatilidad de los mercados spot es que la entrada de los futuros la ha afectado positivamente. Debido a la inserci de futuros se argumenta que ha aumentado la actividad de especulaci y una consecuente desestabilizaci en los mercados spot. Kaldor (1939) argumenta que la especulaci no es beneficiosa ( en cuanto a las ganancias) en el agregado, ya que so una peque parte de los especuladores con informaci suficiente podría obtener ganancias a expensas de un grupo grande y constantemente cambiante de especuladores no sofisticados que pierden grandes cantidades de dinero. Luego, la especulaci podría desestabilizar los precios en virtud de que los especuladores sofisticados estarían dispuestos a comprar a precios por encima del precio competitivo, si tienen la esperanza de vender a un precio más alto a los especuladores no sofisticados. En este caso, Baumol ( 1957) indica que los argumentos de estabilizaci so consideran el nivel de precios, ignorando el tiempo en que se realizan los movimientos en los precios. De acuerdo a Baumol, los especuladores compran o venden después de que un movimiento ha comenzado, lo que acelera la tendencia y la volatilidad de los precios. 
+Una explicaci alternativa es la que brinda Shiller (1986). Este autor afirma que cambios caprichosos en los sentimientos de los inversionistas, así como cambios de "las modas y novedades" pueden influenciar fuertemente a los precios en los mercados financieros. Esta hipesis no ha sido muy aceptada pues la mayor parte de los autores sigue atribuyendo el cambio en la volatilidad a la entrada de los futuros. Por tal motivo la mayor parte de los análisis teicos se han enfocado a explicar co la especulaci podría influenciar los precios de los futuros. 
+En el mercado de futuros se cree que los especuladores no informados o irracionales comercian en ambos mercados, el spot y el de futuros. Seg esta perspectiva los futuros incrementan la volatilidad. Se argumenta que estos especuladores conducen los precios hacia arriba o hacia abajo esperando obtener ganancias a corto plazo. Sin embargo, no es posible saber hasta qué punto los especuladores de futuros comercian irracionalmente. Los economistas que han estudiado teicamente la "especulaci irracional" concluyen que sería necesaria una cantidad muy grande de esa especulaci para lograr desestabilizar al mercado spot. 
+Distintos autores han utilizado estas hipesis sobre especulaci en los mercados de futuros y spot para realizar investigaciones empíricas sobre el cambio en la volatilidad de estos timos. La mayor parte de los autores sugieren que un incremento en la volatilidad es no deseable. No obstante, como se puede encontrar en el artículo de Antoniou y Holmes ( 1995) pocos autores han reconocido el vínculo entre informaci y volatilidad. Los precios, después de todo, dependen de la informaci disponible en el mercado. Como argumenta Cox ( 1976), la transacci de futuros puede alterar la informaci disponible por dos razones, la primera es que el mercado de futuros atrae nuevos inversionistas; se provoca así que el inventario de activos aumente, hecho que no ocurriría sin la existencia del mercado de futuros, lo cual cambia las expectativas de los precios. Una segunda raz, es que un mercado formal de futuros reduce los costos de transacci dado que el comercio es centralizado. La informaci de la oferta y la demanda se concentra en un mismo lugar y esta ganancia en eficiencia se refleja en el precio del futuro. 
+3.2 Análisis Empírico 
+Como se había mencionado, distintos autores han examinado la idea de si la introducci de los mercados de futuros es responsable del incremento en la volatilidad de los mercados spot. Los resultados han sido mixtos, algunos de ellos encontraron evidencia que corrobora que los futuros desestabilizan el mercado spol y otros que esto no es así. Diversas han sido las metodologías utilizadas para analizar el problema. 
+Simpson, el al (1982) estiman un modelo multivariado de series de tiempo sugerido por Helmer y Johansson. Este modelo multivariado se compone de dos ecuaciones. Ellos corrieron el modelo para tres pares de variables dependientes, los datos que utilizaron fueron los certificados Govemment National Mortgage Association (GNMA) a diez as, con periodicidad diaria y semanal, así como datos diarios y semanales de los Bonos del Tesoro de EUA. También se utilizaron datos diarios y semanales de la Federal National Mortgage Association (FNMA). En el modelo introducen una variable dummy para tomar en cuenta la entrada de los futuros, misma que asumirá un valor de cero en el periodo previo a la entrada de los futuros y 1 en el periodo posterior a ella. Más adelante los autores realizaron pruebas estructurales para indagar si las transacciones de los futuros tuvieron un impacto en la variable dependiente. Finalmente llegan a la conclusi de que la entrada de los futuros no tuvo impacto en la volatilidad. 
+Por su parte, la metodología que sigue Edwards ( 1988) es la de realizar un análisis de la volatilidad del mercado spot antes y después de la entrada de futuros, estimando la varianza por diversos métodos ( diferencias logarítmicas de los precios, estimador de varianza utilizando el precio más alto y más bajo y un estimador "intradía"). La idea es comparar las varianzas en los dos periodos. El estudio lo lleva a cabo sobre S&P 500, T-Bills, Depitos de Eurodar. Los resultados que obtiene indican que la entrada de los futuros no ha desestabilizado los mercados spot. 
+Moriarty y Tosini ( 1985) utilizan un modelo de regresi lineal corrido en dos sub etapas, encontrando colinealidad entre las variables. Para evitar este problema utilizan un modelo ARIMA. El estudio lo realizan con el GNMA. De igual forma, estos autores no encuentran evidencia de que lo futuros afecten al mercado spot. 
+Bhattacharya, A. K., y Ramjee, B. ( 1986) también utilizan los datos del GNMA, pero empleando el concepto de causalidad de Granger estiman un modelo ARIMA. Los resultados fueron que, en ciertas ocasiones, la volatilidad del mercado de futuros tiene influencia causal en el mercado spot, aunque la relaci que encuentran no es muy fuerte. Por ello, no pueden comprobar de forma contundente que los futuros desestabilizan al mercado spot. 
+En el artículo de Baldauf y Santoni ( 1991) se rechaza la hipesis de que el program trading (los agentes realizan transacciones en los mercados spot, de futuros y de opciones al mismo tiempo) tenga impacto en la volatilidad de los precios spot. El método utilizado para corroborar esta hipesis fue un modelo ARCH y la introducci de una dummy que intenta capturar si al comienzo del program trading se afectla volatilidad del mercado spot. Por tal raz la variable dicotica toma el valor de uno antes del comienzo del program trading y cero después de él. 
+Brorsen ( 1991) corrobora la hipesis haciendo un análisis de auto correlaci. Él menciona que al introducirse los futuros se reducen ciertas "fricciones" ( costos de transacci, rapidez para obtenci de informaci, costo de informaci cero, etc.) y esto ocasiona que la auto correlaci disminuya. El resultado es que la volatilidad ha aumentado pero esto puede ser una consecuencia de que el mercado sea más eficiente, dado que se han reducido las fricciones. 
+Cox ( 1976) es de los pocos que toma en cuenta que existe una relaci entre mayor informaci con mayor volatilidad. Desarrolla un modelo teico, corre una regresi lineal ordinaria con un parámetro auto regresivo y llega a la conclusi de que el mercado spot trabaja más eficientemente a causa de la entrada de los futuros. Él realiza las estimaciones con mercancías en lugar de instrumentos financieros. 
+Como se ha visto, diversas son las metodologías empleadas para comprobar si los futuros han desestabilizado al mercado spot. Empero, la metodología que se va a utilizar en este estudio es un modelo de la familia GARCH. 
+IV. MODELACIÓN DE LA VOLATILIDAD 
+Diversos estudios como los de Mandelbrot ( 1963a, 1963b, 1967), Fama ( 1965) y Ramírez, José Carlos y Sandoval., han encontrado evidencia de que la distribuci empírica de las series de tiempo de los rendimientos diarios de los instrumentos financieros difiere significativamente de una distribuci gaussiana. Los estudios empíricos han encontrado que los datos presentan leptocurtosis ( colas más gordas que en la distribuci normal), sesgo y agrupamiento de volatilidad (gran volatilidad es seguida por gran volatilidad y viceversa). Kon (1994) hizo un estudio extensivo sobre la distribuci que más se adecuaba a los rendimientos, primero utilizando modelos de heteroscedasticidad condicional tempo independientes (mezcla de normales, t de Student, proceso de difusi con salto) y más adelante realizando las pruebas con modelos de heteroscedasticidad tempo-dependientes. El llega la conclusi de que el modelo que mejor capta la distribuci de la varianza condicional en los rendimientos, es el T ARCH, un modelo que pertenece a la familia GARCH. Por esta raz, será utilizado en este estudio un modelo de la familia GARCH para comprobar la hipesis de que la volatilidad ha cambiado a partir de la entrada de los futuros, haciendo uso de una variable dummy que represente esta entrada. Tal variable tomará un valor de cero antes de la entrada de los futuros en México y un valor de uno después de la misma. 
+Modelos GARCH 
+Uno de los supuestos más comunes dentro del análisis de series de tiempo es que las observaciones siguen un proceso covarianza -estacionario. Los supuestos de dicho proceso son que tanto la media como la varianza son constantes e independientes del tiempo y la covarianza entre dos observaciones no depende del momento en que éstas ocurren, sino que so depende de la magnitud del intervalo entre ellas. Este timo supuesto es muy importante debido a que si la relaci entre las variables en el tiempo no cambia, es mucho más sencillo poder predecir o pronosticar el comportamiento de la serie en el futuro. 
+Sin embargo, Engle ( 1982) encuentra que el supuesto de que la varianza es constante e independiente del tiempo no siempre es plausible dado que tanto la esperanza condicional como la varianza condicional pueden depender de la informaci disponible al tiempo t-1, '1',.,. 
+De esta forma, la media y la varianza condicional pueden representarse por las siguientes ecuaciones: 
+m, = E(R, \J',_1) 
+h, =v(R, ¡q,,_1) 
+Donde R, son los rendimientos al tiempo I, m, es la media condicional y h, la varianza condicional. Por su parte, los residuales o rendimientos no anticipados vienen dados por 
+c,=R,-m,. 
+La media condicional se puede modelar con componentes auto regresivos y de promedios miles de diferente orden, para así poder captar alguna característica que sea relevante en las distribuciones de rendimientos no normales. 
+La especificaci que da Engle ( 1982) para la media y la varianza condicional son las siguientes: 
+R, I\J',_1-N(x,P, h1 ), 
+h, = ªº + f a,&,2_,' 
+1=1 
+&,=R,-x,p. 
+Donde x, puede incluir variables rezagadas dependientes y variables exenas, donde J} hace referencia al coeficiente de x,. Es importante que la varianza no condicional se 
+mantenga constante para que se siga un proceso covarianza -estacionario, esta especificaci no altera tal supuesto. 
+Más tarde, Bollerslev ( 1986) desarrolla un modelo más general que permite una estructura más flexible en los rezagos. Este proceso es precisamente el conocido como GARCH. El autor argumenta que la extensi del proceso ARCH al proceso GARCH es muy parecida a la de un proceso AR a un proceso ARMA, permitiendo así una descripci más parsimoniosa, condici que más adelante será explicada. Esta extensi la realiza porque encuentra que en el modelo planteado por Engle, generalmente resulta una ecuaci de la varianza condicional relativamente larga en los rezagos. Así se impone una estructura fija de rezagos para evitar problemas con estimaciones de los parámetros negativos de la varianza. 
+La manera en que Bollerslev especifica su modelo es la siguiente: Sea e, una variable aleatoria que denota un proceso estocástico discreto y '1'1 es el conjunto de toda la informaci ( campo a ) disponible hasta el tiempo t. El proceso GARCH (p, q) viene dado por: 
+&, I\Jl,_, -N(O,h, ), (I) 
+" ,,
+h, =ªº + La,c,2_, + L P,h,_, . (2) 
+t=I t=I 
+donde, 
+p ?:0, q>o, 
+ao >O, a¡ ?:0, i =1,...,q, 
+~¡ ?:0, i =l,...,p. Para p =O el proceso se reduce a un ARCH( q), en tanto que para p=q =O , e, se trata simplemente de ruido blanco. En el proceso ARCH(q), la varianza condicional solamente es especificada como una funci lineal de varianzas muestrales, mientras que el proceso GARCH(p,q) permite varianzas condicionales rezagadas. Esto corresponde a un tipo de mecanismo de asimilaci adaptativa. 
+De manera más formal se presenta el siguiente teorema (Bollerslev, 1986), mismo que será utilizado posteriormente: 
+Teorema l. El proceso GARCH (p,q) definido en (/) y (2) es estacionario con E(r, )=O, var(et) = ao[I-A(l)-8(1 )r1y cov(et. Es)= Oparas# t EN, si y solo si A(/) + B(I)< 1, 
+1/ ,, 
+Donde A(I) + B(I) = La,+ L/3,. 
+1=1 1=1 
+Sin embargo, como hace menci Nelson ( 1991 ), la estructura impuesta en los modelos ARCH y GARCH elaborados por Engle y Bollerslev, respectivamente, presenta algunas limitaciones. Por este motivo, Nelson propone otro modelo, el cual es conocido como EGARCH. 
+Entre las limitaciones que menciona en su artículo se tiene que algunos investigadores han encontrado evidencia de que los rendimientos de las acciones se hallan correlacionados negativamente con los cambios en la volatilidad de los retornos, i. e. la volatilidad tiende a incrementarse como respuesta a las "malas noticias" (rendimientos excedentes más bajos de los esperados) y a descender en reacci a las "buenas noticias". Los modelos GARCH, por el contrario, asumen que so importa la magnitud de los excedentes en los rendimientos no esperados para determinar la varianza futura, sin tomar en cuenta si son negativos o positivos. 
+Otra limitaci de los modelos GARCH resulta de las restricciones de no negatividad sobre la constante, los parámetros de la varianza rezagada y de los errores rezagados. Estas son impuestas para asegurar que la varianza permanezca no negativa para toda t con probabilidad 1 . 
+Por timo, comenta que en los modelos EGARCH es capturada efectivamente la "persistencia" de los choques en la varianza condicional. Los momentos condicionales pueden explotar en un GARCH ( 1, 1) aun cuando el proceso mismo sea estacionario, estricto y ergico. 
+Para asegurar en el modelo GARCH una varianza no negativa, ésta se plantea como una combinaci lineal de variables aleatorias positivas. La especificaci de un EGARCH (p,q) viene dada por: 
+~ ~ ( : E 1 _ J ( 2) .SI E I J J2
+In h, ={t) + ~ /3, In h,_, + ~ a, ¡----¡¡-:¡ --1 +Y1 --i¡-¡ · 
+i=I J=I h, _J !í . h, _I 
+Donde ro e (-00,00) y B >O. 
+Si aj >O, entonces la volatilidad condicional tiende a aumentar ( disminuir) cuando el valor absoluto del residual estandarizado es más grande (peque). Una a positiva representa la observaci empírica de que cambios grandes en los rendimientos tienden a seguir cambios grandes en los rendimientos y viceversa. De esta forma es como captura el agrupamiento de la volatilidad. Si "fj <O, la volatilidad condicional tiende a disminuir (aumentar) cuando los residuales estandarizados son negativos (positivos). En otras palabras, malas noticias disminuyen los rendimientos de los activos, incrementan el apalancamiento financiero y aumentan la volatilidad. 
+Por timo, Glosten, L, Jaganathan, R, y Runkle, D., ( 1993) consideran una especificaci más general del modelo GARCH, debido a que encuentran que en la teoría existe un conflicto acerca del intercambio presente entre el riesgo y los rendimientos. Algunos autores arguyen que éstos se encuentran correlacionados positivamente y otros que lo hacen negativamente. Por ello, en el referido trabajo se menciona que incorporando una variable dummy para tomar en cuenta los efectos estacionarios, se podría capturar la asimetría en la ecuaci de la varianza condicional. La especificaci que ellos dan para el modelo T ARCH (p,q) es la siguiente: 
+h, = {t) +t /3,h,_, +ta,&,2_, + r,s,~,&,2_,. 
+i =I ¡=I 
+2 Eviews Help 
+donde S,~ 1 =1 si e, <O, y S,~ 1 =O de otra forma. Esto permite que el impacto del residual al cuadrado, en la volatilidad condicional, sea diferente cuando el primer rezago del residual es negativo que cuando es positivo. Con ello se captura el efecto de apalancamiento con la hipesis de que y, >O. 
+Con esto finaliza la revisi de los modelos de la familia GARCH. Para poder seguir adelante es necesario tomar en cuenta lo que Engle comenta: el tipo de heteroscedasticidad puede ser resuelto secuencialmente, primero corrigiendo el componente x que afecta a la variable en estudio y después ajustando el modelo GARCH en los datos transformados. 
+5. DESCRIPCIÓN DE LOS DATOS Y METODOLOGÍA 
+El objetivo de este estudio es aceptar o rechazar la hipesis de que la entrada de los futuros afecten la volatilidad de la TIIE en México. Para comprobar esta hipesis se utilizan los modelos de la familia GARCH. Los modelos son el GARCH mismo, el EGARCH y el TARCH. A los tres modelos se les agrega una variable dummy que representa la entrada de los futuros en México. Dicha variable se introduce en la ecuaci de la varianza condicional. Si es significativa esto implicaría que sí existe alguna relaci entre el cambio en la volatilidad y la entrada de los futuros. La variable dummy toma el valor de cero para antes de la entrada de los futuros y el valor de uno a partir de entonces. La fecha exacta de la introducci de los futuros en México es el 29 de julio de 1999. 
+De manera más fonnal los modelos que se utilizan para la comprobaci de la hipesis son los siguientes: 
+GARCH: 
+Pi q, 
+R, = aD1. +¿q,R,_, +¿0c,_1 +&,, 
+1=1 J=I 
+'/ p 
+h, =ªº +¿a,c,2_,+ L/3,h,_, +r2D¡: , 
+1=1 t=I 
+EGARCH: 
+P1 '/1 
+R, = aD1. +¿q,R1_ +¿0c,_1 +&, , 
+!-! 1 .,--! 
+P q ( e ( 2 ).s e J
+lnh, = m + L/3, lnh,_, + L a1 ;,-~ --+Y1 ;;~ · ,,.1 J=I h,_J 1r h,_J 
+TARCH: 
+P1 '/1 
+R, = aD1. +L'PR,_, +¿0c,_1 +&,, 
+1=1 1=1 
+p q 
+h, =(() +L/3,h,_,+¿aj&l~J +r, s,-_, &,2_,+r2D¡: . 
+1=1 J=I 
+Donde R, es la diferencia de la TIIE, h, es la varianza condicional, DL es la variable dummy que captura los efectos de los lunes y los días feriados y DF es la variable dummy que se introduce a la ecuaci de la varianza condicional para ver si la entrada de los futuros afecta la volatilidad del mercado spot. 
+La serie de datos utilizada para comprobar esta hipesis es la TIIE (Tasa de Interés Interbancaria de Equilibrio). Se utilizaron datos diarios que van del 28 de marzo de 1996 al 2 de mayo del 2003. En el cálculo de la serie se hicieron los ajustes correspondientes para los lunes de cada semana, así como para los días festivos, esto con la finalidad de tomar en cuenta los efectos en los rendimientos reportados por French( 1980), así como Gibbons y Hess ( 1981 ). Esto es, se incluye una variable dummy en la media condicional para capturar los efectos de los lunes y días festivos, la cual en la mayoría de los casos resultser significativa. Se emplearon los datos de la TIIE debido a que el porcentaje de transacciones de futuros sobre esta tasa es relativamente alto. 
+Existen 3 formas de captar las variaciones en las tasas de interés, la primera esta dada por la simple diferencia aritmética entre las tasas. La segunda se refiere al cociente de las mismas. Una tercera está compuesta por la raz de los logaritmos de tales tasas. En este trabajo se eligila primera. 
+La siguiente expresi muestra la transformaci hecha a los datos: 
+R, =TI/E, -TIIE,_1 
+Para confirmar que esta serie es covarianza -estacionaria ( condici necesaria para el análisis de series de tiempo) se pueden utilizar las pruebas de Dickey-Fuller aumentada y Phillips -Perron. Como se puede observar en ambas pruebas el valor de los estadísticos es mayor, en términos absolutos, al valor crítico de la prueba, lo que nos permite decidir el rechazo de la hipesis nula de que existe raíz unitaria en los cambios de la tasa de interés. En otras palabras, la serie es estacionaria y se pueden realizar las estimaciones utilizadas en el análisis de las series de tiempo. Por lo que se está en condiciones de estimar el modelo que más se ajuste. 
+Dickey-Fuller Aumentada 
+Prueba Estadística ADF  -25.4918  1%  Valor Crítico •  -2.5669  
+5%  Valor Crítico  -1.9395  
+10% Valor Crítico  -1.6157  
+
+Variable Coeficiente Error Estándar Estadístico t Probabilidad. 
+TIIEl(-1) -0.779456 0.030577 -25.49182 0.0000 D(TIIE 1 (-1)) -0.066057 0.023673 -2.790352 0.0053 
+Prueba Phillips -Perron 
+Prueba Estadística PP  -35.89134  1 %  Valor Crítico •  -2.5669  
+5%  Valor Crítico  -1.9395  
+10% Valor Crítico  -1.6157  
+
+Variable Coeficiente Error Estándar Estadístico t Probabilidad 
+TIIEl(-1) -0.833928 0.023407 -35.62705 0.0000 
+6. RESULTADOS 
+Haciendo una comparaci, de alguna manera ingenua, antes de comenzar las estimaciones de los cambios en la varianza, se puede ver que el a con mayor volatilidad fue 1998. Esto no es de sorprender dado que ese a se tuvo una crisis a nivel mundial. No obstante, al observar la entrada de los futuros, en 1999, no se vio un ascenso en la varianza, al contrario ésta disminuy Sin embargo, no es posible hacer una afirmaci antes de realizar las estimaciones. Esta tabla da cuenta de alg movimiento cíclico en la varianza, sugiriendo que las observaciones pueden seguir un proceso ARCH. 
+Ario  Media  Varianza  
+1996  -0.061911  0.486100  
+1997  -0.034400  0.309136  
+1998  0.058795  0.911387  
+1999  -0.063194  0.258623  
+2000  0.000400  0.059518  
+2001  -0.043472  0.047122  
+2002  0.002530  0.043119  
+2003  -0.022378  0.025970  
+
+Algo que se encuentra commente en las series de tiempo es que los procesos se encuentran correlacionados con sus propios valores rezagados. La manera más simple y más utilizada para modelar esta situaci es emplear un proceso ARMA (p1, q1), donde la p, o la q, pueden tomar el valor de cero, en tal caso solo se tendría un proceso AR(p1) o MA(q,), respectivamente. Tanto la funci de auto correlaci como la funci de auto correlaci parcial son de gran ayuda para descubrir cuál es el comportamiento que sigue la serie de tiempo a estudiar. 
+Se sugiere un MA ( q 1) si las auto correlaciones de orden q, y mayores son estadísticamente no significativas o iguales a cero y las respectivas auto correlaciones parciales presentan un decaimiento. Por otro lado, se propone un AR (p,) si las auto correlaciones de orden p1 y mayores presentan un decaimiento y las respectivas auto correlaciones parciales son estadísticamente no significativas o iguales a cero. Se sugiere un ARMA (p1, q1) si se presenta un decaimiento en ambas. El patr general es que, eventualmente, las auto 
+correlaciones en un ARMA (p,, q1) siguen un patr AR (p1). Mientras que las auto correlaciones parciales siguen un comportamiento de un MA (q1) . 3 
+
+Nero de Rezago 
+T IIE 
+! ,S 
+
+Nero de Rezago 
+
+Como se puede apreciar en los gráficos anteriores se observa un decaimiento en ambas, por lo que se sugiere un ARMA (p, , q1) . Sin embargo al realizar las estimaciones correspondientes para modelar la media condicional se encuentra que el coeficiente del proceso MA no es significativo al 5%. Este resultado puede ser debido a que existen problemas de heteroscedasticidad, los cuales pudieran estar afectando a las funciones de auto correlaci. Por lo que la media condicional se modela como un AR ( 1 ), que es la que captura mejor el movimiento de la serie. 
+Además, como se había comentado en párrafos precedentes, se utiliza una variable dummy para capturar los efectos de los lunes y los días festivos, que toma el valor de 1 para estos días y cero para los demás días. 
+Se estimaron los modelos GARCH, EGARCH y T ARCH para los valores de p= 1, 2, 3, 4, 5 y q= 1, 2, 3, 4, 5 para ver cual fue la mejor especificaci. Aquí no se presentan todas las estimaciones. La especificaci tanto de la media como la varianza condicional se muestran a continuaci: 
+GARCH(p, q): 
+R, = aD1_ + <pR, _1 +e, , 
+h, =ªº + L p P,h,_,+ L q a,&,2_,+r2D¡: . 
+t=I t=I 
+EGARCH: 
+R, = aD1• +<pR, _1 +e,, 
+&,-1 &,-1
+P q (
+lnh, = (J) + LP, lnh,_, + L ( ª11/2--2 ).S+Y11/2J+ r2D¡: . 
+i=I l=I h,_ n h, J
+1 _ 
+T ARCH(p, q): 
+R, = aD1. + <pR, _1 +e,, 
+p " 
+h, =(J)+ LP,h,_,+ La,&,2_, +r, s,~, &,2_,+r2D,... 
+t=I J=I 
+Donde R, es la diferencia de la TIIE, h, es la varianza condicional, DL es la variable dummy que captura los efectos de los lunes y los días feriados y DF es la variable dummy que se introduce a la ecuaci de la varianza condicional para ver si la entrada de los futuros afecta la volatilidad del mercado spot. Si esta variable es significativa esto implicaría que sí existe alguna relaci entre el cambio en la volatilidad y la entrada de los futuros. 
+Los modelos se eligieron con base en el criterio de informaci de Schwartz, el cual se basa en la parsimonia y la calidad de ajuste que tiene el modelo. La idea de parsimonia es que un buen modelo debe tener pocos parámetros ya que con ellos logra capturar las propiedades intrínsecas de la serie que analiza; un modelo con demasiados parámetros, pues, es un modelo sin parsimonia. 
+Este criterio usa la historia de los datos para después extrapolar hacia adelante la serie. La idea es que un modelo que reproduce adecuadamente la realizaci observada ha capturado el proceso y por tanto sirve para pronosticar. En este sentido, el criterio de informaci de Schwartz ajusta por el tama de la muestra. Esta cifra mide la habilidad del modelo para reproducir la misma. El modelo a escoger es el que tenga el valor mínimo y el criterio de Schwartz esta definido por: 
+S(M) = _2 !_ + k log n n n Donde n es el tama de muestra k es el nero de parámetros / es el valor de la funci de máximo verosimilitud utilizando los k parámetros 
+Luego de realizar los procesos correspondientes, los modelos que presentaron los valores mínimos del criterio de Schwartz fueron GARCH (3,3), el EGARCH(l,l) y el T ARCH( 1, I), de tal forma que la especificaci a tomarse en cuenta es la siguiente: 
+GARCH (3,3): 
+R, = aD1• + q,R, _1 +e,, 
+3 3 
+h, =ªº + LP,h,_,+ La,&,2_,+ r2D¡:.
+,.1 ,., EGARCH(l,l) 
+R, = aD1. +<pR,_1 +e,, 
+c, _1 ( 2J s¡ c,_1
+lnh, =a0 +P1 lnh,_1 +a1 1/2-; ,+A1 lf2 +y2 D¡: . 1h,_, 1 h,_, 
+T ARCH(I, 1 ): 
+R, = aD1. +<pR, _1 +E,, 
+
+En la siguiente tabla se muestran los resultados de las estimaciones: 
+
+GARCH 0.0210 0.2939 0.0341 0.2477 -0.2939 0.2234 1.8435 -1 .7192 0.6274 -0.0293 
+(0.08)** (0.00) (0.00) (0.00) (0.00) (0.00) (0.00) (0.00) (0.00) (0.00) 
+EGARCH 0.0249 0.2543 -0.4420 0.3572 0.8273 0.1391 -0.3190 
+(0.03) (0.00) (0.00) (0.00) (0.00) (0.00) (0.00) 
+TARCH 0.0310 0.2991 0.0540 0.3993 0.6192 -0.2796 -0.0448 
+(0.02) (0.00) (0.00) (0.00) (0.00) (0.00) (0.00) 
+Los neros entre paréntesis son las probabilidades. Un valor menor al 5% rechaza la hipesis de que el coeficiente sea igual a cero • • Coeficiente no significativo 
+El teorema 1 mencionaba que el proceso GARCH es estacionario si y solo si 
+q p
+La,+ LP, <l. En esta especificaci tal suma de coeficientes es de 0.929, claramente 
+,., ,., 
+menor que l. 
+Como se puede observar, todos los coeficientes son significativos, a excepci del correspondiente a la variable dummy que captura los efectos de los lunes y los días feriados modelo GARCH. 
+Utilizando el criterio de informaci de Schwartz para poder discriminar el mejor modelo, se encuentra que el T ARCH ( l, l) tiene el valor mínimo, presentado a continuaci: 
+a  cp  ao  ª1  P1  Yt  Y2  
+TARCH  0.0310  0.2991  0.0540  0.3993  0.6192  -0.2796  -0.0448  
+(0.02)  (0.00)  (0.00)  (0.00)  (0.00)  (0.00)  (0.00)  
+
+Los neros entre paréntesis son las probabilidades. 
+En estos resultados se encuentra que la entrada de los futuros afecta la volatilidad de la TIIE, esto se comprueba con la variable dummy que captura la entrada de los futuros que en este caso es estadísticamente significativa. Es decir, se rechaza la hipesis de que Y2 =O. El parámetro estimado de la dummy tiene signo negativo, por lo que se deduce que la entrada de los futuros reduce la volatilidad de la TIIE. 
+Se le hicieron al modelo las pruebas de auto correlaci y de heteroscedasticidad y no presenta ning problema. En lo que respecta a la prueba de normalidad, ésta es rechazada. No es de sorprender este resultado, dado que, como se había comentado, el comportamiento de los rendimientos por lo general no es el de una normal sino que tiene colas más gordas y presenta sesgo. 
+Por timo para ver que realmente este es el modelo que mejor se ajusta, se verifica la asimetría. Esto es, los modelos EGARCH y T ARCH especifican una asimetría en el comportamiento de los datos, refiriéndose a que la volatilidad no solo depende de la magnitud sino que también depende del signo. Una manera de verificar los efectos asimétricos es probando si los coeficientes asimétricos son o no significativos. Una forma alternativa es observando la correlaci cruzada entre los residuales estandarizados al 
+2
+cuadrado z.2 y los residuales rezagados estandarizados z,_*. Estas correlaciones cruzadas deben ser cero para un modelo GARCH y negativos para un modelo EGARCH o T ARCH asimétrico. 
+STDRES l "2,STDRES 1 (-i)  STDRES l "2,STDRES 1 ( +i)  lag  lead  
+.1 ..  1  .1••  1  o 0.1806  0.1806  
+.1  .,  1  0.0235  0.0152  
+.1  .1  2  -0.0087  -0.0187  
+.1  .1  3  -0.0152  -0.0385  
+.1  .1  4  0.0128  -0.0011  
+.1  .1  5  -0.0155  0.0131  
+.1  .1  6  -0.0076  -0.0013  
+.1  .1  7  -0.0176  0.0272  
+.1  .1  8  -0.0043  0.0100  
+.1  .1  9  0.0051  -0.0124  
+.1  JO  0.0265  0.0018  
+.1  11  0.0100  -0.0084  
+•1  12  0.0431  -0.0527  
+.1  13  0.0092  0.0100  
+.1  14  0.0133  0.0048  
+.1  IS  0.0022  -0.0283  
+•1  16  -0.0110  -0.0464  
+.1  17  0.0051  0.0159  
+•1  18  -0.0252  -0.0420  
+.1  19  0.0164  -0.0276  
+.1  20  -0.0069  -0.0315  
+·1  21  -0.0642  0.0161  
+.1  22  0.0024  -0.0269  
+.1  23  -0.0153  0.0038  
+.1  24  -0.0392  0.0127  
+
+Como se puede ver, la correlaci cruzada no es cero, por lo que el modelo es asimétrico. Las implicaciones de este resultado son que el modelo que mejor ajusta es un modelo asimétrico, en este caso un T ARCH, por lo que se descarta la posibilidad de un GARCH. 
+7. CONCLUSIONES 
+En este estudio lo que se intenta es aceptar o rechazar la hipesis de que la entrada de los futuros afecta la volatilidad del mercado financiero mexicano. La forma de corroborar esta hipesis fue utilizando modelos de la familia GARCH. Pese a que casi todos los autores han encontrado que para diferentes circunstancias la entrada de los futuros no ha afectado la volatilidad, en este trabajo, para el caso mexicano, se utiliza una metodología diferente. 
+Dentro de los modelos de la familia GARCH el modelo que mejor capturel comportamiento de los cambios en la tasa de interés en el mercado spol fue el T ARCH, teniendo como implicaci que existe agrupamiento en la varianza condicional pero que, además, este agrupamiento se ve afectado por el signo. Es decir, que este modelo considera la frecuencia y la direcci de los cambios en la volatilidad, así como la amplitud de los movimientos en las tasas. 
+Asimismo, en el presente trabajo se ha utilizado una variable dummy como instrumento preciso para detectar la posible validez de la hipesis en cuesti. Como se verific esta variable dummy resulto ser significativa, por lo que se puede concluir que en el caso de México, la volatilidad de la TIIE se vio reducida por la entrada de los futuros. 
+Es prudente selar que los resultados obtenidos han descansado sobre una variaci r~specto a los GARCH's asimétricos, lo que no representa ning problema. En los modelos GARCH's asimétricos las malas noticias representan movimientos hacia abajo del indicador en cuesti. Por obvias razones, en este caso, en el que se emplearon tasas de interés, las malas noticias se presentarían cuando hubiera un cambio hacia arriba. 
+En este orden de ideas, también vale la pena aclarar que el umbral del modelo T ARCH utilizado fue el cero, lo cual no necesariamente es certero si se considera que los agentes econicos suelen instalar su umbral con referencia en alg otro indicador, como podría ser el rendimiento de los CETES. Con esto queda abierta la posibilidad de explorar el feneno con un umbral diferente en estudios futuros. 
+8. BIBLIOGRAFÍA 
+-Antoniu, A., and Holmes, P. 1995. "Futures Trading, lnformation and Spot Price Volatility: Evidence for the FTSE-100 Stock lndex Futures Contract using GARCH". Journa/ of Banking & Finance 19. pp. 117-129. 
+-Baldauf, B., and G. J. Santoni. 1991. ''Stock Price Volatility: Sorne Evidence from an ARCH Model". The Joumal of Futures Markets. Vol. 11, No. 2, pp 191-200. -Baumol, W. J. 1957. "Speculation, Profitability, and Stability", Review of Economics and Statistics. August. Pp. 263-271 . 
+-Bhattacharya, A. K, and Rarnjee, B. 1986. 'The Causal Rclationship between Futures Price Volatility and The Cash Price Volatility of GNMA Securities". The Joumal of Futures Markets. Vol. 6, No. 1, pp 29-39. 
+-Bollerslev, Tim. 1986. "Generalized Autoregressive Conditional Hcteroskedasticity". Joumal of Econometrics, Vol. 31 . PP 307-327. 
+-Bravo Pliego, J. 2000. "Valoraci de Opciones en Ausencia de los Supuestos de Independencia y Normalidad en los Rendimientos Instantáneos del Activo Subyacente. Comparaci con el Modelo de Black-Scholes". (Trabajo de Investigaci). Centro de Estudios Econicos. El Colegio de México. México, D.F. 
+-Brorsen, B. W., 1991. "Futures Trading, Transactions Costs, and Stock Market Volatility". The joumal offutures markets, Vol. 11, No. 2, 153-163. -Canavos, G.C. 1994. Probabilidad y Estadística, Aplicaciones y Métodos. McGrawHill. México, D.F. -Cox, Charles C. 1976. "Futures Trading and Market lnformation". Journal of Political Economy. Vol. 84, No. 6, pp 1215-1237. 
+-Diaz Tinoco, J. 1994. "Factibilidad del Mercado de Futuros Agropecuarios en México Análisis de Relaciones de Arbitraje"(trabajo de investigaci). México Centro de Estudios Econicos, El Colegio de México, México, D.F. 
+-Edwards, Franklin R. 1988. "Futures Trading and Cash Market Volatility: Stock Index and lnterest Rate Futures". The Journal of Futures Markets. Vol. 8, No. 4, pp 421-439. 
+-Engle, R. F. 1982. "Autoregressive Conditional Heteroskedasticity with Estimates of the Variance of U. K. Inflation". Econometrica 50. pp. 987-1008. 
+-Fama, E. F. 1965. 'The Behaviour ofStock Market Prices". Joumal ofBusiness 38. pp. 34-105. 
+
+- French, K.R. 1980. "Stock Returns and the Weekend Effect". Journal of Financial Economics 8  
+(March): 55-70  
+- Friedman, M. 1953. "The Case for Flexible Exchange Rates". Essays in Positive Economics.  
+University ofChicago Press, Chicago.  
+- Gibbons, M.R., and Hess, P. 1981. "Day of the Week Effects and Asset Returns". Journal of  
+Business 54 (Octubre): 579-96.  
+- Glosten, L, Jaganathan, R., and Runkle, D., 1993." On the Relation between the Expected  
+Value and the Volatility of the Nominal Excess Return of Stocks". The Joumal of  
+Finance, Vol. 48, No. 5, pp. 1779-1801.  
+- Greene, W. H. 1999. Análisis Econométrico. Prentice Hall. Traducci de la 3a Edici. USA,  
+pp. 709-747.  
+- Hamilton, J.D. 1994. Time Series Análisis. Prentice Hall, New Jersey, USA.  
+- Harris, Lawrence. 1989. "S&P 500 Cash Stock Price Volatilities". The Journal of Finance. Vol.  
+XLVI, No. 5.  
+- Hull, J. 1995. "lntroduction to Futures and Options Markets". Prentice Hall, New Jersey, USA.  
+- Kaldor, N. 1939. "Speculation and Economic Stability". Review of Economic Studies.  
+Primavera, pp. 1-27.  
+- Kon, S. J. 1994. ''Alternative Models for the Conditional Heteroscedasticity of Stock Returns".  
+Journal of Business. Vol. 67, No. 4. pp. 563-598.  
+- Mandelbrot, B. 1963a. "New Method in Statistical Economics." Journal of Political Economy  
+Vol. 71. pp. 421-440.  
+- Mandelbrot, B. 1963b. "The Variation of Certain Speculative Prices." Journal of Business Vol.  
+36. pp. 394 -419.  
+- Mandelbrot, B. 1967. "The Variation of sorne other Speculative Prices." Joumal of Business  
+Vol. 40. pp. 393 -413.  
+- Moore, A. 1962. "A Statistical Analysis ofCommon-Stock Prices". Disertaci no publicada de  
+Ph. D , Universidad de Chicago.  
+- Moriarty, Eugene J., and Tosini, Paula A. 1985. "Futures Trading and the Price Volatility of  
+GNMA Certificates-Further Evidence''. The Journal of Futures Markets. Vol. 5, No.  
+4, pp. 633-641 .  
+- Nelson, Daniel. 1991. "Conditional Heteroskedasticity in Asset Returns: A New Approach".  
+Econometrica. Vol. 59, No. 2, pp 347-370.  
+27  
+
+-Ramírez, José Carlos y Sandoval Saavedra, Rogelio. "Los pronticos de series de rendimientos de acciones con distribuciones no normales." 
+-Simpson, Gary, lreland, and Timothy C .. 1982 "The effect of futures trading on the price volatility of GNMA securities." The Journal of Futures Markets. Vol 2, No. 4, pp 357-366 
+Shiller, R. J986. "Fashions, Fads and Bubbles in Financial Markets". Unpublished. -http://table.finance.yahoo.com/k?s=/\mxx&g=d -hnp://www.mexder.com -http://www.desarrollolatino.org/web2/box derecha.htm, Jorge W. Ludlow 
+-http://www.itl.nist.gov/div898/handbook/apr/section2/apr233.htm -E-views 
+
+
+
+

@@ -1,0 +1,401 @@
+
+r 
+EL COLEGIO DE MEXICO 
+' 
+CENTRO DE ESTUDIOS ECONOMICOS 
+, , 
+MAESTRIA EN ECONOMIA 
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA 
+UN ANÁLISIS DE LA DEMANDA DE LA INDUSTRIA DE TELECOMUNICACIONES EN MÉXICO: SERVICIO MÓVIL 
+SAIDE ARANZAZÚ SALAZAR ALTAMIRANO 
+PROMOCIÓN 2007 -2009 
+ASESOR: DR, ALEJANDRO CASTAÑEDA SABIDO 
+JULIO 2009 
+
+
+A mi hermano Vladimir por su inspiraci, apoyo y buenos consejos. A mis padres Anélima y Ram por su incondicional respaldo en todo momento. A mi asesor Alejandro Castada por todo su tiempo y experiencia transmitida. A Ernesto Piedras por su invaluable aportaci para la realizaci de este trabajo. A Rafael del Villar  por su interés y valiosos comentarios. Muchas gracias.    
+RESUMEN 
+Se analiza la demanda de minutos por usuario en México empleando informaci del mercado total y específica de cada firma. La estimaci por mínimos cuadrados en dos etapas arroja una elasticidad de largo plazo en la industria de -1.18, indicando que la demanda de mercado es elástica. Se estima que la elasticidad de corto plazo de la industria se ha reducido de manera importante en los timos as, llegando a -0.44 en el 2008. Desde 1999 hasta 2008 el excedente del consumidor en la industria asciende a 13 277 millones de pesos. 
+Con respecto al resto de los determinantes de la demanda, se encuentra que el ingreso ha dejado de ser decisivo en el consumo del servicio mil. Asimismo, los hallazgos indican que los consumidores adicionales, relative late adapaters, demandan menos minutos que los early adapters. La estimaci revela que dicho efecto domina cualquier efecto positivo que pudiera tener el efecto del tama de la red.  
+El análisis realizado por firma, apunta hacia una demanda inelástica (muy similar) para las dos principales empresas del sector, Telcel y Telefica Movistar, indicando poder de mercado de estas compaas. En el largo plazo podemos esperar dos operadores grandes en la industria, penetrando todos los niveles de ingreso. 
+ÍNDICE 
+1. INTRODUCCIÓN ...............................................................................................................5 
+2. REVISIÓN DE LITERATURA...........................................................................................7 
+3. MARCO TEÓRICO.............................................................................................................9 
+3.1 Modelo de demanda .......................................................................................................9 
+3.2 Excedente del consumidor ...........................................................................................12 
+4. METODOLOGÍA ECONOMÉTRICA Y DESCRIPCIÓN DE DATOS..........................14 4.1 Metodología econométrica...........................................................................................14 
+4.1.1 Demanda de mercado............................................................................................14 
+4.1.2. Demanda por firma: Telcel y Telefica MoviStar.............................................14 
+4.1.3. Polynomial Distributed Lags ...............................................................................16 
+4.1.4. Variables instrumentales......................................................................................18 
+4.2. Descripci de datos ...................................................................................................19 
+5. RESULTADOS..................................................................................................................21 
+5.1 Demanda de mercado...................................................................................................21 
+5.2 Excedente del consumidor ...........................................................................................29 
+6. CONCLUSIONES .............................................................................................................35 
+BIBLIOGRAFÍA ...................................................................................................................37 
+1. INTRODUCCIÓN 
+Hasta antes de 1970, las características del proceso de producci definían al mercado de telecomunicaciones en la mayoría de los países como un monopolio natural verticalmente integrado: servicio local, larga distancia y otros, todos controlados por un ico vendedor, administrado por el gobierno federal o alg gano regulatorio1. 
+El avance tecnolico de las décadas subsecuentes modificla configuraci del mercado. Las mejoras tecnolicas disminuyeron los costos de la construcci de redes, originando nuevos productos e incrementando el tama del mercado (Mariscal, 2003).  En 1990 México inicila reforma privatizando la compaa telefica nacional, Telmex, y para 1996 el mercado se abria la competencia.  
+A mediados de 1999 se detona el crecimiento vertiginoso del sector de telefonía mil con la reducci en costos generada por el avance tecnolico y la integraci de nuevos participantes en el mercado. Actualmente, la penetraci de la telefonía mil representa más del doble de la alcanzada por la telefonía fija en México. Mientras el lento crecimiento de la telefonía fija no permitía vislumbrar en los as noventa siquiera un acercamiento al servicio universal, la explosi de la telefonía celular apunta actualmente a la creciente posibilidad de tender a ello (Piedras & Bonina, 2006). 
+En los timos as se ha observado una rápida disminuci en el precio por minuto como resultado de un mayor nero de oferentes. Actualmente son cuatro las compaas que dominan casi la totalidad del mercado: Telcel, Telefica Movistar, Iusacell y Unefon. De ellas so Telcel y Movistar representan más del 90 por ciento del mercado total. La rápida reducci en las tarifas ha permitido la expansi del servicio a todos los niveles de ingreso, al mismo tiempo que genera un mayor beneficio en términos de bienestar del consumidor.   
+Bajo este contexto, el presente estudio tiene como objetivo estimar la elasticidad de corto y largo plazo de la demanda del servicio de telefonía mil en México, así como la elasticidad de la demanda de las dos principales compaas que operan en el mercado, Telcel y Telefica Movistar. Se enfatiza el efecto del ingreso y tama de la red sobre la cantidad demandada. Asimismo, se calcula el excedente del consumidor en la industria con 
+1
+ x 
+el propito de aproximar el beneficio que ha generado la reducci de la tarifa por minuto. El período de estudio es 1999-2008. 
+Al igual que en otros países, la industria de telefonía mil en México no está sujeta a un alto grado de competencia, debido a la tendencia del mercado hacia una configuraci oligopica. Como lo mencionan Dewenter y Haucap (2004), además de factores tales como el nero de operadores, barreras a la entrada, diferenciaci del producto, estructuras de costos y transparencia en el mercado, un indicador de los incentivos que tienen las firmas para involucrarse en conductas de colusi es la elasticidad de la demanda del mercado y la elasticidad de la demanda que enfrenta cada empresa. Si la demanda de mercado es relativamente inelástica, el beneficio que obtiene la firma de involucrarse en conductas de colusi es alto, en la medida en que los precios pueden incrementarse sin perder un gran porcentaje de clientes. En contraste, una demanda de mercado relativamente elástica implica que las ganancias adicionales provenientes de la colusi son relativamente bajas. Adicionalmente, una alta elasticidad de la demanda específica a cada firma implica que el desviarse del acuerdo de colusi es relativamente rentable (en la medida en que una reducci en el precio genera un incremento relativamente alto en la cantidad vendida), de tal forma que la conducta de colusi pierde sentido debido a este problema de “enga” (cheating problem) (Dewenter y Haucap, 2004).   
+La informaci que resulte de este análisis de demanda es de relevancia para el gobierno, el ente regulador y las empresas. Se intenta con ello, cerrar la brecha de informaci entre los agentes participantes en el sector, coadyuvando así a la creaci de un mercado más competitivo. La pérdida de competitividad en nuestro país tiene su origen en problemas de carácter estructural y en problemas que dependen de enormes ineficiencias en los mercados, que a diferencia de los problemas estructurales pueden corregirse con cambios en la regulaci y una apertura real que permita mayor competencia (IMC, 2006).  
+De acuerdo al Informe sobre el Desarrollo Humano 2001, el acceso a las innovaciones tecnolicas en telecomunicaciones, constituyen un medio para lograr el desarrollo humano, debido a sus repercusiones en el crecimiento econico gracias al aumento de productividad que generan (PNUD, 2001). De ahí la relevancia en lograr un incremento en la competitividad del sector. 
+La estructura del trabajo es la siguiente. En la primera parte se realiza una breve revisi de literatura sobre las estimaciones realizadas para otros países, así como la metodología empleada en cada caso. Posteriormente se describe el marco teico de referencia, haciendo especial énfasis en los supuestos empleados. Se sigue la descripci de los datos y la metodología econométrica. En la secci 5 se muestran las estimaciones obtenidas así como la interpretaci de los resultados. Finalmente, se presentan las conclusiones. 
+
+2. REVISIÓN DE LITERATURA 
+A lo largo de los timos as se han realizado diversos estudios sobre la demanda en el sector telecomunicaciones en otros países, tanto de telefonía fija como del servicio mil. Entre los principales análisis se encuentra el de Michael Ward (1995) quien estima la elasticidad de largo plazo del servicio de larga distancia para AT&T y sus competidores en EEUU. El autor emplea informaci mensual y trimestral para el período 1988-1991. Dado el problema de endogeneidad en el precio observado, su análisis emplea la metodología de variables instrumentales y regresi inversa. Encuentra una elasticidad de largo plazo de la industria entre -0.71 y -0.89. En el caso de las especificaciones por firma estima un límite inferior entre -5.3 y -6.3 para AT&T y entre -15 y -18 para las OCC´s (Other Common Carriers), bajo el supuesto de que la demanda se ajusta inmediatamente ante cambios en el precio. 
+Jerry A. Hausman (1997) estima la curva de demanda del servicio de mensajes de voz en EEUU para el período 1991-1994. El servicio de mensajes de voz incluye la posibilidad de recibir mensajes mientras la línea está en uso, el poder crear un buz de voz para cada miembro de la familia, y facilidades de emisi en grupo (broadcast facility). El estudio emplea un panel de datos con informaci de 18 estados. Se incluyeron efectos fijos para cada unidad de observaci, así como una tendencia temporal por estado dado que el servicio de mensajes de voz no se introdujo simultáneamente en todos los estados analizados. La elasticidad-precio estimada empleando variables instrumentales es de -1.61. 
+Ralf Dewenter y Justus Haucap (2004) analizan la elasticidad de la demanda del servicio de telefonía mil en Austria utilizando datos mensuales desde enero de 1998 hasta marzo de 2002. Con informaci a nivel firma para distintas tarifas construyen cuatro muestras diferentes. Los autores llevan a cabo la estimaci empleando metodología de panel estático y dinámico. La elasticidad de largo plazo oscila entre -0.19 y -3.56 bajo el modelo de panel estático, y entre -0.61 y -1.05 bajo el modelo de panel dinámico, dependiendo de la muestra empleada.  
+Atsushi Iimi (2005) analiza la demanda de telefonía celular en Jap, encontrando una elasticidad de largo plazo entre -1.3 y -2.43 para el período de estudio. El autor  utiliza un modelo de elecci discreta, específicamente un modelo logit anidado. La base de datos para el análisis incluye observaciones mensuales por firma desde 1996 hasta 1999. El estudio se concentra en el efecto de la diferenciaci del producto y las externalidades de red. 
+Duk Hee Lee y Dong Hee Lee (2006) estiman la elasticidad de largo plazo del servicio de telefonía mvil en Corea y realizan un cálculo del excedente del consumidor en la industria. Los datos empleados en su estudio comprenden informaci mensual de enero de 1996 a diciembre de 2004. Dividen su periodo de estudio en pre-competencia y pos­competencia, y utilizando variables instrumentales encuentran una elasticidad casi unitaria para el primero de estos períodos (entre -0.922 y -0.941), mientras que para el período de competencia la elasticidad se reduce para encontrarse entre -0.482 y -0.643.  
+Christos Agiakloglou y Demetrius Yannelis (2006) examinan la elasticidad de corto y largo plazo de las llamadas internacionales desde Grecia hacia cinco países: Australia, EEUU, Canadá, Gran Breta y Alemania. Su base de datos está conformada por informaci trimestral desde 1997 hasta 2003. Llevan a cabo la estimaci para el total de llamadas salientes, realizadas por todos los proveedores miles y el operador predominante, así como considerando icamente las llamadas realizadas por este timo. Se concluye que el precio por minuto explica mejor la demanda de llamadas internacionales a medida que la distancia entre origen y destino se incrementa. 
+En similitud con algunos de estos estudios, el presente análisis ocupa informaci trimestral desde 1999 hasta 2008, tanto del mercado total como a nivel firma. La metodología empleada es mínimos cuadrados en dos etapas (variables instrumentales) como se describirá con mayor detalle en la secci 4. 
+
+3. MARCO TEÓRICO 
+3.1 Modelo de demanda 
+En un mercado perfectamente competitivo, cada firma tiene los mismos costos, el precio se iguala al costo marginal, y cada empresa en la industria enfrenta una curva de demanda perfectamente elástica a dicho precio. En este tipo de industria, cualquier empresa que intente incrementar su precio por arriba del costo marginal perderá todos sus consumidores. Sin embargo, en industrias donde los productos son diferenciados o las firmas tienen distintos costos marginales, una empresa que establezca su precio por arriba del costo marginal perderá parte de sus consumidores, pero no todos. En este caso, la empresa enfrenta una curva de demanda con pendiente negativa y elasticidad finita. En general, la firma encuentra una demanda más elástica a medida que los productos de sus competidores se vuelven más sustitutos y a medida que los costos de los competidores caen (Ward, 1995). 
+El mercado de telefonía mil en México puede considerarse como un mercado con productos diferenciados. Cada operador dentro del sector busca distinguir su producto del resto mediante la calidad de las llamadas, servicio al cliente, cobertura de la red, sistema de recarga, equipos de telefonía disponibles, etc., de tal forma que cada firma sea capaz de establecer su precio por arriba del costo marginal, sin perder un amplio nero de consumidores. Así como cada empresa se distingue de las demás, también es posible distinguir el servicio de telefonía mvil del resto de los bienes y servicios que se venden en la economía. 
+Siguiendo a Michael Ward (1995), se empleel enfoque de dos niveles: el nivel superior determina la demanda de minutos de telefonía mil, mientras que el nivel inferior determina co la demanda se distribuye entre los distintos operadores del mercado. Este enfoque separa el efecto de una reducci en el precio general de la industria, de las diferencias en precios dentro de la industria: se puede inspeccionar así la decisi del individuo sobre cuántos minutos de telefonía mvil consumir, y la decisi con respecto a qué compaa va a elegir como proveedora.  
+ En el nivel superior la demanda por minutos de telefonía mvil se determina por el precio por minuto, el precio de otros bienes y servicios, y el ingreso. Supongamos que la canasta de bienes del consumidor representativo consiste de minutos de telefonía mil (q) y un bien compuesto (z) que representa el resto de los bienes y servicios (Hee Lee & Hee Lee, 2006). De esta forma el problema que resuelve el individuo está dado por: 
+max U = U(q,z) 
+s.a. pc q + pz z = y donde y es el ingreso del consumidor, pc es el precio por minuto y pz es el precio del bien compuesto z (suponemos que la funci de utilidad del individuo es separable)2. La demanda individual por minutos de servicio mil se deriva de la soluci tima al problema de maximizaci, 
+q* = q(pc , pz , y) z* = z(pc , pz , y) Si extendemos el análisis para la demanda agregada obtenemos Q = Q(pc , pz , I), (1) donde I denota el ingreso de todos los individuos (Hee Lee & Hee Lee, 2006).  En el nivel inferior los consumidores eligen el operador mil a quien comprar con base en los precios relativos y su nivel de ingreso: 
+Qi = Qi(p1 , p2 , p3 ,…, pN , pz , I), (2) siendo N el nero de empresas de telefonía mil (i = 1,2,…,N). La elasticidad de la demanda del mercado se calcula diferenciado la ecuaci (1) con respecto a la variable pc, mientras que la elasticidad de cada empresa n se estima diferenciando la ecuaci (2) con respecto a pn, 
+.qp
+.= 
+.pq 
+De acuerdo con Agiakloglou & Yannelis (2006), cuando nos enfrentamos a una estimaci de demanda, es importante considerar la forma estructural de la funci de demanda a partir de la cual se derivan las elasticidades. Así, es importante especificar el tipo de elasticidad: constante vs variable en el tiempo.  
+Consideremos la demanda en el nivel superior Q = Q(pc , pz , I); si asumimos que el bien agregado z es el bien numerario entonces podemos normalizar el precio por minuto (pc) y el ingreso (I) con respecto a pz. El supuesto de funci de utilidad separable justifica la 
+2 Una interpretacin simple de la separabilidad nos permite escribir la funcin de utilidad como U(qz, z) = U(qz, g(z)) (Hausman, 1981). 
+especificaci de curvas de demanda que incluyen un solo precio (Hausman, 1981). Siguiendo a Agiakloglou & Yannelis (2006) la ecuaci demanda con elasticidad constante en el tiempo tendría la siguiente forma: 
+a aa
+012
+Qt = e Pt Yt , (3) 
+. p .. y
+ct t .
+donde Pt = .. .. y Yt = .. .. . 
+pp
+. zt .. zt . 
+La ecuacin (3) sugiere que la elasticidad de la demanda puede ser estimada mediante el siguiente modelo log-lineal: 
+ln Qt = a0 + a1 lnPt + a2 lnYt +et , (4) donde et es la perturbaci aleatoria. Asimismo, se asume que el término de error satisface el supuesto e i ~ iid N (0,se 2). 
+Si el supuesto de elasticidad constante no es válido, entonces se aplica el siguiente modelo, con elasticidad variable en cada período (Agiakloglou & Yannelis, 2006): 
+.1Pt Y . 2
+Qt = .et , (5) Donde . y . son parámetros constantes. En este caso, la elasticidad precio de la demanda .t se determina por la magnitud del parámetro .1 multiplicada por el precio en un período específico: 
+.t =.1 Pt . (6) La estimaci de la ecuaci (5) se obtiene mediante el siguiente modelo de regresi lineal: 
+ln Qt = .0 + .1Pt + .2 lnYt +ut (7) De la misma manera que en la ecuaci (4) el término de error ut satisface ui ~ iid N (0,se 2). 
+La decisi sobre el modelo timo a elegir no puede determinarse a priori. Ello depende del tipo de datos y el periodo de estudio. Por ejemplo, una estimaci con datos anuales para un período amplio es menos probable que apoye el modelo con elasticidad constante, mientras dicho supuesto puede no rechazarse para otro tipo de datos, como mensuales o trimestrales, para un período corto de tiempo (Agiakloglou & Yannelis, 2006). 
+
+3.2 Excedente del consumidor 
+El excedente del consumidor es una herramienta muy empleada al estimar el bienestar de los consumidores frente a los precios actuales; dado que un cambio en precios afecta el excedente del consumidor, la evaluaci de esta medida de bienestar es informaci relevante a tomar en cuenta en la implementaci de políticas regulatorias. 
+Citando a Hausman (1981), existe un amplio consenso sobre el objetivo de la medici: la cantidad de dinero que el consumidor pagaría (o la cantidad de dinero que habría que pagarle) para obtener la misma utilidad después del cambio en precios que antes del cambio en precios. Esta cantidad monetaria corresponde a la variaci compensatoria desarrollada por John Hicks. Una medida alternativa que toma como base la utilidad del individuo después del cambio en precios es la variaci equivalente, también desarrollada por Hicks. La controversia surge con respecto a cmo medir estas cantidades. El procedimiento usual es emplear el área a la izquierda de la demanda marshalliana (de mercado) entre los dos niveles de precio. La principal condici para que el área a la izquierda de la curva corresponda a la variaci compensatoria es que la utilidad marginal del ingreso sea constante. Si esta condici se cumple, entonces el área a la izquierda de la demanda marshalliana será igual al área a la izquierda de la curva de demanda compensada (Hicksiana). Así, la utilidad marginal constante del ingreso es condici suficiente para que el excedente de consumidor de Marshall sea igual al de Hicks (Hausman, 1981). 
+Willig (1976) derivlímites para la diferencia porcentual entre la medida correcta de la variaci compensatoria y equivalente y la medida derivada de la demanda marshalliana. Dichos límites (que dependen de la elasticidad-ingreso de la demanda para el bien en cuesti, así como de la proporci del ingreso que el consumidor gasta en el bien) demostraron que el excedente del consumidor de la demanda marshalliana es una buena aproximaci de la demanda del excedente del consumidor proveniente de la demanda hicksiana (Hausman, 1981).  
+En 1981, Hausman desarrolla una metodología para calcular de manera exacta (sin aproximaciones) la variaci compensatoria y equivalente ante un cambio en precios, y aplica dicha metodología al caso de la demanda de trabajo y gasolina. Encuentra que para bienes que conforman una peque proporci del ingreso (como la gasolina), el área debajo de la demanda marshalliana es una muy buena aproximaci de la variaci compensatoria; ello sucede porque una disminuci en el precio de este tipo de bienes incrementa el ingreso en una peque proporci de tal forma que el efecto ingreso ante un cambio en precios es reducido (Willig, 1976)3. 
+Así, bajo el supuesto de que la utilidad marginal del ingreso es constante, el área a la izquierda de la demanda marshalliana de mercado genera una buena aproximaci del excedente del consumidor. De este modo, el cambio en el excedente del consumidor en un momento particular del tiempo (.CSt )  está dado por (Hee Lee & Hee Lee, 2006): 
+Pt Pt a 1+a 1+a a
+01 12
+e (P - P )Y
+01 2
+.CS = Qt (P ,Yt )dx = eaxa Y a dx = (8)
+t . t . 
+1 +a1
+Pt -1 Pt 
+En el período t, el excedente del consumidor total (St ) está dado por: 
+t 
+St = CS0 +..CSt (9) 
+T =1 
+PV 
+Donde CS0 =.Qt (Pt ,Yt )dx , donde PV representa un precio virtual, que es el máximo 
+P
+0 
+precio que los consumidores están dispuestos a pagar por un minuto de telefonía mil cuando Q = 0 (Hee Lee & Hee Lee, 2006). A continuaci se muestra una figura con los conceptos empleados, tomada de Hee Lee & Hee Lee (2006). 
+Figura 1 
+
+3 Cuando realiza la estimaci de la variaci compensatoria y la aproximaci mediante la demanda marshalliana, encuentra que ambas medidas slo difieren en 3.2 por ciento (Hausman, 1981). 
+
+
+4. METODOLOGÍA ECONOMÉTRICA Y DESCRIPCIÓN DE DATOS 
+4.1 Metodología econométrica 
+4.1.1 Demanda de mercado 
+Para estimar la elasticidad de largo plazo de la demanda de mercado (elasticidad constante en el tiempo), se estimla transformaci logarítmica de la ecuaci (3), a la que se le adiuna tendencia temporal y el nero de suscriptores en cada periodo (como variable que incorpora informaci sobre el tama de la red),  
+ln Qt = a0 + a1 lnPt + a2 lnYt + a3lnNt + a4tiempo + et (10) 
+donde a0 es constante, a1 representa la elasticidad-precio de la demanda, a2 indica la elasticidad-ingreso de la demanda, a3 el efecto del tama de la red y a4 la tendencia en el tiempo. Se espera que la cantidad demandada disminuya ante incrementos en el precio (a1<0) y que un incremento en el ingreso genere un aumento de Qt (elasticidad ingreso positiva). El precio de los equipos teleficos y computadoras que pueden pensarse como complementos del servicio de telefonía mil, ha disminuido con el tiempo; así, se introduce un término de tendencia temporal para capturar estos posibles desplazamientos de la demanda, esperando que el coeficiente a0 sea positivo (Ward, 1995). 
+Asimismo, se estim la transformaci logarítmica de la ecuaci (5) para aproximar la elasticidad de corto plazo de la demanda de mercado (elasticidad variable en cada período),
+ ln Qt = .0 + .1Pt + .2 lnYt + .3lnNt+ .4tiempo + ut (11) 
+Es de esperarse que los coeficientes estimados tengan signos idénticos a los descritos para la ecuaci (10). 
+4.1.2. Demanda por firma: Telcel y Telefica MoviStar 
+Como se mencionen la secci 1 las cuatro principales compaas que proveen el servicio de telefonía mil en México son Telcel, Telefica MoviStar, Iusacell y Unefon, con una participaci de mercado de 74.43% y 20.07% para Telcel y Telefica respectivamente, y 5.5% para Iusacell y Unefon en conjunto (COFETEL, 2008). De las cuatro compaías, la Global Wireless Matrix so contiene informaci completa para Telcel y Telefica que en conjunto representan cerca de 95% del mercado total.  
+Así, se estimla elasticidad de largo plazo de la firma i empleando la transformaci logarítmica de la ecuaci (3), a la que se le aadiel logaritmo del precio de la empresa j para capturar la magnitud de la elasticidad cruzada. Se agregtambién una tendencia temporal y el nero de suscriptores de cada empresa en cada periodo (como variable que incorpora informaci sobre el tama de la red), 
+ln Qti = ß0 + ß1 lnPti + ß2lnPtj + ß3 lnYt + ß4lnNti + ß5lnNtj + ß6tiempo + et (12) 
+donde ß0 es constante, ß1 representa la elasticidad-precio de la demanda de la empresa i, ß2 indica la elasticidad-cruzada de la demanda de la empresa i con respecto a un cambio en el precio de la empresa j, ß3 indica la elasticidad-ingreso de la demanda, ß4 el efecto de un incremento en el tama de la red propia, ß5 el efecto de un incremento en el tama de la red de la empresa j, y ß6 la tendencia en el tiempo. Como en el caso de la demanda de mercado, se espera que la cantidad demandada disminuya ante incrementos en el precio (ß1<0) y que un incremento en el ingreso genere un aumento de Qt (elasticidad ingreso positiva). Un signo negativo de la elasticidad cruzada indicaría que los consumidores perciben los servicios que prestan ambas firmas como sustitutos cercanos. Un signo positivo de la elasticidad cruzada lleva a pensar que los individuos llevan a cabo sus decisiones de consumo considerando los servicios de Telcel y Telefica como complementarios en alg sentido. 
+Para estimar la elasticidad de corto plazo se emplela transformaci logarítmica de la ecuaci (5) bajo el supuesto de elasticidad variable en cada período, 
+ln Qt = d0 + d1Pt + d2Ptj + d3 lnYt + d4lnNti + d5lnNtj + d6tiempo + ut (13) 
+Se esperan coeficiente con los mismos signos que los mencionados para la ecuaci (12) 
+
+4.1.3. Polynomial Distributed Lags 
+La estimaci de la elasticidad de largo plazo implica permitir que los agentes ajusten su conducta en el tiempo. De acuerdo a Michael R. Ward (1995) la informaci imperfecta con respecto al precio y los denominados switching costs son los principales responsables de la duraci del ajuste del comportamiento de los individuos. Los consumidores reaccionan ante el nuevo precio so cuando se vuelven conscientes del cambio, en algunos casos varios meses después. Los principales mecanismos para obtener informaci concerniente al precio son los medios publicitarios y la experiencia personal al momento de recibir la cuenta pertinente. A si los individuos están conscientes del cambio, puede que no respondan en ese período debido a los costos que implica dejar de consumir dicho bien y consumir en su lugar alg sustituto cercano (switching costs). Si el ajuste de la demanda toma tiempo, entonces la cantidad demandada actualmente es una funci de todos los precios en el período de ajuste (Ward, 1995).  
+Desde su aparici, el segmento de telecomunicaciones miles se consolidcomo el más dinámico de la industria gracias a su rápido crecimiento tanto en nero de usuarios como en términos de ingreso (CIU, 2008). Una característica de este sector es el alto nivel de inversi en publicidad por parte de los principales operadores del sector, que han buscado retener a los clientes de cada uno, así como atraer nuevos clientes estimulados por precios más bajos. Cada firma se encarga de garantizar que los nuevos precios sean conocidos prontamente por los consumidores, de tal forma que los individuos ajustan su conducta de manera rápida4. La siguiente gráfica muestra que el ajuste de la cantidad demandada ante cambios en el precio es casi simultáneo. 
+4 Por ejemplo, para el segundo trimestre del 2008, Iusacell registr un OPEX de 65.17 millones de dlares,  21% más que el mismo período del ao pasado. El incremento se deriv de gastos de publicidad superiores relacionados con importantes campas para el lanzamiento de nuevos precios, productos y servicios (CIU, 2008). 
+Gráfica 1. Precio y cantidad de minutos demandada por usuario 
+Precio por minuto $ 
+4 3.5 3 2.5 2 1.5 1 0.5 0 
+
+200 180 160 140 120 100 80 60 40 20 0 
+Minutos 
+Periodo 
+p 
+
+q 
+Elaboraci propia con informaci de Merril Lynch. 
+Bajo el supuesto de que los consumidores ajustan su comportamiento durante el mismo periodo en el que ocurriel cambio en el precio, se realiza la estimaci econométrica incluyendo icamente el precio contemporáneo, dejando de lado el precio en períodos previos. No así en el caso del ingreso per cápita: es de esperarse que la demanda de los consumidores no se ajuste de forma inmediata ante una modificaci en el nivel de ingreso del hogar. La inclusi de los rezagos apropiados, en lugar de incluir slo el nivel actual de ingreso, incorpora el ajuste de la demanda de largo plazo. En este ámbito, es importante tomar en cuenta que no es práctico incluir un nero grande de rezagos debido a la alta probabilidad de correlaci entre ellos, generando gran imprecisi en los estimadores (Ward, 1005). 
+Para resolver el problema de colinealidad de los valores rezagados del ingreso se impone un determinado patr a los coeficientes de dichas variables, de tal forma que se reduce el nero de parámetros a ser estimados. Siguiendo a Michael R. Ward (1995) existen dos potenciales métodos a emplear: una estructura de decadencia exponencial (exponential decay structure), y una estructura de rezagos polinomial (polynomial distributed lag structure). El esquema de decadencia exponencial asume que el efecto futuro sobre la demanda que tendrá un cambio en el ingreso es una fracci del efecto que tuvo en el periodo previo. Econométricamente, este esquema se implementa incluyendo un rezago de la variable dependiente como un regresor exeno. El coeficiente de esta variable provee un estimador de la tasa de decadencia exponencial. Este esquema impone fuertes restricciones sobre la estructura de rezagos del ingreso, a pesar de que permite la estimaci de un amplio nero de rezagos con la inclusi de una sola variable adicional. 
+Comparada con la estructura de decadencia exponencial, la estructura de rezagos polinomial (polynomial distributed lag) es más flexible debido a que permite a más de una variable describir la estructura de rezagos. Suponiendo que la estructura de rezagos sigue la forma de un polinomio de segundo grado, so se requiere estimar tres parámetros para todo el conjunto de rezagos (se eligieron 4 rezagos, debido a la periodicidad trimestral de los datos). Incrementar el orden del polinomio permite una estructura de rezagos más generalizada a un costo de incrementar la probabilidad de reintroducir multicolinealidad, generando así estimadores poco precisos (Ward, 1995). Adicionalmente se puede imponer la condici de que los coeficientes de los rezagos más lejanos tiendan a cero, de tal forma que el nivel de ingreso de periodos más distantes tiene cada vez menor impacto sobre la cantidad demandada. 
+4.1.4. Variables instrumentales 
+El problema más com en los análisis de demanda es que los precios y cantidades observados son resultado de los efectos combinados de la oferta y la demanda. Si se lleva a cabo la estimaci sin considerar este aspecto, se obtendrán estimadores sesgados de mínimos cuadrados ordinarios (MCO). La inconsistencia de MCO se debe al carácter endeno del precio, de tal forma que cambios en el precio no so están asociados con cambios en la cantidad demandada (Q), sino también con cambios en el error. Para enfrentar este problema, se empleará la metodología de variables instrumentales. El método de variables instrumentales aísla las variaciones exenas en el precio (Cameron & Trivendi, 2005) y provee así estimadores consistentes de los regresores: se aísla el efecto del precio sobre la demanda, eliminando cualquier efecto de los desplazamientos de la curva de oferta sobre el precio observado 
+Sea z un vector de instrumentos r ×1 (r > nero de regresores endenos). Se deben cumplir las siguientes condiciones: 1) z no debe estar correlacionado con el error (validez del instrumento), y 2) z debe estar correlacionado con el vector de regresores x (relevancia del instrumento).  
+Siguiendo diversos estudios sobre la estimaci de la ecuaci de demanda de mercado en telecomunicaciones tales como los realizados por Ward (1995), Hee Lee & Hee Lee (2006), Hausman (1997), etc. se instrumentel precio observado con variables relacionadas a los costos que enfrentan las empresas, en específico, el precio de los principales insumos (una descripci más detallada de los instrumentos empleados en la ecuaci de mercado se presenta en la secci 4.2). Se asume que las empresas no ajustan inmediatamente su oferta ante modificaciones en el precio de los insumos, por lo que se emplela estructura de rezagos polinomial. Se emplearon 4 rezagos bajo la estructura de un polinomio de segundo grado, bajo el supuesto de que el impacto de los rezagos más lejanos tiende a cero. 
+Para estimar la elasticidad de la demanda de cada firma, se requieren instrumentos que desplacen la curva de oferta de cada empresa pero no del resto de las empresas. El precio de un factor de producci puede funcionar como instrumento si el factor es ico a cada firma. No obstante, si un factor representa un bien com a todas las firmas, entonces cambios en el precio de dicho factor distinguirán desplazamientos de la oferta específicos a cada firma slo en la medida en que las empresas usen el factor en diferentes proporciones (Ward, 1995). Así, una primera opci es instrumentar el precio observado de cada firma con una variable proxy del costo de su capital financiero, debido a que ese costo es distinto para cada empresa. Una segunda opci es emplear el precio rezagado como instrumento. Dadas las características del mercado es razonable suponer que las decisiones de compra que los consumidores realizan en el presente no están correlacionadas con el precio del período anterior, ya que como se mencionen la secci 4.1.3, la reacci de los usuarios ante cambios en el precio es casi simultánea. 
+
+
+
+4.2. Descripci de datos  
+La estimaci de la demanda de largo plazo del mercado de telefonía mil se lleva cabo empleando fundamentalmente la Global Wireless Matrix 3Q08 generada por Merrill Lynch, que posee datos trimestrales desde 1999 hasta el tercer trimestre del 2008. Las variables de interés fueron el ingreso promedio mensual por usuario (average revenue per user – ARPU), el nero de minutos mensuales utilizados por cada usuario en promedio (minutes of use per subscriber – MOU), y el nero de suscriptores en cada período. 
+El ingreso promedio mensual por usuario (ARPU) se obtiene dividiendo el ingreso por servicios entre el nero de suscriptores en promedio durante el trimestre. “Service revenues include monthly service charges and usage fees, roaming, long distance, and subscriptions to mobile data services” (Merrill Lynch, 2008).  
+El nero de minutos mensuales utilizados por cada usuario (MOU) se calcula dividiendo el total de minutos utilizados entre el promedio se suscriptores durante el trimestre. Usualmente excluye el tráfico relacionado al servicio de datos miles. Se incluyen tanto minutos de entrada como de salida (Merril Lynch, 2008). 
+La matriz global de Merrill Lynch reporta los cálculos del ARPU y MOU por empresa y presenta un promedio nacional que se obtiene ponderando los datos de cada firma por su participaci en el mercado. Es esta tima informaci (el promedio nacional) la que se emplepara estimar las ecuaciones 10 y 11. Se generla variable precio de la siguiente manera: 
+ARPU
+P = .
+MOU El precio estimado incorpora informaci de todas las estructuras tarifarias que manejan las distintas firmas, tanto de prepago como de pospago así como de minutos de entrada y salida. De esta manera, permite realizar comparaciones en el tiempo a pesar de que ocurran numerosos cambios en los planes tarifarios por operador. 
+ Como proxy del ingreso individual se empleel PIB per cápita correspondiente a cada período. La informaci provino de las cuentas nacionales reportadas por el Instituto Nacional de Estadística, Geografía e Informática (INEGI).  
+Como se reporten la secci 4.1.4, para la estimaci de la ecuaci de demanda de mercado se emplearon como variables instrumentales los índices de precios de los principales insumos de la industria de telecomunicaciones, en particular: 1) maquinaria y aparatos eléctricos, 2) equipo y aparatos electrnicos y 3) equipos y aparatos eléctricos. Toda esta informaci es reportada periicamente por Banco de México. 
+En cuanto a la estimaci de la demanda por firma, se utilizcomo instrumento el precio observado en el período anterior. La estimaci también se llev a cabo considerando como instrumento el precio real de las acciones de cada empresa, como proxy  del costo del capital financiero de la firma, sin embargo, dicha variable demostrser un instrumento débil, por lo que los resultados no fueron satisfactorios. 
+Como se especifica en la ecuaci de demanda (3) todos los valores monetarios son deflactados por el índice de precios del resto de los bienes de la economía, en este caso el Índice Nacional de Precios al Consumidor (INPC) que da a conocer Banco de México (base 2002). 
+5. RESULTADOS 
+5.1 Demanda de mercado 
+La Tabla 1 presenta los resultados de la estimaci de la demanda de mercado, asumiendo elasticidad constante en el tiempo (ecuaci 10). Se muestran los resultados que arroja el método de mínimos cuadrados ordinarios así como los coeficientes obtenidos mediante el uso de variables instrumentales. Se reportan errores estándar consistentes ante heteroscedasticidad, bajo Newey-West. 
+Las columnas 1 y 2 muestran los resultados obtenidos bajo el supuesto de que la demanda se ajusta inmediatamente ante cambios en el ingreso. Las columnas 3-7 presentan las estimaciones bajo el supuesto de que la demanda se va ajustando de manera parcial ante modificaciones en el ingreso, bajo la estructura polinomial de rezagos (la Tabla 2 muestra los ajustes parciales de los rezagos del ingreso, así como el coeficiente total implicado).  
+La columna 4 considera como instrumentos las tres variables descritas en la secci 
+4.2: los índices de precios de maquinaria y aparatos eléctricos, equipo y aparatos electricos, y equipos y aparatos eléctricos. Las columnas 5-7 muestran que los resultados son robustos ante el uso de un conjunto más limitado de instrumentos. La columna 5 considera como instrumentos so los índices de maquinaria y aparatos eléctricos, y equipos y aparatos electricos. Los resultados de la columna 6 se generan empleando como instrumentos los índices de maquinaria y aparatos eléctricos y equipos y aparatos eléctricos. Finalmente la columna 7 incluye como variables instrumentales icamente los índices de equipos y aparatos electricos, y equipos y aparatos eléctricos. La prueba de Hausman rechaza la hipesis nula de consistencia de los estimadores MCO, justificando la utilizaci de variables instrumentales. 
+Se encuentra que un incremento de 1% en el precio del minuto de servicio mil genera una reducci de la cantidad demandada de 1.12% (columna 4), es decir, la demanda de minutos de telefonía mil es elástica con respecto al precio. El resultado es estadísticamente significativo al 1%. Por otra parte, la elasticidad-ingreso de la demanda no es distinta de cero, al 95% de confianza. 
+Con respecto a la variable del tama de la red (nero de suscriptores) el resultado es contraintuitivo: el coeficiente es negativo, de gran magnitud y significativo al 1%, implicando que un incremento de 1% en el tama de la red genera una reducci de 1.07% en la cantidad de minutos demandada por usuario. 
+Tabla 15 
+Variable dependiente: lnQ 
+Ajuste inmediato del ingreso (1)  MCO (2) VI  (3)  MCO  Ajuste parcial del ingreso (4) VI (5) VI (6) VI  (7) VI  
+C  27.668 (3.207)**  30.325 (3.324)**  25.147 (6.127)**  27.882 (4.767)**  28.593 (4.610)**  27.298 (4.829)**  29.047 (4.589)**  
+lnP  -0.895 (0.116)**  -1.147 (0.132)**  -0.884 (0.116)**  -1.118 (0.126)**  -1.179 (0.132)**  -1.068 (0.125)**  -1.218 (0.136)**  
+lnIa  -0.460 (0.163)**  -0.684 (0.188)**  -0.219 (0.537)  -0.456 (0.375)  -0.517 (0.517)  -0.406 (0.389)  -0.557 -0.339  
+lnN  -1.073 (0.108)**  -1.065 (0.117)**  -1.080 (0.109)**  -1.070 (0.120)**  -1.067 (0.127)**  -1.072 (0.115)**  -1.065 (0.132)**  
+Trend R2  0.054 (0.006)** 0.971  0.047 (0.008)** 0.964  0.053 (0.007)** 0.970  0.046 (0.009)** 0.964  0.044 (0.010)** 0.960  0.048 (0.008)** 0.966  0.043 (0.010)** 0.958  
+Obs.  35.000  35  35  35  35  35  35  
+
+aPara el caso de ajuste parcial del ingreso: coeficientes implicados por la estructura de rezagos, ver Tabla 2. 
+5 Se llevaron a cabo las mismas estimaciones adiendo una variable que capturara el nivel de precios de la telefonía fija, con el propsito de estimar el grado de sustitucin entre el servicio mvil y fijo. La variable empleada fue el costo de la renta mensual del servicio de telefonía fija, sin embargo, dado que dicha tarifa no refleja el precio por minuto (debido a que el pago de la renta contempla alrededor de 200 llamadas, cada una con tiempo ilimitado), la comparaci con el precio empleado para servicio mvil no sería válida. Aunado a ello, la renta mensual del servicio fijo presenta muy poca variaci, principalmente durante los ltimos aos del estudio. 
+22 
+Tabla 2 
+Ajuste parcial del ingreso: Distribuci de los rezagos lnI 
+(3)  MCO  (4) VI  (5) VI  (6) VI  (7) VI  
+Rezago 0 trimestres  -0.407 (0.169)*  -0.537 (0.186)**  -0.570 (0.189)**  -0.509 (0.191)**  -0.592 (0.186)**  
+Rezago 1 trimestre  -0.125 (0.095)  -0.199 (0.073)**  -0.218 (0.070)**  -0.183 (0.074)**  -0.230 (0.068)**  
+Rezago 2 trimestres  0.056 (0.192)  0.024 (0.140)  0.016 (0.131)  0.031 (0.146)  0.011 -0.128  
+Rezago 3 trimestres  0.138 (0.217)  0.132 (0.166)  0.130 (0.158)  0.133 (0.174)  0.129 -0.155  
+Rezago 4 trimestres Total  0.119  (0.153) -0.219 (0.537)  0.123 (0.120) -0.456 (0.375)  0.125 (0.115) -0.517 (0.348)  0.123 -0.126 -0.406 0.389)  0.125 -0.113 -0.557 (0.339)  
+
+Existen dos razones que nos dejan ver por qué el nivel de ingreso per cápita no tiene efecto estadísticamente significativo sobre la demanda de minutos de telefonía mil. Por un lado, para el a 2007 el ingreso per cápita real en nuestro país se había incrementado cerca de 35 por ciento desde 1999, mientras que la demanda de minutos de telefonía mil (por usuario) se elevalrededor de 500 por ciento en el mismo período. Por otro lado, como lo mencionan Ernesto Piedras y Carla Bonina (2007) resulta relevante estudiar co se está difundiendo el uso de teléfonos celulares entre los grupos de menores ingresos en México, para lo que se utilizará el concepto de “niveles socioeconicos” que define la Asociaci Mexicana de Agencias de Investigaci de Mercado y Opini Plica (AMAI). Los estratos se dividen en cinco grupos: A/B, C+, C, D y E, donde el nivel A/B es el estrato que contiene a la poblaci con el más alto nivel de vida e ingresos del país, mientras que en el E se encuentra la gente con menores ingresos y menor nivel de vida (Piedras & Bonina, 2007). A continuacin se reproduce el cuadro presentado por Ernesto Piedras y Carla Bonina en su estudio del 2007, con las características de cada grupo: 
+Cuadro1 
+Niveles socioeconicos de México  
+Nivel A/B  Nivel C+  Nivel C  Nivel D+  Nivel D  Nivel E  
+10.8%  9.1%  23.8%  56.3%  
+Estrato que contiene a la poblaci con el más alto nivel de vidae ingresos del país.  En este segmento se consideran a las personas con ingresos o nivel de vida ligeramente superior al medio.  En este segmento se consideran a las personas con ingresos o nivel de vida medio.  En este segmento se consideran a las personas con ingresos o nivel de vida ligeramente por debajo del nivel medio, es decir, es el nivel bajo que se encuentra en mejores condiciones.  El nivel D está compuesto por personas con un nivel de vida austero y bajos ingresos.  El nivel E se compone de la gente con menores ingresos y nivel de vida de las zonas urbanas de todo el país.  
+
+A partir de los datos aportados por una encuesta realizada por Telefica Movistar de México (TEMM) a más de 20 mil individuos en el 2003 y 2005, Piedras y Bonina (2007) construyeron dos cuadros de informaci estadística que se replican aquí. 
+Cuadro 2 
+Niveles socioeconicos y penetraci mil en México 2003  
+Nivel A/B - Nivel C+  Nivel C - Nivel D+  Nivel D – Nivel E  
+Distribuci de la poblaci  10.8%  32.9%  56.3%  
+Postpago  19%  8%  6%  
+Prepago  81%  92%  94%  
+Total Usuarios (sobre total grupo)  85%  43%  9%  
+
+Cuadro 3 
+Niveles socioeconicos y penetraci mil en México 2005  
+Nivel A/B  Nivel C+  Nivel C  Nivel D+  Nivel D – Nivel E  
+Distribuci de la poblaci  10.8%  9.1%  23.8%  56.3%  
+Postpago  28%  12%  6%  6%  4%  
+Prepago  72%  88%  94%  94%  96%  
+Total Usuarios (sobre total grupo)  89%  75%  67%  42%  27%  
+
+Como se puede apreciar, la evoluci de la penetraci en el período 2003-2005 es muy reveladora. Seg los datos presentados en los cuadros 2 y 3, el teléfono celular se ha convertido en una herramienta de uso popular entre los sectores de bajos ingresos. Mientras que en el 2003 so un 9% de las personas ubicadas en los niveles socioeconicos D y E eran usuarias de teléfono celular, para 2005 la cifra se había triplicado, llegando a 27% de la poblaci de esos estratos En los sectores de mayores ingresos, por su parte, la cifra no se ha modificado mucho, lo que era de esperarse ya que la proporci de la poblaci usuaria de teléfonos celulares en esos deciles ya era considerablemente alta (Piedras y Bonina, 2007). 
+Tenemos entonces lento crecimiento del ingreso per cápita en el período de estudio en conjunto con un rápido crecimiento de la penetraci del servicio mil en los niveles socioeconmicos más bajos del país, de lo cual se deriva que el nivel de ingreso no es un determinante primordial del rápido crecimiento de la demanda de minutos de telefonía mil que se observa en el periodo que cubre el presente estudio. La difusi del servicio mil dentro de los estratos más bajos se debe, en gran medida, al bajo costo de acceso y uso que brindan al usuario el sistema de prepago y la modalidad de “el que llama paga” (Piedras & Bonina, 2007). En los cuadros 2 y 3 puede apreciarse que de todos los niveles socioeconicos, son los niveles D y E los que tienen mayor porcentaje de usuarios de prepago. 
+La posibilidad de tener un dispositivo para las comunicaciones personales brinda a los individuos de los sectores menos ricos autonomía respecto a otros tipos de acceso a las comunicaciones. Asimismo, se debe tener en cuenta que la posibilidad de ser localizado juega papel de suma importancia en términos de empleo, si se toma en cuenta que entre los sectores de menores ingresos los trabajos temporales suelen ser los que prevalecen (Piedras & Bonina, 2007). 
+Observando los coeficientes presentados en la Tabla 1, otro resultado que salta a la vista es el coeficiente negativo y significativo del tama de la red. El servicio de telefonía mil genera externalidades, particularmente el denominado efecto de red que depende del nero de usuarios: mientras más grande sea la red mayor la utilidad que puede ofrecer la red a quienes se conectan. Ello implicaría hallar un impacto positivo y significativo del nero de usuarios sobre la cantidad de minutos demandada, sin embargo, lo que se observa en el período de estudio es exactamente lo contrario. Es importante subrayar aquí dos aspectos: 1) la dinámica de la penetraci del servicio mvil en México y 2) el hecho de que se está tomando como variable dependiente la cantidad de minutos demandada por 
+usuario. Para profundizar en estos temas, se reproduce una gráfica sobre la evoluci de la demanda por servicios miles elaborada por José Carlos Méndez y Diego Gamboa (2008). 
+Gráfica 2 
+
+Se puede apreciar que histicamente los primeros usuarios de telefonía mil en México (como todos los early adopters de tecnología) estuvieron dispuestos a pagar una tarifa elevada por contar con el servicio antes que la mayoría de los usuarios y por consiguiente suelen ser más intensivos en la utilizaci de servicios de telecomunicaciones (generando un ingreso promedio por usuario de 808 pesos en el 2008); los segundos entrantes son una combinaci de usuarios pos-pago y prepago alto (generando un ingreso promedio por usuario de 188 pesos); y por timo se encuentran los nuevos entrantes actuales cuyo perfil es de individuos de bajo poder adquisitivo (generando un ingreso promedio de 117 pesos), como adultos de bajos recursos econmicos, el segmento de nis y jenes, así como el de personas mayores (Méndez & Gamboa, 2008).  
+Así pues, dada la evoluci de la demanda por servicios mviles, puede concluirse que la gran expansi que ha experimentado este segmento de telefonía en los timos as se debe principalmente a la rápida penetraci de este servicio en los niveles socioeconicos bajos (recordemos de los cuadros 2 y 3 que los sectores de mayores ingresos no han presentado un incremento significativo en la penetraci de telefonía mil). Así, potencialmente, cada nuevo integrante de la red demandará menos minutos de telefonía mil que el promedio. Ello refleja que un incremento en el tama de la red reduce el nero de minutos de telefonía mil demandados por cada usuario en promedio, que es la variable dependiente en el presente estudio. De acuerdo a Méndez y Gamboa (2008) del total de usuarios de telefonía mil en el 2008, 5% provienen del segmento socioeconico alto, 16% del segmento medio y 79% del segmento bajo.  
+En cuanto a la tendencia en el tiempo, el coeficiente positivo y significativo indica una disminuci en el precio de los bienes y/o servicios complementarios, principalmente los aparatos teleficos o handsets. De ello resulta una disminuci de los costos en los que el usuario debe incurrir para dar de alta el servicio mil. 
+De acuerdo a lo especificado en la secci 4, además de estimar la demanda de largo plazo también se lleva cabo la estimaci para la demanda de corto plazo que por su naturaleza es distinta en cada unidad de tiempo. La Gráfica 2 nos muestra la evoluci de la elasticidad-precio de la demanda del servicio de telefonía mil (ecuaci 11), tanto de mínimos cuadrados ordinarios como de variables instrumentales. El coeficiente .1 de la ecuaci 11 estimado por MCO es igual a -0.344716, significativo al 1%, mientras que el símil estimado por variables instrumentales es de -0.516197, también significativo al 1%. 
+Observando la Gráfica 2 se aprecia que la elasticidad de corto plazo ha mostrado mucho dinamismo en el período de estudio. En el a 2000, la elasticidad-precio de la demanda (estimada con variables instrumentales, bajo ajuste parcial del ingreso) es cercana a dos. Ello implicaba que la sensibilidad de la cantidad demandada con respecto a una variaci en el precio era más que proporcional. A partir de ese momento la elasticidad disminuye paulatinamente hasta  alcanzar una elasticidad de -0.44 para el 2008. 
+Gráfica 3. Elasticidad variable en el tiempo 
+Mar 00Sep 00Mar 01Sep 01Mar 02Sep 02Mar 03Sep 03Mar 04Sep 04Mar 05Sep 05Mar 06Sep 06Mar 07Sep 07Mar 08Sep 08 
+0 
+
+-0.5 
+-1 
+-1.5 
+
+Elasticidad 
+-2  
+-2.5  Periodo Elasticidad VI Elasticidad MCO  
+Elaboraci propia a partir de los resultados econométricos obtenidos.  
+
+Recordemos que la demanda de cualquier bien o servicio tiende a ser más elástica mientras mayor sea el nero de bienes sustitutos, la proporci de su ingreso que el individuo gasta en el bien sea mayor, y los consumidores tengan más tiempo para ajustarse ante cualquier cambio (por esta tima raz, la elasticidad-precio de la demanda de cualquier bien o servicio será más alta en el largo plazo que en el corto plazo) (Frank & Bernanke, 2007).  
+La reducci de las tarifas y precios de los equipos, junto con la popularizaci del sistema de prepago y el que llama paga, generque los sectores econicos menos favorecidos incrementaran ampliamente su participaci en el mercado. Para el 2008 este sector conformaba 79% del mercado, y con una elasticidad de -0.44 para ese a es de suponerse que el consumo de este servicio no representa para este sector un porcentaje muy alto de su ingreso. 
+Aunado a lo anterior, a comienzos de la presente década es muy factible que el servicio de telefonía fija se considerara el sustituto más cercano de la telefonía celular (ya que generalmente so existía servicio mil donde ya había telefonía fija). A medida que la telefonía mil se hizo más accesible para todos los estratos sociales y se incrementel alcance de la sel en todo el país, la telefonía mil se presentcomo la ica opci para quienes no contaban con otro tipo de acceso a las telecomunicaciones, convirtiéndose en este sentido en un servicio distinto (no sustituto de la telefonía fija) para este tipo de individuos. Para ilustrar este punto, imaginemos una comunidad con nulo acceso a la telefonía fija o plica, para quienes está disponible el servicio mil. Para estos individuos cualquier cambio en el precio de la llamada de telefonía fija no tendrá un efecto sobre su consumo de dicho servicio, ya que no tienen acceso a él. De acuerdo a estadísticas de COFETEL (2008) la penetraci del servicio mvil en México es 70 usuarios por cada 100 habitantes, mientras que so existen 20 líneas de telefonía fija por cada 100 personas, por lo que es razonable pensar que hay una gran proporci de la poblaci que solo cuenta con acceso a las telecomunicaciones vía celular o mil, para quienes, por lo tanto, no está disponible un sustituto6. Ello se reflejaría en una demanda menos elástica para los timos as del estudio, tal y como lo muestra la Gráfica 3. 
+Finalmente, como lo mencionan Frank y Bernanke (2007) es de esperarse que la demanda de largo plazo sea más elástica que la demanda de corto plazo, ya que en el primer caso los individuos tienen un mayor margen para ajustar sus preferencias y por lo tanto su comportamiento. Esta afirmaci coincide con los resultados hallados, que muestran una elasticidad de largo plazo igual a -1.118 y una elasticidad de corto plazo estimada para el 2008 de -0.44. 
+5.2 Excedente del consumidor 
+Para estimar el excedente del consumidor se calcula la ecuaci (8) a la que se le ha agregado el nero de suscriptores en cada período para incorporar el efecto del tama de la red: 
+a 1+a 1+a aa
+0 1 123
+e (P - P )YN
+tt-1 t
+.CS= (12)
+t 1+a
+1 2008.3 
+Así el cambio total en el excedente del consumidor .. ..CSt ..  asciende a 11,954 millones .t =1999.1 . 
+de pesos para el intervalo de tiempo estudiado. Se aproxima el precio virtual (CS 0 de la 
+6 De hecho, actualmente es probable que el servicio mvil sea considerado como un servicio distinto, no sustituto de la telefonía fija, para la mayor parte de los usuarios sin considerar su nivel econmico. Ello debido principalmente a la característica que le da el nombre: la movilidad, que incluye la capacidad de marcar o ser localizado en cualquier parte a cualquier hora. El servicio mvil sería así un complemento del la telefonía fija. 
+ecuaci 9) empleando una línea tangente a la curva de demanda en el nivel de precio observado más alto bajo las siguientes condiciones: punto de contacto en (P,Q) = ($3.68458, 803 120 528.2) y elasticidad constante en el tiempo a1 = -1.118. El precio virtual estimado es $6.98 el minuto  por lo tanto la aproximaci de CS0 es alrededor de 1,323 millones de pesos. Así, el excedente acumulado del consumidor asciende a 13,277 millones de pesos durante el período 1999-2008. La siguiente gráfica muestra la evolucin de este indicador en el tiempo, por consumidor. 
+Gráfica 4. Excedente del consumidor 
+Miles de millones (base 2002) 
+14,000.00 12,000.00 10,000.00 8,000.00 6,000.00 4,000.00 2,000.00 0.00 
+
+
+Mar 00Sep 00Mar 01Sep 01Mar 02Sep 02Mar 03Sep 03Mar 04Sep 04Mar 05Sep 05Mar 06Sep 06Mar 07Sep 07Mar 08 
+Excedente del consumidor (serie acumulada) 
+Elaboraci propia a partir de los resultados econométricos obtenidos. 
+5.3 Demanda por firma: Telcel y Telefica Movistar 
+Telcel y Movistar sostienen un enfrentamiento vertical en el mercado de telefonía mvil, es decir, en todos los niveles de ingreso, mientras que Iusacell y Nextel son más operadores de nicho de alto consumo (CIU, 2007). A continuaci se reproduce un gráfico presentado por The Competitive Intelligence Unit en su estudio de 2007. 
+Gráfica 5 
+
+Se lleva cabo la estimaci de la ecuaci (12) para Telcel y Telefica MoviStar, con el objetivo de calcular la elasticidad de largo plazo de estas empresas. Los resultados se muestran a continuaci. 
+Tabla 3 
+Variable dependiente: lnQ Telcel 
+Ajuste inmediato del ingreso Ajuste parcial del ingreso 
+(1) MCO  
+(2) VI (3) MCO 
+(4) VI 
+C  24.083  28.866  17.584  19.077  
+(3.841)**  (3.430)**  (8.131)**  (8.153)**  
+lnP_Telcel  -0.504  -0.772  -0.644  -0.962  
+(0.164)**  (0.318)**  (0.139)**  (0.427)**  
+lnP_Telefonica  -0.033  -0.010  -0.010  0.021  
+(0.024)  (0.032)  (0.024)  (0.045)  
+lnI  -0.064  -0.304  0.575  0.594  
+(0.190)  (0.248)  (0.676)  (0.709)  
+lnN  -1.160  -1.274  -1.177  -1.257  
+(0.120)**  (0.096)**  (0.088)**  (0.079)**  
+Trend  0.065  0.063  0.057  0.050  
+(0.006)**  (0.012)**  (0.007)**  (0.019)**  
+R2  0.983  0.982  0.986  0.984  
+Obs.  35  35  35  35  
+
+aPara el caso de ajuste parcial del ingreso: coeficientes implicados por la estructura de rezagos, ver Tabla 4 
+Tabla 4 
+Telcel Ajuste parcial del ingreso: Distribuci de los rezagos lnI 
+(3) MCO  (4) VI  
+Rezago 0 trimestres  -0.358 (0.163)*  -0.629 (0.438)  
+Rezago 1 trimestre  0.043 (0.120)  -0.007 (0.109)  
+Rezago 2 trimestres  0.280 (0.234)  0.367 (0.314)  
+Rezago 3 trimestres  0.351 (0.258)  0.493 (0.391)  
+Rezago 4 trimestres  0.258 (0.180)  0.370 (0.288)  
+Total  0.575 (0.676)  0.594 (0.709)  
+
+32 
+Tabla 5 
+Variable dependiente: lnQ Telefica 
+Ajuste inmediato del ingreso Ajuste parcial del ingreso 
+(1) MCO  
+(2) VI (3) MCO 
+(4) VI 
+33.669 49.277 41.711 48.407 (8.782)** (19.992)** (8.978)** (16.952)** lnP_Telcel -1.913 -2.956 -1.658 -2.789 (0.522)** (1.126)** (0.503)** (1.056)** lnP_Telefonica -0.552 -0.533 -0.581 -0.530 (0.113)** (0.131)** (0.115)** (0.150)** lnI -1.521 -2.533 -2.334 -2.488 (0.447)** (1.155)** (0.799)** (1.146)* lnN -0.616 -0.816 -0.588 -0.806 
+(0.320) (0.498) (0.328) (0.468) Trend -0.028 -0.048 -0.015 -0.043 (0.027) (0.034) (0.024) (0.039) 
+R2 0.854 0.827 0.856 0.828 Obs. 35 35 35 35 
+aPara el caso de ajuste parcial del ingreso: coeficientes implicados por la estructura de rezagos, ver Tabla 6. 
+Tabla 6 
+Telefica Ajuste parcial del ingreso: Distribuci de los rezagos lnI 
+(3) MCO  (4) VI  
+Rezago 0 trimestres  -0.619 (0.494)  -1.62 (0.916)  
+Rezago 1 trimestre  -0.591 (0.151)**  -0.822 (0.289)**  
+Rezago 2 trimestres  -0.514 (0.328)  -0.261 (0.447)  
+Rezago 3 trimestres  -0.391 (0.406)  0.064 (0.581)  
+Rezago 4 trimestres  -0.219 (0.299)  0.150 (0.438)  
+Total  -2.334 (0.799)**  -2.488 (1.146)*  
+
+33 
+La prueba de Hausman no rechaza la hipesis nula de consistencia de los estimadores MCO, tanto en el caso de Telcel como en el de Movistar. De acuerdo a Baum y Schaffer (2002) “…under the null hypothesis that OLS is an apropiate estimation technique, only efficiency should be lost by turning to IV”. Los estimadores de MCO son entonces consistentes y eficientes7. 
+Bajo MCO y ajuste parcial del ingreso se encuentra una elasticidad de -0.644 para Telcel y de -0.581 para Telefica. La elasticidad de la demanda representa el efecto del precio sobre la cantidad demandada cuando el precio de los competidores se mantiene constante. Bajo dicho supuesto, la elasticidad de cada firma podría proveer informaci sobre su poder de mercado: una demanda altamente inelástica indica que la empresa enfrenta competidores con mayores costos marginales y/o los servicios prestados por las otras empresas no se consideran sustitutos cercanos. El recíproco de la elasticidad precio de la demanda de cada empresa, conocido como el Índice de Lerner, proporcionaría en ese caso una estimaci de la medida en que el precio que establece la firma excede su costo marginal: 
+Li  Pi=  - CM Pi  =  1 e ii  
+(13)  
+
+Las demandas inelásticas de Telcel y Movistar indicarían que ambas compaas poseen poder de mercado (y que de hecho es relativamente el mismo, dada la similitud de elasticidades). De continuar la tendencia, el mercado mil podría llegar a tener dos operadores grandes, Telcel y Movistar, y dos operadores de nicho que serían Nextel y Iusacell si no existe alguna consolidaci entre empresas o un nuevo entrante (Méndez & Gamboa, 2008).  
+Con respecto a la elasticidad cruzada, para Telcel ésta resulta significativamente no distinta de cero, mientras que para Movistar el coeficiente es de -1.658 significativo al 1%. 
+7 Los instrumentos resultaron ser significativos al 1% en las estimaciones de la primera etapa. La R2  de la primera etapa para Telcel resulta de 0.99, mientras que la respectiva para Movistar es 0.92. 
+Es necesario interpretar este resultado con cautela debido a que la variable de precio empleada integra informaci sobre las tarifas on-net y off-net. 
+Finalmente se calcul la elasticidad de corto plazo para ambas compaas, encontrándose los siguientes patrones bajo MCO y ajuste parcial del ingreso. 
+Gráfica 6 
+Mar 00Sep 00Mar 01Sep 01Mar 02Sep 02Mar 03Sep 03Mar 04Sep 04Mar 05Sep 05Mar 06Sep 06Mar 07Sep 07Mar 08Sep 08 
+
+-0.5 -1 -1.5 -2 
+
+-2.5 
+Elasticidad MCO -Telcel Elasticidad MCO -Telefica 
+Elaboraci propia a partir de los resultados econométricos obtenidos. 
+Como puede apreciarse en la Gráfica 6, la elasticidad de la demanda que enfrenta cada empresa se ha reducido ampliamente en el período de estudio, al mismo tiempo que ambas elasticidades convergen. Es de esperarse que para los as durante los cuales la tarifa por minuto era relativamente alta, los consumidores eran muy sensibles ante cambios en el precio, sin embargo, a medida que los precios se fueron reduciendo, consumidores de todos los niveles de ingreso tuvieron acceso al servicio, de tal forma que lo que se observa hoy en día es una menor sensibilidad de la demanda ante variaciones en la tarifa por minuto. 
+6. CONCLUSIONES 
+Se ha analizado la demanda de telefonía mvil en México empleando informaci del mercado total y específica de cada firma. La estimaci por mínimos cuadrados en dos etapas arrojuna elasticidad de largo plazo en la industria de -1.18, indicando que la demanda de mercado es elástica. Así, a pesar de la tendencia hacia una configuraci oligopica, se ha observado una reducci en tarifas provocada por el cambio tecnolico y la actividad regulatoria en el país, todo ellos a favor del bienestar de los consumidores. Una demanda de mercado elástica reduce los incentivos a la conducta de colusi, debido a que un incremento en el precio genera una disminuci en la demanda más que proporcional.  Con respecto al resto de los determinantes de la demanda, de acuerdo a los resultados obtenidos el ingreso ha dejado de ser decisivo en el consumo del servicio mil. En la tima década se ha observado un rápido crecimiento del nmero de consumidores de bajos ingresos, principalmente generado por el bajo costo de acceso y uso que brindan al usuario el sistema de prepago y la modalidad de “el que llama paga”. Asimismo, los hallazgos indican que los consumidores adicionales (relative late adapaters) demandan menos minutos que los early adapters. La estimaci revela que dicho efecto domina cualquier efecto positivo que pudiera tener el efecto del tama de la red.  
+El análisis realizado por firma, apunta hacia una demanda inelástica (muy similar) para las dos principales empresas del sector, Telcel y Telefica Movistar, indicando poder de mercado de estas compaas. En el largo plazo podemos esperar dos operadores grandes en la industria, penetrando todos los niveles de ingreso. 
+Desde una perspectiva de implementaci de políticas, a pesar de que el acelerado desarrollo tecnolico junto con el deseo de las empresas por incrementar su participaci en el mercado ha conducido a las firmas a operar bajo tarifas más bajas, debe seguir priorizándose el interés del regulador en promover medidas que favorezcan la competencia en el sector, ya que ello promovería un aumento en el bienestar de la poblaci. 
+BIBLIOGRAFÍA 
+Agiakloglou, C. y D. Yannelis. 2006. Estimation of price elasticities for international telecommunications demand. International Advances in Economic Research 12: 131-137. 
+Aldebert M., M. Ivaldi y C. Roucolle. 2004. Telecommunications demand and pricing structure: An econometric analysis. Telecommunications Systems 25: 89-115. 
+Banco de México. Índice Nacional de Precios Productor. Nota Metodolica. México. http://www.banxico.org.mx/ (accesado febrero 10, 2009). 
+Banerjee A. y A. J. Ross, 2002. Drivers of demand growth for mobile telecommunications services: Evidence from international panel data. NERA Economic Consulting. http://www.nera.com/ (accesado enero 15, 2009). 
+Baum, C., M.E. Schaffer y S. Stillman. 2002. Instrumental variables and GMM: Estimation and testing. Boston College Economics Working Paper 545. 
+Camarena B., 2007. Unbundling path dependence: A case study of telecommunications reform in Mexico (1990-2006). Dissertation, School of Law, Stanford University. http://www.law.stanford.edu/ (accesado enero 15, 2009). 
+CIU. 2007. Mercado de telecomunicaciones al 3er trimestre de 2007. http://www.the-ciu.net/ (accesado enero 15, 2009). 
+COFETEL. 2008. Estadística e Informaci de Mercados. http://www.cft.gob.mx/ (accesado enero 15, 2009). 
+Das P. y P. V. Srinivasan. 1999. Demand for telephone usage in India. Information Economics and Policy 11: 177-194. 
+Dewenter, R. y J. Haucap. 2004. Estimating demand elasticities for Mobile telecommunications in Austria. University of the Federal Armed Forces Discussion paper 33. 
+Fildes, R. y V. Kumar. 2008. Telecommunications demand forecasting- A review. Telecommunications Forecasting 18 (4): 489-522. 
+Frank, Robert H. y Ben Bernanke. 2006. Principles of Economics. McGraw Hill. 
+Gassner, K. An estimation of UK telephone access demand using pseudo-panel data. Lausanne. Cahier de recherches économiques du DEEP 9817. http://www.hec.unil.ch/deep/textes/9817.pdf (accesado enero 15, 2009). 
+Hausman, J. 1981. Exact consumer’s surplus and deadweight loss. The American Economic Review 71 (4): 662-676. 
+Hausman, J. 1997. Valuing the effect of regulation on new services in telecommunications. Brookings Papers on Economic Activity. Microeconomics 1997: 1-54. 
+Hee Lee, Duk y D. Hee Lee. 2006. Estimating consumer surplus in the Mobile telecommunications market: The case of Korea. Telecommunications Policy 30: 605-621. 
+Iimi, A. 2005. Estimating demand for cellular phone services in Japan. Telecommunications Policy 29: 3-23. 
+IMC. 2006. Visi México 2020. Instituto Mexicano para la Competitividad – CIDE. 
+Majumdar , Sumit K., Ingo Vogelsang y Martin E., eds. Cave. 2002. Handbook of Telecommunications Economics Vol.1. Oxford. North-Holland. 
+Mariscal, J. 2003. Telecommunications Reform in Mexico from a Comparative Perspective. Latin American Politics & Society 46 (3): 83-114. 
+Mariscal, J. y C. Bonina. 2006. Mobile phone usage in Mexico: Policy and popular dimensions. México. TELECOM CIDE. http://www.telecom.cide.edu/home.html (accesado enero 15, 2009). 
+Mariscal, J. y E. Rivera. 2006. The growth of Mobile Communications in Mexico. México. TELECOM CIDE. http://www.telecom.cide.edu/home.html (accesado enero 15, 2009). 
+Méndez, J.C. y D. Gamboa. 2008. El segmento de telefonía mil. México. The Competitive Intelligence Unit. http://www.the-ciu.net/ (accesado enero 15, 2009). 
+Merrill Lynch. 2008. Global Wireless Matrix 3Q08: Summary. United Kingdom. 
+OECD, 1996. Competition in Telecommunications. París. www.oecd.org/ (accesado enero 15, 2009). 
+OECD, 1998. Mexico-Regulatory Reform in the Telecommunications Industry. París. www.oecd.org/ (accesado enero 15, 2009). 
+Piedras, E. y C. Bonina. 2006. Contribuciones sociales y econicas de la telefonía mil en México. México. TELECOM CIDE. http://www.telecom.cide.edu/home.html (accesado enero 15, 2009). 
+Piedras, E. 2007. Corte de caja del Mercado mil a mediados del 2007: Resultados positivos. México. The Competitive Intelligence Unit. http://www.the-ciu.net/ (accesado enero 15, 2009). 
+PNUD. 2001. Informe sobre Desarrollo Humano. hdr.undp.org/ (accesado enero 15, 2009). 
+Ward, M. 1995. Measurements of market power in long distance telecommunications. Wshington, D.C.: Bureau of Economics Staff Report. Federal Trade Comission. 
+Willig, R. 1976. Consumer’s surplus without apology. The American Economic Review 66: 589-97. 
+Zong, P. y B. Anderson. 2006. Modelling and Forecasting UK Telecommunications Expenditure Using Household Microdata. University of Essex Chimera Working Paper 14. 
+
+
+
+

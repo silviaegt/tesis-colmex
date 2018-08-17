@@ -1,0 +1,1072 @@
+EL COLEGIO DE MEXICO CENTRO DE ESTUDIOS ECONOMICOS 
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRIA EN ECONO~IA 
+EFECTOS DE LA APERTURA COMERCIAL EN EL EMPLEO Y EL BIENESTAR EN MEXICO: UN ENFOQUE DE EQUILIBRIO GENERAL. 
+Arturo Pérez Mendoza 
+Promoci6n 1987-89 
+NovieMre, 1989 
+ASESOR: Prof. Alvaro Baillet REVISOR: Prof. Carlos Urz 
+RESUMEN 
+Este trabajo presenta un modelo de Equl I lbr lo Genera l ut 1 1 1 zado para eva Iuar e 1 1mpacto sobre e I emp I eo de una reducci de aranceles. El modelo consta de tres sectores productivos ( bienes Importables, exportab les y no comerciables), dos consumidores y dos tipos de trabajo (calificado y no calificado). El aFio que fue tomado como base es 1983, y I a s I mu Iac I que se rea 1 1 zcons Iste en reducir los aranceles en un 50% y evaluar los efectos sobre el empleo sectorial, el consumo de cada Individuo, e l producto, e I n 1 ve I de b 1 enestar y I a ba Ianza comerc I a I La slmulacl se efectupara tres escenarios distintos: uno que supone pleno empleo, otro que supone rig idez en el salarlo del trabajo no cal lflcado , y uno tercero donde se supone rigidez en todos los salarlos. 
+E I método ut 1 1 1 zado para reso Iver e I mode I o es e 1 
+"Transactlon Value approach" con la ayuda del paquete GAMS­
+HERCULES. 
+Los resu Itados que se obtuv Ieron Ind lean que entre mayor sea I a r I g I dez sa Iar I a 1, una reduce I de aranee Ies provoca un mayor desemp Ieo, d I sm I nuc I en e I producto y deterioro de la balanza comercial. El sector menos afectado negativamente es el de los bienes exportables, y el más, es e I de Ios lmportab Ies. E I n I ve I de consumo y b I enestar es mayor y el consumidor más beneficiado varia de acuerdo a la especificaci del mercado de trabajo. 
+INDICE 
+1 . 1 NTRODUCC ION 
+2. LOS SALARIOS MINIMOS Y LA TEORIA PURA DEL COMERCIO INTERNACIONAL. 7 
+2.1 La Teorla Pura del Comercio Internacional. 7 
+2.2 El Modelo de Brecher. 10 
+3. MODELO DE EQUILIBRIO GENERAL. 22 
+3.1 Principales Caracterlstlcas. 22 3.1 .1 Ptoducc!. 22 3.1 .2 Mercado de Factores. 23 3.1 .3 Demanda. 25 3.1 .4 Sector Externo. 26 
+3.2 Especificaci del Modelo. 26 
+
+
+3.2.1 Ecuaciones de Precios 26 
+3.2.2 Ecuaciones de Producci 28 
+3.2.3 Mercado de Factores. 30 
+3.2.4 Sector Externo. 32 
+3.2.5 Ecuaciones de Ingreso de los Consumidores. 33 
+3.2.6 Gobierno. 33 
+3.2.7 Ecuaciones de Inversi. 34 
+3.2.8 Ecuaciones de demanda de consumo. 34 
+3.2.9 Equ 1 1 1 br I o en el Mercado de Productos. 35 
+3.3 Reglas de Cierre. 36 
+3.4 Le;t: de Wa Iras. 39 
+4. MATRIZ DE CONTABILIDAD SOCIAL PARA EL A~O BASE. 
+
+
+4.1 Consideraciones Generales. 42 
+4.2 Flujos representados en la Matriz 43 
+5. EFECTOS DE LA APERTURA COMERCIAL EN EL EMPLEO Y EL BIENESTAR 54 
+5.1 Efectos Sobre el Empleo y el Producto. 54 
+5.2 Efectos sobre el Consumo y el Bienestar. 57 
+5.3 Efectos sobre la Balanza Comercia!. 60 6. CONCLUSIONES. 63 ANEXOS 67 BIBLIOGRAFIA. 86 
+1 . ·t NTRODUCC ION. El objetivo del presente trabajo es evaluar, a través de un mode I o de equ 1 1 1 br I o genera 1 , e 1 1mpacto que puede tener sobre el empleo y el bienestar una reducci de aranceles. 
+A partir de 1982 se empeza 1 evar a cabo una po 1 ! t I ca de apertura comercial en la economla mexicana. La Justificaci de tal polltlca ha sido el lograr que la planta product l va mex l cana aumente su ef le I en'c I a y logre producir artlculos que puedan tener competitividad ~ nivel mundial. Asimismo, con ta 1 po 1 1 t I ca se ha pretendido reducir el elevado nivel de precios originado por las gananc I as monop1 1 cas surg Idas por e I protecc Ion I smo que caracteriza la economía mexicana a partir del Inicio del proceso de Industrial lzacl 
+Desde que se empeza Instrumentar esta po I rt I ca, y 
+sob r e todo en J u 1 1 o de 1 9 8 5 y d I e I em b r e de 1 9 8 7 en que se ¡ ntens I f I c e I gob I erno en n I ngl'.Jn momento ha cons I derado que una reduce I de I a protecc I pueda provocar efectos noc I vos para I a econom I a. Se ha reconoc Ido que s I b I en es cierto que la apertura comercia! provocará el cierre de a I gunas empresas I nef I e I entes, tamb I én se logrará que el consumidor pueda tener acceso a productos más baratos y de 
+mejor cal !dad. 
+Por otro lado, algunos sectores de la sociedad como la Cámara Nacional de la Industria de la Transformaci y organizaciones poi ltlcas de Izquierda han considerado que la apertura comerc I a I traerá consecuenc I as negat l vas para I a 
+economla. La Justificaci que se ha dado es que la planta 
+Industrial mexicana no tiene la capacidad para competir con productos extranjeros, y si se permite la entrada de éstos, se produc Irán efectos negat Ivos en I a produce I y en e 1 empleo. 
+A pesar de que una y otra posici contienen bases que sustentan sus af I rmac Iones, lo e I erto es que son escasos los trabajos que mediante estimaciones cuantitativas han podido dar e I f ras más e:xaet'as sobre e I Impacto de I a apertura en e 1 empleo y el nivel de bienestar. 
+En diversos palses se han elaborado modelos de equ 1 1 1 br lo genera 1 para eva Iuar e I Impacto de una reduce I de aranee Ies. En muchas ocas Iones, 1os resu Itados que se desprenden de estos modelos dependen de la forma en que se hace la especificaci. Por eJemplo, Harrls ha demostrado que s I un pa Is peque comere I a con otro muy grande, es 
+Importante considerar que existen rendimientos crecientes a esca I a y tomar en cuenta Ias estructuras de mercado que r I gen en cada Industr I a ya que de I o centrar I o se puede 1legar a resultados muy dlstlntosC 1 ). 
+Asimismo, es diferente evaluar el efecto de una reducci de aranceles cuando el mercado de trabajo es modelado bajo un esquema neoclásico en relaci a uno keynes Iano. En e I pr lmero no se pueden med l r los efectos 
+C1 )véase el artlculo de Harr.ls qu~ aparece en Srlnlvasan y Whalley (1986). 
+sobre el nivel de empleo, que si son capturados en el 
+segundo. Por I o anter lor, e I mode I o que se presenta en este trabajo contiene tres especificaciones distintas para el mercado de trabajo. Una de e 1 1 as , que denominamos Neoclásica, supone que el salarlo es flexible y que por lo tanto siempre existe pleno empleo. La segunda especlflcacl , que denominamos "Semt-keyneslana", se caracteriza por considerar que parte de la mano de obra no está plenamente utl I Izada debido a rigidez en el salarlo: el trabajo cal lflcado al ser escaso está plenamente empleado, en tanto que el no cal lflcado, al presentar un salarlo rlgldo, no se encuentra totalmente utl I Izado. La tercera especificaci, que denominamos Keynestana, se caracteriza por suponer que todos los salarlos son rlgldos y, por lo tanto, existe desempleo tanto de trabajadores cal Iflcados como no cal lflcados. El método que se utl I Izpara real Izar las simulaciones 
+de I mode I o es e I enfoque Transact lon Va I ue (TV) y se h Izo uso de I paquete HERCULES que ha empezado a tener una amp 1 1 a difusi en varios palsesC 2 ). 
+El paquete HERCULES surgiante lo absorvente de tiempo que resu Itaba e Iaborar a I gor Itmos de so 1uc I y ca 1 1 brar los modelos. El antecedente de este paquete fue el llamado 
+C2 )En México, los modelos de equl l lbrlo general que se han real Izado se cal lbraron sin la ayuda de alg paquete computacional y fueron resueltos con un algoritmo programado en alg lenguaje de computaci. 
+SAMLIB que surgien 1980 a través de un proyecto financiado por el Banco Mundial y que fue acompa~ado de una metodologla para construir modelos: el enfoque TV(Transactlon Value) basado en la .elaboraci de Matrices de Contabl I ldad Social para estimar modelos de equl I lbrlo general. 
+La Idea detrás de I en foque TV (Transa:ct Ion Va I ue approach) es que para especificar un modelo de Equl I lbrlo General, el modelador so necesita construir una matriz de contabl I ldad social . Utl I Izando esta matriz, se especifica en cada celda el tipo de expresi algebrálca que le corresponde; en tanto que en cada cuenta se especlflca s i cada variable es endena o exena . Además, sl cada cuenta tiene un precio, se especifica si el precio y la cantidad son exenos o endenos. 
+Mod I f I cae Iones a I paquete SAML IB d l eran Iugar a 1 paquete HERCULES (Hlghlevel Economlc Representatlon far Creatlng and Uslng Large Economywlde Systems) que posteriormente fue Integrado al paquete GAMS y que fue utl I Izado para la estimaci del modelo de este trabajo. HERCULES perm Ite def In Ir, ca I lbrar y reso Iver Mode I os de Equl I lbrlo General basados en matrices de contabl I ldad soc I a 1, s I mp 1 1 f Icando mucho la construcci de estos modelos. 
+La estructura de este trabajo es la siguiente: en el cap r tu I o dos se presenta un marco te Ico en e I cua I se d I scute e 1 1mpacto que t I ene una reduce I de aranee Ies sobre e I emp I eo y e I b I enestar. Se Integra de dos par tes 
+p r I ne i pa.l es. La pr I mera expone I os postu I ados de I a teor I a pura de I comer e I o I nternac I ona I y presenta I os efectos que una reduce I de aranee I es puede tener sobre I a econom I a cuando se supone que existe pleno empleo. La segunda expone un mode I o en que se ana 1 1 zan I os efectos que · t I ene. una reducci de aranceles cuando existe rigidez salarial. 
+La pr I ne I pa I cene I us I que se desprende de este cap I tu I o es que cuando ex I sten r I g I deces sa I ar I a I es, una reducci de aranceles puede tener efectos distintos en el empleo y el bienestar dependiendo de la Intensidad factorial de I os b I enes que se exportan e Importan y de I a ba I anza comere I a 1. Esta cene I us I d I f I ere de I a que se desprende de I mode I o Hecksher-oh 1 1 n que estab I ece que toda reducci de aranceles aumenta el bienestar y conserva el pleno empleo gracias a 1 a f I ex I b 1 1 1 dad de 1 salarlo. De l o anterior resulta que a nrvel teico los efectos de una apertura comere I a I dependerán de I a f I ex I b 1 1 1 dad de I sa I ar I o, por I o que un modelo emplrlco que Intente medir el Impacto de una reduce I de aranee I es va a cond I e I onar I os resu I tados de acuerdo a co cons I dere e I comportam I ento de I mercado de trabajo. 
+El tercer capitulo presenta las ecuaciones del modelo de equl I lbrlo general. Dado que la estimaci se real Izcon e I paquete HERCULES, no era necesar I o haber espec I f I cado todas las ecuaciones debido a que la especificaci es hecha a través de una matriz de contabl 1 !dad social como se verá más adelante. Sin embargo, esto es l 1 posteriormente 
+cuando se anal Iza la relaci que existe entre el programa computacional y estas ecuaciones. Además, el establecimiento de tas ecuac Iones perm Ite ver c I aramente I a formu Iac I de tas tres reg Ias de c I erre que se ut 1 1 1 zaron as I como 
+deduc t r  I a  Iey  de  Wa Iras  para  checar  la  consistencia  del  
+modelo.  
+E I  cuarto  cap Itu I o  deta 1 1 a  I a  forma  en  que  fue  
+construida  la  matriz  de  contabl l ldad  social  que  sirvi de  
+
+base para la estimaci del modelo. Debido a que este tipo de matrices no son de uso com entre muchos economistas, al principio del capttulo se hace una breve exposici sobre su significado y utl I lzacl. 
+El capitulo quinto presenta los efectos que puede tener 
+la reducci de aranceles sobre el empleo y el bienestar en México de acuerdo a los resultados obtenidos con el modelo. En é I puede verse que s I se reducen Ios arance Ies e I n t ve t de bienestar aumenta Independientemente de la especificaci del mercado de trabajo: cuando los salarlos son flexlbles e 1 1ncremento en e I n I ve I de b Ienestar es mayor que cuando se consideran rlgldos. SI la regla de cierre que se utl t Iza es neoclásica, el empleo permanece constante cuando se 
+reducen los aranceles. Pero si se utl I Iza cual quiera de tas otras dos , el empleo sufre una reducci. 
+En e I cap I tu I o sexto se presentan Ias conc Ius Iones, y al flnal los anexos, entre tos cuales se encuentra et programa elaborado para estimar el modelo y la relacl que existe entre ambos. 
+2. LOS SALARIOS MINIMOS Y LA TEORIA PURA DEL COMERCIO INTERNACIONAL. 
+
+2.1 La.Teorla Pura del Comercio lnternaclonat.C3 ) 
+Por lo general, cuando se revisan los efectos que puede tener sobre una econom I a una reduce I de aranee Ies, se hace uso del modelo de Hecksher-Ohl In que se basa en cons Iderar que ex Iste competenc 1a perfecta y que no hay d I stors Iones en I a econom Ia. A part 1r de este mode I o se 
+1 lega a la conclust de que la el lmtnacl de aranceles trae consigo un nivel de bienestar mayor para una economta peque, manteniéndose la mano de obra plenamente utl I Izada gracias a la flexlbl 1 !dad del salarlo que permite el ajuste comp I eto en e I mercado de trabaJo. Esto puede verse en I a figura 2.1 
+cons I der emos p r I mero e I e aso de u n p a I s que v I ve en autarqu I a. Con e I uso p I eno y ef I e I ente de Ios factores productivos, el pals cuenta con un curva de poslbl I tdaes de producci AB. Dada una relaci de precios Internos, el pa Is cons Iderará ef I e I ente produc Ir en a I g punto de I a frontera de poslbt I ldades de producci de tal manera que la relaci de precios coincida con la tasa margina! de transformaci. Dado que no existe comercio Internacional, 
+(3)para ver con más detalle lo expuesto en este Inciso véase Bhagwat1(1969, p.149-163)~ 
+FIGURA 2.1 Equ 1 1 Ibr I o Interno con p I eno emp I eo 
+X 
+' 
+A 
+8 D y 
+el consumo colnc ldlra con la producci y estara restringido por la curva AB. 
+Con 1 1 bre comerc I o Ios prec Ios mund I a Ies son Ios que r I gen a 1 1nter Ior de I pa Is . Supongamos que esta re Iac I de precios esta representada por la I Inea CD. El pals considerará timo producir en un punto como E, y a través del comercio mundial podra tener acceso a puntos de consumo a lo largo de la curva CD que se encuentran por arriba de 1as pos I b 1 1 1 dades de consumo or I g I na Ies Cexcepto e I punto E). Gracias al comercio el pals podra consumir en un punto corno F , e I cua I no pod r I a ser a I canzado s I e I p a I s hu b l era optado por mantenerse en autarqula . En conclusl, el I lbre comercio permite mejorar el bienestar manteniéndose el pleno empleo. 
+Una vez que el 1lbre comercio se produce, si consideramos que el pals es pequeno, al Imponerse un arancel a las Importaciones el bienestar disminuye y el pleno empleo se conserva. La f I gura 2. 2 1 1 ust ra este punto. 
+FIGURA 2.2 Equl I lbrlo Interno con un arancel a las Importaciones. 
+X 
+
+o• o y 
+La 1!nea CD muestra la relaci mundial de precios, el punto E la producci con l lbre comercio, y F el consumo. Por lo tanto, el bien X se Importa y el bien Y se exporta. Cuando el pals Impone un arancel a las Importaciones, el precio del bien X se encarece y la relaci de precios domésticos es GH, que difiere de la relaci de precios que rige a nivel mundial. Ahora el pals va a considerar timo produc Ir en e I punto E' y consum Ir en e I punto F' 1oca 1 1 zado sobre la l lnea C'D' que representa la relaci de precios 
+Internacionales. En el nuevo equl l lbrlo habrá un menor nlvel u0 u1
+de bienestar al pasar el nivel de utl l ldad de a manten I éndose e I p I eno ernp I eo. Por I o tanto, s I en un par s existen aranceles a las Importaciones resultará conveniente 
+el/minarlos para mejorar el bienestar. 
+2.2 El Modelo de Brecher. 
+Hasta el momento hemos trabajado con un modelo en el 
+que cua I qu I er rned l da de po 1 1 t Ica cornerc 1a I que se qu I era 1 levar a cabo no tendrá efectos en el empleo pues se considera que la flexlbl 1 !dad de los salarlos garantiza que el mercado de trabajo esté siempre en equl I lbrlo. Sin embargo, si relajarnos el supuesto de f I ex I b 1 1 1 dad de salarlos, y por lo tanto el de pleno empleo, los resultados que se obt I enen son muy d I st I ntos a I os expuestos en I a secci anterior. 
+E I aná 1 1 s Is que perrn I te ver I o an ter I or se basa en e 1 
+trabajo de Brecher(1972,1974). Consideremos que existe 
+rigidez en el salarlo real y que por lo tanto existe la 
+poslbl 1 !dad de desernpleoC 4 ). Supongamos también que se 
+producen dos b I enes: X que es I ntens I vo en cap Ita I y Y que 
+es I ntens rvo en traba Jo. De acuerdo a I teorema de Sto I per-
+sarnue I son, s 1 1 os prec I os re I a t l vos de I os productos se 
+C4 )Resulta más conveniente considerar el salario real 
+constante en lugar del salarlo nominal debido a que con un 
+salarlo nominal rígido, las modificaciones en precios 
+relativos pueden permitir que el desempleo se el !mine. Véase 
+Brecher(1974,p.100, cita 8). 
+, , 
+mantienen constantes, la remuneraci de los factores t am b I é n I o estará por I o que e I s a I ar l o rea I no su f r I r á modificaciones. SI el precio relativo de uno de los bienes su be , 1 a r emu ner a e I n d e I f a eto r en que es I n tens I v o d I eho bien también lo hará. 
+Partamos de una situaci de equl I lbrlo como la que se muestra en la figura 2.3. La curva AB muestra la frontera d e pos I b I I l dades de p rod u e e I n de u n p a l s que emp I e a plenamente sus recursos. Supongamos que el nivel de precios 
+tnlclal es pO y que a ese nlvel de precios corresponde un salarlo real que es el mlnlmo que están dispuestos a aceptar los trabajadores. Dado este equl l lbrlo, el precio relativo de Y no puede disminuir puesto que el lo lmpl Icaria que el salarlo real cayera por debajo del mlnlmo. Por lo 
+FIGURA 2.3 
+Frontera de pos I b l I l dades de produce I con 
+salarlos mlnlmos. 
+y 
+A 
+A' 
+-
+
+e B' P, X. 
+tanto, una relaci de prec i os corno P' no podrla ser viable. Por el contrario, un aumento en el precio relativo de Y si ser I a pos I b I e deb Ido a que provocar I a un aumento en e 1 salarlo real. 
+Consideremos ahora un nivel de empleo menor tal que la curva de pos i b 1 1 1 dades de produce I se desp I ace a A' B ' . Para que e I sa I ar I o rea I permanezca constante a este nuevo nlvel de empleo, es necesario que la relaci de precios se mantenga constante, por I o que e I nuevo punto de equ 1 1 1 b r I o será e I punto E' . E I nuevo equ 1 1 1 br I o se va a caracter Izar porque el nive l de producci del bien Intensivo en trabajo disminuye y el del bien Intensivo en capital aumenta, de acuerdo a I teorema de Rybczynsk 1. SI repet Irnos e I rn I srno ejercicio varias veces obtendremos una nueva curva de poslbl l ldades de producclC 5 ), AECB , en la que a lo largo de I a 1 1 nea EC C1 1 nea de Rybczynsk 1) habrá d I versos n I ve I es de empleo a un salarlo constante. 
+Entre más elevado sea el salarlo rnlnlrno , mayor será e l precio relativo del bien Y y más a la Izquierda se encontrará la 1 !nea de Rybczynskl, de tal manera que puede darse el caso en que esta 1!nea sea corno se muestra en la figura 2.4. 
+La frontera de pos I b 1 1 1 dades de produce I será ahora ECB o AECB dependiendo de la especificaci del salarlo 
+CS) Brecher prefiere llamarla curva de transformaci puesto que a lo largo de el la no se está emp l eando comp l etamente e l factor trabajo en todo momento. 
+FIGURA 2.4 Equl I lbrlo interno con salarlo mlnlmo 
+y 
+A 
+
+e B 
+X. 
+rea1< 6 ) Por simplicidad, y para los fines del presente trabajo, so nos concentraremos en la parte EC. Para determinar cual va a ser el nivel de empleo, en primer lugar necesitamos conocer las preferencias de la sociedad. De acuerdo a las curvas de utl l ldad social mostradas en la figura 2.4, si unimos cada punto en que son tangentes con la relaci de precios constante P podemos obtener la senda de expansi del Ingreso GH. SI el pals esta en autarqula, el nivel de empleo estarla determinado por el punto E, en donde · e I n I ve I de produce J  co Ine Ide con e I de consumo, y e 1 nivel de bienestar es u0 . Con I lbre comercio, el pals podrla 
+(S)5¡ el salarlo real es especificado en términos del bien Y la curva de transformaci serla ECB; si el salarlo real fuera especificado en términos de los dos bienes de tal forma que los trabajadores mantuvieran un nivel de utl I ldad 
+constante, 1 a curva de transformac l ser I a AECB. Véase Brecher(1974, p. 100, 101 y cita 2 p.106). 
+ganar o perder b I enestar depend Iendo de I b I en que se va a exportar. Supongamos que con I lbre comercio el pals se encuentra en el punto de equi I lbrio E' en el cua l exporta el bien intensivo en trabajo e Importa el bien i ntensivo en cap ital (ver figura 2 . 4). Ahora el n ivel de bienestar será mayor y con el lo el empleo. 
+La producci se desplaza del punto E al punto D. Ahora la producci del bien Y, que es Intensivo en trabajo, aumenta y dlsrnlnuye la del bien X que es Intensivo en capital. Para aumentar la producc i de Y tiene que ut 1 1 1 zarse mayor cap Ita 1, e I cua I se obt I ene de I sector. X. Cada unidad de capital que sale de este sector d isminuye e l empleo en una cantidad menor al empleo que genera esa misma un Idad de cap Ita I en e I sector Y, por I o que e I ernp I eo en toda la econornra aumenta. 
+Corno el empleo es mayor y el salarlo real es constante, 
+el n ivel de consumo y bienestar aumentan . 
+SI con lbre comercio el nuevo punto de equl I ibrlo es 
+E' ' , e I n I ve I de b I enestar y de ernp I eo son menores a I de 1 
+equl I lbrlo original. Ahora el nivel de producci se 
+desp Iaza a F C I a de I b I en Intens Ivo en cap Ita I sube y I a 
+del bien Intens ivo en trabajo baja). Para lograr lo anterior 
+se necesita que salga capltal de la producci del bien Y y 
+se desplace a la del bien X. La cantidad de desempleo que se 
+produce por I a reduce I de I producto de I b I en I ntens Ivo en 
+trabajo es mayor a la cantidad de empleo que se genera en la producci del bien Intensivo en 
+15 
+cap Ita 1 , por I o que a n I ve I de toda I a econom I a e I emp I eo sufre una reducci. Con menor empleo y un salarlo real constante, el nivel de consumo y bienestar tienen que disminuir. El nivel de equl l lbrlo que finalmente regirá dependerá de la curva de oferta externa. En la figura 2.5 puede verse 
+que dada una curva de oferta externa F, e I n I ve I de exportaciones estará determinado por la Intersecci de esta curva con I a de o f e r ta domés t l ca ( H L ) • E n e q u 1 1 1 b r I o se Importarla OA del bien X y se exportarla OB del bien Y. 
+FIGURA 2.5 
+Equilibrio mundial con salarlo rlgldo. 
+y 
+E de ~a'i3 
+
+
+I""\ del cxtenor-
+F 
+M de c.~sa 
+E del Qxte;"ror 
+S 1 1 a curva de oferta externa fuera-F', e I b I en exportado serla X por un monto de OA' y se Importarla OB' del bien Y. 
+Ahora cons I deremos e I l mpacto de Imponer un arance 1 . Consideremos que Inicialmente el país está en equl I lbrlo en 
+
+e I punto E con una re Iac I de prec Ios deterrn Inada por I a u0
+1!nea punteada (ver figura 2.6). El nivel de bienestar es y se está Importando e I b I en Intens Ivo en cap Ita 1(X) y exportando el bien Intensivo en trabaJo(Y). 
+FIGURA 2.6 Equl l lbrlo Interno con arancel y salarlo rlgldo. 
+y 
+X
+8 
+Supongamos que se Impone un arancel sobre las Importaciones cuyo valor es "t". Ahora los precios Internos estarán dados por la siguiente relaci: 
+Py/PX"" Py* /Px * (1+t) P ""P* /(1 + t) 
+Donde: P -relaci de precios nacionales (Py/Px). 
+11 
+Internacionales (Py* /Px * ). 
+
+SI el bien que se estuviera Importando fuera el Intensivo en trabajo(Y), la relaci sería Py/Px = [Py* (1+t)]/Px* P = p*c1 + t) 
+Dado que e I sa Iar I o rea I permanece constante, la r e I a c I n de pr e c i os I n ter nos t am b I é n I o har á , por !o que I a curva de trans formac I y I a senda de expans I de 1 1ngreso permanecerán [nalteradas una vez que se ha Impuesto un arancel. El precio [nterno del bien X en térm Inos abso Iutas aumenta deb Ido a I arance 1 por I o que se debe 
+Incrementar el precio absoluto de Y para mantener los precios relativos Internos constantes. A nivel Internacional el precio relativo de Y respecto a X es mayor debido al aumento de I prec I o abso Iuto de I pr !mero y a que e I prec I o 
+Internacional del segundo permanece constante 
+SI el nivel de empleo no sufriera modificaci, el nuevo punto de equilibrio serla E'(ver figura 2.6). El nlvel de consumo y b I enestar ser I a mayor deb Ido a que e I sa Iar I o real permanece constante y el precio Internacional de nuestras exportaciones es mayor respecto al de nuestras 
+lmpor~aclones (con menos cantidad del bien Y se puede comprar una mayor cantidad del bien X). 
+SI con la Imposici del arancel el nivel de bienestar permanece constante en el punto E, el nivel de empleo tiene que d I sm l nu Ir dado que ahora podemos adqu Ir Ir más b lenes extranjeros con una menor cantidad de bienes exportados. La producci de Y disminuye y la de X aumenta, pero debido a 
+1 8 
+que el bien Y es Intensivo en trabajo, la cantidad de desempleo que se genera en un sector no se compensa con el empleo que se genera en el otro. 
+Una vez mas, para conocer cual sera el nuevo punto 
+de equ 1 1 1 br I o a 1 1mponerse e I arance 1 , tenemos que ver I a Intersecci de la curva de oferta externa, F, con la curva de oferta local G (ver figura 2.7). Al apl lcarse el arancel 
+FIGURA 2.7 Equl 1 !brlo externo con arancel y salarlo m!nlmo. 
+y 
+E de co,a 
+JI\ del e1'te.<loY' 
+F' 
+
+la nueva curva de oferta local sera la 1 !nea punteada G' y 
+e I  nuevo  punto  de  equ 1 1 r br fo  sera  E'  Ahora  el  nivel  de  
+Importaciones  que  real Iza  el  pals  local  es  mayor  respecto  al  
+de I  equ 1 1 1 br I o  In Ie I a 1,  pero  es  menor  a I  que  se  tendr I a  s 1  
+el  nivel  de  empleo  permaneciera  constante,  el  cual  se  
+representa  por  el  punto  D'.  Lo  anterior  lmpl lea  que  si  el  
+empleo  no  sufriera  cambios  se  producirla  un  exceso  de  
+demanda  por  Importac Iones  ,  1 o  cua I  sI o  ser r a  cor reg Ido  s 1  
+
+1 9 
+se aumentara I a produce I Ioca I de I b I en Importado. La producci del bien X tendrla que aumentar y la de Y tendrla que disminuir lo que producirla una reducci en el empleo a I desp Iazarse cap ita I de un sector Intens 1vo en trabajo a uno Intensivo en capital . (7 ) 
+E 1 1mpacto de I aranee I sobre e I n I ve I de b I enestar, cuando se está Importando el bien Intensivo en capital, va a depender de la elasticidad de la curva de oferta externa. La figura 2.7 Ilustra este punto. 
+Supongamos primero que la curva de oferta externa es F y que al Imponer un arancel el nuevo punto de equlllbrlo es E' ta I y como se ha desar ro 1 1 ado hasta e I momento. SI e 1 nlvel de bienestar original se quisiera mantener constante, el nivel de producci tendría que desplazarse de Ca O (ver figura 2.6) por lo que las Importaciones d lsmlnulrlan y habrla un traslado de capital de la producci del bien Y a 
+la del bien X. En la figura 2.7, el punto O'' representa un nlvel de bienestar equivalente al origina! representado por e I punto E. Con este n I ve I de b I enestar se produc Ir I a un exceso de oferta de Importaciones que so podrla ser el !minado disminuyendo la producci del bien X y aumentando con el lo el emp I eo. E I n I ve I de b I enestar aumenta debido a que se tiene un salarlo real constante , 
+(7)No estamos tomando en cuenta la poslbl 1 !dad de que se produzca la paradoja de Metzler que consiste en que al Imponer una tarifa la producci de l bien Importable permanece constante o disminuye lo que provoca que el efecto en el empleo sea de sentido opuesto al se~alado. Para mayores detalles véase Brecher ( 1972, p.22-34). 
+por I o que un punto corno E' representa una s I tuac I mejor en comparaci con D'' 
+s ¡ n ernb a r g o , e I r esu I tado a n t e r I o r se I n ver t I r I a s 1 1a curva de oferta externa fuera elástica corno F' en I a figura 2.7. Al Introducirse el arancel, el nuevo punto de 
+equl l lbrlo es E''. SI el nivel de bienestar original representado por D'' se quisiera conservar, se producir la un exceso de demanda de Irnportac Iones dornést I cas La l'.Jn lea forma de e 1 1 rn I nar este desequ 1 1 1 br I o es aumentando I a producci local del bien Importado, que al ser Intensivo en cap ita I provocar I a una d I srn I nuc I en e I ernp I eo. Con un n I ve I de desernp I eo mayor de I que se neces Ita para mantener e I n I ve I de ut 1 1 1 dad constante, se produce una reduce I de bienestar. 
+Cuando el bien Importado es el Intensivo en trabajo se 
+s I gue un razonarn I ento muy paree Ido a I anter I or por I o que 
+es omitido en esta exposlclC 8 ). 
+Resurn I endo I o an ter I or podernos dec Ir que cuando se 
+Impone un arancel se producen efectos sobre el empleo y el n I ve I de b I enestar que dependen de I a I ntens I dad factor I a 1 del bien Importado y de la elasticidad de la oferta de exportaciones del exterior. Cuando existe desempleo nada garant Iza que ante una reduce I de arance I es e I n l ve I de bienestar aumente Esta conc I us I hace ver I a Irnpor tanc I a que tiene considerar que existe desempleo cuando se mide e l 
+CS)véase Brecher(1972, p.22-34). 
+l mpacto de una apertura comere fa 1. , ya que de I o cont rar I o siempre se esperará que el nivel de bienestar suba. 
+3. MODELO DE EQUILIBRIO GENERAL. 
+
+
+3.1 Prlnclpales Caracterlstlcas. 
+3.1.1 Producci. 
+Existen tres sectores productivos: dos comerciables ( exportables e Importables) y un sector de bienes no comerciables. Cada sector econ Ico se comporta como una empresa que maximiza beneficios. 
+Se utl I Izan funciones de producci anidadas a tres niveles, como puede ser visto en la figura 3.1 Para producir el bien XI se nece~ltan bienes Intermedios y valor agregado en proporciones fijas, es decir, no hay sustltulbl ldad entre el los, por I o que se comb I nan en una funci de producci tipo Leontief. El valor agregado se obt Iene agregando trabajo y cap Ita I en una func I t I po Cobb-Douug Ias (se supone que I a e Iast I c I dad de sust ituc I entre factores es constante e Igual a uno). 
+Ex I sten dos t I pos de trabajo: ca 1 1 f I cado y no 
+ca 1 1 f I cado, s In pos I b 1 1 1 dad de sust Itu Ir uno por otro; se 
+combinan en proporciones fijas a través de una funci 
+Leontlef. Existen tres Insumos Intermedios, los cuales son 
+complementarlos y agragados en proporciones fl jas. Cada 
+Insumo corresponde a cada uno de los sectores en que ha sido 
+dividida la economla. Cada uno de el los representa a un bien 
+FIGURA 3.1 Funci de producci anidada a tres niveles 
+XI 
+Leontlef 
+Demanda valor Intermedia agregado 
+Leontlef Cobb-Douglas(CD) 
+1
+1 1 1 1 1 1 1 l2 1 l 3 trabajo capital 
+1 
+(CD) (CD) (CD) Leontlef 
+~ ~ ~ 
+M1 º1 M2 º2 M3 03 Le Lnc 
+compuesto ya que cada sector ut 1 1 1za de Ios otros Insumos nac Iona ies e Importados. Ambos ti pos de Insumos guardan cierta sustitulbi i ldad por lo que se utl I Iza una funci de producci CD para combinarlos y obtener Insumos compuestos. 
+3 . 1.2 Mercado de Factores. 
+Las demandas de factores se derivan a part Ir de 1 proceso optimizador de las empresas. Al minimizar los costos 
+del  trabajo  y  capital,  sujetos  a  la  funci  CD  que  produce  
+valor  agregado,  se  obtienen  las  demandas  timas  de  
+factores.  
+Existe  una  oferta  fl ja de  capita l  utl I Izada  plenamente  
+
+gracias a que su remunerac i es flex i ble y se ajusta para permitir que la demanda co i ncida con la oferta. 
+Por e 1 1ado de I ernp I eo ex Isten tres espee I f I cae Iones distintas . La pr imera supone una cant idad 11 Im i tada de mano de obra a I a cua I t I enen acceso I as empresas a I sa I ar I o vigente. Esto crea la pos l bl l ldad de que exista desempleo. Dado e I sa I ar I o f I j ado exenarnente , 1 as empresas dec Iden 
+la cantidad que demandarán de trabajo, la cual es satisfecha por I a cant Idad 1 1 1 m I tada de mano de obra ex Istente. A esta especificaci la hemos denominado keyneslana. 
+Corno una segunda espec i ficaci del mercado de trabajo se supondrá que el salarlo de los trabajadores califlcados es f I ex I b I e deb Ido a que están en todo momento p I enamente empleados el trabajo no cal lflcado sigue manteniendo su salarlo rlgldo por ser un factor abundante. Esta especificaci, que hemos denominado seml-keyneslana, 
+permite anal Izar co la apertura comercial afecta a l empleo de un sector de la mano de obra. 
+La tercera especificaci la hemos denominado neoc Iás Ica y supone que ex Iste p I eno emp I eo grac Ias a I a perfecta flexlbllldad del salarlo. 
+La misma simulaci será practicada bajo los tres escenar I os y se verá co cada forma de espec I f I car a 1 mercado laboral puede arroj~r diferentes resultados. 
+3.1 .3 Demanda. 
+Existen cuatro demandantes en la economla: los consumidores, 1as em p r esas , e I g o b I e r no y e I r esto d e 1 mundo. Hay dos tipos o grupos de consumidores que der I van sus demandas por el bien compuesto a partir de maximizar una funci de ut 1 1 ldad CD sujetos a su Ingreso, deduc Ida I a cant I dad de ahorro que desean rea 1 1 zar y I os Impuestos. 
+El gobierno demanda bienes en un monto f I jado 
+exenamente. Se considera que su decisi de consumo 
+responde a un p I an f I jado de antemano y que no var I a en 
+funci de las circunstanc i as que se presenten. 
+Las empresas demandan Insumos I ntermed I os y factores 
+productivos de acuerdo a l o expuesto anteriormente. 
+E I resto de I mundo demanda b I enes a partir de una 
+funci de demanda de nuestras exportaciones que depende del 
+t I po de camb I o y de I os prec I os I nternac I ona I es de estos 
+bienes. 
+3.1 .4 Sector Externo. 
+Por e 1 1ado de I as l mpor tac iones se adopta e I supuesto de II econom I a pequef'ía II por cons I derar que su prec I o es dado exenamente. Por el I ado de I as exportac Iones supone que su precio es determinado por el pals local a través del manejo de la poi ltlca comercia! y del tipo de cambio. 
+El tipo de cambio se considera fijo y permite que la ba I anza comerc I a I se ajuste por cant I dades, de ta I manera que después de las slmulaclones el déficit o superávit se puede moqlflcar, variando con él el empleo y el bienestar. 
+3.2 Especificaci. 
+El modelo está compuesto por ecuaciones que contienen var I ab I es endenas, exenas y parámetros. Las var I ab I es endenas se representan con I etras maycu I as, 1 as exenas con letras mayculas con una barra y los parámetros con 
+letras minculas o griegas. 
+3.2.1 Ecuaciones de Precios. 
+Los precios de las Importaciones están determinados por los precios Internacionales: PM ¡ = PW ¡ ( 1 + tm 1 ) E R en 
+Donde: PM ¡, es el precio deméstlco de la mercancla Importada I; PW 1, es e 1 precio I nternacional de I a mercanc I a 1 ; tm 1 , es e I arance 1 1mpuesto a I a mercanc ! a y 
+ER, es el tipo de cambio . 
+Por e 1 1ado de I as exportaciones el pals local tiene capacidad para Influir en el precio de éstas a partir de subsidios y del tipo de cambio. 
+PWE¡ = PO¡ / (1 + te¡)ER (2) 
+Donde:. PWE¡, es el precio Internacional de la mercanc!a exportada 1; PO¡, es el precio domést i co de la mercanc!a [ . 
+' y te 1, es I a tasa de subs Id I o otorgada a I as exportac Iones de la mercanc!a l. Las decisiones de optimizaci de los agentes se basan en I os prec I os de I as mercanc las compuestas y a part Ir de e 1 1 os der I van sus func Iones de demanda . La forma de obtener dichos precios es la siguiente : ( 3 ) 
+Donde: P 1, es e 1 prec I o de I a mercanc I a compuesta 1 • 
+' ~I, son parémetros de la funci CD con la que se obtiene la mercancla compuesta La forma de obtener esta e x pres i  cons I ste en der I var una func I de costos de ut 1 1 1 zar Insumos naciona l es e Importados y a partir de e t ta obtener tos costos med I os e I gua I ar I os a I precio de I a mercanc I a compuesta. 
+La áltlma ecuaci de precios a considerar es la de I numerar I o. Se va a cons I derar que e I t I po de camb I o cump I e este pape I y por I o tanto su va I or se mantendrá constante. 
+ER = ER (4) 
+3.2.2 Ecuaciones de Producci. 
+Como se muestra en I a f I gura 3 . 1, para producir el bien se neces Ita va I or agregado e Insumos Intermedios en p ropor c I o nes f I J as , p o r I o que se c om b I nan a p a r t I r d e u na funci Leontlef. 
+(5) 
+Donde: MCJ, es el producto obtenido del bien J a partir de la utilizaci de Insumos Intermedios; VAJ, es el valor agregado del bien J obtenido a partir de la utl I lzacl de trabajo y capital; xJs, es la cantidad producida del bien J sin considerar el monto de lmpuetos Indirectos pagados. 
+MCJ a su vez es producido a partir de la utilizaci de 1os tres productos comp.uestos que ex I sten en I a econom I a combinados en proporciones fijas: 
+MC J = m I n ( 1 1 1 J / a ¡ J ) (6) 
+Donde: 1 1 1J, es I a cant I dad de I b 1 en compuesto ut 1 1 1 zada por el sector J; a¡J, es el coeficiente técnico . 
+La cantidad del bien compuesto es obtenida a partir de una funci CD que agrega Importaciones, M1, Y bienes producidos domésticamente, D1: 
+111 = b1M1°'1D¡ 1 -°"i 
+E I va I or agregado se obt lene a partir de comb I nar trabajo y capital a partir de una funci CD: VAj = CjLj1ÍIKj 1-lTI (7) 
+Donde: Lj y Kj son la cantidad de trabajo compuesto y capital respectivamente utl I Izados por el sector j. E I trabajo compuesto es u na comb I nac I de trabajo 
+ca 1 1 f I cado y no ca 1 1 f I cado, los cuales al ser complementarlos se comb I nan a partir de una funci Leontlef: 
+Donde: Lcj, es la cantidad de trabajo cal lflcado utl ! Izado por el sector j; ªcj, es el coeficiente técnico que Indica 1 a cant I dad de trabajo ca 1 1f I cado necesar I o para produc Ir una unidad de Lj; Lncj, es la cantidad de trabajo no ca 11f I cado ut 1 1 1 zado por el sector j ; es el 
+coeficiente técnico que Indica la cantidad de trabajo no cal lflcado necesario para producir una unidad de Lj. 
+3.2.3 Mercado de Factores. 
+Las demandas de trabajo son obten Idas a part Ir de mi n I m Izar Ios costos de capital y trabajo sujetos a la funci que agrega los dos tipos de trabajo, obten iéndose: 
+
+es ) 
+Donde:R es la tasa de ganancia del cap i tal. Los costos salarlales totales están dados por : 
+
+Dividiendo todo entre Lj : 
+
+Sustituyendo en la ecuaci anterior: 
+* VAj [ TT¡_. R ]1 -lIi. LJ =~ (1-TI¿_)(o.cWc:.+~l')c.W,.,c 
+Las demandas por tipo de trabajo están dadas por: Lcj = Ljacj es) Lncj= Ljªncj e1 o) 
+La demanda tota I por ca 1 1 f I cae I está determ Inada por la suma de cada tipo de trabajo que necesita cada sector : 
+3 
+Lncd = 2. Lncj ( 1 1 ) 
+j::' 
+Lcd 2.3 Lcj ( 1 2) 
+j=i 
+El equl l lbr lo en el mercado de trabajo va a estar 
+determinado por la Igualdad de la oferta y la demanda: 
+Les = Lcd ( 1 3) 
+Lncs = Lncd (14) 
+Más adelante se aclara la forma en que se determina el equ 1 1br I o en e I mercado Iabora 1 
+La demanda de cap Ita I se obt Iene a través del m I smo procedimiento en que se obtiene la demanda de trabajo compuesto: 
+K J * ( 1 5 ) 
+La demanda total de capital está dada por la suma del capital demandado en cada sector: K J * ( 1 6) 
+El equl I lbrlo en el mercado de capital está dado por la Igualdad de la oferta y la demanda de este factor: 
+( 17) 
+Donde: K es la dotaci Inicial de capital empleada totalmente gracias a la f Iex I b 1 1 1 dad de la tasa de beneficio . 
+3.2.4 Sector Externo. 
+Dado el supuesto de que el precio de las exportaciones puede ser f I Jado por e I p a I s a part i r de I t i p o de c amb i o y de Ios subs id Ios a I a exportac I, se ti ene que estab Iecer una funci de demanda de nuestras exportaciones que dependa del precio de el las: 
+
+e , s) 
+Donde: es el precio mundial promedio de las exportac Iones domésticas en diares; Y\ J, es una constante que representa la elasticidad precio de la demanda de nuestras Importaciones E J, nos Indica el valor que tendrlan nuestras exportaciones si los precios nacionales coincidieran con el precio mundial promedio correspondiente 
+en  el  a  base.  
+Las  Importaciones  se  obtienen  a  partir  de  minimizar  
+costos  sujetos  a  (7):  
+M¡  =  o(¡ \ -o(¡  pi)¿ f>Mi  Dí  e , s)  
+
+E I equ 1 1 1 br lo en I a ba Ianza de pagos está dado por I a siguiente ecuaci~ 
+~ PW M J -~ PW E E J -F = O (20) 
+J J 
+Donde: F Indica la entrada neta de capital externo. 
+3.2.5 Ecuaciones de Ingreso de los Consumidores. 
+E 1 1ngreso d I spon I b I e de cada · consum I dor va a estar dado por I a suma de I os Ingresos rec I b Idos por I a venta de sus servicios factoriales, deducidos los Impuestos correspondientes: 
+( 21 ) 
+Donde: u j, es I a proporci que de I Le posee e 1 1_ nd I v I duo j; v j, es I a proporc I que de Lnc posee e 1 1nd I v I duo j; te y tnc, son I as tasas de Impuesto d I recto sobre e 1 1ngreso de 1 trabajo cal lflcado y no cal lflcado respectivamente; Kj, es 
+la cantidad fija que tiene el Individuo j de capital. 
+3.2.6 Gobierno. 
+Los Ingresos netos del gobierno se obtienen de la suma 
+de todos los Impuestos que cobra menos los subsidios otorgados: 
+Rg = ~ (tcWc Lc.j +1:ric.Wnc. Lricj)+ttic.R."'K.; 
+J 
++ ~ t m j P\/\J i. E.R • Mj -s P.D c22)
+-~ tej P W E j E~ · Ej + \ t dj X j j 
+De 1 1ngreso de I gob I erno una cant I dad constante I a dedica al consumo y el remanente lo dedica al ahorro. 
+3.2.7 Ecuaciones de Inversi. 
+Suponemos que I a Invers I tota I es Igua I a I ahorro Interno total mas el ahorro externo compuesto por ~a entrada neta de recursos del exterior: 
+-
+TINV =Sr+ Sp + Sg + F•ER (23) 
+Donde: TINV, es la Inversi total y Sr, Sp y Sg son el ahorro del consumidor rico, del pobre y del gobierno respectivamente . 
+La Inversi en cada sector es considerada exena, por lo que el ahorro tiene que ajustarse para permitir el equ 1 1 1 br Io. 
+(24) 
+3.2.8 Ecuaciones de Demanda de Consumo. 
+Cada consumidor deriva funciones de demanda de consumo por e I b I en compuesto a part Ir de max I mIzar func Iones de utl I ldad CD sujetos a su Ingreso, deducidos los Impuestos . y el ahorro que planean rea 1 1 zar. La demanda de cada consumidor estara determinada por: 
+(25) 
+Donde: q 1J, son los exponentes de la funci de utl 1!dad CD del agente J respecto al bien Por I o tanto I a demanda de consumo tota I por cada mercancla está dado por C¡ = C¡r + C¡p + C¡g (26) 
+La demanda de 1 1 nsumo Intermedio real izada por el 
+sector J está dada por: 
+
+(27) 
+La demanda Intermedia total por el bien compues~o está dado por: 
+'3 
+V¡ =¿ ª1JXJ (28) 
+;~1 
+3. 2. 9 Equ 1 1 1 br I o en e I Mercado de Productos . 
+La demanda Interna por b I enes domést Icos es una 
+proporc I de I a demanda tota I por b I enes de inversi, 
+de consumo e Insumos Intermedios 
+D¡ = UD¡ (IN¡ + C¡ + V¡) (29) 
+Donde: UD¡ , es la raz de uso doméstico e Indica cuál es la proporc I de I a demanda tota I de I a mercanc I a que es producida localmente. Puede ser obtenida a partir de minimizar 1os costos de ut 1 1 1 zar Insumos nacionales e 
+Importados sujetos a la funci CD en que son agregados. 
+1
+UD I = -'-1-o(~ pM l Jo(~ ( 3 O) 
+
+
+
+
+bi.Lo{~ PDi. 
+La demanda tota I por b I enes produc Idos domést 1camente estará dada por la suma de la demanda Interna y externa por estos bienes: 
+X1d = 01 + E1 e31) 
+E I equ 1 1 1 br I o en e I mercado de productos estará dado 
+por: 
+
+(32) 
+3.3 Reglas de cierre. 
+El modelo tal y como se ha expuesto hasta el momento cont I ene un mayor nero de var I ab I es que de ecuac Iones. Ex I sten dos var I ab I es más por I o que se deben def In Ir dos ecuaciones adicionales re I ac I onadas con I a oferta de cada tipo de trabajo. 
+Variables Ecuaciones 
+PMI 3 PMI 3 e1 ) PWEI 3 PWEI 3 (2) PI 3 PI 3 (3) XJS 3 XJs 3 (5) MCJ 3 MCJ 3 (6) 1 1 1 J 9 1 1 1 J 9 (27) VAJ 3 VAJ 3 (7) 
+LJ  3  LJ  3  ( 8)  
+Lcj  3  Lcj  3  ( 9)  
+LncJ  3  LncJ  3  ( 1 O)  
+Lncd  1  Lncd  1  ( 1 1 )  
+Lcd  Lcd  ( 1 2)  
+KJd  3  KJd  3  ( 1 5 )  
+Kd  Kd  ( 1 6)  
+R  K  ( 1 7)  
+EJ  3  EJ  3  ( 1 8)  
+MJ  3  MJ  3  ( 1 9)  
+F  1  B. p .  1  (20)  
+RJ  2  RJ  2  ( 2 1 )  
+Rg  Rg  (22)  
+TINV  TINV  (23)  
+ZI  3  ZI  3  (24)  
+e I J  9  e I J  9  (25)  
+CI  3  CI  3  (26)  
+VI  3  VI  3  (28)  
+DI  3  DI  3  (29)  
+UDI  3  UDI  3  (30)  
+XI d  3  x1d  3  ( 3 1 )  
+POI  3  Xld=Xl 5  3  (32)  
+Lc5  
+Lnc5  
+86  84  
+
+De I a forma como se estab I ezcan I as dos ecuaciones faltantes, quedará definida la regla de cierre del modelo en e I mercado de factores. S 1 1as dos ecuac Iones estab I ecen que 
+1 a cant I dad de cada t I po de trabajo es f I Ja, 1 a reg I a de cierre se conoce como neoclásica. 
+Les= Lcs Lncs = Lncs 
+s 1 1as ecuac Iones fa I tantes estab I ecen que e I sa I ar I o de cada tipo de trabajo es fl Jo, la regla de cierre es keyneslana. 
+Wc = Wc 
+Wnc = Wnc 
+En e I presente traba Jo se ut 1 1 1 zan I as dos reg I as 
+anteriores, además de una tercera que hemos denom i nado seml­
+keynes I ana y que resu Ita de una comb I nac I de ambas. En 
+esta tima se consideran fl Jos la cantidad de trabajo 
+cal lflcado y el salarlo del trabajo no cal lflcado . La raz 
+de utl ! Izar las tres reglas de cierre fue expl (cada en la 
+Introducci. 
+Por el lado de la Inversi Y. el ahorro, l a regla de 
+e I erre que se ut 1 1 1 za es I a que se conoce con e I nombre de 
+"lnvestment drlven", y se caracteriza, como se mencionen 
+el Inciso 3.2 . 7, por ser la Inversi exena y el déficit en cuenta corriente un residual que permite el equl l lbrlo entre ahorro e Inversi. 
+
+3.4 Ley de Walras. 
+La ley de Walras es una condici que permite ver I f I car I a cons I stenc la de I mode I o. Se debe cump 1 1 r a cualquier nlvel de prec.los debido a que establece que todos 
+los Ingresos deben ser Iguales a los gastos. La forma de obtener I a es a part Ir de I as s I gu I entes ecuaciones de Ingreso-gasto de cada agente: 
+
+
+Resto del mundo 
+
+
+¿PMl·Mi. =z.PEi.•Ei. t-F·ER 
+i l 
+40 
+Empresas 
+
+Si sumamos I as ecuaciones anter I ores, i gua I amos a cero y agrupamos obtenemos: 
+[~ RKt -p,K/] +[~ W, L~t -Wc Ln + 
+[ ~ \/'J n c. L11 c.t -\l'.J ne. Lic.] + [ l 2E P M t ( \ -Ul) i.) X~"' -t P M ¡ ( 1-uDi) X¡; 5 
+~ ~ pE . E: · t 1f P D ¿ • UDd l +t <:!·l) Xit + PP i • UDi l \ t t d ~)X, (rt-t~ PJ t1ij X¡ 
+~ L l. h ·1. . 1.=I f=I 
+. ~ 
+F .ER. +S Y -t S p +S:) -~ PMi M1J -~ PDi. X; ] 
+~ L 
+
+E I pr lmer paréntes r s representa e I exceso de demanda de I mercado de cap Ita 1 ; e I segundo, e I de r mercado de 1 trabajo cal lflcado;el tercero, el del trabajo no cal lflcado; e I cuarto, e I de I mercado de productos. Estos excesos de demanda pueden ser expresados como: 
+
+donde = R, = Wc y = Wnc
+P4 P5 P6 
+s I denominamos a I os Ingresos t r r butar ros netos de r gobierno ITNg obtenemos: 
+[ ¿ le j Pv,u: j"ER · Ej -~ t M j l' Wl" E.R • Mj -¿t dj Xj P D j J 
+-J 
+_ ['i ( t c. Wc. Le j + t n c. W T'\C L nc.j )-L tK.f\· k f-1T N9] 
+-J 
+
+_T-1TN9 
+Donde T l nd I ca e I monto de I os Impuestos d l rectos cobrados por e I gob I erno. Por I o tanto I a vers I de I a I e de Wa Iras que debe cump l Irse es : 
+E, ~pi~I +T ITNg 
+i':"' 
+Por áltlmo cabria mencionar que en este trabajo no se necesito proponer varios vectores de precios para verificar el cumpl lmlento de la ley de Walras y con el lo comprobar la consistencia del modelo . El paquete HERCULES automáticamente real Iza este ejercicio. 
+4. MATRIZ DE CONTABILIDAD SOCIAL PARA EL AÑO BASE. 
+4.1 Consideraciones Generales. 
+Una Matriz de Contabl 1!dad Social (MCS) es una representaci de los flujos econicos realizados durante un periodo de tiempo. Está compuesta por Igual nero de reng Iones y co Iumnas que representan a agentes econ Icos. TI ene por base una Iey econ Ica fundamenta 1 : para todo Ingreso existe un correspondiente gasto. Un reng I representa e 1 1ngreso de un agente y una co Iumna representa su gasto, por I o que e I tota I de cada reng I debe ser Igual al total de la columna correspondiente. En cada celda de la matriz en que existe un elemento distinto 
+de  cero  se  representa  e I  pago  de I agente  de  I a  co Iumna a 1  
+agente  del  rengl.  
+Las  MCS's  suelen  ser  ut 1 1 1 zadas  como  una  
+
+sistematizaci y representaci de datos. Pueden centrarse sobre una regl particular, alg tipo de mercancla o alg con Junto part Icu Iar de Inst 1tuc Iones. La mayor parte de Ias veces, como en e I presente traba Jo, t Ie nen una ap 1 1 cae I a temas macroeconlcos. 
+Las MCS's también se han utl I Izado en menor medida para representar modelos econicos. Sin embargo, para tal efecto sue Ie ser más com ut 1 1 1 zar ecuac Iones que I nd Iquen e 1 comportamiento de la economía. 
+La Idea de utl I Izar MCS's para representar modelos se basa en I a cons Iderac I de que todo mode I o econ Ico debe tener una base contable. En el presente trabajo este es el papel que se le da a la MCS que se expone en el siguiente 
+Inciso. Cada transacci Incluida en una ce.1 da es representada numér I camente. Las func lones que describen I a forma en la cual el valor de cada transacci es determinado, se representan por otra MCS en cuyas celdas se 
+Indica  cada  una  de  dichas  funciones.  Esta  l.'.Jltlma  matriz  se  
+presenta  en  el  programa  computacional  Incluido  en  el  anexo  B  
+de  este trabajo.  
+El  enfoque  TV  en  que  se  basa  el  calculo  del  modelo  de  
+EG  presentado  en  el  capitulo  anterior  tiene  como  fundamento  
+el  reconocer  la  existencia de  las  dos  versiones  de  una  MCS,  
+
+la numérica y la algebraica, para un modelo econico dado. La relaci entre las dos versiones permite formular el modelo y a través del paquete HERCULES se logra calcular. 
+4.2 Flujos Representados en la Matriz. 
+La matr I z de contab l 1 1 dad soc la I ut l 1 1 zada para e 1 calculo del modelo aparece en el cuadro 4.1. El alío tomado como base es 1983 debido a que en ese alío empieza a 
+Instrumentarse una poi !tlca de apertura comercial. Los val ores son expresados en m 1 1 1 ones de pesos de 1983. La matriz esta compuesta por 33 cuentas y como puede verse 
+rRAE:-CAL  rRA-NO(: AL  ri;: AE:A . .10 1  rRABA.)(12  rRABA~103  CAF·I rAL  IN13-FAM-F'  CON-FFfM-F'  ING-FAM-R  CON-FA11-R  IN13-GciB  
+rRAB-CAL  s2::it:.s. "=' 1~  205070.42  121:,0:ll:.45. 3  
+r11:A-NOCAL  e:2s2::::::. 01~1  102'9252.5  1::17041:,2. ,::,  
+rRAE:A-JO 1  
+rRABA.J02  
+rRAE:A.J03  
+(:API rAL  
+ING-FAM-P  1:,55e.:;¡. 760  1244ZE,4. E­ 2547440.(1  
+CON-FAM-P  ::il3'3:::i32.0  
+IN13-FAM-R  14E,0520. -~  24!::(173t:!. 5  0754_;¡:-::7. -~  
+C-FAM-R  7·~40'3 l'3. "3  
+I  Nt)-1308  161555.!<7  553"5'33.42  
+CONS-GOB  151:,256::I  
+AHOR-I NI}  SSE-!lí:ll.04  42011!14. 1  541:,3~8. 8  
+INF·-IND  
+l,'A-I  
+1,•A-E  
+1,'A-N  
+l,•Ar-I  
+1,'Ar-E  
+1,•Ar-N  
+MER-DOM-I  
+MER-[llJM-E  
+MER-DIJM-N  
+MER-Il1f'-I  
+MER-I MF·-E  
+MEi;:-I MF·-N  
+MER-COM-I  s:2r.:t ·!fe. 21)  l 1'35805. O  
+l1ER-C1)M-E  802512.6"3  32-'12808.!l  
+MER-COM-N  11:10 ·~:,21. 1  ~502:!106.5  
+MER-EXP-I  
+MER-EXF'-E  
+11ER-EXF'-N  
+F:Esr-MUN  
+rorAL  152€,084. 7  ~72=-003 .. 2  E: r 7€,51'  12!14323  31!19101:1  11~(11~:;i:8  ==·~":572€,8 .. 4  :!I 1!1"43!12. O  12E-':1564T.  7"340'31'9.'9  2 108':10 1. 8  
+1  ~  -·. 1  ~. 2  :s. :;,  4  5  6  7  8  
+
+CUADRO  4.1  
+NATRIZ  DE  CONTABILIDAD  SOCIAL  PAP.A  13~3  
+ONS-GCrS  AHOR-I NIJ  IMP-INP  1.'A-1  1,.1A-E  l}H-M  1/AT-I  IJAT-E  VAT-N  MER-ODM-I  MER-OON-E  MER-OOM-N  MER-IMP-I  
+
+877'1:,'57 12::;432::, 
+~· 1~·:t 108 2···9···02:-:· 5 lf:.5::: 1 ·:< ~;3:,:::1986 
+124134 111770"3 r:: 3 ":( ,,. 1 45335.01$ 
+3 1s·:o:,130 
+75171351 7077055 
+7'.:14r:..332 1125433.4 lSf:.7487.2 41"3530.08 1969429.8 33,;25 451041;1 932555.36 6641~0.00 1210073,6 455591.E. 2133704.5 475513.42 715113.91 1945374.5 
+33(,(1:35.83 15r:.256'.:I '.;;710236 13":l3'7S3 :::; 1 5 ·;u:. ~: O ~-40(114 2 t:,"39?,(194 :,.2 :;& ::n:: l 4 7S17:E:51 7077055 
+122013~~ 1041420,9 10 11 12 13 1 ·1 1 e; 11:. 17 13 
+2 1 22 
+MER-IMP-E  MER-IMP-N  MER-COM-I  MER-COM-E  MER-COM-N  MER-EXP-I  MER-EXP-E  MER-EXP-N  REST-MUN  TOTAL  
+152€-084. T  1  
+3725003.2  2  
+877657  ::, . 1  
+123"1323  :, • 2  
+;; 1:!i':1108  :, .:,  
+11301828  "'  
+'.:i8572E,8.4  5  
+313"3!1::12.0  E,  
+12e.·35e,.q7.  7  
+7':140'31"3. 9  0  
+2108"301.0  "3  
+15,;251:,3  10  
+-15'3:SE, 10  ~17 L023E,  11  
+7121.4570  15492.447  o  o  o  1 :i9::E75;i  12  
+3159€,1;:0  1 3  
+1:.400 142  14  
+1:,'3"3!10':14  15  
+:,:i20381.:q  11:,  
+75L7:::51  1 7  
+70TT055  13  
+583115':l.2  428210. 7;1  t:.259~71)  1 '3  
+7130101  218E,532  ·~ !i LE, E, :3 ~  20  
+1 L:?,587'E,S.  ;i4 ~¡ 1E.7.2€,  1221) 1'333  21  
+104142(•.'3  1041420."3  22  
+2  L2t:,l:.(I  212E,E,O  23  
+1 78 lt:-O. :,  1781E,O. l)E,  2"1  
+E,872580.2  25  
+7'.:•42TF., 1  2E,  
+1;.2:!iE,'925.  27  
+428210.T:3  "128210.73  28  
+2 11?:E.532  218€-532  2"3  
+'34~16,7.21:a  34;; 1F..7. 2e.  !'10  
+205531~. 54  1i:.2GE,7.,; 1  1:':•i:."12"32  !t 1  
+2 12,;.,;.o  17816.0.0E,  E,872580.2  73427E, 1  120!'it:,':125.  428210.73  218i:.5:52  ::14::111:,T. 26  1:!iF..42':12  152"128907  TOTAL  
+23  24  25  2E,  :27  28  2'9  ::¡  :5 1  
+
+tiene una estructura diferente al tipo de matrices que suelen ser elaboradas. La raz de esta diferenc i a se debe a que fue integrada teniendo en mente su posterior uti I izacl en e l paquete GAMS-HERCULES. 
+La matriz puede ser representada corno: 
+A=[Alj] 
+Alj es el valor de l Ingreso qu e recibe e l agente proveneiente del agente j. 
+Las cuentas pueden ser agrupadas en e i neo grupos . E 1 grupo de factores está Integrado por las cuentas 1-4; e l grupo de I nst I tuc Iones se divide en dos subgrupos: cuentas corrientes Integradas por farnl l las(5-8) y gobierno(9,10. y 
+12) y la cuenta combinada de capita l (11); el tercer grupo está Integrado por I as cuentas de mercanc I as ( 22-30) ; y e 1 t'.J I t lrno se Integra por I a cuenta que representa a I resto de 1 mundo . 
+Las ce Idas A 1 , 3. 1 A2, 3. 1, A1, 3. 2, A2, 3. 2, A 1 , 3. 3 Y indican la cantidad de trabajo cal lflcado y no ca i I f I cado que se ut i 1 1 za en e I sector de lrnportab I es, 
+exportables y no comerciab l es respectivamente. Cada tipo de trabajo es combinado para obtener la cantidad total de este factor que se ut i I iza en cada sector . DI cha cantidad fue obten Ida de I a matr I z de transacc i ones tota I es e I aborada para el a base presentada en el anexo A de este traba j o haciendo e I supuesto de que I os sa I ar I os son I gua I es a I a unidad; posteriormente, se repartientre los dos tipos de 
+trabajo de acuerdo a Informaci procedente de la encuesta 
+Ingreso-Gasto 1983. Se considercomo trabajo ca l lflcado a l de los profeslonales, técnicos y afines; funcionarios, gerentes y propietarios; supervisores y capataces en el proceso de producci industrial y los trabajadores de oficina. Se considercomo trabajo no cal lflcado al de los propietarios y trabajadores agrlcolas, obreros y artesanos, comerciantes y vendedores, trabajadores en servicios , prot ecc I n y v I g 1 1 a n c I a y no espec I f I cados . 
+Las ce Idas A5, 1 , A5,2, Indican el Ingreso que reciben las dos faml I las representativas que Integran la econom Ia, por 1a cant Idad de trabajo cal lflcado y no ca 1 1 f I cado que venden a Ias empresas. Para Integrar a Ias dos faml I las se recurria la encuesta Ingreso-Gasto, agrupando a los seis decl les de menores Ingresos en un grupo para formar I a "fam 1 1 1 a pobre", y agrupando a Ios restantes para formar a I a " f am 1 1 1 a r Ica" . 
+La cantidad de trabajo cal lflcado y no ca l l flcado de cada fam 1 1 1 a se obtuvo a partir del cuadro sobre distribuci del Ingreso corriente total por decl les de hogares con Jefe segán su nlvel de Instrucci, de acuerdo a 
+1a encuesta Ingreso-Gasto. Se cons Iderque una fam 1 1 1 a obten la Ingreso a través de la venta de t r abajo no ca 1 1 f I cado s I e I Jefe de f am 1 1 1 a no pose I a por I o menos un nivel de Instrucci de preparatoria completa; de lo contrario se considerque el trabajo era de tipo calificado. 
+Las celdas A5 4 y A7 ,4 Indican la cantidad de Ingreso
+1 
+que obtienen las fami I las "pobre" y "rica". respectivamente, por la venta de I cap Ita I que poseen. Para conocer esta dotaci se recurrial cuadro sobre distribuci del 
+Ingreso corriente monetario de los perceptores ocupados por posici en la ocupaci y se considerque si el perceptor era patr, empresario, empleador , trabajador por cuenta propia, ejfdatarlo o miembro de una cooperativa, su ingreso 10 obten la por la venta de capital . Cabe hacer la aclaraci que este supuesto se basa en que I a cant Idad de cap Ita 1 tota I en I a econom I a es equ Iva Ien te a I excedente bruto de operac I e I cua 1 1ne Iuye todo aque 1 1 ngreso que se rec Ibe por cualquier concepto que no sea estrictamente un salarlo o un sueldo. 
+Para que I a cant I dad tata I de Ingreso que rec Iben Ias faml I las fuera equivalente al totaJ de sueldos y salarlos y al excedente bruto de operaci que aparece en la matriz de transacciones totales, icamente se tomaron qe la encuesta 
+Ingreso-Gasto los coeficientes de los resultados. 
+Las celdas As,s y Aa,7 Indican la cantidad de Ingreso que 1as fam 1 1 1 as "pobre" y "r I ca" dedican al consumo El monto de I a pr Imera col ne Ide con e I tata I de I consumo de 
+las tres mercanclas compuestas que real Iza 1 a fam 1 1 1 a "pobre" y está representado por las celdas A25,s, A26,6 Y A27 , 6 ; el monto de la segunda coinc ide con el consumo que real Iza la faml I la rica de las tres mercancfas compuestas y está representado por las celdas A25 a, A2s 8 Y A27 8· 
+' ' ' 
+Para calcular el consumo por producto de cada faml I la , se recurria la Submatriz de Consumo Privado por objeto de l 
+gasto y rama de act I v I dad econ I ca de or I gen para 1970 e I aborada por I a SPP y e I Banco de Méx I co, y a I a encuesta Ingreso-Gasto. La submatrlz fue agregada a los tres sectores del modelo y permitiobtener a partir de l a encuesta Ingreso-Gasto e I monto de consumo por fam 1 1 1 a de I os tres bienes que Integran la economla. Los resultados fueron ajustados de ta I forma que I a suma de I consumo que rea I Izan 1as fam I I I as por cada b I en co I ne I de con e I tota I de.1 consumo pr I vado por d Icho b I en que aparece en I a matr I z de 
+transacciones totales. 
+Las celdai y As,7 lndlcan la cantidad de Impuestos
+A9,5 d ¡ rectos que pagan cada una de I as fam I l las. Su monto equivale al total del Impuesto sobre la renta que cobrel Goblerno en el ano base. Se supuso que todo el Impuesto que se cobra I as personas f l s l cas fue equ I va I ente a I pago de l m puestos que r e a 1 1 zaron l as f am l 1 1 as por I os I n g resos que rec I b I eron por concepto de sue Idos y sa I ar I os. La parte restante de I Impuesto sobre I a renta se cons I derque fue cobrado por I os Ingresos obten Idos por cua I qu I er concepto que no haya s l do un sue Ido o sa I ar I o. A part l r de I as cant I dades tota I es de Impuestos e Ingresos se ca I cu I aron tasas de Impuestos Imp I le Itas para e I cap Ita I y para e I trabajo de tal manera que reprodujeran el monto total de ISR y que cump I l eran con I a cond I e I de que e I Impuesto que paga el trabajo cal lflcado es el doble del que paga el no 
+cal lf lcado. Esta condici Intenthacer una distinci entre el Impuesto que paga cada tipo de trabajo. La decisi de que fuera e I dob Ie se adopta I no contar con a I guna estimaci del verdadero valor. 
+Las celdas A11,5 y A11,7 Indican la cantidad total de ahorro que rea 1 1 zan I a fam 1 1 1 a pobre y r I ca respect Ivamente. Se obtienen de manera residual, es decir, su monto equivale a I a d l f erenc I a ent r e e 1 1 n g r eso de cad a f am 1 1 1 a y I a suma de I consumo y I os Impuestos d I rectos que pag·, por I o que son ce Idas que perm Iten equ 1 1brar I as cuentas de Ingreso de 
+1as fam 1 1 1 as por reng I y co I umna. Pape I s lm 1 1 ar cump I en las celdas y A11,31 que Indican la cantidad de ahorro
+A11 ,9 
+que real Iza el gobierno y el ahorro neto del exterior 
+respectivamente. 
+La celda A1o,s Indica la cantidad del Ingreso que el gob Ierno dest I na a I consumo y, a 1 1gua I que en e I caso de 1as dos fam 1 1 1 as, su monto equ Iva I e a I a suma de I consumo que rea 1 1 za por cada mercanc I a compuesta representado por las celdas A25,10, A2s,10 y A27, 10. Las cantidades de estas celdas fueron obtenidas de la matriz de transacciones totales. 
+El concepto que se maneja de Gobierno en este modelo es rest r I ng Ido ya que se supone que sI o rec Ibe Ingresos por cuatro conceptos: Impuestos al valor agregado(A1 2 , 16 , A12, 17 
+Impuestos sobre la renta, Impuestos a la lmportacl(A12,22, e Impuestos a la exportacl(A12,2s, y no se Incluyen 
+Ingresos por la venta y extracci del petreo y otros de menor Importancia. Asimismo, se considera que el ánlco gasto que rea 1 1 za es en b I enes de consumo, no I ne I uyéndose otros gastos como son Ios sue Idos y sa Iar los de I persona I que 
+labora en el sector pábl leo. El motivo por lo que se hicieron estos supuestos fue que el objetivo de este trabajo no es anal Izar el Impacto de la apertura comercial sobre el Gobierno, sino sobre otras variables como es el empleo y el nivel de bienestar. 
+Las ce Idas A25, 11 , A25, 11 y A27, 11 l nd I can I a cant Idad de cada uno de los bienes que se adquirieron en la economla por concepto de Inversi. El monto de cada celda equivale a 
+la  suma  de  formaci  bruta  de  capital  y  variaci  de  
+existencias  por  cada  bien  de  acuerdo  a  la ·  matriz  de  
+transacciones totales.  
+
+Las ce Idas A3 ·. 1 , 13 y A4, 13 1nd Ican I a cant Idad de trabajo y cap Ita I respect Ivamente que se ut 1 1 1 zen e 1 sector de Importables. Papel slml lar Juegan las celdas 
+A3.2,14 , A4,14 , A3.3,15 Y A4,15· Los datos de estas celdas fueron obtenidas directamente de la matriz de transacciones totales. 
+El valor agregado del sector de Importables se forma a part l r de I a comb I nac l de Ios Impuestos I nd I rectos. (A12,15), los sueldos, salarlos y el excedente bruto de operac I que se generen d Icho sector CA 13 , 16 ) . De Igua 1 manera se forma e I PI B en Ios otros sectores: en e I de bienes exportables a través de las celdas A12,17 y A14, 17• Y 
+en el de bienes no comerclables a través de las· celdas A12,1a Y A1s,1a· La producci doméstica del sector de bienes Importables se obtiene por la combinaci de valor agregado de dicho sector(A16,19) más los Insumos Intermedios que ut 1 1zde cada uno de Ios b I enes compuestos representados por las celdas A25,19, A26,1g y A2 7,1S· De Igual manera se obtiene la producci doméstica de los otros bienes. Todos 1os datos fueron obten Idos de I a matr I z de transacc Iones totales. Las celdas A12,22, A12,23 y A12,24 Indican el monto de Impuestos por Importaci que pagaron cada uno de los sectores. El arancel que se cobra cada sector se obtuvo a 
+partir  de  Informaci  procedente  de  1a  Secretar I a  de  
+Comercio  y  .Fomento  1 ndust r I a 1 ,  y  se  ajustaron  
+proporcionalmente  para  que  reprodujeran  el  monto  de  
+
+1mpuestos  que  rec I b I  e I  gob Ierno  por  este  concepto.  Es  
+Importante  aclarar  que  el  ajuste  que  se  hizo  en  los  
+aranceles  se  debi en  parte  a  la  forma  en  que  se  
+
+contab 1 1 1 zan Ios Impuestos a I a lmportac I en Ias cuentas nacionales. SI a la oferta total de cada sector se le resta el valor bruto de la producci se obtiene el monto de las Importaciones exentas de Impuestos, ya que estos son contab 1 1zados dentro de I va Ior bruto de I a produce I y forman parte de los márgenes de comerclal lzacl y distribuci. Sin embargo, 1a contab 1 1 1dad que debe ser 1ntroduc Ida a 1 e I paquete GAMS-HERCULES es ta I que no 
+deben  agregarse  los  Impuestos  a  la  Importaci  dentro  del  
+valor  bruto de  la  producci  de  cada  sector.  
+Por  lo  anterior  se  tuvo  que  suponer  que  las  
+
+Importaciones que se obtienen de restar a la oferta total e I va Ior bruto de I a produce I por sector, 1ne Iuyen Ios 
+Impuestos a la Importaci. Por lo tanto, las celdas A31 ,22, A31 ,23 y A31,24 subestiman los valores de las Importaciones netas de Impuestos que real Izaron el sector de Importables, exportables y no comerciables respectivamente. 
+La mercancía compuesta del sector de bienes Importables 
+se forma con I a comb Inac I de Ios b I enes de d Icho sector Importados más los bienes producidos domésticamente que son ded Icados a I mercado Interno (ce Idas A22, 25 y 
+A 19 , 25 
+respectivamente). Las otras mercanclas compuestas se forman de manera slml lar a través de las celdas A22,25, A20 ,26, 
+A22,27 Y A21,27· Las celdas A12,2s, A12,29 Y A12,30 Indican el monto de Impuestos a la exportaci que paga cada uno de los sectores de la economla. Para los cálculos del presente trabajo se supone que los Impuestos a la exportaci son cero por 
+carecer de I a Informac I adecuada por I o que Ias ce Idas A 19 , 28 , A2o,2s y A21,30 coincide con las celdas A28,31 , A29, 31 y A30, 31 respect Ivamente e I nd I can e I monto de Ias exportaciones I lbres de Impuestos que real Izan cada uno de los tres sectores . Por lo tanto, la celda Indica la
+A11 ,31 
+diferencia entre las Importaciones y las exportaciones y es un Indicador del saldo de la balanza en cuenta corriente. El 
+hecho de que I as exportac I enes no I ne I uyan Impuestos a I a expor tac I y I as Importac I enes estén subva I uadas hace de esta cuenta un I nd I cador que no co I ne I de con I a d I fer ene 1 a entre expor tac I enes e Impor tac I enes presentada en e I afio base. 
+Como puede verse, en la matriz se Incluyeron con mucha exactitud algunas varlables de la economla, aunque otras no son de I todo prec Isas deb Ido a I as 1 1 m I tac I enes que se tuvieron en la Informaci de que se dispuso. 
+5. EFECTOS DE LA APERTURA COMERCIAL EN EL EMPLEO Y EL BIENESTAR. 
+Para med Ir e I Impacto de I a apertura comerc I a I en e 1 empleo y el bienestar se procedia reducir a la mitad los aranceles pagados por cada sector. El precio que fue tomado como numerar I o fue e I t I po de camb I o deb Ido a que esto permite que el déficit en cuenta corriente pueda ajustarse para Iograr e I ba Ianee entre ahorro e Invers I. Por I o tanto, todos los precios son medidos en relaci a los precios mundlales en cada una de las slmulaclones. 
+
+5.1 Efectos sobre el empleo y el producto. 
+El cuadro 5.1 muestra los resultados que se obtuvieron con las tres reglas de cierre Bajo la especificaci neoclásica el empleo no sufre ninguna modificaci debido a que el salarlo es flexible y permite que el factor trabajo esté siempre plenamente empleado. 
+A nivel de sectores econicos, so en el de exportables se Incrementa el empleo (0.1%). Lo anterior se debe a que la reducci de aranceles afecta más a la produce I de b I enes Importab Ies y no comerclables: el precio relativo de las Importaciones de estos dos sectores d I sm I nuye a o. 978 y o. 957 en tanto que en e I sector de exportables lo hace a 0.983. Las Importaciones se 
+Incrementan más en los dos primeros sectores y por lo tanto 
+CUADRO 5. 1 
+Variaci (%) del empleo y la producci bajo diferentes especificaciones del mercado de trabajo. 
+Neoclásica Seml-keynesiana Keyneslana 
+TRABAJO  CALIFICADO  o.o  o.o  -O. 15  
+TRABAJO  NO  CALIFICADO  o.o  -O. 10  -0.20  
+EMPLEO  EN  IMPORTABLES  -0.09  -0.41  -0.42  
+EMPLEO  EN  EXPORTABLES  O. 10  -O. 11  -O. 16  
+EMPLEO  EN  NO  COMERC.  -0.01  0.04  -O. 13  
+P/8  TOTAL  o.o  -0.02  -0.06  
+PIB  IMPORTABLES  -O. 16  -0.22  -0.27  
+PIB  EXPORTABLES  0.06  0.03  o.o  
+PIB  NO  COMERCIABLES  0.02  0.01  -0 . 02  
+
+se desestlmula la producci doméstica originándose un traslado de recursos hacia el sector de exportables. El PIB tata I no sufre var Iac I deb Ido a que I a d I sm I nuc I que t I ene I a produce I en e I sector de lmportab Ies (O . 16%) es 
+compensada  por  e 1  1ne remen to  que  presentan  Ios  otros  dos  
+sectores  (0.06%  el  sector  de  exportables  y  0.02%  el  de  no  
+comerciables).  
+Bajo  e I  e I erre  sem 1 -keynes Iano  Ios  resu I tados  son  
+distintos.  So  el  empleo  del  trabajo  cal lflcado  se  mantiene  
+
+constante deb Ido a que su sa Iar I o es f I ex I b I e y se ajusta para perm Ir e I p I eno emp Iea de este factor. E I trabajo no calificado, por su parte, sufre una reducci de 0.10% 
+debido a la baja que sufriel empleo en el sector de bienes Importables y exportables: en el primer sector se redujo en 0.41% y en el segundo en 0.11%. So el sector de bienes no comerciables aumentel nivel de empleo. Sin embargo, debido a que lo hizo en un monto muy reducido y a que es el sector menos Intensivo en trabajo no cal lflcado, no pudo evitar la disminuci del empleo de este factor. 
+La producci en toda la economla presenta una reduce I de O. 02% . Nuevamente e I sector de Importab Ies es el mas afectado por la reducci de aranceles ya su producci disminuye en 0.22% en tanto que en los otros dos sectores aumenta pero no en I o su f I e 1ente para ev Itar I a calda de la producci total Lo anterior puede ser exp 1 1 cado por los cambios en los precios relativos. El precio que mas se reduce respecto a los mundiales es el de 
+las Importaciones de bienes no comerciables, pero por ser el sector del que menos productos se compran en el extranjero, se vé menos afectado respecto al sector de bienes 
+Importables cuya producci se reduce debido a que son muchas las Importaciones que se real Izan de . este sector y, por I o tanto, es e I mas sens I b I e a Ias d I sm I nuc Iones de aranceles. 
+La · reduce I de I emp I eo se presenta de manera más clara bajo el cierre Keynes Iano. Ambos t I pos de traba Jo d I sm I nuyen: e I ca 1 1f I cado en O. 15% y e I no ca 1 1 f I cado en 0.20% . La producci total lo hace en 0.06% y por sectores 
+disminuye más en el de lmportables(0.27%); en el de no 
+comerciables, que habla tenido un I lgero aumento en el caso anterior, sufre una reducci de 0.02%; en tanto que el sector de exportables mantiene su producci constante. 
+A nivel de sectores, el empleo disminuye en todos los 
+casos. E I sector que presenta una mayor reduce I es e I de lrnportab I es puesto que d I srn I nuye su produce I en O. 42%. Los otros dos sectores bajan e I ernp J eo en mayor rnagn l tud 
+respecto a corno lo hablan hecho en los casos anteriores. En general, podr!a decirse que entre más rigideces haya en el salarlo, mayor será el desempleo. Al bajar los 
+aranceles disminuyen los precios relativos de los tres tipos de bienes, por lo que si el salarlo nomlnal es constante, el salarlo real será mayor al valor de la productividad 
+marginal de I trabajo y por I o tanto e I ernp I eo tendrá que d I srn I nu l r para que se restab I ezca e I equ 1 1 1 br I o y cada sector contin maximizando beneficios. 
+5.2 Efectos sobre el consumo y el bienestar. 
+~os efectos sobre el consumo y el nivel de bienestar en cada una de I as s I tuac Iones ana 1 1 zadas es favorab I e corno puede verse en e I cuadro 5. 2. A I reduc Irse I os arance I es 
+d I sm I n u y e e I p r ec I o de n u est ras I rn portae I o nes , 1 o que a su véz provoca que se reduzca e! prec I o de I b I en compuesto en cada uno de los sectores. El precio de los bienes producidos dornést I carnente tamb I én se reduce deb Ido a que I os b I enes 
+compuestos ut 1 1 l zados como Insumos han sufrido una reducci. Estas variaciones en precios relativos tienen un efecto positivo en los nlveles de consumo y de bienestar de cada faml I la y de la economla como un todo. 
+CUADRO 5.2 
+Variaci del consumo y el bienestar bajo diferentes especificaciones del mercado de trabajo. 
+Neoclásica Seml-keyneslana Keyneslana 
+CONSUMO  FAMILIA  POBRE  O. 13%  0.22%  O. 12%  
+CONSUMO  FAMILIA  RICA  O. 16%  O. 11 %  O. 11 %  
+EV  FAMILIA  POBRE*  4960 . 441  8411.426  4663 . 228  
+EV  FAMILIA  RICA*  20686.37  141 1 1 . 24  14527 . 37  
+EV  TOTAL*  25646.81  22522.66  19190.59  
+
+en m1 1 1 ones de pesos. 
+El efecto sobre el bienestar fue medido a través de la 
+variaci equlvalente(EV). Esta medici toma el Ingreso y los precios del equilibrio original y calcula el cambio necesario para alcanzar las utl I ldades del nuevo equl I lbrlo. 
+Para un cambio que mejore la utilidad EV es positivo. La fmula que se utl I Izpara real Izar estos cálculos fue: 
+
+u0
+donde un, y 1n 1° denotan los niveles nuevos y originales de utl I ldad e Ingreso respectivamente. 
+Esta med I c I se rea I l zpara · cada fam 1 1 1 a. Para I a economla como un todo, los costos de bienestar de la apertura fueron medidos agregando las EV's a través de fam 1 1 1 as. 
+En el caso neoclásico el consumo de la faml I la pobre aumenta en 0.13% en tanto que el de la faml I la rica lo hace en 0.16%, lo cual provoca que aumente más el bienestar para 
+la segunda familia en relaci a la primera. La variaci equ I va I ente fue de 4960. 441 m 1 1 1 enes de pesos para I a fam 1 1 1 a pobre por I o que tendr I amos que reduc Ir · su Ingreso en un monto equivalente para restáblecer el nivel de bienestar que tenla originalmente. Por su parte, para la faml l la rica la reducci tendrla que ser de 20686.37 mi I Iones de pesos. 
+Lo anterior se expl lea por el hecho de que el precio del traba j o e a 1 1 f I e ado d I sm I n u y e menos que e 1 del no ca 1 1 f l cado, provocando que aumente menos e 1 1ngreso de I a faml I la pobre dado que su Ingreso depende más del precio del segundo tipo de trabajo. 
+En el caso seml-keyneslano la tendencia se Invierte. La faml I la pobre es la que más aumenta su Ingreso debido a que el salarlo del trabajo no cal lflcado es mantenido constante y, por I o tanto, se vue I ve más e I evado respecto a I de 1 trabajo cal lflcado después de reducir los aranceles. El consumo de I a fam 1 1 1 a pobre aumenta en O. 22% y e I de I a familia rica en 0.11%. En términos absolutos el nivel de b I enestar sube más en I a fam 1 1 1 a r I ca, pero en térm I nos 
+relatlvos el Incremento es mayor en la faml l la pobre: el monto de la variaci equlvalente respecto al nlvel de Ingreso original es 0.22% para la fami I la pobre y de 0.11% 
+para la faml I la rica. 
+En e I caso keynes Iano Ias dos fam 1 1 1 as aumentan su Ingreso casi en la misma proporci debido a que ahora los sa Iar I os de los dos tipos de trabajo son constantes. El consumo de la faml I la pobre sube en 0.12% y el de la rica en 0.11%. En términos absolutos el nivel de bienestar de la faml I la pobre sube menos respecto al caso anterior en tanto que el de la faml I la rica sube muy poco. 
+A n I ve I de toda I a econom I a e I b I enestar es mayor conforme más flexible es el salarlo. En el caso neoclásico la variaci equivalente es de 25646.81 mi I Iones de pesos en tanto que en el caso keyneslano fue de 19190.59 mi I Iones de pesos. 
+En general puede decirse que el consumo y el bienestar de las dos faml I las aumenta debido a que las variaciones en los precios relativos permiten que el salarlo tenga un mayor poder de compra en las tres situaciones anal Izadas. 
+
+5.3 Efectos sobre la balanza comercia!. 
+En los tres casos anal Izados los efectos sobre la balanza comercial son muy slml lares como puede verse en el cuadro 5.3. Al reducirse los aranceles, el precio de los bienes Importados disminuye y las Importaciones se 
+estimulan. En e I caso neoc I ás I co aumentan 1 . 74%, en e 1 sem 1-keynes I ano I o hacen en 1 . 82% y en e I keynes Iano en 1 . 91 % . E I hecho de que aumenten más en este L'.J I t I mo caso se 
+exp 1 1 ca  porque  I a  produce i   domést I ca  cae  en  mayor  med Ida  
+por  lo  que  la  demanda  es  satisfecha  con  mayores  
+Importaciones.  
+CUADRO  5.3  
+
+Variaci (%) del sector externo bajo diferentes especificaciones del mercado de trabajo. 
+Neoclásica Semi-keyneslana Keyneslana 
+EXPORTACIONES  0.28  0.22  O. 14  
+IMPORTACIONES  1. 74  1. 82  1 . 91  
+SUPERAVIT  EN  
+CUENTA  CORRIENTE  -0.97  -1 . 15  -1. 37  
+
+De Igual manera las exportaciones aumentan menos en el caso keyneslano respecto a 1 neocláslco. El aumento puede s~r expl lcado por la disminuci en el precio de los bienes domést Icos que or I g I na que aumente I a demanda exter na por nuestros productos. Nuevamente el menor aumento que se presenta en e I caso keynes Iano puede ser exp l l cado por I a reducci de la producci que origina que una menor cantidad de bienes puedan ser vendidos en el extranjero. 
+Por todo I o anter Ior e I superáv I t en cuenta cor r I ente sufre una reducci en los tres casos anal Izados. Bajo el 
+cierre keyneslano la reducci es mayor ya que tuvo un valor de 1 .37% en tanto que en el neoclásico fue de 0.97%. 
+En resumen podemos afirmar que la reducci de arance Ies produce efectos tanto pos I t I vos como negat Ivos. Dentro de los primeros está el mejoramiento que se tiene en e I n I ve I de b I enestar de I a econom r a y de cada fam 1 1 1 a en particular. Dentro de los segundos está la reducci que se presenta tanto en el empleo como en el superávit en cuenta corriente. 
+6.CONCLUSIONES 
+1 . A I reduc Ir los aranceles en un 50%, todos los precios de los bienes disminuyen respecto al tipo de cambio debido a que Ias Importac Iones se hacen más bara tas y, con e 1 1 o, e 1 precio del bien compuesto que es utl I Izado tanto para 
+consumo  privado  como  para  consumo  Intermedio  en  la  
+producci  del  bien  nacional.  
+2.  La  reducci  de  aranceles  afecta  más  al  sector  de  
+Importables  ya  que  las  Importaciones  sufren  una  
+
+disminuci en su precio en relaci al de los bienes domést Icos I o que desest Imu I a I a produce I y demanda de estos áltlmos. 
+3. Entre mayor rigidez exista en el salarlo, mayor será la reducci del empleo que provoque la apertura comercial. 
+Bajo el cierre neoclásico, el empleo en toda la econom I a se mant Iene constante: 1 a reduce I que se presenta en Ios sectores de b I enes Importab Ies y no comere Iab I es se compensa con e I aumento que se produce en e I sector de exportables. 
+SI se ut 1 1 1 za I a reg I a de e I erre sem 1-keynes Iana e 1 empleo del trabajo no cal lflcado disminuye en tanto que el ca 1 1 f I cado se mant Iene p I enamente emp I eado. EI PI B tota 1 disminuye en 0.2%, y por sectores so en el de bienes 
+Importables se presenta una reducci. El empleo por sectores so tiene un aumento en el de no comerciables. 
+Cuando la especificaci del mercado de trabajo es keynes I ana, 1 a d I smunuc I de I emp I eo es mayor. E I emp I eo de 
+los dos tipos de trabajo disminuye haciéndolo en mayor medida el no cal lflcado. Por sectores, en todos los casos se reduce el empleo en tanto que la producci permanece constante en e I sector de exportab I es y d l sm i nuye en I os otros dos. 
+4. Los efectos sobre e I consumo y e I b I enestar en I os tres casos es favorab I e deb Ido a que el precio de todos los b I enes se reduce más que e I sa I ar I o, por I o que cada fam 1 1 1 a t I ene un mayor poder de compra. La fam 1 1a más benef I c I ada por la reducci de aranceles varia de acuerdo a la especificaci del mercado de trabajo. En el caso neoclásico se beneficia más la faml I la rica y en el seml-keyneslano lo hace la faml I la pobre. 
+Entre menor rigidez salarla! exista, mayor será el l ncremento en e I n I ve I de b l enestar. En térm I nos abso I u tos la faml I la rica tiene un mayor bienestar respecto a la pobre en I os tres casos ana 1 1 zados. En re I ac I a su Ingreso 1n I c I a 1, 1a fam 1 1 1 a que var I a más su b I enestar depende de la especificaci del.mercado de trabajo: si es neocláslca, la famllla más beneficiada es la rica; si es semi-keynes I ana, es I a pobre; y s I es keynes I ana, se benef I c I an 
+cas I por I gua 1 . 
+5. Los efectos sobre la cuenta corriente en los tres casos es desfavorable. Entre mayor rigidez existe en el salarlo 
+mas aumentan las Importaciones y mayor es la reducci en las exportaciones. 
+6. Los resultados obtenidos para el caso neoclasico 
+coinciden con lo que postula la teorla claslca del comercio 1nternac Iona 1. E I n I ve I de b I enestar aumenta y e I emp I eo permanece constante gracias a la flexlbl I idad del salario. 
+El nivel de producci so es desplazado de un punto de la curva de poslbl I ldades de producci a otro en que se ut 1 1 1 zan de manera mas ef Iel ente los recursos d l spon I b I es en 
+la economla. Las variaciones que se producen en el nlvel de 
+producci  de  cada  sector  so  desplazan  recursos  entre  
+e 1 1 os,  1 o  que  perm Ite  que  e I  n I ve I  de  emp I eo  permanezca  
+constante.  
+7.  Cuando  existen  rigideces  salariales  una  reducci  de  
+
+aranee Ies puede afectar a I emp I eo y a I b I enestar. A n I ve 1 te Ico e I mode I o de Brecher demuestra que nada garant Iza que e I emp I eo se mantenga constante y e I b I enestar suba cuando se reducen los aranceles. Lo anterior pudo ser constatado cuando se utl I Izla especificaci keyneslana y seml-keyneslana para el mercado de trabajo. A pesar de que el salarlo que se considerconstante fue el nominal y no el real, se pudo demostrar que si bien es cierto que el b I enestar sube, e I emp I eo se reduce ante una reduce I de aranceles. 
+8 
+. A partir de I os resu I tados obten Idos se desprenden I as siguientes lmpl lcaclones de poi ltlca econica: 
+
+a) 
+Existe un trade-off entre bienestar y empleo cuando se reducen aranee I es : entre mayor sea I a reduce I mayor será la ganancia de bienestar y menor el nivel de empleo. 
+
+b) 
+De la valoraci que el gobierno dé al empleo y al bienestar dependerá lo adecuado que puede ser reducir ar anee I es. SI e I gob I erno cons I dera adecuado mantener I os niveles de empleo actuales, aunque el bienestar no aumente, lo más adecuado será no reducir aranceles. Por el contrario, s I e I gob I erno cons I dera que debe aumentarse e I n I ve I de b I enestar aun cuando e I emp I eo se reduzca, 1o adecuado será 
+
+1 lberal Izar la economla. 
+
+e) 
+La efectividad que tendrá reducir aranceles dependerá de la f I ex I b 1 1 1 dad del salarlo. SI los salarlos fueran totalmente flexibles, el gobierno podrla aumentar el b I enestar reduc I endo arance I es s In temor de que e I emp I eo disminuya. Por el contrario, si existe una gran rigidez sa I ar I a 1 , 1os Incrementos en e I b I enestar que se podr I an obtener de una reducci de aranceles serian pocos en tanto que el empleo sufrirla una considerable reducci. 
+
+d) 
+SI se considera Igualmente Importante tanto aumentar el b I enestar como e I emp I eo, para I e I amente a una reduce I de aranceles se deben Instrumentar otras medidas que eviten que se Incremente el desempleo, tales como crear Incentivos a la 
+
+
+Inversi y aumentar el gasto pl leo. 
+ANEXO A 
+MATRIZ DE TRANSACCIONES TOTALES PARA 1983. 
+La mayor parte de los datos que sirvieron de base para la elaboraci de la matriz de contabl I ldad social se obtuvieron a partir de la creacl de una matriz de transacciones totales para el a~o base agregada a 17 sectores: ocho grandes divisiones y la gran dlvlsl de manufacturas dividida en sus nueve divisiones . Hubieron datos con Ios que no se pudo contar corno fue e I caso de 1 consumo del gobierno, la demanda lnterrnedla, la formaci bruta de capital y la variaci de existencias para cada una de las divisiones de la Industria manufacturera. Para 1 1 enar estos vaclos en la Informaci se procedia est !mar Ios tornando corno base I a part I c I pac I que tuv Ieron cada uno de el los dentro del total de la gran divisi en la rnatr I z de transacc Iones tota Ies de 1980 pub 1 1 cada por e 1 
+INEGI. Los datos sobre transacciones Intermedias no se obtuv Ieron, 1o cua I no representmayor prob I erna puesto que fue hasta que se rea 1 1 zI a agregac I de esta rnatr I z a tres sectores cuando se procedia calcularlos. 
+Los datos sobre demanda f I na I fueron obten Idos a precios de comprador, por lo que para elaborar la matriz a precios de productor se tuvieron que restar a cada uno de los sectores los margenes de comercial lzacl y dlstrlbucl que aparecen en Ias Cuentas Nac Iona Ies. Poster 1orrnente se tuvo que agregar el total en las grandes divisiones seis y siete (Comercio, restaurantes y hoteles y Transporte, 
+almacenamiento y comunicaciones). El criterio que se siguipara hacer esta agregaci, fue el de repartir los margenes de comercial lzacl y distribuci entre cada gran divisi en una proporci fija para la oferta total y para cada componente de la demanda final y la demanda Intermedia. 
+De acuerdo al modelo expuesto en el capitulo tres se tuvo que hacer una agregaci a tres sectores: bienes exportables, importables y no comerciables. El criterio que se s I gu I se basen e I que sug Ieren Derv Is, de Me I o y Roblnson(1984 ) . Se considercomo bienes Importables a aque 1 1 os cuya relaci entre Importaciones y oferta tota l de bienes era mayor a 8%. Se considercomo bienes exportab Ies a aque 1 1 os cuya re Iac I entre exportac Iones y producci bruta era mayor de 5%. Los sectores que no cumpl lan con ninguno de estos dos requisitos se consideraron no comerciables y los que cumpl lan con ambas se c lasificaron en alg grupo de acuerdo al porcentaje que fuera mayor. En el Cuadro A.1 se muestran los porcentajes obtenidos para cada sector y la clasificaci respectiva. 
+Los datos utl I Izados para real Izar los calculos 
+anter I ores  proceden  de  Ias  ma t r Ices  de  Insumo  producto ,  de  
+t r ansacc Iones.  tota Ies  y  de  Impor tac Iones  para  e I  afio  de  
+1980.  El  criterio  que  se  Ut 1 1 1 ZÓ  para  rea 1 1 zar  la  
+
+clasificaci estuvo condicionado por los resultados del cuadro A.1 de tal manera que se procurque hubiera una d I v Is I mas o menos equ 1 1 1 brada entre b I enes comerc Iab Ies y no comerciables y no caer en casos extremos en que todos los 
+Cuadro A. 1 Clasificaci de sectores en Importables(!), exportables(E) y no comerciables(NC). 
+
+SECTOR  EXP/VBP  IMP/OT  TIPO  DE  BIEN  
+Gran  Divisi  1  2.62%  8.2%  
+2  26.75%  4.39%  E  
+Divisi  3.65%  4.24%  Ne  
+1 1  4.67%  2.51%  Ne  
+1 1 1  1. 97%  2.8%  Ne  
+IV  1. 37%  1 1 . 64%  1  
+V  5.57%  15.3%  
+VI  2.83%  3.51%  Ne  
+VI 1  1 . 12%  22.28%  1  
+VI 1 1  5.88%  30.58%  
+IX  10.28%  30.71%  
+Gran  Divisi  4  o  o  Ne  
+5  3.49%  0.31%  Ne  
+6  15.5%  1 . 17%  E  
+7  5.36%  6.44%  E  
+8  0.03%  0.55%  Ne  
+9  1. 9%  0.85%  Ne  
+
+bienes se clasificaran o como comerciables o como no comerciables. El cuadro A.2 muestra la matriz de transacciones totales agregada a tres sectores que sirvide base para la 
+matriz  de  contab 1 1 1 dad  soc I a 1.  Los  datos  para  
+transacc Iones  I ntermed I as  se  obtuv Ieron  a  part Ir  de  rasear  
+los  coeficientes  correspondientes  de  la  matriz  de  
+
+transacciones totales para 1980. 
+se. omitide la matriz el rengl correspondiente a las transacciones fronterizas. La columna referida a los 
+-
+comerc I ab I es para I ograr que I a demanda I ntermed I a tota 1 fuese I gua I a I consumo I ntermed I o tota 1. E I va I or agregado del Gobierno fue sumado al correspondiente de la gran divisi 9 tal y como aparece en las Cuentas Nacionales. 
+CUADRO A.2 
+Matriz de transacciones totales para 1983 Cen m 1 1 1 ones de pesos) 
+COH PR I  CON !rE  FBK  VAA EX I  EXP  DEM FI H OF TOTAL  
+IWOOT  EXPOOT  ~ ca.ER  74  75  76  77  78  79  80  81  
+lt.PORTABLES  1567487. 419530.0 1939429. 3956447. 1723303. 67346.33 &42073.8 283409.6 428210.7 3344343. 7300700.  
+EXPORTABLES  932555.3 664138.0 1210073.  2806767  4045321  39325  444582  6466  2186532  6722526  9529293  
+NO COMERCIABLES  475513.4 715113.9 1945374. 3136001. 5311627. 1455591. 1850311. 283393.3 343167.2 9244091. 12380Cl93  
+CONSUMJ INTERt.{1)10  2975556  1798782  5124878  9899216 11080252  1562563  3136007  573269  2957910 19310001 29210177  
+VALOR AGREGADO  3283814  7517851  7077055 17878720  O  O  O  O  O  O 17878720  
+REM.JNER A ASAL  877657  1234323  3139108  5251088  O  O  O  O  O  O 5251088  
+SlJP DE EXPLOTACIOH  2282023  5165819  3853986 ·11301828  O  O  O  O  O  O 11301828  
+1t,P  INO IRECTOS  124134  11177ffi  83001  1325804  O  O  O  O  O  O 1325804  
+VALOR BRUTO PROO  6259370  9316633 12201933 27777936 11080252  1562563  3136007  573269  295791 O 19310001 47088897  
+~  75  76  77  n  ~  80  ITT  
+
+FUENTE: Elaboraci propia basada en datos del Sistema de Cuentas Nacionales. 
+ANEXO B 
+IMPLEMENTACION DEL MODELO EN EL PAQUETE GAMS-HERCULES. 
+La simulaci del modelo se realizcon el paquete GAMS-HERCULES . Para hacer uso de é I se e Iaborun programa 
+Integrado por ocho partes. Al final de este anexo se muestra el programa y las partes que lo Integran de acuerdo a la numeraci de cada lnea del programa. 
+De la I lnea 1 a la 3 aparece un texto aclaratorio sobre 
+el modelo. Cualquier texto puede ser Introducido en e l 
+programa siempre y cuando sea antecedido de asteriscos. 
+De I a 1 1 nea 5 a I a 38 aparece e I conjunto de cuentas 
+que fueron utl I Izadas en el modelo. SET es una palabra del 
+paquete que Indica la declaraci de uno o más conjuntos . La 
+palabra ACC es un Identificador que sirve para designarle un 
+nombre al conjunto que se está elaborando, en este caso es 
+e I de Ias cuentas de I a ma t r I z de contab 1 1 1 dad soc I a 1 • 
+El texto a la derecha de ACC sirve para aclarar cuál es 
+el conjunto que se desea formar. 
+ALIAS, que aparece en la I lnea 40, es otra palabra 
+clave del paquete y sirve para def i n i r un nuevo conjunto, 
+ACCP, cuyos elementos son los mismos que los que contiene el 
+conjunto ACC. 
+Las 1 1 neas anter Iores Integran I a pr Imera parte de 1 
+programa. La segunda parte está Integrada por las 
+abreviaturas que se utilizan en él Está compuesta por las 
+1!neas 42-63. ACRONYMS es una palabra clave de l paquete. Las abreviaturas que se utl I Iz an son palabras claves del paquete y no pueden ser modificadas. A la derecha de cada abreviatura aparece un texto aclaratorio El papel de cada una de las abreviaturas se aclara en la siguiente parte de l programa. 
+La tercera parte de I programa está Integrada por I a 
+matriz de contabl I ldad socia! que abarca de la I lnea 65 a la 128, la matriz de especif icaci que abarca de la I lnea 130 a I a 193 y una ar reg I o mu I t Id Imens Iona I que Ie perm Ite a 1 paquete Ieer todo e I mode Io. La matr I z de contab 1 1 1 dad soc I a I es dec Iarada en I a 1 1 nea 65. TABLE es una pa Iabra del paquete que define un arreglo multldlmenslonal que va a ser Inicia! Izado. SAM es e l nombre de l arreglo cuyo domin io son los conjuntos ACC. Dadas las dimensiones de la matriz de contab 1 1 1 dad soc I a 1 , tuvo que ser Introducida en seis b I oques respetándose I a estructura or I g I na I expuesta en e 1 capitulo anterior. 
+La matriz de especificaci, que Inicia en la l lnea 130, define las caracterlstlcas del modelo de equl lbrlo genera 1 . Las ecuac Iones C1 )-( 4) expuestas en e I cap Itu I o tercero no es necesario especificar las en la matriz dado que el paquete las calcula autatlcamente. 
+La ecuac I C5) que expresa I a obtens In de I b I en doméstico se presenta de la l lnea 166 a la 171 a través de la combinaci en proporciones fijas el valor agregado y los 
+Insumos Intermedios. 
+La ecuac I que expresa la obtenci del bien compuesto está representada por Ias 1 1 neas 176-1 81 . En I a tabla de especificaci aparece la abreviatura CES, sin embargo, posteriormente se especifica .que la elastlcldad de sustituci . es unitaria por lo que la especificaci coincide con la de una Cobb-Duglas. 
+La ecuaci (7) 'está representada por las l lneas 151­154 y expresa I a comb Inac I de trabajo y cap l ta I en una func i Cobb-Duglas para producir valor agregado excento de Impuestos. 
+La ecuaci con la que se obtiene trabajo compuesto se representa por las l lneas 133,134, 185 y 186 . Los dos tipos de trabajo se combinan en proporciones fijas ( 10) para obtener e I traba Jo compuesto. Las demandas por todos I os t I pos de trabajo son obten Idas por e I paquete a par t Ir de las especificaciones ~nterlores. 
+La ecuac I ( 18) , que I nd Ica c uá I es I a demanda por nuestras exportaciones, está representado por las 1 !neas 191-193. EXPORT I nd I ca que I a demanda por exportac I enes es del tipo Indicado por la ecuaci (18). La elastlcldad de la demanda por nuestras exportaciones se especifica más adelante . La ecuaci (20) se representa en la l lnea 187 y 
+especifica  que  el  saldo  de  la  balanza  comerclal  es  un  
+residuo  de  la  diferencia  entre  Importaciones  y  
+exportaciones.  
+La  ecuaci  (21),  que  Indica  el  Ingreso  d lsponlble  de  
+cada  consum Idor,  deduc Idos  Ios  Impuestos,  se  espec I f I ca  en  
+
+1as 1 ! neas 1 3 6 , 1 3 8 y 1 3 9 para I a f arn 1 1 1 a pobre , y en I as 1 !neas 142, 143 y 145 para la farnl I la r lea. 101ST es una cuenta que I nd ! ca que e I tota I de Ingreso que rec I be cada fam 1 1 1 a, se d I str r buye en proporc Iones f I Jas entre consumo, 
+Impuestos y ahorro. 
+La ecuac I ( 22), en I a que se presenta e I monto de 1 ngresos que rec I be e I Gob I erno se presenta en I as 1 ! neas 138, 143 y 155. Las dos primeras lneas representan los 1 ngresos que rec I be e I Gob I erno por concepto de Irnpuestos directos; la tima !nea Indica el monto de Ingresos obtenidos por concepto de Impuestos lndlrectos(al valor agregado, a las Importaciones y a la exportaci). La forma deta 1 1ada corno se obt I enen cada uno de estos Irnpuestos se presenta en la !nea 156, 163, 175 y 188. ITAX es un abreviatura que Indica un pago de Impuestos Indirectos. 
+E 1 1ado derecho de I a ecuac I ( 23) se presenta en I as 
+r neas 139, 145 y 187. En I a I r nea 145, UNSPEC r nd r ca que e 1 ahorro que real Iza el Gobierno es un residual de su Ingreso una vez que rea 1 1 za sus gastos de consumo I os cua I es son fijos. A pesar de que la 1 !nea 144 Indica que el consumo del Gobierno es un residual por haberse asl especificado (UNSPEC), lo cierto es que es fl Jo ya que en las 1!neas 146­148 se ac Iara que I a cant I dad de consumo de I Gob I erno es exena (con la utl I lzacl de la abreviatura QEXO). 
+La I r nea 187 1nd Ica que Ia cant I dad de ahorro exter no es un residual obtenido de la diferencia de las Importaciones menos las exportaciones. El ahorro se Iguala a 
+la Inversi I& cual es dada exenamente y se especifica en 
+1as 1 1 neas 158-160, ta I y como aparece espee I f I cada en I a ecuac I ( 24) . 
+Las demandas por consumo son obten Idas a part Ir de funciones de producci CD tal y como aparece en la ecuaci 
+(25) . En Ias 1 1 neas 146-148 aparece I a demanda de cada faml I la por cada bien compuesto (QSHR) derivándose a partir de un s I stema de consumo en e I que Ias part fe Ipac Iones de fas cantidades de cada mercancla son f I Jas. Esta especificaci es slml lar a la de utl I lzar funciones CD, ya que en éstas I a part I e I pac I de Ias cant Idades dentro de 1 tota I son constantes. E I hecho de que no sea ut f 1 1 zada I a abreviatura CD se debe a que el paquete la reserva so para funciones de producci. 
+Las ecuac Iones (26), (27) y ( 28) son obten Idas automáticamente por el paquete a partir de especificaciones ya mene Ionadas anter Iormente. De Igua I manera se obt Ienen 
+1as ecuac Iones que perm Iten obtener e I equ 1 1br I o en e 1 mercado de productos (29), (30), (31) y (32). 
+Las 1 1neas 196-199 son ut 1 1 1 zadas para def In Ir Ias e Iast I e I dades de demanda por exportac Iones. E I paquete se encarga de real Izar toda la parametrlzacl, sin embargo las elasticidades que utl I Iza el modelo deben ser especificadas por separado(9) La palabra PARAMETER sirve para deflnlr un arreglo multfdlmensfonaf, pero, a diferencia de TABLE, no 
+( 9 ) Los datos sobre efastlcfdaes fueron obtenidos del trabajo de Levy, Santfago(1988). 
+es utl ! Izado para lnlclal Izar dicho arreglo. Este es de una 
+sola  dimensi  y  está  compuesto  por  el  conjunto  ACCEX  
+definido  en  la  fnea  196  y  que  está  Integrado  por  las  
+cuentas  de  exportaci  de mercanclas.  
+
+PARAMETER en I a 1 1 nea 201 s I rve para def In Ir Ias partes que Integran el paquete. La abreviatura define un arreglo trldlmenslonal compuesto por la matriz de contabilidad social ( SAM), la tabla de especlflcacl(SPEC), y el paramétro de elasticidades de demanda de exportaciones. "TBASE", "SPECS" y "ETA" son palabras de I paquete y se ut I I Izan para Ident I f I car I a matr I z de contab 1 1 1 dad socia 1, 
+la de especificaci y el parametro de elasticidades respectivamente. 
+La cuarta parte abarca de las I lneas 207 a 242 y está compuesta por e I cuadro de cuentas. AT es e I nombre de 1 arreglo que en este caso es de dos dimensiones: ~na formada por el conjunto ACC definido anteriormente y la otra que se 
+11 * 11
+especlflca con un formato I lbre y que está compuesta por tres e Iementos TYPE, F IX y SIGMA. TYPE se ut 1 1 1 za para definir el grupo al que pertenece cada cuenta; por ejemplo, 
+los dos tlpos de trabajo y el capital pertenecen al mercado de factores (MF), 1as cuentas de I t I po AC pertenecen o a 1 mercado de productos o son cuentas de actividad; las cuentas de I grupo INST son aque 1 1 as cuyo Ingreso I o dest Inan a alguna que no pertenece al grupo AC; por tJmo, las cuentas de I grupo INSTC son Ias que dest Inan su Ingreso a alguna de las del grupo AC. 
+FIX sirve para especificar si alguna cantidad o precio es fijo. Bajo la regla de cierre keyneslana suponemos que el precio del trabajo es fijo por lo que a la derecha de la cuenta respect Iva aparece una P. Como cons Ideramos que I a cant Idad de cap Ita I es f I j a, a I a derecha de esta cuenta aparece una Q. NP es colocada en la cuenta cuyo precio va a ser utl I Izado como numerarlo. 
+SIGMA se ut 1 1 1 za para espec I f I car Ias e Iast I c I dades de sustituci en las cuentas en que fue ut 1 1 1 zada la especificaci CES. En este caso las elasticidades son unitarias por lo que la especificaci equivale a la de una funci CD. 
+La qu Inta parte de I programa abarca 1as I r neas 244­
+245. MODEL 1 nd Ica que van a ser espec I f I cadas I as par tes del modelo: el conjunto de cuentas(ACC), el cuadro de cuentas(AT) y el parámetro en que se Incluye la matriz de contab 1 1 1 dad social, la de especificaci y las elastlcldades(CT). 
+DISPLAY es utl I Izado para que el paquete Imprima lo que 
+es requerido. Asl, en la 1!nea 247, se especifica que Imprima AT y CT antes de resolver el modelo para el af'lo base. 
+La sexta parte de I programa esta conten I d'a en· 1 a 1 1 nea 
+249. SOLVE se utl I Iza para Indicarle a la máquina que resuelva el modelo. Como todavía no se ha hecho ning exper Imento, 1 a so Iuc I que se hace sI o reproduce Ios valores del af'lo base. USING HERCULES se emplea para 
+Indicar le al paquete el tipo de solucl que se requiere, en este caso se requ I ere so I uc I onar un mode I o de equ 1 1 1 br I o genera I por I o que se p I de que se ut 1 1 1 ce HERCULES. GAMS también resuelve otro tipo de programas, por ejemplo aquel los que contienen problemas de programaci I lneal, por 
+lo que se le debe especificar el tipo de soluci que es requerida. 
+La septlma parte abarca las !neas 257-262 y contiene 
+la Informaci del experimento rea 1 1 zado. "THETA-USED" 
+1nd I ca e I va I or de a I gl.'.Jn Impuesto que en este caso es e 1 
+relacionado con la cuenta de mercanclas Importadas, es 
+dec Ir, se trata de un arance 1. E I nuevo arance I que reg Irá 
+en cada sector será la mitad del valor que tenlan 
+originalmente. 
+La l.'.J I t lma parte de I programa está compuesta por I a 
+so I uc I de I mode I o después de efectuar e I exper Imento. La 
+1 1 nea 264 1nd I ca que e I mode I o debe ser resue I to usando 
+HERCULES. 
+Las I t Imas espee I f I cae Iones son ut 1 1 1 zadas para que sean expuestos los resultados. En las 1 !neas 270-271 se def I nen dos parámetros b Id Imens I ona I es CURSAM y CONSAM .. E 1 primero sirve para generar una matriz de contabl I ldad social con los resultados después de haber real Izado el experimento y es generado en I a 1 1 nea 273 por I a pa I abra e I ave "TSOL". E I segundo s I rve para generar una matr I z de contab 1 1 1 dad soc I a I a prec I os constantes con I os resu I tados después de 
+haber rea 1 1 zado e I exper Imento y se genera en I a 1 1 nea 274 con I a pa Iabra c I ave "QCSOL". 
+Como puede verse el programa reproduce las caracterlstlcas fundamentales del modelo expuesto en el capitulo tercero. Gracias a la utl l 1zacl. del paquete no fue necesario haber hecho la parametrlzacl ya que es real Izada automáticamente por el programa. Al igual que en 
+la forma tradicional de real Izar la parametrlzacl, el paquete GAMS-HERCULES ut 1 1 1 za como procedimiento la ca 1 1 brac I; es dec Ir, 1os parámetros son se Iecc I onados de tal manera que e I mode I o pueda reproduc Ir los val ores de 1 a base como una so Iuc I de equ 1 1 1 br Io. Para ca 1 1 brar e 1 modelo se hace el supuesto de que en el a base el equ 1 1 1 br I o se d l con e I vector de prec los un Itar Io. 
+Resum I endo I o anter Ior se puede cons Iderar que para resolver el modelo so es necesario escribir un programa en el que se especifiquen dos matrices de contabi I ldad social: una numérica y otra algebraica que expresa corno se generan cada uno de los valores que aparecen en las celdas de la primera; también debe ser especificado el tipo de cada cuenta que aparece en I a matr I z y I os prec Ios y cant I dades que son exenos. El paquete se encarga de hacer la pararnetr I zac I ut 1 1zando I a ca 1 1 brac I, de reso Iver e 1 modelo para el a base y de real Izar todos los experimentos haciendo uso de un algorltrno tipo NewtonC 1 0).. 
+C10) Véase el articulo de Drud que aparece en la blbl lografla. 
+GJl._MS 2. 03 PC AT /XT G E N E R A L A L G E B R A I C M O D E L I N G S Y S T E M C O M P I L A T I O N 
+1 * EL SIGUIENTE MODELO SIRVE PARA CALCULAR EL IMPACTO DE LA 2 * APERTURA COMERCIAL SOBRE EL EMPLEO EN LA ECONOMIA MEXICANA 3 * UTILIZANDO EL PAQUETE HERCULES GAMS 4 5 SET ACC CUENTAS/ :5 TRAE-CAL TRABAJO CALIFICADO 
+TRA-NOCAL TRABAJO NO CALIFICADO 8 TRAR:n..JOl TRABAJO COMPUESTO EN IMP 9 TRAR1\J02 TRABAJO COMPUESTO EN EXP 
+10 TRABAJ03 TRABAJO COMPUESTO EN NO COM :1 CA_PITAL CAPITAL 12 ING-FAM-P CUENTA DE INGRESO DE LA FAMILIA POBRE 1 .., CON-FAM-P CUENTA DE CONSUMO DE LA FAMILIA POBRE
+.L..; 
+14 ING-FAM-R CUENTA DE INGRESO DE LA FAMILIA RICA 1 e: CON-FAM-R CUENTA DE CONSUMO DE LA FAMILIA RICA
+... .J 
+15 ING-GOB CUENTA DE INGRESO DEL GOBIERNO l7 CONS-GOB CUENTA DE CONSUMO DEL GOBIERNO 18 AHOR-INV AHORRO E INVERSION 19 IMP-IND CUENTA DE IMPUESTOS INDIRECTOS 20 VA-I VALOR AGREGADO EN BIENES IMPORTABLES 21 VA-E VALOR AGREGADO EN BIENES EXPORTABLES 22 VA-N VALOR AGREGADO EN BIENES NO COMERCIABLES 23 VAT-I VALOR AGREGADO CON IMP_ IND. EN B_ IMP 24 VAT-E VALOR AGREGADO CON IMP. IND. EN B. EXP 25 VAT-N VALOR AGREGADO CON IMP. IND. EN B. NCOM 26 MER-DOM-I BIEN IMPORTABLE PRODUCIDO DOMESTICAMENTE 27 MER-DOM-E BIEN EXPORTABLE PRODUCIDO DOMESTICAMENTE 28 MER-DOM-N BIEN NO COMERCIABLE PRODUCIDO DOMESTICAMENTE 29 MER-IMP-I BIEN IMPORTABLE IMPORTADO 30 MER-IMP-E BIEN EXPORTABLE IMPORTADO 31 MER-IMP-N BIEN NO COMERCIABLE IMPORTADO 
+-:, ') 
+MER-COM-I BIEN IMPORTABLE COMPUESTO
+.J <­
+-:, -:, 
+MER-COM-E BIEN EXPORTABLE COMPUESTO 34 MER-COM-N BIEN NO COMERCIABLE COMPUESTO 35 MER-EXP-I BIEN IMPORTABLE EXPORTADO 36 MER-EXP-E BIEN EXPORTABLE EXPORTADO 37 MER-EXP-N BIEN NO COMERCIABLE EXPORTADO 38 REST-MUN CUENTA DEL RESTO DEL MUNDO/ 39 40 ALIAS (ACC,ACCP}; 41 42 ACRONYMS MF CUENTA DE MERCADO DE FACTORES 43 INST CUENTA DE INGRESO DE INSTITUCIONES 44 INSTC CUENTA DE CONSUMO DE INSTITUCIONES 45 TAX CUENTA DE IMPUESTOS INDIRECTOS 46 AC CUENTA MERCANCIA-ACTIVIDAD 47 ROW CUENTA DEL RESTO DEL MUNDO 48 49 NP INDICE DE PRECIOS-NUMERARIO 
+.J ._J 
+50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 
+Q P 
+CD 
+CES EXPORT IDIST IMPORT 
+ro ITAX 
+QEXO QSHR 
+UNSPEC VEXO CANTIDAD EXOGENA PRECIO EXOGENO 
+FUNCION DE PRODUCCION COBB-DOUGLAS FUNCION DE PRODUCCION CES DEMANDA DE EXPORTACIONES DEL RESTO DEL MUN ESPECIFICACION DE DISTRIBUCION DEL INGRESO PAGOS POR IMPORTACIONES ESPECIFICACION INSUMO-PRODUCTO ESPECIFICACION IMPUESTOS INDIRECTOS SISTEMA DE CONSUMO DE CANTIDADES FIJAS SISTEMA DE CONSUMO DEPARTEN CANT FIJAS RESIDUAL O NO ESPECIFICADO ESPECIFICACION PARA VALOR EXOGENO 
+65  TABLE  SAM(ACC,ACC}  "MATRIZ  DE  CONTABILIDAD  SOCIAL"  
+66  
+67  TRAB-CAL  TRA-NOCAL  TRABAJOl  TRABAJ02  CAPITAL  ING-FAM-P  
+68  TRAB-CAL  52368.915  205070.42  
+69  TRA-NOCAL  825288.08  1029252.6  
+70  ING-FAM-P  65563 . 76  1244264.7  2547440.0  
+71  CON-FAM-P  3139332.0  
+72  ING-FAM-R  1460521  2480738.6  8754387.9  
+73  ING-GOB  161555.38  
+74  J\.HOR-HN  556381.05  
+75  
+76  +  CON-FAM-P  ING-FAM-R CON-FAM-R  ING-GOB  CONS-GOB  
+77  CON-FAM-R  7940919.9  
+78  ING-GOB  553593.42  
+79  CONS-GOB  1562563  
+80  AHOR-INV  4201134.1  546338.8  
+81  MER-COM-I  527498.21  1195805.1  67346.333  
+82  MER-CCM-E  802512.69  3242808.3  39625  
+83  MER-COM-N  1809321.1  3502306 . 6  1455591.7  
+84  
+85  +  AHOR-INV  IMP-IND  VA-I  VA-E  VA-N  VAT-I  
+86  TRABAJOl  877657  
+87  TRABAJ02  1234323  
+88  TRABAJ03  3139108  
+89  CAPITAL  2282023  5165819  3853986  
+90  ING-GOB  1393753  
+91  IMP-IND  124134  
+92  VA-I  3159680  
+93  MER-COM-I  1125483.4  
+94  MER-COM-E  451048  
+95  MER-COM-N  2133704.6  
+96  
+97  +  VAT-E  VAT-N  MER-DOM-I  MER-DOM-E  MER-DOM-N  MER-IMP-I  
+98  IMP-IND  1117709  83961  45335.09  
+99  VA-E  6400142  
+100  VA-N  6993094  
+101  VAT-I  3283814  
+102  VAT-E  7517851  
+103  VAT-N  7077055  
+
+82 
+104 MER-COM-I 1567487.2 419530.08 1969429.8 105 MER-COM-E 932555.36 664138.0 1210073.6 106 MER-COM-N 475513.42 715113.9 1945374.5 107 REST-MUN 996085.8 102 
++ :·fER-IMP-E MER-IMP-N MER-COM-I MER-COM-E MER-COM-N MER-EXP-I 110 IMP-IND 7121.457 15492.447 ) 
+, • 1 
+J. -.,_ MER-DOM-I 5831159.'3 428210.73 112 MER-DOM-E 7130101 l13 :·lER-DOM-N 11858765. 
+.... .-":"":"'-:-. -:""'l.J'7o -.., r, 11 -1 ,"; .,..,, ,'" 2.~~ ;.·_:..:..:... -..:..:·•r -~ .... ·...; '·.t ..i.. '-.,!;..:.. .._ • ­
+-~!ER-IMP-E 212660 116 MER-IMP-N 178160.0( 
+.. .. 
+
+~ 
+?.EST-MUN 205538.54 J.62667.61 
+... 
+~ ~ 
+.. ""! ~ 
++ MER-EXP-E MER-EXP-N REST-MUN TRABAJ03 120 TRAB-CAL 1268645.3 121 TRA-NOCAL 1870462.6 122 AHOR-INV -1593618 123 IMP-IND o o 124 MER-DOM-E 2186532 125 MER-DOM-N 343167.26 126 MER-EXP-I 428210.73 127 MER-EXP-E 2186532 128 MER-EXP-N 343167.2 129 130 TABLE SPEC(ACC,ACC) TABLA DE ESPECIFICACION 131 132 TRAB-CAL TRA-NOCAL TRABAJOl TRABAJ02 CAPITAL ING-FAM-P 133 TRAB-CAL IO IO 134 TRA-NOCAL IO IO 135 ING-FAM-P IDIST IDIST IDIST 136 CON-FAH-P IDIST 137 ING-FAM-R IDIST IDIST IDIST 138 ING-GOB IDIST 139 AHOR-INV IDIST 140 141 + CON-FAM-P ING-FAM-R CON-FAM-R ING-GOB CONS-GOB 142 CON-F-1\M-R IDIST 143 ING-GOB IDIST 144 CONS-GOB UNSPEC 145 AHOR-INV IDIST UNSPEC 146 MER-COM-I QSHR QSHR QEXO 147 MER-COM-E QSHR QSHR QEXO 148 MER-COM-N QSHR QSHR QEXO 149 150 + AHOR-INV IMP-IND VA-I VA-E VA-N VAT-I 151 TRABAJOl CD 152 TRABAJOZ CD 153 TRABAJ03 CD 154 CAPITAL CD CD CD 155 ING-GOB IDIST 156 IMP-IND ITAX 157 VA-I IÓ 
+83 
+158 MER-COM-I QEXO 159 MER-COM-E QEXO 160 MER-COM-N QEXO 161 162 VAT-E VAT-N MER-DOM-I MER-DOM-E MER-DOM-N MER-IMP-I 163 IMP-IND ITAX ITAX ITAX 164 VA-E ro 165 VA-N IO 166 VAT-I IO 167 VAT-E IO 168 VAT-N IO 169 MER-COM-I IO IO IO 170 MER-COM-E IO IO IO 17::!. MER-COM-N IO IO IO 172 REST-MUN IMPORT 173 174 + MER-IMP-E MER-IMP-N MER-COM-I MER-COM-E MER-COM-N MER-EXP-I 175 IMP-IND ITAX ITAX ITAX 176 MER-DOM-! CES IO 177 HER-DOM-E CES 178 MER-DOM-N CES 179 MER-IMP-I CES 180 MER-IMP-E CES 181 MER-IMP-N CES 182 REST-MUN IMPORT IMPORT 183 184 + MER-EXP-E MER-EXP-N REST-MUN TRABAJ03 185 TRAE-CAL IO 186 TRA-NOC,Z\.L IO 187 AHOR-INV UNSPEC 188 IMP-IND ITAX ITAX 189 MER-DOM-E IO 190 MER-DOM-N IO 191 MER-EXP-I EXPORT 192 MER-EXP-E EXPORT 193 MER-EXP-N EXPORT 194 195 196 SET ACCEX(ACC) MERCANCIAS EXPORTADAS /MER-EXP-I,MER-EXP-E,MER-EXP-N/ 197 198 PARAMETER ETAS(ACCEX) ELASTICIDAD DE LA DEMANDA DE EXPORT 199 /MER-EXP-I = 1.75, MER-EXP-E = 0.3, MER-EXP-N = 
+.9375 / 200 201 PARA.METER CT(ACC,ACC,*) TABLA DE CELDAS¡ 202 203 CT(ACC,ACCP, 11TBASE 11 ) = SAM(ACC,ACCP) ¡ 204 CT(ACC,ACCP,"SPECS") = SPEC(ACC,ACCP)¡ 205 CT(ACCEX, 11 REST-MUN11 ,nETA11 ) = ETAS(ACCEX)¡ 
+206 207 TABLE AT(ACC,*) TABLA DE CUENTAS 208 209 TYPE FIX SIGMA 210 TRAE-CAL MF p 
+p 212 TRP...BAJOl J:,..C 213 TRABAJ02 AC 214 TRABAJ03 AC 215 CAPITAL MF Q 216 ING-FAM-P INST 217 CON-F.X\.M-P INSTC 218 ING-FAM-R INST 219 CON-FAM-R INSTC 220 ING-GOB INST 221 CONS-GOB INSTC 222 .AHOR-INV INSTC 
+211 TRA-NOCAL MF 
+2 ..., ') 
+IMP-IND TAX 
+VP..-I AC 225 VA-E AC 226 VA-1'1 P..C 227 VAT-I AC 228 VAT-E AC 229 VAT-N AC 230 MER-DOM-I AC 231 MER-DOM-E AC 232 MER-DOM-N AC 233 MER-IMP-I AC 234 MER-IMP-E AC 235 MER-IMP-N AC 236 MER-COM-I AC 1 237 MER-COM-E AC 1 238 MER-COM-N AC 1 239 MER-EXP-I AC 240 MER-EXP-E AC 241 MER-EXP-N AC 242 REST-MUN ROW NP 243 244 MODEL HERC12 11 MODELO DE PRUEBA 11 245 IP..CC ( AT ' CT/ ; 246 247 DISPLAY "TABLAS ANTES DEL EXPERIMENT0: 11 ,AT,CT; 248 249 SOLVE HERC12 USING HERCULES; 250 251 DISPLAY 11 TABLAS DESPUES DE LA SOLUCION BASE 11 ,AT,CT¡ 252 253 * DATOS DEL EXPERIMENTO: DISMINUCION EN ARANCELES 
+<...J 
+254 * LOS ARANCELES EN LOS TRES SECTORES SON REDUCIDOS 255 * EN 50%. 256 257 CT( 11 IMP-IND 11 , 11 MER-IMP-I 11 , 11 THETA 11 ) = 258 CT( 11 IMP-IND 11 , 11 MER-IMP-I 11 , 11 THETA-USED 11 ) /2; 259 CT( 11 IMP-IND 11 ,'1MER-IMP-E 11 , 11 THETA 11 ) = 260 CT( 11 IMP-IND 11 , 11 MER-IMP-E 11 , 11 THETA-USED 11 ) /2¡ 261 CT( 11 IMP-IND 11 , 11 MER-IMP-N 11 , 11 THETA 11 ) = 262 CT( 11 IMP-IND 11 , 11 MER-IMP-N 11 , 11THETA-USED 11 )/2¡ 263 264 SOLVE HERC12 USING HERCULES; 
+265 26 6 DISPLAY 11 TJl.BLP..S DESPUES DEL EXPERIMENTO: 11 , AT, CT; 267 268 *TABLAS DE SAMS A PRECIOS CORRIENTES Y CONSTANTES: 269 270 PARAMETER CURSAM(ACC,ACC) SAM DE SOL A PRECIOS CORR. 271 CONSAM(ACC,ACC) SAM DE SOL A PRECIOS CONST; 272 2 7 3 CURSAM ( ACC, ACCP) = CT (}\CC, ACCP, "TSOL 11 ) ¡ 274 CONSAM(ACC,A.CCP) = CT(ACC,ACCP,"QCSOL 11 ); 
+275 
+276 DISPLAY CURSAM,CONSAM; BIBLIOGRAFIA. 
+BA I LLET, A. C1988). A Computab I e Genera I Equ 1 1 1 br Ium Mode 1 of the Mexlcan Economy to Study the Effects of the 011 Boom on the Balance of Trade, Structural Change and the Dlstrlbutlon of lncome Under Dlfferent Speclflcatlons of the Labour Market. PhD Thesls, Unlverslty of Sussex. 
+BHAGWATI, Jagdlsh. (1969). Trade, Tarlffs and Growth: Essays In lnternatlonal Economlcs. GB, the MIT Press. 
+y SRINIVASAN,T. (1983). Lectures on lnternatlonal Trade. USA, the MIT Press. 
+BRECHER,R. (1972). "Mlnlmun Wage Rates and the Pure Theory of lnternatlonal Trade", Economlc Growth Center Yale Unlverslty, Center Dlscusslon Paper No. 140. 
+(1974). "Mlnlmum Wage Rates and the Pure Theory of lnternatlonal Trade" en Quarterly Journal of Econom I c s 8 8 , no . 1 , p . 9 8 -1 1 6 . 
+(1978). "Money, Employment, and Trade-Balance AdJustment Wlth Rlgld Wages", Center Paper 269,New Haven, Conn, Yale Unlverslty, Economlc Growth Center. 
+DECALUWE, Bernard; MARTENS, André y MONETTE, Marce!. Macroclosures In Open Economy CGE Models: A Numerlcal Reappralsal. Departement D'Economlque, Faculté des Sclences Socia les, Unlverslté Lava!. 
+OERVIS,K., De MELO,J. y ROBINSON,S. (1984). General Equ 1 1 1 br Ium Mode Is for Deve Iopment Po I i cy. USA, the MIT press. 
+DRUD, Arne S. HERCULES: A SAM-Based Systern for General Equ 1 1 1 br Iurn Mode 1 1 ng. ARK I Consu I t I ng and Developrnent A/S 
+, GRAIS y PYATT. (1986). "Survey, Macroeconornlc Model lng Based on Soclal-Accountlng Principies". Journal of Poi ley Model lng, 8(1), p. 111-145. 
+"The Transact lon Value Approach : A systernatlc Method of Deflnlng Econornywlde Models Based on Socia! Accountlng Matrices". World Bank Reprlnt Serles: Nurnber 325. 
+_____, KENDRICK,Davld. (1986). HERCULES-A Systern for Large Econornywlde Models. Developrnent Research Departrnent, World Bank. 
+INEGI. (1988). Encuesta Nacional de Ingresos y Gastos de los Hogares (Cuarto Trimestre de 1983). México, INEGI. 
+, PROGRAMA DE LAS N.U. PARA EL DESARROLLO. (1988). Sistema de Cuentas Nacionales de México 1980-1986 (3 tornos). México, INEGI. 
+LEVY, Sant Iago ( 1988): "Efectos rnacroecorn Icos de I contra 1 de prec Ios: un aná 1 1 s Is de Equ 1 1 1 br I o Genera I a corto plazo". Estudios Econicos, Vol 3, N 1, Ene-Jun. 
+PYATT, Graham. (1988). "A SAM Appr.oach tModel lng". Journa l of Poi ley Model lng, 10(3), p. 327-352. 
+SHOVEN,J. y WHALLEY,J. (1984). "Appl led General-Equl l lbrlum 
+Models of Taxatlon and lnternatlonal Trade: An lntroductlon and Survey" en Journal of Economlc L I tera tur e , Vo I X X 1 1 ( Sep t I ernb re) . 
+SPP y BANCO DE MEXICQ. (1980). Subrnatrlz de Consumo Privado por ObJeto del Gasto y Rama de Actividad Econica de Origen. A 1970. México, SPP, B. de M. 
+SRINIVASAN, T. y WHALLEY,J . (1986) . General Eq-ul l lbrlum Trade Poi ley Model lng. USA, the MIT Press. 
+
+
+

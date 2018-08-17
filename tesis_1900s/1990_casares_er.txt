@@ -1,0 +1,430 @@
+EL COLEGIO DE MEXICO 
+CENTRO DE ESTUDIOS ECONOMICOS 
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRIA EN ECONOMIA 
+TEORIA ECONOMICA Y TEORIA DE CONTROL Enrique Ram Casares Gil Promoci 1979-81 
+Mayo, 1990. 
+ASESOR: Dr. Carlos Manuel Urz REVISOR: Dr. Jorge Ludlow 
+AGRAl'\C"cn,HC"'~ITAC
+VL .ll'l.:.Ll1 V...J. 
+En todo traba.jo de tesis es indispensable el soporte y la ayuda, tanto académica, como emotiva, para la realizaci exitosa de éste. Quiero dar las gracias al Dr. Rafael Kelly con el que he trabajado y convivido los timos a~os, ya que gracias al trabajo conjunto tuve la oport.Lmidad de introducirme en los temas más especializados de la teoria de control. Al Dr. 
+Angel Ca.lde:r y al Dr _ Carlos Urzua por sus comentaríos y paciencia, ya que sin ésta, este trabajo de tesis no se hubiera realizado. Al Colegio de México y a la Universidad 
+Automa. Metropolit.ana -Azcapotzalco en donde he realizado 
+• .¡.. ·A
+mis proyectos de 1nves...1gac1....n . En especial estoy profundamente agradecido por el apoyo nolineal académico y emotivo de Gilma Garza, asi como el apoyo incondicional de 
+mis padres Beatriz y Ram, de Mela, Mercedes y Melinda. 
+En este trabajo de tesis se aplican una serie de técnicas de la teoria de control a un tipo especifico de problemas de poli tjca econica. Dichos problemas que surgen cua.ndo se de-sea que ciertas var-iables econicas alcancen un cierto valor determinado por los disefladores de la poli tica econica. Las técnicas de control utilizadas son la teoría 
+sobre control nolineal con objetivo de seguimienti::a de trayectorias y la teoria del control adaptable con este tipo de seguimiento también. Se supone que -' 
+~l. proceso de acumulaci de una sociedad dada está regida por el ·modelo unisectorial neoclásico de crecimiento econico. Se explica y se disef1a tm controla.dar nolineal para que la economi.a en 
+cuesti alcance cualquier trayectoria deseada por los disedores de la política econica. Además se plantea el problema de que la economia en cuesti alcance un valor del consumo por unidad de trabajo máximo. Esto se logra por medio del uso del controlador nolineal diseffado. efect una simulaci para ejemplificar esto. Se compara el controlador nolineal con los principios de la teoría del 
+control 6Pt.imo. Por ~ltimo se considera que el modelo econico en cuesti posee un par2.met.ro diflcil de estimar, por lo tanto incierto. Para lograr controlar modelos con estas propiedades se hace indispensable el uso del control adaptable. Se explica y se disefia Lm controlador adaptable con el fin de que ciertas variables econicas alcancen Indice. 
+valores deseados por  los disefiadores,  aun  cuando  el  modelo  
+posee incertidumbre paramétrica.  Se reali za  una  simulaci  
+para ejemplificar  esto.  
+
+I. Introducci 1 
+II. El crecimiento econico 4 
+III. Objetivos de la politica econica 3 
+e,
+III.1 Planteamiento '-' 
+III.2 Control nolineal 11 
+III.3 Regla de Oro 14 
+III.3.1. Simulaci I 19 
+III .4 Cont¡~o1 adaptable 24 
+III.4.1. Simulaci II 29 
+IV. Conclusiones 34 
+Referencias bibliográficas 
+I . I nt.roduc e i . 
+Como es conocido. el uso de las técnicas de control en la ciencia econica es amplio_ Estas aplicaciones han consistido en la utilizaci de los diferentes instrumentos de la teoría de control, tales como las técnicas de control timo, control estocástico y otras más_ El uso especifico de ciertos principios analiticos de la teoria de control, depende del planteamiento del problema econico a resolver . Asi, cuando el objetivo es diseftar una trayectoria tima en donde se esti optimizando un cierto criterio econico, la utilizaci de la te,:,ria de control timo es la adecuada. En concordancia a esto, en este trabajo de tesis se ~uest.ran algunas aplicaciones del instrumental teico m¿s reciente de las técnicas de control nolineal con objetivo de seguimiento de trayectol'ias y del control adaptable también. Eso es asl, porque en este trabajo se plantea la soluci de una cierta clase de problemas de politica econica. Problemas de politica econica que surgen cuando los diseffadores de la poli tica. econica fijan metas deseadas o trayectorias deseadas para ciertas variables econicas y el modelo utilizado p~ra analizar el comportamiento de estas variables 
+1 
+tiene caracteristicas nolineales y adem¿s algunos par~etros del modelo son dificiles de cuantificar. Como es obvio, el objetivo del control nolineal es la de controlar modelos nolineales y la vocaci del control adaptable es la de tratar con modelos en donde algunos de los parámetros del modelo son inciertos, esto es, hay dificultad de estimar el valor numérico de algunos parámetros. Estas caracteristicas se presentan frecuentemente en los modelos econicos complejos y "reales" que se estudian hoy en dia. Por lo tanto, el objetivo de este trabajo es el de mostrar la utilidad de ciertas técnicas de control para la soluci de una cierta clase de problemas de politica ec•:mica. 
+Coa,o es sabido, la teoria de control utiliza las entradas del modelo para controlar las salidas de dicho modelo. La manipulaci de las entradas tiene en general el objetivo que las salidas del modelo tiendan y alcancen asinticamente con respecto al tiempo unas trayectorias deseadas, seleccionadas por los diseffadores de la politica econica. En otras palabras se desea que las salidas del modelo tiendan asint.icamente a las salidas deseadas. Este es el plantea.miento general de los problemas de control con objetivo de seguimiento de trayectorias. Por lo tanto aqu! se utilizan estas técnicas de control para la soluci de probleaa.s de poH tica econ6aica en donde el ·Ministerio de 
+Programaci» desea que la economia se dirija hacia los objetivos (trayectorias) deseados por la sociedad, considerados por los diser'íadores de la politica econica. 
+Para este fin se supone que el crecimiento econico de nuestra economía en cuesti está regida por el modelo de crecimiento presentado por Solow (1956). Hay que aclarar que las técnicas de control nolineal y de control adaptable ft..-er-on aplicadas al modelo de Solow (1956) en Kelly, Cásares y Garza (1988),. pero con su.puestos y objetivos diferentes. 
+La organizaci del trabajo es la siguiente: en la secci II se presenta el modelo de crecimiento econico de Solow (1956) dentro del contexto de la teoria de control. En la secci III se plantean algunos problemas de politica econica y su soluci utilizando las técnicas de control nolineal y del control adptable, y finalmente en la secci IV se presentan las conclusiones. 
+II . EL CRECIMIENTO ECONOMICO . 
+Se supone que el proceso de acumulaci de capital de una cierta economia está regida por el modelo de crecimiento de Solow (1956). Excelentes presentaciones se encuentran en Burmeister y Dobell (1970) Y Jones (1975). Los supuestos que se utilizan son los siguientes: 
+A) La fuerza de trabajo con progreso técnico crece a una tasa constante dada exenamente: 
+E/E = TI + ,.. ; X= dx/dt donde: 
+E: fuerza de trabajo con progreso técnico 6 trabajo efectivo . 
+n: tasa de crecimiento de la poblaci dada exenamente. (L/L = n, donde Les la fuerza de trabajo). 
+k: tasa de crecimiento del progreso técnico también dada exenamente. 
+8) Se utiliza una funci de producci CES (elasticidad de sustituci constante) 
+4 
+
+
+en dc,nde: 
+Q: producto 
+A: estado de la tecnolc,,31 a. A > o 
+K: acervo de capital 
+6: parámetro dist.r ibuti ve,, o < 6 < 1 
+a: elasticidad de sustituci. a = 1/ ( 1 + p) p > -1. 
+La producci por unidad de trabajo efectivo (q), (una 
+funci de producci de producci con rendimientos 
+constantes a escala) será: 
+q = A C 6k-p + (1 -6) J-l/p (2_ 1) 
+donde k es la relaci capital trabajo efectivo. 
+C) Se utiliza una funci de ahorro proporcional: S = sQ, dondes es la tasa de ahorro. La trayectoria de la relaci Capital -trabajo efectivo (K/E), entonces está regida por la siguiente ecuaci diferencial: 
+k/k = sf(k) /k -E/E 
+en donde f(k) es una funci de producci per cás:>ita 
+neoclásica de buen comportamiento de rendimientos constantes a escala. 
+Esta ecuaci diferencial da la evoluci en el tiempo o trayectoria de la relaci capital-trabajo efectivo (k). Dada una condici inicial de la relaci capital-trabajo efectivo (k ) y unos valores de los parámetros, la soluciOn 
+o de la ecuaci diferencial esto es k tenderá a un valor de equilibrio también conocido como el valor de k en el estado estable Ck•l. Este valor se alcanza cuando la tasa de variaci de la relaci capital-trabajo efectivo es cero (k/k = 0). Esto es, cuando se tiene una k constante. Una vez alcanzado el estado estacionario, la ecuaci (2.1) dice que la economía se encuentra en una situaci de pleno empleo de los factores productivos (del capital y del trabajo). Ya que en una situaci de equilibrio, la ecuaci es la condici de pleno empleo, que viene dada por la igualdad entre la tasa garantizada de crecimiento (g) y la tasa nat.ural con pro•3resc, técnico (n + A). La tasa garantizada (g) como es sabido est! definida como el cociente entre la tasa de ahorro (s) y la relaci capital-producto (v = K/(l) o sea g = s/v Esta trayectoria de equilibrio de pleno empleo, es una trayectoria estable, ya que si por cualquier raz el valor de k se desvia de su valor de equilibrio, la relaci capital-trabajo efectivo regresará a su senda de equilibrio. Bajo nuestros supuestos esta ecuaci diferencial queda como: 
+-~ -•1~ 
+s A C 6k ~ + (1 -6) J ~ ~ k/k = --------------------------. -Cn+A]
+k 
+Esto es una ecuaci diferencial nolineal en k. Por lo tanto el aodelo econico nolineal completo será: 
+k = s A e 6k-p + (1 -6) J--1/p -en+ x lk (2.2) q = A [ 6k-p + (1 -6) J-i/p (2.1) 
+Desde el punto de vista de la teoria de control, la variable de control serás, la variable de estado k y la salida del modelo q_ Sabemos que si la tasa de ahorro aumenta, aU11entará k y a su vez q_ Esta es la relaci básica entre las variables. 
+7 
+III. OBJETIVOS DE POLITICA ECONOMICA 
+III.1. Planteamiento: 
+Se plantean 3 objetivos de política econica en una economia donde el proceso de acumulaci de capital está gobernado por el modelo de crec imientc, presentado anteriormente. Primeramente se desea utilizar la variable s como variable de control, para controlar q. Este• es, se desea llevar a la economia hacia una trayectoria de q deseada (qd) . Para lograr este fin, también llamado 
+objetivo de control. se utilizarán las técnicas de control nolineal para el dise~o de un controlador nolineal. La funci de dicho controlador nolineal será la de controlar el proceso de acumulaci y llevar a la economla hacia dicha qd. 
+Una vez disef'iado el controlador nolineal, se propone el siguiente objetivo. El segundo objetivo consiste en situar a la economia en una relaci capital-trabajo (k) efectivo, (k), y producto-trabajo efectivo, (q), que iaplique una relaci consumo-trabajo, CC/L). máximo. 
+Para realizar este fin se aplica el principio de la regla de oro de la acumulaci, Phelps (1961); explicaciones interesantes se encuentran en Nagatani (1981) y Blanchard y Fischer (1989). La regla de oro dice cuanto deberian ser los valores de q y k ,::¡ue garanticen un valor r"á.ximc, de la 
+relaci consumo -trabajo. 
+Por lo tanto, para situar a la economia en una trayectoria de crecimiento estable, en donde se esté logrando un valor máximo de todos los posibles valores de C/L que puede lograr nuestra economia en cuesti (da.do el valor de los parámetros), es necesario icamente calcular la regla de oro de la an.mwlaci y a partir de ella deducir la trayectoria deseada_ En este punto hay que aclarar que el objetivo de la polltica econica no es el de dise~ar un controlador timo por medio de las técnicas de programaci dinámica y/o Teoria de control timo, sino más bien el de utilizar el cc,ntrolador nol ineal para llevar a la econon de una q cualquiera hacia una qd que implicarla que el C/L es el máximo posible de entre todos los estados posibles de la economia (dado el valor de los parámetros)_ Para ejemplificar los resultados teicos se presentarán una serie de simulac ic•nes. 
+Por timo. colllO tercer objetivo. se supone desconocido el valor de un par~metro del modelo, de por si dificil de 
+cuantificar: el progreso técnico. Por lo tanto en esta etapa del trabajo se hace pertinente el uso del control adaptable, ya ,que este tiene como vocaci el controlar sistemas con parárnetros desconocidos. 
+10 
+III.2 Control Nolineal: 
+En esta parte del trabajo, el diseHo del controlador est! basado en los más recientes avances sobre linealizaci por retroalimentaci nolineal de estado CSastry y Bodson, 1989). 
+Esta técnica de linealizaci consiste en que unidos el controlador y el modelo, ambos forman un sistema 
+estrictamente lineal y no una aproximaci lineal. En nuestro caso se utilizará el concepto de linealizaci desde la entrada al estado. Esta técnica tiene enormes ventajas metodolicas, ya que la teoría sobre sistemas lineales está bien desarrollada y los sistemas lineales son fácilmente manejables. 
+Para determinar el controlador que por medio de la variable de control s logre el objetivo de seguimiento, esto es, q(t) ~ qd(t) cuando t ~ oo, se procede de la siguiente manera. El modelo econico forma.do por las ecuaciones (2_1) y <2-2) tiene la foraa: 
+x = f (x) + g (x) µ V= h <x> (3.2_1) 
+donde: x = k, µ = s, V= q_ Por lo tanto: 
+f (x) = -[ n + ~-]k 
+]-;/p
+g (x) A [ 6k-p + (1 -6)
+= 
+-1/p
+6k-p + ( 1 ]
+h (x) = A [ -6) <3.2.Z> 
+Suponiendo que g(x) es diferente de O para todo x, la ley de control está dada por: 
+1 
+µ = [ -f (x) +V] (3.2.3)
+g (x) 
+en donde v es una nueva entrada que será definida posteriormente . Sustituyendo (3 .2 . 1) en (3.2.3) se obtiene: 
+X = V (3.2. 4) 
+que es una ecuaci diferencial lineal.  Si  en  el  modelo,  
+-1h ( y)  y  -1dh /dy está.n definicias Y  qd  =  yd  y  q d  =  son  
+funciones cont1 nuas  y  acotadas,  la  nueva  entrada  Pt.ecie  
+
+seleccionarse como: 
+v = x d + (i <xd -x) (~ > 0) 
+. -1 
+xd = h (yd) (3.2.5) 
+Reemplazando (3.2.5) en (3.2.4) se obtiene: 
+... ... 
+X = -~ X 
+en donde x = x -x. 
+d 
+Esta es una ecuaci diferencial lineal cuyas soluciones son exponencialmente decrecientes a cero cuando f > O. Por lo tanto x(t)..., x/t) y y(t)..., Y/t) cuando t ..., ro. Para el modelo de Solow (1956), se tiene que sustituyendo (3.2.2) y 
+(3.2.5) en (3.2.3) se obtiene el controlador nolineal: 
+[n + f~J k 1 5 = + 
+AC6k-p+(1-6)J-i/p 
+(3.2.6) 
+
+
+(3.2.7) 
+en dc,nde : k = k -k 
+d 
+Nese que sustituyendo (3.2.6) en <2.2) se obtiene: 
+k+/3k=O 
+la (:ual es una ecuaci diferencial lineal exponencialmente 
+convergente a cero. Esto quiere decir que k(t) ~ O cuando t 
+-, CD y que k(t) -, kd y q(t) -, q/t> cuando t .., CD. Por lo 
+t~ntc, el objetivo de control se cumple. Esto es que la 
+economia se dirigirá hacia las trayectorias de deseadas t por los disedores de la poli t.ica ecc,nica. El primer 13 
+objetivo se ha logrado: el dise~o de un controlador nolineal. 
+III.3 Regla de Oro. 
+Ahora se plantea el problema que la economia se dirija 
+hacia un valor del producto por unidad de trabajo efectivo 
+en donde se logre el máximo consumo por unidad de trabajo, 
+dado el valor numérico de los parámetros. 
+Aquí hay que selar que son equivalentes la maximizaci6n del consumo por trabajo (C/L) y la maximizaci del consumo por trabajo efectivo (C/E), ya que C/L = e~t C/E. 
+Se conoce por técnicas de optimizaci que la regla de oro de la acumulaci se PUede obtener por medio de: 
+C/L = eAt [ fCk) -sf(k) J 
+y en condiciones de equilibrio, en donde k/k = O, se tiene que: 
+sf(k) = (n + A )k 
+por lo tanto: 
+C/L = e~t [ f(k) -<n + ~)k l 
+derivando con respecto a k: 
+;>._t.
+8(C/L)/8k = e [ f'(k) -(n + ~) J = O 
+despejando se obtiene la llamada regla de oro de la acumulaci: 
+f' (k) = n + t~ (3.3.1) 
+En donde f'(k) es la productividad marginal del capital. 
+Se supone que la elasticidad de sustituci es a = 1 (supuesto simplificador). Esto implica que p = O, pero, aun cuando la divisi por cero no está permitida, es bien sabido que cuando p O la funci de producci CES se aproxima
+4 
+a la funci de producci Cobb-Oouglas. Por lo tanto se tiene que: 
+q = Akª 
+cuando p ~ O y recordando que a= 
+Calculando la productividad marginal del capital: 
+,,,_.. 
+8q/<lk = f ' ( k ) = Aak.... .. 
+Sustituyendo este valor en la ecuaci (3.3.1) se obtiene la 
+regla de oro de la acumulaci para el caso de una funci de . a-1
+producci Cobb-Oouglas: Aock = n + X._ Despejando k de a-1 
+Aetk = n +Ay sustituyendola en la funci de producci Cobb-Oouglas se obtiene: 
+c./a-1 
+Por lo tanto se tiene la q como: 
+d 
+n + A q ( t.) o < t < 00 (3.3.1)
+d Aa 
+Este es él valor constante de q que se desea que la economia alcance ya que este valor de q implica un miximo valor de (C/L), dado el valor de los parámetros. 
+Bien pudo haberse planteado un problema en términos de programaci dinámica y/o teoría de control 6ptimi::,. Recordando que en el equilibrio la maximizaci de (C/L) maximiza también (C/E), se tiene: 
+Jt 
+f 
+Max IJ CC/E) dt 
+O 
+S f ( k) 
+s.a. k/k = -( n + ..A J 
+k 
+6 k = fCk) -CC/E) -C n + ~ J k 
+k(O) > O dado; k(\) = k* ~ O. En donde kCO) es la condici inicial y k* es la condici terminal. k* puede ser cero y el problema tendrá entonces horizonte infinito. Wes una funci de utilidad social no ponderada. 
+Un problema IDU'.f pac.rticular es la de considerar que la condici inicial k(O) sea la misma para todo periodo de tiempo, esto es: k(O) = k(t) para todo t>O y además que el nivel de k(O) sea logrado por medio de capit~l gratuito (esto es capital recibido sin costo por alg medio). Este valor de k, constante para todo t, corresponderi al que resulte de la soluci de este liUY particular problema de crecimiento tiao si se considera un horizonte finito la.rgo, esto es, k* = k(t) = kCO). 
+La soluci de este problema muy particular nos dar!.a una trayectoria tima en donde se estaria maximizando el flujo del consumo por trabajo efectivo y precisamente la regla de 
+t oro es la condici ~ue maximiza dicho flujo: J,ro' U(C/L}dt, Branson (1978). Justamente en el ejercicio anterior, en donde se utiliza la regla de oro como trayectoria deseada, no 
+se esti planteando un tipo de maximizaci del flujo del consumo por trabajo efectivo, ya que el controlador nolineal no fue disefiado para optimizar ningun criterio, solamente se está llevando, en forma asintica al stock de capital, k, al valor deseado obtenido al aplicar la regla de oro, es decir al valor que maximiza la funci de utilidad_ No es timo en el sentido de que el stock de capital per-cápita obtenido por el controlador no maximiza la funci de utilidad en un horizonte . Esto no es sorprendente ya que el controlador no lineal fue disedo para cumplir con el objetivo de seguimiento y no de optimizaci_ No obstante al alcanzar la trayectoria deseada y al estar siempre la economía, por medio del controlador nolineal, en una trayectoria de crecimiento de la regla de oro, la trayectoria de la economía ser! también una trayectoria tima_ El controlador nolineal estará generando la tasa de ahorro necesaria para mantener a la econoaia en una trayectoria de regla de oro o una trayectoria tima_ Au~ue verdaderamente este es un caso 
+particular, ya que la trayectoria deseada es la regla de oro. Es evidente pues que el .controlador nolineal diseflado no es timo . 
+Adeaás, hay que recalcar que es claro que la regla. de or·o es la soluci muy particular de un problema de crecimiento timo. Pero es muy importante serialar que dicha regla de oro es el valor al que tienden asinticamente (soluci 
+liaite de crecimiento Óptimo) los problemas más generales del crecimiento timo (programaci dinámica y/o teica de control timo), en donde k(O) > O es dado 6 heredado del 
+tiempo pasado, Jones (1975). 
+III.3.1. Simulaci I . 
+En esta secci se presentan resultados de siaulaci del modelo de Solow descrito por las ecuaciones (3.2.1). el controla.dar no lineal, (3.2.6) y la trayect.oria deseado obtenida de la aplicaci de la regla de oro en (3.2.7). 
+Se realizaron dos silnulaciones, modificando el valor de algi...11nos de los parámetros con el fin de ilust~ar que el controlador no lineal siempre lleva asinticamente a las 
+variables a sus valores deseados. 
+En el primer caso el valor rL1anérico de los parámetros fue seleccionado de la siguiente manera: la tasa de crecimiento de la poblaci, (n), en 0.03; la tasa de crecimiento del progreso técnico, O.. ), 0.02; el estado de la tecnología, <A>, 0.1; el parámet.-ro distributivo, (é), 0.666; para la elasticidad de sustituci Ca= 1 / t+p), se considerpara p 
+un valor de .001; la relaci capital/trabajo efectivo inicial, < kCO> >, 10 y el parámetro de diseflo ~ en 0.1. La gráfica 1 muestra el comportamiento que ha de seguir la tasa 
+de ahorro en el timepo y  las gráficas  2  y  3  1111Uestran  las  
+trayectorias  del  capital/trabajo  efectivo  (k)  y  
+producto/trabajo efectivo (q),  respectivamente.  Note que  una  
+
+vez alcanzado los valores deseados de kd Y qd el controlador establece que la tasa de ahorro permanezca constante en el 
+
+1 s s (tasa de il.horro ;, 
+___.-------­
+"· 8 
+....~ 
+.•..,....­
+0.6 0.4 0.2 
+
+01--------------~--------­
+G 20 40 6~ 80 100 
+Gráfica 1. Tasa de ahorro. <p = .001) 
+20 
+
+l =k 2 =kd 
+
+5 
+º----------.,.....----------------,
+0 l0 40 ,.;9 8~ 100 
+Gráfica 2. Capital/trabajo efectivo. Cp = .001) 
+9.5 t =q 2 =qd 
+0.3 
+0,3.,___________________-,-____ 60 80 100 
+Gráfica 3. Producto/trabajo efectivo. (p =.001) 
+El segundo caso de simulaci realizado fue considerando un valor de p mAs cercado a cero (p = .0000001), es decir equivalente a que el modelo econico sea descrito por una funci Cobb-Oou,3las. Se tomaron los mismos valores numéricos que en el caso anterior para los par¿metros den, A, A, 6 y t y se considerque la economía partia de una situaci 
+1: q 2: qd 
+0.14 
+0.12 
+
+0.08...____________,.._____ ________ 0 20 4~ ~0 80 
+Gráfica 6. Producto/trabajo efectivo. (p = .0000001) 
+23 
+III.4 Control adaptable. 
+Ahora se considera que el parámetro~ es desconocido . Por lo tanto el problema de control no puede ser resuelto Por los métodos convencionales. Aqui se hace indispensable el uso de 
+las técnicas del control  adaptable.  Excelentes  resenes  
+sobre control adaptable se encuentran en  Astrom  (1983)  y  
+Astrom (1987).  
+
+La ley de control ahora es: 
+,. [n +e] k 1 
+(3.4.1) 
+(3.4.2) 
+N 
+k = k -k 
+d 
+donde hay que estimar e. Para este fin se prOf)One la 
+siguiente ley de adaptaci tipo integral (algoritmo de 
+estimaci paramétrico): 
+e = -r <f, t: e = r k k (3.4.3) 
+en donde: e es el error k; res un escalar positivo llamado ganancia de adaptaci y <f, una sel que puede ser obtenida de las entradas y salidas del modelo econico, en este caso ,¡, = -k. El error paramétrico se define como: 8 = 8 -en donde e* = A. Sustituyendo (3.4.1) en (2.1): 
+k = ke + C kd + 0:-J -Ak 
+
+
+"' * 
+y como e -e -e tenemos: 
+k = ke + e k + f1k J (3.4.4)
+d 
+A partir de las ecuaciones (3.4.3) y (3.4.4) se obtiene el llaaado modelo del error, el cual es utilizado para demostrar estabilidad en el sistema adaptable y para probar que el objetivo de control se cump,le. 
+Notando que e= e teneaos que: 
+k +(Je= e k (3.4.5) 
+N ­
+. 
+e = r k k (3.4.6) 
+Las ecuaciones (3.4.5) y (3.4.6) son el llamado modelo del error. Este posee la misma estructura que el presentado en Kelly et. al. (1988). Enunciemos el siguiente teorema: 
+TEQP~MA: Considérese el modelo econico descrito POr las ecuaciones <2.1) y (2.2), la ley de control (3.4.1) y la ley de adaptaci (3.4.3). Supgase que A es una constante desconocida, entonces: 
+-
+a) e e L 
+00 
+N 
+b) k e L n L 
+2 (X) 
+e) q -q E L () L d 2 0)
+-
+d) k(t) -+ O cuando t ... 1)) 
+e> lqit> -q(t) 1 ... O cuando t. ... 00 
+en donde: 
+00 
+00
+L 2 = {x tR.,. ~ tR ' [ Jº 1x21 dt r, ( } 
+( '\ L = IR -+ IR f ess sup f x< t) f < ro 
+O) { X 
+}
++ [R
+l E 
+.. 
+El siguiente lema será de utilidad para la demostraci del teorema . 
+Lema: Sea/: IR-+ IR. Si/ Y fe L Y fe L , entonces /<t) .,
+00 2 
+O cuando t-+ oo. CDesoder y Vidyasagar, (1975)). 
+Denustracion: Se proPone la siguiente funci de Liapunov para el modelo del error: 
+V<t) = (3.4.7) 
+cuya derivada es: 
+vct> = 2 e e + 2 r k k 
+sust..ituyendo los valores de e y k del modelo del error se obtiene: 
+VCt) = ~ o (3.4.8) 
+De (3.4.7) y (3.4.8) se tiene que e e L y k e L y como 
+00 00 
+V(t.) es una funci positiva no creciente se tiene que V(O) ~ VCt.) para todo t.~ O, integrando (3.4.8) tenemos: 
+t ­
+2 
+V(t) -V(O) = -2 y (3 fO k (T) ctr 
+y como V(O) > V(t) se tiene: 
+t
+V(O) 
+r 
+"'z
+-----> (T) dT 
+2r/3 Jo k 
+por lo tanto k E L . Y por los resultados anteriores k e L n 
+2 2 
+L . 
+(X) 
+Esto deauestra los incisos a) y b). D~ las ecuaciones (2.1) y (3.4.2) y del hecho que k = k -k y de que k eL (\ L
+d z (O secomprueba el inciso c). Por medio de c) y como está
+qd acotada se deduce también que q está acotada. Utilizando la ecuaci (2.1) deducimos que si q estA acotada, k está acotada también. Utilizando (3.4.5) y como k, k y e están acotadas esto implica que k está acotada también. Aplicando el lema enunciado anteriormente tenemos que k<t> ~o cuando t ~ oo, con lo cual se demuestra el inciso d). El inciso e) se sigue inmediatamente. Por lo tanto se demuestra que el c,bjetivo de control es logrado esto es que q( t) ~ 
+Se ha logrado diseflar y comprobar la estabilidad de un sistema ada,ptable. Aqul hay que resalta'!' que el controlador adaptable es capaz de generar las entradas necesarias para lograr el objetivo de control con icamente informaci disponible de k, obviamente ésta no puede provenir del modelo econico, ya que un parámetro de él es desconocido. La 
+informaci de k tendrá que ser medida de fuentes directas o generada por otro modelo. 
+III.4.1. Simulaci II. 
+Al igual que en el caso del controlador no lineal se realizaron para el control adaptable dos simulaciones para ilustrar la efectividad del controlador para llevar las variables a sus valores deseados. En estas simulaciones se utilizaron las ecuaciones del modelo de Solow en (3.2.1), el controlador adaptable (3.4.1), la ley de adaptaci (3 .4.3) y la trayectoria deseada en (5.4.2). 
+En las gráficas 7. 8, 9 y 10 se presentan los resultados de la simulaci para la tasa de ahorro, la relaci capital/trabajo efectivo, producto/trabajo efectivo y la evoluci del parámetro e, respectivamente. Los valores numéricos utilizados fueron los siguientes: para los parámetros del modelo: n = 0.03, A= 0.02, A= .1, = .666, p = .001, la condici inicial kCO) = 10 y los paráme~ros de dise~o: ~ = .05 y r = .OOOOS. 
+29 
+1 s (tasa de ahorro) 
+0.8 0,6 0.4 0.2 
+
+0.------------,--------,,-----~
+0 S0 Hl0 150 200 
+Grafica 7. Tasa de ahorro. <p = .001) 
+1: l< 2: kd 
+10 
+
+0r--------,-------,-----------­
+50 100 150 200 
+Gráfica 8. Capital/trabajo efectivo. <p = .001}. 
+~.5 1 =q a= qd 
+. 9. 3 t---ii.:--.-i_~--;:-----,~--,~:--_-::=-::$==----ir--­
+....,_ . +-----r
+-~-­
+~.2 
+0.1 
+
+
+~1--------------,-,,,.,,....----~=-----~
+0 5ij 100 l~ij 2~0 
+Gráfica 9. Producto/trabajo efectivo. <p = .001). 
+
+0,03 
+1 = teta. 2 = h.M~d~ 
+0. 02 
+0,01 
+-0.91 
+-0.02 
+Q 5~) 100 150 200 
+Gr¿fica 10. Parimetro e. <p = .001) 
+Note que en este caso, en virtud de que el modelo contiene un 
+parámetro desconocido, las trayectorias que siguen las 
+variables k y q aunque tienden asinticamente a los valores deseados, kd y qd, oscilan en la etapa de transici_ Est-o es debido a que el parámetro e, estimaci del parámetro desconocido, oscila hasta alcanzar el valor verdadero de _02. 
+Las gráficas 11, 12, 13 y 14 muestran el comportamiento de la tasa de ahorro, la relaci capital/trabajo efectivo, producto/trabajo efectivo y el parámetro e, respectivamente_ Para este caso se utilizaron los mismo va1ores paran, A, A y 6 que en el caso anterior y p = .0000001, es decir considerando que el modelo econico se comporta con una funci de producci Cobb-Douglas. Se supuso para esta simulaci que la economia partia de una situaci inicial de 
+k<O> • 1.3 y los parámetros de dise~o fueron seleccionados a los siguientes valores:~= 0.1 y r = 0.1. 
+s (tasa df .ahorro> 
+0.6 
+,...,..---­
+--~----­
+/,. 
+-~··''' 
+I f ¡ 
+0.4 
+/ 0.2 
+/ / 
+/ 
+0 9 2 4~ 60 80 100 
+Grifica 11. Tasa de ahorro. Cp = .0000001). 
+l : k 2 : kd 
+1.4 
+1.2 
+
+1¡_~\......
+~--+------i!-:;;::,.....-:==!===~1=---+-­0,8.L....-------"""".":"---~~----::-::----':"'.!,0 20 40 60 8~ 100 Gr!fica 12. Capital/trabajo efectivo. Cp = .0000001). 
+32 
+1 =q 2 =a.d 
+0.14 
+0.12 
+\l 
+\, 
+0.lt--"""'i----¾---+---=4====+------a~­0,03::--------:::-,:-----~-------------­
+
+9 20 40 60 80 100 Gráfica 13. Producto/trabajo efectivo. (p = .0000001). 
+
+
+--------t--­
+J. 021---~--~-""'7"'-"-·' +-----:!-·------+--==+-­
+.. _.,,······· 
+)' 
+,...
+0. 01 
+_.l' // 
+80
+20 40 60 Gráfica 14. Parámetro e. < p = .0000001>. 
+33 
+IV. CONCLUSIONES . 
+En este trabajo se ha mostrado el uso de diferentes técnicas de control para la soluci de varios problemas de política econica. Se utilizaron las técnicas de control nolineal 
+para el dise de un controlador nolineal con el objetivo de 
+que este llevara a ciertas variables econicas a ciertos valores deseados por los diseftadores de la poli t.ica econoica. Se demostrque el sistema formado Por el controlador nolineal y el m1~delo econico es estable. Este, implica que se puede lograr alcanzar cualquier trayectoria deseada. Asimismo se mostrque este controlador puede 
+conducir a la economia hacia la trayectoria en donde se alcanza un nivel máxiao del CC/L). También se mostr
+estabilidad global para el sjstema de control adaptable en el 
+caso en el que un parámetro del modelo econico era desconocido. Lo anterior muestra la utilidad de ciertas herramientas de la teoria de control para la manipulaci de un cierto tipo de modelos econicos. El beneficio teico y empírico para la teoría econica es evidente. 
+34 
+
+BIBLIOGRAFIA 
+·Theo~y and aplications of adaptive control-A survey»_ Automatica, Vol. 19, No. 5, 1983, PP. 471-486. 
+(2] Astrom, K. J., "Adaptive Feedback Control". Preceedin,qs of the IEEE, Vol. 75, No. 2, Febrero 1987. 
+,-.
+[:3] Blanchard, O. ..J. ' Fischer ;:).' "lectures on Macroeconomics", The MIT Press, 1989. 
+(4] Branson W. H. , "Teoria y política Macroeconica", Fondo de Cultura Econica, 1978. 
+(5] Burmesiter E., Oobell, R. "Teorías matemáticas del crecimiento econico", Bosch Casa Editorial, Barcelona, 1973. 
+[6] Desoder y Vidyasagar, "Feedback systems: Input-Output. praperties", Acadendc Press, 1975. 
+35 
+[7]  6andolfo. F .• •ttathellat.ical aethods econoaic dynamicsª. North-Holland, Pub. 1971.  and models in Co., Aasterdam,  
+[8]  Jones, H., ªAn int.roduction to Modern Theories of Economic Growth1 ', Thomas Nelson and sons, Niddlesex, Inglaterra, 1975.  
+[9]  Kelly. R., Cásares E., Garza 6., ''Modelos econicos dinámicos y control adaptable", Ana!isi~ economico, Vol. VII, Nos. 12/13, enero-diciembre de 1988.  
+t 10]  Nagatani, K.• University Press,  ªNacroeconoaic 1981.  dynamics",  Cambridge  
+[111  Pheolps, E. S.1 ºThe Golden Rule of Accumulation: a fable for growth menª, American Economic Review, Vol. 51, 1961, pp. 638-643.  
+[121  Sastry, S. Bodson M. , "Adaptive control. Convergence and Robustness", Prentice-Hall,  Stability, 1989.  
+[131  Solow R. M., ''A contribut.ion to the theory of economic growth". Quart.erly Journal of Economics, Vol. LXX, 1956, pp_ 6S-94.  
+
+
+

@@ -1,0 +1,661 @@
+, ,
+MAESTRIA EN ECONOMIA 
+TRABAJO DE INVESTIGACI”N PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÕA 
+CRECIMIENTO ECON”MICO Y DESIGUALDAD DE INGRESOS EN M…XICO 
+LUIS FEUPE MUNGUÕA CORELLA 
+PROMOCI”N 2006 ï 2008 
+AsESOR: DR. GERARDO ESQUIVEL HERN¡NDEZ 
+ENERO 2009 
+1'f!,t&Õlol:eaa ÌJ::;atzlE.Õ{!05,lo <Vtll/!.91,. 
+. . . l;L COLEGIO DE MEXICO, A.<:' ~ ).i.. ,._,_ -~. _.,, 
+
+
+C
+r
+e
+c
+i
+m
+i
+e
+n
+t
+o 
+E
+c
+o
+n
+Û
+m
+i
+c
+o 
+y 
+D
+e
+s
+i
+g
+u
+a
+l
+d
+a
+d 
+d
+e 
+I
+n
+g
+r
+e
+s
+o
+s 
+e
+n 
+M
+È
+x
+i
+c
+o 
+
+LuisFelipeMunguÌaCorella 
+Agradecimientos 
+Un gran agradecimiento alDr. Gerardo Esquivelpor todo su apoyo acadÈmico en este trabajo. 
+Amipap·que me dio la razÛn Yami mam·que me dio la pasiÛn. 
+
+Resumen 
+Este trabajo analiza el crecimiento econÛmico en MÈxico y su efecto en la desigualdad de ingresos en MÈxico. Para esto se utiliza como medida de pobreza el quintil m·s pobre del ingreso de la poblaciÛn. Utilizando datos en forma de panel para los 32 Estados y una serie de tiempo de 1992-2006, se aplica la metodologÌa de Sistema GMM (System GMM) y se encuentra evidencia de que el crecimiento ha favorecido de igual manera tanto a pobres como al resto de la poblaciÛn, sin embargo si se analiza esto a partir de 2000, el crecimiento en MÈxico tiende a favorecerm·salosEstadospobresquealos ricos. 
+Õndice 
+I. IntroducciÛnÖ............................................................................................................... 5 
+II. RevisiÛnde la literaturaÖÖÖÖ..ÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ8 III. DatosÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ.13 
+IV. MetodologÌa economÈtrica yespecificaciÛn del modeloÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ.15 
+V. ResultadosÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ..19 V.1Resultados principalesÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ19 
+V.2M·s pruebas de RobustezÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ31 VI. ConclusionesÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ31 VII. BibliografÌaÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ..34 
+ApÈndiceÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ37 
+Crecimiento econÛmico y desigualdad de ingresos en MÈxico 
+I. IntroducciÛn 
+Una pregunta que siempre ha sido clave en economÌa es si el crecimiento econÛmico es benÈfico para los pobres, es decir, si el crecimiento reduce la desigualdad entre los grupos m·s pobres y los grupos m·s ricos. El tema ha sido abordado desde diferentes perspectivas y tambiÈn los resultados han sido diferentes. Algunos estudios se han enfocado encu·l es el efecto del crecimiento econÛmico en la desigualdad, yotros han buscadover sila desigualdadtiene efectos eneldesempeÒoeconÛmico. 
+Dentro del primer grupo de estudios resaltan trabajos como los de Dollar y Kraay (2002), donde los autores buscan encontrar cu·l es el efecto del crecimiento econÛmico en el nivel de ingresos del quintil m·s pobre de la poblaciÛn. Utilizan datos en panel de 92 paÌses y 40 aÒos. Ellos concluyen que el crecimiento en general es bueno para los pobres ya que hay evidencia de que el efecto del crecimiento es el mismopara elquintil m·s pobre yelingreso medio dela poblaciÛn. 
+Por otra parte existen varios estudios que tratan de analizar el efecto de la desigualdad en el desempeÒo econÛmico. Benhabid y Spiegel (1996), Forbes (2000) y Li y Zou (1998) analizan esta relaciÛn utilizando estimaciones en panel con efectos fijos, su argumento para usarlos es el posible sesgo provocado por efectos omitidos especÌficos a cada paÌs. Mientras que tÌpicamente una regresiÛn de MÌnimos Cuadrados Ordinarios (MCO) con datos en corte transversal (cross-section) arroja un efecto negativo entre desigualdad y crecimiento, cuando se usa la metodologÌa de efectos fijos se encuentra una relaciÛn positiva entre cambios en desigualdad y tasas de crecimiento, lo que se interpreta que mientras haya cambios en un solo paÌs (within),incrementosen la desigualdad se traducenen crecimiento econÛmico. 
+En contraste el trabajo de Barro (2000) usa una metodologÌa de mÌnimos cuadrados en tres etapas, que trata los errores especÌficos de cada paÌs como aleatorios; su argumento es que utilizar mÈtodo de diferencias implica errores de mediciÛn si se usa efectos fijos. En los resultados de Barro no hay relaciÛn entre desigualdad y crecimiento. Sin embargo, cuando separa su muestra de datos en paÌses pobres y paÌses ricos, el autor encuentra una relaciÛn positiva entre desigualdad y 
+crecimiento en la muestra de paÌses ricos y una relaciÛn negativa en la muestra de 
+paÌses pobres. 
+Esta diferencia de resultados es explicado en un trabajo m·s reciente de Banerjee y Duflo (2003). Ellos encuentran evidencia de que la relaciÛn entre desigualdady crecimiento no debe ser asumida lineal, despuÈs de mostrar argumentos teÛricos basados en un modelo de economÌa polÌtica de conflictos de dos grupos sociales, muestran con estimaciones no-paramÈtricas que la relaciÛn entre desigualdad y crecimiento tiene una forma de U-invertida, donde cualquier cambio en el nivel de desigualdad (reducciÛn o incremento) es asociado a una disminuciÛn del crecimiento del siguienteperiodo. 
+En este tipo de estudios se busca encontrar relaciones generales para paÌses de todo el mundo, eliminando la posibilidad de que las diferentes condiciones que tienen cada paÌs o regiÛn sean muy diferentes y que estas conclusiones generales no puedan ser aplicadas en regiones muy especÌficas. Siguiendo este argumento existe un grupo de trabajos donde se busca analizar la relaciÛn desigualdad-crecimiento y crecimiento≠desigualdadpara un solo paÌs oregiÛn. 
+El trabajo de Essama-Nssah y Lambert (2006) aporta en este campo una metodologÌa para poder descomponer el crecimiento pro-pobre. Ellos definen crecimiento pro-pobre a todo aquel que tiene un efecto positivo en el n˙mero de pobres que salen de la lÌnea de pobreza compar·ndolo con un crecimiento que llaman ìneutroî. Hacen un ejercicio con su metodologÌa para el caso de Indonesia yapesar de que generalmente otros estudios concluÌan que el crecimiento de ese paÌs es pro-pobre, ellosencuentran lo contrario silo comparan con un crecimiento contra-f·ctico. 
+TambiÈn se han hecho trabajos para AmÈrica Latina. Un ejemplo es el reciente trabajo de Moron y Salgado (2007) donde hacen un an·lisis para Argentina y Per˙ de descomposiciÛn del crecimiento en ìpuroî y ìdistributivoî, donde explican cu·l es el efectoque tiene cada uno en la desigualdad. 
+Un trabajo con un enfoque distinto es el de Borraz y LÛpez-CÛrdova (2007) donde analizan el efecto de la apertura comercial en la desigualdad en MÈxico. Ellos concluyen que los Estados que han tenido mayor interacciÛn con los mercados globales han tenido m·s Èxito enreducir sus nivelesde desigualdad. 
+El objetivo de este trabajo es explicar cu·l es el efecto del crecimiento 
+econÛmico en la desigualdad en MÈxico. Para medir la desigualdad se utiliza el ingreso como variable de bienestar y se compara los efectos que ha tenido el crecimiento del ingreso promedio en el ingreso del quintil m·s pobre de la poblaciÛn utilizando datos en forma de panel y una metodologÌa de Sistema GMM (System GMM). No se puede rechazar la hipÛtesis nula de que el ingreso del quintil m·s pobre crece en la misma proporciÛn que el ingreso medio, adem·s este trabajo muestra que las conclusiones pueden variar de manera importante dependiendo la metodologÌa que se use para hacer la estimaciÛn. La figura 1 y 2 ilustran esta conclusiÛn. En la figura 1 se grafica el logaritmo del ingreso de los pobres contra el logaritmo del ingreso medio para todos los datos (256 observaciones de 32 Estados y 8 aÒos) en forma de pool. La figura muestra una fuerte relaciÛn positiva entre estas dos variables con una pendiente de 1.08, la cual es no significativamente diferente de 1. En la figura 2 se grafica el crecimiento promedio anual para el periodo de estudio (1992-2006), una vez m·s la relaciÛn es positiva pero ahora es de 0.62, esto implica que el crecimiento no es pro-pobre en MÈxico. Sin embargo la figura 1 dice que el nivel de ingresos entre el quintil pobre y la media es proporcional. Posteriormente se muestra que usando Sistema GMM no se puede rechazar que esta pendiente es significativamente distinta de 1. TambiÈn se muestra que estadÌsticamente es m·s confiable utilizar la metodologÌa de Sistema GMMylos resultados son m·s eficientes. 
+
+ y=0.6244x+0.0244 2R=0.3218  
+0.12  
+0.1  
+ 
+0.08  
+ 
+ 
+0.06  
+ 
+0.04  
+ 
+0.02  
+ 
+0 0  0.02 0.04 0.06  0.08  
+
+Figura 1:Ingresodelospobreseingresopromedio(niveles) 
+y=1.0822x-1.3296 
+
+Figura 2:Ingresodelospobrese ingresopromedio(Crecimiento) 
+0.14 
+Ln(Quintilm·s pobre) 
+-0.02 
+0.1 -0.02 Ln(ingresomedio) 
+Una vez comprobado esto, se divide la muestra para hacer diferentes pruebas. Se hacen regresiones para Estados ricos y pobres, y entre dos periodos 1992-98 y 2000≠06; se obtiene la conclusiÛn de que el crecimiento en MÈxico ha sido afavor delquintil m·s pobre sÛlopara elperiodo de2000-2006yparaEstados pobres. 
+Finalmente este trabajo esta dividido de la siguiente manera: en la secciÛn II se 
+hace una revisiÛn de la literatura relacionada con el tema, en la secciÛn III se habla sobre el origen y el trato que se le dio a los datos, en la secciÛn IV se explica la metodologÌa economÈtrica yla especificaciÛn modelo economÈtrico para la estimaciÛn de los efectos del ingreso medio en el ingreso del quintil m·s pobre, en la secciÛn Vse presentanlos resultados;yla secciÛn VI concluye. 
+II. RevisiÛn de la literatura 
+La reducciÛn de la pobreza se ha convertido en un objetivo fundamental para el desarrollo; y debido a la efectividad que tienen ciertas polÌticas sobre la pobreza se ha analizado con detenimiento. El crecimiento econÛmico es una herramienta poderosa para reducir la pobreza, es por eso que paÌses m·s desarrollados tienen menores niveles de pobreza. Es natural que el tema del crecimiento y su relaciÛn con la desigualdad y pobreza haya sido abordado desde diferentes Ûpticas en los ˙ltimos aÒos. 
+Algunos trabajos tratan de encontrar los efectos que ha tenido el crecimiento econÛmico en la desigualdad mientras que otros trabajos analizan cual es el efecto de ladesigualdad en eldesempeÒo de laactividad econÛmica. 
+Dentro de los trabajos que analizan el efecto de la desigualdad en el desempeÒo econÛmico est·n los de Benhabid y Spiegel (1996), Forbes (2000) y Li y Zou (1998), Barro (2000), Banerjee yDuflo (2003), Alesina y Rodrik(1994), Galor, Moav yVollrath(2006)yPerssonyTabellini(1994). 
+Benhabid y Spiegel (1996) analizan esta relaciÛn usando estimaciones en panel con efectos fijos, su argumento para usarlos es el posible sesgo provocado por efectos omitidos especÌficos a cada paÌs. Mientras que tÌpicamente una regresiÛn de MÌnimos Cuadrados Ordinarios (MCO) con datos en corte transversal (cross-section) arroja un efecto negativo entre desigualdad y crecimiento, cuando se utiliza la metodologÌa de efectos fijos se encuentra una relaciÛn positiva entre cambios en desigualdad y tasas de crecimiento, lo que se interpreta que mientras uno observe datos para un solo paÌs (within),incrementosen la desigualdad se traducenen crecimiento econÛmico. 
+Por su parte Barro (2000) usa una metodologÌa de mÌnimos cuadrados en tres etapas que trata los errores especÌficos de cada paÌs como aleatorios, su argumento es 
+que utilizar metodologÌa de diferencias implica errores de mediciÛn si se usa efectos 
+fijos. En los resultados de Barro no se encuentra relaciÛn entre desigualdad y crecimiento. Sin embargo, cuando separa su muestra de datos en paÌses pobres y paÌses ricos, encuentra una relaciÛn positiva entre desigualdad y crecimiento en la muestra de paÌsesricos yuna relaciÛnnegativa en la muestra de paÌses pobres. 
+Esta diferencia de resultados es explicado en un trabajo m·s reciente de Banerjee y Duflo (2003). Ellos encuentran que la relaciÛn entre desigualdad y crecimiento no puede ser asumida lineal. Los autores muestran argumentos teÛricos basados en un modelo de economÌa polÌtica de conflictos de dos grupos sociales; los dos grupos sociales tienen una participaciÛn en la economÌa, en cada periodo la economÌa tiene una oportunidadde crecer, pero este crecimiento esta en funciÛn de la decisiÛn de uno de los grupos que puede negociar con el otro la participaciÛn que tiene cada uno en el producto. Posteriormente los autores muestran con estimaciones no-paramÈtricas que la relaciÛn entre desigualdady crecimiento tiene una forma de U-invertida, donde cualquier cambio en el nivel de desigualdad (reducciÛn oincremento) esasociadoa una disminuciÛn del crecimiento del siguiente periodo. 
+El trabajo de Alesina y Rodrik (1994) tiene un enfoque diferente a los mencionados anteriormente ya que Èste hace Ènfasis en el modelo teÛrico. Ellos construyen un modelo de economÌa polÌtica que explica el crecimiento econÛmico y la participaciÛn de la polÌtica en la distribuciÛn. Su modelo supone una economÌa de crecimiento endÛgeno en el cual el trabajo y el capital son los ˙nicos factores de producciÛn, pero adem·s, elgobierno tiene un rol constructivo en la economÌa porque la iniciativa privada requiere suministro de servicios p˙blicos. El gobierno lleva a cabo polÌticas redistributivas a travÈs de un impuesto al capital; bajo la elecciÛn por la mayorÌa, el gobierno elige una tasa impositiva que es ideal para el votante medio, por tanto, si existe gran inequidad en la distribuciÛn de recursos, menor ser· la tasa de crecimiento de la economÌa. Posteriormente los autores muestran algo de evidencia empÌrica y hacen regresiones con datos de corte transversal. Sus conclusiones son similares a las de Banerjee y Duflo (2003): La inequidad en la distribuciÛn de los recursos est· inversamente relacionado con el subsecuente crecimiento econÛmico: entre mayor sea la desigualdad de la riqueza en la economÌa, mayor ser· la tasa impositiva y menor ser· el crecimiento; polÌticas que maximizan el crecimiento son 
+Ûptimas para gobiernos a los cuales ˙nicamente les interesan los capitalistas; y el 
+comportamiento del crecimiento entre las democracias y las dictaduras no es diferente. 
+Persson y Tabellini (1994) trabajan una lÌnea muy similar al anterior. Los autores desarrollan un modelo de economÌa polÌtica con generaciones traslapadas, los individuos tienen las mismas preferencias, y hay dos equilibrios: equilibrio econÛmico y equilibrio polÌtico; adem·s existe un equilibrio econÛmico-polÌtico, encontrado cuando las decisiones econÛmicas de todos los ciudadanos son Ûptimas, dada la polÌtica, y los mercados se vacÌan. La polÌtica no puede ser rechazada por ninguna alternativa en una votaciÛn por mayorÌa entre los ciudadanos en la secciÛn de la poblaciÛn con derecho a votar. Este modelo implica que una distribuciÛn m·s equitativa del ingreso incrementa el crecimiento y un nivel mayor de habilidades b·sicas promedio incrementa el crecimiento. Los autores tambiÈn presentan evidencia empÌrica, utilizan datos en forma de panel para nueve paÌses desarrollados y datos de corte transversal para paÌses desarrollados y en desarrollo. Los autores encuentran evidencia de que la desigualdad del ingreso es daÒina para el crecimiento, porque inducea polÌticas que desincentivan la inversiÛn. 
+Algunos trabajos analizan esta relaciÛn sÛlo para un paÌs, tal es el caso del trabajo de Galor, Moav y Vollrath (2006). Ellos hacen un estudio para Estados Unidos, donde proponen que la desigualdad en la distribuciÛn de la propiedad de la tierra afecta negativamente la apariciÛn de capital humano, el cualpromueve instituciones y asÌ la transiciÛn de una economÌa agrÌcola a una industrial, contribuyendo a la apariciÛn del proceso de divergencia delingreso per c·pita entre paÌses. Ellos usan un modelo basado en generaciones traslapadas donde se produce un bien homogÈneo que puede ser usado para consumo e inversiÛn, el bien se produce en el sector agrÌcola y manufacturero usando tierra, capital fÌsico y humano. Este modelo contempla 3 clases sociales: terratenientes, capitalistas y trabajadores. El mecanismo adecuado de polÌtica debe contar con el consenso de las tres clases, tomando en cuenta que los terratenientes tienen derecho al veto, en ausencia de consenso la polÌtica no se lleva a cabo y no se invierte en educaciÛn. Por tanto en sociedades donde la tierra es abundante y su distribuciÛn es desigual, una polÌtica de la educaciÛn ineficiente persistir· y la economÌa experimentar· proceso de crecimiento lento asÌ 
+como un menor nivelde producto en ellargo plazo, porque no habr· consenso debido 
+aque nolas polÌticas de educaciÛnno sonÛptimas para los terratenientes. 
+Por otra parte los trabajos que se enfocan a estudiar el efecto del crecimiento en la reducciÛn de la pobreza tambiÈn son numerosos. La mayor parte de estos trabajos buscan analizar si el crecimiento tiene efectos distributivos, entonces, øcu·ndo se puede decir que el crecimiento tiene un patrÛn pro-pobre? En general se puede definir como pro-pobre el crecimiento de una economÌa cuando Èste es favorable para los pobres en alg˙n sentido. El problema es definir exactamente que es ìfavorableî. 
+De acuerdo a Kakwani y Pernia (2000) el crecimiento es pro-pobre sÛlo cuando los ingresos de los pobres crecen m·s r·pido que elde los ricos. Este punto de vista del tÈrmino pro-pobre es el mismo que se toma en este trabajo y en el Dollar y Kraay (2002). Una segunda interpretaciÛn prevaleciente es que el crecimiento es pro-pobre si implica reducciÛn de la pobreza para alg˙n Ìndice de pobreza elegido. Trabajos que han hecho investigaciÛn con esta segunda definiciÛn es el de Ravallion y Chen (2003) quienes utilizan una medida de crecimiento pro-pobre basado en el Ìndice de pobreza de Watts (1968). Dentro de este grupo tambiÈn est·n trabajos como el de Essama≠NssahyLambert(2006). 
+Essama-Nssah y Lambert (2006) analizan si el crecimiento tiene un patrÛn pro-pobre para el caso de Indonesia. Utilizan un modelo para medir la pobreza definida por cambios en elbienestar individual ante cambios en el producto agregado. Definen una lÌnea de pobreza y miden cuantos individuos mejoran su bienestar cuando cambia el ingreso, sin embargo para poder evaluar el crecimiento crean un contra-f·ctico de crecimiento neutro, es decir, como hubiera crecido la economÌa bajo el supuesto de que no es pro-pobre, y luego se compara con el crecimiento supuestamente pro-pobre. Los autores usan evidencia empÌrica para el caso de Indonesia y concluyen que elcrecimiento,enel sentido de su trabajo, no es pro-pobre. 
+Otro trabajo que sigue exactamente la misma lÌnea del anterior es el de Moron ySalgado(2007). Ellos miden pobreza como elasticidades de cambios en la distribuciÛn con respecto al crecimiento econÛmico y lo llaman ìcrecimiento distributivoî; y la elasticidad medida en cambios en el producto la llaman ìcrecimiento puroî. DespuÈs de esto descomponen la elasticidad en sus dos componentes y definen un Ìndice de 
+crecimiento pro-pobre como el cociente de la elasticidad de pobreza sobre la 
+elasticidad de crecimiento. Este Ìndice va de 0 a 1, donde entre m·s cercano a 1 el crecimiento es m·s pro-pobre. Los autores presentan evidencia empÌrica para el caso de Per˙, y concluyen que el crecimiento en general ha tendido a volverse m·s pro-pobre en los ˙ltimos aÒos. 
+En un trabajo reciente Borraz y LÛpez-CÛrdova (2007) buscan ver cu·l el efecto de la apertura comercial en la distribuciÛn del ingreso. Ellos utilizan el coeficiente de Ginni para medir la desigualdad; concluyen que el efecto de la apertura comercial es positivo para la reducciÛn de desigualdad y los Estados m·s abiertos de MÈxico tambiÈn suelen serlos m·s ricos. 
+Finalmente Dollar y Kraay (2002) hacen un trabajo con datos en panel para 92 paÌses y 40 aÒos, utilizan el quintil m·s pobre del ingreso para medir la pobreza y lo comparan con elingreso medio. Si el crecimiento delingreso medio afecta de talforma que el crecimiento del quintil pobre sea mayor, entonces el crecimiento es pro-pobre. Utilizan Sistema GMM para eliminar sesgos por variables omitidas, multicolinealidad y problemas de endogeneidad. Ellos concluyen que el crecimiento en general beneficia de igual manera a los pobres como al resto de la poblaciÛn y que en general las polÌticasque tienen como objetivo la reducciÛnde la pobreza son inefectivas. 
+Este trabajo tiene un enfoque muy similar al trabajo de Dollar y Kraay (2002), tambiÈn se usa la misma medida de pobreza y tambiÈn se utiliza Sistema GMM, para eliminar posibles sesgos de mediciÛn. 
+III. Datos 
+La mayor parte de los datos para este trabajo han sido obtenidos de la Encuesta Nacional de Ingreso Gasto de Hogares (ENIGH) de 1992 a 2006 realizada por el Instituto de Nacional de InformaciÛn y GeografÌa (INEGI) de MÈxico. Con esta base de datos se puede calcular el ingreso medio por Estado, asÌ como el quintil m·s pobre del ingreso y la educaciÛn por hogar. Sin embargo, dado que la encuesta esta diseÒada sÛlo para tener representatividad a nivel federal, rural y urbano, el c·lculo de estas variablestiene un error de mediciÛnconsiderable1. 
+1Ver apÈndice. 
+Desafortunadamente no existe otra fuente de datos en MÈxico que pueda ser 
+utilizada para calcular con mayor precisiÛn el ingreso por Estado y construir un panel para los aÒos recientes;por lo que apesar de estar altanto de los errores de mediciÛn seprocede con este panelde datos. 
+Adem·s de calcular el ingreso medio, el ingreso del quintil m·s pobre y el nivel educativo por hogar, se utilizan datos generados por INEGIyla SecretarÌa de EconomÌa (SE) para calcular la InversiÛn Extranjera Directa (IED) en pesos constantes; tambiÈn se usa informaciÛn del empleo en la industria maquiladora de exportaciÛn, que sirve como variable proxy de la apertura comercial que tiene cada Estado. Finalmente se utiliza el Õndice Nacional de Precios al Consumidor (INPC), calculado por el Banco de MÈxico, para deflactar adecuadamente el ingreso medio, el ingreso del quintil m·s pobre ylaIED2. 
+La variable de ingreso medio se usa como la principal variable explicativa del ingreso del quintil m·s pobre, donde se quiere probar que el efecto es mayor que proporcional, es decir, que un crecimiento del 1% del ingreso medio debe traducirse en un crecimiento mayor a 1% para el quintil m·s pobre para poder concluir que el crecimiento en MÈxico es pro-pobre3. Sin embargo existe el riesgo que esta relaciÛn sea espuria, por lo que se usan variables de control que a si mismo podrÌan explicar el crecimiento delquintil m·spobre delingreso. 
+Las variables de control son educaciÛn, IED y ocupaciÛn en la industria maquiladora de exportaciÛn. Utilizar educaciÛn es justificado por las teorÌas de capital humano, iniciadas por Makiw, Romer y Weil (1992), donde se menciona que el capital 
+2Param·sinformaciÛn deltratamiento quesele dio al c·lculo de cadavariable consultar apÈndice. 3Existen varias formas demedir desigualdad:1)Se puede definir algrupo depobreza como todos aquellos queseencuentran por debajo dela lÌnea de pobreza,tÌpicamentedefinidapor elBanco Mundial como aquellos que tienen ingresos de 1dÛlar diario, como en eltrabajo deAliyElbadawi (2001).Sin embargo el crecimiento entre elingreso promedio ydelpromedio de aquellos que est·n por debajo de la lÌneade pobreza es m·s difÌcilde interpretar.Por ejemplo silamedia delos pobres est· muycercade lalÌneadepobreza,elcrecimiento puedeprovocar que observaciones salgan dela lÌnea dando laerrÛneainterpretaciÛn deque elpromedio de los que est·n por debajo delapobreza cae. 2)Se puedemedir elingreso de los pobres como lo hacen Foster ySzÈkely(2002),usando ìunamedia generalizadaî queasignamayor peso alm·s pobre dela sociedad yesta altamente relacionado con las medidas dedesigualdadtipo Atkinson. Sin embargo KraayyRavallion (2001) muestran que esta metodologÌaes muy sensitiva alos errores demediciÛn, queen estetrabajo son importantes. 3)Se pueden usar coeficientes de Ginni como en eltrabajo deBorraz yLÛpez-CÛrdova(2007), sin embargo presentael mismo problemaque el caso anterior. Dado quela muestrautilizadatiene errores de mediciÛn debido ala representatividaddela muestra,en estetrabajo se optapor seguir lametodologÌa de mediciÛn de Dollar yKraay(2002). 
+humano es un factor de producciÛn que tiene efectos positivos en el producto, entre 
+mayor es el nivel de educaciÛn es plausible creer que los individuos tienen m·s elementos para tener un mejor nivel de vida. Por otra parte, teorÌa de libro de texto sobre el crecimiento econÛmico menciona que la acumulaciÛn de capital fÌsico se traduce en crecimiento econÛmico, es por eso que se usa la variable de IED como una proxy de Èsta. Finalmente, algunos estudios como elde FrankelyRomer (1999)y elde Borraz y LÛpez-CÛrdova (2007), afirman que las economÌas m·s abiertas son m·s propensas a crecer debido a que se incrementan sus niveles de productividad y tienen m·s acceso a los capitales internacionales, por lo que resultarÌa interesante comparar los resultados deeste trabajo con los mencionados anteriormente. 
+En la tabla 1 se reportan las estadÌsticas b·sicas para las dos variables claves de este trabajo una vez que estas fueron deflactadas y divididas entre la poblaciÛn de cada Estado. La tabla 1 se reporta la media y la desviaciÛn est·ndar tanto entre Estadoscomo entre losaÒos de estudio. 
+IV. MetodologÌa economÈtrica y especificaciÛn del modelo 
+Para poder medir cual es el efecto delingreso medio en elquintil m·s pobre, se estima la siguiente regresiÛn del logaritmo de las variables y un grupo adicional de variables de control: 
+(1)...ln q20 =a +a ln y +a X + +e
+i ,t 01 i ,t 2 i,t ii ,t 
+Tabla 1. EstadÌsticas b·sicas 
+Corte Transversal  
+Ingreso medio  Quintil m·s pobre  
+Media  Desv. Est·ndar  Media  Desv. Est·ndar  
+ags  73.21  10.12  ags  26.22  4.10  
+bcn  107.67  13.53  bcn  39.20  6.02  
+bcs  91.02  13.13  bcs  35.29  4.13  
+cam  55.57  7.01  cam  17.36  1.96  
+coa  72.41  9.92  coa  25.98  4.06  
+col  69.21  8.24  col  26.00  4.03  
+chs  37.93  9.36  chs  11.19  2.81  
+chi  72.33  7.36  chi  27.30  3.00  
+df  105.38  12.53  df  34.38  3.22  
+dgo  60.06  7.66  dgo  19.95  1.84  
+gto  64.76  17.14  gto  20.44  1.64  
+gro  44.32  4.79  gro  12.29  2.30  
+hgo  44.29  7.23  hgo  13.26  2.70  
+jal  76.94  11.27  jal  28.56  4.08  
+mex  72.00  21.90  mex  23.54  8.40  
+mic  54.49  12.17  mic  19.10  3.08  
+mor  62.45  5.97  mor  23.32  2.50  
+nay  58.66  16.91  nay  20.12  4.34  
+nln  99.09  13.32  nln  34.86  5.70  
+oax  34.86  6.24  oax  9.01  2.34  
+pue  49.79  8.63  pue  15.06  4.37  
+qro  73.24  21.01  qro  23.73  6.67  
+qtr  75.30  6.42  qtr  28.28  4.31  
+slp  50.64  13.57  slp  15.64  5.90  
+sin  74.38  17.80  sin  21.75  2.93  
+son  80.93  11.44  son  27.66  3.60  
+tab  53.21  10.68  tab  14.91  1.54  
+tam  76.29  11.06  tam  23.81  4.59  
+tla  51.34  18.40  tla  18.64  2.36  
+ver  48.45  7.50  ver  14.33  1.59  
+yuc  54.73  12.73  yuc  18.06  4.64  
+zac  50.52  8.19  zac  17.02  2.95  
+Nacional  65.48  11.35  Nacional  22.07  3.68  
+
+Serie de tiempo 
+Media  Desv. Est·ndar  Media  Desv. Est·ndar  
+1992  68.41  20.28  1992.00  21.92  7.55  
+1994  66.75  24.98  1994.00  21.85  8.49  
+1996  54.76  18.28  1996.00  21.47  6.63  
+1998  60.61  21.70  1998.00  21.10  7.78  
+2000  65.24  22.45  2000.00  21.20  8.91  
+2002  63.76  21.19  2002.00  21.28  9.33  
+2004  69.93  18.80  2004.00  20.37  7.34  
+2006  74.41  18.87  2006.00  20.04  8.09  
+Nacional  65.48  20.82  Nacional  21.16  8.01  
+
+Donde i y t son el Ìndice para indicar el Estado y el tiempo, respectivamente,  +e
+ii ,t 
+es el error compuesto que incluye efectos no observables especÌficos para cada Estado. En la ecuaciÛn (1) estamos interesados en dos coeficientes. El primero de ellos 
+es a1 que mide la elasticidad del ingreso de los pobres con respecto al ingreso medio. 
+Un valor de a1 = 1 nos indicarÌa que el ingreso de los pobres crece de manera proporcional al ingreso medio de la poblaciÛn. Por otra parte si a1>1 implica que el crecimiento es pro-pobre y si a1<1 el crecimiento desfavorece a los pobres. Esto implica que la hipÛtesis que nos interesa comprobar es H0 = a1 =1. El segundo coeficiente que importa analizar es a2y este esta midiendo el impacto de las variables de control en el quintil m·s pobre de la poblaciÛn, que como ya se mencionÛ anteriormente, se esperarÌa que estuvieran correlacionados con el ingreso y por ende con elquintil m·s pobre4. 
+El problema de hacer la regresiÛn de la ecuaciÛn (1) usando MCO es que los par·metros estimados resultar·n sesgados por diferentes razones. Primero, existen como ya se mencionaba antes, errores de mediciÛn que pueden causar sesgos que son difÌciles de identificar (variables omitidas). Segundo, las variables de control de X pueden estar correlacionadas entre sÌ y con el logaritmo del ingreso medio (multicolinealidad). Finalmente, puede haber problemas de endogeneidad, es decir, que el ingreso medio este correlacionado de manera inversa con el quintil m·s pobre del ingreso. Se ha mencionado antes que gran parte de la literatura sobre crecimiento ydesigualdadha mostrado queexiste una relaciÛn de la siguiente manera: 
+(2)...ln y =ﬂ +.y +ﬂ ln q20 +ﬂ Z +. +.
+i ,t 0 i,t -11 i,t -12 i ,t -1 ii,t 
+La literatura ha encontrado diferentes resultados, Benhabid y Spiegel (1996), Forbes (2000) y Li y Zou (1998) han encontrado que ﬂ1 es negativo, Barro (2000) ha encontrado que el efecto es positivo o negativo dependiendo del grado de desarrollo del paÌs; y finalmente Banerjee y Duflo (2003) muestran que la relaciÛn no puede ser lineal. Independientemente de cual sea el efecto, lo que es seguro es que ﬂ1 . 0 y que porlo tanto la ecuaciÛn (1)tambiÈn tiene problemasde endogeneidad. 
+Generalmente para solucionar el problema de las variables no observadas especÌficas para cada Estado i se decide usar primeras diferencias. La dificultad de esta opciÛn es que al usar diferencias estamos reduciendo el n˙mero de observaciones 
+4RecuÈrdeseque elquintil m·s pobre estafuertementecorrelacionado con elingreso medio (ver figura 1). 
+que tenemos disponibles. Siguiendo Arellano y Bover (1995) y Blundell y Bond (1998) 
+porconstrucciÛn eltÈrmino de error esta relacionado con la variable de ingreso medio: 
+(3)...ln q20 - ln q20 =a ln( y - y )+a (X - X )+ (e -e )
+i,ti,t -11 i,ti,t -12 i ,ti ,t -1 i ,ti ,t -1 
+En su metodologÌa Arellano y Bover (1995) encuentran que hacer simples diferencias tiene un sesgo por correlaciÛn de la variable explicativa y el error. Inicialmente este mÈtodo esta diseÒado para panel din·mico, es decir, con un componente autorregresivo: 
+(4)...X =.X + +e
+i,ti,t -1 ii ,t 
+(5)...X - X =. (X - X )+ (e -e )
+i,ti,t -1 i ,t -1 i,t -2 i,ti,t -1 
+La ecuaciÛn (4) y (5) sÛlo nos muestran un ejemplo ilustrativo de un modelo autorregresivo simple y como se ve, se aplica primeras diferencias. Como se puede observar el tÈrmino de error e esta correlacionado con el tÈrmino X . Para el 
+i,t -1 i,t -1 
+caso de la ecuaciÛn (3) esto no es exactamente lo mismo, pero nÛtese que ellogaritmo delquintil m·s pobre forma parte de la misma distribuciÛn del ingreso medio, es decir, se puede decir que lnq20 es un subconjunto ingreso medio.Esto implica que eltÈrmino de error puede estarcorrelacionadoconelingreso medio por construcciÛn. 
+Una soluciÛn a este problema es instrumentar las diferencias con rezagos. En el mÈtodo de Arellano y Bover, el Ûptimo de rezagos a utilizar es 2, porque con esto se elimina el sesgo que se mencionaba anteriormente (nÛtese que X no esta 
+i ,t - 2 
+correlacionado con (e -e )) y adem·s se utiliza la mayor informaciÛn posible. Sin 
+i ,ti ,t -1 
+embargo, puede resultar ˙til instrumentar tambiÈn con 3 rezagos y comparar cu·l de los dos instrumentos nos brinda mayor informaciÛn. 
+A pesar de esto, sigue existiendo el problema que al utilizar diferencias se pierde mucha informaciÛn que puede incluso estar sesgada hacia abajo (Arellano y Bover (1995)), y se usan niveles, los coeficientes no ser·n eficientes debido a problemas de endogeneidad. Una posible soluciÛn que mejora notablemente las estimaciones es utilizar Sistema GMM que combina informaciÛn en niveles con 
+informaciÛn en diferencias. En esta metodologÌa las diferencias son instrumentadas 
+por rezagos y los rezagos son instrumentados por diferencias. Posteriormente se restringe aloscoeficientes de la ecuaciÛn (1)y(3) aque sean iguales para lo que se usa el MÈtodo Generalizado de Momentos (GMM: en inglÈs). Con esta metodologÌa se corrigen tres problemas si se usan los rezagos adecuados: errores de mediciÛn, variablesomitidas yproblemasde endogeneidad. 
+Para asegurar que los coeficientes son consistentes se debe suponer que observaciones pasadas no est·n correlacionadas con el error actual, por lo cual se supone que no existe correlaciÛn serial de los errores. Para probar si este supuesto es adecuado, se usan pruebas de correlaciÛn serial de orden dos. Por otra parte es importante ver si el modelo esta sobre identificado (ya que estamos utilizando GMM). Para tener instrumentos m·s adecuados, estos no deben de estar correlacionados con el tÈrmino de error. Para probar esto se usa la prueba de sobre identificaciÛn de Sargan, la cual ayuda a elegir los mejores instrumentos para la estimaciÛn y por lo tanto aelegirel n˙mero derezagosÛptimos que debemos utilizar. 
+Finalmente las variables de control entran en logaritmos para el caso de educaciÛn y ocupaciÛn en la industria maquiladora de exportaciÛn para hacer la interpretaciÛn de los coeficientes m·s f·cil. La IED no puede ser transformada a logaritmos debido a que tiene valores negativos para algunos Estados en ciertos aÒos. Las variables de control pueden estar correlacionadas entre sÌ o con los tÈrminos de error,por lo quees m·s plausibletambiÈn instrumentarlas en elSistema GMM. 
+V. Resultados 
+V.1Resultados principales 
+Se inicia analizando los resultados para el periodo de 1992-2006. En la tabla 2 se muestra la regresiÛn del ingreso del quintil m·s pobre sobre el ingreso medio y las variables de control. Los coeficientes con negritas son significativos al menos al10%de confianza (algunos son al 95 y 99%). Con letras en azul y en cursiva se muestran los errores est·ndar. Se presentan varias especificaciones para los modelos en diferencias y en sistema: con y sin variables dummies, con 2 y 3 rezagos para instrumentar las diferencias (con niveles)y siempre se instrumenta con 1y2 rezagos (respectivamente) a los niveles (con diferencias, para el caso del sistema GMM), excepto para los aÒos 
+noventas donde se usa siempre sÛlo 1 rezago, ya que existe un vacÌo de informaciÛn 
+m·s grande que puede causar sesgos hacia abajo. Adem·s se muestra la prueba de Sargan para analizar la fuerza de los instrumentos y la prueba de correlaciÛn serial de orden2. 
+Los resultados se presentan en la tabla 2. La columna (1) muestra los resultados en niveles. NÛtese que el logaritmo del ingreso medio es significativo en esta tabla incluso es significativamente distinto de 1, por lo que bajo este mÈtodo podrÌamos asegurar que el crecimiento en MÈxico fue perjudicial para los pobres. La variable educaciÛn y ocupaciÛn en maquiladoras de exportaciÛn (OME), son significativas y tienen el signo esperado; mayor educaciÛn se traduce en mayores oportunidades para elquintil m·s pobre, asimismo, mayor apertura comercial medida con la variable OME, implica mayor crecimiento del ingreso de los pobres. A lo largo de las diferentes especificacionesestasvariablestienen el mismo signocuando son significativas. 
+De la columna (2)-(5) se presenta el modelo en diferencias que ha sido instrumentado por rezagos. Para probar la robustez de los resultados se agregan dummies de tiempo y se usan 2 y 3 rezagos. Al cambiar el n˙mero de rezagos vemos que los resultados no se alteran mucho, sin embargo al utilizar dummies de tiempo el coeficiente delingreso medio reduce su impacto en elquintilpobre. En todos los casos es estadÌsticamente diferente de 1y siempre seconcluye que elcrecimiento en MÈxico hace m·s grande la brecha entre el ingreso medio y el quintil m·s pobre de la poblaciÛn. 
+Tabla 2. RegresiÛn para el periodo 1992-2006 Variable dependiente: quintil m·s pobre del ingreso corriente 
+niveles diferencias 
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.6150421  0.4896438  0.6895784  0.3525689  0.6749163  
+errorest·ndar  0.0447674  0.1350661  0.0936658  0.1346743  0.0930686  
+EducaciÛn  0.0157431  3.63E-02  0.0147415  0.0493705  0.0155908  
+errorest·ndar  0.0034019  0.0265611  0.0029618  0.0328377  0.0032346  
+IED  -4.65E-06  -1.05E-05  -9.98E-06  -1.12E-05  -1.16E-05  
+errorest·ndar  6.54E-06  5.53E-06  4.48E-06  6.88E-06  6.97E-06  
+OME  0.012678  0.0056971  0.0131189  2.45E-06  0.012929  
+errorest·ndar  0.0039817  0.0058182  0.0042728  0.0078529  0.0046861  
+Dummies detiempo  No  Si  No  Si  No  
+Numero Lags:  .  2  2  3  3  
+p-value sig = 1  0  0.0002  0.0009  0  0.0005  
+TestAR(2)  .  0.21  0.858  0.098  0.837  
+SarganTest  .  0.65  0.613  0.75  0.313  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  1.053455  1.05424  1.048311  1.054777  
+errorest·ndar  0.0501401  0.0407917  0.058698  0.0464913  
+EducaciÛn  0.0327802  0.0045854  0.0462677  0.0051105  
+errorest·ndar  0.0222863  0.0034371  0.0259974  0.0036158  
+IED  -7.18E-06  -3.94E-06  -9.79E-06  -4.87E-06  
+errorest·ndar  5.34E-06  4.87E-06  5.31E-06  4.79E-06  
+OME  0.0067076  4.98E-03  0.0055768  0.0035058  
+errorest·ndar  0.0046578  0.0031689  0.0048299  0.0027827  
+Dummies detiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig = 1  0.2864  0.1836  0.4105  0.2387  
+TestAR(2)  0.852  0.993  0.978  0.991  
+SarganTest  0.791  0.773  0.544  0.468  
+
+Notas: 
+Sereporta p-valuepara eltest de Sargan,AR(2)y H0=1 Seindicaeln˙merodelags queseusÛdeinstrumento 
+La prueba de Sargan de sobreidentificaciÛn es pasada en todos los casos (donde la hipÛtesis nula es que los instrumentos son adecuados y no presentan correlaciÛn con los errores). TambiÈn la prueba de correlaciÛn serialde segundo orden es pasada en la mayorÌa deloscasos(excepto enla columna (4)). 
+A pesar de que las estimaciones con diferencias y en niveles nos indican que el crecimiento en MÈxico es no favorable para el quintil m·s pobre, se sabe que si usamos Sistema GMM los resultados son m·s eficientes y se eliminan tres diferentes fuentes de posible sesgo, por lo que estos resultados deben de ser m·s plausibles que 
+los anteriores. De la columna (6)-(9) se reportan los resultados usando Sistema GMM, 
+y de igual forma que con el mÈtodo de diferencias, para mostrar la robustez en los resultados se muestran especificaciones con variables dummy de tiempo y se instrumenta con 2 rezagos y con 3. Los resultados del Sistema son mucho m·s robustos que los resultados en diferencias como era de esperarse. Generalmente el coeficiente del ingreso medio es significativamente distinto de cero y mayor a 1, pero no podemos rechazar la hipÛtesis nula de que es diferente de 1. Las dem·s variables generalmente no son significativas excepto en la columna (8), donde la educaciÛn tiene el signo esperando, la IED es significativa y tiene signo negativo. Esta tabla nos indica que el crecimiento en MÈxico ha sido equiproporcional entre el ingreso medio de la poblaciÛn y el quintil m·s pobre, por tanto, el crecimiento beneficia de la misma manera tanto a los pobres como al resto de la poblaciÛn, dem·s existe una dÈbil evidenciade que la educaciÛntiende abeneficiar alquintilpobre. 
+ResultarÌa interesante analizar si el crecimiento en MÈxico ha tenido el mismo efecto en el ingreso de los pobres para todos los aÒos y si este ha sido el mismo tanto como para los Estados ricos como para los Estados pobres. Borraz y LÛpez-CÛrdova (2007) muestran que los Estados m·s abiertos han sido los que han tenido m·s Èxito en disminuir la desigualdad, coincide que los Estados m·s abiertos suelen ser los m·s ricos, por lo que serÌa interesante analizar el efecto en los Estados ricos y en los Estados pobres especÌficamente. 
+En la tabla 3se muestran los mismos resultados que en la tabla 2, pero se usa la muestra de Estados pobres. Las pruebas y las especificaciones son iguales a la tabla anterior. NÛtese que los resultados no cambian mucho, las variables significativas suelen ser las mismas y tambiÈn suelen tener el mismo signo. TambiÈn el ingreso medio es significativamente diferente de 1 para todos los casos excepto para las columnas de la (6)-(9) que es donde se utiliza la metodologÌa del Sistema. Quiz· la ˙nica diferencia relevante sea que los coeficientes en general tienden a ser m·s pequeÒos que cuando se usa toda la muestra. 
+La tabla 4muestra lo mismos resultados que la tabla anterior pero para Estados ricos. Los resultados son bastante robustos y las conclusiones de esta tabla son similares a la anterior, lo ˙nico notable es que los coeficientes del ingreso medio son en general m·s grandes que en la tabla anterior. Esto nos da una pequeÒa evidencia queentre 1992y2006 elcrecimiento enMÈxico beneficio m·s alosEstados ricos. 
+Tabla 3. RegresiÛn para el periodo 1992-2006, sÛlo Estados pobres Variable dependiente: quintil m·s pobre del ingreso corriente 
+niveles diferencias 
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.5932874  0.4454323  0.5957313  0.4276824  0.6058386  
+errorest·ndar  0.0645139  0.1149084  0.1183687  0.114922  0.1091847  
+EducaciÛn  0.012776  0.0535897  0.0141481  0.0617834  0.0157316  
+errorest·ndar  0.0053468  0.0350079  0.0044671  0.0260008  0.0043784  
+IED  6.55E-07  -1.31E-05  -0.0000116  -3.71E-05  -3.25E-05  
+errorest·ndar  0.0000197  0.0000105  0.0000136  0.0000169  0.0000202  
+OME  0.0156911  0.0024513  0.0148303  0.0004889  0.0171628  
+errorest·ndar  0.0052228  0.0057769  0.0055438  0.0087752  0.0071638  
+Dummies de tiempo  No  Si  No  Si  No  
+Numero Lags:  .  2  2  3  3  
+p-value sig= 1  0  0  0.0006  0  0.0003  
+TestAR(2)  .  0.552  0.247  0.309  0.272  
+SarganTest  .  0.171  0.177  0.236  0.159  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  0.8641499  0.8998838  0.8970334  0.9342946  
+errorest·ndar  0.0898063  0.0866761  0.085399  0.0716169  
+EducaciÛn  0.0630383  0.0001284  0.0562662  -0.0009406  
+errorest·ndar  0.0380607  0.004445  0.0355087  0.0046461  
+IED  0.0000264  0.0000255  0.0000215  0.0000195  
+errorest·ndar  0.0000135  0.0000141  0.0000121  0.0000111  
+OME  -0.0019396  0.0008019  -0.0020293  0.0014404  
+errorest·ndar  0.0065122  0.0052737  0.0066114  0.0049988  
+Dummies de tiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig= 1  0.1304  0.2481  0.2279  0.3589  
+TestAR(2)  0.385  0.121  0.321  0.121  
+SarganTest  0.001  0.012  0.004  0.023  
+
+Notas: 
+Se reporta p-value para eltest de Sargan,AR(2)y H0=1 Se indicael n˙merode lags que se usÛde instrumento 
+Estos resultados van acorde a los resultados que encontrÛ Borraz y LÛpez-CÛrdova (2007), sin embargo en este trabajo, esos resultados aplican sÛlo para el periodo completo de 1992-2006 y son resultados muy dÈbiles, porque tanto para Estados 
+pobres como para Estados ricos, elpar·metro delingreso medio no se puede decir que esestadÌsticamente diferente de 1. 
+Tabla 4. RegresiÛn para el periodo 1992-2006, sÛlo Estados ricos Variable dependiente: quintil m·s pobre del ingreso corriente 
+niveles diferencias 
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.6607216  0.5484772  0.6737122  0.4047858  0.6878705  
+errorest·ndar  0.0650202  0.1462696  0.1129204  0.1369064  0.089011  
+EducaciÛn  0.0202406  -0.0101818  0.0202364  0.012413  0.0208786  
+errorest·ndar  0.0046105  0.0210076  0.0038294  0.0345945  0.003894  
+IED  -7.37E-06  -2.67E-06  -8.37E-06  -3.55E-06  -9.89E-06  
+errorest·ndar  6.88E-06  6.50E-06  4.27E-06  7.86E-06  4.21E-06  
+OME  0.0052855  0.0031944  0.0054109  -0.0021313  0.0038262  
+errorest·ndar  0.0065383  0.0075837  0.0033408  0.0076192  0.0035352  
+Dummies detiempo  No  Si  No  Si  No  
+Numero Lags:  .  2  2  3  3  
+p-value sig= 1  0  0.002  0.0039  0  0.0005  
+TestAR(2)  .  0.218  0.102  0.221  0.103  
+SarganTest  .  0.187  0.256  0.649  0.471  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  1.001028  0.9728723  1.0532  1.012887  
+errorest·ndar  0.0695894  0.0544768  0.0850339  0.0549508  
+EducaciÛn  -0.0282938  0.0123554  -0.0329157  0.0133816  
+errorest·ndar  0.0204486  0.0041417  0.0176574  0.0044724  
+IED  2.51E-06  -2.79E-06  -1.10E-06  -6.30E-06  
+errorest·ndar  6.46E-06  5.58E-06  6.50E-06  5.14E-06  
+OME  0.0089871  0.0061876  0.0043693  0.0022538  
+errorest·ndar  0.0060319  0.004779  0.0062033  0.0044404  
+Dummies detiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig= 1  0.9882  0.6185  0.5316  0.8146  
+TestAR(2)  0.378  0.143  0.367  0.158  
+SarganTest  0.058  0.092  0.495  0.454  
+
+
+
+Notas: 
+Sereporta p-valuepara eltest deSargan,AR(2)y H0=1 Seindicaeln˙merodelags quese usÛde instrumento 
+AcontinuaciÛn se quiere probar si el efecto fue diferente dependiendo del periodo. Se sabe que en los aÒos noventas MÈxico pasÛ por una aguda crisis econÛmica en 1995, que pudo tener efectos adversos para las diferentes clases sociales, adem·s tambiÈn a partir de 2000 se ha mencionado en diferentes estudios que la pobreza ha disminuido, loque se debeintuir que el crecimiento seha vueltom·s pro-pobre. 
+Para probar esto se divide la muestra en dos periodos, 1992-1998y2000-2006. La tabla 5muestra los resultados para 1992-98 de las mismas tres especificaciones con susrespectivas pruebas derobustez. 
+Tabla 5. RegresiÛn para el periodo 1992-1998 Variable dependiente: quintil m·s pobre del ingreso corriente 
+niveles diferencias 
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.728069  0.3412751  0.828718  0.3609385  0.5322783  
+errorest·ndar  0.0752143  0.2803076  0.1109041  0.1210299  0.1039838  
+EducaciÛn  -0.1463814  -0.2983602  -0.2684582  -0.0129062  -0.1171655  
+errorest·ndar  0.1279705  0.4892564  0.1495606  0.2556126  0.1334606  
+IED  -1.49E-05  -6.46E-05  -0.0000755  -1.01E-05  -0.0000936  
+errorest·ndar  0.0000401  0.0001196  0.0001012  7.06E-05  0.0000832  
+OME  0.012959  0.0125168  0.0145536  -0.0081247  -0.0042136  
+errorest·ndar  0.0131917  0.0579585  0.0428932  0.0377426  0.0351786  
+Dummies detiempo  No  Si  No  Si  No  
+Numero Lags:  .  2  2  3  3  
+p-value sig= 1  0.0005  0.0188  0.1225  0  0  
+TestAR(2)  .  0.438  0.218  0.448  0.327  
+SarganTest  .  0.991  0.909  0.054  0.018  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  0.9067809  0.9988756  0.8091622  0.9282748  
+errorest·ndar  0.2156519  0.1027164  0.0957032  0.0701251  
+EducaciÛn  -0.1862438  -0.3213571  0.217239  -0.0736324  
+errorest·ndar  0.4369353  0.173368  0.2164181  0.1174119  
+IED  0.0000403  0.0000294  0.0000406  0.0000335  
+errorest·ndar  0.000035  0.000032  0.0000271  0.0000229  
+OME  -0.0061994  -0.0066892  0.0036115  -0.0001967  
+errorest·ndar  0.0142373  0.0116971  0.0097544  0.0083791  
+Dummies detiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig= 1  0.6655  0.9913  0.138  0.3064  
+TestAR(2)  0.214  0.228  0  0.129  
+SarganTest  0.027  0.088  0.298  0  
+
+Notas: 
+Sereporta p-valuepara eltest deSargan,AR(2)y H0=1 Seindicael n˙merodelags que seusÛdeinstrumento 
+Los resultados varÌan un poco relacionado con los de la tabla 2. En este caso existe una mayor varianza entre los coeficientes del ingreso medio, sobre todo en la especificaciÛn en diferencias, donde las variables dummies tienen un poder explicativo m·s grande y reducen el significativamente el valor del coeficiente del ingreso medio. TambiÈn es importante seÒalar que esta parte de la muestra es bastante m·s inestable, eso se refleja en que varias especificaciones no pasan la prueba de Sargan. Sin embargo, a pesar de los cambios que se dan de manera importante en diferencias, en la especificaciÛn de Sistema continua siendo robusta, aunque se observan 
+coeficientes menores a1, estos no son significativamente distintos de 1, con excepciÛn de la columna (8). 
+La tabla 6nos muestra los mismo que la tabla anterior sÛlo que para el periodo de 2000-2006. 
+Tabla 6. RegresiÛn para el periodo 2000-2006 Variable dependiente: quintil m·s pobre del ingreso corriente 
+niveles diferencias 
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.5326732  0.5179478  0.6389453  0.3950699  0.5904685  
+errorest·ndar  0.0721273  0.1578502  0.1236692  0.1454492  0.1215231  
+EducaciÛn  0.0327487  0.0378792  0.0247433  0.0550567  0.0265463  
+errorest·ndar  0.030116  0.0304809  0.0051342  0.0359965  0.0057709  
+IED  3.05E-06  -8.18E-06  -5.62E-06  -9.35E-06  -5.51E-06  
+errorest·ndar  0.0000121  6.34E-06  5.61E-06  6.25E-06  5.48E-06  
+OME  0.0167786  0.0043471  0.0147964  0.0004384  0.0153396  
+errorest·ndar  0.00491  0.0066617  0.0053982  0.0072041  0.0053648  
+Dummies detiempo  No  Si  No  Si  No  
+Numero Lags:  .  2  2  3  3  
+p-value sig= 1  0  0.0023  0.0035  0  0.0008  
+TestAR(2)  .  0.721  0.0035  0.788  0.157  
+SarganTest  .  0.399  0.682  0.518  0.548  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  1.052293  1.04854  1.063816  1.066732  
+errorest·ndar  0.0741833  0.0629768  0.0635283  0.0515488  
+EducaciÛn  0.0280735  0.0129011  0.0371453  0.0133146  
+errorest·ndar  0.022269  0.0051299  0.0240431  0.0051335  
+IED  -6.25E-06  -4.10E-06  -0.0000105  -7.15E-06  
+errorest·ndar  5.93E-06  6.07E-06  4.35E-06  4.64E-06  
+OME  0.0055576  0.004128  0.0028766  0.0019052  
+errorest·ndar  0.0052557  0.0032489  0.0057732  0.0029666  
+Dummies detiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig= 1  0.4809  0.4408  0.3151  0.1955  
+TestAR(2)  0.238  0.218  0.293  0.227  
+SarganTest  0.956  0.971  0.937  0.954  
+
+
+
+Notas: 
+Sereporta p-value para eltest de Sargan,AR(2)y H0=1 Seindicaeln˙merodelags queseusÛdeinstrumento 
+En la tabla 6 se muestran resultados bastante similares a los de la tabla anterior, nuevamente los resultados tanto en niveles como en diferencias son significativos, y 
+estos nos indicarÌan que el crecimiento de entre 2000y2006fue desfavorable para los 
+m·s pobres, sin embargo la metodologÌa de Sistema nos arroja otros resultados. No podemos decir que los coeficientes son significativamente diferentes de 1; aligual que como ocurriÛ en el an·lisis de los Estados pobres vs. ricos, se tiene poca evidencia para concluir que el crecimiento fue diferente entre los dos periodos y se muestra dÈbilmente que el crecimiento fue m·s pro-pobre en el segundo periodo. 
+A partir de estos resultados se analiza de manera m·s especifica cual fue el efecto en los Estados pobres y ricos, pero dividiendo la muestra nuevamente en dos. Para este caso sÛlose reporta la especificaciÛn deSistema que esla que nos interesa. 
+La tabla 7y 8 nos muestran estos resultados. La tabla 7 nos muestra que en los aÒos noventas el crecimiento para Estados ricos y pobres es similar, y se no encuentra evidencia de que el crecimiento favorecÌa la reducciÛn de la desigualdad en los Estados m·s ricos, lo cual contradice a Borraz y LÛpez-CÛrdova (2007), incluso una especificaciÛn del sistema es significativamente menor a uno para Estados ricos. Sin embargo el resultado no es tan confiable porque no sabemos cuanto de Èste se debe a heteroscedasticidad de los instrumentos (ver prueba de Sargan). Sin embargo la tabla 8 nos muestra que despuÈs del aÒo 2000 el crecimiento ha dejado de favorecer a los Estados ricos, incluso se encuentra coeficientes menores a 1 y significativos. Para los Estados pobres no se puede decir que el crecimiento sea significativamente diferente de 1, pero es evidente que el crecimiento ha favorecido m·s a los Estados pobres (ya que por lo menos el crecimiento es equiproporcional) que a los Estados ricos. El resultado de Borraz y LÛpez-CÛrdova (2007) no es sorprendente, ya que ellos trabajan con una muestra de 1990-2002,dondees posible que capturen un efecto diferente. 
+Tabla 7. RegresiÛn para el periodo 1992-1998, pobres-ricos Variable dependiente: quintil m·s pobre del ingreso corriente 
+Ricos 
+[1]  [2]  [3]  [4]  
+Ingresomedio  0.6531224  0.9967775  0.8213221  0.9233509  
+errorest·ndar  0.2188743  0.102198  0.1021384  0.0793881  
+EducaciÛn  0.6467733  -0.231348  0.312728  0.0184076  
+errorest·ndar  0.5093741  0.2361536  0.2049912  0.1231388  
+IED  2.95E-05  2.99E-05  3.27E-05  2.14E-05  
+errorest·ndar  3.25E-05  3.13E-05  2.49E-05  2.30E-05  
+OME  0.0143937  0.0113861  0.0102701  0.0047095  
+errorest·ndar  0.0147132  0.0097324  0.0107229  0.0096882  
+Dummies detiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig = 1  0.113  0.9748  0.0802  0.3343  
+TestAR(2)  0.669  0.488  0.602  0.39  
+SarganTest  0  0.003  0  0  
+Pobres  
+[5]  [6]  [7]  [8]  
+Ingresomedio  0.8236399  0.8754264  0.8414007  0.8770612  
+errorest·ndar  0.1636587  0.1030769  0.1138985  0.0902343  
+EducaciÛn  -0.0970197  -0.1672804  0.2154666  0.1011971  
+errorest·ndar  0.3290594  0.2115914  0.2406301  0.1804424  
+IED  0.000221  0.0001862  0.0001122  0.0000852  
+errorest·ndar  0.0002477  0.0001889  0.0001092  0.0001082  
+OME  -0.008233  -0.007514  0.0029469  0.0019401  
+errorest·ndar  0.0111462  0.0095666  0.0060927  0.0060681  
+Dummies detiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig = 1  0.2812  0.2268  0.1638  0.1731  
+TestAR(2)  0.201  0.187  0.155  0.173  
+SarganTest  0.001  0.003  0  0  
+
+
+Notas: 
+Se reporta p-value para eltest de Sargan,AR(2) y H0=1 Se indicaeln˙merode lags que se usÛde instrumento 
+Tabla 8. RegresiÛn para el periodo 2000-2006, pobres-ricos Variable dependiente: quintil m·s pobre del ingreso corriente 
+Ricos 
+[1]  [2]  [3]  [4]  
+Ingreso medio  0.8402758  0.8321796  0.7736314  0.7727598  
+error est·ndar  0.1237278  0.1070282  0.1120453  0.0959646  
+EducaciÛn  0.0204896  0.0219616  0.0295154  0.0234574  
+error est·ndar  0.0407417  0.0068394  0.0417385  0.0070615  
+IED  2.46E-06  3.17E-06  3.56E-06  4.83E-06  
+error est·ndar  8.23E-06  9.04E-06  7.75E-06  8.34E-06  
+OME  0.0043955  0.0065477  0.0059912  0.0077557  
+error est·ndar  0.0133124  0.0065866  0.0139843  0.0066604  
+Dummiesde tiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig = 1  0.1967  0.1169  0.0433  0.0179  
+Test AR(2)  0.266  0.141  0.266  0.129  
+SarganTest  0.03  0.096  0.062  0.166  
+Pobres  
+[5]  [6]  [7]  [8]  
+Ingreso medio  1.043251  1.027397  1.032905  1.024079  
+error est·ndar  0.0989343  0.0698075  0.0275357  0.0689807  
+EducaciÛn  0.0281509  0.0109851  0.0275357  0.0111504  
+error est·ndar  0.0339084  0.0068573  0.0331768  0.0067856  
+IED  -0.0000666  -0.0000662  -0.0000667  -0.0000676  
+error est·ndar  0.0000532  0.0000549  0.0000509  0.0000537  
+OME  0.0066195  0.0053901  0.0045928  0.0038907  
+error est·ndar  0.0048885  0.0037575  0.0052598  0.0037744  
+Dummiesde tiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig = 1  0.662  0.6947  0.7409  0.727  
+Test AR(2)  0.503  0.506  0.535  0.513  
+SarganTest  0.432  0.576  0.331  0.498  
+
+
+Notas: 
+Se reportap-value para eltestde Sargan,AR(2)yH0=1 Se indica el n˙mero de lags que se usÛde instrumento 
+V.2M·s pruebas de Robustez 
+Es com˙n encontrar en la literatura diferentes formas de medir el bienestar y la desigualdad. Muchos trabajos han sido elaborados tomando en cuenta el gasto en vez del ingreso ya que captura mejor el bienestar de un hogar, sobre en todo en paÌses donde se tienen accesoalcrÈdito ysu gasto esmucho mayor asu ingreso. 
+Para probar mayor robustez de los resultados se reporta las mismas especificaciones que en la tabla 2 pero esta vez se usa como variable dependiente el gasto corriente. La tabla 9 muestra los mismos resultados que la tabla 2 y es notable que el resultado sea bastante robusto, ya que los coeficientes tienen casi el mismo valor yse concluye lo mismo que con el ingreso corriente: el crecimiento en MÈxico no ha sido diferente para pobres y el ingreso medio. Esto tendrÌa la implicaciÛn que en MÈxico no existe un marco institucional fuerte que facilite el crÈdito al grupo m·s pobre de la poblaciÛn. 
+Se puede usar otra forma de medir elingreso yel gasto, es usar sÛlo el ingreso≠gasto monetario, es decir, tomar en cuenta sÛlo los ingresos que no dependan del autoconsumo o transferencias en especie del gobierno. Si usamos estas variables los resultados hacen la conclusiÛn m·s fuerte. Se encuentra un crecimiento pro-pobre para toda la muestra usando sistema ysipartimos la muestra en los dos periodos, para ambos casos (gasto monetario e ingreso monetario) son significativamente mayores a 1pero sÛlo para el periodo de 2000-2006, y este efecto sigue siendo m·s fuerte en los estados pobres (ver apÈndice sereporta pruebas para toda la muestra, tabla A1yA2). 
+VI. Conclusiones 
+Se ha mostrado evidencia de que el crecimiento econÛmico en MÈxico ha sido benÈfico para toda la sociedad, es decir, beneficia de igual manera ala sociedady alos pobres. Cuando se analiza todo el periodo de 1992-2006 no se puede rechazar la hipÛtesis nula de que el coeficiente del ingreso medio es diferente de 1. Sin embargo se utiliza la metodologÌa incorrecta, como panel en niveles o panel en diferencias, existen sesgos que nos llevan a resultados incorrectos, como concluir que el crecimiento en MÈxico esdesfavorable para los pobres. 
+Por otra parte, una vez analizada la muestra a m·s profundidad. Cuando se divide la muestra en dos periodos, se encuentra evidencia dÈbil de que en los aÒos noventas el crecimiento beneficiaba m·s a los Estados m·s ricos del paÌs y que el crecimiento fue menos pro-pobre que en el periodo de 2000-2006. Sin embargo, esta evidenciano es suficientemente fuerte. 
+Tabla 9. RegresiÛn para el periodo 1992-2006 Variable dependiente: quintil m·s pobre del gasto corriente 
+niveles diferencias 
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.6217622  0.6907224  0.7955822  0.618255  0.7995774  
+errorest·ndar  0.0402881  0.1167056  0.0758565  0.1288644  0.0672054  
+EducaciÛn  0.0070071  0.0381838  0.0033515  0.0518707  0.0040331  
+errorest·ndar  0.0029511  0.0254728  0.0026715  0.0286812  0.0028798  
+IED  -1.95E-06  -0.0000102  -7.49E-06  -0.0000139  -0.0000108  
+errorest·ndar  5.58E-06  4.65E-06  3.23E-06  4.55E-06  4.36E-06  
+OME  0.0096109  0.0021078  0.0067989  -0.0032007  0.0056867  
+errorest·ndar  0.0034139  0.0053228  0.0029244  0.0067708  0.0036047  
+Dummies de tiempo  No  Si  No  Si  No  
+Numero Lags:  .  2  2  3  3  
+p-value sig= 1  0  0.008  0.007  0.0031  0.0029  
+TestAR(2)  .  0.84  0.56  0.659  0.564  
+SarganTest  .  0.895  0.94  0.847  0.861  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  1.045458  1.042742  1.042326  1.048764  
+errorest·ndar  0.0426001  0.0353173  0.0442054  0.0334242  
+EducaciÛn  0.0186296  -0.0043532  0.0265826  -0.0033579  
+errorest·ndar  0.0201876  0.0030601  0.0212853  0.003402  
+IED  -3.78E-06  -7.85E-07  -7.08E-06  -3.37E-06  
+errorest·ndar  4.61E-06  3.98E-06  4.54E-06  3.74E-06  
+OME  0.0050077  0.0035901  0.0002865  -0.0003492  
+errorest·ndar  0.0047261  0.0034705  0.0054654  0.0036611  
+Dummies de tiempo  Si  No  Si  No  
+Numero Lags:  2  2  3  3  
+p-value sig= 1  0.2859  0.2262  0.3383  0.1446  
+TestAR(2)  0.324  0.56  0.428  0.573  
+SarganTest  0.736  0.715  0.903  0.875  
+
+Notas: 
+Se reporta p-valuepara eltest deSargan,AR(2)y H0=1 Se indicaeln˙merode lags que seusÛdeinstrumento 
+Cuando se analiza el periodo de 2000-2006 se encuentra que el crecimiento ha sido desfavorable para los pobres en los Estados m·s ricos, mientras que en los Estados pobres el crecimiento ha beneficiado a toda la sociedad por igual. Las variables de control no han ayudado mucho a determinar que es lo que hizo esta diferencia. 
+Generalmente se encuentra que la educaciÛn ha sido significativa y positiva en varias 
+de las especificaciones de Sistema, lo que quiere decir que entre m·s aÒos de estudio mayor es el beneficio que obtiene el quintil m·s pobre de la sociedad, a˙n en presencia delingreso medio. 
+VII. BibliografÌa 
+Alesina Alesina y Dani Rodrik (1994) ìDistributive Politics and Economic Growthî Journal ofEconomic Growth, 7(3)195-225. 
+Ali, Abdel Gadir e Ibrahim Elbadawi (2001) ìGrowth Could Be Good for the Poorî 
+Manuscript, ArabPlanningInstitute andThe WorldBank. 
+Arellano, M. y O. Bover (1995). ìAnother Look at the Instrumental-Variable Estimation ofError-ComponentsModelsî JournalofEconometrics. 68:29-52 
+Banerjee, Abhijit, y Esther Duflo (2003) ìInequality and Growth: What Can the Data Say?îJournal ofEconomicGrowth, 8(3),267-299. 
+Barro, Robert J. (2000) ìInequality and growth in a panel of countriesî. Journal of Economic Growth 5(1),5-32. 
+Benhabib, Jess y Mark M. Spiegel (1998) ìSocial conflict and growthî. Journal of Economic Growth 1(1),143-158. 
+Blundell, RichardyStephen Bond(1998) ìInitialConditions andMomentRestrictions in Dynamic PanelData Modelsî. Journal ofEconometrics, 87:115-143. 
+Dollar, David y Aart Kraay (2002). ìGrowth is Good for the Poor?î Journal of Economic Growth,7(3)195ñ225. 
+Essama-Nssah, B. y Peter J. Lambert (2006) ìMeasuring the Pro-Poorness of Income Growth Within and Elasticity Frameworkî World Bank Poverty Reduction Group and University ofOregon. 
+Forbes, Kristin J. (2000) ìA reassessment of the relationship between inequality and growthî American Economic Review 90(4),869-887. 
+Foster, James A. y Miguel SzÈkely (2001). ìIs Economic Growth Good for the Poor? 
+Tracking Low Incomes Using General Meansî Interamerican Development Bank. ResearchDepartmentWorkingPaper N∞453 
+Frankel,Jeffrey,andDavidRomer (1999),"DoesTrade Cause Growth?" American Economic Review, 89(3),379-399. 
+Galor, Oded; Omer Moav y D. Vollrath (2006); ìInequality in Land Ownership, the Emergence of Human Capital. Promoting Institutions, and the Great Divergenceî Brown UniversityWorkingPaper 2006-14. 
+Kakwani, N.C. and E.M. Pernia (2000). What is pro-poor growth? Asian Development Review, vol. 18,pp. 1-16. 
+Kraay,AartyMartin Ravallion (2001). ìMeasurementError, Aggregate Growth,andthe Distribution-Corrected Mean: A Comment on Foster-SzÈkelyî. Manuscript, The World Bank. 
+Lopez-Cordova, Jose Ernesto y Fernando Borraz (2007). ìHas Globalization Deepened IncomeInequalityin Mexico?îGlobalEconomyJournal. Vol. 7Iss 1. 
+Mankiw, N.G, D. Romer y D. Weil (1992) ìA contribution to the Empirics of Economic Growthî,QuarterlyJournal ofEconomics,107,407-438. 
+Ravallion, M. and S. Chen (2003). Measuring pro-poor growth. Economics Letters, vol. 78,pp. 93-99. 
+Persson, Torsten y Guido Tabellini (1994), ìIs Inequality Harmful for Growth?: Theory andEvidenceî, American Economic Review84, 600-621. 
+Soloaga,IsidroyMario Torres, (2007). ìCountry casestudyî, Mexico. Chapter4in 
+Fabrizio Bresciani andAlberto ValdÈs.ìBeyondfoodProduction. The role of agriculture in poverty reductionî. Fao. pp. 83-108. 
+Watts, H. (1968). ìAn economic definition of povertyî. In D.P. Moynihan (ed.) On UnderstandingPoverty: Perspectives from the SocialSciences. NewYork:Basic Books 
+ApÈndice 
+1.Tratamientodelas variables utilizadas en elestudio: 
+Ingreso medio: 
+Para calcular el ingreso medio por Estado se usa la ENIGH de INEGI y se siguen los siguientes pasos: 
+i) Se calcula elingreso corriente de la misma forma en que es calculado por la CONEVAL5cuando calcula la pobreza en MÈxico. 
+ii) Una vez calculado el ingreso corriente se procede a dividir la muestra por Estado. Para lograr esto se puede extraer del folio de la encuesta, donde se encuentra la entidad aque pertenece cada entrevista. Elproblema de hacer esto es que la encuesta tiene representatividad nacional, rural y urbana; por lo que el n˙mero de entrevistas perteneciente a cada estado puede tener errores est·ndar m·s grandes de lo permitido. En un trabajo reciente Soloaga y Torres (2003), utilizan tambiÈn la encuesta ENIGH para calcular niveles de pobreza, ellos calculan errores est·ndar de aproximadamente 0.3043. Sin embargo al no tenerse otra fuente de datos se utiliza Èsta a pesar de estar conscientes que los resultados pueden estar sesgados por el errorest·ndar. 
+iii) Dado que el c·lculo de la ENIGH es por hogar, el siguiente paso es dividir el ingreso corriente por Estado, por el respectivo promedio de habitantes por hogar que tiene cada Estado, con esto se obtiene ingreso corriente per c·pita. 
+iv) Posteriormente se divide entre el INPC calculado por el Banco de MÈxico para tenerelingresomedioen precios constantes. 
+v) Finalmentese aplica logaritmo natural. 
+Ingreso delquintil m·s pobre 
+i) Una vez calculado elingreso corriente delpaso anterior, se calcula elquintil m·s pobre simplemente encontrando el ingreso que se acumula en el 20% m·s pobre dela poblaciÛn. 
+5Paramayor informaciÛn visitar la p·ginadeCONEVAL:http://www.coneval.gob.mx/ 
+ii) Se siguen los mismos pasos que en el caso anterior delpaso (iii) al(v). 
+EducaciÛn 
+i) La educaciÛn secalcula tambiÈn apartir de la ENIGH. 
+ii) La ENIGH difiere en su categorizaciÛn de los niveles de estudio, y este cambia cada aÒo, por lo que se tuvo que homogenizar. Se tomÛ como est·ndar primaria completa en 6 aÒos e incompleta la mediana es decir 3. Lo mismo para secundaria completa 3 aÒos, preparatoria completa 3 aÒos, estudios de superiores 4.5 aÒos, estudios de posgrado 2 y estudios de doctorado2 aÒos. 
+iii) Se calcula esto por hogar yse colapsa por Estados. 
+iv) Se calcula logaritmo natural. 
+InversiÛn Extranjera Directa 
+i) La informaciÛn de IED es obtenida de INEGI de las encuestas hechas por la SE. 
+ii) Como la informaciÛn esta en millones de dÛlares, se transforman a pesos con eltipo de cambio promedio del aÒo. 
+iii) Una vez hecho esto, se divide entre la poblaciÛn que tiene cada Estado para tenerla informaciÛn per c·pita. 
+iv) CÛmo la informaciÛn de IED esta disponible sÛlo de 1994 ala fecha. Para los datos de 1992 se toman como iguales a los de 1994, para poder explotar la varianzaentre Estados. 
+OcupaciÛn en la industria maquiladora de exportaciÛn 
+i) La informaciÛnde la OME esobtenida de INEGI. 
+ii) Generalmente la informaciÛn no esta disponible para todos los aÒos en todos los Estados porque simplemente esos Estados no tienen industria maquiladora. 
+iii) Para los Estados que no tienen informaciÛn en ciertos aÒos o nunca, se asume que la OME esigual acero. 
+iv) Para los Estados que no tienen informaciÛn de un aÒo, se extrapola para 
+llenar los vacÌosde informaciÛn. 
+v) Se calcula logaritmo natural, y debido a Ln(0) no existe, se asume que es igual a cero. A pesar de que esto es incorrecto es preferible para poder tener instrumentos fuertes, ya que la estimaciÛn cae de manera importante sise dejan vacÌoslos valores deLn(0). 
+Tabla A1. RegresiÛn para el periodo 1992-2006 Variable dependiente: quintil m·s pobre del ingreso monetario 
+niveles diferencias 
+[1] [2] [3] [4] [5] Ingreso medio 0.5470434 0.5611906 0.6180499 0.30452 0.521411 error est·ndar 0.0529139 0.1484685 0.0912525 0.1578876 0.0825015 EducaciÛn 0.0298835 0.0304771 0.0284775 0.0553095 0.0317649 error est·ndar 0.0043134 0.0294263 0.0038364 0.0402147 0.0040907 IED -6.77E-06 -0.000012 -0.000013 -0.0000103 -0.0000103 error est·ndar 7.97E-06 6.47E-06 5.05E-06 7.75E-06 5.58E-06 OME 0.012705 0.0081091 0.013856 -0.000145 0.0143498 error est·ndar 0.0048501 0.0081792 0.0042959 0.0084028 0.0039052 Dummies detiempo No Si No Si No Numero Lags: . 2 2 3 3 p-value sig =1 0 0.0031 0 0 0 TestAR(2) . 0.809 0.89 0.398 0.806 SarganTest . 0.672 0.756 0.998 0.967 
+SGMM 
+[6] [7] [8] [9] Ingreso medio 1.15891 1.126732 1.127303 1.09256 error est·ndar 0.0670398 0.0588778 0.0706136 0.0584804 EducaciÛn 0.0223539 0.0094654 0.0364005 0.0112318 error est·ndar 0.0268901 0.0046482 0.0323853 0.0047928 IED -8.26E-06 -4.69E-06 -9.23E-06 -3.35E-06 error est·ndar 7.06E-06 6.71E-06 7.00E-06 7.47E-06 OME 0.0058948 0.0037221 0.0024181 0.0007512 error est·ndar 0.0060399 0.0048385 0.0054895 0.003936 Dummies detiempo Si No Si No Numero Lags: 2 2 3 3 p-value sig =1 0.0178 0.0314 0.0714 0.1135 TestAR(2) 0.751 0.951 0.828 0.943 SarganTest 0.87 0.794 0.877 0.757 
+
+Notas: 
+Sereporta p-valueparaeltestde Sargan,AR(2)yH0=1 Seindicaeln˙mero de lags que se usÛde instrumento 
+niveles diferencias 
+Tabla A2. RegresiÛn para el periodo 1992-2006 Variable dependiente: quintil m·s pobre del gasto monetario 
+
+[1]  [2]  [3]  [4]  [5]  
+Ingresomedio  0.6080389  0.6294607  0.656048  0.5471837  0.6375965  
+error est·ndar  0.0470985  0.1389467  0.0635803  0.145081  0.051915  
+EducaciÛn  0.0141334  0.0448047  0.0140028  0.0528509  0.0145147  
+error est·ndar  0.0037288  0.0319848  0.0035786  0.0370641  0.0037229  
+IED  -7.61E-06  -0.0000167  -0.0000143  -0.0000151  -0.000013  
+error est·ndar  6.82E-06  5.46E-06  4.76E-06  6.85E-06  6.12E-06  
+OME  0.0094931  0.0074204  0.0087615  0.0025766  0.008163  
+error est·ndar  0.0041544  0.008115  0.0047986  0.0103329  0.0051864  
+Dummies detiempo  No  Si  No  Si  No  
+NumeroLags:  .  2  2  3  3  
+p-value sig = 1  0  0.0077  0  0.0018  0  
+TestAR(2)  .  0.022  0.026  0.019  0.025  
+SarganTest  .  0.001  0.003  0.268  0.389  
+SGMM  
+[6]  [7]  [8]  [9]  
+Ingresomedio  1.164961  1.110441  1.171523  1.10677  
+error est·ndar  0.0567543  0.0487954  0.0581373  0.0518069  
+EducaciÛn  0.0040761  -0.0047497  0.0187741  -0.0036697  
+error est·ndar  0.022063  0.0044733  0.0247262  0.0047856  
+IED  -5.16E-06  -1.05E-06  -9.44E-06  -2.99E-06  
+error est·ndar  6.59E-06  6.72E-06  5.97E-06  6.50E-06  
+OME  0.0081246  0.0028349  0.0077926  0.0004784  
+error est·ndar  0.0059057  0.0046154  0.0067535  0.0051526  
+Dummies detiempo  Si  No  Si  No  
+NumeroLags:  2  2  3  3  
+p-value sig = 1  0.0037  0.0236  0.0032  0.0393  
+TestAR(2)  0.087  0.574  0.081  0.497  
+SarganTest  0  0  0.181  0.046  
+
+Notas: 
+Sereportap-value para eltestde Sargan, AR(2)yH0=1 Seindica eln˙mero delagsquese usÛdeinstrumento 
+
+
+
+
+
+

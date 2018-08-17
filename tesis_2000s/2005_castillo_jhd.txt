@@ -1,0 +1,465 @@
+, 
+EL COLEGIO DE MEXICO 
+' 
+CENTRO DE ESTUDIOS ECONOMICOS 
+, , 
+MAESTRIA EN ECONOMIA 
+, 
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE MAESTRO EN 
+, 
+ECONOMIA 
+UNA PRUEBA DEL CAP#CONDICIONAL PARA #fucoCON TICNZCAS NO-PARANÉTIUCAS 
+JORGE HU#BERTO DEL CAsrlLLO SP/NDOLA 
+PROMOCIÓN 1998 • 2000 
+2005 
+2 6 SET 2005 
+•iífiotica (J)tJnit[ Cusi 'Villésas 
+Cl COLEGIO DE t.1(XICO. A.C. 
+Una Prueba del CAPM Condicional 
+para México con Técnicas No-paramétricas 
+11111111111111111 
+3 9 O 5 O 7 8 5 1 4 2 7 
+Jorge Humberto Del Castillo 
+
+
+AGRADECIMIENTOS 
+Primero que nada agradezco a el Profr. Eneas Caldi García toda su ayuda y gran paciencia en la r('alizaci de este trabajo así como su apoyo y grandes clases durante mi estudios en El Colegio de México. Muchas gracias Eneas. 
+Quiero agradecer al Centro de Estudios Econicos de El Colegio de México por todo el apoyo que he recibido desde mi ingreso a la instituci. En particular a los diferentes coordinadores de la maestría con los que he tenido oportunidad de estar hasta la fecha: al Dr. Jaime Sempere (gracias por el gran apoyo, confianza y ayuda durante la etapa final de este trabajo), al Dr. Gerardo Esquivel (gracias por la ayuda, el apoyo y los consejos a lo largo de esta etapa) y al Dr. Alejandro Castada (gracias por el apoyo y confianza durante la primera etapa de mis estudios). Asimismo, agradezco el apoyo y confianza del Director del Centro. Dr. Horacio Sobarzo. 
+' n agradecimiento muy fuerte merecen todos aquellos profesores cuyas clases y/amis­tad influyeron determinantemente en mi formaci. Con mucho cari a Eneas Caldi, Osear Fernández, Gerardo Esquivel, Carlos Vrz, Jaime Sempere, Graciela Márquez, Jorge Fernández, Subir, Francisco Venegas y José Antonio Nuz. 
+Dr igual forma un agradecimiento a Mercedes por su ayuda y en especial a Monica Vargas por su gran ayuda y amistad durante estos as, ambas del Centro de Estudios Econicos. 
+Finahrnmte, agradezco a los que siempre han estado ahí dando todo su apoyo: con todo mi amor a mi familia. 
+
+DEDICATORIA 
+Dedico est<· trabajo a Karla Salas. Por toda su ayuda en la elaboraci y por todo lo que me ha ensedo en este tiempo. 
+
+CONTENIDO 
+Introducci ix 1 El CAPM y el CAPM Condicional 1 2 Marco Teico e Instrumentaci Empírica 7 3 Los Datos y Resultados 15 4 Apéndice 19 Bibliografía 27 
+
+INTRODUCCIÓN 
+El Modelo de Valuaci de Activos de Capital, CAPM de su nombre en inglés (Capital Asset Pricing Model) fué desarrollado inicialmente por Treynor (1961) y Sharpe (1964) y posteri­ormente por Lintner (1965), Mossin (1966) y Black (1972) y es una extensi inmediata de la teoría de Markowitz, con la ventaja de ser empíricamente más manejable. El CAPM determina el precio de los activos considerando que los inversionistas han tomado decisiones timas cuando el mercado está en equilibrio. De esto se deriva que los activos riesgosos so pagan por el riesgo sistemático o no diversificable. Supuestos del CAPM 
+1) Los inversionistas son aversos al riesgo y buscan maximizar su utilidad, la cual está en funci de su riqueza terminal. 
+2) Las decisiones de portafolio se toman de acuerdo a criterios de media y varianza. 
+3) Los inversionistas tienen expectativas homogéneas. 
+4) La informaci está disponible para todos. 
+5) No hay costos de transacci ni impuestos. 
+6) Todos los activos están en el mercado y son divisibles. 
+7) Existe un portafolio de mercado que consiste en la tenencia de todos los activos en la proporci correspondiente a su valor de mercado relativo. 
+De manera opcional, algunas versiones (la nuestra es una) suponen que existe una tasa libre de riesgo con la cual se presta y se pide prestado infinitamente. Esta tasa tiene varianza cero, covarianza cero con los otros activos y da un rendimiento positivo. El CAPM se construye examinando el comportamiento de los inversionistas en una economía modelo hipotética de un solo periodo. Entonces, para la examinaci empírica es necesario hacer supuestos. Uno de los supuestos comunes es que las betas de los activos permanecen constantes a lo largo del tiempo. esto no es muy razonable ya que el riesgo relativo del flujo de efectivo de una empresa puede variar durante el ciclo de negocio. Por ejemplo, en Estados Unidos, el famoso artículo de Fama y French (1992) examina empíricamente la versi del CAPM de Black (1972), encontrando que el valor estimado del coeficiente de la beta es casi cero. Ellos interpretan esta relaci plana entre el retorno promedio y beta como eviden­cia fuerte contra el CAPM. Sin embargo, esta no es necesariamente evidencia en contra de la versi condicional del CAPM, la cual toma en cuenta la naturaleza de la informaci disponible en cada momento. A cuando los retornos esperados son lineales en las betas para cada periodo de tiempo, basado en la informaci disponible en el momento, la relaci entre los retornos esperados no condicionales y la beta no condicional podría ser plana. En el capítulo 1 se expone un 
+Introducci 
+ejemplo que permite verificar esto y el cual ayuda a ilustrar las fallas contenidas en un estu­dio empírico del CAPM que no tome en cuenta la variaci en el tiempo de las betas. En consecuencia., las betas y los retornos esperados dependerán en general de la naturaleza. de la informaci disponible en cualquier punto del tiempo dado y variarán a lo largo de este. Por todo esto, supondremos que el CAPM condicional se cumple, es decir, el retomo esper­ado de un activo basado en la informaci disponible en cualquier punto del tiempo dado es lineal en su beta condicional. Ahora justifiquemos el porque del uso de técnicas de estadística no-paramétrica. Los modelos condicionales de valuaci de activos imponen restricciones en momentos condi­cionales no observados de los retornos de los activos, pero no describen exactamente como estos momentos varían a lo largo del tiempo. Por ejemplo, el CAPM condicional establece que los retornos en exceso esperados condicionales de los activos en cualquier punto del tiempo son lineales en sus covarianzas condicionales con el mercado, pero no dice nada ac­erca de la variaci en el tiempo de los retornos y covarianzas esperados condicionales. Sin embargo, para realizar pruebas empíricas se necesita evaluar algunos momentos condicionales 
+o funciones de estos en su variaci a lo largo del tiempo. Lo que se hace actualmente en la literatura es suponer formas funcionales acerca de los momentos condicionales de los retornos de los activos y/o en funciones de estos momentos para obtener series de tiempo y construir las pruebas. Sin embargo, errores de especificaci tienen gran impacto en la inferencia y diferentes especificaciones pueden facilmente producir resultados empíricos diferentes. No hay un consenso general acerca de que momentos condicionales de los retornos modelar y como serán especificados. De hecho, debido a que las especificaciones se escogen por con­veniencia o facilidad de uso, estas son arbitrarias y mutuamente excluyentes. También, se ha observado que existe un problema de hipesis conjunta. Esto es, si la prueba de un modelo se basa en un modelo estadístico p~a algunos momentos condicionales de los retornos, se tiene simultaneamente una prueba de la predicci de la valuaci y del modelo auxiliar. A cuando el modelo de valuaci sea correcto, este tipo de prueba puede pro­ducir un rechazo y estimaciones grandes de errores de valuaci simplemente por suponer una forma funcional pobre acerca de los momentos condicionales. Este problema es relevante a todas las metodologias propuestas en la literatura. Desafortunadamente, el problema de la hipesis conjunta no es el ico. Problemas de potencia pueden facilmente surgir en muestras finitas debido simplemente a ciertas especifi­caciones. Una implicaci de los efectos de especificaci es que uno puede cambiar de manera signi­ficativa los resultados de la prueba con solo alterar la especificaci empírica. Sin informaci detallada de los efectos que causa. la especificaci que se escoge, co pode­mos decidir si un resultado empírico es evidencia confiable o el simple producto de cierta especificaci? En este trabajo, siguiendo a Qing Wang {1997) se construye una prueba que evita los efectos de especificaci asociados con los metodos existentes. Se prueba la. eficiencia media-varianza. condicional de un portafolio de mercado dado. Esta prueba se basa en la siguiente idea primero se tiene un modelo de regresi lineal para los errores de los retornos esperados condicionales, el cual siempre es consistente con la eficiencia media-varianza condicional del 
+portafolio dt! mercado. A través de un factor de descuento no-paramétrico, se obtiene un e timador de mínimos cuadrados ponderados para los coeficientes de regresi. Entonces, 
+e prueba , i los coeficientes son cero usando el estimador y sus propiedades asinticas para obtener una estadística de prueba. Con esta metodologia se evita el problema de la hipesis conjunta .v la prueba está libre del impacto de errores de especificaci del factor de des­cuento. En el primer capítulo, se revisan el CAPM y el CAPM condicional, así como se da una justificacin del uso de un factor de descuento no-paramétrico observando lo que pasaría con el metodo generalizado de momentos. En el capítulo 2 se desarrolla todo el marco teico necesario para construir las pruebas y se detalla toda la instrumentaci empírica. En el capítulo 3 se detalla todos los datos a utilizar, sus propiedades estadísticas básicas, el porque de su elecci y el resultado y conclusiones de la prueba. Se incluye un apéndice con el programa desglosado para calcular las pruebas elaborado en MATLAB. 
+CAPÍTULO 1 
+El CAPM y el CAPM Condicional 
+La mayoría de los estudios del CAPM estático (no condicional) suponen que las betas per­manecen constantes a lo largo del tiempo y que el retomo en el portafolio de valores pon­derados de todos los activos es una aproximaci para el retomo en la riqueza agregada. Suponer que el CAPM se cumple en un sentido condicional es suponer que las betas y el premio de riesgo de mercado varían a lo largo del tiempo. Gran parte de la investigaci en finanzas es dedicada a entender como los inversionistas valuan los flujos de efectivo riesgosos. En general se esta de acuerdo en que los inversion­istas demandan un mayor retomo esperado cuando invierten en activos mas riesgosos. Sin embargo, a no se comprende del todo como los inversionistas manejan el riesgo del flujo de efectivo en un activo y como determinan que premio al riesgo demandar. Se han sugerido muchos modelos que describen como los inversionistas manejan el riesgo y valuan los flujos de efectivo riesgosos. Entre ellos el mas usado es el CAPM de Sharpe-Lintner-Black. De acuerdo al CAPM: 
+i) La relaci entre el retomo esperado requerido y beta es lineal. 
+Ahora bien, sabemos que el riesgo de un activo es medido por la beta del flujo de efectivo con respecto al retomo en el portafolio de mercado de todos los bienes en la economía. Se han hecho muchos estudios para examinar empíricamente el desempe del CAPM estático en explicar el efecto cruzado de los retornos promedio realizados. Los resultados obtenidos permiten ver que es posible construir un conjunto de portafolios donde el CAPM estático no es capaz de explicar la variaci del efecto cruzado en los retornos promedio entre ellos. 1 
+El CAPM se construye examinando el comportamiento de los inversionistas en una economía hipotética donde viven solo un periodo. Esto, obviamente no es cierto en el mundo real. Entonces, para la examinaciíon empírica del modelo con datos reales es necesario hacer ciertos supuestos. Uno de los supuestos comunes es que la beta de los activos permanecen constantes a lo largo del tiempo. Esto no es muy razonable ya que el riesgo relativo del flujo de efectivo de una empresa puede variar durante el ciclo de negocio. Por ejemplo, durante una recesi el apalancamiento financiero de empresas con problemas puede incrementarse abruptamente relativo al de otras empresas ocasionando que las betas de sus activos se in­crementen. También, la participaci relativa de diferentes sectores en la economía fluctua, induciendo cambios en las betas de las firmas en estos sectores. En consecuencia, las betas y 
+1Ver Banz(1981), Reingaoum(l981), Gibbons(1982), Basu(1983), Chan, Chen y Hsieh(1985), Shanken(1985), y Bhandari(1988). 
+El CAPM y el CAPM Condicional 
+los retornos esperados dependerán en general de la naturaleza de la informaci disponible en cualquier punto del tiempo dado y variarán a lo largo de este. 
+Por todo esto, supondremos que el CAPM condicional se cumple, i.e., el retorno esperado de un activo basado en la informaci disponible en cualquier punto del tiempo dado es lineal en su beta condicional. 
+CAPM ESTATICO (Sharpe-Lintner-Black) 
+Denotemos por R,¡ al retorno en el activo i y por R,, al retorno en el portafolio de mercado de todos los activos en la economía. La versi del CAPM de Black (1972) es: 
+
+(1.1) 
+donde {3¡ = Cov(R,¡, R,,) Var(R,,) 
+En Estados Unidos, Fama y French (1992) examinan empíricamente esta versi, encon­trando que el valor estimado de -y1 es casi cero. Ellos interpretan esta relaci plana entre el retorno promedio y beta como evidencia fuerte contra el CAPM. Sin embargo, esta no es necesariamente evidencia en contra del CAPM condicional. 
+A cuando los retornos esperados son lineales en las betas para cada periodo de tiempo, basado en la informaci disponible en el momento, la relaci entre los retornos esperados no condicionales y la beta no condicional podría ser plana. 2 
+El siguiente ejemplo nos permite ver esto: 
+Considérese una economía hipotética en donde se cumple el CAPM periodo por periodo. Supgase que un econometrista considera solo dos activos y que hay solo dos periodos. Las betas del primer activo son 0.5 para el primer periodo y 1.25 para el segundo, dando una beta promedio de 0.875. Para el segundo activo son de 1.5 para el primer periodo y 0.75 para el segundo, dando una beta promedio de 1.125. Supgase que el premio de riesgo esperado en el mercado es de 10 por ciento en el primer periodo y 20 por ciento en el segundo. Entonces, si el CAPM se cumple en cada periodo, el premio de riesgo esperado para el primer activo será 5 por ciento en el primer periodo (10 x 0.5) y 25 por ciento en el segundo {1.25 x 20). El premio de riesgo esperado para el segundo activo será 15 por ciento en ambos periodos. 
+En consecuencia, un econometrista que ignore el hecho de que las betas y los premios de riesgo varían en el tiempo, erroneamente concluirá que el CAPM no se cumple, ya que los dos activos ganan un premio de riesgo promedio de 15 por ciento pero sus betas promedio difieren. 
+A cuando los neros de este ejemplo son extremos y poco realistas, nos ayudan a ilustrar las fallas contenidas en un estudio empírico del CAPM que no tome en cuenta la variaci en el tiempo de las betas. 
+2Esto es debido a que un activo que está en la frontera de media--varianza condicional no necesariamente está en la frontera no condicional. Ver por ejemplo Dybvig y Ross(1985), y Ha.osen y Richard(1987) 
+CAPM CONDICIONAL 
+Denotaremos por R¡,t+l el retorno bruto (i.e., 1 mas la tasa de retorno) del activo i en el periodo t + l. Análogamente R,,,t+l será el retorno bruto del portafolio de riqueza agregada de todos los activos en la economía en el periodo t + l. Nos referiremos a ll,,,t+l como el retorno de mercado. 
+Sea lt el conjunto de informaci com de los inversionistas al final del periodo t. Supondremos que todas las series de tiempo usadas son covarianza-estacionarias y que todos los momentos condicionales y no condicionales existen. 
+Cuando se tienen inversionistas racionales aversos al riesgo en una economía dinámica, estos típicamente se anticiparán y cubriran contra la posibilidad de que las oportunidades de inversi en el futuro pudiesen cambiar adversamente. Debido a esta necesidad de cubrirse que surge en una economía dinámica, el retorno esperado condicional en un activo será de manera típica conjuntamente lineal en la beta de mercado condicional y las betas del portafolio para cubrirse. 3 
+Sin embargo, siguiendo el desarrollo de Merton (1980), supondremos que los motivos para cubrirse no son suficientemente importantes y en consecuencia que el CAPM se cumplirá de manera condicional como sigue: 
+Para cada activo i y en cada periodo t + 1, 
+E(R¡,t+11It] = 'Yo,t +'Y1,t/3i,t (1.2) 
+donde /3i,t es la beta condicional del activo i definida como 
+a. _ Cov(R¡,t+I, ll,,,t+ille) 
+JJ,t -(1.3) 
+· Var(ll,,,t+l llt) 
+'Yo,t es el retorno esperado condicional en un portafolio cererbeta y 'YI,t es el premio de riesgo de mercado condicional. Ahora tomemos la esperanza no condicional en ambos lados de (2) para obtener: 
+E[E(R¡,t+ille]] = E['Yo,t +'Y1,t/3i,t] 
+de donde obtenemos 
+E(R¡,t+1] = E['Yo,t] + E['Y1,t]E[/3i,t] +Cov('Y1,t, /3i,t) 
+definiendo 'Yo = E['Yo,t], 'Y1 = Eh1,t] y /3¡ = E[/3i,t] obtenemos finalmente 
+E(R¡,t+1] = 'Yo +'Y1/3i + Cov('Y1,t, /3i,t) (1.4) 
+-y1 es el premio de riesgo de mercado esperado y /3¡ es la beta esperada. 
+Si la covarianza en (1.4) es cero una funci lineal de la beta esperada para cada activo i escogido arbitrariamente, entonces este se asemeja al CAPM estático, i.e., el retorno esperado es una funci lineal de la beta esperada. Sin embargo, en general, el premio de riesgo condicional en el mercado y las betas condicionales estan correlacionados. 
+3 Ver Merton (1973) y Long (1974) 
+El CAPM y el CAPM Condicional 
+Por estudios previos se sabe que el premio de riesgo esperado en el mercado, así como las betas condicionales no son constantes4 y varían a lo largo del ciclo econico. 5 
+En consecuencia, el timo término en (4) en general no es cero y el retomo esperado no condicional no es una funci lineal de la beta esperada solamente. Una vez que hemos visto esto, analizaremos el CAPM condicional a partir del factor de descuento. En la siguiente secci se argumenta el porque del uso de un factor de tipo no­paramétrico. 
+UN FACTOR DE DESCUENTO NO-PARAMETRJCO 
+Utilicemos el factor de descuento del método generalizado de momentos6 para discutir los efectos que causa el tipo de especificaci que se seleccione. Para probar la hipesis de que un portafolio benchmark p dado es eficiente media-varianza condicionalmente con el factor de descuento del método generalizado de momentos, primero se especifica un factor de descuento lineal en rp,t+t 
+m,+1(6) = a(Xt, 9) -b(Xt, 9)rp,t+t 
+donde r p,t+t es retorno del portafolio p menos la tasa libre de riesgo. Xt es un vector de variables de estado. 9 es un vector de parámetros. 
+Ahora, se aplica el procedimiento del método generaliza.do de momentos para probar si se cumple la condici E[mt+1(6o)r,+1] = O 
+Para alg valor del vector de parámetros 90, donde Tt+i es el vector de retornos menos la tasa libre de riesgo. Como saber si un factor de descuento está especificado de manera correcta? La hipesis de eficiencia condicional predice un factor de descuento lineal en rp,t+t, pero no dice nada acerca de la forma funcional de a y de b. Sin embargo, aparentemente no tiene sentido que cualquier a y b sirvan para una prueba apropiada de la hipesis. La hipesis de eficiencia media-varianza condicional no deja sin restricci a a y b. Es directo ver que la ecuaci condicional beta-precio 
+E[ II) E[ II)Cov(r¡,t+1,rp,t+11I,) 
+ri,t+t t = rp,t+l t V ( ll)
+ar rp,t+l t 
+tiene una representaci del factor de descuento 
+E[1nt+1Tt+1] = o 
+4Keim y Stambaugh(1986}, Breen, Glosten y Jagannathan(1989} 5Fama y French(1989), Chen(1991) y Ferson y Harvey(1991) 6ya que es muy frecuente su uso en los estudios actuales 
+donde ffit+1 = E[,;,t+1IXt) -E[rp,t+1IXt]rp,t+1 
+De aquí se desprende que las especificaciones correctas de a y b un factor de descuento especificado correctamente deben cumplir 
+b(Xt, Oo) _ E[rp,t+ilXt] a(Xe, Oo) -E[~,t+1 IXt) 
+para alg 00• Especificaciones incorrectas de a y b dan origen a un problema de hipesis conjunta. El procedimiento del factor de descuento del método generalizado de momentos prueba de manera simultánea la eficiencia media-varianza condicional del benchmark y los supuestos de la forma funcional de a y b. Errores de especificaci pueden facilmente resultar en violaciones de la condici E[1nt+1(00)rt+1) = O (el objetivo de la prueba) a cuando el benchmark este en la frontera de eficiencia condicional. 
+El problema de la hipesis conjunta no es la ica posible consecuencia del error de especificaci. Especificaciones incorrectas de a y b pueden afectar el tama de prueba, la potencia de la prueba, el sesgo de estimaci y el ruido de estimaci. Los efectos de especificaci originan serias dudas acerca del uso de factores de descuento paramétricos injustificados. 
+CAPÍTULO 2 
+Marco Teico e Instrumentaci Empírica 
+UN ESTIMADOR DE MINIMOS CUADRADOS PONDERADO 
+Considérese un marco donde hay un activo condicionalmente sin riesgo. Igual que antes r p,t+l es el retomo del portafolio p menos la tasa libre de riesgo. r i,t+l es el retomo del activo i menos la tasa libre de riesgo. i = 1, ... ,n. Sea Xt un vector de tama k de variables de estado tal que 
+E[r11,t+1llt) = E[r11,t+ilXt) (2.1) E(r!,t+illt) = E[r!,t+ilXt) (2.2) donde lt es el conjunto de informaci de los inversionistas1 al tiempo t. Se utilizará el supuesto de que rp,t+t , r i,t+l y las variables de estado son estrictamente esta­cionarias. Si el portafolio benchmark p es eficiente media-varianza condicionalmente, entonces 
+E(ri,t+illt) -E(r11,t+11It) Cov(r¡? 1' rp,¡+\lle) (2.3)
+Var r11,t+1 lt 
+o de manera equivalente 
+E[r,·,t+1llt) E[r IJ] E[ri,t+lrp,t+tllt) (2.4)
+-p,t+l t E(~ II)
+p,t+l t 
+para i = 1, . .. , n. La representaci por medio de la covarianza (2.3) es la usual ecuaci beta-precio. La representaci de (2.4) es la de momento cruzado. Hagamos 
+
+-E(r p,t+l IXt) 
+-E[r!,t+I IXt) 
+
+g11(Xt) g,,,,(Xt) 1Ntese que estas ecuaciones son solo para el portafolio p. No se requiere que Xt sea una caracterizaci completa del conjunto de informaci ft, solo que sea suficiente para desarrolllar la prueba no-paramétrica. 
+
+Marco Teico e Instrumentaci Empírica 
+Si {2.1) y {2.2) se cumplen, los errores de los retornos esperados condicionales de (4) se pueden expresar como 
+
+donde mt+1 = 1 -b(Xt)r11,t+1 
+y en consecuencia {2.4) es equivalente a 
+E[mt+1Ti,t+1llt) = O {2.5) 
+Ahora bien, sea e¡,t+l = ffit+1Ti,t+I y Zt un vector de tama q de variables estacionarias 
+observadas en It. Si se pudiese observar el factor de descuento ffit+1, una manera natural de probar la condici E[ei,t+1 llt) = Osería hacer una regresi de e¡,t+l en Zt y probar si los coeficientes son cero. Esto es debido a que las regresiones siguientes 
+
+(2.6) 
+donde E['U¡,t+1IJ,J = Opara i = 1, ... , n son siempre consistentes con (2.5). Obviamente {2.5) implica que {2.6) se cumple con =Odonde = (<'2 ... tn)'. Para implementar esta idea, siguiendo el desarrollo de Wang (1997) se reemplazará ffit+1 con un factor de descuento nerparamétrico f+1 y se estimará el vector de parámetros  con 
+
+para i = 1, ... , n donde ..... 
+~.t+l -ffit+1 Ti,t+l y ffit+1 -1 -b(X,)r,,,t+1 con g,,(X)
+b(X) ­g,,,,(X) 
+La funci ponderadora se escoge como Wt = J(Xt)g.,,,,(Xt) 
+J, gy g.,,,, son kernels definidos como N 
+J(X) -N-lh-k~K(x~x·) 
+N 
+g,,(X) -N-1h-kJ(X)-1 ~K(X~ x. )r,,,a+1 
+
+fes el estimador no-paramétrico de densidad Rosenblatt-Parzen, con kernel K(·) y banda de ancho h. gp y 9pp son estimadores de funci de regresi Nadaraya-Watson. La funci ponderadora Wt se escogide tal forma que eZez; y eZ,e¡,t+l pueden ser expre­sadas como estadísticas U generalizadas de segundo orden, permitiendo analizar propiedades de ¡ para muestras grandes. ..... La prueba que se propone está basada en el estimador de mínimos cuadrados ponderado N 
+
+Intuitivamente, "iN converge a cero si el benchmark pes eficiente media-varianza condicional­mente. De otro modo, el estimador converge a un límite diferente de cero2• Entonces, se puede hacer una prueba de eficiencia condicional checando que tanto dista "iN de cero usando teoría de la distribuci asintica para considerar los errores de muestreo. 
+(2.6) también puede ser visto como un modelo para los errores de valuaci; i.e., Ze serviría como aproximaci para E(ei,t+ille), los errores de retomo esperado condicional en (2.4). Por esto es que no se ha puesto ninguna restricci para escoger Ze. Nese que el modelo de regresi (2.6) no ocasiona el problema de hipesis conjunta, sin importar la elecci que se haga de z,. Esto es debido a que el modelo siempre es correcto cuando el benchmark es eficiente media-varianza condicional. 
+COMPORTAMIENTO ASINTOTICO DEL ESTIMADOR Y LA ESTADISTICA DE PRUEBA 
+Sea re+1 un vector de excesos de retomo (retomo en el activo menos la tasa libre de riesgo) (r1,t+1 · · · Tn,t+1) 1 ® Zt Y sea Yí+1 = (x;z;rp,t+lr;+s, donde@ es el operador de Kronecker. Denotemos 
+Wt  -f (Xe)gpp(Xe)  
+A  -lin ® E[weZtz;J  
+-AN  - N ][n ® N-1 L WtZtz;  
+
+t=l 
+donde lin es la matriz identidad de tama n. Sea =(O¡ ··· n)' con 
+
+2a menos que e,,t+t sea ortogonal a todos los componentes de Zt para i = 1, ... , n 
+Marco Teico e Instrumentaci Empírica 
+Definamos 
+-r(Yi+1) -r¡(Yt+1) -Pln ® a(Yt+i)J(2.9) r¡(Yi+1) -J(Xe)[gpp(Xe)rt+l -9p(Xt)rp,t+1Tt+1 +9r(Xe)r;,t+l -gpr(Xe)rp,t+1J(2.10) a{Yi+1) -J(Xe)[gw(Xt)Ziz; + r!,t+19u(Xt)] {2.11) 
+donde 
+9r(Xt)  -E[rt+ilXi]  
+gpr(Xe)  -E[rp,e+1Tt+1IXt]  y  
+9u(Xe)  -E[ZeZ;IXe}  
+
+Resultado l. Tenemos que 
+i) AN converge en probabilidad a A. 
+ii) La distribuci límite de ./NAN("iN - es idéntica a la de N-½E!i -y(Yi+1). 
+iii) E['y{Yt+1)] =O. 
+Ahora enunciaremos algunos supuestos técnicos que permiten obtener resultados acerca de la distribuci límite del estimador ~ y del estadístico de prueba que se dará mas ade­lante. 
+SUPUESTO 1.-La sucesi de datos {Yt+1} es un proceso estrictamente estacionario del tipo ,B-mixing y el subvector Xe tiene distribuci absolutamente continua con densidad 
+!e=& 
+J{Xe) y para alguna p > 2 los neros ,Bn n = 1, 2, .. . satisfacen ¿~1 nf3n P < oo. SUPUESTO 2.­
+i) r;,t+1, 1·e+1 y rp,t+lrt+1 tienen primer momento finito. 
+ii) llwi(t, s)llp < oo y llw2(t, s)IIP < oo 'r/ t < s donde W¡(t, s) -(r!,a+l -rp,a+1Tp,t+1)re+1 + (r;,t+l -rp,t+1Tp,,+1)r,+1 
+( ) 2 zz' 2 zz'.
+W2 t, s -rp,a+l t t + rp,t+l a , 
+3
+y 11 • I IP denota la norma p. 
+
+
+11 
+SUPUESTO 3.-fg,,, f gpp, /gr, /gpr y fgu satisfacen la condici local de Lipschitz para alguna funci m{X); donde m{Xt)rt+I, m(Xt)rp,t+1Tt+1, m(Xt)r,,,t+i, m(Xt)r!,t+i y m(Xt)Ztz; tienen norma p finita..4 
+SUPUESTO 4.-El kernel K es una funci simétrica. acotada que satisface 
+i) f K(u)du. = 1 
+ii) JlulilK(u)ldu < oo si O~ j ~ k + 1 
+iii) Jui1 ···u~K(u)du. = Osi O< li +· · · + lk < k + 1 donde u; es el j-ésimo elemento del vector u. Es decir, el nucleo K es de orden k + 1 
+SUPUESTO 5.­
+i) La j-ésima. derivada parcial de fg,,, fgpp, /gr, f gpr y fgn existen para toda j ~ k +l. 
+ii) Las esperanzas E[gprV,1, .•. .z,(/g,,)], E[grV,1,...,1;(/gpp)], E[gwV1i,...,z1(/gr)], E[g,,V1i,....lJ(/gpr)] y E[gppV,1,...,z1(/gzz)] existen para toda j ~ k + 1, donde las funciones y las derivadas parciales5 están evaluadas en Xt. 
+SUPUESTO 6.-Las matrices A y fo son no-singulares. (fo= E('y(Yé+1h(Yé+1)1]). 
+La condici mixing en el supuesto 1 restringe el grado de dependencia permitida. en la sucesi de da.tos, esto es entre otras cosas para poder aplicar un teorema de límite central. Las condiciones que requieren que f3n se anule como una. potencia de n no suelen ser restricti­vas para la mayoría de series financieras y son usuales en la literatura. Mientras mas fuertes son las restricciones para la existencia de los momentos ( una mayor p) mas dependencia es permitida. Esta relaci inversa no es poco com para establecer resultados asinticos para datos serialmente correlacionados. El supuesto 5 es una condici de regularidad para correcci asintica de sesgo, a través del uso de un nucleo de orden mayor. Para las condiciones en los momentos hechas en el supuesto 2, primero nese que p puede escogerse arbitrariamente cercana a 2 si f3n decae exponencialmente; en seguida, es directo verificar que el supuesto 2 se cumple V p > 2 si la distribuci conjunta de todas las vari­ables es normal o lognormal. Una vez dados los supuestos técnicos, observamos que debido a. que N-1 E!i-y(Yé+1) es un promedio simple de vectores aleatorios estacionarios, la aplicaci de un teorema de límite central6 nos da el siguiente resultado. 
+4Se dice que una funci h(X) satisface la condici local de Lipschitz para alguna funci m(X) si 
+lh(X + Y) -h(X)I < m(X)IIYII 
+5V(h} denota el vector gradiente de la funci h 
+6Doukhan et al. (1994) han mejorado los teoremas de límite central clásicos de lbragimov y Linnik (1971} 
+y probaron que si 2 < p < oo, E(IXIP] < oo y E:=l Onn~ < oo entonces n-½ ¿~1(X¡ -E[X,]) converge a un vector aleatorio normal centrado. 
+Marco Teico e Instrumentaci Empírica 
+Teorema 2.1. Dados los supuestos 1-6, si h -+ O, Nh2k -+ oo y Nh2k+2 -+ O, entonces el estimador de mínimos cuadrados ponderado 6N es tal que ../N(6N - tiene una distribuci límite normal multivariada con media O y matriz de varianza-covarianza n, donde n = A-1rA-1 f = E~oo r; Yr; = Eb(Yt+1h(Yt+;+1)'J.
+1 
+Este teorema muestra que 6N tiene las propiedades límite estandar, consistencia-../Ñ y normalidad asintica de los estimadores paramétricos. Este resultado no se basa en (2.1) y {2.2), ni requiere que las ecuaciones de {2.6) esten especificadas correctamente. Hay que notar que las condiciones para h son diferentes de aquellas para estimadores de kernel puntuales. Las condiciones Nh2k -+ oo y Nh2k+2 -+ O dan las cotas superior e inferior de la tasa en que h converge a O para que 6N exhiba el comportamiento asintico deseado. La condici Nh2k+2 -+Ose debe al uso de un kernel de orden k + 1 y en consecuencia el rango admisible para la tasa puede relajarse usando un kernel de orden mayor a k + l. Ahora, para construir una prueba de eficiencia condicional usando la distribuci de 6N necesitamos un estimador para la matriz de covarianza n. Para esto, primero veamos la estimaci de 'Y(Yt+1), Reemplazando en (2.10) y (2.11) J(X), gp(X), gpp(X), 9r(X), gpr(X) y 9zz(X) por kemels estandar y reemplazando en (2.9) por 6N, una aproximaci natural para 'Y(Yt+1) sería 
+9N(Yi+1) -'1N(Yi+1) -(In@ ON(Yi+1))6N (2.12) 
+'1N(Yt+1) -J(Xt)(gpp(Xt)rt+l -9p(Xe)rp,t+1Tt+1 +9r(Xe)r;,t+l -9pr(Xe)rp,t+1)(2.13) 
+aN(Yi+1) -J(Xe)(gpp(X,)Z,Zi + r;,t+i9zz(Xt)] {2.14) 
+·con J, gp y gpp como se definieron previamente7 y 
+
+Se puede mostrar que el estimador 
+N-J 
+1
+í\ = N-1 L 9N(Yt+1)9N(Yt+;+1) 
+t=l 
+es consistente para f;, También puede verse que dado (2.1) y (2.2) r; = O V j-:/: O cuando las ecuaciones en (2.6) se cumplen. Es por esto que se propone el estadístico de prueba 
+'TcS = N5NO,Ñ16N (2.15) 
+7Hay que notar que g..,.(X,) = ZtZt cuando Zt es una transformaci fija de Xi, por ejemplo z, = (1x;)' y en dado caso no es necesario utilizar el nucleo de estimaci g..,.(Xt) en (14}. Simplemente habría que reemplazar 9u(Xt) por Ztz; lo que da aN(Yt+1) = /(Xt}Í9pp(Xt) +r:,t+a)Ztz;. 
+donde fiN = AÑ1Í\AÑ1 para probar la eficiencia media-varianza condicional. 
+Teorema 2.2. Si se cumplen las condiciones del Teorema 1 
+i) Dados (2.1) y (2.2), si el portafolio pes eficiente media-varianza condicional, entonces el estadístico de prueba T4 tiene una distribuci límite x2 con q x n grados de libertad. 
+ii) í\ es un estimador consistente de ri para cualquier j fija. 
+Vale la pena notar que la prueba no tendrá potencia si se escoge alg vector Zt que sea ortogonal8 a ei,t+l. Sin embargo, la prueba tendrá potencia si un componente de Zt puede pronosticar significativamente fi,t+t, sin importar si el modelo de regresi (2.6) es especificado de manera correcta o no. 
+EL KERNEL K Y LA BANDA h 
+El kernel K utilizado es una funci de densidad normal multivariada independiente 
+K(u) = IIk <Pi(Ui) 
+i=l 
+donde q>¡ es la densidad normal univariada con media cero y varianza o} (u¡ es la desviaci estandar de la i-ésima variable de estado). Para el computo, u¡ fué reemplazada por la desviaci estandar muestra!. Para escoger la banda h tima no hay un consenso teico. Una opci práctica que toma en cuenta las condiciones de la tasa de convergencia para los resultados de distribuci límite del Teorema 1 es 
+
+SELECCION DE LAS VARIABLES DE ESTADO 
+Es muy importante la selecci del vector Xt debido a que no se quisiera perder variables predictoras importantes en el conjunto de informaci lt con el cual se condiciona. En el extremo, una prueba no va a ser eficiente condicionalmente si no usa ninguna variable de estado. Por otro lado, no se quisiera incluir variables redundantes que pudieran tener un impacto importante en la potencia de la prueba. Lo que haremos es probar (2.1) y (2.2) para un candidato Xt dado. Para esto, se propondrá una prueba nerparamétrica. Sea Zt un vector de tama q1 x 1 en el conjunto lt, cuyas componentes son diferentes a las de Xt, La idea para poder hacer la selecci es verificar si Zt puede pronosticar los residuales 
+8 i.e., E(Ze~.t+tlXt] = O i = 1, ... ,n 
+
+Marco Teico e Instrumentaci Empírica 
+Tp,t+l -9p(Xt) Y ~.t+I -9w(Xe). Si (2.1) se cumple (i.e., E(rp,t+IIJ,) =gp(Xe)) entonces 
+Tp,t+l -gp(X,) = z;µ +€t+1 
+con E(ee+illt) = Oyµ= O. Bajo ciertas condiciones de regularidad, si Nh21c-+ oo y Nh21c+2 -+ O, entonces se va a tener que el estimador de µ 
+( 1 N )-1 ( 1 N ) 
+µ = N ~ f(X,)z,z; N ~ J(X,)Z,[rp,t+i -g,,(X,)) 
+es tal que ../Ñ(µ -µ) E+ N(O, Oµ) Como en el Teorema 2, se puede construir un estimador de matriz de covarianzas 
+fiµ =1-µ 1rµ1-µ 1 
+donde 
+A"' -N-1 LN l(x,)z,z; t=l 
+N 
+.-r N-1 ~--.-, 
+µ -L.J 'Yµ,t+1'Yµ,t+l 
+t=l 
+con 
+%,t+1 = J(Xe)[Zerp,t+l -Zt9p(X,) -rp,t+19z(X,) +9zp(X,) -gu(X,)µ-Z,Ztµ) 
+Bu(X) como se definipreviamente y 
+N 
+9z(X) -N-1h-1cf(Xt1 ~K(X~ x. )z. 
+9,,.(X) = N-1h-·f(x)-1 t.K ( X ~X,)Z,r,,,.+1 
+Esto da un estadístico de prueba 
+Q = Nµ'fi;1µ 
+con distribuci límite bajo (2.1) de x2 (qi). La prueba para (2.2) se construye de manera similar unicamente reemplazando rp,t+I y rp,.+l 2 2 t· t
+con rp,t+I y rp,a+I respec 1vamen e. 
+CAPÍTULO 3 
+
+
+
+Los Datos y Resultados 
+SELECCION DE DATOS 
+Comencemos primero por describir los datos que representaran los retornos en exceso r 11,t+ 1 del portafolio de mercado p y a los que representaran los retornos en exceso r i,t+ 1 i = 1, ... , n de los activos portafolio que se usan para pronosticar. La tasa libre de riesgo utilizada es la tasa mensual porcentual de los cetes a 28 días, la cual denotaremos A. Para el portafolio p se utilizel crecimiento porcentual del Indice de Precios y Cotizaciones menos la tasa libre de riesgo como sigue 
+= (IPCt+i -IPCt) lOO-,
+Tp,t+l IPCt X "' 
+Ahora bien, como el modelo está ubicado en un contexto macroeconico y siguiendo a Qing Wang {1997) quien usa los deciles para tama impares del value-weighted portfolio of New York Stock Exchange, nosotros utilizaremos el crecimiento porcentual del IPC para los sectores 
+1) Transformaci. 
+2) Construcci. 
+3) Comercio. 
+4) Transporte. 
+5) Servicios. 
+menos la tasa libre de riesgo como sigue 
+. _ (IPCi,t+l -IPCi,t) lOO-, 
+i = 1, ... ,5 
+r,,t+1 -IPC· x "' 
+,,t 
+de esto podemos observar que en nuestro estudio la n del capítulo 2 vale 5. El análisis estadístico básico de estos datos es 
+Los Datos y Resultados 
+portafolio  media  
+1 2 3 4 5 p  0.068965459 1.832799235 1.206859485 6.42690945 0.602764374 0.525386306  
+
+portafolio  desv. est.  
+1 2 3 4 5 p  9.15240845 21.85293699 10.60173723 66.83048961 14.7918615 10.05646583  
+
+1  
+0.7505  1  
+C=  0.7439 0.0155  0.5501 -0.0772  1 -0.0001  1  
+0.6019  0.4838  0.5734  -0.0527  1  
+0.6432  0.4148  0.5597  0.1040  0.7328  1  
+Donde C es la matriz de correlaciones.  
+
+Sigamos con la obtenci del vector Xt, el cual representará las variables dentro del conjunto de informaci de los inversionistas Ii con las cuales será suficiente para tomar decisiones de inversi. El total de variables que fueron escogidas y que pudiesen conformar el vector Xt son las siguientes 
+1) Indice de Volumen Físico de la Actividad Industrial en crecimiento porcentual. Se tomcomo medida del crecimiento de la economía. Lo denotaremos a. 
+2) Indice Nacional de Precios al Consumidor (INPC) en crecimiento porcentual. Se tomcomo medida de la inflaci. Lo denotaremos b. 
+3) Agregado Monetario M4 en crecimiento porcentual. Se tompara captar la riqueza en la economía considerando la liquidez. Lo denotaremos c. 
+4) Tipo de cambio peso-dar en crecimiento porcentual. Lo denotaremos d. 
+5) Diferencia entre la tasa mensual del papel comercial y ..X. Se tomcomo el premio de incumplimiento. Lo denotaremos e. 
+6) Indice Dow Jones en crecimiento porcentual. Se tompor considerar las principales acciones que cotizan en el New York Stock Exchange, mercado donde se encuentran listadas las principales acciones mexicanas. Lo denotaremos f. 
+Las desviaciones estándar correspondientes CT¡ utilizadas en el kernel K de las muestras son las siguientes 
+i  CT¡  
+1  4.489683122  
+2  2.339468186  
+3  2.357376626  
+4  6.402002774  
+5  0.388932972  
+6  4.535023512  
+
+Los datos utilizados en este estudio son mensuales y van de febrero de 1987 a diciembre de 2001 para el caso de las variables de estado. En cuanto a los retornos, van de marzo de 1987 a enero de 2002 (recorrido un periodo debido a su uso en t + l y la forma en que se realizaron los programas computacionales). De esto vemos que N =179. Siguiendo el procedimiento para la selecci de variables de estado descrito en el capítulo 2, se conformaron diferentes vectores Zt de tama 4 (i.e., q1 del capítulo 2 vale 4) y para cada uno de estos se calculo el valor del estadístico de prueba 
+Q = Nµfi.;1µ 
+con distribuci límite bajo {2.1) de x2{q1). Se conformaron 5 vectores z, donde por ejemplo z1236 indica que se utilizaron las variables 1,2,3 y 6 {i.e., Indice de Volumen Físico de la Actividad Industrial, INPC, M4 y Dow Jones). Con esto se obtuvieron los siguientes estadísticos de prueba Q 
+z  Q  
+Z¡234  Q1234 = 1.4378  
+Zt236  Q1236 = 6.3058  
+Zt246  Q1246 =6.1003  
+Z1245  Q1245 = 1.4048  
+Z1256  Q1256 = 6.9765  
+
+Hay que notar por supuesto que el nero de combinaciones posibles para formar los z a partir de las 6 variables es de 15 que es el nero de combinaciones de 4 elementos tomados de un conjunto de 6 elementos, pero aquí consideramos so estas 5 posibilidades. A mas, es posible formar los z de tama 5 3 lo que da mas posibilidades. También observemos que aquí solo tenemos un total de 6 variables de estado para escoger, pero es posible hacer las pruebas con mas variables y con los correspondientes vectores z que se puedan construir a partir de estas. Para esto, se anexa un apéndice con el programa1 para ejecutar todas las pruebas propuestas en este trabajo, el cual fué realizado en el lenguaje MATLAB2• 
+1Consultar el apéndice para ver como el programa recibe los inputs (las series) de forma matricial 
+2Cualquier duda relacionada con el programa, su uso, los comandos 6 las series de datos utilizadas, favor de contactarme a través del Centro de Estudios Econicos del Colegio de México. 
+Los Datos y Resultados 
+Consultando los cuantiles que dejan una probabilidad a la derecha de una x2 de 5 y 10 por ciento, observamos que todas estas elecciones son aceptadas. A cuando debiese de escogerse a Xt como 
+
+debido a que Q1245 = 1.4048 es el valor que se acepta a mayor confianza, por completitud y para efectos de comparaci realizaremos la prueba de eficiencia media-varianza condicional para el portafolio p para los 5 casos de Xt debido a que estas 5 pruebas de z fueron aceptadas (i.e., se acepto que los 5 z pueden pronosticar3 X). 
+LA PRUEBA DE EFICIENCIA DEL PORTAFOLIO p 
+Para todas estas pruebas, Zt se tomará como Zt = (1 x;)' (importante no confundir con el z que se acaba de utilizar arriba). A continuaci se reporta para cada uno de los casos el valor del estadístico de prueba 
+
+(3.1) 
+cuaya distribuci es ~qxn) 
+z  Q  
+X1234  T1234 =  34.9501  
+X1236  T1236 =  11.1104  
+X1246  T1246 =  10.4051  
+X124s  T1245 =  22.4002  
+X1256  T1256 =  14.1639  
+X123456  T123456 =  11.6842  
+
+Donde para los primeros 5 estadísticos utilizamos ~sxs) ypara el timo xf7xs)· Los cuantiles que dejan una probabilidad a la derecha de una x2 con 25 grados de libertad de 5 y 10 por ciento son respectivamente 37.65 y 34.38, lo que nos permite concluir que pes eficiente media-varianza condicionalmente para todos los casos excepto para X 1234 al 10 por ciento. Es importante observar que a cuando una de las mejores elecciones de variables era X 1234 debido a que Q1234 era de los valores mas bajos, con esta elecci se rechaza para 10 por ciento la hipesis de eficiencia. A mas, para una x2 con 35 grados de libertad, observamos que usando todas las variables de estado listadas anteriormente (i.e., para el caso X123456) la hipesis de eficiencia de pes aceptada ampliamente. La informaci anterior permite concluir que con los datos utilizados hay evidencia a favor del modelo CAPM en su versi condicional para el caso de México. 
+3Ver la secci de Selecci de las Variables de Estado del capítulo 2 
+CAPÍTULO 4 
+
+
+Apéndice 
+En este apéndice se incluyen las instrucciones necesarias para poder utilizar los programas elaborados en MATLAB y poder correr las pruebas desarrolladas en este trabajo. El hecho de poder capturar todas las series utilizadas en forma matricial y vectorial, así como el poder programar las pruebas con operaciones matriciales de manera simple, fué el motivo que inspirla decisi del uso de MATLAB; el cual es un lenguaje con un soporte muy amplio y poderoso en el uso de matrices y las operaciones que envuelven a éstas. Al final de este apéndice se encuentra el como elaborar los programas en MATLAB para que el lector pueda copiarlos (si desea realizar algunas pruebas con nuestros programas). 
+Para comenzar, se utilizarán las matrices A, Z y R, así como los vectores p y sigma y el valor numérico h. La matriz A se conforma de los vectores X, como columnas. & decir, la columna 1 de la matriz A es el vector columna de variables de estado X1 y así sucesivamente hasta la columna XN {recordemos que N es nuestro horizonte temporal, i.e., el nero de meses que deseamos utilizar en el estudio empírico). Observemos que A es de tama k x N Una vez que se está en la pantalla de comandos en MATLAB, aparece el prompt y se escribirá simplemente A=[ ]; . Dentro de los corchetes se incluirán los valeres de la matriz, los cuales pueden ser transportados de manera sencilla de EXCEL con un simple copiar-pegar (El punto y coma después del corchete permite que la matriz no sea desplegada y simple­mente quede en memoria). La matriz Z es igual que la matriz A con la salvedad de que le aumentamos un primer rengl de 1's, lo cual refleja que estamos utilizando Zt = (1 x;)'. Recordemos que Zt es de tama q x 1 (en nuestro caso q = k + 1). La forma de capturar Z es análoga a la de A. La matriz R contiene la informaci de los r i,t+l con i = 1, ... , n de la siguiente manera: el rengl 1 hace referencia a i = 1 y así hasta el rengl n. &to nos da una matriz de tama n x N. Para no lidiar con el hecho de tener los retornos en el tiempo t + 1 en la programaci, se utilizt; por lo cual hay que ser cuidadosos y meter los datos de cada rengl recorridos una fecha. Por ejemplo, si en la matriz A se comenzcon enero del 87 y se terminen diciembre de 2001, para R se comenzará en febrero del 87 y se terminará en enero de 2002. El vector p contiene la informaci de los r11,t+l e igual se tiene que recorrer la captura en una fecha. La captura en MATLAB de un vector es igual a la de una matriz, simplemente se escribe a continuaci del prompt p=[ ]; y en medio de los corchetes un copiar-pegar directo de 
+Apéndice 
+EXCEL. El vector sigma. de ta.ma k x 1 recoge las correspondientes desviaciones estándar de los renglones de A, i.e., las desviaciones estándar muestra.les de las va.ria.bles de esta.do. Estas desviaciones se utilizan en las densidades norma.les que conforman el nucleo K. De igual manera. simplemente delante del prompt se escribe sigma.=( ]; es importante meter estas va.ria.bles de esta. forma. para. que los programas corran. Para. el valor numérico h simplemente se escribe delante del prompt h = N -'I'(;r:r, claro uti­lizando los correspondientes valores de N y k en cuesti (Para. elevar un nero a. una. potencia. en MA TLAB se utiliza. el símbolo y para. dividir /).
+A 
+Ahora. bien, para. los programas utiliza.dos en la. selecci de las va.ria.bles de esta.do recorde­mos que utilizamos los vectores zt (minculas, no confundir con los Zt), con los cuales conformamos una. matriz z, cuyos renglones son un subconjunto de los renglones de A en diferentes combinaciones posibles ( ver capítulo 3 donde se escogi5 combinaciones diferentes ca.da. una. de 4 renglones de A). La. matriz z se captura. en MATLAB de forma. análoga. a.l resto de matrices. 
+Ca.da. programa. debe salvarse como un archivo diferente por cuestiones de optimizaci computacional. El orden en el que los programas corren es el siguiente, aunque solo ha.y que ejecutar algunos de ellos (mas a.delante se especificará cuales). 
+1) Funci K. Calcula. todos los valores del kernel para. los posibles valores de t y s. Arroja. una. matriz de N x N. 
+2) Funci Kl. Da. un valor del kernel específico. 
+3) Funci fgorro. Calcula. !(X) =N-1h-k E:=1 K ( xhx,). 
+4) Funci erret. Calcula. Tt. 
+5) Funci ggorrol. Calcula. gp, g,,,,, 9pr y 9r· 
+6) Funci bmew. Calcula. b, m, Wt y e. 
+7) Funci deltaNgorro. Calcula. 6N. 
+8) Funci gorroN. Calcula. aN, TJN y 9N· 
+9) Funci Tdelta.. Calcula. rO, AN, fiN y el esta.dístico de prueba. T6, 
+10) Funci mugorro. Calcula.µ. 
+11) Funci ggorro3. Calcula. 9z,9zp Y9w 
+12) Funci pfina.l. Calcula. Aµ, fµ, fiµ y Q. 
+Las icas funciones que deben ejecutarse para obtener la informaci necesaria de las pruebas propuestas en este trabajo son 
+i) Funci K. 
+ii) Funci deltaNgorro. 
+iii) Funci Tdelta. 
+iv) Funci mugorro. 
+v) Funci pfinal. 
+Al grabar cada funci en un archivo de MATLAB, este es guardado en la ventana del editor. Para ejecutar la funci deseada, en la ventana de comando se escribe simplemente el nombre de la funci delante del prompt (por ejemplo » Kts = K(A, sigma, h)) y se oprime la tecla enter. Una vez que se tienen todas las posibles variables de estado, se construyen la matriz A,Z, ...,z. Se ejecutan los cinco programas anteriores para diferentes opciones de z. Una vez que se haya escogido la mejor z que pronostique los Xt, se substituirá la matriz A con esta elecci de z y en consecuencia también tendrá que ser substituida la matriz Z de acuerdo al procedimiento descrito arriba (aumentar un rengl de 1' s ... ). Una vez hecho esto se ejecutarán de nuevo i), ii) y iii) de la lista de arriba, con lo que se encontrará el estadístico de prueba fcS defini­tivo, el cual permitirá decidir si el portafolio pes o no eficiente media-varianza condicional. Los programas: 
+A~ndice 
+Funci K 
+function Kts=K(A,sigma,h) sigma=sigma(:); [k,N] =size(A) ; Kts=ones(N,N); for t=1:N 
+for s=1:N Kts1=1; for i=1:k 
+c2=(1/sqrt(2•pi•sigma(i)))•exp(-((((A(i,t)-A(i,s))/h).-2)/(2•sigma(i).-2))); 
+Kts1•Kts1•c2; end Kts(t,s)=Kts1; 
+end end 
+Funci Kl 
+function Kts1=K1(A,t,s,sigma,h) sigma=sigma(:); [k,N]=size(A); 
+Kts1=1; 
+for i•1:k c2=(1/sqrt(2•pi•sigma(i)))•exp(-((((A(i,t)-A(i,s))/h).-2)/(2•sigma(i).·2))); Kts1:sKts1*c2; 
+end 
+Funci fgorro 
+function f=fgorro(A,t,sigma,h,Kts) 
+[k,N]•size(A); 
+sum=Kts(t,:)•ones(N,1); f•N--1•h--k•sum; 
+Funci erret 
+function rt=erret(R,Z,t) q=size(Z,1); n=size(R,1); rt=zeros(q•n,1); rt•kron(R(:,t),Z(:,t)); 
+Funci ggorrol 
+function [gp,gpp,gr,gpr]•ggorro1(A,t,sigma,h,p,R,Z,Kts) p=p(:); k=size(A,1); q=size(Z,1); [n,N]=size(R); gpr=zeros(N,1); gr=zeros(N,1); Kts1=Kts(t,:)•p; Kts2=Kts(t,:)•p.-2; ft•fgorro(A,t,sigma,h,Kts); gp•N--1•h--k•ft--1•Kts1; gpp=N--1•h--k•ft--1•Kts2; sum1=0; sum2=0; for s=1 :N 
+rs=erret(R,Z,s); Krt1•Kts(t,s)•rs; Krt2=Kts(t,s)•p(s)•rs; sum1=sum1+Krt1; sum2=sum2+Krt2; 
+end ft=fgorro(A,t,sigma,h,Kts); gr=N--1•h--k•ft--1•sum1; gpr=N--1•h--k•ft--1•sum2; 
+Funci bmew 
+function [wt,egorro]=bmew(A,t,sigma,h,p,R,Z,Kts) n•size(R,1); N•size(A,2); egorro=zeros(n,1); ft•fgorro(A,t,sigma,h,Kts); [gp,gpp]=ggorro1(A,t,sigma,h,p,R,Z,Kts); bgorrot=gp/gpp; mgorrot=1-bgorrot•p(t); for i=1:n 
+egorro(i)=mgorrot•R(i,t); end wt=ft•gpp; 
+A~ndice 
+Funci deltaN gorro 
+function dN-deltaHgorro(A,sigma,h,p,R,Z,Kts) q•size(Z,1); n=size(R,1); 
+[k,N]=size(A); 
+dN=[]; sum=O; sum1=0; for i=1:n 
+for t=1:N [vt,egorro]•bmev(A,t,sigma,h,p,R,Z,Kts); resl=vt•Z(:,t)•Z(:,t)'; res2=vt•Z(:,t)•egorro(i); sum=sum+res1; sum1::zsum1+res2; 
+end deltai=(inv((1/N)•sum)•((1/N)•sum1))'; dN=[dN,deltai]; 
+end 
+dN=dN'; 
+Funci gorroN 
+function gammaN•gorroN(A,t,sigma,h,p,R,Z,Kts,dN) n•size(R,1); q•size(Z,1); Inseye(n); ft•fgorro(A,t,sigma,h,Kts); rt•erret(R,Z,t); [gp,gpp,gr,gpr]•ggorrol(A,t,sigma,h,p,R,Z,Kts); aH=ft•(gpp•(Z(:,t)•Z(:,t)')+p(t) .-2•(Z(:,t)•Z(:,t)')); etaH=ft•(gpp•rt-gp•p(t)•rt+gr•p(t).-2-gpr•p(t)); gammaH•etaN-k.ron(In,aH)•dN; 
+Funci Tdelta 
+function Td=Tdelta(A,sigma,h,p,R,Z,Kts,dH) [n,N]=size(R); sum=O; for t•l:N 
+gammaH=gorroN(A,t,sigma,h,p,R,Z,Kts,dH); Krt•gammaN•gammaH'; sum=sum+Krt; 
+end sigma0=N--1•sum; sum1=0; for t=l :N 
+[wt,egorro]=bmev(A,t,sigma,h,p,R,Z,Kts); Krt-wt•(Z(:,t)•Z( : ,t)'); suml=suml+Krt; 
+end AN=kron(eye(n),N--1•sum1); omN=inv(AN)•sigmaO•inv(AN); Td=N•dH'•inv(omN)•dH; 
+Funci mugorro 
+function mu=mugorro(A,sigma,h,p,R,Z,z,Kts,dH,Td) [n,N]•size(R); sum2•0; sum3=0; for t=1:N 
+ft=fgorro(A,t,sigma,h,Kts); gp•ggorro1(A,t,sigma,h,p,R,Z,Kts); Krt=ft•(z(:,t)•z(:,t)'); Krtl•ft•z(:,t)•(p(t)-gp); sum2•sum2+Krt; sum3=sum3+Krt1; 
+end mu=inv(N--1•sum2)•(N--1•sum3); 
+
+
+
+Apéndice 
+Funci ggorro3 
+function gammamu=ggorro3(A,t,sigma,h,p,R,Z,z,Kts,dN,Td,mu) k=size(A,1); [n,N]=size(R); sum=O; sum1==0; for s=1 :N 
+Krt=K1(A,t,s,sigma,h)•z(:,s); Krt1=K1(A,t,s,sigma,h)•z(:,s)•p(s); sum•sum+Krt; sum1=sum1+Krt1; 
+end ft=fgorro(A,t,sigma,h,Kts); gz=N--1•h--k•ft--1•sum; gzp=N--1•h--k•ft--1•sum1; [gp,gpp,gr,gpr]•ggorro1(A,t,sigma,h,p,R,Z,Kts); gammamu=ft•(z(:,t)•p(t)-z(:,t)•gp-p(t)•gz+gzp-(z(:,t)•z(:,t)')*mu-(z(:,t)•z(:,t)')•mu); 
+Funci pfinal 
+function Q=pfinal(A,sigma,h,p,R,Z,z,Kts,dN,Td,mu) [k,N] =size(A); sum=O; sum1=0; for t•1 :N 
+ft=fgorro(A,t,sigma,h,Kts); gammamu=ggorro3(A,t,sigma,h,p,R,Z,z,Kts,dN,Td,mu); Krt=ft•(z(:,t)•z(:,t)'); Krt1=gammamu•gammamu'; sum=sum+Krt; sum1=sum1+Krt1; 
+end Amu•r-1•sum; Sigmamu=N--1•sum1; Omegamu=inv(Amu)•Sigmamu•inv(Amu); Q=N•mu'•inv(Omegamu)•mu; 
+
+BIBLIOGRAFÍA 
+[1) Arcones, Miguel A. 1995. 0n the Central Limit The,orem for U-statistics Under Abso­lute Regularity. Statistics and Probability Letters 24. 245-249. 
+[2) Banz, Rolf W. 1981. The relationship between return and market value of common stocks. Journal of Financia! Economics 9. ~18. 
+[3) Basu,Sanjoy. 1983. The relationship between earnings yield, market value, and return for NYSE common stocks: Further evidence. Joumal of Financia! Economics 12. 51-74. 
+[4] Bhandari, Laxmi Chand. 1988. Debt/e,quity ratio and expected common stock returns: Empiriail evidence. Journal of Finance 43. 507-528. 
+[5) Bierens, Herman J. 1987. Kernel estimators of regression functions. Chapter 3 in T.F. Bewley ed. Advances in Econometrics. 99-144. 
+[6] Breen, William J., Larry, R. Glosten, and Ravi Jagannathan. 1989. Economic signifi­cance of predictable variations in stock index returns. Journal of Finance 44. 1177-1190. 
+[7] Chao, K. C., Nai-fu Chen, and David A. Hsieh. 1985. An exploratory investigation of the firm size effect. Journal of Financia! Economics 14. 451-471. 
+[8] Chen, Nai-fu. 1991. Financial investment opportunities and the macroeconomy. Journal of Finance 46. 529-554. 
+[9] Doukhan, P., P. Massart, and E. ruo. 1994. The functional central limit theorem for strongly mixing processes. Ann. Inst. H. Poinca.ré Probab. Statist. 30. 6~82. 
+[10] Dybvig, P.H., and Stephen A. Ross. 1985. Differential information and performance measurement using a security market line. Journal of Finance 40. 38~400. 
+[11] Fama, Eugene F., and Kenneth R. French. 1989. Business conditions and the expected returns on bonds and stocks. Journal of Financia! Economics 25. 2~50. 
+[12] Fama, Eugene F., and Kenneth R. French. 1992. The cross-section of expected stock returns. Journal of Finance 47. 427-466. 
+[13] Fan, J., and Gijbels, I. 1996. Local polynomial modelling and its applications. Chapman and Hall. 
+[14] Ferson, Wayne E., and Campbell R. Harvey. 1991. The variation of economic risk premiums. Joumal of Political Economy 99. 385-415. 
+[15) Gibbons, Jean D., and Chakraborti, Subhabrata. 1992. Non-parametric Statistical In­ference. Dekker. 
+Bibllografla 
+[16) Gibbons, Michael R. 1982. Multivariate tests of financial models: A new approach. Journal of Financia! Economics 10. 3-27. 
+[17) Hansen, Lars Peter, and Scott F. Richard. 1987. The role of conditioning information in deducing testable restrictions implied by dynamic asset pricing models. Econometrica 55. 587-613. 
+[18) Jagannathan, Ravi, and Zhenyu Wang. 1996. The conditional CAPM and the cross­section of expected returns. Journal of Finance 51. 3-53. 
+(19] Keim, Donald B., and Robert F. Stambaugh. 1986. Predicting returns in the stock and bond markets. Journal of Financia! Economics 17. 357-390. 
+(20) Long, J. B. 1974. Stock prices, inflation, and the term structure of interest rotes. Journal of Financia! Economics l. 131-170. 
+(21) Merton, Robert C. 1973. An intertemporal capital asset pricing model. Econometrica 41. 867-887. 
+[22] Merton, Robert C. 1980. On estimating the expected retum on the market: An ex­ploratory investigation. Journal of Financia! Economics 8. 323-361. 
+(23) Reinganum, Mark R. 1981. Misspecification of capital asset pricing: empirical anoma­lies based on eamings yields and market values. Journal of Financia! Economics 9. 19-46. 
+[24] Shanken, Jay. 1985. Multivariate tests of the zero-beta CAPM. Joumal of Financia! Economics 14. 327-348. 
+(25) Wang, Qing. 1997. Tests o/ conditional asset pricing models. 
+
+
+

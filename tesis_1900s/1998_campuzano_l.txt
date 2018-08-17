@@ -1,0 +1,268 @@
+TRABAJO DE INVESTICACION PARA OBTENER El ORADO DE MAESTRO EN ECONOM IA CENTRO DE ESTUDIOS ECONOMICOS El COlECIO DE MEXICO 
+EOUIVAlENCIA PE RENTA$ E IMPlEMENTACIÓN EN JUBAJTAJ PE BIENES NETE/lOIJÉNEO$ 
+LARISSA CAMPUZANO NERNÁNDEZ 
+PROMOCIÓN 1996-1998 
+JULIO, 1998 
+ASESOR: DR. ROBERTO BURGUET VERDE 
+Índice General 
+1 Introducci ............ .. ... .. ... . 2 2 Revisi de resultados anteriores en teoría de subastas 3 
+2.1 Subastas de un so bien . . . . . . 3 
+2.2 Subastas de K bienes homogéneos 9 3 Implementaci y rentas en subastas de K bienes heterogeneos 12 4 Conclusiones . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 
+
+Resumen 
+En la primera parte del trabajo se hace una revisi de los resultados en teoría de subastas referentes a la implementaci y a las rentas obteras por los participantes en una subasta. Para los casos de subastas de un solo bien se revisan los resultados obtenidos en Myerson (1981). Para subastas de varias unidades de un bien se tienen dos casos; el primero es con demandas unitarias (Maskin y lliley (1989)) en donde se obtienen generalizaciones de los result&.dos de implementaci y del teorema <le equivalencia de rentas; el segundo P.S cuando las demandas no necesariamente son unitarias, para este caso también se puede generalizar el teorema de equivelencia de rentas. 
+En la segunda parte del trabajo se analiza el caso de subastas de varios bienes no homogéneos. En este caso las condiciones de primer orden inducidas por la condici de compatibilidad con incentivos no se resuelven trivialmente, de hecho se prueba que para tener soluci se tiene que cumplir, que las derivadas parciales cruzadas de las funciones de probabilidad de asignar un bien sean iguales. Esto nos permite tener condiciones necesarias para la implementaci de subastas y hacer explicitas algw1as de las condiciones que deben cumplir las funciones de probabilidad, para poder extender el teorema de equivalencia de rentas como lo hace Engelbrecht-Wiggans ( 1987). 
+l. Introducci 
+Una subasta es un conjunto de reglas explícitas que determinan la asignaci y los precios de los recursos, basandose en pujas hechas por los posibles compradores. El caso más simple de subastas es cuando se subasta un solo bien entre compradores neutrales al riesgo, con valoraciones privadas e independientes. Para éste, Myerson (1981) obtiene las condiciones n cesarias y suficientes para que las subastas sean implementables, esto es, todo posible comprador espera rentas no negativas por participar en la subasta y tiene incentivos a com­portarse como lo predice su verdadera valoraci. A partir de estas obtiene el "Teorema de Equivalencia de Rentas" que dice, que cualesquiera dos subastas que asignen el bien c!e la misma forma darán las mismas rentas esperadas al vendedor y a los posibles compradores1• 
+Si pensáramos en subastar varios bienes en un3 sola subasta, ¿se podría c.Ktender el teore­flla de equivalencia de rentas? Siguiendo con los supuestos de posibles compradores neutrales al riesgo y con valoraciones privadas e independientes Maskin y Riley (1989) estudian el caso d -,ubastas de más de una unidad del bien. Ellos caracterizan a 1~ subastas implementa­bles, cuando los posibles compradores demandan a lo más una unidad del bien, y extienden el teorema de equivalencia de rentas para este caso. Posteriormente Branco (1996) hace lo mismo para el caso de demandas no unitarias. 
+En el caso de subastas de K bienes no homogéneos, tomando compradores neutrales al 
+riesgo y con valoraciones privadas e independientes, el mecanismo más tivial para subastar 
+los bienes es realizar K subastas de un solo bien, sabemos que en éstas sí se cumple el teorema 
+d equivalencia de rentas por lo tanto el teorema se extiende para este caso. Sin embargo, 
+1So necesitamos que para alguna valoraci, digamos la mínima, los jugadores esperen pagar lo mismo en las dos. 
+el vendedor no tiene porque limitarse a subastas independientes de los K objetos cabe pues, preguntarse hasta que punto podemos asegurar que cuando se haga una sola subasta y se tomen en cuenta las valoraciones de forma agregada suceda lo mismo. 
+En el siguiente trabajo se analiza esta situaci y se llega a la conclusi de que so en ciertos casos se podrá generalizar el teorema de equivalencia de rentas, a subastas de K bienes. Se ha encontrado que las funciones que asignan la probabilidad de llevarse los di tintos bienes, tienen que cumplir necesariamente que sus derivadas parciales cruzadas sean iguales para que la subasta sea implementable, y en este caso el teorema de equivalencia de r ntas también es válido. Engelnrecht-Wiggans (1988) también estudila extensi del ¡-orema de equivalencia de rentas, pero no <liexplícitamente las condiciones de regularidad que deberían cumplir las funciones de probabilidad para la extensi del teorema. En este trabajo se encuentran explícitamente algunas de estas condiciones, lo que complementa su e tudio. 
+2. Revisi de resultados anteriores en teoría de subastas 
+2.1. Subastas de un so bien 
+Supongamos que se quiere vender un bien y se tienen varios posibles compradores cuyas disponibilidades a pagar por el bien pueden ser desconocidas. Una subasta es un conjunto de reglas explícitas que determinan la asignaci y el precio del bien sobre la base dP-las pujas que hacen los posibles compradores. Para estudiar los modelos de subastas tomaremos primero el más simple, éste supone agentes neutrales al riesgo, con valoraciones privadas e independientes y simétricos. 
+Cada comprador i tiene una cierta valoraci del bien, que denotaremos por vi . El com­prador es el ico que conoce su valoraci. Para los demás compradores ésta es una variable aleatoria. Supongamos que los compradores piensan que la variable aleatoria se distribuye de acuerdo con cierta funci denotada por F¡ : [!!.i, ti¡) -+ [O, 1] donde !!.i y v¡ son las valoraciones mínima y máxima posibles. Si los compradores son simétricos, enton­ces Fi = F : [!!., v] -+ [O, 1) para toda i = 1, ... , N. Hablarnos de valoraciones privadas e independientes cuando las distintas vi se distribuyen independientemente. 
+En una subasta se tienen que definir reglas que determinarán la asignaci del bien y el precio del mismo basándose en las pujas o, en general, acciones hechas por los posibles compradores. La puja de cada comprador dependerá en general de cuanto valore el bien. Un ejemplo de subasta es la subasta inglesa, en la que los posibles compradores hacen sus pujas de manera ascendente y oral hasta que alguien ofrezca un precio que no es superado por ning otro comprador, en cuyo momento se otorga el bien a este comprador y al precio ofrecido en su puja. Sin embargo, existen m11choo otros mecanismos posibles. 
+En su forma más abstracta, una subasta es un mecanismo indirecto de asignaci en 
+el cual cada posible comprador tiene un coujunt.o de acciones Si y ciertas funciones de 
+resultados; 
+p(S) S1 X • · • X SN -+ RN ;p(s) S1 x ... x sN -JRN 
+que describen el pago de cada uno de los participantes y quien se llevará el bien, todo ello como funci de las acciones elegidas por los compradores. Éstos eligirán sus acciones de 
+acu rdo con su valoraci. Una estrategia para un comprador será entonces una funci 5¡(·) : ['.!l., v] -+ S¡. 
+De entre todos los mecanismos definidos en esta forma, denominamos mecanismos directos de asignaci a aquéllos en que los posibles compradores tienen como conjunto de estrate­gias, el conjunto de sus posibles valoraciones. Es decir, se pide al comprador que revele su valoraci y se determinan los pagos y asignaciones en funci de éstos valores revelados. En nuestro caso, un mecanismo directo es pues, un conjunto de funciones, {p¡(v) , 'l/)¡(v)h=i,2, ... ,N , que determinan el pago que el participante i hará al vendedor p¡(v) y la probabilidad con la que se llevará el bien 'l/)¡(v), donde v = (v1. v2 , · · ·, v~ ), I::1 'l/)¡(t•) ~ l y .'V es el nero <le posibles compradores. Como se había notado anteriormente el comprador i no conoce la valoraci de los demás compradores, que son para él variables aleatorias. Es por esto que, para decidir qué valor revelará, deberá tomar en !:uenta el valor esperado de las funciones de pago y de probabilidad. Por lo tanto, definamos V_¡ = X¡eN. ,;#i[ '.!l;, v;] y 
+p¡(v¡) = Ev-i[P¡(v)] = ¡ p¡(s1 , ... , V¡, .. .SN) dF1 (s1) ...dF¡_1dF'¡+l ···dFN(sN) V_¡ 
+p¡(v¡) y x¡(v¡) son las funciones de pago esperado por entrar en la subasta y la probabili­dad esperada de ganar la subasta, respectivamente. Notemos que si los compradores son simétricos entonces [Y.¡, v¡] = [Y., v] y F, = F para toda i = 1, ... , N. 
+Las funciones que acabamos de definir dependen so de la valoraci del comprador y so11 estas funciones las que tomará en cuenta un posible comprador para decidir qué est.ratégia usará. En los mecanismos directos las distintas estrategias s¡ (·) para cada uno de los posibles compradores consisten en revelar un cierto valor para cada valoraci real v; esto es, s¡(·): [_'!¿1 U)-+ (_'!¿,v]. 
+Dado un mecanismo directo de asignaci, si la estrategia s;(v¡) = v¡, para cada posi­ble comprador i, (revelar la verdadera valoraci) es una estrategia de equilibrio, entonces diremos que el mecanismo es un mecanismo directo de revelaci. 
+El siguiente resultado, tradicionalmente atribuido a Myerson (1981), simplifica el estudio de mecanismos en general y de subastas en particular. 
+Principio de Revelaci: Dado un mecanismo indirecto de asignaci existe un me­canismo directo de revelaci que da a los posibles compradores y al vendedor las mismas r ntas esperadas que el mecanismo indirecto2 . 
+La idea intuitiva detrás de la prueba es que si en el mecanismo indirecto la estrategia 
+s;(vi) es de equilibrio introduciendo un mediador que diga a cada comprador: "dime tu 
+valoraci y yo te asigno el bien de acuedo a s;(·) y al mecanismo indirecto", entonces lo 
+que cada posible comprador hará será revelar su verdadera valoraci V¡. 
+El principio de revelaci nos premite restringir nuestra atenci, para el estudio de 
+subastas, a mecanismos directos de revelaci. Es decir, a mecanismos {p¡(v), V'¡(v) h=i,2, ...,N 
+tales que, la verdadera valoraci maximize las rentas esperadas de cada posible comprador 
+ésta es la llamada restricci de compatibilidad c.on los incentivos; 
+
+1 La prueba se encuentra en Dasgupta, Hammond y Maskin (1979). Esta versi es de Myerson (1981) . 
+para t.oda si(·) : [u, v] -+ [u,v], para toda vi E [!!., v] y para toda i = 1, ... , N donde s;(v¡ ) = v1• 
+Los posibles compradores pueden decidir participar o no en la subasta. Para que todos los posibles compradores estén dispuestos a participar en ella, las rentas esperadas deberán ser no negativas, ya que no participando tienen rentas esperadas iguales a cero. De esto obtenernos la restricci de participaci; 
+xt·(s t·(vt ·)vt · -pt·(s t·(vt·)) > O (2.1)
+, -
+para toda vi E [!!., v]. Si un mecanismo cumple con las restricciones de compatibilidad con incentivos y de participaci diremos que es implementable. Estas condiciones y el principio de revelaci definien, por lo tanto, el conjunto de me­canismos que un vendedor posee a la hora de vender un bien. 
+Ahora comenzaremos el estudio de las rentas esp(;radas para el vendedor y los compra­dores en cada uno de los mecanismos. Corno inicio daremos un resultado muy celebrado en teoría de subastas. 
+Teorema de Equivalencia de Rentas: Con agentes neutrales al riesgo y valoraciones 
+privadas e independientes, si dos subastas (implementables) asignan el bien de la misma 
+forma, esto es, tienen funciones xi(·) iguales, entonces el vendedor y los posibles compra­
+dores esperan las mismas rentas en ambas subastas, dado que para alguna valoraci cada 
+comprador espere las mismas rentas en ambas subastas. 
+Generalmente la tima condici se reduce a que los pagos esperados por los compra­
+dores, si tienen valoraci mínima, sean iguales a cero en las dos subastas. Ya que de esta 
+forma, si la probabilidad de llevarse el bien para las valoraciones mínimas es cero, entonces 
+las rentas esperadas en ambas subastas son iguales a cero. Demostraci: Ya vimos que nos podemos restringir a mecanismos directos de revelaci. Si tenemos una subasta implementable, entonces la verdadera valoraci de cada posible comprador maximiza sus rentas y de las condiciones de primer orden tenemos 
+
+(2.2) 
+Integrando 2.2 obtenemos 
+
+(2.3) 
+P.Sto indica que el pago so depende de la funci de probabilidad xi( ·) y de la condici inicial dada por pi(Q). Sabemos que alg jugador espera ganar lo mismo en las dos subastas, 
+u pongamos que éste es el jugador con valoraci Q3• Esto implica que Pi (y_) es igual en ambas subastas y entonces la funci de pago también es igual en las dos subastas. Por lo tanto las rentas esperadas por los posibles compradores 
+
+3 Si no es así, simplemente integramos desde la valoraci que tenga el jugador, que obtiene las mismas rentas en las dos subastas, hasta V¡ . 
+y los beneficios esperados del vendedor 
+son iguales en ambas subastas, y es en este sentido que decimos que las subastas son equivalentes. • 
+Este resultado además de ser interesante por sí mismo es de gran utilidad para el estudio de subastas, ya que nos permite reducir los mecanismos de asignaci al estudio de las funcics Xi ( · ) ( i = 1, ... N) que determinarán los pagos p¡ ( ·). Mu chas veces necesitamos saber cuál es la mejor forma de vender un bien, esto es, la que dé más rentas al vendedor (subasta tima). Gracias al teo:rema de equivalencia de rentas la soluci de este problema se reduce a encontrar una funci de asignaci de probabilidades que maximize las rentRS esperadas del vendedor. 
+Recordemos que los resultados anteriores están basados en el modelo más simplt de subastas en donde se vende solamente un bien. Ahora analizaremos el caso de sub3Stas que vendan K bienes. 
+2.2. Subastas de K bienes homogéneos 
+Supongamos que se quiere vender K bienes homogéneos con N posibles compradores neu­trales al riesgo, simétricos, con valoraciones privadas e independientes y K < N. Ahora tendremos que tomar en cuenta co son las demandas de los posibles compradores y de­pendiendo de como sean éstas los resultados variarán. Primero estudiaremos el caso más simple, que es el de demandas unitarias para luego entrar al caso de demandas no unitarias. 
+Supongamos que los posibles compradores tienen demandas unitarias, es decir, valoran la primera unidad del bien en V¡ y las demás unidades no tienen valor marginal para él. Usando el principio de revelaci podemos identificar subastas con mecanismos directos de asignaci, {p¡(v), 'tf,,¡(v)h=i,2, ... ,N, que deteman el pago que el participante i hará al vendedor Pi (v) , y la probabilidad con la que se llevará un bien VJ¡ ( v) E [O, 1J, donde v = ( 111, v2 , · · ·, VN ), E: 1 'tf,,¡ (v) :::; K y N es el nero de posibles compradores4 . Los posibles compradores so conocen sus valoraciones, por lo que escogerán su estrategia basándose en los valores esperados, condicionados en su propia valoraci, de las funciones p¡(v) y 'lj,¡(v). De esta manera 
+p¡(v¡) = Ev-i [P¡(v)] = l¡p¡(s1 , ... ,V¡ .. .sN) dF1(s1) ...dF'¡ _¡dFi+ l···dFN(sN) 
+_
+X¡(v¡ ) = Ev-i[VJ¡ (v)] = l_¡'tf,,¡ (si , ... , v¡, ...SN) dF1 (s1) ...dF'¡_1dFi+ l·· ·dFN( SN) 
+son el pago esperado en la subasta y la probabilidad esperada de llevarse una unidad del 
+bien. 
+Las restricciones de participaci y de compatibilidad con incentivos son iguales que en 
+el caso de un bien, 2.1 y 2.2, entonces la extensi del teorema de equivalencia de rentas 
+es trivial, ya que se vuelve a obtener 2.3, con lo que las funciones de pago so dependen 
+de la probabilidad de llevarse el bien y de una ciertas condiciones iniciales. Por lo que, si 
+dos subastas asignan el bien de la misma forma, y para alguna valoraci los compradores 
+esperan las mismas rentas en ambas subastas, entonces las dos subastas serán equivalentes. 
+~ Notemos que lo ico que cambia, con respecto al caso anterior, es la funci de probabilidad. 
+Notemos que al tener varios bienes para vender, las subastas pueden ser secuenciales o simultáneas, pero el teorema de equivalencia de rentas es independiente de esta característica. 
+Supongamos ahora que los posibles compradores pueden tener demandas no unitarias, h(q, vi) es la funci inversa de demanda donde q representa el nero de unidades del bien y vi parametriza las preferencias del comprador. Además supongamos que h(·) es decrecient en q y creciente y derivable en vi. 
+Por el principio de revelaci una subasta es equivalente a un mecanismo directo de asig­naci; {pi(v),1J,i(v)h=1,2, ...,N, que determina el pago que el participante i hará al vendedor Pi (v), y el nero de unidadt=>..s del bien quP, se llevará 1/1, (v) E [O, l] , donde v = (v1, V?, · · · ·1 N), 
+Definamos R¡ (z, vi) como 
+1
+1/J;(V-;,z) 
+R.¡(z, vi) = E[ h(q, vi) dq] 
+0 
+esta funci repesenta las rentas netas que el comprador i espera ganar si se comporta como si z fuera el valor que parametriza sus preferencias, siendo que el verdadero valor es t , . Las rentas esperadas para cada posible comprados son; 
+R¡(z, vi ) -p¡(z) 
+Entonces para que el mecanismo sea compatible con los incentivos, se tiene que cumplir que De aquí que la asignaci del bien y las N condiciones iniciales son las que determinan el pago esperado por los posibles compradores. Por lo tanto, el teorema de equivalencia de rentas se extiende también a este caso. 
+3. Implementaci y rentas en subastas de K bienes heterogeneos 
+Supongamos que se quieren vender K bienes no homogéneos y tenemos N posibles com­pradores sin restricci presupuestaria significativa. El comprador i tendrá una cierta valoraci vi ; del bien j, denotaremos por vi = (vi 1, · · · , v, K) al vector de valoraciones del comprador i. Al·igual que en el caso de un so bien, las valoraciones del comprador son informaci privada y para los demás ésta es una variable aleatoria, en este caso un vector de variables aleatorias que se distribuye con una funci conjunta F, (s¡1, · · · , s,K ) : I!!, 1, ii, 1J x · · · x [Q, J< ,V¡ K J -+ [O, 1J donde ~i ; y V¡; son las valuraciones mínima y máxima posibles del comprador i pur el bien j. Supongamos que los compradores son simétrico to es, F¡ = F: [Q1,vi] x · · · x [QK,vK]-+ [O, l] para toda i = 1, ... , N. Además supongamo que lo vectores de valoraciones son independientes, es decir, se distribuyen independientemente. 
+Por el principio de revelaci podemos restringirnos, para el estudio de subastas, a estu­
+diar mecanismos directos de asignaci que cumplan las restricciones de participaci y com­
+patibilidad de incentivos. Los mecanismos serán conjuntos de funciones {p¡( v), 1Pi (v) },= 1,2, ... ,N 
+que determinan el pago que el participante i hará al vendedor, 
+y la probabilidad con la que se llevará cada bien j, 
+donde v = (vll, v12, · · ·, V1K, · · · · · ·, VN1, VN2, · · ·,VNK} es el vector de valoraciones de todos compradores por los K bienes. Como los jugadores son simétricos 
+Además [O, l]K = [O, l]i x · · · x [O, l)K y {¿:1 t/Ji(v))i $ 1 para j = 1, ... , K y en notaci vectorial ( (I:!1 t/Ji(v))i es la entrada j del vector I:!1 t/Ji(v) ). 
+El comprador i no conoce las valoraciones de los demás compradores que son para él variables aleatorias. Es por esto que, para tomar sus decisiones, deberá tomar en cuenta el valor esperado de las funciones de pago y de probabilidad. Sean V_, = xiEN, ,iti([~1, vi] x 
+Pi(vi) = Ev-i[Pi(v)] = ¡ Pi(s1, ... , vi, ... sN) dF(si) .. · dF(si-1)dF(si+1) .. · dF(sN) 
+V_¡ 
+las funciones de pago esperado por entrar en la subasta y la probabilidad esperada de ganar 
+los K bienes respectivamente. De esta manera obtenemos funciones que dependen so de 
+su vector de valoraciones .. 
+Ahora la estrategia del comprador i será revelar un cierto vector de valoraciones, digamos 
+K
+donde '11; es su verdadero vector de valoraciones y X¡(s¡) ·v¡ = ¿1= 1(x¡(s¡))ivii es el producto punt.o de vectores. 
+De la misma forma que en el caso anterior, tenemos que imponer ciertas restricciones de participaci y de compatibilidad de incentivos al mecanismo. La primera es que el valor esperado de las rentas sea no negativo para todos los compradores, esto es, para toda i = l, ...,N 
+X¡(V¡) · V¡ -p¡(v¡) 2: Ü. 
+La segunda es que el mecanismo tiene que ser tal que revelar su verdadera valoraci maximizará las rentas esperadas. Esto es, si V¡ = (V¡¡, ... , viK) es su veradera valoraci esta tiene que ser soluci del problema 
+k 
+Max.:;=(z;¡, .... z,n) ¿(x¡(Z¡))jvi -p¡(zi) j =l 
+o equivalentemente, para j = 1, ... , K, vii debe solucionar 
+k 
+Maxz;; ¿(x¡(V¡¡ , .. . , Zij , ... , ViK ))jvi -p¡(V¡¡' ... Zij , .. . , ViK) j=l 
+Si las funciones del mecanismo son derivables, podemos dar las restricciones de compatibili­dad como condiciones de primer orden del problema anterior, que son para toda i = 1, ... , N las siguientes: 
+8(x¡(V¡) h 8(x¡(V¡) )K 8p¡(V¡)
+----V¡¡ + · · · + ----ViK ­
+8v¡1 8v¡1 8vil (3.1) 
+
+donde V¡ = ( vil , ... , viK) y ( X¡ (V¡)); es la entrada j del vector X¡ (vi). D cada i obtenemos K ecuaciones. La pregunta es, bajo qué condiciones existe una funci p, (111) : [~1, v1] x · · · x [~K, vK] --+ IR tal que sus derivadas parciales cumplan con las K 
+cuaciones anteriores, o lo que es lo mismo encontrar bajo qué condiciones el campo 
+H =(ª(x,(v;))¡ V· + ... + a(x,(v;))K V· ... a(x,(v,))i V· + ... + a(x;(v;))K V· ) es conservativo. 
+8v;1 tl ov¡¡ tK' ' av,K tl av,K tK 
+Engelbrecht-Wiggans (1988) encuentruna ecuaci equivalente a las K ecuaciones en-contradas aquí, ya que utilizuna parametrizaci de una curva en el campo y sobre ésla derivla condici de primer orden. Para resolver esta ecuaci necesita que una cierta integral de linea sea independiente de la trayectoria, lo que se puede reducir también a pedir que el campo H sea conservativo. Enggelbrecht-Wiggans da por hecho que ésto sucede, lo cual no necesariamente es cierto, como veremos más adelante. 
+Con técnicas de cálculo integral en campos vectoriales podemos encontrar condiciones ne­
+cesarias y suficientes para que un campo vectorial G(x) : IRn--+ IRn sea conservativo, es decir, 
+exista una funci derivable y continua <l>(x) : IRn --+ IR tal que v'<I> = (~x>, ... , ºa4>(x)) = 
+V•] Xn 
+(G1(x), .. . ,Gn(x)) = G. Para esto necesitamos que las funciones con las que trabajemos sean derivables continuas {clase C1). Por lo tanto, de ahora en adelante trabajaremos con mecanismos {p1 (v) ,'!J,¡(-v)}i=l,2,... ,N que sean de clase C1. 
+Teorema l. Sea G un campo vectorial continuo y derivable definido en un dominio D, y 
+sea11 A .Y B cualesquiera dos puntos en D. Entonces la integral de línea 
+es independiente de la trayectoria que une Ay B si y so si existe una funci derivable y coutíuua <1>(·) : D -IR ta/ que V<l> = G. 
+Demostraci: Supongamos que G es un campo conservativo, esto implica que existe una funci derivable y continua <1>( ·) : D -IR tal que V<l> = G esto es a4> (x) = 
+n:J. ¡ 
+G1(x), ... , 884> (x) = Gn(x)
+Xn 
+Sean x0 = (xo1 , ... ,x0n) y x1 = (xu , ... ,X1n) dos puntos en Dy sea R(t) = (x1(t) , ... ,xn(t)) 
+0 1
+(a ~ t ~ b) una curva suave C que une a xy x. Por la definici de integral de línea 
+-<l>(x1(t), ... ,xn(t)) I! -<l>(xu, ..., X1n) -<l>(xo1, ... , X0n) 
+De aquí que el valor de la integral de G = V<l> es simplemente la diferencia de los valores de 
+<l> en los extremos de la curva, sin importar co sea ésta. Por lo tanto, si Ges un campo vectorial conservativo su integral de línea no depende de la trayectoria. Ahora suponga que la integral fe C · dR es independiente de la trayectoria. Sea xº = (::i:01 , ... , Xon) un punto fijo en D. Para cualquier punto x = (x1, ... , Xn) construimos el campo 
+<!8calar definido por la integral 
+
+obre cualquier curva suave en D que una x0 y x. A continuaci se demostrará que P.l gradi nte de esta funci es igual a G, esto es 8!(x) = G1(x), ..., 8!'jx) = Gn(x) . 
+uX1 <T~n 
+Como la integral definida por 3.2 no depende de la trayectoria podemos elegir cualquier camino que una a x0 y x, en particular uno que llegue hasta las timas n -1 coordenadas de x y después, dejando estas fijas, so mueva la primera para llegar ax. Por la adit1vidad <l<' la~ integrales podemos escribir la integral <I> como sigue: 
+2 2
+<I>(x) _ r<z,,x,·· ,:i:n) G. dR + ¡<:i:,,:i:, ... ,:i:n) G · dR 
+1
+~ (2:01, ... ,:ion) (z1,:i:2, ... ,:i:n) (:i:1 ,X2,···,Xn) 
+-<I>(z1 X2 ..., Xn) + G · dR 
+(z1 ,2:2, ... ,:i:n) 
+-<l>(z¡ , X2 ... , Xn) + rx¡ Gl (s¡ , X2, ..., Xn)ds¡
+Íz 1 
+La tercera igualdad se da por que al permanecer constantes las timas n -1 coordenadas ds, = O para toda i f l. Y derivando <I>(x) con respecto a x1 obtenemos 
+a<I> 
+-a(x) = G¡(X¡, ... ,xn) 
+X¡ 
+<le manera análoga se obtiene :!(x) = Gi(x1, . .• , Xn) para toda i = 1, ... , n, y así G es un 
+campo conservativo. • Ya tenemos condiciones necesarias y suficientes para que exista la funci p(v¡) que necesitábamos, pero saber si la integral de línea no depende de la trayectoria es algo muy difícil de probar, y nos gustaría tener condiciones más fáciles de verificar en la práctica. En física es un problema com comprobar si un campo es conservativo en IR.3 • Lo que haremos a continuaci será generalizar la forma de resolver estos problemas en física para el caso de 
+IR". 
+Teorema 2. Sea G un campo vectorial derivable y con derivada continua en un domino convexo D. La integral fe G · dR es independiente de la trayectoria C en D si y so si ~(x·) -~(,._ ) para toda t. ~ J . -­
+-x , . e i 1, ... , n.
+aXJ v..i; 1 
+Demostraci: Suponga que las derivadas parciales r.ruzadas son iguales, esto es ~(x) = 
+, ~ac (x) para toda i / j, e i = l. ... , n. Escoja un punto x0 = (xo1, ... , x0n) en D y defina un 
+x, 
+campo escalar <I>(x) como la integral de línea de G de x0 ax (en D) sobre el segmento de línea que los une, que por ser convexo está totalmente contenida en D. El segmento de línea 
+0
+está dado por R = x0 + (x -xº)t (O~ t ~ 1), y ~~ = x -x, lo que implica que 
+
+(1 dR 
+<I>(x) -Jo G(s1, ... sn) · -;¡¡dt 
+1-1G(s1, ... , Sn) · (x -x0 )dt 
+1-1[G1 (s1, ... , sn)(X1 -Xo1) + · · · + Gn(S1, ...,Sn)(Xn -X0n))dt 
+donde s¡ = xOi + (x¡ -x0¡)t . Habrá que verificar que la funci <I> es tal que 'v<I> = G. 
+Derivando el> con respecto a xi obtenemos 
+¡
+1 ¡1
+84> 8G1 8Gn 
+-a(x) = [t-a (x1 -Xo1) + '· · + t-a(xn -x0n))dt + Gi (si, ... , Sn)dt (3.3)
+Xi O S¡ S¡ O 
+como las derivadas parciales cruzadas son iguales 
+8G1 8Gn 8G1 8G1 
+-(xi -Xo1) + · · · + -(xn -x0n) --(x1 -Xoi) + · · · + -(xn -x0n)
+as. 8s1 8s1 8sn -v'G1(s1, ... , sn) · (x -xº) 
+Definamos g(t) = G1(s1 , ... ,sn), y notemos que g(l) = G1(x1 , ... ,xn). Entonces por la regla de la cadena g'(t) = v'G1(s1, ... , sn) · (x -x0) 
+·on lo que 3.3 se convierte en 
+1 
+84> (x) 
+-1· tg'(t)dt +1g(t)dt
+8x1 1
+1 -(g(t)t)'dt 
+-g(l) = G1(X1, .. ,,xn) 
+Análogamente podernos probar que ~(x) = G¡(x1 , ... ,xn) para toda i = 1, ... , n, y por el teorema anterior la integral de línea no depende de la trayectoria. Supongamos que la integral de línea no depende de la trayectoria, construyamos el mismo nunpo escalar que en el teorema anterior 
+cl>(x) = 1:r G1 (si, ... , Sn)ds1 +· · · + Gn(S¡ , ... , sn)dsn 
+xº 
+como ya se había demostrado se cumple que :, (x) -Gi(x) . Ya que G tiene derivadas continuas también se cumple 
+
+[j24> 
+-OX¡OXj (x) 
+-ac; (x) axi 
+para toda i # j P. i = l, ... , n. • 
+De esta manera obtenemos condiciones necesarias y suficientes para que exista la fun­ci p(1•¡) que son más fáciles de verificar. Regresando al problema original calculamos las derivadas parciales cruzadas 
+
+donde (xk)z es la entrada z del vector Xk. Para que !f&i = ~ se tiene que cumplir 
+v•, ux, 
+
+que se reduce a pedir que las derivadas parciales cruzadas de las funcies xk(vi) sean iguales para toda i = 1, ... , K con i -=/:-j y para toda k = 1, ... , N. 
+De las demostraciones de los teoremas anteriores sabemos co calcular la funci de pago p(1\ ) que será la integral de línea 
+sabemos que si cumple que las derivadas parciales son iguales ~ = ~, esta integral no dependerá de la trayectoria. Lo que en nuestro problema significa que el pago so depende de la valoraci vi y de un cierto valor 110 que puede ser !?. = (Jl.1, . .. , Y.K), y no de la trayectoria qu usemos para unirlos. De aquí tenemos que el pago es una funci bien definida y depende so de las funciones que asignan la probabilidad de llevarse el bien xi(v¡). Hemos obtenido el primer resultado de este trabajo que se puede resumir en la siguiente proposici. 
+Proposici l. Si un mecanismo de asignaci {pk(v), ~k(v) }k= l ,2, ... ,N , que determina. el pago que el participante i hará al vendedor y la probabilidad con la que se llevará el bien j por medio de las funciones 
+respectivamente y donde las funciones Pk(v), ~k(v) son de clase C1, es implementable entonces las derivadas parciales cruzadas de las funciones xk(·): [Y.1,vi) x · · · x [Y.K,vK]-+ [O, ljK , 
+definidas como 
+
+donde vk = ( v1, v2, ... , t K) es el vector de valoraciones del comprador i por los K bienes, son iguales, esto es, 
+a(xk)] a(xk)i
+
+-(3.4) 
+para toda i = 1 .. . , K con i -=I= j y para toda k = 1, ... , N, dondeº~" ), denota a la derivada 
+J 
+parcial con respecto a vi de la i' ésima entrada del campo Xk, 
+lfn corolario de este resultado, es la extensi del teorema de equivalencia de rentas al caso de subastas de K bienes heterogéne05. 
+Al igual que en subastas de un solo bien tendremos que las rentas esperadas de los compradores y del vendedor serán iguales en dos subastas que asignen los bienes de la misma forma (si para alguna valoraci se paga lo mismo en las dos subastas)5. Por lo tanto, el teorema de equivalencia de rentas sí se puede generalizar a mecanismos implementables de K bienes heterogéneos. Las condiciones 3.4 podrían ser interpretadas como sigue, el cambio en la valoraci del bien i afecta a la probabilidad de asignar el bien j de la misma forma que afectará un cambio en la valoraci del bien j a la asignaci del bien i. 
+Proposici 2. Si dos subastas de K bienes heterogéneos son implementables, asignan el bien de la misma forma y para alguna valoraci los compradores esperan las mismas rentas 
+5 Esto es equivalente a que K condiciones inicales, dadas por J:,: ¿~= 1 ª<;~.>, (1•1, ... , , , . .. , v K )s,ds, ,sean i)a!.ualcs en ambas subastas para alg vo 
+11 la dos, entonces las subastas son equivalentes. 
+En el caso más trivial, en él que la subasta de los K bienes se realiza como K subastas diferentes, tendremos que 8!c_1c), = Opara toda j = 1, ... , K con i -=/-j y para toda k = 1, ... , N.
+vv,, 
+Entonces se cumple la condici de las derivadas parciales cruzadas iguales y así también el teorema de equivalencia de rentas, lo que concuerda con lo que se concluyen las subastas de un so bien. 
+4. Conclusiones 
+En t.e trabajo se encontrque la venta de K bienes heterogéneos es implementable por un mecanismo directo de asignaci so si en el mecanismo el cambio en la valoraci del bien i afecta a la probabilidad de asignar el uien j de la misma forma en que afectará un cambio en la valoraci del bien j a la asignaci del bien i. Ésto complementa el resultado de Engelbrecht-Wiggan dando explícitamente algunas de las condiciones de regularidad que tie­nen que cumplir las funciones de probabilidad para que se cumpla el teorema de equivalencia de rentas. 
+En resumen, hemos encontrado las condiciones necesarias para que un mecanismo de 
+asignaci de K bienes heterogéneos sea implementable. Con esta base pretendemos tra­
+bajar en el futuro para definir condiciones suficientes que seguramente tendrán que ver con 
+monotonía de las funcies de probabilidad. Estos resultados harán posible el estudio de 
+subastas timas para el caso de K bienes heterogéneos. 
+Referencias 
+llJ Branco F. (1996) "Multiple Unit Auctions of an Indivisible Good", Economic Theory, vol. 8, pp 77-101. 
+121 I3urgu t R. (1998) "Auction Theory; A guided tour", Working Paper. 
+[3] Dasgupta P. , Hammond P. , y Maskin E. (1979) ''The implementation of social choice rules: Sorne general results on incentive compatibility" , Review of Economic Studies vol. 46 pp 185-216. 
+[4] Engelbrecht-Wiggans R. (1988) "Revenue Equivalence in !Vlulti-object Auctions", Eco­nomics Letters, 26, pp 15-19. 
+[51 Maskin E. and Riley {1989) "Optimal Multi-unit Auctions" . in Hahn F. (ed) , The Eco­nomics of Missing Markets, Information and Games, Oxford lniversity Press. 
+[6] McAfee P. and McMillan J. (1987) "Auctions and Bidding" , Journal of Economic Lite­rature vol. 25, pp 699-738. 
+[7] McAfee P. and McMillan J. (1993) "The Declining Price Anomaly", Journal of Economic Theory, vol. 60, pp. 191-212. 
+[8] Myerson R. (1981) "Optimal Auction Design", Mathematics of Operations Research, vol. 6 pp. 58-73. 
+l9J Young E. "Vector and Tensor Analysis", A Series of Monographs and Textbooks Marcel Dekker Inc, 1978. 
+
+

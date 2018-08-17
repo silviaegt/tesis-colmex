@@ -1,0 +1,909 @@
+TRABAJO DE INVESTIGACION PARA OBTENER EL GRADO DE 
+MAESTRO EN ECONOMIA 
+CENTRO DE ESTUDIOS ECONOMICOS EL COLEGIO DE MEXICO 
+Bursatilizaci6n del Cmdito Hipotecario: 
+Evaluaci para la posible aplicaci en México de un modelo de fijaci de precios para valores respaldados por hipotecas. 
+Jair Mu/foz Bugadn 
+Promoci 1994-1996 
+Enero, 1997. 
+ASESOR: Mogens Bladt Petersen 
+Gracias a mi familia, a mis amigos y a todos los que de alguna forma me ayudaron en la realiz.aci de mi tesina, en especial al Dr. Antonmaria Minzoni Alessio, por su asesoría en ecuaciones diferenciales. 
+
+
+RESUMEN 
+Esta investigaci aborda el proceso de burasatiliz.aci de cartera hipotecaria, enfocándose principalmente a mostrar que tan factible es la implementaci en México de modelos financieros continuos que se utilizan en este proceso y que son aplicados en economías desarrolladas. 
+Para lo cual, se analiza un modelo que fija precio a un valor respaldo por créditos hipotecarios (valor GNMA), el cual está respaldado por el Goverment National Mortgage Asociation. 
+Este modelo, es un modelo estocástico y continuo que utiliza la metodología de fijaci de precios para opciones y es aplicado al valor GNMA el cual es emitido y comerciado en los Estados Unidos. 
+Para realizar este análisis, la investigaci está dividida en dos partes, en la primera se trata el marco conceptual para comprender el proceso de bursatilizaci de cartera hipotecaria y el modelo de fijaci de precios. Por lo cual, se inicia tratando los principales créditos hipotecarios que se comercian en nuestro país, así como la reestructuraci en unidades de inversi. En otra secci, se exponen las características principales para fijar precio a bonos y opciones. Para finalizar esta primera parte, se tratan los principales rasgos de la bursatilizaci del crédito hipotecario poniendo énfasis en lo referente al valor GNMA. 
+En la segunda parte, se expone el modelo de fijaci de precios para valores GNMA. Posteriormente, se realiza una descripci razonada de las características del valor, resolviendo en primer lugar la ecuaci diferencial que arroja el modelo, para continuar con una discusi intuitiva de las características del valor. Después, se analizan los supuestos del modelo utilizando métodos econométricos y estadísticos. 
+Finalmente, se concluye que no se puede aplicar el modelo de fijaci de precios a la economía mexicana debido principalmente a la alta volatilidad de la tasa de interés por lo que se propone elaborar un nuevo modelo que capture las principales características de la economía Mexicana. 
+ÍNDICE 
+INTRODUCCIÓN. 1 
+ANTECEDENTES. 4 
+l. HIPOTECAS MEXICANAS. 4 
+1.1 HIPOTECAS CON ÍNDICE DUAL. 6 
+1.1.1 Tasa de deuda. 7 
+1.1.2 Tasa de pagos. 8 
+1.1.3 Amortizaci. 9 
+1.2 HIPOTECAS HÍBRIDAS CON TASAS AJUSTABLES. 10 
+1.2.1 Tasa de deuda y tasa de pagos. 10 
+1.2.2 Amortizaci. 11 
+1.3 RIESGOS DE LAS HTD MEXICANAS. 11 
+1.3.1 Riesgo de de/ault. 11 
+1.3.2 Riesgo de desbalance. 12 
+1.3.3 Riesgo de prepago. 14 
+1.4 REESTRUCTURACIÓN MEDIANTE UNIDADES DE INVERSIÓN. 14 
+1.4.1 Principales riesgos para las HUDls. 15 
+2. CARACTERÍSTICAS SOBRE LA FUACIÓN DE PRECIOS PARA 17 BONOS Y OPCIONES CALL. 
+2.1 BONOS. 17 
+2.1.1 Teorías de la estructura de plazos. 19 
+2.1.2 La fijaci de precios de bonos. 21 
+
+
+2.2 OPCIÓN CAU. 25 
+2.2.1 La fijaci de precio para una opci call americana. 27 
+2.2.2 Modelo de fijaci de precio para una opci call americana. 29 
+
+
+
+3. BURSATILIZACIÓN DEL CRÉDITO HIPOTECARIO. 31 
+3.1 CARACTERÍSTICAS DE WS VALORES PASS-THROUGH. 32 
+3.2 PRECIO Y RENDIMIENTO PARA VALORES PASS-THROUGH. 36 
+3.2.1 Experiencia de la FHA. 36 
+3.2.2 Tasa de prepagos constante. 37 3.2.3 Indicador de prepagos estándar de la Public Securities Asociation. 37 
+
+
+3.3 PREPAGOS. 40 
+3.3.1 El riesgo de prepagos asociado a los valores pass-through. 42 
+
+
+3.4 DERIVADOS 43 
+3.4.1 Collateralized Mortgage Obligations. 43 
+3.4.2 Stripped Mortgage-Backed Securities. 44 
+
+
+
+
+MODELO. 45 
+4. MODELO DE FUACIÓN DE PRECIOS DE UN VALOR GNMA. 45 
+5. ANÁLISIS DE lAS CARACTERÍSTICAS DE LOS VALORES GNMA. 56 
+5.1 SOLUCIÓN DE LA ECUACIÓN DIFERENCIAL DEL PRECIO DE U~ 56 VALORGNMA. 
+5.2 LA OPCIÓN CALL. 62 
+5.3 LA CARACTERÍSTICA DE AMORTIZACIÓN. 63 
+5.4 PREPAGOS SUBÓPTIMOS. 65 
+6. EVALUACIÓN DEL MODELO DE FUACIÓN DE PRECIOS DE UN 68 VALOR GNMA PARA SU APLICACIÓN EN MÉXICO. 7. CONCLUSIONES. 73 Glosario de abreviaturas. 75 Glosario de notaci. 77 Bibliograffa. 81 
+
+
+INTRODUCCIÓN 
+Uno de los anhelos de toda familia, en cualquier sociedad, es el poseer un lugar digno para vivir, ya sea su propia casa o departamento. Lo cual refleja la importancia que tiene el mercado de la vivienda, y que día con día, aumenta .. 
+En México, desde hace varios as, se tiene un gran problema de escasez de vivienda. Lo anterior es debido principalmente, a la ausencia de instrumentos financieros que logren que los créditos hipotecarios sean más accesibles y también a la falta de recursos para otorgar un mayor nero de créditos hipotecarios y para la construcci de nuevas viviendas. 
+La banca hipotecaria, en un intento por solucionar este problema de escasez de vivienda instrumentnuevos esquemas de financiamiento, como son las hipotecas con índice dual y las hipotecas hfbridas con tasa ajustable. A pesar de que estos nuevos esquemas contribuyeron a que sect<;>res de la poblaci, que antes no tenían acceso a créditos hipotecarios, pudieran convertirse en acreditados potenciales, este esfuerzo no fue suficiente. 
+El problema de la vivienda persiste y en el timo a y medio se ha hecho cada vez más grave debido a la crisis econica por la que estamos pasando. Con lo anterior la banca hipotecaria ha volteado la vista a otro instrumento financiero llamado bursatilizaci. 
+La idea básica de la bursatilizaci del crédito hipotecario, es la de emitir valores respaldados por un pool o conjunto de hipotecas, de tal forma que el banco recupere más rápidamente los recursos que destina a este sector, gracias a la participaci de nuevos inversionistas que compran partes del valor emitido. Con esto se ocasiona que la banca tenga a su disposici una cantidad mayor de recursos que podrá utilizar en la emisi de nuevos créditos hipotecarios. A su vez, los inversionistas mejoran su diversificaci del riesgo dado que pueden poseer partes de diferentes valores, donde cada uno de elles tiene distinto riesgo debido a que los pools de créditos que los respaldan son heterogéneos, es decir, están conformados por hipotecas con diferentes características. 
+Lo anterior se escucha muy interesante, pero para poner en practica la bursatilizaci es necesario sortear varias vicisitudes. Entre las más importantes se encuentra en primer lugar, la falta de informaci sobre el historial crediticio y del comportamiento de los acreditados bajo distintos escenarios econicos. Sin embargo, desde hace más de un a se formuna instituci encargada de recabar, administrar y dar cauce a todos los historiales crediticios. Si esta instituci logra realizar de forma eficiente y confiable su tarea, será posible que en mediano plazo se logre sortear este problema. 
+En segundo lugar, no se cuenta con una instituci gubernamental que avale los créditos hipotecarios a bursatilizar y que garantice los valores que estén respaldados por tales créditos. Como expondré en mi tesina, esta es una de las principales condiciones que se necesita cumplir para poder bursatilizar el crédito hipotecario, sobre todo en una economía como la mexicana donde la tasa de interés tiene una alta volatilidad y existe un alto riesgo de devaluaci. 
+Finalmente, se tienen problemas legales que impiden la bursatilizaci, en cuanto a la transferencia de la propiedad y de la relaci, al tiempo que se emplea para embargar la propiedad en caso de incumplimiento del acreditado. 
+En cada uno de los problemas anteriores se están haciendo intentos para solucionarlos y lograr crear el marco estructural necesario para la bursatilizaci del crédito hipotecario. La rapidez con que se conforme este marco va a depender de las condiciones econicas y de la integraci de la banca hipotecaria para lograr consensos. 
+El objetivo que persigo en mi tesina es ir más allá de estos problemas de implementaci al intentar realizar un análisis de un modelo para fijar precio a un valor respaldado por el Goverment National Mortgage Asociation, (valor GNMA), el cual es un valor respaldado por créditos hipotecarios. Este modelo que intento analizar es un modelo continuo que utiliza la metodología de fijaci de precios para opciones y es aplicado al valor GNMA el cual es emitido y comerciado en los Estados Unidos. 
+Lo que intento lograr con el análisis es el demostrar que tan factible es el implementar en el mercado mexicano modelos que se utilizan en otras economías, como es la estadounidense, que es el lugar en donde se inicila bursatilizaci del crédito hipotecario. 
+De cumplirse las condiciones necesarias para su aplicaci, el modelo puede servir como parámetro para evaluar que tan rentable es la bursatilizaci. En caso de que no se pueda aplicar se tendrían que hacer cambios, si son factibles, en el modelo o crear uno nuevo que capture el comportamiento de los créditos hipotecarios en México. 
+Para realizar este análisis, divido mi tesina en dos partes, en la primera trato el marco conceptual para poder comprender el concepto de bursatilizaci y el modelo de fijaci de precios. Para ello, comienzo tratando los principales créditos hipotecarios que se comercian en nuestro país, así como la reestructuraci del crédito hipotecario en unidades de inversi, (UDls). En otra secci, expongo las características principales para fijar precio a bonos y opciones. Para finalizar esta primera parte, abordo los rasgos principale~ de la bursatilizaci del crédito hipotecario poniendo énfasis en lo referente al valor 
+GNMA. 
+En la segunda parte, iniciexponiendo el modelo de fijaci de precios. Posteriormente, realizo un análisis de las características de valor GNMA, analizando primero la ecuaci diferencial que arroja el modelo, para después, continuar con una discusi intuitiva de las características del valor GNMA. Posteriormente, trato de hacer un análisis de supuestos del modelo basándome en métodos econométricos y estadísticos. Finalmente, concluyo utilizando los resultados que arroja el análisis. 
+
+
+ANTECEDENTES. 
+1. HIPOTECAS MEXICANAS. 
+Hace doce as, para enfrentar el problema de la inflaci en México se instrumentaron dos tipos de hipotecas; las "hipotecas con índice dual" (HID) y las "hipotecas híbridas con tasas ajustables" (HHTA), ambas pertenecen al grupo de "hipotecas de tasas duales" (HTD), llamadas también hipotecas a prueba de inflaci. 
+Para saber que ventajas ofrecen las HID en escenarios inflacionarios es necesario primero conocer los problemas que enfrentan las "hipotecas tradicionales" (HTF), en su aplicaci, las cuales utilizan una tasa de interés fija y cobran mensualidades niveladas. 
+En las HTF los pagos deben de ser lo suficientemente elevados para cubrir el cobro de intereses como una proporci del capital. La idea básica de estas hipotecas es que los pagos periicos son iguales durante todo el plazo y son calculados de tal fonna que se cubre totalmente la deuda al vencimiento. 1 
+La hipoteca tradicional enfrenta dos grandes problemas los cuales ocasionan que se encuentren limitadas a actuar adecuadamente en economías con una alta tasa de inflaci; a) el problema de transfonnaci de plazos y b) el problema de amortizaci acelerada. 
+1 La fonna en que se calcula el pago mensual en las HTF es aplicando la fnula del valor presente de una anualidad ordinaria. Obteniendo la siguiente fnula: p = S [ í(I +i)T ]0 (1 + ;)' -1 Donde P es el pago mensual, So es el monto del crédito ; es la tasa de interés mensual pactada y T es el pl17.0 del crédito. 
+a) 
+Problema de transfonnaci de plazos: Este problema es causado cuando las tasas activas o de crédito están muy cerca o por abajo de las tasas pasivas o de deposito. En esta situaci el banco podría enfrentar pérdidas, porque el valor de mercado de la inversi de un banco se encuentra por abajo del valor nominal, debido a que el flujo de pagos que recibirá por las hipotecas tendrá que ser descontado a una tasa mayor. 
+
+b) 
+Problema de amortizaci acelerada por inflaci "problema de inclinaci": En un entorno inflacionario las tasas nominales son muy altas causando que los pagos iniciales de las hipotecas sean muy altos, generando que gran parte de la poblaci encuentre inaccesible este financiamiento. Aunque en principio este problema parece afectar so al acreditado también afecta al banco porque prácticamente le imposibilita colocar créditos. 
+
+
+Para tratar de solucionar estos dos problemas los bancos pusieron en práctica nuevos instrumentos financieros entre los que se encuentran las HTD. La principal característica de las HTD es que trabajan simultáneamente con dos tasas, una para calcular los pagos y otra para calcular el interés devengado. Generalmente los pagos evolucionan de acuerdo a la inflaci de tal forma que el acreditado pueda mantener su poder de compra o de pago como sería el caso. En tanto la tasa de deuda se utiliza para calcular la tasa de interés que el prestatario debería pagar periicamente por los saldos insolutos. Como estas dos tasas no son iguales puede ocurrir que el saldo insoluto real crezca al inicio del periodo de amortizaci. Este proceso de amortizaci negativa ocurrirá siempre y cuando el pago nominal no alcance a cubrir el monto del componente real del interés devengado. En lo que respecta al vencimiento de la deuda este puede ser de dos tipos fijo o variable. 
+Con las HTD se pospone el problema de pagos iniciales elevados que se presentan bajo esquemas de amortizaci tradicional en contextos de inflaci alta, pudiendo de esta fonna ser accesibles para un mercado más amplio de acreditados. En las HTD este problema de "inclinaci" en la amortizaci desaparece, ya que el pago inicial se calcula tomando en cuenta las expectativas sobre la tasa real a largo plazo y el plazo de vencimiento. Además, debido a que los pagos se ajustan en base a un índice de inflaci, el acreditado, seg los bancos, sentirá mayor confiama en poder cumplir con su deuda. Claro que siempre y cuando, el poder de compra que tiene el acreditado en el momento de contratar la deuda sea menor o igual al que tenga durante todo el tiempo que dure la amortizaci. Por su parte, el problema de transformaci de plazos entre activos y pasivos, se soluciona a través del uso de una tasa variable, es decir, la tasa es ajustada cada intervalo de tiempo de acuerdo al índice inflacionario. 
+Sin embargo, el hecho de posponer los pagos iniciales altos expone al banco a un riesgo mayor a largo plazo ya que los bancos esperan que el poder adquisitivo de sus acreditados se mantenga, lo cual es muy poco probable en economías como la mexicana. Por otro lado, si se toma en cuenta que en economías inestables, como la nuestra, al calcular la tasa a largo plazo usando expectativas siempre se va a quedar muy lejos de la realidad, debido a tantos cambios inesperados que se dan en las variables econicas. 
+Expuestas las características que ofrecen las HTD se tratará de explicar como trabajan y a que problemas se enfrentan cada una de las principales hipotecas que son comerciadas en México. 
+1.1 IHPOTECAS CON iNDICE DUAL. 
+Las HID trabajan con dos índices, por un lado la tasa de inflaci, la cual controla el desarrollo del pago mensual, y por otro lado, la tasa de interés del mercado2, la cual determina la tasa de deuda, es decir los intereses que se van a pagar por periodo. 
+Los objetivos que persigue la HID son ofrecerle acceso a una parte de la poblaci, quienes bajo HTF no podrían acceder a créditos hipotecarios, debido a los pagos iniciales altos, y darle al banco un producto rentable. 
+El primero es alcamado al definir pagos iniciales relativamente bajos,3 el poder de pago por parte de los acreditados se mantendrá mediante el incremento de la tasa en base a la tasa de inflaci, eliminando de esta forma el problema de inclinaci. 
+2 La tasa de mercado puede ser alguna de las siguientes tasas: la tasa de los Certificados del Tesoro (CETES) a 28 dfas, la tasa de interés interbancaria promedio (TllP), la tasa del costo porcentual promedio de fondeo de los bancos (CPP) y la tasa de aceptaciones bancarias 
+El segundo se logra al reali7.ar cambios periicos en la tasa activa, reduciendo la exposici del banco al riesgo de cambios en la tasa de interés. Esta tasa activa es igual a una tasa de interés de mercado más un margen de intermediaci. Más sin embargo, el riesgo se esta transfiriendo al acreditado al ser expuesto a variaciones en la tasa de interés que le impida saldar su deuda y en consecuencia el banco enfrenta riesgos de incumplimiento o default. 
+1.1.1 Tasa de deuda. 
+La tasa aplicada al saldo real del acreditado para determinar el monto de intereses a acumular en el periodo, es la tasa de deuda. La tasa de mercado más alta que es conocida como la "tasa líder',. se emplea como índice para definir la tasa de deuda. De esta forma el banco transfiere a los acreditados la carga financiera de los pasivos del banco causados por un incremento en la tasa de interés del mercado. 
+La tasa de deuda se calcula de la siguiente manera: 
+D,.,, = M~{rm, +~' rm, ·f} />1 t=l,... ,T (1) 
+Donde 
+D,,,,,, = Tasa de deuda. 
+rm, = Tasa líder en el mes t. 
+f = Margen expresado como un factor multiplicativo. 
+~=Margen expresado como un parámetro fijo. 
+La raz de calcular de esta forma la tasa de deuda, es que en condiciones de inflaci baja las tasas nominales son bajas, por lo que el banco cobrará rm más el margen ~ pero cuando la inflaci es alta este margen no será suficiente para cubrir los costos de 
+3 Los pagos iniciales se detenninan de acuerdo a los objetivos del banco, si el banco quiere acceder a una mayor parte del mercado fijará los pagos iniciales lo mis bajo posible y si desea estar expuesto a un menor riesgo aumentara estos pagos iniciales. 4 La tasa lfder es seleccionada entre las siguientes: la tasa de los Certificados del Tesoro (CETES) a 28 dfas, la tasa de interés interbancaria promedio (TIIP), la tasa del costo porcentual promedio de fondeo de los bancos (CPP) y la tasa de aceptaciones bancarias. 
+intermediaci por lo que el banco estará protegido al utilizar el margen multiplicativo / , lo cual puede interpretarse como un porcentaje sobre la tasa lfder. 
+1.1.2 Tasa de pagos. 
+En los timos as el índice que se utiliza para obtener la tasa de los pagos es el más alto de los siguientes dos índices: la tasa de inflaci del índice de precios al consumidor o la tasa de crecimiento de los salarios mínimos. 5 
+La forma en que se realiza el cálculo de los pagos mensuales es la siguiente: 
+T. = P,
+,.,, s 
+,_, t =1,...,T con (2) P, t=l P, ={P,_,(t+n,) t =2, ... ,T 
+Donde 
+T.,.¡ = Tmade J11P ¡ma el periocb t P, =P.,de la JTfflutlidad ef,rtuaro enel periocb t 
+s. =Saldo insoluto al final del periocb t Il, = T~de inflacimal final del periocb t, calcullda oorm lDltaexpost eme t yt-1 
+La tasa de pago es igual a la raz del pago mensual de ese periodo, el cual se incrementa de acuerdo a la inflaci observada, y el saldo insoluto. El pago inicial es calculado en base a una estimaci de la tasa real de largo plazo y de la inflaci para el largo plazo de amorti7.aci, tratando de que la mensualidad sea suficiente para garantizar que la deuda se amortice antes del vencimiento máximo. Si se estiman adecuadamente estas dos tasa, el acreditado tendría que pagar una prima extra para cubrir el riesgo a que se exponen los bancos y no so la prima de riesgo de devaluaci y alta inflaci que generalmente si se toman en cuenta. 
+5 En un principio el ico indice que se tomo como referencia fue el indice de salarios mínimos, pero como se rezagdemasiado en relaci a la inflaci se deciditomar otro indice como referencia. 
+El ajuste de pagos se realiza generalmente cada seis meses por lo que los pagos entre cada ajuste se mantienen constantes. 
+1.1.3 Amorti7.aci. Si el primer pago se realiza en un escenario de inflaci baja, la amortizaci se realiza de una forma normal, es decir, parte del pago es a intereses y otra parte a capital. Sin embargo, cuando el primer pago se realiza en un escenario de inflaci alta, los pagos iniciales no alcanz.arán a cubrir ni los intereses, por que la tasa inicial de deuda será mayor que la tasa de pagos. La parte de intereses no pagados se refinancfa y pasará a ser parte de la deuda del acreditado, es decir, si el pago a intereses era de $50 pero el pago mensual fue so de $45, el saldo insoluto se incrementará en $5. Lo anterior se repite hasta que la tasa de interés observada baje, causando que la deuda nominal del acreditado muestre una tendencia descendente, es decir, los pagos mensuales serán lo suficientemente elevados para cubrir los intereses y liquidar parte del saldo insoluto. Cuando no existe mucha incertidumbre del nivel de las tasas reales y los pronticos por parte del banco son de tal forma que las tasas de interés exante se encuentren al menos iguales a las tasas expost, se tendrá desde el inicio de la amortizaci unos saldos reales decrecientes, debido a que los pagos iniciales serán lo suficientemente elevados, y a pesar de mostrarse un crecimiento en los saldos nominales se estará llevando a cabo un proceso de amortizaci real. Pero como es bien conocido, en México no existe ninguna garantía para asegurar que las tasas expost se encuentren por abajo de las exante. Tratando de cubrirse de este riesgo los bancos instrumentaron diversos mecanismos, como son el pedir pagos adicionales en meses específicos del afto,6 imponer un plazo máximo de vencimiento dado el sistema de refinanciamiento y un monto máximo de refinanciamiento, o el aumentar el monto de los pagos. Todas estas soluciones son poco eficientes, ya que podrían causar que el acreditado sufriera una crisis de liquidez implicando un riesgo para los lilD. 
+6 Como serian los meses en que se pagan utilidades y aguinaldos. 
+1.2 HIPOTECAS HÍBRIDAS CON TASAS AJUSTABLES. 
+A diferencia de las IDO las HHTA utilmm icamente un indice, la tasa interés de mercado, para calcular la tasa de deuda y la tasa de pagos. 
+1.2.1 Tasa de deuda y de pagos. 
+La tasa de deuda para las HHTA es simplemente una tasa activa de mercado, la cual se calcula de la misma forma que en el caso de las lilD. 
+Por otro lado, las HHT A incluyen un factor de refinanciamiento para que los pagos iniciales sean menores a los que se realizarían con una hipoteca de tasa ajustable (HTA). Este factor de refinanciamiento permite que en los primeros afios los pagos sean bajos a costa de un incremento en los saldos insolutos, para que de esta forma se pueda acceder a un mayor nero de personas, pero nuevamente se expone a un riesgo mayor de default cuanto más se re7.&gUé el poder adquisitivo de los acreditados. 
+La tasa de pagos se calcula de la forma siguiente: 
+T. -(t + D,.,,'1) +(D (1-]) 
+,.,,-T-t+l ,.,, '1 t=l,...,T (3) P, = T,.,,S,_1 
+Donde 
+T,,,,., = Tasa de pagos para el periodo t. 
+D,.,, =Tasa activa de mercado. 
+T = Plazo fijo de la hipoteca. 
+17 =Factor de refinanciamiento a selecionar por el acreditado, O< 17 < 1. 
+P, = Pago mensual en el periodo t. 
+S, = Saldo insoluto al final del periodo t. 
+Esta formula nos dice que la tasa de pagos es la suma de una fracci fija de la tasa de deuda, la cual depende del factor de refinanciamiento, más una fracci variable de la tasa de deuda que también depende del factor de refinanciamiento, pero la cual va a aumentar 
+conforme se acerqué la fecha de vencimiento. Hasta que en la fecha de vencimiento la tasa de pagos va a ser igual a la tasa de deuda más uno. 
+(1 + D,..r'1) ( )
+T,,,,,T= T-T+l + D,,,,,r[l-17] =l+D,.,r'1+D,.,r[l-17]=l+D,.,r 
+1.2.2 Amortizaci. 
+Los pagos se ajustan completamente a cambios en la tasa de interés de mercado. Como se mencionanteriormente el factor de refinanciamiento que poseen las HHTA causa que en la parte inicial de la amortizaci los pagos sean más accesibles. La diferencia que tienen las HHTA respecto a las lilD es que el plazo de vencimiento esta fijo. Tomando t = T en(3): 
+Sr_,T,.,r = Sr_,[1 +(D,,,,,r11 )+ D,,,,,r(l-11 )] = Sr_,(l + D,,,,,r} = Pr 
+Lo que demuestra que el pago final es igual al saldo insoluto al vencimiento. 
+1.3 RIESGOS DE LAS HTD MEXICANAS. 
+Las HTD fueron diseftadas para trabajar en entornos inflacionarios pero eso no las excluye de enfrentar riesgos. Los riesgos más importantes que enfrentan las HTD mexicanas desde el punto de vista del banco son; a) el riesgo de incumplimiento, mejor conocido como "defaulf', b) el riesgo de desbalance y c) el riesgo de prepago. A continuaci se presentan las principales características de estos riesgos dentro de cada una de las hipotecas. 
+1.3.1 Riesgo de default. 
+Este riesgo ocurre por dos ramnes, ya sea que el pago de la deuda excede a las posibilidades de pago del acreditado o que el monto del saldo insoluto quede por arriba o muy cerca del valor de la propiedad. El primero de ellos se le llama factor de ingresos y al segundo factor de capital. 
+Para el caso de las lilD, si el ingreso del acreditado se reuga en relaci a la inflaci el acreditado enfrentará una crisis de liquidez, imposibilitándolo a pagar su deuda. Este problema es más grave en las HTD que en las HTF, porque existen más personas que se encuentran en el margen de solvencia en el momento de contratar la deuda. 
+Por otro lado, ante periodos de inflaci prolongada la tasa de deuda podría alejarse demasiado de la tasa de pago causando un incremento en el valor de la deuda, de tal forma que si este se acerca o sobrepasa el valor de la propiedad el acreditado tendría incentivos al default. 
+En cuanto a las HHT A, cuando las tasas expost son inesperadamente altas y las tasas nominales crecen, los pagos mensuales que están indiz.ados a la tasa lfder nominal se incrementarán, haciendo más probable que el ingreso del acreditado se reugue a tal grado que se vería incapaz de cumplir con el pago. Por otro lado, si las tasas expost son altas pero la tasa nominal decrece, se producirán pagos nominales bajos y el saldo insoluto se incrementaría, si esta combinaci se mantiene por un largo periodo de tiempo se causará un incentivo al default por el factor de capital. 
+1.3.2 Riesgo de desbalance. 
+Al permitirse la característica de refinanciamiento en estos esquemas hipotecarios se corre el riesgo de comprometer una gran cantidad de recursos por esa vía, lo que podría generar un desbalance en la cartera de los bancos, causando problemas de liquidez, mala capitaliz.aci y falta de diversificaci. 
+Una de las características de las lilD es permitir amortizaciones negativas, que cuando son potencialmente explosivas crean para los bancos un problema tridimensional. En primer lugar, la raz de los activos a capital podría rebasar el nivel máximo permitido por la Comisi Nacional Bancaria (CNB),7 quienes pedirán que los bancos aumenten su nivel de 
+7 Comisi Nacional Bancaria, instituci encargada de regular a la banca mexicana. 
+capitali7.aci. Si se capitaliza reduciendo su liquidez estarán incrementando el riesgo en las otras dos dimensiones, que son la falta de diversificaci y la falta de liquidez. 
+La falta de diversificaci es causada porque ante un refinanciamiento potencialmente explosivo, se incrementará la raz de activos hipotecarios a activos totales desbalanceando la cartera del banco, haciéndolo más dependiente de los créditos hipotecarios y por ende exponiéndolo a un mayor riesgo. 
+Por su parte, el desbalance de los activos puede generar un problema de liquidez debido a que el banco presta a una tasa activa que depende de la inflaci, mientras que el pago a sus depositante se realiza en base a una tasa pasiva del mercado. Si bien el banco está consciente de que en la primera etapa de la amortizaci del crédito hipotecario esta será negativa, también sabe que si perdura por un gran lapso de tiempo el ingreso generado por sus inversiones podría ser insuficiente para pagar sus obligaciones. Lo anterior se agravaría al tener que cumplir con los requerimientos de capital que le exige la CNB. 
+Por otro lado, las HHT A también poseen la característica de refinanciamiento, pero debido a la forma en que son calculados los pagos este problema tridimensional aparece icamente cuando la tasa expost crece mientras que las tasas nominales caen, causando una amortizaci negativa creciente, pero como en el caso de las HHT A la deuda se contrata a plazo fijo por lo que no puede ser explosiva. 
+Aunque la amortizaci real negativa incremente las razones activos a capital y activos hipotecarios a activos totales, no aumentará el riego en las tres dimensiones antes mencionadas gracias a que los pagos mensuales de las hipotecas están indizados a estas tasas nominales bajas, con ello el problema de liquidez no es tan factible ya que al bajar sus cobros mensuales también estarán bajando sus pagos mensuales, pero si el factor de refinanciamiento escogido por el acreditado es grande, la factibilidad del problema de liquidez aumentará. No obstante lo anterior, este problema puede ser fácilmente solucionado limitando el intervalo en que el acreditado puede escoger el factor de refinanciamiento. 
+1.3.3 Riesgo de prepago. 
+Tratándose de HTF, cuando la tasa de mercado cae, el acreditado tiene incentivos a prepagar para renegociar el contrato a una tasa menor, porque no baja la tasa de interés a pagar por el acreditado en la misma forma en que sube cuando sube la tasa de interés de mercado y el ingreso extra que obtiene el banco por el prepago del acreditado va a disminuir su rendimiento esperado porque so lo puede reinvertir a una tasa más baja. Entonces el riesgo de prepago aparece cuando el rendimiento obtenido por los créditos hipotecarios es menor que el rendimiento esperado. 
+El riesgo de prepago no existe en las HID ni en las HHT A, porque si la tasa de interés baja, también bajará el saldo insoluto y el costo de fondeo. 
+1.4 REESTRUCTURACIÓN MEDIANTE UNIDADES DE INVERSIÓN. 
+La crisis econica por la que pasa México, desde finales de 1994, aunado a la mala discriminaci hecha por los bancos para asignar créditos, causaron que el sistema bancario mexicano, de la que no están exentos los créditos hipotecarios, se encuentre en condiciones muy dificiles. Con el fin de resolver el problema de liquidez causado por el efecto de inclinaci, se disefio un esquema a través de Unidades de Inversi (UDls), que establece un plam fijo y además garantiz.a al acreedor una tasa real exante,8 eliminando con ello la necesidad de encarecer el crédito para compensar la incertidumbre. 
+Al ser las UDis una unidad de cuenta que permite definir el valor de la deuda en términos constantes, se establece un patr de pagos reales como el que se tendría bajo un escenario sin inflaci, pero además al eliminar la prima de riesgo por incertidumbre sobre el prontico inflacionario reducen el costo del crédito.9 
+• Debido a la incertidumbre macroeconica y falta de credibilidad del gobierno mexicano era casi imposible pronosticar la tasa de inflaci. 9 A diferencia de las HID, donde el componente inflacionario de la tasa de mercado contiene una prima de riesgo. 
+La fonna en que se calculan los pagos y los servicios de la deuda cuando se utiliz.an créditos en UDis con tasas reales fijas es en primer lugar calcular el valor de la deuda en términos de UDis, después se calculan los pagos reales conforme a la fmula de amorti7.aci lineal que es la siguiente: 
+PD 
+= (¾.) 
+t = 1, ...,T (4)
+, T 
+Donde 
+PD, = Pago de capital en UDis en el periodo t. Fo =Valor en términos nominales del principal contratado. UO = Valor de las UDls. al inicio del contrato. T = Plazo vencimiento de la deuda en meses. 
+I, = S,_1i t=l,...,T (5) 
+Donde I, = Pago de intereses en UDls. en el periodo t. S,_, = Saldo insoluto al final del periodo t -1. i = Tasa de interés pactada. 
+Los créditos en UDls no están exentos de riesgos por lo que en la tima parte de esta secci se tratarán los diferentes riesgos a los que están expuestos las "hipotecas reestructurados y contratados en UDls" (HUDls). 
+1.4.1 Principales riesgos para las HUDh. 
+Para el caso de las HUDls el riesgo de incumplimiento se welve sistemático. La raz es la posibilidad de que la tasa inflacionaria se mantenga alta mientras que el poder de compra de los acreditados se reuga. 
+A pesar de que no existe una amortizaci negativa, los saldos en UDis estarán creciendo en los primeros meses, este problema a diferencia de las HID es que los pasivos están pactados en pesos, lo que incentiva a incrementar el capital causando un problema de diversificaci real, pero a comparaci de las HID'º este problema no será importante por que so se estará restableciendo al nivel de capitalizaci real inicial. 
+Por otro lado, si existe un riesgo relevante en cuanto a la falta de liquidez a causa de un desbalance en la mezcla de activos bancarios en pesos y UDis, porque las obligaciones de los bancos son pagadas a una tasa comercial mayor a la tasa real que se aplica sobre sus ingresos por créditos en UDis.11 
+Por timo las HUDis también enfrentan el riesgo de prepagos, pero este es menor a comparaci de las HID, porque a pesar de que se de un ambiente favorable haciendo que la tasa de inflaci disminuya estos cambios en tasa reales son menos drásticos que los cambios que se observan en tasas nominales. 
+10 En donde puede darse un crecimiento en los saldos insolutos de forma explosiva. 11 Para poder realizar la reestructuraci el gobierno tuvo que transferir el riesgo de desbalance de la cartera de los bancos al gobierno, creando fideicomisos para que los bancos comerciales sustituyan su cartera por CETES a28 dfas. 
+2 CARACTERISTICAS SOBRE LA FIJACIÓN DE PRECIOS PARA BONOS Y OPCIONES CALL. 
+2.1 BONOS. 
+La fijaci de precios a los valores de ingreso-fijo, mejor conocidos como bonos, se realiza de acuerdo a la tasa de interés de mercado y al volumen y forma en que los flujos de pagos comprometidos por el emisor de un bono se distribuyan en el tiempo. La forma en que el mercado determina la tasa de interés esta definido por la estructura de plazos. 
+La estructura de plazos mide la relaci entre el rendimiento de valores libres de default que difieren icamente en su término de vencimiento. Para poder entender la estructura de plazos es necesario comprender las diferencias entre tasas de interés corrientes y tasas de interés a término. 
+a) 
+Tasa de interés corriente, es la tasa de interés que se cobra sobre un crédito que se lleva acabo en ese preciso momento. 
+
+b) 
+Tasa de interés a término, es aquella que se le carga a un crédito que se va a realizar en el futuro, pero los términos y condiciones bajo los cuales se realizará se determinan ahora. 
+
+
+Aunque ambas tasas dependen de la duraci del crédito la diferencia radica en cuando se va a llevar acabo el crédito, por lo anterior la tasa de interés, r(a,b), va a ser una funci de la fecha en que se realiz.a el crédito, a , y de la fecha de vencimiento del crédito, b ,como se puede apreciar, para tasas corrientes a= O. 
+Como se mencionanteriormente la estructura de plazos define la tasa corriente para varios vencimientos y aunque la tasa a término no puede ser definida a través de la estructura de plazos, se puede inferir debido a la relaci que guardan las tasas corrientes y las a término. 
+Para entender mejor esta relaci se propone primero un ejemplo de estructura de plazos:1 
+r(O,l) =0.04 r(0,2) =0.06 r(0,3) =0.08 r(0,4) = 0.09 
+En la figura 1 se exponen las diferentes tasas a término que surgen de este ejemplo de estructura de plazos. 
+Bajo el supuesto de que los créditos están libres de riesgo, los prestatarios y los prestamistas deben estar indiferentes entre un crédito por $1 contratado hoy con vencimiento en b as a un crédito contratado por $1 hoy con vencimiento en b -e as e invirtiendo el ingreso de este en otro crédito en b-e as y con vencimiento en e as, de no ser así habría arbitraje, por lo tanto, como en equilibrio no se permite arbitraje lo anterior se puede expresar de la siguiente forma: 
+[ 1 + r(O,b)]" = [1 + r(O,b-c)]"-c[t + r(b-c,b)r 
+Despejando r(b-c,b). 
+1 
+(l+r(O,b)]' ];
+rb-cb) = -1 (6)
+( -~--­
+' [ [1 + r(O,b-c)]"-c 
+Tomando el ejemplo de estructura de plazos para b = 4 y e= 2 se obtiene: 
+2
+1+r O 4 4 ].!.2 [ 1.09 4 ].!.
+r(2,4) = [ ( ' )]-1 = ~ -1 = 0.1208 [ [t +r(0,2)] 2 [t.06] 
+De lo anterior se deduce que sin la existencia del riesgo de default basta conocer el valor de las tasas corrientes para obtener las tasas a término. 
+1 La relaci positiva que muestran las tasas de interés respecto a la fecha de vencimiento es solo un ejemplo de la estructura de plazos ya que dependiendo de diferentes factores que tratan de ser explicados por diferentes teor(as de estructura de plazos estas pueden mostrar relaciones positivas o negativas o neutras. 
+o 1(0,1)-.04 1(1,2) 2 1(2,3) 3 1(3,4) 
+1 1 1 o r(O,l)c.04 1(1 ,4) 
+1 o r(O, l)=.04 1(1,3) 3 1(3,4) 
+1 o  1(0,2)-.06  2  1 1(2,4)  
+1 o  1(0,3)-.08  1  3  1(3,4)  
+
+1 1 o 1(0,4)-.09 
+1 
+Figura l. 
+Después de saber como están relacionadas las tasas corrientes y a término es tiempo de analizar como se determina la estructura de plazos de la tasa de interés. 
+2.1.1 Teorias de la estructun de plazos. 
+Si se gráfican las relaciones entre la tasa de interés y los vencimientos para un conjunto de bonos dado un nivel de riesgo, básicamente se podrán obtener tres distintos tipos de curvas, como las que se muestran en la figura 2. 
+Realmente es dificil construir una estructura de plazos y rara vez se pueden encontrar curvas suaves como las de la Fig. 2. Aunque algunas estructuras de plazos están en un montículo, en general las curvas tienden a presentar pendiente negativa, positiva o prácticamente cero. 
+r r 
+Pendiente positivL Pendiente ncgativL
+T T r r 
+Pendiente cero. Montfculo.
+T T 
+Figura 2. 
+a) Teoría de las expectativas. Esta teoría supone que no existen costos de transacci ni incertidumbre o que los inversionistas son neutrales al riesgo. Bajo estas condiciones, las tasas a término deberán de representar las expectativas del mercado de las tasas corrientes futuras, implicando que la pendiente de la curva de la estructura de plazos indica la direcci esperada de las tasas de interés futuras. 
+Si el mercado pronostica un crecimiento en las tasas de interés corrientes para créditos de un cierto periodo de tiempo la estructura de plazos tendrá una pendiente positiva. De forma similar, si el mercado pronostica que las tasas corrientes caerán la estructura de plazos tendrá pendiente negativa y si pronostica que no van a suceder cambios, se tendrá una estructura de plazos con pendiente cero, mientras que una curva de estructura de plazos en forma de montículo, querrá decir que las expectativas de la tasa de interés van a llegar a un 
+nivel donde comemará a desacelerarse este crecimiento hasta que ya no se espere que suba más y a partir de ahí comen.zara a caer. 
+b) Teoría de la preferencia por liquidez. En esta teoría se argumenta que los prestamistas prefieren tener liquidez, por tanto tienen preferencia por créditos a corto plaz.o. Entonces las tasas a largo plaz.o exceden a las tasas a corto plaz.o para inducir a los prestamista a renunciar a su liquidez. Lo anterior implicaría una pendiente positiva en la estructura de plaz.os. 
+Si esta teoría es cierta las tasas a término serán sistemáticamente sobre estimadas, por que estarán sesgadas debido a las expectativas de las tasas corrientes futuras. 
+c) Teoría de la segmentaci del mercado. Aquí se supone, que los mercados a corto y largo plaz.o son independientes y que la oferta y demanda de cada uno de los mercados determinan su estructura de plaz.os respectivamente. 
+2.1.2 La fijaci de precios de bonos. 
+Debido a la dificultad que se tiene en la práctica para obtener las tasas corrientes dadas por la estructura de plaz.os, se utiliza el rendimiento al vencimiento para fijar precios a los bonos. 
+El rendimiento al vencimiento es simplemente una sencilla tasa de descuento que se aplica a los cupones de los bonos y a su valor nominal para obtener el valor presente, el cual va ser igual al precio de mercado actual del bono. La forma de calcular el precio del bono es la siguiente: 
+T 
+B= ¿C,{1+ yf' (7) 
+,_, 
+Donde 
+B =Precio del bono. y = Rendimiento. C, = Flujo de pagos, "cupones y principal" al tiempo t. 
+Si se supone que los cupones son constantes, la ecuaci anterior puede ser expresada de la siguiente forma: 
+1
+B= cui:(1+ yr' +PR(l+ YtT = cu[+(l+YtT]+ PR(l+ YtT (8) 
+~ y 
+Donde 
+CU=Cupon. P R = Principal. 
+Conociendo la forma en que se calcula un bono se puede analizar la forma en que se comporta al cambiar los diferentes parámetros que lo componen. 
+El rendimiento del precio del bono se va a mover en relaci inversa al rendimiento, porque el rendimiento es una tasa de descuento que se aplica al bono. Entonces para rendimientos por abajo de la tasa del cup el bono será vendido con una prima, cuando es igual a la tasa del cup se vende a la par y cuando esta por arriba se vende descontado. 
+Ahora bien, ante un cambio en el rendimiento el precio del bono cambia por un porcentaje que varia inversamente con el vencimiento del bono, es decir, manteniendo todo lo demás constante. Cuanto mayor sea el tiempo para el vencimiento del bono mayor será el cambio porcentual en su precio ocasionado por un cambio porcentual en el rendimiento. Lo cual es fácil de ver, dado que el pago del principal se descuenta aun más, pero con altos vencimientos la diferencia en el cambio porcentual en el precio va a ser insignificante. 
+En lo que respecta al cup, se tiene que a mayor cup menor será el cambio porcentual en el precio de un bono dado un cambio porcentual en el rendimiento si se mantiene todo lo demás constante, ya que la raz cup principal será menos significativa. 
+Tomando todos los resultados anteriores, se puede decir que los bonos más volátiles son aquellos con vencimientos largos y cupones peques, es decir, si el administrador del portafolio pronostica una caída en la tasa de interés, una mayor parte del portafolio debería contener bonos con largos vencimientos y cupones bajos. 
+Al comparar bonos con largos vencimientos y cupones altos con bonos con cortos vencimientos y cupones bajos seria muy problemático detenninar su volatilidad, para resolver tal problema se utili7.a una medida de como los flujos de pagos de un bono se distribuyen en el tiempo y del monto de estos pagos conocido como "duraci", ( DU), que indica cuales pagos regresan más rápido y cuales son más volátiles. Esta medida de duraci esta dada por la siguiente ecuaci: 
+DU = ±1C,(1+ yf' 
+(9) 
+,., B 
+Esta ecuaci no es más que la suma ponderada de los flujos de pagos, multiplicados por los valores de t . 
+Para ilustrar como la duraci mide la volatilidad se muestra en la tabla 1 las duraciones para varios vencimientos y cupones, con un rendimiento del 10%. 
+Estas tabla muestra, como se esperaría, que dado un vencimiento la duraci disminuye si el cup aumenta, es decir que paga menos rápido su rendimiento, mientras que para un cup dado, la duraci se incrementa si el vencimiento del bono se hace mayor. 
+CUPONES(%)  
+VENCIMIENTO  o  2  4  6  8  10  
+5  5  4.76  4.57  4.41  4.28  4.17  
+10  10  8.73  7.95  7.42  7.04  6.16  
+15  15  11.61  10.12  9.28  8.74  8.37  
+20  20  13.33  11.30  10.32  9.75  9.36  
+25  25  14.03  11.81  11 .86  10.32  9.98  
+30  30  14.03  11.92  11.09  10.65  10.37  
+35  35  13.64  11.84  11.17  10.82  10.61  
+Tabla l .  
+
+Cabe notar, que para cupones pequeftos lo anterior no siempre ocurre cuando el vencimiento es muy largo, pero como la mayoría de los créditos son otorgados por lapsos menores a 30 aftos se puede decir que generalmente se da la relaci anterior. 
+En si la duraci es solamente la elasticidad del precio del bono a cambios en el rendimiento: 
+dB.l+y =-±t C, .l+y =-f,C,(l+yr' =-DU (toa) dy B ,•• (l+y)'+I B ,.. B 
+Al ser la duraci una medida del cup y del vencimiento, deberá ser también una medida de la volatilidad del precio del bono. 
+Utilizando la ecuaci (10a) obtenemos la tasa de cambio del precio del bono como 
+funci de la duraci y del cambio en el rendimiento: 
+dB dy
+-= -DU-(10b)
+B l+y 
+Por timo se analiza la relaci que guardan la estructura de plazos y la curva de 
+rendimiento. 
+a) La curva de rendimiento es la relaci entre rendimiento de los cupones y sus 
+vencimientos. 
+b) La curva de estructura de plazos es la relaci entre tasas de interés de bonos con 
+diferentes vencimientos. 
+Por ejemplo una estructura de plazos puede ser definida como sigue: 
+r(O,l) = 0.16 r(0,2) =0.14 r(0,3) = 0.12 r(0,4) = 0.10 
+Calculando el precio de un bono con valor nominal de $1000 y cup de 8%, con esta estructura de plazos se tiene, B = 952.12 y utilizando la ecuaci (8) el rendimiento sería de 10.38%. 
+Se aprecia que el rendimiento del bono es mayor que la tasa corriente para un crédito de cuatro aftos, esta relaci siempre se va a dar en estructuras de plazos que tengan pendiente negativa. Entonces, si la estructura de plazos tiene pendiente negativa, el rendimiento de cualquier bono con vencimiento a T aftos va a ser mayor que la tasa de interés corriente a T aftos. Para una estructura de plazos con pendiente positiva, el rendimiento de cualquier bono con vencimiento a T aftos va a ser menor que la tasa de interés corriente a T aftos. Únicamente para estructuras de plazos con pendiente cero, el rendimiento de cualquier bono con vencimiento a T aftos va a coincidir con la tasa de interés corriente a T aftos. 
+Como se mencionanteriormente la estructura de plazos es dificil de observar, sin embargo, es muy com utilizar la curva de rendimiento como una aproximaci de la estructura de plazos. Usualmente la curva de rendimiento derivada por los Certificados del Tesoro (CETES) es utilizada para aproximar la estructura de plazos. 
+
+2.2 OPCIÓN CA.U. 
+Una opci es un contrato entre dos partes, un comprador y un vendedor, que da al comprador el derecho, pero no la obligaci, para comprar o vender algo en una fecha futura a un precio acordado hoy. 
+El vendedor de la opci debe estar listo durante el tiempo en que dure la opci para vender o comprar de acuerdo al contrato previamente acordado, si el comprador de la opci lo desea. Una opci calles la opci de comprar algo, mientras que la opci de vender algo es llamada opci pul. Entre las características de los valores respaldados por la Government National Mortgage Association (GNMA), cuyas características se discutirán a detalle más adelante, se encuentra la de ser un valor con opci call por lo cual icamente se trataran las propiedades referentes a esta opci. 
+2S 
+Una opci call es la opci de comprar un activo a un precio fijo, mejor conocido como precio de ejercicio,2 esta opci tiene un tiempo de vigencia el cual también es acordado entre las dos partes, este tiempo de vigencia de la opci es conocido como fecha de expiraci. 3 
+La opci call sobre un valor trabaja de la siguiente manera. Dos individuos acuerdan la compra-venta de una opci call sobre un valor, el vendedor adquiere la obligaci de vender el valor al precio de ejercicio pactado, si el precio del valor sube por arriba del precio de ejercicio el comprador de la opci ejercerá la opci, comprando el valor al precio de ejercicio y vendiéndolo al precio de mercado obteniendo una ganancia libre de riesgo, ahora bien, si el precio de mercado del valor cae por abajo del precio de ejercicio el tenedor de la opci especulara mientras expire la opci, esperando que suba el precio del valor. 
+En opciones call sobre stocks la forma en que se utiliza es muy similar, si el precio del stock aumenta, la opci call es más valiosa, es decir, opciones call que se emitan en ese momento costarán más que las emitidas antes del incremento en el precio del stock, entonces el tenedor de una opci vieja tendrá una opci más valiosa ya que puede ser vendida a un mayor precio, de manera similar, si el precio del stock cae, el precio de la opci cae también. Una opci call se dice que esta in-the-money si el precio del stock excede al precio de ejercicio y se dice que esta out-of-the-money si el precio del stock esta por abajo del precio de ejercicio. 
+Existen dos distintos tipos de opciones cal/ y put que son las opciones americanas y las opciones europeas. 
+La diferencia entre estas dos opciones es que mientras las opciones europeas icamente pueden ser ejercidas cuando la opci expira las opciones americanas pueden ser ejercidas en cualquier momento mientras no expire la opci. Los valores GNMA permiten que las hipotecas sean prepagadas en cualquier momento, es decir, tienen las características de opciones cal/ americanas, así pues la siguiente secci abordará el tema de fijaci de precio para una opci call americana. 
+2 Es el precio acordado por el comprador y el vendedor al cual el tenedor de la opci puede comprar el valor suscrito. 3 Es el tiempo durante el cual la opci se puede ejercer, después de este tiempo la opci ya no existe. 
+2.2.1 La fijaci de precio para una opci caU americana. 
+Como el uso de la opci no es obligatorio el valor de la opci no puede ser negativo, pero además para opciones americanas existe un valor mínimo, que es llamado el valor intrínseco. Este valor intrínseco siempre es no negativo, cuando el call esta in-the­money va a ser positivo, ya que es la diferencia entre el precio del stock y el precio de ejercicio, y si el call esta out-of-the-money el valor intrínseco va a ser cero. Lo anterior se pude escribir de la siguiente forma: 
+C
+0 (ST,T,E) ~ Max(O,ST-E) 
+Donde 
+C
+0 =Precio de la opci call americana. ST = Precio del stock. E= Precio de ejercicio. T = Tiempo de expiraci de la opci. 
+Generalmente el precio de una opci ca/l americana excede a su valor intrínseco. La diferencia se debe a que tan dispuestos a pagar estén los agentes por la incertidumbre del precio futuro del stock suscrito, a esta diferencia entre el precio de la opci y el valor intrínseco se le llama valor especulativo. Si el precio del stock es muy alto, se dice que la opci esta deep-in-the-money y el valor especulativo será pequefto, igualmente si el precio del stock es muy bajo deep-out-of-the-money, lo anterior se debe a la poca incertidumbre que se tiene si el precio del stock se encuentra muy alejado del precio de ejercicio, si el precio del stock se encuentra muy cercano al precio de ejercicio aumenta la incertidumbre, de si en el futuro el precio del stock estará por arriba o por abajo del precio de ejercicio. 
+El máximo valor que puede alcamar una opci call es el del stock suscrito menos el precio de ejercicio, entonces si el precio de ejercicio fuera cero el máximo valor que estarían dispuestos a pagar los agentes por la opci seria el valor del stock suscrito. 
+Max{C0 (ST,T,E)} S ST 
+El efecto que tiene el tiempo de expiraci sobre el precio de la opci call americana va a ser positivo, si se tienen dos opciones ca/l idénticas y solamente varia el tiempo de expiraci, el máximo valor que puede alcanzar la opci call con más rápida expiraci va estar siempre contenido dentro de la opci call con un mayor tiempo de expiraci. Entonces una opci americana con tiempo de expiraci T +1 va a ser al menos tan valiosa que una con tiempo de expiraci T. 
+En lo que respecta al efecto que tiene el precio de ejercicio sobre el precio de una opci este va a ser negativo, es claro que el precio de una opci call americana va a ser al menos tan alto que el precio de una opci idéntica pero con un precio de ejercicio mayor, porque el rendimiento esperado del primero va a ser mayor. Pero esta diferencia de precios no puede exceder la diferencia de precios de ejercicio, porque el rendimiento esperado de cada uno de las opciones varían solamente en la misma cantidad que la diferencia de precios de ejercicio. 
+Una opci call puede verse como la compra diferida de un stock. Si los agentes esperan que el precio del valor aumente ellos pueden tanto comprar ahora el stock como la opci. La compra de la opci puede costarles a lo máximo lo mismo que cuesta el stock, la diferencia radica en que si compran la opci muy posiblemente tendrán un capital disponible con el que podrán comprar bonos libres de riesgo, CETES, y si la tasa de interés sube la combinaci de opciones y stock es más atractiva, con lo anterior se deduce que el precio de una opci call sobre alg stock va a aumentar si la tasa de interés aumenta. Sin embargo, si la opci call es sobre alg valor dependiente de la tasa de interés como lo es un bono, un incremento en la tasa de interés también deprecia el bono suscrito. Análisis numéricos indican que este timo efecto es mayor y por tanto el valor de la opci sobre un bono es una funci convexa y decreciente de la tasa de interés. 
+Como la opci call asegura al comprador por lo menos el precio de ejercicio la volatilidad le va a beneficiar, porque con la volatilidad podrá aumentar el precio del valor y el tenedor puede ejercer la opci obteniendo una mayor ganancia, por otro lado al emisor de la opci no le conviene la volatilidad, ya que con alta volatilidad so estará dispuesto a ofrecer la opci a un precio mayor, por lo que el precio de la opci aumentará cuando el valor suscrito sea más volátil. 
+2.2.2 Modelo de fijaci de precio para una opci call americana. 
+El modelo más utili7.8do para fijar precios a opciones europeas es el Black & Scholes,4 el cual también se puede obtener como el caso limite del modelo binomial, cuando el nero de periodos en que se pueden realizar transacciones tiende a infinito.5 Desgraciadamente no hay fmulas similares para el cálculo de opciones americanas, 6 sin embargo se han desarrollado otros modelos que dan una aproximaci al precio de las opciones americanas , uno de esos modelos es el BAW.1 
+La fmula que utiliza el modelo BA W incorpora la propiedad que tienen las opciones americanas que es el de poder ser ejercidas en cualquier momento antes de la expiraci. Cuando la opci se encuentre deep-out-of-the-money el precio de ejercer la opci antes de la expiraci debe ser pequefto y caerá aun más cuando la fecha de expiraci se acerca. Cuando la opci esta deep-in-the-money, deberá ser vendida por su valor intrínseco. Entonces el precio de poder ejercer antes la opci se le debe agregar al precio de la opci europea dada por la fmula Black & Scho/es, dando como resultado el precio de una opci americana. La fmula BA W provee un precio critico del stock, para el cual la opci cal/ americana deberá ser ejercida. Siendo entonces la fmula: 
+
+4 Ver F. Black and M. Scholes. "The Pricing ofOptions and Corporative Liabilities." Journal of Political Economy, Vol. 8, No. 1, Mayo-Junio 1973, 637-659. 5 Esto quiere decir que el comercio se realiza de manera continua 6 Pero si existe fmula para opciones europeas, la forma de calcular el precio de una opci cal/ europea es la siguiente: 
+e= ST · N['º' s; +(, +½O'z)r]-Ee''N[-'º-'s....;_+_(,_-....½_O'_z)_rl
+• O'Tr O'Tr 
+Donde r es la tasa de interés corriente, u es la desviaci estándar anualizada del rendimiento del stock y NO es una funci de densidad de la normal. Para mayor detalle ver Michael U. Dothan. "Prices in Financial Markets." Oxford University Press, 1990. 
+7 Este modelo toma sus siglas de las iniciales de Barone, Adesi y Whaley. Ver G. Barone-Adesi y R. E. Whaley "Efficient Analytic Approximation of American Option Values." Joumal offinance, Vol. 4, No. 2, Junio 1987, 301-320. 
+Donde 
+( 2(r -o) _1) 2 + 8r -(2(r -o) _1) 
+0'2 0'2(l-e-n) 0'2
+h=.....________________ 
+2 
+STº 
+log -+(r +½0'2)r 
+N(l)= N 
+E Jf 
+O' T 
+sT° = Precio crítico del stock. 
+t5 = Tasa anual. 
+T =Tiempo para su expiraci. 
+0'2 
+= Varianz.a anualizada del rendimiento del stock. N{-) = Funci de densidad Normal. 
+ST° se encuentra resolviendo la siguiente ecuaci: 
+0 
+• e· E ST (1-e-6TN(l)] (llb)ST
+= e+ + h 
+Donde 
+e; =Precio de una opcion call europea calculada por Black & Scholes cuando STº es el precio del stock. 
+3 BURSATILIZACIÓN DEL CRÉDITO HIPOTECARIO. 
+La bursatiliz.aci del crédito hipotecario se ha vuelto muy popular en varios países en los timos ai'ios. Su idea es simple, esta radica en que las instituciones financieras venden parte de sus carteras hipotecarias a inversionistas. La forma en que se realiz.a esta venta, es en primer lugar, creando un pool de créditos hipotecarios, 1 para después vender este pool en unidades a los inversionistas interesados. Cada unidad representa una parte del pool de hipotecas por lo que el inversionista recibirá la proporci de pagos que realicen los deudores hipotecarios correspondiente a la cantidad de unidades que posea el inversionista. 
+Lo atractivo de este instrumento financiero es que por una parte las instituciones financieras al invitar a más participantes al mercado hipotecario tendrán a su disposici mayores recursos, mientras que por el lado del inversionista tendrá acceso a un mercado que de otra manera serla o muy riesgoso o muy caro ingresar. 
+Para comprender mejor la forma en que se crea la bursatiliz.aci a continuaci se expondrá un ejemplo. 
+Como se vien la primera secci de esta parte un crédito hipotecario ofrece al acreditado un flujo de pagos, los cuales son el pago mensual de la hipoteca que se divide en dos partes, una parte corresponde al pago de intereses y otra al pago del principal, y los prepagos, que son la diferencia entre el pago mensual y el pago recibido. Debido a su importancia los prepagos se analizarán con más detalle en una subsecci más adelante.2 
+Entonces si un inversionista desea ser el tenedor de la hipoteca, estará recibiendo este flujo de pagos, pero también estará enfrentando los riesgos de un prepago. Una forma en que 
+1 El pool puede ser fonnado por varios miles de créditos hipotecario o por unos cuantos. 2 Entre las causas del prepago se encuentra el que los residentes de la casa deciden mudarse y los nuevos inquilinos no asumen la deuda hipotecaria o el acreditado no puede realizar su pago mensual "defaulf' porque se ha reducido su poder de pago, también pude ocurrir que el duefto de la casa se mude de casa y liquide la deuda hipotecaria de la primera o cuando baja la tasa de interés existen incentivos para que el acreedor hipotecario realice un pago mayor con el fin de renegociar la deuda a una tasa menor. A las primeras dos causas se les conoce como prepagos subtimos y a las timas como prepagos. 
+el inversionista puede reducir este riesgo es adquiriendo un mayor nero de hipotecas idénticas, de esta forma la fracci de prepagos se controla mejor, reduciendo así el riesgo. Sin embargo, esta manera de reducir el riesgo es muy costosa, es ahí donde entran las instituciones financieras las cuales tienen la capacidad de crear pools de créditos hipotecarios, los cuales van a servir como colateral para la emisi de un valor cuyo flujo de pagos refleja el flujo de pagos de todos los créditos en el pool. Ahora bien, este valor se fracciona en X unidades, entonces el inversionista que tenga una de estas unidades recibirá 
+100/X porciento del flujo de pagos. El valor creado de esta forma se llama un valor pass­through hipotecario. 
+Todos los créditos hipotecarios que conforman el pool que es utilizado para crear un pass-through se dicen que están bursatilizados. 
+En el siguiente apartado de este capitulo, se tratarán las distintas características de los valores pass-through enfatiz.ando las referentes a los valores GNMA pass-through que son emitidos en los Estados Unidos. 
+3.1 CARACTERíSTICAS DE LOS VALORES PASS-THROUGH. 
+Como ya se vi un valor pass-through se crea cuando se venden partes o participaciones certificadas de un pool de créditos hipotecarios. 
+Los tenedores del valor pass-through van a recibir un flujo de pagos el cual depende del flujo de pagos de los créditos hipotecarios suscritos. Este consiste en los pagos hipotecarios mensuales a intereses y a principal, y cualquier prepago. 
+Sin embargo, el flujo de pagos que sale de los deudores hipotecarios y el flujo de pagos que reciben los tenedores del valor no coinciden ni en la cantidad ni en el tiempo. 
+El flujo de pagos de un valor pass-through es menor que el flujo de pagos mensual de las hipotecas suscritas por una cantidad igual al préstamo de servicios y otros honorarios, que son aquellos cargados por el emisor o aval del pass-through para garanti:zar su emisi.3 El tiempo del flujo de pagos también difiere. Existe un atraso en transferir el correspondiente flujo de pagos mensuales a los tenedores de los valores, el cual varia dependiendo del tipo de pass-through. Lo más importante es que a causa de los prepagos, el flujo de pagos de un valor pass-through es desconocido. 
+Por tanto la emisi de valores pass-through debe estar respaldada. En Estados Unidos existen varias instituciones que respaldan este tipo de valores que son la Government National Mortgage Association (GNMA), Federal Home Loan Mortgage Corporation (FHLMC) y la Federal National Mortgage Asociation (FNMA). 
+Las características del pass-through no icamente varían entre agencias sino entre programa ofrecido. La características del pass-through tiene un gran impacto sobre su inversi ya que afectan las características de prepago. Estas características pueden clasificarse en seis grupos que son los siguientes: 
+a) 
+Tipo de garantía. Una agencia puede proveer dos tipos de garantía. Una de ellas consiste en garanti:zar todos los pagos tanto de intereses como de principal en el momento oportuno, a pesar de que alguno o algunos de los deudores hipotecarios no realicen su pago hipotecario, valores pass-through con este tipo de garantía se llaman pass-throughs completamente modificados. El segundo tipo garanti7.a el pago de intereses y principal, pero icamente garantiz.a el pago oportuno de los intereses. El saldo insoluto del principal se queda pendiente pero se garanti:za que se va a pagar antes de una fecha especifica; pass­through con esta garantía se les llamapass-through modificados. 
+
+b) 
+Nero de prestatarios permitidos en el pool. Un pool puede estar compuesto por hipotecas originadas por un so prestatario o por mtiples prestatarios, por ejemplo, de 1000 hipotecas que comprendan un pool, puede ser que todas hayan sido emitidas por varios bancos o hayan sido emitidas solamente por uno. 
+
+
+3 Para proveer el servicio el emisor recibe mensualmente honorarios por administraci de 0.44% anuales del saldo insoluto del pool y para garantizar el pool el GNMA carga honorarios por 0.06% por afio del saldo insoluto del pool. Por lo que un valor GNMA es emitido con una tasa de cup menor que la tasa de contrato de los créditos hipotecarios otorgados. 
+c) 
+Dise de las hipotecas que componen el pool. Se refiere a los distinto disefios que pueden tener las hipotecas en el pool, es decir si son hipotecas con tasa fija, con tasa ajustable, tasas duales, etc. 
+
+d) 
+Características de los créditos hipotecarios que conforman el pool. No cualquier crédito hipotecario puede ser usado como colateral. Cada agencia va a estandarizar los créditos que va a suscribir al pool. Entre los estándares principales se tienen el tamafio del crédito hipotecario, su vencimiento, cuanto tiempo lleva de ser contratado, etc. 
+
+e) 
+Procedimiento de pago. Este puede variar dependiendo del tiempo que se acuerde que debe de haber entre el pago de los deudores hipotecarios, al pago a los tenedores del pass-through y del método de pago que se refiere a cuantos cheques se deben mandar a cada uno de los tenedores del pass-through. 
+
+t) 
+Tama mínimo del pool. Para crear un pass-through cada agencia debe determinar un tama mínimo del pool, es decir, el nero mínimo de hipotecas que lo forman. 
+
+
+Por ejemplo un valor GNMA pass-through esta garanti7.3do por el gobierno de los Estados Unidos. Por esta raz, el valor se aprecia como un pass-through libre de riesgo de default, tal y como los valores del tesoro. En México, puede darse el caso de que, a pesar de que se de la bursatilizaci del crédito hipotecario, no se tenga la suficiente confianz.a de que el gobierno sea capaz de garantizar realmente los valores emitidos. 
+Los valores GNMA pass-through se han emitido bajo dos programas el GNMA I y el GNMA II, por ser este timo el más completo se expondrán sus características. 
+• 
+Tipo de garantía. Todos los valores GNMA pass-through son completamente modificados. 
+
+• 
+Nero de prestatarios permitidos en el pool. Bajo el programa GNMA II se permiten tanto un so prestatario como mtiples prestatarios, a cada uno de los pools se les conoce como custom pool y jumbo pool respectivamente. 
+
+• 
+Dise de las hipotecas que componen el pool. Los pools están respaldados por hipotecas con pagos ajustables, entre los que se encuentran las hipotecas con tasas ajustables, HTA, aunque no todas las HTA son aceptadas para conformar el pool, 
+
+
+solamente aquellas que se ajustan anualmente y las indiz.adas al rendimiento promedio de un bono anual del tesoro. 
+• Características de los créditos hipotecarios que conforman el pool. So hipotecas aseguradas o garantizadas tanto por el Federal Housing Administration (FHA) o por el Veterans Administration (VA), o por el Farmers Home Administration pueden incluirse en un pool garantizado por el GNMA. Todos los créditos hipotecarios garantizados por el FHA y V A pueden ser prepagados, es decir, los acreditados puede ejercer su opci cal/ en cualquier tiempo y sin una penalidad de prepago. Además los créditos son asumidos, es decir, el acreditado puede transferir su obligaci por la deuda. Entonces con garantía FHA y V A no van a existir restricciones contractuales que limiten las estrategias cal/ de los acreditados y cuando no existan costos de transacci, los deudores ejercerán su política de opci cal/ icamente cuando pueden refinanciar su préstamo existente con un préstamo similar que tenga una tasa de interés contractual baja, lo cual se llamará política cal/ tima. 
+El tama máximo del préstamo depende de la cantidad máxima que garantice el FHA o el V A. Únicamente hipotecas recién emitidas y con vencimientos a 15 o 30 aiios pueden estar en el pool. Por timo el spread neto en la tasa de interés pude variar entre 50 y 100 puntos porcentuales, es decir, si la tasa de contrato es del 25% el spread neto puede estar entre 0.25% y 0.125%.4 
+La principal diferencia para los valores pass-through emitidos por el FHLMC y por el FNMA con los emitidos por el GNMA es que no están garantizados por el gobierno de los Estados Unidos, a pesar de ello los inversionistas los ven de forma similar en cuanto a solvencia. 
+A pesar de ser estas tres organizaciones las principales emisoras de valores pass­through existen otras instituciones como son las bancos comerciales, instituciones de ahorro e intermediarios bursátiles que emiten pass-through convencionales los cuales son llamados 
+4 El spread neto de la tasa de inteffll es la diferencia entre la tasa de contrato y los pagos por servicios que cobra la agencia emisora. 
+valores private label pass-through y AA pass-through. Aunque el monto de pass-through convencionales es pequefio comparado con las agencias anteriores5 se espera que crezca debido al mercado potencial que todavía no han bursatilizado. 
+Existe una forma tradicional para calcular el precio y el rendimiento de los valores pass-through la cual se basa en algunos indicadores de la tasas de prepagos. El fin que persigue la siguiente subsecci es de ilustrar la metodología involucrada. 
+3.2 PRECIO Y RENDIMIENTO PARA VALORES PASS-THROUGH. 
+Para determinar el precio de un activo financiero, como ya se ha visto antes, se tiene que determinar el flujo de pagos y descontar este flujo de acuerdo a una tasa de interés esperada. En el caso de un valor pass-through el flujo de pagos es aun más dificil de determinar debido a la incertidumbre que se tiene sobre los prepagos. 
+A consecuencia del desconocimiento que se tiene acerca de como se van a efectuar los prepagos se necesita hacer un pronostico. Los indicadores que se han utilizado para la tasa de prepago son la experiencia de la Federal Housing Admistration, una tasa constante de prepago y el indicador de prepagos de la Public Securities Association. 
+3.2.1 Experiencia de la FHA. En alg momento fue el indicador de tasa de prepagos más usado. Este se deriva de una tabla de probabilidades construida a partir de la experiencia que tiene la FHA. Usando la experiencia de la FHA, se proyecta el flujo de pagos de un pool de hipotecas suponiéndose que la tasa de prepagos es la misma (100% FHA) o un mtiplo de la experiencia de la FHA. 
+A pesar de haber sido tan popular, las proyecciones de prepagos basadas en este indicador no son necesariamente confiables. La raz de esta falta de veracidad radica en que este 
+s En 1990 las tres organizaciones sumaban un moto de 235,161 millones de dares mientras las agencias 
+indicador representa un estimado de los prepagos de todas las hipotecas aseguradas por el FHA que se han originado en distintos periodos de la tasa de interés. Por lo anterior, al pretender hacer un análisis sobre como se comportan los prepagos en distintos ciclos de la tasa de interés, el indicador propuesto por la experiencia de la FHA no será il. 
+3.2.2 Tasa de prepagos constante. 
+Otra forma de proyectar tasas de prepagos y flujos de pagos de un valor pass-through es suponer que una fracci del principal es prepagado cada mes durante el tiempo que falta para el vencimiento. Esta tasa constante de prepagos, (TCP), esta basada en las características del pool, así como en el entorno econico presente y esperado. 
+Como la TCP es una tasa anual de prepagos, para estimar los prepagos mensuales la TCP se tiene que convertir en una tasa mensual conocida como tasa de mortalidad sencilla mensual, (TMSM), siendo el prepago para el mes t el siguiente: 
+prepago para el mes t = TMSM(S,_1 -S,) 
+Donde 
+TMSM =1-(1-TCP)Y.2 
+3.2.3 Indicador de prepagos esdar de la Public Securities Asociation. 
+Aunque en un inicio fue desarrollado para obligaciones hipotecarias colaterali7.adas, el indicador de prepagos estándar de la Public Securities Asociation (PSA) ha sido utili7.ado para proyectar flujos de pagos para todos los valores que estén relacionados con las hipotecas. Este indicador es presentado en forma de una serie mensual de tasa de pagos constantes anuales. El modelo básico de la PSA supone que la tasa de prepagos es baja en el inicio de la hipoteca y después se incrementará. 
+El indicador de la PSA supone las siguientes tasas de prepagos para hipotecas por 30 aftos, una TCP de 0.2% para el primer mes, incrementándose 0.2% por los siguientes 30 
+privadas solo alcanz.aban la cantidad de 14,343 millones de dares. 
+meses hasta alcanz.ar el 6% por afio y una TCP de 6% para los siguientes ai\os. Este indicador se conoce como un 100% PSA y puede ser expresado se la forma siguiente: 
+Si t < 30 ~ TCP = 6o/½o 
+Sit~30 ~ TCP=6% 
+Dado este indicador como punto de referencia se puede proyectar flujos de pagos que correspondan a una tasa de prepagos mayor o menor, es decir, por arriba o por abajo del 100%PSA. 
+La fmula para obtener el flujo de pagos proyectado es: 
+i (1 +;y-1+1 ] PP, = PP,_, (1 +;y-t+I -1 (12)
+[ 
+Donde PP, =Pago mensual proyectado para el mes t. r =Plazo original de la deuda en meses. i =Tasa de interés mensual pactada. Para calcular la proporci correspondiente al pago de intereses se puede utilizar la siguiente fmula: IP, = PP,_,i (13) Donde IP, =Intereses proyectados al mes t. 
+La fmula anterior muestra que el interés mensual proyectado es igual al producto del saldo insoluto del principal al final del mes anterior por la tasa de interés mensual. La tasa de interés mensual puede dividirse en dos partes, la tasa de interés neta mensual proyectada después del pago de servicios y el pago de servicios, en la forma siguiente: 
+NIP, =PP,_,(i-se) 
+(14)
+SE, = PP,_,se 
+Donde 
+NJP,_1 =Intereses netos proyectados al mes t. 
+SE, =Pagos de servicios proyectados al mes t. 
+se =Tasa de pago de servicios. 
+El pago mensual que se realiza sobre el saldo insoluto se encuentra sustrayendo el pago a intereses del pago total. 
+SPP, = PP, -IP, (15) 
+Donde 
+SPP, =Pago proyectado al saldo insoluto en el mes t. 
+Como se mencionanterionnente, el prepago mensual proyectado es calculado multiplicando el TMSM por las diferencia entre el saldo insoluto al principio del periodo y el pago al principal hecho en ese lapso. 
+PPP, =TMSM,(PP,_1 -SPP,) (16) Donde 
+P P P, = Prepago proyectado al mes t. 
+Siendo entonces el flujo de pagos que recibe el tenedor del valor pass-through igual a la suma del pago al saldo insoluto más el pago a intereses neto más el prepago. 
+CP, = NIP, +SPP, + PPP, (17) 
+Donde 
+CP, = Flujo de pagos proyectados para el mes t. 
+Dado el flujo de prepagos y el precio del valor pass-through se puede calcular el rendimiento. El rendimiento, como ya se ha mencionado, es la tasa de interés que se aplica al flujo de pagos para calcular su valor presente el cual es igual al precio del valor. 
+Para un valor pass-through el rendimiento esta definido como una tasa de interés anual. El rendimiento de un valor pass-through debe calcularse comparándolo con el rendimiento al vencimiento de un bono. De esta fonna se calcula hábilmente el rendimiento de un bono equivalente, el cual es una convenci de mercado para cualquier instrumento de renta fija que paga intereses más de una vez al afto. El rendimiento del bono se obtiene 
+doblando el rendimiento semianual. Para un valor pass-through, el rendimiento semianual es: 
+Rendimiento del flujo de pagos semianual= (1 +y)6 -1 (18) 
+Donde 
+y = Rendimiento mensual. 
+Como la tasa que paga un bono equivalente es anual, el rendimiento del bono se obtiene doblando el rendimiento del flujo de pagos semianuales, esto es: 
+Rendimiento de un bono equivalente= 4 ( 1+y)6 -1] ( 19) 
+Por timo dado el rendimiento de un valor pass-through, el precio va a ser simplemente el valor presente del flujo de pagos proyectado. Sin embargo, debe tenerse un gran cuidado en obtener la tasa de interés mensual con la que se calculará el valor presente de cada uno de los flujos de pagos mensuales. Lo cual se tratará en la siguiente secci. 
+3.3 PREPAGOS. 
+Existen varias razones para que ocurran los prepagos. Entre las más comunes es que el dueí\o de la propiedad la venda, dando como resultado que el saldo insoluto sea liquidado, otra raz es que el dueí\o de la casa pueda obtener un mejor financiamiento debido a que las tasas de mercado caen por abajo de la tasa de interés del contrato lo que da como resultado un prepago para lograr un refinanciamiento de la deuda hipotecaria. 
+Para el caso de los valores respaldados por el GNMA el default puede ser visto como un prepago ya que si el duefto de la casa no puede pagar o el nuevo dueí\o dada la venta de la casa no asume la responsabilidad de la deuda hipotecaria el GNMA absorberá la deuda, entonces desde la perspectiva del tenedor del valor esto se verá como un prepago, por lo tanto, una de las notables características de los deudores de créditos hipotecarios que están 
+suscritos al valor GNMA es la de pagar sus créditos aun cuando la tasa de interés de mercado esta por arriba de su tasa de contrato. Este tipo de prepago es conocido como prepago subtimo. 
+Ahora bien, entre los factores más importantes que afectan la conducta de prepago están la tasa de interés corriente, las características de los créditos hipotecarios que componen el pool, factores estacionarios y la actividad econica en general. 
+En lo que respecta a la tasa corriente se puede decir que es el principal motivo para el refinanciamiento ya que el deudor hipotecario se dará cuenta que es una mejor inversi el hacer pagos extraordinarios para obtener una tasa de contrato menor que el ahorrar este dinero a una tasa pasiva baja. La existencia de tasas corrientes bajas también ofrece la oportunidad de comprar casas de mayor valor creando incentivos para vender la casa actual y adquirir otra. 6 
+Las características de los créditos hipotecarios que respaldan al valor son otro factor de prepagos, por ejemplo, si se comparan pools que están garantiz.ados por el FHA y V A con pools de hipotecas convencionales generalmente el monto del crédito es menor y el nivel de ingresos de los acreditados es también menor para los créditos garantizados por el FHA y V A reduciendo por un lado los incentivos de refinanciar cuando las tasas caen debido al monto del crédito. 
+Por otro lado, es poca la capacidad que tienen los deudores de tomar ventaja de la caída en la tasa de interés a causa del costo del proceso de refinanciamiento, de ese modo, sugieren tener una tasa de prepagos menor en relaci a los créditos convencionales, sin embargo, debido a esta tima característica, cuando ocurren cambios desfavorables en la economía se sabe que los primeros en pagar las consecuencias son las personas de bajos ingresos aumentando de esta forma la tasa de prepagos, tanto, que el efecto default sobrepasa los dos efectos anteriores. 
+Los efectos estacionarios se refieren a los patrones relacionados con la actividad del mercado de vivienda primario donde la compra de casas aumenta en la primavera, llegando a 
+6 Claro que la tasa de inter6s debe de ser lo suficientemente baja para que las ganancias que se logren con el refinanciamiento sean lo suficientes para compensar el costo del proceso. 
+un pico en el verano, para después caer desde ese momento hasta el invierno. Esta actividad en el mercado de la vivienda se ve reflejada en las tasas de prepagos, es decir, el cambio de casa sigue el mismo patr que el de ventas en el mercado de la vivienda, pero debido al retraso que existe en el flujo de pagos a los tenedores del valor, esta fluctuaci en la tasa de prepagos se verá trasladada 
+Finalmente, la actividad econica afecta la tasa de prepagos de la manera siguiente, un crecimiento econico sostenido implica un crecimiento en el ingreso personal y oportunidades de trabajo mejores ocasionando movilidad del trabajo, ambos efectos ocasionan que se incremente el cambio de casa. En cambio cuando se tienen crisis econicas se da lo opuesto, es decir, se incrementa el riesgo de default. 
+3.3.1 El riesgo de prepagos asociado a los valores pass-through. 
+Debido a que el flujo de pagos es desconocido, es necesario entender el riego que implican los prepagos. Suponiendo que un inversionista compra un porcentaje de un valor GNMA cuando la tasa de interés de las hipotecas es por decir 10%, al bajar la tasa de interés de las hipotecas se tendrán dos efectos adversos. 
+Por un lado el valor presente de los flujos de pagos será mayor porque será descontado a una tasa de interés menor, debido a las propiedades de un bono libre de riesgo. 
+La evaluaci nueva del valor es tal que el due del valor puede garantiz.ar el flujo 
+de pagos inicial vendiendo su valor a pesar del bajo rendimiento que esta disponible en el mercado. En el caso de un valor pass-through el incremento en el precio no es tan alto como en un bono libre de riesgo debido a la caída en la tasa de interés también aumenta los incentivos a realizar prepagos para refinanciar la deuda hipotecaria a una tasa menor. Con esta situaci el due del valor recibirá un pago extra pero so podrá vender su valor al 10% del precio nominal de la deuda. Enfrentando de esta forma un riesgo de pérdida de capital al no poder garantiz.ar el flujo de pagos inicial al vender su valor. 
+Cuando la tasa de interés cae las consecuencias adversas que sufre el inversionista de un valor pass-through son idénticas a aquellas que experimentan los tenedores de un bono con opci call. En ambos casos la potencial subida en el precio del valor se ve truncada gracias a la opci call que tiene el comprador. Por lo anterior no es sorprendente que un crédito hipotecario garantice al comprador el derecho de ejercer la opci call al precio nominal del préstamo. 
+Cuando la tasa de interés del crédito hipotecario se incrementa, el precio del valor pass-through, como le pasa a cualquier bono, se reduce. Pero la reducci será mayor debido a que las altas tasas de interés disminuyen la tasa de prepagos al excluir los motivos de refinanciamiento y el de reali7.81' prepagos parciales. 
+A consecuencia de estos riesgos que enfrentan los valores pass-through se crearon valores derivados como los Collateralized Mortgage Ob/igations, (CMO), y Stripped Mortgage-Baclced Securities, (stripped MBS). Como ambos valores salen de los limites que persigue la tesina, so se mencionaran sus principales propiedades. 
+3.4 DERIVADOS 
+3.4.1 Collateralized Mortgage Obligations. 
+Este instrumento es creado para reducir el flujo de pagos de productos que estén relacionados con hipotecas, tales como prestamos hipotecarios, pass-through y stripped MBS, con el fin de reducir el riesgo de los prepagos. La creaci de este instrumento no elimina el riesgo del prepago icamente lo distribuye en diferentes formas de riesgo entre distintas clases de valores. Por ejemplo lo puede distribuir entre varias clases donde cada una de ellas recibe los prepagos en diferentes etapas y de ello depende su vencimiento y su exposici al riesgo. 
+Esta forma de redireccionar el flujo de pagos hace más dtil el instrumento lo que amplia las posibilidades de inversi, por ejemplo habrá instituciones que requieran de inversiones a corto plaz.o, a mediano plaz.o, que sean menos o más adversas al riesgo. Hoy en día existe una gran variedad de complicadas estructuras de CMO cuyo propito es el de proveer ciertas clases de CMO con menor incertidumbre acerca del riesgo del prepago, lo cual es logrado icamente trasladando el riesgo a otros CMO. 
+3.4.2 Stripped Mortgage-Backed Secarities. 
+Stripped MBS, son otro ejemplo de producto derivado. Mientras un valor pass­through asigna el flujo de pagos de los créditos suscritos en forma de prorrateo a los tenedores del valor, un stripped MBS es creado para afectar la distribuci del principal e intereses de una distribuci prorrata a una distribuci desigual. 
+Los valores creados de esta forma tienen una relaci precio rendimiento distinta a la relaci precio rendimiento de los créditos hipotecarios del pool. Instrumentos tradicionales como los futuros son creados para cubrirse del riego que ocasiona los cambios en la tasa de interés. El stripped MBS puede ser usado para cubrirse del riesgo tanto de los prepagos como de la tasa de interés creando dos valores, 10 y P07 que se mueven en direcci contraria ante cambios en la tasa de interés. Entonces si se desea tener un portafolio con un bajo riesgo se puede incluir alguno de estos dos instrumentos para balancear el riesgo. 
+7 En el valor 10, inlerut only, se mandan todo el flujo de los pagos a intereses mientras que en el valor PO, principal only, se mandan todo el flujo de los pagos a principal 
+MODELO. 
+4. MODELO DE FIJACIÓN DE PRECIOS PARA UN VALOR 
+GNMA. 
+Kenneth B. Dunn y John J. McConnell,1 desarrollaron un modelo que se utiliza para fijar precio a un valor que este respaldado por un pool de créditos hipotecarios que cumplen con los requisitos del GNMA. En este modelo se considera una economía, en donde la tasa de interés instantánea libre de riesgo para dar o pedir crédito, resume completamente toda la informaci relevante para fijar precio a valores libres de default con tasa de interés fija, este modelo está basado en la teoría de equilibrio general de estructura de plazos de la tasa de interés bajo incertidumbre derivada por Cox, Ingersoll y Ross. 2 
+El modelo de fijaci de precios para un valor GNMA se deriva de las siguientes proposiciones.3 
+1 Ver K. B. Dunn y J. J. McConell. "Valuation ofGNMA Mortgage-backed Securities," Journal ofFinance, Vol. 36, No. 3, Junio 1981, 599-616. 2 J. C. Cox, J. E. Ingersoll, y S. A. Ross. "A Theory ofthe Tenn Structure oflnterest Rates." Econometrica, Vol. 53, No. 2, M8J'7.0 1985, 385-407. Utilizan en su articulo un modelo de equilibrio general de fijaci de precios de activos para estudiar la estructura de plazos de la tasa de interés. En este modelo, los precios corrientes y las propiedades estocásticas de todos los cffliitos contingentes, incluyendo bonos, son derivados endogenamente. Anticipaciones, aversi al riesgo, alternativas de inversi y las preferencias acerca del tiempo de consumo juegan un papel en la detenninaci de la estructura de plazos. El modelo incluye los factores tradicionalmente mencionados de tal fonna que sea consistente con la conducta maximizadora y las expectativas racionales. 3 Los primeros seis supuestos expuestos en esta secci, sin tomar en cuenta la variable z que sigue un proceso Poisson y que representa el comportamiento de los prepagos, llevan al modelo de estructura de plazos de la tasa de interés derivado por Cox, lngersoll y Ross en un marco de equilibrio general para una economía que tiene una 6nica fuente de incertidumbre. 
+S.l. El precio de un valor con tasa de interés libre de riesgo fija, v(r,f',z}, esta en funci icamente de la tasa instantánea corriente libre de riesgo r(t), del tiempo que falta para su vencimiento f' y de la variable z que sigue un proceso Poisson y que representa el comportamiento de los prepagos El supuesto (S. l) nos dice que para un estado variable sencillo, la tasa de interés corriente libre de riesgo, resume completamente toda la informaci que es relevante para fijar precios a valores que utilizan tasas fijas. Debido a que los cambios en el precio de todos los valores con tasas fijas libres de riesgo están gobernados por la misma variable aleatoria, 
+los rendimientos de tales valores están, por lo menos localmente, perfectamente correlacionados. 
+S.2. La tasa de interés instantánea libre de riesgo para dar o pedir créditos sigue un proceso de Markov continuo y estacionario, es decir, la tasa de interés futura va a depender icamente de su estado presente y de donde se encontraba un instante antes. 
+La tasa de interés consta de dos componentes que son la parte predecible y la parte innovativa Este modelo supone que la parte predecible no es más que la tendencia esperada de la tasa de interés la cual converge a la tasa de interés a largo plam. 
+La convergencia de la tasa de interés "tendencia" esta dada por una velocidad de ajuste que es constante durante todo el proceso de la amorti7.aei, es decir, si existe alguna diferencia entre la tasa de interés corriente y la tasa de interés a largo plam, la tasa de interés esperada va a estar dada por la velocidad de ajuste de la tasa de interés corriente. 
+Por otro lado, se supone que la parte innovativa del modelo sigue una caminata aleatoria simétrica, que es una descripci de los movimientos de una partícula en donde la probabilidad de que se mueva hacia arriba o hacia abajo es la misma y cada movimiento es independiente de los demás, aunque el rango en que puede realizarse este movimiento, esta determinado por la variama del proceso que para este modelo no es más que la variama de la tasa de interés multiplicada por la tasa de interés corriente. La formali7.8Ci del caso límite de una caminata aleatoria simétrica cuando el proceso se vuelve continuo, es el proceso de 
+Wiener, entonces el modelo supone que la parte no predecible de la tasa de interés va a seguir un proceso de Wiener. 
+Lo anterior puede ser escrito en forma de un proceso de Jta4 de la forma siguiente: 
+dr = µ (r')dt +u(r')dw (1) 
+Donde µ (r) • K(m-r), K, m> O 
+2 2 2 
+u (r) -u r, u constante, 
+µ (r) =Tendencia instantánea del proceso. 
+u 2 (r) =Varianza instantánea del proceso. 
+m = Tasa de interés a largo plazo. 
+K = Velocidad de ajuste del proceso. 
+dw = Proceso de Wiener con E{dw) = O y dw2 = dt con probabilidad de 1. 
+En cuanto a las tasas de interés negativas, estas son excluidas desde un inicio debido a que el proceso de la tasa de interés supone que se regresa a su media. Además como se observa, la varianza del proceso, cr 2 ( r) , se incrementa cuando la tasa de interés aumenta. 
+El suponer que la tasa de interés a largo plazo es constate durante toda la amorti7.aci de la deuda hipotecaria no es muy real, en cambio, se podría suponer que la tasa de interés a largo plazo tiene una tendencia en funci del tiempo, es decir en vez de que y = m la tasa de interés podría ser y = a +bt donde t es el tiempo. 
+S.3 La covarianza entre cambios en la tasa de interés y cambios porcentuales en las inversiones timas de la riqueza, qr , es igual al precio de riesgo, p (r) , multiplicado por la desviaci estándar del proceso: 
+p (r)uJi = qr, (2) 
+Donde el precio al riesgo, es la diferencia entre el rendimiento instantáneo esperado y el rendimiento libre de riesgo, que al ser multiplicado por la desviaci estándar del proceso da como resultado un término ajustado al riesgo, es decir, cuanto están dispuestos a pagar los inversionistas por cada unidad de riesgo extra. Esta igualdad muestra que el término de ajuste al riesgo es proporcional a la tasa de interés instantánea. 
+S.4. Individualmente los agentes no se sacian, sus preferencias por el riesgo son consistentes con (S.2) y están de acuerdo con las especificaciones de la ecuaci (1). 
+S.5. El mercado de créditos hipotecarios es perfecto y competitivo. 
+Los supuestos (S.4 y S.5) aseguran que los deudores hipotecarios van a prepagar su crédito de acuerdo a su política call tima Específicamente un deudor hipotecario nunca pennitirá que el valor de mercado de su crédito exceda a su saldo insoluto, ya que en el instante que se viole esta condici el préstamo puede ser refinanciado con otro crédito idéntico a una tasa efectiva de interés menor que la tasa del crédito existente. 
+S.6. El flujo de pagos, C(-r), para cualquier valor es pagado continuamente. 
+Como se vien la secci tres los tenedores de valores GNMA van a recibir casi la totalidad de los pagos que realicen los deudores hipotecarios, debido a que se le descuenta el servicio de la deuda, pero este flujo de pagos va comprender icamente la amortizaci de la hipoteca.' El suponer que el flujo de pagos so depende del tiempo que falta para su vencimiento quiere decir que si se tienen dos deudas hipotecarias del mismo valor, el monto de los pagos periicos va a ser mayor para la deuda que tenga el término de vencimiento menor. 
+El suponer que los pagos se realiz.an en forma continua además de ser una condici técnica para la aplicaci del modelo también es una aproximaci de la forma en que los valores con tasa fija son comerciados, porque a pesar de que los pagos de la mayoría de los valores con tasa fija ocurren en intervalos discretos generalmente son comerciados con tasas que se acumulan diariamente. 
+Una de las características más notable de los deudores hipotecarios, es que en ocasiones ejercen su opci call sobre sus prestamos fuera de la ruta de política call tima. Entre estos prepagos ( que son sobre los saldos insolutos del crédito) se distinguen dos tipos, 
+4 Para mayor informaci de las caracteristicas del proceso de Wiener y del proceso de ltver Michael U. Dothan. "Prices in Financia! Markets." Oxford University Press, 1990, Capftulos 7 y 8. s Los prepagos van a ser agregados independientemente en el siguiente supuesto. 
+los que se ejercen cuando r esta por abajo de r. y cuando r esta por arriba de r. , a este 
+timo le llaman ''prepago subtimo". 
+El término de subtimo se utiliza de manera casual, debido a que el prepago es subtimo icamente en el sentido en que el monto del prepago excede al valor de mercado de la deuda y como los deudores hipotecarios no tienen acceso directo al mercado de capitales y al no existir tampoco un mercado perfecto sobre ganancias de capital, los deudores no pueden recomprar su deuda al valor de mercado, por ello la decisi de prepago no es subtima, pero el prepago es subtimo, en relaci a aquellos que se observarían si los deudores tuvieran acceso directo al mercado de capitales o si existiera un mercado perfecto para las ganancias de capital sobre los crédito hipotecarios. 
+En un mercado eficiente el precio de un valor GNMA reflejaría la posible ocurrencia de prepagos subtimos y el modelo general de fijaci de precios debería ser modificado. Para incorporar tal hecho, Dunn y McConnell agregan las dos suposiciones siguientes: 
+S.7. Los prepagos que ocurren cuando el precio de un valor GNMA es menor que su saldo insoluto, sigue un proceso Poisson. 
+Sea "z" la variable aleatoria que sigue un proceso Poisson, esta variable aleatoria es igual a cero hasta que ocurra un prepago subtimo. Al efectuarse el prepago subtimo la variable brinca a uno y el valor deja de existir. Entonces el proceso de Poisson z es el siguiente: 
+O si un prepago suboptimo no ocurre 
+dz= 
+{ 1 si un prepago suboptimo ocurre 
+Donde 
+E(dz)=..t(r,r)dt (3) 
+..t (r, r)dt es la probabilidad por unidad de tiempo de que ocurra un prepago subtimo al tiempo de maduraci r y tasa de interés r . Entonces el proceso Poisson es no homogéneo con respecto al tiempo. 
+Como se pude apreciar las probabilidades de ocurrencia de un prepago icamente dependen del tiempo que falta para el vencimiento y de la tasa de interés en el tiempo -r . 
+S.8. Los prepagos que ocurren cuando el precio de un valor GNMA es menor que su saldo insoluto, no están correlacionados con alguno de los factores relevantes del mercado y por lo tanto, no son sistemáticos. 
+Esta suposici significa que dado el estado de la economía, al principio de cualquier intervalo de tiempo el proceso de Poisson no esta correlacionado con cambios en las variables de estado durante tal intervalo. 
+Gracias a (S. 7) el precio de un valor GNMA V (r, -r,z) es una funci de dos estados variables, r e z el cual esta gobernado por un proceso mixto. Este proceso puede deducirse a través de analizar como las diferentes variables afectan al precio del valor. Por un lado, la parte predecible del proceso esta compuesta por la tasa de rendimiento esperada, el flujo de pagos y la probabilidad de que ocurra un prepago subtimo. La tasa de rendimiento esperada afecta de manera positiva al precio del valor, porque a mayor rendimiento de un valor los inversionistas estarán dispuestos a pagar más por el incrementándose de esta forma el precio. Mientras que, el flujo de pagos y la probabilidad de que ocurra un prepago subtimo disminuye el precio del valor, esto es porque se reduce la tasa de riesgo y por consiguiente el rendimiento esperado. Por otro lado, se encuentra la parte innovativa del proceso, la cual esta compuesta por la desviaci estándar del rendimiento y la ocurrencia de prepagos subtimos, donde ambos tienen un efecto positivo sobre el precio del valor. Lo anterior pude fácilmente explicarse, porque como se trata de valores con opci cal/, el crecimiento de la desviaci estándar ofrece un rendimiento esperado mayor, por timo, la ocurrencia de prepagos subtimos es simplemente un rendimiento extra no esperado. Ante esto, el proceso mixto que gobierna el precio de un valor puede escribirse de la siguiente forma: 
+so 
+dV(r, T,z) = [a(r, r)V(r, r,z)-c(r)-l (r,rXF(r)-V(r, T,z))}u +s(r, r)V(r, T,z)dw +{F(r)-V(r,r,z)]dz (4) 
+Donde 
+F(t) es el valor nominal de la deuda cuando falta T para su vencimiento, a (r, T) es la tasa de rendimiento instantánea total esperada y s (r, T) es la desviaci estándar instantánea del rendimiento, condicionada a que el prepago subtimo no ocurra. 
+Del lema de Jt y de un lema análogo para procesos Poisson expuesto por R. C. Merton,7 Dunn y McConnell obtienen: 
+a (r, r) =[½u(r)2 V,,. + µ (r)V, -Vr +C(r) +l (r, rXF(r)-v)] IV 
+(S) 
+s (r,r) =u(r)Vr /V 
+Es necesario saber si existe una prima asociada a los prepagos subtimos, Dunn y McConnell proponen construir un portafolio que contenga un valor GNMA y cualquier otro valor que dependa de la tasa de interés de tal forma que se elimine la incertidumbre dada por los cambios no esperados en la tasa de interés, es decir, el otro valor responderá en sentido opuesto a un valor GNMA ante cambios en la tasa de interés. Sea b (r, T) la tasa instantánea 
+de rendimiento esperado y g (r, r) la desviaci estándar del rendimiento del otro valor. 
+Por lo que corresponde a la tasa de riesgo, esta puede ser eliminada invirtiendo la proporci g / (g-s) en el valor GNMA e invertir la proporci -sI (g-s) en el otro valor. Siendo la tasa de rendimiento de este portafolio igual al rendimiento que ofrece un valor GNMA más el rendimiento que ofrece el otro valor multiplicados respectivamente por 
+la proporci que se invierte en cada uno de ellos, más el rendimiento no esperado de un prepago subtimo. 
+
+6 Ver Michael U. Dothan. "Prices in Financial Markets." Oxford University Press, 1990, pag. 200. ' Ver Roberto C. Merton. "Optimum Consumption and portafolio Rules in a Continuos-Time Model." Joumal ofEconomic Theory, Vol. 3, No. 4, Diciembre 1971, 373-413. 
+Durante la mayor parte del tiempo el rendimiento reali7.ado por este portafolio será igual al coeficiente de dt en (6), pero, cuando existe un prepago subtimo habrá un rendimiento no esperado igual a la proporci del portafolio invertido en el valor GNMA por 
+
+Con los supuestos (S. 7) y (S.8) y el portafolio anterior puede decirse que los prepagos son icos para cada valor y la incertidumbre causada por los prepagos subtimos puede ser diversificada a un bajo costo. Como consecuencia no existe una prima asociada a los prepagos subtimos y el rendimiento esperado del portafolio debe ser igual a la tasa de rendimiento sin riesgo r . 
+Entonces tomando el valor esperado de ( 6) igual a rdt se obtiene: 
+
+rdJ =(g~;)[(a-.t(F;V)-;b)dJ+( F;V)E{dz}] rdJ=(g~.)(a-;+ 
+a-r b-r 
+-=-(7a) 
+s g 
+Si el riesgo de un valor GNMA es diversificable, entonces el valor GNMA, debe evitar oportunidades de arbitraje fijando su precio de tal forma que el rendimiento esperado es igual a la tasa sin riesgo más una prima de riesgo. 
+a(r, i-) = r + p(r}s(r, i-) 
+por lo tanto 
+a-r_b-r_p()
+------r (7b) 
+s g 
+S2 
+Donde p (r) es el precio de la tasa de riesgo para todos los valores interés dependientes. Debido a que V, es generalmente negativa, s (r, T) es negativa y la prima de riesgo es positiva cuando p (r) es negativa. 
+Finalmente se obtiene la ecuaci diferencial parcial para el valor GNMA sustituyendode(5) a(r,T) y s(r,T) en(7b): 
+[½u(r)2V" +µ (r) V, -V,+ C(T)+ ..t (r, TXF(T)-v)] /V-r 
+.__----------:--,--------_._......__ =p(r)
+u(r) V, IV ½u(r)2v" +µ(r) V, -V, +C(T)+..t(r,TXF(T)-v)-rV=p(r)u(r) V, Sustituyendo µ (r) y p(r)u(r) de ( 1) se obtiene 
+
+La combinaci de los dos primeros términos del lado izquierdo de la ecuaci, es el cambio en el precio ajustado al riesgo esperado de un valor GNMA, ( condicionado al conjunto de informaci al tiempo 'f), dado que un prepago subtimo no ocurra. 
+Los timos dos términos son el cambio esperado en el valor de un prepago subtimo y el flujo de pagos cuando el tiempo faltante para el vencimiento es 'f y la tasa corriente de interés libre de riesgo es r . Estos términos no están ajustados al riesgo debido que C(T) y F('f) son libres de default y no existe una prima de riesgo asociada con el 
+prepago subtimo. Entonces tanto (8) como (7b) requieren que el rendimiento ajustado al riesgo esperado de un valor GNMA sea igual al rendimiento libre de riesgo. 
+El supuesto de la ocurrencia de prepagos subtimos se ve reflejado en la ecuaci 
+(8) en el termino ..t (r, 'fXF('f) -V(r, T, z)) . Este término es el valor esperado de un prepago subtimo cuando el tiempo que falta para el vencimiento es 'f y la tasa libre de riesgo es r . 
+Si el evento Poisson ocurre, los inversionistas recibirán F('f). En tal punto, el precio de mercado del valor tendrá un "salto" por la cantidad F(T)-V(r,T,z). Entonces, 
+S3 
+l (r, TXF(T) -V(r, T, z)) es un componente adicional del cambio esperado en el precio del valorGNMA. 
+Ahora bien, de acuerdo al modelo general de fijaci de precios, las diferencias entre reclamos que dependen de la tasa de interés estarán reflejadas en la forma en que se da su flujo de pagos y algunas condiciones límite que la ecuaci (8) debe de satisfacer las cuales son: 
+a) Al llegar al vencimiento, T =O, el valor de un bono libre de default debe ser igual a su valor nominal o al saldo insoluto, F (O). Lo anterior provee la condici inicial. 
+V(r,O,z) = F(O) (9) 
+Cabe notar que para un bono con pagos de amortizaci continuos F (O) es cero y para un bono no amortiz.ado F (O) es igual al valor nominal del bono. 
+b) El precio de un valor que depende de la tasa de interés se aproxima a cero cuando la tasa de interés tiende a infinito. Esto nos lleva a la condici límite. 
+LimV(r,T,z)=O (10)
+,_ 
+c) Como no se permiten tasas de interés negativas un límite natural es r = O • Tomando r =l =O en (8) obtenemos la condici límite para un bono no calla la tasa r=O. 
+KmV,+C(T)= Vr (lla) 
+Este resultado, muestra que un aumento en el tiempo de vencimiento es igual a un flujo de pagos extra más variaciones adicionales que pueden darse en la tasa de interés, como consecuencia del aumento en el tiempo de vencimiento, multiplicado por la tasa promedio que es aproximadamente el producto de la velocidad de ajuste y la tasa de interés a largo plazo. 
+d) La utilizaci tima de la opci call, es decir, no existen prepagos subtimos l =O , depende de un proceso estocástico gobernado por la tasa de interés libre de riesgo. Entonces para cada T existe alg nivel de tasa de interés libre de riesgo, por 
+decir r. (t-} ,para la cual V [re (f'),f'] = F (f') y la opci cal/ será ejercida. Lo anterior so es valido cuando se conoce r. (i-) , en caso contrario la opci se ejercerá en una vecindad alrededor de la r. (i-) verdadera. 
+Con tasas de interés por abajo de r. (i-) la opci call siempre será ejercida por lo tanto tales tasas de interés no serán relevantes para fijar precio a los bonos con opci call. 
+El efecto de políticas cal/ timas es el de excluir el valor de mercado de un bono que exceda a su saldo insoluto, por lo tanto la condici limite de un bono con opci cal/ tima es: 
+V(r,i-)s F(i-) (llb) 
+Con la condici inicial (9) y las condiciones límite (10) y (llb), (8) puede ser resuelta numéricamente para el precio de un valor GNMA pass-through. Se reali7.ará un análisis de las características del valor GNMA, obteniendo en primer lugar la soluci de la ecuaci diferencial parcial (8), que nos servirá para ver como se comporta el preciodel valor GNMA a distintos niveles de la tasa de interés. 
+SS 
+5. ANÁLISIS DE LAS CARACTERISTICAS DE LOS VALORES 
+GNMA. 
+La fonna en que se realiza el análisis es encontrando primero la forma en que se comporta el modelo y proponiendo una manera para solucionar la ecuaci diferencial del precio del valor GNMA. Posteriormente, se compararán las diferentes combinaciones de caracteristicas que pueden derivarse a partir de las caracteristicas de amorti7.aci y de opci cal/ que poseen los valores GNMA. 
+5.1 SOLUCIÓN DE LA ECUACIÓN DIFERENCIAL DEL PRECIO DE UN VALORGNMA. 
+La ecuaci para fijar precio a un valor GNMA es: 
+Sin perdida de generalidad, se supone F(r) =O cuando t ~ oo . Si este no es el caso, se hace una transformaci lineal de la variable V . Además se supone, con el fin de simplificar el cálculo, que e(r) =Oy A(r, r) =c. 
+Por lo tanto la ecuaci del precio de un valor GNMA es la siguiente: 
+vr =½u2rV" +(Affl-(K+q)r)v, -rV-cV (12) 
+Si la soluci del estado estable para el precio del valor de la ecuaci (12) existe, entonces V ~ cte. cuando r ~ 00, y por tanto Vr ~ O. El resolver la ecuaci diferencial para el estado estable tiene su justificaci en que las hipotecas tiene un largo tiempo para su 
+vencimiento, por lo tanto podemos suponer que estamos en estado estable desde el principio, dado que los parámetros sean bien comportados. Entonces la ecuaci del estado estable, es ahora una ecuaci diferencial ordinaria quedando de la siguiente forma: ½u2rV,,. +(mi-(K+q)r)v, -rV-cV = O (13) Suponiendo que el precio del valor es bien comportado, es decir, que no crece de forma explosiva. Utiliz.ando la u 2 = 0.08 y r = 0.08 que obtienen Dunn y MacConnell en su articulo se tiene que, }u2rV,,. ,-O, por lo que se puede ignorar este término y tener a una buena aproximaci de la ecuaci, la cual queda de la siguiente forma: (mi-(K+q)r)v, =(r+c)V (14a) 
+Despejando V,, 
+V = (r+c) V 
+(14b)
+' (mr-{K+q)r) 
+Por lo tanto, la soluci estándar de esta ecuaci diferencial es: 
+--' -(.!!!!.. +c}•IKa-{K+tM --' ( .-.+c(r+t))
+V= Ae r+fe .... = Ae .... (Km-{K+q)r) -(r+9)2 (15) 
+Entonces como Km+ {K +q)e > o' implicando que el exponente -..7:~r)c <o' por lo que va a existir una singularidad en; 
+Km 
+r=r =-­
+e K+q 
+Por lo tanto, V -+ oo cuando r -+ re, lo cual se puede apreciar en la figma 1. Pero por otro lado ya sabemos que la opci cal/ que tiene el valor va a causar que para tasas de interés por abajo de re la opci cal/ se ejerce al precio de ejercicio, E , lo que causa la línea recta que también se muestra en la figma 1. 
+De la ecuaci del estado estable (13) se tiene que ½u2rV,,. 111 O, es decir, V,,. no tiene un comportamiento explosivo, entonces para la ecuaci (14a) no se va a tener una buena aproximaci para aquellos valores que estén alrededor del valor critico de la tasa de interés, re , pero para tasa de interés no tan cercanas a re la ecuaci va a dar una buena aproximaci, donde el precio del valor GNMA va a caer cuanto mayor sea la tasa de interés. 
+E 
+Figura 1. 
+Por lo tanto, el estado estable ofrece una buena aproximaci para el cálculo de V , excepto en una vecindad, y, a la derecha de re , por la singularidad que se mostranteriormente. 
+La idea básica para poder resolver la ecuaci (13) es partiendo del valor inicial que es conocido, V(r) =E, para toda r < re, a partir re se utima la mejor aproximaci posible 
+en la vecindad y para calcular los valores del punto (a) al punto(b) y finalmente para valores de r por arriba de la vecindad y se vuelve a utimar la buena aproximaci que ofrece la 
+soluci del estado estable, tomando como valor inicial el valor que se tenga en el punto (b). Lo cual se ilustra en la figura 2. 
+V 
+E 
+Figura 2. La tarea ahora es encontrar la mejor aproximaci de los valores del punto (a) al punto (b), para lo cual se utiliza la ecuaci (13) para toda r en y. Para no confundirse se cambiara de notaci tomando P en vez de V , quedando la ecuaci (13) de la siguiente fonna: 
+}u2rP" +(1m1-(K+q)r}P,.-rP-cP = O 
+Sea a =-{K +q), entonces, .!.u2rP +a(r-r )P -rP-cP =O
+2 rr e r 
+Como r e r :::> r ,. re. Si se sustituye r por re en la ecuaci anterior, pero so en el primer y tercer término, porque el segundo término es el término de transici, es decir, es el que ocasiona el cambio de signo en la ecuaci, por lo que se tiene que mantener en caso contrario se estaría perdiendo completamente la singularidad de la ecuaci. Entonces la ecuaci que queda es la siguiente: 
+
+Haciendo un cambio de variable: x = r -re y dividiendo por } re se obtiene: 
+
+Donde 
+
+La ecuaci diferencial (16) puede resolverse a través de transformadas de Laplace.1 Entonces las ecuaciones para las transformaciones de Laplace son las siguientes: 
+P(x) = Je• P(s)ds  (17a)  
+e  
+P.,r(x) = Jseª P(s)ds  (17b)  
+e  
+P.u(x) = Js2 ell( P(s)ds  (17c)  
+
+e 
+Donde e es un camino apropiado el cual se selecciona posteriormente. 2 
+1 Para mayor informaci acerca del m6todo de transformadas de Lap/ace para solucionar ecuaciones diferenciales ver Ford, Lester R. "Diferential Equations." New York: McGraw-Hill Book Company, Inc., 19SS. 2 La vuiable., es una vuiable compleja, es decir, se está hablando de transformadas de Lap/ace en el sentido de la teoria de funciones complejas 
+Multiplicándola por x e integrando por partes la ecuaci (17b) se obtiene: x~ (x) =x fse• l'(s)ds =fxe• sP(s)sl'(s)ds =I(!!_e• )sP(s)ds 
+e  e  e  ds  
+-1=e•sP(s) e - I d -e• ds sP(s)  
+e  
+
+Entonces P(x) satisface lo siguiente: 
+u 2 s2P(x)-P!sP(x)-;P(x)= O SeaP=-µ conµ>O. Entonces, 
+2 
+u s2 P(x)+ µ !sP(x)-;P(x) = O 
+2 
+u s2 P(x)+ µs!P(x)+ µP(x)-;P(x)=O !!_ P(x) = -µ -;· P(s) -ª 2 sP(s)
+ds µ s µ Con lo cual, uti.lmmdo la transformada inversa de Laplace se obtiene: .t_l il.+a 
+P(x) =A sP e 2 ds (18)
+I 
+e 
+Con esta ecuaci se obtiene directamente P,, (x) y P,a ( x) . Para evitar la singularidad se puede integrar sobre la linea y =1 y y =-1, obteniendo las soluciones Pi (x) y P2( x), estas soluciones son complejos conjugados, por lo tanto P(x) es dos veces la parte real de cualquiera de las dos soluciones, es decir: P(x) = P.(x)+ ,Pi(x) =ReP.(x) = Re,Pi(x) Este P(x) sirve como soluci y es lo más cerca que uno puede llegar en una forma explicita. 
+Una evaluaci numérica de esta integral puede servir como alternativa para resolver la ecuaci diferencial original. Sin embargo, esto so da una aproximaci estacionaria y la fueml de esta soluci es su fonna explicita que permite analj™ la influencia de los parámetros directamente. 
+A continuaci, como se dijo anteriormente, se anali7.arán las combinaciones de características que poseen los valores GNMA, es decir, se compararán los siguientes valores: 
+l. Un bono no amortiz.able y sin opci call. 
+2. 
+Un bono no amortiz.able y con opci call. 
+
+3. 
+Un bono amorti7.able y sin opci call. 
+
+
+4. Un valor GNMA, el cual es un valor amortiz.able y con opci call, cuando se sigue una política call tima. 
+5. Un valor GNMA con prepagos subtimos. 
+5.2 LA OPCIÓN CALL. 
+Uno de los atributos que tienen los valores con opci call es el de no exceder a su precio de ejercicio, porque cuando re > r se ejercerá la opci call,3 mientras que un valor sin opci call si lo podrá exceder. 
+Ahora bien, para bonos no amorti7.ables con opci call se tiene mayor tolerancia para ejercer la opci que en bonos amorti7.ables con opci call, esto es a causa de que el costo por el error que se puede cometer al ejercer la opci, si la tasa de interés futura es mayor a r debido a la incertidumbre que se tiene acerca de r , va a ser menor en los valores 
+3 Como se menciono antes, en re el valor de un bono libre de defau/t es igual a su valor nominal o al saldo insoluto, por lo cual la opci cal/ se ejerce. 
+amortizables por que el saldo insoluto es menor en comparaci al saldo insoluto de un valor no amortizable. 
+Cuanto más alta sea la tasa de interés mayor será la probabilidad de que r > re causando que la probabilidad de ejercer una política ca/l tima sea pequefta. Entonces a altos niveles de r la opci call tiene una menor participaci en el precio del valor en comparaci a cuando r es baja. 
+El precio de un valor con opci ca/l es igual al precio de un valor idéntico sin opci call menos el precio de la opci call. La raz. de porque el precio de la opci se sustrae del precio del valor sin opci es que cuando el tenedor del bono vende la opci, el recibe el precio de la opci. 
+El efecto de la opci es reducir el riesgo y por ende el rendimiento esperado de un valor GNMA, a pesar de que los precios de ambos valores decrecen cuando r aumenta el precio del valor con opci call es menos sensitivo a los cambios en r que el valor sin opci call, es decir, la magnitud de la caída en el precio es mayor para valores sin opci call que para valores con opci call. 
+Lo anterior se manifiesta así, porque para bajos niveles de r la opci call se ejerce hasta que r > re , a partir de ese momento ambos valores decrecen pero el precio de la opci aun tiene una participaci considerable en el precio del valor por tanto la diferencia en sensibilidades es aun considerable, sin embargo esta diferencia en sensibilidades es pequefta a las altas tasas de interés instantáneo, lo cual se debe nuevamente a que es menos probable ejercer la opci cuando la tasa de interés es alta, implicando que la opci tiene un pequefto efecto sobre el precio de un valor con opci call a altos niveles de r . 
+5.3 LA CARACTEIÚSTICA DE AMORTIZACIÓN. 
+El flujo de pagos de un valor amortizable siempre es mayor que la de un no amortizable hasta el vencimiento, que es cuando el total del principal del no amortizable es pagado. Si se anali7.a en valor presente este flujo de pagos es claro que si la tasa de interés es 
+alta la liquidaci del bono no amortimble es severamente descontada. Entonces cuando r es alta, el precio de un bono amortimble sin opci call es mayor que el precio de un no amortimble sin opci call, pero cuando la r es baja ocurre lo opuesto, por que el flujo de pagos que ofrecen los amortimbles icamente va a poder ser reinvertido a una tasa de interés baja. Por lo tanto va a depender de la tendencia que sigue r para saber cual de los bonos vale más a largo plazo. Además, esta diferencia de precios entre un bono amorti7.able con un bono no amorti7.able va a depender de la velocidad de ajuste de la tasa de interés, le, porque a menor le,4 mayor será el impacto de una variaci en la tasa de interés causando que la diferencia sea mayor. 
+Existe un efecto interactivo entre las caracterfsticas de amortizaci y la opci call, el precio de un valor no amortiz.able sin opci call es mayor que el de un valor amorti7.able sin opci call cuando ambos son vendidos a una prima mayor de sus valores nominales (r es baja), pero cuando son vendidos a descuento ( r alta) el precio del amortiz.able es mayor. Además, como la opci call impide que el valor sea vendido con una prima, un valor amortiz.able con opci call tiene mayor precio que un valor idéntico no amorti7.able con opci call. 
+Volviendo a la diferencia que existe entre el saldo insoluto de un valor no amorti7.able y el de un valor amorti7.able, como se vianteriormente, el riesgo que enfrenta un valor no amorti7.able ante bajas en la tasa de interés es más alto que el de un amorti7.able, por lo que la opci call es más importante para el primero. El timo efecto es causado por el hecho de que la opci call impide que el valor sea vendido con una prima. 
+Entonces mientras que la diferencia de precios para un valor amorti7.able y un no amorti7.able depende de la tendencia de r , el valor de la opci call es siempre más valiosa para un no amorti7.able, considerando lo anterior, la diferencia de precio entre un valor no amorti7.able sin opci call y un valor idéntico amortiz.able con opci call va a deberse principalmente a la opci call y no a la caracterfstica de amorti7.aci, siempre y cuando no sean muy drásticas las variaciones de r . 
+4 Una ,e chica es equivalente a tener incertidumbre sobre la tasa de interés a largo plazo 
+Los precios de los amortiz.ables son menos sensitivos a las fluctuaciones de la tasa de interés, por el saldo insoluto comprometido, pero como la caracteristica de amortiz.aci disminuye el riesgo al que se enfrenta el tenedor de un valor amortiz.able el rendimiento esperado de un valor GNMA es menor que el rendimiento esperado de un valor no amortiz.able con opci call y como la opci call impide que el valor sea vendido con prima se tendrá que para cada plam de vencimiento, el precio del valor GNMA con política call tima es mayor que el precio de un valor no amortiz.able con opci call. 
+Si disminuye el tiempo de vencimiento el valor esta expuesto a un menor riesgo, entonces, el valor de la opci call cae cuando el plam de vencimiento disminuye. Ahora bien, cuando el plam de vencimiento se acorta y se espera que la tasa de interés caiga, es decir, la estructura de plams tiene pendiente negativa, los flujos de pagos que generan los amortiz.ables van a ser reinvertidos a una tasa baja pero al reducirse el plam al vencimiento, el rendimiento que genera este flujo de pagos va a aumentar en relaci rendimiento de un no amortiz.able, por lo tanto, el precio de los valores de los amortiz.ables aumentan en relaci al de los no amortizables. 
+Por lo que se acaba de seflalar, la opci call tiene un mayor impacto sobre el precio de un valor GNMA que la característica de amortiz.aci cuando el plam de vencimiento es grande. Sin embargo, la caracteristica de amortiz.aci tiene un mayor impacto sobre el precio que la opci call, cuando el plam de vencimiento es menor. 
+6.4 PREPAGOS SUBÓPTIMOS. 
+El incremento en la rique:za del tenedor de un valor GNMA causado por un prepago subtimo aumenta en relaci a si el descuento del precio del valor de su precio nominal es mayor, es decir, a mayor descuento menor será el precio que paga el inversionista por el valor y agregando que el prepago subtimo es un ingreso no esperado para los inversionistas, este ingreso extra podrá ser reinvertido a una tasa mayor, cuanto más alta sea la tasa de interés. Entonces los prepagos subtimos incrementan el valor de un GNMA y el efecto crece en cuanto mayor sea r . 
+Por otro lado, si la tasa esperada de prepagos subtimos aumenta, se incrementa la probabilidad de obtener un rendimiento extra creciendo de esta forma el precio del valor. Ahora bien, si se combinan estos dos efectos y se supone que la probabilidad de prepagos disminuye cuando r aumenta,' entonces el precio debido a los prepagos subtimos se reducirá en algo, porque a mayor r mayor será el impacto de los prepagos, pero como simultáneamente la probabilidad de que ocurran disminuye, el impacto total se verá disminuido. 
+El mercado de capitales no recompensa riesgos no sistemáticos,6 como es el asociado a los prepagos subtimos, aunado a que los prepagos subtimos reducen el riesgo de los valores, porque con altas tasas esperadas de prepagos el efecto de cambios en r sobre el precio del valor va a ser menor, ya que con una tasa alta de prepago la caída en el precio por un alz.a en r va a ser compensada, lo cual implica que la elasticidad precio-tasa de interés sea menos elástica cuando disminuye la tasa de riesgo asociada al valor GNMA. 
+Cuando el plazo de vencimiento cae, es menor la vari8D7.8 que puede experimentar la tasa de interés, por que cuanto más breve sea el lapso de tiempo que se toma en cuenta es menos probable que existan cambios muy significativos en la tasa de interés, haciendo que el efecto de prepagos subtimos eventuales sea mayor que el impacto de prepagos timos. Así que el valor GNMA se hace más valioso que el valor de un bono amortiuble sin opci 
+cal/. 
+En general, las caracteristicas de amorti7.8ci y prepagos incrementan el precio de un valor GNMA y la caracteristica de poseer la opci call lo va a disminuir. 
+Cuando el plazo para vencimiento es grande, la opci call tiene un mayor impacto sobre el precio del valor, en términos absolutos, que cualquiera de las otras dos 
+s En la practica se espera que las probabilidades de prepagos caigan cuando r aumenta, porque corno se menciono antes una de las principales causas de prepagos va a ser que los deudores se muden de casa y la obligaci de la hipoteca no es asumida por el comprador de la casa, pero al subir la tasa de inter6s el nuevo comprador no tendrá incentivos a reestructurar la deuda porque no podrá obtener un crédito con una tasa menor que la establecida en el Cffilito anterior. 
+caracteristicas. Sin embargo, la amortiz.aci tiene un fuerte impacto sobre el precio del valor cuando el vencimiento del valor es pequefto. 
+El efecto de la tres caracteristicas es el reducir el riesgo de la tasas de interés y por ello el rendimiento esperado de un valor GNMA en relaci a los otros valores analizados.7 
+Finalmente, en la siguiente secci se realizará una discusi acerca de las posibilidades de aplicar el modelo de fijaci de precios en la economía mexicana. 
+6 Son riesgos que no es1'n correlacionados con alguno de los factores relevantes del mercado. 7 La discusi anterior concuerda con los resultados nummcos obtenidos por Dunn y McConnell, en las tablas 1 y 2 de "Valuation ofGNMA Mortgage-backed Securities." Utili7.an la ecuaci (13) tomando ,1. = o y cambiando tanto las condiciones limites y/o la fonna funcional de los flujos de efectivos futuros, para resolver 
+(13) para los precios de otros valora de tasa fija. 
+&. EVALUACIÓN DEL MODELO DE FIJACIÓN DE PRECIOS DE UN VALOR GNMA PARA SU APLICACIÓN EN MÉXICO. 
+Para saber si se puede aplicar el modelo en México es necesario demostrar que los supuestos en los cuales se basa el modelo se conservan en el escenario econico mexicano. 
+Partiendo de lo anterior se tratara de comprobar si la tasa de interés libre de riesgo cumple el supuesto de ser estacionara (S. l). Como se trata de un modelo continuo se utilizará como tasa libre de riesgo instantánea la tasa diaria de los CETES a 28 días, mejor conocida como reporto diario de los CETES a 28 días, durante el periodo de octubre de 1991 hasta el 12 de septiembre de 1996, el comportamiento de estas tasas se muestra en la figura 3. 
+100.....----------------------. 
+80 
+60 
+40 
+20 
+
+
+
+--Reporto diario de CETES. 
+Figura 3. 
+Como se puede apreciar la tasa de interés libre de riesgo no es estacionaria ya que muestra tendencias lineales en ambas direcciones, es decir, por intervalos de tiempo cambia de tendencia positiva a tendencia negativa y viceversa. 
+La no estacionariedad se ratifica al observar el autocorrelograma (figura 4) el cual presenta en su primera autocorrelaci un valor muy cercano a uno y aunque los siguientes valores son menores, todavia se encuentrán por arriba de 0.9 por un largo tiempo. Esta alta autocorrelaci significa que la tasa libre de riesgo regresa muy lentamente a su nivel normal ante una perturbaci. 
+J.lllllllt.lll.l.llUUJ.llll.lllllllllll.llltlll 
+3 5 7 9 11 13 IS 17 19 21 23 25 27 29 31 33 35 37 39 41 
+• Autocorrebgrama del reporto diam de bs CETFS. 
+Figura 4. 
+Este tipo de tendencias lineales generalmente son eliminadas obteniendo la primera diferencia de la serie, esto es, restándole a cada valor de la serie el valor que lo antecede. El resultado se muestra en la figura 5. 
+Nuevamente esta serie no es estacionaria, lo cual es causado por la alta volatilicad que mostrla tasa de interés en el afio de 1995, debido como todos sabemos a la inestabilidad generada por la devaluaci de diciembre de 1994. 
+Lo no estacionario de la tasa de interés no podrá ser eliminado sacando más diferencias, por que a pesar de que el rango en el cual se mueven las diferencias disminuya estas siempre se van a presenter los dos timos flachazos que se ven en la figura 5. 
+30-r------------------------, 
+20 
+10 
+o 
+
+-10 
+-20 
+
+--1ª diferencia de CETES. 
+Figura 5. 
+Lo anterior se puede apreciar mejor si se anali7.an los autocorrelogramas de la primera diferencia de los CETES a 28 días hasta septiembre de 1996 y la primera diferencia de los CETES a 28 días hasta diciembre de 1994. 
+O.IS -r----------------------------, .os [· -1· -.--1·.;1· ---. ---C• C----J1--1--.:. -.--1;.-----1-.; -----.i t1 -:.j 
+-O0 .OS . --111----••--1•-----•••---a -1 ---• -------1 ---11 f----
+
+-O.IS.....______________________________, 3 S 7 9 11 13 IS 17 19 21 23 2S 27 29 31 33 3S 37 39 41 
+• Autocorrebgnum de la primera d~ia del reporto diariJ de bs CElES. 
+Figura 6. 
+Como se puede ver en el autocorrelograma para la serie completa, figura 6, la serie no es estacionaria ya que reugos bastante lejanos de la tasa de interés son significativos (nivel de significancia 0.051),1 es decir afectan de manera importante al valor actual de la tasa de interés. 
+Mientras que el autocorrelograma para la serie truncada con primeras diferencias , figura 7, se tiene que ahora si, la serie es estacionaria.2 
+0.18 ..---------------------------------, 
+0.06 -0.06 
+
+3 S 7 9 11 13 IS 17 19 21 23 2S 27 29 31 33 3S 37 39 41 43 
+• Autocorrek>grama de la prinera diferencia de k>s CETES hasta el Vene/95. 
+Figura 7. 
+El análisis anterior demuestra que la tasa de interés libre de riesgo no es estacionaria, ni tampoco sigue un proceso Markov, porque la tasa de interés corriente se ve afectada de forma significativa por varios rezagos. Por lo tanto no puede ser directamente aplicado el modelo a México.3 
+Si se agrega también, el hecho de que existen problemas en lo que respecta a los prepagos. Esto es provocado por la ausencia de informaci confiable disponible. Además, los bancos no llevan un registro adecuado para formar un indicador de prepagos, porque generalmente sus bases de datos no mapean de forma consistente, por ejemplo si se observa la base de datos del historial de recibos no pagados se aprecia que no hace diferencia entre el 
+1 La forma estándar de calcular el nivel de significancia es el dividir 1.96 por la raíz cuadrada del nero de datos. 2 Cabe mencionar que la serie truncada sin diferencia tampoco es estacionaria. 3 Para mayor informaci sobre pruebas de estacionariedad ver Hamilton, James D. "Time Series Analysis." Princeton, New Jersey: Princeton University, 1994. 
+registro de un pago extraordinario hecho por el acreditado para disminuir el numero de recibos no pagados y el refinanciamiento del crédito. 
+Hechos como el anterior hace imposible el realiz.ar un análisis adecuado de la tasa de prepagos, sin embargo, se sabe que a partir de la devaluaci de 1994 la cartera vencida se a incrementado a tal grado que a causado hasta problemas sociales y políticos. Por lo cual, es claro que la tasa de prepagos no se comporta de manera uniforme implicando que no sigue un proceso Poisson. 
+Entonces el problema radica en como capturar la posibilidad de devaluaci. En este modelo si se agrega una variable más que capture la devaluaci, en términos computacionales, no seria factible aplicarlo, por que se tendra una ecuaci con tres variables implicando que si se necesitan 10000 datos para resolver el modelo con dos variables al introducir una extra se necsecitarfa 1000000 de datos y el tiempo en que tardaría en correr el proceso sería 100 veces más.4 
+4 Para mayor informaqci hacerca de como afecta el nero de variables a la elavoracin de un programa ver Press, William H; Teukolsky, Saul A., Vetterling, William T. y Flannery, Brian P. "Numerical Recipes in Fortran: The Art ofScientific Computing." 2a ed.; New York: Cambridge Universty Press, 1992. 
+7.CONCLUSIONES. 
+En esta investigaci, se expusieron las características más importantes de las hipotecas mexicanas, de la bursatilizaci del crédito hipotecario y del modelo de fijaci de precios de un valor GNMA, el cual tiene las propiedades de ser amortizable, con opci call y libres de default, es decir, los deudores hipotecarios pueden prepagar su deuda en cualquier momento y no existe riesgo para los inversionistas de que no se les transfiera por lo menos el pago mensual de las hipotecas menos el pago de servicios. 
+Este modelo de fijaci de precios se basa en dos principales suposiciones, que se plantearon a lo largo de la investigaci: la primera es que la tasa de interés libre de riesgo sigue un proceso de Markov continuo y estacionario, y la segunda es que la conducta de prepagos sigue un proceso Poisson. 
+En el cuerpo de este trabajo, se desarrollo el modelo y se analizo como afectan al precio del valor las características de prepagos subtimos, opci call y la amortimci. Lo anterior fue hecho con el fin de elaborar un análisis, para conocer la factibilidad del modelo y si este puede ser aplicado en México. 
+Como resultado, y conclusi de este análisis es, como se pudo apreciar en el desarrollo de este trabajo, que no se puede aplicar directamente el modelo en nuestro país, debido a que la tasa de interés libre de riesgo no es estacionaria y que los prepagos no siguen un proceso Poisson. 
+Así mismo, se concluye que no existe la posibilidad de generalizar el modelo para cubrir el problema de intereses significativamente no estacionarios. Lo anterior, porque la estructura del modelo esta basada en ecuaciones estocásticas lo cual siempre impone restricciones como es la estacionariedad y el ser un proceso Markoviano. Además si se intenta incluir parámetros para cubrir la no estacionariedad lo que se va a ocasionar es que el modelo se vuelva insolucionable en términos computacionales, lo que no es deseable. 
+Por lo que, la mejor opci seria es un nuevo modelo que capture el comportamiento de las hipotecas en nuestro país. Desafortunadamente, este modelo ideal no se puede hacer en un ambiente estocástico como se vien la investigaci ya que con un ambiente Mar/coviano se va a requerir de más de dos parámetros para cubrir los riesgos que enfrenta la economía mexicana. 
+Ahora bien, posiblemente se pueda implementar un modelo discreto, sin embargo, el incluir la posibilidad de alta inflaci causaría que el precio de la opci call aumente, lo cual recaería en el encarecimiento de las hipotecas. Además, es dificil el pronosticar devaluaciones implicando dificultades en predecir el verdadero precio de la opci call, por lo que no será fácil convencer a los inversionistas a que compren el valor. 
+Otra conclusi, parte de aplicar un principio que se utiliza en seguros, el cual es no cubrir eventos catastricos, como seria un terremoto, por que, de otra forma en ese momento se colapsarían todos los reclamos. Con este principio, en mente no habría nadie interesado en garantiz.ar las hipotecas, ya que en el momento de una devaluaci gran parte de los deudores hipotecarios ejercerían su opci call, quedando la instituci que garantim estos valores en un serio problema de liquidez al grado que no pueda saldar sus reclamos, como esto lo conocen tanto los emisores del valor como los inversionistas no habrá quien tenga incentivos a adquirir el valor. 
+Por lo tanto, la conclusi general es que sin importar el modelo que se utilice este no podrá ser aplicado con éxito, mientras no se logre un crecimiento sostenido y confian7.a en las acciones del gobierno. 
+Glosario de abreviatuns. 
+BA W  Modelo de Barone, Adesi y Whaley, que da una aproximaci para fijar precio  
+a opciones cal/ americanas.  
+CMO  Collateralized Mortgage Obligations.  
+CNB  Comisi Nacional Bancaria.  
+CPP  Costo Porcentual Promedio de Fondeo de los Bancos.  
+FHA  Federal Hausing Administration.  
+Flll,MC  Federal Home Loan Mortgage Corporation.  
+FNMA  Federal National Mortgage Asociation.  
+GNMA  Govennent National Mortgage Asociation.  
+IIHTA  Hipotecas Híbridas con Tasas Ajustables.  
+BID  Hipotecas con índice Dual.  
+HTA  Hipotecas con Tasas Ajustables.  
+HTD  Hipotecas con Tasa Dual.  
+RTF  Hipotecas con Tasa Fija.  
+HUDI1  Hipotecas en UDis.  
+10  Interest Only.  
+MBS  Mortgage-Backed Securities.  
+1S  
+
+PO 
+PSA TCP TIIP TMSM 
+UDis 
+VA 
+Principal Only. Public Securities Asociation. Tasa Constante de Pagos. Tasa de Interés Interbancaria Promedio. Tasa de Mortalidad Sencilla Mensual. Unidades de Inversi. Veterans Asociation. · 
+Glosario de notaci.  
+a (r,r)  Tasa instantánea de rendimiento total esperada de un valor GNMA.  
+b (r, i')  Tasa instantánea de rendimiento esperada de otro valor.  
+B  Precio del bono.  
+e,  Flujo de pagos, "cupones y capital" al tiempo t.  
+CP,  Flujo de pagos proyectados para el mes t.  
+C(r)  Flujo de pagos.  
+cu  Cup de un bono.  
+Precio de una opci call europea calculada por Block & Scholes  
+cuando S'r es el precio del stock.  
+Precio de una opci call americana.  
+D,.,.  Tasa de deuda o tasa activa de mercado.  
+DU  Medida de duraci para bonos.  
+E  Precio de ejercicio de una opci.  
+F(r)  Valor nominal de la deuda.  
+Valor del principal contratado en ténninos nominales.  
+f  Margen en la tasa de deuda expresado como factor multiplicativo.  
+g(r,r)  Desviaci estándar del rendimiento de otro valor.  
+
+I, Pago de intereses en UDls. en el periodo t. 
+IP, Intereses proyectados al mes t. Tasa de interés mensual pactada. K Velocidad de ajuste de la tasa de interés instantánea. m Tasa de interés instantánea a largo plam. N{-) Funci de densidad normal. Intereses netos proyectados al mes t. 
+P, Pago de la mensualidad efectuado en el periodo t. 
+PD, Pago de capital en UDis en el periodo t. 
+PP, Pago mensual proyectado al mes t 
+PP!', Prepago proyectado al mes t. 
+PR Principal de un bono. 
+p(r) Precio del riesgo. 
+qr Covarianz.a entre cambios en la tasa de interés y cambios 
+porcentua-les en las inversiones timas de la riqueza. r(t) Tasa de interés instantánea corriente libre de riesgo. r,(r) Nivel de tasa de interés libre de riesgo para la cual la opci call se ejerce. rm Tasa líder de mercado. s, Saldo insoluto al final del periodo t. 
+SE, Pagos de servicios proyectados al mes t. SPP, Pago proyectado al saldo insoluto en el mes t Precio del stock.
+ST 
+Precio critico del stock. se Tasa de pago de servicios. s (r, i-) Desviaci estándar instantánea del rendimiento de un valor 
+GNMA, condicionada a que el prepago subtimo no ocurra. Fecha de vencimiento o expiraci de un crédito hipotecario bono y
+T 
+opci. T,.,, Tasa de pagos para el periodo t. 
+Valor de las UDls al inicio del contrato. Precio de equilibrio de cualquier crédito eventual, los subíndices 
+V 
+indican derivadas parciales. v(r, i-) Precio del valor. y Rendimiento mensual. z Variable aleatoria que sigue un proceso poisson. Tiempo que falta para el vencimiento, del valor o del crédito, 
+i-=T-t. 
+6 Tasa de interés anual. 1/ Factor de refinanciamiento a seleccionar por el acreditado. Margen en la tasa de deuda expresado como un parámetro fijo. 
+n, Tasa de inflaci al final del periodo t, calculada como una tasa 
+expost entre t y t+ l. µ(r) Tendencia instantánea del proceso. V arianm instantánea del proceso. Desviaci estándar anualizada del rendimiento del stock. Proceso de Wiener.
+dw dz Proceso de poisson. 1 (r, i-}dt Probabilidad por unidad de tiempo de que ocurra un prepago subtimo. 
+BIBLIOGRAFÍA. 
+Achour, D. y Castafl.eda, GonDlo. Bienes y Rafees con Aplicaciones a la Economía Mexicana. México: Limusa. 1993. 
+Bancomer. Crédito Hipotecario: Grupo de Crédito, Divisi de Políticas y Capasitaci de Crédito, Plan Integral de Capasitaci de Crédito (PICEC). México: Bancomer, 1981. 
+Bartlett, William W. Mortgage-Backed Securities: Products, Analysis, Trading. Englewood Clifs, New Jersey: Prentice Hall, 1989. 
+Black, Fischer y Scholes, Myron. The Pricing of Options and Corporate Liabilities. Joumal ofpolitical Economy, Vol. 8, No. 1, Mayo-Junio 1973, 637-659p. 
+Bolsa Mexicana de Valores. Boletín Diario Bursátil. Mercado de Dinero y Metales. México: BMV, 1990-1996. 
+Bookstaber, Richard M. Option Pricing and Investment Strategies. 3 ed.; Chicago Illinois: Probus Publishing Company, 1991. 
+Brennan, Michael J. y Schwartz, Eduardo S. Saving Bonds, Retractable Bonds and Callable Bonds. Joumal ofFinancial Economics, Vol. 5, No. l, Agosto 1977, 67-88p. 
+Bruck, Nicholas. Editor. Capital Markets Under Inflation. New York: Praeger, 1982. 
+Buckley, Robert; Lipman, Barbara y Persaud, Thakoor. Mortgage Design Under Inflation and Real Wage Uncertainty: The Use of a Dual Index Istrument. World Development, Vol. 21, Marz.o 1993, 455-464p. 
+Castafteda, GonDlo; Christopher, Barry B. y Joseph, Lipscomb B. Análisis y Perspectivas de los Créditos Hipotecarios en México. Inversi y Finanz;as, Vol. 3, No.l, Enero-Junio 1995, 21-SSp. 
+Cohane, Tim y Rasserdy, Larry Servicing Mortgage Portafolios: Strategies & Applications for Buying, Selling and Mortgage Loan Portafolios. Chicago Illinois: Probus Publishing Company, 1994. 
+Cox, John C. y Rubinste~ Mark. Options Markets. Englewood Cliffs, New Jersey: Prentice Hall, 1985. 
+Cox, John C., lngersoll Jonatban E. Jr. y Ross, Stephen A. A Theory of the Tenn Structure oflnterest Rates. Econometrica, Vol. 53, No. 2, Marzo 1985, 385-407p. 
+Cox, John C., lngersoll Jonathan E. Jr. y Ross, Stephen A. An Intertemporal General Equilibrium Model of Asset Prices. Econometrica, Vol. 53, No. 2, Marzo 1985, 363­383p. 
+Chance, Don M. An Introducci to Options & Futmes. 2 ed.; New York: Dryden, 1992. 
+Dothan, Michael U. Prices in Financia! Markets. New York: Oxford University, 1990. 
+Dunn, Kenneth B. y Kenneth Singleton J. An empirical analysis of the Pricing of Mortgage -Backed Securities. The Joumal ofFinance. Vol. 38, No. 2, Mayo 1983, 613­623p 
+Dunn, Kenneth B. y McConnell, John J. A Comparation of Altemative Models for Pricing GNMA Mortgage-Backed Securities. The Joumal of Finance, Vol. 36, No. 2 Mayo 1981, 471-487p. 
+Dunn, Kenneth B. y McConnell, Jobn J. Valuation of GNMA Mortgage-Backed Securities. The Joumal ofFinance, Vol. 36, No. 3, Junio 1981, 599-616p. 
+Fabozi, Frank J. Advances & Innovations in the Bond and Mortgage Markets. Chicago Illinois: Probus Publishing Company, 1989. 
+Fabbozzi, Frank J. Editor. The Handbook of Mortgage-Backed Securities. Chicago llinois: Probus Publishing Company, 1992. 
+Fabozzi, Frank J. y Modigliani, Franco. Mortgage and Mortgage-Backed Securities Markets. Boston Massachusetts: Harvard Business School Press. 1992. 
+Ford, Lester R. Diferential Equations. New York: McGraw-Hill Book Company, Inc., 1955. 
+Hamilton, James D. Time Series Analysis. Princeton, New Jersey: Princeton University, 1994. 
+Hines, Mary A. Financing Real State with Securities. New York: John Wiley & Sons, 1988. 
+Hull, John C. Options, Futures, and other Derivate Securities. 2 ed.; Englewood Clifs, New Jersey: Prentice Hall, 1993. 
+Ledennan, Jess. Editor. Toe Handbook of Asset-Backed Securities. New York: lnstitute ofFinance, 1990. 
+Merton, Robert C. Continuos-Time Finance. Cambridge, Massachusetts: Basil Blackwell, 1990. 
+Merton, Robert C. Optim.um Consumption and Portafolio Rules in a Continuous Time Model. Joumal ofEconomic Theory, Vol. 3, No. 4, Diciembre 1971, 373-413p. 
+Merton, Robert C. Theory of Rational Option Pricing. Bell Joumal of Economics and Managment Science, Vol. 4, No. 1, Primavera 1973, 141-182p. 
+Press, William H; Teukolsky, Saul A., Vetterling, William T. y Flannery, Brian P. Numerical Recipes in Fortran: Toe Art of Scientific Computing. 2a ed.; New York: Cambridge Universty Press, 1992. 
+Quigley, John M. lnteres Rates V ariations, Mortgage Prepayment and Household Mobility. Review of Economics and Statistics, Vol. 69, No. 4, Noviembre 1987, 636­643p. 
+Schwartz, Eduardo S. y Torous, Walter N. Prepayment and the Valuation of Mortgage­Backed Securities. Toe Joumal ofFinance, Vol. 46, No. 2, Junio 1989, 375-392p. 
+Zorn, Peter M. Mortgage Down Payment and lncome Criteria: Toe Impact on Homeownership and Housing Demand. Human Ecology Forum, Vol. 19, Verano 1991, 17-20p. 
+
+
+
+

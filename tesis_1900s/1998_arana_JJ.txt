@@ -1,0 +1,833 @@
+TRABAJO DE INVESTICACION PARA OBTENER EL ORADO DE 
+MAESTRO EN ECONOMÍA CENTRO DE ESTUDIOS ECONÓMICOS EL COLECIO DE MÉXICO 
+IETERMINANTEI IE lAI CAl/FICACIONEI DE CRÉDITO 
+JOSÉ JAIME ARANA CORONADO 
+PROMOCIÓN 1991-1993 
+NOVIEMBRE DE 1998 
+ASESOR: CARLOS MANUEL URZÚA MACÍAS 
+AGRADECIMIENTOS 
+• 
+A mi esposa Roxana por el apoyo que siempre me ha brindado. 
+
+• 
+A mi hijo David, por ser la fuente de mi motivaci para alcanzar mayores metas. 
+
+• 
+Al profesor Carlos Manuel Urz Macías por los conocimientos transmitidos durante la Maestría, así como por el apoyo en la realizaci del presente trabajo. 
+
+• 
+A la instituci El Colegio de México, a la cual le manifiesto un gran aprecio y orgullo. 
+
+
+RESUMEN 
+En el presente trabajo se lleva a cabo la aplicaci de un proceso econométrico con el objeto de determinar cuales son las razones financieras que explican las calificaciones de riesgo de crédito asignadas por las Agencias Calificadoras a las emisiones de deuda de empresas mexicanas, y las cuales fueron emitidas entre diciembre de 1996 y diciembre de 1997. 
+Así, se plantearon dos modelos, un modelo Probit Ordenado y un modelo lineal Mtiple. 
+En el primer modelo la variable dependiente ( calificaci de crédito) es tratada de forma cualitativa. Otra característica importante al usar el modelo Probit Ordenado, es que el riesgo marginal implícito es diferente en cada calificaci de crédito, por lo que, dicho riesgo sigue un orden en funci de la calificaci. 
+Por el contrario, en el modelo de Regresi Lineal Mtiple la variable dependiente es cuantitativa (contrario al modelo Probit Ordenado) y el riesgo marginal de crédito es el mismo para cada una de las calificaciones. 
+Como resultado se obtuvo que, el modelo Probit Ordenado presentun meJor comportamiento con el objeto de explicar las calificaciones de crédito, respecto al modelo Lineal mtiple. 
+INDICE PAGINA 
+1) INTRODUCCCION 
+01 
+2) ANTECEDENTES 03 
+3) MARCO TEORICO 1O 
+3.1) Modelo de Regresi Lineal Mtiple 10 
+3.2) Modelo Logit Multinomial versus Modelo Probit Ordenado 12 
+3.3) Comportamiento del feneno 19 
+4) ASPECTOS METODOLOGICOS CONSIDERADOS EN EL PLANTEAMIENTO DEL MODELO 23 
+4.1) Variables Dependiente 23 
+4.2) Razones financieras (var. independientes o explicativas). 24 
+4.3) Comportamiento de las variables 26 
+4.4) Planteamiento de los Modelos 26 
+5) RESULTADOS 29 
+6) CONCLUSIONES 39 
+7) BIBLIOGRAFIA 41 
+ANEXO Al 43 
+ANEXOA2 44 
+ANEXOB 45 
+ANEXOC 46 
+DETERMINANTES DE LAS CALIFICACIONES DE CRÉDITO 
+1) INTRODUCCCION 
+En recientes as las calificaciones de crédito ( el riesgo establecido por una agencia calificadora de riesgo de crédito respecto de la emisi de deuda bursatilizada por parte de empresas privadas) se ha incrementado de manera importante1• Cabe mencionar que, uno de los requisitos para emitir títulos de deuda a través de la Bolsa Mexicana de Valores es que dicha emisi se encuentre calificada por una empresa calificadora de reconocido 
+prestigio y que dicha emisi sea valorada con grado de inversi.2 
+Como un medio de financiamiento para las empresas, éstas emiten títulos de deuda (títulos de crédito) los cuales son vendidos a los grandes inversionistas por medio de la bolsa mexicana de valores. Estos títulos de deuda se pueden clasificar en 3 tipos dependiendo de su plazo: deuda de corto plazo (papel comercial, el cual es emitido generalmente a un plazo de un a), deuda de mediano plazo (pagaré de mediano plazo o pagaré financiero, el cual es emitido a un plazo de 1 a 3 as) y deuda de largo plazo (obligaciones o bonos a largo plazo, las cuales generalmente son emitidos a plazos de 3 a 5 as). Dichos títulos devengan de forma periica el principal e intereses respecto del monto emitido. El agente econico al invertir en tales instrumentos, no nada más tiene que comparar el rendimiento que le ofrece dicha inversi respecto de inversiones alternas, sino también, tendrá que valorar el riesgo de crédito, es decir, la probabilidad de que la empresa que emitidichos títulos al enfrentar dificultades para solventar los pagos de la emisi de dicha deuda, no 
+so no le sea posible pagar el rendimiento pactado en la inversi, sino adicionalmente el principal de dicha deuda ( el monto inicialmente prestado a la empresa). 
+1 Véase Anuario Bursátil de la Bolsa Mexicana de Valores. Con base en dicha referencia las fuentes de financiamiento más importantes del mercado bursátil utilizados por el sector privado son las emisiones de acciones y las emisiones de deuda. Para 1993, el monto total de financiamiento fue de 11,266 millones de dares, donde las emisiones de deuda representaron el 60.2%. Para los tres as posteriores el financiamiento bursátil disminuiría de manera importante, sin embargo, el monto sigue siendo significativo; para 1996 representun monto de 2,001 millones de dares. 2 Lo que indica que el riesgo de crédito implícito de la emisi no es significativo, por lo que se recomienda adquirirla. 
+Bajo la consideraci de que el agente econico no dispone de la informaci suficiente y oportur~ con el objeto de llevar a cabo un análisis confiable respecto del riesgo de la emisi de deuda en la cual considera invertir, una alternativa es considerar la informaci ofrecida por las empresas calificadoras. 
+Sin embargo, a pesar de conocer la calificaci, no necesariamente implica que refleje el riesgo de crédito implícito en la emisi de deuda de que se trate. Las empresas calificadoras enfatizan la importancia de los juicios .5ubjetivos en el análisis que se lleva a cabo para la determinaci de la calificaci de la emisi3• Independiente de dicho aspecto, diversos autores han llevado a cabo el desarrollo de modelos estadísticos los cuales buscan determinar y predecir las calificaciones de riesgo de emisiones de bonos con base en informaci de empresas corporativas de países desarrollados. 
+De esta manera, la presente investigaci sugiere la siguiente hipesis: 
+Que las calificaciones respecto de emisiones de deuda de empresas las cuales cotizan en la Bolsa Mexicana de Valores y, que son dadas a conocer por las empresas calificadoras Standard & Poor' s y Duff and Phelps pueden ser explicadas por un peque nero de variables (razones financieras), las cuales permiten establecer una diferenciaci del nivel de riesgo que cada una de las categorías o calificaciones de deuda implícitamente enfrenta. La verificaci de dicha hipesis, implica que la calificaci ·es un buen elemento a considerar por el inversionista para determinar invertir en la compra de emisi de deuda. 
+Con el objeto de comprobar la hipesis de trabajo, primeramente se dará a conocer algunos antecedentes respecto a investigaciones similares, a continuaci el marco teico sobre los modelos a desarrollar, posteriormente se establecerá la metodología tanto del manejo de la informaci como del modelo a utilizar y finalmente se darán a conocer los resultados y conclusiones. 
+3 Véase Standard and Poor's pp. 30; y Duffand Phelps de México, S.A. de C.V. pp. 167, 169, 171, 173, 175 y 177. 
+2) ANTECEDENTES 
+De los primeros antecedentes que se tienen respecto al tema, es el trabajo desarrollado por Horrigan ( 1966), quién mediante el uso de un modelo de regresi lineal mtiple estimy predijo las calificaciones de riesgo asignada a las emisiones de bonos corporativos, tanto de aquellas nuevas emisiones como de las que cambiaron de calificaci, y para Jo cual se validel uso de razones financieras (como variable explicativa). Considerando un total de 200 observaciones todas ellas de empresas pertenecientes al sector industrial, estableci9 categorías respecto de la variable dependiente (calificaci). Concluyque las variables independientes significativas del modelo fueron: subordinaci"', total de activos, capital de trabajo/ventas, valor neto de los bonos /deuda total y utilidad neta de operaci/ventas). Dichas variables permitieron predecir el 58% de las calificaciones de la empresa calificadora Moody's, y el 52% de las calificaciones de la empresa calificadora Standard 
+and Poor's. El modelo presentuna R2 del 65%. 
+Otro modelo desarrollado es el de West (1970). El modelo plantea explicar las calificaciones de las emisiones de los bonos emitidos por las empresas privadas por medio de una funci exponencial, en la que, la variable independiente, variabilidad de las ganancias, se encuentra elevada respecto de otras variables independientes. Para estimar dicho modelo, se linealizla funci en términos de los parámetros. Igual que Horrigan, consider9 categorías (calificaciones) respecto de la variable dependiente que en éste 
+R2
+modelo quedexpresada en términos de logaritmos. El modelo presentuna de 71 %. Las variables independientes relevantes del modelo fueron el logaritmo de la variabilidad de las ganancias, periodo de solvencia, valor en libros de la relaci (empresa/deuda) ·y valor de mercado de la emisi de los bonos. Cabe mencionar que en éste modelo las observaciones consideradas no provinieron de un sector econico en particular. 
+4 Dicha variable se establecicomo dicotica. Se debe entender por Subordinaci como el carácter legal que deberá de cumplir la emisi de que se trate, en éste caso se establece como prioridad el pago de la deuda emitida respecto de otras obligaciones que enfrente la empresa ( o como una alternativa de pago que las emisiones de dicho bono puedan convertirse en acciones de la empresa, y el tenedor pase a ser due de parte del capital de la empresa). 
+En estos dos casos la variable dependiente fue tratada como una escala de intervalos, es decir, que el riesgo marginal es el mismo independientemente de la calificaci que enfrente el bono. Otro aspecto importante, es que al comparar las variables independientes entre modelos, éstas fueron totalmente diferentes, la raz es que West enfocsu modelo con el objeto de determinar las variables que se consideran en el proceso de la toma de decisiones por parte de aquellos quienes califican los bonos, y no de establecer las variables optimas que permitieran predecir el riesgo de crédito, como en el caso del modelo de Horrigan. 
+El procedimiento denominado Análisis de Discriminaci Mtiple fue otra alternativa para desarrollar funciones de carácter predictivo respecto de las calificaciones de los bonos. Al considerar las diferentes categorías (calificaci de riesgo) en la variable dependiente, el procedimiento busca formar grupos de informaci con características a fines, a los cuales, se les asigna una funci para posteriormente estimar sus correspondientes parámetros. Para conformar dichos subconjuntos (grupos de informaci), como uno de los criterios a utilizar es maximizar la raz suma cuadrada de las desviaciones del subconjunto respecto de la suma cuadrada de las desviaciones del conjunto. 
+De esta manera, aunque dicho procedimiento al agrupar la informaci considera las diferentes categorías de la variable dependiente, sigue dejando de lado la naturaleza ordinal que existe en la variable dependiente. 
+Adicionalmente, presenta la desventaja de que requiere de fuertes supuestos de distribuciqn para clasificar a la variable independiente. 
+Éste procedimiento fue aplicado por Pinches y Mingo (1973) en funciones lineales y por Atman y Kaltz (1974) en funciones cuadraticas. Respecto a Pinches y Mingo no consideraron informaci de alg sector econico en particular, contrario a Atman y 
+Kaltz quiénes se centraron en infonnaci de las calificaciones de bonos de empresas del sector de la industria eléctrica. 
+Pinches y Mingo utilizando infonnaci de bonos que fueron emitidos entre 1967 y 1968 fonnaron dos subconjuntos de infonnaci. En el primero se consideraron 132 observaciones (muestra original) en el segundo 48 (muestra base). En la muestra original la 
+R1 fue del 69.7%, mientas que en la muestra base fue del 64.58%. Por otra parte, las variables independientes relevantes del modelo fueron la variable subordinaci, tama de la emisi, (ingresos netos + intereses)/intereses, as de dividendos consecutivos, deuda de largo plazo/activos totales, ingresos netos/activos totales. El modelo estimado se utiliznuevamente con el objeto de detenninar su carácter predictivo, para lo cual se tominfonnaci de emisiones de bonos de 1969. El resultado obtenido es que el 56% de los bonos fueron clasificados de fonna correcta. Cabe selar, que gran parte de los bonos clasificados de fonna incorrecta se suscribieron a una detenninada categoría. Al corregir este aspecto respecto a la categoría en cuesti, ocasionque ahora las incorrectas asignaciones en los bonos se presentarán en las demás categorías. 
+Respecto de Altman y Kaltz, las variables independientes de mayor importancia fueron la raz de cobertura de intereses, variabilidad de las ganancias, variabilidad de la cobertura de intereses, raz ingresos/inversi, raz (gastos de mantenimiento + depreciaci)/ingresos de operaci. El modelo estimado por los presentes autores presentun carácter predictivo del 76%. Uno de los inconvenientes del modelo estimado es en el sentido de que los coeficientes o parámetros presentaron signos no esperados. 
+Kaplan y Urwitz (1979), considerando la desventajas del procedimiento de Análisis de Discriminaci Mtiple, plantearon el desarrollo de un modelo donde la calificaci considerel carácter ordinal (y por consiguiente la diferenciaci del riesgo en cada categoría de riesgo). Con el objeto de mostrar el desempe de dicho modelo se confrontcon un modelo lineal. 
+s 
+El modelo planteado por estos autores fue un modelo Probit Ordenado, dado que las categorías (calificaciones) de riesgo a parte de presentar un riesgo diferente. también siguen un orden. El modelo es estimado por Máxima Verosimilitud que tiene la ventaja de que los estimadores obtenidos son consistentes, asinticamente eficientes y tienen una conocida distribuci muestra!. Respecto al tama de la muestra se consider120 observaciones de calificaciones de bonos correspondientes al periodo de 1971-1972, las cuales no presentaron cambios durante el periodo; y 140 observaciones respecto de calificaciones de nuevas emisiones de bonos correspondientes al sector industrial. 
+Con base en el carácter predictivo de los dos modelos estimados se procedia comparar cual presentaba un mejor desempe. El resultado obtenido es que el modelo de regresi lineal mtiple clasificde forma correcta el 55% de las calificaciones de riesgo estimadas para dichos bonos, mientras que el modelo probit clasificel 50% de forma correcta, por lo que dichos autores concluyeron que el modelo lineal aparenta una mayor robustez. Selan que una raz de considerar el uso de un modelo lineal en el caso de las calificaciones de riesgo en bonos se sustenta en el hecho de que las categorías o el intervalo de escalas estimadas mediante el modelo probit, muestran una secuencia de intervalos casi iguales, lo que indica que la magnitud del riesgo de crédito de cada categoría es similar. Respecto a las variables independientes que resultaron significativas fueron las siguientes: variable subordinaci; total de activos; el valor beta, como una medida de variabilidad del valor de mercado de los bonos. 
+En el caso del estudio realizado por Ederigton (1985), también lleva a cabo el planteamiento de dos modelos, 1) un modelo lineal y, 2) un modelo probit ordenado. Como resultado de su estudio mostrque el modelo Probit Ordenado presentun mejor comportamiento respecto al modelo lineal. En su modelo considerun tama de muestra mayor al utilizado al de Kaplan y Urwitz. Dicho autor sela que las inferencias obtenidas con modelos probit ordenados son más adecuados que aquellos modelos lineales en los que se usa mínimos cuadrados. 
+A diferencia de los trabajos anteriores los cuales se enfocaron a las emisiones de bonos de empresas corporativas, Richard Cantor y Frank Packer (1996) centran su estudio en determinar cuales son los indicadores econicos que explican las calificaciones de riesgo asignada a las emisiones de deuda de los Gobiernos Centrales de países desarrollados y subdesarrollados. Dichos autores parten de un nero determinado de indicadores econicos (ingreso percapita, crecimiento del producto interno bruto, tasa de inflaci, balance fiscal del gobierno, balance de la cuenta corriente, deuda externa, nivel de desarrollo econico y comportamiento histico respecto al cumplimiento de dicho país en el pago de su deuda externa). 
+En dicho análisis, se plantearon vanos modelos econométricos: lineal mtiple, lo~arítmico, exponencial y Probit Ordenado. En el caso de éste timo modelo la variable dependiente es cualitativa (se consideraron 16 categorías o calificaciones de riesgo). En tales modelos se utilizun total de 49 observaciones. 
+Como resultado, se obtiene que el modelo de regresi lineal mtiple resultconsiderablemente mejor respecto de los modelos no lineales (logarítmico y exponencial). 
+R2
+Dicho modelo presentuna ~el 90% y un carácter predictivo del 70%. Respecto del modelo Probit Ordenado no se pudo estimar los parámetros por máxima verosimilitud (no se obtuvo convergencia hacía alg resultado). De acuerdo a los autores, lo anterior fue debido al gran nero de categorías (variable dependiente) y pocas observaciones para cada categoría. 
+De acuerdo a lo referido en esta secci, se destaca lo siguiente: 
+1. Respecto a las variables independientes. Con base en los diferentes elementos vertidos por los autores no existe una raz fundamental por el cual deben de incluirse o excluirse determinadas razones financieras que serán utilizadas para estimar el modelo, sin embargo, sí es posible destacar que las razones utilizadas se suscriben a los siguientes grupos: 
+• 
+Las relacionadas al tama de la empresa. Total de los activos, Valor en libros de la empresa, tama de 1~ emisi. 
+
+• 
+Las relacionadas a la estabilidad de la empresa. Variabilidad de las ganancias, periodo de solvencia, as de dividendos consecutivos, valor de mercado de los bonos. 
+
+• 
+Las relacionadas a la cobertura de las obligaciones. (ingresos netos + intereses)/ intereses, valor neto/deuda, valor en libros/deuda, deuda de largo plazo/activos totales. 
+
+• 
+Las relacionadas a la rentabilidad de la empresa. Utilidad neta de operaci/ventas, capital de trabajo/ventas. 
+
+• 
+La relacionada al aspecto legal. Prioridad en el cumplimiento de las obligaciones que se derivan de la emisi de deuda por parte de una empresa. Subordinaci. 
+
+
+Así, ha excepci de contar con un indicador que pennita selar sí la deuda emitida por empresas mexicanas presenta o no el carácter de subordinada, en el presente trabajo a desarrollar se consideran razones financieras de los anteriores grupos selados, lo cual no indica que sea exactamente la misma raz financiera a las utilizadas por los autores antes citados. 
+Cabe selar que, respecto de las posibles fuentes de infonnaci sobre razones financieras de las empresas mexicanas, generalmente se dan a conocer un nero peque de ellas, lo que reduce la posibilidad de usar las mismas razones financieras establecidas por tales autores. 
+2. Con relaci a los modelos vertidos por los autores más recientes, teicamente están de acuerdo, que dado el feneno que se busca explicar (las calificaciones de riesgo, variable cualitativa, así como la fonna funcional del modelo) el uso de modelos Probit Ordenados serían los más adecuados, sin embargo, en la práctica se han presentado diferentes resultados al comparar dichos modelos con los de regresi lineal mtiple. El tama de la muestra ha resultado ser un elemento significativo para estimar modelos Probit Ordenados, como es el caso, de los trabajos llevados a cabo por Kaplan y Urwitz, Ederigton, y Richard Cantor y Frank Packer. 
+En el presente trabajo se considerun tama de muestra de 122 observaciones. donde a excepci de aquellas observaciones calificadas con mayor grado de riesgo (mxCC y mxD para Standard & Poor's, y MDD y MD para Duff and Phelps), las demás consideraron un tama de muestra lo suficientemente significativo (mayor a 3 observaciones) que permita estimar un modelo Probit Ordenado y compararlo con un modelo lineal. Así, implícitamente lo que se estaría comparando, sería: 
+• 
+Un modelo de regresi lineal mtiple donde se estaría suponiendo que no existe diferenciaci respecto al riesgo de crédito de cada categoría, respecto de, 
+
+• 
+Un modelo Probit Ordenado, donde se indicaría la existencia de dicha diferenciaci de riesgo, y por consiguiente la necesidad de establecer un orden respecto a los niveles de riesgo. 
+
+
+3. Tipo de muestra. Un punto el cual no ha sido resaltado es respecto al tipo de muestra utilizada. Autores como Horrigan, Atman y Kaltz, Kaplan y Urwitz,' R. Cantor y F. Parker , en sus respectivos modelos utilizan observaciones las cuales se suscriben a un sector en particular. La raz de considerar al tipo de muestra como un elemento significativo, es por el hecho, de que las mismas empresas calificadoras en su proceso de análisis destacan realizarlo de forma sectorial con el objeto de comparar informaci más acorde a la naturaleza del sector. Adicionalmente, sectores como el financiero presenta razones que son calculadas de forma muy particular respecto de los demás sectores. De esta manera, el estudio a desarrollar so se considerará informaci de empresas del sector industrial y comercial. 
+3) MARCO TEORICO 
+En la literatura se destaca que en el caso de problemas de elecci cualitativa como pudiera ser, las preferencias en la forma de viajar entre mtiples opciones de medios de transporte, la asignaci del personal de una empresa en diversas actividades laborales con base en su nivel de especializaci, el tipo de seguro o cobertura a elegir por un consumidor, etc., las formas funcionales más adecuadas para modelarlos son las denominadas Logit y Probit5 con relaci a modelos en los cuales la variable dependiente es de carácter cuantitativo, tal es el caso de los modelos lineales. Adicionalmente, éstos timos presentan varios problemas en· el proceso de estimaci de sus parámetros. A continuaci se destacará lo antes citado. 
+3.t) Modelo de Regresi lineal Mtiple. 
+El modelo de regresi lineal mtiple se expresa de la siguiente forma: 
+observaciones las cuales van de 1 a n, y el subíndice .. p" representa el nero de variables 
+explicativas que se encuentran en el modelo. 
+De manera matricial el modelo planteado es el siguiente: 
+y= (1,x')p, donde la variable .. y" es un vector den x 1, .. x" es una matriz den x 
+(p+ l ), los parámetros .. p " a estimar es un vector de (p+ 1) x 1, y U ( el término el cual 
+representa al error o residuos) es un vector de n x 1. 
+Sí se considera que lo que se busca representar en términos de la variable "y", es que, el riesgo marginal de cada calificaci sea la misma para todas las categorías, lo que se tendría que llevar acabo es representar a dicha variable en términos de una escala, la cual, se distribuyera entre O y 1, y a la vez que cada categoría presente la misma magnitud: 
+Calificaci o categoría  Probabilidad o valor asignado a  
+la variable .. Y"  
+mxAAA, MAAA  1  
+mxAA,MAA  8/9  
+mxBBB, l\ffiBB  7/9  
+•  •  
+•  •  
+•  •  
+mxD,MD  1/9  
+
+En éste caso, el riesgo marginal es de 1/9. Aquí se presenta un primer problema sí se considera que el feneno en estudio, implícitamente en cada calificaci presenta un riesgo marginal diferente. 
+Adicional, al hecho de que el modelo lineal presente un riesgo marginal igual para todas sus categorías, es el hecho de que, la variable dependiente no es cualitativa, es decir, no se plantea estimar una probabilidad para la categoría o calificaci de que se trate, en funci de los valores que presentan las razones financieras respecto de dicha categoría. 
+Así, en el modelo lineal la variable dependiente, calificaci de riesgo, se le asigna un valor cuantitativo a cada una de las categorías o calificaciones, lo que no corresponde con el feneno en cuesti. 
+Cabe selar, que las empresas Calificadoras citadas en el presente trabajo (Standard & Poor's y Duff and Phelps) selan que las calificaciones de riesgo en ning momento tienen asociado un valor cuantitativo, sino que con base en las características que presenta la emisi de deuda (valor de las razones financieras, factores externos a la empresa, el 
+' Véase Willian H. Greene. pp. 635 y 636. 
+riesgo moral), se le asigna una calificaci la cual refleja un mayor o menor riesgo de crédito e.,tre sus categorías. 
+Por otra parte, en la estimaci del modelo lineal se pueden presentar los problemas siguientes: 
+1. 
+Los estimadores pueden no ser eficientes. Al ser un feneno el cual considera informaci de corte transversal, los residuos pueden presentan una varianza heteroscedástica, ya que dependen del valor de "y", que a su vez ésta en funci del valor que tome "x',6, por lo que, primeramente será necesario aplicar pruebas que permitan determinar la existencia de dicha heteroscedasticidad. En caso de estar presente, para poder estimar el modelo será necesario aplicar la técnica de Mínimos Cuadrados Ordinarios Generalizados y obtener una varianza homoscedástica. 
+
+2. 
+La bondad de ajuste del modelo ( R2 ) es poco significativa, dado el feneno que se busca modelar. 
+
+
+3.2) Modelo Logit Multioomial versus Modelo Probit Ordenado. 
+Como ya se mencionen el caso del modelo lineal el 6Y es constante para todas las 
+6x 
+categorías. En el caso de los modelos Logit y Probit P(y = }) estará en funci de la 
+6x 
+categoría que tome la variable independiente. La forma funcional de un modelo Logit y Probit se representa en la siguiente gráfica: 
+Véase Gujarati (1992). pp.409. 
+FORMA FUNCIONAL 
+
+modelo Logit 
+~> 
+cw 0.7 
+-..J
+=m 0.6
+m<
+<-• modelo Probit 
+ma: 0.5 
+­
+-
+o<
+a: > 0.4 
+A. 
+0.3 0.2 0.1 
+o 
+Como se aprecia en la gráfica las formas funcionales de los modelos Logit y Probit son bastante comparables, siendo la diferencia principal que la logística tiene "colas" ligeramente más planas, lo que implica que la curva normal (Probit) se acerca más rápidamente a los ejes. 
+Sin embargo, a pesar de que son similares respecto a la forma funcional, al plantear el modelo Logit Multinomial (es decir, que la variable dependiente tome más de dos valores) el calculo de las probabilidades en cada una de las categorías de riesgo no considera el carácter Ordinal de la variable dependiente, contrario, al caso del modelo Probit Ordenado 7. 
+Así, planteando el modelo Logit donde se considera el caso general, la variable dependiente "y" toma las valores O, 1, 2, ..., n. Dado que la variable dependiente tiene n categorías se tienen n-1 funciones logísticas. 
+Por otra parte, se tiene un vector de variables independientes "x" de longitud p+l, donde xo=l (valor que se designa para representar el término constante de la funci). Las n-1 funciones logísticas se representan de la siguiente manera: 
+7 Véase Willian H. Greenc. pp. 672. 
+P(y =l / x)J
+g,(x) =In[ P(y =O/ x 
+
+= (l,x') P. 
+P(y = 21 x)] 
+g2 (x) =In[ P(y =01 x 
+
+=(l,x') Pi 
+• • • 
+Las probabilidades condicionales de cada categoría ( o posibles valores que puede tomar "y" 
+) son las siguientes: 
+. 1 P(y=O / x) = -1-+-e-,,-<x->-+-e-,,-<x->+-.-..-+-e-,.-,<-x>­
+e''(x) P(y= 1 / x) = _l_+_e_t,-11-)-+-e-,2-(1-)+-.-..-+-el-.--,1-1) 
+• • • 
+Se denotará a JZ"ix) = P (y=j / x) para j= O, 1,2,...,n-l; donde cada j es una funci del 
+vector de p parámetros P' = (Ir ,Pi I , ••• ,P/) • Una expresi general de la p. obabilidad 
+condicional en el modelo de n categorías es: 
+eg, (x) P(y=j / x) = -n-­
+¿egt< x> 
+k•O 
+donde el vector Po = O, por lo que g0 = O 
+Para construir la funci de verosimilitud, es conveniente formular n variables binarias asignando O o 1 para indicar los resultados de cada observaci. Así cada variable "y" se comporta de la siguiente forma: 
+sí y=O entonces yO=l, yl=O, y2=0, ..., yn=O 
+sí y=l entonces yO=O, yl=l, y2=0, ... , yn=O 
+• • • 
+Cada una de las "n" categorías de "y" se comporta como una variable binaria, donde el valor de 1 se asigna cuando ocurre el evento correspondiente y el valor de O se asigna en "el resto de las observaciones de las demás categorías. Con base en lo anterior se puede 
+observar que no importa que valor tome "y", siempre ¿yj = 1 
+Así la funci de verosimilitud para un tama de m observaciones independientes es: 
+"' 
+l(P) =CT[1ro(X;)'°º' 1r.(x;f" 1l'2(x;Y2• . .. 1l'n-l (x;)''••-IH] 
+i• I 
+Aplicando logaritmos y donde L Y/i =1 para cada 1, la funci logarítmica de 
+verosimilitud es: 
+n 
+L(P)= L Y1; g1 (x;) +y2ig 2 (x;)+ ... +ynign (x;)-ln(l + e1i<x,) + e1i<.t, l + ... +eg.(.t, )) ........... (1) 
+i•l 
+Como se muestra, para el evento y = j con el objeto de determinar P(y=j / x), se establece que tomará el valor de 1, mientras que para las otras categorías y * j se les asigna el valor de O, lo mismo para el calculo de las demás probabilidades. En dicho proceso, al estimar los parámetros no se tiene presente que las categorías guardan un orden, contrario a las calificaciones de riesgo, donde una calificaci de riesgo MAAA seguramente tiene un menor riesgo de crédito respecto de una calificaci MAA, y a la vez ésta respecto de una calificaci MBBB, etc. De esta manera, dado el feneno a modelar no tendría sentido usar el presente modelo para estimar un comportamiento entre las calificaciones de riesgo 
+de crédito y las razones financieras. 
+Por el contrario al desarrollar el modelo Probit Ordenado, no so se plantea una forma funcional donde cada categoría presenta un riesgo diferente, sino también permite establecer una naturaleza ordinal de las categorfas. 
+En el presente trabajo se plantea que la variable dependiente consta de 9 categorías, de esta forma se pretende estimar la variable "y*", al establecer el modelo: 
+y• = (1,x '.) p + U 
+donde la variable y* es un valor no observado. Ahora, para cada una de las categorías se establecen una serie de restricciones que deberá de cumplir y•: 
+y=O sí y*~O y=l si O< y*~µ, y=2 si µ. < y* ~ f-l1 
+y=8 si µ7 < y* 
+De esta manera, al ser estimados los parámetros"µ" y"P" permitirán calcular el valor de y*, así como las probabilidades. Para poder estimar dichas probabilidades es necesario establecer el modelo Probit Ordenado. Dicho modelo surge de la funci de densidad de probabilidad normal: 
+y donde la funci de distribuci acumulada es: 
+--fº (• l
+F(z) = 1 e-.-µ, )2 / 2 ª 
+
+
+J2i "' 
+De esta manera cada valor de y• al ser evaluada mediante la funci de distribuci acumulada y considerando las restricciones a cumplirse en cada una de las categorías tendrá asociada una probabilidad. 
+Las probabilidades de cada categoría se determinan de la siguiente forma: 
+P(y =O)= ifÁ_-p'x) P(y = 1) = ifÁ_µ, -p'x)-if}.._-p'x) P(y =2) =I.._/Ji -p'x)-1.._µ. -p'x) 
+• • • 
+P(y = 8) = 1-<f,{µ7 -/fx) 
+donde, O< µ, < JJi < ... < µ, 
+0(t) = e-1212 
+. } p··x </Á../3 x) = ~ J0(t)dt , que es la funci de distribuci normal estándar ya que 
+"2,r _.., "t" se distribuye con media igual a cero y varianza igual a 1. 
+De esta manera, al ser estimados los parámetros "µ ·s" y " /J ·s" mediante un proceso iterativo (de Newton) son evaluados en la funci de distribuci normal estándar con el objeto de determinar las probabilidades para cada una de las categorías. La sumatoria del logaritmo natural de tales probabilidades permite obtener el valor denominado Logaritmo de Verosimilitud, el cual, posteriormente será utilizado para establecer las variables explicativas significativas del modelo y por consiguiente el mejor modelo. 
+Así la funci de verosimilitud se encuentra determinada respecto de los parámetros "µ ·s" y"/J ' s": 
+L= L(~/Jo, /Ji , · · ·, /3,,,k ,µ, ,Jii , · · ·, µ., ) 
+donde "Y" se define como una variable binaria, la cual en términos de la funci tomará el valor de l. 
+Así el Logaritmo de la funci de Verosimilitud se expresa de la forma siguiente: 
+7 "' 
+L =In L =L¿Y; • 1n(t/Jp -t/J;-i.k ) 
+j•I k•I 
+Hasta aquí, se establecicomo de manera teica el modelo Probit Ordenado permitirá estimar las probabilidades, considerando tanto la existencia de un riesgo marginal diferente para cada categoría, como, el hecho de establecer un orden del riesgo marginal. Lo que falta es considerar el comportamiento del feneno a fin de mostrar que la funci Probit Ordenada es la más adecuada para modelar a dicho feneno. 
+3.3) Comportamiento del feneno 
+Las calificaciones asignadas a la deuda emitida por las empresas (variable dependiente de los modelos a desarrollar), se define como la expresi de una opini acerca de la probabilidad y riesgo relativo de la capacidad e intenci de un emisor de un título de deuda de crédito colocado en el mercado de valores de México, de efectuar su pago precisamente en el plazo acordado. 
+En la determinaci del nivel de riesgo, la agencia calificadora no expresa juicio sobre la bondad del emisor. De hecho no se califica al emisor, sino a la emisi. Una misma empresa puede llevar a cabo diversas emisiones de deuda y en cada una de ellas podrá tener diferente evaluaci en funci de la estructura y características individuales de cada emisi (plazo, garantías, avales, etc.). Por lo anterior, no necesariamente a todas las emisiones de una misma empresa les corresponde la misma calificaci. 
+Adicionalmente, con el objeto de determinar el nivel de riesgo y por consiguiente la calificaci, la agencia calificadora lleva a cabo un análisis tanto de elementos cuantitativos como cualitativos. Dicho análisis comprende el estudio de razones y proyecciones financieras así como el entorno econico de la empresa, su posici competitiva, desarrollo de productos, administraci y estrategias, etc. 
+Aunque todos estos elementos intervienen en la determinaci de la calificaci de la emisi, finalmente los indicadores financieros de la empresa se pueden considerar como un reflejo de la actual situaci econica que enfrente la empresa, del nivel de productividad y rentabilidad de la misma, y de la manera en como se encuentran estructuradas sus obligaciones. El hecho de tener un conocimiento de los elementos ajenos a la empresa (su entorno econico), permite establecer la factibilidad de que permanezca estable o se modifique la calificaci que actualmente tiene asignada la emisi. De esta 
+forma expresar un modelo en el que la actual calificaci se encuentre en funci de determinadas razones financieras es razonable. 
+Otro aspecto importante el cual también influye en la determinaci del riesgo de crédito es la solvencia moral del deudor. 
+El inversionista al realizar una inversi (por ejemplo, compra de títulos de deuda) en general considera dos aspectos; la solvencia econica y la solvencia moral del deudor, es decir, no nada más valora sí la empresa tendrá la capacidad de generar los recursos econicos para solventar las obligaciones que haya adquirido, sino también, sí el deudor tiene como prioridad cumplir con dichas obligaciones. Partiendo de que la emisi de deuda es una fuente de financiamiento importante para el deudor, éste buscará en todo momento conservar una "buena reputaci" con respecto a los agentes econicos (inversionistas), con el objeto de que le sea posible seguir usando en el futuro éste medio de financiamiento. 
+De esta forma, a pesar de presentarse una relaci entre la calificaci y las razones financieras; los elementos ajenos a la empresa y la solvencia moral del deudor pueden tomar una gran relevancia, y por consiguiente, ocasionar que la calificaci asignada a la emisi considere un riesgo de crédito mayor o menor al que en principio mostraría las razones financieras. Esto es a lo que lleva a establecer una probabilidad del posible riesgo de crédito que enfrenta la empresa, ya que, en la medida que las razones financieras muestren una situaci financiera mejor se tendrá una mayor probabilidad de que cumpla con sus obligaciones, a ante factores no inmersos en las razones financieras; y por ~l contrario, mientras más grave sea la situaci financiera de la empresa menos probabilidades tendrá de cumplir sus obligaciones. 
+Al considerar tanto los factores ajenos a la empresa como la solvencia del deudor, la forma funcional de la probabilidad de riesgo de crédito de una emisi de deuda (variable "y") no presenta una relaci lineal, por el contrario, el incremento marginal de la probabilidad estará en funci de la variable "x" (variable explicativa). La forma funcional entre la variable "y", y cada una de las variables explicativas se muestra en la siguiente gráfica: 
+
+Dicha gráfica puede ser subdividida en 3 regiones respecto al valor que toma ta variable "x": 
+a) Cuando x < x2, el  < 1. Et valor de "x" refleja una raz financiera ta cual hasta 
+tu 
+antes de x2 se encuentra demasiado alejada del valor "xO" lo que indica que, independientemente de un buen entorno econico y solvencia moral, las razones financieras en principio ya reflejan una mala situaci de la empresa de tal forma que no le permite solventar sus obligaciones y por ende, a pesar de un incremento unitario de "x" muy seguramente el cambio en la probabilidad de riesgo de crédito será poco significativo. 
+6y
+b) Cuando x2 < x < x1, el -> 1. El valor de "x" se encuentra en un rango en el cual se 
+tu 
+encuentra muy cerca del valor "xO", por lo que, un incremento unitario de "x" ocasionará que ta probabilidad del riesgo de crédito disminuya significativamente. Dados los niveles de tas razones financieras que refleja ta empresa; los factores ajenos y ta solvencia moral pueden influir de forma importante en la determinaci del riesgo de crédito, lo que con lleva a que ante un incremento o decremento de las razones finar~ieras, se disminuya o incremente significativamente el riesgo de crédito. 
+c) Cuando x > xl, el lly < l. El valor de "x" refleja una raz financiera la cual muestra la 
+llx 
+solidez econica de la empresa, por lo que, ante un incremento unitario en dicha raz, no ocasionará una variaci importante en la disminuci del riesgo de crédito. Se puede selar que, antes del incremento, seguramente la empresa ya presentaba una alta probabilidad de cumplir con sus obligaciones. 
+De esta manera, se considera que un modelo Probit Ordenado tendría la facultad de modelar de una mejor manera al feneno en cuesti, respecto de un modelo de Regresi Lineal. 
+4) ASPECTOS METODOLÓGICOS CONSIDERADOS EN EL PLANTEAMIENTO DEL MODELO. 
+4.1) Variable Dependiente 
+Cada agencia calificadora de riesgos establecen una escala de calificaciones. Dicha escala dependerá del plazo de la emisi, por lo que se tiene una escala para emisi de deuda de corto plazo y otra escala para el caso de deuda de mediano y largo plazo. Además, en cada escala se establece una serie de categorías las cuales van de la de menor riesgo a la de mayor riesgo. El presente estudio se centro básicamente en las calificaciones de emisiones de deuda de largo plazo. 
+Cada agencia tiene su propia metodología para determinar el riesgo en cada emisi, sin embargo; respecto de las agencias Standard & Poor' s y Duff and Phelps para el caso de las emisiones de deuda de largo plazo, no presentan diferencias significativas en cuanto a los elementos establecidos en cada categoría. Lo anterior permitiestablecer una similitud entre las distintas categorías de riesgoª: 
+EMPRESA CALIFICADORA 
+STANDARD & POOR'S DUFF AND PHELPS 
+Categorfas con grado de inversi.  
+mxAAA  MAAA  
+mxAA  MAA  
+mxA  MA  
+mxBBB  MBBB  
+Categorfas que no cumplen con el grado de inversi.  
+MxBB  MBB  
+mxB  MB  
+mxCCC  MCCC  
+mxCC  MDD  
+mxD  MD  
+
+1 Las categorías están seladas de mayor calificaci (menor riesgo de crédito) a menor calificaci. 
+La raz de llevar a cabo dicha similitud es con el objeto de hacer comparable la informaci sobre calificaci de deuda por parte de l~ dos agencias seladas, para su posterior utilizaci en los modelos estadísticos a desarrollar en el presente trabajo. 
+4.2) Razones financieras (variables independientes o explicativas). 
+Con el objeto de resumir la situaci financiera de una empresa, las agencias calificadoras de riesgos establecen determinadas razones financieras las cuales buscan medir la rentabilidad, liquidez, estabilidad o apalancamiento y productividad de dicha empresa. 
+Cabe selar que en funci del sector econico las razones que miden la situaci financiera de una empresa son conformadas de manera diferente.9 
+El presente análisis se centro en considerar so empresas del sector industrial y comercial con el objeto de que los valores de los indicadores financieros sean comparables. Las razones financieras usadas en el modelo son las siguientes'º: 
+1) activo circulante /pasivo circulante Raz que mide la liquidez de una empresa. Activos que se espera que sean convertidos en el a en curso, comparado con las obligaciones que deben de ser pagadas en el mismo a.  
+2) (activo circulante -inventarios)/ pasivo Raz de liquidez que compara la relaci de los circulante activos más líquidos de la empresa con las obligaciones por vencer en el presente a. Contribuye a reflejar la flexibilidad de más corto plazo que posee una empresa para enfrentar eventualidades en su operaci de mercado.  
+
+9 VéaseDuffandPbelpsdeMéxico, S.A. deC.V. pp. 167, 169, 171,173, 175y 177. 'º Como parte de su análisis de las diferentes emisiones de deuda, Duff and Phelps de México establece como se conforman las diferentes razones financieras de las empresas pertenecientes al sector Industrial, Comercio y Servicios. pp. 167. 
+3) Cuentas por cobrar • 360 / costo de Raz de liquidez que indica el periodo promedio de ventas tiempo que se requiere para cobrar Ías cuentas pendientes. Normalmente se utiliza para visualizar la eficiencia de los recursos financieros.  
+4) Proveedores• 360 / costo de ventas Raz de liquidez que indica el periodo promedio de tiempo que se requiere para pagar las cuentas pendientes.  
+5) (utilidad operativa + depreciaci + Raz de cobertura que mide el grado en el que el amortizaciones) / (gastos financieros efectivo generado por la operaci logra cubrir el + deuda de corto plazo) compromiso su deuda bancaria y bursátil de corto plazo y los gastos financieros que ésta genera.  
+6) Utilidad neta / capital contable Raz de rentabilidad que mide el rendimiento sobre la inversi de los accionistas de la empresa. Se refiere fundamentalmente a la productividad sobre el capital en un periodo determinado.  
+7) Utilidad neta / ventas netas Raz de rentabilidad que mide el porcentaje de cada unidad monetaria de ventas que queda después de todos los gastos, incluyendo impuestos, han sido deducidos.  
+8) Pasivo total / capital contable Raz de estabilidad que mide la relaci entre el pasivo total y el capital contable. Sí es mayor de 1 se considera que la empresa se encuentra fuertemente apalancada, por consiguiente podría presentar problemas para solventar sus deudas.  
+9) Costo de ventas / ventas netas Es una raz de productividad.  
+
+4.3) Comportamiento de las variables 
+En éste punto se sela la relaci que se espera guarde las variables explicativas respecto a la categoría de riesgo o calificaci. 
+En cuanto al signo, la calificaci guarda una relaci positiva respecto de las razones 1 ), 2), 5), 6) y 7), y una relaci negativa respecto de las razones 3), 4) y 9). Respecto a la raz 8), se esperaría tener una relaci positiva cuando el coeficiente se encuentra entre un rango de O a 1, y cuando la raz sea mayor a 1 se espera que se presente una relaci negativa. 
+Por otra parte, mientras más alta es la calificaci asignada a la emisi de deuda por parte de una empresa, se esperaría, que dicha empresa presentará cocientes de mayor magnitud para las razones en las que se tiene una relaci positiva y de menor magnitud en las razones en las que se presenta una relaci negativa. Por ejemplo, sí una emisi de deuda es calificada con rnxAAA o MAAA, es de esperarse que el valor de la raz 5) fuese mayor respecto de la emisi de deuda con una menor calificaci. 11 
+4.4) Planteamiento de los Modelos 
+Como un método para expresar la relaci causal entre la variable calificaci de riesgo de crédito y las diferentes razones financieras se plantea llevar a cabo la aplicaci de un proceso ecoriométrico, con el objeto de estimar dos tipos de modelos: 
+1. 
+modelo lineal mtiple 
+
+2. 
+modelo Probit Ordenado 
+
+
+Respecto del primero, la variable dependiente es de naturaleza cuantitativa, por el contrario, el modelo Probit Ordenado presenta una variable dependiente que es de naturaleza cualitativa, es decir, se le asigna un valor que tiene por objeto diferenciar cada una de las 
+categorías o nivel de riesgo, por lo que no expresa cuantitativamente el riesgo de crédito de la emisi. 
+Las variables utilizadas en cada uno de los modelos son las siguientes: 
+variable dependiente: y =calificaciones de riesgo, donde dicha variable puede tomar 9 valores: 
+STANDARD & POOR'S  DUFF AND PHELPS  VALOR ASIGNADO  OBSERVACIONES  
+mxAAA  MAAA  8  4  
+mxAA  MAA  7  21  
+mxA  MA  6  18  
+mxBBB  MBBB  5  24  
+mxBB  MBB  4  25  
+mxB  MB  3  15  
+mxCCC  MCCC  2  11  
+mxCC  MDD  1  2  
+mxD  MD  o  3  
+
+Por su parte, las variables independientes son las siguientes: x O = término constante, el cual toma el valor de 1 x 1 =activo circulante/pasivo circulante 
+x 2 =(activo circulante -inventarios)/ pasivo circulante x 3 =cuentas por cobrar * 360 / costo de ventas x • =proveedores * 360 / costo de ventas 
+11 Cabe mencionar, que en la asignaci de una calificaci puede deberse, en mayor medida, a la influencia de los factores externos y el riesgo moral, y en menor grado, respecto de los valores de los indicadores financieros. 
+x s = (utilidad operativa+ depreciaci+ amortizaciones) / (gastos financieros+ deuda de 
+corto plazo) x 6 =utilidad neta/ capital contable x 7 =utilidad neta / ventas netas x 8 = pasivo total / capital contable x 9 =costo de ventas / ventas netas 
+Cada una de las observaciones utilizadas en los modelos se encuentran dadas a conocer en el anexo C. 
+S) RESULTADOS 
+Primeramente se darán a conocer los resultados del modelo Lineal. 
+El planteamiento matricial para estimar los parámetros es el siguiente: partiendo del modelo, y = X p+ u 
+En cada categoría "y" se le asignun valor, de tal forma que la magnitud del riesgo fuese la 
+misma (1/9): P(y =O)= 1/9 P(y = 1) =2/9 P(y =3) =3/9 
+• • • 
+P(y = 8) = 1 
+Posteriormente se lleva cabo la regresi, donde se busca minimizar la sumatoria del cuadrado de los residuos: 
+u'u = (y -X p)'(y -X p) = y'y-2p 'X'y + p'X' Xp derivando dicha expresi respecto de J3 , e igualando a cero se tiene: 
+O =(X' X) p =X'y 
+= (X' X)_, (X' X) p = (X' X)-1X'y 
+
+Así, mediante el uso del paquete estadístico RATS (Regression Analysis ofTime Series) se lleva cabo la regresi de la variable "y" respecto de las variables XI. X2. X3. X4, XS, X6, X7, X8 y X9 (véase anexo Al), donde los parámetros correspondientes a la constante y las variables X4 (proveedores * 360/costo de ventas), XS ((utilidad operativa + depreciaci+ amortizaciones) / (gastos financieros+ deuda de corto plazo)) y X9 (costo de ventas/ ventas netas) resultaron significativos: 
+Dependent Variable CAL -Estimation by Least Squares Usable Observations l 22 Degrees of Freedom 118 Centered R••2 0.286495 R Bar ..2 0.268356 
+Uncentered R ..2 0.932487 T x R••2 113.763 Mean ofDependent Variable 0.6329690346 Std Error of Dependen! Variable 0.2054702100 
+Standard Error ofEstimate 0.1757514457 Sum of Squared Residuals 3.6448513370 
+Regression F(3, 118) 15.7936 
+Significance Level ofF 0.00000001 
+Durbin-Watson Statistic 0.322564 
+Variable Coeficientes Std Error T-Stat Signiflunc:ia 
+l. Constan! 0.975805301 0.095924705 10.17262 0.00000000 2. X4 -0.000706069 0.000217229 -3.25034 0.00150234 3. X5 0.044563788 o.o 14890709 2.99272 0.00336811 4. X9 -0.479585309 0.121074830 -3.96107 0.00012811 
+En la columna "Significancia" se muestra como los parámetros correspondientes a la constante y las variables X4, X5 y X9 son significativos. Adicionalmente, el modelo en su conjunto también resultser significativo al presentar un "F" estadístico del 15.7936. 
+Cabe sefialar que los signos presentados por los coeficientes (o parámetros) fueron los esperados. 
+Antes de analizar el grado de ajuste del modelo, primeramente se determinará la existencia de heteroscedasticidad, y para lo cual básicamente se aplicaron tanto la Prueba de Goldfeld -Quandt como la de White. 
+En el caso de la Prueba de Goldfeld -Quandt. implícitamente se supone que en caso de existir heteroscedasticidad en el modelo esta puede ser determinada al ordenar las observaciones en funci de la variable explicativa. la cual. se encuentra relacionada con la varianza de los residuos. para posteriormente dividir en dos la muestra y eliminar un nero "d" de observaciones ubicadas en medio del ordenamiento antes citado. 
+En el presente estudio se contcon un total de 122 observaciones, donde se eliminaron d = 20 observaciones. por lo que en la primera muestra se consideraron 52 observaciones y 50 en la segunda. 
+En cada muestra se lleva cabo el proceso de regresi lineal, determinándose la Suma de 
+Cuadrados de los Residuos (SCR). con el objeto de establecer el estadístico SCR2 el cual 
+SCR1 
+se distribuye como un estadístico "F" con ((N-d-4)/2) grados de libertad tanto para el numerador como para el denominador. De esta manera. se rechaza la hipesis nula de existencia de varianza homoscedástica sí el estadístico calculado es mayor que el valor crítico de la distribuci "F". 
+En el presente trabajo los valores correspondientes a los grados de libertad y la SCR fueron los siguientes: 
+VALORES  
+GRADOS DE LIBERTAD  SCR  
+1REGRESION 1  48  0.33179  
+1REGRESION 2  47  0.4S972  
+
+La "F" calculada presentun valor de 1.40508 menor el valor crítico de la distribuci "F" con un nivel de significancia del 10%, por lo que se acepta la existencia de una varianza homoscedástica. 
+En el caso de la Prueba de White, se plantea el estadístico que resulta de multiplicar el nero de observaciones pot el Coeficiente de Determinaci ( R1 ) obtenido en el modelo. Dicho modelo se distribuye como una z;_1 con "n" menos un grado de libertad, 
+determinado por el nero de variables independientes (se considera a la constante). El estadístico de White presentun valor de 4.0567 el cual resultmenor al valor crítico z;_1 con 3 grados de libertad, por lo que nuevamente se confirma la existencia de una varianza homoscedástica. 
+Así, se considera que los coeficientes estimados son consistentes, eficientes e insesgados. 
+Respecto de la salida del paquete estadístico antes mostrada, a parte de dar a conocer la significanyia de cada uno de los parámetros también se calcula la R2 , la cual, presentun valor de 0.29 por lo que muestra que el modelo presenta un bajo nivel de ajuste respecto de la variaci en la variable dependiente. 
+Otra medida que permite establecer el desempe del modelo estimado, y a su vez, la posterior comparaci de los dos modelos, es la clasificaci de las "y" estimadas con base en su correspondiente categoría. 
+En el siguiente cuadro se muestra la clasificaci de dichas probabilidades estimadas mediante el modelo lineal mtiple: 
+CLASIFICACION DE LOS VALORES DE ESTIMADOS DE "Y", CORRESPONDIENTES A LAS CATEGORJAS 
+8  7  6  s  4  3  2  1  o  
+CATEGORJAS  RANGO  
+DEL MODELO  
+8  8/9 a 1  o  
+7  7/9 a 8/9  2  4  2  1  1  
+6  6/9 a 7/9  2  7  6  9  10  1  1  
+s  S/9 a 6/9  9  10  9  6  9  6  
+4  4/9 a S/9  1  6  7  3  4  2  
+3  3/9 a 4/9  1  o  2  
+2  2/9 a 3/9  1  o  1  
+1 o  1/9 a 2/9ºª 1/9  o  o  
+V A LORES CLASIFICADOS  o  4  6  9  7  o  o  o  o  
+CORRECTAMENTE  
+V A LORES CLASIFICADOS  4  17  12  IS  18  IS  11  2  3  
+lNCORRECTAMENTE  
+
+El cuadro anterior se interpreta de la forma siguiente; en el caso de los valores de ·y· estimados correspondientes a la categoría ºj" se clru:i_fican en funci de los rangos que se dan a conocer de forma vertical, sí dicho valor estimado de ..y" presenta un valor el cual no corresponde al rango de dicha categoría, se interpretará como una incorrecta clasificaci por parte del modelo, por ejemplo, la categoría j=8 presenta 4 observaciones, en las que, 2 de ellas se clasificaron en la categoría 7 y las otras 2 en la categoría 6, por lo que el modelo no clasificde forma correcta ninguna observaci. 
+De esta forma, el modelo Lineal Mtiple de las 122 valores estimados clasificde forma correcta 26 (valores correspondientes a la diagonal), es decir, el 21 % del total de la muestra, lo que indica que el modelo presenta un "pobre" desempe con el objeto de predecir las calificaciones de riesgo asociadas las razones financieras. (En el anexo A2, se da a conocer la salida de los valores 'Y' observados y sus correspondientes ºy" estimados). 
+Sí se considera que el riesgo marginal no es el mismo, y por consiguiente, que debe de utilizarse los rangos determinados con base al modelo Probit Ordenado se tiene también que, so 26 de los valores estimados de ·y· son clasificados de forma correcta. 
+Respecto del modelo Probit Ordenado, antes de proceder a dar los resultados correspondientes a la estimaci de los parámetros, es necesario dar a conocer un estadístico que permita establecer el mejor modelo. 
+En la literatura se sela el estadístico denominado como desviaci (0}12, el cual juega el mismo papel que la suma cuadrada de los residuos en el caso de la regresi lineal. El estadístico D propone lo siguiente: 
+D = -2 ln[Valor de verosimilitud del actual modelo -Valor de verosimilitud del modelo saturado] 
+12 Véase David W. Hosmer and Stanley Lcmesbow (1989) pp.14-15 . 
+donde, el actual modelo parte de comparar, por ejemplo, aquel en donde so se considere a la constante, respecto de un modelo en el que se incluya todas las variablP.s explicativas (modelo saturado). 
+La raz de establecer en dicho estadístico menos dos veces el logaritmo, es porque permite 
+compararlo con la distribuci llamada Ji -cuadrada Xn2-t, con n-1 grados de libertad (incluyendo a la constante). 
+Así, si se quiere establecer la significancia respecto a cada uno de los parámetros de las variables independientes inmersas en el modelo, lo que se plantea es calcular el estadístico 
+D, y el cual se comparará con el valor crítico de la distribuci %n2-t con un grado de libertad (diferencia respecto del modelo en que se incluye la variable independiente y el modelo que la omite). 
+Un estadístico alternativo para establecer la significancia de los parámetros correspondientes a las variables independientes, es el de Wald: 
+W= 
+/\ 
+SE(/3;) 
+D. W. Hosmer y S. Lemeshow citan a Hauck y D0nner13, para selar que, éstos timos examinaron el desempe de la prueba de significancia usando el estadístico de Wald, y sobre el cual, concluyeron que presenta un mal comportamiento ya que se comporta como una variable aleatoria la cual sigue una distribuci normal. Así, al realizar la prueba de 
+hipesis Ho: p ,:;: O, ésta en algunos casos se rechaza cuando dicho estimador realmente es significativo. 
+13 Hosmer and Stanley Lemesbow. Op. cit. pp.17 
+Una vez establecido el estadístico que pennitiidentificar el mejor modelo, se procedia la estimaci de los parámetros mediante el procedimiento de Máxima Verosimilitud (los parámetros son calculados por el proceso iterativo de Newton). Primeramente, se calculel Logaritmo de Verosimilitud donde so se incluya la constante, y posterionnente, se agreguna variable independiente a la vez. Los resultados se muestran a continuaci 14 : 
+Variables que intervienen en el modelo  Logaritmo de verosimilitud  Estadístico D  
+Respttto a la coDJtantr  Rnpttto al modrlo constantr, X5, X9  
+Constante  239.83276  
+Constante. X 1  no converge  
+Constante, X2  236.58786  6.4897907  
+Constante, XJ  no converge  
+Constante, X4  no converge  
+Constante, XS  230.22442  19.21667  
+Constante, X6  no converge  
+Constante, X7  no converge  
+Constante, X8  no converge  
+Constante, X9  229.65864  20.348226  
+Constante, XS .X9  224.37037  30.924775  
+Constantc, X2. XS. X9  223.69933  32.266848  1.3420738  
+
+Del cuadro anterior, se muestra que el mejor modelo es aquel que incluye la constante y las variables X5 ((utilidad operativa + depreciaci + amortizaciones) / (gastos financieros + deuda de corto plazo)) y X9 (costo de ventas / ventas netas). Cuando se agrega la variable X2 el estadístico "D" resultante es 1.3420738 (valor que resulta de comparar el Logaritmo de verosimilitud del modelo que presenta la constante y variables X2, X5 y X9, respecto del modelo que contiene a la constante y variables X5 y X9) el cual es menor al valor critico 
+X,2 con un grado de libertad, por lo que el parámetro correspondiente a dicha variable no es significativo. Por otra parte, al evaluar el modelo establecido con respecto al modelo en 
+14 Para la estimaci del modelo, se lleva cabo por medio de una hoja de calculo en Excel -Windows. 
+el cual so incluye a la constante, el estadístico Des 30.9247 el cual resulta mayor al valor 
+2 
+criticc. ·x2 con 2 grado de libertad, por lo que dicho modelo es significativo. Los parámetros del modelo estimado son los siguientes: 
+VARIABLES  COEFICIENTES  \1ALOR MEDIO DE LA VARIABLE  
+CONSTANTE  3.82503429528371  1  
+xs  0.292599004762894  1.0104445  
+X.9  -2.43662419110534  0.6759987  
+µ.,  0.389294412821483  
+/.'2  1.24703152875875  
+JlJ  1. 7 4853369232415  
+µ4  2.36169032709971  
+JJs  2.90731026712727  
+µ6  3.39869879472392  
+µ.,  4.52858198995422  
+
+Cabe selar que los parámetros estimados presentaron los signos esperados. 
+Con el objeto de mostrar el desempe del modelo estimado se procedi. a establecer los rangos, para lo cual primeramente se tiene que establecer los valores estimados de las siguientes funciones: 
+FUNCIONES  Valores estimados  Valores estimados ,·aluados tn la íund dt dtnsldad normal estándar  
+--/J'x  -2.4735346  0.0066892  
+-µ,-/J'x  -2.0842402  0.0185691  
+-JJ: -/J'x  -1 .2265031  0.1100048  
+-µ,-/J'x  -0.7250009  0.2342257  
+-µ, -/J'x  -0.1118443  0.4554734  
+-JJs-/J'x  0.4337756  0.6677743  
+-µ. ­/J'x  0.9251642  0.8225598  
+-µ, -/J'x  2.0550474  0.9800629  
+
+Así, los rangos para cada categoría son los siguientes: 
+Catqoria  Ranao de probabllidadn  
+o  O -0.0066892  
+1  0.0066892-0.0185691  
+2  0.0185691-0.1100048  
+3  0.1100048 -0.2342257  
+4  0.2342257-0.4554734  
+5  0.4554734 -0.6677743  
+6  0.6677743 -0.8225598  
+7  0.8225598 -0.9800629  
+8  0.9800629 -1  
+
+De acuerdo con los anteriores rangos, un valor predicho del modelo de la categoría 8 ( del menor nivel de riesgo) debería estar en el rango de probabilidad de 0.9800629 -l. De esta forma, de un total de 122 probabilidades estimadas, 60 de ellas correspondieron en sus respectivas categorías, lo que representa que el modelo tiene un porcentaje de predicci del 49%; a pesar de que éste es bajo, presenta un mejor comportamiento respecto al modelo 
+lineal mtiple (las probabilidades estimadas se encuentran en el anexo B). Cabe selar, que sí en el modelo lineal se estandarizan las variables explicativas en 
+términos de un valor "Z", el cual, se distribuye como una normal con media cero y varianza 
+igual a 1, es posible comparar los parámetros del modelo estimado con los del modelo 
+Probit Ordenado. 15 Así, la salida del modelo lineal con las variables estandarizadas es la 
+siguiente: 
+Dependen! Variable CAL -Estimation by Lcast Squares 
+Usable Observations  122  Dcgrces of Freedom  118  
+Centered R••2  0.286495  R Bar ..2  0.268356  
+Uncentered R••2  0.932487  T x R••2  113.763  
+Mean of Dcpcndent Variable  0.6329690346  
+Std Error of Dcpcndent Variable  0.2054702100  
+St2ndard Error of Estimate  0.1757514457  
+Sum of Squared Residuals  3.6448513370  
+Regrcssion F(3, 118)  15,7'36  
+Significance Level of F  0.00000001  
+Durbin-Watson Statistic  0.322564  
+
+15 Véase R. S. Pindyck y D. L. Rubinfeld (1991), pp. 275. 
+Variable Coeficientes Std Error T-Stat .. Slsnlficancla 
+l . Constant 0.632969035 0.015911788 39.77988 0.00000000 2. X4 -O.OS293SS34 0.016286159 -3.25034 0.00150234 
+3. 
+xs o.os l 485827 0.017203665 2.99272 0.00336811 
+
+4. 
+X9 -0.06876252 l o.o l 7359603 -3.96107 0.00012811 
+
+
+Al respecto, es posible observar que los parámetros del modelo Probit Ordenado son relativamente más importantes para cada una de las variables X5 y X9, respecto del modelo lineal (variables que se encuentran presentes en los dos modelos). 
+
+
+6) CONCLUSIONES 
+En la presente investigaci se mostrque un modelo el cual considera una funci Probit Ordenada presentun mejor comportamiento para tratar de explicar las calificaciones de riesgo de crédito (variable cualitativa) en funci de determinadas razones financieras, comparado con un modelo lineal. Lo anterior implica que: 
+1) las calificaciones de riesgo de crédito implícitamente presentan tanto un riesgo marginal diferenciado como un ordenamiento respecto a dicho riesgo, y que, 
+2) la variable dependiente (en éste caso la calificaci de riesgo de crédito) es más correcto modelarla como variable cualitativa (cuando se usa modelos Probit Ordenados), que modelarla como variable dependiente cuantitativa. 
+Con relaci a las variables que resultaron significativas en el modelo Probit Ordenado: 
+XS ((utilidad operativa+ depreciaci+ amortizaciones)/ (gastos financieros+ deuda de corto plazo)) X9 ( costo de ventas / ventas netas) 
+l) 
+presentan una mayor importancia en la predicci de las calificaciones de riesgo cuando dichas variables son modeladas a través de modelos Probit Ordenados respecto de modelos Lineales. 
+
+2) 
+se muestra que tales razones generadas a partir de los rubros del estado de resultados tienen mayor capacidad para explicar las calificaciones de riesgo de crédito, respecto de razones financieras las cuales se conforma de los rubros del balance, como el caso de las razones representadas por las variables XI (raz de liquidez), X2 (raz de liquidez) y X8 (raz de estabilidad). La raz de esto podría explicarse a partir de que los rubros del estado de resultados son flujos que muestran deforma clara los ingresos y los gastos de la empresa, y por consiguiente, evidencian sí una empresa actualmente se encuentra financieramente bien o no; mientras que los rubros de balance son cuentas que en general indican la distribuci de los recursos y obligaciones de la empresa, lo que no garantiza sí tal distribuci permite evidenciar del todo una buena o mala situaci financiera 
+
+
+Así, se muestra que con el objeto de explicar las calificaciones de riesgo de crédito ( considerando una diferenciaci respecto de dicho riesgo) en el caso de las emisiones de deuda por parte de empresa mexicanas, debe incluirse en el análisis, tanto razones de cobertura de las obligaciones que enfrenta la empresa (X5) como de productividad (X9). 
+BIBLIOGRAFIA 
+l. Altman, E., and Katz, S. (1976). Statistical bond rating classification using finantial and accounting data In Michael Schiff and George Sorter (eds.). 
+2. 
+Bolsa Mexicana de Valores (1996). Anuario Bursátil de la Bolsa Mexicana de Valores. 
+
+3. 
+Cantor, Richard, and Frank Packer ( 1996). "Determinants and Impact of Sovereign Credit Ratings". Federal Reserve Bank ofNew York. Economic Policy Review. 
+
+4. 
+Doan, A. Thomas (1994). Regression Analysis ofTime Series. 
+
+5. 
+Duff and Phelps de México, S.A. de C.V. (1997). Perfil de Calificaciones. ter trimestre de 1997. 
+
+6. 
+Ederington, Louis ( 1985). "Classification Models and Bond Ratings". Financial Review 4. No. 20. (november): 237-262. 
+
+7. 
+Greene, Willian H. ( 1993). Econometric Analysis. Prentice Hall Intemational Editions, 2ª edici. 
+
+8. 
+Gujarati, N. Demodar (1992). Econometría. Me Graw Hill, 2ª edici. 
+
+9. 
+Horrigan, J. O. 1966. The determination of long-term credit standing with financial ratios. Empirical Reserch in Accounting 1966, Joumal of Accounting Research 4: pp. 44-62 
+
+10. 
+Hosmer, D. W., and Stanley Lemeshow (1989). Applied Logistic Regression. Ed. John Wiley & Sons, Inc. 
+
+11. 
+Judge, George G., R. Carter Hill, William E. Griffiths, Helmut Lkepohl, and Tsoung ­Chao Lee (1988). Introduction to the Theory and Practice of Econometrics. Ed. John Wiley & Sons, Inc.: pp. 785-794. 
+
+12. 
+Kaplan Robert, and Gabriel Urwitz (1979). "Statistical Models of Bond Rattings: a Methodological Inquiry". Joumal ofBusiness 52, No. 2: 231-261. 
+
+13. 
+Pinches, G., and Mingo, K. (1973). A multivariate analysis of industrial bond ratings. Joumal ofFinancial 28 (March): 1-18. 
+
+14. 
+Pindyck, Robert S. And Rubinfeld, Daniel L. (1991). Econometric Models & Economic Forecasts, Me Graw Hill, 3ª edici. 
+
+15. 
+Standard & Poor·s, Calificadora de Valores (1997). Calificaciones y Comentarios. Volumenes: julio de 1997 y octubre 1997. 
+
+16. 
+Standard & Poor's, Calificadora de Valores (1998). Calificaciones y Comentarios. Vol: abril de 1998. 
+
+1
+7. West, R. R. (1970). An alternative approach to predicting corporative bond rations. Journal ofAccounting Research 7, abril: pp. 159-168. 
+
+
+
+
+ANEXO Al 
+En el presente anexo se da a conocer el resultado de la regresi lineal de la variable ,,•• respecto de las variables independientes x 1 x2 x3 x4 x5 x6 x7 x8 x9 
+Dependen! Variable CAL -Estimation by Least Squares 
+Usable Observations 122 Centered R••2 0.322002 Uncentered R••2 0.935847 Mean of Dependen! Variable Std Error of Dependen! Variable Standard Error of Estimate Sum of Squared Residuals Regression F(9, l 12) Significance Leve) off Durbin-Watson Statistic Degrees of Freedom 112 R Bar ••2 0.267520 T x R••2 114.173 0.6329690346 0.2054702100 0.1758517940 3.4634715851 5.9102 
+0.00000099 0.413247 
+Variable Coeficientes Error Estándar T-Stadistico Significancia 
+l . Constan!  0.943290563  0.103370081  9.12537  0.00000000  
+2. XI  -0.010447317  0.008565256  -1.21973  0.22512880  
+3. X2  0.036273068  0.019990558  1.81451  0.07227589  
+4. X3  0.000020074  0.000025761  0.77924  0.43748272  
+5. X4  -0.000720097  0.000224967  -3 .20089  0.00178303  
+6. X5  0.043288784  o.o 15959270  2.71245  0.00773311  
+7. X6  -0.004039824  0.022545700  -0.17918  0.85811713  
+8. X7  0.008823158  0.033624203  0.26240  0.79349128  
+9. X8  0.000014646  0.000010973  1.33481  0.18464424  
+10. X9  -0.434348149  0.1309886 72  -3.31592  0.00123170  
+
+Aquí se muestra como los parámetros de las variables x4, x5 y x9 son significativos a un nivel de significancia del 5% respecto del estadístico "t" 
+ANEXOA2 
+n Y obsefvada y estimada 1 1.0000000000000 0.7037157572893 2 1.0000000000000 0.7219653462207 3 1.0000000000000 0.8651723931332 4 1.0000000000000 0.8425474853189 0.8888888888889 0.7122309029786 6 0.8888888888889 0.5026109028221 7 0.8888888888889 0.6712095675659 8 0.8888888888889 0.6174321096997 9 0.8888888888889 0.6149074667282 0.8888888888889 0.6513761221732 11 0.8888888888889 0.6731270102694 12 0.8888888888889 0.7489814246216 13 0.8888888888889 0.8316538853318 14 0.8888888888889 0.8035044572739 0.8888888888889 0.6511050362685 16 o.8888888888889 o.1016n8135549 17 0.8888888888889 0.7151430284566 18 0.8888888888889 0.7971455339044 19 0.8888888888889 0.7245559318887 0.8888888888889 0.7543290115190 21 o.8888888888889 o.5n9461345718 22 0.8888888888889 0.6126920594863 23 0.8888888888889 0.6433107533175 24 0.8888888888889 0.8379352920842 0.8888888888889 0.6878016422814 26 o.1nmmn18o.5611440953229 21 o.1nmn1n180.6202124288n8 28 o.nnnmm8o.6504974003097 29 o.1mnmm80.1118437931260 o.11nnmm8o.6906736240231 31 o.1111nmn18 0.1101585528602 32 o.m1nmm8 o.5974113874389 33 o.7777771711718 0.6063415255042 34 o.1mnnm18o.7169683874723 0.77777777777/8 0.6332099644799 36 o.mmmm8 o.5950044544365 37 o.nn777777778 o.7891418984654 38 o.1mn1nm8o.754494n95303 39 o.mmmm8 o.8167359606573 o. 711177 77 77 77 8 0.6660368406790 41 o. 7 77 77 77 771778 0.577627 4549344 42 0.77711777777/8 0.6608143509850  n ·y obselvada Y estimada 43 0. 77 77 77 7711778 0.6853500316322 44 0.6668666666667 0.5984366980094 45 0.6668666666667 0.6571564645378 46 0.8666666666667 0.6767815151405 47 0.6668666666667 0.7228005119683 48 0.6666666666667 0.7378702511866 49 0.6666666666667 0.5492756653651 50 0.6666666886667 0.6202888334476 51 0.6666666666667 0.6400864426116 52 0.6666866666667 0.4969741104588 53 0.6666666666667 0.5339781491121 54 0.6866666666667 0.5602635964422 55 0.6666666666667 0.5032453584117 56 0.8666666666667 0.4635187911354 57 0.6866666666667 0.4755414063406 58 0.6666666666667 0.5826098454123 59 o.6666666666667 o.64892Jn21621 60 0.6666666666667 0.6872320834268 61 0.6666666666667 0.5903941967656 62 o.6668666666667 o.671728n35531 63 0.6666666666667 0.6933800709109 64 0.8666666666667 0.8533264799761 65 0.8666666666667 0.6795443372280 66 0.6666666666667 0.7298869751419 67 o.8666666666667 o.739298046n85 68 0.5555555555556 0.5364899974576 69 0.5555555555556 0.6159445204219 10 o.5555555555556 o.5n3703534993 71 0.5555555555556 0.5454421493142 72 0.5555555555556 0.5427063217558 73 0.5555555555556 0.3996860605924 74 o.5555555555556 o.54085665439n 75 0.5555555555556 0.6281694943609 76 0.5555555555556 0.6884084399300 n o.5555555555556 o. 7152376320887 78 0.5555555555556 0.7073097342577 79 0.5555555555556 0.7408061109119 60 0.5555555555556 o. 7447876614451 81 0.5555555555556 0.7207651335146 62 0.5555555555556 0.6034497019389 83 0.5555555555556 0.4924653790358 84 0.5555555555556 0.7233814550480  n Y ot>servada Y estimada 65 0.55555555555, ; 0.7398698366636 86 0.5555555555556 0.5070658458320 87 O 5555555555556 0.5524778269662 88 0.5555555555556 0.6835172871334 89 0.5555555555556 0.7534615376329 90 0.5555555555556 0.7842363288566 91 0.5555555555556 0.6094543951859 92 0.5555555555556 0.6608143509850 93 O 4444444444444 0.5753783644115 94 0.4444444444444 0.5890103551667 95 0.4444444444444 0.5890103551667 96 O 4444444444444 0.7480290544566 97 0.4444444444444 0.6598502778734 98 0.4444444444444 0.2617289808211 99 0.4444444444444 0.5437802970548 100 0.4444444444444 0.5378990507388 101 0.4444444444444 0.6005641032957 102 0.4444444444444 0.6502990788198 103 0.4444444444444 0.5898754127059 104 0.4444444444444 0.6222935267879 105 0.4444444444444 0.5665244164404 106 0.4444444444444 0.8326896037829 107 0.33.33333333333 0.5155951070041 108 0.3333333333333 0.5129937826024 109 0.3333333333333 0.5481662310404 110 0.3333333333333 0.5337792026499 111 0.3333333333333 0.5918285338455 112 0.3333333333333 0.6113513091594 113 0.3333333333333 0.6695900014760 114 0.3333333333333 0.6601718799026 115 0.3333333333333 0.6628242497985 116 o.3333333333333 o.57987n059578 117 0.3333333333333 0.5952182517037 118 0.2222222222222 0.4735016489348 119 0.2222222222222 0.4738332292196 120 0.1111111111111 o.34614320n460 121 0.1111111111111 0.3814757345099 122 0.1111111111111 0.2666967069014  
+
+ANEXOB 
+
+
+ANEXOC 
+Ut.OP+O+A / UNICC UNNN PTICC ~VNNEMPRESA AV>'\, IACIIPC CXC'3&0/VN PR0°360/CV
+AGENCIA PERIOI')() DE LA 
+CALIFICACION DE CALIFICADORA 
+GF+O.C.P. 
+RIESGO DE CREOITO (LARGO PLAZO) 
+CALlf '.ACION 
+STANDARD& 6197 BIMBO 1.00 0.07 27.51 63.65 0.18 0.04 0.04 0.50 0.49 mxAAA POORºS STANDARD& 9/97 SIMBO 1.32 0.18 19.08 35.75 0.17 0.06 0.04 0.47 049 mxAAA POORºS 
+STANDARD& 3/97 TELMEX 1.30 0.64 273.30 0.00 2.34 0.04 0.25 0.38 0.45 mxAAA POOR'S STANDARD& 6197 TELMEX 1.40 0.72 139.45 0.00 1.95 0.07 0.22 0.43 0.46 mxAAA POORºS STANDARD& 9/97 COPAMEX 2.77 1.73 77.69 41.91 1.99 0.13 0.14 0.97 0.67 mAA POORºS STANDARD& 3/97 FAR-BEN 1.13 0.09 38.20 176.75 0.16 0.03 0.03 1.08 0.74 mxAA POORºS OUFFANO 12/96 FAR-BEN. SA. DE C.V. 1.20 0.35 9.48 49.20 1.51 0.18 0.06 1.00 0.70 MAA· PHELPS OUFF ANO 3/97 FAR·BEN. SA. DE C.V. 1.13 0.32 10.78 51.67 0.45 0.15 o.os 1.03 0.71 MAA­PHELPS STANDARD& 3/97 GCARSO 1.03 0.29 25.88 150.89 1.53 0.07 0.13 1.58 0.67 mxAA POORºS STANDARD& 6197 GCARSO 0.93 0.18 145.13 92.71 1.27 0.13 0.11 2.03 0.66 mxAA POOR'S STANDARD& 9/97 GCARSO 1.36 0.49 88.51 53.04 1.20 0.35 0.25 1.43 0.66 mxAA POOR'S STANDARD& 3/97 GMEXICO 8.79 5.43 169.16 159.62 3.01 0.38 0.27 4.17 0.52 mxAA+ POOR'S STANDARD& 6/97 GMEXICO 9.02 5.78 91 .33 85.18 3.57 0.07 0.25 0.35 0.54 mxAA+ POOR'S STANDARD& 9/97 GMEXICO 2.19 1.36 54.80 52.41 3.04 0.00 0.01 0.51 o.se mxAA+ POOR'S STANDARD& 3/97 PEAolES 3.02 1.25 164.79 133.70 1.29 0.04 0.17 0.45 0.60 mxAA+ POOR'S STANDARD& 6197 PEAOI.ES 3.70 2.46 85.27 81.95 1.20 0.08 0.17 0.86 0.59 mxAA+ POOR'S STANDARD& 9/97 PEAOLES 3.97 2.33 60.39 40.09 1.17 0.11 0.16 0.78 0.59 mxAA+ POOR'S OUFF ANO 12/96 SISTEMA ARGOS, SA. 0.88 0.84 12.75 13.18 2.49 0.25 0.13 0.76 0.58 MAA· PHELPS OUFFANO 3197 SISTEMA ARGOS. SA. 0.97 0.45 15.19 17.78 0.92 0.18 0.11 0.77 0.58 MAA· if'HELPS OUFF ANO 9/97 SISTEMA ARGOS, SA. 1.22 0.67 16.11 18.76 1.51 0.22 0.11 0.76 0.57 mAA• 
+PHELPS STANDARD& 3/97 TABLEX 2.69 0.69 148,31 23.51 0.56 0.01 0.03 0.23 0.85 mxAA+ POOR'S STANDARD& 6/97 TABLEX 1.96 0.61 76.37 22.35 0.83 0.03 0.05 0.39 0.80 mxAA+ 
+POOR'S 
+STANDARD& 9/97 TABLEX 2.19 0.70 59.06 18.70 1.02 0.05 0.07 0.34 0.76 mxAA+ POOR'S STANDARD& 9/97 TELMEX 1.54 0.78 92.43 0.00 1.77 0.11 0.22 0.44 0.45 mxAA 
+POORºS 
+OUFFANO 3197 VITRO, SA. 1.14 0.68 46.91 37.63 0.71 0,25 0.13 1.85 0.61 MAA· PHELPS STANDARD& 3/97 COINSA 1.11 0.00 306.58 173.21 0.70 0.02 0.09 0.76 0.67 mxA 
+POOR'S STANDARD& 6/97 COINSA 1.49 0.09 142.70 85.53 0.69 0.04 0.09 1.06 0.68 mxA POOR'S STANDARD& 9/97 COINSA 2.77 0.19 103.58 62.54 0.93 0.10 0.13 1.00 0.67 mxA 
+POOR'S 
+STANDARD& 9/97 COOPEL 3.09 0.05 219.16 67,79 0.79 0.17 0.19 0.53 0.52 mxA POOR'S STANDARD& 3/97 COPPEL 36.12 0.23 761.32 172.25 0.89 0.04 0.17 0.41 0.52 mA 
+POOR'S 
+OUFF ANO 12/96 EMBOTELLADORA DEL 3.89 0.88 1.19 5,82 1.14 0.09 5.02 0.37 0.69 MA PHELPS NAYAR, SA. DE C.V. OUFF ANO 03/97 EMBOTELLADORA DEL 5.47 1.11 10.51 2.17 0.10 0.06 0.34 0.34 o.se MA 
+PHELPS NAYAR, SA. DE C.V. 
+OUFF ANO 12/96 LAMOSA REVESTIMIENTOS, 2.67 1.78 93.52 72.82 0.55 -0.02 -0.02 0.90 0.73 MA· PHELPS SA. DEC.V. OUFF ANO 3197 LAMOSA REVESTIMIENTOS, 2.95 1.87 51 .01 54.06 0.79 0.00 -0.01 0.84 0.76 MA­
+PHELPS SA.OEC.V. 
+OUFF ANO 12/96 LORETO Y PEAA POBRE. 0.63 0.48 60.35 55.82 1.77 0.29 0.20 1.31 0.62 MA· PHELPS SA. OEC.V. OUFF ANO 3/97 LORETO Y PERA POBRE. 0.62 0.49 81.57 66.71 0.43 0.18 0.14 1.23 0.66 MA· 
+PHELPS SA.OEC.V. 
+STANDARD& 3197 MINERA DEL NORTE 2.18 0.14 135.80 278.67 1.65 0.06 0.31 O.SS 0.54 mA POORºS DUFFAND 12/96 MINERA DEL NORTE. 2.50 o.se 32.94 70.25 2.33 0.23 0.30 0.49 0.50 MA­PHELPS S.A. DEC.V. DUFFAND 3197 MINERA DEL NORTE. 2.18 0.61 33.95 69.67 1.92 0.22 0.31 0.55 0.54 MA­PHELPS S.A. DEC.V. DUFFAND 9/97 MINERA DEL NORTE. 2.34 0.41 16.58 67.81 3.03 0.21 0.30 0.54 0.51 MA· PHELPS S.A. DEC.V. 
+46 
+STANDARD&  6/97  SANBORN  1.01  0.08  8.03  106.34  0.28  0.05  0.06  0.82  0.52  mxA  
+POOR'S  
+STANDARD&  3/97  SANBORN  1.08  0.11  16.59  234.59  0.39  -0.01  -0.04  0.82  0.52  m>cA+  
+POOR'S  
+STANDARD&  6197  VITRO  1.66  0.16  88.70  73.M  0.63  0.10  0.07  2.59  0.61  mxA  
+POOR'S  
+STANDARD&  9/97  VITRO  1.53  0.22  M.48  46.60  0.82  0.22  0.12  2.04  0.61  mxA  
+POOR'S STANDARD&  3/97  AHMSA  1.15  0.06  228.71  258.n  3.91  0.06  0.27  1.29  o.n  mxBBB+  
+, POOR'S STANDARD&  6/97  AHMSA  1.54  0.16  124.30  101 .47  2.71  0.10  0.19  1.46  0.77  mxBBB+  
+POOR'S  
+STANDARD&  9/97  AHMSA  1.51  0.12  80.16  78.27  2.80  0.12  0.15  1.50  0.77  mxBBB+  
+POOR'S  
+DUFFAND  12/96  C/R MEXICANA. SA DE  0.91  0.60  72.70  61 .15  1.67  0.20  0.12  0.94  0.59  MBBB  
+PHELPS  C.V.  
+DUFF ANO  3/97  C/R MEXICANA. S.A. DE  2.40  1.66  59.46  60.38  1.94  017  0.10  0.01  0.59  MBBB  
+PHELPS  c.v.  
+DUFFAND  3/97  GRUPO COSTAMEX,  2.40  2.13  96.32 nd  0.76 nd  0.00  0.73  0.16  MBBB­ 
+PHELPS  SADEC.V.  
+STANDARD&  3/97  ICA  1.01  0.51  510.15  139.66  1.13  0.01  0.03  1.65  0.79  mxBBB+  
+OOR'S  
+TANDARD &  6/97  ICA  1.01  0.53  233.03  55.47  1.33  0.02  0.06  1.73  0.78  mxBBB+  
+OOR'S  
+STANDARD&  9/97  ICA  0.97  0.26  160.20  37.12  1.45  0.05  0.08  1.40  0.78  mxBBB+  
+POOR'S  
+DUFFAND  12/96  INGENIEROS Y  1.51  1.30  178.07  12.11  1.49 nd  -0.26  3.42  0.83  MBBB  
+PHELPS  CONTRATISTAS, S.A.  
+DEC.V.  
+UFFAND  3/97  INGENIEROS Y  1.28  1.19  192.71  14.70  0.20 nd  -0.10  3.70  0.95  MBBB  
+PHELPS  CONTRATISTAS, S.A.  
+DEC.V.  
+STANDARD&  3/97  PARGO  1.41  0.13  157.35  111 .60  0.07  0.00  0.00  0.69  0.84  mxBBB+  
+POOR'S  
+STANDARD&  6/97  PARGO  1.66  0.19  75.44  59.88  0.12  0.00  0.00  0.75  0.84  mxBBB+  
+POOR'S  
+STANDARD&  9/97  PARGO  1.26  0.14  13.85  41 .08  0.30  0.01  0.00  0.87  0.83  mxBBB+  
+POOR'S  
+l°UFFANO• PHELPS  12/96  PROTEXA CONSTRUCCIONES.  0.71  0.62  45.25  68.01  0.30  0.04  0.01  4.32  0.91  MBBB­ 
+S.A. DE C.V.  
+DUFF ANO  3/97  PROTEXA  0.67  0.50  155.33  64.45  0.00  -0.03  -0.05  4.86  0.97  MBBB­ 
+PHELPS  CONSTRUCCIONES,  
+S.A. DE C.V.  
+STANDARD &  3/97  TRIBADE  1.13  0.01  6421 .88  201 .57  0.93  0.02  0.22  2.05  0.83  mxBBB- 
+POOR'S  
+STANDARD &  3/97  APASCO  BBB  
+POOR'S  2.63  1.38  227.26  124.39  1.51  0.01  0.10  0.32  0.78  
+STANDARD&  6197  APASCO  BBB  
+POOR'S  1.54  0.72  85.111  67.02  1.80  0.02  0.10  0.30  0.75  
+STANDARD &  9/97  APASCO  BBB  
+POOR'S  1.48  0.65  59.09  37.77  2.14  0.04  0.11  0.27  0.75  
+STANDARD&  3/97  FEMSA  BBB  
+POOR'S  1.04  0.26  119.17  174.11  0.31  0.03  0.06  1.27  O.M  
+STANDARD &  6/97  FEMSA  BBB  
+POOR'S  1.79  0.07  54.59  77.32  0.38  0.06  0.06  1.29  0.56  
+STANDARD&  9/97  FEMSA  BBB  
+POOR'S  1.51  0.45  35.64  53.38  0.45  0.13  0.08  1.23  0.55  
+STANDARD&  9/97  GRUMA  BBB  
+POOR'S  2.93  0.88  36.29  26.80  0.28  0.04  0.03  0.74  0.66  
+STANDARD&  3/97  PEPSIGX  BBB  
+POOR'S  0.44  0.05  82.69  122.93  0.38  0.04  0.16  0.57  0.47  
+STANDARD &  6/97  PEPSIGX  BBB  
+POOR"S  1.21  0.59  37.11  53.52  0.33  0.07  0.13  0.82  0.47  
+STANDARD& POOR"S  9/97  PEPSIGX  1.13  0.67  11.n  41 .49  0.35  0.11  0.14  o.n  0.46  BBB  
+DUFFAND  12/96  EL SURTIDOR DE  3.38  1.37  35.85  83.71  0.40  -0.10  -0.01  7.18  0.83  MBB  
+PHELPS  OBSERVATORIO, S.A.  
+DEC.V.  
+•DUFFAND  3/97  EL SURTIDOR DE  4.26  1.62  43.22  71 .64  1.10  0.14  0.01  0.08  0.75  MBB  
+PHELPS  OBSERVATORIO, SA  
+DEC.V.  
+
+OUFFAND  12196  SINGER MEXICANA.  1.10  o.n  142.33  132.96  0.26  0.09  --0.07  17.67  0.66  MBB­ 
+PHELPS  S.A. DE C.V.  
+OUFFAND  3/97  SINGER MEXICANA.  1.17  0.82  165.36  67.75  0.07  0.07  --0.08  18.61  0.66  MBB­ 
+PHELPS  S.A.DEC.V.  
+DUFF ANO PHELPS  3/97  TRITURADOS BASALTICOS Y  1.13  1.12  1605.47  50.39  0.04  --0 .02  --0.55  0.98  0.83  MBB  
+DERIVADOS S.A. DE  
+c.v.  
+DUFF ANO  9/97  TRITURADOS  2.21  0.00  2997.93  70.66  -1 .22  --0.02  --0 .10  1.19  0.98  mBB  
+PHELPS  BASAL TICOS Y  
+DERIVADOS S.A. DE  
+c.v.  
+STANDARD &  9/97  BUFETE  BB  
+POOR'S  1.53  0.09  233.92  93.10  1.39  1.02  0.07  15.01  0.90  
+STANDARD &  3/97  CEMEX  BB  
+POOR'S  1.18  0.27  201 .34  185.49  1.76  0.05  0.22  1.62  0.62  
+STANDARD&  6197  CEMEX  BB  
+POOR'S  1.23  0.30  98.06  91 .96  1.63  0.09  0.19  1.63  0.62  
+STANDARD&  12/97  CEMEX  BB  
+POOR'S  1.23  0.31  61 .04  57.35  1.70  0.48  0.21  4.61  0.62  
+STANDARD&  3/97  GIDUSA  BB  
+POOR'S  19.78  0.75  280.03  124.27  2.97  0.07  0.30  1.28  0.65  
+TANDARD&  6197  GIDUSA  BB  
+POOR'S  2.58  0.91  136.27  50.87  2.. 71  0.13  0.27  1.23  0.67  
+STANDARD&  9197  GIDUSA  BB  
+POOR'S  3.79  0.71  91 .06  37.15  2.72  0.18  0.26  1.14  0.68  
+STANDARD&  9197  HYLSAMX  BB  
+POOR'S  1.51  0.55  52.96  37.93  3.10  0.16  0.17  1.13  0.76  
+STANDARD&  7/97  IUSACEL  BB  
+POOR'S  14.60  7.87  46.03  273.53  0.01  --0.01  --0 .02  0.68  0.37  
+STANDARD&  3/97  TLEVISA  BB  
+POOR'S  2.05  0.35  419.16  235.63  --0 .10  --0.02  --0 .07  2.06  0.65  
+TANDARO&  6197  TLEVISA  BB  
+OOR'S  3.98  0.56  148.49  108.06  3.02  0.32  o.n  1.02  0.65  
+TANDARD&  9/97  TLEVISA  BB  
+OOR'S  2.63  0.43  76.04  72.58  2.67  0.40  0.64  0.95  0.63  
+TANDARD &  3/97  TMM  BB  
+POOR'S  1.25  0.58  211 .49  94.28  0.35  0.02  0.03  2.58  0.87  
+STANDARD&  9197  TMM  BB  
+, POOR'S  1.13  0.47  59.32  24.26  0.13  --0 .01  --0.01  2.95  0.66  
+STANDARD& POOR'S  3/97  TTOLMEX  5.60  0.04  118.67  67.n  2.07  0.01  0.15  0.23  0.70  BB  
+STANDARD&  6197  TTOLMEX  BB  
+POOR'S  5.98  0.13  59.02  34.05  2.84  o.n  0.26  3.99  0.68  
+STANDARD&  9/97  TTOLMEX  BB  
+POOR'S  6.08  0.10  37.66  25.21  3.14  0.07  0.27  0.21  0.65  
+STANDARD&  3/97  VITRO  BB  
+POOR'S  1.14  0.11  187.63  150.51  0.74  0.07  0.11  2.57  0.61  
+STANDARD&  6197  VITRO  BB  
+POOR'S  1.66  0.16  88.70  73.58  0.63  0.10  0.07  2.59  0.61  
+DUFF ANO  12196  CONTROLADORA  0.07  0.07  40.85  129.82 nd  0.12  0.63  1.59  1.03  MB  
+PHELPS  PYASA. S.A. DE C.V.  
+DUFFAND  3/97  CONTROLADORA  0.13  0.13  305.20  149.73 nd  0.01  0.06  1.66  1.65  MB  
+PHELPS  PYASA. S.A. DE C.V.  
+OUFF ANO  12196  FORMEX-YBARRA. SA  o.n  0.66  62.34  78.66  0.09  -1 .79  --0 .15  14.26  0.73  MB  
+PHELPS OUFF ANO  3197  DEC.V. FORMEX-YBARRA, S.A.  0 .09  0.05  66,10  TMT  o.rn  -0.10  -0.02  24.10  0.71  MB  
+PHELPS  DEC.V.  
+DUFF ANO  9/97  FORMEX-YBARRA, S.A.  0.69  0,55  66.18  75.57  0.15  --0.10  --0 .02  24.10  0.71  ·  mB  
+PHELPS  DEC.V.  
+DUFF ANO  12196  PROOUCO DE MEXICO,  1.26  0.96  217.48  39.38  2.51  0.45  --0.07  0.82  0.65  MB  
+PHELPS  S.A. DEC.V.  
+DUFFAND  3/97  PROOUCO DE MEXICO,  1.29  0.99  239.02  35.52  0.44  0.44  --0.03  0.81  0.65  MB  
+PHELPS  S.A. DEC.V.  
+STANDARD&  3/97  SINGER  1.10  0.02  591 .10  519.n  --0 .25  0.00  --0.08  0.00  0.70  mB  
+POOR'S  
+DUFFAND  3/97  SINGER MEXICANA.  1.24  0.02  193.35  136.93  --0 .25  --0 .58  --0.08  6.41  0.68  mB  
+PHELPS  S.A. DE C.V.  
+STANDARD&  3/97  ELEKTRA  B  
+'•f>OOR'S  2.09  0.14  517.52  254.68  0.63  0.05  0.14  0.60  0.60  
+STANDARD&  6197  ELEKTRA  B  
+POOR'S  2.49  0.24  156.57  149.68  0.56  6.66  0.12  44.68  0.61  
+
+STANDARD&  9197  ELEKTRA  B  
+POOR'S  1.97  0.19  10.35  84.20  0.50  0.13  0.11  0.71  0.60  
+~TANDARD&  3/97  TRIBASA J  B  
+POOR'S  0.46  0.14  305.60  183.04  2.32  0.00  0.03  1.36  0.75  
+STANDARD&  6/97  TRIBASA  B  
+POOR'S  4.n  0.82  176.73  112.00  1.97  0.00  0.02  1.48  0.76  
+STANDARD&  9/97  TRIBASA  B  
+POOR'S  1.43  0.04  1,009.90  86.82  1.14  -0.63  ·1 .21  2.98  0.83  
+!STANDARD &  9/97  TVAirCA  B  
+POOR'S  3.87  1.59  114.35  105.84  1.82  0.45  0.42  2.23  0.31  
+DUFFAND  12196  ALUMINIO CONESA.  0.35  0.20  71 .84  41 .38  0.11  -2.96  -0.16  32.46  0.91  MCCC  
+PHELPS  S.A. DEC.V.  
+DUFFAND  3/97  ALUMINIO CONESA,  0.31  0.18  58.52  35.25  0.00  0.00  -0.07  ~2.27  0.91  MCCC  
+, PHELPS  S.A. DEC.V.  
+DUFFAND  12196  AUTOMOVILISTICA  1.29  1.16  43.81  28.63 nd  0.00  -0.07  -7.26  0.88  MCCC  
+PHELPS  CENTRAL, S.A. DE C.V.  
+DUFFAND  3/97  AUTOMOVILISTICA  1.20  1.00  52.50  33.59 nd  0.00  0.00  ~ .34  0.87  MCCC  
+PHELPS  CENTRAL, S.A. DE C.V.  
+DUFFAND  12196  AUTOMOVILISTICA DE  1.37  1.33  1426.13  15.16 nd  0.00  -2.70  -2.33  0.79  MCCC  
+PHELPS  HIDALGO. S.A. DE C.V.  
+DUFFAND  3/97  AUTOMOVILISTICA DE  1.21  1.18  718.30  41 .85 nd  0.00  -5.30  •2.71  0.72  MCCC  
+PHELPS  HIDALGO. S.A. DE C.V.  
+DUFFAND  12196  CENTRO ECATEPEC.  1.32  1.23  315.33  39.09 nd  0.00  -0.25  -3.35  0.86  MCCC  
+PHELPS  S.A. DE C.V.  
+DUFFAND  3/97  CENTRO ECATEPEC,  1.13  0.99  84.09  83.04 nd  0.00  -0.30  ·2.67  0.87  MCCC  
+PHELPS  S.A. DEC.V.  
+DUFFAND  12196  GRUPO SIDEK, S.A. DE  0.16  0.12  78.34  159.57 nd  0.00  -0.70  -12.68  0.61  MCCC  
+PHELPS  c.v.  
+OUFFAND  3/97  GRUPO SIDEK, S.A. DE  0.18  0.13  108.17  231 .60  0.03  0.00  0.46  -12.64  0.55  MCCC  
+PHELPS  c.v.  
+STANDARD&  3/97  SEDEGU  0.99  0.02  165.11  105.70  0.63  0.02  0.06  0.88  0.82  mxCCC  
+POOR'S  
+STANDARD&  6/97  SEDEGU  0.58  0.03  88.96  45.83  0.73  0.04  0.07  0.86  0.80  mxCCC  
+POOR'S  
+STANDARD&  9/97  SEDEGU  0.62  0.05  58.00  31 .39  0.86  0.08  0.08  0.84  0.79  mxCCC  
+POOR'S  
+STANDARD&  3/97  SITUR  0.16  0.01  696.38  306.02  1.74  -0.12  0.78  -5.92  0.35  mxCCC  
+POOR'S  
+rANDARD&• OOR'S  6/97  SITUR  0.17  0.02  285.59  158.92  0.48  -0.07  0.13  -7.76  0.47  mxCCC  
+DUFFAND  12196  SITUR DESARROLLOS  0.11  0.09  138.06  67.75 nd  0.00  -3.15  ~ .44  0.67  MCCC  
+HELPS  TURISTICOS, S.A. DE  
+c.v.  
+DUFFAND  3/97  SITUR DESARROLLOS  0.13  0.12  359.n  114.34  0.01  -0.09  0.86  -7.28  0.49  MCCC  
+PHELPS  TURISTICOS, S.A. DE  
+c.v.  
+DUFFAND  12196  SITURBE. S.A. DE C.V.  0.27  0.25  41 .90  205.98 nd  0.00  -4.26  12.03  0.67  MCCC  
+PHELPS  
+DUFFAND  3/97  SITURBE. S.A. DE C.V.  0.75  0.24  36.07  249.50 nd  4.00  0.76  MCCC  
+PHELPS  375.06  17012.57  
+STANDARD&  6/97  SYNKRO  0.22  0.00  114.12  88.76  -0.39  0.11  -0.17  -2.26  0.66  mxCCC  
+POOR'S  
+STANDARD&  9197  SYNKRO  1.02  0.02  83.05  60.23  -0.03  -0.05  -0.03  0.95  0.70  mxCCC  
+POOR'S  
+STANDARD&  'J/97  OLIMEX  0.61  0.01  855.78  14.09  -0.76  0.08  -0.12  -3.90  0.96  MxCC  
+POOR'S  
+STANDARD&  9/97  OUMEX  0.61  0.01  215.60  9.86  -0.88  0.28  -0.13  -3.43  0.95  mxCC  
+POOR'S  
+STANDARD&  3/97  CANADA  0.37  0.00  75.89  96.32  -1 .86  0.00  -0.20  1.00  ·  mxD  
+POOR'S  16737.19  
+STANDARD&  6/97  CANADA  0.30  0.00  53.29  139.65  ·1 .21  0.00  -0.14  -3.35  0.92  mxO  
+POOR'S  
+STANDARD&  9/97  CANADA  0.25  0.00  24.60  76.82  -3.45  0.00  -0.21  ·2.56  1.04  mxD  
+POOR'S  
+
+49 
+
+
