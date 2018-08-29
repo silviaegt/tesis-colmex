@@ -8,4 +8,4 @@ OCRed and released by the [Daniel Cosío Villegas Library](https://biblioteca.co
 Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 
-[![DOI](https://zenodo.org/badge/145164974.svg)](https://zenodo.org/badge/latestdoi/145164974)
+Second release: [![DOI](https://zenodo.org/badge/145164974.svg)](https://zenodo.org/badge/latestdoi/145164974)
