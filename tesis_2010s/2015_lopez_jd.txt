@@ -1,0 +1,1821 @@
+CENTRO DE ESTUDIOS DEMOGRÁFICOS, URBANOS Y AMBIENTALES
+LA CIUDAD CENTRAL Y LOS NODOS CONCENTRADORES DE EMPLEO EN LA CIUDAD DE MÉXICO
+Tesis presentada por
+JORGE DAMIÁN LÓPEZ VILLAMAR Para optar por el grado de
+Maestro en Estudios Urbanos
+Director GUSTAVO GARZA VILLARREAL
+Lector RAÚL LEMUS PÉREZ MÉXICO, D.F., JULIO DE 2015
+1
+
+AGRADECIMIENTOS
+Llegar al final de esta etapa de mi formación fue posible gracias al apoyo de invaluables personas que me acompañaron a lo largo del camino. A todos, sin excepción, les estoy profundamente agradecido.
+En primer lugar, dedico este trabajo a Susana, mí ahora esposa, por aguantar las pericias de estos años: subidas, bajadas, desveladas, fines de semana encerrados viéndome escribir y rompiéndome la cabeza para poder sacar adelante los trabajos. Te amo.
+Sin lugar a dudas, agradezco y reconozco a mis padres todo el amor y soporte que me brindaron para realizar mis estudios; también a mis hermanos, por estar siempre conmigo, pero sobre todo por las pláticas que me levantaron el ánimo. A mis tías, Tita y Sara, por estar al pendiente de cualquier necesidad. A todos los llevo dentro de mi corazón.
+A mis amigos de tantos años: Fabián mi conciencia y reflexión; Carlos amigo incondicional, gracias; Yazmin dispuesta constantemente a compartir y ayudar; Edgar siempre presente; Lalo distracción garantizada. Gracias a todos.
+Mi paso por El Colegio de México no hubiera sido lo mismo sin aquellos a quienes hoy con gusto considero mis amigos. Marcela, compinche de mil ideas y otros tantos pensamientos compartidos, gracias por toda la ayuda que me diste en estos cuatro semestres, pero sobre todo por las risas. Apolo, gracias por la ayuda incondicional, las bromas y chistes. No puedo dejar de mencionar a los Alejandrinos, Diego y Gorka, compañeros de clase y una que otras discusiones en “el lugar de siempre”.
+Esta tesis no habría podido lograrse sin el caluroso recibimiento, consejos y apoyo de Gustavo Garza Villarreal, mi director de tesis; igualmente, valoro el interés mostrado hacia mi trabajo por parte de Raúl Lemus Pérez, por su guía en cuestiones cartográficas, de datos y comentarios.
+Por último, agradezco al Consejo Nacional de Ciencia y Tecnología (CONACyT) por el financiamiento otorgado a través del programa de maestría. Sin la beca de esta institución hubiera sido imposible realizar este proyecto de vida.
+I
+
+RESUMEN
+El presente trabajo tiene como objetivo identificar los nodos concentradores de empleo en la Ciudad de México para 1994 y 2004 lo cual permite identificar una estructura urbana preliminar de la ciudad. Lo anterior con el fin de identificar y describir a la ciudad central de la Zona Metropolitana de la Ciudad de México. La ciudad central es identificada generalmente como las cuatro delegaciones centrales del Distrito Federal (Cuauhtémoc, Miguel Hidalgo, Benito Juárez y Venustiano Carranza), interesa identificar de forma más precisa los límites físicos y la verdadera morfología de este importante espacio.
+Se utilizaron dos técnicas para delimitar los nodos: el indicador local de asociación espacial bivariada (o LISA por sus siglas en inglés) y la técnica del Doble Umbral. La unidad espacial empleada fue el área geoestadística básica (AGEB) con las variables de densidad de empleo y magnitud de empleo, las cuales fueron generadas a partir del dato de personal ocupado por AGEB del censo económico del Instituto Nacional de Estadística y Geografía.
+Los resultados arrojaron un nodo principal y otros cinco subcentros de empleo. El nodo principal o ciudad central de la Ciudad de México es comprendido por el centro histórico y parte de las delegaciones Cuauhtémoc, Miguel Hidalgo y Benito Juárez, pero también de Coyoacán y Álvaro Obregón, que dan cuenta de la ampliación que ha tenido el centro a través del eje comercial y de servicios de Av. Insurgentes. Al caracterizar este espacio se constató la presencia del “Mercado” (centro de comercio) en el centro histórico junto a la merced y el Distrito Central de Negocios en av. Paseo de la Reforma y Polanco. La Ciudad de México cuenta con diversos distritos debido a la gama de productos y servicios que aglomera, los cuales podemos encontrar dentro de la ciudad central.
+En futuros trabajos sería conveniente realizar este estudio utilizando como dato de referencia al Producto Interno Bruto en lugar del personal ocupado, dado que el PIB permitirá observar las diferencias espaciales en la generación de valor agregado dentro de la ciudad.
+II
+
+INDICE
+INTRODUCCIÓN .................................................................................................... 1
+I. MARCO TEÓRICO: TEORÍAS DE LA LOCALIZACIÓN Y ESTRUCTURA URBANA ................................................................................................................. 8
+MODELOS DE LOCALIZACIÓN DE LAS ACTIVIDADES ECONÓMICAS ....................................... 10 Modelo de utilización de la tierra de Von Thünen..................................................... 11 Teoría de los lugares centrales. ................................................................................ 16 Economías de aglomeración..................................................................................... 18 Localización de las actividades industriales .............................................................. 19 Localización de las actividades comerciales ............................................................. 20 Localización del sector servicios ............................................................................... 21
+LA ESCUELA ECOLOGISTA DE CHICAGO............................................................................ 22 La teoría concéntrica ................................................................................................ 23 La teoría sectorial ..................................................................................................... 24 La teoría de núcleos múltiples .................................................................................. 26
+EL MODELO DE CIUDADES LATINOAMERICANAS ................................................................ 27 II.- LOS NODOS CONCENTRADORES DE EMPLEO DE LA CIUDAD DE MÉXICO ................................................................................................................ 35
+CENTRALIDAD ................................................................................................................ 36 CENTROS URBANOS ....................................................................................................... 38 TRABAJOS PREVIOS........................................................................................................ 42 LOS NODOS CONCENTRADORES DE EMPLEO DE LA CIUDAD DE MÉXICO ............................. 45
+Antecedentes............................................................................................................ 45 Nodos concentradores de empleo ZMCM por AGEB y sector de ocupación............. 49 Metodología .............................................................................................................. 50 Doble Umbral............................................................................................................ 50 El Indicador Local de Asociación Espacial (LISA). .................................................... 53 Empleo ..................................................................................................................... 54 Industria.................................................................................................................... 64 Comercio .................................................................................................................. 65
+III
+
+III.- EL DISTRITO CENTRAL DE LA CIUDAD DE MÉXICO ................................. 75 EL DISTRITO CENTRAL DE NEGOCIOS (DCN) ................................................................... 76 CENTRO DE CIUDADES LATINOAMERICANAS ..................................................................... 79 LA CIUDAD CENTRAL DE LA CIUDAD DE MÉXICO Y SUS CARACTERÍSTICAS .......................... 81 Distribución del empleo en la Ciudad central de la Ciudad de México ...................... 83 Distribución del empleo en manufactura ................................................................... 86 Distribución del empleo en comercio ........................................................................ 86 Distribución del empleo en el sector servicios........................................................... 87
+ANEXOS ............................................................................................................. 103 BIBLIOGRAFÍA ................................................................................................... 126
+Índice de figuras
+Figura I.1 Modelo de Von Thünen ........................................................................ 13 Figura I.2 Modelo de Von Thünen en el ámbito urbano ........................................ 15 Figura I.3 Modelo de Christaller ........................................................................... 17 Figura I.4 Modelo de anillos concéntricos ............................................................ 24 Figura I.5 Modelo Sectorial de Hoyt ..................................................................... 25 Figura I.6 Modelo de Núcleos Múltiples ................................................................ 27 Figura I.7 Modelo de estructura urbana para ciudad latinoamericanas según Griffin y Ford ............................................................................................... 28 Figura I.8 Modelos de estructura urbana para ciudades Latinoamérica ...... ….….30 Figura B.1 I de moran bivariada Personal ocupado
+y densidad en la ZMCM, 1994....….……...........…………………..……………....105 Figura B.2 I de moran bivariada Personal ocupado y densidad en la ZMCM,
+2004………...……....….….…………………..………..…………………..……........107 Índice de cuadros
+IV
+
+Cuadro 2.1 Doble Umbral de la ZMCM para la identificación de los nodos concentradores de empleo con personal ocupado………….….………………….63
+Cuadro 3.1. Centro de la Zona metropolitana de la Ciudad de México: Población, tasa de crecimiento, superficie y densidad media urbana, 1990-2000……….….75
+Cuadro 3.2 Subsectores de acuerdo al SIAC, 2004…….….….…….......................82 Cuadro 3.3 Distribución de las actividades económicas: Manufactura, Comercio y Servicios en la Ciudad Central de la Ciudad de México, 2004......…..…..…...…...84 Cuadro A.1 Lista de las AGEB que pertenecen
+a la ciudad central de la ZMCM………………………………………….………….103 Cuadro C.1 Ciudad Central de la Ciudad de México (CCCM): AGEB según
+personal ocupado en Manufactura y por subsector, 2004………………………108 Cuadro C.2 Ciudad Central de la Ciudad de México (CCCM): AGEB según
+personal ocupado en Comercio y por subsector, 2004……………….………….109 Cuadro C.3 Ciudad Central de la Ciudad de México (CCCM): AGEB según
+personal ocupado en Servicios y por subsector, 2004…………………………..110
+Índice de Mapas
+Mapa II.1 Personal Ocupado en la ZMCM, 1994 biLISA ……………………..…….55 Mapa II.2 Personal Ocupado en la ZMCM, 2004 biLISA …………………..……….56 Mapa II.3 Nodos concentradores de empleo en la ZMCM (Doble umbral), 1994…………………………………………………….59 Mapa II.4 Nodos concentradores de empleo
+en la ZMCM (Doble umbral), 2004 …………………………….……..…………….60
+V
+
+Mapa II.5 Concentración de empleo en la manufactura (Doble umbral), 1994 ………………….……………………….66
+Mapa II.6 Concentración de empleo en la manufactura (Doble umbral), 2004 ………………………………………..….67
+Mapa II.7 Concentración de empleo en el comercio (Doble umbral), 1994 ……………….……………..……………….68
+Mapa II.8 Concentración de empleo en el comercio (Doble umbral), 2004 ……………………………...……………….69
+Mapa II.9 Concentración de empleo en Servicios (Doble umbral), 1994 …………………….………..………………….70
+Mapa II.10 Concentración de empleo en Servicios (Doble umbral), 2004……………………….…………………………72
+Mapa III.1 Ciudad Central Personal Ocupado Total, 2004…………..……………………………………………………………..……….…85
+Mapa IV.1 Ciudad de México una comparación con la propuesta de ciudades Latinoamericanas,2004…….……………………………….. .…………………....…97
+Mapa IV.2 La ciudad central de la ZMCM, 2004 ………………..…….……………100 Mapa B.1 Significancia Personal Ocupado y Densidad en la ZMCM,
+1994………..……………………………………………………………….………….104 Mapa B.2 Significancia Personal Ocupado y Densidad en la ZMCM,
+2004…...…………..………………………………………………………………..….106 Mapa D.1 Ciudad Central Personal Ocupado en la Manufactura, 2004….……...111 Mapa D.2 Ciudad Central Personal Ocupado en la Comercio, 2004 ……......….112 Mapa D.2.1 Ciudad Central Personal Ocupado
+en la Comercio al por mayor, 2004………………..………………………..…..….113
+VI
+
+Mapa D.2.2 Ciudad Central Personal Ocupado en la Comercio al por menor, 2004 ……………..……………………………...….114
+Mapa D.3 Ciudad Central Personal Ocupado en Servicios 2004..........................115 Mapa D.3.1 Ciudad Central Personal Ocupado en Información
+en medios masivos, 2004…..………………………………………………..…..….116 Mapa D.3.2 Ciudad Central Personal Ocupado en Servicios inmobiliarios y de
+alquiler de bienes muebles e intangibles, 2004………………..……………..…..117 Mapa D.3.3 Ciudad Central Personal Ocupado en Servicios profesionales,
+científicos y técnicos, 2004………………………………………………………....118 Mapa D.3.4 Ciudad Central Personal Ocupado en Dirección de corporativos y
+empresas, 2004……………………………………………………………………...119 Mapa D.3.5 Ciudad Central Personal Ocupado en Servicios de apoyo a los
+negocios y manejo de desechos y servicios de remediación, 2004………...…120 Mapa D.3.6 Ciudad Central Personal Ocupado
+en Servicios educativos, 2004………………...…………………………….……...121 Mapa D.3.7 Ciudad Central Personal Ocupado en Servicios de salud y
+de asistencia social, 2004………………………….….…………………………..122 Mapa D.3.8 Ciudad Central Personal Ocupado en Servicios de esparcimiento
+culturales y deportivos, y otros servicios recreativos, 2004…………….……….123 Mapa D.3.9 Ciudad Central Personal Ocupado en Servicios de alojamiento
+temporal y de preparación de alimentos y bebidas, 2004……….……………....124 Mapa D.3.10 Ciudad Central Personal Ocupado en Otros servicios excepto
+actividades del Gobierno, 2004…………………………………………………….125
+VII
+
+INTRODUCCIÓN
+La organización interna de las ciudades ha sido estudiada a lo largo del tiempo. Inicialmente Von Thünen la explicó mediante la interacción entre los costos de producción agrícola, distancia y fertilidad del suelo, lo que permitió establecer diferenciales de precios de la tierra según su distancia a un mercado central o Distrito Central de Negocios (DCN). Después surgieron trabajos importantes sobre las ciudades de la escuela Ecologista de Chicago de autores como Mackenzie, Burgess, Park, Wirth y Hoyt. Mckenzie hizo una analogía entre los procesos sociales y el medio natural para identificar la manera en que se relacionan entre si todas las áreas de la ciudad. Burgess definió como área natural a una unidad territorial cuyas características son el resultado de la interacción de procesos ecológicos y sociales. Park, en 1938, sugirió examinar a la población en términos biológicos porque interactúa con el medio ambiente, con lo cual identifica el concepto de área natural y comunidad que le permiten clasificar distintos grupos sociales y el territorio que ocupan. Hoyt, por su lado, encontró que los cambios en el modo de producción transforman la estructura física y social de la ciudad (Lemus, 2012: 28 -32).
+Trabajos para entender la estructura interna de la ciudad fueron escritos por Duncan y Duncan, Schnore y Winsborough. Los primeros localizaron los hogares a partir de los ingresos y nivel educativo en metrópolis de Estados Unidos, mientras que Schnore analizó la composición interna de las ciudades satélite y los suburbios que se encontraban alrededor de varios centros metropolitanos. Por último, Winsborough clasificó las diferencias entre las unidades administrativas dentro de la ciudad y las comparó con las que se ubicaban en la periferia a través de indicadores como la edad, calidad de la vivienda y distancia al centro.
+En estudios empíricos, Lowestein encontró que la distribución física de “los servicios financieros, seguros y bienes raíces se extienden linealmente a lo largo de la ciudad y consumen más cantidades de suelo en la periferia que en el centro, mientras que el comercio al por menor parece seguir este mismo patrón. La
+1
+
+cantidad de suelo dentro del distrito central de negocios dedicado a este tipo de comercio es igual al resto del área metropolitana”. En cambio, los servicios profesionales se localizan en medio de las áreas urbanas y pueden encontrarse en el DCN (Lowestein, 1963; en Lemus, 2012: 32 - 34).
+Además de lo anterior, se afirma también que en todas las ciudades los centros se configuran como espacios polivalentes y complejos, cargados de valores y significados que los individuos perciben. Ciudadanos, usuarios y planificadores conceden especial importancia al centro de la ciudad y tienden a sublimarlo. La competencia por el uso del suelo de las actividades del sector terciario, sobre todo en actividades de dirección y gestión, da lugar a una transformación del espacio urbano y a la apropiación por ellas de gran parte del parque inmobiliario, que se considera de vital importancia por su situación, valor mercantil y ventajas simbólicas, tanto externas como internas, además de que origina la construcción de rascacielos (Zarate 1991: 99-100).
+La terciarización de las economías urbanas llevó a un éxodo de la manufactura; de acuerdo a Polése, en 1985 la Ciudad de México todavía presentaba un carácter industrial, pero resalta que entre 1975 y 1985 la ciudad perdió 55,000 empleos manufactureros que habrían sido ganados por el sector de servicios al productor (Polese, 1985: 384).
+En la mayor parte de la literatura de la ecología urbana, el área que despertó mayor interés fue el Distrito Central de Negocios (DCN) o CBD por sus siglas en inglés (en esta tesis ciudad central), porque es la que concentra la mayor cantidad de actividades y juega un papel dominante en la estructura urbana.
+Trabajos anteriores que analizaron al DCN clasificando sus funciones económicas dentro del mismo e identificaron su forma urbana, el límite físico y demás (Carol 1960, Bowden 1971, Blummenfield 1975 y Wilder 1985). En el DCN o CBD se tienen los precios más altos del suelo y se localizan las actividades que producen el suficiente beneficio para pagar el elevado alquiler que implica ubicarse en el centro (en Lemus, 2012: 35 y 44). De esta suerte, “Para Bowden
+2
+
+(1971) el DCN tiene funciones especializadas y requiere poco espacio, mientras que según Johnston y Kissling (1971) el DCN contiene establecimientos comerciales que se ordenan por jerarquías y el nivel de ingreso determina la manera en que se consume el suelo, Cardwaller y Clark (1973) encontraron que los diferentes grupos económicos tienen preferencias específicas de localización” (en Lemus, 2012: 131).
+La ciudad central es el punto principal de la ciudad y de su población. Esta contiene una alta concentración y un rango diverso de alto valor, tanto en actividades como en el suelo en sí. En las ciudades capitales, este distrito es distinguible por su centralidad, su accesibilidad y la aglomeración de organizaciones comerciales y del empleo del sector servicios. Su localización y desarrollo normalmente es resultado de las decisiones del sector privado y no del Estado. El DCN crea un espacio donde se perciben los cambios socio-económicos y estructurales de la ciudad. Este centro tiene un gran poder de atracción y los cambios dentro del mismo tienen efectos en otras partes del área urbana.
+Para Anas, Arnott y Small, los subcentros no han eliminado la importancia del DCN, pues aunque el centro y subcentros sean definidos por el mismo criterio, es el DCN el nodo que concentra más empleo, tiene mayor valor del suelo y efecto en la densidad de población en sus alrededores. En el trabajo de Giuliano y Small (1991) el centro tenía el doble de empleados que el que le seguía (en Anas et al., 1998: 1442-1443).
+Garreau (1991) sugiere que algunos subcentros urbanos son entidades independientes del centro de la ciudad; por otro lado, otros autores como Adams, et al. (1996), Savitch et al. (1993) y Musterd et al. (2006), estudian las relaciones de competencia y complementariedad entre el centro y subcentros urbanos, diciendo que la importancia de los subcentros dependen del centro. Igualmente, están interrelacionadas al grado que el crecimiento económico y reputación de un área metropolitana depende de la imagen proyectada por su centro (Garrocho, 2009: 234).
+3
+
+Es necesario definir sus límites para focalizar la generación de información que permitan monitorear la ciudad central, conocer sus tendencias e identificar y anticipar momentos críticos en la trayectoria de la zona, así como evaluar el impacto de programas públicos y de acciones privadas (Garrocho, 2009: 238-240; Lemus, 2012: 88).
+Sobre ello, vale la pena traer a cuenta lo que Garza encontró entre 2003 y 2008 sobre el nodo central, que integrado por las delegaciones Cuauhtémoc, Benito Juárez, Miguel Hidalgo y Venustiano Carranza, de la Zona Metropolitana de la Ciudad de México (ZMCM). Este autor menciona que se elevó su participación en el sector terciario nacional y metropolitano a 18.5 y 50.1%, cuando se observaba una disminución en periodos anteriores. Con lo anterior queda de manifiesto lo importante que es el nodo central dentro de la estructura urbana de la ciudad (Garza, 2012: 16 y 45).
+El objetivo general del trabajo es identificar los nodos concentradores de empleo en la ZMCM a un nivel desagregado por AGEB, lo cual permitirá conocer la morfología de la ciudad. Como objetivos específicos se tiene: 1) Comparar los resultados obtenidos a partir de la aplicación de dos métodos distintos para delimitar los nodos concentradores de empleo y 2) Identificar y describir a la ciudad central de la Ciudad de México para determinar su diferencia respecto al utilizado en otro trabajos (Grajales, 2001; Sobrino, 2006 y Garza, 2012). En ellos suele estar conformado por las delegaciones centrales del Distrito Federal, esto es, Cuauhtémoc, Miguel Hidalgo, Benito Juárez y Venustiano Carranza. Interesa, en síntesis, determinar si es posible delimitarse de forma más precisa y determinar su verdadera morfología.
+A partir de esos objetivos, se formulan las siguientes hipótesis como guía de este trabajo:
+La Ciudad de México, así como la ciudad central de la misma que es comprendida por el centro histórico y parte de las delegaciones Cuauhtémoc,
+4
+
+Miguel Hidalgo y Benito Juárez; tiene una semejanza con el modelo de estructura urbana para ciudades latinoamericanas.
+La ciudad central, la cual incluye al DCN, mantiene su importancia frente a otros nodos concentradores de empleo, concentrando en él la mayor cantidad de empleo del comercio y servicios de la ciudad.
+Para analizar estas hipótesis, se utilizaron dos técnicas distintas, la primera un Análisis Exploratorio de Datos Espaciales bivariado, con un indicador local de asociación espacial bivariada (o LISA por sus siglas en inglés) y la técnica del Doble Umbral.
+El primero permite encontrar clúster de valores altos de dos variables (magnitud de empleo y densidad de empleo por AGEB) que se correlacionan en el espacio entre una observación y sus vecinos para comprobar la contigüidad espacial. Así, LISA nos permite identificar clústeres locales, los cuales son fáciles de interpretar utilizando mapas (Sánchez, 2006: 4-5).
+Para la segunda técnica se establecieron dos umbrales de referencia, uno vinculado a la magnitud de empleo y el otro ligado a la densidad de empleo por AGEB; así la observación que superara los dos umbrales establecidos son consideradas nodos concentradores de empleo (Garrocho y Campos, 2007: 116).
+Se eligieron estos métodos por su facilidad de manejo y su practicidad al momento de analizar los resultados obtenidos a través de mapas, buscando la identificación de los nodos concentradores de empleo.
+Utilizando ambas técnicas fue posible: 1) determinar la evolución de la estructura urbana según la concentración de empleo de 1994 a 2004 de la Ciudad de México; 2) delimitar los nodos concentradores de empleo y la primacía de la ciudad central sobre los demás nodos, y 3) lograr la caracterización de la ciudad central, delimitando dentro del mismo al centro de comercio y al Distrito Central de Negocios.
+5
+
+A lo largo del documento se habla de la Ciudad de México como la zona de estudio, haciendo referencia al Distrito Federal y a los municipios conurbados del Estado de México en 2004, quedando la metrópoli conformada por 57 unidades políticas (Garza, 2012: 12).
+A partir de los objetivos ya mencionados se formó el capitulado para presentar los resultados de la investigación. El documento cuenta con tres capítulos, con el fin de comprender la localización de las actividades económicas, los modelos de estructura urbana, los nodos concentradores de empleo y de la ciudad central.
+El primer capítulo expone las principales teorías de la localización de las actividades economías y de estructura urbana. Por tanto, tuvo como objetivo ofrecer elementos básicos que guiaran al lector a entender lo que se buscaba analizar en el trabajo de investigación; es así como se describió de forma esquemática tanto teorías de localización de actividades económicas como de estructura urbana.
+En los modelos de localización de actividades económicas se retoma el esquema de Von Thünen y la teoría de los lugares centrales, ambas sirven de base para entender las teorías de estructura urbana; del mismo modo se describió lo que se entiende como economías de aglomeración y la localización tanto de las actividades comerciales como las de servicios.
+Por el lado de la estructura urbana se realizó un repaso a la escuela ecologista de Chicago y las diversas teorías que propusieron: la concéntrica, sectorial y de núcleos múltiples; por último se revisó el modelo de estructura urbana de las ciudades latinoamericanas.
+El objetivo del segundo capítulo fue conocer la morfología de la Ciudad de México a partir de identificación de los nodos concentradores de empleo en 1994 y 2004. Incluye una revisión de trabajos similares donde buscan conocer si la ciudad analizada es monocéntrica o policéntrica. Se discutieron las acepciones de los nodos concentradores de empleo o subcentros a partir del concepto de la
+6
+
+policentralidad, según la cual se mantiene la noción de jerarquía de un centro con respecto a un área determinada; entonces es posible establecer relaciones de jerarquía y subordinación o dependencia entre los diversos nodos.
+Para llevar a cabo la identificación de los nodos concentradores de empleo se utilizaron dos técnicas, con personal ocupado del censo económico 1994 y 2004 realizado por el INEGI a nivel sector de actividad y utilizando como unidad de observación al AGEB, doble umbral y el indicador local de asociación espacial.
+En el tercer capítulo se caracterizó al nodo principal de la Ciudad de México como la ciudad central de la misma, observando que la misma se encuentra inserta dentro de tres delegaciones Cuauhtémoc, Miguel Hidalgo y Benito Juárez. Gracias a la utilización de la AGEB como unidad de observación, se logró una delimitación más precisa de la ciudad central, ya que las delegaciones no son homogéneas dentro de ellas en la distribución del empleo. De la misma forma que en el segundo capítulo en este, se revisaron trabajos que delimitan y analizan tanto la ciudad central como al Distrito Central de Negocios.
+Por ultimo cabe mencionar las limitantes que se tuvieron para realizar el trabajo. En primer lugar el tiempo que se tuvo para su realización, esto es, únicamente cuatro meses para hacer la entrega formal de la Tesis completa con fin de cumplir con los requerimientos del Centro. En segundo, no fue posible obtener los datos recientes por AGEB de los del censo económico 2008 por cuestiones administrativas, y menos aún del de 2014 que se encuentran procesándose.
+7
+
+I. MARCO TEÓRICO: TEORÍAS DE LA LOCALIZACIÓN Y ESTRUCTURA URBANA
+Los elementos de la ciudad que configuran la estructura urbana se convierten en mercancías que se intercambian en el mercado en la búsqueda del máximo beneficio, como el suelo, los edificios y las viviendas:
+“(La…) morfología y estructura urbana son reflejo del modo de producción cuyo principal objetivo es asegurar la circulación y acumulación de capitales en un marco de estabilidad política y social que construye sobre relaciones de clase…En este sentido, resulta decisiva la acción de los poderes públicos que atienden el consumo colectivo para el mantenimiento y reproducción de la fuerza laboral” (Zarate, 1991: 55).
+Específicamente, los agentes que construyen los elementos de la ciudad son los promotores inmobiliarios, los poderes públicos, los ciudadanos, el capital financiero y los propietarios del suelo, principalmente, quienes actúan mediante la ley de la oferta y la demanda en función de la competencia del mercado. De los diversos agentes que configuran la ciudad, analizaré el comportamiento locacional de los propietarios de los medios de producción. Las empresas se agrupan en el espacio de forma planificada o espontánea, pero su decisión de ubicarse en ciertas áreas de la ciudad puede explicarse por las ventajas locacionales y relaciones de complementariedad, derivadas de la proximidad espacial de las empresas, sean de la misma o diferente actividad (Zárate, 1991: 57 - 61).
+La planificación urbana imprime un elemento de racionalidad en el crecimiento de las ciudades para evitar daños e inconvenientes de la urbanización espontánea y asegurar la acumulación de beneficios para empresas y habitantes. Los planes de urbanismo configuran las acciones públicas que intervienen en la
+8
+
+construcción del espacio urbano. La apropiación del suelo, edificación, construcción y la creación de infraestructura establecen el orden espacial de los usos de suelo y el orden temporal de la construcción de la ciudad para asegurar la rentabilidad de los recursos. Hay que mencionar que la planeación ha enfrentado diversos contratiempos en la actualidad, debido a que la realidad espacial no se rige por las leyes de la naturaleza, ni de los grandes números, sino por la lógica del beneficio y del mercado, por intereses sociales contrapuestos, por los responsables políticos de las ciudades, desde jefes de estado hasta presidentes municipales; a veces por arquitectos, ingenieros, urbanistas y otros actores (Zárate, 1991: 61-70).
+Lo anterior, según Zárate (1991), imprime cierta irracionalidad a la producción de la ciudad y hace que su construcción no sea resultado solamente de relaciones económicas o cuestiones sociales y políticas, sino una mezcla de las anteriores, de avances tecnológicos, temas de moda y de los contextos donde se está construyendo ciudad.
+Para poder entender la morfología de la ciudad es necesario conocer sus componentes: 1) el emplazamiento geográfico y 2) la situación de sus recursos naturales, que hacen referencia a las condiciones topográficas del espacio físico donde se ubica ya que explican en su mayoría el porqué de la fundación y el desarrollo de la ciudad (Zárate, 1991: 74-76).
+El emplazamiento es el espacio concreto y material donde la ciudad se ubica; a su vez, las características del emplazado tienen relación con su adecuación a las necesidades que justificaron su nacimiento.
+Al otro componente, la situación, Zárate (1991) lo explica como:
+“La situación hace referencia a las condiciones generales del entorno más amplio de la ciudad: ríos, montañas, núcleos de población, vías de comunicación y espacios económicos. Se define como la posición de la ciudad con relación a los grandes conjuntos geográficos, físicos y económicos, en un contexto regional, cuya importancia es
+9
+
+cambiante en función a circunstancias históricas, vicisitudes económicas y azar.” (Zarate, 1991: 76).
+Las diversas situaciones que atraviesan las ciudades pueden ser de carácter de dominación política, económica, estratégico militar o de las rutas comerciales que permiten aprovechar intercambios entre regiones de economías distintas y complementarias. Igualmente pueden existir acciones políticas para el desarrollo de áreas deprimidas, redistribución de la población y ventajas de centralidad. En la actualidad los avances tecnológicos en modos y sistemas de transporte y producción permiten cierta independencia de las ciudades respecto a su entorno inmediato (Zarate, 1991: 76).
+En el presente trabajo, la estructura urbana se define como el entramado que se conforma por la combinación de redes de infraestructura (agua, drenaje, electricidad) vías de comunicación, (transporte y vialidad); la accesibilidad, las actividades de la población y equipamientos (hospitales, escuelas, mercados). Para Ducci (2003: 59) la estructura urbana es el conjunto de elementos físicos destinados a la realización de actividades distintas, la distribución de estos elementos determinan las diferentes zonas en la ciudad diferenciados por el uso de suelo habitacional, industrial, comercial y de oficina, de vialidad y equipamiento. Por el enfoque normativo, la estructura urbana son todos los elementos que se interrelacionan y constituyen la ciudad, elementos tales como el uso de suelo, la vialidad, la vivienda el equipamiento urbano, el transporte, la infraestructura el mobiliario urbano, y demás (Asamblea de Representantes del Distrito Federal, 1996, en Nava 2009) (Nava, 2009: 4).
+MODELOS DE LOCALIZACIÓN DE LAS ACTIVIDADES ECONÓMICAS
+En este primer capítulo se hará una descripción simplificada de las principales teorías de localización espacial de las actividades económicas, con el fin de que orienten el análisis concreto de la Zona Metropolitana de la Ciudad de México. Las
+10
+
+teorías de la localización espacial de las actividades económicas buscan explicar la organización territorial de las empresas e identificar las variables que determinan su localización. Pueden existir diversas razones que intervienen en la ubicación de una empresa, como el hecho de que otras firmas se muevan, la distancia al mercado consumidor potencial y al mercado laboral, entre otras variables.
+Para tratar de sistematizar el fenómeno locacional se han generado diversas teorías y modelos para explicar la complejidad de dicho fenómeno de forma simplificada. Las teorías tienden a estar relacionadas con la teoría económica general que supone un hombre económicamente racional. A continuación examinaremos las más relevantes.
+Modelo de utilización de la tierra de Von Thünen.
+Considerado como una de las primeras aportaciones a la teoría de la localización, Von Thünen utilizó sus conocimientos como agricultor para generar un modelo que explicara la localización de las actividades agrarias. Su modelo se basó en primer lugar en un estado aislado y en la utilización de la tierra basada en el concepto de renta económica, partiendo de que los agentes económicos buscan obtener el máximo beneficio de sus recursos, en este caso, obtener el máximo beneficio posible de la tierra y entonces elegir de acuerdo a determinados usos de suelo. Esta teoría tiene diversos supuestos:
+ Existe un estado aislado, es decir una sola ciudad y su área de influencia agropecuaria.
+ El terreno donde se encuentra es homogéneo.  Existe un solo modo de transporte y los costos son proporcionales a
+la distancia.  Los agricultores de esta ciudad son agentes racionales.
+11
+
+El modelo se formula matemáticamente como una ecuación lineal, en la cual la distancia es la única variable independiente al considerarse que los demás parámetros ya están dados:
+������������ = ������(������ − ������) − ������������������
+Dónde:
+LR= renta por unidad de tierra
+������= producto por unidad de tierra
+������ = precio de venta en el mercado central
+������ = coste de la unidad de producción para la actividad
+������ = coste de transporte por unidad de distancia
+������ = distancia al mercado central
+Al estar en función de la distancia, la rentabilidad económica se relaciona directamente con el transporte y su coste. A partir de ello, Von Thünen esquematiza la distribución espacial de la actividad agrícola según el coste de transporte con una serie de círculos concéntricos, que generaran rentas más bajas mientras más alejadas se encuentran del centro.
+Cuando la rentabilidad por unidad de superficie disminuye al mínimo, se promueve un cambio de cultivo o técnica para disminuir los costos de producción y poder hacer frente a los elevados costos de transporte en las círculos o áreas más alejadas del centro. Así, los círculos próximos a la ciudad corresponderán a las actividades intensivas, aquellas en las que el espacio necesario para producir los bienes y servicios sino el uso especializado de los recursos, y mientras la distancia a la ciudad aumente las actividades pasaran a ser de carácter más extensivo, es decir necesitan de mayor cantidad de recursos en este caso la tierra para producir los bienes.
+12
+
+En el modelo de Von Thünen, el primer círculo está dedicado a cultivos hortícolas y producción de leche; el segundo por el bosque; el tercero, cuarto y quinto para cultivo de cereales disminuyendo el grado de intensidad; mientras que el sexto y último círculo están ocupados por praderas de tipo extensivo (Garcia, 1976: 15).
+Figura I.1 Modelo de Von Thünen
+Fuente: Duch, 1998: 8.
+La Figura I.1 muestra las curvas de renta de los diferentes productos dentro del espacio delimitado. Los diferentes productos tienen distintas pendientes, por lo cual se intersectan, en puntos donde von Thünen define cada círculo concéntrico dependiendo si ofrece una mayor renta. Von Thünen, sin proponérselo, definió el Centro como el eje rector de la producción agrícola y éste sería utilizado en los futuros análisis urbanos.
+Si bien esta teoría está centrada en el uso de suelo agrícola, tanto Von Thünen como Marshall y Ricardo apuntan que el suelo urbano operaba con principios similares a los agrícolas. Si bien una primera diferencia es el uso extensivo del suelo para la agricultura, mientras que en el espacio urbano el uso de suelo es intensivo y la localización de las actividades tiende a ser más puntual (García, 1976: 18-19).
+13
+
+Con la generalización de los conceptos de rendimiento y costo de transporte es posible proyectar un modelo de uso de suelo para un espacio urbano hipotético. Como se puede observar en la Figura I.2 el centro es ocupado por las actividades de oficina y comercios especializados, el segundo círculo sería ocupado por manufactura ligera, almacenes y distribuidoras; seguidos por zonas habitacionales después manufactura pesada y finalmente uso de suelo agrícola. Si bien no se aprecia en ninguna ciudad actual que corresponda a este modelo, si encontramos la existencia de centros en cada una de ellas, donde el precio del suelo es elevado y que normalmente es conocido como el distrito central de negocios, los precios disminuyen mientras exista más distancia al centro (Polese, 1998: 334).
+14
+
+Figura I.2 Modelo de Von Thünen en el ámbito urbano
+Fuente: Polese, 1998 pp: 335. 15
+
+Teoría de los lugares centrales.
+Esta teoría se basa en la centralidad de Von Thünen, Marshall y Ricardo, pero varía en cuanto al uso de un espacio homogéneo en todas direcciones, tanto en características físicas como demográficas, y confirmando la valoración sobre la eficiencia espacial de una estructura de concentraciones productivas equidistantes y de áreas de mercados Hexagonales para cada bien, Christaller propone examinar como los productos y funciones diferentes se articulan en el territorio dando origen una jerarquía espacial. Para lograr lo anterior, Christaller define el alcance como la distancia máxima a la que puede ser vendido un bien. El umbral como el área correspondiente a la cantidad mínima de cada bien producible de forma eficiente. Si el alcance es mayor que el umbral, el producto se producirá. De forma contraria, el bien no será producido. A partir de estas premisas, cada bien se coloca en una escala jerárquica de bienes (Polése, 1998: 302-304).
+En esta jerarquía espacial encontramos bienes de orden superior e inferior, los primeros producidos por una red de centros de orden superior y con áreas de mercado de mayor tamaño que las de orden inferior. Dado lo anterior, las segundas no pueden localizarse en el mismo lugar que las de orden superior, pues habría espacios no atendidos por parte de estos productos; por tanto, existe una red de centros de orden inferior diferentes a la de los productos de orden superior (Polese, 1998: 305).
+August Lösch pretende encontrar la localización de beneficio máximo comparando los costos de producción en diversos lugares y el área de mercado que puede ser controlada en cada una de ellas. Este autor le da un mayor peso al máximo beneficio sobre el costo mínimo, situación preponderante en las teorías antes mencionadas.
+A partir de los trabajos de Christaller y Palander, Lösch elabora un modelo de equilibrio general introduciendo la distancia y a partir del cual determina coordenadas de localización. El autor de esta teoría plantea unos supuestos que
+16
+
+le permiten determinar que las fuerzas competitivas establecen un sistema de localización posible de ordenarse jerárquicamente, más formalizado que el de Christaller, y que se determinan simultáneamente (Duch, 1998: 20-21).
+En la figura I.3 encontramos el proceso de cómo se forman las áreas de mercado hexagonales. En el primer recuadro se encuentran dos empresas con mucho espacio por cubrir, lo cual permite la entrada al mercado de más empresas, como ocurre en el segundo recuadro, donde buscan abarcar todo el espacio posible sin competir entre ellas. Aun así existe espacio del mercado sin atender, por lo que las empresas compartirán ciertas áreas de mercado en la búsqueda de cubrir al máximo el mismo recuadro c). Los consumidores que se encuentran en las áreas cubiertas por 2 o más empresas buscarán abastecerse del que se encuentre a menos distancia, para minimizar los costos de transporte. Por último, la formación de áreas hexagonales se da a partir de la sobre posición de las áreas circulares originales (Duch, 1998: 21).
+Figura I.3 Modelo de Christaller
+Fuente: Duch, 1998: 21.
+17
+
+En cuanto a la teoría de los lugares centrales, encontramos que el modelo de Lösch describe mejor el paisaje urbano donde el sector industrial también desarrolla un papel importante, mientras que el de Christaller se encuentra enfocado principalmente en centros de producción de servicios.
+Economías de aglomeración
+Como ya se ha revisado, uno de los elementos fundamentales para entender por qué existe una ciudad central es que la actividad económica tiende a concentrarse espacialmente para obtener diversos beneficios. Si no existieran estos beneficios o razones para que las empresas decidieran concentrarse y suponiendo que los factores de producción fueran totalmente móviles y que la materia prima se encuentra distribuido homogéneamente en el territorio, la localización de las empresas sería más bien difusa, con el fin de satisfacer solamente la demanda local (Zarate, 1991: 160).
+La existencia de economías de escala externas generan patrones de localización como la aglomeración de empresas, es decir, una concentración espacial de la actividad y de los factores productivos. Esta concentración es la que dará pie a la los centros concentradores de empleo.
+Las economías de aglomeración suelen estar divididas en economías de localización y en economías de urbanización. Las primeras son propias de una industria o sector pero externas a las empresas, las economías de urbanización son externas tanto de la empresa como de la industria pero internas al territorio. Las economías de localización están asociadas con la especialización que se genera en la industria al tener varias empresas localizadas de forma próxima, mientras que las segundas son causadas por la interacción de múltiples actividades efectuadas en dicha aglomeración. Mientras las economías de localización pueden derivarse de la especialización intraindustrial, las economías
+18
+
+de urbanización suelen surgir debido a la infraestructura y el tamaño del mercado (Polese, 1998: 92-100).
+Marshall expuso tres motivos por los que la aglomeración de empresas en un determinado lugar aporta ventajas a estas sobre las que no se encuentran en ésta. Las empresas aglomeradas obtienen ciertos beneficios de economías externas, ya sea en costos de transacción o transporte, como gracias a la derrama tecnología. De acuerdo a Duch, en la literatura la concentración industrial es el resultado de la interacción de los rendimientos decrecientes, los costos de transporte y la demanda, mientras que las fuentes de economías a para Marshall son el mercado de trabajo conjunto, ventajas en el aprovisionamiento de bienes intermedios y las externalidades tecnológicas (Duch, 1998: 50).
+Localización de las actividades industriales
+En el caso de las actividades industriales, al ser nuestro estudio de la ciudad central se hará mención de las razones por las cuales no suelen ubicarse en zonas centrales de las ciudades (Polese, 1998: 338-339).
+ La industria necesita de mucho espacio tanto para la fabricación de los bienes, como para su almacenaje. Por lo tanto, el alto precio del suelo en el centro orilla a las firmas a buscar una ubicación en zonas alejadas de este punto y donde el precio del suelo sea más barato.
+ Para el transporte de la mercancía necesitan de vías de transporte que reduzcan costos, por lo que el congestionamiento propio del centro es una razón que lo lleva a localizarse en las periferias.
+ Por lo general, un importante volumen de su producción tiende a exportarse a otras regiones, por lo cual no necesitan estar tan cerca del centro como otras actividades económicas.
+19
+
+Localización de las actividades comerciales
+Hasta ahora hemos hablado principalmente de la localización de actividades industriales, si bien los modelos pueden ajustarse a las diferentes actividades y han sido utilizados para el sector de los servicios. En este apartado se introducen las actividades comerciales, que están más relacionadas con el distrito central de negocios, cuyo análisis es el objetivo central de esta tesis.
+El comercio es la actividad económica que se encarga de la distribución de los bienes y servicios, por esto debe localizarse en un nodo donde le sea factible realizar esta función. Factores como el tamaño del mercado, el nivel de renta, la accesibilidad y transporte son esenciales para el comercio. Por lo anterior encontramos empresas de este sector ubicándose en las ciudades.
+Las teorías sobre la estructura comercial urbana se dividen en dos:
+ Teorías que analizan la distribución de centros comerciales en jerarquía, como vimos con Christaller, y estudios sobre el comercio minorista intraurbano de Rolph, Proudfoot y Ratclidd y la teoría de las actividades terciarias de Berry y Garrison. Rolph estableció una jerarquía de centros comerciales en cinco niveles: zona de actividad central, subcentros minoristas, calles de ordenación lineal, grupos vecinales de servicio y empresas no concentradas; mientras que Proudfoot las nombraba como: zona comercial del CBD, centros de negocios externos, ejes comerciales principales, calles comerciales de barrio y tiendas aisladas.
+ Teorías que estudia la organización de los lugares centrales a lo lardo de un continuo y no de modo jerarquizado. Rushton, perteneciente a esta línea, demostró que también es posible un sistema que produzca un continuo de lugares centrales intraurbanos, dado que el consumidor no tiene que ir siempre al comercio más cercano (Sergelles, J. A., 2013: 25).
+20
+
+Mientras más especializado sea el comercio y más necesite un área de mercado importante, la empresa buscará situarse en el área comercial de la ciudad. Así en medida que esta área es el corazón comercial de la ciudad, el centro es el equivalente a un lugar central de la mayor jerarquía. Es el centro donde se encuentran grandes almacenes y comercios más especializados, al igual que otros comercios comunes como cafeterías, restaurantes e incluso tiendas pequeñas. Recordando que en la teoría del lugar central, el lugar con la jerarquía más alta ofrece un amplio abanico de bienes y servicios, pero con la salvedad de que es el único que ofrece bienes y servicios de alto rango (Polese, 1998: 336).
+Las actividades se distribuyen de forma jerárquica en la ciudad, por lo que se forman sub centros comerciales de diferentes tamaños. Si al primero lo llamamos centro de la ciudad, al siguiente nivel puede ser un (sub) centro de barrio y al siguiente un sub centro regional. Estos sub centros tienen una distribución espacial en función a la demanda, población y poder de compra. Así las grandes plazas comerciales suelen encontrarse en los suburbios o distancias importantes del centro. Solo los comercios cuyo beneficio es muy elevado son los que se ubicaran en el centro.
+Localización del sector servicios
+En la bibliografía especializada el Distrito Central de Negocios (o DCN) tiende a confundirse con la forma en que se designa al centro de negocios de una ciudad, por lo que comúnmente encontramos que los términos DCN, centro de negocios y centro son utilizados como sinónimos. El sector servicios es la principal base económica de las áreas metropolitanas; cálculos de cocientes de localización realizados por Polese (1998: 342) para Montreal y la Ciudad de México sugieren que los servicios a las empresas son los que se encuentran concentrados en el centro. Este autor encuentra que son las funciones centrales, privadas o públicas
+21
+
+las que representan la mayoría del empleo del centro, también la hotelería y restaurantes.
+Actividades culturales o instituciones académicas o de salud suelen tener un poder de atracción mayor y que refuerzan al centro como principal lugar central de la zona. Habrá que recordar que la Universidad Nacional Autónoma de México se ubicaba en el centro de la ciudad antes de mudarse al sur de la ciudad, lo cual conllevó una expansión urbana a esa zona y creación de un nuevo punto concentrador de empleo.
+LA ESCUELA ECOLOGISTA DE CHICAGO
+Sociólogos urbanos de la Escuela de Chicago, como E. W. Burgess, R. D. Mckenzie y Park, fueron los primeros en elaborar una teoría interpretativa de la estructura urbana. Estos autores realizaron una aproximación Darwiniana de la ciudad, aplicando a las comunidades humanas planteamientos procedentes de la biología, botánica y zoología, que enfatizan la interdependencia de las especies, así como la relación de cada clase de individuos en su entorno. Park señala que la sociedad humana se organiza en un nivel natural y en otro cultural (Zarate, 1991: 151).
+Desde esta óptica, la ciudad es un espacio donde los comportamientos individuales y la organización de las sociedades se rigen por “la lucha por sobrevivir”. Al mismo tiempo, la diferenciación del espacio urbano, las distintas áreas residenciales de distintas características, se explican por conceptos ecológicos, de competencia impersonal, dominación, invasión-sucesión, áreas naturales, etc.
+La competencia se expresa en la ciudad a través de las relaciones económicas que se establecen entre personas, grupos de población y diferentes usos de suelo, que pugnan por conseguir una localización que les permita obtener
+22
+
+mayores ventajas y beneficios. La dominación se manifiesta por las posiciones de privilegio de ciertos grupos de personas frente a los demás, como el DCN o centro es el área dominante en la ciudad, por los altos precios de suelo, por el valor simbólico, por la concentración de actividades económicas (Zarate, 1991: 152).
+Dentro de esta escuela surgieron teorías como la concéntrica, la sectorial y la de núcleos múltiples, las cuales se revisaran a continuación.
+La teoría concéntrica
+Burgess formula esta teoría a partir de los estudios de Von Thünen. Según este enfoque, cualquier localidad se extiende radialmente desde su centro para formar zonas concéntricas y mientras exista una mayor distancia al centro se reducirá la accesibilidad, la renta y las densidades. El uso de suelo tomará las siguientes formas hacia fuera: en la primera zona se encuentra el centro o DCN, la segunda es una zona de transición, la tercera donde se localizan las fábricas y viviendas de bajos ingresos, mientras que en la cuarta zona se ubican las viviendas de ingresos elevados y finalmente la última zona como un área periférica (Grajales, 2001: 8).
+Este modelo fue duramente criticado por su falta de universalidad y anacronismo. Castells lo critica por no haber mencionado la especificidad geografía y contextual del modelo. Schnore demostró la falta de universalidad en el modelo al hacer un estudio sobre estructuras urbanas de las ciudades latinoamericanas y encontrar que las áreas residenciales de mayor rango correspondían a zonas centrales y las de menor rango a la periferia. Un cambio que se da en la ciudad actual frente a la ciudad estudiada por Burgess es la pérdida relativa de peso del centro frente a los nuevos centros de actividad o sub centros (Zarate, 1991: 155).
+23
+
+Figura I.4 Modelo de anillos concéntricos
+Fuente: Buzai (2014: 68)
+La teoría concéntrica ha quedado superada en la actualidad ya que no explica la estructura de las grandes ciudades donde la ciudad monocéntrica no pudo explicar las nuevas concentraciones de población en la periferia debido al crecimiento de las ciudades, el aumento en la población y la expansión de la mancha urbana. La importancia de este modelo se debe a razones como que la ciudad concéntrica fue la forma urbana dominante durante los comienzos del siglo XX, ciudades pequeñas y medianas presentan una estructura monocéntrica, este modelo es la base para entender el de la ciudad policéntrica y existen características similares entre ambos modelos.
+La teoría sectorial
+Esta teoría fue elaborada por Homer Hoyt, quien esquematiza una estratificación basada en sectores de círculo convergentes al centro. Hoyt sostiene que los contrastes de los usos de suelo en el centro, se perpetúan hacia el exterior y se disponen a lo largo de las vías principales. Las bases de esta teoría son
+24
+
+nuevamente Von Thünen y Hurd, quien justificó el crecimiento axial de la ciudad y el valor de uso de suelo a través de las vías de transporte (Zarate, 1991: 156).
+Hoyt parte de planteamientos ecológicos utilizados en la teoría concéntrica, pero diferencia la estructura interna de la ciudad de acuerdo a los distintos rangos sociales de las áreas residenciales, donde las de mayor rango se ubican en la periferia de la ciudad y alrededor de ellas y en forma de sectores se ubican las de menor rango, siendo la de nivel social bajo la más cercana al centro.
+Dentro de esta teoría es importante conocer los factores que definen la localización de las áreas residenciales y de su expansión, como son: la atracción que generan sobre estas áreas el DCN, así como otros centros comerciales y de servicios; la accesibilidad, representada por líneas de transporte; calidad ambiental como ríos, lagos, siempre que están no se encuentren ya ocupadas por la industria (Zarate, 1991: 157).
+Esta teoría recibió las mismas críticas que la teoría de zonas concéntricas por la falta de universalidad, anacronismo y no tener en cuenta los factores sociales y culturales que intervienen en la formación creación y crecimiento de la ciudad (Zarate, 1991: 158).
+Figura I.5 Modelo Sectorial de Hoyt
+Fuente: Buzai (2014: 71)
+25
+
+La teoría de núcleos múltiples
+Harris y Ullman elaboraron una teoría en la cual se afirma que los diferentes usos de suelo se disponen alrededor de distintos núcleos distanciados entre ellos y no de un punto central, por lo cual las ciudades tienen una estructura celular, cuyo origen se debe a diversos factores:
+ Las actividades económicas tienen diferentes necesidades y exigencias de localización: el comercio y servicio se concentran en los lugares de máxima accesibilidad para la ciudad; las fábricas, lugares donde puedan contar con amplios espacios y proximidad a modos de transporte para exportar sus bienes.
+ Actividades semejantes tienden a agruparse y así obtener economías de aglomeración.
+ Las actividades que se perjudican entre ellas buscan distanciarse, con el fin de no tener des-economías de aglomeración. Las residencias de mayor nivel social no se ubicarán cerca de la industria.
+ La mayoría de las actividades no pueden ocupar los lugares más accesibles y deseables de la ciudad por los altos costos que tiene el suelo en estas áreas. Por ejemplo, para grandes centros comerciales que necesitan grandes estacionamientos no es costeable ubicarse en el centro de la ciudad.
+Estos cuatro factores en buena medida son los que explican el proceso de poli centralidad de una ciudad. Para Harris y Ullman, el número de núcleos es variable, resulta de la evolución histórica de cada ciudad y de la forma en que los factores antes mencionados se combinan. La ciudad más grande, la más numerosa y especializada es la nuclear (DCN), mientras que los demás (sub)centros son consecuencia del desbordamiento de actividades localizadas en el centro. En la actualidad los (sub)centros crecen en torno a focos de ciertas
+26
+
+actividades: aeropuertos, centros comerciales, zonas industriales periféricas (Nava, 2009; 10-11 y Zarate, 1991: 158).
+Figura I.6 Modelo de Núcleos múltiples
+Fuente: Buzai (2014: 74) La configuración intraurbana de núcleos múltiples se estructura en usos de suelo que se asocian en base a sus compatibilidades. (1) CBD, (2) Industria liviana, (3) Residencial de clase baja, (4) Residencial de clase media, (5) Residencial de clase alta, (6) Industria pesada, (7) Subcentro comercial periférico, (8) Residencial suburbano e (9) Industria suburbano.
+EL MODELO DE CIUDADES LATINOAMERICANAS
+En 1980 Ernest Griffin y Larry R. Ford desarrollaron un modelo de estructura urbana específico para las ciudades latinoamericanas, caracterizado por un sector élite dominante y una espina dorsal comercial, que constituye una respuesta a la limitada disponibilidad de extensión de los servicios urbanos, así como para el control del alto valor del suelo y la incapacidad de acomodar el inminente crecimiento de la ciudad. (Grajales, 2001: 17).
+27
+
+Figura I.7 Modelo de la ciudad de América Latina según Griffin y Ford
+Fuente: Lemus (2012: 55)
+Este modelo mantiene la forma circular de modelo concéntrico constituido por (Grajales, 2001):
+ En el centro se distingue la parte tradicional de la moderna,  en la periferia del sector elite se incorpora un centro comercial y de
+negocios, en el extremo de un eje comercial que lo conecta con el DCN,  el sector de la manufactura corre a lo largo de una carretera o vía férrea, es
+independiente de la distribución del sector comercial y termina en una zona suburbana con espacio suficiente para grandes fábricas y almacenes,  hay un anillo periférico que comunica al centro comercial y al zona industrial,  zonas habitacionales de nivel medio aprovechan el acceso, status y protección de localizarse lo más próximo a las zonas de nivel socioeconómico alto,
+28
+
+ zona consolidada que rodea al DCN y una zona de gentrificación, el cual es un rescate de los centros históricos por su riqueza cultural.
+Ford reconoce que las ciudades latinoamericanas se caracterizan por el uso de suelo mixto, pero al ser un modelo que busca simplificar la realidad no lo toma en cuenta en su representación gráfica (Grajales, 2001: 18).
+Por otro lado, Hardoy desarrolla un modelo descriptivo de ciudad sudamericana, en la cual propone que existen cuatro fases comunes: la ciudad colonial, la ciudad republicana, la ciudad de la primera fase industrial y la ciudad industrial. Este modelo, de igual forma que el anterior, parte de los círculos concéntricos que se expanden alrededor del centro. Los sectores decrecen en población, ingreso y número de edificaciones a medida que la distancia al centro aumenta. Hardoy argumenta que los cambios en el uso de suelo y en la estructura social de cada sector fueron reemplazados por usos discrepantes y por la heterogeneidad, lo cual hace que el modelo de sectores y zonas se vuelva confuso (Nava, 2009: 9).
+Borsdorf, Bähr y Janoschka llegaron a un modelo de desarrollo estructural de las ciudades latinoamericanas, donde incorporan nuevas tendencias a las ciudades latinoamericanas y el cual toma en cuenta factores de la transformación económica y la globalización que modifican la estructura urbana (Borsdorf, 2003: 38).
+29
+
+Figura I.8 Modelos de estructura urbana para ciudades latinoamericanas
+Fuente: Buzai (2014: 103)
+La Figura I.8 muestra esquemas estructurales generales de la ciudad latinoamericana, situadas en fases de urbanización, como lo son: la colonial (1820), la primera fase de urbanización influida por los europeos (1920), la segunda fase de urbanización marcada por el éxodo rural (1970) y la migración interna y la ciudad contemporánea (2000). Etapas en la cual la ciudad pasó de un cuerpo compacto a perímetro sectorial, de un organismo polarizado a uno segmentado. En ella se identifican elementos socio-espaciales (distribución de las clases sociales) y económicos (industria, infraestructura de comercio y servicios, transito), así como otros elementos de desarrollo urbano como la vivienda social. La intensificación de la segregación socio-espacial a través de los barrios cerrados (Borsdorf, 2003: 39).
+Más adelante, en otra parte del trabajo, se explican las etapas por las cuales pasa el desarrollo estructural de las ciudades latinoamericanas.
+30
+
+En la época colonial (ciudad compacta), según Borsdorf (2003:), la localización fundación y planificación de las ciudades en las colonias hispanoamericanas estaban reglamentadas por las “Ordenanzas de Descubrimiento y Población”. Las capitales fueron ubicadas en zonas que tuvieran climas sanos y se ubicaran en el centro de sus regiones administrativas. La plaza mayor, o anteriormente conocida como plaza de armas, constituía el centro de la ciudad y era la estructura clave para la red de calles urbanas. La plaza actuaba como el núcleo de la vida social, por lo cual la posición social de los ciudadanos estaba determinada por la distancia de su residencia a la plaza mayor.
+Cerca de la plaza de encontraba la aristocracia y el siguiente circulo estaba ocupado por la clase media, comerciante y artesanos, por lo que era aquí donde se encontraba el mercado municipal; mientras que en el último circulo o periferia vivían los indios y mestizos.
+Las condiciones básicas de la formación de la ciudad colonial fueron su orientación hacia un sólo centro, a través de un desarrollo lento, causado por el crecimiento natural, una orientación a la economía colonial basada en la explotación de los recursos naturales y una sociedad pre-industrial colonial (Borsdorf, 2003: 39-40).
+La primera fase de rápida urbanización (ciudad sectorial). Debido al cambio político-económico derivado de la independencia obtenida por las colonias españolas hubo una reestructuración de las ciudades tanto en la estructura social como en la económica. Se importaron modas urbanísticas como el boulevard, la alameda o paseo.
+En esta época la mayor diferencia en la estructura espacial fue la diferencia sectorial. En el modelo este principio evidencia el crecimiento de los sectores de la clase alta que se ubicaban principalmente en el boulevard principal y el desarrollo industrial cercano a vías férreas. Este desarrollo sectorial transforma la estructura circular de la ciudad colonial. En este proceso de expansión lineal el centro pasa a ser de un centro administrativo a un centro comercial, el crecimiento de los barrios
+31
+
+altos en forma lineal con orientación a amplios paseos o alamedas y al sector ferroviario (Borsdorf, 2003: 41).
+La segunda fase de rápida urbanización (la ciudad polarizada). El objetivo de América Latina “del desarrollo hacia fuera” fue desplazado por un nuevo paradigma, “el desarrollo hacia adentro” o la política económica conocida como sustitución de importaciones. La industrialización alrededor de las vías férreas y las autopistas reforzaron el crecimiento de algunos sectores. Por lo cual los barrios de clase baja y grupos marginales se expandieron en el centro en estructuras en forma de pasaje, conocidas en México como “vecindad”.
+Al mismo tiempo, en las periferias nacieron los barrios marginales o villas miseria, localizadas también en lotes baldíos. De forma paralela fueron construidas viviendas de tipo social en la periferia urbana. Los ricos por su lado se alejaban del centro a barrios exclusivos con calles amplias y extensas áreas verdes. Al final de esta etapa nacen los centros comerciales, los country clubs, torres de departamentos, así como también se comenzaron a cerrar calles con cercas o barreras de concreto. Lo anterior llevo a una polarización de las clases sociales más marcada (Borsdorf, 2003: 41-42).
+La fase más reciente del desarrollo urbano (la ciudad fragmentada). En esta etapa se mantienen tanto la tendencia sector-lineal como el crecimiento celular. El ferrocarril y las autopistas perdieron importancia frente a las nuevas autopistas intraurbanas, modernizadas y ampliadas con capital privado, las cuales facilitaron la aceleración del tránsito y las zonas periféricas y periurbanas volvieron a ser atractivas para las clases medias y altas. En esta etapa, la estructura de consumo en el centro urbano perdió su importancia predominante frente a los malls o centros comerciales, los cuales hoy en día se encuentran dispersos a lo largo del perímetro urbano.
+En el modelo, la fragmentación esta simbolizada por la libre distribución de las zonas industriales, por la localización de los centros comerciales a lo largo y ancho de la ciudad, la orientación de las autopistas intraurbanas y aeropuertos. A
+32
+
+la distribución de las zonas residenciales de las distintas clases sociales (Borsdorf, 2003: 42-43).
+En los modelos de localización de actividades económicas se retomó el modelo de la utilización de la tierra de Von Thünen, debido a que tanto la ciudad como el campo tratan de modelos de uso del suelo concebidos para explicar por qué se destinan los terrenos a distintas funciones. Las distintas actividades económicas compiten por el espacio. Son cuestiones como la densidad y la sensibilidad a los costos de transporte los que fijan los niveles relativos a la demanda de terrenos en la ciudad.
+En cuanto a los modelos de estructura urbana, se concluyó que el modelo concéntrico no toma en cuenta las características físicas y geográficas del espacio, pues la infraestructura vial genera una morfología distinta en las urbes, así como por su falta de universalidad para poder ser aplicada en todas las ciudades. Posteriormente se le agrega el factor de las vialidades justificando el crecimiento axial de las ciudades sobre estos ejes.
+Hoyt agregaría el factor de las vialidades, justificando el crecimiento axial de las ciudades sobre estos ejes; sin embargo, en la teoría sectorial recibió críticas similares por su falta de universalidad, anacronismo y no tomar en cuenta los factores sociales y culturales que intervienen en la formación y crecimiento de las ciudades, aunque con todo, su propuesta ofrece alternativas para entender el patrón de crecimiento diferenciado dentro de las ciudades.
+Por su parte, la teoría de núcleos múltiples establece que el crecimiento urbano ocurre en diversos núcleos; en el caso de esta investigación, por tratarse de los nodos concentradores de empleo, se plantea que las grandes ciudades, como la Ciudad de México, tienen una estructura celular, con un centro más grande y especializado, que se convierte en una ciudad central. Este enfoque ofrece múltiples factores para tener un acercamiento más fiel a la realidad que los modelos anteriores, pues toma en cuenta rubros como la influencia histórica, la accesibilidad y las necesidades de las diversas fuerzas económicas.
+33
+
+Por último, el modelo de las ciudades latinoamericanas propuesto por Ford y Griffin, trabajado por Borsdorf, Janoschka y Buzai, reconoce el uso mixto del suelo en las ciudades, aunque no lo representan por considerarlo complejo, aunque básicamente utilizan el esquema de núcleos múltiples. Este modelo es quizá el que mejor se adapte a la morfología de la Ciudad de México.
+Para el caso de este trabajo, la Ciudad de México, es el modelo de las ciudades latinoamericanas con el que se espera encontrar semejanzas, principalmente por la creencia de que existe un centro expandido o con una columna comercial que lleve a un centro comercial.
+Tanto en las teorías de localización como en los modelos de estructura urbana es central la presencia de un centro, desde el cual se formulan los patrones de localización de las actividades y la morfología de la ciudad. Todos parten de la idea de Von Thünen sobre el dominio de un mercado central y su capacidad de influir en la distribución del suelo para las distintas actividades económicas alrededor del centro. Es por eso que es del interés de este trabajo delimitar la ciudad central de la ZMCM.
+34
+
+II.- LOS NODOS CONCENTRADORES DE EMPLEO DE LA CIUDAD DE MÉXICO
+Los cambios en el patrón de urbanización de México se han debido en buena parte a las transformaciones que ha sufrido la economía Mexicana. Estos cambios han propiciado que la distribución territorial de la población y de sus actividades sea diferente con el paso del tiempo.
+La Zona Metropolitana de la Ciudad de México (ZMCM) ha sido objeto de diferentes delimitaciones, a partir de diferentes criterios y procedimientos como los utilizados por el INEGI, posteriormente con colaboración de SEDESOL y del CONAPO, con un análisis cartográfico de área urbana de la ciudad, hasta aplicación de análisis multivariado de un conjunto de indicadores que dan cuenta del carácter urbano de las delegaciones y municipios, e indirectamente de la interdependencia de estos con la ciudad central, junto a criterios de contigüidad o conurbación (Unikel et al, 1976) o trabajos como el de Partida y Anzaldo (2004) que privilegian el criterio de conurbación física e incorporación de municipios no continuos pero que presentan un alto grado de integración funcional con los municipios centrales o la propuesta por Cruz y Garza a partir del PIB. En este trabajo se hace uso de la delimitación de la Zona metropolitana de la Ciudad de México propuesta por la Cruz y Garza (2014:10).
+La concentración industrial y de servicios, durante la sustitución de importaciones representó importantes ventajas comparativas para la capital del país frente a los otros estados de México, convirtiéndolo en el principal receptor de población y por lo tanto de crecimiento urbano, crisis posteriores originaron un cambio en la demografía de la zona. De acuerdo a los censo de población la ZMCM los habitantes incrementaron de forma importante en los últimos 60 años, en 1950 habitaban esta zona menos de 3 millones de habitantes las cuales pasaron a ser 8.7 millones en 1970, de 1980 el Distrito Federal y los 27
+35
+
+municipios conurbados del estado de México contaban con 12.8 millones pasaron 15.5 millones en 1990, el crecimiento llego en el 2000 a los 18.4 millones de habitantes constituido por 16 delegaciones del Distrito Federal y 15 municipios conurbados del Estado de México (Cruz y Garza, 2014: 10).
+CENTRALIDAD
+El principal concepto en este tema es el de la centralidad que se define como el efecto a la tendencia de los humanos a confluir a determinadas localizaciones para satisfacer diversos intereses como el trabajo, recreación, actividades económicas, educaciones u otras funciones sociales o económicas. Para Aguilar Nery la centralidad es concebida como una historia de las intervenciones espaciales, como políticas de uso del espacio urbano. (Nava, 2009: 13).
+El principio de centralidad indica que las relaciones de intercambio entre agentes económicos dan origen a un lugar central que buscan definir un lugar donde llevar a cabo la producción en un espacio. En un sentido geográfico a la centralidad como el lugar es el centro geométrico en el espacio y en el sentido de centralización como de agrupamiento de la producción en un lugar. La decisión de si el bien será producido de forma centralizada o dispersa será el resultado de dos fuerzas que pueden ser opuestas, los costos de transporte y las economías de escala. El mercado y espacio forman parte de la misma realidad, el espacio significa costos de transporte. Por lo que podemos decir que existirá una producción centralizada en un área si la demanda es suficiente para que una empresa pueda reducir sus costos en relación con las demás (Polése, 1998: 6465).
+La centralidad geográfica tiene que ver directamente con la reducción de los desplazamientos de los agentes económicos para obtener un bien o un servicio. Como menciona Polése (1998: 71-74) el reagrupamiento de compras y transacciones se traducen en una ganancia de productividad. La concentración de
+36
+
+establecimientos en el espacio permite la minimización de los desplazamientos y, por ende, una mayor productividad para las empresas; mientras que para el consumidor implica una forma de economía de escala, gracias a que puede resolver distintos números de asuntos en un mismo viaje.
+La centralidad lleva consigo la idea de la relación de un lugar de mayor importancia con un área de influencia u otros puntos de menor jerarquía. Bird (1977: 1-2) ofrece algunos argumentos relacionados con la centralidad:
+1. La idea de un “no centro” del que parte el esquema de centroperiferia desarrollada en los modelos monocentricos. Por la razón de comparar polos opuestos, un centro con un no centro, puede llevar a hallazgos parciales dentro del problema de centralidad dada la subordinación de un centro respecto a otro.
+2. La comparación entre lugares, parte de un proceso cognitivo y produce la variedad y el orden espacial dado que los centros en el mundo real, reflejan una necesidad por los centros en el mundo interior. Esto lo relaciona con los mapas mentales sobre el concepto construido y ordenado a partir de la realidad, que permite su reconocimiento y manejo en la vida cotidiana.
+3. La economía regional requiere puntos centralizados externos para el intercambio regional e internacional cuando las regiones son concebidas como sistemas abiertos en tanto que los centros urbanos, son sistemas de complejidad organizada y pueden ser analizados mediante teoría general de sistemas.
+De acuerdo a lo anterior, la centralidad puede verse a partir del análisis del territorio (centro - periferia), procesos mentales (mapas cognitivos) y sistemas económicos (teoría general de sistemas). A este tipo de esquemas se asocian los conceptos de lugar central, área de influencia, jerarquía urbana y nodos que también se relacionan con la policentralidad, que expresan la idea de una relación de intercambio (Nava, 2009: 14-15).
+37
+
+Bajo lo anterior podemos asumir que detrás del concepto de centralidad viene implícita la idea de relación entre un punto con respecto a un área de influencia u otros puntos. Del cual en este trabajo tomaremos la diferencia que existe entre los diversos nodos concentradores de empleo en la Ciudad de México.
+CENTROS URBANOS
+Cuando pensamos en el centro, en este caso el de la Ciudad de México, pensamos en la zona más antigua, en torno a la catedral o el zócalo, o, por otro lado, podemos tener en nuestra mente la zona más importante donde se localizan las actividades de diversos sectores. En términos normativos un centro urbano se define como el núcleo principal de atracción dentro del área urbana, caracterizado por la presencia de instituciones de gobierno, la administración y los servicios públicos, así como actividades comerciales, financieras, sociales y culturales de primer orden o altamente especializadas. Esto es, en el centro se concentran la mayor diversidad e intensidad de actividades que dan servicio a la ciudad y su área de influencia (Nava, 2009: 24-25)
+En todas las ciudades, los centros se configuran como espacios polivalentes y complejos, cargados de valores y significados. El centro es definido por su accesibilidad con relación al conjunto de la ciudad y a su área de influencia; por su carácter tridimensional, debido al aprovechamiento intensivo del suelo; por el predominio de funciones centrales, entre las que destacan las de gestión, dirección y comercio que articulan las relaciones entre las actividades productivas, y las culturales y de diversión. Con el espíritu de la Carta de Atenas que inspiro la creación de espacios nuevos durante dos o tres generaciones, el centro ha sido interpretado como el corazón, el cerebro, el pulmón, el nervio de la vida urbana; sus calles eran descritas como las arterias y las empresas, como células indispensables para el funcionamiento del conjunto. De esta forma se imponía al
+38
+
+centro como el motivo de intervención, a través de la reestructuración, la restauración, la renovación y la rehabilitación (Zarate, 1991: 98-99).
+Para Castells (1997: 262-269) el centro urbano designa a la vez un lugar geográfico y contenido social, ya que es producto de las formas sociales en acción y de la estructura dinámica interna de la ciudad, Castells diferencia los centros entre centros políticos, centros simbólicos y centros de decisión o negocios. El primero es el lugar donde se llevan a cabo procesos internos del aparato institucional, el segundo como un emisor de valores y el último como un lugar de transferencias del sistema económico. A partir de lo anterior, se puede aceptar los conceptos de Distrito Central de negocios (DCN) y del Centro Histórico, de los cuales hablaremos en el tercer capítulo. El DCN es referido a un esquema económico (centros de aglomeración) mientras que el segundo es un elemento integrador de las ciudades latinoamericanas, un centro político e ideológico.
+Durante las últimas décadas los centros urbanos han cambiado y se especializan en actividades del sector terciario superior, sobre todo en actividades de dirección y gestión. Así como la renovación de las estructuras productivas y de distribución de la economía han provocado el desplazamiento de la mayor parte de las funciones de producción y almacenamiento a las periferias, y la disminución de cierto comercio de detalles, las ventajas de la centralidad y de la concentración, entre las que figuran las relaciones de complementariedad y competencia, han seguido atrayendo a los comercios y servicios de mayor especialización y umbral (Zarate, 1991: 99-100).
+El concepto subcentro implica que existe otro centro principal que se encuentra por encima de éste en forma de jerarquía. Sin embargo ese subcentro puede ser considerado como una nueva localización de actividades aglomeradas o una incorporación a un centro antiguo y que es absorbido debido al crecimiento del área urbana. En ese sentido Nava (2009: 44) establece que “un subcentro puede conformarse a partir de un proceso de creación de una nueva centralidad, de una relocalización, adhesión o incorporación”. A partir de lo anterior se busca hacer el análisis de la morfología de la Ciudad de México a partir de la
+39
+
+concentración de empleo en diferentes puntos de la Zona metropolitana, los cuales serán llamados durante el trabajo como nodos concentradores de empleo.
+Garreau (1991: 6-7) Encontró una tendencia hacia la creación de subcentros urbanos, donde la actividad económica tendía a localizarse en dichas áreas, llegando a superar en importancia a la zona central. Introduce el termine de Edge Cities, los cuales son centros de actividad suburbana que cumplen con diversos criterios como: a) cinco millones de pies cuadrados o más ocupados por espacios de oficinas, b) 600 000 pies cuadrados o más de espacio ocupado por comercio minorista, c) más empleos que dormitorios, d) usos de suelo mixtos (empleo, tiendas y entretenimiento) y e) haber sido un sitio rural o de vivienda anteriormente.
+Muchos trabajos tratan el tema de los subcentros dentro del proceso de suburbanización, referido al movimiento de las actividades económicas a partir de las porciones centrales hacia zonas periféricas, las cuales deben estar situadas dentro del mismo mercado de mano de obra que el centro de la ciudad. Este perímetro define los límites de la aglomeración urbana como espacio económico. Para entender el proceso de distribución espacial de las actividades económicas se emplea de igual forma el término desconcentración para designar los desplazamientos que van más allá del perímetro de la suburbanización, pero permanecen dentro de un radio limitado. De igual forma se emplea la descentralización para designar los desplazamientos que rebasan el perímetro de desconcentración y que por lo tanto se dirigen a regiones más alejadas (Polése, 1998: 388).
+Normativamente en las ciudades mexicanas un subcentro es el espacio ubicado estratégicamente, que cuenta con funciones predominantes de equipamiento regional y primario para el servicio público, favoreciendo el establecimiento de usos compatibles de vivienda, comercio, oficinas, servicios y recreación, que den servicio especializado a la población de barrios cercanos. Sus funciones predominantes serán de equipamiento regional y primario para el servicio público. Se favorecerá el establecimiento de usos compatibles de
+40
+
+vivienda, comercio, oficinas y servicios y recreación, que den servicios especializado a la población de los distritos cercanos (centros comerciales, cines, oficinas bancarias, etc.). Todo uso compatible que se proponga deberá garantizar la dotación de estacionamiento suficiente y que no ocasione conflictos funcionales con los servicios públicos (Secretaría de Asentamientos Humanos y Obras Públicas [SAHOP] en Nava, 2009). El subcentro urbano está definido dentro de la normatividad urbana de México y sirve como un elemento que estructura y contribuye al funcionamiento de la ciudad.
+El proceso de metropolización es la muestra del paso de una economía agrícola a una de carácter urbano, así como la expresión de la interdependencia creciente entre los centros urbanos y sus zonas periféricas (Unikel, 1976: 116) De acuerdo con Unikel, el área urbana y la zona metropolitana son manifestaciones que resultan, por un lado, de la concentración y expansión del dominio socioeconómico y político que ejerce el núcleo urbano central hacia su periferia contigua y, por otro lado, de la falta de capacidad por parte de la periferia para abastecerse de los bienes y servicios necesarios para su desarrollo. Debido a lo anterior es que la ciudad puede ejercer un control social, económico y político en las actividades de la periferia.
+Para Garreau (1991: 81) los subcentros pueden ver limitado su desarrollo por factores como los obstáculos físicos, disponibilidad económica o de creación de empleos, movilidad al interior del mismo, accesibilidad al subcentro y el entorno.
+Para el caso de las ciudades latinoamericanas, Nava (2009: 62) habla de que el proceso de configuración y crecimiento es producto de varios sucesos: El primero es la herencia colonial, de la cual se heredó el patrón centro-periferia; la expansión de la mancha urbana y la perdida de centralidad en las zonas antiguas con la relocalización de usos de suelo industrial y de población de segmentos altos y bajos en la periferia; y un proceso de crecimiento de población sin industrialización, junto a una migración campo-ciudad para asentarse en terrenos
+41
+
+irregulares. Es a partir de lo anterior que los patrones centro-periferia son poco claros.
+De la misma forma, Nava (2009: 63-64) encuentra factores que dificultan el fortalecimiento de subcentros urbanos en las ciudades latinoamericanas como el uso del automóvil, que refuerza la descentralización de las actividades económicas y de la población; poca planeación de las ciudades; reforzamiento tradicional de la aglomeración de actividades en centros históricos y a lo largo de corredores de transporte; y falta de infraestructura y servicios en la periferia urbana.
+TRABAJOS PREVIOS
+Los trabajos que se han realizado sobre estructura urbana o policentralidad son diversos desde nivel regional al intraurbano, tratan esquemas generalizados bajo patrones del tipo centro-periferia, centro y subcentros, o con datos empíricos. Usan diversas variables con el fin de poder definir si una ciudad es policentrica o no, las cuales son características sociodemográficas y económicas de la población, uso de suelo y localización de actividades, y movilidad urbana, como el ingreso, la vivienda, el empleo, número de empresas, viajes por diversos motivos respectivamente.
+Modelos empíricos de policentralidad tienen en común supuestos resumidos por Anas et. al. (1997: 27-34) de la siguiente forma:
+a) Los subcentros urbanos son entidades prominentes tanto en ciudades nuevas como en viejas.
+b) El número de subcentros y sus límites son pocos sensibles a una sola definición
+c) Los subcentros a veces se arraigan en los corredores urbanos d) Los subcentros de empleo ayudan a explicar patrones como la densidad
+circundante de empleo, población y valores de suelo 42
+
+e) Los subcentros no eliminan la importancia del centro principal f) La mayoría de los empleos están en centros periféricos g) El viaje al trabajo no está bien explicado por los modelos urbanos.
+La definición de los subcentros muestra diferencias y falencias debido al nivel de agregación de la información disponible, procesos históricos distintos en cada ciudad, etc. Siguiendo la idea de los factores antes mencionados la policentralidad forma parte de esquemas de concentración diferenciada al interior de zonas urbanas, por lo que no existe una definición universal por las distintas características y procesos de conformación. De los puntos descritos por Anas (1997), se espera comprobar en el presente trabajo la ubicación de subcentros urbanos en corredores urbanos, debido a la necesidad de accesibilidad de la población a los mismos generando nodos concentradores de empleo.
+En distintos trabajos que buscan definir qué modelo de estructura urbana tiene la ZMCM como Aguilar (2002) quien hace un análisis de mega ciudades con el caso de la Ciudad de México para identificar la periferia expandida, encuentra una consolidación de corredores urbanos y surgimiento de nuevos subcentros urbanos a nivel metropolitano.
+Algunos trabajos previos que utilizan el empleo como variable para la definición de la policentralidad de la ciudad encontramos trabajos como el de Johnson (1964) quien construye un índice de centralidad para el área metropolitana de Boston para 1950. Johnson identifica 5 centros de empleo, 10 de comercio minorista y 6 combinados de ambas actividades. En su trabajo concluye que tanto la accesibilidad como los efectos históricos, condiciones geográficas y las rentas del suelo son factores para la localización de estos nodos de empleo. Greene (1980) utiliza una metodología basada en un índice de concentración no central cuyo proceso es complementado con un análisis cartográfico de cambio en los datos absolutos sobre los niveles de empleo. Este trabajo encuentra la concentración cerca de vías de alta velocidad, aeropuertos o infraestructura militar o gubernamental. El DCN es más importante que estos nodos de la periferia. Otro trabajo que utiliza la densidad de empleo para identificar estos nodos es el de
+43
+
+McMillen y McDonald (1998) quienes utilizan un método basado en la teoría de la oferta de la renta, que permite distinguir la probabilidad de que una zona contenga empleos a partir del comportamiento de aquellas zonas que si lo contienen. Utilizando un método de máxima verosimilitud, McMillen, identifica 20 subcentros de empleo en Chicago. Estos autores encuentran que la accesibilidad es de vital importancia para la creación de estos nodos. Por su parte Borgat y Ferry (1999) procesan datos de empleo mediante un análisis de clúster y cocientes de localización, así como un modelo de regresión para analizar el rango de los subcentros. Este trabajo concluye una erosión del DCN por el crecimiento de los nodos concentradores de empleo en la periferia, tendiendo así a la Cleveland a la policentralidad. Por otro lado, McMillen (2001) analiza los datos de densidad de empleo utilizando un método basado en regresiones ponderadas localmente para comparar el comportamiento de una regresión de tipo log a partir del centro de la ciudad. El autor encuentra que existe una pronunciada dispersión del empleo y la población en toda la ciudad, pero aun así el DCN domina los patrones de estas dos variables en la ciudad por lo que Milwakee conserva una estructura urbana monocéntrica, debido que la presencia de subcentros débiles pueden ser más características de la dispersión que del policentrismo (en Nava, 2009: 87-90).
+Las grandes zonas metropolitanas experimentan un proceso de descentralización desde su parte central hacia los suburbios. Las olas de descentralización han sido estudiadas bajo el nombre de etapas de metropolitanismo, que describen el cambio de la distribución espacial, o estadios de la demanda ocupacional, que privilegian el comportamiento del mercado de trabajo. En un primer momento la población se desplaza a la periferia debido a los menores costos de vivienda y mejorar calidad de vida. Después la demanda ocupacional de comercio y servicios al consumidores es más activa en la periferia que en la ciudad central, debido a la localización de la población. Paralelamente la industria en busca de más espacio para sus almacenes y fábricas busca localizarse en la periferia donde hay existencia de grandes espacios. La siguiente etapa es el movimiento de oficinas de las matrices de la ciudad central a la periferia. Finalmente los servicios al productor y financieros, así como las matrices.
+44
+
+Las grandes ciudades, de acuerdo a Sobrino, pueden clasificarse en tres grandes grupos según la demanda ocupacional: a) donde el DCN ha mantenido su importancia absoluta y relativa; b) donde los subcentros urbanos compiten con el DCN en la atracción y localización de actividades económicas, y c) donde el DCN tiene un claro declive (Sobrino, 2006: 426-427).
+LOS NODOS CONCENTRADORES DE EMPLEO DE LA CIUDAD DE MÉXICO
+En esta parte del trabajo se hace una revisión de trabajos anteriores en la Ciudad de México o ZMCM sobre patrones de localización de las actividades económicas o la estructura urbana aplicando diferentes metodologías para tener referencias con la cual comparar los resultados obtenidos. En la siguiente parte se realizara la delimitación de los nodos concentradores de empleo usando dos técnicas, la del doble umbral y LISA bivariada utilizando como dato principal al personal ocupado.1 Lo anterior permitirá obtener diferentes resultados para poder decidir que técnica permite una mejor delimitación de los nodos y sobre todo para la ciudad central, objeto de análisis en el siguiente capítulo.
+Antecedentes
+Se han realizado diversos trabajos para establecer la estructura urbana de las ciudades a través de datos de población, vivienda, suelo, movilidad, economías de aglomeración y, el que es objeto de este trabajo, el empleo.
+Aguilar (2002: 11-12) en su trabajo define contornos, como círculos concéntricos de la ciudad a través de componentes territoriales básicos de una urbanización expandida:
+1 La técnica del doble umbral y el indicador local de asociación espacial (LISA por sus siglas en inglés) se explicaran más adelante en este capítulo.
+45
+
+ La ciudad central: corresponde a los límites de la ciudad histórica que existía en la fase de expansión del modelo de sustitución de importaciones.
+ El primer contorno o anillos urbanos construidos representa el área construida continua y contigua que surgió en los primeros años de expansión del modelo de sustitución de importaciones.
+ El segundo o zona metropolitana es toda el área construida junto a la franja rural-urbana vinculada funcionalmente con la ciudad central.
+ El tercero o periferia expandida es aquello que se extiende más allá de la frontera metropolitana y que se encuentra vinculada de forma directa con la ciudad central, la cual puede deberse a carácter de flujo de trabajadores de esta zona a la ciudad central.
+Aguilar (2002: 13-14) ubica tres rasgos distintivos de las ciudades latinoamericanas en cuanto a la expansión urbana: las periferias metropolitanas expandidas, los corredores urbanos y la multiplicación de subcentros urbanos que tienden a consolidar una estructura policéntrica.
+1. Las periferias expandidas. Son resultado de la influencia urbana de la ciudad más allá de su frontera metropolitana. Donde pueblos distantes y pequeñas ciudades son integradas a la influencia cotidiana de la principal ciudad a través de transformaciones socioeconómicas.
+2. Corredores Urbanos. Constituyen desarrollos lineales que concentran diversas actividades, donde generalmente existen los siguientes usos de suelo: desarrollos corporativos, parques industriales, infraestructura deportiva, áreas residenciales de clase media y urbanización popular. Son estos corredores quienes le dan la fisionomía metropolitana a las localidades urbanas discontinuas. También tienen un flujo importante de personas y mercancías, así como pueden ser inicios de hacía donde se expandirá la ciudad.
+3. Los subcentros urbanos pueden ser planeados o no. Pueblos tradicionales que en algún momento fueron predominantemente
+46
+
+agrícolas y que fueron entrando a un proceso económico urbano. Pueden ser desarrollos residenciales.
+El policentrismo denota la existencia de múltiples centros en un territorio y ha sido utilizado como una característica para definir la estructura urbana de las grandes ciudades. El policentrismo se puede referir a patrones intraurbanos de concentración de población y económica; en una fase particular del desarrollo urbano, los subcentros urbanos surgen en el territorio suburbano atrayendo actividades comerciales y de servicio en su calidad de lugares centrales. Por otro lado puede sugerir patrones interurbanos que surgen en regiones con presencia de sistemas urbanos dominados por una multitud de centros urbanos de diferentes rangos.
+En estudios previos sobre la estructura espacial de la ZMCM detectan indicios de policentrismo, donde resaltan el peso que sigue manteniendo el centro. La relevancia del centro histórico se expresaría de diferentes formas. Por un lado, el porcentaje de empleos que concentra seguiría siendo muy relevante (Suárez y Delgado, 2009; Aguilar y Alvarado, 2004 en Muñiz, 2015: 85). Por otro, el área central el destino de la mayoría de los desplazamientos residencia-trabajo (Nava, 2009). Por último, una buena parte de los subcentros de empleo se encuentran próximos al DCN (Aguilar y Alvarado, 2004, en Muñiz, 2015: 83).
+Garza (2006: 115-116) en su trabajo de la estructura y dinámica del sector servicios de la Ciudad de México, menciona como la estructura ocupacional de México se ha transformado de una economía primordialmente agrícola a otra dominada por las actividades terciarias y secundarias. En 1950 el sector primario ocupaba al 58.4% de la población económicamente activa (PEA) total, mientras que el terciario lo hacía en un 25.7% y el secundario un 15.9%. En los setenta hubo un elevada participación del sector terciario y secundario pasando a 37.6 y 23% de la PEA, mientras que el sector primario bajo al 39.4%. Para los noventas la participación de la manufactura en la PEA nacional se redujo a 23.1%, mientras que los servicios absorbieron el 50.1%. Para el 2003 la PEA en servicios tuvo el
+47
+
+58.4% a comparación del 24.8% de la industria y la agricultura con tan solo el 16.8%. Por lo anterior la población ocupada de México es primordialmente terciaria, en cuanto a la Ciudad de México se espera el mismo comportamiento para la etapa analizada 1993 – 2003, con una mayor parte del personal ocupado en el sector servicios.
+Por el lado de la industria Cruz y Garza (2014: 21-29, 45-48) encontraron que en 55 AGEB se concentraba para el 2003 71% del PIB y 29% de trabajadores del sector. Adicionalmente a lo anterior encontraron policentrismo industrial identificando 4 corredores industriales y 3 nodos industriales que constituyen una gran “Y”. En el trabajo se hace una revisión de la evolución histórica tanto de los corredores como de los nodos industriales de la Área Metropolitana de la Ciudad de México.
+Grajales (2006: 457, 499) analiza la localización de los establecimientos de servicios en el Distrito Federal por subsector de actividad según Área Geoestadística Básica (AGEB) del INEGI, con el fin de determinar si tienen algún patrón definido de organización espacial para el año de 1993. La autora encuentra que la distribución de los negocios comerciales y de servicios varía según sus diferentes clases. Encuentra una tendencia a una mayor concentración de los servicios principalmente en la delegación Cuauhtémoc. Por lo que para Grajales la Ciudad de México es una metrópoli con una gran área de negocios central.
+Existen por otro lado trabajos que han analizado a la ZMCM donde encuentran que la metrópoli recorre la segunda y tercera etapa de la metropolización entre 1950 y 2000, suburbanización de 1950 a 1970 un crecimiento poblacional en la periferia respecto a la ciudad central y de desurbanización entre 1970 y 2000 cuando la ciudad central tuvo una pérdida de población (Sobrino, 2006: 426-428).
+En la localización macro espacial del sector servicios en la ZMCM Sobrino (2006: 446-449), encuentra que la Ciudad de México tendió a la concentración sectorial en las últimas dos décadas del siglo XX y para el 2003 debido al
+48
+
+dinamismo de los servicios al productor. El autor comprobó que la ciudad central perdió importancia relativa como nodo concentrador de empleo, pero mantiene cierta posición de atracción de establecimientos comerciales y de servicios. De esta forma encuentra que la delegación Cuauhtémoc tiene el papel de núcleo metropolitano central, y le siguen en grado de importancia las otras tres delegaciones de la ciudad central, esto es, Miguel Hidalgo, Benito Juárez y Venustiano Carranza. En el tercer rango son unidades que ofrecen economías de aglomeración para una combinación de grupos de actividad de orden superior o intermedio. En el cuarto rango están aquellas que se especializan en grupos de orden intermedio e inferior. Para Sobrino la ZMCM ha transitado de un patrón monocéntrico a uno de expansión axial con origen en el centro tradicional. Por lo cual el centro de la Ciudad de México sigue siendo su centro o su Distrito Central de Negocios.
+En los trabajos anteriores se observa constantemente un patrón de subcentros para la ZMCM lo cual servirá como punto de referencia para el estudio.
+Un trabajo similar al propuesto en este trabajo es el realizado por Garrocho (2007: 101-105) quien identifica subcentros del área metropolitana de Toluca utilizando el criterio del doble umbral para el periodo comprendido de 1994 a 2004. Concluye que los datos empíricos descartan la existencia de una ciudad monocéntrica y muestran una clara disposición, al igual que las grandes ciudades mexicanas, a la policentralidad. De esta suerte, encuentra una estructura de subcentros mucho más compleja en 2004 comparado con 1994, pasando de 4 a 8 subcentros.
+Nodos concentradores de empleo ZMCM por AGEB y sector de ocupación
+A partir de la delimitación de nodos concentradores de empleo, el presente trabajo busca identificar la estructura urbana de la ciudad, teniendo como hipótesis que se asemeja al de una ciudad latinoamericana con un centro de vital
+49
+
+importancia en aspectos económicos, sociales, políticos y culturales con un corredor urbano que termina en un centro comercial. Teniendo como fin la delimitación de la Ciudad Central para poder caracterizarla en el siguiente capítulo.
+Para lograr lo anterior existen diversos métodos para identificar nodos concentradores de empleo que se encuentran en la literatura son varios y como vimos anteriormente para datos sobre empleo se utilizan regresiones, índices, matrices, pero resaltan dos por su facilidad de manejo e interpretación: el del doble umbral y el indicador local de asociación espacial (LISA).
+Metodología
+Para determinar los nodos concentradores de empleo en la Ciudad de México se hará un análisis exploratorio de datos para los Índices locales de asociación espacial (LISA) y el criterio del Doble Umbral. Se utilizara el personal ocupado por sector manufactura, comercio y servicios de los censos económicos de 1994 y 2004 del INEGI. La unidad de observación son las Áreas Geoestadísticas Básicas (AGEB) que componen la ciudad.
+Doble Umbral
+La técnica utiliza dos umbrales de referencia, uno vinculado a la magnitud de empleo y el otro ligado a la densidad del empleo. Así, las concentraciones de empleo que superen los dos umbrales establecidos son consideradas nodos concentradores empleo (Garrocho y Campos, 2007: 102-104).
+El método del doble umbral fue propuesto por Giuliano y Small (1990: 163182), para quienes el empleo es clave para entender la formación de centros urbanos, los cuales son identificados como zonas donde la densidad de empleo
+50
+
+supera un umbral establecido a partir de la media del área de estudio. Así, buscan incorporar zonas adyacentes con una alta densidad de empleo que permita delimitar centros lo suficientemente grandes para que tengan una influencia potencial significativa.
+Es así como definen un centro como un arreglo continúo de zonas, las cuales cada una tienen una densidad por encima de un valor establecido y que juntas tienen al menos una magnitud de empleo para los cuales todas las zonas adyacentes inmediatas fuera del centro tienen una densidad por debajo del establecido. Los autores hacen la anotación que para ser considerada una zona adyacente esta debe compartir al menos un cuarto de milla (402 metros) con la zona centro. Con lo anterior todas las zonas con alta densidad en la región son clasificadas como parte de algún centro a menos que sean pequeñas (magnitud) o se encuentren aisladas. El punto más alto del centro es definido como la zona con la densidad más alta o un grupo de zonas continuas en el centro que juntas tienen al menos cierta magnitud de empleos (Giuliano y Small, 1990: 163-182).
+En el caso de esta investigación se utilizara la aplicación de este método ya que Garrocho y Campos (2007: 102-104) lo toman elementos del método de Giuliano y hace mejoras con el fin se adapte mejor a las ciudades mexicanas, en su trabajo lo hacen para el caso del área metropolitana de Toluca 1994-2004 con la AGEB como unidad de observación, por lo que se definirán como nodos concentradores de empleo a aquellas áreas que cumplan con:
+1. Una magnitud de empleo en los sectores de comercio y servicio superior a la media de la ciudad de estudio más una desviación estándar.
+2. Una densidad de empleo en los sectores de comercio y servicio superior a la media de la ciudad de estudio.
+51
+
+Los umbrales se instrumentan de la siguiente forma:
+Di, s > Dc, s, t Mi, s > (Ec, s, t) + (STD Ec, s, t) Dónde: D = Densidad del empleo (empleos / hectárea) i = Área geoestadística básica (AGEB) s = Agregación sectorial c = Ciudad de estudio t = Año para el que se realiza el análisis M = Magnitud del empleo (número de empleos) E = Magnitud promedio del empleo por AGEB STD= Desviación estándar
+En el caso de esta investigación, debido al número y tamaño de las AGEB contenidas en la ZMCM, tanto el umbral de densidad de empleo como el de magnitud de empleo serán definidos por la medía de dicha variable más una desviación estándar. La herramienta utilizada es un Sistema de información Geográfica (SIG) llamada ArcGis 10.1, el cual es un poderoso software que permite hacer análisis exploratorios de datos espaciales, creación de mapas y mucho más2.
+Con los umbrales establecidos anteriormente será posible identificar centros con una densidad y magnitud de empleos elevados dentro de la ZMCM. La magnitud y densidad de empleo son variables clave para el funcionamiento de la ciudad, debido que la magnitud refleja la importancia de las concentraciones de empleo en la ciudad y la densidad filtra a la magnitud como indicador y lo confirma como un nodo o no concentrador de empleo en el territorio. Al utilizarse ambos de forma simultanea ofrecen información básica para poder identificar nodos concentradores de empleo en áreas urbanas (Garrocho y Campos, 2007).
+2 Ver: www.argis.com
+52
+
+El Indicador Local de Asociación Espacial (LISA).
+La autocorrelación espacial representa la relación entre las unidades espaciales cercanas. Este concepto se sustenta en la Ley de Tobler, en la cual se enuncia que todo está relacionado con todo lo demás, pero las cosas cercanas están más relacionadas que las que se encuentras distantes. Las medidas de autocorrelación espacial se clasifican en global y local dependiendo de su escala o alcance de análisis. Las globales son las que miden las asociaciones de unidades espaciales de una región, como el índice de Moran. Mientras que las locales están enfocadas en evaluar la autocorrelación espacial asociada con una unidad espacial particular, aquí ubicamos a los índices de autocorrelación espacial local (LISA). Un índice que permite reconocer la autocorrelación espacial es el I de Moran, que mide la autocorrelación espacial basada en las ubicaciones y los valores de las entidades, simultáneamente. Dado un conjunto de entidades y un atributo asociado, evalúa si el patrón expresado está agrupado en el espacio, disperso o es aleatorio en el cual no tiene relación una las variables propuestas para el análisis y el patrón observado (Getis, 2010: 255-300).
+Los LISA fueron planteados por Anselin (1995: 94-96) con el propósito de identificar observaciones influyentes y valores atípicos. El LISA mide la asociación espacial entre el valor que una variable asume en una subunidad de estudio con relación a sus subunidades vecinas. Así el LISA nos permite identificar clústeres locales, los cuales son fáciles de interpretar con la utilización de mapas (Sánchez, 2006: 3-5).
+La lisa bivariada realiza el mismo cálculo que con una sola variable pero relacionando dos variables, el resultado obtenido son clúster de valores altos con altos, bajos con bajos, bajos con altos y altos con bajos. Como lo buscado en este trabajo son valores altos los que se toman en cuenta son aquellos identificados como altos con altos, ya que significaría AGEB vecinas con valores altos tanto de
+53
+
+magnitud de personal ocupado y densidad de personal ocupado en esas observaciones.
+Así para probar la contigüidad espacial de los valores se utiliza el Indicador Local de Asociación Espacial (LISA). El LISA mide la relevancia de los valores alrededor de un determinado polígono, en nuestro caso la ZMCM. Es importante mencionar que la herramienta para llevar a cabo esta técnica será GeoDa, que es una herramienta libre que permite realizar análisis exploratorios de datos espaciales. 3
+Con el uso de esta herramienta será posible observar la estructura espacial del empleo en la ZMCM, encontrar aglomeraciones de AGEB estadísticamente significativos que nosotros llamaremos nodos concentradores de empleo.
+En esta investigación se usaran ambos métodos para ubicar los nodos concentradores de empleo con datos de los censos económicos 1994 y 2004 del Instituto Nacional de Estadística Geografía (INEGI). Una vez ubicados los nodos concentradores de empleo de la ZMCM, lo cual nos permitirá observar la morfología de la Ciudad de México, se podrá realizar una comparación entre ellos, lo cual permitirá identificar cuál de estos nodos es el Distrito Central de Negocios con cada uno de los métodos a utilizar con el fin de poder representarlo de forma precisa en el siguiente capítulo.
+Empleo
+En este primer ejercicio permite observar cómo se encuentra distribuido el empleo en la Ciudad de México, de igual forma dará lugar a que se elija una técnica sobre la otra.
+En los mapas II.1 y II.2 se observan los patrones de localización del empleo para la ZMCM para 1994 con LISA bivariada y del doble umbral, respectivamente.
+3 Ver: https://geodacenter.asu.edu/software/downloads
+54
+
+Mapa II.1 Personal Ocupado en la ZMCM, 1994 biLISA
+Fuente: Elaboración propia con datos del censo económico 1994 INEGI. GEODA 55
+
+Mapa II.2 Personal Ocupado en la ZMCM, 2004 biLISA
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. GEODA 56
+
+En el caso del resultado obtenido para el personal ocupado en la ZMCM en 1994 utilizando las variables densidad de personal ocupado y magnitud de personal ocupado con la técnica de la LISA bivariada, la I de Moran tiene un valor de 0.3934 lo cual habla de una autocorrelación positiva, estadísticamente significativa, por lo que podemos decir que la distribución espacial de los valores altos y los valores bajos está más agrupada espacialmente de lo que se esperaría si los procesos espaciales fueran aleatorios. Lo anterior nos habla de que existen economías de aglomeración y, por ende, de nodos concentradores de empleo comprobando lo mencionado en el primer capítulo. El mapa II.1 permite observar los resultados obtenidos en GeoDa, del cual obtenemos un clúster de valores altos con altos importante en el centro de la ZMCM el cual abarca las delegaciones Benito Juárez, Cuauhtémoc, Venustiano Carranza y la Miguel Hidalgo, principalmente, ocupando una importante parte de la delegación Coyoacán y un poco de la Álvaro Obregón, también se localizaron otros cuatro, dos al norponiente de la ciudad, Tlalnepantla y Cuautitlán. Del clúster principal al nororiente se observa un corredor urbano rumbo a Ecatepec. Mientras que al sur oriente se observa una concentración de empleo en la zona de la central de abasto. Al norte de la central de abasto en la Iztacalco encontramos otro nodo cerca de la unidad deportiva de la Magdalena Mixhuca. Encontramos entonces un clúster principal, de gran tamaño, y 5 subcentros con una amplia diferencia de extensión respecto al principal.
+En el mapa II.2 de la concentración de empleo en la ZMCM en 1994, Doble umbral en ArcGis, encontramos una importante concentración en el centro de la ciudad, y las llamadas en la literatura sobre la ZMCM como las delegaciones centrales; Benito Juárez, Cuauhtémoc, Coyoacán y la Miguel Hidalgo; conectándose al poniente con Polanco a través del Paseo de la Reforma. Esta concentración se expande al sur vía av. Insurgentes que hace la función de corredor urbano permitiendo conectarlo al centro histórico de la ciudad y Polanco con la Del Valle sur llegando a galerías Insurgentes. Ésta característica se enfatiza en los modelos de estructura urbana para las ciudades latinoamericanas.
+57
+
+Por otro lado, se ubican al oriente de la ciudad diversos AGEB que cumplen con las características mínimas del criterio del doble umbral destacando la central de abasto y justo al norte de esta los espacios cercanos al Deportivo Magdalena Mixhuca en Iztacalco, quizá debido los espacios sociales y deportivos de esta zona. Hacia el norte podemos encontrar un para el poniente el corredor llegando a Cuautitlán pasando por Tlalnepantla. Desapareciendo el corredor a Ecatepec, lo cual está lejos de ser cierto en la realidad. Exactamente en el norte encontramos a Industrial Vallejo.
+Por lo tanto, quedan ubicados un gran “nodo” principal y 5 subcentros que se ajustan a una estructura policéntrica, parecido al modelo de núcleos múltiples según lo visto en el primer capítulo.
+58
+
+Mapa II.3 Nodos concentradores de empleo en la ZMCM (Doble umbral), 1994
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 59
+
+Mapa II.4 Nodos concentradores de empleo en la ZMCM (Doble umbral), 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 60
+
+En los mapas II.3 y II.4 se observan los patrones de localización del empleo para la ZMCM para el 2004 con LISA bivariada y del doble umbral, respectivamente.
+En el caso del mapa realizado en GeoDa (II.3), en primera instancia observamos que el resultado de la autocorrelación espacial es significativa y con una I de Moran de 0.2966 lo cual habla de una autocorrelación positiva, estadísticamente significativa, por lo que podemos decir que la distribución espacial de los valores altos está más agrupada espacialmente de lo que se esperaría si los procesos espaciales fueran aleatorios. Para el 2004 existe una consolidación de lo que llamamos como el clúster principal en 1994, manteniéndose dentro de las cuatro delegaciones centrales con una expansión hacia Santa Fe, el cual está identificado con el color rosa, lo cual significa que es un AGEB con valores altos rodeado de AGEB con valores bajos en las variables utilizadas, teniendo en cuenta que las AGEB que conformarían esta zona son valores altos rodeados de bajos, lo cual indicaría un crecimiento en importancia y conexión de este nodo con el principal y un crecimiento en el sur de la ciudad. Por el otro lado de la ciudad se consolido el corredor de Tlalnepantla y Cuautitlán Izcalli. Se localizaron 5 subcentros a parte del centro de la ciudad.
+Para el 2004 utilizando el criterio del doble umbral (mapa II.4), el patrón de localización de las actividades se muestran parecidas a las de 10 años atrás vistas con la misma técnica en el mapa II.2, son la salvedad que se observa un crecimiento del corredor urbano de insurgentes al sur, teniendo como final las colonias San Ángel, Guadalupe Inn y Copilco y la aparición de Santa Fe, que si bien es una sola AGEB, esta es conocida por ser un nodo concentrador de empleo y cuenta con valores por encima de los umbrales estadísticos. Es probable que debido al tamaño de las AGEB donde se encuentra Perisur esta no parezca como punto final del corredor. Se acentúa la importancia de la Central de Abastos y el corredor Tlalnepantla – Cuautitlán.
+61
+
+Lo obtenido en estos cuatro mapas, dos para 1994 y dos para el 2004, cada par realizado con las distintas técnicas permite observar diferencias en el momento de delimitar estos nodos concentradores de empleo. Para empezar debido a los diferentes programas utilizados existen limitantes para realizar un análisis más completo en uno de los dos, GeoDa permite hacer diversos análisis pero es más complicado obtener información adicional, editar y realizar mapas en comparación con un sistema de información geográfica, en este caso el ArcGis 10.1. Ya en los resultados obtenidos por cada uno de los métodos, podemos observar que debido a la naturaleza de la autocorrelación espacial los clúster suelen tener una mayor área debido a la relación, que busca este método, entre los vecinos contiguos, el claro ejemplo es el principal nodo o que en su defecto podemos llamar para el siguiente capítulo como la ciudad central. Este nodo tan amplio no permite la identificación de elementos como corredores urbanos a diferencia de los obtenidos en ArcGis y utilizando el criterio del doble umbral que permite observar de forma más clara corredores como el de av. Insurgentes. De lo anterior también puede ser una limitante del mismo método del doble umbral, debido a que es posible que AGEB vecinos de los nodos concentradores de empleo encontrados deben pertenecer a este funcionalmente o como en el caso de la central de abasto donde las AGEB están separadas, por lo cual no hay contigüidad entre las mismas, lo cual permite decir que es un nodo o subcentro.
+Del siguiente cuadro (2.1) podemos observar como evoluciono en el periodo 1994 - 2004 la concentración del empleo en la ZMCM por AGEB que de acuerdo a la técnica del doble umbral ha aumentado. La media de la magnitud de personal ocupado por AGEB en 1994 era de 537 personal ocupado a comparación de los 729 para el 2004, lo cual representó un aumento del 36% mientras que su desviación estándar creció un 41% pasando de 1344 a 1898 en este periodo. Con lo cual el umbral para que una AGEB fuera considerada como parte de un nodo concentrador de empleo fue de 1881 en cuanto al volumen de personal ocupado para 1994 a 2627 para el 2004 que represento un 40% de crecimiento en el periodo mencionado.
+62
+
+Respecto a la densidad de personal ocupado sobre hectárea de la superficie del AGEB, en el cual la media mínima para ser considerado nodo concentrador de empleo para 1994 fue de 17 sobre Ha a 23, representando un cambio al alza del 35%. En cuando a la desviación estándar paso de un valor de 40 a 61 personal ocupada sobre hectárea lo que significó un alza del 53%. Por lo cual las AGEB debían tener una densidad de personal ocupado por encima del 57 en 1994, pero diez años después este valor se incrementó en un 47% tomando un valor de 87.
+Estos valores obtenidos para la definición de los nodos concentradores de empleo nos hablan de una mayor concentración del empleo en la ciudad de México pues como se mencionó con anterioridad, la estructura urbana de la ciudad no sufrió grandes cambio en esa década, pero los valores que necesitaron las AGEB para ser incluidos fueron mayores.
+
+Cuadro 2.1 Doble Umbral de la ZMCM para la identificación de los nodos concentradores de empleo con personal ocupado
+
+1994
+
+2004
+
+Crecimiento
+
+Magnitud Densidad Magnitud Densidad Magnitud Densidad
+
+mínima mínima mínima mínima mínima mínima
+
+Media
+
+537
+
+17
+
+729
+
+23
+
+36%
+
+35%
+
+SD
+
+1344
+
+40
+
+1898
+
+61
+
+41%
+
+53%
+
+Umbral
+
+1881
+
+57
+
+2627
+
+84
+
+40%
+
+47%
+
+Fuente: elaboración propia con datos del censo económico 1994 y 2004 INEGI
+
+En el cuadro anterior podemos observar la evolución de los nodos concentradores de empleo en el periodo 1994-2004. Se observa que, bajo los criterios seleccionados con anterioridad, se tiene que la concentración de empleo en la ciudad aumenta en estos nodos concentradores de empleo, pues el centro incluyendo el corredor insurgentes paso de tener 22% del empleo de la ZMCM
+63
+
+atener 25.87%, mientras que el centro sin el corredor solo aumento en un 1%. Es importante hacer esta diferencia pues si tomamos en cuenta el centro sin el corredor Insurgentes podemos observar que no tuvo un gran incremento relativo frente a otros nodos o la concentración tan acentuada. Se comienza a vislumbrar a Santa Fe como un posible nodo concentrador de empleo para años siguientes. El total de los nodos concentradores de empleo absorbieron 30.55% y 34.47% en 1994 y 2004 respectivamente.
+Industria
+Como se puede observar en el mapa II.5 la manufactura en la Ciudad de México en 1994 se concentra principalmente en los corredores que habíamos mencionado del norte de la ciudad y, principalmente, en Tlalnepantla. En tanto en el centro de la ciudad se hay poca industria. Como mencionan Cruz y Garza (2014: 30-32) los corredores industriales no nacen del DCN, sino de los nodos de Azcapotzalco y Naucalpan, situación que es distinta a los mencionados en modelos de estructura urbana como lo postulado por Hoyt, quien hacía mención que los corredores industriales parten del centro comercial principal. Cerca de la central de abasto y por la Magdalena Mixhuca existe una concentración de empresas del sector industrial. El corredor hacia Ecatepec también cuenta con presencia de manufactura. Mientras que en el 2004 (mapa II.6) los patrones son los mismos que en 1994 reforzando la concentración cerca tanto de la central de abastos como de la deportiva de la Magdalena Mixhuca. Por otro lado tenemos que se refuerza el nodo de Cuautitlán como concentrador de empleo en el sector secundario. En ambos años resalta Industrial Vallejo debido principalmente a las líneas de ferrocarril y la estación ferroviaria Pantaco lo cual facilita a las empresas el acceso a este servicio de transporte lo cual facilita el intercambio de sus productos y de materia prima. La proximidad de este servicio al productor reforzó la aglomeración de la actividad manufacturera en esta zona, facilitando los procesos de
+64
+
+exportación de bienes y la importación de maquinaria e insumos para la producción (Cruz y Garza, 2014: 38-39). Comercio
+En cuanto al comercio se puede observar que en 1994 (mapa II.7) se concentra principalmente en el centro de la ciudad, lo cual se puede deber a la venta al menudeo y mayoreo que se encuentra en el centro historio de la Ciudad de México. Por otro lado se observa que también existe una concentración de comercio elevada en todo insurgentes. En las concentraciones que se observaron de la industria en el segmento anterior, Tlalnepantla, hay una elevada concentración de comercio esto se puede deber a la necesidad de comerciar los bienes producidos en esta zona. Para 2004 (mapa II.8) se observa una dispersión del comercio en los nodos concentradores de empleo respecto a diez años atrás. Las adiciones como importantes como nodos concentradores de empleo en el sector del comercio son tanto la Central de Abastos como Cuautitlán.
+65
+
+Mapa II.5 Concentración de empleo en la manufactura (Doble umbral), 1994
+Fuente: Elaboración propia con datos del censo económico 1994 INEGI. ARCGIS 10.1 66
+
+Mapa II.6 Concentración de empleo en la manufactura (Doble umbral), 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 67
+
+Mapa II.7 Concentración de empleo en el comercio (Doble umbral), 1994
+Fuente: Elaboración propia con datos del censo económico 1994 INEGI. ARCGIS 10.1 68
+
+Mapa II.8 Concentración de empleo en el comercio (Doble umbral), 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 69
+
+Servicios
+En 1994 los servicios se concentraban en el centro de la ciudad y una parte por el corredor insurgentes pero destaca por la concentración de servicios la Av. Reforma como se observa en el mapa II.9. También resalta la zona de Bosques de las Lomas donde se establecen algunos corporativos, Resalta de nuevo la zona de Tlalnepantla con un elevado volumen de personal ocupado para este sector. Para el 2004 emerge como un nodo concentrador de empleos en el sector servicios Santa Fe, de la misma forma la Av. Insurgentes toma forma como un corredor urbano gracias a la localización de corporativos en la avenida. Reforma se mantiene estable pero se da un incremento en Polanco en la concentración de empresas dedicadas a servicios.
+La idea de centralidad resalta la importancia de la jerarquía de un nodo con el resto del espacio urbano o estructura de nodos subordinados. En este sentido, la policentralidad mantiene la noción de jerarquía de un centro con respecto a un área determinada e inserta la importancia entre nodos como el eje sobre el que se construye un esquema de centros y subcentros urbanos o de un sistema de centros dominantes con varios subcentros. Bajo esta perspectiva se podrían establecer la presencia de relaciones de jerarquía y subordinación o dependencia entre los diversos centros de actividad.
+El concepto de centralidad se basa en la idea de relación entre un punto respecto a un área de influencia. En este caso la concentración de empleo en la ZMCM permitió observar esta diferencia pero sobre todo por los patrones de localización de los sectores.
+70
+
+Mapa II.9 Concentración de empleo en Servicios (Doble umbral), 1994
+Fuente: Elaboración propia con datos del censo económico 1994 INEGI. ARCGIS 10.1 71
+
+Mapa II.10 Concentración de empleo en Servicios (Doble umbral), 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 72
+
+En cuanto a las técnicas utilizadas en este trabajo se observó que ambas cumplen con la función de identificar nodos concentradores de empleo, la diferencia radica en la capacidad de agrega o descarta AGBEB para la formación de estos subcentros. LISA al tomar en cuenta los valores de los vecinos contiguos puede permitir anexar aquellos AGEB que tienen ciertos valores semejantes a los demás y así incluirlos en el nodo concentrador, pero se obtuvo un nodo central grande el cual incluye distintos AGEB que no necesariamente cumplen con los requisitos de concentración de empleo, lo cual no permite una delimitación concreta del Distrito Central de Negocios ni de la ciudad central, elemento que buscamos delimitar y caracterizar en el siguiente capítulo. En cuanto al criterio del Doble Umbral es posible que no se incluyan algunos vecinos que tengan valores cercanos a los umbrales estadísticos y que sean funcionalmente parte del nodo concentrados. La facilidad que ofrece un programa como ArcGis para la manipulación y creación de mapas permite una mejor representación de los resultados buscados en este trabajo.
+La estructura urbana encontrada en este trabajo concuerda con la mayoría de los trabajos revisados anteriormente. La ZMCM tiende a la policentralidad pero con el centro manteniendo su importancia frente a los demás, es posible concordar con el trabajo de Sobrino (2006: 446-449) sobre una expansión axial desde el centro tradicional como lo observado principalmente con la av. Insurgentes, aunque se alcanza a observar un corredor industrial corriendo por Tlalnepantla hasta Cuautitlán el cual no empieza muy lejos de Polanco, el cual forma parte de la llamada Ciudad central o de las cuatro delegaciones centrales.
+La localización de los sectores de la manufactura, comercio y servicio mostraron diferentes patrones entre ellos, pero similares en los dos años analizados. Llama la atención la zona de Tlalnepantla que tiene valores altos de concentración de empleo en los tres sectores, también la emergencia en este periodo de Santa Fe y el fortalecimiento de la Central de abastos como nodo concentrador de empleos. En general, se corroboro la existencia de diversos nodos concentradores o subcentros en la ZMCM descritos en otros trabajos, pero
+73
+
+el nodo principal mantiene su jerarquía frente a los demás debido a la dimensión del mismo además de la magnitud del personal ocupado.
+En el siguiente capítulo se procederá elegir dentro de los nodos concentradores de empleo identificados y delimitados a la ciudad central de la Ciudad de México, para caracterizarla con el tipo de empleo que se encuentra en él, así como los elementos políticos, sociales y culturales que la conforman.
+74
+
+III.- EL DISTRITO CENTRAL DE LA CIUDAD DE MÉXICO
+
+Es común que en los trabajos de regionalización para la zona metropolitana de la Ciudad de México se separan a las delegaciones centrales del DF (Benito Juárez, Cuauhtémoc, Miguel Hidalgo y Venustiano Carranza), convirtiéndolas en la unidad central y conformando, a partir de ellas, anillos concéntricos.
+
+Las delegaciones del centro son las de más antigua urbanización y dan muestras de saturación demográfica. Las cuatro delegaciones en 1990 contaban con una población de 1 930 267 mientras que para el 2000 paso a 1 692 179 habitantes, lo que represento una disminución anual de 1.3%. La pérdida de población hablaría de una caída en la importancia de esta zona de la ciudad, pero en este capítulo analizaremos el comportamiento del personal ocupado y ver si tiene el mismo comportamiento que la población.
+
+Cuadro 3.1. Centro de la Zona metropolitana de la Ciudad de México: Población, tasa de crecimiento, superficie y densidad media urbana, 1990-2000
+
+Clave Municipio
+
+1990
+
+Población 1995
+
+Zona metropolitana de la Ciudad de México 15,563,795 17,297,539
+
+2000
+
+Tasa de crecimiento medio anual
+
+(%)
+
+1990-
+
+1995-
+
+1990-
+
+1995
+
+2000
+
+2000
+
+Superficie (km2)
+
+DMU* (hab/ha)
+
+18,396,677
+
+1.9
+
+1.5
+
+1.7
+
+7815 23.54
+
+9014 Benito Juárez
+
+407,811 396,956
+
+360,478
+
+-0.5
+
+-2.2
+
+-1.2
+
+26 149.7
+
+9015 Cuauhtémoc
+
+595,960 540,382
+
+516,255
+
+-1.7
+
+-1.1
+
+-1.4
+
+33 214.7
+
+9016 Miguel Hidalgo
+
+406,868
+
+364,396
+
+352,640
+
+-1.9
+
+-0.8
+
+-1.4
+
+46 174.9
+
+9017
+
+Venustiano Carranza
+
+519,628 485,623
+
+462,806
+
+-1.2
+
+-1.1
+
+-1.2
+
+34 222.8
+
+Centro de ZMCM
+
+1,930,267 1,787,357
+
+1,692,179
+
+-1.4
+
+-1.3
+
+-1.3
+
+*Densidad media
+
+urbana 2000
+
+Fuente: CONAPO (2004) Elaborado por el Grupo Interinstitucional con base en los Censos Generales de Población y
+
+Vivienda de 1990 y 2000, y el Conteo de Población y Vivienda 1995.
+
+75
+
+EL DISTRITO CENTRAL DE NEGOCIOS (DCN)
+En las ciudades latinoamericanas el centro de negocios ocupa el lugar de origen de la ciudad y constituye el foco principal de las actividades internas. El DCN también es conocido como el Distrito Central de Trafico, el Distrito Central de Comercio, el Distrito Céntrico de Negocios, Urban Core o Downtown. El DCN ha sido tratado generalmente como objeto de estudio y sobre todo como un elemento base de la estructura urbana y a pesar de que ha recibido muchas denominaciones para designar al DCN, podrían existir pocas diferencias entre el centro dominante o DCN y un subcentro urbano, concepto que es utilizado con frecuencia para hablar de distritos de comercio que guardan un grado de jerarquía debajo del centro de mayor importancia, como se observa en los trabajos de centros comerciales y en la teoría del lugar central (Nava, 2009: 27).
+Para Burgess, el DCN se ubicaba en el centro de la ciudad y se erigía como el foco de su vida social, comercial y cívica. Goodall refiere al DCN como al centro comercial y de negocios desarrollado en torno al foco del sistema de transporte intraurbano. Normativamente se refieren al área con altos valores de suelo, caracterizada por una alta concentración de negocios minoristas, oficinas, teatros, hoteles y servicios de negocios. En general, las actividades establecidas en el DCN son de orden superior y en cuanto a su forma, es dinámico y tiende a expandirse hacia áreas de mejor calidad de vivienda (Nava, 2009).
+Levy (1977 en Nava, 2009: 38) señala tres factores que contribuyen con el crecimiento del DCN: las economías de aglomeración, la mano de obra disponible y accesible y las políticas de regulación de suelo y transporte, lo cual puede resumirse en que el DCN se constituye por la aglomeración y la accesibilidad. Según Carter (1981: 219), los estudios del DCN se han enfocado básicamente en medios para definir los límites del DCN, analizando a su vez subunidades especializadas, considerando los elementos que componen al DCN por separado y estudiando las exigencias de localización y mediante la generalización de las exigencias de localización en términos de sistemas de actividades y enlaces.
+76
+
+Dentro de estas ideas es donde se realiza este trabajo, en la delimitación del DCN dentro de la Ciudad Central de la Ciudad de México. De los primeros trabajos que intentaron delimitar al DCN destacan el de Murphy y Vance (1954) en el cual analizan nueve DCNs de ciudades norteamericanas y desarrollan técnicas para su delimitación. En estos trabajos analizan el área de crecimiento, el índice de altura de la ciudad, índice de altura del DCN, índice de intensidad del CBD, espacio total de piso del DCN, suelo ocupado por negocios en el DCN, tamaño promedio de las construcciones, área de suelo del DCN como porcentaje del área total incorporada a la ciudad y el porcentaje del área urbanizada de la ciudad.
+Dentro de las conclusiones a las cuales llegaron los autores destaca que los DCN difieren de ciudad a ciudad de acuerdo al tamaño, población, uso de suelo, poder de compra, edad y diversos factores. Murphy y Vance encuentran que la estructura interna del DCN es de naturaleza dinámica y cambiante, por lo que estas zonas han emergido y se han consolido a través de un proceso histórico de expansión de la ciudad4 (Carter, 1981: 207-209, 231-235).
+Entre los trabajos que analizan la relación entre centralidad y la jerarquía de centros destacan los trabajos sobre distritos comerciales, como los de Proudfoot y William Olsson. El primero delimitó el DCN de Filadelfia mediante la elaboración de un índice de volumen anual de ventas por fachada de manzana, los que superaban los 300 000 dólares eran incluidos dentro del DCN. Olsson, por su lado, aplicó un índice de renta comercial, que obtuvo dividiendo el total de rentas pagadas por las tiendas de un edificio por la longitud total de su fachada. Los límites del centro comercial se fijaban a partir de determinados valores de renta (en Carter, 1981: 106-107; Zarate, 1991: 111).
+Burns (en Carter, 1981: 107-110) estableció una estructura jerárquica de centros comerciales llamados sistema cuaternario, que es parecida a la planteada por los programas de Desarrollo Urbano del Distrito Federal a principios de los ochenta según Nava (2009: 31). La clasificación era la siguiente:
+4 Diferentes métodos para definir el Distrito Central de negocios pueden revisarse en Carter 1981, pp.204
+77
+
+1. El centro de la ciudad 2. Centro de distrito 3. Centro de barrio 4. Subcentro
+Burns utilizó argumentos empleados en los estudios de centralidad y considerando más ventajoso el mayor control, que interpretó mediante la frecuencia de visitas para reducir la complejidad de la disposición espacial. También considero la selectividad con la cual un individuo ejerce su decisión sobre las medidas de conveniencia, incluyendo características personales como la voluntad de ofrecer crédito, o status quo. Burns incluyó aspectos del comportamiento del consumidor que sólo eran considerados en el contexto del lugar central (Carter, 1981: 107-110).
+Para Yeates y Garner (en Nava, 2009: 31-32) los centros de compras en las áreas urbanas son el equivalente de los lugares centrales. La jerarquía de estos centros son dominados por el DCN, más allá del cual se distinguen cuatro niveles de centros:
+1. Centros regionales, tiendas departamentales, zapatos, etc. 2. Centros comunitarios, ropa, florerías, joyerías, etc. 3. Centros de vecindarios, supermercados, etc. 4. Grupos aislados de tiendas, abarrotes, farmacias, etc.
+Para Carol (1960 en Carter, 1981: 107,112-113), quien intentó combinar enfoques de jerarquía comercial y los de la teoría de lugar central, el DCN se caracteriza por servir al total de la ciudad más que a una parte, no solamente aglutina actividades comerciales, sino administrativos y centrales de todos los niveles.
+Para Carter (1981 en Nava, 2009: 33), la explicación de los patrones de distribución y jerarquía de los centros comerciales se basa en la complejidad del crecimiento de las ciudades, la segregación de las áreas sociales de la ciudad y la evaluación de los consumidores de acuerdo con sus costos y medios de
+78
+
+transporte, así como la percepción personal. En las ciudades, el DCN puede presentar varias subdivisiones o distritos funcionales, como el financiero, el comercial, de entretenimiento.
+Existe entonces diversas formas en las que el DCN puede presentarse, las cuales pueden evolucionar como modelo propio o combinación de ellas (Pérez y Polèse, 1996: 42-44):
+ Modelo de consolidación del DCN en el centro histórico: En este modelo el DCN se consolida en lo que es el centro histórico como oel corazón de la boyante ciudad; por lo que el DCN es igual al centro histórico;
+ Modelo de desplazamiento del DCN de centro histórico: El DCN no es el mismo que el centro histórico debido a la evolución de la economía de la ciudad, el DCN se localiza en un área diferente a la del centro histórico. Se podría pensar como ejemplo en el Distrito Federal a Polanco frente al centro histórico, lo cual se buscara esclarecer en este capítulo.
+ Modelo polinuclear del DCN: Dada la evolución de la ciudad a un modelo polinuclear no existe un DCN dominante, existen varios centros diferenciados pero ninguno con el bastante peso como para ser llamado centro. Para los autores la ciudad de México presenta esta evolución en donde tendría distintos distritos de negocios tales como: Polanco, Reforma Coyoacán y Perisur.
+CENTRO DE CIUDADES LATINOAMERICANAS
+El centro de la ciudad latinoamericana corresponde al espacio que la gente percibe o identifica como tal, lo cual dependerá del lugar donde se vive, del grupo social al que se pertenece y al propio modo de vida de la ciudad, la ciudad central puede haberse generado a partir de muros, como en Europa y los pueblos
+79
+
+encapsulados. Otro concepto asociado al de la ciudad central es el centro histórico, el cual está relacionado con todos aquellos asentamientos humanos que tienen una fuerte conexión con el pasado de la civilización o de la misma ciudad. La ciudad central contiene al centro histórico y es de mayor extensión. El centro histórico suele ser entendido como el primer cuadro de la ciudad, mientras que la ciudad central es un área más grande5. Los centros urbanos latinoamericanos son desarrollados dentro de un conjunto específico de condiciones tanto socioeconómico y cultural fuertemente modificadas. (Nava, 2009: 34-35).
+Murphy y Vance fueron conscientes de las debilidades en los estudios de la delimitación del DCN debido a la constante evolución de estos espacios, así que sus métodos llevaron a una evaluación más real de un área central que no fuera conformada sólo por el DCN pero de distintas áreas o subcentros estrechamente asociados (Carter, 1981 : 209)
+Es por eso que la Ciudad central contiene características políticas, culturales y sociales propias del centro histórico aunado a la importancia que tiene para las actividades económicas de la ciudad, en la cual es posible distinguir dentro del mismo al DCN.
+Suarez Lastra (2010: 75) hace mención que la ciudad central es construida por las cuatro delegaciones centrales, el cual contiene al centro histórico tradicional y al Distrito Central de Negocio, que desde 1990 se observa una renovación en su centralidad.
+Salazar y Sobrino (2010) prevén una disminución de la capacidad de atracción de la ciudad central como lugar de poblamiento y de concentración del mercado de trabajo. Para estos autores, el comportamiento del área central de la ciudad incluye el centro comercial y de negocios. Su trabajo lo realizan a nivel municipal y de delegaciones y para el periodo 1980 – 2003, donde encuentran que la gran pérdida de importancia de la ZMCM en el PIB nacional es debido a la desindustrialización de la ciudad y una evolución a hacia la tercerización de la
+5 Para ver una evolución histórica de los centros latinoamericanos ver Nava, 2009. 80
+
+economía. Dado lo anterior, llegan a la conclusión de que la ciudad central difícilmente dejará de ser el punto clave alrededor del cual se realizan las diferentes fases de producción, intercambio y consumo. Tomando en cuenta la política de repoblamiento del centro de la ciudad, encontraron una especialización de la ciudad central en los servicios, particularmente en los de mayor jerarquía como los financieros y profesionales, servicios al productor, destacan también la acumulación de las principales funciones comerciales y de servicios al consumidor de la ZMCM.
+Finalmente, Garrocho (2009) propone un método basado en el análisis de flujos peatonales para delimitar el centro tradicional de comercio y servicios de la Zona Metropolitana de Toluca. Este método (flujoscopia peatonal) le permitió establecer las fronteras espaciales del centro e identificar zonas en función de las oportunidades de negocio. Esto puede resultar útil para orientar las políticas públicas en el centro y para la toma de decisiones locacionales de las firmas. Este trabajo permite una alternativa al método utilizado en este trabajo para la delimitación del Distrito Central de Negocios de la ciudad, que en el caso de la Ciudad de México la calle más transitada es la de madero en el cruce con el eje central.
+LA CIUDAD CENTRAL DE LA CIUDAD DE MÉXICO Y SUS CARACTERÍSTICAS
+En este capítulo se retoma al nodo central de la delimitación de los nodos concentradores de empleo del segundo capítulo. Los 154 AGEB6 identificados como parte del nodo central serán llamados, a partir de este momento, ciudad central, por las características mencionadas anteriormente. La ciudad central se puede ubicar en las delegaciones Coyoacán, Álvaro Obregón, Benito Juárez, Cuauhtémoc, Miguel Hidalgo y Venustiano Carranza. Lo anterior tomando en cuenta que la columna o eje subcentro de la Av. Insurgentes forma parte de la ciudad central, de acuerdo a lo visto en el modelo actual de ciudad
+6 Para ver el listado de las AGEB pertenecientes al nodo central revisar el Anexo A. 81
+
+latinoamericana, de no ser así las únicas delegaciones que formarían parte de la misma serian la Cuauhtémoc, la Miguel Hidalgo, Benito Juárez y la Venustiano Carranza, esta última con solo dos AGEB.
+La información que se analiza para delimitar y caracterizar a la ciudad central de la Zona Metropolitana de la Ciudad de México en este apartado es obtenida del censo económico 2004 del INEGI por subsector según AGEB para el Distrito Federal de los sectores de manufactura (3), comercio (4) y servicios, tales como operaciones con información y activos (5), servicios cuyo insumo es el conocimiento y la experiencia profesional (6), servicios relacionados con la recreación (7) y servicios residuales (8). Se obtuvo el listado AGEB con el número de personal ocupado para los siguientes subsectores:
+
+Cuadro 3.2 Subsectores de acuerdo al SIAC 2004
+
+31-33
+
+Industrias manufactureras
+
+4
+
+Distribución de bienes
+
+43
+
+Comercio al por mayor
+
+46
+
+Comercio al por menor
+
+5
+
+Servicios
+
+51
+
+Información en medios masivos
+
+53
+
+Servicios inmobiliarios y de alquiler de bienes muebles e intangibles
+
+54
+
+Servicios profesionales, científicos y técnicos
+
+55
+
+Dirección de corporativos y empresas
+
+56
+
+Servicios de apoyo a los negocios y manejo de desechos y servicios de remediación
+
+61
+
+Servicios educativos
+
+62
+
+Servicios de salud y de asistencia social
+
+71
+
+Servicios de esparcimiento culturales y deportivos, y otros servicios recreativos
+
+72
+
+Servicios de alojamiento temporal y de preparación de alimentos y bebidas
+
+81
+
+Otros servicios excepto actividades s del Gobierno
+
+Fuente: Elaboración propia a partir del SAIC 2004.
+
+82
+
+La información es procesada de forma cartográfica y estadística con el sistema de información geográfica ArcGis con el objetivo de realizar la descripción de las características del empleo al interior de la ciudad central de la Ciudad de México.
+Distribución del empleo en la Ciudad central de la Ciudad de México
+La ciudad central de la Ciudad de México está conformada por 154 AGEB y concentran 823 406 de personal ocupado que representa el 26.30% del total de la ZMCM en el año 2004, la delegación que concentra la mayor cantidad de personal ocupado en la ciudad central es la Cuauhtémoc con un 47.73% del total de esta zona en 69 AGEB, seguida de la Miguel Hidalgo y Benito Juárez con 25.12% y 19.68% respectivamente, ambas en 36 AGEB. Estas tres delegaciones suman 92.53% del total de la ciudad central. Completan la ciudad central las delegaciones Álvaro Obregón, Coyoacán y Venustiano Carranza, con 8 ,3 y 2 AGEB cada uno y sumando un total de 61576 personas laborando en estos AGEB, que representan tan solo el 7.47 % del total del nodo central de la ZMCM. De los tres sectores de actividad económica analizado para la ciudad central la manufactura sólo representa el 9.18% en Cuauhtémoc y Miguel Hidalgo, que concentran entre el 3 y el 4 por ciento de la ciudad central cada una; el comercio cuenta con un 24.5% ubicado principalmente en la Cuauhtémoc con un 13.7%; mientras que los servicios representan el 66.22% del personal ocupado del nodo primordial, lo que podría representar el Distrito Central de Negocios de la ZMCM, es de nueva cuenta la delegación Cuauhtémoc la que cuenta con el mayor número de personal ocupado en este sector con 248 199 seguido de la Miguel Hidalgo con 141 859 y 115 819 en la Benito Juárez (cuadro 3.3).
+83
+
+Cuadro 3.3 Distribución de las actividades económicas: Manufactura, Comercio y Servicios en la Ciudad Central de la Ciudad de México, 2004.
+
+Personal ocupado
+
+Porcentaje %
+
+Delegación
+
+AGEB
+
+Total de la CCCM
+
+Manufactura
+
+31
+
+32
+
+33 Manufactura 31 32
+
+33
+
+Coyoacán
+
+3
+
+12231
+
+4997
+
+74 4651 272
+
+0.22% 14.16% 2.94% 2.94%
+
+Álvaro Obregón
+
+8
+
+38934
+
+1983 357 1563 63
+
+1.07% 4.76% 0.68% 0.68%
+
+Benito Juárez
+
+36 162615 12891 2449 8750 1692
+
+7.31% 26.64% 18.31% 18.31%
+
+Cuauhtémoc
+
+69 391613 30513 19547 7659 3307
+
+58.32% 23.32% 35.78% 35.78%
+
+Miguel Hidalgo
+
+34 207602 24987 10949 10142 3896
+
+32.67% 30.88% 42.15% 42.15%
+
+Venustiano Carranza 2
+
+10411
+
+232
+
+140 79
+
+13
+
+0.42% 0.24% 0.14% 0.14%
+
+Total
+
+152 823406 75603 33516 32844 9243 100.00% 100.00% 100.00% 100.00%
+
+Maximo
+
+Promedio por AGEB
+
+Delegación
+
+AGEB
+
+Manufactura
+
+Maximo Manufactura
+
+31
+
+32
+
+33 Manufactura 31 32
+
+33
+
+Coyoacán
+
+3
+
+4997
+
+2621
+
+36 2585 264
+
+1666
+
+25 1550 91
+
+Álvaro Obregón
+
+8
+
+1983
+
+1438 171 1235 32
+
+248
+
+45 195 8
+
+Benito Juárez
+
+36 12891
+
+2454 706 2011 530
+
+358
+
+68 243 47
+
+Cuauhtémoc
+
+69 30513
+
+3975 3853 1035 439
+
+442
+
+283 111 48
+
+Miguel Hidalgo
+
+34 24987
+
+5622 4857 4512 925
+
+735
+
+322 298 115
+
+Venustiano Carranza 2
+
+232
+
+184
+
+116 60
+
+8
+
+116
+
+70 40
+
+7
+
+Total
+
+152 75603
+
+497
+
+221 216 61
+
+84
+
+Mapa III.1 Ciudad Central Personal Ocupado Total, 2004.
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 85
+
+Distribución del empleo en manufactura
+Las 6 delegaciones de la ciudad central cuentan con actividad manufacturera, Cuauhtémoc con un 40.86% del total de este sector frente a la Venustiano Carranza que solo aporta 2 AGEB la ciudad central cerca de 232 personas, lo cual representa un 2.23%. Si bien otros nodos concentradores de empleo sobre todo al norte de la ciudad concentran una mayor cantidad de empleo en este sector, la manufactura representó en el 2004 casi el 10% del total del empleo en la ciudad central, lo cual habla de que la existencia de esta actividad en el centro de la ciudad. Destaca que en Coyoacán se tiene un promedio de personal ocupado por AGEB en manufactura de 1666 muy por encima del 735 de Miguel Hidalgo, aunque lo anterior puede deberse al tamaño de las AGEB de cada delegación. La mayor concentración en una sola AGEB se dio en la delegación Miguel Hidalgo, con 5622 personas ocupadas en manufactura (Cuadro 3.3, Anexo C y D).
+Distribución del empleo en comercio
+El comercio en la ciudad central cuenta con 202,896 empleados, lo cual representa cerca del 25% del total de la ciudad central. En el 2004 la distribución de bienes se da principalmente en Cuauhtémoc con el 56% del personal ocupado de la ciudad central, seguida de las otras dos delegaciones principales dentro de la zona, con 20% Miguel Hidalgo y 17% Benito Juárez, entre las tres suman 187 562 empleados en la ciudad central. Por otro lado, en Venustiano Carranza que sólo cuenta con 2 AGEB en la ciudad central en este año tiene un promedio 3 393 debido que en una de estas emplea a 5 957, más del doble que el promedio por AGEB en la ciudad central, pero es en la Cuauhtémoc donde se concentra en una sola unidad de observación el valor máximo de personal ocupado en comercio con 8115 (Anexo C y D).
+86
+
+En cuanto al comercio al por mayor (subsector 43) en 2004, quienes atiende a la demanda intermedia. La distribución delegacional sigue siendo la misma en primer lugar Cuauhtémoc, seguida de Miguel Hidalgo y Benito Juárez con el 50, 25 y 21 por ciento, respectivamente. Se observa una concentración de esta actividad en vías de comunicación como el circuito interior, las avenidas Reforma e Insurgentes y por la 20 de noviembre en la Cuauhtémoc. En cuanto al promedio de personal ocupado por AGEB, en la mayoría se encuentra cerca del 380 personas ocupadas en comercio al por mayor que es el promedio de la ciudad central (Anexo C y D).
+Respecto al comercio al por menor (subsector 46), que atiende las necesidades de la población en general. La ciudad central emplea a 146 212 personas para este rubro en 2004, siendo la delegación Cuauhtémoc la que más concentra con el 58%, le sigue muy de lejos Miguel Hidalgo y Benito Juárez con el 18 y 15 por ciento respectivamente. Por su parte, Coyoacán representa el 1% dentro de la zona al emplear a 1 193 personas para esta actividad. En cuanto a los promedios resalta Venustiano Carranza, pues en dos AGEB cuenta con el 5% del total de la ciudad central, con 6581 debido principalmente al mercado de la Merced. La Cuauhtémoc en sus 69 AGEB contrata en promedio a 1 231, donde se puede observar que la mayor concentración de esta actividad se da en las cercanías del centro histórico (Anexo C y D).
+Es de recalcar que el subsector 46 emplea 2.5 veces más personas que el subsector 43 y que sus patrones de localización difiere entre ambos subsectores. Tanto en el comercio al mayoreo y al menudeo la Cuauhtémoc conto con el AGEB de mayor concentración con 1947 y 7719 respectivamente, lo cual representa una diferencia de casi cuatro veces el máximo de un subsector a otro.
+Distribución del empleo en el sector servicios
+El sector servicios en la ciudad central de la Ciudad de México representan dos terceras partes del empleo, ya que da trabajo a 545 251 de los 823 406 personas ocupadas en el nodo central de la ZMCM en 2004. En este caso, la
+87
+
+Cuauhtémoc aporta 248 199, Miguel Hidalgo 141 859 y Benito Juárez con 115 819. En cuanto al promedio por AGEB tenemos a 3532 empleados en cada una de ellas, son Miguel Hidalgo y Álvaro Obregón las que cuentan con un promedio por encima de la media con 3 941 y 3 874 respectivamente. En la Cuauhtémoc encontramos con 67 050 personas trabajando en servicios en un AGEB. En cuanto a su localización, se concentran cerca de las avenidas Insurgentes, Paseo de la Reforma, circuito interior y al sur de la ciudad, cerca de Ciudad Universitaria. Aquí es donde resaltan tanto Reforma como Insurgentes como corredores urbanos (cuadro 3.3, Anexo C y D).
+La distribución en la ciudad central del empleo en Información en medios masivos (subsector 51) es claro al contar con dos puntos de concentración uno en Reforma con 65 000 trabajadores en otras telecomunicaciones (rama 517) como pueden ser la telefonía fija, celular, servicio de satélites, distribución de suscriptores entre otros y al sur donde se encuentra Televisa en la Álvaro Obregón, por lo que el porcentaje que ocupa la Cuauhtémoc es de casi el 78% del total se este subsector. De las 154 AGEB que conforman la ciudad central solo 122 cuentan con actividad del subsector 51 (Anexo C y D).
+En cuanto a la distribución territorial de los servicios inmobiliarios y de alquiler (subsector 53) se observa una distribución heterogénea en el centro de la ciudad con un total de 13 119 personas empleadas en este subsector, la mayor concentración se da en las unidades de observación correspondientes a la Miguel Hidalgo con el 38.34%, le siguen con el 29% tanto la Cuauhtémoc como la Benito Juárez. La concentración se observa tanto por Insurgentes como cerca del circuito interior (Anexo C y D).
+Referente a los servicios profesionales, científicos y técnicos (subsector 54), el cual incluye por ejemplo los servicios de abogados, electricistas, arquitectos, etc. Se observa un claro patrón de concentración cerca de las vías de comunicación tanto de Insurgentes, Paseo de la Reforma como en el circuito interior, lejos de estas es reducida la concentración o nula. Este subsector es el segundo mayor concentrador de empleo de los servicios con 115 858 de los 545 251 personas ocupadas, lo cual representa el 21% de este sector. La delegación
+88
+
+Cuauhtémoc, Benito Juárez y Miguel Hidalgo concentran el 93% de este subsector en la ciudad central. En promedio estas delegaciones emplean por AGEB 8 993, 4 886 y 5508 respectivamente (Anexo C y D).
+El subsector 56, Servicios de apoyo a los negocios y manejo de desechos y servicios de remediación, es el que mayor porcentaje tiene en los servicios con el 21.83% con 119 540 empleados en el 2004. En este caso el mayor nivel de concentración se encuentra en Benito Juárez con el 34% seguido de la Cuauhtémoc 32% y Miguel Hidalgo en tercer lugar con 22%. El AGEB con mayor magnitud de personal ocupado, 13 525, se encuentra en la Benito Juárez, mientras que la Venustiano Carranza en la única AGEB que cuenta con esta Actividad dentro de la ciudad central aporta a 2 653 trabajadores siendo, en promedio le sigue la Álvaro Obregón con 1171 por 8 AGEB y la Benito Juárez con 1170 por 35 unidades de observación (Anexo C y D).
+Por su parte, los servicios educativos, subsector 61, son únicamente privados y excluye lo relacionado con la Secretaria de Educación Pública, lo cual explica la razón de por qué no aparece Ciudad Universitaria. Se encuentra concentrada con el 45.71% en la delegación Cuauhtémoc, que junto a la Benito Juárez y la Miguel Hidalgo, son el 90% de acumulación del personal ocupado en el subsector servicios educativos en la ciudad central de la ciudad de México. El promedio de este centro es de 227 personas por AGEB dedicadas a estos servicios, mientras que la mayor cantidad ubicada en una sola unidad de observación es de 2 330 dentro de Cuauhtémoc. Tiene presencia en 136 de las 154 unidades de observación que fueron identificadas como la ciudad central de la Ciudad de México. Las principales concentraciones se cerca de avenida de los Insurgentes, en su cruce con Paseo de la Reforma, múltiples colegios y universidades se encuentran en esta zona de la delegación Cuauhtémoc hacia el sur cuando cruza con circuito interior, donde se ubican universidades o colegios como el Simón Bolívar y la Universidad Panamericana. Se observa otra concentración de esta actividad al sur, cerca de Ciudad Universitaria (Anexo C y D).Los servicios de salud y de asistencia social (subsector 62) se encuentra
+89
+
+ampliamente concentrada en las tres principales delegaciones y la Álvaro Obregón que conforman la ciudad central, con un 99%. La Cuauhtémoc 12 714 (55%), la Benito Juárez 3 679 (16%) y Miguel Hidalgo 6 088 (26%) (Anexo C y D).
+En los servicios de esparcimiento, culturales, recreativos y deportivos y otros servicios recreativos (subsector 71), sólo cubren actividades privadas relacionadas a la cultura, el deportes y la recreación, no incluye ninguna de las actividades o inmuebles que el Estado haya construido. De las 154 AGEB que conforman el nodo central, 133 cuentan con actividades de este subsector. Este subsector emplea a 5 910 personas, 44 empleados en promedio cada unidad de observación, siendo esta actividad la que menor promedio y menor volumen tiene de entre todas las que conforman al sector servicios. La Cuauhtémoc junto con Benito Juárez acumulan el 66% de la participación total en la ciudad central. Es una subsector altamente concentrada, debido a la naturaleza del mismo, al espacio necesario y el área de influencia de este tipo de actividades suelen reforzar la posición del centro como principal lugar central de la región (Anexo C y D).
+El personal ocupado en Servicios de alojamiento temporal, y de preparación de alimentos y bebidas (subsector 72) en el 2004 contaba con 76 668 empleados, con un promedio de 498 por AGEB. El 93% de la participación total se este subsector se divide entre la Cuauhtémoc, la Miguel Hidalgo y Benito Juárez con el 53%, 24% y 16% respectivamente. La distribución territorial de estas actividades se encuentra principalmente en los ejes viales como av. Insurgentes, Paseo de la Reforma y Circuito Interior, donde se encuentran un gran número de hoteles; otra concentración de actividades de este sector, ya sea alojamiento o de alimentos se encuentra en la el centro histórico por av. Juárez y Madero. Prácticamente todos las AGEB de la ciudad central cuentan con alguna persona ocupada en el subsector 72, donde se tiene un promedio de 498 en las 153 unidades de observación, La delegación Cuauhtémoc, la Miguel Hidalgo y la Álvaro Obregón cuentan con un promedio de 581, 516 y 555 empleados por AGEB respectivamente (Anexo C y D).
+90
+
+Otros servicios excepto actividades del gobierno, subsector 81, incluyen servicios de reparación y mantenimiento, servicios personales, asociaciones y organizaciones y hogares con empleados domésticos. Este subsector representa el 4.5% del total de la ciudad central de la Ciudad de México. Del cual se repite el mismo patrón de los demás servicios y en la Cuauhtémoc se acumula el 53% del personal ocupado de estas actividades en el centro de la ciudad, la Miguel Hidalgo el 25%, mientras en Benito Juárez se concentra un 18%. Estas actividades se encuentran en todas las AGEB que conforman este nodo teniendo un promedio en personal ocupado de 230 personas. En los patrones de localización vemos la más alta concentración en el casco histórico de la ciudad de México y la Glorieta de Insurgentes (Anexo C y D).
+Como pudimos constatar, el sector que predomina en la ciudad central de la Ciudad de México es el de servicios, seguido por el comercio y con poca participación, como era de esperarse en el centro, la manufactura. Esto ocurre para toda la ZMCM, ya que el sector terciario representa el 90% del empleo total. Polése (1998: 341-342) menciona que la prestación de servicios es la principal base económica de los centros, sobre todo en las grandes metrópolis, por lo que no extrañan los resultados obtenidos de la delimitación y caracterización del corazón de la ZMCM. La delegación Cuauhtémoc, Miguel Hidalgo y Benito Juárez constituyen la ciudad central de la ZMCM a partir de la delimitación realizada en este trabajo, el cual permitió hacerlo de una forma más precisa al utilizar a las AGEB como unidad de observación, ya que como se observó durante el trabajo, las delegaciones están lejos de ser homogéneas a su interior.
+Podemos distinguir el DCN de los centros históricos, el primero responde más a un fenómeno económico mientras que el segundo responde a cuestiones políticas e ideológicas. En el DCN aglomera actividades de alto rango de jerarquía. Pero es la ciudad central la que engloba a ambas y todos los distritos funcionales que pudieran ser definidos del Distrito Central de Negocios y que se muestran claramente en los mapas elaborados en el trabajo. Faltó el distrito financiero ya que no se pudo disponer de esa información desagregada a nivel de observación de la AGEB.
+91
+
+CONCLUSIONES
+La trama de las ciudades es resultado de la interacción de una serie de factores de concentración y dispersión que dependen de su base y dinámica económica, las características del entorno geográfico, el aparato normativo e institucional y su evolución histórica.
+Debido a la complejidad que implica lo anterior, las teorías sobre la estructura urbana no toman en cuenta los accidentes históricos que suceden en el espacio, ni la evolución de las ciudades en las diversas etapas de metropolización por las que pasan, como la concentración, suburbanización y descentralización; la creación de nuevos nodos concentradores de empleo en la periferia o los avances tecnológicos en materia de transporte, comunicación y construcción.
+Como cualquier modelo y grupo de teorías, las que se enfocan en la estructura urbana son formas simples y abstractas de entender la realidad, por lo que suelen ser más descriptivas que analíticas. Por esta razón es que no se puede explicar la morfología de las ciudades con un sólo modelo, ni tampoco se puede recurrir a una teoría que lo explique todo; sin embargo, es gracias a este repaso que podemos describir la morfología de la Ciudad de México a partir del análisis empírico realizado para delimitar los nodos concentradores de empleo.
+El primer capítulo tuvo como objetivo ofrecer elementos básicos que guiaran al lector a entender lo que se buscaba analizar en el trabajo de investigación, por lo que se describió de forma esquemática tanto las teorías de localización de actividades económicas, como las correspondientes a la estructura urbana.
+Los modelos de localización de actividades económicas se inician con el de la utilización de la tierra de Von Thünen debido a que tanto en la ciudad como en el campo el uso del suelo se destina a distintas funciones. Las diversas actividades económicas compiten por el espacio. Son cuestiones como la
+92
+
+densidad y la sensibilidad a los costos de transporte los que fijan los niveles relativos a la demanda de terrenos en la ciudad.
+En cuanto a los modelos de estructura urbana, se concluyó que el modelo concéntrico no toma en cuenta las características físicas y geográficas del espacio, pues la infraestructura vial genera una morfología distinta en las urbes, así como por su falta de universalidad para poder ser aplicada en todas las ciudades, Burgess menciona sin embargo que este modelo debe ser ajustado a las ciudades reales ya que los principales cambios se producen debido a las vías de comunicación y distintos elementos geográficos. Hoyt añade el factor de las vialidades justificando el crecimiento axial de las ciudades sobre estos ejes en la teoría sectorial, no obstante recibió críticas similares por su falta de universalidad, anacronismo y no tomar en cuenta los factores sociales y culturales que intervienen en la formación y crecimiento de las ciudades, aunque aun así ofrecen alternativas para entender el patrón de crecimiento diferenciado dentro de las ciudades.
+Por su parte, la teoría de núcleos múltiples establece que el crecimiento urbano ocurre en diversos núcleos; en el caso de esta investigación, los nodos concentradores de empleo, se plantea que las grandes ciudades, como la Ciudad de México, tienen una estructura celular, con un centro más grande y especializado, que se convierte en una ciudad central. Este enfoque ofrece múltiples factores para tener un acercamiento más fiel a la realidad que los modelos anteriores, pues toma en cuenta rubros como la influencia histórica, la accesibilidad y las necesidades de las diversas fuerzas económicas.
+Por último, el modelo de las ciudades latinoamericanas propuesto por Ford y Griffin, trabajado por Borsdorf, Janoschka y Buzai, reconoce el uso mixto del suelo en las ciudades, aunque no lo representan por considerarlo complejo, aunque básicamente utilizan el esquema de núcleos múltiples. Este modelo es quizá el que mejor se adapta a la morfología de la Ciudad de México.
+93
+
+Es el modelo de las ciudades latinoamericanas el que se usó para los propósitos de este trabajo, por su semejanza de las características mencionadas en el modelo, encontradas en la Ciudad de México y que se resumirán mejor a continuación.
+Cabe resaltar que en los modelos de estructura urbana revisados el DCN es el punto de partida para la configuración de las ciudades. En el modelo de anillos concéntricos esta área es la que cuenta con los edificios es donde se concentran la mayor cantidad de empleo y es de esta zona donde se da el crecimiento de la ciudad, en el caso del modelo sectorial es en el DCN donde parte la estructuración de la ciudad a través de vías de comunicación; en el caso del modelo de núcleos múltiples el DCN no es el principal eje en del cual se desarrolla la ciudad sino que forma parte de una integración de diversos núcleos que a medida que se desarrollan se especializan y se diferencian; el modelo de las ciudades latinoamericanas establece que el centro se divide en el DCN que es un centro altamente especializado con altas concentraciones de empleo, actividades comerciales y amenidades de diversa índole se transforma de ser una zona concentrada a tener una extensión hacía la periferia (una columna) de actividades comerciales y un mercado el cual se constituye primordialmente por actividades de comercio tradicional. Así el DCN se encuentra en el centro porque es un punto neurálgico en donde convergen diversos medios de transporte, es el área más accesible para los trabajadores y consumidores, por lo cual es importante lo que se aborda en el segundo capítulo de la tesis, la ubicación y delimitación de esta área.
+El ejercicio de delimitación de los nodos concentradores de empleo, que tuvo lugar en el segundo capítulo, se realizó para 1994 y 2004, utilizando tanto la técnica del doble umbral como el indicador local de asociación espacial (LISA) bivariada. Ambas técnicas permitieron observar cómo evolucionó, en el periodo 1994 - 2004, la concentración del empleo en la Ciudad de México por AGEB, utilizando como variables tanto la magnitud como la densidad de empleo. Como
+94
+
+dato principal se utilizó el personal ocupado para ambos años, obtenido de los censos económicos del INEGI 1994 y 2004.
+En el caso del doble umbral, el requisito en cuanto magnitud de empleo para que una AGEB fuera considerada como parte de un nodo concentrador de empleo fue de 1881, cifra que aumentó a 2627 para el 2004 que represento un 40% de crecimiento en el periodo mencionado, indicando un incremento en el total del empleo en la ciudad.
+Sobre el umbral de densidad de personal ocupado, en 1994 para que una AGEB fuera considerada como parte de un nodo concentrador debía tener una densidad de personal ocupado por encima del 57, pero diez años después este valor se incrementó en un 47% tomando un valor de 87, dando cuenta del aumento en la concentración del empleo en las AGEB.
+Se propone para futuros trabajos experimentar con modificaciones a la técnica, como usar una y dos desviaciones estándar o una media igual para los dos años para observar la evolución de la concentración de empleo en este periodo bajo un mismo criterio.
+Por su lado, al usar LISA bivariada se obtuvieron resultados estadísticamente significativos con I de Moran: un valor de 0.3934 en 1994 y de 0.2966 para el 2004, lo cual habla de una autocorrelación espacial positiva de valores altos de magnitud de empleo y altos valores de densidad de empleo en las AGEB. La baja del valor de la I de Moran representa que la autocorrelación espacial de estas dos variables disminuyó sin ser este un resultado innegable.
+Lo destacable del análisis anterior fue observar el crecimiento de la extensión del centro o corredor urbano sobre la Av. Insurgentes, que en 1994 tenía su límite por el centro comercial Galerías Insurgentes y diez años después se podría decir que creció hasta el centro comercial Perisur. Por la naturaleza que tiene Ciudad Universitaria no se observa la continuidad hasta ese punto, pero si hasta San Ángel, Guadalupe Inn y Copilco.
+95
+
+En cuanto a los nodos concentradores se encontraron 6: El centro con el corredor Insurgentes (Ciudad central), Tlalnepantla, Central de Abasto, Ecatepec, Cuautitlán y Magdalena Mixhuca. Estos concentraron el 30% y 35% del total del empleo de la ciudad en 1994 y 2004 respectivamente. Si bien es cierto que la mayor parte del empleo entonces se encuentra fuera de los nodos, es posible que estos resultados difieran al realizar el mismo ejercicio utilizando el valor de la producción o PIB gracias a las grandes diferencias en productividad en las diversas actividades económicas. Cabe entonces aquí recalcar que no fue posible obtener el subsector de servicios financieros al nivel de desagregación necesario para este trabajo, lo cual modificaría los resultados obtenidos en el mismo.
+De lo anterior podemos hacer un pequeño comparativo entre la propuesta de estructura urbana de las ciudades latinoamericanas actual (ciudad fragmentada) con el caso de la Ciudad de México.
+Modelos de estructura urbana para ciudades latinoamericanas
+Fuente: Buzai, 2014 pp. 103.
+96
+
+Mapa IV.1 Ciudad de México una comparación con la propuesta de ciudades Latinoamericanas, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 97
+
+Se pueden observar características como el centro con su ampliación a partir de un corredor comercial y de servicios sobre Av. Insurgentes, que termina en centros comerciales (en este caso Galerías Insurgentes) primero, cerca de Plaza Universidad y finalmente más al sur, a la altura de Perisur. Otro elemento son los corredores industriales que nacen de igual forma de la ciudad central y van sobre importantes vías de comunicación como la Av. Hidalgo, que corre por Tlalnepantla de Baz y sigue hasta Cuautitlán Izcalli, del lado norponiente de la ciudad; mientras que del lado nororiente hacia Ecatepec este corredor industrial corre por Ferrocarril Hidalgo y después por el Gran canal. También se encontraron importantes concentraciones de manufactura en la delegación Azcapotzalco y municipios como Naucalpan y Tultitlán.
+Dentro de la delimitada ciudad central de la Ciudad de México se observan diferentes centros dentro de ella. El Distrito Comercial puede encontrarse en el denominado Centro Histórico, dentro del cual se destaca La Merced y donde al mismo tiempo encontramos el Centro Político de la Ciudad, ya que ahí se encuentra Palacio Nacional, diversas oficinas gubernamentales de la ciudad, así como la oficina del Jefe de Gobierno del Distrito Federal. Como centro ideológico y social podemos hablar de los lugares donde se concentran una gran cantidad de personas a manifestarse de diferentes formas, ya sea para celebración o indignación, o espacios para manifestaciones culturales, el cual se puede ubicar desde el Ángel en Paseo de la Reforma hasta el Zócalo, recorriendo Paseo de la Reforma desde la glorieta de esta escultura hasta el entronque con Av. Juárez, continuando por Madero para llegar al Zócalo. Faltó el distrito financiero, ya que no se pudo disponer de esa información desagregada a nivel de observación de la AGEB.
+Podemos distinguir el DCN de los centros históricos: el primero responde más a un fenómeno económico, mientras que el segundo responde a cuestiones políticas e ideológicas. El DCN aglomera actividades de alto rango de jerarquía, pero es la ciudad central la que engloba a ambas y todos los distritos funcionales
+98
+
+que pudieran ser definidos del Distrito Central de Negocios y que se muestran claramente en los mapas elaborados en el trabajo.
+Se pudo constatar que el sector que predomina en la ciudad central de la Ciudad de México es el de servicios, seguido por el comercio y con poca participación, como era de esperarse en el centro, la manufactura. Esto ocurre para toda la ZMCM, ya que el sector terciario representa el 90% del empleo total.
+La prestación de servicios es la principal base económica de los centros, sobre todo en las grandes metrópolis, por lo que no extrañan los resultados obtenidos de la delimitación y caracterización del corazón de la ZMCM. La delegación Cuauhtémoc, la Miguel Hidalgo y Benito Juárez constituyen la ciudad central de la ZMCM a partir de la delimitación realizada en este trabajo, el cual permitió hacerlo de una forma más precisa al utilizar a las AGEB como unidad de observación, ya que como se observó durante el trabajo, las delegaciones están lejos de ser homogéneas a su interior.
+99
+
+Mapa IV.2 La ciudad central de la ZMCM, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 100
+
+Cabe destacar la importancia de la Delegación Cuauhtémoc, la cual concentra la mayor cantidad de empleo sin importar el subsector; esto, junto a las características mencionadas anteriormente como la combinación de actividades económicas, sociales y políticas en el centro, es lo que hace que la Ciudad de México se diferencie de las ciudades norteamericanas. La Ciudad de México es una gran urbe que gira entorno a un área central, que se mantiene y evoluciona en su interior para permitir una articulación de la vida social y económica de la capital del país.
+Gracias a lo anterior se comprobó la hipótesis de que la ciudad central de la Ciudad de México se encuentra comprendida por el centro histórico y parte de las delegaciones Cuauhtémoc, Miguel Hidalgo y Benito Juárez, pero también de Coyoacán y Álvaro Obregón, que dan cuenta de la ampliación que ha tenido el centro a través del eje comercial y de servicios de Av. Insurgentes. Del mismo modo pudimos constatar la presencia del llamado Mercado (centro de comercio) en el centro histórico junto con la merced y el DCN. En el caso de la Venustiano Carranza, su inserción en la ciudad central se debe a al mercado antes mencionado. Lo anterior demuestra que el DCN se encuentra en una forma de consolidación en el centro histórico con un desplazamiento del mismo sin consumarse este último, dejando en este al centro de comercio. Siendo la ciudad central de la Ciudad de México la que abarca estas dos concentraciones de actividades económicas y de otras actividades socio culturales. Lo cual constata lo dicho por Pérez y Polese (1996: 42-44) sobre los distintos distritos con los que cuenta la Ciudad de México y las cuales podemos encontrar dentro de la ciudad central.
+Por otra parte se constataron semejanzas de la estructura urbana de la ZMCM con el modelo de estructura urbana para ciudades latinoamericanas. Un trabajo que incluya la localización de los diversos sectores de la población permitirá una mejor comparación entre el modelo mencionado y la estructura urbana de la Ciudad de México.
+101
+
+A través de los datos, la ciudad central demostró su importancia frente a otros nodos concentradores de empleo, concentrando en el la mayor cantidad de empleo de la ciudad durante este periodo de tiempo estudiado con un 22.47% del total del empleo de la ciudad en 1994, lo cual representó un 74% del empleo dentro de los nodos concentradores de empleo, para el 2004 del total de la ciudad conto con el 26.22% y respecto al total en los nodos un 75%, comprobándose de esta forma la segunda hipótesis del trabajo.
+En futuros trabajos sería conveniente realizar este estudio utilizando como dato de referencia al PIB en lugar del personal ocupado, dado que el Producto Interno Bruto permitirá observar las diferencias espaciales en la generación de valor agregado dentro de la ciudad dado que como mencionan Cruz y Garza (2014: 11) “Considerando … el personal ocupado ocultan las diferencias de la productividad total de los factores de la producción, en este artículo se optó por utilizar el producto interno bruto (PIB) como el indicador que mejor representa al proceso de producción que engloba la mano de obra y el capital”. Por razones de localización del empleo los patrones espaciales no tendrían que ser otros, por lo cual sería conveniente realizar un mapeo en tercera dimensión para que las diferencias en la generación de valor agregado permitan delimitar de mejor cual es tanto el centro de comercio como el Distrito Central de Negocios.
+102
+
+ANEXOS
+
+Anexo A
+Cuadro A.1 Lista de las AGEB que pertenecen a la ciudad central de la ZMCM
+
+Delegación CLAVE_AGEB Delegación CLAVE_AGEB Delegación CLAVE_AGEB Delegación
+
+CLAVE_AGEB
+
+Coyoacán
+
+090030001054-A Benito Juárez 090140001040-1 Cuauhtémoc 090150001099-8 Miguel Hidalgo
+
+090160001075-A
+
+Coyoacán
+
+090030001024-9 Benito Juárez 090140001074-0 Cuauhtémoc 090150001093-0 Miguel Hidalgo
+
+090160001073-0
+
+Coyoacán
+
+090030001012-6 Benito Juárez 090140001072-1 Cuauhtémoc 090150001094-5 Miguel Hidalgo
+
+090160001062-2
+
+Álvaro Obregón 090100001097-2 Benito Juárez 090140001059-6 Cuauhtémoc 090150001082-2 Miguel Hidalgo
+
+090160001063-7
+
+Álvaro Obregón 090100001105-9 Benito Juárez 090140001036-5 Cuauhtémoc 090150001121-4 Miguel Hidalgo
+
+090160001044-4
+
+Álvaro Obregón 090100001098-7 Benito Juárez 090140001056-2 Cuauhtémoc 090150001110-6 Miguel Hidalgo
+
+090160001045-9
+
+Álvaro Obregón 090100001110-A Benito Juárez 090140001058-1 Cuauhtémoc 090150001100-2 Miguel Hidalgo
+
+090160001121-1
+
+Álvaro Obregón 090100001120-3 Benito Juárez 090140001004-5 Cuauhtémoc 090150001111-0 Miguel Hidalgo
+
+090160001117-5
+
+Álvaro Obregón 090100001111-4 Cuauhtémoc 090150001106-A Cuauhtémoc 090150001095-A Miguel Hidalgo
+
+090160001118-A
+
+Álvaro Obregón 090100001112-9 Cuauhtémoc 090150001096-4 Cuauhtémoc 090150001101-7 Miguel Hidalgo
+
+090160001077-9
+
+Álvaro Obregón 090100001113-3 Cuauhtémoc 090150001088-A Cuauhtémoc 090150001084-1 Miguel Hidalgo
+
+090160001078-3
+
+Benito Juárez 090140001021-9 Cuauhtémoc 090150001089-4 Cuauhtémoc 090150001080-3 Miguel Hidalgo
+
+090160001071-1
+
+Benito Juárez 090140001038-4 Cuauhtémoc 090150001081-8 Cuauhtémoc 090150001085-6 Miguel Hidalgo
+
+090160001006-9
+
+Benito Juárez 090140001019-1 Cuauhtémoc 090150001107-4 Cuauhtémoc 090150001079-0 Miguel Hidalgo
+
+090160001065-6
+
+Benito Juárez 090140001023-8 Cuauhtémoc 090150001090-7 Cuauhtémoc 090150001067-8 Miguel Hidalgo
+
+090160001067-5
+
+Benito Juárez 090140001022-3 Cuauhtémoc 090150001078-6 Cuauhtémoc 090150001069-7 Miguel Hidalgo
+
+090160001066-0
+
+Benito Juárez 090140001039-9 Cuauhtémoc 090150001072-9 Cuauhtémoc 090150001068-2 Miguel Hidalgo
+
+090160001057-1
+
+Benito Juárez 090140001060-9 Cuauhtémoc 090150001071-4 Cuauhtémoc 090150001070-A Miguel Hidalgo
+
+090160001046-3
+
+Benito Juárez 090140001071-7 Cuauhtémoc 090150001073-3 Cuauhtémoc 090150001112-5 Miguel Hidalgo
+
+090160001047-8
+
+Benito Juárez 090140001057-7 Cuauhtémoc 090150001074-8 Cuauhtémoc 090150001113-A Miguel Hidalgo
+
+090160001039-3
+
+Benito Juárez 090140001070-2 Cuauhtémoc 090150001076-7 Cuauhtémoc 090150001153-4 Miguel Hidalgo
+
+090160001068-A
+
+Benito Juárez 090140001035-0 Cuauhtémoc 090150001077-1 Cuauhtémoc 090150001086-0 Miguel Hidalgo
+
+090160001069-4
+
+Benito Juárez 090140001091-4 Cuauhtémoc 090150001075-2 Cuauhtémoc 090150001103-6 Miguel Hidalgo
+
+090160001048-2
+
+Benito Juárez 090140001079-3 Cuauhtémoc 090150001064-4 Cuauhtémoc 090150001087-5 Miguel Hidalgo
+
+090160001015-8
+
+Benito Juárez 090140001034-6 Cuauhtémoc 090150001053-6 Cuauhtémoc 090150001104-0 Miguel Hidalgo
+
+090160001017-7
+
+Benito Juárez 090140001069-A Cuauhtémoc 090150001065-9 Cuauhtémoc 090150001116-3 Miguel Hidalgo
+
+090160001060-3
+
+Benito Juárez 090140001095-2 Cuauhtémoc 090150001066-3 Cuauhtémoc 090150001105-5 Miguel Hidalgo
+
+090160001059-0
+
+Benito Juárez 090140001083-A Cuauhtémoc 090150001058-9 Cuauhtémoc 090150001097-9 Miguel Hidalgo
+
+090160001083-4
+
+Benito Juárez 090140001082-5 Cuauhtémoc 090150001141-1 Cuauhtémoc 090150001091-1 Miguel Hidalgo
+
+090160001074-5
+
+Benito Juárez 090140001075-5 Cuauhtémoc 090150001133-7 Cuauhtémoc 090150001098-3 Miguel Hidalgo
+
+090160001076-4
+
+Benito Juárez 090140001061-3 Cuauhtémoc 090150001144-5 Cuauhtémoc 090150001092-6 Miguel Hidalgo
+
+090160001064-1
+
+Benito Juárez 090140001041-6 Cuauhtémoc 090150001145-A Cuauhtémoc 090150001083-7 Miguel Hidalgo
+
+090160001070-7
+
+Benito Juárez 090140001024-2 Cuauhtémoc 090150001134-1 Cuauhtémoc 090150001154-9 Miguel Hidalgo
+
+090160001058-6
+
+Benito Juárez 090140001005-A Cuauhtémoc 090150001135-6 Cuauhtémoc 090150001114-4 Miguel Hidalgo
+
+090160001055-2
+
+Benito Juárez 090140001080-6 Cuauhtémoc 090150001136-0 Cuauhtémoc 090150001115-9 Miguel Hidalgo
+
+090160001056-7
+
+Benito Juárez 090140001073-6 Cuauhtémoc 090150001147-9 Cuauhtémoc 090150001142-6 Venustiano Carranza 090170001104-5
+
+Benito Juárez 090140001081-0 Cuauhtémoc 090150001118-2 Cuauhtémoc 090150001143-0 Venustiano Carranza 090170001068-7
+
+Benito Juárez 090140001020-4 Cuauhtémoc 090150001120-A Cuauhtémoc 090150001119-7
+
+Benito Juárez 090140001037-A Cuauhtémoc 090150001109-3 Miguel Hidalgo 090160001084-9
+
+103
+
+Anexo B biLISA
+Mapa B.1 Significancia Personal Ocupado y Densidad en la ZMCM, 1994
+104
+
+Figura B.1 I de moran bivariada Personal ocupado y densidad en la ZMCM, 1994 105
+
+Mapa B.2 Significancia Personal Ocupado y Densidad en la ZMCM, 2004 106
+
+Figura B.2 I de moran bivariada Personal ocupado y densidad en la ZMCM, 2004 107
+
+Anexo C
+Cuadro C.1 Ciudad Central de la Ciudad de México (CCCM): AGEB según personal ocupado en Manufactura y por subsector, 2004
+
+Personal ocupado
+
+Porcentaje %
+
+Delegación
+
+AGEB
+
+Total de la CCCM
+
+Manufactura
+
+31
+
+32
+
+33 Manufactura 31 32
+
+33
+
+Coyoacán
+
+3 12231 4997 74 4651 272
+
+0.22% 14.16% 2.94% 2.94%
+
+Álvaro Obregón
+
+8 38934 1983 357 1563 63
+
+1.07% 4.76% 0.68% 0.68%
+
+Benito Juárez
+
+36 162615 12891 2449 8750 1692
+
+7.31% 26.64% 18.31% 18.31%
+
+Cuauhtémoc
+
+69 391613 30513 19547 7659 3307 58.32% 23.32% 35.78% 35.78%
+
+Miguel Hidalgo
+
+34 207602 24987 10949 10142 3896 32.67% 30.88% 42.15% 42.15%
+
+Venustiano Carranza 2 10411
+
+232 140 79 13
+
+0.42% 0.24% 0.14% 0.14%
+
+Total
+
+152 823406 75603 33516 32844 9243 100.00% 100.00% 100.00% 100.00%
+
+Maximo
+
+Promedio por AGEB
+
+Delegación
+
+AGEB
+
+Manufactura
+
+Maximo Manufactura
+
+31
+
+32
+
+33 Manufactura 31 32
+
+33
+
+Coyoacán
+
+3 4997
+
+2621 36 2585 264
+
+1666 25 1550 91
+
+Álvaro Obregón
+
+8 1983
+
+1438 171 1235 32
+
+248
+
+45 195 8
+
+Benito Juárez
+
+36 12891 2454 706 2011 530
+
+358
+
+68 243 47
+
+Cuauhtémoc
+
+69 30513 3975 3853 1035 439
+
+442 283 111 48
+
+Miguel Hidalgo
+
+34 24987 5622 4857 4512 925
+
+735 322 298 115
+
+Venustiano Carranza 2 232
+
+184 116 60 8
+
+116
+
+70 40 7
+
+Total
+
+152 75603
+
+497 221 216 61
+
+108
+
+Cuadro C.2 Ciudad Central de la Ciudad de México (CCCM): AGEB según personal ocupado en Comercio y por subsector, 2004
+
+AGEB
+
+Personal ocupado
+
+Porcentaje %
+
+Delegación 43 46 Total CCCM Comercio 43 46 Comercio 43 46
+
+Coyoacán
+
+2 3 12231
+
+2244 1051 1193 1%
+
+2% 1%
+
+Álvaro Obregón
+
+8 8 38934
+
+5961 1477 4484 3%
+
+3% 3%
+
+Benito Juárez
+
+36 36 162615 33905 11747 22158 17% 21% 15%
+
+Cuauhtémoc
+
+69 69 391613 112901 27958 84943 56% 50% 58%
+
+Miguel Hidalgo
+
+32 36 207602 40756 13903 26853 20% 25% 18%
+
+Venustiano Carranza 2 2 10411
+
+6785 204 6581 3%
+
+0% 5%
+
+Total
+
+149 154 823406 202552 56340 146212 100% 100% 100%
+
+AGEB
+
+Maximo
+
+Promedio por AGEB
+
+Delegación 43 46 Comercio Comercio 43 46 Comercio 43 46
+
+Coyoacán
+
+2 3 2244
+
+1150 968 697 748 526 398
+
+Álvaro Obregón
+
+8 8 5961
+
+1482 387 1378 745 185 561
+
+Benito Juárez
+
+36 36 33905 4646 1309 4610 942 326 616
+
+Cuauhtémoc
+
+69 69 112901 8115 1947 7719 1636 405 1231
+
+Miguel Hidalgo
+
+32 36 40756 5887 1287 4600 1132 434 746
+
+Venustiano Carranza 2 2 6785
+
+5957 125 5878 3393 102 3291
+
+Total
+
+149 154 202552
+
+1315 378 949
+
+109
+
+Cuadro C.3 Ciudad Central de la Ciudad de México (CCCM): AGEB según personal ocupado en Servicios y por subsector, 2004
+
+Total de AGEB por
+
+Personal Ocupado
+
+Porcentaje
+
+Delegación
+
+51 53 54 55 56 Total Servicios 51 53 54 55 56 51
+
+53
+
+54
+
+55
+
+56
+
+Coyoacán
+
+1 3 3 0 3 12231 4990 345 83 975 0 2108 0.4% 0.6% 0.8% 0.0% 1.8%
+
+Álvaro Obregón
+
+6 7 8 3 8 38934 30990 5216 420 6777 47 9368 5.4% 3.2% 5.9% 0.2% 7.9%
+
+Benito Juárez
+
+31 34 35 9 35 162615 115819 6211 3772 30873 139 40941 6.4% 28.8% 26.7% 0.5% 34.4%
+
+Cuauhtémoc
+
+55 64 65 14 66 391613 248199 76966 3814 42555 363 38076 78.2% 28.9% 36.6% 1.3% 31.5%
+
+Miguel Hidalgo
+
+28 31 32 15 32 207602 141859 9424 5030 34670 28205 26394 9.7% 38.4% 30.0% 98.1% 22.2%
+
+Venustiano Carranza 1 0 2 0 1 10411 3394 5 0 8 0 2653 0.0% 0.0% 0.0% 0.0% 2.2%
+
+Total
+
+122 139 145 41 145 823406 545251 98167 13119 115858 28754 119540 100.0% 100.0% 100.0% 100.0% 100.0%
+
+Total de AGEB por
+
+Máximo
+
+Promedio
+
+Delegación
+
+51 53 54 55 56 Servicios 51 53 54 55 56 Servicios 51
+
+53
+
+54
+
+55
+
+56
+
+Coyoacán
+
+1 3 3 0 3 1838 345 52 900 0 1155 1663 345 28 325
+
+0
+
+703
+
+Álvaro Obregón
+
+6 7 8 3 8 5898 3216 152 2773 34 4453 3874 869 60 847 16 1171
+
+Benito Juárez
+
+31 34 35 9 35 16811 1146 789 4886 57 13525 3217 200 111 882 15 1170
+
+Cuauhtémoc
+
+55 64 65 14 66 67050 64958 277 8993 164 3787 3597 1387 59 652 26 567
+
+Miguel Hidalgo
+
+28 31 32 15 32 19121 3197 1005 5508 18877 5077 3941 337 162 1083 1880 825
+
+Venustiano Carranza 1 0 2 0 1 2929
+
+5
+
+0 5 0 2653 1697 5
+
+0
+
+4
+
+0 2653
+
+Total
+
+122 139 145 41 145
+
+3541 799 94 798 701 820
+
+Total de AGEB por
+
+Personal Ocupado
+
+Porcentaje
+
+Delegación
+
+61 62 71 72 81 Total Servicios 61 62 71 72 81 61
+
+62
+
+71
+
+72
+
+81
+
+Coyoacán
+
+3 3 3 3 3 12231 4990 567 92 136 552 132 1.84% 0.40% 2.30% 0.72% 0.37%
+
+Álvaro Obregón
+
+7 8 7 8 8 38934 30990 2513 513 825 4439 872 8.15% 2.22% 13.96% 5.82% 2.47%
+
+Benito Juárez
+
+36 35 29 36 35 162615 115819 9684 3679 1490 12513 6517 31.40% 15.93% 25.21% 16.40% 18.49%
+
+Cuauhtémoc
+
+62 67 66 69 69 391613 248199 14095 12714 2415 40104 18658 45.71% 55.05% 40.86% 52.57% 52.94%
+
+Miguel Hidalgo
+
+28 31 27 35 36 207602 141859 3978 6088 1036 18057 8977 12.90% 26.36% 17.53% 23.67% 25.47%
+
+Venustiano Carranza 0 1 1 2 2 10411 3394 0 8 8 627 85 0.00% 0.03% 0.14% 0.82% 0.24%
+
+Total
+
+136 145 133 153 153 823406 545251 30837 23094 5910 76292 35241 100.00% 100.00% 100.00% 100.00% 100.00%
+
+Total de AGEB por
+
+Máximo
+
+Promedio
+
+Delegación
+
+61 62 71 72 81 Servicios 61 62 71 72 81 Servicios 61
+
+62
+
+71
+
+72
+
+81
+
+Coyoacán
+
+3 3 3 3 3 1838 320 59 125 316 62 1663 189 31
+
+45
+
+184 44
+
+Álvaro Obregón
+
+7 8 7 8 8 5898 1310 175 318 1502 264 3874 359 64 118 555 109
+
+Benito Juárez
+
+36 35 29 36 35 16811 2330 543 526 1507 693 3217 269 105 51 348 186
+
+Cuauhtémoc
+
+62 67 66 69 69 67050 1900 1719 249 2633 1001 3597 227 190 37 581 270
+
+Miguel Hidalgo
+
+28 31 27 35 36 19121 477 2506 153 2828 2561 3941 142 196 38 516 249
+
+Venustiano Carranza 0 1 1 2 2 2929
+
+0
+
+8 8 411 55 1697 0
+
+8
+
+8
+
+314 43
+
+Total
+
+136 145 133 153 153
+
+3541 227 159 44 499 230
+
+110
+
+Anexo D Técnica del Doble Umbral
+Mapa D.1 Ciudad Central Personal Ocupado en la Manufactura, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 111
+
+Mapa D.2 Ciudad Central Personal Ocupado en la Comercio, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 112
+
+Mapa D.2.1 Ciudad Central Personal Ocupado en la Comercio al por mayor, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 113
+
+Mapa D.2.2 Ciudad Central Personal Ocupado en la Comercio al por menor, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 114
+
+Mapa D.3 Ciudad Central Personal Ocupado en Servicios, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 115
+
+Mapa D.3.1 Ciudad Central Personal Ocupado en Información en medios masivos, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 116
+
+Mapa D.3.2 Ciudad Central Personal Ocupado en Servicios inmobiliarios y de alquiler de bienes muebles e intangibles, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 117
+
+Mapa D.3.3 Ciudad Central Personal Ocupado en Servicios profesionales, científicos y técnicos, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 118
+
+Mapa D.3.4 Ciudad Central Personal Ocupado en Dirección de corporativos y empresas, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 119
+
+Mapa D.3.5 Ciudad Central Personal Ocupado en Servicios de apoyo a los negocios y manejo de desechos y servicios de remediación, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 120
+
+Mapa D.3.6 Ciudad Central Personal Ocupado en Servicios educativos, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 121
+
+Mapa D.3.7 Ciudad Central Personal Ocupado en Servicios de salud y de asistencia social, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 122
+
+Mapa D.3.8 Ciudad Central Personal Ocupado en Servicios de esparcimiento culturales y deportivos, y otros servicios recreativos, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 123
+
+Mapa D.3.9 Ciudad Central Personal Ocupado en Servicios de alojamiento temporal y de preparación de alimentos y bebidas, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 124
+
+Mapa D.3.10 Ciudad Central Personal Ocupado en Otros servicios excepto actividades del Gobierno, 2004
+Fuente: Elaboración propia con datos del censo económico 2004 INEGI. ARCGIS 10.1 125
+
+BIBLIOGRAFÍA
+Aguilar, A. G. (2002). Las mega-ciudades y las periferias expandidas. EURE, XXVIII (85) Recuperado de http://148.215.2.11/articulo.oa?id=19608507.
+Aguilar, A. G. y Alvarado, C. (2004). La reestructuración del espacio urbano de la ciudad de México. ¿Hacia una metrópoli multimodal? En: Procesos metropolitanos y grandes ciudades: Dinámicas recientes en México y otros países. México.
+Aguilar, A. G., & Seminario Internacional Procesos Metropolitanos y Grandes Ciudades. (2004b). Procesos metropolitanos y grandes ciudades: Dinámicas recientes en México y otros países. México, D.F: H. Cámara de Diputados, LIX Legislatura.
+Anas A., Arnott, R., Small, K. A. (1998). Urban Spatial Structure. Journal of Economic Literatue, 36, 3, 1426-1464.
+Anselin, L. (1992). Spatial data analysis whit GIS: an introduction to application in the social science. California: University of California
+Anselin, L. (1995) Local Indicators of Spatial Association-LISA. Geographical Analysis. 27, pp. 93-115
+Bird, J. (1977), Centrality and cities. Routledge Direct Editions. Londres.
+Borsdorf, A. (2003). Cómo modelar el desarrollo y la dinámica de la ciudad latinoamericana. EURE, XXIXmayo, 37-49.
+Bustos Ma. Luisa (1993). Las teorías de la localización industrial: una breve aproximación, Estudio Regionales, Núm. 35, pp. 51-76.
+Castells, M. (1997). La cuestión urbana. Tercera parte, Los elementos de la estructura especial, Colección Arquitectura y Urbanismo. Siglo XXI Editores. México.
+Carter, H. (1981). The study of the urban geography. London: Edward Arnold.
+Cruz, F. & Garza, G. (2014). Configuración microespacial de la industria en la Ciudad de México a inicios del siglo XXI. Estudios Demográficos y Urbanos, 29(1) 9-52. Recuperado de http://www.redalyc.org/articulo.oa?id=31232808002
+Duch Brown, N. & Costa, M. (1998). La teoría de la localización, en Mella, J.M (coord.) Economía y Política Regional en España ante la Europa del siglo XXI. Ed. Akal. http://riscd2.eco.ub.es/~nduch/postgrau_archivos/Duch_localizacion.pdf
+ESRI. (2012). Biblioteca de ayuda de ArcGis. Marzo 28,2015, de ESRI Sitio web: http://resources.arcgis.com/es/help/main/10.1/index.html#/na/00qn0000001p000000/
+García Ramón, M. Dolores. (1976). Valor actual del modelo de Von Thünen y dos comprobaciones empíricas. Revista de geografía. nº 10(1-2), 11-33.
+Garreau, J. (1991). Edge city: Life on the new frontier. New York: Doubleday.
+126
+
+Garrocho, Carlos, & Campos, J. (2007). Dinámica de la estructura policentrica del empleo terciario en el área metropolitana de Toluca, 1994-2004. Papeles de población, 13(52).
+Garrocho, C. y Flores, Z. (2009). Delimitación del centro tradicional de comercio y servicios de la Zona Metropolitana de Toluca. Papeles de Población, Julio – Septiembre, 233-274.
+Garza, G. (2000). “Ámbitos de expansión territorial.” En G. Garza, La ciudad de México en el fin del segundo milenio. México: Gobierno del Distrito Federal y El Colegio de México.
+Garza, G. (2006). Estructura y dinámica del sector servicios en la Ciudad de México, 1960 – 2003. En: La organización espacial del sector servicios en México. coord. Gustavo Garza. El Colegio de México. México.
+Garza, G. (2012). Distribución espacial del sector servicios en la Ciudad de México, 19602008. Estudios Demográficos y Urbanos, Enero-Abril, 9-55
+Getis, A. (2010). Spatial Autocorrelation. En: Handbook of Applied Spatial Analysis. Software tolos, methods and applications. Sl.: Springer, 255-278.
+Grajales, S. (2001). La estructura espacial del sector servicios en la Ciudad de México. (Tesis de Maestría). México: El Colegio de México.
+Grajales, G. (2006). Microestructuración del sector servicios de la Ciudad de México. En: La organización espacial del sector servicios en México. coord. Gustavo Garza. El Colegio de México. México.
+Giuliano, G. y Small S. (1991). Subcenters in the Los Angeles Region. Regional Science and Urban Economics. 21(2), 63-82.
+Griffin, E. y Ford L. (1980). A model of latin American city structure. Geographical Review, 70, 4: 397- 422.
+Lemus (2012), Uso de suelo: Diferenciación del espacio urbano del Área Metropolitana de la Ciudad de México. (Tesis doctoral). México: Universidad Nacional Autónoma de México
+Ludueña, W (2002). Lima: poder, centro y centralidad, del centro nativo al centro neoliberal. EURE (Santiago) Vol.28 No. 83 mayo, Santiago, Chile. Pp.45-65.
+Muñiz, Iván, Sánchez, Vania, & Garcia-López, Miquel-Angel. (2015). Estructura espacial y densidad de población en la ZMVM 1995-2010: evolución de un sistema urbano policéntrico. EURE (Santiago), 41(122), 75-102. Recuperado en mayo 2, 2015, de http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S025071612015000100004&lng=es&tlng=es. 10.4067/S0250-71612015000100004.
+Nava, E. (2009) Estructura urbana policéntrica y movilidad: Exploraciones en torno a la distancia y el tiempo de desplazamiento en el Área Metropolitana de la Ciudad de México. (Tesis doctoral). México: Universidad Nacional Autónoma de México.
+Partida, V. y Anzaldo, C. (2004). Escenarios demográficos y urbanos. En: Procesos metropolitanos y grandes ciudades: Dinámicas recientes en México y otros países. México.
+127
+
+Pérez, S. y M. Polèse. (1996). Modelos de análisis y de planificación urbana. Estudio sobre la evolución y tendencias de la ciudad de Puebla. 1a. ed., Plaza y Valdés, México Polese, Mario (1998). Economía urbana y regional, Costa Rica, Libro Universitario Regional. Sánchez Peña, L. (2006). Métodos para el análisis espacial. Una aplicación al estudio de la geografía de la pobreza. Guadalajara, México. s.n. Salazar, C. y Sobrino, J. (2010). La ciudad central de la Ciudad de México: ¿espacio de oportunidad para la metrópoli? Estudios Demográficos y Urbanos, Septiembre- Diciembre, 589 – 623. Sergelles, J. A. (2013). Los diferentes modelos de localización de las actividades económicas. Universidad de Alicante. Sobrino, J. (2006). Macroestructuración espacial del sector servicios en la Ciudad de México. En: La organización espacial del sector servicios en México. coord. Gustavo Garza. El Colegio de México. México. Suarez Lastra, M. & Delgado, J. (2007). Estructura y eficiencia urbana: accesibilidad a empleos, localización residencial e ingreso en la Zona Metropolitana de la Ciudad de México (1990-2000). México: El Colegio Mexiquense, A.C. Suarez-Lastra, M. y Delgado, J. (2010). Patrones de movilidad residencial en la Ciudad de México como evidencia de co-localización de población y empleo. Eure (Santiago), 36() 107, 67-91. Unikel, L., Ruiz, C. y Garza, G. (1976), El desarrollo urbano de México: Diagnostico e implicaciones futuras. México, D.F: El Colegio de México. Zárate, Martín Antonio (1991). El espacio interior de la ciudad, Madrid, España, Editorial Síntesis.
+128
+
+

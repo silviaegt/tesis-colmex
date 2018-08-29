@@ -1,0 +1,2325 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+A DYNAMIC MATCHING AND SEARCH MODEL FOR DECEASED-DONOR KIDNEY TRANSPLANTATION
+EDWIN ALEXANDER MUÑOZ RODRIGUEZ
+PROMOCIÓN 2011-2013
+ASESOR:
+PHD. DAVID CANTALA
+JULIO 2013
+
+Contents
+
+1 Introduction
+
+1
+
+1.1 Related Literature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+2 The Model
+
+6
+
+2.1 Model: building blocks of the game . . . . . . . . . . . . . . . . . . . . . . . 8
+
+3 Equilibrium
+
+12
+
+3.1 Comparative Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+4 Introducing Patients’ Health Evolution
+
+20
+
+4.1 Simulation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+5 Concluding Remarks
+
+24
+
+Appendix
+
+25
+
+References
+
+36
+
+i
+
+A Dynamic Matching and Search Model for Deceased-Donor Kidney Transplantation
+Edwin Alexander Mun˜oz Rodr´ıguez∗
+Centro de Estudios Econo´micos, El Colegio de M´exico, A.C.
+July, 2013
+Abstract This paper deals with a critical feature of the complex real-life assignment problem of allocation of kidneys for transplantation: patient choice. We set up a stochastic game and introduce search theory tools to ﬁnd equilibrium closed forms. To the best of our knowledge, it leads to two novel results in the related literature. First, we obtain various general comparative statics results for patient optimal behavior. The most relevant one is that with patient autonomy, an increase in organ supply does not necessarily improve the performance of the system in terms of social welfare, instead it can exacerbate organ wastage. Second, our modelling approach allows the introduction of patients’ health conditions using an exogenous markovian taste shock. For a given organ quality, the less sick the patient, the greater the utility that she receives from the transplant, capturing in this way a well known stylized fact in the medical literature on post-transplant life expectancy. In this manner, we oﬀer a new framework to study the problem of organ allocation procured from deceased donors.
+Keywords: Dynamic matching, Waiting List, Organ allocation, Search theory.
+∗This paper constitutes my Master Thesis at El Colegio de Mexico. My deepest appreciation goes to my supervisor Professor David Cantala, as well as to Professors Eneas Caldin˜o, Gerri Kluter, Stephen McKnight and Miguel Torres. Their insightful comments and constructive suggestions have been determinant for this paper. I received generous support from Dr. Enrique Martinez and his team at the Centro Nacional de Transplantes (CENATRA) with the provision of relevant information for my research, speciﬁcally, Ing. Carolina Trevilla kindly provided me guidance with databases. Last but not least, I also thank my dear friends and classmates Diego V´azquez, Emmanuel Chavez, Yesica Cerda, Carlos Brown, Alexa Diaz, Jimmy Melo and Pablo Sa´nchez. Discussions with them have been illuminating and gave me warm encouragement. All errors are my responsibility.
+ii
+
+1 Introduction
+Around 68 percent of the total global activity in organ transplantation corresponds to kidney transplants.1 It is the best treatment for End-Stage Renal Disease (ESRD) compared to the alternative treatment, dialysis (peritoneal or hemodialysis), where renal functions are substituted by medical procedures.
+In Mexico, the National Center for Transplant (CENATRA), a decentralized agency of the Department of Health, is responsible for the development of the National Transplant System (SNT). According to information provided by the CENATRA, there were 9,140 patients registered in the waiting list for a kidney transplant by the end of 2012, 2,364 of them were new patients; 5,176 patients who had been waiting two or more years; actually 1723 of them had been waited ﬁve or more years. In the same year, only 696 kidney transplants from deceased donors were conducted. In this context, the Department of Health has set as a priority to increase deceased donation, for three reasons: 1. To deal with this current scant supply of organs, 2. Because of the rise in the incidence of chronic degenerative diseases associated with renal failure, and 3. Because kidney transplantation has a lower cost compared to alternative therapeutics.2
+In general, the over demand of organs is a characteristic of transplant markets, and patients’ choice can exacerbate wastage of this scarce resource. When an organ is procured, there are many compatible candidates to receive the transplant. The organ is oﬀered to candidates according to some prioritization rule. Prioritization rules attend to a complex set of principles such as fairness, medical eﬃciency, urgency and merit, as well as legal considerations (Caldero´n y Elbittar [3]). Any time a patient is oﬀered an organ, she has the right to pass and wait for a kidney of better quality (for details on organ quality, see appendix A7). While searching for a recipient who does accept the oﬀer, organs accumulate
+1Global Observatory on Donation and Transplantation, (GODT). Organ Donation and Transplantation Activities. 2011. Retrieved from: http://www.transplant-observatory.org/Pages/home.aspx
+2Programa de Acci´on Especiﬁco 2007-2012. Transplantes. More information available at http://www.cenatra.salud.gob.mx/
+1
+
+cold ischemia time, which deteriorates the tissue. After some critical time, the organ becomes unsuitable for transplantation. Thus, patients’ choice is a critical feature of this market, that should be taken into account when designing allocation policies.
+Some ﬁgures from the US underline the problem: in 2000, nearly half the kidneys clinically acceptable were refused by the ﬁrst patient to whom organs were oﬀered, because of reasons such as kidney’s size and weight, and age of the donor, among others (Su and Zenios [19]). Besides, according to data retrieved from Organ Procurement Transplant Network (OPTN), in 2011, 18 percent of the kidneys in conditions to be transplanted were ﬁnally discarded because they exceeded the maximum acceptable accumulated ischemia time.3
+To capture this problem of organ allocation, we set up a model of dynamic assignment with waiting list, and study patients’ choice. Speciﬁcally, our model consists of patients and organs sequentially entering the market. Organs are heterogeneous with random quality, and each one arriving is oﬀered sequentially to patients in the queue, according to a queue discipline. Patients are homogeneous and have preferences over organs, which depend both on organ quality and their health state. A patient can either accept or pass the oﬀer. If she accepts, the match is done and the patient is withdrawn of the queue. Otherwise, she stays in the waiting list. Then, this problem is a dynamic, stochastic discrete choice problem; it falls into the class of optimal stopping problems. Nevertheless, it has a special feature: strategic dependence, which arises from the sequentiality of the oﬀers.
+Due to these features of the problem, we incorporate in our approach the search theoretic formulation of optimal stopping problems. In our knowledge, ours is the ﬁrst paper in the Market Design literature that explicitly introduces this theoretic framework. The economics of search is a prominent and well-stablished component of economic theory, with a broad application ﬁeld.4 Speciﬁcally, we introduce in our model two nice properties lodged in the
+3Anual Data Report: Kidney. Retrieved from http://srtr.transplant.hrsa.gov. 4For a recent and exhaustive review of Search Theory, see McCall and McCall [11]. Search theory is a powerful theoretical framework to analyze resource allocation in environments with trading frictions. Its most prominent application is the study of labor markets and prices formation. It also has been applied to studies of issues in monetary theory, housing market, ﬁnancial economics, urban economics and marriage markets (Shi [15]).
+2
+
+Basic Search Model (BSM): reservation (wage) property and myopic property. The former refers to the oﬀers that are acceptable (speciﬁcally, those up to a critical value) whereas the latter tell us that this critical value is obtained comparing the return from one additional search with the return of stopping.
+We employ such properties in our approach, with the purpose to: 1. obtain closed analytic forms for equilibrium, 2. do extensive comparative statics analysis, and 3. introduce in an intuitive way the evolution of patients’ health.
+We derive closed-forms expressions for equilibrium that are novel in the literature on patients’ choice in kidney allocation. These expressions capture the strategic dependence which arises from the seniority of patients leading the waiting list, and allows us to obtain strong comparative statics conclusions on patients’ choice with perfect information. The most relevant one is that with patient autonomy, an increase in organ supply does not necessarily improve the performance of the market in terms of social welfare, instead it can intensify organ wastage: some changes in the organ distribution can do patients more selective. Due to ischemia time is a temporal restriction and First Come First Served is the queue discipline, only patients in front of the list receive an oﬀer. As they become more selective, the organ wastage may be exacerbate. There are two channels through these kind of changes occurs: ﬁrst, with patient autonomy, an increase of the highest organ quality oﬀered in the market makes the patients more selective, because it boosts the probability of receiving a better oﬀer continuing the search one additional period. Second, under a rise in the variability in organ quality oﬀers, by means of a mean-preserving spread of organ distribution, the higher incidence of high quality oﬀers compensates the loss to continue the search one additional period, while the higher frequency of bad quality oﬀers is not as bad, because patients always can remain in dialysis.
+Finally, patients’ health evolution in the transplant waiting list has been an awkward feature. We propose to address this critical and relevant point by introducing a Markov chain for health evolution. Each state of the health of the patient modiﬁes the utility she
+3
+
+receives from a transplant of an organ, in a multiplicative way. For an organ of a given quality, the less sick the patient, the greater the patient’s utility from the transplant. In terms of post-transplant life expectancy, the less sick the patient, the greater the post-transplant added years of life, capturing in this way a well known fact in the medical literature. In this way, we oﬀer a new framework to study the problem of organ allocation procured from deceased donors.
+1.1 Related Literature
+The branch of matching theory focused on allocation and exchange of indivisible goods has been extensively studied and applied to real-life problems.5 Although there is a broader literature about the allocation of resources in one-sided and two sided-markets, it is primarily concerned with static environments. Only recently the dynamics of allocation and exchange problems have started to capture the attention of researchers. For example, oncampus housing allocation (Kurino [7]), kidney exchange (U¨ nver [21]), house allocation with overlapping generations (Bloch and Cantala [4]), public housing assignment (Leshno [9]) and school choice (Pereyra [13]).
+Leshno [9] is, in our knowledge, the ﬁrst paper that studies dynamic matching problems with waiting lists. Inspired by the problem of public housing allocation, the author sets up a model with two types of objects and agents, one type of agents prefer one type of object. Social welfare is maximized when agents and objects are matched appropriately, so he derives the queue policy that minimizes the misallocation probability between agents and objects. The author does abstraction of fairness, which is a crucial point in the case of organ allocation.
+Kurt et al. [8] oﬀer a stochastic-game modelling of kidney transplant with health evolution. The authors model transplant timing decisions of autonomous patients when their health is evolving. In the context of multi-way kidney live-donor exchange, timing of decisions
+5There is a broader matching literature related to live-donor kidney exchange in static contexts. An excellent review is S¨onmez et al. [14]
+4
+
+is relevant because exchange of organs only can take place if they are done simultaneously. In contrast, our paper deals with deceased donation, where strategic dependence arises from the fact that once procured any organ, it is sequentially oﬀered to patients in the waiting list. Moreover, they model health evolution of patients as transitions between three states: pre-dialysis, dialysis (or waiting for a transplant) or death. Conversely, we propose to model health as evolving through dialysis, so that patient’s preferences could be modiﬁed while waiting for an organ. In the same scenario of live-donor exchange, U¨ nver [21] studies the maximal number of exchanges that can be conducted in a dynamic evolving agent pool, from a central authority point of view, considering incentive compatibility.
+In the Operation Research literature, there are various papers which study organ allocation.6 Su and Zenios [20] is the closest to our model. The authors develop a queueing modelling to examine how the queue discipline bounds the impact of patient choice on organ wastage. They consider two diﬀerent queue disciplines, First Come First Served (FCFS), and Last Come First Served (LCFS). They found that with patient autonomy, FCFS exacerbates organ wastage while LCFS provides optimality in organ use. Moreover, they prove that allowing candidate choice, social planner actions are ineﬀective in FCFS, while patients autonomy is eﬃcient under LCFS, so optimal planner action is not taking anyone. While the authors consider organ and patient arrival processes, we abstract them from the analysis. Like us, they use a dynamic programming formulation of the patients’ maximization problem in a given position waiting list, but their modelling approach is incompatible with the derivation of closed forms for equilibrium. On the contrary, we do derive these in a very generalized way, being able to do broader comparative statics.
+Su and Zenios [2005] develop a model to study the conﬂict between patient choice and social welfare, in a static environment with a given number of organs and patients in a pool, so there is no waiting list. They build a ﬁrst-best policy deﬁned as the one that maximizes
+6The seminal paper of Zenios [22] models the transplant waiting list as a queuing model with reneging with multiple classes of patients, to study the real-life diﬀerences in waiting time among diﬀerent groups of patients. Zenios, et al. [23] and Bertimas et al. [2] study the trade-oﬀ between clinical eﬃciency and fairness.
+5
+
+the social welfare when patients accept all organ oﬀer, and a second best, where the optimal policy is subject to a patient’s incentive compatibility constraint. By means of a numerical study, a comparison between these two policies shows that patient choice leads to losses in social welfare if there is high variability in organ types.
+Su and Zenios [2006] studies the role of patient choice under information asymmetries from a mechanism design approach. Patients have private information related with degrees of risk represented by their type. They propose a multi-queue system, where each patient chooses what queue-class to join in order to maximize her expected utility. Moreover, they consider two diﬀerent mechanisms. One in which the social planner seeks to maximize clinical eﬃciency, deﬁned as the sum of expected utility of the candidates. Other in which the social planner aim to enhance equity deﬁned by the Rawlsian max-min criterion. As a result they found that in the ﬁrst mechanism, private information is proﬁtable to high-risk candidates, while in the second one it is the case with low-risk candidates.
+The remainder of the paper is organized as follows. Section 2 introduces the model of the market with waiting list like a stochastic game. In Section 3 we prove the existence and uniqueness of equilibrium, and we derive an analytic expression for it. Also, we state results on comparative statics. Speciﬁcally, we study the eﬀect on patients’ quality selectiveness of changes in diﬀerent characteristics of the system: dialysis quality, patients’ valuation of the future as well as characteristics of organ distribution. The next section is devoted to introduce the evolution of patients’ health, and to ﬁnd the equilibrium in this new scenario. Some concluding remarks and possible extensions are mentioned in Section 5. Omitted proofs are formally stated in the Appendix.
+2 The Model
+Consider a matching problem where agents/patients and items/objects/organs arrive sequentially. Agents have preferences over objects. Objects have types which stand for
+6
+
+item’s quality. There is a waiting list that agents join in order of arrival. Priority is assigned by seniority in the waiting list. Consumption is not compulsory, so whenever a patient is oﬀered an object, she can either pass or accept (the agent confronts the decision of accepting the organ she is being oﬀered or waiting for a better quality one). There is no sanction for declining an oﬀer. When a patient passes, the organ is oﬀered to the patient next in the queue.
+We model this situation as an stochastic game, and analyze the equilibrium behavior of patients in such a game. There are several reasons for which we follow this approach. The most relevant one is that, except from the agent in the ﬁrst position in the waiting list, there is strategic dependence in the agents’ behavior. In fact, for any patient who is in the second position or any position behind this, her payoﬀ depends not exclusively on her decision but on the decisions taken by other agents ahead her in the queue.
+In addition, in the usual solution concept of stochastic games, Markov Perfect Equilibrium, the payoﬀs and strategies which are disposable to agents are markovian, in the sense that it is usually deﬁned. We return to this property below. It refers to the notion that the transition from one state of the game to another depends both on the strategies taken by players in the previous period as well as on the state in such period, but not on the entire history of the game, as it is usual in dynamic games. It has two advantages. First, markovian strategies transform the dynamic programming problem into a stationary one, which facilitates the analysis considerably 7. Second, several authors are aware that this markovian characteristic of patient’s decision making capture real-life medical practice (Kurt et al. [8]).
+Finally, in stochastic games agents care for life-time utility rather than for a one-period payoﬀ, which is more than reasonable in the context of organ transplantation, where the tissue quality is highly correlated with graft survival and post-transplant life expectancy.
+As mentioned above, our aim is to focus on the behavior of the patients in the waiting list. We make two kinds of abstraction to simplify the problem. The ﬁrst one is a set of
+7Research on equilibrium search usually assume a steady-state model, turning the problem also into a stationary one (Smith [16]).
+7
+
+abstractions that are hereafter maintained; general assumptions to put attention in agent’s choice. The second one is a collection of assumptions to clarify the exposition and which are removed in a subsequent section. These are: agents and organs live forever, and patients’ health evolution do not evolve in the waiting list. Furthermore, the former set of general assumptions are:
+• Patients are perfectly compatible with organs. We abstract issues of medical compatibility, such as blood compatibility and Human Leucocyte Antigen.
+• Time is discrete.
+• Patients and organs arrive one per period, i.e. we abstract arrival process of patients and organs.
+• Perfect information is available. In particular, patients know the organ’s types distribution.
+• Patients are homogeneous in the sense that they have the same preferences over objects, as well as the same valuation of the future, i.e. all patients are equally impatient.
+• We do not consider geographical factors.
+• It is an inﬁnite horizon decision problem.
+• Patients are forward-looking. It means that patients choose their actions with basis on their expected payoﬀ.
+2.1 Model: building blocks of the game
+We refer to organs as the objects which have to be matched with agents. In each period, an organ of type θt is randomly and independently chosen from an exogenously given cumulative distribution function F (θ) truncated over Θ = [θ, θ].8 Note that this implies
+8For simplicity, in the next section we assume, without loss of generality, θ = 0.
+8
+
+that for any T, the sequence of random variables {θi}ti=+tT are independently and identically distributed, so this sequence is trivially a Markov Process. In fact, for all A ⊆ Θ,
+
+P rob[θt+1 ∈ A|θt = θ] = P rob[θt+1 ∈ A].
+
+The set of agents is N = {p1, p2, ...}. A state of the game G in period t is given by an ordered list xt = (p1g(t,1), pg2(t,2), ..., pgi (t,i), ..., pkg(t,k), θt), where the ﬁrst k elements stand for patients in the waiting list at period t, while θt stands for the type of the organ which is being oﬀered in this period. The correspondence g : N × N → N identiﬁes the patient who occupies position i in the waiting list at period t. The subindex i is the position of the patient g(t, i) at time t. Notice that the set St = {pg1(t,1), pg2(t,2), ..., pkg(t,k)} is a poset9 under the order relation pgi (t,i) pgj(t,j) ⇔ g(t, i) ≤ g(t, j) or under de relation order pig(t,i) pj(t,j) ⇔ i ≤ j. Moreover, both orders yields to the same ordering over this set.10 Both order relations, and over the set of patients, captures the arrival order to the market, so pgi (t,i) pj(t,j) means that the patient pg(t,i) join the market earlier than the patient pg(t,j), so the former is ahead the later in the queue. Hereafter we refer to the patient i, as the patient which occupies position i in the waiting list, unless the distinction between position and patient is necessary. Once we introduce symmetry assumptions about strategies, this distinction will become irrelevant. The set of states of the queue is given by X = (2N , ) × Θ.
+When a patient receives an oﬀer, she must decide whether to accept (a) or decline (d) the organ. Otherwise, he cannot make any decision. Formally,
+
+Deﬁnition 1 (Actions) Let Ai(xt) the set of actions available to the candidate i in the
+
+state xt, 
+
+{a, d} Ai(xt) =
+
+if for all j < i, atj = d,
+
+(1)
+
+∅
+
+otherwise.
+
+9A partial ordered set or poset formalizes the idea of an ordering. A partial order is a relation reﬂexive, transitive and antisymmetric. A poset is a set with a partial order.
+10Formally, there exists an order isomorphism from (St, ) to (St, ).
+9
+
+Let ati any action chosen by the player i in state xt, so ait ∈ Ai(xt). We deﬁne at = (at1, at2, ..., atk) as an action proﬁle at time t. The history of the game at time t, ht = (x0, a0, x1, a1, ..., xt−1, at−1, xt) is common knowledge.
+In a dynamic game, a strategy for a player i is a set of functions which maps any history ht into the set of actions available in state xt to player i, Ai(xt). However, we focus on markovian strategies. Intuitively, markovian strategies captures the idea that the past inﬂuences the present only through the state of the game; the only decision-relevant information to the agent is contained in the state of the market in the decision period, and agents do not care about the way in which they arrive to such state.
+
+Deﬁnition 2 (Markovian Strategies (Fudenberg y Tirole [6])) For a given player i, a strategy σi is said to be markovian if for each time t and t and histories ht and ht such that xt = xt , then σi(ht) = σi(ht ).
+
+Note that with markovian strategies, σi speciﬁes an action for each state x rather than for any history ht. This assumption reduces signiﬁcatively the strategic space.
+At the end of each period, each patient obtains a reward, which is related to the quality of life. If the agent gets an oﬀer and accepts it, the reward is equal to the accepted organ type, and she is withdrawn from the game. In other cases, either because she declines the oﬀer or because she cannot take any action, she remains in the queue for the next period and receives a payoﬀ δ, which corresponds to stay in dialysis for a period. Formally,
+
+Deﬁnition 3 (Period Payoﬀs) Let ui(at, xt) : i Ai × X → R+,
+
+
+
+δ, ui(at, xt) =
+
+if for some j ≤ i, ajt = a, ∨, ai = d,
+
+(2)
+
+θt, if for all j ≤ i, aj = d, ∧, ai = c.
+
+Using the deﬁnition of markovian strategies, we obtain the following result.
+
+10
+
+Proposition 4 (Transition Probability) A transition probability for this game, is a function P : X × A × X → [0, 1] such that P(xt+1|xt; σ(xt)) is the probability of transition from state xt to state xt+1 after the joint action σ(xt), given by:
+
+P xt+1|xt = pg1(t,1), pg2(t,2), ..., pig−(t1,i−1), pig(t,i), pgi+(t1,i+1), ..., pkg(t,k), θt ; σ(xt) =
+
+
+
+∀ 1,
+ 
+
+if xt+1 = p1g(t+1,1), pg2(t+1,2), ..., pig(t+1,i), ..., pkg(+t+1 1,k+1), θt+1
+
+∧
+
+h ≤ k, σh(xt) = d ∧ g(t + 1, h) = g(t, h) ,
+
+
+
+
+
+∀ 
+1, 
+
+if xt+1 = p1g(t+1,1), ..., pig−(t1+1,i−1), pig(t+1,i), ..., pkg(t+1,k), θt+1
+
+∧ σ1(xt) = a ∧
+
+h < k, g(t + 1, h) = g(t, h + 1),
+
+
+
+
+
+
+
+∀ 1, if xt+1 = pg1(t+1,1), ..., pig−(t1+1,i−1), pig(t,i), ..., pkg(t+1,k), θt+1 ∧ σi(xt) = a ∧ h < i, σh(xt) = d ∧ g(t + 1, h) = g(t, h)
+
+
+
+
+
+
+
+   
+
+∧ ∀ h|i < h < k, g(t + 1, h) = g(t, h + 1),
+
+
+
+
+
+
+
+
+
+
+
+0, otherwise
+
+∀ θt, θt+1 ∈ Θ. (3)
+
+Proof. Recall that at the start of any period an organ and a candidate arrives on the market, and the later joins the last position in the waiting list. Consider the state xt where an organ of type θt is being oﬀered and there are k patients in the queue. If nobody in the market accepts the organ (∀h ≤ k, σh(xt) = d), with probability one all patients remain in the same position for the next period, so g(t + 1, h) = g(t, h) for all h ≤ k, and the new patient g(t + 1, k + 1) joins the queue in the last position, k + 1. Now consider the patient g(t, i) who occupies the position i = 1 in period t. If the patient leading the waiting list accepts (σ1(xt) = a), with probability one she moves to the position i − 1 in the next period, so g(t + 1, i − 1) = g(t, i). Finally, if all patients ahead her decline, and she accepts, she is withdrawn from the market, all patients ahead her remains in the same position (g(t + 1, h) = g(t, h) for all h such that h < i), and candidates behind her move one position ahead, that is g(t + 1, h) = g(t, h + 1) for all i < h < k. In both cases the arriving agent g(t + 1, k) joins position k in the queue. Given that the distribution of organ types is exogenously given, it does not aﬀect transition probabilities across states.
+Patients discount future with a factor β ∈ (0, 1), so the greater the β the greater the valuation of the future, and the lesser the agent’s impatience. Finally, there is an initial state x0 = ∅.
+
+11
+
+This market with waiting list is represented as a stochastic game
+
+G = (N , X , {Ai}i∞=1, {ui}i∞=1, P, β) .
+
+The game proceed as follows. At period 1, an agent and an item arrive; the item is oﬀered to the agent, who can either accept it or pass. If she accepts she is withdrawn from the market, and obtain a payoﬀ equal to the organ type, each period, for the duration of her life. If she passes, she obtains a payoﬀ of δ corresponding to remain in dialysis and wait for a better organ. In every period an agent and an organ arrive, and the organ is sequentially oﬀered to agents, accordingly to . Agents choose their actions σi in order to maximize the expected value of their life-time utility,
+
+∞
+
+Ui∞(σi, σ−i)(x0) = βt−1ui(xt, σi(xt), σ−i(xt)),
+
+(4)
+
+t=1
+
+i.e. the sequential optimization problem for each agent is given by:
+
+∞
+
+max E
+
+βt−1ui(xt, σi(xt), σ−i(xt))
+
+(5)
+
+σi(xt)
+
+t=1
+
+where expectations are taken over transition probabilities as deﬁned in proposition 4.
+
+3 Equilibrium
+
+Next, we state the equilibrium concept that is used to analyse patients’ behavior.
+
+Deﬁnition 5 (Perfect Markov Equilibrium (Fudenberg y Tirole [6])) A strategic
+
+proﬁle σ∗ = (σi∗, σ−∗ i) where for all i, σi∗ is markovian strategy, is a PME of this game, if for
+
+all i
+
+E Ui∞(σi∗, σ−∗ i)(x0) ≥ E Ui∞(σi, σ−∗ i)(x0) .
+
+(6)
+
+12
+
+It is important to notice that, in any period and for any candidate excepting the ﬁrst one, she is able to make a choice if and only if all agents ahead her pass the organ which is being oﬀered. So she cares only about the decisions taken by those agents who arrived before her on the market and who remain in it. Moreover, by assumption agents are homogeneous and forward-looking, so they only diﬀer in their position in the queue. It means that when any patient has a given position in the waiting list, she confronts the same strategic considerations. Provided that, in a given period t, the relevant-state variables for any patient is her position in the waiting list i, and the type of the organ which is being oﬀered in such period θt. In addition, considering that we restrict our attention to markovian strategies, it seems reasonable to assume that whenever two patients reach any given position, in some state follow the same strategy. We formalize these intuitions in the following two statements:
+Deﬁnition 6 (Payoﬀ-Relevant State Variables) For any patient g(t, i) who has the position i in the state of the market xt for some t, the payoﬀ-relevant state variables are st = (i, θt).
+
+Assumption 7 (Symmetry) Let g(t, i) and g(t , i) be two patients who occupy the same position i in states xt and xt . Then, they follow thereafter the same strategy. The sequence of such symmetric strategies, is the strategic proﬁle {γi}i∞=1 such that any agent follow the action prescribed by this proﬁle whenever she occupies position i when the type of organ oﬀered int the period t is θt.
+
+Notice that γ : N × Θ → {a, d} ∅. In the following deﬁnition and lemma, we restate the period payoﬀs and the transition probabilities given respectively by deﬁnition 3 and proposition 4 in terms of the relevant state variables as stated in deﬁnition 6 and when assumption 7 holds.
+
+Deﬁnition 8 (Period Payoﬀs (restated)) When assumption 7 holds, the period utility
+
+function u :
+
+i j=1
+
+Aj
+
+×
+
+N
+
+×
+
+Θ
+
+→
+
+R+
+
+in
+
+terms
+
+of
+
+the
+
+payoﬀ-relevant
+
+state
+
+variables
+
+is
+
+given
+
+13
+
+by: 
+
+δ, u {γj}ji=1, (i, θt) =
+
+if for some j < i, γj(θt) = a, ∨, γi(θt) = d,
+
+(7)
+
+θt, if for all j < i, γj(θt) = d, ∧, γi(θt) = a.
+
+Proposition 9 (Law of motion) The transition probability P (·) for a patient in position i in the queue at period t and who remains in the market in period t + 1, is:
+
+
+
+1, 
+
+if st+1 = (i − 1, θt+1) and for some j < i, γj(θt) = a,
+
+
+
+
+
+
+
+P (st+1|(i, θt)) = 1, if st+1 = (i, θt+1) and for all j ≤ i, γj(θt) = d,
+
+(8)
+
+
+
+
+
+
+
+
+
+0, otherwise.
+
+Proof. It follows directly from proposition 4, taking into consideration those states where patient in position i in the state of the game xt remains in the market in the state xt+1.
+The sequential formulation of the optimization problem (5) is cumbersome. In the next proposition, it is restated in the more tractable recursive form. Here we incorporate the tools to solve optimal stopping problems developed in the core of search theory, that are well known in the literature.11 We modify the Basic Search Model (BSM) to adapt it to our strategic context. In fact, when a candidate receives an organ oﬀer, she confronts the decision to stop (accepts) or continue the search for a better organ one additional period. In our context, additional considerations arise due to the strategic dependence of the decisions made by the preceding patients. This dependence modiﬁes the support of the distribution of organs which are oﬀered to a candidate diﬀerent to the one who leads the waiting list.
+
+Proposition 10 The Bellman equations associated with the sequential problem (5)-(6), are
+
+V (1, θt) = max θt , δ + βE[V (1, θt+1)]
+
+(9)
+
+a,d 1 − β
+
+11Our analysis of the optimal stopping problem is based on Adda and Cooper [1], Ljungqvist and Sargent [10], McCall and McCall [11] and Stokey and Lucas [17].
+14
+
+for i = 1, and
+
+
+
+δ + βE[V (i − 1, θt+1)], V (i, θt) =
+
+if for some j < i, γj(θt) = a,
+
+maxa,d
+
+θt 1−β
+
+,
+
+δ
+
++
+
+βE[V
+
+(i,
+
+θt+1)]
+
+,
+
+if ∀j, such that 1 < j < i, γj(θt) = d,
+
+(10)
+
+for i > 1. The law of motion is given by the transition probability as deﬁned in proposition
+
+9.
+
+Proof. Recall that δ stands for the period payoﬀ of being in dialysis for a period, β is the discount factor, (i, θt) are the state variables of the patient which occupies a position i in the queue at period t, when an organ of type θt, randomly chosen from its distribution F (θ), is being oﬀered. If any patient j ahead of her accepts, then the patient i does not receive an oﬀer in this period, she receives a payoﬀ δ of being in dialysis and advances to the position i − 1 in the waiting list, so in this case her total expected payoﬀ is
+
+δ + βE[V (i − 1, θt+1)]
+
+On the other hand, if she actually receives an organ oﬀer, then she has two possibilities: to accept (or to stop the search), receiving an adjusted lifetime payoﬀ
+θt ,
+1−β
+being removed from the market, or to decline, staying for a longer period on dialysis, and continuing the search in the next period, and remaining in the same position in the waiting list, in which case her total expected reward is
+
+δ + βE[V (i, θt+1)]
+
+15
+
+Proposition 11 (Existence of Equilibrum) There is a unique function V satisfying the dynamic programming problem stated in proposition 10.
+
+Proof sketch. We use the Contraction Mapping Theorem. First, we show that the Bellman operator T associated to (9)-(10) is a contraction mapping, proving that T satisﬁes the Blackwell suﬃcient conditions of monotonicity and discounting. Being T a contraction, the Contraction Mapping Theorem assures that there is a unique ﬁxed point V such that T V = V . (see details in Appendix A1)
+
+Proposition 12 (Uniqueness of Equilibrium) There is a unique sequence of policy functions (unique strategy proﬁle) {γi∗}∞ i=1 which solves the Dynamic Programming problem stated by proposition 10. Moreover, this rule takes the reservation form
+
+
+
+d γi∗(θt) =
+
+if θt < θi∗
+
+(11)
+
+a if θt ≥ θi∗,
+
+where θi∗ is the organ’s quality reservation type.
+
+Proof. Consider the Dynamic Programming problem stated in proposition 10. Notice
+
+that when any candidate i ≥ 1 confronts a decision, the value function can take the form
+
+V (i, θt) =
+
+θt 1−β
+
+,
+
+or
+
+the
+
+form
+
+V
+
+(i, θt)
+
+=
+
+δ
+
++
+
+βE[V
+
+(i, θt+1)].
+
+In the ﬁrst case, V (·) is strictly
+
+increasing in θt while in the second case V (·) is constant. The following ﬁgure depicts V (·).
+
+16
+
+It is clear that if θt < θi∗ then it is optimal to decline the oﬀer θt and continue the search,
+
+while
+
+if
+
+θt
+
+>
+
+θi∗
+
+the
+
+optimal
+
+choice
+
+is
+
+to
+
+accept
+
+and
+
+to
+
+stop
+
+the
+
+search.
+
+The
+
+facts
+
+that
+
+θt 1−β
+
+is
+
+strictly increasing, while δ + βE[V (i, θt+1)] is constant, guaranties that there exist a unique
+
+θi∗ which satisﬁes
+
+θi∗ = δ + βE[V (i, θt+1)]. 1−β
+
+Theorem 13 (Optimal Reservation Thresholds) The sequence of optimal reservation thresholds {θi∗}∞ i=1 for the problem 10-9 is given by
+
+θ
+
+θ1∗ = δ(1 − β) + β θ1∗F (θ1∗) + θdF (θ)
+
+(12)
+
+θ1∗
+
+for i = 1; and,
+
+θi∗−1
+
+θi∗ = δ(1 − β) + β (1 − F (θi∗−1))θi∗−1 + F (θi∗)θi∗ +
+
+θdF (θ)
+
+θi∗
+
+for i > 1.
+
+(13)
+
+Proof sketch. For the reservation organ type in any given position i, it has to be the
+
+case that δ + βE[V (i, θt+1)] =
+
+. θi∗
+1−β
+
+To develop expectations, we introduce the fact that
+
+17
+
+the candidate in position i receives a transplant oﬀer of an organ of type θt+1 if for all j < i θi∗ > θt+1. By assuming that θ1∗ ≥ θ2∗ ≥ ..., i receives an oﬀer in period t + 1 with probability F (θi∗−1), in which case she obtains the expected utility E V (i, θ )|θ < θi∗−1 , where expectation is taken over the distribution of organ types conditional on receiving an oﬀer. Moreover, she does not receive an oﬀer in t + 1 with probability 1 − F (θi∗−1), receiving a continuation payoﬀ δ + βE[V (i, θt+1)]. (See details in appendix A2.)
+By deﬁnition 5, the strategic proﬁle characterized by the sequence of thresholds {θi∗}i∞=1 is a Markov Perfect Equilibrium of the game G. Notice that for candidates behind ﬁrst position, the optimal threshold (13) incorporates the fact that in a given period, the candidate only receives an oﬀer in the next period conditional to all patients ahead her passing the oﬀer, i.e., the organ distribution which the patient will confront if she decides to continue the search for a new period is F (θ|θ < θi∗−1), which has a reduced domain; this fact makes the candidate less selective when she receives an oﬀer.
+
+3.1 Comparative Analysis
+
+In the next theorems, we establish some results on comparative statics.
+
+Theorem 14 (Comparative Statics I) Let f (θ) the density function associated to F (θ). If f (·) is diﬀerentiable on (0, θ), Then, for all i ≥ 1,
+
+dθi∗ > 0
+
+(14)
+
+dδ
+
+dθi∗ > 0
+
+(15)
+
+dθ
+
+dθi∗ ≥ 0.
+
+(16)
+
+dβ
+
+Proof sketch. The proof uses an inductive argument and the well-known Leibniz’s Rule to diﬀerentiate under the integral sign (See details in appendix A3).
+
+18
+
+In words, the higher the utility that a patient receives by staying in dialysis for a period or the higher the maximal organ quality that could be oﬀered in the market, the higher the incentives to wait for a better organ. In addition, as the candidate becomes more patient (values more the future), she is ready to wait for a better organ oﬀer.
+
+Theorem 15 (Comparative Statics II-Riskiness of Organ Distribution) Consider two distributions F (·) and G(·) for θ, with support over [0, θ], such that:
+
+θ
+
+θ
+
+1. θdF (θ) = θdG(θ) and,
+
+0
+
+0
+
+t
+2. For all t ∈ [0, θ], (G(θ) − F (θ)) dθ ≥ 0, 0
+
+i.e., F (·) second order dominates or is less risky than G(·) (Sargent and Ljugqvist [10]). Let θi∗,F , θi∗,G the optimal reservation thresholds for a patient in position i under the organs distributions F (·) and G(·), respectively, as they are given by theorem 13. Then, for i = 1,
+
+θ1∗,F ≤ θ1∗,G.
+
+(17)
+
+Proof. See appendix A5. Notice that this theorem, and the result (15) of theorem 14, have a relevant implication for
+the design of organ allocation policies: from a social planner point of view, not all increases in organ supply are desirable under First Come First Served queue discipline, which is the gold standard of fairness. Moreover, if the rise in supply increases the highest organ quality oﬀered in the market, as well as if the rise in supply increase the variability of organs without change the mean quality oﬀered, patients will become more selective and valuable transplant opportunities will be missed. For simplicity, let us to consider the case of an increase in the highest organ quality. Suppose that an organ can be oﬀered T times, by the restriction imposed by ischemia cold time. The probability that an organ randomly drawn be wasted is P rob[θ ≤ θT∗ ] = F (θT∗ ), which is nondecreasing in θT∗ . In theorem 14 we prove that an increase in the highest organ quality increases θT∗ , so the rise in the highest quality increases
+19
+
+Figure 1: Markov chain for patient’s health evolution
+the probability of an organ to be wasted. Intuitively, the increase in the highest organ quality boosts the probability of receiving a better oﬀer if the search continues one additional period, so there are incentives to do so.
+Similarly, with a rise in the variability of quality oﬀers, by means of a mean-preserving spread of organ distribution, the higher incidence of high-quality organ oﬀers compensates the loss to continue the search one additional period, while the higher frequency of bad quality oﬀers is not as bad, because patients always can remain in dialysis, or do not exercise the option of transplant. 12
+4 Introducing Patients’ Health Evolution
+In this section, we propose a formal approach to introduce patient’s health conditions in a tractable way. We model it as an exogenously given three-state absorbing Markov chain, which drives the evolution of the health condition of any patient in this market. The states of the chain are 1, 2, 3 ∈ [0, 1] and are such that 1 ≥ 2 ≥ 3 = 0.
+In this absorbing Markov chain, the state 1 stands for the health condition of a patient which have just joined the market, i.e. those patients whose Chronic Kidney Disease have just reached the End-Stage Kidney Disease (ESKD), so they are less sick than those patients whose health condition has reached the state 2, while 3 is an absorbing state which stands for decease.13
+12In the context of search theory, Ljungqvist and Sargent originally interpreted the risk increase of the distribution in terms of option pricing theory. The reader must bear in mind that according to the BlackScholes formula, the value of an option is increasing in the variance of the underlying asset.
+13It may seem quite restrictive to model the health evolution by three stages, but it is enough to capture the
+20
+
+Deﬁnition 16 (Health State Transition Matrix) The transition probabilities between health states are given by the transition matrix:
+
+
+
+
+
+12
+
+3
+
+
+
+
+
+
+
+
+
+ 1 p q 1−p−q 
+
+
+
+
+
+
+
+
+
+ 
+
+2
+
+0
+
+r
+
+1−r  
+
+
+
+
+
+30 0
+
+1
+
+where p, q, r ∈ [0, 1] and, p + q > r.
+
+The condition p + q > r guarantees the intuitive idea that, for a given agent, the probability of being dead in the next period when she is less sick ( 1) in the present, is lower than the probability of dying in the next period when she is sicker ( 2) in the present.
+Notice that although in any period there is a small probability that any patient be alive in the next period, this probability decreases with the number of periods a given agent has been in the market. This simple Markov chain captures the fact that in the long run patients die. Intuitively, in this new context, the threshold is expected to be lower than the one given by theorem 13, because there is uncertainty about her health condition in the future. Any agent confronts a more complicated decision when she receives an oﬀer, because she can decline it and continue the search for a better organ, but the incentives to do it are undermined by the risk of expiring in the next period.
+In this new setup, in addition to her position in the waiting list and the quality of the oﬀered organ in a given period, any patient has to take into account her health condition when she chooses to stop or continue the search. So the relevant-payoﬀ state variables in the period t, are now (i, θt, ), where as before, i and θt stands for position and organ quality, while ∈ { 1, 2, 3} is the health condition of the patient in position i. Assuming that symmetry holds as before, the next statement deﬁnes the way in which health conditions
+basic facts, and streamline the analysis considerably. For further applications, the states must be established based on medical criteria, taking into account the slow evolution of the health of patients with ESKD and generating a discretization over such evolution.
+21
+
+aﬀects the preferences, and therefore, the utility function of a patient.
+
+Deﬁnition 17 (Health-State Period Payoﬀs) Let {γj}j∞=1, the sequence of symmetric
+
+strategies such that γj : N × θ × { 1, 2, 3} → {a, d} × ∅. The period payoﬀ function ϑ :
+
+i j=1
+
+Aj
+
+×
+
+N
+
+×
+
+Θ
+
+×
+
+{
+
+1,
+
+2,
+
+3} → R+, is
+
+
+
+  
+
+δ,
+
+ϑ {γj}ij=1, (i, θt, ) =
+
+  
+
+θt,
+
+if for some j < i, γj(θt, ·) = a, ∨, γi(θt, ) = d, if for all j < i, γj(θt, ·) = d, ∧, γi(θt, ) = a.
+
+From there on, we consider in detail the choice of the patient in front of the queue. Note that the dynamic optimization problem is analogous to the one stated in proposition 10, but in this case the expectation is taken not only over the distribution of the organs, but also over the probabilities given by Markov chain. Consequently, it is natural that existence and uniqueness are preserved. Formally stated, the recursive form of the optimization problem for the candidate in the ﬁrst position is given by,
+
+V (1, θt, ) = max
+
+θt ,
+1−β
+
+δ + βE
+
+| [V (1, θt+1,
+
+)]
+
+(18)
+
+Given that there are now two health states (formally three, but 3 = 0 is trivial), then we have now two optimal thresholds for the ﬁrst position, which characterizes, as before, the optimal strategies: one θ1∗( 1) is the minimum organ quality that a patient in the position 1 accepts when her health condition is 1, while θ1∗( 2) is the minimum quality which a patient in position 1 accepts being in the more sick state 2.
+
+Proposition 18 When the health condition of the patient leading the waiting list is governed by the Markov chain stated in deﬁnition 16, her optimal stopping thresholds are given by:
+
+θ
+
+θ1∗( 2) = δ(1 − β) + βr θ1∗( 2)F (θ1∗( 2)) +
+
+θdF (θ)
+
+(19)
+
+θ1∗( 2)
+
+22
+
+θ1∗( 1) =δ(1 − β) + βp
+
+θ1∗( 1)F (θ1∗( 1)) +
+
+θ
+θdF (θ)
+θ1∗( 1)
+
++
+
+2 1
+
+q r
+
+[θ1∗(
+
+2) − δ(1 − β)]
+
+(20)
+
+Proof sketch. the proof uses indiﬀerence arguments, similar to those used in the proof of
+
+theorem 13 (See details in appendix A5).
+
+There are several remarkable facts. First, in eq. (19), the expression is analogous to the
+
+one given in theorem 13, with a discount factor of the future βr rather than β. Intuitively,
+
+the sicker the patient, the higher the probability of being dead in the next period (1 − r), the
+
+lower the discount factor of the future (the higher the agent’s impatience), and, by theorem
+
+14, the lower the selectiveness of the patient. Second, when q = 0 or when 2 = 0, the Markov chain degenerates into two states (alive or death) so the expression (20) reduces to
+
+(19): if the probability of passing by intermediate health condition is 0, or if the probability
+
+of being dead in the next period is q, the agent makes her decisions as she does when she is
+
+sicker. Third, the term 2 captures that, the closer the utility of the patient across being1
+
+alive states, the lesser the loss of the patient by transit from state 1 to 2. Finally, we go
+
+back
+
+to
+
+recall
+
+that
+
+the
+
+fraction
+
+q r
+
+is
+
+deﬁned
+
+as,
+
+q P rob[ =
+
+= 2| = 1]
+
+r P rob[ = 2| = 2]
+
+so it corresponds to the probability of transiting to a sicker health state being healthier in the
+
+present, pondered by the probability of not dying when she arrives to such state. Clearly, the
+
+term
+
+2q 1r
+
+captures
+
+the
+
+dynamics
+
+of
+
+the
+
+patient’s
+
+health
+
+conditions.
+
+When
+
+r
+
+is
+
+lower
+
+than
+
+q,
+
+the relative measure of probabilities is greater (and so the probability of being dead in future
+
+periods), and the risk of continuing the search rather than stopping it when the patient is
+
+less sick increases, implying a lower threshold for this state.
+
+23
+
+4.1 Simulation
+
+It follows from equations (19) and (20) that θ1∗( 2) = λ(β, δ, r, θ) and θ1∗( 1) = ϕ(β, δ, p, q, r, θ, 1, 2). To illustrate how the transition probabilities as well as the relative
+
+valuation across states aﬀect patient’s choice when she is less sick, we have run a simula-
+
+tion of the thresholds given by proposition 18 assuming θ ∼ N (2, 0.5), δ = 1, β = 0.5 and
+
+Θ = [0, 4], which is consistent with the KDRI quality index. The results for the health
+
+state 1 are shown in the Appendix A6. The plot must be read as follows: for given values
+
+of the probabilities of remain in the same state in the next period (p and q), each subplot
+
+corresponds to a contour plot of the optimal threshold given by the equation (20), taking as
+
+independent variables the ratio 2 , i.e. the relation of utilities across states,14 and the prob1
+ability of death being sicker, r. The lighter the color, the higher the minimum acceptable
+
+organ quality in the healthier state.
+
+For a given probability p, the higher the probability of being alive in the next period
+
+p + q, the more selective the candidates. Moreover, such selectiveness increases as 2 tends 1
+to 1, i.e. when the utility across states tends to be the same. For constant values of p, q,
+
+the impact of r is marginal, only relevant when r → 1 and for those relations between 1
+
+and 2 such that 2
+
+1.
+
+For a constant value of
+
+2 , when the probability of dying in the
+1
+
+sicker state is lower (r is greater), a marginal increase in r boosts the certainty of the healthy
+
+patient of remain alive, increasing the minimum quality she accepts when she is less sick.
+
+5 Concluding Remarks
+In this paper, we propose a new modelling approach to study the problem of patient choice in waiting systems for organ transplant. Our proposal is based on the theoretical developments of search theory as well as in the novel literature in dynamic matching problems. By incorporating these tools in our sequential and stochastic environment, we have
+14In the simulation we assume that 2 ∈ (0, 1), so 1 ≥ 2. 1 24
+
+proved existence and uniqueness of equilibrium, derived equilibrium closed forms, and done comparative statics in a very general and intuitive way.
+In our opinion, the model developed is appealing because it simpliﬁes considerably the derivation of general analytic results. Future tasks are to incorporate in our framework previous results mentioned above, to introduce arrival processes for organs and patients as well as to derive equilibrium closed forms for any patient in the waiting list with evolving health conditions. The last task implies the use of techniques of non-stationary dynamic programming, while the two ﬁrst are interesting challenges to the generalization power of our approach. From a market design perspective, however, we are far to obtaining an acceptable organ allocation system. Following Su and Zenios [18], it “remains one of the modern medicine’s most diﬃcult problems”.
+Some of our results lead to recommendations for public policy designers. With patient autonomy, an increase in organ supply does not necessarily imply a better performance of the market in terms of social welfare deﬁned as the number of transplants conducted. On the contrary, without the right design of allocation policies, it may result in an increase of organ wastage. Given the restriction of ischemia time, the following question arises: is it viable to design an allocation policy which (taking into account the selectiveness of patients leading the waiting list) oﬀers lower quality organs to those patients whose positions in the waiting list make them willing to accept?
+
+Appendix
+
+A1. Proof of Proposition 11
+
+Proof. Note that (9), the ﬁrst part of proposition 10, is a standard search problem (McCall
+
+and McCall [11]). The Bellman operator associated to the problem stated in proposition
+
+(10) is:
+
+(T f )(1, θt) = max θt , δ + βE[f (1, θt+1)] a,d 1 − β
+
+25
+
+for i = 1, and
+
+(T f )(i, θt) =
+
+δ + βE[f (i − 1, θt+1)],
+
+maxa,d
+
+θt 1−β
+
+,
+
+δ
+
++
+
+βE[f (i,
+
+θt+1)]
+
+,
+
+if for some j < i, γj(θt) = a, if for all j < i, γj(θt) = d
+
+for i > 1. Theorem 3.3. from Stokey and Lucas [17] states Blackwell’s suﬃcient conditions
+
+for
+
+a
+
+contraction.
+
+Given
+
+that
+
+θ
+
+∈ [0, θ],
+
+θt 1−β
+
+and
+
+δ + βE[f (i, θt+1)]
+
+are
+
+bounded,
+
+so
+
+T
+
+maps
+
+the space of bounded functions into itself. To prove monotonicity, let us to consider two
+
+functions f, g such that f (1, θ) < g(1, θ) for all θ. So, the Bellman operator
+
+(T f )(1, θt) = max θt , δ + βE[f (1, θt+1)] a,d 1 − β
+≤ max θt , δ + βE[g(1, θt+1)] a,d 1 − β
+= (T g)(1, θt).
+
+To prove discounting
+T (f + a)(1, θt) = max θt , δ + βE[f (1, θt+1) + a] a,d 1 − β
+≤ max θt , δ + βE[f (1, θt+1)] + βa a,d 1 − β
+= (T f )(1, θt) + βa.
+
+Now consider the expression (10). Recall the associated operator:
+
+(T f )(i, θt) =
+
+δ + βE[f (i − 1, θt+1)],
+
+maxa,d
+
+θt 1−β
+
+,
+
+δ
+
++
+
+βE[f (i,
+
+θt+1)]
+
+,
+
+if for some j < i, γj(θt) = a, if for all j < i, γj(θt) = d
+
+And, analogously to the ﬁrst part of this proof, consider other function such that f (i, θ) ≤ g(i, θ) for all (i, θ). If some patient j < i accepts, then, it is straightforward monotonicity
+
+(T f )(i, θt) = δ + βE[f (i − 1, θt+1)] ≤ δ + βE[g(i − 1, θt+1)] = (T g)(i, θt)
+
+and discounting:
+
+T (f + a)(i, θt) = δ + βE[f (i − 1, θt+1) + a] ≤ δ + βE[f (i − 1, θt+1)] + βa = (T f )(i, θt) + βa.
+
+If all patients j, 1 < j < i pass the oﬀer, then the proof is analogous to the proof for i = 1.
+
+26
+
+A2. Proof of Theorem 13 Proof. For the patient 1, indiﬀerence is given by:
+
+θ1∗ = δ + βE[V (1, θt+1)]
+
+(21)
+
+1−β
+
+θ1∗ = δ + β 1−β
+
+(δ + βE[V (1, θ )]) F (θ1∗) +
+
+θθ dF (θ)
+θ1∗ 1 − β
+
+using eq. (21),
+
+θ1∗ = δ + β 1−β
+
+1
+
+θ1∗ −
+
+β
+
+F
+
+(θ1∗
+
+)
+
++
+
+θθ dF (θ)
+θ1∗ 1 − β
+
+.
+
+For the patient in position i, the critical value is given by:
+
+θi∗ = δ + βE[V (i, θt+1)]
+
+(22)
+
+1−β
+
+Now, we calculate E[V (i, θt+1)]. The patient i receives an oﬀer in the next period with probability F (θi∗−1). If she receives an oﬀer, she confronts the same optimal stopping problem problem. If does not receive an oﬀer, she receives a payoﬀ of δ for this period, advancing
+one position in the waiting list. Formally:
+
+E[V (i, θ )] = 1 − F (θi∗−1) (δ + βE[V (i − 1, θ )]) + F (θi∗−1)E V (i, θ )|θ < θi∗−1
+
+E[V (i, θ )] =
+
+1 − F (θi∗−1) (δ + βE[V (i − 1, θ )]) +
+
+F (θi∗) 1
+
+θi∗ −β
+
++
+
+θ θi∗−1 dF (θ)
+θi∗ 1 − β
+
+and evaluating (22) for i − 1 and replacing in the last expression, we obtain
+
+E[V (i, θ )] =
+
+1 − F (θi∗−1)
+
+θi∗−1 + 1−β
+
+F (θi∗) 1
+
+θi∗ −β
+
++
+
+θi∗−1
+
+θ
+
+dF (θ)
+
+θi∗ 1 − β
+
+.
+
+Replacing this expression in (22) we ﬁnally obtain:
+
+θi∗ = δ + β 1−β
+
+1 − F (θi∗−1)
+
+θi∗−1 + 1−β
+
+F (θi∗) 1
+
+θi∗ −β
+
++
+
+θ θi∗−1 dF (θ)
+θi∗ 1 − β
+
+A3. Proof of Theorem 14
+We use mathematical induction to verify this theorem. We show that (14), (15) and (16) hold for i = 1, assume that these expressions hold for i − 1 and then prove that hold for i.
+
+27
+
+(14). We consider i = 1, and derive implicity the optimal strategy respect to δ:
+
+dθ1∗ =1 − β + β dδ
+
+F
+
+(θ1∗)
+
+dθ1∗ dδ
+
++
+
+θ1∗
+
+dF (θ1∗) dδ
+
++
+
+d dδ
+
+θ
+θf (θ)dθ
+θ1∗
+
+By assumption, f (θ) is diﬀerentiable, so we can apply the Leibniz’s Rule in the last term of
+
+the
+
+right
+
+hand.
+
+In
+
+addition,
+
+by
+
+the
+
+chain
+
+rule
+
+dF (θ1∗) dδ
+
+=
+
+dF (θ1∗) dθ1∗ dθ1∗ dδ
+
+=
+
+f
+
+(θ1∗
+
+)
+
+dθ1∗ dδ
+
+,
+
+resulting
+
+in
+
+dθ1∗ =1 − β + β dδ
+
+F
+
+(θ1∗)
+
+dθ1∗ dδ
+
++
+
+θ1∗
+
+f
+
+(θ1∗)
+
+θ1∗ dδ
+
+−
+
+θ1∗f
+
+(θ1∗
+
+)
+
+θ1∗ dδ
+
+=
+
+1
+
+−
+
+β
+
++
+
+βF
+
+(θ1∗)
+
+dθ1∗ dδ
+
+1−β = 1 − βF (θ1∗)
+
+> 0,
+
+where the inequality follows from the fact that β ∈ (0, 1) and F (·) ≤ 1. Now we consider the case of i, and derive implicitly the optimal strategy with respect to δ. It yields to
+
+dθi∗ = 1 − β+β dδ
+
+−
+
+dF
+
+(θi∗−1) dδ
+
+θi∗−1
+
++
+
+1 − F (θi∗−1)
+
+dθi∗−1 dβ
+
++
+
+F
+
+(θi∗
+
+)
+
+dθi∗ dδ
+
++
+
+θi∗
+
+dF (θi∗) dδ
+
+d +
+dδ
+
+θi∗−1
+θf (θ)dθ
+θi∗
+
+Now, by applying the Leibniz’s Rule in the last term of the right hand, and substituting
+
+dF (θk∗) dδ
+
+=
+
+f
+
+(θk∗
+
+)
+
+dθk∗ dδ
+
+for
+
+k = i − 1, i,
+
+we
+
+obtain
+
+dθi∗ = 1 − β + β dδ
+
+−f
+
+(θi∗−1
+
+)
+
+dθi∗−1 dδ
+
+θi∗−1
+
++
+
+1 − F (θi∗−1)
+
+dθi∗−1 dδ
+
++
+
+F
+
+(θi∗)
+
+dθi∗ dδ
+
++
+
+θi∗f
+
+(θi∗)
+
+dθi∗ dδ
+
++θi∗−1
+
+f
+
+(θi∗−1)
+
+dθi∗−1 dδ
+
+−
+
+θi∗f
+
+(θi∗
+
+)
+
+dθi∗ dδ
+
+=1−β+β
+
+1 − F (θi∗−1)
+
+dθi∗−1 dδ
+
++
+
+F
+
+(θi∗
+
+)
+
+dθi∗ dδ
+
+1 = 1 − βF (θi∗)
+
+(1 − β) + β
+
+1 − F (θi∗−1)
+
+dθi∗−1 dδ
+
+> 0.
+
+The
+
+last
+
+step
+
+follows
+
+by
+
+using
+
+the
+
+inductive
+
+hypothesis
+
+dθi∗−1 dδ
+
+>
+
+0
+
+and
+
+the
+
+facts
+
+that
+
+β
+
+∈
+
+(0, 1)
+
+and F (·) ≤ 1.
+
+(15). As before, we start by obtaining the derivative of optimal strategy for i = 1, in this
+
+28
+
+case respect to θ. We again use the Leibniz´s and chain rules, which yields to:
+
+dθ1∗ =β dθ
+
+F
+
+(θ1∗)
+
+dθ1∗ dθ
+
++
+
+θf (θ)
+
+βθf (θ) = 1 − βF (θi∗) > 0.
+
+For i, analogously to the preceding proof, we obtain the derivative of θi∗ respect to θ implicitly,
+
+from the corresponding expression. Since we can use the Leibniz Rule as well as dF (θk∗) =
+
+dθ
+
+f
+
+(θk∗
+
+)
+
+dθk∗ dθ
+
+for
+
+k
+
+= i − 1, i,
+
+it
+
+follows
+
+that
+
+dθi∗ = β dθ
+
+1 − F (θi∗−1)
+
+dθi∗−1 dθ
+
++
+
+F
+
+(θi∗)
+
+dθi∗ dθ
+
+=
+
+β
+
+1 − F (θi∗−1) 1 − βF (θi∗)
+
+dθi∗−1 dδ
+
+≥ 0,
+
+by the induction hypothesis. (16). Considering i = 1, and deriving the optimal strategy respect to β:
+
+dθ1∗ dβ
+
+=−δ
+
++ θ1∗F (θ1∗) +
+
+θ
+θf (θ)dθ + β
+θ1∗
+
+F
+
+(θ1∗)
+
+dθ1∗ dβ
+
++
+
+θ1∗
+
+dF (θ1∗) dβ
+
++
+
+d dβ
+
+θ
+θf (θ)dθ
+θ1∗
+
+By assumption, f (θ) is diﬀerentiable, we can apply the Leibniz’s Rule in the last term of the
+
+right
+
+hand.
+
+In
+
+addition,
+
+by
+
+the
+
+chain
+
+rule
+
+dF (θ1∗) dβ
+
+=
+
+dF (θ1∗) dθ1∗ dθ1∗ dβ
+
+=
+
+f
+
+(θ1∗)
+
+dθ1∗ dβ
+
+,
+
+so
+
+dθ1∗ dβ
+
+=
+
+−
+
+δ
+
++
+
+θ1∗F (θ1∗) +
+
+θ
+θf (θ)dθ + β
+θ1∗
+
+F
+
+(θ1∗)
+
+dθ1∗ dβ
+
++
+
+θ1∗
+
+f
+
+(θ1∗)
+
+dθ1∗ dβ
+
+−
+
+θ1∗f
+
+(θ1∗
+
+)
+
+dθ1∗ dβ
+
+= −δ + θ1∗F (θ1∗) +
+
+θ θ1∗
+
+θf
+
+(θ)dθ
+
++
+
+βF
+
+(θ1∗)
+
+dθ1∗ dβ
+
+.
+
+Notice that, it follows from theorem 13 that:
+
+θ1∗ − β
+
+δ
+
+=
+
+−δ
+
++
+
+θ1∗F (θ1∗) +
+
+θ
+θf (θ)dθ
+θ1∗
+
+so, collecting terms, our expression reduces to
+
+dθ1∗ dβ
+
+=
+
+β
+
+(1
+
+θ1∗ −
+
+−δ βF (θ1∗))
+
+.
+
+In the right hand term, β (1 − βF (θ1∗)) > 0. Optimality of θ1∗ implies that θ1∗ ≥ δ. To show
+
+29
+
+it,
+
+suppose
+
+the
+
+opposite,
+
+i.e.
+
+θ1∗
+
+<
+
+δ.
+
+It
+
+follows
+
+that
+
+θ1∗ 1−β
+
+<
+
+δ 1−β
+
+,
+
+a
+
+contradiction
+
+with
+
+the
+
+fact
+
+that choose θ1∗ as the reservation type is an optimal strategy. It results in:
+
+dθ1∗ ≥ 0. dβ
+
+Now, for the case of i, derive implicitly the expression for the optimal strategy, applying Leibniz’s rule we obtain:
+
+dθi∗ dβ
+
+=
+
+−δ+
+
+1 − F (θi∗−1)
+
+θi∗−1+θi∗F (θi∗)+
+
+θi∗−1
+θf (θ)dθ+β
+θi∗
+
+1 − F (θi∗−1)
+
+dθi∗−1 dβ
+
++
+
+F
+
+(θi∗)
+
+dθi∗ dβ
+
+Collecting terms,
+
+(1
+
+−
+
+βF
+
+(θi∗))
+
+dθi∗ dβ
+
+= −δ+
+
+1 − F (θi∗−1)
+
+θi∗−1 +θi∗F (θi∗)+
+
+θi∗−1
+θf (θ)dθ+β
+θi∗
+
+1 − F (θi∗−1)
+
+dθi∗−1 dβ
+
+and, by the deﬁnition of θi∗,
+
+(1
+
+−
+
+βF (θi∗))
+
+dθi∗ dβ
+
+=
+
+θi∗ − β
+
+δ
+
++
+
+β
+
+1 − F (θi∗−1)
+
+dθi∗−1 dβ
+
+The
+
+inductive
+
+assumption
+
+implies
+
+that
+
+dθi∗−1 dβ
+
+≥
+
+0,
+
+so
+
+the
+
+second
+
+term
+
+of
+
+the
+
+right
+
+hand
+
+is
+
+no
+
+negative. By optimality of θi∗, it has to be the case that θi∗ ≥ δ, so we have
+
+dθi∗ ≥ 0, dβ
+
+completing the proof.
+
+A4. Proof of Theorem 15
+
+Proof. Under the organ distribution F (·), the optimal threshold for i = 1, given by theorem
+
+13,
+
+θ
+
+θ1∗,F = δ(1 − β) + β θ1∗,F F (θ1∗,F ) +
+
+θdF (θ)
+
+θ1∗,F
+
+can be rewritten as
+
+1 β
+
+θ1∗,F − δ(1 − β)
+
+=
+
+θ1∗,F
+θ1∗,F dF (θ) +
+0
+
+θ
+θdF (θ)
+θ1∗,F
+
+30
+
+i.e.,
+
+1 β
+
+θ1∗,F − δ(1 − β)
+
+=
+
+θ1∗,F
+θ1∗,F dF (θ) +
+0
+
+θ
+θdF (θ) +
+θ1∗,F
+
+θ1∗,F
+θdF (θ) −
+0
+
+θ1∗,F
+θdF (θ)
+0
+
+θ
+
+θ1∗,F
+
+θ1∗,F
+
+= θdF (θ) −
+
+θdF (θ) +
+
+θ1∗,F dF (θ)
+
+0
+
+0
+
+0
+
+θ
+
+θ1∗,F
+
+= θdF (θ) −
+
+(θ − θ1∗,F )dF (θ).
+
+0
+
+0
+
+Integrating by parts in the last term on the right side, with dv = dF (θ) and u = θ − θ1∗,F , we obtain:
+
+1 β
+
+θ1∗,F − δ(1 − β)
+
+=
+
+θ
+θdF (θ) −
+0
+
+θ1∗,F
+(θ − θ1∗,F )F (θ) −
+0
+
+θ1∗,F
+F (θ)dθ
+0
+
+θ
+
+θ1∗,F
+
+= θdF (θ) +
+
+F (θ)dθ.
+
+0
+
+0
+
+(23)
+
+Similarly, when the organ distribution is G, the optimal thereshold θ1∗,G satisﬁes,
+
+1 β
+
+θ1∗,G − δ(1 − β)
+
+=
+
+θ
+θdG(θ) +
+0
+
+θ1∗,G
+G(θ)dθ.
+0
+
+(24)
+
+We deﬁne the functions hG(t) =
+
+θ 0
+
+θdG(θ)
+
++
+
+t 0
+
+G(θ)dθ,
+
+and
+
+l(t)
+
+=
+
+1 β
+
+(t − δ(1 − β)).
+
+Notice
+
+that l(·) is injective and strictly increasing in t. By conditions 1 and 2, it has to be the case
+
+that, hG(t) ≥ hF (t) for all t ∈ [0, θ]. Thus, by the deﬁnition of θ1∗,F and θ1∗,G in (23)-(24), and because l(·) is strictly increasing, it follows that l(θ1∗,G) ≥ (θ1∗,F ), or,
+
+θ1∗,G ≥ θ1∗,F .
+
+A5. Proof of Proposition 18
+
+Proof. In any state, indiﬀerence is given by
+
+θ
+
+= 1−β
+
+δ + βE | [V (1, θ ,
+
+)]
+
+(25)
+
+We begin with the sicker state. In such case, indiﬀerence is given by:
+
+2θ = 1−β
+
+2δ + βE | 2[V (1, θ ,
+
+)]
+
+(26)
+
+where now expectations are conditional on being in the health status 2 in the present period.
+
+31
+
+So,
+
+2θ1∗( 2) = 1−β
+
+2δ + βr
+
+2δ + βE | 2[V (1, θ ,
+
+)]
+
+F (θ1∗( 2)) +
+
+θ
+
+2θ dF (θ)
+
+θ1∗( 2) 1 − β
+
+(27)
+
+and, by eq. (26) it reduces to
+
+2θ1∗( 2) = 1−β
+
+2δ + βr
+
+2θ1∗( 1−
+
+2) β
+
+F
+
+(θ1∗(
+
+2))
+
++
+
+θ
+
+2θ dF (θ)
+
+θ1∗( 2) 1 − β
+
+(28)
+
+so,
+
+θ1∗( 2) = δ + βr 1−β
+
+θ1∗( 1−
+
+2) β
+
+F
+
+(θ1∗
+
+(
+
+2)) +
+
+θ
+
+θ
+
+dF (θ)
+
+θ1∗( 2) 1 − β
+
+(29)
+
+Next, we consider the optimal reservation type for 1, θ1∗( 1). In such case, indiﬀerence
+
+is given by:
+
+1θ1∗( 1) = 1−β
+
+1δ + βE | 1[V (1, θ ,
+
+)]
+
+(30)
+
+Recall that the expectation is taken over both, organ’s type distribution and health conditions. Being in the present in the better health state, with probability p the patient will continue in this condition in the next period, so the total discounted reward from period t + 1 from now on, will be, if she continues the search:
+
+1δ + βE | 1[V [1, θt+1, ]]
+
+And, if stops,
+
+1θt 1−β
+
+On the other hand, with probability q, she will be in state 2 in the next period, and the total discounted reward in such case is:
+
+2δ + βE | 2[V [1, θ , ]] So, replacing these expressions in (30):
+
+1θ1∗( 1) 1−β
+
+=
+
+1δ
+
++
+
+β
+
+p
+
+1δ + βE | 1[V [1, θ ,
+
+]]
+
+F (θ1∗( 1)) +
+
+θ
+
+1θ dF (θ)
+
+θ1∗( 1) 1 − β
+
++q
+
+2δ + βE | 2[V [1, θ ,
+
+]]
+
+F (θ2∗( 2)) +
+
+θ
+
+2θ dF (θ)
+
+θ2∗( 2) 1 − β
+
+32
+
+and using the deﬁnitions for reservation thresholds, (26)-(30),
+
+1θ1∗( 1) 1−β
+
+=
+
+1δ
+
++β
+
+p
+
+1θ1∗( 1−
+
+1) β
+
+F
+
+(θ1∗
+
+(
+
+1)) +
+
+θ
+
+1θ dF (θ)
+
+θ1∗( 1) 1 − β
+
++q
+
+2θ1∗( 1−
+
+2) β
+
+F
+
+(θ2∗(
+
+2))
+
++
+
+θ
+
+2θ dF (θ)
+
+θ2∗( 2) 1 − β
+
+and from (29)
+
+2θ1∗( 1−
+
+2
+β
+
+)
+
+F
+
+(θ2∗(
+
+2)) +
+
+θ
+
+2θ dF (θ) = 2
+
+θ2∗( 2) 1 − β
+
+βr
+
+θ1∗( 2) − δ , 1−β
+
+(31)
+
+so, ﬁnally,
+
+θ1∗( 1) =δ + βp 1−β
+
+θ1∗( 1−
+
+1) β
+
+F
+
+(θ1∗(
+
+1))
+
++
+
+θ
+
+θ
+
+dF (θ)
+
+θ1∗( 1) 1 − β
+
++
+
+2q 1r
+
+θ1∗( 2) − δ 1−β
+
+.
+
+33
+
+A6. Simulation 34
+
+A7. A Note on Organ Quality Organ quality is a fundamental variable in the context of kidney transplant. The ﬁrst attempt to classify qualities of deceased donor kidneys dates to 2002 (Panduranga and Ojo [12]). It groups organs in two sets: Standard-Criteria Donor (SCD) and ExpandedCriteria Donor (ECD). The distinction is based on variables that increased the risk of graft failure, so an ECD kidney has 70 percent risk of need for dialysis a week after transplantation, compared to a SCD kidney. The ideal SCD is a man aged 35 with no history of diabetes or hypertension who died in a vehicle accident. Projected average added-life is 10 years for a SCD while only 5.1 years for an ECD kidney (Panduranga and Ojo [12]). However, an ECD recipient has improved survival compared with patients that remain in dialysis, and higher health-related quality of life (QOL). A parallel classiﬁcation was developed considering the mechanism of cessation of vital functions: Donation after Brain Death (DBD) describes a “patient who had primary brain death in whom cardiac circulation and respiration remain intact or are maintained by medical measures” (Panduraga and Ojo [12], 1828). Donation after Cardiac Death stands for a donor who does not meet the DBD and is classiﬁed in two subcategories: controlled DCD and uncontrolled DCD. There is a 42 to 51 percent of risk for graft failure in a DCD compared to 24 percent of a BDC, although there is no signiﬁcative diﬀerence in 5 years patient survival. The combination of both criteria leads to the most used method to sort kidneys. Nevertheless, OPTN and UNOS (United Network for Organ Sharing) developed recently the Kidney Donor Proﬁle Index (KDPI), a continuous index of quality for organs from deceased donors. It is based on the Kidney Donor Risk Index (KDRI), an estimate of the relative risk of graft failure compared to the median, which incorporates 10 donor factors: age, height, weight, ethnicity, history of hypertension, history of diabetes, cause of death, serum creatine, Hepatitis C and VIH status, and DCD status.15
+15OPTN-UNOS. A Guide to Calculating and Interpreting the Kidney Donor Proﬁle Index (KDPI) retrieved from http://optn.transplant.hrsa.gov
+35
+
+References
+[1] Adda, J´erome and Russell Cooper. Dynamic Economics. Quantitative Methods and Applications. Cambridge and London: The MIT Press, 2003.
+[2] Bertimas, D., V. Farias and N. Trichakis. Fairness, Eﬃciency and Flexibility in Organ Allocation for Kindney Transplantation. Forthcoming in Operation Research.
+[3] Calderon, Gabriela y Alexander Elbittar. “Asignaci´on de transplantes Renales en M´exico. Estimacio´n de un sistema de puntaje”. El Trimestre Econo´mico, 77.1 (2010): 43-67.
+[4] Bloch, F. and D. Cantala. “Markovian Assigment Rules”. Social Choice and Welfare, 28 (2011): 1-25.
+[5] Casella, George and Roger Berger. Statistical Inference. Duxbury, USA: Duxbury Thomson Learning, 2001.
+[6] Fudenberg, Drew and Jean Tirole. Game Theory. Cambridge: The MIT Press, 2002.
+[7] Kurino, M. House Allocation with Overlapping Agents: A Dynamic Mechanism Design Approach. Jena Economic Research Papers, 2009.
+[8] Kurt, Murat, Mark Roberts, Andrew Schaefer and Utku U¨ nver. Valuing Prearranged Paired Kidney exchanges: A stochastic game approach. Boston College Working Papers in Economics 785, 2010.
+[9] Leshno, Jacob. Dynamic Matching in Overloaded Systems. PhD. in Economics Thesis. Standford University, 2012.
+[10] Ljungqvist, Lars and Thomas Sargent. Recursive Macroeconomic Theory. Cambridge: The MIT Press, 2000.
+[11] McCall, Brian and John McCall. The Economics of Search. New York: Routledge, 2008.
+[12] Panduranga, S. and Akinlolu Ojo. “The alphabet Soup of Kidney Transplantation: SCD, DCD, ECD. Fundamentals for the Practicing Nephrologist”. Clinical Journal of the American Society of Nephrology, 4 (2009): 1827-1831.
+[13] Pereyra, Juan. A dynamic School Choice Model. PhD. in Economics Thesis. El Colegio de M´exico.A.C., 2011. Forthcoming in Games and Economic Behavior.
+[14] S¨onmez, T. and U. U¨ nver. “Matching, Allocation, and Exchange of Discrete Resources”. In: (joint with Utku U¨ nver), J. Benhabib, A. Bisin,and M. Jackson (eds.) Handbook of Social Economics, Handbook of Social Economics, Vol. 1A. The Netherlands: NorthHolland, 2011. 781-852.
+[15] Shi, Shouyong. ”Search Theory: Current Perspectives”. The New Palgrave Dictionary of Economics. V.8. Hampshire: Palgrave Mcmillan, 2008.
+36
+
+[16] Smith, Lones. “Frictional Matching Models”. The Annual Review of Economics3 (2011): 319-38.
+[17] Stokey Nancy and Robert Lucas. Recursive Methods in Economic Dynamics. Cambridge and London: Harvard University Press, 1989.
+[18] Su, X., and S. Zenios. “Recipient Choice Can Address the Eﬃciency-Equty Trade-oﬀ in Kidney Transplantation: A Mechanism Design Model”. Managnment Science, 52.11 (2006): 1647-1660.
+[19] Su, X., and S. Zenios. “Patient choice in kidney allocation: A sequential stochastic assignment model”. Operations research, 53.3 (2005): 443-455.
+[20] Su, X., and S. Zenios. “Patient Choice in Kidney Allocation: The Role of Queueing Discipline”. Manufacturing & service Operations Managnment, 6.4 (2004): 280-301.
+[21] U¨ nver, Utku. “Dynamic Kidney Exchange”. Review of Economic Studies, 77.1 (2010): 372-414.
+[22] Zenios, S. “Modeling the transplant waiting list: A queueing model with reneging”. Queueing systems, 31.3 (1999): 239-251.
+[23] Zenios, S., G. Chertow and L. Wein. “Dynamic Allocation Pof Kidneys to Candidates on the Transplant Waiting List”. Operation Research, 48.4 (2000): 549-569.
+37
+
+

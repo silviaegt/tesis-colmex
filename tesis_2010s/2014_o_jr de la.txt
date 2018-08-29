@@ -1,0 +1,3686 @@
+0$(675$ (1 (&2120$
+75$%$-2 '( ,19(67,*$&,1 3$5$ 2%7(1(5 (/ *5$'2 '( 0$(6752 (1 (&2120$
+EMPLOYMENT DYNAMICS AND MONETARY POLICY UNDER INFORMALITY
+
+JUAN RICARDO DE LA O FLORES
+
+3
+
+
+
+$
+
+
+
+6
+
+0.
+
+-8/,2 
+
+Agradecimientos A mi familia, por su conﬁanza en m´ı, por su gu´ıa, por su apoyo moral incondicional en mi cambio de timo´n rumbo a esta traves´ıa.
+A Stephen, por su dedicaci´on, por su incomparable asesor´ıa, por hacer que un pesado requisito se convirtiera en un delicioso reto.
+A Raymundo, por su inter´es en el estudiante, por su tendencia innata de ofrecer ayuda como primer instinto, por destruir los prejuicios que yo ten´ıa
+sobre la academia. A Gerardo, por ser una fuente de inspiraci´on que me motiv´o a cambiar de profesio´n, por recordarnos que la responsabilidad social se ejerce de manera
+cotidiana. A mis compan˜eros, por su apoyo, por sus ensen˜anzas, por mostrarme que la
+pluralidad de esta profesio´n va de la mano con el trabajo en equipo. A Eliza, por ser mi soporte y mi bru´jula infalible estos dos an˜os, por hacer
+que d´ıa a d´ıa todo valiera la pena.
+i
+
+Abstract
+This work presents a dynamic stochastic general equilibrium model of segmented labor markets with informality assuming di↵erent levels of price rigidity in the goods market. By modeling ﬁrm-speciﬁc capital and adjustment costs for the formal sector and a matching Diamond-Mortensen-Pissarides environment, the model can account for the countercyclical behavior of informality under both demand and cost shocks. Any increase in aggregate income a↵ects the informal sector in two ways: a) households decrease their demand for informal goods as they shift towards formal goods, and b) formal ﬁrms increase their labor demand attracting workers from the informal sector. In addition, this study also considers the design of monetary policy in the presence of informality. It is shown that if the monetary authority reacts to general inﬂation in the interest-rate rule, informality signiﬁcantly reduces the possibility of multiple equilibria emerging under the Taylor principle. However, if the central bank responds only to formal sector inﬂation, this result is sharply reversed.
+
+Contents
+
+1 Introduction
+
+1
+
+2 Literature Review
+
+7
+
+3 Stylized Facts
+
+12
+
+3.1 Cyclicality of Informality . . . . . . . . . . . . . . . . . . . . . 12
+
+3.2 Nature of informal ﬁrms . . . . . . . . . . . . . . . . . . . . . 12
+
+3.3 Access to Capital . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3.4 Employment . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3.5 Creation and Destruction of Jobs . . . . . . . . . . . . . . . . 13
+
+3.6 Wages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+3.7 Taxes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+4 Model
+
+15
+
+4.1 Labor market dynamics . . . . . . . . . . . . . . . . . . . . . 15
+
+4.2 Households . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+4.3 Informal Firms . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+4.4 Formal Firms . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+4.5 Wage Determination . . . . . . . . . . . . . . . . . . . . . . . 22
+
+4.6 Monetary Authority . . . . . . . . . . . . . . . . . . . . . . . 23
+
+4.7 Market Clearing . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+4.8 Transitory processes . . . . . . . . . . . . . . . . . . . . . . . 24
+
+5 Equilibrium
+
+25
+
+5.1 A Rational-Expectations Equilibrium . . . . . . . . . . . . . . 25
+
+5.2 Steady State Equilibrium . . . . . . . . . . . . . . . . . . . . . 26
+
+5.3 Calibration . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+
+6 Log-Linearization
+
+29
+
+6.1 Market Clearing . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+iii
+
+6.2 Households . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 6.3 Firms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+6.3.1 Informal ﬁrms . . . . . . . . . . . . . . . . . . . . . . . 31 6.3.2 Formal ﬁrms . . . . . . . . . . . . . . . . . . . . . . . . 31 6.4 Monetary Authority . . . . . . . . . . . . . . . . . . . . . . . 33
+
+7 Impulse Responses
+
+35
+
+8 Determinacy Analysis
+
+40
+
+8.1 Self-fulﬁlling expectations in benchmark formal model . . . . . 40
+
+8.2 Self-fulﬁlling expectations with informality . . . . . . . . . . . 41
+
+9 Concluding Remarks
+
+44
+
+10 References
+
+46
+
+Appendices
+
+53
+
+A Robustness Analysis
+
+53
+
+A.1 Steady-State Sensitivity . . . . . . . . . . . . . . . . . . . . . 53
+
+A.2 Impulse Response Sensitivity . . . . . . . . . . . . . . . . . . . 55
+
+B Indeterminacy Sensitivity Analysis
+
+57
+
+iv
+
+1. Introduction
+Informality represents an important feature of labor markets in both developed and developing countries. In particular, informal labor accounts for a signiﬁcant share of total labor in developing economies. In the presence of macroeconomic shocks, this distortion creates spillovers to market wages, employment, and production that may have potentially serious implications for welfare. Understanding the mechanisms by which informality interacts with such shocks is crucial for appropriate policy design. Recently, a small literature has attempted to understand business cycle ﬂuctuations in the presence of informality under a varied set of assumptions. However, a serious weakness of many studies is their inability to account for the key stylized facts relating to the employment dynamics of emerging economies: namely, employment in the informal sector is strongly countercyclical in countries with signiﬁcant informality. The contribution of this thesis is to develop a Dynamic Stochastic General Equilibrium (DSGE) model of the economy where the size of the informal sector is driven by frictions in the labor market and variations in price dynamics in the sector-speciﬁc goods market. This study aims to understand how aggregate demand and cost shocks are propagated in the presence of informality and how monetary policy rules should be designed in order to avoid generating multiple equilibria, or indeterminacy, which can destabilize the economy through the emergence of expectations-driven, welfare-reducing ﬂuctuations.
+New Keynesian DSGE models have become routine tools for the analysis and characterization of monetary transmissions. Recently, more sophisticated models have been developed that include labor and ﬁnancial rigidities.1 The vast majority of this literature, however, is based on rigidities endemic of developed economies. Such mechanisms are not necessarily the
+1For example, Walsh (2005), Walsh (2010), Blanchard and Gali (2010), Ravenna and Walsh (2008), Gertler et al. (2008).
+1
+
+most appropriate representation of informality for developing countries. Although many frictions can be characterized and extrapolated to developing economies without extreme simpliﬁcations, informality is a phenomenon which generates di↵erent explanations depending on the type of economy it exhibits. Several alternative mechanisms have been proposed to explain the existence of informal ﬁrms, self-employed workers, and informal employees. The rise of informal activities is, according to some, the consequence of a distorting tax burden or inadequate law enforcement,2 whereas others view its inception arising from the segmentation of the labor market.3 While there are reasons for debate on the nature of informal ﬁrms and the self-employed, sizable evidence exists on the segmentation of labor markets for the dynamics of informal employees and this is a signiﬁcant factor in the size of informality present in an economy. Therefore, the purpose of this work is to provide a characterization of informality based on labor market segmentation.
+Before proceeding, it is useful to distinguish between alternative deﬁnitions of informality. As emphasized by the International Labor Organization (ILO), there are two common measures of informality: informal labor and employment in the informal sector. The latter concept excludes a) informal work for formal ﬁrms, and b) domestic workers. This measure naturally encompasses a smaller share of the total labor force than the former concept and this di↵erence is non-negligible. For example, informal labor in Mexico represented 50.1% of the total non-agricultural employment in 2005, whereas employment in the informal sector accounted for 33.1% of the labor share in the same period.4 This last deﬁnition –employment in the informal sector– closely resembles our modeling of a goods-producing informal labor market, and consequently, this is the deﬁnition of informality that will be employed throughout.
+2See Leal Ord´on˜ez (2013), Maloney (2004), De Soto (1987), Perry (2008). 3See Harris and Todaro (1983) or Loayza and Sugawara (2009). 4ILO (2013)
+2
+
+As discussed by Pissarides (2000), the recent literature has attempted to model informality with the help of the Diamond-Mortensen-Pissarides (DMP) labor-search framework.5 The DMP model, which originally was conceived as an explanation for unemployment, features three key building blocks. 1) A stochastic model of labor turnover, where workers separate from jobs at a given rate and remain unemployed until they ﬁnd a new job. 2) A tightness in the labor market that prevents instantaneous labor market clearing. When ﬁrms decide to hire labor, the open vacancies (subject to vacancy costs) have a probability of being matched with a worker looking for a job. The success of that match depends on the tightness of the market. When there are fewer vacancies than job searchers, the success of the match is favorable for ﬁrms but unfavorable for unemployed workers. 3) Wages are determined via a Nash bargaining function that enables wages to depend on the opportunity cost the ﬁrm would face by letting go of a match, and the cost faced by the employee.
+In this thesis, I propose a model that features two types of ﬁrms that owe their coexistence to a labor tightness on the formal side of the market. The ﬁrst type of ﬁrm (formal ) are monopolistically competitive and face a production technology characterized by high productivity, adjustment costs on ﬁrm-speciﬁc capital, and vacancy costs using a DMP labor-search environment. This type of ﬁrm needs to plan one period in advance for both capital and labor hiring, in addition to being constrained by Calvo (1983) pricing. The second type of ﬁrms (informal ) face a labor-only production technology. They have fully ﬂexible prices and their labor market is competitive, enabling them to instantaneously hire and dispose of labor.
+The productivity di↵erence between the two sectors combined with a formal bias parameter for consumption household preferences generate a wage gap between the informal and formal sectors. Due to lower wages in the
+5See Albrecht et al. (2009), Ahmed et al. (2012), Zenou (2008), Satchi and Temple (2006), Bosch and Esteban-Pretel (2012).
+3
+
+informal sector, informal workers are always queuing for a match in the formal sector. The dynamics of these two sectors depend on the rate of formal job creation, which in turn depends on the ratio of informal workers to the number of endogenously created vacancies.
+Using parameter values for Mexico, the model generates a steady state that successfully mirrors many of the main characteristics of the Mexican labor market. The equilibrium wage gap, the share of informal employment on total employment, informal production and consumption size are all consistent with recent empirical estimates. The analysis considers the implications of two shocks: a demand shock which arises via consumption preferences and a supply shock that arises from the cost channel of formal ﬁrms. In contrast to Castillo and Montoro (2008) and Bovi (2007), the dynamics of the model, in response to a demand shock, generate a sharp countercyclical pattern for informality, with output and formal employment showing a stronger response than in the formal economy benchmark.6 Countercyclicality arises under a positive demand shock, because labor supply of the informal sector is reduced as labor ﬂows into the formal sector, and the informal sector cannot attract new labor because household income is increasing and its leisure becomes too valuable to be spent on informal labor activities. With a supply shock, countercyclicality of informality again arises, although the countercyclical response comes from a di↵erent mechanism. In response to a negative cost shock in the formal sector, formal production will fall and the informal sector, being an imperfect substitute, will grow. It is important to emphasis that this countercyclical behavior of informality is robust to changes in the key parameters of the model.
+Another important ﬁnding relates to the business cycle properties of total output with respect to the benchmark model. A demand shock magniﬁes the
+6Castillo and Montoro (2008) and Bovi (2007) obtain procyclical behavior for informal employment. This arises in their models from a marginal decision of ﬁrms to hire cheap labor in order to take advantage of positive shocks.
+4
+
+business cycle (output and formal employment) while a formal supply shock causes the opposite result. For example, with a formal sector supply shock, the informal sector is able to step-in and ease the excess demand in the goods market while the formal sector recovers. However, in the case of a negative demand shock, the informal sector enters the labor market to ease the excess supply of labor, but this distorts labor market tightness, worsening the formal sector position and exacerbating the business cycle.
+Given the model’s ability to generate an empirically plausible behavior for employment dynamics, the thesis then considers the design of monetary policy in the presence of informality. Batini et al. (2011) focus on the welfare properties of interest rate rules that minimize a loss function. Although their goods market resemblances our model, the labor market is completely different, owing to its segmentation using an exogenous wage norm. Mattesini and Rossi (2009) focus on the e↵ect of discretionary policies for the second moment properties of business cycles, based on a unionized sector with a stochastic reservation wage that abstracts from capital. Here, we instead consider the e↵ect of informality for the existence of multiple equilibria, or indeterminacy, of a given interest rate feedback rule. With policy-induced indeterminacy, self-fulﬁlling expectations can arise, which can be a destabilizing factor for the economy. A study on the class of monetary policies that prevent this indeterminacy outcome is crucial for emerging economies. The goal of this part of the thesis is to o↵er some insights into the relationship between informality, the conduct of monetary policy, and the available set of policy responses that can ensure a determinate equilibrium.
+In standard models, it has been well-established that for a central bank, increasing the nominal interest rate more-than-proportional to a rise in inﬂation is necessary and su cient to ensure determinacy (the so-called Taylor principle). Under the Taylor principle, this increases the real interest rate thereby preventing the emergence of self-fulﬁlling inﬂation expectations. With models featuring capital, the Taylor principle is no longer a su cient
+5
+
+condition and indeterminacy can arise under a certain combination of parameters and policy responses. The Taylor principle proves to be an insu cient tool in the presence of capital as the increase in the real interest rate can also a↵ect expectations via the capital cost channel of ﬁrms. Compared to the benchmark formal model, it is shown that in an economy with informal labor, the indeterminacy region under the Taylor principle shrinks if the interest rate rule targets aggregate general inﬂation. This is due to the presence of an informal labor-intensive sector, which reduces the importance of the capital cost channel. However, if the interest rate rule reacts to only the inﬂation rate of the formal goods market, thereby ignoring the inﬂation of the informal goods market, the indeterminacy region expands signiﬁcantly relative to the baseline formal model. The reason for this is intuitively straightforward: under the Taylor principle the real interest rate can now actually decrease.
+These conclusions highlight the importance of accurately measuring informal prices as they have the potential to be a source of macroeconomic instability. Our analysis suggests that an overaggressive inﬂation response is one possible solution to avoid aggregate instability for central banks that have imperfect measures of informal inﬂation. Clearly, for emerging economies whose central bank faces a single mandate, obtaining accurate measures of informal inﬂation would be highly desirable to improve the e↵ectiveness of monetary policy.
+The reminder of the thesis is organized as follows. The next section presents a brief review of the literature on informality and labor markets in a general equilibrium framework. Section 3 summarizes some stylized facts about the Mexican economy and explains why some of the existing literature fails to o↵er an adequate explanation. Sections 4 and 5 outline the theoretical model and its calibration for the steady state. Section 6 describes the log-linearization of the model and Section 7 presents the simulation results and compares them with the empirical evidence of Section 3. The determinacy analysis is conducted in Section 8. Finally, Section 9 summarizes and
+6
+
+concludes.
+2. Literature Review
+The existing literature has attempted to model informality using two main approaches. Attempts to reach a consensus have only been partially successful despite of the amount of empirical research in the area. The ﬁrst approach explains informal labor as part of an optimal decision. Under this view, workers face the opportunity to operate in either of the two sectors but choose informality due to lower taxes or di↵erent leisure preferences.7 The opposite view argues against the individual’s decision to become informal. According to this approach workers remain against their will in the informal sector thanks to the segmentation of the labor market.8 Other authors like Bargain and Kwenda (2010) and Gong and Van Soest (2002) ﬁnd reasons to support both causes that dominate one or the other depending on factors like education or the nature of ﬁrms. Bosch and Maloney (2008) suggest that the self-employed likely correspond to voluntary entry while informal salaried work corresponds more closely to the queuing view.
+Leal Ord´on˜ez (2013) uses a model where the degree of law enforcement determines the size of informal ﬁrms subject to the probability of being detected. He ﬁnds an inverted-U relationship between the size of the informal sector and output. Zenou (2008) considers an informal competitive labor market capable of absorbing any amount of labor, and a formal labor market with matching frictions and wages set via Nash bargaining. He focuses on labor market policies and ﬁnds that a wage subsidy policy increases the size of the informal sector but a hiring subsidy policy reduces it. Albrecht et al. (2009) introduce heterogeneous workers and matching frictions but only to model the ﬂow between employment and unemployment. The informal-
+7See Maloney (1999), Maloney (2004), De Soto (1987), Perry (2008). 8See Harris and Todaro (1983) for details of its conception and Loayza and Sugawara (2009) for a discussion in favor of it.
+7
+
+formal ﬂow is still regarded as an optimal decision of the workers chosen on the basis of skill. They consider the e↵ects of labor market policies such as payroll tax rates and severance taxes and analyze the steady-state distributions of productivity and wages. Satchi and Temple (2009) ﬁnd that matching frictions are able to account for up to 30% of the urban informal labor force, but the goods market is ignored in the analysis, as their focus is on aggregate productivity and wage growth. Bosch and Esteban-Pretel (2012) also use a search and matching approach to explain labor transitions between formality, informality, and unemployment in Brazil.
+Most of the literature has focused on the long-run implications of informality. There are few works that have considered the business cycle implications of informality and even fewer focusing on monetary policy. Castillo and Montoro (2008) consider a business cycle model but generate results at odds with the evidence from emerging economies. In their model, laboronly ﬁrms face the opportunity to hire formal or informal labor. Informality is introduced through hiring costs in a way that the higher productivity of formal labor is balanced with the lower hiring costs of the informal sector. Their model generates procyclical informality, a result consistent with developed economies like Italy where the nature of shadow economies behave in a tax-evasive way.9 This issue is discussed further in the next section. Batini et al. (2011) is one of the few papers to considers monetary policy and the issue of informality. This paper belongs to a subset of the DSGE literature in which the modeling of informality is closer to the queuing view. They include two disturbances which cause informality: credit constraints and a real wage norm, arbitrarily established above the equilibrium wage. This wage cap shifts labor supply towards the informal sector with lower beneﬁts. In their goods market, they introduce di↵erent price rigidities for the informal and formal sectors. They ﬁnd that the importance of commitment in the
+9See Bovi (2007).
+8
+
+conduct of monetary policy increases with the size of the informal sector. They also ﬁnd that rules responding to the risk premium on the formal sector result in a signiﬁcant welfare improvement over inﬂation-output targeting rules. Mattesini and Rossi (2009) model two sectors, one competitive and one unionized, and look at optimal monetary policies in the dual economy. They ﬁnd that if a large part of wages are set in a competitive market, technology and cost shocks will have little e↵ect on inﬂation, with a consequently low interest rate response. Haider et al. (2012) model a complex model featuring a sector that produces non-tradable goods and a sector that produces tradable goods and imports goods from a foreign country. They undertake a determinacy analysis where they evaluate the determinacy gains that are obtained if the policymaker places weights on interest rate smoothing and the exchange rate, but they make no analysis of the actual contribution of the non-tradable sector to indeterminacy. Den Haan and Kaltenbrunner (2009) consider a matching environment in general equilibrium where they derive the ﬁrst-order conditions for households that can decide how much labor force to supply, but their employed/unemployed status is subject to a matching probability function. I am using their framework regarding the household leisure decision but in an informality setting.
+The results generated by the DSGE literature characterizing informality while also including the behavior of prices in the goods market, crucially depend on the nature of informality. Ferna´ndez Martin and Meza (2013) focus on business cycle responses, and they develop a model closer to the optimality approach of informality. In their model, households choose which part of their labor supply to assign to informal (tax-free) or formal (taxable) ﬁrms. They can account for the countercyclicality of informal labor using an imperfect pass-through of shocks traveling between the formal and informal sector. Ahmed et al. (2012) di↵erentiate between formal and informal labor markets according to the basis of skills. They partially account for the segmentation of labor markets but still grant households the ﬂexibility of
+9
+
+deciding how many hours of labor to supply to each of the two sectors. They are able to explain a wage premium in the formal sector over the informal sector but this is caused by a monopoly of households on skilled labor. They ﬁnd that informality enhances the crowding-out e↵ects on private investment and that there are relatively weak spillover e↵ects of shocks to the informal economy, concluding that the informal economy is a partial shock absorber. Conesa et al. (2002) introduce an informal sector with di↵erent technology and the trade-o↵ that deﬁnes the wage premium arises from the indivisibility of formal labor. A worker choosing the informal sector enjoys a divisible amount of leisure at the cost of a smaller wage.
+There is now a large literature that considers the suitability of the Taylor principle in guaranteeing determinacy of equilibrium. For models with capital, Benhabib et al. (2001) ﬁnd that the Taylor principle is not a sufﬁcient condition for determinacy when there is zero bound on the nominal interest rate. Carlstrom and Fuerst (2005) ﬁnd that under a forward-looking interest-rate rule, the presence of capital makes determinacy almost impossible. They also show that indeterminacy can arise under the Taylor principle with a current-looking interest-rate rule.10 Sveen and Weinke (2005) ﬁnd that the range of indeterminacy is signiﬁcantly increased under the assumption of ﬁrm speciﬁc capital. Kurozumi and Van Zandweghe (2008), Huang et al. (2009), and Du↵y and Xiao (2011) ﬁnd that the indeterminacy problem that arises under a forward-looking Taylor rule can be overcome if the rule also responds to current output or contains su cient history dependence via interest-rate smoothing.
+Among the works that analyze indeterminacy with labor market distortions, Zanetti (2006) features a simple analytically-tractable model of an economy with labor market frictions and Nash bargaining of wages. He ﬁnds that both a current-looking and a forward-looking interest-rate rule
+10Benhabib and Eusepi (2005) show, among other things, that responding to the output gap can be an e↵ective policy to avoid indeterminacy under current-looking rules.
+10
+
+Figure 3.1: The cyclical behavior of informality in Mexico (1993-2013)
+
+6%
+
+Informality rate cycle
+
+Output gap
+
+4%
+
+2%
+
+0%
+
+-2%
+
+-4%
+
+-6%
+
+-8%
+
+1993Q1 1993Q3 1994Q1 1994Q3 1995Q1 1995Q3 1996Q1 1996Q3 1997Q1 1997Q3 1998Q1 1998Q3 1999Q1 1999Q3 2000Q1 2000Q3 2001Q1 2001Q3 2002Q1 2002Q3 2003Q1 2003Q3 2004Q1 2004Q3 2005Q1 2005Q3 2006Q1 2006Q3 2007Q1 2007Q3 2008Q1 2008Q3 2009Q1 2009Q3 2010Q1 2010Q3 2011Q1 2011Q3 2012Q1 2012Q3 2013Q1
+
+Source: Leal and McKnight (2014)
+
+can unambiguously generate indeterminacy. However, a monetary policy rule that reacts to an weighted average of current and expected inﬂation can achieve determinacy under certain parameter constellations. Kurozumi and Van Zandweghe (2011) expand on this by adding a backward-looking inﬂation component to the policy rule. Other papers such as Krause and Lubik (2010) ﬁnd that the search and matching assumption can be an independent source of indeterminacy as actual labor market decisions are characterized to some extent by animal spirits. They ﬁnd that labor markets are capable of generating indeterminacy if the worker bargaining strength is su ciently high, and are capable of generating non-existence of equilibrium if the matching elasticity is su ciently high.
+
+11
+
+3. Stylized Facts
+3.1. Cyclicality of Informality The main concern of some of the existing literature relates to the cycli-
+cality of informality. According to Castillo and Montoro (2008), informality responds procyclically to demand shocks.11 Their main source of evidence is Bovi (2007), which shows the Italian case. When we look at the Mexican economy, a completely di↵erent pattern is found. In Figure 3.1 we can see a sharply countercyclical pattern for informality. Ferna´ndez Martin and Meza (2013) show that this negative rolling correlation between the cyclical component of output and informality has been negative for several periods of time in Mexico, and support this argument with a cross-country comparison between emerging and developed economies.
+3.2. Nature of informal ﬁrms In some models, all ﬁrms have the capacity to produce formally or infor-
+mally. This is one of the reasons explaining the procyclicality of informality in these models. Our characterization is based on the assumption that informal ﬁrms belong to a very di↵erent nature than formal ﬁrms. This view is supported by La Porta and Shleifer (2008), where they empirically ﬁnd that the main factors determining the entrepreneurial type of the ﬁrms (i.e. human capital of managers) di↵er signiﬁcantly. They also ﬁnd that very few of the formal ﬁrms (only 2.3% in Mexico) have been previously informal, a fact inconsistent with the view of dual capacity of ﬁrms. Not only is their production technology di↵erent, but their products are not perfect substitutes, as La Porta and Shleifer (2011) argue.12
+11Others like Haider et al. (2012) ﬁnd mixed results depending on the type of shock. 12They ﬁnd that informal ﬁrms occupy a very di↵erent market niche than formal ﬁrms do, and that both types of ﬁrms sell to very di↵erent types of customers.
+12
+
+3.3. Access to Capital Another characteristic of informal ﬁrms is their limitation to access credit
+markets, as documented by Patrap and Quintin (2008) among others. A complex representation of ﬁnancial rigidities is beyond the scope of this work. The easiest way to model this constraint that is also compatible with the previous stylized fact is to assume a di↵erent production technology for each type of ﬁrm. In the model proposed here, informal ﬁrms use labor as their only input to produce goods.13 Formal ﬁrms use labor and capital but face adjustment costs on their capital investments. The model follows Woodford (2003)’s approach to ﬁrm-speciﬁc investment accounting for the lack of a full rental capital market.
+3.4. Employment Total employment is signiﬁcantly less volatile in emerging economies than
+in developed countries.14 Furthermore, Mexico has one of the lowest unemployment rates (4.9% in recent estimates) not only compared to OECD countries (7.9%), but to many other emerging countries where the Latin American average is 6.4%.15 Therefore, the unemployment rate represents a very small share of the population in the labor force, compared to formal and informal workers. It makes sense to abstract from this e↵ect to capture in a neatly manner the ﬂow between formal and informal employment.16
+3.5. Creation and Destruction of Jobs There is evidence that the informal sector has the ability to absorb and
+shed labor at very high rates (Maloney (2009) and Bosch and Maloney
+13This assumption is backed up by the ﬁndings of Busso et al. (2012) in which a representative informal ﬁrm sizing 1% of the share of total ﬁrms uses 0.47% of the capital available while a representative formal ﬁrm sizing 1% uses 9.39%.
+14As documented by Meza and Ferna´ndez Martin (2012) and Ferna´ndez Martin and Meza (2013).
+15The data was obtained from the International Labor Organization (ILO) database, ILOSTAT.
+16A similar assumption is adopted by Zenou (2008) and Charlot et al. (2013).
+13
+
+(2008)). Furthermore, McKenzie and Woodru↵ (2006) ﬁnd that entry costs into the informal sector are negligible for Mexico. This supports our assumption of a competitive informal labor market. Hall (2005) and Shimer (2005) present evidence that labor ﬂuctuations in employment are due to cyclical variations in hiring as opposed to separations. According to Shimer (2005), job separation is acyclical for most economies, especially since 1985. The case for Mexico is not so clear but we will assume an exogenous separation rate and focus our cyclical variation only in the hiring mechanism.17
+3.6. Wages Castellanos (2001) ﬁnds evidence that wage rigidity in Mexico is signif-
+icantly lower for informal jobs than formal jobs. Also, Castellanos et al. (2004) and Li (2011) argue that wage rigidity is procyclical and is falling over time. These facts support our case: informal ﬁrms set wages competitively and formal ﬁrms do not su↵er from nominal rigidities per se, which means that Nash bargaining is free to take place at any period.
+3.7. Taxes Part of the literature models the tax treatments and law enforcement as
+an important mechanism for the preservation of informality. We will abstract our model from taxes and any government expenditure in order to isolate the e↵ect of labor market segmentation. Granted, we could think that the vacancy costs faced by the formal ﬁrms represent a measure of extra taxation for this sector. However, as we will see later in the sensitivity analysis, the vacancy monetary costs fail to be a main driver of this segmentation.
+17Extending the matching framework with an endogenous separation rate, as it has been treated in Pissarides (2000, ch 2) looks like an interesting extension to this work.
+14
+
+4. Model
+The economy is composed of a large number of inﬁnitely lived households, two types of ﬁrms and a monetary authority. Formal ﬁrms are monopolistically competitive, setting prices according to Calvo (1983) to maximize their proﬁts, and face a production technology consisting of capital and labor inputs. They have to invest in ﬁrm-speciﬁc capital one period in advance with adjustment costs and they open vacancies one period in advance in order to collect capital and labor. Formal jobs are destroyed at an exogenous constant rate, but they are created endogenously via a matching function that depends on the number of vacancies and informal workers. Informal ﬁrms are assumed to have ﬂexible prices, they o↵er competitive wages and have the capacity to absorb any amount of labor (the only input in the informal production function). Households have a CES utility function and can borrow from complete ﬁnancial markets. They can decide how much labor to supply but the type of labor they will supply is subject to labor market conditions. The monetary authority sets monetary policy using a contemporaneous interest-rate rule.
+
+4.1. Labor market dynamics
+
+The informal labor market is perfectly competitive and has the capac-
+
+ity to instantaneously absorb any ﬂow of workers adjusting its wage to the
+
+marginal product of labor. In this way we can abstract from unemployment
+
+and focus solely on formal-informal dynamics. Following Pissarides (2000)
+
+the formal labor market is subject to signiﬁcant search frictions with real
+
+vacancy costs. When formal ﬁrms need labor, they open up vacancies. An
+
+informal worker is always queuing for a formal position but vacant jobs need
+
+not match instantaneously with the searching worker. The labor rigidity ✓t
+
+of the economy is deﬁned by the number of vacancies Vt and the amount of
+
+informal
+
+workers
+
+i
+Lt
+
+in
+
+the
+
+following
+
+way:
+
+✓t
+
+=
+
+Vt
+i
+
+.
+
+The
+
+number
+
+of
+
+formal
+
+job
+
+Lt
+
+15
+
+matches M taking place every period relates to the DMP matching function:
+
+M(Vt,
+
+Lti)
+
+=
+
+? i1
+Vt Lt
+
+?
+
+M(Vt, Lti)
+
+⌘
+
+m
+
+✓
+
+1
+
+,
+
+◆ 1
+
+⌘
+
+q(✓t)
+
+=
+
+?
+M ✓t
+
+1
+
+(1)
+
+Vt
+
+✓t
+
+where q(✓t) is the rate at which a given vacancy is expected to be matched and ? 2 (0, 1) is the matching elasticity that measures the importance of an open vacancy with respect to a informal worker in the success of a match. We can
+
+also think of ✓tq(✓t) as the rate at which a given informal worker is expected
+
+to ﬁnd a formal job.
+
+Henceforth, ? =
+
+1 2
+
+following the literature.18
+
+Further,
+
+we will set M = 1 as the parameter determined by policy changes a↵ecting
+
+formal unemployment. Assuming an exogenous formal job destruction , we
+
+obtain the following law of labor mobility relating the amount of informal
+
+workers
+
+i
+Lt
+
+and
+
+the
+
+amount
+
+of
+
+formal
+
+workers
+
+f
+Lt
+
+:
+
+i
+Lt+1
+
+i
+Lt
+
+=
+
+f
+Lt
+
+✓tq(✓t)Lit
+
+(2)
+
+4.2. Households
+
+Households choose consumption, supply their labor force to a dual labor
+
+market with frictions, and have access to complete ﬁnancial markets. A
+
+representative household aims to maximize the following expected discounted
+
+utility:
+
+1
+X
+
+k " (agt Ct)1
+
+Et
+
+1
+
+1+ # Nt
+1+
+
+(3)
+
+k=0
+
+where 1 represents the Frisch elasticity of labor supply, 1 the intertempo-
+
+ral elasticity of substitution,
+
+2
+
+(0 1) ,
+
+is
+
+the
+
+discount
+
+factor,
+
+and
+
+g
+at
+
+is
+
+a
+
+transitory demand shock process. The household problem is subject to the
+
+18See Petrongolo and Pissarides (2001) and Stevens (2002).
+
+16
+
+following resource constraint:
+
+PtCt + EtQt,t+1Bt  Bt
+
+1
+
++
+
+ff
+Wt Lt
+
++
+
+ii
+Wt Lt
+
++
+
+⇣t
+
+(4)
+
+Nt
+
+=
+
+f
+Lt
+
++
+
+i
+Lt
+
+(5)
+
+i
+Lt+1
+
+=
+
+f
+Lt
+
++
+
+(1
+
+✓tq(✓t))Lit
+
+(6)
+
+where
+
+PtCt
+
+is
+
+the
+
+aggregate
+
+consumption
+
+good,
+
+f
+W
+
+and
+
+i
+W
+
+are
+
+the
+
+wage
+
+payments received from informal and informal labor, Nt is total labor par-
+
+ticipation, Bt is the payo↵ of the portfolio held at the end of period t, and ⇣t
+
+denotes the proﬁts resulting from ownership of ﬁrms. Qt,t+1 is the stochastic
+
+discount rate deﬁned by:
+
+1 Qt,t+1 ⌘ 1 + it
+
+(7)
+
+where it is the nominal interest rate obtained by holding portfolio Bt. Equation (6) deﬁnes the expected labor mobility given the job destruction rate
+
+and the current labor market tightness ✓t. The important fact in this setup is that households decide how much labor to supply, but have no decision
+
+whether their labor will end up in the formal or informal sector. The share
+
+of their formal and informal labor supply will be determined by the labor
+
+mobility (6) subject to the labor rigidities mentioned above. Hence, there
+
+is perfect risk sharing by the households, not only in terms of consumption,
+
+but also in terms of leisure19.
+
+The goods market is divided between formally and informally produced
+
+goods where the consumption demand of informal and formal goods for ﬁrms
+
+j
+
+and
+
+k
+
+(Cti(j),
+
+f
+Ct
+
+( )), k
+
+together
+
+with
+
+the
+
+individual
+
+prices
+
+(Pti(j),Ptf
+
+( )) k
+
+lead
+
+to
+
+the
+
+’sector
+
+aggregates’
+
+(Cti,
+
+f
+Ct
+
+,Pti,Ptf
+
+).
+
+These sector aggregates lead to
+
+19See Den Haan and Kaltenbrunner (2009) for an argument of why this setup is preferable to a lottery setup
+
+17
+
+our consumption and price aggregates (Ct,Pt) a` la Dixit-Stiglitz:
+
+i
+Ct
+
+( j
+
+)
+
+=
+
+i
+Ct
+
+f
+Ct
+
+(k)
+
+=
+
+f
+Pt
+
+() k
+
+!
+
+✏f
+
+f
+
+f
+
+Ct
+
+Pt
+
+✓ i◆ µ
+
+i
+Ct
+
+=
+
+(1
+
+) Pt !
+
+Ct
+
+Pt
+
+f
+Ct
+
+=
+
+!
+
+f! µ Pt
+Ct Pt
+
+1
+Pt
+
+µ
+
+=
+
+h f1 !Pt
+
+µ + (1
+
+!)Pti1 µi
+
+(8a) (8b) (8c) (8d) (8e)
+
+where ✏f represents the elasticity of substitution among formal goods, µ
+
+represents
+
+the
+
+intersectoral
+
+elasticity,
+
+and
+
+!
+
+2
+
+(0 ,
+
+1)
+
+is
+
+a
+
+measure
+
+of
+
+household
+
+bias towards buying in the formal market.
+
+The remaining ﬁrst-order equations associated with the household prob-
+
+lem are:
+
+"
+
+✓◆
+
+Qt,t+1 = Et
+
+Ct+1
+g
+
+at Ct
+
+# Pt Pt+1
+
+i
+N = Wt Ct + ✓tq(✓t) t Pt
+
+(9) (10)
+
+where the shadow price t is given by:
+
+"f
+
+t=
+
+Wt+1 Ct+1
+
+Pt+1
+
+Nt+1 + (1
+
+# ) t+1 .
+
+(11)
+
+The intuition behind the ﬁrst-order condition of leisure (10) is the following. The left-hand-side is the disutility of being part of the labor force as of today (i.e. giving up today’s leisure). The right-hand-side is the expected beneﬁt of becoming part of the labor force. This beneﬁt is equal to the informal wage
+
+18
+
+this period plus the expected value of the probability that you are matched with a formal job for the next period. The next period’s beneﬁt of today’s match is speciﬁed recursively in (11), and it will be the formal payment minus the labor hours you will be o↵ering in the future plus the expected value of the probability that your job doesn’t get destroyed and you are able to enjoy the beneﬁts for one more period.
+
+4.3. Informal Firms
+
+Informal ﬁrms have ﬂexible prices and their production function depends
+
+solely on labor.
+
+i
+Yt
+
+() i
+
+=
+
+AtiLit(i)
+
+(12)
+
+where
+
+i
+At
+
+>
+
+0
+
+is
+
+the
+
+labor
+
+productivity
+
+that
+
+all
+
+informal
+
+ﬁrms
+
+share.
+
+Hence,
+
+all ﬁrms will demand the same amount of labor Lti(i). Informal wage will
+
+consequently be deﬁned by:
+
+i
+Wt
+
+=
+
+ii
+Pt At.
+
+(13)
+
+4.4. Formal Firms Formal ﬁrms are subject to Calvo (1983) price rigidity and have a Cobb-
+Douglas production function:
+
+f
+Yt
+
+() i
+
+=
+
+f
+At
+
+f
+Lt
+
+( )1 i
+
+↵
+
+↵
+Kt
+
+() i
+
+(14)
+
+where
+
+f
+At
+
+>
+
+i
+At
+
+is
+
+the
+
+labor
+
+productivity
+
+of
+
+formal
+
+ﬁrms,
+
+Kt↵(i)
+
+is
+
+the
+
+cap-
+
+ital input demanded for production and 0 < ↵ < 1 is the capital share of
+
+production.
+
+Neither labor nor capital can be chosen in the current period. Following
+
+Woodford (2003), capital is subject to an adjustment cost function I(·) such
+
+that I(1) =
+
+K,
+
+the
+
+depreciation
+
+rate;
+
+0(1) I
+
+=
+
+1;
+
+and
+
+00(1) I
+
+=
+
+✏
+
+,
+
+which
+
+is
+
+usually interpreted as the steady-state elasticity of the investment to capital
+
+ratio with respect to Tobin’s q. Labor is subject to search rigidities that force
+
+19
+
+the ﬁrm to open vacancies (with cost Ptc) one period in advance. A price
+
+setting
+
+ﬁrm
+
+i
+
+chooses
+
+contingent
+
+plans
+
+for
+
+{Ptf+⇤k
+
+() i,
+
+Kt+k+1(i),
+
+Lft+k+1(i)}k1=0
+
+with
+
+the
+
+help
+
+of
+
+the
+
+control
+
+variables:
+
+investment
+
+It+k
+
+() i
+
+and
+
+vacancies
+
+Vt+k
+
+( ), i
+
+in
+
+order
+
+to
+
+solve
+
+the
+
+following
+
+problem:
+
+max
+
+P1
+k=0
+
+Et
+
+n Qt,t+k
+
+hf Yt+k
+
+(i)Ptf+k
+
+(i)
+
+Wtf+k Ltf+k (i)
+
+Pt+k cVt+k (i)
+
+Ptf+kIt+k(i)io (15)
+
+s.t.
+
+Ytf+k(i) =
+
+Ptf+k(j) ! ✏f f
+
+f
+
+Yt+k ,
+
+Pt+k
+
+Ytf+k (i)
+
+
+
+f
+Lt+k
+
+( )1 i
+
+↵↵
+Kt+k ,
+
+It+k(i)
+
+=
+
+I
+
+✓ Kt+k+1(i) ◆
+
+Kt+k
+
+() i
+
+Kt+k(i),
+
+f
+Lt+k+1
+
+=
+
+q (✓t+k )Vt+k
+
++
+
+(1
+
+)Ltf+k ,
+
+8
+
+Ptf+k+1(i)
+
+=
+
+f⇤
+<Pt+k+1
+
+() i
+
+with
+
+prob
+
+:Ptf+k(i) with prob (
+
+(1 )
+
+)
+
+(16)
+
+In this framework, we are assuming in the fourth equation that ﬁrms are big enough to decrease with certainty the amount of risk implied by the matching uncertainty and treat its behavior as a certain labor mobility function. This assumption is clearly weaker than the one taken in (6) about the households. Fitting our matching rigidity into the Woodford (2003) and Sveen and Weinke (2005) setup, we can express the e↵ect of a marginal increase in capital as:
+
+⇢
+
+dVt(i)
+Ptc dKt+1(i)
+
+f dIt(i)
++ Pt dKt+1(i)
+
+=
+
+Et
+
+Qt,t+1
+
+f dLft+1(i)
+Wt+1 dKt+1(i)
+
++
+
+Pt+1c(1
+
+) dVt+1(i) dKt+1(i)
+
+f dIt+1(i)
+Pt+1 dKt+1(i)
+
+which translates into:
+
+⇢✓
+
+f dIt(i)
+Pt dKt+1(i)
+
+=
+
+Et
+
+Ptc q(✓t)
+
+✓ Qt,t+1
+
+Pt+1c(1 q(✓t+1)
+
+)
+
++
+
+◆◆
+f
+Wt+1
+
+dLft+1 (i) dKt+1(i)
+
+f dIt+1(i)
+. (17) Qt,t+1Pt+1 dKt+1(i)
+
+20
+
+This result arises from the fact that we cannot equate our optimization to the
+
+marginal product of labor since ﬁrms are demand constrained. In Woodford
+
+(2003) the amount
+
+f dLft+1(i)
+Wt+1 dKt+1(i)
+
+is
+
+known
+
+as
+
+the
+
+marginal
+
+savings
+
+M
+
+St+1
+
+( ). i
+
+This quantity represents the nominal reduction in ﬁrm’s ’s labor cost assoi
+
+ciated with having one additional unit of capital in place in period + 1. In t
+
+our representation, we will deﬁne the nominal marginal saving as:
+
+✓
+
+M St+1(i) ⌘
+
+f
+Wt+1
+
++
+
+Ptc Qt,t+1q(✓t)
+
+Pt+1c(1 ) ◆ dLtf+1(i)
+
+q(✓t+1)
+
+dKt+1(i)
+
+(18)
+
+where the following identity naturally yields:
+
+M St+1(i) = M Ct+1(i)M P Kt+1(i)
+
+(19)
+
+given that with a constraint in output:
+
+dLtf+1(i) = M P Kt+1(i) dKt+1(i) M P Lt+1(i) .
+
+The resulting nominal marginal cost of the formal sector can be expressed
+
+as:
+
+✓
+
+M Ct+1
+
+=
+
+fc
+at
+
+f
+Wt+1
+
++
+
+Ptc Qt,t+1q(✓t)
+
+Pt+1c(1 ) ◆ q(✓t+1)
+
+(20)
+
+M P Lt+1
+
+where
+
+fc
+at
+
+represent
+
+the
+
+transitory
+
+cost
+
+shock
+
+processes
+
+experienced
+
+by
+
+the
+
+formal sector. The price setting ﬁrst-order condition is given by:
+
+1
+
+X
+
+k
+Et
+
+n Qt,t+k
+
+f
+Yt+k
+
+() i
+
+hf Pt
+
+⇤( ) i
+
+k=0
+
+io
+
+M M
+
+Ct+k
+
+() i
+
+=0
+
+(21)
+
+where
+
+M=
+
+✏f ✏f
+
+1
+
+1 >
+
+is
+
+the
+
+markup
+
+from
+
+its
+
+monopolistic
+
+position.
+
+21
+
+4.5. Wage Determination
+The formal wage for one period ahead is determined via a wage bargaining approach. Wage bargaining in the formal sector is modeled according to the maximization of the surpluses of both parties (employee and ﬁrm) with a given weight 2 (0 1) that splits the surplus among the two agents and is
+, usually referred to as worker bargaining strength:
+
+f⇤ = arg max (
+
+)(
+
+)1
+
+(22)
+
+W
+
+FZ JV
+
+Wf
+
+where and
+
+Ft
+
+=
+
+f
+Wt+1
+
++
+
+[ Zt+1 + (1
+
+)Ft+1],
+
+Zt
+
+=
+
+i
+Wt+1
+
++
+
+[✓tq(✓t)Ft+1 + (1
+
+✓q(✓))Zt+1]
+
+represent the worker’s surplus of a match ( ) and the surplus of staying on F
+the informal sector ( ), whereas: Z
+
+Jt
+
+=
+
+f
+Pt
+
+f
+YL
+
+( L,
+
+) K
+
+f
+Wt
+
++
+
+(1
+
+)Jt+1,
+
+(23)
+
+and Vt = Ptc + q(✓t)(Jt+1 Vt+1)
+
+represent the ﬁrm’s surplus of a match ( ) and the surplus of staying with J
+the vacancy one more period ( ). Firms can adjust their vacancies every V
+period to market conditions. Thus, they will always create vacancies until
+
+= 0, achieving: V
+
+Jt =
+
+Ptc q(✓t)
+
+22
+
+. This makes our maximization problem (22) the following for every period of negotiation:
+
+(1 )
+
+f
+
+i
+
+WW
+
+= P f Y1(L, K)
+
+f
+W
+
+1 + ( + ( ))
+
+1 (1 )
+
+✓q ✓
+
+(1
+
+) f + f = (1 WW
+
+) i+ W
+
+P
+
+f
+
+f
+YL
+
+( L,
+
+K
+
+)
+
+f = (1 W
+
+)W
+
+i
+
++P
+
+f
+
+f
+YL
+
+(L,
+
+K
+
+)
+
++
+
+(
+
+1)
+
+h P
+
+f
+
+f
+YL
+
+(L,
+
+K
+
+)
+
+i
+f
+W
+
+where
+
+=1
+
++ 1
+
+( (1
+
++
+
+( )) ✓q ✓ )
+
+=
+
+1+
+
+(1
+
+✓P c (1
+
+J
+
+)
+
+=
+
+1+
+
+P
+
+f
+
+f
+YL
+
+✓P c () L, K
+
+f
+W
+
+leading us to the equation deﬁning the formal wage:
+
+f
+Wt+1
+
+=
+
+(1
+
+)Wti+1 +
+
+hf f Pt+1YL
+
+(Lt+1,
+
+Kt+1)
+
++
+
+✓t+1Pt+1
+
+i c
+
+.
+
+(24)
+
+Note that if = 0, formal ﬁrms will just need to pay the informal wage, enough to keep informal workers searching in equilibrium for formal jobs. On the other hand, if = 1, the equilibrium real wage will be the real marginal product of formal labor plus the costs that the ﬁrm is saving each period by not opening that vacancy.
+
+4.6. Monetary Authority
+The monetary authority responds to deviations from the steady state general inﬂation and real output by setting a deviation it from the steady state interest rate i following an ad-hoc current looking Taylor rule
+
+1 + it
+
+=
+
+✓ ⇧t ◆⌧⇡
+
+✓ ◆⌧Y Yt
+
+(25)
+
+1+i ⇧
+
+Y
+
+where ⇧t ⌘
+
+Pt
+
+is the price level ratio, and ⇧ represent the steady state Y
+
+Pt 1
+
+values of the real product and price level ratio, and ⌧⇡, ⌧Y 0 are the weights
+
+the monetary authority attaches to each deviation from steady state value.
+
+According to the Taylor principle, a deviation of prices by one percentage
+
+23
+
+point –say an increase– should prompt the monetary authority to increase the nominal interest rate by more than one percentage point (⌧⇡ > 1), thereby increasing the real interest rate.
+
+4.7. Market Clearing The clearing of the labor market requires all labor supply Nt to be deter-
+mined by the following equation:
+
+Z1
+
+Z1
+
+Nt
+
+=
+
+i
+Lt
+
++
+
+f
+Lt
+
+=
+
+Lit(j)dj +
+
+f
+Lt
+
+( j
+
+) dj.
+
+(26)
+
+0
+
+0
+
+Goods market clearing requires that for each variety j in each sector:
+
+f
+Yt
+
+() j
+
+=
+
+f
+Ct
+
+() j
+
++
+
+f
+It
+
+() j
+
++
+
+cVt
+
+( j
+
+)
+
+i
+Yt
+
+( j
+
+)
+
+=
+
+i
+Ct
+
+( j
+
+) .
+
+The aggregation of these two equations together with our demand equations (8) yields:
+
+Z1
+
+f
+Yt
+
+=
+
+(Ctf
+
++
+
+f
+It
+
+)
+
+0
+
+f
+Pt
+
+( j
+
+)
+
+!
+
+f
+
+✏f
+dj + cVt
+
+Pt
+
+f
+Yt
+
+=
+
+f
+Ct
+
++
+
+f
+It
+
++
+
+cVt
+
+i
+Yt
+
+( j
+
+)
+
+=
+
+i
+Ct
+
+( j
+
+) .
+
+(28a) (28b)
+
+4.8. Transitory processes
+
+The
+
+log
+
+levels
+
+of
+
+transitory
+
+aggregate
+
+demand
+
+shocks
+
+0g
+at
+
+⌘
+
+log (atg )
+
+and
+
+formal
+
+cost
+
+shocks
+
+0f c
+at
+
+⌘
+
+log(atf c )
+
+are
+
+described
+
+as
+
+AR(1)
+
+processes:
+
+0g
+at
+
+=
+
+0g
+⇢aat
+
+1
+
++g "
+
+0f c
+at
+
+=
+
+0f c
+⇢aat 1
+
++
+
+fc
+"
+
+(29) (30)
+
+where
+
+⇢a
+
+2
+
+(0 1), ,
+
+and
+
+g
+"
+
+and
+
+fc
+"
+
+are
+
+i.i.d
+
+shocks
+
+⇠
+
+(0 ,
+
+2) with
+
+2 0. >
+
+24
+
+5. Equilibrium
+
+5.1. A Rational-Expectations Equilibrium
+
+Given
+
+an
+
+initial
+
+set
+
+of
+
+conditions
+
+{K0,
+
+B0,
+
+f
+L0
+
+},
+
+and
+
+the
+
+exogenous
+
+sequences
+
+of
+
+demand
+
+shocks
+
+g
+at
+
+and
+
+formal
+
+cost
+
+shocks
+
+f
+at
+
+c,
+
+a
+
+rational-
+
+expectations equilibrium is a set of 22 variables consisting of a sequence of
+
+prices
+
+{Pt,
+
+f
+Pt
+
+,
+
+i
+Pt ,
+
+i
+Wt ,
+
+f
+Wt
+
+,
+
+Qt,
+
+M
+
+Ct,
+
+M
+
+St
+
+,
+
+it
+
+}
+
+and
+
+a
+
+sequence
+
+of
+
+allocations
+
+{Nt,
+
+t,
+
+i
+Lt,
+
+f
+Lt
+
+,
+
+Ct,
+
+f
+Ct ,
+
+i
+Ct ,
+
+i
+Yt ,
+
+f
+Yt ,
+
+✓t,
+
+f
+It ,
+
+Kt,
+
+Vt}
+
+for
+
+all
+
+t
+
+0 characterized by:
+
+(i) Equations (7), (8c)-(8e), (9), (28a)-(28b) and the production functions
+
+(12) and (14); these 9 equations comprise the goods market. (ii) Equation
+
+of labor mobility, (2); leisure, (10), (11); market clearing, (26); labor rigid-
+
+ity (1); and wages (24),(13); represent the next 7 equations from the labor
+
+market. (iii) We have 5 more equations: the adjustment cost equation, (16);
+
+the price-setting decision of formal ﬁrms (21); the marginal cost, (20); the
+
+investment decision, (17); and the marginal saving (19). (iv) The monetary
+
+policy rule (24); and the appropriate TVC conditions are satisﬁed.
+
+25
+
+5.2. Steady State Equilibrium
+A unique perfect-foresight zero-inﬂation steady state equilibrium exists. In what follows unindexed variables denote their steady state values:
+
+Q=
+
+Ci = (1
+
+✓Pi◆ µ
+
+!)
+
+C
+
+P
+
+Cf
+
+=
+
+✓Pf !
+
+◆
+
+µ
+C
+
+P
+
+P1
+
+µ
+
+=
+
+h !P
+
+f
+
+1
+
+µ + (1
+
+!)P i1 µi
+
+Y f = Cf + If + cV Y i = Ci Y f = Af Lf 1 ↵K↵ Y i = AiLi Lf = ✓q(✓) Li
+
+N
+
+=
+
+Wi C
+
++ ✓q(✓)
+
+P
+
+1
+
+Wf
+
+= 1
+
+(1
+
+) PC
+
+N
+
+N = Lf + Li
+
+V = ✓Li
+
+W i = P i Ai PP W f = (1 )W i +
+
+h P
+
+f
+
+YLf
+
+(L,
+
+K)
+
++
+
+✓P
+
+i c
+
+If = KK
+
+P f = MM C
+
+✓ Wf
+
++
+
+P
+
+c
+
+(1
+
+MC =
+
+(1 q(✓)
+
+)) ◆
+
+MPL
+
+P f = [M S P f [ K 1]]
+
+Yf MS = MC ↵
+K
+
+(31a) (31b)
+(31c) (31d) (31e) (31f ) (31g) (31h) (31i) (31j) (31k) (31l) (31m) (31n) (31o) (31p) (31q)
+(31r) (31s) (31t)
+
+26
+
+where we set as the numeraire and solve the system for: P
+
+{
+
+if i f f i
+
+f iif
+
+f
+
+}.
+
+Q, N, , L , L , W , W , P , P , C, C , C , Y , Y , ✓, I , K, M C, M S, V
+
+Note
+
+that
+
+in
+
+this
+
+steady
+
+state
+
+(Pt
+
+=
+
+Pt+1
+
+=
+
+) P
+
+and
+
+therefore
+
+inﬂation
+
+is
+
+zero.
+
+5.3. Calibration
+
+The period length is one quarter. Table 5.1 shows the parameters im-
+
+posed. As standard, it was deﬁned = 3 following Woodford (2003) and ✏
+= 0 08 following Den Haan and Kaltenbrunner (2009) and Walsh (2005). .
+We choose ✏f = 11 implying a frictionless markup of 10 percent, which is in line with the empirical estimate in Gali et al. (2001). The depreciation rate
+
+K is set equal to 5 percent, following Aguiar and Gopinath (2007). Table 5.2 shows the calibrated parameters, which are , f i, , , and . The
+! A /A c µ calibrated parameters match with the similar literature. Ferna´ndez Martin
+
+and Meza (2013) ﬁnd f i = 2 1901 with data from Busso et al. (2012). A /A .
+Batini et al. (2011) use as elasticity of substitution between formal and in-
+
+formal goods = 1 5, close to our calibration. The same work however, uses µ.
+
+= 0 63, a little di↵erent from our calibration = 0 83 which assumes a
+
+!.
+
+!.
+
+stronger bias for consumer preferences.
+
+Table 5.1: Imposed Parameters
+
+Parameter
+M ✏f ✏ ↵
+K
+
+Description Quarterly discount factor Inverse of the elasticity of labor supply Inverse of elasticity of intertemporal substitution
+Matching coe cient Elasticity of substitution between formal goods
+Convexity of capital adjustment cost Formal production capital share Job destruction rate Depreciation rate
+
+V alue 0.99 1 1 1 11 3 0.30 0.08 0 05 .
+
+27
+
+Table 5.2: Calibrated parameters
+
+Parameter
+!
+f
+A
+i
+A c
+µ
+
+Description Household bias for formal consumption
+Productivity ratio
+Real vacancy costs Elasticity between formal and informal goods
+Worker bargaining strength
+
+V alue 0.83
+2
+02 . 1.8 0.6
+
+We can see the results for the steady state equilibrium in Table 5.3. The wage gap of 18% matches with the estimations of Bargain and Kwenda (2010) which assign a gap of 20% to 38% to informal workers (excluding the selfemployed). The share of employment in the informal sector is 33% which matches the calculation of ILO (2012) that ﬁnd a share of 34.1% for Mexico in 2009. The relative size of informal production and consumption of informal goods with respect to their formal counterparts is 52% and 68%, which matches the results obtained in INEGI’s Satellite Account of the Informal Sector in Households (1998-2003). The price level of informal sector resulted in 60% of general price level, a reasonable result although estimates are not available in the literature.
+
+Parameter
+If Yf Yi Yf Ci C Pi P Pf P Wf Wi Li
+N
+
+SS value 0 23 . 0 52 . 0 68 . 0 59 . 1 15 . 1 18 . 0 33 .
+
+Table 5.3: Steady State Results
+Empirical estimates
+
+Source
+
+0 22
+
+WorldBank (2009-2013)
+
+.
+
+0 59
+
+INEGI (1998-2003)
+
+.
+
+0 71
+
+INEGI (1998-2003)
+
+.
+
+—
+
+—
+
+—
+
+—
+
+1 20 1 38 .. 0 30 .
+
+Bargain and Kwenda (2010) Satchi and Temple (2006)
+
+The sensitivity analysis in Section A.1 shows that these results are robust to changes in two out of the three key parameters ’novel’ to this model
+
+28
+
+(the job destruction rate in Figure A.2 and the vacancy cost in Figure c
+A.3). From inspection of Figure A.1, the wage gap is unsurprisingly sensitive to the worker bargaining strength and the share of informal labor naturally responds positively to an increase in the wage gap, as the segmentation sharpens.
+
+6. Log-Linearization
+
+In order to look at impulse deviations from the steady-state path, we can
+
+reduce the complexity of our nonlinear system by looking only at the log-
+
+deviations from the steady state. For small deviations from the steady state,
+
+the interpretation of these log-deviations (which are linear approximations)
+
+is intuitive: they represent the percentage deviations from the steady state
+
+denoted by
+
+xbt = xt
+
+x .
+
+(32)
+
+x
+
+We next proceed to derive the log-linearized version of the model.
+
+6.1. Market Clearing The log-linearization of the market clearing equations (28) leads to:
+
+✓
+
+!
+
+cf Yt
+
+=
+
+1
+
+f
+Yt
+
+=
+
+(Ctf
+
++
+
+It)
+
++
+
+cVt
+
+I
+
++ cV
+f
+
+◆
+
+cf Ct
+
++
+
+I
+f
+
+Ibt
+
++
+
+cV
+f
+
+Vbt.
+
+Y
+
+YY
+
+Log-linearization of (16) and (1) turn the above equation into:
+
+✓
+
+cf Yt
+
+=
+
+1
+
+I
+
++ cV
+f
+
+◆
+
+cf Ct
+
++
+
+h I
+f Kbt+1
+
+(1
+
+Y
+
+KY
+
+i⇣ ⌘
+
+K )Kbt
+
++
+
+cV
+f
+
+✓bt + Lbti
+
+(34) .
+
+Y
+
+29
+
+The log-linearized aggregate production functions are:
+
+cf Yt
+
+=
+
+↵Kct
+
++
+
+(1
+
+↵)Lcft
+
+(35)
+
+Ycti = Lbti.
+
+(36)
+
+The labor market clearing becomes:
+
+Nbt
+
+=
+
+f
+
+cf L
+
+t
+
++
+
+(1
+
+f)
+
+bi L
+
+t
+
+(37)
+
+f
+where f = L 2 (0 1). ,
+N
+6.2. Households
+The household Euler’s equation is:
+
+Cbt = EtCbt+1
+
+1⇥ it
+
+Et⇡t+1
+
++
+
+0g ⇤ at
+
+(38)
+
+where it = log(Qt,t+1) is the interest rate deviation from steady state rate ✓◆
+and ⇡t = log Pt+1 is the inﬂation rate. The demand equations (8) are Pt
+aggregated and log-linearized:
+
+µ1
+
+✓
+1
+
+f◆ µ
+
+Cbt
+
+=
+
+µ
+!
+
+C
+
+cf C
+
+t
+
++
+
+1
+
+C
+
+! µ 1
+
+✓
+1
+
+f◆ µ
+
+µC !
+
+Ccit
+
+C
+
+f1 µ
+
+f1 µ!
+
+Pbt
+
+=
+
+P !
+
+1
+
+µ
+
+cf P
+
+t
+
++
+
+1
+
+P ! 1µ
+
+Pcit
+
+P
+
+P
+
+(39)
+
+which turns into:
+
+⇣f ⇡t
+
+⌘1 ⇡t =
+
+h
+
+i
+
+(Ccit Ccit 1) (Cbt Cbt 1)
+
+(40)
+
+µ
+
+30
+
+f1 µ
+
+where
+
+=
+
+P !
+
+1
+
+µ
+
+.
+
+The labor supply equations (10) and (11) translate into:
+
+P
+
+Nbt =◆ b t =(1
+
+✓\i ◆! Cbt + Wt + (1
+Pt
+
+✓1
+
+◆
+
+◆) 2 ✓bt + b t
+
+20
+
+\ f !1
+
+(1 )) 4⌘ @ Cbt+1 + Wt+1 A + (1
+
+Pt+1
+
+(41)
+3 ⇣⌘ ⌘) Nbt+1 5
+
++ (1 ) b t+1
+
+(42)
+
+f
+
+W
+
+i
+
+C
+
+where = W
+
+◆
+
+C
+
+and = ⌘
+
+P
+f
+
+1. Mobility between formal >
+
+PN
+
+W
+
+CN
+
+and informal labor is given by: P
+
+cf L
+
+t+1
+
+=
+
+(1
+
+)Lcf t +
+
+
+
+1 2
+
+✓bt
+
++
+
+Lbit
+
+(43)
+
+6.3. Firms 6.3.1. Informal ﬁrms
+With ﬂexible prices, the marginal product of labor on informality is equal to the marginal cost of labor at every period
+
+✓\i ◆
+
+Wt = Ycti Lbit.
+
+(44)
+
+Pt
+
+6.3.2. Formal ﬁrms Given that the ’e↵ective salary’ (numerator of (20)) is the same for all
+ﬁrms due to the wage bargaining mechanism and the fact that we are assuming c and to be the same for every ﬁrm, we can express the log-linearized real marginal cost at the ﬁrm level as:
+
+mdct(i) = mdct
+
+✏f ↵ 1
+
+[Pbtf (i)
+
+f
+Pbt
+
+]
+
+↵ 1
+
+[Kct(i)
+
+Kct]
+
+(45)
+
+↵
+
+↵
+
+31
+
+where mct is the real marginal cost of the economy given by (20) divided by the price level. The same equation for the marginal cost (19) has to be log-linearized:
+
+m\ ct+1
+
+=
+
+[f Wt+1 hw Pt+1
+
++
+
+hc
+
+ it
+
++
+
+1 2 ✓bt
+
+1 + h✓ 2 ✓d t+1
+
+cf Y
+
+t+1
+
++
+
+cf L
+
+t+1
+
++
+
+0f c
+at
+
+(46)
+
+where hw = W f
+P
+
+Wf P
+
+1 2
+M✓
+
++ 1
+2
+
+(1
+
+(1
+
+M✓ c
+
+, ))
+
+hc = W f
+P
+
+c
+
++ 1
+2
+
+(1
+
+M✓ c
+
+(1
+
+)) and h✓ = 1 hw hc.
+
+The price dynamics determined by (45) and (21) makes capital accumula-
+
+tion indistinguishable from Sveen and Weinke (2005) leading to the following
+
+equation:
+
+f
+Pbt
+
+() i
+
+f
+Pbt
+
+=
+
+P1
+k=1
+
+(
+
+)k
+
+Et⇡t+k
+
++
+
+⇠
+
+P1
+k=0
+
+(
+
+)k Etmcct+k
+
+P1
+k=0
+
+(
+
+)k
+
+Et
+
+[Kct
+
+() i
+
+Kct] (47)
+
+(1 ) (1 )
+
+where =
+
+↵ 0 and
+
+⇠
+
+(1 ↵ + ↵✏f ) >
+
+log-linearize real marginal savings:
+
+(1 )
+
+=
+
+↵ 0. We then
+
+(1 ↵ + ↵✏f ) >
+
+mdst
+
+() i
+
+=
+
+mdst
+
+✏f 1
+
+[Pbtf
+
+() i
+
+f
+Pbt
+
+]
+
+1
+
+1
+
+[Kct
+
+() i
+
+Kct]
+
+↵
+
+↵
+
+where mst is the aggregated real marginal saving given by (19) divided by the price level.
+
+mcst
+
+=
+
+mcct
+
++
+
+cf Y
+
+t
+
+Kct
+
+(48)
+
+We now log-linearize the investment condition (17) and aggregate all ﬁrms in the economy
+
+Kbt+1
+
+=
+
+1
+
+1 +
+
+Kbt + 1 +
+
+EtKbt+2 + 1
+
+(1 K) (1 + ) Etmcst+1
+
+1 (1 +
+
+) (it
+
+Et⇡t+1). (49)
+
+✏
+
+✏
+
+Instead of solving the formal price dynamics numerically as in Woodford
+
+32
+
+(2003), we will use the approximation made by Sveen and Weinke (2004) where (49) and (47) join sequentially to give the following New Keynesian Phillips Curve (or Aggregate Supply) relation for formal ﬁrms:
+
+f
+⇡t
+
+=
+
+f
+Et⇡t+1
+
++
+
+⇤
+mdct
+
+(50)
+
+where ⇤ = (1 ) (1
+
+) (1 ↵) . The formal wage equation (24) is log-
+
+(1 ↵ + ↵✏f )
+
+linearized to yield:
+
+\f ! Wt = (1 Pt
+
+✓\i ◆ ) Wt + (1 (1 
+Pt
+
+h
+
+⇣
+
+⌘i
+
+) ) (1 
+
+) #
+
+cf P
+
+t
+
++
+
+cf Y
+
+t
+
+Lbit
+
+Pbt + #✓bt
+
+(51)
+
+i
+
+where  =
+
+Wt
+f
+
+and # =
+
+f
+
+Wt
+
+P (1
+
+P
+
+✓c
+f
+
+.
+
+↵)
+
+Yt
+f
+
++✓c
+
+Lt
+
+6.4. Monetary Authority
+
+Finally, log-linearizing the interest-rate rule (25) yields:
+
+it = ⌧⇡⇡t + ⌧Y Ybt.
+
+(52)
+
+The full log-linearized system is deﬁned by the aforementioned equations
+
+that will deﬁne the following proﬁle:
+
+✓\i ◆
+
+✓\f ◆
+
+{ cf cf ci bi b cf ci b b b W
+
+fW b
+
+}
+
+Y , L , Y , L , C, C , C , N, , ✓,
+
+, mcc, mcs, K, ⇡ ,
+
+, ⇡b
+
+P
+
+P
+
+33
+
+✓ Ycf t = 1
+
+I
+
++ cV Yf
+
+◆
+
+Cctf
+
++
+
+Ih K Y f Kbt+1
+
+(1
+
+Ycit = Ccit
+
+i K )Kbt
+
++
+
+cV Yf
+
+⇣ ✓bt
+
+⌘ + Lcit
+
+Yctf = ↵Kct + (1 ↵)Lcft
+
+Ycti = Lcit
+
+Nbt = f Lcf t + (1 f) Lcit Cbt = EtCbt+1 1 [it Et⇡t+1] + a0tg
+
+µ1
+
+0
+
+Cbt
+
+=
+
+1
+!µ
+
+✓Cf C
+
+◆
+
+µ
+
+Ccf t + @1
+
+1 µ 1
+
+1 ✓Cf ◆ !µ
+C
+
+µ
+
+A Ccit
+
+(53a) (53b) (53c) (53d) (53e) (53f )
+(53g)
+
+⇡tf = 1 µ Nbt = ◆
+b t = (1
+
+h
+
+i
+
+(Ccit Ccit 1) (Cbt Cbt 1) + ⇡t
+
+Cbt
+
++
+
+d Wti ! Pt
+
++
+
+(1
+
+◆)
+
+✓1 2 ✓bt
+
++
+
+◆ bt
+
+(1
+
+20 )) 4⌘ @
+
+Cbt+1
+
++
+
+\ Wtf+1 1 A
+Pt+1
+
++
+
+(1
+
+3
+⇣⌘ ⌘) Nbt+1 5
+
+(53h) (53i)
+
++ (1 ) b t+1
+
+Lcit+1 = 1 f f Lcf t + (1
+
+✓
+
+1 2
+
+)Lcit
+
+11 ✓ 2 2 ✓bt
+
+✓\ Wti ◆ = Pt
+
+1 µ
+
+⇣ Ycti
+
+⌘ Cct
+
+mcct+1
+
+=
+
+hw
+
+\ Wtf+1 Pt+1
+
++
+
+hc
+
+ it
+
++
+
+1 2 ✓bt
+
+1 + h✓ 2 ✓bt+1
+
+Ycf t+1 + Lcf t+1 + a0tfc
+
+mcst = mcct + Ycf t Kct
+
+Kbt+1
+
+=
+
+1
+
+1 +
+
+Kbt + 1 +
+
+EtKbt+2 + 1
+
+✏
+
+(1 (1 +
+
+K
+)
+
+)
+
+Et
+
+mcst+1
+
+1 ✏ (1 +
+
+) (it
+
+⇡tf = Et⇡tf+1 + ⇤mdct
+
+\ Wtf+1 ! = (1 Pt+1
+
+✓ )
+
+\ Wti+1
+
+◆
+
++
+
+(1
+
+(1
+
+Pt+1
+
+h
+
+⇣
+
+) ) (1 #) Pcf t+1 + Ycf t+1 Lcf t
+
+(53j) (53k)
+(53l)
+(53m) (53n) ET ⇡t+1) (53o) (53p) ⌘i Pbt + #✓bt (53q)
+
+34
+
+7. Impulse Responses
+Figure 7.1: Impulse response to an aggregate demand shock
+Figure 7.1 shows the e↵ect of a positive aggregate demand shock in the model and in a benchmark model without the labor rigidities. The ﬁrst thing to notice is that informal employment is sharply countercyclical. An increase of 35 basis points (bp) in total consumption is equivalent to a decrease of 50 bp on informal employment in the following quarters. This is the opposite result from Castillo and Montoro (2008), in which informality was procyclical in response to a demand shock. In their model, ﬁrms had the possibility to hire formal and informal labor. At the marginal deviation from their equilibrium, ﬁrms would prefer to hire cheaper labor. This permits the ﬁrms
+35
+
+to hire workers in excess in response to a positive demand shock. In our model, the nature of formal and informal ﬁrms is di↵erent and formal ﬁrms cannot hire labor informally. The intuition for our result is the following. Upon a demand shock, the household bias for formal goods favors the formal sector. Both sectors increase their labor demand, but formal labor demand takes labor directly away from the informal sector, whereas the informal sector has to hire labor from the ’idle’ population. Consequently, we have a matching function that is absorbing formal labor from the informal sector at a higher rate than the informal sector can bring new labor into the labor force. The informal sector is incapable of attracting enough ’new’ people (people out of the labor force before). The reason for this labor shortage is that households do not have to supply new labor to the informal sector in order for their income to increase. As the informal share of household moves towards a larger formal share, household income increases and is less willing to give away leisure for a lower wage in the informal sector. A feature of this mechanism is that the shrinking informal sector is at the same time increasing informal wages in an attempt to attract labor. The consequence is not only a decrease in the informal sector, but a reduction in the wage gap, explaining two key stylized facts outlined in Section 3.
+Formal employment behaves procyclically and its response in the presence of informality is magniﬁed by up to four times from the total employment in the benchmark model without informality. The initial e↵ect of investment in the formal sector falls in the beginning more than it does in the benchmark case but it recovers faster. This fact is explained by the marginal savings faced by the ﬁrm. Since marginal costs of formal ﬁrms are higher (due to the hiring costs involved in the labor market) one unit of physical capital is more valuable than before. In short, ﬁrms are more willing to invest in physical capital (It) than they are to invest in labor than before. This e↵ect, however, is not very signiﬁcant in response to a demand shock as the impulse responses show. We can see in the robustness analysis (Figure A.5) that the hiring costs
+36
+
+are not of extreme importance to our results. The important factor here is the interaction between a sector capable of immediate absorption/release of employees and a sector that is attractive for those workers, but which is faced with a tightness and has to plan one step in advance for them.
+It is noteworthy that the formal consumption gap and the output gap behave more volatile than their counterparts in the benchmark model. Informality is magnifying the response of formal consumption and output. It is convenient to point out here that informality represents a bu↵er that diminishes the pressure of demand shocks to inﬂation but ampliﬁes its e↵ect on output. This is similar to the conclusions of Castillo and Montoro (2008) and Conesa et al. (2002) who argue that informal labor ’allows ﬁrms to expand output without putting pressure on wages’. When the shock comes from the demand side, our result is almost in line with this literature, although it is a bit more complex. Output response is twice as it would be without informality but begins its cycle slower than the benchmark model.20 Inﬂation starts with a higher volatility but sees its cycle been tempered quicker than in the benchmark case.
+Total employment barely changes its peak values (around 10 bp) from the benchmark model, but the volatility of it from one quarter to the next is reduced thanks to the labor dynamics described before. Regardless, the fact that the peak value is the same as the benchmark model without informality is probably at odds with the stylized facts we mentioned in Section 3 for emerging markets, as we would be expecting a dampening of the total employment dynamics. The reason for this result is the simpliﬁcation by which households are able to pool their labor force risk.
+In the Appendix we can see the sensitivity of these results to changes in key parameters. As Figures A.4, A.5 and A.6 show, the results are robust to changes in the worker bargaining strength , the vacancy real cost , and
+c
+20A fact arising from the labor dynamics faced by formal ﬁrms, in which they have to plan their hiring one period in advance.
+37
+
+the job destruction rate . Figure A.7 shows how price stickiness is playing an important factor in the size of the responses although even with a very low price stickiness, the qualitative behavior of the results remains intact.
+Figure 7.2: Impulse Response to a cost shock
+Figure 7.2 shows that if the shock comes from the cost channel (a temporary surge in the marginal cost of formal ﬁrms) the situation changes slightly. The informal sector remains unambiguously countercyclical but its e↵ect is now to temper the business cycle as we can see from the output gap and the consumption gap. When the shock comes from the supply side, the informal economy is still a bu↵er to inﬂation, but it also tempers the cycle of the entire economy. Output is half as volatile as it would be in the benchmark
+38
+
+model.
+
+It has been shown that the presence of informality has di↵erent e↵ects on
+
+output depending on whether the economy is faced with a demand or supply
+
+shock. We can exemplify the di↵erent e↵ects of informality by considering
+
+a demand and a supply shock that would both decrease output. When that
+
+negative shock comes from the formal supply side, informal goods are able
+
+to step in as ’imperfect substitutes’. Informal output rises to satisfy the con-
+
+sumer demand and the reduction in output and consumption is tempered
+
+until the formal sector recovers. When a negative shock comes from the de-
+
+mand side, informal sector rises to satisfy the labor supply that was dismissed
+
+by the formal sector. This time, however, the e↵ect of the informal sector on
+
+labor supply creates a distortion in the labor market that worsens the posi-
+
+tion of formal ﬁrms, sharpening the cycle and preventing a smooth reversion
+
+to the steady state.
+
+Finally, note that total employment is less procyclical than in the bench-
+
+mark case, which aligns with the stylized fact mentioned in Section 3 that
+
+estimates a lower correlation of total employment and business cycles in
+
+emerging countries.
+
+Note that the Taylor rule assumed for this analysis responded to both
+
+general
+
+inﬂation
+
+(⌧⇡
+
+=
+
+1 5) .
+
+and
+
+general
+
+product
+
+(⌧y
+
+=
+
+0 3), .
+
+a
+
+reasonable
+
+representation of the de facto reaction function of the Mexican central bank.
+
+If we were to assign a Taylor rule with ⌧y = 0 –a closer representation of the de jure mandate of Mexican central bank if we tightened the tolerance
+
+bands– we would be facing multiple equilibria, a common feature of monetary
+
+policy for models with ﬁrm-speciﬁc capital. The next section investigates in
+
+detail the e↵ect of informality in generating multiple equilibria.
+
+39
+
+8. Determinacy Analysis 8.1. Self-fulﬁlling expectations in benchmark formal model
+According to the dynamics of the benchmark model, the monetary authority response could lead to multiple equilibria in the presence of ﬁrmspeciﬁc investment. The mechanisms for self-fulﬁlling expectations can be intuitively explained. In the absence of a capital accumulation, consider a ’spontaneous’ increase in inﬂation expectations that is not supported by fundamentals. If the monetary authority, by following the Taylor principle (⌧⇡ > 1), responds by increasing the real interest rates this decreases the marginal costs for ﬁrms and exerts downward pressure on current inﬂation. Thus, the monetary authority can easily prevent the initial inﬂation belief from becoming self-fulﬁlling.
+Figure 8.1: Indeterminacy regions of a model with ﬁrm-speciﬁc capital without informality. Blue=Determinacy. Black=Indeterminacy. [Left, vs ⌧⇡], parameters from Sveen and Weinke (2005, p. 30). [Right, ⌧⇡ vs ⌧y], parameters were obtained from Du↵y and Xiao (2011, p. 977)
+However, with ﬁrm-speciﬁc capital accumulation, indeterminacy can arise under the Taylor principle. With a slightly di↵erent calibration we can see in our benchmark model the border between regions of indeterminacy and
+40
+
+determinacy. In Figure 8.1 we have followed the parametrization of Sveen and Weinke (2005) (SW) and Du↵y and Xiao (2011) (DF) to track indeterminate states on di↵erent planes. SW region focuses on vs ⌧⇡ leaving the response to product (⌧Y ) as zero. DF region focuses on ⌧⇡ vs ⌧y leaving the price stickiness ( ) at 0.75. The reason for these indeterminacy regions is the following. Let the monetary authority apply a simple interest rule as in SW calibration, responding only to inﬂation for simplicity:
+
+it = ⌧⇡⇡t
+
+(54)
+
+Given an increase in inﬂation expectations, an increase in the real interest rate will also decrease investment, but this will increase the expected future marginal costs derived from a lower capital stock. Thus, via the cost channel, the net e↵ect of this response may be an increase in current inﬂation allowing for self-fulﬁlling inﬂations to be validated. Such indeterminacy will only occur if there is su cient price stickiness, as the higher the degree of price stickiness, the stronger the future marginal cost will a↵ect today’s inﬂation.21 The left diagram of Figure 8.1 illustrates perfectly the mechanism of indeterminacy described above: as price stickiness increases, the indeterminacy region widens and the monetary authority needs to react more aggressively to avoid multiple equilibria.
+
+8.2. Self-fulﬁlling expectations with informality
+Figure 8.2 employs the SW and DF calibrations and illustrates the indeterminacy region in the presence of an informal sector when the interest rate rule reacts to general inﬂation. Remember that the range of policy responses
+
+21This is only an intuitive illustration of one of the possible mechanisms. For a deeper explanation of the indeterminacy process, see Benhabib and Eusepi (2005) or Woodford (2003).
+
+41
+
+Figure 8.2: Indeterminacy regions with Firm-Speciﬁc Capital with informality and a general inﬂation targeting rule. [Left, vs ⌧⇡, SW], [Right, ⌧⇡ vs ⌧y, DF]
+
+for each graph is di↵erent:
+
+SW(left) DF(right)
+
+it = ⌧⇡⇡t
+
+it
+
+=
+
+⌧⇡ ⇡t
+
++
+
+⌧y
+
+b Y
+
+By inspection, the indeterminacy region is sizeably reduced.22 Why? An
+
+increase in the real interest rate still a↵ects the cost channel as mentioned
+
+above. The di↵erence lies in the presence of an informal productive sector,
+
+as the formal cost channel is less important for the determination of general
+
+inﬂation. The increase in the real interest rate will still push down inﬂation
+
+via consumption, but the cost channel will exert less upward pressure as
+
+before, yielding a higher region of determinacy. The right side of Figure 8.2
+
+illustrates that as if the central bank also reacts to output in the policy rule,
+
+the
+
+indeterminacy
+
+area
+
+shrinks,
+
+although
+
+for
+
+the
+
+region
+
+around
+
+⌧⇡
+
+=
+
+15 .
+
+one
+
+needs to apply a bit more of weight for output to avoid indeterminacy.
+
+22In Section B of the Appendix we consider the robustness of this result to changes in several key parameters.
+
+42
+
+Figure 8.3: Indeterminacy regions with Firm-Speciﬁc Capital with informality and a formal inﬂation targeting rule. [Left, vs ⌧⇡,SW], [Right, ⌧⇡ vs ⌧y, DF]
+
+The story is completely di↵erent if the interest rate rule reacted only to formal inﬂation, as Figure 8.3 shows. With the following policies:
+
+SW(left) DF(right)
+
+it
+
+=
+
+f
+⌧⇡ ⇡t
+
+it
+
+=
+
+f
+⌧⇡ ⇡t
+
++
+
+⌧y
+
+b Y
+
+we have the opposite result. The reason for this sudden inability to achieve
+
+determinacy is the following. With an informal sector under full price ﬂexi-
+
+bility,
+
+one
+
+would
+
+expect
+
+that
+
+i
+⇡t
+
+>
+
+f
+⇡t
+
+,
+
+implying
+
+that
+
+⇡t
+
+>
+
+f
+⇡t
+
+.
+
+The
+
+response
+
+of the monetary authority, focusing only on formal inﬂation, will be too weak
+
+to actually raise the real interest rate as
+
+f
+
+. Thus, the Taylor
+
+i ⇡ <i ⇡
+
+principle is not enough by itself to prevent self-fulﬁlling expectations. The
+
+right side of Figure 8.3 shows the implications of reacting to aggregate output
+
+in the policy rule. Increasing the response to output is still an e↵ective way
+
+to avoid the problem of indeterminacy, although the e↵ectiveness is similarly
+
+reduced.
+
+43
+
+9. Concluding Remarks
+In this work we have described a general equilibrium framework in which a labor market with matching frictions is embedded into an economy that allows for parallel types of production with di↵erent characteristics. Unemployment does not rise. Calibration of the model leads to an empirically appealing steady-state equilibrium with a realistic set of outcomes for the Mexican economy. The impulse responses of the model behave as empirical estimates would predict. We ﬁnd that informal employment presents a sharp negative correlation with the business cycle. More interestingly, the presence of informality may temper or sharpen the business cycle depending on the type of shock the economy experiences. The exclusion of a ﬁscal authority and the operational contrast between sectors has aided to the tractability of the model and to the isolated analysis of one of the rigidities responsible for informal labor. Other simplifying assumptions, like the exogeneity of job destruction or the ability of households to pool their labor risk could, for future research, be relaxed.
+The thesis then analyzed the impact of informality for indeterminacy. If the monetary authority only responds to inﬂation in the interest-rate rule, the indeterminacy region faced in the presence of informality importantly depends on the measure of inﬂation. If the monetary authority reacts to general inﬂation, the indeterminacy region is smaller than a formal only economy. However, if monetary authority reacts only to formal inﬂation, indeterminacy is not only greater, but it only takes a mild level of price rigidity to make the Taylor principle redundant as an indeterminacy-preventing measure.
+The ﬁndings of this model shed some lights on a range of questions of central importance to the business cycles of emerging economies. The interactions modeled in this framework realistically allow for spillovers to occur from one sector to the other. Finally, since this model suggests that the inclusion of informal indicators in monetary policy setting can bring important beneﬁts, there is a strong case for improving the accuracy of such measure-
+44
+
+ments in emerging economies. 45
+
+10. References
+Statistical update on employment in the informal economy. Technical manual, International Labor Organization, 2012.
+Measuring informality: A statistical manual on the informal sector and informal employment. Technical manual, International Labor Organization, 2013.
+Aguiar, M. and Gopinath, G. Emerging market business cycles: The cycle is the trend. Journal of Political Economy, 115(1), 2007.
+Ahmed, S., Ahmed, W., Khan, S., Pasha, F., and Rehman, M. Pakistan Economy DSGE Model with Informality. 2012.
+Albrecht, J., Navarro, L., and Vroman, S. The E↵ects of Labour Market Policies in an Economy with an Informal Sector. The Economic Journal, 119(539):1105–1129, 2009.
+Bargain, O. and Kwenda, P. Is Informality Bad? Evidence from Brazil, Mexico and South Africa, 2010.
+Batini, N., Levine, P., Lotti, E., and Yang, B. Informality, frictions and monetary policy. School of Economics Discussion Papers, 711, 2011.
+Benhabib, J. and Eusepi, S. The design of monetary and ﬁscal policy: A global perspective. Journal of Economic Theory, 123(1):40–73, 2005.
+Benhabib, J., Schmitt-Groh´e, S., and Uribe, M. The perils of taylor rules. Journal of Economic Theory, 96(1):40–69, 2001.
+Blanchard, O. and Gali, J. Labor markets and monetary policy: a New Keynesian model with unemployment. American Economic Journal: Macroeconomics, 2(2):1–30, 2010.
+46
+
+Bosch, M. and Esteban-Pretel, J. Job creation and job destruction in the presence of informal markets. Journal of Development Economics, 98(2): 270–286, 2012.
+Bosch, M. and Maloney, W. Cyclical movements in unemployment and informality in developing countries. Number 3514. World Bank Publications, 2008.
+Bovi, M. Shadow employment and labor productivity dynamics. Labour, 21 (4-5):735–761, 2007.
+Busso, M., Fazio, M. V., and Algazi, S. L. (in) formal and (un) productive: The productivity costs of excessive informality in mexico. Technical report, IDB Working Paper Series, 2012.
+Calvo, G. A. Staggered prices in a utility-maximizing framework. Journal of monetary Economics, 12(3):383–398, 1983.
+Carlstrom, C. T. and Fuerst, T. S. Investment and interest rate policy: a discrete time analysis. Journal of Economic Theory, 123(1):4–20, 2005.
+Castellanos, S. G. Downward nominal wage rigidities and employment: microeconomic evidence of Mexico. Mimeo, Banco de M´exico, 2001.
+Castellanos, S. G., Garcia-Verdu, R., and Kaplan, D. S. Nominal wage rigidities in Mexico: evidence from social security records. Journal of Development Economics, 75(2):507–533, 2004.
+Castillo, P. and Montoro, C. Monetary policy in the presence of informal labour markets. Banco Central de Reserva del Peru´, Mimeo, 2008.
+Charlot, O., Malherbet, F., and Ulus, M. E ciency in a search and matching economy with a competitive informal sector. Economics Letters, 118(1): 192–194, 2013.
+47
+
+Conesa, J. C., Dıaz-Moreno, C., and Galdo´n-S´anchez, J. E. Explaining crosscountry di↵erences in participation rates and aggregate ﬂuctuations. Journal of Economic Dynamics and Control, 26(2):333–345, 2002.
+De Soto, H. El otro sendero: la revolucio´n informal. Editorial La Oveja Negra, Bogot´a, Colombia, 1987.
+Den Haan, W. and Kaltenbrunner, G. Anticipated growth and business cycles in matching models. Journal of Monetary Economics, 56(3), 2009.
+Du↵y, J. and Xiao, W. Investment and monetary policy: Learning and determinacy of equilibrium. Journal of Money, Credit and Banking, 43(5): 959–992, 2011.
+Fern´andez Martin, A. and Meza, F. Labor informality and business cycles in emerging economies. In LACEA 2013, 2013.
+Gali, J., Gertler, M., and Lopez-Salido, J. D. European inﬂation dynamics. European Economic Review, 45(7):1237–1270, 2001.
+Gertler, M., Sala, L., and Trigari, A. An estimated monetary DSGE model with unemployment and staggered nominal wage bargaining. Journal of Money, Credit and Banking, 40(8):1713–1764, 2008.
+Gong, X. and Van Soest, A. Wage di↵erentials and mobility in the urban labour market: a panel data analysis for Mexico. Labour Economics, 9(4): 513–529, 2002.
+Haider, A., Din, M.-u., and Ghani, E. Monetary policy, informality and business cycle ﬂuctuations in a developing economy vulnerable to external shocks. 2012.
+Hall, R. E. Employment ﬂuctuations with equilibrium wage stickiness. The American Economic Review, 95(1):50–65, 2005.
+48
+
+Harris, J. R. and Todaro, M. P. Migration, Unemployment and Development: A Two-Sector Analysis. The Struggle for Economic Development: Readings in Problems and Policies, page 199, 1983.
+Huang, K. X., Meng, Q., and Xue, J. Is forward-looking inﬂation targeting destabilizing? the role of policy’s response to current output under endogenous investment. Journal of Economic Dynamics and Control, 33(2): 409–430, 2009.
+Krause, M. and Lubik, T. A. Instability and indeterminacy in a simple search and matching model. Number 2010, 25. Discussion Paper Series 1: Economic Studies, 2010.
+Kurozumi, T. and Van Zandweghe, W. Investment, interest rate policy, and equilibrium stability. Journal of Economic Dynamics and Control, 32(5): 1489–1516, 2008.
+Kurozumi, T. and Van Zandweghe, W. Determinacy under inﬂation targeting interest rate policy in a sticky price model with investment (and labor bargaining). Journal of Money, Credit and Banking, 43(5):1019–1033, 2011.
+La Porta, R. and Shleifer, A. The uno cial economy and economic development. Brookings Papers on Economic Activity, pages 275–352, 2008.
+La Porta, R. and Shleifer, A. The uno cial economy in Africa, 2011.
+Leal, J. and McKnight, S. Contemporary Topics in Macroeconomics. El Colegio de M´exico, 2014.
+Leal Ordo´n˜ez, J. C. Tax collection, the informal sector, and productivity. Review of Economic Dynamics, 2013.
+Li, N. Cyclical wage movements in emerging markets compared to developed economies: The role of interest rates. Review of Economic Dynamics, 14 (4):686–704, 2011.
+49
+
+Loayza, N. and Sugawara, N. El sector informal en M´exico. hechos y explicaciones fundamentales. El Trimestre Economico, 76(304):887–920, 2009.
+Maloney, W. Informality revisited. World Development, 32(7):1159–1178, 2004.
+Maloney, W. How will labor markets adjust to the crisis? a dynamic view. 2009.
+Maloney, W. F. Does informality imply segmentation in urban labor markets? evidence from sectoral transitions in Mexico. The World Bank Economic Review, 13(2):275–302, 1999.
+Mattesini, F. and Rossi, L. Optimal monetary policy in economies with dual labor markets. Journal of Economic Dynamics and Control, 33(7): 1469–1489, 2009.
+McKenzie, D. J. and Woodru↵, C. Do entry costs provide an empirical basis for poverty traps? Evidence from Mexican microenterprises. Economic Development and Cultural Change, 55(1):3–42, 2006.
+Meza, F. and Fern´andez Martin, A. Labor, output and consumption in business cycle models of emerging economies. Available at SSRN 1997523, 2012.
+Patrap, S. and Quintin, E. The informal sector in developing countries: output, assets, and employment, pages 373–394. Personal Wealth from a Global Perspective. Oxford University Press, New York, USA, 2008.
+Perry, G. E. Informalidad: escape y exclusio´n. Banco Mundial, 2008.
+Petrongolo, B. and Pissarides, C. A. Looking into the black box: A survey of the matching function. Journal of Economic Literature, pages 390–431, 2001.
+50
+
+Pissarides, C. A. Equilibrium unemployment theory. MIT press, 2 edition, 2000.
+Ravenna, F. and Walsh, C. E. Vacancies, unemployment, and the phillips curve. European Economic Review, 52(8):1494–1521, 2008.
+Satchi, M. and Temple, J. Growth and labour markets in developing countries. Citeseer, 2006.
+Satchi, M. and Temple, J. Labor markets and productivity in developing countries. Review of Economic Dynamics, 12(1):183–204, 2009.
+Shimer, R. The cyclical behavior of equilibrium unemployment and vacancies. American Economic Review, pages 25–49, 2005.
+Stevens, M. New microfoundations for the aggregate matching function, with empirical and theoretical implications. Technical report, University of Oxford, Department of Economics, 2002.
+Sveen, T. and Weinke, L. Pitfalls in the modeling of forward-looking price setting and investment decisions. Norges Bank Working Paper, 2004.
+Sveen, T. and Weinke, L. New perspectives on capital, sticky prices, and the taylor principle. Journal of Economic Theory, 123(1):21–39, 2005.
+Walsh, C. E. Labor market search, sticky prices, and interest rate policies. Review of economic Dynamics, 8(4):829–849, 2005.
+Walsh, C. E. Monetary theory and policy. MIT press, 2010.
+Woodford, M. Interest and prices: Foundations of a theory of monetary policy. Princeton University Press, 2003.
+Zanetti, F. Labor market frictions, indeterminacy, and interest rate rules. Journal of Money, Credit & Banking (Ohio State University Press), 38(7), 2006.
+51
+
+Zenou, Y. Job search and mobility in developing countries. theory and policy implications. Journal of Development Economics, 86(2):336–355, 2008.
+52
+
+Appendices
+A. Robustness Analysis A.1. Steady-State Sensitivity
+Figure A.1: Sensitivity of Steady State to to worker bargaining strength
+53
+
+Figure A.2: Sensitivity of Steady State to job destruction rate
+Figure A.3: Sensitivity of Steady State to vacancy cost c
+54
+
+A.2. Impulse Response Sensitivity
+Figure A.4: Sensitivity of Impulse Response to worker bargaining strength
+Figure A.5: Sensitivity of Impulse Response to vacancy cost c
+55
+
+Figure A.6: Sensitivity of Impulse Response to job destruction rate
+Figure A.7: Sensitivity of Impulse Response to price sickiness
+56
+
+B. Indeterminacy Sensitivity Analysis
+Figure B.1: Determinacy region for calibrated model with informality vs ⌧⇡. [Left] = 0.4. [Right] = 0.8
+Figure B.2: Determinacy region for calibrated model with informality vs ⌧⇡. [Left] µ = 1.1. [Right] µ = 2.5
+57
+
+Figure B.3: Determinacy region for calibrated model with informality vs ⌧⇡. [Left] ! = 0.7. [Right] ! = 0.9
+58
+
+

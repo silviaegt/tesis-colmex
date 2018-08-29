@@ -1,0 +1,786 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+HERENCIAS Y TRAMPAS DE POBREZA EN MÉXICO GUILLERMO BUENO IBARRA
+PROMOCIÓN 2013-2015
+ASESOR:
+CARLOS CHIAPA LABASTIDA
+JULIO 2015
+
+Agradecimientos
+Para realizar este trabajo recib´ı apoyo de muchos lados. Para empezar, quisiera agradecer a los que me han apoyado toda la vida, mis padres Guillermo y Gema. Sobra decir que sin su apoyo incondicional desde que era un nin˜o, nunca habr´ıa llegado al punto en el que estoy ahora. A mi esposa Sandra. Que supo comprender lo que signiﬁcaba iniciar este proyecto tan demandante y me apoyo´ todo el tiempo. Te amo preciosa. A los profesores que me instruyeron en mis dos an˜os de formacio´n, en especial a mi asesor Carlos que desde la primera aproximacio´n que tuve con el, me mostro´ su apoyo y entusiasmo para desarrollar el proyecto. A los amigos que hice en estos dos an˜os de estudios. Alfredo, Carlos, Eduardo, Javier, Jorge, Roberto... Su compan˜´ıa y amistad ha sido muy valiosa para mi. Al CEEY por su apoyo y ayuda para el desarrollo de este trabajo.
+I
+
+Resumen
+Las herencias son un canal directo por el cual la riqueza de las dinast´ıas puede mantenerse estable. Esto ha generado una acalorada discusio´n a lo largo de la historia sobre los efectos que provocan en la sociedad y cua´l es el tratamiento que deber´ıan recibir. Este trabajo se enfoca en encontrar el efecto que tienen la riqueza trasmitida (herencias) de los padres a la riqueza acumulada de los hijos y determinar si esto provoca que surjan trampas de pobreza en la sociedad, es decir, que las personas este´n destinadas a ser ricas o pobres segu´n la cantidad de herencia que reciban. Se utilizan datos en forma de panel con informacio´n tanto de hijos como de padres. Se realiza una regresio´n polinomial parame´trica y se encuentra que los efectos de las herencias en la riqueza de los hijos, aunque signiﬁcativos, no generan trampas de pobreza en la sociedad. Esto descarta la posibilidad de que las herencias generen condiciones en las cuales el esfuerzo de las personas quede anulado por su condicio´n de inicio.
+II
+
+I´ndice
+
+1. Introduccio´n
+
+2
+
+2. Marco Teo´rico
+
+5
+
+2.1. Intuicio´n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+2.2. Modelo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+2.3. Evidencia Emp´ırica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+3. Datos
+
+17
+
+4. Estrategia Emp´ırica y Resultados
+
+22
+
+5. Discusio´n de los Resultados
+
+26
+
+6. Conclusiones
+
+28
+
+1
+
+1. Introduccio´n
+En Me´xico aproximadamente el 45 % de la poblacio´n vive en una situacio´n de pobreza1. Un hecho estilizado adicional, es que se ha presentado movilidad social absoluta ascendente. De acuerdo con el informe presentado por Ve´lez Grajales, Campos Va´zquez y Huerta Wong (2012), tanto los pobres como los ricos cuentan con mayor riqueza respecto a una generacio´n anterior, pero en promedio, los pobres de la generacio´n actual no se hicieron ma´s ricos que los descendientes de los ricos de la generacio´n pasada. Si esto hubiera sucedido dir´ıamos que se presento´ un efecto de movilidad social relativa. Esta mejor´ıa absoluta se ha presentado en todos los niveles econo´micos en Me´xico lo cual es una buena noticia. Sin embargo, cuando comparamos el ´ındice de movilidad social en Me´xico contra el de otros pa´ıses (los no´rdicos, por ejemplo), podemos observar que au´n falta un largo camino por recorrer para llegar a un estado en el que podamos aseverar que en Me´xico se cuenta con un grado aceptable de movilidad social. Espec´ıﬁcamente en el caso de las colas de la distribucio´n, en donde el estancamiento es alarmante Ve´lez Grajales et al. (2012).
+Uniendo esos dos hechos, se puede pensar en la existencia de trampas de pobreza que detengan a las personas de poder mejorar su condicio´n de vida aunque se esfuercen y trabajen duro. En caso de que efectivamente exista una situacio´n en la que la riqueza del pasado sea determinante para formar la riqueza del presente, resulta de suma importancia detectar el mecanismo por el cual ha surgido esta situacio´n.
+Este estudio fue realizado con el objetivo de conﬁrmar (o descartar) la importancia de las herencias en la existencia de una eventual trampa de pobreza. Es importante saber esto porque las sociedades sumamente desiguales en las que el esfuerzo de las personas no es retribuido justamente, provoca que la misma sociedad no funcione de forma eﬁciente y sus econom´ıas no sean ni estables ni sostenibles a largo plazo (Stiglitz, 2012)
+Para este estudio se utilizan datos en forma de panel de la Encuesta ESRU de Movilidad Social en Me´xico 2011 (EMOVI-2011) a cargo del Centro de Estudios Espinosa Yglesias (CEEY),
+1Estimacio´n del CONEVAL con base en el MCS-ENIGH 2012.
+2
+
+y ﬁnanciada por la Fundacio´n Espinosa Rugarcia. Esta encuesta presenta informacio´n detallada sobre herencias recibidas por el individuo, lo que resulta u´til para los ﬁnes de este trabajo.
+La aproximacio´n t´ıpica para detectar las trampas pobreza consiste en estimar un modelo no lineal que relacione los ingresos o la riqueza del presente con los ingresos o la riqueza del pasado y examinar la relacio´n dina´mica estimada. Concretamente, el grado de linealidad en la dina´mica de la riqueza y la potencial existencia de umbrales de activos son las dos cuestiones esenciales que se tienen que responder para conﬁrmar la existencia de trampas de pobreza. Usando este enfoque, ha surgido literatura para probar la existencia de trampas de pobreza.
+Los investigadores Kraay and McKenzie (2014) recopilan varios de estos trabajos y los resultados son distintos dependiendo del pa´ıs o de la metodolog´ıa que se utilice para detectarlas. En Me´xico, contrario a la primera reﬂexio´n que se hizo en esta seccio´n, Antman and McKenzie (2007) no encuentran evidencia de trampas de pobreza en la dina´mica del ingreso. Sin embargo, ese art´ıculo tiene datos en forma de panel de un mismo hogar, es decir, se da un tratamiento intrageneracional. En cambio, en este trabajo se estudia el efecto de las herencias en la riqueza de los hijos y la posible creacio´n de trampas de pobreza por este mecanismo, es decir, se da un tratamiento intergeneracional.
+Adema´s, aqu´ı se trata el problema de las trampas pobreza generadas espec´ıﬁcamente por las herencias. Este enfoque es novedoso y a la vez bastante u´til porque la aplicacio´n de pol´ıticas pu´blicas, en caso de que efectivamente la riqueza transmitida (herencia) genere una situacio´n en la que las personas no puedan sobresalir gracias a sus me´ritos, puede focalizarse de manera efectiva. En Me´xico, actualmente no se cuenta con pol´ıticas orientadas al tratamiento de la riqueza transmitida.
+Se encuentra que, aunque correlacionadas con la riqueza del individuo, las herencias no generan una situacio´n de trampa de pobreza. Sin embargo, no se niega la posibilidad de la existencia de trampas en pobreza originadas por otros mecanismos.
+3
+
+El trabajo de investigacio´n se organiza de la siguiente manera. En la Seccio´n 2 se discuten los conceptos ba´sicos de una trampa de pobreza. Adema´s, se revisa la literatura emp´ırica relevante para la presente investigacio´n. Finalmente, se describe un modelo que explica el mecanismo por el cual las herencias pueden ser determinantes para crear trampas de pobreza. Los datos utilizados para realizar este trabajo y su ana´lisis descriptivo se encuentran en la Seccio´n 3. En la Seccio´n 4 se describe la estrategia de identiﬁcacio´n utilizada y los resultados obtenidos. En la Seccio´n 5 se discuten los resultados obtenidos. En la Seccio´n 6 se dan las conclusiones. El ana´lisis de factores que se utiliza para realizar los indices de riqueza se discute en en el anexo 1. Finalmente, en el anexo 2 se estima una regresio´n semiparame´trica para darle robustez a los resultados obtenidos.
+4
+
+2. Marco Teo´rico
+2.1. Intuicio´n
+El objetivo de este trabajo es encontrar las consecuencias que tienen las herencias de activos en la riqueza de los hijos y determinar si eso desemboca en que vivamos en una realidad en donde la riqueza que tuvieron los padres puede provocar que una dinast´ıa este destinada a ser rica o pobre. La herencia de los activos puede ser determinante para reducir la vulnerabilidad adema´s de inﬂuenciar lo que los hogares pueden lograr en te´rminos de ingresos u otras variables (Swift (2006); Sen (1994)). Muy probablemente, aquellos hogares que poseen ma´s activos, son capaces de mejorar sus niveles de ingreso y ser parte del crecimiento econo´mico. La acumulacio´n de activos es un medio por el cual los hogares pueden salir de la pobreza y mejorar su calidad de vida Zahra et al. (2014).
+En esta seccio´n se explica el mecanismo por el cual la inﬂuencia intergeneracional de riqueza puede jugar un papel determinante en la riqueza que pueda alcanzar una dinast´ıa ma´s adelante. La utilidad de entender este mecanismo reside en que, como se vera´ ma´s adelante, la estrategia de identiﬁcacio´n econome´trica va a tratar de falsiﬁcar esta teor´ıa.
+Para entender co´mo es que la inﬂuencia intergeneracional de la riqueza puede determinar el destino de una dinast´ıa, es importante tener claro el concepto de trampa de pobreza, que consiste en la persistencia de una situacio´n de pobreza al interior de un hogar o de una regio´n. Es decir, la pobreza del presente es la causa de la pobreza del futuro. Es importante entender este concepto porque la pobreza puede ser el destino al cual esta´n condenados todos los descendientes de alguna dinast´ıa si las condiciones de inicio de estos descendientes no son las “adecuadas”.
+¿Que´ se entiende por condiciones “adecuadas”? La deﬁnicio´n espec´ıﬁca nos es especialmente relevante. A lo largo de la literatura hay distintos mecanismos por los cuales pueden surgir trampas de pobreza (falta de ahorro, desnutricio´n, comportamiento, etc.). Sin embargo, el razonamiento detra´s de cada estudio teo´rico sobre la formacio´n y existencia de trampas de pobreza es el mismo, una funcio´n en diferencias con forma de ”S”.
+5
+
+FIGURA 1: Realidad con trampa de pobreza.
+Fuente: Creacio´n propia.
+Para ligar la teor´ıa con el trabajo emp´ırico de este trabajo, se presenta la teor´ıa sobre la formacio´n y existencia de trampas de pobreza considerando inversiones en capital f´ısico (el cual es facilitado cuando se reciben herencias de activos) necesario para el emprendimiento. As´ı, un nivel “adecuado” de capital f´ısico heredado puede implicar que las generaciones futuras de una dinast´ıa nunca sean pobres. Por otro lado, un nivel no “adecuado” de capital f´ısico heredado puede resultar en dinast´ıas condenadas a vivir siempre en condiciones de pobreza.
+La ﬁgura 1 representa un modelo gra´ﬁco simple de trampa de pobreza. La l´ınea diagonal de 45 grados muestra situaciones estables en las cuales, la riqueza transmitida de los padres equivalen a la riqueza de los hijos. La l´ınea sigmoidea (con forma de S) representa un modelo en el cual, si se esta´ debajo un umbral del nivel de riqueza de los padres (el punto A), la riqueza de los hijos sera´ ma´s pequen˜a que la riqueza de los padres, lo que implicara´ una progresio´n hasta un punto estable de trampa de pobreza (el punto P). En contraste, si la riqueza de los padres esta sobre el umbral del punto A, la riqueza de los hijos llega hasta el punto estable W. En esta realidad, la riqueza presente ejerce inﬂuencia en la riqueza que se tendra´ en el futuro La intuicio´n que se puede
+6
+
+FIGURA 2: Realidad sin trampa de pobreza.
+Fuente: Creacio´n propia.
+dar para sustentar este modelo esta´ en que es dif´ıcil para las personas que parten de una situacio´n de precariedad, invertir lo suﬁciente (en capital f´ısico, por ejemplo) para generar un esta´ndar de vida no pobre.
+Pero tambie´n hay quienes creen que nuestro mundo se comporta como lo muestra la ﬁgura 2 (Ghatak et al. (2001); Easterly (2006)). En este caso no hay trampa de pobreza. Independientemente de cua´l sea la riqueza transmitida de los padres, la riqueza de los hijos eventualmente llegara al equilibrio W de la ﬁgura 2. Por medio de esfuerzo, la riqueza de los hijos crece decrecientemente respecto a la riqueza de los padres. Por ejemplo, si un hijo tiene como partida el punto B, a base de esforzarse bastante, es capaz de llegar al equilibrio W. Si ese mismo hijo partiera del punto C, el esfuerzo que tendr´ıa que hacer para llegar al punto W ser´ıa mucho menor, pero al ﬁnal, ser´ıan capaces de llegar al mismo nivel de riqueza. El esfuerzo y la igualdad de oportunidades es lo que permitir´ıa tener un mundo como el de la ﬁgura 2. Es decir, en un contexto intergeneracional, sea cual sea la riqueza de la generacio´n actual, la riqueza de la generacio´n siguiente alcanzara´ el equilibrio o´ptimo. No´tese que en este caso la curva es completamente co´ncava con forma de L invertida.
+7
+
+2.2. Modelo
+Un modelo teo´rico que explica un mecanismo de impacto de las transferencias intergeneracionales y que resulta u´til para confrontarlo con la realidad dados los datos con los que se dispone para realizar este trabajo, es el desarrollado por Ghatak and Jiang (2002). En este modelo se propone que, entre otros factores, las diferencias en las distribuciones de riqueza pueden llegar a provocar que se tenga el caso de la ﬁgura 1, en el que es imposible para una persona con baja riqueza, salir de su situacio´n de precariedad. Se toma en cuenta la presencia de mercados crediticios imperfectos, un supuesto que la evidencia emp´ırica ha demostrado que se cumple en Me´xico. Se trata de un modelo dina´mico simple de eleccio´n ocupacional en el que la riqueza inicial (la heredada) es la que determina el futuro de la dinast´ıa. De hecho, la u´nica diferencia que hay entre los individuos, segu´n el modelo, esta´ en la riqueza heredada
+El modelo ba´sico de Ghatak and Jiang (2002) considera una econom´ıa habitada por dinast´ıas que viven indeﬁnidamente y esta´n representadas por generaciones sucesivas de individuos que viven por un periodo. La poblacio´n es grande y su taman˜o esta normalizado a 1. No hay crecimiento de la poblacio´n. Hay dos bienes en la econom´ıa, trabajo y un producto ﬁnal que puede servir tanto como un bien de consumo o como un bien de capital. En el periodo t la dinast´ıa i recibe una dotacio´n de una unidad de trabajo y una riqueza inicial de ai,t. La dinast´ıa obtiene ingresos al ofertar trabajo y capital, el ingreso resultante yi,t es dividido al ﬁnal del periodo entre consumo ci,t y ahorros, o herencias a la siguiente generacio´n bi,t. Por lo tanto:
+ai,t+1 = bi,t
+Se asume que los individuos tienen funciones de utilidad Cobb-Douglas sobre el consumo y las herencias:
+U i(ci,t, bi,t) = ci1,−t sbsi,t En donde s ∈ (0, 1) y la restriccio´n presupuestaria es yi,t = ci,t + bi,t. Esto signiﬁca que la generacio´n actual ahorra una fraccio´n constante s de su ingreso y lo deja como herencia:
+8
+
+ai,t+1 = syi,t Si suponemos que s = 0.1 entonces la generacio´n actual ahorra el 10 % de su ingreso y lo deja como herencia:
+ai,t+1 = (0.1)yi,t Es decir, los individuos consumen el 90 % de sus ingresos y dejan para inversio´n en la siguiente generacio´n el 10 %. En este caso la funcio´n de utilidad es:
+U i(ci,t, bi,t) = ci0,.t9b0i,.t1 La restriccio´n presupuestaria queda exactamente igual haciendo esta asuncio´n. En el periodo t, la riqueza esta´ distribuida de acuerdo a la medida de probabilidad λt(·), y por conveniencia, se deﬁne Gt(a) ≡ λt(−∞, a). La funcio´n Gt es muy similar a la funcio´n de distribucio´n a excepcio´n de que no incluye la medida en el punto a.
+Hay dos tecnolog´ıas de produccio´n las cuales son determin´ısticas. Una usa 0 unidades de capital y una unidad de trabajo para producir w unidades de produccio´n. Esta sera´ descrita como una tecnolog´ıa de subsistencia (o agr´ıcola). La otra usa I > 0 unidades de capital y dos unidades de trabajo (una unidad de trabajo de supervisio´n y otra unidad de trabajo ordinario) para producir q unidades de produccio´n. Esta sera´ descrita como una tecnolog´ıa empresarial (o industrial). Se asume que la tecnolog´ıa empresarial es superior en el sentido de que la produccio´n neta de esta tecnolog´ıa es mayor que 2 unidades de trabajo usando la tecnolog´ıa de subsistencia. Esto es:
+q − rI > 2w En donde r ≥ 1 es la tasa de intere´s exo´gena.
+Para ﬁnes de exposicio´n, asumamos que I = $10, 000 2. Por lo tanto la tecnolog´ıa empre-
+2Realmente la seleccio´n de $10, 000 es completamente arbitraria, lo importante es usar una cantidad I mayor a 0. Los $10, 000 son simplemente para efectos de exposicio´n.
+9
+
+sarial necesita una inversio´n inicial de $10, 000 y dos unidades de trabajo para producir q unidades de produccio´n. En este caso la condicio´n anterior se reescribir´ıa como:
+q − r($10, 000) > 2w
+Ahora, hay tres posibles ocupaciones para un individuo que ha heredado una riqueza ai,t: Subsistencia: el agente obtiene ingresos al usar su dotacio´n de trabajo para producir w con la tecnolog´ıa de subsistencia. Pone su riqueza heredada en el banco, lo cual le retribuye rai,t. Por lo tanto, su ingreso es: yiS,t = w + rai,t.
+Trabajador: el agente trabaja para un empresario y recibe un ingreso salarial de wt (el cual se determina endo´genamente). Pone su riqueza heredada en el banco, lo cual le retribuye rai,t. Por lo tanto, su ingreso es: yiW,t = wt + rai,t.
+Empresario: el agente invierte una cantidad $10, 000 para iniciar una empresa y contrata un trabajador para obtener un producto q con certeza. Su trabajo consiste en supervisar al trabajador. El ingreso del agente como empresario es el producto del proyecto menos el salario y los costos de capital: yiE,t = q − wt + r(ai,t − $10, 000). El mercado de cre´dito esta´ sujeto a costos de transaccio´n por el lado de los pre´stamos debido a la aplicacio´n imperfecta de los contratos de pre´stamo. Esto tiene como resultado un racionamiento de los cre´ditos de la siguiente forma: si la riqueza de un individuo esta debajo de cierto nivel m´ınimo, no obtendra´ un pre´stamo independientemente de que ofrezca una tasa de intere´s demasiado alta. El mecanismo de racionamiento del cre´dito es el siguiente: un prestatario incumple en el pago de su pre´stamo r(I − a), pero el costo de esta accio´n es que puede ser atrapado con una probabilidad Π y entonces tiene que pagar un costo ﬁjo no monetario de F debido a prisio´n o a sanciones sociales. Por lo tanto, solo reciben pre´stamos aquellos individuos cuya riqueza satisface la restriccio´n de incentivos compartidos (ICC):
+ΠF (q − wt) − r($10, 000 − ai,t) ≤ q − wt − ΠF ⇒ ai,t ≥ $10, 000 − r
+ΠF Por lo tanto, solo aquellos que tienen una cantidad m´ınima de riqueza $10, 000 −
+r pueden pedir prestado. Sin pe´rdida de generalidad, se establece que Π = 0 y por lo tanto solo
+10
+
+aquellos que tienen la suﬁciente riqueza para ﬁnanciar completamente sus propias empresas, son capaces de volverse empresarios. Esto signiﬁca que solo las personas que tienen $10, 000 producto de herencias son capaces de invertir lo necesario para volverse empresarios. La tasa salarial a la cual los empresarios son indiferentes entre trabajar como trabajadores asalariados y contratar trabajadores, esta´ dada por:
+
+q − r$10, 000
+
+q − w¯ + r($10, 000 − ai,t) = w¯ + rai,t ⇒ w¯ =
+
+2
+
+En donde w¯ es el salario que recibir´ıa el empresario. Por lo tanto, la ocupacio´n de emprendi-
+
+miento gana no menos que cualquier otra ocupacio´n para todos los salarios. Dadas las caracter´ısticas del mercado de cre´dito, solo aquellos individuos que poseen suﬁciente capital (a ≥ $10, 000)
+
+pueden volverse empresarios aunque todos quisieran serlo.
+
+A los individuos cuya riqueza sea menor que $10, 000, se les llamara pobres y a los dema´s, ricos. La ICC informa cual es la fraccio´n de la poblacio´n que es pobre, llamada Gt($10, 000). Para wt < w la oferta de trabajo es cero, pero para wt = w la oferta de trabajo brinca a Gt($10, 000) y como wt vaya siendo mayor a w, la oferta de trabajo crece hasta que la tasa salarial es lo suﬁcientemente alta w¯, tal que los empresarios son indiferentes entre trabajar como trabajadores asalariados y contratar trabajadores. Habiendo sen˜alado esto, la oferta de trabajo es la siguiente:
+
+
+0      [0, Gt($10, 000)]   
+Oferta de trabajo = Gt($10, 000)
+   [Gt($10, 000), 1]     1
+
+si wt < w si wt = w si wt ∈ (w, w¯) si wt = w¯ si wt > w¯
+
+En cambio, la demanda por trabajo es:
+
+11
+
+
+0   
+Demanda de trabajo = [0, 1 − Gt($10, 000)]    1 − Gt($10, 000)
+
+si wt > w¯ si wt = w¯ si wt < w¯
+
+De las curvas de oferta y demanda, se obtiene la tasa salarial de equilibrio en el periodo t:
+
+
+w¯   
+Tasa salarial de equilibrio = wt∗ = [w, w¯]    w
+
+1 si Gt($10, 000) < 2
+1 si Gt($10, 000) = 2
+1 si Gt($10, 000) > 2
+
+Ahora consideremos los factores que gobiernan el legado de la dinast´ıa i. Antes que nada,
+
+el nivel de riqueza inicial de un agente determina su ingreso capital y su eleccio´n de ocupacio´n. Se-
+
+gundo, la tasa salarial presente esta´ determinada por lo expandida que esta la econom´ıa en cuestio´n
+
+de la distribucio´n de riqueza. Con el conocimiento de la eleccio´n de ocupacio´n de un individuo,
+
+que la tasa salarial puede tomar solo dos valores (w, w¯) y recordando que I = $10, 000, se pueden
+
+escribir las ecuaciones de diferencia que describen la evolucio´n de la riqueza de la dinast´ıa i como:
+
+
+ai,t+1(ai,t|wt = w) = s[rai,t + w]   
+Evolucio´n de riqueza = ai,t+1(ai,t|wt = w) = s[r(ai,t − I) + q − w]    ai,t+1(ai,t|wt = w¯) = s[rai,t + w¯] ∀ ai,t
+
+si ai,t < $10, 000 si ai,t ≥ $10, 000
+
+Las ﬁgura 3 y 4 muestran gra´ﬁcamente estas ecuaciones de diferencia. La ﬁgura 3 muestra lo que sucede cuando la tasa salarial es baja. Un agente cuyo capital esta´ restringido (es pobre) solo puede elegir entre ser un trabajador o vivir de subsistencia (agricultor) y en cualquier caso, el ingreso por su trabajo es w. Una fraccio´n s de la suma del ingreso de su trabajo y su ingreso capital rai,t lo deja para la siguiente generacio´n. Un agente que no esta´ restringido por el cre´dito, es decir que es una persona rica, estrictamente va a preferir ser un empresario y su ingreso total va a ser r(ai,t − $10, 000) + q − w.
+
+La ﬁgura 4 muestra lo que sucede cuando la tasa salarial es alta. Nadie va a trabajar en la
+
+12
+
+FIGURA 3: Transicio´n de riqueza con tasas salariales bajas (wt = w). ai,t
+
+I = $10, 000
+
+ai,t+1
+
+subsistencia y todos los agentes van a ser indiferentes entre ser empresarios o trabajadores. Relacionando estas ﬁguras con las que se utilizaron para describir el concepto de trampas de pobreza, podemos aseverar que la ﬁgura 3 es una versio´n estilizada de la ﬁgura 1 en donde se tienen trampas de pobreza y la ﬁgura 4 es una versio´n estilizada de la ﬁgura 2 en donde no se tienen trampas de pobreza.
+
+Hay que destacar que dada cualquier distribucio´n inicial de riqueza, existe una distribucio´n de riqueza u´nica a la cual se converge. De hecho, entre ma´s grande sea la fraccio´n de la poblacio´n que es inicialmente pobre, ma´s bajo es el ingreso del estado estacionario. El modelo sirve para explicar que si se nace pobre (en nuestro ejemplo, con una herencia menor a $10, 000) se vivira´ en subsistencia o como trabajador dependiendo de las condiciones del mercado (si la tasa salarial es alta no habra´ individuos que que vivan en subsistencia) y si se nace rico (con una herencia mayor a $10, 000) el individuo tendra´ la posibilidad de ser empresario.
+
+Finalmente, cabe mencionar que estos resultados de mu´ltiples equilibrios surgen por la convexidad de la funcio´n en diferencias. Si la funcio´n en diferencias tiene forma de S (convexa al inicio) se tienen mu´ltiples equilibrios, en cambio, si tiene forma de L (co´ncava a lo largo de toda la funcio´n) no hay mu´ltiples equilibrios estables. Las restricciones crediticias (que son una evidente falla de mercado) tienen consecuencias por la convexidad de la funcio´n en diferencias. Adema´s
+13
+
+FIGURA 4: Transicio´n de riqueza con tasas salariales altas (wt = w¯). ai,t
+
+I = $10, 000
+
+ai,t+1
+
+cabe mencionar que las restricciones crediticias son au´n mayores con los pobres porque las amenazas de castigo son menos u´tiles con ellos. En este modelo, observamos que sumado al hecho de recibir bajas herencias y tener una funcio´n de diferencias con una parte convexa, las restricciones crediticias hacen prohibitivo el hecho de que los pobres puedan ser algo ma´s que trabajadores (ya sea de subsistencia o de una empresa). Siguiendo la misma idea de Ghatak and Jiang (2002), Galor and Zeira (1993) desarrollan un modelo en el cual la combinacio´n de restricciones crediticias y bajas herencias (aunado al hecho de tener una funcio´n en diferencias convexa) provocan que los pobres dif´ıcilmente puedan educarse y volverse trabajadores habilidosos (en un esquema que solo considera trabajadores habilidosos y no habilidosos, sin empresarios). De esta manera, se puede observar que el esquema ba´sico del modelo de Ghatak and Jiang (2002), permite sustentar diversas historias que sumadas al hecho de una funcio´n en diferencias convexa, explican la existencia de trampas de pobreza.
+
+2.3. Evidencia Emp´ırica
+¿Emp´ıricamente, la dina´mica de la riqueza sigue una forma de S con trampas de pobreza o una forma de L en la que el esfuerzo es recompensado justamente? Para encontrar cua´l de esas dos realidades es la que en verdad esta´ presente en nuestro entorno, se han desarrollado una multitud de modelos con el ﬁn de darles un uso emp´ırico para confrontarlos con la realidad y observar si se
+14
+
+adaptan a los datos. Kraay and McKenzie (2014) han recopilado algunos resultados obtenidos hasta el momento de varios estudios en los que se busca evidencia de trampas de pobreza al examinar si hay una relacio´n en forma de S (ﬁgura 1) en la dina´mica del ingreso o de los activos al nivel del hogar. En la Tabla 1 se muestran, de forma sinte´tica, los resultados reportados por Kraay and McKenzie (2014). En resumen, la evidencia es mixta. En el 50 % de los casos se ha encontrado evidencia que sustenta la existencia de trampas de pobreza, en el 50 % restante, no.
+
+TABLA 1: Estudios emp´ıricos.
+
+Investigadores
+Jalan and Ravallion (2002) Lokshin and Ravallion (2004) Naschold (2013) Barrett et al. (2006) Adato et al. (2006) Antman and McKenzie (2007) Santos and Barrett (2011) Lybbert et al. (2004)
+
+¿Trampas de pobreza?
+No No No Si Si No Si Si
+
+Pa´ıs de estudio
+China Hungr´ıa y Rusia Pakista´n y Etiopia Kenia y Madagascar
+Suda´frica Me´xico Etiop´ıa Etiop´ıa
+
+Entre los estudios revisados por Kraay and McKenzie (2014), el ma´s relevante para el presente trabajo es el de Antman and McKenzie (2007). En ese trabajo se reporta que no hay trampas de pobreza en Me´xico. Para obtener ese resultado, Antman y McKenzie analizan la dina´mica del ingreso de las familias mexicanas. Para analizar la dina´mica del ingreso de las familias mexicanas estiman un modelo parame´trico en donde el ingreso lo modelan como un polinomio del ingreso rezagado. Usan paneles rotatorios de la Encuesta Nacional de Empleo Urbano (ENEU) de 1987 a 2001. Los estimadores sugeridos por sus datos muestran que el ingreso es bastante mo´vil, condicionado en los efectos ﬁjos individuales, y que no hay individuos que hayan demostrado tener un ingreso dina´mico que pudiera dar lugar a la existencia de una trampa de pobreza.
+
+En el caso del presente trabajo tambie´n se usara´ un polinomio pero con el ﬁn de explicar la riqueza de los hijos a partir de la riqueza heredada a trave´s de sus padres. As´ı, la diferencia de este estudio con el de Antman y McKenzie reside en que aqu´ı se estudian relaciones integeneracionales. En este estudio la riqueza sera´ la que sufrira´ los rezagos y no el ingreso. Para concluir, a diferencia de Antman and McKenzie (2007), para este trabajo se cuenta con datos en forma de
+15
+
+panel que unen dos generaciones, lo que permite hacer un ana´lisis intergeneracional. En cambio, Antman and McKenzie (2007) tienen datos de una solo generacio´n.
+
+En general, en la literatura se observa una clara tendencia por usar datos en forma de pseudo-panel para encontrar una posible dina´mica no lineal (ﬁgura 1) provocada por: riqueza de activos, ingreso, ingreso laboral, etc. Al utilizar los datos en forma de pseudo-panel se pueden utilizar modelos parame´tricos o semi parame´tricos. Jalan and Ravallion (2002) y Lokshin and Ravallion (2004) usan modelos parame´tricos de la forma:
+
+M
+
+Ai,t = γ0 + αmAmi,t−1 + βXi,t + i,t(t = 2, ..., T )
+
+(1)
+
+m=1
+
+En donde Ai,t son los activos que posee el hogar i en el tiempo t y Xi,t son otras carac-
+
+ter´ısticas del hogar.
+
+Un problema de tales especiﬁcaciones parame´tricas radica en que si los puntos inestables del umbral caen en un a´rea con pocas observaciones, se necesita una muestra lo suﬁcientemente grande para que la funcio´n polino´mica ajustada pueda reﬂejar exactamente las pocas observaciones alrededor de los umbrales.
+
+Lybbert et al. (2004) y Barrett et al. (2006) usan estimaciones no parame´tricas. Esto tiene la ventaja de que al permitir formas funcionales ﬂexibles, se responde mejor a potenciales no linealidades en la dina´mica de los activos. El problema de estos me´todos es que el taman˜o de muestra requerido para la estimacio´n, crece exponencialmente con el nu´mero de regresores.
+
+En este escenario de divergencia emp´ırica se hace necesario realizar esfuerzos para encontrar cua´l es realmente la importancia de las transferencias intergeneracionales.
+
+16
+
+3. Datos
+Como resulta claro de la discusio´n anterior, para comprobar la existencia de trampas intergeneracionales de pobreza se necesita informacio´n referente al menos de dos periodos de tiempo (riqueza de padres e hijos). Esto para corroborar la existencia de una realidad como la de la ﬁgura 1 o como lo de la ﬁgura 2. Para tal ﬁn, se usan los datos de la Encuesta ESRU de Movilidad Social en Me´xico 2011 (EMOVI-2011) a cargo del Centro de Estudios Espinosa Yglesias (CEEY), y ﬁnanciada por la Fundacio´n Espinosa Rugarcia. La encuesta esta´ disen˜ada para medir la movilidad social intergeneracional en Me´xico. Tiene representatividad nacional para hombres y mujeres entre 25 y 64 an˜os de edad, tanto jefes como no jefes de hogar. El instrumento cuenta con datos actuales y retrospectivos, es decir, al entrevistado se le preguntaba sobre algunas cuestiones (sobre todo referentes a sus padres) cuando este ten´ıa 14 an˜os de edad por lo que tiene una estructura de panel.
+La EMOVI-2011 es una encuesta de muestreo en donde los entrevistados, esta´n dentro de un rango de los 25 a los 64 an˜os de edad y fueron seleccionados al azar. No se permitio´ el reemplazo de hogares o de entrevistados. La distribucio´n de la muestra en te´rminos de los subgrupos poblacionales fue de aproximadamente 75 por ciento para a´reas urbanas y 25 por ciento para no urbanas y un nu´mero similar de mujeres y hombres. El taman˜o de muestra total es de 11,001 encuestados.
+Esta encuesta contiene informacio´n detallada de la persona que responde: antecedentes sociales, caracter´ısticas del hogar en el que crecio´, educacio´n, ocupacio´n y caracter´ısticas del hogar en el que vive ahora.
+Se dispone de 5 mo´dulos con informacio´n espec´ıﬁca para cada tipo de integrante del hogar de los entrevistados:
+1. El entrevistado y sus padres.
+2. La composicio´n del hogar del entrevistado.
+3. Hermanos del entrevistado.
+17
+
+4. Co´nyuge del entrevistado.
+5. Hijos del entrevistado.
+Para el presente trabajo se utilizan u´nicamente los datos obtenidos del mo´dulo 1 (el entrevistado y sus padres).
+De la tabla 2 podemos rescatar que el entrevistado promedio de este estudio tiene una edad de 39 an˜os, es hombre (el 54.6 % de la muestra son hombres), tiene 8.6 an˜os de estudio, tiene un trabajo (el 64.3 % de la muestra trabaja), trabaja 46 horas a la semana, tiene 11.63 an˜os en su trabajo actual, no es un lector habitual (solo el 34.6 % de la muestra reporta tener el ha´bito de la lectura) y tiene al menos un hijo (el 66.5 % de la muestra tiene al menos un hijo). Se tiene un ´ındice de riqueza estandarizado que va de -2.15 a 3.2 y una media de cero. Los detalles sobre la construccio´n de este ´ındice se encuentran en el anexo, pero en resumen, para la construccio´n se utilizaron las siguientes variables que aparecen en el panel B de la tabla 2: auto, bienes ra´ıces, acciones, cuenta de ahorros, boiler, estufa, lavadora, refrigerador y computadora. Utilizando informacio´n referente a los bienes ra´ıces, de la misma tabla, se construye el ´ındice de riqueza transmitida de los padres. Tambie´n se puede observar que en esta generacio´n, el emprendimiento ha sido el gran generador de nuevos negocios. De 10991 entrevistados que contestaron a la pregunta de poseer un negocio, 884 respondieron aﬁrmativamente y tan solo 160 reconocieron haberlo recibido por una herencia, es decir, tan solo el 18 %.
+Ahora, este trabajo es intergeneracional y por lo tanto es necesario tener informacio´n de al menos una generacio´n anterior a la actual. En la tabla 3 se pueden observar estad´ısticas descriptivas de la generacio´n previa anterior. Del panel A de la tabla 3 se puede observar que el nivel educativo es sensiblemente menor al de los hijos. Los hijos tienen como media casi 5 an˜os ma´s de escolaridad que los padres. Esto equivale a casi toda la educacio´n ba´sica en Me´xico. Adema´s, es claro que hace una generacio´n el hombre era la principal fuerza laboral del hogar. El 86 % de los padres y tan solo el 19 % de las madres se encontraba trabajando cuando el entrevistado ten´ıa 14 an˜os.
+Para obtener el ´ındice de riqueza de los padres se realizo´ el mismo procedimiento que se
+18
+
+TABLA 2: Entrevistado.
+
+Variable
+Panel A. Caracter´ısticas.
+Hombre Edad An˜os de escolaridad Trabaja Horas de trabajo semanales An˜os de trabajo I´ndice de riqueza
+
+Observaciones Media
+
+SD
+
+M´ınimo Ma´ximo
+
+11001 11001 11001 10995 6752 6210 10310
+
+0.546 38.672 8.606 0.644 45.970 11.636
+0
+
+0.498 12.302 4.276 0.479 17.124 10.293
+1
+
+0 25 0 0 2 0 -2.147
+
+1 64 26 1 96 57 3.219
+
+Panel B. Hogar del entrevistado.
+Taman˜o del hogar (habitantes) Valor de la casa donde habita Miembros que aportan ingreso Ingreso total del hogar Tiene computadora Tiene estufa de gas o ele´ctrica Tiene lavadora Tiene refrigerador Nu´mero de automo´viles del hogar Tiene acciones, bonos o fondos Tiene cuenta de ahorros Tiene cuenta de cheques
+
+10997 7224 10888 6684 10991 10993 10992 10991 10414 10943 10933 10925
+
+4.113 $411,214
+1.583 $5,117 0.282 0.930 0.686 0.870 0.522 0.012 0.118 0.026
+
+1.913 $8,980,732
+0.872 $8,338 0.450 0.255 0.464 0.336 0.734 0.108 0.322 0.160
+
+1 $98
+0 $150
+0 0 0 0 0 0 0 0
+
+26 $500,000,000
+15 $350,002
+1 1 1 1 7 1 1 1
+
+Panel C. Bienes ra´ıces.
+Posesio´n de local comercial Si lo tiene ¿fue herencia? Posesio´n de terreno o campo Si lo tiene ¿fue herencia? Posesio´n de casa de vacaciones Si lo tiene ¿fue herencia? Posesio´n de casa para rentar Si lo tiene ¿fue herencia? Posesio´n de negocio Si lo tiene ¿fue herencia? ´Indice de riqueza trasmitida
+Nota: SD= desviacio´n esta´ndar.
+
+10993 714
+10994 930
+10993 80
+10992 159
+10991 884
+11001
+
+0.068 0.199 0.089 0.481 0.008 0.375 0.015 0.314 0.084 0.181
+0
+
+0.252 0.399 0.285 0.500 0.088 0.487 0.121 0.466 0.278 0.385
+1
+
+0 0 0 0 0 0 0 0 0 0 -0.219
+
+1 1 1 1 1 1 1 1 1 1 19.076
+
+19
+
+TABLA 3: Padres del entrevistado.
+
+Variable
+Panel A. Caracter´ısticas.
+An˜os de escolaridad del padre An˜os de escolaridad de la madre Trabajaba el padre Trabajaba la madre ´Indice de riqueza
+
+Observaciones Media SD M´ınimo Ma´ximo
+
+11001 11001 10046 10442 10356
+
+3.733 3.658 0.862 0.190
+0
+
+4.271 4.040 0.345 0.393
+1
+
+0 0 0 0 -1.343
+
+25 24 1 1 2.568
+
+Panel B. Hogar de los padres.
+
+Taman˜o del hogar (habitantes)
+
+10821
+
+5.752 1.913
+
+1
+
+30
+
+Ten´ıa estufa de gas o ele´ctrica
+
+10974
+
+0.615 0.486
+
+0
+
+1
+
+Ten´ıa lavadora
+
+10978
+
+0.257 0.437
+
+0
+
+1
+
+Ten´ıa refrigerador
+
+10975
+
+0.474 0.499
+
+0
+
+1
+
+Ten´ıa calentador de agua
+
+10979
+
+0.211 0.408
+
+0
+
+1
+
+Nu´mero de automo´viles del hogar
+
+10729
+
+0.282 0.725
+
+0
+
+10
+
+Ten´ıa acciones, bonos o fondos mutuos
+
+10939
+
+0.004 0.065
+
+0
+
+1
+
+Ten´ıa cuenta de ahorros
+
+10908
+
+0.040 0.197
+
+0
+
+1
+
+Panel C. Bienes ra´ıces.
+
+Posesio´n de local comercial o negocio
+
+10952
+
+0.083 0.276
+
+0
+
+1
+
+Posesio´n de terreno o campo
+
+10949
+
+0.200 0.400
+
+0
+
+1
+
+Posesio´n de casa de vacaciones
+
+10955
+
+0.010 0.101
+
+0
+
+1
+
+Posesio´n de casa para rentar
+
+10949
+
+0.011 0.103
+
+0
+
+1
+
+Nota: SD= desviacio´n esta´ndar.
+
+20
+
+detalla en el anexo. Se tiene un ´ındice de riqueza de los padres estandarizado que va de -1.34 a 2.56 y una media de cero. Para la construccio´n se utilizaron las siguientes variables que aparecen en el panel B y C de la tabla 3: acciones, cuenta de ahorro, auto, computadora, calentador de agua, refrigerador, estufa, lavadora, negocio, bienes ra´ıces y casa.
+Finalmente, recordemos que la encuesta de inicio tiene 11,001 observaciones pero una vez que se eliminan aquellas observaciones que tienen valores faltantes para las variables que se utilizan para hacer el estudio 3, solamente se cuenta con 9132 observaciones.
+3Las variables que se utilizan para hacer el estudio son: riqueza de los padres, ayuda para encontrar trabajo, an˜os de trabajo, taman˜o de la localidad, escolaridad del padre, escolaridad de la madre, edad, sexo, escolaridad y riqueza transmitida. 1869 observaciones son desechadas por tener un missing value en al menos de una de las variables antes mencionadas.
+21
+
+4. Estrategia Emp´ırica y Resultados
+Como ya se ha descrito, para encontrar la importancia de las inﬂuencias intergeneracionales en la riqueza de los hijos, se debe trabajar con un modelo no lineal. En este sentido, parame´tricamente, el nivel de riqueza de un hogar en el presente puede ser aproximado por una funcio´n polinomial de la riqueza recibida por la generacio´n presente. Se sigue el modelo general parame´trico utilizado por la literatura (Antman and McKenzie (2007); Naschold (2005); Ravallion and Jalan (2001)) cuando se tienen datos en forma de panel:
+
+Wi = β1hi + β2(hi)2 + β3(hi)3 + Xi + εi
+
+(2)
+
+En donde:
+
+W indica la riqueza del individuo entrevistado (hijo).
+
+X corresponde a un vector de controles que captura la heterogeneidad individual: taman˜o de localidad, redes sociales (ayuda para encontrar empleo), sexo, edad, escolaridad, escolaridad de los padres), riqueza de los padres, horas de trabajo.
+
+hi la riqueza transmitida de los padres a los hijos.
+
+Los para´metros de intere´s son las βi. Al estimar los para´metros β1, β2 y β3 podemos deter-
+
+minar la presencia (o no) de convexidades en la dina´mica de la riqueza provocada por la transfe-
+
+rencia intergeneracional de activos. Para tener convexidades en la dina´mica de la riqueza se debe
+
+de cumplir que
+
+∂ 2 Wi ∂hi2
+
+>
+
+0 y que los coeﬁcientes βi
+
+sean estad´ısticamente signiﬁcativos. En caso
+
+de que se presenten convexidades el punto de inﬂexio´n estara´ determinada por la tercera derivada
+
+de la funcio´n polinomial igualada a cero.
+
+∂ 3 wi ∂h3i
+
+>
+
+0 indicar´ıa una situcio´n en la cual se tiene un
+
+comportamiento co´ncavo-convexo.
+
+∂ 2 Wi ∂h2i
+
+<
+
+0,
+
+en
+
+cambio, representar´ıa una situacio´n en la
+
+cual
+
+se
+
+tiene un comportamiento convexo-co´ncavo.
+
+En el art´ıculo de Ravallion and Jalan (2001) se usa un polinomio de tercer orden. En este estudio se sigue la misma estrategia. Adema´s, en el anexo se muestran los resultados de una estimacio´n semiparame´trica en donde el modelo es parcialmente lineal. La informacio´n de los padres
+22
+
+HijO osd o
+
+/ HerenO cias
+
+C ontroles
+
+$
+P adres
+
+FIGURA 5: Diagrama de causalidad
+
+es proporcionada por los propios entrevistados, lo que elimina los problemas de atricio´n. La necesidad de la construccio´n del ´ındice de riqueza de los hijos y de los padres queda de maniﬁesto en la especiﬁcacio´n del modelo. El ´ındice de riqueza de los hijos es la variable que se explica. Sin el ´ındice de riqueza de los hijos no se podr´ıa tratar de falsiﬁcar la hipo´tesis inicial.
+
+La relacio´n de causalidad se explica con la ﬁgura 5. La riqueza de los padres a trave´s de las herencias de bienes ra´ıces se maniﬁesta en la riqueza de los hijos. Sin embargo, es muy probable que haya una causalidad rec´ıproca entre la riqueza de los hijos y las herencias. Para dejarlo claro, supongamos el siguiente escenario. Una familia tiene dos hijos, uno tiene relativo e´xito en su vida mientras que el otro no es que la pase muy bien, este hecho puede determinar el que la herencia vaya para el que no la este´ pasando muy bien. Es un caso en el que la condicio´n de riqueza de los hijos determina el recibir o no la herencia. Es decir la herencia esta´ en funcio´n, adema´s de otras cosas, del e´xito. Teniendo en cuenta este problema, los resultados de este trabajo deben de interpretarse como correlaciones. No se les puede dar interpretacio´n causal.
+
+Las estimaciones de la regresio´n (2) se muestran en la tabla 4. Esta, resume los resultados encontrados en los casos de un modelo lineal, un polinomio de segundo grado y un polinomio de tercer grado.
+
+El modelo LSC representa el caso en el que solo se toma a la herencia como variable explicativa de la riqueza del entrevistado. Este coeﬁciente es estad´ısticamente signiﬁcativo. En este modelo un aumento de una desviacio´n esta´ndar en el ´ındice de riqueza transmitida provoca un
+
+23
+
+TABLA 4: Resultados del modelo polinomial parame´trico.
+
+VARIABLE DEPENDIENTE: Riqueza del entrevistado.
+
+LSC
+
+SSC
+
+TSC
+
+Variable
+
+(1)
+
+(2)
+
+(3)
+
+Herencia
+
+0.143*** 0.0769** -0.0452
+
+(0.0102) (0.0285) (0.0353)
+
+Herenciaˆ2
+
+0.0103* 0.0479***
+
+(0.00454) (0.00883)
+
+Herenciaˆ3
+
+-0.00210***
+
+(0.000464)
+
+Riqueza de padres
+
+Red social
+
+An˜os de trabajo
+
+Taman˜o de la localidad
+
+Escolaridad del padre
+
+Escolaridad de la madre
+
+Edad
+
+Edadˆ2
+
+Sexo
+
+Escolaridad
+
+Constante
+Observaciones R-cuadrada ajustada
+
+0.00861 (0.0103)
+9132 0.020
+
+-0.00198 (0.0114)
+9132 0.021
+
+-0.0266* (0.0123)
+9132 0.024
+
+LCC (4) 0.106*** (0.00734)
+0.335*** (0.0104) 0.136*** (0.0268) 0.0000267** (0.0000096) 0.183*** (0.0175) 0.00836** (0.00285) 0.0174*** (0.00320) 0.0447*** (0.00578) -0.000291*** (0.0000675) 0.0668*** (0.0182) 0.0744*** (0.00254) -2.170*** (0.121)
+9132 0.379
+
+SCC (5) 0.102*** (0.0145) 0.000706 (0.00173)
+0.334*** (0.0104) 0.136*** (0.0268) 0.0000267** (0.0000096) 0.183*** (0.0175) 0.00839** (0.00285) 0.0174*** (0.00320) 0.0447*** (0.00578) -0.000291*** (0.0000675) 0.0669*** (0.0183) 0.0744*** (0.00254) -2.169*** (0.121)
+9132 0.379
+
+TCC (6) 0.0736** (0.0255) 0.00940 (0.00596) -0.000484 (0.000265) 0.334*** (0.0104) 0.137*** (0.0268) 0.0000268** (0.0000096) 0.182*** (0.0176) 0.00842** (0.00285) 0.0173*** (0.00320) 0.0446*** (0.00578) -0.000290*** (0.0000675) 0.0676*** (0.0183) 0.0743*** (0.00255) -2.173*** (0.121) 9132 0.379
+
+Notas: Errores esta´ndar se muestran en pare´ntesis. Todas las variables son referentes a los hijos a menos que se especiﬁque que son referentes a los padres. *: Signiﬁcativo al 10 %. **: Signiﬁcativo al 5 %. ***: Signiﬁcativo al 1 %. La variable “esfuerzo” toma valor de 1 si el individuo trabaja mas que su grupo de comparacio´n. La variable “sexo” toma valor de 1 si el entrevistado es hombre. La variable “taman˜o” de la localidad”toma valor de 1 si el entrevistado vive en la ciudad. La variable “red social” toma valor de 1 si el entrevistado recibio´ ayuda para encontrar su primer trabajo. La escolaridad del entrevistado, de la madre y del padre se reﬁere a an˜os cursados. Regresiones. LSC: Lineal sin controles; SSC: Cuadrada sin controles; TSC: Cubica sin controles; LCC: Lineal con controles; SCC: Cuadrada con controles; TCC: Cubica con controles.
+
+24
+
+aumento 0.143 desviaciones esta´ndar en el ´ındice de riqueza del entrevistado.
+
+El modelo SSC agrega un te´rmino al cuadrado del ´ındice de la riqueza trasmitida. El coeﬁ-
+
+ciente de este te´rmino es 0.0103. Los signos de los dos coeﬁcientes positivos indican que se tiene
+
+una funcio´n convexa desde un inicio ya que
+
+∂ 2 Wi ∂h2i
+
+>
+
+0. Adema´s, al agregar este te´rmino, el coe-
+
+ﬁciente de la riqueza transmitida lineal se reduce en una gran proporcio´n. El modelo TSC agrega
+
+un te´rmino al cubo del ´ındice de riqueza transmitida a los hijos. Al ser
+
+∂ 2 Wi ∂hi2
+
+<
+
+0 en ese modelo,
+
+podr´ıamos pensar que se cuenta con una funcio´n co´ncava. Sin embargo en estas dos regresiones,
+
+en ningu´n caso se esta´ controlando por otros factores que puedan afectar la relacio´n. Lo u´nico que
+
+se puede decir es que existe una relacio´n positiva entre la riqueza de los hijos y de los padres.
+
+El modelo LCC, SCC y TCC agregan controles a la regresio´n polinomial de los casos LSC, SSC y TSC respectivamente. En los casos SCC y TCC -disen˜ados para encontrar una posible trampa de pobreza- los coeﬁcientes relevantes son los te´rminos cuadrado y cubico del ´ındice de riqueza transmitida. En ambos casos los coeﬁcientes no son estad´ısticamente signiﬁcativos. Se puede observar que no existen procesos de acumulacio´n de capital convexos, es decir, que la acumulacio´n de riqueza sigue un proceso lineal. Los datos no muestran distintas velocidades de ajuste ni trampas de pobreza que eviten llegar al equilibrio o´ptimo como el de la ﬁgura 1.
+
+25
+
+5. Discusio´n de los Resultados
+En el caso del polinomio de tercer grado con controles, los coeﬁcientes de segundo y tercer grado de la herencia transmitida tienen un efecto muy pequen˜o y no signiﬁcativo en el nivel de riqueza de los entrevistados. Con estos resultados no se puede rechazar que no existen procesos de acumulacio´n de capital con forma de S (como el de la ﬁgura 1), es decir, que la acumulacio´n de riqueza sigue un proceso lineal. No existen distintas velocidades de ajuste ni trampas de pobreza que eviten llegar al equilibrio o´ptimo como el de la ﬁgura 1. El hecho de que solo el ´ındice de riqueza transmitida a la primera potencia sea signiﬁcativo, refuerza la idea de que el proceso de acumulacio´n de riqueza es lineal, lo cual eventualmente llevara´ a un solo equilibrio en la acumulacio´n riqueza. Este resultado es consistente con la evidencia emp´ırica previa que no encontraba existencia de trampas de pobreza en Me´xico.
+Los efectos del ciclo de vida, representados por la edad del jefe del hogar y la edad al cuadrado del jefe son signiﬁcativos. Lo que estas dos variables muestran, sin embargo, es que la edad del jefe del hogar tiene un impacto positivo en el ´ındice de riqueza del hogar. En particular, con cada an˜o de edad extra del jefe del hogar, se obtiene un incremento 0.0477 desviaciones esta´ndar de la riqueza del hogar. Pero conforme el jefe del hogar se va haciendo ma´s grande, el impacto de la edad es cada vez menor. Esto se concluye por el signo negativo del coeﬁciente de la edad al cuadrado. Esto sucede los modelos LCC, SCC y TCC.
+El nivel de educacio´n del jefe de hogar tambie´n tiene un efecto positivo y signiﬁcativo en la riqueza del hogar de entrevistado. Por cada an˜o extra de educacio´n recibido por el jefe del hogar, la acumulacio´n de riqueza aumenta en 0.0744 desviaciones esta´ndar del ´ındice de riqueza. Esto concuerda con la literatura sobre los efectos de la educacio´n en la riqueza Galor y Zeira (1993)
+Respecto a la inﬂuencia que ejercen los padres en la riqueza de los hijos por otros medios que no sean las herencias, el ma´s importante es la riqueza que estos ten´ıan. Este resultado muestra claramente lo importante que es la familia al momento de analizar la riqueza actual de las personas. Pero debe quedar claro que, aunque importante, no imposibilita el e´xito o fracaso de una persona,
+26
+
+es decir, no genera una trampa de pobreza. La educacio´n de los padres tambie´n es importante, teniendo la educacio´n de la madre una
+magnitud ma´s fuerte. Por cada an˜o de educacio´n extra de la madre la riqueza del entrevistado aumenta en aproximadamente 0.0174 desviaciones esta´ndar en los modelos con controles, en cambio, por cada an˜o de educacio´n de los padres se tiene un incremente 0.00842 desviaciones esta´ndar en la riqueza de los hijos. Aunque estad´ısticamente signiﬁcativos, estos coeﬁcientes no reportan un impacto determinante en la riqueza de los hijos y menos cuando tenemos que la media de educacio´n de los padres es de 3 an˜os.
+En general, se observa que los coeﬁcientes de las variables de control son los mismos tanto para el caso de la regresio´n lineal como para la regresio´n del polinomio de tercer grado.
+27
+
+6. Conclusiones
+La baja movilidad social que se tiene en el pa´ıs Ve´lez Grajales et al. (2012) nos lleva a pensar en posibles explicaciones para este hecho. Una de esas posibles explicaciones recae en la transferencia intergeneracional de la riqueza. Este trabajo se baso´ en una regresio´n polinomial parame´trica para identiﬁcar la dina´mica referente a la acumulacio´n de riqueza en la sociedad mexicana. Como en Antman and McKenzie (2007), aqu´ı tampoco se encuentra evidencia de trampas de pobreza. Los datos parecen sugerir la ausencia de equilibrios mu´ltiples en el proceso de acumulacio´n de la riqueza. Aunque las herencias que reciben las personas si son importantes al momento de acumular su riqueza, estas no determinan el hecho de que una persona quede o no estacada en una situacio´n de pobreza.
+Esto se puede explicar por el hecho de que, en el promedio, las herencias tal vez no se utilizan para invertirlas en negocios o inversiones que permitan aumentar o mantener la riqueza. Lo que puede suceder es que las herencias se utilizan para consumo corriente Zagorsky (2013) y por lo tanto, los beneﬁciarios de las herencias no obtienen ventajas, en el largo plazo de este aspecto en particular.
+Hay otros motivos por los cuales las dinast´ıas pueden mantener una posicio´n ma´s o menos estable a lo largo de las generaciones. Los resultados de este art´ıculo, no niegan la posibilidad de que haya trampas de pobreza en general. Incluso si el mecanismo de trampa de pobreza provocado por las herencias no es sostenido aqu´ı, las trampas de pobreza podr´ıan estar presentes en varios hogares por otros mecanismos. Estos mecanismos son revisados en Duclos and O’Connell (2009).
+La discriminacio´n, bajo desarrollo de regiones, motivaciones de pol´ıtica econo´mica y muchos otros factores pueden generar las trampas de pobreza que podr´ıan estar en operacio´n. Hay, sin duda alguna, alcance para posteriores ana´lisis que traten de responder esta pregunta. En particular, para ver hasta que´ punto el capital social es determinante para construir la realidad de las personas.
+Una advertencia sobre los resultados de este art´ıculo recae en la interpretacio´n que se le
+28
+
+debe de dar a los ´ındices de riqueza. Al utilizar la te´cnica del ana´lisis factorial, ma´s alla´ de la correlacio´n que existe entre los activos seleccionados para construir los ´ındices, se debe asumir que los individuos valoran subjetivamente de manera similar, los activos. Este supuesto es el que permite la homogeneidad en la valoracio´n de los ´ındices de riqueza y es indispensable para la construccio´n de los mismos.
+29
+
+Anexos
+Ana´lisis de factores
+El ana´lisis de factores se usa ampliamente como una herramienta exploratoria para reducir la dimensionalidad de datos multivariados. Consiste en determinar un conjunto de variables en te´rminos de un nu´mero ma´s bajo de variables hipote´ticas Lawley and Maxwell (1973). Su aplicacio´n en estudios socio econo´micos adquiere una relevancia notable dada la diﬁcultad de obtener valores exactos de riqueza. Esta herramienta ya se ha utilizado con anterioridad en trabajos que tambie´n buscan crear ´ındices de riqueza. Como ejemplos tenemos los casos de: Filmer and Pritchett (2001), McKenzie (2005) y Sahn and Stifel (2003).
+El primer paso de esta metodolog´ıa consiste en determinar si las variables que se piensan utilizar para la construccio´n del ´ındice de riqueza esta´n correlacionadas. Se usara´ la prueba de Kaiser-Meyer-Olkin (KMO). La medida KMO compara las magnitudes de los coeﬁcientes observados con los coeﬁcientes de correlacion parcial (Lewis-Beck (1994); Naschold (2005)). Si esta magnitud es lo suﬁcientemente grande, entonces el ana´lisis de factores es una te´cnica adecuada para determinar el ´ındice de riqueza del hogar. Las variables que se utilizan para determinar el ´ındice de riqueza del hogar son: calentador de agua, estufa, lavadora, refrigerador, computadora, bienes ra´ıces, cuentas de ahorro, haberes ﬁnancieros, negocio, propiedad residencial y auto. Con estas variables es obtiene una medida Kaiser-Meyer-Oklin (KMO) de 0.8446 lo cual nos indica que estos activos comparten un factor comu´n. Este resultado nos indica que el ana´lisis de factores en este caso es una buena herramienta para construir el ´ındice.
+Con el ana´lisis de factores, lo que se intenta es representar un conjunto de variables observadas X1, X2. . . Xn en te´rminos de un nu´mero de factores comunes ma´s un factor que es u´nico para cada variable. Los factores comunes (que tambie´n se les conoce como “variables latentes”) son variables hipote´ticas que explican porque un numero de variables esta´n correlacionadas unas con otras (Kim y Mueller, 1978). En el caso de este trabajo, el factor comu´n es la riqueza tanto de los entrevistados como de los padres.
+30
+
+Si las variables observadas son X1, X2. . . Xn, los factores comunes son F1, F2. . . Fm y los factores u´nicos son U1, U2. . . Un , las variables pueden ser expresadas como funciones lineales de los factores:
+X1 = a11F1 + a12F2 + a13F3 + . . . + a1mFm + a1U1
+X2 = a21F1 + a22F2 + a23F3 + . . . + a2mFm + a2U2
+...
+Xn = an1F1 + an2F2 + an3F3 + . . . + anmFm + anUn
+En nuestro contexto, las X s se reﬁeren a: calentador de agua, estufa, lavadora, refrigerador, computadora, bienes ra´ıces, cuentas de ahorro, haberes ﬁnancieros, negocio, propiedad residencial y auto. Respecto a las F s, nosotros solo estamos interesados en el resultado de F1 que se reﬁere a la riqueza del entrevistado. Haciendo una analog´ıa, las U s representan al ana´lisis de factores lo que los te´rminos de error representan a una regresio´n econome´trica. En realidad, cada una de estas ecuaciones es una ecuacio´n de regresio´n. El ana´lisis de factores busca encontrar los coeﬁcientes a11, a12 . . . anm que mejor representen las variables observadas de los factores. Los coeﬁcientes a11, a12. . . anm son pesos tal como los coeﬁcientes de regresio´n. En el ana´lisis de factores, los coeﬁcientes son llamados “cargas” y tambie´n muestran la correlacio´n entre cada variable y un factor dado. En este ejercicio, la correlacion las variables para explicar la riqueza y la riqueza misma.
+La suma de los cuadrados de las cargas para la variable X1, esto es a121 + a122 + . . . + a123, muestra la proporcio´n de la varianza de la variable X1 que se explica por los factores comunes. A esto se le llama “comunalidad”. Entre ma´s grande sea la comunalidad para cada variable, ma´s exitosa es la solucio´n del ana´lisis de factores.
+De la misma manera, la suma de los cuadrados de los coeﬁcientes para un factor –por ejemplo para F1 ser´ıa a121 + a221 + . . . + a2n1 – muestra la proporcio´n de la varianza de todas las variables que se explica por ese factor.
+Ahora, aqu´ı se tiene que nuestras variables X1, X2 . . . Xn son catego´ricas (bienes ra´ıces,
+31
+
+cuentas de ahorro, haberes ﬁnancieros, negocio, propiedad residencial y auto) y los me´todos esta´ndar de ana´lisis de factores asumen que las variables son continuas y siguen una distribucio´n multivariada normal. Esto se soluciona con la propuesta de Bartholomew (1980) en la que se sugiere construir una matriz de correlaciones conocida como “tetrachoric”.
+Siguiendo la propuesta de Bartholomew y despue´s de haber construido la matriz de correlaciones “tetrachoric” se tiene que las cargas de los factores obtenidos para la riqueza de los entrevistados muestran cargas altas acorde a la literatura McKay and Perge (2013), lo que signiﬁca que la riqueza (F1) es muy seguramente una variable latente. Esto aunado a la prueba KaiserMeyer-Oklin (KMO) nos asegura que se obtuvieron resultados conﬁables para el ´ındice de riqueza.
+
+Regresio´n semiparame´trica
+Con el proposito de darle robustez a los resultados, se realiza una regresio´n semiparame´trica en donde se estima la dina´mica de la riqueza como:
+
+Wi = f (hi) + αXi + εi
+
+(3)
+
+La funcio´n de herencia esta´ estimada de manera no parame´trica en este caso.
+
+La ﬁgura 6 muestra la dina´mica de la riqueza con esta especiﬁcacio´n. Gra´ﬁcamente no se observa la existencia de trampas de pobreza. Esto se debe a que, teniendo pocas observaciones (si el propo´sito es recrear la funcio´n de distribucio´n), al estimar la funcio´n no parame´trica de la riqueza transmitida es muy dif´ıcil representar de manera correcta la distribucio´n de la funcio´n y por lo tanto la funcio´n semiparametrica no resulta de gran utilidad. Aunque se alcanza a visualizar cierta concavidad en la funcio´n. Lo que conﬁrmaria el resultado principal del trabajo, es decir, que no hay trampas de pobreza generadas por las herencias.
+
+32
+
+FIGURA 6: Estimacio´n con una regresio´n semiparame´trica.
+La funcion de riqueza transmitida, en este caso, no es parame´trica.
+33
+
+Referencias
+Adato, M., Carter, M. R., and May, J. (2006). Exploring poverty traps and social exclusion in south africa using qualitative and quantitative data. The Journal of Development Studies, 42(2):226– 247.
+Antman, F. and McKenzie, D. (2007). Poverty traps and nonlinear income dynamics with measurement error and individual heterogeneity. The journal of development studies, 43(6):1057–1083.
+Barrett, C. B., Marenya, P. P., McPeak, J., Minten, B., Murithi, F., Oluoch-Kosura, W., Place, F., Randrianarisoa, J. C., Rasambainarivo, J., and Wangila, J. (2006). Welfare dynamics in rural kenya and madagascar. The Journal of Development Studies, 42(2):248–277.
+Bartholomew, D. J. (1980). Factor analysis for categorical data. Journal of the Royal Statistical Society. Series B (Methodological), pages 293–321.
+Duclos, J.-Y. and O’Connell, S. A. (2009). Is poverty a binding constraint on growth in sub-saharan africa? Nairobi, African Economic Research Consortium (AERC), Project on the PovertyGrowth Nexus, Framework Paper.
+Easterly, W. (2006). Reliving the 1950s: the big push, poverty traps, and takeoffs in economic development. Journal of Economic Growth, 11(4):289–318.
+Filmer, D. and Pritchett, L. H. (2001). Estimating wealth effects without expenditure data—or tears: An application to educational enrollments in states of india*. Demography, 38(1):115– 132.
+Galor, O. and Zeira, J. (1993). Income distribution and macroeconomics. The review of economic studies, 60(1):35–52.
+Ghatak, M. and Jiang, N. N.-H. (2002). A simple model of inequality, occupational choice, and development. Journal of development Economics, 69(1):205–226.
+Ghatak, M., Morelli, M., and Sjostrom, T. (2001). Occupational choice and dynamic incentives. The Review of Economic Studies, 68(4):781–810.
+34
+
+Jalan, J. and Ravallion, M. (2002). Geographic poverty traps? a micro model of consumption growth in rural china. Journal of Applied Econometrics, 17(4):329–346.
+Kraay, A. and McKenzie, D. (2014). Do poverty traps exist? assessing the evidence. The Journal of Economic Perspectives, 28(3):127–148.
+Lawley, D. and Maxwell, A. (1973). Regression ana factor analysis. Biometrika, 60(2):331–338.
+Lewis-Beck, M. S. (1994). Factor analysis and related techniques (international handbook of quantitative applications in the social sciences).
+Lokshin, M. and Ravallion, M. (2004). Household income dynamics in two transition economies. Studies in Nonlinear Dynamics & Econometrics, 8(3).
+Lybbert, T. J., Barrett, C. B., Desta, S., and Layne Coppock, D. (2004). Stochastic wealth dynamics and risk management among a poor population*. The Economic Journal, 114(498):750–777.
+McKay, A. and Perge, E. (2013). How strong is the evidence for the existence of poverty traps? a multicountry assessment. The Journal of Development Studies, 49(7):877–897.
+McKenzie, D. J. (2005). Measuring inequality with asset indicators. Journal of Population Economics, 18(2):229–260.
+Naschold, F. (2005). Identifying asset poverty thresholds: New methods with an application to pakistan and ethiopia. In American Agricultural Economics Meeting, pages 24–27.
+Naschold, F. (2013). Welfare dynamics in pakistan and ethiopia–does the estimation method matter? The Journal of Development Studies, 49(7):936–954.
+Ravallion, M. and Jalan, J. (2001). Household income dynamics in rural china. World Bank Policy Research Working Paper, (2706).
+Sahn, D. E. and Stifel, D. (2003). Exploring alternative measures of welfare in the absence of expenditure data. Review of income and wealth, 49(4):463–489.
+Santos, P. and Barrett, C. B. (2011). Persistent poverty and informal credit. Journal of Development Economics, 96(2):337–347. 35
+
+Sen, A. K. (1994). Well-being, capability and public policy. Giornale degli economisti e annali di economia, pages 333–347.
+Stiglitz, J. (2012). The price of inequality. Penguin UK. Swift, J. (2006). Why are rural people vulnerable to famine? IDS bulletin, 37(4):41–49. Ve´lez Grajales, R., Campos Va´zquez, R., M., and Huerta Wong, J. E. (2012). Informe de movilidad
+social en me´xico 2013. imagina tu futuro. IDS bulletin. Zagorsky, J. L. (2013). Do people save or spend their inheritances? understanding what happens
+to inherited wealth. Journal of family and economic issues, 34(1):64–76. Zahra, N., Shah, H., Khan, M. A., and Zubair, M. (2014). Livelihood assets and poverty nexus: A
+case study from rainfed pothwar area of pakistan. Pakistan J. Agric. Res. Vol, 27(3).
+36
+
+I´ndice de tablas
+1. Estudios emp´ıricos. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 2. Entrevistado. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 3. Padres del entrevistado. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 4. Resultados del modelo polinomial parame´trico. . . . . . . . . . . . . . . . . . . . 24
+37
+
+

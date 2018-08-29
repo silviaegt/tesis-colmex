@@ -1,0 +1,2171 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+DEMANDA DE GASOLINA Y ELECTRICIDAD EN MÉXICO: ANÁLISIS MACRO
+Y MICROECONOMÉTRICO
+KARINA CABALLERO GÜENDULAIN
+PROMOCIÓN 1998-2000
+ASESOR:
+DR. GERARDO ESQUIVEL HERNÁNDEZ
+ENERO 2014
+
+Agradecimientos
+A mi tutor Gerardo Esquivel por sus valiosos comentarios A Luis Miguel Galindo por su apoyo, largas pláticas y discusiones sobre el tema A Umberto por el tiempo, comprensión y aliento A Luis Sánchez por su apoyo incondicional y amistad Con cariño a mis hermanos Karla, Juan y Kenya, a mi familia Mexicana e Italiana y a todos mis amigos
+i
+
+Resumen
+La literatura sobre las estimaciones de la demanda de energía se enfoca en estimación de las elasticidades de los principales determinantes de la demanda de energía a corto y largo plazos. La evidencia disponible indica que existe una fuerte dependencia de la trayectoria del consumo de energía y la gasolina al comportamiento del ingreso y es poco sensible a los precios.
+La mayoría de estudios que estiman las elasticidades precio de combustibles y electricidad se realizan con datos agregados ya sea a nivel nacional o regional. Estos resultados son útiles para comprender el impacto agregado de la demanda por un cambio en precios, pero no reflejan la heterogeneidad en la sensibilidad del precio entre diferentes grupos de ingreso. La demanda de combustibles y electricidad en los hogares esta determinada por un conjunto de factores socioeconómicos, que incluyen ingreso, características de los hogares, tamaño de la familia y sensibilidad a los precios que no se refleja completamente en las estimaciones agregadas.
+Este trabajo de investigación tiene como objetivo identificar los determinantes de la demanda de gasolinas y electricidad a nivel agregado y a nivel hogar, así como sus respectivas elasticidades ingreso y precio, particularmente por nivel de ingreso en los hogares. Esta información es relevante para analizar el posible impacto de un cambio en los precios relativos de estos energéticos como resultado de un impuesto ambiental.
+Las estimaciones realizadas y disponibles muestran que la demanda de gasolinas y electricidad son sensibles al ingreso y menos sensibles a los precios. Al comparar los resultados de las elasticidades a nivel agregado con las estimaciones a nivel microeconómico se puede observar en las ecuaciones generales las elasticidades ingreso son cercanas a la unidad.
+Los resultados de las estimaciones de la elasticidad indican que existe una diferencia sustancial entre las estimaciones obtenidas cuando los hogares se diferencian por el nivel de ingresos. Los hogares más pobres tienden a tener una mayor elasticidad de los ingresos, lo que sugiere un nivel de ingresos apenas capaz de sostener las necesidades básicas de la familia. Del mismo modo, las elasticidades precio son generalmente mayores para los hogares más pobres, probablemente
+ii
+
+debido a las restricciones presupuestarias más estrictas. Para los hogares más ricos, la respuesta a los cambios en los precios tiende a desvanecerse. Los resultados del consumo de electricidad confirman el comportamiento de las familias conforme aumenta su poder adquisitivo como se ve en la marcada trayectoria de las elasticidades ingreso; además en el caso de las elasticidades precio de este energético son menores a -0.5 y se vuelven casi cero cuando el nivel de ingreso es mayor por lo que variaciones en las tarifas tienen efectos bajos sobre la demanda de electricidad para lo cual la política de aumento de precios para controlar el consumo no puede tener los resultados que se esperan. Ante el escenario actual de precios de energéticos elevados y altos subsidios a las gasolinas sería importante analizar la conveniencia de otorgar beneficios dirigidos a la población de menores ingresos, mismos que podrían destinarse mediante subsidios al transporte público en lugar de seguir con un subsidio costoso que beneficia en mayor medida a los hogares con mayor ingreso.
+iii
+
+Índice 1. Introducción ...............................................................................................................2 2. Revisión de la literatura .............................................................................................4 2.1 Demanda agregada.....................................................................................................4 2.2 Demanda de hogares ..................................................................................................8 3. Metodología .............................................................................................................12 4. Modelos de demanda macro ....................................................................................20 5. Modelos de demanda por hogares ...........................................................................32 6. Conclusiones ............................................................................................................40 7. Bibliografía. .............................................................................................................43 Anexo 1: Descripción de la ENIGH de México..............................................................49 Anexo 2: Datos Survey ...................................................................................................51
+1
+
+1. Introducción
+Estudios de demanda de Energía han atraído la atención internacional durante las últimas décadas, debido a su relación con los problemas ambientales globales y la relación entre la energía y el crecimiento y trayectorias de desarrollo de distintos países. Asimismo, existe un interés por analizar la demanda de energía para tener una mejor comprensión de la magnitud y la dinámica de las respuestas de los consumidores a los cambios en los precios de la energía y en el nivel de actividad económica (Dahl, 1994).
+La literatura sobre las estimaciones de la demanda de energía se enfoca en estimación de las elasticidades de los principales determinantes de la demanda de energía a corto y largo plazos y en el análisis de la evolución del consumo de energía, identificando sus principales determinantes y magnitudes, con la finalidad de hacer predicciones, simulaciones y proyecciones de corto, mediano y largo plazos para diferentes escenarios de las variables determinantes, incluyendo sus principales consecuencias ambientales. La evidencia disponible indica que existe una fuerte dependencia de la trayectoria del consumo de energía y la gasolina al comportamiento del ingreso y es poco sensible a los precios.
+La mayoría de estudios que estiman las elasticidades precio de combustibles y electricidad se realizan con datos agregados ya sea a nivel nacional o regional, en los cuales se emplean diversas técnicas y especificaciones de modelos. Estos resultados son útiles para comprender el impacto agregado de la demanda por un cambio en precios, pero no reflejan la heterogeneidad en la sensibilidad del precio entre diferentes grupos de ingreso. La demanda de combustibles y electricidad en los hogares esta determinada por un conjunto de factores socioeconómicos, que incluyen ingreso, características de los hogares, tamaño de la familia y sensibilidad a los precios que no se refleja completamente en las estimaciones agregadas.
+El consumo de combustibles fósiles en los hogares representa una importante participación del gasto, que sin embargo es muy heterogénea entre grupos de ingreso, y en consecuencia las políticas de precios inciden de forma desigual entre los diferentes grupos de ingreso de la
+2
+
+población. Asimismo es importante conocer la capacidad de respuesta de los diferentes grupos de ingreso de la demanda de gasolina y electricidad a cambios en el precio para analizar la eficacia y la equidad de la implementación de políticas publicas relacionadas con eliminación de subsidios o implementación de impuestos a los energéticos.
+La metodología utilizada para las demandas agregadas es cointegración, la cual se basa en el uso de vectores autorregresivos (VAR) dónde se busca describir el comportamiento de una serie a partir de la propia variable rezagada incorporando variables exógenas rezagadas. Se utilizó el procedimiento de Johansen (1988, 1992 y 1995) que estima un modelo de k rezagos se busca describir el procedimiento estocástico de los datos y encontrar relaciones de largo plazo entre las variables determinadas por el modelo. Para encontrar las relaciones de corto plazo entre las variables involucradas se aplicó la metodología de los modelos de corrección de errores (MCE) (Engle y Granger, 1987; Davidson et al., 1978; Granger y Weiss, 1983).
+Para el análisis de la demanda con microdatos se utilizó una versión simplificada del Sistema de Demanda Casi Ideal (por sus siglas en inglés AIDS) Deaton y Muellbauer (1980) la cual ha convertido en el principal método para analizar la teoría de la demanda y ha sido empleada en numerosos estudios (Pogany, 1996). Asimismo, de acurdo con Deaton y Muellbauer (1980) y Terrazas y Chávez (2011) el índice de precios ������ puede ser reemplazado por el índice de precios de Stone (1953) que es utilizando cuando se busca introducir una mayor variabilidad de los precios entre los hogares, y en el caso del consumo de gasolina y electricidad los consumidores enfrentan precios poco diferenciados entre regiones. Para considerar la heterogeneidad entre hogares, se incorporaron variables adicionales en la estimación de la ecuación de demanda que incluyen características del jefe del hogar, composición del hogar y localización geográfica (Ruiz y Tranoy, 2008). La estrategia de estimación incluyó el uso del método de estimación de dos etapas de Heckman (1979), con la finalidad de considerar el sesgo de selección de los hogares que consumen gasolina y corregir la posible heteroscedasticidad de los residuales.
+En el siguiente apartado se presenta la evidencia empírica de las elasticidades de gasolina y electricidad a nivel agregado y con micro-datos, a nivel internacional y para México. Posteriormente se presenta la metodología econométrica y estrategia de estimación que se utilizó
+3
+
+para ambos tipos información. En el apartado cuatro se presentan los resultados de las estimaciones, y en el último se presentan las conclusiones.
+2. Revisión de la literatura
+El consumo de combustibles tiene importantes consecuencias desde el punto de vista ambiental, particularmente en las emisiones de gases de efecto invernadero y de contaminación en las áreas urbanas. En este sentido, resulta importante identificar el posible uso de algún tipo de impuesto para controlar o inducir su consumo. El principio de “quien contamina paga” se puede aplicar a la internalización de los daños ambientales, mediante impuestos se permitan que los precios de mercado reflejen todos los costos de la producción, el consumo y los residuos. En este sentido, los precios deben reflejen el auténtico valor económico, ambiental y social de los recursos con respecto a los sustitutos disponibles y con ello pueden ayudar a cambiar el comportamiento de los gobiernos, empresas e individuos.
+2.1 Demanda agregada
+La demanda de los energéticos depende principalmente del precio del bien energético, del ingreso disponible, de los precios de bienes sustitutos y complementarios, y de la tecnología que emplea el bien. Por supuesto que debe de haber otros elementos explicativos de la demanda de energía en función del tipo del bien y del sector que emplee el bien o servicio. Asimismo es importante reconocer que la posibilidad de plasmarlos en una demanda de energía, depende de la disponibilidad de la información tanto en calidad y cantidad.
+La demanda de gasolina es una demanda derivada de las necesidades de transporte de la población, es posible modelarla como la demanda de cualquier otro bien normal. La especificación común de la demanda de gasolinas (������������!) es función del gasto de los agentes económicos, aproximado por su ingreso (������!), de los precios relativos de la gasolina (������������!) y del conjunto de bienes y servicios substitutos y otros factores adicionales (������!") (Dahl, 2011; Sterner, 2007):
+4
+
+!!! = !! + !!!! + !!!!! +
+
+! !!!
+
+!! !!"
+
++
+
+!!
+
+(1)!
+
+Sin embargo, existe evidencia de que otros factores son relevantes para determinar la demanda de gasolinas, donde se incluyen la evolución de la flota vehicular, los estándares de emisiones y de eficiencia vehicular, la densidad urbana, el precio de los autos y el costo agregado de utilizar el automóvil (Baltagi y Griffin, 1983; Dahl, 1986; Sterner y Dahl, 1992; Graham y Glaister, 2002; Basso y Oum, 2007; y Dahl (2011).
+
+El resumen de la evidencia internacional1 sobre las estimaciones econométricas de la demanda de gasolina se presenta en la Gráfica 1. Se observa que la elasticidad ingreso se encuentra en un rango de 0 y 1.1, con una media de 0.60. La elasticidad precio presenta una distribución asimétrica, con mayor varianza y valores entre -1.7 y 0, y la media es de -0.43. En este sentido, se observa que los consumidores ajustan el consumo de la gasolina en mayor medida a un cambio en ingreso que ante cambios de precio.
+
+Al separar la elasticidad precio en el corto y largo plazo se pueden identificar variaciones sustanciales, Havranek, Irsova y Janda (2012) usando un meta-análisis encontraron que en el corto plazo la elasticidad precio de la gasolina es menos sensible (-0.09), mientras que en el largo plazo los agentes tienden a ajustar su consumo en mayor medida (-0.31).
+
+1 Con base a 37 estudios de la literatura internacional sobre demanda de gasolina, que arrojaron 115 estimaciones de la elasticidad ingreso y 155 estimaciones de la elasticidad precio, en el periodo 1960-2011
+5
+
+Gráfica 1: Distribución de las elasticidades de largo plazo de la demanda de gasolina
+
+Elasticidad ingreso
+
+Elasticidad precio
+
+1.5
+
+1.5
+
+1.0
+
+1.0
+
+Densidad Densidad
+
+0.5
+
+0.5
+
+0 0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+1.2
+
+Elasticidad
+
+Histograma
+
+Densidad de Kernel
+
+Fuente: Caballero(2012).
+
+0 -1.5
+
+-1.0
+
+-0.5
+
+0
+
+Elasticidad
+
+Histograma
+
+Densidad de Kernel
+
+Las estimaciones de la demanda de gasolina para México se sintetizan en el cuadro 1. El número de estudios realizado es limitado y la metodología más utilizada es cointegración. Berndt y Botero (1985) estiman un panel de datos dinámico con datos agregados en 14 regiones del país para el periodo 1973-1978. Eskeland y Feyzioglu (1997) estiman la demanda de gasolina para las 32 entidades federativas de México (1982-1988) a partir del método de momentos generalizado en primeras diferencias. Haro e Ibarrola (2000) estiman diferentes funciones de demanda para regiones fronterizas de México con los Estados Unidos durante el periodo 1995-1999. Galindo y Salinas (1997) analizan las condiciones de exogeneidad de la demanda de gasolinas en la Zona Metropolitana del Valle de México. Galindo (2005) y Reyes, Escalante y Matas (2010), estiman las demanda de gasolina con la metodología de cointegración para diferentes periodos. A pesar de las diferencias en metodologías, especificaciones y periodos de tiempo se pueden identificar patrones consistentes. El promedio de la elasticidad ingreso de corto plazo de estos estudios es de 0.65, mientras que la de largo plazo es de 1.097, en relación a la elasticidad precio para el corto plazo el promedio es de -0.23 y para el largo plazo es de -0.41.
+
+6
+
+Cuadro 1: Evidencia empírica de la demanda de gasolina en México
+
+Autor
+
+Periodo de estimación
+
+Metodología
+
+Elasticidad
+
+ingreso
+
+CP
+
+LP
+
+Elasticidad
+
+precio
+
+CP
+
+LP
+
+Berndt y Botero (1985)
+
+1960-1979
+
+MAP y OLS
+
+0.70 1.35 -0.17 -0.33
+
+Eskeland y Feyzioglu (1997) 1984-1992
+
+Panel
+
+0.82 1.77 -1.01 -1.13
+
+Galindo y Salinas (1997)
+
+1987-1995
+
+Cointegración y ECM
+
+0.56 1.31 0.001 -0.046
+
+Haro e Ibarrola (2000)
+
+1995-1999
+
+Panel
+
+0.40 a 0.58
+
+-0.24 a -0.42
+
+Galindo (2005)
+
+1965-2001
+
+Cointegración y ECM
+
+0.84 0.54 -0.09 -0.44
+
+Reyes, Escalante y Matas 1960-2008
+
+Cointegración y ECM
+
+0.72 1.00 -0.04 -0.29
+
+(2010)
+
+Crôtte, Noland y Graham 1980-2006
+
+Cointegración
+
+0.43 0.53 0.00 -0.29
+
+(2010)
+
+Crôtte, Noland y Graham 1993-2006
+
+Panel
+
+0.46 1.18 -0.15 -0.39
+
+(2010)
+
+Notas: OLS mínimos cuadrados ordinarios, MAP modelo de ajuste parcial, ECM mecanismo de corrección de errores.
+
+Fuente: Elaboración propia
+
+La demanda de energía eléctrica es una demanda derivada del uso de aparatos y equipos que proveen un servicio final a los consumidores. En el consumo residencial inciden factores como la decisión de comprar o remplazar bienes durables en el hogar, las características técnicas de dichos bienes, y la frecuencia e intensidad de su uso (Hartman, 1979). En su forma simplificada la demanda de electricidad para sus distintos usos puede modelarse con un modelo uniecuacional, esto es, como función del gasto del agente económico, aproximado por su ingreso (yt), y de los precios relativos de la electricidad (pet), y del conjunto de bienes y servicios substitutos (xt) (Fisher y Kaysen, 1962; Houthakker, et al. 1973; Taylor, 1975; Berndt y Samaniego, 1984; Dahl, 1993):
+
+!"! = !! + !!!! + !!!"! + !!!! + !!
+
+(2)
+
+La evidencia internacional disponible sobre las estimaciones de la elasticidad ingreso y precio de la demanda de energía eléctrica muestran amplios rangos que pueden depender de factores como la especificación y método de estimación de la función de demanda, las características de los datos, y de la especificación y estructura de precios. Espey y Espey (2004) realizaron un meta-análisis con 36 artículos sobre la demanda de electricidad publicados en el periodo 1971-2000, encontraron
+7
+
+que la elasticidad precio de la electricidad de corto plazo es de -0.35, mientras que la de largo plazo es de -0.85, asimismo la elasticidad ingreso de corto plazo es de 0.28, y en el largo plazo de 0.97.
+2.2 Demanda de hogares
+La mayoría de estudios que estiman las elasticidades precio de combustibles y electricidad se realizan con datos agregados, ya sea a nivel nacional o regional, en los cuales se emplean diversas técnicas y especificaciones de modelos. Estos resultados son útiles para comprender el impacto agregado de la demanda por un cambio en precios, pero no reflejan la heterogeneidad en la sensibilidad del precio entre diferentes grupos de ingreso. Utilizando micro-datos se ha encontrado evidencia de que factores como la localización geográfica (Archibald y Gillingham, 1980; Greening et al., 1995; Nicol, 2003) y los grupos de ingreso (Kayser, 2000; West, 2004; Wadud et al., 2009; Wadud et al., 2010) generan diferencias importantes en la elasticidades precio de la gasolina.
+En el cuadro 2 se presenta un resumen de la literatura sobre elasticidades precio de las gasolinas estimadas con micro-datos. Las metodologías utilizadas son heterogéneas, y la mayoría de los estudios se realizaron con datos de sección cruzada. La elasticidad precio se encuentra en un rango de 0 a -0.72, con un promedio de -0.407 y desviación estándar de 0.20. La mayoría de los estudios se realizó en Estados Unidos.
+Las estimaciones por grupo de ingreso son complejas mientras que algunos autores indican que la elasticidad precio es de mayor magnitud para grupos de ingreso más alto (Greene y Hu, 1986; Kayser, 2000). En el otro sentido, los grupos de menor ingreso presentan elasticidades mayores, mientras que los de mayor ingreso son menos sensibles a cambios de precio de las gasolinas (West y Williams, 2004; Wadud et al., 2010). Estos patrones se asocian al comportamiento de los hogares y su capacidad de sustituir el uso del automóvil.
+Para el caso de la demanda de electricidad de los hogares se encontraron resultados diferentes tanto para países desarrollados y en desarrollo. La metodología más empleada fue mínimos
+8
+
+cuadrados ordinarios (cuadro 3). El promedio de la elasticidad precio de la electricidad fue de 0.47 ligeramente mayor que en el caso de las gasolinas, con una desviación estándar de 0.45 y en un rango de valores de -0.05 y -2.62 que es más amplio comparado con el de las gasolinas. Respecto a los estudios que analizaron la elasticidad de la electricidad por grupo de ingreso los resultados son bastante heterogéneos, en países como Noruega y España (Nesbakke, 1999; Fernández 2006), los grupos de mayores ingresos presentan elasticidades mayores, indicando una mayor sensibilidad al precio de la energía eléctrica, la cual se puede explicar por patrones de consumo en donde es posible cambiar aparatos electrónicos y lámparas por aquellos más eficientes o alternativos. En Chile la elasticidad precio de energía eléctrica presenta muy poca variación por quintil (Acuña, 2008). Para India la evidencia va en sentido opuesto al analizar las elasticidades por área rural o urbana, siendo en el área urbana donde los hogares de menores ingresos son más sensibles al precio de la energía eléctrica (Gundimeda y Köhlin, 2008). En este sentido, en la literatura económica, los resultados no son concluyentes respecto a las elasticidades precio de gasolina y energía eléctrica por grupos de ingreso. Ello es posible que sea el resultado de la heterogeneidad de estructuras económicas y de los niveles de desigualdad que inciden en los patrones de consumo, los cuales son muy diferentes por país y en dónde inciden variables no sólo de ingreso sino también de ubicación geográfica (por ejemplo el uso de energía para sistemas de calefacción), culturales y de nivel de desarrollo tecnológico.
+9
+
+Cuadro 2: Literatura de elasticidad precio de la gasolina con micro-datos
+
+Autor
+
+Perio- Región Tipo de
+
+Metodología Elasticidades Resultado por grupo
+
+do
+
+información
+
+de ingreso
+
+Archibald y 1972- USA
+
+Sección
+
+OLS
+
+-0.43
+
+Gillingham
+
+73
+
+cruzada
+
+(1980)
+
+Greene y Hu 1985 USA
+
+Sección
+
+Box-Cox
+
+-0.5 a -0.6 de La elasticidad es mayor
+
+(1986)
+
+cruzada
+
+CP
+
+en los tres cuartiles
+
+superiores. En el cuartil
+
+más bajo es de -0.5.
+
+Dahl y Sterner 1990 USA
+
+-0.52
+
+(1991)
+
+Eltony (1993) 1969- Canadá Sección
+
+CP -0.21
+
+1988
+
+cruzada
+
+Greening et
+
+1990 USA
+
+Sección
+
+CA
+
+0 a -0.67
+
+al. (1995)
+
+cruzada
+
+Puller y
+
+1980- USA
+
+Sección
+
+2SLS
+
+-0.49
+
+Greening
+
+1990
+
+cruzada
+
+(1999)
+
+repetida
+
+Kayser (2000) 1981 USA
+
+Panel
+
+TSH
+
+-0.23
+
+Incrementa conforme
+
+aumenta el ingreso
+
+West y
+
+1996- USA
+
+Sección
+
+IV
+
+-0.18 a -0.72 Disminuye
+
+Williams
+
+1998
+
+cruzada
+
+monotónicamente con
+
+(2004)
+
+quintiles de ingresos
+
+mayores. No son
+
+estadísticamente
+
+significativos en los
+
+quintiles de menores y
+
+mayores ingresos.
+
+Bento et al.
+
+2001 USA
+
+Sección
+
+Bayesiano
+
+-0.35
+
+(2009)
+
+cruzada
+
+Wadud et al. 1984- USA
+
+Sección
+
+FGLS y OLS
+
+-0.23 a -0.42 Tiene forma de U, con
+
+(2009)
+
+2003
+
+cruzada
+
+el mayor valor en el
+
+repetida
+
+grupo de menor ingreso.
+
+Clerc y
+
+2005- Francia Sección
+
+TSH
+
+-0.7 a -1.0
+
+Marcus
+
+2006
+
+cruzada
+
+(2009)
+
+Wadud et al. 1997- USA
+
+Sección
+
+PEA
+
+-0.33 a -0.59 Disminuye con quintiles
+
+(2010)
+
+2002
+
+cruzada
+
+de ingreso mayores.
+
+repetida
+
+Manzan y
+
+1991- USA
+
+Sección
+
+Semiparamétrica -0.33 a -0.54
+
+Zerom (2010) 1994
+
+cruzada
+
+repetida
+
+Notas: 2SLS: mínimos cuadrados en dos etapas, TSH: Heckman en dos etapas, AIDS: sistema de demanda casi ideal,
+
+FGLS: mínimos cuadrados generalizados factibles, OLS: mínimos cuadrados ordinarios, IV: variables instrumentales,
+
+PEA: panel con efectos aleatorios y CA: Análisis de conglomerados.
+
+Fuente: Elaboración propia.
+
+10
+
+Cuadro 3: Literatura de elasticidad precio de la electricidad con micro-datos
+
+Autor
+
+Periodo
+
+Región
+
+Tipo de Metodoinformación logía
+
+Elasticidades
+
+Resultado por grupo de ingreso
+
+Dubin y
+
+1995
+
+USA
+
+Sección
+
+OLS
+
+-0.26
+
+McFadden
+
+cruzada
+
+(1984)
+
+Aasness y
+
+1987- Noruega
+
+Panel
+
+OLS
+
+-0.20
+
+Holtsmark
+
+1991
+
+(1993)
+
+Nesbakken
+
+1993- Noruega
+
+Sección
+
+Modelo
+
+1993 -0.57 Los resultados indican que
+
+(1999)
+
+1995
+
+cruzada
+
+de
+
+1994 -0.33 los hogares de altos ingresos
+
+elección 1995 -0.53 son más sensibles a los
+
+discreta
+
+cambios de precios de la
+
+energía que los hogares con
+
+ingresos más bajos.
+
+Filippini y
+
+1993- India
+
+Sección
+
+OLS
+
+CP -0.055
+
+Pachauri
+
+1994
+
+cruzada
+
+LP –0.39
+
+(2002)
+
+Fernández
+
+1999 España
+
+Panel
+
+VI, MCO
+
+-0.60
+
+Crece a medida que existe un
+
+(2006)
+
+mayor nivel de ingreso de los
+
+individuos.
+
+Acuña (2008) 2006
+
+Chile
+
+Sección
+
+OLS
+
+-0.73
+
+La elasticidad precio de
+
+cruzada
+
+energía eléctrica presenta
+
+muy poca variación por
+
+quintil.
+
+Gundimeda y 1998
+
+India
+
+Sección
+
+AIDS
+
+De -0.421 En las áreas urbanas los
+
+Köhlin
+
+1999
+
+cruzada
+
+a -0.581
+
+hogares de menor ingreso
+
+(2008)
+
+presentan elasticidades
+
+mayores, en el caso de
+
+hogares rurales el efecto es
+
+contrario.
+
+Clerc y
+
+2005- Francia
+
+Sección
+
+TSH
+
+CP -0.06 El consumo de energía
+
+Marcus
+
+2006
+
+cruzada
+
+LP -0.17
+
+doméstica es muy sensible a
+
+(2009)
+
+su precio relativo.
+
+Reiss (2009) 2009
+
+USA
+
+Sección
+
+GMM, -0.39 (GMM) -
+
+cruzada
+
+OLS
+
+0.28 (OLS)
+
+Fan y
+
+1997- Australia
+
+Panel
+
+AIC
+
+-0.363 a 0.428
+
+Hyndman
+
+2008
+
+(2010)
+
+Fell et al.
+
+2006- USA
+
+Panel
+
+OLS, -0.101 (OLS)
+
+(2010)
+
+2008
+
+GMM -0.982 (GMM)
+
+Alberini et al. 1997- USA
+
+Meta-
+
+-0.86 a -0.67 La elasticidad precio de la
+
+(2011)
+
+2007
+
+análisis
+
+demanda de electricidad
+
+disminuye con el ingreso.
+
+Madlener et 1981- USA
+
+Panel
+
+DOLS,
+
+CP -0.06
+
+al. (2011)
+
+2008
+
+FMOLS
+
+LP -0.39
+
+Soria et al.
+
+2003- México
+
+Sección
+
+GLM
+
+CP -0.694
+
+(2011)
+
+2010
+
+cruzada
+
+LP -2.262
+
+Agostini et
+
+2006
+
+Chile
+
+Sección
+
+NL-OLS –0.36 a –0.43
+
+al. (2012)
+
+cruzada
+
+Notas: 2SLS: mínimos cuadrados en dos etapas, TSH: Heckman en dos etapas, AIDS: sistema de demanda casi ideal,
+
+FGLS: mínimos cuadrados generalizados factibles, OLS: mínimos cuadrados ordinarios, IV: variables instrumentales,
+
+PEA: panel con efectos aleatorios, CP: corto plazo y LP: largo plazo.
+
+Fuente: Elaboración propia.
+
+11
+
+3. Metodología
+Las estimaciones de las elasticidades se realizaron usando dos tipos de información. Información de series de tiempo a nivel nacional para el periodo 1970-2010, e información de la Encuesta de Ingreso y Gasto de los Hogares del 2010 para estimar las elasticidades por grupo de ingreso.
+Elasticidades a nivel agregado
+De acuerdo con la teoría económica existen diversas formas de analizar, a nivel agregado, las relaciones entre el consumo de los energéticos, el producto y los precios, pero destacan de entre esos diversos enfoques alternativos los basados en los modelos macroeconómicos que son también conocidos como “top down” que tienen como fundamento bases estadísticas y econométricas y cuyo objetivo es cubrir el nivel total de la actividad económica (Mabey et al., 1997; Costanza, 1980; Hall et al., 1986). Este tipo de modelos econométricos son relevantes porque con ellos se pueden realizar pronósticos y simulaciones de diversas políticas económicas. Así, el consumo de los energéticos puede considerarse como una función de diversos factores en donde destacan la trayectoria del producto y su composición estructural, el progreso técnico y la evolución de los precios relativos e incluso el estilo de vida y preferencias de los agentes económicos (Mabey et al., 1997; Jorgenson, 1998; Jorgerson y Wilcoxen, 1993).
+Las estimaciones del comportamiento de la demanda de gasolinas a nivel agregado se basaron en el enfoque de cointegración mediante el procedimiento de Johansen (1988, 1992 y 1995) y los modelos de corrección de errores (MCE) (Engle y Granger, 1987; Sargan, 1964; Davidson et al., 1978; Granger y Weiss, 1983).
+La literatura sugiere una gran cantidad de pruebas para poder comprobar la existencia de raíces unitarias en las series estadísticas, se utilizaron:
+12
+
+La prueba Dickey-Fuller Aumentada (ADF) (Dickey y Fuller, 1981; Maddala y Kim, 1998) que está especificada como:
+
+∆������! =    ������!    +    ϕ − 1 ������!!! +
+
+! !!!
+
+θ
+
+∆������!!!
+
++
+
+������!
+
+  
+
+→  
+
+∆������! =    β!    +   α������!!! +
+
+! !!!
+
+θ
+
+∆������!!!
+
++
+
+������!
+
+(3)
+
+Donde el parámetro φ puede presentar los siguientes valores:
+
+(a) Si |φ| < 1, la media E(xt) = 0 y la varianza (xt) = σ2 es constante, el proceso estacionario se denomina “ruido blanco”.
+(b) Si |φ| = 1, la media E(xt) = 0 pero la varianza (xt) = σ2T cambia en el tiempo, se denomina proceso no estacionario o camino aleatorio (random walk) y esta representado como: xt = xt-1 + εt
+
+La prueba Phillips-Perron (Phillips y Perron, 1988; Maddala y Kim, 1998) que es estimada como se representa en la ecuación (3), con el cambio en el estadístico de prueba que se basa en la siguiente especificación:
+
+1
+
+tˆα
+
+=
+
+tα
+
+⎜⎛⎜⎝
+
+γ f
+
+o o
+
+⎞⎟⎟ 2 ⎠
+
+− T( fo
+
+− γ o )(se(αˆ ))
+
+1
+
+2
+
+f
+
+2 o
+
+s
+
+(4)
+
+En donde α es el estimador y tα es el ratio de α, se(α) es el error estándar, s es el error estándar de la estimación, γo es el error de la varianza del estimador consistente y fo es un estimador del residual de una frecuencia espectral en cero (Phillips y Perron, 1988).
+
+Asimismo la prueba KPSS está basada en una regresión de Mínimos Cuadrados Ordinarios (MCO) donde se involucra a la variable yt en función de las variables exógenas xt:
+
+yt = xt´δ + ut
+
+(5)
+
+13
+
+Donde ut son los residuales estimados y que se pueden definir como: ut = yt – xtδ(0) y en consecuencia se señala que el estimador δ es estimado mediante Mínimos Cuadrados Generalizados (MCG) (Kwiatkowski et al., 1992; Maddala y Kim, 1998).
+
+En consecuencia en base a la metodología de las pruebas de raíces unitarias propuestas anteriormente para determinar la existencia o no de estacionarieidad en las series estadísticas utilizadas se empleo además la metodología de cointegración para poder obtener las relaciones tanto de largo como de corto plazos.
+
+Dicha metodología de cointegración se basa en el uso de los llamados vectores autorregresivos (VAR) los cuales son una generalización de los modelos de procesos autorregresivos (AR) de múltiples series, los cuales tienen la característica de carecer de consistencia teórica pero son importantes debido al aporte estadístico que ofrecen y los cuales se especifican de la siguiente forma (Johnston y Dinardo, 2001):
+
+Yt = A1Yt-1 +…+ ApYt-k + ut,
+
+(6)
+
+Donde Y´t = (y1t, y2t, y3t, y4t, ……, ykt) y A1, A2, ......., Ak son matrices de k x k y ut es el vector de errores. Por lo tanto, se busca describir el comportamiento de una serie a partir de la propia variable rezagada incorporando variables exógenas rezagadas.
+
+yt = α11yt-i + α12xt-i + α13zt-i + ut
+
+(7)
+
+En donde xt-i y zt-i representan a las variables exógenas rezagas y por lo tanto estos modelos utilizan la información estadística a partir de los rezagos para estimar la evolución histórica de los datos (Johnston y Dinardo, 2001; Sims, 1980).
+
+Entonces, para obtener las relaciones de largo plazo se utilizó el procedimiento de Johansen (1988, 1992 y 1995) que busca determinar el rango de cointegración, es decir, el número de relaciones de cointegración, estimar la matriz de vectores de cointegración β, y la matriz de pesos asociada α,
+
+14
+
+determinado que Π = αβ´ y estimar el VAR, incorporando las relaciones de cointegración. Por lo tanto un VAR puede especificarse más específicamente como:
+
+Yt = ∑k Πy,i Yt-I + ∑k Πz,i Zt-I + βo + β1T + γdt + ΦWt + ut
+
+(8)
+
+En esta ecuación, Yt representa a las variables endógenas, el término Zt-I son las variables exógenas, βo contiene un término constante, T es la tendencia, dt y Wt contiene variables dummy estacionales y de intervención respectivamente y ut es el término de error.
+Finalmente para poder encontrar las relaciones de corto plazo entre las variables involucradas se aplicó la metodología de los modelos de corrección de errores (MCE) que son una herramienta útil en el análisis econométrico y que tiene la característica de incluir información de largo plazo donde la causalidad está dada y existe un punto de equilibrio de la existencia de un vector de cointegración que tiene un comportamiento estacionario (Engle y Granger, 1987; Sargan, 1964; Davidson et al., 1978; Granger y Weiss, 1983). Los MCE se pueden especificar de la siguiente forma:
+
+Δyt = β0 + β1Δxt + γ(yt-1 – xt-1) + et
+
+(9)
+
+La ecuación (9) señala que los cambios en la variable dependiente (yt) están relacionados con los cambios en la variable independiente (xt) y el rezago t–1 de la diferencia de ambas variables siendo este último término (yt-1 – xt-1) el más importante debido a que esta diferencia entre variables en el largo plazo es fundamental para explicar los cambios en el corto plazo.
+
+Elasticidades con micro-datos
+Al disponer de información de micro-datos se puede analizar la demanda de gasolinas como una demanda que depende de las necesidades de transporte y también incluir las características de los agentes económicos los cuales buscan satisfacer necesidades básicamente de tiempo, placer, status,
+
+15
+
+entre otras, y que están restringidos por sus presupuestos y por las formas y necesidades para transportarse (Somensson, 2001; Sterner y Dahl, 1992; Berkowitz et al., 1990).
+De este modo, se puede determinar el consumo de gasolinas como la demanda de cualquier otro bien o servicio y que es una función de las preferencias de los agentes económicos sujetos a una determinada restricción presupuestaria2 (Varian, 1993; Deaton y Muellbauer, 1980; Jorgerson y Wilcoxen, 1993; Christodoulakis et al., 2000; Engsted y Bentzen, 1993; Galindo, 2005; Rao y Rao, 2009; Stern, 2000; Johansson y Schipper, 1997; Eskeland y Feyzioglu, 1994; Berndt y Botero, 1985). En este sentido se pueden incluir otros factores tanto demográficos como geográficos que influyen en la especificación de una demanda de gasolinas (Archibald y Gillingham, 1978 y 1980), así como los costos de operación o de tenencia de los autos, es decir, los costos fijos y el uso de los vehículos (Storchmann 2005; Yat y No, 2001; Houthakker et al., 1974).
+Asimismo, es necesario considerar que la elasticidad precio del consumo de gasolinas implica un ajuste que se representa en el consumo asociado a una modificación en los kilómetros recorridos, en la creación de la infraestructura vial, en el número de viajes, en un cambio de auto o de modo de transporte o simplemente de tendencia además de los costos de la congestión y del valor del tiempo (Rouwendal, 2002; Noland, 2001; Galindo et al. 2006; Hansen y Huang, 1997; Goodwin, 1996 y 1992; Kahn et al., 1983; Wheaton, 1982). También diversos estudios han tomado en cuenta el tamaño y la estructura familiar y sus diversas características socio-demográficas (Nicol, 2003; Schmalensee y Stocker, 1999).
+Por su parte, la evidencia empírica sobre la demanda de electricidad ha tenido en cuenta como base la optimización de los consumidores con respecto a los precios marginales, pero también existe evidencia de que los consumidores son mas propensos a responder a los precios medios (Shin, 1985). La demanda de electricidad depende del ingreso o el gasto del hogar, del precio de la electricidad promedio, así como variables demográficas geográficas, electrodomésticos y otros bienes que necesiten energía eléctrica e incluso condiciones de temperatura (Fell et al., 2012).
+2 La función de demanda se supone homogénea de grado cero en precios e ingreso nominal de modo que un aumento del doble de precios no cambia la demanda real (Varian, 1993).
+16
+
+De acuerdo con la literatura económica para poder explicar el comportamiento del consumidor típico Deaton y Muellbauer (1980) desarrollaron el Sistema de Demanda Casi Ideal (por sus siglas en inglés AIDS) el cual se ha convertido en el principal teoría de la demanda y ha sido empleada en numerosos estudios (Pogany, 1996). Esta ha sido usado principalmente para obtener aproximaciones de parámetros desconocidos; probar la simetría de las elasticidades precio cruzadas; probar la homogeneidad de precio cero del sistema de demanda; probar la posibilidad de separación de los productos (si las elasticidades precio cruzadas son en realidad cero entre dos productos, pertenecientes a dos presuntos grupos de mercancías); probar homoteticidad (probar si las elasticidades referentes al gasto son en realidad unitarias); probar asimismo la teoría de la demanda de acuerdo con los resultados prácticos; y calcular los cambios en los mercados en estimaciones de equilibrio general (Pogany, 1996).
+
+Para las estimaciones con micro-datos se usó la Encuesta Nacional de Ingresos y Gastos de los Hogares del 2010 y se basó en la metodología propuesta en Ruiz y Trannoy (2008) y Clerc y Marcus (2009). En consecuencia para lograr la estimación de los modelos microeconómetricos por nivel de ingreso se busco tomar la heterogeneidad del gasto del hogar de acuerdo a su estructura de consumo en diversos rubros que puede dar información relevante de su comportamiento.
+
+En la mayoría de los países los precios de los energéticos son iguales entre los hogares al tratarse de bienes homogéneos, en el caso de la gasolina se pueden identificar precios diferenciados únicamente en la frontera del país. Entonces para introducir una mayor variabilidad de los precios entre los hogares, se construyo un índice de precios de Stone (1953), P* que se puede definir como la media geométrica de los índices de precios al consumo básico, los cuales estarán ponderados por la estructura de consumo de los hogares y que es representado de la siguiente manera en logaritmos naturales:
+
+������������  (������∗) =
+
+!! !!!
+
+������!,!
+
+������������������!
+
+(10)
+
+Donde pm es el índice de precios del artículo de consumo básico m incluido dentro de los productos utilizados (j=1, …, K) y wh,m es el coeficiente del presupuesto del hogar h, es decir, es la
+
+17
+
+proporción del gasto que se destina a bien básico m en el gasto total del hogar h (Ruiz y Trannoy, 2008).
+
+En consecuencia tomando en cuenta la metodología propuesta para captar la heterogeneidad se consideraron los siguientes rubros de consumo: 1) alimentos y bebidas y tabaco, 2) vestido y calzado, 3) vivienda, agua, electricidad, gas y otros combustibles, 4) cuidados de la salud, 5) transporte, 6) educación, 7) cuidados personales, y 8) transferencias de gasto.
+
+Es importante señalar que en los hogares está presente la decisión de consumir de acuerdo a diversas características socio-demográficas donde existen variables relacionadas con aspectos como características del jefe del hogar, las familias e identificación geográfica.
+
+Basándose en el modelo de demanda de Deaton y Muellbauer (1980) que desarrollaron el sistema de demanda casi ideal (AIDS) se realizaron transformación basadas de acuerdo con Banks et al. (1997) y Pogany (1996) que fundamentalmente permiten utilizar una especificación de sistema de demanda casi ideal de una ecuación. La utilización del índice de precios de Stone (1953) permite entonces realizar estimaciones lineales de las funciones de demanda, que para la demanda del bien k del hogar h se representan de la siguiente manera:
+
+������!,! =    ������!,! +
+
+! !!!
+
+������!"
+
+  
+
+������������
+
+������!,!
+
++    ������!������������
+
+!! !∗
+
++    ������!,!
+
+(11)
+
+Donde
+
+������!,!
+
+=    !!,!
+!!
+
+es
+
+la
+
+proporción
+
+del
+
+gasto3
+
+del
+
+hogar
+
+h
+
+que
+
+destina
+
+al
+
+bien
+
+k,
+
+������!,!
+
+incluye
+
+la
+
+información de las variables socio demográficas derivadas de la heterogeneidad de los hogares,
+
+ln ������!,!   son los logaritmos naturales de los índices de precios personalizados de los K grupos de
+
+bienes bien i, Xh es el gasto total del hogar h. Con esta especificación se pueden encontrar las elasticidades ingreso, precio, precio compensado y precios cruzados4.
+
+3 Es posible que no en todos los hogares se consuma el bien que se está analizando, por ello se utiliza la participación del bien en el gasto y con ello se satisfaga las condiciones de aditividad, homogeneidad y simetría. 4 La estimación de dichas elasticidades son funciones de los coeficientes estimados de la ecuación (11), no se obtienen directamente de la estimación.
+18
+
+La estimación de la ecuación (11) presenta dos problemas econométricos (Clerc y Marcus, 2009). El primero está asociado al supuesto de la endogeneidad del consumo total, ya que los mismos factores individuales pueden explicar tanto el nivel de consumo como la estructura de consumo por producto. En este caso, una instrumentación usual es utilizar los ingresos del hogar, con el argumento de que el nivel de ingresos, principalmente determina el equilibrio entre el consumo y el ahorro, e incide en las elecciones de consumo dado el consumo total.
+En segundo lugar, algunos artículos de consumo pueden ser caracterizados por coeficientes cero en el presupuesto para algunos hogares, por varias razones. Un consumo cero puede reflejar una elección del consumidor, y en este caso, nos enfrentamos con un no-consumo. Sin embargo, el consumo observado cero también puede provenir del hecho de que el intervalo de observación de la encuesta es menor que la frecuencia de compra de la propiedad o que la propiedad se utiliza de vez en cuando. En este caso, el consumo no es un falso no consumo es más bien el resultado de un problema de muestreo.
+El método de corrección para abordar este segundo problema, consiste en el modelado en una primera etapa de la decisión de consumir utilizando características socio-demográficas de los hogares y luego se calcula la relación de interés explicando los coeficientes del presupuesto teniendo en cuenta la selección. En consecuencia se utilizó el método de estimación de dos etapas de Heckman (1979) (también conocido como Heckit) que tiene en cuenta el problema del sesgo de selección muestral, en donde la posible heteroscedasticidad de los residuales se puede corregir mediante una matriz de tipo White para la ecuación principal, además de estimar un modelo en que las variables explicativas se expresan en proporciones del presupuesto (Pollak y Wales, 1992). Ello teniendo en cuenta la posible correlación entre el término de error ui y el logaritmo natural del gasto total (Xh).
+De acuerdo con la características de los hogares se puede encontrar cierta heterogeneidad que contribuye de manera importante en la determinación del comportamiento del consumidor, la cual es agregada en las ecuaciones del modelo. Por lo tanto, se realiza la estimación de la probabilidad de consumir el bien αh,k, con un modelo de variables dependientes discretas Probit o modelos
+19
+
+lineales de probabilidad. En donde la variable dependientes es la decisión de consumir o no, que dependerá linealmente de las características socio-demográficas:
+
+������!,! =    ������!,! +    ������!! ������!
+
+(12)
+
+Donde ������!! incluye variables de tres grupos: características del jefe del hogar, composición del hogar y localización geográfica (Ruiz y Trannoy, 2008). En este sentido se incluyeron variables como la edad, género y escolaridad del jefe de familia, el número de miembros que componen el hogar, área de residencia (rural o urbana) y municipio. Para el caso de gasolinas se incluyeron el número de automóviles y motos, y para la demanda de electricidad número de habitaciones y aparatos electrodomésticos.
+
+Finalmente se utilizó una especificación reducida que incorpora los precios relativos del bien específico y el índice de precios de Stone:
+
+������!,! =    ������!,! +    ������!! ������������(������!,! − ������������������∗) +   ������!������������
+
+!! !∗
+
++    ������!,!
+
+(13)
+
+Donde ������!! denota la elasticidad precio del bien k, y ������!  es la elasticidad ingreso. Esta estimación tiene la ventaja de no producir sesgo de selección y obtener las elasticidades precio e ingreso de forma directa (Clerc y Marcus, 2009).
+
+4. Modelos de demanda macro
+Para llevar a cabo la modelación de las demandas de gasolinas y de electricidad se utilizó una función de demanda típica donde la cantidad demandada de algún bien o servicio depende del ingreso del demandante y del precio de mercado del bien o servicio en cuestión. Además de acuerdo a diversos autores como Jorgenson (1998) y Mabey et al. (1997) la demanda de combustibles tienen diversos factores que la pueden modificar y de los cuales son importantes el comportamiento del ingreso, el desempeño de los precios de los energéticos, la composición
+20
+
+estructural de la economía, las innovaciones tecnológicas y las condiciones de vida junto con los gustos y preferencias de los consumidores.
+
+De acuerdo con las condiciones generales mencionadas anteriormente, la evidencia empírica internacional de la demanda de gasolinas y de electricidad5, los modelos econométricos se especifican como el consumo del energético (������������!) el cual estará en función del ingreso (������!) buscando un efecto positivo y de los precios (������������������!) (representado por los precios relativos del energético correspondiente) con un efecto negativo:
+
+������������! = ������! + ������! ∗ ������! − ������!������������������! + ������!
+
+(14)
+
+El consumo de gasolinas y el índice de precios de la gasolina energético en México ha tenido una tendencia ascendente durante las últimas décadas como se muestra en la gráfica 1, tanto en la trayectoria como en el filtro de Hodrick y Prescott (HP) (1997) donde a partir del año 2000 la demanda se ha incrementado de forma importante pasando de menos de un millón de terajoules (TJ) hasta casi un millón y medio de TJ en el año 2010, registrando una tasa media de crecimiento de 2.9 porciento anual. La trayectoria del índice de precios de las gasolinas ha registrado un crecimiento anual de 12.29 porciento en las últimas dos décadas.
+
+5 Para las especificaciones de demanda de energéticos ver principalmente a los siguientes autores: Deaton y Muellbauer (1980); Goodwin (1992 y 1996); Soria et al. (2011); Galindo (2005); Narayan y Smyth (2005); Shiu y Lam (2004); Sonensson (2001); Asafu-Adjaye (2000); Lam (1996); Sterner y Dahl (1992).
+21
+
+Gráfica 1: Trayectorias y filtro Hodrick-Prescott (HP) (1997) del consumo e índice de
+
+precios de gasolinas de México: 1990 - 2010
+
+Consumo de gasolinas (Terajoules)
+
+Índice de precios de las gasolinas (Base 2005 =100)
+
+1,700,000 1,600,000 1,500,000 1,400,000 1,300,000 1,200,000 1,100,000 1,000,000
+900,000 800,000
+1990 1992 1994 1996 1998 2000 2002 2004 2006 2008 2010
+
+Con su mo de ga so linas
+
+Filtro HP
+
+160
+
+140
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0 1990 1992 1994 1996 1998 2000 2002 2004 2006 2008 2010
+
+Ind ice de pre cio s de las gasolinas
+
+Filtro HP
+
+TMCA: 2.91 % Nota: TMCA = tasa media de crecimiento anual. Fuente: Elaboración propia con información de OLADE y CEPAL.
+
+TMCA: 12.29 %
+
+El consumo de gasolinas en México muestra un crecimiento sostenido y, ante las escasas posibilidades de sustitución, es uno de los bienes con más susceptibilidad a ser gravados. En efecto, para el periodo 1995 – 2010, el consumo de gasolina en México aumentó en promedio 3.5%, lo que implicó un aumento superior al del PIB que creció al 2.9% para el mismo periodo. La gasolina de Magna, de menor octanaje, es el producto de mayor consumo y representó el 93% del volumen total del consumo de gasolinas
+Sin embargo, el movimiento de los precios de las gasolinas en México no reflejan los movimientos de dicho producto en los mercados internacionales, esto se debe a que dichos precios están controlados por el gobierno federal ya que son determinados por una serie de disposiciones legales y administrativas (SENER, 2010) que facultan a la Secretaría de Hacienda y Crédito Público a establecer y revisar los precios y tarifas, o bien, establecer las bases para fijarlos, tomando en consideración la postura de la Secretaría de Economía y de las dependencias correspondientes.
+Los precios de la gasolina se determinan en dos etapas:
+
+22
+
+1. En la primera se establece el precio al productor, el cual busca reflejar el precio del producto en el mercado internacional, ajustado por las diferencias en calidad y por la logística de transporte, en caso de ser necesario. El empleo los precios en el mercado internacional busca principalmente que Pemex no actúe como un monopolio completo.
+2. En la segunda etapa, se establecen los precios de venta final los cuales son fijados por el sector público.
+El primero varía dependiendo del precio spot de referencia, por lo cual el importe del IEPS puede entenderse como el diferencial entre el precio de referencia y el precio máximo al público establecido por el mercado interno (SENER, 2010). La tasa aplicada del IEPS constituye un impuesto si el precio interno está por encima del precio de referencia o un subsidio en caso contrario. La cuota fija, aprobada en 2007 por el congreso, consiste en una tarifa a la venta final al público, la cual es de 36 centavos por litro de gasolina Magna, de 43.92 centavos por litro de gasolina Premium, y de 29.88 centavos por litro de Diesel, aplicado de manera mensual en 1/18 del total para cada caso.
+Gráfica 2: Componentes del precio de la gasolina de México, 2010-2012
+
+15.00
+
+10.00
+
+5.00
+
+0.00
+
+2010
+
+2011
+
+2012
+
+2010
+
+2011
+
+2012
+
+-5.00
+MAGNA
+Fuente: elaboración propia con datos de SENER
+
+PREMIUM
+
+Precio ponderado de ingreso a Pemex Margen
+Fletes
+IVA
+IEPS
+Cuota IEPS
+
+23
+
+El subsidio a la gasolina y el diesel surge en 2006, como resultado del incremento generalizado de los precios de los energéticos a nivel mundial. Se utilizó el IEPS como herramienta. Desde 2006 se ha generado un subsidio, sólo en 2009 como consecuencia de la crisis económica mundial que propició una caída delos precios de los energéticos, el subsidio fue un impuesto.
+
+Los subsidios a la energía (electricidad, gasolina, diesel, Gas LP) equivalen a 1.5% del PIB en promedio de 2005 a 2009 (OECD, 2011). El subsidio a las gasolinas y el diesel ascendió a 168 mil 198 millones de pesos de enero a septiembre de 2012, cifra superior al monto de 51 mil 270 millones de pesos calculado para todo el año (SHCP).
+
+El comportamiento de las series del consumo y los precios de la electricidad en México de 1990 a 2010 y de acuerdo al filtro HP las trayectorias presentan una tendencia creciente, lo cual indica que la demanda por electricidad ha estado incrementándose a una tasa media anual de 3.7 porciento, además de que el incremento en las tarifas eléctricas ha sido elevado, ya que se registran tasas de crecimiento de 12.9 porciento, muy parecido al crecimiento de los precios de gasolinas.
+
+Gráfica 3: Trayectorias y filtro Hodrick-Prescott (HP) (1997) del consumo e índice de
+
+precios de electricidad de México: 1990 - 2010
+
+200,000
+
+Consumo de electricidad (Gigavatios-hora)
+
+Índice de precios de la electricidad (Base 2005 =100)
+140
+
+120 180,000
+
+100 160,000
+80
+140,000 60
+
+120,000
+
+40
+
+100,000
+
+20
+
+80,000 1990 1992 1994 1996 1998 2000 2002 2004 2006 2008 2010
+
+Consumo de electricidad
+
+Filtro HP
+
+0 1990 1992 1994 1996 1998 2000 2002 2004 2006 2008 2010
+
+Índice de precios de la electricidad
+
+Filtro HP
+
+TMCA: 3.67%
+
+TMCA: 12.91%
+
+Nota: TMCA = tasa media de crecimiento anual.
+
+Fuente: Elaboración propia con información de OLADE y CEPAL.
+
+24
+
+Las tarifas del sector eléctricos se dividen en 5 categorías principales: servicio doméstico, servicio temporal, servicio para alumbrado público, servicio para el bombeo de aguas potables o negras, servicio agrícolas y servicios generales (SENER, 2011). El monto de los cargos se establece de acuerdo al costo para cada etapa del proceso de producción de la electricidad, por medios de dos criterios (Carreón y Dardati, 2008). El primero, es la metodología de costos marginales de largo plazo, que se utiliza para las tarifas industriales. El segundo es el criterio de costos contables, que se aplica al resto de las tarifas eléctricas. Todas las tarifas eléctricas se encuentran sujetas a ajustes mensuales, con excepción de las tarifas agrícolas, que se ajustan anualmente. Para el caso de las tarifas generales se ajustan mensualmente con base en la inflación y a los precios de los combustibles fósiles empleados en la generación.
+Actualmente, en México existen más de 112 estructuras tarifarias de electricidad, las cuales dependen de distintos criterios de clasificación, principalmente, del nivel de consumo, la temporada del año, la zona geográfica del país, clima, tipo de consumidor final y tensión en que reciben el servicio y por la región en que se ubican (Sener).
+La tarifa eléctrica se compone por factores fijos y variables. Los movimientos de los precios de los combustibles fósiles utilizados en la generación de electricidad y las variaciones inflacionarias, son factores variables que se utilizan para realizar ajustes automáticos y mensuales a las tarifas eléctricas gran parte de los subsidios son dirigidos al sector residencial y agrícola, donde las tarifas eléctricas soportan solamente el 40% y el 30%, respectivamente, de los costes de generación y transmisión. La mayoría del consumo se concentra en el sector doméstico de mediano consumo con un rango entre 1 y 1.43 pesos por KWh. En promedio el subsidio por kWh del consumo doméstico es del 38%.
+Los subsidios a dichos sectores son financiados de dos formas: 1) La mayor parte, con fondos federales que se transfieren a la Comisión Federal de Electricidad (CFE) y que, a su vez, provee los subsidios a sus clientes, los consumidores finales y
+25
+
+2) con “subsidios cruzados” entre el sector industrial y comercial hacia el sector residencial y agrícola. Los sectores industrial y comercial en México soportan una de las tarifas eléctricas más altas de Latinoamérica.
+Estimaciones del CIDAC (con base en datos de la Secretaria de Energía) indican que los subsidios a la energía en México en 2010 fueron de más de 200 mil millones de pesos, en este año el precio promedio pagado por todos los usuarios residenciales no considerados de alto consumo (siendo estos últimos a los que se les aplica la denominada Tarifa DAC) fue de 0.98 pesos/kWh, mientras que los de alto consumo pagaron más de tres veces ese valor (3.18 $/KWh).
+En México estos subsidios, principalmente al consumo eléctrico y de gasolinas, están entre los más altos del mundo y sus costos van más allá de sus efectos medioambientales, globales o locales. Por un lado, los subsidios energéticos generalizados son regresivos en un sentido absoluto, al concentrarse desproporcionalmente en grupos de ingresos medios y altos. Por el otro, representan un costo significativo para el erario público, especialmente dada la capacidad fiscal históricamente limitada y las demandas sociales urgentes de gasto que tiene el país. En 2005-2010 el gasto acumulado en subsidios energéticos representó 1,150 miles de millones de pesos (mmp), equivalente a 10% del producto interno bruto (PIB) anual medio en estos años.
+La base de datos utilizada para construir el modelo econométrico de la demanda de gasolinas es información anual de la economía mexicana para el período que va 1975 a 2010. El consumo de gasolinas (������������!) y están medidos en terajoules, el ingreso corresponde al PIB en miles de pesos de 2003, como variable de precios relativos de la gasolina ������������������! se utiliza los respectivos precios al público divididos por el índice nacional de precios al consumidor. Para la demanda de electricidad, la periodicidad de los datos van 1972 a 2010. El consumo de electricidad esta en Gigavatios-horas. También, se utilizaron los precios relativos de la electricidad (������������������!) los cuales se obtuvieron considerando el índice general de los precios de las demandas de electricidad respecto al índice nacional de precios al consumidor publicados.
+La construcción del modelo econométrico de la demanda de gasolinas y electricidad, basado en la ecuación (14) se baso en las propiedades del orden de integración de las series en el marco de un
+26
+
+modelo de vectores autoregresivos (VAR) con cointegración (Engle y Granger, 1987; Johansen, 1988; Maddala y Kim, 1998). Las pruebas de raíces unitarias de Dickey Fuller Aumentada (ADF) (1981), de Phillips y Perron (1988) y de KPSS (Kwiatkowski y otros, 1992) se sintetizan en el cuadro 4. La especificación de la prueba ADF se basó en el procedimiento “de lo general a lo específico” a través de estimar en principio regresiones con constante y tendencia, verificando su significancia estadística. El número de rezagos (k) fue determinado mediante el criterio de significancia estadística de la prueba t, procedimiento que es conocido como t-sig (Ng y Perron, 1995). La especificación de los rezagos en la prueba de Phillips-Perron (1988) se basó en la estimación del ancho de banda a partir de T0.25, donde T es el número de observaciones. Por su parte, la prueba KPSS, utiliza una corrección semiparametrica de la varianza de los errores de la prueba que depende del tamaño de la muestra (Kwiatkowski y otros, 1992). Los resultados obtenidos muestran que todas las variables son no estacionarias con orden de integración I(1).
+27
+
+Cuadro 4: Pruebas de raíces unitarias
+
+ADF
+
+VARIABLE
+
+A
+
+B
+
+C
+
+PP(3)
+
+A
+
+B
+
+C
+
+KPSS (6)
+
+hµ
+
+hτ
+
+cgt
+
+-2.294 (0) -1.761 (0) 4.093 (0)
+
+-2.375 -1.725 3.777
+
+0.692 0.141
+
+Δcgt
+
+-5.631 (0) -5.522 (0) -4.238 (0)
+
+-5.628 -5.519 -4.265
+
+0.235 0.085
+
+prgt
+
+-2.581 (0) -2.475 (0) -2.275 (0)
+
+-2.663 -2.568 -2.342
+
+0.106 0.075
+
+Δprgt cet
+
+-6.902 (0) -1.263 (0)
+
+-6.961 (0) -7.191 (0)
+
+-7.048 (0) 2.307 (1)
+
+-6.955 -7.017 -1.256 -6.739
+
+-7.107 6.151
+
+0.088 0.071 0.691 0.183
+
+Δcet
+
+-5.575 (0) -3.136 (0) -1.623 (1)
+
+-5.622 -3.030 -1.370
+
+0.598 0.082
+
+pret
+
+-1.345 (0) -2.914 (0) -3.191 (0)
+
+-1.333 -2.829 -3.019
+
+0.459 0.181
+
+Δpret yt
+
+-6.363 (0) -3.067 (1)
+
+-5.412 (0) -2.916 (0)
+
+-5.239 (0) 5.594 (0)
+
+-6.364 -5.506 -2.410 -2.779
+
+-5.342 4.485
+
+0.469 0.075 0.690 0.136
+
+Δyt
+
+-4.954 (0) -4.493 (0) -3.001 (0)
+
+-4.933
+
+Notas: Los valores de las series se representan en logaritmos naturales.
+
+-4.473
+
+-2.840
+
+0.367 0.108
+
+Los valores entre paréntesis representan el número óptimo de rezagos de cada prueba.
+
+Los valores en negritas representan el rechazo de la hipótesis nula.
+
+Los valores críticos al 5% de significancia para las pruebas Dickey-Fuller Aumentada (ADF) y Phillips-Perron (PP)
+
+tomando una muestra T = 100 son: Modelo A = -3.45 (incluye constante y tendencia), Modelo B = -2.89 (incluye
+
+constante) y Modelo C = -1.95 (no incluye constante y tendencia).Fuente: Maddala y Kim (1998), pp. 64.
+
+Los valores críticos de la prueba KPSS a un nivel del 5% de significancia son: hm = 0.463 (incluye constante) y ht = 0.146 (incluye constante y tendencia). Fuente: Kwiatkowski, Phillips, Schmidt y Shin (1992).
+
+Periodo: 1972-2010
+
+Fuente: Elaboración propia
+
+Dado que las variables consideradas son series no estacionarias se procedió entonces a utilizar el procedimiento de Johansen (1988) de cointegración para estimar las relaciones de largo plazo de la demanda de gasolinas y de electricidad. Así, se especificó un modelo de vectores autorregresivos (VAR) para cada ecuación donde el número de rezagos fue seleccionado a partir de los criterios de información tomando como base las pruebas de especificación del VAR (
+
+Cuadro 5). Los resultados obtenidos muestran la presencia de relaciones de largo plazo para la demanda de gasolinas, de diesel y de electricidad.
+
+Cuadro 5: Estadístico del procedimiento de Johansen para la demanda de gasolinas y diesel
+
+Gasolina
+
+Electricidad
+
+Traza
+
+RCM
+
+Traza
+
+RCM
+
+r=0
+
+35.00*
+
+23.51*
+
+25.57*
+
+14.51
+
+r≤1
+
+11.48
+
+10.99
+
+11.06
+
+9.23
+
+r≤2
+
+0.49
+
+0.49
+
+1.83
+
+1.83
+
+Período
+
+1975-2010
+
+1973-2010
+
+Notas: (*) Indica rechazo de la hipótesis nula.
+
+r = número de vectores de cointegración.
+
+Traza = Prueba de la Traza y RCM = Prueba de la Raíz Característica Máxima.
+
+Los valores críticos para la prueba de la Traza son: r=0: 24.3, r≤1: 12.5 y r≤2: 3.8 y para la prueba RCM son: r=0:
+
+17.9, r≤1: 11.4 y r≤2: 3.8.
+
+Fuente: Elaboración propia
+
+28
+
+Las relaciones de largo plazo obtenidas de los modelos de gasolina y diesel se muestran en el Cuadro 6. La evidencia obtenida sugiere que tanto el consumo de gasolina como de electricidad son sensibles a los cambios del ingreso y de los precios relativos. En este sentido, el mecanismo de precios es un instrumento relevante para la elaboración de políticas de contención del consumo que, sin embargo, tiene un impacto relativamente menor al del crecimiento del ingreso.
+
+La elasticidad ingreso y precio, resultan similares para ambos modelos. Para el consumo de gasolinas, la elasticidad ingreso estimada es de 0.62. Esto implica que el crecimiento económico se traducirá inevitablemente en un aumento, aunque menos que proporcional, en el consumo de combustibles.
+
+Cuadro 6: Elasticidad ingreso de largo plazo de la gasolina y electricidad
+
+Gasolina
+
+Electricidad
+
+β1 β2 Período
+
+cgt 1.042 -0.479 1975-2010
+
+cet 0.927 -0.119 1973-2010
+
+Notas: Las letras en minúsculas representan los valores en logaritmos naturales.
+
+Fuente: Elaboración propia
+
+El consumo de electricidad de México está condicionado por la trayectoria del ingreso y por los precios relativos donde destaca una elasticidad menor comparado con la gasolina. Estas estimaciones son consistentes con las estimaciones reportadas en diversas investigaciones empíricas a nivel internacional, sobre la sensibilidad del consumo de electricidad a cambios en el nivel de la actividad económica y los precios (Espey y Espey, 2004). En largo plazo, la demanda de electricidad presenta una elasticidad de 0.92. La cercanía a la unidad de elasticidad ingreso se debe, en alguna medida, a las necesidades crecientes de electricidad por parte de los sectores económicos. En tanto la elasticidad precio es negativa y con un valor cercano a -0.12. Sin embargo, aumentos en los precios no desalienta el consumo de electricidad, ya que este va acompañado de la trayectoria de la economía.
+
+29
+
+Con base en la estimación de los vectores de cointegración reportados, para gasolina y electricidad, en el Cuadro 6, se construyeron los modelos de corrección de errores respectivos (Engle y Granger, 1987) sintetizados en las ecuaciones 15 y 66, donde el ECM simboliza el mecanismo de corrección de error obtenido del procedimiento de Johansen. Los resultados se presentan en el Cuadro 7. Estos modelos no muestran problemas de autocorrelación, heteroscedasticidad y los errores no rechazan la hipótesis de normalidad (Lütkepohl y Krätzig, 2004; Lütkepohl, 2005). De este modo, no existe información adicional sistemática relevante. Los modelos simulan satisfactoriamente la trayectoria histórica del consumo de gasolinas y de electricidad (Gráfica 4).
+
+Δ������������! =
+
+! !!!
+
+������! Δ������!!!
+
++
+
+! !!!
+
+������! Δ������������������!!!
+
++
+
+������������������������������!!!
+
++
+
+������!
+
+Δ������������! =
+
+! !!!
+
+������! Δ������!!!
+
++
+
+! !!!
+
+������! Δ������������������!!!
+
++
+
+������������������������������!!!
+
++
+
+������!
+
+(15) (16)
+
+Cuadro 7: Modelo de Corrección de Errores: Efectos de corto plazo
+
+Gasolina
+
+Electricidad
+
+Variable
+
+Δ cgt
+
+Δ cet
+
+Δyit
+
+0.753 (3.894)
+
+0.370 (6.274)
+
+Δyit-3 Δprit Δprit-1
+
+-0.631 (-3.251)
+
+-0.102 (-3.851) -0.084 (-3.179)
+
+Δprit-3
+
+-0.116 (-1.599)
+
+ecmit-1
+
+-0.146 (-2.971)
+
+-0.041 (-11.943)
+
+d04
+
+0.102 (3.563)
+
+d08
+
+0.141 (3.591)
+
+Período
+
+1974-2010
+
+1972-2010
+
+Pruebas de Diagnostico: R2
+
+0.708
+
+0.821
+
+J-B
+
+1.217 [0.544]
+
+2.074 (0.354)
+
+LM (2 rezagos)
+
+2.168 [0.133]
+
+2.610 (0.088)
+
+ARCH (2 rezagos)
+
+0.347 [0.709]
+
+0.659 (0.523)
+
+RMSE
+
+0.035
+
+0.012
+
+Notas: Las letras en minúsculas representan el logaritmo natural de las series.
+
+(*) Indica rechazo de la hipótesis nula.
+
+d02, d03, d04 y d08 representan variables dummy para los años 2002, 2003, 2004 y 2008 respectivamente. R2 es el coeficiente de determinación, la prueba J-B es para normalidad, la prueba LM es para autocorrelación, la
+
+prueba ARCH es para heterocedasticidad y el RMSE significa Root Mean Squared Error (Error Cuadrático Medio).
+
+La prueba J-B está basada en una distribución chi cuadrada y las pruebas LM y ARCH se basan en una distribución F.
+
+Los valores entre paréntesis de los coeficientes representan el t-estadístico y los valores en corchetes indican la
+
+probabilidad de la distribución de cada prueba.
+
+Fuente: Elaboración propia
+
+30
+
+Gráfica 4: Valores actuales, estimados y residuales de la demanda de gasolina y diesel
+
+Gasolina
+
+Electricidad
+
+.3
+.2
+.1
+.0 .08
+-.1 .04
+-.2 .00
+-.04
+-.08
+-.12 1975 1980 1985 1990 1995 2000 2005 2010
+
+Residual
+
+Actual
+
+Fitted
+
+.12
+
+.08
+
+.04
+
+.03 .00
+.02
+
+.01
+
+-.04
+
+.00
+
+-.01
+
+-.02
+
+-.03 1975 1980 1985 1990 1995 2000 2005 2010
+
+Residual
+
+Actual
+
+Fitted
+
+Fuente: Elaboración propia
+
+Los resultados encontrados sintetizados en el Cuadro 8 están acorde a la teoría económica, se encontraron elasticidades ingreso unitarias para gasolina y electricidad en el largo plazo, indicando que a mayor ingreso mayor será el consumo de estos energéticos. Las elasticidades de corto plazo son de menor magnitud comparadas con la de largo plazo, y aún de menor magnitud la elasticidad ingreso del consumo de electricidad. En el caso de las elasticidades precio se muestran acorde a la evidencia empírica (Havránek et al., 2011) se encuentran entre un rango tanto en el largo como en el corto plazos de -0.1 a -0.5 aproximadamente, cabe señalar que para el caso de México estas elasticidades son relativamente bajas, lo cual refleja la poca reacción ante cambios en los precios. Con estos resultados se puede analizar como responde la demanda agregada de la gasolina y electricidad a cambios de precios, sin embargo es importante señalar que estos resultados representan la demanda de estos bienes en todos los sectores, es decir se incluye transporte, industria y servicios y no capta la heterogeneidad que existe en la demanda de hogares.
+
+31
+
+Cuadro 8: Elasticidades de largo y corto plazo para la demanda de gasolinas y electricidad
+
+de datos agregado
+
+Largo plazo
+
+Corto plazo
+
+Elasticidad ingreso Elasticidad precio Elasticidad ingreso Elasticidad precio
+
+Gasolina
+
+1.042
+
+-0.479
+
+0.753
+
+-0.116
+
+Electricidad
+
+0.927
+
+-0.319
+
+0.307
+
+-0.186
+
+Periodo: 1975-2010.
+
+Fuente: Elaboración propia.
+
+5. Modelos de demanda por hogares
+
+En la Gráfica 5 se puede observar la composición del gasto de los hogares en quintiles conformados por nivel de ingreso de acuerdo a la ENIGH del año 20106, se dividió el gasto en nueve rubros de consumo. Se observa que conforme los hogares tienen un mayor ingreso se destina menos proporción del gasto al rubro de alimentos, y mas a otros rubros como transporte y educación. La proporción de gasto de las familias de menores ingreso de los primeros dos quintiles se destina principalmente a la compra de alimentos y bebidas y tabaco, los cuales equivalen 48 y 42 porciento respectivamente.
+Los rubros en los que los hogares destinan mayor proporción del gatos es a los rubros de alimentos, transporte y vivienda. También es importante señalar que rubros como el gasto en cuidados personales, artículos y servicios para la limpieza y cuidados para la salud tienen una proporción similar entre los grupos de ingreso en comparación con los gastos en educación, transporte, vestido y calzado y transferencias de gasto los cuales aumentan conforme mayor sea el nivel de ingreso debido a que ya se cuenta con más presupuesto que se puede reservar a esos rubros.
+
+6 Las Encuestas de Ingreso y Gasto de los Hogares tienen características referentes al diseño muestral con el que fueron elaboradas, por ello se consideraron tanto la estratificación como el factor de expansión en las estadísticas y modelación de datos micro.
+32
+
+Grafica 5: Composición del gasto promedio de hogares en grandes rubros de consumo
+
+ALIMENTOS, BEBIDAS Y
+
+V
+
+TABACO
+
+VESTIDO Y CALZADO
+
+IV
+
+VIVIENDA
+
+ARTÍCULOS Y SERVICIOS PARA LA LIMPIEZA
+III
+CUIDADOS DE LA SALUD
+
+II
+
+TRANSPORTE
+
+EDUCACIÓN
+
+I
+
+CUIDADOS PERSONALES
+
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% TRANSFERENCIAS DE GASTO
+
+Fuente: Elaboración propia con datos de la ENIGH (2010)
+
+En la Gráfica 6 se muestra el porcentaje de hogares respecto al total de hogares en ese quintil que consumen gasolina y energía eléctrica. En ambas graficas se observa una tendencia creciente, es decir a mayor ingreso más hogares consumen los bienes, sin embargo la tendencia es más marcada en la gasolina donde en el primer quintil solamente 8.3 porciento de los hogares consumen gasolina, mientras que para el cuarto y quinto quintil alcanzan 58 y 82 porciento respectivamente. Los primeros tres quintiles registran porcentajes de hogares menores al 40 porciento, por lo que se puede inferir que en su mayoría son usuarios de transporte público.
+Por otro lado en el caso de la electricidad más del 80 porciento de los hogares de los primeros tres quintiles cuentan con el servicio eléctrico, aunque es posible que en los primeros quintiles aún se encuentren rezagos en cuanto a la electrificación de los hogares y en el caso de los últimos dos quintiles más del 90 porciento usan electricidad. Estos datos son un buen indicador de que en la mayoría de los hogares encuestados por la ENIGH cuentan con dicho servicio.
+
+33
+
+Gráfica 6: Porcentaje de hogares que consumen gasolina y electricidad por quintil
+
+Gasolina
+
+Electricidad
+
+90.00% 80.00%
+
+81.69%
+
+70.00% 60.00%
+
+58.25%
+
+50.00% 40.00%
+
+39.39%
+
+30.00%
+
+23.09%
+
+20.00%
+8.31% 10.00%
+
+0.00% I
+
+II
+
+III
+
+IV
+
+V
+
+Fuente: Elaboración propia con datos de la ENIGH (2010)
+
+100.00% 90.00% 80.00%
+
+87.79% 88.53% 91.00% 93.84% 80.29%
+
+70.00%
+
+60.00%
+
+50.00%
+
+40.00%
+
+30.00%
+
+20.00%
+
+10.00%
+
+0.00% I
+
+II
+
+III
+
+IV
+
+V
+
+Al obtener las proporciones promedio de gasto destinados al consumo de gasolinas y electricidad por grupos de ingreso se puede observar que conforme aumenta el nivel de ingreso del quintil dicha proporción va disminuyendo considerablemente, ya que de 4.6 porciento que se registra en el quintil 1 desciende hasta 3.1 y 2.6 porciento en los quintiles 4 y 5 respectivamente, es decir a mayor ingreso menor es la proporción del gasto que destinan a combustibles, pero mayor es el consumo, el gasto en estos combustibles es sumamente progresivo. Es importante considerar que para este análisis se promediaron únicamente los consumos positivos, por lo que el promedio puede estar sesgado hacia arriba. La misma tendencia sucede en el caso de la electricidad donde del 3 porciento que se destina en el primer quintil cae hasta 1.35 porciento en el ultimo grupo de ingreso. Estas proporciones se deben a que conforme aumenta el nivel de ingreso los hogares diversifican mas sus gastos ya que satisfacen sus necesidades básicas y comienzan a adquirir más y mejores bienes y servicios por lo que la participación porcentual va cambiando ya sea ascendente o descendentemente de acuerdo a los rubros de gasto
+
+34
+
+Gráfica 7: Proporción promedio del gasto que se destina al consumo de gasolina y
+
+electricidad por quintil
+
+Gasolina
+
+Electricidad
+
+5.0% 4.60% 4.5%
+
+4.0% 3.5% 3.0% 2.5%
+
+3.43% 3.30% 3.13% 2.59%
+
+2.0%
+
+1.5%
+
+1.0%
+
+0.5%
+
+0.0% I
+
+II
+
+III
+
+IV
+
+V
+
+3.5% 3.0%
+
+2.98%
+
+2.5% 2.0% 1.5%
+
+2.20% 1.90% 1.76% 1.35%
+
+1.0%
+
+0.5%
+
+0.0% I
+
+II
+
+III
+
+IV
+
+V
+
+Fuente: Elaboración propia con datos de la ENIGH (2010)
+
+Con base a la información obtenida de la ENIGH 2010 se construyeron las curvas de Engel para la gasolina y la electricidad tomando en cuenta el gasto promedio del energético y el ingreso por quintil (Gráfica 8) y donde se confirma que de acuerdo a mayor sea el ingreso promedio mayor será el consumo del energético comportándose en general como un bien normal con pendiente positiva donde destaca el crecimiento extremadamente alto del gasto en estos energéticos cuando se trata del ultimo quintil en comparación con los cuatro anteriores, por ejemplo en gasolina en el quintil cuatro gastan en promedio 70 dólares al mes, mientras que en el último quintil alcanza 140 dólares al mes, es decir un incremento del 100%.
+
+35
+
+Gráfica 8: Curva de Engel de gasolina y electricidad
+
+Gasolina
+
+Electricidad
+
+Fuente: Elaboración propia con datos de la ENIGH (2010)
+La fuente de información las estimaciones de modelos de demanda de gasolina y electricidad de hogares es la Encuesta de Encuesta Nacional de Ingresos y Gastos de los Hogares, 2010. Utilizando micro-datos se ha encontrado evidencia de que factores como la localización geográfica y los grupos de ingreso generan heterogeneidades importantes en la elasticidades precio de la gasolina y electricidad (Archibald y Gillingham, 1980, Greening et al., 1995, Nicol, 2003, Kayser, 2000, West, 2004, Wadud et al., 2009, Wadud et al., 2010, Nesbakke, 1999 y Fernández 2006).
+La muestra se dividió en quintiles de acuerdo a la variable de gasto total. En el anexo se presenta las estadísticas de las variables utilizadas en la primera etapa de los modelos, relacionadas con el jefe del hogar, las características de los hogares y variables geográficas.
+Los resultados de los modelos microeconométricos estimados para México con el método de dos etapas de Heckman (1979) de la ecuación (13) se presentan en el Cuadro 9, señalan que al considerar la muestra total de todos los hogares para la gasolina existe una elasticidad ingreso unitario y la elasticidad precio es baja pero acorde con la evidencia empírica presentada a nivel agregado. En el caso de las estimaciones a nivel quintil se puede observar que en los tres primeros los efectos del ingreso son superiores a la unidad por lo que ante variaciones en los presupuestos de los hogares tenderá a incrementar la demanda por combustibles.
+36
+
+Los resultados de las elasticidades precio van disminuyendo conforme el nivel de ingreso es mayor ya que nuevamente en los tres primeros quintiles los efectos son muy sensibles principalmente en el quintil 1 donde la elasticidad es de -0.88 aproximadamente. En los últimos dos quintiles el impacto de las modificaciones en los precios tendrán efectos menores ya que se registran valores de -0.28 y -0.03 porciento respectivamente Para la demanda de electricidad en la regresión general el coeficiente del ingreso es alto siendo bastante elástico, pero los resultados por grupo de ingreso señalan que ésta no presenta un patrón consistente siendo en el quintil cuatro dónde se tiene la mayor elasticidad. Las elasticidades precio en cambio muestran resultados bastante heterogéneos por quintil ya que en los quintiles 1 y 3 indican coeficientes estimados más sensibles ante variaciones en comparación con el último quintil que registra un coeficiente estimado de -0.85, en este caso el efecto que se podría dar en la demanda de energía eléctrica ante variaciones en el precio es prácticamente nulo.
+37
+
+Cuadro 9: Elasticidades de demanda de gasolinas y electricidad por quintil
+
+General
+
+Quintil 1
+
+Quintil 2
+
+Quintil 3
+
+Quintil 4
+
+Quintil 5
+
+Gasolina
+
+������������ ������������ Núm. Obs.
+
+1.125 (12.64) -0.236 (-11.14)
+27,050
+
+1.441 (1.66) -0.882 (-9.56)
+7,632
+
+1.887 (2.38) -0.456 (-4.05)
+5,707
+
+1.510 (1.16) -0.525 (-5.99)
+4,785
+
+0.629 (1.58) -0.287 (-3.73)
+4,546
+
+0.747 (4.19) -0.034 (-0.72)
+4,380
+
+Tam. Pobl.
+������������ ������������ Núm. Obs.
+
+112,686,102
+1.825 (22.78) -0.544 (-13.26)
+26,446
+
+22,496,920
+0.452 (6.55) -0.863 (-8.40)
+7,632
+
+22,553,066 Electricidad 0.197 (4.12) -0.379 (-8.48)
+5,707
+
+22,541,244
+0.244 (2.50) -0.496 (-4.01)
+4,785
+
+22,549,793
+0.623 (25.16) -0.110 (-3.38)
+4,541
+
+22,545,079
+0.416 (19.37) -0.085 (-2.56)
+4,378
+
+Tam. Pobl.
+
+111,197,426 22,496,920 22,553,066 22,541,244
+
+225,329 22,536,341
+
+Notas: Las letras en minúsculas representan el logaritmo natural de las series. Los valores entre paréntesis de los coeficientes representan el t-estadístico.
+
+Fuente: Elaboración propia
+
+Los resultados de las elasticidades ingreso y precio encontrados mediante las estimaciones de los modelos microeconométricos se presentan en la Gráfica 8, en donde se observa que en el caso de los combustibles ,las elasticidades para los primeros dos quintiles es ascendente lo que indica que las familias de menso recursos son muy sensibles cuando pasan por modificaciones tanto en su ingreso como en los precios de mercado de los combustibles. Posteriormente en los últimos tres quintiles se puede apreciar que debido a la distribución del gasto en esas familias en otros rubros los impactos en las variaciones de presupuesto familiar y en precios se vuelven cada vez más inelásticos.
+
+Por otro lado en el caso del consumo de la energía eléctrica las elasticidades precio de los primeros quintiles están por debajo de 0.5 para después subir en el cuarto quintil lo cual puede ser a causa que familias de clase media gasten buena parte de su ingreso en la adquisición de bienes y servicios, principalmente en la vivienda lo cual puede ser una causa de aumento en el consumo eléctrico. En cambio en el caso de los precios nuevamente se nota la sensibilidad ante variaciones cuando se trata de los primeros tres niveles de ingreso y posteriormente en grupos de ingreso más altos las variaciones en las tarifas eléctricas no tienen efectos significativos ya que se ubican alrededor de -0.1 porciento.
+
+38
+
+Gráfica 8: Elasticidad precio e ingreso de la gasolina y electricidad de hogares por grupo de ingreso, 2010
+Gasolinas
+
+Elasticidad Ingreso
+
+2 1.8 1.6 1.4 1.2
+1 0.8 0.6 0.4 0.2
+0 I
+
+0
+
+-0.1
+
+-0.2
+
+-0.3
+
+-0.4
+
+-0.5
+
+-0.6
+
+-0.7
+
+-0.8
+
+-0.9
+
+-1
+
+II
+
+III
+
+IV
+
+V
+
+Elasticidad Precio
+
+Ingreso Precio
+
+Electricidad
+
+Elasticidad Ingreso
+
+0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 I
+
+0
+
+-0.1
+
+-0.2
+
+-0.3
+
+-0.4
+
+-0.5
+
+-0.6
+
+-0.7
+
+-0.8
+
+-0.9
+
+-1
+
+II
+
+III
+
+IV
+
+V
+
+Elasticidad Precio
+
+Ingreso Precio
+
+Fuente: Elaboración propia en base a las estimaciones microeconométricas realizadas con información de la ENIGH, 2010.
+
+39
+
+6. Conclusiones
+El consumo de gasolinas y el consumo eléctrico en México muestran un ritmo de crecimiento sostenido y donde para algunos años, como consecuencia del mecanismo de fijación de precios, se le acompaña con subsidios fiscales substanciales. En este sentido, el sector eléctrico puede tener problemas de generación y distribución para los siguientes años, debido al uso intensivo y al problema de cambio en el hábito de los consumidores y productores hacia tecnología más eficiente debido a los costos derivados de esto, por lo que el cambio será lento adecuándose al comportamiento del ingreso y de los precios.
+La mayoría de estudios que estiman las elasticidades precio de combustibles y electricidad se realizan con datos agregados ya sea a nivel nacional o regional, en los que se emplean diversas técnicas y especificaciones de modelos. Estos resultados son útiles para comprender el impacto agregado de la demanda por un cambio en precios, pero no reflejan la heterogeneidad en la sensibilidad del precio entre diferentes grupos de ingreso. Utilizando micro-datos se ha encontrado evidencia de que factores como la localización geográfica (Archibald y Gillingham, 1980; Greening et al., 1995; Nicol, 2003) y los grupos de ingreso (Kayser, 2000; West, 2004; Wadud et al., 2009; Wadud et al., 2010) generan heterogeneidades importantes en las elasticidades precio de la gasolina.
+Al disponer de información de micro-datos se puede analizar la demanda de gasolinas como una demanda que depende de las necesidades de transportar bienes y de la satisfacción de las necesidades básicamente de tiempo, placer, status, entre otras, y que están restringidos de una manera importante por sus presupuestos y por las formas y necesidades para transportarse de los agentes económicos (Somensson, 2001; Sterner y Dahl, 1992; Berkowitz et al., 1990). En la literatura los resultados no son concluyentes respecto a la dirección de las elasticidades precio de gasolina y energía eléctrica por grupos de ingreso. Es posible que ello sea resultado de la heterogeneidad de estructuras económicas y de los niveles de desigualdad que inciden en los patrones de consumo, los cuales son muy diferentes de país a país y en dónde inciden variables no sólo de ingreso sino también de ubicación geográfica (por ejemplo el uso de energía para sistemas de calefacción), culturales y de nivel de desarrollo tecnológico. De acuerdo a los resultados de la
+40
+
+evidencia internacional, la elasticidad precio se encuentra en un rango de 0 a -0.72, con un promedio de -.407 y desviación estándar de .20. La mayoría de los estudios se han realizado en Estados Unidos. El promedio de la elasticidad precio de la electricidad fue de -0.47 ligeramente mayor que la de la gasolina, con una desviación estándar de 0.45, y en un rango de valores de 0.05 y -2.62, el cual es más amplio comparado con el de la gasolina.
+Los resultados de las encuestas de ingresos y gastos por hogares indican que en las familias que corresponden a los tres primeros quintiles y que cuentan con niveles de ingreso bajo destinan una buena parte de su gasto en alimentos y bebidas ya que buscan satisfacer antes que nada estas necesidades y posteriormente gastan su ingreso en rubros como bebidas alcohólicas y tabaco, vivienda, agua, electricidad y gas, comunicaciones, transporte y bienes y servicios diversos que su proporción va disminuyendo conforme se avanza a un nivel de ingreso.
+Las estimaciones realizadas y disponibles muestran que la demanda de gasolinas y electricidad son sensibles al ingreso y menos sensibles a los precios. Al comparar los resultados de las elasticidades a nivel agregado con las estimaciones a nivel microeconómico se puede observar en las ecuaciones generales las elasticidades ingreso son cercanas a la unidad.
+Los resultados de las estimaciones de la elasticidad indican que existe una diferencia sustancial entre las estimaciones obtenidas cuando los hogares se diferencian por el nivel de ingresos. Los hogares más pobres tienden a tener una mayor elasticidad de los ingresos, lo que sugiere un nivel de ingresos apenas capaz de sostener las necesidades básicas de la familia. Del mismo modo, las elasticidades precio son generalmente mayores para los hogares más pobres, probablemente debido a las restricciones presupuestarias más estrictas. Para los hogares más ricos, la respuesta a los cambios en los precios tiende a desvanecerse.
+Los resultados del consumo de electricidad confirman el comportamiento de las familias conforme aumenta su poder adquisitivo como se ve en la marcada trayectoria de las elasticidades ingreso; además en el caso de las elasticidades precio de este energético son menores a -0.5 y se vuelven casi cero cuando el nivel de ingreso es mayor por lo que variaciones en las tarifas tienen efectos
+41
+
+bajos sobre la demanda de electricidad para lo cual la política de aumento de precios para controlar el consumo no puede tener los resultados que se esperan. Ante el escenario actual de precios de energéticos elevados y altos subsidios a las gasolinas sería importante analizar la conveniencia de otorgar beneficios dirigidos a la población de menores ingresos, mismos que podrían destinarse mediante subsidios al transporte público en lugar de seguir con un subsidio costoso que beneficia en mayor medida a los hogares con mayor ingreso. Para poder disminuir los impactos presupuestales de las familias con referencia a su gasto en combustibles, además de disminuir los impactos ambientales derivados de usos excesivo de los energéticos, es importante analizar, plantear, evaluar y llevar a cabo diversas políticas tanto económicas, energéticas y como fiscales que sean acorde con la situación económica y energética. La reforma fiscal debe buscar captar mayores ingresos que sean destinados a programas sociales que favorezcan a las familias con escasos recursos y asimismo debe haber un cambio en el uso de la energía mediante la aplicación de políticas energéticas que modernicen los sectores económicos, generando energéticos más limpios, el establecimiento adecuado de los precios así como la planeación y realización de metas energéticas y crear bienes de capital que sean más eficientes en el uso de la energía, entre otros.
+42
+
+7. Bibliografía.
+Aasness, J. y Holtsmark (1993), “Consumer demand in a general equilibrium model for environmental analysis”, Discussion Papers num. 105, Statistics Norway.
+Acuña, H. (2008), “¿Cambia el consumo eléctrico de los hogares cuando cambia el precio? Sugerencias para el diseño de un subsidio”, Documento de Trabajo núm. 2, Departamento de Estudios División Social, Ministerio de Planificación, Chile.
+Agostini, C., M.C. Plottier y E.H. Saavedra (2012), Demanda residencial de energía eléctrica en Chile, Banco Central de Chile.
+Alberini, A., W. Gans y D. Velez-Lopez (2011), “Residential consumption of gas and electricity in the U.S.: The role of prices and income”, Energy Economics, 33, pp. 870-881.
+Archibald, R. y R. Gillingham (1978), “A decomposition of the price and income elasticities of the consumer demand for gasoline”, Southern Economic Journal, 47(4), pp. 1021-1031.
+Archibald, R. y R. Gillingham (1980), “An analysis of the short-run consumer demand for gasoline using household survey data”, The Review of Economics and Statistics, 62(4), pp. 622-628.
+Asafu-Adjaye, J. (2000), “The relationship between energy consumption, energy prices and economic growth: Time series evidence from Asian developing countries”, Energy Economics, 22, pp. 615625.
+Banks, J., R. Blundell y A. Lewbel (1997), "Quadratic Engel curves and consumer demand", Review of Economic and Statistics, 79(4), pp. 527-539.
+Bento, A., L. Goulder, M. Jacobsen y R. von Haefen (2009), “Distributional and efficiency impacts of increased US gasoline taxes”, American Economic Review, 99(3), pp.667-699.
+Berkowitz, M.K., N.T. Gallini, E.J. Miller y R.A. Wolfe (1990), “Disaggregate analysis of the demand for gasoline”, Canadian Journal of Economics, 23(2), Mayo, pp. 253-275.
+Bernedt, E.R. y G. Botero (1985), “Energy demand in the transportation sector of Mexico”, Journal of Development Economics, 17, pp. 219-238.
+Caballero, K. (2011), “Finanzas públicas y cambio climático en México”, PNUD, México. Christodoulakis, N. M., S. C. Kalyvinis, D.P. Lalas, y S. Pesmajoglou (2000), "Forecasting energy
+consumption and energy related CO2 emissions in Greece: An evaluation of the consequences of the community support framework II and natural gas penetration", Energy Economics, 22, pp. 395422. Clerc, M. y V. Markus (2009), “Élasticités-prix des consommations énergétiques des ménages”, Document de Travail G2009/08, Direction des Études et Synthèses Économiques, Institut National de la Statistique et des Études Économiques, France.
+43
+
+Costanza, R. (1980), “Embodied energy and economic valuation”, Science, 210, pp. 1219-1224. Dahl, C.A. (2012), “Measuring global gasoline and diesel price and income elasticities”, Energy Policy, 41,
+pp. 2-13. Dahl. C.A. y T. Sterner (1991), “Analysing gasoline demand elasticities: A survey”, Energy Economics,
+13, pp. 203-210. Daugbjerg, C. y G.T. Svendsen (2003) "Designing green taxes in a political context: from optimal to
+feasible environmental regulation", Environmental Politics: 12. Davidson, J.E.H., D.F. Hendry, F. Srba y S. Yeo (1978), “Econometric modeling of the aggregate time
+series relationship between consumer´s expenditure and income in the United Kingdom”, Economic Journal, 88, pp. 661-692. Deaton, A. y J. Muellbauer (1980), Economics and consumer behavior, Cambridge University Press. Dickey, D.A. y W.A. Fuller (1981), "Likelihood ratio statistics for autoregressive time series with a unit root", Econometrica, 49, pp. 1057-1072. Dresner, S. y P. Ekins (2004), “The Distributional Impacts of Economic Instruments to Limit Greenhouse Gas Emissions from Transport”, PSI Working Paper, Policy Studies Institute, London. Dubin, J.A., D.L. McFadden (1984), “An econometric analysis of residential electric appliance holdings and consumption”, Econometrica, 52(2), pp. 345-362. Eltony, M. (1993), “Transport gasoline demand in Canada” Journal of Transport Economics and Policy,
+27, pp. 193-208. Engle, R.F. y C.W.J. Granger (1987), "Cointegration and error correction: representation, estimation and
+testing", Econometrica, 55, pp. 251-276. Engsted, T. y J. Bentzen (1993). "Expectations, adjustment costs and energy demand", Resource and
+Energy Economics, 15(4), Diciembre, pp. 371-385. Eskeland, G.S. y T.N. Feyzioglu (1997), “Is demand for polluting goods manageable: An econometric
+study of car ownership and use in Mexico", Working Papers, World Bank, Washington, D.C. Espey, J.A. y M. Espey (2004), “Turning on the lights: A meta-analysis of residential electricity demand
+elasticities”, Journal of Agricultural and Applied Economics, 36(1), pp. 65-81. Fan, S. y R. Hyndman (2010), “The price elasticity of electricity demand in South Australia”, Working
+Paper, Department of Econometrics and Business Statistics, Monash University, pp. 10-16 Fell, H. et al. (2012), “Soft and Hard Price Collars in a Cap-and-Trade System: A Comparative Analysis”,
+Journal of Environmental Economics and Management. Fell, H., S. Li y A. Paul (2012), “A new look at residential electricity demand using household expenditure
+data”, Working Paper 2012-4, Division of Economics and Business, Colorado School of Mines.
+44
+
+Fernández, L. (2006), “Análisis microeconométrico de la demanda eléctrica residencial de corto plazo en España”, Documento de trabajo, Universidad de Barcelona.
+Fillippini M., S. Pachauri (2002), “Elasticities of electricity demand in urban Indian households, Working Paper 16, CEPE.
+Gago, A., Labandeira, X. y M. Rodríguez (2001), “Imposición Ambiental y Reforma Fiscal Verde: tendencias recientes y análisis de propuestas”, Seminario de Economía Pública, Instituto de Estudios Fiscales, España, Marzo.
+Galindo L.M., R. Heres y L. Sánchez (2006), “El tráfico inducido en México: Contribuciones al debate e implicaciones de política pública”, Estudios Demográficos y Urbanos, 21(1), pp. 123-157.
+Galindo, L.M. (2005), “Short- and long run demand for energy in México: A cointegration approach”, Energy Policy, 33, pp. 1179-1185.
+Goodwin, P.B. (1992), "A review of new demand elasticities with special reference to short and long run effects on price changes", Journal of Transport Economics and Policy, 25(2), pp. 155-169.
+Goodwin, P.B. (1996), “Empirical evidence on induced traffic: A review and synthesis”, Transportation, 23, pp. 35-54.
+Granger, C.W.J. y A.A. Weiss (1983), “Time series analysis of error correction models”, en S. Karlin et al. (eds.), Studies in Econometrics, Time Series and Multivariate Analysis, New York Academic Press, pp. 225-278.
+Greene, D. y P. Hu (1986), “A functional form analysis of the short-run demand for travel and gasoline by one-vehicle households”, Transportation Research Record, 1092, Transportation Research Board, National Research Council, Washington, D.C.
+Greening, L.A., H.T. Jeng, J.P. Formby y D.C. Cheng (1995), “Use of region, life-cycle and role variable in the short-run estimation of the demand for gasoline and miles travelled”, Applied Economics, 27, pp. 643-656.
+Gundimeda H. y G. Köhlin (2008), “Fuel demand elasticities for energy and environmental policies: Indian sample survey evidence”, Energy Economics, 30, pp. 517–546.
+Hall, C.A.S., C.J. Cleveland y R.K. Kaufmann (1986), Energy and resource quality: The ecology of the economic process, Wiley Interscience, New York.
+Hansen, M. e Y. Huang (1997), “Road supply and traffic in California urban areas”, Transportation Research A, 31, pp. 205-218.
+Havránek, T., Z. Iršová y K. Janda (2011), “Demand for gasoline is more price-inelastic than commonly thought”, IES Working Paper: 10/2011, IES FSV, Charles University.
+Heckman, J.J. (1979), “Sample selection bias as a specification error”, Econometrica, 47, pp. 153-161.
+45
+
+Hodrick, R.J. y E.C. Prescott (1997), “Postwar US business cycles: An empirical investigation”, Journal of Money, Credit and Banking, 29(1), pp. 1-16.
+Houthakker H. S., P. K. Verleger y D. P. Sheenan (1974), “Dynamic demand analyses for gasoline and residential electricity”, American Journal of Agricultural Economics, 56, Mayo, pp. 412-418.
+Johansen, S. (1988), "Statistical analysis of cointegration vectors", Journal of Economic Dynamics and Control, 12, pp. 231-254.
+Johansen, S. (1992), “Determination of the cointegration rank in the presence of a linear trend”, Oxford Bulletin of Economics and Statistics, 54, pp. 383-397.
+Johansen, S. (1995), Likelihood Based Inference on Cointegration in the Vector Autoregressive Model, Oxford University Press, Oxford.
+Johansson, O. y L. Schipper (1997), “Measuring the long-run fuel demand of cars”, Journal of Transport Economics and Policy, Septiembre, pp. 277-293.
+Johnston, J. y J. Dinardo (2001), Métodos de Econometría, Ediciones Vicens Vives, España. Johnstone N. y J. Alavalapati (1998), “The distributional effects of environmental tax reform”,
+Environmental Economics Programme, IIED, London, DP 98-01, October. Jorgenson, D. W. y P.J. Wilcoxen (1993), “Energy, the environment and economic growth”, en A. Kneese
+y J. Sweeney, J. (eds.), Handbook of Natural Resource and Energy Economics, Vol. III, pp. 1267-1349. Jorgenson, D.W. (1998), Growth. Energy: The environment and economic growth, vol. 2, MIT Press. Kahn, D., J.L. Deneubourg y A. de Palma (1983), “Transportation mode choice and city-suburban public transportation service”, Transportation Research Part B: Methodological, 17(1), pp. 25-43. Kayser H. A., (2000), “Gasoline demand and car choice: estimating gasoline demand using household
+information”, Energy Economics, 22, pp. 331-348 Kwiatkowski, D., P.C.B. Phillips, P. Schmidt e Y. Shin (1992), "Testing the null hypothesis of stationary
+against the alternative of a unit root", Journal of Econometrics, 1, pp. 159-178. Mabey, N., S. Hall, C. Smith y S. Gupta (1997), Argument in the greenhouse. The international
+economics of controlling global warming, Routledge. Maddala, G.S. e I. Kim (1998), Unit roots, cointegration and structural change, Cambridge University
+Press. Madlener, R., R. Bernstein y M.A.A. González (2011) “Econometric estimation of energy demand
+elasticities”, Energy Research Center Series, 3(8). Manzan, S. y D. Zerom (2010), “A semiparametric analysis of gasoline demand in the US: Reexamining
+the impact of price”, Econometric Reviews, 29(4), pp. 439-468.
+46
+
+Narayan, P.K. y R. Smyth (2005), “Electricity consumption, employment and real income in Australia evidence from multivariate Granger causality test”, Energy Policy, 33(9), pp. 1109-1116.
+Nesbakken, R. (1999), “Price sensitivity of residential energy consumption in Norway”, Energy Economics, 21, pp. 493-515
+Nicol, C.J. (2003), “Elasticities of demand for gasoline in Canada and the United States”, Energy Economics, 23, pp. 201-214.
+Noland, R.B. (2001), “Relationships between highway capacity and induced vehicle travel”, Transportation Research, 35(2), pp. 47-72.
+Phillips, P.C.B. y P. Perron (1988), “Testing for unit roots in time series regression”, Biometrika, 75, pp. 335-346.
+Pogany, P. (1996), “The almost ideal demand system and its application in general equilibrium calculations”, Working Paper 96-05-A, Office of Economics, U.S. International Trade Commission, Washington, U.S.A.
+Pollak, R.A. y T.J. Wales (1992), Demand system specification and estimation, Oxford University Press. Puller, S. y L. Greening (1999), “Household adjustment to gasoline price change: An analysis using nine
+years of U.S. survey data”, Energy Economics, 21(1), pp.37-52. Rao, B y G. Rao (2009), “Cointegration and the demand of gasoline”, Energy Policy, 37, pp. 3978-3983. Reiss, P.C. y M.W. White (2009), “Household electricity demand, revisited”, Review of Economic Studies,
+72(3), pp. 853-883 Rouwendal, J. (2002), “Speed choice, car following theory and congestion tolling”, Working Paper num.
+02-102/3, Tinbergen Institute Discussion Papers, Tinbergen Institute. Ruiz N. y A. Trannoy (2008), “Le caractère régressif des taxes indirectes: Les enseignements d’un modèle
+de micro-simulation”, Économie et Statistique, 413, pp. 21-46. Sagan, J.D. (1964), “Wages and prices in the United Kingdom: A study in econometric methodology” en
+P.E. Hart et al. (ed.), Analysis for national economic planning, Butterworths, pp. 275-314. Schmalensee R & T. M. Stoker, (1999), "Household Gasoline Demand in the United
+States”, Econometrica, Econometric Society, 67(3), May. Secretaria de Energia (SENER) http://www.sener.gob.mx/ Shin, J. (1985), “Perception of price when price information is costly: Evidence from residential electricity
+demand”, Review of Economics and Statistics, 67, pp. 591–598. Shiu, A. y P. Lam (2004), “Electricity consumption and economic growth in China”, Energy Policy, 32, pp.
+47-54. Sims, C.A. (1980), “Macroeconomics and reality”, Econometrica, 48, pp. 1-48.
+47
+
+Sonensson, T. (2001), “Inter-urban travel demand elasticities with emphasis on trip generation and destination substitution”, Journal of Transport Economics and Policy, 35(2), Mayo, pp. 301-326.
+Soria, E., J.R. Rodríguez, J. Hernández y S. Rebollar (2011), “Consumo de energía eléctrica para uso doméstico en San Juan del Río, Querétaro”, Análisis Económico, 61(26).
+Stern, D.I. (2000), “A multivariate cointegration analysis of the role of energy in the US macroeconomy”, Energy Economics, 22, pp. 267-283.
+Sterner T. y C.A. Dahl (1992), “Modeling transport fuel demand”, International Energy Modelling, Chapman and Hall, Edited by Thomas Sterner, pp. 65-79.
+Stone, J.R. (1953), The measurement of consumer’s expenditure and behavior in the United Kingdom, 1920-1938, Vol. 1, Cambridge.
+Storchmann, K. (2005), “Long-run gasoline demand for passenger cars: The role of income distribution”, Energy Economics, 27, pp. 25-58.
+Varian, H.R. (1993), Análisis microeconómico, 3ª edición, Antoni Bosch editor, España. Wadud, Z., D. Graham y R.B. Noland (2009), “Modeling fuel demand for different socio economic
+groups”, Applied Energy, 86(12), pp. 2740- 2749. Wadud, Z., D. Graham y R.B. Noland (2010), “Gasoline demand with heterogeneity in household
+responses”, Energy Journal, 31(1), pp. 47-74 West, S. E. (2004), “Distributional effects of alternative vehicle pollution control policies”, Journal of
+Public Economics, 88, pp. 735-757. West, S.E. y R.C. Williams III (2004), “Estimates from a consumer demand system: Implications for the
+incidence of environmental taxes”, Journal of Environment Economics and Management, 47, pp.535–58. Yat, C.A. y J.A. No (2001), “Household gasoline demand in Canada”, Econometrica, 69, Noviembre, pp. 1697-1709.
+48
+
+Anexo 1: descripción de las ENIGH de México
+La ENIGH de México
+El 25 de enero de 1983 se creó, por decreto presidencial, el Instituto Nacional de Estadística, Geografía e Informática (INEGI), la información estadística que produce el INEGI y que pone a disposición del Estado y la sociedad, contribuye al desarrollo del país. En este contexto, en 1984 se lleva a cabo la primer ENIGH (Encuesta Nacional de Ingresos y Gastos de los Hogares) la cual tiene como objetivo dar respuesta a los usuarios con interés particular en el estudio de microdatos, permitiendo un análisis más detallado del monto, la estructura y la distribución de los ingresos de los hogares y del destino de los gastos del hogar en bienes de consumo duradero y no duradero. También se obtiene información sobre la infraestructura de las viviendas, la composición familiar de los hogares, así como de la actividad económica de cada uno de sus integrantes.
+La encuesta, se levanta regularmente desde 1992 bajo un mismo esquema metodológico y conceptual, lo que permite comparar sus resultados, y si bien se han ido introduciendo mejoras en los instrumentos de captación, éstas no impiden realizar el análisis de los cambios ocurridos en el tiempo.
+El INEGI levantó la ENIGH 2010, del 21 de agosto al 28 de noviembre 2010, recabando la información durante siete días consecutivos mediante la visita a cada uno de los hogares seleccionados en la muestra, con el fin de proporcionar información acerca del nivel y estructura de los ingresos y los gastos en los hogares mexicanos.
+La base de datos de la ENIGH 2010, está conformada por 15 tablas de datos normalizadas en las que se distribuye la información obtenida de la encuesta de acuerdo con los temas más usados para realizar análisis y tabulados.
+49
+
+Tabla Hogares Gastodiario Gastos Gastocosto Gastorecibo
+Gastotarjetas
+Erogaciones
+Nomonetario
+Concentrado Población
+
+Contenido
+Características de los hogares y de las viviendas que habitan. Identificación de los gastos diarios que realizan cada uno de los integrantes del hogar y el hogar en su conjunto, en alimentos, bebidas, tabaco y transporte público durante el periodo de referencia. Identificación del tipo de gasto que realiza el hogar. Además, identifica los gastos que realizó el hogar en artículos y servicios para su consumo final y privado durante el periodo de referencia, así como los gastos en regalos que los integrantes del hogar hicieron a otras personas. Costo de los artículos que fueron comprados en abonos, a un particular o establecimiento comercial, durante el periodo de referencia. Identificación de los gastos del último recibo que fue pagado por el hogar en los últimos 12 meses en aquellos bienes y servicios que se pagan mediante recibos (como los gastos en vivienda). Identificación de en qué medida los hogares se auxilian del financiamiento que les ofrece la tarjeta de crédito bancaria o comercial para cubrir algunas necesidades básicas. Identifica si el hogar contó o no con alguna tarjeta de crédito bancaria o comercial como fuente financiadora para abastecerse de artículos y servicios, para cubrir algunas necesidades básicas. Identificación de las erogaciones financieras y de capital realizadas por hogar. Identifica los desembolsos que realizaron los integrantes del hogar en adquisición de bienes que representaron una modificación a su patrimonio familiar. Identificación de los ingresos (gastos) por hogar y por integrante del hogar en bienes y servicios obtenidos, realizando un pago parcial o sin realizar pago alguno. Para los registros que corresponden a remuneraciones en especie y transferencias en especie en algunos casos se encuentra información tanto del gasto realizado como del apoyo obtenido. Registra el resumen concentrado por hogar, de ingresos y gastos en toda modalidad posible. Además todos los ingresos y gastos registrados en esta tabla son trimestrales. Esta tabla proviene de la tabla origen HOGARES. Identifica las características sociodemográficas de los integrantes del hogar; y el acceso a las instituciones de salud que tienen los integrantes del hogar.
+
+No. variables
+168 11 11 14 11
+6
+16
+18
+135 155
+
+50
+
+Tabla Ingresos Trabajos Agro Noagro Gastoeduca
+
+Contenido
+Esta tabla permite identificar los ingresos y percepciones financieras y de capital de cada uno de los integrantes del hogar, por diversos conceptos. Identifica los ingresos monetarios obtenidos por cada uno de los integrantes del hogar durante el periodo de referencia. Condición de actividad de los integrantes del hogar de 12 o más años y algunas características ocupacionales durante el periodo de referencia. Identifica a los integrantes del hogar de 12 o más años que trabajaron en el mes de referencia, al igual que el tipo de actividad económica realizada y las prestaciones sociales que se derivan del tipo de actividad que realizan. Esta tabla muestra la información de los trabajadores independientes mayores de 12 años que tienen en el hogar negocios dedicados a las actividades agrícolas, forestales y de tala, además de actividades de cría, explotación y productos derivados de la pesca y caza. Identifica los ingresos y gastos de dichos negocios, independientemente de que sean monetarios y/o en especie, así como algunas características de los trabajadores y socios del negocio. Esta tabla muestra a los trabajadores independientes mayores de 12 años que tienen negocios en el hogar dedicados a las actividades industriales, comerciales y de servicios. Identifica los ingresos y los gastos dentro del periodo de referencia independientemente de que sean monetarios y/o en especie, así como algunas características de los trabajadores y socios del negocio. Esta tabla permite identificar los gastos realizados por cada integrante del hogar en educación. Identifica los gastos en artículos y servicios de educación que realizó el hogar por cada uno de sus integrantes de 3 o más años en educación básica, media o superior y/o educación técnica.
+
+No. variables
+17 52
+45
+60 10
+
+Anexo 2: Datos Survey
+A través del análisis de tipo survey se realizaron las estimaciones econométrica y las estadísticas de las ENIGH’s, las cuales proporcionan un panorama estadístico del comportamiento del ingreso y gasto de los hogares en cuanto a su monto, procedencia y distribución.
+Los datos survey son un conjunto de órdenes específicamente creadas para trabajar con datos de muestras complejas (Escobar, et al (2012). Para que la muestra sea representativa, se utiliza un
+51
+
+factor de expansión, así, cada encuesta será ponderada por el factor que le corresponda [w=expr], de lo contrario los resultados no serán representativos. La especificación del peso apropiado es importante para obtener el error estándar correcto. Estos pueden ser interpretados como el número de unidades de población representados por que esta observación particular. Un gran número de comandos de STATA se dedican a la utilización de los datos de la encuesta. Esto simplifica enormemente el trabajo de los estadísticos, que sólo tiene que indicar diseño de la encuesta una vez; STATA entonces se encarga de las modificaciones pertinentes a las fórmulas más comunes. Una lista de los comandos de STATA encuesta se puede acceder fácilmente al escribir "La encuesta de ayuda". Particular atención debe darse a los pesos (o el "factor de expansión"). STATA permite cuatro tipos diferentes de pesos (frecuencia, probabilidad, pesos analíticos e importancia). Especificación del peso apropiado es importante para obtener el error estándar correcto. La mayoría de las encuestas de uso de probabilidad (o muestreo) pesos (pweight). Estos pueden ser interpretados como el número de unidades de población representados por que la observación particular (World Trade Organization and the United Nations (2012)).
+52
+
+

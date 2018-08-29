@@ -1,0 +1,947 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA UN MODELO DE UTILIDAD
+INTERTEMPORAL SOBRE UN AGENTE CON INFORMACIÓN LIMITADA
+ARTURO VERA MORENO
+PROMOCIÓN 2012-2014
+ASESOR:
+DR. DAVID CANTALA
+JUNIO, 2014
+
+Agradecimientos
+Le estoy profundamente agradecido a todas aquellas personas que han creído y conﬁado en mi, siempre he pensado que he tenido la fortuna de compartir mi camino con grandes personas que siempre tendrán mi agradecimiento y admiración.
+A mis profesores Jesús, Guadalupe, Roberto, Concepción, Mahil, Eliud y Gabriel a quienes sin importar el paso del tiempo siempre los consideraré mis maestros.
+En general al Colegio de México y en particular al CEE y su planta docente quienes dedican su vida al generar y compartir conocimiento, no puedo mas que sentirme honrado de haber pasado por sus aulas y haber tomado sus clases. En especial al Dr. David Cantala quien supo guiarme en mi confusión, comprenderme en mi convicción y criticarme con razón.
+A mis padres, los grandes heroes de mi vida, todo lo que soy es gracias a ellos y a mis hermanas quienes han tenido la entereza de soportarme toda mi vida.
+Finalmente a Lidia, tu eres mi razón, tu eres todas mis razones.
+I
+
+Un modelo de utilidad intertemporal sobre un agente con información limitada
+Arturo Vera Moreno Asesor: Dr. David Cantala
+El Colegio de México Junio, 2014
+Resumen
+Este trabajo estudia situaciones de elección donde típicamente se observan inconsistencias con la teoría de la utilidad esperada, para esto se modela la elección de un agente que se enfrenta a decisiones cuyas consecuencias son observables solo en un horizonte de tiempo futuro, decisiones con componentes de riesgo o cierto grado de incertidumbre en los resultados y decisiones donde las alternativas son complicadas de analizar ya sea por un gran número de componentes que deben de ser considerados o porque el agente no cuenta con la información completa de todas las posibles alternativas. Al ser opciones complicadas o imposibles de evaluar objetivamente el agente percibe problemas diferentes cada vez que se enfrenta a similares situaciones, esto lo lleva a mostrar comportamientos erráticos en las frecuencias de elección desde el punto de vista de un observador externo.
+Para esto, se uniﬁca en un mismo modelo los desarrollos de [4] quien estudia preferencias intertemporales desde la percepción del agente y de [10] quienes hacen lo mismo sobre alternativas riesgosas o con información incompleta. El modelo caracteriza las frecuencias de elección observada por parte del agente con las preferencias del mismo a través de las probabilidades con las que dicho agente logra percibir la alternativa como viable. Los principales aportes de este trabajo son por un lado el de caracterizar un modelo que permite analizar situaciones en presencia de cualquiera de los tres generadores de inconsistencias y concluir acerca de las preferencias del agente y por otro lado el de generar una forma funcional ﬁnal fácil de estimar.
+II
+
+Índice
+
+1. Introducción
+
+1
+
+2. Modelo
+
+4
+
+2.1. Deﬁniciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+2.2. Axiomas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+2.3. El Modelo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+3. Estimación de las probabilidades de consideración
+
+12
+
+4. Conclusiones
+
+13
+
+Apéndice
+
+14
+
+Teorema 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+Teorema 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+Teorema 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+Teorema 4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+Corolario 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+Teorema 6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+III
+
+1. Introducción
+La teoría de la utilidad esperada, desarrollada por Morgenstern y Von Neumann [14] en la primera mitad del siglo XX, sigue siendo hasta hoy el modelo base para el estudio de elecciones intertemporales con riesgo pues fue el primero que permitio analizar con rigor cientíﬁco este fenómeno, sin embargo este modelo asume una consistencia perfecta en la evaluación de probabilidades por parte del agente, supuesto que no se observa en la realidad, por lo que aún se desprenden varios problemas y paradojas que la teoría no es capaz de explicar1, sin embargo y en concordancia con la importancia que tiene, trabajos como [8] y [13] han enriquecido su alcance.
+Las inconsistencias en la racionalidad de las elecciones suelen observarse mas frecuentemente en presencia de combinaciones de alguno de estos tres factores: decisiones cuyas consecuencias son observables solo en un horizonte de tiempo futuro, decisiones con componentes de riesgo o cierto grado de incertidumbre en los resultados y decisiones donde las alternativas son complicadas de analizar ya sea por un gran número de componentes que deben de ser considerados o porque el agente no cuenta con la información completa de todas las posibles alternativas.
+El modelo desarrollado en este trabajo toma como su objeto de estudio a un agente que se enfrenta a situaciones donde debe de elegir sobre alternativas que poseen cualquiera de los tres factores que originan inconsistencias en la elecciones ﬁnales, al ser opciones complicadas o imposibles de evaluar objetivamente el agente percibe problemas diferentes cada vez que se enfrenta a similares situaciones, esto lo lleva a mostrar comportamientos erráticos en las frecuencias de elección desde el punto de vista de un observador externo.
+Se uniﬁca en un mismo modelo los desarrollos de [4] quien estudia preferencias intertemporales desde la percepción del agente y de [10] quienes hacen lo mismo sobre alternativas riesgosas o con información incompleta.
+El modelo de Manzini & Mariotti limita su análisis a las frecuencias de elección del agente sin llegar a estudiar sus preferencias, pues como ellos lo mencionan, el orden lógico que se les asignarían a las preferencias por las frecuencias observadas podría estar sesgado por la atención que el agente le presta a cada alternativa al momento de elegir. Sin embargo es posible sobrepasar esta limitación, pues si se conoce de antemano que la probabilidad de consideración de cierta alternativa es menor a la probabilidad de otra, es ilógico pensar que una mayor frecuencia en la elección de la primera no se deba a una preferencia por parte del agente sobre la segunda. Esta idea se plasma en los teoremas 2, 3 y el corolario 1, siendo estos uno de los
+1[9] ofrece un análisis mas extenso de dichos problemas
+1
+
+mayores aportes de este trabajo, pues se marcan las condiciones para que las frecuencias de elección puedan ser interpretadas como las preferencias del agente.
+Una vez establecidas las condiciones sobre las probabilidades de consideración, solo es necesario asegurar condiciones de estabilidad sobre los resultados observados. Para esto se introduce el axioma de estabilidad (A9) sobre las frecuencias de elección observadas a un mismo horizonte de tiempo, lo cual es necesario para relacionar dichas frecuencias de elección con preferencias intertemporales.
+Los principales aportes de este trabajo son por un lado el de caracterizar un modelo que permite analizar situaciones en presencia de cualquiera de los tres generadores de inconsistencias y concluir acerca de las preferencias del agente y por otro lado el de generar una forma funcional ﬁnal fácil de estimar.
+Los modelos existentes en la literatura suelen estudiar los tres tipos de sesgo por separado y en particular los modelos de utilidad en economía no han desarrollado la heterogeneidad en las decisiones de los agentes debido a información incompleta ya sea real o percibida.
+Para el estudio de elección bajo incertidumbre, trabajos como los de [2], [3], [1] y [7] han buscado superar las inconsistencias surgidas por opciones riesgosas al incorporar probabilidades subjetivas dentro de los modelos, siendo este último el mas representativo. Estos modelos han logrado relajar el supuesto del agente como un perfecto evaluador de las probabilidades, sin embargo muestran el defecto de ser difíciles de estimar en un estudio empírico.
+Por otra parte, las incosistencias generadas por la intertemporalidad de las decisiones en relación con sus consecuencias fueron abordadas por [12] quienes desarrollan un modelo con una tasa de descuento relativa a la percepción del agente. Mas tarde [4] generaliza sus ideas y axiomatiza un modelo que le permite relacionar preferencias intertemporales con funciones de utilidad clásicas mas una función que absorbe las consecuencias del tiempo, según las percibe el agente.
+Por último el estudio de las inconsistencias generadas por información incompleta o sesgada ha tenido un desarrollo particular pues como ya se menciono en el ámbito económico no existen muchos modelos que analicen decisiones heterogéneas en agentes ”racionales” debido a disparidades en la información contemplada o percibida por estos, modelos que explican diferenciación de productos u opacidad en la información por parte de empresas suelen basar su análisis en el mercado mas que el agente y suponer desde un principio agentes similares en características pero marcadamente diferentes en decisiones ante alternativas similares.
+2
+
+Fue en el ambito de la mercadotecnia donde se acuño el concepto de ”conjunto de consideración”, entendido como el conjunto de alternativas que el agente realmente considera para tomar una decisión. Sin embargo con trabajos como los de [6] y [5] fue que se estudio el fenómeno con una visión económica.
+Pero son [10] quienes modelan la falta de información o el sesgo en la misma como incertidumbre percibida por el agente, lo que les permite axiomatizar un modelo que cubre las inconsistencias generadas por información u opciones riesgosas.
+Este trabajo se estructura de la siguiente manera; en la sección 2, se desarrolla el modelo teóricamente, primero deﬁniendo las bases del mismo, después marcando axiomas que sirven como condiciones necesarias sobre las preferencias y frecuencias de elección y ﬁnalmente enunciando una serie de teoremas que enmarcan los resultados principales de este trabajo. En la sección 3 se exhibe la manera en la que un estudio empírico puede estimar las probabilidades de consideración en base a las frecuencias de elección observadas. En la sección 4 se concluyen los resultados del trabajo y ﬁnalmente en el apéndice se muestran las demostarciones de los teoremas y corolarios de la sección 2.
+3
+
+2. Modelo
+2.1. Deﬁniciones
+Antes de describir cualquier modelo es necesario fundamentar una base teórica que mas adelante nos permitirá entender los alcances y limitaciones del mismo, asi como poder interpretar y describir los resultados observados. Es por esto que a continuación se enuncian una serie de deﬁniciones que permitirán dar forma a los resultados principales este trabajo.
+Sea X el espacio de alternativas y D = 2X (el conjunto potencia de X), entonces (X, D) es un espacio topológico y en especiﬁco se trata de la topológia discreta.
+Sea T = [0, T ] ⊂ R y ∀t ∈ T y δ ∈ R+ deﬁnimos B(t, δ) = {s : |t − s| < δ}, además deﬁnamos F = {B(t, δ) ⊂ R : B(t, δ) ⊂ T }, entonces (T, F ) es un espacio topológico y en especíﬁco se trata de la topológia euclidiana.
+Esto implica que F = {A × B : A ∈ D ∧ B ∈ F ) es una topología en Ω = X × T , además por construcción el espacio (Ω, F ) tiene otras propiedades deseables:
+(Ω, F ) es un espacio conexo. 2 (Ω, F ) es un espacio compacto. 3 (Ω, F ) es un espacio separable. 4
+Estas deﬁniciones sirven para describir las cualidades del espacio donde a su vez podremos estudiar las relaciones de preferencia de los agentes así, las siguientes deﬁniciones nos permiten caracterizar teóricamente las frases ”la alternativa x en el tiempo t es débilmente preferida a la alternativa y en el tiempo s” y ”la alternativa x en el tiempo t es estritamente preferida a la alternativa y en el tiempo s”, asi como su representación lógica: (x, t) (y, s) y (x, t) (y, s) respectivamente.
+Deﬁnición 2.1. Una relación binaria ⊂ Ω × Ω es una preferencia intertemporal continua débil si:
+1. es completa i.e. ∀(x, t), (y, s) ∈ Ω sucede que (x, t) (y, s) o (y, s) (x, t) o ambas.
+2. es continua i.e. los conjuntos ”no prefereridos a” y ”al menos tan preferidos a” asociados a ” ” son conjuntos cerrados.
+2Llamamos a X un conunto conexo si no existen dos abiertos no vacios tales que su unión sea igual a X. 3Llamamos a X un conjunto compacto si es un conjunto cerrado y acotado. 4Llamamos a X un conjunto separable si contiene un numero numerable de conjuntos densos.
+4
+
+3. es reﬂexiva i.e. ∀(x, t) ∈ Ω es cierto que (x, t) (x, t). 4. es transitiva i.e. ∀(x, t), (y, t), (z, t) ∈ Ω tales que (x, t) (y, t) y (y, t) (z, t) ⇒
+(x, t) (z, t). 5. es estable i.e. 0= t ∀t ∈ T . Auxiliarmente también deﬁniremos una preferencia intertemporal continua estricta:
+Deﬁnición 2.2. Una relación binaria ⊂ Ω × Ω es una preferencia intertemporal continua estricta si:
+(x, t) (y, s) ⇔ (x, t) (y, s) y (y, s) (x, t) A partir de esta última deﬁnición se enuncian las propiedades derivadas de una preferencia intertemporal continua estricta:
+Teorema 1. una preferencia intertemporal continua estricta, tiene las siguientes propiedades:
+1. es completa i.e. ∀(x, t), (y, s) ∈ Ω sucede que (x, t) (y, s) o (y, s) (x, t) pero nunca ambas.
+2. es continua i.e. los conjuntos ”peor que” y ”preferido a” asociados a " "son conjuntos abiertos.
+3. es irreﬂexiva i.e. ∀(x, t) ∈ Ω es cierto que (x, t) (x, t). 4. es transitiva i.e. ∀(x, t), (y, t), (z, t) ∈ Ω tales que (x, t) (y, t) y (y, t) (z, t) ⇒
+(x, t) (z, t). 5. es estable i.e. 0= t ∀t ∈ T . La siguiente deﬁnición introduce el concepto de la ”alternativa por omisión”, la cual tendrá una particular importancia para caracterizar y estimar el fenómeno de la elección del individuo, pues dado que el modelo contempla incertidumbre en la concepción de las alternativas, la elección del individuo se entenderá como una frecuencia relativa a la ”no elección” o a la realización de la ”alternativa por omisión” Deﬁnición 2.3. Para una elección con una conjunto de alternativas A ⊂ Ω deﬁnimos a la alternativa por omisión (a∗, t) como la opción resultante de la no elección del individuo. Deﬁnición 2.4. ∀A ⊆ Ω; A∗ = A ∪ {(a∗, t)}
+5
+
+Sin embargo es importante recalcar que las deﬁniciones anteriores aplican cuando la información es completamente transparente y el agente es capaz de observarla y analizarla objetivamente, dado que nuestro objeto de estudio es un agente que no solamente no posee la totalidad de la información referente a la elección que enfrenta sino que aunque la tuviera dicho agente es incapaz de analizarla objetivamente en su totalidad, así pues sus elecciones podrían parecer erráticas a ojos de un observador externo. Tomando en cuenta este hecho diremos que p((x, t), A) es la probabilidad de que la alternativa x en el tiempo t sea elegida cuando las posibles elecciones a las que se enfrenta el individuo son todos los elementos del conjunto A, mas formalmente:
+Deﬁnición 2.5. [10] Una regla de elección intertemporal aleatoria es un mapeo p : F → [0, 1] tal que (a,t)∈A∗ p((a, t), A) = 1 ∀A ∈ F y p((a, t), A) = 0 ∀a ∈/ A.
+Sin embargo dado que asumimos que el agente no contempla la totalidad de las alternativas posibles debemos considerar que lo hace sobre un subconjunto de alternativas de A.
+Deﬁnición 2.6. Se deﬁne al conjunto de consideración C(A) ⊆ A, como el conjunto de alternativas que el agente realmente considera para tomar una decisión.
+De una manera mas formal esta deﬁnición nos dice que es aplicado por el agente únicamente al conjunto de consideración C(A).
+La alternativa por omisión también nos habla de la percepción del agente acerca de las posibilidades de elección con las que cuenta para una situación dada, formalmente diremos que: Deﬁnición 2.7. p((a∗, t), A) = p(C(A) = ∅)
+Si aplicamos la deﬁnición 2.6 podemos reescribir la deﬁnición anterior como: p((a∗, t), ∅) = 1.
+Con los elementos anteriores podemos deﬁnir una regla de consideración intertemporal aleatoria, lo cual será la base para el modelo.
+Deﬁnición 2.8. [10] Una regla de consideración intertemporal aleatoria es una regla de elección intertemporal aleatoria p ,γ para la cual existe un par ( , γ) donde es un ordenamiento estricto en Ω y γ es un mapeo, γ : Ω → (0, 1) tal que ∀(a, t) ∈ A:
+
+p ,γ((x, t), A) = γ(x, t)
+
+[1 − γ(y, s)]
+
+(y,s)∈A (y,s) (x,t)
+
+6
+
+Con esta deﬁnición, podemos entender a la función γ(·, ·) como la probabilidad de que la alternativa (x, t) sea considerada en su elección por el agente, es decir γ(x, t) = p((x, t) ∈ C(A)) y la llamaremos la probabilidad de consideración de la alternativa (x, t).
+
+2.2. Axiomas
+Para el desarrollo del modelo es necesario asumir algunos supuestos sobre la elección y las preferencias del individuo, es importante hacer notar la diferencia entre ambas, pues dado que hemos supuesto desde un principio que el agente tiene información limitada, la elección de cierta alternativa, no necesariamente es sinónimo de la preferencia de esta sobre las demás, asi los siguientes axiomas marcan las consideraciones primordiales que el modelo asume sobre las prefrencias y frecuencias de elección del agente.
+El primer conjunto de axiomas A1-A4 marcan condiciones que se asumen sobre las preferencias del agente y se desprenden del trabajo de [4] .
+
+Axioma 1. Descuento intertemporal. Sean x, y, z ∈ X y r, s, t ∈ T Si r ≤ s entonces:
+
+(y, s)
+
+(x, t) ⇒ (y, r)
+
+(x, t)
+
+Es decir, asumimos que el agente es impaciente y que las alternativas a elegir le generan utilidad.
+
+Axioma 2. Ortogonalidad. ∀x, y ∈ X y s, t ∈ T (x, t) (x, s) ⇔ (y, t) (y, s)
+Si una de las alternativas es peor a si misma en algún punto del tiempo, lo mismo pasará para todas las posibles alternativas, este axioma va de la mano con descuento intertemporal. A su vez si (x, s) ∼ (x, t) ∀s, t ∈ T decimos que s y t son equivalentes.
+
+Axioma 3. Irrelevancia. ∀w, x, y, z ∈ X y r, s, t, u, v ∈ T tales que r < s y t < v entonces:
+(y, r) ∼ (z, s) ⇒ (w, r) (x, s) ⇔ (w, t) (x, v)
+(y, t) ∼ (z, v) Este axioma caracteriza la equivalencia entre periodos de tiempo según lo percibe el agente, así como la consistencia que se espera observar sobre estos lapsos. Esta idea de equivalencia se formaliza en la siguiente deﬁnición, la cual es necesaria para el axioma 4.
+
+7
+
+Deﬁnición 2.9. Sean r, s, t ∈ T tales que r < s < t, decimos que el paso del tiempo estre r y s es equivalente al paso del tiempo entre r y t para el agente si ∀x, t ∈ X (x, r) ∼ (y, s) ⇔ (x, s) ∼ (y, t) y lo denotamos r|s|t.
+Axioma 4. Transitividad Intertemporal Débil. La relación de preferencia es transitiva ∀r, s, t tales que r|s|t
+El siguiente conjunto de axiomas (A5-A8) se reﬁeren a la frecuencia de elección y la percepción de las alternativas por parte del agente y se desprenden del trabajo de [10].
+
+Axioma
+
+5.
+
+No
+
+negatividad ∀(x, t)
+
+∈
+
+A∗
+
+y
+
+(y, s)
+
+∈
+
+A
+
+p((x,t),A/{(y,s)}) p((x,t),A)
+
+≥
+
+1
+
+La ausencia de alguna alternativa no puede afectar negativamente la probabilidad de otra de ser elegida, es decir la probabilidad de que el agente escoja una alternativa no puede decrecer cuando el conjunto de posibe alternativas disminuye en elementos.
+
+Axioma 6.
+
+Asimetría ∀(x, t), (y, s)
+
+∈A
+
+p((x,t),A/{(y,s)}) p((x,t),A)
+
+=1⇔
+
+p((y,s),A/{(x,t)}) p((y,s),A)
+
+=
+
+1
+
+Para cualesquiera dos alternativas, solo una tiene un efecto tangible en la probabilidad de ser elegida de la otra, si bien este axioma es el análogo al axioma de completitud en relaciones de preferencias ordinarias, dado que tratamos con frecuencias de elección no podemos hablar de preferencias absolutas.
+
+Axioma 7.
+
+Independencia de Menú ∀(x, t)
+
+∈
+
+A∗ ∩ B∗
+
+y
+
+(y, s)
+
+∈
+
+A∩B
+
+p((x,t),A/{(y,s)}) p((x,t),A)
+
+=
+
+p((x,t),B/{(y,s)})
+
+p((x,t),B)
+
+La tasa de cambio en la probabilidad de elegir (x, t) en dos conjuntos diferentes al extraer la alternativa (y, s) debe de ser igual.
+
+Axioma 8.
+
+Consistencia ante Terceras Alternativas ∀(x, t), (y, s), (z, r)
+
+∈
+
+A tales que
+
+p((x,t),A\(z,r)) p((x,t),A)
+
+<
+
+p((y,s),A\(z,r)) p((y,s),A)
+
+entonces
+
+p((y,s),A\(x,t)) p((y,s),A)
+
+>
+
+p((x,t),A\(y,s)) p((x,t),A)
+
+Si la ausencia de (z, r) afecta positivamente la probabilidad de que el agente elija la opción (y, s), mientras que no afecta la probabilidad de que el agente elija (x, t) entonces (x, t) (y, s).
+
+El siguiente axioma se introduce a este trabajo, con el ﬁn de asegurar la estabilidad de las frecuencias de elección a lo largo del tiempo, lo cual es necesario para poder extrapolar resultados observados a cualquier horizonte de tiempo.
+
+8
+
+Axioma
+
+9.
+
+Estabilidad ∀(x, t), (y, s)
+
+∈
+
+A
+
+y
+
+r
+
+∈
+
+R,
+
+tales que
+
+p((x,t),A/{(y,s)}) p((x,t),A)
+
+>
+
+1,
+
+entonces
+
+p((x,t+r),A/{(y,s+r)}) p((x,t+r),A)
+
+>
+
+1
+
+Si el horizonte de tiempo de dos alternativas varia de la misma manera, la tasa de cambio entre la probabilidad de elección de ambas debe de mantenerse constante o dicho de otra manera, si se agrega o se sustrae el mismo lapso de tiempo a todas las alternativas, estas deben mantener su frecuencia de elección.
+
+2.3. El Modelo
+El desarrollo principal de este trabajo se basa en una serie de teoremas y corolarios que establecen una relación tangible entre preferencias intertemporales y las elecciones estocásticas observables del agente.
+Teorema 2. Una regla de elección p(·) tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F , satisface los axiomas A5-A9 ssi es una regla de elección intertemporal aleatoria p ,γ. Mas aún las preferencias intertemporales y γ son únicos.
+Este segundo teorema establece las condiciones de existencia y unicidad para una regla de elección intertemporal aleatoria y generaliza a elecciones intertemporales el desarrollo de Manzini & Mariotti.
+Teorema 3. Considere una regla de elección p(·) tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F , que satisface los axiomas A5-A9, así como su correspondiente probabilidad de consideración y preferencia intertemporal débil asociadas. Si γ(x, t) ≤ γ(y, s) y p((x, t), A) ≥ p((y, s), A) ⇒ (x, t) (y, s) Teorema 4. Considere una regla de elección p(·) tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F , que satisface los axiomas A5-A9, así como su correspondiente probabilidad de consideración y preferencia intertemporal débil asociadas. Si γ(x, t) ≥ γ(y, s) y (x, t) (y, s) ⇒ p((x, t), A) ≥ p((y, s), A) Corolario 1. Considere una regla de elección p(·) tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F , que satisface los axiomas A5-A9, así como su correspondiente probabilidad de consideración y preferencia intertemporal débil asociadas. Si γ(x, t) = γ(y, s) ⇒ p((x, t), A) ≥ p((y, s), A) ⇔ (x, t) (y, s)
+Por su parte el teorema 3 y 4, junto con el corolario 1 marcan las condiciones que deben tener las reglas de elección intertemporales aleatorias, las probabilidades de consideración y las preferencias para poder establecer relaciones de equivalencia entre ellas.
+9
+
+Teorema 5. [4] Sea (Ω, F ) un espacio compacto, conexo y separable. La relación binaria es una relación de preferencia temporal que satisface A1-A4 sii existen dos funciones continuas u : X −→ R y f : T × T −→ R tales que:
+(x, t) (y, s) ⇔ u(x) ≥ u(y) + f (t, s)
+∀(x, t), (y, s) ∈ Ω y f (·, t) no decreciente tal que f (t, s) + f (s, t) = 0 y 2f (r, s) = f (r, t) para f (r, s) = f (s, t)
+En el teorema 5, Dubra nos da las condiciones necesarias y suﬁcientes para establecer una relación de equivalencia sobre preferencias intertemporales y funciones de utilidad.
+Los siguientes corolarios marcan el resultado principal de este trabajo.
+Corolario 2. Sea (Ω, F ) un espacio compacto, conexo y separable, una relación de preferencia temporal que satisface A1-A4 y considere la regla de elección p(·) asociada a tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F que satisface los axiomas A5-A9, así como su correspondiente probabilidad de consideración.
+Si γ(x, t) ≤ γ(y, s) y p((x, t), A) ≥ p((y, s), A) ⇒ u(x) ≥ u(y) + f (t, s)
+∀(x, t), (y, s) ∈ Ω y f (·, t) no decreciente tal que f (t, s) + f (s, t) = 0 y 2f (r, s) = f (r, t) para f (r, s) = f (s, t)
+El corolario dos, que se desprende del teorema tres y cinco, nos da las condiciones para las cuales frecuencias de elección observadas en el agente pueden traducirse como pruebas reales de preferencia entre dos alternativas, toma especial importancia pues mientras en el lado derecho de la implicación se toman frecuencias de elección es decir, observaciones alteradas por la falta de informaión de las preferencias del agente, en el lado izquierdo de la misma, se asegura la relación de preferencia sobre dichas alternativas.
+Corolario 3. Sea (Ω, F ) un espacio compacto, conexo y separable, una relación de preferencia temporal que satisface A1-A4 y considere la regla de elección p(·) asociada a tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F que satisface los axiomas A5-A9, así como su correspon-
+10
+
+diente probabilidad de consideración. Si γ(x, t) ≥ γ(y, s) y u(x) ≥ u(y) + f (t, s) ⇒ p((x, t), A) ≥ p((y, s), A) ∀(x, t), (y, s) ∈ Ω y f (·, t) no decreciente tal que f (t, s) + f (s, t) = 0 y 2f (r, s) = f (r, t)
+para f (r, s) = f (s, t)
+El corolario tres, consecuencia de los teoremas cuatro y cinco, nos brinda las condiciones para predecir futuros comportamientos de los agentes, tomando en cuenta que la prefrencia subjetiva de cierta alternativa no necesariamente implicará la elección (o por lo menos no siempre) de la misma.
+Corolario 4. Sea (Ω, F ) un espacio compacto, conexo y separable, una relación de preferencia temporal que satisface A1-A4 y considere la regla de elección p(·) asociada a tal que p((x, t), A) ∈ (0, 1) ∀(x, t) ∈ A ∈ F que satisface los axiomas A5-A9, así como su correspondiente probabilidad de consideración.
+Si γ(x, t) = γ(y, s) ⇒ p((x, t), A) ≥ p((y, s), A) ⇔ u(x) ≥ u(y) + f (t, s) ∀(x, t), (y, s) ∈ Ω y f (·, t) no decreciente tal que f (t, s) + f (s, t) = 0 y 2f (r, s) = f (r, t) para f (r, s) = f (s, t)
+Por último el corolario cuatro, resultado del punto en común entre el corolario dos y tres, estipula una condición necesaria y suﬁciente para las probabilidades de consideración que genera una situación de equivalencia entre las frecuencias de elección del agente y las funciones de utilidad asociadas a las relaciones de preferencia intertemporales.
+A partir del corolario cuatro es posible desprender las concluciones de la teoría de la utilidad clásica, mostrando que son en las probabilidades de consideración donde surgen las condiciones que derivan en respuestas heterogéneas por parte de agentes similares.
+11
+
+3. Estimación de las probabilidades de consideración
+La estimación empírica del modelo requiere del conocimiento de las probabilidades de consideración de las distintas alternativas, sin embargo no es difícil notar que dichas alternativas son subjetivas a cada agente por lo que no son directamente observables, lo que hace necesario estimarlas a partir de los hechos directamente observables, es decir, a partir de las frecuencias de elección observadas.
+En el caso en el que el conjunto de alternativas cuenta con un solo elemento (A = {(x, t)}) por la deﬁnición 2.8 podemos decir que p((x, t), {(x, t)}) = γ((x, t)) y por la deﬁnición 2.5 que p((x, t), {(x, t)}) + p((x∗, t), {(x, t)}) = 1, lo que en conjunto signiﬁca que γ((x, t)) = 1 − p((x∗, t), {(x, t)}).
+Para el caso de mas de una alternativa se presenta el teorema 6.
+
+Teorema 6. Sea p(·, ·) una regla de consideración de intertemporal aleatria y (x∗, t∗) la alternativa por omisión asociadas a un conjunto de alternativas A ⊂ Ω ﬁnito, entonces:
+
+γ(xi, ti) = 1 −
+
+j=i p((x∗, t∗), {(xi, ti), (xj, tj)})
+
+1 n−1
+
+p((x∗, t∗), A \ (xi, ti))
+
+Con n ≥ 2, la cardinalidad del conjunto A.
+
+12
+
+4. Conclusiones
+La teoría de la utilidad ve limitado su análisis y por tanto su capacidad predictiva debido a inconsistencias observadas entre los valores lógicos esperados y los hechos observados. Dichas inconsistencias surgen de una apreciación subjetiva del tiempo y las probabilidades por parte del agente, así como por información incompleta (en la realidad o en la percepción del agente).
+El modelo que se presenta sintetiza los desarrollos de Dubra y Manzini & Mariotti en un solo modelo, lo que hace posible estudiar decisiones inconsistentes bajo la teoría clásica en un nuevo marco teoríco, sin importar si dichas inconsistencias se originan por el riesgo, el tiempo o la información. Esto se logra al analizar no la situación de elección en si misma, sino la percepción del agente.
+Otro aporte del modelo es que las probabilidades de consideración, que son la base de la estimación emprírica del modelo, resultan sencillas de estimar a partir de las frecuencias de elección observadas, como se puede ver en la sección tres.
+Existen dos extensiones naturales de este trabajo, la primera, en un ámbito teórico se puede extender este modelo a situaciones donde no exista una ”alternaitiva por omisión” es decir, en situaciones donde el agente esta obligado a tomar una decisión. Por otro lado se puede estimar el modelo con datos reales realizando un estudio empírico.
+13
+
+Apéndice. Demostraciones
+Teorema 1
+Demostración. .
+
+Completitud
+
+Si (x, t) (y, s), entonces por deﬁnición (x, t) (y, s) y (y, s) (y, s) (x, t). Análogamente para el caso (y, s) (x, t).
+
+(x, t) por lo que
+
+Continuidad
+
+El conjunto ”peor que” se deﬁne como {(y, s) ∈ Ω : (x, t) (y, s)}, pero observemos que {(y, s) ∈ Ω : (x, t) (y, s)} = {(y, s) ∈ Ω : (y, s) (x, t)}/Ω que es el conjunto ”al menos tan bueno como” que por deﬁnición es un conjunto cerrado (pues es continua), por lo que el conjunto ”peor que” asociado a es un conjunto abierto. Análogamente para el conjunto ”mejor que”.
+
+Los puntos 3 y 4 corresponden a la Proposición 1.B.1 de [11].
+
+Estabilidad.
+
+Si (x, t) (y, t), entonces por deﬁnición (x, t) (y, t) y (y, t) (x, t) por lo que (x, 0) (y, 0) y (y, 0) (x, 0) (por la estabiliad de ) y esto a su vez implica que (x, 0) (y, 0) por lo que es estable.
+
+Teorema 2
+La prueba del Teorema 2 se divide en varios pasos, para la ida primero se prueba que una regla de elección intertemporal aleatoria que cumple con A5-A9 induce una preferencia intertemporal continua débil, después se probara la unicidad de la misma, ﬁnalmente en la vuelta se prueba que una regla de consideración intertemporal aleatoria cumple con A5-A9.
+Demostración. Paso 1
+
+14
+
+⇒) Sea p(·) que stisface A5-A9 y deﬁnamos una relación ∈ Ω × Ω como:
+
+(x, t) (y, s) ⇔ ∃A ∈ Ω : (x, t), (y, s) ∈ A ∧ p((y, s), A \ (x, t)) ≥ p((y, s), A)
+
+Del mismo modo podemos deﬁnir la relación ∈ Ω × Ω como:
+
+(x, t) (y, s) ⇔ ∃A ∈ Ω : (x, t), (y, s) ∈ A ∧ p((y, s), A \ (x, t)) > p((y, s), A)
+
+P.D. es una preferencia intertemporal continua débil o análogamente por el teorema 1, que es una preferencia intertemporal continua estricta.
+
+Completitud
+
+Por el
+
+A5
+
+sabemos
+
+que:
+
+p((x,t),A/{(y,s)}) p((x,t),A)
+
+≥
+
+1
+
+⇒ p((x, t), A/{(y, s)}) ≥ p((x, t), A)
+
+Caso 1:
+
+p((x, t), A/{(y, s)}) = p((x, t), A)
+
+⇒ (y, s) (x, t)
+
+Pero por los axiomas 5 y 6 sabemos que p((y, s), A/{(x, t)}) > p((y, s), A)
+
+⇒ (x, t) (y, s)
+
+Caso 2: Análogo al Caso 1
+
+15
+
+∴ es una relación completa. Reﬂexividad Por deﬁnición p((x, t), A/{(x, t)}) = 0 ∀(x, t) ∈ A ⇒ p((x, t), A/{(x, t)}) > p((x, t), A) ≥ 0 ⇒ (x, t) (x, t) ∀(x, t) ∈ A ∴ es una relación reﬂexiva. Transitividad Sean (x, t), (y, s), (z, r) ∈ A tales que (x, t) (y, s) (z, r) ⇒ p((y, s), A \ (x, t)) > p((y, s), A) y p((z, r), A \ (y, s)) > p((z, r), A) En especíﬁco:
+p((y, s), {(y, s), (z, r)}) > p((y, s), {(x, t), (y, s), (z, r)}) ⇒
+p((z, r), {(x, t), (z, r)}) > p((z, r), {(x, t), (y, s), (z, r)})
+
+Por contradicción. Supongamos que (x, t) (z, r) ⇒ p((x, t), {(x, t), (y, s)}) > p((x, t), {(x, t), (y, s), (z, r)}), por completitud. ⇒ p((z, r), {(y, s), (z, r)}) = p((z, r), {(x, t), (y, s), (z, r)}) Por otro lado, por hipótesis sabemos que: p((y, s), {(y, s), (z, r)}) > p((y, s), {(x, t), (y, s), (z, r)})
+
+p((y, s), {(y, s), (z, r)})
+
+p((z, r), {(y, s), (z, r)})
+
+⇒
+
+>
+
+p((y, s), {(x, t), (y, s), (z, r)}) p((z, r), {(x, t), (y, s), (z, r)})
+
+Por consistencia a terceras alternativas:
+
+16
+
+p((y, s), {(x, t), (y, s)})
+
+p((z, r), {(x, t), (z, r)})
+
+⇒
+
+>
+
+> 1!
+
+p((y, s), {(x, t), (y, s), (z, r)}) p((z, r), {(x, t), (y, s), (z, r)})
+
+Lo que contradice el axioma de asímetria. ⇒ (x, t) (z, r) ∴ es una relación transitiva. Continuidad Sea A = {(y, s) ∈ Ω : (x, t) (y, s)} (el conjunto ”peor que”) y sea (z, r) ∈ A un elemento arbitrario: ⇒ (z, r) ∈ Ω ⇒ (z, r) ⊆ F ⇒ (z, r) es un conjunto abierto en Ω ⇒ (x,t) (z,r)(z, r) es un conjunto abierto en Ω ∴ A es un conjunto abierto. Análogamente para el conjunto ”mejor que” ∴ es una relación continua. Estabilidad Sean (x, t), (y, s) ∈ Ω tales que (x, t) (y, s) ⇒ p((y, s), A \ (x, t)) > p((y, s), A) ⇒ p((y, s + r), A \ (x, t + r)) > p((y, s + r), A), por A7 ⇒ (x, t + r) (y, s + r)
+17
+
+∴ es una relación estable.
+Para el siguiente paso de la prueba será necesario introducir el siguiente corolario: Corolario 5. Una regla de elección intertemporal aleatoria que cumple con asimetría e independencia a terceras aleternativas, satisface que:
+Si p((x, t), A \ (y, s)) > p((x, t), A) ⇒ p((x, t), A \ (y, s))(1 − p((y, s), (y, s)) = p((x, t), A)
+
+Demostración. Por deﬁnición sabemos que p((x∗, t), ∅) = 1 y que p((x∗, t), (y, s))+p((y, s), (y, s)) = 1
+
+p((x∗, t), ∅)
+
+1
+
+⇒ p((x∗, t), (y, s)) = 1 − p((y, s), (y, s))
+
+Por independencia a terceras alternativas:
+
+p((x∗, t), A \ (y, s))
+
+1
+
+1
+
+p((x, t), A \ (y, s))
+
+⇒
+
+p((x∗, t), A)
+
+=
+
+=
+
+=
+
+1 − p((y, s), (y, s)) 1 − γ(y, s)
+
+p((x, t), A)
+
+> 1, ∀A ∈ Ω
+
+∴ Si p((x, t), A \ (y, s)) > p((x, t), A) ⇒ p((x, t), A \ (y, s))(1 − p((y, s), (y, s)) = p((x, t), A)
+
+Deﬁnamos = y γ(x, t) = p((x, t), (x, t)) ∀(x, t) ∈ Ω.
+
+18
+
+Demostración. Paso 2:
+P.D. p ,γ = p
+Sea A ∈ F arbitrario pero de elementos ﬁjos ﬁnitos, tal que A = {(x1, t1), (x2, t2), ..., (xn, tn)} y sin perdida de generalidad supongamos que (x1, t1) (x2, t2) ...(xn, tn)}
+
+⇒ p((xi, ti), A) = p((xi, ti), A \ (xi, ti))[1 − γ(xi, ti)] ...
+= p((xi, ti), {(xi, ti), (xi+1, ti+1), ..., (xn, tn)}) [1 − γ(xj, tj)]
+j<i
+= p((xi, ti), (xi, ti)) [1 − γ(xj, tj)]
+j<i
+= γ(xi, ti) [1 − γ(xj, tj)]
+j<i
+= p ,γ(xi, ti)
+Unicidad
+Supongase que existe otra p ,γ tal que p ,γ = p y supongase que = .
+⇒ ∃(x, t), (y, s) ∈ A tal que (x, t) (y, s) y (x, t) (y, s)
+Sea A = {(x, t)} ∪ {(z, r) ∈ Ω : (x, t) (z, r)}
+⇒ para algún (y, s) ∈ A, (y, s) (x, t)
+
+⇒ p ,γ ((x, t), A) = γ (x, t)
+
+[1 − γ (y, s)]
+
+(y,s)∈A (y,s) (x,t)
+
+< γ (x, t)
+
+[1 − γ (y, s)]
+
+(y,s)∈A\(y,s) (y,s) (x,t)
+
+= p ,γ ((x, t), A \ (y, s))!
+
+19
+
+Pues por deﬁnición p ,γ ((x, t), A) = p ,γ ((x, t), A \ (y, s)) ∴ es única. De igual manera por deﬁnición γ(x, t) = p((x, t), (x, t)) es única. ∴ p ,γ es única.
+
+Demostración. Paso 3 ⇐) P.D. Si p ,γ = p entonces p cumple con los axiomas A5-A9. No negatividad
+
+p((x, t), A \ (y, s))
+
+=
+
+γ(x, t)
+
+(z,r)∈A\(y,s)[1 − γ(z, r)]
+(z,r) (x,t)
+
+p((x, t), A)
+
+γ(x, t) (z,r)∈A [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+(z,r)∈A\(y,s)[1 − γ(z, r)]
+
+=
+
+(z,r) (x,t)
+
+(z,r)∈A [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+1 si (x, t) (y, s)
+
+=
+
+1 1−γ(y,s)
+
+si
+
+(y, s)
+
+(x, t)
+
+Obervemos que bajo cualquiera de las dos posibilidades el resultado ﬁnal es mayor o igual a uno, como se quería demostrar.
+
+Asimetría
+
+Sean
+
+(x, t), (y, s)
+
+∈
+
+A
+
+tales
+
+que
+
+p((x,t),A\(y,s)) p((x,t),A)
+
+>
+
+1
+
+20
+
+γ(x, t)
+
+p((x, t), A \ (y, s))
+
+⇒
+
+=
+
+(z,r)∈A\(y,s)[1 − γ(z, r)]
+
+(z,r) (x,t)
+
+=
+
+p((x, t), A)
+
+γ(x, t) (z,r)∈A [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+(z,r)∈A\(y,s)[1 − γ(z, r)]
+
+(z,r) (x,t)
+
+>1
+
+(z,r)∈A [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+⇒
+
+[1 − γ(z, r)] >
+
+[1 − γ(z, r)]
+
+(z,r)∈A\(y,s) (z,r) (x,t)
+
+(z,r)∈A (z,r) (x,t)
+
+Notemos que esta desigualdad solo es posible si el conjunto {(z, r) ∈ A : (z, r) (x, t)} tiene mas elementos que el conjunto {(z, r) ∈ A\(y, s) : (z, r) (x, t)}, pero es justamente la alternativa (y, s) el único elemento diferente entre ambos conjuntos, por lo que necesariamente (y, s) ∈ {(z, r) ∈ A : (z, r) (x, t)}
+
+⇒
+
+[1 − γ(z, r)] =
+
+[1 − γ(z, r)]
+
+(z,r)∈A\(x,t) (z,r) (y,s)
+
+(z,r)∈A (z,r) (y,s)
+
+p((y, s), A \ (x, t)) ∴ p((y, s), A) = 1
+Independencia de Menú Sean (x,t),(y,s)∈ A ∩ B:
+
+21
+
+γ(x, t) p((x, t), A \ (y, s))
+=
+
+(z,r)∈A\(y,s)[1 − γ(z, r)]
+(z,r) (x,t)
+
+p((x, t), A)
+
+γ(x, t) (z,r)∈A [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+=
+
+(z,r)∈A\(y,s)[1 − γ(z, r)]
+
+(z,r) (x,t)
+
+=
+
+(z,r)∈A [1 − γ(z, r)]
+
+1 si (x, t) (y, s)
+
+1 1−γ(y,s)
+
+si
+
+(y, s)
+
+(x, t)
+
+(z,r) (x,t)
+
+(z,r)∈B\(y,s)[1 − γ(z, r)]
+
+=
+
+(z,r) (x,t)
+
+(z,r)∈B [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+γ(x, t) (z,r)∈B\(y,s)[1 − γ(z, r)]
+
+=
+
+(z,r) (x,t)
+
+γ(x, t) (z,r)∈B [1 − γ(z, r)]
+
+(z,r) (x,t)
+
+p((x, t), B \ (y, s)) =
+p((x, t), B)
+
+Consistencia ante Terceras Alternativas Sean tres alternativas (x, t), (y, s), (z, r) ∈ A tales que:
+
+p((x, t), A \ (z, r)) p((y, s), A \ (z, r))
+
+<
+
+p((x, t), A)
+
+p((y, s), A)
+
+Por los axiomas de asimetria y no negatividad:
+
+⇒
+
+p((x,t),A\(z,r)) p((x,t),A)
+
+=
+
+1
+
+p((y,s),A\(z,r)) p((y,s),A)
+
+>
+
+1
+
+Y usando el mismo razonamiento que se uso para probar asimetría:
+
+⇒ (z, r) (y, s) y (x, t) (z, r)
+
+Por transitividad: 22
+
+⇒ (x, t) (y, s)
+
+Por deﬁnición de regla de consideración intertemporal aleatoria:
+
+⇒
+
+p((x,t),A\(y,s)) p((x,t),A)
+
+=
+
+1
+
+p((y,s),A\(x,t)) p((y,s),A)
+
+>
+
+1
+
+p((y, s), A \ (x, t)) p((x, t), A \ (y, s)) ∴ p((y, s), A) > p((x, t), A)
+
+Estabilidad
+
+Sean
+
+dos
+
+alternativas
+
+(x, t), (y, s)
+
+∈
+
+A
+
+tales
+
+que
+
+p((x,t),A\(y,s)) p((x,t),A)
+
+>
+
+1
+
+⇒ (y, s) ∈ {(z, r) ∈ A : (z, r) (x, t)}
+
+Por estabilidad de las relaciones de preferencia: ⇒ (y, s + r) ∈ {(z, q) ∈ A : (z, q) (x, t + r)}
+
+p((x, t + r), A \ (y, s + r))
+
+∴
+
+p((x, t + r), A)
+
+>1
+
+∴ Si p ,γ = p entonces p cumple con los axiomas A5-A9.
+
+23
+
+Para las demostraciones de los teoremas 3 y 4 es necesario introducir la deﬁnición del conjunto ”al menos tan preferidos a”.
+Deﬁnición 4.1. Para alguna alternativa (x, t) ∈ A ⊆ Ω deﬁnimos al conjunto ”al menos tan preferido a (x, t)”, como A¯(x,t) = {(z, r) ∈ A : (z, r) (x, t)}.
+
+Teorema 3
+Demostración. Sean(x, t), (y, s) ∈ A tales que p((x, t), A) ≥ p((y, s), A) y γ(x, t) ≤ γ(y, s).
+
+⇒ γ(x, t)
+
+[1 − γ(z, r)] ≥ γ(y, s)
+
+[1 − γ(z, r)]
+
+(z,r)∈A (z,r) (x,t)
+
+(z,r)∈A (z,r) (y,s)
+
+Dado
+
+que
+
+γ(x, t)
+
+≤
+
+γ(y, s),
+
+esto
+
+implica
+
+que
+
+1 γ(x,t)
+
+≥
+
+1 γ(y,s)
+
+,
+
+por
+
+lo
+
+que:
+
+⇒
+
+[1 − γ(z, r)] ≥
+
+[1 − γ(z, r)]
+
+(z,r)∈A (z,r) (x,t)
+
+(z,r)∈A (z,r) (y,s)
+
+Notemos que 0 < 1 − γ(x, t) < 1 para todo (x, t) ∈ A por lo que la única manera para que B⊆A[1 − γ(z, r)] ≥ C⊆A[1 − γ(z, r)] es si C ⊆ B, de este modo podemos decir que:
+
+⇒ A¯ (y,s) ⊆ A¯ (x,t)
+
+Por la deﬁnición 1.9 esto implica que existen un mayor numero de elementos de A que se preﬁeren a (y, s) de los que se preﬁeren a (x, t) y usando transitividad de las preferencias sobre todas estas alternativas podemos concluir que (x, t) (y, s).
+
+24
+
+Teorema 4
+Demostración. Sean (x, t), (y, s) ∈ A tales que (x, t) (y, s) y γ(x, t) ≥ γ(y, s).
+Por la deﬁnición 1.9 podemos asegurar que A¯ (x,t) ⊆ A¯ (y,s) y por la deﬁnición de γ(·, ·) sabemos que 0 < 1 − γ(x, t) < 1 para todo (x, t) ∈ A, así:
+
+⇒
+
+[1 − γ(z, r)] ≥
+
+[1 − γ(z, r)]
+
+(z,r)∈A (z,r) (x,t)
+
+(z,r)∈A (z,r) (y,s)
+
+Dado que γ(x, t) ≥ γ(y, s)
+
+⇒ γ(x, t)
+
+[1 − γ(z, r)] ≥ γ(y, s)
+
+[1 − γ(z, r)]
+
+(z,r)∈A (z,r) (x,t)
+
+(z,r)∈A (z,r) (y,s)
+
+∴ p((x, t), A) ≥ p((y, s), A)
+
+Corolario 1
+Demostración. . ⇒) Queda demostrado por el teorema 3. ⇐) Queda demostrado por el teorema 4.
+Teorema 6
+Demostración. Sea A ⊂ Ω ﬁnito con cardinalidad mayor o igual a dos elementos, por las deﬁniciones 2.7 y 2.8, sabemos que p((x∗, t∗), A \ (xi, ti)) = j=i[1 − γ(xj, tj)]
+25
+
+⇒ p((x∗, t∗), A \ (xi, ti))[1 − γ(xi, ti)]n−1 = [1 − γ(xi, ti)]n−1 [1 − γ(xj, tj)]
+j=i
+
+= [1 − γ(xi, ti)][1 − γ(xj, tj)]
+j=i
+
+=
+
+p((x∗, t∗), {(xi, ti), (xj, tj)})
+
+j=i
+
+⇒ [1 − γ(xi, ti)]n−1 =
+
+j=i p((x∗, t∗), {(xi, ti), (xj, tj)}) p((x∗, t∗), A \ (xi, ti))
+
+∴ γ(xi, ti) = 1 −
+
+j=i p((x∗, t∗), {(xi, ti), (xj, tj)})
+
+1 n−1
+
+p((x∗, t∗), A \ (xi, ti))
+
+26
+
+Referencias
+[1] Pavlo R Blavatskyy. Probabilistic choice and stochastic dominance. Technical report, Institute for Empirical Research in Economics-University of Zurich, 2008.
+[2] Pavlo R Blavatskyy. Stochastic utility theorem. Journal of Mathematical Economics, 44(11):1049–1056, 2008.
+[3] Pavlo R Blavatskyy. How to extend a model of probabilistic choice from binary choices to choices among more than two alternatives. Economics Letters, 105(3):330–332, 2009.
+[4] Juan Dubra. A theory of time preferences over risky outcomes. Journal of Mathematical Economics, 45(9):576–588, 2009.
+[5] Kﬁr Eliaz and Ran Spiegler. Consideration sets and competitive marketing. The Review of Economic Studies, 78(1):235–262, 2011.
+[6] Kﬁr Eliaz and Ran Spiegler. On the strategic use of attention grabbers. Theoretical Economics, 6(1):127–155, 2011.
+[7] Daniel Kahneman and Amos Tversky. Prospect theory: An analysis of decision under risk. Econometrica: Journal of the Econometric Society, pages 263–291, 1979.
+[8] Edi Karni and Zvi Safra. An extension of a theorem of von neumann and morgenstern with an application to social choice theory. Journal of Mathematical Economics, 34(3):315– 327, 2000.
+[9] Mark J Machina. Choice under uncertainty: Problems solved and unsolved. The Journal of Economic Perspectives, 1(1):121–154, 1987.
+[10] P Manzini and M Mariotti. Stochastic choice and consideration sets, forthcoming in econometrica. 2013.
+[11] Andreu Mas-Colell, Michael Dennis Whinston, Jerry R Green, et al. Microeconomic theory, volume 1. Oxford university press New York, 1995.
+[12] Efe A Ok and Yusufcan Masatlioglu. A theory of (relative) discounting. Journal of Economic Theory, 137(1):214–245, 2007.
+[13] Karl Vind. von neumann morgenstern preferences. Journal of Mathematical Economics, 33(1):109–122, 2000.
+[14] John Von Neumann and Oskar Morgenstern. Theory of games and economic behavior, 1953.
+27
+
+

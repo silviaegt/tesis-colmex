@@ -1,0 +1,2587 @@
+i
+MAESTR√çA EN ECONOM√çA
+TRABAJO DE INVESTIGACI√ìN PARA OBTENER EL GRADO DE MAESTRO EN ECONOM√çA
+VULNERABILIDAD EN LOS HOGARES RURALES MEXICANOS NAHIELI VASQUEZ FEREGRINO
+PROMOCI√ìN 2013-2015 ASESOR:
+EDWIN VAN GAMEREN JULIO 2015
+
+2
+Vulnerabilidad en los hogares rurales mexicanos
+En este trabajo identificamos los factores que inciden sobre la probabilidad de transici√≥n dentro y fuera de la pobreza por parte de los hogares rurales mexicanos. Siguiendo la metodolog√≠a de CONEVAL, utilizamos datos de la Encuesta Nacional de Hogares Rurales de M√©xico (ENHRUM) para construir el ingreso de los hogares para los a√±os 2002 y 2007 y calcular la incidencia de pobreza tomando las l√≠neas de pobreza de bienestar econ√≥mico y de bienestar econ√≥mico m√≠nimo. Luego, corrimos un modelo donde estimamos tres ecuaciones de manera simult√°nea para identificar los factores que inciden en la probabilidad de ser pobre en el 2002, en que el hogar permanezca en la muestra, y en las transiciones dentro y fuera de la pobreza. Encontramos que los principales factores que explican las salidas y entradas en la pobreza son el g√©nero del jefe del hogar, la regi√≥n donde vive el hogar, la composici√≥n del hogar en t√©rminos de edad de los miembros, y si el jefe del hogar o alg√∫n otro miembro del hogar trabajada dentro o fuera del campo.
+
+3
+Tabla de contenido 1. Introducci√≥n ................................................................................................................................ 4 2. Teor√≠a y literatura........................................................................................................................ 6
+2.1 Econom√≠a de los hogares rurales ........................................................................................... 6 Caracter√≠sticas de los hogares rurales ...................................................................................... 6 Vulnerabilidad ......................................................................................................................... 9 Modelos de hogares rurales ................................................................................................... 11
+2.2 Econom√≠a de los hogares rurales mexicanos....................................................................... 13 Vulnerabilidad en los hogares rurales mexicanos ................................................................. 16
+3. Datos ...................................................................................................................................... 18 Ingreso ....................................................................................................................................... 18 Pobreza ...................................................................................................................................... 22 Transiciones .............................................................................................................................. 23
+4. Modelo econom√©trico ............................................................................................................ 25 Probit trivariado......................................................................................................................... 25 Variables a incluir ..................................................................................................................... 27
+5. Resultados.............................................................................................................................. 31 6. Conclusiones.......................................................................................................................... 37 Anexo ............................................................................................................................................ 39 Bibliograf√≠a ................................................................................................................................... 43 √çndice de Cuadros ......................................................................................................................... 45
+
+4
+1. Introducci√≥n
+La presente investigaci√≥n se propone determinar qu√© caracter√≠sticas de los hogares rurales mexicanos provocan que sean m√°s vulnerables a caer la pobreza. Los estudios sobre pobreza, que tradicionalmente se enfocan a medir si la incidencia de la pobreza aument√≥ o disminuy√≥, generalmente asumen de manera impl√≠cita que los pobres siempre son las mismas personas. Sin embargo, a√∫n si las tasas de pobreza se mantuvieran estables, el fen√≥meno tiene una din√°mica en la que hay hogares que salen de ella y otros que entran, dependiendo de sus caracter√≠sticas, comportamientos demogr√°ficos y choques.
+En los pa√≠ses desarrollados, que por lo general cuentan con sistemas de protecci√≥n social extensos, durante un choque el gasto y las prestaciones sociales desempe√±an un papel vital de estabilizaci√≥n del ingreso y del consumo de los hogares. Adem√°s, el sistema de protecci√≥n social amortigua el impacto de las p√©rdidas de empleo mediante prestaciones sociales asociadas al desempleo o a tener cierto nivel de ingreso. En contraste, en los pa√≠ses en desarrollo, donde los sistemas de seguridad social se encuentran mucho menos avanzados, y hay menos acceso a seguros y a otros mecanismos de cobertura, la poblaci√≥n que es vulnerable a caer en la pobreza es mucho m√°s grande que aquella que es efectivamente pobres.
+Es primordial entonces determinar qu√© caracter√≠sticas de los hogares provocan que estos sean m√°s o menos propensos a caer en la pobreza o a salir de ella. La vulnerabilidad de los hogares se define como el riesgo de que aquellos hogares que no son pobres hoy sean pobres ma√±ana. Es posible que los √≠ndices de pobreza se reduzcan, pero que los hogares sean vulnerables a caer de nuevo en la pobreza. Es necesario identificar y comprender las caracter√≠sticas que aumentan la vulnerabilidad de los hogares para lograr reducir la pobreza. La comprensi√≥n de los factores que determinan la din√°mica de la pobreza pueden tener un gran valor para el dise√±o de pol√≠ticas p√∫blicas, tales como la promoci√≥n de estrategias de crecimiento y de prestaciones sociales que favorezcan la salida de la pobreza o la implementaci√≥n de redes de protecci√≥n social que eviten que los hogares caigan en pobreza.
+Las pol√≠ticas necesarias para luchar contra la pobreza permanente pueden ser muy diferentes de las que se necesitan para luchar contra la transitoria. El conocimiento de los factores ligados a la transici√≥n hacia la pobreza puede permitirnos enfocar las pol√≠ticas p√∫blicas a los grupos
+
+5
+que son particularmente vulnerables. Tambi√©n, un an√°lisis din√°mico de la pobreza puede ayudar a entender el papel que desempe√±a la pol√≠tica social en cuanto a dos objetivos diferentes: evitar que los hogares caigan en la pobreza y ayudar a los hogares pobres a salir de ella.
+Decidimos enfocarnos al estudio exclusivo de los hogares rurales porque los hogares rurales pueden experimentar mayores fluctuaciones dentro y fuera de la pobreza que los hogares urbanos, dado que, por una parte, los hogares rurales est√°n m√°s expuestos a choques ya que su ingreso depende en mucho mayor medida de las variaciones clim√°ticas como las sequ√≠as o inundaciones, y, por otra, tienen menor acceso a las servicios p√∫blicos como salud y educaci√≥n, lo cual hace que tengan menor resiliencia ante choques que los hogares urbanos.
+Dado que en este trabajo analizaremos a los hogares rurales, utilizaremos los datos de la Encuesta Nacional de Hogares Rurales de M√©xico (ENHRUM). La ENHRUM es una encuesta tipo panel que es representativa para las comunidades rurales y para la cual hay dos rondas disponibles. La primera ronda o l√≠nea basal se levant√≥ en el a√±o 2002 y la segunda ronda se levant√≥ en 2007. La ENHRUM cuenta con informaci√≥n para una amplia variedad de caracter√≠sticas de los hogares, tales como las variables sociodemogr√°ficas, la historia laboral, los ingresos por actividades como agricultura, ganader√≠a, explotaci√≥n de recursos naturales y bienes de servicios. Tambi√©n, encontramos en la encuesta si los hogares recibieron alg√∫n tipo de transferencias del gobierno.
+Es necesario tener en cuenta que el ingreso de los hogares rurales se encuentra diversificado entre varias fuentes de ingreso, como: el trabajo asalariado, la producci√≥n de bienes y servicios en el hogar tanto para la venta como para el autonconsumo y la migraci√≥n. As√≠, buena parte de los hogares rurales mexicanos se caracterizan por la presencia de autoconsumo, es decir, son peque√±as unidades productivas donde se producen bienes agr√≠colas y ganaderos para el consumo del hogar (Y√∫nez, 2010). Dado lo anterior, trabajaremos dentro del marco de los modelos de hogares rurales, que es el tipo de modelos econ√≥micos que t√≠picamente se utilizan para analizar las decisiones econ√≥micas de los hogares rurales en los pa√≠ses en desarrollo (Taylor, 2012).
+Utilizaremos la t√©cnica econom√©trica de Cappellari y Jenkins (2004) para analizar las transiciones dentro y fuera de la pobreza, que es un probit trivariado donde se estiman tres ecuaciones: una para el estado de pobreza inicial en 2002, otra para la retenci√≥n de los hogares en la muestra y otra para el estado de pobreza en 2007. Usaremos esta t√©cnica por varias razones. En
+
+6
+primer lugar, considera que el estado inicial de pobreza no es ex√≥geno. En segundo lugar, permite considerar efectos diferenciados de las variables explicativas para el estado de pobreza en 2007 para dos tipos de hogares: aquellos que eran pobres en 2002 y aquellos que no eran pobres en 2002. En tercer lugar, estima correlaciones entre los t√©rminos de error de las tres ecuaciones arriba mencionadas, por lo que podemos saber si debido a factores no observados el ser pobre en 2002 aumenta la probabilidad de ser pobre en 2007, aun controlando por las caracter√≠sticas de los hogares.
+Este trabajo est√° organizado de la manera siguiente. En la secci√≥n 2 discutiremos los modelos de hogares rurales y las caracter√≠sticas de los hogares rurales mexicanos. En la secci√≥n 3 presentaremos los datos que utilizamos para el trabajo. En la secci√≥n 4 presentaremos el modelo econom√©trico utilizado. En la secci√≥n 5 discutiremos los resultados encontrados. En la secci√≥n 6 presentaremos las conclusiones.
+2. Teor√≠a y literatura 2.1 Econom√≠a de los hogares rurales Caracter√≠sticas de los hogares rurales La mayor parte de los pobres en el mundo en desarrollo se encuentran en zonas rurales, y se espera que esta tendencia contin√∫a durante las pr√≥ximas d√©cadas (Ravallion, Chen y Sangraula, 2007). En el a√±o 2005, del total de 1,4 mil millones de personas en el mundo que viv√≠an en extrema pobreza de acuerdo a la l√≠nea de pobreza de las Naciones Unidas (es decir, con menos de 1,25 d√≥lares PPP por d√≠a) alrededor del 70% viv√≠an en zonas rurales (Naciones Unidas, 2010). Sin embargo, en Am√©rica Latina al igual que en el Medio Oriente, a diferencia de regiones como √Åfrica Subhariana y el Sudeste de Asia, la mayor√≠a de los pobres viven en zonas urbanas y no rurales. A pesar de esto, los hogares rurales en Am√©rica Latina pobres son m√°s pobres que los hogares pobres urbanos (FIDA, 2011).
+En el mundo en desarrollo, los hogares rurales se encuentran en general en desventaja si los comparamos a los hogares urbanos. Por ejemplo, en todas las regiones en desarrollo, los ni√±os de entornos rurales tienen m√°s probabilidades de sufrir de malnutrici√≥n que los ni√±os de zonas urbanas. En Am√©rica Latina y el Caribe, es cinco veces m√°s probable que un ni√±o que vive en
+
+7
+zonas rurales sufra de desnutrici√≥n que un ni√±o que vive en las zonas urbanas (Banco Mundial, 2005).
+Las razones de las desventajas de los hogares rurales respecto a los hogares son varias. Seg√∫n un estudio sobre las diferentes caracter√≠sticas de los hogares pobres y los no pobres en varios pa√≠ses √Åfrica, Europa del Este, Am√©rica Latina y el Caribe, hay evidencia de que, en comparaci√≥n a los hogares no pobres, los hogares pobres tienen mayor n√∫mero de miembros del hogar, mayores tasas de dependencia ya sea por ni√±os peque√±os o por personas adultas mayores dependientes, menos nivel de instrucci√≥n, menor cantidad de tierras, y menor acceso al agua corriente y a la electricidad (Vald√©s et al., 2008).
+Tambi√©n, podemos apreciar que en todas las regiones del mundo en desarrollo, las tasas m√°s altas de pobreza se encuentran generalmente en las regiones aisladas, que normalmente est√°n marginadas, poco integradas y de dif√≠cil acceso (FIDA, 2011). Adem√°s, es frecuente que los grupos ind√≠genas, cuyas tasas de pobreza se encuentran entre las m√°s altas del mundo vivan en las zonas m√°s altas y marginadas.
+Adem√°s, en todas las regiones del mundo, los hogares rurales est√°n desfavorecidos en el nivel de capital humano con respecto a los hogares urbanos, debido a que los servicios p√∫blicos de salud y de educaci√≥n tienden a favorecen a las ciudades sobre el medio rural en cuanto al acceso a la educaci√≥n, a la salud, al agua y a los servicios de drenaje.
+Los medios de subsistencia de los hogares pobres rurales en el mundo reflejan las posibilidades y las restricciones de las zonas en las que viven, por ejemplo, sobre los recursos naturales, el acceso a los mercados y sus caracter√≠sticas como hogares. Existe evidencia de que las fuentes de ingreso de los hogares rurales est√°n ampliamente diversificadas, contando con fuentes como la producci√≥n propia agr√≠cola y ganadera, el empleo remunerado agr√≠cola y no agr√≠cola, el trabajo independiente y las transferencias de ingreso, entre las que se incluyen las remesas. Seg√∫n datos del Informe sobre la pobreza rural 2011 (FIDA, 2011) para 15 pa√≠ses de Am√©rica Latina, √Åfrica y Asia, el ingreso proveniente de actividades agropecuarias representa solamente entre el 35% y el 70% del ingreso total de los hogares rurales y entre 30 y 60% de los hogares rurales depend√≠an de al menos dos fuentes de ingreso para asegurar su ingreso total.
+
+8
+La importancia de cada componente del ingreso var√≠a seg√∫n las regiones. Para Am√©rica Latina, entre 20 y 40% de los hogares participan en actividades remuneradas, sean agr√≠colas o no agr√≠colas, y los salarios, agr√≠colas o no agr√≠colas, constituyen el 75% del ingreso del hogar para entre 24 y 31% de los hogares. La importancia del ingreso proveniente del ingreso agr√≠cola var√≠a entre los hogares, y para casi todos los pa√≠ses cuyos datos se encuentran en la base de datos RIGA1 en √Åfrica Subsahariana, Am√©rica Latina y el Caribe y Asia, los hogares m√°s pobres obtienen la mayor parte de sus ingresos de la agricultura y del empleo remunerado en actividades agr√≠colas, mientras que los m√°s ricos obtienen la mayor parte de su ingreso de actividades no agr√≠colas (FIDA, 2011). Adem√°s, el trabajo independiente no agr√≠cola es importante es todas las regiones, y entre 20 y 40% de los hogares rurales lo tiene como fuente de ingreso (Vald√©s et al., 2008). El porcentaje del ingreso proveniente de las actividades rurales no relacionadas con la agricultura ha aumentado en los pa√≠ses de bajo y mediano ingreso, y en Am√©rica Latina en los a√±os 1990 el ingreso proveniente de esta fuente represent√≥ alrededor de 40% de los ingresos rurales (Reardon, Berdegu√© y Escobar, 2001). Adem√°s, la migraci√≥n es tambi√©n una estrategia importante dentro de la diversificaci√≥n del ingreso de los hogares para reducir el riesgo relacionado a las actividades ligadas a la agricultura, y las remesas constituyen una parte significativa del ingreso en gran parte de los pa√≠ses en desarrollo (Taylor, 2012).
+Es necesario considerar que los hogares rurales de las econom√≠as en desarrollo hacen frente a muchos obst√°culos que no enfrentan los grandes productores de los pa√≠ses desarrollados. Entre estos obst√°culos podemos citar : un limitado acceso a la tierra (en especial a la tierra irrigada), la baja calidad de la tierra, las limitaciones tecnol√≥gicas, el no acceso a semillas de mejor calidad, el acceso limitado a insumos modernos como fertilizantes y pesticidas, acceso limitado o no acceso a cr√©dito, falta de liquidez para comprar insumos, acceso limitado o no acceso a seguros e instrumentos de cobertura para hacer frente al riesgo del fracaso de la cosecha y restricciones sobre la oferta laboral (Taylor, 2012).
+Un problema b√°sico de los hogares rurales de los pa√≠ses en desarrollo es que los insumos deben comprarse varios meses antes de que se pueda recolectar la cosecha. Por lo tanto, a menos
+1 La base de datos RIGA (Rural Income Generating Activities), que elabora la FAO, contiene variables sobre las actividades rurales generadoras de ingreso e incluye datos de Mali, Madagascar, Malawi, Nepal, Nigeria, Ghana, Kenia, Marruecos, Guatemala, Tayikist√°n, Vietnam, Bangladesh, Indonesia, Pakist√°n, Albania, Senegal, Nicaragua, M√©xico, Panam√°, Ecuador y Bulgaria.
+
+9
+que el hogar pueda tener acceso a cr√©dito, su demanda de insumos para la cosecha y, en consecuencia, la futura producci√≥n, estar√° limitada por las restricciones de liquidez del hogar. Lo anterior podr√≠a ocasionar, por ejemplo, que a√∫n si el precio del bien que produce el hogar sube, el hogar no sea capaz de aumentar su producci√≥n. Dadas tales limitaciones y que la l√≥gica con la que producen los hogares rurales no es una l√≥gica de mercado simple, es un hecho conocido que la rentabilidad de las peque√±as explotaciones pueda ser negativa, plasmado en trabajos como el de Kula (1970) para la econom√≠a polaca (Banco Mundial, 2005).
+Vulnerabilidad Existe evidencia de que las tasas de entrada y salida de la pobreza de los hogares rurales en los pa√≠ses en desarrollo son muy altas. Seg√∫n datos proveniente de Argentina, Bangladesh, Chile, China, Egipto, Etiop√≠a, Indonesia, Uganda e Ir√°n, hay mayor n√∫mero de personas que s√≥lo son pobres en alg√∫n momento en el tiempo que personas que siempre son pobres (Dercon y Shapiro, 2007). Seg√∫n el Informe sobre la pobreza rural 2011 (FIDA, 2011), para datos sobre nueve pa√≠ses en desarrollo de √Åfrica, Am√©rica Latina, y Asia2, es muy frecuente que entre el 10 y el 20% de la poblaci√≥n entra o salga de la pobreza entre en el curso de 5 a 10 a√±os, e incluso para Sud√°frica, Uganda y Vietnam el 30% de la poblaci√≥n puede entrar o salir de la pobreza en el mismo per√≠odo de tiempo. Una posible explicaci√≥n a las altas tasas de entrada y salida de la pobreza de los hogares rurales en el mundo en desarrollo es que, por una parte, son m√°s propensos a enfrentar choques y, por otra parte, son menos resistentes a ellos.
+Todas las personas y todos los hogares estar√°n confrontados a diversos choques a lo largo de la vida, desde choques peque√±os hasta choques muy grandes como la enfermedad grave de un miembro de la familia. Sin embargo, los recursos con los que cuentan los hogares para hacer frente a los choques pueden ser muy diferente, por lo que el grado de resiliencia de dos hogares diferentes al mismo tipo de choque puede ser muy diferente.
+Dado que los hogares pobres tienen menos resiliencia antes los cuales caer en caso de un choque adverso, es esencial para ellos adoptar estrategias que reduzcan el riesgo. La diversificaci√≥n del ingreso es una de las estrategias que los hogares rurales adoptan reducir el
+2 Datos de Albania, Egipto, Etiop√≠a, Indonesia, Nicaragua, Sud√°frica, Uganda, Tanzania y Vietnam.
+
+10
+riesgo que conlleva sobre el fracaso de una o m√°s fuentes de su ingreso, asignando de esta manera los recursos productivos, tales que el capital, el trabajo y la tierra a diferentes actividades. Los hogares rurales tienen, adem√°s, estrategias para reducir en las actividades agr√≠colas, como, sembrar diferentes tipos de cultivos, diferentes tipos de semilla del mismo tipo de cultivo o fechas diferentes para evitar que toda la cosecha se pierda en caso de eventos clim√°ticos adversos como sequ√≠as o inundaciones (FIDA, 2011).
+Sin embargo, todas las posibles oportunidades para salir de la pobreza conllevan en mayor o menor media una dosis de riesgo: invertir en fertilizantes, en semillas mejoradas, migrar, pasar a la agricultura comercial y dejar de lado la agricultura de subsistencia, lanzar una peque√±a empresa. Por lo tanto, dado que los hogares rurales siempre hacen lo posible por reducir el riesgo, en muchas ocasiones dejan pasar oportunidades que podr√≠an mejorar su ingreso. Hay estudios que demuestran que los rendimientos de los hogares pobres podr√≠an ser de 10 a 20% superiores si no hubiera riesgo (FIDA, 2010)
+Un solo choque puede provocar que un hogar caiga en la pobreza. Sin embargo, la combinaci√≥n de choques o la secuencia de choques pueden provocar mayor da√±o a los hogares rurales y pueden ocasionar que ya no sean capaces de escapar a la pobreza el hacerlos caer en una trampa de pobreza. Los hogares rurales est√°n expuestos en mayor medida al riesgo que los hogares urbanos dados sus medios de subsistencia, las zonas donde viven y sus capacidades, puesto que est√°n mucho m√°s expuestos al riesgo de cat√°strofes naturales y a la volatilidad de los precios de los alimentos. El riesgo de la enfermedad tambi√©n es grande para ellos ya que disponen de un menor acceso a la salud.
+En caso de enfrentarse a un choque, los hogares cuentan con diferentes estrategias, como: hipotecar o vender los medios de producci√≥n, recurrir a las redes sociales, mayor dependencia de las remesas o del trabajo remunerado, la reducci√≥n del ahorro, contraer pr√©stamos, reducci√≥n de gastos en educaci√≥n, alimentaci√≥n o salud, retirar a los ni√±os de la escuela para ponerlos a trabajar (Pandey y Bhandari, 2009). En casos m√°s graves, los hogares pueden recurrir a soluciones como vender los medios de producci√≥n o reducir el n√∫mero de comidas por d√≠a, lo cual puede tener dr√°sticas consecuencias sobre la posibilidad del hogar de escapar en el futuro de la pobreza. Vender la tierra o el ganado que se posee implica que, sin medios de producci√≥n, ser√° m√°s dif√≠cil para el hogar salir de la pobreza en un futuro pues tendr√° menos fuentes de ingreso. Reducir el gasto en
+
+11
+alimentaci√≥n puede llevar consigo graves consecuencias sobre el desarrollo infantil y el desarrollo de capacidades cognitivas, as√≠ como menor resistencia a enfermedades.
+Debido a sus caracter√≠sticas, los hogares rurales de los pa√≠ses en desarrollo est√°n menos protegidos respecto a los choques, dado que tienen un menor acceso a la seguridad social, menor acceso a la salud, menor acceso a la educaci√≥n, y cuentan en general con pocos ahorros. De tal manera, que los hogares rurales del mundo en desarrollo no solo est√°n expuestos a un mayor n√∫mero de choques, sino que adem√°s tienen menor capacidad para hacer frente a ello, por lo que son muy vulnerables y est√°n expuestos a variaciones bruscas de bienestar. Esto puede explicar las altas tasas de entrada y salida de pobreza observadas para los hogares rurales pobres.
+Modelos de hogares rurales En los pa√≠ses desarrollados, la mayor√≠a de los productores agr√≠colas y ganaderos son empresas que producen para vender en el mercado. Sin embargo, en los pa√≠ses en desarrollo, los productores agr√≠colas y ganaderos consumen una parte o la totalidad de su producci√≥n, adem√°s de que se autoproporcionan una buena parte de los insumos que necesitan, como el trabajo o la tierra. Por lo anterior, para estudiar a los hogares rurales de los pa√≠ses en desarrollo en necesario tener en cuenta su naturaleza dual de consumidores y productores, motivo por el cual se han desarrollado modelos de hogares rurales (Singh, Squire y Strauss, 1986). Diferenciar el comportamiento de estos dos tipos de unidades de producci√≥n es importante dado que su comportamiento econ√≥mico y respuesta ante choques difiere (Taylor y Adelman, 2003). Los primeros modelos de hogares rurales empezaron a desarrollarse a principios de la d√©cada de los a√±os ochenta para explicar el resultado contraintuitivo de que un aumento significativo en el precio del arroz en Jap√≥n no aument√≥ la cantidad comerciada del mismo (Kuroda y Yotopoulos, 1978). A manera de ejemplo, para los hogares rurales en los pa√≠ses pobres no podemos asumir que un aumento del precio de los alimentos ser√° ben√©fico para ellos dado que esto tendr√≠a en ellos dos efectos: por una parte, aumenta su ingreso por la venta de alimentos en tanto que productores y, por otra parte, aumenta los precios que enfrentan en tanto que consumidores.
+En el modelo tradicional del consumidor en el que tenemos dos bienes, comida y un bien numerario, cuando aumenta (disminuye) el precio de los alimentos la restricci√≥n presupuestaria
+
+12
+pivotea hacia adentro (hacia afuera) sobre la cesta de consumo alcanzable cuando el hogar gasta todo su ingreso en el bien numerario. Dado este giro de la restricci√≥n presupuestaria, en la nueva cesta √≥ptima de consumo, el hogar consumir√° menos alimentos. Por lo tanto, un cambio en el precio de uno de los dos bienes puede descomponerse en el efecto sustituci√≥n y el efecto ingreso. El efecto sustituci√≥n se refiere a la variaci√≥n de la demanda provocada por una variaci√≥n de la relaci√≥n de intercambio entre los dos bienes. El efecto ingreso se refiere a la variaci√≥n de la demanda provocada por un aumento (disminuci√≥n) del poder adquisitivo.
+En el caso del modelo de hogares rurales, un incremento en el precio de los alimentos, tendr√° otros efectos en el hogar: por una parte el incremento en el precio beneficiar√° a los hogares en tanto que productores, pero por otro lado, el incremento en el precio de los alimentos los perjudica en tanto que consumidores. Por lo tanto, en el caso de los hogares rurales, el efecto sobre la cesta de consumo y las decisiones del hogar puede descomponerse en tres efectos diferentes: el efecto sustituci√≥n, el efecto ingreso y el efecto beneficios. Es decir, en los hogares rurales, hay un efecto adicional que no se encuentra presente en el modelo tradicional de consumidor: el efecto beneficios. El efecto beneficios se refiere al cambio en las decisiones del hogar provocado por una variaci√≥n en los beneficios de la venta del bien, es decir, en el ingreso neto por la producci√≥n y venta del bien. De tal manera, si el efecto beneficios es suficientemente fuerte y domina sobre los otros dos efectos mencionados, es posible que el hogar responda al incremento del precio del bien incrementando su consumo.
+Supongamos que un hogar rural cultiva ma√≠z, cuya producci√≥n dedica en parte a la venta y en parte al autoconsumo. Si el precio del ma√≠z aumenta, como lo mencionamos arriba, podemos descomponer el cambio en las decisiones del hogar en tres efectos. En primer lugar, habr√° un efecto sustituci√≥n, el cual implicar√° que el hogar sustituir√° una parte del consumo de ma√≠z por consumo de otros bienes, a menos que la elasticidad de sustituci√≥n del ma√≠z por otros bienes sea cero. En segundo lugar, habr√° un efecto ingreso, que se traducir√° en que el poder de compra del hogar se reducir√°. En tercer lugar, habr√° un efecto beneficios, que en este caso implicar√° que el hogar aumentar√° sus ingresos netos por la venta del ma√≠z, dado que el precio de este en el mercado ha aumentado.
+La principal diferencia entre los modelos de hogares rurales y el modelo cl√°sico del consumidor es que para el modelo cl√°sico la restricci√≥n presupuestaria es ex√≥gena y para los
+
+13
+hogares rurales √©sta es end√≥gena. La diferencia clave es que la restricci√≥n presupuestaria en los hogares rurales incluye las ganancias de vender los bienes que producen, al mismo tiempo que son consumidores de esos bienes.
+2.2 Econom√≠a de los hogares rurales mexicanos La estructura agraria mexicana se caracteriza por la presencia simult√°nea de grandes unidades de producci√≥n con alta productividad y de unidades campesinas de producci√≥n que consumen al menos una parte de los alimentos que producen, que usan trabajo familiar y en los cuales las decisiones econ√≥micas se toman dentro del marco de hogar rural (Y√∫nez, 2010). En consecuencia, podemos explicar el comportamiento de los hogares rurales mexicanos utilizando los modelos de hogares rurales.
+Seg√∫n Taylor, Y√∫nez y Ceron (2004) el ingreso de los hogares est√° diversificado entre actividades tanto agropecuarias como no agropecuarias y los hogares con mayor n√∫mero de miembros tienden a participar en m√°s actividades. Adem√°s, el capital humano incentiva la participaci√≥n en actividades no agropecuarias y en actividades agropecuarias modernas y desincentiva la participaci√≥n en la agricultura tradicional, ganader√≠a tradicional y la participaci√≥n en el mercado laboral agr√≠cola.
+Seg√∫n un estudio del Banco Mundial (2005) sobre pobreza rural en M√©xico la diversificaci√≥n de las actividades es una manera de reducir el riesgo para los hogares rurales mexicanos y la agricultura de subsistencia desempe√±a un papel de mitigaci√≥n de riesgos de los hogares rurales; adem√°s, la agricultura de subsistencia no es una actividad que solo desempe√±an los hogares muy pobres ni un actividad a los cuales los hogares se dediquen de manera exclusiva, sino que es parte de una estrategia general de diversificaci√≥n de las actividades del hogar. Tambi√©n, el porcentaje de hogares que declara que la agricultura es su principal fuente de ingreso es mucho mayor que el porcentaje que representa el ingreso proveniente de la agricultura en el ingreso total. Una posible explicaci√≥n a lo anterior es que la agricultura es una actividad estacional, donde un gran porcentaje de trabajadores trabaja a tiempo parcial o de manera informal (Banco Mundial, 2005).
+
+14
+La importancia de cada componente del ingreso var√≠a seg√∫n el nivel de ingreso de los hogares y la regi√≥n en la que viven. El ingreso proveniente de la agricultura de subsistencia y de las transferencia es m√°s importante para los hogares pobres que para los hogares que no son pobres, al contrario del ingreso proveniente de las actividades rurales no agr√≠colas o las remesas, que son m√°s importantes para los hogares no pobres que para los pobres. En cuanto a las diferencias entre regiones, el porcentaje del ingreso proveniente de la agricultura es mayor en el sur del pa√≠s que en otras regiones
+Los peque√±os productores agr√≠colas en M√©xico tienen, al igual que los peque√±os agricultores de otros pa√≠ses en desarrollo, restricciones que dificultan que aumenten su producci√≥n. El mercado financiero en M√©xico es poco profundo en M√©xico, incluso comparado con otros pa√≠ses de Am√©rica Latina de ingreso medio; adem√°s, el acceso al cr√©dito es a√∫n menor en √°reas rurales. Las restricciones al cr√©dito parecen impedir que los peque√±os agricultores usen cantidades √≥ptimas de insumos. Seg√∫n el Banco Mundial (2003) si los peque√±os agricultores y microempresarios no hubieran tenido restricciones de cr√©dito, el porcentaje de ellos que habr√≠a hecho inversiones habr√≠a sido entre 12 y 41% m√°s alto. Adem√°s, la oferta de cr√©dito es muy peque√±a, lo que se traduce en que muchos agricultores dispuestos a obtener pr√©stamos a las tasas de inter√©s vigentes no puedan hacerlo; en 2002, solo el 6% de los agricultores y el 5% de los microempresarios rurales obtuvieron cr√©ditos de fuentes formales.
+Dado que las caracter√≠sticas de los hogares rurales y urbanos son diferentes, la pobreza rural tiene caracter√≠sticas diferentes a la pobreza urbana. Por ejemplo, a pesar de que los hogares urbanos pobres tienen un acceso limitado a servicios como el de salud y el de educaci√≥n, su acceso a estos servicios es mayor que el acceso de los hogares rurales pobres. Adem√°s, los hogares rurales pobres tienen una red de seguridad en la agricultura de subsistencia.
+Hay varias razones entonces por las cuales es importante enfocarnos en el estudio de la pobreza en los hogares rurales mexicanos y no estudiar la pobreza en los hogares en general. En M√©xico, la incidencia de la pobreza y de la pobreza extrema en las √°reas rurales es mucho m√°s alta que en las √°reas urbanas. Adem√°s, los pobres rurales est√°n en general m√°s lejos de la l√≠nea de pobreza que los pobres urbanos, y m√°s hogares en el extremo bajo de la distribuci√≥n de ingreso en el medio rural que en el medio urbano, seg√∫n datos de la ENIGH 1992, 1996 y 2002 (Banco
+
+15
+Mundial, 2005). Por lo tanto, a√∫n si la mayor√≠a de los pobres viven en √°reas urbanas, la mayor√≠a de los pobres extremos viven en √°reas rurales.
+Podemos identificar algunas caracter√≠sticas de los hogares rurales mexicanos que est√°n correlacionadas con la pobreza. La pobreza rural est√° distribuida de manera no homog√©nea sobre el territorio, concentr√°ndose en las zonas monta√±osas, en las √°reas ind√≠genas, y en las zonas centro y sur del pa√≠s. (Bellon et al., 2004 y Araujo, 2003). La geograf√≠a complicada de tales regiones donde se concentra la pobreza provoca no s√≥lo que tengan menor acceso a los servicios p√∫blicos, sino que tambi√©n dificulta el acceso a los activos p√∫blicos y privados (Escobal y Torero, 2000). Adem√°s, no s√≥lo hay mayor incidencia de pobreza en la zona sur que en la zona norte del pa√≠s, sino que la pobreza es m√°s profunda en el sur que en el norte (Banco Mundial, 2005).
+La pobreza est√° correlacionada con ciertas caracter√≠sticas, como que el jefe del hogar tenga poca educaci√≥n, se dedique a la agricultura o trabaje en el sector informal, que el hogar se dedique a la agricultura o tener hijos peque√±os dependientes (Banco Mundial, 2005). Adem√°s, hay una asociaci√≥n positiva entre los salarios por hora y el nivel de educaci√≥n, lo que se refleja en que los sueldos por hora de los trabajadores que terminaron la preparatoria son m√°s altos que los de aquellos que no terminaron la primaria.
+Sobre la composici√≥n del hogar, los hogares donde hay ni√±os peque√±os tienen mayor incidencia de pobreza, debido a que los ni√±os peque√±os consumen recursos pero no generan ingreso, sin embargo a medida que los ni√±os crecen y tienen ya la edad suficiente para ir a trabajar, la desventaja de los hogares con ni√±os desaparece. Los hogares donde hay adultos mayores tambi√©n tienen una mayor probabilidad de ser pobres, debido a que el ratio de dependencia aumenta.
+Pertenecer a un grupo ind√≠gena es una desventaja para los hogares rurales mexicano. Los grupos ind√≠genas en M√©xico sufren de discriminaci√≥n y tienen menos activos pol√≠ticos y culturales. Hay evidencia que muestra que los trabajadores ind√≠genas tienen menores sueldos que los no ind√≠genas despu√©s de controlar por caracter√≠sticas observables como educaci√≥n y sector de empleo (Ram√≠rez y Garc√≠a, 2004) y que un trabajador ind√≠gena en la agricultura con entre 6 y 11 a√±os de educaci√≥n tiene 2 veces m√°s probabilidades de ser pobre y cuatro veces m√°s probabilidades de ser pobre extremo que un trabajador rural no ind√≠gena con la misma caracter√≠sticas (Banco Mundial, 2005).
+
+16
+Hay caracter√≠sticas de los hogares cuyo efecto depende de otras caracter√≠sticas. Por ejemplo, el efecto sobre el bienestar de los hogares de la cantidad de tierra que tienen depende de otras caracter√≠sticas. El aumento en el bienestar de poseer tierra es siete veces mayor para los hogares no ind√≠genas que tienen acceso a caminos y cuyo jefe del hogar tiene al menos educaci√≥n primaria que para los hogares ind√≠genas, sin acceso a caminos ind√≠genas y cuyo jefe no tiene instrucci√≥n (Finan, Sadoulet y Janvry, 2002).
+Vulnerabilidad en los hogares rurales mexicanos El riesgo de los hogares rurales mexicanos de caer en la pobreza depender√° de sus caracter√≠sticas, fuentes de ingreso y los activos que tienen. Aquellos que no tienen tierra dependen del trabajo remunerado por lo que enfrentan el riesgo de desempleo, mientras que los peque√±os agricultores dependen de su producci√≥n por lo que enfrentan, en consecuencia, riesgos productivos ligados al clima y a la volatilidad de los precios (Banco Mundial, 2005). La vulnerabilidad tambi√©n depender√° de si el hogar tiene ahorros o activos para hacer frente a un choque, como animales que pueda vender o granos almacenados.
+Los hogares rurales en M√©xico tienen diversas caracter√≠sticas en cuanto a tama√±o, composici√≥n y estrategia de diversificaci√≥n de ingresos y elecci√≥n de actividades econ√≥micas a realizar. Los dos tipos b√°sicos de hogares en el medio rural son la familia nuclear monog√°mica y la familia extendida donde varias familias nucleares relacionadas entre s√≠ forman un solo hogar. Tambi√©n, as√≠ como los hogares rurales son m√°s grandes que los no rurales, las familias rurales ind√≠genas son m√°s grandes que las familias rurales no ind√≠genas. Las estrategias de los hogares sobre las actividades tambi√©n difieren seg√∫n los activos a los que tengan acceso y el grado de escolaridad que tienen.
+Seg√∫n Skoufias (2004) dada la ausencia de mercados formales de aseguramiento, los hogares rurales mexicanos tienen una amplia variedad de estrategias para mitigar los riesgos y reducir su vulnerabilidad, entre las que podemos nombrar sacar a los ni√±os de la escuela para mandarlos a trabajar, la acumulaci√≥n de activos, la diversificaci√≥n del ingreso, la migraci√≥n, el matrimonio y las transferencias de ingreso entre amigos y familiares. Seg√∫n un estudio del Banco Mundial (2003), en M√©xico el incremento de la oferta laboral es el principal mecanismo para hacer
+
+17
+frente a los choques entre los peque√±os agricultores y los microempresarios rurales mexicanos, seguido de estrategias como la venta de activos o pedir prestado a amigos y familiares; adem√°s, el cr√©dito formal es un mecanismo muy poco utilizado. Asimismo, el tama√±o de la familia es un elemento importante en el manejo del riesgo, dado que las familias grandes tienen mayores oportunidades para diversificar el ingreso, mayor capital social, mayores econom√≠as de escala y pueden movilizar m√°s trabajo familiar si es necesario.
+En cuanto a las fuentes de riesgo, entre las m√°s importantes para los hogares mexicanos se encuentran la enfermedad y los eventos clim√°ticos. La tasa de crecimiento de los ingresos de los hogares cuyo jefe experimenta una enfermedad es entre 20 y 22% menor que la de los dem√°s. Tambi√©n, los choques relacionados al clima son extremadamente frecuentes para los hogares rurales mexicanos, y seg√∫n datos de la ENHRUM de 2002, alrededor de 44% de los agricultores en el pa√≠s experiment√≥ alg√∫n tipo de choque relacionado al clima durante 2002 (Banco Mundial, 2005).
+El tipo de riesgos a los que se enfrentan los hogares rurales de M√©xico no es igual para todos. Maloney et al. (2003) investigaron el efecto de las caracter√≠sticas del hogar sobre las distribuciones de los diferentes tipos de choques es las √°reas rurales y urbanas. Entre los hallazgos se encuentra que los trabajadores informales experimentan mucha mayor variabilidad de ingresos que los trabajadores formales, y que los niveles m√°s altos de educaci√≥n no contribuyen de manera significativa a reducir los efectos de los choques negativos de ingreso. Adem√°s, los hogares en los dos primeros cuartiles experimentaron menos choques que los hogares en los dos √∫ltimos cuartiles, probablemente debido a las estrategias para evitar el riesgo (Banco Mundial, 2005). Tambi√©n, seg√∫n un estudio del Banco Mundial (2003) hay una correlaci√≥n positiva entre la probabilidad de incidencia de choques negativos de ingreso para los agricultores y que √©stos dependan de comerciantes informales para vender su producci√≥n, y una correlaci√≥n negativa entre contar con irrigaci√≥n y el uso de semillas certificadas.
+En cuanto a los programas de transferencia de ingresos condicionados del gobierno, como Oportunidades, se ha encontrado evidencia que afirma que a pesar de asegurar un ingreso m√≠nimo, no protegen contra riesgos (Skoufias, 2004). Sin embargo, hay otros programas del gobierno mexicano para la reducci√≥n de riesgos, como los fondos de aseguramiento, el Agroasemex y el Fonden.
+
+18
+El Fondo de Desastres Naturales de M√©xico (FONDEN), es un fondo de aseguramiento del gobierno contra desastres naturales. El fondo financia la reconstrucci√≥n de la infraestructura da√±ada y compense a los pobres rurales por sus p√©rdidas. Las principales maneras en las que el fondo protege a los pobres rurales son: primero, reciben subsidios para reconstruir sus casas si fueron afectadas; segundo, reciben una compensaci√≥n por p√©rdidas de cultivo y de ganado; tercero, pueden recibir apoyos del programa de empleo temporal del gobierno (PET); cuarto, se benefician de la reconstrucci√≥n de la infraestructura p√∫blica. De tal manera que el Fonden es capaz de compensar en parte a los agricultores por p√©rdidas ocurridas debido a desastres naturales (Banco Mundial, 2005).
+3. Datos Como ya lo mencionamos, usaremos la Encuesta Nacional de Hogares Rurales de M√©xico (ENHRUM), que es un proyecto de la asociaci√≥n civil Desarrollo y Alimentaci√≥n Sustentable (DAS). La ENHRHUM es representativa para las comunidades rurales de entre 500 y 2499 habitantes y hay dos rondas disponibles. La primera ronda o l√≠nea basal se levant√≥ en el a√±o 2002 e inclu√≠a a 1782 hogares; la segunda ronda se levant√≥ en 2007 e incluy√≥ a 1543 hogares, por lo que la encuesta cuenta con una tasa de recontacto de 87.42%. Como este trabajo se enfoca a los hogares rurales, utilizaremos la ENHRUM por ser la √∫nica encuesta tipo panel existente especializada en hogares rurales mexicanos. Dado que la ENHRUM est√° dise√±ada especialmente para ser aplicada en el medio rural mexicano, contiene preguntas dirigidas a capturar las diversas fuentes de ingreso de los hogares rurales, como informaci√≥n detallada sobre las actividades agr√≠colas, ganaderas y de explotaci√≥n de los recursos naturales. En esta secci√≥n, discutimos de manera detallada la construcci√≥n de las variables de ingreso de los hogares e incidencia de pobreza.
+Ingreso Utilizando entonces la informaci√≥n de la ENHRUM, obtenemos el ingreso neto de los hogares para las actividades de agricultura, ganader√≠a, explotaci√≥n de recursos naturales y servicios ignorando el autoconsumo. Definimos el ingreso neto de cada actividad como el ingreso bruto que obtienen por la venta de los bienes que producen como resultado de cada actividad, menos el gasto
+
+19
+
+que en insumos, inversi√≥n y mano de obra para llevar a cabo la actividad. Realizando el c√°lculo del ingreso neto de esta manera, observamos en el Cuadro 1 que un porcentaje importante de los hogares tiene ingresos negativos en tales actividades para cada uno de los a√±os.
+
+Cuadro 1. Porcentaje de hogares con ingreso neto negativo sin autoconsumo.
+
+Actividad
+
+Porcentaje de hogares con ingreso Porcentaje de hogares con ingreso neto
+
+neto negativo para 2002
+
+negativo para 2007
+
+Agricultura
+
+29.66%
+
+28.83%
+
+Ganader√≠a
+
+30.23%
+
+29.48%
+
+Explotaci√≥n de recursos 11.84%
+
+15.81%
+
+naturales
+
+Servicios
+
+2.03%
+
+5.70%
+
+Dos posibles explicaciones a los ingresos negativos que observamos son que estamos ignorando el autoconsumo y los ciclos de la producci√≥n agr√≠cola y ganadera. En cuanto a los ciclos de producci√≥n, dado que estamos en un contexto rural y los hogares rurales producen bienes agr√≠colas y ganaderos sea para la venta o para el autoconsumo, es necesario como que inviertan primero en algunos insumos, tal como comida para los animales o semillas y fertilizantes para la siembra. Luego, despu√©s de algunos meses o incluso algunos a√±os, para algunos tipos de grandes animales, el hogar puede vender su producci√≥n o consumirla √©l mismo. Por lo tanto, una parte de los ingresos netos negativos que observamos pueden deberse a los ciclos de la producci√≥n agr√≠cola y ganadera, en los que es necesario invertir en insumos mucho antes de que puedan tenerse ganancias. As√≠, si un hogar fue entrevistado despu√©s de realizar la inversi√≥n necesaria para alimentar a sus vacas, pero antes de que poder vender las vacas, es posible que su ingreso neto por agricultura resultara negativo.
+
+En cuanto al autoconsumo, en general no incorporamos el valor de la producci√≥n de los hogares en el ingreso, como las manzanas o las ciruelas que produce un peque√±o jard√≠n de un hogar urbano, el valor de la preparaci√≥n de los alimentos en el hogar o de limpiar la casa. Sin embargo, en los hogares rurales la producci√≥n de los hogares es m√°s sustancial, y por eso si no la incorporamos una parte de la producci√≥n no es valorada. En los hogares donde no hay autoconsumo o √©ste es marginal, el ingreso neto de las actividades econ√≥micas es el ingreso bruto por la venta del bien, menos el costo de los insumos necesarios para producir el bien, como ya lo hab√≠amos mencionado. Pero en los hogares con autoconsumo, el ingreso neto de las actividades se
+
+20
+define como el ingreso bruto por la venta de los cultivos, m√°s el valor del autoconsumo, menos los costos totales generados por la producci√≥n del cultivo.
+Para el caso de la agricultura, por ejemplo, un hogar debe comprar semillas, fertilizantes y pesticidas y utilizar maquinaria para poder cultivar un alimento, sea que la producci√≥n este destinada al autoconsumo o para venderse en el mercado. En el caso de que la totalidad de la producci√≥n del hogar este destinada al autoconsumo, el hogar no registrar√° ingresos brutos provenientes de la venta del cultivo. En el caso de que s√≥lo una parte de la producci√≥n este destinada al autoconsumo y otra parte a ser vendida en el mercado, el hogar registrar√° ingresos monetarios solo por la parte de la producci√≥n que vendi√≥.
+Para obtener datos de ingreso m√°s confiables, incorporaremos entonces al ingreso neto por las actividades una estimaci√≥n del valor del autoconsumo, utilizando precios de mercado. Por lo tanto, asignamos el precio al que el hogar hab√≠a vendido el producto o servicio autoconsumido para aquellos hogares que efectivamente lo hab√≠an vendido, asignamos el precio en la localidad del bien para aquellos hogares que no hab√≠an vendido el bien, y asignamos el precio regional a aquellos hogares que no hab√≠an vendido el bien y para los cuales no hab√≠a un precio local disponible.
+Sin embargo, el precio que se debe utilizar para valorar el autoconsumo no es el precio de mercado, sino el precio sombra de los hogares. La dificultad estriba evidentemente en que los precios sombra son por definici√≥n inobservables. Por lo tanto, a pesar de la riqueza de la informaci√≥n que contiene la ENHRUM el valor que debemos asignar al autoconsumo es un asunto al que debemos poner especial atenci√≥n. Dado que no contamos con un mejor proxy para obtener los precios sombra del autoconsumo, utilizaremos los precios de mercado para valorar el autoconsumo. Para probar la robustez de nuestras estimaciones, mostramos en un ap√©ndice las mismas estimaciones que realizamos valorando el autoconsumo a un precio 10% mayor al precio de mercado, intentando as√≠ incorporar que normalmente los hogares valoran los bienes de autoconsumo que ellos producen a un precio superior al precio de mercado (Arslan y Taylor, 2009). Podemos observar en el Cuadro 2 que, una vez que incorporamos el autoconsumo, el porcentaje de hogares con ingresos negativos en alguna de las dos actividades se reduce para los dos a√±os. Los hogares que a√∫n tienen ingreso negativo en alguna de las actividades pueden
+
+21
+
+explicarse por los ciclos de la producci√≥n agr√≠cola y por la infravaloraci√≥n del consumo debido a la utilizaci√≥n de los precios de mercado.
+
+Cuadro 2. Porcentaje de hogares con ingreso neto negativo con autoconsumo.
+
+Actividad
+Agricultura Ganader√≠a Explotaci√≥n de recursos naturales Servicios
+
+Porcentaje de hogares con ingreso neto negativo para 2002 17.54% 26.45% 0.45%
+
+Porcentaje de hogares con ingreso neto negativo para 2007 10.04% 22.42% 3.75%
+
+1.97%
+
+4.47%
+
+Siguiendo la metodolog√≠a de CONEVAL para el c√°lculo del ingreso corriente de los hogares, el ingreso corriente de los hogares ser√° igual a la suma de los siguientes componentes: ingreso laboral, ingreso neto proveniente de la agricultura, ingreso neto proveniente de la ganader√≠a, ingreso neto proveniente de la explotaci√≥n de los recursos naturales, ingreso neto proveniente de los servicios, remesas, transferencias, renta de propiedad y valor del autoconsumo (CONEVAL, 2014). El Cuadro 3 muestra los datos sobre ingresos para los a√±os 2002 y 2007 en pesos mexicanos corrientes. Podemos notar que hay un peque√±o porcentaje de hogares que tienen ingresos negativos. Lo anterior se explica debido a que hay algunos hogares que tienen un ingreso neto negativo para una o m√°s de las siguientes actividades: agricultura, ganader√≠a, servicios o explotaci√≥n de recursos naturales.
+Seg√∫n el √çndice Nacional de Precios al Consumidor publicado por el Banco de M√©xico, hubo una aumento del 22.62% en los precios que enfrentan los consumidores entre el 2002 y el 2007. Observamos tambi√©n que hubo un aumento nominal de 53.87% y un aumento real de 25.48% en los ingresos de los hogares, lo que corresponde a un incremento promedio anual de 4.64% en el ingreso real de los hogares. Dado que seg√∫n datos de INEGI la econom√≠a mexicana creci√≥ a en promedio una tasa anual de 1.17% entre 2002 y 2007, el aumento en el ingreso real de los hogares fue mucho mayor que el crecimiento de la econom√≠a.
+Hay varias razones que pueden ocasionar la diferencia observada en el ingreso entre los dos a√±os. Primero, a pesar de que la encuesta mide entre los dos a√±os las mismas componentes del ingreso, la encuesta del 2007 est√° mucho m√°s desagregada que la encuesta del 2002, por lo que es
+
+22
+
+posible que los hogares ignoraran algunos ingresos en el 2002 que no ignoran en el 2007 debido a que las preguntas son m√°s detalladas. Segundo, las preguntas no son exactamente las mismas entre las dos rondas del a√±o, por lo que la formulaci√≥n de las preguntas o el orden de √©stas podr√≠an ocasionar algunas variaciones. Tercero, hay componentes del ingreso que se incluyen en el 2007 que no est√°n incluidos en el 2002, por lo que a pesar de los esfuerzos realizados por obtener datos de ingreso que sean comparables entre los dos a√±os, es posible que algunas preguntas en el 2007 incluyan en realidad m√°s componentes del ingreso que las del 2002.
+
+Cuadro 3. Ingresos anuales de los hogares rurales en pesos mexicanos corrientes
+
+A√±o
+2002 2007
+
+Mediana
+35,444.7 54,544.5
+
+N√∫mero de observaciones 1,783 1,560
+
+Porcentaje de ingresos negativos
+4.20% 4.42%
+
+Pobreza Seguiremos la metodolog√≠a de CONEVAL para el c√°lculo de la pobreza. Primero, consideramos dos l√≠neas de pobreza: la l√≠nea de bienestar m√≠nimo, que equivale al valor de la canasta alimentaria por persona al mes y la l√≠nea de bienestar, que equivale a la suma del valor de la canasta alimentaria y de la canasta no alimentaria por persona al mes; podemos observar los monto de las l√≠neas de pobreza en el Cuadro 4.
+
+Cuadro 4. L√≠neas de pobreza y de pobreza extrema
+
+A√±o
+
+L√≠nea de pobreza
+
+L√≠nea de pobreza extrema
+
+2002
+
+899.2
+
+427.6
+
+2007
+
+1137.24
+
+572.67
+
+Fuente: Portal de internet del CONEVAL, en la direcci√≥n: http://www.coneval.gob.mx/Medicion/Paginas/Lineas-debienestar-y-canasta-basica.aspx
+
+Despu√©s, construiremos una l√≠nea de pobreza por hogar, que depender√° del n√∫mero de miembros y la composici√≥n del hogar, ya que es necesario ajustar el ingreso corriente de los hogares por econom√≠as de escala y escalas de equivalencia. Dado que seguimos la metodolog√≠a de CONEVAL, la f√≥rmula que utilizaremos para calcular el ingreso corriente total per c√°pita de cada hogar cuando el tama√±o del hogar es mayor a uno es la siguiente.
+
+23
+
+Ì†µÌ±ñÌ†µÌ±õÌ†µÌ±îÌ†µÌ±üÌ†µÌ±íÌ†µÌ±†Ì†µÌ±ú Ì†µÌ±êÌ†µÌ±úÌ†µÌ±üÌ†µÌ±üÌ†µÌ±ñÌ†µÌ±íÌ†µÌ±õÌ†µÌ±°Ì†µÌ±í Ì†µÌ±°Ì†µÌ±úÌ†µÌ±°Ì†µÌ±éÌ†µÌ±ô Ì†µÌ±ëÌ†µÌ±íÌ†µÌ±ô ‚ÑéÌ†µÌ±úÌ†µÌ±îÌ†µÌ±éÌ†µÌ±ü
+
+Ì†µÌ∞ºÌ†µÌ∞∂Ì†µÌ±áÌ†µÌ±ÉÌ†µÌ∞∂ =
+
+1 + Ì†µÌ±ëÌ†µÌ±ñÌ†µÌ±õÌ†µÌ±ñ
+
+donde Ì†µÌ±õÌ†µÌ±ñ es el n√∫mero de miembros del hogar en cada rango de edad y Ì†µÌ±ëÌ†µÌ±ñ es la escala de equivalencia tomando en cuenta las econom√≠as de escala que corresponde a cada grupo de edad; en el Cuadro 5 mostramos la escala utilizada.
+
+Cuadro 5. Escala de equivalencia
+
+Grupo de edad (i)
+
+Escala
+
+0 a 5 a√±os
+
+0.70
+
+6 a 12 a√±os
+
+0.74
+
+13 a 18 a√±os
+
+0.71
+
+19 a 65 a√±os
+
+0.99
+
+Fuente: CONEVAL. (2014). Metodolog√≠a para la medici√≥n multidimensional de la pobreza en M√©xico.
+
+Por lo tanto, la f√≥rmula que utilizamos para obtener el n√∫mero de miembros del hogar en escala de equivalencia es:
+
+Ì†µÌ±õ√∫Ì†µÌ±öÌ†µÌ±íÌ†µÌ±üÌ†µÌ±ú Ì†µÌ±ëÌ†µÌ±í Ì†µÌ±öÌ†µÌ±ñÌ†µÌ±íÌ†µÌ±öÌ†µÌ±èÌ†µÌ±üÌ†µÌ±úÌ†µÌ±† Ì†µÌ±íÌ†µÌ±† Ì†µÌ±íÌ†µÌ±†Ì†µÌ±êÌ†µÌ±éÌ†µÌ±ôÌ†µÌ±é Ì†µÌ±ëÌ†µÌ±í Ì†µÌ±íÌ†µÌ±ûÌ†µÌ±¢Ì†µÌ±ñÌ†µÌ±£Ì†µÌ±éÌ†µÌ±ôÌ†µÌ±íÌ†µÌ±õÌ†µÌ±êÌ†µÌ±ñÌ†µÌ±é = 1 + Ì†µÌ±ëÌ†µÌ±ñÌ†µÌ±õÌ†µÌ±ñ
+
+Dado lo anterior, la l√≠nea de pobreza por hogar ser√° igual al valor de la l√≠nea de bienestar o de la l√≠nea de bienestar m√≠nimo multiplicada por el n√∫mero de miembros en escala de equivalencia. Finalmente, aquellos hogares cuyo ingreso se encuentren debajo de la l√≠nea de pobreza correspondiente al bienestar m√≠nimo ser√°n clasificados como pobres extremos, y aquellos hogares cuyo ingreso est√© por debajo de la l√≠nea de pobreza correspondiente al bienestar ser√°n clasificados como pobres.
+
+Transiciones Dadas las l√≠neas de pobreza anteriormente definidas, obtenemos las matrices de transici√≥n entre los estado de pobreza y no pobreza. El Cuadro 6 muestra las estimaciones de pobreza de CONEVAL, que est√°n basadas en la ENIGH; el Cuadro 7 y el Cuadro 8 muestran la matriz de transici√≥n de los hogares hacia y fuera de la pobreza y de la pobreza extrema sin utilizar factores de expansi√≥n, respectivamente. Podemos observar en los Cuadros 7 y 8 que las tasas de transici√≥n dentro y fuera de la pobreza son extremadamente frecuentes. Para la l√≠nea de pobreza de bienestar econ√≥mico, podemos ver que 47.89% de los hogares entraron o salieron de la pobreza entre 2002
+
+24
+
+y 2007, 28.59% fue pobre en los dos a√±os, y 23.53% no fue pobre en ninguno de los dos a√±os. Para la l√≠nea de bienestar econ√≥mico m√≠nimo, el 39.3% de los hogares sali√≥ o entr√≥ de la pobreza entre el 2002 y el 2007, 9.74% fue pobre en los dos a√±os y 50.96% no fue pobre en ninguno de los dos a√±os.
+
+Los resultados que observamos entonces corresponden a los hallazgos en la literatura, que muestran que las transiciones dentro y fuera de la pobreza de los hogares rurales en los pa√≠ses en desarrollo son muy altas, de entre 10 y 20%, pudiendo llegar en ocasiones hasta al 30%. Las frecuentes transiciones que observamos pueden deberse a varios motivos, como que los ciclos de la producci√≥n agr√≠cola y ganadera, en los cuales hay que invertir en insumos como comida o semillas antes de poder recolectar la producci√≥n o de vender los animales. Adem√°s, los hogares agr√≠colas est√°n m√°s expuestos al riesgo, lo que ocasiona que el ingreso sea vol√°til dado que en un a√±o con un clima favorable habr√° una buena cosecha pero en un a√±o donde haya un desastre natural un hogar puede perder la cosecha o sus animales pueden ahogarse. Tambi√©n, una buena parte de los hogares rurales no pobres no se encuentran muy lejos de la l√≠nea de pobreza, por lo que una disminuci√≥n del ingreso relativamente peque√±a puede provocar que los hogares caigan debajo de la l√≠nea de pobreza.
+
+Cuadro 6. Incidencia de pobreza seg√∫n CONEVAL
+
+A√±o
+
+L√≠nea de pobreza
+
+L√≠nea de pobreza extrema
+
+2002
+
+50%
+
+20%
+
+2007
+
+47%
+
+16.4%
+
+Fuente: estimaciones de CONEVAL para los a√±os 2002, 2006 y 2008 con base en la ENIGH. La cifra que presentamos para 2002 corresponde a la cifra de CONEVAL, la cifra de 2007 es un promedio simple de las estimaciones de CONEVAL para 2006 y 2008.
+
+Cuadro 7. Matriz de transici√≥n dentro y fuera de la pobreza sin pesos
+
+No pobre 2002 Pobre 2002 Total
+
+No pobre 2007 23.53% (367) 27.95% (436) 51.47% (803)
+
+Pobre 2007 19.94% (311) 28.59% (446) 48.52% (757)
+
+Total 43.46% (678) 56.54% (882) 100% (1560)
+
+25
+
+Cuadro 8. Matriz de transici√≥n dentro y fuera de la pobreza extrema sin pesos
+
+No pobre 2002 Pobre 2002 Total
+
+No pobre 2007 50.96% (795) 19.17% (299) 70.13% (1094)
+
+Pobre 2007 20.13% (314) 9.74% (152) 29.87% (466)
+
+Total 65.32% (1,019) 28.91% (451) 100% (1560)
+
+4. Modelo econom√©trico Probit trivariado Para modelar la transiciones entre los estados de pobreza y no pobreza entre los a√±os 2002 y 2007, utilizaremos la metodolog√≠a de Cappellari y Jenkins (2004), que es un modelo probit trivariado con correlaciones libres. El modelo tiene cuatro partes, una ecuaci√≥n para determinar el estado de pobreza en el a√±o inicial, es decir, en 2002, una ecuaci√≥n para determinar que los hogares permanezcan o no en la muestra, una ecuaci√≥n para determinar el estado de pobreza en 2007, y las correlaciones entre las caracter√≠sticas inobservables que determinan estos procesos, es decir, entre los t√©rminos de error (Cappellari y Jenkins, 2004).
+As√≠, en primer lugar, tendremos la ecuaci√≥n que determina el estado de pobreza inicial latente, es decir, el estado de pobreza en 2002:
+Ì†µÌ±ùÌ†µ‚àóÌ±ñ2002 = Ì†µÌªΩ‚Ä≤Ì†µÌ±•Ì†µÌ±ñ2002 + Ì†µÌªøÌ†µÌ±ñ2002 En segundo lugar, la ecuaci√≥n que modela la retenci√≥n latente de los hogares en la muestra en 2002 y 2007.
+Ì†µÌ±üÌ†µÌ±ñ‚àó2007 = Ì†µÌºì‚Ä≤Ì†µÌ±§Ì†µÌ±ñ2002 + Ì†µÌºÄÌ†µÌ±ñ2007 En tercer lugar, tenemos la ecuaci√≥n que modela el estado de pobreza latente en 2007.
+Ì†µÌ±ùÌ†µ‚àóÌ±ñ2007 = [(Ì†µÌ±ÉÌ†µÌ±ñ2002)Ì†µÌªæ1‚Ä≤ + (1 ‚àí Ì†µÌ±ÉÌ†µÌ±ñ2002)Ì†µÌªæ2‚Ä≤ ]Ì†µÌ±ßÌ†µÌ±ñ2002 + Ì†µÌºÅÌ†µÌ±ñ2007
+Donde Ì†µÌ±ñ = 1, ‚Ä¶ , Ì†µÌ±Å es el √≠ndice de los hogares, Ì†µÌ±•Ì†µÌ±ñ2002, Ì†µÌ±§Ì†µÌ±ñ2002 Ì†µÌ±¶ Ì†µÌ±ßÌ†µÌ±ñ2002 son los vectores de variables explicativas que describen al hogar, Ì†µÌªΩ, Ì†µÌºì, Ì†µÌªæ1 Ì†µÌ±¶ Ì†µÌªæ2 son los vectores de par√°metros, y Ì†µÌªøÌ†µÌ±ñ, Ì†µÌºÄÌ†µÌ±ñ Ì†µÌ±¶ Ì†µÌºÅÌ†µÌ±ñ son los t√©rminos de error. Cappellari y Jenkins asumen que los t√©rminos de error siguen la distribuci√≥n normal. La tercera ecuaci√≥n la estimamos de manera separada pero simult√°nea para
+
+26
+los hogares pobres y para los no pobres, por lo que Ì†µÌªæ1 es el vector de par√°metros para los hogares pobres en 2002, Ì†µÌªæ2 es el vector de par√°metros para los hogares no pobres en 2002.
+Por lo tanto, tendremos tres correlaciones entre los t√©rminos de error,
+Ì†µÌºå1 = (Ì†µÌªøÌ†µÌ±ñ2002, Ì†µÌºÄÌ†µÌ±ñ2007)
+Ì†µÌºå2 = (Ì†µÌªøÌ†µÌ±ñ2002, Ì†µÌºÅÌ†µÌ±ñ207)
+Ì†µÌºå3 = ( Ì†µÌºÄÌ†µÌ±ñ2007, Ì†µÌºÅÌ†µÌ±ñ2007)
+La correlaci√≥n Ì†µÌºå1 captura la asociaci√≥n entre las caracter√≠sticas inobservables de los hogares entre el estado de pobreza en el a√±o 2002 y la retenci√≥n del hogar en la muestra. La correlaci√≥n Ì†µÌºå2 captura la asociaci√≥n entre las caracter√≠sticas inobservables de los hogares entre el estado de pobreza en el a√±o 2002 y el estado de pobreza en el a√±o 2007. Por √∫ltimo, la correlaci√≥n Ì†µÌºå3 captura la asociaci√≥n entre las caracter√≠sticas inobservables de los hogares entre el estado de pobreza en el a√±o 2007 y la no atrici√≥n del hogar en la muestra.
+Si la correlaci√≥n Ì†µÌºå1 tiene signo positivo (negativo), eso indica que los hogares que eran pobres en 2002 tienen mayor (menor) probabilidad de permanecer en la muestra que los que no eran pobres. Si Ì†µÌºå2 tiene signo positivo (negativo), eso indica que los hogares que eran pobres en 2002 tienen mayor (menor) probabilidad de ser pobres en 2007 que los que no eran pobres en 2002. Si Ì†µÌºå3 tiene signo positivo (negativo), eso indica que los hogares que eran pobres en 2007 tienen mayor (menor) probabilidad de permanecer en la muestra que los que no eran pobres.
+De tal manera, podemos estimar el modelo general sin restricciones sobre las correlaciones Ì†µÌºå1, Ì†µÌºå2 y Ì†µÌºå3, y probar varias hip√≥tesis sobre si la retenci√≥n del ingreso y la condici√≥n inicial de pobreza son ex√≥genas. Si Ì†µÌºå1 = Ì†µÌºå3 = 0, ello quiere decir que el proceso de retenci√≥n de los hogares en la muestra puede ser ignorado y el modelo puede ser reducido a un probit bivariado con selecci√≥n end√≥gena. Si Ì†µÌºå1 = Ì†µÌºå2 = 0, ello implica que no hay problemas con la condici√≥n inicial y que el estado de ser pobre en 2002 puede ser tratado como ex√≥geno. Finalmente, si Ì†µÌºå1 = Ì†µÌºå2 = Ì†µÌºå3 las tasas de entrada y salida de la pobreza pueden ser estimadas utilizando modelos probit simples (Cappellari y Jenkins, 2004).
+
+27
+Una condici√≥n suficiente de identificaci√≥n del modelo para el modelo de transici√≥n sin restricciones sobre las correlaciones es un set de restricciones de exclusi√≥n. Para lo anterior, necesitamos contar con variables que afecten el estado inicial de pobreza pero que no tengan efecto directo sobre las transiciones. Es decir, necesitamos variables que entren en los vectores de caracter√≠sticas Ì†µÌ±•Ì†µÌ±ñ2002 y Ì†µÌ±§Ì†µÌ±ñ2002, pero no en el vector Ì†µÌ±ßÌ†µÌ±ñ2002, y necesitamos tambi√©n tener algunas variables en el vector de caracter√≠sticas Ì†µÌ±•Ì†µÌ±ñ2002 que no se encuentren en los vectores Ì†µÌ±§Ì†µÌ±ñ2002 y Ì†µÌ±ßÌ†µÌ±ñ2002.
+Variables a incluir En ocasiones, la pobreza tiene or√≠genes en relaciones hist√≥ricas, sociales y pol√≠ticas que provocan que algunos grupos, como las mujeres y los ind√≠genas, tengan desventajas en el acceso a factores de producci√≥n o al sistema de salud o educaci√≥n. En pr√°cticamente todas las sociedades rurales, las mujeres se encargan de manera principal del trabajo del hogar, y se ocupan tambi√©n de labores agr√≠colas. Sin embargo, hay desigualdades entre hombres y mujeres en varios niveles que pueden ocasionar que los hogares que tienen un jefe de hogar mujer tenga una probabilidad diferente de caer en la pobreza que un hogar encabezado por un hombre.
+Hay varias disparidades entre hombres y mujeres, como que la superficie promedio de las parcelas de los hombres es casi el triple de las parcelas de las mujeres, que los fertilizantes son aplicados de manera m√°s intensiva en las parcelas de los hombres que en las parcelas de las mujeres, que √©stos son vendidos de manera frecuente en cantidades que es dif√≠cil para las mujeres comprar, y que las empresas que pertenecen a las mujeres se enfrentan en general a m√°s obst√°culos y se benefician menos de los servicios de apoyo que los hombres. (Banco Mundial, FAO y FIDA, 2008). Adem√°s, en un estudio reciente que analiza las diferencias de salarios en el medio rural entre hombres y mujeres para trece pa√≠ses de √Åfrica Subsahariana, Asia y Am√©rica Latina, se encontr√≥ que el salario por hora de las mujeres representa en la mayor√≠a de los casos entre 50% y 100% el salario de los hombres (Fontana y Paciello, 2009). Tambi√©n, las mujeres rurales poseen en general un menor acceso a factores de producci√≥n esenciales, como la tierra, el cr√©dito, la educaci√≥n, la salud y los servicios financieros y en varios pa√≠ses las normas sociales impiden a las mujeres tener acceso a un empleo estable y calificado (FIDA, 2011). Para el caso mexicano, los salarios en el medio rural de las mujeres son menores que los de los hombres, y se encuentran en general entre el 80 y el 100% del salario de los hombres (Fontana y Paciello, 2009).
+
+28
+En Am√©rica Latina, las tasas de pobreza de los pueblos ind√≠genas son mucho m√°s elevadas que las de la poblaci√≥n en general: la pobreza es ocho veces m√°s alta en Paraguay, seis veces m√°s alta en Panam√° y tres veces m√°s alta en M√©xico (Hall y Patrinos, 2012). Adem√°s, los grupos ind√≠genas est√°n mucho m√°s expuestos a la pobreza si no hablan el espa√±ol o el portugu√©s: en Per√∫ el 85% de los hogares que viven en las zonas altas de la monta√±a y cuyo jefe s√≥lo habla aymara son pobres (Banco Mundial, 1993). Adem√°s, en pr√°cticamente en todo el mundo, los pueblos ind√≠genas son objeto de discriminaci√≥n, de violaciones a sus derechos, de exclusi√≥n, de un control precario sobre el acceso a los recursos naturales y viven con frecuencia en comunidades aisladas y de dif√≠cil acceso (FIDA, 2011). Tambi√©n, en numeras ocasiones, los ni√±os ind√≠genas son discriminados en el acceso a la educaci√≥n y los adultos son discriminados en el mercado de trabajo. En M√©xico, se ha encontrado que el pertenecer a un grupo ind√≠gena reduce el valor de la tierra para los hogares rurales. (Finan, Sadoulet y Janvry, 2002).
+En cuanto a la composici√≥n del hogar, la literatura muestra que hogares rurales mexicanos donde hay hijos peque√±os tienen una mayor probabilidad de ser pobres que aquellos en los que no hay ni√±os peque√±os, debido a que los hijos no contribuyen econ√≥micamente al hogar, pero s√≠ consumen recursos. Sin embargo, tal desventaja disminuye a medida que los ni√±os peque√±os crecen y son ya capaces de tener un empleo remunerado o de contribuir en la producci√≥n del hogar (Banco Mundial, 2005). Sobre la distribuci√≥n regional de la pobreza, sabemos que la pobreza no se distribuye de manera aleatoria en el pa√≠s, sino que como ya lo mencionamos previamente, est√° distribuida de manera no homog√©nea en el pa√≠s (Bellon et al. 2004 y Araujo, 2003); por lo anterior, decidimos incluir variables dummies regionales en las estimaciones. Incluimos la migraci√≥n y si el jefe del hogar trabaja dentro o fuera porque la literatura dice que los hogares rurales siguen estrategias de diversificaci√≥n del ingreso, las cuales incluyen tener trabajos la peque√±a producci√≥n agr√≠cola, la diversificaci√≥n de los cultivos, el empleo remunerado y la migraci√≥n (Skoufias, 2004 y Y√∫nez, 2010).
+En el Cuadro 9 presentamos las estad√≠sticas descriptivas de todas las variables que incluimos en las estimaciones. Podemos observar que la diferencia entre los hogares pobres y los no pobres es estad√≠sticamente diferente de cero para la mayor√≠a de las variables. Sobre la composici√≥n del hogar, notamos que en los hogares pobres hay un mayor porcentaje de los jefes del hogar que son mujeres que en los no pobres, as√≠ como que los hogares pobres tienen en
+
+29
+promedio tanto un mayor n√∫mero de miembros totales del hogar como miembros en cada grupo de edad. Observamos tambi√©n que hay diferencias regionales sobre el lugar origen, un mayor porcentaje de hogares pobres que de hogares no pobres vive en el centro, y en el noroeste observamos la relaci√≥n inversa. Vemos tambi√©n que el promedio de a√±os de educaci√≥n para el jefe del hogar y para la madre del jefe del hogar es menor en los hogares pobres que en los no pobres. Tambi√©n, el conocimiento promedio de alguna lengua ind√≠gena es mayor entre los jefes de hogares pobres que en los jefes de hogares no pobres. Observamos entonces que las diferencias observadas en las medias de jefe de hogares que son mujeres, composici√≥n del hogar, regiones del pa√≠s, lengua ind√≠gena, y trabajo dentro o fuera del campo corresponde con lo que dice la literatura.
+
+30
+
+Cuadro 9. Estad√≠sticas descriptivas
+
+Variable Mujer
+
+Muestra 0.140
+
+Pobre 2002 0.163
+
+No pobre 2002 0.11
+
+Sur
+
+0.205
+
+0.240
+
+0.161
+
+Centro
+
+0.200
+
+0.217
+
+0.179
+
+Centro occidente
+
+0.194
+
+0.199
+
+0.188
+
+Noroeste
+
+0.191
+
+0.138
+
+0.259
+
+Noreste
+
+0.207
+
+0.204
+
+0.211
+
+Parcela propia
+
+0.416
+
+0.460
+
+0.36
+
+Tama√±o de la parcela
+
+4.843
+
+4.852
+
+4.83
+
+N√∫mero de miembros del hogar de entre 0 y 5 a√±os de edad N√∫mero de miembros del hogar de entre 6 y 12 a√±os de edad N√∫mero de miembros del hogar de entre 13 y 18 a√±os de edad N√∫mero de miembros del hogar de entre 19 y 65 a√±os de edad N√∫mero de miembros del hogar
+
+0.059 0.751 0.722 3.312 4.845
+
+0.083 0.812 0.813 3.424 5.133
+
+0.028 0.672 0.603 3.166 4.470
+
+Migraci√≥n a M√©xico
+
+0.487
+
+0.482
+
+0.495
+
+Migraci√≥n a M√©xico o a Estados Unidos 0.644
+
+0.645
+
+0.644
+
+Trabajo en el campo
+
+0.608
+
+0.660
+
+0.540
+
+Trabajo fuera del campo
+
+0.518
+
+0.392
+
+0.681
+
+Jefe trabaja en el campo
+
+0.292
+
+0.292
+
+0.291
+
+Jefe trabaja fuera del campo
+
+0.273
+
+0.156
+
+0.425
+
+Escolaridad de la madre
+
+1.311
+
+1.040
+
+1.664
+
+Lengua ind√≠gena
+
+1.370
+
+1.448
+
+1.268
+
+Progresa
+
+0.342
+
+0.382
+
+0.290
+
+Edad
+
+48.927
+
+51.749
+
+45.257
+
+Edad_2
+
+2647.888
+
+2914.933
+
+2300.558
+
+Escolaridad
+
+4.546
+
+3.881
+
+5.411
+
+Escolaridad_2
+
+34.761
+
+25.201
+
+47.194
+
+Errores est√°ndar en par√©ntesis *** p<0.01, ** p<0.05, * p<0.10
+
+T- test
+0.052*** (.016) 0.078*** (0.019) 0.037** (.019) 0.011 (.0189) -0.120*** (.018) - 0.007 (.019) 0.100*** (.0234) 0.022 (1.194) 0.054*** (.020) 0.140*** (.046) 0.209*** (.046) 0.258*** (.080) 0.662*** (.1011) 0.0134 (.023) 0.001 (.0228) 0.120*** (.023) - 0.288*** (.022) 0.001 (.021) -0.269*** (.020) -0.623*** (.112) 0.1795*** (.035) 0.092*** (.022) 6.491*** (.746) 614.374*** (78.798) -1.529*** (.175) -21.993*** (2.451)
+
+31
+5. Resultados Como lo dicen Cappellari y Jenkins (2004), debido a los supuestos de identificaci√≥n, es necesario tener un conjunto de variables que formen las restricciones de exclusi√≥n. Seg√∫n Cappellari y Jenkins, se deben incluir a las caracter√≠sticas parentales solamente en la primera ecuaci√≥n, es decir, la ecuaci√≥n sobre el estado de pobreza en el a√±o 2002 por lo que nosotros escogimos la lengua ind√≠gena y la escolaridad de la madre como caracter√≠sticas de los padres. Podemos considerar hablar una lengua ind√≠gena como una caracter√≠stica parental dado que, en el medio rural de M√©xico, tal habilidad no es producto de una decisi√≥n tomada por los hijos, sino que es una habilidad transmitida por los padres. Por tanto, un jefe de hogar hoy s√≥lo hablar√° una lengua ind√≠gena si sus padres tambi√©n la hablaban y le transmitieron la lengua. En cuanto a las restricciones de exclusi√≥n para la ecuaci√≥n de retenci√≥n, escogimos la escolaridad, la escolaridad al cuadrado, la edad y la edad al cuadrado. Tomamos estas caracter√≠sticas dado podemos pensar que si estas variables tienen un efecto sobre el estado inicial de pobreza y sobre la probabilidad de retenci√≥n, pero no sobre las probabilidades de transici√≥n. Incluimos la variable n√∫mero de miembros de hogar como variable explicativa para la ecuaci√≥n de retenci√≥n y desagregamos por grupos de edad para las ecuaciones de pobreza en el 2002 y en 2007 puesto que la supervivencia de un hogar pueda est√° depende del n√∫mero de miembros totales del hogar, mientras que su probabilidad de ser o no pobre est√° relacionada con la estructura por edades del hogar.
+En el Cuadro 10 mostramos los resultados para la l√≠nea de bienestar econ√≥mico. En la columna (1), podemos identificar tres caracter√≠sticas que aumentan la probabilidad de que un hogar sea pobre en el 2002: que el jefe del hogar sea mujer, que hable una lengua ind√≠gena y que haya mayor n√∫mero de miembros del hogar menores a 18 a√±os. Los resultados que obtenemos, entonces, est√°n en l√≠nea con lo encontrado en la literatura. Hay algunas caracter√≠sticas que reducen el riesgo de que los hogares sean pobres en 2002: que el jefe del hogar tenga un trabajo, que el hogar posea una parcela, y que el hogar viva en la regi√≥n noreste del pa√≠s. Dado que la pobreza en M√©xico est√° distribuida de manera no homog√©nea, y que la regi√≥n norte del pa√≠s tiene menor incidencia de pobreza que las dem√°s regiones, no es sorprendente que los hogares que viven en esta regi√≥n tengan menor probabilidad de ser pobres. En cuanto a que el jefe del hogar tenga un trabajo, podemos ver que si el jefe del hogar est√° empleado fuera del campo, ello reduce la probabilidad de ser pobre del hogar mucho que si el jefe del hogar est√° empleado en el campo. Podemos pensar que tener miembros de edad entre 0 y 18 a√±os aumenta la probabilidad de que un hogar sea pobre
+
+32
+pero tener miembros entre 18 y 65 a√±os reduce tal probabilidad dado que los primeros consumen recursos pero no generan ingresos, mientras que los √∫ltimos generan mayor cantidad de ingresos que los recursos que consumen.
+En cuanto a la ecuaci√≥n de retenci√≥n, en la columna (2) del Cuadro 10 observamos hay varias caracter√≠sticas de los hogares que aumentan la probabilidad de quedarse en la muestra: tener mayor n√∫mero de miembros o una parcela de mayor tama√±o, pertenecer a la regi√≥n centro y que su jefe trabaje fuera del campo. Lo anterior puede probablemente explicarse como que los hogares que tienen parcelas de cierto tama√±o y que trabajan en el campo, tienen menos probabilidad de migrar, lo cual podr√≠a explicarse como que cuando el jefe del hogar trabaja en el campo y tiene un mayor tama√±o de la parcela, migrar no es una estrategia √≥ptima. Es tambi√©n de esperarse que un hogar que tiene mayor n√∫mero de miembros tenga mayor probabilidad de sobrevivir en el tiempo que un hogar con menos miembros, dado que un consideramos que un hogar permanece en la muestra si cuando el encuestador regresa al hogar para recabar informaci√≥n para la segunda ronda hay un miembro del hogar original para responder a las preguntas.
+La parte clave de la tesis es la probabilidad de transici√≥n entre los estados de pobreza y de no pobreza. En la columna (3) y (4) del Cuadro 10 podemos identificar las caracter√≠sticas de los hogares en el 2002 que influyen sobre la probabilidad de pobreza de los hogares que eran pobres inicialmente pobres y sobre los que no lo eran respectivamente. Para los hogares que eran pobres en el 2002, notamos que vivir en las regiones centro, centro occidente o noroeste del pa√≠s aumenta la probabilidad de los hogares de escapar de la pobreza; en contraste, que el jefe del hogar trabaje en el campo y que el hogar tenga miembros en los grupos de edad 6-12 y 19-65 a√±os aumentan la probabilidad de que permanezcan en la pobreza. Para los hogares que no eran pobres en 2002, podemos observar que tener una parcela propia vuelve menos probable que los hogares caigan en la pobreza; al contrario, que el jefe de hogar sea mujer, que trabaje en el campo o que este unido aumenta la probabilidad de que el hogar caiga en la pobreza.
+Por lo tanto, notamos que trabajar en el campo mantiene a los hogares en la pobreza, a menos que sean due√±os de sus propias parcelas. Tener un jefe de hogar unido aumenta la probabilidad de caer en la pobreza para los hogares inicialmente no pobres porque en las peque√±as localidades, probablemente, buena parte de los solteros son funcionarios p√∫blicos con un salario por encima de la l√≠nea de pobreza. Es posible que tener miembros en el grupo de edad entre 13 y
+
+33
+18 a√±os en el 2002 reduzca la probabilidad de ser pobre en la segunda ronda de la encuesta dado que en el 2007 estos algunos de estos miembros ya habr√°n entrado a la fuerza laboral y contribuir√°n econ√≥micamente al hogar. En contraste, tener miembros en el grupo de edad de entre 19 y 65 a√±os en el 2002 aumenta la probabilidad de pobreza en el 2007 dado que algunos de estos miembros probablemente ya son dependientes porque han envejecido o tienen peor salud y son menos productivos en el trabajo de campo. El que los hogares que no son inicialmente pobres tengan mayor probabilidad de caer en la pobreza en el 2007 si uno de sus miembros migro a alguna parte de M√©xico refleja que, aunque en el corto plazo los hogares puedan verse beneficiados por el env√≠o de remesas, la migraci√≥n no es una buena estrategia en el largo plazo para incrementar el ingreso de los hogares.
+En el Cuadro 11 mostramos los resultados para la l√≠nea pobreza extrema y podemos observar que no hay grandes diferencias en las estimaciones entre las dos l√≠neas de pobreza, por lo que podemos interpretar de manera similar los resultados obtenidos en esta secci√≥n. En la columna (1), podemos identificar las caracter√≠sticas que aumentan la probabilidad de que un hogar sea pobre extremo en el 2002: que el hogar viva en la regi√≥n centro occidente, tener miembros en los grupos de edad de 0 a 5 a√±os, de 6 a 12 a√±os y de 13 a 18 a√±os, que el jefe del hogar hable una lengua ind√≠gena. Al contrario, vivir en el noroeste del pa√≠s, que el jefe de hogar trabaje sea en el campo o fuera de √©l, y recibir apoyo del programa PROGRESA reducen la probabilidad de que el hogar se encuentre en pobreza extrema en el 2002. Podemos observar que el jefe fuera del campo del jefe del hogar reduce mucho m√°s el riesgo de pobreza extrema que el trabajo dentro del campo.
+Sobre la retenci√≥n, en la columna (2) del Cuadro 11 observamos que vivir en la regi√≥n centro del pa√≠s, el trabajo en el campo de los miembros del hogar y contar con un mayor n√∫mero de miembros reducen la probabilidad de atrici√≥n de la muestra. Al contrario, vivir en la regi√≥n noroeste del reducen la probabilidad de que el hogar permanezca en la muestra.
+En cuanto a la parte clave de la tesis, notamos qu√© variables influyen la transici√≥n entre los estados de pobreza y no pobreza en las columnas (3) y (4) del Cuadro 11. Podemos observar que para los hogares que no eran pobres extremos de manera inicial, que el jefe de hogar sea mujer, as√≠ como tener miembros del hogar entre 0-5 y 19-65 a√±os aumenta la probabilidad de que los hogares permanezcan en la pobreza. Adem√°s, podemos ver que vivir en el centro, centro occidente y noroeste del pa√≠s aumenta la probabilidad de escapar de la pobreza. Para los hogares que no eran
+
+34
+inicialmente pobres extremos, podemos ver que vivir en el centro, centro occidente y noroeste, tener parcelas propias y trabajar fuera del campo reducen la probabilidad de caer en pobreza. Al contrario, que alg√∫n miembro del hogar haya migrado y tener miembros del hogar entre 0 y 5 a√±os en el 2002 aumentan la probabilidad de que el hogar caiga en pobreza extrema en el 2007. En general, vivir en el noroeste del pa√≠s, que el jefe o alg√∫n miembro del hogar trabaje fuera del campo, contar con menos n√∫mero de miembros de menores de 13 a√±os de edad, y no hablar una lengua ind√≠gena reducen la probabilidad de ser pobre bajo cualquiera de las dos l√≠neas de pobreza en el 2002. Sobre la retenci√≥n, vemos que de manera similar no hay grandes diferencias entre las dos medidas de pobreza, puesto que vivir en la zona centro del pa√≠s, no vivir en el noroeste, y que el jefe del hogar u alg√∫n otro miembro trabaje dentro del campo aumenta la probabilidad de que el hogar permanezca en la muestra. Para las probabilidades de transici√≥n dentro y fuera de la pobreza, podemos ver que ser si el jefe de hogar es mujer, el hogar vive en una regi√≥n diferente del centro o noroeste del pa√≠s, y tener ni√±os peque√±os dependientes aumenta la vulnerabilidad de los hogares, es decir, aumenta el riesgo de entrar en la pobreza.
+Notamos tambi√©n que para las dos l√≠nea de pobreza, la correlaci√≥n entre le ecuaci√≥n de retenci√≥n de los hogares y la pobreza en el 2007 es alta para las dos l√≠nea de pobreza. Hay por tanto una correlaci√≥n positiva entre la retenci√≥n en la muestra y la probabilidad de caer en la pobreza para los hogares inicialmente no pobres y entre la retenci√≥n en la muestra y la probabilidad de permanecer en la pobreza para los hogares inicialmente pobres. La correlaci√≥n anterior puede estar ligada a eventos que ocurrieron entre el 2002 y el 2007 y que afectan tanto la probabilidad de permanecer en la muestra como la de ser pobre en el 2007. Una posible explicaci√≥n es que aquellos hogares que permanecieron en la muestra son tambi√©n aquellos que tienen menos posibilidades de empleo fuera del campo, y cuyos integrantes j√≥venes tienen menos posibilidades de educaci√≥n fuera de la localidad, por lo que es m probable que esos hogares permanezcan en la muestra y sean pobres en el 2007. Con todo, realizamos una estimaci√≥n alternativa asignando a los bienes de autoconsumo un precio 10% mayor al precio de mercado, y observamos los resultados pr√°cticamente no difieren de los resultados de las estimaciones que realizamos utilizando el precio de mercado. Es necesario tener m√°s estudios sobre la valoraci√≥n del precio sombra de los hogares para una amplia variedad de productos, no solo el ma√≠z, para poder tener estimaciones m√°s precisas del ingreso de los hogares
+
+35
+
+Cuadro 10. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico.
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Variables
+
+pobre2002
+
+retenci√≥n
+
+pobre2007
+
+pobre2007
+
+(inicialmente pobre)
+
+(inicialmente no pobre)
+
+Mujer
+
+0.228**
+
+0.024
+
+0.151
+
+0.343**
+
+(0.135)
+
+(0.152)
+
+(0.155)
+
+(0.194)
+
+Centro
+
+0.106
+
+0.413***
+
+-0.261***
+
+-0.015
+
+(0.117)
+
+(0.161)
+
+(0.121)
+
+(0.162)
+
+Centro Occidente
+
+0.126
+
+-0.046
+
+-0.418***
+
+-0.009
+
+(0.126)
+
+(0.138)
+
+(0.126)
+
+(0.157)
+
+Noroeste
+
+-0.414***
+
+-0.095
+
+-0.148
+
+0.225*
+
+(0.125)
+
+(0.140)
+
+(0.138)
+
+(0.152)
+
+Noreste
+
+-0.038
+
+-0.720***
+
+-0.445***
+
+-0.298**
+
+(0.128)
+
+(0.124)
+
+(0.128)
+
+(0.157)
+
+Parcela propia
+
+-0.128*
+
+-0.019
+
+-0.281***
+
+0.030
+
+(0.079)
+
+(0.113)
+
+(0.088)
+
+(0.117)
+
+Tama√±o de la parcela
+
+-0.000
+
+0.013**
+
+0.000
+
+-0.008
+
+(0.001)
+
+(0.007)
+
+(0.002)
+
+(0.006)
+
+No unido
+
+-0.131
+
+-0.103
+
+-0.113
+
+-0.481***
+
+(0.124)
+
+(0.138)
+
+(0.147)
+
+(0.173)
+
+Jefe trabaja en el campo
+
+-0.133*
+
+0.237***
+
+0.229***
+
+0.212**
+
+(0.082)
+
+(0.107)
+
+(0.092)
+
+(0.109)
+
+Jefe trabaja fuera del campo
+
+-0.660***
+
+-0.142
+
+-0.115
+
+0.058
+
+(0.085)
+
+(0.101)
+
+(0.122)
+
+(0.114)
+
+Migraci√≥n a otras partes de M√©xico
+
+-0.091
+
+-0.047
+
+0.024
+
+0.230***
+
+(0.072)
+
+(0.086)
+
+(0.086)
+
+(0.029)
+
+N√∫mero de miembros del hogar de
+
+0.316***
+
+0.085
+
+-0.042
+
+entre 0 y 5 a√±os de edad
+
+(0.139)
+
+(0.067)
+
+(0.270)
+
+N√∫mero de miembros del hogar de
+
+0.158***
+
+0.114***
+
+0.044
+
+entre 6 y 12 a√±os de edad
+
+(0.037)
+
+(0.042)
+
+(0.051)
+
+N√∫mero de miembros del hogar de
+
+0.093***
+
+0.053
+
+-0.128***
+
+entre 13 y 18 a√±os de edad
+
+(0.039)
+
+(0.040)
+
+(0.053)
+
+N√∫mero de miembros del hogar de
+
+-0.068***
+
+0.054***
+
+(0.086)
+
+entre 19 y 65 a√±os de edad
+
+(0.025)
+
+(0.026)
+
+-0.009
+
+N√∫mero de miembros del hogar
+
+0.110***
+
+(0.025)
+
+Lengua ind√≠gena
+
+0.164***
+
+(0.058)
+
+Escolaridad
+
+0.050**
+
+-0.012
+
+(0.026)
+
+(0.030)
+
+Escolaridad_2
+
+-0.006***
+
+0.003
+
+(0.002)
+
+(0.002)
+
+Edad
+
+0.045***
+
+0.055***
+
+(0.014)
+
+(0.014)
+
+Edad_2
+
+-0.000**
+
+-0.001***
+
+(0.000)
+
+(0.000)
+
+Escolaridad de la madre
+
+-0.002
+
+(0.018)
+
+Constante
+
+-1.262***
+
+-0.450
+
+-0.124
+
+-0.366**
+
+(0.399)
+
+(0.362)
+
+(0.163)
+
+(0.197)
+
+Observaciones
+
+1,771
+
+1,771
+
+1,771
+
+1,771
+
+_____________________________________________________________________________________________________________________
+
+Correlaciones
+
+Ì†µÌºå1
+
+0.053
+
+(.064)
+
+Ì†µÌºå2
+
+-0.308***
+
+(.098)
+
+Ì†µÌºå3
+
+0.834***
+
+(0.219)
+
+Errores est√°ndar en par√©ntesis
+
+*** p<0.05, ** p<0.10, * p<0.15
+
+Cuadro 11. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico m√≠nimo
+
+Variables
+Mujer Centro Centro Occidente Noroeste Noreste Parcela propia Tama√±o de la parcela No unido Trabajo en el campo Trabajo fuera del campo Migraci√≥n N√∫mero de miembros del hogar de entre 0 y 5 a√±os de edad N√∫mero de miembros del hogar de entre 6 y 12 a√±os de edad N√∫mero de miembros del hogar de entre 13 y 18 a√±os de edad N√∫mero de miembros del hogar de entre 19 y 65 a√±os de edad N√∫mero de miembros del hogar Lengua ind√≠gena Escolaridad Escolaridad_2 Edad Edad_2 Escolaridad de la madre Monto recibido por PROGRESA Constante Observaciones
+
+(1) pobre2002
+0.063 (0.142) 0.098 (0.122) 0.253** (0.132) -0.210* (0.138) -0.054 (.137) 0.060 (0.086) -0.003 (0.003) -0.096 (0.134) -0.230*** (0.088) -0.783*** (0.079) -0.139** (0.081) 0.244*** (0.096) 0.122*** (0.039) 0.071** (0.040) 0.034 (0.026)
+0.137*** (0.059) 0.010 (0.028) -0.003 (0.002) 0.040*** (0.016) -0.000 (0.000) 0.035** (0.019) -0.146** (0.083) -1.922*** (0.437) 1,783
+
+(2) retenci√≥n
+0.064 (0.150) 0.394*** (0.162) 0.009 (0.142) -0.083 (0.141) -0.631*** (.141) -0.090 (0.115) 0.010 (0.007) -0.159 (0.138) 0.348*** (0.099) 0.106 (0.091) -0.047 (0.089)
+0.095*** (0.025)
+-0.005 (0.031) 0.002 (0.002) 0.048*** (0.015) -0.000*** (0.000)
+0.124 (0.102) -0.510 (0.376) 1,783
+
+(3) pobre2007 (inicialmente pobre)
+0.484*** (0.228) -0.293** (0.174) -0.453*** (0.179) 0.192 (0.199) -0.398*** (0.179) -0.065 (0.128)
+-0.277 (0.213) 0.118 (0.091) 0.141* (0.094) 0.030 (0.131) -0.175 (0.143) 0.108** (0.060) 0.029 (0.059) 0.051* (0.034)
+-0.468*** (0.230) 1,783
+
+Correlaciones Ì†µÌºå1
+Ì†µÌºå2
+Ì†µÌºå3
+
+-0.0750 (0.059) -0.0707 (0.109) 0.949* (0.115)
+Errores est√°ndar en par√©ntesis *** p<0.05, ** p<0.10, * p<0.15
+
+36
+(4) pobre2007 (inicialmente no pobre)
+-0.162 (0.158) -0.239** (0.125) -0.296*** (0.129) 0.032 (0.119) -0.502*** (0.130) -0.167** (0.089)
+-0.143 (0.148) -0.114 (0.143) -0.181* (0.123) 0.163** (0.085) 0.211*** (0.102) -0.013 (0.042) -0.036 (0.040) 0.027 (0.025)
+-0.555*** (0.237) 1,783
+
+37
+6. Conclusiones
+Para identificar los factores que hacen m√°s o menos probable que haya transiciones dentro y fuera de la pobreza por parte de los hogares rurales mexicanos, siguiendo la metodolog√≠a de Cappellari y Jenkins (2004), corrimos un modelo con tres probits que estimamos de manera simult√°nea para identificar los factores que inciden en la probabilidad de ser pobre inicialmente, en que el hogar permanezca en la muestra, y en las transiciones dentro y fuera de la pobreza. Obtuvimos el ingreso de los hogares utilizando datos de la primera y segunda ronda de la ENHRUM que se levantaron en 2002 y 2007, de manera respectiva, y utilizamos las l√≠neas de pobreza establecidas por CONVEVAL. Encontramos que los principales factores que explican las salidas y entradas en la pobreza son el g√©nero del jefe del hogar, la regi√≥n donde vive el hogar, la composici√≥n del hogar en t√©rminos de edad de los miembros, y si el jefe del hogar o alg√∫n otro miembro del hogar trabajada dentro o fuera del campo. Nuestros resultados nos sugieren entonces que las caracter√≠sticas que influyen sobre la vulnerabilidad de los hogares mexicanos est√°n relacionadas con la estructura del hogar, sus fuentes de ingreso y el lugar donde habitan, por lo que son no son variables susceptibles de modificar en el corto plazo.
+Entre las limitaciones del an√°lisis encontramos la construcci√≥n del ingreso, en base a la que construimos despu√©s si los hogares son pobres o no en cada a√±o. Dado que construimos el ingreso en base a los datos auto reportados por los hogares y a que las preguntas de la primera y la segunda ronda de la ENHRUM no est√°n organizadas de manera diferente, es posible que una parte de la variaci√≥n del ingreso de los hogares entre los dos a√±os se deba a esto. Tambi√©n, asignar el precio de mercado a los bienes de consumo es una limitaci√≥n de nuestro trabajo, aunque un ejercicio con una aproximaci√≥n alternativa de los precios sombra sugiere que los resultados que no cambian mucho
+Dados los resultados obtenidos, podemos formular algunas recomendaciones de pol√≠tica. Es necesario focalizar los programas sociales a los hogares que est√°n encabezados por una mujer y a los que tienen hijos peque√±os, dado que estas dos caracter√≠sticas provocan que los hogares sean m√°s vulnerables. Tambi√©n, proveer y crear un clima legal y econ√≥mico que estimule y permite el desarrollo mediante la creaci√≥n de empleos fuera del campo puede ser un importante factor de salida de la pobreza, pues observamos que los hogares que trabajan en el campo tiene una mayor
+
+38
+probabilidad de caer en la pobreza que aquellos que trabajan fuera del campo. Proveer alternativas de empleo es necesario adem√°s para que la migraci√≥n a otras partes de M√©xico o a Estados Unidos sea menos atractiva, pues si bien esta puede ser √≥ptimo a corto plazo para los hogares para escapar de la pobreza, tomando en cuanta un horizonte temporal m√°s largo la migraci√≥n aumenta la vulnerabilidad de los hogares, probablemente por la p√©rdida de capital humano y de econom√≠as de escala que la acompa√±a. Adem√°s, la focalizaci√≥n de programas productivos y de desarrollo de infraestructura a las regiones m√°s pobres del pa√≠s, como el Centro Occidente y el Sur puede ser una estrategia importante para la reducci√≥n de la pobreza.
+
+39
+
+Anexo Cuadro 12. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico con factores de expansi√≥n
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Variables
+
+pobre2002
+
+retenci√≥n
+
+pobre2007
+
+pobre2007
+
+(inicialmente pobre)
+
+(inicialmente no pobre)
+
+Mujer
+
+0.251**
+
+0.069
+
+0.103
+
+0.602***
+
+(0.142)
+
+(0.173)
+
+(0.158)
+
+(0.219)
+
+Centro
+
+0.019
+
+0.476***
+
+-0.275***
+
+-0.150
+
+(0.106)
+
+(0.151)
+
+(0.109)
+
+(0.149)
+
+Centro Occidente
+
+0.073
+
+0.036
+
+-0.528***
+
+-0.112
+
+(0.102)
+
+(0.110)
+
+(0.100)
+
+(0.127)
+
+Noroeste
+
+-0.462***
+
+-0.086
+
+-0.238
+
+0.136
+
+(0.164)
+
+(0.186)
+
+(0.197)
+
+(0.187)
+
+Noreste
+
+-0.036
+
+-0.664***
+
+-0.541***
+
+-0.366**
+
+(0.171)
+
+(0.158)
+
+(0.181)
+
+(0.213)
+
+Parcela propia
+
+-0.073
+
+-0.072
+
+-0.197***
+
+0.259***
+
+(0.079)
+
+(0.114)
+
+(0.085)
+
+(0.118)
+
+Tama√±o de la parcela
+
+0.001
+
+0.032***
+
+0.001
+
+-0.020***
+
+(0.003)
+
+(0.010)
+
+(0.003)
+
+(0.008)
+
+No unido
+
+-0.127
+
+-0.134
+
+0.053
+
+-0.726***
+
+(0.133)
+
+(0.160)
+
+(0.153)
+
+(0.199)
+
+Jefe trabaja en el campo
+
+0.022
+
+0.301***
+
+0.213***
+
+0.385***
+
+(0.078)
+
+(0.111)
+
+(0.085)
+
+(0.111)
+
+Jefe trabaja fuera del campo
+
+-0.664***
+
+-0.009
+
+0.031
+
+0.252***
+
+(0.087)
+
+(0.113)
+
+(0.121)
+
+(0.122)
+
+Migraci√≥n a otras partes de M√©xico
+
+-0.081
+
+0.035
+
+-0.047
+
+0.287***
+
+(0.070)
+
+(0.090)
+
+(0.081)
+
+(0.100)
+
+N√∫mero de miembros del hogar de
+
+0.312**
+
+0.129
+
+0.030
+
+entre 0 y 5 a√±os de edad
+
+(0.161)
+
+(0.091)
+
+(0.285)
+
+N√∫mero de miembros del hogar de
+
+0.187***
+
+0.098***
+
+-0.037
+
+entre 6 y 12 a√±os de edad
+
+(0.036)
+
+(0.038)
+
+(0.054)
+
+N√∫mero de miembros del hogar de
+
+0.090***
+
+0.036
+
+-0.193***
+
+entre 13 y 18 a√±os de edad
+
+(0.037)
+
+(0.036)
+
+(0.054)
+
+N√∫mero de miembros del hogar de
+
+-0.027
+
+0.069***
+
+-0.035
+
+entre 19 y 65 a√±os de edad
+
+(0.026)
+
+(0.026)
+
+(0.032)
+
+N√∫mero de miembros del hogar
+
+0.057***
+
+(0.025)
+
+Lengua ind√≠gena
+
+0.069
+
+(0.051)
+
+Escolaridad
+
+0.022
+
+-0.009
+
+(0.027)
+
+(0.034)
+
+Escolaridad_2
+
+-0.004***
+
+0.002
+
+(0.002)
+
+(0.002)
+
+Edad
+
+0.038***
+
+0.055***
+
+(0.014)
+
+(0.015)
+
+Edad_2
+
+-0.000*
+
+-0.001***
+
+(0.000)
+
+(0.000)
+
+Escolaridad de la madre
+
+0.004
+
+(0.018)
+
+Constante
+
+-1.029***
+
+-0.375
+
+-0.210
+
+-0.190
+
+(0.382)
+
+(0.383)
+
+(0.174)
+
+(0.148)
+
+Observaciones
+
+1,771
+
+1,771
+
+1,771
+
+1,771
+
+_____________________________________________________________________________________________________________________
+
+Correlaciones
+
+Ì†µÌºå1
+
+-0.0764
+
+(0.062)
+
+Ì†µÌºå2
+
+0.021
+
+(0.111)
+
+Ì†µÌºå3
+
+0.950*
+
+(0.121)
+
+Errores est√°ndar en par√©ntesis
+
+*** p<0.05, ** p<0.10, * p<0.15
+
+40
+
+Cuadro 13. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico m√≠nimo con factores de expansi√≥n
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Variables
+
+pobre2002
+
+retenci√≥n
+
+pobre2007
+
+pobre2007
+
+(inicialmente pobre)
+
+(inicialmente no pobre)
+
+Mujer
+
+0.026
+
+0.072
+
+0.363*
+
+-0.229
+
+(0.145)
+
+(0.173)
+
+(0.232)
+
+(0.172)
+
+Centro
+
+0.036
+
+0.463***
+
+-0.297**
+
+-0.282***
+
+(0.110)
+
+(0.153)
+
+(0.156)
+
+(0.114)
+
+Centro Occidente
+
+0.205**
+
+0.096
+
+-0.546***
+
+-0.308***
+
+(0.105)
+
+(0.115)
+
+(0.147)
+
+(0.103)
+
+Noroeste
+
+-0.255
+
+-0.073
+
+0.206
+
+0.040
+
+(0.182)
+
+(0.186)
+
+(0.290)
+
+(0.157)
+
+Noreste
+
+-0.077
+
+-0.572***
+
+-0.285
+
+-0.400***
+
+(0.178)
+
+(0.156)
+
+(0.255)
+
+(0.190)
+
+Parcela propia
+
+-0.008
+
+-0.191*
+
+0.050
+
+-0.185***
+
+(0.085)
+
+(0.119)
+
+(0.122)
+
+(0.085)
+
+Tama√±o de la parcela
+
+-0.004
+
+0.028***
+
+(0.138)
+
+(0.161)
+
+No unido
+
+(0.004)
+
+(0.009)
+
+-0.377**
+
+-0.083
+
+-0.045
+
+-0.133
+
+(0.223)
+
+(0.161)
+
+Trabajo en el campo
+
+-0.079
+
+0.468***
+
+0.315***
+
+0.010
+
+(0.090)
+
+(0.111)
+
+(0.094)
+
+(0.142)
+
+Trabajo fuera del campo
+
+-0.669***
+
+0.230***
+
+0.147*
+
+-0.061
+
+(0.076)
+
+(0.099)
+
+(0.090)
+
+(0.116)
+
+Migraci√≥n
+
+-0.069
+
+-0.038
+
+-0.063
+
+0.083
+
+(0.078)
+
+(0.097)
+
+(0.125)
+
+(0.085)
+
+N√∫mero de miembros del hogar de
+
+0.476***
+
+-0.440**
+
+0.081
+
+entre 0 y 5 a√±os de edad
+
+(0.135)
+
+(0.232)
+
+(0.159)
+
+N√∫mero de miembros del hogar de
+
+0.162***
+
+0.146***
+
+-0.056
+
+entre 6 y 12 a√±os de edad
+
+(0.036)
+
+(0.052)
+
+(0.041)
+
+N√∫mero de miembros del hogar de
+
+0.031
+
+-0.066
+
+-0.025
+
+entre 13 y 18 a√±os de edad
+
+(0.037)
+
+(0.056)
+
+(0.037)
+
+N√∫mero de miembros del hogar de
+
+0.029
+
+0.074***
+
+-0.005
+
+entre 19 y 65 a√±os de edad
+
+(0.027)
+
+(0.034)
+
+(0.025)
+
+N√∫mero de miembros del hogar
+
+0.040*
+
+(0.025)
+
+Lengua ind√≠gena
+
+0.074*
+
+(0.051)
+
+Escolaridad
+
+-0.025
+
+-0.018
+
+(0.027)
+
+(0.035)
+
+Escolaridad_2
+
+-0.000
+
+0.003
+
+(0.002)
+
+(0.003)
+
+Edad
+
+0.050***
+
+0.053***
+
+(0.015)
+
+(0.016)
+
+Edad_2
+
+-0.000***
+
+-0.001***
+
+(0.000)
+
+(0.000)
+
+Escolaridad de la madre
+
+0.030*
+
+(0.019)
+
+Monto recibido por Progresa
+
+-0.234***
+
+0.172**
+
+(0.075)
+
+(0.098)
+
+Constante
+
+-1.995***
+
+-0.558
+
+-0.669***
+
+-0.777***
+
+(0.412)
+
+(0.405)
+
+(0.223)
+
+(0.228)
+
+Observaciones
+
+1,783
+
+1,783
+
+1,783
+
+1,783
+
+________________________________________________________________________________________________________________________
+
+Correlaciones Ì†µÌºå1
+Ì†µÌºå2
+Ì†µÌºå3
+
+0.001 (0.63) -0.420*** (0.99) 0.734*** (0.181)
+
+Errores est√°ndar en par√©ntesis
+
+*** p<0.05, ** p<0.10, * p<0.15
+
+41
+
+Cuadro 14. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico aumentando el precio de autoconsumo
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Variables
+
+pobre2002
+
+retenci√≥n
+
+pobre2007
+
+pobre2007
+
+(inicialmente pobre)
+
+(inicialmente no pobre)
+
+Mujer
+
+0.249**
+
+0 .071
+
+0.080
+
+0.590***
+
+(0 .142)
+
+(0.174)
+
+(0.158)
+
+( 0.217)
+
+Centro
+
+0.051
+
+0.471***
+
+-0.249***
+
+-0.180
+
+(0 .106)
+
+(0.151)
+
+(0.109)
+
+(0.148)
+
+Centro Occidente
+
+0.091
+
+0.0354
+
+-.048***
+
+-0.141
+
+(0.102)
+
+(0.110)
+
+(0.099)
+
+(0.126)
+
+Noroeste
+
+-0.432
+
+-0.089***
+
+-0.177
+
+0.126
+
+(0.164)
+
+(0.185 )
+
+(0.197)
+
+(0 .185)
+
+Noreste
+
+-0.010
+
+-0.673
+
+-0.466***
+
+-0.400**
+
+(0.171)
+
+(0.158)
+
+(0.182)
+
+(0.213)
+
+Parcela propia
+
+-0.078
+
+-.0769
+
+-0.189***
+
+0.226**
+
+(0.078)
+
+(0.114)
+
+(0.084)
+
+(0.117)
+
+Tama√±o de la parcela
+
+0.001
+
+0.032***
+
+0.0001
+
+-0.019***
+
+(0.002)
+
+(0.009)
+
+(0.003)
+
+(0.007)
+
+No unido
+
+-0.117
+
+-0.130
+
+0.042
+
+-0.707***
+
+(0.132)
+
+(0.160)
+
+(0.152)
+
+(0.197)
+
+Jefe trabaja en el campo
+
+0.014
+
+0.301***
+
+0.232***
+
+0.384 ***
+
+(0.077)
+
+(0.110)
+
+(0.085)
+
+(0.110)
+
+Jefe trabaja fuera del campo
+
+-0.678***
+
+-0.002
+
+0.017
+
+0.261***
+
+(0.086)
+
+(0.113)
+
+(0.121)
+
+(0.123)
+
+Migraci√≥n a otras partes de M√©xico
+
+-0.101
+
+0.034
+
+-0.017
+
+0.295***
+
+(0.070)
+
+(0.090)
+
+(0.080)
+
+(0.099)
+
+N√∫mero de miembros del hogar de
+
+0.319***
+
+0.067
+
+0.003
+
+entre 0 y 5 a√±os de edad
+
+(0.162)
+
+(0.105)
+
+(0.281)
+
+N√∫mero de miembros del hogar de
+
+0.195***
+
+0.103***
+
+-0.044
+
+entre 6 y 12 a√±os de edad
+
+(0.036)
+
+(0.038)
+
+(0.054 )
+
+N√∫mero de miembros del hogar de
+
+0.082***
+
+0.033
+
+-0.191***
+
+entre 13 y 18 a√±os de edad
+
+(0.036)
+
+(0.035)
+
+(0.053)
+
+N√∫mero de miembros del hogar de
+
+-0.025
+
+0.070***
+
+-0.041
+
+entre 19 y 65 a√±os de edad
+
+(0.025)
+
+(0.025)
+
+(0.0317)
+
+N√∫mero de miembros del hogar
+
+0 .056***
+
+(0.024)
+
+Lengua ind√≠gena
+
+0.0081 *
+
+(0.050)
+
+Escolaridad
+
+0.0026
+
+-0.008
+
+(0.027)
+
+(0.0342)
+
+Escolaridad_2
+
+-0.004 ***
+
+0.002
+
+( 0.009
+
+(0.002)
+
+Edad
+
+.0354509 ***
+
+0.056***
+
+.0143387
+
+(0.014)
+
+Edad_2
+
+-.0001737
+
+-0.0005***
+
+.0001353
+
+(0.0001)
+
+Escolaridad de la madre
+
+.0073803
+
+.0184254
+
+Constante
+
+-1.005***
+
+-0.391
+
+-0.235*
+
+-0.190
+
+(0.382)
+
+(0.383)
+
+(0.150)
+
+(0.176)
+
+Observaciones
+
+1,771
+
+1,771
+
+1,771
+
+1,771
+
+_____________________________________________________________________________________________________________________
+
+Correlaciones Ì†µÌºå1
+Ì†µÌºå2
+Ì†µÌºå3
+
+-0.080 (0.062) -0.010 (0.117) 0.948 (0.176)
+
+Errores est√°ndar en par√©ntesis
+
+*** p<0.05, ** p<0.10, * p<0.15
+
+42
+
+Cuadro 15. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico m√≠nimo aumentando el precio de autoconsumo
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Variables
+
+pobre2002
+
+retenci√≥n
+
+pobre2007
+
+pobre2007
+
+Mujer
+
+0.009
+
+0.073
+
+(inicialmente pobre) 0.345
+
+(inicialmente no pobre) -0.294*
+
+(0.145)
+
+(0.173)
+
+(0.247)
+
+(0.202)
+
+Centro
+
+0.031
+
+0.454***
+
+-0.310***
+
+-0.287***
+
+(0.110)
+
+(0.152)
+
+(0.149)
+
+(0.121)
+
+Centro Occidente
+
+0.190**
+
+0.092
+
+-0.512***
+
+-0.305***
+
+(0.105)
+
+(0.114)
+
+(0.148)
+
+(0.116)
+
+Noroeste
+
+-0.262
+
+-0.076
+
+0.195
+
+0.069
+
+(0.182)
+
+(0.185)
+
+(0.282)
+
+(0.158)
+
+Noreste
+
+-0.100
+
+-0.564***
+
+-0.296
+
+-0.406***
+
+(0.179)
+
+(0.155)
+
+(0.240)
+
+(0.189)
+
+Parcela propia
+
+-0.025
+
+-0.190*
+
+0.058
+
+-0.186***
+
+(0.084)
+
+(0.118)
+
+(0.127)
+
+(0.091)
+
+Tama√±o de la parcela
+
+-0.003
+
+0.027***
+
+(0.004)
+
+(0.009)
+
+No unido
+
+-0.055
+
+-0.132
+
+-0.386**
+
+-0.019
+
+(0.138)
+
+(0.160)
+
+(0.224)
+
+(0.152)
+
+Trabajo en el campo
+
+-0.081
+
+0.473***
+
+0.308***
+
+0.054
+
+(0.090)
+
+(0.111)
+
+(0.098)
+
+(0.139)
+
+Trabajo fuera del campo
+
+-0.660***
+
+0.228***
+
+0.189**
+
+-0.083
+
+(0.075)
+
+(0.099)
+
+(0.102)
+
+(0.119)
+
+Migraci√≥n
+
+-0.071
+
+-0.039
+
+-0.059
+
+0.102
+
+(0.078)
+
+(0.096)
+
+(0.121)
+
+(0.087)
+
+N√∫mero de miembros del hogar de
+
+0.469***
+
+-0.381*
+
+0.134
+
+entre 0 y 5 a√±os de edad
+
+(0.134)
+
+(0.254)
+
+(0.160)
+
+N√∫mero de miembros del hogar de
+
+0.163***
+
+0.137***
+
+-0.017
+
+entre 6 y 12 a√±os de edad
+
+(0.036)
+
+(0.052)
+
+(0.045)
+
+N√∫mero de miembros del hogar de
+
+0.028
+
+-0.061
+
+-0.016
+
+entre 13 y 18 a√±os de edad
+
+(0.037)
+
+(0.055)
+
+(0.039)
+
+N√∫mero de miembros del hogar de
+
+0.029
+
+0.073***
+
+-0.003
+
+entre 19 y 65 a√±os de edad
+
+(0.026)
+
+(0 .033)
+
+(0.025)
+
+N√∫mero de miembro del hogar
+
+0.041**
+
+(0.024)
+
+Lengua ind√≠gena
+
+0.082*
+
+(0.052)
+
+Escolaridad
+
+-0.018
+
+-0.015
+
+(0.027)
+
+(0.035)
+
+Escolaridad_2
+
+-0.0006
+
+0.002
+
+(0.002)
+
+(0.002)
+
+Edad
+
+0.052***
+
+0.048***
+
+(0.015)
+
+(0.015)
+
+Edad_2
+
+-0.0003***
+
+-0.0004***
+
+(0.0001)
+
+(0.0001)
+
+Escolaridad de la madre
+
+0.031*
+
+(0.019)
+
+Monto recibido por Progresa
+
+-0.250***
+
+0.173**
+
+(0.075)
+
+(0 .098)
+
+Constante
+
+-2.081***
+
+-0.775***
+
+-0.901***
+
+(0.407)
+
+(0.224)
+
+(0.225)
+
+Observaciones
+
+1,783
+
+1,783
+
+1,783
+
+1,783
+
+________________________________________________________________________________________________________________________
+
+Correlaciones Ì†µÌºå1
+Ì†µÌºå2
+Ì†µÌºå3
+
+-0.007 0.0634 -0.379*** 0.105 0.917*** 0.060
+
+Errores est√°ndar en par√©ntesis
+
+*** p<0.05, ** p<0.10, * p<0.15
+
+43
+Bibliograf√≠a
+Araujo M. C. (2003). The Role of Local Context and Non Agricultural Employment on Poverty Reduction: Micro and Macro Evidence from Rural Mexico. Tesis de Doctorado en Econom√≠a de la Agricultura y de los Recursos Naturales. Universidad de California, Berkeley.
+Arslan A. y Taylor. E. (2009) Farmers‚Äô Subjective Valuation of Subsistence Crops: The Case of Traditional Maize in Mexico. American Journal of Agricultural Economics. Vol. 91. pp. 956-972.
+Banco Mundial. (1993). Peru: poverty assessment and social policies and programs for the poor. Report No. 1191-PE. Banco Mundial. Washington, D.C.
+_____ (2003). Mexico‚Äôs Financial Markets and the Rural Economy. Banco Mundial. Washington, D.C.
+_____ (2005). A Study of Rural Poverty in Mexico. Banco Mundial. Washington, D.C.
+Banco Mundial, Organizaci√≥n de las Naciones Unidas para la Alimentaci√≥n y la Agricultura y Fondo Internacional de Desarrollo Agr√≠cola. (2008). Gender in agriculture sourcebook. Washington, D.C.
+Bellon M., Hodson D., Martinez-Romero E., Montoya Y., Becerril J. y White J. (2004). Geospatial Dimensions of Poverty and Food Security: A Case Study of Mexico. Centro International de Mejoramiento de Ma√≠z y Trigo (CIMMYT). M√©xico D.F.
+Cappellari L. y Jenkins S. (2004). Modelling Low Income Transitions. Journal of Applied Econometrics, 593-610.
+CONEVAL. (2014).Metodolog√≠a para la medici√≥n multidimensional de la pobreza en M√©xico.
+Dercon S. y Shapiro J. (2007). Moving on, staying behind, getting lost: Lessons on poverty mobility from longitudinal data en Moving out of poverty: Crossdisciplinary perspectives on mobility ed. D. Narayan et P. Petesch. Banco Mundial. Washington, D.C. y New York/ Palgrave Macmillan, Basingstoke, Reindo Unido
+Escobal J. y Torero M. (2000). ¬øC√≥mo Enfrentar una Geograf√≠a Adversa?: El rol de los activos p√∫blicos y privados. Documento de Trabajo No. 29 del Grupo de An√°lisis para el Desarrollo (GRADE). Lima.
+FIDA. (2010). Climate Change Strategy. Fondo Internacional de Desarrollo Agr√≠cola, Roma.
+_____ (2011). Informe sobre la pobreza rural 2011. Fondo Internacional de Desarrollo Agr√≠cola, Roma.
+Finan F., Sadoulet E. y Janvry A. (2002). Measuring the Poverty Reduction Potential of Land in Rural Mexico. Universidad de California, Berkeley.
+Fontana M. y Paciello C. (2009). Gender dimensions of rural and agricultural employment: Differentiated pathways out of poverty. Documento de trabajo del Fondo Internacional de Desarrollo Agr√≠cola. Roma
+Hall G. y Patrinos H.A. ed. (2012). Indigenous peoples, poverty and development. Cambridge University Press. Cambridge.
+Kula W. (1970). Th√©orie √©conomique du syst√®me f√©odal. Pour un mod√®le de l'√©conomie polonaise (XVIeX VIIIe si√®cles). Mouton. Par√≠s.
+Kuroda Y. y Yotopoulos P. (1978). A microeconomic analysis of production behavior of the farm household in Japan: a profit function approach. Economic Review, vol. 29, pp. 116-129.
+
+44
+Maloney W., Bosch M., Moreno J. y Tinajero M. (2003). Notes on Income and Consumption Shocks in Mexico. Banco Mundial. Washington, D.C.
+Naciones Unidas (2010). The Millennium Development Goals Report. Naciones Unidas, Nueva York.
+Pandey S. y Bhandari H. (2009). Drought, coping mechanisms and poverty: Insights from rainfed rice farming in Asia. Documento de trabajo del Fondo Internacional de Desarrollo Agr√≠cola, Divisi√≥n Asia Pac√≠fico. Roma.
+Ram√≠rez A. y Garcia V. (2004). Poverty: Human Development and Indigenous People in Mexico 19822002. Banco Mundial. Washington, D.C.
+Ravallion M., Chen S. y Sangraula P. (2007). New evidence on the urbanization of global poverty. Documento de trabajo 4199 del Banco Mundial. Washington, D.C.
+Reardon T., Berdegu√© J. y Escobar G. (2001). Rural Nonfarm Employment and Incomes in Latin America: Overview and Policy Omplications. World Development, vol.29, pp. 395-409.
+Singh I., Squire L. y Strauss J. (1986). Agricultural Household Models: Extensions, Applications, and Policy. Johns Hopkins University Press, Baltimore.
+Skoufias Emmanuel (2004). Household Vulnerability and its Determinants in Rural and Urban Mexico. Unpublished Paper. Banco Mundial. Washington, D.C
+Taylor E. (2012). Essentials of Development Economics. Arc Light Books. Berkeley.
+Taylor E. y Adelman I. (2003). Agricultural household models: Genesis, evolution and extensions. Review of Economics of the Household, vol. 1, pp. 33-58.
+Taylor E., Y√∫nez A. y Ceron. (2004). The Effects of Rural Mexico Households Assets on Rural Non Rural Activity Selection on Incomes and Technology Adoption. Banco Mundial y El Colegio de M√©xico.
+Vald√©s A., Foster W., Anr√≠quez G., Azzarri C., Covarrubias K., Davis B., Di Giuseppe S., Essam T., Hertz T., de la O A.P., Qui√±ones E., Stamoulis K., Winters P. y Zezza A. (2008). A profile of the rural poor. Documento de trabajo del Fondo Internacional de Desarrollo Agr√≠cola. Roma.
+Y√∫nez A. (coord). (2010). Los Grandes Problemas De M√©xico: Econom√≠a Rural. Volumen XI. El Colegio De M√©xico. M√©xico D. F.
+
+45
+√çndice de Cuadros
+1. Porcentaje de hogares con ingreso neto negativo sin autoconsumo. ........................................ 19 2. Porcentaje de hogares con ingreso neto negativo con autoconsumo. ....................................... 21 3. Ingresos anuales de los hogares rurales en pesos mexicanos corrientes................................... 22 4. L√≠neas de pobreza y de pobreza extrema .................................................................................. 22 5. Escala de equivalencia .............................................................................................................. 23 6. Incidencia de pobreza seg√∫n CONEVAL ................................................................................. 24 7. Matriz de transici√≥n dentro y fuera de la pobreza sin pesos .................................................... 24 8. Matriz de transici√≥n dentro y fuera de la pobreza extrema sin pesos ...................................... 25 9. Estad√≠sticas descriptivas ........................................................................................................... 30 10. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico ................................................................... 35 11. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico m√≠nimo ...................................................... 36 12. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico con factores de expansi√≥n‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶...39 13. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico m√≠nimo con factores de expansi√≥n‚Ä¶‚Ä¶‚Ä¶.40 14. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico aumentando el precio de autoconsumo‚Ä¶.. 41 15. Estimaci√≥n con la l√≠nea de bienestar econ√≥mico m√≠nimo aumentando el precio de autoconsumo ‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶‚Ä¶.42
+
+

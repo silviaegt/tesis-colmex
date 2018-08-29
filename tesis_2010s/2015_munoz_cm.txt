@@ -1,0 +1,1631 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+DESERCIÓN EN ESCUELAS DE DOBLE TURNO:
+DISEÑO DE REGRESIÓN DISCONTINUA
+CARLOS MARTÍN MUÑOZ PEDROZA
+PROMOCIÓN 2013-2015
+ASESORA:
+DRA. EVA OLIMPIA ARCEO GÓMEZ
+JUNIO 2015
+
+Agradecimientos
+Con profundo agradecimiento a mi padre Dios. Con profundo agradecimiento a mi madre Nuestra Sen˜ora de Guadalupe. Con carin˜o para mis padres —Luis y Lula— y mis hermanos —Karina, Daniel y Fabian— por su afecto y apoyo, son mi motivaci´on para esforzarme a ser mejor cada d´ıa. Gracias por siempre creer en mi. Con profundo agradecimiento a mis asesores —la Dra. Eva Arceo y el Dr. Raymundo Campos— por su apoyo, paciencia y motivaci´on. Especialmente por ensen˜arme que la meta debe ser la perfecci´on, fui muy afortunado al tener la oportunidad de trabajar con ambos.
+
+Resumen
+La educacio´n en Escuelas de Doble Turno (EDT) es una pol´ıtica comu´nmente utilizada en pa´ıses en v´ıas de desarrollo, para maximizar la cobertura educativa cuando se enfrentan restricciones presupuestarias. Existe preocupacio´n de que al minimizar el costo de impartir educaci´on pu´blica —a trav´es del uso EDT— se incremente la desigualdad de oportunidades entre estudiantes de ambos turnos. En el presente trabajo de investigacio´n, se examinan los efectos potenciales que la asignacio´n al turno vespertino tiene sobre el desempen˜o de los estudiantes, especialmente, sobre la decisio´n del estudiante de abandonar la escuela y sobre su probabilidad de ingresar a la universidad.
+Analizar el impacto de las EDT es de considerable relevancia. Si las EDT no tienen efectos negativos sobre los estudiantes, el modelo podr´ıa ser implementado en otros pa´ıses —que al igual que M´exico tienen problemas presupuestarios— sin temor a una disminucio´n en la calidad educativa. Por el contrario, si las EDT incrementan la desercio´n escolar, esto implicar´ıa p´erdidas de eﬁciencia por la disminuci´on del capital humano potencial, al truncar la educacio´n de jo´venes capaces de concluir sus estudios.
+Se usa un Disen˜o de Regresio´n Discontinua (DRD) para examinar la respuesta de los estudiantes ante la asignacio´n de turno. Esto se explora desde tres mecanismos a trav´es de los cuales la asignaci´on de turno puede tener impacto en el desempen˜o de los estudiantes: 1) la reacci´on del estudiante ante un incentivo negativo, 2) la existencia de efectos de pares y efectos por “tracking”, 3) y el efecto que el ranking relativo del estudiante tiene sobre su motivacio´n y conﬁanza. El DRD explota la regla de asignacio´n a turno —basada en el promedio de secundaria— de una importante institucio´n educativa en M´exico y una base de datos sociecon´omicos y administrativos de estudiantes de la misma.
+Principalmente, se concluye que la asignaci´on al turno vespertino s´ı tiene impacto sobre la deserci´on de los estudiantes. La caracter´ıstica m´as impactante de los resultados es la heterogeneidad en la respuesta entre hombres y mujeres. Mientras que la asignaci´on al turno vespertino disminuye la probabilidad de deserci´on de los hombres, incrementa la de las mujeres. El impacto es considerable, aproximadamente una de cada diez mujeres no logra concluir los estudios de bachillerato por ser asignada al turno vespertino, y viceversa en el caso de los hombres.
+ii
+
+Summary Double-shift schooling (DSS) is an educational policy widely used in developing countries to maximize educative coverage while facing strong budget constraints. There exist concerns that minimizing the cost of public education —through the use of DSS— may increase inequality between students of both shifts. This thesis, is aimed to examine the potential eﬀects to being assigned to the afternoon shift in the students’ performance, especially, on the decision to permanently leave school and on the probability to be admitted to college.
+Analyze the impact of DSS is of considerable relevance, if they do not have a negative impact on students’ performance, they could be replicated by other countries —which, as Mexico, have budgetary diﬃculties— without fear of diminishing educational quality. However, if they increase dropout rates, this can result in an eﬃciency loss, arising from the lessening of potential human capital and truncating education of students whom —under diﬀerent conditions— would ﬁnished high school.
+A regression discontinuity design (RDD) is used to examine students’ responses to shift assignation. This is analyzed through three diﬀerent mechanisms that could have an impact on student’s performance: 1) the reaction of students while facing a negative incentive, 2) the existence of peer-eﬀects and tracking eﬀects, 3) and the inﬂuence of the relative ranking of a student on his motivation and self-conﬁdence. The RDD exploits the shift assignation rule of an important high school in Mexico —which is based in the middle school average grade— and a rich dataset with socioeconomic and administrative information of eight cohorts of students.
+The main conclusion is that, the assignment to the afternoon shift has an impact over dropout. The most striking characteristic of the results is the heterogeneity of the responses between males and females. Assignment to the afternoon shift decreases the probability to dropout for men, while it increases the probability for women. The impact is sizable, one of every ten female students drops out just because she was assigned to the afternoon shift, and the opposite occurs for male students.
+iii
+
+´Indice
+
+Agradecimientos
+
+I
+
+Resumen
+
+II
+
+Summary
+
+III
+
+´Indice
+
+IV
+
+1. Introduccio´n
+
+1
+
+2. Revisio´n de literatura
+
+5
+
+3. Estrategia de identiﬁcaci´on
+
+9
+
+3.1. Regresio´n discontinua . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+3.2. Datos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+3.3. Estad´ısticas descriptivas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3.4. Discontinuidad espec´ıﬁca generaci´on-plantel-g´enero . . . . . . . . . . . . . . 15
+
+4. Resultados
+
+18
+
+4.1. Validez del disen˜o de regresio´n discontinua . . . . . . . . . . . . . . . . . . . 18
+
+4.2. Discontinuidad. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+4.3. Caliﬁcacio´n de primer y sexto semestre. . . . . . . . . . . . . . . . . . . . . . 24
+
+4.4. Desercio´n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+
+4.5. Admisio´n a la universidad (UNAM). . . . . . . . . . . . . . . . . . . . . . . 34
+
+5. Conclusiones
+
+37
+
+A. Robustez
+
+40
+
+Referencias
+
+41
+
+´Indice de tablas
+
+43
+
+´Indice de ﬁguras
+
+44
+
+iv
+
+1. Introduccio´n
+Los ministerios de educacio´n tienen como propo´sito principal asegurar acceso universal a educacio´n de calidad para todos los ciudadanos de sus pa´ıses. Una pol´ıtica educativa clave que ha contribuido a lograr esto es el uso de Escuelas de Doble Turno (EDT).1 La educaci´on en EDT es una pol´ıtica comu´nmente utilizada en pa´ıses en v´ıas de desarrollo, para maximizar la cobertura educativa cuando se enfrentan restricciones presupuestarias.2 La idea general detra´s de esta pol´ıtica es ofrecer educaci´on costo-efectiva, maximizando el uso de infraestructura educativa y minimizando el costo unitario de impartir educacio´n a un estudiante.
+A nivel de Educacio´n Media Superior, M´exico ha logrado una capacidad potencial de absorci´on de estudiantes graduados de Educacio´n Secundaria del 100 %. Sin embargo, al revisar otros indicadores del sistema educativo mexicano —como la eﬁciencia terminal3— observamos que los resultados no son muy satisfactorios. Los indicadores para el ciclo escolar 2012-2013 muestran que la eﬁciencia terminal es de 62 %, lo que reﬂeja un alto porcentaje de desercio´n escolar. Al analizar ma´s a fondo este indicador, observando datos del Colegio de Ciencias y Humanidades (CCH) de la Universidad Nacional Auto´noma de M´exico (UNAM) para la generaci´on 2009, llama la atenci´on que la probabilidad de completar el bachillerato en el turno matutino es de 75 %, en cambio en el vespertino es de 36 %.4
+Estos indicadores despiertan gran preocupacio´n de que una consecuencia del uso de EDT sea la imparticio´n de educacio´n de primera y de segunda calidad, en turno matutino y vespertino respectivamente. Esto puede hacer que la distribuci´on de oportunidades educativas sea desigual entre diferentes grupos de estudiantes, provocando que su habilidad de aprendizaje disminuya y que su desempen˜o acad´emico sea menor.
+Es una creencia socialmente aceptada que la calidad de una escuela en el turno matutino es superior a la del vespertino, a pesar de que no existe suﬁciente evidencia emp´ırica que la soporte, por lo que los padres y estudiantes preﬁeren comu´nmente el matutino (Linden,
+1La educacio´n en EDT consiste en la formacio´n de dos grupos de estudiantes que toman clases en la misma escuela, pero en horarios diferentes.
+2En M´exico la Secretaria de Educaci´on Pu´blica comenzo´ a utilizar el sistema de EDT en la d´ecada de 1960 y actualmente es una pol´ıtica ampliamente utilizada en todos los niveles educativos.
+3La eﬁciencia terminal se mide como el porcentaje de estudiantes que logran concluir el bachillerato. 4La Secretar´ıa de Educaci´on Pu´blica no hace pu´blicos indicadores por turno por lo que no es posible conocer esas cifras a nivel nacional.
+1
+
+2001); sin embargo, la infraestructura educativa no permite trabajar so´lo con escuelas de un turno. Esta creencia puede justiﬁcarse en gran medida gracias al proceso de asignaci´on de estudiantes a un turno. Este proceso no es aleatorio, los estudiantes que han demostrado mayor habilidad en secundaria tienen garantizada su admisi´on al turno matutino, en cambio los que demostraron menor habilidad son asignados al vespertino. No hay consenso entre investigadores y profesionales de la educacio´n con respecto a la veracidad de este argumento.
+El impacto de esta pol´ıtica es de considerable relevancia. Si las EDT no tienen efectos negativos sobre los estudiantes, el modelo podr´ıa ser implementado por otros pa´ıses —que al igual que M´exico tienen problemas presupuestarios— sin temor a una disminuci´on en la calidad educativa. Por el contrario, si las EDT incrementan la desercio´n escolar, esto conllevar´ıa p´erdidas de eﬁciencia por la disminucio´n del capital humano potencial, al truncar la educacio´n de jo´venes capaces de concluir el bachillerato.
+Este trabajo de investigacio´n busca determinar si esta pol´ıtica —que ha contribuido a alcanzar el acceso universal a la educaci´on— conlleva un costo impl´ıcito en detrimento de la calidad educativa que ofrece. Particularmente, se analiza la existencia de diferencias en el desempen˜o de los estudiantes entre ambos turnos, concentra´ndose en el efecto causal que la asignacio´n a uno de los dos tiene sobre la probabilidad de desercio´n de un estudiante, as´ı como sobre otras variables de desempen˜o acad´emico.
+Adema´s, se analizan mecanismos adicionales que pueden inﬂuenciar el desempen˜o de los estudiantes. El uso de EDT es similar al sistema de “tracking” el cual consiste en la separacio´n de los estudiantes segu´n sus niveles de habilidad para formar grupos homog´eneos (Hidalgo-Hidalgo, 2011). Este sistema educativo tiene dos efectos: por un lado, permite a los profesores concentrar el nivel de ensen˜anza a la media del grupo, disminuyendo la distancia entre los estudiantes m´as y menos h´abiles; por otro lado, puede existir un efecto de pares, a trav´es del cual los estudiantes con un desempen˜o mayor se pueden ver beneﬁciados al convivir con otros de alto desempen˜o y aquellos con uno menor pueden verse perjudicados al convivir con otros de bajo desempen˜o (Duﬂo, Dupas y Kremer, 2011). Esto nos llevar´ıa a agudizar la desigualdad entre los estudiantes de ambos turnos.
+Por otra parte, cuando los estudiantes son asignados al turno vespertino hay un incentivo adicional que puede incrementar su nivel de esfuerzo: la motivacio´n y conﬁanza derivados
+2
+
+de su ranking relativo. Los estudiantes pasan del percentil 50 del ranking general al percentil 1 en el ranking espec´ıﬁco de su turno. El cambio en la autopercepci´on de las creencias que un individuo tiene con respecto a s´ı mismo y sus habilidades —provocado por el incremento en su ranking relativo— podr´ıa incrementar su esfuerzo, lleva´ndolo a mejorar su desempen˜o acad´emico (Murphy y Weinhardt, 2014). Adicionalmente, se analizan diferencias en los efectos que las EDT pueden tener sobre diferentes subgrupos, tal es el caso de hombres y mujeres o entre estudiantes que trabajan y los que no.
+Para este estudio se utilizan datos longitudinales de ocho generaciones de estudiantes en cinco planteles diferentes del CCH en la Ciudad de M´exico. Esta institucio´n trabaja bajo el esquema de EDT. La variable principal de inter´es es la desercio´n escolar, aunque se analizan resultados de otras variables como la admisi´on a la universidad y el efecto sobre el promedio del estudiante. La desercio´n se mide como la probabilidad de que un estudiante no logre terminar el bachillerato de forma regular dentro de los primeros tres an˜os de estudio. Cada plantel tiene aproximadamente 3,600 estudiantes por generaci´on, los cuales son divididos en dos turnos.
+Al estimar el impacto causal en la probabilidad de desercio´n del alumno, derivado de estudiar en el turno vespertino, nos enfrentamos a un problema de sesgo por seleccio´n: los alumnos con un desempen˜o acad´emico mayor son asignados al turno matutino y el resto de los estudiantes al vespertino. As´ı, es posible que la diferencia observada en la probabilidad de deserci´on de cada turno se deba a diferencias en las caracter´ısticas observables y no observables de los estudiantes.
+Para atajar este reto de la etimaci´on, el estudio aprovecha la existencia de una discontinuidad en la probabilidad de asignacio´n de turno, la cual se genera por la regla utilizada por la institucio´n. Un componente clave de esta regla es la caliﬁcacio´n promedio de secundaria, con base en la cual se determina, en gran medida, el turno que se asigna al estudiante. Como resultado, la existencia de la discontinuidad nos permite utilizar un m´etodo cuasi-experimental: el Disen˜o de Regresio´n Discontinua (DRD). A trav´es de este m´etodo es posible obtener estimadores cre´ıbles del efecto de tratamiento, sin tener que conﬁar en el uso de m´etodos de correcci´on de sesgo por seleccio´n, restricciones arbitrarias de exclusi´on y sin asumir formas funcionales de la distribucio´n de los errores (Van Der Klaauw, 2002). En mi
+3
+
+conocimiento este es el primer trabajo que mide los efectos de las EDT utilizando un DRD. El DRD esta´ motivado bajo la idea de que estudiantes con caliﬁcacio´n de secundaria
+justo por encima del punto de corte son un buen contrafactual para aquellos que est´an justo por debajo de ´este. Siempre y cuando, las caracter´ısticas relacionadas con el desempen˜o de los estudiantes sean continuas en el punto de corte, es posible medir el efecto causal de ser asignado al turno vespertino con un DRD.
+Se encuentra que el impacto sobre la deserci´on es heterog´eneo entre los diferentes subgrupos de la poblacio´n. La probabilidad de deserci´on para los hombres disminuye 12.4 puntos porcentuales (p.p.), principalmente por el efecto que el cambio en su ranking relativo tiene sobre su conﬁanza y motivaci´on, mientras que la de las mujeres aumenta 12.0 p.p. Adema´s, los estudiantes que trabajan son el grupo ma´s beneﬁciado: su probabilidad de desercio´n disminuye 14.7 p.p.
+Adicionalmente, se encuentra que las mujeres que son asignadas al turno vespertino tienen 11.0 p.p. m´as de probabilidad de ser aceptadas en una carrera de Ciencias Exactas e Ingenier´ıas, mientras que la probabilidad de los hombres disminuye 19.4 p.p. En cuanto a la admisi´on a una de las diez carreras de alta demanda en la UNAM, los hombres tienen un efecto positivo de 17.1 p.p., mientras que la probabilidad de admisi´on a estas carreras para las mujeres disminuye 14.3 p.p.
+El trabajo de investigaci´on se organiza de la siguiente forma. En la seccio´n 2 se analiza la literatura relevante para el estudio. En la seccio´n 3 se establece la estrategia de identiﬁcacio´n, la descripci´on del contexto educativo y el m´etodo de asignaci´on de turno, as´ı como la descripcio´n de los datos a analizar. La seccio´n 4 muestra los resultados principales. Por u´ltimo, en la seccio´n 5 se concluye con una discusi´on de los mecanismos potenciales que subyacen a los resultados.
+4
+
+2. Revisio´n de literatura
+El prop´osito principal de las Escuelas de Doble Turno (EDT) —como parte de la pol´ıtica educativa en un pa´ıs— es incrementar la oferta de lugares disponibles para que jo´venes puedan acceder a educacio´n pu´blica, aun si existen fuertes restricciones presupuestarias. Esta pol´ıtica maximiza el uso de recursos pu´blicos escasos dedicados a la educaci´on desde una perspectiva costo-efectiva. Las EDT han permitido a pa´ıses como M´exico alcanzar una cobertura educativa potencial del 100 % en el nivel de educacio´n media superior.
+En su ana´lisis, Bray (2000) resalta que el principal beneﬁcio de adoptar EDT es la reduccio´n del costo de educaci´on unitario. Lo anterior se logra principalmente por los siguientes factores: uso ma´s eﬁciente de los ediﬁcios e instalaciones —aun si el costo de mantenimiento se incrementa—, el uso ma´s eﬁciente del capital humano —si se permite ensen˜ar a los profesores en ambos turnos— y un ahorro en tiempo laboral de profesores y estudiantes que puede ser invertido en otras actividades productivas —debido a la reduccio´n en el tiempo disponible para usar las instalaciones—. En contraste, algunos costos potenciales derivados de la adopci´on de EDT son: 1) la necesidad de contratar servicios de guarder´ıa para padres que trabajan, 2) la necesidad de tutor´ıas adicionales para compensar el tiempo de clase reducido y 3) problemas sociales derivados del mal uso del tiempo de ocio de los estudiantes.
+El turno vespertino normalmente es menos deseable que el matutino por padres y estudiantes (Linden, 2001). Socialmente se tiene una percepci´on negativa con respecto al turno vespertino, basada en la creencia de que en ´este se imparte educaci´on de calidad inferior, aunque el argumento carece de justiﬁcacio´n ya que no existen pruebas de esto. La evidencia emp´ırica de los efectos de esta pol´ıtica educativa es escasa y, en su mayor´ıa, no es posible realizar interpretacio´n causal de sus resultados. Los directores suelen asignar primero estudiantes al turno matutino y so´lo cuando los lugares se han agotado asignan estudiantes al vespertino; no siguen un criterio uniforme para asignar a los estudiantes a uno de los turnos. Sin embargo, las reglas de asignacio´n hacen que las caracter´ısticas de los estudiantes en cada turno diﬁeran, lo que diﬁculta la correcta estimacio´n de los efectos de esta pol´ıtica.
+Linden (2001) identiﬁca tres factores que contribuyen a la creacio´n de escuelas efectivas: una oferta adecuada de libros de texto, profesores caliﬁcados y el tiempo de instruccio´n.
+5
+
+E´l realiza una comparaci´on entre escuelas de un turno con escuelas de dos turnos en diversos pa´ıses de la Organizaci´on para la Cooperacio´n y el Desarrollo Econ´omicos (OCDE) y concluye que las u´ltimas ofrecen una educaci´on adecuada y pueden ser utilizadas como pol´ıtica educativa de forma conveniente.
+Ca´rdenas (2011) realiza una revisi´on extensa de la literatura de EDT. E´l la resume en tres puntos generales: primero, encuentra poca evidencia emp´ırica acerca de las diferencias en el desempen˜o entre turnos; segundo, concluye que directores, profesores y estudiantes enfrentan retos diferentes en cada turno; y ﬁnalmente, comenta que investigaciones anteriores (Saucedo-Ramos 2005) han identiﬁcado un sistema de segregaci´on que asigna estudiantes a un turno basado en su perﬁl socioecono´mico. E´l muestra que —comparando el turno matutino con el vespertino— en promedio, hay ma´s estudiantes pobres, resultados ma´s bajos en evaluaciones acad´emicas, as´ı como mayores tasas de deserci´on y reprobacio´n en el turno vespertino. Ninguno de los autores logra dar un argumento causal, ya que su estrategia de ana´lisis no logra controlar los problemas de endogeneidad en la asignacio´n de turno.
+Sagyndykova (2013) estudia el efecto de EDT en escuelas primarias mexicanas y concluye que las EDT son una soluci´on adecuada para pa´ıses con presupuestos limitados. Ella aplica el modelo de seleccio´n de Heckman para medir los efectos de las caracter´ısticas observables en el desempen˜o del estudiante y encuentra un efecto positivo al estar en el turno matutino. Sin embargo, la “Descomposicio´n de Oaxaca” muestra que este efecto puede ser explicado por las caracter´ısticas observables del alumno, la escuela y los profesores. Sus resultados muestran que la autoselecci´on de estudiantes explica la aparente desigualdad acad´emica entre estudiantes de turnos diferentes.
+La regla de asignaci´on de turno comu´nmente utilizada hace a las EDT muy similares al sistema de “tracking”, el cual consiste en la separaci´on de los estudiantes en diferentes grupos segu´n su desempen˜o acad´emico (Hidalgo-Hidalgo 2011). Por un lado, este sistema permite a los profesores concentrar el nivel de ensen˜anza a la media del grupo disminuyendo la distancia entre los estudiantes m´as ha´biles y los menos ha´biles. Por otro lado, puede existir un efecto de pares, a trav´es del cual los estudiantes con un desempen˜o mayor se pueden ver beneﬁciados al convivir con estudiantes de alto desempen˜o y los estudiantes con uno menor pueden verse perjudicados al convivir con estudiantes de bajo desempen˜o.
+6
+
+Betts y Shkolnik (1999) concluyen que a pesar del consenso emergente de que los estudiantes de alto desempen˜o se ven beneﬁciados en las escuelas “tracking” y que los de bajo desempen˜o son perjudicados, este consenso se basa en comparaciones inva´lidas. Cuando comparan estudiantes similares concluyen que el efecto para estudiantes de bajo desempen˜o es nulo y los de alto mejoran. Duﬂo, Dupas y Kremer (2011) realizan un experimento en Kenya en el cual examinan diferencias entre escuelas con y sin “tracking” y adema´s analizan el impacto para estudiantes en diferentes partes de la distribucio´n. Ellos encuentran evidencia de que la separacio´n en grupos por desempen˜o afecta positivamente el desempen˜o acad´emico. Esta literatura es relevante para este trabajo ya que los efectos de las EDT pueden ser similares a los de las escuelas con “tracking”.
+Adicionalmente, cuando los estudiantes son asignados al turno vespertino hay un incentivo que puede incrementar su nivel de esfuerzo: la motivacio´n y conﬁanza derivadas de su ranking relativo. Los estudiantes pasan del percentil 50 del ranking general al percentil 1 en el ranking relativo de su turno. El cambio en la autopercepcio´n del estudiante podr´ıa incrementar su nivel de esfuerzo, lleva´ndolo a mejorar su desempen˜o acad´emico. Comu´nmente las personas realizan comparaciones sociales en diferentes a´mbitos de su vida, incluido su desempen˜o acad´emico. Murphy y Weinhardt (2014) miden el impacto a largo plazo del ranking ordinal de estudiantes durante la primaria. Muestran que tener un ranking alto entre los compan˜eros tiene grandes efectos en su desempen˜o a largo plazo.
+La posibilidad de que las EDT impidan a algunos estudiantes concluir el bachillerato, podr´ıa tener importantes efectos econ´omicos. Zimmerman (2014) usa un Disen˜o de Regresio´n Discontinua (DRD) para mostrar que la ganancia en ingresos, asociada a la admisio´n a universidad de un estudiante marginal es alta. Estudiantes justo por encima del punto de corte de la caliﬁcaci´on de bachillerato ganan en promedio $1,593 dolares mensuales ma´s que los que esta´n justo por debajo, esto representa una ganancia considerable de eﬁciencia. E´sta podr´ıa ser semejante en el caso de estudiantes de bachillerato que podr´ıan ver truncado su futuro al ser asignados al turno vespertino, e inclusive podr´ıa ser superior al ahorro generado por el uso de EDT.
+La contribucio´n principal de este trabajo de investigaci´on es la capacidad de medir el impacto de la asignaci´on a turno en EDT de forma consistente e insesgada; la estrategia
+7
+
+de identiﬁcacio´n permite eliminar el problema de seleccio´n que investigaciones anteriores no consiguen excluir, au´n y cuando en el presente trabajo u´nicamente se estima el efecto local de tratamiento. Adema´s, se muestra evidencia de diferencias de g´enero ante incentivos negativos, efectos de pares y actitudes frente a la competencia. Por u´ltimo, se obtiene evidencia de como la composici´on del grupo —proporci´on de hombres y mujeres en el grupo— afecta las preferencias sociales de los individuos.
+8
+
+3. Estrategia de identiﬁcacio´n
+
+Consideremos una muestra aleatoria de estudiantes de bachillerato. Para cada estudiante
+
+i observamos una variable de resultado yi y un indicador de tratamiento vespi, donde: yi es igual a 1 si el estudiante abandono´ el bachillerato e igual a 0 si lo concluyo´; vespi es igual a 1 si el es estudiante fue asignado al turno vespertino e igual a 0 si fue asignado al
+
+matutino. Normalmente podr´ıamos utilizar un modelo de regresio´n lineal para evaluar el
+
+efecto de tratamiento —el cual consiste en asignar al estudiante al turno vespertino—. El
+
+modelo ser´ıa:
+
+yi = α + βvespi + ui
+
+(1)
+
+Por un lado, cuando la asignacio´n al tratamiento no es aleatoria (o existe autoseleccio´n), el estimador β puede tener sesgo por seleccio´n, dado que existe dependencia entre vespi y ui. En este caso, E[u|vesp] = 0 y la endogeneidad de vespi generalmente provocar´ıa que nuestro estimador de OLS sea inconsistente, por lo que carecer´ıa de interpretacio´n causal. Por otro lado, en el caso de que el tratamiento se asigne de forma aleatoria estimar´ıamos E[β], es decir el efecto promedio del tratamiento en la poblacio´n. En nuestro contexto el tratamiento no se asigna de forma aleatoria, sino que los alumnos con un desempen˜o ma´s alto son asignados al turno matutino y el resto al vespertino. Se tiene un claro problema de selecci´on: la probabilidad de deserci´on en el turno matutino podr´ıa ser distinta a la del vespertino; sin embargo, esto no necesariamente se deber´ıa al efecto del tratamiento sino a las caracter´ısticas de los estudiantes.
+
+3.1. Regresio´n discontinua
+Para eliminar el sesgo por selecci´on se puede aprovechar que la asignacio´n de turno para el estudiante i es una funci´on aleatoria y condicional de su promedio ﬁnal de secundaria (promi). La metodolog´ıa de asignacio´n usada por la instituci´on crea una discontinuidad en la probabilidad de tratamiento. Esta discontinuidad se encuentra en el punto de corte que determina (en parte) la asignaci´on de turno. Lo anterior sugiere que el efecto puede ser estimado de forma consistente utilizando un Disen˜o de Regresi´on Discontinua (DRD). La intuicio´n detr´as de este m´etodo es que los estudiantes que est´an justo por encima del punto
+9
+
+de corte son muy similares en caracter´ısticas observables y no observables a los que esta´n justo por debajo de ´este. Lo anterior nos permite comparar los resultados de los estudiantes que est´an en el umbral del punto de corte.
+Ya que la probabilidad de asignacio´n no cambia de 0 a 1 en el punto de corte se utiliza un DRD difuso (Imbens y Lemieux, 2008). En un DRD difuso, cruzar el umbral causa una discontinuidad en la probabilidad de tratamiento. La idea es que algunos estudiantes con promedio por debajo del punto de corte son asignados al turno matutino y algunos con promedio por encima del punto de corte no lo son. La estrategia de identiﬁcacio´n se basa en el supuesto de que todas las caracter´ısticas que afecten el resultado, excepto la probabilidad de asignacio´n, cambian suavemente a lo largo del umbral de la discontinuidad, por lo que el resultado varia s´olo por la inﬂuencia de la asignacio´n de turno.
+Siempre y cuando el orden del polinomio de suavizaci´on de la variable de asignaci´on y la ventana de estimacio´n, sean iguales para la primera y la segunda etapa es posible estimar el efecto de tratamiento utilizando variables instrumentales (Van Der Klaauw, 2002). La primera y la segunda etapa en nuestro caso son:
+
+vespipt = γ0 + γ1I(promipt < cpt) + f (promipt) + Xiptγ2 + Fp + Ft + ηipt
+
+(2)
+
+yipt = β0 + β1vesˆpipt + f (promipt) + Xiptβ2 + Fp + Ft + uipt
+
+(3)
+
+donde, yipt es la variable de resultado de inter´es para el estudiante i del plantel p y la generacio´n t; vespipt es un indicador igual a 1 si el estudiante i del plantel p y la generacio´n t es asignado al turno vespertino e igual a 0 si es asignado al matutino; I(promipt < cpt) es una funcio´n caracter´ıstica que indica si el promedio de secundaria promipt del estudiante i del plantel p y la generacio´n t esta por debajo del punto de corte cpt del plantel p y la generacio´n t; Xipt es un vector de caracter´ısticas observables del estudiante i del plantel p y la generaci´on t; Fp y Ft son vectores de efectos ﬁjos por plantel y por generacio´n respectivamente; ηipt y uipt son t´erminos de error aleatorios. Por u´ltimo, f (promipt) es el polinomio de regresio´n discontinua, el cual controla la funcio´n de suavizaci´on polinomial de la distribucio´n en el espacio prom.
+El para´metro de inter´es en este modelo es β1. El efecto estimado corresponde a los
+
+10
+
+“compliers”, es decir, aquellos que ser´ıan asignados al turno vespertino si tuviesen un promedio de secundaria por debajo del punto de corte pero que ser´ıan asignados al matutino si tuviesen un promedio por encima del mismo. Se aproxima la pendiente del efecto de tratamiento para cada promedio de secundaria utilizando la funcio´n polinomial f (promipt).
+Se utiliza el criterio de informacio´n de Akaike para conﬁrmar que un polinomio de control de tercer orden es adecuado: un polinomio de suavizaci´on cu´bico con pendientes diferentes a cada lado del umbral es la mejor especiﬁcaci´on de acuerdo al AIC para cualquier ancho de banda.5 Se utiliza el mismo ancho de banda y un polinomio del mismo orden tanto para la primera como para la segunda etapa, de tal forma que es posible utilizar una regresio´n de m´ınimos cuadrados en dos etapas para estimar los coeﬁcientes y los errores est´andar.
+La ecuaci´on anterior se estima restringiendo la muestra a estudiantes con promedio de secundaria dentro de una ventana cercana al punto de corte. El objetivo al restringir la muestra es comparar a estudiantes similares para identiﬁcar el efecto local de tratamiento. Los estimadores que se obtienen deben ser interpretados como efecto local promedio de tratamiento en el umbral de discontinuidad. Dado que el promedio de secundaria en nuestra base de datos se encuentra redondeado a un decimal, la distribucio´n de la variable de asignacio´n es discreta. Se calculan errores esta´ndar agrupados a nivel promedio de secundaria como recomiendan Lee y Card (2008).
+3.2. Datos
+Los datos provienen del sistema de bachilleratos de la Universidad Nacional Auto´noma de M´exico (UNAM), particularmente del Colegio de Ciencias y Humanidades (CCH) el cual se compone de 5 planteles: Naucalpan, Azcapotzalco, Vallejo, Oriente, y Sur. Los cinco planteles tienen una oferta anual de 3,600 lugares cada uno, ´estos se dividen entre el turno matutino y vespertino, y tienen tasas de aceptacio´n que van del 22 % al 48 %.6
+El proceso de admisio´n para todo el sistema de Educacio´n Media Superior en la Zona Metropolitana de la Ciudad de M´exico, es u´nico y se realiza de forma anual, conduci-
+5Resultados de las pruebas de robustez con polinomios de diferente orden y anchos de banda se muestran en la Tabla 7 del Ap´endice A.
+6Datos procedentes del concurso de seleccio´n para la generaci´on 2013, en el cual 55,190 aspirantes concursaron por 18,000 lugares disponibles.
+11
+
+do por la Comisio´n Metropolitana de Instituciones Pu´blicas de Educaci´on Media Superior (COMIPEMS). La admisi´on se determina con base en los aciertos obtenidos en el examen estandarizado de admisio´n y las preferencias del solicitante sobre las instituciones y planteles participantes. La COMIPEMS indica a cada bachillerato qu´e estudiantes ser´an admitidos.
+Una vez que el estudiante es admitido, se asigna a uno de los dos turnos. Segu´n la gu´ıa de ingreso al bachillerato UNAM, el proceso de asignacio´n es aleatorio, es decir, no importa el promedio, g´enero o edad para asignar el turno, sino que ´este se asigna a trav´es de un sistema que equilibra el nu´mero de alumnos por grupo. No obstante, un an´alisis detallado de los datos reﬂeja que la asignacio´n de turno es una funcio´n aleatoria condicional y discontinua de tres caracter´ısticas observables del estudiante: el promedio ﬁnal de secundaria, el g´enero y la edad, siendo el promedio ﬁnal de secundaria una variable casi determin´ıstica.
+El proceso depende de las caracter´ısticas de los estudiantes que son admitidos cada an˜o, por lo que no se establece un promedio m´ınimo para ser asignado al turno matutino. Este promedio puede variar segu´n la generaci´on, el plantel y las caracter´ısticas de los estudiantes. Las diferencias en el punto de discontinuidad se toman en cuenta en el Disen˜o de Regresio´n Discontinua (DRD), utilizando la distancia entre el promedio ﬁnal de secundaria y el punto de corte que le corresponde a cada estudiante segu´n su generacio´n, plantel y g´enero, en lugar de utilizar su promedio de secundaria absoluto. Para efectuar el ana´lisis se utiliza una base de datos que proviene de dos fuentes: datos administrativos proporcionados por la Direccio´n General del CCH y datos del cuestionario socioecono´mico aplicado por la Direccio´n General de Planeaci´on y Evaluacio´n de la UNAM.7 La muestra se compone por observaciones a nivel estudiante y cubre ocho generaciones en un periodo que va de 2005 a 2014. Para prop´ositos de este an´alisis los estudiantes de todos los planteles y generaciones han sido combinados en una muestra u´nica.
+La base de datos administrativos contiene informaci´on relativa a la trayectoria acad´emica de cada estudiante registrado en el CCH durante el periodo de an´alisis. E´sta cuenta con el promedio de secundaria —el cual se utiliz´o como variable de asignacio´n—, promedios generales de bachillerato por semestre, nu´mero de materias aprobadas, admisio´n a la UNAM e informaci´on relativa al abandono, expulsio´n o graduaci´on del estudiante. Esta base de
+7Los datos fueron solicitados a trav´es del ´area de transparencia de la UNAM, No. de solicitud: F10897.
+12
+
+datos se complementa con un cuestionario socioecono´mico, que incluye informacio´n sobre las caracter´ısticas personales y familiares del estudiante como: tipo de escuela secundaria de procedencia, turno de secundaria de procedencia, edad, g´enero, actitudes acad´emicas del estudiante, nivel de educaci´on de los padres, situacio´n laboral del estudiante, ingreso del hogar, entre otras.
+La muestra de an´alisis consiste de estudiantes de 14 a 16 an˜os, siendo 15 an˜os la edad normal de ingreso.8 Lo anterior debido a que se presume que los estudiantes de m´as de 16 an˜os se encuentran bajo circunstancias diferentes lo que puede ocasionar un sesgo en nuestros resultados. La muestra ﬁnal incluye al 73 % de la muestra original, es decir, a 96,794 estudiantes. Se excluyen cuatro planteles de la generacio´n 2007 dado que la informaci´on necesaria no se encuentra disponible. Finalmente, la muestra se limita a estudiantes dentro de un ancho de banda de 0.40 puntos alrededor del punto de corte. Restringir las observaciones en el umbral de la discontinuidad nos deja a 31,372 estudiantes.9
+3.3. Estad´ısticas descriptivas
+En la Tabla 1 observamos estad´ısticas descriptivas por turno. El Panel A presenta informacio´n para la muestra completa. En el turno matutino el 61 % de los estudiantes son mujeres, la edad promedio de ingreso es 15.15 an˜os, el promedio de secundaria es 9.11 y el 11 % de los estudiantes trabajan. Comparando las estad´ısticas del turno matutino con las del vespertino, observamos diferencias en el porcentaje de mujeres (44 % en el turno vespertino) y el promedio de secundaria (7.91 en el turno vespertino). La diferencia signiﬁcativa en estas variables sugiere que el g´enero y el promedio de secundaria determinan, en parte, la asignaci´on de turno.
+La regla de asignaci´on basada en el promedio de secundaria puede ser usada para identiﬁcar el efecto del tratamiento, porque parece inducir una discontinuidad en la probabilidad de ser asignado al turno vespertino. Dado que ´esta es la fuente de identiﬁcaci´on, gran parte del an´alisis y conclusiones subsecuentes se restringen a la muestra dentro del umbral de discontinuidad de 0.40 puntos, considerando una ventana sim´etrica alrededor del mismo.
+8Aproximadamente el 10 % de los admitidos tienen ma´s de 16 an˜os de edad al momento del ingreso. 9El ancho de banda ´optimo fue determinado siguiendo a Imbens y Kalyanaraman (2011).
+13
+
+Tabla 1: Estad´ıstica descriptiva
+
+Variable
+Panel A. Muestra completa Caracter´ısticas
+Mujeres Edad Promedio de secundaria Examen diagno´stico de ingreso Trabaja An˜os de escolaridad: Madre An˜os de escolaridad: Padre Ingreso mensual del hogar Resultados
+Promedio 1er semestre Promedio ﬁnal Admitido a carrera Top 10 UNAM Desercio´n Regularidad al 1er semestre
+Observaciones
+
+Matutino Media D.E.
+0.61 0.49 15.15 0.41
+9.11 0.51 6.73 0.73 0.11 0.31 10.57 3.54 10.85 4.19 2.43 1.27
+8.06 1.01 8.22 0.92 0.46 0.50 0.16 0.36 0.70 0.46 54,906
+
+Vespertino Media D.E.
+0.44 0.50 15.30 0.49
+7.91 0.51 6.45 0.63 0.17 0.37 10.78 3.48 11.03 4.21 2.53 1.29
+7.17 1.07 7.30 1.01 0.29 0.45 0.43 0.50 0.40 0.49 41,888
+
+Diferencia
+0.17 -0.14 1.20 0.28 -0.06 -0.21 -0.18 -0.10
+0.88 0.91 0.17 -0.27 0.31 96,794
+
+Valor P
+0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
+0.000 0.000 0.000 0.000 0.000
+
+Panel B. Muestra de discontinuidad +/- 0.4 puntos Caracter´ısticas
+
+Mujeres Edad Promedio de secundaria Examen diagno´stico de ingreso Trabaja An˜os de escolaridad: Madre An˜os de escolaridad: Padre Ingreso mensual del hogar Resultados
+
+0.59 0.49 15.16 0.41
+8.73 0.30 6.70 0.70 0.12 0.32 10.81 3.51 11.06 4.22 2.52 1.30
+
+0.52 0.50 15.26 0.47
+8.39 0.26 6.38 0.59 0.15 0.35 10.56 3.47 10.90 4.14 2.43 1.24
+
+Promedio 1er semestre Promedio ﬁnal Admitido a carrera Top 10 UNAM Desercio´n Regularidad al 1er semestre
+
+7.68 0.96 7.87 0.88 0.41 0.49 0.22 0.41 0.58 0.49
+
+7.47 1.04 7.61 0.98 0.37 0.48 0.32 0.47 0.51 0.50
+
+Observaciones
+
+18,030
+
+13,342
+
+0.07 -0.10 0.34 0.32 -0.03 0.25 0.16 0.09
+0.21 0.26 0.04 -0.11 0.07
+31,372
+
+0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
+0.000 0.000 0.000 0.000 0.000
+
+Nota: La deﬁniciones de la variable “Ingreso mensual del hogar” es: Variable catego´rica = 1: 1 a 2 salarios m´ınimos, 2: 3 a 4 salarios m´ınimos, 3: 5 a 6 salarios m´ınimos. El Panel B muestra estad´ıstica descriptiva restringiendo la muestra a ±0.4 puntos alrededor del punto de corte de la variable de asignacio´n determinado para cada Generacio´n/Plantel/G´enero.
+
+14
+
+Figura 1: Ana´lisis de cambio estructural
+0.68
+
+0.66
+
+R cuadrada
+
+0.64
+
+0.62
+
+7
+
+7.5
+
+8
+
+8.5
+
+9
+
+9.5
+
+10
+
+Promedio de secundaria
+
+Mujeres
+
+Hombres
+
+Nota: Estimacio´n basada en el m´etodo usado en Card, Mas, y Rothstein (2008).
+
+3.4. Discontinuidad espec´ıﬁca generaci´on-plantel-g´enero
+El promedio m´ınimo puede ser diferente para cada plantel y generacio´n, pues depende del nu´mero de aspirantes aceptados y la distribucio´n de sus promedios. Adem´as, la regla de asignacio´n da prioridad a mujeres al momento de asignar el turno, lo que puede determinar la existencia de puntos de corte diferentes para hombres y mujeres. El promedio m´ınimo para ser asignado al turno matutino no es conocido en ningu´n caso; para solucionar esto, se utiliza una metodolog´ıa de series de tiempo llamada “cambio estructural”, basada en Card, Mas y Rothstein (2008) y Ozier (2011). Esta metodolog´ıa se utiliza para encontrar puntos de discontinuidad en circunstancias similares a la que nos enfrentamos.
+El primer paso consiste en estimar una regresi´on de la variable de tratamiento (turno asignado) contra un indicador de discontinuidad hipot´etica, el cual va de 7.0 a 10.0 con incrementos de una d´ecima y se controla por un polinomio ﬂexible de la variable de asignacio´n (promedio ﬁnal de secundaria). Este procedimiento se realiza de forma independiente para
+15
+
+Probabilidad de ser asignado al turno vespertino Probabilidad de ser asignado al turno vespertino
+
+Figura 2: Probabilidad de asignaci´on al turno vespertino
+
+Punto de corte: Fijo 8.5 (A)
+1.0
+
+Punto de corte: Generación/Plantel (B)
+1.0
+
+0.8
+
+0.8
+
+0.6
+
+0.6
+
+0.4
+
+0.4
+
+0.2
+
+0.2
+
+0.0
+−2 −1.5 −1 −.5 0 .5 1 1.5 2 Promedio de secundaria menos punto de corte
+Mujeres Hombres
+
+0.0
+−2 −1.5 −1 −.5 0 .5 1 1.5 2 Promedio de secundaria menos punto de corte
+Mujeres Hombres
+
+Nota: Cada c´ırculo representa la media de la asignacio´n al turno vespertino en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresi´on local lineal con un ancho de banda de 0.4.
+
+cada generacio´n, plantel y g´enero. Para cada combinacio´n de caracter´ısticas (generaci´on, plantel y g´enero) se considera que el punto de discontinuidad verdadero (punto de corte) es aquel cuya regresi´on produce la R2 ma´s alta.
+En general se encuentra que los puntos de discontinuidad est´an en promi = 8.4 para hombres y mujeres, sin embargo, en los u´ltimos an˜os para ciertos planteles las mujeres presentan una discontinuidad en promi = 8.9. Como prueba adicional, se realiza el mismo procedimiento para toda la muestra, separando so´lo entre hombres y mujeres, en donde se obtiene como resultado que el punto de discontinuidad es el mismo para ambos sexos y se encuentra en promi = 8.4. El resultado se muestra en la Figura 1.
+Para facilitar el ana´lisis de la variable de asignacio´n se utiliza la distancia entre el promedio de cada estudiante y el punto de corte correspondiente, en lugar de utilizar el valor
+
+16
+
+absoluto del promedio de secundaria. Se tienen dos alternativas de centrado: (A) centrar la variable de asignaci´on utilizando el punto de corte promi = 8.4 para todos los estudiantes; (B) centrar la variable de asignacio´n utilizando el punto de corte correspondiente segu´n la generacio´n, plantel y g´enero del estudiante.10 En la Figura 2 observamos gr´aﬁcamente el punto de discontinuidad para ambas muestras. Como prueba de robustez se analizan los efectos utilizando ambas alternativas y los resultados se muestran u´nicamente para la alternativa B. El Panel B de la Tabla 1 presenta estad´ısticas descriptivas para la muestra de discontinuidad utilizando la alternativa de centrado B y un ancho de banda de 0.40 puntos.
+10El punto de corte para los hombres del plantel 3 en generacio´n 2005 es 7.9, para el resto es 8.4. En el caso de las mujeres se encuentran 13 planteles-generaci´on cuyo punto de corte es 8.9 y para el resto es 8.4.
+17
+
+4. Resultados
+4.1. Validez del disen˜o de regresio´n discontinua
+Para estimar resultados consistentes y darles interpretaci´on causal, el DRD debe cumplir con ciertas condiciones de validez. La principal preocupaci´on reside en la posibilidad de que exista seleccio´n no aleatoria, en la que aquellos que podr´ıan ser afectados por el tratamiento pueden conocer la regla de asignaci´on y el punto de corte, manipul´andola para ser asignados —o en nuestro caso evitar la asignacio´n— al grupo de tratamiento.
+En la asignaci´on de turno, la manipulaci´on podr´ıa tener lugar si los estudiantes pudieran convencer a sus profesores para que subieran sus caliﬁcaciones, o si controlaran su promedio de secundaria a trav´es del nivel de esfuerzo que ejercen en la escuela para obtener una caliﬁcacio´n justo por encima del punto de corte. Es dif´ıcil que un estudiante pueda manipular con precisio´n su promedio, ya que ´este depende de su desempen˜o mostrado durante los tres an˜os de secundaria; adema´s, se forma con evaluaciones aplicadas por un gran nu´mero de profesores en diferentes asignaturas. Igualmente, una garant´ıa de que los estudiantes desconocen el criterio de asignacio´n, es que la gu´ıa de ingreso al bachillerato UNAM —en la cual se explica el procedimiento de admisio´n al CCH— indica expl´ıcitamente que el proceso de asignaci´on a turno es aleatorio; es decir, no importa el promedio, g´enero o edad para asignar el turno, por lo que el estudiante cree que el proceso no depende de ninguna variable que est´e bajo su control.
+Si hubiera selecci´on no aleatoria, se esperar´ıa ver una discontinuidad en la distribucio´n del promedio de secundaria en el punto de corte. Un nu´mero desproporcionado de estudiantes estar´ıan justo por encima del punto de corte en relacio´n con los que estar´ıan por debajo. La Figura 3 muestra la distribucio´n del promedio de secundaria. Gra´ﬁcamente no se observa discontinuidad en la distribucio´n de estudiantes al pasar el punto de corte. Adicionalmente, se realiza la prueba de densidad desarrollada por McCrary (2008).11 La discontinuidad en el umbral no es estad´ısticamente signiﬁcativa, por lo que se concluye que la distribucio´n es continua y no hay evidencia de manipulacio´n por parte de los estudiantes.
+11Esta prueba esta´ basada en un estimador local lineal de la discontinuidad en el punto de corte sobre la funci´on de densidad de la variable de asignaci´on. Se implementa como una prueba de Wald donde la hip´otesis nula es que la discontinuidad es igual a cero. La discontinuidad estimada es de -0.0023.
+18
+
+Figura 3: Densidad de la variable de asignacio´n
+
+4000
+
+Numero de estudiantes
+
+3000
+
+2000
+
+1000
+
+0
+
+−2
+
+−1
+
+0
+
+1
+
+2
+
+Promedio de secundaria normalizado
+
+Nota: Cada c´ırculo representa la media de la variable de resultado sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresi´on local lineal con un ancho de banda de 0.4.
+
+Una segunda alternativa para probar la validez del DRD es examinar si las caracter´ısticas observables de los estudiantes cambian suavemente a trav´es del umbral. La Figura 5 muestra el ana´lisis gr´aﬁco para las siguientes caracter´ısticas: edad, g´enero, resultado en el examen diagn´ostico de ingreso, situaci´on laboral del estudiante y an˜os de escolaridad de la madre y del padre. No se observa discontinuidad en ninguna de las variables analizadas.
+En la u´ltima columna del Panel B de la Tabla 1 se muestran los resultados de la “prueba t de Student” para comparacio´n de medias. Se observan diferencias pequen˜as en los valores promedio a cada lado del umbral; sin embargo, ninguna es suﬁcientemente grande para considerarse relevante. E´stas son estad´ısticamente signiﬁcativas —a pesar de ser “pra´cticamente” no signiﬁcativas— ya que se cuenta con un gran nu´mero de observaciones.12 Dado que la magnitud de estas diferencias no es relevante puede considerarse que los grupos de
+12La base de datos contiene informaci´on poblacional.
+
+19
+
+Figura 4: Porcentaje de observaciones con datos faltantes
+1.00
+
+% Observaciones con datos faltantes
+
+0.80
+
+0.60
+
+0.40
+
+0.20
+
+0.00
+
+7.0
+
+7.5
+
+8.0
+
+8.5
+
+9.0
+
+9.5
+
+10.0
+
+Promedio de secundaria
+
+Nota: Cada c´ırculo representa el porcentaje de variables con datos faltantes por promedio de secundaria en intervalos de 0.10.
+
+tratamiento y control son comparables.13 Para propo´sitos del ana´lisis se omiten estudiantes con datos faltantes en alguna va-
+riable de inter´es. El cuestionario socioecon´omico tiene una tasa de respuesta del 86 %, los estudiantes que no lo respondieron han sido eliminados de la base de datos. En la Figura 4 observamos el porcentaje de observaciones con datos faltantes a lo largo de la variable de asignacio´n, ´estas se distribuyen de forma uniforme en el promedio de secundaria, por lo que se considera que no afectan el resultado.
+
+13Gran parte del ana´lisis en este estudio se realiza para subgrupos de la poblaci´on, lo que los hace au´n ma´s homog´eneos en caracter´ısticas observables.
+20
+
+Figura 5: Continuidad en caracter´ısticas observables
+Nota: Cada c´ırculo representa la media de la caracter´ıstica observable sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresio´n local lineal con un ancho de banda de 0.4.
+21
+
+Tabla 2: Estimacio´n de la discontinuidad (Primera etapa)
+
+22
+
+VARIABLE DEPENDIENTE: Turno vespertino
+
+MUESTRA:
+
+Completa
+
+(1)
+
+(2)
+
+Ind(PromC<0)
+
+0.636*** 0.600***
+
+(0.007) (0.000)
+
+PromC
+
+0.632***
+
+(0.000)
+
+PromC∗Ind(PromC<0)
+
+-1.708***
+
+PromC2
+
+(0.000) -3.500***
+
+PromC2∗Ind(PromC<0)
+
+(0.000) -1.750***
+
+PromC3
+
+(0.000) 4.988***
+
+PromC3∗Ind(PromC<0)
+
+(0.000) -12.500***
+
+(0.000)
+
+Constante
+
+0.119*** 0.099***
+
+(0.005) (0.000)
+
+Polinomio de control
+
+No
+
+Cu´bico
+
+Controles
+
+No
+
+No
+
+Efectos ﬁjos
+
+No
+
+No
+
+Observaciones R2
+
+31,372 0.41
+
+31,372 0.41
+
+F
+
+7,389.39
+
+(3) 0.615*** (0.000) 0.716*** (0.012) -1.608*** (0.024) -4.037*** (0.063) -0.287** (0.062) 6.012*** (0.099) -12.150*** (0.225) -1.522*** (0.278) Cu´bico
+S´ı S´ı 31,372 0.44
+
+(4) 0.639*** (0.007)
+0.109*** (0.004)
+No No No 17,458 0.42 8,362.33
+
+Mujeres (5)
+0.644*** (0.000) 0.861*** (0.000) -1.489*** (0.000) -4.366*** (0.000) 1.869*** (0.000) 6.155*** (0.000) -8.664*** (0.000) 0.071*** (0.000) Cu´bico
+No No 17,458 0.42
+
+(6) 0.661*** (0.003) 0.934*** (0.011) -1.257*** (0.066) -4.851*** (0.095) 4.060*** (0.467) 6.996*** (0.184) -6.780*** (0.560) -1.508** (0.284) Cu´bico
+S´ı S´ı 17,458 0.46
+
+(7) 0.630*** (0.010)
+0.133*** (0.008)
+No No No 13,914 0.39 3,686.23
+
+Hombres (8)
+0.548*** (0.000) 0.350*** (0.000) -1.894*** (0.000) -2.428*** (0.000) -5.684*** (0.000) 3.525*** (0.000) -16.186*** (0.000) 0.136*** (0.000) Cu´bico
+No No 13,914 0.39
+
+(9) 0.552*** (0.002) 0.348*** (0.027) -1.986*** (0.035) -2.718*** (0.151) -6.164*** (0.176) 4.545*** (0.247) -18.890*** (0.287) -1.712*** (0.249) Cu´bico
+S´ı S´ı 13,914 0.47
+
+Nota (Para todas las tablas de regresiones): La variable P romC se deﬁne como “Promedio de Secundaria Centrado” (promedio de secundaria menos punto de corte). Errores est´andar, agrupados en P romC, se muestran en par´entesis. Los controles, cuando se indica, incluyen edad, g´enero, nivel de educaci´on de los padres, si el estudiante trabaja, si tiene hijos, si es casado, si proviene de una secundaria de turno vespertino y de una privada. Los efectos ﬁjos incluyen variables dummy para cada generacio´n y plantel. La estimaci´on se realiza en la muestra alrededor del umbral de ±0.4 puntos. *: Signiﬁcativo al 10 %. **: Signiﬁcativo al 5 %. ***: Signiﬁcativo al 1 %.
+
+4.2. Discontinuidad.
+La primera etapa del m´etodo de estimaci´on muestra la discontinuidad en la probabilidad de tratamiento. La estimacio´n de la regresio´n se muestra en la Tabla 2 y en la Figura 2 se observa gr´aﬁcamente el punto de discontinuidad. En la Tabla 2, la discontinuidad se estima primero para toda la muestra (columnas 1-3), despu´es por separado para mujeres (columnas 4-6) y para hombres (columnas 7-9). Se reporta el resultado con y sin polinomio de control. Adicionalmente se incluyen controles por caracter´ısticas observables y de efectos ﬁjos. Los controles incluyen: edad, g´enero, nivel de educacio´n de los padres, si el estudiante trabaja, si tiene hijos, si es casado, si proviene de una secundaria de turno vespertino y de una privada. Los efectos ﬁjos incluyen variables dummy para cada generaci´on y plantel.
+La discontinuidad estimada es de magnitud similar al utilizar las diferentes especiﬁ-
+Figura 6: Discontinuidad en caliﬁcacio´n de bachillerato
+
+1er semestre
+9.0
+
+6to semestre
+9.0
+
+8.5
+
+8.5
+
+8.0
+
+8.0
+
+Calificación Calificación
+
+7.5
+
+7.5
+
+7.0
+
+7.0
+
+6.5
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+6.5
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+Nota: Cada c´ırculo representa la media de la variable de resultado sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresi´on local lineal con un ancho de banda de 0.4.
+
+23
+
+caciones. Los resultados generales se estiman con las especiﬁcaciones usadas en las columnas 3, 6 y 9. La discontinuidad se mide como un cambio en la probabilidad de ser asignado al turno vespertino de 61.5 puntos porcentuales (p.p.) (para la muestra completa). Este cambio es de 66.1 p.p. y 55.2 p.p. para mujeres y hombres, respectivamente. El estimador con y sin controles es muy similar debido a que las caracter´ısticas observables de los estudiantes no cambian de forma signiﬁcativa a trav´es del umbral (los individuos son similares a ambos lados del umbral).
+4.3. Caliﬁcacio´n de primer y sexto semestre.
+En la Tabla 3 se reportan los resultados para la muestra completa utilizando cuatro especiﬁcaciones diferentes de las ecuaciones (2) y (3). Adema´s, se reportan resultados utilizando la especiﬁcacio´n que incluye el polinomio de control, controles y efectos ﬁjos para los subgrupos de hombres, mujeres, estudiantes que trabajan y que no trabajan. U´ nicamente se reporta el estimador del efecto de asignacio´n al turno vespertino para las diferentes variables de resultado; as´ı que cada coeﬁciente representa a β1 para una regresio´n diferente.
+En primer lugar, se analiza el impacto de ser asignado al turno vespertino en la caliﬁcacio´n de los estudiantes. El esquema de caliﬁcacio´n utilizado por el CCH es base diez, es decir se caliﬁca al estudiante de cero a diez, siendo seis la m´ınima caliﬁcacio´n aprobatoria. Los resultados del efecto local de tratamiento sobre el promedio de primer semestre se muestran en el Panel A de la Tabla 3. El efecto de ser asignado al turno vespertino al considerar la muestra completa es de 0.14 puntos (columna 4). El estimador es robusto al eliminar controles y efectos ﬁjos (columna 2) pero no al eliminar el polinomio de control (columna 1). Al descomponer el efecto en diferentes subgrupos de la poblacio´n, se observa que el efecto en los hombres es mayor que el de las mujeres, 0.16 y 0.12 puntos respectivamente.
+La desercio´n escolar esta´ correlacionada con la caliﬁcacio´n del estudiante. Al caliﬁcar, los profesores podr´ıan utilizar un criterio relativo que dependa de la distribucio´n del desempen˜o observado en el grupo, es decir, podr´ıan caliﬁcar con diez al mejor estudiante del grupo en el turno vespertino, sin importar que su desempen˜o corresponda a una caliﬁcaci´on menor comparada con estudiantes del matutino. Esta pr´actica es conocida como “curva”.
+24
+
+Tabla 3: Estimacio´n del efecto de asignaci´on a turno vespertino
+
+25
+
+MUESTRA:
+
+Completa Completa
+
+(1)
+
+(2)
+
+Panel A: Caliﬁcaci´on 1er semestre
+
+Turno vespertino
+
+-0.345*** 0.154***
+
+(0.097) (0.000)
+
+Completa (3)
+0.143*** (0.003)
+
+Completa (4)
+0.142*** (0.003)
+
+Mujeres (5)
+0.118*** (0.004)
+
+Hombres (6)
+0.162*** (0.007)
+
+Panel B: Caliﬁcaci´on 6to semestre
+
+Turno vespertino
+
+-0.402*** 0.139***
+
+(0.099) (0.000)
+
+0.122*** (0.002)
+
+0.130*** (0.003)
+
+0.045*** (0.003)
+
+0.255*** (0.007)
+
+Panel C: Cambio porcentual en el promedio a 1er semestre
+
+Turno vespertino
+
+0.028*** 0.014*** 0.013*** 0.015***
+
+(0.003) (0.000) (0.000) (0.000)
+
+0.008*** (0.000)
+
+0.021*** (0.001)
+
+Panel D: Cambio porcentual en el promedio a 6to semestre
+
+Turno vespertino
+
+0.022*** 0.012*** 0.010*** 0.013***
+
+(0.003) (0.000) (0.000) (0.000)
+
+-0.001*** (0.000)
+
+0.032*** (0.001)
+
+Panel E: Probabilidad de deserci´on
+
+Turno vespertino
+
+0.132*** 0.008***
+
+(0.025) (0.000)
+
+0.018*** (0.002)
+
+0.021*** (0.001)
+
+0.120*** -0.124*** (0.002) (0.004)
+
+Panel F: Probabilidad de admisi´on a carreras de alta demanda (UNAM)
+
+Turno vespertino
+
+-0.082*** -0.020*** -0.025*** -0.022*** -0.143***
+
+(0.022) (0.000) (0.002) (0.002) (0.003)
+
+0.171*** (0.004)
+
+Panel G: Probabilidad de admisi´on a carreras de Ciencias Exactas e Ingenier´ıas (UNAM)
+
+Turno vespertino
+
+0.132*** -0.027*** -0.016*** -0.011*** 0.110*** -0.194***
+
+(0.025) (0.000) (0.002) (0.002) (0.002) (0.005)
+
+Polinomio de control Controles Efectos ﬁjos Observaciones
+
+No No No 31,372
+
+Cu´bico No No
+31,372
+
+Cu´bico S´ı No
+31,372
+
+Cu´bico S´ı S´ı
+31,372
+
+Cu´bico S´ı S´ı
+17,458
+
+Cu´bico S´ı S´ı
+13,914
+
+Trabajan (7)
+0.395*** (0.023)
+0.563*** (0.024)
+0.043*** (0.003)
+0.062*** (0.003)
+-0.147*** (0.010)
+0.160*** (0.012)
+-0.227*** (0.011) Cu´bico S´ı S´ı 4,073
+
+No trabajan (8)
+0.095*** (0.003)
+0.050*** (0.004)
+0.009*** (0.000)
+0.004*** (0.000)
+0.049*** (0.002)
+-0.052*** (0.002)
+0.023*** (0.003) Cu´bico
+S´ı S´ı 27,299
+
+Nota: Errores est´andar robustos por cluster en la variable de asignaci´on se muestran en par´entesis. *: Signiﬁcativo al 10 %. **: Signiﬁcativo al 5 %. ***: Signiﬁcativo al 1 %.
+
+Figura 7: Cambio porcentual en caliﬁcaci´on de bachillerato
+
+1er semestre
+−0.05
+
+6to semestre
+−0.05
+
+−0.07
+
+−0.07
+
+−0.09
+
+−0.09
+
+Probabilidad Probabilidad
+
+−0.11
+
+−0.11
+
+−0.13
+
+−0.13
+
+−0.15
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+−0.15
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+Nota: Cada c´ırculo representa la media de la variable de resultado sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresi´on local lineal con un ancho de banda de 0.4.
+
+En la medida en la que los estimadores del Panel A sean pequen˜os, es posible argumentar que el criterio de caliﬁcacio´n utilizado mide el desempen˜o escolar del alumno de forma objetiva; esto es, tendr´ıamos evidencia de que no hay curva. Esto da validez a nuestros resultados, lo cual sugiere que no se vera´n inﬂuenciados por la curva por turno, descartando la posibilidad de que el impacto en la deserci´on o admisio´n a la universidad sea consecuencia del criterio utilizado. Adicionalmente, si hubiera curva por turno, en la Figura 6 se observar´ıan dos lineas paralelas con la misma caliﬁcaci´on ma´xima, cosa que no ocurre. De hecho, se observa que la caliﬁcacio´n es creciente en el promedio de secundaria con tan solo una pequen˜a discontinuidad en el umbral.
+Es posible medir este efecto en diferentes semestres. Los resultados para el promedio de sexto semestre se muestran en el Panel B de la Tabla 3. El efecto es de 0.13 puntos al
+26
+
+Figura 8: Discontinuidad en la probabilidad de desercio´n
+0.50
+
+0.40
+
+Probabilidad
+
+0.30
+
+0.20
+
+0.10
+
+0.00
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+Nota: Cada c´ırculo representa la media de la variable de resultado sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresio´n local lineal con un ancho de banda de 0.4.
+
+considerar la muestra completa, resultado similar al de primer semestre. Podr´ıa pensarse que la disminuci´on en el efecto se debe a que entre el primero y sexto semestre los estudiantes menos ha´biles han desertado, sin embargo, al analizar las diferencias por g´enero, se observa que el efecto sobre las mujeres disminuye, de 0.12 a 0.05 puntos, en primero y sexto semestre respectivamente, mientras que en los hombres aumenta de 0.16 a 0.25 puntos.
+En la Figura 7 se muestra el cambio porcentual en la caliﬁcacio´n de primero y sexto semestre con respecto a la de secundaria. En promedio, las caliﬁcaciones de los estudiantes disminuyen para ambos semestres. Es importante resaltar que la ca´ıda es menor para los estudiantes del turno vespertino. En el Panel C y D se reporta que la diferencia es 1.5 p.p. y 1.3 p.p. para primero y sexto semestre respectivamente.
+Rosenkranz, de la Torre, Stevens y Allensworth (2014) explican que esta ca´ıda se
+27
+
+debe a que la asistencia y el esfuerzo acad´emico sufren cambios durante la transicio´n entre secundaria y bachillerato. Los estudiantes obtienen m´as libertad, perciben la asistencia y el trabajo duro como una eleccio´n y no como una responsabilidad. Concluye que los profesores y las escuelas tienen un rol primordial para prevenir esta ca´ıda.
+Una explicacio´n de este resultado puede ser que la exigencia acad´emica es menor en el turno vespertino; sin embargo, se mostro´ que el criterio de caliﬁcacio´n es muy similar entre ambos turnos. Es posible tambi´en que el monitoreo por parte de los profesores sea mayor en el turno vespertino, pero no se cuenta con informacio´n suﬁciente para analizar este supuesto.
+4.4. Desercio´n.
+Una decisio´n a la cual los jo´venes se enfrentan constantemente durante sus estudios de bachillerato es si deben o no continuar con estos. A los estudiantes que son asignados al turno vespertino se les ha sen˜alizado que su desempen˜o acad´emico es menor al de la media, pero no se les impide continuar con sus estudios de ninguna manera.
+A continuacio´n, se analiza el efecto de la asignacio´n al turno vespertino sobre la decisio´n de los estudiantes de abandonar sus estudios de bachillerato. El Panel E de la Tabla 3 (columna 4) y la Figura 8 muestran el impacto estimado sobre la probabilidad de desercio´n. El estimador para la muestra completa indica que el ser asignado al tuno vespertino incrementa la probabilidad de desercio´n en 2.1 p.p. para los estudiantes que esta´n en el umbral.
+La Figura 9 y las columnas 5-8 del Panel E en la Tabla 3, exploran la posibilidad de que diferentes subgrupos de estudiantes respondan de formas distintas a la asignaci´on de turno. Los resultados sugieren que el efecto promedio en la poblaci´on disfraza efectos sustanciales y heterog´eneos entre diferentes subgrupos.
+El efecto sobre los estudiantes que trabajan muestra que ellos tienen mayor ﬂexibilidad para continuar con sus estudios cuando son asignados al turno vespertino. Para ellos se estima una disminucio´n en la probabilidad de deserci´on de 14.7 p.p., siendo el subgrupo con los mayores beneﬁcios de ser asignado al turno vespertino, mientras que los estudiantes que no trabajan incrementan su probabilidad de desercio´n en 4.9 p.p.
+Tambi´en se encuentran efectos heterog´eneos de acuerdo al g´enero: por un lado, el impacto estimado indica que la probabilidad de desercio´n para las mujeres incrementa 12.0
+28
+
+Tabla 4: Desercio´n por g´enero y punto de corte
+
+VARIABLE DEPENDIENTE: Deserci´on
+
+MUESTRA:
+
+Mujeres
+
+PUNTO DE CORTE: 8.4
+
+8.9
+
+(1)
+
+(2)
+
+Turno vespertino
+
+0.247*** -0.108***
+
+(0.002) (0.006)
+
+PromC
+
+1.355*** -0.560***
+
+(0.042) (0.049)
+
+Edad
+
+-0.001
+
+0.014
+
+(0.013) (0.013)
+
+Trabaja
+
+0.045*** 0.031
+
+(0.014) (0.017)
+
+Constante
+
+0.225
+
+0.100
+
+(0.186) (0.187)
+
+Polinomio de control Cu´bico Cu´bico
+
+Controles
+
+S´ı
+
+S´ı
+
+Efectos ﬁjos
+
+S´ı
+
+S´ı
+
+Observaciones
+
+9,232
+
+8,226
+
+Hombres (Campus 3)
+
+7.9
+
+8.4
+
+(3)
+
+(4)
+
+-1.144*** -0.093***
+
+(0.080) (0.013)
+
+9.005*** -0.119
+
+(0.939) (0.147)
+
+0.079
+
+0.033*
+
+(0.072) (0.015)
+
+0.169* 0.058*
+
+(0.071) (0.023)
+
+-0.324
+
+0.267
+
+(1.009) (0.242)
+
+Cu´bico Cu´bico
+
+S´ı
+
+S´ı
+
+S´ı
+
+S´ı
+
+380
+
+2,649
+
+Nota: Errores est´andar robustos por cluster en la variable de asignacio´n se muestran en par´entesis. *: Signiﬁcativo al 10 %. **: Signiﬁcativo al 5 %. ***: Signiﬁcativo al 1 %.
+
+p.p. Esto implica que una de cada diez mujeres —en el umbral del punto de corte— que son asignadas al turno vespertino, habr´ıa concluido el bachillerato si hubiera sido asignada al matutino. Por otro lado, la probabilidad de desercio´n para los hombres disminuye 12.4 p.p.
+La evidencia muestra que hombres y mujeres responden de forma diferente a la asignacio´n al turno vespertino. Tanto hombres como mujeres toman los mismos cursos y son ensen˜ados por los mismos profesores durante el bachillerato, por lo que la diferencia no puede ser causada por diferentes niveles de exigencia para cada g´enero, a menos que los profesores traten diferente a mujeres y hombres.
+Al separar a los estudiantes segu´n su desempen˜o acad´emico —como en el caso de las escuelas de “tracking”— podr´ıamos observar dos implicaciones: primero, al formar grupos homog´eneos los profesores pueden concentrar el nivel de ensen˜anza en la media del grupo, disminuyendo la distancia entre los estudiantes ma´s y menos ha´biles. Segundo, puede existir un efecto de pares, a trav´es del cual los estudiantes con un desempen˜o mayor se pueden ver beneﬁciados al convivir con otros de alto desempen˜o y aquellos con un desempen˜o menor
+
+29
+
+Probabilidad Probabilidad
+
+Figura 9: Discontinuidad en la probabilidad de desercio´n por grupo
+
+Mujeres
+0.55
+0.45
+0.35
+0.25
+0.15
+0.05
+−1 −.5 0 .5 1
+Promedio de secundaria menos punto de corte
+Trabajan
+0.55
+0.45
+0.35
+0.25
+0.15
+0.05
+−1 −.5 0 .5 1
+Promedio de secundaria menos punto de corte
+
+Hombres
+0.55
+0.45
+0.35
+0.25
+0.15
+0.05
+−1 −.5 0 .5 1
+Promedio de secundaria menos punto de corte
+No trabajan
+0.55
+0.45
+0.35
+0.25
+0.15
+0.05
+−1 −.5 0 .5 1
+Promedio de secundaria menos punto de corte
+
+Probabilidad Probabilidad
+
+Nota: Cada c´ırculo representa la media de la variable de resultado sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresi´on local lineal con un ancho de banda de 0.4.
+30
+
+Tabla 5: Efecto del ranking en la probabilidad de desercio´n
+
+VARIABLE DEPENDIENTE: Deserci´on
+
+MUESTRA:
+
+Mujeres
+
+TURNO:
+
+Vespertino Matutino
+
+(1)
+
+(2)
+
+Ranking
+
+-0.031* -0.012*
+
+(0.015) (0.006)
+
+Promedio de secundaria -0.146*** -0.102***
+
+(0.030) (0.013)
+
+Edad
+
+0.013 0.026***
+
+(0.007) (0.005)
+
+Trabaja
+
+0.035** 0.032***
+
+(0.011) (0.007)
+
+Constante
+
+1.439*** 0.693***
+
+(0.272) (0.142)
+
+Controles
+
+S´ı
+
+S´ı
+
+Efectos ﬁjos
+
+S´ı
+
+S´ı
+
+Observaciones R2
+
+18,628 0.07
+
+33,520 0.04
+
+F
+
+62.80
+
+62.36
+
+Hombres
+
+Vespertino Matutino
+
+(3)
+
+(4)
+
+-0.049*** -0.015
+
+(0.015) (0.009)
+
+-0.107*** -0.116***
+
+(0.032) (0.018)
+
+0.035*** 0.049***
+
+(0.007) (0.007)
+
+0.026** 0.037***
+
+(0.008) (0.007)
+
+0.918*** 0.486*
+
+(0.266) (0.190)
+
+S´ı
+
+S´ı
+
+S´ı
+
+S´ı
+
+23,260
+
+21,386
+
+0.07
+
+0.06
+
+81.49
+
+61.67
+
+Nota: Errores esta´ndar robustos por cluster en la variable de asignaci´on se muestran en par´entesis. *: Signiﬁcativo al 10 %. **: Signiﬁcativo al 5 %. ***: Signiﬁcativo al 1 %.
+
+pueden verse perjudicados al convivir con otros de bajo desempen˜o (Duﬂo, Dupas y Kremer, 2011). Estos efectos podr´ıan ayudarnos a entender el impacto heterog´eneo entre los estudiantes de ambos g´eneros.
+Cuando el punto de corte disminuye, el grupo en el turno vespertino se vuelve ma´s homog´eneo. Por un lado, el desempen˜o de los alumnos deber´ıa aumentar, ya que el profesor podr´ıa ajustar el nivel de ensen˜anza de forma m´as precisa y, por otro lado, los efectos de pares tendr´ıan un impacto negativo en el desempen˜o al concentrar un mayor nu´mero de estudiantes de bajo desempen˜o.
+Aunque es relativamente sencillo analizar el impacto de ser asignado al turno vespertino en la probabilidad de desercio´n, es dif´ıcil separar los diferentes mecanismos que se involucran con el tratamiento. Podemos aprovechar la existencia de diferentes puntos de corte para hombres y mujeres para obtener evidencia que permita probar estas implicaciones.
+
+31
+
+Figura 10: Probabilidad de deserci´on por ranking
+
+Hombres
+
+Mujeres
+
+Probabilidad
+0 .05 .1 .15 .2 .25 .3 .35
+
+Matutino Vespertino
+
+Turno
+
+Matutino Vespertino
+
+Nota: Se muestra la probabilidad de desercio´n estimada para un estudiante con caracter´ısticas promedio, ﬁjando su posici´on en el ranking en u´ltimo (0=peor) y primer lugar (1=mejor), para el turno matutino y vespertino respectivamente, y su promedio de secundaria centrado ﬁjo en cero para ambos casos.
+
+En la Tabla 4 se presentan los resultados por g´enero, mujeres (columnas 1-2) y hombres14 (columnas 3-4), para los diferentes puntos de corte.
+El efecto de asignaci´on al turno vespertino sobre la probabilidad de deserci´on es creciente en el punto de corte para los hombres; sin embargo, el efecto es decreciente para las mujeres. Se puede pensar que la primera implicacio´n domina en el caso de los hombres y la segunda en las mujeres. Las mujeres pueden ser m´as susceptibles al efecto de pares que sus compan˜eros tienen sobre ellas.
+La asignaci´on al turno vespertino puede considerarse un incentivo negativo para el estudiante, pues su ideal es estudiar en el matutino. Los resultados contribuyen a la literatura de diferencias de g´enero en respuesta a incentivos educativos, en donde estudios previos
+14El campus tres es el u´nico que cuenta con dos puntos de corte para hombres, por lo que los resultados se muestran para estudiantes de este campus.
+32
+
+encuentran que las mujeres son ma´s responsivas a incentivos positivos que los hombres (Lindo, Sanders y Oreopoulos, 2010). En el presente estudio, se encuentra que la probabilidad de desercio´n de los hombres disminuye frente a incentivos negativos, mientras que las mujeres responden a este incentivo negativo con un incremento en su probabilidad de desercio´n.
+Adema´s es importante resaltar que aun cuando el punto de corte es el mismo para hombres y mujeres existe una brecha en el efecto. Esta brecha puede ser causada por el incremento en la motivacio´n del estudiante que provoca el cambio en su ranking relativo. La nueva autopercepcio´n del estudiante podr´ıa incrementar su nivel de esfuerzo, llev´andolo a mejorar su desempen˜o acad´emico.
+La literatura de diferencias de g´enero y preferencias por competencia —sobresalen los trabajos de Gneezy, Niederle y Rustichini (2003) y Niederle y Vesterlund (2007)— sen˜ala que en experimentos de laboratorio, al incrementar el nivel de competitividad del ambiente, se observa un incremento signiﬁcativo en el desempen˜o para los hombres pero no para las mujeres, especialmente cuando ellas tienen que competir con hombres. La diferencia en la actitud de hombres y mujeres frente a la competencia podr´ıa explicar la brecha en el efecto.
+Para determinar la importancia del efecto del ranking relativo sobre la probabilidad de desercio´n, se calcula el ranking relativo de cada estudiante de acuerdo a su promedio de secundaria, su generacio´n, plantel y turno. El ranking se estandariza para facilitar su interpretacio´n. El efecto es estimado con la siguiente regresio´n lineal, la cual se estima de forma independiente para cada g´enero y turno:
+
+yi = β0 + β1rankingi + β2promi + Xiβ3 + Fi β4 + ui
+
+(4)
+
+Los resultados se muestran en la Tabla 5. En general se observa que todos los grupos se beneﬁcian al incrementar su posici´on en el ranking. Los estimadores en el turno vespertino son mayores que en el matutino, lo que indica la existencia de un efecto en la motivacio´n del estudiante. La diferencia entre el estimador del ranking para el turno matutino son similares entre hombres y mujeres; sin embargo, en promedio los hombres obtienen un beneﬁcio 58 % mayor que las mujeres si son asignados al turno vespertino.
+La Figura 10 muestra la probabilidad de deserci´on estimada para estudiantes en el
+
+33
+
+Tabla 6: Mujeres admitidas por carrera (UNAM)
+
+Carrera
+
+Porcentaje No. de de mujeres estudiantes
+
+Panel A. Carreras de alta demanda (Top 10)
+
+General
+
+0.63
+
+Derecho
+
+0.60
+
+M´edico Cirujano
+
+0.71
+
+Psicolog´ıa
+
+0.77
+
+Cirujano Dentista
+
+0.69
+
+Arquitectura
+
+0.44
+
+Biolog´ıa
+
+0.58
+
+Administraci´on
+
+0.57
+
+Ciencias de la Comunicaci´on
+
+0.67
+
+Contadur´ıa
+
+0.49
+
+37,777 7,506 5,521 5,123 3,633 3,474 2,896 2,748 2,420 2,274
+
+Panel B. Carreras de Ciencias Exactas e Ingenier´ıas
+
+General
+
+0.39
+
+40,816
+
+Nota: La u´nica carrera de alta demanda en la categor´ıa de “Ciencias Exactas e Ingenier´ıas” es Arquitectura.
+
+umbral del punto de corte utilizando los estimadores de la ecuaci´on (4). Se muestra la probabilidad estimada para el estudiante promedio que ocupa el u´ltimo lugar en el ranking en el turno matutino y se compara con la del estudiante promedio que ocupa el primer lugar en el ranking en el turno vespertino. El objetivo es comprobar si el efecto del ranking ayuda a explicar el efecto de asignaci´on de turno. Cuando se considera la muestra completa la diferencia en probabilidad de desercio´n para hombres es so´lo 2.6 p.p. mientras que para las mujeres es 5.2 p.p.
+
+4.5. Admisio´n a la universidad (UNAM).
+Los estudiantes que logran concluir de forma satisfactoria el bachillerato en el CCH obtienen admisio´n directa a la UNAM, lo que implica que no deben participar en el concurso de seleccio´n. Sin embargo, la admisio´n a ciertas carreras de alta demanda no es directa, depende del desempen˜o del estudiante.
+En el Panel F de la Tabla 3 se muestra el efecto de la asignacio´n de turno sobre
+
+34
+
+la probabilidad de admisi´on a una de las diez carreras ma´s demandadas en la UNAM.15 Al comparar al subgrupo de mujeres con el de hombres, se observa un efecto heterog´eneo similar al de la desercio´n: al ser asignadas al turno vespertino, las mujeres en el umbral de la discontinuidad tienen un 14.3 p.p. menos de probabilidad de ser admitidas a una de las diez carreras con mayor demanda en la UNAM, mientras que los hombres tienen un 17.1 p.p. ma´s. El efecto observado para las carreras de alta demanda es consistente con el esperado, si los hombres se ven beneﬁciados al ser asignados al turno vespertino se espera que su probabilidad de admisio´n a carreras donde los est´andares de ingreso son mayores aumente y viceversa para el caso de las mujeres.
+El Panel G de la Tabla 3 reporta el efecto en la probabilidad de admisio´n a carreras comprendidas en la categor´ıa de “Ciencias Exactas e Ingenier´ıas”. Al ser asignadas al turno vespertino, la probabilidad de admisi´on a una de las carreras comprendidas dentro de esta categor´ıa para las mujeres aumenta 11.0 p.p., mientras que para los hombres disminuye 19.4 p.p. El Panel A de la Tabla 6 muestra el porcentaje de mujeres admitidas a cada una de las carreras de alta demanda en la UNAM y el Panel B muestra el porcentaje de mujeres admitidas a carreras de “Ciencias Exactas e Ingenier´ıas”. Se observa que las carreras de alta demanda tienen un porcentaje mayor de estudiantes mujeres, mientras que las carreras de “Ciencias Exactas e Ingenier´ıas” tienen un porcentaje mayor de hombres.
+Razo (2008) describe a las a´reas de ingenier´ıa y tecnolog´ıa como “t´ıpicamente masculinas”; la autora sen˜ala que uno de los factores que inﬂuyen en la elecci´on de carrera por parte de las mujeres, es la opini´on de sus pares —adema´s de la opinio´n familiar y de sus preferencias personales—. So´lo el 39 % de los estudiantes en el turno matutino son hombres, mientras que en el vespertino el 56 % lo son. La convivencia con una mayor´ıa de estudiantes hombres podr´ıa estar inﬂuenciando la decisio´n de las mujeres del turno vespertino para estudiar carreras que socialmente son consideradas como “masculinas”.
+15Se consideran las diez carreras con mayor demanda para la generaci´on 2011: Derecho, M´edico Cirujano, Psicolog´ıa, Arquitectura, Cirujano Dentista, Ciencias de la Comunicaci´on, Biolog´ıa, Administraci´on, Contadur´ıa y Medicina Veterinaria y Zootecnista. Las carreras de alta demanda cambian poco a lo largo del tiempo
+35
+
+Probabilidad Probabilidad
+
+Figura 11: Discontinuidad en la probabilidad de admisio´n a la UNAM
+
+Carreras de alta demanda (Top 10)
+
+Mujeres
+0.70
+
+Hombres
+0.70
+
+0.60
+
+0.60
+
+0.50
+
+0.50
+
+0.40
+
+0.40
+
+0.30
+
+0.30
+
+0.20
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+0.20
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+Ciencias Exactas e Ingenierías
+
+Mujeres
+0.70
+
+Hombres
+0.70
+
+0.60
+
+0.60
+
+0.50
+
+0.50
+
+0.40
+
+0.40
+
+0.30
+
+0.30
+
+0.20
+
+0.20
+
+0.10
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+0.10
+
+−1
+
+−.5
+
+0
+
+.5
+
+1
+
+Promedio de secundaria menos punto de corte
+
+Probabilidad Probabilidad
+
+Nota: Cada c´ırculo representa la media de la variable de resultado sen˜alada en un intervalo de 0.1 alrededor del punto central. La curva es calculada usando una regresi´on local lineal con un ancho de banda de 0.4.
+36
+
+5. Conclusiones
+Existe preocupacio´n de que al minimizar el costo de impartir educacio´n pu´blica a —trav´es del uso de Escuelas de Doble Turno (EDT)— se incremente la desigualdad de oportunidades entre estudiantes de ambos turnos. En el presente trabajo de investigaci´on, se examinaron los efectos potenciales que la asignaci´on al turno vespertino tiene sobre el desempen˜o de los estudiantes, especialmente, el efecto sobre la decisi´on del estudiante de abandonar la escuela y sobre su probabilidad de ingresar a la universidad. Se elimina el sesgo por seleccio´n —ocasionado por la diferencia de caracter´ısticas entre los estudiantes de ambos turnos— utilizando un Disen˜o de Regresio´n Discontinua (DRD), el cual explota la regla se asignacio´n a turno del Colegio de Ciencias y Humanidades (CCH).
+Usando datos sociecono´micos y administrativos de estudiantes de ocho generaciones del CCH, este estudio encuentra que la probabilidad de ser admitido a una de las diez carreras con mayor demanda en la Universidad Nacional Auto´noma de M´exico (UNAM) incrementa para los hombres que son asignados al turno vespertino, pero disminuye para las mujeres. Por el contrario, la probabilidad de ser admitido a una carrera del ´area de “Ciencias Exactas e Ingenier´ıas” incrementa para las mujeres asignadas al turno vespertino, pero disminuye para los hombres.
+Principalmente, se concluye que la asignaci´on al turno vespertino s´ı tiene impacto sobre la desercio´n de los estudiantes. En general, la caracter´ıstica ma´s impactante de los resultados es la heterogeneidad en la respuesta de los diferentes subgrupos de la poblacio´n, especialmente entre mujeres y hombres. Mientras que la asignacio´n al turno vespertino disminuye la probabilidad de deserci´on de los hombres, incrementa la de las mujeres. El impacto es tan grande que implica que aproximadamente una de cada diez mujeres no logra concluir los estudios de bachillerato por ser asignada al turno vespertino, y viceversa en el caso de los hombres.
+Dada la diversidad de efectos que conlleva la asignacio´n de turno, es dif´ıcil explicar qu´e factores causan la diferencia en las respuestas de hombres y mujeres. Este trabajo de investigaci´on se concentra en tres posibles explicaciones. La primera explicacio´n alternativa supone que la asignacio´n al turno vespertino es un incentivo negativo para los estudiantes.
+37
+
+Los hallazgos del estudio implicar´ıan que los incentivos negativos tienen un efecto desmotivante en las mujeres, mientras que estos incrementan la motivacio´n en los hombres. Los resultados contrastan con los de Lindo, Sanders y Oreopoulos (2010) al estudiar el efecto de el condicionamiento acad´emico —como incentivo negativo— en estudiantes universitarios.
+La segunda explicacio´n se basa en la existencia de efectos de pares y efectos por “tracking”. Una disminucio´n en el punto de corte deber´ıa incrementar la probabilidad de desercio´n al decaer la calidad de los pares, pero deber´ıa disminuir la probabilidad de deserci´on al homogeneizar la composici´on del grupo. El estimar el impacto en diferentes puntos de corte nos ayuda a comprobar esto: por un lado, se encuentra que la probabilidad de desercio´n de las mujeres aumenta al disminuir el punto de corte, esto sugiere que el efecto de pares domina sobre el de “tracking”. Por otro lado, la probabilidad de deserci´on de los hombres disminuye al reducir el punto de corte, por lo que es posible inferir que el efecto de “tracking” domina sobre el de pares.
+Finalmente, aun cuando se compara el efecto en el mismo punto de corte, existe una brecha en el impacto entre hombres y mujeres. Al analizar el efecto que el ranking relativo del estudiante tiene sobre la desercio´n, encontramos que juega un papel importante al explicarla. El efecto del ranking es mayor en los hombres, para quienes explica gran parte de la diferencia en probabilidad de desercio´n entre estudiantes del turno matutino y vespertino. El ranking relativo del estudiante afecta a la deserci´on a trav´es del nivel de conﬁanza y motivacio´n del estudiante. Nuestro resultado es consistente con estudios previos y con la literatura de diferencias de g´enero y competencia, por lo que ´esta parece ser la alternativa que mejor explica los resultados. Sin embargo, es necesario realizar m´as investigaci´on para determinar con claridad cu´ales son los mecanismos que subyacen a los impactos heterog´eneos.
+En contraste con el efecto por g´enero, la disminucio´n en la probabilidad de desercio´n para los estudiantes que trabajan es un resultado consistente con lo que el sentido comu´n dir´ıa; si el estudiante desarrolla sus labores por la man˜ana y puede estudiar por la tarde, tiene menor presi´on para dejar la escuela por problemas econo´micos.
+En general, los resultados diﬁeren con aquellos encontrados por Sagyndykova (2013). Ella analiza a estudiantes de secundaria y el presente art´ıculo analiza a estudiantes de bachillerato, por lo que las circunstancias que cada grupo de edad enfrenta son distintas y los
+38
+
+efecto de un tratamiento similar pueden llegar a ser diferentes. Una limitante de este trabajo de investigaci´on es que el DRD estima efectos loca-
+les de tratamiento y no evalu´a el efecto de asignacio´n al turno vespertino sobre la muestra completa; sin embargo, los resultados tienen importantes implicaciones de pol´ıtica pu´blica. El presente estudio proporciona evidencia adicional que contribuye al debate acerca de la conveniencia de utilizar EDT. Dadas las circunstancias actuales, cabe subrayar la relevancia que el criterio de asignacio´n de turno puede tener sobre el desempen˜o de los estudiantes. Es necesario que los directores en las escuelas contemplen los mecanismos anteriormente sen˜alados al deﬁnir la pol´ıtica de asignacio´n.
+39
+
+A. Robustez
+
+Tabla 7: Ana´lisis de robustez: probabilidad de desercio´n
+
+VARIABLE DEPENDIENTE: Desercio´n
+
+MUESTRA:
+
+VENTANA:
+
+±0.4
+
+±0.2
+
+(1)
+
+(2)
+
+Turno vespertino
+
+0.021*** 0.008***
+
+(0.001) (0.001)
+
+PromC
+
+0.286*** -0.107***
+
+(0.016) (0.005)
+
+PromC∗Ind(PromC<0) -0.701*** -0.139***
+
+PromC2
+
+(0.025) (0.006) -2.557***
+
+(0.090) PromC2∗Ind(PromC<0) 1.412***
+
+PromC3
+
+(0.085) 3.798***
+
+(0.150) PromC3∗Ind(PromC<0) -5.420***
+
+(0.248)
+
+Mujer
+
+-0.064*** -0.064***
+
+(0.006) (0.008)
+
+Edad
+
+0.019*
+
+0.008
+
+(0.007) (0.004)
+
+Trabaja
+
+0.039*** 0.039**
+
+(0.009) (0.015)
+
+Constante
+
+0.091 0.267***
+
+(0.112) (0.052)
+
+Polinomio de control
+
+Cu´bico Cu´bico
+
+Controles
+
+S´ı
+
+S´ı
+
+Efectos ﬁjos
+
+S´ı
+
+S´ı
+
+Observaciones
+
+31372
+
+15840
+
+AIC
+
+36184.1
+
+Completa
+
+±0.8
+
+±0.4
+
+(3)
+
+(4)
+
+0.010
+
+0.002
+
+(0.007) (0.008)
+
+-0.124** -0.205***
+
+(0.046) (0.015)
+
+-0.065
+
+0.018
+
+(0.061) (0.017)
+
+-0.304
+
+(0.160)
+
+0.305
+
+(0.187)
+
+0.331*
+
+(0.142)
+
+-0.403*
+
+(0.173)
+
+-0.059*** -0.064***
+
+(0.004) (0.006)
+
+0.027*** 0.021**
+
+(0.006) (0.007)
+
+0.036*** 0.040***
+
+(0.005) (0.009)
+
+-0.062
+
+0.084
+
+(0.087) (0.113)
+
+Cu´bico Lineal
+
+S´ı
+
+S´ı
+
+S´ı
+
+S´ı
+
+61986
+
+31372
+
+36243.67
+
+±0.4 (5) 0.007 (0.006) -0.091 (0.053) -0.167** (0.057) -0.283* (0.130) 0.101 (0.147)
+-0.064*** (0.006) 0.020** (0.007) 0.040*** (0.009) 0.083 (0.113)
+Cuadr´atico S´ı S´ı
+31372 36226.72
+
+Nota: Errores esta´ndar se muestran en par´entesis. *: Signiﬁcativo al 10 %. **: Signiﬁcativo al 5 %. ***: Signiﬁcativo al 1 %.
+
+40
+
+Referencias
+Betts, J. R. and Shkolnik, J. L. (1999). Key diﬃculties in identifying the eﬀects of ability grouping on student achievement. Economics of Education Review, 19(1):21–26.
+Bray, M. (2000). Double-shift Schooling: Design and Operation for Cost-eﬀectiveness. Commonwealth Secretariat UNESCO. London.
+Card, D., Mas, A., and Rothstein, J. (2008). Tipping and the dynamics of segregation. The Quarterly Journal of Economics, 123(1):177–218.
+Ca´rdenas, S. (2011). Escuelas de doble turno en m´exico: una estimaci´on de diferencias asociadas con su implementacio´n. Revista mexicana de investigaci´on educativa, 16(50):801–827.
+Duﬂo, E., Dupas, P., and Kremer, M. (2011). Peer eﬀects, teacher incentives, and the impact of tracking: Evidence from a randomized evaluation in kenya. American Economic Review, 101(5):1739–1774.
+Gneezy, U., Niederle, M., and Rustichini, A. (2003). Performance in competitive environments: Gender diﬀerences. The Quarterly Journal of Economics, 118(3):1049–1074.
+Hidalgo-Hidalgo, M. (2011). On the optimal allocation of students when peer eﬀects are at work: tracking vs. mixing. SERIEs, 2(1):31–52.
+Imbens, G. and Kalyanaraman, K. (2011). Optimal bandwidth choice for the regression discontinuity estimator. The Review of Economic Studies, 79(3):933–959.
+Imbens, G. W. and Lemieux, T. (2008). Regression discontinuity designs: A guide to practice. Journal of Econometrics, 142(2):615–635.
+Lee, D. S. and Card, D. (2008). Regression discontinuity inference with speciﬁcation error. Journal of Econometrics, 142(2):655–674.
+Linden, T. (2001). Double-shift secondary schools: Possibilities and issues. World Bank. Washington, DC.
+Lindo, J. M., Sanders, N. J., and Oreopoulos, P. (2010). Ability, gender, and performance standards: Evidence from academic probation. American Economic Journal: Applied Economics, 2(2):95–117.
+McCrary, J. (2008). Manipulation of the running variable in the regression discontinuity design: A density test. Journal of Econometrics, 142(2):698–714.
+Murphy, R. and Weinhardt, F. (2014). Top of the class: The importance of ordinal rank. CESifo Group Munich.
+Niederle, M. and Vesterlund, L. (2007). Do women shy away from competition? do men compete too much? The Quarterly Journal of Economics, 122(3):1067–1101.
+Ozier, O. (2011). The impact of secondary schooling in Kenya: a regression discontinuity analysis. PhD diss., University of California, Berkeley.
+Razo, M. (2008). La inserci´on de las mujeres en las carreras de ingenier´ıa y tecnolog´ıa. Perﬁles Educativos, 30(121):63–96.
+Rosenkranz, T., de la Torre, M., Stevens, W. D., and Allensworth, E. M. (2014). Free to Fail Or On-Track to College: Why Grades Drop When Students Enter High School and What Adults Can Do about It. Consortium On Chicago School Research. Chicago.
+Sagyndykova, G. (2013). Academic performance in double-shift schooling. PhD diss., University of Arizona.
+Saucedo-Ramos, C. (2005). Los alumnos de la tarde son los peores: pra´cticas y discursos de posicionamiento de la identidad de alumnos problema en la escuela secundaria. Revista Mexicana de Investigaci´on Educativa, 10(26):641–668.
+Van Der Klaauw, W. (2002). Estimating the eﬀect of ﬁnancial aid oﬀers on college enrollment: A regression discontinuity approach. International Economic Review, 43(4):1249–1287.
+41
+
+Zimmerman, S. D. (2014). The returns to college admission for academically marginal students. Journal of Labor Economics, 32(4):711–754.
+42
+
+´Indice de tablas
+1. Estad´ıstica descriptiva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 2. Estimaci´on de la discontinuidad (Primera etapa) . . . . . . . . . . . . . . . . 22 3. Estimaci´on del efecto de asignacio´n a turno vespertino . . . . . . . . . . . . 25 4. Deserci´on por g´enero y punto de corte . . . . . . . . . . . . . . . . . . . . . 29 5. Efecto del ranking en la probabilidad de deserci´on . . . . . . . . . . . . . . . 31 6. Mujeres admitidas por carrera (UNAM) . . . . . . . . . . . . . . . . . . . . 34 7. An´alisis de robustez: probabilidad de deserci´on . . . . . . . . . . . . . . . . . 40
+43
+
+´Indice de ﬁguras
+1. An´alisis de cambio estructural . . . . . . . . . . . . . . . . . . . . . . . . . . 15 2. Probabilidad de asignacio´n al turno vespertino . . . . . . . . . . . . . . . . . 16 3. Densidad de la variable de asignaci´on . . . . . . . . . . . . . . . . . . . . . . 19 4. Porcentaje de observaciones con datos faltantes . . . . . . . . . . . . . . . . 20 5. Continuidad en caracter´ısticas observables . . . . . . . . . . . . . . . . . . . 21 6. Discontinuidad en caliﬁcaci´on de bachillerato . . . . . . . . . . . . . . . . . . 23 7. Cambio porcentual en caliﬁcacio´n de bachillerato . . . . . . . . . . . . . . . 26 8. Discontinuidad en la probabilidad de deserci´on . . . . . . . . . . . . . . . . . 27 9. Discontinuidad en la probabilidad de deserci´on por grupo . . . . . . . . . . . 30 10. Probabilidad de deserci´on por ranking . . . . . . . . . . . . . . . . . . . . . 32 11. Discontinuidad en la probabilidad de admisio´n a la UNAM . . . . . . . . . . 36
+44
+
+

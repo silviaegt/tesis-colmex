@@ -1,0 +1,577 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+MIOPÍA LIMITADA: EFECTOS DEL ESTABLECIMIENTO
+DE UN TECHO A LA DEUDA SOBERANA EN UN MODELO
+CON GOBIERNO DE CORTO PLAZO. JUAN CARLOS PEDRAZA ROBLES
+PROMOCIÓN 2012-2014
+ASESOR:
+JORGE FERNÁNDEZ RUIZ
+JULIO 2014
+
+RESUMEN
+El presente trabajo de investigación analiza los efectos de la imposición de un límite a la deuda soberana insertada en el modelo desarrollado en Acharya y Rajan (2013). Se toma como base el costo interno del incumplimiento de la deuda, por lo que se puede analizar la interacción del sector financiero con el resto de la economía y se obtienen los niveles de deuda e impuestos óptimos, bajo el supuesto de que estas decisiones dependen de un gobierno cuya visión es de corto plazo. Primero se presentan las ecuaciones básicas establecidas en el modelo original seguido por las repercusiones que proceden de la restricción que se ha incorporado.
+i
+
+AGRADECIMIENTOS
+Agradezco A mis padres María Cristina Robles Zavalija y Eusebio Pedraza Cerón y a mi hermana Laura Carolina Pedraza Robles por el cariño y apoyo que siempre me han dado. A mis amigos quienes me ayudaron a lidiar con el estrés y junto con mi familia me recordaron lo que en verdad importa en la vida. A mi asesor Jorge Fernández Ruiz por su sensatez, paciencia, experiencia y por haber creído en mí y en este trabajo. A mis compañeros, y en particular a Ana quien sigue enriqueciendo mi vida. A mis profesores a través de ustedes he adquirido el conocimiento necesario para mi desarrollo profesional.
+ii
+
+INDICE
+Introducción…………………………………………………………………….1 El Modelo……………………………………………………………………….6 El Sector Privado……………………………………………………………….8 El Sector Público……………………………………………………………….8 Dinámica de las restricciones………………………………………………….9 Conclusiones…………………………………………………………………..15 Pruebas…………………………………………………………………………17 Anexo Graficas………………………………………………………………..21 Bibliografía……………………………………………………………………26
+
+INTRODUCCIÓN
+La deuda soberana es uno de los temas más importantes e interesantes para el análisis económico de las finanzas gubernamentales, a través del cual el gobierno puede cumplir con una de sus razones de existencia que es el producir y extender la prosperidad y el bien común, concretamente es un instrumento que permite la realización de inversiones productivas sin la necesidad de sacrificar consumo presente y al mismo tiempo puede ser utilizado para suavizar la volatilidad del consumo, en este sentido se le puede considerar como una herramienta que posibilita el aumento y estabilidad del bienestar social.
+Debido a esto, ha sido ampliamente abordado por la literatura, en particular Jonathan Eaton y Raquel Fernandez (1995) elaboraron para el Handbook of International Economics un estudio bastante detallado sobre la evolución que ha tenido la investigación económica sobre deuda soberana mostrando los distintos enfoques con los que se ha abordado el tema. En términos generales, desglosa la literatura en tres partes:
+1) Las investigaciones que se centran en responder ¿Por qué los países pagan su deuda? Encontrando que se puede explicar por la existencia de incentivos como la existencia de recompensas y penalizaciones. Inicialmente Eaton y Gersovitz (1981) analizan el tema encontrando que si un país repudia su deuda y por ello es expulsado del mercado permanentemente, entonces los prestamistas establecerán un límite de crédito que es determinado por su percepción de la desutilidad que tendría el prestatario al ser excluido del mercado de deuda. Sin embargo, posteriormente hay un cambio con Bulow y Rogoff (1989b) donde encuentran que solo con la amenaza de exclusión no es suficiente para que existan préstamos positivos, en particular su modelo surge por la preocupación de la deuda en los países del tercer mundo.
+Otros artículos en donde se argumenta que la reputación es un elemento crucial son Cole y Kehoe (1992), Kreps-Wilson (1982) principalmente; los primeros muestran las condiciones bajo las cuales la reputación puede sustentar la deuda con modelos de relaciones múltiples y efectos secundarios, mientras que los segundos utilizan un juego finito repetido con información asimétrica para demostrar la importancia de la reputación. Por otra parte se desarrollaron
+1
+
+modelos que incorporaron la renegociación destacando Bulow y Rogoff (1989a) en donde encuentran que los castigos solo son relevantes en cuanto a que determinan el nivel de amenaza, pero estas penalizaciones no se concretan ya que ambas partes obtienen beneficios al negociar.
+2) En el segundo grupo se encuentran aquellos que buscan saber ¿Cuáles son las distorsiones o ineficiencias que la deuda provoca? Cohen (1992), encuentra poco impacto en el crecimiento salvo que el país tenga un nivel adecuado de capital humano y un nivel bajo en capital físico, Goldberg y Spiegel (1992) muestran que se causan distorsiones en la inversión pues se redirecciona a sectores no embargables, mientras que Eaton y Gersovitz (1988) dejan claro que en su modelo en el que se incorpora el riesgo país se crean ineficiencias en el crédito e inversión privada.
+3) Finalmente, se encuentran los artículos que tratan de resolver las ineficiencias generadas por la deuda, aquí se concentran las soluciones iniciadas por los acreedores, los deudores o por el sector público internacional, En el trabajo de Kenen (1990), cuya motivación es la crisis de deuda en los 80s, sugiere la creación de una nueva institución dedicada al manejo de la deuda a nivel internacional respondiendo en este artículo a las dificultades de riesgo moral, selección adversa y free rider.
+Literatura más reciente como Fernández-Ruiz (2000), cuya motivación se encuentra en los planes de recompra de deuda que se llevaron a cabo en los países latinoamericanos como parte de la solución a la crisis de los 80s; utiliza un modelo de sobreendeudamiento de múltiples periodos con información asimétrica para mostrar que se da una transferencia de recursos de forma natural al cambiar de una estrategia de reestructuración de la deuda a una de reducción. Por otra parte en Welt (2012) utilizando datos de Estados Unidos se establece la importancia de ciertos factores políticos y económicos en el límite a la deuda. En ese trabajo se formula un modelo econométrico tomando como variables independientes la tasa de interés promedio, el cambio en la deuda, variables ficticias que capturan si el cambio del límite se dio durante una recesión, si en ese periodo el mismo partido controlaba al Ejecutivo y al Legislativo, o si el voto fue durante una elección presidencial, entre otras. Encuentra que las variables económicas tienen mucho más peso que las políticas salvo en los casos en que los aumentos en el techo de la deuda se promulgan en conjunto con cambios en el proceso presupuestario.
+2
+
+La búsqueda por entender por qué los países pagan su deuda ha llevado a la elaboración de un gran número de modelos teóricos que tratan de dar con una explicación razonable de este hecho, ya que la exclusión del mercado de deuda, la perdida de reputación u otras penalizaciones resultan ser explicaciones teóricamente factibles pero empíricamente deficientes. Los trabajos más recientes han incorporado dentro de su estructura al sector financiero y su interacción con el resto de la economía, En Aizenman y Fernández-Ruiz (2006) encuentran un modelo en el que se establecen distintos tipos de tomadores de decisiones, diferenciados por sus preferencias en donde un tipo busca el desempeño adecuado de la economía y el otro que se limita a los beneficios en su periodo; el comportamiento de ambos afecta la deuda y las reservas internacionales para alterar la recolección de impuestos y por lo tanto varia el producto; incorporando así el mercado financiero. Los agentes ante la incertidumbre buscan señales para inferir con cierta probabilidad el tipo al que se enfrentan. Como resultado identifican las condiciones bajo las cuales se tienen distintos regímenes, afectadas por el costo del repudio de la deuda y el producto esperado; por lo tanto es la incertidumbre política la variable determinante en la asociación entre choques en el producto y la deuda y reservas internacionales.
+Acharya y Rajan (2013) desarrollan un modelo dentro de la categoría antes mencionada en cuya esencia se encuentra que los países con gobiernos que poseen una visión de corto plazo se endeudan y obligan a futuros gobiernos a cumplir con sus obligaciones de pago ya que de no hacerlo conlleva un costo interno, debido a que los hogares y las empresas poseen bonos gubernamentales, por lo que incumplir implicaría dañar su propia economía. Con esto se tiene una explicación creíble del por qué los países pagan aun cuando los costos sean muy bajos o inexistentes.
+La contribución del presente trabajo no se encuentra en explicar las causas que llevan al pago de deuda sino que se toma como base el modelo de Acharya y Rajan con el propósito de descubrir los efectos que provoca la imposición de un límite de deuda en los determinantes del ingreso público, es decir en los impuestos y deuda óptima. El propósito fundamental es darle mayor realismo al modelo.
+3
+
+En la actualidad los países que poseen un límite a su deuda se pueden clasificar en 2 grupos: 1) aquellos que lo tienen por pertenecer a una unión o agrupación y 2) Países que individualmente lo han establecido, generalmente en leyes o que se les ha impuesto externamente.
+En el primer grupo encontramos a la Unión Europea con un total de 28 países miembros y nueve candidatos, con base en el artículo 126 del Tratado de Funcionamiento de la Unión Europea y en el Protocolo 12 se establece en cierta forma un límite al endeudamiento, ya que si los países miembros tienen un nivel de deuda por encima del 60 % de su producto interno bruto (PIB), entonces son sujetos a sanciones por parte de los organismos de la Unión, de igual forma es parte fundamental para la aceptación como país miembro.
+En este mismo grupo encontramos a la Unión Económica y Monetaria de África Occidental en cuyo tratado de fundación se encuentra establecido dentro de las normas fiscales un límite parecido al de la Unión Europea pero de 70 % del PIB.
+El segundo grupo está compuesto por siete países que cuentan con un límite de deuda soberana, Estados Unidos, Dinamarca, Malasia, Polonia, Pakistán, Kenia y Namibia. Por su cercanía y tamaño de economía el caso estadounidense es muy significativo, el limite al endeudamiento fue establecido después de la primera guerra mundial en el año de 1917 dentro de la Second Liberty Bond Act. Es un instrumento útil para que las distintas fuerzas políticas dentro del Congreso y el Ejecutivo debatan y pongan de manifiesto al público sus posturas respecto al uso de la deuda, con lo cual la sociedad puede identificar claramente qué grupos o partidos apoyan las distintas opciones, conduciendo a un mejor uso de los recursos de la deuda debido a la mayor transparencia.
+Desde 2001 el límite de deuda ha sufrido 12 modificaciones por lo que se tiene una constante revisión del mismo. Durante los periodos en que el límite de deuda está por alcanzarse pueden ocurrir 2 situaciones. La primera es que un nuevo límite sea aprobado sin mucha discusión ya que el mismo partido controle al Ejecutivo y al Legislativo. Puede darse el caso en el que el Ejecutivo ponga presión para la aprobación mediante suspensión parcial o total de las actividades en ciertos sectores no estratégicos pero con impacto en los servicios públicos y por otra parte el
+4
+
+congreso fije su postura en cuanto al uso de estos recursos, el peligro de seguir aumentando la deuda, etc.1. En el caso mexicano, a finales de Octubre del año pasado el Consejo Coordinador Empresarial anunció que pondría presión en el congreso para que se impusiera un límite al endeudamiento público en México, con la idea de que mediante esto se reduciría la tendencia deficitaria en las finanzas públicas y se impulsaría un gasto más eficiente. En conclusión se tiene la necesidad que desde el ámbito académico se analicen los efectos de una restricción al límite de deuda; en particular el modelo desarrollado por Acharya y Rajan es interesante sobre todo para los países en vías de desarrollo, pues asume miopía gubernamental y plantea numerosos escenarios en los que se pueden identificar concretamente sus efectos. Lo cual aporta nuevo conocimiento sobre el comportamiento de la deuda e impuestos y muestra que el añadir un límite a la deuda es importante para México, pues nuestros principales socios comerciales lo poseen y recientemente ha surgido preocupación sobre el tema.
+1 Ver Austin (2013) donde se exponen los cambios y la historia del límite de deuda en Estados Unidos y Krishnakumar (2005) donde se analiza detalladamente los costos y beneficios sociales y políticos de una restricción al endeudamiento.
+5
+
+EL MODELO
+Las ecuaciones (1) a la (15), exceptuando la (3), son la base sobre de la cual se construye el modelo en el artículo “Sovereign Debt, Government Myopia, and the Financial Sector” de Viral V. Acharya y Raghuram G. Rajan del cual se presenta una extensión en la que se añade una tercera restricción al monto máximo de la deuda, ecuación (3).
+En dicho artículo los autores presentan un modelo de elección intertemporal de dos periodos con una corporación representativa y que considera para el primer periodo a un gobierno miope, cuyo objetivo es incrementar el gasto en su periodo sin tomar en cuenta las implicaciones económicas para el siguiente periodo, para ello se maximizan sus ingresos que pueden ser obtenidos a través de impuestos o por medio de deuda. Para acceder a este último ingreso el gobierno miope debe:
+• Pagar una deuda externa preexistente D0, de no hacerlo es excluido del mercado de deuda, por lo que solo podría obtener ingresos tributarios.
+• Asegurar a los acreedores que en el segundo periodo el siguiente gobierno le quiera y le pueda pagar.
+• Cumplir con un límite de deuda que le es establecido exógenamente.
+Considerando lo anterior, el modelo es resuelto empleando el principio de inducción hacia atrás.
+El gobierno en t = 2 paga la deuda existente si se cumplen dos condiciones: la primera es que tenga los incentivos para hacerlo, lo cual ocurrirá si el costo de incumplir excede el costo de cumplir.
+La condición (1) puede ser reescrita como
+6
+
+Donde
+
+es la deuda comprada por inversionistas domésticos, el parámetro z captura la
+
+vulnerabilidad del sector financiero doméstico al incumplimiento de la deuda.
+
+representa la dotación inicial que recibe el sector privado,
+
+es la inversión óptima, por lo
+
+que
+
+son los ahorros financieros invertidos en bonos gubernamentales, la condición
+
+(1’) se le llamara D.P..
+
+La segunda condición es que posea los recursos suficientes para pagar. Los ingresos del gobierno del segundo periodo solo provienen de impuestos, por lo que estos deben exceder o al menos igualar el costo de cumplir.
+
+A la condición (2) se le llamara H.P. y el gobierno en t = 2 establece sus impuestos en el máximo
+
+por lo que
+
+.
+
+En t = 1 se fija exógenamente un tope a la deuda
+
+; se debe de cumplir:
+
+Las condiciones (1’)(2)(3) determinan la capacidad de deuda futura que puede obtener el gobierno en el primer periodo, por lo que conforman las restricciones de disponibilidad de pago (D.P.), habilidad de pago (H.P.) y límite de deuda (L.D.).
+En t = 1 el gobierno decide si paga la deuda del periodo anterior , fija los impuestos de su periodo y en caso de que decida pagar la deuda preexistente entonces establece la deuda que tendrá en su periodo .
+
+7
+
+El Sector Privado
+Por su parte las empresas resuelven el siguiente problema de maximización, en donde deciden el monto de capital que invertirán en el primer y segundo periodo considerando que el gobierno fijara impuestos en ambos.
+
+Donde
+
+, lo cual asegura que el sector privado tenga ahorro.
+
+Las condiciones de primer orden de este problema son:
+
+El Sector Público
+Si el gobierno miope del primer periodo no incumple con la deuda en t = 0 entonces se enfrenta al siguiente problema:
+
+Donde cumple con (5). 8
+
+Si el gobierno decide incumplir, se enfrenta al problema de solo decidir sobre sus impuestos, ya que es excluido del mercado de deuda, por lo que su problema de decisión sería:
+
+El gobierno en el primer periodo siempre incumplirá cuando
+
+.
+
+Dinámica de las restricciones
+
+Consideremos primero solamente las restricciones D.P. (condición 1’) y H.P. (condición 2).
+
+Notemos que, de acuerdo al Lema 1 de Acharya y Rajan, existe solo un valor de impuestos en el
+
+primer periodo
+
+, tal que se cumple que:
+
+Al satisfacerse (8) el nivel de deuda máximo del primer periodo que satisface la condición (1’) es
+
+igual al que satisface la condición (2) y está dado por el valor de (8). Llamemos a este nivel de
+
+deuda (vease figura 1). Con
+
+no se altera en nada el análisis de Acharya y Rajan pues se
+
+estaría diciendo que el límite de deuda es establecido por encima del máximo obtenido por las
+
+restricciones D.P. y H.P.. En lo subsecuente se considerara el caso en el que
+
+y
+
+, en donde la última condición es necesaria para asegurar que el gobierno se
+
+endeude.
+
+Cuando el impuesto del primer periodo varia, la restricción D.P. actúa primero si y solo si:
+
+9
+
+Si el impuesto del primer periodo varia, la restricción H.P. actúa primero si y solo si:
+
+Dado que es decreciente en .
+
+Lema 1
+
+Siempre que
+
+existirán dos niveles de impuestos en el primer periodo
+
+tal que solo
+
+restringe H.P. si
+
+, solo restringe D.P. sí
+
+solo restringe L.D. sí
+
+,
+
+restringen tanto H.P. como L.D. cuando
+
+, y restringen tanto D.P. como L.D. cuando
+
+. Donde es decreciente en y en z, y creciente en mientras no se ve alterado
+
+por cambios en y en z, pero es decreciente en
+
+La figura 1 nos permite apreciar como las variaciones en afectan positivamente a y negativamente a .
+10
+
+El Lema 1 nos permite separar la resolución del problema del gobierno en varios casos, dependiendo de qué restricción (o restricciones) sean vinculantes. Cuando H.P. restringe, el gobierno del primer periodo resuelve:
+El impuesto óptimo satisface la siguiente condición de primer orden:
+Lema 2 En la región donde solo H.P. restringe, el impuesto óptimo del gobierno del primer periodo esta dado por que resuelve (12) y no es afectado por cambios en ó z. Cuando D.P. restringe, el gobierno del primer periodo resuelve:
+El impuesto óptimo satisface la C.P.O.
+11
+
+Lema 3 En la región donde solo D.P. restringe, el impuesto óptimo del gobierno del primer periodo es satisface (14) y no es afectado por cambios en pero es creciente en z.
+
+De las ecuaciones (12) y (14) se sigue que periodo resuelve:
+
+.Cuando L.D. restringe, el gobierno del primer
+
+El impuesto óptimo satisface la C.P.O.
+
+Cuando tanto L.D. y D.P. actúan el impuesto óptimo es el punto caracterizado en la ecuación (17):
+Cuando tanto L.D. y H.P. actúan el impuesto óptimo es el punto que satisface la ecuación (18):
+
+Tanto como estan condicionados a que el gobierno no incumpla por lo que
+Lema 4 En la region donde la restricción de limite de deuda actua, el impuesto óptimo del gobierno del primer periodo es que resuelve (15) y no es afectado por la dotación inicial ni por el costo de incumplir (z).
+12
+
+De las ecuaciones (12), (14) y (16), se sigue que cuando
+
+entonces
+
+..
+
+Proposición 1 Condicional en no incumplir y con
+donde:
+
+el gobierno del primer periodo elige el impuesto
+
+Cuando
+
+la deuda óptima será:
+
+Corolario 1
+
+Si
+
+y si la dotación inicial es lo suficientemente baja. Es decir, por debajo de un umbral
+
+entonces la economía se encuentra en la región D.P. donde
+
+y mientras
+
+aumenta ni el impuesto ni la inversión cambian, la capacidad de deuda aumenta.
+
+Cuando
+
+tal que
+
+si aumenta, el impuesto óptimo decrece mientras que la
+
+inversión aumenta y la capacidad de deuda no se ve alterada. Cuando nos encontramos en las
+
+regiones vii) viii) ix) x) tal que
+
+ante cambios en ni , ó cambian. Cuando
+
+tal que
+
+si aumenta ni , ó cambian. Mientras aumenta por
+
+encima del punto hasta el umbral tal que estamos en la región
+
+donde
+
+H.P. restringe ni el impuesto óptimo ó el nivel de inversión ó la capacidad de deuda son
+
+afectadas.
+
+13
+
+Corolario 2
+
+Con
+
+si el parámetro de costo z es suficientemente bajo, esto es, por debajo de un umbral
+
+entonces la economía se encuentra en la región de D.P.
+
+y mientras z
+
+aumenta y aumentan mientras disminuye, cuando z = z’ donde z’ satisface (17), por lo
+
+que tanto D.P. y L.D. actúan al aumentar z, disminuye mientras que aumenta y no
+
+cambia, cuando nos encontramos en las regiones vii) viii) ix) x) tal que
+
+ante cambios en
+
+z ni , ó cambian, cuando z = z” donde z” es el punto en el que H.P. y L.D. restringen al
+
+aumentar z la capacidad de deuda, la inversión y los impuestos óptimos no son afectados, cuando
+
+z aumenta por encima del punto z” hasta el umbral entonces restringe H.P. al aumentar z, ni
+
+, ó se ven afectadas.
+
+Corolario 3. Cuando techo de deuda
+
+los efectos sobre el impuesto óptimo son:
+
+y la deuda óptima
+
+al aumentar el
+
+a) En el caso i), con
+
+tanto como permanecen inalterados.
+
+b) En los casos ii) o iii) donde se cumple que
+
+, tanto como se incrementan.
+
+c) En los casos iv) a vii) en los que
+
+, el impuesto óptimo no se ve alterado sin embargo la
+
+sddeuda óptima se incrementa.
+
+d) Si estamos en los casos viii) o ix), con
+
+, el impuesto se reduce, pero la deuda
+
+aumenta.
+
+e) Si estamos en el caso x) donde
+
+, tanto como permanecen inalterados
+
+14
+
+CONCLUSIÓN
+A lo largo del presente trabajo, se ha desarrollado el modelo de Acharya y Rajan (2013) agregando una restricción al límite de endeudamiento; con ello se encontraron los efectos que esto tendría en el proceder gubernamental. Este gobierno caracterizado por tener una visión de corto plazo, tiene como objetivo maximizar el gasto dentro de su periodo, pero posee como restricciones el garantizar que el siguiente gobierno quiera y pueda pagar, aunado a un monto máximo de deuda que se le establece exógenamente.
+El resultado más importante es que tanto países con niveles bajos de dotación como países con un alto grado de sofisticación financiera y de recursos iniciales, un aumento en el techo de deuda no afecta su decisión óptima de impuestos o monto de endeudamiento; en los primeros solo la restricción de disponibilidad a pagar actúa y en los segundos es la restricción de habilidad de pago. Sin embargo, para los casos intermedios se pueden presentar tres situaciones distintas; en todas ellas las variaciones positivas en el límite de endeudamiento incrementan la deuda óptima.
+El primer caso ocurre cuando tanto la disponibilidad a pagar como el límite de deuda son vinculantes, en este punto el efecto es un incremento en el impuesto óptimo. La segunda situación está caracterizada por la región donde solo restringe el límite de deuda, bajo este escenario las variaciones solo afectan al óptimo de endeudamiento. Por último tenemos una disminución del impuesto óptimo, esto sucede cuando tanto el limite de deuda como la habilidad de pago restringen.
+Por lo anterior es necesario que aquellos encargados de la aprobación de incrementos en el limite de deuda deben de tener en cuenta que aunado a los costos o beneficios políticos se tienen efectos económicos que pueden ser mayores a los que se estiman. Podemos concluir que el establecimiento de un techo a la deuda efectivamente es una herramienta que bajo gobiernos miopes pueden utilizar los Congresos para limitar el sobreendeudamiento, incluso en ciertos casos puede afectar indirectamente la política fiscal positiva o negativamente dependiendo de cuales sean las restricciones que actúen.
+15
+
+Para futuras investigaciones quedaría el hacer endógena la restricción al límite de deuda que puede ser función de la producción o de la tasa de interés, también se podrían incluir aspectos políticos como costos inherentes a las variaciones de la restricción y analizar los efectos que tienen en modelos de dos países.
+16
+
+PRUEBAS
+
+Lema 1
+
+Dado que tanto L.D. y D.P. restringen entonces la condición (17) se cumple y considerando la
+
+diferencia entre el lado izquierdo y el derecho dado por
+
+y sabiendo que
+
+entonces esta diferencia es una función creciente en , por otra parte, cuando las
+
+restricciones de H.P. y L.D. actúan, la condición (18) se cumple y considerando la diferencia entre
+
+el lado izquierdo y el derecho se tiene
+
+, sabiendo que
+
+y
+
+. Entonces la diferencia es una función decreciente en , por lo que podemos asumir que
+
+existen dos niveles de umbral y tal que
+
+para los que lo anterior se cumple dado
+
+cualquier por debajo de .
+
+Asumiendo que tanto D.P. como L.D. restringen tendremos un nivel de impuestos tal que:
+
+Diferenciando esta ecuación respecto a
+
+Dado que ,
+
+debe de ser el caso que
+
+.
+
+Por otra parte, ante un aumento en el límite de deuda tomando en cuenta que tanto como z
+
+permanecen constantes y considerando que
+
+debe ocurrir que aumente para mantener
+
+la igualdad, pues entonces
+
+se reduce con lo que
+
+aumenta con lo que la
+
+ecuación 20 se satisface.
+
+17
+
+Diferenciando (20) respecto a z tenemos:
+
+Dado que
+
+que
+
+.
+
+por lo que
+
+,
+
+y
+
+debe de ser el caso
+
+Asumiendo que tanto la restricción de H.P. como L.D. actúan, se tiene un nivel de impuestos dado por:
+
+Dado que ni la dotación inicial ni el costo de incumplir (z) se encuentran en la ecuación (21) entonces no se ve afectado por cambios en estas variables.
+
+Sin embargo ante un aumento en caso que disminuya, con lo cual
+
+considerando que
+
+y
+
+debe de ser el
+
+aumenta y (21) se satisface.
+
+Los Lemas 2 y 3 forman parte del artículo original por lo que sus demostraciones no han sido incluidas.
+
+Lema 4
+
+Como satisface la ecuación (16) que es independiente de y z, cuando L.D. y D.P. restringen entonces se debe de cumplir (17) y por el Lema 1 se tiene que el impuesto será , cuando L.D. y H.P. actúan se debe de cumplir (18) y por el Lema 1 se tiene que el impuesto óptimo será , las
+
+18
+
+propiedades de y están descritas en el Lema 1. Por otra parte , y satisfacen las condiciones de primer orden (14), (16) y (12) :
+
+De donde dado que
+
+,
+
+y
+
+entonces debe de ser el caso que
+
+.
+
+Proposición 1, Corolario 1 y Corolario 2.
+
+Del Lema 1 y con
+
+, la restricción H.P. actúa si la tasa impositiva está por encima de ,
+
+D.P. restringe si
+
+y L.D. restringe si
+
+. Del Lema 4
+
+entonces
+
+los casos a considerar respetando esta condición son: i)
+
+si
+
+, ii)
+
+si
+
+, iii)
+
+si
+
+, iv)
+
+si
+
+v)
+
+si
+
+, vi)
+
+si
+
+, vii)
+
+si
+
+, viii)
+
+si
+
+, ix)
+
+si
+
+,
+
+x)
+
+si
+
+.
+
+* Bajo el caso i) la región factible es la de D.P. así, que el impuesto óptimo es , que de acuerdo al Lema 3 no es afectado por cambios en la dotación inicial pero es creciente en z.
+
+* Bajo los casos ii) y iii) la región factible es el punto , que de acuerdo al Lema 1 es decreciente en y en z.
+
+* Bajo los casos iv), v), vi) y vii) la región factible es la del Limite de deuda caracterizada en el Lema1 y que de acuerdo al Lema 4 tendrá un impuesto óptimo en y no es afectado por cambios en ó z.
+
+19
+
+* Bajo los casos viii) y ix) la región factible es el punto , que de acuerdo al Lema 1 no es afectado por cambios en ó z.
+
+* Bajo el caso x) la región factible es la de H.P. por lo que el impuesto óptimo es acuerdo al Lema 2 no es afectado por cambios en ó z.
+
+, que de
+
+La región donde se encontrará el equilibrio depende de los niveles de los parámetros y z. Si
+
+consideramos los efectos que tiene el variar . Al aumentar la dotación inicial solo afecta al
+
+impuesto óptimo , que corresponde a los casos ii) y iii). Entonces podemos decir que existe un
+
+nivel de dotación inicial para el cual se cumple que el impuesto óptimo sea el punto y por
+
+debajo de este nivel existe un umbral
+
+para el cual aplica el caso iv), por encima de este se
+
+debe de encontrar el nivel tal que el impuesto óptimo es el punto . Es decir nos encontramos
+
+en los casos viii) y ix), por encima de este nivel se debe de encontrar un umbral que satisface
+
+el caso x).
+
+Por otra parte, al aumentar z, aumenta, disminuye y , y no se ven afectados. Entonces deben de existir dos niveles de z (z’ y z” ) para los que los impuestos óptimos son los puntos y respectivamente, por debajo de z’ existe un umbral de z para el cual el caso i) aplica y un umbral por encima del nivel z” en el cual el caso x) aplica.
+
+La capacidad de deuda está dada por
+
+,
+
+si el mínimo es el primer término entonces estamos en la región de H.P. donde el impuesto óptimo
+
+es
+
+que de acuerdo al Lema 2 es independiente de la dotación inicial, por lo
+
+tanto
+
+entonces en esta región tenemos
+
+y de igual
+
+forma
+
+En la región de D.P. el impuesto óptimo es
+
+por lo que
+
+dado que
+
+(Lema 3). Por otra parte
+
+dado que
+
+y
+
+(Lema 3).
+
+Para el nivel de deuda
+
+, al ser una constante
+
+este aplican los casos ii) al ix).
+
+20
+
+y de igual forma
+
+. Para
+
+ANEXO GRÁFICAS
+21
+
+22
+
+23
+
+24
+
+25
+
+BIBLIOGRAFÍA
+Aizenman, J. y Fernandez-Ruiz J. (2009) “Signaling Credibility – Choosing Optimal Debt and International Reserves” The Journal of the Korean Economy 10, 1 (2009): 1-28. Austin, D. y Levit, M. (2013) “The Debt Limit: History and Recent Increases.” Congresional Research Service. Disponible en www.fas.org/sgp/crs/misc/RL31967.pdf. Eaton, J. y Fernandez, R., (1995). “Sovereign debt,” en: G. M. Grossman & K. Rogoff (ed.), Handbook of International Economics, edición 1, volumen 3, capitulo 3, pag. 2031-2077. European Union, (2011). Official Journal of the European Union, L 306, Vol. 54, Noviembre 2011. Fernandez-Ruiz J. (2000) “Debt Buybacks, Debt Reduction, and Debt Rescheduling under Asymmetric Information” Journal of Money, Credit, and Banking, Febrero 2000. Fondo Monetario Internacional (2013) “West African Economic and Monetary Union (WAEMU) Staff Report on Common Policies for Member Countries.” Washington. Krishnakumar, Anita S., (2005) “In Defense of the Debt Limit Statute.” Harvard Journal on Legislation, Vol. 42, p. 135, St. John’s Legal Studies Research Paper No. 00-71. Disponible en SSRN: http://ssrn.com/abstract=983145. Morales, R., Flores, L. y González, L. (2013) “CCE pide poner límite a la deuda”. El Economista. Disponible en http://eleconomista.com.mx/sistema-financiero/2013/10/21/cce-pide-poner-limite-deudagobierno. Viral V. Acharya y Raghuram G. Rajan, (2013). “Sovereign Debt, Government Myopia, and the Financial Sector”, Review of Financial Studies, Vol. 26(6), pags. 1526-1560. Welt, S., (2012) “The Debt Ceiling: Economics and Politics.” New York University, Stern School. Disponible en http://www.stern.nyu.edu/cons/groups/content/documents/webasset/con_035653.pdf.
+26
+
+

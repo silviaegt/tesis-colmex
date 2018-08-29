@@ -1,0 +1,2698 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+THE EQUITY PREMIUM, FINANCIAL CRISES AND THE BUSINESS CYCLE: EVIDENCE FROM MEXICO ANA BETY MARTÍNEZ ORTIZ
+PROMOCIÓN 2012-2014
+ASESOR:
+STEPHEN MCKNIGHT
+JUNIO 2014
+
+Equity Premium, Financial Crises and the Business Cycle: Evidence from Mexico.
+Ana Bety Martínez Ortiz June 2014
+Abstract
+Using Mexican data, this paper considers the eects of business cycle uctuations on the stock market. By employing an equity risk premium analysis, it is rst shown that the phase of the cycle (i.e. the contraction or expansion phase) has asymmetric implications for the behavior of stock returns. We then show that nancial crises also generate signicant dierences in excess returns depending on the origin of the crisis. We nd that the tequila crisis had a greater impact on the equity risk premium, the volatility of excess return and volatility of all macroeconomic factors when compared to the recent 2008 nancial crisis. Finally, the paper investigates the eects of negative demand (i.e. output) and supply (i.e. ination) shocks for the equity risk premium. We nd evidence of asymmetric eects which depend not only on the type of shock, but also on the sign of the shock. In particular, positive supply shocks and negative demand shocks are found to be more important and have a more persistent eect on the equity risk premium, ination and production growth.
+1
+
+Contents
+
+1 Introduction
+
+3
+
+2 Theoretical Framework
+
+6
+
+2.1 Asset pricing . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+2.2 Econometric model . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+3 Estimations
+
+12
+
+3.1 Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+3.2 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+3.3 Equity risk premium . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+3.4 Demand and supply shocks . . . . . . . . . . . . . . . . . . . . 37
+
+4 Conclusions
+
+40
+
+5 Appendices
+
+45
+
+5.1 Appendix 1. Tables . . . . . . . . . . . . . . . . . . . . . . . . . 45
+
+5.2 Appendix 2. Restrictive model . . . . . . . . . . . . . . . . . . 56
+
+5.3 Appendix 3. Codes . . . . . . . . . . . . . . . . . . . . . . . . . 58
+
+5.3.1 Matlab code . . . . . . . . . . . . . . . . . . . . . . . . . 58
+
+5.3.2 E-views code for the restrictive model . . . . . . . . . . 59
+
+2
+
+1 Introduction
+Over the last 20 years, the value of the Mexican stock exchange market has gone from 7.5% of GDP to 44.6%. Today, the Mexican stock exchange represents 17 dierent industries, of which the main industries are telecoms, retail and mining. The Mexican stock exchange index (IPC) has increased 2,485% in 20 years but its ve largest members represent 56% of the index making it vulnerable to changes in value of a small number of rms. The purpose of this paper is to investigate the relationship between the Mexican stock market returns and uctuations in the business cycle. Specically, we want to consider if the impact of business cycle contractions on stock returns varies depending on the source of the macroeconomic shock.
+In Mexico there have been four dierent cycles since 1982, the most important being the business cycle from October 1992 until October 2000. This cycle was characterized by a double dip recession, which is not very common to see. From 1988 until 2013 there have been four recessions. Our analysis be focused on the 1994 recession known as the tequila crisis and the recent 2008 nancial crisis. This is because one of the crisis was originated in only by Mexican factors while the recent 2008 nancial crisis was originated only by external factors. We will use these dierences to see if the impact of the business cycle changes.
+In classical asset pricing theory, an asset price depends on the present value of expected asset income and expectations about future income are formed from all available information. Also, when there exists some kind of risk related to future income, the price of the asset has to be lower but the return to compensate the risk has to be higher. This compensation is known as the risk premium. Since prices depend on the present value of future returns, they must depend on the interest rate (discount rate). The interest rate determines the present value of future income or returns. Then, the riskier the asset, the higher the interest rate has to be to compensate for the risk taken. Also, during
+3
+
+a recession, rms earnings fall and thus asset prices fall resulting in a negative relation between output and stock prices. All these theoretical relationships between asset prices, returns, risk and macroeconomic variables are going to be used as basis to estimate the relationship between the business cycle and stock returns.
+Following the methodology of Smith, Sorensen and Wickens (2010), we employ a multivariate GARCH-in-mean model. The data we use are stock prices for 120 rms listed on the Mexican stock exchange and three macroeconomic factors (ination, production growth and money growth), to capture the eect of the business cycle on stock returns through the equity risk premium. We nd that the three macroeconomic factors are signicantly priced by the stock market. It is shown that the two nancial crises analyzed induce very dierent eects on the equity risk premium and its volatility. The most important crisis for stock returns is the tequila crisis during which the equity risk premium touched a historic peak and also went below zero. We also nd that the eect of demand shocks dier from the eect of a supply shocks on equity risk premium and that the eect between supply and demand shock is inversed when the sign of the shock changes. The most important and persistent shocks for the Mexican stock market are found to be negative demand shocks and positive supply shocks.
+This paper contributes to a literature that focuses on the relationship between macroeconomic factors and dierent aspects of the stock market. Smith, Sorensen and Wickens (2010) analyze the eect of the U.S. business cycle on U.S. stock market returns through the equity premium. They nd that macroeconomic factors have a signicant impact on the American stock market through the volatility of returns and that the eect on returns is dierent if it comes from a demand or a supply shock. Naes, Skjeltorp and Odegaard (2010) analyze the liquidity in the stock market as a precursor of a crisis in the real economy. They nd a strong relationship between the stock market liquidity and the business cycle. Hamilton and Gin (1998) investigated the joint series behavior of stock returns and growth of industrial production. They used a bivariate model and found that
+4
+
+economic recessions are the primary factor that drives uctuations in the volatility of stock returns. In related work for an emerging market, Al-Rjoub and Azzam (2012) use the same methodology as Smith, Sorensen and Wickens (2010) and nd that economic crises have a negative impact on stock returns and that the eect of the 2008 nancial crisis was the most severe, it had the larger drop of stock prices and the higher volatility, for Jordan. For Mexico, Cermeño and Solis (2012) use symmetric and asymmetric GARCH models to analyze the eect of expected and unexpected news about economic performance in Mexico and the U.S. on the Mexican stock market. The nd evidence of a link between the dynamics in daily stock excess returns and the arrival of new economic information. Also for Mexico, Treviño (2011) uses iterated non-linear seemingly unrelated regressions to examine the pricing of macroeconomic factors in the Mexican stock market and nds little evidence in favor of a linear relationship specication between macroeconomic factors and excess return.
+The methodology we use following Smith, Sorensen and Wickens (2010) has never been used before to analyze the relationship between the business cylcle and the stock market return in Mexico. The results found on this relationship for Mexico are similar to what was found for the U.S., but the dierence between the eects of the business cycle on the equity risk premium for the two dierent crises has not been shown before. These results are important to be able to have a better understanding of the Mexican stock market, both for investors and policy makers. For instance, we found that a negative demand shock has an important and persistent eect en the equity risk premium.
+The reminder of the paper is organized as follows. Section 2 presents the theoretical framework of the model beginning with asset pricing. Then we introduce the econometric model and set out the two channels through which the excess return of the Mexican stock market can be aected by the business cycle. In Section 3, we explain the data, then present the estimation results of the model and nally analyze the response of the equity risk premium and the macroeconomic factors to a positive and negative demand
+5
+
+and supply shocks. Finally, Section 5 concludes.
+2 Theoretical Framework
+
+2.1 Asset pricing
+In asset pricing theory the expected return of a nancial asset can be modeled as a
+linear function of various macroeconomic factors.1 Further, the expected return of an
+asset shows how the market will price that asset in relation to it's risk. The market reward-to-risk is eectively the market risk premium, which is the dierence between a risky asset's return and the risk free rate (excess return). For the expected return to increase, keeping the risk free rate constant, an economic agent must take on more risk. The measure of risk used in equity markets is typically the volatility of a security's price over a number of periods. Thus, the expected excess return of an asset is related to the risk factors that create volatility. That is, the price of an asset is equal to the sum of its future returns discounted by stochastic factors (i.e. the risk factors that create volatility).
+For that reason the model is going to be based on stochastic discount factors (SDF).
+Closely following Smith, Sorensen and Wickens (2010), the SDF can be expressed as:2
+
+Pt = Et{Mt+1(Xt+1)}
+
+(1)
+
+where Pt is the price of an asset at time t, Mt+1 is the SDF (0 ≤ Mt+1 ≤ 1) and Xt+1 is the payo of an asset in period t + 1.3 The relationship states that the price of an
+asset is the expectation of its discounted future payos using the SDF, given all available
+information at time t.4 Equation (1) can be expressed in terms of the nominal rate of
+return:
+
+1See Ross (1976) for further details. 2See Ferson (2003) for further details. 3The random variable Mt+1 is also known as the pricing kernel. 4See Smith and Wickens (2002) for further detail.
+
+6
+
+1 = Et
+
+Mt+1
+
+Xt+1 Pt
+
+=
+
+Et[Mt+1(1
+
++
+
+It+1
+
+)
+
+Pt Pt+1
+
+]
+
+(2)
+
+where It is the nominal interest rate. Following Cochrane (2005) and Smith and Wickens (2002) and with mt = ln(Mt), πt+1 = ln(Pt+1/Pt) and it = ln(1 + It):
+
+In terms of covariance:
+
+1 Et[mt+1(it+1) πt+1 ] = 1.
+
+Et[it+1]
+
+=
+
+1 − Covt[(mt+1/πt+1), it+1] . Et[mt+1/πt+1]
+
+(3)
+
+If it+1 = ift (the risk free rate), then:
+
+Et[mt+1(it+1)
+
+1 πt+1
+
+]
+
+=
+
+ift
+
+Et[(mt+1/πt+1)]
+
+=
+
+1
+
+and by substituting in (3) we get the no-arbitrage equation:
+
+Et[it+1] = ift − Covt[(mt+1/πt+1), it+1]itf
+
+Et[it+1] − itf = −Covt[(mt+1/πt+1), it+1]itf
+
+E[it+1 − ift ] = −Covt[(mt+1/πt+1), it+1 − itf+1]itf .
+
+(4)
+
+The risk premium is dened as the price of risk times the quantity of risk
+
+risk premium = −Covt[(mt+1/πt+1), it+1]ift = βtλt
+
+βt
+
+=
+
+price
+
+of
+
+risk
+
+=
+
+−itf
+
+Covt[(mt+1/πt+1), it+1] (Vt(it+1 − ift ))1/2
+
+7
+
+λt = quantity of risk = (Vt(it+1 − itf ))1/2
+assuming that it,mt,itf and πt are jointly normally distributed, the no-arbitrage condition,
+equation (4), under log-normality can be expressed as:5
+
+lnEt[
+
+mt+1(it+1 πt+1
+
+−
+
+ift
+
+)
+
+]
+
+=
+
+Et[ln(mt+1)−ln(πt+1)+ln(it+1−ift
+
+)]+
+
+1 2
+
+Vt[
+
+ln(mt+1(it+1 πt+1
+
+−
+
+ift
+
+))
+
+]
+
+=
+
+0
+
+=
+
+Et(mt+1)
+
+−
+
+Et(πt+1)
+
++
+
+Et(it+1
+
+−
+
+itf )
+
++
+
+1 2 Vt(mt+1)
+
++
+
+1 2 Vt(it+1
+
+−
+
+itf )
+
++
+
+1 2 Vt(πt+1)
+
++Covt(πt+1, it+1 − itf ) + Covt(mt+1, it+1 − ift ) = 0
+
+(5)
+
+If ift = it+1, equation (5) becomes:
+
+lnEt
+
+[
+
+mt+1(it+1 πt+1
+
+−
+
+itf ) ]
+
+=
+
+Et(mt+1)
+
+−
+
+Et(πt+1)
+
++
+
+1 2 Vt(mt+1)
+
++
+
+1 2 Vt(πt+1)
+
+=
+
+0
+
+(6)
+
+substituting (6) in (5) we get:
+
+Et(it+1
+
+−
+
+itf )
+
++
+
+1 2 Vt(it+1)
+
+=
+
+−C ovt (mt+1, it+1 )
+
++
+
+C ovt (πt+1 .it+1 ).
+
+(7)
+
+The SDF can be expressed as a linear function of n factors zit:
+
+n
+mt = − βizit
+i=1
+With the former condition we can express equation (7) as:
+5If ln x is N (µ, σ2)then E(x) = exp(µ + σ2/2) and ln E(x) = µ + σ2/2.
+
+8
+
+n
+
+Et(it+1 − itf ) =−β0Vt(it+1) + βiCovt(zit, it+1).
+
+(8)
+
+i=1
+
+Equation (8) can be expressed as a measure of excess return by unit of risk, the Sharpe
+
+ratio:
+
+Et(it+1 − itf ) (Vt(it+1))1/2
+
+=
+
+−
+
+1 2
+
+(Vt(it+1))1/2
+
+n
++ βi(Vt(zi,t+1))1/2Corrt(zi,t+1, it+1)
+i=1
+
+Since it is almost impossible to hedge for all business cycle variations, we would expect
+
+that these variations reect too on the stock market. As mentioned in the introduction,
+
+there is both theoretical and empirical evidence for the close relationship between the
+
+stock market price and variation in macroeconomic variables. For that reason the discount
+
+factors used in the model will be macroeconomic variables in order to measure the impact
+
+of the business cycle on the Mexican stock market.
+
+2.2 Econometric model
+
+Following the methodology of Smith, Sorensen and Wickens (2010), we analyze the Mexican business cycle eects on the Mexican stock market within a no-arbitrage framework using a generalized SDF model with three macroeconomic factors (ination, money growth and industrial production growth). This methodology will create two channels of transmission, one is through the mean of excess returns of the market and the other through the conditional volatility of excess returns.
+As in Smith, Sorensen and Wickens (2010), a multivariate GARCH-in-mean model will be estimated to allow the excess return to depend on its own conditional variance. Thus, the equity risk premium will be an increasing function of the conditional variance of the excess return. Multivariate GARCH models also have the advantage that the contemporaneous shocks to variables can be correlated with each other. Moreover, multivariate
+GARCH models allow for volatility spillovers.6
+6See Enders for further details.
+9
+
+In order to estimate the conditional variance, a BEKK model proposed by Engle and
+Kroner (1995) will be used.7 This type of model allows unrestricted time-varing variances and covariances, it can also be modied to include asymmetries (Kroner and Ng (1998)).8
+The model to be estimated takes the form:
+
+p
+
+NI
+
+Yt+1 = A+
+
+BiYt+1−i+
+
+Φj H[1:N,j],t+1 + t+1
+
+(9)
+
+i=1
+
+j=1
+
+where Yt+1 is an N x1 vector of dependent variables in which the rst N1 elements are assumed to be the excess returns, A is an N x1 vector, B and Φ are N xN matrices,
+
+H[1:NJ ],t+1 is the N x1 jth column of the conditional covariance matrix.
+
+The rst N1 elements satisfy the no-arbitrage condition. The equity risk premium is
+
+NI
+
+given by the rst N1 columns of
+
+Φj H[1:NJ ],t+1. Thus, the corresponding rows of B
+
+j=1
+
+are restricted to be zero. The other three equations have no in-mean eects but have
+
+VAR eects.9
+
+In the model we have only one risky asset, the log excess return of the Mexican stock
+market (ie) and three macroeconomic factors: the log ination rate (π), the log rst dierence of money M1 ( m) and the log rst dierence of industrial production ( y). Hence Yt+1 = ite+1, πt+1, mt+1, yt+1 . The rst row of Φ appears only in the excess return equation, the other elements of Φ don't appear in the equations for the macro
+variables and therefore are restricted to be zero.
+
+I performed a four variable vector autoregression and tested for the optimal lag structure, using the Schwarz information criterion. As shown in Table A1.1, the optimal lags
+to use in the model is p = 1, so the model can be expressed as:
+
+Yt+1 = A + BYt + ΦH[1:N:1],t+1 + t+1
+
+(10)
+
+7BEKK stands for Baba Engle, Kraft and Kroner. 8In Appendix 2, I estimate a more restrictive model (the diagonal BEKK) to compare the goodness of t of the chosen model. 9In a vector autoregression, the dependent variables depend on its own lag and lags of the other variables.
+
+10
+
+where only the rst row of B is restricted to be zero. The specication of the innovation
+process is:
+t+1 = Ht1+/21ut+1 ut+1 ∼ N(0, 1)
+and the conditional variance covariance matrix with asymmetries is specied by:10
+
+Ht+1 = CC + DHtD + EεtεtE + GηtηtG
+
+(11)
+
+where the conditional variance covariance matrix takes the form:
+
+
+
+
+
+H11 H12 H13 H14
+
+
+
+
+
+
+
+
+
+ H21 H22 H23 H24 
+
+HT +1
+
+=
+
+ 
+
+, 
+
+ 
+
+H31
+
+H32
+
+H33
+
+H34
+
+ 
+
+
+
+
+
+H41 H42 H43 H4
+
+where, H (i, i) is the variance of variable i and H (i, j) is the covariance of variables i and j.
+The asymmetry is due to the term in ηt = min[εt, 0]. From equation (11), the eigen-
+values are:
+
+(D ⊗ D) + (E ⊗ E) + (G ⊗ G)
+which must lie inside the unit circle for the BEKK system to be stationary.11 Equation (6) is estimated using the maximum likelihood estimator proposed by Bollerslev (1990).12
+The equity risk premium can be decomposed into the components associated with the three macroeconomic factors. The equity risk premium can be re-written as:
+10The equation for the conditional variance is dierent from the one used by Smith, Sorensen and Wickens (2010). I use the original model proposed by Kroner and Ng (1998).
+11⊗ is the Kronecker product. 12The log likelihood function takes the form: (θ) = −(T N/2) log 2π − (1/2) T (log |Ht| + tHt−1 t).
+t=1
+11
+
+φt = φexces return,t + φinf lation,t + φoutput,t + φmoney,t
+
+(12)
+
+where φjt is the covariance between the jth macroeconomic factor and the excess return.
+Another possible way to decompose the equity risk premium allows us to determine the importance of asymmetries. The conditional variance-covariance matrix has four components:
+
+Ht+1 = H0 + H1,t+1 + H2,t+1 + H3,t+1. Further, ΦHt+1 gives the decomposition:
+
+φt = φ0 + φ1,t + φ2,t + φ4,t.
+
+(13)
+
+In equation (13), the equity risk premium φt is separated by its conditional variance components: φ1,t is the part of the equity risk premium due to autoregressive eects, φ2,t is the component due to ARCH eects and φ3,t is the component due to asymmetries.
+
+3 Estimations
+
+3.1 Data
+I use monthly data for the period January 1993 to December 2013. The stock market returns are the log value-weighted return on all stocks listed on the Mexican stock
+exchange (BMV) and were taken from Bloomberg.13 The risk-free rate is the 28 day CETES yield taken from Banco de México.14 The macroeconomic variables are ination,
+the index of industrial production, both obtained from INEGI, and M1 obtained from
+13The log value-weighted return is calculated as follows: Rt = n wit−1RIt, where Rt = ln(PT +1/Pt)
+i=1
+and wit is the market capitalization of rm i at time t. 14CETES are Mexican treasury certicates.
+12
+
+Banco de México. For production I took the log of the seasonally adjusted series of the index of industrial
+production (IPI), ination is the log rst dierence of CPI and money growth is the log rst dierence of M1.
+Table 1 shows periods of recession during the sample period. In Figure 1 we can clearly see the picks and troughs of the business cycle in Mexico. We start with the 1992-1993 recession which was moderate, then a brief period of expansion before the tequila crisis hit the economy. During this time, the IPI touched the lowest level for the period in the sample. Right after the crisis passed, Mexico observed a four year period of expansion which were the fastest growing years for the observed period. The third recession was the
+so-called dot-com bubble.15 This bubble was followed by a period of moderate expansion
+and then the fourth recession began with the 2008 nancial crisis during which Mexico's GDP fell by 6.5% (INEGI).
+15This was a historic speculative bubble generated in the U.S. with its climax on March 2000. Ljungqvist and Wilhelm (2003) for more details.
+13
+
+Table 1: Recession dates.
+
+1993m01-1993m11 11
+
+1994m11-1995m10 2000m10-2003m09
+
+12
+
+36
+
+number of observations: 76
+
+2008m01-2009m05 17
+
+2.04 2.00 1.96 1.92 1.88 1.84 1.80 1.76
+
+94 96 98 00 02 04 06 08 10 12
+Figure 1: Production.
+
+Among the four recessions mentioned above, there are two nancial crises, the 1994 Mexican nancial crisis and the 2008 U.S. nancial crisis. I will focus the analysis on these two crisis. The origins of Mexico's crisis were: a large scale of deregulation in the economy, trade and capital ow liberalization, xing the value of the Mexican peso to the dollar,
+weak regulation of banks and investor´s enthusiasm. All of these factors combined with
+political and social instability led to the worst recession in Mexico's history (Musacchio, 2012). For the 2008 nancial crisis, the origins were: an asset price bubble that interacted with new kinds of nancial innovations that masked risk, companies that failed to follow their own risk management procedures and weak regulation and supervision that failed to restrain excessive risk taking, (Baily, Litan and Johnson, 2008).
+
+14
+
+Figure 2: Excess return. Note.Shaded areas are recessions.
+Figure 3: Evolution of number of rms listed on the Mexican stock exchange.
+15
+
+In Figure 2 we can see the jumps of excess return during recessions. It is not surprising since as we have seen when risk is higher, the equity risk premium also has to be higher. We can also see that during recessions the variation of return is much higher and that there is an asymmetric eect of positive and negative shocks. Excess returns display periods of turbulence and tranquility suggesting volatility clustering. In Figure 3 the evolution of rms listed on the Mexican stock market is shown. This is important because it might help explain the higher variation or returns during early years of the sample.
+In Figure 4, ination is depicted. We can clearly see the stabilization of this macro variable from the year 2000 when the Mexican central bank's mandate change to ination
+objectives. Also we can see the hyperination of 1995 right after the tequila crisis.16
+16In December 1994 Mexico adopted a free oating exchange rate regime.The exchange rate depreciated 20.39% in one day (Musacchio, 2012).
+16
+
+0.5 0.4 0.3 0.2 0.1 0.0
+94 96 98 00 02 04 06 08 10 12
+Figure 4: Ination.
+1.2 1.0 0.8 0.6 0.4 0.2 0.0 -0.2 -0.4 -0.6
+94 96 98 00 02 04 06 08 10 12
+Figure 5: Money growth.
+17
+
+Table 2: Stationary tests.
+
+ADF
+
+DF-GLS
+
+KPSS
+
+variable t-statistic t-statistic LM stat
+
+it+1
+
+-14.289
+
+-3.724
+
+0.1850
+
+πt+1
+
+-2.672
+
+-2.181
+
+0.960
+
+M 1t+1
+
+-15.687
+
+-2.187
+
+0.166
+
+Yt+1
+
+-4.926
+
+-3.559
+
+0.475
+
+Yt+1
+
+-1.373**
+
+0.988**
+
+1.801**
+
+**H0of presence of a unit root in the series.
+
+can't be rejected at 5% level.
+
+As we can clearly see from the graphs, some of the macroeconomic series are not stationary and show a seasonal component. For that reason, I perform an augmented Dickey-Fuller (ADF) unit root test and a seasonality test on all variables.
+As shown in Table 2, for excess return, ination and money growth, the null hypothesis of existence of a unit root in the series is rejected but that is not the case for the production variable where there is evidence of a unit root in the series. For that reason I take the rst dierence of the series and test again for the presence of a unit root. I nd that the log rst dierence of production is stationary. Then I perform two other dierent
+tests: the KwiatkowskiPhillipsSchmidtShin (KPSS) and DF-GLS unit root tests.17All
+results were conrmed. In Table 3 the test for seasonality is shown. As you can also predict from looking at
+the graphs, ination and money growth show a seasonal behavior. To prevent possible biases in estimation I perform a X-12 ARIMA to adjust the series. After a new test I nd
+that there is no evidence of seasonality in the series.18
+
+17KPSS is used for testing a null hypothesis that an observable time series is stationary around a deterministic trend. The DF-GLS unit root test is a Dickey and Fuller applied to the regression residual, which arises from the generalized least squares (Vougas, 2007).
+18I also performed a Kruskal-Wallis test. The null hypothesis of the Kruskal-Wallis test states that stable seasonality is present in the time series, is rejected if the p-value is higher than 5%.
+X-12 ARIMA is a software package for seasonal adjustment from the U.S. Census Bureau which is part of the software E-views8 .
+18
+
+Table 3: Test for the presence of seasonality.
+
+variable F-statistic KW-statistic
+
+it+1
+
+1.315
+
+19.623
+
+πt♦+1
+
+5.08*
+
+82.394*
+
+πt+1
+
+0.782
+
+6.990
+
+M 1t♦+1
+
+146.197*
+
+181.936*
+
+M 1t+1
+
+0.459
+
+1.689
+
+Yt+1
+
+1.252
+
+5.490
+
+*Seasonality present at the 1 per cent level.
+
+KW: Kruskal-Wallis.
+
+♦: before X12 ARIMA.
+
+In Table 4, we present descriptive statistics for the four stationary and seasonally adjusted variables and in Table 5 the cross-correlation of the variables. All four variables show positive skewness, excess kurtosis and reject normality using a 0.99 condence interval. Excess return has signicant rst order autocorrelation, also autocorrelation in squared returns and absolute returns. Autocorrelation presence indicates that volatility of excess return is partly predictable and there is also evidence of asymmetries in the volatility process. This indicates the possible presence of ARCH eects.
+Ination shows strong and very signicant autocorrelation, the same for squared and absolute ination. Production shows weak autocorrelation with previous months but that changes with respect to the previous trimester. Autocorrelation in squared production and absolute production is also signicant. Money growth shows close to zero skewness which means little or no asymmetries in its distribution, and very strong and highly signicant rst order autocorrelation, squared autocorrelation and absolute autocorrelation.
+
+19
+
+Table 4: Descriptive statistics
+
+it+1
+
+πt+1
+
+Yt+1
+
+Mean
+
+0.137398 0.040302 0.010294
+
+Std.dev
+
+0.381964 0.049273 0.061498
+
+Skewness
+
+1.624852 3.752575 0.971463
+
+kurtosis
+
+12.45173 24.48912 15.83326
+
+Normality
+ρ(xt, xt−1)
+
+1044.744 0.097*
+
+5418.56 0.882*
+
+1761.89 0.007
+
+ρ(xt, xt−2)
+
+(2.3979) -0.062*
+
+(197.53) 0.762*
+
+(0.0119) 0.006
+
+ρ(xt, xt−3)
+
+(3.3905) 0.001*
+
+(345.53) 0.649*
+
+(0.0224) 0.045
+
+ρ(xt, xt−4)
+
+(3.3907) 0.063*
+
+(453.36) 0.555*
+
+(0.547) 0.14*
+
+ρ(xt, xt−5)
+
+(4.4149) -0.084*
+
+(532.48) 0.545*
+
+(5.5761) 0.043*
+
+ρ(xt, xt−6)
+
+(6.2274) -0.099*
+
+(609.12) 0.537*
+
+(6.0486) 0.019*
+
+ρ(xt, xt−12)
+
+(8.769) -0.019*
+
+(683.75) 0.332*
+
+(6.1458) -0.07*
+
+ρ(x2t , xt2−1) ρ(x2t , xt2−2) ρ(xt2, xt2−3) ρ(x2t , xt2−4) ρ(x2t , x2t−5) ρ(xt2, xt2−6) ρ(x2t , x2t−12) ρ(|x|t, |x|t−1)
+
+(10.998) 0.081
+(1.675) -0.007 (1.689) 0.012 (1.7268) 0.107* (4.6716) 0.05* (5.3237) 0.051* (5.9894) 0.007* (6.3941) 0.265*
+
+(1000.7) 0.686*
+(119.71) 0.457*
+(172.89) 0.3*
+(195.89) 0.192* (205.4) 0.189*
+(214.59) 0.196*
+(224.57) 0.091*
+(257.79) 0.883*
+
+(12.746) -0.58*
+(85.314) 0.132*
+(89.757) -0.032* (90.017) -0.035* (90.338) -0.04* (90.741) -0.027* (90.928) 0.013* (111.77)
+0.45*
+
+ρ(|x|t, |x|t−2)
+
+(17.842) 0.089*
+
+(198.02) 0.765*
+
+(51.528) 0.143*
+
+ρ(|x|t, |x|t−3)
+
+(19.854) 0.11*
+
+(347.27) 0.655*
+
+(56.772) -0.053+
+
+ρ(|x|t, |x|t−4)
+
+(22.979) 0.204*
+
+(457.15) 0.563*
+
+(57.479) -0.045*
+
+ρ(|x|t, |x|t−5)
+
+(33.641) 0.102*
+
+(538.62) 0.555*
+
+(57.996) -0.1*
+
+ρ(|x|t, |x|t−6)
+
+(36.346) 0.131*
+
+(618.09) 0.548*
+
+(60.573) -0.011*
+
+ρ(|x|t, |x|t−12)
+
+(40.767) (695.84) (60.607)
+
+0.024* (50.382)
+
+0.356* 20 (1028.6)
+
+0.04* (86.539)
+
+* Signicant at 1 per cent level.
+
+M 1t+1
+0.084701 0.090276 0.007389 5.885677 87.0902
+0.092* (2.1428)
+0.242* (17.124)
+0.386* (55.271)
+0.052* (55.958)
+0.147* (61.509)
+0.193* (71.115) -0.047* (82.645)
+0.052 (0.6786)
+0.096* (3.0304)
+0.289* (24.38) 0.062* (25.372) 0.079* (26.965) 0.251* (43.26) 0.085* (68.958)
+0.069 (1.2115)
+0.161* (7.8508)
+0.364* (41.716)
+0.114* (45.077)
+0.098* (47.58) 0.231* (61.435) 0.124* (103.98)
+
+Table 5: Cross-correlations.
+
+it+1
+
+it+1
+1
+
+πt+1
+
+Yt+1
+
+M 1t+1
+
+πt+1
+
+0.1594**
+
+1
+
+(2.549)
+
+Yt+1
+
+0.0489
+
+-0.0310
+
+1
+
+(0.773) (-0.4888)
+
+M 1t+1 0.0457
+
+0.0638
+
+0.2079**
+
+1
+
+(0.7218) (1.0087) (3.3543)
+t-statistics in parenthesis.
+
+** Coss-correlation is signicant at 5 per cent level.
+
+Table 5 shows cross-correlations of the variables. Excess return and ination have a positive signicant correlation, rst order correlation between excess return and production and excess return and money growth is not signicant. There is positive and signicant correlation between production and money growth. Ination and production have negative but insignicant correlation. Results for all variables change signicantly when taking cross-correlation of lagged values of the series. There is strong evidence of
+cross-correlation between all series.19 This is important evidence for the use of a multi-
+variate GARCH model because lagged values conditional variance of all series aect each other.
+In Table 6, descriptive statistics of the variables are separated into into two periods, recessions and other periods. This shows that the average excess return during recessions is almost half of the return observed in every other period. For the macroeconomic factors, as expected, production growth is negative money growth is smaller and ination is lower during recessions. Correlations between macroeconomic variables and excess return are very signicant and this is more evidence of the importance of the business cycle on stock returns.
+
+19See Appendix 1 Tables A1.8-A1.13 for further details.
+21
+
+Table 6: Descriptive statistics: recessions vs other periods.
+
+22
+
+Model 2 Mean in recessions Mean elsewhere Correlation with excess return in recessions
+Correlation with excess return elsewhere
+Mean conditional SD in recessions Mean conditional SD elsewhere Mean contribution to risk in recessions Mean contribution to risk elsewhere
+
+Excess return Ination Production
+
+0.0473
+
+0.0149
+
+-0.0046
+
+0.0901
+
+0.0254
+
+0.0149
+
+1
+
+0.3301
+
+-0.1594
+
+(5.508)* (2.543)*
+
+1
+
+0.4077
+
+-0.0262
+
+(1.729)
+
+(0.102)
+
+0.0087
+
+0.0160
+
+0.0335
+
+0.0190
+
+0.0360
+
+0.0777
+
+0.0820
+
+-0.0086
+
+-0.0282
+
+0.1468
+
+-0.0174
+
+-0.0610
+
+*Signicant at 1 per cent level.
+
+Money 0.0210 0.0637 0.1935
+(3.107)*
+-0.6581
+(3.385)*
+0.1023 0.2193 0.0042 0.0092
+
+Equity risk premium 0.0495 0.0776
+1 1
+
+Table 7: Test for ARCH eects.
+
+variable lag (1) lag (2) lag (4) lag (6) lag (8) lag (12)
+
+it+1
+
+πt+1
+
+M 1t+1
+
+Yt+1
+
+F-stat LM-stat F-stat LM-stat F-stat LM-stat F-stat LM-stat
+
+3.99** 3.95** 148.35* 93.44* 125.07*
+
+83.7*
+
+3.4*** 3.38***
+
+2.06
+
+4.10
+
+73.88*
+
+93.3*
+
+79.68*
+
+97.74*
+
+2.53
+
+5.01
+
+1.25
+
+4.98
+
+37.23*
+
+93.96*
+
+39.5*
+
+97.43*
+
+3.74
+
+14.38
+
+0.90
+
+5.41
+
+33.02* 111.10* 26.22*
+
+97.34*
+
+2.74
+
+15.80
+
+0.72
+
+5.86
+
+24.38* 110.28* 21.61* 103.07*
+
+2.08
+
+16.11
+
+0.48
+
+5.89
+
+17.4*
+
+114.56* 15.29* 106.91*
+
+1.40
+
+*The Ho of no presence of ARCH eects is rejected at 1 per cent level.
+
+**The Ho of no presence of ARCH eects is rejected at 5 per cent level.
+
+***The Ho of no presence of ARCH eects is rejected at 10 per cent level.
+
+16.56
+
+The last step before estimation is to test for ARCH eects in residuals of the series. I perform a Lagrange multiplier (LM) test for heteroskedasticity in squared residuals. In Table 7 results are shown for the LM and F test with 1, 2 , 4 , 6, 8 and 12 lags for each of the series. The null hypothesis of no ARCH eects is rejected at the 5 per cent level for excess return, at the 10 per cent level for money growth and at the 1 per cent level for ination and output.
+In sum, from the data there is strong evidence for the use of a multivariate GARCHin-mean since there is clear presence of ARCH eects in the series, signicant crosscorrelations and lagged cross-correlations between the series, non-normality, skewness and serial correlation.
+
+3.2 Results
+Following Smith, Sorensen and Wickens (2010), seven dierent versions of equation (10), the no-arbitrage equation, are estimated in order to separate the eects of the covariances of the three macroeconomic factors with the excess return. Only the corresponding equation for excess return as dependent variable will be modied and estimated. The remaining three equations for the macroeconomic variables as dependent variables will
+23
+
+not be modied. Model 1 is the benchmark Capital Pricing Asset Model (CAPM) which relates the
+expected excess return with only one factor, the volatility of excess return and assumes a conditional covariance between ination and excess return equal to one.
+Model 2 is a more general version with all three macroeconomic factors and the conditional variance of excess return.
+Models 3 to 6 price only the macroeconomic factors and do not take into account the conditional variance of the excess return component with models 4 to 6 pricing each macroeconomic factor individually. Model 7 is used as a verication of model 1 (CAPM) which restricts the conditional covariance between ination and excess return equal to one. Model 7 allows for this coecient to be dierent than one.
+In Table 8, the estimates of all seven models are displayed. The two models with less explanatory power are models 4 and 5 as measured by both the log-likelihood and the share of conditional excess return variance explained by the variance of equity risk premium; they also have the highest mean residuals. These two models seek to explain the excess return with its conditional covariance with ination and production.
+For the Mexican data, I nd that the coecient of covariance between ination and excess return is not signicant, this is veried by the fact that the model 4 has very little explanatory power, this suggest that ination has a very dierent impact on excess return than model 1 predicts.
+Model 2 includes all three macroeconomic factors. It has the lower residual and has the higher excess return variance explanatory power. There is strong evidence that including macroeconomic variables helps to explain excess return more than the traditional CAPM model.
+Model 3 does not include excess return variance and therefore has very little explanatory power and the average residual is almost three times bigger in model 3 than in model
+24
+
+2, inationa and insdustrial are signicantly priced but the sign of conditional covariance of excess return and ination is now negative.
+Models 4 to 6 include only one macroeconomic factor. All three of them explain around 2% of excess return variance, which is very low, but are very signicantly priced, except for money growth.
+Tables 9a and 9b report estimates for the more general model 2. In matrix Bˆ we can
+observe the VAR eects for the macroeconomic variables, the coecients related with their own lag are highly signicant as well as the coecient of lagged production and money on ination and the coecient of lagged money growth on production.
+For the conditional variance equation, the autoregressive component in Dˆ is very
+signicant in the diagonal and there is evidence that each variable helps explain the
+others. For the asymmetries parameter matrix Gˆ, the negative sign of conditional variance
+indicate that negative own shocks have a lower impact than positive own shocks and the opposite happens for the macro variables.
+25
+
+26
+
+Table 8: Model estimates.
+
+M1
+
+M2
+
+M3
+
+M4
+
+M5
+
+Vt(it+1) C ovt (it+1, πt+1 ) Covt(it+1, Yt+1) Covt(it+1,∆M 1t+1)
+
+153.068* (2.08) 1
+
+263.73* (6.54)
+107.141* (8.65)
+-180.29* (5.79) 2.68 (0.87)
+
+-29.191* (7.96)
+-40.413* (4.64) 25.951 (0.65)
+
+-288.302* (5.64)
+
+1
+135.658* (3.13)
+
+Log-likelihood
+
+-27963
+
+-27095
+
+-28258
+
+-29375
+
+-29804
+
+Average residual
+
+0.1296
+
+0.1275
+
+0.1026
+
+0.066
+
+0.060
+
+Risk share (%)
+
+8.50
+
+12.22
+
+2.50
+
+2.03
+
+2.77
+
+Risk share: 100*Var(φ)/Var(excess return+1/2V(excess return).
+
+t-statistic in parenthesis.
+
+M6
+1
+23.958 (0.35) -28333 0.107
+2.29
+
+M7 154.610*
+(4.06) 6.932* (7.96)
+-27963 0.1296
+8.67
+
+Table 9a: Model 2.
+
+Yt+1 = A + BiYt + ΦJ H[1:N1],t+1 + t+1 t+1 = Ht1+/21ut+1 ut+1 ∼ N(0, 1)
+
+Ht+1 = CC + DHtD + EεtεtE + GηtηtG
+
+0
+
+ 0.0062 
+
+
+
+
+
+ (1.313) 
+
+Aˆ
+
+=
+
+ 
+
+−0.051
+
+ 
+
+,
+
+
+
+
+
+ (4.565) 
+
+ 
+
+0.0547
+
+ 
+
+(2.023)
+
+ 263.7349
+
+
+
+Φˆ
+
+=
+
+ 
+
+
+
+
+
+(40.275)
+0 0 0
+
+107.415
+(12.414)
+0 0 0
+
+−180.293
+(−31.092)
+0 0 0
+
+2.683 
+
+(3.072) 
+
+0
+
+ 
+
+,
+
+0
+
+ 
+
+0
+
+0
+
+ 0.0271
+
+  (3.129)
+
+Bˆ
+
+=
+
+ 
+
+0.0180
+
+  (0.934)
+
+ 
+
+−0.7976
+
+(14.455)
+
+0 0.8277
+(10.888)
+0.5195
+(3.191)
+3.3783
+(8.164)
+
+0 −0.3271
+(4.379)
+0.0758
+(0.6173)
+3.458
+(10.48)
+
+0
+
+0.0965 
+
+ (2.755) 
+
+0.2493
+
+ 
+
+,
+
+ (0.6173) 
+
+−1.506
+
+ 
+
+(7.482)
+
+ 0.9450
+
+ (9.813)
+
+ 
+
+0.0051
+
+
+
+Dˆ
+
+=
+
+ 
+
+
+
+(0.120)
+0.0088
+
+  (0.022)
+
+ 
+
+−0.0020
+
+(0.008)
+
+−0.0164
+(0.209)
+0.9457
+(12.525)
+0.0067
+(0.038)
+0.0142
+(0.060)
+
+−0.0141
+(0.039)
+−0.0059
+(0.089)
+0.9455
+(3.110)
+−0.0005
+(0.037)
+
+0.0117 
+
+(0.057) 
+
+0.0016
+
+ 
+
+ (0.034) 
+
+0.0080
+
+ 
+
+ (0.050) 
+
+0.9461
+
+ 
+
+(92.757)
+
+27
+
+Table 9b: Model 2.
+
+ −0.0089
+
+ (0.019)
+
+ 
+
+−0.0037
+
+
+
+Eˆ
+
+=
+
+ 
+
+
+
+(0.014)
+0.0083
+
+  (0.031)
+
+ 
+
+0.0102
+
+(0.050)
+
+0.0071
+(0.037)
+−0.0094
+(0.028)
+0.0044
+(0.007)
+−0.0235
+(0.192)
+
+0.0038
+(0.024)
+−0.0103
+(0.157)
+−0.0008
+(0.038)
+0.0266
+(0.347)
+
+−0.0107 
+
+(0.021) 
+
+0.0328
+
+ 
+
+
+
+(0.237)
+0.0028
+
+ 
+
+,
+
+
+
+ (0.022) 
+
+0.0203
+
+ 
+
+(0.032)
+
+ 0.1013
+
+ (0.065)
+
+ 
+
+−0.0082
+
+
+
+Gˆ
+
+=
+
+ 
+
+
+
+(0.010)
+0.0140
+
+  (0.162)
+
+ 
+
+0.0171
+
+(0.032)
+
+0.0215
+(0.011)
+0.1064
+(0.788)
+0.0220
+(0.036)
+−0.0023
+(0.064)
+
+0.0049
+(0.031)
+−0.0025
+(0.029)
+0.1189
+(0.035)
+0.0107
+(0.029)
+
+−0.0060 
+
+(0.014) 
+
+−0.0167
+
+ 
+
+ (0.087) 
+
+−0.0089
+
+ 
+
+ (0.010) 
+
+0.0996
+
+ 
+
+(0.177)
+
+ 0.2659
+
+ (2.286)
+
+ 
+
+−0.0092
+
+
+
+Cˆ
+
+=
+
+ 
+
+
+
+(0.063)
+−0.0351
+
+  (0.114)
+
+ 
+
+−0.0160
+
+(0.099)
+
+0
+0.2817
+(1.237)
+−0.0320
+(0.248)
+−0.0356
+(0.082)
+
+0
+0
+0.2685
+(0.637)
+−0.0264
+(0.276)
+
+0
+
+
+
+0
+
+ 
+
+
+
+
+
+0
+
+ 
+
+
+
+
+
+0.2823
+
+ 
+
+(9.602)
+
+In contrast to what is found for the Mexican data. Smith, Sorensen and Wickens (2010), nd that for the U.S. the covariance between ination and excess return is significant and stronger than CAPM model restricts. This result was found for model 7 which serves for comparison to our benchmark model. The positive and signicant relationship between ination and excess return found for the U.S. but not for Mexican data could be explained by the fact that Mexican ination is much more volatile than American ination, therefore changes in ination for the U.S. data could reect changes in economic
+28
+
+policy and thus have a more direct impact on investors expectation of the state of the economy and future dividends or share prices than for the Mexican case.
+For the general model 2. It was found for the U.S. that money growth becomes not signicant when all three macroeconomic variables are included and the covariance between excess return and production growth becomes negative, this is consequence of the a strong negative relationship between production and ination. I nd that for the Mexican data, for the period of the sample, this relationship is not signicant. 3.3 Equity risk premium
+Let us recall that the stock market reward-to-risk is the equity risk premium φt, which
+is the dierence between the stock market return and the risk free rate. It was also showed in Section 2 that it can be decomposed into its components:
+φt = φexces return,t + φinf lation,t + φoutput,t + φmoney,t where φjt is the covariance between the jth macroeconomic factor and the excess return.
+This decomposition represents the rst channel of transmission, through the mean.The equity risk premium can also be decomposed into the conditional variance-covariance matrix components:
+φt = φ0 + φ1,t + φ2,t + φ4,t. We know that φ1,t is the part of the equity risk premium due to autoregressive eects, φ2,t is the component due to ARCH eects and φ3,t is the component due to asymmetries.
+This decomposition represents the second channel of transmission, through volatility.
+29
+
+3.0 2.5 2.0 1.5 1.0 0.5 0.0 -0.5 -1.0
+
+Excess Return RP1 RP2
+94 96 98 00 02 04 06 08 10 12
+Figure 6: Equity risk premium and excess return.
+
+Figure 6 shows the dierence between the equity risk premium movements for model 1 and model 2. In model 1, the equity risk premium is only aected by the conditional variance of excess return. In model 2 the equity risk premium is aected by conditional variance of excess return and by the covariance between all three macroeconomic factors with excess return. We note that the equity risk premium from model 2 varies a lot more than the equity risk premium from model 1. An important thing to note is that the equity risk premium was negative during the tequila crisis. This means that the risk free rate was higher, in this period, than the Mexican stock market return. This translates into zero incentives to invest in the Mexican stock market and thus investors leaving from the Mexican market.
+Is is also clear that the equity risk premium is higher during recessions that during expansions, suggesting is evidence of the importance of asymmetries in the model. The business cycle eect on the equity risk premium is very dierent in good and bad times.
+
+30
+
+8
+RP R volatility
+6
+4
+2
+0
+-2 94 96 98 00 02 04 06 08 10 12
+Figure 7: Equity risk premium and conditional standard deviation of excess return.
+Figures 7 to 10 depict the relationship between the equity risk premium (RP) and
+the conditional standard deviation (volatility) of each variable.20 In Figure 7 we nd
+that the excess return volatility movements are very dierent to those of the equity risk premium and it is important to notice that the behavior during each of the four recessions is also very dierent. Let us focus our attention on two of them: the tequila crisis of 1994 and the recent nancial crisis of 2008. Both the equity risk premium and excess return volatility reached a historical peak in 1995 with the equity risk premiums going higher than volatility. For the two subsequent recessions the eect on these two variables is considerably smaller.
+For the macroeconomic variables, we can see similar behavior of the series, the peaks in volatility of each macroeconomic variable is considerably smaller during the imported crisis than they were during the home made crisis. Output varies closely with the equity risk premium; this is evidence of the strong business cycle inuence on the equity risk premium.
+20Data were normalized for this graph to be able to identify the relationship between both variables.
+31
+
+8
+RP i volatility
+6
+4
+2
+0
+-2 94 96 98 00 02 04 06 08 10 12
+Figure 8: Equity risk premium and conditional standard deviation of ination.
+8
+RP p volatility
+6 4 2 0 -2 -4
+94 96 98 00 02 04 06 08 10 12
+Figure 9: Equity risk premium and conditional variance of production.
+32
+
+8
+RP m volatility
+6
+4
+2
+0
+-2 94 96 98 00 02 04 06 08 10 12
+Figure 10: Equity risk premium and conditional variance of money growth.
+
+φtM 1 φM t 2 φtM 3 φM t 4 φM t 5 φtM 6 φM t 7
+
+Table 9: Equity risk premium autocorrelation.
+
+ρ1
+
+ρ2
+
+ρ3
+
+ρ4
+
+ρ5
+
+ρ6
+
+ρ12
+
+0.933 0.850 0.757 0.675 0.584 0.504 0.212
+
+0.914 0.830 0.684 0.579 0.469 0.423 0.238
+
+0.926 0.834 0.787 0.762 0.721 0.664 0.475
+
+0.813 0.593 0.447 0.409 0.381 0.391 0.249
+
+0.793 0.593 0.522 0.529 0.565 0.467 0.09
+
+0.945 0.92 0.88 0.818 0.782 0.723 0.479
+
+0.932 0.848 0.755 0.672 0.582 0.502 0.211
+
+Table 10 shows the persistence of the equity risk premium in each model, where models 3 and 6 have the most persistent equity risk premium.
+
+33
+
+6
+Var lag
+4 2 0 -2 -4 -6 -8
+94 96 98 00 02 04 06 08 10 12 4
+ARCH A sym m e try
+2 0 -2 -4 -6 -8
+94 96 98 00 02 04 06 08 10 12
+Figure 11: Contribution to risk of conditional variance components.
+34
+
+0.8
+
+0.4
+
+0.0
+
+-0.4
+
+-0.8
+
+-1.2
+
+Co rr(e r,i ) Corr(er,p) Co rr(e r,m )
+
+-1.6 94 96 98 00 02 04 06 08 10 12
+
+Figure 12: Conditional correlations of excess return with macroeconomic factors.
+
+Figure 11 separates the contribution of the conditional variance components of the equity risk premium. The weaker component are the ARCH eects which are close to zero. Asymmetries are strong contributors to risk and it is the autoregressive component of variance that adds most to risk. During the tequila crisis the autoregressive component of the equity risk premium was very large and negative which suggests strong volatility clustering and that during that time, higher volatility of the previous period meant lower equity risk premium. This is very dierent from what we see for the 2008 nancial crisis where the autoregressive component peaked.
+The conditional correlation between macroeconomic factors and excess return tells us how strong is their relationship. Figure 12 illustrates that this relationship is time varying, and signicantly stronger during recessions.
+
+35
+
+2.0
+
+return
+
+inflation
+
+1.5
+
+p ro d u cti o n money
+
+1.0
+
+0.5
+
+0.0
+
+-0.5
+
+-1.0 94 96 98 00 02 04 06 08 10 12
+Figure 13: Contributions to risk of macroeconomic variables.
+
+The second decomposition of the equity risk premium is the contribution of each macroeconomic factor. Again I nd that the business cycle is a bigger part of the equity risk premium during downturns and that the inuence of the macroeconomic factors during the tequila crisis were particularly important. This is what we should expect since this crisis was generated 100% by Mexican factors, as mentioned in Section 2.1, while the others were generated elsewhere. As we see from the plot, volatility of excess return is the factor that aects the equity risk premium the most, specially during recessions and even more when the source of the recession is Mexican. Production growth is a very important factor too in determining the equity risk premium.
+
+36
+
+3.4 Demand and supply shocks In the four graphs below, I introduce a positive and negative shock of ination and
+production growth and their eect on the other macroeconomic variables and the equity risk premium. I interpret ination shocks as supply shocks and production shocks as demand shocks.
+In Figure 14 a negative supply shock is introduced, the eect on the equity risk premium is positive and it lasts four months, the eect on production growth is also positive and lasts only one month. The eect on money growth is negative but not signicant.
+In Figure 15, in response to a positive ination shock. The equity risk premium responds in a positive way and the eect fades 12 months later. The eect of a positive ination shock on industrial production growth and money growth is not signicant.
+37
+
+Response to User Specified Innovations ± 2 S.E.
+
+Response of INFLATION to Shock1
+
+Response of RP to Shock1
+
+.4
+
+0.8
+
+.3
+
+0.4
+
+.2
+
+0.0
+
+.1
+
+-0.4
+
+.0
+
+-0.8
+
+-.1 1 2 3 4 5 6 7 8 9 10 11 12
+
+-1.2 1 2 3 4 5 6 7 8 9 10 11 12
+
+Response of PRODUCTION to Shock1 0.8
+0.4
+0.0
+-0.4
+-0.8
+-1.2 1 2 3 4 5 6 7 8 9 10 11 12
+
+Res ponse of MONEY to Shock1 .4
+.2
+.0
+-.2
+-.4
+-.6 1 2 3 4 5 6 7 8 9 10 11 12
+
+Figure 14: Negative supply shock.
+
+Response to Cholesky One S.D. Innovations ± 2 S.E.
+
+Response of RP to INFLATION
+
+Response of INFLATION to INFLATION
+
+.06
+
+.025
+
+.05
+
+.020
+
+.04
+
+.015
+
+.03
+
+.010
+
+.02
+
+.005
+
+.01
+
+.000
+
+.00 1 2 3 4 5 6 7 8 9 10 11 12
+
+-.005 1 2 3 4 5 6 7 8 9 10 11 12
+
+Response of PRODUCTION to INFLATION .010 .005 .000 -.005 -.010 -.015 -.020
+1 2 3 4 5 6 7 8 9 10 11 12
+
+Res pons e of MONEY to INFLATION .02
+.01
+.00
+-.01
+-.02 1 2 3 4 5 6 7 8 9 10 11 12
+
+Figure 15: Positive supply shock.
+
+38
+
+Response to User Specified Innovations ± 2 S.E.
+
+Response of RP to Shock3 0.5
+
+Response of INFLATION to Shock3
+
+0.0
+
+0.0
+
+-0.5
+-0.4 -1.0
+
+-1.5 -0.8
+-2.0
+
+-2.5 1 2 3 4 5 6 7 8 9 10 11 12
+
+-1.2 1 2 3 4 5 6 7 8 9 10 11 12
+
+Response of PRODUCTION to Shock3 1.0
+0.5
+0.0
+-0.5
+-1.0
+-1.5 1 2 3 4 5 6 7 8 9 10 11 12
+
+Res ponse of MONEY to Shock3 0.8
+0.4
+0.0
+-0.4
+-0.8
+-1.2 1 2 3 4 5 6 7 8 9 10 11 12
+
+Figure 16: Negative demand shock.
+
+Response to Cholesky One S.D. Innovations ± 2 S.E.
+
+Response of RP to PRODUCTION .01
+
+Response of INFLATION to PRODUCTION
+
+.000 .00
+
+-.004 -.01
+
+-.02
+
+-.008
+
+-.03 1 2 3 4 5 6 7 8 9 10 11 12
+Response of PRODUCTION to PRODUCTION .08
+.06
+.04
+.02
+.00
+-.02 1 2 3 4 5 6 7 8 9 10 11 12
+
+-.012 1 2 3 4 5 6 7 8 9 10 11 12
+Response of MONEY to PRODUCTION .03
+.02
+.01
+.00
+-.01 1 2 3 4 5 6 7 8 9 10 11 12
+
+Figure 17: Positive demand shock.
+
+39
+
+Figure 16 shows the response of a negative demand shock. The equity risk premium has a negative impact that lasts for more than 12 months. Th reaction of ination to a negative demand shock is positive and the eect takes eleven months to disappear. The impact of a negative demand shock has no signicant eect on money growth.
+In Figure 17 a positive demand shock is shown. The impact on the other variables is very dierent from the negative shock, the equity risk premium reaction to the shock is negative but not very signicant. Ination also reacts negatively and the impact disappears after three months. The reaction of money growth is negative but not signicant.
+In sum, there is a clear asymmetric eect of positive and negative shocks on the four variables. It is important to separate positive and negative shocks and to distinguish the source of the shock to be able to predict the possible impact on the equity risk premium since the asymmetric eect changes when the source of the impact is dierent. Positive supply shocks and negative demand shocks have a stronger eect on all variables and the eect es more permanent compared to negative supply shocks and positive demand shocks.
+4 Conclusions
+This thesis has found strong and signicant evidence of the inuence of the business cycle on the excess returns of the Mexican stock market. The transmission mechanism operates via two channels: the mean eect via the equity risk premium and the volatility eect via the conditional variance covariance matrix. The rst eect is determined by the macroeconomic components of the equity risk premium and the volatility eect is determined by ARCH eects, asymmetric eects and autoregressive eects. The most important macroeconomic components of the equity risk premium are the conditional variance of excess return and the conditional covariance between excess returns and pro-
+40
+
+duction growth. The most important component of the conditional variance was found to be the observed conditional variance from a previous period.
+We also found that conditional volatility of our four variables: excess return, ination, production and money have an eect on excess return through the equity risk premium. This result contrast to recent ndings for the U.S. where only ination and production inuence the excess return through the mean.
+The tequila crisis which originated in Mexico had a greater impact on the equity risk premium than the recent 2008 nancial crisis. In particular, the conditional variance of excess return and production growth contributed to the equity risk premium a lot more than during any other period. All three components of the conditional variance reached a historic peak during the tequila crisis and were relatively stable during the 2008 nancial crisis. This is very strong evidence on the importance of the origin of the contraction in a business cycle to be able to predict its impact on the Mexican stock market.
+We found evidence of an asymmetric response of the equity risk premium and the three macroeconomic variables to a positive and negative demand and supply shock. A positive supply shock has a longer eect on ination than a negative shock. The same is true for the equity risk premium, where a supply shock lasts for 12 months while a negative supply shock only lasts for 3 months. For production growth, a positive supply shock was found to not be signicant and a negative supply shock was found to have a positive eect for one month. Neither supply or demand shocks were found to be signicant for money growth.
+On the demand side, we found that a negative demand shock has a stronger impact on ination than a positive shock. Ination response to a negative demand shock is negative, signicant and lasts for a year. It was also found that the response of the equity risk premium to a positive demand shock is negative but not signicant and its response to a negative demand shock is also negative, signicant and lasts for a year. Production growth response to a positive demand shock is negative and its response to a negative
+41
+
+demand shock is positive. In sum, it was shown that for Mexico the business cycle has signicant eects on the
+equity risk premium. The source of the recession plays an important role in determining the magnitude of transmission to the Mexican stock market.. Conditional correlations between excess return and macroeconomic factors are time-varying but do not show a pattern during recessions. The volatility of excess return and the three macroeconomic factors seem to only have behaved dierently during the tequila crisis but otherwise do not show a signicant dierence between recessions and periods of expansion.
+For future research, it would be interesting to investigate the recent tax reform on stock market returns in Mexico, by using the results presented here to predict the eect on excess returns. Alternatively, one could use our results to quantify the eect on the equity risk premium of a sudden reduction in the central bank's key interest rate.
+42
+
+References
+[1] Baba R, Engle D, Kraft and Kroner, K. (1987), Multivariate Simultaneous Generalized ARCH., Discussion paper, University of California San Diego.
+[2] Baily, M., Litan R and Johnson M.(2008), The origins of the nancial crisis., The Brookings Institution, Fixing Finance Series: Papers 3.
+[3] Bollerslev T. (1990), Modeling the coherence in short-run nominal exchange rates: a multivariate generalized ARCH model., Review of Economics and Statistics, 72, 498-505.
+[4] Cermeño, R., Oliva B. (2010), Incertidumbre, crecimiento del producto, inación y depreciación cambiaria en México: Evidencia de modelos GARCH multivariados., working paper DTE 483, CIDE, División de Economia.
+[5] Cochrane, J. (2005), Asset Pricing., Princeton University Press, 2nd Edition.
+[6] Enders, W. (1995), Applied Econometric Time Series., New York: John Wiley and Sons.
+[7] Ferson, W. (2003), Test of Multi-Factor Pricing Models, Volatility, and Portfolio Performance., Handbook of the Economics of Finance, 1B, ed. by G. M. Constantinides, M. Harris, and R. M. Stulz. Elsevier, North-Holland.Production.
+[8] Hamilton, J, and Lin, G. (1998),  Stock Market Volatility and the Business Cycle., Journal of Applied Econometrics, Vol 11, No. 5, pp.573-593.
+[9] Ljungqvist ,A. and Wilhelm, W. (2002), IPO Pricing in the Dot-Com Bubble., Journal of Finance, Vol. 58, No. 2 , pp. 723-752.
+[10] Musacchio, A. (2012), "Mexico's Financial Crisis of 1994-1995.", working paper, Harvard Business School, No. 12101.
+[11] Naes, N., Skjeltorp, J and Odegaard A. (2010), Stock Market Liquidity and the Business Cycle. Journal of Finance, Vol. 66, No. 1, pp. 139-176.
+[12] Ross, Stephen (1976), "The arbitrage theory of capital asset pricing.", Journal of Economic Theory, 13 (3): 341360.
+[13] Smith, P. and Wickens, M. (2002), Asset Pricing with Observable Stochastic Discount Factors., Journal of Economic Surveys, Vol. 16, 397-446.
+[14] Samer A., Hussam A. (2012), Financial crises, stockreturns and volatility in an emerging stock market: the case of Jordan., Journal of Economic Studies, Vol. 39 Iss: 2, pp. 178 - 211.
+[15] Smith P., Sorensen S., Wickens M. (2010), The equity premium and the business cycle: the role of demand and supply shocks. , International Journal of Finance and Economics, 15: 134-152.
+43
+
+[16] Täht, M. (2007), Quality of seasonally adjusted time series. , Quarterly Journal of Statistics Etonia.
+[17] Treviño, M. (2011), Time varying Arbitrage Pricing Factors in the Mexican Stock Market., working paper, Social Science Research Network.
+[18] Vougas, D. (2007), GLS detrending and unit root testing., Economics Letters 97.222229.
+44
+
+5 Appendices
+
+5.1 Appendix 1. Tables
+
+Table A1.1 Vector autoregression lag order selection.
+VAR Lag Order Selection Criteria Endogenous variables: RETURN INFLATION OUTPUT MONEY Exogenous variables: C Date: 05/31/14 Time: 00:30 Sample: 1993M02 2013M12 Included observations: 239
+
+Lag
+
+LogL
+
+LR
+
+FPE
+
+AIC
+
+SC
+
+HQ
+
+0
+
+837.4239
+
+NA
+
+1.10e-08 -6.974259 -6.916075 -6.950812
+
+1
+
+1042.483
+
+401.5374
+
+2.26e-09 -8.556340 -8.265422* -8.439108
+
+2
+
+1070.028
+
+53.01649
+
+2.05e-09 -8.652955 -8.129303 -8.441938
+
+3
+
+1099.633
+
+55.99001
+
+1.83e-09 -8.766807 -8.010422 -8.462005*
+
+4
+
+1112.533
+
+23.96480
+
+1.88e-09 -8.740865 -7.751746 -8.342277
+
+5
+
+1151.833
+
+71.69320
+
+1.55e-09 -8.935842 -7.713989 -8.443469
+
+6
+
+1165.286
+
+24.09113
+
+1.58e-09 -8.914526 -7.459939 -8.328368
+
+7
+
+1188.688
+
+41.12551
+
+1.49e-09 -8.976471 -7.289150 -8.296527
+
+8
+
+1204.445
+
+27.16207
+
+1.50e-09 -8.974434 -7.054379 -8.200705
+
+9
+
+1222.825
+
+31.06988* 1.47e-09* -8.994354* -6.841565 -8.126840
+
+10
+
+1229.488
+
+11.04016
+
+1.60e-09 -8.916221 -6.530698 -7.954921
+
+11
+
+1242.531
+
+21.17376
+
+1.65e-09 -8.891473 -6.273216 -7.836388
+
+12
+
+1249.990
+
+11.85914
+
+1.78e-09 -8.819999 -5.969008 -7.671128
+
+* indicates lag order s elected by the criterion LR: sequential modified LR test statistic (each test at 5% level) FPE: Final prediction error AIC: Akaike information criterion SC: Schwarz inform ation criterion HQ: Hannan-Quinn information criterion
+
+45
+
+Table A1.2 Seasonality test for the excess return. Table A1.3 Seasonality test for production growth.
+46
+
+Table A1.4 Seasonality test for the money growth. Table A1.5 Seasonality test for ination. 47
+
+Table A1.6 Seasonality test for ination after X12-ARIMA. Table A1.7 Seasonality test for money after X12-ARIMA. 48
+
+Table A1.8 Cross-correlation of lagged excess return and ination. Table A1.9 Cross-correlation of lagged excess return and production.
+49
+
+Table A1.10 Cross-correlation of lagged money growth and ination. Table A1.11 Cross-correlation of lagged money growth and production.
+50
+
+Table A1.12 Test for ARCH eects on excess return. Table A1.13 Test for ARCH eects on ination. 51
+
+Table A1.14 Test for ARCH eects on production. Table A1.14 Test for ARCH eects on money. 52
+
+Table A1.15 Vector autoregression for risk premium and macroeconomic variables.
+Vector Autoregression Estimates Date: 06/03/14 Time: 05:25 Sample (adjusted): 1993M06 2013M12 Included observations: 247 after adjustments Standard errors in ( ) & t-statistics in [ ]
+
+RP2
+
+INFLATION OUTPUT
+
+MONEY
+
+RP2(-1)
+
+0.703985 (0.05731) [ 12.2833]
+
+-0.133405 (0.03263) [-4.08799]
+
+-0.022572 (0.08761) [-0.25764]
+
+-0.054740 (0.11853) [-0.46184]
+
+RP2(-2)
+
+0.442435 (0.06617) [ 6.68601]
+
+0.090831 (0.03768) [ 2.41067]
+
+-0.163933 (0.10116) [-1.62056]
+
+0.040064 (0.13685) [ 0.29275]
+
+RP2(-3)
+
+-0.387696 (0.05010) [-7.73842]
+
+0.034228 (0.02853) [ 1.19984]
+
+0.222014 (0.07659) [ 2.89884]
+
+0.039399 (0.10361) [ 0.38026]
+
+INFLATION(-1)
+
+0.392545 (0.11426) [ 3.43566]
+
+0.917973 (0.06506) [ 14.1103]
+
+-0.475277 (0.17466) [-2.72114]
+
+-0.180869 (0.23629) [-0.76545]
+
+INFLATION(-2)
+
+0.657945 (0.15312) [ 4.29682]
+
+-0.021162 (0.08719) [-0.24272]
+
+0.522972 (0.23408) [ 2.23418]
+
+0.065120 (0.31667) [ 0.20564]
+
+INFLATION(-3)
+
+-0.465412 (0.12927) [-3.60019]
+
+0.054353 (0.07361) [ 0.73842]
+
+-0.031125 (0.19762) [-0.15750]
+
+0.532618 (0.26735) [ 1.99221]
+
+OUTPUT(-1)
+
+0.008784 (0.04282) [ 0.20515]
+
+-0.065494 (0.02438) [-2.68634]
+
+-0.092300 (0.06545) [-1.41014]
+
+0.048946 (0.08855) [ 0.55275]
+
+OUTPUT(-2)
+
+-0.030028 (0.04275) [-0.70247]
+
+-0.033770 (0.02434) [-1.38744]
+
+-0.128406 (0.06535) [-1.96502]
+
+0.073874 (0.08840) [ 0.83565]
+
+OUTPUT(-3)
+
+-0.080935 (0.04220) [-1.91779]
+
+0.014241 (0.02403) [ 0.59265]
+
+-0.044969 (0.06451) [-0.69705]
+
+0.131404 (0.08728) [ 1.50558]
+
+MONEY(-1)
+
+0.099858 (0.02966) [ 3.36663]
+
+-0.065887 (0.01689) [-3.90122]
+
+0.082417 (0.04534) [ 1.81765]
+
+-0.092310 (0.06134) [-1.50485]
+
+MONEY(-2)
+
+-0.062700 (0.03036) [-2.06544]
+
+0.013001 (0.01729) [ 0.75217]
+
+0.116230 (0.04641) [ 2.50464]
+
+0.141350 (0.06278) [ 2.25150]
+
+MONEY(-3)
+
+-0.036324 (0.03088) [-1.17644]
+
+-0.009175 (0.01758) [-0.52189]
+
+0.061239 (0.04720) [ 1.29744]
+
+0.325434 (0.06385) [ 5.09648]
+
+C
+
+0.007818
+
+0.009223 -0.014618
+
+0.029605
+
+(0.00492)
+
+(0.00280)
+
+(0.00752)
+
+(0.01017)
+
+[ 1.59019] [ 3.29497] [-1.94509] [ 2.91185]
+
+R-s quared Adj. R-squared Sum sq. resids S.E. equation F-s tatis tic Log likelihood Akaike AIC Schwarz SC Mean dependent S.D. dependent
+
+0.922080 0.918084 0.345122 0.038404 230.7558 461.3181 -3.630106 -3.445402 0.128277 0.134182
+
+0.813888 0.804343 0.111892 0.021867 85.27545 600.4234 -4.756465 53-4.571760 0.040897 0.049436
+
+0.139403 0.095270 0.806504 0.058708 3.158681 356.4898 -2.781294 -2.596589 0.009949 0.061721
+
+0.269675 0.232223 1.476083 0.079423 7.200457 281.8418 -2.176856 -1.992152 0.084015 0.090642
+
+Determinant resid covariance (dof adj.) Determinant resid covariance Log likelihood Akaike information criterion Schwarz criterion
+
+1.48E-11 1.19E-11 1704.774 -13.38279 -12.64397
+
+Table A1.16 Firms used in the sample.
+Arca Continental, S. A. B. de C. V. Accel SAB de CV Corporación Actinver S.A.B. de C.V. Grupo Aeromexico SAB de CV Alfa S.A.B de C.V ALPEK, S.A.B. de C.V. Alsea, S.A.B. De C.V. America Movil S.A.B. de C.V. Consorcio ARA, S. A. B. de C. V. Grupo Aeroportuario del Sureste, SAB de CV Compañía Minera Autlán S.A.B. of C.V. Axtel S. A.. B. De CV TV Azteca SAB de CV Industrias Bachoco S.A.B. de C.V. Grupo Bafar S.A.B. de C.V. Farmacias Benavides, S.A.B. de C.V. Grupo Bimbo, S.A.B. de C.V. Bolsa Mexicana de Valores SAB de CV Empresas Cablevisión, S.A.B. de C.V. CEMEX, S.A.B. de C.V. Internacional de Cerámica, S.A.B. de C.V. Grupo Comercial Chedraui, S.A.B. DE C.V.
+Grupe, S.A.B. de C.V.
+Corporación Interamericana de Entretenimiento, SAB de CV Corporación Moctezuma, SAB de CV Corporación Mexicana De Restaurantes S.A.B. De C.V. Controladora Comercial Mexicana SAB DE CV Crédito Real, S.A.B. de C.V., Sociedad Financiera De Objeto Múltiple, Entidad No Regulada Organización Cultiba, S.A.B. de C.V. Cydsa SAB de CV Edoardos Martin S.A.B. de C.V.Grupo Elektra, S.A.B. de C.V. Fomento Económico Mexicano, S.A.B de C.V Casa de Bolsa Finamex Sociedad Anónima Bursátil de Capital Variable Corporativo Fragua, S.A.B. De C.V. Fibra UNO Grupo Aeroportuario del Pacico S.A.B. de CV Corporativo GBM SAB de CV Grupo Carso, S.A.B. de C.V. Grupo Cementos de Chihuahua SAB de CV General de Seguros, S.A.B. Gentera S.A.B. de C.V. Grupo Famsa S.A.B. de C.V. Grupo Financiero Inbursa, S.A.B. de C.V. Grupo Financiero Interacciones SA de CV
+54
+
+Grupo Financiero Multiva, S.A.B. de C.V. Grupo Financiero Banorte, S.A.B. de C.V. Banregio Grupo Financiero, S.A.B de C.V. Grupo Gigante SAB de CV Grupo Industrial Saltillo, SAB de CV Grupo Mexicano de Desarrollo SA Gmd Resorts SAB Grupo México S.A.B. de C.V. Grupo Modelo, S.A.B. de C.V. Grupo Nacional Provincial, S. A. B. Grupo Palacio de Hierro SAB de CV Grupo Profuturo, S.A.B. de C.V. Gruma S.A.B. de CV Grupo Sanborns, S.A.B. de C.V. Grupo Herdez,Sociedad Anónima Bursátil de Capital Variable Hilasal Mexicana, S.A.B. de C.V. Consorcio Hogar, S.A.B. de C.V. Desarrolladora Homex, SAB de CV Empresas ICA, S.A.B. de C.V. Industrias CH, SAB de CV Impulsora del Desarrollo y el Empleo en América Latina, S.A.B. de C.V. Infraestructura Energética Nova, S.A.B. de C.V. Inmuebles Carso, S.A.B. de C.V. INVEX Controladora, S.A.B. de C.V. Kimberly-Clark de México, SAB de CV Coca-Cola FEMSA S.A.B de C.V. Grupo Kuo, S.A.B. de C.V. Genomma Lab Internacional SAB de CV Grupo Lala, S.A.B. de C.V. Grupo Lamosa, SAB de CV El Puerto de Liverpool, SAB de CV Peña Verde, S.A.B. Quálitas Controladora, S.A.B. de C.V. Grupo Radio Centro, S.A.B. de C.V. SANLUIS Corporacion SAB de CV Grupo Financiero Santander Mexico, S.A.B. de C.V. Sare Holding SAB de CV Grupo Sports World, S.A.B. de C.V. Proteak Uno, S.A.P.I.B. De C.V. Grupo Televisa, S.A.B. Grupo TMM S.A.B. Value Grupo Financiero SAB de CV Grupo Vasconia, S.A.B. Corporación Inmobiliaria Vesta, S.A.B. de C.V. Vitro, S.A.B. de C.V. Wal-Mart de Mexico SAB De CV
+55
+
+5.2 Appendix 2. Restrictive model I also estimated a restricte version of four variable BEKK of Engle and Kroner (1995):
+Yt = µ + λ ∗ Ht + t where µ is a N x1 vector of constant terms, λ is a N x1 parameter vector, H is a N xN
+variance-covariance matrix and is the error term. I used the same four variables for
+vector Y : excess return, ination, production and money.
+∼ N (0, H)
+
+Ht+1 = ΩΩ + βHtβ + α t tα
+
+
+
+
+
+0.716124
+
+
+
+
+
+ 
+
+(2112266)
+
+ 
+
+
+
+
+
+
+
+
+
+ 1.463283 
+
+
+
+
+
+
+
+
+
+ (2.65e + 12) 
+
+λ
+
+=
+
+ 
+
+ 
+
+ 
+
+5.480712
+
+ 
+
+
+
+
+
+
+
+
+
+ (6.81E + 32) 
+
+
+
+
+
+
+
+
+
+ 0.939113 
+
+
+
+
+
+
+
+
+
+(200176)
+
+56
+
+ 0.037453
+
+
+
+ 
+
+(0.406)
+
+
+
+ −0.002031
+
+
+
+
+
+ (0.030)
+
+Ω
+
+=
+
+ 
+
+ 
+
+0.002469
+
+
+
+  (0.027)
+
+
+
+
+
+ 0.002007 
+
+
+
+(0.025)
+
+0
+0.002460 (0.059) −0.000666 (0.054) 0.002807 (0.041)
+
+0
+0
+0.026341 (0.011) −0.033188 (−0.091)
+
+ 0
+
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+
+
+0
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+0.112358 
+
+
+
+(1.251)
+
+ 0.103967
+
+
+
+ 
+
+(9.013)
+
+
+
+ 0
+
+
+
+
+
+
+
+β
+
+=
+
+ 
+
+ 
+
+0
+
+
+
+
+
+
+
+
+
+
+
+0 
+
+
+
+0
+0.091357 (9.780)
+0
+0
+
+0
+0
+0.076536 (8.607)
+0
+
+ 0
+
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+
+
+0
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+0.086865 
+
+
+
+(11.168)
+
+ 0.354350
+
+
+
+ 
+
+(5.853)
+
+
+
+ 0
+
+
+
+
+
+
+
+α
+
+=
+
+ 
+
+ 
+
+0
+
+
+
+
+
+
+
+
+
+
+
+0 
+
+
+
+0
+0.360012 (3.569)
+0
+0
+
+0
+0
+0.627875 (4.293)
+0
+
+ 0
+
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+
+
+0
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+0.106469 
+
+
+
+(0.22)
+
+Log likelihood 21.59502
+
+57
+
+5.3 Appendix 3. Codes
+5.3.1 Matlab code
+For estimation of BEKK model, I used Kevin Sheppard's MFET toolbox which is availabe on his webpage: www.kevinsheppard.com.
+Code for the maximum likelihood estimation of equation (10): load matrix.mat
+%Initial values from univariate estimation and VAR P1 = [ 0.00918; 0.007933; 0.086104]; P11 = [ 0.0016; 0.647499; 0.0193; -0.0107; 0.0142; 0.0535; -0.130761 ;-0.0062; 0.0009;-0.2150; 0.0475; -0.190840]; Theta = [ 0.106455; 1.19; 0.5; -0.17]; P0 = [B1; B11; Theta]; %estimation L =@(B) ML_Garch_M(P,Yt,Yt_1,Ht); options = optimset('MaxFunEvals',1000*size(B0,1),'MaxIter',1000*size(B0,1), 'TolFun',1e-10,'TolX',1e-10,'LargeScale','O ','Display','O '); [params llk xx yy grad hessian] = fminunc(L, P0, options); stderros = inv(hessian); l = -llk function [MLGARCHM] = ML_Garch_M(P,Yt,Yt_1,Ht) [T,N] = size(Yt_1); start = ones(T,N); et1 = Yt(1,1) - ([B(16), B(17), B(18), B(19)])*(Ht(:,1,1)) et2 = Yt(1,2) - P(1) - ([P(4), P(5), P(6), P(7)])*Yt_1(1,:)' et3 = Yt(1,3) - P(2) - ([P(8), P(9), P(10), P(11)])*Yt_1(1,:)'
+58
+
+et4 = Yt(1,4) - P(3) - ([P(12), P(13), P(14), P(15)])*Yt_1(1,:)' LLK = 0; for t = 2:T et1 = Yt(t,1) - ([P(16), P(17), P(18), P(19)])*(Ht(:,1,t)) et2 = Yt(t,2) - P(1) - ([P(4), P(5), P(6), P(7)])*Yt_1(t,:)' et3 = Yt(t,3) - P(2) - ([P(8), P(9), P(10), P(11)])*Yt_1(t,:)' et4 = Yt(1,4) - B(3) - ([P(12), P(13), P(14), P(15)])*Yt_1(t,:)' et = [et1; et2; et3; et4]; llkt = - (N/2)*log(2*pi) - (1/2)*log(max(1e-30,det(Ht(:,:,t))))- (1/2)*(et'*inv(Ht(:,:,t))*et); llkt = -llkt; LLK = LLK + llkt; end MLGARCHM = LLK;
+5.3.2 E-views code for the restrictive model
+' restricted version of four variable BEKK of Engle and Kroner (1995): ' ' y = mu + lambda*H + res ' res ~ N(0,H) ' H = omega*omega' + beta H(-1) beta' + alpha res(-1) res(-1)' alpha' ' where, ' y = 3 x 1 ' H = 3 x 3 ' H(1,1) = variance of y1 ' H(1,2) = cov of y1 and y2 ' H(1,3) = cov of y1 and y2 ' H(2,2) = variance of y2 ' H(2,3) = cov of y1 and y3 ' H(3,3) = variance of y3 ' omega = 3 x 3 low triangular ' beta = 3 x 3 diagonal ' alpha = 3 x 3 diagonal ' ' load workle load base_completa1.wf1 ' dependent variables series y1 = return series y2 = ination
+59
+
+series y3 = production series y4 = money ' set sample sample s0 1993m02 2015m12 sample s1 1993m03 2013m12 ' initialization of parameters smpl s0 ' starting values from univariate GARCH equation eq1.arch(archm=var,m=100,c=1e-5) y1 equation eq2.arch(archm=std,m=100,c=1e-5) y2 equation eq3.arch(archm=var,m=100,c=1e-5) y3 equation eq4.arch(archm=std,m=100,c=1e-5) y4
+'conditional variances eq1.makegarch garch1 eq2.makegarch garch2 eq3.makegarch garch3 eq4.makegarch garch4
+' declare coef vectors to use in GARCH model coef(4) lambda lambda(1) = eq1.c(1) lambda(2) = eq2.c(1) lambda(3) = eq3.c(1) lambda(4) = eq4.c(1) coef(10) omega omega(1) = (eq1.c(2))^.5 omega(2) = 0 omega(3) = 0 omega(4) = 0
+60
+
+omega(5) = (eq2.c(2))^.5 omega(6) = 0 omega(7) = 0 omega(8) = (eq3.c(2))^.5 omega(9) = 0 omega(10) = (eq4.c(2))^.5 coef(4) alpha alpha(1) = (eq1.c(3))^.5 alpha(2) = (eq2.c(3))^.5 alpha(3) = (eq3.c(3))^.5 alpha(4) = (eq4.c(3))^.5 coef(4) beta beta(1) = (eq1.c(4))^.5 beta(2) = (eq2.c(4))^.5 beta(3) = (eq3.c(4))^.5 beta(4) = (-eq4.c(4))^.5
+' use sample var-cov as starting value of variance-covariance matrix series cov_y1y2 = @cov(y1-lambda(1)*garch1, y2-lambda(2)*garch2) series cov_y1y3 = @cov(y1-lambda(1)*garch1, y3-lambda(3)*garch3) series cov_y1y4 = @cov(y1-lambda(1)*garch1, y4-lambda(4)*garch4) series cov_y2y3 = @cov(y2-lambda(2)*garch2, y3-lambda(3)*garch3) series cov_y2y4 = @cov(y2-lambda(4)*garch2, y4-lambda(4)*garch4) series cov_y3y4 = @cov(y3-lambda(4)*garch3, y4-lambda(4)*garch4) series var_y1 = @var(y1-lambda(1)*garch1) series var_y2 = @var(y2-lambda(2)*garch2) series var_y3 = @var(y3-lambda(3)*garch3) series var_y4= @var(y4-lambda(4)*garch4) series sqres1 = (y1-lambda(1)*garch1)^2
+61
+
+series sqres2 = (y2-lambda(2)*garch2)^2 series sqres3 = (y3-lambda(3)*garch3)^2 series sqres4 = (y4-lambda(4)*garch4)^2 series res1res2 = (y1-lambda(1)*garch1)*(y2-lambda(2)*garch2) series res1res3 = (y1-lambda(1)*garch1)*(y3-lambda(3)*garch3) series res1res4 = (y1-lambda(1)*garch1)*(y4-lambda(4)*garch4) series res2res3 = (y2-lambda(2)*garch2)*(y3-lambda(3)*garch3) series res2res4 = (y2-lambda(2)*garch2)*(y4-lambda(4)*garch4) series res3res4= (y3-lambda(3)*garch3)*(y4-lambda(4)*garch4)
+' constant adjustment for log likelihood !mlog2pi = 3*log(2*@acos(-1)) ' ........................................................... ' LOG LIKELIHOOD  ....................... logl cvgarchm
+' squared errors and cross errors cvgarchm.append @logl logl cvgarchm.append sqres1 = (y1-lambda(1)*var_y1)^2 cvgarchm.append sqres2 = (y2-lambda(2)*var_y2)^2 cvgarchm.append sqres3 = (y3-lambda(3)*var_y3)^2 cvgarchm.append sqres4 = (y4-lambda(4)*var_y4)^2
+cvgarchm.append res1res2 = (y1-lambda(1)*var_y1)*(y2-lambda(2)*var_y2) cvgarchm.append res1res3 = (y1-lambda(1)*var_y1)*(y3-lambda(3)*var_y3) cgarchm.append res1res4 = (y1-lambda(1)*var_y1)*(y4-lambda(4)*var_y4) cvgarchm.append res2res3 = (y2-lambda(2)*var_y2)*(y3-lambda(3)*var_y3) cvgarchm.append res2res4 = (y2-lambda(2)*var_y2)*(y4-lambda(4)*var_y4) cvgarchm.append res3res4 = (y3-lambda(3)*var_y3)*(y4-lambda(4)*var_y4)
+' variance and covariance series cvgarchm.append var_y1 = omega(1)^2 + beta(1)^2*var_y1(-1) + alpha(1)^2*sqres1(-1) cvgarchm.append var_y2 = omega(2)^2+omega(5)^2 + beta(2)^2*var_y2(-1)
+62
+
++ alpha(2)^2*sqres2(-1) cvgarchm.append var_y3 = omega(3)^2+omega(6)^2+omega(8)^2 + beta(3)^2*var_y3(-1) + alpha(3)^2*sqres3(-1) cvgarchm.append var_y4 = omega(4)^2+omega(7)^2+omega(9)^2 +omega(10)^2 + beta(4)^2*var_y4(-1) + alpha(4)^2*sqres4(-1) cvgarchm.append cov_y1y2 = omega(1)*omega(2) + beta(2)*beta(1)*cov_y1y2(-1) + alpha(2)*alpha(1)*res1res2(-1) cvgarchm.append cov_y1y3 = omega(1)*omega(3) + beta(3)*beta(1)*cov_y1y3(-1) + alpha(3)*alpha(1)*res1res3(-1) cvgarchm.append cov_y1y4 = omega(1)*omega(4) + beta(4)*beta(1)*cov_y1y4(-1) + alpha(4)*alpha(1)*res1res4(-1) cvgarchm.append cov_y2y3 = omega(2)*omega(3) + omega(5)*omega(6) + beta(3)*beta(2)*cov_y2y3(-1) + alpha(3)*alpha(2)*res2res3 cvgarchm.append cov_y2y4 = omega(3)*omega(4) + omega(6)*omega(7) + omega(8)*omega(9)+ beta(4)*beta(3)*cov_y3y4(-1) + alpha(4)*alpha(3)*res3res4
+' determinant of the variance-covariance matrix cvgarchm.append deth = var_y1*var_y2*var_y3*var_y4 -var_y1*var_y2*cov_y3y4^2-var_y1*cov_y2y3^2*var_y4 +2*(var_y1*cov_y2y4*cov_y2y3*cov_y3y4)-var_y1*cov_y2y4^2*var_y3 -var_y3*var_y4*cov_y1y2^2 -cov_y3y4^2*cov_y1y2^2+var_y4*cov_y2y3*cov_y1y2*cov_y1y3 -cov_y1y4*cov_y2y3*cov_y3y4*cov_y1y2 -cov_y1y2*cov_y2y4*cov_y1y3*cov_y3y4+cov_y1y2*cov_y2y4*cov_y1y4*var_y3 +cov_y1y2*cov_y2y4*cov_y1y4*var_y3+cov_y1y3*cov_y1y2*cov_y2y3*var_y4^2 -cov_y1y3*cov_y1y2*cov_y3y4*cov_y2y4+cov_y1y3^2*var_y2*var_y4 -cov_y1y4*cov_y3y4*var_y2*cov_y1y3+cov_y1y3^2*cov_y2y4^2 -cov_y1y3*cov_y2y4*cov_y2y3*cov_y1y4
+63
+
+-cov_y1y4*cov_y1y2*cov_y2y3*cov_y3y4 +cov_y1y4*cov_y1y2*var_y3*cov_y2y4+cov_y1y4*var_y2*cov_y1y3*cov_y3y4 -cov_y1y4^2*var_y2*var_y3-cov_y1y4*cov_y2y3*cov_y1y3*cov_y2y4 +cov_y1y4^2*cov_y2y3^2
+' calculate the elements of the inverse of var_cov (H) matrix cvgarchm.append invh1 = (var_y2*var_y3*var_y4 - var_y2*cov_y3y4^2+cov_y2y3^2*var_y4-2*(cov_y2y4*cov_y2y3*cov_y3y4) +cov_y2y4^2*var_y3)/deth cvgarchm.append invh2 = (var_y3*var_y4*cov_y1y2 -cov_y3y4^2*cov_y1y2-var_y4*cov_y2y3*cov_y1y3 +cov_y1y4*cov_y2y3*cov_y3y4+cov_y2y4*cov_y1y3*cov_y3y4 -cov_y2y4*cov_y1y4^2*var_y3)/deth cvgarchm.append invh3 =(cov_y1y2*cov_y2y3*var_y4 -cov_y1y2*cov_y3y4*cov_y2y4-cov_y1y3*var_y2*var_y4 +cov_y1y4*cov_y3y4*var_y2+cov_y1y3*cov_y2y4^2 -cov_y2y4*cov_y2y3*cov_y1y4)/deth cvgarchm.append invh4 = (cov_y1y2*cov_y2y3*cov_y3y4-cov_y1y2*var_y3*cov_y2y4 +var_y2*cov_y1y3*cov_y3y4+cov_y1y4*var_y2*var_y3 +cov_y2y3*cov_y1y3*cov_y2y4-cov_y1y4*cov_y2y3^2)/deth cvgarchm.append invh5 =(-var_y1*var_y3*var_y4 + var_y1*cov_y3y4^2 +cov_y1y3^2*var_y4-2*(cov_y1y4*cov_y1y3*cov_y3y4) +cov_y1y4^2*var_y3)/deth cvgarchm.append invh6 =(-var_y1*var_y4*cov_y2y3 +cov_y3y4*cov_y1y2*var_y1+var_y4*cov_y1y3*cov_y1y2 -cov_y1y4*cov_y1y3*cov_y2y4 -cov_y1y4*cov_y1y2*cov_y3y4+cov_y2y3*cov_y1y4^2)/deth
+64
+
+cvgarchm.append invh7 =(var_y1*cov_y2y3*cov_y3y4 +cov_y2y4*var_y3*var_y1+cov_y1y2*cov_y1y3*cov_y3y4 -cov_y1y3^2*cov_y2y4-cov_y1y4*cov_y1y2*var_y3 +cov_y1y4*cov_y2y3*cov_y1y3)/deth cvgarchm.append invh8 =(var_y1*var_y2*var_y4-var_y1*cov_y2y4^2 -cov_y1y2^2*var_y4+2*(cov_y1y4*cov_y2y4*cov_y1y2) -cov_y1y4^2*var_y2)/deth cvgarchm.append invh9 =(var_y1*var_y2*cov_y3y4 -var_y1*cov_y2y4*cov_y2y3 -cov_y1y2^2*cov_y3y4+2*(cov_y1y3*cov_y2y4*cov_y1y2) -cov_y1y4*var_y2*cov_y1y3)/deth cvgarchm.append invh10 = (-var_y1*var_y2*var_y3-var_y1*cov_y2y3^2 -cov_y1y2^2*var_y3-2*(cov_y1y3*cov_y2y3*cov_y1y2) +cov_y1y3^2*var_y2)/deth ' log-likelihood series cvgarchm.append logl = -0.5*(!mlog2pi + (invh1*sqres1+invh5*sqres2+invh8*sqres3+invh10*sqres4 +2*invh2*res1res2 +2*invh3*res1res3+2*invh4*res1res4 +2*invh6*res2res3+2*invh7*res2res4+2*invh9*res3res4 ) + log(deth)) ' estimate the model smpl s1 cvgarchm.ml(showopts, m=100, c=1e-5)
+65
+
+

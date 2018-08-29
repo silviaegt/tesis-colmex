@@ -1,0 +1,3299 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+IMPACTO DE LAS TIENDAS DE AUTOSERVICIO
+EN EL NÚMERO DE ESTABLECIMIENTOS COMERCIALES Y EL EMPLEO JESÚS BALCÁZAR CONDE PROMOCIÓN 2011-2013
+ASESOR:
+DR. RAYMUNDO M. CAMPOS VÁZQUEZ Junio, 2013
+
+AGRADECIMIENTOS Al Dr. Raymundo M. Campos Vázquez por la abundante atención y ayuda en la realización del presente trabajo. A la Asociación Nacional de Tiendas de Autoservicio por su ayuda en la obtención de los datos necesarios para esta investigación. A mi familia por su apoyo y comprensión. A la Dra. Sandra Laura Pérez Sánchez por su apoyo y amistad.
+i
+
+RESUMEN
+Esta investigación se propone determinar cuál es el efecto que tienen los autoservicios en el empleo y en el número de establecimientos comerciales. Con esta finalidad, son utilizados datos que miden el número de establecimientos y el empleo en el sector formal de la economía. Fueron también utilizados datos sobre la ubicación y fecha de apertura de las cuatro principales cadenas de autoservicio en México. La investigación se concentra en las tiendas con formato “bodega”, ya que estas son las que han mostrado un mayor crecimiento en años recientes y las que se han instalado en municipios donde antes no había presencia de estas cuatro cadenas.
+Los resultados muestran que el impacto de las tienda con formato bodega se da a los dos años a partir de la instalación de la tienda, en establecimientos minoristas de alimentos, bebidas y tabaco. En otras ramas del comercio con las que las bodegas compiten menos, el efecto es poco significativo o nulo en los primeros años. Alrededor de los cinco años contados a partir de la llegada de las bodegas, se observa una alteración positiva en el número de este segundo grupo de establecimientos. En los establecimientos minoristas que compiten directamente con las tiendas con formato “Bodega”, el impacto no se observa como la reducción en el número de establecimientos, sino como un estancamiento temporal en el crecimiento que estos han tendido a experimentar en años recientes. Por otra parte, el efecto sobre los establecimientos mayoristas es más marcado y se da alrededor de los cinco años posteriores a la llegada de la tienda. Los resultados parecen mostrar que existe una migración del comercios de giros que compiten directamente con las bodegas (alimentos, bebidas y tabaco), hacia ramas en donde la competencia con los autoservicios es menos pronunciada (textiles y calzado).
+En el empleo, la llegada de los autoservicios se traduce en un incremento de empleos que dura hasta antes del quinto año. En este último año, el empleo muestra una reducción importante. Esta reducción coincide con el momento en que los establecimientos mayoristas experimentan el mayor impacto de la llegada de las bodegas. Los efectos sobre el empleo y su comportamiento temporal también se observan, aunque de forma menos significativa, en municipios vecinos a menos de diez kilómetros de distancia.
+ii
+
+Contenido
+I. Introducción ........................................................................................................................3 II. Revisión de literatura...........................................................................................................6 III. Datos.................................................................................................................................10 IV. Dinámica de crecimiento y ubicación de las cadenas de autoservicio .................................12
+IV.1. Bodegas ...............................................................................................................14 IV.2. Supermercados.....................................................................................................18 IV.3. Hipermercados y Megamercados .........................................................................19 IV.4. Clubes de Precio ..................................................................................................20 V. Dinámica del resto de establecimientos comerciales ..........................................................21 VI. Metodología ......................................................................................................................27 VI.1. Especificación básica del modelo ............................................................................27 VI.2. Calculo de distancias ...............................................................................................29 VII. Análisis econométrico .......................................................................................................30 VII.1. Las bases de datos utilizadas....................................................................................30 VII.2. La elección de ubicación de las tiendas y el problema de endogeneidad ...................31 VII.3. Los establecimientos de venta minorista de calzado como variable de control..........32 VII.4. Impacto de las bodegas en el número de establecimientos........................................34 VII.4.1. Minoristas de Alimentos...................................................................................34 VII.4.2. Minoristas de bebidas y tabaco .........................................................................35 VII.4.3. Minorista de textiles excepto ropa ....................................................................37 VII.4.4. Minorista de ropa .............................................................................................37 VII.4.5. Mayorista de alimentos.....................................................................................38 VII.4.6. Mayorista de bebidas y tabaco ..........................................................................39 VII.4.7. Mayorista de textiles y calzado .........................................................................40
+1
+
+VII.5. Impacto en el empleo...............................................................................................41 VIII.Conclusiones .....................................................................................................................44 Adjuntos ...................................................................................................................................46 Índice de tablas .........................................................................................................................60 Índice de figuras........................................................................................................................61 Índice de adjuntos .....................................................................................................................63
+2
+
+I. Introducción Existe en algunos sectores de la población mexicana la creencia de que la aparición de una tienda de autoservicio (bodega, supermercado, hipermercado, mega-mercado o club de precio) induce la desaparición de establecimientos comerciales tradicionales y genera la pérdida de empleos.1 Por otro lado, es fácil ver que se nombra la apertura de una nueva tienda de autoservicio como la creación de nuevos empleos.2 Si la percepción de que las tiendas de autoservicio inducen la desaparición de otros establecimientos comerciales es cierta, su llegada a un municipio podría significar la reducción de la competencia en el mercado local.
+Las grandes cadenas de autoservicio se caracterizan por su eficiencia para reducir costos, lo que se puede traducir en menores precios. Esto lo logran, entre otras vías, a través de su mayor poder de compra y su menor necesidad de personal para operar sus establecimientos. El autoservicio es un formato que requiere de menos personas para atender una misma magnitud de ventas y atender a una misma cantidad de personas que los establecimientos con formato tradicional. Su gran tamaño les permite además utilizar menos personal para realizar labores que, de ser hecha por pequeños establecimientos, requerirían de más personas. Según la teoría económica, la reducción en la competencia significaría un incremento de poder de mercado de los autoservicios. Para el caso específico de la industria del comercio minorista, esto también significa una reducción en las vías por las que otras industrias ofrecen sus productos a sus clientes y un aumento en el poder monopsónico de las cadenas frente a sus proveedores.
+Por otra parte, si la llegada de las tiendas de autoservicio no induce la desaparición significativa de otras tiendas, su llegada significaría un incremento en las fuentes de empleo, las opciones de lugares de compra, acceso a precios más bajos y a una gama más amplia de productos. De ser éste el caso, la reducción de precios no sólo sería visible en las tiendas propiedad de las cadenas, sino también en sus propios competidores quienes se verían forzados a reducir sus márgenes de ganancia ante al incremento en la competencia.
+1 Ver “Cuetzalan frenó a Wal-Mart; se impuso la economía real” en La Jornada del Miércoles 25 de abril de 2012 http://www.jornada.unam.mx/2012/04/25/politica/004n1pol y “Wal-Mart: depredación en varios ámbitos” en La Jornada del Martes 24 de abril de 2012 http://www.jornada.unam.mx/2012/04/24/edito 2 Ver “Anuncian la Creación de más de 500 Empleos Directos” en El Sol de Tampico del 6 de enero de 2013 http://www.oem.com.mx/elsoldetampico/notas/n2831389.htm
+3
+
+Para resolver la pregunta de cuál es el efecto que domina, existen ya en el mundo un extenso número de investigaciones.3 Muchos de estos documentos se concentran en determinar si la instalación de estas tiendas genera más empleos de los que destruyen o viceversa, y en qué medida. Para el caso de México, prácticamente no existen estudios que aporten información relevante sobre esta pregunta. Existe además una complicación: la gran cantidad de establecimientos informales cuya información es difícil de obtener. La poca disponibilidad de datos y el reducido nivel de detalles de la información no permiten analizar el impacto que los autoservicios tienen sobre la totalidad de los establecimientos tradicionales. Los datos, sin embargo, sí permiten conocer si la aparición de estas tiendas impacta en diversas variables del sector formal.
+Esta investigación busca aportar evidencia sobre cuál ha sido el efecto que ha tenido la llegada de las tiendas de autoservicio sobre la parte formal del comercio. Para cumplir este objetivo, fueron obtenidos datos que usualmente no están disponibles al público. Entre los datos utilizados están el número de establecimientos registrados en la base de contribuyentes del Servicio de Administración Tributaría (SAT), el número de trabajadores afiliados al Instituto Mexicano del Seguro Social (IMSS), y el registro de la ubicación geografía y fecha de apertura de cada una de las tiendas de las cuatro principales cadenas de autoservicio en el país.
+Debido a la falta de datos sobre el sector informal, este estudio no puede determinar el impacto que la llegada de las tiendas de autoservicio ha tenido en esta división del comercio, pero sí en la parte formal de la economía. En la revisión de bibliografía fueron hallados muy pocos estudios similares previos para el caso de México, los cuales analizan otros aspectos o profundizan poco el análisis. Así, ésta es una de las primeras investigaciones cuantitativas sobre el impacto los autoservicios en el empleo y el número de establecimientos para México.
+Esta investigación es relevante ya que permitirá conocer cuál podría ser el impacto que estas tiendas tendrán en municipios y comunidades más sensibles. Como se verá más adelante, existe una tendencia de las tiendas de autoservicio a instalarse en comunidades cada vez más pequeñas y con menores niveles de desarrollo. Los resultados obtenidos cubren dos de los aspectos en los cuales la llegada de estas tiendas de autoservicio puede impactar: el número de establecimientos
+3 3 Ver Basker, 2005; Davis & Haltiwanger, 1991; Dube, Lester, & Eidlin, 2007; Franklin, 2001; Gruidl & Kline, 1992, y Stone, 1988.
+4
+
+y el empleo. En la sección de revisión de literatura se verá que existen otras variables que pueden ser impactados, tales como los precios, el surtido de productos, los salarios, entre otros.
+En comparación la mayoría de los textos referenciados en la sección de revisión de literatura, la presente investigación se diferencia en que realiza un análisis en un mercado con características distintas al de los países desarrollados. Este contexto distinto hace que no sea posible utilizar técnicas válidas para otros países. Como ejemplo, en México no existe un patrón claro de expansión a partir de un punto central, como es el caso de Wal-Mart en Estados Unidos. Otra diferencia, es que mucha de la información disponible para otros países, es más difícil e incluso imposible de conseguir en México.
+Otra diferencia es que, cómo se verá en la sección de análisis descriptivo, en México se ha observado un considerable aumento en el número de establecimientos comerciales de todo tipo. Este contexto hace más difícil el problema de identificación ya que las cadenas se instalan en áreas geográficas donde este crecimiento suele ser más pronunciado. El efecto de la llegada de una nueva tienda sobre el número de establecimientos se puede dar a través de dos vías: desaparición de establecimientos existentes e inhibición o fomento de la apertura de establecimientos nuevos. En el contexto de crecimiento comercial de México, es difícil determinar cuál sería la tasa que se debería observar de forma “normal” y, por lo tanto, en qué medida las cadenas de autoservicio inhiben o fomentan la aparición de otros establecimientos.
+Una ventaja de esta investigación, que sí está presente en otras realizadas previamente, es la distinción del efecto en el número de establecimientos según el tipo venta (mayorista o minorista) y el tipo de productos ofrecidos (alimentos, bebidas, tabaco, textiles y calzado). Esto permite ofrecer un panorama de cuáles son los tipos de comercios más sensibles a la competencia con éstas tiendas. Esto también nos permite ofrecer un panorama general de qué tipo de municipios serán más beneficiados o afectados según su composición comercial.
+Los resultados obtenidos muestran que el efecto de los autoservicios se expresan con un retraso que depende del tipo de venta de los establecimientos competidores: en los establecimientos minoristas el efecto se observa a partir del segundo año y en los mayoristas hasta cinco años después de que se instalan las tiendas. El efecto también depende de si los productos que ofrecen son o no también ofrecidos por las bodegas. Existe evidencia de que puede existir migración de
+5
+
+los establecimientos afectados hacia giros en que no compiten directamente con los autoservicios.
+La estructura del texto comienza haciendo una revisión de la literatura existente hasta el momento. En seguida se hace una descripción de la dinámica de corto y largo plazo de la expansión de las cadenas de autoservicio. Después se analiza la dinámica que, según los registros del SAT, han tenido el resto de los establecimientos comerciales. Posteriormente se realiza el análisis cuantitativo de los datos y, finalmente, en la sección de conclusiones se abordan las implicaciones y recomendaciones surgidas del estudio.
+II. Revisión de literatura Existe una extensa historia de estudios que buscan conocer el impacto de los autoservicios. La mayor parte de los estudios, sin embargo, se centran en Estados Unidos y analizan el impacto de una sola de las cadenas: Wal-Mart. Estos estudios han buscado cuantificar el impacto de los autoservicios en una gran cantidad de variables. Las más comunes son el número de establecimientos, el nivel de empleo, los salarios en la industria, los precios y las ventas. La bibliografía, sin embargo, también ha explorado el impacto de estas tiendas en muchas otras variables tales como el capital social, la desigualdad laboral, la recaudación fiscal, pobreza, obesidad, el gasto en programas sociales, entre otros.
+Uno de los primeros estudios de los que se tiene registro es el de Stone (1988). En éste, el autor busca evaluar el impacto de las tiendas Wal-Mart en 14 comunidades de Iowa, Estados Unidos. Para realizar esto, aprovecha el hecho de que en los reportes de impuestos se muestran las ventas de Wal-Mart como “mercancías generales”, mientras que las ventas de los mismos productos en otras tiendas son reportadas dependiendo de la especialización de la tienda en que se venden. Con la finalidad de construir un indicador que le permita medir la evolución de las ventas, define un “pull factor” que permite comparar las ventas per cápita de un producto en una comunidad con las estatales. El autor encuentra que la llegada de las tiendas aumenta las ventas de mercancías generales en 37.4 y 55% en el primer y tercer año, respectivamente. Por otra parte, el sector más afectado es la venta de las tiendas de especialidad (farmacias, artículos deportivos, librerías) y servicios que reducen su pull factor hasta 14.6 y 13.5%, respectivamente. El autor considera un misterio cómo la llegada de Wal-Mart afecta la oferta de servicios.
+6
+
+Como menciona Hicks (2007), los dos principales problemas de este primer estudio son que no controla por otras variables que también podrían influir sobre el comercio minorista, y que no atiende de ninguna forma el problema de endogeneidad existente en la decisión de Wal-Mart de instalarse en una comunidad. Gruidl y Kline (1992) replican el estudio de Stone (1988) para comunidades de Illinois y amplían el análisis hacia otras cadenas (K-mart, Jacks, Target, Farm King). Ellos encuentran resultados similares aunque mayores. Encuentran que las ventas de mercancías generales aumentan hasta 149% a los tres años después de la apertura de la tienda y que el sector más afectado es el la venta de ropa, que reduce su “pull factor” hasta en 27%. Los sectores beneficiados son los de venta de mercancías generales, alimentos, bebidas y comestibles, y los efectos negativos en ropa y productos de limpieza del hogar. Ambos estudios encuentran que, en suma, la llegada de las tiendas de descuento aumentan las ventas en las comunidades en las que se establecen.
+En uno de los primeros estudios econométricos, Hicks y Wilburn (2001) analizan el impacto de la llegada de Wal-Mart en algunos condados de Virginia del Oeste. Para tratar con el problema de endogeneidad, analizan los condados en donde Wal-Mart se instala a través de un modelo Probit y encuentran que el crecimiento regional no influye en la decisión de establecer una nueva tienda. Los autores muestran que la decisión de instalar una nueva tienda no está relacionada con los beneficios que la cadena genera, como el empleo, pero sí con el tamaño y el ingreso per capita, por lo que no afirman que no existe un problema de endogeneidad en su estimación. Para analizar el impacto de las tiendas seleccionan 14 condados con bajo crecimiento, alto desempleo y tasa de crecimiento de la población negativa. Los autores encuentran que la llegada de la cadena tiene un efecto positivo de 15 establecimientos, y en el empleo de alrededor de 320 nuevos empleos.
+Franklin (2001) busca los determinantes del ingreso y la participación de mercado de las tiendas Wal-Mart Supercenter en las ciudades más grandes de Estados Unidos. Los resultados muestran que el ingreso de Wal-Mart está relacionado negativamente con el tamaño de población y el ingreso medio. De igual forma, su participación de mercado es mayor en condados que tienen acentuadas estas características; esto es, más baja población e ingresos medios más bajos.
+7
+
+Sobel y Dean (2008) buscan determinar si la presencia de tiendas Wal-Mart afecta negativamente a los pequeños establecimientos comerciales tradicionales. Utilizando datos del Departamento del Censo de Estados Unidos, hacen una comparación de comportamiento entre el número de tiendas de esta cadena y el número de establecimientos de auto-empleo y que tienen de uno a cuatro empleados. Los autores concluyen de este análisis que ambos tienen tendencias crecientes y que, por lo tanto, no hay una relación negativa entre estos. Posteriormente utiliza distintas regresiones con datos de sección cruzada para determinar si las áreas geográficas con mayor número de tiendas Wal-Mart son los que menos establecimientos tienen. Así, de nuevo los autores concluyen que no existe un efecto negativo de esta cadena de autoservicio sobre los pequeños establecimientos.
+Para analizar el impacto de la aparición de las tiendas, Basker (2005b) utiliza datos sobre los precios de bienes comúnmente consumidos y la fecha de apertura de las tiendas Wal-Mart. El autor reconoce que existe un problema de endogeneidad y lo trata con variables instrumentales; encuentra que la llegada de una nueva tienda reduce los precios en un rango que va de 1.5 a 3% en el corto plazo y de 7 a 13% en el largo plazo. Este efecto se da no sólo en sus propias tiendas, sino también en los competidores. Posteriormente Basker (2005a) analiza el impacto en el empleo y el número de establecimientos. Para tratar el problema de endogeneidad utiliza también variables instrumentales, utilizando el número de tiendas planeadas como instrumento de las tiendas construidas. En su estimación sin variables instrumentales, el autor encuentra que la llegada de una tienda Wal-Mart genera en el corto plazo un aumento en el empleo del comercio minorista de más de 40 empleos, y que este efecto se diluye a lo largo del tiempo dejando al final un efecto positivo. Utilizando variables instrumentales el efecto es de aproximadamente 100 nuevos empleos en el año de apertura, de los cuales, entre 40 y 60 se pierden en el primer año. Para el caso de los establecimientos, halla que la llegada de una nueva tienda produce una reducción de alrededor de cinco establecimientos competidores de todos los tamaños.
+Con la base de aperturas de Basker (2005b) y datos trimestrales de empleo y salarios, Dube, Lester y Eidlin (2007) analizan el impacto de Wal-Mart en los ingresos de los trabajadores de la industria del comercio minorista. Para tratar el problema de endogeneidad, los autores proponen un nuevo instrumento. Después de analizar el patrón de expansión de las cadenas y de leer la
+8
+
+biografía de Sam Walton, ellos observan que las aperturas se realizan alejándose del condado de Bentonville, Arkansas, en donde se encuentran las oficinas centrales de la empresa. De esta forma, la interacción entre los años y la distancia esférica hacía dicho condado es utilizada para instrumentar las aperturas de las tiendas. A nivel condado, los autores encuentran que la llegada de Wal-Mart reduce en 0.5% los salarios promedio del sector. A nivel estatal, encuentran que diez nuevas tiendas Wal-Mart reducen los salarios promedio entre 0.5 y 2%.
+Goetz y Swaminathan (2006) van más allá de los estudios previos y sugieren que el impacto de Wal-Mart puede ser de varias formas: cierre de tiendas más pequeñas, cambio a empleos con salarios más bajos, despidos relacionados con el cierre de pequeños establecimientos y la destrucción del espíritu empresarial y el liderazgo local, además de la oferta de productos a precios más bajos que sus competidores. De esta forma, en lugar de evaluar cada uno de estos efectos por separado, los autores deciden evaluar el impacto de Wal-Mart en la incidencia de la pobreza. Para realizar este ejercicio de identificación utilizan un modelo en dos etapas y correcciones de econometría espacial para tratar cualquier problema de dependencia de este tipo. Así, la conclusión de esta investigación es que los condados con mayor número de tiendas tienen tasas de crecimiento de la pobreza más elevadas o tasas de reducción más bajas.
+Para el caso de otros países distintos a Estados Unidos, Guariglia (2002) busca cuantificar el impacto de las tiendas Sainsbury y Telesco en el empleo local en localidades de Gran Bretaña. Para ello, la autora divide las áreas de estudio en centros de trabajo y áreas de transito al trabajo. Es buscado y hallado un problema de endogeneidad a través de una regresión con las aperturas adelantadas. Así, la autora utiliza GMM para tratar este problema. La conclusión a la que llega es que la presencia de estas tiendas tiene efectos positivos en el empleo de 263 y 324 empleos, respectivamente para ambas cadenas.
+Para el caso de México, existen pocos antecedentes de estudios similares. El primero de ellos es el de Pierre-Audain (2005). En esta tesis de licenciatura se analiza el impacto de las tiendas “Wal-Mart Supercenter” en el empleo, la contratación, el salario o el número de despidos y renuncias de los establecimientos del sector industrial 6401, en donde se clasifican los “Supermercados, tiendas de autoservicio y departamentos especializados”. El autor de este estudio utiliza dos bases de datos: las fechas de apertura de las 73 tiendas que hasta ese momento se habían abierto y una base de registros del IMSS. Es encontrada evidencia poco significativa
+9
+
+sobre el impacto de Wal-Mart; sólo encuentra evidencia de un incremento en el número de despidos/renuncias dos años después de que una tienda Wal-Mart se instala.
+El estudio de Ibarra Contreras (2011) hace un análisis de las barreras de entrada al mercado de los supermercados. Encuentra que a mayor número de tiendas, existen menores barreras de entrada para nuevos establecimientos. El estudio de Balcázar Conde (2010), por otra parte, busca determinar la proporción del mercado que ocupan los supermercados en distintos grupos de productos. Con esta finalidad el autor realiza una encuesta en un municipio del área metropolitana de la Ciudad de México. Los resultados muestran que los supermercados abastecen una menor proporción del mercado en productos de vida corta de anaquel, tales como frutas, verduras y pescados y mariscos sin preparar, y mayor participación en el mercado de alimentos no frescos y abarrotes.
+Durand (2007) analiza el impacto de la Inversión Extranjera Directa (IED) en el sector de comercio minorista mexicano. Su texto afirma que la IED no ha generado en este sector las externalidades que usualmente se esperan. Estas externalidades incluyen mejores salarios para los trabajadores, precios más bajos y mejor calidad. El autor argumenta que, dado que emplea a población con bajo nivel de calificación, su llegada no implica una mejora en los salarios. Según el texto, la IED tampoco ha tenido un efecto positivo en los proveedores nacionales porque las cadenas trasnacionales están mejor conectadas con los proveedores internacionales y por las restricciones del gobierno para imponer cuotas a las importaciones.
+III. Datos Para la realización de esta investigación se utilizaron datos sobre las aperturas de las tiendas de las cuatro principales cadenas de autoservicio en el país, además de datos sobre el empleo formal y el número de establecimientos dedicados a diversas ramas de actividad del comercio. Para conocer el impacto en el número de establecimientos existentes, se utilizaron el número de establecimientos registrados ante el Servicio de Administración Tributaria (SAT) en cada uno de los municipios del país en cada año de 1998 a 2012. Para conocer el impacto en el empleo se utilizó el número de trabajadores registrados ante el Instituto Mexicano del Seguro Social (IMSS) cada trimestre de 1997 a 2012 en cada municipio del país. Estos datos se obtuvieron a través de solicitudes de información presentadas ante el Instituto Federal de Acceso a la
+10
+
+Información y Protección de Datos (IFAI), ya que no se encuentran disponibles con tal nivel de desagregación al público en general.
+Se utilizaron además datos sobre la ubicación geográfica a nivel municipal y la fecha de apertura de cada una de las tiendas de las cuatro principales cadenas de autoservicio con presencia nacional. A partir de 2012 una de las cadenas no posee tiendas con formato “Club de precios” debido a que vendió su participación en éstas. Así, aunque en la actualidad ya no operan de forma conjunta, en el análisis siguiente se consideran como parte de la misma cadena. La información obtenida posee un nivel de detalle geográfico, temporal y de formato mayor al que se puede encontrar, sólo en algunos casos, disponible al público en los sitios web de las cadenas. Los datos sobre la ubicación y apertura de las tiendas de autoservicio fueron obtenidos a través del departamento de relación con los inversionistas de las cadenas y a través de la Asociación Nacional de Tiendas de Autoservicio y Departamentales (ANTAD).
+La información recibida sobre el número de establecimientos en cada municipio y en cada año fue desglosados por actividad económica y régimen fiscal. El primer tipo de clasificación está realizada según el catálogo de actividades económicas en el anexo 6 de la Cuarta Resolución de Modificaciones a la Resolución Miscelánea Fiscal para 2010.4 De esta forma, aunque los establecimientos son clasificados con un mayor nivel de detalle, en el análisis realizado fueron agrupados según su actividad económica en:
+Comercio al por mayor de alimentos y abarrotes. Comercio al por mayor de bebidas y tabaco. Comercio al por mayor de productos textiles y calzado. Comercio al por menor de alimentos. Comercio al por menor de bebidas y tabaco. Comercio al por menor de productos textiles, excepto ropa. Comercio al por menor de ropa y accesorios de vestir. Comercio al por menor de calzado. Comercio al por menor en tiendas de autoservicio. Comercio al por menor en tiendas departamentales.
+4 Publicada en el Diario Oficial de la Federación (DOF) el 24 de mayo de 2011. Disponible en ftp://ftp2.sat.gob.mx/asistencia_ftp/publicaciones/legislacion10/a6dela4aRMF_26052011.doc
+11
+
+El adjunto 1 muestra cuáles fueron los regímenes incluidos en el análisis. Algunos regímenes fueron excluidos del análisis debido a su bajo número de establecimientos y dificultad para determinar sus características. En casi la totalidad de estos regímenes excluidos estaban registrados menos de 100 establecimientos en todo el país.
+
+IV. Dinámica de crecimiento y ubicación de las cadenas de autoservicio De acuerdo a los datos de apertura de las principales cadenas, hasta antes de 1980 sólo en 37 delegaciones y municipios de la república mexicana habían sido abiertas tiendas de alguna de las cuatro cadenas aquí estudiadas, exceptuando tiendas de conveniencia. La primera de estas tiendas fue abierta en 1930. La segunda tienda fue abierta 28 años después, en 1958, y la tercera en 1959. Estas tres primeras tiendas fueron abiertas en la ciudad de México. Como muestra la tabla 1, con el paso del tiempo las cadenas se expandieron hacia municipios cada vez más pequeños. De esta forma, en la década que va del año 2000 hasta finales de 2009, estas cadenas abrieron al menos una tienda en 263 municipios donde antes no tenían presencia.
+
+Tabla 1. Población media de las delegaciones y municipios con nuevas tiendas
+
+Década de ingreso de las tiendas
+
+Censo de
+
+Antes de 1980
+
+80’s
+
+90’s
+
+Población
+
+1995
+
+638,431
+
+396,196
+
+207,950
+
+2000
+
+668,755
+
+441,031
+
+230,588
+
+2005
+
+698,447
+
+479,818
+
+259,045
+
+2010
+
+724,430
+
+511,915
+
+284,558
+
+Fuente: Cálculos propios con datos de ANTAD, INEGI y Wal-Mart.
+
+2000’s
+68,435 73,524 79,839 91,174
+
+El análisis del impacto de la apertura de nuevas tiendas es relevante ya que, como lo muestra la tabla 2, las cadenas de autoservicio se han extendido recientemente hacia municipios y delegaciones con menor nivel de desarrollo humano. Más adelante se mostrará que existe una tendencia de las tiendas de autoservicio en aumentar su participación en estos pequeños municipios.
+
+12
+
+Las cadenas se han expandido hacía municipios con mayor porcentaje de pobreza extrema y carencia por acceso a la alimentación, como lo muestra la tabla 3. Esto contribuye a justificar el estudio del impacto de las cadenas de autoservicio. Al moverse hacía municipios con estas características, es importante conocer cuál ha sido su impacto y determinar si su llegada tendrá un efecto positivo o negativo en la economía local.
+
+Tabla 2. Desarrollo humano de las delegaciones y municipios con nuevas tiendas
+
+Década de ingreso de las tiendas
+
+Antes de
+
+1980
+
+80's
+
+90's
+
+00's
+
+GRADO DE DESARROLLO HUMANO EN EL AÑO 2000
+
+Bajo
+
+1
+
+2
+
+Medio
+
+bajo
+
+9
+
+Medio
+
+alto
+
+2
+
+6
+
+19
+
+212
+
+Alto
+
+35
+
+25
+
+27
+
+40
+
+ÍNDICE DE DESARROLLO HUMANO EN EL AÑO 2000
+
+Media
+
+0.85
+
+0.82
+
+0.81
+
+0.76
+
+LUGAR NACIONAL DE DESARROLLO HUMANO EN EL AÑO 2000
+
+Máximo
+
+444
+
+881
+
+693
+
+2195
+
+Mínimo
+
+1
+
+2
+
+14
+
+11
+
+Fuente: Cálculos propios con datos de ANTAD, CONAPO y Wal-Mart.
+
+Las cadenas de autoservicio segmentan sus tiendas de acuerdo a la población a la que están dirigidas. Los autoservicios se caracterizan de acuerdo con Cacho Carranza (2004) en tiendas de conveniencia, bodegas, supermercados, hipermercados, mega-mercados y clubes de precio. Debido a la ausencia de datos y reducido tamaño, en el presente documento no se estudia el impacto de las tiendas de conveniencia.
+
+Para estudiar el impacto de las cadenas de autoservicio es necesario aislar su efecto de otras variables y tendencias que existan en el comercio minorista y mayorista. Estos efectos incluyen la apertura reciente de otras tiendas en la misma área geográfica. La apertura continua de dos tiendas de autoservicio en una misma área y en un periodo corto de tiempo genera un problema de identificación: no sabemos si los efectos de una segunda o tercera tienda recién abierta son iguales que si la tienda es única; es difícil separar qué magnitud del efecto observado se debe a qué apertura y qué magnitud se debe a un efecto conjunto, e ignoramos si la apertura de más de
+
+13
+
+una tienda responde a características del municipio que propicien un comportamiento distinto en el resto de los establecimientos.
+
+Tabla 3. Porcentajes de pobreza extrema y carencia por acceso a la alimentación de los municipios con nuevas tiendas
+
+Todas las
+
+Década de ingreso de las tiendas
+
+delegaciones
+
+y
+
+Antes de
+
+municipios* 1980
+
+80's
+
+90's
+
+00's
+
+PORCENTAJE DE POBREZA EXTREMA EN EL AÑO 2010
+
+Media
+
+24.43% 3.13% 4.67% 6.61% 12.58%
+
+Mínimo
+
+0.36% 0.36% 0.44% 1.13% 0.85%
+
+Máximo
+
+82.60% 6.86% 25.00% 20.38% 59.66%
+
+CARENCIA POR ACCESO A LA ALIMENTACIÓN EN EL AÑO 2010
+
+Media
+
+28.41% 18.83% 19.91% 23.76% 25.88%
+
+Mínimo
+
+4.16% 6.47% 8.60% 9.18% 11.12%
+
+Máximo
+
+78.37% 33.67% 40.86% 41.64% 52.49%
+
+* En el análisis fueron excluidos municipios para los que no se disponía información y municipios de
+
+reciente creación. En ninguno de estos municipios se reportó la apertura de una tienda de las cadenas aquí
+
+estudiadas y se ubican principalmente en Chiapas y Oaxaca.
+
+.
+
+Fuente: Cálculos propios con datos de ANTAD, CONEVAL y Wal-Mart.
+
+En la figura 1 se muestra si los municipios en donde han abierto nuevas tiendas en el periodo de 1994 a 2012 tienen o no aperturas de otros formatos. Esto permite conocer cuáles son los formatos de autoservicio en los que puede ser adecuadamente identificado su impacto, evitando el problema de múltiples tratamientos. Las bodegas son el formato de tienda que tiene mayor número de municipios con aperturas exclusivas en el periodo de estudio. Los supermercados e hipermercados tienen pocas aperturas en municipios donde su presencia sea única. Los clubes de precio, por su parte, sólo se han instalado en municipios donde tiendas de otros formatos se han instalado en el mismo periodo. A continuación se caracterizarán cada uno formatos y los municipios en donde se localizan.
+
+IV.1. Bodegas Este formato de tienda está orientado a cubrir un segmento de clientes de nivel socioeconómico medio y bajo (Wal-Mart de México, 2006; Wal-Mart de México, 2012). Sus tiendas son las más numerosas y por lo general su tamaño es de alrededor de 2,500 m2. Por el tipo de clientes al que
+
+14
+
+están dirigidas, ofrecen precios bajos, pero poca variedad y surtido menor al de las otras tiendas. No ofrecen servicios que impliquen atención directa. (Cacho Carranza, 2004)
+
+Figura 1. Municipios con aperturas de nuevas tiendas en el periodo 1994-2012
+
+Municipios
+
+500 450 400 350 300 250 200 150 100 50
+0
+Sin exlusividad Formato exclusivo Una tienda
+
+Bodegas 152 80 234
+
+Supermercados 101 1 22
+
+Fuente: Cálculos propios con datos de ANTAD, Costco y Wal-Mart.
+
+Hipermercados 126 6 4
+
+Clubes de precio 48 0 0
+
+De acuerdo a la tabla 4, las tiendas con este formato se ubican en un mayor número de municipios y con poblaciones menores al resto de los formatos. Estas tiendas, junto con las de formato “supermercado”, se ubican en municipios con mayor grado de pobreza y menor nivel de desarrollo humano. Según las notas de prensa publicadas en los sitios web de las cadenas, una tienda con este formato genera entre 50 y 165 empleos directos.5
+
+5 Ver http://www.walmartmexico.com.mx/sala_de_prensa/operadoras/bodega_aurrera/2008/diciembre/bodega-enchihuahua.html, http://www.walmartmexico.com.mx/operadoras/bodega_aurrera/2010/octubre/ba12102010.html http://www.walmartmexico.com.mx/sala_de_prensa/operadoras/bodega_aurrera/2008/diciembre/bodega-inauguramibodega-jamay.html http://publicidad.soriana.com/publicidad/resources/InfoInst/Sala_Prensa/2011/2011_09_14.pdf http://publicidad.soriana.com/publicidad/resources/infoFin/2011_07_28_AperturasNL.pdf http://publicidad.soriana.com/publicidad/resources/infoFin/2011_07_21_AperturaSorianaSombrerete.pdf
+15
+
+Tabla 4. Características de los municipios según el formato de tiendas abiertas
+
+Presencia
+
+Bodegas Presencia exclusiva
+
+Sólo una tienda
+
+Supermercados
+
+Presencia Sólo una
+
+Presencia exclusiva
+
+tienda
+
+Hipermercados y megamercados
+
+Presencia
+
+Sólo una
+
+Presencia exclusiva
+
+tienda
+
+Clubes de precio Sólo una TODOS*
+Presencia tienda
+
+Municipios 318
+
+199
+
+168
+
+120
+
+30
+
+29
+
+128
+
+11
+
+5
+
+86
+
+1
+
+2419
+
+POBLACIÓN EN EL AÑO 2010
+
+media
+
+218,575
+
+85,217
+
+67,573 388,870
+
+98,331
+
+99,163 450,451
+
+157,806
+
+160,879 539,015
+
+59,761 46,417
+
+min
+
+10,299
+
+max
+
+1,815,786
+
+10,299 614,453
+
+10,299
+
+6,655
+
+357,645 1,815,786
+
+6,655 366,602
+
+6,655 44,963 366,602 1,815,786
+
+90,668 285,912
+
+93,718 59,761 285,912 1,815,786 -
+
+93 1,815,786
+
+GRADO DE DESARROLLO HUMANO EN EL AÑO 2000
+
+Bajo
+
+3
+
+2
+
+2
+
+1
+
+Medio
+
+bajo
+
+7
+
+6
+
+6
+
+3
+
+2
+
+Medio
+
+alto
+
+205
+
+159
+
+138
+
+52
+
+26
+
+1
+
+1
+
+26
+
+39
+
+7
+
+1
+
+5
+
+19
+
+31
+
+649
+
+1
+
+1,501
+
+Alto
+
+103
+
+32
+
+22
+
+64
+
+2
+
+2
+
+88
+
+4
+
+66
+
+221
+
+ÍNDICE DE DESARROLLO HUMANO EN EL AÑO 2000
+
+Media
+
+0.779
+
+0.760
+
+0.757 0.800
+
+0.748
+
+0.748 0.819
+
+0.791
+
+0.770 0.825
+
+0.789 0.697
+
+LUGAR NACIONAL DE DESARROLLO HUMANO EN EL AÑO 2000
+
+Min
+
+3
+
+11
+
+21
+
+1
+
+10
+
+10
+
+1
+
+60
+
+218
+
+1
+
+225
+
+1
+
+Max
+
+1909
+
+1909
+
+1909 2195
+
+2195
+
+2195
+
+881
+
+679
+
+679
+
+734
+
+225 2442
+
+PORCENTAJE DE POBREZA EXTREMA
+
+Media
+
+10.03%
+
+11.99%
+
+12.71% 9.69%
+
+18.60% 18.55% 5.20%
+
+5.92%
+
+8.63% 4.75%
+
+5.62% 24.43%
+
+Min
+
+0.46%
+
+0.86%
+
+0.86% 0.36%
+
+1.64%
+
+1.64% 0.36%
+
+2.05%
+
+5.06% 0.36%
+
+- 0.36%
+
+Max
+
+59.66%
+
+59.66% 59.66% 48.15%
+
+48.15% 48.15% 25.00%
+
+12.98% 12.98% 17.50%
+
+- 82.60%
+
+* En el análisis fueron excluidos municipios para los que no se disponía información y municipios de reciente creación. En ninguno de estos municipios
+
+excluidos se reportó la apertura de una tienda de las cadenas aquí estudiadas y se ubican principalmente en Chiapas y Oaxaca.
+
+Fuente: Cálculos propios con datos de ANTAD, CONAPO, CONEVAL, Cotsco, INEGI y Wal-Mart.
+
+16
+
+En el mapa 1 se puede observar que no existe un patrón geográfico claro en la distribución de este formato de tienda. Como se verá más adelante en los mapas de los demás formatos, las bodegas se observan más comúnmente en municipios del sureste mexicano que los hipermercados, mega-mercados o clubes de precio.
+Mapa 1. Municipios con mayor número de tiendas con formato "Bodega"
+Fuente: Elaboración propia con datos de ANTAD y Wal-Mart
+Al ser el formato con mayor número de aperturas exclusivas en el periodo de estudio, se puede distinguir claramente cuál ha sido el patrón de su expansión. En la figura 2 se observa el tamaño de los municipios menores de 400,000 habitantes en donde se instaló una tienda con formato de bodega de 2003 a 2012 y no se instaló ningún otro formato de tienda en el periodo de 1994 a 2012. En el periodo de 1994 a 2003 no se registraron más de una tienda abierta al año en municipios con estas características, por lo que no se muestra en la figura.
+17
+
+Figura 2. Población de los municipios menores a 400,000 habitantes en donde se instaló una tienda con formato Bodega en el periodo 2003-2012
+
+Población en el año 2000
+
+200000 180000 160000 140000 120000 100000 80000 60000 40000 20000
+0
+
+5 2003
+
+10 2004
+
+30 2005
+
+35
+
+32
+
+47
+
+35
+
+2006 2007 2008 2009 Número de aperturas / Año
+
+55 2010
+
+77 2011
+
+54 2012
+
+Media
+
+Max
+
+Min
+
+M+sd
+
+M-sd
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, Costco, INEGI y Wal-Mart
+
+IV.2. Supermercados El tamaño de estas tiendas es de entre 500 y 4,500 m2. Los productos que ofrecen son principalmente abarrotes y perecederos (Cacho Carranza, 2004). Una de las cadenas orienta sus tiendas con formato de supermercados a consumidores de nivel socioeconómico alto. De acuerdo a la tabla 4, este formato de tienda se instala en municipios de menor tamaño que en donde se instalan hiper y mega-mercados. En promedio, estos también se instalan en municipios de mayor tamaño que las tiendas con formato “bodega”. En el mapa 2 se observa que este formato de tienda es poco común en la mayor parte del norte de México.
+
+Según la información ofrecida por las notas de prensa en los sitios web de las cadenas, la apertura de una tienda con formato “Supermercado” genera entre 70 y 120 empleos directos.6 Entre los años 1994 y 2012, sólo en los años 2007 y 2008 se abrieron más de 2
+
+6 Ver http://www.walmartmexico.com.mx/operadoras/superama/2011/noviembre/superama-bugambilias.html http://www.walmartmexico.com.mx/operadoras/superama/2011/octubre/superama-nl.html http://publicidad.soriana.com/publicidad/resources/infoFin/2010_03_10_Aperura_Tutuli.pdf http://publicidad.soriana.com/publicidad/resources/infoFin/2010_09_08_AperturasSantaFeyAcueducto.pdf
+18
+
+tiendas con formato “Supermercados” en municipios menores de 400,000 habitantes donde no se abriera otro formato de tienda en el periodo de estudio.
+Mapa 2. Municipios con mayor número de tiendas con formato "Supermercado"
+Fuente: Elaboración propia con datos de ANTAD y Wal-Mart
+IV.3. Hipermercados y Megamercados Son tiendas de gran tamaño que buscan cubrir una mayor cantidad de niveles socioeconómicos (Wal-Mart de México, 2006; Wal-Mart de México, 2012). Su tamaño es mayor a los 4,500 m 2 y son el formato de tienda con mayor variedad de mercancías. Dependiendo de la política interna de cada cadena, pueden ofrecer servicios como farmacia, revelado fotográfico, óptica, reparación de calzado, peluquería o estética, fuente de sodas, videoclubes, restaurante, taller mecánico, agencias de viajes, de seguros y servicios bancarios (Cacho Carranza, 2004).
+http://publicidad.soriana.com/publicidad/resources/InfoInst/Sala_Prensa/2012/2012_06_18.pdf http://publicidad.soriana.com/publicidad/resources/infoFin/2010_07_08-AperturasGuanajuato.pdf
+19
+
+Debido a su elevado tamaño, este tipo de establecimientos se ubican en municipios altamente poblados, como lo muestra la tabla 4. Este formato, por lo tanto, es más común en municipios del norte, como lo muestra el mapa 3. De acuerdo a las notas de prensa ofrecidas por las propias cadenas, cada una de estas tiendas genera entre 160 y 220 empleos directos.7
+Mapa 3. Municipios con mayor número de tiendas con formatos "Hipermercado" y "Mega-mercado"
+Fuente: Elaboración propia con datos de ANTAD y Wal-Mart
+IV.4. Clubes de Precio Estas tiendas se encuentran orientadas hacía consumidores de nivel socioeconómico alto y empresas (Wal-Mart de México, 2006). El tamaño de estas tiendas es mayor a los 4,500 m2. Los productos ahí ofrecidos por lo general se venden en presentaciones grandes o múltiples dado que se enfocan a la venta de grandes volúmenes, mayoreo y medio mayoreo
+7 Ver http://publicidad.soriana.com/publicidad/resources/InfoInst/Sala_Prensa/2012/2012_11_07.pdf http://www.walmartmexico.com.mx/sala_de_prensa/operadoras/walmart/2011/octubre/walmart-200.html http://publicidad.soriana.com/publicidad/resources/InfoInst/Sala_Prensa/2011/2011_10_20.pdf
+20
+
+(Cacho Carranza, 2004). Según la información ofrecida en las notas de prensa de los sitios web de las cadenas, cada club genera entre 160 y 230 empleos directos.8
+Mapa 4. Municipios con mayor número de tiendas con formato "Club de precios"
+Fuente: Elaboración propia con datos de ANTAD, Cotsco y Wal-Mart
+V. Dinámica del resto de establecimientos comerciales De acuerdo a los datos del Servicio de Administración Tributaria (SAT), existe una tendencia creciente en el número de establecimientos per cápita en todo el país. La figura 3 muestra cuál cómo se ha comportado el número de establecimientos por cada 10,000 habitantes, según el tipo de producto ofrecido, en el periodo 2000-2010. El número de establecimientos minoristas de venta de alimentos es mostrado en otra gráfica debido a que
+8 Ver http://www.walmartmexico.com.mx/sala_de_prensa/operadoras/sams_club/2008/diciembre/abre-2samsyucatan.html http://www.walmartmexico.com.mx/sala_de_prensa/operadoras/sams_club/2008/noviembre/llega-samscomitan-chiapas.html http://www.walmartmexico.com.mx/sala_de_prensa/operadoras/sams_club/2008/octubre/inaugura-samsguanajuato.html
+21
+
+su número es mucho mayor al resto. En esta gráfica se puede observar que existe una tendencia creciente en el número de establecimientos de todos los tipos. Dado que los datos fueron obtenidos de la base de contribuyentes, esto puede deberse a la apertura de más tiendas o al registro de establecimientos ya existentes.
+
+Figura 3. Número de establecimientos por cada 10,000 habitantes según tipo de producto, en todos los municipios del país en el periodo 2000-2010
+16
+
+14
+
+12
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009
+
+Mayoreo alimentos Menudeo bebidas y tabaco Menudeo ropa Menudeo textiles excepto ropa Tiendas departamentales
+
+Mayoreo bebidas y tabaco Mayoreo textiles y calzado Menudeo calzado Tiendas de autoservicio
+
+Fuente: Elaboración propia con datos de ANTAD, Cotsco y Wal-Mart
+
+2010
+
+En la figura 4 se puede observar, en promedio, cómo ha sido el comportamiento del número de establecimientos dedicados a la venta de alimentos por cada 10,000 habitantes. Los establecimientos de esta rama incluyen misceláneas, tiendas de abarrotes, carnicerías, pescaderías, verdulerías y establecimientos dedicados a la venta de huevo, semillas, especias, chiles secos, lácteos, embutidos, materias primas para repostería y otros de naturaleza similar. Así, su número promedio por cada 10,000 habitantes es mucho mayor al
+
+22
+
+del resto de las ramas de comercio. Hay que recalcar, sin embargo, que a pesar de su elevado número, los establecimientos aquí mostrados son únicamente a aquellos que se encuentran registrados en el SAT.
+
+Figura 4. Número de establecimientos dedicados a la venta de alimentos por cada 10,000 habitantes en todos los municipios del país, en el periodo 2000-2010
+
+160
+
+140
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0 2000 2001 2002 2003 2004 2005 2006 2007
+Fuente: Elaboración propia con datos de ANTAD, Cotsco y Wal-Mart
+
+2008
+
+2009
+
+2010
+
+Las tendencias aquí mostradas cambian de acuerdo al tamaño de los municipios estudiados. De esta forma, en el
+
+adjunto 3 se observa la evolución de estos indicadores según el tamaño del municipio. En la tabla se puede observar que el número de establecimientos por cada 10,000 habitantes se incrementa más en municipios con mayor población. En la figura 5 se muestra el cambio en el número de establecimientos por población según el tamaño de los municipios. En el eje X se muestran los municipios ordenados según su población y en el eje Y el incremento como proporción de los establecimientos per capita existentes en el año 2000, según la base obtenida del SAT. Así, parece existir evidencia de que en municipios con mayor población, el número de establecimientos de cada tipo de producto crecen a tasas mayores.
+
+De ser cierta la afirmación anterior, esto generaría un problema en la identificación del impacto de los autoservicios. Si las cadenas deciden instalarse en municipios con mayor
+
+23
+
+población, su impacto estaría sub-identificado debido a que son también los municipios con mayores tasas de crecimiento. Así, al hacer la comparación entre las tiendas con presencia de autoservicio y aquellas que no, no sólo capturamos el efecto de la presencia de las tiendas, sino también la diferencia de tasas de crecimiento.
+Figura 5. Tasa de crecimiento del número de establecimientos per cápita en todos los municipios ordenados por tamaño de población
+
+Bebidas y tabaco 0 20 40 60 80
+
+Alimentos 0 20 40 60 80
+
+0
+
+500 1000 1500 2000 2500
+
+Municipios
+
+ordenados segun su población
+
+0
+
+500 1000 1500 2000 2500
+
+Municipios
+
+ordenados segun su población
+
+Tiendas de Autoservicio 0 20 40 60 80
+
+Calzado 0 20 40 60 80
+
+0
+
+500 1000 1500 2000 2500
+
+Municipios
+
+ordenados segun su población
+
+0
+
+500 1000 1500 2000 2500
+
+Municipios
+
+ordenados segun su población
+
+Fuente: Elaboración propia con datos de CONAPO, INEGI y SAT.
+Para comprobar si el tamaño genera mayores tasas de crecimiento, fueron realizadas regresiones lineales entre la tasa de crecimiento registrada en el periodo 2000-2010 y el logaritmo de la población. Los resultados de estas regresiones se muestran en la tabla 5. En esta tabla es posible observar que sí existe una correlación positiva. De esta forma, en la estimación es necesario incluir un término de interacción entre la población y el tiempo para reducir este problema.
+
+24
+
+La siguiente pregunta por resolver es ¿qué proporción de las tiendas de autoservicio representan las cadenas aquí estudiadas? Esta pregunta es relevante ya que permite conocer si la competencia en el sector se ha incrementado o reducido a través del tiempo. La figura 6 muestra la presencia promedio de estas cadenas en la primera década del siglo, según los formatos de tienda. El número de tiendas estudiadas es el número de tiendas pertenecientes a las cuatro principales cadenas de autoservicio y el número total de tiendas de autoservicio consideradas fue el de las registradas en la base de contribuyentes del SAT. Es importante señalar, sin embargo que esta gráfica da más peso a municipios pequeños debido a que estos son más numerosos. Así, el análisis debe también ser realizado para distintos grupos de municipios según su tamaño.
+
+Tabla 5. Coeficientes de las regresiones de las tasas de crecimiento de los establecimientos 2000-2010 versus el logaritmo de la población
+
+Menudeo
+
+Alimentos
+
+Bebidas y
+
+Textiles
+
+Tabaco excepto ropa
+
+Ropa
+
+Calzado
+
+Log (población)
+
+.1299411*
+
+2.849368*** .2090145*** .189027*** .3959981***
+
+r-cuadrada
+
+0.004
+
+0.158
+
+0.030
+
+0.018
+
+0.040
+
+Alimentos
+
+Mayoreo Bebidas y
+tabaco
+
+Tiendas de
+
+Tiendas
+
+Textiles y autoservicio departamentales
+
+calzado
+
+Log (población)
+
+.604193*** 1.362077*** 3.007867***
+
+20.95174
+
+33.39826
+
+r-cuadrada 0.0264429 0.0561045 0.0724681 0.0048992 0.0197871
+
+Fuente: Elaboración propia con datos de CONAPO, INEGI y ANTAD
+
+La figura 7 muestra que el crecimiento de las cadenas de autoservicio aquí estudiadas ha sido mucho menor que la del resto del sector de las tiendas de autoservicio registradas en el SAT en municipios con más de 400,000 habitantes. La participación de estas cuatro cadenas se ha visto opacado por el crecimiento de otros establecimientos desde el año 2000, cuando éstas representaban casi el 50% de las tiendas del sector.
+
+25
+
+Figura 6. Participación media de las cuatro principales cadenas en el total de establecimientos de autoservicio registrados ante el SAT según formato
+
+4.5%
+
+4.0%
+
+3.5%
+
+3.0%
+
+2.5%
+
+2.0%
+
+1.5%
+
+1.0%
+
+0.5%
+
+0.0% 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010
+
+Bodegas
+
+Supermercados
+
+Hipermercados
+
+Clubes de precio
+
+Fuente: Elaboración propia con datos de ANTAD, Cotsco y Wal-Mart
+
+Figura 7. Participación media de las cuatro principales cadenas en el total de establecimientos de autoservicio registrados ante el SAT en municipios con más de 400,000 habitantes según formato
+
+25.00%
+
+20.00%
+
+15.00%
+
+10.00%
+
+5.00%
+
+0.00%
+
+2000 2001 Bodegas
+
+2002 2003 2004 Supermercados
+
+2005 2006 2007 Hipermercados
+
+2008 2009 2010 Clubes de precio
+
+Fuente: Elaboración propia con datos de ANTAD, Cotsco, SAT y Wal-Mart
+
+26
+
+Figura 8. Participación media de las cuatro principales cadenas en el total de establecimientos de autoservicio registrados ante el SAT en municipios con más de 30,000 y menos de 130,000 habitantes según formato
+6.0%
+
+5.0%
+
+4.0%
+
+3.0%
+
+2.0%
+
+1.0%
+
+0.0% 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010
+
+Bodegas
+
+Supermercados
+
+Hipermercados
+
+Clubes de precio
+
+Fuente: Elaboración propia con datos de ANTAD, Cotsco y Wal-Mart
+
+En la figura 8 se puede observar que la presencia de las cadenas de autoservicio se ha incrementado en municipios con entre 30,000 y 130,000 habitantes, principalmente a través de tiendas con formato “Bodega”. De seguir la tendencia observada hasta el momento, las cadenas de autoservicio ampliaran todavía más su presencia en estos municipios y hacia municipios con tamaño más reducido. Igualmente, si la tendencia continúa, las bodegas serán el formato utilizado por las cadenas para incursionar en nuevos municipios y seguirán siendo el formato con mayor crecimiento.
+
+VI. Metodología
+
+VI.1.
+
+Especificación básica del modelo
+
+En el presente estudio se busca determinar cuál es el impacto de la apertura de un nuevo
+
+autoservicio en dos variables: el número de establecimientos y el empleo. Así, la siguiente
+
+metodología evalúa este impacto a través de variables dummy que varían según el periodo
+
+previo o posterior a la apertura en que se encuentra el municipio. Los periodos previos se
+
+evalúan para conocer cuál es el comportamiento que se observaba en las variables de
+
+27
+
+interés antes de la apertura de las bodegas. Los periodos posteriores se evalúan para conocer como fue el comportamiento de las mismas variables una vez que un establecimiento se instaló en el municipio. En la especificación siguiente el conjunto de variables de interés se muestra como un polinomio de rezagos y adelantos.
+
+Para el caso de los establecimientos, la especificación básica del modelo es
+
+‫ݏ݋ݐ݈ܾ݊݁݅݉݅ܿ݁ܽݐݏܧ‬௝௧ ܲ‫݈ܾ݅ܿܽ݋‬ó݊௝௧
+
+௃
+
+ଶ଴ଵଶ
+
+= ߙ௝ + ߰௘ሺ‫ܮ‬ሻ‫ݏܽݎݑݐݎ݁݌ܣ‬௝௧ + ෍ ߠ௝ ݉‫݋݅݌݅ܿ݅݊ݑ‬௝ + ෍ ߛ௧ܽñ‫݋‬௧
+
+௝ୀଵ
+
+௧ୀଶ଴଴଴
+
+௃
+
++ ෍ ઴࢐ ∗ ડ࢐࢚ + ߝ௝௧
+௝ୀଵ
+
+Mientras que para el empleo, la especificación del modelo es
+
+௃
+
+ଶ଴ଵଶ_ସ
+
+ܻ௝௧ ܲ‫݈ܾ݅ܿܽ݋‬ó݊௝௧
+
+=
+
+ߙ
+
++
+
+߰௠ሺ‫ܮ‬ሻ‫ݏܽݎݑݐݎ݁݌ܣ‬௝௧
+
++
+
+෍
+௝ୀଵ
+
+ߠ௝
+
+݉‫݋݅݌݅ܿ݅݊ݑ‬௝
+
++
+
+෍
+௧ୀଶ଴଴଴_ସ
+
+ߛ௧ ‫݁ݎݐݏ݁݉݅ݎݐ‬௧
+
+௃
+
++ ෍ ઴࢐ ∗ ડ࢐࢚ + ߝ௧
+௝ୀଵ
+
+donde:
+
+ܻ௝௧: Es la el número de trabajadores afiliados al IMSS en el municipio j, en el periodo t. ܲ‫݈ܾ݅ܿܽ݋‬ó݊௝௧: Población del municipio ݆ en el periodo ‫ݐ‬ ݉‫݋݅݌݅ܿ݅݊ݑ‬௝: Variables dummy para el municipio ݆. ‫ݏܽݎݑݐݎ݁݌ܣ‬௝,௧: Dummy que muestra si en el periodo ‫ ݐ‬existió la apertura de una tienda en el municipio ݆
+
+ܽ݊݅‫݋‬: Dummy para cada año en el periodo de estudio
+
+‫݁ݎݐݏ݁݉݅ݎݐ‬: Dummy para cada trimestre en el periodo de estudio
+
+28
+
+઴࢐: Vector de parámetros a estimar ડ࢐࢚: Vector de controles para cada municipio ߰ሺ‫ܮ‬ሻ es un polinomio de retrasos y adelantos tales que en el caso del análisis del impacto en establecimientos:
+
+߰௘ሺ‫ܮ‬ሻ = ߰ଵ ෍ ‫ܨ‬௜ + ߰ଶ‫ ଻ܨ‬+ ߰ଷ‫ ଺ܨ‬+ ߰ସ‫ܨ‬ହ + ߰ହ‫ܨ‬ସ + ߰ଵ‫ܨ‬ଷ + ߰ଵ‫ܨ‬ଶ + ߰ଵ + ߰ଵ‫ܮ‬ଵ
+௜ஹ଼
++ ߰ଵ‫ܮ‬ଶ + ߰ଵ‫ܮ‬ଷ + ߰ଵ‫ܮ‬ସ + ߰ଵ‫ܮ‬ହ + ߰ଵ ෍ ‫ܮ‬௜
+௜ஹ଺
+Y para el empleo
+
+߰௠ሺ‫ܮ‬ሻ = ߰ଵ ෍ ‫ܨ‬௜ + ߰ଶ‫ܨ‬ଷଵ + ⋯ + ߰ଶ଼‫ܨ‬ହ + ߰ଶଽ‫ܨ‬ଷ + ߰ଷ଴‫ܨ‬ଶ + ߰ଷଵ‫ܨ‬ଵ + ߰ଷଶ + ߰ଷଷ‫ܮ‬ଵ
+௜ஹଷଶ
++ ⋯ + ߰ହହ‫ܮ‬ଶଷ + ߰ହ଺ ෍ ‫ܮ‬௜
+௜ஹଶସ
+Son estos dos últimos conjuntos de variables los que serán graficados más adelante como resultados.
+
+VI.2.
+
+Calculo de distancias
+
+En la sección de impacto en el empleo se evalúa el impacto de la llegada de una tienda en
+
+municipios localizados a menos de diez kilómetros del municipio en el que se dio la
+
+apertura de la tienda. La distancia utilizada es la distancia geográfica entre los centros de
+
+población de cada municipio. La metodología utilizada para calcular esta distancia se
+
+detalla a continuación:
+
+Utilizando datos del “Catálogo Único de Claves de Áreas Geoestadísticas Estatales, Municipales y Localidades del “Instituto Nacional de Estadística, Geografía e Informática (INEGI), se tomaron las coordenadas geográficas de la localidad con mayor población de cada municipio como las coordenadas del municipio mismo. Utilizando la fórmula de Haversine,9 se calculó la distancia entre cualquier par de municipios en el país a partir de
+
+9 La fórmula utilizada fue obtenida de http://www.codecodex.com/wiki/Calculate_distance_between_two_points_on_a_globe
+29
+
+sus coordenadas geográficas y para cada uno de ellos se seleccionaron los 20 municipios más cercanos. Finalmente, se agregaron las aperturas de tiendas en los municipios vecinos si la distancia entre estos es menor a diez kilómetros.
+VII. Análisis econométrico
+VII.1. Las bases de datos utilizadas Para el análisis posterior, se utilizaron dos bases de datos. Una en donde se detalla el número de establecimientos registrados en la base de contribuyentes del SAT en cada año, cada municipio y rama de comercio. En la otra base se detallan en periodos trimestrales el número de trabajadores afiliados al IMSS en cada municipio del país.
+En ambas bases, se construyeron variables dependientes por cada 10,000 habitantes. Esto es, establecimientos por cada 10,000 habitantes y trabajadores afiliados por cada 10,000 habitantes. No existe un registro detallado de la población de cada municipio en periodos trimestrales o anuales. Los datos de los censos realizados por INEGI están detallados a nivel municipal, pero estos sólo se realizan cada cinco años, por lo que para el periodo de interés sólo se encuentran disponibles los datos de los años 2000, 2005 y 2010. El Consejo Nacional de Población (CONAPO) ofrece datos con regularidad anual, pero su nivel de desagregación sólo permite observar la población a nivel entidad federativa.
+Para resolver este problema se generaron datos de población a partir de las participaciones porcentuales de cada municipio en los censos y los datos de población estatal de CONAPO. Las participaciones porcentuales de cada municipio en los periodos intercensales se construyeron mediante interpolación simple. Así, la población de cada municipio en cada año es el producto de la población estatal reportada por CONAPO y el porcentaje de población construido con los datos de los censos de población.
+De igual forma, para controlar por otros factores fue necesario incluir variables como la proporción de la población que habita en localidades de distintos tamaños y la proporción de hogares según su tamaño. Lo anterior bajo el supuesto de que pueden existir tamaños de localidades y familia que fomenten el número de establecimientos tradicionales frente a los autoservicios. Estos datos se encuentran disponibles únicamente para los años en los que
+30
+
+INEGI realizó un censo, por lo que para los periodos intermedios fueron construidos los datos a través de interpolación simple. Las bases incluyen además otras variables que permiten delimitar la muestra a estudiar, tales como la población media de cada municipio e identificadores de municipios de reciente creación o que han sido divididos para crear nuevos municipios.
+VII.2. La elección de ubicación de las tiendas y el problema de endogeneidad Las cadenas de autoservicio, al igual que cualquier otra empresa, establecen sus decisiones en función de la utilidad que estas le representan. Así, las cadenas de autoservicio toman la decisión de en dónde establecer una nueva tienda buscando los lugares que les representen mayores ventas y, por tanto, mayores beneficios. Bajo esta lógica, las cadenas suelen instalarse en localidades y municipios con mayor actividad económica y posibilidades de venta. Dado que no sólo las cadenas de autoservicio se guían por la búsqueda de beneficios es común que su decisión coincida con la de muchas otras empresas.
+Lo anterior es un problema al momento de estimar el impacto de las bodegas. Debido a que, como se muestra en la figura 3, existe una tendencia creciente en el número de establecimientos registrados ante el SAT en todo el país, no podemos analizar únicamente el comportamiento del número de establecimientos en los años posteriores a la llegada de las tiendas. Es necesario responder la pregunta: ¿Cómo sería el comportamiento del número de tiendas en el municipio si las cadenas no hubieran establecido una tienda en el municipio? Para responder la pregunta anterior es necesario elegir un contra-factual adecuado. Esto es, necesitamos comparar los municipios con otros que tengan las mismas características.
+Con un elevado nivel de certeza podemos afirmar que las cadenas no son las primeras en observar una oportunidad de negocio y aprovecharla instalando una de sus tiendas. Así, al momento de llegar las tiendas, es altamente probable que ya existan en los municipios un mayor número de establecimientos y una mayor tasa de crecimiento que en los municipios en donde las cadenas no se han instalado. Aún si la decisión de las cadenas sólo obedece al tamaño de la población del municipio, la figura 5 y la tabla 5 muestran que en los municipios más grandes el número de tiendas per cápita tiende a crecer a una tasa mayor que en municipios pequeños. En este documento se realizan dos estimaciones adicionales
+31
+
+que buscan determinar si éste es un problema grave: la utilización de un control adicional y la evaluación del impacto en municipios vecinos.
+VII.3. Los establecimientos de venta minorista de calzado como variable de control Antes de estudiar el impacto en otras ramas, comenzamos analizando el impacto de las bodegas en el comercio minorista de calzado. Se espera que la llegada de las bodegas impacte en esta rama en una proporción poco significativa por tres razones: ofertan productos que las tiendas de autoservicio con formato de bodega no ofrecen; su tamaño no es lo suficientemente grande como para generar efectos significativos por proximidad, y ofrecen productos con distinto momento de compra. Mientras que los productos ofrecidos por las bodegas suelen requerir una o más visitas semanales a las tiendas, la compra de calzado es menos regular y suele realizarse en momentos distintos. Los establecimientos de autoservicio de gran tamaño pueden estar acompañados de un área comercial periférica en donde se instalan otros establecimientos comerciales complementarios. En el caso de las bodegas, su tamaño no es lo suficientemente grande como para cambiar significativamente la dinámica de la venta de calzado en el corto plazo.
+Para hacer un análisis adecuado del impacto de las bodegas en el comercio es necesario controlar por otras variables que pueden influir en el comercio. El registro de la mayor parte de estas variables, sin embargo, no se encuentra disponible con el nivel de desagregación temporal y geográfica necesario en este estudio. A saber, son necesarios datos a nivel municipal y en periodos anuales o trimestrales.
+El número de establecimientos de venta de calzado, por lo tanto, puede ser utilizado como una variable proxy de todos los demás factores que afectan al comercio. Variables como la actividad económica, las facilidades fiscales y otras, afectan de manera proporcional a todos los establecimientos minoristas. En la figura 3 y en la figura 5 se puede observar que este tipo de establecimientos siguen tendencias similares al resto del comercio, pero sufren menos alteraciones exclusivas para su rama a través del tiempo.
+Para comprobar si esta puede ser una variable de control adecuada, es necesario ver cómo es afectada por la llegada de las bodegas. En la figura 9 se puede observar cómo ha sido afectado el número de establecimientos de venta minorista de calzado. Para la realización
+32
+
+de esta figura se consideraron el tipo de municipios que serán estudiados en todo el análisis posterior. Esto es, municipios con población entre 30,000 y 130,000 habitantes que en el periodo 1994-2012 sólo hayan experimentado la apertura de una o ninguna tienda con formato “bodega”. El anexo 2 muestra el número de municipios por tamaño y la media de aperturas para cada grupo, datos que fueron utilizados para la selección del tamaño de los municipios a estudiar.
+Figura 9. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de calzado
+
+a
+
+b
+
+40
+
+40
+
+30
+
+30
+
+20
+
+20
+
+10
+
+10
+
+0
+
+0
+
+-10
+
+-10
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI y Wal-Mart
+En ambos paneles se controló por el tiempo y en el panel “b” se controló adicionalmente por el tiempo al cuadrado, considerando que el número podría no seguir una tendencia lineal a través de los años. Se puede observar que hasta antes del cuarto año, contando desde la instalación de la bodega, el número de minoristas de calzado no sufre una alteración importante. Por los coeficientes observados para los periodos adelantados (-8 a -2), podemos afirmar que las cadenas se instalan en municipios con una tasa de crecimiento
+
+33
+
+de establecimientos de venta de calzado mayor a la de los municipios donde no se instalan. De no existir esta mayor tasa de crecimiento en los municipios elegidos, la pendiente observada antes del cuarto año sería capturada por variables de tendencia (tiempo) o los efectos anuales. De esta forma, incluir el número de establecimientos de calzado como control adicional para un análisis de los primeros cuatro años posteriores a la instalación de la tienda nos permite agregar una medida del crecimiento causados por factores no observados.
+VII.4. Impacto de las bodegas en el número de establecimientos En las subsecciones siguientes se analizará el impacto de la llegada de las tiendas con formato “bodega” sobre los establecimientos que ofrecen distintos grupos de productos.
+VII.4.1. Minoristas de Alimentos Los resultados de las estimaciones de esta sección se muestran en el adjunto 4. En éste, los primeros 12 coeficientes estimados en cada columna muestran el efecto de las variables dummy, ordenadas según el periodo previo o posterior a la apertura que representan. Se omitió el periodo “-1” debido a que es el periodo de referencia y, por tanto, con el que se hace la comparación. Las siguientes cuatro filas muestran las coeficientes estimados para cada combinación de controles utilizada.
+Con la finalidad de hacer más intuitivos estos resultados, en la figura 10 se muestran gráficamente las variables dummy que miden el impacto de la apertura, en orden cronológico y de forma que se puede observar cómo se comporta el número de establecimientos de venta minorista de alimentos. El panel “a” muestra los resultados sólo controlando por una tendencia lineal a través del tiempo. El panel “b” muestra el mismo resultado utilizando una tendencia no lineal. El panel “c” utiliza la interacción entre el tiempo y el logaritmo de la población. Este control es utilizado en respuesta al hallazgo de la figura 5 y la tabla 5, donde se observa que municipios más grandes mostraban mayores tasas de crecimiento en el número de todos los establecimientos minoristas.
+El panel “d” muestra los resultados utilizando el control por el número de establecimientos de venta minorista de calzado. La última grafica es más cortada ya que, de acuerdo a la figura 9, es a partir del cuarto año en que la tendencia de estos establecimientos muestra
+34
+
+perturbaciones debido a la llegada de las bodegas. El orden e identificación de los resultados es el mismo en la gráfica y en las tablas adjuntas de resultados.
+Con todos los controles se puede observar que los municipios elegidos para instalar las tiendas con formato bodega tienen, antes de que éstas entren, una tasa creciente en el número de establecimientos per cápita. Esta tendencia, sin embargo, se reduce temporalmente entre el segundo y cuarto año, contados a partir de la fecha de instalación de la bodega. Así, podemos percibir que la llegada de establecimientos con formato bodega no produce una reducción en el número de establecimientos, pero si reduce temporalmente la tasa de crecimiento que estas tendrían si los autoservicios no se instalaran.
+Figura 10. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de alimentos
+
+a
+
+b
+
+-20 0 20 40 60
+
+-20 0 20 40 60
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+-20 0 20 40 60
+
+-20 0 20 40 60
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+VII.4.2. Minoristas de bebidas y tabaco Siguiendo la misma clasificación de resultados que en la figura anterior, en la figura 11 se muestra el comportamiento del número de establecimientos de venta minorista de bebidas y
+35
+
+tabaco bajo distintos controles. Se observa que las cadenas de autoservicio buscan ubicar sus tiendas en municipios con una tendencia creciente en el número de establecimientos per cápita. En la gráfica se observa que, al igual que en el caso anterior, no existe una reducción en el número de establecimientos dedicados a la venta de estos productos, pero sí una reducción en la tasa de crecimiento que estos tienen. En este caso, la reducción en la tasa de crecimiento sólo se da entre el segundo y tercer año, contado a partir de la fecha de instalación del autoservicio
+En el adjunto 5, en donde se detallan los resultados mostrados gráficamente en la figura 11, se comprueba que el comportamiento de la tendencia es similar sin importar los controles utilizados. Vale la pena señalar que utilizando el número de establecimientos de venta de calzado como control, sí existe una reducción en el número de establecimientos de venta de calzado entre el segundo y tercer año.
+Figura 11. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de bebidas y tabaco
+
+a
+
+b
+
+-5 0 5 10
+
+-5 0 5 10
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+-5 0 5 10
+
+-5 0 5 10
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+5 Coef.
+36
+
+VII.4.3. Minorista de textiles excepto ropa Esta rama de actividad tiene características similares a las del calzado. Esto es, al igual que en el caso del calzado, las bodegas prácticamente no ofrecen productos de esta rama de productos. Así, esperamos que el impacto en este tipo de establecimientos sea bajo. De esta forma, en la figura 12 se puede observar que esta intuición es cierta. Bajo todos los controles el efecto de las bodegas sobre este grupo de establecimientos es bajo y poco significativo hasta antes del cuarto año. Únicamente a partir del quinto año se muestran alteraciones en el número de establecimientos. Estas alteraciones, sin embargo, son no significativas.
+Figura 12. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de textiles exceptuando ropa
+
+a
+
+b
+
+-20 0 20 40 60
+
+-20 0 20 40 60
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+-20 0 20 40 60
+
+-20 0 20 40 60
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+VII.4.4. Minorista de ropa Este grupo de productos tiene una característica intermedia entre los grupos de productos antes vistos. Algunas bodegas tienen ropa entre sus mercancías ofertadas, sin embargo,
+
+37
+
+usualmente esta oferta es limitada. Así, esperamos ver un efecto previo, aunque también de baja magnitud, en comparación al observado en el resto de los textiles y el calzado. Así, en la figura 13 observamos una reducción en la tasa de crecimiento de los establecimientos dedicados a la venta de este grupo de productos a partir del segundo año. Al igual que en el caso del resto de los textiles y el calzado, existe una alteración importante a partir del quinto año.
+Figura 13. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de ropa
+
+a
+
+b
+
+0 20 40 60 80 100
+
+0 20 40 60 80 100
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+0 20 40 60 80 100
+
+0 20 40 60 80 100
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+VII.4.5. Mayorista de alimentos La figura 14 muestra que, aunque su tendencia muestra perturbaciones desde el segundo año, su número per cápita cae del quinto al sexto año contado desde la apertura del autoservicio. La primera perturbación coincide con el momento en el que los establecimientos minoristas de alimentos, bebidas y tabaco comienzan a mostrar perturbaciones en su tendencia (ver figura 10 y figura 11). La segunda y más marcada
+
+38
+
+perturbación coincide con perturbaciones importantes en otras ramas del comercio que no compiten directamente con las bodegas. El adjunto 8 muestra los resultados numéricos de las regresiones utilizadas para construir la figura 14. En esta tabla se puede comprobar que los efectos son muy similares bajo todos controles, con excepción del número de establecimientos de venta de calzado.
+Figura 14. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta mayorista de alimentos
+
+a
+
+b
+
+-20 -10 0 10 20
+
+-20 -10 0 10 20
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+-20 -10 0 10 20
+
+-20 -10 0 10 20
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+VII.4.6. Mayorista de bebidas y tabaco Los establecimientos de comercio mayorista de bebidas y tabaco son los establecimientos en donde la llegada de los autoservicios tiene un efecto más claro. A pesar de que los establecimientos minoristas que ofertan los mismos productos no muestran una reducción en su número, los establecimientos mayoristas sí experimentan una reducción clara en su número a partir del quinto año. El adjunto 9 muestra los resultados de las regresiones utilizadas para construir la figura. En esta tabla se observa que del quinto al sexto año
+
+39
+
+existe una reducción en el número de mayoristas de bebidas y tabaco y que bajo el primer grupo de controles, esta reducción es mayor que la tendencia de crecimiento esperada. Así existe una elevada probabilidad de que el efecto sobre este grupo de tiendas no se dé sólo como la inhibición de nuevas aperturas, sino como el cierre físico o baja en el registro ante el SAT.
+Figura 15. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta mayorista de bebidas y tabaco
+
+a
+
+b
+
+-5 0 5 10
+
+-5 0 5 10
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+-5 0 5 10
+
+-5 0 5 10
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+VII.4.7. Mayorista de textiles y calzado La figura 16 y el adjunto 10 muestran los resultados del análisis para los comercios mayoristas de textiles y calzado. Dado que ofertan productos que las bodegas tradicionalmente no, se espera que su efecto sea poco significativo o nulo. Tanto el nivel de significancia de los coeficientes obtenidos, como la r-cuadrada de las regresiones, los cuales se pueden ver en el adjunto 10, confirman esta intuición. Así, podemos afirmar que el efecto sobre estas tiendas es reducido. Cabe destacar, sin embargo, la perturbación
+
+40
+
+positiva observada en el quinto año posterior a la llegada de las bodegas que coincide con efectos observados en otras ramas. En la sección de conclusiones se ofrecerá una hipótesis de un efecto indirecto que podría causar esta perturbación.
+Figura 16. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta mayorista de textiles y calzado
+
+a
+
+b
+
+-10 0 10 20 30 40
+
+-10 0 10 20 30 40
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+c
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+d
+
+5 Coef.
+
+-10 0 10 20 30 40
+
+-10 0 10 20 30 40
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+-10
+
+-5
+
+0
+
+Int. 95% confianza
+
+5 Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+VII.5. Impacto en el empleo De forma similar que en el caso de los establecimientos, en la figura 17 se muestra el impacto de la llegada de las tiendas con formato “bodega” en el empleo. Debido a la forma en que fueron recibidos los datos, no es posible distinguir la forma en que impactan estas tiendas en el empleo de distintas ramas del comercio. La muestra de municipios seleccionada fue la misma que en el caso anterior. Esto es: municipios con población entre 30,000 y 130,000 habitantes donde no se instaló más de una tienda con formato “bodega” en el periodo 1994-2012. El panel “a” muestra los resultados de las estimaciones utilizando como control únicamente una tendencia anual. El panel “b” muestra lo mismo agregando
+
+41
+
+controles por comportamiento cíclico trimestral. En el panel “c” se utiliza además la interacción entre el tiempo y el logaritmo de la población. Al igual que en el caso anterior, esto responde a la observación de que en municipios más grandes existen tasas más altas de crecimiento en el comercio. En el panel “d” se vuelve a utilizar el número de establecimientos dedicados a la venta minorista de calzado.
+Las gráficas mostradas de aquí en adelante muestran periodos trimestrales en el eje horizontal. Lo primero que resalta de las gráficas es que bajo todos los controles el comportamiento es muy similar. Estas muestran que a partir de la llegada de las bodegas, existe un aumento en el empleo que llega hasta el quinto año. A partir del trimestre diecinueve, contado a partir de la llegada de la tienda, se muestra una reducción marcada en el empleo.
+Figura 17. Impacto de las tiendas con formato bodega en el empleo
+
+a
+
+b
+
+-100 0 100 200
+
+-100 0 100 200
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+c
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+d
+
+-100 0 100 200
+
+-100 0 100 200
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO,IMSS, INEGI y Wal-Mart
+
+42
+
+Los efectos observados pueden tener el problema de selección antes mencionado. Esto es, parte del comportamiento observado en las cadenas después de la llegada de las cadenas podría deberse a las características de los municipios elegidos por las cadenas para instalarse. Con la finalidad de comprobar si este comportamiento se debe exclusivamente o en gran medida a las características de estos municipios, se realizó la misma estimación para municipios a menos de 10 kilómetros de distancia. Bajo el supuesto de que las características de los municipios vecinos influyen en mucho menor medida en la decisión de las cadenas, esperamos ver que el efecto observado en estos municipios, aunque menos significativo, se deba casi exclusivamente al evento de la llegada y no a sus características.
+Figura 18. Impacto de las tiendas con formato bodega en el empleo de los municipios con la localidad de mayor población a menos de 10 km
+
+a
+
+b
+
+-200-100 0 100 200 300
+
+-200-100 0 100 200 300
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+c
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+d
+
+-200-100 0 100 200 300
+
+-200-100 0 100 200 300
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+-30 -20 -10
+
+0
+
+Int. 95% confianza
+
+10
+
+20
+
+Coef.
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO,IMSS, INEGI y Wal-Mart
+En la figura 18 se observan los resultados de esta estimación. Estos son poco significativos como para poder hacer aseveraciones sobre el tipo o la magnitud del efecto. A pesar de lo anterior, destacan dos cosas: el comportamiento que muestra el empleo después del ingreso
+
+43
+
+de una bodega es una versión con mayor varianza (de acuerdo al intervalo de confianza) del efecto observado sobre los municipios que albergan la nueva tienda, y que existe una aparente reducción en el empleo en el quinto año contado a partir de la llegada de la tienda.
+VIII. Conclusiones Después de analizar el impacto de la apertura de tiendas “bodega” en el número de establecimientos registrados en el SAT, se puede observar que existen efectos más marcados en algunas ramas de actividad. El efecto de la apertura de una tienda se observa en primer lugar en los establecimientos minoristas dedicados a la venta de productos que también ofrecen las bodegas. La perturbación tiene lugar desde el segundo año en el caso del comercio minorista de alimentos, bebidas y tabaco. El efecto sobre los establecimientos dedicados a la venta mayorista de estos mismos productos es mayor al que en el resto de los establecimientos, pero se da cinco años después de la apertura del autoservicio.
+Por otro lado, en establecimientos que ofrecen productos que usualmente no ofrecen las bodegas, el efecto es reducido y, en algunos casos, prácticamente nulo. Así, en el análisis del efecto sobre los establecimientos de venta mayorista de textiles y calzado, debido a la reducida r-cuadrada y poca significancia de los coeficientes, no podemos afirmar con certeza que esta rama experimente algún tipo de efecto por la apertura de las bodegas en los primeros años.
+Los efectos negativos observados en algunas ramas no significan en todos los casos necesariamente la desaparición de tiendas minoristas. El presente estudio se realiza sobre un periodo en el que existe una marcada tendencia creciente el número de establecimientos registrado ante el SAT. Así, estos efectos pueden, en la mayoría de los casos, ser explicados como la inhibición de la aparición o registro formal de un establecimiento. Como muestran las estimaciones para la venta minorista de alimentos, bebidas y tabaco, el efecto de las bodegas puede darse simplemente como la reducción en la tasa de crecimiento del número de establecimientos.
+Los efectos sobre el empleo son positivos en un inicio y negativos a partir del quinto año. Este efecto, sin embargo, no se puede hacer extensivo hacia la totalidad del empleo en el municipio. Cómo se mencionó al principio, los datos utilizados para el presente estudio
+44
+
+engloban únicamente el número de establecimientos y empleados formales. Así, el efecto observado puede deberse a canales que no son necesariamente la destrucción o inhibición de la creación de empleos. El efecto observado puede también ser explicado por el paso a la informalidad de los establecimientos competidores. El efecto sobre los municipios vecinos a menos de diez kilómetros es poco marcado y significativo para poder hacer afirmaciones sobre éste, pero su comportamiento observado es congruente con lo observado en los municipios que comenzaron a albergar una tienda bodegas en su territorio. Todos los resultados mostrados anteriormente son congruentes con una historia de migración de comerciantes de giros que compiten directamente con los autoservicios a giros en donde estos son competidores menos importantes. Lo anterior se deduce de observar que el momento en que existe un efecto importante en establecimientos mayoristas coincide con el momento en que hay un efecto positivo en establecimientos que ofrecen productos que prácticamente no lo hacen las bodegas. Este estudio busca hacer un análisis sobre dos aspectos en los que impactan las cadenas de autoservicio. Como se mencionó en la sección de revisión de literatura, existen otros aspectos y estudios posibles que contribuyan a determinar los efectos que provoca la llegada de las cadenas de autoservicio. Para poder realizar un análisis completo, es necesario además conocer cuáles son los efectos de los autoservicios en los salarios y los precios de los municipios donde llega, entre otras variables.
+45
+
+Incluidos
+
+Adjuntos
+Adjunto 1. Regímenes fiscales incluidos y excluidos en el análisis de la dinámica e impacto en los establecimientos
+601 Régimen General de Ley Personas Morales 602 Régimen Simplificado de Ley Personas Morales 603 Personas Morales con Fines no Lucrativos 604 Régimen de Pequeños Contribuyentes 605 Régimen de Sueldos y Salarios e Ingresos Asimilados a Salarios 606 Régimen de Arrendamiento 608 Régimen de los demás ingresos 609 Régimen de Consolidación 611 Régimen de Ingresos por Dividendos (socios y accionistas) 612 Régimen de las Personas Físicas con Actividades Empresariales y
+Profesionales 613 Régimen Intermedio de las Personas Físicas con Actividades Empresariales 618 Régimen Simplificado de Ley Personas Físicas 619 Ingresos por la obtención de préstamos 620 Sociedades Cooperativas de Producción que optan por diferir sus ingresos.
+607 Régimen de Enajenación o Adquisición de Bienes 610 Régimen residentes en el Extranjero sin Establecimiento Permanente en
+México 614 Régimen de los ingresos por intereses 615 Régimen de los ingresos por obtención de premios 616 Sin obligaciones fiscales 617 PEMEX
+Fuente: Elaboración propia con datos del Servicio de Administración Tributaria
+46
+
+Excluidos
+
+Adjunto 2. Aperturas promedio en el periodo 1994-2012, según la población del municipio
+
+Población
+
+Media de Aperturas
+
+Número de municipios
+
+0-10000
+
+0.00
+
+10000-20000
+
+0.03
+
+20000-30000
+
+0.29
+
+30000-40000
+
+0.49
+
+40000-50000
+
+0.66
+
+50000-60000
+
+0.85
+
+60000-70000
+
+0.98
+
+70000-80000
+
+1.27
+
+80000-90000
+
+0.95
+
+90000-100000
+
+1.18
+
+100000-110000
+
+1.17
+
+110000-120000
+
+1.42
+
+120000-130000
+
+1.20
+
+130000-140000
+
+1.22
+
+140000-150000
+
+1.38
+
+150000-160000
+
+0.67
+
+160000-170000
+
+2.00
+
+170000-180000
+
+1.13
+
+180000-190000
+
+0.50
+
+190000-200000
+
+0.60
+
+200000-250000
+
+2.17
+
+250000-300000
+
+2.17
+
+300000-350000
+
+0.83
+
+350000-400000
+
+1.22
+
+400000-450000
+
+3.13
+
+450000-500000
+
+2.38
+
+500000-1000000
+
+3.76
+
+1000000-1500000
+
+5.63
+
+1500000-2000000
+
+6.33
+
+1,117 490 242 153 88 71 45 30 22 17 12 12 15
+9 8 6 2 8 4 5 12 12 6 9 8 8 21 8 3
+
+Fuente: Cálculos propios con datos de ANTAD, Costco, CONAPO, INEGI y Wal-Mart.
+
+47
+
+Adjunto 3. Evolución del número de establecimientos por cada 10,000 habitantes según tipo de producto y tamaño del municipio
+
+Mayoreo alimentos
+
+Población (miles)
+
+>400
+
+200-400 100-200 30-100
+
+<30
+
+2000
+
+6.6
+
+5.3
+
+6.0
+
+4.4
+
+1.8
+
+2001
+
+9.2
+
+7.2
+
+7.8
+
+5.9
+
+2.5
+
+2002
+
+16.0 11.6 12.4 9.2
+
+4.0
+
+2003
+
+18.4 14.0 17.0 10.2
+
+4.4
+
+2004
+
+24.3 21.2 24.2 13.2
+
+5.0
+
+2005
+
+27.6 24.1 27.9 14.9
+
+5.6
+
+2006
+
+28.2 24.8 28.0 15.0
+
+5.7
+
+2007
+
+35.5 28.1 31.9 16.9
+
+6.4
+
+2008
+
+40.2 31.4 34.2 18.3
+
+7.0
+
+2009
+
+43.5 36.5 35.0 19.4
+
+7.4
+
+2010
+
+46.7 39.3 36.9 20.3
+
+7.9
+
+Mayoreo bebidas y tabaco
+
+Población (miles)
+
+>400
+
+200-400 100-200 30-100
+
+<30
+
+2000
+
+3.5
+
+3.5
+
+3.0
+
+2.2
+
+1.3
+
+2001
+
+4.6
+
+4.5
+
+3.9
+
+3.0
+
+2.0
+
+2002
+
+6.9
+
+6.3
+
+6.1
+
+4.8
+
+3.0
+
+2003
+
+8.6
+
+7.0
+
+7.2
+
+5.4
+
+3.3
+
+2004
+
+11.1 14.7 10.7 6.5
+
+4.0
+
+2005
+
+12.5 16.3 12.1 7.2
+
+4.6
+
+2006
+
+12.7 16.3 12.2 7.2
+
+4.8
+
+2007
+
+17.2 22.3 15.2 8.1
+
+4.9
+
+2008
+
+19.6 24.8 16.4 8.7
+
+5.0
+
+2009
+
+22.8 28.2 17.5 9.9
+
+5.6
+
+2010
+
+22.6 27.9 17.0 9.6
+
+5.2
+
+Mayoreo textiles y calzado
+
+Población (miles)
+
+>400
+
+200-400 100-200 30-100
+
+<30
+
+2000
+
+1.8
+
+1.0
+
+1.0
+
+0.7
+
+0.2
+
+2001
+
+2.5
+
+1.5
+
+1.3
+
+0.9
+
+0.2
+
+2002
+
+4.3
+
+2.3
+
+2.0
+
+1.5
+
+0.4
+
+2003
+
+5.6
+
+4.7
+
+2.5
+
+2.0
+
+0.5
+
+2004
+
+9.6
+
+6.6
+
+3.5
+
+3.0
+
+0.6
+
+2005
+
+11.8
+
+7.7
+
+3.8
+
+3.5
+
+0.7
+
+2006
+
+12.0
+
+8.0
+
+3.9
+
+3.6
+
+0.7
+
+2007
+
+13.0 11.1
+
+4.3
+
+4.2
+
+0.8
+
+2008
+
+15.0 12.5
+
+4.5
+
+4.6
+
+0.8
+
+2009
+
+15.9 12.8
+
+5.2
+
+4.8
+
+0.9
+
+2010
+
+17.1 13.9
+
+5.8
+
+4.9
+
+1.0
+
+Menudeo alimentos
+
+>400
+56.5 72.4 136.4 146.3 167.6 175.4 173.8 183.9 197.2 208.3 217.3
+
+200-400 100-200 30-100
+
+63.1 82.6 140.9 152.4 179.1 189.8 186.3 196.2 210.9 221.5 229.0
+
+67.0 86.3 142.8 146.3 157.9 163.2 161.9 169.8 174.8 180.8 186.3
+
+55.4 72.6 120.1 123.4 130.0 132.1 129.7 133.3 137.2 141.4 144.8
+
+Menudeo bebidas y tabaco
+
+<30
+49.5 68.4 107.0 111.3 116.0 119.4 118.7 121.5 124.0 126.3 129.2
+
+>400 200-400 100-200 30-100 <30
+
+1.5
+
+2.1
+
+1.6
+
+1.5
+
+1.3
+
+1.9
+
+2.6
+
+2.2
+
+2.0
+
+1.9
+
+3.2
+
+4.2
+
+3.6
+
+3.5
+
+3.0
+
+3.5
+
+4.6
+
+3.9
+
+3.7
+
+3.2
+
+4.2
+
+6.2
+
+4.6
+
+4.0
+
+3.4
+
+5.1
+
+8.1
+
+5.2
+
+4.5
+
+3.8
+
+5.3
+
+8.3
+
+5.4
+
+4.7
+
+3.9
+
+9.3 13.0 8.7
+
+6.3
+
+4.6
+
+11.1 15.1 10.8 7.7
+
+5.3
+
+13.1 17.1 12.6 8.9
+
+5.7
+
+17.4 20.7 16.2 11.0 6.8
+
+Menudeo ropa
+
+>400 200-400 100-200 30-100 <30
+
+11.3 3.2 11.3 8.9
+
+3.5
+
+13.9 4.1 14.3 11.3 4.6
+
+22.7 6.5 20.5 16.2 6.4
+
+23.8 6.7 20.8 17.0 6.7
+
+26.3 7.5 22.2 18.9 7.1
+
+27.2 7.5 22.3 18.9 7.3
+
+26.8 7.2 22.0 18.5 7.3
+
+28.8 7.7 23.0 19.7 7.9
+
+32.3 8.1 24.5 21.1 8.4
+
+35.3 8.3 27.4 23.1 8.7
+
+38.7 8.7 29.8 24.3 9.1
+
+48
+
+Menudeo calzado
+
+Población (miles)
+
+>400
+
+200-400 100-200 30-100
+
+<30
+
+2000
+
+3.1
+
+2.7
+
+3.2
+
+2.6
+
+1.1
+
+2001
+
+3.8
+
+3.6
+
+4.0
+
+3.3
+
+1.5
+
+2002
+
+6.6
+
+5.6
+
+6.1
+
+5.0
+
+2.2
+
+2003
+
+7.4
+
+6.8
+
+6.7
+
+5.3
+
+2.3
+
+2004
+
+8.9
+
+8.7
+
+7.8
+
+5.8
+
+2.5
+
+2005
+
+9.6
+
+9.4
+
+8.3
+
+6.0
+
+2.6
+
+2006
+
+9.5
+
+9.3
+
+8.2
+
+5.9
+
+2.6
+
+2007
+
+10.5 10.5
+
+9.1
+
+6.3
+
+2.8
+
+2008
+
+11.7 11.3 10.0 6.7
+
+3.0
+
+2009
+
+12.3 11.7 11.6 7.2
+
+3.1
+
+2010
+
+13.1 12.3 12.2 7.4
+
+3.3
+
+Tiendas de autoservicio
+
+Población (miles)
+
+>400
+
+200-400 100-200 30-100
+
+<30
+
+2000
+
+1.7
+
+1.7
+
+1.1
+
+0.6
+
+0.3
+
+2001
+
+2.3
+
+2.3
+
+1.6
+
+0.8
+
+0.4
+
+2002
+
+3.8
+
+3.4
+
+2.5
+
+1.3
+
+0.7
+
+2003
+
+5.5
+
+4.1
+
+2.8
+
+1.6
+
+0.8
+
+2004
+
+27.2
+
+5.5
+
+4.4
+
+3.0
+
+1.0
+
+2005
+
+28.9
+
+7.1
+
+5.0
+
+4.1
+
+1.1
+
+2006
+
+29.4
+
+7.7
+
+5.2
+
+4.4
+
+1.2
+
+2007
+
+33.3
+
+9.0
+
+6.4
+
+5.5
+
+1.5
+
+2008
+
+36.8 11.3
+
+7.3
+
+6.7
+
+1.9
+
+2009
+
+37.5 12.1
+
+8.1
+
+7.1
+
+2.1
+
+2010
+
+38.1 13.6
+
+8.6
+
+7.6
+
+2.3
+
+Fuente: Cálculos propios con datos de CONAPO y SAT.
+
+Menudeo textiles excepto ropa
+
+>400 200-400 100-200 30-100 <30
+
+3.5 10.4 2.9
+
+2.5
+
+1.1
+
+4.4 13.2 3.5
+
+3.1
+
+1.5
+
+7.7 19.5 5.6
+
+4.8
+
+2.1
+
+8.1 20.7 6.2
+
+4.8
+
+2.2
+
+9.3 23.9 6.4
+
+5.2
+
+2.3
+
+9.9 24.1 6.4
+
+5.3
+
+2.3
+
+9.7 23.8 6.3
+
+5.2
+
+2.3
+
+10.4 26.9 6.3
+
+5.5
+
+2.4
+
+11.3 29.7 6.5
+
+5.8
+
+2.5
+
+11.8 32.1 6.8
+
+6.0
+
+2.6
+
+13.1 35.2 6.9
+
+6.2
+
+2.6
+
+Tiendas departamentales
+
+>400 200-400 100-200 30-100 <30
+
+0.5
+
+1.1
+
+0.2
+
+0.7
+
+1.5
+
+0.2
+
+0.9
+
+2.2
+
+0.3
+
+1.5
+
+4.4
+
+0.4
+
+3.8
+
+7.2
+
+0.6
+
+7.7
+
+9.0
+
+1.1
+
+10.0 9.2
+
+1.1
+
+13.8 10.5 1.9
+
+17.0 11.4 2.3
+
+21.6 11.5 2.8
+
+22.7 12.1 3.4
+
+0.1 0.06 0.1 0.06 0.2 0.13 0.2 0.13 0.2 0.14 0.3 0.14 0.3 0.14 0.4 0.17 0.6 0.21 0.8 0.27 1.0 0.36
+
+49
+
+Adjunto 4. Resultados de las regresiones para establecimientos minoristas de alimentos, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2 log(pob)*tiempo
+
+(a)
+-15.149 (2.820) -11.964 (2.551) -9.018 (2.145) -5.979 (1.626) -4.032 (0.938) 2.415 (1.095) 6.648 (2.019) 11.863 (2.824) 13.63 (3.604) 13.609 (3.632) 20.482 (5.737) 28.967 (9.937) 6.574 (0.718)
+
+Est. calzado x 10,000 habitantes
+Constante
+
+591.916 (397.028)
+
+(b)
+-15.149 (2.820) -11.964 (2.551) -9.018 (2.145) -5.979 (1.626) -4.032 (0.938) 2.415 (1.095) 6.648 (2.019) 11.863 (2.824) 13.63 (3.604) 13.609 (3.632) 20.482 (5.737) 28.967 (9.937) 36.934 (2.262) -1.265 (0.076)
+441.382 (397.618)
+
+(c)
+-15.551 (2.758) -12.311 (2.477) -9.291 (2.079) -6.174 (1.577) -4.134 (0.929) 2.554 (1.068) 6.952 (1.943) 12.334 (2.725) 14.249 (3.474) 14.429 (3.562) 21.192 (5.701) 30.185 (9.833) 11.724 (5.689)
+-0.473 (0.521)
+607.291 (401.342)
+
+(d)
+-1.293 (1.703) 0.656 (1.812) 2.258 (1.676) 4.236 (1.604) 5.124 (1.519) 8.403 (2.202) 10.794 (2.892) 13.711 (3.580) 14.059 (4.071) 11.948 (3.383)
+6.405 (0.788)
+2.731 (1.106) 820.289 (391.015)
+
+(e)
+-1.427 (1.674) 0.551 (1.785) 2.203 (1.661) 4.239 (1.601) 5.205 (1.527) 8.678 (2.200) 11.209 (2.855) 14.264 (3.539) 14.733 (4.005) 12.786 (3.400)
+41.089 (6.204) -1.197 (0.082) -0.545 (0.508) 2.768 (1.085) 701.637 (399.279)
+
+r2
+
+0.741
+
+0.741
+
+0.742
+
+0.76
+
+Observaciones
+
+3751
+
+3751
+
+3751
+
+3751
+
+Municipios
+
+341
+
+341
+
+341
+
+341
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.761 3751 341
+
+50
+
+Adjunto 5. Resultados de las regresiones para establecimientos minoristas de bebidas y tabaco, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2
+
+(a)
+-2.657 (0.441) -2.379 (0.468) -2.091 (0.419) -1.647 (0.327) -0.958 (0.286) 0.288 (0.294) 0.817 (0.408) 2.011 (0.618) 2.105 (0.725) 3.268 (0.953) 5.064 (1.413) 6.355 (2.126) 0.651 (0.108)
+
+log(pob)*tiempo
+
+Est. calzado x 10,000 habitantes
+Constante
+
+99.373 (44.791)
+
+(b)
+-2.657 (0.441) -2.379 (0.468) -2.091 (0.419) -1.647 (0.327) -0.958 (0.286) 0.288 (0.294) 0.817 (0.408) 2.011 (0.618) 2.105 (0.725) 3.268 (0.953) 5.064 (1.413) 6.355 (2.126) 0.315 (0.325) 0.014 (0.011)
+101.037 (44.437)
+
+(c)
+-2.677 (0.457) -2.397 (0.486) -2.105 (0.433) -1.657 (0.334) -0.963 (0.291) 0.295 (0.298) 0.833 (0.417) 2.034 (0.626) 2.136 (0.720) 3.309 (0.972)
+5.1 (1.429) 6.416 (2.130) 0.904 (0.910)
+-0.023 (0.082)
+99.301 (44.745)
+
+(d)
+-0.28 (0.189) -0.236 (0.304) -0.171 (0.322) 0.074 (0.301) 0.564 (0.324) 1.247 (0.401) 1.456 (0.466) 2.283 (0.651) 2.069 (0.739) 2.829 (0.865)
+0.743 (0.121)
+0.256 (0.094) 88.844 (44.641)
+
+(e)
+-0.275 (0.194) -0.233 (0.308) -0.169 (0.324) 0.074 (0.301) 0.561 (0.322) 1.237 (0.406) 1.441 (0.475) 2.263 (0.662) 2.045 (0.732) 2.799 (0.884)
+0.013 (1.017) 0.022 (0.011) 0.019 (0.082) 0.254 (0.094) 91.560 (44.416)
+
+r2
+
+0.567
+
+0.567
+
+0.567
+
+0.554
+
+Observaciones
+
+3795
+
+3795
+
+3795
+
+3795
+
+Municipios
+
+345
+
+345
+
+345
+
+345
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.554 3795 345
+
+51
+
+Adjunto 6. Resultados de las regresiones para establecimientos minoristas de textiles exceptuando ropa, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2
+
+(a)
+-0.53 (0.238) -0.372 (0.219) -0.221 (0.192) -0.449 (0.212) -0.287 (0.119) 0.216 (0.101) 0.659 (0.329) 1.334 (0.610) 1.687 (0.948) 2.766 (1.733) 5.701 (3.769) 22.43 (16.607) 0.147 (0.084)
+
+log(pob)*tiempo
+
+Est. calzado x 10,000 habitantes
+Constante
+
+-43.842 (25.260)
+
+(b)
+-0.53 (0.238) -0.372 (0.219) -0.221 (0.192) -0.449 (0.212) -0.287 (0.119) 0.216 (0.101) 0.659 (0.329) 1.334 (0.610) 1.687 (0.948) 2.766 (1.733) 5.701 (3.769) 22.43 (16.607) 1.404 (0.280) -0.052 (0.014)
+-50.072 (26.324)
+
+(c)
+-0.665 (0.206) -0.488 (0.183) -0.313 (0.158) -0.515 (0.251) -0.321 (0.138) 0.263 (0.120)
+0.76 (0.385) 1.491 (0.699) 1.893 (1.068) 3.038 (1.892) 5.937 (3.898) 22.834 (16.693) 1.818 (1.077)
+-0.154 (0.105)
+-44.321 (25.306)
+
+(d)
+-0.16 (0.201) -0.156 (0.260) -0.183 (0.350) -0.588 (0.797) -0.593 (0.810) -0.502 (0.899) -0.332 (0.848) 0.006 (0.801) 0.081 (0.658) 0.708 (0.303)
+0.175 (0.068)
+0.273 (0.153) -39.417 (24.924)
+
+(e)
+-0.186 (0.214) -0.177 (0.271) -0.194 (0.356) -0.586 (0.795) -0.576 (0.800) -0.446 (0.868) -0.248 (0.803) 0.118 (0.747) 0.217 (0.600) 0.877 (0.305)
+2.157 (0.809) -0.034 (0.006) -0.107 (0.070)
+0.28 (0.153) -44.115 (25.091)
+
+r2
+
+0.272
+
+0.272
+
+0.276
+
+0.197
+
+Observaciones
+
+3795
+
+3795
+
+3795
+
+3795
+
+Municipios
+
+345
+
+345
+
+345
+
+345
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.199 3795 345
+
+52
+
+Adjunto 7. Resultados de las regresiones para establecimientos minoristas de ropa, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2
+
+(a)
+-3.597 (0.661) -2.853 (0.561) -2.11 (0.453) -2.029 (0.759) -1.557 (0.536) 0.823 (0.331) 3.043 (1.116) 5.892 (1.768) 5.508 (1.326) 6.932 (1.941) 9.088 (2.169) 49.777 (29.154) 0.791 (0.208)
+
+log(pob)*tiempo
+
+Est. calzado x 10,000 habitantes
+Constante
+
+-203.869 (74.119)
+
+(b)
+-3.597 (0.661) -2.853 (0.561) -2.11 (0.453) -2.029 (0.759) -1.557 (0.536) 0.823 (0.331) 3.043 (1.116) 5.892 (1.768) 5.508 (1.326) 6.932 (1.941) 9.088 (2.169) 49.777 (29.154) 3.116 (0.708) -0.097 (0.025)
+-215.395 (74.672)
+
+(c)
+-3.638 (0.679) -2.889 (0.568) -2.138 (0.464) -2.049 (0.799) -1.568 (0.559) 0.838 (0.339) 3.074 (1.194)
+5.94 (1.854) 5.572 (1.335) 7.016 (1.936) 9.161 (2.210) 49.902 (29.397) 1.308 (2.262)
+-0.047 (0.215)
+-204.017 (74.182)
+
+(d)
+0.148 (0.739) 0.407 (0.823) 0.574 (0.863) 0.136 (1.398) 0.117 (1.299) 1.174 (1.214) 2.571 (1.826) 4.398 (2.443) 3.296 (2.193) 3.573 (2.663)
+0.772 (0.212)
+1.031 (0.313) -181.436 (73.161)
+
+(e)
+0.151 (0.737) 0.410 (0.821) 0.575 (0.863) 0.136 (1.398) 0.115 (1.292) 1.167 (1.195) 2.560 (1.853) 4.384 (2.465) 3.279 (2.131) 3.551 (2.562)
+1.894 (1.859) -0.053 (0.023) 0.013 (0.187) 1.030 (0.314) -187.646 (72.992)
+
+r2
+
+0.377
+
+0.377
+
+0.377
+
+0.365
+
+Observaciones
+
+3795
+
+3795
+
+3795
+
+3795
+
+Municipios
+
+345
+
+345
+
+345
+
+345
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.365 3795 345
+
+53
+
+Adjunto 8. Resultados de las regresiones para establecimientos mayoristas de alimentos, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2
+
+(a)
+-6.232 (1.945) -5.401 (1.661) -3.788 (1.128) -2.493 (0.716) -1.698 (0.471) 2.378 (0.783) 3.739 (1.358) 5.356 (1.803) 5.259 (2.011) 5.923 (2.170) 8.697 (3.087) 1.973 (2.733) 0.976 (0.331)
+
+log(pob)*tiempo
+
+Est. calzado x 10,000 habitantes
+Constante
+
+-38.983 (111.182)
+
+(b)
+-6.232 (1.945) -5.401 (1.661) -3.788 (1.128) -2.493 (0.716) -1.698 (0.471) 2.378 (0.783) 3.739 (1.358) 5.356 (1.803) 5.259 (2.011) 5.923 (2.170) 8.697 (3.087) 1.973 (2.733) 4.243 (0.803) -0.136 (0.029)
+-55.184 (110.708)
+
+(c)
+-6.123 (2.023) -5.307 (1.719) -3.714 (1.155) -2.439 (0.747) -1.67 (0.493) 2.344 (0.810) 3.656 (1.385)
+5.21 (1.890) 5.057 (2.070) 5.653 (2.424)
+8.42 (3.322) 1.555 (2.952) -0.415 (3.500)
+0.13 (0.336)
+-37.755 (112.334)
+
+(d)
+-0.575 (0.804) -0.22 (0.863) 0.976 (0.900) 1.899 (0.955) 2.313 (1.010) 5.307 (1.609) 6.072 (1.938) 7.033 (2.247) 6.337 (2.138) 6.279 (1.973)
+1.219 (0.309)
+0.358 (0.193) -72.34 (120.117)
+
+(e)
+-0.500 (0.783) -0.162 (0.846) 1.005 (0.891) 1.895 (0.958) 2.265 (1.022) 5.149 (1.643) 5.835 (1.954) 6.719 (2.280) 5.955 (2.147) 5.805 (2.093)
+1.003 (2.809) -0.127 (0.028) 0.300 (0.252) 0.337 (0.202) -85.684 (120.960)
+
+r2
+
+0.335
+
+0.335
+
+0.335
+
+0.321
+
+Observaciones
+
+3795
+
+3795
+
+3795
+
+3795
+
+Municipios
+
+345
+
+345
+
+345
+
+345
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.322 3795 345
+
+54
+
+Adjunto 9. Resultados de las regresiones para establecimientos mayoristas de bebidas y tabaco, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2
+
+(a)
+-2.372 (0.464) -2.41 (0.453) -1.674 (0.331) -1.197 (0.267) -0.732 (0.198) 0.647 (0.213) 0.983 (0.321) 1.722 (0.463) 2.362 (0.665) 3.766 (0.958) 6.373 (1.826) 5.669 (1.643) 0.416 (0.094)
+
+log(pob)*tiempo
+
+Est. calzado x 10,000 habitantes
+Constante
+
+-9.669 (31.609)
+
+(b)
+-2.372 (0.464) -2.41 (0.453) -1.674 (0.331) -1.197 (0.267) -0.732 (0.198) 0.647 (0.213) 0.983 (0.321) 1.722 (0.463) 2.362 (0.665) 3.766 (0.958) 6.373 (1.826) 5.669 (1.643) 2.061 (0.281) -0.069 (0.01)
+-17.821 (31.545)
+
+(c)
+-2.313 (0.480) -2.358 (0.470) -1.634 (0.346) -1.168 (0.276) -0.717 (0.201) 0.629 (0.217) 0.938 (0.328) 1.643 (0.461) 2.252 (0.690) 3.618 (1.013) 6.222 (1.885)
+5.44 (1.698) -0.344 (1.054)
+0.071 (0.097)
+-8.998 (31.885)
+
+(d)
+-0.363 (0.243) -0.626 (0.286) -0.095 (0.325) 0.198 (0.314) 0.474 (0.298) 1.337 (0.354) 1.372 (0.426) 1.766 (0.490) 2.099 (0.597) 3.095 (0.725)
+0.516 (0.100)
+0.22 (0.074) -21.355 (31.159)
+
+(e)
+-0.346 (0.245) -0.613 (0.289) -0.088 (0.327) 0.197 (0.313) 0.463 (0.296) 1.300 (0.356) 1.318 (0.425) 1.694 (0.483) 2.010 (0.610) 2.986 (0.765)
+1.196 (1.019) -0.060 (0.010) 0.069 (0.087) 0.215 (0.076) -28.049 (31.413)
+
+r2
+
+0.5
+
+0.5
+
+0.5
+
+0.479
+
+Observaciones
+
+3795
+
+3795
+
+3795
+
+3795
+
+Municipios
+
+345
+
+345
+
+345
+
+345
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.479 3795 345
+
+55
+
+Adjunto 10. Resultados de las regresiones para establecimientos mayoristas de textiles y calzado, variables seleccionadas.
+
+Bodegas -6 -5 -4 -3 -2 0 1 2 3 4 5 6
+tiempo tiempo^2
+
+(a)
+-2.47 (1.275) -2.164 (1.047) -1.574 (0.790) -0.957 (0.351) -0.502 (0.208) 1.001 (0.454) 2.372 (1.002) 3.121 (1.229)
+4.05 (1.779) 2.303 (1.082) 4.672 (2.077) 18.706 (8.808) -0.001 (0.138)
+
+log(pob)*tiempo
+
+Est. calzado x 10,000 habitantes
+Constante
+
+-57.529 (58.322)
+
+(b)
+-2.47 (1.275) -2.164 (1.047) -1.574 (0.790) -0.957 (0.351) -0.502 (0.208) 1.001 (0.454) 2.372 (1.002) 3.121 (1.229)
+4.05 (1.779) 2.303 (1.082) 4.672 (2.077) 18.706 (8.808) 0.101 (0.679) -0.004 (0.029)
+-58.039 (57.833)
+
+(c)
+-2.428 (1.333) -2.128 (1.110) -1.546 (0.856) -0.937 (0.383) -0.491 (0.219) 0.988 (0.457)
+2.34 (1.085) 3.065 (1.393) 3.972 (1.983) 2.199 (1.332) 4.565 (2.254) 18.545 (8.986) -0.537 (2.967)
+0.05 (0.278)
+-57.056 (58.513)
+
+(d)
+-1.034 (0.781) -0.92 (0.654) -0.542 (0.534) -0.123 (0.571) 0.141 (0.633) 1.166 (0.913) 2.227 (1.367) 2.592 (1.520) 3.217 (1.963) 0.978 (0.819)
+0.007 (0.120)
+0.35 (0.090) -51.117 (57.051)
+
+(e)
+-0.987 (0.790) -0.884 (0.664) -0.524 (0.542) -0.126 (0.572) 0.111 (0.630) 1.066 (0.901) 2.078 (1.385) 2.394 (1.557) 2.976 (2.010) 0.680 (0.875)
+-2.442 (2.023) 0.016 (0.029) 0.189 (0.179) 0.337 (0.090) -48.048 (55.892)
+
+r2
+
+0.072
+
+0.072
+
+0.072
+
+0.069
+
+Observaciones
+
+3795
+
+3795
+
+3795
+
+3795
+
+Municipios
+
+345
+
+345
+
+345
+
+345
+
+Fuente: Elaboración propia con datos de ANTAD, CONAPO, INEGI, SAT y Wal-Mart
+
+0.069 3795 345
+
+56
+
+Referencias Balcázar Conde, J. (2010). Situación actual de los mercados públicos en el comercio
+minorista: El caso del mercado municipal" San Antonio" de Texcoco. Universidad Autónoma Chapingo, Texcoco, Estado de México.
+Basker, E. (2005a). Job creation or destruction? labor market effects of Wal-Mart expansion. Review of Economics and Statistics, 87(1), 174-183. doi:10.1162/0034653053327568
+Basker, E. (2005b). Selling a cheaper mousetrap: Wal-Mart's effect on retail prices. Journal of Urban Economics, 58(2), 203-229.
+Cacho Carranza, Y. (2004). Supermercados cómo nos hacen sus clientes. Revista Del Consumidor, 18-29.
+Dube, A., Lester, T. W., & Eidlin, B. (2007). Firm entry and wages: Impact of Wal-Mart growth on earnings throughout the retail sector. Working Paper no. Iirwps-126-05, doi:10.2139/ssrn.841684
+Durand, C. (2007). Externalities from foreign direct investment in the Mexican retailing sector. Cambridge Journal of Economics, 31(3), 393-411.
+Franklin, A. W. (2001). The impact of Wal‐Mart supercenters on supermarket concentration in US metropolitan areas. Agribusiness, 17(1), 105-114. doi:10.1002/1520-6297(200124)17:1<105::AID-AGR1005>3.0.CO;2-N
+57
+
+Goetz, S. J., & Swaminathan, H. (2006). Wal‐Mart and County‐Wide poverty. Social Science Quarterly, 87(2), 211-226.
+Gruidl, J., & Kline, S. (1992). The impact of large discount stores on retail sales in Illinois communities. Rural Research Report, 3(2), 1-8.
+Guariglia, A. (2002). Superstores and labour demand: Evidence from Great Britain. Journal of Applied Economics, 5(2), 233-252. Retrieved from http://www.ucema.edu.ar/publicaciones/download/volume5/guariglia.pdf
+Hicks, M. J. (2007). Job turnover and wages in the retail sector: The influence of Wal-Mart. Journal of Private Enterprise, 22(2), 137-159.
+Hicks, M. J., & Wilburn, K. (2001). The locational impact of Wal-mart entrance: A panel study of the retail trade sector in west virginia. Review of Regional Studies, 31(3), 305331.
+Ibarra Contreras, P. (2011). Entrada al mercado de los supermercados: Evidencia para México. El Colegio de México, México, D.F.
+Pierre-Audain Kasuga, J. (2005). El efecto de Wal-Mart sobre el mercado laboral. Instituto Tecnológico Autónomo de México, México, D.F.
+Sobel, R. S., & Dean, A. M. (2008). Has Wal‐Mart buried mom and pop?: The impact of Wal-Mart on self-employment and small establishments in the united states. Economic Inquiry, 46(4), 676-695. doi:10.1111/j.1465-7295.2007.00091.x
+58
+
+Stone, K. E. (1988). The effect of Wal-Mart stores on businesses in host towns and sorrounding towns in Iowa.
+Wal-Mart de México. (2006). Informe anual 2005. Wal-Mart de México. (2012). Informe financiero y de responsabilidad social, 2011.
+59
+
+Índice de tablas Tabla 1. Población media de las delegaciones y municipios con nuevas tiendas ............... 12 Tabla 2. Desarrollo humano de las delegaciones y municipios con nuevas tiendas............ 13 Tabla 3. Porcentajes de pobreza extrema y carencia por acceso a la alimentación de los municipios con nuevas tiendas ......................................................................................... 14 Tabla 4. Características de los municipios según el formato de tiendas abiertas................ 16 Tabla 5. Coeficientes de las regresiones de las tasas de crecimiento de los establecimientos 2000-2010 versus el logaritmo de la población................................................................. 25
+60
+
+Índice de figuras Figura 1. Municipios con aperturas de nuevas tiendas en el periodo 1994-2012................ 15 Figura 2. Población de los municipios menores a 400,000 habitantes en donde se instaló una tienda con formato Bodega en el periodo 2003-2012 ................................................. 18 Figura 3. Número de establecimientos por cada 10,000 habitantes según tipo de producto, en todos los municipios del país en el periodo 2000-2010 ................................................ 22 Figura 4. Número de establecimientos dedicados a la venta de alimentos por cada 10,000 habitantes en todos los municipios del país, en el periodo 2000-2010............................... 23 Figura 5. Tasa de crecimiento del número de establecimientos per cápita en todos los municipios ordenados por tamaño de población ............................................................... 24 Figura 6. Participación media de las cuatro principales cadenas en el total de establecimientos de autoservicio registrados ante el SAT según formato .......................... 26 Figura 7. Participación media de las cuatro principales cadenas en el total de establecimientos de autoservicio registrados ante el SAT en municipios con más de 400,000 habitantes según formato.................................................................................................. 26 Figura 8. Participación media de las cuatro principales cadenas en el total de establecimientos de autoservicio registrados ante el SAT en municipios con más de 30,000 y menos de 130,000 habitantes según formato.................................................................. 27 Figura 9. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de calzado .......................................................................... 33 Figura 10. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de alimentos....................................................................... 35 Figura 11. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de bebidas y tabaco ............................................................ 36 Figura 12. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de textiles exceptuando ropa............................................... 37 Figura 13. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta minorista de ropa............................................................................... 38 Figura 14. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta mayorista de alimentos ...................................................................... 39
+61
+
+Figura 15. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta mayorista de bebidas y tabaco............................................................ 40 Figura 16. Impacto de las bodegas en el número de establecimientos por cada diez mil habitantes de venta mayorista de textiles y calzado .......................................................... 41 Figura 17. Impacto de las tiendas con formato bodega en el empleo ................................. 42 Figura 18. Impacto de las tiendas con formato bodega en el empleo de los municipios con la localidad de mayor población a menos de 10 km .......................................................... 43
+62
+
+Índice de adjuntos Adjunto 1. Regímenes fiscales incluidos y excluidos en el análisis de la dinámica e impacto en los establecimientos.................................................................................................... 46 Adjunto 2. Aperturas promedio en el periodo 1994-2012, según la población del municipio ........................................................................................................................................ 47 Adjunto 3. Evolución del número de establecimientos por cada 10,000 habitantes según tipo de producto y tamaño del municipio.......................................................................... 48 Adjunto 4. Resultados de las regresiones para establecimientos minoristas de alimentos, variables seleccionadas. ................................................................................................... 50 Adjunto 5. Resultados de las regresiones para establecimientos minoristas de bebidas y tabaco, variables seleccionadas. ....................................................................................... 51 Adjunto 6. Resultados de las regresiones para establecimientos minoristas de textiles exceptuando ropa, variables seleccionadas. ...................................................................... 52 Adjunto 7. Resultados de las regresiones para establecimientos minoristas de ropa, variables seleccionadas. ................................................................................................... 53 Adjunto 8. Resultados de las regresiones para establecimientos mayoristas de alimentos, variables seleccionadas. ................................................................................................... 54 Adjunto 9. Resultados de las regresiones para establecimientos mayoristas de bebidas y tabaco, variables seleccionadas. ....................................................................................... 55 Adjunto 10. Resultados de las regresiones para establecimientos mayoristas de textiles y calzado, variables seleccionadas....................................................................................... 56
+63
+
+

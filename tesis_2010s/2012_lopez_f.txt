@@ -1,0 +1,3765 @@
+Centro de Estudios Demográficos, Urbanos y Ambientales
+Maestría en Demografía
+“ENERO Y FEBRERO, DESVIEJADERO”
+Tesis para obtener el grado de Maestro en Demografía. Sustenta: Fabiola López González
+Asesor: Dr. Manuel Ordorica Mellado Junio, 2012
+
+PREFACIO
+
+Enero y Febrero, desviejadero
+
+El presente trabajo es producto de una observación con algo de suerte, mi interés por el estudio de la mortalidad estacional surgió en un trabajo final para la clase de series de tiempo que tomé con el doctor Manuel Ordorica. El ejercicio a realizar era ajustar un modelo ARIMA a una serie de datos demográficos, elegí las defunciones. Como en la página del INEGI no había información disponible, sino de 1990 a 2009 y la técnica precisaba un mayor número de observaciones, entonces decidí tomar los datos mensuales y no anuales. He ahí que encontré un patrón estacional, luego lo observé en las series correspondientes a diferentes grupos de edad quinquenal y pude distinguir una relación entre la estacionalidad y la edad: las series dibujaban ondas estacionales amplias en los adultos mayores y en los niños menores de un año y procesos aleatorios sin ningún patrón estacional visible en las defunciones en edades intermedias.
+Finalmente, la serie cumplió su cometido: pude ajustarle un modelo ARIMA estacional y presentar mi trabajo final. El día de la presentación del trabajo dediqué una lámina a los patrones para cada grupo de edad. Al doctor Ordorica también le pareció interesante que los patrones por grupo de edad fueran diferentes: surgió un tema de tesis de maestría, con todo y título: “Enero y febrero, desviejadero”. Cuando comencé a investigar sobre el tema, me percaté de que en México no había trabajos sobre mortalidad estacional que no fuera causada por la influenza, a pesar de que la mortalidad estacional se ha estudiado desde el siglo XIX en Europa.
+Sinceramente, a menudo he dudado de la relevancia del tema que elegí investigar, quizá porque no hay muchos estudios sobre él en nuestro país. Sin embargo, desde mi punto de vista, es necesario indagar lo más posible sobre la relación que tiene el clima con la mortalidad, pues en la medida que ésta se conozca, será posible comprender la forma en que interactúan las poblaciones con su entorno, y en el estudio de los diferenciales de la mortalidad estacional, se puede descubrir lo que hace a las personas más o menos vulnerables a los cambios en el ambiente; tanto el aspecto biológico, como los factores económicos y sociales que afectan su supervivencia.
+Creo que hace algunas décadas, la sociedad no estaba muy consciente de que el clima cambia. Como, por lo regular, esos cambios ocurren muy lentamente, era raro que se hablara de ello. Hoy,
+2
+
+Enero y Febrero, desviejadero
+los medios de comunicación mencionan diariamente alguna noticia relacionada con el calentamiento global, cualquiera habla ya del cambio climático. Pero ¿cómo afecta el cambio climático en las poblaciones? ¿Realmente afectará la supervivencia de la especie humana?
+
+Esas preguntas sólo pueden resolverse si se conoce la relación de las poblaciones con su entorno. Los patrones de mortalidad tienen qué ver con las estructuras más profundas de las poblaciones, pues muchos de nuestros esfuerzos como sociedad han surgido con el fin de evitar a la muerte. La mortalidad estacional muestra la relación del individuo con el clima, por ello, el tema de esta tesis no sólo tiene qué ver con mortalidad, sino con la forma en que la especie humana se adapta a su medio ambiente. Es por eso que quizá, el estudio de la mortalidad estacional aportará un marco para la medición de las afectaciones a la supervivencia, debidas al cambio climático.
+
+El presente trabajo se divide en cuatro capítulos, el primero trata sobre el planteamiento del problema y la metodología que se utilizó para responder las preguntas de investigación, surgidas de la observación. El segundo capítulo contiene una revisión de la literatura sobre el tema, que atiende los puntos medulares del problema que se analiza en el presente documento. En el tercer capítulo, se muestran los resultados. Finalmente, en el cuarto capítulo se desglosan los principales hallazgos y algunas recomendaciones, así como las posibles aplicaciones que podrían tener, tanto los resultados, como los indicadores construidos para efectos de este estudio.
+
+Quisiera agradecer, antes que nada, al doctor Manuel Ordorica Mellado, mi director; así como a la doctora Ivonne Szasz Pianta, mi lectora, por su invaluable apoyo en la realización de este trabajo. Definitivamente, no habría podido llevarlo a término sin sus valiosos consejos y sugerencias. En segundo lugar, a los que leyeron mi trabajo y me apoyaron con excelentes aportaciones y comentarios constructivos: mis compañeros Laura Santoyo, Mauricio Rodríguez Abreu y Elvira Cedillo, y a las doctoras Landy Sánchez y Edith Pacheco. A todos ellos, muchas gracias. Quisiera dar las gracias también a todos aquellos amigos que me encontraba en el pasillo de la escuela o en la sala de profesores de Acatlán, que me escucharon con paciencia al platicarles sobre lo que estaba haciendo. Pero sobre todo ¡Gracias! a mis papás y a mis hermanos, que me acompañaron de nuevo en este proceso y a Dios, por darme fortaleza para alcanzar otra meta en mi vida.
+
+México, Junio 2012
+
+Fabiola López González.
+
+3
+
+Enero y Febrero, desviejadero
+CONTENIDO
+Prefacio ..............................................................................................................................................2 Capítulo 1: La mortalidad estacional en México ................................................................................9
+Principales conceptos .....................................................................................................................9 Planteamiento del problema .........................................................................................................11 Preguntas de investigación ...........................................................................................................13 Objetivo general ...........................................................................................................................14 Objetivos particulares...................................................................................................................14 Hipótesis ......................................................................................................................................14 Metodología .................................................................................................................................15
+Datos ........................................................................................................................................15 Operacionalización de variables ...............................................................................................16 Estrategia analítica ...................................................................................................................16 Métodos.................................................................................................................................... 17 La medición del patrón estacional ............................................................................................23 Capítulo 2: Revisión de la literatura .................................................................................................26 La mortalidad intraanual ..............................................................................................................26 Evolución de la mortalidad estacional en el tiempo .....................................................................29 La mortalidad estacional a través de sus diferenciales..................................................................32 El estudio de la relación entre la mortalidad estacional y la edad .............................................32 Estudios sobre la mortalidad estacional y el sexo.....................................................................37
+4
+
+Enero y Febrero, desviejadero Factores sociales y económicos que afectan la mortalidad estacional ......................................39 Resumen ....................................................................................................................................... 43 Capítulo 3: Resultados .....................................................................................................................44 Introducción .................................................................................................................................44 El patrón estacional en México ....................................................................................................45 Preescolares .............................................................................................................................. 47 Escolares ..................................................................................................................................49 Jóvenes .....................................................................................................................................50 Adultos Jóvenes .......................................................................................................................53 Adultos maduros ......................................................................................................................56 Adultos mayores.......................................................................................................................59 Relación de la mortalidad estacional con la edad y diferencias según sexo ..............................63 La mortalidad estacional y la educación ...................................................................................67 Resumen ....................................................................................................................................... 69 Capítulo 4: Conclusiones y recomendaciones ..................................................................................72 Principales hallazgos ....................................................................................................................72 Patrón estacional de la mortalidad en México ..........................................................................73 Relación de la Mortalidad estacional con la edad en México. ..................................................74 Diferencias de la mortalidad estacional de hombres y mujeres ................................................75 La educación como factor protector frente a la mortalidad estacional ......................................77 Hacia una base operativa ..........................................................................................................78
+5
+
+Enero y Febrero, desviejadero Reconstrucción de las cadenas causales del exceso de la mortalidad en invierno.....................79 Recomendaciones ......................................................................................................................... 80 En la salud pública ...................................................................................................................80 En el sector asegurador.............................................................................................................81 Referencias ....................................................................................................................................... 83
+6
+
+Enero y Febrero, desviejadero
+ÍNDICE DE FIGURAS
+Tabla 2.1. Razón mensual de la mortalidad mensual sobre la mediana anual. Figura 2.1. Gráfica de la razón de la mortalidad mensual sobre la mediana por grandes grupos de edad. Figura 3.1. Patrón general anual de la mortalidad estacional en México (1990-2009) Figura 3.2. Rango estacional proporcional (Población México) Figura 3.3.y 3.3.a. Patrón de variación de la mortalidad estacional en 1990-2009 de niños entre 0 y 1 años y de entre 0 y 4 años de edad, respectivamente. Figura 3.4. Rango estacional proporcional de los niños entre 0 y 4 años (1990 a 2009) Figura 3.5. Patrón de variación de la mortalidad estacional niños entre 5 y 9 años. (1990-2009) Figura 3.6. Patrón de variación de la mortalidad estacional de niños entre 10 y 14 años. (1990-2009) Figura 3.7. Rango estacional proporcional de los niños entre 5 y 9 años (1990 a 2009) Figura 3.8. y 3.8.a. Patrón de variación de la mortalidad estacional jóvenes en 1990-2009, entre 15 y 24 años y 25 y 29 años, respectivamente. Figuras 3.9.y 3.9.a. Rango estacional proporcional de los jóvenes en 1990 a 2009, entre 15 y 19 años y entre 20 y 29, respectivamente. Figura 3.10.y 3.10.a. Patrón de variación de la mortalidad estacional en 1990-2009, personas entre 30 a 39 y entre 40 y 44 años de edad, respectivamente. Figura 3.11. y 3.11.a. Rango estacional proporcional de las personas en 1990 a 2009, entre 30 y 34 años y de 35 a 39 años de edad.
+7
+
+Enero y Febrero, desviejadero Figura 3.12. Patrón de variación de la mortalidad estacional personas entre 45 y 59 años. (19902009) Figura 3.13. Rango estacional proporcional de las personas entre 45 y 59 años (1990 a 2009) Figura 3.14.y 3.14.a. Patrón de variación de la mortalidad estacional en 1990-2009, de personas entre 60 a 69 años y 70 y más de edad. Figura 3.15., 3.15.a. y 3.15.b. Rango estacional proporcional en (1990 a 2009) de las personas de entre 60 y 64, 65 y 79 y 80 y más años de edad Figura 3.16. Patrón estacional de la mortalidad de Mujeres por grupo de edad (1990-2009) Figura 3.17. Patrón estacional de la mortalidad de Hombres por grupo de edad (1990-2009) Figura 3.18. Relación de la intensidad del patrón estacional con la edad (1990 a 2009) Figura 3.19. Factores estacionales promedio (1990-2009) estandarizados, de personas de 60 y más años de edad, según nivel de escolaridad. Figura 3.20. Rango estacional proporcional (1990-2009), de personas de 60 y más años de edad, según nivel de escolaridad Figura 4.1. Indicador de vulnerabilidad al clima por grupo de edad (1990-2009) Figura 4.2. Muertes por causas en México para el total de la población, ocurridas entre 1990 y 2009
+8
+
+Enero y Febrero, desviejadero
+CAPÍTULO 1
+LA MORTALIDAD ESTACIONAL EN MÉXICO
+“Dime cómo mueres y te diré quién eres” Dicho popular mexicano
+PRINCIPALES CONCEPTOS
+La mortalidad puede definirse como la ocurrencia de eventos de muerte de los individuos de una población que se estudia; es el aspecto que mejor describe la situación de la salud de la población, por lo que no sorprende que sea la esperanza de vida --un estimador del nivel de mortalidad-- uno de los indicadores más importantes para diagnosticar las condiciones generales de salud. En nuestro país el descenso de la mortalidad se observa en forma sostenida desde poco antes de 1940, cuando la esperanza de vida se encontraba por debajo de los 35 años, en 2010 este indicador ascendía a 77.8 para las mujeres y 73.1 para los hombres (INEGI, 2010). La reducción de la mortalidad representa, sin duda, un logro de la especie humana y es por esto que forma parte de los objetivos del milenio. En este sentido, cobra relevancia diseñar estrategias para evitar la muerte, lo que sólo puede lograrse cuando se conocen los mecanismos que conducen a ella.
+La muerte, por su parte, puede definirse como el término o cesación de la vida, para comprender mejor qué es muerte, sin duda es necesario entender el concepto de vida. Según Herbert Spencer, naturalista, filósofo, psicólogo y sociólogo británico, “la vida es el ajuste continuo de las relaciones internas a las relaciones externas” (Spencer en Lotka, 1925; p. 145), pero, ¿es posible definir a la muerte de esta forma?
+El ser humano es, en primer lugar un ser vivo; por lo tanto, su existencia está condicionada por sus características biológicas. Por otra parte, se sabe que la vida en la Tierra ha estado determinada por
+9
+
+Enero y Febrero, desviejadero
+la temperatura que hay en ella y puede terminarse si ocurre un pequeño cambio relativo en ésta en cualquier dirección. “Cuando la temperatura baja, el metabolismo se retrasa y puede parar definitivamente, pues las reacciones químicas que lo mantienen, ocurren a temperaturas específicas. Por otro lado, cuando la temperatura se eleva demasiado, desaparece la organización de la célula que facilita las reacciones metabólicas” (Morowitz, 1992; p. 124).En conclusión, se necesita verdaderamente de un delicado balance térmico para sostener la vida.
+Podemos ahora definir con mayor libertad a la vida como un estado de equilibrio entre el ser vivo y su entorno. Dicho equilibrio depende del estado en que se encuentra en un momento dado, en primer lugar el ser vivo y en segundo, el medio que lo rodea.
+En primer lugar, la probabilidad de ocurrencia de la muerte de un individuo, varía con sus características. Definitivamente, la edad juega un papel determinante en el estudio de la mortalidad, pues no fallece la misma proporción de personas de una generación cuando tienen un año, que cuando ya cumplieron quince y a su vez, esta proporción no es similar a cuando ya alcanzaron más de ochenta años. Muchos autores como De Moivre, Gompertz, Makeham, entre otros, modelaron la mortalidad mediante funciones que consideran a la edad como única variable independiente. Asimismo, se ha encontrado que las mujeres tienen esperanza de vida diferente a la de los hombres, y las tasas específicas de mortalidad son distintas para hombres y mujeres. Es por lo anterior que el sexo y la edad se han considerado como diferenciales clásicos en el estudio de esta variable demográfica y nos proporcionan una caracterización intrínseca de la población frente a este fenómeno.
+Por otra parte, el ser humano está inmerso en un entorno social y su comportamiento lo determinan diversos factores psicosociales, que influyen en la forma en que reacciona ante las diversas situaciones a las que se enfrenta. Una de las características sociodemográficas de las personas que más influye en las prácticas, en tanto que constituye un elemento para enfrentarse a la vida, es la educación, pues afecta las oportunidades de acceso al empleo, el estilo de vida y la capacidad para hacer valer derechos civiles (CONAPO, 2010); y en esta dirección distingue a los individuos de sus semejantes, por lo que se ha argumentado que “la escolaridad es la variable proximal más importante para medir la heterogeneidad de las sociedades” (Lutz y Samir, 2011; p. 588).
+10
+
+Enero y Febrero, desviejadero
+En segundo lugar, el entorno es cambiante según la geografía pero también a lo largo del año. Los periodos interanuales tienen intervalos con climas característicos, que dependen del cambio de las estaciones a lo largo del año, que se debe a que el eje de rotación de la Tierra se encuentra inclinado con respecto al plano de la órbita, por lo que los rayos del Sol inciden de diferente forma, a lo largo del año, en los hemisferios norte y sur.
+Las estaciones se definen como los períodos del año en los que las condiciones climatológicas imperantes se mantienen en una región, dentro de un cierto rango. Su duración es de aproximadamente tres meses, lo que da lugar a cuatro estaciones: invierno, primavera, verano y otoño. En las regiones de la tierra cercanas al Ecuador las estaciones son sólo dos, la estación seca y la lluviosa, puesto que la temperatura se mantiene constante a lo largo del año, no así el régimen de lluvias.
+Así como cambia la temperatura debido a los cambios estacionales, se ha observado que, mensualmente, no ocurre el mismo número de defunciones, sino que presenta estadios donde hay un mayor número de muertes que en otros. A este comportamiento diferencial de la mortalidad a lo largo del año se le denomina mortalidad estacional. Este fenómeno se ha estudiado desde hace más de dos mil años, la primera aparición del tema en la literatura remonta a Hipócrates y su ensayo seminal “Sobre aires, aguas y lugares”, en el que ya se hablaba sobre este tema (Rau, 2007, p. 7). Los trabajos científicos más antiguos sobre este tema datan del siglo XIX. William Farr, en 1847 introdujo el concepto de “exceso de mortalidad estacional” que se refiere al incremento de la mortalidad durante el invierno (Gemmel, 2000; p. 274), mientras que Quetelet ya había elaborado un primer ensayo sobre el tema (1838). Estos dos trabajos dieroninicio al desarrollo de las primeras técnicas para medir los patrones estacionales de mortalidad, que han permitido conocer la relación entre la mortalidad y el clima en las diferentes estaciones del año.
+PLANTEAMIENTO DEL PROBLEMA
+En México los estudios sobre mortalidad estacional son muy escasos, los únicos trabajos publicados sólo tratan la mortalidad estacional por enfermedades respiratorias (influenza y neumonía), en específico, el de Kuri y Morales, publicado en 2006 y el de Fernández y Perdigón, en 2009. Estos padecimientos no se encuentran entre las primeras causas de mortalidad en este país, por lo tanto, el presente estudio busca una primera aproximación a la mortalidad estacional en México, a través de
+11
+
+Enero y Febrero, desviejadero
+sus diferenciales clásicos: la edad y el sexo. Además se analizarán también las diferencias según el grado de escolaridad de los fallecidos.
+Como el primer acercamiento que es, en este trabajo se estudiará el patrón estacional de muertes para todo el territorio como unidad, a pesar de que, por su ubicación, su orografía y sus extensos litorales, México posee múltiples climas. Asimismo, debido a que el objeto de estudio es el patrón estacional actual de la mortalidad, se considerarán sólo las defunciones ocurridas mensualmente desde el inicio de 1990 hasta el final de 2009.
+Esta delimitación resulta conveniente, porque durante ese periodo no sólo se incrementó la esperanza de vida –de 70 a 75 años de vida, sino que se implementaron diversas acciones de política con el fin de ampliar el acceso y la cobertura a los servicios de salud pública. El ejemplo más relevante es el Seguro Popular que en 2009 cubría a 5.7 millones de personas, así como el programa Oportunidades del Gobierno Federal, que contiene un componente de salud que beneficia a la población de escasos recursos. Por lo que, el análisis de este horizonte temporal permitirá verificar si estas iniciativas por parte del Estado han tenido un impacto efectivo en la disminución de la mortalidad y en qué forma lo han hecho.
+Puesto que el conocimiento de la mortalidad estacional permite una planeación más precisa de las estrategias encaminadas a reducir el exceso de muertes en las épocas del año en que aumenta, es importante conocer cuál es la población más vulnerable. Como ya se comentó al inicio de este capítulo, tanto el sexo como la edad nos permiten clasificar a la población en grupos con diferente riesgo de sufrir una muerte en estas épocas. Por esta razón, se comparará tanto el nivel de variación, como la forma del patrón estacional de la mortalidad entre subgrupos de población, segmentados por los determinantes clásicos de la mortalidad: edad y sexo.
+Sin embargo, la mortalidad estacional también está ligada a aspectos de bienestar social,relacionados con el desarrollo económico, por lo que, en ambientes de desigualdad, existen variables socioeconómicas que funcionan como diferenciales y la que mejor ha funcionado como gradiente social en el estudio de la mortalidad estacional es la educación (Rau, 2007). Esta relación es válida en la medida en que la educación influye en el acceso al empleo de las personas,así como en la manera que determina su estilo de vida.
+12
+
+Enero y Febrero, desviejadero
+“Numerosos estudios en los que se ha utilizado la educación como diferencial apuntan a que ésta es una variable proxy de la heterogeneidad social. Tanto el estatus socioeconómico como la acumulación de conocimientos permiten al individuo adoptar ciertas prácticas beneficiosas para conservar su salud y su vida” (Lutz y Samir, 2011; p. 589). Por lo tanto, las diferencias en escolaridad serán de utilidad para identificar poblaciones con distinta capacidad para enfrentar y sobreponerse al estrés que ejerce el entorno. Para conocer la forma en que los factores socioeconómicos moldean el patrón estacional de muertes, se estudiará la relación entre la mortalidad estacional y el nivel de escolaridad.
+PREGUNTAS DE INVESTIGACIÓN
+La escasez de trabajos sobre la mortalidad estacional para México motiva el estudio de los aspectos fundamentales que permitirán describir el patrón estacional de las muertes, de manera que de esta descripción surjan criterios para la planeación y análisis de políticas cuya intención sea la disminución de la mortalidad, pero también para que esta primera revisión de la situación de la mortalidad estacional en México genere nuevas incógnitas.
+1) Patrón general de la mortalidad ¿Cómo ha sido el patrón estacional de la mortalidad estacional en México entre 2000 y 2009?, ¿Es semejante al existente en los países en los que se ha estudiado?, ¿Evolucionó durante el periodo de análisis?
+2) Relación de la mortalidad estacional con la edad. ¿Cómo es el patrón estacional para la población de diferentes grupos de edad en México? ¿Cuáles son los grupos de edad que presentan mayor variación estacional?
+3) Diferencias por sexo del patrón estacional de muertes. ¿El patrón estacional es diferente según el sexo de las personas en el mismo grupo de edad?
+4) El patrón estacional de muertes según estatus social y económico. Tomando la educación como una variable proxy de la heterogeneidad social ¿el nivel de escolaridad funciona como una variable diferencial de la mortalidad estacional?
+13
+
+Enero y Febrero, desviejadero
+OBJETIVO GENERAL
+El objetivo del presente trabajo es caracterizar la mortalidad estacional en México e identificar grupos vulnerables al riesgo de morir durante las estaciones en que las condiciones son más adversas a la vida, segmentando la población fallecida entre 1990 y 2009 por las variables sociodemográficas: edad, sexo y escolaridad.
+OBJETIVOS PARTICULARES
+1) Patrón general de la mortalidad estacional. Verificar si el patrón de la mortalidad estacional en México ha cambiado o ha permanecido estático en el periodo de análisis, Comprobar si se asemeja o si difiere del existente en los países en los que se ha estudiado,
+2) Relación de la mortalidad estacional con la edad. Describir el patrón estacional para la población de diferentes grupos de edad en México, con el fin de identificar a los grupos de edad que presentan mayor variación estacional.
+3) Diferencias por sexo del patrón estacional de muertes. Identificar las diferencias entre los patrones estacionales de hombres y mujeres en el mismo grupo de edad.
+4) El patrón estacional de muertes según estatus social y económico. Tomando la educación como una variable proxy de la heterogeneidad social, comprobar si el nivel de escolaridad funciona como una variable diferencial de la mortalidad estacional y hacia qué sentido se orientan estas diferencias, es decir, si la mortalidad estacional es mayor en los grupos de menor escolaridad y menor en los de mayor escolaridad ó sucede en forma inversa.
+HIPÓTESIS
+Debido a que México se encuentra en una etapa avanzada de la transición epidemiológica, se espera que su patrón de mortalidad estacional presente el mayor número de muertes en diciembre y enero que en cualquier otro mes del año, y que el punto más bajo se sitúe en el verano. Debido a que en México, de 1990 a 2009 se han implementado políticas con el objetivo de reducir la mortalidad en todos los grupos de edad, se esperaría que la fluctuación estacional también sufriera una reducción,
+14
+
+Enero y Febrero, desviejadero
+diferente en cada grupo de edad según el impacto de la medida específica que se haya tomado para cada grupo.
+Asimismo, con base en los hallazgos de la literatura y en lo observado de la serie de datos, lo más factible sería que la estacionalidad por grupo de edades para el caso de México, entre enero de 1990 y diciembre de 2009 fuera menor entre en la población entre los quince y los treinta años de edad, y que creciera al alejarse de estos grupos, en ambos sentidos: tanto hacia las edades mayores como hacia las menores.
+Por otra parte, como se verá en el siguiente capítulo, los trabajos sobre mortalidad estacional en los que se ha tratado la diferencia de este fenómeno por sexo, apuntan a que ambos sexos presentan el mismo comportamiento. Sin embargo, los últimos estudios muestran que esta consideración es una “sobresimplificación” (Rau y Dobelhammer, 2003; p. 17) del fenómeno, pues cuando se segmentan más los grupos por edad aparecen diferencias en el comportamiento del fenómeno por sexo. Por lo tanto, se esperaría encontrar algunas diferencias en el patrón estacional de las muertes entre hombres y mujeres. Con la intención de apreciarlas mejor, los grupos de edadse segmentarán de manera adecuada.
+Con respecto a los factores socioeconómicos que afectan la estacionalidad de la mortalidad, y considerando que, la educación es una de las características sociodemográficas de las personas que más influye en sus hábitos y formas de comportamiento, se esperaría que tuviera algún efecto sobre el patrón estacional de la mortalidad y que funcionara como un factor de protección, por lo que se esperaría que las poblaciones más educadas presenten un patrón estacional con menores variaciones en comparación con sus contrapartes menos educadas.
+METODOLOGÍA DATOS
+Para los demógrafos el uso de tasas es la opción más conveniente. Sin embargo, debido a que el intervalo entre cada observación es muy corto, la utilización de tasas requeriría de la estimación de la población expuesta en cada grupo de edad, pero estas estimaciones podrían afectar los resultados de la investigación, por lo que en este estudio se utilizarán las “cuentas” de defunciones, es decir, el número de defunciones que ocurrieron en un periodo determinado.
+15
+
+Enero y Febrero, desviejadero
+La fuente de datos que se utilizará son los registros administrativos sobre defunciones que se encuentran a disposición pública en la página del Instituto Nacional de Geografía y Estadística (INEGI).Ya que la mortalidad no es sino la ocurrencia de los eventos de muerte, ésta en muchos casos se documenta en los registros administrativos, que están ligados no sólo a los hechos contemporáneos, sino también a todos los sucesos anteriores que han ocurrido desde que inició la práctica de registro. “Este tipo de datos permiten la observación continua de los sucesos demográficos en el tiempo, que teóricamente es la mejor, en tanto que no descuida a ningún individuo de las cohortes que son objeto de estudio, pero es necesario tener en cuenta que presenta ciertas limitaciones” (Pressat, 2000; p. 93).
+El horizonte de tiempo que se plantea analizar en este estudio va de enero de 1990 hasta diciembre de 2009, que corresponde a veinte años, equivalente a 240 observaciones mensuales. La población de estudio la constituyen los muertos entre 1990 y 2009 que fueron registrados el mismo año en que fallecieron, con la finalidad de reducir al mínimo el error de memoria del declarante del evento sobre el mes de fallecimiento.
+OPERACIONALIZACIÓN DE VARIABLES
+Las defunciones mensuales ocurridas entre el primero de enero de 1990 y el treinta y uno de diciembre de 2009 se separaron por grupos quinquenales, excepto para los menores de un año y los mayores de 85. Cada subgrupo de edad se dividirá por sexo. Las defunciones mensuales de cada uno de estos subconjuntos de la población conforman una serie de tiempo, y para cada una de ellas se llevará a cabo el análisis correspondiente.
+Para estudiar la mediación de la educación en la estacionalidad, sólo se utilizará el grupo en el que la estacionalidad es mayor y cuya educación se mantenga casi sin cambios durante el análisis. Se eligió, por lo tanto, el grupo de sesenta y más años, que se segmentó de la siguiente forma: sin educación, primaria incompleta, primaria completa, secundaria terminada, educación media superior y estudios profesionales.
+ESTRATEGIA ANALÍTICA
+Para dar respuesta a las preguntas planteadas, primero se estudió el patrón estacional de la población total, separada por sexo; en segundo lugar, se llevó a cabo el mismo análisis para cada grupo de edad. Se consideró que el patrón estacional tiene dos componentes: forma y amplitud.
+16
+
+Enero y Febrero, desviejadero
+La forma se define como la distribución total de las muertes a lo largo del año y constituye el elemento en el que es posible observar en qué meses se incrementa más la mortalidad, mientras que la amplitud del patrón es dada por el grado de variación máxima al interior de cada año analizado.
+A partir del conocimiento de la forma del patrón intraanual es posible identificar los meses en los que se concentran las muertes y los meses en los que ésta es menor en cada grupo, por lo que representa el calendario de la mortalidad estacional, mientras que la amplitud del patrón permite comparar entre grupos el grado de variación estacional entre ellos, por lo que se puede ver como una medida de intensidad del fenómeno.
+De este modo, podemos comparar entre grupos de edad, tanto la forma como la amplitud del patrón estacional. Esto será útil para comprender mejor el comportamiento del fenómeno en cada subgrupo poblacional, pues, por un lado, podría ayudar a inferir qué ocasiona el exceso de muertes en determinada época del año, mientras que la intensidad del patrón podría ayudarnos a definir grupos más vulnerables a los cambios en el entorno. Por lo tanto, este indicador permitirá comprender los cambios de la estacionalidad en el tiempo, estudiar la relación de la mortalidad con la edad, identificar si son los hombres o las mujeres los o las más vulnerables a morir por cambios en el entorno, e identificar qué subconjunto de la población –segmentada por nivel de escolaridad– es más vulnerable cuando hay cambios en el clima.
+MÉTODOS
+Debido a que los patrones estacionales no son estáticos en el tiempo, se considerarán los datos como una serie de tiempo. Una serie de tiempo puede definirse como un conjunto de datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros); de igual manera, llamamos serie de tiempo también a cualquier sucesión de datos registrados en forma periódica.
+Debido a que la serie de tiempo está compuesta por el número de eventos ocurridos y no por tasas, existe un efecto “tamaño” sobre la tendencia, puesto que el número de expuestos tiene un efecto directo sobre la cantidad de eventos que van a ocurrir y, como dentro del intervalo de análisis se registró crecimiento de la población diferenciado en cada grupo de edad, es necesario aislar el elemento estacional de la serie para liberarlo de ese efecto, con la finalidad de hacer un análisis más preciso.
+17
+
+Enero y Febrero, desviejadero
+
+El componente estacional es uno de los cuatro elementos de las series de tiempo que se han podido identificar y que en ocasiones no son directamente observables, pero que son susceptibles de ser aislados y son los que a continuación se enumeran:
+1. Tendencia: capta el comportamiento suavizado a largo plazo de la serie. 2. Ciclo: representa las oscilaciones de la serie a largo plazo, que no son
+estrictamente periódicas. 3. Irregularidades: son oscilaciones no predecibles o eventos accidentales de la serie
+y que no se repiten en el tiempo. 4. Estacionalidad: Fluctuaciones en períodos menores a un año, ya sea mensual,
+bimestral, trimestral, o diaria; que generalmente conforman patrones repetitivos. En general, todas las series de frecuencia inferior a la anual presentan estacionalidad en mayor o menor medida.
+
+“Además de que se puede aislar, la estacionalidad también se puede medir, porque se repite cada año. Pero, también es proclive a evolucionar” (BeeDagum, 1980; p. 683).
+
+En el estudio de las series de tiempo estacionales, por lo regular la intención es modelar el factor estacional, es decir, ajustar los datos a un patrón predeterminado.Sin embargo, el objetivo en este trabajo es conocer el efecto del factor estacional en la serie de tiempo, por lo que se necesitaría aislarlo.
+
+Las dos principales aproximaciones en el estudio de las series de tiempo, la descomposición y la
+
+metodología de Box & Jenkins, permiten aislar las diferentes componentes de una serie. La primera
+
+modela cada componente de la serie por separado y después compone la serie a partir de sus
+
+componentes en modelos aditivos (
+
+), multiplicativos (
+
+)o
+
+mediante una mezcla de estos dos tipos
+
+. Donde representa el componente
+
+de tendencia, al componente estacional y al componente residual de la serie de tiempo que
+
+se analiza.
+
+La segunda perspectiva busca generar modelos más simples, modelando todos los elementos de la serie en forma simultánea. En la metodología de Box y Jenkins, a partir del análisis exhaustivo de los datos a través de las funciones de autocorrelación, es decir, la correlación que tienen entre sí los elementos de la serie, se buscan modelos parsimónicos partiendo del modelo general:
+
+()(
+
+) ()
+
+18
+
+Enero y Febrero, desviejadero
+
+Donde las variables { } no se suponen ruido blanco, sino generadas por un proceso acorde con un
+
+modelo
+
+( ) (Auto-Regressive Moving Average model), o sea:
+
+()
+
+()
+
+(2)
+
+Con { } un proceso de ruido blanco(Guerrero, 2003).
+
+(3)
+
+() ( ) (
+
+) ()( )
+
+Denotado por
+
+( )(
+
+) . La importancia de este modelo radica en que, para
+
+series con observaciones mensuales, considera tanto las relaciones entre meses contiguos dentro de
+
+los años (2) como entre años para los mismos meses (1).
+
+Obtención del factor estacional
+Existen muchas técnicas para aislar la estacionalidad, sin embargo, sólo tres se encuentran implementadas en software comercial: la descomposición clásica, el método X11 y TRAMOSEATS.
+
+La descomposición clásica no constituye una técnica adecuada para este trabajo porque el componente estacional se estima como un promedio de la desviación mensual de la tendencia estimada, por lo que el componente estacional se considera constante y en este estudio se busca conocer la variación de la estacionalidad en el tiempo.
+
+El método X-11, desarrollado en 1920, es el que más se utiliza. La forma en que calcula el componente estacional de la serie de tiempo es a partir de medias móviles. A pesar de su popularidad, existen numerosos estudios que han mostrado serias debilidades, que se enlistan a continuación:
+
+1) Al usar X11 se pueden considerar ciclos estacionales cuando no lo son. 2) No es robusto para identificar cambios repentinos en la estacionalidad, lo que puede ocurrir
+si existe un cambio rápido en la mortalidad, algo no viable en la mortalidad general, pero sí al estudiar la mortalidad por causas.
+19
+
+Enero y Febrero, desviejadero
+3) X11 no es aplicable cuando existe la posibilidad de tener observaciones cuyo valor es cero, lo que puede ocurrir cuando los grupos de población que se analizan están muy segmentados, como en el caso de la mortalidad por causas.
+4) X11 puede subestimar o sobreestimar la estacionalidad, lo que es un problema grave si lo que se está estudiando es la estacionalidad en sí.
+5) La estimación es sensible al punto inicial de la media móvil, por lo que se obtienen factores estacionales distintos si se inició la media móvil al inicio o en cualquier mes del mismo año.
+6) Súper-sensibilidad a los valores fuera de rango.
+X-11 fue sucedido por el método X-12-ARIMA; mediante el cual se superó el último problema y también se encuentra implementado en programas estadísticos comerciales. Sin embargo, debido a que el método tiene problemas que afectan severamente la estimación del componente estacional, no se considerará para la realización del trabajo.
+Como ya se mencionó, sólo estos tres métodos se encuentran implementados en software especializados para el análisis de series de tiempo, y debido a que el análisis se llevará a cabo para varios grupos y el tiempo para realizar esta investigación es limitado, la opción de implementar un método distinto a los tres que se muestran no es viable, por lo que se eligió el método TRAMOSEATS para obtener el factor estacional de la serie de tiempo.
+El método TRAMO-SEATS Entre las ventajas de este método está, en primer lugar, que tiene resultados satisfactorios con patrones sencillos, como los de la mortalidad; además se encuentra implementado en el paquete estadístico E-views 5. A pesar de las ventajas ya mencionadas es importante tener en cuenta sus limitaciones, pues “los resultados que arroja no son satisfactorios cuando los datos tienen tendencia variable, un componente estacional cambiante y sobredispersión” (Rau, 2008; p.80).
+Las siglas TRAMO significan “Time Series Regression with ARIMA Noise, Missing Observations, and Outliers”, mientras que SEATS significa “Signal Extraction in ARIMA Time Series”. Estos programas (que normalmente se usan juntos) fueron desarrollados por Víctor Gómez y Agustín Maravall del Banco de España.
+20
+
+Enero y Febrero, desviejadero
+TRAMO es un programa para estimar y pronosticar modelos de regresión con errores posiblemente no estacionarios como los ARIMA (Autoregressive Integrated Moving Average model) y cualquier serie de observaciones ausentes, también identifica y corrige observaciones. El programa es eficiente en el ajuste estacional de series y en la extracción de señales estocásticas.
+
+SEATS es un programa para la estimación de los componentes no observados en series temporales, siguiendo un método basado en modelos ARIMA, en el que se estima y obtienen predicciones de la tendencia, el componente estacional, el componente irregular y los componentes cíclicos. Además se obtienen los estimadores mediante el método de mínimo error cuadrático medio para cada componente. SEATS puede usarse para un análisis profundo de series o para aplicaciones rutinarias masivas.
+
+SEATS considera una descomposición del tipo
+
+ó
+
+. La última es la
+
+más utilizada, pues considera que las oscilaciones son proporcionales a su nivel, lo que ocurre en el
+
+caso de la mortalidad, pues al haber más expuestos a morir en cierto grupo, la mortalidad –no
+
+importa en qué mes ocurra– será mayor.
+
+En el caso de SEATS, se supone que la serie puede separarse en dos componentes: de señal y de ruido, y para encontrar los componentes no observables, es preciso factorizarlos en modelos
+ARIMA para cada componente:
+
+()
+
+()
+
+Bajo los siguientes supuestos: (1) La serie linealizada puede replicarse sumando los componentes, (2) El modelo debe replicar las características asociadas a cada componente. Asimismo, la técnica se basa en los siguientes supuestos:
+1) Los componentes no observables no están correlacionados 2) Con respecto a los componentes:
+a. Las innovaciones se comportan como ruido blanco. b. Ningún par de polinomios ( ) ( ) comparten la misma raíz
+
+21
+
+Enero y Febrero, desviejadero
+c. Los polinomios ( ) y ( ), de orden y , respectivamente, pueden tener raíces unitarias o fuera del círculo unitario, sin embargo los polinomios ( ) deben ser unitarios.
+3) Los polinomios ( ) no comparten raíces unitarias. 4) El proceso de media móvil ( ) es invertible.
+Estos requisitos garantizan que ambos componentes del modelo sean factorizables en dos modelos ARIMA.
+
+Para el siguiente trabajo, el subproceso de interés es la estimación del componente estacional, que para llevarse a cabo, primero requiere de la identificación de los componentes no observables de la serie a través de su espectro, que en un proceso ARIMA, está dado por:
+
+( )( ) () ( )( )
+
+Con respecto al componente autorregresivo, SEATS factoriza las raíces del polinomio de la serie linealizada por TRAMO, ( ) ( ) ( ) para la serie linealizada en el dominio de la frecuencia, de manera que los componentes repliquen las características asociadas a cada componente.
+
+Luego de identificar los polinomios autorregresivos de los componentes, se factorizan los polinomios de media móvil (MA) de cada componente mediante descomposición canónica, en la que se maximiza la varianza del componente irregular y se minimiza la varianza de los demás componentes, lo que en el dominio de la frecuencia, significa minimizar la varianza de y .
+
+El siguiente paso consiste en la estimación de las componentes bajo el supuesto de normalidad de
+
+las innovaciones. Se consigue calculando la esperanza condicional de la señal sobre la serie
+
+observada
+
+(|
+
+), de este modo, se obtiene el estimador lineal con error cuadrático
+
+mínimo, incluso relajando el supuesto de normalidad del error. Para calcular la esperanza
+
+condicional se utiliza el filtro Wiener-Kolmogorov, que minimiza el error cuadrático medio.
+
+SEATS lo calcula mediante un algoritmo muy eficiente denominado Burman-Wilson.
+
+22
+
+Enero y Febrero, desviejadero
+En general, el componente estacional que se obtiene por medio de SEATS es estable, aunque cabe destacar que este método introduce variabilidad adicional al componente; por otra parte, cuando el componente estacional es muy estable, el filtro Wiener-Kolmogorov se indetermina, haciendo imposible el cálculo de la esperanza condicional para obtener el componente estacional.
+LA MEDICIÓN DEL PATRÓN ESTACIONAL
+Después de aislar el componente estacional de las series de tiempo, es necesario generar medidas que permitan compararlas entre sí. Con esa finalidad, se propone una técnica para aislar los componentes estacionales con la intención de analizarlos por separado, así como para hacer comparaciones entre los patrones estacionales de manera más eficiente.
+Análisis del patrón estacional Como parte de la estrategia analítica, en este estudio se propone separar el patrón estacional en dos partes: forma e intensidad. La primera se refiere a la distribución de las variaciones al interior del año; la segunda, al rango de variación estacional. Dividirlo de esta manera permite hacer comparaciones más precisas entre patrones estacionales, ya sea entre series o sobre la misma serie, en diferentes años.
+La forma del patrón estacional representa la manera en que se distribuyen las observaciones en el año. Para aislarla, se hizo uso de la siguiente transformación:
+Donde: : Componente de la forma del patrón estacional : Factor estacional obtenido mediante SEATS; refiere al año de observación, pues cada año de
+la serie de tiempo tiene un patrón estacional distinto. : El mínimo anual de los factores estacionales correspondiente al año . : El máximo anual de los factores estacionales correspondiente al año . 23
+
+Enero y Febrero, desviejadero
+Esta transformación permite identificar rápidamente el máximo y el mínimo anual; asimismo, hace posible la comparación de la estacionalidad con otros años y con otras series, pues sitúa el patrón en el mismo rango, entre 0 y 1; por lo que resulta un insumo más conveniente para hacer comparaciones entre patrones.
+Como una medida de la intensidad del patrón estacional, se propone el indicador que en este estudio se denominará rango estacional proporcional y que se calcula de la siguiente forma
+
+Esta función de factores estacionales permite separar la amplitud del patrón estacional y lo transforma en un factor cuyo valor se encuentra entre cero y uno. En el caso de los factores estacionales, cuando el indicador tiende a 0, la diferencia entre el máximo y el mínimo es pequeña; ocurre lo contrario cuando tiende a 1. El haberlo definido de este modo permite controlar el efecto del tamaño de los ponderadores.
+Además, es posible la recomposición de la serie de factores a partir de las dos componentes, forma e intensidad, mediante la siguiente función lineal:
+
+Donde: =
+
+y
+
+, por lo que los factores estacionales pueden
+
+reconstruirse mediante una función lineal a partir de los componentes que se identificaron.
+
+Detalles en la aplicación de la técnica
+Al obtener los patrones estacionales de las series de tiempo mediante la aplicación de la rutina TRAMO-SEATS, hubo algunas series de las que no se pudo obtener el patrón estacional por esta vía, ya que el filtro de Wiener-Kolmogorov quedaba indeterminado. Lo anterior se debió que el patrón estacional era muy estable, por lo que se asumió que era constante y se determinó por la vía clásica de descomposición a través de regresiones y medias móviles.
+
+24
+
+Enero y Febrero, desviejadero El resultado de la aplicación de estos dos métodos fue otro conjunto de series de tiempo conformado por la señal filtrada que corresponde sólo a la estacionalidad, objeto de estudio en este trabajo. Asimismo, para cada serie de tiempo y cada uno de los años observados, se calculó tanto la forma del patrón como su rango de variación proporcional.
+25
+
+Enero y Febrero, desviejadero
+CAPÍTULO 2.
+REVISIÓN DE LA LITERATURA
+“enero y febrero, desviejadero; marzo y abril de todo ha de ir” Refrán popular español
+LA MORTALIDAD INTRAANUAL
+En demografía, por lo regular, se estudian los sucesos que ocurren a lo largo de un año y se calculan tasas para conformar la medición del fenómeno demográfico cuya unidad de análisis temporal son los años. En el caso preciso de la mortalidad, se generan tasas de periodo para luego estimar probabilidades de muerte haciendo uso del supuesto de distribución uniforme de muertes, así como el de fuerza de mortalidad constante en intervalos menores o iguales a un año. Sin embargo, la mortalidad no ocurre de la misma forma a lo largo del año.Las personas lo saben, y esto se expresa en las concepciones sociales sobre el fenómeno, que se reflejan en los refranes, pero también en las investigaciones que se han llevado a cabo al respecto. En estas investigaciones se ha encontrado que las estaciones del año generan, para los hemisferios norte y sur, condiciones climáticas diferentes con rangos de temperatura extremos, debido a la existencia de dos temporadas: una de frío y otra de calor. Específicamente, uno de sus principales hallazgos ha sido la relación entre la temperatura y la mortalidad. Para comprender la relación de la mortalidad con la temperatura, se han realizado numerosos estudios.Uno de sus principales hallazgos es la determinación de una temperatura “óptima” para la vida humana, a la que la mortalidad se reduce al mínimo. Los expertos la ubican entre los 18º y los 20º centígrados (Donaldson y Keatinge, 1997),pues varía con la humedad, pero también es distinto
+26
+
+Enero y Febrero, desviejadero
+para cada grupo de edad. Por ejemplo, en el caso de los adultos mayores que son sedentarios, la temperatura a la que el riesgo de morir es menor estaría entre 20º y 21º centígrados (Collins, 1986).
+Uno de los estudios más importantes en cuanto al establecimiento de la temperatura óptima a la que se reduce el riesgo de morir, en tanto que ha sido el más exhaustivo al describir esta relación, es “Eurowinter”, dirigido por William Keatinge, según el cual “el riesgo de morir es el mínimo a una temperatura de 18ºC, y al desviarse la temperatura en 1ºC, la mortalidad se incrementa” (Keatinge, 2003; p. 512).
+Los hallazgos de este trabajo apuntan a que la proporción en la que aumenta la mortalidad según la variación de la temperaturadifiere por regiones. Por ejemplo, en Finlandia la proporción en la que se incrementa la muerte es la menor por cada grado centígrado de variación: 0.29%en el norte y 0.27%al sur; en cambio, en Atenas esta proporción es casi diez veces mayor y asciende a 200%(Donaldson y Keatinge, 1997).
+A fin de comprender mejor la relación entre las variaciones de la temperatura y el incremento en la mortalidad, se han realizado trabajos en las regiones más frías de la tierra, donde, contrario a lo que se esperaría, los descensos en la temperatura dejan de tener efecto en la mortalidad.Este resultado proviene de los estudios para dos ciudades rusas: en el primero, hecho para Yekaterinburgo, se observó que la mortalidad se incrementa sólo a temperaturas por debajo de los 0ºC, mientras que en el segundo trabajo, elaborado para la ciudad de Yakutsk,considerada como la ciudad más fría del mundo, se observó independencia entre la mortalidad y las variaciones de temperatura, mientras ésta se encuentre dentrodel rango de los 10.2º C y los -48.2ºC. (Donaldson, Tchernjavskii, Ermakov, Bucher, y Keatinge, 1998; Donaldson, Ermakov, Komarov, McDonald, y Keatinge, 1998).
+A la luz de los hallazgos hechos por los estudios que se han mencionado, se esperaría que las regiones con menores temperaturas durante el invierno presentaran mayores fluctuaciones estacionales de la mortalidad. Por el contrario, se ha encontrado que son las regiones de climas húmedos y templados en Europa, como Grecia, España, Portugal e Italia, las que tienen mayor exceso de mortalidad durante el invierno que Finlandia y Noruega. De hecho, entre mayor es la temperatura mínima mensual, la proporción en que se incrementa la mortalidad durante el invierno es mayor; a éste fenómeno se le denomina “paradoja estacional” (Rau, 2007, p.10).
+Es claro entonces, que las variaciones en la temperatura afectan la mortalidad. Las estaciones, en tanto que están siempre asociadas a condiciones climáticas específicas de temperatura y humedad,
+27
+
+Enero y Febrero, desviejadero
+presentan distintos escenarios de riesgo para la vida: en algunas mantenerse con vida resulta más difícil que en otras, por lo tanto, existe un efecto diferencial de las estaciones sobre la mortalidad. A la observación de la mortalidad desde esta perspectiva, se le conoce como estudio de la mortalidad estacional. En este sentido, cabe preguntarse si son las estaciones más frías o las más calientes donde la mortalidad se incrementa
+Al respecto, la mayoría de los estudios muestran quees durante el invierno que las defunciones se incrementan en mayor medida, con respecto a las otras estaciones, “a pesar de que se ha hablado mucho del riesgo de que fallezcan más personas debido a olas de calor como resultado del calentamiento global reciente”(Rau, 2007, p. 7). Los estudiosos del tema han afirmado que el exceso de mortalidad en Europa, generado por las olas de calor que resultan del cambio climático, podría ser mucho menor que lo que actualmente ocurre en el invierno, por lo que “de ocurrir un incremento en la temperatura de la Tierra, la reducción en el exceso de mortalidad invernal dejaría un balance positivo, pues compensaría en gran medida el incremento en la mortalidad que pudiera darse debido a veranos más cálidos” (Keatinge, 2004; p.512).
+La relación paradójica entre la temperatura y la mortalidad permite entrever la incidencia de otros factores relacionados con la forma en que las poblaciones lidian con las modificaciones del entorno en el que se desenvuelven, por lo que puede decirse que estas fluctuaciones de la mortalidad “son una de las ‘estructuras profundas’ que identifican los principales factores culturales y ambientales que moldean a una población” (Shaw, en Rau y Dobelhammer, 2003; p. 1). Sin embargo, no debemos olvidar que la mortalidad no es igual para todos los individuos que conforman una población, sino que todos tienen diferente propensión a morir de acuerdo con un sinnúmero de características que sólo le pertenecen al sujeto, es decir, intrínsecas a su individualidad. Pero, el estudio de la mortalidad de una población, a través de la observación de cada individuo que la conforma, resulta en la práctica una tarea realmente dura, si no es que imposible. Una manera de profundizar en el comportamiento de la mortalidad, es mediante la reducción del nivel de agregación de la población de estudio a través del estudio de los diferenciales.
+Los diferenciales clásicos utilizados en el estudio de la mortalidad son la edad y el sexo. Estas variables han estado presentes desde el desarrollo de las primeras tablas de vida. El análisis por edad y sexo sigue siendo una de las mejores maneras para aproximarse al estudio de cualquier fenómeno demográfico. En el caso de la mortalidad estacional, el estudio de estas variables ha sido motivo de una gran cantidad de trabajos, pero más abundantes son aquellos que se concentran en el estudio de la relación entre la mortalidad estacional y la edad que los que buscan comparar las
+28
+
+Enero y Febrero, desviejadero
+diferencias entre sexos. Además de estas variables sociodemográficas, se han explorado algunas otras más que pudieran catalogarse como factores socioeconómicos, que influyen sobre la mortalidad estacional.
+La literatura sobre el tema incluye trabajos en los que se analiza el efecto de algunos factores socioeconómicos que se pensaría que tienen alguna clase de influencia sobre la mortalidad estacional, como por ejemplo la contaminación del aire o la distribución de vacunas contra la influenza. Sin embargo, “son el progreso social y económico los factores que se han identificado como los causantes de la disminución de la mortalidad estacional en forma significativa: el acceso a sistemas de calefacción, viviendas con aislamiento térmico adecuado, pero también la forma en que se comportan las personas” (Keatinge, 2000; p. 733), incluso sus hábitos alimenticios, tienen efecto sobre el patrón estacional de la mortalidad. La importancia de la mediación de los factores sociales sobre el exceso de la mortalidad en el invierno se hace patente, en tanto que, “la fuerza con la que se presenta la relación muestra la incapacidad de sectores de la población para protegerse adecuadamente de los efectos de la temperatura, más que de los efectos de la temperatura en sí”(Gemmell, McLoone, Boddy, Dickinson, y Watt, 2000; p. 174). De este modo, el análisis de la mortalidad estacional a través de sus diferenciales, permite identificar grupos de la población que son más vulnerables al riesgo de morir, dadas sus características.
+De este modo, se analizará primero cómo es y cómo ha sido el patrón de la mortalidad estacional, con la finalidad de comprender su evolución en el tiempo y cuáles pudieran ser las fuerzas que provocan estos cambios, para profundizar en este entendimiento; a continuación, se hará una revisión de la literatura en la que se ha profundizado en el estudio de la mortalidad estacional a través de los diferenciales sexo y edad; y finalmente, se analizarán de manera breve los trabajos que tratan sobre los factores sociales y económicos con mayor influencia sobre el patrón estacional.
+EVOLUCIÓN DE LA MORTALIDAD ESTACIONAL EN EL TIEMPO
+El primer antecedente que se tiene de la mortalidad estacional es de hace más de dos mil años y se trata del ensayo seminal “Sobre Aires, Aguas y Lugares” escrito por Hipócrates; de ahí a la fecha, ha habido numerosos estudios que tratan más bien de comprender cuáles son los factores que llevan a la muerte, sobre todo en el invierno, época del año en que se ha documentado un sensible incremento de muertes (Rau, 2007). Existen además estudios antropológicos sobre poblaciones del antiguo Egipto y Roma, hechos con las inscripciones de tumbas, y que han encontrado patrones de
+29
+
+Enero y Febrero, desviejadero
+mortalidad estacional asociados a un exceso de muertes en verano debido a enfermedades infecciosas como la disentería y la malaria, mientras que las muertes en invierno, según los expertos que han estudiado este tema, se deben principalmente a tres causas: enfermedades respiratorias, cardiovasculares y cerebrovasculares (Rau, 2007; p. 8).
+El tema de la mortalidad estacional no es nuevo y existe una enorme cantidad de literatura que lo documenta. En la actualidad el patrón estacional presenta la mayor concentración de los fallecimientos en el invierno y la menor durante los meses de verano, pero no siempre ha sido así. La demografía histórica ha logrado captar patrones estacionales de la mortalidad tomandocomo fuente las fechas de tumbas egipcias y, posteriormente, de las catacumbas romanas.Podríamos considerar que esas son las evidencias más antiguas que permiten el estudio de la mortalidad estacional en esa época. Sin embargo, es necesario puntualizar que los datos en los que se basan los estudios son, en muchos casos, de dudosa calidad para el análisis estadístico, pues no fue sino hasta el año 1400 quese crearon los primeros registros escritos de defunciones. Por lo tanto, para el estudio de la mortalidad estacional antes del siglo XIV, se tomó información proveniente de inscripciones funerarias.
+En cuanto a la cantidad y calidad de datos disponibles para el análisis, los mejores estudios son los hechos por Walter Scheidel sobre momias del Egipto de los romanos, publicado en 2001; así como el trabajo de Brent Shaw a partir de las inscripciones funerarias en las catacumbas de Roma. En esa época,los picos estacionales eran dos en el año: uno en la época de calor y otro en la de frío (Shaw, 1996). Al parecer, el incremento de las muertes en verano estaba ligado a la diseminación de la malaria entre la población, que además de ser favorecida por el clima mediterráneo de las regiones de las que se tiene información, fue facilitado por prácticas salubres inadecuadas.
+Antes del año 1400, existían dos regímenes de mortalidad opuestos, el primero con picos durante la estación cálida, causado posiblemente por la dispersión de enfermedades infecciosas, esto en las regiones con clima templado, mientras que en las regiones con clima más frío, mostraban mayor mortalidad en invierno.La estación con menor número de muertes era la primavera y los inicios del verano (Rau, 2007; p. 21).
+Existen dos estudios sobre mortalidad estacional en Europa entre 1400 y hasta 1800, uno de Louis Henry y el otro del Grupo de Cambridge para el estudio de la Historia de la Población y la
+30
+
+Enero y Febrero, desviejadero
+Estructura Social, que arrojaron valiosos resultados sobre mortalidad estacional, Ambos se basaron en los registros parroquiales de defunciones. Esto representó una gran ventaja para el análisis, puesto que se contaba con evidencia escrita, sin embargo, los investigadores tuvieron que valerse de métodos arqueológicos para poder hacer inferencias sobre las historias de las poblaciones. Entre los resultados más sobresalientes de estos trabajos, figura la conformación de un patrón estacional muy similar al que prevalece en la actualidad en el hemisferio norte: las muertes repuntan en invierno y encuentran su punto más bajo entre los meses de julio y agosto.Sin embargo, convive con otros patrones que están ligados con las condiciones sociales. En Francia y Reino Unido, se presentaba un exceso de mortalidad en el verano ligado a malas condiciones de salubridad, mientras que el exceso de mortalidad invernal se debía a desnutrición en la vejez. Con respecto a la relación entre la mortalidad estacional y la edad, el estudio de Cambridge muestra que la gente mayor presenta un patrón estacional con mayor variación.
+A partir del siglo XIX, mejoró la calidad de los registros de defunciones, en tanto que, en Europa, esta función pasó a manos del estado. Además, los censos se convirtieron en ejercicios frecuentes en los países de esta región. La mayor disponibilidad de información y su mejor calidad hizo posible la realización de estudios sobre mortalidad estacional. Los patrones que muestran los estudios realizados de 1800 al día de hoy son diferentes a los que se presentan en la actualidad. En general, en los países en los que se ha analizado el cambio de la mortalidad estacional en el tiempo (Estados Unidos, Reino Unido y Dinamarca) se ha observado una tendencia, por un lado, al cambio en la forma del patrón, que sólo presenta un exceso de mortalidad en invierno y baja mortalidad en el verano; por el otro, hacia la reducción de la intensidad de la estacionalidad. Existen varios argumentos alrededor de ésta reducción, por un lado, la implementación de medidas de salud pública como vacunas contra la influenza. Pero como ya se ha mencionado, los excesos de muerte estacional no son explicados por las infecciones de las vías respiratorias, por lo que otras posturas se inclinan por la influencia que puede haber ejercido la expansión del uso de sistemas de calefacción y la construcción de viviendas con mejores condiciones de aislamiento.
+“Este cambio en el tiempo parece estar relacionado con la evolución de las causas de muerte al paso del tiempo” (Feinstein, 2002; p. 19), pues se ha encontrado que las causas asociadas al exceso de muertes estacionales también se ha modificado: por un lado, las muertes por influenza y otras enfermedades respiratorias disminuyó, mientras que los fallecimientos por enfermedades cardiovasculares y cerebrovasculares se han incrementado con el paso del tiempo, lo que podría ser evidencia de la transición epidemiológica.
+31
+
+Enero y Febrero, desviejadero
+Así como la mortalidad estacional ha cambiado a través del tiempo, tampoco es igual para toda la población, sino que, al ser reflejo de la relación de las personas con su medio ambiente, es diferente según las condiciones de quienes se enfrentan a ella. Por lo que, para tener un panorama completo de la mortalidad estacional, es necesario comprender la mediación de las características de los individuos que la experimentan. Será a través de los estudios sobre los diferenciales de la mortalidad estacional que nos aproximaremos al estudio de estas mediaciones.
+LA MORTALIDAD ESTACIONAL A TRAVÉS DE SUS DIFERENCIALES EL ESTUDIO DE LA RELACIÓN ENTRE LA MORTALIDAD ESTACIONAL Y LA EDAD
+“…aucun âge de la vie, l’influence des saisons n’est pas sensible sur la mortalité que dans la vieillesse; et [qu’] aucun âge elle ne l’est moins qu’entre vingt et vingt-cinq ans.” Adolphe Quételet, 1838; p. 11
+La relación entre la mortalidad y la edad es una de las más estudiadas en la demografía. En particular, en el caso de la mortalidad estacional, el estudio de esta relación se encuentra plasmado en uno de los artículos seminales sobre mortalidad estacional, “La mortalidad a diferentes edades en Bélgica” que Adolphe Quetelet publicara en 1838. Este documento aporta las primeras evidencias sobre la relación entre la mortalidad estacional y la edad, y en él se describe por primera vez el patrón por edad de la mortalidad estacional. Los datos que se utilizaron corresponden a la observación de cuatrocientas mil defunciones ocurridas en Bélgica durante cinco años, entre 1827 y 1821. Para visualizar las variaciones estacionales se construyeron indicadores que toman la mediana de la mortalidad mensual como el denominador de una razón cuyo numerador es la mortalidad en el mes de estudio, de modo que el indicador constituye un factor proporcional a la mediana, y así, permite identificar la variación estacional.
+32
+
+Enero y Febrero, desviejadero El trabajo de Quetelet es el estudio descriptivo más completo que se ha hecho sobre este diferencial, incluso si se le compara con otros trabajos más modernos, pues en él se analizaron todos los grupos de edades, incluso los primeros dos años de vida se estudiaron analizando cada trimestre que los conforma. A partir de los dos años el intervalo de edades se amplía hasta alcanzar una longitud de diez años, mientras que el último grupo es un intervalo abierto a partir de los noventa años de edad, como lo muestra la tabla 2.1, tomada del trabajo de Auguste Quetelet. Tabla 2.1. Razón mensual de la mortalidad mensual sobre la mediana anual.
+Fuente: Quetelet, 1838, p. 7. De este modo se puede hacer un ejercicio de inferencia sobre la forma en que interactúan la edad y el clima de de los diferentes meses del año, describiendo así el patrón de la mortalidad estacional para Bélgica por grupos de edades; el gran hallazgo plasmado en este documento es haber identificado que las estaciones tienen una influencia diferencial según la edad. Según Quetelet (1838), ésta es mayor en la vejez y menor para los adultos jóvenes. A partir de la tabla en la que
+33
+
+Enero y Febrero, desviejadero
+compara la variación estacional de los diferentes grupos de edad, se construyó la siguiente gráfica que muestra el patrón estacional de la mortalidad para algunos grupos de edad que se consideraron en el análisis. En ella podemos ver que los máximos y los mínimos de los niños menores de un año, así como los de las personas entre 65 y 75 años y los de noventa años y más de edad, son los más alejados, mientras que los más jóvenes presentan un patrón menos marcado.
+Figura 2.2. Gráfica de la razón de la mortalidad mensual sobre la mediana por grandes grupos de edad.
+
+1.8 1.6 1.4 1.2
+1 0.8 0.6
+Ene Feb Mar Abr May Jun Jul Ago Sep Oct Nov Dic Fuente: Elaboración propia con datos del estudio de Quetelet, publicado en 1838, p. 11
+
+0-1 12-16 30 - 40 65 - 75 90+
+
+A pesar de que los primeros estudios científicos de la relación entre la mortalidad estacional tienen casi dos siglos, y habiéndose encontrado un patrón estacional de la mortalidad diferenciado por edad, existe una gran cantidad de trabajos en los que el análisis de la mortalidad estacional se lleva a cabo sin tomar en cuenta el efecto diferenciado que tiene ésta sobre cada uno de los subgrupos de edad como el de Rosenwaike, publicado en 1966 y el estudio de Barret, de 1990. A pesar de ello, sus hallazgos son importantes y se discutirán en lo sucesivo. Otros trabajos distinguen en su análisis a un sólo grupo de edad. La mayoría se centra en el estudio de la mortalidad estacional a edades avanzadas. Algunos ejemplos de este tipo de análisis son: el trabajo de Bull y Morton, publicado en
+34
+
+Enero y Febrero, desviejadero
+1978, que separa las defunciones de dos grupos etarios: mayores y menores de sesenta años. En su análisis muestran cómo es el patrón estacional para Inglaterra y Gales y lo comparan con el que prevalecía en Nueva York. La principal conclusión de este estudio con respecto a la edad, es que son los mayores de sesenta años quienes presentan mayores variaciones estacionales. Mientras tanto, Keatinge, Coleshaw y Komorov (1989) estudiaron el exceso de muertes invernales con la finalidad de determinar el impacto de la integración del sistema de calefacción central a todos los hogares. Se tomó en cuenta para ello el comportamiento diferencial entre el grupo de setenta a setenta y cuatro años de edad en comparación con toda la población, se revisaron las defunciones ocurridas en enero y marzo de 1964 a 1984.
+Después de Quetelet, sólo dos trabajos han retomado el estudio completo de la relación de la mortalidad estacional con la edad. El primero de estos trabajos, publicado en 1999 por Nakai, Itoh y Morimoto, considera la mortalidad causada por golpes de calor en Japón entre los años de 1968 y 1994. Los grupos etarios están construidos en forma quinquenal, y el objetivo es relacionar las muertes debidas a golpes de calor con el calentamiento global. El principal hallazgo en este trabajo con respecto a la edad, es que la mayoría de las muertes (50.1%) debidas a causas relacionadas con golpes de calor, ocurrieron en niños menores de cuatro años y en las personas de setenta años y más, lo que, según los autores, “indica la vulnerabilidad de estos subgrupos de la población ante el cambio climático”(Nakai, Itoh y Morimoto, 1999; p. 43).
+El segundo trabajo fue publicado por Feinstein en 2002 y trata la estacionalidad de la mortalidad con respecto a la edad en Estados Unidos.Para llevar a cabo este estudio, el autor usó las estadísticas vitales de las defunciones ocurridas en ese país entre los años 1994 y 1998. Tomó como ejes de análisis las causas de muerte y la edad y utilizó para su análisislos métodos de regresión y una variación del Census X-11. Éste último tiene como finalidad descomponer series de tiempo. Confirma, como los estudios anteriores, que son los más jóvenes y los de mayor edad los que presentan mayor estacionalidad.Al revisar las causas, determina que el exceso estacional en invierno es ocasionado por enfermedades cardiovasculares y respiratorias que afectan a las personas mayores, mientras que los excesos en verano se deben a causas externas y ocurren principalmente en los más jóvenes, y puntualiza que la evolución de la relación de la mortalidad estacional en el tiempo es atribuible a la variación temporal en las causas estacionales. Asimismo, encontró que “la tendencia general de la mortalidad estacional es diferente según la edad: para los de mayor edad es claramente positiva, mientras que, en el caso de los jóvenes, la variación estacional se encuentra en franca disminución” (Feinstein, 2002; p. 485).
+35
+
+Enero y Febrero, desviejadero
+Los estudios más recientes que tratan la relación de la mortalidad con la edad son, en orden cronológico, el publicado por Rau y Dobelhammer, de 2003, y la tesis doctoral de Rau publicada en 2007. Con respecto a la relación entre la mortalidad estacional y la edad, ambos estudios confirman los resultados obtenidos por sus predecesores.
+El trabajo de Rau y Dobelhammer trata sobre la mortalidad estacional en Dinamarca y su relación con la edad.Lo hacen utilizando “los mejores datos sobre mortalidad disponibles en el mundo”: las estadísticas vitales de este país nórdico (Rau, 2007: p. 135), lo que les permite hacer un estudio por cohorte. Entre otros resultados, confirman el hecho de que la mortalidad estacional se incrementa en las cohortes más viejas, lo que muestra que las diferencias estacionales no sólo se deben a los procesos relacionados con el incremento de la edad, sino que existe un componente generacional que afecta este vínculo.
+La tesis de Roland Rau, publicada en 2007, es quizá el trabajo más importante sobre el estudio de la mortalidad estacional, en dos sentidos: su vasta recuperación de la bibliografía sobre el tema, así como el análisis que hace de las técnicas para medir la mortalidad estacional que la hacen única. Rau obtiene sus principales aportaciones de dos estudios de caso: el primero, hecho sobre la mortalidad estacional de Dinamarca y el segundo, sobre la de Estados Unidos. En ambos casos profundiza en el estudio de otros diferenciales, y a pesar de que limitó su análisis a los grupos de mayor edad, sus hallazgos confirman lo que se ha encontrado en otros artículos. La gran fortaleza de este trabajo es la utilización de métodos robustos de estadística no paramétrica para estimar el patrón estacional, que permiten hacer afirmaciones sobre la relación entre las variables que se analizan y la mortalidad estacional, debido al cuidado con el que se utilizaron las técnicas.
+Por un lado, la aportación de este nuevo estudio sobre Dinamarca fue el análisis de las causas de muerte identificadas como estacionales, así como el análisis según diversos factores socioeconómicos. Gracias a la riqueza de los datos que utilizó, pudo llevar a cabo un estudio longitudinal de las personas que tenían sesenta y cinco años o más en 1980, y las siguió hasta el año 2000, de acuerdo con la edad que tenían al momento de iniciar el estudio en grupos quinquenales. Acorde con sus resultados, la relación de la mortalidad estacional con la edad es diferente para hombres y para mujeres en cada etapa de la vida. Determinó que esta diferencia depende de la causa de muerte que afecta a cada uno de los subgrupos de la población clasificados de esa manera.
+36
+
+Enero y Febrero, desviejadero
+En el estudio sobre el comportamiento de la mortalidad estacional en Estados Unidos, Roland Rau se concentró en las personas mayores de sesenta y cinco años y las separó en grupos de edad quinquenales. Como resultado es este análisis, confirmó que en este subconjunto de edades la variación estacional se incrementa conforme aumenta la edad. Para la realización de este estudio, a diferencia del que llevó a cabo para Dinamarca, sólo dispuso de información de periodo sobre las defunciones, por lo que la técnica de análisis se modificóde forma sustancial, ya que no fue posible tener resultados por cohorte. Los periodos analizados estáncomprendidos entre 1959 y 1963 y de 1994 a 1998. Los resultados obtenidos apoyan la tesis de Feinstein, según la cual la estacionalidad de la mortalidad se ha reducido en el tiempo para los más jóvenes, mientras que se ha incrementado para los más viejos (Feinstein, 2002, p. 435; Rau, 2008, p. 107).
+ESTUDIOS SOBRE LA MORTALIDAD ESTACIONAL Y EL SEXO
+A pesar de que en el estudio de la mortalidad en general se ha encontrado una clara diferencia en el comportamiento de este fenómeno entre hombres y mujeres, en el estudio de la mortalidad estacional, la literatura muestra evidencias contradictorias. Quizá esto se deba a que, en muchos casos, las técnicas que se utilizaron no permitieron una medición precisa de la intensidad con la que ocurre el fenómeno, que permita comparar entre subpoblaciones. Sin embargo, el estudio de esta variable como diferencial de la mortalidad estacional es tan antiguo como el estudio de la edad. La primera evidencia es el mismo artículo de Quetelet que ya ha sido citado en este documento, en el que se refiere que las diferencias por sexo entre la mortalidad estacional se encontraron primero en los menores de un año: las niñas mostraron un patrón estacional con variaciones menores a las de los hombres, mientras que entre los 12 y 16 años, éste es más fuerte para las mujeres que para los hombres. “Entre los veinte y veinticinco años, la variación estacional vuelve ser más intensa en los hombres que en las mujeres y continúa así hasta el fin de la vida” (Quetelet, 1838; p. 32).
+Después del trabajo seminal de Quetelet, pocos han ahondado en el estudio de la relación entre la mortalidad estacional y el sexo, a pesar de que esta es una de las diferenciales clásicas de la mortalidad general. Los estudios realizados muestran resultados contradictorios: por un lado, algunos aseguran que no existe diferencia entre las variaciones estacionales entre mujeres y hombres; por el otro, otros estudios han encontrado una diferencia significativa en los patrones estacionales de ambos sexos.
+37
+
+Enero y Febrero, desviejadero
+En la primera categoría sobresale la investigación que el Eurowinter Group llevara a cabo en 1997, en la que se estudió la mortalidad ligada a ciertas causas asociadas con el exceso de muertes durante el invierno para varios países europeos. Se utilizó un modelo de regresión en el que la temperatura. El sexo y la edad funcionaron como variables independientes contra el número de defunciones en el grupo. El sexo resultó tener correlación no significativa con la mortalidad estacional, con respecto al resultante para las otras dos variables analizadas. Este resultado coincide con el de otro trabajo sobre el incremento de la mortalidad durante el invierno en Hong Kong, en el que, en palabras del autor, “no se encontró diferencia en la mortalidad estacional por sexo” (Yan, 2000; p. 419). Asimismo, un estudio para Japón sobre la mortalidad por golpes de calor mostró que, tanto para los más jóvenes como para los mayores, las muertes por esta causa ocurren independientemente del sexo (Nakai, Itoh y Morimoto, 1999; p. 126).
+En cambio, uno de los principales hallazgos del trabajo de Gemmel a este respecto fue que el exceso invernal de mortalidad promedio anual, entre 1981 y 1993, fue de de 34% para los hombres, y de 29% para las mujeres. En su estudio revisó además los incrementos en la mortalidad durante el invierno debidos a tres causas: las enfermedades respiratorias, las cardiovasculares y los padecimientos del corazón y encontró que para los padecimientos cardiovasculares, el incremento de las muertes en el invierno era muy similar: alrededor del 36% para hombres y mujeres. Sin embargo, en el caso de la mortalidad por enfermedades respiratorias era de 89% para los hombres y 114% para las mujeres (Gemmel, 2000; p. 275). Este estudio muestra evidencia que nos hace pensar que la postura previa, en la que se consideraba que las diferencias en la mortalidad estacional de hombres y mujeres eran insignificantes, es una sobresimplificación (Rau y Dobelhammer, 2003; p. 17), lo cual se confirmó en posteriores estudios. El primero, es el hecho para Dinamarca por Rau y Dobelhammer en 2003, que mostró que el patrón estacional de hombres y mujeres es similar para ambos sexos. Sin embargo, según este trabajo, el riesgo relativo de morir es mucho mayor para hombres que para mujeres conforme la edad se incrementa.Además, el patrón de hombres y mujeres cambia con la edad, conforme los hombres envejecen la mortalidad estacional cambia, no sólo les afecta la muerte invernal, sino que también las olas de calor incrementan su mortalidad. Según estos hallazgos, los hombres son más susceptibles a las amenazas del medio ambiente.
+Este resultado que no concuerda con los hallazgos de la tesis doctoral de Roland Rau, con respecto a este mismo país. En la tesis doctoral de 2007, al parecer, son las mujeres las que presentan un mayor exceso de mortalidad en el invierno: su riesgo relativo de morir durante esta época del año es 18% más alto que en verano, mientras que el de los hombres lo es 16%. Estos resultados son
+38
+
+Enero y Febrero, desviejadero
+contradictorios con lo que se sabe sobre la mortalidad general de mujeres y hombres, por lo que este hallazgo debe interpretarse con cuidado, tomando en cuenta dos aspectos: el efecto de la estructura por edad para ambos grupos, y que este resultado puede ser una particularidad de la población danesa (Rau, 2007; p. 18).
+El segundo estudio de caso que se considera en el trabajo de Rau de 2007 es un estudio sobre la mortalidad estacional de Estados Unidos. Con respecto a las diferencias de este fenómeno entre hombres y mujeres, el autor señala: “El hallazgo más importante es, probablemente, la ausencia de diferencias entre las fluctuaciones estacionales de la mortalidad de hombres y mujeres. Mientras las mujeres se enfrentan a lo largo de su vida a una menor mortalidad que los hombres, las diferencias relativas parecen ser insignificantes”. (Rau, 2007; p. 124)
+FACTORES SOCIALES Y ECONÓMICOS QUE AFECTAN LA MORTALIDAD ESTACIONAL
+Los factores sociales que se han identificado como la causa de una significativa disminución de la mortalidad estacional pueden resumirse en dos palabras: progreso socioeconómico:“el acceso a sistemas de calefacción, viviendas con aislamiento térmico adecuado, pero también la forma en que se comportan las personas” (Keatinge, 2000; p. 733), incluso sus hábitos alimenticios tienen efecto sobre el patrón estacional de la mortalidad. La importancia de la mediación de los factores sociales sobre el exceso de la mortalidad en el invierno se hace patente, en tanto que“la fuerza con la que se presenta la relación es el resultado de la incapacidad algunos grupos de la población para protegerse adecuadamente de los efectos de la temperatura, más que de los efectos de la temperatura en sí” (Gemmel, et al., 2000; p. 278).
+Los hallazgos a este respecto no permiten asegurar que existe una relación entre la estacionalidad de la mortalidad y el nivel socioeconómico. Los estudios hechos en Inglaterra y Gales por Keatinge en 1989 y 2000 muestran evidencia en contra de su existencia. En el estudio de 1989, Keatinge asegura que “a pesar del aumento de las residencias con calefacción central, la mortalidad durante el invierno no bajó” (Keatinge, 1989; p. 75), pues aunque disminuyó la mortalidad por influenza se incrementó la mortalidad por enfermedades cardio y cerebrovasculares, que se han asociado con excursiones cortas al exterior en los días fríos. En la publicación de este mismo autor del año 2000, en la que complementó su análisis estadístico con el estudio de un grupo de internos en un hogar de ancianos, que mostró que muchos de ellos hacían largas excursiones en días fríos, y que además, la mayoría de ellos dormía con las ventanas abiertas y con la calefacción al mínimo (Keatinge, 2000).
+39
+
+Enero y Febrero, desviejadero
+Las cifras de la población en general mostraban que la diferencia en el exceso de muertes invernales era de 35.3% para quienes tienen hogares con sistema de calefacción central y 36% para quienes no, las evidencias de este último estudio muestran que los efectos benéficos del acceso a mejores instalaciones se balancean con los efectos negativos del pasar largos periodos en el exterior, y que la vieja costumbre británica de exponerse al aire fresco tiene efectos tan importantes como el de tener un sistema de calefacción deficiente (Keatinge, 2000; p. 733).
+Por su parte, el estudio publicado en 2000 por un grupo de científicos encabezados por Gemmel, estudió la relación entre la mortalidad estacional y el nivel socioeconómico en Escocia. Aunque no encontraron evidencias claras de esta relación, refieren que el rango de la variación estacional entre las diferentes clases sociales es marcado, y que aumenta conforme menor es el nivel socioeconómico. Concluyen que los excesos de mortalidad estacional pueden ser resultado de la incapacidad de la población para protegerse y no sólo deberse a las variaciones de temperatura. Explican, además, que el no haber encontrado una relación significativa puede deberse a efectos de las variables que se eligieron como proxy de clases sociales (Gemmel et al., 2000; p. 278).
+El trabajo que más ahonda en el estudio de los diferenciales de la mortalidad estacional es la tesis doctoral de Roland Rau, que ya fue tratada anteriormente y que analizó una gran cantidad de diferenciales de la mortalidad estacional para Dinamarca y Estados Unidos, algunos de ellos se habían referido ya en la literatura y otros nunca se habían explorado antes.
+El estudio de caso de Dinamarca tiene una riqueza incomparable con otros trabajos que analizan los diferenciales de la mortalidad estacional, gracias a que los datos daneses son muy completos, una condición indispensable para el desarrollo de un trabajo de esta naturaleza y difícilmente replicable en otro país. Las variables que se estudiaron fueron: riqueza, operacionalizada como un índice que tomó en cuenta cualquier transferencia monetaria al hogar; la educación; la calidad habitacional; tener automóvil; el estatus marital, y vivir solo. Rau hace uso de la regresión logística, controlando los grupos de análisis por sexo y edad.
+Con la implementación de esta técnica, Rau encontró que la riqueza no funciona como diferencial en Dinamarca. Cabe resaltar que, en el caso de los hombres, el software estadístico utilizado para la estimación de modelos generó problemas; en el caso de las mujeres, se encontró que en los cuartiles de mayor riqueza es dónde se concentran las muertes por enfermedades cardiovasculares y
+40
+
+Enero y Febrero, desviejadero
+cerebrovasculares. Sin embargo, esta tendencia es estadísticamente insignificante. Dos características propias de Dinamarca parecen dar explicación a este resultado: un sistema de salud pública eficiente y abierto a toda la población y al hecho de que en Dinamarca hay pocas personas pobres (sólo 3.9% tienen un ingreso menor a la media nacional), lo que implica que la diferencia en las condiciones financieras de los cuatro cuartiles que Rau analizó es, en realidad, muy pequeña. La educación, por su parte, está más ligada al comportamiento del individuo, y podría esperarse que funcionara como un gradiente de la mortalidad estacional; sin embargo, tampoco ocurrió así, por lo que esta variable no sirve como proxy en un país tan homogéneo como Dinamarca. Este resultado está ligado, en buena medida,a que en Dinamarca existe acceso generalizado a los servicios de salud, así como a la homogeneidad de la población en cuanto a condiciones económicas. Pero este resultado también implica que el comportamiento de la población asociado al cuidado de la salud no sólo depende del grado de educación formal que alcanzan los individuos.
+Asimismo, las condiciones de la vivienda no funcionaron como una variable diferencial, pues no se encontraron diferencias estadísticamente significativas de la mortalidad estacional en personas con viviendas en “condiciones favorables” en comparación con aquellas que vivían en sitios en “condiciones desfavorables”. Cabe señalar que, al igual que en el caso del ingreso, las situación en la que se encuentran las viviendas es muy homogénea, ya que existen muy pocos hogares sin sistema de calefacción central. El resultado anterior concuerda con el de la variable“tener o no tener automóvil”, que tampoco fue relevante en el estudio de la mortalidad estacional. Al parecer, el sistema de transporte danés es tan eficiente y de buena calidad, que, es irrelevante para el estudio de la mortalidad estacional el tener o no automóvil.
+Con respecto al estado civil, tampoco se encontraron diferencias significativas, pues el estudio no pudo detectar ninguna ventaja para los casados, con respecto a los que tienen otro estado civil. En cambio, la variable “vivir solo” sí es un gradiente de la mortalidad estacional, pues quienes tienen al menos un compañero de vivienda mostraron menor riesgo relativo de morir en el invierno que los que viven solos. Lo que el autor explica es que se debe a que un compañero en casa brinda apoyo emocional y social y a que, en la práctica, también significa que hay alguien cerca que puede llamar una ambulancia y ser de ayuda en las emergencias (Rau, 2007; p. 167).
+Para el estudio de Estados Unidos, además de analizar sexo, edad y región, Rau estudió el periodo, asociándolo al acceso a calefacción en el hogar, además, consideró el nivel de escolaridad de los
+41
+
+Enero y Febrero, desviejadero
+fallecidos como un proxy de estatus socioeconómico y el estatus marital, debido a que comúnmente las personas casadas tienen menor mortalidad general.
+Con respecto al periodo, Rau, al igual que Feinstein, concluye que, para los jóvenes la mortalidad estacional está reduciéndose, mientras que para las personas de mayor edad, la estacionalidad está aumentando, lo que está relacionado con la evolución de la mortalidad por causas asociadas a la mortalidad estacional: mientras se reduce la mortalidad por enfermedades respiratorias, se incrementa la causada por padecimientos cardio y cerebrovasculares. El autor refiere que estos resultados también pueden deberse a una reducción de la brecha de la mortalidad entre los grupos
+Con respecto a la educación como proxy de estatus socioeconómico, Rau lo ubica como un verdadero gradiente social, aunque su influencia se encuentra mediada por la edad. Después de los noventa años, la escolaridad ya no funciona como diferencial, pero entre los cincuenta y los noventa años es posible distinguir que entre mayor fuera la escolaridad del grupo, menor sería la estacionalidad de su mortalidad. Incluso por causas, es notorio que esta relación se conserva tanto para enfermedades respiratorias como para cardiovasculares y cerebrovasculares.
+Por otra parte, mientras que la variable escolaridad mostraba un claro gradiente y permitía separar en grupos las defunciones, el estatus marital no arrojó resultados claros. Sin embargo, las defunciones de personas casadas tuvieron un comportamiento estacional con menor variación, lo que da una ligera evidencia del efecto protector del matrimonio sobre la mortalidad en general. Esto puede deberse a dos factores: primero, a mejores condiciones financieras de los casados por un lado; y segundo, a que la permanencia de una persona más en el hogar tiene un efecto positivo sobre la supervivencia, pues pudiera brindar ayuda al suscitarse una emergencia. Sin embargo, los resultados no son consistentes: por un lado, los divorciados compiten con los casados por los niveles más bajos de mortalidad estacional; por el otro, los viudos y los que jamás se casaron tienen un intervalo estacional más amplio. Por lo que, en el caso específico de Estados Unidos, la evidencia muestra que “el tener un compañero en casa es menos importante que tener recursos financieros suficientes para proveerse de servicios de salud, entre los que podría estar pagar una enfermera de planta” (Rau, 2007; p.121).
+42
+
+Enero y Febrero, desviejadero
+RESUMEN
+Hemos logrado construir un panorama relativamente completo de la mortalidad estacional para algunos países desarrollados: por un lado, sabemos que la mortalidad estacional ha cambiado en el tiempo y que varía en cada población. Sabemos también que no depende de que la temperatura sea baja, sino más bien de la forma en la que la población enfrenta los cambios climáticos. Sin embargo, pocas son las variables demográficas y socioeconómicas que pueden establecerse como diferenciales en el estudio de la mortalidad estacional: una es la edad, otra muy débil es el sexo y, con resultados contradictorios, la educación. Asimismo, sabemos que la mortalidad estacional ha disminuido, lo que puede ser efecto de que las condiciones socioeconómicas de las personas, en general, han mejorado. Pero esa relación tampoco ha podido demostrarse. Por tanto, a pesar del largo camino recorrido, hay incógnitas que no han sido resueltas. Si además consideramos que los estudios que se trataron en esta sección son sólo para Europa, así como para el norte de Asia y América, y algunos cuantos para Australia y Nueva Zelanda, entonces aumentan las preguntas por responder. Este aumento no sólo se debe a que las regiones que no se han estudiado, como es el caso de México, tienen climas muy diferentes al prevaleciente en las regiones para las que hay trabajos sobre mortalidad estacional, sino que además, tanto su composición social como las condiciones económicas que han enfrentado a través del tiempo han sido muy diferentes a la de estos países.
+43
+
+Enero y Febrero, desviejadero
+CAPÍTULO 3
+RESULTADOS
+INTRODUCCIÓN
+En este capítulo se muestran los principales hallazgos de la presente investigación. El patrón de mortalidad estacional en México no es distinto al que, en otros estudios, se encontró para otros países (Bélgica (Quetelet, 1838), Estados Unidos (Feinstein, 2002; Rau, 2007) y Dinamarca (Rau y Dobelhammer, 2003; Rau, 2007)), es decir, la mortalidad se incrementa en invierno y tiene su punto mínimo durante el verano.
+En este trabajo se recuperó el análisis de la mortalidad estacional por edad, no sólo para los mayores, también se analizó este fenómeno en los grupos más jóvenes y es en éstos en los que se encontraron patrones diferentes para hombres y mujeres. Por otra parte, la intensidad de la variación estacional no permaneció constante a lo largo del periodo de observación. En general disminuyó para la población observada, pero la evolución fue distinta en cada grupo de edad y también fue diferente por sexo, lo que puede estar asociado al cambio en el tiempo de la intensidad con que las causas de muerte afectan a la población en cada grupo de edad.
+Por otra parte, durante el periodo de observación, la escolaridad dejó de ser una variable diferencial de la mortalidad estacional, mientras que, al inicio del periodo, funcionó como un verdadero gradiente. Con el paso del tiempo, las diferencias en mortalidad estacional disminuyeron en los grupos con menor escolaridad y se mantuvieron constantes en los grupos más educados. En 2009, sólo las defunciones de personas con estudios profesionales tenían una variación estacional diferente a la de los demás grupos.
+44
+
+Enero y Febrero, desviejadero
+EL PATRÓN ESTACIONAL EN MÉXICO
+La estacionalidad de la mortalidad en México no se comporta igual para todos los subgrupos por edad y sexo; tanto su forma, como su intensidad cambian, según sea el subconjunto de la población segmentado por estas dos categorías. Sin embargo, para efectos de identificar el patrón estacional en México, que afecta a la población en general, se extrajo el patrón estacional de las muertes de toda la población, en el que se observa la forma que se describe desde los estudios de Quetelet, y que Feinstein y Rau corroboran en sus trabajos: el máximo en enero y después un descenso suave, hacia mitad del año (entre junio y agosto) y luego un suave ascenso hasta diciembre, sin que en este mes se alcance el máximo de nuevo, y se verifica un mismo patrón para hombres y mujeres. En la Figura 3.1 se observan las formas que toman los patrones estacionales durante los veinte años que se consideraron en este trabajo (las líneas más claras corresponden a los patrones más recientes). Se puede verificar, tanto en el caso de los hombres, como en el de las mujeres, que la variación del patrón en el tiempo ha sido mínima, sin embargo, las formas más recientes tienden hacia una menor variación intra-anual.
+
+Figura 3.1. Patrón general anual de la mortalidad estacional en México (1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9 10 11 12
+
+Fuente: Elaboración propia
+
+1.0 1990
+
+1991
+
+1992
+
+0.9
+
+1993
+
+1994
+
+0.8
+
+1995
+
+1996
+
+0.7
+
+1997
+
+1998
+
+0.6
+
+1999
+
+2000
+
+0.5
+
+2001
+
+2002
+
+0.4
+
+2003
+
+2004
+
+0.3
+
+2005
+
+2006
+
+0.2
+
+2007
+
+2008
+
+0.1
+
+2009
+
+Promedio
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9 10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+45
+
+Enero y Febrero, desviejadero
+La tendencia generalizada hacia una menor variación estacional puede observarse más claramente en la Figura 3.2, que muestra el indicador “rango estacional proporcional”, mediante el cual se verifica que la intensidad del patrón estacional general de la mortalidad en México se redujo durante los veinte años que se estudiaron. Estos resultados concuerdan con lo hallado por Feinstein (2002) en su estudio de la mortalidad estacional en Estados Unidos.
+
+Figura 3.2.Rango estacional proporcional (Población México) Rango estacional proporcional (Población México)
+
+0.29000 0.27000 0.25000 0.23000 0.21000 0.19000 0.17000 0.15000
+
+Hombres Mujeres
+Fuente: Elaboración propia
+
+A pesar de que estos resultados dan una idea sobre la forma que toma el patrón estacional en México, así como de su evolución en el tiempo, el observar la mortalidad estacional de esta manera implica sobresimplificar el estudio del fenómeno, pues, como se verá más adelante, el patrón estacional es muy diferente por grupos de edades.
+
+Con la finalidad de segmentar a la población masculina y femenina en grupos que permitieran un análisis más preciso de los patrones estacionales por edad, los cálculos se hicieron para las defunciones ocurridas en grupos quinquenales de edad. Sin embargo, se presentarán en los grandes grupos de edad que se enlistan a continuación: preescolares, 0 a 4 años de edad; edad escolar 5 a 14, años de edad; adolescentes y jóvenes, 15 a 29 años de edad; adultos jóvenes, 30 a 44 años de edad; adultos maduros, 45 a 60 años de edad y adultos mayores, de 60 en adelante. La elección de los grupos obedece a la necesidad de relacionar la estacionalidad de la mortalidad en grupos de población con cierto grado de homogeneidad.
+
+46
+
+Enero y Febrero, desviejadero
+PREESCOLARES
+Los niños y niñas de entre 0 y 4 años tienen un patrón estacional muy parecido, que se conserva al paso del tiempo durante el periodo de observación, como se puede apreciar en la Figura 3.3. Los patrones estacionales de cada año de los niños menores de un año, mantienen una forma muy parecida al patrón promedio. Esta forma comienza a cambiar en el patrón observado de la mortalidad estacional en los niños de entre uno y cuatro años, en el que no se observa un mínimo constante en el tiempo, sino que cambia cada año.
+
+Por otra parte, también se observa que la forma no fue constante en el periodo de observación, pues a pesar de que ambos grupos presentan el factor estacional máximo en enero, en los menores de un año de edad, las niñas conservan el mínimo en abril durante los veinte años, aunque parece estar migrando a agosto. Mientras que los niños, mantuvieron el mismo mínimo que las niñas de 1990 a 2002, pero a partir de 2003, el mínimo se ubicó en junio. Este cambio ocurrió poco a poco, primero la variación entre enero y abril fue disminuyendo, y fue incrementándose la que tenía con respecto a junio.
+
+Por otra parte, en el grupo de 1 a 4 años de edad, el patrón ha sido mucho más inestable. Tanto para niños como para niñas, se modificó la ubicación del factor estacional máximo de enero a marzo, y el mínimo cambió de lugar varias veces en el periodo. Llama la atención que el patrón está cambiando hacia uno de mayor variación estacional, sin embargo, el número de defunciones en este grupo de edad disminuyó de forma significativa durante el periodo.
+
+Figura 3.3. Patrón de variación de la mortalidad estacional niños entre 0 y 4 años. (1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0a1
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1.0 1990
+
+1991
+
+1992
+
+0.9
+
+1993
+
+1994
+
+0.8
+
+1995
+
+1996
+
+0.7
+
+1997
+
+1998
+
+0.6
+
+1999
+
+2000
+
+0.5
+
+2001
+
+2002
+
+0.4
+
+2003
+
+2004
+
+0.3
+
+2005
+
+2006
+
+0.2
+
+2007
+
+2008
+
+0.1
+
+2009
+
+Promedio
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+47
+
+1a4
+
+Enero y Febrero, desviejadero
+
+Figura 3.3.a. Patrón de variación de la mortalidad estacional niños entre 0 y 4 años. (1990-
+
+2009)
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+Las niñas menores de un año presentaron mayor variación estacional que los niños durante todo el periodo de observación. Tanto las niñas como los niños redujeron la intensidad de la estacionalidad entre 1990 y 2009. Por el contrario, la tendencia del mismo indicador para los niños de entre uno y cuatro años fue positiva durante el mismo periodo, lo que indica que la variación estacional de la mortalidad en este grupo de edad aumentó de 1990 a 2009. El hecho de que la variación estacional haya aumentado durante el periodo llama la atención porque el número de defunciones en estos grupos de la población se redujo durante el periodo de análisis.
+
+Figura 3.4. Rango estacional proporcional de los niños entre 0 y 4 años (1990 a 2009)
+0.3 0.24
+0.25 0.22
+
+0.2
+
+0.2
+
+1a4
+
+0.18
+
+0.15
+
+Hombres
+
+Mujeres
+
+0.16
+
+0.1
+
+0.14
+
+0.05 0.12
+
+Hombres Mujeres
+
+0
+
+0.1
+
+Fuente: Elaboración propia
+
+0a1
+
+48
+
+Enero y Febrero, desviejadero
+ESCOLARES
+Los patrones estacionales de los niños entre 5 y 14 años de edad presentaron una fluctuación estacional irregular durante el periodo. Sólo las niñas entre 5 y 9 años de edad mantuvieron el factor estacional máximo en enero. En el caso de los niños de este mismo grupo de edad, no se conservó un factor máximo durante todo el periodo, sino que fluctuó entre los meses de abril, julio y agosto. Las defunciones de niñas en estos grupos de edad mantuvieron el factor estacional mínimo más o menos estable entre junio y marzo, mientras que en los niños, el mínimo se ubicó en noviembre y diciembre, como lo muestra la figura 3.5.
+
+En este grupo de edad, para ambos sexos, se observa una evolución del patrón estacional durante el periodo observado, en el que se tiende a desconcentrar la mortalidad en ciertos meses. Esto se puede ver en cómo las líneas más claras conforman patrones en los que los factores son más grandes, tendientes a 1, lo que ocurre porque las diferencias entre los factores estacionales máximos y mínimos son cada vez menores.
+
+5a9
+
+Figura 3.5. Patrón de variación de la mortalidad estacional niños entre 5 y 9 años. (1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+Lo mismo ocurre en el caso de los niños y niñas entre 10 y 14 años. Se observan patrones definidos, que aparentan tener dos factores estacionales muy grandes, pero es necesario tener en cuenta que la gráfica que se obtiene a partir de este indicador muestra que los pesos cada vez están más equilibrados. Sin embargo, en los patrones de niños y niñas en este grupo de edad, el factor estacional máximo se ubicó en abril durante todo el periodo, y el mínimo en octubre. Lo que se observa en este patrón estacional de mortalidad no corresponde a lo que se observa en otros países
+
+49
+
+Enero y Febrero, desviejadero
+
+para otros grupos de edad, dado que la mayoría de los estudios detallados sobre mortalidad estacional en los que se lleva a cabo el análisis por grupo de edades se ha concentrado en el estudio de los adultos mayores, y está focalizado en los países de Dinamarca y Estados Unidos, que tienen inviernos muy fríos.
+
+Figura 3.6. Patrón de variación de la mortalidad estacional de niños entre10 y 14 años. (1990-2009)
+
+Hombres
+
+Mujeres
+
+10 a 14
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+Se observó en estos grupos de edad que las niñas tienen menor variación estacional que los niños.
+
+Es necesario considerar que la intensidad del patrón es muy pequeña en estos grupos. Sin embargo,
+
+llama la atención que en el caso de los niños de 5 a 9 años de edad, el indicador se incrementó
+
+considerablemente, después de haber conservado una tendencia negativa hasta 1999. Por el
+
+contrario, en el caso de los niños entre 10 y 14 años, el indicador se conservó a la baja durante todo
+
+el periodo de observación. Las niñas de ambos grupos de edad, por su parte, mantuvieron este
+
+indicador dentro del mismo rango entre 1990 y 2009.
+
+Figura 3.7. Rango estacional proporcional de los niños entre 5 y 9 años (1990 a 2009)
+
+5-9 años de edad
+
+10-14 años de edad
+
+0.20000 0.19000 0.18000 0.17000 0.16000 0.15000 0.14000 0.13000 0.12000 0.11000 0.10000
+
+Hombres Mujeres
+
+0.20000 0.19000 0.18000 0.17000 0.16000 0.15000 0.14000 0.13000 0.12000 0.11000 0.10000
+
+Hombres Mujeres
+
+Fuente: Elaboración propia
+
+Intensidad
+
+50
+
+Enero y Febrero, desviejadero
+JÓVENES
+El patrón de los jóvenes entre 15 y 29 años es muy particular, pues su evolución es diferente para hombres y mujeres. En el caso de los hombres, se observa la evolución del patrón infantil con el factor estacional máximo en abril hacia un patrón clásico, con el máximo en enero. Este cambio es lento y ordenado y los patrones fueron estables durante el periodo de observación.
+
+Por el contrario, los patrones estacionales de las mujeres muestran fluctuaciones considerables en el tiempo, pero también se observa la migración repentina del patrón en el espacio de las edades. Las mujeres de 15 a 19 años no tienen un patrón estable. Al parecer, es el más inestable, presenta múltiples máximos y mínimos en el tiempo. Sin embargo, en promedio, el patrón se acerca a la uniformidad. Llama la atención el hecho de que en el siguiente grupo de edad se observa ya un patrón estacional definido, con el factor máximo en enero y con un mínimo cambiante y lo mismo ocurre para el grupo de 25 a 29 años de edad. Es importante resaltar que el patrón estacional de las mujeres es más inestable en el tiempo que el de los hombres y que, durante el periodo de observación, mostró una evolución notoria, cada vez hacia una menor variación estacional.
+
+Figura 3.8. Patrón de variación de la mortalidad estacional jóvenes entre 15 y 24 años. (1990-2009)
+
+Hombres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+15-19
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+20-24
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+Fuente: Elaboración propia
+
+10
+
+11
+
+12
+
+10
+
+11
+
+12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+Mujeres
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+51
+
+Enero y Febrero, desviejadero
+
+Figura 3.8.a Patrón de variación de la mortalidad estacional jóvenes entre 25 y 29 años. (1990-2009)
+
+25-29
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+Con respecto a la intensidad del patrón estacional, representada por el rango de variación estacional proporcional, se observa que, para las de defunciones de hombres de todos los subconjuntos entre los 15 y 29 años de edad, este indicador se mantuvo constante durante el periodo de observación. Las mujeres, por su parte, presentan mayores diferencias entre sus factores estacionales.
+
+En el grupo de 15 a 19 años de edad las variaciones se mantienen erráticas pero dentro de un mismo rango. Sin embargo, la variación estacional de las mujeres de entre 20 y 24, 25 y 29 años de edad mantuvo una tendencia negativa de 1990 a 2009. Es notable, sin embargo, que la brecha entre la variación estacional de las mujeres con respecto a la de los hombres se redujo en los grupos de entre 20 y 24 años, así como en el de 25 a 29 años de edad, durante el periodo de observación.
+
+Figura 3.9. Rango estacional proporcional de los jóvenes entre 15 y 19 años (1990 a 2009)
+0.25000
+
+0.20000
+
+15-19
+
+0.15000 0.10000
+
+Hombres Mujeres
+
+0.05000
+
+0.00000
+Fuente: Elaboración propia
+
+52
+
+Enero y Febrero, desviejadero
+
+Figura 3.9.a. Rango estacional proporcional de los jóvenes entre 20 y 29 años (1990 a 2009)
+0.15
+
+0.13
+
+20-24
+
+0.11
+
+Hombres
+
+0.09
+
+Mujeres
+
+0.07
+
+25-29
+
+0.05
+0.20000 0.18000 0.16000 0.14000 0.12000 0.10000 0.08000 0.06000 0.04000 0.02000 0.00000
+
+Fuente: Elaboración propia
+
+Hombres Mujeres
+
+ADULTOS JÓVENES
+Durante el periodo de observación, las defunciones de adultos jóvenes (entre 30 y 44 años de edad), mostraron un patrón fijo en el tiempo, que evoluciona en el dominio de las edades. Conforme la edad es mayor, la forma tiende hacia una con el máximo en enero, y mayor diferencia entre los factores estacionales diferentes al mínimo. La forma en que cambia el patrón según la edad es diferente para hombres y mujeres.
+
+En el grupo entre 30 y 34 años de edad, se experimenta un patrón diferenciado por sexo. Ambos patrones coinciden en que el máximo factor estacional corresponde a enero, aunque difieren en el mínimo. En el caso de las mujeres, éste se situó en febrero durante todos los años de observación, excepto entre 1998 y 2000. En el caso de los hombres, el mínimo se mantuvo en junio durante todo el periodo de observación.
+
+53
+
+Enero y Febrero, desviejadero
+Al igual que el grupo anterior, los hombres y mujeres entre 35 y 39 años de edad tuvieron patrones diferenciados durante el periodo de estudio. Llama la atención que ambos patrones son muy estables, con el factor estacional máximo en enero y mínimo en diciembre, durante todo el periodo.
+
+La forma del patrón estacional de hombres y mujeres entre 40 y 44 años es muy similar, pues el factor estacional máximo se ubicó en enero durante todo el periodo de observación para ambos sexos. El mínimo para los hombres deambuló entre marzo, julio, septiembre y octubre durante todo el periodo de observación. En el caso de las mujeres, el factor estacional mínimo se situó en agosto durante todo el periodo observado.
+
+Figura 3.10. Patrón de variación de la mortalidad estacional personas entre 30 y 39 años.
+
+(1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+30-34
+
+35-39
+
+54
+
+40-44
+
+Enero y Febrero, desviejadero
+
+Figura 3.10.a. Patrón de variación de la mortalidad estacional personas entre 40 y 44 años.
+
+(1990-2009)
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+La intensidad del patrón, por su parte, se mantuvo constante en los grupos de edad de 30 a 34 y de 35 a 39 años de edad; mientras que en el grupo de 40 a 44, presentó una tendencia negativa, mayor para los hombres que para las mujeres, que conservaron la variación proporcional casi en el mismo rango.
+
+Figura 3.11. Rango estacional proporcional de las personas entre 30 y 34 años (1990 a 2009) Intensidad de la estacionalidad en el tiempo
+0.12000
+
+0.10000
+
+0.08000
+
+30-34
+
+0.06000 0.04000
+
+Hombres Mujeres
+
+0.02000
+
+0.00000
+Fuente: Elaboración propia
+
+55
+
+Enero y Febrero, desviejadero
+
+Figura 3.11.a. Rango estacional proporcional de las personas entre 35 y 44 años (1990 a 2009)
+0.16000
+
+0.14000
+
+0.12000
+
+0.10000
+
+35-39
+
+0.08000 0.06000
+
+Hombres Mujeres
+
+0.04000
+
+0.02000
+
+0.00000
+
+40-44
+
+0.18000 0.16000 0.14000 0.12000 0.10000 0.08000 0.06000 0.04000 0.02000 0.00000
+
+Hombres Mujeres
+
+Fuente: Elaboración propia
+
+ADULTOS MADUROS
+En el grupo de adultos maduros, se observa que el patrón estacional con un exceso de muertes se ha estabilizado y ha tomado una forma cada vez más definida. El factor estacional máximo para hombres y mujeres se ubica en enero, en todos los casos, y la diferencia entre el máximo y los otros factores estacionales es cada vez más grande. Sin embargo, el patrón estacional de la mortalidad de los hombres entre 45 y 49 años de edad sigue evolucionando hacia uno en que las diferencias entre el máximo con respecto a los otros factores estacionales es menor, y lo mismo pasa con el grupo de mujeres entre 50 y 59 años de edad, como se observa en la Figura 3.12.
+Por su parte, los factores estacionales mínimos fueron diferentes para hombres y mujeres de los grupos quinquenales analizados en este grupo de edad. En el caso del grupo entre los 45 y 49 años de edad, se mantuvo en abril para los hombres y mujeres; mientras que en los hombres entre 50 y 54 años, éste se situó en abril y en agosto durante el periodo de observación; mientras que en las
+56
+
+Enero y Febrero, desviejadero
+mujeres, se encontró en mayo y agosto. Esta localización del factor estacional mínimo se mantuvo en las mujeres del siguiente grupo de edad. Mientras que en el caso de los hombres entre 55 y 59 años, se ubicó en abril, en agosto, y en los últimos años del periodo de observación, en septiembre.
+
+45-49
+
+50-55
+
+Figura 3.12. Patrón de variación de la mortalidad estacional personas entre 45 y 59 años.
+
+(1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+Con relación a la intensidad de la variación estacional, ésta tuvo un comportamiento muy diferente en cada grupo de edad: se mantuvo constante en el grupo de entre 45 y 49 años de edad. Las
+57
+
+55-59
+
+Enero y Febrero, desviejadero
+mujeres presentaron mayor variación estacional que los hombres durante el periodo. Por el contrario, los grupos de entre 50 y 54, así como el de 55 y 59 años de edad, sufrieron una reducción de la variación estacional durante el periodo observado. Esta reducción fue mayor en las mujeres que en los hombres de entre 50 y 54, y muy similar entre las mujeres y hombres de entre 55 y 59 años de edad.
+
+Figura 3.13. Rango estacional proporcional de las personas entre 45 y 59 años (1990 a 2009)
+
+45-49
+
+0.20000 0.19000 0.18000 0.17000 0.16000 0.15000 0.14000 0.13000 0.12000 0.11000 0.10000
+
+Hombres Mujeres
+
+0.25000
+
+0.20000
+
+50-54
+
+0.15000 0.10000
+
+Hombres Mujeres
+
+0.05000
+
+55-59
+
+0.00000
+0.25000 0.24000 0.23000 0.22000 0.21000 0.20000 0.19000 0.18000 0.17000 0.16000 0.15000
+
+Fuente: Elaboración propia
+
+Hombres Mujeres
+
+58
+
+Enero y Febrero, desviejadero
+ADULTOS MAYORES
+Conforme se avanza en la edad se observa un patrón estacional más definido, con mayor variación entre el máximo y el mínimo, pero que va tendiendo a una forma en concreto. Es muy similar entre hombres y mujeres, y tiene una silueta convexa en la que el máximo se encuentra en enero y el mínimo entre junio y agosto. Conforme se avanza en los grupos de edad, la forma se va definiendo más, y los factores estacionales se van acomodando de modo que parece la gráfica de una parábola.
+
+En estos grupos de edad, el factor que más cambia es el de diciembre, pues se va incrementando de modo tal que queda a la altura del correspondiente a marzo, es decir, que el número de defunciones se incrementa proporcionalmente en diciembre conforme se avanza en la edad.
+
+Figura 3.14. Patrón de variación de la mortalidad estacional personas entre 60a 69años de
+
+edad. (1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+60-64
+
+65-69
+
+59
+
+70-74
+
+75-79
+
+Enero y Febrero, desviejadero
+
+Figura 3.14.a. Patrón de variación de la mortalidad estacional personas entre 70 y más años
+
+de edad. (1990-2009)
+
+Hombres
+
+Mujeres
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+85+
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+Fuente: Elaboración propia
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+1.0 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1 0.0
+1 1.0 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1 0.0
+1 1.0 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1 0.0
+1 1.0 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1 0.0
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10 11 12
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 Promedio
+
+80-84
+
+60
+
+Enero y Febrero, desviejadero
+La intensidad de la variación estacional se incrementa rápidamente en este último grupo de edad, cambia sensiblemente en el espacio que va de 60 años a 85 años de edad y más, pues el rango de variación estacional proporcional aumenta conforme aumenta la edad, de 0.23 para las personas entre 60 y 64 años de edad, se mueve a casi 0.39 en las personas de 85 años y más. Casi en todos los grupos se presenta una clara tendencia al descenso de la variación estacional entre 1990 y 2009.
+
+Con relación al comportamiento de este indicador por sexo, las mujeres entre 60 y 64 años de edad se mantuvieron levemente por encima de los hombres.Sin embargo, entre los 65 y 69 los valores que toman los indicadores se interceptan durante el periodo, y de ser mayor para las mujeres entre 1990 y 2000, pasa a ser menor, con respecto a sus coetáneos masculinos.
+
+En el grupo de entre 70 y 74 años, las mujeres mantuvieron su nivel de variación estacional casi constante, mientras los hombres lo redujeron drásticamente en el periodo, por lo que de tener un rango estacional proporcional mucho mayor al de sus coetáneas, se ubicaron muy por debajo de ellas. Por el contrario, en el grupo de entre 75 y 79 años de edad, la inversión ocurrió al contrario, pues al principio las mujeres tenían un mayor rango estacional proporcional y lo redujeron con respecto a sus pares masculinos. Por otra parte, en el grupo de entre 80 y 84 años de edad, se presentó una evolución similar al grupo de entre 70 y 74. Sin embargo, para el grupo de 85 y más, las mujeres presentaron menor variación estacional durante todo el periodo y tuvieron, aproximadamente, la misma evolución en el tiempo.
+
+Figura 3.15. Rango estacional proporcional de las personas de 60 a 64 años de edad (1990 a 2009)
+Intensidad de la estacionalidad en el tiempo
+
+60-64
+
+0.29000 0.27000 0.25000 0.23000 0.21000 0.19000 0.17000 0.15000
+
+Fuente: Elaboración propia
+
+Hombres Mujeres
+
+61
+
+Enero y Febrero, desviejadero
+
+Figura 3.15.a Rango estacional proporcional de las personas de 65a 79 años de edad (1990 a 2009)
+
+65-69
+
+0.29000 0.27000 0.25000 0.23000 0.21000 0.19000 0.17000 0.15000
+
+Hombres Mujeres
+
+70-74
+
+0.29000
+0.27000
+0.25000
+0.23000
+0.21000
+0.19000
+0.17000
+0.15000
+0.28500 0.28000 0.27500 0.27000 0.26500 0.26000 0.25500 0.25000 0.24500 0.24000 0.23500 0.23000
+
+Hombres Mujeres
+Hombres Mujeres
+
+75-79
+
+Fuente: Elaboración propia
+
+62
+
+Enero y Febrero, desviejadero
+
+Figura 3.15.b. Rango estacional proporcional de las personas de 80 y más años de edad (1990 a 2009)
+0.35000
+
+0.33000
+
+80-84
+
+0.31000 0.29000
+
+Hombres Mujeres
+
+0.27000
+
+85+
+
+0.25000
+0.45000 0.43000 0.41000 0.39000 0.37000 0.35000 0.33000 0.31000 0.29000 0.27000 0.25000
+
+Fuente: Elaboración propia
+
+Hombres Mujeres
+
+RELACIÓN DE LA MORTALIDAD ESTACIONAL CON LA EDAD Y DIFERENCIAS SEGÚN
+SEXO
+Los resultados muestran que el patrón estacional cambia para cada grupo de edad. Parece indefinido en los grupos de escolares, jóvenes y adultos jóvenes, sin embargo, conforme se avanza en los grupos de edad, se observa la tendencia hacia una forma cada vez más definida, en la que el factor estacional máximo se encuentra en enero y el mínimo en junio. Cabe resaltar que la velocidad de la convergencia es distinta para hombres y mujeres. Para estas últimas, el patrón comienza a tomar una forma estándar desde los 20 años de edad, mientras que para los hombres, esto ocurre hasta los 50 años. La forma del patrón también cambia hacia los grupos más jóvenes, que tienen un patrón en el que el máximo factor estacional se encuentra en enero y el mínimo en abril, y conforme se avanza hacia los grupos jóvenes, esta forma se va borrando, y va tomando un patrón una cada vez más inestable y con menores diferencias entre el máximo y el mínimo.
+
+63
+
+Mujeres
+
+Enero y Febrero, desviejadero
+Como se puede observar en las gráficas, los patrones de los hombres y las mujeres jóvenes no tienen una forma precisa, sino que, conforme aumenta la edad, se va definiendo: el máximo se ubica en enero y el mínimo en junio. Por otra parte, se observó que el patrón estacional de los niños de entre 0 y 4 años de edad es muy parecido al de los mayores de 50. De manera particular, el patrón estacional de la mortalidad correspondiente a los que no sobrevivieron al primer año de vida, es muy parecido al de los adultos mayores.
+
+Figura 3.16. Patrón estacional de la mortalidad de Mujeres por grupo de edad (1990-2009)
+
+1.2
+
+0-4
+
+5-9
+
+1
+
+10-14
+
+15-19
+
+20-24
+
+0.8
+
+25-29
+
+30-34
+
+35-39
+
+0.6
+
+40-44
+
+45-49
+
+50-54
+
+0.4
+
+55-59
+
+60-64
+
+65-69
+
+70-74
+
+0.2
+
+75-79
+
+80-84
+
+85+
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+85+
+
+0.3
+
+75-79
+
+65-69
+
+0.2
+
+55-59
+
+45-49
+
+0.1
+
+35-39
+
+25-29
+
+0
+
+15-19
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+5-9
+0-1
+10 11 12
+
+0-1 1-4 5-9 10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 60-64 65-69 70-74 75-79 80-84 85+
+
+Fuente: Elaboración propia
+
+12
+
+11
+
+10
+
+9
+
+0.8-1
+
+8 0.6-0.8
+7
+0.4-0.6 6
+
+5
+
+0.2-0.4
+
+4 0-0.2
+
+3
+
+2
+
+1
+
+1
+
+0.9 0-1
+1-4
+0.8 5-9
+
+0.7 10-14
+15-19
+0.6 20-24
+
+0.5 25-29
+30-34
+0.4 35-39
+
+0.3 40-44
+45-49
+0.2
+50-54
+
+0.1 55-59
+
+10
+3
+5
+
+60-64 65-69 70-74
+
+7
+
+75-79
+
+9
+
+80-84
+
+11
+
+85+
+
+Mujeres
+
+64
+
+Hombres
+
+Hombres
+
+Enero y Febrero, desviejadero
+
+Figura 3.17. Patrón estacional de la mortalidad de Hombres por grupo de edad (1990-2009)
+
+1
+
+0-1
+
+0.9
+
+1-4
+
+5-9 0.8
+10-14
+
+0.7
+
+15-19
+
+20-24
+
+0.6
+
+25-29
+
+30-34
+
+0.5
+
+35-39
+
+40-44
+
+0.4
+
+45-49
+
+50-54
+
+0.3
+
+55-59
+
+60-64
+
+0.2
+
+65-69
+
+70-74
+
+0.1
+
+75-79
+
+80-84 0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+1
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+85+
+
+0.3
+
+75-79
+
+65-69
+
+0.2
+
+55-59
+
+45-49
+
+0.1
+
+35-39
+
+25-29
+
+0
+
+15-19
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+5-9 0-1 9 10 11 12
+
+0-1 1-4 5-9 10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 60-64 65-69 70-74 75-79 80-84 85+
+
+12
+
+11
+
+10
+
+9 0.8-1
+8
+0.6-0.8 7
+0.4-0.6 6
+
+5
+
+0.2-0.4
+
+4 0-0.2
+
+3
+
+2
+
+1
+
+1
+0.9
+0.8
+0.7
+0.6
+0.5 0.4 0.3 0.2 0.1 10
+3 5 7 9 11
+
+0-1 1-4 5-9 10-14 15-19 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 60-64 65-69 70-74 75-79
+
+Fuente: Elaboración propia
+
+La relación de la intensidad del patrón estacional con la edad puede verse claramente en la Figura 3.18, que muestra cómo en las primeras edades el nivel de variación estacional es muy alto, y se reduce en la juventud alcanzando un mínimo. En los hombres se alcanza entre los 30 y 34 años de edad y sube rápidamente conforme la edad aumenta, mientras que en las mujeres baja entre los 15 y 19 años de edad y sube significativamente en los grupos con edad entre 20 y 24 y 25 y 29, los de mayor reproducción. Se mantiene casi como una meseta hasta el grupo entre 35 y 39 años de edad y después sube muy lentamente.
+Se observa además, que el patrón se ha transformado en el tiempo. Es notoria la disminución que ha tenido la intensidad de la mortalidad estacional en las mujeres de entre 25 y 29 años, así como en las de 20 y 24, los niños y niñas que fallecieron antes de alcanzar el primer año de vida, las mujeres que fallecieron entre los 50 y 75 años de edad, y en los hombres de más de 70 años de edad.
+
+65
+
+Enero y Febrero, desviejadero
+Además, se observa que el rango es mayor en los hombres que en las mujeres en la niñez, mucho menor para los hombres que para las mujeres en la juventud y adultez temprana y mayor para los hombres que para las mujeres en la vejez.
+
+Figura 3.18. Relación de la intensidad del patrón estacional con la edad (1990 a 2009)
+
+Hombres
+
+Mujeres
+
+35%
+
+35%
+
+1990
+
+1990
+
+30%
+
+1991
+
+30%
+
+1991
+
+1992
+
+1992
+
+1993
+
+1993
+
+25%
+
+1994
+
+25%
+
+1994
+
+1995
+
+1995
+
+1996
+
+1996
+
+20%
+
+1997
+
+20%
+
+1997
+
+1998
+
+1998
+
+1999
+
+1999
+
+15%
+
+2000 15%
+
+2000
+
+2001
+
+2001
+
+2002
+
+2002
+
+10%
+
+2003 10%
+
+2003
+
+2004
+
+2004
+
+2005
+
+2005
+
+5%
+
+2006
+
+2007
+
+5%
+
+2006 2007
+
+2008
+
+2008
+
+0%
+
+2009 0%
+
+2009
+
+Fuente: Elaboración propia
+
+Contrario a lo que han mostrado la mayoría de los estudios (Feinstein, 2002), los resultados obtenidos en este trabajo apuntan a que el patrón estacional es diferente para hombres y mujeres hasta que se llega a la vejez, edad en que el patrón se estabiliza y toma una sola forma. Con respecto a la intensidad de la variación estacional, las mujeres y hombres muestran mayor o menor variación estacional, según la edad que tenían al momento de la muerte. Las niñas tienen menor variación que los niños, pero las jóvenes, las adultas jóvenes y las adultas maduras tienen mayor variación estacional que sus coetáneos. Sin embargo, en el caso de los adultos mayores, en ocasiones no se puede establecer si son las mujeres quienes tienen mayor variación estacional o si son los hombres, debido a que durante el periodo de observación la relación se modificó.
+
+Asimismo, se observa que el grado de variación es diferente para cada grupo de edad y que coincide con los hallazgos de los trabajos previos. La relación entre la variación estacional y la edad cambió durante el periodo de observación, aunque de modo visible. Pero en esencia, durante casi todo el periodo, presentó una forma convexa que alcanzaba su punto más bajo en las edades jóvenes y su punto más alto en los adultos mayores y los preescolares.
+
+66
+
+Enero y Febrero, desviejadero
+LA MORTALIDAD ESTACIONAL Y LA EDUCACIÓN
+El estudio de los diferenciales de la mortalidad estacional ayudará a comprender cómo interactúa el individuo con su entrono. En específico, el estudio de las variables socioeconómicas como diferenciales de este fenómeno, permitirá entender las mediaciones que intervienen en la relación de las personas con su medio ambiente y comprender cuáles son los factores que hacen a los individuos más o menos competentes para enfrentar los cambios que ocurren en el medio ambiente.
+
+En este trabajo se consideró el estudio de la educación como diferencial de la mortalidad estacional.
+
+Los resultados muestran que el patrón de la mortalidad estacional para cada grupo, según su nivel
+
+de escolaridad, prácticamente es el mismo: el factor estacional máximo en enero, el mínimo en
+
+junio. Sin embargo, el factor correspondiente a diciembre presenta un menor peso en las personas
+
+con menor educación, por lo tanto, el exceso invernal de enero es mucho más pronunciado que en el
+
+caso de las personas con mayor escolaridad, para los que el factor de diciembre se acerca más al de
+
+enero, por lo que la variación entre diciembre y enero del siguiente año es más suave.
+
+Abreviaturas en las gráficas:
+
+Siglas SE PI S PRE PRO T
+
+Nivel de escolaridad Sin educación
+Primaria Incompleta Secundaria Preparatoria Profesional
+Todos los niveles
+
+Figura 3.19. Factores estacionales promedio (1990-2009) estandarizados, de personas de 60 y
+
+más años de edad,según nivel de escolaridad.
+
+Hombres
+
+Mujeres
+
+Factor estacional reescalado Factor estacional reescalado
+
+1
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0
+
+123 4
+
+5
+
+6
+
+7
+
+8
+
+Mes
+
+SE PI PC S PRE PRO T
+
+T
+
+PRO
+
+PRE
+
+S
+
+PC
+
+PI
+
+Nivel de escolaridad
+
+9
+
+10
+
+11
+
+SE
+12
+
+Fuente: Elaboración propia
+
+1 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2
+0.1 0 1234 5
+
+678 Mes
+
+SE
+
+PI
+
+PC
+
+S
+
+PRE
+
+PRO
+
+T
+
+T
+
+PRO
+
+PRE
+
+S
+
+PC
+
+PI
+
+Nivel de escolaridad
+
+9
+
+10 11
+
+SE
+12
+
+67
+
+Enero y Febrero, desviejadero
+La intensidad del patrón estacional de los adultos con 60 y más años de edad ha cambiado en el tiempo, sin embargo, se observa que esta medida alcanza diferentes valores según sea el nivel de escolaridad de las personas. La evolución de este indicador en el tiempo también ha sido diferencial.
+Se observó durante el periodo, una reducción sustantiva del rango estacional proporcional en los grupos de menor escolaridad, que contrasta con la de aquellos que lograron estudios de nivel secundario, preparatorio ó profesional.
+Para estos últimos, el indicador se mantuvo casi constante a lo largo de las dos décadas que se consideraron en este trabajo, de modo tal, que las personas que no tenían educación, así como los que sólo estudiaron la primaria (completa o incompleta), redujeron la intensidad de la variación estacional, al grado de alcanzar a los grupos de mayor nivel de escolaridad e incluso rebasarlos. Este proceso es más visible en el caso de las mujeres, pues incluso las que no tenían educación tienen menor factor estacional que quienes estudiaron hasta la secundaria y las mujeres que terminaron la primaria, alcanzaron la misma variación estacional que las mujeres que estudiaron hasta la preparatoria.
+En el caso de los hombres, las brechas han tardado más en reducirse. Para aquellos sin escolaridad, a pesar de haberse reducido la variación estacional de la mortalidad de ese grupo, el rango proporcional estacional no ha logrado alcanzar al que tienen los grupos con mayor educación. Lo que sí es posible anotar es que la variación estacional de la mortalidad de los grupos con estudios de primaria completa se redujo; de tal modo que, no sólo alcanzaron a aquellos con estudios de secundaria y preparatoria, sino que, al final del periodo, tenían menor variación estacional que estos últimos.
+Cabe resaltar que este indicador se mantuvo diferente para quienes tienen estudios profesionales, con respecto a sus contrapartes con menor escolaridad, y que esta diferencia se mantuvo durante todo el periodo de observación. Sin embargo, es necesario puntualizar que la brecha es mucho mayor en el caso de los hombres que en el de las mujeres.
+68
+
+Enero y Febrero, desviejadero
+
+Figura 3.20. Rango estacional proporcional (1990-2009), de personas de 60 y más años de
+
+edad,según nivel de escolaridad
+
+0.34
+
+0.34
+
+0.32
+
+0.32
+
+Rango estacional proporcional
+
+0.3
+
+0.3
+
+M-SE
+
+0.28
+
+H-SE
+
+0.28
+
+M_PI
+
+H_PI
+
+M_PC
+
+0.26
+
+H_PC
+
+0.26
+
+M_S
+
+H_S
+
+M_PRE
+
+0.24
+
+H_PRE
+
+0.24
+
+M_PRO
+
+M_T H_PRO
+
+0.22
+
+0.22 H_T
+
+0.2
+
+0.2
+
+Rango estacional proporcional 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009
+
+1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009
+
+Año
+
+Año
+
+Fuente: Elaboración propia
+
+RESUMEN
+En este capítulo se plantea una primera descripción de la mortalidad estacional en México. La literatura existente sobre este tema, se ha concentrado en el estudio del fenómeno en países con climas más fríos, a pesar de que se ha observado mayor variación estacional conforme la temperatura media anual en la región es más alta. Se ha observado que la mortalidad estacional se incrementa con la edad y las diferencias de este fenómeno por sexo no se identifican fácilmente; asimismo, se habla también de la existencia de una mediación de los factores socioeconómicos en el comportamiento del fenómeno, cuyos mecanismos no ha sido posible identificar plenamente.
+Para ahondar en el conocimiento del comportamiento actual del fenómeno, se consideraron las defunciones ocurridas entre 1990 y 2009 (veinte años de observación).Debido a que este estudio constituye una primera aproximación, no se designó alguna división de las muertes por alguna clasificación dada sobre las estaciones, sino que se consideraron las muertes que ocurrieron cada mes, con la finalidad de no sesgar, en la medida de lo posible, el análisis. Asimismo, se consideró el estudio de México como una sola región, a pesar de la existencia de una gran variedad de climas a lo largo y ancho del territorio. El propósito de este capítulo es describir el patrón estacional por los diferenciales clásicos de la mortalidad (sexo y edad) y comprobar el efecto de la educación sobre la mortalidad estacional.
+
+69
+
+Enero y Febrero, desviejadero
+Se utilizó una estrategia analítica en la que se dividieron las defunciones ocurridas mensualmente durante el periodo, según sexo y edad, con la finalidad de comprender la relación de la mortalidad estacional con la edad y las diferencias por sexo. Para el estudio de la relación de la mortalidad estacional y la educación, se consideraron las defunciones de personas mayores de sesenta años. Se tomó cada grupo como una serie de tiempo estacional. A las series así construidas se les aplicaron técnicas de descomposición para obtener el factor estacional inherente a cada serie de tiempo. Cada factor estacional se dividió, a su vez, en dos partes: la forma del patrón anual y la intensidad de la variación. Finalmente, se realizó un análisis gráfico de los resultados de estos dos componentes.
+Los principales hallazgos a partir de los resultados obtenidos ratifican que el patrón estacional de la mortalidad en México es muy parecido al de países con clima más frío: el factor estacional máximo se ubicó en enero y el mínimo entre junio y agosto. Si se considera el total de la población, parece no haber diferencias significativas entre los sexos. Sin embargo, conforme se analiza la mortalidad estacional de los grupos de la población según edad, se comienzan a advertir las diferencias. Con respecto a la edad, se observa un patrón diferente para niños, jóvenes, adultos y adultos mayores. Pareciera que la aparición del patrón estacional final responde a la conformación de las defunciones que parte de la estructura por edad.
+Los niños de entre 0 y 4 años tienen un patrón estacional muy parecido al del total de la población, sin embargo, a partir de los cinco años y hasta los 19 años de edad, en el caso de las mujeres y hasta los 54 años de edad, en el caso de los hombres, se observa un patrón irregular. Podría decirse que en esos grupos no hay un patrón estacional definido. El patrón va tomando forma conforme se avanza en los grupos de edad. Hacia el grupo de 85 y más años, se observa un patrón cuya forma anual es casi una parábola, cuyo punto más bajo se encuentra entre los meses de junio y agosto.
+Se observó un patrón muy particular al estudiar la relación entre la intensidad de la variación y la edad. Los niños y los adultos mayores presentan mayor variación que los jóvenes. Estos cambios en los niveles de variación a lo largo del espectro de edades son diferentes en los hombres y las mujeres. En los hombres el nivel de variación estacional baja abruptamente en la niñez y se conserva bajo, dentro de los mismos valores, hasta los cuarenta años y luego sube muy rápidamente en la vejez ¿Será que es importante considerar también la mortalidad por accidentes?
+70
+
+Enero y Febrero, desviejadero
+Por otra parte, en las mujeres, la intensidad de la variación estacional baja lentamente en la niñez, sube abruptamente en las edades de mayor reproducción y luego baja de nuevo, subiendo lentamente en la vejez. ¿Serán efectos de la mortalidad materna?
+De modo que, no sólo es diferente la convergencia al patrón estacional de la vejez entre hombres y mujeres, también lo es la intensidad de la variación. En este sentido, son diferentes, tanto la forma general del patrón, como el nivel de variación estacional; pero también lo es la forma en que evoluciona en el tiempo. Cabe resaltar que fue posible observar todas estas diferencias, debido a que se desagregó de manera más detallada por grupos de edad.
+Se observó, asimismo, que la bondad de la educación como una variable diferencial de la mortalidad estacional disminuyó notoriamente durante el periodo de observación; pareciera que, conforme pasó el tiempo, perdió importancia el efecto de tener poca escolaridad sobre el exceso estacional de muertes. ¿Se estarán cerrando las brechas sociales en la sobrevivencia en México? Sin embargo, se observa que la variación estacional de la mortalidad fue más baja en las personas con educación profesional, con respecto a grupos de menor escolaridad; esta brecha es mayor en los hombres que en las mujeres. ¿El hecho de que sea mayor en los hombres que en las mujeres corresponderá a la influencia del matrimonio o del apoyo de los hijos en las edades avanzadas en la disminución de las brechas sociales? ¿O será que el incremento generalizado de la escolaridad sin una disminución equivalente de la desigualdad y la pobreza haga necesario pensar en otros indicadores de estratificación para México?
+Los resultados obtenidos muestran que tanto el sexo como la edad funcionan como variables diferenciales en el estudio de la mortalidad estacional, y que, conforme pasa el tiempo, la educación está perdiendo capacidad para explicar los cambios que ocurren en la mortalidad. Sin embargo, conforme se avanzó en la explicación, se abrieron nuevas e interesantes preguntas que, de responderse, ayudarán a ampliar la visión que se tiene de la forma como las poblaciones se relacionan con su entorno.
+71
+
+Enero y Febrero, desviejadero
+CAPÍTULO 4
+CONCLUSIONES Y RECOMENDACIONES
+PRINCIPALES HALLAZGOS
+La muerte es un tema que, sin duda, se encuentra en el imaginario de todos los pueblos y alrededor de él, se han generado múltiples mitos. Pero, rodear de misterio a los fenómenos naturales no es el mejor camino para conocerlos. De la observación científica de la naturaleza podemos obtener nuevas perspectivas que nos permitan comprender la muerte y, con ello, entender mejor la forma en que se sostiene la vida.
+El refrán “Enero y febrero, desviejadero” pone de manifiesto la concepción popular sobre la forma en que se distribuyen las muertes a lo largo del año. Sin embargo, a pesar de que la mortalidad estacional se conoce desde hace más de 2000 años, en México, no se había realizado ningún trabajo para conocer su comportamiento, incluso después del golpe de la epidemia por el virus de Influenza A-H1N1.Mientras tanto, en algunos países desarrollados, éste fenómeno se ha estudiado con detalle, aunque los expertos en el tema reconocen que se conoce poco sobre sus determinantes (Rau, 2007; p.173).
+En este trabajo se propone un primer acercamiento al estudio de la mortalidad estacional en México, fenómeno que no se había estudiado en este país, salvo para las muertes por influenza, por ejemplo, el trabajo de Kuri y Morales (2006) y el de Fernández y Perdigón (2009). Por lo tanto, se desarrolló como un estudio descriptivo del fenómeno; además, se analizaron algunos de sus diferenciales, con la finalidad de establecer la dirección que podrían seguir próximos trabajos, cuya finalidad sea enriquecer los conocimientos sobre la mortalidad estacional.
+72
+
+Enero y Febrero, desviejadero
+Los diferenciales que se estudiaron fueron: edad, sexo y nivel de escolaridad, como proxy de estatus socioeconómico. Los principales hallazgos de esta investigación se muestran a continuación y se ponen a la luz de las aportaciones de otras investigaciones que se han hecho sobre el tema. En primer lugar, se explicará el patrón general de la mortalidad estacional en México para hombres y mujeres, luego, se analizarán los hallazgos sobre la relación que guardan la mortalidad estacional y la edad; después, se discutirán las diferencias encontradas de los patrones estacionales de hombres y mujeres, finalmente se discutirán las aportaciones del estudio de la mortalidad estacional a través de la educación, como variable diferencial.
+PATRÓN ESTACIONAL DE LA MORTALIDAD EN MÉXICO
+Como se observó en el capítulo anterior, el patrón estacional de la mortalidad en México es similar al prevaleciente en los países en los que se ha estudiado. Los mayores excesos de mortalidad ocurren en enero, es decir, en el invierno.Los meses con menor número de defunciones son junio, julio y agosto. Este patrón concuerda con los hallazgos de Auguste Quetelet, y coincide con los trabajos más recientes (Rau y Dobelhammer, 2003; p. 8) y es ligeramente distinto al que prevalece en los países del mar Mediterráneo, donde el mínimo factor estacional se encuentra en septiembre (Falagas, 2009; p. 485). Como se puede apreciar, en México, la mortalidad invernal es mayor que la que corresponde a los meses más cálidos. Es necesario puntualizar que este país tiene climas muy diversos, por lo que, si existen patrones diferentes para cada región, según su clima, entonces el patrón encontrado en este estudio estaría afectado por la composición regional de las defunciones. Por lo tanto, para comprender mejor cuáles son los factores del entorno que moldean el patrón estacional, sería necesario identificar el patrón estacional de las zonas según el clima que prevalece en cada una de ellas.
+Por otra parte, durante el periodo de análisis, la amplitud de la variación estacional se redujo de forma considerable, llama la atención que entre 1994 y 1999, la tendencia de este indicador viró a la alza. Este fenómeno llama la atención, debido a que la reducción de la mortalidad estacional se ha asociado, principalmente a dos fenómenos: la adaptación de los individuos a su entorno y una mayor prosperidad económica (Keatinge, 2004; p. 512). Sin embargo, hacer alguna aseveración en cualquiera de estos dos sentidos es muy delicado, e implica relacionar la amplitud de la variación estacional de la mortalidad con alguna variable económica que refleje, de algún modo, la prosperidad de toda la población durante el periodo de estudio. Por otro lado, se sabe que durante el periodo referido, el país sufrió una de las peores crisis económicas de su historia. Por lo que, de
+73
+
+Enero y Febrero, desviejadero
+encontrarse una relación entre la variable económica proxy del bienestar económico y la amplitud de la variación estacional, podría hallarse evidencia de que el efecto de la crisis fue tan profundo, que afectó a la población, al grado de mermar su capacidad de supervivencia.
+RELACIÓN DE LA MORTALIDAD ESTACIONAL CON LA EDAD EN MÉXICO.
+El patrón estacional de la mortalidad es distinto según la edad al fallecimiento. Se observó que, para cada grupo de edad, el patrón estacional tiene rasgos característicos. En el caso de los menores de un año y de los adultos mayores, la forma en que se distribuyen las muertes a lo largo del año es muy similar, el factor máximo se encuentra en enero y el mínimo en junio, julio o agosto. Este patrón es el que se ha encontrado en los trabajos sobre mortalidad estacional que abarcan de la modernidad en adelante. Sin embargo, en las edades intermedias, el patrón es diferente. En los jóvenes de entre 15 y 45 años de edad; así como en las mujeres de entre 15 y 19 años de edad, no es posible identificar un patrón estacional con un máximo y un mínimo definidos, debido a que el número de muertes que ocurren en estos grupos es reducido. En estas edades parece, más bien, que no hay un patrón definido; sin embargo, conforme se avanza en los grupos de edades hacia los extremos, la silueta del patrón estacional converge hacia el patrón general. Este mismo comportamiento se observó en el trabajo de Adolphe Quetelet (1838; p. 7).
+Llama la atención la forma que toma el patrón estacional de la mortalidad de las mujeres entre 15 y 19 años de edad, pues no se observa ninguna pauta en particular. Sin embargo en los grupos de entre 20 a 24, 25 a 29 y 30 a 34 años de edad, el patrón estacional de la mortalidad comienza a tomar una forma parecida a la del total de las defunciones. En los hombres, esto ocurre hasta después de los 50 a 54 años de edad; para este grupo, el patrón se indetermina. Sin embargo, a partir del grupo entre 55 a 59 años de edad, la forma de la distribución de muertes intra-anual se estabiliza, y toma la del total de las defunciones. Por lo tanto, la convergencia del patrón estacional ocurre más rápidamente en mujeres que en hombres.
+Con respecto a la intensidad de la variación estacional para los distintos grupos, los resultados de este trabajo coinciden con los hallazgos de estudios previos: es mayor para los niños y los adultos mayores (Nakai, Itoh y Morimoto, 1999; Feinstein, 2002). Sin embargo, tanto el tamaño de la variación, como su evolución en el tiempo fueron diferentes para cada grupo de edad, separado por sexo, durante el periodo observado.
+74
+
+Enero y Febrero, desviejadero
+En general, la mayoría de los grupos sufrieron la reducción de la variación estacional durante el periodo observado. El grupo con el descenso más notorio de la mortalidad estacional son los niños y niñas de entre 0 y 1 años de edad, que contrasta con lo encontrado en el grupo de 5 a 9 años de edad, en el que la intensidad de la variación estacional permaneció constante para la las niñas mientras que, en el caso de los niños, aumentó la variación estacional durante el periodo observado. Este fenómeno se observa, a pesar de que en ambos casos donde ocurrió el aumento en la amplitud del patrón, la mortalidad estacional se redujo, y además se redujo la varianza de la serie en los últimos años de observación.Sin embargo, lo que ocurrió fue que, a pesar de que se redujo la varianza, el patrón se hizo más definido. Como se está capturando el efecto aislado de la estacionalidad, esto se visualiza como un aumento en la variación estacional relativa.
+Las defunciones ocurridas entre 10 y 14 años de edad mostraron una reducción de la variación estacional en el caso de los hombres y un comportamiento constante en el caso de las mujeres, que se repitió para hombres y mujeres de entre 15 y 19 años de edad, así como para los hombres de entre 20 y 29 años. Las mujeres que fallecieron perteneciendo a este último grupo de edad experimentaron una drástica reducción en la amplitud de la variación estacional de la mortalidad, lo que podría estar relacionado con descensosque pudieron haber ocurrido durante el periodo, no en la mortalidad materna (ya que esta causa de muerte no presenta comportamiento estacional),sino debido a la reducción de la mortalidad ocasionada por las causas de muerte con estacionalidad, entre ellas, las enfermedades del sistema circulatorio, respiratorio, digestivo, incluso la diabetes.
+Para los fallecidos entre los 30 y los 49 años, la variación estacional se mantuvo constante durante el periodo de observación, excepto en el caso de los hombres de entre 40 y 44 años de edad, para los que sufrió una reducción leve. Sin embargo, la variación estacional de las defunciones a partir de los 50 años de edad, presentó una reducción considerable entre 1990 y 2009, excepto en el caso de las mujeres de entre 80 y 84 años de edad, que se mantuvo constante. Todos estos grupos que presentaron reducción de la mortalidad, también mostraron un patrón de reducción irregular durante el periodo, en el que hay un leve incremento de la variación estacional entre los años 1994 a 1999. Este incremento, como se dijo anteriormente, podría ser efecto de la crisis económica de 1994.
+DIFERENCIAS DE LA MORTALIDAD ESTACIONAL ENTRE HOMBRES Y MUJERES
+Los trabajos que abordan el estudio de la mortalidad estacional y que han tomado en cuenta a la variable “sexo” como diferencial arrojan resultados contradictorios. Si uno revisa las primeras
+75
+
+Enero y Febrero, desviejadero
+evidencias sobre el estudio de la mortalidad estacional en el trabajo publicado en 1838 por Auguste Quetelet, podrá observar que, a pesar de que el autor señala que observa ciertas diferencias en el comportamiento de hombres y mujeres de los diferentes grupos de edad, él mismo rectifica que no es el sexo, sino la edad, la variable que mejor explica el comportamiento estacional de la mortalidad. Ésta última afirmación coincide con estudios más recientes, que concluyen que el comportamiento estacional de la mortalidad no varía entre hombres y mujeres (Feinstein, 2002; Ishigami, 2008; Rau, 2007). Por el contrario, otros estudios muestran evidencias que contradicen este dicho (Rau y Dobelhammer, 2003; Rau, 2007), pues muestran que existe una débil diferencia en la amplitud de la variación estacional entre hombres y mujeres. Por lo regular, la variación es mayor en las mujeres que en los hombres, a pesar de que las mujeres experimentan menor mortalidad que los hombres a lo largo de su vida.
+Sin embargo, en este trabajo se separó el patrón estacional en dos partes, lo que permitió observar con mayor detalle la forma en que se relaciona la variación estacional de la mortalidad con sus diferenciales: sexo y edad. Del ejercicio anterior, se puede concluir que el patrón estacional no es el mismo a lo largo de la vida para hombres y mujeres, pues es en las edades intermedias donde se presentan las mayores diferencias en la forma de la distribución intra-anual de las muertes. Asimismo, se observó que la velocidad de convergencia –por la izquierda– a un patrón definido, es mayor en las mujeres que en los hombres. Del mismo modo, se observó que las mujeres que murieron en la juventud y en la adultez temprana, presentaron mayor variación estacional que los hombres en el mismo grupo de edad. Esta evolución del patrón estacional, diferenciada por sexo, permite dar otra explicación al fenómeno de la mortalidad estacional y visualizar mejor si existen y qué es lo que da origen a las diferencias por sexo.
+Llama la atención que sean las mujeres quienes tengan mayor variación estacional que los hombres (Rau, 2007). Esta diferencia en la intensidad puede explicarse bajo el siguiente razonamiento: a lo largo de la vida, las mujeres tienen menor mortalidad que los hombres, por lo que, en teoría, debieran ser menos vulnerables. Como la población de estudio en este trabajo son los muertos y las muertas, se observa que las mujeres tienen mayor amplitud de la variación estacional de la mortalidad, que puede asociarse con una menor capacidad para enfrentarse a los cambios en el clima (Gemmel, 2000). Entonces, las mujeres que fallecen son, relativamente, más vulnerables que los hombres a las variaciones climáticas. Este es, desde mi punto de vista, el hallazgo más importante de este trabajo.
+76
+
+Enero y Febrero, desviejadero
+De este modo, se confirma que el grado de profundización en el estudio de estas diferencias dependerá del grado de desagregación por edad de la población. Entre menor sea éste, menor será la información que podrá obtenerse de las diferencias por sexo del patrón estacional.
+LA EDUCACIÓN COMO FACTOR PROTECTOR FRENTE A LA MORTALIDAD ESTACIONAL
+En el presente trabajo se encontró que la educación (considerada como un proxy de estatus socioeconómico) funciona como un gradiente en el estudio de la mortalidad estacional. Este resultado coincide con el que obtuvo Roland Rau en su estudio para los Estados Unidos (2007). Sin embargo, durante el periodo de análisis las diferencias de las variaciones estacionales se redujeron, de tal modo que las personas sin educación, con primaria (conclusa e inconclusa), así como los que contaban con educación secundaria y preparatoria alcanzaron la misma amplitud de la variación estacional.
+Es importante considerar el análisis que el mismo autor hizo para Dinamarca, país en el que la educación no funcionaba como variable diferencial en el estudio de este fenómeno, debido a que en ese país las condiciones socioeconómicas son muy parecidas en todos los estratos de la población, pues se trata de un estado de bienestar. Por el contrario,en México,a principios de este siglo “disminuyó la pobreza por una caída en la desigualdad” (Cortés, 2010). Sin embargo, durante el periodo de observación México vivió dos de las crisis económicas más profundas de su historia: la de 1994 y la de 2008.A pesar de ello, los niveles de escolaridad siguieron aumentando. Por lo tanto, no se puede afirmar que la reducción de la amplitud de la variación estacional en México esté relacionada con una disminución de las brechas socioeconómicas, cuando se toma como variable proxy del nivel socioeconómico a la escolaridad.
+Otra explicación a este fenómeno podría fundamentarse en la teoría de la transición epidemiológica, pues quizá el cambio en las causas de mortalidad tiene qué ver con la disposición de medicamentos que inhiben la mortalidad estacional causada por influenza, y las muertes por enfermedades crónico-degenerativas no han crecido en la medida de esta disminución, lo que se percibe como una reducción generalizada de la amplitud de la variación estacional, proporcional al número de defunciones por enfermedades infecciosas en ese estrato social.
+Como sabemos, la mortalidad por enfermedades infecciosas está ligada a bajos niveles de desarrollo económico y, por lo tanto, es posible observarla en los estratos sociales con mayores niveles de
+77
+
+Enero y Febrero, desviejadero
+pobreza. Por lo que la disminución en la mortalidad estacional debida a la reducción de enfermedades infecciosas sería mayor en los grupos ubicados en los niveles socioeconómicos más bajos. La reducción generalizada y proporcional de los niveles de pobreza se manifestaría como la convergencia del nivel de variación estacional de los grupos sociales inferiores al de mayor estatus socioeconómico, como se observó en el presente trabajo. Sin embargo, como en México ha aumentado la pobreza y las desigualdades sociales permanecen, la reducción de las diferencias de la variación estacional entre los grupos es clara evidencia del avance de la transición epidemiológica, en tanto que, por el momento, la reducción de la variación estacional está ligada a la disminución generalizada de la mortalidad por enfermedades infecciosas.
+HACIA UNA BASE OPERATIVA
+Además, las defunciones de las mujeres entre 20 y 29 años de edad tienen mayor variación estacional que las los hombres en este mismo grupo de edad. Sin embargo, es mucho menor el número de defunciones de mujeres en comparación con las de los hombres. Por lo tanto, al interpretar esta mayor variación estacional de las defunciones de las mujeres que de los hombres, debe tomarse en cuenta el quantum del fenómeno en cada grupo.
+A partir del análisis conjunto de estas dos variables, se puede definir la propensión de los grupos de población a fallecer en una época del año determinada y así poder compararlos. De manera que, este resultado contradictorio también marca el camino para mejorar el indicador de medición de la intensidad de la mortalidad estacional propuesto en este trabajo, a fin de que sea útil para encontrar grupos más vulnerables a las condiciones climáticas. El refinamiento del indicador consistiría en aplicar un factor , proporcional al quantum del fenómeno en cada grupo que se esté comparando. Considerando grupos a comparar, el factor proporcional se construiría como una proporción de las muertes en cada grupo, sobre la suma de las muertes de todos los grupos que se estén comparando.
+∑
+De este modo, se obtienen indicadores de la intensidad de la estacionalidad proporcionales al número de defunciones que ocurren en cada grupo. En la figura 4.1 se compara la intensidad de la
+78
+
+Enero y Febrero, desviejadero
+variación estacional en cada grupo. Este indicador ya permite identificar a los grupos según un grado de vulnerabilidad a las condiciones climáticas.
+
+Figura 4.1. Indicador de vulnerabilidad al clima por grupo de edad (1990-2009)*
+
+Hombres
+
+Mujeres
+
+100% 10% 1% 0%
+
+100%
+
+1990
+
+1990 1991
+
+1991 1992
+1992
+
+1993
+
+1993
+
+1994
+
+1994
+
+1995
+
+1996
+
+10%
+
+1995 1996
+
+1997
+
+1997
+
+1998
+
+1998
+
+1999
+
+1999
+
+2000
+
+2000
+
+2001
+
+2001
+
+2002
+
+2002
+
+2003
+
+1%
+
+2003
+
+2004
+
+2004
+
+2005
+
+2005
+
+2006
+
+2006
+
+2007 2007
+2008 2008
+2009 2009
+
+0%
+
+Fuente: Elaboración propia. *Los datos se presentan en escala semilogarítmica.
+
+RECONSTRUCCIÓN DE LAS CADENAS CAUSALES DEL EXCESO DE LA MORTALIDAD EN
+INVIERNO
+Se analizaron de manera breve las principales causas de mortalidad en México, debido a la relevancia que tienen para la comprensión de las cadenas causales de las muertes relacionadas con el medio ambiente. De la mera observación de las series construidas a partir de la información sobre defunciones ocurridas entre 1990 y 2009, se encontró que en México, el exceso de mortalidad en el invierno no sólo es explicado, en mayor parte, por las muertes debidas a enfermedades cardiovasculares, sino que otros padecimientos tienen una participación relevante en la conformación del patrón estacional.
+Una de las causas de muerte que más llama la atención es la de la diabetes, que en México parece ser un componente determinante en el patrón estacional de la mortalidad, mientras que en otros estudios, el comportamiento estacional de las muertes debidas a este padecimiento es mínimo (Feinstein, 2002; p. 478; Rau, 2007; p. 88), y además el comportamiento estacional de esta enfermedad es sustancialmente diferente en otros países, en los que el máximo se sitúa en febrero (MacKenback, 1979; p.263).
+
+79
+
+Enero y Febrero, desviejadero
+
+Figura 4.2. Muertes por causas en México para el total de la población, ocurridas entre 1990 y 2009
+
+14,000 12,000
+
+Ciertas enfermedades infecciosas y parasitarias
+Tumores (neoplasias)
+
+10,000 8,000 6,000 4,000 2,000
+
+Enfermedades del sistema circulatorio
+Enfermedades del sistema digestivo
+Enfermedades del sistema respiratorio
+Enfermedades del sistema genitourinario
+Embarazo, parto y puerperio
+Causas externas de morbilidad y de mortalidad
+Diabetes
+
+0
+
+Otras
+
+ene-98 jun-98 nov-98 abr-99 sep-99 feb-00 jul-00 dic-00 may-01 oct-01 mar-02 ago-02 ene-03 jun-03 nov-03 abr-04 sep-04 feb-05 jul-05 dic-05 may-06 oct-06 mar-07 ago-07 ene-08 jun-08 nov-08 abr-09 sep-09
+
+Fuente. Elaboración propia con datos del Instituto Nacional de Geografía y Estadística
+
+RECOMENDACIONES
+El estudio de la mortalidad estacional proporciona una base técnica que permite una mejor toma de decisiones para incrementar la eficiencia con la que se administran los recursos. Dos de sus aplicaciones más importantes son: el sector salud y la industria aseguradora. A continuación, se describen los beneficios que podrían obtenerse de la observación y monitoreo constante de la mortalidad estacional en la planeación y administración de los recursos en ambos sectores.
+EN LA SALUD PÚBLICA
+En el campo de la salud pública, el monitoreo y seguimiento del comportamiento estacional de las muertes puede ayudar a desarrollar políticas cada vez más eficientes encaminadas a reducir la mortalidad, en tanto que estarían más focalizadas a atender la demanda en los momentos de mayor necesidad, y además, bajo la perspectiva de la prevención.
+80
+
+Enero y Febrero, desviejadero
+En primer lugar, el conocimiento del comportamiento estacional de las muertes ayudaría a diseñar estrategias de logística y provisión de insumos, así como oferta de servicios de salud pública más eficientes, ya que la demanda de servicios de salud en un momento determinado del año se podría estimar con mayor precisión. Además, si este monitoreo se hace tomando en cuenta las diferencias en el comportamiento estacional de las muertes según el grupo de edad y sexo al que pertenecían, entonces se podría atender aún mejor la demanda, en forma más específica.
+Sin embargo, es importante puntualizar que para que el análisis de la mortalidad estacional provea resultados que ayuden a hacer más eficientes las estrategias encaminadas a la reducción de la mortalidad, es necesario profundizar en su estudio, con la finalidad de incrementar el grado de precisión en la estimación de las muertes. Uno de los caminos planteados hacia esta profundización, sería el estudio de la estacionalidad de la mortalidad por causas, como resultado del cual, sería posible identificar tanto cadenas causales, como relaciones entre el clima y la mortalidad. Otro de los caminos a seguir, sería el análisis regional del comportamiento de la mortalidad estacional, que ayudaría a comprender cuáles son las condiciones del entorno menos favorables a la sobrevivencia. Finalmente, el estudio de factores socioeconómicos ayudaría a comprender cuáles son las circunstancias sociales y económicas que hacen más o menos vulnerable al individuo frente a los embates del clima.
+Por otra parte, mediante el seguimiento continuo de las defunciones en intervalos menores a un año, sería posible identificar cuándo un exceso de muertes se debe a causas estacionales y cuándo ocurre como resultado de eventos extraordinarios --como en el caso de epidemias y catástrofes naturales. Por lo anterior, es relevante no sólo el análisis de la mortalidad estacional, sino también el de el comportamiento estacional de la morbilidad. Pues, si se conoce éste, podría identificarse cuándo un pico estacional de alguna enfermedad deja de ser normal y se transforma en una epidemia.
+EN EL SECTOR ASEGURADOR
+En los seguros de vida, se utilizan varios supuestos sobre el comportamiento de la mortalidad en las edades fraccionadas, uno de ellos es el de Distribución Uniforme de las Muertes (DUM), que conceptualmente se refiere a que las muertes están distribuidas de igual forma a lo largo del año y, por lo tanto, la probabilidad de morir es igual en todos los meses. Sin embargo, es claro que las muertes no ocurren con la misma probabilidad a lo largo del año. Por otra parte, el comportamiento estacional de la mortalidad es diferente según la edad y sexo de las personas.
+81
+
+Enero y Febrero, desviejadero En este tipo de operaciones financieras, las compañías aseguradoras provisionan un monto de dinero (reserva) para hacer frente a sus obligaciones futuras, las cuales están en función de la fecha en que fallecen los asegurados, por lo que necesitan modelar con precisión la forma en que ocurren las reclamaciones a lo largo del año, con la finalidad de establecer una estrategia de inversión que les permita un determinado grado de solvencia, minimizando el costo de oportunidad que pudiera derivarse de una estrategia de inversiones demasiado conservadora, en cuanto al plazo de los instrumentos financieros que componen el portafolio en que se invierte la reserva. Por lo tanto, la utilización de modelos que consideren la estacionalidad de la mortalidad estacional (según cada grupo de edad), ayudaría a pronosticar con mayor precisión la forma en que se distribuye el número de fallecimientos que ocurrirán a lo largo de un año calendario (sobre todo en los grupos donde la estacionalidad es más intensa) y, por ende, mejoraría la estimación del número de reclamaciones esperadas en cada mes. Esto permitiría establecer una política de inversión de las reservas mucho más eficiente. El único trabajo que ha explorado esta posibilidad de aplicación del estudio de la mortalidad estacional es el de Mercedes Gregorio-Domínguez y Juan José Fernández Durán, en el que hacen uso de las distribuciones circulares para modelar este fenómeno.
+82
+
+REFERENCIAS
+
+Enero y Febrero, desviejadero
+
+Bee Dagum, E. (1980).The X-II-ARIMA seasonal adjustment method.Otawa: Statistics Canada, Seasonal Adjustment and Time Series Staff. Consultado en http://www2.stat.unibo.it/beedagum/Papers/0677-0796.pdf, el 25/11/2011.
+Box, G. E. P., Jenkins, G. M., y Reinsel, G. C. (1976). Time series analysis. San Francisco: Holden-day.
+Bull, G. M., y Morton, J. (1978). Environment, temperature and death rates. Age and Ageing, 7(4), 210-224.
+Cortés, Fernando. (2010). Pobreza, desigualdad en la distribución del ingreso y crecimiento económico, 1992-2006. En Fernando Cortés y Orlandina de Oliveira (Comps.), V Desigualdad. Los grandes problemas de México (pp. 148-165). México D.F.: El Colegio de México.
+Coutin, M. G., y Zambrano Cárdenas, A. (2006). Comportamiento estacional de la mortalidad infantil en Cuba, 1987-2004. Revista Cubana De Higiene y Epidemiología, 44(2), 1-8.
+Donaldson, G., Ermakov, S., Komarov, Y., McDonald, C., y Keatinge, W. (1998). Cold related mortalities and protection against cold in Yakutsk, eastern Siberia: Observation and interview study.British Medical Journal, 317(7164), 978-982.
+83
+
+Enero y Febrero, desviejadero Donaldson.G.C., Keatinge W.R. (1997), Early increases in ischaemic heart disease
+mortality dissociated from, and later changes associated with, respiratory mortality, after cold weather in south east England. Epidemiology Community Health Journal. Vol. 51, p. 643–648.
+Donaldson, G., Tchernjavskii, V., Ermakov, S., Bucher, K., y Keatinge, W. (1998). Winter mortality and cold stress in Yekaterinburg, Russia: Interview survey. BMJ, 316 (7130), 514.
+Falagas, M. E., Karageorgopoulos, D. E., Moraitis, L. I., Vouloumanou, E. K., Roussos, N., Peppas, G., et al. (2009). Seasonality of mortality: The september phenomenon in mediterranean countries. Canadian Medical Association Journal, 181(8), 484-486.
+Feinstein, C. A. (2002). Seasonality of deaths in the US by age and cause. Demographic Research, 6(17), 469-486.
+Findley, D. F., Monsell, B. C., Bell, W. R., Otto, M. C., y Chen, B. C. (1998). New capabilities and methods of the X-12-ARIMA seasonal-adjustment program. Journal of Business & Economic Statistics, 6(2), 127-152.
+Gomez, V., y Maravall, A. (1996). Programs TRAMO (time series regression with ARIMA noise, missing observations, and outliers) and SEATS (signal extraction in ARIMA time series), instructions for the user. Documento de Trabajo, 9628.Consultado el 03/05 2012, de http://econpapers.repec.org/paper/bdewpaper/9628.htm
+IBM. (2010). [SPSS 17.0 Statistics Package for the Social Sciences]
+84
+
+Enero y Febrero, desviejadero Information Handling Services (IHS). E-Views 5, 2007.
+Instituto Nacional de Geografía y Estadística. (2010). (Atlas Interactivo de México ed.). Aguascalientes, México: INEGI, (Instituto Nacional de Geografía y Estadística). Consultado el 03/15, 2011 de http://200.23.8.60/wmsconnector/com.esri.wms.Esrimap/limites?
+Instituto Nacional de Geografía y Estadística. (2011). Registros administrativos "Defunciones registradas 1990-2009".Consultado el 02/17, 2011, dehttp://www.inegi.org.mx/inegi/default.aspx?s=est&c=15273
+Ishigami, A., Hajat, S., Kovats, R. S., Bisanti, L., Rognoni, M., Russo, A., et al. (2008). An ecological time-series study of heat-related mortality in three european cities. EnvironHealth, 7(5), 1-7.
+Keatinge, W. R., y Donaldson, G. C. (2004). The impact of global warming on health and mortality. Southern Medical Journal, 97(11), 1093.
+Keatinge, W., Coleshaw, S., y Holmes, J. (1989). Changes in seasonal mortalities with improvement in home heating in England and Wales from 1964 to 1984. International Journal of Biometeorology, 33(2), 71-76.
+Keatinge, W., Donaldson, G., Cordioli, E., Martinelli, M., Kunst, A., Mackenbach, J., et al. (2000). Heat related mortality in warm and cold regions of Europe: Observational study.BMJ, 321(7262), 670-673.
+85
+
+Enero y Febrero, desviejadero Kelly, P. M., y Adger, W. N. (2000). Theory and practice in assessing vulnerability to
+climate change and facilitating adaptation. Climatic Change, 47(4), 325-352. Kuri-Morales, P., Galván, F., Cravioto, P., Rosas, L. A. Z., y Tapia-Conyer, R. (2006).
+Mortalidad en México por influenza y neumonía (1990-2005). Salud Pública de México, 48(5), 379-384. Lotka, A. J. (1925). Elements of physical biology. New York.: Williams & Wilkins company. Lutz, W., y Samir KC. (2011). Global human capital: Integrating education and population. Science, 333(6042), 587-592. doi:10.1126/science.1206964 Marie, G. C., González, R. T., y Palanco, I. M. (2009). Seasonal variation in mortality for five main death causes. Cuba, 1996-2006. The Internet Journal of Epidemiology, 6(2) Morowitz, H. J. (1992). Beginnings of cellular life: Metabolism recapitulates biogenesis. New Haven: Yale University Press. Motohashi, Y., Takano, T., Nakamura, K., Nakata, K., & Tanaka, M. (1996). Seasonality of mortality in Sri Lanka: Biometeorological considerations. International Journal of Biometeorology, 39(3), 121-126. Nakai, S., Itoh, T., & Morimoto, T. (1999). Deaths from heat-stroke in Japan: 1968– 1994.International Journal of Biometeorology, 43(3), 124-127.
+86
+
+Enero y Febrero, desviejadero Ordorica Mellado, M. (2004). Pronóstico de las defunciones por medio de los modelos
+autorregresivos integrados de promedios móviles. Papeles de población, octubrediciembre (42), 249-261.
+Pressat, R. (2000). El análisis Demográfico. Métodos, Resultados, Aplicaciones. México D.F.: Fondo de Cultura Económica.
+Quetelet, A. (1978; 1838). De l'influence des saisons sur la mortalité aux differens âges dans la Belgique. Bruselas: M. Hayez.
+Rau, R., y Dobelhammer, G. (2003). Seasonal mortality in Denmark: The role of sex and age. Demographic Research, 9, 197-222.
+Rau, R. (2007). En James Vaupel (Ed.), Seasonality in human mortality: A demographic approach. Rostock: Springer.
+Scheidel, W. (2001).Death on the Nile: Disease and the demography of roman Egypt. Londres: Brill.
+Shaw, B. D. (1996). Seasons of death: Aspects of mortality in imperial Rome. The Journal of Roman Studies, 86, 100-138. Consultado en http://www.jstor.org/stable/300425
+Tan, T., Siu, D., Seale, H., Heywood, A., Ridda, I., Dwyer, D., et al. (2011).The relationship between seasonal influenza vaccine uptake and socioeconomic status in western Sydney, substudy of the heart-flu, study 2008-2009. Heart, Lung and Circulation, 20, S251-S251.
+87
+
+Enero y Febrero, desviejadero Uphoff, H., y Stilianakis, N. I. (2004). Influenza-associated excess mortality from monthly
+total mortality data for Germany from 1947 to 2000. Methods of Information in Medicine, 43(5), 486-492. Velázquez, F. R., García-Lozano, H., Rodríguez, E., Cervantes, Y., Gómez, A., Melo, M., et al. (2004). Diarrhea morbidity and mortality in Mexican children: impact of rotavirus disease.The Pediatric Infectious Disease Journal, 23(10), S149. Villarreal, F. G., y ECLAC, U. (2005). Elementos teóricos del ajuste estacional de series económicas utilizando X-12-ARIMA y TRAMO-SEATS. Naciones Unidas, CEPAL, División de Estadísticas y Proyecciones Económicas. Yan, Y. Y. (2000). The influence of weather on human mortality in Hong Kong. Social Science & Medicine, 50(3), 419-427. Zeger, S. L. (1988). A regression model for time series of counts. Biometrika, 75(4), 621.
+88
+
+

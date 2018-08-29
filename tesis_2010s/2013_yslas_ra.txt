@@ -1,0 +1,2080 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EXCHANGE RATE FLUCTUATIONS DURING NAFTA: A (DE)STABILIZING INFLUENCE ON THE MEXICAN ECONOMY?
+RENATO AUGUSTO YSLAS PACHECO
+PROMOCIÓN 2011 - 2013
+ASESOR:
+DR. STEPHEN MCKNIGHT
+JULIO 2013
+
+To my parents, Armando and María Luisa
+To my sister and brothers, Claudia, Ramón and Rodrigo
+To Fabiola
+Because I was never alone along all this way.
+
+i
+Abstract
+This paper examines the role of the peso/dollar exchange rate for the Mexican economy during the NAFTA period. Its aim is to investigate the sources of exchange rate fluctuations and evaluate whether exchange rate flexibility for Mexico has acted as a shock-absorber, or as a source of shocks.
+In order to investigate these sources of exchange rate fluctuations, two structural VAR models are used. In the baseline model, the analysis examines three variables: relative output between Mexico and the U.S., the real peso/dollar exchange rate and the nominal peso/dollar exchange rate. Using long-run restrictions, three kinds of shocks are initially identified: relative supply shocks, relative demand shocks and relative nominal shocks. An extended second model is developed, which includes the separation of supply shocks into relative productivity shocks and relative international oil supply shocks, and the separation of nominal shocks into exchange rate shocks and relative monetary policy shocks. Impulse response functions are examined and the variance decompositions are obtained to determine the relative importance of each shock.
+We find that in the case of Mexico the exchange rate plays a dual role in the economy. On the one hand there is evidence that the exchange rate acts as a shock-absorber. On the other hand we find evidence that nominal factors dominate real factors in explaining peso/dollar exchange rate volatility. Of all the structural shocks considered in the analysis, exchange rate shocks are found to be the most dominant. This suggests that shocks arising in the foreign exchange market are important and can have harmful consequences for the Mexican economy.
+Given the above results, two clear policy recommendations emerge. First, we find little evidence to support a return to a fully fixed exchange rate regime. Second, as we also find evidence that nominal exchange rate fluctuations can be a source of shocks, the central bank of Mexico, Banco de México, should take this into account when setting policy. Specifically, by offsetting large fluctuations in the nominal exchange rate, the central bank can help avoid the negative impact on the real economy of non-fundamental shocks.
+
+Index
+Abstract ............................................................................................................................................ i
+1. Introduction..................................................................................................................................1 2. Summary statistics .......................................................................................................................5 3. Econometric Methodology and Empirical Results ......................................................................9
+The Model............................................................................................................................10 Impulse Response Functions ...............................................................................................12 Forecast Error Variance Decomposition .............................................................................15 4. The (un)importance of monetary policy and international oil price shocks ..............................17 The Model............................................................................................................................17 Results ................................................................................................................................19 Oil supply vs. productivity shocks .....................................................................................23 Monetary policy vs. exchange rate shocks ........................................................................25 Discussion ..........................................................................................................................26 5. Conclusion ................................................................................................................................28
+Appendix .......................................................................................................................................29 References .....................................................................................................................................32
+
+1
+Exchange rate fluctuations during NAFTA: A (de)stabilizing influence on the Mexican economy?
+1. Introduction
+In the aftermath of the 1994 economic crisis, the Mexican authorities abandoned using the exchange rate as the nominal anchor and adopted a floating exchange rate regime whereby monetary policy is now conducted via the targeting of inflation. Conventional exchange rate theory suggests that this should have improved the ability of Mexico to adjust to shocks, since fluctuations in the exchange rate can help stabilize the economy via changes in relative prices. However, exchange rate fluctuations can also have destabilizing effects on the economy if the exchange rate is susceptible to non-fundamental shocks.1
+This paper examines the role of the peso/dollar exchange rate for the Mexican economy during the NAFTA period.2 Its aim is to investigate the sources of exchange rate fluctuations and evaluate whether exchange rate flexibility for Mexico has acted as a shock-absorber, or as a source of shocks. This exercise is important for a variety of reasons. Since the creation of NAFTA, the Mexican economy is now highly open to international trade. Consequently, the exchange rate is a key variable. As highlighted by Figure 1, since the adoption of a flexible exchange rate in December 1994, the nominal peso/dollar exchange rate has been highly volatile. Furthermore, the volatility of the peso/dollar real exchange rate is very similar to the volatility observed for the nominal exchange rate. Indeed, the volatility of the real exchange rate increased almost immediately from the regime switch to floating exchange rates. This raises the question as to whether this observed exchange rate variability is attributable to nominal (asymmetric) shocks or real (asymmetric) shocks.3 If real shocks play an important role in causing exchange rate fluctuations, then this suggests that the Mexican exchange rate has successfully acted as a shock-absorber. However, if nominal shocks are found to play an important role, then shocks in
+1 See, for example, Buiter (2000). 2 The NAFTA period coincides with Mexico’s adoption of the floating exchange rate regime. NAFTA was signed in 1992 and came into force in January 1994. Mexico has allowed the exchange rate to fluctuate since December 1994. 3 Our focus throughout is on asymmetric or relative shocks, since the exchange rate should not adjust to symmetric or common shocks.
+	  
+
+2
+the foreign exchange market are generating the exchange rate volatility. In this case interventions in the foreign exchange market by the monetary authority could be justified in order to offset the potentially destabilizing effects of exchange rate fluctuations.
+
+40
+
+20
+
+0
+
+-20
+
+1990m1
+
+1995m1
+
+2000m1
+
+Nominal exchange rate
+
+2005m1
+
+2010m1
+
+Real exchange rate
+
+Figure 1. Nominal and real peso/dollar exchange rate fluctuations (Monthly percentage change)
+Note: The real exchange rate data were transformed by subtracting 10. The transformation has been done to aid the visual comparison between the movements in both exchange rates
+
+In order to investigate these sources of exchange rate fluctuations for Mexico, this paper employs two structural vector autoregressive (VAR) models. In the baseline model, the analysis examines three variables: relative output between Mexico and the U.S., the real peso/dollar exchange rate and the nominal peso/dollar exchange rate.4 By imposing long-run identifying restrictions, three sources of exchange rate fluctuations are identified: relative supply shocks, relative demand shocks and relative nominal shocks. However, aggregating multiple shocks into only one shock can be inappropriate if the underlying shocks affect the variables of interest in a different fashion (Faust and Leeper, 1994). To address this possible pitfall, an extended second model is
+4 Throughout the analysis all relative variables are only with respect to the United States (U.S.), as the trade value between Mexico and the US (its main trading partner) represents a very large portion of the total trade value of the Mexican economy. For example, between 1995 and 2012 around 80 % of total Mexican exports went to the U.S. and around 50 - 70 % of total Mexican imports originated from the U.S.
+
+3
+developed in the spirit of An and Kim (2010), which includes the separation of supply shocks into relative productivity shocks and relative international oil supply shocks,5 and the separation of nominal shocks into exchange rate shocks and relative monetary policy shocks. Impulse response functions are examined and the variance decompositions are obtained to determine the relative importance of each shock.
+We find that in the case of Mexico the exchange rate plays a dual role in the economy. On the one hand there is evidence that the exchange rate acts as a shock-absorber. Both exchange rates respond significantly and in the right direction to demand shocks, and the effect of demand shocks on output are found to be negligible. However, on the other hand we find evidence that nominal factors dominate real factors in explaining peso/dollar exchange rate volatility. Of all the structural shocks considered in the analysis, exchange rate shocks are found to be the most dominant, and importantly these shocks are found to have a non-negligible effect on output. This suggests that shocks arising in the foreign exchange market are important and can have harmful consequences for the Mexican economy.
+Given the above results, two clear policy recommendations emerge. First, we find little evidence to support a return to a fully fixed exchange rate regime. There is strong evidence to suggest that the exchange rate plays an important role in stabilizing the Mexican economy in response to goods market shocks. Second, as we also find evidence that nominal exchange rate fluctuations can be a source of shocks, the central bank of Mexico, Banco de México, should take this into account when setting policy. Specifically, by offsetting large fluctuations in the nominal exchange rate, the central bank can help avoid the negative impact on the real economy of nonfundamental shocks. This study suggests that the central bank should support the peso/dollar exchange rate through interventions in the foreign exchange market rather than by explicitly engaging in exchange rate targeting, given the monetary policy transmission mechanism uncovered in the analysis.6
+5 Because Mexico is a crude oil net exporter, international oil prices should be taken into account when investigating the role of the exchange rate in the economy. 6 In contrast to conventional exchange rate theories, we find that an increase in the interest rate results in a depreciation of the nominal and real exchange rates.
+
+4
+A large literature now exists on determining the (de)stabilizing role of exchange rates. However, no consensus yet exists. For example, while Clarida and Gali (1994) find evidence of stabilizing behaviour of the exchange rate for Canada, Germany, Japan and Britain, Farrant and Peersman (2006) find evidence that the exchange rate is an important source of shocks for the same set of countries, with the exception of Canada.7 Artis and Ehrmann (2006) find evidence that the exchange rate is a potential source of shocks in Denmark, while Alexius and Post (2008) find evidence that the exchange rate is disconnected from the rest of the economy for the UK, Australia and New Zealand. An and Kim (2010), using a mixture of short-run and long-run restrictions, find that the exchange rate plays a very important stabilizing role in Japan. Dibooglu and Kutan (2001) find evidence of destabilizing properties of the exchange rate in Poland and evidence of the stabilizing properties in Hungary. For six emerging market economies,8 Chowdhury (2004), imposing long-run neutrality of money in a bivariate VAR, concludes that real shocks are the dominate role in creating exchange rate volatility. The current paper adds to this literature by focusing on Mexico, which to date has been ignored.9 A notable exception is the study by Huang and Suchada (2003), who investigate the sources of peso/dollar exchange rate fluctuations in the aftermath of the 1994-1995 currency crisis.10
+The present study complements the work of Capistrán et al. (2012) who focus on the issue of exchange rate pass-through. They find that the impact of exchange rate shocks on inflation has significantly decreased since the adoption of an inflation-targeting framework in 2001. This adds to the evidence about the stabilizing properties of the peso/dollar exchange rate found here. If the exchange rate has no important affects on prices at the same time it helps the real economy to stabilize, then there are more arguments to not fully fix the exchange rate.
+7 Using a Blanchard-Quah decomposition, Clarida and Gali (1994) find that demand shocks account for more than 50 % of the real exchange rate variance for all countries. In contrast, Farrant and Peersman (2006), using a sign restriction approach discover a more important role for nominal shocks. 8 The countries are Chile, Colombia, Malaysia, Singapore, South Korea and Uruguay. 9 The existing exchange rate literature for Mexico has focused on questions such as the impact of sterilized exchange rate market interventions on the nominal exchange rate (e.g. Werner, 1997); the mechanism of adjustment under a fixed exchange rate regime (e.g. Kamin and Rogers, 2000); changes in nominal exchange rate volatility since the adoption de facto of an interest rate target as the main instrument for monetary policy (e.g. Benavides and Capistrán, 2009); the long-run determinants of the level of the nominal peso/dollar rate (e.g. Loría et al., 2010); exchange rate pass-through (e.g. Capistrán et al., 2012), and the role played by non-tradable goods in real exchange rate fluctuations (e.g. Hernández Vega, 2012).
+
+5
+In addition, this paper provides more evidence on the monetary policy mechanism in Mexico. We find that “contractionary” monetary policy shocks make both real and nominal peso/dollar exchange rates to depreciate. So, as Kohlscheen (2011), we don´t find evidence to support the conventional wisdom concerning the effects of monetary policy on exchange rates in Mexico. Unlike us, however, Kohlscheen (2011) finds that monetary policy has no effect on nominal exchange rate11.
+The rest of the paper is organized as follow. Section 2 presents some stylized facts concerning the data used in the analysis. Section 3 presents the econometric methodology and empirical results obtained for the baseline model, while Section 4 outlines the extended VAR model. Finally Section 5 concludes.
+2. Summary statistics
+In this section we briefly summarize some of the main stylized facts concerning the variables used in the VAR analysis. In addition, the statistical properties of the variables are also examined. In what follows the terms exchange rate and peso/dollar rate are used interchangeably.
+The data consists of monthly observations from 1995:01 to 2012:10 for the nominal peso/dollar rate, the real exchange rate, industrial production (as a proxy for output) and interest rates for both Mexico and the U.S., and international oil prices.12 For the interest rate in Mexico we use the 91-day CETES rate of the Mexican government and for the U.S. the 3-month treasury bill rate of the U.S. government. All variables are in log form with the exception of the interest rates which are in levels. All data are taken from the International Financial Statistics database of the International Monetary Fund.
+10 In stark contrast with the approach taken in this paper, Huang and Suchada (2003) attempt to determine if shifts in investor sentiment, reflected in capital account shocks, are the key to explain exchange rate fluctuations in both the nominal and real peso/dollar exchange rates. 11 Kohlscheen (2011) simply regresses the daily variation in the nominal exchange rate on the daily variation in interest rate for 2003-2011, controlling for other variables and using least squares and instrumental variables as econometric techniques.	   12 Industrial production is used as a proxy for output in both Mexico and U.S. in the absence of available monthly series for GDP.
+
+6
+Nowadays Mexico is a country with a high degree of trade openness. The process of opening the economy started in 1986 with its incorporation into the GATT, and currently Mexico has signed twelve Free Trade Agreements with over 44 different countries. However, by far the most important event in this process has been the creation of the North American Free Trade Agreement (NAFTA), as illustrated in Figure 2.
+By inspection, the most significant increase in the degree of openness occurred immediately after Mexico entered NAFTA in 1994. By 1995 the ratio of exports plus imports to GDP had reached almost 60 %, when it had been less than 40 % the previous year. Since then, it has fluctuated around 60 %. Because of Mexico’s greater dependence on international trade, exchange rate fluctuations have become increasingly important for output.
+NAFTA
+
+70
+
+60
+
+50
+
+40
+
+30
+
+20
+
+1980
+
+1990
+
+2000
+
+2010
+
+Figure 2. Degree of openness Mexico, 1980-2012 (Percentage)
+Note: Degree of openness is calculated as the share of total trade in GDP ((Exports+Imports)/GDP)
+
+7
+
+3
+
+2.5
+
+2
+
+1.5
+
+1
+
+1990m1
+
+1995m1
+
+2000m1
+
+Nominal exchange rate
+
+2005m1
+
+2010m1
+
+Real exchange rate
+
+2015m1
+
+Figure 3. Log nominal and real exchange rate (peso/dollar)
+Note: Real exchange rate is calculated as RER = (NER x P*) / P, where RER is the real exchange rate, NER is the nominal exchange rate, and P* and P are consumer price indexes for U.S. and Mexico respectively.
+
+As illustrated by Figure 3, at roughly the same time Mexico entered NAFTA, Mexico began operating under a floating exchange rate regime. In the previous period (1988-1994) the Mexican authorities had used the nominal exchange rate as a nominal anchor in the context of the stabilization program (Loría et al., 2010). The switch to a floating regime was forced by the currency crisis at the end of 1994. As discussed by Turrent (2003), without international reserves and facing very substantial external debt maturities in early 1995, no other policy options where available. The crisis hit the Mexican economy generating a sharp depreciation in the nominal exchange rate, a drop in output, and the interest rate diverged sharply from the U.S., as can be seen in Figures 3, 4 and 5.
+
+Figure 4 shows the series for industrial production in Mexico and the U.S., and Figure 5 the series for their interest rates. It can be seen that after 1995 Mexico and U.S. experienced a period of prosperity and relative calm. Output grew continuously in both countries, the process interrupted only by dot-com crisis in the U.S. in 2000 and during the 2008-2009 financial crisis, when output fell significantly in both countries. The interest rate in Mexico during the 19982012 period, in turn, fell and gradually converged towards the interest rate in the U.S. From
+
+8
+Figure 6, we can see a continuous increase in international oil prices since 1999, only interrupted by the recent financial shock.
+
+4.8
+
+4.6
+
+4.4
+
+4.2
+
+4
+
+.8
+
+.6
+
+1990m1
+
+1995m1
+
+2000m1 Mexico
+
+2005m1
+
+2010m1
+
+U.S.
+
+2015m1
+
+Figure 4. Log level industrial production: Mexico and U.S.
+
+1990m1
+
+1995m1
+
+2000m1 Mexico
+
+2005m1
+
+2010m1
+
+U.S.
+
+2015m1
+
+Figure 5. U.S. and Mexico´s interest rates (Percentage)
+
+.4
+
+.2
+
+0
+
+9
+Figures 3, 4, 5 and 6 also show some of the basic statistical properties of the data. All variables do not seem to be stationary in levels. However, it is important to stress that even though (log) output in Mexico and (log) output in U.S. are not stationary, the relative industrial production between these two countries can be stationary if they are cointegrated. The same applies for the interest rate differential. Thus, when looking for the presence of unit roots, Dickey-Fuller and Phillips-Perron tests were performed on all variables used in the VAR analysis: relative industrial production, real and nominal exchange rates, interest rate differential and international oil prices. The tests suggest that all these variables are stationary when first differentiated (see Appendix). However, a VAR in first differences can be misspecified if the variables are cointegrated. To test for this possibility, the Johansen procedure was employed, which yielded no cointegrating vectors (see Appendix). Hence, in next two sections we fit a VAR in first differences.
+
+5.5
+
+5
+
+4.5
+
+4
+
+3.5
+
+3
+
+1990m1
+
+1995m1
+
+2000m1
+
+2005m1
+
+2010m1
+
+2015m1
+
+Figure 6. Log international oil prices
+
+3. Econometric Methodology and Empirical Results
+This section presents the results for the baseline VAR model. The first subsection outlines the econometric methodology employed and the restrictions used to identify the structural shocks,
+
+10
+whereas the second and third subsections present the impulse response functions and the variance decompositions, respectively.
+The Model
+
+Following the spirit of the seminal paper of Clarida and Gali (1994) and the modelling approach of An and Kim (2010), we include as the endogenous variables the relative industrial production (as a proxy for output) between Mexico and the U.S. (ΔY), the real peso/dollar rate (ΔRER) and the nominal peso/dollar rate (ΔNER). All three variables are in log terms and first differentiated. The inclusion of these variables permits the separation of shocks into relative supply, relative demand and relative nominal shocks, as discussed in detail below.
+
+Let Xt denote the vector of these three endogenous variables, i.e. the vector that is conformed by ΔY, ΔRER and ΔNER. Then, we can express the relation between the variables as follows:
+
+n
+
+∑ DXt = Γ0 + ΓiLi Xt + εt
+
+(1)
+
+i=1
+
+where D is a 3 X 3 matrix of contemporaneous coefficients; Γ0 is a 3 X 1 vector of constants; Γi is a 3 X 3 matrix of coefficients associated with the ith lag of the vector Xt ; Li is the lag operator; and εt is the vector of structural shocks. Here εt = "!εts,εtd,εtn #$, where εts represents relative supply shocks, εtd relative demand shocks and εtn relative nominal shocks.
+
+Rearranging and rewriting (1) we can obtain the reduced-form model:
+
+n
+
+∑ Xt = G0 + GiLi Xt + Bεt
+
+(2)
+
+i=1
+
+where G0 = D−1Γ0 , Gi = D−1Γi and B = D−1 .
+
+11
+
+#n &
+
+#n &
+
+∑ ∑ Next, rearranging (2) as %I − GiLi (Xt = G0 + Bεt , and then inverting %I − GiLi ( we obtain:
+
+$ i=1
+
+'
+
+$ i=1
+
+'
+
+#n
+
+&−1
+
+∑ Xt = µ +%I − GiLi ( Bεt = µ + A(L)Bεt = µ + C(L)εt
+
+(3)
+
+$ i=1
+
+'
+
+#n
+
+&−1
+
+#n
+
+&−1
+
+∑ ∑ where µ = %I − GiLi ( G0 and C(L) = A(L)B = %I − GiLi ( B .
+
+$ i=1
+
+'
+
+$ i=1
+
+'
+
+The model in (3) can be expressed in extended form as
+
+"ΔY %
+
+$$ΔRER
+
+' '
+
+#$ΔNER'&
+
+=
+
+" $ $ $ $#
+
+µ1 µ2 µ3
+
+%" '$ '+$ '$ &' $#
+
+c11(L) c21(L) c31(L)
+
+c12 (L) c22 (L) c32 (L)
+
+c13 ( L )
+
+%" '$
+
+εts
+
+% '
+
+c23 ( L ) c33 ( L )
+
+'$ '$ '&#$
+
+εtd εtn
+
+' ' '&
+
+! #
+
+µ1
+
+$ &
+
+! #
+
+a11(L)
+
+a12 (L)
+
+a13 ( L )
+
+$! &#
+
+b11
+
+b12
+
+b13
+
+$! &#
+
+εts
+
+$ &
+
+= # µ2 &+# a21(L)
+
+# #"
+
+µ3
+
+& %&
+
+# "#
+
+a31(L)
+
+a22 (L) a32 (L)
+
+a23(L) &# b21
+
+a33 ( L )
+
+&# &%"#
+
+b31
+
+b22 b32
+
+b23 b33
+
+&# &# &%"#
+
+εtd εtn
+
+& & %&
+
+where cij (L) and aij (L) are polynomials in the lag operator; and bij is the contemporaneous response of variable i to shock j. The element cij (1) of C(1) gives the long-run response of variable i to the jth shock. For example, the long-run response of output to a supply shock is given by c11(1) .
+Equation (2) is the equation that is estimated. However, since the residuals obtained from the estimation are linear combinations of the structural shocks, we cannot distinguish the isolated impact of each of these shocks on the variables. Thus, it is necessary to impose more structure to the model. In particular, nine identification assumptions are needed, six of which come from the standard assumption that cov(ε) = I ; i.e. the structural shocks have unit variance and are
+
+12
+uncorrelated. In regards to the three remaining identification assumptions we impose the following restrictions. First, following Blanchard and Quah (1989), we impose the long-run restrictions c12 (1) = c13(1) = 0 . Thus it is assumed that neither demand nor nominal shocks can have long-run effects on output. However, it is worth noting that these identification restrictions do allow short-run effects of demand and nominal shocks on output due to price rigidities. Second, following Clarida and Gali (1994), it is assumed that c23(1) = 0 such that nominal shocks have no long-run impact on the real exchange rate. However, the real exchange rate can fluctuate in the long run due to demand shocks.
+
+The restrictions, thus, can be summarized in the following matrix:
+
+! #
+
+c11(1)
+
+# c21(1)
+
+# #"
+
+c31(1)
+
+0 c22 (1) c32 (1)
+
+0
+
+$ &
+
+0&
+
+c33 (1)
+
+& &%
+
+Impulse Response Functions
+In addition to the endogenous variables, a dummy was included for 1995-1996 to take account of the Mexican crisis in 1995, and the transition period of the Mexican economy to its new equilibrium after the adoption of the flexible exchange regime. The model was estimated in log form and in first differences. Using the Likelihood Ratio as a criteria, 12 lags were included.
+Figure 7 reports the accumulated impulse response functions. The three lines in each graph of the figure are the median (solid line), the 16% quantile (upper dotted line) and the 16% quantile of posterior distribution (lower dotted line). The two dotted lines are confidence bounds drawn from 10,000 Monte Carlo simulations.
+By inspection of Fig. 7, a positive supply shock (one standard deviation in size) increases output significantly, and its effect is permanent. Consistent with the studies of Clarida and Gali (1994), Detken et al. (2002) and Farrant and Peersman (2006), we find evidence of a “perverse supply
+
+13
+effect”, since both the nominal and real exchange rates appreciate in response to the shock, although the response of the latter is not significant in the long run. This last result is in contradiction with conventional theories of the exchange rate. For example, according to the Mundell-Fleming-Dornbusch model, a positive supply shock generates excess supply and results in a depreciation of the nominal and real exchange rates. The real exchange rate must depreciate further in the long run, given that the country is now more productive. A possible explanation for the appreciation of the exchange rates is given by Detken et al. (2002): if a supply shock raises domestic real wealth, and if consumers have home bias in consumption, the supply shock is accompanied by an upward shift in the aggregate demand curve. If the upward shift in demand is large enough, this could result instead in excess demand, rather than excess supply. Looking at the dynamics of the output, which increase in the short run more than its new long run value, this explanation seems to fit well with the Mexican case.
+The second column shows the dynamic responses of output, and the real and nominal exchange rates to a negative demand shock. All the responses are as expected. In the face of a negative demand shock, output decreases for some months and then returns to its original level. Both the nominal and the real exchange rates depreciate significantly. The depreciation shifts demand from foreign goods (U.S. goods) to domestic goods (Mexican goods), which helps to partial offset the drop in demand generated by the shock. The fall in output is not very important, and it lasts just a few months. This suggests that the exchange rate absorbs an important portion of the demand shock.
+In response to a positive nominal shock, the nominal exchange rate depreciates significantly upon impact, and remains depreciated in the long run. The real exchange rate also depreciates significantly in the short run, but the effect dies out around 25 months later, once prices have fully adjusted. Consequently, the dynamics of the real exchange rate is mainly driven by the dynamics of the nominal exchange rate in the short run; and by the increase in relative prices in the long run. These dynamics are consistent with the predictions of conventional theories.
+
+Figure 7. Impulse-responses
+Note: Dotted lines are confidence bounds
+
+14
+
+15
+However, there appears to be a puzzle in the sense that a positive nominal shock causes output to fall, rather than rise. The fall in the output may be due to the particular relationship that exists between the interest rate, exchange rates and output. Hence, it is necessary to separate the nominal shocks into its main components, an issue that is addressed below.
+Forecast Error Variance Decomposition
+How much variation in the exchange rates can be attributed to each shock in the system? Variance decompositions help us determine the relative importance of the structural shocks. If the exchange rates respond mainly to real shocks then we can conclude that they play an important role in stabilizing the economy. On the contrary, if the exchange rates respond mainly to nominal shocks, this suggests that they can be potentially a destabilizing source, provided such shocks have non-negligible effects on output.
+Table 1 reports the forecast error variance decomposition of each variable in first differences for 6, 12, 24, 48 and 72 month time horizons. As can be seen in the first panel of the table, real shocks play the major role in explaining the movements in output at all horizons: they account for more than 80%; reaching almost 89% in the first 6 months. This finding is in line with the results obtained by An and Kim (2010) and Artis and Ehrmann (2006), who also found that real shocks are the dominant factor in explaining output variance. Of the two sources of real shocks, supply shocks are much more important than demand shocks, with a contribution between 73 and 84% to the variance of output. However, although not as important as real shocks, nominal shocks are not negligible. They are the second most important source of output fluctuations, since they account for slightly more than 18% of the output variance after 24 months. Demand shocks, in contrast, do not appear to be an important source of output variations.
+For the real exchange rate, demand shocks play the most important role, explaining 47-50% of its volatility, followed by nominal shocks, with a contribution of 43% over the whole horizon. These results stand in contrast with the findings of Huang and Suchada (2003), which suggest a more important role for demand shocks and a much smaller effect of nominal shocks on the real peso/dollar rate. For the nominal exchange rate, demand shocks are also important, but not the
+
+16
+
+most important. They account for 36-37% of the variance, while nominal shocks account for 5455%. Again, these findings contrast with those of Huang and Suchada (2003), who found an opposite pattern. Finally, it is important to note that supply shocks only account for less than 10% at all horizons, so they seems not to be an important source of fluctuations for either the nominal or the real exchange rate.
+
+Table 1. Forecast Error Variance Decomposition
+
+Horizon
+
+εS
+
+εd
+
+εN
+
+Forecast error variance decomposition of ΔY
+
+6 months 84.102
+
+4.622
+
+11.275
+
+12 months 81.196
+
+6.202
+
+12.602
+
+24months 73.618
+
+8.179
+
+18.203
+
+48 months 73.483
+
+8.206
+
+18.311
+
+72 months 73.480
+
+8.208
+
+18.312
+
+Std. error
+0.0105 0.0109 0.0116 0.0116 0.0116
+
+Forecast error variance decomposition of ΔRER
+
+6 months 5.430
+
+50.926
+
+43.643
+
+12 months 7.624
+
+49.100
+
+43.276
+
+24 months 9.720
+
+47.353
+
+42.927
+
+48 months 9.799
+
+47.176
+
+43.026
+
+72 months 9.804
+
+47.170
+
+43.025
+
+0.0318 0.0331 0.0340 0.0342 0.0342
+
+Forecast error variance decomposition of ΔNER
+
+6 months 6.224
+
+37.800
+
+55.976
+
+12 months 7.967
+
+36.785
+
+55.248
+
+24 months 9.339
+
+36.564
+
+54.097
+
+48 months 9.422
+
+36.542
+
+54.036
+
+72 months 9.426
+
+36.540
+
+54.034
+
+0.0324 0.0335 0.0342 0.0343 0.0343
+
+In general, Table 1 suggests that real shocks dominate nominal shocks in explaining real exchange rate variability at all horizons, but the opposite holds true for the nominal exchange rate.13 Combined with the impulse response analysis, these results indicate a potential destabilizing role of the exchange rate in Mexico. This follows since an important fraction of the variance of the real exchange rate can be explained by nominal shocks. However, both the nominal and the real exchange rate also respond significantly and in the right direction to real
+13 Our results are not dissimilar to Farrant and Peersman (2006), who found that nominal shocks account for 31-50% of real exchange rate movements in the UK, 42-57% in the Euro area and 57-67% in Japan.
+
+17
+shocks, and the analysis suggests that these shocks are also important in explaining exchange rate volatility. Thus, the stabilizing properties of the peso/dollar exchange rate should not be ignored. To get a more accurate picture it is necessary to determine the impact of the nominal exchange rate on output. If the nominal exchange rate has negligible effects on output, then it is “disconnected” from the real economy, as argued by Obstfeld and Rogoff (2000).14 This issue is addressed below.
+4. The (un)importance of monetary policy and international oil price shocks
+Following An and Kim (2010), the baseline model of the previous section is now extended by the inclusion of two additional variables: international oil prices and the interest rate differential. Including oil prices and interest rate differential in the VAR analysis allows us to tackle three issues. First, we can see if the results presented in the previous section are robust to the inclusion of more variables in the system. Second, we can split supply shocks into oil supply shocks and productivity shocks, and measure their relative importance. Finally, we can split nominal shocks into nominal exchange rate shocks and interest rate differential (or monetary policy) shocks, which can shed some further light on the relationship between nominal shocks and output discovered in the previous section.
+The first subsection outlines the changes in the econometric methodology employed and the additional restrictions used to identify the structural shocks, whereas the second and subsections present the impulse response functions and the variance decompositions for the extended VAR model.
+The Model
+The model is described by the same set of equations as in section 3, except that they are now modified by including the interest rate differential between Mexico and the U.S. ( ΔInt ) and
+14 To determine the role of the exchange rate as a destabilizing factor it is also necessary to look at the pass-through issue. A high and variable inflation causes distortions in the economy, especially in the banking and financial sector. Thus, if exchange rate fluctuations are transferred to home prices in a large proportion, they harm the economy through large swings in the rate of inflation. For a study of the exchange rate pass-through in Mexico, see Capistrán et. al. (2012).
+
+18
+international oil prices ( ΔPoil ). Thus, the moving average (MA) representation can be now expressed in its extended form as
+
+" $ $ $ $ $ $#
+
+ΔPoil ΔY
+ΔRER ΔNER ΔInt
+
+% '" '$ '=$ '$ ' $# &'
+
+µ1 µ2 µ3
+
+"
+
+% ' '+ ' &'
+
+$ $ $ $ $ $
+
+$#
+
+a11(L) a21(L) a31(L) a41(L) a51(L)
+
+a12 (L) a22 (L) a32 (L) a42 (L) a52 (L)
+
+a13 ( L ) a23 ( L ) a33 ( L ) a43 ( L ) a53 ( L )
+
+a14 (L) a24 (L) a34 (L) a44 (L) a54 (L)
+
+a15 ( L )
+
+%" '$
+
+b11
+
+a25(L) '$ b21
+
+a35 ( L )
+
+'$ '$
+
+b31
+
+a45 ( L )
+
+'$ '$
+
+b41
+
+a55(L) '&$# b51
+
+b12 b22 b32 b42 b52
+
+b13 b23 b33 b43 b53
+
+b14 b24 b34 b44 b54
+
+b15 b25 b35 b45 b55
+
+%&'''''''$$#$$$$$$"
+
+ε oil t
+εts εtd εte εtm
+
+% ' ' ' ' ' ' ' &'
+
+where each element aij (L) of the matrix A(L) is a polynomial in the lag operator; bij gives the
+
+contemporaneous response of variable i to the jth shock, and εt is a vector of five structural
+
+shocks:
+
+oil
+
+supply
+
+(
+
+ε oil t
+
+),
+
+productivity
+
+(εts ),
+
+demand
+
+(εtd ),
+
+exchange
+
+rate
+
+( εte )
+
+and
+
+monetary
+
+5
+∑ policy (εtm ) shocks. Note that aik (1)bkj , where j, i = 1,..., 5 , is the long run response of variable
+k=1
+i to shock j, and that A(1)B = C(1) .
+
+In this extended model 25 identification assumptions are now needed, fifteen of which come from the standard assumption that cov(εt ) = I . To impose the remaining restrictions, I follow the identification procedure of An and Kim (2010), and use a combination of long run and short-run restrictions. The long-run restrictions are the same as those of the previous section. This set of assumptions provides five additional restrictions, and are expressed as c23(1) = c24 (1) = c25(1) = c34 (1) = c35(1) = 0 . Short-run assumptions provide the remaining five restrictions needed to achieve exact identification of the structural shocks. First, the standard assumption that oil prices cannot be affected contemporaneously by shocks different from its own is imposed. Second, to distinguish exchange rate shocks from monetary policy shocks, it is assumed that monetary policy does not respond contemporaneously to innovations in the exchange rate market. This last assumption is consistent with the fact that Banco de México only cares about inflation, and typically uses foreign exchange market interventions to buffer
+
+19
+pronounced movements in the exchange rate.15 These assumptions can be expressed as b12 = b13 = b14 = b15 = b54 = 0 .
+
+Consequently, the identification scheme can be summarized as follows:
+
+! #
+
+c11(1)
+
+c12 (1)
+
+c13 (1)
+
+c14 (1)
+
+c15 (1)
+
+$ &
+
+! #
+
+b11
+
+0
+
+0
+
+0
+
+0
+
+$ &
+
+# c21(1) c22 (1) 0
+
+0
+
+# #
+
+c31(1)
+
+c32 (1)
+
+c33 (1)
+
+0
+
+0&
+
+# b21 b22 b23 b24 b25 &
+
+0
+
+& &
+
+=
+
+A(1)##
+
+b31
+
+b32
+
+b33
+
+b34
+
+b35
+
+& &
+
+# #
+
+c41(1)
+
+c42 (1)
+
+c43 (1)
+
+c44 (1)
+
+c45 (1)
+
+& &
+
+"# c51(1) c52 (1) c53(1) c54 (1) c55(1) &%
+
+# #
+
+b41
+
+b42
+
+b43
+
+b44
+
+b45
+
+& &
+
+#" b51 b52 b53 0 b55 &%
+
+Results
+
+All variables are in log form except for the interest rate differential, which is in levels. Again, we fit the VAR in first differences. As in the base model, a dummy was included for years 1995 and 1996. Twelve lags were included according to the likelihood ratio statistic.
+
+The impulse responses for this extended VAR model are presented in Figure 8. As in the baseline case, the solid lines refer to the median, and the dotted lines are the 16% and the 84% quantiles for the sample of impulse responses drawn from 10,000 Monte Carlo simulations. Table 2, in turn, shows the forecast error variance decomposition of each variable in first differences for 6, 12, 24, 48 and 72 month horizons.
+
+In response to a positive oil price shock, output increases for the first twelve months and then returns to its original level (the output increase is positive but negligible in the long run). Output increases because Mexico being a crude oil exporter (the U.S. being an oil importer), experiences a positive shock to its terms of trade in response to an increase in the international oil price. Given that the response of the interest rate differential is nearly zero, the exchange rate must appreciate to help the economy to deal with the external imbalances generated by this shock. By
+15 In the 28th article of the Mexican Constitution is stated that the only goal of the Central Bank will be to maintain the purchasing power of the currency.
+
+20
+inspection of Fig. 8 this is just what is observed. The nominal exchange rate appreciates significantly upon impact and remains appreciated in the long run. The real exchange rate, in turn, appreciates in the short run, but depreciates in the long run; indicating that the nominal exchange rate helps relative prices to adjust in the short run. Consequently, we can conclude that the exchange rate serves as a shock absorber to oil supply shocks.
+In response to a positive productivity shock, the dynamics for output and the real and nominal exchange rates remain very similar to those presented in the last section16. Output increases, and its short run increase is greater than its long run response, indicating a wealth effect that increases demand. Both the nominal and real exchange rates appreciate, performing a stabilizing role. The interest rate falls to avoid a sharp drop in the level of prices. Indeed, the dynamic response of both real and nominal exchange rates are the same over the whole horizon, indicating that there´s no price adjustment, even in the long run. This confirms our explanation of why interest rate falls significantly to a positive productivity shock.
+Column three of Figure 8 shows the responses of each variable to a negative demand shock. As can be seen, the results are also very consistent with those found in the previous section. Facing a negative demand shock, output decreases for a few months before returning to its original level. Both exchange rates depreciate significantly on impact and remain depreciated in the long run (although the magnitude of the response is smaller in size than those presented in the previous section). The interest rate differential initially is reduced (as would be expected), but increases slightly for longer periods. The inflationary pressures caused by the boost to demand due to real exchange rate depreciation might explain this increase in the interest rate differential in the long run, due to inflationary worries of the central bank. However, the response of the interest rate seems not to be very important. These results confirm the stabilizing properties of the exchange rate as found in the previous section.
+16 It is straightforward to see that, if we sum the responses to an oil supply shock with the responses to a relative productivity shock, the responses of the main variables (output, real exchange rate and nominal exchange rate) are
+(almost) the same to those found when estimating the baseline model.	  
+
+Responses of
+
+0.150
+0.125
+0.100
+0.075
+0.050
+Poil 0.025
+0.000
+- 0 .0 2 5
+- 0 .0 5 0 - 0 .0 7 5
+
+Oil supply shock
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60 70
+
+80 90
+
+0.010 0.008 0.006
+0.004
+Y 0.002
+0.000 - 0 .0 0 2 - 0 .0 0 4
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60 70
+
+80 90
+
+0.020 0.015 0.010 0.005
+RER 0.000 - 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5 - 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60 70
+
+80 90
+
+0.020 0.015 0.010 0.005
+NER 0.000 - 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5 - 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60 70
+
+80 90
+
+2.0 1.5 1.0 0.5
+Int 0.0
+- 0 .5 - 1 .0 - 1 .5
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+Oil supply shock
+
+0.150 0.125 0.100 0.075 0.050 0.025 0.000 - 0 .0 2 5 - 0 .0 5 0 - 0 .0 7 5
+
+Productiviy shock
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+0.010 0.008 0.006
+
+0.004
+
+0.002
+
+0.000
+
+- 0 .0 0 2
+
+- 0 .0 0 4
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+0.020 0.015
+
+0.010 0.005 0.000
+
+- 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5
+
+- 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+0.020
+
+0.015 0.010 0.005
+
+0.000 - 0 .0 0 5
+
+- 0 .0 1 0
+
+- 0 .0 1 5
+
+- 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+2.0
+
+1.5 1.0
+
+0.5
+
+0.0 - 0 .5
+
+- 1 .0
+
+- 1 .5
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+Productiviy shock
+
+Figure 8. Impulse-responses
+Note: Dotted lines are confident bounds
+
+Demand shock
+
+0.150 0.125 0.100 0.075 0.050 0.025 0.000 - 0 .0 2 5 - 0 .0 5 0 - 0 .0 7 5
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+0.010 0.008 0.006 0.004 0.002 0.000 - 0 .0 0 2 - 0 .0 0 4
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+0.020 0.015 0.010 0.005 0.000 - 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5 - 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+0.020 0.015 0.010 0.005 0.000 - 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5 - 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+2.0
+
+1.5 1.0
+
+0.5
+
+0.0 - 0 .5
+
+- 1 .0
+
+- 1 .5
+
+0
+
+10 20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+Demand shock
+
+0.150 0.125 0.100 0.075 0.050 0.025 0.000 - 0 .0 2 5 - 0 .0 5 0 - 0 .0 7 5
+
+Exchange rate shock
+
+0
+
+10 20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+0.010 0.008 0.006
+
+0.004
+
+0.002
+
+0.000
+
+- 0 .0 0 2
+
+- 0 .0 0 4
+
+0
+
+10 20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+0.020 0.015
+
+0.010 0.005 0.000
+
+- 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5
+
+- 0 .0 2 0
+
+0
+
+10 20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+0.020
+
+0.015 0.010 0.005
+
+0.000 - 0 .0 0 5
+
+- 0 .0 1 0
+
+- 0 .0 1 5
+
+- 0 .0 2 0
+
+0
+
+10 20
+
+30
+
+40
+
+50 60
+
+70
+
+80
+
+90
+
+2.0
+
+1.5 1.0
+
+0.5
+
+0.0 - 0 .5
+
+- 1 .0
+
+- 1 .5
+
+0
+
+10
+
+20 30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+Exchange rate shock
+
+Monetary policy shock
+
+0.150 0.125 0.100 0.075 0.050 0.025 0.000 - 0 .0 2 5 - 0 .0 5 0 - 0 .0 7 5
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+0.010 0.008 0.006 0.004 0.002 0.000 - 0 .0 0 2 - 0 .0 0 4
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+0.020 0.015 0.010 0.005 0.000 - 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5 - 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+0.020 0.015 0.010 0.005 0.000 - 0 .0 0 5 - 0 .0 1 0 - 0 .0 1 5 - 0 .0 2 0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+2.0
+
+1.5 1.0
+
+0.5
+
+0.0 - 0 .5
+
+- 1 .0
+
+- 1 .5
+
+0
+
+10
+
+20
+
+30 40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+Monetary policy shock
+
+21
+
+22
+In response to a positive exchange rate shock, the nominal exchange rate increases significantly, both on impact and in the long run. The real exchange rate also depreciates upon impact, but then appreciates with time until it returns to its initial level. The difference in the dynamic responses of the exchange rates in the medium to long run indicates a price adjustment in the economy: there is a relative increase in domestic prices. The short run depreciation of the real exchange rate switches demand from U.S. goods towards Mexican goods, thus improving the balance of trade. This boost in demand increases output in the short run, but the effect fades out as prices adjust. This effect on output can be seen in the second graph of the fourth column of Fig. 8. The interest rate increases in the first months and then decreases, although its response is not very important.
+In response to a contractionary monetary policy shock, the interest rate differential widens significantly. In an apparent contradiction with conventional exchange rate theories, both the nominal and real exchange rate depreciate, and output is temporarily increased, although the effect on output seems marginal. These results are consistent with other studies in the empirical monetary literature. For instance, using a pure sign restrictions approach to identify monetary policy shocks, Uhlig (2005) concludes that a contractionary monetary policy shock does not necessarily seem to have contractionary effects en real GDP. Kohlscheen (2011), in turn, studies the impact of monetary policy on nominal exchange rates for Mexico, Brazil and Chile. He finds no empirical evidence to support the view that an increase in the interest rate is followed by an appreciation of the nominal exchange rate.
+Looking at the results for exchange rate shocks and monetary policy shocks, it is possible that the drop in output in response to a positive nominal shock found in the previous section, is driven by the effect of the monetary policy shock. Upon impact, the monetary policy shock seems to be more important for output than the exchange rate shock. So, if we interpret a positive nominal shock as an increase in the nominal exchange rate and a reduction in the interest rate differential, it is possible for output to fall given the positive relationship between the interest rate differential and output found here. This is confirmed by the variance decomposition of output (see Table 2).
+
+23
+Oil supply vs. productivity shocks
+From Table 2 it can be seen that real shocks are the most important source of output fluctuations, explaining 79-90% of its variance, with productivity shocks being the major component, with a contribution between 70 and 85% over the whole horizon. Neither relative demand shocks nor oil supply shocks are very important, with the latter only explaining, at most, 5% of output variability. In fact, the negligible effects of demand shocks on output may suggest that the exchange rate has absorbed the demand shocks to such an extent that output is (partially) shielded (An and Kim, 2010).
+One interesting difference between the two model specifications relates to the importance of real shocks on the real exchange rate variance. In the extended model real shocks are no longer the main factor underlying real exchange rate fluctuations. I do not know the exact reason for this difference but my guess is that in the baseline model the impact of nominal shocks on real exchange rate is underestimated because of aggregation.
+Among real shocks, demand shocks are the most important for both real and nominal exchange rates, while productivity and oil supply shocks accounts for a very small part of their variance. Productivity shocks are slightly more important than oil supply shocks. In fact, while productivity shocks can explain around 11% of the fluctuations of both rates, oil supply shocks account for only 1-6% of real exchange variance and for 3-7% in the case of the nominal rate.
+Even though Mexico is an oil producer and that an important part of government revenues comes from the oil sector, the evidence suggests that productivity shocks are more important for output and real and nominal exchange rate volatility than oil supply shocks. Furthermore, the results suggest that shocks associated with international oil prices have negligible effects on the Mexican economy.
+
+24
+
+Horizon
+
+εoil
+
+Table 2. Forecast Error Variance Decomposition
+
+εs
+
+εd
+
+εe
+
+εm
+
+Forecast error variance decomposition of ΔPoil
+
+6
+
+82.397
+
+4.379
+
+1.713
+
+12 73.935
+
+4.624
+
+4.165
+
+24 70.389
+
+6.432
+
+4.591
+
+48 69.665
+
+6.629
+
+4.743
+
+72 69.482
+
+6.663
+
+4.786
+
+6.235 9.348 10.523 10.925 11.048
+
+5.276 7.927 8.066 8.039 8.021
+
+Forecast error variance decomposition of ΔY
+
+6
+
+1.595
+
+85.639
+
+2.227
+
+12
+
+3.586
+
+76.226
+
+2.852
+
+24
+
+4.481
+
+71.841
+
+4.369
+
+48
+
+4.648
+
+71.048
+
+4.705
+
+72
+
+4.657
+
+70.99
+
+4.729
+
+3.261 9.112 11.091 11.368 11.400
+
+7.279 8.224 8.219 8.230 8.225
+
+Forecast error variance decomposition of ΔRER
+
+6
+
+1.681
+
+10.563
+
+26.003
+
+12
+
+3.98
+
+11.974
+
+28.128
+
+24
+
+5.837
+
+11.591
+
+27.993
+
+48
+
+5.998
+
+11.773
+
+28.255
+
+72
+
+6.017
+
+11.784
+
+28.272
+
+32.031 28.534 29.179 29.115 29.157
+
+29.722 27.384 25.400 24.859 24.769
+
+Forecast error variance decomposition of ΔNER
+
+6
+
+3.635
+
+10.074
+
+15.829
+
+12
+
+5.559
+
+11.239
+
+18.702
+
+24
+
+6.798
+
+11.484
+
+19.583
+
+48
+
+7.09
+
+11.634
+
+19.719
+
+72
+
+7.109
+
+11.657
+
+19.736
+
+42.364 38.513 37.522 37.377 37.399
+
+28.098 25.987 24.613 24.180 24.099
+
+Forecast error variance decomposition of ΔInt
+
+6
+
+0.212
+
+7.912
+
+1.995
+
+12
+
+1.026
+
+11.494
+
+3.202
+
+24
+
+1.568
+
+12.068
+
+3.79
+
+48
+
+1.683
+
+12.235
+
+3.979
+
+72
+
+1.71
+
+12.243
+
+4.018
+
+2.440 3.259 4.347 4.679 4.766
+
+87.441 81.019 78.227 77.424 77.263
+
+Std. error
+0.0714 0.0764 0.0788 0.0794 0.0795
+0.0091 0.0097 0.0100 0.0101 0.0101
+0.0194 0.0207 0.0217 0.0220 0.0220
+0.0197 0.0208 0.0216 0.0219 0.0219
+1.4460 1.5287 1.5692 1.5783 1.5800
+
+25
+Monetary policy vs. exchange rate shocks
+While not as important as real shocks, nominal shocks continue to be an important source of output fluctuations. They account for up to 20 % of its forecast error variance. For shorter horizons (6 months or less), monetary policy shocks are more important than exchange rate shocks, although for longer horizons the contrary is true. This is consistent with the previous explanation of why output falls when facing a positive nominal shock. Overall, exchange rate shocks are more important than monetary policy shocks, as can be seen in second panel of Table 2. While monetary policy can explain 8% of output variance, exchange rate shocks can explain 11%. Thus, in contrast to Artis and Ehrmann (2006), who find that exchange rate shocks have nearly zero effect on output for some small developed countries, here we find evidence that such shocks have non negligible effects on output.
+By inspection of Table 2 nominal shocks are the most important source of real exchange rate fluctuations, with exchange rate shocks playing the most important role with a contribution between 29% and 32% over the whole horizon. It is important to note that monetary policy shocks are almost as important as exchange rate shocks since they account for 24%-29% of real exchange rate variance.
+For the nominal exchange rate, nominal shocks are still the most important source of fluctuations. Among them, exchange rate shocks play the major role, followed by monetary policy shocks, with a respective variance contribution of 37%-42% and 24%-28% to the nominal peso/dollar rate. These results are at an intermediate point between other studies, especially regarding exchange rate market shocks. In particular, exchange market shocks have a much greater impact on the nominal exchange rate than that found by An and Kim (2010) for Japan; but not as big as that found by Artis and Ehrmann (2006) for some small open industrial economies.
+From Table 2 one can also observe that fluctuations in the interest rate differential are mainly driven by its own shocks. Productivity shocks are also important. About 90% of the interest rate
+
+26
+variance can be explained by these two shocks. Consequently, the effects of the remaining shocks are negligible.
+Overall, the key results obtained from the baseline model remain. Indeed, the impulse responses presented in this section closely resemble those presented in the last section, and the importance of real shocks relative to nominal shocks when explaining output and real and nominal exchange rate variability does not change greatly between the two VAR specifications. It is important to note, however, that in the extended model the relative importance of demand shocks for both exchange rates is much lower than the importance of such shocks under the baseline framework. So, when adding variables to the system, the capacity of the exchange rate to absorb demand shocks is reduced. Nevertheless, this has no great impact on the overall conclusions, since the impact of demand shocks on output is, again, negligible.
+Discussion
+What do these results tell us about the role of the exchange rate in the Mexican economy? Nominal shocks play a very important role when explaining both nominal and real exchange rate movements. In the extended model nominal shocks now dominate real shocks in explaining both the real and nominal exchange rate variability at all horizons. In addition, exchange rate market shocks are very important for both the nominal and real exchange rates. In this regard, the results presented here are similar to the findings of Alexius and Post (2008) who found between 38% and 45% of the variance in the nominal exchange rate of Canada is due to exchange rate shocks. Importantly, exchange rate market shocks have non-negligible effects on output. Furthermore, nominal and real exchange rates respond significantly to shocks in the real economy, and such shocks explain an important fraction of their variance. Therefore, the extended model confirms the conclusions of the previous section: the exchange rate in Mexico seems to be both a source of shocks and a shock absorber for demand shocks.
+These findings have important policy implications. First, the importance of nominal shocks suggests that it may be beneficial for monetary authority in Mexico to intervene in the foreign exchange markets. If Banco de México lets the exchange rate fluctuate freely in response to real
+
+27
+shocks, and intervenes in the foreign exchange market when a nominal exchange rate disturbance arises this would allow the exchange rate to act as a shock absorber while helping to prevent undesirable volatility in output caused by non-fundamental shocks. The support to the peso given by the central bank should be through exchange rate market interventions rather that changes in the interest rate, given the positive effect of the interest rate differential changes on exchange rates found in this work. If Banco de México gives support to the peso by raising the interest rate in the face of a positive exchange rate market shock, it will cause a further depreciation, with its destabilizing effects on output. If Banco de México cuts the interest rate down instead, it could result in a higher inflation and a contamination of the inflations expectations. Second, the central bank should take into account the potential effect of the interest rate on the exchange rate when setting monetary policy. It should avoid large swings in the monetary stance, in order to avoid large temporary movements in output produced by the joint movement of the interest rate and the exchange rate.
+The identification scheme used in this paper has several features. First, it is based on a set of theoretic elements in which a majority of economists agree upon. In particular, it is well accepted that nominal and demand factors can only affect the real economy in the short-run, but the effect dies out through adjustment in prices. By imposing long-run restrictions on output we have assumed that demand and nominal shocks have no long run effects, but in the short-run they can have possible effects on output due to price rigidities. Second, consistent with standard theories of exchange rate determination, it has been assumed that nominal factors cannot have long run effects on real exchange rate, while at the same time allowing demand shocks to have long-run effects on the real exchange rate. Third, by imposing that monetary policy does not respond contemporaneously to exchange rate shocks, this captures the anti-inflation reputation of the monetary authority in Mexico.
+Of course, to have a complete picture of the role of the exchange rate on the economy it is necessary not only to look at its effect on output but also at its effect on inflation. Thus, the present paper complements the previous work on exchange rate pass-through in Mexico. Capistrán et al. (2012), find evidence that nominal exchange rate movements have no great impact on domestic prices; reinforcing the conclusion that exchange rate in Mexico has
+
+28
+important stabilizing properties. In contrast to Huang and Suchada (2003), this paper finds a more relevant role for nominal shocks in both the nominal and real exchange rate variance. In addition, the results give more evidence on the monetary policy mechanism in Mexico. Similar to Kohlscheen (2011), we also find no support for the conventional view regarding the effect of monetary policy on the peso/dollar exchange rates. Specifically, no evidence is found that the exchange rate appreciates to a contractionary monetary policy shock.
+5. Conclusion
+This paper attempts to determine if the peso/dollar exchange rate performs as shock absorber or a source of shocks during the 1995-2012 period. A structural VAR model is used to calculate the impulse response functions and variance decompositions. Using long-run restrictions, three kinds of shocks are initially identified: supply, demand and nominal. The dynamic responses of output and the nominal and real exchange rates to each of these shocks is examined, as well as the relative importance of each shock in accounting for the variance of these variables. The VAR model is then extended and using a mixture of short- and long-run restrictions, supply shocks are disaggregated into oil supply and productivity shocks; and nominal shocks are disaggregated into monetary policy and exchange rate market shocks. Throughout both nominal and real exchange rates are used to assess the role of the exchange rate.
+The key findings can be summarized as follows. In response to a positive supply shock both the real and nominal exchange rate appreciates significantly (a “perverse supply” affect). This appreciation is mainly driven by the effect of productivity shocks. Both exchange rates depreciate significantly in the short and in the long run in response to a negative demand shock. In response to a positive nominal shock, both exchange rates depreciate significantly, reflecting some degree of price sluggishness in Mexico. However, because positive monetary policy shocks result in an exchange rate depreciation, this effect is driven by exchange rate market shocks. Relative output increases in response to a positive supply (either oil supply or productivity shock), exchange rate market and monetary policy shocks. From the variance decompositions, we find evidence that nominal shocks dominate real shocks in exchange rate movements, with foreign exchange market shocks being the most important contributor. Furthermore, while not as
+
+29
+important as real shocks, nominal shocks are still important when explaining output variance, with exchange rate market shocks being the most important. The fact that exchange rate shocks can explain an important portion of both real and nominal exchange rate movements, and exchange rate shocks having non negligible effects on the real economy, suggests that the foreign exchange market is an important source of shocks for Mexico.
+In summary, the results suggest that the exchange rate in Mexico plays a duel role. While it plays an important shock absorber role, it can also be a source of undesirable shocks to the real economy.
+Appendix
+
+Table 1a. Unit roots tests
+
+Variable
+
+ADF
+
+95% Critical value
+
+PP
+
+95% Critical value
+
+Y
+
+-2.78
+
+-3.43
+
+-2.52
+
+-3.43
+
+ΔY
+
+-4.48
+
+-1.95
+
+-19.52
+
+-1.95
+
+RER
+
+-2.25
+
+-2.88
+
+-2.74
+
+-2.88
+
+ΔRER
+
+-3.88
+
+-3.89
+
+-12.30
+
+-1.95
+
+NER
+
+-1.76
+
+-3.43
+
+-1.66
+
+-3.43
+
+ΔNER
+
+-2.93
+
+-1.95
+
+-10.79
+
+-1.95
+
+Int
+
+-3.16
+
+-3.43
+
+-3.28
+
+-3.43
+
+ΔInt
+
+-4.45
+
+-1.95
+
+-12.38
+
+-1.95
+
+Poil
+
+-3.16
+
+-3.43
+
+-2.81
+
+-3.43
+
+ΔPoil
+
+-4.65
+
+-1.95
+
+-12.08
+
+-1.95
+
+Note: Y, RER, NER, Int, Poil refers to relative industrial production between Mexico and U.S., real peso/dollar
+
+exchange rate, nominal peso/dollar exchange rate, interest rate differential between Mexico and U.S., and
+
+international oil prices respectively. The first difference of the series is indicated by Δ.
+
+30
+
+Table 1b. Cointegration tests for relative industrial production, real exchange rate and nominal exchange rate.
+
+Johansen´s trace statistic test Null Hypothesis Trace statistic 95% Critical value
+
+Number of cointegrating vectors ( r )
+
+r=0
+
+r≤1
+
+r≤2
+
+28.21
+
+14.90
+
+4.01
+
+34.91
+
+19.96
+
+9.42
+
+Johansen´s max statistic trace Null Hypothesis Max statistic 95% Critical value
+
+Number of cointegrating vectors ( r )
+
+r=0
+
+r=1
+
+r=2
+
+15.00
+
+7.25
+
+0.63
+
+20.97
+
+14.07
+
+3.76
+
+Table 1c. Cointegration tests for international oil prices, relative industrial production, real exchange rate, nominal exchange rate and interest rate differential
+
+Johansen´s trace statistic test Null hypothesis Trace statistic 95% Critical value
+
+Number of cointegrating vectors ( r )
+
+r=0
+
+r≤1
+
+r≤2
+
+r≤3
+
+r≤4
+
+75.01 44.80 25.75 10.59
+
+4.66
+
+76.07 53.12 34.91 19.96
+
+9.42
+
+Johansen´s max statistic test Null hypothesis Max statistic 95% Critical value
+
+Number of cointegrating vectors ( r )
+
+r=0
+
+r=1
+
+r=2
+
+r=3
+
+r=4
+
+30.21 19.05 15.16
+
+5.94
+
+4.66
+
+34.40 28.14 22.00 15.67
+
+9.24
+
+Table 1d. Asymptotic p-values of residual serial correlation for the baseline and the extended model
+
+Model
+
+LM(1)
+
+LM(5)
+
+LM(10)
+
+LM(15)
+
+LM(20)
+
+Baseline VAR
+
+0.00
+
+0.47
+
+0.20
+
+0.40
+
+0.33
+
+Extended VAR
+
+0.00
+
+0.05
+
+0.29
+
+0.63
+
+0.42
+
+Note: LM ( i ) denotes de Lagrange multiplier test at ith lag. The null is no autocorrelation at lag order.
+
+31
+
+1
+
+.5
+
+0
+
+Imaginary
+
+-.5
+
+-1
+
+-1
+
+-.5
+
+0
+
+.5
+
+1
+
+Real
+
+Figure 1a. Stability test for the baseline VAR. Roots of the companion matrix
+Note: Because all of the eigenvalues lie inside the unit circle, the baseline VAR satisfies the stability condition.
+
+1
+
+.5
+
+0
+
+Imaginary
+
+-.5
+
+-1
+
+-1
+
+-.5
+
+0
+
+.5
+
+1
+
+Real
+
+Figure 2a. Stability test for the extended VAR. Roots of the companion matrix
+Note: Because all of the eigenvalues lie inside the unit circle, the extended VAR satisfies the stability condition.
+
+32
+References
+Alexius, A., & Post, E. (2008). Exchange rates and asymmetric shocks in small open economies. Empirical Economics, 35(3), 527-541. doi:10.1007/s00181-007-0177-7
+An, L., & Kim, Y. (2010). Sources of exchange rate movements in Japan: Is the exchange rate a shock-absorber or a source of shock? Review of International Economics, 18(2), 265-276. doi:10.1111/j.1467-9396.2010.00853.x
+Artis, M., & Ehrmann, M. (2006). The exchange rate – A shock-absorber or source of shocks? A study of four open economies. Journal of International Money and Finance, 25(6), 874-893.
+Benavides, G., & Capistrán, C. (2009). Una nota sobre las volatilidades de la tasa de interés y del tipo de cambio según diferentes instrumentos de política monetaria: México, 1998-2008. Monetaria, 32(3), 391-412.
+Blanchard, O. J., & Quah, D. (1989). The dynamic effects of aggregate demand and supply disturbances. The American Economic Review, 79(4), 655-673.
+Buiter, W. (2000). Optimum currency areas. Scottish Journal of Political Economy, 47, 213-250.
+Capistrán, C., Ibarra, R., & Francia, M. R. (2012). El traspaso de movimientos del tipo de cambio a los precios. Trimestre Económico, 79(4), 813-838.
+Chowdhury, I. S. (2004). Sources of exchange rate fluctuations: Empirical evidence from six emerging market countries. Applied Financial Economics, 14(10), 697-705.
+Clarida, R., & Gali, J. (1994). Sources of real exchange rate fluctuations: How important are nominal shocks? Carnegie-Rochester Conference Series on Public Policy, 41, 1 – 56.
+Detken, C., Dieppe, A., Henry, J., Marin, C., & Smets, F. (2002). Model uncertainty and the equilibrium value of the real effective euro exchange rate. European Central Bank Working Paper Series, Working Paper no. 160.
+Dibooglu, S., & Kutan, A. M. (2001). Sources of real exchange rate fluctuations in transition economies: The case of Poland and Hungary. Journal of Comparative Economics, 29(2), 257-275.
+Dornbusch, R. (1976). Expectations and exchange rate dynamics. Journal of Political Economy, 84(6), 1161-1176.
+Farrant, K., & Peersman, G. (2006). Is the exchange rate a shock absorber or a source of shocks? New empirical evidence. Journal of Money, Credit and Banking, 38(4), 939-961.
+Faust, J., & Leeper, E. M. (1994). When do long-run identifying restrictions give reliable results International Finance Discussion Papers, Working Paper no. 462.
+Hernández, M. (2012). Variaciones en el tipo de cambio real, bienes no comerciados y datos desagregados del INPC. Documentos de Invetigación del Banco de México, Working Paper 2012-05
+
+33
+Huang, K. X. D., & Suchada, T. (2003). Sources of exchange rate fluctuations : The cases of Mexico and Thailand in the aftermaths of their recent currency crises. Annals of Economics and Finance, 4(2), 375-400.
+Kamin, S. B., & Rogers, J. H. (2000). Output and the real exchange rate in developing countries: An application to Mexico. Journal of Development Economics, 61(1), 85-109.
+Kohlscheen, E. (2011). The impact of monetary policy on the exchange rate : Puzzling evidence from three emerging economies. The Banco Central do Brasil, Working Paper no. 259.
+Loria, E., Sanchez, A., & Salgado, U. (2010). New evidence on the monetary approach of exchange rate determination in Mexico 1994-2007: A cointegrated SVAR model. Journal of International Money and Finance, 29(3), 540-554
+Maćkowiak, B. (2007). External shocks, U.S. monetary policy and macroeconomic fluctuations in emerging markets. Journal of Monetary Economics, 54(8), 2512-2520.
+Obstfeld, M., & Rogoff, K. (2000). The six major puzzles in international macroeconomics: Is there a common cause? NBER Macroeconomics Annual, 15, 339-390.
+Turrent, E. (2003). Opciones cambiarias y su elegibilidad: el punto de referencia de la variable comunicacional. México: un efoque histórico. In: Chávez, F. (Ed.), Moneda y regimen cambiario en México. Contribuciones a un debate de política Económica. México: UAM-A-Friedrich Ebert Stiftung.
+Uhlig, H. (2005). What are the effects of monetary policy on output? results from an agnostic identification procedure. Journal of Monetary Economics, 52(2), 381-419. doi:10.1016/j.jmoneco.2004.05.007
+Werner, A. (1997). El efecto sobre el tipo de cambio y las tasas de interés de las intervenciones en el mercado cambiario y del proceso de esterilización. Documentos de investigación del Banco de México, Working Paper no. 9706
+
+

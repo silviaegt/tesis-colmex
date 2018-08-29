@@ -1,0 +1,2405 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+DRIVERS LICENSE REQUIREMENTS AND ROAD SAFETY: EVIDENCE FROM A
+NATURAL EXPERIMENT IN MEXICO
+LUIS FERNANDO CERVANTES GARCÍA RULFO
+PROMOCIÓN 2010 - 2012
+ASESOR:
+CARLOS CHIAPA LABASTIDA
+JULIO 2012
+
+Drivers license requirements and road safety: Evidence from a natural experiment in Mexico
+Luis Fernando Cervantes July 10, 2012
+E-mail: lfcervantes@colmex.mx
+JEL Classication: D73, H73, R41. Keywords: road safety; accidents; Mexico; inter-jurisdictional dierences
+Abstract
+In Mexico, the procedure for obtaining a driver's license is far from being a standardized process that is applied uniformly in each of its thirty-two states, including Mexico City. In fact it is quite the opposite, since most of the road trac legislation is in charge of state governments, or decentralized even further to municipal governments. We are particularly interested in the fact that some municipalities have mandatory written and/or driving tests, while others do not require new drivers to pass any sort of test in order to obtain a driver's license. In this study we present evidence suggesting that we can think of those dierences as exogenous and exploit them, while controlling for various confounding factors, to nd whether there is an eect of applying dierent requirements such as driving and/or written tests to new drivers on road safety measures such as road trac accidents (RTAs) and fatal road trac accidents (FRTAs). We nd that abolishing both tests, driving and written, is related to an increase of more than 1,800 RTAs per 100k population of ages 15 to 19. This eect seems to more than double the rate of accidents, on average. Also, abolishing both tests is related to an increase of more than 50 FRTAs per 100k population in the same age group, which means that FRTAs triples after tests have been abolished. If we look at total population's RTAs the eect is smaller, 400 more RTAs per 100k population and 25 more FRTAs per 100k population of all ages. These results are robust to dierent specications and survive several falsication tests.
+1
+
+2
+
+To my parents who have always given me great support. Special thanks to my professors at El Colegio de México who have taught me the value of pursuing meaningful ideas, and to my classmates for motivating me into this quest.
+3
+
+4
+
+Contents
+
+1 Introduction
+
+7
+
+2 Road safety and licensing in Mexico
+
+8
+
+2.1 Road safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+2.2 Licensing in Mexico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+3 Literature on road safety analysis
+
+10
+
+3.1 Dierent methodologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+3.2 Driver's license requirements and road safety . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+3.3 Exogenous determinants of road safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+4 Data
+
+13
+
+4.1 Dependent variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+4.2 Data on the dierent driver's license requirement . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+4.3 The control variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+5 Empirical strategy
+
+21
+
+5.1 Test of exogeneity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+5.2 Regression framework . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+6 Results
+
+24
+
+6.1 Main Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+6.2 Confounders and threats to identication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+
+7 Robustness and additional empirical checks
+
+28
+
+8 Conclusions
+
+31
+
+9 Appendix
+
+32
+
+5
+
+6
+
+1 Introduction
+
+In Mexico, the procedure for obtaining a driver's license is far from being a standardized process that is applied uniformly in each of its thirty-two states, including Mexico City. In fact it is quite the opposite, since most of the road trac legislation is in charge of state governments, or decentralized even further to municipal governments. In this study we present evidence suggesting that we can think of those dierences as exogenous and exploit them, while controlling for various confounding factors, to nd whether there is an eect of applying dierent requirements such as driving and/or written tests to new drivers on road safety
+measures such as road trac accidents (RTAs) and fatal road trac accidents (FRTAs).1
+The variation in driver's licenses requirements occurs because there is no federal law on road trac, and state governments (who sometimes relegate it further to local governments) have the autonomy to
+regulate road trac themselves (Valenzuela, 2008).2 The reason why in some places such requirements were eliminated, as mentioned by The Economist (2011),3 appears to have been the result of a public policy with
+the aim of tackling corruption and other ineciencies in the public sector. In the past, while driving tests were nearly universal, this sort of bureaucratic process was highly inecient and plagued with corruption (Perez, 2008). Some, but not all governments, simply decided to abolish tests in order to x this and thus transformed the process of obtaining a driver's license into a very simple bureaucratic procedure that has no room for corruption. In such places the authorities are incapable of discriminating between good and bad drivers and their Departments of Motor Vehicles (DMVs) have lost the ability to inuence new drivers driving skills. This allows us to think of the elimination of driving and/or written tests as a natural experiment with which we can estimate the eect of such tests (or lack of ) on road safety.
+This eect can be seen as the cost of tackling corruption and state ineciencies, a cost that has been transferred into society versus other ways of dealing with such issues. This study help us to understand the general equilibrium implications of such a policy in terms of the economic and health costs. Also, if performing driving tests to new drivers has an eect on road safety, then the fact that they are not being administered in many of Mexico's states is interesting in its own. This is so, because road trac fatalities are among the leading causes of death in Mexico and in the world according World Health Organization
+(WHO, 2009) and the Pan-American Health Organization (PAHO, 2009).4 In that sense, all measures that
+can help us prevent road trac fatalities should be put into practice. The literature on safety and accidents analysis has long been concerned with nding the determinants of
+road safety including those factors that are exogenous to policy making, like geographical and meteorological factors, as well as those that are endogenous to policy making, like speed limits or mandatory driving education. Therefore, by the exploitation of this natural experiment this study contributes to the literature of the determinants of road safety by introducing a new factor that has rarely been subject to analysis, the implementation of written and/or driving tests to new drivers.
+We have data on the 87 largest municipalities in Mexico for a period of 12 years (1997 - 2008) with which
+
+1We do this due to the fact that dierent requirements are not randomly assigned. 2Interview with Arturo Cervantes Trejo, director of the National Center for Accident Prevention (CENAPRA). Por ejemplo,
+
+no existe una Ley Federal de Tránsito y Vialidad; todos los municipios tienen autonomía por el artículo 115 constitucional para
+
+regular el tránsito y la vialidad, lo que genera una gran heterogeneidad de leyes y reglamentos. Cualquiera emite una licencia
+
+sin la mayor normatividad; no existe un registro nacional de conductores, el de vehículos apenas empieza.
+
+3 Road safety in Mexico, the lawless roads.
+
+How half of Mexico ended up without driving tests.
+
+http://www.economist.com/node/21531484
+4Organización Panamericana de la Salud (OPS).
+
+7
+
+we estimate a xed eects model where we control for various possible confounding factors and preexisting conditions. We nd that abolishing both tests, driving and written, is related to an increase of more than 1,800 RTAs per 100k population of ages 15 to 19. This eect seems to more than double the rate of accidents, on average. Also, abolishing both tests is related to an increase of more than 50 FRTAs per 100k population in the same age group, which means that FRTAs triples after tests have been abolished. If we look at total population's RTAs the eect is smaller, 400 more RTAs per 100k population and 25 more FRTAs per 100k population of all ages. These results are robust to dierent specications and survive several falsication tests.
+2 Road safety and licensing in Mexico
+2.1 Road safety
+Road safety is among the leading causes of death in the world. Every year about 1.3 million people in the world loose their life in the roads (WHO, 2004; WHO, 2009). According to the World Health Organization (WHO) road trac injuries were the ninth cause of death worldwide in 2004 and by 2030 it is estimated to become the fth one, leaving behind lung cancer, diabetes and HIV. Among age groups, road trac injuries are the leading cause of death for people between 15 and 29 years old worldwide. This phenomenon is not evenly distributed among countries, more than 90% of deaths and injuries caused by RTAs occur in low and medium income countries where only half of the matriculated vehicles exist. RTAs are also the cause of enormous economic loses, in most countries this accounts for 1% to 3% of their GDP. Road safety has such an impact on public health that recently the General Assembly of the United Nations ocially proclaimed 2011-2020 as the decade of action for road safety (WHO, 2009). According to the last Pan-American Health Organization (PAHO) report on road safety (PAHO, 2009) road trac injuries where the second leading
+cause of death among people ages 15 to 29 in the Americas region.5 Mexico in the PAHO (2009) report has an adjusted mortality rate of road trac equal to 21.7 deaths per 100,000 population a year.6 This is
+more than 5 points larger that the regional mean (15.8) and its the second largest rate; Venezuela holds the largest with 21.8.
+Several epidemiological studies have been performed to estimate the total number of road trac fatalities in developing countries due to suspected sub reporting in the ocial gures in this type of country (Bartels
+et al., 2010; Bhalla et al., 2009; Odero et al., 1997).7 Bartels et al. (2010) for example, developed a
+methodology that uses all existing sources of information within a country to triangulate to a national gure of road trac injuries. They estimated that in Mexico in 2005 almost 20,000 people died due to road trac injuries and almost one million were injured. These gures are larger than ocial ones (16,682 deaths in 2005). When analyzing the trend for the period 1997-2008 they found that both gures (their estimations
+and ocial numbers) had very similar upward trends, which suggests that sub reporting was systematic.8
+This could be explained by the fact that ocial data is largely dependent upon police reporting which has been shown to under report non-fatal crashes in most developing countries (Aeron-Thomas, 2000; Amoros,
+5The leading cause of death was violence. 6This was calculated for the 2006-2007 period. 7Epidemiology is considered the core science of public health, epidemiological studies study the distribution and determinants
+of disease frequency (Rothman, 2002).
+8Bartels et al. (2010) Figure 6.
+8
+
+Martin, & Laumon, 2007). According to Mexico's National Center for Accident Prevention (CENAPRA), the economic cost of RTAs in Mexico rises to 1.3% of GDP annually before accounting for the intangible costs, once we account for them the gure could rise to 4% of GDP (CENAPRA, 2009). All of this makes it important to study road safety and to better understand the determinants behind RTAs.
+2.2 Licensing in Mexico
+In Mexico, every state has the autonomy to issue its own state's law of trac & transportation. These documents contains all applicable regulations regarding road trac and thus the rules and requirements needed to obtain a driver's license. Sometimes these requirements are clearly stated in the law, and sometimes these are stated in broader ways and left for DMV authorities to interpret as they see t. For example, the law of trac & transportation of the state of Chihuahua (Ley de vialidad y tránsito para el estado de Chihuahua) article 53 strictly announces that driving and written tests are to be performed to new drivers at all DMVs within the state. This means that every DMV within the state must follow these rules. In other cases, like in the state of Colima, the law of trac & transportation of the state of Colima (Ley de vialidad y transporte del estado de Colima) in its article 4 establishes that it is a faculty of each DMV to issue driver's licenses without strictly specifying the requirements that are to be asked to the applicants. This is what we mean when we say that most of the road trac regulation is in charge of state governments and sometimes it is further decentralized to municipal governments.
+When someone wants to get a diver's license in Mexico he must present himself at his municipality's DMV. A few requirements are homogeneous like the minimum driving age, presenting an ocial identication,
+proof of residence in the municipality and paying a fee.9 Performing a driving and/or written test is the
+one requirement that varies throughout the country. For instance, the minimum age for obtaining a driver's license is 18 everywhere and it is always possible to obtain a driving permit at age 16 under a few more requirements like proof of insurance and parents consent. These permits are usually valid for 6 months or a year while a driver's license is usually valid for 2 to 5 years, depending on the fee paid.
+Also to note is that, by law any person holding a valid driver's license of any state can drive in any of the 31 states and in Mexico City freely. This is unfortunate for the purposes of this study. Furthermore, we do not know what proportion of active drivers within each state has no license or a license from a dierent state. Nevertheless, in order to obtain a license one must show a proof of residence in the municipality where he wants to get the license. This makes it harder for people to go to another municipality only to get their license, but still it is well known that at least some people do it in Mexico to avoid having to pass certain tests. Also, law requires for people to obtain a new license when they change their place of residence (although enforcement is probably low). When we estimate the eect of driving and/or written tests on road safety all of this will introduce a bias if the people driving in a dierent municipality or state than the one
+where they obtained their license are not equally distributed and cause or are involved in RTAs.10 We will
+rst assume that they are, and further try to correct for this bias in a robustness check.
+9The fee is not the same for every DMV. We were unable to collect historical data on the dierent fees charged at all DMVs.
+Actual fees have a mean of $192.81 mexican pesos per year of validity, standard deviation is $88.80.
+10Municipalities who perform tests but that are nearby others where these are not being performed are more likely have
+regular drivers who did not have to pass these tests.
+9
+
+3 Literature on road safety analysis
+The literature on road safety and accident analysis has long been interested in nding the main factors that explain road safety. Most of this work has been done by economists and epidemiologists in the eld of health economics and epidemiological analysis. A wide variety of factors have been showed to aect road safety outcomes using very dierent methodologies. We do a brief review of this literature focusing on the studies that we nd relevant for our analysis and those for which we believe this study represents an improvement. First, we describe the dierent methodological approaches that have been used for analyzing similar phenomena. This allows us to place our study within a methodological framework and understand its strengths and weaknesses when it comes to the empirical strategy, and also to understand how far our study stands from the ideal experiment. Second, we discuss the body of work that has been interested in estimating the eect of driving tests and driving education on road safety. The reason for including some literature on the eect of driving education on road safety in this review is because we believe that it is relevant to know the eect that has been found on other forms of policies that try to aect road safety by improving driver's skills. While the implementation of driving tests is far from being a substitute for mandatory driving education, we believe that the imposition of the former can be viewed as an incentive for obtaining the latter before one presents himself at the local DMV. The imposition of tests will give incentives to the person interested in obtaining a driver's license to get some driving instruction before he presents the test, this is an indirect form of encouraging driving education. Finally, we review the body of work interested in nding the exogenous factors that explain road safety. Based on these studies we will then justify the selection of our control variables with which we will control for preexisting dierences.
+3.1 Dierent methodologies
+There are various ways for studying the factors that determine road safety. The methodologies that are commonly preferred are: randomized control trials (RCTs), quasi-experimental approaches, and ecological designs (Peck, 2011). We discuss briey these methodologies and mention which of these apply for our study along with their pros and cons.
+The RCT design represents the gold standard for ndings causal eects because of the randomized assignment of the treatment. In our case we do not have a random assignment of the driver's license requirements but we can control for several factors until both our populations (with and without written and/or driving tests) are comparable in at least some broad sense. Our study is more of a quasi-experimental design. Quasi-experimental designs are generally dened as retrospective or prospective comparisons between groups after adjusting for preexisting dierences. The main problem with this kind of study is that it is subject to model specication errors and confounding by omitted variable bias, thus the need to do robustness checks to convince the reader that in our study one should not worry about these problems. Finally, while the ideal study should be done with data at the individual level we do not have such data. Thus, we follow an ecological design which we dene next.
+Ecological designs are dened as those in which data is an aggregate measure such as the number of RTAs over a period of time in a specic region. This kind of studies is widely used in the road safety literature, especially for international or inter-regional comparisons of road safety. (Seaver et al., 1979; Robertson et al., 1978; Robertson, 1980; Levy, 1988, 1990; Bester, 2001; Page, 2001; Jones et al., 2008) The disadvantage
+10
+
+of these designs is that they are often subject to confounding, endogeneity bias, and problems in generalizing ecological relationships of the behavior of the entities analyzed. For our purposes, data on individual trac accidents was dicult to obtain compared to aggregate data which was found in easily accessible statistical
+records like Mexico's National Statistics and Geography Institute (INEGI).11 To minimize these problems
+inherent in our design we use the longest range of data available and organize it in a panel comprising
+Mexico's larger urban areas and all of the years for which data was available.12 This allows us to control
+for unobserved factors that we assume are constant across urban area and/or across years along with other potentially time-varying confounding factors for which we actively control for.
+3.2 Driver's license requirements and road safety
+The most recent eorts done to study the eect of abolishing driving tests that we are aware of are Perez et al. (2009) and Grabiszewski & Horenstein (2011). Perez et al. (2009) performed a quasi-experimental study were they studied the eect of the elimination of a driving test requirement in order to drive light motorcycles in Barcelona, Spain. They found that relaxed licensing leads to a signicant increase in the mean number of accidents involving light motorcycles as compared to accidents involving all other vehicles. Grabiszewski & Horenstein (2011) do a similar analysis to Perez et al. for Mexico City where driving tests were abolished in January 2004. They nd the opposite, there were more accidents before, while the driving tests were enforced, than after January 2004. They also do a panel data analysis for a group of states, where they estimate the eect of having a driving tests on road safety. They nd that mandatory driving tests do not increase road safety. They interpret their ndings as being driven by a reverse Peltzman eect, where the lack of regulation actually increases driver's precautions because the pool of drivers may be worse than before, making the roads safer (Peltzman, 1975). Our study is similar in spirit to Grabiszewski & Horenstein (2011), but there are important and relevant methodological dierences. First, our unit of observation is the municipality. The fact that we know for a fact that there are states like Guanajuato that show variation in the requirements within the state makes it inappropriate to do the analysis at the state level. Second, we use a larger set of controls based on those variables for which we observe that our sample is not properly balanced. The fact that the dierent requirements where not randomly assigned makes it inappropriate
+to estimate the eect without properly controlling for preexisting conditions based on observable factors.13
+Third, our main results focus only on population ages 15 to 19 because we know that this group is binding to the treatment (written and/or driving tests). People older than this may have received their license many years ago and thus the eect of the tests on road safety may be very dicult to estimate precisely. Finally, we where able to retrieve a larger data set on the treatments that include information on driving and written tests separately, both from law records as well as from the DMVs directly.
+Not so recent literature include Stock et al. (1983) who, in a study done in the United States concluded that drivers who passed an optional nal driving test within a structured training program had a 7% lower rate of accidents. Another US study performed by Lyles, Narupiti and Johar (1995) compared the number of accidents between heavy load drivers who passed and those who failed an optional driving tests. Drivers who had passed the test had an 11% lower accident rate. Of course the fact that tests were optional in both
+11 www.inegi.gob.mx 12In our analysis we use all cities with populations larger than 250,000 on the rst year of our panel which was 1997. This
+gives a total of 87 urban areas.
+13Grabiszewski & Horenstein (2011) only control for population and corruption indexes.
+11
+
+cases induces a selection problem where only the best drivers decide to undertake such tests. Hagge and Romanowicz (1996) studied the eect of a change in the diculty of driving tests in California for heavy load
+drivers, tests became more dicult. They found that the number of accidents actually increased in 5%.14
+The literature on driving education and road safety has long found mixed results also. The rst formal quasi-experiment that studied the relationship between driver education and road trac accidents while controlling for the non-random assignment was Harrington (1972). After adjusting for self-selection bias he found that training reduced crashes only for females. Concerning RCTs, the most inuential studies are those based on the Dekalb, Georgia county study. The Dekalb study comprises a randomized experiment of dierent intensities of driver's training and a control group. The data has been analyzed by various authors. Stock et al. (1983) found neither big dierence across treatment intensities nor between treated and control. Lund et al. (1986) improved the identication strategy by allowing for dierent exposure and found similar results. Vermick et al. (1999) and later Peck (2011) are both extensive reviews of this literature. Peck (2011) emphasizes the diculty of obtaining data large enough to get the desired statistical power needed to reliably nd an eect given that trac accidents are such rare events. He argues that the sample size in most of the RCT studies so far made it impossible to reliably detect a 5% reduction of crashes in a 12-month period. If these studies wanted to reliably detect this with an 80% condence, the sample size should have been of about 70,000 individuals. Still, there have been some studies who have found an eect relying on aggregate data.
+Ecological designs such as Levy (1988) and Levy (1990) exploit annual aggregate data at the state level organized as a panel for over 10 years. In his rst study he used pooled data regressions and found that 54% of the variation in road trac fatality rates can be explained by minimum driving ages, the fact that a state has mandatory driving education, and curfew laws. Raising driving age one year has the largest impact. At the mean, a one year increase of minimum driving age decreases road trac fatality rates in 50%. In the second study Levy tries to disentangle the eect of mandatory driving education into two components: age and experience. He nds that the age eect is the most important and that experience can be neglected, i.e. that the eect of mandatory driving education operates though retarding the age at which people begin to drive and thus lowering exposure, and not because people are more experienced drivers.
+In summary, we nd that studies with data at the individual level are very dicult to perform because of a sample size problem that probably makes them cost-inecient, Peck (2011). This may be the reason why RCT and quasi-experimental studies have not been able to nd convincing evidence that supports the hypothesis that driving education reduces road trac accidents. On the other side, ecological designs along with all of their weaknesses have proven the best way to analyze this type of phenomenon in particular. These studies have found an eect of minimum driving ages and mandatory driving education on RTA, however evidence suggests that the eect operates though lowering exposure and not because of improved driving skills.
+3.3 Exogenous determinants of road safety
+It is important to take into account the exogenous factors that have been found to aect road safety measures in order to control for preexisting dierences in our study. We consider a series of studies that have been devoted to nd the main determinants of road safety. Page (2001) tries to build a national indicator of road
+14For a comprehensive review of this literature and other issues related to road safety refer to Elvik & Vaa (2005).
+12
+
+safety policy between countries once the factors that cannot be aected by policy are controlled for. He nds that one should control for the following: population, vehicle eet, percentage of urban population, percentage of youngsters, percentage of active and employed population, alcohol consumption and percentage of buses and coaches in the vehicle eet. Bester (2001) does a similar analysis but focuses also on what is the best way to dene the dependent variable (rate, absolute number, log, etc.). He nds that the most accurate model to explain road casualties has accidents per 100,000 passengers as a dependent variable and vehicle ownership and the level of development of the population as explanatory variable. We use a measure of accidents per 100,000 population which is only slightly less good compared to accidents per 100,000 passengers regarding the t of the model in Bester's study. Finally, we consider the work of Noland & Quddus (2004) who do a exercise similar to Page's (2001) but for the United Kingdom only. They use a spatial analysis approach and nd that road casualties can be explained by land use and area deprivation, road characteristics, trac ow and demographics. This gives us a broad idea of what kind of variables we should be looking at when controlling for preexisting dierences. We do not have data on all the variables mentioned above, sometimes because they are not reported, or just not available. But we do have variables in all the broad categories mentioned, that is: exposure, routes, vehicle eet, demographics, and a broad range of socioeconomic variables. By controlling for them we adjust for preexisting dierences in each municipality in our study.
+4 Data
+Data comes from various sources; most of it is publicly available, however a relevant part of our database was constructed by ourselves. In this section we discuss what our data set looks like, how we obtained the information and the institutions that gather it. We also discuss the quality of our data mentioning, when we suspect, if there are problems such as measurement errors or misreporting. We constructed a panel data
+set containing information on the 87 largest urban municipalities in Mexico from 1997 to 2008.15 By largest
+we mean those municipalities with population grater than 250,000 in the rst year of our sample. Because data on driver's license requirements was sometimes collected directly by phone at each DMV, the size of inclusion (250,000 population as of 1997) was chosen arbitrarily to keep a large but still manageable number of municipalities from which we would have to recover information. Four states did not have any municipality
+that matched the size of inclusion so we decided to take each of these states as a whole.16
+4.1 Dependent variables
+Data on RTAs was obtained from the Urban and Suburban Road Trac Accidents Statistics (ATUS), a project belonging to Mexico's National Statistics and Geography Institute (INEGI). This particular variable is generated through a decentralized process that begins with a police ocer at every trac accident. Data is generated at each municipality and then recovered and processed by INEGI. The processing of data is done meticulously to ensure that misreporting is minimal (INEGI, 2009). Once the data is transferred from the source questionnaires a validation process is run to nd possible misreporting and trend inconsistencies. Upon validation, RTAs are reported on yearly gures at national, state and municipality level.
+15Municipalities are the second-level administrative divisions in Mexico after state. 16Aguascalientes, Baja California Sur, Tlaxcala and Zacatecas.
+13
+
+RTAs are classied into fatal and non-fatal. The latter consist on RTAs were human lives have been lost, not necessarily in situ. There is also data on RTAs by gender and age group of the driver. We focus on 15 to
+19 year-old drivers of both sexes because they are the binding age group to our treatment.17 One problem
+with this data is the fact that the driver's license information is not captured at the time of the accident. So we do not know if the person involved in the accident even had a license. This has strong implications on our results since we will only be able to identify the intention to treat eect (ITT) on each DMV's area of
+inuence and not necessarily the treatment on the treated (TOT) eect.18 The fact that information on the
+driver's license is non-reported also means that we cannot dierentiate accidents involving drivers from other areas. This will induce a bias in cities where drivers from other areas represent a non-negligible proportion. Most of the municipalities in our study are quite isolated from each other, and metropolitan areas which include two or more municipalities have always the same requirements. This can be appreciated in the maps that are included in the appendix of this study. Only in the valley of Mexico we observe municipalities with dierent requirements that are close enough for people to presumably live and work in municipalities with dierent requirements, these are the state of Mexico and Mexico City. Until data on driver's license is reported in Mexico's road trac statistics there is no direct way to control for this issue. And nally, because there are so many hit-and-run accidents (one in every 10 accidents reported that the driver ran away) and it is impossible to know the age composition of this group, we will further assume that hit-and-run are evenly distributed among ages, which may not necessarily be the case. Figure 4.1 Mean road trac accidents per 100k population in age group.
+Source: Author's own calculation. Data from INEGI, Urban and Suburban Road Trac Accidents Statistics (ATUS) 1997-2008.
+In gure 4.1 we graph the mean of our dependent variable, mean RTAs involving 15 to 19 years old per 100,000 population in that age group, for each year in our sample. In the same graph we include mean RTAs per 100,000 population (of all ages). This gives us an idea of how much larger rates are among youngsters
+17We found that for an average of 3.4% of municipalities RTAs were not classied by ages each year, only the total RTAs was
+reported. Instead of leaving a missing value for that municipality/year we decided to take the average rate of RTA for that age group in the two previous and the two following years and input that value.
+18For a comprehensive discussion on the dierence between this eects refer to Angrist & Pischke (2009).
+14
+
+than among all ages. RTAs aect young people more than they aect any other age group. They are at the highest risk of suering an accident. Also, this is the age group relevant for our study because it comprises the age at which people become legally eligible to obtain a driver's license. Hence, any legislation change that aects the requirements needed to obtain a driver's license will aect this age group the most. Figure 4.2 shows the same graph but for FRTAs. We can observe that population of ages 15 to 19 is also at higher risk of being involved in a fatal accident that the rest of the population for every year. Figure 4.2 Fatal mean road trac accidents per 100k population in age group.
+Source: Author's own calculation. Data from INEGI, Urban and Suburban Road Trac Accidents Statistics (ATUS) 1997-2008.
+4.2 Data on the dierent driver's license requirement
+Data on driver's license requirements was collected in three stages. First, an Internet investigation was done in order to identify the level of government responsible for road trac regulation and the phone number of each DMV. Second, a phone interview was conducted to each DMV to nd out the actual status of requirements and to investigate the past requirements, i.e. if tests had ever been abolished or implemented. Finally, a comparative law study was carried out to nd out the changes in the legislation regarding each of the 32 laws of trac & transportation of the 31 states and Mexico City.
+First we will discuss our interviews with the authorities. Needless to say, this approach can be controversial due to the inherent problems of measurement error that result when data is collected directly from people who may or may not give accurate information, because information is sensitive or because they simply do not remember. In order to minimize these issues the following scheme was followed. First we investigated if road trac was state or locally regulated at each of the 31 states and Mexico City. This provided us with information on which entities provide the service of issuing driver's licenses and the scope of its action. When road trac regulation was done at the state level we assumed that the same rules applied to all municipalities in the state and thus we had only to nd out the rules in one municipality to know the
+rules on the rest.19 When road trac regulation was in charge of local authorities we assumed nothing and 19We made a few random phone calls to other municipalities within states to verify whether this was true. As we expected,
+15
+
+conducted phone calls to each municipality's DMV. Second, when in the phone and in order to avoid talking with people who did not know when driving tests had been abolished we tried to speak with the person who had worked the longest at the DMV and who had something to do with the issuing of licenses. As long as this person is aware of the requirements needed to get a driver's license we did not care about the rank (if he or she is the head of the oce or simply the police ocer who is in charge of performing the test). Finally, in order to eliminate the incentives of lying about the abolition of tests we conducted our inquiring as if we were interested in the time of response of the DMV and the measures done in order to simplify the process. This was done this way because the simplication of processes is an active policy that is very highly regarded
+between dierent bureaucratic oces in Mexico (Perez, 2008).20 This part of the research was by far the most excruciating task of all and we by no means are ready to assure that our data is perfectly accurate.21
+Now, to gain a better understanding of historical requirements regarding driver's licenses we conducted a research on the historical records of trac & transportation state laws. We used the national state legislation record, which is available online at www.ordenjuridico.gob.mx, and a private law compilation: Compilación
+Jurídica Mexicana, managed by Legatek.22 With this we were able to construct a unique database for our
+87 municipalities. The database describes changes in the municipalities's road trac laws referring to the imposition of driving and or written tests. We know when the law specically required driving and/or written tests and when the law was ambiguous about it or simply did not mention it. For those municipalities/years for which we could not nd the relevant information we left a missing value. Once we had both types of data, the one obtained by phone and the one obtained from law records, we merged it into a single database where we gave preference to law records when lling information about the past requirements. Both tables are found in the Appendix of this study.
+requirements where the same.
+20In fact we found out that people were very open to share with us how fast it was to obtain a driver's license and most DMV
+websites actually showed the average time in minutes that it took to get a license, from where we also could get a sense on the lack of tests.
+21One possible way to improve this study is by correcting these errors in our data. Of course that would mean to have a
+greater access to local and state governments and great deal of time and resources.
+22 http://www.leginfor.com/
+16
+
+Table 4.1 Number of municipalities under each type of treatment and total population of ages 15 to 19 at
+
+the begining and at the end of our sample period.
+
+ƌŝǀŝŶŐ ƚĞƐƚ
+
+EŽ
+
+zĞƐ
+
+dŽƚĂů
+
+tƌŝƚƚĞŶ ƚĞƐƚ dŽƚĂů zĞƐ EŽ
+
+Ϯϳ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϯ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϯϬ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+
+ϭ͕ϲϳϳ͕ϯϬϳ
+
+ϭϲϯ͕ϰϰϵ
+
+ϭ͕ϴϰϬ͕ϳϱϲ
+
+ϵ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϰϴ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϱϳ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+
+ϰϯϲ͕ϲϭϮ
+
+Ϯ͕ϲϰϬ͕Ϯϳϴ
+
+ϯ͕Ϭϳϲ͕ϴϵϬ
+
+ϯϲ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϱϭ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϴϳ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+
+Ϯ͕ϭϭϯ͕ϵϭϵ
+
+Ϯ͕ϴϬϯ͕ϳϮϳ
+
+ϰ͕ϵϭϳ͕ϲϰϲ
+
+ϭϵϵϳ
+
+ϮϬϬϴ
+
+tƌŝƚƚĞŶ ƚĞƐƚ dŽƚĂů zĞƐ EŽ
+
+ƌŝǀŝŶŐ ƚĞƐƚ
+
+EŽ
+
+zĞƐ
+
+ϯϯ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ Ϭ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+
+ϭ͕ϵϱϬ͕ϱϮϭ
+
+Ϭ
+
+Ϯϭ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϯϯ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+
+ϵϴϴ͕ϱϰϵ
+
+Ϯ͕ϭϭϯ͕ϱϰϯ
+
+ϱϰ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ ϯϯ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+
+Ϯ͕ϵϯϵ͕ϬϳϬ
+
+Ϯ͕ϭϭϯ͕ϱϰϯ
+
+dŽƚĂů ϯϯ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+ϭ͕ϵϱϬ͕ϱϮϭ ϱϰ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+ϯ͕ϭϬϮ͕ϬϵϮ ϴϳ ŵƵŶŝĐŝƉĂůŝƚŝĞƐ
+ϱ͕ϬϱϮ͕ϲϭϯ
+
+Source: Author's own calculation. Data on dierent treatment status was constructed by ourselves, data on population of ages 15 to 19 is from INEGI.
+
+Table 4.1 shows how written and driving tests looked like in the rst and in the last year of our sample, in the 87 municipalities in our study. By 1997, 27 municipalities did not perform any test to new drivers where a total of 1,677,307 people of ages 15 to 19 lived. By 2008, the number of municipalities who did not perform any tests had grown to 33 and represented a total of 1,950,521 people of ages 15 to 19. This means that the total number of youngsters who do not have to pass neither a written nor a driving tests in order to obtain a drivers license grew by more than one fourth of a million in our sample period. The number of municipalities that perform both tests went from 48 to 33 in our sample period, this accounted for reduction of more than half a million youngsters who no longer required to pass a test.
+4.3 The control variables
+Data on our control variables was obtained from public access sites, mainly INEGI. Data on length of roads,
+cars sold, GDP,23 median age of population, HDI index and schooling index was obtained from administrative
+records of socioeconomic and economic aggregated data available in INEGI's bank of information. Population
+and registered vehicles was obtained from SIMBAD, the state and municipal data set system of INEGI.24 23GDP is in prices of 2003. 24 http://www3.inegi.org.mx/sistemas/descarga/
+
+17
+
+The Mexican Transparency International branch, Mexican Transparency organization, provided us with
+the corruption indexes.25 Finally, data on the ruling party at each state was constructed from available
+information at each of the state government websites.
+
+Table 4.1 Summary statistics by treatment status, 1997
+ƌŝǀŝŶŐ ƚĞƐƚ
+
+tƌŝƚƚĞŶ ƚĞƐƚ
+
+ĂƌƐ ƐŽůĚ
+
+zĞƐ Ϯ͕ϭϭϰ ;ϮϳϲͿ
+
+EŽ ϭ͕ϵϯϬ ;ϯϱϳͿ
+
+ƚ ͲϬ͘ϰϭ
+
+zĞƐ Ϯ͕ϯϯϱ ;ϯϭϵͿ
+
+EŽ ϭ͕ϴϬϮ ;ϯϭϰͿ
+
+ƚ Ͳϭ͘ϮϬ
+
+ƵƐĞƐ ƐŽůĚ
+
+ϭ͕ϰϳϴ ;ϯϰϴͿ
+
+ϭ͕ϱϱϭ
+
+Ϭ͘ϭϵ
+
+ϭ͕ϱϯϬ
+
+;ϭϳϴͿ
+
+;ϰϮϭͿ
+
+ϭ͕ϱϬϱ ;ϭϱϴͿ
+
+ͲϬ͘Ϭϱ
+
+>ĞŶŐƚŚ ŽĨ ƌŽĂĚƐ
+
+ϲϰϰ ;ϰϳϬͿ
+
+ϴϬϬ
+
+Ϭ͘ϯϬ
+
+ϱϳϵ
+
+;ϮϱϱͿ
+
+;ϱϬϭͿ
+
+ϴϮϵ
+
+Ϭ͘ϰϰ
+
+;ϮϳϮͿ
+
+ZĞŐŝƐƚĞƌĞĚ ǀĞŚŝĐůĞƐ
+
+ϴϯ͕Ϯϰϵ ;ϮϬ͕ϴϮϱͿ
+
+ϭϭϬ͕ϭϳϰ
+
+ϭ͘Ϭϳ
+
+ϳϳ͕Ϯϲϳ
+
+;ϭϰ͕ϱϱϬͿ
+
+;ϭϵ͕ϲϮϮͿ
+
+ϭϭϬ͕ϰϴϴ
+
+ϭ͘ϯϱ
+
+;ϭϰ͕ϳϳϳͿ
+
+ZĞŐ͘ ǀĞŚŝĐůĞƐ ƉĞƌ ϭϬϬ
+
+ϭϰ͘ϭϴ
+
+ϮϬ͘ϲϱ
+
+ϭ͘ϳϵ
+
+ϭϮ͘ϱϯ
+
+ϮϬ͘ϴϰ
+
+Ϯ͘ϱϭ
+
+ƉŽƉƵůĂƚŝŽŶ ZĞŐŝƐƚĞƌĞĚ ŵŽƚŽƌĐǇĐůĞƐ ŽƌƌƵƉƚŝŽŶ ŝŶĚĞǆΎ
+
+;Ϯ͘ϴϬͿ ϭ͕Ϯϴϳ ;ϳϵϱͿ
+ϭϭ͘ϭϯ ;Ϯ͘ϯϬͿ
+
+;Ϯ͘ϯϳͿ
+
+;Ϯ͘ϱϬͿ
+
+ϭ͕ϲϴϯ ;ϰϭϮͿ
+
+Ϭ͘ϰϱ
+
+ϭ͕ϴϵϭ
+
+;ϭϬϱϳͿ
+
+ϭϭ͘ϯϮ
+
+Ϭ͘Ϭϱ
+
+ϭϮ͘Ϯϰ
+
+;ϯ͘ϮϴͿ
+
+;Ϯ͘ϮϲͿ
+
+;Ϯ͘ϭϳͿ ϭ͕ϯϮϰ ;ϰϬϯͿ
+ϭϬ͘ϳϭ ;ϯ͘ϭϬͿ
+
+ͲϬ͘ϱϬ ͲϬ͘ϰϬ
+
+WE
+
+Ϭ͘ϮϮ
+
+Ϭ͘ϭϮ
+
+ͲϬ͘ϳϬ
+
+Ϭ͘ϭϯ
+
+Ϭ͘ϭϴ
+
+Ϭ͘Ϯϱ
+
+;Ϭ͘ϭϰͿ
+
+;Ϭ͘ϬϴͿ
+
+;Ϭ͘ϭϯͿ
+
+;Ϭ͘ϭϬͿ
+
+WZ/
+
+Ϭ͘ϳϱ
+
+Ϭ͘ϴϴ
+
+Ϭ͘ϴϲ
+
+Ϭ͘ϴϳ
+
+Ϭ͘ϴϭ
+
+ͲϬ͘ϯϲ
+
+;Ϭ͘ϭϱͿ
+
+;Ϭ͘ϬϴͿ
+
+;Ϭ͘ϭϯͿ
+
+;Ϭ͘ϭϬͿ
+
+WZ
+
+Ϭ͘Ϭϯ
+
+Ϭ͘ϬϬ
+
+ͲϬ͘ϵϯ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϮ
+
+Ϭ͘ϵϱ
+
+;Ϭ͘ϬϯͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϮͿ
+
+'W ƉĞƌ ĐĂƉŝƚĂ
+
+ϰϳ͘ϱϱ ;ϯ͘ϭϲͿ
+
+ϳϴ͘ϱϭ
+
+ϭ͘ϳϴ
+
+;ϭϳ͘ϭϬͿ
+
+ϰϰ͘ϲϵ ;Ϯ͘ϴϵͿ
+
+ϳϲ͘ϳϲ
+
+ϭ͘ϵϵ
+
+;ϭϱ͘ϴϰͿ
+
+DĞĚŝĂŶ ĂŐĞ
+
+Ϯϯ͘ϭϰ
+
+Ϯϰ͘Ϭϲ
+
+Ϭ͘ϵϱ
+
+ϮϮ͘ϵϯ
+
+Ϯϰ͘Ϭϳ
+
+ϭ͘Ϯϳ
+
+;Ϭ͘ϯϬͿ
+
+;Ϭ͘ϵϮͿ
+
+;Ϭ͘ϯϰͿ
+
+;Ϭ͘ϴϯͿ
+
+DĂůĞͬ&ĞŵĂůĞ ƌĂƚĞ
+
+ϵϱ͘ϴϭ
+
+ϵϱ͘ϯϮ
+
+ͲϬ͘ϯϭ
+
+ϵϱ͘ϲϱ
+
+ϵϱ͘ϰϲ
+
+ͲϬ͘ϭϯ
+
+;Ϭ͘ϲϳͿ
+
+;ϭ͘ϰϮͿ
+
+;Ϭ͘ϳϲͿ
+
+;ϭ͘ϯϬͿ
+
+,/
+
+Ϭ͘ϴϭ
+
+Ϭ͘ϴϯ
+
+ϭ͘ϱϯ
+
+Ϭ͘ϴϭ
+
+Ϭ͘ϴϯ
+
+ϭ͘ϳϭ
+
+;Ϭ͘ϬϭͿ
+
+;Ϭ͘ϬϭͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϭͿ
+
+^ĐŚŽŽůŝŶŐ ŝŶĚĞǆ ǆƉŽƐƵƌĞ WƌŝĐĞΎΎ
+
+Ϭ͘ϴϱ ;Ϭ͘ϬϬͿ Ϭ͘ϬϬϴ
+;Ϭ͘ϬϬϰͿ Ϯϭϰ͘ϴϰ ;Ϯϯ͘ϭϮͿ
+
+Ϭ͘ϴϲ ;Ϭ͘ϬϭͿ Ϭ͘Ϭϭϰ
+;Ϭ͘ϬϬϱͿ ϭϲϬ͘Ϭϴ ;ϭϰ͘ϰϬͿ
+
+Ϭ͘ϰϬ Ϭ͘ϴϵ ͲϮ͘Ϭϱ
+
+Ϭ͘ϴϱ ;Ϭ͘ϬϬͿ Ϭ͘ϬϬϴ
+;Ϭ͘ϬϬϱͿ ϮϬϰ͘Ϯϭ ;ϰ͘ϳϳͿ
+
+Ϭ͘ϴϲ ;Ϭ͘ϬϭͿ Ϭ͘Ϭϭϰ
+;Ϭ͘ϬϬϱͿ ϭϴϲ͘ϱϬ ;Ϯϱ͘ϱϮͿ
+
+Ϭ͘ϰϬ Ϭ͘ϴϮ ͲϬ͘ϲϴ
+
+^ƚĂŶĚĂƌĚ ĞƌƌŽƌƐ ĂƌĞ ŝŶ ƉĂƌĞŶƚŚĞƐŝƐ ĂŶĚ ǁŚĞƌĞ ĐĂůĐƵůĂƚĞĚ ĐůƵƐƚĞƌŝŶŐ ďǇ ƐƚĂƚĞ͘ΎsĂůƵĞƐ ĨŽƌ ϮϬϬϭ ΎΎ sĂůƵĞƐ ĨŽƌ ϮϬϭϬ
+
+Source: Author's own calculation.
+Table 4.1 shows summary statistics by treatment status in the rst year of our sample, 1997. By treatment
+we mean if driving or written tests are being administered in a particular municipality that year.26 This table 25 http://www.transparenciamexicana.org.mx/ 26The excluded category is municipalities where these tests are not being administered.
+
+18
+
+allows us to perceive what preexisting dierences among municipalities look like. In general both groups of municipalities, those who administered tests and those who did not, are fairly balanced. Their main dierences are: registered vehicles per 100 population, municipalities with no tests have a higher number of registered vehicles than with municipalities with tests; GDP per capita, also municipalities with tests have higher levels of income, and nally; human development index in the same sense. Only for the case of registered vehicles per 100 population we can reject the hypothesis that dierence of means equals zero at the 5% level. Also, the price for obtaining a driver's license (as expected) is higher in places where test are administered, but we only have current data and not data from 1997. Instead of concluding that our sample is well balanced we conduct a more stringent form of testing preexisting conditions acknowledging the fact that there are various mixes of treatments.
+Table 4.2 shows the same variables but presented in a dierent and somewhat more stringent form regarding the tests of dierence of means. It organizes municipalities into four disjoint groups depending on what mixture of treatments they receive. Groups are referred to as: None, if neither a driving tests or a written test is administered; Driving, if only a driving tests but not a written tests is administered; Written, if only a written but not a driving tests is administered, and; Both, if both tests are administered. It is important to notice that the Driving group is not very interesting because it is only rarely observed that a municipality applies a driving test without applying a written tests. By 1997 only 3 municipalities (Morelia, Uruapan and San Luis Potosí) in our sample had this kind of mixture and by 2010 there was none. Separating our sample into four disjoint groups means that we need to conduct six dierent tests of dierence in means for each variable in order to determinate if there are preexisting dierences indeed. Now, we will neglect the group Driving for the reasons that we stated above and only focus on the test of dierence in means between the other three groups (columns 5, 6 and 7). We observe that groups are again balanced in most cases. We mention only those variables for which we can reject the hipothesis that dierence of means equals zero at the 5% level: registered vehicles per 100 population, registered motorcycles, corruption index, dummy indicating that PRI rules the state government, GDP per capita and price. These are the variables for which we will actively control for when estimating the eect of driver's license requirements on road safety.
+19
+
+Table 4.2 Summary statistics dierentiating by 4 disjoint types of treatment, 1997.
+dĂďůĞ Ϯ͘ ^ƵŵŵĂƌǇ ƐƚĂƚŝƐƚŝĐƐ ĚŝĨĨĞƌĞŶƚŝĂƚŝŶŐ ďǇ ϰ ĚŝƐũŽŝŶƚ ƚǇƉĞƐ ŽĨ ƚƌĞĂƚŵĞŶƚ͘
+
+dƌĞĂƚŵĞŶƚ
+
+ƚ
+
+;ϭͿ
+
+;ϮͿ
+
+;ϯͿ
+
+;ϰͿ
+
+;ϱͿ
+
+;ϲͿ
+
+;ϳͿ
+
+ĂƌƐ ƐŽůĚ
+
+EŽŶĞ Ϯ͕Ϯϵϵ
+
+ƌŝǀŝŶŐ tƌŝƚƚĞŶ Ϯ͕ϲϲϬ ϭ͕ϱϲϬ
+
+ŽƚŚ ϭ͕ϴϲϲ
+
+t ǀƐ͘  E ǀƐ͘ t E ǀƐ͘ 
+
+Ϭ͘ϳϯ
+
+Ͳϭ͘ϵϬ
+
+ͲϬ͘ϴϯ
+
+;ϯϲϳ͘ϵͿ ;ϮϮϵ͘ϰͿ ;ϭϰϬ͘ϮͿ ;ϯϵϱ͘ϭͿ
+
+ƵƐĞƐ ƐŽůĚ
+
+ϭ͕ϰϵϬ
+
+ϭ͕ϴϴϮ
+
+ϭ͕ϰϰϮ
+
+ϭ͕ϱϮϮ
+
+Ϭ͘Ϯϱ
+
+ͲϬ͘Ϭϵ
+
+Ϭ͘Ϭϲ
+
+;ϰϴϭ͘ϮͿ ;ϭϰϵ͘ϰͿ ;Ϯϯϲ͘ϳͿ ;ϭϵϳ͘ϱͿ
+
+>ĞŶŐƚŚ ŽĨ ƌŽĂĚƐ
+
+ϲϭϴ͘ϴ
+
+Ϯϵϴ͘Ϭ
+
+ϳϭϵ͘ϵ
+
+ϴϱϴ͘Ϯ
+
+Ϭ͘ϮϮ
+
+Ϭ͘ϭϮ
+
+Ϭ͘ϯϲ
+
+;ϲϮϮ͘ϮͿ ;ϯϭ͘ϯͿ ;ϱϵϬ͘ϵͿ ;Ϯϴϴ͘ϱͿ
+
+ZĞŐŝƐƚĞƌĞĚ ǀĞŚŝĐůĞƐ ϳϰ͕ϯϰϴ ϭϬϯ͕ϱϯϵ ϭϬϵ͕ϵϱϭ ϭϭϬ͕ϱϴϴ Ϭ͘Ϭϭ
+
+Ϭ͘ϳϯ
+
+ϭ͘ϯϵ
+
+;Ϯϭ͕ϵϮϬͿ ;ϭϳ͕ϳϴϴͿ ;ϰϮ͕ϱϯϵͿ ;ϭϱ͕ϱϯϲͿ
+
+ZĞŐ͘ ǀĞŚŝĐůĞƐ ƉĞƌ ϭϬϬ ƉŽƉƵůĂƚŝŽŶ ZĞŐŝƐƚĞƌĞĚ ŵŽƚŽƌĐǇĐůĞƐ ŽƌƌƵƉƚŝŽŶ ŝŶĚĞǆΎ
+
+ϭϭ͘ϳϯ ;Ϯ͘ϱϮͿ ϭ͕ϲϬϱ
+;ϭ͕ϭϰϴͿ ϭϮ͘ϲϯ
+
+ϭϵ͘ϳϰ ;Ϭ͘ϴϯͿ ϰ͕ϰϲϱ
+;ϵϵϵ͘ϴͿ ϴ͘ϳϳ
+
+Ϯϭ͘ϱϯ ;ϯ͘ϭϱͿ ϯϯϱ͘Ϭ
+;ϭϰϲ͘ϰͿ ϲ͘ϲϮ
+
+ϮϬ͘ϳϭ ;Ϯ͘ϱϯͿ ϭ͕ϱϬϵ
+;ϰϯϵ͘ϮͿ ϭϭ͘ϰϴ
+
+ͲϬ͘Ϯϭ Ϯ͘ϱϲ ϭ͘ϯϲ
+
+Ϯ͘ϰϮ Ͳϭ͘ϭϮ ͲϮ͘ϯϯ
+
+Ϯ͘ϱϴ ͲϬ͘Ϭϴ ͲϬ͘Ϯϳ
+
+;Ϯ͘ϰϲͿ ;ϭ͘ϲϮͿ ;Ϭ͘ϴϵͿ ;ϯ͘ϰϵͿ
+
+WE
+
+Ϭ͘ϭϱ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϰϰ
+
+Ϭ͘ϭϯ
+
+Ͳϭ͘ϰϴ
+
+ϭ͘Ϭϳ
+
+ͲϬ͘ϭϯ
+
+;Ϭ͘ϭϲͿ ;Ϭ͘ϬϬͿ ;Ϭ͘ϮϮͿ ;Ϭ͘ϬϴͿ
+
+WZ/
+
+Ϭ͘ϴϱ
+
+ϭ͘ϬϬ
+
+Ϭ͘ϰϰ
+
+Ϭ͘ϴϴ
+
+Ϯ͘Ϭϯ
+
+Ͳϭ͘ϱϬ
+
+Ϭ͘ϭϯ
+
+;Ϭ͘ϭϲͿ ;Ϭ͘ϬϬͿ ;Ϭ͘ϮϮͿ ;Ϭ͘ϬϴͿ
+
+WZ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϭϭ
+
+Ϭ͘ϬϬ
+
+ͲϬ͘ϵϵ
+
+Ϭ͘ϵϳ
+
+͘
+
+;Ϭ͘ϬϬͿ ;Ϭ͘ϬϬͿ ;Ϭ͘ϭϭͿ ;Ϭ͘ϬϬͿ
+
+'W ƉĞƌ ĐĂƉŝƚĂ
+
+ϰϱ͘ϳϰ
+
+ϯϱ͘Ϯϵ
+
+ϱϯ͘ϬϬ
+
+ϴϭ͘Ϯϭ
+
+ϭ͘ϱϮ
+
+Ϭ͘ϵϱ
+
+Ϯ͘ϬϬ
+
+;ϯ͘ϮϴͿ ;Ϯ͘ϮϳͿ ;ϲ͘ϴϭͿ ;ϭϳ͘ϲϬͿ
+
+DĞĚŝĂŶ ĂŐĞ
+
+Ϯϯ͘ϬϬ
+
+ϮϮ͘ϯϯ
+
+Ϯϯ͘ϱϲ
+
+Ϯϰ͘ϭϳ
+
+Ϭ͘ϱϴ
+
+Ϭ͘ϵϮ
+
+ϭ͘ϭϱ
+
+;Ϭ͘ϯϴͿ ;Ϭ͘ϯϱͿ ;Ϭ͘ϰϳͿ ;Ϭ͘ϵϲͿ
+
+DĂůĞͬ&ĞŵĂůĞ ƌĂƚĞ ϵϱ͘ϵϰ
+
+ϵϯ͘ϬϬ
+
+ϵϱ͘ϰϭ
+
+ϵϱ͘ϰϳ
+
+Ϭ͘Ϭϯ
+
+ͲϬ͘ϯϰ
+
+ͲϬ͘Ϯϴ
+
+;Ϭ͘ϳϴͿ ;Ϭ͘ϯϯͿ ;ϭ͘ϯϮͿ ;ϭ͘ϱϱͿ
+
+,/
+
+Ϭ͘ϴϭ
+
+Ϭ͘ϴϭ
+
+Ϭ͘ϴϮ
+
+Ϭ͘ϴϰ
+
+Ϭ͘ϵϱ
+
+Ϭ͘ϲϱ
+
+ϭ͘ϳϯ
+
+;Ϭ͘ϬϭͿ ;Ϭ͘ϬϮͿ ;Ϭ͘ϬϭͿ ;Ϭ͘ϬϭͿ
+
+^ĐŚŽŽůŝŶŐ ŝŶĚĞǆ
+
+Ϭ͘ϴϱ
+
+Ϭ͘ϴϰ
+
+Ϭ͘ϴϱ
+
+Ϭ͘ϴϲ
+
+Ϭ͘ϱϭ
+
+ͲϬ͘Ϯϵ
+
+Ϭ͘ϯϴ
+
+;Ϭ͘ϬϬͿ ;Ϭ͘ϬϭͿ ;Ϭ͘ϬϭͿ ;Ϭ͘ϬϭͿ
+
+ǆƉŽƐƵƌĞ
+
+Ϭ͘ϬϬϵ
+
+Ϭ͘ϬϬϯ
+
+Ϭ͘ϬϬϳ
+
+Ϭ͘Ϭϭϲ
+
+ϭ͘Ϯϭ
+
+ͲϬ͘Ϯϭ
+
+Ϭ͘ϴϮ
+
+;Ϭ͘ϬϬϲͿ ;Ϭ͘ϬϬϬͿ ;Ϭ͘ϬϬϱͿ ;Ϭ͘ϬϬϲͿ
+
+WƌŝĐĞΎΎ
+
+ϮϬϰ͘Ϯϭϭ
+
+Ͳ
+
+ϮϯϬ͘ϱϯϳ ϭϲϬ͘Ϭϳϵ Ͳϭ͘Ϯϯ
+
+Ϭ͘ϰϳ
+
+ͲϮ͘ϴϳ
+
+;ϱ͘ϭϭϯͿ
+
+Ͳ
+
+;ϱϱ͘ϲϱϴͿ ;ϭϰ͘ϲϮϭͿ
+
+^ƚĂŶĚĂƌĚ ĞƌƌŽƌƐ ĂƌĞ ŝŶ ƉĂƌĞŶƚŚĞƐŝƐ ĂŶĚ ǁŚĞƌĞ ĐĂůĐƵůĂƚĞĚ ĐůƵƐƚĞƌŝŶŐ ďǇ ƐƚĂƚĞ͘ΎsĂůƵĞƐ ĨŽƌ ϮϬϬϭ ΎΎ sĂůƵĞƐ
+
+ĨŽƌ ϮϬϭϬ
+
+Source: Author's own calculation.
+
+20
+
+5 Empirical strategy
+Our aim here is to justify that driver's license requirements such as driving and/or written tests can be thought as exogenous to RTAs. This will allow us to correctly identify the eect of requirements on road safety once we control for preexisting dierences. In this section we will conduct a test of exogeneity for our dependent variable along with a justication for that matter, followed by the specication strategy and the regression framework that we intend to use in order to estimate the eect.
+5.1 Test of exogeneity
+In our sample we observe 4 possible categories of municipalities regarding the abolition or implementation of driving and/or written tests. These are showed in Table 5.1 as,
+• Never had: Municipalities that throughout our sample period never had a driving or a written test.
+• Abolished: Municipalities that started our sample period with a test and at some point abolished it.
+• Implemented: Municipalities that started our sample period without a test and at some point imple-
+mented one.
+• Always had: Municipalities that throughout our sample period always had a driving or a written test.
+
+Table 5.1 Number of municipalities that never had, abolished, implementation or always had tests within
+
+our sample period. 1997-2008.
+
+ƌŝǀŝŶŐ ƚĞƐƚ
+
+&ƌĞƋ͘
+
+й
+
+tƌŝƚƚĞŶ ƚĞƐƚ
+
+&ƌĞƋ͘
+
+й
+
+EĞǀĞƌ ŚĂĚ
+
+Ϯϲ
+
+Ϯϵ͘ϴϵ
+
+ϭϱ
+
+ϭϳ͘Ϯϰ
+
+ďŽůŝƐŚĞĚ
+
+Ϯϲ
+
+Ϯϵ͘ϴϵ
+
+ϭϲ
+
+ϭϴ͘ϯϵ
+
+/ŵƉůĞŵĞŶƚĞĚ
+
+ϭϬ
+
+ϭϭ͘ϰϵ
+
+ϭϱ
+
+ϭϳ͘Ϯϰ
+
+ůǁĂǇƐ ŚĂĚ
+
+Ϯϱ
+
+Ϯϴ͘ϳϰ
+
+ϰϭ
+
+ϰϳ͘ϭϯ
+
+Source: Author's own calculation.
+
+We observe that in both cases, driving and written tests, almost 40 percent of our sample either abolished or implemented tests and the remaining 60 percent either never had or has always had a test. If we were certain that the decision of the authorities upon what requirements to ask to new drivers when obtaining a new driver's license was independent of RTAs, then the estimation of the eect would be straight-forward once we controlled for confounding factors and preexisting dierences. But we cannot assume this right away. It is possible, for example, that driving and/or written tests had been abolished because RTAs where low or that they had been implemented because RTAs where very high. In this case we would have a problem of reverse causality when estimating the eect of requirements on road safety. We wish to exclude this possibility and prove that, whatever the cause was for abolishing driving and/or written tests, RTAs did not play any role. As long as trends were non negative before the abolition of tests, for example, we can assume that RTAs did not play a role in the decision of the authorities of abolishing them.
+
+21
+
+Figure 5.1 RTAs trend in the sample period (1997 - 2008) ϳϬϬϬ
+
+ϲϬϬϬ
+
+ϱϬϬϬ
+
+dŽƚĂů Zd Ɛ
+
+ϰϬϬϬ
+
+ϯϬϬϬ
+
+ϮϬϬϬ
+
+ϭϬϬϬ
+
+Ϭ ϭϵϵϳ ϭϵϵϴ ϭϵϵϵ ϮϬϬϬ ϮϬϬϭ ϮϬϬϮ ϮϬϬϯ ϮϬϬϰ ϮϬϬϱ ϮϬϬϲ ϮϬϬϳ ϮϬϬϴ
+
+>ŽǁĞƌ
+
+ŽĞĨĨŝĐŝĞŶƚ
+
+hƉƉĞƌ
+
+Source: Author's own calculation. Data from INEGI, Urban and Suburban Road Trac Accidents Statistics (ATUS) 1997-2008.
+
+In Figure 5.1 we observe the overall trend of RTAs along with 95 percent condence interval bands. This trend is never negative, which gives us the hint that maybe the abolition of tests is more likely to be exogenous to RTAs than the implementation of tests. The fact that the trend is positive could be a cause for the implementation but not for the abolition of written and/or driving tests. In order to conclude this we estimate the linear trend for each of the four categories, and for the categories abolished and implemented we estimate it only for the years before the change in policy (before the abolition or the implementation respectively). We do it separately for the case of driving and written tests. Tables 5.2 and 5.3 contain these estimates.
+
+Table 5.2 Dierent trends in RTAs before the change in policy by categories. Driving tests. 1997-2008
+ƌŝǀŝŶŐ ƚĞƐƚƐ EĞǀĞƌ ŚĂĚ ďŽůŝƐŚĞĚ /ŵƉůĞŵĞŶƚĞĚ ůǁĂǇƐ ŚĂĚ
+
+dŝŵĞ
+
+ϰϵ͘ϳ
+
+ϲϲ͘ϲϵ
+
+ϱϱ͘ϯϯ
+
+ϭϳϰ͘ϰϰ
+
+;ϭϱ͘ϲϰͿ
+
+;ϯϴ͘ϴϰͿ
+
+;Ϯϭϵ͘ϯϰͿ
+
+;ϲϱ͘ϯϮͿ
+
+ŽŶƐƚĂŶƚ
+
+Ͳϵϴ͕ϮϭϮ ͲϭϯϮ͕ϬϬϬ ͲϭϬϰ͕ϬϬϬ Ͳϯϰϰ͕ϬϬϬ ;ϯϭϯϰϮ͘ϲϵͿ ;ϳϳϲϳϲ͘ϵϯͿ ;ϰϯϵϬϰϮ͘ϯϴͿ ;ϭϯϬϴϳϲ͘ϬϯͿ
+
+ƌΔϮ
+
+Ϭ͘ϬϯϬ
+
+Ϭ͘ϬϮϬ
+
+Ϭ͘ϬϬϬ
+
+Ϭ͘ϬϮϬ
+
+E
+
+ϯϲϰ
+
+ϭϲϴ
+
+ϲϴ
+
+ϯϱϬ
+
+&
+
+ϭϬ͘Ϭϵ
+
+Ϯ͘ϵϱ
+
+Ϭ͘Ϭϲ
+
+ϳ͘ϭϯ
+
+Source: Author's own calculation. Estimated equation is: RT Ait = δ0 + δ1t + eit tchange in policy. Standard errors are shown in parenthesis below each coecient.
+
+where t <
+
+Table 5.2 shows the results of a regression of RTAs against time for all four categories separately, and only using observations prior to the change in policy, when a change in policy was made. We observe that trends are always non negative. Municipalities that have never had a driving test show a statistically signicant upward trend in RTAs, same as municipalities that have always had a driving tests. In the case of municipalities that abolished or implemented driving tests, coecients are positive but statistically not dierent from zero. In Table 5.3 we observe RTAs trend for the case of written tests. Results are very
+
+22
+
+similar to those for driving tests. Hence, it seems that the abolition of driving and/or written tests can be thought as independent of RTAs, since RTAs trends were non negative prior to the abolition. For the case of municipalities who implemented driving and/or written tests we believe that stronger assumptions have to be made in order to conclude that RTAs had nothing to do in the decision of the authorities of implementing them. For this reason we exclude this category from our sample and estimate only the eect of abolishing requirements on RTAs, taking municipalities who have tests as the reference group.
+
+Table 5.3 Dierent trends in RTAs before the change in policy by categories. Written tests. 1997-2008
+tƌŝƚƚĞŶ ƚĞƐƚƐ EĞǀĞƌ ŚĂĚ ďŽůŝƐŚĞĚ /ŵƉůĞŵĞŶƚĞĚ ůǁĂǇƐ ŚĂĚ
+
+dŝŵĞ
+
+ϰϬ͘Ϭϲ
+
+ϭϵ͘ϴ
+
+ϭϭϴ͘ϱϳ
+
+ϭϮϴ͘ϯϱ
+
+;ϭϴ͘ϴϯͿ
+
+;ϮϬ͘ϮϭͿ
+
+;ϳϴ͘ϲϱͿ
+
+;ϱϬ͘ϮϲͿ
+
+ŽŶƐƚĂŶƚ
+
+Ͳϳϵ͕Ϯϰϭ
+
+Ͳϯϴ͕ϳϮϲ ͲϮϯϰ͕ϬϬϬ ͲϮϱϯ͕ϬϬϬ
+
+;ϯϳϳϯϭ͘ϳϰͿ ;ϰϬϰϭϲ͘ϰϰͿ ;ϭϱϳϯϳϭ͘ϴϲͿ ;ϭϬϬϲϵϯ͘ϰϲͿ
+
+ƌΔϮ
+
+Ϭ͘ϬϮϬ
+
+Ϭ͘ϬϭϬ
+
+Ϭ͘ϬϮϬ
+
+Ϭ͘ϬϭϬ
+
+E
+
+ϮϭϬ
+
+ϭϭϬ
+
+ϵϯ
+
+ϱϳϰ
+
+&
+
+ϰ͘ϱϯ
+
+Ϭ͘ϵϲ
+
+Ϯ͘Ϯϳ
+
+ϲ͘ϱϮ
+
+Source: Author's own calculation. Estimated equation is: RT Ait = δ0 + δ1t + eit tchange in policy. Standard errors are shown in parenthesis below each coecient.
+
+where t <
+
+5.2 Regression framework
+
+We estimate the following model using a xed eects panel data framework that comprises 68 municipalities
+during a period of 12 years (1997-2008),27
+
+11
+
+Yit = α + β1DrivAbolishit + β2BothAbolishit + γXit + ϕtY eart +
+
+t=1
+
+31 11
+
++
+
+ρjt (Statej ∗ Y eart) + ci + eit
+
+j=1 t=1
+
+(5.1)
+
+where Yit is a measure of road safety in municipality i in year t for population ages 15 to 19, DrivAbolish is a dummy variable indicating that written tests have been abolished, BothAbolish is a dummy variable indicating that driving tests and also written tests have been abolished,28 Xit is a vector of covariates with which we control for preexisting dierences and confounding factor across municipalities,29 and Y eart is a dummy variable indicating each of the t ∈ [1, 12] years for which we have data. (Statej ∗ Y eart) is an
+interaction that captures state/year specic xed eects. This way we can control for very specic factors
+that cause road trac accidents in each state/year. Finally ci captures municipality specic xed eects, and eit is an error term which we assume to be uncorrelated with any of our independent variables. The
+27We have data for 87 municipalities but we excluded those that implemented written and/or driving tests. Thus we are left
+with 68.
+28We do not observe writing tests being abolished before driving tests are. 29These variables are: rate of RTAs involving people ages 25 to 29, population ages 15 to 19, number of cars registered per 100
+population, motorcycles registered, state's corruption index, political party in the state government, GDP per capita, state's human development index (UNDP, 2010), and male/female rate in population.
+
+23
+
+identication assumption for correctly estimating the eect is strict exogeneity of the regresors conditional
+on ci (Wooldridge, 2002). Robust standard errors are assumed, and they are calculated clustering at the
+state level.
+The coecients of interest are β1 and β2. Both this parameters capture the average eect of abolishing
+written test and driving tests respectively on road safety measures within a municipality in a year. These are intent to treat eects (ITT), this is, the eect of having certain mix of requirements at a municipality disregarding how many people actually get their licenses. For example, it could be that imposing driving tests will discourage licensure or encourage getting it elsewhere where tests are not mandatory, both these issues are taken into account as part of the eect since we cannot control for the rate of licensure.
+
+6 Results
+
+6.1 Main Results
+
+We now turn to the results of our estimations. Table 6.1 shows our estimation results of equation (5.1)
+
+for two dierent measures of road safety: RTAs and FRTAs per 100K population of ages 15 to 19. The
+
+parameters are estimated using xed eects as well as random eects, but the random eects model is
+rejected by a Hausman tests.30 The parameters of interest, β1 and β2, are on the rst two rows along with
+their standard errors in parenthesis below. We begin by looking at the rst column of Table 6.1 which shows
+
+xed eects estimations for RTA per 100K population of ages 15 to 19. Our results suggest that the ITT
+
+eect of abolishing driving tests is negative, that is, it reduces RTAs. This result is counter-intuitive but
+we cannot reject the null hypothesis that β1 is zero. Written tests abolishment comes only after driving tests have already been abolished (this is what we observe in the data), that is why β2 can only estimate
+the ITT eect of abolishing both tests. This eect is positive indicating that abolishing both tests actually
+
+increases RTAs by an order of 1,800 more accidents per 100,000 population of ages 15 to 19. The rate of
+
+RTAs involving people ages 15 to 19 years old ranges from 0 to 19,000 in our sample, with a mean of 1,523.
+
+This means that the eect of abolishing both tests seems to more than double the rate of accidents, on
+
+average. Perez et al. (2009) in their study of relaxed licensing in Barcelona also found very large eects. In
+
+their study, the relative risk of being injured as a motorcyclist (whose driving tests had been abolished) as
+
+compared to being injured in any other type of vehicle went from negligible to 1.46 and kept growing in the
+subsequent years.31 This eect is similar if we run random eects model as wells as most of the estimates. If
+
+we look at the rest of the parameters we observe that they are consistent with the literature on road safety.
+
+A higher corruption index, which may be considered as a proxy for willingness to bribe the authorities into
+
+not taking the tests is related to more accidents. Similar results where found in other studies like Anbarci
+
+et al. (2006), Bertrand et al. (2007), Hua et al. (2010), and Vereeck et al. (2007). Also, a higher GDP per
+
+capita is related to higher casualties as found by Bishai et al. (2006) and Kopits & Crooper (2005) for the
+
+case of developing countries like Mexico.
+
+If we look at columns 3 and 4 in Table 6.1 we observe the estimation of equation (5.1) again, but for the
+
+case of FRTAs per 100K population of ages 15 to 19. We do this to learn if there is an eect on mortality
+
+rates rather than only on the frequency of accidents. The mean value of fatal road trac accident per 100K
+
+30 31
+
+Null hypothesis that random eects is consistent is rejected at the 1% level. χ424 = 348.67
+By the third year it had grown to 1.77, meaning that the probability of being injured as a
+
+p − value = 0.0000
+motorcyclist was almost
+
+double.
+
+24
+
+population in our age group is 16.7 per municipality per year. Again we observe a negative eect of abolishing
+driving tests but when we consider the abolition of both tests the eect is clearly positive. Abolishing both
+tests is related to an increase of 55 FRTAs per municipality, as compared to those who have both tests.
+Again this is a large eect, meaning that abolition of both tests more than triples FRTAs in a municipality, on average.
+
+Table 6.1 RTAs and FRTAs per 100k population of ages 15 to 19.
+
+Zd ϭϱϭϵ
+
+&ĂƚĂů Zd ϭϱϭϵ
+
+&ŝǆĞĚ ĨĨĞĐƚƐ ZĂŶĚŽŵ ĨĨĞĐƚƐ
+
+&ŝǆĞĚ ĨĨĞĐƚƐ ZĂŶĚŽŵ ĨĨĞĐƚƐ
+
+;ϭͿ
+
+;ϮͿ
+
+;ϯͿ
+
+;ϰͿ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ƌŝǀŝŶŐ ƚĞƐƚ ĂďŽůŝƐŚĞĚ
+
+Ͳϭϳϯ͘ϭ
+
+Ͳϭ͕Ϭϭϱ͘ϴ
+
+Ͳϭϵ͘Ϭϳ
+
+Ͳϱ͘ϵϯ
+
+;Ϯϭϲ͘ϵͿ
+
+;ϱϳϯ͘ϱͿ
+
+;ϰ͘ϲϲͿ
+
+;ϳ͘ϮϵͿ
+
+ŽƚŚ ƚĞƐƚƐ ĂďŽůŝƐŚĞĚ
+
+ϭ͕ϴϬϭ͘ϱ
+
+ϭ͕ϵϳϭ͘ϲ
+
+ϱϱ͘ϲϰ
+
+Ϯϰ͘ϯϮ
+
+;ϱϰϯ͘ϮͿ
+
+;ϴϭϱ͘ϭͿ
+
+;ϭϳ͘ϭϬͿ
+
+;ϵ͘ϬϱͿ
+
+Zd ϮϱϮϵ
+
+ͲϬ͘ϯϰ
+
+ͲϬ͘ϯϯ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+;Ϭ͘ϮϰͿ
+
+;Ϭ͘ϮϰͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+WŽƉƵůĂƚŝŽŶϭϱϭϵ
+
+ͲϬ͘Ϭϭ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+;Ϭ͘ϬϮͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+ĂƌƐ ƌĞŐ͘ ƉͬϭϬϬ ƉŽď
+
+ϵ͘ϴϴ
+
+ϭϴ͘Ϯϳ
+
+Ϭ͘ϰϰ
+
+Ϭ͘ϲϵ
+
+;Ϯϳ͘ϱϯͿ
+
+;ϮϬ͘ϴϵͿ
+
+;Ϭ͘ϯϱͿ
+
+;Ϭ͘ϯϯͿ
+
+ŵŽƚŽƌĐǇĐůĞƐ ƌĞŐŝƐƚĞƌĞĚ
+
+ͲϱϲϮ͘Ϯ
+
+Ͳϰϲϰ͘Ϭ
+
+Ͳϯϲ͘Ϯϲ
+
+Ͳϴ͘ϵϵ
+
+;ϭϴϴ͘ϭͿ
+
+;ϭϴϬ͘ϬͿ
+
+;ϭϮ͘ϴϯͿ
+
+;ϯ͘ϵϱͿ
+
+ŽƌƌƵƉƚŝŽŶ ŝŶĚĞǆ
+
+ϭϱϱ͘ϱ
+
+ϮϮϲ͘Ϯ
+
+ϲ͘ϭϰ
+
+ͲϬ͘ϬϮ
+
+;ϰϭ͘ϳͿ
+
+;ϱϰ͘ϳͿ
+
+;Ϭ͘ϴϲͿ
+
+;ϭ͘ϮϵͿ
+
+WE
+
+Ͳϭϰϭ͘ϳ
+
+Ϯ͕ϴϳϳ͘ϭ
+
+Ͳϭϱ͘ϴϮ
+
+ϯϳ͘ϳϮ
+
+;ϯϲϳ͘ϴͿ
+
+;ϵϬϳ͘ϭͿ
+
+;ϱ͘ϲϳͿ
+
+;ϭϭ͘ϬϵͿ
+
+WZ/
+
+ϵϮϲ͘ϰ
+
+ϯ͕ϬϳϬ͘Ϯ
+
+ϭϭ͘ϰϲ
+
+ϯϯ͘ϴϳ
+
+;ϯϭϲ͘ϭͿ
+
+;ϴϲϱ͘ϳͿ
+
+;ϴ͘ϬϮͿ
+
+;ϭϭ͘ϬϲͿ
+
+'W ƉĞƌ ĐĂƉŝƚĂ
+
+ϯ͘ϲϴ
+
+ͲϮϮ͘ϴϭ
+
+Ϭ͘ϭϲ
+
+ͲϬ͘ϯϯ
+
+;Ϭ͘ϱϴͿ
+
+;ϭϯ͘ϬϯͿ
+
+;Ϭ͘ϬϰͿ
+
+;Ϭ͘ϭϰͿ
+
+,/
+
+Ͳ
+
+ϯ͕ϱϳϲ͘ϳ
+
+Ͳ
+
+Ͳϴϭ͘ϳϬ
+
+Ͳ
+
+;ϱ͕ϳϮϰ͘ϲͿ
+
+Ͳ
+
+;ϭϯϳ͘ϬϴͿ
+
+ZĂƚĞ DĂůĞͬ&ĞŵĂůĞ
+
+ͲϭϮϬ͘ϵ
+
+Ͳϭϲϱ͘ϱ
+
+ϯ͘Ϯϴ
+
+Ͳϭ͘ϱϮ
+
+;ϭϭϳ͘ϭͿ
+
+;ϴϬ͘ϳͿ
+
+;ϳ͘ϵϮͿ
+
+;Ϭ͘ϳϴͿ
+
+ŽŶƐƚĂŶƚ
+
+ϭϬ͕ϰϲϬ͘Ϭ
+
+ϭϭ͕ϭϲϳ͘ϯ
+
+Ͳϯϲϰ͘Ϯ
+
+ϮϮϳ͘ϵ
+
+;ϭϭ͕ϱϯϱ͘ϲͿ
+
+;ϵ͕ϳϬϵ͘ϵͿ
+
+;ϳϲϴ͘ϰͿ
+
+;ϵϵ͘ϮͿ
+
+zĞĂƌ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+;^ƚĂƚĞΎzĞĂƌͿ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+ZΔϮ
+
+Ϭ͘ϱϴ
+
+Ϭ͘ϲϳ
+
+Ϭ͘ϮϬ
+
+Ϭ͘Ϯϭ
+
+E
+
+ϴϭϲ
+
+ϴϭϲ
+
+ϴϭϲ
+
+ϴϭϲ
+
+Source: Author's own estimation. Standard errors are in parenthesis. Robust standard errors are assumed, clustered at the state level.
+
+We are interested in knowing what happens with our results if we do not control for state/year xed eects, and also if the eect that we nd is translated into population of all ages, or if it only exists for population ages 15 to 19 years old. First, because our results are so dierent than those of Grabiszewski & Horenstein (2011) while we are both looking at the same phenomena during practically the same sample years, we argue that including a large set of controls is vital to correctly identify the eect. Second, because we are looking only at a specic age group, we are interested in knowing if the eect is also present for the
+
+25
+
+whole population. We would expect there to be a smaller eect that could be explained by two interrelated factors: 1) the fact that youngsters put such a heavy load on RTAs which makes the eect still visible when we analyze population of all ages; 2) the fact that there are spillover eects, i.e., youngsters that do not have to pass a written and/or driving tests make the roads more dangerous for everyone and not only for them.
+To test for the rst hypothesis we simply estimate the eect without including state/year xed eects. Results are found in the rst two columns of Table 6.2. We observe that most of the coecients change
+substantially, including the two most interesting ones for this study: β1 and β2. This calls for the importance
+of adding state/year dummy controls in order to correctly identify the eect of driver's license requirements on road safety. To test whether the eect is present for the whole population we estimated equation (5.1) for RTAs per 100K population of all ages (column 3) and RTAs per 100K population population of all ages minus people of ages 15 to 19 (column 4). Abolishing both tests again increases the rate of RTAs but the eect is about a fth of the eect for youngsters only. If we subtract RTAs involving people of ages 15 to 19 the eect is reduced even more but is still positive and statistically signicant. Hence, it seems that both, the heavy load of youngsters on RTAs and spillover eects are relevant when analysing the whole driving population.
+26
+
+Table 6.2 RTAs and fatal RTAs per 100k population (all ages)
+
+Zd ϭϱϭϵ
+
+&ĂƚĂů Zd ϭϱϭϵ
+
+Zd
+
+&ŝǆĞĚ ĨĨĞĐƚƐ &ŝǆĞĚ ĨĨĞĐƚƐ
+
+&ŝǆĞĚ ĨĨĞĐƚƐ
+
+;ϭͿ
+
+;ϮͿ
+
+;ϯͿ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ƌŝǀŝŶŐ ƚĞƐƚ ĂďŽůŝƐŚĞĚ
+
+ϭ͕ϭϰϮ͘Ϯϳ
+
+ϭ͘ϴ
+
+Ͳϵ͘ϲϲ
+
+;ϳϳϬ͘ϬϬͿ
+
+;ϱ͘ϱϴͿ
+
+;ϰϳ͘ϱϵͿ
+
+ŽƚŚ ƚĞƐƚƐ ĂďŽůŝƐŚĞĚ
+
+Ͳϭ͕ϴϳϴ͘ϱ
+
+ͲϭϮ͘ϲ
+
+ϰϬϱ͘ϳ
+
+;ϳϳϮ͘ϴϳͿ
+
+;ϲ͘ϯϳͿ
+
+;ϳϮ͘ϵϮͿ
+
+Zd ϮϱϮϵ
+
+ͲϬ͘ϯϲ
+
+Ϭ͘ϬϬ
+
+Ϭ͘Ϯϯ
+
+;Ϭ͘ϭϵͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϰͿ
+
+WŽƉƵůĂƚŝŽŶϭϱϭϵ
+
+ͲϬ͘ϬϮ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+;Ϭ͘ϬϮͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+ĂƌƐ ƌĞŐ͘ ƉͬϭϬϬ ƉŽď
+
+ϰ͘ϯϭ
+
+Ϭ͘ϭϱ
+
+ϱ͘ϯϰ
+
+;ϭϭ͘ϯϵͿ
+
+;Ϭ͘ϮϬͿ
+
+;ϱ͘ϱϰͿ
+
+ŵŽƚŽƌĐǇĐůĞƐ ƌĞŐŝƐƚĞƌĞĚ
+
+ͲϮϳϱ͘ϱ
+
+Ͳϴ͘ϵ
+
+Ͳϱϰ͘ϰ
+
+;ϭϱϱ͘ϮͿ
+
+;ϰ͘ϵͿ
+
+;ϰϮ͘ϱͿ
+
+ŽƌƌƵƉƚŝŽŶ ŝŶĚĞǆ
+
+ϭϯ͘ϳϰ
+
+ͲϬ͘ϭϱ
+
+ϭϵ͘ϰϯ
+
+;ϯϰ͘ϲϴͿ
+
+;Ϭ͘ϯϱͿ
+
+;ϵ͘ϲϱͿ
+
+WE
+
+ͲϲϮ͘Ϯ
+
+ϭϱ͘ϵ
+
+ͲϭϬϬ͘Ϭ
+
+;ϮϳϮ͘ϭϬͿ
+
+;ϭϮ͘ϬͿ
+
+;ϲϯ͘ϯϮͿ
+
+WZ/
+
+ϮϭϮ͘ϭϮ
+
+ϭϱ͘ϳ
+
+ϳϯ͘ϰϴ
+
+;Ϯϯϰ͘ϳϴͿ
+
+;ϭϭ͘ϰͿ
+
+;ϰϳ͘ϵϯͿ
+
+'W ƉĞƌ ĐĂƉŝƚĂ
+
+Ͳϭ͘ϭϭ
+
+Ϭ͘Ϭϰ
+
+ϭ͘Ϭϯ
+
+;Ϯ͘ϳϬͿ
+
+;Ϭ͘ϬϭͿ
+
+;Ϭ͘ϭϯͿ
+
+,/
+
+Ͳ
+
+Ͳ
+
+Ͳ
+
+Ͳ
+
+Ͳ
+
+Ͳ
+
+ZĂƚĞ DĂůĞͬ&ĞŵĂůĞ
+
+ͲϮϬϱ͘ϱϮ
+
+Ͳϰ͘ϳϬ
+
+Ͳϭϲ͘Ϯϱ
+
+;ϭϳϴ͘ϬϳͿ
+
+;Ϯ͘ϮϯͿ
+
+;ϭϲ͘ϳϲͿ
+
+ŽŶƐƚĂŶƚ
+
+Ϯϭ͕ϵϬϲ͘ϴ
+
+ϰϳϴ͘Ϯ
+
+ϭ͕ϮϳϬ͘ϱ
+
+;ϭϳ͕Ϯϯϱ͘ϮͿ
+
+;Ϭ͕Ϯϭϳ͘ϯͿ
+
+;ϭ͕ϲϯϬ͘ϯͿ
+
+zĞĂƌ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+Zd Ͳ Zd ϭϱϭϵ &ŝǆĞĚ ĨĨĞĐƚƐ
+;ϰͿ ŽĞĨͬ͘;^͘͘Ϳ
+Ͳϴ͘ϴϲ ;ϰϰ͘ϵϰͿ Ϯϲϳ͘ϱϰ ;ϳϮ͘ϯϭͿ
+Ϭ͘Ϯϵ ;Ϭ͘ϬϰͿ Ϭ͘ϬϬ ;Ϭ͘ϬϬͿ ϰ͘ϲϬ ;ϲ͘ϰϭͿ Ͳϴ͘ϵϲ ;ϯϵ͘ϯϮͿ ϴ͘Ϯϲ ;ϭϬ͘ϳϲͿ Ͳϭϭϱ͘ϲϭ ;ϱϵ͘ϰϴͿ ͲϮϲ͘ϰϭ ;ϰϵ͘ϲϴͿ Ϭ͘ϳϲ ;Ϭ͘ϭϬͿ
+Ͳ Ͳ Ͳϯ͘ϱϲ ;ϭϮ͘ϴϭͿ ϭϯϰ͘ϴ ;ϭϮϬϱ͘ϲͿ zĞƐ
+
+;^ƚĂƚĞΎzĞĂƌͿ ĚƵŵŵŝĞƐ
+
+EŽ
+
+EŽ
+
+zĞƐ
+
+zĞƐ
+
+ZΔϮ
+
+Ϭ͘ϭϳ
+
+Ϭ͘Ϭϳ
+
+Ϭ͘ϳϱ
+
+Ϭ͘ϳϵ
+
+E
+
+ϴϭϲ
+
+ϴϭϲ
+
+ϴϭϲ
+
+ϴϭϲ
+
+Source: Author's own estimation. Standard errors are in parenthesis. Robust standard errors are assumed, clustered at the state level.
+
+In summary, we nd that abolishing driving tests while maintaining everything else unchanged is related with an increase in RTAs and FRTAs among population of ages 15 to 19. Regarding written tests less can be said since abolition of written test is always preceded by the abolition driving tests, but we observe that municipalities that have abolished all kinds of tests have on average more accidents and also more fatal ones. Of course, since this is an ITT eect it captures the eect of changing the requirements for obtaining a driver's license in the municipality and not necessarily the pure eect of performing written and/or driving tests on road safety. Other factors like the rate of licensure may be aected than in turn have an eect on road safety. Finally, we observe that our estimations hold if we focus on the whole driving population instead of just the age group that we think is relevant. But these estimates are smaller, thus inferring that our choice of age group is in fact relevant in order to nd the eect of abolishing written and/or driving tests.
+27
+
+6.2 Confounders and threats to identication
+Despite all of this, valid concerns regarding our estimations include the following:
+1. The data set on the status of the requirements was constructed by ourselves relying on phone calls and law records, this is subject to measurement error. A way of addressing this issue would be to count with better data regarding the changes in policy.
+2. We are not able to control for the rate of licensing which may be crucial to these policy changes. People may decide to go elsewhere to get their license or even drive without a license if written and/or driving tests are being applied. Knowing how people change their behavior toward licensure once tests have been abolished is crucial to understand the treatment on the treated eect.
+3. We do not know if people involved in an accident even had a license nor if he was driving outside of his municipality of residence. We are only able to estimate the intent to treat eect of a change in the requirements regarding driver's licenses in the municipalities area of inuence.
+4. There are reasons to believe that the eect may not necessarily be immediate, this is, aecting the rate of accidents in the immediate next period that the change in policy. It would be important to study the dynamics behind it in order to determine for how many periods does it last and when does it peak.
+Next, we explore a way of dealing with concerns about people driving in a dierent municipality other than where they obtained their license and the persistence of the eect in the years ahead. Also, we conduct various falsication tests in order to asses the validity of our estimates.
+7 Robustness and additional empirical checks
+We begin this section by doing a falsication test. It consists on estimating the eect of diver's license requirements on a dierent age group for which we suspect that there should be no eect, or the minimum spillover eect. This is RTAs per 100K women aged 35 to 39. This age group holds one of the lowest mean
+accident rates in our sample.32 We expect β1 and β2 to be non dierent from zero or very close to zero. We nd just that, β1 is not statistically dierent from zero and β2 is very small and only marginally statistically
+dierent from zero. The results from this exercise are found on Table 7.1 in the rst column. The magnitude of the eect of abolishing both tests is one sixth of the estimate for youngsters. Thus we can conclude that the eect of requirements on road safety is possibly the largest on the relevant age group (youngsters) and
+what we observe in other age groups are just spillovers.33
+Another exercise consist on estimating equation (5.1) using a dierent dependent variable, this is RTAs involving people of ages 15 to 19 per 100K vehicles registered instead of per population in that age group. The results from this exercise are found on Table 7.1 in the last two columns. This is to rule out the possibility that the results are driven by the choice of our dependent variable, this is, driven by population. We observe that the signs of the estimates are the same as in the original estimation. Magnitudes are naturally dierent
+32The mean value of RTAs per 100K women of ages 35 to 39 is a fourth of the mean of RTAs per 100K population and 1/12
+of the the mean of RTAs per 100K population of ages 15 to 19.
+33Also possible is that there are other factors dierent from written and/or driving tests that are correlated with RTAs (and
+tests) which we are not being able to identify.
+28
+
+since our dependent variable now measures a slightly dierent thing and the precision with which these estimates are measured is very low. We can conclude that although our estimates are not driven by the choice of the dependent variable, the choice of the dependent variable allows us to estimate the eect in a
+more precise way.34
+
+Table 7.1 RTAs per 100k women ages 35 to 39 and RTA1519 per 100k vehicles registered.
+
+Zd ϯϱϯϵ tŽŵĞŶ KŶůǇ
+
+Zd ϭϱϭϵ ƉĞƌ ϭϬϬŬ ǀĞŚŝĐůĞƐ
+
+&ŝǆĞĚ ĨĨĞĐƚƐ ZĂŶĚŽŵ ĨĨĞĐƚƐ
+
+&ŝǆĞĚ ĨĨĞĐƚƐ ZĂŶĚŽŵ ĨĨĞĐƚƐ
+
+;ϭͿ
+
+;ϮͿ
+
+;ϯͿ
+
+;ϰͿ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ŽĞĨͬ͘;^͘͘Ϳ
+
+ƌŝǀŝŶŐ ƚĞƐƚ ĂďŽůŝƐŚĞĚ
+
+ϰϬ͘ϴϯ
+
+Ͳϯϴ͘ϴϮ
+
+ͲϮϯϴ͘ϴ
+
+Ͳϱϭϳ͘ϰ
+
+;ϱϯ͘ϮϳͿ
+
+;ϳϵ͘ϰϮͿ
+
+;ϮϵϮ͘ϴͿ
+
+;ϱϴϳ͘ϴͿ
+
+ŽƚŚ ƚĞƐƚƐ ĂďŽůŝƐŚĞĚ
+
+Ϯϴϱ͘ϲ
+
+Ͳϱϯ͘Ϭϴ
+
+ϵϯϭ͘ϲ
+
+ϭ͕Ϯϯϯ͘ϰ
+
+;ϭϬϯ͘ϬͿ
+
+;ϵϵ͘ϯϲͿ
+
+;ϱϳϳ͘ϭͿ
+
+;ϴϲϮ͘ϵͿ
+
+Zd ϮϱϮϵ
+
+Ϭ͘ϭϬ
+
+Ϭ͘ϭϭ
+
+ͲϬ͘ϮϬ
+
+ͲϬ͘ϭϵ
+
+;Ϭ͘ϬϮͿ
+
+;Ϭ͘ϬϮͿ
+
+;Ϭ͘ϭϯͿ
+
+;Ϭ͘ϭϯͿ
+
+WŽƉƵůĂƚŝŽŶϭϱϭϵ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+Ϭ͘ϬϬ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+;Ϭ͘ϬϬͿ
+
+ĂƌƐ ƌĞŐ͘ ƉͬϭϬϬ ƉŽď
+
+ϰ͘ϳϱ
+
+ϰ͘ϳϰ
+
+Ͳϰϰ͘ϴϳ
+
+Ͳϭϳ͘ϯϯ
+
+;ϰ͘ϲϵͿ
+
+;ϯ͘ϱϱͿ
+
+;ϯϰ͘ϯϳͿ
+
+;Ϯϭ͘ϳϭͿ
+
+ŵŽƚŽƌĐǇĐůĞƐ ƌĞŐŝƐƚĞƌĞĚ
+
+ͲϮϴ͘ϭ
+
+ͲϯϬ͘Ϭ
+
+Ͳϭϱϳ͘ϳϮ
+
+Ͳϴ͘ϭϮ
+
+;ϱϳ͘ϳͿ
+
+;ϯϮ͘ϵͿ
+
+;Ϯϳϯ͘ϰͿ
+
+;ϭϲϮ͘ϰͿ
+
+ŽƌƌƵƉƚŝŽŶ ŝŶĚĞǆ
+
+ϭϳ͘Ϯϰ
+
+Ͳϯϲϭ͘ϵ
+
+ϲϰ͘ϭϵ
+
+ϵϯ͘ϳϵ
+
+;ϳ͘ϭϯͿ
+
+;ϭϬ͘ϲϮͿ
+
+;ϯϴ͘ϬϲͿ
+
+;ϳϵ͘ϭϭͿ
+
+WE
+
+Ͳϲϴ͘ϲϲ
+
+ͲϮ͕Ϭϭϲ͘Ϯ
+
+Ͳϭϲϱ͘ϲ
+
+ϭ͕ϱϯϱ͘ϲ
+
+;ϱϮ͘ϬϰͿ
+
+;ϭϱϭ͘ϯͿ
+
+;ϯϵϱ͘ϵͿ
+
+;ϭϯϭϭ͘ϮͿ
+
+WZ/
+
+ϭϬϲ͘ϱ
+
+ͲϮ͕ϰϵϲ͘ϯ
+
+ϭϯϳ͘ϳ
+
+ϭ͕ϲϲϵ͘ϭ
+
+;ϰϳ͘ϮϭͿ
+
+;ϭϱϯ͘ϯͿ
+
+;ϯϬϳ͘ϬͿ
+
+;ϭϯϲϭ͘ϯͿ
+
+'W ƉĞƌ ĐĂƉŝƚĂ
+
+Ϭ͘ϱϳ
+
+ϱϯ͘ϱϵ
+
+ϭ͘ϱϮ
+
+ͲϮ͘ϳϮ
+
+;Ϭ͘ϭϳͿ
+
+;ϭ͘ϮϳͿ
+
+;ϭ͘ϬϲͿ
+
+;ϵ͘ϳϱͿ
+
+,/
+
+Ͳ
+
+ͲϲϵϬ͘ϴ
+
+Ͳ
+
+ϯϭϬ͘ϯ
+
+Ͳ
+
+;ϭ͕Ϯϱϰ͘ϴͿ
+
+Ͳ
+
+;ϲϰϰϱ͘ϱͿ
+
+ZĂƚĞ DĂůĞͬ&ĞŵĂůĞ
+
+ϭϭ͘ϲϴ
+
+ϭϬ͘Ϯϴ
+
+ϳϴ͘ϴϲ
+
+ͲϳϬ͘ϯϵ
+
+;ϯϳ͘ϭϭͿ
+
+;ϵ͘ϴϭͿ
+
+;ϮϬϮ͘ϮͿ
+
+;ϵϭ͘ϳϰͿ
+
+ŽŶƐƚĂŶƚ
+
+Ͳϭ͕ϳϬϲ͘ϳ
+
+ϮϳϬ͘ϱ
+
+Ͳϳ͕ϰϴϴ͘ϵ
+
+ϱ͕Ϯϵϲ͘Ϯ
+
+;ϯ͕ϲϴϯ͘ϮͿ
+
+;ϭ͕ϰϳϬ͘ϴͿ
+
+;ϭϵϳϲϬ͘ϳͿ
+
+;ϭϭϰϳϱ͘ϮͿ
+
+zĞĂƌ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+;^ƚĂƚĞΎzĞĂƌͿ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+ZΔϮ
+
+Ϭ͘ϲϬ
+
+Ϭ͘ϲϬ
+
+Ϭ͘ϱϴ
+
+Ϭ͘ϱϳ
+
+E
+
+ϴϭϲ
+
+ϴϭϲ
+
+ϴϬϲ
+
+ϴϬϲ
+
+Source: Author's own estimation. Standard errors are in parenthesis. Robust standard errors are assumed, clustered at the state level.
+
+Next we exploit the time series structure of our data to test whether the eect is maintained throughout time, this is, if the eect can be found in past and in future realizations of our variables. Along with this we run a falsication tests to test if the eect is present when nobody in our age group is old enough to legally drive. The rst column in Table 7.2 shows our original estimates of RTAs per 100k population of ages 15 to 19 in order to make comparisons. The second column presents the results of estimating equation (5.1) with
+four lags in the dependent variable (RT A1519i,t−4). This is our falsication tests, in t − 4 the age group is
+34Maybe because data on population is less prone to measurement error than data on registered vehicles.
+
+29
+
+composed of people whose ages range from 11 to 15 years old. The minimum age to get a driving permit in Mexico is 16, so there is no one in this age group who is legally allowed to drive. For this reason we believe that there should be no eect of abolishing any tests on this group's rate of accidents. In fact this is exactly
+what we nd, both β1 and β2 are very small in magnitude and are not statistically dierent from zero.
+On the other side, we would except the eect of abolishing written and/or driving tests to remain after a few years, since some of the people in our age group are only then becoming able to legally drive. The third column of Table 6.4 shows the results of estimating equation (5.1) with two leads in the dependent variable
+(RT A1519i,t+2).35 In t + 2 our age group is composed of people whose ages range from 17 to 21 years old. We observe that the eect of abolishing both tests (β2) is almost the same as our original estimates. The
+rest of the estimates vary only a little bit.
+Finally, we perform an alternative specication to see if we can estimate something closer to the treatment on the treated (TOT) eect. The last column in Table 6.4 is an estimation of equation (5.1) excluding the municipalities of Mexico City and the state of Puebla. After a visual inspection of our data we observe that, given the proximity of these municipalities to other municipalities where tests are non mandatory, these are
+likely to be the municipalities where the incentives to get your license elsewhere are higher.36 For the rest of
+the country, the municipalities where you do not have to pass any test are further apart from those where test are mandatory. We expect that, if getting your license elsewhere is a large enough issue, then excluding
+these municipalities would correct our estimates (upward or downward).37 If this is not a big issue then the
+estimates would be the same without these municipalities. We observe that both of our estimates β1 and β2
+rise in absolute value which is a sign that these issues do play role in the eect of abolishing written and/or driving tests.
+35The choice of leads is arbitrary, results are similar in (t+1) and (t+3). 36The maps needed to make this analysis are found in the appendix. 37If drivers who got their license elsewhere (where tests are non mandatory) are a non negligible proportion of all drivers we
+would expect estimates to be higher, for example. 30
+
+Table 7.2 RTAs per 100k population of ages 15 to 19. Regression on lags and leads of the dependent variable
+
+and alternative specication.
+
+Zd ϭϱϭϵ
+
+Zd ϭϱϭϵ ;ƚͲϰͿ Zd ϭϱϭϵ ;ƚнϮͿ
+
+Zd ϭϱϭϵΎ
+
+&ŝǆĞĚ ĨĨĞĐƚƐ &ŝǆĞĚ ĨĨĞĐƚƐ &ŝǆĞĚ ĨĨĞĐƚƐ &ŝǆĞĚ ĨĨĞĐƚƐ
+
+;ϭͿ ŽĞĨͬ͘;^͘͘Ϳ
+
+;ϮͿ ŽĞĨͬ͘;^͘͘Ϳ
+
+;ϯͿ ŽĞĨͬ͘;^͘͘Ϳ
+
+;ϰͿ ŽĞĨͬ͘;^͘͘Ϳ
+
+ƌŝǀŝŶŐ ƚĞƐƚ ĂďŽůŝƐŚĞĚ
+
+Ͳϭϳϯ͘ϭ ;Ϯϭϲ͘ϵͿ
+
+ϭϯϮ͘ϴ ;ϴϱ͘ϴϯͿ
+
+ͲϱϭϬ͘ϯ ;ϭϱϳ͘ϬͿ
+
+ͲϮ͕ϱϬϭ͘Ϭ ;ϯϱϲ͘ϬͿ
+
+ŽƚŚ ƚĞƐƚƐ ĂďŽůŝƐŚĞĚ Zd ϮϱϮϵ WŽƉƵůĂƚŝŽŶϭϱϭϵ ĂƌƐ ƌĞŐ͘ ƉͬϭϬϬ ƉŽď
+
+ϭ͕ϴϬϭ͘ϱ ;ϱϰϯ͘ϮͿ ͲϬ͘ϯϰ ;Ϭ͘ϮϰͿ ͲϬ͘Ϭϭ ;Ϭ͘ϬϮͿ
+ϵ͘ϴϴ ;Ϯϳ͘ϱϯͿ
+
+Ͳϱ͘ϵϱ ;ϭϱϮ͘ϮͿ
+Ϭ͘Ϭϯ ;Ϭ͘ϯϬͿ ͲϬ͘Ϭϭ ;Ϭ͘ϬϮͿ ͲϮ͘ϴϰ ;Ϯϳ͘ϬϴͿ
+
+ϭ͕ϳϱϮ͘Ϭ ;Ϯϲϲ͘ϭͿ ͲϬ͘ϭϭ ;Ϭ͘ϭϮͿ
+Ϭ͘ϬϬ ;Ϭ͘ϬϮͿ Ϯϴ͘ϵϯ ;ϭϴ͘ϱϵͿ
+
+ϰ͕Ϯϰϲ͘ϲ ;ϳϴϱ͘ϳͿ ͲϬ͘ϯϭ ;Ϭ͘ϮϰͿ
+Ϭ͘ϬϬ ;Ϭ͘ϬϯͿ Ϯϯ͘Ϯϯ ;ϯϲ͘ϬϮͿ
+
+ŵŽƚŽƌĐǇĐůĞƐ ƌĞŐŝƐƚĞƌĞĚ ŽƌƌƵƉƚŝŽŶ ŝŶĚĞǆ WE WZ/
+
+ͲϱϲϮ͘Ϯ ;ϭϴϴ͘ϭͿ ϭϱϱ͘ϱ ;ϰϭ͘ϳͿ Ͳϭϰϭ͘ϳ ;ϯϲϳ͘ϴͿ ϵϮϲ͘ϰ ;ϯϭϲ͘ϭͿ
+
+ϲϮ͘Ϭ ;Ϯϯϲ͘ϲͿ ϭϭϮ͘ϵ ;ϭϳ͘ϳϰͿ Ͳϱϱϴ͘ϳ ;ϲϲ͘ϰͿ Ͳϭ͕ϱϴϳ͘ϯ ;ϭϬϮ͘ϮͿ
+
+Ͳϯϱϳ͘ϲ ;ϭϬϲ͘ϯͿ ϱϲ͘ϮϬ ;Ϯϱ͘ϰϲͿ Ͳϴϯϴ͘ϰ ;ϭϴϰ͘ϮͿ ϰϰϴ͘ϵ ;ϭϱϱ͘ϴͿ
+
+Ͳϰϭϲ͘ϭ ;ϳϰϲ͘ϮͿ Ͳϰϱϯ͘ϳ ;ϯϱ͘ϯͿ ϭϮϬ͘ϳ ;ϯϳϲ͘ϵͿ ϭ͕ϭϳϱ͘ϴ ;ϰϰϲ͘ϲͿ
+
+'W ƉĞƌ ĐĂƉŝƚĂ ,/ ZĂƚĞ DĂůĞͬ&ĞŵĂůĞ
+
+ϯ͘ϲϴ ;Ϭ͘ϱϴͿ
+Ͳ Ͳ ͲϭϮϬ͘ϵ ;ϭϭϳ͘ϭͿ
+
+Ͳϭ͘ϰϳ ;Ϭ͘ϮϵͿ
+Ͳ Ͳ Ͳϵϭ͘Ϯϵ ;ϮϬϬ͘ϰϬͿ
+
+ϭ͘ϭϵ ;Ϭ͘ϯϲͿ
+Ͳ Ͳ Ͳϯϴϭ͘ϲϴ ;ϳϱ͘ϬͿ
+
+ϭ͘ϯϭ ;ϭ͘ϱϳͿ
+Ͳ Ͳ ϭ͘ϵϵ ;ϭϲϳ͘ϴͿ
+
+ŽŶƐƚĂŶƚ
+
+ϭϬ͕ϰϲϬ͘Ϭ ;ϭϭ͕ϱϯϱ͘ϲͿ
+
+ϭϬ͕ϯϯϳ͘ϭ ;ϭϴ͕Ϯϰϭ͘ϰͿ
+
+ϯϲ͕ϯϳϳ͘ϲ ;ϳϭϬϭ͘ϱͿ
+
+ϯ͕ϭϬϯ͘ϲ ;ϭϳϭϲϰ͘ϬͿ
+
+zĞĂƌ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+;^ƚĂƚĞΎzĞĂƌͿ ĚƵŵŵŝĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+zĞƐ
+
+ZΔϮ
+
+Ϭ͘ϱϴ
+
+Ϭ͘ϲϱ
+
+Ϭ͘ϳϬ
+
+Ϭ͘ϲϮ
+
+E
+
+ϱϰϰ
+
+ϴϭϲ
+
+ϴϬϲ
+
+ϲϮϰ
+
+Source: Author's own estimation. Standard errors are in parenthesis. Robust standard errors are assumed, clustered at the state level. *Equation estimated excluding the municipalities in Mexico City and in the state of Puebla.
+
+8 Conclusions
+In conclusion, we have found that given the nature of the Mexican decentralized legislation towards road trac, the variation among the dierent requirements needed to obtain a driver's license can be seen as exogenous to road safety. This allows us to estimate the eect of requirements such as written and driving tests on the rate of road trac accidents and on the rate of fatal road trac accidents. We estimate these eects for youngsters as well as for population of all ages. Our main result is that the abolition of such tests is related to an increase of road trac accidents and fatal road trac accidents in youngsters, and in a smaller magnitude for population of all ages. A possible explanation for this could be the existence of spillovers eects given that the high risk group (youngsters) coexists with all other age group in the roads.
+31
+
+These results are rather robust to dierent specications
+Our analysis is not free of caveats. The fact that we constructed the database of the dierent requirements in each of the municipalities by ourselves relying on phone calls to DMV oces and law records found online and at the university's library makes it very prone to measurement error. One possible way of improving this study would be to verify the data on these requirements. Another issue concerns the data on road trac accidents which does not contain information on the driver's license or his place of residence, nor do we have data on the rate of licensure in each municipality. We have reasons to believe that implementing tests to new drivers changes the rate of licensure. Being able to correct for this issue could improve the estimation since we were only able to estimate an intent to treat (ITT) eect of the change in requirements on road safety measures.
+9 Appendix
+. 32
+
+Figure 9.1 Municipalities who perform and who do not perform driving tests.
+
+ĐĂƉƵůĐŽ ĚĞ :ƵĄƌĞǌ ŐƵĂƐĐĂůŝĞŶƚĞƐ ŚŽŵĞ ůǀĂƌŽ KďƌĞŐſŶ ƉŽĚĂĐĂ ƚŝǌĂƉĄŶ ĚĞ ĂƌĂŐŽǌĂ ǌĐĂƉŽƚǌĂůĐŽ ĂũĂ ĂůŝĨŽƌŶŝĂ ^Ƶƌ ;ƐƚĂƚĞͿ ĞŶŝƚŽ :ƵĄƌĞǌ ĞŶŝƚŽ :ƵĄƌĞǌ ĂũĞŵĞ ĂŵƉĞĐŚĞ ĄƌĚĞŶĂƐ ĞůĂǇĂ ĞŶƚƌŽ ŚŝŚƵĂŚƵĂ ŚŝŵĂůŚƵĂĐĄŶ ŽĂĐĂůĐŽ ĚĞ ĞƌƌŝŽǌĄďĂů ŽĂƚǌĂĐŽĂůĐŽƐ ŽůŝŵĂ ;ƐƚĂƚĞͿ ŽǇŽĂĐĄŶ ƵĂƵŚƚĠŵŽĐ ƵĂƵƚŝƚůĄŶ /ǌĐĂůůŝ ƵĞƌŶĂǀĂĐĂ ƵůŝĂĐĄŶ ƵƌĂŶŐŽ ĐĂƚĞƉĞĐ ĚĞ DŽƌĞůŽƐ ŶƐĞŶĂĚĂ 'ſŵĞǌ WĂůĂĐŝŽ 'ƵĂĚĂůĂũĂƌĂ 'ƵĂĚĂůƵƉĞ 'ƵĂƐĂǀĞ 'ƵƐƚĂǀŽ ͘ DĂĚĞƌŽ ,ĞƌŵŽƐŝůůŽ /ƌĂƉƵĂƚŽ /ǆƚĂƉĂůƵĐĂ /ǌƚĂĐĂůĐŽ /ǌƚĂƉĂůĂƉĂ :ƵĄƌĞǌ >Ă DĂŐĚĂůĞŶĂ ŽŶƚƌĞƌĂƐ >ĞſŶ DĂƚĂŵŽƌŽƐ DĂǌĂƚůĄŶ DĠƌŝĚĂ DĞǆŝĐĂůŝ DŝŐƵĞů ,ŝĚĂůŐŽ DŽŶƚĞƌƌĞǇ DŽƌĞůŝĂ EĂƵĐĂůƉĂŶ ĚĞ :ƵĄƌĞǌ EĞǌĂŚƵĂůĐſǇŽƚů EŝĐŽůĄƐ ZŽŵĞƌŽ EƵĞǀŽ >ĂƌĞĚŽ KĂǆĂĐĂ ĚĞ :ƵĄƌĞǌ KƚŚſŶ W͘ ůĂŶĐŽ WĂĐŚƵĐĂ ĚĞ ^ŽƚŽ WƵĞďůĂ YƵĞƌĠƚĂƌŽ ZĞǇŶŽƐĂ ^ĂůĂŵĂŶĐĂ ^ĂůƚŝůůŽ ^ĂŶ >ƵŝƐ WŽƚŽƐş ^ĂŶ EŝĐŽůĄƐ ĚĞ ůŽƐ 'ĂƌǌĂ ^ĂŶƚĂ ĂƚĂƌŝŶĂ dĂŵƉŝĐŽ dĂƉĂĐŚƵůĂ dĞŚƵĂĐĄŶ dĞƉŝĐ dŝũƵĂŶĂ důĄŚƵĂĐ důĂůŶĞƉĂŶƚůĂ ĚĞ Ăǌ důĂůƉĂŶ důĂƋƵĞƉĂƋƵĞ důĂǆĐĂůĂ ;ƐƚĂƚĞͿ dŽůƵĐĂ dŽŶĂůĄ dŽƌƌĞſŶ dƵůƚŝƚůĄŶ dƵǆƚůĂ 'ƵƚŝĠƌƌĞǌ hƌƵĂƉĂŶ sĂůůĞ ĚĞ ŚĂůĐŽ ^ŽůŝĚĂƌŝĚĂĚ sĞŶƵƐƚŝĂŶŽ ĂƌƌĂŶǌĂ sĞƌĂĐƌƵǌ sŝĐƚŽƌŝĂ yĂůĂƉĂ yŽĐŚŝŵŝůĐŽ ĂĐĂƚĞĐĂƐ ;ƐƚĂƚĞͿ ĂƉŽƉĂŶ
+
+ϭϵϵϳ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ Ͳ y y y Ͳ y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ y Ͳ Ͳ
+
+ϭϵϵϴ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ y y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ Ͳ y y y Ͳ y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ y Ͳ y
+
+ϭϵϵϵ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ y y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ y Ͳ Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ y Ͳ y
+
+ϮϬϬϬ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ y y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ Ͳ Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ y Ͳ y
+
+ϮϬϬϭ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ y y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ Ͳ Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ y Ͳ y
+
+ϮϬϬϮ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ y y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ Ͳ Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ y Ͳ y
+
+ϮϬϬϯ Ͳ y y y y Ͳ y Ͳ y y y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ y y y y y y Ͳ y y Ͳ y y y y y y y y y Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ Ͳ Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ y Ͳ y
+
+ϮϬϬϰ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ Ͳ Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y
+
+ϮϬϬϱ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ Ͳ Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y
+
+ϮϬϬϲ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ Ͳ Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y
+
+ϮϬϬϳ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y
+
+ϮϬϬϴ Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ Ͳ y Ͳ y Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ Ͳ y Ͳ y Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ Ͳ y Ͳ Ͳ y Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ Ͳ y
+
+Source: Author's. Legend: x means that the test is mandatory and - means that it is not. 33
+
+Figure 9.2 Municipalities who perform and who do not perform written tests.
+
+ĐĂƉƵůĐŽ ĚĞ :ƵĄƌĞǌ ŐƵĂƐĐĂůŝĞŶƚĞƐ ŚŽŵĞ ůǀĂƌŽ KďƌĞŐſŶ ƉŽĚĂĐĂ ƚŝǌĂƉĄŶ ĚĞ ĂƌĂŐŽǌĂ ǌĐĂƉŽƚǌĂůĐŽ ĂũĂ ĂůŝĨŽƌŶŝĂ ^Ƶƌ ;ƐƚĂƚĞͿ ĞŶŝƚŽ :ƵĄƌĞǌ ĞŶŝƚŽ :ƵĄƌĞǌ ĂũĞŵĞ ĂŵƉĞĐŚĞ ĄƌĚĞŶĂƐ ĞůĂǇĂ ĞŶƚƌŽ ŚŝŚƵĂŚƵĂ ŚŝŵĂůŚƵĂĐĄŶ ŽĂĐĂůĐŽ ĚĞ ĞƌƌŝŽǌĄďĂů ŽĂƚǌĂĐŽĂůĐŽƐ ŽůŝŵĂ ;ƐƚĂƚĞͿ ŽǇŽĂĐĄŶ ƵĂƵŚƚĠŵŽĐ ƵĂƵƚŝƚůĄŶ /ǌĐĂůůŝ ƵĞƌŶĂǀĂĐĂ ƵůŝĂĐĄŶ ƵƌĂŶŐŽ ĐĂƚĞƉĞĐ ĚĞ DŽƌĞůŽƐ ŶƐĞŶĂĚĂ 'ſŵĞǌ WĂůĂĐŝŽ 'ƵĂĚĂůĂũĂƌĂ 'ƵĂĚĂůƵƉĞ 'ƵĂƐĂǀĞ 'ƵƐƚĂǀŽ ͘ DĂĚĞƌŽ ,ĞƌŵŽƐŝůůŽ /ƌĂƉƵĂƚŽ /ǆƚĂƉĂůƵĐĂ /ǌƚĂĐĂůĐŽ /ǌƚĂƉĂůĂƉĂ :ƵĄƌĞǌ >Ă DĂŐĚĂůĞŶĂ ŽŶƚƌĞƌĂƐ >ĞſŶ DĂƚĂŵŽƌŽƐ DĂǌĂƚůĄŶ DĠƌŝĚĂ DĞǆŝĐĂůŝ DŝŐƵĞů ,ŝĚĂůŐŽ DŽŶƚĞƌƌĞǇ DŽƌĞůŝĂ EĂƵĐĂůƉĂŶ ĚĞ :ƵĄƌĞǌ EĞǌĂŚƵĂůĐſǇŽƚů EŝĐŽůĄƐ ZŽŵĞƌŽ EƵĞǀŽ >ĂƌĞĚŽ KĂǆĂĐĂ ĚĞ :ƵĄƌĞǌ KƚŚſŶ W͘ ůĂŶĐŽ WĂĐŚƵĐĂ ĚĞ ^ŽƚŽ WƵĞďůĂ YƵĞƌĠƚĂƌŽ ZĞǇŶŽƐĂ ^ĂůĂŵĂŶĐĂ ^ĂůƚŝůůŽ ^ĂŶ >ƵŝƐ WŽƚŽƐş ^ĂŶ EŝĐŽůĄƐ ĚĞ ůŽƐ 'ĂƌǌĂ ^ĂŶƚĂ ĂƚĂƌŝŶĂ dĂŵƉŝĐŽ dĂƉĂĐŚƵůĂ dĞŚƵĂĐĄŶ dĞƉŝĐ dŝũƵĂŶĂ důĄŚƵĂĐ důĂůŶĞƉĂŶƚůĂ ĚĞ Ăǌ důĂůƉĂŶ důĂƋƵĞƉĂƋƵĞ důĂǆĐĂůĂ ;ƐƚĂƚĞͿ dŽůƵĐĂ dŽŶĂůĄ dŽƌƌĞſŶ dƵůƚŝƚůĄŶ dƵǆƚůĂ 'ƵƚŝĠƌƌĞǌ hƌƵĂƉĂŶ sĂůůĞ ĚĞ ŚĂůĐŽ ^ŽůŝĚĂƌŝĚĂĚ sĞŶƵƐƚŝĂŶŽ ĂƌƌĂŶǌĂ sĞƌĂĐƌƵǌ sŝĐƚŽƌŝĂ yĂůĂƉĂ yŽĐŚŝŵŝůĐŽ ĂĐĂƚĞĐĂƐ ;ƐƚĂƚĞͿ ĂƉŽƉĂŶ
+
+ϭϵϵϳ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ Ͳ y y Ͳ y Ͳ Ͳ y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ Ͳ
+
+ϭϵϵϴ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ y Ͳ y y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ y
+
+ϭϵϵϵ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ y Ͳ y y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ y
+
+ϮϬϬϬ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ y Ͳ y y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ y
+
+ϮϬϬϭ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ y Ͳ y y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ y
+
+ϮϬϬϮ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ y Ͳ y y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ y
+
+ϮϬϬϯ y y y y y Ͳ y y y y y y Ͳ y Ͳ y Ͳ Ͳ Ͳ y y y Ͳ y y y Ͳ y Ͳ y y y y y y Ͳ y y y y y y y y y y y Ͳ Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y y Ͳ y y y Ͳ y Ͳ Ͳ y Ͳ Ͳ y Ͳ y Ͳ y Ͳ y
+
+ϮϬϬϰ y y y Ͳ y Ͳ Ͳ y Ͳ y y y Ͳ y Ͳ y Ͳ Ͳ y y Ͳ Ͳ Ͳ y y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y y Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ y
+
+ϮϬϬϱ y y y Ͳ y Ͳ Ͳ y Ͳ y y y Ͳ y Ͳ y Ͳ Ͳ y y Ͳ Ͳ Ͳ y y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y y Ͳ Ͳ Ͳ y y y y y y y y Ͳ Ͳ y y y y y Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ y
+
+ϮϬϬϲ y y y Ͳ y Ͳ Ͳ y Ͳ y y y y y y y Ͳ Ͳ y y Ͳ Ͳ Ͳ y y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y y Ͳ Ͳ Ͳ y y y y y y y y Ͳ y y y y y y Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ y
+
+ϮϬϬϳ y y y Ͳ y Ͳ Ͳ y Ͳ y y y y y y y Ͳ Ͳ y y Ͳ Ͳ Ͳ y y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y y Ͳ Ͳ Ͳ y y y y y y y y Ͳ y y y y y y Ͳ y Ͳ Ͳ Ͳ y y Ͳ y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ y
+
+ϮϬϬϴ y y y Ͳ y Ͳ Ͳ y Ͳ y y y y y y y Ͳ Ͳ y y Ͳ Ͳ Ͳ y y y Ͳ y Ͳ y y y Ͳ y y Ͳ Ͳ Ͳ y Ͳ y y y y y Ͳ y y Ͳ Ͳ Ͳ y y y y y y y y Ͳ y y y y y y Ͳ y Ͳ Ͳ Ͳ y Ͳ Ͳ y Ͳ Ͳ y y Ͳ Ͳ y y y Ͳ Ͳ y
+
+Source: Author's. Legend: x means that the test is mandatory and - means that it is not. 34
+
+Figure 9.3 Municipalities who never had, abolished, implemented, and always had driving tests.
+Source: Author's. Legend: 1=Always had, 2=abolished, 3=implemented, and 4=never had. 35
+
+Figure 9.4 Municipalities who never had, abolished, implemented, and always had written tests.
+Source: Author's. Legend: 1=Always had, 2=abolished, 3=implemented, and 4=never had. 36
+
+References
+[1] Anbarci, N., Escaleras, M., & Register, C. (2006). Trac fatalities and public sector corruption. Kyklos, 59(3), 327-344. doi:10.1111/j.1467-6435.2006.00335.x
+[2] Angrist, J. D., & Pischke, J. (2009). Mostly harmless econometrics : An empiricist's companion. Princeton: Princeton University Press.
+[3] Bartels, D., Bhalla, K., Shahraz, S., Abraham, J., Lozano, R., & Murray, C. J. L. (2010). Incidence of road injuries in mexico: Country report. International Journal of Injury Control and Safety Promotion, 17(3), 169-176. doi:10.1080/17457300903564553
+[4] Bertrand, M., Djankov, S., Hanna, R., & Mullainathan, S. (2007). Obtaining a driver's license in india: An experimental approach to studying corruption. Quarterly Journal of Economics, 122(4), 1639-1676. doi:10.1162/qjec.2007.122.4.1639
+[5] Bester, C. J. (2001). Explaining national road fatalities. Accident Analysis & Prevention, 33(5), 663-672. doi:10.1016/S0001-4575(00)00081-6
+[6] Bhalla, K., Shahraz, S., Bartels, D., & Abraham, J. (2009). Methods for developing country level estimates of the incidence of deaths and non-fatal injuries from road trac crashes. International Journal of Injury Control & Safety Promotion, 16(4), 239-248. doi:10.1080/17457300903402184
+[7] Bishai, D., Quresh, A., James, P., & Ghaar, A. (2006). National road casualties and economic development. Health Economics, 15(1), 65-81. doi:10.1002/hec.1020
+[8] Consejo Nacional para la Prevención de Accidentes. (2009). Esto no es un accidente: La memoria del IMESEVI. Mexico D.F.: Consejo Nacional para la Prevención de Accidentes.
+[9] Consejo Nacional para la Prevención de Accidentes. (2010). Situación de la seguridad vial en méxico: Reporte estadístico 2010. Mexico D.F.: Consejo Nacional para la Prevención de Accidentes.
+[10] Elvik, R., & Vaa, T. (2005). The handbook of road safety measures. Amsterdam; San Diego, CA: Elsevier.
+[11] Grabiszewski, K., & Horenstein, A. (2011). Driving tests do not increase road safety: Evidence from mexico. Unpublished manuscript.
+[12] Hagge, R. A., & Romanowicz, P. A. (1996). Evaluation of california's commercial driver license program. Accident Analysis & Prevention, 28(5), 547-559. doi:10.1016/0001-4575(96)00013-9
+[13] Harrington, D. M., & California State Dept of,Motor Vehicles. (1971). The young driver follow-up study: An evaluation of the role of human factors in the rst four years of driving. nal highway research report.
+[14] Hua, L. T., Noland, R. B., & Evans, A. W. (2010). The direct and indirect eects of corruption on motor vehicle crash deaths. Accident Analysis & Prevention, 42(6), 1934-1942. doi:10.1016/j.aap.2010.05.015
+[15] Instituto Nacional de Estadística y Geografía. (2009). Síntesis metodológica de la estadística de accidentes de tránsito terrestre en zonas urbanas y suburbanas. Aguascalientes, Ags.: Instituto Nacional de Estadística y Geografía;.
+37
+
+[16] Jones, A. P., Haynes, R., Kennedy, V., Harvey, I. M., Jewell, T., & Lea, D. (2008). Geographical variations in mortality and morbidity from road trac accidents in england and wales. Health & Place, 14(3), 519-535. doi:10.1016/j.healthplace.2007.10.001
+[17] Kopits, E., & Cropper, M. (2005). Trac fatalities and economic growth. Accident Analysis & Prevention, 37(1), 169-178. doi:10.1016/j.aap.2004.04.006
+[18] Legatek. Leginfor technology S.A. de C.V. Retrieved 04/01, 2012, from http://www.leginfor.com/
+[19] Levy, D. T. (1988). The eects of driving age, driver education, and curfew laws on trac fatalities of 15-17 year olds. Risk Analysis, 8(4), 569-574. doi:10.1111/j.1539-6924.1988.tb01200.x
+[20] Levy, D. T. (1990). Youth and trac safety: The eects of driving age, experience, and education. Accident Analysis & Prevention, 22(4), 327-334. doi:10.1016/0001-4575(90)90048-P
+[21] Lund, A. K., Williams, A. F., & Zador, P. (1986). High school driver education: Further evaluation of the DeKalb county study. Accident; Analysis and Prevention, 18(4), 349-357.
+[22] Lyles, R., Narupiti, S., & Johar, S. (1995). Relationship between CDL tests scores and driver safety. Washington D.C.: 74th Annual Meeting Transportation Research Board.
+[23] Noland, R. B., & Quddus, M. A. (2004). A spatially disaggregate analysis of road casualties in england. Accident Analysis & Prevention, 36(6), 973-984. doi:10.1016/j.aap.2003.11.001
+[24] Odero, W., Garner, P., & Zwi, A. (1997). Road trac injuries in developing countries: A comprehensive review of epidemiological studies. Tropical Medicine & International Health, 2(5), 445-460. doi:10.1111/j.1365-3156.1997.tb00167.x
+[25] Organización Panamericana de la Salud. (2007). Por una mejor seguridad vial en las américas. Washington, D.C.: Organización Panamericana de la Salud.
+[26] Organización Panamericana de la Salud. (2008). Prevención de lesiones causadas por el tránsito. manual de capacitación. Washington D.C.: Organización Panamericana de la Salud.
+[27] Organización Panamericana de la Salud. (2009). Informe sobre el estado de la seguridad vial en la región de las américas. Washington, D.C.: Organización Panamericana de la Salud.
+[28] Page, Y. (2001). A statistical model to compare road mortality in OECD countries. Accident Analysis and Prevention, 33, 371-385. doi:10.1016/S0001-4575(00)00051-8
+[29] Peck, R. C. (2011). Do driver training programs reduce crashes and trac violations?  A critical examination of the literature. IATSS Research, 34(2), 63-71. doi:10.1016/j.iatssr.2011.01.001
+[30] Peltzman, S. (1975). The eects of automobile safety regulation. Journal of Political Economy, 83(4), pp. 677-726. Retrieved from http://www.jstor.org/stable/1830396
+[31] Pérez Correa, C. (2008). Distrust and disobedience: Discourse and practice of law in mexico.. Revista Juridica Universidad De Puerto Rico, Volume 77(Number 2), 345.
+38
+
+[32] Pérez, K., Marí-Dell'Olmo, M., Borrell, C., Nebot, M., Villalbí, J. R., Santamariña, E., et al. (2009). Road injuries and relaxed licensing requirements for driving light motorcycles in spain: A time-series analysis. Bulletin of the World Health Organization, 87(7), 497-504.
+[33] Robertson, L. S. (1980). Crash involvement of teenaged drivers when driver education is eliminated from high school. Am J Public Health, 70(6), 599-603. doi:10.2105/AJPH.70.6.599
+[34] Robertson, L. S., & Zador, P. L. (1978). Driver education and fatal crash involvement of teenaged drivers. Am J Public Health, 68(10), 959-965. doi:10.2105/AJPH.68.10.959
+[35] Rothman, K. J. (1986). Modern epidemiology. Boston, Mass: Little, Brown.
+[36] Rothman, K. J. (2002). Epidemiology, an introduction . New York, NY: Oxford University Press.
+[37] Seaver, W. B., Nichols, J. L., Carlson, W. L., & Voas, R. B. (1979). Driver education and the licensing of 16 and 17 year olds. Journal of Safety Research, 11(2), 50-50-60.
+[38] Secretaría de Gobernación, M. Direccción general de compilación y consulta del orden jurídico nacional.http://ordenjuridico.gob.mx/index.php
+[39] Stock, J. R., Weaver, J. K., Ray, H. W., Brink, J. R., & Sadof, M. G. (1983). Evaluation of safe performance secondary school driver education curriculum demonstration project (Final report No. DOT HS-806 568). Columbus, Ohio: US Department of Transportation, National Highway Trac Safety Administration.
+[40] The Economist. (2011, Road safety in mexico, the lawless roads. how half of mexico ended up without driving tests. The Economist Newspaper Limited,
+[41] United Nations Development programm. (2010). Informe sobre desarrollo humano 2010/ human development report 2010. New York: United Nations Development programm.
+[42] Valenzuela T., M. (2008, Entrevista con arturo cervantes trejo, director general del centro nacional para la prevención de accidentes (CENAPRA). . CESVI MÉXICO Revista Para El Sector Asegurador Reparador y Automotriz, 19, 4.
+[43] Vereeck, L., & Vrolix, K. (2007). The social willingness to comply with the law: The eect of social attitudes on trac fatalities. International Review of Law and Economics, 27(4), 385-408. doi:10.1016/j.irle.2007.07.002
+[44] Vernick, J. S., Li, G., Ogaitis, S., MacKenzie, E. J., Baker, S. P., & Gielen, A. C. (1999). Eects of high school driver education on motor vehicle crashes, violations, and licensure. American Journal of Preventive Medicine, 16(1, Supplement 1), 40-46. doi:10.1016/S0749-3797(98)00115-9
+[45] Wooldridge, J. M.,. (2002). Econometric analysis of cross section and panel data. Cambridge, Mass.: MIT Press. Retrieved from /z-wcorg/
+[46] World Health Organization. (2009). Global status report on road safety : Time for action. Geneva: World Health Organization. Retrieved from /z-wcorg/
+39
+
+[47] World Health Organization., & Peden, M. M. (2004). World report on road trac injury prevention. Geneva: World Health Organization. Retrieved from /z-wcorg/
+40
+
+

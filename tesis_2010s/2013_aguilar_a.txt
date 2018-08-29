@@ -1,0 +1,1135 @@
+MAESTRÍA EN ECONOMÍA
+POLÍTICA FISCAL ESTATAL: UN ESTUDIO EMPÍRICO ALBERTO AGUILAR LÓPEZ PROMOCIÓN 2011-2013
+ASESOR: ALEJANDRO RODRÍGUEZ ARANA
+JULIO, 2013
+
+2
+
+Índice Temático
+I. Introducción ........................................................................................................................ 9 II. Literatura Previa............................................................................................................... 11 III. Metodología.................................................................................................................... 23 IV. Descripción de los Datos ................................................................................................ 27 V. Análisis Econométrico..................................................................................................... 35 VI. Conclusiones .................................................................................................................. 53 VII. Bibliografía ................................................................................................................... 56
+3
+
+Índice de Tablas
+Tabla 1. Estadísticas básicas................................................................................................. 30 Tabla 2. Correlaciones entre la tasa de crecimiento del producto, la inflación y los ingresos y egresos totales. .................................................................................................... 36 Tabla 3. Correlaciones entre las variables macroeconómicas. ............................................. 37 Tabla 4. Estimación lineal estática. ...................................................................................... 39 Tabla 5. Ecuaciones Autoregresivas..................................................................................... 43 Tabla 6. Estimaciones dinámicas. ........................................................................................ 46
+4
+
+Índice de Gráficas
+Gráfica 1. Proporciones respecto a los totales. ..................................................................... 31 Gráfica 2. Proporciones de las variables fiscales en el PIB Real. Fuente: SHCP e INEGI. 32 Gráfica 3. Desempeño macroeconómico promedio a nivel estatal, 1996-2011. Fuente: INEGI y BdeM. .................................................................................................................... 33 Gráfica 4. Relación entre la tasa de crecimiento porcentual promedio del PIB Real y las variables fiscales como porcentaje del PIBR. Fuente: SHCP e INEGI................................ 34 Gráfica 5. Relación entre la inflación promedio y las variables fiscales como porcentaje del PIBR. Fuente: BdeM, SHCP e INEGI.................................................................................. 35 Gráfica 6. Respuestas de las variables macroeconómicas a choques temporales en los ingresos fiscales. ................................................................................................................... 49 Gráfica 7. Respuestas de las variables macroeconómicas a choques temporales en la deuda. .............................................................................................................................................. 50 Gráfica 8. Respuestas de las variables macroeconómicas a choques temporales en el gasto corriente. ............................................................................................................................... 51 Gráfica 9. Respuestas de las variables macroeconómicas a choques temporales en el gasto de inversión. ......................................................................................................................... 51 Gráfica 10. Respuestas de las variables macroeconómicas a choques temporales en las aportaciones. ......................................................................................................................... 52 Gráfica 11. Respuestas de las variables macroeconómicas a choques temporales en las participaciones. ..................................................................................................................... 53
+5
+
+6
+
+Agradecimientos Primero, quiero agradecer a mi Dios: Padre, guía, luz y protección en esta etapa de mi vida. Por
+todo lo que pasé en este tiempo, por dejarme sentir su amor; por fortalecer mi fe; por darme seguridad y protección; y porque mi esfuerzo fue bien recompensado… Gracias, porque logré
+terminar la maestría en Jesús que me fortaleció. A mi madre, por ser mi ejemplo más claro de lo que es la fuerza de voluntad y el amor por la vida. Su apoyo y confianza en mis capacidades fueron fundamentales en las noches de estudio.
+Gracias mami, por estar conmigo en todo momento, y por tu amor y compañía. A mi padre, por enseñarme el valor de la fe en momentos difíciles; por su opinión asertiva, por las charlas nocturnas cuando nos veíamos, y por su oportuno consejo y sus oraciones por mi
+bienestar. Gracias, mi viejito! A mi bebé Euguardo y la loca de su madre: porque en aras de conseguir el grado, me perdí de tantos momentos increíbles de su desarrollo; y porque su risa y su interminable charla son mi
+esperanza y alegría. A la memoria de mi vieja Elvira, que el tercer semestre me privó de estar con ella cuando más me necesitó; y a pesar de ello, la llevo tan dentro de mi corazón, tanto como el dolor tan profundo e irreparable de su pérdida. Este trabajo lleva tu bendición, y mi grado lo dedico a tu recuerdo y compañía, con la ilusión de que en tu descanso recuerdes todos los días que pasamos
+juntos y todo lo que compartimos. Gracias, abuelita. A mi cebollita, Lily: a pesar de todo, estamos juntos, luchamos por lo nuestro, y triunfamos! El futuro nos depara nuevas luchas, pero por hoy, te agradezco por el apoyo y amor incondicional:
+sábete bien correspondida. A todos mis amigos: gracias por soportarme, por su apoyo y comprensión en momentos
+difíciles, en nuestras celebraciones y demás. A mi asesor, que aceptó mi proyecto y me apoyó en todo. Gracias por todo! A todos los familiares y demás amigos: la tía Mady, Cres, Abi, Naty, Checha, Goyita; en fin, todos los que creyeron en mí, que estuvieron cerca de mi familia, o que me ayudaron en algo,
+muchas gracias!
+7
+
+8
+
+I. Introducción
+En esta tesina se estudian los efectos empíricos de la política fiscal sobre el Producto Interno Bruto Real (PIBR), la inflación, la tasa de interés real y el tipo de cambio real, para los 31 estados y el Distrito Federal de México, en el periodo de 1996 a 2011. Para llevar a cabo el análisis, se estiman cuatro ecuaciones y se comparan los resultados entre ellas como con la literatura previa.
+Este trabajo surge ante la ausencia de estudios previos sobre el comportamiento de las economías estatales en México a corto plazo ante cambios fiscales, empleando una metodología econométrica que, en la medida de lo posible, elimine los posibles sesgos que puedan surgir en la estimación. De este modo, el aporte fundamental que se hace es ofrecer valores numéricos del impacto y la temporalidad de la política fiscal.
+Las medidas de política están restringidas a un proceso de decisión en los congresos locales, lo que impone rezagos en su ejecución y limita la reacción de los gobiernos ante choques exógenos. De esta forma, los estados planean sus ingresos y gastos anualmente, con ajustes parciales en el transcurso del año, aunque por su estructura fiscal (esto es, las relaciones entre los ingresos propios, los gastos, las transferencias y la deuda respecto a los ingresos y egresos totales), son considerados como altamente dependientes de los recursos federales, y sumamente discrecionales en la parte correspondiente (permitida por la ley) del gasto; por ello, un aporte fundamental de esta tesina es mostrar los potenciales beneficios que los estados tendrían en términos de un mejor desempeño económico (tasa de crecimiento del producto) si fueran más eficientes en la recaudación, y si se enfocaran a gastar en los rubros con el mayor beneficio marginal.
+La metodología empleada consiste en hacer estimaciones tipo panel de ecuaciones lineales estáticas, ecuaciones autoregresivas, ecuaciones dinámicas y vectores autoregresivos, tomando como regresores las variables de ingresos y gastos por separado, para obtener el impacto promedio de los cambios fiscales en los estados sobre las variables de interés. Explotar las ventajas de la econometría de paneles nos permite controlar por dos sesgos fundamentales:
+9
+
+ Podemos controlar la heterogeneidad no observada de los estados con una estimación que considere efectos fijos, es decir, características individuales que no son medibles y que asumimos constantes en el tiempo, y que a su vez están correlacionadas con las variables explicativas.
+ Podemos controlar la correlación temporal (es decir, la correlación en el tiempo de factores no observados dentro de cada estado) y espacial (la correlación de variables no observadas entre estados) en los datos, y las diferencias en varianza entre secciones; por tanto, los estimadores son, en la medida de lo posible, insesgados y consistentes.
+Los resultados dependen del modelo que se estime, pero en general se confirman entre ellos. En la primera ecuación, se estima el efecto promedio del cambio en los ingresos propios (impuestos, derechos, productos y aprovechamientos), la deuda (financiamiento) y las transferencias federales (aportaciones más participaciones); así como del gasto corriente (servicios personales, materiales y suministros, y servicios generales) y del gasto de inversión (obras públicas y acciones sociales) sobre el PIB real, la inflación, la tasa de interés y el tipo de cambio.
+Se encuentra que un aumento de 1% de los ingresos propios puede incrementar la tasa de crecimiento del PIB real en 2.4%, genera inflación, reduce la tasa de interés y aprecia el tipo de cambio. Las transferencias también aumentan el ritmo de crecimiento del producto, mientras que el gasto, sin importar la fuente, termina por reducirlo. Por su parte, el aumento de 1% de la deuda ejerce un efecto negativo y significativo de 1.17% en la tasa de crecimiento del PIB, con los efectos muy similares a los de los ingresos propios sobre la inflación y la tasa de interés real.
+En la ecuación autoregresiva se estiman los efectos dinámicos de cada variable (esto es, sin regresores). El objetivo es analizar la tendencia, la velocidad del ajuste, el impacto y la persistencia de choques exógenos de los estados. Se encuentra que, en promedio, el efecto de una perturbación en el producto se absorbe con cierta dificultad (al cabo de 2 años), y el ajuste se basa en la reducción de la tasa de crecimiento al año siguiente. Ni la inflación ni la tasa de cambio real se ajustan de manera significativa a choques en los estados, probablemente porque se determinan mediante la política monetaria federal. Ante
+10
+
+un choque exógeno, el tipo de cambio real se ajusta en más de dos años, lo que denota cierta persistencia. Por la parte de las variables fiscales, el gasto, las aportaciones y los ingresos propios denotan cierta inercia creciente, mientras que la deuda y las participaciones exhiben el comportamiento contrario.
+En el tercer modelo, estimamos ecuaciones dinámicas; es decir, hacemos que cada variable macroeconómica dependa de sus rezagos, de las otras variables macroeconómicas y de las variables fiscales; contemporáneas y rezagadas. En general, se confirman algunos resultados de las ecuaciones autoregresivas: una contracción fiscal reduce el producto al corto plazo, aunque en el tiempo el efecto acumulado es positivo. Por el lado del gasto, el efecto acumulado sobre la inflación es positivo, no importando el origen, y el gasto en inversión es el único que aumenta el producto, aunque con rezagos.
+Por último, se estimaron vectores autoregresivos en paneles (PVAR), que contienen las variables macroeconómicas, los ingresos y los gastos, y con estos se estimaron las funciones impulso-respuesta. En general, los resultados previos se confirman, con la ventaja de que podemos ilustrar gráficamente la temporalidad de los cambios fiscales.
+Considerando lo anterior, este estudio se desarrollará de la manera siguiente: la Sección II resumirá la literatura previa sobre los efectos de la política fiscal sobre la economía; en la Sección III se explicará la metodología. En la Sección IV se harán la descripción de los datos y el análisis exploratorio. El análisis econométrico se hará en la Sección V. La sección VI dará las conclusiones.
+II. Literatura Previa
+La literatura sobre los efectos de la política fiscal es amplia y ha sido un tema muy debatido por economistas. Se ha pasado de modelos estáticos, con relaciones entre variables puramente determinísticas, a modelos de complejas ecuaciones dinámicas con términos estocásticos, donde se intenta capturar de la mejor manera posible la reacción de cada agente. A su vez, la disponibilidad de mejores bases de datos ha posibilitado hacer estudios más profundos y desagregados. Dependiendo de la concepción teórica, las recomendaciones de política iban de asignar al gobierno un papel promotor y regulador de
+11
+
+la economía, a ser un proveedor de bienes y servicios públicos, limitado a regular las áreas esenciales y a mantener bajo control algunas variables de la economía.
+Los estudios actuales han demostrado que los efectos de la política fiscal están lejos de ser homogéneos en todas las economías del mundo y bajo todos los modelos teóricos; sin embargo, sí se puede concluir que el gobierno tiene la capacidad de incentivar la economía e impulsar el bienestar haciendo uso de las herramientas de política fiscal.
+En general hay dos tipos de estudios: los que proponen modelos teóricos, en los cuales se integra el comportamiento de los agentes mediante funciones de utilidad, funciones de producción y reglas de política fiscal, y donde posteriormente se realizan estimaciones y calibraciones de las ecuaciones principales; sin embargo, no hay un acuerdo claro en cuanto a qué modelo seguir y qué supuestos iniciales generarían efectos acordes con la evidencia empírica. Por otra parte, están los análisis empíricos, que son básicamente estudios de caso, en su mayoría a nivel nacional, y que se proponen medir la dinámica intertemporal entre algunas variables macroeconómicas, ante choques de gasto o impuestos.
+Dentro de los estudios teóricos, la literatura es vasta y es donde hay mayor desacuerdo; a continuación veremos algunos artículos representativos de estos conflictos y cómo se han resuelto.
+En su estudio clásico, Baxter y King (Baxter y King 1993) con un modelo de equilibrio general que permite acumulación de capital e inversión, y con datos de Estados Unidos (USA), analizan cuatro medidas de política fiscal: compras del gobierno, inversión y dos tipos de impuestos. Encuentran lo siguiente: 1) Un cambio permanente en las compras de gobierno financiado por impuestos de suma fija (lump-sum) tiene un efecto riqueza negativo sobre los individuos, por lo que éstos reducen su consumo y aumentan su oferta de trabajo, a pesar de que el salario real disminuye; y debido a que el aumento del trabajo como insumo en las empresas incrementa el producto marginal del capital, se tienen efectos de corto y largo plazo sobre la acumulación de capital y la inversión. Al largo plazo, el producto crece más que proporcionalmente como respuesta al choque permanente del gasto; al corto plazo, si la oferta laboral es muy elástica, el multiplicador del producto también puede ser mayor a 1. 2) Las decisiones de financiamiento del gasto son
+12
+
+importantes para obtener ciertos resultados; por ejemplo, el PIB cae en respuesta a compras expansivas cuando éstas se financian por impuestos al ingreso. 3) Los efectos macroeconómicos de la expansión en las compras públicas dependen en gran medida en si éstas afectan directamente los esquemas de producto marginal en las empresas. Si el aumento del capital y la inversión públicos aumentan la productividad del trabajo y el capital privados, las políticas de inversión pública pueden tener efectos positivos importantes en el PIB y la inversión privada.
+Por otro lado, Fatás y Mihov (Fatás y Mihov 2001) comparan los resultados empíricos del análisis de la política fiscal con un pequeño modelo microfundamentado de Ciclos Económicos Reales (RBC), lo estiman y analizan las diferencias entre las predicciones del modelo teórico y las Funciones Impulso Respuesta (IRF's) de un Vector Autoregresivo (VAR), respecto a cambios en impuestos distorsionantes y el déficit, con datos de USA. Primero, encuentran que la expansión del gasto tiene un impacto positivo sobre el producto privado. Segundo, comparan los resultados de las funciones impulsorespuesta con las predicciones básicas de un modelo de ciclos económicos,1 y observan que bajo calibraciones plausibles de los parámetros, el consumo no se reduce. Encuentran un efecto ambiguo de la respuesta de la inversión privada al gasto.
+Ante tales diferencias teóricas y empíricas por la respuesta del consumo ante choques de gasto público, Galí y otros (Galí, López-Salido y Vallés 2007) desarrollan un Modelo de Equilibrio General Dinámico Estocástico Neokeynesiano (DSGE)2 con el que buscan reconciliar las predicciones teóricas con la evidencia empírica sobre el consumo. Analizan los efectos del gasto público financiado con deuda sobre el consumo en Estados Unidos, con dos tipos de consumidores: uno con horizonte infinito (Ricardiano) y otro tal que su ingreso es igual al consumo en cada periodo (Keynesiano, cuyo consumo depende exclusivamente de su ingreso corriente, y no puede ahorrar). Encuentran que en presencia
+1 Como en Baxter y King, el aumento del gasto implica que el consumo se reduce por un efecto riqueza negativo. 2 Los modelos de equilibrio general dinámico estocástico (DSGEM) son, de manera general, teorías del funcionamiento de la economía en un contexto de equilibrio general, determinando explícitamente ecuaciones del comportamiento de los agentes y de la política macroeconómica (microfundamentos), agregando incertidumbre, rigideces de precios y ciclos económicos (Durlauf, Steven N.; Blume, Lawrence E. 2008).
+13
+
+de rigideces en los precios, la expansión del gasto aumenta la demanda agregada, las empresas reaccionan aumentando su demanda de trabajo, lo que aumenta el salario real (pues los precios están fijos al corto plazo), que deriva en el aumento del ingreso de los consumidores à-la-Keynes, y por tanto, su consumo. A nivel agregado, éstos pueden compensar el efecto riqueza negativo del choque fiscal. Por el lado de la inversión, hay un efecto ambiguo. Además, postulan que las desviaciones teóricas del comportamiento Ricardiano en el consumo son importantes para obtener resultados consistentes con los datos.
+Por otra parte, Forni y otros (Forni, Monteforne y Sessa 2008) estiman un DSGE para la zona Euro empleando métodos bayesianos y haciendo calibraciones de algunos parámetros. Cuentan, además, con una nueva base de datos con más y mejores medidas de los impuestos, las compensaciones laborales y el consumo. Emplean, al igual que Galí y otros (2007), consumidores Ricardianos y Keynesianos. Encuentran que a pesar de que los choques fiscales son persistentes, las compras del gobierno y las compensaciones hacia sus empleados tienen impactos positivos pero reducidos en magnitud y persistencia sobre el consumo privado, mientras que el aumento de transferencias hacia hogares tiene un efecto mayor y más duradero. Los choques fiscales tienen un mayor efecto y persistencia por el lado de los impuestos: una reducción en las tasas impositivas del ingreso laboral y el consumo aumenta considerablemente el consumo y el ingreso, mientras que una reducción a la tasa sobre el ingreso de capital favorece a la inversión y al producto al mediano plazo. Las compras del gobierno tienen un impacto positivo en el consumo, los salarios reales y el empleo privado, donde los primeros dos efectos no se encuentran en los modelos RBC.
+En la misma línea teórica, Bilbiie y otros (Bilbiie, Meier y Müller 2008) analizan los mecanismos de transmisión de los choques fiscales en la economía. Con datos de dos periodos distinto (1957-79 y 1983-2004), estiman VAR's, y encuentran que los choques del gasto público sobre el PIB, el consumo y los salarios son positivos y persistentes en el primer periodo, pero algo más reducidos en el segundo. Resuelven un modelo DSGE, lo calibran y estiman y comparan las IRF's de cada periodo. Concluyen que la política fiscal tiene efectos menos expansivos en el segundo periodo, debido a la inclusión financiera de amplios sectores de la población, a los cambios en la política monetaria (los periodos de
+14
+
+Volcker y Greenspan) y a un mayor déficit como forma de financiamiento del gasto. Este estudio es distinto a los anteriores en el sentido de que considera que los efectos de otras políticas económicas pueden condicionar la respuesta de los agentes ante una política determinada. En este sentido, los efectos que encuentran reflejan en mayor medida los choques y las restricciones al comportamiento que enfrentan los agentes cotidianamente, en un entorno dinámico y probabilístico; además de que muestran que la respuesta a una determinada política no es la misma a lo largo del tiempo, por lo que se deben revalorar los instrumentos de política constantemente.
+En general, estas han sido dos de las formas teóricas dominantes de modelar la respuesta de la economía a los cambios en la política fiscal en la actualidad, aunque la agenda es muy amplia; como ejemplos tenemos las investigaciones de la interacción de la política fiscal y monetaria, donde Muscatelli et al (Muscatelli, Tirelli y Trecroci 2004) estiman un modelo DSGE para la inflación y el PIB junto con reglas de política fiscal y monetaria, con datos trimestrales entre 1970 y 2001 en USA, y encuentran que la relación entre ambas políticas depende del tipo de choque que reciba la economía: para choques de producción, ambas políticas se armonizan, pero para choques de precios se hacen sustitutivas; además, en presencia de inercia, la política fiscal tiene efectos negativos sobre el bienestar. Hall y Rae (Hall y Rae 1998) analizan la interacción de las políticas fiscal, monetaria y laboral en el marco de una pequeña economía abierta; encuentran que la prima sobre riesgo del tipo de interés puede tener efectos estabilizadores, que una reducción en los impuestos puede suavizar el ciclo del PIB y la inflación más eficientemente que un aumento del gasto. Por último, en esta línea de investigación, Faini et al (Fainni, Duranton y Hau 2006) parte de comparar la relación entre los choques fiscales y el su efecto sobre la tasa de interés y el tipo de cambio (alza en ambos casos) en la Unión Monetaria Europea; y encuentran que una expansión fiscal aumenta tanto el spread de tasas del país que emite la política, como el tipo de interés de toda la zona, lo que implica la existencia de un fuerte y significativo canal de transmisión, y estos efectos son más importantes en países con un elevado nivel de deuda.
+La investigación sobre la política fiscal óptima ha sido un área activa y pionera en la teoría económica. Por ejemplo, Werning (Wening 2007) modela una economía dinámica
+15
+
+bajo dos escenarios de impuestos: uno lineal con impuesto de suma fija, y otro no lineal àla-Mirrlees; y busca la regla óptima para fijar impuestos en presencia heterogeneidad en el trabajo debida a productividad y choques tecnológicos: con utilidad separable e isoelástica, el gobierno elegiría una combinación de deuda e impuestos de suma fija, y en presencia de heterogeneidad en el trabajo, se escoge una tasa fija de impuestos. Kirsanova y otros (Kirsanova, y otros 2007), por su parte, analizan si la política fiscal tiene efectos estabilizadores bajo una unión monetaria. Emplean un modelo dinámico neokeynesiano, con persistencia inflacionaria y consumidores no Ricardianos; derivan reglas óptimas y encuentran que si la política fiscal reacciona para estabilizar los choques únicamente en el producto, habría una pérdida de bienestar; pero si la política responde a choques considerando conjuntamente las diferencias de cada país y de la unión en inflación y el producto o los términos de intercambio entre países, entonces se tendrían efectos positivos sobre el bienestar, que aumentan conforme a la persistencia de la inflación.
+Por otro lado, Saez (Saez 2012) desarrolla reglas de imposición progresiva óptima sobre las ganancias de capital, es decir, formula reglas para fijar impuestos para niveles altos de ingreso, y analiza sus efectos redistributivos al tiempo que resuelve el dilema de eficiencia y equidad de este esquema tributario. Fuchs y Guesnerie (Fuchs y Guesnerie 1983) introducen un bien público y analizan las condiciones en las cuales su financiamiento con un impuesto al consumo sería compatible con el equilibrio de mercado y un presupuesto público balanceado; su estudio tiene implicaciones de incidencia y de carácter normativo.
+Como vemos, el diseño de impuestos óptimos es un tema amplio y depende del ambiente en el cual se introduce el esquema fiscal. El mayor esfuerzo ha sido mostrar las condiciones de existencia, continuidad y estabilidad de un sistema de impuestos o de una regla fiscal, que minimice las ineficiencias en la economía y al mismo tiempo sea sustentable y compatible con los objetivos de gasto del gobierno.
+Sobre los efectos del déficit fiscal, varios estudios han planteado el tema en términos de las consecuencias del déficit. Por ejemplo Lin y Chu (Lin y Chu 2013) emplean una metodología novedosa: estiman una regresión cuantil en paneles bajo una especificación de rezagos distribuidos, para analizar la relación entre la inflación y el déficit
+16
+
+de 91 países entre 1960 y 2006. Encuentran que el déficit fiscal se asocia positiva y significativamente con la inflación en periodos donde ésta es más elevada, y las políticas enfocadas en reducir el déficit y la deuda (consolidación fiscal) serán más efectivas tanto mayor sea la inflación. Se demuestra nuevamente que la política fiscal tiene un margen de estabilización macroeconómica más allá de los objetivos redistributivos. Estos resultados son consistentes con lo que postulan Catao y Terrones (Catao y Terrones 2005), quienes llegan a conclusiones similares con datos de 107 países entre 1960 y 2001, aunque la relación entre el déficit y la inflación se mantiene solo para economías en desarrollo. Kim y Rubini (Kim y Rubini 2008) analizan otro efecto del déficit fiscal: su relación con el déficit de cuenta corriente. Estudian el caso de Estados Unidos, y usando un VAR encuentran un efecto contrario a lo que se creía: el déficit presupuestal del gobierno mejora la cuenta corriente de la balanza de pagos y deprecia el tipo de cambio real; y como explicación alterna a la aparente "divergencia" de ambos déficits está la presencia de choques persistentes sobre el producto.
+Los estudios de incidencia tal vez fueron de los primeros que se hicieron sobre el análisis de los efectos de la política fiscal. Berheim (Bernheim 1982) estudia la incidencia dinámica de un impuesto a la nómina en un modelo de crecimiento, y desarrolla el patrón de ajuste entre el estado estacionario previo al impuesto y el resultante, y concluye que los efectos de largo plazo son los más importantes. Martínez-Vázquez (Martínez-Vázquez 1982) hace una aplicación metodológica que usa la demanda individual de un bien público para medir la incidencia de un impuesto. Los resultados sobre el presupuesto de la Cd. De San Luis, USA, en 1972, indican la existencia de un impacto redistributivo.
+Por su parte, Harberger (Harberger 1962) analiza la incidencia del impuesto al ingreso corporativo en equilibrio general, y hace la aplicación para Estados Unidos. Se analizan los efectos de corto y largo plazo y la redistribución de recursos entre los sectores corporativo y no corporativo. Casi una década antes, Due (Due 1953) debatió sobre la incidencia de otro impuesto: a las ventas. Separa los determinantes de la reacción de los agentes al impuesto en dos: (1) Efectos sobre los precios y cantidades finales, dados los precios de los factores; (2) Efecto sobre los precios de los factores. Trata de establecer los
+17
+
+requerimientos básicos que debería tomar en cuenta una teoría general de la incidencia del impuesto a las ventas.
+Sobre las reformas fiscales, diversos estudios analizan sus efectos bajo equilibrio general, pues esto permite modelar los cambios en precios y cantidades de todos los sectores de la economía. Chamley (Chamley 1985), por ejemplo, modela el efecto de tener impuestos al consumo y a los ingresos de capital y trabajo bajo equilibrio general, considerando algunas restricciones que no habían sido estudiadas hasta ese momento: agentes optimizadores, precios de factores endógenos y una alternativa de second-best como medida del costo en términos de eficiencia debida al impuesto. El autor analiza las consecuencias de un esquema fiscal con impuestos constantes, las ganancias de cambiarlos en el tiempo, y las ganancias en términos de bienestar de la reforma impositiva, además, obtiene algunas tasas de impuestos óptimas. Hamilton y Whalley (Hamilton y Whalley 1989), se enfocan en los impuestos indirectos en Canadá, y analizan en equilibrio general las consecuencias de una reforma fiscal sobre impuestos sobre las ventas, a nivel federal y estatal. Estos autores encuentran que la redefinición del impuesto sobre las ventas tiene efectos pequeños y positivos sobre el bienestar. Por último, Boyd y Newman (Boyd 1991) analizan los efectos de la reforma de impuestos de 1986 sobre el uso de tierra en Estados Unidos (forestal y tres clases de agricultura); encuentran que la reforma reduce el valor añadido total de la producción en los sectores de uso de tierra más que en otros sectores de la economía, debido a los cambios en los precios relativos de los insumos y los bienes finales en cada sector; aunque los efectos que hallaron (en equilibrio general) son menores que los de equilibrio parcial.
+Tenemos, además, la enorme y relativamente reciente literatura empírica de los efectos de la política fiscal. Debemos recordar que, en este caso, los estudios empíricos buscan poner a prueba los resultados teóricos, y dependiendo de la metodología, podemos obtener estimaciones relativamente libres de sesgos del impacto de las innovaciones fiscales sobre la economía. Los objetivos principales de este tipo de análisis son: (1) Mostrar las interconexiones dinámicas de las variables macroeconómicas con las fiscales; y (2) Estimar sus efectos de corto y largo plazo. No se trata de establecer relaciones causales, se busca comprender el comportamiento temporal. Por lo regular, se hacen estudios de caso
+18
+
+(países, impuestos específicos), y se comparan con las predicciones teóricas y con lo encontrado en otros estudios similares. Un estudio muy ilustrativo sobre algunas formas de estudiar empíricamente los efectos de la política fiscal lo encontramos en Perotti y otros (2007).3
+Uno de los estudios que reinsertó el debate de los efectos de la política fiscal en años recientes es el de Blanchard y Perotti (Blanchard y Perotti 2002). Los autores analizan los efectos dinámicos de los choques de política fiscal en Estados Unidos, usando un Vector Autoregresivo Estructural (SVAR).4 La estimación principal se basa en tres variables: producto, impuestos y gastos, se imponen restricciones de identificación y se obtienen las funciones impulso-respuesta para el periodo de postguerra. Los autores encuentran que el consumo privado es consistentemente desplazado ante un aumento en los impuestos, e impulsado por gasto público. La inversión privada se reduce tanto por gasto público como, en menor medida, por impuestos, lo que implica un efecto negativo neto. Además, cuando el gasto aumenta, el PIB también lo hace, al contrario con impuestos. Mientras que los efectos sobre el producto son totalmente consistentes con la visión Keynesiana, la respuesta de la inversión es, señalan los autores, consistente con un modelo neoclásico con impuestos distorsionantes.
+Siguiendo la metodología anterior, Heppke-Falk y otros (Heppke-Falk, Tenhofen y Wolff 2006) estiman los efectos de choques fiscales en Alemania; empleando datos trimestrales desde 1974 hasta 2004. Concluyen que por el lado del gasto, una expansión aumenta el producto y el consumo, y reduce la inversión privada. La inversión pública aumenta el producto y tiene un efecto que dura por 12 trimestres. Por el lado de los impuestos, los choques expansivos no afectan significativamente al producto; y cuando se separan en categorías, los impuestos directos reducen el producto y los indirectos no son significativos.
+3 (Perotti, Reis y Ramey 2007). 4 Los Vectores Autoregresivos Estructurales son sistemas de ecuaciones autoregresivas en series de tiempo, que consideran que la estructura de las innovaciones del modelo está basada en relaciones teóricas entre las variables endógenas. Una excelente referencia introductoria al tema es Enders (Enders 2009).
+19
+
+El caso de España es analizado por de Castro y Hernández (de Castro y Hernández de Cos 2007). Los autores examinan los efectos de choques fiscales exógenos en España con un SVAR. Encuentran que el aumento del gasto aumenta el producto y la inflación al corto plazo, aunque el multiplicador es apenas mayor a 1; y al mediano plazo se incrementa el déficit y se reduce el producto. Curiosamente, encuentran que un alza de los impuestos netos puede aumentar el producto al corto plazo, aunque el efecto se revierte en el tiempo. Al largo plazo, el gasto tiene el efecto esperado de generar inflación, y los impuestos tienen el efecto contrario. El tipo de cambio real se reduce a consecuencia de un choque fiscal, tal vez como resultado del alza en los precios contemporánea. Concluyen que la política fiscal tiene margen para incentivar la economía al corto plazo a costa de inflación y déficit público al mediano plazo.
+Giordano y otros (Giordano, y otros 2007) hacen lo propio en Italia, con datos trimestrales entre 1982 y 2004 y una metodología muy similar. Encuentran que un choque positivo de gasto aumenta el PIB solo hasta 3 trimestres posteriores, con persistencia de 2 años; los efectos también son positivos sobre el consumo, el empleo y la inversión (este último punto es contrario a Blanchard y Perotti (2002)).
+Para el caso Mexicano, tenemos que Cuevas (Cuevas Ahumada 2009) hace la aplicación metodológica con datos mensuales desde 1996 hasta 2008 para las siguientes variables: déficit fiscal, gasto público, impuestos, la base monetaria, la tasa de interés de los CETES a 28 días, el tipo de cambio real efectivo, el Índice de Precios al Consumidor (IPC), el IGAE5 y la balanza comercial. El autor encuentra que una expansión fiscal dada por una reducción en los impuestos aumenta la oferta monetaria, los precios y la tasa de interés, y deprecia el tipo de cambio. La moneda se deprecia como efecto de percepción de aumento de riesgo país; el producto aumenta y se deteriora la balanza comercial.
+5 Medido por el INEGI: “El Indicador Global de Actividad Económica (IGAE) muestra la evolución de la actividad económica del país, con periodicidad mensual y una oportunidad prevista entre 57 y 60 días después de concluido el mes de referencia. Para la elaboración del Indicador se utiliza el esquema conceptual y metodológico de la contabilidad nacional, mismo que sigue el cálculo del Producto Interno Bruto (PIB) trimestral. Así, el IGAE se expresa mediante un índice de volumen físico base 2003=100”. Fuente: (INEGI 2013).
+20
+
+Un artículo que emplea una metodología similar a la que se usará en este estudio es el de McCarty y Schmidt (McCarty y Schmidt 1997). Los autores analizan a nivel estatal la interrelación dinámica de seis categorías de gasto en Estados Unidos. Encontraron que las innovaciones positivas en algún rubro de gasto no alteran significativamente el comportamiento futuro de algún otro; lo que se justifica directamente con impuestos futuros, más que la reducción en otras clases de gasto.
+Por otra parte, Barro y Redlick (Barro y Redlick 2009) hacen un estudio tipo VAR para la economía de Estados Unidos, para el periodo de posguerra, en el que analizan cómo es que el gasto en defensa y los impuestos al ingreso afectan la inversión y el producto; además, obtienen los respectivos multiplicadores, que resultaron menores a uno y aumentan ante cambios fiscales permanentes. Para el caso del gasto en defensa, el multiplicador implica un efecto desplazamiento sobre el producto, principalmente a través de la inversión. El consumo en bienes no durables y servicios aumenta muy poco. El aumento de la tasa promedio del impuesto marginal al ingreso reduce significativamente el producto. El canal principal por el que los impuestos afectan al producto es por un efecto sustitución. Prevalecen dos resultados: (1) Los distintos instrumentos de política fiscal tienen efectos diversos sobre la economía; y (2) El impacto de los cambios fiscales puede ser menor de lo que en general se esperaría.
+Bouakez & Rebei (Bouakez y Rebei 2007) tratan de estimar el efecto del gasto sobre el consumo. El artículo es un estudio para Estados Unidos entre 1948 y 2005, con un modelo tipo RBC donde las preferencias de las personas también dependen del gasto, y los hogares tienen hábitos. Encuentran que hay complementariedad entre gasto público y privado, y esto posibilita un efecto positivo del gasto sobre el consumo, contrario a los modelos RBC, que pronostican un efecto negativo. Los autores dan una explicación alterna a lo planteado por Galí y otros (2007). No requieren de consumidores Keynesianos; en cambio, explotan la complementariedad del gasto con la formación de hábitos (el consumo sigue un proceso autoregresivo) y la dependencia de la utilidad al gasto público: las innovaciones del gasto aumentan la utilidad marginal del consumo, lo que incentiva a los hogares a trabajar más para aumentar su riqueza, y este efecto, por tanto, podría compensar la reducción del ingreso permanente del consumidor Ricardiano. El requisito fundamental
+21
+
+es que los gastos privado y público sean fuertemente complementarios, lo cual está sujeto a discusión y validez empírica.
+Un enfoque distinto lo ofrece Rodden (Rodden 2002). El autor analiza los efectos de las instituciones sobre el desempeño fiscal de los subgobiernos (estados y municipios) de 43 casos en 33 países miembros de la OCDE entre 1986 y 1996. Se encuentra que los gobiernos locales que tienen libertad de gasto y/o endeudamiento, junto con una alta dependencia de transferencias (justo como ocurre en el caso mexicano), incurren en grandes y persistentes déficits y requieren rescate del gobierno central. Ajeno a los posibles problemas y sesgos en la estimación, el artículo es valioso por dos puntos: (1) introduce las instituciones como una causa del comportamiento fiscal del gobierno, más allá de las funciones de redistribución, provisión o asignación que clásicamente se le confieren (Musgrave 1989); y (2) Aporta evidencia sobre el desempeño de los gobiernos locales, con una metodología similar a la empleada en este trabajo, y específicamente trabaja la relación de las transferencias, y logra identificar un efecto negativo de una mayor asignación de recursos desde el gobierno central en el desempeño de los subgobiernos.
+Por último, un estudio clásico y sumamente importante es el que desarrollaron HolzEakin y otros (Holtz-Eakin, Newey y Rosen 1989). Primero, los autores son pioneros en la metodología: contribuyeron al desarrollo de una nueva forma para hacer estimaciones de ecuaciones dinámicas con datos de panel; y luego, midieron la sincronía entre los ingresos y gastos de los gobiernos municipales de Estados Unidos entre 1972 y 1980. Analizando causalidad Granger, encuentran que el comportamiento de los ingresos pasados ayuda a explicar el comportamiento de los gastos actuales, pero no al revés; que las innovaciones fiscales no son tan persistentes (duran 1 o 2 años), y que las estimaciones que consideran relaciones contemporáneas están sesgadas toda vez que no se pueden descartar los nexos intertemporales entre los gastos y los ingresos. El primer resultado está en controversia con lo hallado por Furstenberg y otros (von Furstenberg, Green y Jeong, Tax and Spend, or Spend and Tax? 1986), quienes encuentran justo lo contrario; aunque la metodología es algo distinta, lo que hace sus resultados relativamente poco comparables. Sin embargo, en un artículo de los mismos autores y publicado un año antes (von Furstenberg, Green y Jeong, Have Taxes Led Government Expenditures? The United States as a Test Case 1985),
+22
+
+se hace un estudio también para gobiernos locales y a nivel federal, similar al de HoltzEakin y otros, donde ya habían llegaron a la misma conclusión [los gastos pasados fomentan los ingresos actuales; la relación inversa no es significativa]; además, encontraron que las innovaciones de transferencias tienden a desestimular el esfuerzo recaudatorio de los gobiernos locales.
+A grandes rasgos, estas son algunas corrientes principales sobre la investigación económica de los efectos de la política fiscal sobre la economía. El debate es considerable, hay cierto desacuerdo teórico y los efectos no son tan homogéneos ni triviales. Se desprenden dos grandes lecciones: (1) La política fiscal tiene margen de acción en la economía que no es descartable ni evidente de primera mano; y (2) La política fiscal debe diseñarse cuidadosamente, considerando: i). Que se obtengan en la medida de lo posible los efectos deseados en el tiempo preciso; ii). Que se tenga margen para responder a efectos no previstos y a la reacción de la economía al largo plazo; y iii). La política fiscal se debe diseñar de manera óptima, dinámica e interrelacionada con las demás herramientas de política económica.
+III. Metodología
+En esta sección se describirán las cuatro distintas ecuaciones que se estimarán a lo largo del análisis empírico. De cada ecuación se desprenderán dos estimaciones, una con variables de gasto, y otra con variables de ingresos. En la literatura es común poner estas variables juntas, (una como tasa de cambio y otra en niveles, por ejemplo). Sin embargo, lo que se hará en este trabajo será analizar cada herramienta de la política fiscal por separado, y posteriormente en conjunto como ejercicio de robustez, pero cabe hacer la aclaración de que los ingresos propios para el caso mexicano a nivel estatal, en el mejor de los casos, en promedio apenas alcanzan el 9% de los ingresos totales en las entidades; lo que les resta eficacia y por lo que sería más útil considerar el comportamiento de las transferencias, la deuda y el gasto. El primer conjunto de ecuaciones a estimar está dado por:
+Donde yi,t es la variable macroeconómica de interés y x es vector de variables independientes, que incluye a las variables fiscales y a las demás variables
+23
+
+macroeconómicas; el término captura el efecto individual y constante en el tiempo para el i-ésimo estado, y señala el efecto de tendencia, que suponemos es constante entre paneles.
+Estamos interesados en obtener el valor estimado de γ de manera consistente e insesgada. Este estimador nos indica el cambio que sufre la variable dependiente yi,t ante un cambio en la variable independiente xi,t, manteniendo todo lo demás constante. Lo que se busca capturar con esta ecuación es el efecto promedio, en el tiempo y para cada entidad, de los choques fiscales sobre las variables macroeconómicas.
+La estimación simple sobre valores contemporáneos de todas las variables presenta serios problemas que imposibilitan la obtención de estimadores consistentes. En primer lugar, está la cuestión de si las características no observadas de cada sección cruzada están o no correlacionados con las perturbaciones, lo que nos lleva al dilema sobre usar efectos fijos o aleatorios. En este trabajo se realizarán estimaciones únicamente con efectos fijos, por considerar que debido a la heterogeneidad de las entidades, las características no observadas y que son relativamente constantes en el tiempo (por ejemplo: cultura, geografía, o factores demográficos) están correlacionadas con los regresores. En segundo lugar, y más importante aún, está el problema de la endogeneidad: si consideramos del lado derecho de la igualdad al resto de las variables macroeconómicas como determinantes de la variable dependiente en conjunto con las variables fiscales, entonces caemos en el problema de simultaneidad, pues los precios, el tipo de interés y el tipo de cambio son endógenos con el PIB. Para resolverlo, podemos emplear rezagos de las variables endógenas.
+En tercer lugar, tenemos que considerar que las variables en paneles sean estacionarias, esto es, que el proceso de generación de datos tenga media y varianza fijas, y que su covarianza dependa únicamente de la amplitud de tiempo que tomemos para calcularla. Si no lo fueran, no podríamos hacer estimaciones consistentes ni inferencia sólida sobre los parámetros. Por tanto, debemos hacer pruebas de raíz unitaria para cada variable, y en el caso en que no podamos rechazar la hipótesis nula, tomar la diferencia adecuada. Esto debe hacerse con cautela, pues si no hay mucha variabilidad en los datos se
+24
+
+corre el riesgo de que la diferencia resulte en muchos valores cercanos a cero, lo que afectaría la estimación considerablemente.
+Por último, en términos de la calidad de la estimación, debemos considerar que las características no observadas de cada entidad pueden estar correlacionadas en el tiempo, dentro de cada estado y entre estados, así como tener varianza distinta. Por ello, se harán estimaciones que arrojen errores estándar robustos a Heteroscedasticidad y Autocorrelación sin suponer a priori una estructura para los errores estructurales. Debido al corto periodo de tiempo, es probable que la Autocorrelación no sea un problema tan grave, sin embargo, imponer la misma varianza de las perturbaciones a todos los estados es bastante restrictivo y no captura la riqueza (heterogeneidad) de los datos. El segundo modelo que se va a estimar está dado por la siguiente ecuación:
+Nuevamente, el término captura la tendencia de la variable dependiente. Como vemos, es una ecuación autoregresiva, en donde el interés radica en analizar la tendencia y la velocidad del ajuste de la variable dependiente ante choques exógenos. Lo que se busca con esta ecuación es analizar la dependencia temporal intrínseca de cada variable. Un valor positivo y menor a uno de β nos dirá que ante un choque, la variable dependiente reacciona al corto plazo aumentando su valor en nivel, y luego el efecto decaerá en el tiempo hasta desaparecer; un valor negativo implica que el ajuste es oscilatorio pero que el efecto del choque se desvanece en el tiempo. Si el valor estimado de β fuera significativo y mayor a uno, entonces el proceso de generación de la variable dependiente es explosivo y no estacionario: los choques tendrán efectos permanentes e irreversibles.
+Nuevamente nos enfrentamos al problema de endogeneidad, toda vez que el rezago de la variable dependiente y el error están correlacionados. Por ello, se hará una estimación bajo el método de Arellano y Bond,6 donde se instrumenta la variable endógena con sus rezagos bajo el marco GMM.
+6 Descrito en (Hsiao 2003).
+25
+
+En el siguiente modelo a estimar introducimos para cada variable dependiente, sus rezagos así como otras variables contemporáneas y rezagadas que pueden ser endógenas. La forma general es:
+
+Esta ecuación se estimará empleando el método de Blundell-Bover.7 Lo que buscamos ahora es "obtener el efecto dinámico de [las variables en el vector] x sobre [la variable dependiente] y, donde la velocidad de ajuste está gobernada por el coeficiente del rezago de la variable dependiente".8 Los estimadores mencionados se efectúan en el marco GMM, donde los instrumentos son los rezagos y las diferencias de las variables endógenas, que crecen en el número de periodos. Se harán estimaciones robustas a Heteroscedasticidad y Autocorrelación serial. Al respecto, valores pequeños de β indican que los choques propios de la variable dependiente desaparecen en poco tiempo, por lo que el ajuste es rápido. Valores mayores indican una alta persistencia temporal y un ajuste lento.
+Por último, se hará una estimación en términos de un Vector Autoregresivo en datos panel (PVAR), y se obtendrán las funciones impulso-respuesta para analizar gráficamente la interrelación dinámica entre las variables del modelo, los efectos y la duración de los choques de cada una de las variables sobre el resto. Esto es, definamos la ecuación vectorial
+
+Donde
+
+(
+
+) es el vector de variables que consideramos
+
+endógenas, y F denota el conjunto de variables fiscales. B es una matriz de coeficientes reales. De este modo, la estimación del PVAR se hará siguiendo a Hamilton.9 Se asumirán
+
+las siguientes condiciones: (1) Estacionariedad; (2)
+
+. Tomando p-rezagos,
+
+tenemos
+
+7 Descrito en (Cameron y Trivedi 2009). 8Arellano (2003), p. 129. 9 (J. D. Hamilton 1994).
+26
+
+Por tanto, podemos reescribir la ecuación en términos de las innovaciones empleando polinomios de rezagos; despejamos la variable dependiente en términos de un MA(∞) y con ello obtenemos las funciones impulso-respuesta:
+∑
+Con esto, podemos graficar la respuesta de la variable dependiente ante una innovación en cada una de las otras variables endógenas.10 En esta sección, lo que se busca es comprender las interacciones dinámicas entre las variables del modelo en un mayor intervalo de tiempo; más que un efecto causal: buscamos la sincronía y duración de la respuesta de una variable (macroeconómica) ante choques en otra (fiscal). Hasta el momento, no hay un estudio a nivel estatal que haya obtenido las dos caras de la moneda para el caso mexicano, esto es, los efectos causales y las interrelaciones temporales; y es aquí donde reside el mayor aporte del presente trabajo: que incorpora una metodología distinta para analizar el impacto macroeconómico de los cambios fiscales, donde no hay estudios previos. En la medida en que se comprenda con mayor precisión el impacto causal y dinámico de la política fiscal, estaremos en condiciones de sugerir medidas de política de acuerdo al tipo de choque que enfrente cada economía.
+IV. Descripción de los Datos
+En esta sección se va a describir el proceso de obtención de datos, y se analizarán las estadísticas y gráficas básicas, de tal modo que se tenga una idea intuitiva del comportamiento e interrelación de las variables. Se hará énfasis en mostrar algunas relaciones básicas entre las variables de manera gráfica, teniendo en cuenta que esto no implica causalidad. El tipo de datos permite emplear la metodología panel, y con ello tener
+10 La aplicación en Stata® fue hecha por Love y Zicchino (Love y Zicchino 2005).
+27
+
+estadísticas en las dos dimensiones de la base: tiempo y sección cruzada (Entidades Federativas). Variables Las variables que se van a usar son:
+ Inflación estatal: medida como la tasa de cambio porcentual anual en el Deflactor Implícito de Precios (DIP) de cada estado.
+ Producto Interno Bruto Real Estatal (PIBR): es el Producto Interno Bruto Estatal a precios de 2003.
+ Tipo de Interés Real estatal: construido a partir de la TIIE promedio anual, ajustada por la inflación estatal.
+ Tipo de Cambio Real estatal: corresponde al Tipo de Cambio Nominal (pesos por dólar estadounidense) promedio anual, ajustado por la inflación estatal anual acumulada.
+ Gasto Corriente: erogaciones de cada gobierno estatal en pesos de 2003, correspondientes a la suma del gasto general, gasto en materiales y suministros, gastos personales, subsidios, transferencias y ayudas.
+ Gasto de Inversión: erogaciones de cada gobierno estatal correspondientes a la suma de las partidas de obras públicas y acciones sociales.
+ Impuestos: ingresos correspondientes a los cobros de atribuciones legales de cada estado, definidos en la ley y que es responsabilidad de cada entidad su recaudación, con la característica que pueden fijarlos independientemente; se integran del cobro de predial, traslado de dominio, tarifas al comercio, diversiones y espectáculos, tarifas adicionales a la educación, cargos adicionales para obras públicas, entre otros.
+ Ingresos Propios: es suma de todos los ingresos que obtienen las entidades federativas por concepto de cobros exclusivos de su jurisdicción, que les
+28
+
+corresponde recaudar y son exclusivos de cada estado; se componen de los impuestos, los derechos, productos y aprovechamientos.  Deuda: es el total de las obligaciones financieras de cada entidad al 31 de diciembre de cada año.  Participaciones: recursos asignados por la federación a cada estado, de acuerdo a los criterios de la Ley de Coordinación Fiscal, principalmente mediante el ramo 28.  Aportaciones: recursos asignados por la federación a cada estado, mediante criterios establecidos en la Ley de Coordinación Fiscal, a través de los ramos 33, 25 y demás convenios entre los estados y la federación.  Producto Interno Bruto Real de Estados Unidos: en dólares de 2005, se considera una variable totalmente exógena que puede estar muy correlacionada con algunas variables estatales, y que de omitirla, se incurriría en sesgos en las estimaciones.
+Fuentes Todas las variables monetarias están en pesos de 2003. Los datos se obtuvieron de dependencias de gobierno y oficinas de estadísticas. De la Secretaría de Hacienda y Crédito Público, se obtuvieron los datos de la deuda por estados, las participaciones y las aportaciones; del INEGI se obtuvieron los datos de las cuentas estatales (impuestos, ingresos propios, gasto corriente y gasto de inversión), el PIB y el DIP. Del Banco de México se tomaron los datos del tipo de interés nominal y del tipo de cambio, y del Bureau of Economic Analysis, de Estados Unidos, los datos del PIB real de ese país.
+Cabe resaltar algunas diferencias en las variables debidas a la fuente. Por ejemplo, los montos correspondientes a las transferencias (aportaciones y participaciones) son, en general, mayores en la SHCP que en lo reportado en el INEGI; y las series de deuda están más completas y también son mayores en valor. Se tomaron los datos de Hacienda por
+29
+
+considerar que es una fuente más confiable: para el caso de las transferencias, es la oficina encargada de asignarlas; y por la parte de la deuda, sus series están más completas. Análisis Descriptivo El siguiente cuadro muestra las estadísticas básicas de cada variable. Se desglosan la media, la desviación estándar, los valores mínimo y máximo y el número de observaciones en tres niveles: para toda la variable considerando los datos como pool (overall), el promedio de cada variable entre todos los estados a través del tiempo (between), y el promedio de cada variable para cada estado en el tiempo (within).
+La tabla indica que por parte de las variables fiscales, hay mayor variabilidad dentro de cada estado en el tiempo que la comparación entre ellos para los ingresos propios y el gasto. Sin embargo, este comportamiento se revierte cuando analizamos las transferencias y la deuda: la variabilidad es más del triple cuando comparamos entre entidades respecto al comportamiento temporal promedio de cada una; y en cuanto a transferencias, se infiere que hay una gran volatilidad en cuanto a los montos asignados.
+Tabla 1. Estadísticas básicas.
+30
+
+Podemos ver, además, que tanto la producción como la inflación son más variables al interior de cada estado, y que las tasas de interés y de cambio presentan el mismo comportamiento, que se explica porque la varianza de la inflación es mayor dentro de cada estado que entre estados.
+La siguiente gráfica de pastel relaciona las partidas de ingresos y gastos respecto a sus totales. Se construyó a partir de la mediana sobre la distribución temporal de cada partida en cada estado.
+Gráfica 1. Proporciones respecto a los totales.
+Notamos que los ingresos propios no llegan a constituir ni el 10% del total de los recursos de cada entidad, y queda clara la gran dependencia de las transferencias federales, que sumadas constituyen más del 70% del total de los recursos de cada entidad. Por el lado del gasto, la disparidad es evidente: el 90% corresponde a erogaciones no productivas.
+Estos porcentajes pueden parecer muy elevados, pero cuando se comparan con el PIB de cada entidad, vemos que, en general, ocupan un porcentaje minúsculo. La siguiente gráfica agrupa a los estados respecto a las proporciones de las variables fiscales sobre el producto.
+31
+
+Gráfica 2. Proporciones de las variables fiscales en el PIB Real. Fuente: SHCP e INEGI.
+Observamos que únicamente las transferencias y el gasto corriente, en algunos casos, llegan a ser aproximadamente el 10% del producto real de cada estado, lo cual es realmente muy poco si lo comparamos, obviando las claras diferencias, con algunos países desarrollados donde vemos, por ejemplo, que el porcentaje de la deuda llega a ser hasta del 90% y más;11 el gasto no militar contabiliza hasta el 47.9% del PIB,12 y la recaudación, excluidas las transferencias llega hasta el 42.8%.13 Para nuestra muestra, en el mejor de los casos hay un estado para el cual el porcentaje de recaudación apenas llega a ser del 2% de su producto. Esto limita en gran medida el margen de la política fiscal, y sugiere que las entidades tienen serios problemas de fuentes de ingresos, recaudación y financiamiento de obras y servicios públicos.
+La siguiente gráfica muestra el comportamiento promedio en el periodo de las variables macroeconómicas que se van a considerar, y lo desglosa por estados.
+11 Fuente: Banco Mundial (Banco Mundial 2013), Indicadores del Sector Público, 2013. Datos del porcentaje de la deuda central para el periodo 2008-2012: Alemania: 55.6%, Australia, 30.7%; Canadá, 53.8%; USA, 81.8%; Francia, 93.3%; Luxemburgo, 16.8%; Suecia, 38.2%. 12 Ídem.; Alemania: 29.7%, Australia, 26.2%; Canadá, 18.5%; USA, 26.1%; Francia, 47.9%; Luxemburgo, 38.2%; Suecia, 31.7%. 13 Ídem.; Alemania: 29.1%, Australia, 23.0%; Canadá, 17.2%; USA, 17.0%; Francia, 42.8%; Luxemburgo, 38.7%; Suecia, 32.4%.
+32
+
+Gráfica 3. Desempeño macroeconómico promedio a nivel estatal, 1996-2011. Fuente: INEGI y BdeM.
+Destacan los casos de Campeche y Tabasco por ser valores extremos. Por los demás estados, observamos que en promedio no hay grandes diferencias.
+Considerando lo anterior, la siguientes gráficas muestran la relación entre la tasa de crecimiento del producto, la inflación, y algunas variables fiscales; y estamos interesados en saber si los estados que gastan o ingresan más son los que tienen, en promedio, mayores tasas inflacionarias o de crecimiento.
+33
+
+Gráfica 4. Relación entre la tasa de crecimiento porcentual promedio del PIB Real y las variables fiscales como porcentaje del PIBR. Fuente: SHCP e INEGI.
+Se observa que los estados que han gastado más no son los que necesariamente han tenido las tasas más altas de crecimiento del producto durante todo el periodo, y resaltan nuevamente los casos de Campeche y Tabasco como las entidades con mayor crecimiento promedio en el periodo y que han mantenido niveles de gasto de inversión muy pequeños respecto del producto, lo que puede explicarse por la dotación de petróleo. Se observa una relación ligeramente positiva entre las participaciones y el cambio porcentual promedio de la producción, únicamente para proporciones más allá del 6%. Nótese que los datos muestran una concentración evidente alrededor de ciertos puntos: por ejemplo, para el caso de la deuda, cerca del 90% de todas las entidades mantuvieron tasas de crecimiento de entre 3 y 4 % en el periodo, y proporciones de deuda entre el 1 y 3 % respecto del PIB.
+En la siguiente gráfica se observa que los estados donde las proporciones del gasto corriente y las transferencias fueron mayores en comparación con el resto, la inflación anual acumulada promedio de todo el periodo fue mayor; el gasto en inversión no parece tener algún efecto, y los estados con menor deuda y que menos recaudan son los que menor inflación promedio tuvieron.
+34
+
+Gráfica 5. Relación entre la inflación promedio y las variables fiscales como porcentaje del PIBR. Fuente: BdeM, SHCP e INEGI.
+A grandes rasgos, estas son algunas relaciones entre las variables fiscales y el comportamiento macroeconómico de los estados. Los apilamientos en los datos suponen que no hay una gran heterogeneidad, aunque no podemos descartarla en la estimación. Queda claro, además, que el desempeño fiscal es muy pobre, y que las transferencias federales son predominantes en las finanzas estatales. Esto es relevante porque, por su constitución, la asignación de estos recursos toma en cuenta el comportamiento dinámico del producto de los estados y el esfuerzo fiscal, por lo que lo que se podría suponer en principio que los estados que recaudan más y cuyas economías crezcan más, serán son los que recibirán más fondos.
+V. Análisis Econométrico
+En esta sección se presentarán las estimaciones econométricas y se discutirán los principales resultados. Como anteriormente se señaló, se emplearán las técnicas de la econometría de panel para medir los efectos de la política fiscal sobre las variables macroeconómicas de interés, lo cual permite controlar la heterogeneidad no observada de las unidades muestrales.
+35
+
+Las siguientes tablas muestran las correlaciones temporales entre las variables. Destaca la fuerte asociación entre los ingresos y gastos totales, además destaca que los rezagos de la inflación están más correlacionados con los rezagos del PIB real que con los valores actuales, lo que sugiere importantes relaciones dinámicas. Se observa que, en el tiempo, el crecimiento pasado del PIBR se relaciona de manera negativa y cada vez más débil con sus valores actuales, lo que sugiere que esta variable tiene muy poca inercia: si los factores que impulsaron la tasa de crecimiento del producto en el pasado se relacionaran débilmente con los factores actuales, entonces el crecimiento pasado tiene un impacto reducido sobre el crecimiento actual. La inflación pasada también tiene una baja correlación con la actual, lo que es consistente con las políticas de estabilización monetaria del Banco de México luego de 1995 para estabilizar los precios y reducir la inflación inercial.
+
+Tabla 2. Correlaciones entre la tasa de crecimiento del producto, la inflación y los ingresos y egresos totales.
+
+Crec. % PIBR
+
+L.
+
+L2.
+
+Inflación
+
+L.
+
+L2. Gasto Total
+
+L.
+
+L2. Ingreso Total L.
+
+L2.
+
+--.
+
+1
+
+L1.
+
+-0.0629
+
+1
+
+L2.
+
+-0.1986 -0.0567
+
+1
+
+Inflación
+
+--.
+
+0.0149
+
+0.1564
+
+-0.1962
+
+1
+
+L1.
+
+0.0776
+
+0.0432
+
+0.1724
+
+0.4915
+
+1
+
+L2.
+
+-0.0815 0.0963
+
+0.073
+
+0.4822
+
+0.6151
+
+1
+
+Gasto Total
+
+--.
+
+-0.0303 -0.0285 -0.0216
+
+-0.196
+
+-0.2078 -0.2182
+
+1
+
+L1.
+
+-0.0369 -0.0378 -0.0391 -0.1827 -0.2245 -0.2362 0.9902
+
+1
+
+L2.
+
+-0.0292 -0.0424 -0.0523 -0.1857 -0.2174
+
+-0.254
+
+0.9792
+
+0.9874
+
+1
+
+Ingreso Total
+
+--.
+
+-0.0516 -0.0505 -0.0629 -0.1145 -0.1124 -0.1129 0.8727
+
+0.8793
+
+0.8885
+
+1
+
+L1.
+
+-0.055
+
+-0.0544 -0.0563 -0.1041 -0.1144
+
+-0.122
+
+0.8634
+
+0.8755
+
+0.8841
+
+0.9964
+
+1
+
+L2.
+
+-0.0491 -0.0573 -0.0622 -0.1134 -0.1166 -0.1335 0.8587
+
+0.867
+
+0.8791
+
+0.9938
+
+0.9953
+
+1
+
+En la siguiente tabla se muestran las correlaciones únicamente entre las variables macroeconómicas. Se observa la reducción de la correlación de la inflación. Se confirma que la tasa de crecimiento del producto en el pasado cada vez está menos correlacionada con la actual, y se muestra el comportamiento opuesto para el tipo de cambio. A pesar de ello, hay algunas correlaciones temporales importantes que no se pueden descartar en la estimación.
+A continuación se describirán las ecuaciones a estimar. Se eligieron formas funcionales lineales en aras de la sencillez econométrica y la facilidad para interpretar los
+36
+
+resultados, teniendo en cuenta que pueden existir relaciones no lineales importantes, cuyo análisis se deja para un futuro desarrollo del tema.
+
+Tabla 3. Correlaciones entre las variables macroeconómicas.
+
+Crec. % PIBR
+
+L.
+
+L2.
+
+Inflación
+
+L.
+
+L2. Tasa de Interés
+
+L.
+
+L2. Tipo de Cambio
+
+L.
+
+L2.
+
+--.
+
+1
+
+L1.
+
+-0.105
+
+1
+
+L2.
+
+-0.1443 -0.1062
+
+1
+
+Inflación
+
+--.
+
+0.0369
+
+0.1779
+
+-0.3876
+
+1
+
+L1.
+
+0.1835
+
+0.0532
+
+0.1959
+
+0.3362
+
+1
+
+L2.
+
+-0.0624
+
+0.183
+
+0.0733
+
+0.3746
+
+0.445
+
+1
+
+Tasa de Interés
+
+--.
+
+-0.0598 -0.0835 0.4378
+
+-0.3665 0.4498
+
+0.4112
+
+1
+
+L1.
+
+-0.247
+
+-0.0555 -0.0693
+
+0.36
+
+-0.0609 0.5905
+
+0.3107
+
+1
+
+L2.
+
+0.0416
+
+-0.2527
+
+-0.052
+
+0.1825
+
+0.4226
+
+-0.0263
+
+0.2423
+
+0.2692
+
+1
+
+Tipo de Cambio
+
+--.
+
+0.1174
+
+0.1909
+
+-0.2032 -0.3926 -0.3805 -0.4983
+
+-0.1838
+
+-0.4805 -0.3857
+
+1
+
+L1.
+
+-0.0341 0.0926
+
+0.14
+
+-0.4574 -0.5556 -0.4855
+
+-0.2629
+
+-0.3436 -0.4532
+
+0.4722
+
+1
+
+L2.
+
+0.123
+
+-0.0421 0.0583
+
+-0.5067 -0.5854 -0.6453
+
+-0.3324
+
+-0.4316 -0.3412
+
+0.3926
+
+0.6134
+
+1
+
+Estimación de la ecuación lineal estática
+
+Bajo la especificación del primer modelo, el sistema de ecuaciones a estimar está dado por:
+
+Donde yi,t es una variable macroeconómica; yi,t-1-1 denota el grupo de variables macroeconómicas restantes de quitar la variable anterior;14 xi,t-1 es el grupo de variables
+
+totalmente exógenas; F denota al conjunto d variables fiscales;
+
+son,
+
+respectivamente, los términos que capturan el efecto individual y temporal de cada estado,
+
+donde los subíndices indican la dimensión del parámetro: el primero captura la variabilidad
+
+de las i-secciones cruzadas y el segundo de los t-periodos; esto es, no se tienen estimadores
+
+para cada valor que toman los parámetros, únicamente se controla la heterogeneidad
+
+individual incorporándola como un término constante en el tiempo para cada panel, y la
+
+tendencia se incorpora como regresor en la ecuación.
+
+En este caso, se generarán dos estimaciones: una que tenga variables de ingresos y otra con gastos. Cabe aclarar que dos de los supuestos básicos de las estimaciones de ecuaciones lineales estáticas con datos panel son la exogeneidad de las variables
+
+14 Por ejemplo, si la variable macroeconómica a estimar (yi,t) es el PIB real, las variables restantes (y-1i,t) son la inflación, el tipo de cambio real y la tasa real de interés.
+37
+
+independientes y la homoscedasticidad y no autocorrelación (espacial y temporal) de las perturbaciones. Para resolver el primer problema, consideramos los rezagos de las variables independientes; y para resolver el segundo se hicieron estimaciones robustas bajo la técnica desarrollada por Discroll y Kraay (Discroll y Kraay 1998); de esta forma, podemos asegurarnos que la correlación entre las características no observadas dentro de cada estado y entre estados no sesgará los resultados. En la siguiente tabla se muestra los resultados.
+Previo a esto, se realizó la prueba de Dickey-Fuller aumentada para probar la existencia de raíces unitarias, y las únicas variables que resultaron integradas de orden 1 fueron la deuda y las participaciones, por lo que se tomó su primera diferencia. Todas las variables están en logaritmo natural.
+Por el lado del gasto, los efectos son consistentemente negativos sobre las variables macroeconómicas: el aumento de 1% en el gasto de inversión reduce el producto 0.6%, disminuye la inflación en 0.5%, y no afecta significativamente al tipo de interés ni al tipo de cambio reales. El efecto negativo del gasto sobre el producto lo podemos interpretar como un efecto desplazamiento, en el sentido de Barro y Redlick (2009): la expansión del gasto reduce los fondos prestables, aumenta la tasa de interés y reduce la inversión, lo que es parcialmente consistente (aunque no estadísticamente significativo) con el impacto del gasto sobre el tipo de interés (col. 5).
+Respecto de los ingresos, observamos que el aumento de los fondos recaudados genera inflación y aumenta el producto. ¿Cómo podrían los estados aumentar los fondos recaudados? De dos maneras: aumentando la base fiscal, o incrementando las tasas impositivas o demás derechos del gobierno estatal. Manteniendo constante la tasa impositiva, el aumento de la base de contribuyentes implica que se cobran impuestos a más personas, lo que significa que el gobierno es más eficaz recaudando; por el contrario, con una base fija, el aumento de impuestos implica una restricción fiscal. La estimación señala que, en promedio, si los estados se hacen más eficientes en la recaudación, tendrán mayores tasas de crecimiento del PIB, a costa de mayor inflación. Hay que hacer una aclaración importante: a priori, esperamos que la recaudación y el producto sean endógenos, en el sentido de que los impuestos están determinados en cierta forma por el producto; este problema se resuelve considerando la recaudación en rezagos; además, por el tipo de
+38
+
+impuestos estatales, para el caso mexicano no está claro que haya una relación "directa" entre ambas variables, más bien los gobiernos locales fijan sus tasas impositivas y demás cobros como si fueran "tarifas fijas" (por ejemplo las cuotas al comercio). Por ello, no se considera que la simultaneidad sea un problema considerable en la estimación.
+
+Tabla 4. Estimación lineal estática.
+
+DEPENDIENTE VARIABLES
+
+Tasa de Crecimiento del PIBR
+
+Inflación
+
+Tasa de Interés Real
+
+Tipo de Cambio Real
+
+Ecuación de Gasto Ecuación de Ingresos Ecuación de Gasto Ecuación de Ingresos Ecuación de Gasto Ecuación de Ingresos Ecuación de Gasto Ecuación de Ingresos
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+Crec. % PIBR
+
+Inflación Tasa de Interés Tipo de Cambio
+Año US GDP Ingresos Propios
+
+0.894** (0.361) 0.0513 (0.212) -0.212*** (0.0623) -0.0172** (0.00664) 1.985*** (0.638)
+
+Deuda
+
+Aportaciones
+
+Participaciones
+
+Gasto Corriente Gasto de Inversión
+Constante
+
+-0.0514*** (0.0122)
+-0.00663** (0.00261) -23.40*** (7.559)
+
+Observaciones
+
+448
+
+0.434** (0.190) 0.0218 (0.162) -0.317*** (0.0953) -0.0231*** (0.00602) 2.109*** (0.595) 0.0244*** (0.00785) -0.0117** (0.00402) -0.0315*** (0.00939) 0.207** (0.0718)
+-16.18** (6.459)
+428
+
+0.0717*** (0.0103)
+0.208*** (0.0387) -0.0810** (0.0279) -0.000889 (0.00244) 0.00200 (0.0854)
+-0.0179 (0.0217) -0.00498** (0.00228)
+2.514 (3.657)
+
+0.0832*** (0.0156)
+0.229*** (0.0511) -0.0965*** (0.0299) -0.00421*** (0.00121) 0.0981 (0.0782) 0.0158*** (0.00299) 0.00856** (0.00293) -0.0189** (0.00736) 0.0364 (0.0235)
+5.896** (1.975)
+
+-0.0248 (0.0144) 0.388*** (0.0916)
+0.0649*** (0.0166) 0.00542*** (0.00176) -0.455*** (0.134)
+-0.0418* (0.0208) 0.00282 (0.00238)
+3.599 (2.725)
+
+448
+
+428
+
+448
+
+Errores Estándar Robustos Entre Paréntesis *** p<0.01, ** p<0.05, * p<0.1
+
+0.0137 (0.0293) 0.472*** (0.0682)
+0.0416** (0.0187) 0.00404** (0.00172) -0.307** (0.119) -0.00648* (0.00332) -0.0143*** (0.00265) -0.0192 (0.0165) 0.0224 (0.0425)
+1.617 (2.194)
+428
+
+0.126*** (0.0255)
+0.565 (0.486) 0.224 (0.309)
+-0.0272** (0.0110) 3.681*** (0.606)
+-0.0325 (0.0439) -0.00887 (0.00764) -52.84*** (9.364)
+448
+
+0.297*** (0.0546)
+0.665 (0.502) 0.255 (0.222)
+-0.0250** (0.00986) 3.631***
+(0.563) -0.0421*** (0.00863) -0.0161** (0.00704) -0.00119
+(0.0270) -0.194* (0.109)
+-55.85*** (8.793)
+428
+
+El resultado sobre la inflación es hasta cierto punto evidente, dadas las fuentes de ingresos propios de los estados: el aumento de tarifas a las empresas se traduciría en un incremento de costos y, por ende, de precios; pero el efecto de los ingresos propios e incluso el aumento del gasto presentan resultados contraintuitivos: el alza permanente de los impuestos reduce la riqueza vital de las personas, lo que las haría reducir su consumo y por tanto su demanda, con lo que la producción debería reducirse; y un aumento del gasto público debería tener efectos expansivos, al menos al corto plazo, de acuerdo a la teoría keynesiana básica.
+
+Una posible explicación de por qué los ingresos fiscales expanden la economía y los gastos la contraen se basa en la teoría de las Contracciones Fiscales Expansivas. Bertola y Drazen (Bertola y Drazen 1993) argumentan que esto es posible considerando las
+
+39
+
+expectativas de las personas: si se espera una reducción del gasto cuando éste ha pasado de un umbral de términos de su proporción con el producto, existe entonces una relación no lineal entre el consumo y el gasto público: cuando la proporción es pequeña, tanto el consumo privado como el público se mueven en direcciones opuestas, pero esta relación se invierte a medida que la proporción aumenta.
+Al respecto, Hogan (Hogan 2004) argumenta que pasa algo distinto a una contracción fiscal expansiva pura: en un estudio panel para países de la OCDE, analiza el desempeño del producto durante crisis fiscales. Empleando un PVAR, muestra que si el consumo público se reduce en respuesta a una crisis fiscal (alto nivel de deuda), el consumo privado parece aumentar, aunque el efecto es pequeño y no suficiente para compensar el efecto de la caída de las compras del gobierno en la economía, por lo que la contracción fiscal no es literalmente expansiva
+El impacto de los ingresos fiscales sobre la inflación es muy intuitivo: el aumento constante en la recaudación ya sea por el incremento continuo en las tasas o por el crecimiento anual de la base fiscal se traduce en costos para las empresas, que estarían ajustando sus precios en mayor proporción año con año. El efecto sobre la tasa real de interés puede reflejar el comportamiento pasado del alza en la inflación, aunque un efecto más directo sería que el incremento de la recaudación incentivaría el ahorro público, lo que aumentaría los fondos prestables y reduciría la tasa de interés.
+Se aprecia un impacto positivo neto de las transferencias sobre el producto. Debido a que el efecto que predomina es el de las participaciones, que son recursos que los estados aplican discrecionalmente, el efecto es similar al de una expansión del gasto. Destaca el impacto negativo de las aportaciones sobre la inflación; una explicación a esto es que, ya que son recursos focalizados que en su mayoría buscan traducirse en inversión pública, el aumento y la aplicación continuos de estos recursos tiene un efecto directo y positivo sobre la creación de infraestructura pública, lo que puede reducir los costos de las empresas y haría que el ajuste de precios sea cada vez menos que proporcional respecto al periodo pasado, lo que reduciría el nivel de la inflación, que es justo lo que se observa en la estimación. Este mismo efecto aplica con el gasto de inversión sobre la inflación.
+40
+
+Respecto al tipo de cambio, se observa que los ingresos fiscales lo aprecian, mientras que el gasto no lo afecta significativamente. Este resultado puede deberse a que el estimador no desagrega los efectos temporales acumulados en el pasado: la apreciación actual puede deberse a una acumulación temporal del efecto de los ingresos fiscales sobre la inflación.
+El impacto de la deuda sobre la economía merece atención. La tabla 4 nos dice que un aumento de 1% en la deuda reduce significativamente el PIB en 1.17%, incrementa la velocidad de ajuste de los precios en 0.85%, reduce el tipo de interés en 1.43% y aprecia el tipo de cambio real en 1.61%. Si suponemos que la deuda financia el déficit fiscal (algo no tan trivial), entonces este efecto es congruente con la visión de las contracciones fiscales expansivas. El impacto sobre la inflación y el tipo de interés es consistente con una expansión fiscal cubierta por deuda, pero debemos considerar una cuestión: el aumento del monto de la deuda hoy implica que en el futuro los impuestos van a subir, lo que generará un alza en precios y la reducción del ingreso disponible en las personas, que para suavizar su consumo deberán aumentar su oferta laboral, al tiempo que la inflación reduce el salario real.
+Por tanto, podríamos inferir con el resultado de la estimación que si consideramos las expectativas de inflación futura, se podría generar un aumento de precios hoy: las empresas ajustan con mayor frecuencia sus precios y lo hacen más que proporcionalmente respecto del periodo anterior, aunque sea en niveles tan bajos como de 0.8%; y por la parte del consumo, la expectativa de inflación futura en presencia de ajustes salariales escalonados en la economía (como en el modelo de Taylor15) podría incentivar el consumo presente de la parte del trabajo cuyo salario haya sido fijado el periodo anterior, lo que derivaría en un aumento temporal de la demanda y, por tanto, de la inflación. El efecto de la deuda sobre el tipo de cambio real puede verse, indirectamente, por el impacto en la inflación.
+Por último, se observa un efecto positivo y muy consistente del aumento en el producto de Estados Unidos sobre el producto de los estados: un mayor ingreso nacional
+15 Descrito en Romer (Romer 2001).
+41
+
+externo incentivaría las importaciones en ese país, lo que incrementaría la producción local de bienes exportables y con ello el PIB; y el efecto sobre el tipo de cambio es totalmente consistente con un choque de demanda que aumente la inflación en el extranjero.
+Estimación de las ecuaciones autoregresivas Esta sección muestra los resultados de estimar una ecuación lineal autoregresiva para cada variable, de la siguiente forma:
+El término recoge la tendencia de la variable dependiente, donde el subíndice indica la dimensión temporal del parámetro. La tabla 5 muestra los resultados. El objetivo de esto es, como se ha mencionado, analizar la dependencia y ajuste dinámicos de las variables macroeconómicas y fiscales ante choques exógenos.
+Observamos efectos interesantes que están ligeramente en línea con lo mencionado en las tablas de correlaciones. Primero, el aumento de la tasa de crecimiento del PIB en el periodo actual implica una caída del crecimiento porcentual futuro. Esto implica que la economía absorbe el choque de producción y se ajusta a la baja, y lo hace relativamente lento (los estimadores son muy similares en los dos rezagos). Nótese que los valores actuales de la inflación y el tipo de interés no responden significativamente a choques pasados a nivel estatal, lo que puede justificarse parcialmente recordando que son variables sobre las cuales las entidades no tienen control, pues están determinadas por el banco central. Sin embargo, muestran una tendencia decreciente y significativa. Los choques en el tipo de cambio son considerables y muestran cierta persistencia: una depreciación actual impulsa una depreciación futura, y es hasta el periodo siguiente que se da el ajuste.
+42
+
+Tabla 5. Ecuaciones Autoregresivas.
+
+VARIABLES
+
+Crec. % PIBR
+(1)
+
+Inflación (2)
+
+Tasa de
+
+Tipo de
+
+Gasto Gasto en
+
+Interés Real Cambio Real Corriente Inversión Participaciones Aportaciones Deuda
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+(9)
+
+Ingresos Propios
+(10)
+
+1-Rezago 2-Rezagos
+
+-0.190*** (0.0245) -0.225*** (0.0331)
+
+-0.0164 (0.131) 0.0322 (0.0778)
+
+0.0448 (0.124) -0.0147 (0.0293)
+
+0.109*** (0.0170) -0.207*** (0.0127)
+
+0.399*** (0.0985) 0.0477 (0.0337)
+
+0.631*** (0.0774) -0.140** (0.0607)
+
+-0.505*** (0.0442) -0.0972*** (0.0269)
+
+0.267*** (0.0950) 0.0105 (0.0102)
+
+-0.103* (0.0558) -0.0453 (0.0561)
+
+0.349*** (0.0812) 0.120** (0.0535)
+
+Año
+
+0.000708 -0.00523*** -0.00511*** 0.0332*** 0.0267*** 0.0288*** -0.00583*** 0.0150*** 0.0208** 0.0337***
+
+(0.000923) (0.00158) (0.00111) (0.000577) (0.00532) (0.00842) (0.000826) (0.00402) (0.00867) (0.00684)
+
+Observaciones
+
+384
+
+384
+
+384
+
+384
+
+414
+
+413
+
+384
+
+Errores Estándar Robustos Entre Paréntesis
+
+*** p<0.01, ** p<0.05, * p<0.1
+
+415
+
+359
+
+414
+
+La tabla también muestra que una parte considerable del comportamiento actual del gasto se debe a su desempeño en el periodo pasado. Los choques positivos actuales en las participaciones tienden a reducir de manera importante su nivel futuro, mientras que para las aportaciones, más del 25 por ciento de su nivel actual está determinado por su nivel del año anterior. Esto puede explicarse en parte por las fórmulas de asignación; sin embargo, no sería a través del producto (pues muestra una tendencia decreciente), sino a través del aumento en la recaudación en el tiempo, efecto que se muestra en la columna 10. Observamos que los ingresos propios tienen una considerable dependencia temporal positiva, y que el aumento de la deuda hoy implica que a futuro ésta se reduzca, lo que sugiere que un componente importante de la deuda pueden ser las obligaciones a corto plazo.
+
+Estimaciones dinámicas
+
+A continuación se presentarán los resultados de estimar ecuaciones dinámicas, donde cada variable dependiente está relacionada con sus rezagos y con los valores contemporáneos y rezagados de otras variables. La especificación está dada por la siguiente ecuación:
+
+∑
+
+El término
+
+señala nuevamente al conjunto de variables macroeconómicas restantes
+
+cuando excluimos a la variable que se incorpora como dependiente en la ecuación. El
+
+término denota al grupo de variables fiscales y a las exógenas. Se consideraron
+
+43
+
+nuevamente efectos fijos de cada entidad, y se incorpora un estimador de tendencia. Cabe hacer algunas aclaraciones: (1) Se realizaron estimaciones robustas a Heteroscedasticidad y Autocorrelación serial; (2) Se consideraron como endógenas a todas las variables macroeconómicas, y las variables fiscales se consideraron como débilmente exógenas o predeterminadas, debido a que se fijan en las leyes de ingresos y egresos de cada entidad, así como que las transferencias se asignan por medio de fórmulas que consideran las condiciones fiscales y de producción en el pasado; (3) Se empleó el estimador de BlundellBover.16
+La estimación se muestra en la Tabla 6. Algunos resultados confirman lo obtenido en las ecuaciones autoregresivas. Se observa que un aumento de la tasa de crecimiento del PIB hoy se sigue relacionando con una reducción en la tasa de crecimiento futura; se confirma el efecto acumulado positivo de un choque de los ingresos fiscales sobre el producto, lo que evidencia de manera clara que hacer más eficaz la recaudación podría mejorar el desempeño de la economía al corto plazo. Resulta interesante que la deuda tiene un efecto contemporáneo positivo sobre la tasa de crecimiento del producto, lo que implica que si el gasto se cubre con deuda, entonces la política fiscal tiene otro canal para incentivar la economía.
+El aumento de las aportaciones no impacta el crecimiento del PIB, y en cambio un choque positivo de participaciones reduce significativamente la tasa de crecimiento de la producción, de manera contemporánea. Se confirma que, por el lado del gasto, únicamente el gasto en inversión puede incentivar el crecimiento económico, aunque lo hace con 2 periodos de rezago, lo que es congruente con su diseño: la inversión pública en infraestructura tiene un periodo de formación que hace los efectos sobre la economía sean de medio plazo. Nótese que el efecto acumulado del gasto corriente y de las participaciones es, en ambos casos similar (negativo).
+Por otra parte, el comportamiento de la inflación es notable porque, contrario a lo hallado en las ecuaciones autoregresivas, se observa que un choque inflacionario actual impacta positiva y significativamente el nivel inflacionario del periodo siguiente, hasta en
+16 Descrito en Cameron y Trivedi (2009), cap. 9.
+44
+
+un 50% respecto del nivel que tendría en ausencia de un choque inflacionario pasado. Sin embargo, este resultado puede deberse a la técnica de estimación, pues al incorporar más variables en la ecuación, se están induciendo fuentes de correlación para los rezagos.
+Ligeramente en línea con los resultados anteriores, el incremento de la recaudación eleva el nivel de la inflación en el mismo periodo, lo que resulta evidente toda vez que el aumento del costo de los servicios del gobierno o de los impuestos se traduce en costos para las empresas. Por el lado del gasto, tenemos que una innovación incrementará la inflación en el mismo periodo, pero al cabo de un año el efecto se desvanece y el nivel inflacionario tiende a ajustarse.
+45
+
+Tabla 6. Estimaciones dinámicas.
+
+VARIABLES 1-Rezago
+Ingresos Propios 1-Rezago
+Deuda 1-Rezago
+Aportaciones 1-Rezago
+Participaciones 1-Rezago
+Crec. % PIBR 1-Rezago
+Inflación 1-Rezago
+Tasa de Interés Real 1-Rezago
+Tipo de Cambio Real 1-Rezago
+US GDP 1-Rezago
+Año
+Gasto Corriente 1-Rezago
+Gasto de Inversión 1-Rezago
+Observaciones
+
+Crec. % PIB Real
+
+(1)
+
+(2)
+
+Gastos
+
+Ingresos
+
+Inflación
+
+(3)
+
+(4)
+
+Gastos
+
+Ingresos
+
+Tasa de Interés Real
+
+(5)
+
+(6)
+
+Gastos
+
+Ingresos
+
+Tipo de Cambio Real
+
+(7)
+
+(8)
+
+Gastos
+
+Ingresos
+
+-0.175*** -0.00862 (0.0389) (0.0428)
+
+0.535*** (0.0221)
+
+0.496*** (0.0225)
+
+0.432*** (0.0211)
+
+0.269*** (0.0274)
+
+0.0906** (0.0449)
+
+0.163*** (0.0455)
+
+-0.0536*** (0.0154)
+0.0822*** (0.0147)
+
+0.00861*** (0.00314) 0.00180 (0.00301)
+
+0.0143*** (0.00342) -0.00384 (0.00330)
+
+0.0627*** (0.0159) -0.00617 (0.0153)
+
+0.0428*** (0.00733) -0.00206 (0.00648)
+
+-0.00190 (0.00150) -0.00199 (0.00131)
+
+-0.000240 (0.00165) -0.00455*** (0.00143)
+
+0.00806 (0.00765) -0.00637 (0.00669)
+
+-0.0248 (0.0243) -0.0249 (0.0194)
+
+0.00689 (0.00485) -0.0237*** (0.00389)
+
+0.0142*** (0.00530) -0.0306*** (0.00422)
+
+-0.128*** (0.0243)
+0.0659*** (0.0200)
+
+-0.272*** (0.0657) 0.0117 (0.0506)
+
+-0.0484*** (0.0133) 0.0121 (0.0102)
+
+0.120*** (0.0141) 0.0644*** (0.0109)
+
+1.133*** (0.0540) 0.395*** (0.0497)
+
+0.0171*** (0.00579) 0.0859*** (0.00576)
+
+0.00684 (0.00824) 0.150*** (0.00823)
+
+0.00592 (0.00700) 0.0486*** (0.00744)
+
+0.0294*** (0.00898) 0.0792*** (0.0103)
+
+-0.0679** (0.0326) 0.344*** (0.0337)
+
+0.0810* (0.0418) 0.243*** (0.0485)
+
+0.411** (0.204) 0.612*** (0.188)
+
+0.0185 (0.165) 0.185 (0.141)
+
+-0.758*** (0.0245) 0.638*** (0.0234)
+
+-0.715*** (0.0284) 0.613*** (0.0230)
+
+-1.001*** (0.172)
+-0.358** (0.156)
+
+-0.725*** (0.171)
+-0.467*** (0.142)
+
+0.0810 (0.206) -0.507*** (0.145)
+
+0.364** (0.152) -0.0483 (0.131)
+
+-0.762*** (0.0203) 0.398*** (0.0183)
+
+-0.585*** (0.0235) 0.359*** (0.0234)
+
+-0.448** (0.175)
+-0.698*** (0.122)
+
+-1.089*** (0.151)
+-1.528*** (0.122)
+
+-0.0934** (0.0399)
+-0.157*** (0.0521)
+
+0.0531 (0.0355) -0.163*** (0.0437)
+
+-0.0377*** (0.00597) 0.0491*** (0.00787)
+
+-0.0325*** (0.00709) 0.00628 (0.00902)
+
+-0.0172** (0.00731) 0.0459*** (0.00949)
+
+-0.0593*** (0.00759) 0.0358*** (0.00981)
+
+2.220*** (0.360) 0.202 (0.441)
+
+2.660*** (0.248)
+-0.838*** (0.312)
+
+0.500*** (0.0537) -0.920*** (0.0613)
+
+0.607*** (0.0513) -0.787*** (0.0596)
+
+0.262*** (0.0667) -0.651*** (0.0778)
+
+0.164*** (0.0604) -0.446*** (0.0700)
+
+5.565*** (0.251)
+-3.022*** (0.366)
+
+2.430*** (0.267)
+-1.456*** (0.328)
+
+-0.0366*** -0.0270*** 0.00637*** 0.00284*** 0.00576*** 0.00435*** -0.0386*** -0.0134*** (0.00442) (0.00312) (0.000674) (0.000671) (0.000818) (0.000728) (0.00372) (0.00341)
+
+0.0728 (0.0645) -0.0297 (0.0619)
+
+0.0409*** (0.00973) -0.0486*** (0.00923)
+
+0.131*** (0.0107) -0.131*** (0.0101)
+
+0.352*** (0.0538) -0.226*** (0.0519)
+
+-0.0184 (0.0123) 0.0241** (0.0118)
+
+0.0113*** (0.00185) -0.00861*** (0.00173)
+
+0.0126*** (0.00221) -0.00969*** (0.00207)
+
+0.0154 (0.0105) -0.00465 (0.00981)
+
+446
+
+421
+
+446
+
+421
+
+446
+
+Errores Estándar Robústos Entre Paréntesis
+
+*** p<0.01, ** p<0.05, * p<0.1
+
+421
+
+446
+
+421
+
+Resalta el hecho de que la deuda no impacta significativamente a la inflación, y de que las transferencias totales la reducen en el periodo actual y en el rezagado: esto está en plena controversia con las gráficas de la tabla 5, donde se mostró una relación ligeramente positiva entre la proporción de transferencias respecto del PIB y la inflación local. El efecto de las aportaciones es bastante consistente e incluso coincide con el efecto acumulado del
+
+46
+
+gasto de inversión: son recursos que elevan la infraestructura y el capital físico de la economía, lo puede reducir los costos de las empresas.
+Respecto al tipo de interés, observamos el aumento de los ingresos fiscales tiene un impacto positivo de 1.43% sobre el nivel contemporáneo; este resultado puede deberse indirectamente por el canal de la inflación. Resulta interesante el efecto de la deuda: como vimos, puede incrementar la tasa de crecimiento del producto en el mismo periodo, no afecta significativamente a la inflación y reduce el tipo de interés real al periodo siguiente. Las transferencias tienen un efecto acumulado positivo y significativo sobre la tasa de interés real. Recordemos que son recursos en los que los estados intervienen indirectamente (a través de su desempeño fiscal y económico), y que a su vez reducen la inflación local, por lo que el efecto sobre el tipo de interés real es consistente. Por otra parte, nótese que el efecto neto del gasto corriente es cero, y del gasto de inversión es positivo: si éste último se financia con recursos al interior del estado, se reduciría el ahorro estatal y la tasa de interés aumentaría.
+Sobre los efectos en el tipo de cambio, vemos que el aumento de la recaudación fiscal deprecia localmente el tipo de cambio real en 6.27%, efecto en plena controversia con el resultado de un incremento similar sobre la inflación. La deuda no impacta significativamente al tipo de cambio, y las transferencias totales deprecian significativamente al tipo de cambio real, lo cual coincide indirectamente con un modelo àla-Mundell-Fleming con movilidad perfecta de capital y tipo de cambio nominal flotante, toda vez que las aportaciones y participaciones se traducen directamente en gasto. El impacto directo del gasto es, coincidentemente, positivo, aunque solo cuando tomamos el efecto acumulado, y únicamente por el lado del gasto corriente.
+Por último, vemos un efecto muy importante del comportamiento del producto de Estados Unidos sobre el PIB estatal: el aumento del ingreso del exterior incrementa más que proporcionalmente al producto doméstico, y al generar un choque de demanda externa, genera inflación local, aunque este efecto no se traduce en una apreciación real de la moneda, probablemente porque se consideraron muy pocos rezagos en la estimación.
+47
+
+Observemos entonces que la política fiscal local puede regular, aunque en una proporción pequeña, el ciclo económico al corto plazo con cambios fiscales transitorios; pues un choque permanente crea un mecanismo de ajuste diferente. En este sentido, se debe considerar la interrelación entre los ingresos y gastos a la hora de diseñar un esquema de política fiscal. Vectores Autoregresivos en Panel A continuación se mostrará gráficamente el comportamiento de las variables fiscales. Se seguirá la metodología de Love y Zicchino (Love y Zicchino 2005), para estimaciones de panel vectorial y la obtención de funciones impulso-respuesta. Se estimaron ecuaciones lineales de la forma
+Donde Y denota el vector de variables macroeconómicas y fiscales, y B es una matriz de tamaño adecuado. En este caso, todas las variables incluidas se consideran endógenas, incluso las fiscales. Además, se excluyó el PIB de Estados Unidos. Las siguientes gráficas muestran los resultados. Las bandas se obtuvieron mediante simulaciones Monte-Carlo con 500 repeticiones, y están ortogonalizadas, con lo que los choques están dados en términos de desviaciones estándar.
+Tenemos dos efectos ya señalados anteriormente: el aumento en la recaudación puede incentivar el producto al corto plazo (menos de 2 años) al largo plazo, el ajuste es negativo; y el efecto sobre la inflación es un alza pequeña y persistente, lo que es consistente con la reducción del tipo de interés real y, al mediano plazo, la apreciación del tipo de cambio.
+48
+
+Gráfica 6. Respuestas de las variables macroeconómicas a choques temporales en los ingresos fiscales.
+La gráfica 7 muestra el impacto temporal de la deuda. Debido al ancho de las bandas, lo que vemos es que los choques sobre la economía son poco significativos y muy pequeños. Las diferencias con los resultados de las ecuaciones dinámicas se deben a la técnica de estimación, aunque los signos no cambian mucho para el tipo de interés y el producto.
+Es curioso notar que aparece un efecto negativo sobre el tipo de cambio real, justo como los resultados de las ecuaciones estáticas, a pesar de ser muy pequeño y de corta duración. Vemos que el efecto acumulado del producto es positivo, al siguiente periodo se reduce la tasa de interés como resultado de una mayor inflación, y la moneda se aprecia localmente.
+49
+
+Gráfica 7. Respuestas de las variables macroeconómicas a choques temporales en la deuda.
+A continuación veremos los efectos del gasto en las variables macroeconómicas. Por parte del gasto corriente, y parcialmente coincidente con los resultados de las estimaciones anteriores, vemos que hay un efecto estadísticamente significativo y negativo sobre el producto, es ligeramente positivo sobre la inflación, que a su vez reduce la tasa de interés al corto plazo pero el efecto acumulado de largo plazo es positivo, y deprecia el tipo de cambio. Estos efectos son están en línea con lo que encontró Cuevas para el caso nacional, quien explica que el canal que motiva la depreciación es el aumento del riesgo país, a pesar del diferencial positivo en tasas de interés (Cuevas Ahumada 2009).
+50
+
+Gráfica 8. Respuestas de las variables macroeconómicas a choques temporales en el gasto corriente.
+Sobre el gasto de inversión, en la gráfica 9 pareciera que no hay un efecto sobre la economía; esto puede deberse a que su impacto es principalmente de largo plazo, y bajo el periodo en consideración no logramos captar la reacción de la economía.
+Gráfica 9. Respuestas de las variables macroeconómicas a choques temporales en el gasto de inversión.
+51
+
+Los resultados son sugerentes de que la reacción de la economía a la inversión pública se podría observar al largo plazo, lo que le resta efectividad como instrumento de estabilización.
+Por último, veremos cómo reaccionan las variables macroeconómicas ante cambios en las participaciones y las aportaciones. En general, tenemos pocos efectos coincidentes con las estimaciones anteriores, lo cual de nuevo puede atribuirse a la estimación. Los resultados para las aportaciones se muestran a continuación.
+Gráfica 10. Respuestas de las variables macroeconómicas a choques temporales en las aportaciones.
+Notemos que en el periodo considerado, el efecto acumulado de las aportaciones sobre el producto es cero y positivo para la inflación. La tasa de interés se reduce y el tipo de cambio de se deprecia. No está claro que las entidades que reciban más aportaciones sean las que incrementan más su producción, de hecho, como se mostró en la gráfica 4, las entidades que reciben más aportaciones como porcentaje del producto son las que tienen la menor tasa de crecimiento.
+Respecto de las participaciones, los efectos coinciden parcialmente con lo que vimos en las ecuaciones dinámicas: las entidades que reciben más de estos recursos experimentan una reducción en la tasa de crecimiento del PIB, se genera inflación muy persistente al mediano plazo, se deprecia localmente la moneda y al corto plazo el tipo de
+52
+
+interés baja, para ajustarse al alza al mediano plazo. Para este caso, los efectos son exactamente iguales al caso del gasto corriente, lo cual no es sorprendente, dado que son recursos que los estados ejercen de manera discrecional, y cuyos resultados terminan arrojando "ruido" en la economía.
+Gráfica 11. Respuestas de las variables macroeconómicas a choques temporales en las participaciones.
+En resumen, encontramos efectos parcialmente similares a los obtenidos en las regresiones estáticas y dinámicas. Más allá de las diferencias estadísticas, debemos comprender las implicaciones que esto tiene en términos de lo que los estados podrían lograr si manejaran su política fiscal con otros principios.
+VI. Conclusiones
+Este estudio se realizó con el fin de mostrar los efectos de las diversas herramientas de política fiscal que tienen las entidades federativas sobre sus economías. Las estimaciones corresponden a las reacciones de las variables macroeconómicas ante cambios fiscales, por ello, no se están haciendo estimaciones de modelos estructurales, más bien, se comprar los resultados empíricos con lo que nos dirían algunos modelos teóricos y con la demás evidencia empírica. Se estimaron ecuaciones lineales por su sencillez interpretativa y para facilitar la estimación econométrica.
+53
+
+Como se señaló anteriormente, la reacción de la economía no es evidente ni descartable, y en algunos casos, los resultados no están de acuerdo con la teoría. Las diferencias con las predicciones de los modelos teóricos pueden deberse a varios factores, por ejemplo a que la participación de los gobiernos estatales en la economía es muy reducida, o bien a la mala calidad de los datos debida a que los cambios fiscales son relativamente pequeños en el tiempo, lo que resta variabilidad. Las estimaciones están, en la medida de lo posible, depuradas de cualquier sesgo inducido por la estructura de los errores, lo que asegura que tenemos estimadores consistentes y eficientes.
+En general, resaltan tres resultados: primero, la política fiscal estatal tiene un impacto significativo pero reducido en diversas variables macroeconómicas al corto plazo. Los estados tienen un pequeño margen de acción que pueden explotar para mejorar el desempeño del producto, pero deben seleccionar cuidadosamente la herramienta de política fiscal adecuada, pues de lo contrario solo terminaría distorsionando aún más al sistema de precios y, posiblemente, afectando negativamente al producto. Hay además, importantes relaciones intertemporales que limitan el efecto de la reacción de la política fiscal ante un choque contemporáneo: si los gobiernos estatales no las consideran, el diseño de la política pública podría ser inadecuado. Por ejemplo, un choque exógeno que aumentara la inflación local solo en el periodo actual podría amortiguarse al corto plazo con la reducción del gasto, manteniendo todo lo demás constante; sin embargo, las estimaciones muestran que este impacto se revertirá al siguiente periodo, por lo que los gobiernos locales podrían terminar, en el mediano plazo, en una situación peor a la que pretendían corregir.
+Segundo, los instrumentos de ingresos son más eficaces que los de gasto cuando se emplean para suavizar el ciclo del producto en el mismo periodo que ocurre el choque. Al mediano plazo, el único efecto positivo de la política fiscal sobre el producto es el del gasto de inversión, un resultado esperado pero que no puede ser considerado como medida de política que requiera una reacción inmediata por parte del gobierno.
+Por último, las trasferencias federales pueden no tener los efectos deseados en la economía. Debemos recordar que son recursos que los estados reciben de la federación y que se convertirán eventualmente en alguna forma de gasto. Lo que se observa es que el gasto financiado con transferencias al corto plazo no tiene, en el mejor de los casos, un
+54
+
+impacto positivo sobre el producto y reduciría el nivel de inflación local, resultado que por sí no es necesariamente deseable a menos que provenga de una reducción permanente en los costos de las empresas.
+Los resultados varían respecto a qué tipo de instrumento se emplea. Las partidas de ingresos que están bajo control directo de las entidades son la deuda y los ingresos fiscales, y como vimos, ambas crean efectos acumulados positivos al corto plazo (el año corriente y un rezago) sobre el producto estatal, aunque el resultado para los ingresos propios es poco intuitivo pero sólido estadísticamente. Pero por el lado de las aportaciones y participaciones, vemos que los efectos de las primeras son únicamente válidos al largo plazo, lo que las descarta como instrumento de política coyuntural, y sobre las segundas vimos que tienen efectos muy similares al gasto corriente, aunque su carácter discrecional les confiere cierto margen de acción en casos extremos, por ejemplo, para pagos de deuda o atención de contingencias ambientales.
+¿Qué lecciones se desprenden de este estudio? Que los efectos de la política fiscal de los estados son pequeños y dependen del instrumento, y los estados que más gastan no son, necesariamente, los que van a tener un mejor desempeño económico. En este sentido, se podrían tener considerables ganancias en términos de desempeño económico futuro si los estados fomentan la inversión en capital físico y aplican de manera más transparente y eficaz los recursos provenientes de aportaciones. Al corto plazo, podemos concluir que lo que no deben hacer los estados es incurrir en gastos excesivos o en déficits fiscales que no se puedan cubrir al corto plazo con deuda, pues eso los podría llevar a la quiebra y a considerables distorsiones en los precios. Más allá de eso, como se vio, la política fiscal tiene un impacto muy reducido sobre la economía.
+Como futuras líneas de investigación, se recomienda analizar los efectos de equilibrio general, el uso de formas funcionales más generales y de bases de datos con mayor calidad y nivel de desagregación. Esto permitirá estimar parámetros estructurales, hacerlo con mayor precisión, y generar recomendaciones de política más específicas.
+55
+
+VII. Bibliografía
+Arellano, Manuel. 2003. Panel Data Econometrics. New York: Oxford University Press. Banco Mundial. 2013. Último acceso: 30 de Mayo de 2013.
+http://datos.bancomundial.org/tema/sector-publico. Barro, Robert J., y Charles J. Redlick. 2009. «Macroeconomic Effects from Government
+Purchases and Taxes.» NBER, Cambridge. Baxter, Marianne, y Robert King. 1993. «Fiscal Policy in General Equilibrium.» The
+American Economic Review 83 (3). Bernheim, B. Douglas. 1982. «A Note of Dynamic Tax Incidence.» The Quarterly Journal
+of Economics 96 (4). Bertola, Giuseppe, y Allan Drazen. 1993. «Trigger Points and Budget Cuts: Explaining the
+Effects of Fiscal Austerity.» The American Economic Review 83 (1). Bilbiie, Florin, André Meier, y Gernot J. Müller. 2008. «What Accounts for the Changes in
+U. S. Fiscal Policy Transmission?» Journal of Money, Credit and Banking 40 (7). Blanchard, Olivier, y Roberto Perotti. 2002. «An Empirical Characterization of the
+Dynamic Effects of ChangesiIn Government Spending snd Taxes on Output.» The Quarterly Journal of Economics 117 (4). Bouakez, Hafedh, y Nooman Rebei. 2007. «Why Does Private Consumption Rise after a Government Spending Shock?» The Canadian Journal of Economics 40 (3). Boyd, Roy: Newman, David M. 1991. «Tax Reform and Land-Using Sectors in the U.S. Economy: A General Equilibrium Analysis.» American Journal of Agricultural Economics 73 (2). Cameron, A. Colin, y Pravin K. Trivedi. 2009. Microeconometrics using Stata. College Station: StataCorp. Catao, Luis A. V, y Marco E. Terrones. 2005. «Fiscal Deficits and Inflation.» Journal of Monetary Economics 52.
+56
+
+Chamley, Christope. 1985. «Efficient Tax Reform in a Dynamic Model of General Equilibrium.» The Quarterly Journal of Economics 100 (2).
+Cuevas Ahumada, Víctor M. 2009. «The Short-Term Effects of Fiscal Policy in Mexico: an Empirical Study.» Estudios Económicos 24 (1).
+de Castro, Francisco, y Pablo Hernández de Cos. 2007. «The Economic Effects of Fiscal Policy: The Case of Spain.» Journal of Macroeconomics 30.
+Discroll, John C., y Aart C. Kraay. 1998. «Consistent Covariance Matrix Estimation with Spatially Dependent Panel Data.» The Review of Economics and Statistics 80 (4).
+Due, John F. 1953. «Toward a General Theory of Sales Tax Incidence.» The Quarterly Journal of Economics 67 (2).
+Durlauf, Steven N.; Blume, Lawrence E. 2008. The New Palgrave Dictionary of Economics. Palgrave Macmillan.
+Enders, Walter. 2009. Applied Econometric Time Series. 3rd. Ed. New York: Wiley. Fainni, Riccardo, Gilles Duranton, y Harald Hau. 2006. «Fiscal Policy and Interest Rates in
+Europe.» Economic Policy 21 (47). Fatás, Antonio, y Ilian Mihov. 2001. «The Effects of Fiscal Policy on Consumption and
+Employment: Theory and Evidence.» Editado por CEPR. CEPR Discussion Papers. Forni, Lorenzo, Liberio Monteforne, y Luca Sessa. 2008. «The General Equilibrium Effects
+of Fisca Policy: Estimates for the Euro Area.» Journal of Public Economics 93. Fuchs, Gérard, y Roger Guesnerie. 1983. «Structure of Tax Equilibria.» Econometrica 51
+(2). Galí, Jordi, J. David López-Salido, y Javier Vallés. 2007. «Understanding the Effects of
+Government Spending on Consumption.» Journal of the European Economic Association 5 (1). Giordano, Raffaela, Sandro Momigliano, Stefano Neri, y Roberto Perotti. 2007. «The Effects of Fiscal Policy in Italy: Evidence from a VAR Model.» European Journal of Political Economy 23 (3).
+57
+
+Greene, William. 2012. Econometric Analysis. 7th. New York: McGraw-Hill. Hall, Viv B., y David Rae. 1998. «Fiscal Expansion, Monetary Policy, Interest Rate Risk
+Premia, and Wage Restrictions.» Economic Modelling 15. Hamilton, Bob, y John Whalley. 1989. «Reforming Indirect Taxes in Canada: Some
+General Equilibrium Estimates.» The Canadian Journal of Economics 22 (3). Hamilton, James D. 1994. Time-Series Analysis. New York: Princeton University Press. Harberger, Arnold C. 1962. «The Incidence of the Corporation Income Tax.» Journal of
+Political Economy 70 (3). Heppke-Falk, Kirsten, Hörn Tenhofen, y Guntram B. Wolff. 2006. The Macroeconomic
+Effects of Exogenous Fiscal Policy Shocks in Germany: a Disagreggated SVAR Analysis. Discussion Paper, Frankfurt: Deutsche Bundesbank. Hogan, Vincent. 2004. «Expansionary Fiscal Contractions? Evidence from Panel Data.» The Scandinavian Journal of Economics 106 (4). Holtz-Eakin, Douglas, Whitney Newey, y Harvey S. Rosen. 1989. «The RevenuesExpenditures Nexus: Evidence from Local Government Data.» International Economic Review 30 (2). Hsiao, Cheng. 2003. Analysis of Panel Data. 2nd. Cambridge: Cambridge University Press. INEGI. 2013. www.inegi.org.mx. Mayo. Kim, Soyoung, y Nouriel Rubini. 2008. «Twin Deficit or Twin Divergence? Fiscal Policy, Current Account, and Real Exchange Rate in the U. S.» Journal of International Economics 74. Kirsanova, Tatiana, Mathan Satchi, David Vines, y Simon Wren-Levis. 2007. «Optimal Fiscal Policy Rules in a Monetarian Union.» Journal of Money, Credit and Banking 39 (7). Lin, Hsin-Yi, y Hao-Pang Chu. 2013. «Are Fiscal Deficits Inflationary?» Journal of International Money and Finance 32.
+58
+
+Love, Inessa, y Lea Zicchino. 2005. «Financial Development and Dynamic Investment Behavior: Evidence from Panel VAR.» The Quarterly Review of Economics and Finance 46.
+Martínez-Vázquez, Jorge. 1982. «Fiscal Incidence at the Local Level.» Econometrica 50 (5).
+McCarty, Therese A., y Stephen J. Schmidt. 1997. «A Vector-Autoregression Analysis of State-Government Expenditure.» The American Economic Review 87 (2).
+Muscatelli, V. Anton, Patrizio Tirelli, y Carmine Trecroci. 2004. «Fiscal and Monetary Policy Interactions: Empirical Evidence and Optimal Policy Using a Structural NeoKeynesian Model.» Journal of Macroeconomics 26.
+Musgrave, Richard. 1989. Public Finance in Theory and Practice. 5. New York: McGrawHill.
+Perotti, Roberto, Rcardo Reis, y Valerie Ramey. 2007. «In Search of the Transmission Mechanism of Fiscal Policy.» NBER Macroeconomics Annual 22.
+Rodden, Jonathan. 2002. «The Dilemma of Fiscal Federalism: Grants and Fiscal Performance around the World.» American Journal of Political Science 46 (3).
+Romer, David. 2001. Macroeconomía Avanzada. 2nd. Madrid: McGraw-Hill. Saez, Emmanuel. 2012. «Optimal Progressive Capital Income Taxes in the Infinite Horizon
+Model.» Journal of Public Economics 97. von Furstenberg, George M., Jeffrey R. Green, y Jin-Ho Jeong. 1986. «Tax and Spend, or
+Spend and Tax?» The Review of Economics and Statistics 68 (2). von Furstenberg, George M., R. Jeffrery Green, y Jin-Ho Jeong. 1985. «Have Taxes Led
+Government Expenditures? The United States as a Test Case.» Journal of Public Policy 5 (3). Wening, Iván. 2007. «Optimal Fiscal Policy with Redistribution.» The Quarterly Journal of Economics 122 (3).
+59
+
+

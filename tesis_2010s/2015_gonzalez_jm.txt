@@ -1,0 +1,2891 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+SOBRE EL ACCESO AL CRÉDITO Y LA DISMINUCIÓN DE LA INCIDENCIA DE LA POBREZA EN LOS HOGARES RURALES DE MÉXICO:
+UN ANÁLISIS DE DIFERENCIAS EN DIFERENCIAS JOSÉ MARÍA GONZÁLEZ SÁNCHEZ
+PROMOCIÓN 2013-2015
+ASESOR:
+ANTONIO YÚNEZ NAUDE
+JULIO 2015
+
+Dedicatoria Este trabajo quiero dedicarlo a aquellas personas cercanas en mi vida que me apoyaron y confiaron en mi capacidad académica, a aquellos que con simples y grandes palabras de ánimo y comprensión hicieron mejor mi paso por la maestría.
+A mi abuela Refugio Álvarez, al resto de mi familia paterna y materna. A mis queridos abuelos que ya están en otro lugar: Francisca Rodríguez, José Sánchez y Porfirio González.
+A mis hermanas Xóchitl, Renata y Rocío, mis compañeras de viaje en esta travesía llamada vida. A mi madre Rocío, pilar fundamental de mis logros, que son los suyos y, junto con mis hermanas, uno de los motivos diarios por el cual seguir adelante.
+Y a mi padre J. Guadalupe González, en paz descanse, por su amor, comprensión, ayuda e infinitas palabras de ánimo en tiempos necesarios; gracias a él soy economista.
+Agradecimientos La culminación de este trabajo simboliza un período de formación profesional, donde hubo personas que me brindaron su amistad, apoyo y confianza, es por ello que quiero agradecer a aquellas que me acompañaron en la elaboración de la tesis y en mi paso por el posgrado. Primeramente agradezco al Consejo Nacional de Ciencia y Tecnología (CONACyT), a El Colegio de México, especialmente al Centro de Estudios Económicos por haberme apoyado y brindado el privilegio de formar parte del Programa de Maestría en Economía.
+Mi formación como economista se ha fortalecido por la importante enseñanza de mis profesores de El Colegio. Agradezco al doctor Antonio Yúnez Naude, mi asesor de tesis, por innumerables muestras de atención y apoyo académico tanto en mis clases como en la elaboración del presente trabajo. También quiero agradecer al doctor Raymundo Campos por su paciencia, gran apoyo y crítica en este trabajo y así como en mi paso por la maestría. De igual manera agradezco al doctor Julen Berasaluce por sus buenos consejos y disposición a escuchar mis ideas y durante mi último año de estudios. Por otra parte, fueron parte importante para el desarrollo de este trabajo las conversaciones con el doctor Edwin van Gameren.
+i
+
+A mis compañeros de la maestría, con quienes recorrí este viaje lleno tanto de adversidades como de buenos tiempos, entre ellos a David Sánchez, David López, Nahieli, Irene, Alejandro, Jesús, Christian, Mónica, Leslie y Aleida; a mis demás compañeros del Centro de Estudios Económico y amigos de otros centros de El Colegio con quienes compartí clase de idioma, comidas, conversaciones y buenas fiestas. Sobre todo quiero agradecer a Luis Mejía, Miriam González y Dulce Moreno, con quienes compartí los momentos más significativos. A mis amigos Francisco Zazueta y Laura Padilla y muchos más que siempre han estado presentes.
+ii
+
+Resumen En este trabajo se analiza el efecto del acceso al crédito de los hogares rurales de México sobre su ingreso y el crecimiento del mismo en el tiempo, así como la probabilidad de que ellos reincidan en pobreza extrema o pobreza en 2007 para el caso de los hogares que se encontraban en esa condición en el año 2002. La investigación se hizo utilizando un panel de datos obtenidos de la Encuesta Nacional a Hogares Rurales para estos dos años (ENHRUM I y II) aplicando la metodología de Matching con Diferencias en Diferencias. Se concluye que el crédito al que acceden los hogares tiene efecto sobre la disminución de la pobreza vista en términos de que reduce la probabilidad de reincidir en esta condición para el 2007.
+iii
+
+Índice general
+1. Introducción........................................................................................................................ 1 2. Revisión de literatura.......................................................................................................... 4 3. Planteamiento del Problema ............................................................................................... 7 4. Datos sobre Hogares Rurales.............................................................................................. 9 5. Análisis descriptivo .......................................................................................................... 11 6. Estrategia de identificación .............................................................................................. 16 7. Resultados econométricos ................................................................................................ 25 7.1 Crédito en términos generales ........................................................................................ 29 7.2 Crédito formal ................................................................................................................ 30 7.3 Crédito Informal ............................................................................................................. 31 8. Conclusiones..................................................................................................................... 36 9. Anexo estadístico.............................................................................................................. 39 9.1 Análisis descriptivo ........................................................................................................ 39 9.2 Resultados econométricos .............................................................................................. 45 10. Referencias ..................................................................................................................... 47 11. Índice de Tablas..............................................................................................................49
+
+1. Introducción
+
+Most people in the world are poor. If we knew the economics of being poor, we would know much of the economics that really matter. Most of the world’s poor people earn their living from agriculture. If we knew the economics of agriculture, we would know much of the economics of being poor.
+-Theodore Schultz1
+
+La tesis representa un análisis del acceso al crédito de los hogares rurales de México como mecanismo para la disminución de la pobreza. El acceso al crédito y utilización del mismo es de gran importancia para el funcionamiento y desarrollo de las actividades económicas de las personas y de los hogares, permitiéndoles suavizar su consumo cuando enfrentan situaciones adversas. Esto es especialmente aplicable a aquellos en situación de pobreza, ya que el crédito sirve para satisfacer sus necesidades básicas ante la falta de recursos en el presente.
+
+Además de su función para el consumo, el crédito representa una provisión de fondos para aquellos que carecen de liquidez para realizar inversión productiva en un momento determinado, que contribuiría a la disminución de la pobreza de las personas (Cerón Monroy, Méndez Navarro, y Rivera Ramírez, 2008).
+
+Sin embargo, el acceso al crédito no está al alcance de todos pues más de la mitad de la población mundial no participa en los mercados financieros, gran parte de dicha población se encuentra en África, Asia y Latinoamérica. Por ejemplo, Taylor (2012) menciona que en Kenia, Pakistán y Nicaragua menos del veinte por ciento de las personas utilizan instrumentos financieros, ya sea de ahorro o préstamos.
+
+Por su parte, de acuerdo con Demirguc-Kunt y Klapper (2012) solo el nueve por ciento de los adultos en el mundo declararon haber pedido un préstamo en alguna institución financiera formal, de los cuales el catorce por ciento se encuentra en países con economías de alto ingreso contra un ocho por ciento de los que viven en países en desarrollo; aunado a
+
+1 La mayoría de las personas en el mundo son pobres. Si conociéramos la economía de ser pobre, sabríamos mucho de la economía que realmente importa. La mayoría de las personas pobres del mundo obtienen su
+1
+
+esto, en los países desarrollados, la mitad de la población adulta declaró tener, al menos, una tarjeta de crédito, mientras que en economías en vías de desarrollo la proporción se reduce a siete por ciento.
+Cabe señalar que una de cada cinco personas adultas pide un préstamo a instituciones formales, pero según con los autores citados en el párrafo anterior en las regiones con menores ingresos pedir dinero prestado a los amigos o a la familia es la fuente más común de financiamiento; es decir, más de la mitad de las personas en estos países que piden dinero prestado solo lo hacen a partir de fuentes informales.
+Lo mencionado anteriormente resulta consistente con lo que muestran Banerjee y Duflo (2012) en su obra Repensar la Pobreza, pues desde una perspectiva de la oferta son muy pocos los hogares a los que las instituciones financieras de carácter formal les conceden préstamos. Ahora bien, los mercados de tierra, trabajo, crédito y seguros ejercen gran influencia en las personas que habitan en países en desarrollo. Ray (1998) pone atención de lo anterior en las zonas rurales donde algunos de estos mercados son faltantes o imperfectos.
+Debe mencionarse que la información asimétrica y los costos de transacción representan grandes problemas en los mercados crediticios (Taylor, 2012), por ejemplo los prestamistas no consideran pertinente otorgar financiamiento a las personas con escasos recursos o a pequeños productores agrícolas; la situación se agrava si estos habitan en zonas lejanas de los centros urbanos, lugares donde usualmente se ofrecen servicios financieros.
+En los mercados informales de crédito que subsisten en países en desarrollo y principalmente en zonas rurales, la tasa de interés tiende a ser muy alta, si se compara con el promedio anual de 20% de una tarjeta de crédito cobrada por Bank of America, ya que un hogar cuyo ingreso diario promedia entre 99 centavos y 2 dólares que tiene acceso a un crédito informal en promedio paga una tasa de interés mensual de 3.13%. (Banerjee y Duflo, 2012).
+sustento de la agricultura. Si conociéramos la economía de la agricultura, conoceríamos mucho sobre la economía de ser pobre. Traducción del autor.
+2
+
+Por lo tanto, los microcréditos representan una alternativa para las personas que se encuentran cerca o debajo de la línea de pobreza frente a las restricciones de acceso a los servicios financieros de la banca comercial (Taylor, 2012); este instrumento es una opción que tienen los pequeños emprendedores debido a que para tener acceso a créditos no se requieren garantías o colaterales.
+El mismo autor afirma que las Instituciones Microfinancieras (IMF) atienden el problema de información asimétrica mediante la selección de grupos de prestatarios, es decir, formando grupos de personas que piden prestado para que realicen los pagos del mismo en conjunto, lo cual reduce el riesgo de impago.
+Entonces, puede decirse que el microcrédito es una manera de impulsar el desarrollo económico. Uno de los principales promotores de este instrumento es Muhammad Yunus quien en el 2006 obtuvo el premio Nobel de la Paz por “sus esfuerzos para incentivar el desarrollo social y económico desde abajo" (The Official Web site of the Nobel Prize, 2006).
+El presente trabajo profundizó el estudio del efecto del crédito sobre los hogares rurales de México y sobre su pobreza a partir de los datos de la Encuesta Nacional a Hogares Rurales de México (ENHRUM en adelante) correspondiente a los años 2002 y 2007.
+La ENHRUM permitió construir un panel de hogares para aplicar la metodología de Pareamiento por Puntaje de Propensión (Propensity Score Matching o PSM) y de Diferencias en Diferencias, con lo cual se ofrece nueva evidencia del efecto del crédito formal e informal sobre la reducción de la pobreza de los hogares rurales de México en el tiempo. El uso del PSM junto con un análisis de Diferencias en Diferencias hizo posible obtener estimaciones para reducir el sesgo por selección en características observables y no observables de los hogares rurales (Bustos Villegas, 2014).
+Esta investigación comienza por una revisión de la literatura acerca del crédito y el uso del mismo como un medio para la reducción de la pobreza, especialmente en países en desarrollo; en el siguiente apartado se describe el planteamiento del problema y la pregunta de investigación de este trabajo; en el apartado 4 se detallan los datos utilizados para el
+3
+
+análisis mencionado; en el que sigue se expone la estrategia de investigación y después se exponen los hallazgos econométricos así como las conclusiones del estudio.
+2. Revisión de literatura Visto desde la teoría microeconómica el crédito reduce la restricción presupuestaria de las personas u hogares al recibir un flujo de dinero, lo que en un principio provoca un efecto ingreso en la demanda del hogar por bienes y servicios (Armendáriz y Morduch, 2005). Sin embargo, este efecto puede ser menor o igual del efecto sustitución sobre el consumo que presenta la demanda del hogar ante la reducción de las restricciones presupuestaria; es decir, que utilizando un crédito se puede observar la existencia de un aumento en el consumo de bienes de capital para iniciar o expandir un negocio, aspecto que puede ocasionar una sustitución por bienes de consumo básicos. También se espera una sustitución del consumo de ocio por una mayor cantidad tiempo de trabajo.
+Es posible distinguir un efecto ingreso de los créditos a mediano plazo. Según Bustos Villegas (2014), los hogares pueden reducir la vulnerabilidad de ser pobres si utilizan los recursos de los microcréditos en inversiones productivas, cuando estas son mayores a lo destinado para cubrir contingencias imprevistas. Del mismo modo, este autor argumenta que el efecto ingreso del crédito puede ser más directo cuando las personas que acceden al mismo usan esos fondos solo para mantener sus niveles de consumo de una manera estable (suavizándolo) durante momentos o temporadas de crisis, en lugar de destinarlos para el desarrollo de actividades empresariales.
+A propósito de lo anterior Delalande y Paquette (2007) en un estudio de caso en una comunidad rural en Puebla, México, encuentran que los hogares utilizan los microcréditos como si fuesen transferencias directas de dinero para mantener sus niveles de consumo además del uso que les dan para enfrentar diferentes contingencias.
+El modelo de consumo de dos períodos con crédito desarrollado por Banerjee, Karlan y Zinman (2015) provee evidencia de los impactos de los microcréditos. La idea es que los prestatarios tienen una oportunidad de gasto que les generaría beneficios tanto en el presente como en el futuro. Suponiendo que los individuos son consumidores de bienes no duraderos y duraderos (que pueden ser utilizados para el desarrollo de los negocios y les
+4
+
+otorgan un flujo de utilidad), los autores toman en cuenta tanto la tasa de interés, la tasa de descuento en el tiempo y la cantidad máxima que les pueden otorgar como préstamo, para determinar la utilidad del prestatario bajo diferentes esquemas. A partir del modelo microeconómico de los autores se concluye lo siguiente:
+1. Comparando a dos personas, una con mayor acceso al crédito que otra, es más probale que la primera adquiera un bien duradero, pero su consumo total puede ser menor; es decir, si esa persona compra un bien para consumir, su nivel de consumo en el segundo período será menor, pero si adquiere un bien duradero que lo destine a su negocio, el consumo de bienes no duraderos en el segundo período será mayor. Por lo tanto, un incremento en el acceso al crédito dará incentivos de invertir a los que lo experimentan.
+2. El mayor acceso al crédito incrementa la posibilidad que el prestarario realice una mayor inversión fija en su negocio.
+3. Al incluir el salario, oferta laboral y ocio a su modelo, los autores concluyen que aumentar el acceso al crédito conduce a un incremento en la oferta laboral de los prestararios durante el primer período.
+4. Si los bienes duraderos y no duraderos no son sustitutos perfectos, un mayor acceso al crédito puede incrementar la oferta laboral de los prestatarios en ambos períodos.
+Existe una variedad de estudios empíricos que analizan la efectividad de los créditos como medio para la disminución de la pobreza. Banerjee y Duflo (2010) mencionan el Experimento Controlado Aleatoriamente (RCT) realizado por Banerjee, Duflo, Glennerster y Kinnan (2009) en la ciudad india de Hyderabad donde contaron con la colaboración de Spandana (una IMF de la ciudad) en el cual analizan los efectos de los microcréditos en familias que los recibieron. Llevaron a cabo un seguimiento a los hogares en algunos barrios como parte de un grupo de tratamiento que recibió un microcrédito y a otro grupo de hogares como parte del control obteniendo información socioeconómica, de consumo y de los negocios que poseían. Los resultados demuestran que las personas que recibieron un microcrédito fueron más propensas a comenzar un negocio y que los hogares redujeron el consumo de bienes no duraderos para destinar recursos a su negocio. Asimismo, en promedio, los hogares en los barrios del tratamiento, independientemente del préstamo y
+5
+
+cómo lo hayan ocupado, aumentaron la adquisición de bienes duraderos para su hogar o negocio y redujeron su consumo en lo que ellos definen como bienes de tentación.
+Por otra parte, hay un resumen de seis evaluaciones aleatorizadas para la provisión de microcréditos en la India, México, Bosnia, Marruecos, Etiopía y Mongolia realizado por Banerjee, Karlan y Zinman (2015). El diseño experimental en cinco de estos países consistió en una asignación aleatoria de microcréditos en algunos barrios mientras que en Bosnia la asignación del financiamiento fue de carácter individual. Los experimentos en India, México, Marruecos, Etiopía y Mongolia requirieron la identificación de un conjunto de barrios cuyos habitantes cumplieran con los criterios de elegibilidad para el otorgamiento de algún préstamo que requerían las IMF y que se concedieran los microcréditos a un grupo de tratamiento en las localidades donde los habitantes fuesen más propensos a recibir algún financiamiento. Respecto al estudio de Bosnia, el diseño experimental requirió la utilización de un puntaje de crédito para diseñar la aleatorización de la asignación de préstamos a las personas de acuerdo con su solvencia económica.
+Los resultados para los seis estudios aportan evidencia que la expansión del acceso al crédito incrementa, por lo menos la actividad empresarial; no obstante, en ningún caso se encontró evidencia de un efecto de los microcréditos sobre un incremento estadísticamente significativo en el ingreso total del hogar, aunque sí lo existe para el caso del incremento en el ingreso empresarial, que compensa una disminución en el ingreso salarial de los individuos dentro del grupo de tratamiento.
+Los resultados de los seis estudios son mixtos en cuanto al impacto de los microcréditos sobre el nivel de consumo de alimentos y de bienes duraderos, pero un hallazgo robusto es la disminución de consumo de bienes de tentación (recreación/ entretenimiento/ celebraciones), lo que sugiere que las personas “se aprietan el cinturón” como señal disciplinaria (Banerjee, Karlan , & Zinman, 2015).
+Por otra parte Bustos Villegas (2014) aporta evidencia sobre la relación entre microfinanzas y vulnerabilidad2 en los hogares de México; el autor utiliza el enfoque de vulnerabilidad
+2 En su trabajo Bustos Villegas (2014) define vulnerabilidad como “la exposición de los hogares a contingencias, presiones y riesgos económicos, y a la dificultad de los mismos para afrontarlos y superarlos”.
+6
+
+como pobreza esperada con el método de Propensity Score Matching y Diferencias en Diferencias con datos en forma de panel obtenidos de la encuesta Bansefi-Sagarpa sobre servicios microfinancieros del año 2004 a 2008, encontrando que la probabilidad de ser vulnerable es menor en los hogares que recibieron un microcrédito.
+En sus conclusiones Bustos destaca que los microcréditos incrementaron los niveles de consumo de los hogares en veinticinco por ciento, pero tuvieron un efecto débil sobre la adquisición de activos productivos para emprender micro negocios, aunado al hecho que no necesariamente estimularon el desarrollo de esos negocios ni el aumento en sus márgenes de ganancia.
+A su vez, Cerón Monroy, Méndez Navarro, y Rivera Ramírez (2014) se preguntaron cuáles eran los determinantes de la participación de los hogares rurales en el crédito formal e informal; así como el impacto que tenían sobre los niveles de pobreza. Usaron datos de la ENHRUM I y emplearon la metodología del PSM para medir los efectos sobre los niveles de pobreza en los hogares de comunidades rurales mexicanas. En cuanto a los determinantes del acceso al crédito total e informal, los autores encontraron que sólo el número de tractores poseídos por el hogar es significativo. Otro resultado es que para acceder a un crédito informal los hogares no requieren contar con ganado, casa propia u otros activos que representarían una garantía o colateral para el otorgamiento del mismo. Respecto al estudio de estos autores sobre los determinantes del crédito formal, sus resultados no pueden tomarse como concluyentes debido a que la cantidad de hogares que declararon tener algún tipo de crédito es baja. Los resultados del estudio sobre los efectos del crédito indican que el informal redujo la pobreza alimentaria y que el formal lo hizo con la pobreza patrimonial. Asimismo la reducción de la pobreza fue mayor cuando los hogares tuvieron acceso al crédito formal comparado a la reducción de los que tuvieron acceso al crédito de tipo informal.
+3. Planteamiento del Problema Ante la falta de contundencia de los hallazgos en la literatura sobre México arriba reseñada y con base en el panel de la ENHRUM, la principal pregunta de investigación es: ¿ha sido significativo a través del tiempo el efecto del acceso al crédito (formal e informal) sobre la disminución de la incidencia de la pobreza en los hogares rurales de México? Es también
+7
+
+de interés conocer qué tipo de crédito es más efectivo para reducirla: el formal o el informal. El experimento ideal para poder contestar la pregunta de investigación de no existir restricciones financieras ni de tiempo consistiría en asignar créditos aleatoriamente en un punto en el tiempo sobre una gran población homogénea de hogares rurales distribuidos en México que no tengan acceso al crédito. Lo siguiente consta en comparar en el tiempo a estos hogares con un grupo de hogares con características idénticas a ellos que no recibieron un crédito. De esa manera se podrá tratar de identificar con facilidad el efecto de tener un crédito en el tiempo sobre la disminución de los niveles de pobreza o el aumento en el ingreso en los hogares rurales que lo recibieron (ver Ilustración 1).
+Ilustración 1 Línea del tiempo hipotética para el experimento ideal
+Desafortunadamente no se contó con tiempo ni recursos para llevar a cabo el experimento ideal para la presente investigación. Frente a ello, la alternativa fue utilizar la ENHRUM, para lo cual hay que tomar en cuenta que el acceso al crédito es una cuestión de carácter no aleatorio para los hogares rurales, debido a que quienes lo reciben se comportan o son diferentes de quienes no; además en la ENHRUM I hubo hogares que ya han recibido algún tipo de financiamiento en ese período (el inicial), por lo que la asignación de un grupo de tratamiento y es tarea sencilla. El reto se complica por la dificultad en comparar a estos dos grupos a través del tiempo (abordando estas cuestiones en la sección 6).
+8
+
+4. Datos sobre Hogares Rurales Como se mencionó, los datos utilizados para el análisis fueron obtenidos de la ENHRUM I, para el año 2002 y ENHRUM II para el 2007, publicada en www.das-ac.mx. La ENHRUM II es un seguimiento de los hogares rurales que fueron entrevistados en la primera ronda, por lo que puede construirse un panel de datos de hogares para los años en cuestión.
+La ENHRUM I es una muestra representativa de los hogares rurales que vivieron en localidades de entre 500 y 2499 habitantes. El muestreo incluyó cinco regiones del país de las cuales se seleccionaron catorce estados. Para la región Sureste se eligieron Yucatán, Veracruz y Oaxaca; la región Centro en esta encuesta la conformaron los estados de México y Puebla; de la región Centro-occidente fueron parte Guanajuato, Nayarit y Zacatecas; para la región Noroeste se incluyeron Sinaloa, Sonora y Baja California; y en la región Noreste se seleccionó a Tamaulipas, Chihuahua y Durango.
+En las dos rondas de la ENRHUM se recabó detalladamente la misma información sociodemográfica y de la vivienda de los hogares, su producción, fuentes de ingresos, gastos y activos. La muestra está constituida por 1765 hogares rurales para la primera ronda distribuidos en 80 localidades de las cinco regiones rurales y por 1543 hogares distribuidos en las mismas localidades para su segunda versión. Para fines de comparación y de estimación se trabajó con un panel balanceado de 1543 hogares que brindan información para ambos años.
+Una de las características de los hogares rurales de México (y de otros países en desarrollo) es la diversificación de sus fuentes de ingreso, incluyendo el de tipo no monetario proveniente de su producción para el autoconsumo. Para incluir tal diversificación y a ambos tipos de ingresos en el trabajo econométrico se procedió de la siguiente manera:
+ El ingreso monetario de los hogares comprende el proveniente de las remesas (de Estados Unidos y otras partes de México); el ingreso por trabajo asalariado total de dentro y fuera de la localidad (actividades agrícolas y no agrícolas), el beneficio empresarial de actividades del hogar (cultivos, ganadería, explotación de recursos naturales, pesca etc.); el ingreso por transferencias de programas sociales; por la renta de activos y el obtenido por negocios que tienen los hogares.
+9
+
+ El componente no monetario del ingreso de los hogares es el autoconsumo que estos realizan de los bienes que ellos producen sin comercializarlos3.
+Con base en lo anterior, se estimó el ingreso “neto” de cada hogar para los dos años restándole al ingreso la cantidad que declararon haber pagado los hogares con motivo de préstamos y de tasas de interés.
+Siguiendo la metodología del CONEVAL (2015) para la medición de la pobreza en su página web menciona que “se utilizan dos líneas de ingreso: la línea de bienestar mínimo que es equivalente al valor de la canasta alimentaria por persona al mes, y la línea de bienestar equivalente al valor de la canasta alimentaria y de la no alimentaria por persona por mes” (http://www.coneval.gob.mx/Medicion/Paginas/Lineas-de-bienestar-y-canastabasica.aspx).
+Con el fin de construir las líneas de bienestar de los hogares se utilizaron las de “Bienestar” y “Bienestar Mínimo” por individuo calculadas por el CONEVAL para áreas rurales del mes de julio del año 2002 y 2007 como una aproximación al valor promedio de las líneas de esos años, se ajustaron a la escala de equivalencia4 y se multiplicaron por doce para obtener una medida anual. (CONEVAL, 2015)
+También siguiendo al CONEVAL se establece que un hogar se encuentra en pobreza extrema si su ingreso neto anual se encuentra en o por debajo de la Línea de Bienestar Mínimo ajustada; asimismo un hogar se encontrará en situación de pobreza si su ingreso anual se encuentra en o por debajo de la Línea de Bienestar ajustada a partir de los cálculos expuestos.
+Para hacer comparable el ingreso de los hogares en el tiempo, se deflactaron estas variables al nivel de precios correspondientes a la segunda quincena de diciembre del 2010, usando
+3 Lo ideal sería una valoración de los precios sombra de esos bienes, pero por fines prácticos de la investigación, se valoró el autoconsumo con los precios promedio en la localidad o municipio de esos bienes que consumen. 4 Las escalas de equivalencia utilizadas en el país con datos estimados en el 2006: para individuos del grupo de edad de 0 a 5 años la escala que le corresponde es 0.7; para el grupo de 6 a 12 años, 0.74; para el grupo de 13 a 18 años, 0.71 y para el grupo de 19 a 65 años, 0.99. Santana (2009).
+10
+
+el Índice Nacional de Precios al Consumidor para julio del 2002 (de 69.1) y para julio de 2007 (de 84.29).
+Finalmente, los tratamientos sobre acceso al crédito se definieron a partir de lo siguiente: si un hogar ha recibido un crédito formal en el 2002 es porque lo obtuvo de algún banco comercial; si recibió un crédito informal es porque tuvo un préstamo de algún negocio u otra persona; y, un hogar ha recibido algún tipo de crédito si en el 2002 tuvo financiamiento de alguna fuente formal o informal.
+5. Análisis descriptivo Por lo general las instituciones financieras formales tienen una cobertura muy baja en las zonas rurales para ofrecer sus servicios, además, son limitados los instrumentos financieros diseñados para atender a estas zonas donde el ingreso promedio de los hogares es bajo. A propósito de lo anterior, con información de la encuesta comunitaria de la ENHRUM I, en 2002 no existió ningún banco comercial dentro de las 80 localidades que pertenecen al panel de datos formado para realizar el presente análisis5, por lo que habrá costos de transacción para que los hogares rurales accedan a créditos formales y recurrirán a otras fuentes de financiamiento, principalmente informales (Cerón Monroy, Méndez Navarro, & Rivera Ramírez, 2008). Por su parte, según datos de la ENHRUM I, el porcentaje de hogares que tuvieron acceso al crédito no es muy distinto a lo reportado en la literatura, el 80% declaró no haber tenido ningún tipo de crédito. En cifras, poco más de dos millones de hogares rurales no tuvieron ningún préstamo en ese año en comparación a un poco menos de quinientos cuarenta mil hogares que sí tuvieron alguno. De esos últimos, solo el cuatro por ciento participó en el mercado formal de crédito, aspecto no sorpresivo en comparación a otros países y regiones rurales del mundo (Banerjee & Duflo; Demirguc-Kunt & Klapper, 2012). En las tablas 1 y 2 se presentan los promedios simples de las características principales de los hogares rurales mexicanos para el año 2002 correspondientes al panel que se construyó. La muestra del panel se expandió de tal manera que los datos presentados son para los hogares rurales de todo el país. La tabla 1 muestra que en el año 2002 no hubo participación
+5 Si se toman en cuenta todos los hogares para la encuesta de ese año, tampoco existe ningún banco establecido dentro de las 80 localidades que conforman la muestra de hogares.
+11
+
+de los hogares en los mercados crediticios formal e informal de manera simultánea y se observa la existencia de una relación entre los hogares que tuvieron acceso a alguna de las dos fuentes de crédito y su posesión de ganado, tractores y una casa propia (excepto por los que tuvieron un crédito informal). Con el fin de otorgar certeza en las diferencias de las características de los hogares así como de sus ingresos se realizaron pruebas de diferencias de medias muestrales entre estos dos grupos.6 Como una primera aproximación al análisis de características particulares de los hogares que acceden al crédito es importante conocer las diferencias entre los que tuvieron un crédito formal y los que tuvieron uno del tipo informal (tabla 3). La prueba destaca una diferencia significativa en mayor superficie de parcelas, posesión de tractores y cabezas de ganado en los hogares que tuvieron un crédito formal. Para extender el análisis descriptivo las tablas 4 y 5 muestran el nivel de pobreza de los hogares del panel que tuvieron acceso al crédito con los que no destacando el hecho que los que participaron en el mercado crediticio, en promedio, tuvieron un menor nivel de pobreza extrema así como de pobreza en comparación con los hogares que no tuvieron acceso al mismo; a su vez, los hogares con crédito formal no se encontraron en estado de pobreza tanto en el 2002 como en el 2007 comparado con los que recurrieron a un financiamiento informal. Con el fin de distinguir estadísticamente las diferencias en nivel de pobreza según el tipo de crédito que recibieron los hogares, también se realizaron pruebas estadísticas de diferencias de medias muestrales (tablas A6 a A9 del anexo estadístico). Con el fin de distinguir estadísticamente las diferencias en nivel de pobreza según el tipo de crédito que recibieron los hogares, también se realizaron pruebas estadísticas de diferencia de medias muestrales (tablas A6 a A9 del anexo estadístico7).
+6 6 Pueden consultarse en el anexo estadístico (tablas A1 a A3) y la tabla 3 de abajo, respectivamente 7 Estas tablas muestran las diferencias entre los hogares que recibieron un crédito en general contra los que no, los que recibieron un crédito de tipo formal contra los que no lo recibieron, los hogares que recibieron un crédito informal contra los que no; y por último, los hogares que recibieron un crédito de tipo informal en comparación a los que recibieron uno de tipo formal. Resultó que el nivel de pobreza y pobreza extrema de los hogares con financiamiento informal fue mucho mayor en el 2002 que los que recurrieron al crédito formal, hecho que podría asociarse al uso inmediato de esos préstamos sobre necesidades urgentes de los hogares más que a una generación de nuevos negocios.
+12
+
+Tabla 1 Características de hogares rurales en el 2002 por tipo de crédito recibido
+
+Variable
+
+Total de Hogares
+
+Hogares Hogares con Hogares con
+
+con
+
+Crédito
+
+Crédito
+
+Crédito Formal
+
+Informal
+
+Observaciones*
+
+2,748,721 539,832
+
+21,274
+
+518,558
+
+Sexo del Jefe del hogar 0.873
+
+0.8709
+
+0.976
+
+0.867
+
+(Hombre=1, Mujer=0) (0.333) (0.3359)
+
+(0.16)
+
+(0.341)
+
+Edad del jefe del hogar (años)
+
+48.321
+
+45.6397
+
+55.702
+
+45.227
+
+(15.558) (14.9631) (14.171) (14.871)
+
+Escolaridad del jefe (años)
+
+4.297
+
+4.9766
+
+5.445
+
+4.957
+
+(3.566) (3.6029)
+
+(5.088)
+
+(3.539)
+
+Tamaño de hogar
+
+5.027
+
+5.0578
+
+5.517
+
+5.039
+
+(2.205) (2.2424)
+
+(1.712)
+
+(2.262)
+
+Familiares migrantes en E.U.A
+
+0.259
+
+0.2871
+
+0.321
+
+0.286
+
+(0.635) (0.6442)
+
+(0.486)
+
+(0.65)
+
+Familiares migrantes en México
+
+0.361
+
+0.2804
+
+0.723
+
+0.262
+
+(0.729) (0.6348)
+
+(0.909)
+
+(0.616)
+
+Superficie de parcelas (hectárea)
+
+4.022
+
+4.3539
+
+26.779
+
+3.434
+
+(13.357) (21.0247) (71.451) (15.642)
+
+Tractores
+
+0.016
+
+0.0418
+
+0.111
+
+0.039
+
+(0.125) (0.2005)
+
+(0.328)
+
+(0.194)
+
+Cabezas de ganado
+
+10.973 9.9703
+
+19.328
+
+9.586
+
+(17.343) (15.7682) (39.374) (14.007)
+
+Casa propia (Sí=1, No=0)
+
+0.92
+
+0.8845
+
+0.976
+
+0.881
+
+(0.272) (0.3201)
+
+(0.16)
+
+(0.325)
+
+*Ajustadas al factor de expansión. Desviaciones estándar en paréntesis. Fuente: elaboración propia con datos obtenidos de la ENHRUM I.
+
+Hogares sin Crédito 2,208,889 0.873 (0.333)
+48.976
+(15.636)
+4.131
+(3.539) 5.02 (2.197)
+0.252
+(0.632)
+0.38
+(0.749)
+3.941
+(10.689) 0.01 (0.097) 11.218 (17.703)
+0.928
+(0.258)
+
+13
+
+Tabla 2 Ingreso de los hogares por tipo de crédito recibido
+
+Variable
+Observacionesa Ingreso neto del hogaraa
+
+Total de Hogares
+2,748,721 88,095.30
+
+Hogares con Crédito
+539,832
+
+Hogares con
+Crédito Formal
+
+Hogares con Crédito
+Informal
+
+Hogares sin Crédito
+
+21,274.33 518,558 2,208,889
+
+116,361.2 915,301.90 83,583.89 81,187.37
+
+(pesos)
+Diferencia en el ingreso netoaa
+
+(623,856.60) (1,171,834) (5,971,227) (217,588) (386,535.90) 95,781.41 168,992.1 -311,115 188,689 77,889.39
+
+(pesos)
+
+(898,424.20) (1,564,014) (5,710,791) (1,139,114)
+
+aAjustadas al factor de expansión. aaA precios constantes de 2010.
+
+Desviaciones estándar en paréntesis.
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+(637,710.50)
+
+14
+
+Tabla 3 Diferencia de medias muestrales de hogares con créditos informales y formales
+
+Con
+
+Con
+
+Variable
+
+crédito crédito Diferencia Pr(|T| > |t|)
+
+informal formal
+
+Sexo del Jefe del hogar
+
+0.8591549 0.9230769 -0.063922 0.5152
+
+(0=Mujer, 1=Hombre)
+
+(0.0980975
+
+Edad del jefe del hogar (años) 45.82394 51.69231 -5.868364 0.1532
+
+4.097584
+
+Escolaridad del jefe (años)
+
+5.028169 5.846154 -0.8179848 0.4531
+
+1.088816
+
+Tamaño de hogar
+
+4.996479 5.692308 -0.6958288 0.2456
+
+0.5980872
+
+Familiares migrantes en E.U.A
+
+0.2746479 0.3076923 0.0330444
+
+0.851
+
+0.1758089
+
+Familiares migrantes en México
+
+0.2570423 0.3846154 -0.1275731 0.4646
+
+0.1742244
+
+Superficie de parcelas (hectárea)
+
+5.350607 52.41154 -47.06093*** 0.0001
+
+11.78506
+
+Tractores
+
+0.0598592 0.2307692 -0.1709101** 0.0161
+
+0.0706227
+
+Cabezas de ganado
+
+10.10563 31.15385 -21.04821*** 0.001
+
+6.335992
+
+Casa propia (1=Sí, 2=No)
+
+0.8873239 0.9230769 -0.035753 0.6895
+
+0.0894127
+
+Ingreso neto del hogar 2002 a 98716.52 3423970 -3325253***
+
+0
+
+(pesos) Diferencia en el ingreso neto a 243817
+
+672218.8 -2844896 3088712***
+
+0.0002
+
+(pesos)
+
+813138.1
+
+Observaciones
+
+284
+
+13
+
+a Precios constantes del 2010.
+
+Errores estándar en paréntesis
+
+Los efectos son significativos si *con nivel de confianza del 90%; ** con nivel de confianza
+
+del 95%; *** con nivel de confianza del 99%
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+15
+
+Tabla 4 Porcentaje de Hogares en Pobreza
+
+Total
+
+Con crédito
+
+Sin crédito
+
+Año
+
+2002
+
+2007
+
+2002
+
+2007
+
+2002
+
+2007
+
+Pobreza Extrema 33%
+
+24%
+
+26%
+
+21%
+
+35%
+
+25%
+
+Pobreza
+
+64%
+
+45%
+
+54%
+
+42%
+
+66%
+
+45%
+
+No Pobreza
+
+36%
+
+55%
+
+46%
+
+58%
+
+34%
+
+55%
+
+Observaciones
+
+2,748,721
+
+539,832
+
+2,208,889
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II ajustados al factor de expansión así como líneas de bienestar económico del CONEVAL (2015).
+
+Tabla 5 Porcentaje de Hogares en Pobreza de acuerdo al tipo de crédito recibido
+
+Crédito Formal
+
+Crédito Informal
+
+Año
+
+2002
+
+2007
+
+2002
+
+2007
+
+Pobreza Extrema 38%
+
+3%
+
+26%
+
+21%
+
+Pobreza
+
+45%
+
+3%
+
+54%
+
+44%
+
+No Pobreza
+
+55%
+
+97%
+
+46%
+
+56%
+
+Observaciones
+
+21,274
+
+518,558
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II ajustados al factor de expansión así como líneas de bienestar económico del
+CONEVAL (2015).
+
+El análisis anterior indica que hay cierta asociación entre los tipos de crédito que recibieron los hogares y el nivel de pobreza y pobreza extrema, así como características socioeconómicas y de capital de los hogares rurales. Sin embargo, con base en lo anterior no es posible establecer una causalidad del efecto de los créditos sobre una disminución de la pobreza ya que pueden haber otras características no observables que distingan a los receptores de este servicio financiero. Es entonces necesario un análisis econométrico, que es el principal propósito de este trabajo de investigación.
+
+6. Estrategia de identificación La estrategia de identificación del problema de investigación utilizando el método de Pareamiento con Diferencias en Diferencias (Matching with Differences in Differences) permitió reducir los sesgos de selección así como la estimación de efectos utilizando datos no experimentales. Al realizar inferencia causal en este trabajo se pretende identificar el
+
+16
+
+efecto que los hogares accedan a un crédito sobre la disminución de la pobreza utilizando los datos en panel de la ENHRUM. Para el desarrollo de este apartado se siguió fundamentalmente los trabajos de Todd (2008) y Khandker, Koolwal, & Samad, (2010) sobre evaluación de programas sociales con asignación endógena y selección en los tratados. En el proceso de identificación D=1 se refiere a los hogares que acceden a un crédito de cualquier tipo y D=0 al resto. es el resultado potencial (variable de resultado asociada a la reducción de la pobreza) para los hogares que no tuvieron un crédito y el resultado potencial para los que sí lo tuvieron. A su vez, solo se puede observar un resultado para cada hogar i (Holland, 1986) de acuerdo con el modelo de Neyman-Holland-Robin:
+(1)
+Donde es el resultado asociado al hogar que tiene acceso al crédito y es el resultado asociado al hogar si no hubiese accedido al crédito (independientemente si tuvo acceso o no). De acuerdo con el Problema Fundamental de la Inferencia Causal, para cada individuo solo se puede observar uno de los dos estados potenciales en cualquier punto en el tiempo (Angrist y Pischke, 2009), por lo que el resultado potencial realmente observado se puede expresar como una combinación lineal de ambos resultados:
+(2) Los beneficios de un hogar al pasar de no haber recibido el crédito al hecho de haberlo recibido, o el efecto causal del acceso al crédito es:
+(3)
+El problema es que esa ganancia no es observable directamente, por lo tanto se tiene que inferir a partir de métodos de evaluación de impacto de programas o de otras intervenciones; en el caso de la presente investigación, de los efectos de acceder a un crédito. Al respecto, algunos de los principales parámetros de interés para realizar la evaluación son:
+ La ganancia promedio del programa de acceder al crédito que obtienen los hogares con características X, o el Impacto Promedio del Tratamiento (Average Treatment Effect o
+17
+
+ATE), que es la ganancia en promedio que un hogar escogido aleatoriamente con características X obtiene al obtener crédto:
+(4)
+ Por su parte, el Impacto Promedio del Tratamiento sobre los Tratados (Average Treatment Effect on the Treated o ATT) es:
+(5)
+Teniendo en cuenta los parámetros para observar la ganancia o el efecto que tiene el acceso al crédito sobre alguna variable de resultado para los hogares, es necesario abordar el problema del sesgo en los estimadores que generan características no observables. Sean las siguientes expresiones el resultado potencial relacionado a la disminución de la pobreza como una función aditiva de características observables X, y no observables, U:
+(6)
+(7)
+Donde el subíndice 1 se refiere a la variable de resultado de los hogares que tienen acceso al crédito y el subíndice 0 se refiere a los hogares que no cuentan con ningún tipo de crédito; entonces el resultado potencial observado asociado a la reducción de la pobreza de los hogares se reescribe como:
+(8)
+Si el valor esperado de las características no observables, dados los valores de las características observables independientemente del tratamiento, es igual a cero; es decir,
+, entonces no existe correlación entre ellas, por lo que el efecto de haber accedido al crédito sobre una variable de resultado potencial de los hogares se expresa como:
+(9)
+18
+
+El problema surge al trabajar con una variable de tratamiento cuya asignación no es
+
+aleatoria, pues los hogares que reciben créditos son diferentes a los que no lo reciben. En
+
+esa situación se espera que exista correlación entre las características no observables y la
+
+decisión de tener un crédito, o bien que los hogares basen su decisión de beneficios futuros
+
+por acceder a un crédito sobre aspectos no observables, es decir
+
+y
+
+, teniendo como consecuencia un problema de sesgo en los estimadores de la
+
+ganancia del programa debido a los aspectos como la autoselección de los hogares.
+
+Al tener en cuenta este aspecto en el tratamiento o el hecho de haber recibido un crédito es
+
+necesario suponer que, condicionado en características observables, el efecto del crédito es
+
+diferente entre los hogares y que
+
+(la diferencia entre características no observables
+
+de los hogares que tuvieron acceso al crédito y los que no) prediga quién participa en el
+
+crédito
+
+Los estimadores del impacto de un programa (acceso al crédito en el caso del presente
+
+estudio) utilizan dos tipos de datos de tipo no experimental para imputar el resultado
+
+contrafactual faltante a los participantes del programa: aquellos de los participantes en un
+
+punto en el tiempo antes de entrar al programa o tratamiento y los datos de los no
+
+participantes. Se consideran diferentes métodos para estimar el parámetro de
+
+; entre
+
+ellos el Estimador de Corte Transversal y de Diferencias en Diferencias. Considerando una
+
+regresión con datos en forma de panel de las ecuaciones (6) y (7):
+
+(10)
+
+(11)
+
+Donde i representa al hogar y t es el período de tiempo de corte, agregando el supuesto que
+
+las características no observables para hogares que tuvieron acceso al crédito y los que no,
+
+y , tienen distribuciones independientes además que
+
+y
+
+. La matriz representa las variables observables cuya distribución se
+
+supone inalterada por la decisión del hogar de contar o no con un crédito.
+
+19
+
+Dado lo anterior en un estimador de corte transversal se utilizan los datos de un grupo de comparación de no participantes en el crédito (grupo de Control) para asignar resultados contrafactuales a los hogares que tienen acceso al crédito. Para ello se requieren datos ex post acerca de los hogares que recibieron o no algún crédito. El resultado observado en el período t se puede escribir como:
+
+(12)
+
+Donde es el estimador de corte transversal. Para que lo anterior sea consistente, se
+
+requiere que los términos de error o factores no observables condicionados a tener acceso al
+
+crédito no tengan correlación con variables observables, es decir
+
+; de esta
+
+manera se excluye la posibilidad de que exista autoselección en los hogares basados en
+
+expectativas de características no observables para tener acceso a un crédito.
+
+Dicho eso se debe tener certeza del hecho que las características observables de los hogares rurales afectan la decisión de acceder a un crédito. Sin embargo, utilizar esta estrategia conducirá a un efecto sesgado al comparar los hogares que tienen crédito con los que no tienen si existen otros factores que no se observan por los que el hogar no participa en el mercado crediticio.
+
+Por otra parte, el estimador de Diferencias en Diferencias mide el impacto del crédito en los hogares por la diferencia en el cambio de antes y después en la variable de resultado entre los hogares que tuvieron acceso al crédito y los que no. El modelo mostrado en la siguiente ecuación se construye utilizando las observaciones de hogares participantes y no participantes en el mercado de crédito:
+
+(13)
+
+Esta clase de estimador permite la existencia de puntos de origen comunes específicos en el
+
+tiempo entre ambos grupos,
+
+, además que el efecto en el tiempo se identifica a partir
+
+del resultado de los hogares participantes con el de los no participantes. Gráficamente se
+
+observa el efecto en el tiempo de acceder al crédito sobre la variable de resultado asociada a
+
+la disminución de la pobreza:
+
+Ilustración 2 Impacto bajo el esquema de Diferencias en Diferencias
+
+20
+
+Fuente: Adaptación al problema de investigación a partir de la Ilustración de Khandker, Koolwal, & Samad, (2010).
+
+El estimador es consistente si
+
+, como se ha explicado arriba. La ventaja
+
+de los estimadores longitudinales respecto a los de corte transversal es que los primeros
+
+permiten la existencia de variables no observables invariantes en el tiempo determinantes
+
+de la decisión de participar en el mercado de crédito.
+
+Ante la naturaleza no experimental de los datos y la existencia de selección de los hogares en la decisión de acceder a un crédito, se tienen que comparar los resultados de los participantes en el mercado de crédito con los resultados de hogares similares que no participaron en él a partir de un matching o pareamiento. Una de las ventajas de los estimadores que se construyen con este procedimiento es que no requieren ninguna forma funcional y por lo tanto no son susceptibles a un sesgo por una especificación incorrecta. El Propensity Score Matching es uno de los métodos de pareamiento mayormente utilizado en la literatura de Evaluación de Proyectos (Khandker, Koolwal, & Samad, 2010).
+
+Como se mencionó en esta misma sección, los estimadores de matching de corte transversal son útiles en contextos donde el investigador tenga la certeza que la selección a un programa o tratamiento se observa a partir determinantes observables y que la variación restante se deba a factores aleatorios. Por su parte, los estimadores de matching de diferencias en diferencias identifican los efectos del tratamiento al comparar el cambio en los resultados para hogares tratados con el cambio en los resultados al ser pareados con los que no lo son; este método permite la existencia de autoselección en un programa o tratamiento basado en características no observables suponiendo que estas permanecen invariantes en el tiempo.
+21
+
+El matching puede ser difícil de estimar cuando el conjunto de variables condicionantes es demasiado largo (Todd, 2008), por lo que se sugiere la reducción de la dimensión del problema de condicionalidad.
+
+Dadas las variables de resultado Y y covariables X, se tiene que:
+
+,
+
+(14)
+
+Por lo que:
+
+), (15)
+
+Lo que significa que cuando la variable de resultado (ingreso o reducción de la pobreza de los hogares) es independiente de la participación del programa, condicional en el subconjunto de variables X, también es independiente de la participación en el crédito condicionado en la probabilidad de participación, es decir:
+
+(16)
+
+Por lo tanto cuando el matching, utilizando el subconjunto de variables observables X es válido, también lo será cuando se realice sobre un estadístico básico de ese subconjunto, Pr (D=1|X), o sea la probabilidad de acceder a un crédito dado cierto conjunto de variables observables. A esto se le conoce como la propiedad de Inconfundibilidad del Propensity Score.
+
+El proceso de creación del Propensity Score consiste en construir una ponderación para un grupo de comparación y se puede descomponer en dos etapas:
+
+Primero se estima el Propensity Score Pr(D=1|X), un puntaje de propensión utilizando un modelo de elección discreta binario tal como un modelo probit o logit, ese puntaje tiene que tener una probabilidad positiva, que cumpla con la propiedad de la existencia dentro una región de soporte común.
+
+22
+
+Siguiendo la metodología de (Cerón Monroy, Méndez Navarro, & Rivera Ramírez, 2008), el modelo de elección discreta, probit tiene que explicar la probabilidad de un hogar de recibir un crédito, formal e informal o ambos.
+
+En una segunda etapa se parea a los hogares con base en sus probabilidades de participación estimadas anteriormente.
+
+Sea
+
+la probabilidad de obtener un crédito dado ciertas características
+
+observables, por lo que un estimador de matching de corte transversal se define como:
+
+(17)
+
+Donde
+
+, denota el conjunto de hogares participantes del
+
+crédito, el conjunto de hogares no participantes, esla región de soporte común, es el
+
+número de hogares en el conjunto
+
+. El pareo para cada hogar participante i
+
+se construye como un promedio ponderado sobre la variable de resultado de los hogares no
+
+participantes, donde los pesos ) dependen de la distancia entre y .
+
+Se define una vecindad
+
+para cada hogar i en la muestra de participantes. Los vecinos
+
+del hogar i son los no participantes
+
+para quienes
+
+. Los hogares pareados a i
+
+son quienes están en el conjunto
+
+.
+
+Una última propiedad del Propensity Score Matching es la de Balanceo, la cual dicta que la
+
+asignación al tratamiento es independiente de las características, X, dado el Propensity
+
+Score, es decir
+
+.
+
+Hay distintos estimadores de matching que difieren en la manera que se define la vecindad y cómo se construyen los pesos:
+
+1. Vecino más cercano (Nearest Neighbor) Donde la vecindad se construye como
+
+(18)
+
+23
+
+Se selecciona al hogar no participante con el valor de más cercano a como su pareja o match.
+
+2. Radio. Una variación del tipo Vecino más Cercano, la cual realiza un intento de evitar
+
+malos pareos al imponer una tolerancia en la distancia mínima permitida
+
+. Esta
+
+tolerancia se define como ε, donde la vecindad
+
+(19)
+
+Si no se encuentran pareos a las personas tratadas, estas se excluyen del análisis. Por lo que este tipo de matching es una manera de imponer una condición de soporte común.
+
+3. Kernel local lineal. Un pareo para cada participante del programa utilizando una media ponderada sobre múltiples observaciones en un grupo de comparación. El estimador kernel de matching no paramétrico está dado por
+
+, (20)
+
+Donde es una función kernel y es un parámetro de amplitud de ventana. Como se ha hablado anteriormente, para obtener un estimador de matching se tiene que determinar la región de soporte común. Para construir la región de soporte común se tiene que:
+
+(21)
+
+Donde paramétricos dados por
+
+son estimadores de densidad estrictamente positivos no
+
+(22)
+
+donde es un parámetro de ancho de banda.
+4. Por Estratificación o intervalos. En el cual el soporte común de P se parte en un conjunto de intervalos, dentro de cada uno se toma la diferencia entre medias de los resultados para D=1 y D=0, los hogares que recibieron crédito y los que no. Un promedio
+
+24
+
+ponderado de la diferencia entre los tratados y no tratados en cada bloque provee un estimador de impacto general.
+El estimador de matching de Diferencias en Diferencias requiere que:
+(23)
+Donde t y t’ son los períodos de tiempo que corresponden a después y antes de haberse unido al programa o recibido el tratramiento. También se requiere el cumplimiento de la condición de soporte en ambos períodos.
+El estimador de diferencias en diferencias está dado por:
+(24)
+Como se mencionó anteriormente, este estimador permite que la selectividad en el crédito se base en ganancias anticipadas de él, es decir, D puede ayudar a predecir el valor de dada P(X), la probabilidad de acceder al crédito. Los hogares que tienen crédito pueden ser los que esperan los más altos valores de , pero no necesariamente tienen que ser sistemáticamente diferentes en términos de sus cambios en .
+En este trabajo se realizó un Propensity Score Matching con variables de observables del año 2002, para identificar el efecto promedio en los hogares de acceder al crédito (total, formal e informal) en ese mismo año sobre: el ingreso neto después de haber pagado préstamos en el año base (cuyo estimador es de corte transversal); el incremento del ingreso neto de los hogares en el tiempo; y la probabilidad de reincidencia en estado de pobreza extrema y pobreza en el 2007 (obteniendo estimadores de diferencias en diferencias).
+7. Resultados econométricos
+Para obtener los estimadores de matching por diferencias en diferencias fue necesario construir un modelo probit con el fin de obtener un Puntaje de Propensión (visto sección 6), de tal manera que se definieron las características observables que determinan la probabilidad de un hogar de acceder a un crédito en general, y a uno de tipo formal e informal, por separado.
+25
+
+Para ello, se utilizaron las variables propuestas en el estudio sobre los determinantes de la participación de los hogares de México en el mercado de crédito realizado por (Cerón Monroy, Méndez Navarro, & Rivera Ramírez, 2008) en el cual resumen de manera general estudios realizados anteriormente en otros países.
+Al respecto, son importantes los aspectos sociodemográficos y las características del jefe del hogar, ya que influyen en la participación en el crédito de los hogares, así como de las decisiones que toman las instituciones financieras y los prestamistas para otorgar financiamiento a las personas.
+Asimismo, la riqueza y posesión de bienes y activos de los hogares son importantes para establecer garantías o colaterales ante la posibilidad de impago de un préstamo de los hogares, por lo que las características del capital del hogar son posibles determinantes para acceder a un crédito.
+De igual manera, las variables comunitarias engloban aspectos de los posibles costos de transacción que enfrentan los hogares para acudir a las instituciones financieras formales que por falta de vías de comunicación y transporte adecuadas no se establecen en las comunidades.
+Con base en lo anterior se enlistan a continuación las variables utilizadas como posibles determinantes del acceso al crédito (que serán características observables) y de esa manera poder construir y obtener un Propensity Score.
+Variables sociodemográficas: miembros del hogar, miembros del hogar que viven en Estados Unidos y en otras partes de México, tasa de dependencia del hogar, variable dicotómica si el hogar recibe algún apoyo gubernamental. Para el jefe del hogar se utilizó información sobre sexo, edad, escolaridad, una variable dicotómica de educación básica, una variable dicotómica de educación media y superior, una variable dicotómica de seguro social y una variable dicotómica de enfermedad en el año. Variables de Capital de los hogares: el número de cabezas de ganado, una variable dicotómica de posesión de casa propia, una variable dicotómica de ahorro del hogar, índice de riqueza (utilizando el método de análisis factorial), la superficie en hectáreas
+26
+
+de parcelas que son posesión del hogar, el número de automóviles y tractores posesión del hogar, el logaritmo natural del valor de la tierra y una variable dicotómica de existencia de historial crediticio del hogar. Variables comunitarias: variables dicotómicas de las cinco regiones que comprende el levantamiento de la ENHRUM, variable dicotómica de mejora en transporte y en carreteras así como un índice de servicios de comunicación.8
+En la tabla A10 del anexo se muestran los efectos marginales (dy/dx) de tres modelos probit que explican la probabilidad de obtener crédito, crédito formal e informal por separado. De esa manera se puede observar el cambio en la probabilidad de obtener algún tipo de crédito ante un cambio infinitesimal de alguna variable, y en caso de las variables dicotómicas, un cambio de 0 a 19.
+Una vez estimada la probabilidad de participar en el mercado crediticio para cada uno de los hogares se utilizó el Puntaje de Propensión a partir de ella para poder realizar el matching. Se verificó el cumplimiento de la propiedad de Balanceo y solo se trabajó con los hogares dentro del área de soporte común.
+Las variables de resultado que se emplearon en el análisis son las siguientes:
+Ingreso neto del hogar en el 2002: el ingreso del hogar menos la cantidad pagada a deudas e intereses por el mismo año.
+8 Se incluye al final del anexo estadístico una descripción de estas variables en la tabla A11. 9 Los hallazgos del modelo probit mostraron que la escolaridad y la salud del jefe del hogar son determinantes estadísticamente significativos para obtener un crédito, así como tener casa propia, el número de tractores y radicar en la región centro occidente; pero entre mayor edad tenga el jefe fue menor la probabilidad que tiene el hogar para acceder a un crédito; cabe destacar que las variables anteriores son también las mismas que probaron ser determinantes para el crédito informal. En cambio, las variables que resultaron ser determinantes para el acceso de los hogares rurales al crédito de tipo formal fueron: la educación media y superior del jefe del hogar, tener familiares miembros del hogar en otra parte de México, la riqueza del hogar, el número de hectáreas en posesión el hogar como parcela, el valor de las tierras y si el hogar tuvo historial crediticio, negativamente entra en el juego si el jefe del hogar estuvo enfermo en el año.
+27
+
+El cambio en el ingreso neto de los hogares en el 2007 y 2002: o resta del ingreso neto del hogar en el 2007 junto con el del año 2002, de esa manera se apreció un crecimiento del ingreso en el tiempo. Variable dicotómica de reincidencia en pobreza extrema: se realizó un modificación a las variables de resultado de (Cerón Monroy, Méndez Navarro, & Rivera Ramírez, 2008) para trabajar con un panel de datos de tal manera que esta variable adopta el valor de 1 si el hogar que estuvo en pobreza extrema en el 2002 permaneció en el mismo estado en el 2007, y tiene 0 si el hogar salió de la pobreza extrema en 2007. Variable dicotómica de reincidir en pobreza: de manera similar como lo anterior, esta variable adopta el valor de 1 si el hogar que estuvo en pobreza en el 2002 permaneció en el mismo estado en el 2007, y adopta el valor de 0 si el hogar salió de la pobreza en 2007.
+Después se identificó el efecto promedio de que los hogares hayan accedido a una fuente de crédito (formal e informal) en el 2002 sobre las variables de resultado definidas en el párrafo anterior.
+Una parte de la estimación consistió en realizar el matching para obtener el Impacto Promedio del Tratamiento (ATE) con las cuatro técnicas propuestas en la sección 6. Además, con el fin de mejorar los errores estándar se hizo un remuestreo o bootstrap de 220 repeticiones.
+A su vez, se realizaron dos tipos de regresiones para poder explicar de una mejor manera la asociación entre el tipo de crédito que recibieron los hogares y la disminución de la pobreza de los mismos: la del primer tipo, la más sencilla en su construcción, se compone por la variable de resultado ocupando el término dependiente y la variable de tratamiento de acceso al crédito como variable explicativa de tipo dicotómica; el segundo tipo de regresión consiste en agregar a lo anterior una matriz de características de los hogares al componente explicativo para poder controlar por aspectos observables.
+28
+
+Es preciso destacar que las estimaciones por medio de regresiones tomaron en cuenta la variabilidad o correlación dentro de las localidades rurales por lo que se trabajó con errores estándar robustos por medio de clusters; además, los estimadores se expresaron en términos del factor de expansión de la encuesta, lo cual brindó la posibilidad de realizar inferencia estadística sobre todos los hogares rurales mexicanos;
+Para la estimación de causalidad, al utilizar estimadores de matching se aplicó el factor de expansión de cada hogar en el modelo probit para la construcción del Propensity Score de tal manera que se le otorga una probabilidad representativa a todos los hogares que representa cada observación de la muestra y con esa probabilidad o puntaje de propensión se aplicaron las cuatro técnicas de pareamiento entre las observaciones.
+A continuación se discuten los principales resultados del efecto del acceso al crédito sobre la disminución de la pobreza y aumento en el ingreso de los hogares rurales del país (el listado de las variables utilizadas está en la tabla A11 del Anexo Estadístico).
+7.1 Crédito en términos generales
+Es necesario comenzar el análisis para todos los hogares que declararon haber recibido algún préstamo sin discriminar su carácter formal o informal.
+Los resultados econométricos proporcionan evidencia sobre un efecto significativo del crédito para los hogares en pobreza extrema sobre la disminución de su probabilidad de reincidir en esa condición para el 2007. Como se observa en la columna 1 de la tabla 6 las regresiones muestran una asociación de aproximadamente 9.33 y 12.6 puntos porcentuales entre el acceso al crédito y la disminución de la probabilidad de hogares para reincidir en pobreza extrema con un nivel de confianza del noventa por ciento. De la misma manera, los métodos de matching muestran un efecto significativo del crédito en la disminución de la probabilidad de que los hogares de interés reincidan en el 2007 en pobreza extrema dentro de un rango entre 10.32 a 20.83 puntos porcentuales. Por su parte, no se encontró evidencia concluyente de carácter significativo acerca del efecto del crédito sobre la disminución de la probabilidad de que los hogares que estaban en pobreza en el 2002 reincidan en el mismo estado para el 2007 (columna 2 de la tabla 6). Tampoco es posible concluir que el crédito
+29
+
+tuvo un efecto estadísticamente significativo sobre el cambio en el ingreso de los hogares en pobreza extrema y pobreza para el 2007 (ver columna 2 de la tabla 7 y 8, respectivamente).
+7.2 Crédito formal
+Partiendo de los hogares que declararon haber tenido algún financiamiento, se estimó el efecto de los diferentes tipos de crédito en pobreza e ingreso de los hogares rurales. En esta sección se muestran hallazgos para el crédito de carácter formal definido en la sección 4.
+Antes de discutir los resultados correspondientes, es necesario mencionar que, debido a la falta de un soporte común entre los hogares que recibieron o no un crédito formal y su condición de pobreza y pobreza extrema en 2007, fue imposible realizar un análisis de causalidad con estimadores de matching. Se graficaron los valores del Propensity Score para los hogares que recibieron crédito formal y los que no confirmando la no existencia de esta área para poder realizar estas estimaciones.
+Los estimadores que se lograron calcular revelan la existencia de alguna asociación entre el acceso al crédito formal y la disminución de la probabilidad de que los hogares en ambas condiciones de pobreza reincidan en ella para 2007. Los estimadores de la regresión simple (columnas 3 y 4 de la tabla 6) ofrecen evidencia estadísticamente significativa de una disminución en la probabilidad que los hogares reincidan en pobreza extrema y pobreza de 28.21 puntos porcentuales y de 47.34 puntos porcentuales, respectivamente.
+Esta disminución de la probabilidad de reincidir en la pobreza extrema se vio reforzada con una asociación estadísticamente significativa del crédito formal y un aumento del ingreso neto de los hogares que presentan esta condición en el 2002. Los estimadores de esta asociación muestran un aumento entre 12,325 hasta 32,683 pesos, aunque es necesario mantener una posición conservadora sobre esto debido bajo coeficiente de determinación (R2) de estas regresiones. En cambio, no se encontró ningún efecto de este tipo de crédito sobre el incremento el ingreso en el tiempo de los hogares que estaban en pobreza extrema y en pobreza en el 2002 (columna 4 de la tabla 7 y 8, respectivamente).
+30
+
+7.3 Crédito Informal
+Con base en los resultados sobre los efectos del financiamiento informal, es decir, del que obtuvieron los hogares de negocios u otras personas, no se encontró evidencia estadística significativa del efecto de este tipo de crédito sobre la disminución en la probabilidad de que los hogares que estaban en pobreza o pobreza extrema en 2002 reincidan en esa condición para el 2007, respectivamente (columna 5 y 6 de la tabla 6).
+Para los hogares que estaban en pobreza extrema en 2002 el estimador de matching de tipo Radio reportó una disminución en el ingreso neto del 2002 por 14,520 pesos, al cual le acompañan asociaciones negativas, aunque no son estadísticamente significativas, que reportaron otros estimadores (columna 5 de la tabla 7). También se observa una disminución del ingreso neto en el año base para los hogares en pobreza, siendo significativos los estimadores de matching Vecino más cercano, Kernel y de estratificación (columna 5 de la tabla 8). Por otra parte, no fue posible determinar algún efecto significativo del crédito informal sobre el crecimiento en el tiempo del ingreso de los hogares rurales en pobreza extrema y pobreza (columna 6 de la tabla 7 y tabla 8, respectivamente).
+En resumen, los resultados de las estimaciones econométricas muestran que los hogares rurales disminuyeron su probabilidad de reincidir en la pobreza extrema cuando estos tienen acceso al crédito en general. Esto puede deberse a que el acceso a este servicio financiero les permite consumir bienes de la canasta alimenticia y satisfacer sus necesidades básicas. Los hallazgos se asimilan a lo propuesto por Armendáriz y Morduch (2005) al plantear en su modelo microeconómico la existencia de un efecto ingreso sobre la demanda de los hogares por bienes de consumo con la obtención de un crédito. Sin embargo, no se encontró evidencia de aumentos significativos en el nivel de ingreso en el año 2002 ni tampoco un crecimiento del mismo para el año 2007.
+Por otra parte, Cerón Monroy, Méndez Navarro, y Rivera Ramírez, (2008) concluyeron con cautela en cuanto a sus hallazgos sobre efectos del crédito, debido a la falta de robustez estadística en los estimadores sobre el efecto del acceso a este servicio financiero, formal e informal, en el 2002 sobre la disminución de la pobreza de patrimonio y alimentaria.
+31
+
+No obstante los efectos encontrados del crédito formal e informal sumados sobre pobreza, las estimaciones no proporcionaron evidencia sobre los impactos de los dos tipos de crédito por separado, incluso con estimaciones donde se hizo uso de los factores de expansión para la muestra de los hogares rurales del año 2002.
+32
+
+Tabla 6 Efecto promedio del crédito sobre la permanencia en pobreza extrema y pobreza de los hogares en 2007
+
+Método
+Regresión simple Error estándar T
+
+Total
+
+Formal
+
+Informal
+
+Permanenc ia en Pob. Extrema
+
+Permanencia en Pobreza
+
+Permanencia en P.
+Extrema
+
+Permanencia en Pobreza
+
+Permanencia en P.
+Extrema
+
+Permanencia en Pobreza
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+-.1260*
+
+-0.0275
+
+-.2821*** -.4734*** -.1124*
+
+-0.0093
+
+0.0629
+
+0.0396
+
+0.0282
+
+0.027
+
+0.0395
+
+0.0395
+
+-2
+
+-0.7
+
+-10
+
+-17.53
+
+-1.73
+
+-0.24
+
+R2
+
+0.0105
+
+0.0004
+
+0.0035
+
+0.0048
+
+0.0079
+
+0.0000
+
+Observaciones Regresión controlando por Covariantes Error estándar T R2 Observaciones Vecino más cercano Hogares en Tratamiento Hogares en Control Error estándar T Radio Hogares en Tratamiento Hogares en Control Error estándar T Kernel Hogares en Tratamiento Hogares en Control Error estándar T Estratificación Hogares en Tratamiento Hogares en Control Error estándar T
+
+904780
+-.0933*
+0.0506 -1.84 0.0701 904780 -.2083**
+72 57 0.095 -2.185 -.1163** 72 338 0.054 -2.155 -.1177** 72 338 0.058 -2.02 -.1032* 72 338 0.055 -1.879
+
+1757300
+-0.0036
+0.0371 -0.1
+0.0520 1757300 -0.014
+143 127 0.075 -0.186 -0.044 143 716 0.045 -0.986 -0.023 143 716 0.045 -0.512 -0.012 143 716 0.048 -0.255
+
+904780
+-0.0639
+0.1363 -0.47 0.068 904780
+na 4 0 na na na 4 0 na na na 4 0 Na Na Na 4 0 Na Na
+
+1757300
+-.2161**
+0.0978 -2.21 0.0756 1757300
+na 5 0 na na na 5 0 na na na 5 0 na na na 5 0 na na
+
+904780
+-0.0771
+0.0511 -1.51 0.0553 904780 -0.088
+68 57 0.085 -1.034 -0.094 68 289 0.06 -1.561 -0.089 68 289 0.055 -1.627 -0.088 68 289 0.055 -1.614
+
+1757300
+0.0223
+0.0391 0.57
+0.0750 1757300
+0.072 138 116 0.072 1.003 -0.021 138 707 0.045 -0.476 -0.004 138 116 0.045 -0.078 0.005 138 116 0.057 0.083
+
+Los coeficientes son significativos *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99%; na significa “no aplica”. Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+33
+
+Tabla 7 Efecto promedio del crédito sobre el ingreso de los hogares en pobreza extrema en 2002
+
+Total
+
+Formal
+
+Informal
+
+Método
+
+Ingreso Neto Incremento Ingreso Neto Incremento
+
+del Hogar en en Ingreso del Hogar en en Ingreso
+
+2002
+
+del Hogar
+
+2002
+
+del Hogar
+
+Ingreso Neto del Hogar en
+2002
+
+Incremento en Ingreso del Hogar
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Regresión simple
+
+-25744.48 48431.05 12325.616** 55290.17 -27874.65 46929.37
+
+Error estándar
+
+16895.34 35760.27 4755.615 40514.57 17741.35 36473.16
+
+t
+
+-1.52
+
+1.35
+
+2.59
+
+1.36
+
+-1.57
+
+1.29
+
+R2
+
+0.0399
+
+0.0002
+
+0.0006
+
+0.0001
+
+0.0445
+
+0.0054
+
+Observaciones
+
+904780
+
+904780
+
+904780
+
+904780
+
+904780
+
+904780
+
+Regresión
+
+controlando por
+
+-29280.68 38709.12 32683.023*** -4791.48 -29999.68 34392.49
+
+Covariantes
+
+Error estándar
+
+20823.82 35456.01 7538.42 57000.05 20378.84 33894.45
+
+t
+
+-1.41
+
+1.09
+
+4.34
+
+-0.08
+
+-1.47
+
+1.01
+
+R2
+
+0.01443
+
+0.11
+
+0.198
+
+0.0634
+
+0.12670
+
+0.0711
+
+Observaciones
+
+904780
+
+904780
+
+904780
+
+904780
+
+904780
+
+904780
+
+Vecino más cercano -18743.543** 17908.695
+
+na
+
+na
+
+-8199.396 -13544.426
+
+Hogares en Tratamiento
+
+72
+
+72
+
+4
+
+4
+
+68
+
+68
+
+Hogares en Control
+
+57
+
+57
+
+0
+
+0
+
+57
+
+57
+
+Error estándar
+
+5303.811 46197.923
+
+na
+
+na
+
+7752.205 65037.098
+
+t
+
+-1.924
+
+0.388
+
+na
+
+na
+
+-1.058
+
+-0.208
+
+Radio
+
+-14397.424* 12509.77
+
+na
+
+na
+
+-14520.492* 4038.231
+
+Hogares en Tratamiento
+
+72
+
+72
+
+4
+
+4
+
+68
+
+68
+
+Hogares en Control
+
+338
+
+338
+
+0
+
+0
+
+289
+
+289
+
+Error estándar
+
+4464.138 34870.47
+
+na
+
+na
+
+7998.984 37391.991
+
+t
+
+-1.872
+
+0.359
+
+na
+
+na
+
+-1.815
+
+0.108
+
+Kernel
+
+-15112.936* 17385.514
+
+na
+
+Hogares en Tratamiento
+
+72
+
+72
+
+4
+
+Hogares en Control
+
+338
+
+338
+
+0
+
+Error estándar
+
+4353.139 31605.228
+
+na
+
+t
+
+-2.265
+
+0.55
+
+na
+
+na
+
+-14444.101 4932.715
+
+4
+
+68
+
+68
+
+0
+
+289
+
+289
+
+na
+
+8860.794 30487.692
+
+na
+
+-1.63
+
+0.162
+
+Estratificación
+
+-14870.555* 23081.871
+
+na
+
+na
+
+-14209.974
+
+Hogares en Tratamiento
+
+72
+
+72
+
+4
+
+4
+
+68
+
+Hogares en Control
+
+338
+
+338
+
+0
+
+0
+
+289
+
+Error estándar
+
+5175.815 30149.028
+
+na
+
+na
+
+8740.851
+
+t
+
+-2.014
+
+0.766
+
+na
+
+na
+
+-1.626
+
+Ingreso en pesos. Los coeficientes son significativos *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99%, “na” corresponde a “no aplica”. Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II
+
+2258.994 68 289
+36342.746 0.062
+
+34
+
+Tabla 8 Efecto promedio del crédito sobre el ingreso de los hogares en pobreza en 2002
+
+Total
+
+Formal
+
+Informal
+
+Método
+
+Ingreso Neto del Hogar en
+2002
+
+Incremento en Ingreso del Hogar
+
+Ingreso Neto del Hogar en 2002
+
+Incremento en Ingreso del Hogar
+
+Ingreso Neto del Hogar en
+2002
+
+Incremento en Ingreso del Hogar
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Regresión simple
+
+-10183.41 57195.23 -5540.62 80704.79 -10238.28 55517.88
+
+Error estándar
+
+7180.853 73323.38 3822.004 52888.64 7418.294 75574.05
+
+t
+
+-1.42
+
+0.78
+
+-1.45
+
+1.53
+
+-1.38
+
+0.73
+
+R2
+
+0.0083
+
+0.0013 0.0001 0.0001
+
+0.0081
+
+0.0012
+
+Observaciones
+
+1757300 1757300 1757300 1757300
+
+1757300
+
+1757300
+
+Regresión
+
+controlando por
+
+-13873.316* 39424.86 3586.998 14194.05 -14076.63 33924.81
+
+Covariantes
+
+Error estándar
+
+8190.186 57052.43 7600.626 68439.88 8640.356 57508.78
+
+t
+
+-1.69
+
+0.69
+
+0.47
+
+0.21
+
+-1.63
+
+0.59
+
+R2
+
+0.1216
+
+0.0447 0.1356 0.0634
+
+0.1121
+
+0.0404
+
+Observaciones
+
+1757300 1757300 1757300 1757300
+
+1757300
+
+1757300
+
+Vecino más cercano -6861.633 14827.047 na
+
+na
+
+-15785.636*** 22847.529
+
+Hogares en Tratamiento
+
+143
+
+143
+
+5
+
+5
+
+138
+
+138
+
+Hogares en Control
+
+127
+
+127
+
+0
+
+0
+
+116
+
+116
+
+Error estándar
+
+5971.022 60846.454 na
+
+na
+
+5661.941 47880.168
+
+t
+
+-1.149
+
+0.244
+
+na
+
+na
+
+-2.788
+
+0.477
+
+Radio
+
+-8147.831 -1828.924 na
+
+Hogares en Tratamiento
+
+143
+
+143
+
+5
+
+Hogares en Control
+
+716
+
+716
+
+0
+
+Error estándar
+
+5228.671 43385.852 na
+
+t
+
+-1.558
+
+-0.042
+
+na
+
+Kernel
+
+-9545.0752** -1299.866 na
+
+Hogares en Tratamiento
+
+143
+
+143
+
+5
+
+Hogares en Control
+
+716
+
+716
+
+0
+
+Error estándar
+
+4654.081 42096.592 na
+
+t
+
+-2.051
+
+-0.031
+
+na
+
+Estratificación
+
+-9966.6992** -2733.188 na
+
+Hogares en Tratamiento
+
+143
+
+143
+
+5
+
+Hogares en Control
+
+716
+
+716
+
+0
+
+Error estándar
+
+4735.383 40254.23 na
+
+t
+
+-2.105
+
+-0.068
+
+na
+
+na
+
+-8152.36 -4093.452
+
+5
+
+138
+
+138
+
+0
+
+708
+
+708
+
+na
+
+5244.971 44784.982
+
+na
+
+-1.554
+
+-0.091
+
+na
+
+-9488.5508* -2616.712
+
+5
+
+138
+
+138
+
+0
+
+708
+
+708
+
+na
+
+5149.443 47138.342
+
+na
+
+-1.843
+
+-0.056
+
+na
+
+-9936.3389** -5769.937
+
+5
+
+138
+
+138
+
+0
+
+708
+
+708
+
+na
+
+4644.761 43761.481
+
+na
+
+-2.139
+
+-0.132
+
+Ingreso en unidades de pesos. Los coeficientes son significativos *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99%., “na” corresponde a “no aplica”. Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+35
+
+8. Conclusiones En este trabajo se utilizó la metodología de Matching con Diferencias en Diferencias usando los datos en panel de la ENHRUM para estimar el efecto de la participación de los hogares rurales mexicanos en el mercado crediticio (formal e informal) sobre la probabilidad de que los hogares que se encontraban en pobreza extrema y en pobreza en 2002 hayan reincidido en ese estado en 2007, respectivamente. También se indagó empíricamente el impacto del acceso a este servicio financiero en el ingreso de dichos agentes en el tiempo. Las estimaciones ser hicieron para el crédito total o en general y para el formal e informal por ser parado.
+El enfoque usado fue cuasi-experimental, a partir del Pareamiento por Puntaje de Propensión con el que es posible hacer una comparación entre hogares que recibieron algún tipo de crédito con los que no lo recibieron a partir de la probabilidad que tuvieron de poder acceder a este financiamiento.
+Las variables de resultado fueron construidas de tal manera que pudieran compararse a través del tiempo mediante el cambio en el ingreso de los hogares y la probabilidad de reincidir en la pobreza o pobreza extrema en 2007, dado que estos estaban esta condición en el año 2002.
+Los resultados de las estimaciones econométricas proporcionan evidencia que para los hogares que se encontraban en pobreza extrema en 2002 el crédito en general tuvo un efecto sobre la disminución en la probabilidad de reincidir en esa condición en el año 2007; hecho que se acompaña por un aumento en el ingreso neto en el año base. En contraste, no se observan efectos significativos del uso del crédito sobre la disminución de probabilidad de reincidir en la pobreza para los hogares que se encontraban en ese estado en el 2002.
+Al desglosar e identificar el efecto de los créditos formales, los resultados indican una asociación entre el acceso al crédito formal y la disminución de la probabilidad de que los hogares en pobreza extrema y pobreza reincidan en ella para 2007. Sin embargo, no se observó una asociación entre este tipo de crédito y un incremento en el ingreso de los hogares que se encontraban en pobreza en 2002, tampoco ocurrió esto sobre el crecimiento en el tiempo el ingreso. Una limitación del estudio sobre el impacto del crédito formal es
+36
+
+que en la muestra no hay hogares que hayan recibido un crédito formal y que hayan permanecido en pobreza extrema ni en pobreza en el 2007, por lo que no fue posible realizar un pareo a partir del Propensity Score ni obtener estimaciones de causalidad. Esta limitación no necesariamente proviene de la muestra, ya que es reflejo del muy bajo acceso al crédito formal en el medio rural mexicano.
+Tampoco se encontró evidencia estadísticamente significativa respecto a la causalidad del uso de créditos informales y la disminución de la pobreza extrema de los hogares que se encuentran en esta condición. Llama la atención el hecho que existe un efecto negativo sobre el ingreso de los hogares que utilizaron crédito informal en el año base. Asimismo, parece ser que la utilización de préstamos y del financiamiento -formal e informal- para adquirir bienes de consumo básico o comenzar pequeños negocios no es condición necesaria ni suficiente para que los hogares en pobreza tengan un incremento sostenido en su ingreso.
+No obstante lo anterior, se encontró evidencia que el crédito en general tiene efectos positivos y significativos en la reducción de la probabilidad de permanecer en situación de pobreza extrema. Esto no obstante que el acceso al mismo por los hogares rurales de México fue proporcionalmente muy bajo: solo el 20% tuvo acceso a un crédito y entre ellos, solo el 5% tuvo un crédito formal en 2002.
+De lo anterior se desprende la importancia que tendría promover el acceso al crédito por parte de los agentes del medio rural para contribuir al bienestar y a la economía de sus hogares. Esta tarea labor debe incorporar aspectos de oferta y demanda. En cuanto al primero, las instituciones financieras sobre todo las de banca comercial enfrentan el problema de información asimétrica y, en consecuencia, el riesgo moral. A lo anterior se añade que no es rentable a la banca comercial invertir en instalaciones en el medio rural, lo cual significa que los agentes que viven en él tengan que trasladarse a las ciudades para acceder a los servicios financieros ofrecidos por estas instituciones. (Alberro, Henderson, & Yúnez Naude, 2015). Respecto al lado de la demanda, hay evidencia de que los hogares mexicanos en pobreza desconocen y tienen desconfianza en los servicios financieros que ofrece la banca comercial.
+37
+
+En la promoción el acceso al crédito (y otros servicios financieros como los seguros y el ahorro) por parte de la población en el medio rural deben participar tanto el sector público como la banca privada (especialmente a partir de instituciones microfinancieras). El propósito actual del gobierno federal de México por profundizar dicho acceso es una oportunidad para que los hogares rurales cuenten con estos servicios para mejorar su bienestar, financiar sus actividades productivas y enfrenten riesgos.
+38
+
+9. Anexo estadístico 9.1 Análisis descriptivo
+
+Diferencia de medias muestrales de las características de los Hogares por tipo de Crédito. Sea la diferencia de medias Diferencia= Media (No tratados) – Media (Tratados) H0: Diferencia = 0 H1: Diferencia ≠ 0
+
+Tabla A1 Diferencia de medias muestrales de hogares con crédito
+
+Variable
+
+Hogares Hogares con sin crédito crédito
+
+Diferencia Pr(|T| > |t|)
+
+Sexo del Jefe del hogar
+
+0.864
+
+0.862
+
+0.002
+
+0.913
+
+(0=Mujer, 1=Hombre)
+
+(-0.022)
+
+Edad del jefe del hogar (años)
+
+0.442
+
+0.84
+
+3.608***
+
+0
+
+(-0.993)
+
+Escolaridad del jefe (años)
+
+4.376
+
+5.064
+
+-0.688***
+
+0.005
+
+(-0.243)
+
+Tamaño de hogar
+
+5.027
+
+4.957
+
+-0.069
+
+0.616
+
+(-0.138)
+
+Familiares migrantes en E.U.A
+
+0.3
+
+0.276
+
+0.024
+
+0.592
+
+(-0.045)
+
+Familiares migrantes en México
+
+0.325
+
+0.263
+
+0.062
+
+0.16
+
+(-0.044)
+
+Superficie de parcelas (hectárea)
+
+3.626
+
+7.411
+
+-3.784**
+
+0.013
+
+(-1.523)
+
+Tractores
+
+0.026
+
+0.067
+
+-0.04***
+
+0.001
+
+(-0.012)
+
+Cabezas de ganado
+
+10.34
+
+11.027
+
+-0.687
+
+0.585
+
+(-1.255)
+
+Casa propia (1=Sí, 0=No)
+
+0.92
+
+0.889
+
+0.031*
+
+0.089
+
+Ingreso neto del hogar 2002a
+
+(-0.018) $113,953.00 $244,266.30 -$130,313.3*
+
+0.095
+
+(pesos) Diferencia en el ingreso netoa
+
+(-$77,982.72) $82,033.34 $108,620.80 -$26,587.47
+
+0.783
+
+(pesos)
+
+(-$96,372.15)
+
+Observaciones
+
+1246
+
+297
+
+a Precios constantes del 2010. Errores estándar en paréntesis Los efectos son significativos si *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99% Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+39
+
+Tabla A2 Diferencia de medias muestrales de hogares con acceso a crédito formal
+
+Variable
+
+Sin crédito formal Con crédifo formal Diferencia Pr(|T| > |t|)
+
+Sexo del Jefe del hogar
+
+0.863
+
+0.923
+
+-0.06
+
+0.532
+
+(0=Mujer, 1=Hombre)
+
+(-0.096)
+
+Edad del jefe del hogar (años)
+
+48.971
+
+51.692
+
+-2.721
+
+0.527
+
+(-4.302)
+
+Escolaridad del jefe (años)
+
+4.497
+
+5.846
+
+-1.349
+
+0.199
+
+(-1.051)
+
+Tamaño de hogar
+
+4.965
+
+5.692
+
+-0.728
+
+0.223
+
+(-0.597)
+
+Familiares migrantes en E.U.A
+
+0.295
+
+0.308
+
+-0.012
+
+0.949
+
+(-0.193)
+
+Familiares migrantes en México
+
+0.312
+
+0.385
+
+-0.072
+
+0.706
+
+(-0.191)
+
+Superficie de parcelas (hectárea)
+
+3.946
+
+52.412
+
+-48.465***
+
+0
+
+(-6.464)
+
+Tractores
+
+0.033
+
+0.231
+
+-0.198***
+
+0
+
+(-0.051)
+
+Cabezas de ganado
+
+10.297
+
+31.154
+
+-20.857***
+
+0
+
+(-5.39)
+
+Casa propia (1=Sí, 2=No)
+
+0.914
+
+0.923
+
+-0.009
+
+0.905
+
+(-0.078)
+
+Ingreso neto del hogar 2002a
+
+$111,124.80
+
+$3,423,970.00 -$3,312,845***
+
+0
+
+(pesos)
+
+(-$325,926.90)
+
+Diferencia en el ingreso netoa
+
+$112,063.80
+
+-$2,844,896.00 $2,956,959***
+
+0
+
+(pesos)
+
+(-$408,820.50)
+
+Observaciones
+
+1530
+
+13
+
+a Precios constantes del 2010. Errores estándar en paréntesis Los efectos son significativos si *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99% Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+40
+
+Tabla A3 Diferencia de medias muestrales de hogares con acceso a crédito informal
+
+Variable
+
+Sin crédito informal
+
+Con crédito informal
+
+Diferencia
+
+Pr(|T| > |t|)
+
+Sexo del Jefe del hogar
+
+0.865
+
+0.859
+
+0.006
+
+0.796
+
+(0=Mujer, 1=Hombre)
+
+(0.023)
+
+Edad del jefe del hogar (años)
+
+49.709
+
+45.824
+
+3.885***
+
+0.0001
+
+(1.01)
+
+Escolaridad del jefe (años)
+
+4.391
+
+5.028
+
+-0.637**
+
+0.01
+
+(0.247)
+
+Tamaño de hogar
+
+4.965
+
+4.996
+
+-0.031
+
+0.824
+
+(0.141)
+
+Familiares migrantes en E.U.A
+
+0.3
+
+0.275
+
+0.026
+
+0.575
+
+(0.046)
+
+Familiares migrantes en México
+
+0.326
+
+0.257
+
+0.069
+
+0.129
+
+(0.045)
+
+Superficie de parcelas (hectárea)
+
+4.13
+
+5.351
+
+-1.221
+
+0.432
+
+(1.552)
+
+Tractores
+
+0.029
+
+0.06
+
+-0.031***
+
+0.009
+
+(0.012)
+
+Cabezas de ganado
+
+10.555
+
+10.106
+
+0.45
+
+0.725
+
+(1.277)
+
+Casa propia (1=Sí, 2=No)
+
+0.92
+
+0.887
+
+0.032*
+
+0.079
+
+(0.018)
+
+Ingreso neto del hogar 2002 a
+
+$148,131.10 $98,716.52 $49,414.58
+
+0.534
+
+(pesos)
+
+($79,396.64)
+
+Diferencia en el ingreso neto a $51,810.88 $243,817.00 -$192,006.1*
+
+0.05
+
+(pesos)
+
+($97,923.38)
+
+Observaciones
+
+1259
+
+284
+
+a Precios constantes del 2010. Errores estándar en paréntesis Los efectos son significativos si *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99% Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+41
+
+Tabla A4 Composición de Hogares con Acceso al Crédito en 2002
+
+Hogares Rurales Frecuencia Porcentaje
+
+Sin Crédito
+
+2,208,889 80.36%
+
+Con Crédito
+
+539,832 19.64%
+
+Total
+
+2,748,721 100%
+
+Ajustadas al factor de expansión Fuente: elaboración propia con datos obtenidos de la ENHRUM I.
+
+Tabla A5 Composición de los Hogares que tuvieron algún Crédito en 2002
+
+Hogares Rurales Frecuencia Porcentaje
+
+Con crédito formal
+
+21,274
+
+3.94%
+
+Con crédito informal 518,558 96.06%
+
+Total
+
+539,832 100%
+
+Ajustadas al factor de expansión Fuente: elaboración propia con datos obtenidos de la ENHRUM I.
+
+42
+
+Diferencia de medias muestrales de los niveles de pobreza de los Hogares por tipo de Crédito.
+Sea la diferencia de medias Diferencia= Media (No tratados) – Media (Tratados) H0: Diferencia = 0 H1: Diferencia ≠ 0
+
+Tabla A6 Diferencia de medias muestrales de niveles de pobreza en Hogares con acceso a Crédito
+
+Variable
+
+No Tratamiento Tratamiento Diferencia Pr(|T| > |t|)
+
+Pobreza Extrema en 2002
+
+0.3026
+
+0.2424
+
+0.06**
+
+0.0403
+
+(0.0293)
+
+Pobreza en 2002
+
+0.5947
+
+0.4815
+
+0.1132***
+
+0.0004
+
+(0.0318)
+
+Pobreza Extrema en 2007
+
+0.2488
+
+0.1919
+
+0.0568**
+
+0.0386
+
+(0.0274)
+
+Pobreza en 2007
+
+0.4366
+
+0.3973
+
+0.0392
+
+0.2192
+
+(0.0319)
+
+Observaciones
+
+1246
+
+297
+
+Errores estándar en paréntesis. Los efectos son significativos si *con nivel de confianza del 90%;
+
+** con nivel de confianza del 95%; *** con nivel de confianza
+
+del 99%.
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+Tabla A7 Diferencia de medias muestrales de niveles de pobreza en Hogares con Crédito Formal
+
+Variable
+
+No Tratamiento Tratamiento Diferencia Pr(|T| > |t|)
+
+Pobreza Extrema en 2002
+
+0.2908
+
+0.3077
+
+-0.02
+
+0.8942
+
+(0.13)
+
+Pobreza en 2002
+
+0.5745
+
+0.3846
+
+0.19
+
+0.1683
+
+(0.14)
+
+Pobreza Extrema en 2007
+
+0.2392
+
+0.0769
+
+0.1623
+
+0.1714
+
+(0.12)
+
+Pobreza en 2007
+
+0.4320
+
+0.0769
+
+0.3551***
+
+0.01
+
+(0.1376)
+
+Observaciones
+
+1530
+
+13
+
+Errores estándar en paréntesis. Los efectos son significativos si *con nivel de confianza del 90%;
+
+** con nivel de confianza del 95%; *** con nivel de confianza
+
+del 99%.
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+43
+
+Tabla A8 Diferencia de medias muestrales de niveles de pobreza en Hogares con Crédito Informal
+
+Variable
+
+No Tratamiento Tratamiento Diferencia Pr(|T| > |t|)
+
+Pobreza Extrema en 2002
+
+0.3026
+
+0.2394
+
+0.0631**
+
+0.0342
+
+(0.0298)
+
+Pobreza en 2002
+
+0.5925
+
+0.4859
+
+0.1066***
+
+0.001
+
+(0.0324)
+
+Pobreza Extrema en 2007
+
+0.2470
+
+0.1972
+
+0.0498
+
+0.0749
+
+(0.0280)
+
+Pobreza en 2007
+
+0.4329
+
+0.4120
+
+0.0209
+
+0.5204
+
+(0.0325)
+
+Observaciones
+
+1259
+
+284
+
+Errores estándar en paréntesis. Los efectos son significativos si *con nivel de confianza del 90%;
+
+** con nivel de confianza del 95%; *** con nivel de confianza
+
+del 99%
+
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+Tabla A9 Diferencia de medias muestrales de niveles de pobreza en Hogares que utilizan Crédito Formal y los que utilizan Crédito Informal
+
+Variable
+
+Informal
+
+Formal
+
+Diferencia Pr(|T| > |t|)
+
+Pobreza Extrema en 2002
+
+0.2394
+
+0.3077
+
+-0.0683
+
+0.5759
+
+(0.1219)
+
+Pobreza en 2002
+
+0.4859
+
+0.3846
+
+0.1013
+
+0.4764
+
+(0.1421)
+
+Pobreza Extrema en 2007
+
+0.1972
+
+0.0769
+
+0.1203
+
+0.2832
+
+(0.1119)
+
+Pobreza en 2007
+
+0.4120
+
+0.0769
+
+0.335**
+
+0.0157
+
+(0.1378)
+
+Observaciones
+
+284
+
+13
+
+Errores estándar en paréntesis. Los efectos son significativos si *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99%
+Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+44
+
+9.2 Resultados econométricos Tabla A10 Efecto marginales de tres modelos probit sobre acceso al crédito de los hogares rurales.
+
+Crédito Total
+
+Crédito Formal
+
+Crédito Informal
+
+Error
+
+Error
+
+Error
+
+Variable
+
+dy/dx estándar dy/dx estándar dy/dx estándar
+
+sexojefe
+
+-0.0416693 0.04155 0.0001514 0.00023 -0.0517523 0.04181
+
+edadjefe
+
+-0.0020405** 0.00102 1.35E-07 0.00001 -0.0023351** 0.001
+
+escjefe
+
+0.0086834* 0.00448 0.0000168 0.00003 0.0070701 0.00436
+
+deducbas
+
+0.0228023 0.02992 0.0001773 0.00026 1.85E-02 0.0294
+
+deducmedsup 0.0256007 0.07157 0.0023315* 0.00361 2.15E-02 0.07183
+
+d_seguro
+
+-0.0248777 0.04137
+
+-0.02766 0.03975
+
+enfermjefe
+
+0.0559752** 0.02561 -0.0005** 0.00062 0.0579271** 0.02519
+
+miemhogar
+
+0.0054454 0.00652 -2.63E-09 0.00003 0.0050107 0.00645
+
+usfam
+
+0.0000154 0.00011
+
+mxfam
+
+-0.0011058 0.02037 0.000184** 0.00025 -1.00E-02 0.02072
+
+apoyogob
+
+0.0002448 0.00034
+
+tasa_dep
+
+-0.0047601 0.03011 -0.000032 0.00017 -4.28E-03 0.02963
+
+ganado
+
+-1.57E-06
+
+0
+
+casaprop
+
+-0.0923893* 0.05273 -0.0000284 0.00032 -0.0944532** 0.05209
+
+dahorro
+
+-0.0001029 0.00016
+
+indriqueza
+
+0.0003753*** 0.00048
+
+supparc
+
+0.00000194* 0
+
+auto
+
+0.0050294 0.02761 -0.0002377 0.00034 0.0093941 0.02679
+
+tractor
+
+0.3511591*** 0.11154 0.0000113 0.00023 0.299863*** 0.1191
+
+lvalortierra
+
+0.0000412*** 0.00005
+
+histcred
+
+0.0156391*** 0.01351
+
+sursureste
+
+0.0545534 0.04363
+
+4.90E-02 0.04281
+
+centro
+
+0.0249741 0.04391
+
+0.0245087 0.0431
+
+centroccidente 0.2025566*** 0.04875 0.0001573 0.00031 0.1829729*** 0.04777
+
+noroeste
+
+0.135016*** 0.05386 -0.0001165 0.00016 0.1131822** 0.05212
+
+noreste
+
+-0.000082 0.00013
+
+trans02
+
+carret02
+
+0.0255669 0.03852 -0.0003081 0.00091 1.96E-02 0.03843
+
+indservcom
+
+-0.0090657 0.01394 -0.0000198 0.00006 -0.003384 0.01357
+
+Pseudo R2
+
+0.0596
+
+0.057
+
+0.057
+
+Efectos marginales de tres modelos Probit que explican la probabilidad de obtener crédito (crédito formal e informal) por los hogares rurales de México. Los efectos son significativos si *con nivel de confianza del 90%; ** con nivel de confianza del 95%; *** con nivel de confianza del 99% Fuente: elaboración propia con datos obtenidos de la ENHRUM I y II.
+
+45
+
+Tabla A11 Descripción de las variables utilizadas en el análisis del trabajo.
+
+Variable
+
+Definición
+
+s exojefe
+
+Sexo del jefe del hoga r (1=hombre, 0=mujer)
+
+e d a d je fe
+
+Edad del jefe del hogar
+
+es cjefe
+
+Es col a ri da d del jefe del hoga r
+
+Va ri a bl e di cotómi ca pa ra l os hoga res que ti enen en promedi o de 1 a 9 a ños de es col a ri da d.
+
+deducba s
+
+Va ri a bl e di cotómi ca de educa ci ón bá s i ca promedi o del hoga r (1=Si l os mi embros del hoga r ti enen en promedi o a l gún gra do de educa ci ón bá s i ca o s ecunda ri a 0=Si no ti enen en promedi o a l gún gra do de educa ci ón bá s i ca o s ecunda ri a )
+
+Va ri a bl e di cotómi ca pa ra l os hoga res que ti enen en promedi o má s de 9 a ños de es col a ri da d.
+
+deducmedys up Va ri a bl e di cotómi ca de educa ci ón medi a s uperi or y s uperi or (1=Si l os mi embros del hoga r ti enen en promedi o educa ci ón medi a s uperi or o s uperi or, 0= Si l os mi embros del hoga r no ti enen
+
+educa ci ón medi a s uperi or o s uperi or en promedi o)
+
+d_s eguro
+
+Va ri a bl e di cotómi ca de s eguri da d s oci a l del jefe (1=Si el jefe ti ene s eguri da d s oci a l , 0= Si el jefe no ti ene s eguri da d s oci a l )
+
+e n fe rmje fe
+
+Va ri a bl e di cotómi ca de enfermeda d del jefe del hoga r (1=Si el jefe del hoga r s e enfermó en 2002, 0=Si el jefe del hoga r no s e enfermó en 2002)
+
+mi emhoga r Número de mi embros en el hoga r
+
+us fa m
+
+Número de fa mi l i a res del hoga r que vi ven en Es ta dos Uni dos
+
+mxfa m
+
+Número de fa mi l i a res del hoga r que vi ven fuera de l a comuni da d en el res to de Méxi co
+
+a poyogob
+
+Va ri a bl e di cotómi ca de hoga res que reci bi eron a poyos del gobi erno de l os progra ma s PROGRESA o PROCAMPO (1=Si reci bi eron 0= Si no reci bi eron)
+
+ta s a _dep
+
+Ta s a de dependenci a
+
+ga na do
+
+Número de ca beza s de ga na do
+
+ca s a prop
+
+Va ri a bl e di cotómi ca de propi eda d de ca s a (1=Si ti ene ca s a propi a , 0= Si no ti ene ca s a propi a )
+
+da horro
+
+Va ri a bl e di cotómi ca de a horro (1=Si el hoga r tuvo a horros a fi na l es del 2002, 0= Si no tuvi eron a horros a fi na l es del 2002)
+
+i ndri queza
+
+Índi ce de Ri queza del Hoga r cons trui do por el método de Aná l i s i s Fa ctori a l
+
+s uppa rc
+
+Superfi ci e en hectá rea s de l a s pa rcel a s que pos ee el hoga r
+
+a uto
+
+Número de a utomóvi l es propi eda d del hoga r
+
+tra ctor
+
+Número de tra ctores propi eda d del hoga r
+
+l va l orti erra
+
+Loga ri tmo del va l or de l a ti erra
+
+hi s tcred
+
+Hi s tori a l credi ti ci o (1=Si el hoga r ti ene hi s tori a l credi ti ci o, 0=Si el hoga r no ti ene hi s tori a l credi ti ci o)
+
+s urs ures te
+
+Incl uye a l os es ta dos de Oa xa ca , Vera cruz y Yuca tá n
+
+Va ri a bl e di cotómi ca (1= Si el hoga r s e encuentra en l a regi ón s ur-s ures te, 0= en otro ca s o)
+
+ce n tro
+
+Incl uye a l os es ta dos de de Méxi co y Puebl a
+
+Va ri a bl e di cotómi ca (1= Si el hoga r s e encuentra en l a regi ón centro, 0= en otro ca s o)
+
+centrocci dente Incl uye a l os es ta dos de Gua na jua to, Na ya ri t y Za ca teca s
+
+Va ri a bl e di cotómi ca (1= Si el hoga r s e encuentra en l a regi ón centro-occi dente, 0= en otro ca s o)
+
+noroes te
+
+Incl uye a l os es ta dos de Ba ja Ca l i forni a , Sonora y Si na l oa
+
+Va ri a bl e di cotómi ca (1= Si el hoga r s e encuentra en l a regi ón noroes te, 0= en otro ca s o)
+
+nores te
+
+Incl uye a l os es ta dos de Chi hua hua , Dura ngo y Ta ma ul i pa s
+
+Va ri a bl e di cotómi ca (1= Si el hoga r s e encuentra en l a regi ón nores te, 0= en otro ca s o)
+
+tra ns 02
+
+Mejora de tra ns portes en 2002
+
+ca rret02
+
+Mejora de ca rretera s en 2002
+
+i nds ervcom
+
+Indi ce de s ervi ci os de comuni ca ci ón (i ncl uye ca s eta s tel efóni ca s , tel égra fo, i nternet y ofi ci na de correos ). Se cons truyó por el método de Aná l i s i s Fa ctori a l
+
+Fuente: descripción y definición de variables basado en el trabajo de (Cerón Monroy, Méndez Navarro, &
+
+Rivera Ramírez, 2008) con algunas modificaciones.
+
+46
+
+10. Referencias
+Alberro, I., Henderson, M., & Yúnez Naude, A. (2015). Inclusión financiera en México: retos y perspectivas. Serie: Grandes Problemas. México: El Colegio de México y UNAM (en prensa).
+Angrist, J. D., & Pischke, J. S. (2009). Mostly Harmless Econometrics: An Empiricist's Companion. Princeton University Press.
+Armendáriz, B., & Morduch, J. (2005). The Economics of Microfinance. Cambridge: MIT Press.
+Banerjee, A. V., & Duflo, E. (2010). Giving Credit Where It Is Due. Journal of Economic Perspectives, 61-80.
+Banerjee, A. V., & Duflo, E. (2012). Repensar la pobreza. Ciudad de México: Taurus.
+Banerjee, A., Karlan , D., & Zinman, J. (2015). Six Randomized Evaluations of Microcredit: Introduction and Further Steps. American Economic Journal, 1-21.
+Bustos Villegas, J. L. (2014). Microcréditos y Vulnerabilidad: Una Evaluación de Impacto para el Caso Mexicano. En A. Yúnez Naude, F. Rivera Ramírez, A. Chávez Alvarado, J. Mora Rivera, & E. Taylor, La economía del campo mexicano: tendencias y retos para su desarrollo. México: El Colegio de México y UNAM.
+Cerón Monroy, H., Méndez Navarro, J., & Rivera Ramírez, F. (2008). La participación de los hogares rurales en el mercado crediticio y su efecto en la pobreza. México: Proyecto de Investigación de la Red de Universidades en Microfinanzas, AFIRMA, USAID.
+CONEVAL. (25 de mayo de 2015). www.coneval.gob.mx. Obtenido de http://www.coneval.gob.mx/Medicion/Paginas/Lineas-de-bienestar-y-canasta-basica.aspx
+Delalande, L., & Paquette, C. (2009). Travaux et Recherches dans les Amériques du Centre. Obtenido de TRACE: http://trace.revues.org/588
+Demirguc-Kunt, A., & Klapper, L. (2012). La base de datos Global Findex.
+Demirguc-Kunt, A., & Klapper, L. (2012). Measuring Financial Inclusion. The Global Findex Data Base. Washington: World Bank Policy Research.
+Holland, P. W. (1986). Statistics and Causal Inference. Journal of the Armerican Statistical Association, 945-960.
+Khandker, S. R., Koolwal, G. B., & Samad, H. A. (2010). Handbook on Impact Evaluation. Quanttative Methods and Practices. Washington, D.C.: The World Bank.
+Ray, D. (1998). Development Economics. Princeton University Press.
+Santana, A. (2009). “Estudios sobre escalas de equivalencia y economías de escala para México.
+Taylor, J. E. (2012). Essentials of Development Economics. Berkeley: RebelText.
+47
+
+The Official Web site of the Nobel Prize. (13 de Octubre de 2006). The Official Web Site of the Nobel Prize. Obtenido de http://www.nobelprize.org/nobel_prizes/peace/laureates/2006/press.html
+Todd, P. E. (2008). Evaluating Social Programs with Endogenous Program Placement and Selection of the Treated. En T. P. Schutlz, & J. A. Straus, Handbook of Develpment Economics. Elsevier.
+48
+
+Índice de tablas Tabla 1 Características de hogares rurales en el 2002 por tipo de crédito recibido ............ 13 Tabla 2 Ingreso de los hogares por tipo de crédito recibido ............................................... 14 Tabla 3 Diferencia de medias muestrales de hogares con créditos informales y formales .. 15 Tabla 4 Porcentaje de Hogares en Pobreza ......................................................................... 16 Tabla 5 Porcentaje de Hogares en Pobreza de acuerdo al tipo de crédito recibido .............. 16 Tabla 6 Efecto promedio del crédito sobre la permanencia en pobreza extrema y pobreza de los hogares en 2007 .............................................................................................................. 33 Tabla 7 Efecto promedio del crédito sobre el ingreso de los hogares en pobreza extrema en 2002 ...................................................................................................................................... 34 Tabla 8 Efecto promedio del crédito sobre el ingreso de los hogares en pobreza en 2002 . 35 Tabla A1 Diferencia de medias muestrales de hogares con crédito ..................................... 39 Tabla A2 Diferencia de medias muestrales de hogares con acceso a crédito formal ........... 40 Tabla A3 Diferencia de medias muestrales de hogares con acceso a crédito informal ........ 41 Tabla A4 Composición de Hogares con Acceso al Crédito en 2002.................................... 42 Tabla A5 Composición de los Hogares que tuvieron algún Crédito en 2002 ...................... 42 Tabla A6 Diferencia de medias muestrales de niveles de pobreza en Hogares con acceso a Crédito .................................................................................................................................. 43 Tabla A7 Diferencia de medias muestrales de niveles de pobreza en Hogares con Crédito Formal................................................................................................................................... 43 Tabla A8 Diferencia de medias muestrales de niveles de pobreza en Hogares con Crédito Informal ................................................................................................................................ 44 Tabla A9 Diferencia de medias muestrales de niveles de pobreza en Hogares que utilizan Crédito Formal y los que utilizan Crédito Informal …………………………………….....44 Tabla A10 Efecto marginales de tres modelos probit sobre acceso al crédito de los hogares rurales. .................................................................................................................................. 45
+49
+
+

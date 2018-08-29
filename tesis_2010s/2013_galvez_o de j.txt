@@ -1,0 +1,3679 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EDUCACIÓN Y CRECIMIENTO ECONÓMICO DE MÉXICO:
+APLICACIÓN DEL MODELO UZAWA-LUCAS OSCAR DE JESÚS GÁLVEZ SORIANO
+PROMOCIÓN 2011-2013
+ASESOR: DR. GERARDO ESQUIVEL HERNÁNDEZ
+JULIO DE 2013
+
+Educacio´n y Crecimiento Econo´mico de M´exico: Aplicacio´n del modelo Uzawa-Lucas
+Oscar de Jesu´s G´alvez Soriano Julio de 2013
+Abstract Este trabajo de investigaci´on estudia el papel de la educaci´on en el crecimiento econo´mico de una econom´ıa en v´ıas de desarrollo. Los estudios emp´ıricos de las fuentes de crecimiento econ´omico no han podido formar un consenso acerca de la casualidad entre el capital humano y el crecimiento. Para resolver este problema, esta investigacio´n emplea una perspectiva de series de tiempo. La contribucio´n de la formaci´on de capital humano es estudiada siguiendo la literatura de crecimiento end´ogeno, y el papel espec´ıﬁco de la educaci´on se considera usando una funci´on de produccio´n de tipo Cobb-Douglas. Para ello, se asume que un individuo puede incrementar su capital humano al combinar algunos insumos agregados con su propio tiempo y habilidad. Tanto el modelo de Uzawa-Lucas como la funcio´n de producci´on del capital humano fueron estimados usando el M´etodo Generalizado de Momentos (GMM por sus siglas en ingl´es), con lo que a su vez se trato´ el problema de endogeneidad. El principal hallazgo de esta investigacio´n es que el efecto del capital humano en la produccio´n total se debe al para´metro de externalidades (por lo que el efecto es indirecto). En conclusi´on, el impacto de una mayor educacio´n es positivo sobre el crecimiento econo´mico de M´exico.
+1
+
+Agradecimientos
+A mi hijo Scotty, porque has sido mi inspiracio´n y el motivo por el cual jam´as me di por vencido. A ti te dedico esta tesis hijo m´ıo.
+A mi esposa Lupita, porque gracias a tu compan˜´ıa y a tu amor incondicional tuve la fuerza para terminar la maestr´ıa. Les agradezco de corazo´n por haber tolerado mi ausencia estos dos an˜os. ¡Los amo mucho!
+A mis padres y a mi hermana, por su intenso apoyo durante estos dos an˜os ¡muchas gracias!
+A mi hermanito C´esar, pues s´e que sigues cuida´ndome desde el cielo. Gracias por todo lo que me ensen˜aste, jama´s te olvidar´e.
+2
+
+Contents
+
+1 Planteamiento del Problema
+
+8
+
+1.1 Justiﬁcacio´n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+1.2 Motivaci´on . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+2 Revisi´on de Literatura
+
+10
+
+3 Objetivos
+
+13
+
+4 Modelo de Uzawa-Lucas
+
+14
+
+4.1 Modelo de Uzawa-Lucas sin externalidades . . . . . . . . . . . . . . . . . . . 16
+
+4.2 Modelo de Uzawa-Lucas con externalidades . . . . . . . . . . . . . . . . . . . 18
+
+5 Hip´otesis
+
+23
+
+6 Metodolog´ıa
+
+25
+
+6.1 Procedimiento de estimaci´on de par´ametros . . . . . . . . . . . . . . . . . . 25
+
+6.1.1 Modelo de Uzawa-Lucas sin externalidades . . . . . . . . . . . . . . . 25
+
+6.1.2 Modelo de Uzawa-Lucas con externalidades . . . . . . . . . . . . . . 27
+
+6.2 Datos a utilizar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+6.3 Funci´on de Producci´on del Capital Humano . . . . . . . . . . . . . . . . . . 31
+
+7 Resultados
+
+34
+
+8 Conclusiones
+
+37
+
+9 Ap´endice
+
+38
+
+A Desarrollo matem´atico del modelo Uzawa-Lucas
+
+38
+
+A.1 An´alisis de estabilidad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+A.2 Ecuaciones diferenciales a estimar en el modelo de Uzawa-Lucas con external-
+
+idades . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+A.3 Capital Humano . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+
+B Gr´aﬁcas
+
+47
+
+B.1 Tasa de crecimiento del PIB de M´exico . . . . . . . . . . . . . . . . . . . . . 47
+
+B.2 Tasa de crecimiento de la poblacio´n de M´exico . . . . . . . . . . . . . . . . . 47
+
+B.3 Tasa de crecimiento del PIB per c´apita de M´exico . . . . . . . . . . . . . . . 48
+
+B.4 Puntaje de pa´ıses en prueba PISA 2009 (desempen˜o matema´tico) . . . . . . 48
+
+B.5 Puntaje de pa´ıses en prueba PISA 2009 (desempen˜o lector) . . . . . . . . . . 48
+
+B.6 Puntaje de pa´ıses en prueba PISA 2009 (desempen˜o en ciencias) . . . . . . . 49
+
+B.7 Desempleo en M´exico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+
+B.8 Series de tiempo de PIB real y escolaridad . . . . . . . . . . . . . . . . . . . 50
+
+3
+
+Introduccio´n
+Histo´ricamente, las pol´ıticas econ´omicas aplicadas en M´exico han tenido un enfoque keynesiano, en otras palabras, han sido pol´ıticas de corto plazo que a pesar de sus beneﬁcios casi inmediatos, tienen efectos negativos en el largo plazo, tales como inﬂacio´n y deuda pu´blica.
+La pol´ıtica monetaria expansiva implementada en 19721 tuvo graves efectos inﬂacionarios para mediados del an˜o siguiente, al grado de volver negativas las tasas reales de inter´es, lo que ocasion´o la falta de cr´edito disponible en el sector bancario que oblig´o a recurrir al endeudamiento externo por parte del sector privado y del gobierno quien adema´s sigui´o recurriendo al ﬁnanciamiento inﬂacionario.
+Entre 1977 y 1981 el gobierno mexicano increment´o mucho su gasto, lo que provoco´ un gran d´eﬁcit pu´blico que fue ﬁnanciado con la emisio´n de dinero y con endeudamiento externo, ´este u´ltimo de magnitudes impresionantes. Lamentablemente toda esta entrada de capitales provoco´ serios problemas, por una parte se deterioro´ au´n m´as la balanza de pagos por la sobrevaluacio´n del peso que fue causada por la creciente inﬂacio´n, por otro lado el aumento dra´stico de las divisas deterioro´ la planta productiva a trav´es de la llamada “enfermedad holandesa” y ﬁnalmente, con la reduccio´n de los precios internacionales del petr´oleo, comenzaron a salir grandes cantidades de capital del pa´ıs. Estas presiones provocaron que las reservas internacionales en el Banco de M´exico llegaran a niveles insuﬁcientes para hacer frente a la demanda de d´olares, por lo que el gobierno se vio obligado a devaluar el peso.
+Sin embargo, “la estabilizacio´n econ´omica se logro´ reduciendo las pol´ıticas expansivas de corto plazo, pues se adopto´ una pol´ıtica ﬁscal responsable y se obtuvieron altos ingresos petroleros durante 2004 por los altos precios del petro´leo que contribuyeron a la reducci´on del d´eﬁcit ﬁscal, reduciendo la vulnerabilidad macroecono´mica y logrando bajas tasas de inﬂacio´n” (Mart´ınez, 2005: p´ag. 11).
+Pero a pesar de que la estabilidad de precios es favorable para la actividad econ´omica, ´esta no es suﬁciente para generar un crecimiento elevado y sostenido. Para esto u´ltimo se requiere, adema´s de un ambiente de inﬂacio´n baja y estable, la implementacio´n de pol´ıticas econo´micas que promuevan la productividad y competitividad de la econom´ıa, pero evitando que ´estas sean pol´ıticas de corto plazo pues, “de manera destacada, la Nueva Escuela Cla´sica ha demostrado que las pol´ıticas ﬁscales y monetarias de corte keynesiano, altamente intervencionistas en la econom´ıa, no conducen hacia una trayectoria caracterizada por altas tasas de crecimiento y por estabilidad din´amica, ni tampoco hacia una mejor distribuci´on de la riqueza, como es su presuncio´n” (Gonza´lez, 2002: pa´g. 9). En este sentido, debe ser preocupacio´n de los investigadores econ´omicos y de todo hacedor de pol´ıtica econo´mica el desempen˜o del PIB per ca´pita en el largo plazo.
+Podemos distinguir dos v´ıas por medio de las cuales una econom´ıa crece: los Factores de la Produccio´n (capital, trabajo y capital humano) y la Productividad Total de los Factores
+1Que llev´o a cabo el Banco de M´exico para hacer frente a las demandas de fondos por parte del gobierno dado su agresivo programa de inversiones.
+4
+
+(PTF). Muchos autores han contabilizado el aporte de estos factores, Solow (1957) y Denison (1962, 1967) encontraron que la tasa de acumulacio´n de capital por persona explicaba entre un octavo y un cuarto de las tasas de crecimiento del PIB de Estados Unidos y otros pa´ıses industrilizados, mientras que la PTF explicaba ma´s de un medio del crecimiento del PIB en la mayor´ıa de los pa´ıses. Durante las consecutivas d´ecadas se hab´ıa mantenido el concenso de que la mayor parte de las ﬂuctuaciones del PIB de largo plazo eran explicadas por la PTF. Pero desde ﬁnales del siglo XX resurgio´ el inter´es por estudiar las causas por las cuales existen grandes diferencias entre pa´ıses en el desempen˜o del crecimiento econo´mico de largo plazo. Las investigaciones se centraron en la discusi´on de si era la Acumulaci´on de Factores o la PTF lo que explicaba la mayor parte de las variaciones del PIB.
+Por una parte, Young (1995) demuestra que la acumulaci´on de factores explica satisfactoriamente el extraordinario crecimiento en la posguerra de Hong Kong, Singapur, Corea del Sur y Taiwa´n. Mientras que Klenow y Rodr´ıguez-Clare (1997), usando una muestra ma´s amplia de pa´ıses se inclinan por la explicacio´n de la PTF, pues encuentran que los pa´ıses ma´s ricos suelen tener una mayor relacio´n capital-producto (K/Y ), capital humano-producto (H/Y ), y una mayor A que los pa´ıses ma´s pobres, con un papel dominante de ´este u´ltimo, un papel grande del primero y un papel modesto del segundo. En esta misma l´ınea, Easterly y Levine (2001) mustran que la mayor´ıa de las regularidades emp´ıricas del crecimiento econo´mico enfatizan el papel de la PTF en lugar de la acumulacio´n de factores. Sin embargo, Francesco Caselli (2005) encuentra que hay una signiﬁcativa reducci´on en el componente no explicado del ingreso cuando aumenta el capital humano con un proxy del estatus de la salud de la fuerza de trabajo, pero concluye que au´n as´ı la mayor´ıa de la varianza del crecimiento permanece sin ser explicada.
+Centrando la atenci´on en la educacio´n, Bils y Klenow (2000) examinan un modelo de individuos con vida ﬁnita, en el que el capital humano puede crecer aumentando la asistencia a la escuela y de esta forma contribuir a la tasa de crecimiento de un pa´ıs. Sin embargo, los autores encuentran que la escolaridad explica menos de un tercio de la relaci´on emp´ırica entre pa´ıses, incluso argumentan que si existe una fuerte relaci´on entre crecimiento y educacio´n, se debe a que la relacio´n es del primero al segundo y no al contrario.
+Pero hay estudios ma´s precisos que intentan reconciliar el enfoque microecono´mico con el enfoque macroecono´mico de los retornos a la educaci´on, para comprender mejor la relaci´on entre educaci´on y crecimiento, por ejemplo, Krueger y Lindhal (2001) encuentran que los errores de medici´on de la educaci´on atenu´an severamente las estimaciones del efecto del cambio en la escolaridad sobre el crecimiento del PIB. Su ana´lisis sugiere que el cambio y el nivel inicial en educacio´n est´an positivamente correlacionados con el crecimiento econ´omico una vez que se toma en cuenta el error de medicio´n de la educacio´n. Adema´s, muchas investigaciones con enfoque microecono´mico (Donald Gorseline 1932, Griliches y William Mason 1972, Mincer 1974, Joshua Angrist y Krueger 1991, Card y Krueger 1992, Jin Huem Park 1994, y David Card 1994) proveen evidencia robusta de un pago sustancial por invertir en educacio´n, especialmente para aquellos quienes tradicionalmente completan bajos niveles de escolaridad.
+5
+
+Respecto al problema de la calidad de los datos, De la Fuente y Dom´enech (2006) proveen evidencia de que los resultados contraintuitivos del capital humano, como los obtenidos por Bils y Klenow, pueden ser atribuidos a diferencias en los datos, y muestran que mejoras en la calidad estos llevan a un mayor y ma´s preciso estimador de los coeﬁcientes de la escolaridad en regresiones de crecimiento. De hecho, los resultados de su investigaci´on sugieren que el valor verdadero de la elasticidad del producto respecto de los an˜os de escolaridad esta´ por encima de 0.60, que es al menos dos veces tan grande como el estimador m´as grande de la literatura previa.
+Caselli y Ciccon (2013) buscan responder la cuestio´n de cu´anto incrementar´a el producto por trabajador en un pa´ıs si los trabajadores tuvieran una mayor escolaridad. Para ello, usan una aproximacio´n al problema por medio de una cota superior no param´etrica en el crecimiento del producto, generada por ma´s escolaridad. Sus resultados sugieren que, para el caso de M´exico en el an˜o 2000, si incrementara la densidad de la escolaridad al nivel de EU, el producto de M´exico incrementar´ıa hasta en 88.6%, mientras que para la muestra de 90 pa´ıses aumentar´ıa en promedio 61%.
+Dado que existe mayor evidencia de la relevancia de la acumulacio´n de los factores (especialmente de capital humano en forma de educaci´on) que de la PTF para explicar el desempen˜o del PIB, sobre todo en pa´ıses menos desarrollados, resulta relevante estudiar el papel del capital humano en el crecimiento econo´mico de M´exico, buscando que ´este sea alto y de forma sostenida en el tiempo ya que “pequen˜as diferencias en la tasa de crecimiento, sostenidas durante largos periodos de tiempo, generan enormes diferencias en los niveles de [ingreso] per ca´pita” (Sala-i-Martin, 1994).
+En M´exico se ha presentado una desaceleraci´on econo´mica desde la d´ecada de los setenta que a la fecha sigue siendo un problema grave que merece ser atendido de inmediato. Sostengo que la raz´on por la cual se ha presentado este comportamiento tan heterog´eneo en las tasas de crecimiento de la nacio´n es debido a la aplicacio´n de pol´ıticas econo´micas de corto plazo2. Por lo que esta investigacio´n pretende aportar una alternativa a dichas pol´ıticas, utilizando un mecanismo de estimulacio´n del crecimiento econo´mico tal que lo mantenga en periodos largos de tiempo y a tasas altas y sostenidas: la educaci´on. En este sentido, el presente trabajo de investigacio´n busca determinar si la educacio´n puede aumentar la tasa de crecimiento econo´mico de M´exico. Para ello, me basar´e en el modelo Uzawa-Lucas, usando series de tiempo de los u´ltimos cuarenta an˜os.
+El resto de la investigacio´n esta´ estructurada como sigue: En la primera seccio´n se establece el problema a investigar y se justiﬁca su estudio dada la relevancia del tema. En la segunda seccio´n se exponen las investigaciones relacionadas, as´ı como las que fueron elementos clave para el desarrollo de la presente investigaci´on. La tercera y quinta secci´on establecen los objetivos e hip´otesis, respectivamente. La cuarta seccio´n se ocupa del desarrollo teo´rico del modelo de Uzawa-Lucas en las dos versiones estudiadas; con y sin externalidades del cap-
+2En el corto plazo son apropiadas las pol´ıticas contrac´ıclicas, pero no hay raz´on para hacer uso de la pol´ıtica ﬁscal o monetaria para incentivar el crecimiento economo´mico, esto s´olo generar´ıa inﬂacio´n en el largo plazo.
+6
+
+ital humano. En la sexta seccio´n se explica la metodolog´ıa usada, en espec´ıﬁco, se mencionan las fuentes de informacio´n y se expone el M´etodo Generalizado de Momentos. En las dos u´ltimas secciones se exponen los resultados y las conclusiones.
+7
+
+1 Planteamiento del Problema
+1.1 Justiﬁcacio´n
+El problema del Crecimiento Econo´mico es uno de los m´as estudiados dada su importancia y el cual deber´ıa ser objeto de mayor atenci´on entre los investigadores econ´omicos. En M´exico, la tasa de crecimiento del PIB ha sido muy pobre en las u´ltimas cuatro d´ecadas, de hecho en t´erminos reales se ha presentado una tendencia a tener tasas de crecimiento cada vez menores. Por otro lado, a pesar de que las tasas de crecimiento de la poblaci´on son cada vez ma´s bajas, siempre son positivas, por lo que la tasa de crecimiento del PIB per ca´pita es au´n menor3.
+Indiscutiblemente es necesario reactivar el crecimiento econ´omico de M´exico, pero sin utilizar pol´ıticas de corto plazo, pues hay suﬁciente evidencia emp´ırica que demuestra su ineﬁciencia. Por el contrario, el estudio del crecimiento econ´omico a largo plazo es muy relevante y de suma importancia para nuestro pa´ıs, pues “incluso pequen˜as diferencias en las tasas de crecimiento, acumuladas a lo largo de cuarenta an˜os o ma´s tienen consecuencia sobre los niveles de vida mucho ma´s importantes que las ﬂuctuaciones del ciclo econ´omico a corto plazo que tradicionalmente han recibido la atenci´on de los macroeconomistas” (Barro y Sala i Martin, 2009).
+1.2 Motivacio´n
+El logro escolar de la poblacio´n de un pa´ıs es extremadamente importante para el crecimiento econo´mico de largo plazo (Hanushek y Woessmann, 2012). Un fen´omeno que ha ocurrido en las u´ltimas d´ecadas es que la regi´on de Am´erica Latina ha tenido una asistencia escolar relativamente alta, pero las habilidades de los estudiantes permanecen contraintuitivamente muy pobres. Ello explica por qu´e Am´erica Latina pas´o de ser razonablemente rica en el periodo de la posguerra a ser relativamente pobre en la actualidad. Hanushek y Woessmann (2012) encuentran que la asistencia escolar est´a asociada con el crecimiento s´olo en la medida en la que ´esta supone el logro educativo, el cual ha sido muy bajo en Am´erica Latina comparado con otras regiones del mundo.
+La Organizacio´n para la Cooperaci´on y el Desarrollo Econ´omico (OCDE) ha recomendado activamente a pa´ıses como M´exico la mejora de su sistema educativo como v´ıa para alcanzar un mayor crecimento econ´omico. En concreto, la OCDE ha deﬁnido cinco prioridades de pol´ıtica que se identiﬁcan en funci´on de su capacidad para mejorar a largo plazo los niveles de vida de los habitantes de los pa´ıses miembros, a trav´es de una mayor productividad y empleo. En t´erminos generales, estas prioridades cubren las regulaciones del mercado laboral y del mercado de productos; educacio´n y capacitaci´on; sistemas de impuestos y beneﬁcios; reglas de comercio e inversio´n; y pol´ıticas de innovaci´on (OCDE, 2013).
+El ´enfasis que hace la OCDE en prestar m´as atenci´on a la educacio´n se resume en los
+3V´ease Ap´endice B1, B2 y B3 para un ana´lisis gra´ﬁco.
+8
+
+datos. En la prueba PISA4 de 2009, M´exico se ubico´ en los u´ltimos lugares de 65 pa´ıses a los que se les hace la prueba y en el u´ltimo lugar entre los pa´ıses miembros de la OCDE, para las tres materias que se evalu´an (desempen˜o en matema´ticas, desempen˜o lector y desempen˜o en ciencias)5.
+La amplia brecha existente del PIB per ca´pita en relaci´on con la mitad superior de la OCDE es generada, principalmente, por un nivel y tasa de crecimiento bajos de la productividad laboral. Se requiere elevar el rendimiento escolar y reducir la informalidad laboral para aumentar la productividad y mejorar los resultados del mercado laboral. Pero adema´s de aumentar la productividad, mejorar los resultados educativos de nivel primaria y secundaria favorecera´ la acumulacio´n de capital humano y reducira´ el grado de desigualdad en los ingresos (OCDE, 2013).
+Dada la relevancia del tema y las insistentes sugerencias que la OCDE ha hecho a M´exico de mejorar el sistema educativo, la presente investigacio´n se pregunta ¿cu´al es la contribucio´n de la educacio´n en el crecimiento econ´omico de M´exico? Para responder dicha pregunta se utiliza la Teor´ıa Neocla´sica de Crecimiento Endo´geno, en particular se usa el modelo de Uzawa-Lucas.
+4El Programa para la Evaluaci´on Internacional de Alumnos (PISA) evalu´a el nivel de conocimientos y destrezas necesarios para participar plenamente en la sociedad que han adquirido los estudiantes a punto de acabar su escolarizaci´on obligatoria, centr´andose en competencias clave como la lectura, las matema´ticas y las ciencias (OCDE, 2006).
+5V´ease Ap´endice B4, B5 y B6 para un ana´lisis gra´ﬁco.
+9
+
+2 Revisio´n de Literatura
+Las primeras aproximaciones emp´ıricas que dan evidencia de una relacio´n fuerte entre educacio´n y crecimiento econ´omico fueron las hechas por Barro y Sala-i-Martin (1995), ellos realizan regresiones b´asicas con datos de seccio´n cruzada para 87 pa´ıses de 1965-75 y para 97 pa´ıses de 1975-85. Sin embargo, las especiﬁcaciones de sus regresiones no suponen un cierto modelo econ´omico para explicar las tasas de crecimiento. Simplemente tomaron regresiones de la tasa de crecimiento del PIB per c´apita como variable dependiente contra cierto nu´mero de variables independientes. Sus resultados sugieren que la escolaridad y el capital humano tienen efectos positivos sobre las tasas de crecimiento econo´mico en los diferentes pa´ıses sobre los que se hicieron las pruebas.
+Sin embargo, han habido muchas cr´ıticas a los estudios econom´etricos con datos de secci´on cruzada. Se ha demostrado que este tipo de estudios que juntan pa´ıses en diferentes etapas del desarrollo, podr´ıan perder los umbrales del mismo (Bernard y Durlauf, 1995). Los modelos de Romer (1990) y Lucas (1988), por ejemplo, predicen retornos crecientes a escala del capital humano, lo cual puede causar diferencias en las condiciones iniciales de cada pa´ıs. Adema´s, los estudios de seccio´n cruzada asumen que los par´ametros de la tecnolog´ıa y las preferencias son los mismos para todos los pa´ıses, por lo cual no podr´ıan arrojar resultados conﬁables.
+Alternativo a los estudios de corte transversal es el uso de m´etodos de series de tiempo para probar los modelos modernos de crecimiento. Jones (1995) usa series de tiempo para demostrar que el problema de la incongruencia entre la teor´ıa de crecimiento endo´geno y la evidencia emp´ırica son las especiﬁcaciones de los modelos (de tipo AK y basados en I&D). Con respecto a los modelos de tipo AK, las estimaciones emp´ıricas sugieren que un aumento permanente de la tasa de inversi´on, lejos de elevar las tasas de crecimiento sostenidamente, afecta el crecimiento durante al menos ocho o diez an˜os. Con respecto a los modelos basados en I&D, la evidencia en contra de ´estos es au´n m´as apremiante. Estos modelos predicen que las tasas de crecimiento deben ser proporcionales al nivel de I&D, lo cual es completamente contrario al gran aumento de la I&D en los u´ltimos 40 an˜os.
+Jones (1995) se reﬁere al efecto sostenido en el tiempo de una variable del modelo como efecto a escala (al igual que Lucas ). Ello implica que la tasa de crecimiento del capital humano es mon´otonamente creciente con el tiempo gastado en educaci´on, lo que a su vez implica que un incremento del tiempo gastado en educaci´on, aumenta la tasa de crecimiento de la acumulaci´on de capital humano y, en consecuencia, la tasa de crecimiento balanceado.
+En atenci´on a lo anterior, Gong, Greiner y Semmler (2004) modiﬁcan los efectos de la educacio´n y el capital humano en el crecimiento en su variante del modelo de crecimiento de Uzawa-Lucas y prueban el modelo usando datos de series de tiempo de EE.UU. y Alemania en el periodo 1962-I a 1996-IV. Gong et al. consideran dos versiones. En la primera, suponen que el tiempo dedicado a la educacio´n es ex´ogeno y dado, y no consideran el efecto externo del capital humano. En la segunda versio´n, el tiempo dedicado a la educacio´n es una variable endo´gena y el efecto externo del capital humano es tomado en cuenta. Sus resultados demuestran que su modelo es compatible con las series de tiempo para los datos agregados
+10
+
+en EE.UU. y Alemania. Adema´s encuentran que existe una relacio´n no lineal entre el capital humano y el crecimiento econo´mico de ambas econom´ıas.
+Dadas las limitaciones de las predicciones del modelo de Uzawa-Luca susando series de tiempo de EE.UU. y Alemania, El-Mattrawy y Semmler (2006) estudian el papel de la educacio´n y el capital humano en el crecimiento econo´mico de Egipto, para lo cual usan la misma metodolog´ıa que Gong et al. Los resultados de El-Mattrawy et al. muestran que el capital humano explica una parte signiﬁcativa del crecimiento econ´omico de Egipto, sin embargo, au´n hay una parte grande que es explicada por la PTF.
+Para el caso de M´exico hay estudios que no se centran en el crecimiento econo´mico en su conjunto, pero que obtienen resultados que apuntan a los efectos positivos de la educacio´n en el crecimiento. Ocegueda y Plascencia (2003) analizan el proceso de crecimiento regional en los estados fronterizos de M´exico y Estados Unidos durante el per´ıodo 1975-2000. A trav´es de dos ejercicios, uno de convergencia beta y otro de convergencia sigma. Los autores encuentran que las experiencias de crecimiento en la regi´on no han sido homog´eneas y obedecen a lo´gicas diferentes que no son fa´ciles de explicar, pero donde el capital humano y la especializacio´n econo´mica han jugado un papel muy importante. Por otro lado, analizando los efectos Microecono´micos de la educacio´n, McKee y Todd (2001) estudian las posibles consecuencias a largo plazo del programa Oportunidades sobre de la pobreza y la desigualdad. Los autores adaptan m´etodos desarrollados en DiNardo, Fortin y Lemieux (1996) e incorporan actuales estimaciones experimentales de los efectos del programa sobre el capital humano para analizar co´mo Oportunidades afectara´ los ingresos futuros de los participantes del programa. Sus resultados emp´ıricos sugieren que la inversio´n de hoy en el capital humano de los jo´venes aumentar´an sus niveles de ingresos medios, pero s´olo tendra´ un modesto efecto en la desigualdad de ingresos.
+Hay trabajos ma´s relacionadas con la presente investigacio´n, pero que carecen de formalidad, sin embargo, arrojan resultados consistentes con las predicciones teo´ricas, por ejemplo, Ocegueda, Meza y Coronado (2013) usan datos panel considerando al capital humano como la proporci´on de la poblaci´on con cierto nivel de adiestramiento obtenido en los diferentes grados escolares, adema´s consideran la inversi´on en capital f´ısico para identiﬁcar su importancia en el crecimiento econo´mico del pa´ıs. Los autores encuentran que la educacio´n tuvo un papel importante incentivando el crecimiento econo´mico de M´exico en el periodo 19902008. En otro estudio, Meza, Barr´on y Urciaga (2012) analizan si en M´exico se presenta la maldici´on de los recursos naturales tomando como variables relevantes la educacio´n y el capital humano en el periodo de 1993-2003. Los resultados muestran que los recursos naturales afectan negativamente al crecimiento econ´omico, en tanto, que una mayor escolaridad contribuye de manera positiva. Sin embargo, se deben tomar con cautela los resultados de ambos trabajos ya que no corrigen los problemas de endogeneidad que evidentemente tienen sus modelos.
+De esta forma, tomando en consideracio´n las cr´ıticas a los estudios que usan datos de seccio´n cruzada y a los modelos modernos de crecimieto econ´omico, el presente trabajo se basa en la investigacio´n desarrollada por Gong et al. y El-Mattrawy et al. En concreto, se
+11
+
+realiza una aproximaci´on emp´ırica al modelo de Uzawa-Lucas por medio de series de tiempo. Para ello se estiman los par´ametros de la tecnolog´ıa y de las preferencias con datos de series de tiempo de M´exico, con lo cual se da respuesta a dos preguntas acerca de si el modelo de Uzawa-Lucas es compatible con la evidencia emp´ırica para el caso de M´exico y, de ser as´ı, si la educaci´on tiene un efecto positivo sobre las tasas de crecimiento econ´omico de M´exico.
+12
+
+3 Objetivos
+Objetivo General Determinar si la educacio´n tiene un impacto positivo en el crecimiento econo´mico de
+M´exico. Objetivos particulares
+• Establecer el modelo teo´rico de Uzawa-Lucas que ser´a utilizado para las estimaciones emp´ıricas.
+• Determinar las variables a usar en las estimaciones emp´ıricas. • Estimar el modelo Uzawa-Lucas con datos de series de tiempo de M´exico. • Proponer una funcio´n de produccio´n de capital humano. • Estimar el efecto de un incremento de la educacio´n en la creaci´on de capital humano. • Dar algunas conclusiones en base a los resultados obtenidos.
+13
+
+4 Modelo de Uzawa-Lucas
+
+Se eligi´o usar el modelo Uzawa-Lucas, uno de los modelos de crecimiento endo´geno ma´s famosos, por tener propiedades interesantes. No es del tipo AK (en M´exico hay mucha investigaci´on usando modelos de este tipo), y por otra parte, el ser un modelo de dos sectores, da lugar a un sistema din´amico soﬁsticado con dos controles, el consumo (c) y la fracci´on de capital humano que opera en el sector del bien ﬁnal (u), y dos variables de estado, el capital f´ısico (K) y capital humano (h). Por u´ltimo, pero no menos importante, es matema´ticamente atractivo, pues ha sido estudiado por muchos autores usando diferentes enfoques, por lo tanto permite una discusio´n metodol´ogica estimulante (Boucekkine y Ruiz-Tamarit, 2008).
+
+Este modelo es de crecimiento end´ogeno en tanto la tasa de ahorro se determina end´ogenamente por los par´ametros de las preferencias y de la tecnolog´ıa. Por otro lado, contiene efectos a escala en el sentido de que el aumento en la formaci´on de capital humano incrementa la tasa de crecimiento balanceado. A continuacio´n se desarrolla dicho modelo:
+
+El modelo tiene dos sectores, uno de ellos produce capital f´ısico usando trabajo y capital humano, mientras que el otro produce el capital humano. Se deﬁnen las preferencias del agente sobre los ﬂujos de consumo como:
+
+donde:
+
+∞
+
+c(t)1−σ L(l)
+
+−
+
+1 e−ρtdt
+
+0
+
+1−σ
+
+(4.1)
+
+• L es trabajo.
+
+• ρ es el factor de descuento.
+
+•
+
+1 σ
+
+>
+
+0
+
+es
+
+la
+
+elasticidad
+
+intertemporal
+
+de
+
+sustitucio´n
+
+del
+
+consumo
+
+entre
+
+dos
+
+puntos
+
+en
+
+el
+
+tiempo.
+
+•
+
+c=
+
+C L
+
+es
+
+el
+
+consumo
+
+por
+
+trabajador.
+
+En la econom´ıa, un trabajador caliﬁcado de nivel h, dedica una fraccio´n u(t) de su tiempo de no-ocio a la producci´on actual, mientras que dedica una fraccio´n 1 − u(t) de su tiempo de no-ocio a la acumulacio´n de capital humano.
+
+El nivel promedio de caliﬁcacio´n ha esta´ deﬁnido como:
+
+hL(h)dh ha = L(h)dh
+
+(4.2)
+
+En Lucas (1988), el nivel promedio de caliﬁcacio´n genera un efecto externo en la funcio´n de producci´on del bien f´ısico. Intuitivamente, un mayor nivel de capital humano tiene un efecto estimulante en la productividad total.
+
+La restricci´on de recursos esta´ dada por:
+
+14
+
+donde:
+
+L(t)c(t)
+
++
+
+.
+K (t)
+
+=
+
+AK (t)1−α
+
+[u(t)h(t)L(t)]α
+
+haζ
+
+(4.3)
+
+• Y (t) = AK(t)1−α [u(t)h(t)L(t)]α haζ • A es el nivel constante de tecnolog´ıa
+
+• (1 − α) ∈ (0, 1) es la participacio´n del capital en la produccio´n
+
+• ζ ≥ 0 es el para´metro de externalidad.
+
+La ecuaci´on (4.3) implica que el capital humano es un bien pu´blico no excluible pero es bien rival6.
+
+Lucas usa la siguiente formulacio´n lineal de Uzawa-Rosen:
+
+.
+h(t) = h(t)κ(1 − u(t))
+
+(4.4)
+
+donde:
+
+κ es la ma´xima tasa de crecimiento de capital humano.
+.
+Si no se dedica esfuerzo a la acumulacio´n de capital humano, u(t) = 1 ⇒ h(t) = 0. Si todo el esfuerzo se dedica a la acumulacio´n de capital humano u(t) = 0 entonces h(t) crece a la tasa κ. No´tese, adem´as, que estamos suponiendo que el capital humano no se deprecia; la intuici´on es que el conocimiento y las habilidades no se deterioran con el paso del tiempo como s´ı ocurre con las m´aquinas, ediﬁcios y herramientas.
+
+En resumen, el modelo esta´ dado por la soluci´on al siguiente problema de maximizaci´on:
+
+sujeto a:
+
+max ∞ L(l) c(t)1−σ − 1 e−ρtdt
+
+c,u 0
+
+1−σ
+
+(4.5)
+
+.
+K (t)
+
+=
+
+AK (t)1−α
+
+[u(t)h(t)L(t)]α
+
+haζ
+
+−
+
+L(t)c(t)
+
+(4.6)
+
+.
+h(t) = h(t)κ(1 − u(t))
+
+(4.7)
+
+K(0) ≥ 0, h(0) ≥ 0
+
+6En este caso el capital humano es un bien pu´blico que esta´ sujeto a congestio´n porque el nivel total de
+
+capital
+
+humano
+
+por
+
+trabajador,
+
+Lh L
+
+,
+
+incrementa
+
+la
+
+eﬁciencia
+
+del
+
+insumo
+
+trabajo
+
+L.
+
+15
+
+4.1 Modelo de Uzawa-Lucas sin externalidades
+
+Supongamos, en principio, que no hay externalidad (i.e., ζ = 0) y que u esta´ exo´genamente dada. De esta forma, u´nicamente tenemos una variable de control, por lo que el valor presente del Hamiltoniano para este problema es el siguiente:
+
+L H(K, h, θ1, c) = 1 − σ
+
+c1−σ − 1
+
++ θ1
+
+AK1−α [uhL]α − Lc
+
+C.P.O.:
+
+(4.8)
+
+∂H =0
+∂c
+
+⇔
+
+c−σ = θ1
+
+(4.9)
+
+∂H −ρθ1 + ∂K
+
+.
+= −θ1
+
+⇔
+
+.
+θ1
+
+=
+
+ρθ1
+
+−
+
+θ1(1
+
+−
+
+α)AK −α
+
+[uhL]α
+
+y la Condicio´n de Tranversalidad:
+
+(4.10)
+
+l´ım e−ρtθ1(t)K(t) = 0
+t→∞
+
+(4.11)
+
+Para obtener un sistema estimable, reescribimos las ecuaciones en tasas de crecimiento
+
+usando
+
+y
+
+=
+
+h K
+
+y
+
+z
+
+=
+
+c h
+
+:
+
+h
+
+y.
+
+.
+h
+
+.
+K
+
+y= ⇒ = −
+
+K y hK
+
+(4.12)
+
+c
+
+z.
+
+c.
+
+.
+h
+
+z= ⇒ = −
+
+h z ch
+
+(4.13)
+
+De (4.9), sacando logaritmos y diferenciando con respecto al tiempo:
+
+De (4.10):
+
+c. −σ
+
+=
+
+.
+θ1
+
+c θ1
+
+(4.14)
+
+.
+θ1 = ρ − (1 − α)AK−αhα (uL)α θ1
+Sustituyendo (4.15) en (4.14):
+
+(4.15)
+
+c. −ρ + (1 − α)AK−αhα (uL)α
+
+⇒=
+
+c
+
+σ
+
+Reescribiendo las restricciones de los recursos (4.3):
+
+(4.16)
+
+.
+K =A
+
+1
+
+−α
+(uL)α − Lzy
+
+K
+
+y
+
+(4.17)
+
+De la ecuacio´n de acumulaci´on de capital humano (4.4):
+
+16
+
+.
+h = κ(1 − u)
+h
+Sustituyendo (4.17) y (4.18) en (4.12):
+
+(4.18)
+
+y. = κ(1 − u) − A
+
+1
+
+−α
+(uL)α − Lyz
+
+y
+
+y
+
+Sustituyendo (4.16) y (4.18) en (4.13):
+
+donde:
+
+z. −ρ + (1 − α)Ayα (uL)α
+
+=
+
+− κ(1 − u)
+
+z
+
+σ
+
+(4.19) (4.20)
+
+y
+
+=
+
+h K
+
+z
+
+=
+
+c h
+
+Es f´acil ver que existe una u´nica Senda de Crecimiento Balanceado (SCB) para este modelo que se obtiene al determinar que y. = z. = 0. Usando esto, y sustituyendo en (4.19) obtenemos que:
+
+Ayα (uL)α + Lyz = κ(1 − u) De la misma forma para (4.20):
+
+(4.21)
+
+−ρ + (1 − α)Ayα (uL)α = κ(1 − u)
+σ Usando (4.22) y resolviendo para y:
+
+(4.22)
+
+1
+ρ + σκ(1 − u) α y=
+(1 − α)A(uL)α
+Usando este resultado en (4.21) y resolviendo para z:
+
+(4.23)
+
+1
+
+[(1 − α)A] α u [κ(1 − u) [(1 − α) − σ] − ρ]
+
+z=
+
+1
+
+(1 − α) [σκ(1 − u) + ρ] α
+
+(4.24)
+
+El determinante del Jacobiano de (4.19) y (4.20) es negativo7, lo que implica que el modelo de Uzawa Lucas, cuando no hay externalidad (ζ = 0) y cuando u esta´ ex´ogenamente dada, tiene un punto silla.
+
+7V´ease Ap´endice A.1 en donde se desarrolla el Jacobiano.
+
+17
+
+4.2 Modelo de Uzawa-Lucas con externalidades
+El siguiente procedimiento de solucio´n esta´ basado en el trabajo de Lucas (1988)8.
+
+Si ahora permitimos que haya externalidades (ζ > 0) y que haya una segunda variable de control u, la restriccio´n de los recursos est´a dada por:
+
+L(t)c(t)
+
++
+
+.
+K (t)
+
+=
+
+AK (t)β
+
+[u(t)h(t)L(t)]1−β
+
+haζ (t)
+
+(4.24)
+
+donde el t´ermino haζ (t) intenta capturar los efectos externos del capital humano y donde el nivel de tecnolog´ıa A es constante.
+
+En la presencia de un efecto externo haζ (t), la senda de crecimiento ´optimo y la senda de crecimiento competitivo no tendr´ıan por qu´e coincidir. En consecuencia, no es posible construir el equilibrio en forma an´aloga al modelo de Solow. Pero s´ı es posible de la forma en la que lo hace Romer, obteniendo las sendas o´ptima y de equilibrio por separado y compara´ndolas.
+
+Una senda ´optima es la eleccio´n de K(t), h(t), Ha(t), c(t) y u(t) que maximizan la utilidad (4.1) sujeto a (4.4) y (4.24), y sujeto a la restricci´on h(t) = ha(t) ∀t.
+
+Por otro lado, para una senda de equilibrio, primero se toma una senda ha(t), t ≥ 0, dada. Con ha(t) dado, consid´erese el problema del sector privado (hogares y empresas) que se resolver´ıa si cada agente tuviera el nivel promedio de capital humano que sigue la senda
+ha(t). Esto es, resolver el problema de elegir h(t), k(t), c(t) y u(t) que maximizan (4.1) sujeto a (4.4) y (4.24), tomando ha(t) como ex´ogenamente determinado. Cuando la senda de solucio´n h(t) coincide con la senda dada ha(t) decimos que el sistema esta´ en equilibrio.
+
+El Hamiltoniano del problema es:
+
+L H(K, h, θ1, θ2, c, u, t) = 1 − σ
+
+c1−σ − 1
+
++ θ1
+
+AKβ (uhL)1−β hζ − Lc
+
++ θ2 [hκ(1 − u)]
+
+En este modelo hay dos varibles de control: consumo, c(t), y el tiempo dedicado a la produccio´n, u(t), y ´estas son seleccionadas para maximizar el Hamiltoniano, H.
+
+C.P.O.:
+
+c−σ = θ1
+
+(4.25)
+
+θ1(1 − β)AKβ [uhL]−β Lh1+ζ = θ2hκ
+
+(4.26)
+
+8En el desarrollo de esta secci´on se cambia un poco la notaci´on en atencio´n al desarrollo original de Lucas, sin embargo para la estimaci´on de los para´metros se regresa a la notacio´n aqu´ı usada.
+
+18
+
+Esto signiﬁca que en margen los bienes deben ser valuados de la misma forma en sus dos usos: consumo y acumulacio´n de capital (ecuacio´n (4.25)); y el tiempo deber ser igualmente valuado en sus dos usos: producci´on y acumulacio´n de capital humano (ecuacio´n (4.26)).
+
+Las tasas de cambio de los precios θ1 y θ2 de los dos tipos de capital est´an dados por:
+
+.
+θ1
+
+=
+
+ρθ1
+
+−
+
+θ1 β AK β−1
+
+[uhL]1−β
+
+hζ
+
+(4.27)
+
+.
+θ2
+
+=
+
+ρθ2
+
+−
+
+θ1(1
+
+−
+
+β
+
++
+
+ζ )AK β
+
+[uL]1−β
+
+h−β+ζ
+
+−
+
+θ2κ(1
+
+−
+
+u)
+
+y las Condiciones de Tranversalidad son:
+
+(4.28)
+
+l´ım e−ρtθ1(t)K(t) = 0
+t→∞
+
+(4.29)
+
+l´ım e−ρtθ2(t)h(t) = 0
+t→∞
+
+(4.30)
+
+En el equilibrio, el sector privado resuelve un problema de control de escencialmente esta misma forma, pero con el t´ermino haζ (t) en (4.24) como dado. La condicio´n para vaciar los mercados requiere que (4.4), (4.24), (4.25), (4.26) y (4.27) sean condiciones necesarias para
+
+la senda de equilibrio as´ı como para la senda ´optima. Pero (4.28) no se cumple, as´ı que es
+
+reemplazada por:
+
+.
+θ2
+
+=
+
+ρθ2
+
+−
+
+θ1(1
+
+−
+
+β )AK β
+
+[uL]1−β
+
+h−β+ζ
+
+−
+
+θ2κ(1
+
+−
+
+u)
+
+(4.32)
+
+Sea
+
+γ
+
+la
+
+tasa
+
+de
+
+crecimiento
+
+del
+
+consumo
+
+per
+
+ca´pita
+
+c. (t) c(t)
+
+,
+
+de
+
+tal
+
+forma
+
+que
+
+(4.25)
+
+y
+
+(4.27)
+
+implican la condici´on de productividad marginal del capital:
+
+donde:
+
+βAK(t)β−1 [u(t)h(t)L(t)]1−β h(t)ζ = ρ + σγ
+
+(4.32)
+
+• ρ es el factor de descuento.
+
+•
+
+1 σ
+
+>
+
+0
+
+es
+
+la
+
+elasticidad
+
+intertemporal
+
+de
+
+sustitucio´n
+
+del
+
+consumo
+
+entre
+
+dos
+
+puntos
+
+en
+
+el
+
+tiempo.
+
+Es f´acil ver que K(t) debe crecer a la tasa γ + n (donde n es la tasa de crecimiento de la poblacio´n) y la tasa de ahorro s es constante, en una senda balanceada, al valor dado por:
+
+β(γ + n) s=
+ρ + σγ
+
+(4.33)
+
+.
+
+Sea
+
+ahora
+
+ψ
+
+=
+
+h(t) h(t)
+
+en
+
+una
+
+senda
+
+balanceada;
+
+es
+
+claro
+
+de
+
+(4.4)
+
+que:
+
+ψ = κ(1 − u)
+
+(4.34)
+
+Diferenciando (4.32) y resolviendo para γ, la tasa de crecimiento del consumo y del capital per ca´pita es:
+
+19
+
+1−β+ζ
+
+γ=
+
+ψ
+
+1−β
+
+(4.35)
+
+De esta forma, con h(t) creciendo a la tasa ﬁja ψ, (1 − β + ζ)ψ juega el papel de la tasa exo´gena de cambio tecnolo´gico.
+
+Para determinar la tasa de crecimiento ψ del capital humano, es posible ver que al difer-
+
+.
+
+enciar
+
+las
+
+condiciones
+
+de
+
+primer
+
+orden
+
+(4.25)
+
+y
+
+(4.26)
+
+y
+
+sustituyendo
+
+por
+
+: θ1
+θ1
+
+.
+θ2 = (β − σ)γ − (β − ζ)ψ + n θ2
+
+(4.36)
+
+En este punto, el ana´lisis de las sendas de eﬁciencia y equilibrio divergen. Enfoca´ndonos
+
+primero en la senda de eﬁciencia, usamos (4.26) y (4.24) para obtener:
+
+.
+
+θ2 = ρ − δ − ζ κu
+
+θ2
+
+1−β
+
+(4.37)
+
+.
+
+Ahora
+
+sustituyendo
+
+por
+
+u
+
+de
+
+(4.34),
+
+eliminamos
+
+θ2 θ2
+
+entre
+
+(4.36)
+
+y
+
+(4.37),
+
+y
+
+resolviendo
+
+para ψ en t´erminos de γ. Despu´es eliminando γ entre esta ecuaci´on y (4.35) nos da la solucio´n
+
+de la tasa de crecimiento eﬁciente de capital humano:
+
+ψ∗ = σ−1 κ − 1 − β + ζ (ρ − n) 1−β
+
+(4.38)
+
+En un equilibrio de senda balanceda, (4.31) se mantiene en lugar de (4.28), de tal forma que en lugar de (4.37) tenemos:
+
+.
+θ2 = ρ − κ θ2
+
+(4.39)
+
+Por el mismo procedimiento usado para derivar la tasa de crecimiento eﬁciente ψ∗ de
+
+(4.37), podemos obtener de (4.39) la tasa de crecimiento de equilibrio ψ:
+
+ψ = [σ(1 − β + ζ) − ζ]−1 [(1 − β)(δ − (ρ − n))]
+
+(4.40)
+
+Las ecuaciones (4.38) y (4.40) dan las tasas de crecimiento eﬁciente y competitivo respectivamente del capital humano en una senda balanceada. En ambos casos, este crecimeinto se incrementa con la inversio´n efectiva en capital humano κ, y decrece con incrementos en la tasa de descuento ρ. No´tese que la teor´ıa predice crecimiento sostenido con o sin externalidades ζ. Si ζ = 0, γ = ψ, mientras que si ζ > 0, γ > ψ, de tal forma que las externalidades indicen a un crecimiento ma´s ra´pido del capital f´ısico que del capital humano.
+
+Para el caso de σ = 1, la diferencia entre las tasas de crecimiento del capital humano eﬁciente y el de equilibrio es, restando (4.38) a (4.40):
+
+ψ∗ − ψ =
+
+ζ
+
+(ρ − n)
+
+1−β+ζ
+
+20
+
+Esto signiﬁca que la ineﬁciencia es pequen˜a cuando la externalidad es pequen˜a (ζ = 0) o cuando la tasa de descuento es baja (ρ − n = 0).
+
+Las ecuaciones (4.35), (4.38) y (4.40) describen las tasas de cambio asinto´ticas de ambos
+tipos de capital bajo reg´ımenes de eﬁciencia equilibrio. ¿Qu´e puede decirse acerca de los
+niveles de estas variables? En este modelo, la condici´on de productividad marginal del capital deﬁne una curva que liga las dos variables normalizadas z1(t) = e−(γ+n)tK(t) y z2(t) = e−ψth(t). Insertandos estas dos variables en (4.32) en lugar de K(t) y h(t) y aplicando la
+fo´rmula (4.35) para γ, obtenemos:
+
+βAL10−βu1−β z1β−1z21−β+ζ = ρ + σγ
+
+(4.41)
+
+Es un hecho que todos los pares (z1, z2) que satisfacen (4.41) corresponden a sendas balanceadas.
+
+La ﬁgura 4.2.1 muestra la curva deﬁnida por (4.41). Sin externalidades (ζ = 0) es una linea recta desde el origen; de otra forma (ζ > 0) es una curva convexa. La posicio´n de la curva depende de u y γ, los cuales de (4.34) y (4.35) pueden ser expresados como funciones de ψ. Usando este hecho puede verse que los incrementos en ψ desplazan la curva hacia la derecha. De esta forma, una econom´ıa eﬁciente, en una senda balanceada, tendra´ un mayor nivel de capital humano (z2) para cualquier nivel dado de capital f´ısico (z1), en tanto ψ∗ > ψ.
+
+De cuerdo con Lucas (1988), para cualquier conﬁguracio´n (K(0), h(0)) de los dos tipos de capital, las sendas de solucio´n (del sistema eﬁciente o de equilibrio), (z1(t), z2(t)), convergera´n a algu´n punto en la curva de la ﬁgura 4.2.1, pero esta posicio´n asinto´tica dependera´ de la posic´on inicial. Las ﬂechas en la ﬁgura ilustran algunas posibles trayectorias. Bajo estas dina´micas, una econom´ıa comienza con bajos niveles de capital humano y el capital f´ısico permanece en el tiempo bajo una mejor dotacio´n inicial de la econom´ıa.
+La ﬁgura 4.2.1 esta´ deﬁnida como los puntos en el largo plazo de pares de capital (K, h) tales que el producto marginal del capital tiene el valor comu´n ρ+σγ dado por el lado derecho
+21
+
+de (4.32). En esta curva, los retornos del capital son cosntantes y tambi´en son constantes en el tiempo incluso aunque los niveles de capital de ambos tipos est´en creciendo.
+
+Cuando ζ ≥ 0, el salario real incrementa a medida que uno se mueve hacia arriba de la curva de la ﬁgura 4.2.1. A lo largo de esta curva tenemos la f´ormula de la elasticidad:
+
+K ∂w (1 + β)ζ =
+w ∂K 1 − β + ζ
+donde w es el salario real. De tal forma que los pa´ıses m´as ricos tienen mejores salarios que los pa´ıses m´as pobres para cualquier “habilidad del trabajo” dada. En todos los pa´ıses los salarios crecen a cada nivel de habilidad a la tasa:
+
+ζ
+
+ω=
+
+ψ
+
+1−β
+
+Tomando en cuenta el crecimiento de la habilidad, el salario crece a:
+
+1−β+ζ
+
+ω+ψ =
+
+ψ=γ
+
+1−β
+
+o a una tasa igual a la tasa de crecimiento en el nivel per c´apita de capital f´ısico.
+
+22
+
+5 Hip´otesis
+
+En base a las predicciones del modelo teo´rico de Uzawa-Lucas sin externalidades, se establecen las siguientes hip´otesis:
+• Para´metros:
+
+1. El factor de descuento, ρ, tendr´a un signo positivo y signiﬁcativo.
+2. El para´metro σ, tendr´a un signo positivo y signiﬁcativo.
+3. El share del trabajo, α, tendra´ un signo positivo y signiﬁcativo, y tomar´a un valor entre cero y uno.
+4. La tasa m´axima de crecimiento de capital humano, κ, tendra´ un signo positivo y signiﬁcativo.
+5. El para´metro de tecnolog´ıa, A, tendr´a un signo positivo y signiﬁcativo.
+6. El para´metroλ, tendr´a un signo positivo y signiﬁcativo.
+7. El share del capital dedicado a la producci´on de capital humano φ, tendra´ un signo positivo y signiﬁcativo, y tomara´ un valor entre cero y uno.
+
+• Implicaciones:
+
+1. Un incremento del tiempo de no ocio dedicado a la acumulaci´on de capital humano, incrementa el capital humano en κ unidades (κ > 0).
+
+2.
+
+Un
+
+incremento
+
+en
+
+una
+
+unidad
+
+de
+
+capital
+
+humano,
+
+aumenta
+
+la
+
+produccio´n
+
+en
+
+∂Y (t) ∂h(t)
+
+=
+
+(1 + α)AK(t)1−α [u(t)L(t)]α h(t)α > 0.
+
+3. En estado estacionario, un incremento en una unidad de capital humano, aumenta el
+
+1
+
+consumo
+
+por
+
+trabajador
+
+en
+
+[(1−α)A] α u[κ(1−u)[(1−α)−σ]−ρ]
+1
+
+>
+
+0.
+
+(1−α)[σκ(1−u)+ρ] α
+
+4.
+
+Un
+
+incremento
+
+en
+
+la
+
+educaci´on,
+
+aumenta
+
+el
+
+capital
+
+humano
+
+en
+
+∂h(t) ∂hs(t)
+
+= λ(1−φ)ks(t)φhs(t)−φ
+
+>
+
+0.
+
+5.
+
+Un
+
+incremento
+
+de
+
+la
+
+educacio´n
+
+aumenta
+
+el
+
+producto
+
+en
+
+∂Y (t) ∂h(t) ∂h(t) ∂hs(t)
+
+=
+
+λ(1 − φ)(1 +
+
+α)AK(t)1−α [u(t)L(t)]α h(t)αks(t)φhs(t)−φ > 0.
+
+6. En estado estacionario, un incremento de la educaci´on aumenta el consumo en λ(1 −
+
+1
+
+φ)
+
+[(1−α)A]
+
+α
+
+u[κ(1−u)[(1−α)−σ]−ρ]
+1
+
+ks(t)φhs
+
+(t)−φ
+
+>
+
+0.
+
+(1−α)[σκ(1−u)+ρ] α
+
+De forma ana´loga, en base a las predicciones del modelo teo´rico de Uzawa-Lucas con externalidades, se establecen las siguientes hip´otesis:
+
+• Para´metros:
+
+23
+
+1. El factor de descuento, ρ, tendr´a un signo positivo y signiﬁcativo.
+2. El para´metro σ, tendr´a un signo positivo y signiﬁcativo.
+3. El share del trabajo, α, tendra´ un signo positivo y signiﬁcativo, y tomar´a un valor entre cero y uno.
+4. La tasa m´axima de crecimiento de capital humano, κ, tendra´ un signo positivo y signiﬁcativo.
+5. El para´metro de tecnolog´ıa, A, tendr´a un signo positivo y signiﬁcativo.
+6. El para´metro de externalidades, ζ, tendr´a un signo positivo y signiﬁcativo.
+
+• Implicaciones:
+
+1. Un incremento del tiempo de no ocio dedicado a la acumulaci´on de capital humano, incrementa el capital humano en κ unidades (κ > 0).
+
+2.
+
+Un
+
+incremento
+
+en
+
+una
+
+unidad
+
+de
+
+capital
+
+humano,
+
+aumenta
+
+la
+
+produccio´n
+
+en
+
+∂Y (t) ∂h(t)
+
+=
+
+(ζ + α)AK(t)1−α [u(t)L(t)]α hζ+α−1 > 0
+
+3.
+
+Un
+
+incremento
+
+en
+
+la
+
+educaci´on,
+
+aumenta
+
+el
+
+capital
+
+humano
+
+en
+
+∂h(t) ∂hs(t)
+
+= λ(1−φ)ks(t)φhs(t)−φ
+
+>
+
+0.
+
+4. La tasa de crecimiento de equilibrio ψ del capital humano es positiva, ψ > 0.
+
+5. La tasa de crecimiento eﬁciente ψ∗ del capital humano es positiva, ψ∗ > 0.
+
+6. La tasa de crecimiento del consumo y del capital per ca´pita es positiva, γ > 0.
+
+7. La tasa de ahorro s es constante y positiva, en una senda balanceada, s > 0.
+
+24
+
+6 Metodolog´ıa
+De acuerdo con los hallazgos de Gong et al. (2004) a pesar de que los efectos de escala podr´ıan presentarse en las primeras etapas de crecimiento, estos no parecen mantenerse para las series de tiempo de Estados Unidos y Alemania. En ambos pa´ıses el tiempo gastado en educacio´n se incrementa, sin embargo la tasa de crecimiento del capital humano decreci´o
+.
+ligeramente en el tiempo. Por tal razo´n, su estimacio´n de la ecuaci´on h(t) = h(t)κ(1 − u(t)) produce una κ negativa que no hace sentido con la teor´ıa econo´mica.
+Como se menciono´ en las hip´otesis, se espera obtener el signo correcto del para´metro κ para las series de tiempo de M´exico, pues se asume que la acumulacio´n de capital humano no ha llegado a niveles tan elevados como en Alemania o Estados Unidos. A continuacio´n se desarrolla el modelo econom´etrico que es utilizado para la estimaci´on de los para´metros del modelo con y sin externalidades.
+
+6.1 Procedimiento de estimacio´n de par´ametros
+La naturaleza de las variables del modelo de Uzawa-Lucas implican un problema de endogeneidad, por lo que su estimacio´n, usando m´etodos econom´etricos convencionales, producir´ıa estimadores sesgados e inconsistentes. Adema´s, las ecuaciones no son lineales por lo que no es posible aplicar M´ınimos Cuadrados Ordinarios (MCO). Ante estos problemas, se decide emplear el M´etodo Generalizado de Momentos (GMM, por sus siglas en ingl´es) por ser un m´etodo de estimacio´n que corrige el problema de endogeneidad y el cual puede trabajar con ecuaciones no lineales. El software a utilizar es Mathematica, pues dada su versatilidad se puede estimar el GMM a pesar de la complejidad de las ecuaciones.
+
+6.1.1 Modelo de Uzawa-Lucas sin externalidades
+
+Para poder estimar los para´metros del modelo, expresamos las ecuaciones (4.16), (4.17) y (4.17) anteriores como:
+
+ct+1 − ct ct
+
+=
+
+ρ −
+σ
+
++
+
+(1
+
+− σ
+
+α)
+
+Aytα
+
+(utLt)α
+
+(6.1)
+
+Kt+1 − Kt
+
+Kt
+
+=
+
+Aytα (utLt)α
+
+−
+
+Ltztyt
+
+(6.2)
+
+ht+1 − ht ht
+
+=
+
+κ(1 − ut)
+
+(6.3)
+
+En consecuencia, se esta´ interesado en el siguiente vector de para´metros:
+
+A
+
+α
+
+b
+
+≡
+
+ 
+
+κ
+
+ 
+
+ 
+
+ρ
+
+ 
+
+σ
+
+25
+
+Usando el siguiente sistema de ecuaciones:
+
+c
+
+=
+
+ρ −
+σ
+
++
+
+(1
+
+− σ
+
+α) Aytα
+
+(utLt)α
+
++
+
+ε1
+
+K = Aytα (utLt)α − Ltztyt + ε2
+
+Donde:
+
+h = κ(1 − ut) + ε3
+
+• los errores εi para i = 1, 2, 3, se asumen ruido blanco.
+
+•
+
+c=
+
+ct+1 −ct ct
+
+vector
+
+de n × 1.
+
+•
+
+K
+
+=
+
+Kt+1 −Kt Kt
+
+vector de n × 1.
+
+•
+
+h=
+
+ht+1 −ht ht
+
+vector de
+
+n × 1.
+
+Reescribiendo como matriz y tomando esperanza:
+
+ E
+
+Kc +−σρA−ytα(1(−uσαtL) At)yαtα+(uLtLtztt)yαt
+
+ 
+
+=
+
+ E
+
+ε1 ε2
+
+ 
+
+h − κ(1 − ut)
+
+ε3
+
+Dado que los errores εi son ruido blanco:
+
+(6.4)
+
+ E
+
+Kc +−σρA−ytα(1(−uσαtL) At)yαtα+(uLtLtztt)yαt
+
+ 
+
+=
+
+ 
+
+0 0
+
+ 
+
+h − κ(1 − ut)
+
+0
+
+(6.5)
+
+Donde (6.5) se conoce como las condiciones de momentos. Deﬁnamos gT (b) como la media muestral de los errores ε, para el vector de par´ametros b en una muestra de taman˜o T .
+
+gT (b) =
+
+1 T
+
+
+T
+εt(b) = ET [εt(b)] = ET 
+t=1
+
+Kc +−σρA−ytα(1(−uσαtL) At)yαtα+(uLtLtztt)yαt h − κ(1 − ut)
+
+ 
+
+(6.6)
+
+La primera etapa de estimaci´on de b minimiza la forma cuadra´tica de la media mustral de los errores.
+
+ˆb1 = argmin gT (ˆb)’W gT (ˆb)
+ˆb
+
+(6.7)
+
+De donde comenzamos tomando a la matriz de ponderadores W como la matriz identidad
+W = I. El estimador que se obtiene es consistente y asint´oticamente normal. A continuaci´on, se usa ˆb1 para formar una estimacio´n Sˆ de la matriz de varinzas y covarianzas de los errores:
+
+26
+
+∞
+
+S≡
+
+E εt(b)εt−j(b)
+
+j=−∞
+
+En consecuancia, en una segunda etapa se estima ˆb2 usando la matriz Sˆ como matriz de ponderacio´n en la forma cuadra´tica de los errores:
+
+ˆb2 = argmin gT (b)’Sˆ−1gT (b)
+b
+
+(6.8)
+
+ˆb2 es un estimador consistente, asinto´ticamente normal, y asinto´ticamente eﬁciente del vector de par´ametros b.
+
+6.1.2 Modelo de Uzawa-Lucas con externalidades
+
+Resolviendo las condiciones de primer orden se llega al siguiente sistema de cuatro ecuaciones diferenciales9:
+
+.
+
+k = Ak−αuαhα+ζ − c
+
+k
+
+k
+
+(A.2.7)
+
+c. = A(1 − α) k−αuαhα+ζ − ρ
+
+c
+
+σ
+
+σ
+
+(A.2.10)
+
+.
+h = κ(1 − u)
+h
+
+(A.2.11)
+
+u. (1 − α − ζ)
+
+(α + ζ) c
+
+=
+
+κu +
+
+κ−
+
+u (1 − α)
+
+(1 − α) k
+
+(A.2.19)
+
+Para poder estimar los para´metros del modelo, expresamos las ecuaciones anteriores como:
+
+kt+1 − kt kt
+
+=
+
+Akt−αuαt hαt +ζ
+
+−
+
+ct kt
+
+(6.9)
+
+ct+1 − ct ct
+
+=
+
+A(1 − σ
+
+α) kt−αuαt hαt +ζ
+
+−
+
+ρ σ
+
+(6.10)
+
+ht+1 − ht ht
+
+=
+
+κ(1 − ut)
+
+(6.11)
+
+ut+1 − ut ut
+
+=
+
+(1 − α − ζ) (1 − α) κut
+
++
+
+(α + ζ) κ−
+(1 − α)
+
+ct kt
+
+(6.12)
+
+De forma ana´loga al caso del modelo de Uzawa-Lucas sin externalidades, se esta´ interesado
+
+en el siguiente vector de para´metros:
+
+9El desarrollo completo se encuentra en el Ap´endice A.2.
+
+27
+
+A
+
+α
+
+b
+
+≡
+
+   
+
+κ ρ
+
+   
+
+ 
+
+σ
+
+ 
+
+ζ
+
+Usando el siguiente sistema de ecuaciones:
+
+k
+
+=
+
+Akt−αutαhtα+ζ
+
+−
+
+ct kt
+
++ ε1
+
+c
+
+=
+
+A(1 − σ
+
+α)
+
+kt−αutαhαt +ζ
+
+−
+
+ρ σ
+
++
+
+ε2
+
+h = κ(1 − ut) + ε3
+
+Donde:
+
+u
+
+=
+
+(1 − α (1 −
+
+− ζ) α) κut
+
++
+
+(α + ζ) κ
+(1 − α)
+
+−
+
+ct kt
+
++
+
+ε4
+
+• los errores εi para i = 1, 2, 3, 4, se asumen ruido blanco.
+
+•
+
+k=
+
+kt+1 −kt kt
+
+vector de n × 1.
+
+•
+
+c=
+
+ct+1 −ct ct
+
+vector
+
+de n × 1.
+
+•
+
+h=
+
+ht+1 −ht ht
+
+vector de
+
+n × 1.
+
+•
+
+u=
+
+ut+1 −ut ut
+
+vector de n × 1.
+
+Reescribiendo como matriz y tomando esperanza:
+
+
+
+k
+
+−
+
+Akt−αuαt hαt +ζ
+
++
+
+ct kt
+
+
+
+ ε1 
+
+ E
+ 
+
+c
+
+−
+
+A(1−α) σ
+
+kt−α
+
+utαhαt +ζ
+
++
+
+ρ σ
+
+h − κ(1 − ut)
+
+   
+
+=
+
+E
+
+ 
+
+
+
+ε2 ε3
+
+  
+
+u
+
+−
+
+(1−α−ζ) (1−α)
+
+κut
+
+−
+
+(α+ζ) (1−α)
+
+κ
+
++
+
+ct kt
+
+ε4
+
+(6.13)
+
+La cual, dado que los errores εi son ruido blanco, se puede escibir como:
+
+
+
+k
+
+−
+
+Akt−αutαhαt +ζ
+
++
+
+ct kt
+
+
+
+0
+
+ E
+ 
+
+c
+
+−
+
+A(1−α) σ
+
+kt−αuαt
+
+hαt +ζ
+
++
+
+ρ σ
+
+h − κ(1 − ut)
+
+  
+
+=
+
+E
+
+ 
+
+
+
+0 0
+
+  
+
+
+
+u
+
+−
+
+(1−α−ζ (1−α)
+
+)
+
+κut
+
+−
+
+(α+ζ) (1−α)
+
+κ
+
++
+
+ct kt
+
+0
+
+(6.14)
+
+Donde (6.14) son las condiciones de momentos para el caso del modelo Uzawa-Lucas con
+
+externalidades . Deﬁnamos gT (b) como la media muestral de los errores ε, para el vector de para´metros b en una muestra de taman˜o T .
+
+28
+
+1 gT (b) = T
+
+
+
+T
+
+
+εt(b)
+
+=
+
+ET
+
+[εt(b)]
+
+=
+
+ET
+
+ 
+
+t=1
+
+
+
+k
+
+−
+
+Akt−αutαhtα+ζ
+
++
+
+ct kt
+
+c
+
+−
+
+A(1−α) σ
+
+kt−αutα
+
+hαt +ζ
+
++
+
+ρ σ
+
+h − κ(1 − ut)
+
+u
+
+−
+
+(1−α−ζ (1−α)
+
+)
+
+κut
+
+−
+
+(α+ζ) (1−α)
+
+κ
+
++
+
+ct kt
+
+
+   
+
+(6.15)
+
+La primera etapa de estimaci´on de b minimiza la forma cuadra´tica de la media mustral de los errores.
+
+ˆb1 = argmin gT (ˆb)’W gT (ˆb)
+ˆb
+De donde comenzamos tomando a la matriz de ponderadores W como la matriz identidad W = I. El estimador que se obtiene es consistente y asint´oticamente normal. A continuaci´on, se usa ˆb1 para formar una estimacio´n Sˆ de la matriz de varianzas y covarianzas de los errores:
+
+∞
+
+S≡
+
+E εt(b)εt−j(b)
+
+j=−∞
+
+En consecuancia, en una segunda etapa se estima ˆb2 usando la matriz Sˆ como matriz de ponderacio´n en la forma cuadra´tica de los errores:
+
+ˆb2 = argmin gT (b)’Sˆ−1gT (b)
+b
+ˆb2 es un estimador consistente, asinto´ticamente normal, y asinto´ticamente eﬁciente del vector de par´ametros b.
+
+6.2 Datos a utilizar
+Para llevar a cabo la aplicaci´on del modelo, se requieren datos de capital humano en M´exico. Generalmente, el capital humano comprende el stock de conocimiento y habilidades de una persona, cuyo incremento eleva su productividad. Dicho stock podr´ıa ser adquirido por medio de la escolaridad, pero tambi´en podr´ıa ser adquirido fuera del sistema formal de educaci´on. Por ejemplo, las habilidades podr´ıan surgir durante el trabajo o bien mediante el aprendizaje. De tal forma que, en una deﬁnici´on amplia, la medicio´n de capital humano deber´ıa cubrir la educacio´n formal e informal, aptitudes f´ısicas y mentales, nutrici´on y servicios sociales que afectan la calidad del trabajo. Au´n as´ı, los factores tales como salud f´ısica y mental no son fa´ciles de medir. En su lugar, muchos poxies de capital humano son construidos, incluyendo variables como tasas de inscripcci´on a la escuela o como el logro escolar. Adem´as si intentamos probar emp´ıricamente el modelo Uzawa-Lucas previamente desarrollado, u´nicamente necesitamos dicha medida de capital humano. Esto es porque, en este modelo, el capital humano es principalmente el resultado del tiempo dedicado a la formacio´n de conocimiento o habilidades (Gong et al., 2004).
+
+29
+
+Sin embargo, no existe una forma generalmente aceptada para construir una medida del stock de capital humano. Una posibilidad para deﬁnir el capital humano per ca´pita, h, es la siguiente:
+∞
+ht = θt(s)ηt(s)ds
+0
+donde ηt(s) es la parte de la poblacio´n con s an˜os de escolaridad y θt(s) son para´metros de eﬁciencia. Estos para´metros de eﬁciencia denotan el mapeo de los an˜os de escolaridad s de una persona respecto a su capital humano (Gong et. al., 2004).
+Barro y Lee (2001), reemplazan θt(s) por los an˜os promedio de escolaridad s. As´ı que toman ´esta u´ltima variable como proxy del capital humano:
+∞
+ht = sηt(s)ds
+0
+Sin embargo, el promedio de an˜os de escolaridad no es necesariamente una buena medida del capital humano para una variedad de razones. En primer lugar, se est´a suponiendo que los trabajadores de cada categor´ıa de la educaci´on son sustitutos perfectos de los trabajadores de todas las dema´s categor´ıas. En segundo lugar, suponen que las diferencias de productividad entre trabajadores con diferentes niveles de educacio´n son proporcionales a sus an˜os de escolaridad. Por ejemplo, que un trabajador con 16 an˜os de escolaridad es 16 veces ma´s productivo que un trabajador con un an˜o de escolaridad, independientemente de sus diferenciales de tasas de salarios. En tercer lugar, suponen que la elasticidad de sustitucio´n entre los trabajadores de los diferentes grupos es constante siempre y en todas partes. Y en cuarto lugar, un an˜o de escolaridad adicional aporta el mismo incremento en la habilidad siempre y en todas partes (Mulligan et al., 2000).
+Otra posibilidad para medir el capital humano es por medio de un ´ındice basado en en el producto de la econom´ıa, ello se puede determinar calculando el ingreso laboral como funci´on de los an˜os de escolaridad. El ingreso laboral lt esta´ deﬁnido como la suma de las ganancias de todos los residentes:
+∞
+lt = wt(s)ut(s)ηt(s)ds
+0
+donde la tasa de participacio´n ut(s) es el cociente de personas empleadas con s an˜os de escolaridad entre la poblacio´n total con s an˜os de escolaridad, wt es la tasa de salario dependiendo de los an˜os de educacio´n y η es la parte de la poblaci´on con s an˜os de escolaridad (Gong et. al., 2004).
+Por su parte, Mulligan y Sala-i-Martin (1997) proponen medir al capital humano como el promedio del ingreso laboral en el estado i dividido por el salario de los trabajadores con cero escolaridad en ese mismo estado:
+30
+
+hi(t) =
+
+∞ 0
+
+wi
+
+(t,
+
+s)ηi(t,
+
+s)ds
+
+wi(t, 0)
+
+Esto signiﬁca que la calidad de una persona estar´ıa relacionado con la tasa de salario
+
+que recibe en el mercado. Si el tipo de educaci´on que una persona recibio´ fue muy u´til, los
+
+mercados le recompensan con un salario alto. Del mismo modo, si una persona se dedico´
+
+a estudiar un campo que no es muy u´til desde el punto de vista de produccio´n, el capital
+
+humano productivo de esa persona ser´ıa bajo.
+
+Con el ﬁn de capturar todos los componentes del capital humano, en este trabajo de investigaci´on se utiliza la metodolog´ıa de Mulligan y Sala-i-Martin (1997)10, y para medir el efecto de la educacio´n en el crecimiento, se propone una funcio´n de producci´on de capital humano que capture el efecto indirecto. Los datos para la estimacio´n de esta variable se obtuvieron de los Anuarios Estad´ısticos de INEGI. Para medir el promedio de ingreso laboral se uso´ la Remuneracio´n de Asalariados y la Poblacio´n Ocupada. Mientras que el salario de una persona no claiﬁcada se tomo´ como el salario m´ınimo y fue obtenido de la Comisio´n Nacional de Salarios M´ınimos (2013).
+
+Adicional a esto, para estimar el modelo Uzawa-Lucas, se necesitan datos del PIB Y , de los stocks de capital K y de consumo agregado, C. Los datos de PIB, y capital fueron obtenidos de los Anuarios Estad´ısticos de INEGI, medidos como produccio´n total y excedente de operaci´on, respectivamente. Los datos de consumo fueron obtenidos del Banco Mundial. Toda esta informacio´n se obtuvo en pesos corrientes para el periodo 1970 a 2011. Despu´es se deﬂact´o con el deﬂactor del PIB base 2003.
+
+Adema´s, el modelo necesita una aproximacio´n del tiempo de no ocio dedicado a la produccio´n actual, u. Para ello, se siguio´ una metodolog´ıa similar a la de Gong et al. Es decir, aunque se reconoce que el tiempo dedicado a la acumulacio´n de capital humano implica muchos an˜os de escolaridad, experiencia laboral, etc., se usa s´olo el nu´mero de estudiantes de todo el pa´ıs en determinado ciclo escolar, como fraccio´n del empleo total.
+nu´mero total de estudiantes (1 − u) =
+L La justiﬁcacio´n es que al usar este cociente del nu´mero de mexicanos que est´an estudiando, capturamos el efecto de aquellas personas que gastaron tiempo en educacio´n en lugar de ir a trabajar.
+
+6.3 Funci´on de Producci´on del Capital Humano
+En respuesta al hecho de que la variable “capital humano” que se construye en la presente investigaci´on no hace diferencia entre el aporte de la educacio´n o la experiencia, se propone una funcio´n de producci´on del capital humano que pueda distinguir el efecto de la escolaridad en el crecimiento econo´mico.
+10La justiﬁcacio´n del uso de la metodolog´ıa de Mulligan y Sala-i-Martin (1997) para la construcci´on de la variable Capital Humano se desarrolla en el Ap´endice A.3.
+31
+
+Sea h(t) el nivel de habilidad o nivel de capital humano del agente representativo (en este caso del promedio de todos los agentes de los que se dispone informacio´n) en el tiempo t. Asumimos que un individuo puede incrementar su calidad combinando algunos insumos agregados a los que tiene acceso con su propio tiempo y habilidad. Las variables agregadas pueden ser el nivel de capital f´ısico ks(t) dedicado a educaci´on (escuelas, computadoras, sillas, y otro tipo de capital usado en el sector educativo) y el nivel de capital humano hs(t) dedicado a la educacio´n (habilidades, nu´mero de an˜os cursados, logro educativo, etc.).
+
+Usemos por simplicidad, una funci´on Cobb-Douglas para representar a la funci´on de produccio´n del capital humano, por lo que un individuo combina su tiempo y habilidades con los niveles agregados disponibles de acuerdo a:
+
+donde:
+
+h(t) = λks(t)φhs(t)1−φ
+
+(6.16)
+
+• El para´metroλ representa el capital humano que tiene un individuo si no se capacita ni aprovecha el capital disponible.
+• El par´ametro φ es el share del capital dedicado a la produccio´n de capital humano (0 < φ < 1).
+• El par´ametro (1 − φ) es el share de la escolaridad.
+
+Dado que la funcio´n de produccio´n es no lineal, el m´etodo de estimaci´on usado, es nuevamente el GMM. Para ello se tienen datos de “relaci´on estudiantes-profesores de primaria” que funcionara´ como proxy de capital dedicado a la producci´on de capital humano; “nu´mero de estudiantes de primaria” que funcionara´ como proxy de escolaridad. Ambos datos fueron obtenidos de Banco Mundial para los an˜os 1971-2010. Para el caso de capital humano se usara´ la misma variable que fue construida con la metodolog´ıa de Mulligan y Sala-i-Martin (1997).
+
+En esta estimacio´n, se esta´ interesado en el siguiente vector de para´metros:
+
+Usando la ecuacio´n (6.16):
+
+b≡
+
+λ φ
+
+Donde:
+
+h(t) = λks(t)φhs(t)1−φ + ε
+
+• el error ε, se asumen ruido blanco.
+
+32
+
+Reescribiendo como vector y tomando esperanza:
+
+E h(t) − λks(t)φhs(t)1−φ = E (ε)
+
+(6.17)
+
+El cual, dado que el t´ermino de error ε es ruido blanco, se puede escibir como:
+
+E h(t) − λks(t)φhs(t)1−φ = 0¯
+
+(6.18)
+
+Donde (6.18) se conoce como la condici´on de momentos. Deﬁnamos gT (b) como la media muestral de los errores ε, para el vector de par´ametros b en una muestra de taman˜o T .
+
+1 gT (b) = T
+
+T
+
+εt(b) = ET [εt(b)] = ET
+
+h(t) − λks(t)φhs(t)1−φ
+
+t=1
+
+(6.19)
+
+La primera etapa de estimaci´on de b minimiza la forma cuadra´tica de la media mustral de los errores.
+
+ˆb1 = argmin gT (ˆb)’W gT (ˆb)
+ˆb
+
+(6.20)
+
+De donde comenzamos tomando a la matriz de ponderadores W como la matriz identidad
+
+W = I. El estimador que se obtiene es consistente y asint´oticamente normal. A continuaci´on, se usa ˆb1 para formar una estimacio´n Sˆ de la matriz de varinzas y covarianzas de los errores:
+
+∞
+
+S≡
+
+E εt(b)εt−j(b)
+
+j=−∞
+
+En consecuancia, en una segunda etapa se estima ˆb2 usando la matriz Sˆ como matriz de ponderacio´n en la forma cuadra´tica de los errores:
+
+ˆb2 = argmin gT (b)’Sˆ−1gT (b)
+b
+
+(6.21)
+
+ˆb2 es un estimador consistente, asinto´ticamente normal, y asinto´ticamente eﬁciente del vector de par´ametros b.
+
+33
+
+7 Resultados
+
+En la Tabla 7.1 se muestran los resultados obtenidos en las estimaciones de los par´ametros
+
+del Modelo de Uzawa-Lucas sin externalidades. Todos los par´ametros tuvieron los signos
+
+esperados, sin embargo, el factor de descuento, ρ, y la velocidad a la que se acumula capital
+
+humano, κ, resultaron no signiﬁcativos. El share del trabajo fue pequen˜o, α = 0.38, menor a
+
+lo que propone la literatura, lo que sugiere que el share del capital es de 0.62, esto se relaciona
+
+ma´s con resultados encontrados en trabajos como en el caso de Mankiw et al. (1995). La
+
+elasticidad
+
+de
+
+sustitucio´n,
+
+1 σ
+
+=
+
+2.71,
+
+implica
+
+que
+
+los
+
+agentes
+
+maximizadores
+
+de
+
+su
+
+utilidad
+
+pueden sustituir con cierta facilidad entre los bienes que consumen. La velocidad a la que se
+
+acumula capital humano (que resulto´ no signiﬁcativa), sugerir´ıa que dado un incremento en
+
+el tiempo de no ocio dedicado a ´este ﬁn, incrementa el capital humano 8.9 por ciento de su
+
+nivel.
+
+Tabla 7.1 Modelo Uzawa-Lucas sin externalidades
+
+Para´metros
+
+Estimacio´n
+
+A
+
+25.8148 (1.18319)
+
+α
+
+0.383397 (0.00521)
+
+ρ
+
+0.000007 (1.4643)
+
+σ
+
+0.368022 (0.00154)
+
+κ
+
+8.92128 (13.1183)
+
+Resultados obtenidos mediante el M´etodo Generalizado de Momentos
+
+(GMM) usando el software Mathematica. Errores est´andar entre par´entesis.
+
+De acuerdo con las hip´otesis, un incremento del tiempo de no ocio dedicado a la acumu-
+
+lacio´n de capital humano, incrementa el capital humano, sin embargo, hasta este punto del
+
+ana´lisis, es dif´ıcil sostener dicha aﬁrmacio´n por la baja signiﬁcancia del para´metro κ. Adema´s,
+
+dado que el share del trabajo es positivo y menor a uno, un incremento en una unidad de
+
+capital humano,
+
+aumenta la produccio´n,
+
+∂Y (t) ∂h(t)
+
+> 0.
+
+Finalmente,
+
+en estado estacionario,
+
+un
+
+incremento en una unidad de capital humano, aumenta el consumo por trabajador.
+
+En la Tabla 7.2 se muestran los resultados obtenidos en las estimaciones de los para´metros
+
+del Modelo de Uzawa-Lucas con externalidades. Las magnitudes y signos de los para´metros
+
+coinciden con las predicciones teo´ricas. Sin embargo, nuevamente resulto´ no signiﬁcativo el
+
+para´metro del factor de descuento, ρ. El share del trabajo sugiere que el capital tiene una
+
+participacio´n mayor a la que normalmente se propone en la literatura, α = 0.3. Ahora, la
+
+elasticidad
+
+de
+
+sustituci´on,
+
+1 σ
+
+=
+
+0.18,
+
+sugiere
+
+que
+
+los
+
+agentes
+
+sustituyen
+
+con
+
+diﬁcultad
+
+entre
+
+los bienes que consumen, lo cual tiene ma´s sentido si se piensa en la composicio´n de la
+
+canasta ba´sica, la cual contiene bienes muy inel´asticos (tortilla, huevo, pollo, leche, etc.). El
+
+para´metro de la velocidad a la que se acumula capital humano, no es signiﬁcativo. Pero por
+
+otro lado la externalidad del capital humano es grande, positiva y signiﬁcativa, ζ = 8.02. Una
+
+posible explicacio´n ante estos dos u´ltimos resultados es que el dedicar tiempo a la educacio´n,
+
+34
+
+podr´ıa no estar mejorando signiﬁcativamente al capital humano. Pero el tener personas ma´s caliﬁcadas est´a teniendo efectos positivos en la producci´on, en forma indirecta.
+
+Tabla 7.2 Modelo Uzawa-Lucas con externalidades
+
+Para´metros
+
+Estimacio´n
+
+A
+
+2.343 (0.280)
+
+α
+
+0.301 (0.001)
+
+ρ
+
+2.428 (19.26)
+
+σ
+
+5.538 (0.001)
+
+κ
+
+0.018 (0.159)
+
+ζ
+
+8.029 (0.001)
+
+Resultados obtenidos mediante el M´etodo Generalizado de Momentos
+
+(GMM) usando el software Mathematica. Errores esta´ndar entre par´entesis.
+
+Se conﬁrman las hipo´tesis de que un incremento en una unidad de capital humano, au-
+
+menta
+
+la
+
+producci´on,
+
+pues
+
+todos
+
+los
+
+para´metros
+
+resultaron
+
+positivos,
+
+∂Y (t) ∂h(t)
+
+>
+
+0.
+
+Para el
+
+modelo con externalidades, no se puede decir con certeza que un incremento del tiempo de
+
+no ocio dedicado a la acumulaci´on de capital humano incrementa el capital humano, pues el
+
+para´metro κ resulto´ ser no signiﬁcativo. Dado que los signos de los par´ametros resultaron
+
+como se esperaba: la tasa de crecimiento de equilibrio ψ del capital humano es positiva,
+
+ψ > 0; la tasa de crecimiento eﬁciente ψ∗ del capital humano es positiva, ψ∗ > 0; la tasa de
+
+crecimiento del consumo y del capital per ca´pita es positiva, γ > 0; y la tasa de ahorro s es
+
+constante y positiva, en una senda balanceada, s > 0.
+
+Es claro que los resultados obtenidos en ambos modelos son distintos. Pero los obtenidos en el modelo con externalidades son sensiblemente ma´s intuitivos. La razo´n por la cual se tienen estas discrepancias se halla en la introduccio´n del para´metro de externalidades, el cual explica mejor el impacto del capital humano en el crecimiento econ´omico. Es decir, cuando no se introduc´ıa este para´metro hab´ıa otros que erro´neamente capturanban dicho efecto.
+
+En la Tabla 7.3 se muestran los resultados obtenidos en las estimaciones de los para´metros de la funcio´n de producci´on de capital humano. Todos los para´metros resultaron positivos y signiﬁcativos, como se esperaba. La magnitud de estos sugiere que si un individuo no se educa, desarrolla poco capital humano, λ = 0.037. Adem´as, aporta ma´s el capital dedicado a la producci´on de capital humano que la escolaridad misma, sin embargo, ambos factores son necesarios.
+
+35
+
+Tabla 7.3 Funci´on de producci´on de capital humano
+
+Para´metros
+
+Estimacio´n
+
+λ
+
+0.037 (0.006)
+
+φ
+
+0.862 (0.415)
+
+Resultados obtenidos mediante el M´etodo Generalizado de Momentos
+
+(GMM) usando el software Mathematica. Errores esta´ndar entre par´entesis.
+
+Estos resultados implican, en el modelo sin externalidades, que un incremento de la
+
+educacio´n
+
+aumenta
+
+el
+
+producto
+
+∂Y (t) ∂h(t) ∂h(t) ∂hs(t)
+
+>
+
+0,
+
+y
+
+en
+
+estado
+
+estacionario,
+
+un
+
+incremento
+
+de
+
+la educacio´n aumenta el consumo. En consecuencia, en ambos modelos, un incremento en la
+
+educacio´n,
+
+aumenta
+
+el
+
+capital
+
+humano
+
+en
+
+∂h(t) ∂hs(t)
+
+=
+
+λ(1 − φ)ks(t)φhs(t)−φ
+
+>
+
+0.
+
+Finalmente, se usa la prueba de Durbin-Watson para veriﬁcar que no haya correlacio´n serial de primer orden. En la Tabla 7.4 se muestran los valores de esta prueba para el caso de los modelos con y sin externalidades.
+
+Ecuaciones
+6.1 6.2 6.3
+
+Tabla 7.4 Prueba de Durbin-Watson
+
+Modelo sin externalidades Ecuaciones Modelo con externalidades
+
+0.1903
+
+6.9
+
+1.4546
+
+0.7795
+
+6.10
+
+1.4564
+
+2.3533
+
+6.11
+
+2.0969
+
+6.12
+
+1.4989
+
+El estad´ıstico de Durbin-Watson es un nu´mero entre cero y cuatro. Si ´este toma el valor de 2 signiﬁca que no existe correlacio´n serial entre los errores. Si toma un valor cercano a cero existe correlaci´on negativa y si es cercano a 4 hay correlacio´n positiva. Como puede observarse en la Tabla 7.4, el modelo sin externalidades indica que existe correlaci´on negativa entre los errores de las dos primeras ecuaciones, mientras que el modelo con externalidades sugiere que existe una ligera correlacio´n negativa entre los errores en tres de cuatro ecuaciones. Esto conﬁrma los resultados obtenidos en la estimacio´n de los para´metros del modelo mediante el GMM, en el sentido de que las estimaciones obtenidas en el modelo con externalidades son ma´s conﬁables que las presentadas en el modelo sin externalidades.
+
+36
+
+8 Conclusiones
+En este trabajo de investigaci´on se conﬁrma que un incremento de la escolaridad aumenta el capital humano, lo que a su vez incrementa el producto de la econom´ıa (modelo de UzawaLucas sin externalidades). Por otro lado, un incremento en el capital humano tiene efectos indirectos, pero positivos, sobre otras variables que tienen impactos positivos sobre el producto (modelo de Uzawa-Lucas con externalidades).
+Como se explic´o en la seccio´n anterior, no puede decirse mucho acerca de la velocidad a la que se acumula capital humano dado un incremento en el tiempo de no ocio dedicado a la produccio´n de este factor. Una posible explicacio´n a esto es que el dedicar tiempo a la educacio´n, podr´ıa no estar mejorando signiﬁcativamente al capital humano. Pero el tener personas ma´s caliﬁcadas est´a teniendo efectos positivos en la producci´on, en forma indirecta. El problema de la poca signiﬁcancia del par´ametro κ podr´ıa deberse tambi´en al hecho de que el desempleo de personas que tienen un grado de instruccio´n alto (medio superior y superior) ha aumentado en el tiempo (alrededor de 20% del primer trimestre de 2005 al tercer trimestre de 2012). Mientras que el desempleo para personas que tienen un grado de instrucci´on bajo (primaria incompleta) se ha reducido en 34% del primer trimestre de 2005 al tercer trimestre de 2012. Estos resultados llaman mucho la atenci´on ya que a pesar de que las personas se educan su desempleo aumenta, al grado de parecer que hay una relacio´n positiva entre educacio´n y desempleo11.
+De lo anterior se concluye que las personas ma´s caliﬁcadas no consiguen trabajo, esto puede ser una de las razones por las cuales en el modelo no es signiﬁcativo el tiempo que se dedica a la acumulacio´n de capital humano, por lo que se est´a mermando el efecto positivo de la educacio´n en el crecimiento de econ´omico de M´exico.
+Es importante sen˜alar, como recomendacio´n de pol´ıtica, que se necesita poner m´as atenci´on al sector educativo en dos sentidos: primero, un increnento de la escolaridad impactar´a positivamente en el crecimiento econ´omico de largo plazo; segundo, dadas las deﬁcientes redes entre las universidades con el sector laboral, un incremento en la escolaridad podr´ıa no tener el impacto esperado, es decir, es necesario que las empresas contraten a las personas caliﬁcadas para que el incremento del capital humano lleve a la econom´ıa mexicana a tasas de crecimiento altas y sostenidas durante largos periodos de tiempo.
+11V´ease Ap´endice B.7 para un ana´lisis gr´aﬁco.
+37
+
+9 Ap´endice
+A Desarrollo matem´atico del modelo Uzawa-Lucas
+En la seccio´n A del presente Ap´edice se desarrolla el Jacobiano del Modelo Uzawa-Lucas sin externalidades y con una so´la variable de control (Seccio´n A.1) para justiﬁcar el hecho de que se tiene una solucio´n u´nica. A continuacio´n se resuelven las condiciones de primer orden para obtener un sistema de ecuaciones diferenciales estimable (Seccio´n A.2), y ﬁnalmente se justiﬁca la forma en la que se crea la variable Capital Humano (Secci´on A.3).
+
+A.1 An´alisis de estabilidad
+
+Se tiene el sistema de ecuaciones siguiente:
+
+y. = κ(1 − u) − Ayα (uL)α − Lyz y
+
+z. −ρ + (1 − α)Ayα (uL)α
+
+=
+
+− κ(1 − u)
+
+z
+
+σ
+
+Que puede ser expresado como:
+
+y. = κ(1 − u)y − Ayα+1 (uL)α − Ly2z
+
+z. = −ρz + (1 − α)Ayα (uL)α z − κ(1 − u)z σ
+Sea y. = f (y, z) y z. = g(y, z), los gradientes de ambas funciones son:
+
+∇f (·) =
+
+κ(1 − u) − (α + 1)Ayα (uL)α − 2Lyz −Ly2
+
+∇g(·) =
+
+α(1−α)Ayα−1(uL)αz
+
+−ρ+(1−α)Ayα(uLσ)α σ
+
+− κ(1 − u)
+
+No´tese que κ > 0, ρ > 0, 0 ≤ u ≤ 1, 0 ≤ α ≤ 1, 0 ≤ σ ≤ 1, A > 0, y > 0, L > 0, z > 0. Analizando cada derivada parcial para ver el signo, tenemos que:
+
+Para fy, sustituyamos los valores de equilibrio de z e y, es decir, las ecuaciones (4.23) y (4.24):
+
+1
+
+fy
+
+=
+
+ρ + σκ(1 − u) κ(1−u)−(α+1)A (1 − α)A(uL)α
+
+(uL)α−2L
+
+ρ + σκ(1 − u) (uL)α
+
+α u [κ(1 − u) [(1 − α) − σ] − ρ]
+1
+(1 − α) [σκ(1 − u) + ρ] α
+
+u [κ(1 − u) [(1 − α) − σ] − ρ]
+
+fy = κ(1 − u) − ρ − σκ(1 − u) − 2L
+
+1
+
+uL(1 − α) [σκ(1 − u) + ρ] α
+
+38
+
+ρ
+
+fy = κ(1 − u) − ρ − σκ(1 − u) − 2
+
+κ(1 − u) − κ(1 − u)σ − (1 − α)
+
+2ρ fy = −κ(1 − u) − ρ + σκ(1 − u) + (1 − α) < 0 ∀ 0 ≤ σ ≤ 1, (1 − α) > 2ρ
+
+∴ fy < 0 ∀ 0 ≤ σ ≤ 1, (1 − α) > 2ρ La otra derivada del gradiente es claramente negativa, fz < 0.
+
+Y dados los valores de los para´metros y de las variables, gy > 0.
+
+El caso de gz es menos claro, sustituyendo los valores de equilibrio de z e y, es decir, las ecuaciones (4.23) y (4.24):
+
+gz
+
+=
+
+ρ −
+σ
+
++
+
+(1
+
+−
+
+α)A
+
+ρ+σκ(1−u) (1−α)A(uL)α
+
+σ
+
+(uL)α
+
+−
+
+κ(1
+
+−
+
+u)
+
+ρρ
+
+gz
+
+=
+
+− σ
+
++
+
+σ
+
++
+
+κ(1
+
+−
+
+u)
+
+−
+
+κ(1
+
+−
+
+u)
+
+∴ gz = 0
+En resumen, dado que z e y siempre son positivos, y dado que todos los para´metros tambi´en son positivos, entonces: fy < 0, fz < 0, gy > 0 y gz = 0 ∀ y, z. Por otro lado sabemos que un Jacobiano es de la forma:
+
+J=
+
+fy gy
+
+fz gz
+
+Por lo que en el caso del sistema de ecuaciones formado por (4.19) y (4.20), se tiene que
+
+el Jacobiano es:
+
+
+
+2
+
+J =  α(1−α)A
+σ
+
+−κ(1
+
+−
+
+u)
+
+−
+
+ρ
+
++
+
+σκ(1
+
+−
+
+u)
+
++
+
+2ρ (1−α)
+
+α−1
+
+1
+
+ρ+σκ(1−u) (1−α)A(uL)α
+
+α
+
+(uL)α
+
+[(1−α)A] α u[κ(1−u)[(1−α)−σ]−ρ]
+1
+
+(1−α)[σκ(1−u)+ρ] α
+
+−L
+
+ρ+σκ(1−u) (1−α)A(uL)α
+0
+
+α
+ 
+
+El determinante del Jacobiano es:
+
+ρ + σκ(1 − u) α(1 − α)A κ(1 − u) [(1 − α) − σ] − ρ
+
+|J| =
+
+(1 − α)A
+
+σ
+
+(1 − α)
+
+α (ρ + σκ(1 − u)) (κ(1 − u) [(1 − α) − σ] − ρ)
+
+|J| =
+
+>0
+
+σ(1 − α)
+
+Que evidentemente es positivo dado que fy < 0, fz < 0, gy > 0 y gz = 0. Finalmente para
+determinar qu´e tipo de equilibrio se tiene, hay que identiﬁcar la relacio´n entre el cuadrado de la traza del Jacobiano, (trJ)2, y cuatro veces su determinante, 4 |J|. Sin embargo, la relaci´on
+
+no esta´ clara pues depende de la magnitud de los par´ametros del modelo. A pesar de ello,
+
+tomando en cuenta que |J| > 0 y que trJ < 0, se tendr´ıa un equilibrio estable.
+
+39
+
+A.2 Ecuaciones diferenciales a estimar en el modelo de UzawaLucas con externalidades
+Para conservar la notacio´n del modelo sin externalidades, con el ﬁn de estimar los mismos para´metros, expresamos las condiciones de primer orden como:
+
+c−σ = θ1
+
+(A.2.1)
+
+θ2hκ = αθ1uα−1AK1−α [hL]α haζ
+
+(A.2.2)
+
+.
+θ1
+
+=
+
+ρθ1
+
+−
+
+θ1(1
+
+−
+
+α)AK −α
+
+[uhL]α
+
+haζ
+
+(A.2.3)
+
+.
+θ2
+
+=
+
+ρθ2
+
+−
+
+θ1 αhα−1 AK 1−α
+
+[uL]α
+
+hζa
+
+−
+
+θ2κ(1
+
+−
+
+u)
+
+(A.2.4)
+
+l´ım e−ρtθ1(t)K(t) = 0
+t→∞
+
+(A.2.5)
+
+l´ım e−ρtθ2(t)h(t) = 0
+t→∞
+
+(A.2.6)
+
+Siguiendo a Benhabib y Perli (1994) obtenemos el sistema de cuatro ecuaciones en k, h,
+
+c
+
+y
+
+u,
+
+donde
+
+k
+
+=
+
+K L
+
+y
+
+c=
+
+C L
+
+.
+
+De
+
+(4.3)
+
+se
+
+tiene
+
+que:
+
+.
+K
+
+=
+
+AK 1−α
+
+[uhL]α
+
+hζa
+
+−
+
+Lc
+
+Suponiendo que en equilibrio ha = h y reordenando:
+
+.
+K = AK1−αuαhα+ζ Lα − Lc
+
+Dividiendo ambos lados por L:
+
+.
+k = AK1−αuαhα+ζ Lα−1 − c
+
+⇒
+
+.
+k=A
+
+K
+
+1−α
+uαhα+ζ − c
+
+L
+
+Dividiendo ambos lados por k:
+
+De (A.2.1):
+
+.
+
+k = Ak−αuαhα+ζ − c
+
+k
+
+k
+
+(A.2.7)
+
+−σln(c) = ln(θ1)
+
+⇒
+
+c. −σ
+
+=
+
+.
+θ1
+
+c θ1
+
+(A.2.8)
+
+40
+
+De (A.2.3):
+
+.
+θ1
+
+=
+
+ρθ1
+
+−
+
+θ1(1
+
+−
+
+α)AK −α
+
+[uhL]α
+
+hζa
+
+.
+θ1 = ρ − (1 − α)AK−αuαhα+ζLα = ρ − (1 − α)Ak−αuαhα+ζ θ1
+
+Sustituyendo (A.2.9) en (A.2.8):
+
+c. = A(1 − α) k−αuαhα+ζ − ρ
+
+c
+
+σ
+
+σ
+
+Despejando de (4.4):
+
+(A.2.10)
+
+Ahora de (A.2.2):
+
+.
+h = κ(1 − u)
+h
+
+(A.2.11)
+
+θ2
+
+=
+
+αθ1uα−1AK1−αhα+ζ Lα hκ
+
+Sustituyendo (A.2.1) en (A.2.12) y simpliﬁcando:
+
+(A.2.12)
+
+αc−σ uα−1 AK 1−α hα+ζ −1 Lα
+
+θ2 =
+
+κ
+
+Sacando logaritmos en (A.2.13):
+
+(A.2.13)
+
+(A.2.9)
+
+ln(θ2) = ln(α)−σln(c)−(1−α)ln(u)+ln(A)+(1−α)ln(K)+(α +ζ −1)ln(h)+αlnL−ln(κ)
+
+Derivando respecto al tiempo:
+
+.
+θ2
+
+=
+
+c. −σ
+
+u. − (1 − α)
+
+.
+K + (1 − α)
+
++ (α + ζ
+
+.
+h − 1)
+
+θ2
+
+c
+
+u
+
+K
+
+h
+
+(A.2.14)
+
+.
+
+Pues
+
+suponemos
+
+que
+
+L L
+
+crece
+
+a
+
+una
+
+tasa
+
+constante
+
+en
+
+el
+
+tiempo.
+
+Ahora
+
+de
+
+(A.2.4):
+
+.
+
+θ2 = ρ − θ1 αAK1−αLαuαhα+ζ−1 − κ(1 − u)
+
+θ2
+
+θ2
+
+(A.2.15)
+
+Despejando de (A.2.13):
+
+θ1 =
+
+κ
+
+θ2 αuα−1AK1−αLαhα+ζ−1
+
+(A.2.16)
+
+Sustituyendo
+
+(A.2.16)
+
+en
+
+(A.2.15)
+
+para
+
+eliminar
+
+: θ1
+θ2
+
+.
+
+θ2 θ2
+
+=
+
+ρ−
+
+αuα−1AK
+
+κ 1−αLαhα+ζ−1
+
+αAK
+
+1−α
+
+Lα
+
+uαhα+ζ−1
+
+− κ(1 − u)
+
+41
+
+Simpliﬁcando:
+
+Por otro lado, de (4.3):
+
+.
+
+θ2 = ρ − κuα − κ(1 − u)
+
+θ2
+
+uα−1
+
+.
+⇒ θ2 = ρ − κu − κ(1 − u) θ2
+
+.
+⇒ θ2 = ρ − κ θ2
+
+(A.2.17)
+
+.
+K = AK1−αuαhα+ζ Lα − Lc
+
+.
+
+⇒
+
+K
+
+= AK−αuαhα+ζ Lα −
+
+L c
+
+K
+
+K
+
+.
+⇒ K = Ak−αuαhα+ζ − k−1c K
+
+(A.2.18)
+
+Sustituyendo (A.2.10) , (A.2.11) , (A.2.17) y (A.2.18) en (A.2.14):
+
+ρ−κ = −σ
+
+A(1 − α) k−αuαhα+ζ − ρ
+
+u. −(1−α) +(1−α)
+
+Ak−αuαhα+ζ − k−1c
+
++(α+ζ−1) [κ(1 − u)]
+
+σ
+
+σ
+
+u
+
+Simpliﬁcando:
+
+u. (1−α)
+
+=
+
+−A(1−α)k−αuαhα+ζ +ρ+(1−α)
+
+Ak−αuαhα+ζ − k−1c
+
++(α+ζ −1)κ(1−u)−ρ+κ
+
+u
+
+u. (1 − α)
+
+=
+
+−A(1 − α)k−αuαhα+ζ
+
++ A(1 − α)k−αuαhα+ζ
+
+− (1 − α)k−1c + (α + ζ − 1)κ(1 − u) + κ
+
+u
+
+(1
+
+−
+
+u. α)
+
+=
+
+−(1
+
+−
+
+α)k−1c
+
++
+
+(α
+
++
+
+ζ
+
+−
+
+1)κ(1
+
+−
+
+u)
+
++
+
+κ
+
+u
+
+u.
+
+=
+
+−k−1c
+
++
+
+(α
+
++
+
+ζ
+
+−
+
+1) κ(1
+
+−
+
+u)
+
++
+
+κ
+
+u
+
+(1 − α)
+
+(1 − α)
+
+u.
+
+(α + ζ − 1)
+
+(α + ζ − 1)
+
+κ
+
+c
+
+=−
+
+κu +
+
+κ+
+
+−
+
+u
+
+(1 − α)
+
+(1 − α)
+
+(1 − α) k
+
+u. (1 − α − ζ)
+
+(α + ζ) c
+
+=
+
+κu +
+
+κ−
+
+u (1 − α)
+
+(1 − α) k
+
+(A.2.19)
+
+42
+
+A.3 Capital Humano
+El siguiente desarrollo est´a basado en el trabajo hecho por Mulligan y Sala-i-Martin (1997).
+
+¿Es posible aﬁrmar que los cambios dram´aticos de la asistencia a la escuela de la fuerza laboral son una fuente importante de crecimiento econo´mico en M´exico? El ingreso han crecido a la par con la asistencia escolar en todo el periodo de estudio12; en consecuencia, estamos tentados a decir que s´ı. Sin embargo, hay otras variables que pudieran estar creciendo en el mismo periodo y no necesariamente ser motor del crecimiento. Pero en defensa de la escolaridad se puede decir que en un punto en el tiempo, los trabajadores con m´as escolaridad disfrutan de mayores salarios que los que se observan en trabajadores con menor escolaridad, lo cual no puede ser dicho por otro tipo de variables.
+
+El capital humano est´a relacionado al nivel agregado de personas productivas disponibles en una econom´ıa. Esto es, el concepto de capital humano esta´ relacionado con el de fuerza laboral. En principio, el capital humano incluye todos los aspectos productivos de las personas en un estado: educacio´n, experiencia laboral, salud f´ısica y mental, calidad de las ma´quinas, y otros aspectos relacionados. Por el hecho de que la poblaci´on en una econom´ıa es heterog´enea, diferentes personas contribuyen a la produccio´n en grados diferentes.
+
+Mulligan y Sala-i-Martin deﬁnen al capital humano como la suma ajustada por la calidad del trabajo de todos los habitantes de un pa´ıs:
+
+∞
+Hi(t) = θi(t, s)Ni(t, s)ds
+0
+
+(A.3.1)
+
+donde Ni(t, s) denota el nu´mero de personas en la econom´ıa i en el tiempo t con s an˜os de escolaridad. Note que cada tipo de trabajador contribuye al capital humano agregado de
+
+acuerdo a su para´metro de eﬁciencia θi(t, s).
+
+La especiﬁcaci´on de la ecuacio´n (A.4.1) asume que los trabajadores con diferentes grados de escolaridad son sustitutos perfectos. Por ejemplo, un graduado de preparatoria θi(t, 12) puede ser sustituido por un graduado de licenciatura θi(t, 16) sin cambiar la produccio´n agregada.
+
+Dividiendo el nivel agregado de capital humano por el nivel de trabajadores para obtener el nivel promedio de capital humano en la econom´ıa i al tiempo t:
+
+∞
+hi(t) = θi(t, s)ηi(t, s)ds
+0
+
+(A.3.2)
+
+donde
+
+ηi(t, s)
+
+=
+
+Ni(t,s) Ni(t)
+
+es
+
+la
+
+participaci´on
+
+de
+
+la
+
+poblaci´on
+
+del
+
+estado
+
+i
+
+con
+
+escolaridad
+
+s
+
+al
+
+tiempo
+
+t
+
+y
+
+hi(t)
+
+=
+
+Hi(t) Ni(t)
+
+el
+
+nivel
+
+de
+
+capital
+
+humano
+
+por
+
+persona.
+
+12V´ease Ap´endice B.8 para un ana´lisis gra´ﬁco.
+
+43
+
+Sea hji(t) el nivel de habilidad o nivel de capital humano del individuo j en el estado i en el tiempo t. Asumimos que un individuo puede incrementar su calidad combinando algunos
+insumos agregados con su propio tiempo y habilidad. Las variables agregadas pueden ser el nivel de capital f´ısico kˆie(t) dedicado a educaci´on (escuelas, computadoras, sillas, y otro tipo de capital usado en el sector educativo) y el nivel de capital humano hˆie(t) dedicado a la educacio´n en un estado particular (habilidades, nu´mero de maestros en el sector, etc.).
+
+Resuma yˆi(t) el efecto de las variables agregadas en una regio´n por la acumulacio´n de capital humano de un individuo. Un ejemplo puede ser la funcio´n Cobb-Douglas yˆi(t) = φikˆie(t)αhˆie(t)1−α, donde φi es el nivel de tecnolog´ıa en el estado i.
+
+Un individuo combina su propio capital humano con los niveles agregados disponibles en su regi´on de acuerdo a:
+
+.
+hji(t)
+
+=
+
+yˆi(t)1−ψ
+
+(uji(t)hji(t))ψ
+
+(A.3.3)
+
+con 0 ≤ ψ ≤ 1, donde uj es la fraccio´n de su propio capital humano que el individuo dedica a educacio´n, por lo que la ecuaci´on (A.3.3) implica que entre m´as tiempo se dedique a educacio´n, m´as habilidad acumula un individuo. Tambi´en implica que si se dedica la misma cantidad de tiempo a la eduacio´n en regiones con mucho capital f´ısico y humano (dedicado al sector educativo) produce un mayor incremento en el nivel de habilidades de un individuo.
+
+Para simpliﬁcar la notacio´n, imaginemos que el nivel agregado yˆi(t) crece a una tasa constante γi en estado estacionario, tambi´en asumamos que los estudiantes s´olo pueden usar su capital humano en la escuela de tal forma que uji = 1 ∀ t.
+
+Entonces el nivel de habilidad de una persona quien fue a la escuela entre el tiempo v y el tiempo v + s se calcula integrando la ecuacio´n (A.3.3) entre v y v + s.
+
+hji(v,
+
+s)
+
+=
+
+[hji(v,
+
+0)
+
++
+
+(1
+
+−
+
+ψ)yˆi(v)
+
+(eγis
+
+−
+
+1
+1)] 1−ψ
+
+(A.3.4)
+
+donde hji(v, 0) es el nivel de capital humano que el estudiante tiene al momento en el que tiene cero escolaridad. De esta forma, (A.3.4) implica que el nivel de capital humano de un individuo j quien inicio´ estudiando en el tiempo v en la regio´n i, y quien estudi´o s an˜os, es una funcio´n de la suma de su nivel inicial de capital humano, hji(v, 0), m´as el t´ermino yˆi(v) (eγis − 1). Este segundo t´ermino, que reﬂeja el incremento del nivel de capital humano del estudiante sobre el periodo de distancia s, es el produco de la calidad de los maestros y el nu´mero de las facilidades a la educaci´on disponibles al inicio de su carrera como estudiante.
+
+Asumimos que el nivel inicial de capital humano es el mismo en todos lugares:
+
+hji(v, 0) = h(0)
+
+(A.3.5)
+
+La principal raz´on por la cual usar la ecuacio´n (A.3.5) es la necesidad de tener un numerario. Se necesita expresar al ´ındice de capital humano en una unidad la cual sea homog´enea entre tiempo y espacio.
+
+44
+
+Una forma de medir el nivel agregado de capital humano es sumando el nivel de habilidad de todos los individuos de la econom´ıa. Esto se hace en dos pasos. Primero se calcula el nivel de capital humano en todos los trabajadores con s an˜os de escolaridad integrando la ecuacio´n (A.3.4) sobre todo el tiempo v para las personas que esta´n vivas hoy. Imagine que las personas con s an˜os de escolaridad vivien por Ts an˜os. Las personas ma´s viejas que viven hoy, nacieron en el periodo t − Ts pero comenzaron a trabajar hasta s an˜os despu´es. Asumiendo que hay una persona de este tipo que comenzo´ a estudiar en el instante v, entonces la habilidad promedio de una persona con s an˜os de escolaridad est´a dada por:
+
+t
+
+hi(t, s) =
+
+hji(v, s)dv
+
+t−Ts+s
+
+(A.3.6)
+
+con
+
+∂h ∂s
+
+>
+
+0
+
+y
+
+hi(t, 0)
+
+=
+
+h(0)
+
+∀ t, i.
+
+Note que el nivel promedio de habilidad de las
+
+personas con s an˜os de escolaridad depende de i y t debido a que el nivel de capital humano
+
+y f´ısico dedicado al sector educativo en la regio´n i en el tiempo t diﬁere puesto que las
+
+personas van a la escuela en diferentes lugares.
+
+El segundo paso para calcular el nivel agregado de capital humano por trabajador es agregar a las personas en cada categor´ıa, usando la ecuacio´n (A.3.6) bajo ciertas ponderaciones:
+
+∞
+hi(t) = hi(t, s)ηi(t, s)ds
+0
+
+(A.3.7)
+
+Note que la ecuacio´n (A.3.7) es id´entica a la ecuaci´on (A.3.2) si los par´ametros de eﬁciencia
+
+esta´n deﬁnidos y dados por el nivel promedio de habilidades θi(t, s) = hi(t, s). Si usamos la normalizaci´on h(t, 0) = 1, entonces el nivel de capital humano promedio en la ecuacio´n
+
+(A.3.7) reporta la cantidad de trabajadores con cero escolaridad disponibles en la econom´ıa
+
+i en el tiempo t.
+
+El nivel promedio de capital humano puede ser inferido de la relacio´n de salarios:
+
+θi(t, s)
+
+=
+
+wi(t, s) wi(t, 0)
+
+(A.3.8)
+
+El supuesto para este resultado es que la tasa de salario de una persona de cualquier
+
+habilidad tiene dos componentes: uno depende de su habilidad individual, el otro depende del
+
+nivel agregado. Para una habilidad dada, una cantidad mayor de capital f´ısico incrementa la
+
+productividad de ese individuo debido a la complementariedad entre capital f´ısico y humano.
+
+De forma similar, una gran cantidad de capital humano disminuye la productividad debido
+
+a los rendimientos decrecientes del capital humano agregado. Para identiﬁcar el componente
+
+de habilidad, necesitamos netear el componente agregado. Lo podemos hacer dividiendo por
+
+el salario de una persona sin habilidad wi(t, 0).
+
+Agregando la ecuacio´n (A.3.8) en la ecuacio´n (A.3.7) tenemos el nivel promedio de capital humano medido como:
+
+hi(t) =
+
+∞ 0
+
+wi
+
+(t,
+
+s)ηi(t,
+
+s)ds
+
+wi(t, 0)
+
+(A.3.9)
+
+45
+
+Note que en la expresi´on (A.3.9), el numerador es la suma de todos los salarios en la econom´ıa dividido por el nu´mero de trabajadores. E´ste an´alisis sugiere una medida simple del nivel agregado de capital humano: el promedio del ingreso laboral en el estado i dividido por el salario de los trabajadores con cero escolaridad en ese mismo estado.
+46
+
+B Gr´aﬁcas
+En la secci´on B del presente Ap´endice se muestran las gra´ﬁcas de algunas variables para facilitar el ana´lisis de ciertos hechos que caracterizan la situacio´n econ´omica de M´exico en los u´ltimos cuarenta an˜os.
+B.1 Tasa de crecimiento del PIB de M´exico
+La siguiente gra´ﬁca muestra la tasa de crecimiento del PIB de M´exico (barras azules) en t´erminos constantes, para el periodo 1971-2011. La l´ınea roja representa la tendencia de los datos en dicho periodo.
+B.2 Tasa de crecimiento de la poblaci´on de M´exico
+La siguiente gra´ﬁca muestra la tasa de crecimiento de la poblacio´n de M´exico (barras azules), para el periodo 1971-2011. La l´ınea roja representa la tendencia de los datos en dicho periodo. No´tese que en el an˜o 2011 la poblaci´on crecio´ ma´s que en an˜os pasados.
+47
+
+B.3 Tasa de crecimiento del PIB per c´apita de M´exico
+La siguiente gra´ﬁca muestra la tasa de crecimiento del PIB per ca´pita de M´exico (barras azules) en t´erminos constantes, para el periodo 1971-2011. La l´ınea roja representa la tendencia de los datos en dicho periodo.
+B.4 Puntaje de pa´ıses en prueba PISA 2009 (desempen˜o matem´atico)
+La siguiente gr´aﬁca muestra los puntajes de varios pa´ıses a los que se les ralizo´ la prueba PISA en el an˜o 2009. Los pa´ıses se ordenaron del que tuvo el puntaje ma´s alto al que tuvo el puntaje ma´s bajo en la prueba de desempen˜o matem´atico. M´exico se resalta en rojo.
+B.5 Puntaje de pa´ıses en prueba PISA 2009 (desempen˜o lector)
+La siguiente gr´aﬁca muestra los puntajes de varios pa´ıses a los que se les ralizo´ la prueba PISA en el an˜o 2009. Los pa´ıses se ordenaron del que tuvo el puntaje ma´s alto al que tuvo el puntaje ma´s bajo en la prueba de desempen˜o lector. M´exico se resalta en amarillo.
+48
+
+B.6 Puntaje de pa´ıses en prueba PISA 2009 (desempen˜o en ciencias)
+La siguiente gr´aﬁca muestra los puntajes de varios pa´ıses a los que se les ralizo´ la prueba PISA en el an˜o 2009. Los pa´ıses se ordenaron del que tuvo el puntaje ma´s alto al que tuvo el puntaje ma´s bajo en la prueba de desempen˜o en ciencias. M´exico se resalta en verde.
+B.7 Desempleo en M´exico
+La siguiente gra´ﬁca muestra la evoluci´on de la desocupaci´on de acuerdo a su descomposicio´n entre personas instruidas y personas poco instruidas como porcentaje del total de personas desocupadas.
+49
+
+B.8 Series de tiempo de PIB real y escolaridad
+La siguiente gra´ﬁca muestra la evolucio´n del PIB real y de la escolaridad en M´exico, medida como el nu´mero de estudiantes de primaria en determinado cilco escolar. Se puede ver claramente que ambos crecen en el tiempo con una tendencia similar.
+50
+
+Bibliograf´ıa y Fuentes
+Referencias
+• Acemoglu, Daron (2009). “Introduction to Modern Economic Growth.” Princeton University Press. Princeton and Oxford.
+• Angrist, J. D., & Krueger, A. B. (1991). “Does compulsory school attendance aﬀect schooling and earnings?” The Quarterly Journal of Economics, 106(4), 979-1014.
+• Barro, R. y Lee, J. (2001). “Schooling Quality in a Cross-Section of Countries.” Economica, New Series. Vol. 68, No. 272, pp. 465-488.
+• Barro, R. y Sala-i-Martin, X. (1995). “Economic Growth.” McGraw-Hill, New York.
+• Barro, R. y Sala-i-Martin, X. (2009). “Crecimiento Econo´mico.” Versi´on espan˜ola de la segunda edicio´n inglesa. Editorial Revert´e, Barcelona.
+• Benhabib, J. and Perli, R. (1994). “Uniqueness and Indeterminacy.” Journal of Economic Theory, Vol. 63: 113-142.
+• Bernard, A.B. and Durlauf, S.N. (1995). “Convergence in international output.” Journal of Applied Econometrics. Vol. 10, pp. 97-108.
+• Bils, M., & Klenow, P. J. (2000). “Does schooling cause growth?” The American Economic Review, 90(5), pp. 1160-1183.
+• Boucekkine, R. y Ruiz-Tamarit, J.R. (2008). “Special functions for the study of economic dynamics: The case of the Lucas-Uzawa model.” Journal of Mathematical Economics Vol. 44, pp. 33–54.
+• Card, David and Alan B. Krueger. 1992. “Does School Quality Matter? Returns to Education and the Characteristics of Public Schools in the United States”, J. Polit. Econ. 100:1, pp. 1-40.
+• Card, D. (1994). “The Causal Eﬀect of Education on Earnings.” Handbook of Labor Economics, pp. 1801-1863.
+• Caselli, F. (2005). “Accounting for cross-country income diﬀerences.” Handbook of economic growth, 1, pp. 679-741.
+• Caselli, F. and Ciccone, A. (2013), “The Contribution of Schooling in Development Accounting: Results from a Nonparametric Upper Bound”, Journal of Development Economics.
+• Denison, E. F. (1962). “United States Economic Growth.” The Journal of Business, Vol. 35, No. 2, pp. 109-121.
+• Denison, E. F. (1967). “Sources of postwar growth in nine western countries.” The American Economic Review, 57, pp. 325-332.
+51
+
+• DiNardo, J., N. Fortin, T. Lemieux (1996). “Labor Market Institutions and the Distribution of Wages, 1973-1992: A Semiparametric Approach”, Econometrica, Vol. 64, No 5, pp. 1001-1044.
+• Easterly, W. and Levine, R. (2001), “It’s Not Factor Accumulation: Stylized Facts and Growth Models”, World Bank Economic Review. Vol. 15(2), pp. 177-219.
+• El-Mattrawy, K., & Semmler, W. (2006). “The Role of Education and Human Capital for Economic Growth in Middle Income Countries: Egypt’s Case”. Unpublished Manuscript.
+• Fuente, A. d. l., & Dom´enech, R. (2006). “Human capital in growth regressions: How much diﬀerence does data quality make?” Journal of the European Economic Association, 4(1), pp. 1-36.
+• Gong, Greiner y Semmler (2004). “The Uzawa–Lucas model without scale eﬀects: theory and empirical evidence.” Structural Change and Economic Dynamics. Vol. 15, pp. 401–420.
+• Gonza´lez Estrada, Adri´an (2002). “Dina´mica de los cultivos b´asicos en la liberalizacio´n comercial de M´exico: Modelo Dina´mico Multisectorial de Equilibrio General.” Primera Edicio´n. Programa de Econom´ıa, INIFAP, Chapingo, M´exico.
+• Greiner, Gong and Semmler (2005). “The Forces of Economic Growth: A Time Series Perspective.” Princeton University Press.
+• Griliches, Z., and Mason, W. M. (1972). “Education, Income, and Ability.” Journal of Political Economy, 80, pp. 74-103.
+• Griliches, Z. (1997). “Education, Human Capital, and Growth: A Personal Perspective.” Journal of Labor Economics, 15, pp. 330-344.
+• Gorseline, D. E. (1932). “The eﬀect of schooling upon income.” Indiana University.
+• Hanushek, E. y Woessmann, L. (2012). “Schooling, educational achievement, and the Latin American growth puzzle.” Journal of Development Economics, pp. 497–512.
+• Jones, C.I. (1995). “Time series test of endogenous growth models.” Quarterly Journal of Economics. Vol. 110, No. 2, pp. 495-525.
+• Klenow, P. J., & Rodr´ıguez-Clare, A. (1997). “The neoclassical revival in growth economics: Has it gone too far?” NBER Macroeconomics Annual, 12, pp. 73-103.
+• Krueger, A. B., & Lindahl, M. (2001). “Education for growth: Why and for whom?” Journal of Economic Literature, 39(4), pp. 1101-1136.
+• Lucas, R.E. (1988). “On the mechanics of economic development.” Journal of Monetary Economics. Vol. 22, pp. 3-42.
+52
+
+• Mankiw, N. G., Phelps, E. S. and Romer, P. M. (1995). “The Growth of Nations”. Brookings Papers on Economic Activity, Vol. 1995, No. 1, 25th Anniversary Issue, pp. 275-326.
+• Mart´ınez, Lorenza (2005). “La pol´ıtica cambiaria y monetaria en M´exico: Lecciones de una d´ecada de ﬂotaci´on cambiaria.” Direccio´n de Estudios Econo´micos. Banco de M´exico.
+• Meza F., J. A., Arreola, K. S. B., & Garc´ıa, J. U. (2012). “Recursos Naturales y Crecimiento Econo´mico, analizando el Capital Humano en M´exico”. Revista Internacional Administracio´n & Finanzas (RIAF), 5(1), 93-102.
+• Mincer, Jacob (1974). “Schooling, Earnings, and Experience.” NY: Columbia U. Press.
+• Mulligan, C.B. y Sala–i-Martin, X. (1997). “A labor income-based measure of the value of human capital: An aplication to the states of the United States.” Japan and the World Economy, 9(2), 159-191.
+• Mulligan, C.B. y Sala–i-Martin, X. (2000). “Measuring Aggregate Human Capital.” Journal of Economic Growth. Vol. 5, No. 3, pp. 215-252.
+• OCDE (2013). “Economic Policy Reforms 2013. Going for Growth”. Multilingual Summaries. OECD. Paris, France.
+• OCDE (2006). “Informe PISA 2006. Competencias cient´ıﬁcas para el mundo del man˜ana”. Programa para la Evaluacio´n Internacional de Alumnos. OCDE. Par´ıs, Francia.
+• Ocegueda, Meza y Coronado (2013). “Impacto de la educacio´n en el crecimiento econo´mico en M´exico, 1990-2008.” Revista Internacional de Administraci´on & Finanzas. Volume 6. Number 1. Universidad Aut´onoma De Baja California.
+• Park, J. H. (1994). “Estimation of Sheepskin Eﬀects and Returns to Schooling Using the Old and the New CPS Measures of Educational Attainment” (No. 338). Industrial Relations Section, Princeton University.
+• Sala–i-Martin, Xavier (1994). “Apuntes de Crecimiento Econo´mico.” Universidad de Yale.
+• Solow, R.M. (1956). “A Contribution to the Theory of Economic Growth.” The Quarterly Journal of Economics, Vol. 70, No. 1, pp. 65-94.
+• Solow, R.M. (1957). “Technical Change and the Aggregate Production Function”. The Review of Economics and Statistics, Vol. 39, No. 3, pp. 312-320.
+• Solow, R.M. (1970). “La Teor´ıa del Crecimiento.” Editorial Fondo de Cultura Econ´omica, M´exico.
+• Uzawa, H. (1965). “Optimum technical change in an aggregative model of economic growth.” International Economic Review. Vol. 6, pp.18-31.
+53
+
+• Willis, R. J., and Rosen, S. (1979). “Education and Self-Selection.” Journal of Political Economy, 87, pp. 7-36
+• Young, Alwyn (1995). “The Tyranny of Numbers: Confronting the Statistical Realities of the East Asian Growth Experience.” Quarterly Journal of Economics, 110, pp. 641680.
+Fuentes de Datos
+• Ca´mara de Diputados (2005). Centro de Estudios de las Finanzas Pu´blicas de la H. Ca´mara de Diputados.
+• Banco de M´exico (1980). Informe Anual del Banco de M´exico, Edici´on 1980. • Banco de M´exico (1990). Informe Anual del Banco de M´exico, Edici´on 1990. • Banco de M´exico (2000). Informe Anual del Banco de M´exico, Edici´on 2000. • Banco de M´exico (2012). Informe Anual del Banco de M´exico, Edici´on 2012. • Banco Mundial (2013). Metadatos de M´exico. Banco Mundial. • Comisio´n Nacional de Salarios M´ınimos (2013). • INEGI (1981). Sistema de Cuentas Nacionales de M´exico, 1978-1980. Cuentas de
+Produccio´n. • INEGI (1995). Anuario Estad´ıstico de INEGI, Edicio´n 1995. • INEGI (2000). Sistema de CuentasNacionales de M´exico. Cuentas de Bienes y Servicios
+1988-1999. Tomo I • INEGI (2011). Sistema de Cuentas Nacionales de M´exico. • INEGI (2012). Encuesta Nacional de Ocupaci´on y Empleo (ENOE), 2005-2012. • Nacional Financiera (1981). La Econom´ıa Mexicana en Cifras. M´exico, DF. • Penn-World Table 7.1 (2013). Center for International Comparisons of Production,
+Income and Prices. University of Pennsylvania.
+54
+
+

@@ -1,0 +1,2161 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+DO LOCAL NEWSPAPERS SERVE LOCAL GOVERNMENTS?
+ROBERTO MENDOZA SERRANO
+PROMOCIÓN 2013-2015
+ASESOR:
+RAYMUNDO M. CAMPOS VÁZQUEZ
+JULIO 2015
+
+Acknowledgements A Karla por su apoyo, amor y compan˜´ıa. A mi familia por su entereza y ejemplo. A mis profesores con los que estoy inﬁnitamente agradecido, especialmente con Raymundo y Gerardo.
+i
+
+Abstract This paper analyzes how local newspapers catered news stories in the 2012 Mexican local elections to ﬁnd evidence whether these media outlets favored the incumbent party during campaigns as they constitute one of the main sources of local information for political decisionmaking and partiality, if the case, is likely to be found not only in elections but in important political events. To accomplish this, I evaluate bias understood as tone and amount of coverage for the incumbent during 15 months, 7 months before the election up to when the incoming government takes control. I ﬁnd evidence of growing bias with rising competitiveness that can be associated to media capture. For municipalities in which newspapers could forecast the winner, with important presence of a second party, they always favored the winner. But in municipalities with scarce competitiveness there is almost non-existent bias supporting any party.
+ii
+
+Contents
+
+1 Introduction
+
+1
+
+2 Literature review
+
+5
+
+3 Data
+
+10
+
+3.1 Municipalities elections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+3.2 Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+3.3 Theoretical Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+3.4 Comparability between groups . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+3.5 Coverage of the two main parties . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+3.6 Bias favoring incumbent party . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+
+3.7 Bias and partisan coverage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+
+3.8 Empirical Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+
+4 Results
+
+35
+
+5 Conclusions
+
+39
+
+6 Appendix
+
+42
+
+6.1 Tone of coverage classiﬁer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+
+6.2 OLS Full Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+
+6.3 Considered Newspapers and Municipalities . . . . . . . . . . . . . . . . . . . . . 44
+
+1 Introduction
+In a framework in which democracy and institutions contribute to economic development (Acemoglu et al. (2014), Acemoglu et al. (2012), Robinson et al. (2005)) and private investment is encouraged by social stability (Perotti (1996)). Elections, as political institutions serve to analyze how information is catered to citizens by media outlets as fundamental means for quality of public decision-making. Political information not only contributes to voters decision making in whom to vote for, also helps to keep politicians accountable (Snyder and Stro¨mberg (2010)). Thus, answering if local newspapers serve local governments by biasing news stories towards incumbent party during elections contributes to measure a probable accomplice relationship that may last beyond elections and manifest whenever a political important event is approaching. Harming accountability, quality of citizens decision-making and, overall, economic development and welfare in the long run.
+Although much attention was attracted by Mexican national politics after 2000 when PRI, the party that ruled national politics for 71 years lost the Presidential election, in an event considered as a wave of democratization (Greene (2011)). Many questions remain open, specially at local levels and how media outlets cater news stories during local elections, as a way of assesing local newspapers proﬁt maximizing decisions on political coverage.
+During elections democratic institutions are tested as incumbents make efforts to keep political power in municipalities using means like media capture. By controlling media outlets citizens’ disposable information is biased affecting voting decisions (Besley and Prat (2006)). Hence, biased media outlets are useful for incumbent but have negative impacts on citizens political decisionmaking.
+This paper analyzes how 45 State newspapers covered partisan news stories in 59 Mexican Municipalities, forming 193 groups of local newspapers and municipalities, as some newspapers cover at least the municipalities of the state, in most of the cases1. This is done for the 2012 City Council elections, to ﬁnd evidence if local media outlets bias tone and amount of coverage to
+1Only municipalites in the same State of local newspapers are considered.
+1
+
+favor local incumbent parties primarily during campaigns, when partial media can be recognized as local governments push sympathetic media to cooperate and local newspapers may choose to favor a party in exchange of future beneﬁts.
+Elections are natural experiments in which local governments increase the promotion of their agenda to keep political power in municipalities through means at their disposal. Citizens on the ﬂip side have the power to reafﬁrm the party or elect another one of the multi-party Mexican system. For these two sides, information is an asset and analyzing who is favored by media outlets, whether citizens with unbiased data or incumbents colluding with media outlets points toward the health of democratic local institutions.
+According to the National Survey of Political Culture (Encuesta Nacional de Cultura Pol´ıtica) of 2012, for 76.1 percent of Mexicans, television is the main source to be informed about politics. Far behind, only 5.36 percent cite newspapers. But 84.73 percent of Mexicans hear about politics in conversations with family, coworkers and friends. Even though, newspapers are not read by a big share of population, their inﬂuence goes beyond readers, as being exposed is understood as come into contact with news through a medium (Price and Zaller (1993)), and it is likely that somebody in family, work or friends is exposed to news stories.
+Mexican television is highly concentrated, in broad terms is national only. Thus, governments and opposition recieve fewer attention, if any, during elections. It is plausible to think that local newspapers constitute one of the main sources of local politics information. Specially about candidates running for Municipalities. Bearing this in mind, local incumbents have substantial incentives to capture the local press.
+The general picture of journalism in Mexico is not promising; this country is considered as a not free country to practice journalism since 2007 by Freedom House. Reporters Without Borders in the World Press Freedom Index locates Mexico in the 149, 153 and 152 positions for 2012, 2013 and 2014, respectively, of 180 countries, where the last is the worst. On the other hand, turnover and competitiveness in local elections has surged since 1994, reﬂecting a democratic reality. This combative scenario is likely to have an inﬂuence on media outlets coverage and
+2
+
+how local governments and media outlets interact. In addition Mexican voter shows sophisticated behavior with split-ticket voting in local and federal elections.
+Even rational voters when having limited information can make wrong decisions (Anderson and McLaren (2012)). In conjunction with low-information elections, with no priors to form a criterion of choice, name recognition bolsters candidates support (Kam and Zechmeister (2013)). Newspapers have economic motivations to be sympathetic to get proﬁts in the form of bribes (Besley and Prat (2006) and McMillan and Zoido (2004)), or gaining advertising contracts with local governments inﬂuencing editors to bias news stories (Reuter and Zitzewitz (2006)). Since newspapers compete in a two-sided market: advertising and newspapers sells. Media targeting improves beneﬁts on newspapers and readers, but also competition drive prices of circulation down (Chandra (2009)). To this regard, it is expected that in a hard-won election newspapers segment their coverage to cater for supporters of a speciﬁc party. Thus, competition contributes to avoid withholding valuable information “just as market forces motivate auto-makers to produce better cars” (Mullainathan and Shleifer, 2005, p. 1031). On the other hand, monopolistic newspapers reduce value of information to readers and advertisers inevitably inﬂuence news stories (Ellman and Germano (2009)).
+There is a growing literature investigating bias on media in empirical and theoretical models. To my knowledge this is the ﬁrst time that all news stories are scraped and categorized with a machine learning algorithm wich enables consistent classiﬁcation and opens up the possibility to analyze amounts of data where human coders cannot be efﬁcient. To answer whether newspapers collude with local incumbents, I make a panel of partisan tone of coverage from January 2012 to March 2013, which comprises different stages of political periods from months before the election to months after the incoming government rules the Municipality in order to analyze how newspapers give coverage to this periods, principally during campaigns, by comparing municipalities with or without turnover, as a shock or treatment to identify an obsequiousness relationship.
+There are clear limitations with this dataset since many local newspapers changed their website and destroyed previous versions there was no way to retrieve this content and have to be
+3
+
+excluded from this research. Another drawback is few municipalities, as only cities with at least 100,000 habitants had information available about quality of government. This two main weaknesses restrains external validity and keep statistical power low. Another limitation relies on the measurement of explicit party mentions when bias may come in more subtles forms.
+The empirical strategy consists on an OLS model in which I consider partisan bias in local newspapers favoring the incumbent against the main challenger as the dependent variable, the explanatory variables are dummies of time effects, in this case political periods, and interactions with turnover, controlling for market structure, demand preferences, and structural political factors. The main empirical challenge in this model is that the relationship between bias and turnover can go either way. To avoid possible reverse causality I run the model for municipalities with different levels of competitiveness since newspaper sway varies in literature from 1 up to 5 percentage points (Ansolabehere et al. (2006)). Hence reverse causality of partisan bias with turnover can be discarded in municipalities where the margin of victory was bigger than 5 percentage points.
+Results show that local newspapers bias news stories during campaigns towards the party that later is elected, this happens in municipalities with or without turnout when they can forecast the results as competitiveness allows but there is relatively high presence of the second-place party. In municipalities with a margin of victory of less than 5 percentage points a growth in competitiveness of a standard deviation results in an average of 44 more neutral news stories of the incumbent over the main challenger during the months of campaigns or 22 news stories with positive tone in the same period. In contrast, in municipalities where the winner was elected with a least a margin of victory of 15 percentage points, an increase of a standard deviation in competitiveness results in 2 more neutral news stories of 1 news story with positive tone. I ﬁnd evidence of less partial coverage when newspaper market is more competitive.
+4
+
+2 Literature review
+Newspapers are considered as ﬁrms with economic and political incentives that have the power to bias or withhold information, hence can sway readers and affect the political decision-making. To keep news unbiased and publicly known, two main forces arise, two sided market competition and institutions relative to freedom of the press (Gentzkow et al. (2014)). Ansolabehere et al. (2006) with US data found that during the 1940s incumbents had endorsements 60 percent of the time, but this percentage grew to 90 percent nowadays, the beneﬁts of an endorsement is to recieve 1 percent to 5 percent of more votes. In Mexico the money for campaigns is primarily public funding, hence newspapers do not endorse candidates but may have preference for any in editorials and columns. Chiang and Brian (2008) found that if readers are able to recognize bias the sway is reduced, thus I consider only news stories as the information available to readers as Gentzkow and Shapiro (2010) did.
+“Several papers have shown that changes in the news coverage of a single local newspaper or television station can have larger effects on consumer knowledge about politics” (Gentzkow and Shapiro, 2008, p. 151) and later how they vote. Favoring the incumbent party is understood as giving more and favorable coverage in news stories against the main challenger, this is relevant since “[m]edia owners can manipulate political outcomes by distorting the information that consumers of news receive” (Anderson and McLaren, 2012, p. 854). The bias literature can be divided in four types according to the purpose of this paper:
+
+Table 1: Dimensionality of Bias
+
+Dimension
+
+Elements
+
+Politics
+
+Partisan Structural
+
+Preferences Supply
+
+Demand
+
+Content
+
+Explicit
+
+Implicit
+
+Market Advertisement Credibility
+
+In the politics dimension, utterly described in Hofstetter (1976), I mainly use two elements:
+
+partisan and structural bias. To illustrate this concept, lets consider an election where two con-
+
+tenders are in the race; an experienced politician, the incumbent party candidate, versus a non ex-
+
+5
+
+perienced, the challenger. Evidently the experienced politician may receive beneﬁcial coverage as a matter of curricula and as the incumbet he generates more news interesting to the audiences. This is considered the structural bias where media outlets have to pick news appealing to its consumers. Whereas partisan bias relies primarily in supporting the experienced or the non experienced candidate only by his party afﬁliation. The theoretical difference is obvious, but not so easy to identify in the contents. With this background to gauge bias assuming a perfectly balanced benchmark candidates is rather not credible. Schiffer (2006) did not ﬁnd alarming results in bias coverage of US Senate candidates controlling structural bias in newspapers. An additional problem in structural bias is related with coverage due to government activities. Because of this, I will only consider news stories that contains the political party name, not alluding to government responsabilities.
+Controlling for effects going from the press to readers, and backwards, is another challenge. This happens because readers preferences may affect what is reported and how this is made. In other words, people prefer to read news according to their prejudices. But not only consumers have predisposition, also do editors and journalists. This causal effect of readers preferences having a causal impact in newspapers is the main concern in Gentzkow et al. (2014), as their analysis is made in the long term. In the short run is more likely to observe how newspapers respond to differente levels of competitiveness and contrasting ideology competitors during elections
+In the second dimension of bias analysis, preferences. On the demand side, Mullainathan and Shleifer (2005) concluded that newspaper accuracy is mantained by reader heterogeneity over media competition. Gentzkow and Shapiro (2006) analyzed how slant is related to priors of consumers. Later Gentzkow and Shapiro (2010) modeled the slant of newspapers as proﬁt maximizers organizations taking demand as given, considering implicit slant that later will be described. Puglisi and Snyder (2011) showed that in the national level scandal coverage was aggresively published by opposite ideology newspapers, in a supply driven bias practice. At the local level, coverage was slanted following the ideology of readers in a demand driven bias. To limit this inﬂuence on the results, I use the opinion of citizens about the government and voting results in past elections to control for demand preferences.
+6
+
+On the supply side, Baron (2006) identiﬁes slant in press through the journalists who want to advance on their careers, for example writing ﬁrst page news, biasing the information in the editors ideology. Gans and Leigh (2012) found that in Australian newspapers editors are more partisan than journalists. The coverage of economic issues related to partisan preference of newspapers is analyzed by Larcinese et al. (2011) in whose results is shown that in a national context, newspaper political afﬁliation change the amount of coverage, changing accuracy to favor a political party. Lott and Hasset (2014) found similar results to the latter article. Djankov et al. (2003) studying State ownership of media in a sample of 97 countries found that this phenomena is primarily related to less democratic countries with weak economies, therefore big bias in the media. Linking demand and supply, Stone (2011) analyzed how priors in both sides of the market affect accuracy.
+Preferences and beliefs about accuracy are not the complete story. Rather, persuassion of the media has been documented in DellaVigna and Kaplan (2007) where the voting share of a party was increased introducing a same ideology media outlet.
+If readers are unable to correctly identify the bias of the media outlets when reading news they are clearly more susceptible to persuasion Milburn (1991). It should be easy to identify partisan preferences on columns. Following Chiang and Brian (2008) conﬁrmation of Milburn (1991) hypothesis, this inﬂuence is reduced as readers are able to recognize the bias. As a consequence, columns may not sway voters as biasing news, hence accuracy of the media plays a major role during elections. This assumption, combined with political polarization and heregenous readers, in a model devepelod by Bernhardt et al. (2008), increases the probability of electing the wrong candidate. In this regard I only analyze news, not columns or editorials, as this entries in the newspapers have bigger impacts on readers.
+In the content dimension of bias, the intention is to recognize ideological stance, whether it is explicit or implicit. Scholars have used both forms of analysis, the former essentialy consists on measuring visible elements as front page relases. The latter uses sophiscated methods primarily associating rethoric of the newspapers to parties.
+In the implicit branch analysis to ﬁnd ideology of newspapers, Gentzkow and Shapiro (2010)
+7
+
+examined the phrases used by members of Congress in the 2005 in the Congressional Record identifying those in the news coverage. In this papers authors analyzed around 70 percent of total daily newspapers in United States with the help of an automated script. A pioneer paper in this branch is the one written by Groseclose and Milyo (2005), which used the number of times a media outlet cited a think tank and policy groups and compared this results against the citations of Congress upon the same groups. Gans and Leigh (2012) used 3 approaches combining citations as Groseclose and Milyo (2005) and explicit analysis ﬁnding that Australian media is quite centrist, possibly as a result of lack of competition. Thus, literature analyzing media outlets with a scientiﬁc methodology has grown, as it has importance on the quality of information do citizens count on.
+In the explicit branch, Kahn and Kenney (2002) found slant in news towards the endorsed candidate in editorials and the inﬂuenced it provoked on voters as having better opinion of endorsed candidates in comparison with the non-endorsed ones. The closeness of the race also impacted on newspapers reports with negative criticism to candidates. Ho and Quinn (2008) coded editorial position as liberal or conservative of 25 US newspapers and compared this with their press releases of Supreme Court decisions in dosis-response pattern, ﬁnding results that were pretty similar to a database in which people vote for a position of the newspaper.
+The market dimension of bias, serves as a counterpart to government capture, as advertisers rather choose a credible medium to advertise. But this should be taken with cautious, since governments “use tools such as regulatory authority or priviledge access to information to support sympathetic media” Gentzkow et al. (2014). However economic incentives would also lead newspapers to bias when government is an advertiser as subsequently studied.
+To this extent Besley and Prat (2006) constructed a model aimmimg to identify media capture by the incumbent as endogenous, driving to conclude that media pluralism is an effective protection. Also, bias in the media reduces interesting news to the consumers, thus reducing commercial proﬁts. Moreover, government is one of the biggest consumers of advertisement. Besley and Prat (2006) considers primarily the sell of news but the other side of the market are the advertising sells, which also affects bias.
+8
+
+In Argentina, Di Tella and Franceschelli (2011) found that an increase of one standard deviation of government advertisement is associated with a decrease of 18 percent of a standard deviation in corruption coverage in a front page per month. Reuter and Zitzewitz (2006) observed personal ﬁnance publications favoring advertisers, but failed to ﬁnd this effect on national newspapers. In Italy Durante and Knight (2012) exploiting a natural experiment in which Berlusconi came to power, reported a shift in ideology of public television to the right, in the same direction of government’s ideology. Resulting in a demand shift, as viewers opted for different channels according to their political leaning. A documented case of bribery and corruption in media was done by McMillan and Zoido (2004) of the Peruvian government. Gambaro and Puglisi (2009) analyzing Italian press found that as advertisers bought more ads, newspapers published more articles related to that company than before.
+Mantaining a high-credibility endorsement in newspaper has more inﬂuence than a low-credibility (Chiang and Brian (2008)), but inﬂuence or lack of accuracy can be exploited to sway voters as explored before. Gentzkow and Shapiro (2008) take this last argument and measure it against what happened with harmful news to the government. Concluding that, indeed, pluralism serves as a guarantee to the government’s capture. Competition and economic incentives to supply demand for news, conforms the bedrock to diminish goverment power over media. But this effect is not very clear with newspapers advertisement sells constitute a bigger share of proﬁts compared to the sells in the readers market, possibly the case of local newspapers in places with short demand.
+Considering the size of the advertisement market in a theoretic model Gehlbach and Sonin (2014) showed that as the market grows, holding ownership constant, private media are less biased. But after a certain point, the goverment is inclined to takeover the media, ending with a more biased media outlets. The latter may fail to hold, but this could be a potential reason for threating journalists as happens in Mexico, as a consequence of relative concentrated market.
+A possible mechanism which enables press to sway voters could be found in how mass media introduce ideas or, even, recognition of candidates. With low-information elections name recognition proved to bolster support Kam and Zechmeister (2013). In a local election name repetition
+9
+
+in the press may spur support. But in a presidential election, where there is more information available, may not have signiﬁcance.
+There is also a vast literatue analyzing the inﬂuence of newspapers’ ideology on voting results as Erikson (1976), Druckman (2005), Chiang and Brian (2008), and Gerber et al. (2009). These papers compare explicit bias and known endorsement of newspapers with voting results taken from exit polls primarily. This strategy enables the researcher to measure what information did voter have and compare with whom did he vote for.
+This papers aims to contribute to empirical literature identifying bias in newspapers by exploring and analyzing the coverage of an important political event as local elections in which partisan goals are clear. This is relevant since if partial media is found then the same partiallity is to be expected in other political important events where bias is rather impossible to identify in a scientiﬁc approach, endangering informed political decision-making and democracy itselt.
+The main empirical challenge in this paper is to control for possible endogeneity in the competitiveness caused by bias in the newspapers. If newspapers swayed voters then the observed competitiveness and turnover could be inﬂuenced by the bias, which is the explained variable. Unfortunately it is not possible to estimate this inﬂuence in Mexico since, to my knowledge, there are not empirical studies conducted measuring the sway. Using Ansolabehere et al. (2006) results as a ceiling of 5 percent more votes when having and endorsement in US. Splitting municipalities with less than 5 percent of victory margin and controlling for political preferences, newspaper market incentives are captured by the Herﬁndahl-Hirchsmann Index. I also control for demand preferences, possible effects of the Presidential election that was coincident with local elections and for population characteristics.
+3 Data
+Partisan bias is understood as the result of other forms of bias as structural factors, market, and supply and demand preferences. In consequence it is necessary to get variables that characterize
+10
+
+these types of bias. In the case of partisan bias it is observed in news stories, but it is important to explain it in contrast of the refered forms of bias, because otherwise it is possible to partial media choices to publish favoring news stories to a better candidate when this is a factor of structure and could not be associated with partiality, among many other examples.
+To get the partisan bias I used a web scraper algorithm to get all the press releases available since January 2012 from local and national newspapers websites. All sections except for columns were scraped, whenever possible. The main drawback using a web scraper is that a big share of newspapers changed the website structure and did not keep older records, therefore those are not included in the analysis. 10 Municipalities are not included due to not having at least 10 months and 100 news stories of coverage. In total 193 observations of a local newspaper covering the municipalities within the operations State.
+The amount of coverage obtained by searching the parties names or the main abbreviations for them in all the lines of the scraped press releases. The tone of coverage of the partisan lines of press releases is obtained with a Na¨ıve Bayes classiﬁer with two categories: positive and neutral, which in a nutshell given the vector of features, assign a weight to each one given the class the document belongs, when classifying unseen data it matches the weights of the document’s features and by maximum likelihood assign the partisan line to the deﬁned categories. The features for partisan lines are stemmed words, bigrams and trigrams. To train the classiﬁer 2,600 partisan lines were manually classiﬁed. To test the classiﬁer a third of the classiﬁed set randomly assigned to the training set the two thrids are used as testing set. Whenever two or more parties appear in the same line the algorithm is run for each party, considering commas to take into account syntax. This results in around 3,000 partisan lines.
+The overall precision of this classiﬁer is 74 percent. Table 2 shows how the NB classiﬁer performs with each category of the testing set. The most informative features are stems for “society”,“trust”, “necessary”, “Mexicans”, “important” are one of the most used in positive category, “duty” for example is the main feature for the neutral category. With this approach news stories are divided upon lines then to assing a tone because a party may appear many times, the last time
+11
+
+Table 2: Classiﬁer confusion matrix
+
+NB Classiﬁer
+
+Positive Neutral Total
+
+Manual Classiﬁcation Positive % Neutral %
+
+262 62.98 372 23.05
+
+154 37.02 1242 76.95
+
+416 100 1514 100
+
+Notes: To guarantee that the method to choose features further explained in Appendix 6.3, is consistent the training set was randomized many times with similar results.
+
+it appears is analyzed with the classiﬁer and the tone is given.
+
+This algorithmic classiﬁcation is based upon manual classiﬁcation, offers advantages and dis-
+
+advantages over human coders, the main beneﬁt is opening the possibility to classify big data
+
+efﬁciently and consistently, but failing to understand nuances in the use of words that a human
+
+can easily understand. Since it was necessary to classify around 50 thousand news stories, the NB
+
+classiﬁer is desirable over manual coders. From January 2012 to March 2013 the amount of news
+
+stories in the database is 1’394,175 of those 103,344 are partisan from which 41,282 belongs to
+
+the considered municipalities within the State of local newspapers. From these news stories I get
+
+the coverage simply as the the number of press releases refering to the incumbent party and the
+
+main
+
+challenger
+
+in
+
+the
+
+Municipality.
+
+The
+
+variable
+
+coverage
+
+then
+
+is
+
+measured
+
+as
+
+Pn
+i=1
+
+news
+
+storyi
+
+where i are the news stories by newspaper coverage within the municipalities of its State, and
+
+news story is an indicator variable that takes the value 1 if the news story explicitly covers the
+
+incumbent party or the main challenger’s party.
+
+In Mexico it is customary that small parties make alliances with the main national parties for
+
+elections at municipalities. Thus, I only take into account bigger parties as the ruling party and
+
+main challenger in most of the cases, breaking this rule when the left wing party PRD formed
+
+a coalition with the right wing party PAN, and when PT and MC, two left wing small parties
+
+formed a coalition. In those cases the coalition is considered as two joint parties, this is, if a new
+
+story covers both parties is considered two times. This reasoning may lead to double counting
+
+but the coalition PAN-PRD was unstable and its purpose was to defeat PRI in 2009, in 2012 both
+
+12
+
+parties were defeated, this coalition happened in 2 of the 59 municipalities, hence, they should be considered as the same party in 2012.
+The tone of coverage is a weight that takes the value 2 when the tone of coverage is positive and 1 when it is neutral, relative to the coverage. With these variables the measure bias favoring the incumbent party as the main explained variable is measured as:
+Xn bias f avoring incumbent party = tone coverage incumbent partyi
+i=1
+Xn tone coverage main challenger partyj (1)
+j=1
+The bias favoring incumbent party is interpreted as the amount of coverage weighted by its tone that the incumbent recieve over the main challenger party. To simplify its interpretation over time I keep the same parties as the incumbent and challenger over time, even after elections. Suppose that a local newspaper was favoring the incumbent party we should expect a positive number during campaigns, but there is turnover, if after the results are known the newspaper bias its coverage to favor the new incumbent we should expect a negative number. Hence keeping the same parties in its position before elections helps to the interpretation of results.
+Observations correspond to each month and a local newspaper covering the Municipality within its State, this groups have at least 11 months of 15 months and a minimum of 100 partisan news stories over the coverage period. In total there are 193 groups with an average of 14.9 months of coverage. Including group and month in Equation 1.
+The Herﬁndhal-Hirschman Index (HHI) of newspapers was calculated with public data available in the Mexican Ministry of Interior (Secretar´ıa de Gobernacio´n) in the National Register of Print Media (Padro´n Nacional de Medios Impresos), with weighted averages for those who did not report numbers were computed from the complete reports from the same locations. HHI is used as measure of market concentration.
+Because this paper focuses on 2012 local elections it is necessary to get all electoral information of competitiveness, turnover and historical trends of municipalities elections. This dataset was
+13
+
+build up from multiple sources and covers from the 1988 elections to 2012 elections considering City Councils results. The latter local election was concurrent with the Presidential, hence some effects of the National level have inﬂuence in the local sphere through political structure including the incument party at the City Council and competitiveness.
+I use the citizens opinion of Municipal Services and Corruption as proxy variables to demand preferences. This data was taken from the National Survey of Governmental Impact and Quality (Encuesta Nacional de Calidad e Impacto Gubernamental) conducted by the The National Institute of Statistics and Geography (known in Spanish as INEGI) performed in 2011. This covers the period before the election.2
+3.1 Municipalities elections
+The Mexican electoral system suffered transformations with the time, tending to be more democratic as the population demanded. In ﬁgure 1 is represented the evolution of turnover, competitiveness, split-ticket voting of Presidential elections versus City Council elections and the share of ruling parties in the 59 analyzed municipalities since 1988 to the 2012 election. Competitiveness is calculated as 1 - (margin of victory).3 The Mexican electoral system is composed primarily by 7 parties, the main competitors are PRI (Partido Revolucionario Institucional) a centrist party which ruled the country for 71 years, until 2000 when lost against PAN, but in 2012 won again the Presidential elections, the right-wing party PAN (Partido Accio´n Nacional), the left-wing party PRD (Partido de la Revolucio´n Democra´tica) and another 4 smaller parties which usually make coalition with the former 3 parties.
+In the ﬁrst panel of Figure 1, competitiveness surged in 1994 and kept high during all the subsequent years. With competitiveness turnover rose. These facts account for a considerable awareness of citizens when deciding whom to vote for, which is supported by a considerable split-
+2Both surveys were conducted in areas with more than 100,000 habitants, combined with the requirement of having had local elections, only 66 Municipalities were left.
+3Some municipalities before 2012 had elections that did not coincide. To simplify, all elections were recentered in the same years.
+14
+
+ticket voting whenever City Council elections coincide with Presidential elections. In the last panel can be seen how the share of municipalities by the main three parties changed over time, a downfall of PRI until 2006 where began to gain political ground, it seems that PAN moves in the contrary direction as PRI does, but PRD keeps relatively stable to the volatility of the other two parties.
+Figure 1: Municipalities voting evolution
+
+Turnover percentage
+0 20 40 60 80 100
+
+Competitiveness
+0 20 40 60 80 100
+
+1988 1991 1994 1997 2000 2003 2006 2009 2012
+Election
+
+1988 1991 1994 1997 2000 2003 2006 2009 2012
+Election
+
+Share of municipalities
+0 20 40 60 80 100
+
+Split-ticket voting percentage
+0 20 40 60 80 100
+
+1988 1991 1994 1997 2000 2003 2006 2009 2012
+Election
+
+2000
+
+2006
+
+2012
+
+Election
+
+PRI
+
+PAN
+
+PRD
+
+Notes: Graphs shown for the 59 municipalities analyzed. Split-ticket voting is calculated as the difference between the winner in City Council elections and the winner within the Municipality in Presidential elections when coincided. All elections were recentered in the same years, when necessary, to make them concurrent.
+
+In 2012 City Council elections, competitiveness and turnover is related in table 3, in which municipalities are divided into four groups considering the competitiveness of the election. As long as competitiveness grows the bigger is the chance of turnover. Municipalities with High
+15
+
+Competitiviness (HC), with a margin of victory of less than 5 percent, hence a competitiveness equal or more than 0.95. The same logic applies to the group with Medium Competitiveness (MC) with values between 0.85 and less than 0.95, to the group with Low Competitiveness (LC) and for the group with None Competitiveness (NC).
+The idea behind this division of municipalities with respect to the competitiveness observed in the election of interest relies on considering differences on political structure and preferences of voters that may change the coverage of newspapers regardless of alignment with incumbents. As the treatment consists on turnover it is also strategic for the newspapers to forecast who the winner will be to make a decision whether biasing coverage during campaigns, but in a hard-won election they are not able to do this and will reveal their favorite if any as the case in HC. For the other groups structural bias should grow since the odds for correctly forecasting who the winner will be bigger with less competitiveness, then a more competitive political structure has a negative correlation with competitiveness.
+Table 3: Competitiveness by Turnover in 2012 Municipal Elections
+
+Group NC LC MC HC
+
+Competitiveness <0.6 %
+0.6x<0.85 %
+0.85x<0.95 %
+0.95x<1 %
+Total %
+
+Turnover
+
+No Yes Total
+
+2
+
+0
+
+2
+
+100 0 100
+
+19
+
+4
+
+23
+
+82.61 17.39 100
+
+11
+
+8
+
+19
+
+50 50 100
+
+6
+
+9
+
+15
+
+40 60 100
+
+38 21 59
+
+64.41 35.59 100
+
+Notes: Competitiveness is measured as 1 - (margin of victory). Data from election results was taken from Local Electoral Institutes.
+
+16
+
+3.2 Model
+3.3 Theoretical Model
+In the theoretical model explicit partisan bias is a consequence of editors choices to maximize proﬁts based on their preferences, readers preferences, market and political structure, but also may choose to beneﬁt incumbent party to gain advertisement or being beneﬁted. The market competition refers to the amount of that have impacts on advertisement and circulation prices. Political structure are elements in the political scenario that promotes interest on certain candidates or in speciﬁc events as elections. During 2012 City Council elections reelection was forbidden, the only way to preserve political power is through their party, hence partisan bias is a good measure for media capture by comparing municipalities with homogenous characteristics and easier to identify when campaigns take place being a moment when partisan coverage grows and whether there exists bias it would easier to recognize. This is graphically presented in Figure 2.
+Figure 2: Relations between variables
+
+Incumbent tries to capture media
+
+Editors maximize profits based on:
+Partisan Bias
+
+Own preferences
+Readers preferences
+Political structure
+Market competition
+
+Circulation Advertisement
+
+However incumbent bribes or any means to capture media are not observable nor editors preferences but have effects over partisan bias, in this case the dependent variable. A potential drawback is endogeneity between partisan coverage and readers preferences, in literature this effect over voting preferences is about 1 to 5 percentage points Ansolabehere et al. (2006). Using turnover as a treatment may be endogenous in municipalities with margins of victory of less or equal to 5
+17
+
+percentage points. The reduced functional form of this model is:
+P artisan Bias = f (Readers P ref erences, Editors P ref erences, M arket, P olitical Structure) (2)
+Hence, I understand explicit partisan bias as a function of the refered four variables, following the dynamics in Figure 2. Media capture is internalized in the model considering changes over editors preferences. In the short run, turnover do not have impact in market. Editors make proﬁt maximizing choices of partisan coverage catering news stories to readers with political preferences or swing voters seeking information to decide for whom to vote for, in the latter case bias have more sway over voters. In the market concentration, more competition prevents bias by the effects on the two-sided market. In the circulation side reducing prices and increasing unbiased information that readers prefer. On the advertisement side, in a monopoly advertisers automatically bias coverage, but as competition grows this effect diminishes. In the case of political structure, more competition of political parties leads to bigger coverage.
+Media bias is endogenous to consumers priors and competition in the circulation market of newspapers (Gentzkow and Shapiro (2006)). Assuming that readers prefer news stories conﬁrming their priors, catering information in the direction of readers priors make reputation. But potential bias may arise when this information is different from true State of affairs and readers have no other source to verify this data. As a consequence competition keeps information unbiased, because whenever readers verify that a media outlet is biased from truth in other press releases available, it lost its reputation. Hence, competition prevents bias by promoting to reveal information as dependable as possible. This mechanism enables segmentation promoting an increased welfare for readers and newspapers more competition drives prices down and targets news stories to matching audiences (Chandra (2009)).
+18
+
+In the natural experiment turnover is employed as an ex post change that shocks that during campaigns as a credible threat to incumbent parties, for municipalities where turnover occured with a big margin of victory the rotation was inevitable media capture would not the best strategy avoiding the costs it carries. But in the cases where triumph was not certain or the challenger party is threat, this political enviroment spurs intents to capture media. As a consequence political structure provoke different strategies and effects over partisan bias.
+Thus, the next assumptions are made:
+• Market competition diminishes inﬂuence of incumbent over newspapers, reducing bias favoring incumbent,
+• Political structure affects how partisan news stories are published by the interest on elections, more competition between parties is related with more partisan coverage, hence making bias more evident and vice versa,
+• Readers preferences bias news stories towards a prefered party, and • Editors preferences determine partisan bias and media capture, changes this preferences.
+During the natural experiment ﬁve things can happen with bias favoring incumbent party as measured in Equation 1:
+Table 4: Sign of Bias Favoring Incumbent Party during Elections (BFIP)
+
+Scenario
+
+Sign of BFIP
+
+1 Newspaper bias news towards the incumbent party and wins the elections
+
++
+
+2 Newspaper bias news towards the incumbent party and the challenger wins the elections
+
++
+
+3 Newspaper bias news towards a challenger’s party and the incumbent’s party wins the elections
+
+-
+
+4 Newspaper bias news towards a challenger’s party and wins the elections
+
+-
+
+5 Newspaper do not bias news
+
+0
+
+Analyzing only the sign of bias favoring incumbent party (BFIP) would not give any answer of obsequiousness, since newspapers’ editors make their proﬁt maximizing decisions about partisan coverage with other four elements described in Figure 2. Political structure also enables newspaper editors, through competitiveness, to forecast who the winner will be, as voters have clear preferences. This constitutes a compelling argument to include competitiveness as the main variable for political structure, as parties will try to make the best as they see bigger chances of winning the
+19
+
+election, then incumbents may push harder to local newspapers. If they respond in good manners then we would see an increase of bias towards incumbent party during campaigns with rising competitiveness taking into account the other three factors.
+The aiming in this model is to capture effects of the forces driving bias, speciﬁcally to answer whether local newspapers serve local incumbents, which in the model is captured by editors preferences. This is done by comparing the tone and amount of coverage of incumbent party against the main challenger and how this measure evolves with subsequent months. In order to ease the identiﬁcation of bias favoring incumbent party I use the 2012 City Council elections, since parties will try to make their they best to win elections and sympathetic media will reveal their preferences with bias supporting their favorite. This effect should be increased by threating presence of challenger party, thus treatment is ex post turnover.
+To this purpose the analysis is done during 15 months in which it is not likely that new competitors enter in the newspaper market changing market structure. Taking into account that attention to candidates and chances of loosing the election are deﬁned before the campaign, if anything so important happens before, it is already internalized given political structural during campaigns.
+Keeping in mind that 2012 local elections coincided with the Presidential election, as PAN lost the latter, voting preferences may also depend on who was ruling in the Municipality, since voters may not prefer PAN rather PRI as an effect dragged by national polticis. Thus it is needed to control for population opinion and incumbent party in the Municipality to avoid omitted variables. Editors preferences captures the newspaper decision to cooperate with local incumbents, by force or voluntarily as it is dangerous to practice journalism in Mexico, but this effect would deﬁne the information available to voters as a choice of the local newspaper endangering the quality of political decision making. But editors preferences are not observed, the idea is to include dummy variables of time to capture potential changes considering the ﬁve scenarios of bias shown in Figure 2.
+The base theoretical model for the natural experiment, including controls for population characteristics, taking into account that bias favoring incumbent party is transformation of partisan bias
+20
+
+of Equation 1 for Municipality and newspaper. Taking as a group a local newspaper that covers the Municipality within the same State and as national papers are based on Mexico City taking them as local newspapers for the Mexico City municipalities (Delegations). The model is:
+
+BF IPg,t = 0 + 1Readers P ref erencesm,t + 2Editors P ref erencesg,t + beta3Editors P ref erencesg,t ⇥ T urnoverm + 4M arketm+ 5P olitical Structurem + X + ✏g,t (3)
+
+In Equation 3, g is the group for Municipality m of a local newspaper and t, time measured in months, editors preferences coefﬁcients denote how much of BFIP is attributable to the average editors choices of coverage through time and this coverage is not associated to other sources of bias rather than editors preferences that are susceptible to change due to media capture. The 2012 election is used as a natural experiment to test if this preferences align with the incumbent party. Hence, interaction terms capture how did the newspaper biased news stories ex ante in municipalities that later had turnover as a catalyst for revealing their favorite when are able or not to forecast the winner. But editors preferences are not observed, time dummies capture changes in editors preferences, then the theoretical model is:
+
+X 15
+
+X 15
+
+BF IPg,t = 0 +
+
+t 1d timet +
+
+t+14d timet ⇥ T urnoverm+
+
+t=2
+
+t=1
+
+30Readers P ref erencesm,t + 31M arketm + 32P olitical Structurem + X + ✏g,t (4)
+
+Where g is the group for Municipality m of a local newspaper and t, time measured in months.
+
+3.4 Comparability between groups
+If control variables are well-balanced, considering political preferences, newspaper market structure, population characteristics, satisfaction with public services and opinion on Municipality corruption. Then partisan then we can control for other than partisan and supply preferences as sources
+21
+
+of bias. As the aim of this paper is to gauge partisan bias in local newspapers as a mean to evaluate disposable information for voters in political decision making. Partisan bias may come from threats of stakeholders, preferences of editors or both. As important topics on their own, for the purposes of this paper are irrelevant, since the pervasive effects over citizens affect the same way the catering of partial information.
+Using municipalities with no turnover as counter factuals for the ones with party rotation have more sense with higher competitiveness, but important conclusions can be made with changes in competitiveness while being aware of differences in the control and treatment groups. With the ceiling inﬂuence of newspapers of voters of 5 percentage points the group HC, a model for explaining the bias favoring incumbent party may suffer from endogeneity.
+For citizens opinion on City Services and corruption is taken into account. For economic bias the HHI4 of newspapers within the Municipality. Last, population characteristics. These variables are used as control variables considered for bias, if they are balanced in the groups of competitiveness, then measuring bias within groups should not capture the structural, demand preferences and economic bias, leaving partisan bias easier to gauge.
+In general in Table 5 shows that there is no statistical difference of means between the municipalities with and without turnover, this may be due to small groups. The average number of analyzed newspapers is near 3 in most the cases, this number resulted from the internet versions of the local newspapers with news stories after and including February 2012. The standard deviation of HHI for each group is high5 which helps to keep no statistical difference in averages between treatment and control groups, the same happens for the rest of variables that potentially cause bias.
+
+4The
+
+Herﬁndahl-Hirchman
+
+Index
+
+(HHI)
+
+is
+
+calculated
+
+as
+
+follows,
+
+Pn
+i=1
+
+(si
+
+⇤
+
+100)2
+
+where
+
+si
+
+is
+
+the
+
+share
+
+of
+
+news-
+
+paper i in the market of all newspapers, whenever the Municipality belongs to metropolitan area, the market is con-
+
+sidered as the same, then the Index is calculated for the whole metropolitan area.
+
+5It is customary to consider a number below 1,000 as market not far from perfect competition. A number above
+
+the threshold of 2,500 shows signs of market concentration.
+
+22
+
+Table 5: Variables causing potential bias
+
+Newspapers analyzed
+Newspaper HHI
+Population
+Young People Percentage Non Poor
+nor Vulnerable Percentage
+Poor People Percentage
+Expected corruption in 2012 compared to 2011
+Corruption in 2011
+compared to 2010 City
+Services Satisfaction
+
+Group
+NC LC MC HC NC LC MC HC NC LC MC HC NC LC MC HC NC LC MC HC NC LC MC HC NC LC MC HC NC LC MC HC NC LC MC HC
+
+Municipalities no turnover
+
+Obs Mean
+
+SD
+
+2
+
+4
+
+4.24
+
+19
+
+3.89
+
+2.78
+
+11
+
+1.34
+
+0.4
+
+6
+
+3.67
+
+2.94
+
+2
+
+443.59
+
+0.00
+
+19
+
+893.4
+
+833.87
+
+11 1156.12
+
+692.28
+
+6
+
+1838.8
+
+1429.61
+
+2 1118271.00 989493.00
+
+19 505819.42 253382.9
+
+11 747101.7 529113.3
+
+6 393889.3 244800.1
+
+2
+
+26.08
+
+0.20
+
+19
+
+25.43
+
+1.52
+
+11
+
+26.6
+
+1.32
+
+6
+
+25.86
+
+2.74
+
+2
+
+26.09
+
+3.34
+
+19
+
+29.89
+
+6.60
+
+11
+
+26.21
+
+8.55
+
+6
+
+27
+
+14.27
+
+2
+
+32.90
+
+6.32
+
+19
+
+29.42
+
+7.86
+
+11
+
+32.98
+
+11.87
+
+6
+
+32.83
+
+13.29
+
+2
+
+-1.4
+
+0.13
+
+19
+
+-0.92
+
+0.29
+
+11
+
+-0.81
+
+0.38
+
+6
+
+-0.95
+
+0.19
+
+2
+
+-1.27
+
+0.16
+
+19
+
+-1.03
+
+0.22
+
+11
+
+-1.11
+
+0.29
+
+6
+
+-1.24
+
+0.56
+
+2
+
+0.11
+
+0.32
+
+19
+
+0.1
+
+0.27
+
+11
+
+0
+
+0.31
+
+6
+
+0.29
+
+0.29
+
+Municipalities with Turnover
+
+Obs Mean
+
+SD
+
+-
+
+-
+
+-
+
+4
+
+3.5
+
+1.73
+
+8
+
+2.87
+
+2.79
+
+9
+
+3
+
+1.58
+
+-
+
+-
+
+-
+
+4 1296.82 359.05
+
+8 2019.72 1613.29
+
+9 1152.89 562.71
+
+-
+
+-
+
+-
+
+4 710323.25 374088.72
+
+8 410961.1 250780.5
+
+9 526544.8 424867.8
+
+-
+
+-
+
+-
+
+4
+
+26.59
+
+1.46
+
+8
+
+25.81
+
+1.69
+
+9
+
+27.61
+
+1.24
+
+-
+
+-
+
+-
+
+4
+
+26.83
+
+9.65
+
+8
+
+28.14
+
+12.93
+
+9
+
+21.95
+
+6.88
+
+-
+
+-
+
+-
+
+4
+
+37.78
+
+13.02
+
+8
+
+34.19
+
+15.95
+
+9
+
+40.18
+
+14.52
+
+-
+
+-
+
+-
+
+4
+
+-0.72
+
+0.18
+
+8
+
+-1.02
+
+0.45
+
+9
+
+-0.86
+
+0.28
+
+-
+
+-
+
+-
+
+4
+
+-1.01
+
+0.11
+
+8
+
+-1.14
+
+0.24
+
+9
+
+-0.93
+
+0.55
+
+-
+
+-
+
+-
+
+4
+
+0.13
+
+0.26
+
+8
+
+0
+
+0.39
+
+9
+
+0
+
+0.27
+
+Mean difference P-Value
+0.79 0.88 0.57
+0.36 0.12 0.21
+0.18 0.11 0.5
+0.17 0.27 0.11
+0.44 0.69 0.37
+0.09 0.85 0.33
+0.21 0.27 0.52
+0.81 0.79 0.31
+0.82 0.99 0.06
+
+Notes: only newspapers with a website with news stories from January 2012 and after are analyzed. The HHI of newspapers are estimates that the author made with information available in Secretar´ıa de Gobernacio´n. Corruption and City Services Satisfaction were taken from Encuesta Nacional de Calidad e Impacto Gubernamental of 2011 made by Instituto Nacional de Estad´ıstica y Geograf´ıa.
+
+23
+
+3.5 Coverage of the two main parties
+During campaigns the coverage of the two main parties may change depending on the competitiveness of the election and whether there is a chance of turnover. Figure 3 shows how coverage changes with competitiveness splitting this trend between the municipalities with and without turnover.
+Figure 3: Competitiveness and partisan coverage during campaigns
+
+Municipalities with turnover
+
+Municipalities with no turnover
+
+Partisan coverage
+0 20 40 60 80 100 120 140 160 180 200 220 240 260
+Partisan coverage
+0 20 40 60 80 100 120 140 160 180 200 220 240 260
+
+.6
+
+.7
+
+.8
+
+.9
+
+1
+
+Competitiveness
+
+.5
+
+.6
+
+.7
+
+.8
+
+.9
+
+1
+
+Competitiveness
+
+Notes: Competitiveness is measured as 1 - (margin of victory). Partisan bias is the sum news stories making reference to the incumbent party and the news stories of the main challenger party. In total there are 193 observations that correspond to one of the 45 local newspapers covering one of the 59 municipalities within the same State with City Council elections in 2012. The dotted line is a linear approximation to the data.
+
+The coverage is the average number of news stories during April, May and July; the months that 24
+
+conforms the campaign period.6 It can be seen that after the competitiveness goes beyond 0.9 some newspapers start to have a decisive coverage which is expected as more attention is demanded, but opens the possibility of favoring a party and if the case, as the number of news stories grows, it would be easier to identify bias, which if the case for little coverage would be harder to detect as problems with statistical power may arise. Substantial coverage is essential in any case for greater bias favoring incument party. In Figure 3 coverage moves in the way expected from Literature Review in 2 caused by two main channels: hard-fought elections have a political structure that promotes interest seized by newspapers by targeting to supporters improving proﬁts, the other way is by the incumbent pushing newspapers to contribute to campaign. If newspapers improve partisan coverage during high competitive elections and bias do not grow as consequence, then it could be presumed that market structure restrains incumbents from capturing media during a period in which incumbents will try to be favored at any means at their disposal. In Figure 3 with the exception of some municipalities which, coverage is lower in municipalities with no turnover, but there few observations to make it statistically concluding, but seems also to conﬁrm less reportage for municipalities with less competitiveness. As a consequence of a political structure demanding less attention. In Figure 4 the coverage is the average value of the municipalities by competitiveness level. The months begin in January 2012 as 1 to March 2015 as number 15, therefore with the beginning of the seventh month the campaigns ﬁnished and soon results are published. To facilitate the analysis the months are joint into periods by their average number: months 1 to 3 are considered precampaigns; months 4 to 6, campaigns; months 7 to 8, results; months 9 to 11, last government; and 12 to 15, new government. This Figure reveals levels of difference between control and treatment groups, which are revealing more coverage as a proxy of interest in elections in general for the ones that had turnover in all the periods, except for the municipalities with competitiveness between 0.85 and 0.95.
+6This months do not necessarily are the legal periods for campaigns, nevertheless are months with bigger partisan coverage
+25
+
+I use 2012 City Council elections as natural experiment where turnover is the treatment to measure if explicit bias favoring incumbent party changes in with treatment as consequence of media capture or editors choices. Bias needs coverage, but it is not a consequence. In Figure 4 coverage in municipalities with turnover is higher than without in high competitiveness, which requires further analysis done in the next sections, to answer whether this numbers favored incument party or covered both main parties as a consequence of high competitiveness. Coverage is inverted for municipalities with moderate competitiveness with more reporting for municipalities without turnover this implies more attention of the media to places where incumbent won again the election, but few observation in places with turnover and newspapers, which could be associated with substantial editors preferences for the incumbent, if the tone of this greater coverage compared with turnover municipalities is better for the incumbent. For municipalities with low competitiveness elections only in the case of turnover attention of the media is substantial which could be connected with political elements that induce more attention as rotation of parties accompanied by huge difference in margin of victory. Partisan coverage gets to its peak at campaigns, in period 2. As expected dimishes through time consistent with changes in political structural elements and demand for rather other news stories than partisan considering that there is limited space in websites and printed editions.
+26
+
+Figure 4: Evolution of coverage
+
+Municipalities in HC
+
+Municipalities in MC
+
+Partisan news stories 0 10 20 30 40 50 60
+
+Partisan news stories 0 10 20 30 40 50 60
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Municipalities in LC
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Municipalities in NC
+
+Partisan news stories 0 10 20 30 40 50 60
+
+Partisan news stories 0 10 20 30 40 50 60
+
+27
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Partisan Coverage (No Turnover)
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Partisan Coverage (Turnover)
+
+Notes: Partisan Coverage is the average for the months of each period. Period 1 (Precampaigns) comprenhends from January to March 2012. Period 2 comprenhends from from April to June (Campaigns). Period 3 (Results) comprenhends from July to August. Period 4 (Between Governments) comprenhends from September to December. Period 5 (Incoming Government) January to March 2013. Municipalities in HC (High Competitiveness) includes: 9 with turnover and 6 without turnover. Municipalities in MC (Moderate Competitiveness) includes: 8 with turnover and 11 without turnover. Municipalities in LC (Low Competitiveness) includes: 4 with turnover and 19 without turnover. Municipalities in NC (No competitiveness) includes: 2 without turnover.
+
+3.6 Bias favoring incumbent party
+Bias favoring incumbent party is measured as described in Equation 1. This is relevant since not only the coverage of the main two contenders is crucial in the market of information but how newspapers cover those news stories by using different tone. This measure combines how much and the tone of the coverage. A positive number is associated with partisan bias supporting the incumbent party. A negative number would reveal bias in the coverage, in the case of no party rotation supporting the main challenger party, and when there is turnover favoring the next incumbent party. The ﬁrst question to answer empirically is whether bias in favor of incumbent party is catalyzed by an increase in competitiveness, and how newspapers cover parties when they can forecast the winner of the coming election. In the model supporting this paper it is expected that as the probability of loosing the election grows, incumbents will respond with bigger compromises for their partners and spending more money on the campaign, thus a higher number in the bias for incumbent party could reveal stronger ties between the local newspaper and the local incumbent and more resources, legal or illegal, spent on the campaign. In the case of a not submissive newspaper it woult not increase its support. In Figure 5 there are differences in bias favoring incumbent party when there is turnover, when the competitiveness is below 0.9, hence its possible to forecast the winner, three newspapers prefer to give better tone and coverage to the next incumbent during campaigns, which could be a sign of aligment, even before the new government is sworn in. When competitiveness is high and there was turnover three newspapers biased in huge amounts the tone and coverage to favor the incumbent, this can be attributed to obsequious media outlets because even though I am not considering other elements causing or restraining bias as readers preferences and market competition. Newspapers with huge amount of coverage are in the same market as others and face the same readers preferences, therefore this difference in bias is not likely to be caused by other factors except editors preferences enhaced by the high levels of competitiveness in the political structure. Overall when there with or without turnover newspapers favored the incumbent for the cases of
+28
+
+Figure 5: Bias favoring incumbent party during campaigns
+
+Municipalities with turnover
+
+Municipalities with no turnover
+
+70
+
+70
+
+60
+
+60
+
+50
+
+50
+
+40
+
+30
+
+20
+
+Bias favoring incumbent's party
+
+40
+
+30
+
+20
+
+Bias favoring incumbent's party
+
+10
+
+10
+
+0
+
+0
+
+-30 -20 -10
+
+-30 -20 -10
+
+.6
+
+.7
+
+.8
+
+.9
+
+1
+
+Competitiveness
+
+.5
+
+.6
+
+.7
+
+.8
+
+.9
+
+1
+
+Competitiveness
+
+Notes: Competitiveness is measured as 1 - (margin of victory). Partisan bias is the sum news stories making reference to the incumbent party minus the news stories of the main challenger party, weighted with a 1 if new story has neutral tone or 2 when having a positive tone. In total there are 193 observations that correspond to one of the 45 local newspapers covering one of the 59 municipalities within the same State with City Council elections in 2012. The dotted line is a linear approximation to the data.
+
+29
+
+high competitiveness during campaigns, This is consistent with literature for US in Ansolabehere et al. (2006). In Mexico the money for campaigns is primarily from a public budget, this endorsements are not secured with private money which raises questions about the nature of using public money to ensure that parties can compete. Further statistical analysis on this is ﬁnd in section 4. Political structural is likely to be causing bias in municipalities beside the ones with high competitiveness. In the case of the latter group bias s on average positive during campaigns in municipalities which is associated with newspapers serving local incumbents when reelection of the party is endangered this can be seen in Figure 6. This could be caused by low competition on the newspaper market which is not the case as seen in Table 5 and editors preferences always for the incumbent party with no media capture is not sustained as in Figure 6 is shown that after the results are known bias favoring incumbent party is zero for municipalities with and without turnover, consequently this can only be assumed by media capture during campaigns. In municipalities where newspapers could forecast the winner in municipalities with moderate and low competition. Only in the case of no turnover and moderate competition newspapers report bias during campaigns, this is explained by incumbents making efforts to diminish the presence of challenger party that keeps a threating presence for the incumbent, as this bias cannot be explained by readers preferences due to considerable base of supporters for the challenging party and market competition is not statistically different from municipalities with moderate competition and no turnover.
+30
+
+Figure 6: Evolution of bias favoring incumbent’s
+
+Municipalities in HC
+
+Municipalities in MC
+
+Mean Bias favoring Incumbent's Party -5 0 5 10 15 20
+
+Mean Bias favoring Incumbent's Party -5 0 5 10 15 20
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Municipalities in LC
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Municipalities in NC
+
+Mean Bias favoring Incumbent's Party -5 0 5 10 15 20
+
+Mean Bias favoring Incumbent's Party -5 0 5 10 15 20
+
+31
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Bias + Coverage (No Turnover) Coverage (No Turnover)
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Period
+
+Bias + Coverage (Turnover) Coverage (Turnover)
+
+Notes: Partisan Coverage is the average for the months of each period. Period 1 (Precampaigns) comprenhends from January to March 2012. Period 2 comprenhends from from April to June (Campaigns). Period 3 (Results) comprenhends from July to August. Period 4 (Between Governments) comprenhends from September to December. Period 5 (Incoming Government) January to March 2013. Municipalities in HC (High Competitiveness) includes: 9 with turnover and 6 without turnover. Municipalities in MC (Moderate Competitiveness) includes: 8 with turnover and 11 without turnover. Municipalities in LC (Low Competitiveness) includes: 4 with turnover and 19 without turnover. Municipalities in NC (No competitiveness) includes: 2 without turnover.
+
+3.7 Bias and partisan coverage
+In Figure 7 bias do not follow any trend with coverage, before 50 partisan news stories during campaigns, but after this threshold coverage and bias favoring incumbent party follow a clear positive trend, this is not associated to any other type of bias except for editors choices since newspapers with more than 50 are in the same municipalities as others with less than this number. A possible explanation for this effect is related to incumbents trying to win again when the challanger is winning ground with voters, they react by organizing more events and interviews.7 The observations with heavy bias in favor of incumbent correspond to the same observations in Figure 3 this supports the previous reasoning. Since political parties have primarily public budget and are limited to spend a certain amount of money to be in similar opportunities, this is evidence that could exists violations to this principle in some cases when incumbents are threaten and still have the chance to win election.
+3.8 Empirical Model
+The information available to run model the theoretical model do not include readers preferences over time, hence assuming that partisan preferences do not change with time8 using proxies for preferences before the election, then dummy variables of time capture not also partisan preferences of editors but also demand preferences if they change over time, this is a drawback if readers preferences on political parties change within months. Another limitation of the empirical model is that it is not possible to measure how much of the change in partisan preference is due to newspaper sway, using a ceiling of 5% as the maximum inﬂuence over votes of newspapers as the results found in Ansolabehere et al. (2006), then the group HC may suffer from endogeneity, but as shown in my dataset in section 3.6 in Municipalities with high competitiveness the bias is positive with or
+7This is derived of the most common words used in positive tone in the classiﬁer seen in Section ??, as this words are used primarily by politicians in campaigns.
+8This assumption is done as in the last year of the incumbent and when the incoming goverment rules only swing voters may change their mind with partisan bias in newspapers, thus the effect of readers partisan preferences is ﬁxed for the Municipality in the considered time. For municipalities with high competitiveness there is potential reverse causality, since swing voters may end up deciding the winner, which should be diminished by other exogenous variables, but this is a drawback in this model for hard-won elections.
+32
+
+Figure 7: Bias favoring incumbent party and Partisan coverage during campaigns
+
+60
+
+40
+
+20
+
+Bias favoring incumbent's party
+
+0
+
+-20
+
+0
+
+50
+
+100
+
+150
+
+200
+
+250
+
+Partisan coverage
+
+Notes: Partisan bias is the sum news stories making reference to the incumbent party minus the news stories of the main challenger party, weighted with a 1 if new story has neutral tone or 2 when having a positive tone. In total there are 193 observations that correspond to one of the 45 local newspapers covering one of the 59 municipalities within the same State with City Council elections in 2012.
+
+33
+
+without turnover during campaigns, thus the hypothesis of newspaper inﬂuence to provoke turnover is not empirically important in this dataset. The incumbent favoring bias in local newspapers as deﬁned in Equation 1, averaged by the periods considered in section 3.5. Then, the 15 months of coverage analysis is divided in 5 periods: precampaigns, campaigns, results, between governments, new government. Equation 1 is transformed into:
+
+bias f avoring incumbent partyg,p=⇢ =
+
+1
+
+Xn
+
+| 2 |(
+
+tone coverage incumbent partyi,g,t
+
+t ⇢ i=1, if t2⇢
+
+Xn tone coverage main challenger partyi,g,t) (5)
+i=1, if t2⇢
+
+Where ⇢ 2 {precampaigns, campaigns, results, between governments, new government}. Bias favoring incumbent party is abbreviated as BFIP, hence the empirical model combining Equation 5 and Equation 4 is:
+
+X5
+
+X5
+
+BF IPg,p = 0 +
+
+p d periodp +
+
+p+5 d periodp ⇥ d turnoverg + Xg + ✏g,p (6)
+
+p=2
+
+p=1
+
+Where all the explanatory variables beginning with d are dummies and capture the change in coverage with periods, the interaction terms capture de difference in BFIP in time when there was turnover, controls for population characteristics and variables causing potential bias as the HHI of local newspaper market. For readers preferences I use City Services satisfaction, expected corruption from 2011 to 2012, change in corruption from 2010 to 2010, both from City authorities. and the incumbent party during the election. Precampaigns is the base bias in the empirical speciﬁcation in Equation 6, this model is run for each category of competitiveness, results are shown in Table 6. Dummies for incumbent during
+
+34
+
+election are the change with respect to base category PRI. In the pooled OLS structural bias and partisan bias are captured by the coefﬁcients as municipalities with different levels of competitiveness have different political backgrounds. To minimize this effect I run the regression for each group of competitiveness levels.
+4 Results
+To answer whether local newspapers serve local governments via partisan bias favoring incumbent party measured as the difference of explicit coverage of the incumbent party minus the coverage of the main challenger party during campaigns, weighted by tone of the news stories with a 2 for a positive and 1 for a neutral. Thus, a positive number implies more coverage for the incumbent party and a negative number represent more coverage for the main challenger during campaigns. This roles are not changed after elections to keep comparability in this measure. Therefore, a negative number in the bias dependent variable during campaigns and also negative number after with turnover should be understood as a favoring bias for the main challenger during campaigns and after this party wins elections. A positive number during campaigns and a negative number afterwards indicate bias favoring incumbent party in campaigns but later favoring the party that was the main challenger with or without turnover. In total there are 4 different possible scenarios for the sign of bias. The periods analyzed focus on campaigns including: precampaigns, election results, between governments and incoming government. Taking into account variables that predispose coverage, I analyze the effect of political periods in municipalities with and without turnover to measure if newspaper editors prefer to endorse incumbent parties in political decisive times as campaigns.
+35
+
+Campaigns Results Precampaigns ⇥ Turnover Campaigns ⇥ Turnover Results ⇥ Turnover
+
+Table 6: OLS Results
+
+Dependent variable: Bias Favoring Incumbent Party
+
+NC
+
+LC
+
+MC
+
+HC
+
+-1.625⇤ (0.765)
+-1.083 (0.670)
+
+-0.511 (0.438)
+-0.667 (0.395)
+-0.885 (2.348)
+-2.502 (4.388)
+0.0120 (2.561)
+
+9.632⇤ (4.336)
+-3.563 (1.948)
+-10.42⇤ (5.109)
+-17.96⇤ (8.015)
+-6.200 (5.020)
+
+1.712 (2.262)
+-1.242 (1.297)
+6.283 (11.94)
+0.357 (11.23)
+-1.115 (9.490)
+
+Potential Bias Standardized Competitiveness
+
+-20.82 (12.53)
+
+Standardized HHI
+
+1.963⇤ (0.995)
+2.027 (1.450)
+
+17.59 (10.73)
+0.744 (0.702)
+
+44.87⇤ (18.09)
+1.628 (1.324)
+
+Incumbent during elections PAN
+PRD N
+
+-5.192⇤ (2.110)
+
+-12.33 (8.438)
+
+-21.94⇤⇤ (7.346)
+
+-2.024
+
+(1.240)
+
+40
+
+430
+
+259
+
+233
+
+Notes: Standard errors in parentheses. * p < 0.05, ** p < 0.01, *** p < 0.001 Regressions include controls for population characterisctics. 2 Municipalities have None Competitiveness (NC) with 7 local newspapers analyzed. 23 Municipalities have Low Competitiveness (LC) with 31 local newspapers analyzed. 19 Municipalities have Medium Competitiveness (MC) with 35 local newspapers analyzed. 15 Municipalities have Competitiveness (MC) with 32 local newspapers analyzed.
+Time effects and their interactions with turnover dummy variable capture the inﬂuence of editors
+
+36
+
+preferences through time before, during and after elections. In the theoretical model I assume that editors decide their proﬁt maximizing bias favoring incumbent party taking into account: readers preferences, market competition, political structure and their own preferences. Hence I include these variables in the model to contrast how the impact on bias favoring incumbent party. The threat of media capture in Mexican local newspapers is compelling since Mexico is classiﬁed as not free country to practice journalism. With this model I explain bias favoring incumbent party over the main challenger as an editors decision based on their own preferences changing with time that is derived by media capture as a result of preferences of population in the Municipality, HHI measuring market concentration of newspapers at City level, competitiveness and incumbent party as proxies for political structure. In Table 6 all regressions include controls for incumbent party and population characteristics. For newspapers reporting the two municipalities with No Competitiveness (NC) in general there are no changes in bias with time or other explanatory variables. This results are explained by a political structure where elections are pretty much deﬁned before citizens cast their votes, therefore few attention is put on newspapers news stories and incumbents have no incentives to capture media during this period because of their large support compared to opposition, the margin of victory was bigger than 40 percentage points. For newspapers covering municipalities with Low Competitiveness (LC) winners made it with a margin of victory of 15 to less than 40 percentage points, positive bias favoring incumbent party is explained mainly by competitiveness. A standard deviation of competitiveness have an effect of 2 more neutral news stories for the incumbent party or 1 positive reportage more. If PAN was the incumbent party it received 5 neutral news stories less or combinations between positive and neutral, compared to main challenger. The former effect conﬁrms assumptions of incumbents making efforts to keep its political power when there is presence of a not so weak challenger party, the latter effect is associated to a National phenomena that is dragged by local newspapers and could be interpreted as editors choices in partisan bias internalizing presumptions of readers preferences and National political structure.
+37
+
+Newspapers in municipalities with Moderate Competitiveness (MC) where there is a threatening presence of the challenger party, not enough to make them win the election or cast doubts in forecasts. But when challenger won the election made it in way that could be predicted during campaigns or even before. In theses cases newspapers changed bias with time favoring the next winner in the election, for the cases where there was no turnover it could be a result of media capture but for those municipalities with turnover this effect could be explained by being sympathetic to the next incumbent and also driven by readers preferences. Considering the differences in bias during campaigns in municipalities with and withoud turnover are almost the same, the winner recieved around 10 more neutral tone news stories or 5 positive tone or any combination of them, in reference to precampaigns, it is possible to attribute most of the bias due to readers preferences, since the differences are symmetric, if there were media capture there would be bigger bias for municipalities without rotation. In the group of municipalities with High Competitiveness (HC) accompanied by no chances of correctly predict the winner during campaigns or before. With possible endogeneity between the winner and bias favoring a party. Results show no effect in bias favoring incumbent party in the change of political periods. But an increase of one standard deviation on the competitiveness leads to an average of 45 more neutral news stories covering the incumbent party or its equivalent with positive of mixed news stories, this effect is huge and in this case the only channel left to explain this enormous effect is through media capture motivated by having the probabilities against but possibly being able to sway voters. Whenever PAN was the incumbent party the effect against this party is around 22 less news stories with neutral coverage, or 11 positive tone news stories favoring the main challenger or any combination in between. For other factors inﬂuencing editors decisions on bias as market competition, my ﬁndings are in the same direction as literature predicts, less competition leads to more bias favoring incumbent as market competition deters media capture. For variables used as proxies for readers preferences I ﬁnd no evidence of its implications on partisan bias due to the nature of the proxies which are generalized for the population, not for the readers of each newspaper.
+38
+
+In municipalities were PAN was the incumbent during 2012 local elections it received less coverage than PRI, specially in municipalities where the margin of victory was equal or less than 5 percentage points. This is a consequence of the worsened image of PAN at national level dragged at the Municipality level and PRI regaining political ground. This effect over bias is the biggest of all the regressors and is likely causing media capture by being sympathetic with PRI as incumbent and harsh with PAN taking into account that this party could loose election and citizens opinion on this party was unfavorable. The effects of period change from campaigns to results and later incoming government diminishes partisan coverage as expected from less demand of this kind of news stories and a different political structure with different interests. This phenomena allows to compare how newspapers bias partisan news stories during a political important period as campaigns and afterwards partisan coverage falls, hence bias is more subtle to identify.
+5 Conclusions
+Demand preferences and political structure play an important role in local catering of partisan news stories, specially in Municipalities where there is competitiveness in parties for political power. In those Municipalities where competitiveness is present but during campaigns is likely to correctly forecast the winner, newspapers bias coverage towards the next winner due to political structure and readers preferences, as people prefer news stories conﬁrming their priors and beliefs (Mullainathan and Shleifer (2005), Gentzkow and Shapiro (2006)). In hard-won municipalities, with a margin of victory of less than 5 percentage points, an increase of a standard deviation in competitiveness pushes bias in favor of the incumbent to around 45 more netural tone news stories over the main challenger, this effect is only explained by media capture of local newspapers. As incumbents face a scenario where the challenger has enough chances of winning the election, incumbents use all means at their disposal to try to sway voters and keep the Municipality. Media capture is more related to Municipalities that had turnover, thus the ceiling
+39
+
+effect found in literature of 5 percentage points of more votes to an endorsed party (Ansolabehere et al. (2006)) cannot be the case in Mexican City Council elections. This is explained by two channels: a) Mexican voters can identify biased media outlets dimishing their sway (Chiang and Brian (2008)), and b) the low share of newspapers readers fades the effect of bias. If the second channel is predominant, then political decision-making is endangered by noisy signals of the true State of the world sent by newspapers, but few recievers of this political signals, indispensable for the quality of political decision-making. Results on the pooled OLS conﬁrm that market competition restrains bias favoring incumbent party, a decrease of a standard deviation in the Herﬁndahl-Hirchmann Index of newspaper market has an effect in my dataset of 1 news story less covering the incumbent against the main challenger party. Compared to results in Gentzkow and Shapiro (2006) who measured bias with a transformation of the difference of seconds of coverage for candidates, ﬁnding that a new media outlet has a reduction of a third of a standard deviation of bias. I ﬁnd an effect of a fourth of theirs, but measurements are different because their bias variable goes from 0 to 0.25 while my empirical results go from -1 to 16 and I quantify competition with the standardized HHI, which is better suited to measure the concentration of the market, hence, better picture of competition and reach of newspapers. In any case, my results conﬁrms economic theory of reduction of bias with improved competition. The coverage during campaigns in municipalities with low or none competitiveness shows no sign of favoritism to any candidate. This is not a result of fewer coverage compared to more competitive Municipalities, with the exception of hard-wons. In these cases incumbents do not have incentives to ﬁght challengers with disposable resources, as the results are practically deﬁned before the election take place. Media capture is detected whenever local incumbents require support to accomplish a politically important event, to fulﬁll this capture it is likely that they use public resources at their disposal. This has important implications for political events because this results cast doubts about impartiality of local newspapers when pushed by local incumbents as a result of bribes or threats.
+40
+
+These results cast doubts about partiality of media when local incumbents require their endorsement with the pervasive effects on disposable information for quality of political decision-making. Media competitiveness proves to be a barrier to deter media capture and promote unbiased coverage, thus policies promoting new entrants and more consumption of newspapers, in printed or online versions, are recommendable to keep information available and impartial, to ensure better political institutions.
+41
+
+6 Appendix
+6.1 Tone of coverage classiﬁer
+The Na¨ıve Bayes classiﬁer was implemented on Python with the NLTK package, using the classiﬁer that is built in. A Bernoulli probability distribution to evaluate by maximum likelihood the a posteriori probability of an unseen partisan paragraph.
+The news stories were divided by dots to ﬁnd complete sentences, whenever more than party appeared in the same line this sentence is split by commas to capture possible differences in the tone of coverage of two or more parties. If only one party appeared the whole sentence was used.
+The features used to classify news stories are unigrams, bigrams and trigrams. To avoid potential n-grams that were repeated in both categories I used only the ones that had repetitions outside an interval of ±20% of the number of repetitions in each category.
+All n-grams were stemmed using the snowball rule for spanish to keep the lexigraphic richness of the text but at the same time keeping the number of features as small as possible.
+42
+
+6.2 OLS Full Results
+
+Campaigns Results Between Governments New Government Precampaigns ⇥ Turnover Campaigns ⇥ Turnover Results ⇥ Turnover Between Governments ⇥ Turnover New Government ⇥ Turnover
+
+Dependent variable: Bias Favoring Incumbent Party
+
+By competitiveness level
+
+Pooled
+
+NC
+
+LC
+
+MC
+
+HC
+
+(1)
+2.020 (1.324)
+-1.424⇤ (0.606)
+-1.578⇤⇤ (0.580)
+-1.551⇤⇤ (0.569)
+0.700 (2.474)
+-2.714 (2.336)
+-1.122 (0.868)
+-2.815⇤⇤ (0.871)
+-2.587⇤⇤⇤ (0.603)
+
+(2)
+2.020 (1.287) -1.424⇤ (0.586) -1.578⇤⇤ (0.560) -1.533⇤⇤ (0.544)
+2.310 (2.658)
+-1.104 (2.256)
+0.488 (0.924)
+-1.205 (0.991)
+-0.986 (0.736)
+
+(3)
+
+(4)
+
+-1.625⇤ (0.765)
+-1.083 (0.670)
+-1.083 (0.613)
+-1.615⇤ (0.635)
+
+-1.625⇤ (0.765)
+-1.083 (0.670)
+-1.083 (0.613)
+-1.615⇤ (0.635)
+
+(5)
+-0.511 (0.458)
+-0.667 (0.409)
+0.0731 (0.306)
+-0.193 (0.304)
+-0.709 (0.902)
+-2.325 (4.388)
+0.189 (1.350)
+0.449 (1.228)
+-0.939 (0.534)
+
+(6)
+
+(7)
+
+(8)
+
+(9)
+
+-0.511 (0.438)
+-0.667 (0.395)
+0.0731 (0.282)
+-0.193 (0.285)
+-0.885 (2.348)
+-2.502 (5.444)
+0.0120 (2.561)
+0.272 (2.690)
+-1.116 (2.081)
+
+9.632⇤ (4.760)
+-3.563 (2.045)
+-4.931⇤ (2.011)
+-3.987⇤ (1.952)
+-7.902⇤⇤ (2.408)
+-15.45⇤⇤⇤ (4.490)
+-3.686⇤ (1.625)
+-3.782⇤ (1.827)
+-3.763⇤ (1.468)
+
+9.632⇤ (4.336)
+-3.563 (1.948)
+-4.931⇤ (2.028)
+-3.748⇤ (1.872)
+-10.42⇤ (5.109)
+-17.96⇤ (8.015)
+-6.200 (5.020)
+-6.296 (5.122)
+-6.515 (4.969)
+
+1.712 (3.010)
+-1.242 (1.189)
+-2.818⇤ (1.112)
+-2.879⇤⇤ (1.098)
+9.160 (6.004)
+3.235 (5.262)
+1.762 (2.044)
+-0.342 (1.690)
+0.373 (1.557)
+
+(10)
+1.712 (2.262)
+-1.242 (1.297) -2.818⇤ (1.401)
+-3.139 (1.610)
+6.283 (11.94)
+0.357 (11.23)
+-1.115 (9.490)
+-3.219 (9.697)
+-2.346 (9.800)
+
+Potential Bias Standardized Competitiveness Standardized HHI City Services Satisfaction Municipal Corruption from 2010 to 2011 Expected Municipal Corruption from 2011 to 2012
+
+1.766⇤⇤⇤ (0.302)
+0.213 (0.311)
+0.0536 (0.901)
+1.174 (0.899)
+-1.680 (0.890)
+
+2.623⇤⇤⇤ (0.545)
+0.772⇤ (0.388)
+0.675 (1.114)
+0.168 (0.934)
+-0.506 (0.900)
+
+-20.82 (12.53)
+0 (.)
+0 (.)
+0 (.)
+0 (.)
+
+-20.82 (12.53)
+0 (.)
+0 (.)
+0 (.)
+0 (.)
+
+2.404⇤⇤⇤ (0.635)
+0.444 (0.409)
+1.385 (0.870)
+-0.532 (0.634)
+-0.00668 (0.747)
+
+1.963⇤ (0.995)
+2.027 (1.450)
+4.393 (3.353)
+-0.499 (1.475)
+-1.048 (2.174)
+
+14.54 (7.447)
+1.024⇤ (0.408)
+-4.293 (4.528)
+0.407 (2.001)
+-7.745⇤ (3.093)
+
+17.59 (10.73)
+0.744 (0.702)
+6.887 (4.365)
+-3.542 (6.004)
+-17.25 (9.599)
+
+-3.666 (10.39)
+2.088 (1.369)
+-4.834 (4.113)
+-10.25 (5.651)
+2.451 (3.657)
+
+44.87⇤ (18.09)
+1.628 (1.324)
+10.23 (14.01)
+23.37 (20.65)
+0.318 (8.223)
+
+Incumbent during elections PAN PRD PT PAN-PRD
+Population characteristics Young People Poor People
+Not Poor nor Vulnerable People Log Total Population cons N
+
+-5.393⇤⇤⇤ (1.121)
+
+-0.958
+
+0
+
+(0.794)
+
+(.)
+
+1.997
+
+0
+
+(1.183)
+
+(.)
+
+-1.572 (1.678)
+
+-5.192⇤ (2.110) -2.024 (1.240)
+6.153 (7.368)
+
+-12.33 (8.438)
+
+-21.94⇤⇤ (7.346)
+
+-1.600 (10.68)
+
+1.256 (2.082)
+
+2.006⇤ (0.974)
+962
+
+6.987 (28.28)
+-19.97⇤ (9.148)
+-16.90 (13.57)
+1.883⇤⇤⇤ (0.471)
+-12.03 (13.28)
+962
+
+-42.18 (26.62)
+40
+
+0 (.)
+0 (.)
+0 (.)
+0 (.)
+-42.18 (26.62)
+40
+
+1.844⇤ (0.807)
+430
+
+-130.9 (118.4)
+-29.10 (29.58)
+-48.68 (43.33)
+-0.969 (0.915)
+71.35 (41.96)
+430
+
+-10.08 (6.164)
+259
+
+-329.1⇤ (139.7)
+74.34 (134.3)
+61.25 (165.0)
+-3.099 (2.550)
+63.97 (61.92)
+259
+
+0.174 (11.97)
+233
+
+-101.0 (299.6)
+8.016 (28.54)
+22.63 (18.70)
+12.46⇤⇤⇤ (3.276)
+-159.6⇤ (80.13)
+233
+
+Notes: Standard errors in parentheses. * p < 0.05, ** p < 0.01, *** p < 0.001 Regressions include controls for population characterisctics. 2 Municipalities have None Competitiveness (NC) with 7 local newspapers analyzed. 23 Municipalities have Low Competitiveness (LC) with 31 local newspapers analyzed. 19 Municipalities have Medium Competitiveness (MC) with 35 local newspapers analyzed. 15 Municipalities have Competitiveness (MC) with 32 local newspapers analyzed.
+
+43
+
+6.3 Considered Newspapers and Municipalities
+
+Newspaper
+
+State
+
+Municipality
+
+1 El Sur
+
+Campeche
+
+Campeche
+
+2 El Sur
+
+Campeche
+
+Carmen
+
+3 Diario La Voz del Sureste Chiapas
+
+San Cristo´bal de las Casas
+
+4 El Heraldo de Chiapas
+
+Chiapas
+
+San Cristo´bal de las Casas
+
+5 Diario del Sur
+
+Chiapas
+
+Tapachula
+
+6 Diario La Voz del Sureste Chiapas
+
+Tapachula
+
+7 El Heraldo de Chiapas
+
+Chiapas
+
+Tapachula
+
+8 El Orbe
+
+Chiapas
+
+Tapachula
+
+9 Defacto
+
+Chiapas
+
+Tuxtla Gutie´rrez
+
+10 Diario del Sur
+
+Chiapas
+
+Tuxtla Gutie´rrez
+
+11 Diario La Voz del Sureste Chiapas
+
+Tuxtla Gutie´rrez
+
+12 El Heraldo de Chiapas
+
+Chiapas
+
+Tuxtla Gutie´rrez
+
+13 El Orbe
+
+Chiapas
+
+Tuxtla Gutie´rrez
+
+14 24 Horas
+
+Distrito Federal Azcapotzalco
+
+15 El Economista
+
+Distrito Federal Azcapotzalco
+
+16 El Sol de Me´xico
+
+Distrito Federal Azcapotzalco
+
+17 La Prensa
+
+Distrito Federal Azcapotzalco
+
+18 La Razo´n
+
+Distrito Federal Azcapotzalco
+
+19 Reforma
+
+Distrito Federal Azcapotzalco
+
+20 24 Horas
+
+Distrito Federal Coyoaca´n
+
+21 El Economista
+
+Distrito Federal Coyoaca´n
+
+22 El Sol de Me´xico
+
+Distrito Federal Coyoaca´n
+
+23 El Universal
+
+Distrito Federal Coyoaca´n
+
+24 La Jornada
+
+Distrito Federal Coyoaca´n
+
+25 La Prensa
+
+Distrito Federal Coyoaca´n
+
+26 La Razo´n
+
+Distrito Federal Coyoaca´n
+
+27 Reforma
+
+Distrito Federal Coyoaca´n
+
+28 24 Horas
+
+Distrito Federal Cuajimalpa de Morelos
+
+29 El Sol de Me´xico
+
+Distrito Federal Cuajimalpa de Morelos
+
+30 La Razo´n
+
+Distrito Federal Cuajimalpa de Morelos
+
+31 24 Horas
+
+Distrito Federal Gustavo A. Madero
+
+32 Diario Imagen
+
+Distrito Federal Gustavo A. Madero
+
+33 El Economista
+
+Distrito Federal Gustavo A. Madero
+
+34 El Sol de Me´xico
+
+Distrito Federal Gustavo A. Madero
+
+35 El Universal
+
+Distrito Federal Gustavo A. Madero
+
+36 La Jornada
+
+Distrito Federal Gustavo A. Madero
+
+37 La Prensa
+
+Distrito Federal Gustavo A. Madero
+
+38 La Razo´n
+
+Distrito Federal Gustavo A. Madero
+
+39 Reforma
+
+Distrito Federal Gustavo A. Madero
+
+40 El Sol de Me´xico
+
+Distrito Federal Iztacalco
+
+41 24 Horas
+
+Distrito Federal Iztapalapa
+
+42 El Economista
+
+Distrito Federal Iztapalapa
+
+43 El Sol de Me´xico
+
+Distrito Federal Iztapalapa
+
+44
+
+44 El Universal 45 La Jornada 46 La Prensa 47 La Razo´n 48 El Sol de Me´xico 49 La Razo´n 50 Reforma 51 24 Horas 52 El Economista 53 El Sol de Me´xico 54 El Universal 55 La Jornada 56 La Prensa 57 La Razo´n 58 Reforma 59 24 Horas 60 El Economista 61 El Sol de Me´xico 62 La Razo´n 63 24 Horas 64 El Sol de Me´xico 65 La Prensa 66 La Razo´n 67 Reforma 68 El Sol de Me´xico 69 24 Horas 70 Diario Imagen 71 El Economista 72 El Sol de Me´xico 73 El Universal 74 La Jornada 75 La Prensa 76 La Razo´n 77 Reforma 78 24 Horas 79 Diario Imagen 80 El Economista 81 El Sol de Me´xico 82 El Universal 83 La Jornada 84 La Prensa 85 La Razo´n 86 Reforma 87 24 Horas 88 Diario Imagen 89 El Economista 90 El Sol de Me´xico
+
+Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal
+
+Iztapalapa Iztapalapa Iztapalapa Iztapalapa La Magdalena Contreras La Magdalena Contreras La Magdalena Contreras A´ lvaro Obrego´n A´ lvaro Obrego´n A´ lvaro Obrego´n A´ lvaro Obrego´n A´ lvaro Obrego´n A´ lvaro Obrego´n A´ lvaro Obrego´n A´ lvaro Obrego´n Tla´huac Tla´huac Tla´huac Tla´huac Tlalpan Tlalpan Tlalpan Tlalpan Tlalpan Xochimilco Benito Jua´rez Benito Jua´rez Benito Jua´rez Benito Jua´rez Benito Jua´rez Benito Jua´rez Benito Jua´rez Benito Jua´rez Benito Jua´rez Cuauhte´moc Cuauhte´moc Cuauhte´moc Cuauhte´moc Cuauhte´moc Cuauhte´moc Cuauhte´moc Cuauhte´moc Cuauhte´moc Miguel Hidalgo Miguel Hidalgo Miguel Hidalgo Miguel Hidalgo
+
+45
+
+91 El Universal 92 La Jornada 93 La Prensa 94 La Razo´n 95 Reforma 96 El Sol de Me´xico 97 La Razo´n 98 El Sol de Leo´n 99 El Sol del Baj´ıo 100 El Sol de Irapuato 101 El Sol de Leo´n 102 El Sol de Salamanca 103 El Sol del Baj´ıo 104 El Sol de Irapuato 105 El Sol de Leo´n 106 El Sol de Salamanca 107 El Sol del Baj´ıo 108 El Sol de Irapuato 109 El Sol de Leo´n 110 El Sol de Salamanca 111 El Sol del Baj´ıo 112 El Sol de Salamanca 113 El Sol del Baj´ıo 114 Debate Calentanos 115 El Sol de Acapulco 116 El Sur de Guerrero 117 Jornada Guerrero 118 Novedades Acapulco 119 Debate Calentanos 120 El Sol de Acapulco 121 El Sur de Guerrero 122 Jornada Guerrero 123 Novedades Acapulco 124 Debate Calentanos 125 El Sur de Guerrero 126 Jornada Guerrero 127 Novedades Acapulco 128 El Informador 129 El Occidental 130 El Sur de Jalisco 131 Jornada Jalisco 132 Mural 133 El Informador 134 El Occidental 135 El Sur de Jalisco 136 Jornada Jalisco 137 Mural
+
+Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Distrito Federal Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guanajuato Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Guerrero Jalisco Jalisco Jalisco Jalisco Jalisco Jalisco Jalisco Jalisco Jalisco Jalisco
+
+Miguel Hidalgo Miguel Hidalgo Miguel Hidalgo Miguel Hidalgo Miguel Hidalgo Venustiano Carranza Venustiano Carranza Celaya Celaya Guanajuato Guanajuato Guanajuato Guanajuato Irapuato Irapuato Irapuato Irapuato Leo´ n Leo´ n Leo´ n Leo´ n Salamanca Salamanca Acapulco de Jua´rez Acapulco de Jua´rez Acapulco de Jua´rez Acapulco de Jua´rez Acapulco de Jua´rez Chilpancingo de los Bravo Chilpancingo de los Bravo Chilpancingo de los Bravo Chilpancingo de los Bravo Chilpancingo de los Bravo Iguala de la Independencia Iguala de la Independencia Iguala de la Independencia Iguala de la Independencia Guadalajara Guadalajara Guadalajara Guadalajara Guadalajara Puerto Vallarta Puerto Vallarta Puerto Vallarta Puerto Vallarta Puerto Vallarta
+
+46
+
+138 El Informador
+
+Jalisco
+
+139 El Occidental
+
+Jalisco
+
+140 Jornada Jalisco
+
+Jalisco
+
+141 El Informador
+
+Jalisco
+
+142 El Occidental
+
+Jalisco
+
+143 Jornada Jalisco
+
+Jalisco
+
+144 El Informador
+
+Jalisco
+
+145 El Occidental
+
+Jalisco
+
+146 Jornada Jalisco
+
+Jalisco
+
+147 Mural
+
+Jalisco
+
+148 Ocho Columnas
+
+Me´xico
+
+149 Adelante Noticia
+
+Me´xico
+
+150 Ocho Columnas
+
+Me´xico
+
+151 Ocho Columnas
+
+Me´xico
+
+152 El Sol de Toluca
+
+Me´xico
+
+153 Ocho Columnas
+
+Me´xico
+
+154 Adelante Noticia
+
+Me´xico
+
+155 Ocho Columnas
+
+Me´xico
+
+156 Adelante Noticia
+
+Me´xico
+
+157 Ocho Columnas
+
+Me´xico
+
+158 Adelante Noticia
+
+Me´xico
+
+159 Adelante Noticia
+
+Me´xico
+
+160 Ocho Columnas
+
+Me´xico
+
+161 Adelante Noticia
+
+Me´xico
+
+162 El Sol de Toluca
+
+Me´xico
+
+163 Ocho Columnas
+
+Me´xico
+
+164 Ocho Columnas
+
+Me´xico
+
+165 Ocho Columnas
+
+Me´xico
+
+166 Ocho Columnas
+
+Me´xico
+
+167 El Sol de Cuautla
+
+Morelos
+
+168 El Sol de Cuernavaca
+
+Morelos
+
+169 La Unio´n
+
+Morelos
+
+170 El Sol de Cuautla
+
+Morelos
+
+171 El Sol de Cuernavaca
+
+Morelos
+
+172 La Unio´n
+
+Morelos
+
+173 El Sol de Cuernavaca
+
+Morelos
+
+174 La Unio´n
+
+Morelos
+
+175 Crucero
+
+Nuevo Leo´n
+
+176 Crucero
+
+Nuevo Leo´n
+
+177 El Norte
+
+Nuevo Leo´n
+
+178 Crucero
+
+Nuevo Leo´n
+
+179 El Norte
+
+Nuevo Leo´n
+
+180 Crucero
+
+Nuevo Leo´n
+
+181 El Norte
+
+Nuevo Leo´n
+
+182 El Norte
+
+Nuevo Leo´n
+
+183 Diario de Quere´taro
+
+Queretaro
+
+184 El Sol de San Juan del R´ıo Quere´taro
+
+Tlaquepaque Tlaquepaque Tlaquepaque Tonala´ Tonala´ Tonala´ Zapopan Zapopan Zapopan Zapopan Atizapa´n de Zaragoza Ecatepec de Morelos Ecatepec de Morelos Huixquilucan Metepec Metepec Naucalpan de Jua´rez Naucalpan de Jua´rez La Paz La Paz Texcoco Tlalnepantla de Baz Tlalnepantla de Baz Toluca Toluca Toluca Tultitla´n Cuautitla´n Izcalli Valle de Chalco Solidaridad Cuautla Cuautla Cuautla Cuernavaca Cuernavaca Cuernavaca Jiutepec Jiutepec Apodaca San Pedro Garza Garc´ıa San Pedro Garza Garc´ıa Guadalupe Guadalupe Monterrey Monterrey San Nicola´s de los Garza Quere´taro Quere´taro
+
+47
+
+185 Noticias Quere´taro 186 El Sol de San Luis 187 El Sol de San Luis 188 El Sol de San Luis 189 Diario Presente 190 El Heraldo de Tabasco 191 Novedades de Tabasco 192 Tabasco Hoy 193 Progreso Hoy
+
+Queretaro San Luis Potos´ı San Luis Potos´ı San Luis Potos´ı Tabasco Tabasco Tabasco Tabasco Yucatan
+
+Quere´taro Ciudad Valles San Luis Potos´ı Soledad de Graciano Sa´nchez Centro Centro Centro Centro Me´rida
+
+48
+
+List of Tables
+1 Dimensionality of Bias . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2 Classiﬁer confusion matrix . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3 Competitiveness by Turnover in 2012 Municipal Elections . . . . . . . . . . . . . . . . . . 16 4 Sign of Bias Favoring Incumbent Party during Elections (BFIP) . . . . . . . . . . . . . . . 19 5 Variables causing potential bias . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 6 OLS Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+49
+
+List of Figures
+1 Municipalities voting evolution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 2 Relations between variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 3 Competitiveness and partisan coverage during campaigns . . . . . . . . . . . . . . . . . . . 24 4 Evolution of coverage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 5 Bias favoring incumbent party during campaigns . . . . . . . . . . . . . . . . . . . . . . . 29 6 Evolution of bias favoring incumbent’s . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 7 Bias favoring incumbent party and Partisan coverage during campaigns . . . . . . . . . . . 33
+50
+
+References
+Acemoglu, D., Naidu, S., Restrepo, P., and Robinson, J. A. (2012). Democracy, public policy and inequality. American Political Science Review, 106:495–516.
+Acemoglu, D., Naidu, S., Restrepo, P., and Robinson, J. A. (2014). Democracy does cause growth. Working Paper NBER.
+Anderson, S. P. and McLaren, J. (2012). Media mergers and media bias with rational consumers. Journal of the European Economic Association, 10(4):831–859.
+Ansolabehere, S., Lessem, R., and Snyder, J. M. (2006). The orientations of newspaper endorsements in u.s. elections, 1940-2002. The Quarterly Journal of Political Science, 1:393–404.
+Baron, D. P. (2006). Persistent media bias. Journal of Public Economics, 90:1–36.
+Bernhardt, D., Krasa, S., and Polborn, M. (2008). Political polarization and the electoral effects of media bias. Journal of Public Economics, 92:1092–1104.
+Besley, T. and Prat, A. (2006). Handcuffs for the grabbing hand? media capture and government accountability. American Economic Review, 96, No. 3:720–736.
+Chandra, A. (2009). Targeted advertising: The role of subscriber characteristics in media markets. The Journal of Industrial Economics, LVII:58–84.
+Chiang, C. F. and Brian, K. (2008). Media bias and inﬂuence: Evidence from newspaper endorsements. Knight, Brian G., and Chun-Fang Chiang. 2008. “Media Bias and Inﬂuence: Evidence from Newspa- per Endorsements.” National Bureau of Economic Research Working Paper 14445.
+DellaVigna, S. and Kaplan, E. (2007). The fox news effect: Media bias and voting. The Quarterly Journal of Economics, 122, No. 3:1187–1234.
+Di Tella, R. and Franceschelli (2011). Government advertising and media coverage of corruption scandals. American Economic Journal: Applied Economics, 3:119–151.
+Djankov, S., Caralee, M., Nenova, T., and Shleifer, A. (2003). Who owns the media? Journal of Law and Economics, 46(2):341–382.
+Druckman, J. N. (2005). Media matter: How newspapers and television news cover campaigns and inﬂuence voters. Political Communication, 22:463–481.
+Durante, R. and Knight, B. (2012). Partisan control, media bias, and viewer responses: Evidence from berlusconi’s italy. Journal of the European Economic Association, 10:451–481.
+Ellman, M. and Germano, F. (2009). What do the papers sell? a model of advertising and media bias. The Economic Journal, 119:680–704.
+Erikson, R. S. (1976). The inﬂuence of newspaper endorsements in presidential elections: The case of 1964. American Journal of Political Science, 20:207–233.
+Gambaro, M. and Puglisi, R. (2009). What do ads by? daily coverga of listed companies on the italian press. Universita` Degli Studi Di Milano, Working Paper.
+51
+
+Gans, J. S. and Leigh, A. (2012). How partisan is the press? multiple measures of media slant. The Economic Record, 88:127–147.
+Gehlbach, S. and Sonin, K. (2014). Government control of the media. Journal of Public Economics, 118:163–171.
+Gentzkow, M., Petek, N., Shapiro, J. M., and Sikinson, M. (2014). Do newspapers serve the state? incumbent party inﬂuence on the us press, 1869-1928. Journal of the European Economic Association, 00:1–33.
+Gentzkow, M. and Shapiro, J. (2008). Competition and truth in the market for news. Journal of Economic Perspectives, 22, No. 2:133–154.
+Gentzkow, M. and Shapiro, J. M. (2006). Media bias and reputation. Journal of Political Economy, 114:280– 316.
+Gentzkow, M. and Shapiro, J. M. (2010). What drives media slant? evidence from u.s. daily newspapers. Econometrica, 78, No. 1:35–71.
+Gerber, A. S., Karlan, D., and Bergan, D. (2009). Does the media matter? a ﬁeld experiment measuring the effect of newspapers on voting behavior and political opinions. American Economic Journal, 1, No. 2:35–52.
+Greene, K. F. (2011). Campaign persuasion and nascent partisanship in mexico’s new democracy. American Journal of Political Science, 55(2):398–416.
+Groseclose, T. and Milyo, J. (2005). A measure of media bias. The Quarterly Journal of Economics, 120:1191–1237.
+Ho, D. E. and Quinn, K. M. (2008). Measuring explicit political positions of media. Quarterly Journal of Political Science, 3:353–377.
+Hofstetter (1976). Bias in the news: A study of network coverage of the 1972 election campaign. Columbus: Ohio State University Press.
+Kahn, K. F. and Kenney, P. J. (2002). The slant of the news: How editorial endorsements inﬂuence campaign coverage and citizens’ view of candidates. The American Political Science Review, 96, No. 2:381–394.
+Kam, C. D. and Zechmeister, E. J. (2013). Name recognition and candidate support. American Journal of Political Science, 57, No. 4:971–986.
+Larcinese, V., Puglisi, R., and Snyder, J. M. (2011). Partisan bias in economic news: Evidence on the agenda-setting behavior of u.s. newspapers. Journal of Public Economics, 95:1178–1189.
+Lott, J. R. and Hasset, K. A. (2014). Is newspaper coverage of economic events politically biased. Unpublished working paper.
+McMillan, J. and Zoido, P. (2004). How to subvert democracy: Montesinos in peru. Journal of Economic Perspectives, 18(4):69–92.
+Milburn, M. A. (1991). Persuasion and Politics: The Social Psychology of Public Opinion. Paciﬁc Grove, CA.
+52
+
+Mullainathan, S. and Shleifer, A. (2005). The market for news. The American Economic Review, 95:1031– 1053.
+Perotti, R. (1996). Growth, income distribution, and democracy: What the data say. Journal of Economic Growth, 1:149–187.
+Price, V. and Zaller, J. (1993). Who gets the news? alternative measures of news reception and their implications for research. The Public Opinion Quarterly, 57, No. 2:133–164.
+Puglisi, R. and Snyder, J. M. (2011). Newspaper coverage of political scandals. The Journal of Politics, 73(3):931–950.
+Reuter, J. and Zitzewitz, E. (2006). Do ads inﬂuence editors? advertising and bias in the ﬁnancial media. The Quarterly Journal of Economics, 121:197–228.
+Robinson, J. A., Acemoglu, D., and Johnson, S. (2005). Institutions as a fundamental cause of long-run growth. Handbook of Economic Growth, 1A:386–472.
+Schiffer, A. J. (2006). Assessing partisan bias in political news: The case(s) of local senate election coverage. Political Communication, 23:23–29.
+Snyder, J. M. and Stro¨mberg, D. (2010). Press coverage and political accountability. Journal of Political Economy, 118(2):355–408.
+Stone, D. F. (2011). Ideological media bias. Journal of Economic Behavior & Organization, 78:256–271.
+53
+
+

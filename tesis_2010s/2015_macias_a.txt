@@ -1,0 +1,1775 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+ACTIVIDAD ECONÓMICA Y DAÑO AMBIENTAL: UN ANÁLISIS ESTRUCTURAL PARA MÉXICO
+ALFREDO MACÍAS BALMORI
+PROMOCIÓN 2013-2015
+ASESORES:
+ALFONSO MERCADO GARCÍA ÓSCAR ALBERTO FERNÁNDEZ CONSTANTINO
+JUNIO 2015
+
+Contenido
+INTRODUCCIÓN .......................................................................................................................................1 CAPÍTULO 1: FUNDAMENTOS TEÓRICOS ...........................................................................................3
+1.1 LA CURVA AMBIENTAL DE KUZNETS ......................................................................................3 1.2 EL MODELO INSUMO PRODUCTO ............................................................................................11 1.3 ESTUDIOS PREVIOS SOBRE EL TEMA......................................................................................12 CAPÍTULO 2: ESTRATEGIA EMPÍRICA...............................................................................................16 2.1 FUENTES DE INFORMACIÓN .....................................................................................................16 2.2 TRATAMIENTO DE LA INFORMACIÓN ....................................................................................17 2.3 MÉTODO DE CÁLCULO...............................................................................................................19
+2.3.1 FUNCIÓN DE PÉRDIDA .........................................................................................................21 CAPÍTULO 3: RESULTADOS .................................................................................................................25
+3.1 ESTADÍSTICA DESCRIPTIVA DE LA INFORMACIÓN RECOPILADA...................................25 3.2 ANÁLISIS DE DESCOMPOSICIÓN ESTRUCTURAL.................................................................32 3.3 ESCENARIOS AMBIENTALES.....................................................................................................41 CONCLUSIONES Y DISCUSIÓN............................................................................................................43 ANEXOS ...................................................................................................................................................48
+ANEXO 1...........................................................................................................................................48 ANEXO 2...........................................................................................................................................50 ANEXO 3...........................................................................................................................................51 ANEXO 4...........................................................................................................................................53 BIBLIOGRAFÍA........................................................................................................................................ 54 FUENTE DE LOS DATOS....................................................................................................................56
+
+INTRODUCCIÓN
+Empezando la década de los año 90, Grossman y Krueger (1991) propusieron por primera vez la existencia de la Curva Ambiental de Kuznets (CAK) según la cual a niveles bajos de producto per cápita el crecimiento de la riqueza iría acompañado de una mayor degradación ambiental, pero que una vez alcanzado cierto nivel de desarrollo, es decir, un alto nivel de producto per cápita, degradación y riqueza se disociarían y el daño ambiental disminuiría conforme aumenta el ingreso.
+A lo largo de las décadas de 1990 y 2000 se realizó gran cantidad de estudios tratando de probar o refutar la existencia de la CAK aplicando para ello varias técnicas estadísticas y econométricas (de los cuales varios son revisados en el capítulo 1). Sin embargo ninguna de ellas ha logrado establecer resultados contundentes sobre la comprobación o refutación de la CAK. Ello ha llevado a reformulaciones de la hipótesis, surgiendo así, al lado de la hipótesis tradicional de la CAK, la hipótesis revisada de la misma (véase p. ej. Stern (2004)). Al mismo tiempo nuevas aproximaciones empíricas han ido apareciendo para hacer frente a la cuestión de la CAK, entre ellas el análisis de descomposición estructural. La aplicación de esta técnica estadística a la evolución del daño ambiental permite mostrar qué efectos actúan en esta evolución, ya sean generados por cambios en la tecnología, la composición y/o la escala de la economía y en qué magnitud lo hacen. Dicha técnica puede ser aplicada a la CAK a partir del modelo insumoproducto (MIP) considerando las interrelaciones sectoriales de la economía y escenarios a partir de supuestos sobre el comportamiento de la demanda final.
+El objetivo del presente trabajo consta de dos partes: la primera trata de analizar la evolución de las emisiones contaminantes y fuentes de daño ambiental en México en el periodo 2003-2008 a partir de la hipótesis de la Curva Ambiental de Kuznets y la segunda consiste en plantear propuestas de mejora ambiental en el corto plazo tomando de base la economía del año 2008. Las dos partes se trabajan desde el modelo insumo-producto.
+El periodo de tiempo de análisis del año 2003 al 2008 se determinó en función de la información ambiental disponible para realizar el análisis insumo-producto. A partir de ello quedaron definidos dentro del estudio datos sobre las siguientes 6 emisiones contaminantes y fuentes de daño ambiental: gases de efecto invernadero, gases criterio, descarga de aguas residuales, generación de residuos peligrosos, sobreexplotación forestal y sobreexplotación pesquera.
+1
+
+De manera adicional se incluye información estadística del consumo de energía ya que – aun cuando no es propiamente información sobre fuentes de daño ambiental- sí está fuertemente correlacionado con el desempeño ambiental de la economía.
+Dentro del análisis intertemporal 2003-2008 se realizará un análisis de descomposición estructural para identificar cuál de los efectos está actuando y en qué magnitud para que se cumpla o no la hipótesis de la CAK en México. Dentro del análisis para el año 2008 se buscará establecer distintos escenarios ecológicamente más sustentables que el observado realmente a partir del cálculo de lo que habría tenido que ser el cambio en la estructura productiva y en la escala de la economía para cumplir con ciertas metas ambientales.
+Por cuestiones de disposición de datos, el análisis de descomposición estructural se realizará excluyendo de la generación de residuos peligrosos y la sobreexplotación forestal y pesquera. Para el caso del análisis del año 2008 se incluirán todos los rubros enunciados arriba.
+La hipótesis que busca corroborar este trabajo es la siguiente: el impulso tecnológico innovador que aconteció en México a raíz de la apertura comercial de los 90 llegó a su fin en la década de los 2000 generando con ello un estancamiento tecnológico que ha repercutido negativamente sobre la eficiencia ecológica de la economía, es decir, el rezago tecnológico ha hecho que las emisiones contaminantes se hayan incrementado en mayor cuantía de la que habría ocurrido por causa únicamente del incremento del tamaño de la economía.
+El primer capítulo presenta el marco teórico en torno a la CAK y al MIP. El capítulo segundo brinda una explicación del análisis de descomposición estructural, la descripción de los datos utilizados y el tratamiento hecho a los mismos. El capítulo tercero ofrece los resultados obtenidos. Finalmente se presenta la sección de conclusiones, una sección de anexos donde se detallan las estimaciones y la sección de bibliografía.
+2
+
+CAPÍTULO 1: FUNDAMENTOS TEÓRICOS
+En este capítulo se explican los dos fundamentos teóricos del trabajo; la hipótesis de la curva ambiental de Kuznets y el modelo insumo-producto. El capítulo concluye con una revisión crítica de los estudios que se han realizado sobre la aplicación de estos dos temas al caso mexicano.
+1.1 LA CURVA AMBIENTAL DE KUZNETS
+La curva ambiental de Kuznets (CAK) es una supuesta relación estadística entre el ingreso per cápita y la contaminación o daño ambiental per cápita1. La hipótesis de la CAK postula que la relación entre el producto per cápita y el daño ambiental per cápita tiene la forma de campana (U invertida), es decir, en la fases iniciales del desarrollo (bajo producto per cápita) el crecimiento del producto por habitante va acompañado de un creciente daño ambiental, pero llegado cierto nivel de ingreso (conocido como el “nivel de ingreso de quiebre” o “punto de quiebre”) el daño ambiental por habitante comenzaría a disminuir conforme se incrementa el producto per cápita2. Así, la hipótesis de la CAK establece que los países en desarrollo generarían un creciente daño ambiental conforme se incrementa su ingreso per cápita en las fases tempranas de desarrollo, pero los países desarrollados generarían un daño ambiental decreciente a medida que sigue creciendo su ingreso por habitante.
+En tanto una mera supuesta relación estadística la CAK no surgió con una teoría detrás de ella que la explique, y todavía hay intentos de desarrollo teórico al respecto. Por ello, dos cuestiones son necesarias abordar en torno a ella: a) si la supuesta relación estadística realmente se cumple y b) cuáles son los mecanismos que operan para que tal proceso ocurra.
+Respecto al primer punto, los estudios empíricos que se han realizado para diversos países arrojan varios resultados pero en general coinciden en lo siguiente: la relación en forma de campana efectivamente se cumple para el caso del dióxido de azufre, monóxido de carbono, óxidos de nitrógeno y materia negra (es decir, para los llamados gases criterio). En cuestión de
+1 Además de la contaminación per cápita se puede trabajar la CAK también con otros indicadores: porcentaje de la población afectada, concentración del contaminante en el ambiente o incluso volumen total de contaminación. (Cfr. FIELD y Field (2003), p. 457. En el presente trabajo se usa la contaminación per cápita por ser el indicador más utilizado en los estudios sobre el tema. 2 La referencia a Simon Kuznets proviene del hecho de que éste habría propuesto la misma relación entre crecimiento del ingreso y desigualdad en la distribución del mismo: al inicio del desarrollo el crecimiento de ingreso lleva aparejado el aumento de su concentración, pero habiendo alcanzado una fase superior de desarrollo la desigualdad disminuiría conforme sigue incrementándose el producto per cápita. (Véase KUZNETS (1995)).
+3
+
+desforestación y presencia de contaminantes en el agua también tiende a cumplirse. En materia de residuos sólidos urbanos y emisiones de gases de efecto invernadero, especialmente en el dióxido de carbono, la relación estadística no apunta a su cumplimiento. Al respecto Navarrete et al. (2009) resume los resultados de alrededor de 30 trabajos empíricos sobre la CAK y donde en términos generales se ve la tendencia aquí descrita. Stern et al. (1996) también ofrece un resumen de los estudios pioneros en el estudio de la CAK y converge al mismo resultado mencionado. Sin embargo, el resultado de que la CAK se cumpla para los casos dichos ha de tomarse con precaución. Stern (2004) muestra las posibles fallas de los métodos de estimación econométrica, lo cual llevaría a que los resultados de tales estudios no fueran del todo verdaderos y/o precisos.3
+Existe una tendencia vaga en la que el punto de quiebre de la deforestación ocurre antes que el quiebre para gases criterio, y que el quiebre para los contaminantes en el agua es anterior que para los del aire. Ahora, como ya se lo mencionó, varios estudios coinciden en que para el caso del dióxido de carbono parece no haber relación estadística; sin embargo algunos han encontrado que no es que no exista el punto de quiebre, sino que se halla a un nivel de ingreso más alto que los demás contaminantes4. Importante resaltar resulta aquí que hay estudios (véase p. ej. Grossman y Krueger (1991)) que han encontrado para el dióxido de carbono no una curva con forma de U invertida, sino con forma de N, cuya posible explicación sería la siguiente: en los países industrializados a raíz de la crisis del petróleo de los años 70 operó una reducción de la intensidad energética y por tanto de la intensidad de dióxido de carbono, sin embargo a partir de los año 80, una vez que la crisis petrolera hubo pasado, las economías desarrolladas entraron en una nueva fase de creciente intensidad energética y carbónica.
+El segundo punto a analizar son los mecanismos detrás de la CAK. Para esta discusión resulta útil traer a escena los conceptos del análisis de descomposición estructural (ADE). Según el ADE el cambio cuantitativo en las emisiones causantes de daño ambiental puede separarse en 3 efectos principales:
+3 “Las críticas econométricas a la CAK caen dentro de cuatro categorías principales: heteroscedasticidad, simultaneidad, sesgo por variables omitidas, y cuestiones de cointegración.” STERN (2004) p. 1429 4 YANDLE et al. (2002) y STERN et al. (1996) compilan los resultados de diversos estudios que han encontrado los puntos de quiebre para diversos contaminantes. HUANG et al. (2008), realiza estimaciones de la CAK para gases de efecto invernadero por país, mostrando el respectivo punto de quiebre para cada uno. Ahora, a pesar de que parece observarse la tendencia arriba descrita, de igual manera estos resultados han de tomarse con precaución dados todos los posibles fallos de estimación enunciados por STERN (2004): “…las diferencias en los puntos de quiebre que han sido encontrados para diferentes contaminantes pueden deberse, al menos en parte, a las diferentes muestras usadas.” p. 1426
+4
+
+- Efecto tecnología o intensidad: indica cómo varió la emisión de contaminantes por efecto de cambios en la contaminación generada por unidad de producto bruto. Este efecto a su vez puede descomponerse entre otros dos subefectos: 1) las mejoras tecnológicas que generan menos emisiones dentro del proceso productivo (eco-eficiencia), y 2) las mejores tecnológicas fruto de un uso de insumos más limpios (mezcla de insumos).5
+- Efecto estructura o composición: indica cómo varió la emisión de contaminantes por efecto de cambios en la estructura de la economía (ya sobre la estructura de la demanda final o sobre la estructura de la producción bruta total), es decir, cómo cambió la emisión de contaminantes en función de la participación relativa de actividades económicas sucias y limpias6.
+- Efecto escala: indica cómo varió la emisión de contaminantes por efecto del cambio de tamaño de la economía. Este efecto puede subdividirse en dos: 1) Efecto riqueza: el incremento del consumo per cápita, y 2) Efecto población: el crecimiento de la emisión como consecuencia del crecimiento del número de consumidores.
+Cada uno de estos efectos interviene, por si solo o combinado con los otros, en la posible explicación de la hipótesis de la CAK. El efecto tecnología podría explicar la CAK al mostrar que conforme un país se desarrolla (aumenta su producto per cápita) acumula capital –más y mejores máquinas pero también mayor conocimiento técnico- y por tanto también desarrolla su capacidad de innovación tecnología y por consiguiente se desarrollan tecnologías más limpias y se reducen los costos de mitigación del daño ambiental, por lo que superado cierto nivel de ingreso el daño ambiental comenzaría a disminuir dadas estas mejoras técnicas que fueron posibles gracias al crecimiento del ingreso7.
+5 Cuando se mide el efecto intensidad para toda una economía (emisiones contaminantes por unidad de producto) ocurre que las variaciones en la intensidad pueden venir ya sea de cambios en la tecnología (hubo una mejora tecnológica que permite generar menos emisiones por unidad de producto) o por cambios en la estructura productiva (las actividades sucias reducen su participación en el producto). Sin embargo, cuando se analiza la economía por sectores productivos (y asumiendo que a su vez cada sector es homogéneo y no está compuesto a su vez por subsectores) entonces el cambio en la intensidad de cada sector productivo solo es generado por cambios en la tecnología, es decir, efecto intensidad y efecto tecnología se corresponden. 6 “En última instancia, todos los impactos ambientales pueden ser vistos como resultado de decisiones de consumo… Esto justifica la insistencia de algunos autores en que el análisis de una posible CAK debe enfocarse en la evolución de las estructura de consumo de una nación, y no tanto estar basada en la evolución de la estructura de la producción.” ROCA (2003), p. 8 7 En el caso específico de los recursos no renovables la explicación de la CAK vendría del hecho de que conforme un país se industrializa aumentaría su tasa de extracción de este tipo de recursos, luego, cuando el recurso comienza a
+5
+
+Sin embargo, lo que en un primer momento pudiera parecer ser una CAK impulsada por
+las mejoras tecnológicas podría terminar no siendo así cuando se le ve con mayor detenimiento.
+Yandle et al. (2002) cita un estudio de Hettige et al. (1992) en que parece observarse la CAK en
+varios países, no obstante muestran que si bien la contaminación por unidad de producto total ha disminuido –lo que parecería indicar que la tecnología de toda la economía se ha vuelto más
+limpia-, la intensidad de contaminación por unidad de producto manufacturero se ha mantenido constante8. Esto indica que la CAK se estaría cumpliendo no porque la tecnología se esté
+volviendo más limpia, sino porque las actividades económicas sucias (la industria) estarían
+perdiendo peso relativo respecto a las actividades limpias (servicios), es decir, debido a un efecto
+estructura y no a un efecto tecnología.
+Ahora, el efecto estructura puede enfocársele desde dos perspectivas: estructura de la
+producción bruta y estructura del consumo. El efecto estructura a partir de la producción
+generaría la CAK mediante el siguiente mecanismo: en las fases iniciales de desarrollo las
+economías son principalmente agropecuarias, luego cuando comienza la industrialización el
+producto per cápita comienza a aumentar pero también lo hace la contaminación per cápita
+generada pues las industrias son en general más sucias que las actividades agrícolas y ganaderas;
+finalmente, una vez el país ha alcanzado un alto grado de desarrollo industrial comienza a darse
+una transición hacia el sector servicios, y como los servicios –se piensa- en general tienden a ser
+más limpios que las industrias, comenzaría por tanto una disminución de la contaminación generada per cápita9.
+La CAK explicada por el efecto estructura de la producción tendría sustento empírico en
+el hecho de que el punto de quiebre para el caso de la deforestación (actividad asociada a una
+economía mayormente agrícola) parece hallarse por debajo del punto de quiebre para los gases
+criterio (asociados a las industrias), y que éste a su vez se encuentra por debajo del supuesto
+volverse escaso y por tanto los costos de extracción se vuelven cada vez mayores habría un giro tecnológico hacia el reciclaje, el cual reduciría la tasa de extracción y por tanto el agotamiento del recurso. Otro punto a resaltar es el llamado “efecto rebote” mediante el cual las ganancias tecnológicas se perderían por efecto del incremento en la demanda: las mejoras tecnológicas llevan a que se requieran menos insumos para generar una unidad de producto, pero esto podría llevar –dada la reducción de costos de producción implícita- a que la demanda de insumos se incrementase más que proporcionalmente a la reducción de los requerimientos tecnológicos, llevando así a que se consuman más insumos y por tanto a que haya más emisiones contaminantes. Así habría más emisiones no “a pesar de” sino “gracias a” el desarrollo tecnológico. 8 Cfr. YANDLE et al. (2002), p. 8 9 Sin embargo, “…ello no explicaría la reducción de estas presiones [ambientales] en términos absolutos a menos que se supusiera que los sectores que son ambientalmente más problemáticos producen bienes inferiores.” ROCA (2003), p. 4.
+6
+
+punto de quiebre para los gases de efecto invernadero (los cuales están asociados principalmente a la generación electricidad y los transportes, éste último un servicio).
+Sin embargo un contraargumento contra la CAK generada por el efecto estructura sería la hipótesis de “paraíso de contaminación” y el hecho de que a partir de la teoría de la ventaja comparativa se tiene que llegar al resultado de que “la intensidad ambiental de la producción doméstica depende parcialmente en la intensidad ambiental de las importaciones y viceversa”10: los países desarrollados al alcanzar cierto nivel de ingreso per cápita y por tanto de bienestar buscarían deshacerse de las actividades económicas sucias y en consecuencia comenzará un traslado de ciertas actividades industriales hacia los países subdesarrollados. Con este traslado de parte de la producción industrial al mundo en desarrollo la porción de los servicios dentro de las economías desarrolladas aumentaría y entonces la contaminación per cápita disminuiría llevando a que se cumpliera la CAK11. Sin embargo los países subdesarrollados receptores de esta industria mudada tendrían cada vez mayores emisiones contaminantes per cápita, violando la hipótesis de la CAK y el cual es el resultado que tiende empíricamente a ser observado en este tipo de países. Así, la CAK se cumpliría en los viejos países industriales precisamente porque se viola en los nuevos.
+La evidencia que soportaría la hipótesis del paraíso de contaminación y con ello la CAK para los países desarrollados basada en el efecto estructura es variada. Jáuregui et al. (2010) mencionan que Waldkirch y Gopinath (2004) encuentran que aquellas industrias en que los niveles de inversión extranjera directa y contaminación atmosférica están directamente relacionados representan el 40% del total de la IED, y que ésta industrias también representan el 30% del producto bruto, situación que parece confirmar la hipótesis del paraíso de contaminación. También Stern et al. (1996) indica que “…la intensidad energética de las importaciones de los EU ha estado incrementándose. Ésta es una manera con la cual los EU han logrado reducir la intensidad energética de su producto durante los últimos 20 años”12; situación que apunta a que la CAK en EU parece cumplirse a costa de violarse en sus socios comerciales. De ser esto así, concluyen Stern et al. (1996), “…no es claro que el mundo en su conjunto pueda
+10 STERN et al. (1996), p. 1556 11 Esto siempre y cuando los servicios fueran en general más limpios que las industrias, situación que no se cumple del todo pues hay servicios (como el transporte) que llegan a tener intensidades de contaminación más grandes que las industrias tenidas generalmente como contaminantes (metálica, petroquímica, etc.). 12 Ibíd. p. 1155
+7
+
+alcanzar una transformación similar”13, o sea, los países desarrollados pueden trasladar a los
+subdesarrollados sus industrias sucias, pero éstos a su vez ya no las pueden trasladar a otros
+lados. Por otra parte Jáuregui et al. (2010) mencionan que Kahn (2001) encuentra que el nivel de
+contaminación de los bienes importados por EU desde México ha ido disminuyendo, mientras
+que Gallagher (2004) encuentra que la producción de las industrias más contaminantes decreció
+en México más rápido de lo que lo hizo en los EU, situaciones ésta y la anterior que inducen a
+rechazar la hipótesis del paraíso de contaminación para México.
+Desde la perfectiva del consumo la CAK estaría actuando a partir del siguiente
+mecanismo: en las primeras etapas de desarrollo de un país aumentar el consumo per cápita es la
+principal prioridad, tanto así que se está dispuesto a sacrificar la calidad ambiental con tal de
+conseguir ese objetivo. Pero una vez que la sociedad ha alcanzado un alto grado de desarrollo y las necesidades básicas de consumo han quedado satisfechas14 las preferencias de consumo
+cambian: la calidad ambiental, que antes no era tenida en cuenta, es considerada ahora como un
+bien deseable y la sociedad está dispuesta ahora a pagar por ella, es decir, la calidad ambiental ya forma parte de las preferencias de los individuos15. Así, el crecimiento per cápita del ingreso
+proveería los dos elementos necesarios para mejorar la calidad ambiental: generaría una demanda
+por ella y proveería los insumos materiales necesarios para alcanzarla. Entonces, con una
+demanda creciente por calidad ambiental y con recursos crecientes para generarla la economía comenzaría a producirla16.
+13 Ibíd. p. 1156 14 Esta es una de las 4 condiciones que Aguayo (2011) menciona necesarias para que se cumpla la CAK: “…una curva de Kuznets ambiental puede producirse con incrementos en el ingreso de una sociedad si se satisfacen cuatro condiciones: 1) la utilidad marginal del consumo es constante o decae; 2) es creciente la inconveniencia de la contaminación; 3) está aumentando el daño marginal de la contaminación, y 4) el costo marginal de mitigar la contaminación va en aumento. AGUAYO (2011) p. 102-103 15 MARTÍNEZ (1995) discute cómo es que las preferencias por un medio ambiente limpio hacen aparición en una sociedad y cómo la calidad ambiental puede adquirir el carácter de un bien de lujo. 16 Por otro lado ROCA (2003) discute cómo aun cuando el incremento del ingreso pudiera llevar a que los individuos tuvieran mayores preferencias por un medio ambiente limpio, esto no es suficiente para que efectivamente ocurra una reducción del daño ambiental: en primer lugar “…es posible que el incremento en el consumo agregado pueda conducir a situaciones en las que la dificultad de mejorar la calidad ambiental también se haya incrementado. Este efecto podría bien anular el hecho de que existan preferencias a favor de un alto nivel de calidad ambiental.” (p. 6); por otra parte el hecho de que exista desigualdad de ingreso en las sociedades llevaría a dos posibles desviaciones de la CAK: 1) los estratos de altos ingresos en vez de buscar una mejora general del ambiente buscarían solo comprar una mejora parcial para ellos (v. gr. Si el agua está contaminada en vez de buscar remediar esa situación comprarían agua embotellada); 2) buscarían huir del daño ambiental en vez de remediarlo (v gr. Si un área urbana tiene problemas ambientales los ricos se mudarán a áreas sin problemas ambientales); 3) la capacidad de comprar calidad ambiental los lleva a generar daños ambientales que en ausencia del alto ingreso no habrían ocurrido (v. gr. El turismo en sitios naturales).
+8
+
+El análisis de la CAK desde la perspectiva del efecto escala implicaría asumir que en las fases iniciales del desarrollo la problemática ambiental es limitada simplemente porque la escala de la economía es suficientemente pequeña tal que no se ven rebasadas las capacidades del ecosistema para absorber los desechos de la actividad humana, luego, conforme se va industrializando la sociedad y conforme el tamaño de la economía va creciendo la capacidad de absorción del ecosistema sería rebasada, lo cual generaría el incremento de la contaminación per cápita; finalmente en una fase ya muy avanzada del desarrollo las emisiones per cápita se reducen porque la población sigue aumentando pero la economía disminuye por causa de los efectos negativos de los altos niveles de contaminación sobre el proceso productivo, es decir, la economía ha entrado en una fase de decrecimiento. Este es uno de los escenarios propuesto por los autores de Los Límites del Crecimiento17, el cual, sin embargo, por irreal que parezca ofrece importantes consideraciones en materia ambiental.
+Finalmente un punto importante a analizar dentro de la CAK es el papel de las instituciones18. Varios estudios19 insisten en que es el papel de las instituciones y del reforzamiento de los derechos de propiedad privada lo que permite explicar la CAK: conforme una economía se desarrolla va desarrollándose también su preferencia por la calidad ambiental. Esta nueva preferencia por un medio ambiente limpio implica que debe existir un precio para este nuevo bien, y tal precio solo puede existir si el medio ambiente asume la calidad mercancía, situación que a su vez solo puede pasar si existen derechos de propiedad sobre los activos ambientales y existen instituciones que permiten que tales derechos se cumplan y que permiten también que los mercados funcionen eficientemente. En este tenor la CAK puede verse como un tránsito de la propiedad comunal de los bienes ambientales (en que la calidad ambiental no tiene precio) a la propiedad privada de los mismos, y es en este sentido, afirman Yandle et al. (2002) que “…debido a que las fuerzas del mercado determinarán en última instancia el precio de la calidad ambiental, las políticas que permitan a las fuerzas del mercado operar son de manera inequívoca positivas. La búsqueda de una auténtica protección ambiental es una búsqueda por
+17 Cfr. MEADOWS et al. (1972). 18 STERN (2004) sostiene que hay “causas subyacentes” como “la regulación ambiental, la precaución, y la educación” (p. 1421) que pueden ser factores explicativos de la posibilidad de la CAK pero que no podrían actuar sobre la economía más que vía los efectos tecnología, composición y escala. Estas causas subyacentes entrarían dentro de lo que aquí se ha llamado instituciones. 19 Cfr. YANDLE et al. (2002)
+9
+
+alentar los derechos de propiedad y los mercados.”20 Frente a esta postura estaría el argumento de Roca21 de que la calidad ambiental es un bien público y por tanto su provisión no se define en el mercado sino en la política, es decir, la mejora ambiental sí viene dada por el desarrollo de ciertas instituciones, pero éstas no serían tanto económicas sino políticas.
+Todo lo anterior en cuanto refiere a la tradicional hipótesis de la CAK. Ahora, Stern argumenta que “usando varias líneas de evidencia, la mayoría de los estudios sufren de mala especificación econométrica. El uso de métodos más apropiados tiende a indicar puntos de quiebre más altos y la posibilidad de una curva monotónica para la mayor parte de los contaminantes,”22 o sea que “cuando realmente tomamos en cuenta los estadísticos de diagnóstico y las pruebas de especificación y usamos técnicas apropiadas, encontramos que la CAK no existe.”23 Surge entonces una reformulación de la hipótesis, la “CAK revisada”, basada en los siguientes resultados obtenidos una vez que se hubieron corregido las inconsistencias econométricas de los estudios previos: 1) con el crecimiento del ingreso per cápita se observa una disminución en la emisión de los “viejos contaminantes” (principalmente los gases criterio) precisamente por ser viejos, es decir, por pertenecer a fases ya rebasadas de la evolución de la técnica productiva; pero las emisiones aumentan en el caso de los “nuevos contaminantes” (gases de efecto invernadero y químicos cancerígenos) precisamente por pertenecer a la vanguardia de la técnica productiva y estar siendo asimilados en cada vez mayor medida por las economías, de tal manera que la toxicidad en conjunto de las economías va en aumento debido a que con el transcurso del tiempo los “nuevos tóxicos” van desplazando a los “viejos”. 2) Existe una tendencia general independiente del nivel de ingreso a mejorar la eco-eficiencia de los procesos productivos, de tal manera que –si bien primero ocurre en el mundo desarrollado y después en el subdesarrollado- la toxicidad general de la economía tiende a descender no importando en que rango de ingreso se halle el país. La existencia o no de la CAK revisada dependerá de cuál de estos dos efectos predomine: “En economías de lento crecimiento, el cambio tecnológico reductor de emisiones puede contrarrestar el efecto escala sobre las emisiones causado por el incremento del ingreso per cápita. Como resultado de esto, reducciones sustanciales en las emisiones per cápita de azufre han sido observadas en muchos países de la OCDE en las últimas décadas.”24
+20 Ibid. p. 18 21 Cfr. ROCA (2003) y ROCA y Serrano (s/f) 22 STERN (2004), p. 1431 23 Ibíd. p. 1420 24 Ibid. p. 1435
+10
+
+1.2 EL MODELO INSUMO PRODUCTO
+Ya el propio Leontief25 había mostrado cómo el modelo insumo-producto puede ser utilizado para analizar cuestiones ambientales mediante la extrapolación de los supuestos con que trabaja el insumo-producto al ámbito de la contaminación. Estos supuestos serían los siguientes:
+- Tecnología Leontief: la función de producción de cada sector productivo de la economía es de complementos perfectos, es decir, no existe sustituibilidad entre insumos, y llevando más al extremo el argumento tampoco habría sustituibilidad entre capital y trabajo. Este tipo de función de producción lleva implícito el hecho de que los costos marginales serán constantes e iguales a los costos variables medios26.
+- La parte del capital que pasa a formar parte del costo de producción y por tanto del precio no forma parte del análisis, es decir, todos los costos son variables.
+- Los precios se fijan mediante la adición de un margen de ganancia sobre los costos, es decir, no hay competencia perfecta.
+Es a partir del primer punto que la contaminación puede introducirse en el modelo: la emisión contaminante puede verse como un insumo más que se requiere para generar la producción, y que además se requiere en una proporción fija como el resto de los insumos. También puede verse a la contaminación como un producto generado en el proceso de producción (solo que en este caso no sería un bien sino un mal), el cual se produce en una proporción fija respecto a los insumos.
+Las características del modelo insumo-producto hacen que todas las relaciones entre insumos, productos y contaminación sean lineales, razón por la cual puede trabajarse el modelo convenientemente mediante álgebra lineal.
+25 Cfr. LEONTIEF (1970) 26 Esta situación no es tan extraña como la teoría microeconómica neoclásica asume –ya que ésta asume en general costos marginales curvos- y es más bien la situación que la teoría microeconómica postkeynesiana considera como la realmente existente en el rango relevante de producción. Pero aun asumiendo que la verdadera estructura de la producción fuese tal que generase costos curvos el modelo insumo-producto no pierde validez: la estructura lineal de costos puede verse como la aproximación de primer orden hecha en torno a un punto de la función de costos; y como el análisis insumo-producto que se realiza en este trabajo es de corto plazo bien puede entonces la aproximación de primer orden dar cuenta del comportamiento real de la economía.
+11
+
+1.3 ESTUDIOS PREVIOS SOBRE EL TEMA
+En este apartado se hace un recuento de aquellos estudios que han tratado de dar respuesta a la pregunta sobre la existencia de una CAK para México o que han aplicado el análisis insumoproducto y/o el análisis de descomposición estructural en materia ambiental para México.
+Mercado y Fernández (1998) y (2005) incursionan en la determinación de los niveles de contaminación de la economía mexicana según sector productivo. Para ello utilizan la información proveniente del Toxical Chemical Release Inventory de los EU aplicada al caso mexicano y logran obtener el volumen y la intensidad de contaminación para cada sector industrial desagregada por tamaño de la empresa y por entidad federativa generadora. Ya desde estos trabajos se hace evidente la dificultad en la construcción de un inventario de contaminantes para México según la actividad económica generadora. Esta limitante perseguirá a todos los estudios sobre contaminación hechos sobre México, incluido el presente trabajo.
+En lo que refiere en específico a la CAK, Jáuregui et al. (2010) buscan probar esta hipótesis para México utilizando datos estatales para 1993 y 2000 y aplicando –dada la carencia de información ambiental a nivel estatal- el Sistema de Proyección de la Contaminación Industrial (IPPS por sus siglas en inglés) elaborado con información industrial de los Estados Unidos al caso mexicano. Los autores llegan a la conclusión de que efectivamente existe una CAK para México pero que el nivel de ingreso del país aún no es lo suficientemente elevado como para alcanzar la parte descendente de la curva.
+Sin embargo, dos limitantes ofrece este estudio: solo analiza la toxicidad de los contaminantes de origen industrial, lo cual le lleva a dejar de lado las actividades económicas no industriales (como el sector transporte) que también son grandes fuentes generadoras de contaminantes y por tanto determinantes de la CAK. Por otro lado, la aplicación del IPPS (elaborado con datos industriales de 1987 de EU) supone que la intensidad de contaminación mexicana es igual a la de EU y que además se mantuvo constante a lo largo del tiempo. Esto resulta de suma importancia pues el análisis de la CAK trata de captar la evolución de ciertas variables en el tiempo, y si a partir de esta metodología se buscara detectar la influencia de los efectos tecnología, composición y escala, el efecto tecnología no se hallaría presente dada la construcción de los datos.
+En una tónica similar, Navarrete et al. (2009) hacen un análisis de existencia de la CAK para México utilizando la información de las estimaciones del Centro de Análisis de Información
+12
+
+de Dióxido de Carbono de los EU y concluyen que también existe una CAK para México para el dióxido de carbono, pero que el nivel de ingreso per cápita sitúa aún está por debajo del punto de quiebre27. Tanto este estudio como el anterior utilizan sin embargo técnicas econométricas convencionales que estarían sujetas a las críticas que hace Stern (2004), es por ello que para un entendimiento más profundo de la relación entre crecimiento y degradación ambiental se hace necesario recurrir a técnicas alternativas como el método insumo-producto y el análisis de descomposición estructural.
+Siguiendo esta aproximación alternativa Pablo Ruiz Nápoles (2011) realiza un estudio para México en el año 2003 sobre los gases de efecto invernadero utilizando la metodología insumo-producto. Sin embargo en su estudio Ruiz Nápoles considera a las emisiones contaminantes como externalidades de la producción de cada actividad económica, es decir, las emisiones contaminantes son consideradas como una producción de males que ha de restársele a la producción de bienes, y como costos de producción sociales adicionales que han de sumársele a los costos económicos privados; luego entonces analiza cuál es el verdadero valor del producto una vez ajustado por el costo de esa externalidad y no –como se ha hecho en este trabajo- cuál sería la reducción real del producto si se tratara de eliminar realmente ese daño ambiental (costo de mitigación). Bajo la perspectiva de su análisis Ruiz Nápoles obtiene que la producción negativa (producción de males) representa el 3.79% de la producción de bienes para 2003 y que de contabilizarse las emisiones contaminantes dentro de los costos privados éstos se incrementarían en 5.36%.
+En otro trabajo Ruiz Nápoles (2009) realiza una estimación de cuál sería el costo de abatimiento de las emisiones de gases de efecto invernadero para 2003 si México hubiese adoptado las inversiones en tecnologías limpias que realizó Canadá, obteniendo que para reducir a 0 las emisiones de GEI de los 15 subsectores industriales más contaminantes se requerirían gastos equivalentes al 8.45% del valor agregado de dichos subsectores. En este trabajo Ruiz Nápoles ha generado un escenario de reducción de emisiones de GEI mediante supuestos sobre el cambio en la tecnología; de manera similar el presente trabajo generará escenarios hipotéticos pero a partir de supuestos sobre cambios en la composición y escala.
+27 En cuanto a la especificación empírica de los trabajos citados Jáuregui et al. (2010) aplican una estrategia econométrica a partir de datos de panel, por su parte Navarrete et al. (2009) hacen un análisis a partir de series de tiempo. Por otro lado la información que Navarrete et al. utilizan proveniente del Centro de Análisis de Información de Dióxido de Carbono difiere en cuanto magnitud y tendencia de la del Inventario Nacional de Emisiones de Gases de Efecto Invernadero que es la utilizada en este trabajo.
+13
+
+Otro trabajo que ha abordado la temática de la CAK para México pero incluyendo el análisis de descomposición estructural es el de Francisco Aguayo (2011) que si bien no utiliza la metodología insumo-producto ya que estudia la economía en su totalidad y no dividida en sectores, obtiene conclusiones relevantes para el caso mexicano. Sus resultados perecen indicar que realmente existiría una CAK de GEI para México, pero que el país no ha podido alcanzar la parte descendente de la curva debido a que el estancamiento económico de las últimas décadas ha frenado la innovación tecnológica, además de que las oportunidades de mejora tecnológica que tuvo México a raíz de la apertura comercial han alcanzado ya su madurez; así, ambos factores han contribuido a que no hayan ocurrido nuevas mejoras sustanciales en la eficiencia energética del país. Ahora, si bien el estudio de Aguayo afirma al igual que Jáuregui et al. y Navarrete et. al. la existencia de la CAK para México (per sin haber alcanzado la parte descendente), la inclusión del análisis de descomposición estructural le permite identificar cuáles han sido los móviles de que no se esté aún en la fase de la mejora ambiental.
+Alejándose de la intensión de probar la CAK Aguayo y Gallagher (2005) realizan un análisis de descomposición estructural según tipo de industria para el periodo 1989-1999 para el caso del consumo de energía28. Aunque, como ya se lo mencionó más arriba, el consumo de energía no es propiamente una emisión contaminante sí está muy relacionado a éstas. Además la aplicación de las descomposición estructural permite identificar con detalle de qué actividad económica ha provenido la variación en el consumo de energía. En este sentido los resultados de estos autores sirven como guía o parámetro para comparar los obtenidos de este trabajo. Ellos encuentran que el consumo de energía en la industria disminuyó durante el periodo; para todos los sectores industriales de mayor consumo energético (industrias del hierro y el acero, química, azúcar, petroquímica, cemento y papel) el efecto tecnología fue positivo, es decir, en todos estos sectores hubo mejoras tecnológicas que permitieron reducir el consumo energético. En este sentido este trabajo es congruente con Aguayo (2005) en el hecho de que la apertura comercial de los años 90 fue un aliciente para la mejora tecnológica y por tanto para le eficiencia ecológica de la economía.
+28 En su trabajo AGUAYO y Gallagher (2005) calculan la intensidad energética como el cociente entre la energía consumida y el valor agregado de la actividad productiva. En el presente trabajo la intensidad de contaminación se calcula no como el cociente de la emisión contaminante de cierto sector entre el valor agregado del mismo, sino entre su producción bruta total.
+14
+
+Finalmente, para el caso específico de la aplicación del modelo insumo-producto conjuntamente con el análisis de descomposición estructural a la hipótesis de la CAK –que es el objetivo de este trabajo- no se tiene ningún estudio para el caso mexicano; sin embargo, como modelo para visualizar el método y los posibles resultados se tiene el estudio que Roca y Serrano hacen para España para contaminantes atmosféricos y gases de efecto invernadero. Ellos logran identificar la participación de los efectos que conducirían a una posible CAK en España. Según ellos el efecto tecnología es benéfico en la mayoría de los casos, el efecto estructura tiene resultados variados mientras el efecto escala actúa totalmente en el sentido de incrementar las emisiones29. Estos resultados resultan congruentes con los enunciados por Stern (2004) para efectos de la versión revisada de la CAK: la tecnología apunta a una mejora de la eficiencia ecológica de largo plazo, la escala de la economía generará siempre incremento de las emisiones y la composición de la economía es la fuerza con menor impacto dentro de estas tres.
+29 El hecho de que AGUAYO y Gallagher (2005) para el caso de México y ROCA y Serrano (s/f) para el caso de España hayan encontrado efectos tecnología benéficos (mejoras técnicas que reducen las emisiones) es evidencia a favor de la CAK revisada explicada por STERN (2004), es decir, existe una tendencia general a la mejora tecnológica que aplica tanto a los países desarrollados como a los subdesarrollados.
+15
+
+CAPÍTULO 2: ESTRATEGIA EMPÍRICA
+Este capítulo se centra en explicar la estrategia empírica adoptada en este trabajo, describiendo primero los datos utilizados sobre las emisiones contaminantes incluidas en este estudio, exponiendo luego el tratamiento hecho a estos datos y finalmente explicando el método de cálculo que se siguió: el análisis de descomposición estructural y la función de pérdida social.
+2.1 FUENTES DE INFORMACIÓN
+En este apartado se detallan los pormenores sobre las siete emisiones contaminantes y fuentes de daño ambiental con las que trabaja este estudio.
+Gases de efecto Invernadero: del Inventario Nacional de Emisiones de Gases de Efecto Invernadero (INEGEI) que elabora la SEMARNAT se obtuvo la serie 1990-2010 de las emisiones de los seis gases que el Protocolo de Kyoto estableció como causantes del efecto invernadero30 expresados en cantidades de dióxido de carbono equivalente desagregadas según la actividad generadora, y cuya contabilidad lleva México a partir de ese año pues es el año base del Protocolo.
+Gases Criterio: del Inventario Nacional de Emisiones Atmosféricas que elabora la SEMARNAT se obtuvieron las emisiones de los 8 gases criterio (aquellos que son dañinos para la salud humana)31 para los años 2005 y 2008 expresadas en cantidades del respectivo gas desagregados según actividad generadora.
+Descargas de aguas residuales: del documento “Estadísticas del Agua en México” generado por CONAGUA se obtuvo el volumen de aguas residuales generadas y la materia orgánica contenida en esas aguas para el año 2002 desagregadas según actividad generadora. Del año 2003 en adelante solo se cuenta con la información del volumen de agua residual generada pero sin desagregar por actividad generadora.
+Generación de Residuos Peligrosos: de la información recabada por la SEMARNAT a través del “Registro como generador de residuos peligrosos” se obtuvo la cantidad acumulada generada de este tipo de residuos para el periodo 2004-2009 en conjunto.
+Sobreexplotación forestal: de las Cuentas Económicas y Ecológicas que elabora el INEGI se obtuvo la serie 2007-2011 de pérdida anual de recursos forestales expresados en
+30 Dióxido de carbono, metano, óxido nitroso, hidrofluorocarbonos, petafluorocarbonos y hexafluoruro de azufre. 31 Partículas suspendidas menores a 10 micras, partículas suspendidas menores a 2.5 micras, dióxido de azufre, monóxido de carbono, óxidos de nitrógeno, compuestos orgánicos volátiles, amoniaco y materia negra.
+16
+
+millones de metros cúbicos de madera en rollo (Mm3mr) y en hectáreas. La información expresada en Mm3mr pudo ser cotejada con la que aparece en el Anuario Estadístico de la Producción Forestal que elabora SEMARNAT.
+Sobreexplotación pesquera: de las Cuentas Económicas y Ecológicas que elabora el INEGI se obtuvo la serie 2007-2011 de la producción pesquera que supera el rendimiento máximo sostenible expresada en peso de la especie pescada. Para poder obtener la información en unidades monetarias se recurrió al Censo Económico 2008, y para cotejarla se recurrió a la base de datos de pesca que elabora la Comisión Nacional Pesquera.
+Consumo de Energía: del Sistema de Información Energética que elabora la Secretaría de Energía se obtuvo la serie 1965-2013 de consumo nacional de energía expresadas en unidades de energía y desagregada por actividad consumidora.
+Información macroeconómica: todos los datos de contabilidad nacional utilizados se obtuvieron de la Cuenta de Bienes y Servicios (varias series en varios años base) y de la Matriz Insumo Producto 2003 y 2008, base 2003 y 2008 respectivamente, que elabora el INEGI.
+2.2 TRATAMIENTO DE LA INFORMACIÓN
+Como se lo adelantó en la introducción, el presente estudio trabajará sobre los años 2003 y 2008; sin embargo, dadas las insuficiencias de la información ambiental hubieron de hacerse tratamientos a la información disponible para que tuviera la forma adecuada para el análisis de descomposición estructural y el método insumo-producto que se pretende aplicar.
+Año 2008: para este año se dispuso de información directa de la fuente para los casos de Gases de Efecto invernadero, Gases Criterio, Sobrexplotación Forestal, Sobreexplotación Pesquera y Consumo de Energía. Para el caso de Descarga de Aguas Residuales y Generación de Residuos Peligrosos se hizo lo siguiente:
+- Descarga de Aguas residuales: para el año 2002 se tiene la información de descarga de agua residual por tipo de industria y materia orgánica por tipo de industria. El dato que interesa no es tanto el volumen de agua residual generada sino la materia orgánica contenida en ella32. A partir de esto se calculó la materia orgánica vertida por unidad de
+32 Es la presencia de materia orgánica en el agua lo que determina parte de su contaminación. Como el oxígeno disuelto en el agua reacciona químicamente con la materia orgánica contenida en ella, mientras más materia orgánica disuelta en el agua haya menor oxígeno disponible quedará para los organismos que habitan en el agua, es decir,
+17
+
+agua descargada y se calculó la participación relativa de cada industria en el total de agua residual vertida en 2002, luego –y bajo el supuesto de que ni este coeficiente ni las participaciones relativas cambian con el tiempo, cuando menos no en el mediano plazose aplicaron esas participaciones relativas al dato del total de agua residual vertida de 2008 y luego se multiplicó el coeficiente de materia orgánica por unidad de agua vertida en 2002 por el resultado anterior y así se obtuvo la materia orgánica vertida por tipo de industria para 2008. - Generación de residuos peligrosos: como solo se dispone de la información para el periodo conjunto 2004-2009 por tipo de industria se procedió a dividir esta cantidad entre el número de años del periodo y obtener así lo que correspondería a un año en particular. Este procedimiento supondría que la generación de residuos peligrosos fue constante en cada industria a lo largo del periodo, el cual es un supuesto bastante irreal pero el cual tuvo que hacerse ante la carencia de mayor información para tratar de inferir un comportamiento diferente.
+Año 2003: Para este año solo se contó con información directa de la fuente para los casos de: Gases de Efecto Invernadero y Consumo de Energía. Para poder completar la información para los demás rubros se realizó lo siguiente:
+- Gases criterio: se utilizó la información de 2005. - Descargas de Aguas Residuales: se utilizó la información de 2002. - Generación de Residuos Peligrosos: se descartó esta información pues dado el método
+utilizado para 2008 se tendría la misma cantidad para 2003 y no se tendría ninguna variación en el tiempo qué analizar. - Sobreexplotación forestal: se descartó esta información pues el año más cercano con información era 2007. - Sobreexplotación pesquera: se descartó esta información pues el año más cercano era 2007
+La información proporcionada por cada una de las fuentes mencionadas viene según el tipo de actividad económica generadora; pero cada institución utiliza su propia clasificación de actividades económicas. Para poder hacer comparables las distintas fuentes de información se
+menos propicia será esa agua para la vida. En términos técnicos esta reacción del oxígeno con la materia orgánica en el agua se mide con dos indicadores: la Demanda Biológica de Oxígeno y la Demanda Química de Oxígeno.
+18
+
+procedió a homologar los distintos clasificadores con el Sistema de Clasificación Industrial de América del Norte versión 2007 que es el que utiliza el INEGI en la Matriz Insumo-Producto 2008.
+La información de las emisiones tiene distintos grados de desagregación según la fuente. Para efectos del presente trabajo es deseable tener la mayor desagregación posible; sin embargo, dada la heterogeneidad de la información el máximo nivel de desagregación con que se pudo trabajar la información ambiental fue a nivel subsector de actividad económica33. La Matriz Insumo Producto 2003 viene hecha con el clasificador SCIAN 2002, sin embargo a nivel subsector SCIAN 2002 y SCIAN 2007 no presentan diferencias.
+Para poder hacer comparables las MIP 2003 y 2008 se tuvo que deflactar la MIP 2003 para poderla tener a precios del 2008. Para ello se utilizaron los índices de precios implícitos de la Cuenta de Bienes y Servicios del INEGI para la variable de Producción Bruta Total. Con este índice se generó el vector de producción bruta total de la MIP 2003 a precios del 2008; luego la demanda final 2003 a precios de 2008 se calculó al multiplicar la matriz de Leontief 2003 por el vector de PBT 2003 a precios 2008. La matriz de Demanda Intermedia no fue necesario calcularla a precios de 2008 pues se partió del supuesto de que los coeficientes técnicos de la economía para 2003 se mantendrían iguales no importando el año base con el que se trabajara34.
+2.3 MÉTODO DE CÁLCULO
+Defínanse35 el vector de demanda final, de producción bruta total y la matriz de demanda intermedia como en la terminología tradicional de insumo-producto. Sea el vector columna de emisiones totales de contaminantes, con q tipos de contaminantes. Sea εkj la emisión del contaminante k por unidad de producto del subsector j para un total de n sectores. Sea la matriz de intensidades de contaminación, cada entrada de la cual es igual a εkj, por tanto tiene q renglones y n columnas. Esta matriz indica los requerimientos de emisiones del contaminante k
+33 El SCIAN tiene 5 niveles de desagregación, de menor a mayor: sector, subsector, rama, subrama y clase. Cfr. INEGI (2008). 34 DIETZENBACHER y Hoen (1998) exponen dos métodos para la deflactación de matrices insumo-producto dependiendo de la información disponible: el método de doble deflactación cuando se hallan disponibles el vector de producción bruta total y de demanda final a precios constantes pero no el de valor agregado; y el método RAS cuando los 3 anteriores se encuentran disponibles a precios constantes. Para el caso de la MIP 2003 de México no fue posible aplicar ninguno de los dos métodos ya que no se cuenta con la información necesaria. 35 Lo siguiente está basado en su mayor parte en ROCA y Serrano (s/f).
+19
+
+por unidad de demanda final del subsector j. De lo anterior se puede obtener la siguiente expresión:
+(1) Arreglando un poco los términos de la expresión se puede llegar a lo siguiente:
+Donde es un vector fila de 1’s y P es la población. A partir de esta expresión se pueden ver separadamente los efectos de la descomposición estructural: los dos primeros términos darían cuenta del efecto tecnología, efecto que a su vez puede ser descompuesto en dos subefectos: el efecto de la eco-eficiencia del cual daría cuenta la matriz de intensidad de contaminación, y el efecto de mezcla de insumos36 del cual daría cuenta la inversa de Leontief. El primer término entre paréntesis da cuenta del efecto estructura pues es un vector de las participaciones relativas de cada sector respecto del total de demanda final37. Finalmente los últimos dos términos dan cuenta del efecto escala, el cual a su vez se puede descomponer en dos subefectos: el efecto riqueza, es decir, el efecto provocado por el aumento del producto por habitante, y el subefecto población, es decir, el efecto causado por el simple incremento de la demanda final causado por el incremento de la población.
+El efecto total de las emisiones contaminantes estaría dado por la siguiente expresión:
+Donde los subíndices 0 y 1 incidan el tiempo. En este caso 2003 y 2008. Para facilitar la notación defínase a las matrices responsables del efecto tecnología como , al vector estructura o composición como y a los escalares que dan cuenta de la escala como S; así la expresión anterior queda:
+Esta variación puede expresarse como una suma de 3 términos directos y 4 términos interactivos de la siguiente manera38:
+36 “Input mix” Cfr. ROCA y Serrano (s/f) y STERN (2004). 37 “Output mix”. 38 Véase en el anexo 1 el detalle de la obtención de esta expresión
+20
+
+Esta expresión debe corregirse para eliminar el efecto ambiguo de los términos interactivos, lo cual se logra aplicando el llamado método refinado de Laspeyres39 consistente en que los términos de interacción (la variación simultánea de varias variables) se reparten proporcionalmente entre los efectos involucrados.
+Entones los respectivos efectos quedarían definidos como:
+La descomposición del efecto tecnología y del efecto escala en sus respectivos dos subefectos se realiza siguiendo la misma técnica.
+El mismo método explicado arriba puede igualmente aplicarse al caso de las emisiones per cápita con la única diferencia de que ahora ya no existiría el efecto población, es decir, todo el efecto escala estaría siendo causado por un incremento de la riqueza.
+Como se verá más adelante en la sección de resultados, el único efecto que muestra una tendencia clara y general es el efecto escala: las emisiones contaminantes son mayores pues la economía es mayor. A partir de esta se puede extender el análisis de insumo-producto para ver qué escala (pero también qué estructura) de la economía resulta ambientalmente más sustentable. Para ello se tiene que a partir de la expresión (1) se pueden generar diversos escenarios con una nueva (hipotética) demanda final Y’ (en escala y estructura) y obtenerse así un nuevo vector E’ de emisiones contaminantes y también una nueva tasa de sobreexplotación de los recursos naturales renovables.
+2.3.1 FUNCIÓN DE PÉRDIDA Una forma de valorar qué tan costosa puede ser una medida ambiental es midiendo la reducción del producto total que ello generaría. Otra forma de evaluar el impacto de medidas ambientales sería ya no solo ver la reducción del Y de la economía total, sino ver también en qué subsector se está experimentando la reducción.
+39 ROCA y Serrano (s/f), p. 18 21
+
+Para realizar esto se puede plantear una función de pérdida social. Una función de pérdida es una expresión que cuantifica la reducción del bienestar (o utilidad) de la sociedad por efecto de cambios en ciertas variables; en este caso por cambios en el producto neto de la economía. Esta función tendría tres características:
+- Valoraría más la reducción en el producto en unos subsectores que en otros aun cuando en términos monetarios sean de la misma magnitud.
+- Valoraría cada vez más las reducciones subsecuentes en el producto de una actividad (se valoraría menos la reducción del primer millón de pesos en el producto que la pérdida de otro millón a continuación de éste y así sucesivamente).
+- Valora la estabilidad, es decir, tanto reducciones como incrementos son penalizados.
+Dicha función podría asumir la siguiente forma, la cual tiene la ventaja de cumplir con las tres condiciones descritas y además de generar un problema de maximización con solución lineal:
+Donde wi es el peso que tiene el subsector dentro de la función de pérdida (a mayor valor de w mayor sería la valoración que tendría la sociedad por tal subsector; este peso se fija de manera arbitraria); Yj es el producto neto observado en 2008 en el subsector j, donde j=1,2…n el número total de subsectores de la economía, y δ es el cambio porcentual que experimentaría la demanda final del subsector y la cual es la variable de decisión. El problema de optimización40 consistiría en minimizar esta función sujeto a las siguientes restricciones:
+El primer tipo de restricción aplica al caso de la sobreexplotación de recursos renovables, para i=1,2….m el número de subsectores involucrados en el agotamiento de este tipo de recursos y rij es la correspondiente entrada de la matriz inversa de Leontief. Esta restricción muestra que la variación de la demanda final de los subsectores de acuerdo al factor δ respectivo debe ser tal que el valor bruto de la producción sea ecológicamente sustentable, es decir, un B tal que garantice que la variación en el acervo del recurso renovable es 041. Habrá tantas restricciones de este tipo
+40 Véase en el anexo 3 una exposición más detallada del problema de optimización y su solución. 41 En el anexo 2 se detalla el proceso de estimación de la producción bruta que necesitarían tener estos subsectores tal que garantizase que no hubiera sobreexplotación sobre los recursos renovables.
+22
+
+como subsectores de la economía involucrados en el agotamiento de los recursos renovables, en
+
+este caso serían m=4: Agricultura, Ganadería y Construcción para el caso de los recursos forestales y Pesca para el caso de los recursos pesqueros42.
+
+El segundo tipo de restricción aplica al caso de las emisiones contaminantes, donde
+
+k=1,2…q el número total de emisiones contaminantes consideradas, y donde las θkj son las entradas de la matriz de tecnología, esto es, de la matriz de requerimientos de contaminación por
+
+unidad de demanda final
+
+. Esta restricción muestra que la variación de la demanda
+
+final de los subsectores de acuerdo al factor δ respectivo debe ser tal que la producción bruta total
+
+de dichos sectores genere una cantidad de emisiones contaminantes preestablecida y considerada
+
+como meta ecológica ee. Habrá tantas restricciones de este tipo como tipos diferentes de contaminantes analizados, en este caso q=5: Gases de efecto invernadero, gases criterio, descarga
+
+de aguas residuales, generación de residuos peligrosos y consumo de energía.
+
+El problema lleva a las siguientes condiciones de primer orden:
+
+Del primer tipo de CPO se tendrían n, del segundo tipo se tendrían m y del tercero q condiciones. Esto genera un sistema cuadrado de n+m+q ecuaciones e igual número de incógnitas.
+Arreglando los términos de las CPO se puede llegar a la siguiente expresión matricial de las mismas:
+Donde es una matriz diagonal con los pesos relativos asignados a cada actividad económica, es una matriz diagonal con los valores absolutos de las demandas finales, es una matriz diagonal con las demandas finales, es una matriz mxn compuesta por los vectores extractores correspondientes a los m sectores involucrados directamente en la sobreexplotación de los
+42 Adicionalmente se podrían incluir en este tipo de restricción 2 subsectores que por cuestiones ambientales se desea que la variación de su producción bruta sea 0: 222 Suministro de agua y suministro de gas por ductos al consumidor final y 562 Manejo de desechos y servicios de remediación; el primero pues es la actividad que se encarga del tratamiento de aguas residuales y el segundo del manejo de los residuos peligrosos de otras industrias. Permitir una reducción en el producto bruto de estas actividades implicaría una regresión en materia ambiental. Así entonces tendremos finalmente m=6 restricciones de este tipo.
+23
+
+recursos renovables, y donde los vectores λ y μ son los respectivos multiplicadores de Lagrange. La solución del sistema nos dará las proporciones en que será necesaria variar la demanda Final de los subsectores de la economía que minimiza el valor de la función de pérdida y que permite cumplir con las restricciones ecológicas establecidas.
+24
+
+CAPÍTULO 3: RESULTADOS
+En este capítulo se explican los resultados de los cálculos, empezando por lo más sobresaliente de la estadística descriptiva, para en seguida revisar los principales hallazgos del análisis de descomposición, y finalmente abordar el análisis de los escenarios de reducción de las emisiones contaminantes.
+
+3.1 ESTADÍSTICA DESCRIPTIVA DE LA INFORMACIÓN RECOPILADA
+
+Una visión estática de todos los rubros ambientales considerados en este trabajo la muestra el
+
+siguiente cuadro.
+
+Cuadro 1
+
+EMISIONES CONTAMINANTES Y SOBREEXPLOTACIÓN DE RECURSOS RENOVABLES
+
+2008
+
+Unidadesa
+
+Economía Economía Procesos no productiva consuntiva económicos
+
+Total del sistema
+
+Gases de efecto invernadero
+Gases criterio Descarga de aguas residuales43 Generación de residuos peligrosos
+Sobreexplotación forestal
+
+Gg CO2 eq Mg Mg de MO
+Mg Mm3mr
+
+652,146 30,328,832 7,035,648
+
+136,206 16,062,189
+ND
+
+12,572,054
+-
+
+788,352 58,963,075 7,035,648
+
+283,267 18,609
+
+-
+
+6
+
+283,273
+
+-
+
+-
+
+4,154 14,455
+
+Sobreexplotación pesquera
+
+M$
+
+2,647
+
+-
+
+-
+
+2,647
+
+Consumo de energía
+
+PJ
+
+3,474
+
+1,437
+
+-
+
+4,911
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), (2015a) y (2015b), INEGI (2008), (2015a) y (2015c),
+
+CONAGUA (2003) y (2010), y SENER (2015). a Gg CO2 eq: gigagramos de dióxido de carbono equivalente; Mg: megagramos; Mg MO: megagramos de materia orgánica contenida en el agua descargada; Mm3mr: millones de metros cúbicos de madera en rollo; M$:
+
+millones de pesos; PJ: petajoules.
+
+Un primer esbozo del comportamiento a través del tiempo de las emisiones contaminantes en México es ver el comportamiento de largo plazo del consumo de energía (dada la relación directa existente entre emisiones y consumo de energía cuando la fuente principal de energía proviene de combustibles fósiles). Como se observa en la gráfica 1 el ingreso por habitante (I VAB/Pob) muestra una tendencia creciente de largo plazo, aunque con retrocesos en año de crisis y un estancamiento generalizado durante la “década perdida”. En cuanto a la intensidad energética del
+
+43 Se trata únicamente de aguas residuales no municipales. La información sobre aguas residuales municipales la genera CONAGUA; sin embargo no presenta para ellas el dato sobre materia orgánica contenida en ella, que es el dato relevante para este estudio. Es por esta razón que no se tiene información para el rubro de “economía consuntiva”.
+25
+
+producto (I PJ/VAB) se ve una ligera tendencia creciente desde la década de los 60 hasta mediados de los 90, luego se presenta una caída considerable que dura hasta el año 2000 para finalmente mantenerse prácticamente en el mismo nivel hasta la fecha. Lo anterior concuerda con lo encontrado por Aguayo: la creciente industrialización del país de mediados del siglo XX se refleja en el hecho de que aumente también la intensidad energética del producto, luego, con la apertura comercial de los años 90 se pudieron adoptar nuevas tecnologías que redujeron el consumo energético por unidad de producto, y finalmente, a partir del año 2000, una vez que se hubo agotada la mejora tecnológica producto de la apertura, se observa un estancamiento de la intensidad energética.
+
+Gráfica 1
+Consumo de energía 1965-2013
+
+Índice 1990=100
+
+140 130 120 110 100 90 80 70 60 50
+1960
+
+1970
+
+1980
+
+1990
+
+2000
+
+2010
+
+2020
+
+I VAB/Pob
+
+I PJ/VAB
+
+I PJ/Pob
+
+Fuente: elaboración propia con datos de SENER (2015) e INEGI (2015b)
+
+La combinación de las tendencias en el producto por habitante y la intensidad energética del
+
+producto nos dará el consumo energético por habitante (I PJ/Pob), que es el indicador necesario
+
+para evaluar la existencia de la CAK para el caso de la energía. El comportamiento de esta
+
+variable es similar al del producto per cápita solo que a partir de los 90, dada la reducción de la
+
+intensidad energética del producto, el incremento del consumo energético per cápita es menor al
+
+del producto per cápita. Como se observa en la tendencia de la gráfica no parece haber una CAK
+
+para el caso energético en México. A decir de Aguayo (2011), el hecho de que no se haya aún
+
+26
+
+alcanzado el punto de quiebre en materia energética en México se debe al estancamiento económico de las últimas décadas, es decir, no ha habido el suficiente crecimiento económico que detone las mejoras en eficiencia energética. Sin embargo, si las tendencias en energía se leen a partir de la hipótesis de la CAK revisada surgen inconsistencias: si, como afirma Stern (2004), la fase descendente de la curva solo se observará si el crecimiento de la escala es tan bajo que permite que la tendencia de largo plazo de la tecnología a mejorar la eco-eficiencia impere, entonces o el crecimiento producto per cápita en México no ha sido tan bajo después de todo o no existe para México tal tendencia general a la mejora tecnológica.
+
+Gráfica 2
+Gases de efecto invernadero 1990-2010
+140
+
+130
+
+120
+
+Índice 1990=100
+
+110
+
+100
+
+90
+
+80
+
+70 1985
+
+1990
+
+1995
+
+2000
+
+2005
+
+2010
+
+2015
+
+I VAB/Pob
+
+I Gg/VAB
+
+I Gg/Pob
+
+Fuente: elaboración propia con datos de SEMARNAT (2013) e INEGI (2015b)
+
+Véase ahora el caso de las emisiones de gases de efecto invernadero. Desafortunadamente para
+
+este caso solo se cuenta con la serie a partir de 1990 y por ello no se puede corroborar el hecho de que una economía conforme se va industrializado va también incrementando su intensidad
+
+carbónica. Suponiendo que esta situación efectivamente se cumple (y la evolución de la serie de consumo de energía aporta pruebas para que sea así), la gráfica 2 muestra la parte en que la
+
+economía ha comenzado a tener ganancias en el contenido carbónico del producto fruto de la apertura comercial. Como se observa, la reducción en la intensidad carbónica del producto (I Gg/VAB) es mayor que la de la intensidad energética del mismo a partir del año 2000, lo cual
+
+27
+
+indica que la eficiencia energética (cantidad de emisiones por unidad de energía consumida) disminuyó durante el periodo. Sin embargo, este hecho no es suficiente aún para causar que la curva de emisiones de GEI per cápita experimente un descenso. La tendencia de las emisiones de GEI básica se mantiene en general estancada o con un ligero repunte a partir de 2003. Las mismas posibles explicaciones que dan Aguayo (2011) de un lado y Stern (2004) de otro, y que se enunciaron ya para el caso del consumo energético, aplican para este caso.
+
+Gráfica 3
+Descomposición de Kaya de los GEI
+140
+
+130
+
+120
+
+Índice 1990=100
+
+110
+
+100
+
+90
+
+80
+
+70 1985
+
+1990
+
+1995
+
+2000
+
+2005
+
+2010
+
+2015
+
+I GEI
+
+I Pob
+
+I VAB/Pob
+
+I PJ/VAB
+
+I Gg/PJ
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), SENER (2015) e INEGI (2015b)
+
+Una manera de ver más al detalle lo anteriormente dicho es aplicar la descomposición de Kaya44.
+
+Esta descomposición separa la variación en el total de emisiones en 4 efectos: la eficiencia
+
+energética (I Gg/PJ), la intensidad energética (I PJ/VAB), la riqueza (VAB/Pob) y la población (Pob)45. En la gráfica 3 se observa que los efectos riqueza y población tienen un tendencia
+
+44 AGUAYO (2011), p. 107 45 La descomposición de Kaya resulta similar al análisis de descomposición estructural que se ha explicado más arriba y que será la base de este estudio; sin embargo, difieren en tres aspectos: 1) en la descomposición de Kaya no se halla presente el efecto composición ya que analiza la economía en su conjunto sin distinguir entre sectores de actividad económica. Por tal motivo lo que debería corresponder a este efecto se halla absorbido por los dos efectos que dan cuenta del efecto tecnología (la eficiencia energética y la intensidad energética). 2) en la descomposición de Kaya es posible introducir la interrelación que existe entre consumo energético y emisiones contaminantes ya que se trabaja con la economía en su conjunto. Para poder haber hecho lo mismo en el análisis de descomposición estructural se hubiera requerido que el desglose de la información de emisiones y el desglose de la información de consumo de energía tuvieran el mismo nivel y tipo de desagregación (situación que no aplica para el caso mexicano).
+28
+
+general creciente, es decir, la escala de la economía induce siempre al incremento de las emisiones. Por su parte y como ya se vio en la gráfica 1 la intensidad energética tiene un descenso y luego posterior estancamiento a partir del año 2000; por su parte la eficiencia energética experimenta en general una tendencia a la baja aunque con estancamiento a partir del año 2005. El hecho de que, como se vio en la gráfica 2, las emisiones de GEI per cápita cayeran relativamente más que el consumo per cápita de energía se debe a esta mejora en la eficiencia energética. Sin embargo, el parcialmente benéfico efecto tecnológico no es suficiente para compensar al efecto escala, de tal manera que las emisiones totales tienen un comportamiento claramente creciente.
+Finalmente se presenta la desagregación de las emisiones contaminantes por tipo de actividad económica involucrada, en valores absolutos y en valores por unidad de producto.
+Bien en el presente trabajo se pudo haber realizado un empalme para que ambas fuentes de información tuvieran la misma desagregación, pero eso hubiera implicado hacer supuestos fuertes adicionales a los que ya se tienen. 3) La intensidad energética se calcula en la descomposición de Kaya sobre el producto neto de la economía, mientras si se siguiera la metodología del análisis de descomposición estructural habría de calcularse sobre el producto bruto.
+29
+
+Cuadro 2 PRINCIPALES EMISORES 2008: VALORES TOTALES
+SCIAN 2007 Descripción del subsector
+
+Unidad Participación
+
+Gases de efecto invernadero 221 Generación, transmisión y distribución de energía eléctrica 484 Autotransporte de carga 211 Extracción de petróleo y gas C Transporte privado 112 Cría y explotación de animales 327 Fabricación de productos a base de minerales no metálicos Total de la economía productiva
+
+Gg CO2 EQ 154,255 80,874 75,835 54,238 44,503 22,704 652,146
+
+23.7% 12.4% 11.6%
+NA 6.8% 3.5% 58.0%
+
+Gases criterio 484 Autotransporte de carga C Transporte privado 485 Transporte terrestre de pasajeros, excepto por ferrocarril 221 Generación, transmisión y distribución de energía eléctrica 111 Agricultura 324 Fabricación de productos derivados del petróleo y del carbón Total de la economía productiva
+
+Mg 16,071,669 10,778,404
+2,562,639 1,605,120 1,221,885
+926,547 30,328,832
+
+53.0%
+8.4% 5.3% 4.0% 3.1% 73.8%
+
+Descarga de aguas residuales 311 Industria alimentaria 211 Extracción de petróleo y gas 111 Agricultura 312 Industria de las bebidas y del tabaco 112 Cría y explotación de animales 325 Industria química Total de la economía productiva
+
+Mg MO 2,204,220 1,323,648 728,996 560,263 465,189 453,121 7,035,648
+
+31.3% 18.8% 10.4% 8.0% 6.6% 6.4% 81.5%
+
+Generación de residuos peligrosos
+
+Mg
+
+325 Industria química
+
+42,170
+
+14.9%
+
+331 Industrias metálicas básicas
+
+29,403
+
+10.4%
+
+336 Fabricación de equipo de transporte
+
+23,569
+
+8.3%
+
+311 Industria alimentaria Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios
+334 electrónicos
+
+12,624
+
+4.5%
+
+9,828
+
+3.5%
+
+332 Fabricación de productos metálicos
+
+5,298
+
+1.9%
+
+Total de la economía productiva
+
+283,267
+
+43.4%
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), (2015a) y (2015b), INEGI (2008), (2015a) y (2015c),
+
+CONAGUA (2003) y (2010), y SENER (2015).
+
+30
+
+Cuadro 3 PRINCIPALES EMISORES 2008: INTENSIDAD DE CONTAMINACIÓN
+SCIAN 2007 Descripción del subsector
+
+Unidad
+
+Gases de efecto invernadero 222 Suministro de agua y suministro de gas por ductos al consumidor final 221 Generación, transmisión y distribución de energía eléctrica 483 Transporte por agua 112 Cría y explotación de animales 484 Autotransporte de carga 212 Minería de minerales metálicos y no metálicos, excepto petróleo y gas Media de la economía productiva
+
+Mg/M$ 434.1 376.1 225.4 206.9 167.9 122.9 31.5
+
+Gases criterio 484 Autotransporte de carga 486 Transporte por ductos 485 Transporte terrestre de pasajeros, excepto por ferrocarril 221 Generación, transmisión y distribución de energía eléctrica 111 Agricultura 483 Transporte por agua Media de la economía productiva
+
+Kg/M$ 33,367.9 6,536.5 6,233.7 3,913.1 3,662.7 2,833.4 1,466.4
+
+Descarga de aguas residuales 312 Industria de las bebidas y del tabaco 111 Agricultura 112 Cría y explotación de animales 311 Industria alimentaria 211 Extracción de petróleo y gas 322 Industria del papel Media de la economía productiva
+
+Kg MO/M$ 2,494.9 2,185.2 2,163.1 1,836.3 1,372.8 906.8 340.2
+
+Generación de residuos peligrosos
+
+Kg/M$
+
+562 Manejo de desechos y servicios de remediación 331 Industrias metálicas básicas
+
+672.4 65.7
+
+325 Industria química
+
+50.6
+
+336 Fabricación de equipo de transporte
+
+25.9
+
+332 Fabricación de productos metálicos
+
+23.6
+
+326 Industria del plástico y del hule
+
+22.5
+
+Media de la economía productiva
+
+13.7
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), (2015a) y (2015b), INEGI (2008), (2015a) y
+
+(2015c), CONAGUA (2003) y (2010), y SENER (2015).
+
+31
+
+3.2 ANÁLISIS DE DESCOMPOSICIÓN ESTRUCTURAL
+
+En esta sección se abordará más en detalle los resultados ya adelantados en la sección anterior.
+
+Como ya se lo hubo adelantado en la introducción el análisis de esta sección quedará limitado al
+
+periodo 2003-2008; no obstante, si bien existe una pérdida en cobertura temporal se obtienen
+
+ganancias en cuanto a desagregación y delimitación de los efectos según la actividad económica
+
+responsable.
+
+Cuadro 4
+
+DESCOMPOSICIÓN ESTRUCTURAL: GASES DE EFECTO INVERNADERO
+
+Gg CO2 EQ
+
+Efectos
+
+Subefectos
+
+2003
+
+406,333
+
+100.0%
+
+2008
+
+484,385
+
+119.2%
+
+Efecto total
+
+78,052
+
+19.2%
+
+Tecnología
+Eco-eficiencia Mezcla de insumos
+
+39,952 20,247
+19,705
+
+9.8%
+
+100.0%
+
+50.7%
+
+49.3%
+
+Estructura
+
+-
+
+33,775
+
+-8.3%
+
+100.0%
+
+Escala
+
+71,875
+
+17.7%
+
+100.0%
+
+Riqueza
+
+38,874
+
+54.1%
+
+Población
+
+33,001
+
+45.9%
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), e INEGI (2008) y
+
+(2015c)
+
+Los resultados del análisis de descomposición estructural para el periodo 2003-2008 son los siguientes: como se aprecia en los cuadros 4 al 7 el cambio en el nivel total de emisiones contaminantes entre se debió a una tendencia heterogénea en los efectos. El efecto tecnología solo es negativo para el caso de los gases criterio, es decir, solo en este tipo de contaminantes ocurrió una mejora tecnológica en las actividades productivas tal que de haberse mantenido la escala de la economía y la estructura de la misma habríanse reducido las emisiones de este tipo de gases. Pero aun considerando las variaciones en la composición y en la escala de la economía la mejora tecnológica fue tal que se logró efectivamente reducir la emisión absoluta de estos gases, esto es, se logró contrarrestar el incremento de emisiones de gases criterio causadas por los efectos composición y escala. Este resultado es consistente con gran parte de los estudios que sostienen la existencia de la CAK tradicional para el caso de los gases criterios; desde tal
+32
+
+perspectiva México se encontraría entonces ya en la parte descendente de la curva. Pero también
+
+es consistente con la CAK revisada en dos puntos: primero, dado que el crecimiento en la
+
+emisión de los gases criterio está asociado a la fase de industrialización, y México habría pasado
+
+ya por esa fase, entonces este tipo de contaminantes tendería a disminuir su participación dentro
+
+del total; y segundo, existe una tendencia a la mejora tecnológica que reduce la intensidad de
+
+contaminación de tal magnitud que es capaz de contrarrestar la tendencia al crecimiento de la
+
+emisión de los gases criterio fruto del crecimiento de la escala de la economía, situación a la cual
+
+podría estar colaborando el lento crecimiento reciente de la economía mexicana.
+
+Cuadro 5
+
+DESCOMPOSICIÓN ESTRUCTURAL: GASES CRITERO
+
+Mg
+
+Efectos
+
+2003
+
+28,341,863
+
+100.0%
+
+2008
+
+24,979,201
+
+88.1%
+
+Efecto total
+
+- 3,362,661
+
+-11.9%
+
+Subefectos
+
+Tecnología
+
+- 8,659,553
+
+Eco-eficiencia
+
+-
+
+5,640,638
+
+Mezcla de
+
+insumos
+
+- 3,018,916
+
+-30.6%
+
+100.0% 65.1%
+34.9%
+
+Estructura
+
+951,023
+
+3.4%
+
+100.0%
+
+Escala
+
+4,345,869
+
+15.3%
+
+100.0%
+
+Riqueza
+
+2,350,499
+
+54.1%
+
+Población
+
+1,995,370
+
+45.9%
+
+Fuente: elaboración propia con datos de SEMARNAT (2015a), e INEGI (2008) y
+
+(2015c)
+
+En el caso de los otros 3 rubros analizados –gases de efecto invernadero, descarga de aguas residuales y consumo de energía- el efecto tecnología es positivo, es decir, en el periodo 20032008 ocurrió una regresión tecnológica en materia ambiental tal que, de haberse mantenido contante la estructura y la escala, las emisiones habrían sido mayores. Este hecho contradice la hipótesis de la CAK revisada que asume la existencia de una tendencia general a la mejora tecnológica sin importar el nivel de ingreso de la economía.
+Analizando los dos subefectos (eco-eficiencia y mezcla de insumos) se observa en la tabla que en general actúan en el mismo sentido que el efecto principal (tecnología), esto es, la mejora tecnológica (en el caso de gases criterio) y la regresión tecnológica (en el caso de gases de
+33
+
+efecto invernadero y descarga de aguas residuales) se debió tanto a una mejora [empeora] de la
+
+eco-eficiencia –emisiones generadas por unidad de producto- como a una mejora [empeora] de la
+
+mezcla de insumos –utilización de insumos menos [más] contaminantes por unidad de producto-.
+
+El único caso en que estos dos subefectos actúan en sentido contrario es en el consumo de
+
+energía: hubo un empeoramiento de la eco-eficiencia –se requiere ahora más energía para generar una unidad de producto46- pero una mejora en la mezcla de insumos –cada unidad de producto se
+
+genera utilizando insumos que a su vez requieren menos energía-.
+
+Cuadro 6
+
+DESCOMPOSICIÓN ESTRUCTURAL: DESCARGA DE AGUAS RESIDUALES
+
+Mg MO
+
+Efectos
+
+Subefectos
+
+2003
+
+5,773,414
+
+100.0%
+
+2008
+
+6,443,482
+
+111.6%
+
+Efecto total
+
+670,068
+
+11.6%
+
+Tecnología
+Eco-eficiencia Mezcla de insumos
+
+1,021,876 477,354
+544,522
+
+17.7%
+
+100.0% 46.7%
+53.3%
+
+Estructura
+
+- 1,338,324
+
+-23.2%
+
+100.0%
+
+Escala
+
+986,532
+
+17.1%
+
+100.0%
+
+Riqueza
+
+533,574
+
+54.1%
+
+Población
+
+452,958
+
+45.9%
+
+Fuente: elaboración propia con datos de CONAGUA (2003) y (2010), e INEGI
+
+(2008) y (2015c)
+
+Por su parte el efecto composición tienen una tendencia heterogénea entre los tipos de emisiones analizadas. En el caso de gases de efecto invernadero y de descarga de aguas residuales fue negativo el efecto, es decir, la composición de la economía (la participación relativa de cada actividad productiva) cambió de tal modo las actividades más contaminantes en estos dos rubros perdieron peso dentro de la economía. Del otro lado están los rubros de gases criterio y consumo de energía en donde se observa lo contrario: las actividades más intensivas en la emisión de estos gases y en el consumo de energía ganaron participación relativa. Asimismo se ve que el efecto composición es el más pequeño de todos en valor absoluto, lo cual concuerda con lo dicho por
+
+46 En la gráfica 1 es poco perceptible esta diferencia pero es tal que en 2003 se consumían 234.57 GJ de energía por cada millón de pesos de producción bruta, mientras en 2008 se consumían 237.43.
+34
+
+Stern de que “los efectos insumos [input mix] y consumo [output mix] contribuyen poco
+
+globalmente… [mientras que] las dos formas de cambio tecnológico reducen el incremento en las emisiones.”47 De tal manera que la variación total en las emisiones está determinada mayormente
+
+por la tecnología y la escala, siendo la contribución de la composición no muy determinante.
+
+Cuadro 7
+
+DESCOMPOSICIÓN ESTRUCTURAL: CONSUMO DE ENERGÍA
+
+TJ
+
+Efectos
+
+Subefectos
+
+2003
+
+1,873,856
+
+100.0%
+
+2008
+
+2,416,835
+
+129.0%
+
+Efecto total
+
+542,979
+
+29.0%
+
+Tecnología
+
+Eco-eficiencia
+
+Mezcla de
+
+insumos
+
+-
+
+153,252 323,630
+170,378
+
+8.2%
+
+100.0%
+
+211.2%
+
+-111.2%
+
+Estructura
+
+48,131
+
+2.6%
+
+100.0%
+
+Escala
+
+341,607
+
+18.2%
+
+100.0%
+
+Riqueza
+
+184,761
+
+54.1%
+
+Población
+
+156,846
+
+45.9%
+
+Fuente: elaboración propia con datos de SENER (2015), e INEGI (2008) y
+
+(2015c)
+
+En cuanto al efecto escala se observa un comportamiento uniforme en todos los rubros: el incremento del tamaño de la economía generó irrefutablemente el crecimiento de las emisiones y del consumo de energía. Igualmente sus dos subefectos (riqueza y población) muestran el mismo comportamiento: las emisiones son mayores porque la riqueza per cápita se ha incrementado pero también porque la población hizo lo mismo. Esta conclusión resulta de suma importancia pues mientras los efectos tecnología y composición muestran parcial tendencia hacia la mejora ambiental el efecto escala muestra una tendencia inequívoca a generar mayor daño ambiental.
+
+47 STERN (2004), p. 1434. En el cuadro 4 uno observa que en el caso de la descarga de aguas residuales el efecto composición no es el menor. Debe recordarse sin embargo que la manera en que se construyó el dato de este tipo de emisión asumió como constante cierta parte de la eco-eficiencia (la cantidad de materia orgánica contenida por unidad de agua vertida). Si asumimos que en la realidad lo que pudo haber ocurrido fuese una mejora de la ecoeficiencia entonces el efecto tecnología estaría subestimado y el composición sobreestimado.
+35
+
+Cuadro 8
+
+ANÁLSIS DE DESCOMPOSICIÓN PARA LAS EMISIONES CONTAMINANTES, PER CÁPITA
+
+Tipo de emision
+
+Gases de efecto Gases criterio invernadero
+
+Descarga de
+
+Consumo de
+
+aguas residuales energía
+
+Unidad
+
+Mg CO2 eq
+
+Kg
+
+Kg MO
+
+GJ
+
+2003
+
+4.027
+
+280.859
+
+57.213
+
+18.569
+
+2008
+
+4.460
+
+229.979
+
+59.324
+
+22.251
+
+Efecto total
+
+0.433 -
+
+50.880
+
+2.111
+
+3.682
+
+Variación
+
+10.8%
+
+-18.1%
+
+3.7%
+
+19.8%
+
+Tecnología
+
+0.382 -
+
+82.453
+
+9.756
+
+1.460
+
+Estructura
+
+-
+
+0.320
+
+9.137 -
+
+12.737
+
+0.458
+
+Escala
+
+0.371
+
+22.436
+
+5.093
+
+1.764
+
+Tecnología
+
+9.5%
+
+-29.4%
+
+17.1%
+
+7.9%
+
+Estructura
+
+-8.0%
+
+3.3%
+
+-22.3%
+
+2.5%
+
+Escala
+
+9.2%
+
+8.0%
+
+8.9%
+
+9.5%
+
+Fuente: elaboración propia con datos de SEMARNAT (2013) y (2015b), INEGI (2008), (2015a) y
+
+(2015c), CONAGUA (2003) y (2010), y SENER (2015).
+
+Como se observa en el cuadro 5 las variables per cápita tienen el mismo comportamiento en cuanto a tendencia que las variables en términos absolutos. Luego entonces las mismas conclusiones antes obtenidas se pueden aplicar al caso de la información per cápita (que es la que se necesita para ver si es que existe una CAK)48. Solo que en este caso las variaciones atribuibles al efecto escala son mejores en todos los casos dado que ha sido sustraído el efecto generado por el crecimiento de la población y solo ha quedado el efecto generado por el crecimiento de la riqueza.
+En este caso se puede adelantar lo siguiente: la presencia de una CAK para el caso de los gases criterios se confirmaría para México, y la fuente de que la CAK se cumpla es el efecto tecnología: las mejores tecnológicas que se implementaron a partir de los año 80 en el primer mundo como respuesta a la contaminación atmosférica (como por ejemplo en el caso reducir las emisiones de dióxido de azufre para evitar la incidencia de la lluvia ácida49) y que impactan sobre todo a la industria pesada habrían terminado por asimilarse en México y con ello generado que para la década de los 2000 exista una tendencia a la baja (tanto absoluta como relativa) se las
+
+48 En el cuadro 5 se han omitido los subefectos respectivos, pues su tendencia es la misma que en el cuadro 1. 49 Cfr. SMITH (2011), cap. 4
+36
+
+emisiones de gases criterio50. Bajo este argumento sería la versión revisada de la CAK y no la tradicional la que estaría aplicando.
+En el caso de los gases de efecto invernadero se observa que no existe una tendencia a la baja ni en términos absolutos ni en términos per cápita. En caso de existir una CAK de GEI para México (cosa muy dudosa pues como se ha visto en la revisión teórica) estaríamos aún en la fase ascendente de la misma. La perspectiva de que exista un punto de quiebre a niveles más elevados de ingreso se debilita ante el hecho de que parece no haber mejora tecnológica en este rubro (habiendo más bien una regresión tecnológica, como se ha mostrado más arriba). Así, ni la CAK tradicional ni la CAK revisada parece aplicar en este caso51.
+Para el caso de aguas residuales, los estudios en otros países han encontrado una posible relación de CAK para ellas. Si tal cosa fuera cierta para México nos encontraríamos en la fase ascendente de la curva; pero al igual que en los GEI aquí se experimentó una regresión tecnológica que es una prueba contundente en contra de la CAK, ya sea tradicional o revisada.
+Los resultados de la descomposición según tipo de industria se pueden ver en el cuadro 6. En el caso de los GEI de los 9 principales subsectores generadores únicamente la Generación de electricidad mostró una disminución de sus emisiones si se ven solo los efectos directos, a lo que habría que añadir los subsectores de Suministro de agua y gas y Minería si se contemplan también los efectos indirectos52. El efecto composición es heterogéneo, ya se le mire desde la perspectiva de la producción bruta o de la producción neta. El efecto escala es el único que muestra una tendencia uniforme a generar incremento en las emisiones.
+50 Esta es la conclusión que se pude adelantar respecto a la existencia de una CAK para los gases criterio en México. La carencia de información para este rubro de contaminantes hace imposible realizar algún análisis de largo plazo que confirme la relación de campana entre de las emisiones y el producto per cápita. 51 Como se vio en la gráfica 3, la descomposición de Kaya mostró la existencia de una mejora tecnológica durante la década de 1990, lo cual pudo haber llevado a confirmar la existencia de una CAK revisada; sin embargo se vio que par la década de los 2000 tal mejora dejó de existir, razón por la cual al momento presente parece haberse desvanecido la evidencia en favor de la existencia de una CAK revisada para los GEI en México. 52 El efecto directo es el obtenido al hacer la descomposición sobre el Valor Bruto de la Producción, es decir, el que toma como estructura de la economía aquella del producto bruto. Es directo porque está mostrando la cantidad de emisiones generada por la variación del subsector indicado. Por otra parte el efecto indirecto es el obtenido al hacer la descomposición sobre la Demanda Final, es decir, tomando como estructura de la economía aquella del producto neto. Es indirecto porque muestra las emisiones generadas por un cambio en la demanda final de un subsector en ese mismo subsector pero también indirectamente en otros subsectores vía la matriz de requerimientos técnicos.
+37
+
+Cuadro 9
+
+ANÁLSIS DE DESCOMPOSICIÓN PARA LAS EMISIONES CONTAMINANTES SEGÚN TIPO DE ACTIVIDAD ECONÓMICA
+
+SCIAN 2007
+
+Descripción
+
+Cambio
+
+Descomposición sobre el Valor bruto de la producción
+
+GASES DE EFECTO INVERNADERO (Gg CO2 eq)
+
+2003-2008 Tecnología Composición
+
+Escala
+
+221 Generación, transmisión y
+
+distribución de energía eléctrica -
+
+547 - 48,489
+
+21,112
+
+26,830
+
+484 Autotransporte de carga
+
+30,661
+
+25,159 -
+
+5,633
+
+11,135
+
+211 Extracción de petróleo y gas
+
+25,706
+
+39,627 - 25,016
+
+11,095
+
+112 Cría y explotación de animales
+
+479
+
+2,418 -
+
+9,581
+
+7,642
+
+327 Fabricación de productos a
+
+base de minerales no metálicos
+
+3,333
+
+204 -
+
+473
+
+3,602
+
+222 Suministro de agua y
+
+suministro de gas por ductos al
+
+consumidor final
+
+2,991 -
+
+4,379
+
+4,286
+
+3,084
+
+325 Industria química
+
+3,393 -
+
+827
+
+1,631
+
+2,589
+
+212 Minería de minerales metálicos
+
+y no metálicos, excepto
+
+petróleo y gas
+
+2,215 -
+
+1,936
+
+1,498
+
+2,653
+
+331 Industrias metálicas básicas
+
+1,755
+
+3,356 -
+
+3,901
+
+2,300
+
+Descomposición sobre la Demanda final
+
+Tecnología Composición Escala
+
+Total
+
+- 27,677
+
+9,573
+
+18,719
+
+11,636
+
+17,525 579 -
+
+10,841 10,831
+
+224
+
+2,226
+
+10,581 7,607 5,030 2,441 -
+1,059
+
+7,523 37,963 11,714
+7,811
+3,508
+
+-
+
+1,851
+
+599
+
+657 -
+
+2,994
+
+903 661 -
+
+349 1,676
+
+-
+
+70
+
+410
+
+465 - 15,934
+
+69 685 -
+
+409 14,783
+
+Total Total
+
+78,052
+
+19,897 - 18,829
+
+76,984
+
+39,952 - 33,775
+
+71,875
+
+78,052
+
+GASES CRITERIO (Mg)
+
+484 Autotransporte de carga 485 Transporte terrestre de
+
+- 3,202,252 - 4,735,098 - 1,525,867
+
+pasajeros, excepto por ferrocarril 221 Generación, transmisión y
+
+470,691
+
+476,702 - 406,107
+
+distribución de energía eléctrica - 352,091 - 911,523
+
+246,273
+
+111 Agricultura
+
+681,488
+
+625,199 - 92,458
+
+3,058,713 - 3,126,150
+
+2,906,869
+
+400,096
+
+518,882 - 389,194
+
+313,159 - 636,771
+
+141,226
+
+148,747
+
+179,172 - 139,351
+
+1,891,517
+
+1,672,236
+
+430,039
+156,148 62,693
+
+559,727
+339,397 102,513
+
+38
+
+324 Fabricación de productos derivados del petróleo y del carbón
+112 Cría y explotación de animales
+
+211 431
+311 Total
+
+Extracción de petróleo y gas Comercio Industria alimentaria
+
+80,344
+
+107,874 - 180,365
+
+- 36,513 - 10,800 - 128,221
+
+- 362,697 - 225,080 - 256,179
+
+- 33,594 - 90,915
+
+1,114
+
+- 672,505 - 725,691 - 52,158
+
+- 3,362,661 - 5,628,776 - 2,348,106
+
+152,835
+102,508 118,561 56,207 105,343 4,614,221
+
+94,297
+- 49,530 - 191,125 - 442,851 - 1,386,258 - 8,659,553
+
+- 1,400,571
+- 222,979 - 143,090
+71,444 - 346,570
+951,023
+
+132,375 -
+50,968 69,194 132,555 452,855 4,345,869 -
+
+1,173,899
+221,542 265,021 238,853 1,279,973 3,362,661
+
+DESCARGA DE AGUAS RESIDUALES (Mg MO)
+311 Industria alimentaria
+211 Extracción de petróleo y gas
+111 Agricultura
+312 Industria de las bebidas y del tabaco
+112 Cría y explotación de animales 325 Industria química
+331 Industrias metálicas básicas
+322 Industria del papel
+212 Minería de minerales metálicos y no metálicos, excepto petróleo y gas
+
+229,220 137,648 140,460
+58,263 16,275 47,121 30,688 12,535 -
+6,499 -
+
+52,855 406,805 96,857 -
+43,196 4,319 73,371 64,409 8,782
+9,448
+
+182,314 488,846
+69,218
+10,300 102,340
+46,560 82,254 1,707
+5,755
+
+358,679 219,689 112,822
+
+244,549 - 335,278 178,880 - 206,510 45,143 - 89,065
+
+91,159 81,746 73,932 48,533 19,610 -
+
+7,009
+
+33,373
+
+13,765 - 149,868
+
+3,734 - 57,269
+
+9,113 - 157,655
+
+1,686 - 13,520 -
+
+10,192 -
+
+100
+
+1,556
+
+Total
+
+670,068 -
+
+8,782
+
+1,707
+
+19,610
+
+1,021,876 - 1,338,324
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), (2015a) y (2015b), INEGI (2008) y (2015c), y CONAGUA (2003) y (2010).
+
+432,095 96,838 40,542 -
+100,825 33,707 12,749 6,542 -
+4,333 -
+262 986,532
+
+341,366 69,207
+3,380
+127,189 102,397 40,786 142,000 19,539
+1,718 670,084
+
+39
+
+Pasando a los gases criterio se puede constatar que el efecto generalizado es a la reducción de las emisiones. De los 9 mayores emisores solo 3 (Transporte terrestre de pasajeros, Agricultura y Fabricación de productos derivados del petróleo y del carbón) experimentaron un incremento de emisiones si se ven los efectos directos. En general hubo una mejora tecnológica generalizada (solamente los subsectores de Transporte terrestre de pasajeros y de Fabricación de productos derivados del petróleo y del carbón, ya se les vea desde los efectos directos o indirectos, presentaron una regresión tecnológica) y una mejora en cuanto a composición, es decir, los principales emisores disminuyeron su participación relativa (que no absoluta) dentro del producto de la economía. Como ya se lo había mencionado, es en el caso de los gases criterio donde más evidencia existe de una CAK aunque sería en su versión revisada: la participación relativa de los subsectores más contaminantes ha disminuido pero la producción y el consumo en todos esos sectores ha aumentado (es decir, no producen bienes inferiores); sin embargo, este incremento generalizado en la escala ha podido ser contrarrestado por las mejoras tecnológicas.
+En el caso de las descargas de aguas residuales desde la perspectiva de los efectos directos sólo la Ganadería logró una reducción absoluta de sus emisiones. En cuanto a la tecnología fueron varios los subsectores que lograron una mejora tal que redujera sus emisiones, mientras que en lo referente a composición existió una tendencia a que los principales emisores redujeran su participación relativa. Una vez más el efecto escala es predominante (el único caso negativo es la demanda final de la industria del papel).
+De los 9 principales emisores de GEI y GC hay 4 en común, 4 en común entre GC y DAR, 5 en común entre GEI y DAR, y 2 en común entre los 3 rubros. De esto se puede ver que existe cierto grado de concentración de las emisiones contaminantes en cierto número reducido de industrias (de un total de 72 que tiene la economía).
+De todo lo visto anteriormente tienen que destacarse dos puntos: primero, el hecho de que pueda esperarse que a cierto nivel de ingreso comience una disminución de la emisión contaminante en términos per cápita no significa que vaya a ocurrir en términos absolutos (situación que sí puede llegar a ocurrir, como en el caso visto de los gases criterio). Aun cuando sea cierta para todos los casos la existencia de la CAK (ya sea la tradicional por efecto del ingreso o la revisada por efecto de la tecnología) eso no significa que los problemas ambientales tengan solución en el futuro, o dicho de otro modo “…no hay garantía para interpretar la
+40
+
+(aparente) confirmación de la hipótesis de la CAK como justificación para la inacción.”53 El hecho de que pueda cumplirse la CAK y aun así sigan aumentando las emisiones en términos absolutos es claro indicio de que el problema reside en la escala de la economía; es decir, que aun cuando se asuma que la tecnología irá mejorando su eco-eficiencia y la estructura de la demanda final de prioridad a los bienes que tienen el menor impacto ambiental, el tamaño de la economía es suficiente para anular los efectos benéficos que pudieran tener la tecnología y la composición.
+Para reforzar esta idea estaría el hecho de que hay emisiones contaminantes cuyos daños ambientales son irreversibles. Al respecto mencionan Stern et al. que “…cuando un impacto ambiental tiene efectos secundarios que son irreversibles, el hecho de que tal impacto esté caracterizado por una relación que sigue la CAK es de poco aliento a menos que se sepa que el punto de quiebre ocurre antes de que esos efectos secundarios ocurran.”54
+Es desde las ideas anteriores que se plantea el siguiente apartado. La única acción ambiental efectiva en el corto plazo es la reducción del tamaño de la economía (y la consiguiente restructuración de la demanda final que sería necesaria para lograr ello).
+3.3 ESCENARIOS AMBIENTALES
+En este apartado se muestran los resultados de aplicar la función de pérdida al caso de la reducción del tamaño de ciertos subsectores de la economía como medida ambiental. Se plantean tres escenarios evaluados bajos tres formas de la función de pérdida. Los escenarios son: 1) reducción de todas las emisiones un 5% junto con una variación nula de recursos forestales y pesqueros, 2) lo mismo que el anterior pero los GEI reducirlos al nivel observado en 2009, 3) lo mismo que el primero pero una reducción de los GEI al nivel de un país con objetivos de reducción de emisiones dentro del Protocolo de Kyoto. Las funciones de pérdida de la misma manera serán 3: una otorgando igual peso a todos los sectores de la economía, otorgando el peso proporcional al empleo generado por la actividad, y otra otorgando el doble de peso a ciertos sectores considerados como clave para el país55.
+53 STERN et al. (1996), p. 1158 54 Loc. cit. 55 Como se vio en la sección en que se expuso el método de cálculo, la generación de estos escenarios solo toma en cuenta las interrelaciones en la producción (como lo plantea el modelo insumo-producto) pero deja de lado las interrelaciones en el consumo, es decir, considera que el consumo de los bienes de un sector es independiente del consumo de los bienes de los otros, o sea, no hay bienes complementarios. Así, dentro de estos escenarios cabría la posibilidad de que se redujera la producción de cierto sector (electricidad, por ejemplo) pero no se redujera la producción de otros sectores cuyo consumo depende la producción de aquél otro (electrodomésticos, por ejemplo).
+41
+
+Cuadro 10 ESCENARIOS DE REDUCCIÓN DE LA DEMANDA FINAL 2008
+
+Meta ambiental
+
+Reducción de 5% en Reducción GEI al nivel Reducción de GEI a todas las emisiones observado en 2009 metas del PK
+
+Función de pérdida
+
+Pesos iguales para todos los subsectores
+Doble peso para subsectores estratégicos
+
+-2.82% -2.91%
+
+-2.34% -2.22%
+
+-4.06% -4.70%
+
+Pesos proporcionales al empleo en el subsector
+
+-2.92%
+
+-2.68%
+
+-3.54%
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), (2015a) y (2015b), INEGI (2008) y (2015c), y
+
+CONAGUA (2003) y (2010), y SENER (2015).
+
+Dos hechos observados es necesario resaltar: la reducción de los GEI por efecto de la crisis de 2008 fue de 1.57% mientras que la reducción del producto neto fue de 4.7%. De los 9 escenarios del cuadro 6 ninguno supera esta reducción del producto neto en 2009 generada por la crisis económica, es decir, las posibles medidas ambientales en el corto plaza serían menos perjudiciales para la economía de lo que son las fluctuaciones del ciclo económico56.
+
+Esta es una de las limitantes del modelo que se podría corregir si se conocieran los grados de interrelación de los bienes en el consumo. 56 En el anexo 4 se muestran las variaciones de la demanda final para cada subsector en el caso de reducción del 5% de las emisiones y doble peso en la función de pérdida a los sectores estratégicos. Como se observa ahí, a pesar de la reducción del producto neto de la economía, hay algunos subsectores que experimentan un aumento de su demanda final.
+42
+
+CONCLUSIONES Y COMENTARIOS FINALES
+El único caso en que la evidencia analizada aquí apoya la posible existencia de la CAK es el de los gases criterio: existe una tendencia a la baja de este tipo de emisiones no solo en términos per cápita sino también en términos absolutos. Se ve que el móvil de tal disminución es la mejora tecnológica que se experimentó entre 2003 y 2008; tanto así que eso logra contrarrestar los efectos negativos del incremento de la escala de la economía. Desafortunadamente para este caso de los gases criterio no se cuenta con una serie de datos para ver si la tendencia del largo plazo se ajusta a los resultados para el periodo analizado. Por esta razón no se puede aseverar si esta disminución de las emisiones de GC se ajusta más a la hipótesis tradicional de la CAK o a la hipótesis revisada, aunque apunta más a la última.
+En el caso de la descarga de aguas residuales, no se observa disminución absoluta ni per cápita de las emisiones. El efecto combinado de la regresión tecnológica y del crecimiento de la escala son los causantes de esta situación, la cual no pudo ser contrarrestada por la mejora en la composición de la economía. El hecho de haberse observado una regresión tecnológica contravendría la hipótesis de la CAK revisada –que asume una tendencia general a la mejora técnica- lo mismo que la hipótesis tradicional –que asume la activación de mecanismos proambientales con el crecimiento del ingreso-. Aun con la poca información disponible podríamos decir que la CAK no se cumple para el caso de las Descargas de aguas residuales en México.
+Por su parte, en los gases de efecto invernadero ocurrió un aumento de las emisiones no solo absolutas sino también per cápita. El incremento de la escala de la economía generó incremento de las emisiones como cabría esperarse; pero además también la regresión tecnológica en materia de emisiones contribuyó al incremento de las mismas, lo cual contraviene la hipótesis revisada de la CAK que supone una tendencia general de largo plazo a la mejora tecnológica. Pero al mismo tiempo contradice a la hipótesis tradicional (como se vio en la gráfica 1): precisamente cuando el país alcanza mayores niveles de ingreso es cuando comienza el estancamiento en la mejora en la eco-eficiencia. El cambio en la composición de la economía es lo único que contribuyó a disminuir las emisiones, pero su efecto se observó muy limitado. Este resultado en conjunto con la tendencia observada en el largo plazo apunta a rechazar la existencia de la CAK ya sea tradicional o revisada para los GEI.
+43
+
+Respeto al consumo de energía, se vio que los tres efectos contribuyeron a su aumento: hubo una regresión tecnológica que incrementó la intensidad energética del producto, hubo una recomposición de la estructura de la economía había actividades más intensivas en energía, y el crecimiento de la escala generó incremento del consumo. Igualmente aquí la información de largo plazo apoya el hecho de que no existe la CAK para el caso del consumo de energía.
+De su discusión sobre la CAK revisada, Stern había dicho que “la conclusión… es que el medio principal por el cual las emisiones de contaminantes pueden ser reducidas es debido a efectos tecnológicos a través del tiempo.”57 Hemos visto que para México esto solo aplica para el caso de los gases criterio. Si la fuerza que se espera sea el garante de una mejora ambiental en el futuro –la tecnología- no ha dado los frutos esperados en el pasado reciente (cuando menos no los ha dado en México) entonces la única medida ambiental efectiva en el corto o incluso en el mediano plazo sería la reducción de la escala de la economía; reducción que como se vio en el apartado de los escenarios ambientales no implica una reducción por igual de todos los sectores de actividad económica, sino de aquellos más contaminantes o que tienen más encadenamientos con éstos (es decir, un efecto escala combinado con un efecto composición).
+Dos refutaciones pueden hacérsele a esta idea. Puede que en México la tecnología no esté trayendo los beneficios ambientales esperados; pero mientras en el mundo en general sí esté pasando esto poco importará que una pequeña economía como México58 no esté siguiendo la senda general de mejoras tecnológicas, éstas tarde o temprano terminarán por llegar y ser adaptadas a la economía nacional. La siguiente observación habría que hacer sobre este argumento: respecto al caso de la emisión de GEI dice Aguayo que “…aun cuando la hipótesis [de la CAK] fuese válida, no hay garantía de que haya suficiente «espacio atmosférico» para que todos los países controlen sus emisiones antes de que se produzca un daño irreversible en el clima.”59 El problema del calentamiento global es por tanto no un problema técnico sino un problema espacial-temporal. La cuestión no es si el ingenio humano logrará desarrollar tecnologías que permitan reducir cada vez más el impacto ambiental de las actividades humanas y si éstas lograran esparcirse por toda la economía mundial (y la respuesta a esta cuestión seguramente es que sí se lograrán ambas cuestiones), sino si la humanidad tiene el suficiente
+57 STERN (2004), p. 1434 58 Según la información del Banco Mundial para 2008 México solo contabiliza el 1.4% de las emisiones mundiales de dióxido de carbono, mientras que Estados Unidos el 17.5%. Aun así México ocupaba la posición 11 dentro del total de emisores. 59 AGUAYO (2011), p. 103
+44
+
+tiempo y espacio para soportar una creciente degradación ambiental en lo que los beneficios esperados del desarrollo de la tecnología se hacen suficientemente presentes para generar mejorar ambientales sustanciales (y la respuesta a esta cuestión podría ser que no). Es por esta razón que la solución de los problemas ambientales no puede venir de una espera pasiva de los beneficios de la tecnología moderna. “Consecuentemente –dice Roca-, en ningún caso puede esperarse que los problemas ambientales públicos sean automáticamente resueltos como resultado del crecimiento económico, sin la necesidad de una política ambiental.”60 El desarrollo de la tecnología necesaria para abatir el daño ambiental no fructificará a menos que estén presentes las políticas ambientales adecuadas para aplicarlo en un contexto de limitantes espaciales y temporales para la acción en favor del ambiente, es decir, ni las empresas ni los consumidores tienen incentivos claros a adoptar un esquema de producción y un esquema de consumo más limpios, razón por la cual se hace necesaria la intervención activa del gobierno con políticas ambientales que encaminen a los agentes en la dirección del desarrollo y adopción de tecnologías ecológicamente más sustentables.
+La segunda refutación vendría a ser que en un contexto en que todas las economías buscan el crecimiento, medidas de reducción de la escala de una sola economía serían estériles en una situación donde los problemas ambientales tienen un alcance mundial. Esta situación es cierta para el caso de un problema mundial como el calentamiento global generado por los GEI; pero no así para problemas mayormente locales como los gases criterio, la descarga de aguas residuales, la generación de residuos peligrosos, y la sobreexplotación forestal y pesquera; en estos casos depende prácticamente solo de las acciones adoptadas por el país el que se lleguen a solucionar estos problemas.
+Sin embargo, el hecho de que las mejoras en eco-eficiencia no se han hecho lo suficientemente presentes no significa que no se puedan obtener beneficios ambientales mediante otros aspectos de la tecnología. Dos aspectos de la tecnología pueden ser mejorados sin la necesidad de un salto tecnológico: el desperdicio y la mezcla de insumos. El primero resulta de suma importancia en el caso de los productos generados por la agricultura y la ganadería. Según la FAO el 15% de los alimentos en América Latina se desperdician, el 73% del cual se debe a ineficiencias en la producción, procesamiento, manejo, almacenamiento y distribución, es decir, a
+60 ROCA (2003), p. 7 45
+
+ineficiencias de la tecnología de producción y comercialización61. Mediante mejoras en los procesos62 se podría reducir este desperdicio y por tanto reducir el impacto de la agricultura y ganadería en el medio ambiente: si se desperdicia menos se requiere producir menos y por tanto se requerirá desmontar menos bosques y sobreexplotar menos los bancos de peces. En cuanto al segundo punto –la mezcla de insumos- se pueden obtener ganancias en términos ambientales mediante la sustitución de insumos ambientalmente más sucios por otros que lo sean menos. Esto no implica un cambio en la función de producción, sino una sustitución o eliminación de insumos innecesarios en términos de la técnica productiva aunque necesarios en términos de comerciabilidad del producto63. Es decir, se pueden hacer ahorros en el consumo productivo que lleven a reducir el impacto ecológico de la producción.
+Entonces, si de un lado se puede reducir el impacto del consumo productivo, también podría reducirse el del consumo final. El objetivo de la producción no es en última instancia la producción por la producción misma –o cuando menos no debería de serlo-, sino la producción con miras al consumo final. De una parte se tiene la capacidad de la producción para determinar el consumo; pero también existe la causalidad inversa: la capacidad del consumo para determinar la producción. El modelo actual de consumo donde prevalece el desperdicio –es decir, la falta de conciencia de los consumidores sobre la necesidad de ahorrar materia y energía-, la facilidad de consumo de los productos –es decir, el consumo de mercancías superfluas o accesorias pero innecesarias que hacen más cómodo el acto de consumo- y la alta obsolescencia de los mismos – la alta tasa de renovación de los productos aun cuando todavía son funcionales- es un elemento crucial para la configuración de una estructura productiva dañina para el ambiente. Existe por tanto toda una gama de posibilidades para reducir el consumo final sin que ello reduzca el bienestar (pues eliminar el consumo de algún bien que es innecesario o indeseado no deberá repercutir en el bienestar percibido).
+De lo anteriormente dicho resultan tres ideas: primera, no se puede esperar que las fuerzas objetivas de la sociedad (ya sean éstas el libre mercado, el desarrollo tecnológico o el cambio en las preferencias de los consumidores) por si solas lleven a la solución del conflicto sin la intervención activa de políticas ambientales; la racionalidad económica no tiene dentro de sí la
+61 FAO (2014), p. 2 62 Es decir, mediante mejoras en la coordinación de los diferentes agentes involucrados en la producción y circulación de los alimentos y no tanto en mejoras en la técnica productiva en sí. 63 Esto es, empaques, envolturas y accesorios innecesarios.
+46
+
+necesidad de imponer restricciones ambientales a su actividad, tales restricciones solo podrán venir de la participación activa de las sociedades. Segunda, aun cuando no opere un salto tecnológico en materia ambiental sí hay espacio para mejoras del proceso de producción y de comercialización que podrían generar ahorros en insumos. Y tercera, la posibilidad de los ahorros en la producción junto con los ahorros en el consumo nos han llevado a ver que parte de la producción que se realiza actualmente es innecesaria, así entonces es viable una reducción del producto sin que ello repercuta negativamente en el bienestar de la población. Bajo todos estos argumentos se llega a la conclusión que ya venían adelantando los resultados del análisis de los escenarios ambientales: la política activa más efectiva para la reducción de las emisiones y la degradación ambiental resulta ser –cuando menos en el contexto del estancamiento tecnológico de la economía mexicana- la reducción de la participación y consecuentemente de la escala de los sectores más ambientalmente más dañinos de la economía64.
+“La fe en la tecnología, como solución última a todos los problemas, puede distraer nuestra atención del problema de base –el problema del crecimiento en un sistema finito- e impedir que emprendamos una acción efectiva para resolverlo.”65 Para una sociedad que ha estado en crecimiento económico durante los últimos 250 años –y que ha generado una política económica cuya meta principal es cómo lograr y/o acelerar el crecimiento- resultaría traumático asumir que la mejor política ambiental es frenar ese móvil que la ha conducido por tanto tiempo. Tal política parece en primera instancia económicamente irracional pues estaría negando a la generación presente los beneficios en cuanto a diversidad de bienes y servicios que el estado actual de la técnica puede brindar a los consumidores66. Frente a este dilema cabe decir que “…los sacrificios que los actuales ciudadanos podrían estar preparados a aceptar en beneficio de las generaciones futuras son una expresión de su actitud como «ciudadanos» en vez de como «consumidores».”67
+64 Una cuestión a parte sería ver cómo lograr de la manera más eficiente dicha reducción de la escala. 65 MEADOWS et al. (1972), p. 194 66 La irracionalidad también vendría del lado de la producción pues se dirá que la reducción del tamaño de la economía es un sinsentido ya que entonces se incrementaría el desempleo. La solución a este cuestionamiento resulta evidente: la reducción de la jornada de trabajo y de la masa de ganancia permitirían reducir el tamaño de la economía sin que ello implicase una reducción del nivel de empleo. El cómo lograr esto forma parte del ámbito de estudio de la economía política más que del de la economía ambiental. 67 ROCA (2003), p. 9
+47
+
+ANEXOS
+ANEXO 1 El resultado de la expresión (5) puede obtenerse de la siguiente forma:
+(6) Desarrollado el producto de los binomios se llega a:
+Si a ambos lados de la expresión de les resta TCS entonces se llega a la expresión (5) que se trataba de demostrar. Sin embargo esta expresión tiene el inconveniente de que en los términos de la interacción es imposible ver a qué término ha de atribuírsele el cambio. Una forma alternativa de expresar esto es la siguiente: reordenando los elementos de la expresión (6) tenemos:
+(8)
+Esta expresión ya no tiene términos interactivos (productos de dos o más variaciones); sin embargo tiene el inconveniente de que no contempla los efectos desde un solo punto en el tiempo, lo cual dificulta su interpretación. Es por estos argumentos que se considera que la expresión (5) es más adecuada para el análisis que se quiere realizar, aunque debe ser debidamente corregida para eliminar el efecto ambiguo de los términos interactivos.
+48
+
+Las expresiones usadas para el cálculo de los subefectos del efecto tecnología son las siguientes (donde es el subefecto ecoeficiencia y el mezcla de insumos):
+Por su parte las expresiones para el cálculo de los subefectos del efecto escala son (donde R es el subefecto riqueza y P el población):
+49
+
+ANEXO 2
+
+DETALLE DEL CÁLCULO DE PRODUCCIÓN SUSTENTABLE PARA RECURSOSO FORESTALES Y PESQUEROS
+
+Sobreexplotación forestal
+
+Año 2008
+
+Cambios en el balance
+
+VBP
+
+TCA Crecimiento Crecimiento
+
+Obs. Sustentable observado
+
+observado sustentable
+
+Procesos naturales
+
+4,154
+
+4,154
+
+Actividades no
+
+sectorizables
+
+- 6,787 - 6,787
+
+Actividades
+
+sectorizables
+
+- 11,822
+
+2,633
+
+Agricultura
+
+- 8,005 - 3,598
+
+333,606.1 1.3%
+
+4,281.2
+
+1,924.5
+
+Ganadería
+
+-
+
+Aprovechamiento
+
+forestal
+
+17,913 - 8,052 14,437 14,437
+
+215,052.1 0.4% 18,507.7
+
+856.8
+
+385.1
+
+Construcción
+
+-
+
+341 - 153 1,925,713.5 4.5% 82,925.5
+
+37,276.8
+
+Balance
+
+- 14,455
+
+0
+
+VBP sustentable
+331,249.4 214,580.5 1,880,064.9
+
+Sobreexplotación pesquera Año 2008 VBP de Pesca VBP de la sobreexplotación VBP sustentable
+
+M$ 12,104.2 2,646.5 9,457.6
+
+Para el cálculo de la sobreexplotación forestal se asumió que el balance negativo en 2008 es resultado del crecimiento de las actividades implicadas, es decir, se supuso que si tales actividades hubiesen crecido menos entonces habrían demandado menos recursos, entre ellos hubieran demandado menos tierras nuevas de cultivo, pastoreo y construcción. Se asumió una relación lineal entre la pérdida del recurso forestal y el crecimiento de la actividad, y a partir de esto se determinó cuál debió haber sido el crecimiento de la actividad económica implicada tal que la demanda de desmonte de bosques hubiera sido aquella que puede ser repuesta por la regeneración natural forestal.
+
+50
+
+ANEXO 3 El problema de optimización de la función de pérdida sería: s.a. Donde i=1,2…m y k=1,2…q; ya que se sabe que: El lagrangeano quedaría definido como:
+Las condiciones de primer orden serían:
+51
+
+Todos los números 2 provenientes de la derivación del exponente de la δ se pueden omitir dado que se pueden incluir como parte de las w que finalmente son constantes arbitrariamente fijadas. Las condiciones anteriores constituyen un sistema de n+m+q ecuaciones con igual número de incógnitas que tiene la siguiente forma:
+El vector de resultados se puede expresar de esa manera dado que se sabe que:
+Defínase la matriz de vectores extractores de acuerdo al siguiente modelo:
+En la cual los vectores columna con 1’s corresponderían a los m subsectores dentro del total de n que están involucrados directamente en la sobreexplotación de los recursos renovables, de tal manera que se tiene que el orden de esta matriz es mxn. Utilizando la matriz anterior se puede expresar el sistema arriba descrito de manera compacta como aparece en el texto.
+52
+
+ANEXO 4
+
+VARIACIÓN DE LA DEMANDA FINAL SEGÚN SUBSECTOR PARA LOGRAR REDUCCIÓN DE TODAS LAS EMISIONES EN 5% Y DANDO DOBLE PESO EN LA FUNCIÓN DE PÉRDIDA A LOS SECTORES ESTRATÉGICOS
+
+SCIAN 2007
+
+Descripción
+
+Variación
+
+Subsectores que reducen su demanda final en más de 5%
+
+114 Pesca, caza y captura
+
+312 Industria de las bebidas y del tabaco
+
+221 Generación, transmisión y distribución de energía eléctrica
+
+212 Minería de minerales metálicos y no metálicos, excepto petróleo y gas
+
+325 Industria química
+
+483 Transporte por agua
+
+327 Fabricación de productos a base de minerales no metálicos
+
+481 Transporte aéreo
+
+484 Autotransporte de carga
+
+335 Fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica
+
+211 Extracción de petróleo y gas
+
+311 Industria alimentaria
+
+323 Impresión e industrias conexas
+
+336 Fabricación de equipo de transporte
+
+334
+
+Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos
+
+-25.22% -13.69% -12.96% -11.34% -10.88% -9.52% -9.33% -6.46% -6.01% -5.77% -5.64% -5.49% -5.35% -5.03%
+-5.02%
+
+Subsectores que aumentan su demanda final en más de 5% 332 Fabricación de productos metálicos 326 Industria del plástico y del hule 111 Agricultura 222 Suministro de agua y suministro de gas por ductos al consumidor final 322 Industria del papel 331 Industrias metálicas básicas 112 Cría y explotación de animales
+
+6.43%
+6.60% 8.11% 10.42% 10.78% 12.91% 19.02%
+
+Total de la economía
+
+-2.91%
+
+Fuente: elaboración propia con datos de SEMARNAT (2013), (2015a) y (2015b), INEGI (2008) y (2015c), y
+
+CONAGUA (2003) y (2010), y SENER (2015).
+
+53
+
+BIBLIOGRAFÍA
+AGUAYO, F. “Emisiones de CO2 e intensidad energética en México” en Graizbord, B., Mercado, A. y Few, R. (Coords.) Cambio climático, amenazas naturales y salud en México, COLMEX, México, (2011), pp. 99-129
+AGUAYO, F. y Gallagher, K. “Economic reform, energy, and development: the case of Mexican manufacturing” en Energy Policy, Vol. 33, No. 7, (2005), pp. 829-837.
+DIETZENBACHER, E. y Hoen, A. “Deflation of input-output tables from the user’s point of view: a heuristic approach” en Review of Income and Wealth, Serie 44, No. 1, (Marzo, 1998), pp. 111-122.
+GALLAGHER, K. Free trade and the environment: Mexico, NAFTA and beyond, Stanford University Press, (2004).
+FAO. Pérdidas y desperdicios de alimentos en América Latina y el Caribe. (2014).
+FIELD, B. y Field, M. Economía ambiental, McGraw-Hill, México (2003).
+GROSSMAN, G. y Krueger, A. “Environmental impacts of a North American Free Trade Agreement” NBER, Documento de trabajo 3914, (1991).
+HETTIGE, H., Lucas, R. y Wheeler, D. “The toxic intensity of industrial production: global patterns, trends and trade policy” en The American Economic Review, Vol. 82, No. 2, (Mayo, 1992), pp. 478-481.
+HUANG, W., Lee, G. y Wu, C. “GHG emisions, GDP growth and the Kyoto protocol: a revisit of environmental Kuznets curve hypothesis” en Energy Policy, Vol. 36, No. 1, (Enero, 2008), pp. 239247.
+JÁUREGUI, E., Salazar, E., Rodríguez, R. y González, H. “Free trade and pollution in the manufacturing industry in Mexico: a verification of the inverse Kuznets curve at a state level” en Ensayos Revista de Economía, Vol. XXIX, No. 2, (Noviembre, 2010), pp. 99-119.
+KAHN, M. “United States pollution intensive trade trends from 1972 to 1992” (2001).
+54
+
+KUZNETS, S. “Income growth and income inequality” en The American Economic Review, Vol. XLV, No. 1, (Marzo, 1995), pp. 1-28
+LEONTIEF, W. “Environmental repercussions and the economic structure: an input-output approach” en The Review of Economics and Statistics, Vol. 52 No. 3 (Agosto, 1970), The MIT Press, Boston, pp. 262-271.
+MARTÍNEZ, J. “The environment as a luxury good or «too poor to be green»?” en Ecological Economics, Vol. 13, No. 1 (1995), pp. 1-10
+MEADOWS, D., Meadows, D., Randers, J. y Behrens, W. Los Límites del Crecimiento, Fondo de Cultura Económica, México, (1972).
+MERCADO, A. y Fernández, O. “La contaminación y las pequeñas industrias en México” en Comercio Exterior, Vol. 48, No. 12, (Diciembre, 1998), pp. 960-965
+MERCADO, A. y Fernández, O. “La generación de contaminación industrial en México y sus regiones” en Mercado, A. y Aguilar, I. Sustentabilidad ambiental en la industria, COLMEX-ITESM, México, (2005), pp. 173-187
+NAVARRETE, M., Brull, M., Torre, A., Gómez, D. y Torres, D. “Verificación de la curva ambiental de Kuznets: el caso de México” en Revista Estudiantil de Economía, ITESM, (Julio, 2009), pp. 37-54.
+ROCA, J. “Do individual preferences explain the environmental Kuznets curve?” en Ecological Economics, Vol. 43, No. 1, (2003), pp. 3-10.
+ROCA, J. y Serrano, M. “Income growth and atmospheric pollution in Spain: an input-output approach” (inédito).
+RUIZ, P. “Costos de mitigación de gases de efecto invernadero: Canadá y México” en Economía Informa, No. 360, (septiembre-octubre, 2009), pp. 67-76
+RUIZ, P. “Estimación de los costos relativos de las emisiones de gases de efecto invernadero en las ramas de la economía mexicana” en El Trimestre Económico, Fondo de Cultura Económica, Vol. LXXVIII (1), No. 300 (enero-marzo, 2011), pp. 173-191.
+SMITH, S. Environmental Economics: A Very Short Introduction, Oxford University Press, (2011).
+55
+
+STERN, D. “The rise and fall of the environmental Kuznets curve” en World Development, Vol. 32, No. 8, (2004), pp. 1419-1439.
+STERN, D., Common, M. y Barbier, E. “Economic growth and environmental degradation: the environmental Kuznets curve and sustainable development” en World Development, Vol. 24, No. 7 (1996), pp. 1151-1160.
+WALDKIRCH, A. y Gopinath, M. “Pollution heaven of hythe? New evidence from Mexico” (2004).
+YANDLE. B., Vijayaraghavan, M. y Bhattarai, M. “The environmental Kuznets curve: a premier” en PERC Research Study 02-1 (Marzo, 2002), pp. 1-24.
+FUENTE DE LOS DATOS
+CONAPESCA (2008), Anuario Estadístico de Acuacultura y Pesca 2008.
+CONGUA (2003), Estadísticas del agua en México 2003
+CONGUA (2010), Estadísticas del agua en México, edición 2010.
+INEGI (2008), Sistema de Clasificación Industrial de América del Norte 2007.
+INEGI (2015a), Censos Económicos 2009, tabulados por establecimiento, sector privado y paraestatal, http://www.inegi.org.mx/est/contenidos/espanol/proyectos/censos/ce2009/privado-paraestatal.asp (consultado en marzo, 2015).
+INEGI (2015b), Cuenta de Bienes y Servicios, base 1980, base 1993 y base 2008, http://www.inegi.org.mx/sistemas/bie/ (consultado en marzo, 2015).
+INEGI (2015c), Matriz insumo-producto 2003 (base 2003) y 2008 (base 2008), http://www3.inegi.org.mx/sistemas/tabuladosbasicos/tabniveles.aspx?c=33600 (consultado en marzo, 2015).
+SEMARNAT (2011), “Anuario Estadístico de la Producción Forestal 2008” 56
+
+SEMARNAT (2013), “Inventario Nacional de Gases de Efecto Invernadero”. SEMARNAT, (2015a) “Sub-sistema del Inventario Nacional de Emisiones a la Atmósfera de México”, http://sinea.semarnat.gob.mx/sinea.php (consultado en marzo, 2015). SEMARNAT (2015b), “Sistema Nacional de Información Ambiental y de Recursos Naturales”, http://dgeiawf.semarnat.gob.mx:8080/approot/dgeia_mce/html/mce_index.html?De=BADESNIARN (consultado en marzo, 2015). SENER (2015), “Sistema de Información Energética”, http://sie.energia.gob.mx/ (consultado en marzo, 2015).
+57
+
+

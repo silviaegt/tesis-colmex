@@ -1,0 +1,2509 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EFECTOS DE UN INCREMENTO EN EL SALARIO MÍNIMO SOBRE LA ESTRUCTURA DE DURACIÓN EN EL DESEMPLEO: UN ESTUDIO
+PARA MÉXICO. JESÚS SALVADOR CARRILLO CASTILLO
+PROMOCIÓN 2013-2015
+ASESOR:
+JOSÉ ÁNGEL CALDERÓN MADRID
+JUNIO 2015
+
+Agradecimientos
+A mis más queridos y admirados: el profesor Carrillo y a su bella Lola, por ser ambos fuente de vida, inspiración, ánimo y ejemplo siempre. Especialmente en esta ocasión por no rendirse conmigo en tiempos de duda o de tropiezo.
+A mis hermanos de sangre y de ley: Angelita, Pavel, Alonso y Judith, por la cercanía desde lejos, por siempre ser referencia de cariño y solidaridad.
+Al profesor Ángel Calderón, por el apoyo en el aprendizaje de temas indispensables para este trabajo; por la paciencia, el buen humor y la guía durante su realización y por hacer de un reto apurado una experiencia de crecimiento.
+A mis profesores de econometría: a Eneas por su ayuda serena y profunda en la teoría; a Raymundo por su atención permanente y abierta y sus motivantes retos por alcanzar la excelencia en la investigación empírica; a Jaume por su invaluable y siempre alegre ayuda en la mejor comprensión y aplicación de las técnicas econométricas.
+A Stephen, por el apoyo moral sin reservas, la dedicación profesional y humana en su trabajo y por identiﬁcar momentos cruciales de cambio en este proceso.
+A Adriana, por su orientación en época de dudas, por el ejemplo de profesionalismo y entrega y por permitirme apoyarla en sus tareas este par de semestres.
+A mis amigos los YR: Roy, Manuel, Marcelo y Fernando y también a mi querido Pach, por siempre mantenerme con un pie en la realidad, la alegría y la solidaridad estos dos años.
+A todos mis compañeros de generación por compartir los retos y la vida en el Colmex, por trabajar en equipo y por colaborar más que competir. En especial a Leslie y Luigi por haber tomado por muchos meses el lugar de mi familia con su amistad y apoyo sincero.
+i
+
+Resumen El 26 de noviembre de 2012, cincuenta y cinco municipios tuvieron un aumento exógeno en el salario mínimo tras una homologación administrativa entre dos zonas. Para investigar si tal evento tuvo efectos sobre la estructura de duración en el desempleo y cuáles fueron, se realizó un análisis con un modelo de supervivencia con una salida, encontrando que dicho incremento salarial no tuvo efectos sobre la permanencia de los trabajadores en dicho estado. Utilizando un modelo de supervivencia con doble salida se encuentró que el sector de trabajo es persistente en general, mientras que para los hombres se halló que la probabilidad de salir al sector formal en cualquier momento se reduce y para las mujeres la probabilidad de salir al sector informal también se reduce.
+ii
+
+Índice
+
+Agradecimientos
+
+i
+
+Resumen
+
+ii
+
+1. Introducción.
+
+1
+
+2. Datos y estadística descriptiva.
+
+5
+
+2.1. Análisis de duración en el desempleo con una salida. . . . . . . . . . . . . 8
+
+2.2. Análisis de duración con doble salida. . . . . . . . . . . . . . . . . . . . . 9
+
+3. Modelos econométricos.
+
+13
+
+3.1. Análisis con una salida. El modelo de Cox. . . . . . . . . . . . . . . . . . 13
+
+3.2. Análisis con doble salida. El modelo de Fine y Gray. . . . . . . . . . . . . 14
+
+4. Resultados.
+
+16
+
+4.1. Resultados de las estimaciones del modelo de Cox. . . . . . . . . . . . . . 16
+
+4.2. Resultados de las estimaciones del modelo de Fine y Gray. . . . . . . . . 20
+
+4.3. Límites y oportunidades. . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+5. Conclusiones.
+
+27
+
+6. Anexo.
+
+28
+
+Referencias.
+
+37
+
+Índice de tablas.
+
+38
+
+Índice de ﬁguras.
+
+39
+
+iii
+
+1. Introducción.
+Los debates sobre el salario mínimo, su justiﬁcación e implicaciones sobre las condiciones de los trabajadores han sido diversos. Como ejemplo, unos se han enfocado sobre el efecto del salario mínimo en el nivel de desempleo en una economía, otros han tratado del nivel de ingreso de los trabajadores y otros más, entre los cuales este trabajo quiere enmarcarse, tienen que ver con el tiempo que tardan las personas desocupadas y económicamente activas en conseguir un empleo.
+El salario real mínimo en México lleva alrededor de veinte años con poca variación. Luego de la crisis de los años 1994 y 1995 sufrió una pérdida muy importante y a partir de entonces ha permanecido bastante estable, aunque con una ligera tendencia a la baja. En la ﬁgura 1 se observa dicho fenómeno.
+Figura 1: Serie del salario real mínimo en México.
+80
+
+75
+
+70
+
+65
+
+60
+
+55 1994
+
+1996
+
+1998
+
+2000
+
+2002 2004 año
+
+2006
+
+2008
+
+2010
+
+2012
+
+Evolución del salario real mínimo medio nacional (pesos de 2010).
+Fuente: elaboración propia con datos de la Comisión Nacional de Salarios Mínimos.
+
+Luego de los procesos legislativos y en el contexto de la reforma laboral de 2012, se dio una decisión administrativa no anticipada el 26 de noviembre de dicho año, con la que se integraron las zonas salariales A y B (que dicho sea de paso tenían los salarios mínimos alto y medio, respectivamente), mientras que la zona C se renombró como zona B. Esta integración implicó una homologación de los salarios mínimos entre las dos primeras zonas. A raíz de esto y habiendo tenido un salario mínimo menor previo a la homologación, los 55 municipios en 5 entidades federativas pertenecientes a la zona B
+1
+
+(ver tabla 5 en el anexo) vieron un incremento real del 2.9 %. Entre dichos municipios se encuentran los correspondientes a las zonas metropolitanas de Guadalajara y Monterrey, dos de las más importantes de México en términos económicos, por ser zonas con mucha actividad comercial, industrial y de servicios. Como el incremento es solo para ciertos individuos que no hicieron nada especíﬁco por obtenerlo podemos analizarlo como un cuasi experimento natural para revisar si la estructura de la duración del desempleo cambió de alguna manera.
+
+Para llevar a cabo el análisis se usaron datos de la Encuesta Nacional y Empleo (ENOE) de los años 2012, 2013 y 2014 correspondientes a personas que viven en poblaciones de más de 2500 habitantes, con edades entre los 20 y los 59 años y un historial laboral del año previo con ciertas características que más adelante se comentarán a detalle. Como metodología se emplearon dos modelos: uno considerando que el desempleo tiene salida solamente a un tipo de trabajo (sin distinguir si es formal e informal), el otro distinguiendo entre dos sectores: uno formal y otro informal, pues el mercado laboral mexicano muestra una presencia clara y persistente de dos sectores, ya que, como se muestra en la ﬁgura 2 la tasa de informalidad laboral ha estado en los últimos años por encima del 55 %.
+Figura 2: Serie de la tasa de informalidad media anual en México.
+
+Tasa de empleo informal (%)
+
+62
+
+61
+
+60
+
+59
+
+58
+
+57
+
+56 2005
+
+2006
+
+2007
+
+2008
+
+2009 2010
+Año
+
+2011
+
+Todos
+
+Mujeres
+
+Fuente: elaboración propia con datos del INEGI.
+
+2012 2013
+Hombres
+
+2014
+
+De acuerdo a Freeman y Freeman (1991) y muchos otros trabajos, un incremento del salario mínimo puede tener efectos redistributivos que tengan el potencial de reducir la pobreza, aunque presentar un efecto secundario por el canal del desempleo, al crearse
+2
+
+rigideces en el mercado si se eleva por encima de la productividad laboral. Sobre este incremento salarial, Campos et al. (2015) hicieron un análisis de corte transversal y otro usando datos en panel para estudiar los efectos del incremento del salario mínimo sobre los ingresos de los trabajadores, encontrando con los datos de corte transversal un aumento del 1.6 % al 3.3 % en los ingresos pero ningún efecto sobre el nivel de empleo, mientras que con los datos en panel hallaron que el incremento fue nulo en el salario por hora.
+Nuestro interés es en la estructura de la duración en el desempleo. Un trabajo previo que observa dos momentos distintos en el tiempo es el de Arulampalam y Stewart (1995), que utiliza dos cohortes de trabajadores varones en Gran Bretaña en 1978 y 1987 para hacer un análisis comparativo mediante el modelo de proporcionalidad en el riesgo de Cox (1972) , el cual también emplearemos en este proyecto. Mientras tanto, Nagore García y Van Soest (2014) analizan transiciones del desempleo hacia trabajos estables e inestables en el mercado laboral español durante la expansión de 2005-2007 y durante la recesión 2009-2011, utilizando un modelo de riesgos en competencia (competing risks model ), encontrando que las posibilidades de encontrar un trabajo (estable o inestable) se vieron reducidas durante la crisis. Dicho enfoque será utilizado en este trabajo siguiendo el modelo de Fine y Gray (1999).
+En su momento y tras la reestructuración económica de México en la década de los noventa, Revenga et al. (1993) buscaron las razones de la estabilidad del desempleo aún en los tiempos de crisis, viendo que éste afecta principalmente a las jóvenes entre 16 y 25 años y que probablemente hubiera mediciones incorrectas del desempleo por epsiodios de muy corta duración de salida de la fuerza laboral no registrados por las encuestas longitudinales.
+La explicación tradicional de la existencia del sector informal indicaba que éste sería una alternativa para los trabajadores que no encuentran empleo en el sector formal, de tal forma que una rigidez de mercado ocasionaría la coexistencia y oposición de los dos sectores. Sin embargo, Maloney (1999) reta esta visión argumentando que ineﬁciencias en el sector formal y una baja productividad laboral en el mismo podrían hacer atractivo los empleo que el sector informal ofrece, existiendo así de manera competitiva y no a causa de una falla de mercado como tradicionalmente se pensaba. Por su parte y agregando elementos a dicho debate, Calderón Madrid (2000) se pregunta sobre las características de los trabajadores que permanecen más tiempo en el sector formal y sobre aquellas que distinguen a los trabajadores que tienen pocas probabilidades de salir del sector informal. Por medio de funciones de riesgo y de transiciones, muestra que la proporción de trabajadores en distintos estatus se determina principalmente por el riesgo de salir de un estado,
+3
+
+los determinantes de ingresar en otro y las probabilidades de ocupación en el equilibirio de largo plazo. Para el mismo mercado mexicano, Joutard y Teyssier (2006) utilizan un método para distinguir entre los efectos de dependencia en la duración (la medición de qué tanto cambia la probabilidad de abandonar el desempleo conforme avanza el tiempo) de la hetereogeneidad no observada, hallando en sus estimaciones que todos los grupos de trabajadores tienen una dependencia no monótona (cambia de signo) en la duración, además de una homogeneidad en la movilidad entre sectores. Respecto a la persistencia del tipo de empleo que tiene un trabajador, Arranz et al. (2010) aplican también un modelo de riesgos en competencia en el mercado español para mostrar que los individuos que entran al desempleo cuando concluyen un contrato temporal tienen más probabilidades de hallar otro trabajo temporal, aunque cuando el trabajo temporal se prolonga, sus posibilidades de encontrar uno permanente se incrementan.
+En Centeno et al. (2014) encontramos un estudio enfocado en la política de recuperación del salario mínimo en Portugal durante la década pasada (2002-2010). Para deﬁnir su grupo de control en una metodología de diferencias en diferencias utilizan el ingreso: los tres primeros cuartiles (esto debido al efecto dominó para quienes ganan más del salario mínimo), afectados por el incremento en el salario mínimo, son el grupo de tratamiento, y el último cuartil es el de control. Encuentran que los cambios en el salario mínimo afectan más la estabilidad del empleo para quienes tienen ingresos cercanos a él.
+En este estudio, utilizando datos de la Encuesta Nacional de Ocupación y Empleo que nos brinden información sobre el empleo anterior al episodio de desempleo, el nivel de desempleo a nivel municipal y otras características individuales, compararemos los modelos de Cox (con salida única) y de Fine y Gray (que es similar al anterior, pero con dos posibles salidas compitiendo entre sí) para revisar los efectos del incremento súbito al salario mínimo que se dio en los municipios que antes pertenecían a la zona B. Utilizaremos dos muestras, previa y posterior al evento de interés para ver si en dos instantes en el tiempo las diferencias entre los municipios de tratamiento y de control se modiﬁcaron.
+El resto del trabajo se divide en cuatro secciones: en una explicaremos los datos utilizados y algunas estadísticas descriptivas de interés, luego describiremos los modelos econométricos utilizados sobre dichos datos, enseguida presentamos nuestros resultados y ﬁnalmente daremos algunas conclusiones.
+4
+
+2. Datos y estadística descriptiva.
+En este trabajo se utilizaron datos proporcionados por la Encuesta Nacional de Ocupación y Empleo (ENOE) de diversos trimestres de los años 2012, 2013 y 2014. Para estimar los modelos sobre la estructura de la duración del desempleo (tanto en el caso de una salida como distinguiendo si la salida es al sector formal o informal) que en breve se presentarán, se usaron muestras del primer trimestre de 2013 y 2014, por ser en él cuando se aplica el cuestionario ampliado de la ENOE, el cual brinda información relativa al último empleo del encuestado, esto es, gracias a dicho cuestionario podemos saber si el trabajador proviene del sector formal o informal, lo cual será aproximándonos mediante una variable dicotómica que nos indique si el trabajador contaba o no con seguridad social (el cuestionario ampliado no brinda más información que podamos usar para este efecto). También podemos saber el ingreso del trabajador previo al episodio de desempleo y, sobre todo, tendremos manera de conocer las fechas de inicio y ﬁn de episodios completos, además de poder conocer el inicio del desempleo en el caso de las observaciones censuradas (trabajadores que se encuentran en desempleo). Adicionalmente tenemos acceso a información a nivel personal de interés en los modelos, correspondientes a la edad, sexo, zona de residencia y nivel de instrucción. Utilizamos también el desempleo agregado a nivel municipal. Toda la información es proporcionada por el Instituto Nacional de Geografía y Estadística (INEGI), en la página de Internet de la ENOE: http://www.inegi.org. mx/est/contenidos/Proyectos/encuestas/hogares/regulares/enoe/.
+Para comparar la estructura de la duración del desempleo se construyeron dos muestras: una previa a la homologación del salario mínimo de la zona B con la zona A, para la cual la información utilizada es reportada en el primer trimestre de 2013 (para ver las condiciones de los individuos en 2012), y una posterior a ésta, construida con los cuestionarios de 2014 para analizar el año 2013. La incorporación del desempleo a nivel municipal en cada una de las muestras se hizo con el promedio simple del desempleo (computado como el cociente de personas desocupadas entre la población económicamente activa1) de los cuatro trimestres del año de interés (2012 y 2013 respectivamente).
+Para dichas muestras se ﬁltraron las observaciones que tuvieran una fecha válida de inicio del desempleo, que informaran si tenían o no seguridad social en el empleo anterior, ingreso previo al episodio de desempleo, edades de 20 a 59 años, nivel de instrucción especiﬁcado y que habitaran en poblaciones urbanas (más de 2500 habitantes). La duración del desempleo se mide entre uno y quince meses de desempleo hasta el ﬁn del episodio o la censura de la muestra para considerar la estructura del desempleo durante el año
+1Se usa siempre información proporcionada por la ENOE, por lo que las mediciones de desempleo podrían no coincidir con otros reportes del INEGI. Lo mismo aplica para el resto de tablas y ﬁguras.
+5
+
+anterior y los primeros tres meses del año en que se respondió el cuestionario, con esto evitamos episodios de desempleo que se extiendan demasiado. Otra restricción fue el ingreso del último empleo: se estudia únicamente a las personas que ganaban hasta tres salarios mínimos.
+En la tabla 6 del anexo mostramos algunas estadísticas descriptivas de las muestras construidas a partir de los criterios mencionados. Puesto que más del 67 % en cada una de las muestras son hombres, además de que se puede presumir de diferencias de comportamiento laboral entre el género, todos los análisis que hacemos en el presente trabajo están realizados también para submuestras por género. En la tabla 1 se presentan las medias de las submuestras en los aspectos de interés.
+Se puede observar que las mujeres duran, en promedio, alrededor de un mes más que los hombres en el desempleo, siendo la media general de 3.14 y 3.19 meses en 2013 y 2014, respectivamente. Cerca del 50 % en cada una de las cuatro submuestras está entre los 20 y 29 años de edad, mientras que menos del 10 % pertenece al grupo de 50 a 59 años. En la muestra del 2013 las mujeres presentan alrededor de 1.3 años más de escolaridad que los hombres, mientras en la del 2014 esta diferencia es de 1.16 años. Por grupo de nivel de instrucción, las mujeres están en los alrededores del 80 % agrupadas en un nivel de secundaria o más, pero para los hombres este porcentaje es más bien cercano al 70 %. En términos del ingreso correspondiente al empleo anterior de los encuestados, vemos que los hombres percibían un ingreso en promedio alrededor de 400 pesos mensuales más que las mujeres y todos los encuestados de 2014 percibían en su empleo previo alrededor de 150 pesos más por mes que los de 2013.
+El desempleo municipal es bastante similar en las cuatro submuestras, pero vemos que la formalidad de los trabajos previos era mayor para las mujeres entre 6 y 6.5 % en cada uno de los años mientras que la informalidad media del trabajo previo estaba alrededor del 57 % entre los encuestados. En general también podemos hablar de que hay persistencia en el sector donde se ubican los trabajadores y la observamos mejor en la ﬁgura 3: se nota claramente que, habiendo pertenecido al sector formal en el último empleo, en alrededor del 60 % de los casos se vuelve al mismo sector, mientras que en el caso del sector informal esto se observa para alrededor del 75 % de los casos. Se ve que la informalidad es ligeramente más persistente para las mujeres y la formalidad para los hombres, al menos en el año 2014.
+6
+
+Tabla 1: Medias de las submuestras por género.
+
+2013
+
+2014
+
+Variable
+
+Mujeres Hombres Mujeres Hombres (2042 obs.) (4181 obs.) (2285 obs.) (4744 obs.)
+
+Meses desempleo Edad 20-29 30-39 40-49 50-59 Zona A Zona B Zona C
+Años escolaridad Primaria incompleta Primaria completa Secundaria completa Preparatoria o más
+Ingreso previo Previo <1 salariom Previo 1-2 salariosm Previo 2-3 salariosm
+Previo formal Formal-Formal* Formal-Informal* Informal-Formal* Informal-Informal* Desempleo municipal
+Censurados Salida formal Salida informal
+
+3.8159 31.1249 0.5328 0.2684 0.1523 0.0465 0.1552 0.1107 0.7341 10.6195 0.0480 0.1450 0.4202 0.3869 3058.7630 0.1259 0.5950 0.2791 0.4716 0.3065 0.1889 0.1251 0.3795 0.0539 0.4089 0.2551 0.3359
+
+2.8099 32.6599 0.4803 0.2674 0.1591 0.0933 0.1402 0.1081 0.7517 9.2985 0.0921 0.2220 0.4009 0.2851 3446.7700 0.0787 0.4874 0.4339 0.4116 0.2604 0.1588 0.1551 0.4257 0.0532 0.3645 0.2641 0.3714
+
+3.9055 31.6985 0.4928 0.2928 0.1606 0.0538 0.1523 0.1287 0.7190 10.5260 0.0446 0.1239 0.4446 0.3869 3201.9150 0.1247 0.6048 0.2705 0.4801 0.2833 0.2006 0.1172 0.3989 0.0534 0.4284 0.2289 0.3427
+
+2.8541 32.6402 0.4777 0.2673 0.1716 0.0835 0.1541 0.1071 0.7388 9.3661 0.0866 0.2045 0.4256 0.2833 3593.6880 0.0828 0.4848 0.4323 0.4159 0.2603 0.1668 0.1416 0.4313 0.0529 0.3480 0.2620 0.3900
+
+* M-2013: 1207 obs., H-2013: 2657 obs., M-2014: 1306 obs., H-2014: 3093 obs.. Fuente: elaboración propia.
+
+7
+
+Persistencia
+
+Figura 3: Persistencia del sector laboral por género y año.
+
+.8
+
+0.75
+
+.7 0.62
+.6
+
+0.73 0.62
+
+.5
+
+.4
+
+.3
+
+.2
+
+.1
+
+0
+Mujeres
+
+Hombres
+
+2013
+
+Persistencia formal
+Fuente: elaboración propia.
+
+0.77 0.59
+
+0.75 0.61
+
+Mujeres
+
+Hombres
+
+2014
+
+Persistencia informal
+
+2.1. Análisis de duración en el desempleo con una salida.
+Considerando los dos sectores del mercado laboral como indistintos o como uno solo, mostramos en la ﬁgura 4 la curva de supervivencia de Keplen-Meier para observar las diferencias en la permanencia en el desempleo entre los géneros. Como se puede observar, la mediana para los hombres es de dos meses y la de las mujeres de cuatro, notando que no hay una clara diferencia entre los dos años en ninguno de los géneros.
+Por otra parte, en la ﬁgura 5 observamos las funciones de supervivencia también por género pero especiﬁcando los grupos de tratamiento y de control. El grupo de tratamiento son todos los municipios que pasaron de la zona B a la zona A en noviembre de 2012, mientras que el control son todos los demás 2. En ese caso, para las mujeres se observa que el grupo de tratamiento en el 2014 permanece ligeramente más en el desempleo y, aunque en la parte derecha de la curva el grupo de tratamiento se separa del control en ambos años, no es tan claro en la parte izquierda. Esta poca claridad en la separación de los grupos de tratamiento y control es más evidente para el caso de los hombres, para el que las cuatro curvas van muy unidas a lo largo del eje horizontal.
+2Para este trabajo, el propensity score matching sólo satisﬁzo la propiedad de balanceo para las variables de desempleo municipal y género (ésta no siendo utilizable al separar las muestras por hombres y mujeres), eliminando únicamente 7 observaciones y no variando mucho los resultados.
+
+8
+
+Figura 4: Funciones de supervivencia por género y por año.
+1.00 0.75
+
+0.50
+
+0.25
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+Meses en desempleo
+
+Mujeres 2013 Hombres 2013
+Fuente: elaboración propia.
+
+Mujeres 2014 Hombres 2014
+
+Figura 5: Funciones de supervivencia por zona de residencia y por año.
+
+Mujeres
+1.00
+
+Hombres
+1.00
+
+0.75
+
+0.75
+
+0.50
+
+0.50
+
+0.25
+
+0.25
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control 2013 Tratamiento 2013
+
+Control 2014 Tratamiento 2014
+
+Fuente: elaboración propia.
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control 2013 Tratamiento 2013
+
+Control 2014 Tratamiento 2014
+
+2.2. Análisis de duración con doble salida.
+Para distinguir mejor las dinámicas de la duración en el desempleo tomando en cuenta que la salida puede ser hacia el sector formal o informal de la economía, en lugar de utilizar las funciones de supervivencia de Keplen-Meier se usan las funciones de incidencia acumulativa. Esto resulta claro si nos hacemos la pregunta ¿cuál es la probabilidad de que en t número de meses un individuo salga del desempleo hacia el sector j de la economía? en vez de ¿cuál es la probabilidad de permanecer en el desempleo durante t meses, si
+9
+
+cuando se dé la salida, ésta sea hacia el sector j de la economía?.
+
+En la ﬁgura 6 se presentan las funciones de incidencia acumulativa. Las diferencias entre género y sector de salida resultan bastante evidentes: los hombres tienen mayor probabiidad de salir del desempleo que las mujeres y para ambos géneros es mayor la probabilidad de ir al sector informal que al formal.
+Figura 6: Funciones de incidencia acumulativa por género y por sector de salida.
+
+2013
+.8
+
+2014
+.8
+
+.6
+
+.6
+
+Incidencia acumulativa Incidencia acumulativa
+
+.4
+
+.4
+
+.2
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Mujeres-Formal Hombres-Formal
+
+Mujeres-Informal Hombres-Informal
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Mujeres-Formal Hombres-Formal
+
+Mujeres-Informal Hombres-Informal
+
+Al desagregar la ﬁgura 6 por grupos de tratamiento y control obtenemos las ﬁguras 7 y 8, la primera de ellas siendo la función de incidencia acumulativa por grupo de tratamiento y control para ambos sexos, mientras que en la segunda esto lo desagregamos todavía por cada (hombres y mujeres). Observando a toda la muestra para cada año, podemos ver que en los municipios de tratamiento había en la muestra de 2013 una ventaja en probabilidades de salir hacia el sector formal, ventaja que se ve disminuida al observar la curva del 2014.
+
+10
+
+Figura 7: Funciones de incidencia acumulativa por sector de salida y distinguiendo grupos de tratamiento y control.
+
+2013
+.8
+
+2014
+.8
+
+.6
+
+.6
+
+Incidencia acumulativa Incidencia acumulativa
+
+.4
+
+.4
+
+.2
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control-Formal Tratamiento-Formal
+
+Control-Informal Tratamiento-Informal
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control-Formal Tratamiento-Formal
+
+Control-Informal Tratamiento-Informal
+
+En la ﬁgura 8 podemos ver que, antes del tratamiento, es decir, usando la muestra de 2013, para hombres y mujeres en los municipios de tratamiento había más probabilidades de salir al sector formal en cualquier momento, mientras que en los municipios de control la probabilidad de salida era mayor hacia el sector informal. Después del tratamiento, tanto para hombres como para mujeres vemos un desplazamiento hacia abajo de la curva de salida hacia el sector formal los observados en la zona B y hacia arriba la curva correspondiente a la salida al sector informal (para el caso de las mujeres estos movimientos son lo suﬁcientemente amplios como para invertirse de lugar y quedar por encima la de la salida al sector informal), mientras que las curvas que representan a los municipios de control se quedan relativamente estables. Una primera intuición nos dice entonces que algo pasó en los 55 municipios de tratamiento para que las dinámicas del desempleo cambiaran.
+A pesar de que se preﬁeren las funciones de incidencia acumulativa en los análisis de competencia en riesgo, en la ﬁgura 16 del anexo presentamos la versión de las mismas en términos de la supervivencia, sobre todo para tener también la opción de comparar directamente con las funciones de supervivencia de una sola salida. Simplemente se observan las funciones de supervivencia de Keplen-Meier y, el área por encima de la curva se divide entre los fallos (salidas) que se dan hacia cualquiera de los dos sectores.
+
+11
+
+Figura 8: Funciones de incidencia acumulativa por género, por sector de salida y distinguiendo grupos de tratamiento y control.
+
+Mujeres 2013
+.8
+
+Incidencia acumulativa
+
+.6
+
+.4
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control-Formal Tratamiento-Formal
+
+Control-Informal Tratamiento-Informal
+
+Hombres 2013
+.8
+
+Incidencia acumulativa
+
+.6
+
+.4
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control-Formal Tratamiento-Formal
+
+Control-Informal Tratamiento-Informal
+
+Fuente: elaboración propia.
+
+Incidencia acumulativa
+
+Incidencia acumulativa
+
+Mujeres 2014
+.8
+
+.6
+
+.4
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control-Formal Tratamiento-Formal
+
+Control-Informal Tratamiento-Informal
+
+Hombres 2014
+.8
+
+.6
+
+.4
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control-Formal Tratamiento-Formal
+
+Control-Informal Tratamiento-Informal
+
+12
+
+3. Modelos econométricos.
+En esta sección presentamos los modelos econométricos a estimarse con los datos descritos arriba para identiﬁcar la estructura de la duración del desempleo en el mercado laboral mexicano considerando, primero, un solo sector que engloba la formalidad y la informalidad, para luego hacer uso de un modelo con doble salida.
+
+3.1. Análisis con una salida. El modelo de Cox.
+
+El modelo que emplearemos para analizar la estructura de la duración en el desempleo considerando como indistintos los sectores formal e informal fue planteado por primera vez por Cox (1972). En él, como en otros modelos de supervivencia, la función de riesgo, que es la probabilidad de salir del estado analizado (en este caso desempleo) condicional al tiempo que se lleva en él, se deﬁne por
+
+p
+
+h(t, X) = h0(t)exp
+
+βiXi
+
+(1)
+
+1
+
+donde X = (X1, X2, . . . , Xp) es un vector de variables explicativas del riesgo, h0(t) es la línea base de riesgo (que ocurre cuando todas las variables en X son iguales a 0) y h(t, X)
+
+es la función de riesgo dados el tiempo transcurrido t y el vector X.
+
+A diferencia de modelos paramétricos como el exponencial o el de Weibull, el modelo de Cox permite que h0(t) sea una función arbitraria, lo que lo hace semiparamétrico. Se tiene que la función de la línea base de riesgo depende de t, pero no de X. Debido a que la línea base, que reﬂeja la dependencia de la duración (duration dependance), es independiente de X, se dice que su forma es igual para todos los individuos, por lo que la proporción de riesgos (hazard ratio) se puede calcular de manera más sencilla y es igual en todo momento, éste es el supuesto de proporcionalidad en el riesgo (risk proportional hazard ). Por el nombre podemos intuir que la proporción en el riesgo se deﬁne como
+
+hˆ(t, X*) HR = hˆ(t, X)
+
+donde X* y X son las características de dos individuos. Sustituyendo de (1), tenemos esta proporción en el riesgo expresada de la siguiente manera:
+
+hˆ0(t)exp HR =
+hˆ0(t)exp
+
+p 1
+
+βˆiXi∗
+
+p 1
+
+βˆiXi
+
+= exp
+
+p
+βˆi (Xi∗ − Xi)
+1
+
+(2)
+
+13
+
+Si tenemos un grupo de tratamiento y uno de control, de tal forma que X1∗ = 1 y X1 = 0, la proporción de riesgo estimada sería
+HR = eβˆ1
+El método de estimación para este modelo es el de máxima verosimilitud.
+
+3.2. Análisis con doble salida. El modelo de Fine y Gray.
+Los modelos de riesgos en competencia (competing risks models) son utilizados cuando los sujetos investigados están expuestos a varias causas de falla (en este trabajo llamamos falla al evento salir del desempleo y las causas son encontrar y aceptar un trabajo en el sector formal o en el sector informal). Dado que las causas son distintas, solo la primera se observa, i.e. no podemos identiﬁcar si después hubiera salido o no al otro sector, pero esto no debe llevarnos a tomar las salidas al sector en competencia (el informal para el formal y viceversa) como observaciones censuradas, puesto que fueron un riesgo latente hasta el momento de la falla, pero el hecho de que no hubieran tenido una causa de falla no signiﬁca que la fueran a tener en algún momento, por lo que los estimadores del modelo de Cox pueden sesgarse si se quiere analizar por separado cada causa de falla.
+
+Como dijimos en la descripción de los datos, es más intuitivo trabajar con la función de incidencia acumulativa, pero también es más preciso, pues la metodología de Keplen-Meier requiere de tratar las observaciones en riesgo como censuradas. La función de incidencia acumulativa para cada causa se calcula mediante
+
+t
+
+Ij(t) = λj(u)S(u)du,
+
+∀j = 1, 2.
+
+(3)
+
+0
+
+para tiempo continuo, siendo Ij(t), λj(t) y S(u) las funciones de incidencia acumulativa, de riesgo y de supervivencia, respectivamente, y los subíndices j los indicativos de cada causa de falla.
+
+Para el análisis de tiempo discreto, sean 0 < t1 < t2 < . . . < tn el tiempo ordenado en el cual las fallas ocurren indistintamente de la causa, djk el número de fallas por la causa j en el tiempo tk y dk = d1k + d2k el número total de fallas en tk. Sea también nk el número de sujetos en riesgo (los desempleados en el tiempo tk), entonces la función de incidencia acumulativa se calcula por
+
+Iˆj(t) =
+
+λˆj(tk)Sˆ(tk − 1)
+
+(4)
+
+k:tk ≤t
+
+14
+
+donde la versión discreta de la función de riesgo λj(tk) = P (T = tk, D = j|T > tk−1) es
+
+estimada mediante la relación
+
+λj (tk )
+
+=
+
+djk nk
+
+(5)
+
+y la función de supervivencia se estima con
+
+Sˆ(t) =
+
+1 − λˆ1(tk) + λˆ2(tk)
+
+(6)
+
+k:tk ≤t
+
+El modelo de Fine y Gray (1999) es semiparamétrico de riesgos proporcionales y utiliza el principio de verosimilitud parcial y la técnica de pesos. Usa una transformación log(−log) de tal forma que los eventos de causa j se leen
+
+gj (Ij(t, X)) = h0j(t) + βjT X,
+
+∀j = 1, 2.
+
+(7)
+
+donde g = log(−log(1 − u)), X es un vector de covariantes y βj es un vector de regresores correspondiente a la causa j. Sobre la función g se utiliza el modelo de subdistribuciones de riesgo que relaciona con las funciones de incidencia acumulativa construido en Gray (1988), de tal forma que el modelo a estimar es
+
+Ij(t, X) = 1 − exp −exp βjT X h0j(t)
+
+(8)
+
+que permite evaluar el efecto de las covariantes sobre la incidencia acumulativa directamente, como en el modelo de Cox.
+
+15
+
+4. Resultados.
+A continuación se muestran los resultados obtenidos en las regresiones con el modelo de Cox y con el modelo de Fine y Gray, correspondientes a los modelos de una y doble salida, respectivamente.
+4.1. Resultados de las estimaciones del modelo de Cox.
+En la tabla 2 se encuentran las estimaciones del modelo de Cox para las muestras y submuestras ya descritas para los dos años de interés. Los coeﬁcientes estimados βi están ya exponenciados, lo que signiﬁca que se presentan los ratios de probabilidad entre grupos, puesto que todas las variables independientes son categóricas. Las regresiones se realizaron incluyendo los términos de interacción entre grupos de educación y edad, pero por ser varios y no resultar signiﬁcativos, se omiten del presente reporte. Para estos modelos y en los reportes presentados, la hipótesis nula es que el estimador tiene un valor de 1, pues lo que estamos estimando son ratios de probabilidad, i.e. eβˆi, de tal manera que los valores signiﬁcativos por encima de 1 implican una mayor probabilidad de salir del desempleo en cualquier momento, pues este modelo asume proporcionalidad en los riesgos (proportional hazards). Las estimaciones realizadas se hicieron con la técnica bootstrap para tener errores estándar más robustos y con la identiﬁcación de clusters por entidad federativa, para permitir correlación intraestatal, pero no necesariamente interestatal.
+Como se puede ver, el hecho de haber pertenecido o no al sector formal en el trabajo previo no implica una diferencia estadísticamente signiﬁcativa. A pesar de que se ha mostrado bastante persistencia (ﬁgura 3) en el sector donde se labora, esto no signiﬁca que la pertenencia a la formalidad o a la informalidad modiﬁque signiﬁcativamente la probabilidad de encontrar un empleo en cualquier momento.
+Debido a que la edad de los individuos en la muestra está representada en una variable categórica con cuatro grupos de edad, nuestro modelo estima cocientes de probabilidad respecto a un grupo de referencia, que es el de 50-59 años. Para este caso solamente se encuentra que los hombres de 30-39 años en la muestra de 2013 tenían hasta un 55 % más de probabilidad de encontrar un empleo que los del grupo de referencia.
+En cuanto al logro escolar alcanzado, donde el grupo de referencia es el de haber concluido la preparatoria o más, es notable una diferencia en el género: mientras que para los hombres es más probable hallar un empleo en los grupos de menor nivel de instrucción, para las mujeres esto no es signiﬁcativo. En el nivel de ingresos al que hemos restringido las muestras (hasta tres salarios mínimos) debería haber menos empleos para personas más caliﬁcadas, por lo que este resultado no es necesariamente contraintuitivo, aunque
+16
+
+no es del mayor interés para este trabajo centrarse en él. En la tabla 7 se halla la misma regresión pero tomando en este rubro al grupo con primaria incompleta como el de referencia, pues el de preparatoria y más puede estar presentando más heterogeneidad y causando problemas en las estimaciones. La interpretación es la misma y se presenta principalmente como una prueba de robustez.
+En todas las submuestras, un punto porcentual más de desempleo municipal implica, como era de esperarse, que la probabilidad de encontrar trabajo en cualquier sector es menor entre un 4 y un 8 %. Que todos los estimadores sean signiﬁcativos y menores a uno es un resultado esperado y de haber sido distinto sería preocupante para la interpretación de los resultados.
+
+Tabla 2: Estimaciones con el modelo de Cox.
+
+Variable Hombre Previo formal
+20-29 30-39 40-49 50-59 Primaria inc Primaria Secundaria Preparatoria + Desempleo municipal Tratamiento
+N
+
+Todos
+1.3262*** (-0.05684)
+0.9988 (-0.02871) 1.2992** (-0.1374) 1.5849*** (-0.1841)
+1.2415* (-0.1446)
+1 1.2268** (-0.1052) 1.1802*** (-0.07034) 1.1255** (-0.06541)
+1 0.9346*** (-0.01019)
+0.9961 (-0.1367)
+6223
+
+2013 Mujeres
+1.0851 (-0.05869)
+1.1075 (-0.4027) 1.7006** (-0.4602) 1.6716** (-0.4299)
+1 0.9841 (-0.23) 1.0067 (-0.1552) 1.0087 (-0.08153)
+1 0.9542* (-0.0242) 0.8669 (-0.1297)
+2042
+
+Hombres
+0.9588 (-0.03273) 1.3390** (-0.1572) 1.5530*** (-0.1801)
+1.1453 (-0.1403)
+1 1.2862** (-0.1528) 1.2395*** (-0.07457) 1.1900*** (-0.07714)
+1 0.9273*** (-0.01206)
+1.0598 (-6.6036)
+4181
+
+Todos
+1.3984*** (-0.06693)
+1.0116 (-0.04366)
+1.2161 (-0.1972)
+1.1675 (-0.1442) 1.3446** (-0.1581)
+1 1.4064** (-0.1878) 1.2349*** (-0.08768) 1.0881** (-0.04574)
+1 0.9445*** (-0.01841)
+0.9394 (-0.114)
+7029
+
+2014 Mujeres
+1.0574 (-0.06607)
+0.8484 (-0.4104)
+1.0683 (-0.408) 1.4495 (-0.5245)
+1 1.0965 (-0.3967) 1.1468 (-0.214) 1.0466 (-0.1017)
+1 0.9246*** (-0.02058)
+0.8173 (-0.1114)
+2285
+
+Hombres
+0.996 (-0.04302)
+1.3020* (-0.1925)
+1.2084 (-0.1961) 1.3254* (-0.2004)
+1 1.4230** (-0.195) 1.2275** (-0.1004) 1.0942 (-0.06022)
+1 0.9513*** (-0.01399)
+0.9954 (-0.1349)
+4744
+
+Desviación estándar en paréntesis. * p<0.1, **p<0.05 ***p<.01. Fuente: elaboración propia.
+
+Respecto al grupo de tratamiento, esto es, los 55 municipios en donde el salario mínimo tuvo un incremento, antes de que eso sucediera no había una diferencia signiﬁcativa en la probabilidad de encontrar empleo con el resto de los municipios. Dado que después del tratamiento ninguna de las muestras presenta un cambio signiﬁcativo en tal estimador,
+17
+
+podemos pensar que en general no pasó nada sustancial en todos esos municipios que afectara la función de riesgo, esto es, la estructura de duración en el desempleo considerando homogéneos (en cuanto que ambos son destinos de salida del desempleo) a los sectores formal e informal.
+En las ﬁguras 9 y 10 se muestran los comparativos de las estimaciones del modelo de Cox con las funciones de supervivencia observadas. Como se puede ver, las diferencias entre las curvas de tratamiento y control no son muy grandes a simple vista, en especial en las estimaciones, debido al valor considerado estadísticamente en la unidad.
+En la tabla 8 del anexo se muestran las pruebas del supuesto de proporcionalidad del modelo de Cox. En general decimos que las variables cumplen con dicho supuesto, ya que no se puede rechazar la hipótesis nula de que los errores de Schoenfeld (Schoenfeld, 1982) analizados con la prueba propuesta por Grambsch y Therneau (1994) no tienen una pendiente distinta de 0 respecto al tiempo.
+Una revisión adicional pero solamente para nuestra variable que deﬁne si los individuos pertenecen o no a la zona de los 55 municipios tratados se hace en la ﬁgura 17 del anexo. Es muy evidente que la línea suavizada es horizontal, por lo que decimos que la proporción de riesgos entre los municipios que pertenecían a la zona B y los que no, es constante en el tiempo.
+18
+
+Figura 9: Comparativo entre funciones de supervivencia observadas y estimadas para muestras 2013.
+
+Observación
+1.00
+
+Estimación
+1
+
+Observación
+1.00
+
+Estimación
+1
+
+.8 0.75
+.6 0.50
+.4
+0.25 .2
+
+Survival Survival
+
+.8 0.75
+.6 0.50
+.4
+0.25 .2
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(a) Mujeres.
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(b) Hombres.
+
+Observación
+1.00
+
+Estimación
+1
+
+Survival
+
+.8 0.75
+.6 0.50
+.4
+0.25 .2
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(c) Todos.
+
+Figura 10: Comparativo entre funciones de supervivencia observadas y estimadas para muestras 2014.
+
+Observación
+1.00
+
+Estimación
+1
+
+Observación
+1.00
+
+Estimación
+1
+
+.8 0.75
+.6 0.50
+.4
+0.25 .2
+
+Survival Survival
+
+.8 0.75
+.6 0.50
+.4
+0.25 .2
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(a) Mujeres.
+
+(b) Hombres.
+
+Observación
+1.00
+
+Estimación
+1
+
+Survival
+
+.8 0.75
+.6 0.50
+.4
+0.25 .2
+
+0.00
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(c) Todos.
+19
+
+4.2. Resultados de las estimaciones del modelo de Fine y Gray.
+La tabla 3 contiene los resultados de las estimaciones del modelo de Fine y Gray tomando la salida del desempleo al sector formal como el evento de interés y la salida a la informalidad como el riesgo latente en competencia. Al igual que en el modelo de Cox, se utilizaron la técnica de bootstrap y clusters por entidad federativa.
+Lo primero destacable es la signiﬁcancia que tiene la variable que indica a qué sector se perteneció en el trabajo previo al desempleo. Los estimadores con un valor mayor a 2 implicarían que para quienes laboraron en el sector formal tienen más del doble de salir del desempleo hacia ese mismo sector que quienes fueron trabajadores informales antes. Una segunda característica notable es que el desempleo municipal no resulta signiﬁcativo en el margen para prácticamente todas las muestras.
+Respecto a los municipios que a ﬁnales de 2012 recibieron un aumento en el salario mínimo se puede notar que previo al tratamiento (muestra de 2013 con información de 2012), los hombres tenían una mayor probabilidad de salir empleados al sector formal que los hombres del resto de los municipios. Sin embargo, en la muestra de 2014 con información del 2013, esto es, después del tratamiento, la residencia en uno de esos municipios no implicaría una mayor ni una menor probabilidad de salir hacia el mercado laboral formal. Dicho de otra manera, los hombres de los municipios tratados tendrían menos probabilidades de salir hacia el sector formal después que antes del tratamiento.
+Por su parte la tabla 4 contiene la información de las estimaciones del modelo de Fine y Gray tomando la salida hacia la informalidad como evento de interés y la salida a la formalidad como un riesgo latente en competencia. Como es de esperarse, algunos estimadores van en la dirección contraria al ejercicio que considera como evento de interés salir hacia el sector formal. En particular, la variable dicotómica que indica si se perteneción previamente al sector formal tiene estimadores que indican que la probabilidad de cambiar de, habiendo sido formal en el trabajo previo, hacia la informalidad, esto es, la informalidad también es persistente, como ya se ha dicho antes. En general los estimadores indican que los grupos de más edad y los de más escolaridad tienen menores probabilidad, en cualquier momento, de salir del desempleo hacia el empleo informal. Respecto al desempleo se encuentra que mientras éste aumenta, la probabilidad de encontrar un trabajo decrece en una magnitud levemente superior a la que encontramos antes, en la estimación del modelo de Cox.
+20
+
+Tabla 3: Estimaciones con el modelo de Fine y Gray, considerando la salida al sector formal como el interés y la salida a la informalidad como el riesgo en competencia.
+
+2013
+
+2014
+
+Variable
+
+Todos Mujeres Hombres Todos Mujeres Hombres
+
+Hombre
+
+1.2671*** (-0.0805)
+
+1.3977*** (-0.06204)
+
+Previo formal
+
+2.3973*** 2.8760*** 2.2061*** 2.5401*** 2.7382*** 2.4579*** (-0.1079) (-0.2801) (-0.1617) (-0.1378) (-0.2675) (-0.1712)
+
+20-29
+
+1.1298
+
+0.3462
+
+1.3685 2.2312** 1.8905 2.3628**
+
+30-39 40-49
+
+(-0.474) 1.6428 (-0.6109) 0.7227 (-0.4294)
+
+(-3.1955) 1.2648
+(-7.3515) 0.8304
+(-4.4682)
+
+(-0.6747) 1.7003 (-0.829) 0.6127
+(-2.2074)
+
+(-0.7555) 0.7833
+(-0.3684) 1.2672
+(-0.4513)
+
+(-7.3651) 0.2471
+(-1.8854) 1.2613
+(-8.7751)
+
+(-0.9058) 1.0004
+(-0.6135) 1.2907
+(-0.5565)
+
+50-59
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Primaria inc
+
+0.4139*** 0.185
+
+0.4728** 0.7624
+
+0.8373
+
+0.7293
+
+(-0.1077) (-1.3144) (-0.1442) (-0.2084) (-2.4639) (-0.1926)
+
+Primaria Secundaria
+
+0.5961*** (-0.09277) 0.8708** (-0.05925)
+
+0.9068 (-0.1576) 0.8087** (-0.08346)
+
+0.5373*** (-0.07484)
+0.9094 (-0.0729)
+
+0.5715*** (-0.0982) 0.8875** (-0.05236)
+
+0.5598* (-0.1708)
+0.9033 (-0.1119)
+
+0.5591*** (-0.09801)
+0.8714* (-0.06336)
+
+Preparatoria +
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Desempleo municipal 1.0388* 1.0427
+
+1.0379
+
+1.0206
+
+0.9966
+
+1.0301
+
+(-0.02357) (-0.02888) (-0.02855) (-0.01586) (-0.03185) (-0.02069)
+
+Tratamiento
+
+1.3169* 1.0514 1.4510** 1.1521
+
+1.0785
+
+1.1797
+
+(-0.1929) (-0.1147) (-0.2458) (-2.8911) (-0.1585) (-3.0141)
+
+N
+
+6223
+
+2042
+
+4181
+
+7029
+
+2285
+
+4744
+
+Desviación estándar en paréntesis. * p<0.1, **p<0.05 ***p<.01. Fuente: elaboración propia.
+
+En lo que respecta a los municipios con el incremento en el salario mínimo se ve un efecto cruzado entre la muestra que contiene todas las observaciones y la de las mujeres solamente, mientras que en el caso de los hombres los estimadores no son estadísticamente signiﬁcativos. En la primera se ve que mientras antes del aumento al salario mínimo la probabilidad de salir del desempleo al sector informal en cualquier momento (dado que también había un riesgo latente de salir al empleo formal) en los 55 municipios era signiﬁcativamente menor que en el resto por casi un 30 %, después del incremento del salario mínimo esta diferencia no resulta estadísticamente signiﬁcativa. Para la muestra de las mujeres el sentido es el inverso: mientras que antes del tratamiento las trabajadoras de los municipios de éste grupo no presentaban diferencia signiﬁcativa con el resto, luego del
+
+21
+
+tratamiento presentan una probabilidad signiﬁcativamente menor de ir al sector informal en cualquier momento del episodio de desempleo que el grupo de control.
+
+Tabla 4: Estimaciones con el modelo de Fine y Gray, considerando la salida al sector informal como el interés y la salida a la formalidad como el riesgo en competencia.
+
+2013
+
+2014
+
+Variable
+
+Todos Mujeres Hombres Todos Mujeres Hombres
+
+Hombre
+
+1.1291*** (-0.04983)
+
+1.1505*** (-0.06223)
+
+Previo formal
+
+0.5094*** 0.4964*** 0.5132*** 0.5117*** 0.5219*** 0.5121*** (-0.03013) (-0.05037) (-0.0308) (-0.03039) (-0.0428) (-0.03248)
+
+20-29
+
+1.2906** 1.4953
+
+1.2591*
+
+0.9229
+
+0.6278
+
+1.0015
+
+30-39 40-49
+
+(-0.1452) 1.3254** (-0.1653) 1.4179**
+
+(-0.6549) 1.6605
+(-0.5728) 1.9869**
+
+(-0.1615) 1.2692* (-0.1784) 1.3121
+
+(-0.1673) 1.2241
+(-0.1603) 1.2073*
+
+(-0.306) 1.3696 (-0.4296) 1.2771
+
+(-0.1815) 1.2086
+(-0.1947) 1.201
+
+(-0.2011) (-0.5923) (-0.2287) (-0.1282) (-0.4476) (-0.1591)
+
+50-59
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Primaria inc
+
+2.1565*** 2.0126*** 2.1943*** 1.9606*** 1.367 2.0699*** (-0.2265) (-0.4908) (-0.2797) (-0.3186) (-0.5008) (-0.3281)
+
+Primaria Secundaria
+
+1.8395*** (-0.1227) 1.3778*** (-0.1073)
+
+1.1921 (-0.2264) 1.2647** (-0.1315)
+
+2.0391*** (-0.1905) 1.4489*** (-0.134)
+
+1.9564*** (-0.1635) 1.3148*** (-0.08379)
+
+1.6897*** (-0.2931) 1.2356* (-0.1352)
+
+2.0215*** (-0.2054) 1.3585*** (-0.1075)
+
+Preparatoria +
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Desempleo municipal 0.8927*** 0.9120*** 0.8874*** 0.9184*** 0.8978*** 0.9235*** (-0.01311) (-0.0193) (-0.01642) (-0.01498) (-0.02536) (-0.02057)
+
+Tratamiento
+
+0.7164** 0.7658
+
+0.7046
+
+0.7878 0.6707*** 0.8481
+
+(-0.1031) (-0.1619) (-1.4688) (-0.1197) (-0.1027) (-0.1187)
+
+N
+
+6223
+
+2042
+
+4181
+
+7029
+
+2285
+
+4744
+
+Desviación estándar en paréntesis. * p<0.1, **p<0.05 ***p<.01. Fuente: elaboración propia.
+
+En las tablas 9 y 10 ubicadas en el anexo se encuentran los resultados de estas mismas estimaciones cambiando el grupo de referencia en el nivel escolar alcanzado, poniendo como base de comparación al grupo de trabajadores con primaria incompleta. Los estimadores indican en general lo mismo que se dijo arriba.
+Lo que se presenta en las ﬁguras 11, 12, 13 y 14 es la comparación entre las funciones de incidencia acumulativa observadas y las estimadas con el modelo de Fine y Gray.
+
+22
+
+Figura 11: Comparativo entre funciones de incidencia acumulativa observadas y estimadas para muestras 2013 con salida al sector formal.
+
+Incidencia acumulativa Cumulative Incidence Incidencia acumulativa Cumulative Incidence
+
+Observación
+.5
+
+Estimación
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Observación
+.6
+
+Estimación
+.6
+
+.5
+
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(a) Mujeres.
+
+(b) Hombres.
+
+Observación
+.5
+
+Estimación
+.5
+
+.4
+
+.4
+
+Incidencia acumulativa Cumulative Incidence
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(c) Todos.
+
+Figura 12: Comparativo entre funciones de incidencia acumulativa observadas y estimadas para muestras 2013 con salida al sector informal.
+
+Incidencia acumulativa Cumulative Incidence Incidencia acumulativa Cumulative Incidence
+
+Observación
+.5
+
+Estimación
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Observación
+.6
+
+Estimación
+.6
+
+.5
+
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(a) Mujeres.
+
+(b) Hombres.
+
+Observación
+.5
+
+Estimación
+.5
+
+.4
+
+.4
+
+Incidencia acumulativa Cumulative Incidence
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(c) Todos.
+
+23
+
+Figura 13: Comparativo entre funciones de incidencia acumulativa observadas y estimadas para muestras 2014 con salida al sector formal.
+
+Incidencia acumulativa Cumulative Incidence Incidencia acumulativa Cumulative Incidence
+
+Observación
+.5
+
+Estimación
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Observación
+.6
+
+Estimación
+.6
+
+.5
+
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(a) Mujeres.
+
+(b) Hombres.
+
+Observación
+.5
+
+Estimación
+.5
+
+.4
+
+.4
+
+Incidencia acumulativa Cumulative Incidence
+
+.3
+
+.3
+
+.2
+
+.2
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(c) Todos.
+
+Figura 14: Comparativo entre funciones de incidencia acumulativa observadas y estimadas para muestras 2014 con salida al sector informal.
+
+Observación
+.8
+
+Estimación
+.8
+
+Observación
+.6
+
+Estimación
+.6
+
+Incidencia acumulativa Cumulative Incidence Incidencia acumulativa Cumulative Incidence
+
+.6
+
+.6
+
+.4
+
+.4
+
+.2
+
+.2
+
+.5
+
+.5
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(a) Mujeres.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+.1
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(b) Hombres.
+
+Observación
+.8
+
+Estimación
+.8
+
+.6
+
+.6
+
+Incidencia acumulativa Cumulative Incidence
+
+.4
+
+.4
+
+.2
+
+.2
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Control
+
+Tratamiento
+
+(c) Todos.
+
+24
+
+Para analizar el supuesto de proporcionalidad en el riesgo se generaron los residuos de Schoenfeld y, mediante una regresión no paramétrica ponderada de suavizado local (lowess), se revisa, al igual que en el modelo de Cox, que no tenga pendiente, lo que indicaría que se cumple el supuesto. En las ﬁguras 18 y 19 mostramos los resultados de estas regresiones. Es observable que, a diferencia de las regresiones del modelo Cox, varias de las líneas tienen una ligera pendiente que podría estar indicando que no se cumple la proporcionalidad, pues los residuos estarían indicando que hay una relación entre el tiempo y el cociente de probabilidades del grupo de tratamiento y de control de salir del desempleo. Esto debería estar explicando que en las ﬁguras presentadas arriba se nota una mayor diferencia entre las estimaciones y las observaciones que en las presentadas para el modelo de Cox (9 y 10).
+4.3. Límites y oportunidades.
+Si bien es cierto que los modelos y resultados arriba presentados pueden arrojar luz sobre el experimento natural analizado y brindar información importante sobre la estructura de la duración del desempleo tanto considerando la salida del mismo hacia un sector único o distinguiendo un mercado laboral de dos sectores, es menester advertir las razones por las que los resultados deben tomarse con cautela.
+Cuando se estiman modelos en los que se tienen dos muestras, de tratamiento y de control, uno de los primeros supuestos es que son similares en ciertos parámetros de interés. Si lo que se hace es utilizar un panel, la metodología apropiada para estimar un tratamiento es la de diferencias en diferencias.
+Para revisar la comparabilidad de las muestras hicimos la prueba de los rangos de Wilcoxon sobre varias variables, siendo entre ellas la más importante el desempleo municipal, por ser de carácter local, como el tratamiento (queremos comparar individuos de municipios lo más similares posible en todo, para diferenciarlos en únicamente por pertenecer o no a la vieja zona B). En dicha prueba se rechaza la hipótesis nula, según la cual las muestras tendrían la misma mediana sin asumir distribución alguna. Por otra parte, en la ﬁgura 15 mostramos la diferencia en la distribución del desempleo municipal entre los municipios de la zona B y los de las zonas A y C. Es bastante claro que los segundos tienen más varianza y los primeros están más conglomerados en la media.
+Esta diﬁcultad en la comparabilidad de las muestras abre la puerta a más estudios que puedan aportar información adicional sobre lo que en este trabajo se ha realizado. Se necesita, por una parte, más información a nivel municipal para tener mejores posibilidades
+25
+
+de construir un grupo de control más sólido, o bien, elaborar uno sintético. Figura 15: Densidad kernel del desempleo municipal por año.
+
+2013
+1.5
+
+Densidad
+
+1
+
+.5
+
+0
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+Desempleo municipal (%)
+
+Control
+
+Tratamiento
+
+2014
+1.5
+
+Densidad
+
+1
+
+.5
+
+0
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+Desempleo municipal (%)
+
+Control
+
+Tratamiento
+
+Fuente: elaboración propia.
+
+Otra alternativa que podría realizarse es la construcción de un pseudo-panel que incluya tal información municipal. Por último, se convendría hacer el análisis no para la duración en el desempleo, sino del empleo, ya que en ese caso sí sería posible construir un panel, pues mientras que la ENOE no da información de la fecha de entrada en el empleo, sí la brinda para cuando el trabajador termina su periodo de empleo y no se tendría solamente información previa a la encuesta ampliada (que como hemos ya señalado, se realiza durante el primer trimestre del año). Además, con dicho panel sería posible eliminar efectos ﬁjos de los individuos y heterogeneidad no observada, con lo que los resultados podrían ser más robustos.
+Por restricciones de diversa índole estas tareas quedarán para una revisión posterior de este trabajo o la potencial realización de otro con el modelo de empleo que se ha mencionado.
+
+26
+
+5. Conclusiones.
+En este estudio hemos analizado transiciones del desempleo al empleo en el mercado mexicano antes y después de una decisión administrativa que homologó dos zonas de salario mínimo, signiﬁcando esto un aumento del 2.9 % para una de ellas. Para realizarlo utilizamos dos muestras a partir de la Encuesta Nacional de Ocupación y Empleo.
+Mediante el uso de un modelo de riesgo proporcional para una salida (el modelo de Cox) se encontró que en los municipios donde el salario mínimo aumentó no había diferencia en la probabilidad de salir del desempleo en cualquier momento antes del incremento en el salario respecto al resto de los municipios. Esta situación permanece luego del evento de subir el salario mínimo en dichos municipios, por lo que no se le puede atribuir ningún efecto ostensible.
+Estimando un modelo de riesgos en competencia de doble salida que asume también proporcionalidad en el riesgo propuesto originalmente por Fine y Gray se encontró que en general existe una persistencia signiﬁcativa en el sector, es decir, que existe una mayor probabilidad de salir al mismo sector al que se perteneció en el último trabajo. Además se halló que los hombres en los municipios tratados tendrían menos probabilidades de salir hacia el sector formal después que antes del aumento del salario mínimo. Para las mujeres ocurre que luego del evento en cuestión en los municipios de la anterior zona B tienen una menor probabilidad de hallar un empleo en el sector informal que antes de dicho evento.
+Los resultados en general deben ser tomados con cautela debido a un potencial problema de comparabilidad entre los municipios que recibieron el tratamiento y los que no. Por otra parte, en particular para el modelo de riesgos en competencia las predicciones no son tan buenas porque es posible que el supuesto de proporcionalidad en el riesgo no se esté cumpliendo. Más trabajo debe ser realizado, preferentemente con datos en panel, para intentar mejorar el comportamiento del modelo y dar robustez a las conclusiones que de ellos se extraigan.
+27
+
+6. Anexo.
+
+Tabla 5: Municipios que pertenecían previamente a la zona B.
+
+Sonora Altar Atil Bácum
+Benito Juárez Benjamín Hill
+Caborca Cajeme Carbó La Colorada Cucurpe Empalme Etchojoa Guaymas Hermosillo Huatabampo Imuris Magdalena Navojoa Opodepe Oquitoa Pitiquito San Ignacio Río Muerto San Miguel de Horacasitas Santa Ana
+Sáric Suaqui Grande
+Trincheras Tubutama
+
+Jalisco Guadalajara
+El Salto Tlajomulco de Zúñiga
+Tlaquepaque Tonalá Zapopan
+Nuevo León Apodaca
+San Pedro Garza García General Escobedo Guadalupe Monterrey
+San Nicolás de los Garza Santa Catarina Tamaulipas Aldama Altamira Antiguo Morelos Ciudad Madero Gómez Farías González El Mante Nuevo Morelos Ocampo Tampico Xicoténcatl Veracruz Coatzintla
+Poza Rica de Hidalgo Tuxpan
+
+Fuente: elaboración propia con datos de la Comisión Nacional de Salarios Mínimos.
+
+28
+
+Tabla 6: Estadísticas descriptivas de las muestras.
+
+2013 (6223 obs.)
+
+2014 (7029 obs.)
+
+Variable
+
+Media Desv. Est. Media Desv. Est.
+
+Meses desempleo Hombre Mujer Edad 20-29 30-39 40-49 50-59 Zona A Zona B Zona C
+Años escolaridad Primaria incompleta Primaria completa Secundaria completa Preparatoria o más
+Ingreso previo Previo < 1 salariom Previo 1 − 2 salariosm Previo 2 − 3 salariosm
+Previo formal Formal-Formal* Formal-Informal* Informal-Formal* Informal-Informal* Desempleo municipal
+Censurados Salida formal Salida informal
+
+3.1400 0.6719 0.3281 32.1562 0.4975 0.2677 0.1568 0.0779 0.1451 0.1090 0.7459 9.7320 0.0776 0.1967 0.4072 0.3185 3319.4500 0.0942 0.5227 0.3831 0.4313 0.2748 0.1682 0.1457 0.4112 0.0534 0.3791 0.2611 0.3598
+
+2.6925 0.4696 0.4696 9.9572 0.5000 0.4428 0.3637 0.2681 0.3522 0.3116 0.4354 3.6880 0.2676 0.3975 0.4914 0.4659 1114.0650 0.2921 0.4995 0.4862 0.4953 0.4465 0.3741 0.3529 0.4921 0.0153 0.4852 0.4393 0.4800
+
+3.1959 0.6749 0.3251 32.3340 0.4826 0.2756 0.1680 0.0738 0.1535 0.1141 0.7324 9.7432 0.0730 0.1783 0.4318 0.3170 3466.3300 0.0965 0.5238 0.3797 0.4368 0.2671 0.1769 0.1343 0.4217 0.0531 0.3742 0.2512 0.3746
+
+2.7362 0.4684 0.4684 9.9511 0.4997 0.4468 0.3739 0.2615 0.3605 0.3180 0.4427 3.5400 0.2601 0.3828 0.4954 0.4653 1205.0120 0.2952 0.4995 0.4853 0.4960 0.4425 0.3816 0.3411 0.4939 0.0153 0.4839 0.4338 0.4841
+
+* 3864 y 4399 observaciones para 2013 y 2014, respectivamente. Fuente: elaboración propia.
+
+29
+
+Figura 16: Funciones de supervivencia Keplen-Meier considerando el sector de salida, año y zona de residencia.
+
+2013
+
+Control
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Tratamiento
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+2014
+
+Control
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Tratamiento
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Fuente: elaboración propia.
+
+(a) Mujeres
+
+2013
+
+Control
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Tratamiento
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+2014
+
+Control
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Tratamiento
+1 Informal
+.8
+
+.6 Formal
+.4
+
+.2
+
+Censurado
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Fuente: elaboración propia.
+
+(b) Hombres
+
+30
+
+Tabla 7: Estimaciones con el modelo de Cox tomando en los grupos de nivel escolar el de primaria incompleta como referencia.
+
+2013
+
+2014
+
+Variable
+
+Todos Mujeres Hombres Todos Mujeres Hombres
+
+Hombre
+
+1.3262*** (-0.05379)
+
+1.3984*** (-0.05825)
+
+Previo formal
+
+0.9988
+
+1.0851
+
+0.9588
+
+1.0116
+
+1.0574
+
+0.996
+
+(-0.02779) (-0.05763) (-0.03084) (-0.04009) (-0.06827) (-0.04454)
+
+20-29
+
+1.2992**
+
+1.1075 1.3390** 1.2161
+
+0.8484
+
+1.3020*
+
+30-39 40-49
+
+(-0.1469) 1.5849*** (-0.1621)
+1.2415 (-0.1755)
+
+(-0.3511) 1.7006* (-0.5391) 1.6716 (-0.5229)
+
+(-0.1732) 1.5530*** (-0.1875)
+1.1453 (-0.1738)
+
+(-0.1786) 1.1675
+(-0.1456) 1.3446** (-0.1681)
+
+(-0.4296) 1.0683
+(-0.4256) 1.4495
+(-0.4405)
+
+(-0.1933) 1.2084
+(-0.1665) 1.3254* (-0.2022)
+
+50-59
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Preparatoria +
+
+0.8151** 1.0162 0.7775*** 0.7110*** 0.912 0.7027*** (-0.07665) (-0.2525) (-0.07453) (-0.08189) (-0.3521) ( -0.07633)
+
+Secundaria Primaria
+
+0.9174 (-0.09193)
+0.962 (-0.1138)
+
+1.025 (-0.2333)
+1.023 (-0.2733)
+
+0.9252 (-0.1042)
+0.9637 (-0.11)
+
+0.7736** (-0.07951)
+0.8781 (-0.1106)
+
+0.9545 (-0.3703)
+1.0459 (-0.4981)
+
+0.7689*** (-0.07175)
+0.8626 (-0.09142)
+
+Primaria inc
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+Desempleo municipal 0.9346*** 0.9542** 0.9273*** 0.9445*** 0.9246*** 0.9513*** (-0.009997) (-0.02133) (-0.01344) (-0.01524) (-0.01788) (-0.01543)
+
+Tratamiento
+
+0.9961 (-0.1374)
+
+0.8669 (-0.1426)
+
+1.0598 (-0.144)
+
+0.9394
+
+0.8173
+
+(-0.1097) (-0.1251)
+
+0.9954 (-0.1515)
+
+N
+
+6223
+
+2042
+
+4181
+
+7029
+
+2285
+
+4744
+
+Desviación estándar en paréntesis. * p<0.1, **p<0.05 ***p<.01. Fuente: elaboración propia.
+
+31
+
+Tabla 8: Pruebas al supuesto de proporcionalidad en el modelo de Cox.
+
+Variable
+Hombre Previo formal
+20-29 30-39 40-49 50-59 Primaria inc Primaria Secundaria Preparatoria + Desempleo municipal Tratamiento
+
+Todos
+0.0912 0.0066 0.8899 0.0754 0.0718
+. 0.3223 0.9874 0.8141
+. 0.7039 0.6314
+
+2013 Mujeres
+0.3224 0.8910 0.7102 0.9343
+. 0.6736 0.8404 0.9324
+. 0.8035 0.3573
+
+Hombres
+0.0267 0.7754 0.0187 0.0512
+. 0.1533 0.6209 0.9585
+. 0.9733 0.9272
+
+Todos
+0.1070 0.1285 0.2847 0.9140 0.6632
+. 0.8004 0.6634 0.0491
+. 0.3195 0.8170
+
+2014 Mujeres
+0.6270 0.9287 0.9744 0.5813
+. 0.9312 0.6374 0.7367
+. 0.4453 0.6707
+
+Hombres
+0.0659 0.2897 0.9103 0.9272
+. 0.9180 0.3094 0.0257
+. 0.4540 0.7966
+
+Para valores mayores a 0,1 se considera que en la variable indicada no se está violando el supuesto de proporcionalidad.. Fuente: elaboración propia.
+
+Figura 17: Prueba de proporcionalidad usando los errores de Schoenfeld en el modelo de Cox para la variable de tratamiento.
+
+Todos 2013
+10
+
+Mujeres 2013
+10
+
+Hombres 2013
+10
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+5
+
+5
+
+5
+
+0
+
+0
+
+0
+
+-5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Todos 2014
+10
+
+-5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Mujeres 2014
+10
+
+-5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Hombres 2014
+10
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+5
+
+5
+
+5
+
+0
+
+0
+
+0
+
+-5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Ancho de banda: 0.8 Fuente: elaboración propia
+
+-5
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+-5
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+32
+
+Tabla 9: Estimaciones con el modelo de Fine y Gray, considerando la salida al sector formal como el interés y la salida a la informalidad como el riesgo en competencia y tomando en los grupos de nivel escolar el de primaria incompleta como referencia.
+
+Variable Hombre Previo formal
+20-29 30-39 40-49 50-59 Preparatoria + Secundaria Primaria Primaria inc Desempleo municipal Tratamiento
+N
+
+Todos
+1.2671*** (-0.0805) 2.3973*** (-0.1079)
+1.1298 (-0.474) 1.6428 (-0.6109) 0.7227 (-0.4294)
+1 2.4162*** (-0.6287) 2.1040*** (-0.5566)
+1.4402 (-0.444)
+1 1.0388* (-0.02357) 1.3169* (-0.1929)
+6223
+
+2013 Mujeres
+2.8760*** (-0.2801)
+0.3462 (-3.1955)
+1.2648 (-7.3515)
+0.8304 (-4.4682)
+1 5.4045 (-38.391) 4.3707 (-31.177) 4.901 (-34.403)
+1 1.0427 (-0.02888) 1.0514 (-0.1147) 2042
+
+Hombres
+2.2061*** (-0.1617)
+1.3685 (-0.6747)
+1.7003 (-0.829) 0.6127 (-2.2074)
+1 2.1150** (-0.6452) 1.9234** (-0.6121)
+1.1365 (-0.4035)
+1 1.0379 (-0.02855) 1.4510** (-0.2458) 4181
+
+Todos
+1.3977*** (-0.06204) 2.5401*** (-0.1378) 2.2312** (-0.7555)
+0.7833 (-0.3684)
+1.2672 (-0.4513)
+1 1.3117 (-0.3585) 1.1641 (-0.3189) 0.7496 (-0.2674)
+1 1.0206 (-0.01586) 1.1521 (-2.8911) 7029
+
+2014 Mujeres
+2.7382*** (-0.2675)
+1.8905 (-7.3651)
+0.2471 (-1.8854)
+1.2613 (-8.7751)
+1 1.1944 (-3.5148) 1.0789 (-3.2103) 0.6686 (-1.9582)
+1 0.9966 (-0.03185) 1.0785 (-0.1585) 2285
+
+Hombres
+2.4579*** (-0.1712) 2.3628** (-0.9058)
+1.0004 (-0.6135)
+1.2907 (-0.5565)
+1 1.3712 (-0.3621) 1.1949 (-0.325) 0.7666 (-0.2773)
+1 1.0301 (-0.02069) 1.1797 (-3.0141) 4744
+
+Desviación estándar en paréntesis. * p<0.1, **p<0.05 ***p<.01. Fuente: elaboración propia.
+
+33
+
+Tabla 10: Estimaciones con el modelo de Fine y Gray, considerando la salida al sector informal como el interés y la salida a la formalidad como el riesgo en competencia y tomando en los grupos de nivel escolar el de primaria incompleta como referencia.
+
+Variable Hombre Previo formal
+20-29 30-39 40-49 50-59 Preparatoria + Secundaria Primaria Primaria inc Desempleo municipal Tratamiento
+N
+
+Todos
+1.1291*** (-0.04908) 0.5094*** (-0.03048) 1.2906** (-0.1448) 1.3254** (-0.1663) 1.4179** (-0.1974)
+1 0.4637*** (-0.05126) 0.6389*** (-0.07216)
+0.853 (-0.1089)
+1 0.8927*** (-0.01277) 0.7164** (-0.1042)
+6223
+
+2013 Mujeres
+0.4964*** (-0.05029)
+1.4953 (-0.6553)
+1.6605 (-0.5689) 1.9869** (-0.5923)
+1 0.4969*** (-0.1207)
+0.6284* (-0.1622) 0.5923* (-0.1605)
+1 0.9120*** (-0.01917)
+0.7658 (-0.1605)
+2042
+
+Hombres
+0.5132*** (-0.03054)
+1.2591* (-0.1581) 1.2692* (-0.1818)
+1.3121 (-0.231)
+1 0.4557*** (-0.05861) 0.6603*** (-0.06789)
+0.9293 (-0.1103)
+1 0.8874*** (-0.01619)
+0.7046 (-1.469)
+4181
+
+Todos
+1.1505*** (-0.0599) 0.5117*** (-0.0294)
+0.9229 (-0.1673)
+1.2241 (-0.1615) 1.2073* (-0.1285)
+1 0.5101*** (-0.08294) 0.6706*** (-0.09767)
+0.9979 (-0.1861)
+1 0.9184*** (-0.01499)
+0.7878 (-0.121)
+7029
+
+2014 Mujeres
+0.5219*** (-0.04274)
+0.6278 (-0.306) 1.3696 (-0.4288) 1.2771 (-0.4377)
+1 0.7315 (-0.2684) 0.9039 (-0.3545) 1.236 (-0.5127)
+1 0.8978*** (-0.0253) 0.6707** (-0.1044)
+2285
+
+Hombres
+0.5121*** (-0.0325)
+1.0015 (-0.1818)
+1.2086 (-0.194)
+1.201 (-0.1589)
+1 0.4831*** (-0.07702) 0.6563*** (-0.09306)
+0.9766 (-0.1847)
+1 0.9235*** (-0.02006)
+0.8481 (-0.1168)
+4744
+
+Desviación estándar en paréntesis. * p<0.1, **p<0.05 ***p<.01. Fuente: elaboración propia.
+
+34
+
+Figura 18: Prueba de proporcionalidad usando los errores de Schoenfeld en el modelo de Fine y Gray con salida al sector formal como evento de interés para la variable de tratamiento.
+
+Todos 2013
+1
+
+Mujeres 2013
+1
+
+Hombres 2013
+1
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+.5
+
+.5
+
+.5
+
+0
+
+0
+
+0
+
+-.5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Todos 2014
+1
+
+-.5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Mujeres 2014
+1
+
+-.5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Hombres 2014
+1
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+.5
+
+.5
+
+.5
+
+0
+
+0
+
+0
+
+-.5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Ancho de banda: 0.8 Fuente: elaboración propia
+
+-.5
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+-.5
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Figura 19: Prueba de proporcionalidad usando los errores de Schoenfeld en el modelo de Fine y Gray con salida al sector informal como evento de interés para la variable de tratamiento.
+
+Todos 2013
+1
+
+Mujeres 2013
+1
+
+Hombres 2013
+1
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+.5
+
+.5
+
+.5
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Todos 2014
+1
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Mujeres 2014
+1
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Hombres 2014
+1
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+Residuos Schoenfeld escalados
+
+.5
+
+.5
+
+.5
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+Ancho de banda: 0.8 Fuente: elaboración propia
+
+0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+35
+
+0
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Meses en desempleo
+
+Referencias
+[1] Alba-Ramírez, Alfonso: How temporary is temporary employment in Spain? Journal of Labor Research, 19(4):695–710, 1998.
+[2] Arranz, José M., Carlos García-Serrano y Luis Toharia: The inﬂuence of temporary employment on unemployment exits in a competing risks framework. Journal of Labor Research, 31(1):67–90, 2010.
+[3] Arulampalam, Wiji y Mark B. Stewart: The determinants of individual unemployment durations in an era of high unemployment. The Economic Journal, páginas 321–332, 1995.
+[4] Calderón Madrid, José Ángel: Job stability and labor mobility in urban Mexico: a study based on duration models and transition analysis. IDB Working Paper, 2000.
+[5] Campos, Raymundo M., Gerardo Esquivel y Alma S. Santillán: El impacto del salario mínimo en los ingresos y el empleo en México. Serie Estudios y Perspectivas Sede Subregional de la CEPAL en México, (162), 2015.
+[6] Centeno, Mario, Claudia Duarte y Álvaro A. Novo: The Impact of the Minimum Wage on Match Stability. 2014.
+[7] Cox, D.R.: Regression Models and Life-Tables. Journal of the Royal Statistical Society. Series B (Methodological), 34(2).
+[8] Fine, Jason P. y Robert J. Gray: A proportional hazards model for the subdistribution of a competing risk. Journal of the American statistical association, 94(446):496– 509, 1999.
+[9] Freeman, Alida Castillo y Richard B. Freeman: Minimum Wages in Puerto Rico: Textbook Case of a Wage Floor? Informe técnico, National Bureau of Economic Research, 1991.
+[10] Grambsch, Patricia M. y Terry M. Therneau: Proportional hazards tests and diagnostics based on weighted residuals. Biometrika, 81(3):515–526, 1994.
+[11] Gray, Robert J.: A class of K-sample tests for comparing the cumulative incidence of a competing risk. The Annals of statistics, páginas 1141–1154, 1988.
+[12] Joutard, Xavier y Luis AI Sagaon Teyssier: Unemployment and employment dynamics in the Mexican segmented labour market. Document de travail GREQAM, 24, 2006.
+[13] Maloney, William F.: Does informality imply segmentation in urban labor markets? Evidence from sectoral transitions in Mexico. The World Bank Economic Review, 13(2):275–302, 1999.
+36
+
+[14] Nagore García, Amparo y Arthur Van Soest: Unemployment Transitions to Stable and Unstable Jobs Before and During the Crisis. 2014.
+[15] Revenga, Ana, Michelle Riboud y cols.: Unemployment in Mexico: its characteristics and determinants. Informe técnico, The World Bank, 1993.
+[16] Schoenfeld, David: Partial residuals for the proportional hazards regression model. Biometrika, 69(1):239–241, 1982.
+37
+
+Índice de tablas
+1. Medias de las submuestras por género. . . . . . . . . . . . . . . . . . . . 7 2. Estimaciones con el modelo de Cox. . . . . . . . . . . . . . . . . . . . . . 17 3. Estimaciones con el modelo de Fine y Gray, considerando la salida al sector
+formal como el interés y la salida a la informalidad como el riesgo en competencia. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 4. Estimaciones con el modelo de Fine y Gray, considerando la salida al sector informal como el interés y la salida a la formalidad como el riesgo en competencia. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 5. Municipios que pertenecían previamente a la zona B. . . . . . . . . . . . 28 6. Estadísticas descriptivas de las muestras. . . . . . . . . . . . . . . . . . . 29 7. Estimaciones con el modelo de Cox tomando en los grupos de nivel escolar el de primaria incompleta como referencia. . . . . . . . . . . . . . . . . . 31 8. Pruebas al supuesto de proporcionalidad en el modelo de Cox. . . . . . . 32 9. Estimaciones con el modelo de Fine y Gray, considerando la salida al sector formal como el interés y la salida a la informalidad como el riesgo en competencia y tomando en los grupos de nivel escolar el de primaria incompleta como referencia. . . . . . . . . . . . . . . . . . . . . . . . . . 33 10. Estimaciones con el modelo de Fine y Gray, considerando la salida al sector informal como el interés y la salida a la formalidad como el riesgo en competencia y tomando en los grupos de nivel escolar el de primaria incompleta como referencia. . . . . . . . . . . . . . . . . . . . . . . . . . 34
+38
+
+Índice de ﬁguras
+1. Serie del salario real mínimo en México. . . . . . . . . . . . . . . . . . . 1 2. Serie de la tasa de informalidad media anual en México. . . . . . . . . . . 2 3. Persistencia del sector laboral por género y año. . . . . . . . . . . . . . . 8 4. Funciones de supervivencia por género y por año. . . . . . . . . . . . . . 9 5. Funciones de supervivencia por zona de residencia y por año. . . . . . . . 9 6. Funciones de incidencia acumulativa por género y por sector de salida. . . 10 7. Funciones de incidencia acumulativa por sector de salida y distinguiendo
+grupos de tratamiento y control. . . . . . . . . . . . . . . . . . . . . . . . 11 8. Funciones de incidencia acumulativa por género, por sector de salida y
+distinguiendo grupos de tratamiento y control. . . . . . . . . . . . . . . . 12 9. Comparativo entre funciones de supervivencia observadas y estimadas para
+muestras 2013. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 10. Comparativo entre funciones de supervivencia observadas y estimadas para
+muestras 2014. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 11. Comparativo entre funciones de incidencia acumulativa observadas y esti-
+madas para muestras 2013 con salida al sector formal. . . . . . . . . . . . 23 12. Comparativo entre funciones de incidencia acumulativa observadas y esti-
+madas para muestras 2013 con salida al sector informal. . . . . . . . . . . 23 13. Comparativo entre funciones de incidencia acumulativa observadas y esti-
+madas para muestras 2014 con salida al sector formal. . . . . . . . . . . . 24 14. Comparativo entre funciones de incidencia acumulativa observadas y esti-
+madas para muestras 2014 con salida al sector informal. . . . . . . . . . . 24 15. Densidad kernel del desempleo municipal por año. . . . . . . . . . . . . . 26 16. Funciones de supervivencia Keplen-Meier considerando el sector de salida,
+año y zona de residencia. . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 17. Prueba de proporcionalidad usando los errores de Schoenfeld en el modelo
+de Cox para la variable de tratamiento. . . . . . . . . . . . . . . . . . . . 32 18. Prueba de proporcionalidad usando los errores de Schoenfeld en el modelo
+de Fine y Gray con salida al sector formal como evento de interés para la variable de tratamiento. . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 19. Prueba de proporcionalidad usando los errores de Schoenfeld en el modelo de Fine y Gray con salida al sector informal como evento de interés para la variable de tratamiento. . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+39
+
+

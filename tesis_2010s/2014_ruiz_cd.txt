@@ -1,0 +1,1996 @@
+MAESTRI´A EN ECONOMI´A TRABAJO DE INVESTIGACIO´ N PARA OBTENER EL GRADO DE
+MAESTRO EN ECONOM´IA RIESGO MORAL Y COMPETENCIA DUOPOLI´STICA EN LOCALIZACIO´ N
+CARLOS DANIEL RUIZ PE´ REZ PROMOCIO´ N 2012-2014
+ASESOR:
+DR. JAIME SEMPERE CAMPELLO
+JULIO 2014
+
+RIESGO MORAL Y COMPETENCIA DUOPOL´ISTICA EN LOCALIZACIO´ N
+Carlos Daniel Ruiz Pe´rez
+Julio 2014
+Resumen En un modelo de ciudad lineal, donde los consumidores valoran el esfuerzo que realiza una empresa, se encuentra que sera´ o´ptimo para las empresas diferenciarse lo ma´ximo posible (Principio de Ma´xima Diferenciacio´n), cobrar el precio ma´s alto y hacer esfuerzo bajo. Adema´s, se analiza el caso cuando el modelo es tipo Agente-Principal donde existen problemas de riesgo moral. Cuando no se puede cobrar un monto ﬁjo se situara´n en el centro (Principio de M´ınima Diferenciacio´n), y hara´n el ma´ximo esfuerzo posible, pero no habra´ beneﬁcios. Mientras que cuando se puede cobrar un monto ﬁjo, en equilibrio, las empresas realizara´n un esfuerzo particularmente bajo (incluso ma´s bajo que cuando no existen problemas de riesgo moral), se ofrecera´ un contrato de renta compartida y el Principal tendra´ ma´s beneﬁcios que en el caso donde no existen problemas de riesgo moral.
+
+AGRADECIMIENTOS
+Al COLMEX y al CONACyT por apoyarme econo´micamente en mis estudios de Maestr´ıa, y por haberme dado la oportunidad de explotar mi potencial.
+A mi profesor y asesor, el Dr. Jaime Sempere, ya que sin su apoyo y su gu´ıa este trabajo quiza´s no existir´ıa; sus consejos fueron de gran ayuda en la produccio´n de la presente tesis.
+A mi papa´, mi mama´, Erik y Miguelito por todo su apoyo durante la realizacio´n de mis estudios de Maestr´ıa, por ayudarme a crecer en todos los a´mbitos de mi vida, y por tolerarme y entenderme todos estos an˜os.
+A mis abuelitos Nico, Sol, Manuel y Carlos por compartir todas sus experiencias conmigo y ayudarme a crecer en todo aspecto de mi vida.
+A Alexa por haber compartido incontables experiencias juntos.
+A mis profesores y compan˜eros, cuyas clases, exposiciones y discusiones han contribuido a mi formacio´n como economista.
+A toda otra persona que me ha apoyado de cualquier manera, y cuyo anonimato no disminuye en nada su aportacio´n a este trabajo.
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+I´ndice
+
+1. Introduccio´n
+
+4
+
+2. Revisio´n de literatura
+
+6
+
+3. Modelo de Hotelling
+
+9
+
+4. El modelo
+
+10
+
+4.1. Diferenciacio´n horizontal y esfuerzo . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+4.2. Diferenciacio´n horizontal y riesgo moral . . . . . . . . . . . . . . . . . . . . . . . 12
+
+5. Discusio´n
+
+13
+
+5.1. Posibles Extensiones . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+6. Conclusiones
+
+20
+
+A. Ape´ndices
+
+21
+
+A.1. Prueba del Lema 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+A.2. Prueba de la Proposicio´n 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+A.3. Prueba de la Proposicio´n 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+Referencias
+
+27
+
+3
+
+Daniel Ruiz
+1. Introduccio´n
+Uno de los supuestos cruciales detra´s de los modelos neocla´sicos en econom´ıa (que conlleva a la llamada “Paradoja de Bertrand”) es que las empresas producen un bien homoge´neo; por tanto, el precio es la u´nica variable de intere´s para los consumidores y ninguna empresa puede subirlo ma´s alla´ del costo marginal sin perder toda su cuota de mercado. En la pra´ctica se sabe que esto es improbable pues algunos consumidores preﬁeren una marca en particular, toman en cuenta que´ tan lejos esta´ la tienda que provee el producto, evalu´an la calidad de los bienes y servicios, y toman en cuenta muchas ma´s variables que el precio.
+Hotelling (1929) aﬁrmo´ que la competencia entre dos vendedores de un producto homoge´neo conduce a su aglomeracio´n en el centro de un mundo lineal con fronteras. La idea subyacente es que cualquier empresa ganar´ıa, a trave´s de un aumento de su cuota de mercado, mediante el establecimiento cerca de su competidor en la parte ma´s grande del mercado.
+Este proceso, aparentemente razonable, ha demostrado ser inva´lido por Lerner y Singer (1937) en el caso de tres empresas. De hecho, es obvio que dadas dos empresas en el centro del mercado, la tercera se localizara´ inmediatamente a un lado de ellas, con lo que les quita a las otras dos la mitad del mercado. La empresa que quede enmedio tendra´ casi cero cuota de mercado y, en consecuencia, tambie´n se movera´ inmediatamente afuera de ellas, lo que provoca que no exista equilibrio.
+Adema´s, cuando el precio es una variable de decisio´n la prediccio´n de Hotelling no se mantiene incluso en el caso de dos empresas (d’Aspremont et al., 1979). Cuando ambas empresas se localizan juntas, la competencia de precios a` la Bertrand hace bajar los precios hasta el costo marginal, por tanto los beneﬁcios son cero. As´ı, las empresas tienen una ventaja al diferenciarse espacialmente con el ﬁn de disfrutar de los beneﬁcios de un cuasimonopolio local. Todo esto destruye el llamado “Principio de M´ınima Diferenciacio´n.”
+Un resultado bien conocido es que las empresas no quieren estar en el mismo lugar en el espacio (v. gr. d’Aspremont et al. (1979), Salop (1979), Gabszewicz y Thisse (1979), entre otros), la razo´n es la Paradoja de Bertrand misma: Dos empresas que producen bienes iguales compiten fuertemente en precios (al menos en el modelo esta´tico). La separacio´n local de empresas provoca que se creen “nichos de mercado” y permite que las empresas tengan poder de mercado en sus respectivas demandas. Esto implica que las empresas quieran tener la ma´xima diferenciacio´n local posible y, de esto, se desprende el llamado “Principio de Ma´xima Diferenciacio´n.”
+A pesar de este resultado anteriormente expuesto, existen condiciones de mercado que lo impiden. Por ejemplo, existen productos que por sus caracter´ısticas te´cnicas la empresa no puede diferenciar (v. gr., las tapas de botellas), hay mercados con precios ﬁjos, puede haber concentraciones discretas de
+4
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+la demanda o podr´ıan existir ganancias en costos o en demanda por aglomeracio´n (externalidades). El modelo propuesto en el presente documento es u´til para analizar la localizacio´n geogra´ﬁca en la que se establecera´n dos empresas que compiten muy fuertemente, y que no solo eligen su precio sino el esfuerzo a realizar. Adema´s, en vista de que el esfuerzo es una variable no-observable, el modelo tambie´n se presta para analizar problemas de Agente-Principal y estructuras de contrato bajo competencia. En la literatura existen muy pocos modelos teo´ricos que analicen la estructura contractual bajo competencia, por lo que este modelo es conveniente para analizar esa situacio´n pues propone una forma muy particular de competir (horizontalmente) que es u´til en la pra´ctica. A pesar de la poca literatura teo´rica al respecto, la idea no es nueva; de hecho, en la pra´ctica los consultores de franquicias lo tienen muy presente. Phil Holand (duen˜o de la empresa My Own Business) aﬁrma que la eleccio´n se localizacio´n es muy importante para el e´xito de las franquicias1 y sen˜ala que cada empresa tiene su propio “modelo de sitio” sobre el cual, dependiendo de que´ valoran y cua´les son sus objetivos, analizan y eligen los lugares para sus franquiciatarios; e´l considera que es una buena opcio´n establecerse a un lado de la competencia bajo ciertas circunstancias. Similarmente, Mark Siebert (duen˜o de la consultora de franquicias iFranchise Group) sen˜ala como un factor importante para mantener la calidad de una franquicia al “apoyo continuo” (ongoing support) y dentro de ese grupo cita caracter´ısticas de diferenciacio´n horizontal, publicidad, etc.2 La tesis se estructura de la siguiente manera: La Seccio´n 2 resume muy brevemente las explicacio´nes teo´ricas sobre por que´ podr´ıa haber m´ınima diferenciacio´n y explica concisamente los modelos de riesgo moral bajo competencia. La Seccio´n 3 presenta el modelo de Hotelling e introduce la notacio´n de los modelos ulteriormente presentados. Despue´s, en la Seccio´n 4 se propone el modelo que incluye la valoracio´n del consumidor por el esfuerzo y, luego, que incluye problemas de riesgo moral. En la Seccio´n 5 se presenta la discusio´n de resultados, y se encuentra que cuando una empresa no puede cobrar un monto ﬁjo realizara´ el esfuerzo de m´ınima diferenciacio´n (muy alto); cuando hay ma´xima diferenciacio´n se hace menos esfuerzo, pero cuando hay ma´xima diferenciacio´n y existen problemas de riesgo moral se hace el menor esfuerzo posible, y esto se ve reﬂejado en los beneﬁcios, que aumentan entre menor sea el esfuerzo ejercido. Finalmente, se explican las conclusiones en la Seccio´n 6.
+1http://www.myownbusiness.org/franchising_your_business/ 2http://www.entrepreneur.com/article/202330
+5
+
+Daniel Ruiz
+2. Revisio´n de literatura
+Hay dos corrientes que convergen en este modelo. Es de notarse que el presente documento es de los pocos que intentan conciliar estas corrientes.
+1. La literatura que pretende explicar los procesos de diferenciacio´n entre empresas. En particular, por que´ las empresas no habr´ıan en todo momento de buscar la ma´xima diferenciacio´n.
+2. La que intenta explicar las formas de los contratos que le ofrecen las empresas a sus gerentes bajo riesgo moral. En particular, la relacio´n que existe entre la competencia y el esfuerzo de los gerentes.
+En tanto a los procesos que llevan a una empresa a diferenciarse, se puede encontrar mucha literatura al respecto. Los primeros intentos datan de Hotelling (1929), y luego de d’Aspremont et al. (1979); que son las principales formas de modelar los comportamientos estrate´gicos de las empresas en tanto a su diferenciacio´n, y de los cuales se desprenden muchas modiﬁcaciones muy bien conocidas (Salop (1979), Gabszewicz y Thisse (1979), Shaked y Sutton (1982), Shaked y Sutton (1983), entre otros).
+Con respecto de la primera pregunta de por que´ las empresas no siempre se diferencian ma´ximamente se han planteado diversas posibles explicaciones. Las de´cadas pasadas muchos economistas intentaron examinar las condiciones bajo las cuales se restaura el Principio de M´ınima Diferenciacio´n. Butters (1977) es el primero en enfatizar la importancia de la publicidad y co´mo ello afecta a la diferenciacio´n; de Palma et al. (1985) y Rhee et al. (1992) introducen heterogeneidad tanto en los consumidores como en las empresas; Stahl (1982b) considera como una opcio´n las conjeturas variacionales; Stahl (1982a) enfatiza la bu´squeda de caracter´ısticas o´ptimas de productos (modelos de “caracter´ısticas puras”); Liebowitz (1982) modela bienes durables; Anderson y Neven (1991) suponen que las empresas compiten a` la Cournot (en vez de a` la Bertrand); Jehiel (1992) y Friedman y Thisse (1993) abordan la idea de colusio´n en precios; Zhang (1995) utiliza una pol´ıtica de matching en precios para mostrar que puede ocurrir colusio´n ta´cita y m´ınima diferenciacio´n; Mai y kun Peng (1999) enfatiza la importancia de beneﬁcios por externalidades que se generan por el intercambio de informacio´n entre empresas.
+En el modelo de d’Aspremont et al. (1979) se obtiene que el “efecto estrate´gico” (el efecto directo de la localizacio´n de la empresa sobre sus propios beneﬁcios) domina el “efecto demanda” (el efecto indirecto que tienen los precios de la competencia sobre la empresa), es decir, el acercarse al centro y ganar ma´s cuota de mercado le es ma´s costoso que el alejarse y arriesgarse a perderla; por lo cual les conviene a diferenciarse a ambas empresas y poner un precio ma´s alto; estos efectos son de particular importancia para entender los resultados del presente modelo o cualquier modelo de este estilo.
+6
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+La mayor´ıa de modelos que encuentran m´ınima diferenciacio´n utilizan supuestos que generalmente conllevan a que los efectos sean inversos, ello tiene como consecuencia que las empresas ganan ma´s cuando se acercan al centro que cuando se alejan de e´ste, por lo que obviamente se obtiene el resultado inverso (que les conviene a las empresas la m´ınima diferenciacio´n).
+Con respecto de la segunda l´ınea de literatura tambie´n se ha escrito mucho, aunque modelos teo´ricos hay pocos. La literatura ma´s antigua al respecto es ma´s bien emp´ırica, no ofrece una explicacio´n teo´rica para la conexio´n entre la competencia y los incentivos de los Agentes. Posteriormente hay varios intentos para modelar teo´ricamente el efecto de la competencia en los contratos. Jensen y Meckling (1976) muestran que el grado de competencia no afecta a los costos de los Agentes, por lo que tanto un monopolio como una empresa competitiva ofrecera´n exactamente el mismo arreglo de incentivos en el contrato; Holmstrom (1982) y Stiglitz y Nalebuff (1983) utilizan el hecho de que la competencia genera informacio´n adicional, y por ende entre ma´s competidores haya en la industria, si los choques a la demanda esta´n correlacionados, se generara´ informacio´n adicional que ayudara´ a mitigar los problemas de riesgo moral; Hart (1983) desarrolla un modelo en el que el choque es transmitido v´ıa el precio de mercado y el salario del Agente depende solo de los beneﬁcios de la empresa, donde encuentra que mayor competencia aumenta el esfuerzo (aunque sus resultados dependen crucialmente de la forma de la funcio´n de utilidad supuesta, inﬁnitamente averso al riesgo); Scharfstein (1988) muestra que si se cambia la funcio´n de utilidad del Agente en “Hart (1983)” se genera el resultado opuesto; Hermalin (1992) muestra bajo ese mismo marco que el efecto es ambiguo.
+El presente modelo se abstrae de dichos efectos informacionales, a pesar de que se sabe que son importantes. En vez de eso, se elabora un modelo de ciudad lineal en el que el esfuerzo tiene un rol muy importante, pues los consumidores lo valoran. En primera instancia, el modelo es u´til para analizar la localizacio´n geogra´ﬁca en la que se establecera´n dos empresas que compiten muy fuertemente, y que no solo eligen su precio sino su esfuerzo a realizar. Adema´s, en vista de que el esfuerzo puede ser una variable no-observable, el modelo tambie´n se presta para analizar problemas de Agente-Principal (riesgo moral) y estructuras de contrato bajo competencia. Se debe mencionar que existen muy pocos modelos teo´ricos que analicen la estructura contractual bajo competencia, por lo que este modelo es particularmente atractivo para poder analizar dichos efectos pues propone una forma muy particular de competir (horizontalmente) que se ha visto u´til en la pra´ctica.
+Existen tres documentos similares al presente:
+1. Tseng et al. (2010) construyen un modelo de dos dimensiones (diferenciacio´n vertical y horizontal) de dos etapas. Muestran que entre ma´s verticalmente diferenciados este´n las empresas, menor sera´ la diferenciacio´n horizontal.
+7
+
+Daniel Ruiz 2. Liang y Mai (2006) crean un modelo con subarrendamiento en la produccio´n, y encuentran otros efectos. Encuentran las condiciones contractuales para que ocurra o ma´xima o m´ınima diferenciacio´ n. 3. Olmos et al. (2009) analizan un modelo de diferenciacio´n vertical con un rol estrate´gico de las decisiones del competidor.
+Todos son diferentes al modelo en este documento pues el primero analiza tanto la diferenciacio´n horizontal como la vertical (el “esfuerzo”), sin embargo, no analiza relaciones contractuales; el segundo introduce contratos pero en un bien intermedio, y el tercero introduce riesgo moral pero de una manera muy diferente a la que aborda el presente documento, y con otras implicaciones.
+8
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+3. Modelo de Hotelling
+
+Primeramente, vale la pena recordar la modiﬁcacio´n que sugiere d’Aspremont et al. (1979) al modelo de Hotelling (1929). Conside´rese un modelo de una “ciudad lineal” de longitud uno donde los consumidores se distribuyen uniformemente con densidad uno en este intervalo. Existen dos empresas o tiendas que venden el mismo bien, y el costo unitario de producirlo es c para ambas. Los consumidores tienen demanda unitaria,3 y la funcio´n de utilidad de cada uno es de la forma
+
+
+
+u(x) = R − p1 − t(x − a)2
+
+;
+
+R − p2 − t(x − (1 − b))2
+
+donde R es la valoracio´n del consumidor por tener el bien (supuesta suﬁcientemente grande como para que siempre4 le convenga consumir al menos un bien); t es el costo de transportarse de los consumidores por unidad de longitud;5 pi el precio del bien que pone la empresa i = 1, 2; x [0, 1] la localizacio´n del consumidor en la ciudad, y a y 1 − b las localizaciones de las empresas 1 y 2, respectivamente, en el mismo intervalo en el que esta´n los consumidores.
+Bajo los mismos supuestos de Hotelling (R suﬁcientemente grande y que la demanda este´ entre cero y uno), en un modelo de dos etapas donde primero se elige la localizacio´n y luego se compite en precios a` la Bertrand simultaneamente, se tiene que los precios de equilibrio son p∗1 = p2∗ = c + t, y se tiene la ma´xima diferenciacio´n (a lo que llaman el Maximum Differentiation Principle, a = b = 0) en equilibrio.
+El autor hace notar que de haberse elegido la m´ınima diferenciacio´n, a = 1 − b, se habr´ıa llegado a un equilibrio con precios competitivos (costo marginal), y el hecho de estar separados tiene un efecto de diferenciacio´n de producto.
+Bajo el mismo marco explicado anteriormente de ciudad lineal, en el que el esfuerzo importa al consumidor, se presenta un modelo en el que el Principal (v. gr. una franquicia) “renta” su marca al Agente (franquiciado); el Agente realiza un esfuerzo (valorado por el consumidor), pero en el contrato no se puede estipular un esfuerzo directamente, pues el costo de monitoreo es muy grande, y, al ser no-observable, se tiene un problema de riesgo moral. El Principal no elige el esfuerzo del Agente, pero s´ı la localizacio´n (y el contrato), mientras que el Agente elige su esfuerzo o´ptimo (que lo valora el consumidor, y no lo puede monitorear el Principal), y al ﬁnal ocurre competencia a` la Bertrand.
+
+3Es decir, cada consumidor compra una o cero unidades del bien. 4A cualquier precio e independientemente de su localizacio´n. 5Este costo puede incluir cua´nto valoran el tiempo que gastan en el viaje. Debido a los costos de transporte cuadra´ticos, el costo marginal de trasladarse aumenta conforme aumenta la distancia a la tienda.
+9
+
+Daniel Ruiz
+
+4. El modelo
+
+4.1. Diferenciacio´n horizontal y esfuerzo
+
+Inicialmente es necesario mostrar que las modiﬁcaciones en tanto a supuestos del conjunto de acciones para cada jugador no cambian cualitativamente los resultados del modelo de d’Aspremont et al. (1979).
+
+Conside´rese una Econom´ıa en una “ciudad lineal” de longitud uno donde los consumidores se distribuyen uniformemente con densidad uno en este intervalo. Existen dos empresas o tiendas que venden el mismo bien, y el costo unitario de producirlo es c para ambas.6 En tiempo 1 se elige localizacio´n y en tiempo 2 se elige efuerzo (o calidad), que es valorado positivamente por el consumidor en θ R++. La utilidad del consumidor en x ahora estara´ dada por
+
+
+
+u(x) = R + θs1 − p1 − t(x − a)2
+
+,
+
+R + θs2 − p2 − t(x − (1 − b))2
+
+donde R es la valoracio´n del consumidor por tener el bien; t es el costo de transportarse de los consumidores por unidad de longitud; si es el esfuerzo a elegir en el segundo periodo; pi el precio del bien que pone la empresa i = 1, 2 y esta´ dado exo´genamente;7 x [0, 1] la localizacio´n del consumidor en la ciudad, y a y 1 − b las localizaciones de las empresas 1 y 2, respectivamente, en el mismo intervalo en el que esta´n los consumidores.
+Se utilizan los dos mismos supuestos de Hotelling:
+Supuesto 1 (Demanda positiva). Di [0, 1], para i = 1, 2.8
+Supuesto 2 (Mercado cubierto). R es suﬁcientemente grande, tal que u(x) > 0 para cualquier pi y si.9
+La diferencia radica en que, aqu´ı, en el segundo periodo se elige esfuerzo “a` la Bertrand,” y el precio es exo´geno. El modelo se resuelve al hallarse el consumidor indiferente x¯, con lo que se encuentran las demandas para cada una de las dos empresas, D1(a, b, s1, s2; p1, p2) := x¯ y
+
+6Tanto Hotelling como d’Aspremont lo suponen igual a cero, sin pe´rdida de generalidad. 7Supuesto simpliﬁcador que se hace sin perderse generalidad en el modelo. Es fa´cil mostrar que si, en vez de esto, se supone que los precios son tambie´n una variable de decisio´n de la empresa en la etapa ﬁnal (como en el modelo expuesto al inicio de esta seccio´n) y las empresas no son muy distintas entre ellas (p1 (0, p¯] y p2 (0, p¯]), se llega exactamente a lo mismo y eligen en equilibrio el ma´ximo precio, p¯. 8Esta condicio´n debe claramente satisfacerse en equilibrio, pues una empresa sin demanda no genera beneﬁcios por lo que tiene un claro incentivo a bajar su precio para ganar cuota de mercado. 9Esta condicio´n se satisface en equilibrio por el mismo rationale del Supuesto 1, pues en equilibrio los precios no sera´n particularmente altos.
+10
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n D2(a, b, s1, s2; p1, p2) := 1 − x¯. Los beneﬁcios de las empresas esta´n dados por
+ Π1 = D1(a, b, s1, s2; p1, p2)(p1 − c − αs1)
+, Π2 = D2(a, b, s1, s2; p1, p2)(p2 − c − αs2) donde α es el costo de hacer esfuerzo de las empresas, α (0, θ).
+11
+
+Daniel Ruiz
+4.2. Diferenciacio´n horizontal y riesgo moral
+Bajo el mismo marco explicado en la seccio´n pasada (4.1), se presenta un modelo en el que el Principal (v. gr. una franquicia) “renta” su marca al Agente (franquiciado); el Agente realiza un esfuerzo (valorado por el consumidor), pero en el contrato no se puede estipular un esfuerzo directamente, pues el costo de monitoreo es muy grande, y, al ser no-observable, se tiene un problema de riesgo moral. El Principal no elige el esfuerzo del Agente, pero s´ı la localizacio´n, precio y contrato, mientras que el Agente elige su esfuerzo o´ptimo (que lo valora el consumidor, y no puede ser monitoreado por el Principal), donde ocurre competencia a` la Bertrand. Supo´ngase una Econom´ıa bajo el mismo marco del modelo anterior,10 solo que ahora cada empresa (Principal) contrata a un gerente (Agente), y todos ellos son neutrales al riesgo.11 El Principal i le ofrece a su respectivo Agente un contrato no-lineal t´ıpico en franquicias en el cual el Agente ganara´ una fraccio´n de las ventas λi, λi [0, 1],12 y un monto ﬁjo Fi, Fi R++. La incertidumbre esta´ en α,13 y ahora supo´nganse cuatro periodos:
+1. El Principal i le ofrece un contrato de arrendamiento λi y Fi a su respectivo Agente. 2. El Agente i decide si aceptar o no el contrato que le ofrece su respectiva franquicia. 3. Si acepta el contrato el Agente elige su esfuerzo si o´ptimo. 4. Se realiza la variable aleatoria α. El problema de incentivos esta´ en que los beneﬁcios del Principal son crecientes respecto al esfuerzo y los del Agente no, y el problema de riesgo moral esta´ en que el esfuerzo no lo observa el Principal pues α es una variable aleatoria. En la siguiente Seccio´n (5) se analizan los resultados y las implicaciones econo´micas tanto del Modelo 4.1 como del presentado en esta seccio´n.
+10Con los mismos Supuestos 1 y 2, y con los mismos supuestos sobre los para´metros. 11La neutralidad al riesgo para todos se supone con el objetivo de aislar efectos, pues la aversio´n al riesgo, ya sea del Principal o del Agente, conlleva a resultados diferentes pero por el efecto de la aversio´n misma y la mayor concavidad de los beneﬁcios esperados. En vista de esto, E(Πi(·)) = Πi(E(·)). 12Y, en consecuencia, el Principal se lleva 1 − λi de las ventas. 13E´ sta podr´ıa tambie´n estar en θ, es irrelevante pues todos son neutrales al riesgo. Es necesario que la variable aleator´ıa α (0, θ), con E(α) = α¯.
+12
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+5. Discusio´n
+
+El Modelo 4.1 se resuelve con induccio´n hacia atra´s, como cualquier modelo de este estilo. Bajo el supuesto de que la diferencia de precios no sea demasiado grande14 se encuentra el primer resultado.
+
+Lema 1. En un modelo de “ciudad lineal” con costos de transporte cuadra´ticos y con valoracio´n de los consumidores por el esfuerzo, si la diferencia entre precios no es muy grande, en equilibrio:
+1. Se sostiene el principio de ma´xima diferenciacio´n, 2. es o´ptimo hacer bajo esfuerzo y 3. es cualitativamente equivalente al modelo de d’Aspremont.
+
+Demostracio´n. Ve´ase Ape´ndice A.1.
+
+En particular, de imponerse el supuesto de que p1 = p2 = p¯, el conjunto de esfuerzos en equilibrio
+
+estar´ıa dado por
+
+⇒
+
+ s∗1
+s∗2
+
+= =
+
+p¯−c α
+p¯−c α
+
+− −
+
+t(1−b−a)(1+
+
+a−b 3
+
+)
+
+θ
+
+t(1−b−a)(1+
+
+b−a 3
+
+)
+
+θ
+
+.
+
+Los resultados se resumen en la siguiente tabla, donde se explica lo que sucede en cada caso de
+
+diferenciacio´ n.
+
+Si ocurre ma´x. dif. (a = b = 0)
+
+s1∗
+
+=
+
+p¯−c α
+
+−
+
+t θ
+
+s∗2
+
+=
+
+p¯−c α
+
+−
+
+t θ
+
+Π1
+
+=
+
+tα 2θ
+
+Π2
+
+=
+
+tα 2θ
+
+Si ocurre m´ın. dif. (a = 1 − b)
+
+s∗1
+
+=
+
+p¯−c α
+
+s2∗
+
+=
+
+p¯−c α
+
+Π1 = 0
+
+Π2 = 0
+
+Es decir, cuando las empresas se diferencian ma´ximamente hacen menos esfuerzo y tienen beneﬁcios positivos, y cuando lo hacen m´ınimamente tienen que hacer ma´s esfuerzo porque hay ma´s competencia y, a pesar del esfuerzo alto (con lo que ganan la mayor cuota de mercado posible), tienen beneﬁcios cero.
+
+Es importante notar que sus beneﬁcios nulos no ocurren porque no tengan demanda de su producto, sino porque el esfuerzo alto es tal que se cumple que su precio es igual a su “costo marginal,” el cual incluye a c y al costo del esfuerzo.
+
+El lema 1 es intuitivo pues el cambio al modelo de d’Aspremont et al. (1979) es m´ınimo; sin
+
+14 −αt(1−b−a)(1+b+3a) θ−α
+
+<
+
+p2
+
+− p1
+
+<
+
+αt(1−b−a)(1+a+3b) θ−α
+
+es
+
+necesario
+
+y
+
+suﬁciente,
+
+que
+
+es
+
+consecuencia
+
+directa
+
+del
+
+Supuesto 1.
+
+13
+
+Daniel Ruiz
+
+embargo, es necesario pues es la base para entender los resultados expuestos en el modelo principal de este documento, presentados en un par de pa´rrafos a continuacio´n.
+
+La intuicio´n econo´mica detra´s es la misma que en d’Aspremont et al. (1979). El efecto estrate´gico domina al efecto demanda, es decir, el acercarse al centro y ganar ma´s cuota de mercado le es ma´s costoso (pues tienen que hacer ma´s esfuerzo del necesario porque esta´n compitiendo en esfuerzos) que el alejarse y arriesgarse a perderla; por lo cual, a ambas empresas, les conviene diferenciarse y hacer un menor esfuerzo.
+
+El Lema 1 sirve como modelo de base para el explicado en la Seccio´n 4.2, donde cada empresa (Principal) contrata a un gerente (Agente), lo cual es ma´s realista al pensar en co´mo funcionan las franquicias.
+
+En dicho Modelo 4.2 se encuentra el equilibrio ba´sicamente de la misma forma.15 La principal modiﬁcacio´n es que en e´ste se permite que en el primer periodo elija el Principal y en el segundo el Agente, lo cual vuelve al problema particularmente interesante y permite introducir problemas de riesgo moral.
+
+En el segundo periodo cada Agente encuentra el esfuerzo que maximiza sus respectivos beneﬁcios,
+
+del que se obtienen sus mejores respuestas al esfuerzo del Agente de la otra empresa, y llegan a un
+
+equilibrio:
+
+ s∗1
+
+=
+
+λ2p2+2λ1p1 3α¯
+
++
+
+p1−p2 3θ
+
+−
+
+c α¯
+
+−
+
+( ) t(1−b−a)
+
+1+
+
+a−b 3
+
+θ
+
+s∗2
+
+=
+
+λ1p1+2λ2p2 3α¯
+
++
+
+p2−p1 3θ
+
+−
+
+c α¯
+
+−
+
+( ) t(1−b−a)
+
+1+
+
+b−a 3
+
+θ
+
+.
+
+El esfuerzo en equilibrio del Agente tiene resumidos dos efectos. Depende positivamente de la parte
+
+de beneﬁcios que le tocan (pi y λi) y depende, tambie´n positivamente, de los beneﬁcios que vaya a ganar el otro Agente (pj y λj). E´ ste u´ltimo efecto ocurre por la misma competencia entre ellas, pues s´ı le pagan ma´s al Agente j hara´ ma´s esfuerzo, por lo que el Agente i se vera´ forzado a hacer ma´s
+
+esfuerzo, tambie´n, para no perder su cuota de mercado.
+
+No´tese que, para los Agentes, el efecto estrategia domina al efecto demanda, por lo que si por ellos fuera se establecer´ıan lejos el uno del otro y har´ıan esfuerzo bajo, y esto les permitir´ıa tener beneﬁcios positivos.
+
+Entonces, cada Principal elige el contrato, precio y localizacio´n que maximicen sus beneﬁcios, sujeto al esfuerzo que realizara´n los Agentes el en segundo periodo, y luego llegara´n a un equilibrio. Primeramente, supo´ngase que el Principal no puede cobrar un monto ﬁjo (F1 = F2 = 0).
+Proposicio´n 1. En un modelo de “ciudad lineal” con costos de transporte cuadra´ticos, valoracio´n de los consumidores por el esfuerzo y bajo un marco de Agente-Principal, si la diferencia entre
+15Ve´anse Ape´ndices A.2 y A.3.
+
+14
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+precios no es muy grande y el Principal no puede cobrar un monto ﬁjo, en equilibrio: 1. Ocurre m´ınima diferenciacio´n, 2. es o´ptimo hacer el mayor esfuerzo posible, 3. es o´ptimo para los Principales el contrato con el ma´ximo incentivo y 4. tanto Principales como Agentes tendra´n cero beneﬁcios.
+
+Demostracio´n. Ve´ase Ape´ndice A.2.
+
+De
+
+hecho,
+
+se
+
+tiene
+
+que
+
+cuando
+
+F1
+
+=
+
+F2
+
+=
+
+0
+
+el
+
+equilibrio
+
+esta´
+
+dado
+
+por
+
+a∗
+
+=
+
+b∗
+
+=
+
+1 2
+
+,
+
+λ1∗
+
+=
+
+λ2∗
+
+=
+
+1,
+
+p1∗
+
+=
+
+p2∗
+
+=
+
+p¯ y
+
+s1∗
+
+=
+
+s2∗
+
+=
+
+p¯−c α¯
+
+.
+
+Y
+
+los
+
+beneﬁcios
+
+en
+
+equilibrio
+
+son
+
+ΠP1 ∗
+
+=
+
+ΠP2 ∗
+
+=
+
+ΠA1 ∗
+
+=
+
+Π2A∗
+
+=
+
+0.
+
+La funcio´n de beneﬁcios es estrictamente convexa con respecto de los precios, donde el m´ınimo en equilibrio estar´ıa en p1 = p2 = 0, es por ello que bajo cualquier circunstancia, siempre el Principal querra´ el ma´ximo precio posible. El poner precio cero los llevar´ıa exactamente al mismo resultado de cero beneﬁcios, sin embargo, esto nunca sucedera´ por la convexidad de sus beneﬁcios y que son estrictamente crecientes en su dominio;16 por tanto, bajo ninguna circunstancia les conviene bajar precios (incluso aunque con ello puedan ganar cuota de mercado).
+
+Al tomarse esto en cuenta (sin conocer au´n la localizacio´n o´ptima), el contrato en equilibrio ser´ıa de
+
+la forma:
+
+ λ1 = 1 − 3α¯θtp¯(1 − b − a)(9 + a − b) . λ2 = 1 − 3α¯θtp¯(1 − b − a)(9 + b − a)
+
+En esas ecuaciones se puede ver el trade-off que enfrenta el Principal. En vista de que λi es la u´nica forma de cobrarle al Agente, le conviene un λi estrictamente menor a uno.
+
+Supo´ngase que las empresas esta´n ma´ximamente diferenciadas, eso implica λi < 1 por lo que el Pricipal s´ı se lleva parte de las ventas. Al ser esto cierto, el esfuerzo es particularmente bajo;17
+
+entonces el Principal podr´ıa ganar ma´s beneﬁcios si se ubica un poco ma´s hacia el centro.18 La
+
+otra empresa enfrenta el mismo trade-off por lo que, igualmente, aumentara´ el share que le da a su
+
+Agente
+
+al
+
+acercarse
+
+al
+
+centro,
+
+as´ı hasta
+
+que
+
+en
+
+equilibrio
+
+se
+
+llega
+
+a
+
+a∗
+
+=
+
+b∗
+
+=
+
+1 2
+
+.
+
+Una vez en equilibrio, a las empresas no les es redituable moverse. Si alguno de los Principales decide localizarse justo a un lado, para poder cobrarle algo al Agente, esto disminuir´ıa el esfuerzo del Agente, y al ser sj > si, la demanda se trasladar´ıa completamente al competidor, por lo que
+
+16No solo por el mero efecto ingreso, sino porque tambie´n el esfuerzo de su Agente es creciente en precios 17No solo por el efecto de la ma´xima diferenciacio´n sino porque el Agente se esta´ llevando menor parte de las
+ventas, por lo que no tiene incentivos a hacer ma´s esfuerzo. 18Pues aunque gane menor parte de las ventas, aumenta ma´s su cuota de mercado v´ıa el efecto de los incentivos en
+el esfuerzo y el efecto estrate´gico
+
+15
+
+Daniel Ruiz
+
+seguir´ıa ganando cero beneﬁcios; por tanto, el efecto demanda domina al efecto estrate´gico.
+Finalmente, el caso en el que el Principal puede cobrarle un monto ﬁjo a su Agente es incluso au´n ma´s interesante.
+
+Proposicio´n 2. En un modelo de “ciudad lineal” con costos de transporte cuadra´ticos, valoracio´n de los consumidores por el esfuerzo y bajo un marco de Agente-Principal, si la diferencia entre precios no es muy grande, en equilibrio:
+1. Ocurre ma´xima diferenciacio´n, 2. es o´ptimo hacer el menor esfuerzo posible, 3. es o´ptimo un contrato de “renta compartida” y 4. los Principales obtienen sus ma´ximos beneﬁcios.
+
+Demostracio´n. Ve´ase Ape´ndice A.3.
+
+Por tanto, cuando F1 y F2 tambie´n son variables de decisio´n, el equilibrio esta´ dado por a∗ = b∗ = 0,
+
+λ∗1
+
+=
+
+λ∗2
+
+=
+
+1−
+
+αθ¯p¯t ,
+
+p∗1
+
+=
+
+p∗2
+
+=
+
+p¯ y
+
+s∗1
+
+=
+
+s∗2
+
+=
+
+p¯−c α¯
+
+−
+
+2t θ
+
+.
+
+Y
+
+los
+
+beneﬁcios
+
+en
+
+equilibrio
+
+sera´n
+
+Π1P ∗
+
+=
+
+ΠP2 ∗
+
+=
+
+α¯t θ
+
+y
+
+ΠA1 ∗
+
+=
+
+Π2A∗
+
+=
+
+0.
+
+Con los precios ocurre exa´ctamente lo mismo que en la Proposicio´n 1, sin embargo, con las otras variables la historia es diferente. En este caso, en vista de que ahora el Principal ya puede extraer los beneﬁcios de su Agente, tambie´n le importa que su Agente tenga beneﬁcios positivos (para despue´s quita´rselos con el monto ﬁjo). Como se mostro´ anteriormente, para el Agente domina el efecto estrate´gico mientras que para el Principal domina el efecto demanda; as´ı, no es trivial saber a priori cua´l sera´ el efecto que domine en este caso.
+
+Anteriormente se ten´ıa que bajo ma´xima diferenciacio´n el Principal ten´ıa incentivos a moverse al centro, diferenciarse menos; sin embargo, ahora no es el caso. Lo que ocurre es que el Principal vuelve endo´genos los beneﬁcios del Agente, por lo que no pierde cuando e´ste hace menor esfuerzo (de hecho, gana entre menos esfuerzo haga).
+
+Los resultados de ambas Proposiciones y el Lema se pueden ver de manera ma´s ilustrativa en la siguiente tabla.
+
+16
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+M´ınima dif.
+
+·
+
+s1∗
+
+=
+
+s2∗
+
+=
+
+p¯−c α
+
+·
+
+p1∗ = p∗2 = p ·
+
+a=1−b
+
+Π∗1 = Π∗2 = 0
+
+Resumen de los Resultados
+
+Ma´ xima dif.
+
+Sin Fi a elegir
+
+·
+
+s1∗
+
+=
+
+s2∗
+
+=
+
+p¯−c α
+
+−
+
+t θ
+
+·
+
+p∗1 = p2∗ = p
+
+·
+
+a∗ = b∗ = 0
+
+Π1∗
+
+=
+
+Π∗2
+
+=
+
+tα 2θ
+
+F1 = F2 = 0
+
+s∗1
+
+=
+
+s2∗
+
+=
+
+p−c α¯
+
+Π1A∗ = Π2A∗ = 0
+
+p∗1 = p2∗ = p
+
+λ1∗ = λ2∗ = 1
+
+a∗
+
+=
+
+b∗
+
+=
+
+1 2
+
+Π1P ∗ = ΠP2 ∗ = 0
+
+Con Fi a elegir
+
+F1∗
+
+=
+
+F2∗
+
+=
+
+tα¯ 2θ
+
+s∗1
+
+=
+
+s∗2
+
+=
+
+p−c α¯
+
+−
+
+2t θ
+
+Π1A∗ = ΠA2 ∗ = 0
+
+p∗1 = p2∗ = p
+
+λ1∗
+
+=
+
+λ∗2
+
+=
+
+1
+
+−
+
+tα¯ 2θ
+
+a∗ = b∗ = 0
+
+ΠP1 ∗
+
+=
+
+ΠP2 ∗
+
+=
+
+tα¯ θ
+
+Las primeras dos columnas resumen el modelo de donde se obtiene el Lema 1; en particular, la primera ocurrir´ıa si la empresa se diferenciase m´ınimamente y la segunda es, lo que ﬁnalmente ocurre en equilibrio, cuando la empresa esta´ en ma´xima diferenciacio´n. Las u´ltimas dos columnas resumen los resultados a los que llega el modelo propuesto para las Proposiciones 1 y 2; la tercera es para cuando no es variable de decisio´n del Principal la Fi y la cuarta para cuando s´ı lo es.
+
+El resultado ma´s interesante ocurre si se compara el esfuerzo o´ptimo en los 3 modelos. Se puede ver que e´ste es igual en el caso de m´ınima diferenciacio´n y cuando no se puede cobrar un monto ﬁjo; sin embargo, cuando hay ma´xima diferenciacio´n se hace menos esfuerzo, pero cuando hay ma´xima diferenciacio´n y existen problemas de riesgo moral se hace el menor esfuerzo posible. Esto se ve reﬂejado en los beneﬁcios que aumentan entre menor sea el esfuerzo ejercido.
+
+Esto ocurre porque el esfuerzo es el que ahora esta´ jugando el rol que jugaba el precio en el modelo de d’Aspremont. As´ı como en su modelo ma´s precio es mejor, en vista de que aqu´ı el efecto en precios es tan grande que siempre conviene el ma´ximo,19 hacer menos esfuerzo es mejor, incluso para el Principal. As´ı, el Principal (en vista de que ahora s´ı puede extraerle todos sus beneﬁcios al Agente con una suma de monto ﬁjo) es de hecho beneﬁciado por menos esfuerzo, pues eso hace que su precio sea mayor que el “costo marginal” de ofrecer el producto.
+
+Para ilustrar de mejor manera los resultados, se expone el siguiente ejemplo.
+Ejemplo 1. Supo´ngase que un bar (1), que recie´n acaba de iniciar con su negocio, decide entrar al mercado en una ciudad lineal (que va de cero a uno) donde enfrentara´ la competencia de otro (2) exactamente igual a e´l, que ofrecera´ las mismas bebidas. El costo marginal de las bebidas es c = 5, y por hacer esfuerzo es de α, que puede variar entre 1 y 9, depedendiendo del clima (pues cuando llueve los meseros se deprimen y les cuesta ma´s trabajo atender al cliente), aunque se sabe que, en promedio, α = 5. Se hace un estudio de mercado y resulta que el precio ma´ximo al que comprar´ıan
+
+19El ma´ximo precio es en todo momento lo que maximiza beneﬁcios, sin importar la diferenciacio´n.
+
+17
+
+Daniel Ruiz
+las bebidas es p¯ = 105. Los consumidores en esa econom´ıa son alcoho´licos, por lo que no habra´ nadie que decida no ir a ninguno de los dos bares; adema´s, valoran el esfuerzo en θ = 10 pues preﬁeren ir a un bar donde les atiende gente muy amable, y por supuesto que toman en cuenta el precio y que´ tanto tienen que caminar para llegar al bar. Sus costos de transporte son cuadra´ticos y t = 2. Cada cervecera tiene 2 opciones: El duen˜o puede hacerse cargo del negocio o puede contratar a un gerente para que e´ste se haga cargo. Si el duen˜o se hiciera cargo del negocio, e´l preferir´ıa diferenciarse ma´ximamente de la otra cervecer´ıa. Entonces, en equilibrio, har´ıan un esfuerzo s = 19,8 (a veces atender´ıan mal a los clientes), cobrar´ıa p = 105 (el ma´ximo precio) y los bares se establecer´ıan en cada extremo de la ciudad. As´ı, sus beneﬁcios ser´ıan de Π = 0,5 para cada uno de los bares. Ahora bien, si el duen˜o le delegara a un gerente (cuyo costo de reserva es cero) el cargo, en equilibrio har´ıan un esfuerzo s = 19,6 (ser´ıa un muy mal servicio), cobrar´ıa el precio ma´ximo y los bares tambie´n se establecer´ıan en cada extremo de la ciudad. El duen˜o le podr´ıa ofrecer al gerente un contrato donde le cobrar´ıa la mitad de las ventas y un monto ﬁjo de 0,5, entonces el gerente se quedar´ıa en su precio de reserva (ΠA = 0) y el duen˜o se llevar´ıa ΠP = 1 (es decir, ma´s que en el otro caso). Entonces, el duen˜o decidir´ıa contratar a un gerente y que e´l se haga cargo. Supo´ngase ahora que es ilegal cobrarle un monto ﬁjo a los gerentes. Sujeto a esto, el duen˜o sabe que, al no poder cobrarle un monto ﬁjo, sus beneﬁcios estara´n sujetos solo a una parte de las ventas pero, dada la competencia, no podra´ cobrarle nada y, en equilibrio, ganar´ıa ΠP = 0. As´ı, decide que es mejor no contratar al gerente y quedarse con sus beneﬁcios de Π = 0,5, en ma´xima diferenciacio´n.
+18
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+5.1. Posibles Extensiones
+El hecho de que “menos esfuerzo es mejor” ocurre por la v´ıa de los beneﬁcios marginales. Para franquicias que no tienen mucho renombre o que, por alguna razo´n, no ven al esfuerzo como un beneﬁcio per se, el modelo aplica muy bien. Sin embargo, es claro que esto no es necesariamente cierto; la mayor´ıa de las franquicias saben que el esfuerzo en una de sus sucursales es sino´nimo de calidad y de mayores beneﬁcios (ya sea intertemporalmente o en otros mercados), por lo que ellas valoran al esfuerzo per se. Esta es la principal forma de extender el presente modelo, pues el hecho de que se introduzca al esfuerzo en la funcion de beneﬁcios del Principal, de manera aditivamente separada, es probable que altere los resultados y que se encuentre que no necesariamente es o´ptimo para las empresas hacer siempre su menor esfuerzo posible. Adema´s hay otras opciones para extender el presente modelo como el analizar el caso cuando los Principales son aversos al riesgo; la inclusio´n de restricciones de liquidez ex-post; la introduccio´n de externalidades (positivas) entre empresas; generalizar al caso de n empresas con n Agentes; empresas y/o Agentes heteroge´neos; considerar el caso en el que compiten a´ la Cournot, entre otros.
+19
+
+Daniel Ruiz
+6. Conclusiones
+Se elaboro´ un modelo de ciudad lineal en el que el esfuerzo tiene un rol muy importante, pues los consumidores valoran su consumo del bien en funcio´n de e´ste. En primera instancia, el modelo es conveniente para analizar la localizacio´n geogra´ﬁca en la que se establecera´n dos empresas que compiten muy fuertemente, y que no solo eligen su precio sino su esfuerzo a realizar. Adema´s, en vista de que el esfuerzo puede ser una variable no-observable, el modelo tambie´n se presta para analizar problemas de Agente-Principal y estructuras de contrato bajo competencia. En la literatura existen muy pocos modelos teo´ricos que analicen la estructura contractual bajo competencia, por lo que este modelo es u´til para poder analizar dichos efectos pues propone una forma muy particular de competir (horizontalmente) que se ha visto u´til en la pra´ctica.
+Se encuentra que cuando el esfuerzo tambie´n es una variable de decisio´n sera´ o´ptimo para las empresas diferenciarse lo ma´ximo posible, cobrar el precio ma´s alto y hacer esfuerzo bajo. Adema´s, cuando se toma en cuenta que el modelo podr´ıa analizarse como uno de Agente-Principal donde existen problemas de riesgo moral, las conclusiones en tanto a localizacio´n cambian y se obtienen contratos particularmente interesantes para su ana´lisis teo´rico.
+En primer lugar, el modelo encuentra que cuando el contrato que ofrece el Principal solo puede depender de las ventas del Agente (i. e., no se puede cobrar un monto ﬁjo) en equilibrio las empresas terminara´n compitiendo fuertemente en el centro de la ciudad (m´ınima diferenciacio´n), con el ma´ximo esfuerzo posible (el que hace que el precio sea igual al costo marginal) y no habra´ beneﬁcios para ninguno de los involucrados.
+Sin embargo, cuando s´ı se puede cobrar un monto ﬁjo resulta que en equilibrio las empresas realizara´n un esfuerzo particularmente bajo (incluso ma´s bajo que cuando no existen problemas de riesgo moral), se ofrecera´ un contrato de renta compartida (que es lo que provoca que, de hecho, el esfuerzo sea au´n menor), y, a pesar de ello, el Principal tendra´ ma´s beneﬁcios que incluso en el caso donde no existen problemas de riesgo moral.
+A primera vista este resultado parecer´ıa poco intuitivo pues, en general, hacer esfuerzo bajo genera menores beneﬁcios; sin embargo, por la estructura competitiva en el modelo de diferenciacio´n horizontal, este no es el caso, pues un menor esfuerzo puede generar ahorros equivalentes a cobrar un precio mayor al costo marginal.
+En consecuencia, cuando una empresa no puede cobrar un monto ﬁjo realizara´ el esfuerzo de m´ınima diferenciacio´n (muy alto); cuando hay ma´xima diferenciacio´n se hace menos esfuerzo, pero cuando hay ma´xima diferenciacio´n y existen problemas de riesgo moral se hace el menor esfuerzo posible, y esto se ve reﬂejado en los beneﬁcios, que aumentan entre menor sea el esfuerzo ejercido.
+20
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+A. Ape´ndices
+
+A.1. Prueba del Lema 1
+
+Conside´rese el marco explicado previamente. La utilidad del consumidor en x esta´ dada por
+
+
+
+u(x) = R + θs1 − p1 − t(x − a)2
+
+,
+
+R + θs2 − p2 − t(x − (1 − b))2
+
+lo cual implica que el consumidor indiferente x¯ es tal que
+
+x¯
+
+=
+
+θ(s1
+
+−
+
+s2)
+
++
+
+p2
+
+−
+
+p1
+
++
+
+1
+
+−
+
+b
+
++
+
+a .
+
+2t(1 − a − b)
+
+2
+
+Por lo tanto, las demandas
+
+
+
+⇒
+
+D1(a, b,
+
+s1, s2; p1, p2)
+
+:=
+
+x¯
+
+=
+
+a
+
++
+
+1−b−a 2
+
++
+
+θ(s1−s2)+p2−p1 2t(1−a−b)
+
+,
+
+D2(a, b,
+
+s1, s2; p1, p2)
+
+:=
+
+1
+
+−
+
+x¯
+
+=
+
+b
+
++
+
+1−b−a 2
+
++
+
+θ(s2−s1)+p1−p2 2t(1−a−b)
+
+y los beneﬁcios
+
+
+
+Π1(a, b, s1, s2; p1, p2) = ⇒
+
+a
+
++
+
+1−b−a 2
+
++
+
+θ(s1−s2)+p2−p1 2t(1−a−b)
+
+(p1 − c − αs1)
+
+.
+
+Π2(a, b, s1, s2; p1, p2) =
+
+b
+
++
+
+1−b−a 2
+
++
+
+θ(s2−s1)+p1−p2 2t(1−a−b)
+
+(p2 − c − αs2)
+
+Bajo los supuestos 1 y 2, el problema se resuelve con induccio´n hacia atra´s; por tanto, en el segundo periodo, el problema de maximizacio´n de cada una de las empresas esta´ dado por:
+
+ma´x {Πi(a, b, s1, s2; p1, p2)} .
+{si R++}
+
+As´ı, al resolverse se encuentra que las condiciones de primer orden son:20
+
+
+
+t(1−a−b)(1−b+a)
+ θ
+
++
+
+p2 θ
+
+−
+
+1 α
+
++
+
+1 θ
+
+p1
+
++
+
+c α
+
+=
+
+s2
+
+−
+
+2s1
+
+.
+
+t(1−a−b)(1−a+b)
+ θ
+
++
+
+p1 θ
+
+−
+
+1 α
+
++
+
+1 θ
+
+p2
+
++
+
+c α
+
+=
+
+s1
+
+−
+
+2s2
+
+20Es claro que las funciones de beneﬁcios son estr´ıctamente co´ncavas, por lo que las condiciones de primer orden son necesarias y suﬁcientes.
+21
+
+Daniel Ruiz
+
+En equilibrio, los esfuerzos o´ptimos son:
+
+ s1∗
+
+=
+
+p2+2p1 3α
+
++
+
+p1−p2 3θ
+
+−
+
+c α
+
+−
+
+( ) t(1−b−a)
+
+1+
+
+a−b 3
+
+θ
+
+s2∗
+
+=
+
+p1+2p2 3α
+
++
+
+p2−p1 3θ
+
+−
+
+c α
+
+−
+
+( ) t(1−b−a)
+
+1+
+
+b−a 3
+
+θ
+
+.
+
+Seguidamente se sustituyen estos esfuerzos o´ptimos en las funciones de beneﬁcios.
+
+
+
+⇒ Π1(a, b; s1∗, s2∗, p1, p2) = 2t(1 − b − a)
+
+α θ
+
+Π2(a, b; s1∗, s∗2, p1, p2) = 2t(1 − b − a)
+
+α θ
+
+1 2
+
+1
+
++
+
+a−b 3
+
++ (p1−p2)(θ−α) 6tα(1−b−a)
+
+2
+
+1 2
+
+1
+
++
+
+b−a 3
+
++ (p2−p1)(θ−α) 6tα(1−b−a)
+
+2
+
+.
+
+Dada
+
+la
+
+condicio´ n
+
+de
+
+que
+
+los
+
+precios
+
+no
+
+sean
+
+muy
+
+distintos
+
+entre
+
+s´ı,
+
+−αt(1−b−a)(1+b+3a) θ−α
+
+<
+
+p2
+
+−
+
+p1
+
+<
+
+αt(1−b−a)(1+a+3b) θ−α
+
+,21
+
+ahora
+
+se
+
+resuelve
+
+el
+
+problema
+
+de
+
+maximizacio´ n
+
+para
+
+cada
+
+empresa
+
+en
+
+el
+
+primer
+
+periodo, donde eligen la localizacio´n o´ptima, es decir,
+
+{a
+
+ma´x
+o´ b [0,1]}
+
+{Πi(a,
+
+b;
+
+s∗1,
+
+s∗2,
+
+p1,
+
+p2
+
+)}
+
+.
+
+Las primeras derivadas
+
+
+
+signo ⇒
+
+dΠ1 da
+
+= signo
+
+(p1−p2)(θ−α) tα(1−b−a)
+
+−
+
+(1
+
++
+
+b
+
++
+
+3a)
+
+.
+
+signo
+
+dΠ2 db
+
+= signo
+
+(p2−p1)(θ−α) tα(1−b−a)
+
+−
+
+(1
+
++
+
+a
+
++
+
+3b)
+
+Con ayuda del supuesto 1, entonces:
+
+
+
+⇒
+
+ dΠ1 da
+
+<
+
+0
+
+.
+
+ dΠ2 db
+
+<
+
+0
+
+21Consecuencia directa del Supuesto 1.
+22
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+A.2. Prueba de la Proposicio´n 1
+
+Se procede de la misma manera que antes. Los supuestos 1 y 2 siguen aplicando para este modelo, adema´s ahora es necesario que la variable aleator´ıa α (0, θ), con E(α) = α¯. Como no hay cambios en los supuestos de la funcio´n de utilidad
+
+
+
+⇒
+
+D1(a, b,
+
+s1, s2, p1, p2)
+
+:=
+
+x¯
+
+=
+
+a
+
++
+
+1−b−a 2
+
++
+
+θ(s1−s2)+p2−p1 2t(1−a−b)
+
+.
+
+D2(a, b,
+
+s1, s2, p1, p2)
+
+:=
+
+1
+
+−
+
+x¯
+
+=
+
+b
+
++
+
+1−b−a 2
+
++
+
+θ(s2−s1)+p1−p2 2t(1−a−b)
+
+Pero ahora hay 2 pares de funciones de beneﬁcio, las de los Agentes son
+
+ ΠA1 (a, b, s1, s2, p1, p2) =
+ΠA2 (a, b, s1, s2, p1, p2) =
+
+a
+
++
+
+1−b−a 2
+
++
+
+θ(s1−s2)+p2−p1 2t(1−a−b)
+
+b
+
++
+
+1−b−a 2
+
++
+
+θ(s2−s1)+p1−p2 2t(1−a−b)
+
+(λ1p1 − c − αs1) − F1 (λ2p2 − c − αs2) − F2
+
+y las de los Principales son
+
+
+
+ΠP1 (a, b, s1, s2, p1, p2) =
+
+a
+
++
+
+1−b−a 2
+
++
+
+θ(s1−s2)+p2−p1 2t(1−a−b)
+
+(1 − λ1)p1 + F1
+
+.
+
+Π2P (a, b, s1, s2, p1, p2) =
+
+b
+
++
+
+1−b−a 2
+
++
+
+θ(s2−s1)+p1−p2 2t(1−a−b)
+
+(1 − λ2)p2 + F2
+
+Por lo tanto, el problema de maximizacio´n a resolver esta´ dado por:
+
+ma´x
+{λi [0,1], pi (0,p], a o´ b, Fi R+}
+
+E
+
+ΠiP (a, b, p1, p2; s1∗, s2∗)
+
+sujeto a:
+
+
+a [0, 1] i = 1 ,
+b [0, 1] i = 2
+
+a ≤ 1 − b,
+
+{s∗1, s∗2} = argma´x E Π1A(a, b, s1, s2, p1, p2) , argm´ax E ΠA2 (a, b, s1, s2, p1, p2) ,
+
+{s1}
+
+{s2}
+
+ΠiA R+,
+
+para i = 1, 2, y luego hallar el equilibrio.
+
+Las primeras tres restricciones son de localizacio´n.22 Las u´ltimas dos son las equivalentes a la restriccio´n de incentivos y a la restriccio´n de participacio´n de los modelos cla´sicos en teor´ıa de contratos, respectivamente. Note tambie´n que se supone impl´ıcitamente que hay un precio ma´ximo,
+
+22En particular, la tercera se hace por mera simpliﬁcacio´n matema´tica, sin pe´rdida de generalidad.
+23
+
+Daniel Ruiz
+
+que es igual para ambas empresas.
+
+Entonces, para hallar el Equilibrio de Nash se procede primeramente a encontrar los esfuerzos o´ptimos. Las condiciones de primer orden son:23
+
+
+
+t(1−a−b)(1−b+a)
+ θ
+
++
+
+p2 θ
+
+−
+
+λ1 α¯
+
++
+
+1 θ
+
+p1
+
++
+
+c α¯
+
+=
+
+s2
+
+− 2s1
+
+.
+
+t(1−a−b)(1−a+b)
+ θ
+
++
+
+p1 θ
+
+−
+
+λ2 α¯
+
++
+
+1 θ
+
+p2
+
++
+
+c α¯
+
+=
+
+s1
+
+− 2s2
+
+Al resolverse en equilibrio,
+
+⇒
+
+ s∗1
+s∗2
+
+= =
+
+λ2p2+2λ1p1 3α¯
+λ1p1+2λ2p2 3α¯
+
++ +
+
+p1−p2 3θ
+p2−p1 3θ
+
+− −
+
+c α¯
+c α¯
+
+− −
+
+( ) t(1−b−a)
+
+1+
+
+a−b 3
+
+θ
+
+( ) t(1−b−a)
+
+1+
+
+b−a 3
+
+θ
+
+.
+
+Seguidamente, se sustituyen estos esfuerzos o´ptimos en las funciones de beneﬁcios del Agente,
+
+
+
+⇒ ΠA1 (a, b, p1, p2; s1∗, s∗2) = 2t(1 − b − a)
+
+α¯ θ
+
+1 2
+
+1
+
++
+
+a−b 3
+
++ θ(λ1p1−λ2p2)−α¯(p1−p2) 6tα¯(1−b−a)
+
+2
+− F1
+
+2
+
+.
+
+Π2A(a, b, p1, p2; s1∗, s2∗) = 2t(1 − b − a)
+
+α¯ θ
+
+1 + + 1
+
+b−a
+
+θ(λ2p2−λ1p1)−α¯(p2−p1)
+
+2
+
+3
+
+6tα¯(1−b−a)
+
+− F2
+
+Paralela a la condicio´n en el Ape´ndice anterior, −α¯t(1 − b − a)(1 + b + 3a) < θ(λ1p1 − λ2p2) − α¯(p1 − p2) < α¯t(1 − b − a)(1 + a + 3b),24 con lo que se puede fa´cilmente mostrar que sigue siendo cierto que el efecto estrategia domina al efecto demanda, pues
+
+⇒
+
+ 
+
+dΠ1A
+
+da
+
+ dΠ2A db
+
+< <
+
+0 0
+
+.
+
+Sin embargo, ahora es el turno de los Principales para maximizar sus beneﬁcios. Sus respectivas funciones de beneﬁcios ahora son
+
+
+
+ΠP1 (a, b, p1, p2; s1∗, s∗2) =
+
+1 + + 1
+
+a−b
+
+θ(λ1p1−λ2p2)−α(p1−p2)
+
+2
+
+3
+
+6tα(1−b−a)
+
+p1(1 − λ1) + F1
+
+.
+
+Π2P (a, b, p1, p2; s1∗, s∗2) =
+
+1 + + 1
+
+b−a
+
+θ(λ2p2−λ1p1)−α(p2−p1)
+
+2
+
+3
+
+6tα(1−b−a)
+
+p2(1 − λ2) + F2
+
+Entonces, cada Principal elegira´ el contrato, el precio y la localizacio´n que maximizen sus beneﬁcios, y luego se llegara´ a un equilibrio. Supo´ngase que el contrato solo depende de las ventas realizadas, i. e., F1 = F2 = 0.
+
+23Las condiciones de primer orden son necesarias y suﬁcientes, se puede facilmente mostrar que la funcio´n es estrictamente co´ncava en esfuerzos.
+24Consecuencia directa, tambie´n, del Supuesto 1.
+24
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+
+As´ı, las condiciones de primer orden (necesarias y suﬁcientes) para el contrato esta´n dadas por
+
+
+
+2λ1
+
+=
+
+1
+
++
+
+p2 p1
+
++
+
+α¯ θp1
+
+(p1 − p2 − t(1 − b − a)(3 + a − b))
+
+.
+
+2λ2
+
+=
+
+1
+
++
+
+p1 p2
+
++
+
+α¯ θp2
+
+(p2 − p1 − t(1 − b − a)(3 + b − a))
+
+Ahora, en tanto a los precios, su respectiva condicio´n de segundo orden depende del λ o´ptimo; en particular del signo de θλi − α¯. Si ocurre que θλi − α¯ < 0 implica que las funciones de mejor respuesta dan el ma´ximo, y el equilibrio estar´ıa en p∗1 = p∗2 = 0 (lo cual, entonces, vuelve trivial el problema de maximizacio´n); sin embargo, es fa´cil demostrar que esto no ocurre pues θλ∗i − α¯ > 0, evaluado en el contrato o´ptimo. As´ı, los precios o´ptimos en equilibrio son p∗1 = p∗2 = p¯.
+Si se evalu´a esto en las funciones de mejor respuesta del contrato
+
+ ⇒ λ1 = 1 − 3α¯θtp¯(1 − b − a)(9 + a − b) .
+λ2 = 1 − 3α¯θtp¯(1 − b − a)(9 + b − a)
+
+Finalmente, la localizacio´n tiene dos condiciones de primer orden para cada empresa. Es fa´cil mostrar que las que maximizan los beneﬁcios son las siguientes:
+
+
+
+a
+
+=
+
+3−b 5
+
+.
+
+b
+
+=
+
+3−a 5
+
+Por
+
+tanto,
+
+a∗
+
+=
+
+b∗
+
+=
+
+1 .
+
+2
+
+En
+
+conclusio´ n,
+
+cuando
+
+F1
+
+=
+
+F2
+
+=
+
+0
+
+el
+
+equilibrio
+
+esta´
+
+dado
+
+por
+
+a∗
+
+=
+
+b∗
+
+=
+
+1 ,
+2
+
+λ∗1
+
+=
+
+λ∗2
+
+=
+
+1,
+
+p∗1
+
+=
+
+p∗2
+
+=
+
+p¯ y
+
+s∗1
+
+=
+
+s∗2
+
+=
+
+p¯ − c .
+α¯
+
+Y
+
+los
+
+beneﬁcios
+
+en
+
+equilibrio
+
+sera´n
+
+ΠP1 ∗
+
+=
+
+Π2P ∗
+
+=
+
+ΠA1 ∗
+
+=
+
+ΠA2 ∗
+
+=
+
+0.
+
+25
+
+Daniel Ruiz
+
+A.3. Prueba de la Proposicio´n 2
+
+El problema del Agente es casi el mismo, salvo porque ahora el del Principal cambia pues puede elegir Fi. El problema se resuelve de la misma manera, solo que es necesario sustituir la restriccio´n de participacio´n en el problema de maximizacio´n de cada Principal para resolverlo. Entonces, cada Principal elegira´ el contrato, el precio y la localizacio´n que maximizen sus beneﬁcios, y luego se llega a un equilibrio.
+
+As´ı, las condiciones de primer orden (necesarias y suﬁcientes) para el contrato esta´n dadas por
+
+
+
+4λ1p1 = λ2p2 + 3p1 +
+
+α¯ θ
+
+(p1 − p2 − t(1 − b − a)(3 + a − b))
+
+.
+
+4λ2p2 = λ1p1 + 3p2 +
+
+α¯ θ
+
+(p2 − p1 − t(1 − b − a)(3 + b − a))
+
+Ahora, en tanto a los precios, su respectiva condicio´n de segundo orden depende del λ o´ptimo; en particular del signo de θλi − α¯. Si ocurre que θλi − α¯ < 0 implica que las funciones de mejor respuesta dan el ma´ximo, y el equilibrio estar´ıa en p∗1 = p2∗ = 0 (lo cual, entonces, vuelve trivial el problema de maximizacio´n); sin embargo, es fa´cil demostrar que esto no ocurre pues θλi∗ − α¯ > 0, evaluado en el o´ptimo contrato. As´ı, los precios o´ptimos en equilibrio son p1∗ = p∗2 = p¯.
+Si se evalu´a esto en las funciones de mejor respuesta del contrato
+
+ ⇒ λ1 = 1 − 5α¯θtp¯(1 − b − a)(5 + a − b) .
+λ2 = 1 − 5α¯θtp¯(1 − b − a)(5 + b − a)
+
+Finalmente, la localizacio´n tiene dos condiciones de primer orden para cada empresa. Es fa´cil
+
+mostrar que las que maximizan los beneﬁcios se encuentran en los nu´meros negativos, lo cual implica que se saturan las restricciones de los para´metros; por tanto, a∗ = b∗ = 0.
+
+En
+
+conclusio´ n,
+
+cuando
+
+F1,F2
+
+=
+
+0
+
+el
+
+equilibrio
+
+esta´
+
+dado
+
+por
+
+a∗
+
+=
+
+b∗
+
+=
+
+0,
+
+λ∗1
+
+=
+
+λ∗2
+
+=
+
+1
+
+−
+
+α¯t ,
+θp¯
+
+p∗1
+
+=
+
+p2∗
+
+=
+
+p¯ y
+
+s1∗
+
+=
+
+s∗2
+
+=
+
+p¯ − c α¯
+
+−
+
+2t θ.Y
+
+los beneﬁcios en
+
+equilibrio sera´n Π1P ∗
+
+=
+
+Π2P ∗
+
+=
+
+α¯t θ
+
+y
+
+Π1A∗ = ΠA2 ∗ = 0.
+
+26
+
+Riesgo moral y competencia duopol´ıstica en localizacio´n
+Referencias
+Anderson, Simon P. y Damien J. Neven (1991), “Cournot competition yields spatial agglomeration.” International Economic Review, 793–808.
+Butters, Gerard R. (1977), “Equilibrium distributions of sales and advertising prices.” The Review of Economic Studies, 465–491.
+d’Aspremont, Claude, J. Jaskold Gabszewicz, y J-F Thisse (1979), “On hotelling’s”stability in competition”.” Econometrica: Journal of the Econometric Society, 1145–1150.
+de Palma, Andre, Victor Ginsburgh, Yorgo Y. Papageorgiou, y J-F Thisse (1985), “The principle of minimum differentiation holds under sufﬁcient heterogeneity.” Econometrica: Journal of the Econometric Society, 767–781.
+Friedman, James W. y J-F Thisse (1993), “Partial collusion fosters minimum product differentiation.” Rand Journal of Economics, 24, 631–645.
+Gabszewicz, Jean Jaskold y J-F Thisse (1979), “Price competition, quality and income disparities.” Journal of Economic Theory, 20, 340–359.
+Hart, Oliver D. (1983), “The market mechanism as an incentive scheme.” The Bell Journal of Economics, 366–382.
+Hermalin, Benjamin E. (1992), “The effects of competition on executive behavior.” The Rand journal of economics, 350–365.
+Holmstrom, Bengt (1982), “Moral hazard in teams.” Bell Journal of Economics, 13, 324–340.
+Hotelling, H. (1929), “Stability in competition.” Economic Journal, 39, 41–57.
+Jehiel, Philippe (1992), “Product differentiation and price collusion.” International Journal of Industrial Organization, 10, 633–641.
+Jensen, Michael C. y William H. Meckling (1976), “Theory of the ﬁrm: Managerial behavior, agency costs and ownership structure.” Journal of Financial Economics, 3, 305–360.
+Lerner, A. P. y H. W. Singer (1937), “Some notes on duopoly and spatial competition.” Journal of Political Economy, 45, 145–186.
+Liang, Wen-Jung y Chao-Cheng Mai (2006), “Validity of the principle of minimum differentiation under vertical subcontracting.” Regional Science and Urban Economics, 36, 373–384.
+27
+
+Daniel Ruiz
+Liebowitz, Stan J. (1982), “Durability, market structure, and new-used goods models.” The American Economic Review, 816–824.
+Mai, Chao Cheng y Shin kun Peng (1999), “Cooperation vs. competition in a spatial model.” Regional Science and Urban Economics, 29, 463–472.
+Olmos, Marta Ferna´ndez, Jorge Rosell Mart´ınez, Manuel Antonio Espitia Escuer, y Luz Mar´ıa Mar´ın Vinuesa (2009), “Successive duopoly under moral hazard: Will incentive contracts persist?” Journal of Industrial Engineering and Management, 2, 208–229.
+Rhee, Byong-Duk, Andre´ de Palma, Claes Fornell, y Jacques-Francois Thisse (1992), “Restoring the principle of minimum differentiation in product positioning.” Journal of Economics & Management Strategy, 1, 475–505.
+Salop, Steven C. (1979), “Monopolistic competition with outside goods.” Bell Journal of Economics, 10, 141–156.
+Scharfstein, David (1988), “Product-market competition and managerial slack.” Rand Journal of Economics, 19, 147–155.
+Shaked, Avner y John Sutton (1982), “Relaxing price competition through product differentiation.” The review of economic studies, 3–13.
+Shaked, Avner y John Sutton (1983), “Natural oligopolies.” Econometrica: Journal of the Econometric Society, 1469–1483.
+Stahl, Konrad (1982a), “Differentiated products, consumer search, and locational oligopoly.” The Journal of Industrial Economics, 97–113.
+Stahl, Konrad (1982b), “Location and spatial pricing theory with nonconvex transportation cost schedules.” Bell Journal of Economics, 13, 575–582.
+Stiglitz, Joseph E. y Barry J. Nalebuff (1983), “Information, competition, and markets.” American Economic Review, 73, 278–283.
+Tseng, Ching Chih, Wen Jung Liang, y Kuang Cheng Andy Wang (2010), “Spatial agglomeration with vertical differentiation.” Papers in Regional Science, 89, 841–858.
+Zhang, Z. John (1995), “Price-matching policy and the principle of minimum differentiation.” The Journal of Industrial Economics, 287–299.
+28
+
+

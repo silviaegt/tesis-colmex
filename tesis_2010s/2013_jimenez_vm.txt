@@ -1,0 +1,860 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+ON THE INCENTIVES TO INVEST IN SCHOOL QUALITY
+VÍCTOR MANUEL JIMÉNEZ MEDINA
+PROMOCIÓN 2011-2013
+ASESOR:
+DAVID CANTALA
+JULIO, 2013
+
+On The Incentives To Invest In School Quality
+V´ıctor Manuel Jim´enez Medina July 24, 2013
+Abstract We present a problem in which colleges choose quality in a continuum two-sided matching market, where a ﬁnite set of colleges is matched to a continuum of students. We consider the case when this choice is constrained, that is, when each college has a budget to invest in improving. We show that there exists a Nash Equilibrium when all of them choose quality simultaneously. Moreover, we analyze the case of the duopoly in order to make our results clear, it also shows how the mechanism works and it allows us to get some comparative statics.
+1
+
+Contents
+
+1 Introduction
+
+3
+
+2 The Model
+
+5
+
+2.1 Deﬁnitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+2.2 Investment In School Quality . . . . . . . . . . . . . . . . . . . . . 9
+
+2.3 Income Restrictions . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+3 Application: Duopoly
+
+13
+
+3.1 Comparative Statics . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+4 Conclusion
+
+20
+
+5 Appendix
+
+22
+
+2
+
+1 Introduction
+This paper develops a model of school quality choice inspired by the article of Azevedo and Leshno [6], which consists of choosing a school quality parameter for each school in a continuum matching market, that is, where a ﬁnite set of colleges is matched with a continuum of students. The choice of quality is taken before the assignment takes place, so that the mechanism assigns a continuum of students having observed the quality parameter of each one.
+We take an important and innovative result by Azevedo and Leshno [6], which establishes the equivalence between i) ﬁnding a stable matching using the continuous version of the deferred acceptance algorithm of Gale & Shapley [10], and ii) solving a system of equations of supply and demand (ﬁnding the market-clearing cutoﬀ vector). The main issue of this work is to model the choice of school quality by taking into account two aspects:
+1. The strategic behavior of colleges, and
+2. A budget constraint faced by each college to carry out the investment in quality.
+This approach proposes a maximization problem subject to a budget constraint by each college, where the decision variable is precisely school quality. We use the Lagrange method to incorporate the budget constraint into the maximization of the entering class, which we deﬁne as the quality of students that are assigned to each college by the mechanism. We show that there exists at least one Nash quilibrium. Moreover, we analyze the case of duopoly (i.e. only two schools), in order to explain how the mechanism works and to get some comparative statics.
+This model has two parts. The ﬁrst one is related to the continuum matching model of Azevedo and Leshno [6], from which we take the terms to analyze the incentives for colleges to invest in school quality (with basically the same notation). The second part is related to a model of a constrained maximization problem in order to capture the strategic behavior of the colleges.
+3
+
+We ﬁnd basically two kinds of results. The ﬁrst one is theoretical, in which we show that there exists a Nash equilibrium in the game where colleges choose quality simultaneously. It is well known that even in the basic Cournot model, the suﬃcient conditions for equilibrium to exist are quite restrictive (Roberts and Sonnenschein [15]), so we had to assume a quasi-concave function of the quality of the entering class in order to use the Kakutani’s ﬁxed point theorem to prove existence. The second result is related to comparative statics, where, by assuming a truncated distribution function, we show that the market clearing cutoﬀs of the colleges (deﬁned as a threshold above which students are acceptable for colleges), are indeed positive in some interval, and, with income restrictions, that the quality of the entering class of a college increases with the college’s budget to invest in quality.
+Since this paper considers the case of an economy where each of a ﬁnite number of colleges is matched to a continuum mass of students, it is based on Aumann [2] insight that markets with a continuum of traders may be considerably simpler that those with a ﬁnite number of traders. As mentioned by Azevedo and Leshno [6], the model follows Gale and Shapley [10] college admissions model, which allows for complex heterogeneous preferences. In the mechanism design literature there are several papers that study the properties of large markets (see, for example, Swinkels [19]). In the market design literature, many recent papers have focused on large markets (Che and kojima [8] and Azevedo and Budish [5]). More related to this model, are the contributions in market design that study large matching markets (Roth and Peranson [17] and Kojima and Pathak [12]). Besides, Avery and Levin [3] consider noncooperative models of college admissions, where colleges use admissions thresholds.
+In the context of the incentives for colleges to invest in school quality, Hatﬁeld et al. [11] consider this problem, in particular whether competition for the best students gives colleges incentives to improve their quality. They show that no stable mechanism respects improvements of school quality. However, in large markets, any stable mechanism approximately respects improvements, so the incentives are nonnegative but we do not know anything about the magnitude of
+4
+
+them. Finally, for the last part, we follow the work of Azevedo [4] who introduce imperfect competition in two-sided matching markets.
+2 The Model
+We start with some deﬁnitions in order to analyze the two parts of the model. We use the same notation of Azevedo and Leshno [6] to make our extension clear.
+2.1 Deﬁnitions
+Consider an economy with a set of public colleges C = {c1, ..., cC} on one side of the market, where we denote a generic college as c. Each college c has capacity sc, which is the measure of the maximum number of students that college c can admit. The preferences of the colleges over students are deﬁned by the vector ec ∈ [0, 1]C which are the scores that students obtain at college c. We need some measure of the quality of colleges. Let δ be the vector of qualities of the C colleges, so that δc ∈ R represents the quality of college c; students prefer higher δc to lower δc.
+On the other side, I is the set of students, generically denoted i. In this case we say that eci is the score of student i at college c. It is assumed that the vectors ei are distributed according to a distribution function G(·) in [0, 1]C, with an associated continuous density g > 0. Let τ : I −→ Θ be a type function (where Θ is the set of student types), such that τ (i) = θ, that is, τ assigns a type θ ∈ Θ to each student i ∈ I. We denote the type of students θ = ( θ, eθ), where
+θ represents the student’s strict preference ordering over colleges, and eθ is the vector of scores obtained by θ at every single college. Colleges prefer students with higher scores, that is, c prefers θ over θ if eθc > ecθ , or equivalently, i c j iﬀ eτc (i) > ecτ(j), for all i, j ∈ I.
+Students’ preferences depend on the quality of each college δc. Nevertheless, there is the possibility that diﬀerent students may be aﬀected diﬀerently by δc.
+5
+
+This will be useful when competition for the best students is taken into account.
+
+Student i has utility uic(δc) > 0 of attending college c, increasing in δc, and utility 0 of being unmatched. Strict preferences are assumed, that is, the measure of
+
+students who are indiﬀerent between two colleges is 0 for any value of δ; even
+
+when δc is the same for all colleges, they are not perfect substitutes, it means
+
+that
+
+even
+
+if
+
+δc
+
+=
+
+δc
+
+,
+
+it
+
+is
+
+possible
+
+that
+
+uic(δc)
+
+=
+
+ui
+c
+
+(δc),
+
+and
+
+also
+
+when
+
+δc
+
+=
+
+δc
+
+,
+
+it could
+
+be
+
+the
+
+case
+
+that
+
+uci (δc)
+
+=
+
+ui
+c
+
+(δc).
+
+Intuitively,
+
+if
+
+δc
+
+measures
+
+the
+
+quality
+
+of an applied econometrics course in a masters program, students with interest
+
+in working at Sedesol1 will be more sensitive to changes in δc than those who
+
+prefer to study a PhD. Given δ, colleges’ preferences induce a distribution ηδ over
+
+student types Θ, this distribution is assumed to be smooth in δ and θ, and to
+
+have a density fδ > 0.
+
+The decision of colleges of admitting students depends on a threshold of the
+
+students’ scores, above which a student is acceptable. Azevedo and Leshno
+
+[6] name this threshold a cutoﬀ and assume dependence on quality, P (δ) =
+
+(Pc1(δ), ..., Pc1(δ)), so that Pc is the college c’s cutoﬀ. For a given δ and P (δ), a student’s demand is deﬁned as her favorite college among those she can aﬀord
+
+(i.e. those where Pc ≤ ecθ). Dependence on δ will be omitted when there is no risk of confusion (P = (Pc1, ..., PcC )).
+Now, since Θ is continuous, we say that a continuum economy is given by
+
+E = [η, S], where η is a probability measure over Θ and S = (s1, s2, ..., sC) is
+
+a vector of strictly positive capacities for each college. As stated above, strict
+
+preferences have been assumed, so that every college’s indiﬀerence curves have
+
+η-measure 0. That is, for any college c and real number x, η({θ : eθc = x}) = 0.
+
+Deﬁnition 1. (Azevedo and Leshno [6]) A matching describes an allocation of students to colleges. Formally, in a continuum economy E = [η, S], it is a function µ : C ∪ Θ −→ 2Θ ∪ (C ∪ Θ), such that
+1. For all θ ∈ Θ : µ(θ) ∈ C ∪ {θ}. 1Secretar´ıa de Desarrollo Social.
+
+6
+
+2. For all c ∈ C : µ(c) ⊆ Θ is measurable, and η(µ(c)) ≤ sc. 3. c = µ(θ) iﬀ θ ∈ µ(c). 4. (Right continuity) For any sequence of student types θk = ( , ek) and θ =
+( , e), with ek converging to e, and ekc ≥ eck+1 ≥ ec for all k, c, we can ﬁnd some large K so that µ(θk) = µ(θ) for k > K.
+Conditions (1)-(3) are analogous to those in the discrete model. Condition (1) states that each student is matched to a college or to herself (unmatched); (2) that colleges are matched to sets of students with measure not exceeding its capacity; (3) is a consistency condition, requiring that a college is matched to a student if and only if the student is matched to the college. The technical Condition (4) is novel. It states that given a sequence of student types θk = ( , ek), which are decreasingly desirable, with scores ek −→ e, then for large enough k all student types ( , ek) in the sequence receive the same allocation, and the students whose score is the limit ( , e) receive this allocation too. The last condition does not aﬀect the set of stable matchings, it only implies that a stable matching always allows a set of extra students of measure 0 into a college when this can be done without compromising stability.
+A student-college pair (θ, c) blocks a matching µ at economy E if the student θ prefers c to her match and either (i) college c does not ﬁll its quota, or (ii) college c is matched to another student that has a strictly lower score than θ. Formally, (θ, c) blocks µ if c θ µ(θ) and either (i) η(µ(c)) < sc, or (ii) ∃ θ ∈ µ(c) with eθc < eθc .
+Deﬁnition 2. (Azevedo and Leshno [6]) A matching µ for a continuum economy E is stable if it is not blocked by any student-college pair.
+As stated before, the target of this paper is to address the problem of investing in school quality by colleges. In doing so, the characterization of a matching in terms of supply and demand will be used. Recall that a cutoﬀ is a minimal score Pc ∈ [0, 1] required for admission at a college c. A student’s demand given a
+7
+
+vector of cutoﬀs is her favorite college among those she can aﬀord. That is,
+Dθ(P ) = arg max{c|Pc ≤ ecθ} ∪ {θ}. θ
+The aggregate demand for college c is the mass of students that demand it,
+Dc(P ) = η({Dθ(P ) = c}). The aggregate vector {Dc(P )}c∈C is denoted by D(P ). A market clearing cutoﬀ is a vector of cutoﬀs that clears supply and demand for colleges.
+
+Deﬁnition 3. (Azevedo and Leshno [6]) A vector of cutoﬀs P is a market clearing cutoﬀ if it satisﬁes the following market clearing equations
+Dc(P ) ≤ sc for all c, and Dc(P ) = sc if Pc > 0.
+
+There is a one-to-one correspondence between stable matchings and market
+
+clearing cutoﬀs. To deﬁne this correspondence, two operators are deﬁned. Given
+
+a market clearing cutoﬀ P , we deﬁne the associated matching µ = MP using the
+
+demand function:
+
+µ(θ) = Dθ(P ).
+
+Conversely, given a stable matching µ, we deﬁne the associated cutoﬀ P = Pµ by the score of the marginal students matched to each college:
+
+Pc
+
+=
+
+inf
+θ∈µ(c)
+
+ecθ
+
+.
+
+The operators M and P form a bijection between stable matchings and market
+
+clearing cutoﬀs.
+
+Lemma 1. (Supply and Demand Lemma - Azevedo and Leshno [6]) If µ is a stable matching, then Pµ is a market clearing cutoﬀ. If P is a market clearing cutoﬀ, then MP is a stable matching. In addition, the operators P and M are inverses of each other.
+8
+
+This lemma implies that, given E, computing stable matchings is equivalent to ﬁnding market clearing cutoﬀs, as P and M are a one-to-one correspondence between the two sets.
+
+2.2 Investment In School Quality
+
+Now we are able to say that, given δ, there exists a unique stable matching µδ. Let P ∗(δ) be the unique associated market clearing cutoﬀs. More speciﬁcally,
+
+Azevedo and Leshno (2013) deﬁne the aggregate quality of a college’s entering
+
+class as
+
+Qc(δ) =
+
+eθc dηδ(θ)
+
+(1)
+
+µδ (c)
+
+That is, the integral of scores eθc over all students matched to the college c.
+
+Why do we need this term? Consider how a college’s quality δc aﬀects the quality
+
+of its entering class Qc. Once we have a direct link between δc and Qc, we are
+
+able to say something about the incentives to improve quality, it could be to
+
+improve the quality of the entering class as a whole or to attract a speciﬁc kind
+
+of students.
+
+Taking into account that students’ utility is increasing in δc, we need to deﬁne
+
+some relevant quantities:
+
+• The number Nc of additional students attracted to college c by a marginal increase in quality:
+
+d
+
+d
+
+Nc ≡ dδc Dc(P ) |P =P ∗(δ)= {θ:Dθ(P ∗(δ))=c} dδc fδ(θ)dθ.
+
+• The average quality of the attracted students:
+
+e¯c ≡
+
+{θ:Dθ(P ∗(δ))=c}
+
+eθc
+
+·
+
+d dδc fδ(θ)dθ/Nc.
+
+• The set of students who are marginally accepted to college c and would go to college c otherwise:
+
+M˜ c c = {θ : c θ c, Pc = ecθ , Pc ≤ ecθ, Pc > ecθ ∀c = c : c θ c}.
+
+9
+
+• The number of students in this margin, and their average scores:
+
+Mc c =
+
+fδ (θ)dθ,
+
+M˜ c c
+
+P¯c c = E[ecθ | θ ∈ M˜ c c].
+
+At this point, notice that a cutoﬀ Pc∗ is the quality of a marginal accepted (or rejected) student at college c. The eﬀect of school quality δc on the quality of the entering class Qc is as follows.
+
+Proposition 1. (Azevedo and Leshno [6]) Assume that P ∗(δ) > 0, and that P is diﬀerentiable in δc. Then the quality of the entering class Qc is diﬀerentiable in school quality δc, and its derivative can be decomposed as
+
+dQc dδc
+
+=
+
+[e¯c − Pc∗] · Nc Direct Eﬀect
+
+−
+c
+
+[P¯c
+=c
+
+c
+
+− Pc∗] · Mc
+
+c
+
+· (− dPc∗ ) . dδc
+
+(2)
+
+Market Power Eﬀect
+
+The direct eﬀect term is weakly positive, always giving incentives to invest in
+
+quality. The market power terms increase (decrease) the incentives to invest in
+
+quality if an increase (decrease) in the quality of college c increases the market
+
+clearing cutoﬀ of college c , that is dPc∗ (δ)/dδc > 0(< 0).
+
+2.3 Income Restrictions
+So far, as mentioned before, we only have replicated the Azevedo and Leshno’s model (the remaining is ours) in order to extend it in the form of a constrained maximization problem. Suppose that, in the context of the model described above, there is a budget constraint for colleges Rc, i.e. investment in quality depends both on the behavior of the other colleges in the economy, and on an amount available to the college c to invest in quality.
+Investing in quality is costly, we denote h(·) the cost function for investing in quality (i.e. depends on δ) for college c, h : [0, ∞) −→ R. We assume the following:
+
+10
+
+Figure 1: The strictly convex form of the cost function.
+
+h (δ) > 0
+
+and also
+
+h (δ) > 0.
+
+The intuition of an increasing and strictly convex h(·) is the following (see Figure 1): suppose that college c wants to increase its quality of, say, ∆δ. What is the cost associated with this increase? It stands to reason that c can achieve this target at a lower cost when the quality is low than when it is high, and that the greater δc, the greater the amount of money required to improve (e.g. c could hire a recent graduate of the Master in Economics of Colmex to teach Microeconomics when δc is low, while it would have to hire a SNI2 III researcher to obtain the same change when δc is high).
+Having deﬁned above, we can address the investment in quality for c as a maximization problem subject to a budget constraint as follows:
+
+subject to
+
+max Qc(δ)
+δc
+h(δc) ≤ Rc.
+
+Using the Lagrange method, the problem becomes 2Sistema Nacional de Investigadores.
+
+11
+
+L = Qc(δc) − λ[h(δc) − Rc],
+
+(3)
+
+from which we get the following ﬁrst order conditions:
+
+∂L = dQc(δc) − λ dh(δc) = 0
+
+(4)
+
+∂δc
+
+dδc
+
+dδc
+
+∂L
+
+∂λ = h(δc) − Rc = 0.
+
+(5)
+
+Recalling that the vector of cutoﬀs that clear the market P ∗ is determined by
+
+the condition D(P ) = S, for a given δc , ∀c = c, we can substitute (2) into (4)
+
+to obtain
+
+δc = δc(Rc, δc ∈{C\c}).
+
+(6)
+
+Since this expression depends on the amount Rc and the quality of the other colleges, it clearly captures the two eﬀects mentioned above: the eﬀect of the behavior of the other colleges in the economy, and the eﬀect of the budget constraint for college c to invest in quality. It is a reaction function.
+
+At this point, assuming that all colleges choose their quality simultaneously, we can model this problem as a game:
+G = C, {∆c}, {Qc(·)} , for all c ∈ C,
+where C is the set of players (colleges), {∆c} is the set of strategies for each player c (with δc ∈ ∆c), and {Qc(δc1, ..., δcC )} the payoﬀ function giving the von Neumann-Morgenstern utility levels associated with the outcome arising from strategies (δc1, ..., δcC ). Given the reaction functions in (6), we can say that:
+Proposition 2. For a given function Qc(δ), quasi-concave in δc, a purestrategy Nash equilibrium, δ∗ = (δc∗1, ..., δc∗C ), exists in the game G. Proof. We begin with Lemma 2, which provides a key technical result.
+
+12
+
+Lemma 2. If the sets ∆c1, ..., ∆cC are nonempty, ∆c is compact and convex, and Qc(·) is continuous in (δc1, ..., δcC ) and quasi-concave in δc, then player c’s best-response correspondence bc(·) is nonempty, convex-valued, and upper hemicontinuous.
+Proof. Note ﬁrst that bc(δ−c) is the set of maximizers of the continuous function Qc(·, δ−c) on the compact set ∆c. Hence, it is nonempty[]. The convexity of bc(δ−c) follows because the set of maximizers of a quasi-concave function [in this case, the function Qc(·, δ−c)] on a convex set [∆c, in this case] is convex. Finally, for upper hemi-continuity, we need to show that for any sequence (δcn, δ−nc) −→ (δc, δ−c) such that δcn ∈ bc(δ−n c) for all n, we have δc ∈ bc(δ−c). To see this, note that for all n, Qc(δcn, δ−n c) ≥ Qc(δc, δ−n c) for all δc ∈ ∆c. Therefore, by the continuity of Qc(·), we have Qc(δc, δ−c) ≥ Qc(δc, δ−c).
+Now, in order to prove Proposition 2, deﬁne the correspondence b : ∆ → ∆ by
+b(δc1 , ..., δcC ) = bc1 (δ−c1 ) × · · · × bcC (δ−cC ) Note that b(·) is a correspondence from the nonempty, convex, and compact set ∆ = ∆c1 ×· · ·×∆cC to itself. In addition, by Lemma 2, b(·) is a nonempty, convexvalued, and upper hemi-continuous correspondence. Thus, all the conditions of the Kakutani ﬁxed point theorem are satisﬁed. Hence, there exists a ﬁxed point for this correspondence, a strategy proﬁle δ ∈ ∆ such that δ ∈ b(δ). The strategies at this ﬁxed point constitute a Nash equilibrium because by construction δc ∈ bc(δ−c) for all c = c1, ..., cC .
+3 Application: Duopoly
+We now restrict our attention to the duopoly case. This section attempts to show the main results of the previous sections. First of all, we need to make the allocation mechanism clear. Consider the case when there are only two colleges,
+13
+
+Figure 2: These squares represent the set of student types.
+The left square represents students that prefer college c1, and the right square students who prefer college c2. Scores at each college are represented by the (x, y) coordinates.
+c1 and c2. The distribution of the students η is a truncated distribution to the interval [0, 1]. That is, we assume that there is a mass m ∈ [0, 1] of students with preference list c1, c2, and a mass (1 − m) of students with preference list c2, c1, where we assume that m is the mean of the truncated distribution.
+Each mass of students has scores distributed uniformly over [0, 1]2 as it is shown in Figure 2. Note the following: if both colleges had capacity 1/2, the unique stable matching would have each student matched to her favorite college. To make the model interesting, assume that the capacity of college c1 is sc1, and the capacity of college c2 is sc2, and sc1 + sc2 < 1. That is, colleges do not necessarily have the capacity to accept all students who prefer them.
+As Azevedo and Leshno [6] have shown, there are two ways of ﬁnding stable matchings: the continuous version of the student-proposing deferred acceptance algorithm and the application of Lemma 1. As they show, we may simply look for cutoﬀs that equate supply and demand. This is illustrated in Figure 3, where it is easy to see that the market clearing equations are:
+sc1 = (1 − p1)(1 + p2)(m)
+sc2 = (1 − p2)(1 + p1)(1 − m) Solving this system, we get p1 = p1(m, sc1, sc2) and p2 = p2(m, sc1, sc2), which are the market clearing cutoﬀs in terms of the capacities and the mean of the distribution η.
+14
+
+Figure 3: These squares are the same as in Figure 2, but
+here we can see the mass of students assigned to each college. The area with ∅ represents the mass of unmatched students.
+
+As we said in section 2.3, this is the starting point in order to analyze the investment in quality, since the mechanism assigns students to colleges once the quality of the latter has been observed. Now, we need an expression to capture the eﬀect of the qualities of both colleges on the students’ demand. The following expression for m, the mean of the distribution, is proposed
+
+1
+
+m(δc1 ,
+
+δc2 )
+
+=
+
+1
+
+−
+
+1
+
++
+
+δc1 δc2
+
+.
+
+(7)
+
+This way of expressing the mean has two advantages. First, we can take the
+
+following limits in equation (7):
+
+lim m = 0
+
+δc1 δc2
+
+→0
+
+lim m = 1
+
+δc1 δc2
+
+→∞
+
+This tells us that for all possible values of the qualities, captured by the ratio between them, the mean is always in [0, 1]. Remember that we assumed that the mean determines the demand for each college, and that we truncated the distribution to [0, 1] (so that, a mean outside this range would be a big problem!). Second, this expression is consistent with our assumptions because it implies that an increase in the quality of college c1, increases the demand for
+
+15
+
+it (∂m(·)/∂δc1 > 0), and an increase in the quality of college c2 decreases the demand for college c1 (∂m(·)/∂δc2 < 0), which is very intuitive.
+Now, we have to be sure that our market clearing cutoﬀs are indeed positive. Solving the equations of p1 and p2 above, we obtain
+
+p1
+
+=
+
+sc1 (1 − m) − sc2 m 4m(m − 1)
+
+(sc1(m − 1) + sc2m)2 + 8m(m − 1)[sc1(1 − m) + m(2(m − 1) + sc2)]
+
+−
+
+,
+
+4m(m − 1)
+
+and
+
+p2
+
+=
+
+sc1 (m − 1) + sc2 m 4m(m − 1)
+
+− (sc1(m − 1) + sc2m)2 + 8m(m − 1)[sc1(1 − m) + m(2(m − 1) + sc2)] . 4m(m − 1)
+
+Suppose that sc1 = 1/4 and sc2 = 1/2. Replacing this values in p1 and p2, and computing them using Mathematica for m in [0, 1], we get the result shown in Figure 4, where we can see not only that our results make sense, but the range in which p1 and p2 are positive. Remember that we have, basically, two kinds of results. The ﬁrst one is theoretical, in which we have shown that there exists a Nash equilibrium in the game where colleges choose quality simultaneously. It is well known that even in the basic Cournot model, the suﬃcient conditions for equilibrium to exist are quite restrictive (Roberts and Sonnenschein [15]), so we had to assume a quasi-concave function of the quality of the entering class in order to use the Kakutani’s ﬁxed point theorem to prove existence. The second result is related to comparative statics, where, by assuming a truncated distribution function, we show that the market clearing cutoﬀs of the colleges, are indeed positive in some interval. This can be extended to several cases when the sum of the capacities colleges is less than 1 (see Figure 7 in the Appendix). At this point, we can replace (7) into p1 and p2 to obtain p1(δc1, δc2) and p2(δc1, δc2).
+This expressions are useful to analyze the incentives for colleges to invest in school quality. Since the cutoﬀs depend on the qualities, we can compute the
+16
+
+Figure 4: We can see that for a range between 0.2 and 0.7 of
+the mean, our clearing market cutoﬀs are positive. Here, the cutoﬀs are plotted on the y axis and the mean on the x axis.
+
+sign of ∂Pc/∂δc and ∂Pc/∂δc , ∀c, c = {c1, c2}, in order to ﬁnd an interval for equation (2) to be positive, giving incentives to invest in quality.
+
+Having deﬁned above, we set up the maximization problem for colleges in the
+
+case of duopoly:
+
+subject to
+
+max Qc(δ)
+δc
+
+h(δc) ≤ Rc
+
+for all c = {c1, c2}. At this point, we note that our assumption of the quasiconcavity and the strategic behavior of the colleges derive in two cases for the solution of this problem, both related to the constraint. Let δ˜c be the value of the quality of college c for which the constraint is satisﬁed with equality. The cases are the following:
+1. When the constraint is not active. This is the case when λ = 0 in the maximization problem of equation (3). A non active constraint implies that the function Qc(·) reaches an interior maximum δ∗ ∈ (0, δ˜c) (see Figure 5). We assume that this is so because of the strategic behavior of the colleges, and suppose that the problem can be posed as follows
+
+max Qc(δc, δc (δc)),
+δc
+which is a standard problem of Industrial Organization (for example, the Stack-
+
+17
+
+Figure 5: When the constraint is not active, we have an
+interior maximum of Qc(·).
+
+elberg model). We can obtain the following ﬁrst order condition:
+
+dQc = ∂Qc + ∂Qc · dδc = 0, dδc ∂δc ∂δc dδc
+
+from which we get
+
+dδc dδc
+
+∂Qc
+
+=
+
+−
+
+∂δc ∂Qc
+
+,
+
+∂δc
+
+for all c, c ∈ {c1, c2}.
+
+(8)
+
+It is clear that (8) is a reaction function. Assuming that ∂Qc/∂δc ≥ 0 and
+
+∂Qc/∂δc ≤ 0 for all c, c ∈ {c1, c2}, we can say that colleges are strategic complements.
+
+2. When the constraint is active. This is the case when we do not have
+
+to take into account the strategic behavior of colleges, that is, when λ > 0. Here
+
+we are in the case of equation (3), from which we obtain the same ﬁrst order
+
+conditions: and
+
+∂L = dQc(δc) − λ dh(δc) = 0,
+
+∂δc
+
+dδc
+
+dδc
+
+∂L ∂λ = h(δc) − Rc = 0.
+
+Given that Qc(·) is a continuous and quasi-concave function of δc, by the Bolzano-
+
+Weierstrass theorem, we can say that, in this case, Qc(·) reaches its maximum in δc∗, which is the supreme of the compact interval [0, δc∗] (see Figure 6).
+
+18
+
+Figure 6: When the constraint is active, Qc(·) has a maxi-
+mum in the interior point δc∗.
+3.1 Comparative Statics
+Finally, we want to derive comparative statics in the constrained maximization problem. Once we know how the mechanism works, we just have to note that, in the second case discussed before (when the constraint is active), δc∗ is given by the second F.O.C., so we can assume a speciﬁc functional form of h(·) to obtain it. Then, we replace δc∗ and δc∗ in equation (7) to obtain the value of the mean of our distribution and, ﬁnally, by replacing them in equation (1) the quality of the entering class to college c is obtained. It should be clear that we only have to know the score of the students assigned to each college (see Figure 3), which depends on the distribution of eθ.
+First of all, we get the market clearing cutoﬀs Pc∗ and Pc∗ in terms of Rc and Rc as follows
+
+√√ Pc∗ = 2Rc + Rc Rc − Rc −
+
+4Rc2
+
+−
+
+60Rc3/2√Rc √√
+
++ 157RcRc
+
+− 34√RcRc3/2 + Rc2
+
+16 Rc Rc
+
+and
+
+Pc∗
+
+1 =
+16RcRc
+
+−2Rc3/2
+
+1
+
+− 16RcRc
+
+Rc
+
+Rc − RcRc + RcRc3/2 Rc 4Rc2 − 60Rc3/2 Rc + 157RcRc − 34
+
+RcRc3/2 + Rc2
+
+19
+
+Now, having obtained Pc∗(Rc, Rc ) and Pc∗ (Rc, Rc ) we need to calculate the integral of equation (1). We use Mathematica to compute the integral in order to obtain Qc(Rc, Rc ) and Qc (Rc, Rc ) This calculation is a little diﬃcult, and the expression is very large (we omit the result here). Assuming a nice distribution of the student types, one can see the following
+∂Qc(Rc, Rc ) ≥ 0, ∂Rc
+which means that the quality of the entering class to college c is increasing in the budget assigned to college c by the State. It is easy to see that, by equation (7),
+∂Qc(Rc, Rc ) ≤ 0, ∂Rc
+which tells us that the quality of the entering class to college c is decreasing in the budget assigned to college c . This is so because c is attracting the best students. Considering polar cases, for example Rc > 0 and Rc = 0, it should be noted that the quality of students depends on the capacities of colleges, so that, assuming sc = sc we will ﬁnd that Qc ≥ Qc , for all c, c = {c1, c2}. This means that, when colleges have the same capacities, the quality of the students is higher for the one with the largest budget.
+4 Conclusion
+This paper proposes an extension of the Azevedo and Leshno’s work [6] in the choice of the quality oﬀered by colleges in a model of matching markets with a continuum of students on one side, and a discrete set of colleges on the other. This model admits complex heterogeneous preferences, so that we assume that colleges are not necessarily perfect substitutes even if they have the same quality.
+We show that there exists a Nash equilibrium in the constrained maximization problem, i.e. when colleges choose quality simultaneously subject to a budget constraint. Moreover, we analyze the case of the duopoly in order to make both the mechanism and our results clear. The distribution for the students used in
+20
+
+the model was a truncated one to the interval [0, 1], and a speciﬁc functional form (in terms of the qualities of both colleges) of the mean of it was proposed. Additionally, we obtain the cutoﬀs in terms of the qualities by solving the supply and demand equations of Azevedo and Leshno [6], and we found that there is a range in the values of them for which there are incentives for colleges to invest in quality.
+We consider two cases of the maximum quality. First, when the constraint is not active, where we obtained conditions under which the colleges are strategic complements (as in a standard problem of Industrial Organization). Second, when the constraint is active, where we solved the standard problem by the Lagrange method; this case let us ﬁnding some comparative statics. Once we obtained the maximum quality of colleges in this case in terms of the budget assigned by the State to each one, we calculated the quality of the entering class and considered diﬀerent cases for the distribution of that budget.
+A contrastation can be made between the paradigm of assortative matching and our results, more related to the distribution of education by using two decision variables of the State, the capacities of colleges, and the budget assigned to each one to invest in school quality. It was shown that the amount assigned to each college has a positive impact on the quality of the students, so that, the greater the amount assigned to one college, the higher the quality of its entering class. It is only an analysis tool to address the issue of education and the incentives to invest in school quality for colleges.
+21
+
+5 Appendix
+
+Proof. (Proposition 1. Azevedo and Leshno, 2013 ) We need to deﬁne some additional relevant quantities in order to prove this proposition:
+• The set of students who are marginally accepted to college c and would go to college c otherwise: M˜ cc = {θ : c θ c , Pc = ecθ, Pc ≤ eθc , Pc > eθc ∀c = c : c θ c }.
+• The number of students in this margin:
+
+Mcc =
+
+fδ (θ)dθ.
+
+M˜ cc
+
+• The set of students who are marginally accepted to college c and would be
+
+matched to herself otherwise:
+
+M˜ c∅ = {θ : c θ ∅, Pc = ecθ, Pc > ecθ ∀c = c : c θ c}.
+
+• The number of students in this margin:
+
+Mc∅ =
+
+fδ (θ)dθ,
+
+M˜ c∅
+
+it is intuitive that, since these students are “marginally accepted”, their
+
+average score is precisely the cutoﬀ of college c.
+
+Aggregate quality is deﬁned as
+
+Qc(δ) =
+
+ec θ dηδ (θ)
+
+µδ (c)
+
+=
+
+ecθ · fδ(θ)dθ
+
+{θ:Dθ(P ∗(δ))=c}
+
+By Leibniz’s rule, Qc is diﬀerentiable in δc, and the derivative is given by
+
+dQc(δ) = dδc
+
+{θ:Dθ(P ∗(δ))=c}
+
+ecθ
+
+·
+
+d dδc fδ(θ)dθ
+
++
+c =c
+
+dPc∗ dδc
+
+· Mc c
+
+· P¯c c
+
+−
+
+dPc∗ dδc
+
+·
+
+[Mc∅
+
++
+
+c
+
+Mcc
+=c
+
+]
+
+·
+
+Pc∗
+
+22
+
+The ﬁrst term is the integral of the derivative of the integrand, and the last two
+
+terms the change in the integral due to the integration region {θ : Dθ(P ∗(δ)) = c}
+
+changing with δc.
+
+The terms in the second line are the changes due to changes in the cutoﬀs
+
+Pc∗ , the students that college c gains (or loses) because college c becomes more
+
+dP ∗
+
+(less) selective.
+
+The quantity of these students is
+
+c
+dδc
+
+· Mc c, and their average
+
+quality P¯c c. The last line is the term representing the students lost due to college c
+
+raising its cutoﬀ Pc. These students number [Mc∅ + c =c Mcc ], and have average quality Pc∗. Note that, since the total number of students admitted at college c is constant and equal to sc, we have
+
+d 0 = {θ:Dθ(P ∗(δ))=c} dδc fδ(θ)dθ
+
++
+c =c
+
+dPc∗ dδc
+
+· Mc c
+
+−
+
+dPc∗ dδc
+
+·
+
+[Mc∅
+
++
+
+c
+
+Mcc
+=c
+
+]
+
+Therefore,
+
+if
+
+we
+
+substitute
+
+dPc∗ dδc
+
+· [Mc∅
+
++
+
+have
+
+c =c Mcc ] in the above equation we
+
+dQc(δ) = dδc
+
+[eθc
+{θ:Dθ(P ∗(δ))=c}
+
+−
+
+Pc∗]
+
+·
+
+d dδc
+
+fδ (θ)dθ
+
++
+
+dPc∗
+
+c =c dδc
+
+· Mc c · [P¯c c
+
+− Pc∗]
+
+The term in the second line is the market power eﬀect as deﬁned. That the
+
+term in the ﬁrst line equals the expression in Proposition 1 follows from the
+
+deﬁnition of Nc and e¯c. To see that the direct eﬀect is positive, note that by deﬁnition e¯c ≥ P ∗(δ), and since uic(δ) is increasing in δc we have Nc ≥ 0.
+
+In Figure 7, we can see the extension of the market clearing cutoﬀs to several cases when the sum of the capacities colleges is less than 1:
+
+23
+
+Figure 7: The cutoﬀs are positive in a an interval of the
+mean for diﬀerent values of capacities of the colleges. Here the cutoﬀs are plotted on the y axis and the mean on the x axis, and we consider only the cases in which sc1 + sc2 < 1 for several combinations of values of them.
+References
+[1] Abdulkadiroglu, A. and T. S¨onmez (2003) “School Choice: A Mechanism Design Approach”, American Economic Review, 93(3), pp. 729-747.
+[2] Aumann R.J. (1964) “Markets with a Continuum of Traders”, Econometrica, pp. 39-50.
+[3] Avery, C. and J. Levin (2010) “Early Admissions at Selective Colleges”, American Economic Review, 100(5), pp. 2125–2156.
+[4] Azevedo, Eduardo M. (2011) “Imperfect Competition in Two-Sided Matching Markets”, Games and Economic Behavior.
+[5] Azevedo, E.M. and E.B. Budish (2011) “Strategy-proofness in the Large”, Mimeo, University of Chicago Booth School of Business.
+[6] Azevedo, E.M. and J. Leshno (2013) “A Supply and Demand Framework for Two-Sided Matching Markets”, Mimeo, Harvard University.
+24
+
+[7] Balinski, M. and T. So¨nmez (1999) “A Tale of Two Mechanisms: Student Placement”, Journal of Economic Theory, 84(1), pp. 73-94.
+[8] Che, Y. and F. Kojima (2010) “Asymptotic Equivalence of Probabilistic Serial and Random Priority Mechanisms”, Econometrica, 78(5), pp. 16251672.
+[9] Chiappori P.A., M. Iyigun, and Y. Weiss (2009) “Investment in Schooling and the Marriage Market”, American Economic Review, 99(5), pp. 1689–1713.
+[10] Gale D. and L.S. Shapley (1962) “College Admissions and the Stability of Marriage”, American Mathematical Monthly, 69(1), pp. 9–15.
+[11] Hatﬁeld, J.W., F. Kojima, and Y. Narita (2011) “Promoting School Competition Through School Choice: A Market Design Approach”, Mimeo, Stanford Graduate School of Business.
+[12] Kojima, F. and P.A. Pathak (2009) “Incentives and Stability in Large Two-Sided Matching Markets”, American Economics Review, 99(3), pp. 608–627.
+[13] Lubienski, C. (2003) “Innovation in Education Markets: Theory and Evidence on the Impact of Competition and Choice in Charter Schools”, American Educational Research Journal, 40(2), pp. 395-443.
+[14] Mas-Colell, A., M.D. Whinston, and J.R. Green (1995) Microeconomic Theory, Oxford University Press, New York (981p).
+[15] Roberts, J. and H. Sonnenschein (1976) “On the Existence of Cournot Equilibrium without Concave Proﬁt Functions”, Journal of Economic Theory, 13(1), pp. 112-117.
+[16] Roth, A.E. (1982) “The Economics of Matching: Stability and Incentives”, Mathematics of Operations Research, 7(4), pp. 617-628.
+[17] Roth, A.E. and E. Peranson (1999) “The Redesign of the Matching Market for American Physicians: Some Engineering Aspects of Economic Design” American Economic Review, 89(4), 748–780.
+25
+
+[18] Roth, A.E. and M. Sotomayor (1989) “The College Admissions Problem Revisited”, Econometrica, 57(3), pp. 559-570.
+[19] Swinkels, J.M. (2001) “Eﬃciency of Large Private Value Auctions”, Econometrica, 69(1), pp. 37-68.
+26
+
+

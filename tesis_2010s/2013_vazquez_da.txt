@@ -1,0 +1,3779 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+CRECIMIENTO PRO POBRE: UN ESTUDIO A NIVEL MUNICIPAL DIEGO ALEJO VÁZQUEZ PIMENTEL
+PROMOCIÓN 2011-2013
+ASESOR:
+DR. GERARDO ESQUIVEL HERNÁNDEZ
+AGOSTO 2013
+
+Agradecimientos A mis padres, por su constante e incondicional apoyo durante esta etapa, por sus consejos y la formación de vida que me han dado. A mi esposa, María, de quien recibí siempre apoyo, amor, comprensión y paciencia durante toda mi estancia en El Colegio de México. A mi asesor de tesis, el Dr. Gerardo Esquivel, en particular por sus consejos y comentarios para poder realizar este trabajo, y en lo general por enriquecer mi formación académica como economista con su labor docente en El Colegio de México. Especial agradecimiento al Dr. Enrique Minor Campa y al Mtro. Víctor Aramburu Cano por sus comentarios y aportaciones para enriquecer el análisis de los resultados de este trabajo. A mis compañeros de la Maestría, especialmente a Edwin Muñoz, ejemplo a seguir y amigo fiel cuyas apreciaciones en lo académico y soporte en lo personal me ayudaron a enriquecer el presente trabajo.
+i
+
+Resumen El presente trabajo estudia la relación entre el crecimiento económico sectorial, la pobreza y la desigualdad en México para la primera década del siglo XXI desde la perspectiva del crecimiento “pro pobre”. Se realizan estimaciones utilizando un panel de datos a nivel municipal. Se utilizó el método de primeras diferencias y mínimos cuadrados generalizados para calcular la elasticidad-crecimiento sectorial de la pobreza a nivel nacional. Dada la heterogeneidad de los municipios, se usan dos criterios de estratificación para controlar por variables no observables: regiones geográficas y grado de marginación. Los hallazgos principales sugieren que, durante el periodo comprendido de 2000 a 2005, el sector terciario y la reducción de la desigualdad son los factores más importantes para la reducción de la pobreza.
+ii
+
+Índice
+
+1. Introducción
+
+2
+
+2. Pobreza a nivel regional en México
+
+4
+
+3. Impactos sectoriales durante las crisis
+
+6
+
+4. Revisión de la literatura
+
+8
+
+4.1. Crecimiento, desigualdad y pobreza . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+4.2. Crecimiento “Pro-pobre” . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+5. Datos
+
+15
+
+6. Modelos y estimaciones
+
+18
+
+6.1. Modelo A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+6.2. Modelo B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+6.3. Estratiﬁcación regional y por grado de marginación . . . . . . . . . . . . . . . . . 30
+
+7. Conclusiones
+
+38
+
+8. Referencias
+
+40
+
+1
+
+1. Introducción
+Después de la crisis ﬁnanciera internacional de 2008, la pobreza en México, que había mantenido una tendencia a la baja desde el año 2000, experimentó un alza signiﬁcativa. De acuerdo con los datos del Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL), de 2008 a 2010, el porcentaje de personas viviendo por debajo de la línea de pobreza patrimonial aumentó de 47.7 % a 51.3 %, alcanzando niveles similares a los observados en 1992 (53.1 %). Casi una década de intervenciones gubernamentales en materia de política social fueron contrarrestadas por dos factores exógenos: la recesión de la economía estadounidense en 2009 y el incremento en el precio internacional de los alimentos en 2006.
+Un tema relevante para países en vías de desarrollo como México es la relación que existe entre el crecimiento económico, la pobreza y la desigualdad. El crecimiento económico de México en las últimas décadas ha sido bajo comparado con otros países latinoamericanos, además de ser también muy bajo comparado con las tasas experimentadas antes de la crisis de 19821. De 2000 a 2010, las tasas de crecimiento promedio del Producto Interno Bruto (PIB) y el PIB per cápita fueron de 2.41 % y 1.11 %, respectivamente (Banco Mundial, 2013). En general, el desempeño de la economía mexicana a nivel nacional reﬂeja un estancamiento en los ingresos per cápita y una pérdida de poder adquisitivo de los salarios.
+Siendo México un país tan heterogéneo, es importante tomar en cuenta para el análisis del crecimiento económico dos dimensiones: una geográﬁca y otra sectorial. En este sentido, es importante determinar si existe algún sector económico que esté relacionado de manera más estrecha con los cambios en la pobreza, para poder estudiar el canal por el cual las crisis económicas afectan a los hogares en esta situación. Además, la recesión de EE.UU. pudo tener efectos heterogéneos en las diferentes regiones del país, ya que el norte está más vinculado al mercado de esta economía que el sur. Estudiar la relación entre crecimiento y pobreza tomando en cuenta estas dos dimensiones puede aportar información valiosa sobre qué tipo de política económica y social debe de seguirse para poder reducir la pobreza con un enfoque regional.
+En términos de desigualdad, uno de los indicadores más usados, el coeﬁciente de Gini, es comparativamente más alto en México que en otros países de América Latina, y similar a países que han sido históricamente desiguales como Brasil. En el año 2000, el Gini de México era de 51.87, en 2008 pasó a 48.28 (Banco Mundial); de acuerdo a información presentada por CONEVAL, para el año 2010 la desigualdad aumentó de nuevo, con un Gini a nivel nacional de 0.5 (CONEVAL, 2013).
+1De acuerdo con cifras del banco de datos de Banco Mundial, la tasa de crecimiento promedio de México de 1961 a 1981 fue de 6.82 %
+2
+
+El presente trabajo intentará responder la siguiente pregunta de investigación: ¿Cuál fue el efecto del crecimiento económico y la desigualdad en la reducción de la pobreza de 2000 a 2010, durante un periodo de crisis? Para ayudar a contestar esta pregunta, existen otros cuestionamientos importantes que ayudarán a clariﬁcar el tema de investigación, a saber:
+¿Cuál fue la elasticidad crecimiento de los sectores económicos en la pobreza, a nivel municipal, antes y después de la crisis?
+¿Cuál es la relación entre la desigualdad y la pobreza a nivel municipal?
+¿Existe heterogeneidad en la relación entre crecimiento, pobreza y desigualdad a nivel regional?
+¿Cuál es el papel del gasto de gobierno, en forma de subsidios e inversión pública, en la reducción de la pobreza?
+¿Existe algún sector económico que sea consistentemente “pro pobre” para el periodo analizado?
+El presente estudio analiza estas relaciones a nivel municipal para el caso de México utilizando datos panel para los años 2000, 2005 y 2010. Si bien los resultados de este estudio no arrojan evidencia de causalidad2, si pueden determinar relaciones claras y heterogeneas de dichas variables al agrupar por regiones y sectores.
+En la segunda sección se dará cuenta de algunos trabajos que, desde una perspectiva histórica, estudian la pobreza en México, con el objetivo de mostrar la relevancia de analizar la pobreza desde una perspectiva regional, dada la desigualdad en las condiciones de vida que permanece entre regiones desde ﬁnales del siglo XIX hasta nuestros días. Además, se mostrarán resultados que aportan evidencia de la alta correlación que existe entre pobreza, crecimiento y desigualdad durante la segunda mitad del siglo XX.
+La tercera sección da cuenta de un análisis de estadística descriptiva del impacto sectorial de la crisis, con el objetivo de mostrar cómo ciertos sectores se recuperan con mayor rapidez que otros ante un choque exógeno, lo cual tiene implicaciones relevantes para nuestro estudio, si es que existen diferencia entre sectores en términos de cuál es el más “pro pobre”.
+La cuarta sección consiste en un análisis de la literatura del campo de “pro-poor growth”, con el objetivo de comparar los resultados en países como India, China y Brasil con el presente estudio.
+2Si bien se buscó instrumentar las variables explicativas, la escasez de información desagregada a nivel municipal impidió corregir por endogeneidad. Una posible variable para descartar hipótesis alternativas es la escolaridad promedio por municipio.
+3
+
+Además, se discuten una serie de artículos teóricos y empíricos que explican los canales por los cuales se relacionan el crecimiento, la desigualdad y la pobreza, con el propósito de enriquecer la interpretación de los resultados.
+En la quinta sección se describen los datos para las regresiones y en la sexta se presentan los diferentes modelos econométricos con sus resultados. Finalmente, la séptima sección presenta las conclusiones del estudio, contestando parcialmente a las preguntas previamente planteadas.
+2. Pobreza a nivel regional en México
+El CONEVAL, institución encargada de medir la pobreza en México, tiene una serie de cálculos de incidencia de pobreza3 obtenidos a través de la Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) de 1992 a 2010. Sin embargo, han habido importantes esfuerzos por conocer la incidencia de pobreza a nivel histórico.
+Una serie de tiempo más larga es la calculada por Miguel Székely (2005), donde presenta cifras de pobreza por ingresos y desigualdad de 1950 a 2004. De 1950 a 1984, la incidencia de pobreza se redujo aceleradamente; de 1984 a 1994 se mantuvo constante; durante la crisis, de 1994 a 1996, se incrementó; ﬁnalmente, de 1996 a 2004, tuvo una tendencia a la baja de nuevo. Para el caso de desigualdad, el autor encuentra un patrón parecido a la U invertida de Kuznets entre 1963 y 1984, seguido de una tendencia a la alza de la desigualdad de 1984 a 2000 y después de nueva cuenta una reducción hasta 2004 (Székely, 2005:6).
+Durante todo el periodo analizado, el autor encuentra una relación fuerte y negativa entre pobreza y crecimiento económico, y una relación fuerte y positiva entre pobreza con inﬂación y desigualdad (Székely, 2005:23). Como se verá más adelante en las estimaciones, para el periodo analizado en el presente estudio se encontrará evidencia que conﬁrma los resultados del autor para el caso de pobreza y desigualdad, y arroja resultados ambiguos para el caso de pobreza y crecimiento económico.
+Existen buenas razones para estudiar el fenómeno de la pobreza desde un enfoque regional. México es un país muy plural en términos geográﬁcos, de actividades económicas e integración de sus mercados locales; por lo tanto, un análisis basado solamente en cifras nacionales puede llevar a generalizaciones e interpretaciones erradas de la relación entre pobreza, crecimiento y desigualdad. La historia de desigualdad regional puede rastrearse a inicios del siglo XIX. Campos-Vázquez y
+3Incidencia: porcentaje de hogares o personas por debajo de la línea de pobreza con respecto a la población total.
+4
+
+Vélez-Grajales (2012) realizan una reconstrucción histórica del Cuasi Índice de Desarrollo Humano (QHDI por sus siglas en inglés) a nivel estatal para los años de 1895, 1900 y 1910. Los resultados de la medición muestran que, durante todo el periodo estudiado, la Ciudad de México es la región más desarrollada del país. Los estados del norte también tienen una buena posición en términos de desarrollo comparados con los del sur. De 1895 a 1910, la dispersión del QHDI se incrementó. Otra aproximación histórica es la realizada por Graciela Marquez (2012), quien construye el QHDI a nivel estatal para la tercera decada del siglo XX. Sus resultados coinciden en gran medida con lo encontrado por Campos-Vázquez y Vélez-Grajales (2012) para el Porﬁriato. Otra conclusión importante para el presente estudio es que encuentra evidencia de que las condiciones de vida mejoraron en esta época incluso cuando el crecimiento económico fue bajo.
+
+Las diferencias regionales entre estados persisten hasta nuestros días. De acuerdo con los mapas de pobreza estimados por CONEVAL, los estados del sur permanecen como los más pobres del país, mientras que los estados del norte y la Ciudad de México permanecen como los más desarrollados. Las conclusiones obtenidas por los estudios históricos mencionados en materia de desarrollo económico pueden ser extrapolados prácticamente hasta nuestros días. Por ello, es pertinente realizar un estudio con enfoque geográﬁco, para observar si la relación entre pobreza, desigualdad y crecimiento económico varía entre regiones, y si de esta relación pueden extraerse conclusiones importantes que ayuden a explicar por qué persiste la desigualdad regional en este rubro.
+
+Tabla 1. Pobreza por ingresos a nivel estatal (Incidencia)
+
+Las cinco entidades más pobres en 2010
+
+Entidades
+
+Alimentaria Capacidades Patrimonial
+
+Chiapas
+
+48.6 %
+
+58.0 %
+
+78.1 %
+
+Guerrero
+
+38.4 %
+
+48.0 %
+
+71.0 %
+
+Oaxaca
+
+35.4 %
+
+44.6 %
+
+67.4 %
+
+Puebla
+
+30.0 %
+
+39.4 %
+
+63.6 %
+
+Veracruz
+
+25.0 %
+
+33.7 %
+
+58.2 %
+
+Las cinco entidades menos pobres en 2010
+
+Entidades
+
+Alimentaria Capacidades Patrimonial
+
+Baja Calif.
+
+9.8 %
+
+16.2 %
+
+40.5 %
+
+Coahuila
+
+9.2 %
+
+15.3 %
+
+38.8 %
+
+Nuevo León 7.8 %
+
+13.3 %
+
+35.8 %
+
+Baja Calif. Sur 7.8 %
+
+12.8 %
+
+32.3 %
+
+D.F.
+
+7.7 %
+
+12.6 %
+
+31.7 %
+
+Fuente: mapas de pobreza 2010, CONEVAL.
+
+5
+
+La Tabla 1 muestra estas diferencias. En el año 2010, los 5 estados con mayor incidencia de pobreza fueron Chiapas, Guerrero, Oaxaca, Puebla y Veracruz. Los 5 estados con menor incidencia fueron Nuevo León, Distrito Federal, Baja California Sur, Baja California y Coahuila. A nivel más desagregado, los municipios más pobres también están concentrados, en su mayoría e históricamente, en el área sur. En 1990, los 30 municipios más pobres de México en términos de pobreza alimentaria estaban en el sur del país: 36.6 % eran de Oaxaca, 23.3 % de Guerrero, 23.3 % de Veracruz, 10 % de Chiapas y 7.8 % de Puebla.
+3. Impactos sectoriales durante las crisis
+La presente sección tiene como objetivo el presentar un panorama sintético del crecimiento económico a nivel nacional por sector y región económica, así como un panorama general de la heterogeneidad del impacto de las crisis en estas dos dimensiones. Como el presente estudio abarca el periodo de la crisis de 2009, es necesario determinar si la caída de la demanda en EE.UU. afectó más a los estados del norte o del sur, ya que en esta última región se concentran las mayores incidencias de pobreza. Como se ha mencionado en la introducción, desde 1982, el crecimiento económico en México ha sido bajo y la economía ha sufrido dos recesiones importantes en 1995 y 2009 (Banco Mundial, 2013). Sin embargo, existen diferencias considerables entre tasas de crecimiento del PIB por sectores4. Como lo muestra la Gráﬁca 1, de 1993 a 2012, el PIB del sector primario permaneció casi constante, mientras que el industrial y el terciario presentaron un crecimiento más acelerado. Es importante señalar que el sector más importante de la economía mexicana, y también el más dinámico, es el terciario. Esto es producto de los cambios estructurales que sufrió el país durante el siglo XX, donde se transformó de un país rural a uno mayoritariamente urbano.
+4Por sectores económicos, se considera la clasiﬁcación dada por el Sistema de Clasiﬁcación Industrial de América del Norte (SCIAN)
+6
+
+De acuerdo a la tabla 2, el sector más afectado durante las crisis de 1995 y 2009 fue el industrial. En ambos periodos, la relación tan cercana entre los ciclos económicos estadounidense y mexicano, y la dependencia de las exportaciones mexicanas del vecino del norte pudieron afectar de manera más aguda las ramas industriales exportadoras. Los sectores primario y terciario también presentaron tasas de crecimiento negativas, pero de menor magnitud y con recuperaciones relativamente más rápidas, especialmente durante la crisis de 1995.
+
+Tabla 2. PIB sectorial durante las crisis
+
+Tasa de crecimiento del PIB: 1995 Tasa de crecimiento del PIB: 2009 trimestre primario secundario terciario primario secundario terciario
+
+I
+
+4.06
+
+-3.99
+
+0.08
+
+-078
+
+-9.53
+
+-5.71
+
+II
+
+-8.73
+
+-11.65
+
+-7.45
+
+-2.49
+
+-11.17
+
+-8.38
+
+III
+
+12.09
+
+-10.54
+
+-7.39
+
+-4.71
+
+-6.90
+
+-3.89
+
+IV
+
+0.50
+
+-8.70
+
+-7.49
+
+-4.49
+
+-2.92
+
+-1.54
+
+Fuente: Banco de Información Económica, INEGI
+
+Existe también evidencia de que el impacto en 2009 fue diferente entre regiones. Como lo muestra la tabla 3, las regiones con mayor ingreso per cápita sufrieron una caida del ingreso y del empleo mayor que las entidades pobres. Esto se explica en gran medida por el nivel de integración económica del norte con el mercado de EE.UU. La tasa de crecimiento promedio de los estados pobres
+7
+
+en 2009 fue de -3.21 %, mientras que la de los ricos fue -6.77 % (INEGI, 2013). La presente investigación intentará estudiar esta heterogeneidad a nivel municipal y su relación con la incidencia de la pobreza.
+
+Tabla 3. tasa de crecimiento anual del PIB real a nivel estatal (base 2003)
+
+Entidades relativamente pobres
+
+Entidades relativamente ricas
+
+Ver Oax Guerr Mich Chiap D.F. N.L Baja Cal. Baja Cal. S. Coah
+
+2008 -0.39 2.11 -2.45 3.56 4.08 0.46 1.29
+
+-0.32
+
+3.23
+
+1.77
+
+2009 -0.24 -2.79 -4.06 -5.94 -3.03 -4.91 -8.92
+
+-8.29
+
+1.55
+
+-13.30
+
+2010 1.93 3.87 5.90 3.16 5.90 3.61 8.62
+
+3.38
+
+0.50
+
+12.63
+
+2011 2.36 1.56 0.778 4.35 3.43 3.37 6.04
+
+6.51
+
+4.76
+
+5.74
+
+Fuente: Banco de Información Económica, INEGI
+
+4. Revisión de la literatura
+4.1. Crecimiento, desigualdad y pobreza
+Para poder plantear e interpretar correctamente el modelo y los resultados de la sexta sección, es necesario conocer cuáles son los canales por los cuales se relacionan éstas tres variables. Por tanto, se usará el enfoque teórico propuesto por Bourguignon (2003). En este artículo, el autor trata de explicar la compleja interdependencia de estas variables al detallar explícitamente los canales y la intuición económica de cómo se afectan estas variables.
+De acuerdo con Bourguignon (2003:7), el crecimiento y la desigualdad juegan un papel central en la reducción de la pobreza. El tamaño de los efectos dependerá de los niveles iniciales de riqueza y desigualdad entre países. Una distribución muy desigual del ingreso podría contrarrestar el efecto positivo de altas tasas de crecimiento del mismo, mientras que una distribución más igualitaria puede reducir los choques negativos del ingreso en la pobreza. Se puede estimar el efecto exclusivo del crecimiento y la desigualdad a través del método de descomposición propuesto por Bourguignon. Sin embargo, debido a que la distribución del ingreso proveniente de las encuestas de ingreso con las que se calcula la pobreza por ingresos a nivel nacional no cuenta con información del ingreso por sectores ni con representatividad estatal , el método a elegir en el presente trabajo será el de regresión lineal para estimar la elasticidad crecimiento de la pobreza y la semielasticidad de la desigualdad en la pobreza.
+8
+
+Estimar la elasticidad-crecimiento de la pobreza ha sido un tema central analizado en la literatura. Kakwani (1993) desarrolla un modelo teórico para encontrar la forma funcional de la elasticidad en términos de los parámetros de la distribución del ingreso, que es comúnmente modelada en estos trabajos como una distribución lognormal con parámetros (µ, σ ). Estas elasticidades se han calculado para las tres medidas principales de pobreza: incidencia, severidad e intensidad, usando el índice Foster-Greer-Thornbecke. De acuerdo con Bourguignon, la distribución del ingreso tiene dos efectos: el primero es un efecto directo por la reducción de la varianza de la distribución del ingreso, el segundo es que modiﬁca permanentemente la elasticidad-crecimiento de la pobreza(Bourguignon, 2003).
+Existe un debate sobre los canales y la causalidad que existe entre crecimiento y desigualdad, lo cual es relevante para esta investigación, toda vez que ambas son variables explicativas de la pobreza. El primer debate es sobre la causalidad. De acuerdo a la famosa teoría de la U invertida de Kuznets, el crecimiento económico primero genera desigualdad por la acumulación de capital y los ahorros concentrados en un pequeño sector de capitalistas; después de un proceso de industrialización y cambio estructural, el crecimiento económico reduce la desigualdad5 (Ray, 1998:199). Evidencia empírica consistente con la curva de Kuznets presentaría una relación no lineal primero directamente proporcional para municipios muy pobres o marginados, y luego inversamente proporcional en municipios más desarrollados. En la misma línea, Stiglitz (1969) propone un mecanismo más soﬁsticado para sustentar esta perspectiva, en donde el crecimiento económico transﬁere recursos de un sector a otro, cambiando los precios en el mercado de bienes y trabajo, y en las dotaciones de los agentes de una economía (Bourguignon, 2003:12).
+Desde otra perspectiva, están quienes proponen una relación de causalidad inversa. Dentro de esta categoría, existen quienes deﬁenden los beneﬁcios de cierto nivel de desigualdad para la acumulación de capital (y por ende el crecimiento económico), y quienes señalan las externalidades negativas de una sociedad muy desigual. De acuerdo al modelo de Aghion y Bolton (1997), con mercados imperfectos de capital y efectos de derrama la economía convergerá a una distribución única de la riqueza, aumentando la desigualdad primero y reduciéndola después, muy parecido a la explicación de Kuznets; sin embargo, un resultado original de este modelo es que la redistribución del gobierno de prestamistas ricos a deudores pobres podría, de hecho, mejorar la eﬁciencia y acelerar el efecto de derrama. Por otro lado, Galor y Zeira (1992) proponen un modelo de crecimiento económico con capital humano, múltiples equilibrios e imperfecciones en el mercado de créditos, en donde la distribución inicial del ingreso afecta las decisiones de inversión en capital humano hechas por los trabajadores no caliﬁcados, lo que da como resultado estados estacionarios que no son Pareto eﬁ-
+5Una explicación de por qué el cambio estructural tiene este efecto es la naturaleza y volatilidad de los choques económicos en economías con poca tecnología y eminentemente agrícolas (Kuznets, 1955: 6).
+9
+
+cientes. Otros autores como Alesina y Rodrik (1994) o Persson y Tabellini (1994) también apoyan la teoría de los efectos nocivos de alta desigualdad desde el punto de vista de economía política. Para niveles iniciales desiguales en la distribución de factores productivos, como es el caso del capital, las demandas políticas por medidas redistributivas provocarán políticas que distorsionan los retornos del capital y por tanto la acumulación de capital y el crecimiento económico. Como luego se mostrará, la evidencia empírica mostrada en el presente trabajo parece indicar que la desigualdad tiene otros canales que afectan a la pobreza, además del crecimiento económico.
+4.2. Crecimiento “Pro-pobre”
+Existen dos deﬁniciones distintas usadas en la literatura para deﬁnir al crecimiento “pro pobre”. La primera considera que el crecimiento es pro pobre si “la pobreza se reduce más que si los ingresos de todos los individuos hubieran crecido en la misma proporción”(Ravallion, 2004:2). Esto implica que el ingreso de los pobres crece a una tasa más alta que el ingreso de los no pobres. Por lo tanto, esta deﬁnición involucra por construcción una reducción en la desigualdad (Zaman and Khilji, 2013:378). La segunda deﬁnición, usada por Ravallion y Chen (2001) deﬁne al crecimiento pro pobre como cualquier proceso de crecimiento que reduce la pobreza. En la presente investigación, se usa el segundo concepto por dos razones. La primera es que, de acuerdo con el debate discutido en el numeral anterior, todavía no existe acuerdo sobre la relación entre desigualdad y crecimiento, además de que la primera deﬁnición no toma en cuenta las ganancias absolutas de los pobres en el proceso de crecimiento. La segunda es que la deﬁnición de Ravallion y Chen es más general y no se necesita conocer la distribución de ingreso entre los hogares pobres y no pobres, lo cual impone menos restricciones a las estimaciones que pueden hacerse.
+Ravallion (2004) propone un conjunto de recomendaciones generales para poder estudiar el crecimiento pro pobre, considerando las deﬁniciones anteriormente discutidas, las ventajas y desventajas de la información de microdatos o agregadas, deﬂactores de precios, la naturaleza del proceso de crecimiento (si es neutral a la distribución o no), etc. Un elemento importante de esta investigación es la discusión sobre la desigualdad y cómo afecta a la pobreza en tiempos de choques de ingreso. Con un alto nivel de desigualdad, los pobres reciben menos ganancias del crecimiento económico en periodos de expansión; sin embargo, cuando ocurre una recesión, la alta desigualdad puede prevenir que la población pobre sufra en la misma magnitud las consecuencias de una caída en la producción (Ravallion, 2004: 14). Este puede ser el caso de México, si uno observa la heterogeneidad de los effectos de la crisis de 2009 a nivel estatal presentadas en la sección anterior.
+Existen varios estudios de caso que analizan el crecimiento pro pobre a nivel regional. El trabajo de Zaman y Khilji (2013) presenta un ejercicio empírico en Pakistán para determinar si el crecimiento es pro pobre en localidades rurales y urbanas, usando la primera deﬁnición de “pro pobre”.
+10
+
+Utilizan encuestas de ingreso y gasto de 1984 a 2011 para calcular la elasticidad del crecimiento y desigualdad para varios periodos. Se encuentra alta heterogeneidad en el proceso de crecimiento, con periodos intercalados de crecimiento pro pobre y anti pobre. Su conclusión principal es que el sector primario es el más pro pobre, por lo que políticas públicas dirigidas a la agricultura podrían mejorar el ingreso de las personas en situación de pobreza rural, debido a los altos retornos de la inversión pública en la reducción de la pobreza (Zaman and Khilji, 2013:391).
+Como la presente investigación estudia la pobreza durante un periodo de crisis económica, es importante consultar literatura que vincule el crecimiento pro pobre durante periodos de crecimiento nulo o negativo. Dhanani e Islam (2002) estudian el impacto de la crisis de 1997 en Indonesia en la pobreza. Un resultado importante es que la medición de la pobreza afecta la manera en que el gobierno y los demás agentes perciben la crisis. La pobreza medida sobre una canasta de consumo puede ser más sensible que la pobreza medida por acceso a satisfactores como educación o salud ante los choques negativos de ingreso. Los autores sugieren que, además de la incidencia, se deben medir otros indicadores como la intensidad para separar la pobreza transitoria con la tendencia de largo plazo (Dhanani and Islam, 2002: 1227). Si la crisis involucra inﬂación alta la línea de pobreza puede crecer abruptamente en el corto plazo. Si existen muchos hogares cercanos a la línea de pobreza, estos cambios en el umbral pueden resultar en incrementos pronunciados de la incidencia en el corto plazo. Los autores proponen considerar la intensidad y severidad en dicho análisis. En el contexto de México, la información disponible de pobreza a nivel municipal no cuenta con intensidad y severidad, por lo que el presente estudio acota el análisis a la incidencia .
+Ravallion (2009) compara tres diferentes estudios de caso regionales de reducción de la pobreza: China, Brazil e India. Los tres casos son analizados durante el periodo de liberalización económica. El propósito del artículo es determinar cuáles fueron los factores, en términos de política económica y condiciones iniciales, que permitieron una reducción acelerada de la pobreza.
+En estos tres estudios se usa, dentro de las diversas estimaciones, un modelo de primeras diferencias para poder estimar la elasticidad crecimiento de la pobreza por sector económico y por ingresos urbano-rural. Los resultados arrojados en estos países, asi como la metodología usada, son un referente importante para comparar sus hallazgos con los que se obtengan en el presente estudio.
+China es uno de los casos más estudiados en la literatura de crecimiento pro pobre, debido a la reducción acelerada de la pobreza en las últimas décadas. La tasa de crecimiento del PIB per cápita de 1980 a 2005 fue de 9 %. Al inicio de este periodo, la incidencia de pobreza era de 84 %6. En 2005, el porcentaje de personas viviendo debajo de la línea de pobreza se redujo a 16 % (Ravallion, 2009:4-5). Entre los principales resultados obtenidos en Ravallion y Chen (2007) destacan:
+6Usando la línea de $1.25 dólares por día ajustando por paridad de poder de compra
+11
+
+El proceso de reducción de la pobreza muestra diferencias regionales y sectoriales signiﬁcativas. Las regiones costeras y urbanas tuvieron mayores beneﬁcios del proceso de crecimiento económico que las zonas continentales y rurales (Ravallion, 2009:9). En 1980, la probabilidad de ser pobre en zonas rurales era diez veces más grande que en zonas urbanas (Ravallion 2009:7-10). El método de primeras diferencias de Ravallion y Chen (2007:14-20) usado para comparar el efecto en la pobreza de ingresos rurales y urbanos, y sectores primario, secundario y terciario, muestra que el sector primario y el ingreso rural fueron los factores más importantes para la reducción de la pobreza. Este efecto puede ser explicado por la baja desigualdad en términos de tenencia de la tierra al inicio del periodo.
+La desigualdad entre y dentro de zonas rurales y urbanas se incrementó en el periodo analizado. Si bien la desigualdad se incrementó de 1980 a 2005, altas tasas de crecimiento no están relacionadas con altas tasas de desigualdad. En general, la tendencia regional fue que las provincias que tuvieron un incremento más rápido de la desigualdad presentaron tasas de reducción de la pobreza más bajas (Ravallion y Chen, 2007:3). Este fenómeno aporta evidencia a los hechos estilizados presentados al inicio de este capítulo por Bourguignon (2003) sobre la importancia de tener niveles de desigualdad bajos al inicio del proceso de crecimiento económico.
+El proceso de reducción de la pobreza no fue solamente el resultado del proceso de liberalización económica: las políticas públicas afectaron de manera importante la composición sectorial del país. Si bien el sector primario fue el más importante para combatir la pobreza, medidas como subsidios a los precios de los insumos, mejor ﬁnanciamiento de gobierno a proyectos industriales y restricciones al movimiento de mano de obra cambiaron signiﬁcativamente los incentivos para invertir y vivir en zonas rurales hasta la década de los años noventa (Ravallion, 2009:9). Además, de acuerdo con estos autores, una inﬂación baja y gasto público descentralizado están relacionados con altas tasas de reducción de la pobreza (Ravallion y Chen, 2007:3). No sólo la desigualdad del ingreso es importante para la reducción de la pobreza: la desigualdad en el acceso a servicios públicos juega un papel importante. Para el periodo de 1981 a 2007, la tasa de alfabetismo se incrementó de 66 % a 93 %, y la esperanza de vida al nacer se incrementó de menos de 50 a 65 años en el mismo periodo.
+El caso de India también es importante por la heterogeneidad del país a nivel regional y el alto nivel de desigualdad social y económica, condiciones similares a las de muchos países latinoamericanos. Comparado con el caso brasileño y chino, esta nación fue menos efectiva reduciendo la pobreza de 1980 a 2007. Al inicio del periodo la incidencia de pobreza en este país era de 60 %, más de 20 puntos porcentuales por debajo de China. En 2005, este indicador era de 42 % en el primer
+12
+
+país y 16 % en el segundo (Ravallion, 2009:5). Los principales resultados de los trabajos de Datt y Ravallion (2002, 2011) reportan que:
+La diferencia entre sectores explica en gran medida el proceso de reducción de la pobreza. Después de las reformas económicas de 1993, las tasas de crecimiento económico se incrementaron más en áreas urbanas que rurales, creando un diferencial de ingresos entre localidades. El resultado fue mayor desigualdad en el país, la cual tuvo un efecto negativo en la elasticidad crecimiento de la pobreza (Datt y Ravallion, 2011:17). Al contrario de China, en India el sector de servicios fue el más importante para reducir la pobreza. De acuerdo con Ravallion (2009:19), dicha diferencia radica en el grado de desigualdad en la dotación inicial de tierra en el campo.
+El efecto del crecimiento económico en la pobreza varió mucho entre estados, debido a las desigualdades demográﬁcas y sectoriales características de las diferentes regiones del país. Existe evidencia de divergencia entre estados, lo que pudo generar mucha variabilidad en la elasticidad crecimiento, ya que las tasas de crecimiento entre estados ricos y pobres son mayores (Datt & Ravallion, 2002: 99).
+Finalmente, Virmani (2008) también estudió el caso de la pobreza en este país. Su investigación muestra que las diferencias en las tasas de reducción de la pobreza por estados se deben en gran medida a las diferencias en las tasas de crecimiento económico, las tasas de crecimiento del ingreso agrícola y el porcentaje del ingreso nacional que recibe el 40 por ciento más pobre. En términos de política, el autor sugiere tres medidas: mejorar los servicios públicos en zonas con actividades agricolas, proyectos públicos de sanidad y aumentar la cobertura en educación primaria.
+La comparación internacional más importante del presente trabajo es Brasil, al ser un país muy similar a México en términos del tamaño de la economía, nivel de desigualdad, políticas sociales similares y una historia reciente a nivel macroeconómico en los años ochenta y noventa caracterizada por periodos largos de estancamiento. Los resultados del trabajo de Ferreira, Leite y Ravallion (2007) son obtenidos para el periodo 1985-2004 a nivel estatal, usando un panel largo del PIB per cápita desagregado por sectores económicos. Entre los princiales resultados se encuentran:
+La política social y económica es relevante. Las transferencias condicionadas de efectivo focalizadas a la población en pobreza fueron muy importantes en la reducción de la misma al ser un mecanismo de redistribución durante el proceso de reforma económica. Transferencias como Bolsa Familia tuvieron efectos en permanencia y matriculación escolar a nivel primaria
+13
+
+y secundaria, además de mejorar las condiciones de salud de la población beneﬁciaria (Ravallion, 2009:15). En este sentido, y a diferencia de China e India, para el periodo analizado el crecimiento económico no es el principal factor que explica la reducción de la pobreza: baja inﬂación, aumento en la seguridad social y transferencias condicionadas son los tres factores que explican gran parte de la caída de la pobreza en un periodo de estancamiento (Ferreira, Leite & Ravallion, 2007:24).
+Los niveles iniciales de desigualdad y los cambios en la desigualdad son importantes para reducir la pobreza. Durante los años ochenta, el coeﬁciente de Gini brasileño fue más del doble del chino en términos de ingreso, educación y salud, lo cual limitó la capacidad de la población en pobreza de beneﬁciarse del crecimiento económico del país, al tener una elasticidad-crecimiento de la pobreza menor (Ferreira, Leite & Ravallion , 2007: 37).
+La composición sectorial de la producción es importante para la elasticidad crecimiento de la pobreza. Al igual que India, el crecimiento del sector de servicios fue más pro pobre que el primario y secundario de 1985 a 2005. Además, el efecto del sector industrial fue heterogéneo entre estados: para algunos era anti pobre y para otros no signiﬁcativo. Esta diferencia puede ser explicada a través de las diferencias en la oferta de mano de obra caliﬁcada, la provisión de servicios públicos de salud y educación, y el nivel de participación política (Ferreira, Leite & Ravallion , 2007:23-24).
+En el apartado de conclusiones, se realizará una comparación de los hallazgos de la presente investigación con los resultados internacionales presentados, con el ﬁn de aportar evidencia de estudio de caso en la literatura de crecimiento pro pobre y compararla con lo encontrado hasta ahora.
+Con respecto al caso mexicano, el único articulo encontrado con un enfoque de crecimiento propobre es el hecho por Araar, Duclos y Makdissi (2007), quienes usan la ENIGH 1992, 1998 y 2004 para analizar si el crecimiento económico del país es pro-pobre, desde las dos deﬁniciones anteriormente expuestas. Sus resultados muestran que, bajo la deﬁnición absoluta de Ravallion (2004), el crecimiento económico mexicano fue anti-pobre de 1992 a 1998 y pro-pobre de 1998 a 2004. Bajo la deﬁnición relativa usada por Zaman y Khilji (2013), el crecimiento fue pro-pobre de 1992 a 2004. Una de las conclusiones de los autores es que el observar un patrón pro-pobre en una muestra de hogares no implica que se puedan extrapolar los resultados a la población (Araar, Duclos & Makdissi, 2007:19). Si bien el trabajo de los autores aporta evidencia importante a nivel nacional, esta investigación pretende extender y mejorar la evidencia empírica con un análisis mucho más desagregado no solo en términos geográﬁcos, sino desagregando las fuentes del ingreso. Además, al analizar el ingreso desde fuentes censales se tendrán los ingresos no sólo de una muestra representativa, sino de toda la población.
+14
+
+5. Datos
+Los datos usados tendrán desagregación municipal. Se utilizará la información de pobreza, ingreso y desigualdad para los años 2000, 2005 y 2010. El tipo de pobreza usado será la pobreza por ingresos, medida con respecto a las tres líneas de pobreza usadas por el gobierno mexicano. En este caso, el único indicador disponible para los tres años es la incidencia. De acuerdo con la metodologia oﬁcial de medición usada hasta 2008, existen tres líneas de pobreza, que representan cada una diferentes niveles de poder de compra de una canasta de bienes de consumo (CONEVAL, 2012):
+Pobreza alimentaria: incapacidad de un hogar de adquirir, incluso si destinara todo su ingreso en ello, una canasta alimentaria básica.
+Pobreza de capacidades: incapacidad de un hogar de adquirir, incluso si destinara todo su ingreso en ello, una canasta de consumo compuesta de alimentos básicos, educación y salud.
+Pobreza patrimonial: incapacidad de un hogar de adquirir, incluso si destinara todo su ingreso en ello, una canasta de consumo compuesta de alimentos básicos, educación, salud, vestido, vivienda y transporte.
+Se utilizaron los datos calculados a nivel municipal por CONEVAL en sus mapas de pobreza. Estas cifras son estimaciones obtenidas usando el método de imputación de ingresos por áreas pequeñas desarrollado en (Elbers et al, 2003). Esta estimación utiliza las variables comunes entre la ENIGH y el Censo de Población y Vivienda del INEGI, para obtener estimaciones del ingreso que sean, al mismo tiempo, representativas a nivel municipal y con una mejor calidad en la fuente de ingreso. Esta información sólo está disponible cada cinco años. En este caso se utilizarán los años 2000, 2005 y 2010. Las medidas de pobreza a nivel estatal para estos años se encuentran en el Apéndice A. Para las mediciones de desigualdad, es posible construir el índice de Gini municipal con el mismo ingreso imputado.
+Los datos usados para estimar el crecimiento del ingreso per cápita serán tomados a nivel sectorial de los censos económicos realizados por INEGI. Se utilizará como variable de crecimiento los ingresos sectoriales totales de las unidades económicas7. La disponibilidad de esta información, al igual que las cifras de pobreza, es cada cinco años. Un problema metodológico es que dichas cifras, que son la única fuente de información de actividad económica desagregada a nivel municipal, sólo
+7Como unidades económicas se reﬁeren a las empresas formales registradas y a las personas con actividades profesionales
+15
+
+se encuentran disponibles para 1999, 2004 y 2009. Estas variables serán un proxy del ingreso adelantado un año.
+Por esta razón, un supuesto importante de la presente investigación es que el ingreso del periodo anterior explica parcialmente el ingreso actual y por tanto, la pobreza. Se veriﬁcó empíricamente la viabilidad de utilizar estas cifras calculando la correlación entre ingresos por sector de un periodo y niveles de pobreza del periodo adelantado. Los resultados son presentados en el Apéndice B. A un nivel más conceptual, es razonable pensar que las ﬁrmas en el periodo t toman decisiones de inversión que generarán capital en t+1 basadas en los ingresos en t, en un ambiente particular con mercados de crédito ineﬁcientes y ﬁrmas de escala pequeña, un supuesto realista para un país en desarrollo con las características de México
+El ingreso presentado en los censos esta organizado por sector económico. Se utilizará la clasiﬁcación industrial del SCIAN que divide la actividad económica en tres grandes sectores (INEGI, 2013:4), compuestos de la siguiente manera:
+Sector primario: Su característica principal es la explotación de recursos naturales y materias primas. Las actividades incluidas son agricultura, ganadería, explotación forestal, caza y pesca.
+Sector secundario: Su característica principal es la transformación de materias primas en bienes manufacturados. Las actividades incluidas son: minería, electricidad, infraestructura hidraúlica, gas, construcción y manufacturas. Para esta investigación, se excluirá la industria de la construcción, ya que no se cuentan con datos comparables entre el periodo 2000 con 2005 y 2010.
+Sector terciario: En este rubro se incluyen actividades muy heterogéneas que no corresponden a la deﬁnición de los dos sectores anteriores. Las actividades incluidas son: comercio al mayoreo, comercio al menudeo, transportes, medios de información, servicios ﬁnancierios, bienes raíces, servicios profesionales y técnicos, servicios corporativos, asistencia social y de salud, educación y actividades recreativas.
+Usando la información de los censos económicos y de población de INEGI, se puede calcular el ingreso per cápita sectorial. Un problema con el censo económico es el error de medición de la acitividad primaria. Hasta 2009 no se tenían registros de actividades relacionadas con agricultura, ganadería y explotación forestal. Las únicas actividades comparables en el tiempo, registradas en este sector para 1999, 2004 y 2009, son pesca y acuicultura. Como se explicará más adelante, este problema puede generar sesgos importantes en las estimaciones, además de generar muchos valores
+16
+
+perdidos en el ingreso per cápita primario, al no capturar la mayoría de la actividad económica relevante en muchas regiones. Para resolver esto, se utilizó una variable proxy alternativa del nivel de acitividad económica del sector primario a nivel municipal para los años 2000, 2005 y 2010, utilizando la información del Sistema Estatal y Municipal de Bases de Datos (SIMBAD) del INEGI.
+La información del SIMBAD contiene datos anuales sobre el valor de la producción agrícola, ganadera y forestal a nivel municipal.8 Sumando los valores de la producción y diviendo entre la población total, se genera un indicador de la riqueza primaria per cápita. Deﬂactando este valor con un índice de precios compuesto, se puede obtener una estimación razonable del producto primario per cápita, el cual puede ser un instrumento del ingreso per cápita primario original. Es complicado demostrar que dicha aproximación generará un instrumento fuerte, incluso si es razonable conceptual e intuitivamente. El hecho de que la información del SIMBAD contenga únicamente las actividades faltantes en los censos económicos 1999 y 2004, y la baja señal de la variable original (la cual presenta valores 0 en muchos municipios rurales donde es evidente por otra evidencia empírica que sí existe actividad económica agrícola) hacen difícil encontrar una correlación alta entre ambas variables, lo que pone en cuestión si la estimación por mínimos cuadrados en dos etapas es la mejor aproximación al problema. Es por ello que en vez de realizar dos etapas simplemente se presentará el modelo con ambas variables usando la información del SIMBAD como proxy. Aún así, como se mostrará más adelante, esta variable corregirá el sesgo por error de medición.
+Además del crecimiento económico y el cambio en la desigualdad, intervenciones de gobierno en términos de transferencias focalizadas, programas sociales e inversión pública pueden reducir la pobreza sin que necesariamente exista crecimiento económico o cambios en la desigualdad intramunicipal, por lo que se controlará por tres tipos de intervenciones públicas: las transferencias y subsidios generales, la inversión pública, y las transferencias focalizadas del programa Oportunidades. La información fue obtenida de los registros administrativos del INEGI. Algunas municipalidades, provenientes de Oaxaca y Puebla, fueron excluidas, dada la falta de información para algunas municipalidades en algunos periodos.
+Finalmente, para poder comparar valores reales, se utilizará como deﬂactor el índice implícito de precios a nivel estatal, debido a que toma en cuenta precios de consumidores y productores. Esto captura la dinámica regional de los precios y si ella inﬂuye en las estimaciones. La tabla 4 muestra las estadísticas descriptivas de las principales variables usadas en las estimaciones de la sección 6 para los años 2000, 2005 y 2010.
+8Excepto en el caso del Estado de México en el 2000
+17
+
+Tabla 4. Estadísticas descriptivas de variables a estimar a nivel municipal: 2000, 2005 2010
+
+2000
+
+2005
+
+2010
+
+Media
+
+Desv.est. Mín
+
+Máx
+
+Media
+
+Desv.est. Mín
+
+Máx
+
+Media
+
+Desv.est. Mín
+
+Máx
+
+Pobreza (incidencia)
+
+Alimentaria
+
+44.40
+
+24.24
+
+1.59
+
+96.83
+
+32.84
+
+18.90
+
+.106
+
+84.01
+
+31.87
+
+19.05
+
+.99
+
+86.36
+
+Capacidades
+
+51.43
+
+24.28
+
+2.79
+
+98.13
+
+41.11
+
+19.86
+
+.194
+
+89.15
+
+40.97
+
+20.58
+
+1.98
+
+91.57
+
+Patrimonial
+
+68.29
+
+21.19
+
+9.24
+
+99.51
+
+62.95
+
+18.35
+
+.985
+
+96.80
+
+64.77
+
+19.59
+
+7.86
+
+98.14
+
+Coeﬁciente Gini
+
+.4610
+
+.0693
+
+.2427
+
+.7054
+
+.4159
+
+.0481
+
+.2469
+
+.6895
+
+.3741
+
+.0487
+
+.2520
+
+.5654
+
+Ingresos per cápita (pesos)
+
+Primario
+
+133.05
+
+1047.7
+
+0
+
+38,658.59
+
+100.7
+
+852.6
+
+0
+
+25,168
+
+87.05
+
+735.6
+
+0
+
+26,989.1
+
+Proxy Primario
+
+3,660.9
+
+6509.9
+
+0
+
+93,614.5
+
+9,891.8
+
+14123.9
+
+0
+
+173,092.6
+
+5,913.7
+
+8930.4
+
+0
+
+125,893.1
+
+Secundario
+
+10,016.9
+
+53507.7
+
+0
+
+1,061,647
+
+11,878.7
+
+73355.9
+
+0
+
+1,858,133
+
+15,344.6
+
+108777.6
+
+0
+
+3,045,792
+
+Terciario
+
+8,476.7
+
+35879.1
+
+0
+
+1,233,193
+
+10,192.3
+
+32134.3
+
+0
+
+926,603.4
+
+13,669.4
+
+65534.8 23.79 2,299,053
+
+Gasto público (miles de pesos)
+
+Subsidios y Transf.
+
+4,409,980 16260211
+
+0
+
+343,074,624 5,054,183 19922722
+
+0
+
+388,910,496 7,829,728 31930797
+
+0
+
+701,106,496
+
+Inversión Pública
+
+9,795,520 32636126
+
+0
+
+32,636,126 15,182,991 40637947
+
+0
+
+763,878,016 22,227,020 61705019
+
+0
+
+987,228,288
+
+Gasto Oportunidades
+
+1,553,830 2,393,606
+
+0
+
+23,669,120 3,964,271 5393284
+
+0
+
+58,778,975 11,278,111 15866175
+
+0
+
+210,292,045
+
+Fuente: estimaciones hechas por el autor usando la información de CONEVAL e INEGI
+
+6. Modelos y estimaciones
+Las estimaciones estarán basadas en el modelo propuesto en (Ferreira, Leite & Ravallion , 2007: 14) y (Ravallion y Chen, 2007:14-15), pero en un nivel más desgreagado (municipalidades). Considere la siguiente estimación lineal utilizando logaritmos, usada para estimar la elasticidad crecimiento de la pobreza:
+lnpi jt = δ + β1lnyipjt + β2lnyisjt + β3lnyti jt + θ t + αi j + ui jt (1)
+∀(i = 1, ..., M; j = 1..., N;t = 1, ...T )
+donde, u iidN(0, σu2) y E lnyimjtui jt = 0 ∀t = 2000, 2005, 2010 y ∀m = p, s,t
+El subíndice i representa la observación del municipio, j la entidad y t el periodo. El ingreso aqui se descompone por sector. Los superíndices de los logaritmos del ingreso representan los sectores:
+18
+
+p es el ingreso primario, s secundario y t terciario. Se incluyó una tendencia de tiempo en la regresión y un efecto ﬁjo a nivel municipal, para capturar los elementos geográﬁcos e institucionales no observables que pudieran sesgar la estimación. Finalmente, se incluye un error variable en el tiempo.
+Para poder determinar qué método de estimación usar, es importante veriﬁcar que se cumpla el supuesto de exogeneidad estricta, que supone independencia entre las variables explicativas y los factores invariantes en el tiempo. El modelo de efectos ﬁjos no supone esto y permite correlación entre estos factores, mientras que el modelo de efectos aleatorios lo asume.
+Existen razones para pensar que los factores geográﬁcos e institucionales presentan una correlación con el crecimiento económico, debido al patrón empírico observable descrito en la sección 2 de la investigación entre geografía y riqueza. Además, la proximidad del municipio con la frontera norte puede hacer que ciertas observaciones tengan mayores ingresos por el comercio con Estados Unidos. Existen hipótesis en el campo de crecimiento económico que tratan de explicar la diferencia de ingresos entre regiones por factores geográﬁcos (Sachs, 2001) y/o institucionales, como (Acemoglu, Johnson, & Robinson, 2002) y (Acemoglu & Johnson, 2005). Por ello, existen argumentos teóricos y empíricos para cuestionar el supuesto de exogeneidad estricta, por lo que no podemos descartar que
+E lnymi jtαi j = 0 ∀i = 1, .., M; j = 1, ..., N; m = p, s,t (2)
+Por lo tanto, estimar el modelo de (1) usando una regresión de corte transversal o con efectos aleatorios puede sesgar las estimaciones. Se aplicó el test de Hausman a todos los modelos a nivel nacional, que consiste en comparar los estimadores bajo efectos ﬁjos y efectos aleatorios, con la hipótesis nula de que las diferencias en los coeﬁcientes de efectos ﬁjos y aleatorios no son sistemáticas. Como se verá en el Apéndice E, en todos los casos el test rechazó la hipótesis nula, por lo tanto el modelo a estimar es efectos ﬁjos, toda vez que el estimador de efectos aleatorios es inconsistente.
+Como se mencionó anteriormente, se tiene un error de medición grande en el sector primario. Este error puede ser expresado como
+lnyipjt = lnyipj∗t + vi jt (3)
+donde se asumirá que νi jt iidN(0, σv2) y E [lnyp∗v] = 0
+19
+
+Este error se presenta sistemáticamente en los tres periodos, toda vez que no se contempla la medición completa del sector primario. Como se mencionó anteriormente, el modelo a utilizar es efectos ﬁjos; aplicando primeras diferencias se puede eliminar el efecto ﬁjo que es invariamente en el tiempo. Sin embargo, el error de medición genera un problema de endogeneidad ya que E(εi js, lnyipjt) = 0. Este error se puede acentuar si se aplican primeras diferencias (Baltagi, 1996:171). La estimación que se desea es
+lnpi jt = δ + β1 lnyipj∗t + β2 lnyisjt + β3 lnyti jt + ui jt − ui jt−1 (4)
+∀(i = 1, ..., M; j = 1..., N;t = 1, ..T )
+
+Pero con el error de medición el modelo será lnpi jt = δ + β1 lnyi∗jpt + β2 lnyisjt + β3 lnyti jt + ε (5) ∀(i = 1, ..., M; j = 1..., N;t = 1, ..T )
+
+donde ε = ui jt − ui jt−1 + β1 vi jt − vi jt−1
+
+Dada las ecuaciones (3) y (5) el sesgo de β1 es exacerbado por el modelo de primeras diferencias, resultando en un estimador sesgado que cumple con la condición
+
+E βˆ1 = β
+
+Var(lnyp∗) Var(lnyp)
+
+Esto signiﬁca que la razón entre la varianza original y la obervada genera un sesgo de atenuación, lo que genera que el estimador tienda a ser subestimado y en el límite ser 0. Este problema es importante para esta investigación, ya que en algunos trabajos de crecimiento “pro pobre” el sector primario es importante para la reducción de la pobreza, lo que puede llevar a interpretaciones erróneas. Para resolver este problema, se utilizó el proxy descrito en la sección 5, para reducir el ruido de la variable original. Con estas adecuaciones el estimador de primeras diferencias puede obtener estimadores consistentes y efﬁcientes, reduciendo el sesgo por atenuación.
+La estructura de los datos en la investigación es un panel corto. En los modelos presentados en (Ferreira, Leite & Ravallion, 2007) y (Ravallion y Chen, 2007) la estructura es un panel largo. Además,
+20
+
+las tasas de crecimiento en China e India son comparativamente más altas que las analizadas en el periodo para México. Tomando en cuenta esto, existen algunas diferencias en las estimaciones que se realizaron. La primera diferencia es que los modelos presentados en la revisión de la literatura de crecimiento “pro pobre” ponderan el ingreso per cápita con la participación del mismo en el ingreso total. A manera de ejemplo, la especiﬁcación usada en (Ferreira, Leite & Ravallion , 2007:14) es:
+
+lnpi jt = δ + βipsipt−1 lny∗itp + βisssit−1 lnyist + βit stit−1 lnytit + πi + eit
+
+donde
+
+sJit−1
+
+=
+
+YJit−1 Yit−1
+
+∀J
+
+=
+
+p, s,t
+
+Las participaciones son incluidas para capturar los cambios estructurales en la composición del ingreso. En el caso de Brasil, India y China, los datos muestran cambios en el tiempo de la participación de cada sector, producto de los procesos de transformación de largo plazo llevados a cabo durante más de veinte años. En el caso de México, como se muestra en la Gráﬁca 1, los tres periodos analizados sólo abarcan diez años, en los cuales no hubo cambios estructurales signiﬁcativos en la composición del ingreso. Por ello, las estimaciones de esta investigación serán hechas sin ponderar por participación, tomando como referencia la ecuación en (4). La segunda diferencia entre modelos es que, además del modelo de primeras diferencias, se estimará adicionalmente el modelo de Mínimos Cuadrados Generalizados (MCG). La razón de utilizar ambas estimaciones es que existen algunos problemas cuando se usa efectos ﬁjos en paneles donde la variación longitudinal es baja, ya que los coeﬁcientes pueden ser estimados con imprecisión y se perderá eﬁciencia (Cameron & Trivedi, 2009:244-245). En este caso, como se muestra en el Apéndice C, gran parte de la varianza de los datos se da por las variaciones entre las observaciones en los cortes transversales y no a través del tiempo.
+Esto es especialmente importante para el periodo de la crisis. Como señala Baltagi (1996:17) el estimador de efectos ﬁjos ignora la variación entre observaciones, y el estimador “between” de efectos aleatorios la variación en el tiempo. En este caso, los cambios del ingreso per cápita en el tiempo son muy pequeños, dado el periodo de bajo crecimiento de la economía mexicana, mientras que la variación entre el ingreso per cápita promedio de los municipios es muy alta por la heterogeneidad del corte. La ventaja del estimador MCG es que se genera un estimador ponderado del estimador de efectos ﬁjos con el “between” de aleatorios. La ponderación se hace calculando la participación de la variancia en el tiempo y en el corte transversal con respecto a la varianza total de todo el panel (Baltagi, 1996:17).
+
+βˆMCG = W1βˆEF + W2βˆbetween 21
+
+Es importante señalar que por la estructura del panel corto y las propiedades asintóticas del estimador, la estimación de MCG puede ser más similar al estimador “between”, toda vez que si t → ∞, βˆMCG → βEˆF , y si n → ∞, βˆMCG → βbetˆween Dos versiones del modelo (1) y (4) serán presentadas. El modelo A estimará la relación que existe entre la incidencia de pobreza con el crecimiento del ingreso sectorial, introduciendo en el modelo la desigualdad para determinar si existe algún canal propio por el cual ésta actúa además del creicimiento económico. El modelo B será la misma regresión con el ingreso por sectores pero controlando por variables importantes como el gasto en Oportunidades, subsidios, transferencias e inversión pública. Los dos niveles serán primero estimados a nivel nacional y luego por grupos regionales y de marginación.
+6.1. Modelo A
+Este modelo estimará la ecuación (6) usando primeras diferencias y la (7) usando MCG. Se realizarán las tres estimaciones para las tres líneas de pobreza: alimentaria, capacidades y patrimonial. Para corregir por el error de autocorrelación del error individual y obtener errores estándar robustos, se relajará el supuesto de que los errores son independientes e idénticamente distribuidos, agrupando por observación (Cameron & Trivedi, 2009:250). Es posible que el modelo a nivel nacional tenga heteroscedasticidad, ya que los municipios comparados son muy diferentes entre sí, por lo que en las secciones posteriores se aplicarán criterios de estratiﬁcación.
+El modelo de primeras diferencias será estimado para dos periodos. El primero de 2000 a 2005 y el segundo de 2005 a 2010. La ecuación a estimar es
+lnpi jt = δ + β1 lny∗i jpt + β2 lnyisjt + β3 lnyti jt + γ Gi jt + ε (6)
+∀(i = 1, ..., M; j = 1..., N;t = 1, ..T )
+El modelo de MCG será estimado con las observaciones de los tres periodos utilizando la ecuación
+lnpi jt = δt + β1lnyipjt + β2lnyisjt + β3lnyti jt + γGi jt + ai j + ui jt (7)
+∀(i = 1, ..., M; j = 1..., N;t = 1, ...T )
+22
+
+La variable G representa el coeﬁciente de Gini. Nótese que, por la aproximación teórica hecha en la revisión de la literatura, una parte del efecto de la desigualdad en la pobreza se da a través del crecimiento económico. El coeﬁciente γ captura entonces otros efectos directos de esta variable.
+
+Tabla 5. Regresiones de incidencia de pobreza alimentaria a nivel nacional
+
+PD 2000-2005
+
+PD 2005-2010
+
+MCG 2000-2005 MCG 2005-2010
+
+Constante
+
+(I) 2.664∗∗
+
+(II) 3.536∗∗
+
+(III) .6299∗
+
+(IV) 3.0804∗
+
+(V) 5.17∗∗
+
+(VI) 5.35∗∗
+
+(.4140) (.2667) (.0160) (.2026)
+
+(.0947)
+
+(.0837)
+
+Primario
+
+.003863
+
+-.00151
+
+Proxy de prim
+
+(.0103 )
+
+-.02763∗∗
+
+(.0172)
+
+-.00311
+
+-.01258∗
+
+-.02188∗
+
+Secundario
+
+-.00616
+
+(.0063) -.01372
+
+.04756∗∗
+
+(.0179) .00907
+
+(.0060) -.07502∗∗
+
+(.0096) -.07825∗∗
+
+Terciario
+
+(.0213) -.08951∗∗
+
+(.0121) -.11869∗∗
+
+(.0440) .13592∗∗
+
+(.0075) .04239∗
+
+(.0067) -.23546∗∗
+
+(.0057) -.17747∗∗
+
+Desigualdad
+
+(.0354) 3.006∗∗
+
+(.0248) 2.518∗∗
+
+(.3285) 2.323∗∗
+
+(.0166) .2896∗∗
+
+(.0110) 1.607∗∗
+
+(.0088) .15647
+
+R2(dentro) R2(entre) R2(general)
+
+(.3552) 0.2176 0.1595 0.1669
+
+(.2511) 0.2094 0.2614 0.2343
+
+(.4637) 0.1010 0.4073 0.3249
+
+(.2018) 0.0268 0.4002 0.3102
+
+(.1661) 0.1679 0.4416 0.4000
+
+(.1443) 0.0009 0.4798 0.4147
+
+N
+
+1456
+
+3967
+
+1527
+
+4792
+
+3967
+
+4792
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Los resultados de la tabla 5 muestran la estimación a nivel nacional para pobreza alimentaria. Las columnas (I) y (III) utilizaron el ingreso original del sector primario de los censos económicos, mientras que los resultados en (II), (IV), (V) y (VI) usan el proxy construido del SIMBAD para corregir el sesgo por atenuación. Los sectores primario y terciario son pro pobres antes de la crisis (2000-2005) en todas las estimaciones hechas con el proxy, mientras que el sector secundario no es signiﬁcativo en el modelo de primeras diferencias y es pro pobre en el modelo de MCG. Para el periodo de la crisis (2005-2010), en el modelo de primeras diferencias el sector primario no es signiﬁcativo y el sector terciario es consistentemente anti pobre. Para este mismo periodo, la especiﬁcación de MCG presenta coeﬁcientes negativos y signiﬁcativos pero en el caso del sector terciario más pequeños en magnitud que antes de la crisis.
+23
+
+Estos resultados arrojan dos conclusiones con respecto a la composición sectorial: los sector primario y terciario son pro pobres antes de la crisis, aunque el sector terciario es mayor al primario en términos de magnitud. Todas las demás variables ﬁjas, un aumento de 1 % en el ingreso per cápita primario (uitilizando el proxy del mismo) está relacionado con una disminución de 0.02 % en la pobreza alimentaria, mientras que un aumento de 1 % en el ingreso per cápita terciario está relacionado con una reducción de 0.11 % en la pobreza alimentaria.
+Para el periodo de la crisis, los resultados de las estimaciones con primeras diferencias y MCG arrojan resultados contradictorios entre si, por lo que no es posible sacar conclusiones de dicha estimación. En términos de desigualdad, las estimaciones muestran resultados consistentes por ambos métodos. Todo lo demás constante, un aumento de una unidad del coeﬁciente de Gini (medido del 0 a 100) esta relacionado con un aumento de 2.51 % de la pobreza alimentaria antes de la crisis y con un aumento de 0.28 % después de la crisis. Ello implica que una disminución en la desigualdad esta vinculada con caidas en la incidencia de pobreza.
+
+Tabla 6. Regresiones de incidencia de pobreza de capacidades a nivel nacional
+
+PD 2000-2005
+
+PD 2005-2010
+
+MCG 2000-2005
+
+MCG 2005-2010
+
+Constante
+
+(I) 3.163∗∗
+
+(II) 3.812∗∗
+
+(III) 1.610∗∗
+
+(IV) 3.100∗∗
+
+(V) 5.240∗∗
+
+(VI) 5.442∗∗
+
+(.3446) (.2275) (.4053) (.1712)
+
+(.0785)
+
+(.0697)
+
+Primario
+
+-.00080
+
+-.00335
+
+Proxy de prim
+
+(.0086)
+
+-.01853∗∗
+
+(.0130)
+
+-.01010
+
+-.01200∗
+
+-.02283∗∗
+
+Secundario
+
+-.00551
+
+(.0053) -.01378
+
+.03747∗∗
+
+(.0150) .00628
+
+(.0050) -.0614∗∗
+
+(.0081) -.06313∗∗
+
+Terciario
+
+(.0177) -.06572∗
+
+(.0108) -.09192∗∗
+
+(.0139) .11175∗∗
+
+(.0065) .03152∗
+
+(.0058) -.18741∗∗
+
+(.0049) -.14184∗∗
+
+Desigualdad
+
+(.0294) 2.106∗∗
+
+(.0209) 1.818∗∗
+
+(.0382) 1.445∗∗
+
+(.0139) .6122∗∗
+
+(.0092) .9366∗∗
+
+(.0074) -.26704∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.3000) 0.1625 0.1487 0.1490
+
+(.2234) 0.1613 0.2611 0.2269
+
+(.2758) 0.0718 0.4068 0.3342
+
+(.1731) 0.0096 0.3959 0.3265
+
+(.1411) 0.1213 0.4210 0.3756
+
+(.1223) 0.0009 0.4798 0.4147
+
+N
+
+1456
+
+3967
+
+1527
+
+4792
+
+3967
+
+4792
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+24
+
+La tabla 6 muestra las mismas estimaciones para la línea de pobreza por capacidades. Los resultados son muy similares comparados con los de pobreza alimentaria, a excepción de la magnitud de los coeﬁcientes. Para el periodo antes de la crisis, un aumento de 1 % en el ingreso per cápita primario (utilizando el proxy del mismo) está relacionado con una disminución de 0.01 % en la pobreza de capacidades, mientras que un aumento de 1 % en el ingreso per cápita terciario está relacionado con una reducción de 0.09 % en la pobreza de capacidades. De nueva cuenta, el crecimiento del ingreso por sector en el periodo de la crisis es anti pobre para el sector terciario y no signiﬁcativo para el primario y secundario bajo el modelo de primeras diferencias. La estimación de MCG muestra coeﬁcientes negativos y signiﬁcativos para el crecimiento por sector para los periodos antes y después de la crisis. Los coeﬁcientes de desigualdad son ahora ambiguos dependiendo del modelo: para desigualdad es positivo y signiﬁcativo bajo primeras diferencias y negativo para MCG en el periodo de crisis. En el caso del modelo de primeras diferencias, se observa para ambas especiﬁcaciones un coeﬁciente de menor magnitud para antes y después de la crisis.
+
+Tabla 7. Regresiones de incidencia de pobreza patrimonial a nivel nacional
+
+PD 2000-2005
+
+PD 2005-2010
+
+MCG 2000-2005
+
+MCG 2005-2010
+
+constante
+
+(I) 4.021∗∗
+
+(II) 4.289∗∗
+
+(III) 3.372∗
+
+(IV) 4.241∗∗
+
+(V) 5.235∗∗
+
+(VI) 5.396∗∗
+
+(.2115) (.1496) (.2596) (.1089)
+
+(.0465)
+
+(.0417)
+
+Primario
+
+-.00573
+
+-.00531
+
+Proxy de prim
+
+(.0052)
+
+-.00342
+
+(.0072)
+
+-.01915∗
+
+-.00769∗
+
+-.0173∗∗
+
+Secundario
+
+-.00958
+
+(.0032) -.0121
+
+.01743∗
+
+(.0093) .00175
+
+(.0031) -.03482∗∗
+
+(.0051) -.03380∗∗
+
+Terciario
+
+(.0103) -.02032
+
+(.0082) -.03973∗∗
+
+(.0074) .06488∗
+
+(.0047) .01149
+
+(.0040) -.09564∗∗
+
+(.0033) -.07511∗∗
+
+Desigualdad
+
+(.0179) .53500∗∗
+
+(.0133) .54503∗∗
+
+(.0243) .06488
+
+(.0086) -.22630∗
+
+(.0059) -.15002
+
+(.0046) -.7824∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.1896) 0.0354 0.1601 0.1364
+
+(.1612) 0.0456 0.2772 0.2248
+
+(.1614) 0.0341 0.3636 0.3058
+
+(.1144) 0.0138 0.0269 0.0173
+
+(.0905) 0.0197 0.3741 0.3178
+
+(.0785) 0.0011 0.4226 0.3601
+
+N
+
+1456
+
+3967
+
+1527
+
+4792
+
+3967
+
+4792
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+La tabla 7 muestra los resultados para pobreza patrimonial. En este caso, algunos de los patrones
+
+25
+
+vistos en las estimaciones para la pobreza alimentaria y de capacidades cambian, siento el sector terciario el único negativo y signiﬁcativo para el periodo antes de la crisis. El coeﬁciente de desigualdad es positivo y signiﬁcativo en el modelo de primeras diferencias antes de la crisis, aunque con MCG es negativo y signiﬁcativo antes y después de la crisis. A medida que la línea de pobreza aumenta, los valores de los coeﬁcientes del ingreso per cápita sectorial se hacen más pequeños en valor absoluto y en algunos casos no signiﬁcativos. En este caso, reduciendo el error de medición con el proxy y para el periodo 2000-2005, el único sector pro pobre midiendo por pobreza patrimonial es el terciario: todo lo demás constante, un aumento de 1 % en el ingreso per cápita terciario está relacionado con una disminución de 0.03 % de la pobreza patrimonial.
+Los resultados mostrados en las últimas tres tablas reﬂejan inconsistencias en las estimaciones del ingreso per cápita por sector para el periodo 2005-2010. Esto puede deberse a la baja variación longitudinal de los datos en el panel corto. Otra razón posible es la respuesta del gobierno ante la crisis y sus efectos: a medida que el ingreso cayó, el gobierno mexicano reaccionó con una serie de políticas de aumento del gasto social para combatir los efectos negativos en la población más vulnerable y de menores ingresos. Para poder controlar por estas variables, en el siguiente apartado se muestra el modelo B, para revisar dicha hipótesis.
+Para el caso de la desigualdad, los resultados para las dos primeras líneas de pobreza muestran resultados consistentes en casi todos los casos. Existe una relación positiva y signiﬁcativa entre desigualdad del ingreso y pobreza, la cual se sostiene antes y después de la crisis. En el caso de la pobreza patrimonial, los resultados muestran estimadores con distinto signo y magnitud dependiendo del modelo utilizado.
+6.2. Modelo B
+Este modelo estimará las ecuaciones (8) a la (11), para poder controlar por los efectos de la política social, debido a que las transferencias condicionadas de efectivo como Oportunidades están enfocadas a aumentar el ingreso de la población en situación de pobreza. Las ecuaciones (8) y (9) son para el modelo de primeras diferencias
+lnpi jt = δ + β1 lny∗i jpt + β2 lnyisjt + β3 lnyti jt + λ1 lnSubi jt + λ2 lnInvi jt + ε (8)
+∀(i = 1, ..., M; j = 1..., N;t = 1, ..T )
+lnpi jt = δ + β1 lny∗i jpt + β2 lnysi jt + β3 lnlnyti jt + θ1 lnOporti jt + λ2 Invi jt + ε (9)
+26
+
+∀(i = 1, ..., M; j = 1..., N;t = 1, ..T )
+La ecuación (8) incluye el gasto de gobierno en dos categorías relevantes para este estudio: “subsidios y transferencias” y “gasto público en infraestructura”. La ecuación (9) sustituye el primer rubro por el gasto en Oportunidades en el municipio, para excluir aquellas transferencias que no son focalizadas en la población en situación en pobreza y que incluso pudieran ser regresivas. Con ello, se toma en cuenta la respuesta coyuntural del gobierno mexicano, quien lanzó en 2009 el “Acuerdo Nacional en favor de la Economía Familiar y el Empleo para Vivir Mejor”, una estrategia que incluyó un aumento en la inversión pública y un aumento en el monto de las transferencias a familias pobres. Para las estimaciones con MCG el modelo propuesto es
+lnpi jt = δt + β1lnyipjt + β2lnyisjt + β3lnyti jt + λ1lnSubi jt + λ1lnInv + ai j + ui jt (10) ∀(i = 1, ..., M; j = 1..., N;t = 1, ...T )
+lnpi jt = δt + β1lnyipjt + β2lnysi jt + β3lnyti jt + λ1lnOport + λ1lnInv + ai j + ui jt (11) ∀(i = 1, ..., M; j = 1..., N;t = 1, ...T )
+Las tablas 8, 9 y 10 muestran los resultados de los modelos (8)-(11). Las tablas están organizadas de la siguiente forma: las columnas (I) a (IV) son los modelos de primeras diferencias y las columnas (V) a (VIII) los de MCG. Las columnas (I) a (IV) estiman el modelo de primeras diferencias y las (V) a (VIII) MCG. Las columnas nones estiman el modelo con subsidios y transferencias generales y las pares sólo el gasto municipal de Oportunidades.
+27
+
+Tabla 8. Regresiones de incidencia de pobreza alimentaria a nivel nacional
+
+PD 2000-2005
+
+PD 2005-2010
+
+MCG 20050-2005
+
+MCG 2005-2010
+
+constante
+
+(I) 6.444∗∗
+
+(II) 6.730∗∗
+
+(III) 2.5693∗∗
+
+(IV) 2.727∗∗
+
+(V) 6.111∗∗
+
+(VI) 4.9611∗∗
+
+(VII) 4.6494∗∗
+
+(VIII) 3.217∗∗
+
+Proxy prim.
+
+(.2810) -.03948∗∗
+
+(.2465) -.02423
+
+(.3926) .05647∗∗
+
+(.5213) .05061∗
+
+(.1182) -.02755∗∗
+
+(.1377) -.03844∗∗
+
+(.1364) -.00901∗∗
+
+(.1366) .00241∗∗
+
+Secundario
+
+(.0079) -.0210
+
+(.0067) -.00504∗∗
+
+(.0203) -.0033
+
+(.0249) -.00310
+
+(.0068) -.07329∗∗
+
+(.0069) -.06436∗∗
+
+(.0094) -.09091∗∗
+
+(.0080) -.08674∗∗
+
+Terciario
+
+(.0154) -.13951∗∗
+
+(.0136) -.11795∗∗
+
+(.0096) .04635∗
+
+(.0096) .04744∗
+
+(.0076) -.21377∗∗
+
+(.0071) -.2217∗∗
+
+(.0067) -.20026∗∗
+
+(.0059) -.21282∗∗
+
+Subsidios
+
+(.0279) -.03305∗
+
+(.0286)
+
+(.0213) -.00152
+
+(.0207)
+
+(.0124) -.00976∗
+
+(.0121)
+
+(.0107) -.02463∗∗
+
+(.0100)
+
+Oportunidades
+
+(.0133)
+
+-.08510∗∗
+
+(.0095)
+
+-.01177
+
+(.0087)
+
+.13176∗∗
+
+(.0072)
+
+.23485∗∗
+
+Inv. Pública
+
+-.06838∗∗
+
+(.0133) -.06339∗∗
+
+-.01263
+
+(.0215) -.00996
+
+-.01147∗∗
+
+(.0105) -.06092∗∗
+
+.08098∗∗
+
+(.0115) -.07196∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.0074) 0.1568 0.3007 0.2792
+
+(.0069) 0.2211 0.0928 0.1107
+
+(.0112) 0.0131 0.1709 0.1249
+
+(.0108) 0.0132 0.2380 0.1855
+
+(.0057) 0.0988 0.4115 0.3704
+
+(.0060) 0.0323 0.5325 0.4887
+
+(.0086) 0.0023 0.5011 0.4278
+
+(.0093) 0.0036 0.6297 0.5469
+
+N
+
+3295
+
+3224
+
+3970
+
+4034
+
+3295
+
+3224
+
+3970
+
+4034
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+La tabla 8 muestra los resultados para pobreza alimentaria. El sector terciario permanece como el sector más signiﬁcativo para la reducción de la pobreza en el periodo 2000-2005. Todo lo demás constante, un aumento del 1 % en el ingreso terciario está relacionado con una disminución de la pobreza alimentaria de entre 0.11 % y 0.13 % para el modelo de primeras diferencias y entre 0.21 % y 0.22 % en el modelo de MCG. Al igual que en el caso del modelo A, el modelo de primeras diferencias muestra resultados inconsistentes con el modelo MCG para el periodo de 2005 a 2010. Para el periodo 2000-2005, un aumento de 1 % en la inversión pública estaba relacionado con una reducción de la pobreza alimentaria de entre 0.06 % y 0.01 %, dependiendo del modelo. Parece ser que, sin importar si se utiliza como control los subsidios generales o el gasto en Oportunidades, el gasto de gobierno es pro-pobre bajo primeras diferencias. Es importante señalar que no es posible interpretar causalidad en este modelo, toda vez que existe un problema de causalidad inversa, ya que los cambios en la pobreza pueden generar redirecciones del gasto público hacia los municipios
+28
+
+dependiendo de la información de pobreza que tenga el gobierno federal.
+
+Tabla 9. Regresiones de incidencia de pobreza de capacidades a nivel nacional
+
+PD 2000-2005
+
+PD 2005-2010
+
+MCG 20050-2005
+
+MCG 2005-2010
+
+constante
+
+(I) 5.956∗∗
+
+(II) 6.091∗∗
+
+(III) 3.0580∗∗
+
+(IV) 3.041∗∗
+
+(V) 5.779∗∗
+
+(VI) 4.7901∗∗
+
+(VII) 4.716∗∗
+
+(VIII) 3.489∗∗
+
+Proxy prim.
+
+(.2372) -.02508∗∗
+
+(.2095) -.01542∗∗
+
+(.3334) .02616
+
+(.4432) .02618
+
+(.1009) -.02249∗∗
+
+(.1174) -.03320∗∗
+
+(.1160) -.01622∗
+
+(.1176) -.00577
+
+Secundario
+
+(.0065) -.01977
+
+(.0056) -.00343∗∗
+
+(.0172) -.00267
+
+(.0210) -.00305
+
+(.0057) -.06034∗∗
+
+(.0057) -.05115∗∗
+
+(.0081) -.07393∗∗
+
+(.0069) -.07015∗∗
+
+Terciario
+
+(.0136) -.10523∗∗
+
+(.0115) -.09381∗∗
+
+(.0085) .03790∗
+
+(.0085) .03705∗
+
+(.0067) -.17488∗∗
+
+(.0062) -.18162∗∗
+
+(.0058) -.16528∗∗
+
+(.0051) -.17579∗∗
+
+Subsidios
+
+(.0230) -.02483∗
+
+(.0239)
+
+(.0181) -.00169
+
+(.0176)
+
+(.0106) -.00642
+
+(.0103)
+
+(.0091) -.02185∗∗
+
+(.0085)
+
+Oportunidades
+
+(.0111)
+
+-.05556∗∗
+
+(.0078)
+
+.00071
+
+(.0072)
+
+.11645∗∗
+
+(.0060)
+
+.20101∗∗
+
+Inv. Pública
+
+-.05329∗∗
+
+(.0113) -.05030∗∗
+
+-.00337
+
+(.0183) -.00341
+
+-.00460
+
+(.0090) -.04819∗∗
+
+.07185∗∗
+
+(.0100) -.06024∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.0061) 0.1261 0.2865 0.2607
+
+(.0057) 0.1758 0.1034 0.1175
+
+(.0095) 0.0055 0.2794 0.2219
+
+(.0090) 0.0054 0.2724 0.2189
+
+(.0048) 0.0729 0.3938 0.3495
+
+(.0050) 0.0241 0.5189 0.4762
+
+(.0073) 0.0017 0.4848 0.4120
+
+(.0080) 0.0014 0.6155 0.5342
+
+N
+
+3295
+
+3224
+
+3970
+
+4034
+
+3295
+
+3224
+
+3970
+
+4034
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+De acuerdo con las tablas 9 y 10, como en el caso del modelo A, el B también muestra coeﬁcientes menores para todos los sectores económicos a medida que la línea de pobreza aumenta. El sector terciario permanece consistentemente pro pobre para el periodo antes de la crisis. El gasto público también parece ser consistentemente pro-pobre para las dos primeras líneas, mientras que los resultados no son robustos para el caso de la pobreza patrimonial.
+
+29
+
+Tabla 10. Regresiones de incidencia de pobreza patrimonial a nivel nacional
+
+PD 2000-2005
+
+PD 2005-2010
+
+MCG 20050-2005
+
+MCG 2005-2010
+
+constante
+
+(I) 5.031∗∗
+
+(II) 4.933∗∗
+
+(III) 3.938∗∗
+
+(IV) 3.648∗∗
+
+(V) 5.144∗∗
+
+(VI) 4.508∗∗
+
+(VII) 4.716∗∗
+
+(VIII) 3.997∗∗
+
+Proxy prim.
+
+(.1533) -.00094
+
+(.1360) -.00123∗∗
+
+(.2130) -.01852
+
+(.2749) -.00895
+
+(.0664) -.01004∗∗
+
+(.0760) -.02646∗∗
+
+(.0724) -.01944∗∗
+
+(.0761) -.01232
+
+Secundario
+
+(.0041) -.01554
+
+(.0035) .00115∗∗
+
+(.0110) -.00155
+
+(.0128) -.00277
+
+(.0037) -.03508∗∗
+
+(.0035) -.05115∗∗
+
+(.0052) -.04023∗∗
+
+(.0046) -.03722∗∗
+
+Terciario
+
+(.0103) -.03844∗∗
+
+(.0072) -.04400∗∗
+
+(.0065) .01953∗
+
+(.0065) .01543
+
+(.0047) -.09743∗∗
+
+(.0043) -.10134∗∗
+
+(.0039) -.09621∗∗
+
+(.0034) -.10140∗∗
+
+Subsidios
+
+(.0140) -.01002
+
+(.0150)
+
+(.0116) (.0112) -.00141
+
+(.0069) -.00222
+
+(.0068)
+
+(.0057) -.01614∗∗
+
+(.0054)
+
+Oportunidades
+
+(.0069)
+
+-.00642
+
+(.0047)
+
+.02071
+
+(.0045)
+
+.07868∗∗
+
+(.0037)
+
+.12847∗∗
+
+Inv. Pública
+
+-.02524∗∗
+
+(.0075) -.02519∗∗
+
+.00935
+
+(.0115) .00490
+
+.00576
+
+(.0058) -.02478∗∗
+
+.04959∗∗
+
+(.0068) -.03921∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.0036) 0.0509 0.2273 0.1937
+
+(.0033) 0.1758 0.1034 0.1175
+
+(.0061) (.0056) 0.0085 0.0116 0.0804 0.0017 0.0592 0.0000
+
+(.0029) 0.0167 0.3376 0.2859
+
+(.0029) 0.0112 0.4602 0.4231
+
+(.0044) 0.0000 0.4309 0.3595
+
+(.0053) 0.0020 0.5621 0.4830
+
+N
+
+3295
+
+3224
+
+3970 4034
+
+3295
+
+3224
+
+3970
+
+4034
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Es importante señalar que en las tablas 8, 9 y 10, los coeﬁcientes por sector con estimaciones de MCG para ambos periodos son todos negativos y varios de ellos signiﬁcativos, lo que es consistente con las medidas de primeras diferencias para el primer periodo. Esta información puede indicar que los coeﬁcientes en primeras diferencias para el segundo periodo no pudieron ser correctamente identiﬁcados por la baja variación longitudinal.
+
+6.3. Estratiﬁcación regional y por grado de marginación
+Para poder corregir por heteroscedasticidad y poder contestar con las preguntas de investigación planteadas, se realizarán dos aproximaciones distintas para reducir la alta heterogeneidad de los municipios. Primero, se agruparán a los municipios en cinco categorías utilizando como criterio
+30
+
+el índice de marginación de 2010 hecho por el Consejo Nacional de Población (CONAPO). Este indicador esta construido utilizando variables importantes del nivel de vida de los hogares de cada municipio y la provisión de bienes y servicios públicos. Esta estrategia es útil para controlar por otras variables no observables que pudieran sesgar las estimaciones. Las variables que se miden para marginación a nivel municipal son:
+Porcentaje de personas mayores de 15 años con analfabetismo Porcentaje de personas mayores de 15 años sin primaria terminada Porcentaje de hogares sin drenaje y baño dentro de la vivienda Porcentaje de hogares sin electricidad dentro de la vivienda Porcentaje de hogares sin agua corriente dentro de la vivienda Porcentaje de hogares con hacinamiento Porcentaje de hogares con piso de tierra Porcentaje de la población dentro de la municipalidad que vive en localidades de menos de 5000 habitantes Porcentaje de la población con un ingreso menor a dos salarios mínimos
+Existen cinco grados de marginación: muy alto, alto, medio, bajo y muy bajo. Agrupar bajo este criterio permite comparar municipalidades con un nivel de marginación similar, y por tanto reducir las variables omitidas y la varianza de la muestra.
+El segundo enfoque es construir grupos por regiones geográﬁcas de entidades federativas, utilizando los criterios desarollados en Rey y Sartré-Gutierrez (2010). Con ello, se podrá determinar si la geografía juega un papel signiﬁcativo en la elasticidad crecimiento de la pobreza. El criterio usado está basado parcialmente en los grupos hechos por INEGI (Rey & Sartré-Gutierrez, 2010:289), y separa las regiones de la siguiente manera:
+Región 1 (Noroeste): Baja California, Baja California Sur, Sonora, Chihuahua, Sinaloa and Durango Región 2 (Noreste): Coahuila, Nuevo León and Tamaulipas Región 3 (Occidente-Bajío): Jalisco, Zacatecas, Nayarit, Colima, San Luis Potosí, Aguascalientes, Michoacán and Guanajuato Región 4 (Centro): Mexico City, State of Mexico, Morelos, Querétaro, Puebla, Hidalgo and Tlaxcala
+31
+
+Región 5 (Sur): Veracruz, Chiapas, Oaxaca, Guerrero, Tabasco, Yucatán, Quintana Roo and Campeche
+En esta sección se realizarán las estimaciones utilizando una modiﬁcación del modelo B, dado el alto grado de colinealidad entre la inversión pública, Oportunidades y los subsidios y transferencias. Es por ello que el modelo usará únicamente la inversión pública y el coeﬁciente de Gini para tomar en cuenta los efectos redistributivos reﬂejados en Oportunidades y otros subsidios. Asimismo, sólo se realizarán las estimaciones para la pobreza alimentaria, al ser más sensible al crecimiento sectorial
+
+Tabla 11. Regresiones de incidencia de pobreza alimentaria, 2000-2005: por grado de marginación
+
+Muy alto
+
+Alto
+
+Medio
+
+Bajo
+
+Muy bajo
+
+Constante
+
+PD 6.564∗∗
+
+MCG 5.088∗∗
+
+PD 4.745∗∗
+
+MCG 4.341∗∗
+
+PD 4.621∗∗
+
+MCG 4.138∗∗
+
+PD .1738
+
+MCG .8480∗∗
+
+PD 5.521∗∗
+
+MCG 1.748∗∗
+
+Proxy prim.
+
+(.3374) -.00922
+
+(.0932) -.0387∗∗
+
+(.6689) -.03930
+
+(.2740) -.0393∗
+
+(.3405) -.03028∗∗
+
+(.1589) -.07147∗∗
+
+(.9428) .07475∗
+
+(.3832) -.02259
+
+(1.666) .05200
+
+(.4848) .03407∗
+
+Secundario
+
+(.0113) -.02104
+
+(.0060) -.01409∗
+
+(.0228) -.06992∗
+
+(.0157) -.03232∗∗
+
+(.0097) .00529
+
+(.0085) -.01902∗
+
+(.0280) -.00059
+
+(.0167) .00679
+
+(.0354) -.0105
+
+(.0155) .02179
+
+Terciario
+
+(.0183) -.14433∗∗
+
+(.0065) -.06909∗∗
+
+(.0324) -.06077
+
+(.0119) -.05399∗∗
+
+(.0176) -.10974∗∗
+
+(.0079) -.08456∗∗
+
+(.0469) .04503
+
+(.0180) -.00263
+
+(.0521) -.41807∗∗
+
+(.0231) -.10129∗
+
+Desigualdad
+
+(.0446) -1.0635∗∗
+
+(.0129) -.31887
+
+(.0619) 2.787∗
+
+(.0155) 1.467∗∗
+
+(.0279) 2.176∗∗
+
+(.0125) 1.826∗∗
+
+(.0686) 4.202∗
+
+(.0308) 2.631∗∗
+
+(.1608) 3.156∗∗
+
+(.0421) 2.301∗∗
+
+Inv. Pública
+
+(.3543) -.05816∗∗
+
+(.1719) .00035
+
+(1.130) -.05931∗∗
+
+(.4967) -.01198
+
+(.2997) -.06773∗∗
+
+(.1970) -.00496
+
+(.7562) -.02322
+
+(.3949) .05684∗
+
+(.7862) -.04900
+
+(.4859) -.00029
+
+R2(dentro) R2(entre) R2(general)
+
+(.0129) 0.4049 0.1348 0.1881
+
+(.0071) 0.2317 0.2572 0.2635
+
+(.01261) 0.3320 0.0584 0.1154
+
+(.0064) 0.3019 0.0946 0.1288
+
+(.0091) 0.3443 0.0205 0.0700
+
+(.0068) 0.2758 0.1300 0.1594
+
+(.0201) 0.2426 0.0027 0.0031
+
+(.0140) 0.1701 0.0461 0.0666
+
+(.0412) 0.2112 0.0484 0.0378
+
+(.0192) 0.1738 0.0595 0.0597
+
+N
+
+396
+
+396
+
+475
+
+475
+
+1442
+
+1442
+
+650
+
+650
+
+391
+
+391
+
+Test de Hausman
+
+Rechaza Ho
+
+Rechaza Ho
+
+Rechaza Ho
+
+Rechaza Ho
+
+Rechaza Ho
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Los resultados de la tabla 11 muestran las estimaciones usando el criterio de marginación para el periodo 2000-2005. Por una parte, el sector terciario es consistentemente pro pobre independientemente del método usado y para casi todos los grados de marginación, a excepción del bajo, donde
+32
+
+el coeﬁciente no es signiﬁcativo. La magnitud del coeﬁciente varía mucho dependiendo del grupo. En el modelo de primeras diferencias, todo lo demás constante, un aumento de 1 % del ingreso per cápita terciario está relacionado con una disminución de la incidencia de la pobreza de 0.42 % para municipios con muy baja marginación, 0.11 % para municipios de media marginación, y 0.14 % para municipios de muy alta marginación.
+El sector primario es consistentemente pro pobre sólo para el caso del grado medio de marginación. Para estos municipios, un aumento de 1 % en el ingreso per cápita de este sector está relacionado con una dismunición en la pobreza de 0.03 % para el caso de primeras diferencias y de 0.07 % para MCG. El sector secundario es pro pobre sólo para municipios con alto grado de marginación. Por otra parte, como en el modelo A, una caída en los niveles de desigualdad esta fuertemente asociada una reducción de la incidencia de pobreza, excepto en el caso de municipio con muy alta marginación. La magnitud también es variable dependiendo del grado de marginación y del modelo a estimar.
+Utilizando el modelo de primeras diferencias y todo lo demás constante, un aumento de 1 punto del coeﬁciente de Gini está relacionado con una disminución de la pobreza en 1.06 % para municipios con alta marginación, con un aumento de la pobreza en 2.17 % para municipios con media marginación, y con un aumento de la misma de 3.15 % para municipios con marginación muy baja. Esto es consistente con la teoría de la U invertida de Kuznets, en donde la desigualdad primero tendría una relación positiva con el desarrollo de una economía capitalista y luego, después de un umbral, una relación negativa. Finalmente, un aumento de la inversión pública está asociado a una reducción en la pobreza para municipios con un grado muy alto, alto y medio de marginación.
+Los resultados de la tabla 12 muestran el modelo agrupando los municipios por grado de marginación para el periodo 2005-2010. La baja variación longitudinal y por ende la diﬁcultad para estimar coeﬁcientes signiﬁcativos mediante el método de primeras diferencias permanece como en el caso de los modelos A y B, sin importar el grado de marginación. Se mantienen las diferencias en el signo y grado de signiﬁcancia entre modelos. Para el modelo MCG, todos los coeﬁcientes del ingreso sectorial son pro pobres para los grados de marginación muy alto, alto y medio, siendo el terciario el más pro pobre en magnitud. En términos de desigualdad, se encontró una relación positiva y signiﬁcativa con la reducción de pobreza para municipios con alta, media y baja marginación, y de nuevo coeﬁcientes negativos para municipios con muy alta marginación.
+33
+
+Tabla 12. Regresiones de incidencia de pobreza alimentaria, 2005-2010: por grado de marginación
+
+Muy alto
+
+Alto
+
+Medio
+
+Bajo
+
+Muy bajo
+
+Constante
+
+PD 4.025∗∗
+
+MCG 4.195∗∗
+
+PD 3.537∗∗
+
+MCG 3.738∗∗
+
+PD 2.094∗∗
+
+MCG 3.381∗∗
+
+PD 1.313
+
+MCG 1.080∗∗
+
+PD -1.695
+
+MCG 1.334∗∗
+
+Proxy prim.
+
+(.3007) .00928
+
+(.1109) -.02507∗∗
+
+(.5698) -.00903
+
+(.1771) -.03858∗∗
+
+(.3467) .00836
+
+(.1467) -.06889∗∗
+
+(.9807) -.00678
+
+(.4239) -.04280∗
+
+(2.096) .01847
+
+(.5105) .03964∗
+
+Secundario
+
+(.0239) .00743
+
+(.0079) -.02275∗
+
+(.0367) -.00491
+
+(.0107) -.0389∗∗
+
+(.0219) -.00706
+
+(.0090) -.03569∗∗
+
+(.0468) -.03579
+
+(.0176) .00435
+
+(.0565) (.0156) .06629 -.00046
+
+Terciario
+
+(.0065) .02009
+
+(.0066) -.05532∗∗
+
+(.0142) .00756
+
+(.0093) -.04282∗∗
+
+(.0109) .01014
+
+(.0066) -.07070∗∗
+
+(.0385) .04364
+
+(.0144) .00413
+
+(.0395) .22678
+
+(.0187) .04129
+
+Desigualdad
+
+(.0169) -.03726
+
+(.0092) -.10941
+
+(.0395) .51764
+
+(.0123) .67117∗∗
+
+(.0196) 2.229∗∗
+
+(.0107) 1.657∗∗
+
+(.0690) 3.617∗∗
+
+(.0281) 1.053
+
+(.1599) (.0359) 2.012 -.70955
+
+Inv. Pública
+
+(.1575) -.01131
+
+(.1102) .03761∗∗
+
+(.4164) .00469
+
+(.2203) .04009∗∗
+
+(.2467) .00954
+
+(.1603) .0413∗∗
+
+(1.090) -.01911
+
+(.6997) .08508∗∗
+
+(1.290) -.00250
+
+(.7698) .02487
+
+R2(dentro) R2(entre) R2(general)
+
+(.0090) 0.0161 0.3746 0.3040
+
+(.0075) 0.0141 0.3872 0.3144
+
+(.0162) 0.0095 0.0135 0.0167
+
+(.0077) 0.0023 0.1806 0.1341
+
+(.0127) 0.1357 0.0021 0.0059
+
+(.0081) 0.0527 0.1571 0.1555
+
+(.0284) 0.0609 0.0291 0.0014
+
+(.0182) 0.0005 0.1199 0.0866
+
+(.0421) 0.0647 0.0010 0.0020
+
+(.0185) 0.0094 0.0644 0.0378
+
+N
+
+557
+
+557
+
+630
+
+630
+
+1641
+
+1641
+
+739
+
+739
+
+470
+
+470
+
+Test de Hausman
+
+Rechaza Ho
+
+Rechaza Ho
+
+Rechaza Ho
+
+Rechaza Ho
+
+Rechaza Ho
+
+Nota: Estimaciones con errores estándar robustos, para primeras diferencias (PD) agrupados por municipalidad.
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Por otro lado, las tablas 13 a 16 muestran los resultados de los modelos agrupando por el criterio de zonas geográﬁcas. Las tablas 13 y 14 contienen los resultados utilizando primeras diferencias para los periodos 2000-2005 y 2005-2010, respectivamente. Las tablas 15 y 16 contienen los resultados utilizando MCG para los periodos 2000-2005 y 2005-2010, respectivamente. En cada columna se encuentran las regiones anteriormente mencionadas.
+
+34
+
+Tabla 13. Regresiones de incidencia de pobreza alimentaria: por región geográﬁca
+
+Primeras diferencias: 2000-2005
+
+Constante
+
+Noroeste 2.628∗
+
+Noreste -.3112
+
+Occidente 3.489∗∗
+
+Centro 5.784∗∗
+
+Sur 3.801∗∗
+
+Proxy prim.
+
+(1.323) .01287
+
+(1.176) .000513
+
+(.5006) -.06824∗∗
+
+(.4625) -.14422∗∗
+
+(.4763) -.05458∗∗
+
+(.0209) (.0204) (.0170) (.0375)
+
+(.0125)
+
+Secundario -.01488 .00490 -.00373 -.03423
+
+-.00127
+
+Terciario
+
+(.0380) -.07124
+
+(.0781) .30431∗∗
+
+(.0192) .01703
+
+(.0261) -.10322∗
+
+(.0209) -.09587∗
+
+Desigualdad
+
+(.1071) 2.444∗∗
+
+(.1085) -.35540
+
+(.0416) 1.824∗∗
+
+(.0411) 3.385∗∗
+
+(.0445) 3.868∗∗
+
+Inv. Público
+
+(.7668) -.03415
+
+(1.276) .00508
+
+(.3240) -.03547
+
+(.6234) -.10440∗∗
+
+(.4982) -.04146∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.0375) 0.1616 0.1192 0.1128
+
+(.0462) 0.0973 0.3970 0.2858
+
+(.0200) 0.2078 0.0188 0.0405
+
+(.0159) 0.4605 0.0630 0.1151
+
+(.0073) 0.3732 0.1179 0.1657
+
+N
+
+388
+
+187
+
+823
+
+913
+
+1043
+
+Nota: errores estándar robustos, agrupado por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Los resultados presentados en las tablas 13 y 14 conﬁrman el patrón observado a nivel nacional de los modelos A y B. De acuerdo a la tabla 13, para el periodo 2000-2005, el crecimiento del sector primario fue pro-pobre para las regiones central, occidente y sur. Para los municipios de las regiones occidente y sur, un aumento del 1 % en el ingreso per cápita primario estuvo relacionado con una reducción del 0.06 % y 0.05 %, respectivamente. Mientras, para los municipios del centro, un aumento de la misma magnitud estuvo relacionado con una disminución en la pobreza de 0.14 %.
+El sector terciario fue anti pobre y signiﬁcativo para el noreste y pro pobre y signiﬁcativo para las regiones sur y centro. Por otro lado, la relación entre desigualdad y pobreza es muy variable entre regiones. Para la región noreste, la relación entre desigualdad y pobreza es inversa: un aumento de 1 punto del coeﬁciente de Gini estuvo relacionado con una disminución de la pobreza de 0.35 %. Al mismo tiempo, un aumento de la misma magnitud en la desigualdad estuvo relacionado con un aumento de la pobreza de 2.44 % y 1.82 % para las regiones noroeste y occidente, respectivamente. El caso extremo fueron los municipios de las zonas centro y sur: un aumento de 1 punto del coeﬁ-
+
+35
+
+ciente de Gini estuvo vinculado con una reducción en la pobreza de 3.38 % en el centro y 3.86 % en el sur. Finalmente, la inversión pública fue pro pobre y signiﬁcativa para las regiones sur y centro.
+Durante el periodo de crisis, la tabla 14 muestra valores positivos en la mayoría de los coeﬁcientes de ingreso per cápita sectorial para todas las regiones del país, por lo que se mantiene el patrón de crecimiento anti pobre del periodo. El ingreso primario es signiﬁcativo y anti pobre para la región occidente y el terciario lo es también para el noreste del país. El signo y signiﬁcancia del coeﬁciente de desigualdad se mantiene igual en este periodo, siendo el noreste del país la zona con un coeﬁciente más alto en esta variable. Para este periodo, la región noreste, que en el periodo anterior tenía un coeﬁciente negativo, es ahora quien tiene un coeﬁciente positivo, signiﬁcativo y de mayor magnitud. Un aumento de 1 punto en el coeﬁciente de Gini estuvo relacionado con un aumento de 3.76 % en la pobreza, mientras que para los municipios de la región centro y sur un aumento de la misma magnitud está vinculado con una reducción de la misma en sólo 1.38 % y 0.67 %, respectivamente. En este periodo, la inversión pública no es signiﬁcativa para ninguna de las regiones.
+
+Tabla 14. Regresiones de incidencia de pobreza alimentaria: por región geográﬁca
+
+Primeras diferenciasl: 2005-2010
+
+Constante
+
+Noroeste 1.697
+
+Noreste -.9604
+
+Occidente 1.651∗
+
+Centro 1.552∗
+
+Sur 3.407∗∗
+
+Proxy prim.
+
+(2.368) -.13462
+
+(1.040) .02322
+
+(.6774) .10077∗
+
+(.7596) .01265
+
+(.4411) -.00719
+
+(.1543) (.0406) (.0405) (.0386)
+
+(.0375)
+
+Secundario -.01329 .03869 .00306 .00689
+
+.00510
+
+Terciario
+
+(.0281) .18529
+
+(.0481) .20357∗∗
+
+(.0177) .01677
+
+(.0146) .02435
+
+(.0130) .00887
+
+Desigualdad
+
+(.1002) 2.046
+
+(.0552) 3.768∗∗
+
+(.0507) 1.674∗∗
+
+(.0377) 1.387∗∗
+
+(.0232 ) .67932∗
+
+(1.168) (.8092) (.4865) (.5113)
+
+(.2774)
+
+Inv. Público -.02041 -.0337 -.01976 .0428
+
+-.01029
+
+R2(dentro) R2(entre) R2(general)
+
+(.0643) 0.0414 0.0470 0.0255
+
+(.0548) 0.1623 0.3220 0.1856
+
+(.0203) 0.1490 0.0794 0.0163
+
+(.0280) 0.0372 0.1632 0.1238
+
+(.0137) 0.0184 0.3787 0.2580
+
+N
+
+410
+
+247
+
+861
+
+944
+
+1575
+
+Nota: errores estándar robustos, agrupado por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+36
+
+Ahora se estimará el modelo usando MCG, para revisar si persisten las inconsistencias entre ambos modelos agrupando por regiones.
+
+Tabla 15. Regresiones de incidencia de pobreza alimentaria: por región geográﬁca
+
+MCG: 2000-2005
+
+Constante
+
+Noroeste 3.508∗∗
+
+Noreste 2.779∗∗
+
+Occidente 4.938∗∗
+
+Centro 5.669∗∗
+
+Sur 4.808∗∗
+
+Proxy prim.
+
+(.5712) -.00863
+
+(.7911) .04566∗∗
+
+(.3162) -.03697∗∗
+
+(.2648) .00729
+
+(.1249) -.04354∗∗
+
+Secundario
+
+(.0192) -.04704
+
+(.0167) -.09608∗∗
+
+(.0124) -.05521∗∗
+
+(.0154) -.08763∗∗
+
+(.0093) -.07639∗∗
+
+Terciario
+
+(.0289) -.23226∗∗
+
+(.0211) -.2307∗∗
+
+(.0106) -.190417∗∗
+
+(.0118) -.17525 ∗∗
+
+(.0099) -.18341∗∗
+
+Desigualdad
+
+(.0534) 2.155∗∗
+
+(.0576) 2.242∗
+
+(.0213) 1.226∗∗
+
+(.0199) 2.388∗∗
+
+(.0187) 2.616∗∗
+
+Inv pública
+
+(.5828) .03804
+
+(.9541) .08337∗
+
+(.2681) .00973
+
+(.4144) -.08863∗∗
+
+(.2653) -.00174
+
+R2(dentro) R2(entre) R2(general)
+
+(.0223) 0.1304 0.2398 0.2237
+
+(.0318) 0.0201 0.5228 0.3971
+
+(.0157) 0.1372 0.4733 0.4219
+
+(.0104) 0.4014 0.4079 0.3938
+
+(.0058) 0.2828 0.4581 0.4485
+
+N
+
+388
+
+187
+
+823
+
+913
+
+1043
+
+Nota: Calculado con errores estándar robustos
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Las tablas 15 y 16 muestran resultados similares al modelo de primeras diferencias para el periodo 2000-2005 y, de nueva cuenta, resultados contradictorios para el periodo 2005-2010. Aumentos en la desigualdad permanecen directamente relacionados con aumentos en la pobreza para ambos periodos, con excepción de las regiones sur y centro en 2005-2010, lo que es consistente con primeras diferencias.
+
+37
+
+Tabla 16. Regresiones de indicencia de pobreza alimentaria: por región geográﬁca
+
+MCG: 2005-2010
+
+Constante
+
+Noroeste 2.370∗∗
+
+Noreste 1.377∗
+
+Occidente 3.868∗∗
+
+Centro 3.520∗∗
+
+Sur 4.491∗∗
+
+Proxy prim.
+
+(.8149) -.04243
+
+(.7222) .07745∗∗
+
+(.3733) -.00067
+
+(.3675) .07534∗∗
+
+(.1421) .01228
+
+Secundario
+
+(.0557) -.08705∗∗
+
+(.0236) -.05469
+
+(.0170) -.05534∗∗
+
+(.0150) -.08574∗∗
+
+(.0139) -.08255∗∗
+
+Terciario
+
+(.0231) -.18200∗∗
+
+(.0232) -.21713∗∗
+
+(.0122) -.22212∗∗
+
+(.0112) -.13238∗∗
+
+(.0087) -.1518∗∗
+
+Desigualdad
+
+(.0424) 2.789∗∗
+
+(.0615) 1.715∗
+
+(.0252) 1.895∗∗
+
+(.0172) -.54040
+
+(.0120) -.35689
+
+Inv. Público
+
+(.7331) .10821∗∗
+
+(.8596) .1364∗∗
+
+(.2852) .05139∗∗
+
+(.3273) .06088∗∗
+
+(.2023) .05115∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.0225) 0.0008 0.3183 0.2250
+
+(.0286) 0.0005 0.4906 0.3730
+
+(.0185) 0.0526 0.4404 0.3739
+
+(.0162) 0.0001 0.4687 0.4102
+
+(.0084) 0.0010 0.4927 0.4493
+
+N
+
+408
+
+247
+
+861
+
+944
+
+1575
+
+Nota: Errores estándar robustos, agrupado por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+7. Conclusiones
+Con los resultados obtenidos se pudieron contestar muchas de las preguntas de investigación planteadas. De la pregunta principal se puede concluir que, antes de la crisis (2000-2005) el crecimiento económico era pro pobre, pero que durante la crisis (2005-2010) no se pudo obtener evidencia concluyente a nivel municipal de que el crecimiento haya sido pro-pobre o no, dada la baja variación longitudinal de los datos. Para el caso de la desigualdad, los resultados muestran relación robusta, positiva y signiﬁcativa, entre desigualdad y pobreza. Sin embargo, no se cuenta con información para hablar de efectos sino de relaciones, ya que puede existir causalidad inversa en muchos de los modelos estimados, especialmente los que controlan por gasto público. Se propone, para futuras investigaciones en este campo, utilizar algún indicador de capital humano como la escolaridad promedio en el municipio para poder determinar si es en este canal por el cual puede afectar la
+38
+
+pobreza al crecimiento económico, y con ello poder probar empíricamente hipótesis alternativas en este sentido.
+A nivel nacional, y para el periodo 2000-2005, el sector económico más pro-pobre fue el terciario, seguido del primario. El sector secundario resultó no signiﬁcativo para la reducción de la pobreza en el modelo de primeras diferencias y pro pobre en la estimación de MCG. Para el periodo de la crisis (2005-2010), el sector terciario paso a ser anti pobre en el modelo de primeras diferencias. Los resultados para antes de la crisis son similares y consistentes con la evidencia mostrada para Brazil en (Ferreira, F., Leite, P., y Ravallion, M., 2007). Esto puede deberse a que la mayor parte de la población se concentra ya en localidades urbanas, un cambio que en México comenzó desde hace más de medio siglo y que en el caso de China e India pudo haber iniciado tiempo después.
+Otra pregunta importante surgida de los hallazgos es en qué actividades se encuentra la población pobre, ya que el sector terciario es muy heterogéneo; una posible hipótesis es que posiblemente el comercio a pequeña escala y actividades con bajo valor agregado y escaso capital puedan ser las elegidas por este segmento de la población. Es importante destacar que los censos económicos no miden la actividad del sector informal, que puede tener a un segmento importante de la población ocupada en servicios con bajo valor agregado e intensivos en capital. Si esto es así, entonces se podría estar subestimando el efecto del sector terciario en la pobreza al no incluir a un importante segmento de la población cuyos ingresos por actividad económica no se capturan.
+La relación entre el nivel de desigualdad y la reducción de la pobreza es robusta a nivel nacional y regional, para el periodo antes y después de la crisis usando primeras diferencias y MCG. Los resultados son consistentes con lo encontrado por Szekely (2005) para el caso de México en su serie de tiempo, y es consistente con los modelos propuestos por Galor y Zeira (1993), Alesina y Rodrik (1994) y Persson y Tabellini (1994) para municipios con un grado de marginación relativamente bajo. Parece ser que la desigualdad no actúa solamente a través del crecimiento económico sino que tiene un canal independiente y signiﬁcativo. Si bien la relación es robusta, no es posible asegurar con la evidencia empírica presentada causalidad debido a que no se pudieron encontrar instrumentos viables a nivel municipal para instrumentar la desigualdad y eliminar el problema de endogeneidad por simultaneidad. Finalmente, desde la perspectiva teórica del modelo de descomposición de Bourguignon, si bien no es posible separar con estas regresiones los dos efectos propuestos por el autor, pareciera existir evidencia de que el efecto distributivo es mucho más consistente que el efecto crecimiento incluso durante las crisis.
+Agrupando por grado de marginación entre municipios se trató de controlar el sesgo por variables omitidas relevantes. La relación entre desigualdad y pobreza desaparece para los municipios con muuy alta marginación, sugiriendo que la relación puede ser no lineal, tal como lo plantea la idea de
+39
+
+la U invertida de Kuznets, ya que las localidades con muy alta marginación suelen ser muy pobres y rurales. Para el resto de las municipalidades, la relación permanece positiva y signiﬁcativa. Para el periodo de 2000 a 2005, el sector primario fue pro pobre para los municipios con grado de marginación alto, muy alto y medio. Este resultado es muy intuitivo debido al hecho de que las localidades rurales suelen estár en sitios con mayor marginación. Por otro lado, el sector terciario es pro pobre para municipios con marginación muy alta, media y muy baja. Esta relación que pareciera inconsistente puede deberse a la heterogeneidad de este sector productivo, que aglutina actividades con muy diverso valor agregado.
+La relación entre desigualdad y pobreza se sostiene en el modelo de primeras diferencias para todas las regiones geográﬁcas a excepción del noreste en el periodo 2000-2005. Para el periodo anterior a la crisis, los resultados del modelo de primeras diferencias muestran que el sector terciario fue pro pobre para el noreste, centro y sur, mientras que el sector primario lo fue para el occidente, centro y sur.
+Finalmente, es importante resaltar que la relación entre cambios en inversión pública y pobreza es negativa y signiﬁcativa en la mayoría de los casos a nivel nacional, mostrando consistencia antes y después de la crisis, tanto en el modelo de primeras diferencias como en el de MCG. Para el caso de los subsidios y transferencias, la relación es más ambigua. Debido al diseño de los programas sociales focalizados y a que el gobierno reaccionó durante la crisis aumentando el gasto social, no es posible determinar causalidad de estas relaciones. Aún asi, pareciera que la relación entre el gasto público y la incidencia de pobreza es similar a la presentada en el caso brasileño de Ferreira, F., Leite, P., y Ravallion, M. (2007).
+8. Referencias
+Acemoglu, D., & Johnson, S. (2005). Unbounding institutions. Journal of Political Economy, 949995.
+Aghion, P., & Bolton, P. (1997). A Theory of Trickle-Down Growth and Development. The Review of Economic Studies Vol. 64 No. 2, 151-172.
+Alesina, A., & Rodrik, D. (1994). Distributive Politics and Economic Growth. The Quarterly Journal of Economics Vol 109 No 2, 465-490.
+Araar, A., Duclos, J.-Y., Audet, M., & Makdissi, P. (2007). Testing for Pro-poorness of Growth, with an Application to Mexico. Cahiers de recherche 0709, CIRPEE.
+40
+
+Baltagi, B. (1995). Econometric Analysis of Panel Data. West Sussex: John Wiley and Sons.
+Bourguignon, F. (2003). The Growth Elasticity of Poverty Reduction: Explaining Heterogeneity across countries and time periods. En T. Eicher, & S. Turnovsky, Inequality and Growth. Theory and Policy Implications. Cambridge: The MIT Press.
+Bourguignon, F. (2003). The Poverty-Growth-Inequality Triangle. The World Bank.
+Cameron, C., & Trivedi, P. (2009). Microeconometrics using Stata. Texas: Stata Press.
+Campos-Vázquez, R., & Vélez-Grajales, R. (2012). Did Population Well-being Improve During Porﬁrian Mexico? A Regional Analysis using a Quasi-Human Development Index. Journal of Human Development and Capabilities Vol. 13, Issue 4, 597-620.
+Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL). (Abril 20 2013). Índice de Rezago Social 2010 a nivel municipal y por localidad. Obtenido de
+www.coneval.gob.mx/Medicion/Paginas/Índice-de-Rezago-social-2010.aspx
+Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL). (Marzo 24 2013). Evolución de las dimensiones de la pobreza 1990-2010. Obtenido de
+http://www.coneval.gob.mx/Medicion/Paginas/Evolucion-de-las-dimensiones-de-la-pobreza-19902010-.aspx
+Consejo Nacional de Población (CONAPO). (Mayo 20 2013). Índice de Marginación por Entidad Federativa y Municipio 2010. Obtenido de
+http://www.conapo.gob.mx/es/CONAPO/Indices_de_Marginacion_2010_por_entidad_federativa_y_municipio
+Datt, G., & Ravallion, M. (2002). Is India’s Economic Growth Leaving the Poor Behind? The Journal of Economic Perspectives Vol 16 No 3, 89-108.
+Datt, G., & Ravallion, M. (2011). Has India’s Economic Growth Become More Pro-Poor in the Wake of Economic Reforms. The World Bank Economic Review, 1-33.
+Dhanani, S., & Islam, I. (2002). Poverty, Vulnerability and Social Protection in a Period of Crisis; the case of Indonesia. World Development Vol 30 No. 7, 1211-1231.
+Elbers, C., Lanjow, J., & Lanjow, P. (2003). Micro-Level Estimation of Poverty and Inequality. Econometrica Vol 72 No. 1, 355-364.
+41
+
+Ferreira, F., Leite, P., & Ravallion, M. (2007). Poverty Reduction without Economic Growth? Explaining Brazil’s poverty dynamics. The World Bank Policy Research Working Paper 4431.
+Galor, O., & Zeira, J. (1993). Distribution and Macroeconomics. The Review of Economic Studies Vol 60 No 1, 35-52.
+Instituto Nacional de Estadística y Geografía (INEGI). (Marzo 15 2013). Banco de Información Económica. Obtained from
+http://www.inegi.org.mx/sistemas/bie/
+Instituto Nacional de Estadística y Geografía (INEGI). (Febrero 25 2013). Censos Económicos. Obtenido de
+http://www.inegi.org.mx/est/contenidos/Proyectos/ce/Default.aspx
+Instituto Nacional de Estadística y Geografía (INEGI). (2013). Estructura del SCIAN México.
+Instituto Nacional de Estadística y Geografía (INEGI). (Marzo 12 2013). Sistema Estatal y Municipal de Base de Datos. Obtenido de
+http://sc.inegi.org.mx/sistemas/cobdem/
+Kakwani, N. (1993). Poverty and Economic growth with Application fo Côte d’Ivore . Review of Income and Wealth, 121-139.
+Kuznets, S. (1955). Economic Growth and Income Inequality. The American Economic Review. Vol 45 No 1, 1-28
+Márquez, G. (2013). Growth and living standards: evidence from post-revolutionary Mexico. El Colegio de Mexico. Centro de Estudios Económicos.
+Persson, & Tabellini. (1994). Is Inequality harmful for growth? American Economic Review No. 84, 600-621.
+Ravallion, M. (2004). Pro-Poor Growth: A Primer. The World Bank: Policy Research Working Papers Series No. 3242.
+Ravallion, M., & Chen, S. (2001). Measuring Pro-Poor Growth. The World Bank: Policy Research Working Papers Series No. 2666.
+Ravallion, M., & Chen, S. (2007). China’s (uneven) progress against poverty. Journal of Development Economics 82, 1-42.
+42
+
+Ray, D. (1998). Development Economics. Princeton: Princeton University Press. Rey, S., & Sartré-Gutiérrez, M. (2010). Interregional Inequality Dynamics in Mexico. Spatial Economic Analysis Vol 5 No 3, 277-298. Sachs, J. (2001). Tropical Underdevelopment. NBER Working Paper 8119. Secretaría de Desarrollo Social. (Abril 20 2013). Cobertura y apoyos de los beneﬁciarios de Oportunidades y PAL. Obtenido de http://www.oportunidades.gob.mx/Portal/wb/Web/cobertura_apoyos_e_indicadores Stiglitz, J. (1969). Distribution of income and wealth ammong individuals. Econometrica, 382-397. Székely, M. (2005). Pobreza y desigualdad en México entre 1950 y 2004. El Trimestre Económico Vol. 72 No. 288(4), 913-931. The World Bank . (April 30th 2013). Data Bank. Obtenido de http://data.worldbank.org/country/mexico Virmani, A. (2008). Policy Regimes, Growth and Poverty in India: lessons for Goverment Failure and Entrepreneurial Success. Indian Council for Research on International Economic Relations. Working Paper No. 170. Zaman, K., & Khilji, B. (2013). The relationship between growth-inequality and poverty triangle and pro-poor growth policies in Pakistan: The Twin disappointments. Economic Modelling Vol 30, 375-393.
+43
+
+Apéndice A: Incidencia de pobreza estatal, 2000-2010
+
+Alimentaria
+
+Capacidades
+
+Patrimonial
+
+2000 2005 2010 2000 2005 2010 2000 2005 2010
+
+Aguascalientes
+
+11.2 14.9 13.8 16.9 23.6 21.0 37.8 51.1 45.4
+
+Baja California
+
+5.0 1.3 9.8 8.3 2.3 16.2 23.7 9.2 40.5
+
+Baja California Sur 8.4 4.7 7.8 13.1 8.0 12.8 31.9 23.5 32.3
+
+Campeche
+
+37.7 20.0 21.3 45.8 27.3 29.4 66.8 51.4 53.7
+
+Coahuila
+
+9.3 8.6 9.2 14.9 15.2 15.3 36.2 41.0 38.8
+
+Colima
+
+18.2 8.9 13.3 25.4 14.9 20.2 47.7 38.5 43.0
+
+Chiapas
+
+53.3 47.0 48.6 61.5 55.9 58.0 79.1 75.7 78.1
+
+Chihuahua
+
+9.5 8.6 13.6 13.6 13.3 20.5 30.2 34.2 44.5
+
+Distrito Federal
+
+5.8 5.4 7.7 9.9 10.3 12.6 28.0 31.8 31.7
+
+Durango
+
+20.6 24.4 17.8 27.3 33.7 25.2 48.4 59.4 49.7
+
+Guanajuato
+
+26.7 18.9 21.0 34.4 26.6 29.6 56.2 51.6 55.1
+
+Guerrero
+
+50.8 42.0 38.4 58.4 50.2 48.0 75.7 70.2 71.0
+
+Hidalgo
+
+34.6 25.7 21.3 42.3 33.0 29.3 62.1 54.2 53.1
+
+Jalisco
+
+13.8 10.9 13.4 20.0 17.2 20.2 41.3 41.6 43.2
+
+México
+
+17.6 14.3 18.2 24.8 22.4 26.3 47.7 49.9 51.2
+
+Michoacán
+
+31.6 23.3 23.1 39.9 30.8 32.0 61.6 54.5 57.7
+
+Morelos
+
+24.1 10.7 15.0 31.9 17.3 22.0 53.1 41.4 44.8
+
+Nayarit
+
+23.4 17.2 15.4 30.8 23.3 22.1 52.7 43.8 44.4
+
+Nuevo León
+
+5.9 3.6 7.8 9.9 7.2 13.3 28.0 27.5 35.8
+
+Oaxaca
+
+52.7 38.1 35.4 60.0 46.9 44.6 76.1 68.0 67.4
+
+Puebla
+
+40.3 26.7 30.0 48.5 35.3 39.4 68.0 59.0 63.6
+
+Querétaro
+
+23.4 12.5 15.2 30.1 17.9 22.1 50.4 37.7 44.5
+
+Quintana Roo
+
+23.3 11.0 19.2 30.4 16.0 27.5 52.4 36.5 52.8
+
+San Luis Potosí
+
+34.5 25.7 23.8 41.8 33.3 32.4 61.3 55.5 56.6
+
+Sinaloa
+
+17.3 13.7 12.3 23.7 20.5 19.1 44.6 44.2 43.5
+
+Sonora
+
+12.9 9.6 12.5 18.9 15.8 19.6 39.5 40.4 44.4
+
+Tabasco
+
+35.5 28.5 20.4 44.0 36.6 28.6 65.1 59.4 53.0
+
+Tamaulipas
+
+12.1 10.3 13.7 18.1 17.5 21.5 40.1 44.9 47.8
+
+Tlaxcala
+
+27.5 17.9 18.1 35.4 26.2 26.2 56.1 51.4 51.2
+
+Veracruz
+
+37.8 28.0 25.0 45.7 36.3 33.7 65.7 59.3 58.2
+
+Yucatán
+
+35.1 18.1 20.0 42.7 26.2 28.1 62.4 51.7 52.9
+
+Zacatecas
+
+28.9 20.9 18.4 36.3 29.3 26.8 60.1 53.6 56.3
+
+44
+
+Apéndice B: Correlaciones entre el ingreso en 1999, 2004 y 2009 con pobreza en 2000, 2005 y 2010
+
+2000
+
+Pob Alim 00 Pob Cap 00 Pob Patrim 00 Ing. prim 99 Ing. sec 99 Ing. terc 99 Proxy 99
+
+Pob Alim 00
+
+1
+
+Pob Cap 00
+
+0.9961
+
+1
+
+Pob Patrim 00
+
+0.9555
+
+0.9770
+
+1
+
+Ing. prim 99
+
+-0.2053
+
+-0.2135
+
+-0.2270
+
+1
+
+Ing. sec 99
+
+-0.4712
+
+-0.4896
+
+-0.5095
+
+0.1785
+
+1
+
+Ing. terc 99
+
+-0.3381
+
+-0.3631
+
+-0.4164
+
+0.0740
+
+0.4536
+
+1
+
+Proxy 99
+
+-0.1395
+
+-0.1503
+
+-0.1817
+
+0.2402
+
+0.0962
+
+-0.0040
+
+1
+
+2005
+
+Pob Alim 05 Pob Cap 05 Pob Patrim 05 Ing. prim 04 Ing. sec 04 Ing. terc 04 Proxy 04
+
+Pob Alim 05
+
+1
+
+Pob Cap 05
+
+0.9939
+
+1
+
+Pob Patrim 05
+
+0.9198
+
+0.9558
+
+1
+
+Ing. prim 04
+
+-0.0994
+
+-0.1053
+
+-0.1190
+
+1
+
+Ing. sec 04
+
+-0.4356
+
+-0.4601
+
+-0.4774
+
+-0.0141
+
+1
+
+Ing. terc 04
+
+-0.3745
+
+-0.4062
+
+-0.4606
+
+-0.0317
+
+0.5049
+
+1
+
+Proxy 04
+
+-0.1223
+
+-0.1289
+
+-0.1531
+
+0.4490
+
+-0.0128
+
+-0.0478
+
+1
+
+2010
+
+Pob Alim 10 Pob Cap 10 Pob Patrim 10 Ing. prim 09 Ing. sec 09 Ing. terc 09 Proxy 09
+
+Pob Alim 10
+
+1
+
+Pob Cap 10
+
+0.9960
+
+1
+
+Pob Patrim 10
+
+0.9543
+
+0.9766
+
+1
+
+Ing. prim 09
+
+-0.1051
+
+-0.1062
+
+-0.0989
+
+1
+
+Ing. sec 09
+
+-0.3304
+
+-0.3415
+
+-0.3558
+
+0.0909
+
+1
+
+Ing. terc 09
+
+-0.3165
+
+-0.3417
+
+-0.4059
+
+0.0108
+
+0.3723
+
+1
+
+Proxy 09
+
+-0.1478
+
+-0.1458
+
+-0.1232
+
+0.5081
+
+0.1032
+
+-0.0218
+
+1
+
+45
+
+Apéndice C: Estadísticas descriptivas del panel por tipo de variación
+
+Variable
+
+Media Desv. Estándar
+
+Mín
+
+Máx
+
+N
+
+Log of pov1
+
+overall 3.363261
+
+between
+
+within
+
+Log of pov2
+
+overall 3.633458
+
+between
+
+within
+
+Log of pov3
+
+overall 4.120003
+
+between
+
+Log of Yp
+
+within overall
+
+3.187602
+
+between
+
+Log of Ys
+
+within overall
+
+6.631978
+
+between
+
+Log of Yt
+
+within overall
+
+8.08927
+
+between
+
+Log of proxy Yp
+
+within overall
+
+8.087372
+
+between
+
+within
+
+.7601188 .7093166 .2734734 .6327932 .5934284 .2199224 .3785296 .3559302 .1289685 2.544999 2.371849 .9369805 2.29066 2.209694 .6952539 1.529795 1.474528 .4099403 1.527807 1.378181 .7645686
+
+-2.242981 4.573036 7341 .2489527 4.456914 .7587251 4.819282 -1.636855 4.586379 7341 .8525414 4.51135 1.144062 5.013222 -.0147741 4.60029 7341 2.049027 4.580777 2.056201 5.405612 -6.863803 10.56252 2293 -2.968551 10.11143 -1.879173 8.54041 -2.833052 14.92927 7219 -.4930044 14.35376 .622407 12.46908 2.17853 14.64801 7327 3.370969 13.94483 5.136129 12.17458 -1.480938 12.06158 6473 -1.351776 11.41578 1.195283 12.0132
+
+46
+
+Apéndice D: Correlaciones entre ingreso y pobreza por niveles y cambios 47
+
+48
+
+Apéndice E: Test de Hausman para los modelos A y B
+
+Test de Hausman para modelos nacionales, por línea de pobreza
+
+Modelo A
+
+Modelo B1
+
+Modelo B2
+
+Alim.
+
+Capac.
+
+Patrim.
+
+Alim.
+
+Capac.
+
+Patrim.
+
+Alim.
+
+Capac.
+
+Patrim.
+
+Estadístico de chi2 1400.76
+
+995.12
+
+504.91
+
+714.38
+
+675.20
+
+520.66
+
+854.6
+
+5176.71 1034.01
+
+Prob>chi2
+
+0.0000
+
+0.0000
+
+0.0000
+
+0.0000
+
+0.0000
+
+0.0000
+
+0.0000
+
+0.0000
+
+0.0000
+
+Hipótesis nula (Ho) Rechazada Rechazada Rechazada Rechazada Rechazada Rechazada Rechazada Rechazada Rechazada
+
+La prueba fue realizada con el proxy del sector primario
+
+1: modelo B usando subsidios y transferencias
+
+2: modelo B usando sólo Oportunidades
+
+49
+
+Apéndice F: Análisis de robustez
+Para el modelo de primeras diferencias, se estimarán los modelos A y B cambiando la muestra y el tipo de estimación de efectos ﬁjos, mientras que para la estratiﬁcación por grado de marginación se cambiarán los criterios de acomodo de los grupos, para ver si las relaciones estimadas son robustas y si los coeﬁcientes durante la crisis varían a causa de valores extremos o excluyendo ciertas entidades federativas. Para todas las estimaciones, se utilizará la pobreza alimentaria.
+El modelo A y B se estimarán excluyendo Oaxaca, México, Nuevo León, Distrito Federal y Chiapas, en donde muchas municipalidades carecen de información completa a lo largo del tiempo para el sector primario y su variable proxy, además de carecer de información conﬁable en el 2000 para subsidios y transferecias. Con ello, se podrá determinar si las municipalidades incluidas en 2005 que tenían valores perdidos en el 2000 sesgaron la estimación del periodo anterior de la crisis.
+
+Tabla 17. Modelo A con incidencia de pobreza alimentaria a nivel nacional
+
+Entidades excluidas: Oaxaca, Mexico, DF, Chiapas y Nuevo León
+
+Constante
+
+PD 2000-2005 2.526∗∗
+
+PD 2000-2005 3.450∗∗
+
+PD 2005-2010 .04595
+
+PD 2005-2010 1.812∗∗
+
+(.4803)
+
+(.3050)
+
+(.5573)
+
+(.3189)
+
+Primario
+
+.00228
+
+-.00584
+
+Proxy prim.
+
+(.0120)
+
+-.02823∗∗
+
+(.0174)
+
+-.00403
+
+Secundario
+
+-.02230
+
+(.0092) -.01344
+
+.05552∗∗
+
+(.0300) .00436
+
+Terciario
+
+(.0226) -.07031
+
+(.0129) -.11972∗∗
+
+(.0201) .16336∗∗
+
+(.0111) .07593∗∗
+
+Desigualdad
+
+(.0418) 3.121∗∗
+
+(.0269) 2.642∗∗
+
+(.0512) 2.725∗∗
+
+(.0237) 1.690∗∗
+
+R2(dentro) R2(entre) R2(general)
+
+(.3955) 0.2181 0.1448 0.1671
+
+(.2870) 0.2052 0.2821 0.2370
+
+(.3683) 0.1045 0.3122 0.2507
+
+(.2878) 0.0458 0.2890 0.2071
+
+N
+
+1214
+
+3027
+
+1230
+
+3114
+
+Nota: Errores estándar robustos, agrupado por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+50
+
+Como se puede apreciar en la tabla 17, la exclusión de estas entidades no cambian signiﬁcativamente la magnitud de los coeﬁcientes con el modelo A utilizado con toda la población. Es importante señalar que no se encontró evidencia de que Oaxaca, entidad con 570 municipios, altere los resultados arrojados originalmente por el modelo. Las mismas conclusiones pueden obtenerse del modelo B estimado en la tabla 18. Los coeﬁcientes tampoco cambian signiﬁcativamente en magnitud o signo y los coeﬁcientes del ingreso sectorial per cápita siguen siendo pro pobres en el periodo de la crisis. Los sectores terciario y primario se mantienen pro pobres de 2000 a 2005 y anti pobres de 2005-2010, en ambos casos signiﬁcativos.
+
+Tabla 18. Modelo B de incidencia de pobreza alimentaria a nivel nacional
+
+Entidades excluidas: Oaxaca, Mexico, DF, Chiapas y Nuevo León
+
+Constante
+
+PD 2000-2005 6.544∗∗
+
+PD 2000-2005 6.787∗∗
+
+PD 2005-2010 1.835∗∗
+
+PD 2005-2010 2.428∗∗
+
+Proxy prim.
+
+(.2881) -.05961∗∗
+
+(.2503) -.04062∗∗
+
+(.5668) .08282∗∗
+
+(.8740) .06013
+
+(.0100)
+
+(.0086)
+
+(.0288)
+
+(.0438)
+
+Secundario
+
+-.01996
+
+-.00806
+
+-.00512
+
+-.00236
+
+Terciario
+
+(.0157) -.13130∗∗
+
+(.0139) -.10906∗∗
+
+(.0118) .06398∗
+
+(.0116) .06805∗∗
+
+Subsidios
+
+(.0290) -.03061∗
+
+(.0299)
+
+(.0258) .0052
+
+(.0248)
+
+Oportunidades
+
+(.0133)
+
+-.07934∗∗
+
+(.0119)
+
+-.03214
+
+Inv. Pública
+
+-.07086∗∗
+
+(.0136) -.06689∗∗
+
+-.00170
+
+(.0327) .00548
+
+R2(dentro) R2(entre) R2(general)
+
+(.0077) 0.1692 0.2679 0.2514
+
+(.0072) 0.2284 0.0711 0.1036
+
+(.0168) 0.0164 0.1887 0.1402
+
+(.0156) 0.0187 0.3577 0.2809
+
+N
+
+2777
+
+2711
+
+2918
+
+2959
+
+Nota: Errores estándar robustos, agrupado por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+La tabla 19 muestra los modelos A y B utilizando el proxy del sector primario y la información completa de los tres periodos del panel, mediante el estimador “within” que toma en cuenta las desviaciones de una observación con respecto a la media en el tiempo. Estos resultados parecen
+51
+
+consistentes con la información del estimador de primeras diferencias de 2000 a 2005. Debido a que existió poca variación de 2005 a 2010, la mayor parte de la variación utilizada para calcular el estimador provino de 2000 y 2005, lo que aporta evidencia al argumento hecho en la sección metodológica que exponía la diﬁcultad de estimar primeras diferencias cuando existe muy poca variación longitudinal.
+
+Tabla 19. Regresiones de incidencia de pobreza alimentaria
+
+Modelos A & B, 2000-2010 (estimador “within”)
+
+Constante
+
+Modelo A 3.039∗∗
+
+Modelo B 5.65
+
+Modelo B 5.8645∗∗
+
+Proxy prim.
+
+(.1332) -.02908∗∗
+
+(.1304) -.02672∗∗
+
+(.1231) -.01899∗∗
+
+(.0049)
+
+(.0061)
+
+(.0059)
+
+Secundario
+
+.00111
+
+-.01310
+
+-.00642
+
+Terciario
+
+(.0055) -.05296∗∗
+
+(.0071) -.08424∗∗
+
+(.0068) -.04721∗∗
+
+Desigualdad
+
+(.0119) 2.2612∗∗
+
+(.0144)
+
+(.0139)
+
+Subsidios
+
+(.1010)
+
+-.01905∗∗
+
+Oportunidades
+
+(.0064)
+
+-.08014∗∗
+
+Inv. pública
+
+-.07192∗∗
+
+(.0073) -.05288∗∗
+
+R2(withi) R2(between) R2(overall)
+
+0.1799 0.0001 0.0192
+
+(.0047) 0.1178 0.2551 0.2202
+
+(.0045) 0.1507 0.0275 0.0341
+
+N
+
+6389
+
+5355
+
+5311
+
+Nota: Errores estándar robustos, agrupado por municipalidades
+
+* signiﬁcativo al 95 %, ** signiﬁcativo al 99 %
+
+Finalmente, el modelo estimado por grupos de marginación del 2010 se realizará con un criterio similar al mismo creado por CONEVAL: el índice de rezago social. Este criterio abarca algunas categorías iguales a la marginación de CONAPO. Las variables usadas para su estimación son:
+
+52
+
+Porcentaje de personas mayores a 15 años con analfabetismo Porcentaje de personas mayores a 15 años sin primaria terminada Porcentaje de personas entre 6 y 14 años que no atienden a la escuela Porcentaje de hogares con personas entre 15 y 29 años con al menos una persona sin contar con 9 años de escolaridad Porcentaje de personas sin cobertura de salud Porcentaje de personas con piso de tierra Promedio de habitantes por cuarto a nivel municipal Porcentaje de hogares sin drenaje y baño dentro de la vivienda Porcentaje de hogares sin agua corriente dentro de la vivienda Porcentaje de hogares sin electricidad dentro de la vivienda Porcentaje de hogares sin lavadoras dentro de su vivienda Porcentaje de personas sin refrigeradores en sus viviendas
+Los resultados reportados en la tabla 20 muestran el modelo de primeras diferencias con el criterio de rezago social.
+53
+
+Tabla 20. Regresiones de incidencia de pobreza alimentaria: por rezago social (Primeras diferencias)
+
+Muy alto
+
+Alto
+
+Medio
+
+Bajo
+
+Muy bajo
+
+Constante
+
+2000-2005 2000-2010 2000-2005 2000-2010 2000-2005 2000-2010 2000-2005 2000-2010 2000-2005 2000-2010
+
+5.125∗
+
+4.698∗
+
+5.642∗∗
+
+3.695∗∗
+
+5.646∗∗
+
+3.495∗
+
+4.023∗∗
+
+2.678∗
+
+1.716∗∗
+
+-.0276∗
+
+Proxy prim.
+
+(.4804) .02741
+
+(.3113) -.00983
+
+(.6035) -.01707
+
+(.5432) -.02488
+
+(.5688) -.01976
+
+(.4582) .01489
+
+(.4628) -.02776∗
+
+(.5364) -.04814
+
+(.6947) .03573
+
+(.7717) .02618
+
+Secundario
+
+(.0211) -.01083
+
+(.0275) .02288∗
+
+(.0116) -.04740
+
+(.0390) -.0076
+
+(.0142) -.03598
+
+(.0287) .00854
+
+(.0113) -.005492
+
+(.0355) -.0177
+
+(.0190) .00889
+
+(.0361) .00576
+
+Terciario
+
+(.0187) -.04096
+
+(.0088) -.00721
+
+(.0321) -.09624∗
+
+(.0097) .02239∗
+
+(.0262) -.12677
+
+(.0145) -.00371
+
+(.0258) -.06957∗
+
+(.0165) .01254
+
+(.0273) -.04706
+
+(.0231) .11726∗∗
+
+Desigualdad
+
+(.0809) -.9034∗
+
+(.0186) -.1714
+
+(.0491) 1.216∗
+
+(.0383) .71058∗
+
+(.0699) 1.520∗∗
+
+(.0301) .34513
+
+(.0349) 2.9933∗∗
+
+(.0261) 2.388∗∗
+
+(.0580) 3.270∗∗
+
+(.0532) 2.951∗∗
+
+Inv. pública
+
+(.3794) -.0277
+
+(.1701) -.02663∗∗
+
+(1.598) -.07170∗∗
+
+(.3755) .00474
+
+(.4341) -.07904∗∗
+
+(.2670) -.00954
+
+(.4227) -.07090∗∗
+
+(.3962) .00119
+
+(.5013) -.02969
+
+(.6157) -.00407
+
+R2(dentro) R2(entre) R2(general)
+N
+
+(.0151) 0.4598 0.4068 0.3911
+83
+
+(.0099) 0.1875 0.1053 0.0562
+137
+
+(.0188) 0.2609 0.0472 0.0885
+460
+
+(.0142) 0.0202 0.0024 0.0001
+636
+
+(.0116) 0.3696 0.0377 0.0968
+646
+
+(.0145) 0.0184 0.0711 0.0288
+810
+
+(.0099) 0.3985 0.0177 0.0870
+896
+
+(.0170) 0.0957 0.0124 0.0298
+1001
+
+(.0161) 0.1812 0.0740 0.0740 1269
+
+(.0233) 0.0671 0.0216 0.0034 1453
+
+Nota: Errores estándar robustos, agrupados por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+Los resultados diﬁeren de manera importante cuando se usa el concepto de rezago social. En este caso, el sector primario es pro pobre sólo en los municipios con grado bajo de rezago social. El sector terciario fue pro pobre sólo para los municipios con alto y bajo rezago social, mientras que con el criterio de marginación había sido consistentemente pro pobre para casi todos los tipos de municipalidades.
+Finalmente, la desigualdad muestra resultados robustos comparados con la marginación, en donde sólo los municipios muy pobres y marginados muestran coeﬁcientes negativos. Este cambio en los resultados es explicado por las condiciones impuestas en los indicadores de rezago social, las cuales tienen criterios distintos que las de marginación. La tabla 21 muestra una matriz de transición para 2010 donde se comparan los municipios con ambos criterios.
+
+54
+
+Tabla 21. Municipios de acuerdo a los criterios de agrupación utilizados, 2010
+
+Marginación/Rezago social Muy alto Alto Medio Bajo Muy bajo
+
+Muy alto
+
+112
+
+303 21
+
+0
+
+0
+
+Alto
+
+0
+
+169 222 17
+
+0
+
+Medio
+
+0
+
+20 246 518
+
+158
+
+Bajo
+
+0
+
+0
+
+0
+
+38
+
+361
+
+Muy bajo
+
+0
+
+0
+
+0
+
+1
+
+261
+
+Como lo muestra la tabla 21, la caliﬁcación basada en rezago social es mucho menos estricta que la de marginación. A manera de ejemplo, la mayoría de los municipios catalogados como muy marginados por CONAPO fueron catalogados con alto rezago por CONEVAL, y algunos de ellos con rezago medio. Para corregir esto y hacer comparables las caliﬁcaciones, la tabla 22 muestra las mismas estimaciones que la 21 agrupando ahora en el primer grupo los grados de rezago social altos y muy altos, en el segundo los medios y bajo, y en el último el grado de marginación muy bajo.
+
+Tabla 22. Regresiones de incidencia de pobreza alimentaria: por rezago social (Primeras diferencias)
+
+Muy alta y alta
+
+Medio y bajo
+
+Muy bajo
+
+Constante
+
+2000-2005 2000-2010 2000-2005 2000-2010 2000-2005
+
+5.568∗∗
+
+3.877∗∗
+
+4.771∗∗
+
+3.014∗∗
+
+1.716∗
+
+2000-2010 -.0276∗
+
+Proxy prim.
+
+(.5447) -.01014
+
+(.4023) -.01408
+
+(.3477) -.02677∗∗
+
+(.3706) -.01469
+
+(.6947) .03573
+
+(.7717) .02618
+
+Secundario
+
+(.0107) -.03868
+
+(.0325) -.00125
+
+(.0091) -.01927
+
+(.0242) -.00686
+
+(.0190) .00889
+
+(.0361) .00576
+
+Terciario
+
+(.0237) -.08696∗
+
+(.0082) .01373
+
+(.0185) -.09653∗∗
+
+(.0113) .00993
+
+(.0273) -.04706
+
+(.0231) .11726∗∗
+
+Desigualdad
+
+(.0442) .83527
+
+(.0295) .38464
+
+(.0325) 2.433∗∗
+
+(.0197) 1.283∗∗
+
+(.0580) 3.270∗∗
+
+(.0532) 2.951∗∗
+
+Inv. pública
+
+(1.359) -.06643∗∗
+
+(.2639) -.00027
+
+(.3111) -.07575∗∗
+
+(.2592) -.00202
+
+(.5013) -.02969
+
+(.6157) -.00407
+
+R2(dentro) R2(entre) R2(general)
+
+(.0169) 0.2000 0.0713 0.1009
+
+(.0107) 0.1892 0.0157 0.0566
+
+(.0075) 0.3799 0.0506 0.1131
+
+(.0117) 0.0480 0.0028 0.0006
+
+(.0161) 0.1812 0.0740 0.0740
+
+(.0233) 0.0671 0.0216 0.0034
+
+N
+
+898
+
+952
+
+1542
+
+1811
+
+1269
+
+1453
+
+Nota: Errores estándar robustos, agrupados por municipalidades
+
+Coeﬁcientes con * son signiﬁcativos al 95 %, con ** signiﬁcativos al 99 %
+
+55
+
+Los grupos de la tabla 22 capturan una tendencia similar a la de marginación: el grupo formado por alto y muy alto rezago tiene resultados muy similares a los de muy alta marginación, mientras que el grupo formado por medio y bajo rezago tiene resultados muy similares a los de marginación media. Esto muestra resultados robustos de la estratiﬁcación.
+56
+
+

@@ -1,0 +1,1926 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+GENERAL EQUILIBRIUM EFFECTS OF PRODUCT
+DIFFERENTIATION IN THE RURAL AGRICULTURAL
+SECTOR. AN INTRODUCTION TO ORGANIC AGRICULTURE IN RURAL MEXICO.
+AUTOR: SAMUEL DAVID GARCÍA TRUJILLO PROMOCIÓN 2013-2015
+ASESORES:
+ANTONIO YÚNEZ NAUDE JOSÉ JORGE MORA RIVERA
+JULIO 2015
+
+General equilibrium eﬀects of product diﬀerentiation in the rural agricultural sector.
+An introduction to organic agriculture in rural Mexico. Samuel David Garc´ıa Trujillo
+Submitted for the degree of Master in Economics El Colegio de M´exico July 2015
+
+ii
+EL COLEGIO DE ME´XICO
+Samuel David Garc´ıa Trujillo
+General equilibrium effects of product differentiation in the rural agricultural sector.
+An introduction to organic agriculture in rural Mexico.
+Summary
+International organizations, such as the FAO and the OECD, have suggested that agricultural product diﬀerentiation policy via organic agriculture could help alleviate poverty and generate economic development in rural regions. One of the main arguments that supports this approach is the fact typical consumers regard organic crops as qualitatively “better” than their conventional counterpart, allowing producers to charge a price premium. The fact that the organic market has experienced a steady growth seems to support as well the conclusions reached by international organizations.
+Using a Microeconomic Computable General Equilibrium (MCGE) model calibrated with the 2007 Mexican National Rural Household Survey, this author hypothesized that the introduction of agricultural product diﬀerentiation via organic agriculture in Mexico’s rural areas would increase welfare.
+However, this present study’s results suggest that studies developed so far might be biased. Speciﬁcally, this study has found is that previous research has failed to take into account the economic structure and challenges that a rural area presents. The results show that when the economic restrictions are taken into account, organic agriculture may not be the best alternative for achieving poverty reduction or economic development.
+
+iii
+Acknowledgements
+First of all, I am grateful to my family for their guidance and encouragements into following my dreams. Irene, Adrian, Abraham, abuelo you really are the best support, in every sense, anyone can hope for. I am deeply indebted to my supervisors Antonio Yu´nez Naude and Jos´e Jorge Mora Rivera whose stimulating motivation and valuable ideas helped me complete this work. I would like to thank all my undergraduate and graduate teachers for their time and for sharing with me their love to this great discipline. Thanks to all my friends for sharing with me this fulﬁlling experience called ”Maestr´ıa”, specially to Ulises who became my accomplice in those long studying nights. Special thanks to Alethia for the moral support and precious love, who was always standing by me in my hard times during this work. Finally, I would like to dedicate this work to my family, to my love and specially to the next generation of Cadena-Garc´ıa friendships.
+
+iv
+
+Contents
+
+List of Tables
+
+vii
+
+1 Introduction
+
+1
+
+2 Theoretical Background
+
+4
+
+2.1 Product diﬀerentiation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+2.1.1 Product diﬀerentiation in agriculture . . . . . . . . . . . . . . . . . . 5
+
+2.2 Organic Agriculture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+2.2.1 Organic Agriculture in the World . . . . . . . . . . . . . . . . . . . . 8
+
+2.2.2 Organic Agriculture in Mexico . . . . . . . . . . . . . . . . . . . . . . 9
+
+2.2.3 Productivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+2.2.4 Prices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+2.2.5 Certiﬁcation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+3 Methodology and Data
+
+16
+
+3.1 Methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+3.2 Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+4 Model, Experiments and Results
+
+23
+
+4.1 Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+4.2 Simulations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+4.3 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+
+5 Conclusions
+
+50
+
+v
+
+Bibliography
+
+53
+
+A Intermediate-Inputs Model
+
+60
+
+vi
+List of Tables
+3.1 ENHRUM’s coverage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 3.2 Household classiﬁcation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 3.3 Activities and commodities . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 3.4 Factors of production . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 4.1 First approach: Zero demand for fertilizers and pesticides. Household 4
+(1.18% yield increment and 20% price premium) . . . . . . . . . . . . . . . . 31 4.2 First approach: Zero demand for fertilizers and pesticides. Household 1.
+(1.18% yield increment and 20% price premium) . . . . . . . . . . . . . . . . 32 4.3 Second approach: Zero demand for fertilizers and pesticides. Household 4
+(1.18% yield increment and 20% price premium) . . . . . . . . . . . . . . . . 34 4.4 Second approach: Zero demand for fertilizers and pesticides. Households 1
+and 2 (1.18% yield increment and 20% price premium) . . . . . . . . . . . . 35 4.5 Third approach: Zero demand for fertilizers and pesticides. Household 4
+(1.18% yield increment and 20% price premium) . . . . . . . . . . . . . . . . 37 4.6 Third approach: Zero demand for fertilizers and pesticides. Households 1 and
+2 (1.18% yield increment and 20% price premium) . . . . . . . . . . . . . . . 38 4.7 Second approach: Equivalent and compensated variations. Household 4 (1.18%
+yield increment and 20% price premium) . . . . . . . . . . . . . . . . . . . . 39 4.8 Third approach: Equivalent and compensated variations. Household 4 (1.18%
+yield increment and 20% price premium) . . . . . . . . . . . . . . . . . . . . 39 4.9 Second approach: Zero demand for fertilizers and pesticides. South-southeast
+region. Citrus and vegetables simulations. . . . . . . . . . . . . . . . . . . . 44
+
+vii
+4.10 Second approach: Zero demand for fertilizers and pesticides. South-southeast region. Citrus and vegetables simulations. Continuation. . . . . . . . . . . . 45
+4.11 Second approach: Zero demand for fertilizers and pesticides. Central region. Vegetables simulations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+4.12 Second approach: Zero demand for fertilizers and pesticides. Central region. Vegetables simulations.Continuation. . . . . . . . . . . . . . . . . . . . . . . 47
+4.13 Second approach: Zero demand for fertilizers and pesticides. Northwestern region. Vegetables simulations. . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+4.14 Second approach: Zero demand for fertilizers and pesticides. Northwestern region. Vegetables simulations.Continuation. . . . . . . . . . . . . . . . . . . 49
+
+1
+Chapter 1
+Introduction
+Since its beginnings, agricultural activity has had a very important role in the global economy. It is not only an important source of intermediate goods, but also the world’s main source of food (Timmer, 2002; World Bank, 2009). In Mexico, this sector has experienced important changes in production value, as well as in the degree of intervention by the state. In the last 50 years, as a result of signiﬁcant intervention followed by commercial liberalization, the sector gave up its place as the main source of foreign income, but also as one of the most dynamic sectors in the Mexican economy (Yu´nez-Naude, 2010; Avalos and Graillet, 2013).
+Nowadays the sector is divided into two very diﬀerent segments in terms of productivity, technology and proﬁtability. In the northern region of the country, the industrialized agricultural sector has not only international levels of productivity and production technology, but also the resources and location needed for entering the US market. On the other hand, the rural agricultural sector, which has a stronger presence in the southern region, has a higher transaction cost due to its location, lower investment, an almost complete lack of technology and lower revenues because of a lower hectare per producer ratio.
+There has been a lot of interest in developing public policy that can tackle the stagnation suﬀered in the rural segment of the agricultural sector. In Mexico, conditional cash transfer programs such as PROCAMPO and PROSPERA (OPORTUNIDADES) have been
+
+2 the main approaches to incentivizing production and development; however, they have had little or no impact on the objective variables (Ruiz-Arranz et al., 2006; Sadoulet et al., 2001).
+International organizations have suggested an approach to alleviating poverty and incentivizing development in rural areas that has not been properly studied in the Mexican context: agricultural product diﬀerentiation via organic agriculture (FAO, 1998; OECD, 2003).
+In African countries this system of agricultural production has been found to be profitable and to improve welfare, even with the participation of intermediary agents (Otchia, 2014; Bolwig et al., 2009). In Latin American countries like Honduras and Nicaragua, it has been suggested that promotion of organic specialty coﬀee can serve as a policy to reduce the vulnerability of small-scale farmers, based on the experience of Chiapas (Bacon, 2005; Wollni and Andersson, 2014). However, there has been no academic research on how this system could be applied in Mexico, even though the southern part of the country is an important producer of organic crops.
+Using a Microeconomic Computable General Equilibrium (MCGE) model calibrated with the 2007 Mexican National Rural Household Survey (ENHRUM for the Spanish acronym), this author hypothesized, based on current specialized literature and research by international organizations, that the introduction of agricultural product diﬀerentiation via organic agriculture in Mexico’s rural areas would increase welfare. However, this present study’s results suggest that the aforementioned studies might be biased.
+The remainder of the document is organized in four chapters: Chapter 2 is divided into two sections that will serve as the theoretical background upon which the model will be constructed. The ﬁrst section describes the main ideas of product diﬀerentiation and its application to the agricultural sector. Section two provides a general perspective as well as an overview of organic agriculture in the Mexican context. This section includes a description of the most important aspects that have to be taken into account
+
+3
+in order to model the introduction of organic agriculture into a certain area. Chapter 3 describes the data collection and analysis methods used. Chapter 4 presents the applied general equilibrium model developed for the empirical analysis, followed by the experiments developed in order to simulate the introduction of organic agriculture into rural Mexico, as well as the results. Chapter 5 oﬀers conclusions.
+
+4
+Chapter 2
+Theoretical Background
+2.1 Product diﬀerentiation
+Even though product diﬀerentiation has been a relevant topic for economists since Hotelling introduced his spatial competition model in the 1920s, economists tend to have strong opinions regarding the relevance of diﬀerentiation (Hotelling, 1929; Eaton and Lipsey, 1989).Some economists believe that products are essentially identical, however, in reality we can observe a large set of highly diﬀerentiated commodities. In a very loose sense, any set of commodities or products that are consumed in nearly the same way may be regarded as diﬀerentiated products.
+A product is diﬀerentiated by its characteristics. In this way, product diﬀerentiation makes it so a particular product is either really or apparently diﬀerent from rival products. According to Beath and Katsoulacos (1991), “If we think of each characteristic as being represented by a dimension in some appropriate dimensional space, then any product can be thought of as a point in the space spanned by the axes.” Following Beath and Katsoulacos, any relevant set of products can then be depicted by a number of points or vectors in this space.
+In economics we diﬀerentiate products in two ways, depending on to whether or not there is a ranking consensus concerning their characteristics. We say that there is vertical
+
+5 product diﬀerentiation when all the points in the characteristics space corresponding to a set of goods lie on the same ray vector through the origin. Additionally, a good that is further out from the origin has better characteristics or quality. When these products are oﬀered at the same price, all consumers choose to purchase those of better quality. On the other hand, we say that there is horizontal product diﬀerentiation when goods cannot be ranked in terms of some quality index (Tirole, 1988). According to Chamberl´ın (1956), this type of diﬀerentiation is closely related to the conditions in which products are sold, like location, marketing and personal links between the supplying and demanding parties.
+Producers diﬀerentiate their products when they have enough incentives to do so. The incentives for product diﬀerentiation derive from the fact that the more diﬀerentiated the products become, the less perfectly they substitute each other. This gives each producer the potential to act as a monopolist in relation to its own product. However, diﬀerentiation may also cut the producer oﬀ from a much larger market.
+2.1.1 Product diﬀerentiation in agriculture
+Agricultural products have traditionally been regarded as homogeneous products. Even though, genetically, agricultural products may come from the same wild crop, they are not exactly the same. As Kingsbury (2009) says about the diﬀerences between wild crops and market crops, “The gap between the wild and the cultivated is all about the diﬀerence between nature’s requirements and ours.” He goes on to say that it is thanks to generations of plant breeders and their evolutionary pressures via seed selection that we can have a large set of diﬀerentiated crops.
+However, crops are diﬀerentiated in terms of the physical characteristics, like color or size, that plant breeders have encouraged according to their own preferences. Given the fact that this diﬀerentiation is due to physical characteristics and that consumers will select according to their preferences and not accordingly to a speciﬁc quality ranking, we know that crops are horizontally diﬀerentiated.
+
+6 Although there have been some attempts in the economic literature to analyze the effects of diﬀerentiation in the agricultural sector, they were made in the context of developed countries where the sector is industrialized and highly competitive. These studies consider the diﬀerentiation that could occur if producers applied branding and marketing strategies 1.
+One disadvantage of trying to analyze the eﬀects of diﬀerentiation in the agriculture sectors of developing countries is the lack of reliable information and the vast heterogeneity of agents in the sector. In the case of Mexico, although there is an important share of industrialized farmers, there is an even bigger share of traditional rural farmers. This heterogeneity, which gives rise to diﬀerent incentives for the agents, is hardly taken into account by the econometric analyses developed in those papers.
+However, in recent years another way to diﬀerentiate agricultural products has been suggested according to the inputs used for their production. With this type of diﬀerentiation, one can distinguish conventional from organic products based on the use or lack of chemical fertilizers and pesticides. This type of diﬀerentiation has given rise to one of the fastest growing segments of agricultural outputs, organic crops.
+Some authors, especially in the biological and nutritional sciences, have made an effort to establish the quality advantages of organic crops compared to their conventional counterparts. One example is found in an article by Worthington (2001), where the author shows that organic crops contain higher levels of 21 “essential” nutrients—such as iron, magnesium, phosphorus and vitamin C—than their counterparts. She also demonstrates that organic crops contain lower levels of nitrates, which can be toxic to humans.
+Whether or not organic crops are “better” than conventional crops will not be our concern in this work. From an economic perspective, what is relevant is that, in general, consumers do perceive organic crops to be a qualitatively better commodity. Thus, we can analyze them in terms of vertical product diﬀerentiation and we can also evaluate the potential con-
+1Some examples of this type of analysis can be found in Crespi and Marette (2002), Lavoie and Liu (2007)
+
+7 tributions that can arise from the introduction of this product diﬀerentiation in a certain region.
+This same approach has been taken into account by international organizations such as the FAO and the OECD, which have funded research projects in order to evaluate the potential for organic agriculture to contribute to poverty alleviation and economic development. Even though these organizations have taken a big step forward into documenting the possible eﬀects that organic agriculture can have on the development of certain areas, there still is a need for more research focused on its eﬀects in developing countries.
+2.2 Organic Agriculture
+There is a consensus on the deﬁnition of “organic”; the United States Department of Agriculture (USDA), the Mexican Secretariat of Agriculture, Livestock, Rural Development, Fisheries and Food (SAGARPA for the Spanish acronym), the FAO and even the OECD are in agreement on the subject 2. They all deﬁne organic agriculture as an ecological production system that excludes the use of synthetically compounded fertilizers, pesticides and growth regulators. This system relies upon crop rotation, crop residues, mineral supply bearing rocks and aspects of biological pest control to maintain soil productivity and ecological harmony.
+According to Lockeretz (2007), the concept of organic agriculture as we know it today is a mixture of ideas that arose at the beginning of the 20th century in Anglo-Saxon countries. This production method arose as a response to a soil degradation problem after the industrial faming boom that began during the First World War. The response was based on a series of scientiﬁc and agricultural debates that took place in Germany, where it was determined that the use of chemical fertilizers and pesticides, which helped produce greater yields and had become an integral part of what is now known as conventional farming 3, had created
+2Speciﬁc deﬁnitions of organic agriculture can be found in USDA (2015), SAGARPA (2015), FAO (1998) and OECD (2003)
+3Bushara (2011) provides a complete description of the conventional farming system, as well as of the
+
+8 several problems.
+Participants in the debates argued that the intensive use of chemicals disturbed crop metabolism by changing the nitrogen levels in the soil, which weakened the plants. On the other hand, they found evidence of higher levels of soil acidity, which diminished root growth and contributed to soil degradation. This evidence inﬂuenced a group of farmers to develop a farming system that did not rely on chemical fertilizers and pesticides, in order to improve food quality and ultimately the environment.
+However, it was not until the 1970s, a time of increasing awareness of the environment, that organic farming started to attract interest worldwide. Acceptance of organic agriculture also increased, as evidenced by the wholesale value of organic products, which according to Park and Lohr (1996) increased from 1 million in 1977 to 50 million in 1987. According to Sahota (2014) latest data indicate that the wholesale value of organic food and drinks approached 64 billion in 2012.
+2.2.1 Organic Agriculture in the World
+According to the FAO (1998), until the early 1990s organic agriculture was not a common practice in any country. The FAO estimates that this production system was practiced by less than 1% of the total farmers in each of the analyzed countries. However, the growing acceptance of these diﬀerentiated commodities over the last couple of decades has changed the share of farmers using an organic production system.
+The International Federation of Organic Agriculture Movements (IFOAM) has played an important role in the study of organic agriculture market trends by gathering data from most countries that use this production system and publishing yearly reports for further analysis. In the 2008 annual report, Willer et al. (2008) estimate that in the countries surveyed, there were 31 million Ha used speciﬁcally for organic agricultural production in 700,000 farms. This represented 0.65% of the agricultural land in the surveyed countries in 2008; by 2014,
+conversion process to become an organic system.
+
+9 the total had increased to 20%. In total, Willer and Lernoud (2014) estimate that by 2014 there were 38 million Ha dedicated to agricultural production by 1.9 million farms.
+According to Sahota (2014) some countries experienced slower growth rates in their organic market sales after the 2008 crisis; however, the author ﬁnds that in general this segment of agriculture has experienced sales growth, with sales reaching approximately 64 billion dollars in 2012. Diﬀerent studies, like Zander et al. (2013) and Schleenbecker and Hamm (2013), come to the same conclusion and emphasize the determinants of demand growth, arguing that consumer awareness of health beneﬁts and of what they call “ethical beneﬁts” (fair trade, better working conditions, beneﬁts for small agricultural producers) are the main reasons that explain the growth in demand despite the economic crisis.
+2.2.2 Organic Agriculture in Mexico
+Mexico is no stranger to organic agriculture. In fact, according to IFOAM’s reports, in 2008 Mexico destined 307,692 Ha to organic agricultural production. In 2014, IFOAM reported that the amount of land dedicated to organic agriculture in Mexico had increased, reaching 487,393 Ha. This represents a share of 2.27% of Mexico’s total agricultural land.
+Flores (2014) reports that as of 2014, Mexico is one of the top ﬁve countries in terms of registered producers. The country’s 169,707 registered organic farmers have made Mexico an important producer of organic crops. Mexico’s main organic agricultural commodities are: coﬀee, avocados, citrus fruits, cocoa beans, mangoes and vegetables.
+According to Willer and Lernoud (2014), Mexico is the largest producer of organic coﬀee worldwide. In order to achieve this, Mexico has dedicated 243,000 Ha of agricultural land to this crop, which represents 35.5% of the total coﬀee production area and 79% of the total area destined to organic production. Also, Mexico is the second largest producer of organic citrus fruits worldwide and destines 12,000 Ha to their production. Mexico plays an important role in the production of organic avocados and vegetables as well.
+
+10 Go´mez-Cruz et al. (2007) developed a survey for Mexican organic farmers using data from organic certiﬁers and reported that 76% of the organic production in the country is concentrated in ﬁve states: Chiapas, Oaxaca, Queretaro, Guerrero and Michoacan. In their study, the authors also characterize average organic farmers as small (less than 2 Ha per farm), rural agents that rely on some cooperative scheme or agglomeration system in order to obtain the legal certiﬁcation necessary to market their product as organic.
+Even though Mexico plays an important role as producer, most of its production is consumed elsewhere. Speciﬁcally, according to G´omez-Cruz et al. (2007), at least 85% of the Mexican production is exported to the USA and Asia. The Mexican government has done important work in developing a very complete legal framework for the conversion and certiﬁcation processes and is also working on strengthening domestic demand by creating a distribution network with the most important cities4.
+2.2.3 Productivity
+An important and highly controversial aspect of organic agriculture, due to the lack of consensus, is the productivity or yield diﬀerentials between organic and conventional crops. Some authors suggest that yields, rather than prices, are the most important factors in organic farm proﬁtability. For example, Barham and Weber (2012)analyze the net cash return of specialty5 coﬀee producers in Mexico and Peru, ﬁnding that the most important factor for increased revenue is increased productivity.
+Another example is found in Pas and Rees (2014), where the authors compare yields, gross margins and soil organic carbon between 458 surveyed organic-conventional couple crops in the USA. These authors found that on average, organic yields were 25% higher than their conventional counterparts and that the yield diﬀerential could be even higher
+4The Red Nacional de Tianguis y Mercados Org´anicos is an initiative created in 2004 in order to incentivize domestic demand for organic products. It brings together organic producers and ﬁnal consumers across 15 states.
+5The authors deﬁne specialty products as organic and fair trade certiﬁed.
+
+11 in regions with less precipitation. Another important result is that the surveyed crops, on average, received a price premium of 20% over their conventional counterparts. Nonetheless, the price premium received by the producers who lacked the certiﬁcation was only 6% higher.
+Go´mez-Cruz et al. (2007)have studied the Mexican context. The authors surveyed organic farmers using contact information gathered from certifying agencies, and found that on average Mexican organic producers present higher yields than their conventional counterparts. The authors focused their analysis on ten of the most important organic crops produced in the country—mangoes, guavas, coﬀee, cacao, maize, cacti, lemons, apples, avocados and bananas—and found that on average organic yields are 14.40% higher than conventional yields. The organic crop with the highest positive yield diﬀerential was coﬀee, which according to the authors is 1.19 times more productive than the conventional crop. The organic crop with the highest negative yield diﬀerential was the banana, which was found to be 0.63 times that of the conventional crop.
+On the other hand, there are some researchers that suggest that the productivity of organic crops is lower than that of conventional crops. For an FAO report, Nemes (2009) gathered information on several studies of yields from across the world. The author concludes that on average organic yields are lower than conventional yields, but she suggests that this is due to a higher decrease in developed countries’ organic yields after a transition from a conventional system. Her investigation suggests that in developing countries, organic crops have higher yields than conventional crops, especially in areas with adverse climate. The same variability is found in de Ponti et al. (2012),where the authors conclude that on average, organic crop yields are 80% of those of their conventional counterparts; however they found a signiﬁcant and large standard deviation of 21%.
+Some authors have suggested that the lack of agricultural management techniques can explain reduced yields. For example, Delmotte et al. (2011)suggest that techniques like late sowing or short cycle crop varieties can make a great diﬀerence in crop yield by allowing higher initial plant density due to higher temperatures during the emergence of the crop.
+
+12 Others have gone further, experimenting on soil conditions in order to ﬁnd the determinants of the yield diﬀerentials. Doltra et al. (2011) found that loamy soils and nitrogen in manure can aﬀect organic crop yields.
+However, some authors suggest that the yield diﬀerential can be explained by the time frame used by other studies. In their paper, Pretty et al. (1996) ﬁnd higher yields for organic farming, but the time frame used is larger than the one used in other investigations. This leaves room for a questioning whether the yield decrease for organic crops is due to some soil adjustment process in the short term, followed by an increase in crop yields, or if it is determined by other factors.
+2.2.4 Prices
+One of the most important aspects of organic agriculture, and the reason for what it is being considered by international organizations and governments as an alternative for triggering economic development in rural agricultural regions, is the price premium charged for such commodities compared to their conventional counterparts. As was discussed in the previous section, vertical product diﬀerentiation allows the producer to charge a higher price due to a decrease in substitutability. Organic commodities are no exception to this rule, and most of the literature suggests that the price premium acts as major incentive to encourage conventional producers to switch to organic agriculture.
+The price diﬀerential and correlation between organic and conventional agricultural commodities are perhaps the most analyzed issues regarding organic production6. These subjects have garnered attention because the diﬀerentials can very high. Maybe the most extreme case is the one found in Wilson and Wilson (2014),where the authors analyze the determinants of prices in specialty7 coﬀee auctions. Using hedonic prices, the authors determine
+6Meyer and von Cramon-Taubadel (2004) in their survey present the general methodology used for analyzing asymmetric price transmissions in organic agriculture. Another example of organic price analysis can be found in Hellberg-Bahr et al. (2011) ) for organic milk in Europe.
+7The authors deﬁne specialty products as qualitatively diﬀerentiated ones. Organic coﬀees are included
+
+13 that sensory quality is the ﬁrst determinant of higher prices, but that the relationship has decreasing returns. After sensory quality, the second most important determinant is relative quality, which pushes up specialty coﬀees prices to an average of 3.5 times the international traditional coﬀee price.
+Despite the evidence found in specialty coﬀee auctions, the common perception is that organic prices are twice those of their conventional counterparts. Recent studies have conﬁrmed that this is not the relation these prices maintain. In their working paper, Singerman et al. (2010) suggest, using cointegration methods, that there is no long-run relationship between organic and conventional crop prices. The results the authors present, using data for the USA’s soybean and corn markets, suggest that local markets have a strong eﬀect on determining local organic prices. Nevertheless, Kleemann (2013) took a similar approach in his study of pineapple markets in Europe, and the author found that there is a relationship between organic and conventional prices. According to the research, conventional markets act as price leaders for organic markets. The author also presents evidence that even though conventional crop prices are independent of organic crop prices, the latter respond to changes in their conventional counterparts if the changes are large enough. The fact that the author also found stability in the threshold between prices implies that organic production can be proﬁtable for small farmers due to the low expected variability.
+More recently, Wu¨rriehausen et al. (2014),applying an asymmetric Markov switching vector error correction model to quantify asymmetric price dynamics between organic and conventional crops, found that there is an important asymmetric price dynamic between the two types of products. The authors present evidence that deviations from the long-run equilibrium in the model imply that organic prices are 2.4 times higher than their conventional counterparts. They also found evidence that contradicts Kleemann’s results regarding the responsiveness of prices. According to Wu¨rriehausen et al. (2014), if the price of organic crops increases, both organic and conventional markets are aﬀected, ultimately resulting in a price decrease for both types of commodities. However, if the price of conventional crops
+in the analysis.
+
+14 increases, no such eﬀect is found because organic prices are not aﬀected. Another important result is that the authors suggest that organic farmers are more likely to beneﬁt from a foreign market than from a domestic one because local market prices are more sensitive to exogenous shocks making them more volatile than the world market.
+International organizations like the FAO and the OECD have contributed to this subject as well. In a series of diﬀerent research documents (FAO, 1998, 2012; OECD, 2003), both organizations conclude that organic agriculture producers charge premiums of 20% to 50% on average over their conventional counterparts. According to these studies, the price premium variation is due to diﬀerent factors, such as the existence or lack of certiﬁcation, transaction costs, development of internal markets and the degree of agglomeration and organization between producers.
+2.2.5 Certiﬁcation
+Another aspect of organic agriculture that researches have found to be very important is the certiﬁcation process. As Bushara (2011) describes in his paper, the legal framework of organic agriculture deﬁnes the rules that producers need to follow in order to claim and beneﬁt from organic status. This aspect has been found to be critical for farmers to receive the price premiums that can make organic agriculture proﬁtable8. Thus, international organizations like the FAO and IFOAM have emphasized the possible beneﬁts governments can achieve in terms of development by generating a legal framework that allows producers to claim organic status.
+The Mexican government has taken measures in order to generate what the IFOAM describes as a “very comprehensive” organic regulation framework. The ﬁrst steps to achieving a legal framework where taken in 2006, with the publication of the Organic Agriculture Law in the Oﬃcial Journal of the Federation (DOF for its acronym in Spanish). The objectives of this law were to promote and regulate the requirements for the conversion, production,
+8Bolwig et al. (2009) analyze the eﬀects on organic coﬀee producers of being part of a certiﬁed production scheme and ﬁnd that scheme participation is associated with an increase in net revenue of 75%.
+
+15 processing, labeling and sale of organic products. In this law, the government declares that only the SAGARPA and qualiﬁed certifying agencies can manage evaluation and certiﬁcation processes in the country. The law states which substances can be used in organic agriculture by producers as well as the processing methods allowed in order to obtain the Mexican organic product seal.
+This ﬁrst step was complemented in 2010 and in 2013 with the publication in the DOF of the Organic Agriculture Regulation and the Organic Agriculture Guidelines, respectively. Perhaps the most important additions to the existing law were the formalization of the National Council of Organic Production and the agreement to promote organic agriculture by developing policies and state-funded programs. As for the Organic Agriculture Guidelines, the objective was to formalize the use of the national organic product seal that was also launched in 20139.With these actions, the government is aiming to develop a more organized and regulated market where organic producers can beneﬁt from this diﬀerentiated production system.
+9The website www.somexpro.org has a very concise section on the legal framework for Mexican organic agriculture.
+
+16
+Chapter 3
+Methodology and Data
+3.1 Methodology
+Although agricultural product diﬀerentiation has been studied, especially in the case of organic agriculture, the main focus of researchers has been on the characteristics that allow producers to beneﬁt from this practice and on comparisons between organic and conventional aspects of agriculture. Even though, as mentioned earlier, international organizations regard organic agriculture as a way to alleviate poverty in rural agricultural areas, very little research has been done to determine the possible eﬀects of the introduction of this production system in rural areas.
+To our knowledge, the only attempt to model agricultural product diﬀerentiation by introducing organic agriculture into a certain area is a study for the FAO done by Znaor et al. (2005). In this paper, the authors attempt to unveil the environmental and economic consequences of the conversion of a substantial portion of Croatian agricultural land to organic agriculture. To achieve this goal, the authors developed what they called a “baseline scenario” by linking farm information to upstream sectors, environmental information and some macroeconomic information. Perhaps the most interesting part of this study is the way in which the authors simulated the conversion of agricultural production to organic methods. In order to simulate the conversion, the authors applied diverse policy and exogenous shocks in order to generate several scenarios with diﬀerent degrees of production conversion.
+
+17 Speciﬁcally, they simulated conversions of 100, 50, 25 and 10 percent of production to organic methods using a price premium of 10 percent over the conventional price, and yield reductions.
+However, they faced a number of challenges. They lacked reliable agricultural sector information, which they had to estimate with the use of macroeconomic data. Due to the level of aggregation, they were not able to simulate the conversion of speciﬁc commodities from conventional to organic. More importantly, they lacked an explicit modeling framework for the simulation process, which they addressed by using several analysis approaches, including cost-beneﬁt analysis, willingness to pay, contingent valuation and data extrapolation.
+On the other hand,Fujita and Hamaguchi (2007) made a more general attempt of modelling agricultural product diﬀerentiation. The authors developed a theoretical general equilibrium model of agricultural product diﬀerentiation based on the new geographical economic framework. The authors built on Von Thu¨nen’s monocentric localization model in order to generate a model based on microeconomic theory that takes into account the optimization problems of the several agents involved in an economy. Their research explains the eﬀects of two policy programs developed in rural Japan that allow agricultural producers to diﬀerentiate their products in order to achieve price premiums and increase wellbeing in their communities. Fujita and Hamaguchi’s model seems to be an appropriate framework for analyzing agricultural product diﬀerentiation upon introducing organic agriculture in rural Mexico, however his model is highly complex, and data requirements would be huge in order to develop an empirically based analysis.
+The empirical research developed in this thesis takes into account both papers described above. In order to model the eﬀects of agricultural product diﬀerentiation upon introducing organic agriculture in rural Mexico, a microeconomic computable general equilibrium model (MCGE) was developed. This model was built upon the MCGE done by Herna´ndez-Solano (2015) and was calibrated using data from the 2007 ENHRUM. The experiments made in the interest of modeling the introduction of organic agriculture followed Znaor et al.’s approach.
+
+18
+This research took into account Hertel (2002)argument that traditional econometric agricultural analysis lacks a household perspective, thus ignores the double character —as consumers and producers— of rural households. This implies that the double character optimization problems faced by a typical rural households in less developed countries are hardly taken into account. As Singh et al. (1986) explain, rural agents generally have to solve the optimization problems for both producers and consumers at the same time, because of market imperfections and high transaction costs. An MCGE model can help overcome such problems. Speciﬁcally, the model used for this research is multi-sectorial, and microeconomic in the sense that it focuses on rural households. Another advantage of using a MCGE approach is their capacity for capturing direct and indirect eﬀects from shocks, which can have signiﬁcant eﬀects in rural communities with market imperfections.
+3.2 Data
+General Equilibrium Models rely greatly on the use of social account matrices (SAM) that depict all the transactions between the agents of a given economy. The data used to build the SAMs on the present study is provided by the ENHRUM1.
+The ENHRUM used for this research is a survey providing data for 2007; it is representative of rural households living in localities with 500 to 2,499 inhabitants, and was applied in 80 localities in 14 Mexican states and in the ﬁve rural regions of the country. Table 3.1 depicts the regions and states covered in the survey.
+The fact that only one of the surveyed states, Oaxaca, has an important organic agriculture sector is crucial for the organic agriculture introduction simulation developed in this study. This is because by using the data from ENHRUM, we can eﬀectively simulate and distinguish the eﬀects of diﬀerentiating production in the states where this practice is uncommon.
+1 ENHRUM’s data can be consulted through the website www.das-ac.mx.
+
+19
+
+Table 3.1: ENHRUM’s coverage
+
+Region
+
+States
+
+1. South-Southeast
+
+Oaxaca
+
+Veracruz
+
+Yucatan
+
+2. Central
+
+State of Mexico
+
+Puebla
+
+3. West Central
+
+Guanajuato
+
+Nayarit
+
+Zacatecas
+
+4. Northwest
+
+Baja California
+
+Sonora
+
+Sinaloa
+
+5. Northeast
+
+Chihuahua
+
+Durango
+
+Tamaulipas
+
+Source: ENHRUM 2007
+
+Even though this survey has three rounds of data, for the years 2002, 2007 and 2010, the last round is not representative. For the years 2002 and 2007, there are two regional SAMs: for the West Central and for the South-Southeast regions. These SAMs were used to calibrate MCGE models to estimate the eﬀects in rural Mexico of diﬀerent policies and other exogenous shocks (Taylor et al., 2005; Gonza´lez and Yu´nez-Naude, 2007; M´endez-Barr´on, 2004). However,recently Herna´ndez-Solano (2015) developed, in my opinion, the most complete SAM for representing rural Mexico by constructing a diﬀerent matrix for each of the surveyed regions.
+
+In his working paper, Hern´andez-Solano depicted the economic interactions of ﬁve types of households according to land ownership and use, distinguishing their main activities that include agricultural activities, construction-related activities, commerce and services, natural resource activities and a compounded category for the remaining activities. With these activities, agents produced and/or consumed 16 commodities, of which 9 were crops and 3
+
+20 livestock related. Speciﬁcally, Hern´andez-Solano analyzed the following agricultural commodities: irrigated maize, rainfall maize, irrigated beans, rainfall beans, other irrigated cyclical crops, other rainfall cyclical crops, coﬀee, sugar cane and other perennial crops.
+For the value-added part of the SAM, Herna´ndez-Solano included 4 types of factors in order to produce commodities: physical capital, land, waged labor and family-owned factors (including family labor).
+For the present study, Herna´ndez-Solano’s SAMs were adapted and extended to cover the data requirements for the research. Speciﬁcally, “other crops” were disaggregated in order to model production of vegetables and citrus: two crops that are important throughout the country and candidates for organic production.
+The second extension of Hernandez-Solano’s SAMs concerns the use of fertilizers and pesticides. In his SAMs, Herna´ndez-Solano assumed that transactions corresponding to these inputs were part of the local “Commerce and Services” activity, and due to a lack of detailed information he supposed that half of them were bought in the rural region of the locality and the other half were bought in other parts of Mexico. However, these inputs are crucial for the study of organic agriculture.
+The approach taken for this present study was to treat fertilizers and pesticides as two extra productive factors, and to consider that households would not have ready access to such factors and that they must then be bought in the rest of the country. This is not a very diﬃcult conclusion to come to, taking into account that by analyzing the panel data of the ENHRUM, it was found that out of the 117 diﬀerent pesticides the surveyed households claimed to use, only 4 types (Bio Mix, Foliar, Greenworld, Greenzit) were not chemically produced, and these 4 represented less than 2% of total pesticide usage. Fertilizer usage had a similar behavior. Given the size of the surveyed rural areas, we can deduce that the possibility of these areas having a chemical industry that supplies chemical fertilizers and pesticides is quite small, thus producers would have to obtain them elsewhere.
+
+21
+Finally, Herna´ndez-Solano’s research only used the data on leased land included in the survey in order to obtain land rents, i.e. land value added. For this present study, land value added was properly incorporated in the SAMs and in the model by estimating land rents, whether or not households lease in or lease out land for their agricultural production. Hedonic prices methods (Rosen, 1974) were used in order to generate the required information, taking into account the following land characteristics: plot size, irrigation scheme, quality of land, land inclination and land usage. ENHRUM’s data was used for such exercise. The following tables describe the main structure of the SAM (and model), shared by the ﬁve rural regions of Mexico. Table 3.2 presents the ﬁve household types, distinguished by land ownership and plot size.
+
+Table 3.2: Household classiﬁcation
+
+Household
+
+Ha
+
+Landless
+
+H1
+
+H2
+
+Land properties
+
+H3
+
+H4
+
+H5
+
+na na <2 Ha (2,5] Ha >5 Ha
+
+Source: SAM matrices elaborated with data from ENHRUM
+
+The constructed SAMs characterize these ﬁve household types as participating in 6 different activities that produce 16 commodities, as exhibited in Table 3.3.
+
+In order to produce, households use the factors they own, land they lease in, and inputs they buy from outside the region where they are located (Table 3.4).
+
+Following Hernandez-Solano there is also a savings/investment or capital account and three external or exogenous: government, rest of Mexico and rest of the world.
+
+22
+
+Table 3.3: Activities and commodities
+
+Activities Hydric scheme
+
+Commodities Type of crop
+
+Agricultural
+Livestock Construction Commerce and Services Natural Resources
+Other
+
+Irrigation
+
+Maize
+
+Vegetables
+
+Other
+
+Rainfall
+
+Maize
+
+Vegetables
+
+Other
+
+Coﬀee
+
+Citrus
+
+Other
+
+Cattle, Goats and Sheep
+
+Horses
+
+Swine and poultry
+
+Construction
+
+Commerce and Services
+
+Natural Resources
+
+Other
+
+Source: SAM matrices elaborated with data from ENHRUM
+
+cyclical cyclical cyclical cyclical cyclical cyclical perennial perennial perennial
+
+Table 3.4: Factors of production
+Factors
+owned by Hh Physical capital Land Waged labor Family-owned factors
+not owned by Hh Fertilizers Pesticides and other additives
+Source: SAM matrices elaborated with data from ENHRUM
+
+23
+Chapter 4
+Model, Experiments and Results
+4.1 Model
+Due to the lack of a standard model for analyzing an agricultural product diﬀerentiation, in order to simulate the introduction of organic agriculture in rural Mexico, the standard models of Taylor et al. (2005) and Taylor and Filipski (2014) used in Hern´andez-Solano (2015) were adapted and extended for the present research. These models, although simpler than the one proposed by Fujita and Hamaguchi, are very well grounded in microeconomic theory and have been successfully used for policy analysis in very diﬀerent research contexts. The following description will depict the model used for the organic agriculture introduction in rural Mexico1.
+Household Demands
+Rural households’ consumption demands are assumed to be derived from a Cobb-Douglas utility function, which assumes that households spend their income in ﬁxed proportions, with a degree of substitutability among diﬀerent commodities. In order to do so, households
+1An intermediate-input model was used in order to check the result’s consistency, modelling agrochemicals as inputs. A small variation to the SAM was required in order to model agrochemicals as inputs instead of as value adding factors. Results were similar to the ones from modelling agrochemicals as factors. The intermediate-inputs model equations are depicted in Appendix A
+
+maximize their utility Subject to their full income
+
+24
+
+Uh(Xh,i) =
+
+X βh,i h,i
+
+i
+
+(4.1)
+
+Yh = (πi) + (wof fof ) + Yh
+
+i
+
+of
+
+(4.2)
+
+Where Xh,i is demand for consumption of commodity i by household h, βh,i are the para-
+
+meters for marginal budget shares, (πi) is the sum of proﬁts, (wof fof ) is the sum of
+
+i
+
+of
+
+the values of the factors owned (supplied) by the household and Yh is the exogenous income
+
+which include remittances from the rest of Mexico and the rest of the world, government cash
+
+transfers and transfers from other households located outside the corresponding rural region.
+
+Production
+
+For the production side of the model, rural households were assumed to be proﬁt maximizers. Their technology is assumed to be a Cobb-Douglas production function:
+
+Qh,i = Ah,i
+
+F αh,i h,i
+
+i
+
+(4.3)
+
+Where Qh,i is production of commodity i by household h , Ah,i is the shift parameter, Fh,i are factor demands and αh,i are the parameters for factor shares in total value-added. By ﬁrst order conditions one can easily get that each factor is paid at its marginal product.
+
+General equilibrium constraints and closure rules
+
+Evidence shows that prices of commodities produced in rural Mexico are exogenous to the producing region (Jaramillo et al., 2015). Thus, goods market clearing constraint takes into account the sum of supplied (produced) and demanded (consumed) quantities of a certain commodity in order to obtain the market surplus (MS) for each good.
+
+M Si = (Qh,i − Xh,i)
+h
+
+(4.4)
+
+25
+Following evidence with respect to the factors of production, their prices are determined within each rural regions, but are exogenous to their rural households (Taylor et al., 2005). Thus, supply equal to factor demand within the region is the factor market clearing condition2.
+
+F M Si ⇒ F Dh,i = F Sh,i
+
+h
+
+h
+
+(4.5)
+
+There are two exceptions to the described closures. First, the price of maize is endogenous for
+
+subsistence households (this is the case for households producing maize for self-consumption
+
+in plots with less than 2 Ha). For this type of households its consumption and production
+
+decisions are based on a shadow or subjective price. In this way, the relevant closure rule
+
+for this type of commodity is that supply and demand of maize are equal. Second, family
+
+factors (family labor in particular) is treated in a similar fashion to maize, i.e. to make their
+
+decisions, households use an implicit or shadow price for family factors.
+
+In addition to the closures above described, savings and investment were equalized. Macro accounts’ closures (government, rest of the world, etc.) are not required for the MCGE because they are exogenous to the rural regions.
+
+In summary, all goods are treated as tradables therefore their prices are determined outside the rural sector (except for maize). On the other hand, all factors are tradable within the rural regions, hence, their prices are determined regionally (the exception are family factors).
+
+4.2 Simulations
+The model calibration of the 5 Mexican rural regions was done using the corresponding SAMs and with the use of the General Algebraic Modeling System (GAMS) software.
+2Capital is assumed to be ﬁxed at a household level. This implies that the MCGE model can be considered as a short run model.
+
+26 To determine the economic eﬀects of diﬀerentiating rural agricultural production via organic agriculture, two sets of simulations were developed: for coﬀee and for fruits and vegetables in the regions and households producing these crops for the market. The ﬁrst set of simulations was focused on the most important organic commodity in Mexico, coffee. The objective was to ﬁnd the eﬀects of introducing this production technology into the South-Southeast region because the surveyed states in this region do not have, nowadays, an important organic coﬀee production even though their geographical location could allow them to3 . Only household 4, was included in the simulations related to the introduction of organic coﬀee. The second set of simulations correspond to organic production of citrus and vegetables in the South-Southeast, Central and Northwest regions of Mexico, wich are the regions with a potential to produce this type of commodities.
+Three shocks were implemented in order to determine the general equilibrium eﬀects of an organic agriculture introduction. The ﬁrst shock consisted in reducing fertilizer and pesticide demands; following the literature, the second was based on the imposition of a yield change; ﬁnally an exogenous price premium for organic crops was simulated.
+For modelling the fertilizer and pesticide demand reduction three approaches were followed. The ﬁrst approach ﬁxed the corresponding factor demand to zero as in Znaor’s research. The second approach was to ﬁx the output elasticity parameters to zero for fertilizer and pesticides. The third approach, which is common for modeling structural changes, used a diﬀerent SAM that contained changes in production technology for each of the commodities analyzed, to recalibrate the model.
+The three approaches for modelling fertilizer and pesticide demand reductions were required because the ﬁrst (Znaor’s approach) does not have an economic interpretation. Due to the fact that Cobb-Douglas production and utility functions were chosen for the model, a 100% reduction in a demanded factor leads to a 100% production reduction for the activity
+3Chiapas, a major producer of coﬀee (traditional and organic) is not part of the South-southeast States included in the ENHRUM sample.
+
+27 that used the factor. However, this simulation is used for comparison because its eﬀects can explain those found with the other approaches.
+The second approach implies a change in production technology consistent with the product diﬀerentiation theory discussed in Chapter 2 Section 1. Nonetheless, this approach has its drawbacks, because upon applying it, decreasing returns to scale were found for the production functions of some commodities for which these factors were important in the ﬁrst place. This conclusion is reached because the model assumes that the sum of the output elasticity parameters in the Cobb-Douglas production function is equal to one. By ﬁxing agrochemicals’ output elasticities (alphas) to a certain level diﬀerent from the one obtained in the calibration, the sum can be diﬀerent to one. If agrochemicals have a relatively high importance for crop production with respect to the rest of productive factors, by ﬁxing their parameters to zero the production function will not be a zero degree price homogeneous function.
+The last approach takes into account the literature review, which suggests that when converting to an organic system, more labor is needed for crop production, increasing labor demands (for both waged and family labor) by the same amount that fertilizers and pesticides are reduced. This was achieved by ﬁxing the fertilizer and pesticide demand in the SAM to zero and adding half of that amount to each of the household’s labor demands. Then the model was recalibrated in order to take into account the new structure in the economy. This method was used because it maintains constant returns to scale as the organic production system is introduced.
+The next section will describe the shock results for each or the approaches. It must be noted that the corresponding tables show the eﬀects of the shock in an additive way. First, the factor demand reduction shock was modelled. Then a yield change was added. Finally a factor demand, plus yield change, plus price premium eﬀect is shown, which will be referred as the total eﬀect. The percentage changes depicted in the following tables are with respect to the original equilibrium calibration.
+
+28
+The second set of simulations focused on two groups of crops: citrus and vegetables, which have potential given the existing experience of Mexican farmers in harvesting and selling them to the world market. As for coﬀee, this set of simulations consisted in three shocks (fertilizer and pesticide demand reduction, yield change and price premium). However, diﬀerently to the coﬀee result tables, only the total eﬀect is reported for this set of simulations.
+Citrus simulations only presented conclusive results in the South-Southeastern region, whereas for vegetables, the simulations presented conclusive results in the South-Southeastern, Central and Northwestern regions.
+In summary, two sets of simulations were performed: Organic coﬀee production in the South-southeast rural region for household 4; and organic citrus and vegetables production in three rural regions (South-southeast, Center and Northwest). In each of the two sets of simulations, three shocks were applied related to organic production: 1) a reduction in the use of agrochemicals (fertilizers and pesticides); 2) yield change; and 3) a price premium. The ﬁrst simulation included three approaches: 1) a reduction of agrochemicals demand to zero; 2) a ﬁxation of the output elasticity parameters to zero for fertilizer and pesticides; and 3) to change the production technology for each of the commodities analyzed, recalibrating the model.
+The following section will explain the results. The tables used for this purpose were all prepared by the author with results from the model developed in this study.
+4.3 Results
+Coﬀee product diﬀerentiation simulations. Based on the literature review, in this research two speciﬁc shocks were modelled concerning
+
+29 yield and prices. A price premium of 20% was modelled, as in Znaor et al. (2005), and a yield of 2.18 times the conventional yield, following the research by Go´mez-Cruz et al. (2007). After applying the simulations concerning coﬀee diﬀerentiation, the literature review would suggest that with higher prices, higher crop yield and lower costs of production (by demanding zero fertilizers and pesticides), production would increase. However, the results of the coﬀee simulation for rural Mexico using a model based on microeconomic theory are quite diﬀerent.
+Table 4.1 shows that by applying the ﬁrst approach concerning the agrochemical demand reduction, which ﬁxed factor demand to zero, household 4’s coﬀee production decreases 100%. Upon stopping coﬀee production, household 4’s land demand decreases. The net hired factor, which is factor supplied minus factor demanded, for the land factor was found to increase, implying that the household requires less land. However, because of the neoclassical assumption made, that factor supply is equal to factor demand within the region, the reduction in agrochemical demand by household 4 must be compensated by an increase in agrochemical demand by other households. In this case, household 1 shows a 0.75% increase in demand for land for rainfed maize production, which represents a 0.52% increase in net hired land. These changes cause household 1 to increase its rainfed maize production by 0.75%. As can be seen in Table 4.2, which depicts percentage changes in household 1, commerce and services have a production decrease because hired labor moves from this activity to rainfed maize production.
+As explained in the previous section, commodity prices are exogenously determined under the price taker assumption, and the only price that changes is the price of coﬀee for household 4, due to product diﬀerentiation. Factor prices, which are endogenously determined, have a percentage change of approximately zero because the simulation is aﬀecting only one commodity from one household, representing a small change in real terms. This eﬀect is reinforced by the fact that household 1 has increased demand for fertilizers and pesticides, which tells us that the supplied factors only moved from one crop to another.
+
+30 Table 4.1 also shows the total eﬀect decomposition. The three simulations using this approach suggest that the predominant, if not the only, eﬀect comes from ﬁxing factor demand. As noted above, this result is biased, because when ﬁxing demand for a factor to zero and using a Cobb-Douglas function, the production will always be zero4. Nevertheless, these results are relevant because the results of the diﬀerent techniques demonstrate similar overall tendencies.
+4The results apply as well for a CES or Leontief technologies.
+
+Table 4.1: First approach: Zero demand for fertilizers and pesticides. Household 4 (1.18% yield increment and 20% price premium)
+
+ORIGINAL EQUILIBRIUM FERTILIZER AND PESTICIDE REDUCTION
+
+%
+
+YIELD CHANGE
+
+%
+
+TOTAL EFFECT
+
+%
+
+OUTPUT
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67
+108144.7 466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 0.00
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -100.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 0.00
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -100.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 0.00
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+31
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -100.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+NET HIRED FACTORS
+
+Land Capital Waged labor Family factors Fertilizers Pesticides
+
+1703.72
+-2105105.92
+-381430.11 -19647.63
+
+1796.41
+-2080982.48 64297.16
+-363203.16 -18243.16
+
+5.440%
+-1.146%
+-4.779% -7.148%
+
+1796.41
+-2080982.48 64297.16
+-363203.16 -18243.16
+
+5.440%
+-1.146%
+-4.779% -7.148%
+
+1796.41
+-2080982.48 64297.16
+-363203.16 -18243.16
+
+5.440%
+-1.146%
+-4.779% -7.148%
+
+FULL INCOME
+
+Full income
+
+20472879.24
+
+20472879.24
+
+Note: Total eﬀect refers to fertilizer and pesticides demand reduction, plus yield change plus price premium
+
+0.000%
+
+20472879.24
+
+0.000%
+
+20472879.24
+
+0.000%
+
+32
+Table 4.2: First approach: Zero demand for fertilizers and pesticides. Household 1. (1.18% yield increment and 20% price premium)
+
+% CHANGE. HOUSEHOLD 1.
+
+OUTPUT
+
+Rainfed maize Commerce and services
+
+0.75 -2.5
+
+NET HIRED FACTORS
+
+Land Waged Labor Family factors
+Fertilizers Pesticides
+
+0.52 -0.02
+0 0.75 0.75
+
+GOODS MARKET SURPLUS
+
+Rainfed maize Commerce and services
+
+1.77 -9.86
+
+Using the second approach, by ﬁxing the output elasticity parameter of fertilizers and pesticides to zero, the disappearance of coﬀee production is solved in some measure. However, the results have similar tendencies to those of the ﬁrst approach.
+
+After organic coﬀee product diﬀerentiation, household 4 decreases its coﬀee production by 98.9%, as can be seen in Table 4.3. The reduction in coﬀee production, due to a 100% fertilizers and pesticides demand reduction and a 98.68% reduction in land and labor demands, generate a 5.37% change in net hired factors by this household. As was said earlier, this percentage change implies that this household is reducing its land demand. However, because of the neoclassical assumption, another household must present an increase in land demand. Thus, household 1 beneﬁts from household 4’s decrease in land demand. Household 1 has a net household factor demand increase of 0.52%, which represents a 0.74% increase in land demand for rainfed production. Household 1’s net factor demand for fertilizers and pesticides increases as well, by 0.74%, and these factors are being used for rainfed maize production.
+
+Table 4.3 also shows that household 4 presents a 2.47% reduction in commerce and services production with respect to the initial equilibrium, due to a reduction in family labor
+
+33 demand of the same magnitude. The reduction in family labor demand and the fact that household 2 presents a 9.75% increase in demand for both types of labor implies that a labor structural re composition is happening in the region due to the introduction of organic coﬀee by shifting workers towards the activities that value the most their labor. The percentage changes that the other households face with this approach are shown in Table 4.4.
+Commodity prices are exogenously determined, and the only one that changes is the price of coﬀee for household 4, due to product diﬀerentiation. Factor prices, as in the ﬁrst approach’s simulation description, present minimal changes that are approximately zero. As in the ﬁrst approach, the fact that all factors except capital are tradables allows for a reallocation of the fertilizers and pesticides that are no longer being used by household 4.
+An important result from the eﬀect decomposition of Table 4.3 is that with this approach, the yield “premium” does have a positive impact on organic coﬀee production. However the negative eﬀect on production from the decrease in factor demand is greater than the positive impact of the increase in yield. The last column, which depicts the total eﬀect of diﬀerentiation, including a price premium, shows that the price premium cancels out the yield’s positive eﬀect. This result shows that within the double character optimization problems faced by a typical rural households, the negative price eﬀect that consumers experience with a decrease in their purchasing power is greater than the positive price eﬀects from charging a price premium over their production. The decomposition of the eﬀect shows that the fertilizer and pesticide reduction, yield “premium” and price premium generate a positive increase in household 4’s income. The ﬁnal eﬀect generates a total positive income increase of 0.001% for household 4.
+
+Table 4.3: Second approach: Zero demand for fertilizers and pesticides. Household 4 (1.18% yield increment and 20% price premium)
+
+34
+
+ORIGINAL EQUILIBRIUM FERTILIZER AND PESTICIDE REDUCTION
+
+%
+
+YIELD CHANGE
+
+%
+
+TOTAL EFFECT
+
+%
+
+OUTPUT
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 108144.7
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 1186.90
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9058271.77 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -98.902% 0.000% 0.000% 0.000% 0.000% 0.000%
+-2.467% 0.000% 0.000%
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 521.68
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9056334.19 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -99.518% 0.000% 0.000% 0.000% 0.000% 0.000%
+-2.488% 0.000% 0.000%
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 1186.90
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9058271.77 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -98.902% 0.000% 0.000% 0.000% 0.000% 0.000%
+-2.467% 0.000% 0.000%
+
+NET HIRED FACTORS
+
+Land Capital Waged Labor Family factors Fertilizers Pesticides
+
+1703.72
+-2105105.92
+-381430.11 -19647.63
+
+1796.40
+-2080984.07 175065.18 -363203.16 -18243.16
+
+5.440%
+-1.146%
+-4.779% -7.148%
+
+1795.96
+-2081098.85 174232.16 -363203.16 -18243.16
+
+5.414%
+-1.140%
+-4.779% -7.148%
+
+1795.19
+-2081300.19 172770.93 -363203.16 -18243.16
+
+5.369%
+-1.131%
+-4.779% -7.148%
+
+FULL INCOME
+
+Full income
+
+20472879.24
+
+20472880.53
+
+0.00001%
+
+20472973.94
+
+0.00046%
+
+20473137.79
+
+0.001%
+
+35
+Table 4.4: Second approach: Zero demand for fertilizers and pesticides. Households 1 and 2 (1.18% yield increment and 20% price premium)
+
+% CHANGE. HOUSEHOLD 1 % CHANGE. HOUSEHOLD 2
+
+OUTPUT
+
+Rainfed maize Commerce and services
+
+0.74
+
+9.75
+
+NET HIRED FACTORS
+
+Land Waged labor Family factors
+Fertilizers Pesticides
+
+0.52 -0.02 ¡100 0.74 0.74
+
+-0.99 ¿100
+
+GOODS MARKET SURPLUS
+
+Rainfed maize Commerce and services
+
+1.77 -9.86
+
+Note: the percentage changes in net hired family labor and net hired fertilizers for households 1 and 2 present large percentage changes because in the original equilibrium these indicators were approximately zero.
+
+1.77 -9.86
+
+When taking the third approach, using a SAM that incorporates the reduction in factor demand for fertilizers and pesticides, the results are similar with respect to the previous two approaches. However, as in the ﬁrst approach, coﬀee production is reduced by 100%. In this approach the households that beneﬁt from the factors no longer used by household 4 are households 1 and 2. Table 4.5 shows household 4’s changes after coﬀee product diﬀerentiation.
+
+The coﬀee product diﬀerentiation modeled for household 4 with this approach generates a 100% decrease in the production of coﬀee by the household. Due to the assumption made in the model, other households use the productive factors that are no longer being used by household 4. With this approach, household 1’s demand for land, hired and family labor, fertilizers and pesticides used for rainfed maize production increases by 0.75%. These increases in factor demand give rise to an increase in rainfed maize production of 0.75%. In order to achieve this production increase, the family labor demanded for commerce and services production decreases by 3.9%. Once again, due to the small economy assumption, the labor force is relocated to the activities that make better use of it.
+
+36 Household 2 also beneﬁts from the decrease in coﬀee production by household 4. The family and hired labor no longer being used by household 4 are also reallocated to household 2’s activities. Speciﬁcally, commerce and services present an increase of 13.96% in both hired and family labor. This rise in demand allows household 2 to increase its commerce and services production by 13.96%. The increased production is reﬂected in Table 4.6, where the market surplus shows an increase of 71.96%. Net hired family factors have percentage changes greater than 100% because in the original equilibrium they were approximately zero, meaning that they used mainly their factor endowment for production activities.
+The decomposed results from this simulation show a diﬀerent path of impact for the product diﬀerentiation. In the previous approaches, the yield premium had a neutral or positive eﬀect on production, and reduction in factor demand was the cause of decreases in production. However in the third approach, the yield premium generates negative eﬀects, as can be seen in Table 4.5.In this approach the production after the demand reduction does not suﬀer any change because the reduction is made within the SAM. To interpret this results we have to take into account that productive households do not adjust automatically after the agrochemical reduction has been modeled. However, after the yield shock is modeled there is an adjustment in production which results in a reallocation of factors to the activities that value the most those resources
+
+Table 4.5: Third approach: Zero demand for fertilizers and pesticides. Household 4 (1.18% yield increment and 20% price premium)
+
+37
+
+ORIGINAL EQUILIBRIUM FERTILIZER AND PESTICIDE REDUCTION
+
+%
+
+YIELD CHANGE
+
+%
+
+TOTAL EFFECT
+
+%
+
+OUTPUT
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 108144.7
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67
+108144.70 466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 0.00
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -100.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 0.00
+466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+0.000% 0.000% -100.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+NET HIRED FACTORS
+
+Land Capital Waged Labor Family factors Fertilizers Pesticides
+
+1703.72
+-2105105.92
+-381430.11 -19647.63
+
+1703.72
+-2114921.63 -9815.71
+-363203.16 -18243.16
+
+0.000%
+0.466%
+-4.779% -7.148%
+
+1796.41
+-2080982.48 64297.16
+-363203.16 -18243.16
+
+5.440%
+-1.146%
+-4.779% -7.148%
+
+1796.41
+-2080982.48 64297.16
+-363203.16 -18243.16
+
+5.440%
+-1.146%
+-4.779% -7.148%
+
+FULL INCOME
+
+Full income
+
+20472879.24
+
+20472879.24
+
+0.000%
+
+20472879.24
+
+0.000%
+
+20472879.24
+
+0.000%
+
+38
+Table 4.6: Third approach: Zero demand for fertilizers and pesticides. Households 1 and 2 (1.18% yield increment and 20% price premium)
+
+OUTPUT
+
+% CHANGE. HOUSEHOLD 1
+
+% CHANGE. HOUSEHOLD 2
+
+Rainfed maize Commerce and services
+
+0.75 -3.9
+
+13.96
+
+NET HIRED FACTORS
+
+Land Waged labor Family factors
+Fertilizers Pesticides
+
+0.52 -0.02 ¿100 0.75 0.75
+
+-1.42 ¿100
+
+GOODS MARKET SURPLUS
+
+Rainfed Maize Commerce and services
+
+1.77 -15.38
+
+Note: the percentage changes in net hired family factors for households 1 and 2 present a large increase, because in the original equilibrium these indicators were approximately zero.
+
+71.96
+
+As can be seen in the result tables, no substantial income change is found for any of the decomposed elements of the simulations. Nonetheless, if producer-households in rural areas optimize both as producers and consumers, an implicit eﬀect is generated, and this is because of the fact that they live in small, open economies and that prices are ﬁxed exogenously. Combined with the fact that their income is endogenously determined and that it depends on farm proﬁts, the Slutsky income and substitution eﬀects are very relevant for determining if a household does or does not beneﬁt from simulated policy.
+One way of determining if an agent or household beneﬁts from these shocks, that could be policy imposed if a government were to implement a rural agricultural conversion into organic agriculture, is by generating welfare eﬀect indicators for the compensated and equivalent variations. With these two eﬀect indicators it is possible to see the eﬀect of the introduction of organic agriculture on Mexican rural households. The interpretation of these indicators comes directly from indirect utility theory. For example, Table 4.7 shows that household 4 has a compensated variation of -1094.18 pesos, which implies that after the introduction of organic agriculture, this household group has an income 1094.18 pesos lower than that needed for achieving the utility level of the original equilibrium.
+
+39
+Table 4.7: Second approach: Equivalent and compensated variations. Household 4 (1.18% yield increment and 20% price premium)
+
+Equivalent Variation, Compensated Variation, Price Index
+Price Index Equivalent Variation Compensated Variation
+
+ORIGINAL EQUILIBRIUM
+1 0 0
+
+TOTAL EFFECT
+1 -1094.11 -1094.18
+
+The equivalent variation can be thought of as ex ante measure for determining the eﬀect a given shock or simulation will have. For example, household 4, for the second approach, has an equivalent variation of -1094.18 pesos, which means that before the introduction of organics takes place, if we want to induce the same utility level this household will have after it, an income reduction of 1094.18 pesos is needed. The equivalent and compensated variations obtained by using the third approach, depicted in Table 4.8, have a similar interpretation.
+
+Table 4.8: Third approach: Equivalent and compensated variations. Household 4 (1.18% yield increment and 20% price premium)
+
+Equivalent Variation, Compensated Variation, Price Index
+Price Index Equivalent Variation Compensated Variation
+
+ORIGINAL EQUILIBRIUM
+1 0 0
+
+TOTAL EFFECT
+1 -1352.64 -1352.73
+
+Even though the price index does not show an increase, because only one commodity from one household is experiencing a price increase, the equivalent and compensated variations show that the income eﬀect from the Slutsky equation is generating an impact on the regional household’s welfare as a response to the coﬀee product diﬀerentiation.
+
+Citrus and Vegetable Simulations
+
+To complement the analysis, two more sets of simulations were developed for the 5 regions, assuming that only medium-size rural households (household 4) diﬀerentiate their production to include organic citrus or organic vegetables.
+
+40 Citrus simulations assumed a yield reduction of 20% with respect to conventional citrus and a price premium of 52%, which was calculated as an average from the Rodale Institute (2015) Organic Price Report. The Rodale Institute’s price report uses USDA information to generate price comparisons in diﬀerent markets across the USA, speciﬁcally using average prices in four markets: Boston, Los Angeles, Philadelphia and San Francisco.
+For the vegetables simulations three scenarios were considered for yield diﬀerentials. The ﬁrst scenario assumed an organic yield reduction of 20% with respect to conventional counterparts. The second assumed that no yield diﬀerential was present after the diﬀerentiation. The third assumed an organic yield “premium” of 20%. The three scenarios assumed a price premium of 78%, obtained from the Rodale Institute (2015), which is the average price premium for 34 vegetable crops.
+However, a citrus simulation could only be performed in the South-Southeastern region because no production was found in other regions by household 4. Three types of vegetable simulations were performed. Vegetables divided into three categories, according to the assumptions made about the yield performance of organic products, and each simulation analyzed vegetables with a diﬀerent average yield performance. Vegetable simulations could only be performed for the South-Southeastern, Central and Northwestern regions because household 4 did not have production in other regions. Only one commodity was diﬀerentiated in each simulation set in order to see if the eﬀects found for the introduction of organic coﬀee are maintained. The second approach was followed, ﬁxing the output elasticity parameters to zero, because of the homogeneity found in the results for the organic coﬀee simulations. Only the total eﬀect simulation, which includes price premium, factor demand reduction and some change in yield, was performed also because the coﬀee simulations did not show signiﬁcant diﬀerences of applying isolated or compounded shocks. Results were condensed into Table 4.9 to Table 4.14 for household 4.
+As can be seen in Tables 4.9 and 4.10, the citrus simulation has similar results with respect to the coﬀee simulations, where the diﬀerentiated product presents a decrease in
+
+41 output as well as in the commerce and services activity. Net hired factors show that all the production factors are being used in less quantity. Speciﬁcally, land presents a reduction of 2.5028% because of the 96% reduction of citrus production. Due to the neoclassical assumption, the households that beneﬁt from the factors no longer being used by household 4 are household 2 and household 5, for commerce and services production and other perennials production, respectively. Table 4.10 shows that household 4 has an increase in marginal consumption of 0.003% as a result of an increase of approximately the same magnitude in income. Household 4 does not experience increases in production of any other commodity. The fact that prices are exogenously determined and that no change is observed in factor prices suggests that the increase in income comes directly from factor reallocation in other productive activities. Another important result comes from the market surplus, which shows that almost all commodities for household 4 have marginal percentage decreases because of the constant quantity produced and the marginal increase in consumption quantity.
+As for the vegetable simulations in the South-Southeastern region, shown in Tables 4.9 and 4.10, one can observe that the eﬀects of product diﬀerentiation are almost the same as those found in the coﬀee simulations. Once again, diﬀerentiation caused a 100% decrease in the vegetables production and a reallocation eﬀect is observed for the factors no longer used for that purpose. In this case the households that beneﬁt are household 2 and household 5, which present a 0.9% increase in commerce and services production and a 0.09% increase in other perennial production, respectively. Neither increases nor decreases in yield occasioned income change. This means that no compensated or equivalent variation is needed for household 4 to have the same level of utility that it had in the initial equilibrium.
+Even though the results for the Central region follow the same tendency, with the production of the diﬀerentiated goods decreasing signiﬁcantly, these results are interesting because the yield assumptions change the outcome of household 4’s production. As can be seen in Tables 4.11 and 4.12, in this region the higher the yield premium from diﬀerentiating, the less the vegetables production is reduced. In this case, the neoclassical assumption that leads to a reallocation of factors also generates an increase of 76% in the production of natural
+
+42 resource commodities for household 1. Also, household 4’s coﬀee production increases as a result of the decreased vegetable production. However, this is not enough to maintain or increase household 4’s income. As in the previous results, no price change is observed, except for the diﬀerentiated commodity, because the price for this commodity is exogenously determined. Factor prices do not change, because the real term change decrease of factor demand is not signiﬁcant with respect to total supply in order to generate a shift in factor prices. However, a substitution eﬀect can be observed as the compensated and equivalent variations of the 3 simulations are negative, implying that after product diﬀerentiation, the welfare of household 4 decreases.
+Finally Tables 4.13 and 4.14 show the results for household 4 in the Northwestern region. As can be seen, the results are similar to those found in the previous simulations. The production of the diﬀerentiated product decreases, which releases the unused factors into the regional economy. Because of the neoclassical assumption, other households beneﬁt from the released factors, using them for their productive activities. In these cases, the household that beneﬁts is household 2, which uses the increased labor demand to increase its commerce and services production. Because of the fact that prices are exogenously determined and because factor prices are do not change, a substitution eﬀect can be observed for the compensated and equivalent variations, which are negative even though the price index does not changed. As in the previous experiments, what is being observed is a reallocation of the productive factors that are no longer being used by household 4, because of its decrease in vegetable production. These results are very similar to those found for the South-Southeast region, where the yield changes apparently do not aﬀect the ﬁnal outcome.
+What the simulations in this research have found is that, by explicitly modeling the economic conditions of a rural region, the proﬁtability of a welfare-focused agricultural product diﬀerentiation policy may diﬀer from the expected result. Even though at ﬁrst glance we could think that a price and yield premium would help farmers reduce their poverty vulnerability, as was proposed by Bacon (2005), if the market imperfections that constitute the economic environment of rural areas are not taken into account such policy could endanger
+
+43 the lives of those individuals or at the best, generate no improvement in their welfare at all.
+All the previous simulations done in this study indicate that within the Slutsky equation framework, there is a higher substitution eﬀect than income eﬀect, even when taking into account what Taylor and Adelman (2003) call the household proﬁt eﬀect, which contemplates the productive and consumer elements of rural households. Given that consumption demands present either marginal changes or no changes at all and that production of the diﬀerentiated product decreases, we can say that after the diﬀerentiation, the households become net demanders of the diﬀerentiated commodity. This demand must be satisﬁed outside the rural economy.
+An explanation for the decrease in production of the diﬀerentiated products comes from the fact that no assumptions were made about the preferences of the rural agents with respect to the organic commodities, so even when there are price premiums or yield premiums, rural agents consume the organic commodity as if it were the conventional commodity. Also, no adjustments were made to simulate an external agent, say a governmental institution, which guarantees a demand quantity for the diﬀerentiated production, which would incentivize diﬀerentiation.
+Even though this model has its limits and the simulations are made in a very stylized way, the most important result is that this type of analysis is not as simple as the FAO and the OECD suggest. Speciﬁcally in Znaor et al.’s research, the authors do not express or suggest taking into account the characteristics of a small price-taking economy. This implies that the multiplier eﬀects of an economy and all the interactions relevant for the development of a small area are not taken into account even though they should be, due to the nature of the research.
+
+Table 4.9: Second approach: Zero demand for fertilizers and pesticides. South-southeast region. Citrus and vegetables simula-
+
+tions.
+
+ORIGINAL EQUILIBRIUM CITRUS SIMULATION
+
+VEGETABLES SIMULATIONS
+
+% Lower Yield
+
+%
+
+Constant Yield
+
+%
+
+Higher Yield
+
+%
+
+OUTPUT
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 108144.7 466669.08 611308.22 2174223.56 512913.08 283833.94
+9287364.26 545383.25 34482.03
+
+9055241.38 444352.82 10212.03
+826866.98 8686.67 108144.70 20508.65 611308.22 2174223.56 512913.08 283833.94
+8828398.86 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+
+9055241.38 444352.82
+0.00
+
+0.000% 0.000% -100.000%
+
+9055241.38 444352.82
+0.00
+
+0.000% 0.000% -100.000%
+
+9055241.38 444352.82
+0.00
+
+0.000% 0.000% -100.000%
+
+0.000% 0.000% 0.000% -95.605% 0.000% 0.000% 0.000% 0.000%
+
+826866.98 8686.67 108144.70 466669.08 611308.22 2174223.56 512913.08 283833.94
+
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+
+826866.98 8686.67 108144.70 466669.08 611308.22 2174223.56 512913.08 283833.94
+
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+
+826866.98 8686.67 108144.70 466669.08 611308.22 2174223.56 512913.08 283833.94
+
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+
+-4.942% 0.000% 0.000%
+
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+
+9287364.26 545383.25 34482.03
+
+0.000% 0.000% 0.000%
+
+44
+
+NET HIRED FACTORS
+
+Land Capital Waged labor Family factors Fertilizers Pesticides
+
+1703.72
+-2105105.92
+-381430.11 -19647.63
+
+1746.36 0.00
+-2007965.76 543697.53 -369755.79 -16933.93
+
+2.503%
+-4.615%
+-3.061% -13.812%
+
+1703.95 0.00
+-2102828.32 7583.85
+-381079.75 -19647.63
+
+0.013%
+-0.108%
+-0.092% 0.000%
+
+1703.95 0.00
+-2102828.32 7583.85
+-381079.75 -19647.63
+
+0.013%
+-0.108%
+-0.092% 0.000%
+
+1703.95 0.00
+-2102828.32 7583.85
+-381079.75 -19647.63
+
+0.013%
+-0.108%
+-0.092% 0.000%
+
+FULL INCOME
+
+Full income
+
+20472879.24
+
+20473638.09
+
+0.004% 20472879.24 0.000%
+
+20472879.24
+
+0.000% 20472879.24 0.000%
+
+Table 4.10: Second approach: Zero demand for fertilizers and pesticides. South-southeast region. Citrus and vegetables
+
+45
+
+simulations. Continuation.
+
+ORIGINAL EQUILIBRIUM CITRUS SIMULATION
+
+VEGETABLES SIMULATIONS
+
+% Lower Yield
+
+%
+
+Constant Yield
+
+%
+
+Higher Yield
+
+%
+
+CONSUMPTION DEMANDS
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+6003950.12 167047.58
+31091.68 8024.47 7419.23
+3013.45 31848.49 130038.8
+5409091.81 531276.13
+
+6004172.66 167053.77
+31092.84 8024.77 7419.51
+0.00 3013.56 31849.67 130043.62
+5409292.31 531295.82
+0.00
+
+0.004% 0.004%
+
+6003950.12 167047.58
+
+0.000% 0.000%
+
+6003950.12 167047.58
+
+0.000% 0.000%
+
+6003950.12 167047.58
+
+0.000% 0.000%
+
+0.004% 0.004% 0.004%
+0.004% 0.004% 0.004%
+
+31091.68 8024.47 7419.23
+0.00 3013.45 31848.49 130038.80
+
+0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+31091.68 8024.47 7419.23
+0.00 3013.45 31848.49 130038.80
+
+0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+31091.68 8024.47 7419.23
+0.00 3013.45 31848.49 130038.80
+
+0.000% 0.000% 0.000%
+0.000% 0.000% 0.000%
+
+0.004% 0.004%
+
+5409091.81 531276.13
+0.00
+
+0.000% 0.000%
+
+5409091.81 531276.13
+0.00
+
+0.000% 0.000%
+
+5409091.81 531276.13
+0.00
+
+0.000% 0.000%
+
+GOODS MARKET SURPLUS
+
+Original Equilibrium
+
+Citrus Simulation
+
+% Lower Yield
+
+%
+
+Constant Yield
+
+%
+
+Higher Yield
+
+%
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+3051291.26 277305.24 10212.03
+795775.30 662.20
+100725.47 466669.08 608294.78 2142375.07 382874.27 283833.94
+3878272.45 14107.12 34482.03
+
+3051068.71 277299.05 10212.03
+795774.14 661.90
+100725.20 20508.65 608294.67 2142373.89 382869.45 283833.94
+3419106.56 14087.43 34482.03
+
+-0.007% -0.002% 0.000%
+
+3051291.26 277305.24
+0.00
+
+0.000% 0.000% -100.000%
+
+3051291.26 277305.24
+0.00
+
+0.000% 0.000% -100.000%
+
+3051291.26 277305.24
+0.00
+
+0.000% 0.000% -100.000%
+
+0.000% -0.045% 0.000% -95.605% 0.000% 0.000% -0.001% 0.000%
+
+795775.30 662.20
+100725.47 466669.08 608294.78 2142375.07 382874.27 283833.94
+
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+
+795775.30 662.20
+100725.47 466669.08 608294.78 2142375.07 382874.27 283833.94
+
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+
+795775.30 662.20
+100725.47 466669.08 608294.78 2142375.07 382874.27 283833.94
+
+0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000% 0.000%
+
+-11.839% -0.140% 0.000%
+
+3878272.45 14107.12 34482.03
+
+0.000% 0.000% 0.000%
+
+3878272.45 14107.12 34482.03
+
+0.000% 0.000% 0.000%
+
+3878272.45 14107.12 34482.03
+
+0.000% 0.000% 0.000%
+
+Equivalent Variation, Compensated Variation, Price Index
+
+Original Equilibrium
+
+Citrus Simulation
+
+Lower Yield
+
+Constant Yield
+
+Higher Yield
+
+Price Index
+
+1
+
+Equivalent Variation
+
+0
+
+Compensated Variation
+
+0
+
+1 758.85 758.85
+
+1
+
+1
+
+1
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+Table 4.11: Second approach: Zero demand for fertilizers and pesticides. Central region. Vegetables simulations.
+
+ORIGINAL EQUILIBRIUM
+
+VEGETABLES SIMULATIONS
+
+Lower Yield % Constant Yield % Higher Yield
+
+%
+
+OUTPUT
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+3751158.71 533442.4 11939.32 28405.23 154788.12 989873.15 228934.91
+1021817.21 2302487.5 90600.03 131721.08
+3732348.2 235543.43
+
+3751158.71 533442.40
+462.41 28405.23 154788.12 989873.15 238011.30
+0.00 1021817.21 2302487.50 90600.03 131721.08
+0.00 3732348.20 235543.43
+0.00
+
+0.000% 0.000% -96.127% 0.000% 0.000% 0.000% 3.965%
+0.000% 0.000% 0.000% 0.000%
+0.000% 0.000%
+
+3751158.71 533442.40
+964.98 28405.23 154788.12 989873.15 237292.07
+0.00 1021817.21 2302487.50 90600.03 131721.08
+0.00 3732348.20 235543.43
+0.00
+
+0.000% 0.000% -91.918% 0.000% 0.000% 0.000% 3.650%
+0.000% 0.000% 0.000% 0.000%
+0.000% 0.000%
+
+3751158.71 533442.40 1760.21 28405.23 154788.12 989873.15 236153.83
+0.00 1021817.21 2302487.50 90600.03 131721.08
+0.00 3732348.20 235543.43
+0.00
+
+0.000% 0.000% -85.257% 0.000% 0.000% 0.000% 3.153%
+0.000% 0.000% 0.000% 0.000%
+0.000% 0.000%
+
+46
+
+NET HOUSEHOLD HIRED FACTORS
+
+Land Capital Waged Labor Family factors Fertilizers Pesticides
+
+5798.05
+-2292588.09 0.0000000000
+-490405.36 -79626.34
+
+5798.13 0.00
+-2291968.03 -2271.82 -488698.22 -79560.80
+
+0.001%
+-0.027%
+-0.348% -0.082%
+
+5798.10 0.00
+-2292021.33 -2096.70 -488698.22 -79556.97
+
+0.001%
+-0.025%
+-0.348% -0.087%
+
+5798.06 0.00
+-2292105.62 -1819.48 -488698.22 -79550.90
+
+0.000%
+-0.021%
+-0.348% -0.095%
+
+HOUSEHOLD FULL INCOME
+
+Full income
+
+14447631.65
+
+14446241.16 -0.010% 14446499.61 -0.008% 14446908.56 -0.005%
+
+Table 4.12: Second approach: Zero demand for fertilizers and pesticides. Central region. Vegetables simulations.Continuation.
+
+ORIGINAL EQUILIBRIUM
+
+VEGETABLES SIMULATIONS
+
+Lower Yield
+
+%
+
+Constant Yield
+
+%
+
+Higher Yield
+
+%
+
+HOUSEHOLD CONSUMPTION DEMANDS
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+3041286.8 165384.09
+15402.44 888.8
+2732.59
+2055.38 44385.23 16862.19 1836.11
+2767717.32 235543.43
+
+3040994.10 165368.17
+0.00
+15400.95 888.71 2732.33 0.00 2055.18
+44380.95 16860.57 1835.94
+0.00 2767450.95 235520.76
+0.00
+
+-0.010% -0.010%
+-0.010% -0.010% -0.010%
+-0.010% -0.010% -0.010% -0.009%
+-0.010% -0.010%
+
+3041048.51 165371.13
+0.00
+15401.23 888.73 2732.38 0.00 2055.22
+44381.75 16860.87 1835.97
+0.00 2767500.46 235524.98
+0.00
+
+-0.008% -0.008%
+-0.008% -0.008% -0.008%
+-0.008% -0.008% -0.008% -0.008%
+-0.008% -0.008%
+
+3041134.59 165375.81
+0.00
+15401.66 888.75 2732.45 0.00 2055.28
+44383.01 16861.35 1836.02
+0.00 2767578.80 235531.64
+0.00
+
+-0.005% -0.005%
+-0.005% -0.006% -0.005%
+-0.005% -0.005% -0.005% -0.005%
+-0.005% -0.005%
+
+47
+
+GOODS MARKET SURPLUS
+
+Rainfed maize Irrigated maize Rainfed vegetables Irrigated vegetables
+Rainfed other Irrigated other
+Coﬀee Citrus Other perennial Cattle, goats and sheep Swine and poultry Horses Construction Commerce and services Natural resources Other
+
+709871.91 368058.31 11939.32 28405.23 139385.69 988984.35 226202.33
+1019761.83 2258102.27
+73737.84 129884.97
+964630.88
+
+710164.61 368074.23
+462.41 28405.23 139387.17 988984.44 235278.98
+0.00 1019762.03 2258106.54
+73739.46 129885.14
+0.00 964897.25
+22.67 0.00
+
+0.041% 0.004% -96.127% 0.000% 0.001% 0.000% 4.013%
+0.000% 0.000% 0.002% 0.000%
+0.028%
+
+710110.21 368071.27
+964.98 28405.23 139386.89 988984.42 234559.69
+0.00 1019761.99 2258105.75
+73739.16 129885.11
+0.00 964847.74
+18.46 0.00
+
+0.034% 0.004% -91.918% 0.000% 0.001% 0.000% 3.695%
+0.000% 0.000% 0.002% 0.000%
+0.022%
+
+710024.12 368066.59
+1760.21 28405.23 139386.46 988984.40 233421.38
+0.00 1019761.93 2258104.49
+73738.68 129885.06
+0.00 964769.40
+11.79 0.00
+
+0.021% 0.002% -85.257% 0.000% 0.001% 0.000% 3.191%
+0.000% 0.000% 0.001% 0.000%
+0.014%
+
+Equivalent Variation, Compensated Variation, Price Index
+
+Price Index
+
+1
+
+Equivalent Variation
+
+0
+
+Compensated Variation
+
+0
+
+1 -1390.49 -1390.49
+
+1 -1132.04 -1132.04
+
+1 -723.09 -723.09
+
+Table 4.13: Second approach: Zero demand for fertilizers and pesticides. Northwestern region. Vegetables simulations.
+
+ORIGINAL EQUILIBRIUM
+
+VEGETABLES SIMULATIONS
+
+Lower Yield
+
+%
+
+Constant Yield
+
+%
+
+Higher Yield
+
+%
+
+OUTPUT
+
+Irrigated maize Irrigated vegetables
+Irrigated other Cattle, goats and sheep
+Swine and poultry Horses
+Commerce and services Natural resources
+
+282729.05 91965.59 12366.11 304288.22 3705.17
+307.93 586151.31
+179.18
+
+282729.05 8.16
+12366.12 304288.22
+3705.17 307.93 556345.08 179.18
+
+0.000% -99.991%
+0.000% 0.000% 0.000% 0.000% -5.085% 0.000%
+
+282729.05 8.16
+12366.12 304288.22
+3705.17 307.93 556345.08 179.18
+
+0.000% -99.991%
+0.000% 0.000% 0.000% 0.000% -5.085% 0.000%
+
+282729.05 8.16
+12366.12 304288.22
+3705.17 307.93 556345.08 179.18
+
+0.000% -99.991%
+0.000% 0.000% 0.000% 0.000% -5.085% 0.000%
+
+NET HOUSEHOLD HIRED FACTORS
+
+Land Capital Waged Labor Family factors Fertilizers Pesticides
+
+1013.56 0.00
+86710.48 0.00E+00 -35432.81 -18469.82
+
+1063.33 0.00
+130315.15 36651.02 -20491.92 -6066.27
+
+4.910% 0.000% 50.288%
+-42.167% -67.156%
+
+1063.33 0.00
+130315.15 36651.02 -20491.92 -6066.27
+
+4.910% 0.000% 50.288%
+-42.167% -67.156%
+
+1063.33 0.00
+130315.15 36651.02 -20491.92 -6066.27
+
+4.910% 0.000% 50.288%
+-42.167% -67.156%
+
+48
+
+HOUSEHOLD FULL INCOME
+
+Full income
+
+1093383.33
+
+Note: The output section presents only commodities with non zero production.
+
+1092808.32
+
+-0.053%
+
+1092808.32
+
+-0.053%
+
+1092808.32
+
+-0.053%
+
+Table 4.14: Second approach: Zero demand for fertilizers and pesticides. Northwestern region. Vegetables simula-
+
+tions.Continuation.
+
+ORIGINAL EQUILIBRIUM
+
+Lower Yield
+
+VEGETABLES SIMULATIONS
+
+%
+
+Constant Yield
+
+%
+
+Higher Yield
+
+HOUSEHOLD CONSUMPTION DEMANDS
+
+Swine and poultry Commerce and services
+Natural resources
+
+649.18 315821.14
+179.18
+
+648.83 315655.05
+179.08
+
+-0.054% -0.053% -0.056%
+
+648.83 315655.05
+179.08
+
+-0.054% -0.053% -0.056%
+
+648.83 315655.05
+179.08
+
+GOODS MARKET SURPLUS
+
+Irrigated maize Irrigated vegetables
+Irrigated other Cattle, goats and sheep
+Swine and poultry Horses
+Commerce and services Natural resources
+
+282729.05 91965.59 12366.11 304288.22 3055.99
+307.93 270330.17
+0.00
+
+282729.05 8.16
+12366.12 304288.22
+3056.34 307.93 240690.03
+0.09
+
+0.000% -99.991%
+0.000% 0.000% 0.011% 0.000% -10.964%
+
+282729.05 8.16
+12366.12 304288.22
+3056.34 307.93 240690.03
+0.09
+
+0.000% -99.991%
+0.000% 0.000% 0.011% 0.000% -10.964%
+
+282729.05 8.16
+12366.12 304288.22
+3056.34 307.93 240690.03
+0.09
+
+Equivalent Variation, Compensated Variation, Price Index
+
+Price Index
+
+1
+
+Equivalent Variation
+
+0
+
+Compensated Variation
+
+0
+
+Note: The consumption and market surplus sections report only the commodities with non zero values.
+
+1 -575.01 -575.01
+
+0.000000%
+
+1 -575.01 -575.01
+
+0.000000%
+
+1 -575.01 -575.01
+
+%
+-0.054% -0.053% -0.056%
+0.000% -99.991%
+0.000% 0.000% 0.011% 0.000% -10.964%
+0.000000%
+
+49
+
+50
+Chapter 5
+Conclusions
+The research elaborated in this document began with the hypothesis that the product differentiation strategy of introducing organic agriculture in rural areas of Mexico could trigger economic development, as has been broadly suggested by organizations like the FAO and the OECD. This hypothesis was based on a literature review that suggested that as a consequence of the price premiums obtained from diﬀerentiating production and from possible crop yield increases, rural producers could beneﬁt from higher revenues in a growing global market.
+A simple Microeconomic Computable General Equilibrium model calibrated with data from the 2007 ENHRUM was used. The model tries to depict as simply but as completely as possible the conditions of the ﬁve rural regions covered by the ENHRUM. The model developed in this study distinguishes between ﬁve types of households, six types of activities and sixteen types of commodities.
+What this study has found is that previous research has failed to take into account the economic structure and challenges that a rural area presents, speciﬁcally the fact that if no action is taken to generate a link between supply and demand (either foreign or national) for organic products, the substitution eﬀect from an increase in the price of an agricultural commodity will not have the expected results and will generate incentives to decrease the production of the commodity. Even though the three approaches used to simulate the change
+
+51 in technology used for organic agriculture may be stylized and far from what can be observed in a real conventional-to-organic transition they provide a benchmark for future modelling attempts.
+By simulating the introduction of organic coﬀee, citrus and vegetables, it is shown that when modeling a rural region with exogenously-determined commodity prices and neoclassical closure rules at a regional level for factors, the eﬀects are a reduction in the diﬀerentiated product and a reallocation of the factors no longer used in that productive activity. In general, within the Slutsky equation framework, a substitution eﬀect can be observed because even with no variation in commodity prices, compensated and equivalent variations are negative. When these variations are positive, the expenditure reduction and the reallocation of productive factors give rise to an income increment.
+Due to their level of aggregation, results such as those found by Znaor et al. (2005), who obtained a 31.3% income increase from the introduction of organic agriculture in the agricultural regions of Croatia, may not take into account some relevant interactions and decisions that farmer-household agents make. Also, within the context of this research, given the compensated an equivalent variation results in most of the simulations, an organic product diﬀerentiation policy could not be used as a way to reduce poverty vulnerability as proposed by Bacon (2005) because it would probably increase the vulnerability of the rural agents aﬀected by such policy.
+As the evidence and literature review have shown, agricultural product diﬀerentiation via organic agriculture has a great potential to improve the welfare of the rural regions. Perhaps one the most important examples of these policies’ potential can be found in Bolwig et al. (2009) or in Lohr and Salomonsson (2000) where African farmers have beneﬁted from generating organic production clusters and from governmental conversion subsidies. However, until now it seems that there is a lack of knowledge of how to optimally trigger and reproduce such eﬀects.
+
+52 Although limited in scope, this model can be useful in order to incentivize more research on determining if other variables can aﬀect the proﬁtability and welfare objectives of development programs based on agricultural product diﬀerentiation through organic agriculture. Speciﬁcally, more eﬀorts must be made to model the characteristics of average rural regions in order to improve the analysis.
+Future research on the general equilibrium eﬀects of product diﬀerentiation in the rural agricultural sector via organic production will be based on an extension of the model used in the present research in order to include national and international urban demand for this type of commodities, where consumers are more likely to be prepared to pay a premium for diﬀerentiated products.
+
+53
+Bibliography
+Avalos, A. and Graillet, E. (2013). Corn and mexican agriculture: What went wrong? American Journal of Economics and Sociology, 72(1):145–178. 1
+Bacon, C. (2005). Confronting the coﬀee crisis: Can fair trade, organic, and specialty coﬀees reduce small-scale farmer vulnerability in northern nicaragua? World Development, 33(3):497–511. 2, 42, 51
+Barham, B. L. and Weber, J. G. (2012). The economic sustainability of certiﬁed coﬀee: Recent evidence from mexico and peru. World Development, 40(6):1269–1279. 10
+Beath, J. and Katsoulacos, Y. (1991). The economic theory of product diﬀerentiation. Cambridge University Press, Cambridge England ; New York. John Beath and Yannis Katsoulacos.; Includes bibliographical references (p. 194-199) and indexes. 4
+Bolwig, S., Gibbon, P., and Jones, S. (2009). The economics of smallholder organic contract farming in tropical africa. World Development, 37(6):1094–1104. 2, 14, 51
+Bushara, M. A. (2011). Challenges for transitioning conventional farming in the sudan to organic,journal of science and technology. Journal of Science and Technology, 12((3)):pp:1– 11. 7, 14
+Chamberl´ın, E. H. (1956). Teor´ıa de la competencia monopo´lica. Fondo de Cultura Econo´mica, M´exico, 2 edition. Versi´on espan˜ola de Cristo´bal Lara Beautell y V´ıctor L. Urquidi. 5
+Crespi, J. and Marette, S. (2002). Generic advertising and product diﬀerentiation. American Journal of Agricultural Economics, 84(3):691–701. 6
+
+54 de Ponti, T., Rijk, B., and van Ittersum, M. K. (2012). The crop yield gap between organic
+and conventional agriculture. Agricultural Systems, 108(0):1–9. 11
+Delmotte, S., Tittonell, P., Mouret, J. C., Hammond, R., and Lopez-Ridaura, S. (2011). On farm assessment of rice yield variability and productivity gaps between organic and conventional cropping systems under mediterranean climate. European Journal of Agronomy, 35(4):223–236. 11
+Doltra, J., Lægdsmand, M., and Olesen, J. E. (2011). Cereal yield and quality as aﬀected by nitrogen availability in organic and conventional arable crop rotations: A combined modeling and experimental approach. European Journal of Agronomy, 34(2):83–95. 12
+Eaton, C. and Lipsey, R. (1989). Product diﬀerentiation, volume Volume 1 of Handbook of Industrial Organization, pages 723–768. Elsevier. 4
+FAO (1998). Evaluating the potential contribution of organic agriculture to sustainability goals. Technical report, Food and Agriculture Organization of the United Nations. 2, 7, 8, 14
+FAO (2012). Organic agriculture and the law. Technical Report 107, Food and Agriculture Organization of the United Nations. 14
+Flores, P. (2014). Organic agriculture in latin america and the caribbean. Technical report, Research Institute of Organic Agriculture (FiBL) and International Federation of Organic Agriculture Movements(IFOAM). 9
+Fujita, M. and Hamaguchi, N. (2007). Brand agriculture and economic geography: A general equilibrium analysis. 17
+Go´mez-Cruz, M., Schwentesius-Rinderman, R., and G´omez-Tovar, L. (2007). Agricultura orga´nica en M´exico, 10 an˜os de experiencias y pol´ıticas para el futuro. Manuel Angel Go´mez Cruz, Rita Schwentesius Rinderman y Laura Go´mez Tovar; Incluye bibliograf´ıa: p. 267-268; Compra; 773: 0 7nnamtAgenda para el desarrolloaJose´LuisCalva, coordinadordM´exico, D.F. : Universidad Nacional
+
+55 Auto´noma de M´exico, Miguel Angel Porru´a, 2007gp.243 − 268z9703235328 (obra completa)z9703235417(volumen9). 9, 10, 11, 29
+Gonza´lez, J. A. and Yu´nez-Naude, A. (2007). Efectos de pol´ıtica agr´ıcola y econ´omica en el sector rural del sureste mexicano un an´alisis basado en los modelos de multiplicadores. J. Arellano Gonz´alez, M´exico, D.F. 19
+Hellberg-Bahr, A., Pfeuﬀer, M., Spiller, A., and Bru¨mmer, B. (2011). Using price rigidities to explain pricing strategies in the organic milk chain. volume Presentation at the IGLS Forum, Universitat Bonn. 12
+Herna´ndez-Solano, A. (2015). Pobreza y cambio clima´tico: el caso de m´exico. El Colegio de M´exico,Centro de Estudios Econo´micos, Avance de T´esis Doctoral. 17, 19, 23
+Hertel, T. W. (2002). Chapter 26 Applied general equilibrium analysis of agricultural and resource policies, volume Volume 2, Part A of Handbook of Agricultural Economics, pages 1373–1419. Elsevier. 18
+Hotelling, H. (1929). Stability in competition. The Economic Journal, 39(153):41–57. 4
+Jaramillo, J. L., Yu´nez-Naude, A., and Serrano-Cote, V. (2015). Spatial integration of mexicou.s. grain markets: the case of maize, wheat and sorghum. EconoQuantum. 24
+Kingsbury, N. (2009). Hybrid: the history and science of plant breeding. University of Chicago Press, Chicago. 5
+Kleemann, L. (2013). Knowing where organic markets move next – an analysis of developing countries in the pineapple market. Economics: The Open-Access, Open-Assessment E-Journal, 10. 13
+Lavoie, N. and Liu, Q. (2007). Pricing-to-market: Price discrimination or product diﬀerentiation? American Journal of Agricultural Economics, 89(3):571–581. 6
+Lockeretz, W. (2007). Organic farming: an international history. Cabi, Wallingford, UK ; Cambridge, MA. 7
+
+56 Lohr, L. and Salomonsson, L. (2000). Conversion subsidies for organic production: results from
+sweden and lessons for the united states. Agricultural Economics, 22(2):133–146. 51
+Meyer, J. and von Cramon-Taubadel, S. (2004). Asymmetric price transmission: A survey. Journal of Agricultural Economics, 55(3):581–611. 12
+M´endez-Barr´on, R. (2004). Cambios en la estructura econ´omica de una comunidad rural: acercamiento a trav´es del an´alisis de multiplicadores. el caso del ejido la victoria, sonora. 19
+Nemes, N. (2009). Comparative analysis of organic and non-organic farming systems: A critical assesment of farm proﬁtability. Technical report, Food and Agriculture Organization of the United Nations. 11
+OECD (2003). Organic agriculture: sustainability, markets and policies. CABI Pub., Wallingford ; Cambridge, MA. 2, 7, 14
+Otchia, C. (2014). Agricultural modernization, structural change and pro-poor growth: Policy options for the democratic republic of congo. Journal of Economic Structures, 3(1):8. 2
+Park, T. A. and Lohr, L. (1996). Supply and demand factors for organic produce. American Journal of Agricultural Economics, Vol. 78(No. 3):647–655. 8
+Pas, C. M. T. and Rees, R. M. (2014). Analysis of diﬀerences in productivity, proﬁtability and soil fertility between organic and conventional cropping systems in the tropics and subtropics. Journal of Integrative Agriculture, 13(10):2299–2310. 10
+Pretty, J., Thompson, J., Fiona, and Hinchcliﬀe (1996). Sustainable agriculture: Impacts on food production and challenges for food security. Technical Report Gatekeeper Series No.60, International Institute for Environment and Development. 12
+Rodale Institute (2015). Organic price report. 40
+Rosen, S. (1974). Hedonic prices and implicit markets: Product diﬀerentiation in pure competition. Journal of Political Economy, 82(1):34–55. 21
+
+57 Ruiz-Arranz, M., Davis, B., Handa, S., Stampini, M., and Winters, P. (2006). Program condi-
+tionality and food security: The impact of progresa and procampo transfers in rural mexico. Economia (University of Brazil), 7(2):249–278. Update Code: 200710. 2
+Sadoulet, E., de Janvry, A., and Davis, B. (2001). Cash transfer programs with income multipliers: Procampo in mexico. World Development, 29(6):1043–1056. 2
+SAGARPA (25 marzo 2015). Producci´on orga´nica. 7
+Sahota, A. (2014). The global market for organic food drink. Technical report, Research Institute of Organic Agriculture (FiBL) and International Federation of Organic Agriculture Movements(IFOAM). 8, 9
+Schleenbecker, R. and Hamm, U. (2013). Consumers’ perception of organic product characteristics. a review. Appetite, 71(0):420–429. 9
+Singerman, A., Lence, S., and Kimble-Evans, A. (2010). Organic crop prices, or 2x conventional ones? Iowa State University, Department of Economics, Working Paper No. 10008. 13
+Singh, I., Squire, L., and Strauss, J. (1986). A survey of agricultural household models: Recent ﬁndings and policy implications. World Bank Economic Review, 1(1):149–179. 18
+Taylor, J. and Adelman, I. (2003). Agricultural household models: Genesis, evolution, and extensions. Review of Economics of the Household, 1(1-2):33–58. 43
+Taylor, J. E., Dyer, G. A., and Yu´nez-Naude, A. (2005). Disaggregated rural economywide models for policy analysis. World Development, 33(10):1671–1688. 19, 23, 25
+Taylor, J. E. and Filipski, M. J. (2014). Beyond experiments in development economics: local economy-wide impact evaluation. Oxford University Press, Oxford, ﬁr edition. J. Edward Taylor and Mateusz J. Filipski.; 1 volume : illustrations ; 24 cm; text; still image; unmediated; volume. 23, 60
+Timmer, P. (2002). Chapter 29 Agriculture and economic development, volume Volume 2, Part A of Handbook of Agricultural Economics, pages 1487–1546. Elsevier. 1
+
+58 Tirole, J. (1988). The theory of industrial organization. MIT Press, Cambridge, Mass. Jean
+Tirole.; Includes bibliographies and index. 5
+USDA (2015). What is organic agriculture? 7
+Willer, H. and Lernoud, J. (2014). The world of organic agriculture 2014: Summary. Technical report, Research Institute of Organic Agriculture (FiBL) and International Federation of Organic Agriculture Movements (IFOAM). 9
+Willer, H., Yusseﬁ-Menzler, M., and Sorensen, N. (2008). The world of organic agriculture 2008: Summary. Technical report, International Federation of Organic Agriculture Movements (IFOAM) and Germany and Research Institute of Organic Agriculture (FiBL). 8
+Wilson, A. P. and Wilson, N. L. W. (2014). The economics of quality in the specialty coﬀee industry: insights from the cup of excellence auction programs. Agricultural Economics, 45(S1):91–105. 12
+Wollni, M. and Andersson, C. (2014). Spatial patterns of organic agriculture adoption: Evidence from honduras. Ecological Economics, 97(0):120–128. 2
+World Bank (2009). M´exico-agriculture and rural development public expenditure review. Technical Report 51902. 1
+Worthington, V. (April 2001). Nutritional quality of organic versus conventional fruits, vegetables and grains. The Journal of Alternative and Complementary Medicine., 7(2):161–173. 6
+Wu¨rriehausen, N., Ihle, R., and Lakner, S. (2014). Price relationships between qualitatively diﬀerentiated agricultural products: organic and conventional wheat in germany. Agricultural Economics, pages n/a–n/a. 13
+Yu´nez-Naude, A. (2010). Las pol´ıticas pu´blicas dirigidas al sector rural: El cara´cter de las reformas para el cambio estructural, page 23. Econom´ıa rural. El Colegio de M´exico, M´exico. 1
+
+59 Zander, K., Stolz, H., and Hamm, U. (2013). Promising ethical arguments for product diﬀeren-
+tiation in the organic food sector. a mixed methods research approach. Appetite, 62(0):133– 142. 9
+Znaor, D., Pretty, J., Morrison, J., and Todorovi´c, S. K. (2005). Environmental and macroeconomic impact assessment of diﬀerent development scenarios to organic and low-input farming in croatia. Technical report, University of Essex, FAO. 16, 29, 51
+
+60
+
+Appendix A Intermediate-Inputs Model
+
+The following equations depicts the intermediate–input model used to check the results’ consistency. It is an adaptation of Taylor and Filipski (2014)’s model presented in chapter 8. The GAMS model and the SAM used can be obtained from the author under request.
+Production For the production side of the model, rural households were assumed to be proﬁt maximizers. Each produced commodity requires intermediate inputs and added value from factors. Their technology is assumed to be nested production function:
+
+Qh,i = min V Ah,i/aV Ah,i, IIh,j,i/ah,j,i
+
+(A.1)
+
+with:
+
+V Ah,i = Ah,i
+
+F αh,i h,i
+
+i
+
+(A.2)
+
+Where Qh,i is production of commodity i by household h, V Ah,i is value added of commod-
+
+ity i by household h ,aV Ah,i is the quantity of value added needed for the production of
+
+commodity i by household h, IIh,j,i is the intermediate input demand of j by household h
+
+for production of commodity i, ah,j,i is the quantity of intermediate input j needed for the
+
+production of commodity i by household h.
+
+Ah,i is the shift parameter, Fh,i are factor demands and αh,i are the parameters for factor shares in total value-added. By ﬁrst order conditions one can easily get that each factor is
+
+61 paid at its marginal product. Household Demands
+
+Consumption demands were modeled using a linear expenditure system (LES) with no minimum required quantities. This implies that rural households’ consumption demands are derived from a Cobb-Douglas utility function, which assumes that households spend their income in ﬁxed proportions, with a degree of substitutability among diﬀerent commodities. In order to do so, households maximize their utility
+
+Subject to their full income
+
+Uh(Xh,i) =
+
+X βh,i h,i
+
+i
+
+(A.3)
+
+Yh = (πi) + (wof fof ) + Yh
+
+i
+
+of
+
+(A.4)
+
+Where Xh,i is demand for consumption of commodity i by household h, βh,i are the para-
+
+meters for marginal budget shares, (πi) is the sum of proﬁts, (wof fof ) is the sum of
+
+i
+
+of
+
+the values of the factors owned (supplied) by the household and Yh is the exogenous income
+
+which include remittances from the rest of Mexico and the rest of the world, government cash
+
+transfers and transfers from other households located outside the corresponding rural region.
+
+General equilibrium constraints and closure rules
+
+Goods market clearing constraint takes into account the sum of supplied (produced)
+
+and demanded (consumed) quantities of a certain commodity in order to obtain the market
+
+surplus (MS) for each good.
+
+M Si = (Qh,i − Xh,i)
+
+(A.5)
+
+h
+
+Following evidence with respect to the factors of production, their prices are determined
+
+within each rural regions, but are exogenous to their rural households. The market clearing
+
+condition is supply equal to factor demand within the region
+
+

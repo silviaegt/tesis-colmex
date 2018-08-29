@@ -1,0 +1,1056 @@
+MAESTR√çA EN ECONOM√çA
+TRABAJO DE INVESTIGACI√ìN PARA OBTENER EL GRADO DE MAESTRO EN ECONOM√çA
+EFECTO DEL CRIMEN SOBRE LA FORMACI√ìN DE
+CAPITAL HUMANO
+ANA CELIA MAR√çN CABRIALES
+PROMOCI√ìN 2012-2014
+ASESOR:
+DR. RAYMUNDO MIGUEL CAMPOS V√ÅZQUEZ
+JULIO 2014
+i
+
+Resumen En el presente trabajo de investigaci√≥n se analiza el efecto que tiene el incremento del crimen en la formaci√≥n de capital humano en los municipios de M√©xico, durante el periodo 2006-2012. Se usan los √≠ndices de reprobaci√≥n y deserci√≥n en educaci√≥n b√°sica, primaria y secundaria, y en media superior como medidas de formaci√≥n de capital humano, mientras que las tasas de homicidios por cada 10,000 habitantes a nivel municipal son usadas como proxy del crimen. Durante los √∫ltimos a√±os la violencia en M√©xico se intensific√≥ de forma dram√°tica debido principalmente a tres factores: cambios ex√≥genos en el mercado de estupefacientes (Mej√≠a y Castillo, 2012); la creciente fragmentaci√≥n de los c√°rteles de las drogas y la lucha militarizada contra en tr√°fico de drogas iniciada en M√©xico en 2006. Lo anterior sugiere que el aumento en el nivel de violencia en M√©xico ha sido provocado por factores ex√≥genos a las condiciones socioecon√≥micas locales, por lo cual parece razonable usar como estrategia de identificaci√≥n propensity score matching combinado con diferencias en diferencias para controlar por condiciones iniciales no observables. Para determinar el efecto del crimen sobre la formaci√≥n de capital humano se usa como unidad de an√°lisis a los municipios. Se hace la comparaci√≥n de resultados en reprobaci√≥n y deserci√≥n entre municipios que presentaron altos incrementos en las tasas de homicidios (tratados) y los que no reportaron cambios en sus tendencias de crimen (control). Los municipios considerados como tratados son aquellos que presentaron tasas medias de homicidios en alg√∫n momento entre 2007 a 2012 que discreparon de su tasa hist√≥rica de homicidios, de 2000 a 2006, en tres veces su desviaci√≥n est√°ndar hist√≥rica.
+Los resultados encontrados sugieren que los efectos del crimen sobre la formaci√≥n de capital humano son diferenciados de acuerdo al nivel educativo y al g√©nero. Se obtuvo que el crimen ha tenido un efecto negativo al aumentar los niveles promedio de deserci√≥n en los municipios que experimentaron altos incrementos de violencia respecto de los municipios donde no se present√≥ el fen√≥meno. En educaci√≥n primaria el √≠ndice de deserci√≥n es 2.18 puntos porcentuales mayor en los municipios con altos incrementos de violencia que en los municipios control, en secundar√≠a es de 1.83 y en media superior de 1.53 puntos porcentuales. Si se hace el an√°lisis del efecto del crimen en la deserci√≥n en educaci√≥n media superior a trav√©s de las diferentes modalidades educativas que la componen, se encuentra que el efecto es diferenciado, afectando en mayor medida a alumnos inscritos en la modalidad profesional t√©cnico, 7.94 puntos porcentuales.
+ii
+
+Respecto a reprobaci√≥n, los resultados son mixtos. El efecto en educaci√≥n b√°sica es negativo y significativo, es decir, en los municipios donde hubo grandes incrementos de violencia se redujo la reprobaci√≥n en 0.85 puntos porcentuales m√°s respecto de los municipios sin violencia. Para educaci√≥n media superior, en bachillerato general no se encuentra efecto significativo para los hombres pero s√≠ para las mujeres, el cual fue un aument√≥ en la reprobaci√≥n de 2.40 puntos porcentuales, patr√≥n que se vio repetido para el bachillerato tecnol√≥gico donde nuevamente el efecto no es significativo para los hombres pero para las mujeres es de 1.11 puntos porcentuales. Mientras que en profesional t√©cnico hubo una reducci√≥n de la reprobaci√≥n tanto en hombres como en mujeres, las cuales fueron de 3.78 y 4.06 puntos porcentuales, respectivamente. Lo anterior da cuenta de que el g√©nero importa en la determinaci√≥n del canal por el cual el crimen afecta la formaci√≥n de capital humano.
+iii
+
+√çndice
+I. Introducci√≥n___________________________________________________________________ 5 II. Revisi√≥n de literatura ___________________________________________________________ 9 III. Datos ______________________________________________________________________ 16
+Mortalidad __________________________________________________________________________________________ 16 Educaci√≥n___________________________________________________________________________________________ 20 IV. Metodolog√≠a _________________________________________________________________ 24 V. Resultados ___________________________________________________________________ 30 VI. Conclusiones ________________________________________________________________ 38 VII. Anexos ____________________________________________________________________ 41 Anexo 1: Evoluci√≥n del crimen en M√©xico 2000-20012 de acuerdo a diferentes categor√≠as de clasificaci√≥n ________________________________________________________________________________________ 41 Anexo 2: Metodolog√≠a del c√°lculo de indicadores educativos __________________________________ 43 Anexo 3: Estimaciones_____________________________________________________________________________ 46 Anexo 4: Reprobaci√≥n y deserci√≥n por nivel educativo a escala estatal _______________________ 51 VIII. Bibliograf√≠a________________________________________________________________ 61 IX. √çndice de cuadros ____________________________________________________________ 65 X. √çndice de figuras ______________________________________________________________ 65
+4
+
+I. Introducci√≥n
+La violencia impone altos costos sociales y econ√≥micos para las sociedades en las que se desarrolla. Los costos de la delincuencia se originan en gran parte de las reducciones en las actividades econ√≥micas, las desviaciones de fondos p√∫blicos y privados (por ejemplo, educaci√≥n y salud) a otros fines para reducir la violencia y los incrementos en la p√©rdida de bienestar de los hogares. La p√©rdida de bienestar se debe principalmente a que los hogares se sienten menos seguros, por lo tanto redistribuyen su ingreso y cambian su comportamiento para proteger su integridad.
+Respecto a la trayectoria que ha seguido el crimen en M√©xico el Instituto Nacional de Estad√≠stica y Geograf√≠a (INEGI) report√≥ en 1994, 15,839 homicidios los cuales disminuyeron a 10,737 en 2000 y 9,329 en 2004, para luego tener un aument√≥ a 10,452 en 2006. En 2007 los homicidios reportados fueron 8,867 antes de subir a 27,213 en 2011, significando un incremento promedio anual del 24%.
+El aumento de la incidencia del crimen en M√©xico es explicado en gran medida por el aumento de actividades delictivas asociadas al narcotr√°fico, actividad econ√≥mica en la que M√©xico juega un papel relevante dentro del mercado mundial, siendo considerado el mayor proveedor de drogas il√≠citas del mercado en Estados Unidos (Informe Mundial sobre las Drogas de la ONU, 2011). Por otra parte, M√©xico sirve como un importante centro de transbordo para la coca√≠na que se consume en Estados Unidos de la cual entre el 60 y 90 por ciento llega a trav√©s de M√©xico (EE.UU. Drug Enforcement Agency, 2011). El Departamento de Estado de Estados Unidos estima que los ingresos de las principales asociaciones de narcotraficantes en M√©xico provenientes del mercado estadounidense est√°n en el rango de 13.6 a 48.4 mil millones d√≥lares anuales.
+La actividad del crimen organizado no se limita a la venta de drogas al extranjero, sino que sus ingresos provienen tambi√©n, aunque en menor medida, de una amplia variedad de actividades il√≠citas dentro del pa√≠s, como la venta nacional de drogas1, venta de protecci√≥n, secuestro, tr√°fico de personas, prostituci√≥n, robo, lavado de dinero y tr√°fico de armas (Guerrero, 2011, p.10). Dichas actividades, en conjunto con el aumento de las muertes que se han extendido m√°s all√° de los miembros de los c√°rteles, la polic√≠a y el
+1 Se estima que esta actividad genera ingresos de 560 millones de pesos anuales.
+5
+
+ej√©rcito; han generado distorsiones en el orden p√∫blico y gran p√©rdida de bienestar social a la poblaci√≥n civil.
+Es de esperarse que mientras existan beneficios derivados de realizar est√° actividad econ√≥mica, as√≠ como intereses contrapuestos de las diferentes asociaciones delictivas, pueden suscitarse en cualquier momento brotes de violencia en el territorio nacional. De acuerdo a la din√°mica seguida por el crimen en nuestro pa√≠s y otras partes de mundo (Colombia e Italia) es posible pronosticar que transcurrir√° un periodo largo de tiempo antes de que √©ste sea erradicado, por lo cual la opci√≥n m√°s viable por el momento es buscar estrategias asequibles que ayuden a atenuar los efectos de la violencia. El primer paso para encontrar dichas alternativas es evaluar el impacto directo e indirecto que tiene la violencia sobre las sociedades que se encuentran expuestas a ella, que sean puntos de referencia para atender las necesidades m√°s inmediatas y de mayor impacto.
+La violencia tiene influencia en el √°mbito macroecon√≥mico y microecon√≥mico. En el entorno macroecon√≥mico impacta a trav√©s de provocar la salida del pa√≠s de empresas y empresarios por razones de seguridad. El Centro de Monitoreo de Desplazamientos Internos (IDMC, 2010) advirti√≥ que debido a la violencia relacionada al narcotr√°fico en M√©xico, cerca de 230 mil personas se hab√≠an visto obligadas a salir de sus lugares de origen. Particularmente en los estados de Tamaulipas, Nuevo Le√≥n, Chihuahua, Baja California, Sinaloa y Michoac√°n, donde aproximadamente la mitad han migrado hacia los Estados Unidos.
+La migraci√≥n causada por la violencia no s√≥lo perjudica la oferta laboral sino tambi√©n la inversi√≥n en capital, la existencia de empresas y la creaci√≥n de nuevos negocios (Magaloni et al., 2013). Arceo (2012), encuentra que los estados del sur de Estados Unidos experimentaron el mayor aumento hist√≥rico de migraci√≥n mexicana en el periodo 2005-2010 y que los causantes de este incremento son graduados universitarios, lo cual contrasta con el migrante mexicano t√≠pico. Por otra parte, muestra que existe correlaci√≥n entre las tasas de homicidio y la apertura de negocios en Estados Unidos, llegando a la conclusi√≥n de que la guerra contra las drogas est√° propiciando que mexicanos bien educados y con alto ingreso dejen el pa√≠s, lo que disminuye la mano de obra calificada disponible y la inversi√≥n necesaria para el desarrollo econ√≥mico futuro. Al respecto Hensen (2012) menciona que el crimen distorsiona algunas decisiones econ√≥micas porque √©ste act√∫a como un impuesto inesperado a las ganancias.
+6
+
+En el √°mbito microecon√≥mico, cuando el miedo a ser v√≠ctima de un delito es generalizado, √©ste induce cambios de comportamiento ya que la gente deja de salir a la calle por las noches, usar transporte p√∫blico, o manejar en carretera (Diaz-Cayeros et al., 2012). Estos cambios de comportamiento deben tener un impacto en el consumo, inversi√≥n y en la actividad econ√≥mica especialmente en los sectores de turismo y servicios (Magaloni et al., 2013).
+El impacto de mayor importancia, y m√°s dif√≠cil de cuantificar, es la p√©rdida de bienestar, que sin duda est√° asociado al impacto econ√≥mico del crimen ya que √©ste es un mecanismo importante de transferencia del efecto del crimen a la p√©rdida de bienestar sin embargo est√° lejano a explicar el efecto en su totalidad. Algunas investigaciones sugieren que la presencia de violencia cercana a una poblaci√≥n puede tener consecuencias para la salud, desarrollo y el bienestar incluso entre aquellos que no son v√≠ctimas directas (Caudillo y Torche, 2013).
+Est√© trabajo analiza el efecto de la violencia en el desarrollo educativo midiendo el impacto que √©sta tiene en las trayectorias de reprobaci√≥n y deserci√≥n de ni√±os y j√≥venes en los municipios de M√©xico de 2000 a 2012. Se trata de establecer una relaci√≥n causal del crimen sobre la educaci√≥n. Este trabajo contribuye a la literatura existente al aumentar la evidencia emp√≠rica sobre los efectos indirectos del crimen, espec√≠ficamente en la acumulaci√≥n de capital humano de ni√±os y j√≥venes en M√©xico.
+La relevancia del estudio se incrementa debido al ambiente de alta violencia que se experimenta en el pa√≠s y su posible distribuci√≥n desigual. Los resultados son importantes porque por un lado, proporcionan una medida del logro educativo en edades tempranas del desarrollo escolar (educaci√≥n b√°sica) el cual tiene consecuencias en logros educativos posteriores. El desfase de una trayectoria educativa regular no s√≥lo incrementa la posibilidad de una conclusi√≥n tard√≠a de la educaci√≥n obligatoria, sino que pone en riesgo la permanencia en el sistema educativo (INEE, 2012) dando como resultado un bajo logro educativo final, el cual es determ√≠nate del √©xito en el mercado laboral en M√©xico (Knaul 2001). Por lo tanto un efecto negativo de la exposici√≥n a homicidios sobre los resultados en la educaci√≥n b√°sica es que tiene consecuencias de largo plazo sobre el bienestar de la poblaci√≥n.
+Por otra parte, el an√°lisis del desempe√±o educativo en el nivel media superior constituye una medida del efecto del crimen en el corto plazo, ya que la poblaci√≥n m√°s
+7
+
+afectada por esta situaci√≥n son los j√≥venes de entre 15 y 30 a√±os. Tener una medida del grado de repercusi√≥n del crimen en esta poblaci√≥n ayuda a dise√±ar pol√≠ticas p√∫blicas focalizadas, que ayuden a reducir el grado de exposici√≥n de dicha poblaci√≥n al crimen. Las cuales pueden traducirse en mayores transferencias a la educaci√≥n en este nivel para incrementar la permanencia de los j√≥venes en las escuelas o establecer programas de entrenamiento que ayuden a los j√≥venes que est√°n fuera de las escuelas a reducir su vulnerabilidad al crimen, ya sea a trav√©s del efecto ingreso (no se vean obligados a tomar un lugar en el crimen porque no tienen ingreso o aumentar el costo de oportunidad de hacerlo (Lochner, 2004)) o a trav√©s del tiempo disponible (limitar el tiempo disponible para participar en actividades criminales, efecto conocido como ‚Äúauto-incapacitaci√≥n‚Äù documentado por Tauchen et. al. (1994)).
+8
+
+II. Revisi√≥n de literatura
+En esta secci√≥n se revisa la literatura m√°s relevante relacionada con la pregunta de investigaci√≥n del trabajo. Primero se aborda la literatura relacionada con los costos del crimen en general. En segundo lugar, se discute la literatura sobre crimen relacionada directamente con la educaci√≥n.
+La violencia trae consigo costos sociales y econ√≥micos. La literatura econ√≥mica se ha concentrado principalmente en la estimaci√≥n de los costos de la desaceleraci√≥n de la actividad econ√≥mica, as√≠ como el c√°lculo de los recursos p√∫blicos destinados a reducir la delincuencia. Para Estados Unidos las p√©rdidas promedio estimadas durante el periodo 19871990 por el crimen, el cual incluye todos los delitos reportados entre los que se encuentran muertes por violaci√≥n, robo e incendios provocados, fueron de 105 billones de d√≥lares, las cuales incluyen costos m√©dicos, p√©rdidas de ganancias y gasto en programas p√∫blicos para asistir a las v√≠ctimas, sin embargo esta cantidad aumenta a 450 billones de d√≥lares anuales cuando la reducci√≥n de la calidad de vida es incorporada a la estimaci√≥n (Miller et. al., 1996).
+Las p√©rdidas de bienestar de los hogares se han ignorado a pesar de la gran carga que podr√≠an estar imponiendo. Se considera que, en particular, las p√©rdidas no pecuniarias provienen principalmente de tres fuentes. La calidad de vida disminuye porque las familias se enfrentan a la sensaci√≥n de disminuci√≥n de la seguridad personal y de la propiedad, porque los hogares deben redistribuir su ingreso para adoptar estrategias preventivas (contratar guardias e instalar equipo tecnol√≥gico de seguridad) y, finalmente, porque los hogares cambian su comportamiento para evitar ser v√≠ctimas (Barera e Iba√±ez, 2004).
+Entre las investigaciones relacionadas con los costos de la violencia, est√°n aquellos debidos al cambio de comportamiento. En particular, Becker y Rubinstein (2011) encuentran que en respuesta a un ataque terrorista en Israel algunos individuos reducen el uso de bienes y servicios asociados con la exposici√≥n a la violencia como cafeter√≠as y autobuses. Hamermesh (1999) encuentra que durante el periodo de 1973 a 1991 las altas tasas de homicidio redujeron las horas trabajadas por la noche y muy temprano por la ma√±ana en grandes √°reas metropolitanas en Estados Unidos (la relaci√≥n no se cumple para cr√≠menes no violentos), esta reducci√≥n de la horas trabajadas tuvo como resultado p√©rdidas
+9
+
+de entre 4 y 10 millones de d√≥lares. Fern√°ndez, Ib√°√±ez y Pe√±a (2011) encuentra que los hogares rurales en Colombia que fueron v√≠ctimas de cr√≠menes violentos incrementan su oferta laboral fuera de sus regiones rurales.
+Por otra parte, en M√©xico gran parte de las investigaciones que han evaluado el impacto del dr√°stico aumento del crimen despu√©s de 2006, se han enfocado a determinar el efecto del crimen en la actividad econ√≥mica. Dell (2011) encuentra que la tasa de actividad laboral femenina cae en municipios con altas tasas de crimen y que la violencia es mayor en distritos electorales donde los partidos ganan por m√°rgenes peque√±os y son de una fracci√≥n parlamentaria diferente a la del gobierno federal. BenYishay y Pearlman (2013) estiman el impacto de la guerra contra el narco en M√©xico sobre el promedio de las horas trabajadas por la poblaci√≥n en general y encuentran que el incremento del crimen tiene un efecto negativo sobre la poblaci√≥n activa ya que implican reducciones promedio de 1 a 1.5 horas trabajadas por semana, siendo los m√°s afectados los auto empleados y los trabajadores de los cuantiles de ingreso m√°s alto, explicando que esto puede ser debido a una mayor elasticidad en los horarios laborales.
+Galiani, Seira y Magaloni (2012) analizan el mercado de viviendas y encuentran que el aumento en un 1% del n√∫mero de homicidios acumulados (en los dos √∫ltimos a√±os previos a la compra-venta) en la localidad del inmueble, reduce hasta un 1.8% el valor de mercado de la vivienda. Magaloni (2013) indaga las consecuencias econ√≥micas de la violencia del narcotr√°fico en M√©xico, propone el consumo de electricidad como un indicador de la actividad econ√≥mica municipal. Utiliza dos estrategias emp√≠ricas diferentes. Con variables instrumentales determina los efectos negativos de la violencia sobre la participaci√≥n laboral, la proporci√≥n de desocupados y el ingreso laboral encontrando que el efecto marginal del incremento en el n√∫mero de homicidios es substantivo para el ingreso laboral y la proporci√≥n de empresarios, pero no para el consumo de energ√≠a. Mientras que con la metodolog√≠a de controles sint√©ticos estima los efectos ‚Äúumbral2‚Äù de la violencia sobre la actividad econ√≥mica y encontr√≥ que aquellos municipios que observaron incrementos dram√°ticos de violencia entre 2006 y 2010 redujeron de forma importante su consumo de energ√≠a (proxy
+2 Es posible que la violencia no afecte a la econom√≠a en forma lineal. Podr√≠amos pensar en un escenario en el que la violencia relacionada con el narcotr√°fico impacte a la econom√≠a en forma substantiva despu√©s de cierto umbral, el cual podr√≠a reflejar el inicio de una guerra entre c√°rteles.
+10
+
+del PIB municipal) durante los a√±os posteriores al tratamiento (grandes incrementos en las tasas de homicidios).
+D√≠az-Cayeros (2012) hace una importante contribuci√≥n al estudio del fen√≥meno del aumento del crimen en M√©xico al establecer las din√°micas temporales y espaciales de la violencia usando para ello las detenciones de importantes l√≠deres del narcotr√°fico y los decomisos de drogas realizados por el gobierno para determinar las √°reas donde el crimen aument√≥.
+Por otro lado, los efectos no econ√≥micos de la violencia en M√©xico no han sido ampliamente estudiados. Respecto a la relaci√≥n violencia-educaci√≥n es necesario establecer los mecanismos a trav√©s de los cuales el logro educativo se ve modificado. La mayor parte de los estudios que indagan sobre los logros educativos y la asistencia escolar se han focalizado en la influencia individual y de los hogares (tales como la inversi√≥n de los hogares en capital humano y sus posteriores retornos basados en su funci√≥n de ganancia y la determinaci√≥n de los insumos de la funci√≥n de producci√≥n educativa que determinan la calidad de la educaci√≥n) (Barrerae Iba√±ez, 2004). Sin embargo, las variables geogr√°ficas y de contexto han adquirido tambi√©n una importancia notable sobre las decisiones de educaci√≥n (Long y Toma, 1988; Galenson, 1995; Ravallion and Woodon, 1998; Rephann, J.T., 2002). Las variables geogr√°ficas y de contexto pueden indicar restricciones de la oferta, costos de obtener educaci√≥n, as√≠ como las oportunidades de empleo (Rephann, 2002) y, por tanto, pueden dar forma a las inversiones en capital humano.
+La violencia y el crimen, dos variables espec√≠ficas de contexto local, pueden erosionar las inversiones en capital humano, en t√©rminos de la educaci√≥n alcanzada por los individuos, a trav√©s de diferentes canales entre los que se encuentran la limitaci√≥n de la oferta educativa, miedo de enviar a los ni√±os a la escuela, incorporaci√≥n de los j√≥venes a los grupos de delincuentes, choques econ√≥micos negativos a los hogares y desplazamiento forzado (Rodr√≠guez y S√°nchez, 2008). Es decir, la violencia puede crear un clima de ansiedad que afecta directamente a la utilidad y, por lo tanto, el comportamiento de los hogares. El crimen obliga a las personas a estar constantemente alerta y adoptar estrategias defensivas. Las familias que viven en zonas violentas sobreprotegen a sus hijos y restringen su libertad para evitar la victimizaci√≥n, adem√°s, las v√≠ctimas de la delincuencia y la violencia pueden confrontar s√≠ndromes post-traum√°ticos que pueden afectar el desempe√±o en sus actividades. Por otra parte, una utilidad m√°s baja puede obligar a las familias a redistribuir el
+11
+
+gasto con el fin de mantener constante la utilidad. El consumo en bienes que proporcionan satisfacci√≥n inmediata puede aumentar y el gasto en educaci√≥n, cuyos beneficios no son inmediatos, puede disminuir (Barrerae Iba√±ez, 2004). Respecto a la reducci√≥n de la oferta educativa se puede dar a trav√©s de dos canales. El primero es la destrucci√≥n de la infraestructura f√≠sica tales como escuelas, autobuses y bibliotecas, que son insumos cruciales para la producci√≥n de educaci√≥n y el segundo canal es que los maestros eluden ocuparse en ciudades con altas tasas de crimen o cobran salarios m√°s altos por ense√±ar en los barrios m√°s violentos (Grogger, 1997). Sin embargo, cuando el sistema educativo del pa√≠s no les permite a los profesores tomar estas decisiones, los salarios son fijos y es dif√≠cil cambiar de lugar de trabajo, ellos responden a los episodios de alta violencia con ausentismos y deserci√≥n (Rocha y Monteiro, 2013).
+En la √∫ltima d√©cada ha aumentado el n√∫mero de investigaciones dirigidas a determinar la magnitud del impacto del crimen sobre la educaci√≥n. Lorentzen et al. (2005) y Jayachandran y Lleras-Muney (2008) han encontrado que el aumento de la esperanza de vida se asocia con mayores inversiones en capital humano. De tal forma que los conflictos armados y las muertes prematuras tienen efecto sobre la educaci√≥n a trav√©s de alteraciones en la esperanza de vida (Rodr√≠guez y S√°nchez, 2008). Barrera e Ib√°√±ez (2004) propone un modelo te√≥rico din√°mico para entender la inversi√≥n en educaci√≥n en un ambiente violento. Adem√°s proporcionan evidencia emp√≠rica para explicar la relaci√≥n que existe entre violencia e inversi√≥n en educaci√≥n. Encontrando que en las localidades de Colombia donde la tasa de homicidios est√° por encima de la media nacional, la inscripci√≥n escolar es relativamente baja y decrece conforme aumentan las tasas de homicidio para todos los grupos de edad y que el impacto de las tasas de homicidio es m√°s grande que las transferencias del gobierno nacional a los gobiernos locales etiquetadas para inversi√≥n en educaci√≥n y salud. Rodr√≠guez y S√°nchez (2008) hacen uso de la metodolog√≠a de an√°lisis de duraci√≥n para estimar el efecto que tiene la exposici√≥n a conflictos armados sobre la decisi√≥n de abandonar la escuela en ni√±os colombianos entre 6 y 17 a√±os, encontrando que los conflictos armados en Colombia han tenido una reducci√≥n de 8.78% en los a√±os de escolaridad de todos los ni√±os colombianos y aumenta a 17.03% para j√≥venes de 16 a 17 a√±os.
+Sharkey (2010) estima el efecto de la exposici√≥n al homicidio local en el rendimiento cognitivo de los ni√±os. Los datos provienen de una muestra de ni√±os de 5 a 17 en un proyecto sobre desarrollo humano en Chicago. La exposici√≥n al crimen reduce el
+12
+
+rendimiento sobre vocabulario y lectura entre 0.5 y 0.66 desviaciones est√°ndar. Monteiro y Rocha (2012) estudia los efectos de los conflictos armados entre bandas de drogas en los barrios de Rio de Janeiro sobre los logros educativos de los estudiantes. Para identificar el efecto causal de la violencia sobre la educaci√≥n, exploran la variaci√≥n en la violencia que ocurre a trav√©s del tiempo y el espacio cuando las bandas pelean por los territorios. Ellos analizan el desempe√±o acad√©mico con los resultados obtenidos en ‚ÄúProva Brasil‚Äù un examen nacional estandarizado aplicado a todos los ni√±os de quinto grado en 2005, 2007 y 2009. Para medir el crimen construyen una base de datos que contiene los reportes an√≥nimos de la ciudadan√≠a sobre conflictos en las favelas. encontrando evidencia de que las batallas entre grupos del crimen se desencadenan por factores com√∫nmente ex√≥genos a condiciones socioecon√≥micas locales, tales como el encarcelamiento o la captura de un l√≠der de alguna banda, traiciones y venganzas. Estimaciones dentro de las escuelas predicen que aquellos estudiantes expuestos a la violencia tienden a obtener una menor nota en los ex√°menes de matem√°ticas. El efecto de la violencia aumenta con la intensidad del conflicto, la duraci√≥n del mismo y la proximidad a las fechas de los ex√°menes; y desciende con la distancia entre la escuela y el lugar del conflicto. No hay evidencia que el efecto de la violencia dure por m√°s de un a√±o. Finalmente, se encontr√≥ que la cantidad de escuelas es un mecanismo importante para fomentar los logros educativos; y que los conflictos armados est√°n asociados significativamente con el ausentismo de los profesores, movimiento de los directores, y cierre temporal de escuelas.
+Respecto a la relaci√≥n del crimen y la educaci√≥n en M√©xico se han realizado dos importantes investigaciones. Hansen (2012) investiga la influencia que las tasas de crimen y los niveles de inversi√≥n en educaci√≥n tienen uno sobre el otro y c√≥mo las pol√≠ticas gubernamentales (cambios en gasto en polic√≠a, tama√±o de las prisiones y subsidios escolares) afectan la relaci√≥n entre inversi√≥n y crimen. √âl crea un modelo estructural de crimen e inversi√≥n en educaci√≥n de un solo periodo y lo calibra usando datos de encuestas nacionales sobre victimizaci√≥n 2007 y 2008 (ENSI-5 y ENSI-6, respectivamente), datos de 2009 del Instituto Ciudadano de Estudios sobre la Inseguridad (ICESI) que reporta informaci√≥n sobre gasto en polic√≠a y los costos del crimen para las v√≠ctimas y el estado, y datos de salario y nivel educativo de la Encuesta Nacional de Ingreso y Gasto en los hogares (ENIGH) 2005 y 2006. Mediante el m√©todo de simulaci√≥n de momentos se estimaron los par√°metros del modelo y estos fueron usados para realizar simulaci√≥n de pol√≠ticas. Las simulaciones muestran que el incremento del gasto en polic√≠a o el incremento de la severidad del castigo
+13
+
+reducen el crimen pero tienen un efecto muy peque√±o sobre la inversi√≥n en educaci√≥n y que el incremento en los subsidios a la educaci√≥n incrementa la inversi√≥n en educaci√≥n pero reducen el crimen muy ligeramente. De tal forma que los resultados de la investigaci√≥n sugieren que este tipo de pol√≠ticas (conjuntas) es insuficiente para alcanzar las metas de reducir el crimen e incrementar la inversi√≥n en educaci√≥n.
+Caudillo y Torche (2013) examina el efecto del crimen en la tasas de reprobaci√≥n en ni√±os de primero a sexto grado en escuelas del sistema nacional de educaci√≥n de M√©xico. Crean un panel anual de las escuelas primarias en M√©xico de 1990 a 2010 con datos obtenidos del censo escolar mexicano realizado por la Secretar√≠a de Educaci√≥n P√∫blica (SEP) a los que agregan informaci√≥n a escala municipal del n√∫mero de cr√≠menes, obtenidos de registros administrativos proporcionados por INEGI. Las autoras proponen cinco modelos diferentes. El primer modelo consiste en correr la tasa de reprobaci√≥n como variable dependiente contra la tasa de homicidios, una formulaci√≥n lineal del tiempo, un vector de caracter√≠sticas de la escuela variantes en el tiempo, un vector de caracter√≠sticas del municipio variantes en el tiempo y un efecto fijo a nivel escuela, mientras que el segundo modelo remplaza la formulaci√≥n lineal del tiempo con efectos fijos por a√±o. El modelo tres y cuatro son iguales al modelo uno y dos solo que adicionan un t√©rmino de autocorrelaci√≥n de primer orden. Finalmente implementan modelos con intercepto y pendiente espec√≠fica por grupos (modelos GSIS) usando como grupo tanto los estados de la rep√∫blica como cinco categor√≠as de estados determinadas por el nivel socioecon√≥mico de estos en 1990. En todos los modelos encuentran que un incremento en la tasa de homicidios incrementa la probabilidad de reprobar el a√±o escolar, los efectos van de 0.0018 a 0.0098, los cuales traducidos en t√©rminos de la poblaci√≥n que asiste a la escuela resultan en que de 26, 100 a 142, 100 reprueban el a√±o escolar.
+Este trabajo refuerza y aumenta los resultados obtenidos por Caudillo y Torche (2013) al ampliar la poblaci√≥n objetivo de estudio, ya que adem√°s de analizar el efecto en la reprobaci√≥n en educaci√≥n b√°sica se estudia el efecto en deserci√≥n y el efecto para estas dos variables a nivel media superior que representa el segmento de la poblaci√≥n m√°s vulnerable al crimen3. Se busca determinar, por una parte los cambios en el desempe√±o educativo asociados a cambios en los niveles de crimen presentes en el entorno de estos j√≥venes, as√≠
+3 En los pa√≠ses caracterizados por altos niveles de homicidios relacionados al crimen organizado, el riesgo de que los j√≥venes de 20 a√±os mueran antes de los 31 puede ser tan alto como 2%. Lo cual significa que 1 en 50 j√≥venes en estos pa√≠ses muere a esa edad. El riesgo en pa√≠ses con bajas tasas de homicidio es 400 veces menor (UNODC, 2011).
+14
+
+como tambi√©n si son los j√≥venes que est√°n en las escuela quienes se ven m√°s afectados por el crimen. Respecto al segundo objetivo, si no hay cambios significativos en las proporciones de deserci√≥n observada en a√±os previos al incremento de la violencia respecto de los observados despu√©s del aumento del crimen significar√≠a que los j√≥venes que no est√°n en la escuela son los directamente afectados por esta situaci√≥n, por tanto las implicaciones de pol√≠tica p√∫blica ser√≠an completamente diferentes.
+15
+
+III. Datos Mortalidad Debido a la gravedad del delito, el homicidio es una de las medidas m√°s frecuentemente referenciada de la violencia en todo el mundo. En comparaci√≥n con otros delitos violentos, como el asalto, el robo, la violaci√≥n o el secuestro, el homicidio tiene un relativamente alto grado de denuncia, probablemente debido a que es dif√≠cil de ocultar (Molzahn, Rios y Shirk, 2013). Por lo tanto, los datos de homicidios constituyen una medida importante de la reciente ola de violencia en M√©xico. Adem√°s, hay fuentes tanto gubernamentales como independientes, que han tratado de contabilizar los homicidios del crimen organizado en los √∫ltimos a√±os.
+Datos oficiales sobre los homicidios en M√©xico est√°n disponibles a partir de dos fuentes. La primera es el Instituto Nacional de Estad√≠stica y Geograf√≠a, INEGI, que proporciona datos sobre la muerte por homicidio y otras formas de crimen violento, provenientes de los certificados de muerte expedidos por instituciones de salud p√∫blica. Una segunda fuente de datos sobre homicidios proviene de investigaciones penales por aplicaci√≥n de la ley para establecer una determinaci√≥n formal de delito penal, y la posterior condena y sentencia de los sospechosos acusados de estos cr√≠menes. El Sistema Nacional de Seguridad P√∫blica, SNSP, compila datos de los informes sobre los casos de homicidio que se identifica por las fuerzas del orden. Hay una diferencia notable entre las estad√≠sticas de salud p√∫blica y de los del sistema penal4. Sin embargo, los datos de las dos fuentes est√°n estrechamente correlacionados y ofrecen medidas bastante consistentes de la tendencia general de homicidios. Por lo tanto, proporcionan puntos de referencia para esta investigaci√≥n.
+En este estudio se usan los datos reportados por INEGI a trav√©s de las bases de datos de registros administrativos, las cuales contienen datos sobre homicidios, lugar y fecha del suceso, as√≠ como caracter√≠sticas socioecon√≥micas de las v√≠ctimas.
+Se usan los registros administrativos de mortalidad del a√±o 2000 al 2012 sumando un total de 6,679,437 observaciones en el periodo de an√°lisis de las cuales fueron eliminadas las observaciones que reportaban la ocurrencia de la muerte en a√±os previos al 2000. Las poblaciones estimadas para cada a√±o de estudio fueron obtenidas de la Secretar√≠a de Salud,
+4 Esto parece deberse principalmente a diferentes plazos y metodolog√≠as mediante las cuales se clasifican los casos (Molzahn, Rios y Shirk, 2013).
+16
+
+de la Direcci√≥n General de Informaci√≥n, las cuales son estimaciones hechas con base en las proyecciones de la poblaci√≥n de M√©xico 2005 - 2030 (CONAPO, 2006).
+La proporci√≥n de homicidios como porcentaje de las muertes totales en M√©xico ha evolucionado en el tiempo. Pas√≥ de 20.58% en 2000 a 18.25% en 2004; y a 36.29% y 34.98% en 2011 y 2012, respectivamente5. De acuerdo a la distribuci√≥n de los homicidios dentro de los diferentes estados civiles se observa un incremento notable de homicidios en personas que viven en uni√≥n libre pasando de 12.89% de los homicidios totales en 2000 a 20.64% en 20126. Lo cual est√° correlacionado con el aumento de homicidios en j√≥venes, ya que de acuerdo al Censo de Poblaci√≥n y Vivienda 2010 el mayor porcentaje de personas en uni√≥n libre, 19.3%, se presenta en el grupo de edad de 15 a 29 a√±os.
+El porcentaje de homicidios perpetuados contra personas de m√°s baja escolaridad respecto al total de homicidios ha disminuido pasando de 6.67 a 3.79% para personas sin escolaridad, y de 42.24 a 27.59% para personas con primaria de 2000 a 2012, respectivamente. Mientras que en el periodo de estudio se observaron incrementos de 26.22 a 33.86% en homicidios cometidos contra personas con nivel educativo de secundaria, de 11.35 a 15.51% con nivel preparatoria y de 4.69 a 6.46% con estudios profesionales7. Cabe destacar que los mayores incrementos del crimen se dieron en las localidades de mayor tama√±o, localidades con m√°s de 1,000,000 de habitantes, y los incrementos m√°s sustanciales fueron en 2008, donde los homicidios aumentaron de 16.11% en 2006 a 32.12%, mientras que en 2010 alcanzaron el m√°ximo de 35.39%8.
+Existe una marcada diferencia en la evoluci√≥n de homicidios por grupo de edad. Afectando en mayor medida a la poblaci√≥n entre 15 y 40 a√±os, donde las tasa de homicidios se cuadruplicaron en 2010 respecto a sus niveles en 2006. La figura 1 se muestra la evoluci√≥n de homicidios por grupo de edad.
+5 La Tabla 1.1 del Anexo 1 muestra la evoluci√≥n del porcentaje de homicidios del total de muertes es M√©xico para el periodo de estudio. 6 Tabla 1.2 del Anexo 1. 7 Tabla 1.3 del Anexo 1. 8 Tabla 1.4 del Anexo 1
+17
+
+Figura 1: Evoluci√≥n de homicidios en M√©xico de 2000 a 2012 por grupos de edad.
+Nota: C√°lculos propios. Tasa de homicidios por cada 10,000 habitantes por grupo de edad, calculadas con datos de homicidios 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud, con estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen del c√°lculo los homicidios registrados entre 2000 y 20012 que ocurrieron antes de 2000.
+Por otra parte, la distribuci√≥n de los homicidios en el territorio mexicano tambi√©n ha sido diferenciada entre estados y municipios durante el periodo de estudio, de donde es posible determinar con claridad las regiones en las que el crimen ha tenido mayor impacto. Sin duda las regiones Norte y Noreste (con mayor presencia en ciudades fronterizas y asociadas a rutas de f√°cil acceso para el tr√°fico de drogas) son las m√°s afectadas por crimen. Sin embargo, algunos municipios ubicados en la regi√≥n Sur-Sureste tambi√©n presentan importantes aumentos de homicidios.
+En 2007 los municipios m√°s afectados por el crimen fueron Arispe, localizado en Sonora, con una tasa de 75.73 muertes por cada 10,000 habitantes, Dr. Belisario Dom√≠nguez en el estado de Chihuahua y el municipio de Guerrero en Tamaulipas. En 2008 el n√∫mero de municipios afectados aument√≥ y se extendi√≥ el n√∫mero de estados afectados, entre los que figuran Chihuahua, Sonora, Durango y Michoac√°n. En 2009, a los estados ya mencionados se suman Zacatecas, Jalisco, Guerrero y Nuevo Le√≥n. Entre 2009 y 2012 estas mismas regiones presentaron las tasas de homicidios m√°s altas. En la figura 2 se muestra la evoluci√≥n del crimen en el tiempo y espacio, donde adem√°s es posible identificar la magnitud del problema de violencia por regi√≥n geogr√°fica. Es notorio que el mayor
+18
+
+incremento de crimen se present√≥ en 2010 donde se observan tanto incrementos en el √°rea afectada como en la intensidad.
+Figura 2: Evoluci√≥n de homicidios en M√©xico de 2007 a 2012 por √°rea geogr√°fica.
+Nota: C√°lculos propios. Tasa de homicidios por cada 10,000 habitantes por municipio, calculadas con datos de homicidios 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud, con estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen del c√°lculo los homicidios registrados entre 2000 y 20012 que ocurrieron antes de 2000. Para realizar el c√°lculo de la tasa de homicidios por municipio y a√±os se usan las variables municipio de ocurrencia y a√±o de ocurrencia y no el municipio y a√±o de registro.
+19
+
+Educaci√≥n Datos sobre reprobaci√≥n y deserci√≥n escolar son obtenidos del Censo Escolar
+Mexicano realizado por la Secretar√≠a de Educaci√≥n P√∫blica (SEP) dos veces por a√±o, el cual contiene informaci√≥n sobre el n√∫mero de matriculados y reprobados por nivel y grado escolar para cada una de las escuelas de pa√≠s, as√≠ como el n√∫mero de maestros por tipo (tiempo completo o parcial), docentes por funci√≥n, directivos de acuerdo a si tiene a su cargo un grupo o no, personal administrativo y auxiliar de acuerdo a su funci√≥n, informaci√≥n sobre infraestructura de la escuela, tipo de sostenimiento (p√∫blica o privada) y gasto en educaci√≥n.
+El Sistema Educativo Nacional est√° formado por educaci√≥n b√°sica, media superior y superior. La educaci√≥n b√°sica est√° compuesta por preescolar, primaria y secundaria, en diferentes modalidades. Para el caso de primaria, y preescolar9, hay tres modelos educativos diferentes: general, ind√≠gena y comunitaria. Para el caso de secundaria hay de tipo general, t√©cnica, telesecundaria, comunitaria y para trabajadores. La educaci√≥n media suprior, que atiende el nivel bachillerato y educaci√≥n profesional sin antecedentes de bachillerato, tiene tres tipos de modelo educativo: bachillerato general, bachillerato tecnol√≥gico y profesional t√©cnico. Para este estudio han sido considerados todos los niveles educativos con sus respectivas modalidades.
+Para el ciclo escolar 2011/2012 la matr√≠cula total de educaci√≥n b√°sica fue de 30,115,977, 86% de los cuales fueron alumnos de educaci√≥n b√°sica y 14.4% de educaci√≥n media superior. La mayor parte de las escuelas de educaci√≥n b√°sica y media superior eran de sostenimiento p√∫blico: 91.5% de las primarias y 87.9% de las secundarias. En educaci√≥n media superior la cifra fue considerablemente menor que en los niveles previos: 63.3% (INEE, 2012).
+En educaci√≥n primaria, 11.5% de las escuelas son comunitarias, 10.1% ind√≠genas y 78.4% generales, las cuales atienden al 1, 6 y 93.5% de la matr√≠cula, respectivamente. En educaci√≥n secundaria, las telesecundarias atienden el 20.7%, las generales el 50.2%, las t√©cnicas el 28% y el resto son atendidas por las secundarias comunitarias. En media superior la mayor parte las escuelas son estatales (46.4%) y absorben el 45% de la matr√≠cula, las escuelas privadas representan el 39.9% y atienden el 19:7% de la matr√≠cula, las escuelas federales son el 8.2% y atienden al 23% y el 5.5% de escuelas son aut√≥nomas, vinculadas a universidades, y atienden al 12.4% de los alumnos (INEE, 2012).
+9 El cual no forma parte de la poblaci√≥n objetivo del estudio
+20
+
+Los indicadores de inter√©s para est√© estudio son la tasa de reprobaci√≥n y la tasa de deserci√≥n. El indicador de aprobaci√≥n (cuyo complemento es el √≠ndice de reprobaci√≥n) involucra al n√∫mero de alumnos que despu√©s de cursar y finalizar un grado escolar ingresan al siguiente, aunque no necesariamente cumplan con el nivel de conocimientos y dominio esperado para ese grado10.
+La tasa de reprobaci√≥n en primaria a escala nacional ha disminuido en m√°s de tres puntos porcentuales a lo largo del periodo de estudio, pasando de 6.00 a 2.07%, aunque en general ha disminuido en todas las entidades del pa√≠s se pueden notar algunas diferencias en la trayectoria que ha seguido11. La mayor reducci√≥n en reprobaci√≥n se dio en los estados de Chiapas, Guerrero, Oaxaca y Campeche, sin embargo son estos estados de los que presentan las tasas m√°s altas de reprobaci√≥n, que son 3.82, 3.41, 5.16 y 3.20%, respectivamente. Los estados con menores tasas de reprobaci√≥n son el DF con 0.30%, Guanajuato y Tlaxcala con 0.48%, y Baja California con 0.75% en 2012.
+Figura 3: Tasa de aprobaci√≥n en educaci√≥n primaria por grado escolar 2000/2001 y 2010/2011.
+Nota: INEE, c√°lculos con base en las Estad√≠sticas contin√∫as del formato 911 (fin de los ciclos escolares 2000/2001 y 2010/2011). Muetra la tasa de aprobaci√≥n en primaria por grado escolar. Son consideradas los tres tipos de servicio educativo en este nivel, primaria general, primaria ind√≠gena y primaria comunitaria.
+Las tasas de reprobaci√≥n disminuyen conforme aumenta el grado acad√©mico, sin embargo la reducci√≥n ha sido generalizada, pasando de 20.89% a 14.50% en secundaria y de 37.35% a 31.86% en media superior. Si analizamos media superior dividiendo en sus dos
+10 La aprobaci√≥n en educaci√≥n primaria se determina al final del ciclo escolar, en cambio, en educaci√≥n secundaria y media superior, los alumnos disponen de un periodo adicional despu√©s de haber terminado el a√±o escolar para aprobar asignaturas reprobadas. La diferencia promedio entre las tasas de reprobaci√≥n antes y despu√©s del periodo de regularizaci√≥n es de 17 puntos porcentuales. En el an√°lisis fueron consideradas las tasas de reprobaci√≥n de fin de curso, es decir antes del periodo de regularizaci√≥n. 11 En el Anexo 4 se muestran graficas de las trayectorias que han seguido los indicadores de reprobaci√≥n y deserci√≥n de 2000 a 2012 para cada nivel educativo por entidad.
+21
+
+componentes, bachillerato12 y profesional t√©cnico, las tendencias seguidas por las tasas de reprobaci√≥n son contrarias, mientras que en bachillerato se observa una disminuci√≥n de 39.03 a 32.00% en profesional t√©cnico aument√≥ de 24.03 a 30.37%. Adem√°s de haber diferencia entre los dos tipos de sistemas dentro de la educaci√≥n media superior, la reprobaci√≥n entre los estudiantes de este nivel educativo es diferente entre las entidades del pa√≠s.
+Figura 4: Tasa de aprobaci√≥n en educaci√≥n secundaria y media superior por grado escolar 2000/2001 y 2010/2011.
+Nota: INEE, c√°lculos con base en las Estad√≠sticas contin√∫as del formato 911 (fin de los ciclos escolares 2000/2001 y 2010/2011). La figura muestra las tasas de aprobaci√≥n en ambos ciclos escolares. Para el caso de secundaria son incluidas secundarias generales, t√©cnicas y telesecundarias Para el caso de media suprior la primera secci√≥n de barras de la gr√°fica muestra las tasa de aprobaci√≥n al fin de curso mientras que las √∫ltimas barras representan las tasas de aprobaci√≥n despu√©s del periodo de regularizaci√≥n que finaliza el 30 de septiembre. El c√°lculo de las tasa de aprobaci√≥n en media superior incluyen bachillerato general, bachillerato tecnol√≥gico y profesional t√©cnico.
+Igual que en reprobaci√≥n, la trayectoria de la tasa de deserci√≥n observamos que esta incrementa conforme aumenta el nivel educativo y es diferenciada por entidad federativa. Respecto a los niveles de deserci√≥n (abandono) de la escuela, el nivel primaria pas√≥ de una tasa de 1.94 a 0.63% de 2000 a 2012, disminuy√≥ de 8.26 a 5.28% en secundaria y de 17.53 a 14.41% en media superior13.
+Nuevamente la mayor dispersi√≥n es observada en media superior, espec√≠ficamente en la modalidad de profesional t√©cnico. Mientras que en media superior las mayores tasas de deserci√≥n las presentan el Distrito Federal, Chihuahua, Morelos y Nuevo Le√≥n, con niveles de 19.89, 18.43, 18.29 y 18.21%, respectivamente, en el tipo profesional t√©cnico los estados que presentan las tasas de abandono escolar m√°s altas son Durango con 32.87, Sonora con
+12 Bachillerato incluye bachillerato general y tecnol√≥gico. 13 Para bachillerato la tasa de abandono disminuy√≥ de 16.52 a 13.86 y para profesional t√©cnico la tasa cambio de 24.75 a 20.83.
+22
+
+27.80, Morelos con 27.51 y Nuevo Le√≥n con 25.48%. Sin embargo, hay estados que alcanzaron logros importantes en cuanto reducci√≥n de la deserci√≥n tal es el caso de Baja California y Quintana Roo con reducciones de 34.32 a 4.90% y de 28.56 a 12.39%, respectivamente.
+Figura 5: Tasa de deserci√≥n en educaci√≥n media superior por modalidad educativa y sexo en el ciclo escolar 2000/2001 y 2010/2011.
+A. Deserci√≥n en el ciclo escolar 2000/2001
+B. Deserci√≥n en el ciclo escolar 2010/2011
+Nota: INEE, c√°lculos con base en las Estad√≠sticas contin√∫as del formato 911 (fin de los ciclos escolares 2000/2001 y 2010/2011). La figura muestra las tasas deserci√≥n por modalidad de educativa del nivel media superior por sexo y la nacional se refiere al total de deserci√≥n en el nivel media superior, que incluye bachillerato general, bachillerato tecnol√≥gico y profesional t√©cnico.
+En t√©rminos generales en la √∫ltima d√©cada el sistema educativo nacional ha experimentado un avance en t√©rminos de sus dos principales indicadores, disminuci√≥n de la tasa de deserci√≥n y reprobaci√≥n.
+La informaci√≥n sociodemogr√°fica de las localidades donde se ubican las escuelas se obtiene de los censos de poblaci√≥n y vivienda de 2000 y 2010, el conteo de poblaci√≥n y vivienda de 2005 y de la Encuesta Nacional de Ingreso y Gasto de los Hogares (ENIGH) 2002, 2004, 2006, 2008 y 2012.
+23
+
+IV. Metodolog√≠a
+La violencia en M√©xico se intensific√≥ de forma dram√°tica debido principalmente a tres factores: cambios ex√≥genos en el mercado de estupefacientes, incluido sobre todo el relativo √©xito de Colombia en combatir el narcotr√°fico e incautar drogas (Mej√≠a y Castillo, 2012); la creciente fragmentaci√≥n de los c√°rteles de las drogas en numerosas organizaciones y c√©lulas criminales y por √∫ltimo, la lucha militarizada en contra de las drogas que se llev√≥ a cabo durante la administraci√≥n del Presidente Felipe Calder√≥n (Guerrero, 2011a; Dell, 2012; Calder√≥n, et al, 2013). Lo anterior sugiere que el aumento en el nivel de violencia en M√©xico ha sido provocado por factores ex√≥genos a las condiciones socioecon√≥micas locales. Entonces, es posible implementar una estrategia emp√≠rica que explote el fuerte aumento ex√≥geno en el nivel de violencia relacionada con las drogas despu√©s de 2006, as√≠ como las diferencias de corte transversal en los niveles de violencia a nivel municipal para estimar el efecto que este tipo de violencia tiene sobre la formaci√≥n de capital humano, lo cual es posible realizar debido a los marcados patrones geogr√°ficos que ha presentado la violencia; permitiendo encontrar municipios que no se vieron afectados por esta.
+La creciente actividad de las organizaciones criminales asociadas al narcotr√°fico ha estado acompa√±ada del deterioro del orden y un aumento importante de extorsiones, secuestros, robos, amenazas y homicidios que afectan a la poblaci√≥n en general (Magaloni, 2013). Para evaluar el efecto que esta serie de cambios, que tienen efecto directo sobre la seguridad de las localidades que los experimentan, tienen sobre el desempe√±o educativo, reprobaci√≥n y deserci√≥n14, se eligen a los municipios que recibieron choques de violencia (tratamiento). Para determinar si un municipio recibi√≥ tratamiento se obtienen la media y desviaci√≥n est√°ndar de la tasa de homicidios (homicidios por cada 10,000 habitantes) de 2000 a 2006 (periodo pre-tratamiento) y se denota que un municipio fue tratado si la media de la tasa de homicidios en cada a√±o del periodo de tratamiento, de 2007 a 2012, es mayor a la tasa media hist√≥rica de homicidios m√°s tres veces su desviaci√≥n est√°ndar15. Luego se construyen escenarios contra factuales.
+14 La metodolog√≠a de c√°lculo de los indicadores de reprobaci√≥n y deserci√≥n se muestran en el Anexo 2. 15 El tomar 3 desviaciones est√°ndar como referencia es un indicador de los efectos del crimen solo en los municipios con un incremento fuerte de la violencia y por lo tanto el efecto agregado podr√≠a ser mayor si se incluyen al tratamiento municipios con menores incrementos de violencia, por lo que la estimaci√≥n puede ser vista como una cota inferior del efecto del crimen en los resultados educativos.
+24
+
+Sin embargo, una potencial amenaza de identificaci√≥n puede surgir debido a que el tipo de violencia experimentada, relacionada con el narcotr√°fico, es principalmente un fen√≥meno urbano. Las organizaciones de tr√°fico de drogas se enfrentan entre s√≠ y contra el gobierno con el fin de controlar plazas de distribuci√≥n y rutas de comercio, los cu√°les se encuentran regularmente en los principales centros de la actividad econ√≥mica de los estados. Por lo anterior, una simple extrapolaci√≥n entre los municipios tratados y de control puede no resultar en estimadores confiables debido a diferencias significativas en las caracter√≠sticas observables y no observables entre los grupos (Magaloni, 2013).
+
+El estimador tradicional de matching empareja cada municipio con altos niveles de violencia con un municipio con caracter√≠stica observables iguales pero que no recibi√≥ el choque de violencia y se interpreta la diferencia en sus resultados educativos como el efecto del choque. Los estimadores de matching son justificados por el supuesto de que los resultados son independientes de presentar un incremento de la violencia condicionado en caracter√≠sticas observables. Esto es, si Ì†µÌ±å1 es el resultado condicional de recibir el choque y Ì†µÌ±å0 el resultado condicional de no recibirlo, el matching asume que existe un conjunto de variables condicionantes observables Z para las cuales el resultado de no participaci√≥n (resultado en reprobaci√≥n y deserci√≥n de los municipios sin incremento en violencia) Ì†µÌ±å0 es independiente del status de participaci√≥n Ì†µÌ∞∑ 16 condicionado en Z17:
+
+Ì†µÌ±å0 ‚ä• Ì†µÌ∞∑|Ì†µÌ±ç
+
+(1)
+
+Este tambi√©n asume que para todo Z hay una probabilidad positiva de recibir el choque (Ì†µÌ∞∑ = 1) o no recibirlo (Ì†µÌ∞∑ = 0), es decir:
+
+0 < Ì†µÌ±ÉÌ†µÌ±ü(Ì†µÌ∞∑ = 1|Ì†µÌ±ç) < 1
+
+(2)
+
+Esto implica que un emparejamiento puede encontrarse para todo municipio Ì†µÌ∞∑ = 1. Si los dos supuestos anteriores son satisfechos, despu√©s de condicionar sobre Z, la distribuci√≥n observada para el grupo no afectado Ì†µÌ±å0 puede ser un sustituto para la distribuci√≥n no observada Ì†µÌ±å0 de los municipios que recibieron el choque.
+
+16 Sea Ì†µÌ∞∑ = 1 para el grupo de municipios quienes sufrieron altos niveles de violencia para quienes solo es observable Ì†µÌ±å1 y Ì†µÌ∞∑ = 0 para el grupo de municipios que no sufrieron altos niveles de violencia para quienes solo se observa Ì†µÌ±å0. 17 Supuesto de ignorabilidad estricta.
+25
+
+El primer supuesto es excesivamente fuerte si el par√°metro de inter√©s es el impacto medio sobre los tratados (ATT), en cuyo caso basta con independencia de medias condicionales:
+
+Ì†µÌ∞∏(Ì†µÌ±å0|Ì†µÌ±ç, Ì†µÌ∞∑ = 1) = Ì†µÌ∞∏(Ì†µÌ±å0|Ì†µÌ±ç, Ì†µÌ∞∑ = 0) = Ì†µÌ∞∏(Ì†µÌ±å0|Ì†µÌ±ç)
+
+(3)
+
+A√∫n m√°s cuando ATT es el par√°metro de inter√©s, la condici√≥n 0 < Ì†µÌ±ÉÌ†µÌ±ü(Ì†µÌ∞∑ = 1|Ì†µÌ±ç) no es requerida porque la condici√≥n solo garantiza la posibilidad de encontrar un municipio con violencia an√°logo para cada municipio sin violencia. El par√°metro ATT solo necesita que haya la posibilidad de un municipio no afectado para cada municipio con violencia por lo tanto requiere Ì†µÌ±ÉÌ†µÌ±ü(Ì†µÌ∞∑ = 1|Ì†µÌ±ç) < 1.
+
+Bajo estos supuestos el impacto medio del tratamiento sobre los tratados puede ser escrito como:
+
+Ì†µÌ∞¥Ì†µÌ±áÌ†µÌ±á = Ì†µÌ∞∏(Ì†µÌ±å1 ‚àí Ì†µÌ±å0|Ì†µÌ∞∑ = 1)
+
+(4)
+
+= Ì†µÌ∞∏(Ì†µÌ±å1|Ì†µÌ∞∑ = 1) ‚àí Ì†µÌ∞∏Ì†µÌ±ß|Ì†µÌ∞∑=1{Ì†µÌ∞∏Ì†µÌ±å(Ì†µÌ±å0|Ì†µÌ∞∑ = 1, Ì†µÌ±ç)}
+
+= Ì†µÌ∞∏(Ì†µÌ±å1|Ì†µÌ∞∑ = 1) ‚àí Ì†µÌ∞∏Ì†µÌ±ß|Ì†µÌ∞∑=1{Ì†µÌ∞∏Ì†µÌ±å(Ì†µÌ±å0|Ì†µÌ∞∑ = 0, Ì†µÌ±ç)}
+
+Donde el primer t√©rmino puede ser estimado del grupo de municipios con alto nivel de violencia y el segundo del resultado medio de los municipios sin violencia emparejados (bajo Z) con los municipios tratados.
+
+La metodolog√≠a de matching es dif√≠cil de implementar cuando el conjunto de variables sobre las que se condiciona, Z, es muy grande. Bajo el enfoque de propensity score matching se soluciona este problema de dimensionalidad obteniendo Ì†µÌ±É = Pr(Ì†µÌ∞∑ = 1|Ì†µÌ±ç) la cual es la probabilidad de que un municipio experimente un incremento de violencia dado que sus caracter√≠sticas observables. En este caso el estimador de matching t√≠pico toma la forma:
+
+Ì†µÃÇÌªºÌ†µÌ±Ä
+
+=
+
+1 Ì†µÌ±õ1
+
+‚àëÌ†µÌ±ñ‚ààÌ†µÌ∞º1‚à©Ì†µÌ±ÜÌ†µÌ±É[Ì†µÌ±å1Ì†µÌ±ñ
+
+‚àí
+
+Ì†µÃÇÌ∞∏(Ì†µÌ±å0Ì†µÌ±ñ|Ì†µÌ∞∑Ì†µÌ±ñ
+
+=
+
+1, Ì†µÌ±ÉÌ†µÌ±ñ)]
+
+(5)
+
+Donde
+
+Ì†µÃÇÌ∞∏(Ì†µÌ±å0Ì†µÌ±ñ|Ì†µÌ∞∑Ì†µÌ±ñ = 1, Ì†µÌ±ÉÌ†µÌ±ñ) = ‚àë Ì†µÌ±ä(Ì†µÌ±ñ, Ì†µÌ±ó)Ì†µÌ±å0Ì†µÌ±ó
+Ì†µÌ±ó‚ààÌ†µÌ∞º0
+
+26
+
+Donde Ì†µÌ∞º1 denota el conjunto de municipio con altos niveles de violencia, Ì†µÌ∞º0 el conjunto de municipios sin violencia, Ì†µÌ±ÜÌ†µÌ±É18 la regi√≥n de soporte com√∫n y Ì†µÌ±õ1 el n√∫mero de municipios en el conjunto Ì†µÌ∞º1 ‚à© Ì†µÌ±ÜÌ†µÌ±É. El emparejamiento para cada municipio tratado Ì†µÌ±ñ ‚àà Ì†µÌ∞º1 ‚à© Ì†µÌ±ÜÌ†µÌ±É es construido como un promedio ponderado de los resultados de los municipios no tratados, donde Ì†µÌ±ä(Ì†µÌ±ñ, Ì†µÌ±ó) depende de la distancia entre Ì†µÌ±ÉÌ†µÌ±ñ y Ì†µÌ±ÉÌ†µÌ±ó, es decir, el m√©todo asigna mayores ponderaciones o pesos a aqu√©llas unidades con caracter√≠sticas observables similares a las unidades tratadas durante el periodo pre-tratamiento.
+No obstante nos enfrentamos a dos fuentes potenciales de sesgo por endogeneidad. En primer lugar, si bien el incremento de la violencia a partir de 2006 se debi√≥ principalmente a factores ex√≥genos, como se mencion√≥ antes, es poco probable que haya sido completamente aleatoria y puede muy bien haber sido influenciada por condiciones que tambi√©n determinan los resultados de las variables estudiadas. Los factores asociados con la presencia de los c√°rteles y el tr√°fico de drogas, como la ubicaci√≥n geogr√°fica, los niveles preexistentes de la violencia y crimen, la corrupci√≥n y la capacidad institucional, altos niveles de pobreza, bajo nivel educativo, entre otros factores pueden determinar la probabilidad de que un homicidio relacionado con las drogas se produzca, as√≠ como influir en el posterior patr√≥n de la violencia y de desarrollo educativo de las regiones afectada (Guti√©rrez-Romero y Oviedo, 2013).
+En segundo lugar, incluso despu√©s del condicionar en caracter√≠sticas observables iniciales, puede haber condiciones iniciales no observadas y variables que cambian en el tiempo que est√©n correlacionadas con la violencia por las drogas o los resultados en educaci√≥n. El grado en que las condiciones favorables para el aumento de la violencia relacionada con las drogas coinciden y var√≠an de acuerdo con otras caracter√≠sticas municipales que perjudican el desarrollo educativo, provocar√≠a que se obtengan estimadores poco confiables que sobrestimen el efecto del crimen en la educaci√≥n.
+Para hacer frente a esto se usa el enfoque de propensity score matching con diferencias en diferencias. Esto est√° motivado por estudios recientes que sostienen que los estimadores de matching est√°ndar son generalmente insatisfactorios (por ejemplo, debido al fuerte supuesto de la "selecci√≥n sobre observables"), pero en combinaci√≥n con la
+18 Por definici√≥n la regi√≥n de soporte com√∫n incluye solo aquellos valores de P que tiene densidad positiva tanto en la distribuci√≥n de D=1 y D=0, por lo tanto la regi√≥n de soporte com√∫n est√° determinada por : Ì†µÃÇÌ±ÜÌ†µÌ±û = {Ì†µÌ±É: Ì†µÃÇÌ±ì(Ì†µÌ±É|Ì†µÌ∞∑ = 1) > 0 Ì†µÌ±¶ Ì†µÃÇÌ±ì(Ì†µÌ±É|Ì†µÌ∞∑ = 0) > 0} donde Ì†µÃÇÌ±ì(Ì†µÌ±É|Ì†µÌ∞∑ = Ì†µÌ±ë) son densidades no param√©tricas estimadas por Ì†µÃÇÌ±ì(Ì†µÌ±É|Ì†µÌ∞∑ = Ì†µÌ±ë) = ‚àëÌ†µÌ±ò‚ààÌ†µÌ∞ºÌ†µÌ±ë Ì†µÌ∞∫((Ì†µÌ±ÉÌ†µÌ±ò ‚àí Ì†µÌ±É)/Ì†µÌ±éÌ†µÌ±õ).
+27
+
+metodolog√≠a de diferencias en diferencias tiene potencial para mejorar la calidad de los resultados de las evaluaciones no experimentales significativamente (Blundell y Costa Dias, 2000, p. 438). El estimador de diferencia en diferencias tiene la ventaja adicional de eliminar diferencias invariantes en el tiempo de caracter√≠sticas no observadas de los municipios que tuvieron altos incrementos de violencia y los que no lo tuvieron que el estimador est√°ndar de matching no logran eliminar (Smith y Todd, 2005a).
+
+Este tipo de estimador es an√°logo al estimador est√°ndar de regresi√≥n de diferencias en diferencias, solo que este estimador no impone la restricci√≥n de forma funcional lineal en la estimaci√≥n de la esperanza condicional de la variable de resultados y este responder√° a las observaciones de acuerdo a la funci√≥n de pesos usada por el estimador de matching. El estimador de propensity score matching con diferencias en diferencias requiere:
+
+Ì†µÌ∞∏(Ì†µÌ±å0Ì†µÌ±° ‚àí Ì†µÌ±å0Ì†µÌ±°|Ì†µÌ±É, Ì†µÌ∞∑ = 1) = Ì†µÌ∞∏(Ì†µÌ±å0Ì†µÌ±° ‚àí Ì†µÌ±å0Ì†µÌ±°|Ì†µÌ±É, Ì†µÌ∞∑ = 0)
+
+(6)
+
+Donde Ì†µÌ±° y Ì†µÌ±°‚Ä≤ son periodos despu√©s y antes del punto de inicio del programa, respectivamente. Este estimador tambi√©n requiere que se mantengan las condiciones de soporte, las cuales se deben mantener en ambos periodos, Ì†µÌ±° y Ì†µÌ±°‚Ä≤. El estimador de matching de diferencias en diferencias est√° dado por:
+
+Ì†µÃÇÌªºÌ†µÌ∞∑Ì†µÌ∞∑Ì†µÌ±Ä
+
+=
+
+1 Ì†µÌ±õ1
+
+‚àëÌ†µÌ±ñ‚ààÌ†µÌ∞º1‚à©Ì†µÌ±ÜÌ†µÌ±É[(Ì†µÌ±å1Ì†µÌ±°Ì†µÌ±ñ
+
+‚àí
+
+Ì†µÌ±å0Ì†µÌ±°‚Ä≤Ì†µÌ±ñ )
+
+‚àí
+
+‚àëÌ†µÌ±ó‚ààÌ†µÌ∞º0‚à©Ì†µÌ±ÜÌ†µÌ±É
+
+Ì†µÌ±ä(Ì†µÌ±ñ,
+
+Ì†µÌ±ó)(Ì†µÌ±å0Ì†µÌ±°Ì†µÌ±ó
+
+‚àí
+
+Ì†µÌ±å0Ì†µÌ±°‚Ä≤Ì†µÌ±ó )]
+
+(7)
+
+Donde los pesos dependen del estimador de matching cross-sectional usado.
+Una complicaci√≥n adicional en el an√°lisis es que los municipios tratados observaron un incremento sustancial de la violencia en distintos a√±os. Por ejemplo, ciudades como Tijuana, Ciudad Ju√°rez y Chihuahua observaron incrementos dram√°ticos en el n√∫mero de homicidios en 2008, mientras que ciudades en el noreste del pa√≠s fueron afectadas en a√±os posteriores.
+Para realizar la estimaci√≥n de los pesos se usa el comando psmatch2 de STATA¬Æ. Las variables de resultados son el promedio de 2007 a 2011 de las tasas de reprobaci√≥n y de deserci√≥n para educaci√≥n b√°sica y media superior. Las variables control son:
+
+28
+
+Esperanza de vida 2005 Poblaci√≥n 2005 Tasa de emigraci√≥n interestatal 2000 Tasa de inmigraci√≥n interestatal 2000 Tasa de emigraci√≥n intraestatal 2000 Tasa de inmigraci√≥n intraestatal 2000 Pobreza 2000 √çndice de Gini 2000 Tasa de homicidios 2005 Tasa de homicidios 2004 PIB 2005 Proporci√≥n de poblaci√≥n que asiste a la escuela 2005 Proporci√≥n de poblaci√≥n alfabeta 2005
+29
+
+V. Resultados
+Al aplicar la metodolog√≠a de selecci√≥n para elegir a los municipios tratados, aquellos que hayan experimentado en el periodo de an√°lisis (2007-2012) incrementos en las tasas de homicidios mayores o iguales a tres veces su desviaci√≥n est√°ndar hist√≥rica de homicidios (2000-2006), se eligieron 221 municipios ubicados en 19 entidades del pa√≠s. Los estados con mayor n√∫mero de municipios tratados son Chihuahua con el 17.65% del total de municipios con tratamiento, Guerrero con 12.67%, Michoac√°n con 9.5%, Nuevo Le√≥n con 9.05% y Durango con 8.6%, lo que era esperado despu√©s de observar las distribuci√≥n geogr√°fica del incremento de homicidios en M√©xico (mayores incrementos en el norte del pa√≠s y localidades fronterizas). La figura 6 muestra la evoluci√≥n de la tasa de homicidios para algunos municipios seleccionados.
+Figura 6: Tasa de homicidios para algunos municipios seleccionados.
+Nota: C√°lculos propios con datos de homicidios 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud y estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen homicidios ocurridos en a√±os anteriores a 2000 que fueron registrados en el periodo de 2000 a 2012. La grafica muestra la trayectoria de la tasa de homicidios de algunos municipios seleccionados con el criterio que define cunado un municipios es recibi√≥ tratamiento, un aumento de la tasa de homicidios mayor a tres veces la desviaci√≥n est√°ndar hist√≥rica de homicidios para cada municipio (2000 a 2006).
+Se obtuvieron estad√≠sticas descriptivas tanto de las variables de control como de resultados, deserci√≥n y reprobaci√≥n, para el grupo de control y tratamiento, as√≠ como el valor medio del sesgo entre ambos grupos para cada variable. En la tabla 3.1 se muestra el valor medio de las variables de control para los municipios de control y tratamiento antes del matching, mientras que en la tabla 3.3 se muestran los mismos resultados para el promedio
+30
+
+de las variables deserci√≥n y reprobaci√≥n19 para cada nivel educativo. Se puede observar que en la mayor√≠a de las variables, 14 de 19, la media para el grupo de control y tratamiento es diferente. El sesgo20 oscila entre 2.6 y 78.4%, lo que indica que los municipios que recibieron altos incrementos de violencia tiene ciertas caracter√≠sticas que los identifican, tales como mayor esperanza de vida que el promedio de los municipios de control, son municipios con m√°s poblaci√≥n, mayores tasas de migraci√≥n, con menor pobreza y m√°s desiguales, tambi√©n presentan mayores tasas de homicidios en el periodo pre-tratamiento. Esto es resultado de que el tr√°fico de drogas requiere centros de operaci√≥n con caracter√≠sticas que faciliten el traslado de las mercanc√≠as y ocultar la actividad il√≠cita, caracter√≠sticas asociadas a grandes ciudades. Lo anterior hace evidente la necesidad de encontrar municipios que sean realmente comparables con los municipios que sufrieron grandes incrementos de crimen.
+
+El propensity score fue calculado por medio de un modelo logit. El m√©todo de matching empleado fue de kernel con funci√≥n de densidad Gaussiana21 con longitud de intervalo de 0.0122. Los errores est√°ndar del efecto del tratamiento ATT fueron obtenidos a trav√©s de un procedimiento bootstrap de 1000 repeticiones 23. Despu√©s de realizar el matching se obtuvieron las medias de las variables control y de resultados para el periodo pre-tratamiento, as√≠ como las pruebas t de diferencias de medias para corroborar que no hab√≠a diferencia estad√≠sticamente significativas entre el grupo control y de tratamiento. Los resultados se muestran en la tabla 3.2 y 3.4. En casi todos los casos se logr√≥ el balance requerido para poder atribuir las diferencias de resultados entre grupo de tratamiento y control al incremento del crimen. En estas mismas tablas es incluido el porcentaje de reducci√≥n de sesgo despu√©s de realizar el matching, el cual fue de m√°s del 70% en la mayor√≠a de los casos (14 de 19). La excepci√≥n fue el nivel secundaria, donde no se logr√≥ el
+
+19 Las variables de resultados para cada nivel educativo son tomadas como el promedio de la deserci√≥n y
+
+reprobaci√≥n de 2007 a 2011, aunque se realizaron c√°lculos por a√±o, los resultados discutidos se refieren al
+
+promedio a menos que se haga la aclaraci√≥n de que se refieren a un a√±o espec√≠fico.
+
+20 El sesgo est√° definido como
+
+Ì†µÃÖÃÖÌ±ãÃÖ1ÃÖ‚àíÃÖÌ†µÃÖÌ±ãÃÖ0ÃÖ
+
+‚àö0.5(Ì†µÌ±â(Ì†µÌ±ã1)+Ì†µÌ±â(Ì†µÌ±ã0))
+
+21 La cual utiliza todas las observaciones del grupo de comparaci√≥n para obtener la media ponderada con la que
+
+ser√° comparada la media del tratamiento, a diferencia del matching con densidad Epanechnikov que utiliza las
+
+observaciones que se encuentran en un determinado intervalo.
+
+22 Entre m√°s peque√±a sea la longitud del intervalo que se elija, m√°s cercan√≠a se exige a los emparejamientos.
+
+23 Es necesario hacer la correcci√≥n de los errores ya que el procedimiento implementado en Stata psmatch2 no
+
+toma en consideraci√≥n que el propensity score proviene de una estimaci√≥n. Abadie e Imbens (2012) establecen
+
+que cuando se toma en cuenta que el propensity score es una estimaci√≥n, los ajustes del efecto promedio del
+
+tratamiento siempre son hacia abajo, dando errores est√°ndar m√°s bajos. Sin embargo, los ajustes de errores
+
+est√°ndar del efecto promedio del tratamiento sobre los tratados pueden ser hacia arriba o hacia abajo, lo que
+
+hace necesario realizar la correcci√≥n de los errores.
+
+31
+
+balance en las tasas de reprobaci√≥n ya que no fue posible rechazar la existencia de diferencia de medias, en este nivel educativo los municipios tratados presentaban tasas de reprobaci√≥n 1.5 puntos porcentuales m√°s altas que los de control, y respecto a las tasas de deserci√≥n el matching aument√≥ el sesgo, por lo que los resultados para este nivel educativo ser√°n tratados con cautela.
+Al calcular los estimadores, presentados en la tabla 3.5, se obtuvo que el crimen ha tenido un efecto negativo al aumentar los niveles promedio de deserci√≥n en los municipios que experimentaron altos incrementos de violencia respecto de los municipios donde no se present√≥ el fen√≥meno. En educaci√≥n primaria, cuando se considera el n√∫mero total de alumnos, el √≠ndice de deserci√≥n es 2.18 puntos porcentuales mayor en los municipios con altos incrementos de violencia que en los municipios control, mientras que para el nivel secundar√≠a la deserci√≥n es 1.83 puntos porcentuales mayor que en los municipios no tratados, lo cual es mayor que la diferencia inicial, sin embargo, puede ser solo reflejo de que la tendencia se mantuvo en el tiempo.
+Al considerar los niveles de deserci√≥n para la totalidad de la educaci√≥n media superior parece que el efecto ha sido menor que en educaci√≥n b√°sica (de 1.53 puntos porcentuales para el total de alumnos, 2.05 y 1.49 para hombres y mujeres, respectivamente), sin embargo al hacer el an√°lisis del efecto del crimen en la deserci√≥n en educaci√≥n media superior a trav√©s de las diferentes modalidades educativas que la componen, se encuentra que el efecto es diferenciado, afectando en mayor medida a alumnos inscritos en la modalidad profesional t√©cnico, 7.94 puntos porcentuales, donde la deserci√≥n de mujeres es la que determina en gran medida la magnitud del efecto (con 9.86 puntos porcentuales de diferencia entre grupo de tratamiento y control, el cual es el efecto de mayor magnitud de todos los encontrados para el promedio). En bachillerato general, la deserci√≥n es de 1.038 y en bachillerato tecnol√≥gico es 0.853.
+Respecto a reprobaci√≥n, el efecto en educaci√≥n b√°sica es negativo y significativo, es decir, en los municipios donde hubo grandes incrementos de violencia se redujo la reprobaci√≥n en 0.85 puntos porcentuales m√°s respecto de los municipios sin violencia. Para educaci√≥n media superior, en bachillerato general no se encuentra efecto significativo para los hombres pero s√≠ para las mujeres, el cual fue un aument√≥ en la reprobaci√≥n de 2.40 puntos porcentuales, patr√≥n que se vio repetido para el bachillerato tecnol√≥gico donde nuevamente el efecto no es significativo para los hombres pero para las mujeres es de 1.11
+32
+
+puntos porcentuales. Mientras que en profesional t√©cnico hubo una reducci√≥n de la reprobaci√≥n tanto en hombres como en mujeres, las cuales fueron de 3.78 y 4.06 puntos porcentuales, respectivamente. Lo anterior es muestra clara de que el g√©nero importa en la determinaci√≥n del canal por el cual el crimen afecta el desarrollo educativo.
+Es notoria la diferenciaci√≥n en el efecto que el crimen tiene, primero sobre resultados educativos, siendo en casi todos los casos mayor el efecto en deserci√≥n que en reprobaci√≥n, y las diferencias del efecto entre niveles educativos, modalidades de nivel educativo y g√©nero. Esto sugiere que el an√°lisis de los mecanismos de transmisi√≥n del efecto debe ser de forma separada entre educaci√≥n b√°sica y modalidades de educaci√≥n media superior, ya que el efecto puede estar siendo determinado por causas diferentes en cada caso.
+La literatura que describe la relaci√≥n entre formaci√≥n de capital humano y crimen trata de establecer, no obstante no es tarea f√°cil, los mecanismos a trav√©s de los cuales los ambientes violentos afectan a la formaci√≥n de capital humano. Estos mecanismos pueden ser a nivel individual, hogar, escuela y localidad (Torche, 2014). Es claro que si bien cada una de estas formas de transmisi√≥n tiene efectos por si mismas es posible que act√∫en en conjunto y determinen el efecto agregado de la violencia en la sociedad (Jencks y Meyer, 1990).
+A nivel hogar los padres cambian su comportamiento para hacer frente al ambiente violento de la comunidad, cambiando las pr√°cticas cotidianas para mantener la seguridad b√°sica del hogar y proteger a los hijos del peligro. La estrategia m√°s com√∫n de los padres para evitar que los hijos sean victimizados o se involucren en el crimen es restringirlos al ambiente familiar, limitando la interacci√≥n de los hijos con el ambiente de la comunidad para mantenerlos alejados de sus influencia (Jarrett, 1997). Es justo a este cambio de comportamiento de los padres, traducido en estrategias para evitar la victimizaci√≥n de los hijos, al que se asocian los resultados de deserci√≥n y reprobaci√≥n observados en educaci√≥n b√°sica, etapa del desarrollo educativo donde los ni√±os dependen de los padres en su totalidad.
+Por el lado de la reprobaci√≥n, el hecho que esta se haya reducido en los municipios con altos niveles de violencia, con efecto mucho menor que la deserci√≥n, puede obedecer al hecho de que tales estrategias tomadas por los padres son efectivas. Estas estrategias no solo alejan a los hijos del ambiente violento de la comunidad sino que al mantenerlos en casa la inversi√≥n en capital humano aumenta a trav√©s del tiempo que los padres pasan con los hijos.
+33
+
+Este mecanismo de trasmisi√≥n est√° en l√≠nea con los hallazgos de la teor√≠a de formaci√≥n de capital humano, donde se asocia al mayor tiempo compartido entre padres e hijos al aumento del rendimiento educativo en edades tempranas del desarrollo y el logro educativo cuando estos ni√±os son adultos j√≥venes (Ermish y Francesconi, 2012). Keith (1992), resalta la importancia que el tiempo que pasan los padres con sus hijos tiene en el desarrollo del capital humano de los ni√±os. El autor se refiere al desarrollo del capital humano como un proceso de producci√≥n en la que el tiempo, las habilidades y el conocimiento de los padres, y la provisi√≥n de otros bienes, son determinantes. Por su parte, Leibowitz (1974) encuentra que diferencias significativas en competencias en habilidades verbales y matem√°ticas en ni√±os de educaci√≥n b√°sica reflejan variaciones en habilidades inherentes al ni√±o y en la cantidad de capital humano adquirido en el hogar. √âl describe dos tipos de insumos en la inversi√≥n de capital humano, tiempo y provisi√≥n de bienes. Por lo tanto, cuando la familia pasa tiempo con los hijos, sus actividades son consideradas como producci√≥n familiar de capital humano.
+Respecto a la deserci√≥n, esta puede ser debida a que en circunstancias extremas los estudiantes limitan su asistencia a la escuela por miedo a ser v√≠ctimas de la violencia de la comunidad y de la propia escuela, sin embargo, este canal de transmisi√≥n puede estar actuando junto con la migraci√≥n familiar que es la medida m√°s dr√°stica tomada por los hogares para escapar del ambiente violento. Este canal resulta plausible por dos razones; primero, aunque la deserci√≥n en estos municipio aument√≥, la deserci√≥n de los estados a los que estas localidades pertenecen disminuy√≥24 de la misma forma que la deserci√≥n nacional, lo que apunta a que los ni√±os que abandonan las escuelas en lugares violentos se incorporan al sistema educativo en otras localidades, derivando en que el resultado agregado mejore; y segundo, durante el periodo de tratamiento la migraci√≥n en t√©rminos generales disminuy√≥ en el pa√≠s. A pesar de que la migraci√≥n disminuy√≥, al obtener el promedio de la migraci√≥n interestatal de los municipios con y sin tratamiento, antes y despu√©s del choque de violencia, encontramos que la disminuci√≥n de la migraci√≥n en los municipios tratados fue menor que la disminuci√≥n de la migraci√≥n en los municipios sin tratar, la reducci√≥n de la tasa de migraci√≥n interestatal fue de 14.45% en los municipios m√°s violentos mientras que en los
+24 La deserci√≥n en Chihuahua paso de 1.89 en el ciclo escolar 2005-2006 a 1.03 en el ciclo escolar 2010-2011, Guerrero de 2.81 a 1.50, Michoac√°n de 1.67 a 1.35, Nuevo Le√≥n de 0.37 a 0.36 y Durango de 1.55 a -0.34 lo que indica que no solo redujo su deserci√≥n si no que fue recepto de alumnos de otros estados.
+34
+
+municipios sin violencia fue de 17.97%25. A lo anterior se agregan los hallazgos de Arceo (2010), que encuentra que los estados del sur de Estados Unidos experimentaron las mayores tasas hist√≥ricas de inmigrantes mexicanos, con caracter√≠sticas diferentes a las del migrante t√≠pico, la cual respond√≠a a los altos niveles de violencia producto de la guerra contra el narcotr√°fico.
+Respecto a los resultados obtenidos en el nivel media superior, la diferenciaci√≥n del efecto del crimen puede ser explicada por la diferencia en objetivos, localizaci√≥n y tipo de financiamiento que tiene cada modalidad de la educaci√≥n media superior26, lo que determina en gran medida el perfil de la poblaci√≥n a la que atienden. Por otra parte aunque los resultados puedan estar siendo determinados tambi√©n por decisiones familiares, la mayor parte del efecto es explicado a otros factores como el individual y los asociados a la localidad.
+A nivel individual los estudiantes pueden experimentar estr√©s, ansiedad y miedo generado por el ambiente violento (Sharkey, 2010). Este tipo de sentimientos originados de factores ambientales pueden derivar en cambios del comportamiento entre los que se encuentran menor concentraci√≥n, menor disposici√≥n a aprender y realizar actividades relacionadas al aprendizaje. Estos factores pueden estar contribuyendo a explicar los incrementos en reprobaci√≥n observados en media superior, donde las m√°s afectadas son las mujeres. Este resultado va de acuerdo con literatura sobre salud que afirma que hay determinantes psicol√≥gicos espec√≠ficos del g√©nero que fomentan la resistencia al estr√©s y la adversidad. El g√©nero determina el poder diferencial y el control que los hombres y las mujeres tienen sobre los determinantes socioecon√≥micos de sus vidas y salud mental, su posici√≥n y condici√≥n social, el modo en que son tratados dentro de la sociedad, y su susceptibilidad y exposici√≥n a riesgos espec√≠ficos para la salud mental.
+25 Los cambios en las tasa de migraci√≥n se obtiene sacando la diferencia de la migraci√≥n interestatal de 2010 y 2000, para los municipios tratados y no tratados, la cual se expresa como cambio porcentual respecto a la migraci√≥n de 2000 para cada grupo de municipios. La migraci√≥n intermunicipal se estima usando los factores de expansi√≥n del cuestionario ampliado de los cencos de poblaci√≥n y vivienda de 2000 y 2010. 26 La educaci√≥n media superior est√° constituida por tres grandes modelos educativos: bachillerato general, bachillerato tecnol√≥gico y profesional t√©cnico. El bachillerato general prepara a estudiantes en diferentes disciplinas y ciencias, para que posteriormente puedan cursar estudios de tipo superior. El bachillerato tecnol√≥gico, por su parte, es bivalente; tiene dos prop√≥sitos: preparar a los estudiantes para su ingreso a la educaci√≥n superior, as√≠ como capacitarlos para que tengan opciones de participaci√≥n laboral en actividades agropecuarias, pesqueras, forestales, industriales y de servicios, y del mar. La educaci√≥n profesional t√©cnica tambi√©n es bivalente: Forma t√©cnicos en actividades industriales y de servicios, y el educando puede elegir incorporarse al mercado laboral u optar por la educaci√≥n de tipo superior (INEE, 2012).
+35
+
+Las diferencias de g√©nero aparecen en particular en las estad√≠sticas de trastornos mentales comunes como depresi√≥n, ansiedad, estr√©s y quejas som√°ticas27. Estos trastornos, que son predominantes en las mujeres, constituyen un serio problema para la salud p√∫blica (OMS, 2009). Por lo tanto no es sorprendente que el efecto en reprobaci√≥n sea significativo para mujeres y no significativo para hombres en educaci√≥n media superior.
+Por otra parte, los altos niveles de violencia a nivel local tambi√©n pueden interrumpir la actividad econ√≥mica. El cierre de las empresas locales disminuye la posibilidad de encontrar trabajo, y los mayores costos de transacci√≥n asociados con la violencia pueden resultar en dificultades econ√≥micas para hogares, que a su vez puede afectar el rendimiento escolar y el logro final de los estudiantes (Gregg, McMillan y Nasim 2012). La literatura muestra que bajo un nivel de pocas oportunidades econ√≥micas, las actividades il√≠citas se hacen m√°s lucrativas y aumenta la vulnerabilidad de los j√≥venes a adaptar valores de las organizaciones delictivas a trav√©s de la interacci√≥n social (Anderson, 1999). Al respecto, Magaloni (2012) encuentra que en M√©xico el aumento en el n√∫mero de homicidios tuvo un efecto substantivo para el ingreso laboral y la proporci√≥n de empresarios, as√≠ como que los municipios que observaron incrementos dram√°ticos de violencia entre 2006 y 2010 redujeron de forma importante su consumo de energ√≠a (variable usada en el estudio como proxy del PIB municipal). Esto puede explicar el hecho de que las mayores tasas de deserci√≥n se hayan presentado en el nivel t√©cnico profesional, que por una parte se encuentra principalmente ubicado en zonas de baja marginaci√≥n (ciudades) y cuyo objetivo es preparar a los j√≥venes para incorporarse al mercado laboral propio de las ciudades, por lo tanto en estas escuelas se encuentran j√≥venes invirtiendo en su preparaci√≥n para el trabajo. Sin embargo, una vez que las condiciones laborales se vuelven adversas, ellos ajustan su funci√≥n de utilidad ya sea porque que no tienen el dinero suficiente para seguir en la escuela (a diferencia de la educaci√≥n b√°sica que el 91.5% de las escuelas son de sostenimiento p√∫blico en media superior solo el 63.3% lo son (INEE, 2012)) o porque tienen que contribuir en el ingreso econ√≥mico del hogar.
+En modalidad t√©cnico profesional parece haber alg√∫n mecanismo de autoselecci√≥n en la que j√≥venes con peor desempe√±o acad√©mico son los que abandonan la escuela, el cual
+27 Es un padecimiento que afecta a los j√≥venes en el que se pueden experimentar malestares f√≠sicos transitorios como dolor de cabeza, de est√≥mago o cansancio excesivo. Normalmente, estas quejas som√°ticas desadaptivas aparecen como expresi√≥n de malestares psicol√≥gicos, es decir, estos trastornos f√≠sicos afectan al cuerpo, pero pueden y suelen tener una causa psicol√≥gica.
+36
+
+puede ser la vulnerabilidad, explicando el efecto tan grande que hay en la reducci√≥n de la reprobaci√≥n, resultado que en este caso es dif√≠cil que sea consecuencia de los cambios en pr√°cticas de los padres para mantener a los j√≥venes alejados de medios violentos, ya que los j√≥venes gozan de mayor autonom√≠a que los ni√±os, y a pesar de que los j√≥venes ajusten su comportamiento en base a ciertas reglas social establecidas por el aumento de la violencia su exposici√≥n al ambiente social violento sigue siendo alta.
+El hecho de que en las otras dos modalidades de media superior los cambios en deserci√≥n hayan sido m√°s bajos que en profesional t√©cnico responde a los objetivos que tienen estas modalidades educativas que es preparar a los j√≥venes para ingresar al nivel universitario. Objetivos que pueden verse afectados por la situaci√≥n econ√≥mica, la reducci√≥n de la esperanza de vida, que seg√∫n (Rodr√≠guez y S√°nches, 2008) es la forma en que los conflictos armados y las muertes prematuras tienen efecto sobre la educaci√≥n, y el hecho de que la valoraci√≥n de la educaci√≥n disminuye porque las prioridades o necesidades inmediatas de las sociedades cambian cuando se enfrentan a altos niveles de violencia. Respecto a la esperanza de vida, Zamudio (2012) encuentra reducciones significativas en 2010 para algunos estados del pa√≠s, las cuales son equivalentes a las que experimentan los territorios solo en tiempos de guerra, hambruna y pestes. Encuentra que los casos m√°s alarmantes fueron Chihuahua y Durango que redujeron su esperanza de vida en 3.01 y 2.52 a√±os, tomando valores inferiores a los alcanzados en 1995, Guerrero, Sinaloa y Tamaulipas la redujeron por debajo de los logros obtenidos en 2000 y Coahuila, Nuevo Le√≥n, Morelos y Nayarit obtienen valores inferiores a los alcanzados en su esperanza de vida en 2005.
+Finalmente, otro mecanismo es la reducci√≥n del logro educativo debido a la reducci√≥n de capital social. Seg√∫n la teor√≠a de la desorganizaci√≥n social, la violencia ambiental socava la cooperaci√≥n, la confianza y la capacidad de los miembros de la comunidad para ejercer el control social informal para promover el comportamiento socialmente aceptable que apoya la participaci√≥n en la escuela (Anderson 1999; Sampson et al 1997).
+37
+
+VI. Conclusiones
+El dr√°stico incremento del crimen en M√©xico ha tenido efectos negativos significativos sobre la educaci√≥n. El efecto es diferenciado de acuerdo al nivel y modalidad educativa lo que lleva a suponer que los mecanismos de transmisi√≥n del efecto son determinados por caracter√≠sticas socioecon√≥micas de los estudiantes, tales como la edad, el sexo y las expectativas de logro educativo final que se tengan.
+De acuerdo a los resultados encontrados podr√≠a ser m√°s plausible que el mecanismo de transmisi√≥n del efecto del crimen en educaci√≥n se explique por cambios de comportamiento de la sociedad que son resultado de la adaptaci√≥n a la nueva situaci√≥n vivida. En educaci√≥n b√°sica, pueden ser debidos a las medidas de protecci√≥n que toman los padres para proteger a sus hijos de la violencia, una de ellas puede ser cambiar a sus hijos de escuela a localidades cercanas donde los riesgos provocados por la violencia sean menores, o en algunos casos tomar medidas m√°s fuertes como dejar de llevar a los hijos a la escuela. Aunque las implicaciones de estos ajustes de comportamiento son distintas y el de mayor costo es el suspender la asistencia a la escuela, los cambios de escuela pueden tener costos de ajustes asociados a la adaptaci√≥n al nuevo ambiente escolar, que si bien tendr√° retribuciones futuras, la interrupci√≥n del procesos educativo puede tener efectos de corto plazo negativos, por el simple hecho de no permanecer en una din√°mica continua del proceso de aprendizaje.
+Respecto a las diferencias en deserci√≥n en educaci√≥n media, no es claro que este aumento sea debido a una mayor incorporaci√≥n de los j√≥venes al crimen. Aunque este canal podr√≠a estar explicando una parte del efecto, ya que se encontr√≥ que son los hombres, el segmento de la poblaci√≥n m√°s afectado por el crimen, quienes sistem√°ticamente son afectados por la deserci√≥n. A lo anterior se suma el hecho del incremento en el porcentaje de cr√≠menes cometidos contra personas con nivel educativo de media superior respecto del total de homicidios, el cual pas√≥ de 12.16% en 2005 a 15.51% en 2015. Sin embargo, la alta deserci√≥n de mujeres en profesional t√©cnico no permite establecer la relaci√≥n de forma clara. El hecho es que el efecto es diferenciado para mujeres y hombres, los hombres desertan m√°s pero las mujeres parecen responder al ambiente violento con mayores √≠ndices de reprobaci√≥n.
+38
+
+Los posibles mecanismos de transmisi√≥n son la menor valoraci√≥n de la educaci√≥n debida a la reducci√≥n de capital social que se traduce en menor promoci√≥n de la sociedad a continuar en el sistema educativo, el deterioro de las condiciones econ√≥micas de las localidades que sufren de incrementos considerables de violencia haciendo que los j√≥venes tengan menores incentivos a estudiar porque esperan menores retribuciones a la acumulaci√≥n de capital humano o porque tienen que contribuir a mantener el nivel de utilidad del hogar colaborando con el ingreso obtenido por realizar una activada econ√≥mica. Finalmente, la deserci√≥n puede ser motivada por la relaci√≥n que hay entre esperanza de vida e inversi√≥n en capital humano la cual se redujo en algunas de las entidades con mayor n√∫mero de municipios tratados.
+Las estimaciones del efecto del crimen sobre la educaci√≥n encontradas en este trabajo aportan a la literatura existente describiendo c√≥mo se ve afectada la formaci√≥n de capital humano en una sociedad en v√≠as de desarrollo como M√©xico ante un choque de violencia que es asociado en principio a su estrat√©gica ubicaci√≥n geograf√≠a, pero que sin duda es reforzado por la situaci√≥n institucional y socioecon√≥mica. Esta investigaci√≥n pretende aportar al debate p√∫blico, orientando a los hacedores de pol√≠ticas p√∫blicas sobre la dimensi√≥n del problema causado por el crimen, de tal manera que puedan focalizar recursos y esfuerzos hacia donde el impacto de las medidas para atenuar los efectos del crimen sea mayor. La investigaci√≥n sugiere que es el nivel media superior donde es necesario poner mayor atenci√≥n por las importantes implicaciones que tiene disminuir la deserci√≥n en este nivel educativo, que por un lado es eliminar la posibilidad de incorporaci√≥n de los j√≥venes al crimen y por otro lado evitar el aumento de la desigualdad en el logro educativo entre los j√≥venes en condici√≥n de vulnerabilidad y los que no lo est√°n, que ya de inicio es grande, con una diferencia de 45% puntos porcentuales en asistencia a la escuela entre aquellos que provienen de hogares cuyo jefe de familia no tuvo instrucci√≥n escolar (47.7%) y aquellos donde el jefe complet√≥ la educaci√≥n superior (92.7%).
+Es necesario mencionar que el impacto en el rendimiento escolar puede representar una medida m√°s objetiva del impacto del crimen en la educaci√≥n o desarrollo de capital humano ya que la reprobaci√≥n y la deserci√≥n podr√≠an solo estar midiendo el efecto m√°s extremo pero no reflejar√≠an los cambios de actitud ante el aprendizaje que genera el estar expuesto al crimen (los ni√±os y j√≥venes directamente afectados por el crimen, por ejemplo, que pierden a sus padres o familiares cercanos, tienen menos disposici√≥n a aprender y por
+39
+
+tantos resultados acad√©micos diferentes al resto de los ni√±os), lo que dar√≠a se√±ales de la necesidad de atenci√≥n diferenciada para estos ni√±os y j√≥venes que evite llegar a la reprobaci√≥n o deserci√≥n.
+40
+
+VII. Anexos
+
+Anexo 1: Evoluci√≥n del crimen en M√©xico 2000-20012 de acuerdo a diferentes categor√≠as de clasificaci√≥n
+
+Tabla 1.1 Homicidios como porcentaje de las muertes totales en el periodo 2000-2012.
+
+Presunto
+Accidente Homicidio Suicidio Se ignora
+
+2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012
+
+67.76 68.26 67.94 67.72 20.58 19.81 19.26 19.29 6.75 7.32 7.42 7.91 4.91 4.61 5.38 5.08
+
+67.91 67.46 67.53 71.33 64.35 58.40 52.30 48.72 51.51 18.25 18.75 19.36 16.15 23.61 29.52 35.68 36.29 34.98
+7.99 8.13 7.95 8.05 7.78 7.70 6.88 7.63 7.65 5.76 5.53 5.07 4.39 4.19 4.33 5.09 7.26 5.71
+
+Operaciones legales y de guerra
+
+0.00 0.00 0.00 0.00 0.08 0.14 0.08 0.08 0.06 0.05 0.05 0.10 0.15
+
+Nota: C√°lculos propios. Tasa de muertes por cada 10,000 habitantes de acurdo al tipo de muerte, tomados de la variable presunto y calculadas con datos de muertes 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud, con estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen del c√°lculo las muertes registradas entre 2000 y 20012 que ocurrieron antes de 2000, as√≠ como las muertes naturales. Se usa la variable a√±o de ocurrencia y no a√±o de registro. La tabla muestra la evoluci√≥n de las muertes de acuerdo a como ocurri√≥ en el periodo 2000-2012.
+
+Tabla 1.2 Porcentaje de homicidios 2000-2012 de acuerdo al estado civil de la v√≠ctima.
+
+Estado civil 2000 2001
+
+Soltero Casado Uni√≥n libre Divorciado Viudo No especificado
+
+35.64 40.28 12.89 2.50 3.21 5.47
+
+35.27 38.48 12.78 2.34 2.82 8.31
+
+2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012
+
+35.39 39.61 13.87 2.59 2.82 5.72
+
+34.25 37.59 15.19 4.02 3.24 5.71
+
+36.09 37.33 15.49
+1.99 3.23 5.86
+
+35.40 33.49 36.29 38.25 15.96 16.79
+2.21 2.14 3.67 3.34 6.48 5.99
+
+34.18 37.58 18.24 2.05 2.55 5.39
+
+34.48 34.98 19.10
+1.69 1.86 7.89
+
+34.98 33.53 20.85 1.77 1.54 7.33
+
+34.57 28.44 18.97 1.74 1.38 14.89
+
+33.78 27.82 19.29
+1.91 1.49 15.70
+
+33.78 27.16 20.64
+1.63 3.18 13.60
+
+Nota: C√°lculos propios. Tasa de homicidios por cada 10,000 habitantes de acurdo al estado civil del fallecido, tomados de la variable estado civil y calculadas con datos de muertes 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud, con estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen del c√°lculo las muertes registradas entre 2000 y 20012 que ocurrieron antes de 2000. Se usa la variable a√±o de ocurrencia y no a√±o de registro. La tabla muestra la evoluci√≥n de las muertes por estado civil en el periodo 2000-2012.
+
+41
+
+Tabla 1.3 Porcentaje de homicidios 2000-2012 de acuerdo a la escolaridad de la v√≠ctima.
+
+Escolaridad
+
+2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012
+
+Sin escolaridad Primaria Secundaria Preparatoria Profesional No especificado
+
+6.67 42.24 26.22 11.35
+4.69 8.83
+
+7.06 40.63 25.59 11.15
+6.48 9.09
+
+7.33 6.24 5.93 5.39 4.81 3.97 39.40 38.94 43.40 41.36 38.21 40.33 26.23 26.43 22.14 24.11 25.20 26.32 10.57 10.92 12.41 12.26 13.99 14.35
+6.16 6.96 6.33 6.17 6.89 7.19 10.31 10.52 9.79 10.70 10.91 7.85
+
+4.96 3.82 37.47 36.17 25.13 27.41 15.24 14.44 7.64 6.72 9.56 11.43
+
+2.84 2.11 3.79 31.36 32.12 27.59 26.97 25.71 33.86 13.82 15.00 15.51
+6.15 6.05 6.46 18.86 19.01 12.80
+
+Nota: C√°lculos propios. Tasa de homicidios por cada 10,000 habitantes de acurdo al nivel educativo del fallecido, tomados de la variable escolaridad y calculadas con datos de muertes 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud, con estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen del c√°lculo las muertes registradas entre 2000 y 20012 que ocurrieron antes de 2000. Se usa la variable a√±o de ocurrencia y no a√±o de registro. La tabla muestra la evoluci√≥n de homicidios por nivel de escolaridad en el periodo 2000-2012.
+
+Tabla 1.4 Porcentaje de homicidios 2000-2012 por tama√±o de localidad.
+
+Tama√±o localidad
+
+2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012
+
+De 15,000 a 19,999 De 20,000 a 29,999 De 30,000 a 39,999 De 40,000 a 49,999 De 50,000 a 74,999 De 75,000 a 99,999 De 100,000 a 249,999 De 250,000 a 499,999 De 500,000 a 999,999 De 1‚Äô000,000 a 1‚Äô499,999 De 1‚Äô500,000 y m√°s No especificado
+
+4.49 3.92 2.67 2.15 4.54 3.45 14.77 18.40 21.85 16.79 2.02 4.93
+
+3.14 3.42 4.58 5.13 2.48 2.79 1.96 2.29 4.05 3.21 3.88 3.13 10.89 9.83 17.17 19.67 27.45 18.75 12.20 18.17 6.10 10.33 6.10 3.29
+
+3.51 3.82 2.43 2.72 2.48 2.47 1.94 2.26 2.05 2.61 4.74 5.58 4.62 5.17 5.04 4.42 5.02 4.23 4.24 5.78 2.54 2.75 3.16 2.60 3.21 2.74 1.78 2.09 2.47 2.28 2.15 1.54 2.23 2.76 1.30 0.88 1.04 1.43 2.11 1.87 3.95 3.30 3.29 4.75 4.95 4.69 5.64 2.93 3.44 3.54 2.41 3.69 2.60 2.64 3.04 1.66 2.38 2.43 2.29 2.59 10.09 10.30 11.20 12.32 10.60 9.16 10.74 7.72 6.96 8.86 22.50 19.73 20.61 18.87 18.85 12.63 11.80 14.71 16.66 18.24 18.77 19.61 20.53 20.13 21.33 22.00 19.81 21.35 25.55 26.46 17.19 16.82 16.51 16.11 18.68 32.12 31.28 35.39 26.83 16.15 9.52 8.45 8.11 7.62 7.25 5.19 5.18 3.52 4.11 4.64 2.63 4.42 4.71 4.32 3.26 2.02 3.37 1.96 3.29 6.99
+
+Nota: C√°lculos propios. Tasa de homicidios por cada 10,000 habitantes de acurdo al tama√±o de localidad donde ocurri√≥ el homicidio, no donde fue registrado, tomados de la variable tama√±o de localidad y calculadas con datos de muertes 2000-20012 obtenidos de registros administrativos del INEGI y la Secretar√≠a de Salud, con estimaciones de poblaci√≥n para el mismo periodo obtenidas de CONAPO. Se excluyen del c√°lculo las muertes registradas entre 2000 y 20012 que ocurrieron antes de 2000. Se usa la variable a√±o de ocurrencia y no a√±o de registro. La tabla muestra la evoluci√≥n de homicidios por tama√±o de localidad en el periodo 2000-2012.
+
+42
+
+Anexo 2: Metodolog√≠a del c√°lculo de indicadores educativos28
+
+Tasa de aprobaci√≥n29 Definici√≥n N√∫mero de alumnos aprobados30 en un nivel o tipo educativo por cada 100 alumnos que est√°n matriculados al final del ciclo escolar31.
+
+F√≥rmula de c√°lculo
+
+Donde,
+
+Ì†µÌ∞¥Ì†µÌ±ÉÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£ Ì†µÌ±ÄÌ†µÌ∞πÌ†µÌ†µÌ±° Ì±õÌ†µÌ±ñÌ†µÌ±£
+
+√ó
+
+100
+
+Ì†µÌ∞¥Ì†µÌ±ÉÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£: Alumnos aprobados en el nivel o tipo educativo niv en el ciclo escolar t. Ì†µÌ±ÄÌ†µÌ∞πÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£: Matr√≠cula en el nivel o tipo educativo niv al final del ciclo escolar t. Ì†µÌ±õÌ†µÌ±ñÌ†µÌ±£: Nivel o tipo educativo: primaria, secundaria y media superior.
+
+Ì†µÌ±°: Ciclo escolar.
+
+Interpretaci√≥n
+
+Este indicador representa una medida aproximada de la promoci√≥n escolar, pues determina la proporci√≥n de alumnos en un nivel o tipo educativo que, despu√©s de cursar y finalizar cierto grado escolar, pueden ingresar al siguiente, ya que han cumplido con los requisitos establecidos para ello y se consideran, por tanto, alumnos aprobados. Te√≥ricamente, el indicador debe variar entre cero y 100. Cuanto m√°s elevado es su valor, significa que un
+
+28 La metodolog√≠a usada para el c√°lculo de los indicadores de reprobaci√≥n y abandono (deserci√≥n) son tomados del Instituto Nacional para la Evaluaci√≥n de la Educaci√≥n (INEE). 29 Es una medida parcial de la eficacia del sistema educativo en un determinado ciclo escolar. 30 La aprobaci√≥n en educaci√≥n secundaria y media superior se define como la acreditaci√≥n de todas las asignaturas del grado escolar de referencia. Por lo tanto, el complemento de la aprobaci√≥n en este nivel y tipo educativos es la reprobaci√≥n de al menos una asignatura. 31 La aprobaci√≥n en educaci√≥n primaria se calcula considerando a los alumnos aprobados al final del ciclo escolar. La aprobaci√≥n en educaci√≥n secundaria y media superior puede complementarse con aquellos alumnos que se regularizan durante el periodo extraordinario. Por lo anterior, el indicador presenta la aprobaci√≥n de ambas fases educativas: a fin de cursos y al 30 de septiembre del ciclo escolar inmediato. En teor√≠a, la regularizaci√≥n de alumnos durante el periodo extraordinario debe mantener o incrementar las cifras de aprobaci√≥n obtenidas a fin de cursos; sin embargo, se pueden presentar disminuciones en las tasas de aprobaci√≥n de un periodo a otro, debido a inconsistencias en el reporte de las variables requeridas para el c√°lculo del indicador.
+43
+
+mayor porcentaje de alumnos aprueba un determinado grado escolar en el nivel o tipo educativo correspondiente. Es posible que se presenten valores superiores a 100, particularmente en las tasas de aprobaci√≥n del √∫ltimo grado escolar de un determinado nivel educativo, debido a que los alumnos aprobados, considerados como egresados, pueden provenir de otras cohortes escolares.
+Tasa de deserci√≥n32
+Definici√≥n N√∫mero estimado de alumnos que abandonan la escuela entre ciclos escolares consecutivos antes de concluir el nivel o tipo educativo de referencia por cada cien alumnos matriculados al inicio del ciclo escolar.
+F√≥rmula de c√°lculo (Ì†µÌ±ÄÌ†µÌ∞ºÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£ ‚àí Ì†µÌ∞¥Ì†µÌ∞∏Ì†µÌ±îÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£) ‚àí (Ì†µÌ±ÄÌ†µÌ∞ºÌ†µÌ†µÌ±°Ì±õ+Ì†µÌ±ñÌ†µ1Ì±£ ‚àí Ì†µÌ∞¥Ì†µÌ±ÅÌ†µÌ∞º1Ì†µÌ±õ¬∞Ì†µ,Ì±ñÌ†µÌ†µÌ±°Ì±£+1) Ì†µÌ±ÄÌ†µÌ∞ºÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£
+Donde, Ì†µÌ±ÄÌ†µÌ∞ºÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£: Matr√≠cula inicial del ciclo escolar t en el nivel o tipo educativo niv. Ì†µÌ∞¥Ì†µÌ∞∏Ì†µÌ±îÌ†µÌ†µÌ±°Ì±õÌ†µÌ±ñÌ†µÌ±£: Alumnos egresados del nivel o tipo educativo niv en el ciclo escolar t. Ì†µÌ±ÄÌ†µÌ∞ºÌ†µÌ†µÌ±°Ì±õ+Ì†µÌ±ñÌ†µ1Ì±£: Matr√≠cula inicial del ciclo escolar t +1 en el nivel o tipo educativo niv. Ì†µÌ∞¥Ì†µÌ±ÅÌ†µÌ∞º1Ì†µÌ±õ¬∞Ì†µ,Ì±ñÌ†µÌ†µÌ±°Ì±£+1: Alumnos de nuevo ingreso a 1¬∞ del nivel o tipo educativo niv en el ciclo escolar t + 1. Ì†µÌ±õÌ†µÌ±ñÌ†µÌ±£ : Nivel o tipo educativo: primaria, secundaria o media superior. Ì†µÌ±°: Ciclo escolar. Interpretaci√≥n A partir de los resultados del indicador se mide el abandono escolar t de los alumnos que se inscribieron en el ciclo escolar pero que ya no se inscribieron al siguiente ciclo escolar. Bajo el supuesto de que los matriculados del ciclo escolar t +1 provengan de la cohorte escolar matriculada en el ciclo t, el indicador toma valores entre cero y 100. Valores cercanos a cero indican que una menor cantidad de alumnos abandonan la escuela. En algunos casos, la tasa
+32 Como medida de flujo entre dos ciclos escolares consecutivos, indica el porcentaje de alumnos que no retiene el Sistema Educativo Nacional.
+44
+
+de deserci√≥n total toma valores negativos, esto se debe a la presencia de alumnos de otras cohortes escolares, cuya aparici√≥n puede deberse a las reinserciones, a la migraci√≥n interestatal, entre tipos de sostenimiento y/o entre tipos de servicio.
+45
+
+Anexo 3: Estimaciones
+
+Tabla 3.1. Media de las variables de control en el periodo 2000-2005
+
+Esperanza de vida 2005
+
+Medias
+Tratamiento Control Diferencia Sesgo
+
+75.13 74.87 0.27
+
+10.5
+
+[1.50]
+
+Poblaci√≥n 2005
+
+69,021 37,228 31,793*** 21.2 [3.84]
+
+Tasa de emigraci√≥n interestatal
+
+10.85
+
+9.38
+
+1.48
+
+12.5
+
+[1.41]
+
+Tasa de inmigraci√≥n interestatal
+
+7.91
+
+7.16 0.76
+
+11.2
+
+[1.46]
+
+Tasa de emigraci√≥n intraestatal
+
+10.61
+
+8.81 1.80*** 15.3 [1.73]
+
+Tasa de inmigraci√≥n intraestatal
+
+7.58
+
+6.15 1.43*** 24.9
+
+[3.48]
+
+Pobreza 2000
+
+53.73
+
+70.03 -16.3*** -78.4 [-11.35]
+
+√çndice de Gini 2000
+
+0.4967 0.4575 0.03*** 59.9 [8.13]
+
+Tasa de homicidios 2005
+
+2.33
+
+0.93 1.40*** 54.1
+
+[8.14]
+
+Tasa de homicidios 2004
+
+2.23
+
+0.97 1.27*** 45.8
+
+[6.68]
+
+PIB 2005
+
+5,060
+
+2,499 2,561*** 14.2 [2.34]
+
+Proporci√≥n de poblaci√≥n que asiste a la escuela
+
+0.2982 0.3120 -0.013** -36.1 [-5.02]
+
+Proporci√≥n de poblaci√≥n alfabeta
+
+0.8377 0.7968 0.040*** 41.5 [5.66]
+
+Nota: C√°lculos propios. Se muestra el valor de las medias de las variables control para el periodo pre-tratamiento antes de realizar el matching. En par√©ntesis se muestra el estad√≠stico t obtenido de la prueba de diferencias de medias para determinar si hay diferencia estad√≠sticamente significativas entre el grupo control y de tratamiento. *** Significativo al 1%.
+
+46
+
+Tabla 3.2. Balance de variables control en el periodo 2000-2005
+
+Esperanza de vida 2005
+
+Medias
+% de Tratamiento Control Diferencia correcci√≥n
+de sesgo
+
+75.21
+
+75.37 0.159 [-0.660]
+
+40.50
+
+Poblaci√≥n 2005
+
+55,446 60,383 4937
+
+84.50
+
+[-0.330]
+
+Tasa de emigraci√≥n interestatal
+
+10.69
+
+10.68 -0.012 [0.020]
+
+99.10
+
+Tasa de inmigraci√≥n interestatal
+
+7.65
+
+7.88 0.233
+
+69.20
+
+[-0.390]
+
+Tasa de emigraci√≥n intraestatal
+
+10.48
+
+10.49 0.006 [-0.010]
+
+99.70
+
+Tasa de inmigraci√≥n intraestatal
+
+7.32
+
+7.49 0.167
+
+88.20
+
+[-0.300]
+
+Pobreza 2000
+
+53.69
+
+55.17 1.486 [-0.680]
+
+90.90
+
+√çndice de Gini 2000
+
+0.4955 0.4911 -0.004 [0.700]
+
+88.60
+
+Tasa de homicidios 2005
+
+1.86
+
+2.17 0.305
+
+78.20
+
+[-1.200]
+
+Tasa de homicidios 2004
+
+1.81
+
+1.88 0.069
+
+94.50
+
+[-0.280]
+
+PIB 2005
+
+3,379
+
+3,857 477.8 [-0.350]
+
+81.30
+
+Proporci√≥n de poblaci√≥n que asiste a la escuela
+
+0.2987 0.3020 0.003 [-0.830]
+
+76.40
+
+Proporci√≥n de poblaci√≥n alfabeta
+
+0.8407
+
+0.8325 -0.008 [0.810]
+
+79.80
+
+Nota: C√°lculos propios. Se muestra el valor de las medias de las variables control para el periodo de inicio del tratamiento despu√©s de realizar el matching. En par√©ntesis se muestra el estad√≠stico t obtenido de la prueba de diferencias de medias para determinar si hay diferencia estad√≠sticamente significativas entre el grupo control y de tratamiento. *** Significativo al 1%.
+
+47
+
+Tabla 3.3. Media de las variables de resultados en el periodo 2000-2005
+
+Tasa de deserci√≥n primaria 2005
+
+Medias Tratamiento Control Diferencia Sesgo
+2.27 0.79 1.48*** 34.5 [5.16]
+
+Tasa de deserci√≥n secundaria 2005
+
+7.70 8.15 -0.45 -2.6 [-0.6]
+
+Tasa de deserci√≥n media superior 2005
+
+17.25 16.95 0.29
+
+1.9
+
+[0.27]
+
+Tasa de reprobaci√≥n primaria 2005
+
+5.23 6.60 -1.36*** -37.1 [-4.93]
+
+Tasa de reprobaci√≥n secundaria 2005
+
+14.99
+
+12.36 2.63*** 31.7 [4.21]
+
+Tasa de reprobaci√≥n media superior 2005
+
+32.29
+
+29.47 2.83*** 17.9 [2.35]
+
+Nota: C√°lculos propios. Se muestra el valor de las medias de las variables de resultados para el periodo pre-tratamiento antes de realizar el matching. En par√©ntesis se muestra el estad√≠stico t obtenido de la prueba de diferencias de medias para determinar si hay diferencia estad√≠sticamente significativas entre el grupo control y de tratamiento. *** Significativo al 1%.
+
+48
+
+Tabla 3.4. Balance de variables de resultados en el periodo 2000-2005
+
+Tasa de deserci√≥n primaria 2005
+
+Medias
+% de Tratamiento Control Diferencia correcci√≥n
+de sesgo
+
+2.01
+
+1.73 -0.280 81.10
+
+[0.660]
+
+Tasa de deserci√≥n secundaria 2005
+
+7.10
+
+8.89 1.7858 -298.10
+
+[-0.940]
+
+Tasa de deserci√≥n media superior 2005
+
+17.51
+
+17.95 0.442 [-0.350]
+
+-50.60
+
+Tasa de reprobaci√≥n primaria 2005
+
+5.08
+
+5.44 0.353
+
+74.00
+
+[-0.950]
+
+Tasa de reprobaci√≥n secundaria 2005
+
+14.86
+
+13.21
+
+1.64 [2.14]
+
+37.50
+
+Tasa de reprobaci√≥n media superior 2005
+
+32.64
+
+31.56
+
+-1.081 [0.610]
+
+61.70
+
+Nota: C√°lculos propios. Se muestra el valor de las medias de las variables de resultados para el periodo pre-tratamiento despu√©s de realizar el matching. En par√©ntesis se muestra el estad√≠stico t obtenido de la prueba de diferencias de medias para determinar si hay diferencia estad√≠sticamente significativas entre el grupo control y de tratamiento. *** Significativo al 1%.
+.
+
+49
+
+Tabla 3.5. Balance de variables de resultados
+
+Efecto del crimen en:
+
+Deserci√≥n
+
+Reprobaci√≥n
+
+Primaria Hombres Mujeres
+
+2.188*** [0.782] 1.767*** [0.761] 2.635*** [0.816]
+
+-0.854*** [0.105]
+-0.877*** [0.114]
+-0.830*** [0.105]
+
+Secundaria Hombres Mujeres
+
+1.824*** [0.226]
+0.212 [0.211]
+3.546*** [0.368]
+
+-0.746*** [0.181]
+-1.245*** [0.185]
+-0.362 [0.245]
+
+Media superior Hombres Mujeres
+
+1.537*** [0.606] 2.049*** [0.616] 1.495** [0.750]
+
+1.038** [0.520] 0.181 [0.645] 1.836*** [0.435]
+
+Bachillerato general Hombres Mujeres
+
+1.037 [0.869] 1.618*** [0.739] 0.609 [1.052]
+
+1.693*** [0.598] 1.065 [0.684] 2.401*** [0.550]
+
+Bachillerato tecnol√≥gico Hombres Mujeres
+
+0.853* [0.499] 0.931* [0.508] 0.643 [0.490]
+
+0.256 [0.725] -0.385 [0.937] 1.018*** [0.500]
+
+Profesional t√©cnico Hombres Mujeres
+
+7.939*** [1.240] 1.929* [1.005] 9.861*** [1.346]
+
+-3.704*** [0.940]
+-3.788*** [1.265]
+-4.064*** [0.850]
+
+Nota: C√°lculos propios. Se muestran los efecto del tratamiento sobre los tratados (ATT) obtenidos con el estimador de matching de diferencias en diferencias, del promedio de deserci√≥n y reprobaci√≥n 2007-2011 menos deserci√≥n en 2005, para cada nivel educativo por sexo. El propensity score fue calculado por medio de un modelo logit. El m√©todo de matching empleado fue de kernel con funci√≥n de densidad Gaussiana con longitud de intervalo de 0.01. Los errores est√°ndar del efecto del tratamiento ATT fueron obtenidos a trav√©s de un procedimiento bootstrap de 1000 repeticiones, los cuales se muestran en par√©ntesis. *** Significativo al 1%. *Significativo al 5%.
+
+50
+
+Anexo 4: Reprobaci√≥n y deserci√≥n por nivel educativo a escala estatal Reprobaci√≥n
+Figura 4.1. Tasa de reprobaci√≥n en primaria 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+51
+
+Figura 4.2. Tasa de reprobaci√≥n en secundaria 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+52
+
+Figura 4.3. Tasa de reprobaci√≥n en media superior 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+53
+
+Figura 4.4. Tasa de reprobaci√≥n en bachillerato 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+54
+
+Figura 4.5. Tasa de reprobaci√≥n en profesional t√©cnico 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+55
+
+Deserci√≥n
+
+Figura 4.6. Tasa de deserci√≥n en primaria 2000-2012 por entidad federativa.
+
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+56
+
+Figura 4.7. Tasa de deserci√≥n en secundaria 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+57
+
+Figura 4.8. Tasa de deserci√≥n en media superior 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+58
+
+Figura 4.9. Tasa de deserci√≥n en bachillerato 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+59
+
+Figura 4.9. Tasa de deserci√≥n en bachillerato 2000-2012 por entidad federativa.
+Nota. Elaboraci√≥n propia con datos de las Estad√≠sticas continuas del formato 911 (inicio de los ciclos escolares 2000/2001 a 2011/2012).
+60
+
+VIII. Bibliograf√≠a
+
+Abadie, A., A. Diamond, and J. Hainmueller. 2010. ‚ÄúSynthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program,'' Journal of the American Statistical Association, Vol. 105 No. 490.
+
+Abadie, A., and J. Gardeazabal. 2003. ‚ÄúThe Economic Costs of Conflict: A Case Study of the Basque Country'' American Economic Review, Vol. 93, No. 1.
+
+Abadie, Alberto y Imbens, Guido W. 2012. ‚ÄúMatching on the Estimated Propensity Score.‚Äù Harvard
+
+University
+
+and
+
+National
+
+Bureau
+
+of
+
+Economic
+
+Research.
+
+http://www.hks.harvard.edu/fs/aabadie/pscore.pdf
+
+Anderson, Elijah. 1999. ‚ÄúCode of the Street: Decency, Violence, and the Moral Life of the Inner City‚Äù. New York: Norton.
+
+Barrera, Felipe and Ana Mar√≠a Ib√°√±ez. 2004. "Does Violence Reduce Investment In Education?: A Theoretical And Empirical Approach," Documentos CEDE 002382, Universidad de los AndesCEDE.
+
+BenYishay, Ariel and Pearlman, Sarah. 2013. ‚ÄúHomicide and Work: The Impact of Mexico‚Äôs Drug War on Labor Market Participation.‚Äù LACEA-LAMES, octubre 2013.
+
+Blundell, R., Costa Dias, M., 2000. Evaluation methods for non-experimental data. Fiscal Studies 21, 427‚Äì468.
+
+Calder√≥n, Gabriela, Alberto D√≠az-Cayeros, Beatriz Magaloni y Gustavo Robles (2013). ‚ÄúThe Temporal and Spatial Dynamics of Violence in Mexico‚Äù. Working paper. Stanford University.
+
+Castillo, Juan Camilo y Daniel Mej√≠a.2012. ‚ÄúNarcotr√°fico y violencia en M√©xico: las razones m√°s all√° de Calder√≥n‚Äù. Blog Foro Econ√≥mico. Publicado el 23 de octubre de 2012. Disponible en:http://focoeconomico.org/2012/10/23/narcotrafico-y-violencia-en-mexico-las-razones-mas-allade-calderon/.
+
+Caudillo, Monica y Torche, florencia. 2013. ‚ÄúExposure to Local Homicides and Early Educational Atteinment and Achievement in Mexico‚Äù Extend Abstract.
+
+Dell, Melissa. 2011. ‚ÄúTrafficking Networks and the Mexican Drug War.‚Äù Mimeograph MIT Department of Economics
+
+D√≠az-Cayeros, Alberto, Beatriz Magaloni, Aila Matanock, and Vidal Romero. 2012. "Living in Fear: Mapping the Social Embeddedness of Drug Gangs and Violence in Mexico". Working Paper, Stanford University.
+
+DiTella, Rafael, Sebastian Galiani and Ernesto Schargrodsky. 2010. ‚ÄúCrime distribution and victim behavior during a crime wave‚Äù in The Economics of Crime, NBER Conference Report, University of Chicago press, DiTella, Edwards, Schargrodsky editors
+
+Fern√°ndez, Manuel, Ana Maria Ib√°√±ez and Ximena Pe√±a. 2011. ‚ÄúAdjusting the Labor Supply to Mitigate Violent Shocks: Evidence from Rural Colombia‚Äù, World Bank Working Paper Series 5684
+
+Galenson, D.W. 1995. ‚ÄúDeterminants of the School Attendance of Boys in Early Chicago‚Äù, History of Education Quarterly, 35(4): 371-400.
+
+61
+
+Galiani, S., Seira, E. y Magaloni, B. 2012. ‚ÄúImpacto del crimen en el precio de las viviendas‚Äù. Los costos del crimen y de la violencia en Am√©rica Latina y el Caribe. Banco Interamericano de Desarrollo (BID).
+
+Gary S. Becker & Yona Rubinstein, 2011. "Fear and the Response to Terrorism: An Economic Analysis," CEP Discussion Papers dp1079, Centre for Economic Performance, LSE.
+
+Gaviria, Alejandro y Carmen Pag√©s. 1999. ‚ÄúPatterns of crime victimization in Latin American cities.‚Äù Journal of Development Economics, Vol.67, pp 181-203
+
+Gregg, Paul, Lindsay McMillan, and Bilal Nasim. 2012. ‚Äò‚ÄòThe Impact of Father‚Äôs Job Loss during the Recession of the 1980‚Äôs on Their Children‚Äôs Educational Attainment and Labour Market Outcomes.‚Äô‚Äô Fiscal Studies 33:237‚Äì64.
+
+Guerrero Gutierrez, Eduardo. 2011. "La ra√≠z de la violencia," Nexos, 1 junio 2011. Disponible en: http://www.nexos.com.mx/?P=leerarticulo&Article=2099328.
+
+Guti√©rrez-Romero, Roxana y Oviedo, M√≥nica. 2013. The Costs of the Mexico‚Äôs War on Drugs: Estimating the Socio-Economic Impact of Drug-Related Violence. University of Barcelona. M√≥nica Oviedo‚Äôs PhD dissertation, under the supervision of Dr. Xavier Ramos.
+
+Datos
+
+de
+
+proyecciones
+
+de
+
+poblaci√≥n
+
+http://www.sinais.salud.gob.mx/demograficos/poblacion.html
+
+M√©xico
+
+1990-
+
+2012
+
+Hamermesh, Daniel. 1999. ‚ÄúCrime and the Timing of Work.‚Äù Journal of Urban Economics, Vol.45, pp 311-330
+
+Hansen, David. 2012. ‚ÄúThe effects of Crime on Educational Investment: A Policy Simulation Approach.‚Äù Seminar in series: http://economics.stanford.edu/Econ 305/315/345/370 Applied Microeconomics and Econometrics.
+
+√çndice de pobreza: http://www.coneval.gob.mx/Medicion/Paginas/Evolucion-de-las-dimensiones-dela-pobreza-1990-2010-.aspx
+
+Indicadores educativos SEP. http://www.snie.sep.gob.mx/indicadores_y_pronosticos.html
+
+Instituto Nacional para la Evaluaci√≥n de la Educaci√≥n (INEE), 2012. ‚ÄúPanorama Educativo de M√©xico‚Äù.
+
+Jarrett, Robin L. 1997. ‚Äò‚ÄòAfrican American Family and Parenting Strategies in Impoverished Neighborhoods.‚Äô‚Äô Qualitative Sociology 20:275‚Äì88.
+
+Jencks, Christopher and Susan E. Mayer. 1990. ‚Äò‚ÄòThe Social Consequences of Growing up in a Poor Neighborhood.‚Äô‚Äô Inner City Poverty in the US, edited by L. E. Lynn and M. McGeary. Washington DC: National Academy Press.
+
+John Ermisch y Marco Francesconi. 2012. ‚ÄúThe effect of parental employment on child schooling‚Äù. Journal of Applied Econometrics. Volume 28, Issue 5, pages 796‚Äì822, August 2013.
+
+Knual, F. 2001. ‚ÄúThe impact of child labor and school droout on human capital: Gender differences in Mexico‚Äù in Economic of Gennder in M√©xico: Work, Family, State and the Market. Katz, E. And M. Correia Eds. Washington DC: World Bank.
+
+Krug, E., J. Mercy, L. Dahlberg, and A. Zwi. 2002. ‚ÄúThe World report on violence and Health.‚Äù Lancet 360:1083-1088.
+
+Leibowitz, A. 1974. ‚ÄúHome investments in children‚Äù. In T. W. Schultz (Ed.), Economics of the family: Marriage, children, and human capital. Chicago, IL: TheUniversity of Chicago Press.
+
+62
+
+Lochner, Lance. 2004. ‚ÄúEducation, work and crime: a human capital approach‚Äù, International Economic Review, vol. 45, pp. 811-43.
+Long, J. E and E.F. Toma. 1988 ‚ÄúThe Determinants of Private School Attendance, 1970-1980‚Äù, The Review of Economic and Statistics 70(2): 351- 357.
+Lorentzen, Peter, John McMillan and Romain Wacziagar. 2005. ‚ÄúDeath and Development.‚Äù CEPR Discussion Paper No. 5246.
+Magaloni, B., Caldr√≥n, G. y Robles, G. 2013. ‚ÄúLas Consecuencias Econ√≥micas de la Violencia en M√©xico‚Äù. Los costos del crimen y de la violencia en Am√©rica Latina y el Caribe. Banco Interamericano de Desarrollo (BID).
+Miller, T. R., M.A. Cohen and B. Wiersema. 1996. ‚ÄúVictim Cost and Consequences: A New Look.‚Äù Final Summary Report to the National Institute of Justice.
+Miguel, Edward and Gerard Roland. 2006.‚ÄúThe Long Run Impact of Bombing Vietnam‚ÄùNBER Working Paper 11954.
+Molzahn, Cory; Rios, Viridiana and David A. Shirk. 2013. ‚ÄúDrug Violence in Mexico: Data and Analysis Through 2012‚Äù, Trans-Border Institute, Special Report
+Monteiro, Joana y Rocha, Rudi. 2013. ‚ÄúDrug battles and school achievement: evidence from Rio de Janeiros‚Äôs Favelas.‚Äù CAF Working Papers. N¬∞ 2013/05.
+Pinotti, Pablo. 2011. "The Economic Consequences of Organized Crime:Evidence from Southern Italy". Working paper. Available at: http:// www.tcd.ie/Economics/ Seminars/Paolo\%20Pinotti\%20paper.pdf
+Ravallion and Wodon. 1998. ‚ÄúEvaluating a Targeted Social Program When Placement is Decentralized‚Äù, Policy Research Working Paper 1945, World Bank.
+Rephann, T.J. ‚ÄúThe Importance of Geographical Attributes in the Decision to Attend College‚Äù, Socio-Economic Planning Sciences 36: 291-307.
+Roderick, M. 1994. ‚ÄúGrade Retention and school dropout: Investigating and Association‚Äù American Educational research Journal 31(4); 729-759.
+Rodr√≠guez, Catherine and Fabio S√°nchez. 2008. ‚ÄúArmed Conflict Exposure, Human Capital Investments and Child Labor: Evidence from Colombia‚Äù. Documentos CEDE, No. 5, Universidad de los Andes- CEDE
+Sharkey, Patrick. 2010. ‚Äò‚ÄòThe acute effect of local homicides in children‚Äôs cognitive performance.‚Äô‚Äô Proceedings of the National Academy of Sciences 107:11733‚Äì11738.
+Shepard, L. And M.L. Smith. 1990. ‚ÄúSynthesis of Research on Grade Retention.‚Äù Educational Leadership 47: 84-88
+Smith, J., Todd, P., 2005a. Does matching overcome Ladondes critique of nonexperimental estimators. Journal of Econometrics 125, 305‚Äì353.
+Soares, Rodrigo. 2005. ‚ÄúMortality Reductions, Educational Attainment and fertility Choice.‚Äù American Economic Review, Vol. 95 (3), pp. 580-601.
+Tauchen, H., Witte, A. Y Griesinger, H. 1994. ‚ÄúCriminal deterrance: revisisng the issue with a birth cohort‚Äù, Review of Economics and Statistics, vol. 76, pp. 399-412.
+63
+
+United Natios Office on Drugs and Crime (UNODC), 2011. ‚ÄúGlobal Study on Homicide: Trends, Contexts, Data.‚Äù Villoro, Renata y Graciela Teruel. 2004. ‚ÄúThe social Costs of Crime in Mexico City and Suburban Areas.‚Äù Estudios Econ√≥micos. Vol. 19 (1), pp 3-44 W. Keith Bryant. 1992. ‚ÄúHuman Capital, Time Use, and Other Family Behavior‚Äù. Journal of Family and Economic Issues, Vol. 13(4), Winter 1992. Zamudio S. Francisco Jos√©. 2012. ‚ÄúInforme Estad√≠stico sobre Desarrollo Humano en M√©xico: 19952010‚Äù. Universidad Aut√≥noma Chapingo.
+64
+
+IX. √çndice de cuadros
+Tabla 1.1 Homicidios como porcentaje de las muertes totales en el periodo 2000-2012._________ 41 Tabla 1.2 Porcentaje de homicidios 2000-2012 de acuerdo al estado civil de la v√≠ctima. ________ 41 Tabla 1.3 Porcentaje de homicidios 2000-2012 de acuerdo a la escolaridad de la v√≠ctima. _______ 42 Tabla 1.4 Porcentaje de homicidios 2000-2012 por tama√±o de localidad. ____________________ 42 Tabla 3.1 Media de las variables de control en el periodo 2000-2005 _______________________ 46 Tabla 3.2 Balance de variables control en el periodo 2000-2005 ___________________________ 47 Tabla 3.3 Media de las variables de resultados en el periodo 2000-2005 _____________________ 48 Tabla 3.4 Balance de variables de resultados en el periodo 2000-2005 ______________________ 49 Tabla 3.5 Balance de variables de resultados __________________________________________ 50
+X. √çndice de figuras
+Figura 1. Evoluci√≥n de homicidios en M√©xico de 2000 a 2012 por grupos de edad. ____________ 18 Figura 2. Evoluci√≥n de homicidios en M√©xico de 2007 a 2012 por √°rea geogr√°fica. ____________ 19 Figura 3. Tasa de aprobaci√≥n en educaci√≥n primaria por grado escolar 2000/2001 y 2010/2011. __ 21 Figura 4. Tasa de aprobaci√≥n en educaci√≥n secundaria y media superior por grado escolar 2000/2001 y 2010/2011.____________________________________________________________________ 22 Figura 5. Tasa de deserci√≥n en educaci√≥n media superior por modalidad educativa y sexo en el ciclo escolar 2000/2001 y 2010/2011. ____________________________________________________ 23 Figura 6: Tasa de homicidios para algunos municipios seleccionados. ______________________ 30 Anexos Figura 4.1. Tasa de reprobaci√≥n en primaria 2000-2012 por entidad federativa. _______________ 51 Figura 4.2. Tasa de reprobaci√≥n en secundaria 2000-2012 por entidad federativa. _____________ 52 Figura 4.3. Tasa de reprobaci√≥n en media superior 2000-2012 por entidad federativa. __________ 53 Figura 4.4. Tasa de reprobaci√≥n en bachillerato 2000-2012 por entidad federativa. ____________ 54 Figura 4.5. Tasa de reprobaci√≥n en profesional t√©cnico 2000-2012 por entidad federativa._______ 55 Figura 4.6. Tasa de deserci√≥n en primaria 2000-2012 por entidad federativa. _________________ 56 Figura 4.7. Tasa de deserci√≥n en secundaria 2000-2012 por entidad federativa. _______________ 57 Figura 4.8. Tasa de deserci√≥n en media superior 2000-2012 por entidad federativa. ____________ 58 Figura 4.9. Tasa de deserci√≥n en bachillerato 2000-2012 por entidad federativa. ______________ 59 Figura 4.9. Tasa de deserci√≥n en bachillerato 2000-2012 por entidad federativa. ______________ 60
+65
+
+

@@ -1,0 +1,1787 @@
+Determinantes de la Diferencia en Caliﬁcaciones entre Escuelas Privadas y Pu´blicas Usando la Prueba Enlace
+Resumen
+El presente trabajo analiza la diferencia de caliﬁcaciones entre las escuelas privadas y pu´ blicas utilizando los resultados de la Evaluacio´n Nacional del Logro Acade´mico en Centros Escolares. La metodolog´ıa desarrollada por DiNardo, Fortin, & Lemieux (1996) permite estimar diversos contrafactuales y estudiar distintos puntos de la distribucio´n de la caliﬁcaciones como el percentil 10. En particular, se estima la distribucio´n de caliﬁcaciones de estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas de estudiantes de escuelas privadas. Posteriormente se descompone la aportacio´n de las caracter´ısticas observables sobre grupos de variables que reﬂejan las caracter´ısticas de los estudiantes, familiares, recursos escolares y factores institucionales. Los principales resultados sugieren que gran parte de la diferencia en caliﬁcaciones se explica v´ıa diferencias en caracter´ısticas observables (80 % - 95 %). Las contribuciones ma´s importantes en estudiantes de bajo rendimiento son los factores escolares y caracter´ısticas familiares mientras que en estudiantes de alto rendimiento los factores institucionales y caracter´ısticas individuales adquieren relevancia. Esto signiﬁca que las aportaciones de los grupos antes mencionados var´ıan conforme al rendimiento de los estudiantes.a
+aLos errores son exclusiva responsabilidad del autor.
+
+´Indice general
+
+1. Introduccio´n
+
+1
+
+2. Revisio´n de la Literatura
+
+5
+
+3. Metodolog´ıa.
+
+10
+
+3.1. Estimaciones de Densidad Kernel . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3.2. Di Nardo, Fortin, Lemieux (1996) . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3.3. Estrategia Emp´ırica para DFL . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+3.4. Retornos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+3.5. Una descomposicio´n detallada . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+4. Datos y Estad´ısticas Descriptivas
+
+24
+
+4.1. Bases de Datos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+4.2. Estad´ısticas Descriptivas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+4.3. Diferencia en Caracter´ısticas Observables. . . . . . . . . . . . . . . . . . . . 38
+
+4.4. Especiﬁcacio´n Econome´trica . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+
+II
+
+5. Resultados
+
+41
+
+5.1. Di Nardo, Fortin & Lemieux . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+
+5.2. Descomposicio´n Detallada . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+
+5.3. Descomposicio´n Independiente . . . . . . . . . . . . . . . . . . . . . . . . . 50
+
+5.4. Diferencias en Retornos: McCrary et al. (2010) . . . . . . . . . . . . . . . . . 53
+
+5.5. El Impacto del Pasado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+
+5.6. Implicaciones de Pol´ıtica Pu´ blica . . . . . . . . . . . . . . . . . . . . . . . . 58
+
+6. Conclusiones
+
+60
+
+Appendices
+
+69
+
+A. Diversos
+
+69
+
+Cap´ıtulo 1
+Introduccio´ n
+La educacio´n ha sido un tema central y muy estudiado en econom´ıa. Diferentes investigaciones han sen˜ alado la importancia de la educacio´n sobre diversos aspectos individuales. Por ejemplo, Card (1993) encuentra una relacio´n positiva entre educacio´n y el ingreso, mientras que Lleras-Muney (2005) encuentra un efecto positivo de los an˜ os de educacio´n sobre la salud de los individuos. Respecto a beneﬁcios sociales, Lochner & Moretti (2004) aﬁrman que existe una relacio´n negativa entre educacio´n y crimen, De Gregorio & Lee (2003) encuentran que mayor educacio´n implica una mayor equidad en la distribucio´n del ingreso. En te´rminos de pol´ıticas pu´ blicas, la educacio´n es parte esencial, sin duda alguna, en las agendas de todos los gobiernos.
+En Me´xico, el gasto pu´ blico en educacio´n, de acuerdo con el Banco de Me´xico, representa el 5 % del Producto Interno Bruto (PIB) y 22 % del gasto pu´ blico total. Esto posiciona a Me´xico en la cima de todos los pa´ıses de la OECD respecto a porcentaje del gasto pu´ blico1 e inclusive encima del gasto promedio mundial como porcentaje del PIB.2 El sistema educativo mexicano se conforma por Educacio´n Ba´sica, la cual se divi-
+1OECD (2010): PISA 2009 Results: Executive Summary 2The World Bank (2010): Education Data, http://data.world.org/topic/education
+1
+
+de en educacio´n primaria (6 an˜ os) y secundaria (3 an˜ os), Educacio´n Media Superior (3 an˜ os) y Educacio´n Superior (2-5 an˜ os). Desde la de´cada de 1990 el gobierno mexicano enfoco´ los esfuerzos a incrementar la matr´ıcula escolar provocando un aumento en el nu´ mero de estudiantes de 34.5 %.3 Sin embargo, a pesar de la considerable cantidad del gasto pu´ blico destinado a educacio´n y de ciertos objetivos alcanzados, en temas de calidad educativa au´ n falta mucho camino por recorrer. Prueba de ello, son los resultados que Me´xico ha obtenido en exa´menes estandarizados como el Programa Internacional para la Evaluacio´n de los Estudiantes (PISA). En PISA 2009, Me´xico se encuentra en el u´ ltimo lugar de todos los pa´ıses de la OECD con una caliﬁcacio´n promedio de 425 puntos. Esto signiﬁca que la brecha entre Corea, pa´ıs ubicado en el primer lugar, y Me´xico es de 114 puntos, lo que equivale a ma´s de dos an˜ os de educacio´n.4
+Adema´s, las diferencias en la calidad de la educacio´n se presentan a nivel nacional. Las escuelas en Me´xico se diferencian en te´rminos de quien proveen sus recursos: el sector privado o el sector pu´ blico. Para 2009, so´lo 9.3 % de los jove´nes en educacio´n ba´sica se encuentran en escuelas pertenecientes al sector privado y tal porcentaje se incrementa a 18.5 % para el nivel medio superior.5 En Me´xico, la educacio´n privada es asociada con una educacio´n de mayor calidad. Por ejemplo, en PISA 2009 las escuelas privadas obtuvieron 10 % ma´s caliﬁcacio´n que las escuelas pu´ blicas en todas las a´reas evaluadas, lo cual equivale a un an˜ o escolar de diferencia. Guichard (2005) usando los resultados de PISA 2004 sen˜ ala diferencias similares y sugiere que pueden reﬂejar el estado socioecono´mico de los estudiantes.
+Las grandes diferencias tanto internacionales como nacionales han hecho de la calidad educativa un tema relevante en Me´xico. Muestra de ello es la creacio´n de la Evaluacio´n Nacional del Logro Acade´mico en Centro Escolares (ENLACE). ENLACE es un exa-
+3SEP (2010): Principales Cifras Ciclo Escolar 2008-2009 4OECD (2010): PISA 2009 Results: Executive Summary, pa´g. 6 5SEP (2010): Principales Cifras Ciclo Escolar 2008-2009
+2
+
+men estandarizado aplicado de forma centralizada desde 2006 para Educacio´n Ba´sica y 2008 para Educacio´n Media Superior. Durante su aplicacio´n se incluyen cuestionarios de contexto a estudiantes, padres de familia, directores y docentes. Estos cuestionarios se aplican aleatoriamente a nivel escuela a uno de cada cuatro estudiantes y su objetivo es recabar informacio´n sobre caracter´ısticas individuales (sexo y promedio del nivel educativo anterior), caracter´ısticas del hogar (nu´ mero de cuartos y libros en el hogar) y recursos escolares (nu´ mero de laboratorios y estado de las aulas).
+El objetivo principal del trabajo es investigar los factores causantes de la diferencia en caliﬁcaciones entre las escuelas privadas y escuelas pu´ blicas en Educacio´n Media Superior usando los resultados de la prueba ENLACE y la informacio´n de los cuestionarios de contexto para 2008. Respecto a la metodolog´ıa, seguimos la propuesta de DiNardo, Fortin, & Lemieux (1996) para analizar las distribuciones de las caliﬁcaciones de estudiantes en escuelas de Educacio´n Media Superior. La metodolog´ıa nos permite estimar contrafactuales bajo ciertos supuestos. En particular, es de intere´s el contrafactual “¿co´mo se distribuir´ıan las caliﬁcaciones de estudiantes en escuelas pu´ blicas si tuvieran las caracter´ısticas de los estudiantes en escuelas privadas?”.
+Los resultados indican que cerca de un 90 % de la diferencia en promedio entre estudiantes de escuelas privadas y pu´ blicas se explica por la diferencia en caracter´ısticas individuales, familiares, escolares e institucionales. Adema´s, en estudiantes de bajo desempen˜ o los factores escolares tienen un efecto mayor al sen˜ alado por la literatura. En cambio, en estudiantes de alto rendimiento los recursos escolares pierden importancia y son los factores asociados a aspectos sociales de la escuela los que inﬂuyen de forma positiva e importante. Para estudiantes en la media, los resultados se encuentran en l´ınea con los obtenidos por la literatura previa.
+A pesar de que las caracter´ısticas individuales decrecen en importancia conforme avanzamos en la distribucio´n, estas explican buena parte de la diferencia en caliﬁcacio-
+3
+
+nes (17 %-44 %). En una segunda etapa, clasiﬁcamos las caracter´ısticas del estudiante en dos categor´ıas: caracter´ısticas pasadas y caracter´ısticas presentes, cuya ﬁnalidad es revisar la importancia de inversiones educativas en una etapa temprana de los estudiantes (Heckman & Masterov, 2007). Los resultados sen˜ alan que las caracter´ısticas presentes no contribuyen a la diferencia en caliﬁcaciones entre estudiantes de escuelas privadas y pu´ blicas. Adema´s, utilizamos la metodolog´ıa desarrollada por Leibbrandt, Levinsohn, & McCrary (2010) para corroborar que la diferencia en caliﬁcaciones no se debe a distintas funciones de produccio´n educativa. Las estimaciones indican que la diferencia en caracter´ısticas observables es la explicacio´n ma´s plausible.
+En te´rminos de pol´ıticas pu´ blicas, los resultados anteriores sugieren una revisio´n de los programas encaminados a mejorar el desempen˜ o de los estudiantes en dos puntos. Primero, aquellos programas cuyo objetivo es mejorar los factores escolares deben enfocarse en aquellas escuelas con una mayor proporcio´n de estudiantes de bajo rendimiento y a su vez acompan˜ arse de programas que mejoren el ambiente institucional de la escuela. Segundo, en escuelas con estudiantes de alto rendimiento deben crearse programas que fomenten la integracio´n de los estudiantes y mejoren los aspectos institucionales, como asociaciones estudiantiles o mejorar la relacio´n con los profesores. En pocas palabras, el presenta trabajo permitira´ el disen˜ o de programas ma´s focalizados.
+El resto del trabajo esta´ organizado como sigue. El desarrollo teo´rico y la estrategia emp´ırica se incluyen en la seccio´n 2. En la seccio´n 3 se resume la evidencia emp´ırica relacionada con el efecto de diversos factores tanto individuales y escolares sobre el desempen˜ o escolar, y las investigaciones comparables. En la seccio´n 4 se describe la base de datos y se muestran algunas estad´ısticas descriptivas de intere´s. La seccio´n 5 resume las estimaciones y resultados encontrados. Las conclusiones e implicaciones de los resultados sobre la pol´ıtica pu´ blica se presentan en la seccio´n 6.
+4
+
+Cap´ıtulo 2 Revisio´n de la Literatura
+
+En econom´ıa de la educacio´n la mayor parte de los estudios se han centrado en de-
+
+terminar que´ factores son esenciales para el aprendizaje escolar. El primer problema
+
+con el que se topa la investigacio´n es deﬁnir, de forma precisa, “¿Que´ es el aprendizaje
+
+escolar?”. En este caso, no se pretende abordar esta´ discusio´n y se seguira´n las l´ıneas
+
+que ha marcado la literatura, la cual asocia el aprendizaje escolar con el desempen˜ o de
+
+los estudiantes en exa´menes estandarizados. El objetivo principal de los trabajos rela-
+
+cionados con el aprendizaje escolar es estimar una funcio´n de produccio´n educativa de
+
+la siguiente forma:
+
+Pi = m(Zi, ξi)
+
+(2.1)
+
+donde Pi es la caliﬁcacio´n obtenida en exa´menes estandarizados, Zi es un conjunto de caracter´ısticas observadas y ξi un te´rmino de error. En la literatura la medida ma´s usada como Pi son los resultados del Programa Internacional para la Evaluacio´n de los Estudiantes mejor conocido como PISA. Para Zi se puede enunciar a tres grupos de variables que la literatura considera relevante para explicar las caliﬁcaciones obtenidas por los estudiantes: caracter´ısticas individuales y familiares, recursos e infraestructura
+
+5
+
+escolar y efectos institucionales.
+En el grupo de caracter´ısticas individuales y familiares se pueden encontrar variables como edad, sexo, grado de estudio de los padres, nu´ mero de computadoras en el hogar, cantidad de libros en la casa, grado de marginacio´n de la localidad y tutor´ıas privadas. Por ejemplo, Kang (2007) usando el Panel de Educacio´n y Empleo Coreano (KEEP) encuentra que incrementar un 10 % los gastos en tutor´ıas privadas implica un aumento de 1.5 puntos porcentuales sobre el puntaje medio. Woesmann (2000) con los resultados del Tercer Estudio Internacional en Matema´ticas y Ciencias (TIMSS) muestra que la cantidad de libros en el hogar es un buen proxy para el pasado familiar y puede resultar en una diferencia hasta de un 8 % ma´s caliﬁcacio´n sobre la media. Fuchs & Woesmann (2004) encuentran resultados similares a Woesmann (2000) usando datos del Programa Internacional para la Evaluacio´n de Estudiantes a nivel internacional y para el an˜ o 2000.
+A nivel de recursos e infraestructura escolar han sido incluidas variables como el nu´ mero de computadoras en la escuela, experiencia de los profesores, nu´ mero de profesores por alumno y grado de inasistencia del docente (Angrist & Lavy, 1999; Dearden, Ferri, & Meghir, 2002; Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa, 2007). Graddy & Stevens (2005) usando datos para el Reino Unido encuentran que una disminucio´n del 10 % sobre la razo´n estudiantes-profesores reﬂeja un incremento del 4 % sobre la caliﬁcacio´n media para el examen de ingreso a la universidad. De Hoyos, Espino, & Garc´ıa (2010) usando los resultados de ENLACE 2008 para Me´xico, muestra que los recursos escolares pueden explicar hasta un 18 % de la variacio´n de las caliﬁcaciones. En general no existe un consenso sobre el efecto de las variables escolares sobre el desempen˜ o de los estudiantes. Hanushek (2003) realiza un meta-ana´lisis donde llega a la conclusio´n de que no existe evidencia contundente de que los recursos escolares impacten al desempen˜ o de los estudiantes. Sin embargo, Hanushek hace e´nfasis en que lo anterior no implica que los recursos escolares nunca importen y que esta “falta de relacio´n”
+6
+
+puede ser consecuencia de ineﬁciencias durante la aplicacio´n de los programas.
+Un enfoque ma´s reciente se ha preocupado por incluir variables que reﬂejen el entorno social e institucional donde se encuentra inmersa la institucio´n. Este enfoque introduce a la funcio´n de produccio´n variables para determinar el impacto de los sindicatos, as´ı como de la independencia de las escuelas en toma de decisiones, sobre la caliﬁcacio´n de los estudiantes. Alvare´z, Garc´ıa-Moreno, & Patrinos (2007) con datos de PISA 2003 para Me´xico, encuentra que los estados donde existe una fuerte inﬂuencia del sindicato tienen en promedio 10 puntos menos que aquellos donde la inﬂuencia es poca. Fuchs & Woesmann (2004) aﬁrma que debido a las variables institucionales, como grado de autonom´ıa en contratar profesores y autonom´ıa en decidir los programas de estudio, los estudiantes de escuelas privadas tienen un mejor desempen˜ o.
+Por otro lado, algunos estudios se han preocupado por determinar cua´les son las causas en las diferencias en caliﬁcaciones entre diversos grupos. Por ejemplo, la literatura concuerda en el hecho de que los hombres tienen mejores puntajes en matema´ticas y las mujeres en espan˜ ol. Sohn (2010) utilizando el Estudio Longitudinal de Infancia Temprana (ECLS) analiza la diferencia en caliﬁcaciones en matema´ticas entre hombres y mujeres usando regresiones intercuantiles. Uno de sus principales resultados es que la brecha nace durante los primeros an˜ os de educacio´n y se exacerba durante an˜ os posteriores. McEwan (2004) analiza la diferencia en puntajes entre estudiantes de grupos ind´ıgenas y no ind´ıgenas en Bolivia y Chile. McEwan concluye que alrededor de un 50 % de la brecha se puede explicar por los efectos de grupo y so´lo un 20 % con las caracter´ısticas familiares. Dentro de esta l´ınea, la literatura tambie´n se ha enfocado a estudiar las diferencias en caliﬁcaciones entre escuelas privadas y pu´ blicas bajo el argumento que las primeras tienen un mejor desempen˜ o. Peterson & Llaudet (2006) usando datos de la Evaluacio´n Nacional del Progreso Educativo (NAEP) en Estados Unidos encuentran que las escuelas privadas tienen entre 5 % y 6 % ma´s puntaje sobre la media.
+7
+
+Bedi & Garg (2000) encuentra que los estudiantes de escuelas privadas alcanzan mayores salarios en Indonesia, a pesar de que las escuelas pu´ blicas son percibidas como las mejores. Yamauchi (2005) obtiene resultados similares a Bedi & Garg (2000) para Filipinas y Tailandia pero atribuye esta diferencias a que los estudiantes de escuelas privadas se seleccionan. Vandenberghe & Robin (2004) corrige el problema de seleccio´n usando diversas metodolog´ıas y obtiene que no existen beneﬁcios importantes de pertenecer a las escuelas privadas, los resultados son a nivel internacional usando los datos de PISA 2000. Respecto a Ame´rica Latina, gran parte de los trabajos que comparan a las escuelas pu´ blicas y privadas se centran en Chile gracias a su sistema de vouchers, concluyendo que no existe diferencia signiﬁcativa entre los dos sistemas.
+En Me´xico, la falta de exa´menes estandarizados para evaluar al sistema educativo limito´ el nu´ mero de trabajos de corte cuantitativo. Sin embargo, durante los u´ ltimos an˜ os, los resultados de Me´xico en exa´menes internacionales como PISA y exa´menes nacionales, como la Evaluacio´n Nacional del Logro Acade´mico en Centros Escolares (ENLACE), ha revivido el debate de la calidad educativa y ambos exa´menes proporcionan informacio´n relevante para el ana´lisis emp´ırico. Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa (2007) usando ana´lisis multinivel y los resultados para educacio´n ba´sica de los Exa´menes de la Calidad para el Logro Educativo (EXCALE) estiman el peso de grupos de variables sobre la varianza de los resultados. Concluyen que las caracter´ısticas de los estudiantes contribuyen entre 65-75 % al poder explicativo del modelo y el porcentaje restante es atribuido a variables escolares.
+De Hoyos, Espino, & Garc´ıa (2010) explican la varianza de los resultados en la prueba ENLACE 2008 para Educacio´n Media Superior y adema´s utilizan ana´lisis discriminante para obtener el modelo con mayor poder explicativo. Como resultado su modelo logra explicar el 70 % de la varianza de los resultados y la mayor aportacio´n a este porcentaje la tienen variables a nivel estudiante (60 %) seguida de variables escolares (18 %), facto-
+8
+
+res institucionales (14 %) y caracter´ısticas familiares (6 %). Ambos estudios han incluido variables dicoto´micas para controlar por “sostenimiento” o tipo de escuela. De Hoyos, Espino, & Garc´ıa (2010) concluye que el efecto de estar en un escuela privada es casi nulo. Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa (2007) en su modelo completo encuentra que el efecto de estar en una escuela privada se traduce en 30 puntos, es decir, ente seis y ocho puntos porcentuales ma´s sobre la caliﬁcacio´n de escuelas pu´ blicas.
+Para ubicar el presente trabajo en la literatura eco´nomica, hay que mencionar que existen pocos estudios previos y comparables (Duncan & Sandy, 2007) y se suma a la poca literatura cuantitativa existente relacionada con la educacio´n en Me´xico (De Hoyos, Espino, & Garc´ıa, 2010; Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa, 2007). La investigacio´n se distingue de los trabajos anteriores por dos razones. La primera es el enfoque, pues estudia de forma directa la brecha existente entre escuelas pu´ blicas y privadas incorporando la idea de desagregar esta brecha en grupos de variables observables. La segunda razo´n es que explora otros puntos de la distribucio´n, como los percentiles 10 y 90, bajo la idea de que los recursos escolares o caracter´ısticas individuales pueden contribuir de distinta forma sobre estudiantes de bajo y alto desempen˜ o. En este sentido, son pocos los trabajos que hacen e´nfasis en analizar diversos puntos de la distribucio´n (Sohn, 2010).
+9
+
+Cap´ıtulo 3 Metodolog´ıa.
+
+La metodolog´ıa desarrollada por DiNardo, Fortin, & Lemieux (1996) pertenece a la familia de me´todos noparame´tricos y desarrollados para superar las limitantes, como ana´lisis en la media, de los me´todos parame´tricos convencionales como m´ınimos cuadrados ordinarios. La idea principal detra´s de DFL esta´ muy relacionada con el problema fundamental de la inferencia causal, es decir, no observamos el efecto del tratamiento para el grupo de control (Holland, 1986). Para nuestro caso, atribuir el efecto de estar en la escuela privada o pu´ blica a la diferencia entre medias de las caliﬁcaciones es completamente incorrecto. Por ejemplo, consideremos:
+
+θˆ = E[Ppriv|P riv] − E[Ppub|P ub],
+
+(3.1)
+
+que resulta ser la diferencia entre el grupo de estudiantes de escuelas privadas y escuelas pu´ blicas, θˆ es un estimador insesgado si los datos no tienen problemas de seleccio´n. Como no es el caso, es incorrecto tomar a θˆ como el efecto total de asistir a una escuela privada. Una forma de resolver el problema de seleccio´n es asignar a los estudiantes a escuelas pu´ blicas y privadas de forma aleatoria. Llevar a cabo el experimento
+
+10
+
+es casi imposible au´ n sin tomar en cuenta problemas e implicaciones e´ticas. Por tanto, para hacer una comparacio´n ma´s va´lida es necesario introducir un te´rmino ma´s a la Ecuacio´n (3.1).
+
+θ = E[Ppriv|P riv] − E[Ppub|P riv] + E[Ppub|P riv] − E[Ppub|P ub] .
+
+1
+
+2
+
+(3.2)
+
+El te´rmino E[Ppub|P riv] en econom´ıa es usualmente conocido como “contrafactual” e intuitivamente corresponde a la caliﬁcacio´n promedio de los estudiantes de escuelas privadas si estuvieran en una escuela pu´ blica. Al primer conjunto de te´rminos de la Ecuacio´n (3) se le conoce como el efecto promedio sobre los tratados (ATT) y se puede ver como la diferencia atribuible a las formas funcionales o funciones de produccio´n. En otras palabras, el primer conjunto esta´ comparando los sistemas pu´ blicos y privados, es decir, toma al grupo de estudiantes de escuelas privadas, mide su desempen˜ o tanto en escuela privada como pu´ blica y la diferencia en desempen˜ o es una mejor aproximacio´n de los beneﬁcios de un sistema u otro. El segundo conjunto compara a los dos grupos de estudiantes suponiendo que ambos estudiaron en el sistema pu´ blico. La diferencia obtenida se atribuye a la composicio´n de los grupos y si los grupos son homoge´neos entonces esperar´ıamos que su valor sea cero.
+
+Sin embargo, los datos so´lo nos proporcionan informacio´n sobre E[Pi|i] con i = P riv, P ub y por tanto es necesario obtener una estimacio´n para E[Ppub|P riv]. De acuerdo con la literatura previa (De Hoyos, Espino, & Garc´ıa, 2010; Duncan & Sandy, 2007) los beneﬁcios de estudiar en una escuela privada son cercanos a cero, en otras palabras, en la Ecuacio´n 3 el conjunto marcado con uno tiene un valor cercano a cero. Por ello, uno de los objetivos centrales del trabajo en estimar el te´rmino no observado E[Ppub|P riv] y poner e´nfasis en la parte 2 de la Ecuacio´n que corresponde a la parte explicada por las caracter´ısticas observables de los estudiantes. Aunque, una vez dada la estimacio´n,
+
+11
+
+obtener un valor para el conjunto 1 es trivial y se incluye en el trabajo.
+Es importante mencionar que la descomposicio´n propuesta en la Ecuacio´n (3) no es u´ nica gracias a que E[Ppub|P riv] no es el u´ nico contrafactual que se puede construir. Tambie´n se puede estimar E[Ppriv|P ub] que corresponde a las caliﬁcaciones de estudiantes de escuelas pu´ blicas si estudiaran en una escuela privada. Los dos contrafactuales son estimables y la eleccio´n de cual estimar es equivalente a que´ grupo de referencia se desee. Se seguira´ la literatura previa y tomaremos como grupo de referencia al grupo desfavorecido, en este caso, a las escuelas pu´ blicas y se estimaran las caliﬁcaciones de estudiantes de escuelas privadas si estuvieran en una escuela pu´ blica (E[Ppub|P riv]). Adema´s, resultara´ ma´s enriquecedor tener resultados sobre el sistema de educacio´n pu´ blica pues se genera un margen para la elaboracio´n de pol´ıticas pu´ blicas.
+Fortin, Lemiux, & Firpo (2010) proponen que la descomposicio´n de la Ecuacio´n (3) es un caso especial de una descomposicio´n ma´s general.
+
+∆v = v(FPpriv|priv) − v(FPpCub|priv) + v(FPpCub|priv) − v(FPpub|pub).
+
+(3.3)
+
+Donde v es cualquier estad´ıstico y FYi|i es la distribucio´n acumulada. Entre los estad´ısticos ma´s usados se encuentran el ´ındice de Gini, diferencias entre percentiles y diferencias entre medias. La Ecuacio´n (3.3) posee el mismo problema que la ecuacio´n (3) en el sentido de que los datos no proporcionan, de forma directa, informacio´n sobre la distribucio´n FYpCub|priv. La metodolog´ıa DFL permite reducir el problema de estimar la distribucio´n del contrafactual “¿cua´les son las caliﬁcaciones de estudiantes de escuelas privadas si estuvieran en una escuela pu´ blica” (E[Ppub|P riv]) a una aplicacio´n conjunta de me´todos de Kernel y me´todos parame´tricos.
+
+12
+
+3.1. Estimaciones de Densidad Kernel
+
+Para estimar funciones de densidad se hace uso de los estimadores Kernel propuestos por Rosenblatt (1956) y Parzen (1962). Ellos proponen que el estimador de la funcio´n de densidad unidimensional de una muestra P1, P2, . . . , Pn con pesos θ1, θ2, . . . , θn es:
+
+fˆ(p) = n θi K( p − Pi ),
+
+h
+
+h
+
+i=1
+
+(3.4)
+
+donde h es el bandwith y K(·) es la funcio´n kernel. Existen ventajas y desventajas de usar este me´todo no parame´trico. La principal ventaja es que no se asume cierta distribucio´n de los datos; en otras palabras los datos hablan por s´ı solos y que la eleccio´n de K no modiﬁca de forma radical la forma de la funcio´n de densidad . Las desventajas radican en la eleccio´n del bandwith (h) pues se sabe que existe un intercambio, entre precisio´n y forma de la funcio´n de densidad, al momento de elegir un valor. Para resolver el problema seguiremos la literatura alrededor de los estimadores kernel y elegiremos el bandwidth propuesto por Silverman (1986).1 En el caso de la funcio´n K(·) se usa el kernel de Epanechnikov.
+
+3.2. Di Nardo, Fortin, Lemieux (1996)
+
+Podemos asignar a cada alumno de la base de datos de las pruebas ENLACE a un
+
+vector (p, z, g) donde p es el puntaje o caliﬁcacio´n obtenida en la prueba, z es un con-
+
+junto de caracter´ısticas individuales, familiares y a nivel escuela y g el tipo de escuela
+
+(privada o pu´ blica). La funcio´n de densidad para las caliﬁcaciones de escuelas privadas
+
+y pu´ blicas se pueden escribir como:
+
+1El bandwith o´ptimo se puede expresar como h
+
+=
+
+1.06
+
+N
+
+−
+
+1 5
+
+min[σ,
+
+R 1.34
+
+]
+
+donde
+
+σ
+
+es la desviacio´n
+
+esta´ndar, R la diferencia interquantil y N el nu´ mero de observaciones.
+
+13
+
+f (p|priv) = f (p|pub) =
+
+m(p|z, priv)h(z|priv)dz m(p|z, pub)h(z|pub)dz,
+
+(3.5) (3.6)
+
+donde m(p|z, g) es la funcio´n de densidad de las caliﬁcaciones condicionada a las caracter´ısticas y tipo de escuela; h(z|g) es la funcio´n de densidad de las caracter´ısticas individuales sujeto al tipo de escuela. De acuerdo a Leibbrandt, Levinsohn, & McCrary (2010) la funcio´n m(p|z, g) se puede ver como una funcio´n de produccio´n que transforma las caracter´ısticas individuales a una caliﬁcacio´n, h(z|g) como la parte que introduce las caracter´ısticas y f (p|g) como la variable dependiente, que en este caso son las caliﬁcaciones.
+El propo´sito de la investigacio´n es dar una estimacio´n para la funcio´n de distribucio´n de las caliﬁcaciones de los alumnos de escuelas privadas si estuvieran en escuelas pu´ blicas. El enunciado anterior es un abuso del lenguaje pues no se puede cambiar a un estudiante de escuela privada a una escuela pu´ blica. Sin embargo, es posible tomar la distribucio´n de caracter´ısticas de los estudiantes de escuelas privadas e imponerla a estudiantes de escuelas pu´ blicas. Formalmente, se estimara´ la distribucio´n de caliﬁcaciones de estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas observables de estudiantes de escuelas privadas. Por tanto, gracias a que la relacio´n entre la funcio´n de distribucio´n y la funcio´n de densidad es natural, podemos escribir lo anterior en te´rminos de la Ecuacio´n 3.6 como:
+
+fhpub→priv = m(p|z, pub)h(z|priv)dz,
+
+(3.7)
+
+donde la notacio´n fhg→g signiﬁca que la distribucio´n original es g y sustituimos la
+
+14
+
+parte correspondiente a la funcio´n h de la distribucio´n g . Por ejemplo, si se estuviera interesado en estimar la funcio´n de densidad de las caliﬁcaciones de los alumnos de escuelas pu´ blicas si tuvieran las caracter´ısticas de los estudiantes de escuelas pu´ blicas estar´ıamos estimando fhpriv→pub y se puede escribir como:
+
+fhpriv→pub = m(p|z, priv)h(z|pub)dz.
+
+(3.8)
+
+Estimar (3.7) y (3.8) es bastante complejo y de hecho es un problema multidimensional. El valor agregado de DFL radica en reducir la estimacio´n de (3.7) a un problema unidimensional y observado en los datos, usando ciertos “pesos”. Es decir, la ecuacio´n (3.7) se puede escribir como:
+
+fhpub→priv = = = =
+
+m(p|z, pub)h(z|priv)dz
+
+m(p|z,
+
+pub)
+
+h(z|pub) h(z|pub)
+
+h(z|priv)dz
+
+m(p|z,
+
+pub)h(z|pub)
+
+h(z|priv) h(z|pub)
+
+dz
+
+m(p|z, pub)h(z|pub)Φ(z)dz.
+
+(3.9) (3.10) (3.11) (3.12)
+
+La u´ nica diferencia entre las funciones de densidades (3.12) y (3.6) es la funcio´n Φ(z). Por tanto, para estimar la funcio´n de densidad del contrafactual so´lo es necesario estimar Φ(z) y eso lo obtenemos gracias a la regla de Bayes.
+
+P (priv|Z=z)f (z)
+
+h(z|priv) h(z|pub)
+
+=
+
+P (priv) P (pub|Z=z)f (z)
+
+=
+
+P (priv|Z P (pub|Z
+
+= z) = z)
+
+·
+
+P (pub) P (priv)
+
+P (pub)
+
+=
+
+1
+
+P −
+
+(priv|Z = z) P (priv|Z = z)
+
+·
+
+1
+
+− P
+
+P (priv) .
+(priv)
+
+(3.13) (3.14)
+
+15
+
+Para estimar P (priv|Z = z) se puede hacer uso de un modelo logit o probit y P (priv) corresponde a las probabilidades de la muestra, es decir, nu´ mero de alumnos en escuelas privadas. Usando estas ideas el estimador para la funcio´n Φ(z) resulta en:
+
+Φˆ (zi)
+
+=
+
+1
+
+Pˆ(priv|zi) − Pˆ(priv|zi)
+
+·
+
+1
+
+− Pˆ(priv) Pˆ(priv)
+
+(3.15)
+
+3.3. Estrategia Emp´ırica para DFL
+
+El desarrollo teo´rico de las secciones anteriores nos permiten implementar para cada an˜ o una serie de pasos para estimar el contrafactual: “¿Cua´l ser´ıa la distribucio´n de las caliﬁcaciones de los estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas de los estudiantes de escuelas privadas?”
+
+1. Calcular Pˆ(priv). Es decir, la fraccio´n de estudiantes de escuelas privadas que se encuentran en la base de datos.
+2. Usando un modelo logit estimar Pˆ(priv|zi) para cada individuo i de la muestra.
+3. Estimar la funcio´n Φˆ (zi) para cada estudiante de la muestra que se encuentra en una escuela pu´ blica.
+
+Φˆ (zi)
+
+=
+
+1
+
+Pˆ(priv|zi) − Pˆ(priv|zi)
+
+·
+
+1
+
+− Pˆ(priv) Pˆ(priv)
+
+.
+
+4. Usando el estimador kernel para la muestra de estudiantes en escuelas pu´ blicas con los pesos Φ1, Φ2, . . . , Φn obtenemos:
+
+fˆ(p) = n Φˆ (zi) K( p − Pi ).
+
+h
+
+h
+
+i=1
+
+(3.16)
+
+16
+
+La idea intuitiva de DFL es sencilla. Por ejemplo, supongamos que para el estudiante j la probabilidad de estar en escuela privada es bastante baja (Pˆ(priv|zj) ≈ 0) entonces el individuo j obtiene un peso au´ n ma´s cercano a cero (Φˆ (zj) ≈ 0) y por tanto al momento de estimar la densidad no ser´ıa tomado en cuenta. En otras palabras DFL esta´ haciendo un matching o apareamiento entre estudiantes de los dos grupos dependiendo de que´ tan parecido son. Si se habla en te´rminos de ca´lculos computacionales DFL posee una gran ventaja sobre otros me´todos pues una integral multidimensional se reduce a una estimacio´n de probabilidades. En te´rminos de eﬁciencia resultados de Hirano, Imbes, & Ridder (2003) prueban que DFL es un me´todo eﬁciente.
+Existen desventajas que son importantes sen˜ alar. La primera es que, con DFL, es realmente dif´ıcil obtener una descomposicio´n detallada (factor por factor). La segunda es que las descomposiciones que pueden lograrse no son independientes de la trayectoria que tomemos. La tercera es que el DFL original so´lo nos proporciona informacio´n sobre co´mo las caracter´ısticas zi contribuyen a la brecha existente y no nos proporciona informacio´n sobre la “eﬁciencia” de un grupo en usar sus recursos.
+Para la primera desventaja aplicaremos un me´todo desarrollado por Altonji, Bharadwaj, & Lange (2008) que detallaremos ma´s adelante. Para la segunda desventaja tomaremos la trayectoria invertida de la descomposicio´n y para sobrellevar la u´ ltima desventaja Leibbrandt, Levinsohn, & McCrary (2010) estima la funcio´n de caliﬁcaciones de las escuelas privadas usando so´lo informacio´n correspondiente a escuelas pu´ blicas para medir la “eﬁciencia” de DFL.
+3.4. Retornos
+En el caso de la brecha existente entre estudiantes de escuelas privadas y pu´ blicas la literatura, como hemos mencionado, ha encontrado evidencia que las caracter´ısti-
+17
+
+cas individuales observables pueden explicar cerca del 70 % de la variacio´n total de las caliﬁcaciones. En las subsecciones anteriores hemos desarrollado la teor´ıa para decir cuanto de la brecha observada se le puede atribuir a las caracter´ısticas zi. Sin embargo, existe la posibilidad de que exista otra explicacio´n para la brecha existente: que los retornos cambien de un grupo a otro. Por ejemplo, que el uso de la computadora genere beneﬁcios diferentes de un grupo a otro.
+
+En esta seccio´n se esta´ interesado en “¿Cua´l ser´ıa la distribucio´n de caliﬁcaciones
+
+de los estudiantes de escuelas publicas si tuvieran los retornos de las caracter´ısticas
+
+observadas de los estudiantes de escuelas privadas?”. Y para responderla utilizaremos
+
+la elegante idea de Leibbrandt, Levinsohn, & McCrary (2010). Sabemos que la funcio´n
+
+de densidad de las caliﬁcaciones de estudiantes de escuelas pu´ blicas se puede escribir
+
+como:
+
+f (p|pub) = m(p|z, pub)h(z|pub)dz,
+
+(3.17)
+
+donde se puede interpretar a la funcio´n f (p|pub) como la variable dependiente, m(p|z, pub) como la funcio´n de produccio´n de caliﬁcaciones y h(z|pub) las caracter´ısticas observables.
+Si estamos interesados en la distribucio´n de las caliﬁcaciones de los estudiantes de escuelas pu´ blicas con los retornos de las caracter´ısticas de las escuelas privadas entonces, podemos escribir la funcio´n de densidad de este contrafactual como:
+
+fmpub→priv = m(p|z, priv)h(z|pub)dz,
+
+(3.18)
+
+donde fmpub→priv quiere decir que tomamos la distribucio´n original de las caliﬁcaciones de escuelas pu´ blicas y le estamos imponiendo la funcio´n de produccio´n m de las escuelas privadas. Intuitivamente le estamos imponiendo la eﬁciencia de las escuelas privadas a las escuelas pu´ blicas sin cambiar los estudiantes de las escuelas pu´ blicas. Es-
+18
+
+timar la funcio´n de densidad descrita en (3.18) nos dir´ıa como cambiar´ıan las caliﬁcaciones debido a diferencias en la eﬁciencia de los sistemas. En este sentido la ecuacio´n (3.7),
+fhpub→priv = m(p|z, pub)h(z|priv)dz,
+la cual corresponde al contrafactual estimado original, se puede interpretar como si estuvie´ramos cambiando a los estudiantes de las escuelas pu´ blicas por estudiantes de escuelas privadas dejando la eﬁciencia de las escuelas pu´ blicas y nos proporciona informacio´n de como cambian las caliﬁcaciones gracias a diferencias en las variables del vector z.
+Antes de continuar hay que hacer algunas observaciones relacionadas con esta metodolog´ıa. Consideremos la funcio´n de densidad del contrafactual “¿Cua´l ser´ıa la distribucio´n de caliﬁcaciones de los estudiantes de escuelas privada si tuvieran las caracter´ısticas de los estudiantes de escuelas pu´ blicas?” que se puede escribir como:
+
+fhpriv→pub = m(p|z, priv)h(z|pub)dz.
+
+(3.19)
+
+Matema´ticamente las ecuaciones (3.18) y (3.19) no tienen diferencia alguna. Sin embargo, existen diferencias al momento de construir los contrafactuales. Por ejemplo, en la ecuacio´n (3.19) estamos interesados en cambiar las caracter´ısticas de los estudiantes de escuelas privadas por aquellas de escuelas pu´ blicas, es decir, partimos de informacio´n de las escuelas privadas y por tanto el te´rmino que tenemos permitido manipular es h(z|pub). En la ecuacio´n (3.18) estamos interesados en imponer los retornos de escuelas privadas a estudiantes de escuelas pu´ blicas, iniciamos con informacio´n de escuelas pu´ blicas y por tanto no podemos maniobrar con h(z|pub). As´ı que, para obtener una forma simple para (3.18), es necesario utilizar la funcio´n de densidad m. Con esta idea en
+
+19
+
+mano podemos reescribir la ecuacio´n (3.18):
+
+fmpub→priv = = = =
+
+m(p|z, priv)h(z|pub)dz
+
+m(p|z, pub) m(p|z, priv)m(p|z, pub)h(z|pub)dz
+
+m(p|z, priv) m(p|z, pub)
+
+m(p|z,
+
+pub)h(z|pub)dz
+
+Γ(p, z)m(p|z, pub)h(z|pub)dz,
+
+donde Γ(p, z) es un peso que depende de las caracter´ısticas z. Usando la regla de Bayes podemos encontrar una forma sencilla de estimar Γ(p, z).
+
+m(p|z, priv)
+
+P (priv|P = p, Z = z) P (pub|z)
+
+Γ(p, z) = m(p|z, pub) = P (pub|P = p, Z = z) · P (priv|z)
+
+=
+
+1
+
+P −
+
+(priv|P = p, Z P (priv|P = p,
+
+= z) Z = z)
+
+·
+
+1
+
+− P
+
+P (priv|z) (priv|z) ,
+
+La parte correspondiente a P (priv|P = p, Z = z) se puede estimar con un modelo probit o logit usando las caracter´ısticas observables y la caliﬁcacio´n de cada estudiante como variables independientes y para P (priv|z) usar un modelo logit so´lo con las caracter´ısticas observables como variables independientes. El procedimiento para estimar este contrafactual queda resumido en los siguientes pasos:
+
+1. Usando un modelo logit con la variable dependiente escuela privada y variables independientes las caracter´ısticas observadas para todos los estudiantes Pˆ(priv|zi)
+2. Estimar Pˆ(priv|pi, zi) para toda la muestra usando un modelo logit con la caliﬁcacio´n del estudiante en las variables independientes.
+
+20
+
+3. Estimar el peso Γˆ(z) para cada estudiante de escuelas pu´ blicas.
+
+Γˆ(pi, zi)
+
+=
+
+1
+
+Pˆ(priv|P = p, Z = z) − Pˆ(priv|P = p, Z = z)
+
+·
+
+1
+
+− Pˆ(priv|z) Pˆ(priv|z)
+
+.
+
+(3.20)
+
+4. Usar me´todos de kernel para estimar la funcio´n de densidad del contrafactual:
+
+fmpub→priv =
+
+n
+
+Γ(pi, zi) hK( p − Pi )
+
+.
+
+h
+
+i=1
+
+(3.21)
+
+Los cuatro pasos clariﬁcan un poco ma´s las diferencias entre los contrafactuales que describen las ecuaciones (3.18) y (3.19) pues el u´ ltimo procedimiento se compone por dos estimaciones de modelos logit mientras el DFL original so´lo usa una estimacio´n.
+
+3.5. Una descomposicio´n detallada
+En te´rminos de pol´ıtica pu´ blica, es importante conocer que´ factores (computadoras, profesores, idiomas, etc.) esta´n aportando ma´s a la brecha existente entre escuelas privadas y pu´ blicas. DiNardo, Fortin, & Lemieux (1996), adema´s de desarrollar un me´todo para estimar contrafactual, proponen un me´todo para obtener la aportacio´n de los sindicatos a la brecha existente. La metodolog´ıa empleada por ellos es elegante y simple pero depende de una caracter´ıstica: sindicato es una variable binaria. Obtener el peso de un factor cuando este es una variable continua es, en general, complicado.
+Para ello, Altonji, Bharadwaj, & Lange (2008) proponen una variante de DFL para obtener el peso de un grupo de factores a la brecha existente. Recordemos que cada estudiante esta ligado a un vector (p, z, g) donde p es la caliﬁcacio´n obtenida , z son las caracter´ısticas observadas y g tipo de escuela. Supongamos que z se puede dividir en dos subvectores z1, z2 y que estamos interesados en el peso que tiene el grupo de fac-
+21
+
+tores que conforman a z1. En palabras de contrafactuales nos interesa saber ¿Cua´l es la distribucio´n de caliﬁcaciones de los estudiantes de escuelas pu´ blicas si tuvieran las caracter´ısticas correspondientes a z2 de los estudiantes de escuelas privadas ?. Usando la regla de Bayes dos veces podemos expresar la funcio´n de densidad de los caliﬁcaciones de estudiantes de escuelas pu´ blicas como:
+
+f (p|pub) =
+
+m(p|z1, z2, pub)h1(z1|z2, pub)h2(z2|pub)dz1dz2.
+
+(3.22)
+
+Bajo la notacio´n con los vectores z1, z2 podemos reescribir el contrafactual ¿Cua´l ser´ıa la distribucio´n de caliﬁcaciones si los estudiantes de educacio´n pu´ blica tuvieran las caracter´ısticas de los estudiantes de escuelas privadas?, fhpub→priv, como:
+
+fhpub→priv =
+
+m(p|z1, z2, pub)h1(z1|z2, priv)h2(z2|priv)dz1dz2.
+
+Por tanto, podemos escribir el contrafactual de intere´s como:
+
+(3.23)
+
+fhp,uzb2→priv = = = =
+
+m(p|z1, z2, pub)h1(z1|z2, pub)h2(z2|priv)dz1dz2
+
+m(p|z1,
+
+z2,
+
+pub)h1(z1|z2,
+
+pub)
+
+h2 h2
+
+(z2|pub) (z2|pub)
+
+h2(z2|priv)dz1
+
+dz2
+
+m(p|z1,
+
+z2,
+
+pub)h1(z1|z2,
+
+pub)h2
+
+(z2|pub)
+
+h2(z2|pub) h2(z2|priv)
+
+dz1
+
+dz2
+
+m(p|z1, z2, pub)h1(z1|z2, pub)h2(z2|pub)Φ(z2)dz1dz2,
+
+donde Φ(z2) se puede estimar de forma similar a (3.15). Por tanto, el estimador del contrafactual esta dado por:
+
+fˆmpu,hb→priv =
+
+n
+
+Φˆ (z2i) K( p − Pi ).
+
+h
+
+h
+
+i=1
+
+(3.24)
+
+22
+
+La descomposicio´n que se encuentra detra´s de esta idea esta´ resumida en la ecuacio´n
+
+(3.25).
+
+fhpub→priv − f pub = fhpub→priv − fhp,uzb2→priv + fhp,uzb2→priv − f pub,
+
+(3.25)
+
+la segunda parte ser´ıa la aportacio´n de las caracter´ısticas correspondientes a z2. Otra descomposicio´n u´ til, para tener otra medida de la contribucio´n de z2 a la brecha existente, la tenemos con el contrafactual fhp,uzb1→priv.
+
+fhpub→priv − f pub = fhpub→priv − fhp,uzb1→priv + fhp,uzb1→priv − f pub,
+
+(3.26)
+
+donde la primera parte corresponde a la aportacio´n de z2. Como menciona Altonji, Bharadwaj, & Lange (2008) las dos medidas son, en general, distintas pero ambas dan una idea mas precisa de la aportacio´n de z2.
+
+23
+
+Cap´ıtulo 4
+Datos y Estad´ısticas Descriptivas
+4.1. Bases de Datos
+Se utilizaron bases de datos correspondientes al an˜ o 2008 de la Evaluacio´n Nacional del Logro Acade´mico en Centros Escolares (ENLACE). ENLACE pertenece a los pocas evaluaciones, como las pruebas EXCALE, de todo el Sistema Educativo Mexicano. La primera aplicacio´n fue en el an˜ o 2006 en Educacio´n Ba´sica (primaria y secundaria) y posteriormente, en el an˜ o 2008, se aplico´ para Educacio´n Media Superior (preparatoria). ENLACE se realiza cada an˜ o durante el segundo trimestre y se aplica a jo´venes de tercero a sexto grado de primaria, primero a tercer grado de secundaria y estudiantes del u´ ltimo semestre de bachillerato. Analizar el sistema de Educacio´n Media Superior es interesante pues precisamente los estudiantes evaluados se encuentran a un paso de la Educacio´n Superior (Universidad). La presente investigacio´n utilizara´ la informacio´n de los resultados en Habilidad Matema´tica de ENLACE 2008 para Educacio´n Media Superior.
+La prueba ENLACE para Educacio´n Media Superior se compone por 140 reactivos
+24
+
+distribuidos en habilidad lectora con 40 y habilidad matema´tica con 90 reactivos, adicionalmente se incluye un cuestionario con preguntas relacionadas con el contexto social del estudiante y en los u´ ltimos an˜ os se ha incluido un anexo para evaluar una materia distinta adicional (historia, biolog´ıa) . ENLACE no se considera un examen que mide los conocimientos adquiridos sino co´mo el estudiante puede aplicar a situaciones de la vida cotidiana las habilidades adquiridas a lo largo de su educacio´n. La prueba fue desarrollada en un marco de diagno´stico y no como un instrumentos de acreditacio´n o de repercusio´n sobre el estudiante y esto hace de la prueba un instrumento de evaluacio´n ma´s ﬁable. Adema´s, la publicacio´n de los resultados y su fa´cil acceso representa un paso enorme en te´rminos de transparencia. Los padres de familia, profesores y directores pueden observar los resultados v´ıa internet a nivel individual y del centro escolar e inclusive participar en el proceso de evaluacio´n como observadores. Los resultados totales tambie´n se encuentran disponibles previa solicitud al Instituto Federal de Acceso a la Informacio´n (IFAI).
+Las bases de datos que conforman los resultados de la prueba ENLACE se componen por Base Principal, Cuestionario de Contexto y Cuestionario de Directores. Por un lado, la Base Principal contiene los resultados de los 800,000 estudiantes que presentaron la prueba ENLACE e incluye estad´ısticas descriptivas a nivel escuela (asistencia de estudiantes a la prueba, porcentaje de estudiantes en nivel deﬁciente, bueno y excelente, entre otras). El nu´ mero de estudiante en la Base Principal representa el 87 % de la matr´ıcula en tercer an˜ o de Educacio´n Media Superior.1 Adema´s, cada estudiante recibe un folio u´ nico de acuerdo al estado, municipio, escuela a la que pertenece el estudiante y otras variables.
+Por otro lado, en la base Cuestionario de Contexto se encuentran todos los estudiantes, de una muestra aleatoria de escuelas y representativa a nivel nacional, que respon-
+1Sistema Educativo Mexicano: Principales Cifras Ciclo Escolar 2008-2009
+25
+
+dieron un anexo que incluye preguntas destinadas a obtener informacio´n a nivel individual, familiar y sobre infraestructura escolar. El Cuestionario de Contexto contiene 214,000 observaciones con menos del 0.5 % de estas duplicadas y comparte el nu´ mero de folio con la Base Principal. Los directores de las escuelas participantes tambie´n responden un Cuestionario de Directores v´ıa internet. Este cuestionario reu´ ne informacio´n sobre la planta de docentes, infraestructura escolar, planes de estudios, programas curriculares y otros. Los Cuestionarios de Contexto y Directores comparten la clave de la escuela.
+La base ﬁnal, resultado de unir la Base Principal, Cuestionario de Contexto y Cuestionario de Directores, contiene aproximadamente 195,000 observaciones y ma´s de 600 variables.2 La base ﬁnal fue normalizada para poder interpretar los resultados en te´rminos de desviaciones esta´ndar y seguir la literatura econo´mica alrededor de la educacio´n.
+4.2. Estad´ısticas Descriptivas
+Nuestro objetivo es analizar de forma ma´s detallada y encontrar los determinantes de la diferencia en caliﬁcaciones entre escuelas privadas y pu´ blicas para el an˜ o 2008 en Educacio´n Media Superior. La Tabla 4.1 muestra las diferencias promedio en caliﬁcaciones entre escuelas privadas y escuelas pu´ blicas, por materia evaluada y por base de datos. La Base Original es aquella que contiene al 87 % de los estudiantes en Educacio´n Media Superior. En la Tabla 4.1 se observa que la construccio´n de la base ﬁnal no genero´ cambios en las diferencias del promedio en puntajes respecto a la base original.
+La diferencia entre escuelas privadas y pu´ blicas se encuentra alrededor de 0.2 desviaciones esta´ndar tanto en habilidad lectora como en habilidad matema´tica y las pruebas estad´ısticas indican que la diferencia en puntajes sobre la media es diferente de cero
+2Detalles de la construccio´n Ape´ndice A
+26
+
+y signiﬁcativa a niveles menores al 1 %.3 La escala es producto de un ca´lculo donde se consideran variables como diﬁcultad de la pregunta, probabilidad de que el alumno responda al azar, cantidad de estudiantes que respondieron correctamente una pregunta y otras caracter´ısticas. Dado que normalizamos los datos, una comparacio´n ma´s directa con la literatura en educacio´n es factible. Por ejemplo, de acuerdo con Woesmann (2000), la diferencia entre escuelas privadas y pu´ blicas es mayor al efecto de reducir en dos desviaciones esta´ndar el taman˜ o de los grupos sobre el desempen˜ o.
+
+Tabla 4.1: Diferencias en Caliﬁcaciones entre Escuelas
+Privadas y Pu´ blicas: Base Original y Base Construida.
+
+Escuela Privada Escuela Pu´ blica Diferencia
+
+Base Original Habilidad Matema´tica Habilidad Lectora
+
+0.1618 0.1872
+
+-0.0346 -0.0400
+
+0.1964 0.2272
+
+Base Construida Habilidad Matema´tica Habilidad Lectora
+
+.1561 .1852
+
+-.0501 -.0299
+
+0.2062 0.2151
+
+Fuente: elaboracio´n propia usando datos provenientes de los Cuestionario de Contexto de ENLACE 2008 en Educacio´n Media Superior. Las estad´ısticas esta´n ajustados por los pesos muestrales correspondientes.
+
+La Tabla 4.2 y 4.3 contienen los puntajes promedios por estado ordenados de mayor a menor para habilidad matema´tica y habilidad lectora respectivamente. Se puede observar que Chiapas, Guerrero, Sonora y Tamaulipas se encuentran en las u´ ltimas posiciones en ambos listados y hay que sen˜ alar que Chiapas y Guerrero son estados que sufren de los ´ındices ma´s altos de marginacio´n y pobreza. Por otro lado, el Distrito Fe-
+3Vea´se Ape´ndice
+27
+
+deral y Quere´taro son estados cono mayor actividad econo´mica y se encuentran en el cima de ambas evaluaciones.
+Las tablas tambie´n nos permiten hacer una comparacio´n de la diferencia entre estudiantes de escuelas privadas y pu´ blicas. El puntaje promedio de escuelas pu´ blicas en habilidad matema´tica esta´ ubicado entre los estados de Chihuahua y San Luis Potos´ı mientras que el puntaje de escuelas privadas es mayor al del estado de Baja California. Esto equivale a 17 posiciones en el ranking. En el caso de habilidad lectora la diferencia entre escuelas pu´ blicas y privadas es equivalente a la diferencia existente entre Yucata´n (2a posicio´n en el ranking) y San Luis Potos´ı, es decir, 19 posiciones (Tabla 4.3). Las implicaciones anteriores sen˜ alan que la diferencia existen entre el sistema pu´ blico y privado es sustancial y por tanto es necesario conocer que´ la esta´ causando.
+
+Tabla 4.2: Caliﬁcaciones Medias por Estado en Habilidad Matema´tica
+
+Estado 1. Quere´taro 2. Aguascalientes 3. Nuevo Leo´n 4. Guanajuato 5. Baja California 6. Yucata´n 7. Distrito Federal 8. Jalisco 9. Hidalgo 10. Zacatecas
+
+Puntaje 0.2999 0.2753 0.2052 0.1937 0.1403 0.1398 0.1200 0.1115 0.1029 0.0860
+
+Estado 11. Colima 12. Durango 13. Morelos 14. Puebla 15. Chihuhua 16. San Luis Potos´ı 17. Tlaxcala 18. Campeche 19. Me´xico 20. Baja California Sur
+
+Puntaje 0.0841 0.0645 0.0640 0.0508 0.0506 0.0406 0.0388 0.0202 -0.0126 -0.0146
+
+Estado 21. Coahuila 22. Sinaloa 23. Nayarit 24. Michoaca´n 25. Quintana Roo 26. Oaxaca 27. Veracruz 28. Tamaulipas 29. Sonora 30. Chiapas 31. Guerrero
+
+Puntaje -0.0205 -0.0491 -0.0657 -0.0759 -0.0853 -0.0880 -0.0929 -0.1808 -0.2053 -0.2898 -0.3554
+
+Fuente: elaboracio´n propia usando datos de la Base Original de ENLACE 2008 para Educacio´n Media Superior. Datos provenientes de la muestra total. El estado de Tabasco no participo´ en esta evaluacio´n debido a desastres naturales.
+
+28
+
+Tabla 4.3: Caliﬁcaciones Medias por Estado en Habilidad Lectora
+
+Estado 1. Quere´taro 2. Yucata´n 3. Distrito Federal 4. Puebla 5. Hidalgo 6. Guanajuato 7. Jalisco 8. Tlaxcala 9. Me´xico 10. Nuevo Leo´n
+
+Puntaje 0.3568 0.1846 0.1601 0.1393 0.1381 0.1357 0.1258 0.1203 0.1025 0.0959
+
+Estado 11. Campeche 12. Morelos 13. Baja California 14. Aguascalientes 15. Colima 16. Veracruz 17. Baja California Sur 18. Zacatecas 19. San Luis Potos´ı 20. Quintana Roo
+
+Puntaje 0.0937 0.0720 0.0551 0.0508 0.0231 0.0162 0.0044 -0.0074 -0.0343 -0.0747
+
+Estado 21. Coahuila 22. Durango 23. Michoaca´n 24. Chihuhua 25. Nayarit 26. Oaxaca 27. Sinaloa 28. Tamaulipas 29. Guerrero 30. Sonora 31. Chiapas
+
+Puntaje -0.0819 -0.0967 -0.1003 -0.1012 -0.1113 -0.1283 -0.1445 -0.1818 -0.2906 -0.3418 -0.3826
+
+Fuente: elaboracio´n propia usando datos de la Base Original de ENLACE 2008 para Educacio´n Media Superior. Datos provenientes de la muestra total. El estado de Tabasco no participo´ en esta evaluacio´n debido a desastres naturales.
+
+Una forma donde se puede observar con mayor detalle donde ocurre la desigualdad en caliﬁcaciones es haciendo uso de las funciones de densidad de las caliﬁcaciones. La Figura 4.1 muestra la estimacio´n de la funcio´n de densidad de las caliﬁcaciones en habilidad matema´tica usando me´todos de kernel. La estimacio´n muestra que la funcio´n de densidad para las escuelas pu´ blicas se encuentra hacia la izquierda de la correspondiente a escuelas privadas, indicando una mayor media en caliﬁcaciones en los estudiantes de escuelas privadas. Tambie´n se observa mayor concentracio´n en la parte de bajas caliﬁcaciones, es decir, un estudiante de escuela privada tiene menores probabilidades de obtener una baja caliﬁcacio´n que un estudiante de escuela pu´ blica.
+Respecto a habilidad lectora, la Figura 4.1 muestra que las observaciones anteriores siguen siendo va´lidas. Sin embargo, ambas se encuentran un poco ma´s a la derecha
+29
+
+Figura 4.1: Funciones de Densidad Originales por Sostenimiento
+DP.0-423142úrueinbvntalsiacdidjaaeassd Estimada
+.P-D20P41432rúueibvnnalitcsdaaidsjsead Estimada
+
+.4
+
+.3
+
+.4
+
+.2
+
+Densidad Estimada
+
+.3
+
+.2
+
+Densidad Estimada
+
+.1
+
+.1
+
+0
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje
+
+Privadas
+
+Públicas
+
+(a) Habilidad Matema´tica
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje
+
+Privadas
+
+Públicas
+
+(b) Habilidad Lectora
+
+Fuente: elaboracio´n propia utilizando datos de los cuestionarios de contexto de la prueba ENLACE 2008 para habilidad matema´tica. Grupo de comparacio´n: escuelas privadas. Para estimar las funciones de densidad se usa el Kernel de Epanechnikov y el Bandwidth propuesto por Silvermann (1986). Las muestras para Habilidad Matema´tica y Habilidad Lectora contiene 194,230 observaciones.
+
+del cero sen˜ alando que los alumnos obtuvieron mejores caliﬁcaciones en la parte de Habilidad Lectora.
+Para ilustrar el porque´ usar las funciones de densidad para analizar la diferencia en caliﬁcaciones se presenta la Figura 4.2 donde se desglosa las caliﬁcaciones por tipo de subsistema y estados. Las estimaciones muestran que en estados como Hidalgo, Morelos, Yucata´n y San Luis Potos´ı no se puede apreciar diferencia alguna entre las caliﬁcaciones de escuelas privadas y pu´ blicas. Tambie´n muestran que existen algunos estados, como Chihuahua y Guanajuato, donde la funcio´n de densidad de las escuelas privadas se encuentra a la izquierda de la correspondiente a escuelas pu´ blicas, en otras palabras, las escuelas privadas tienen un peor desempen˜ o en estos estados. Sin embargo, en Sinaloa, Veracruz, Quere´taro y Nuevo Leo´n sucede lo contrario, la estimacio´n de las escuelas privadas se localiza a la derecha de la estimacio´n de las escuelas pu´ blicas y por tanto que
+30
+
+las escuelas privadas tienen un mejor desempen˜ o en la prueba. Tambie´n es importante mencionar que algunos estado como Zacatecas y Durango no tienen observaciones de estudiantes de escuelas privadas y por ello no existe una estimacio´n.
+La Figura 4.2 no proporciona alguna clave directa sobre que´ esta´ causando la diferencia en puntajes. Por ejemplo, por un lado Chiapas es uno de los estados ma´s marginados del pa´ıs mientras que el Distrito Federal aporta ma´s del 20 % del Producto Interno Bruto Nacional4 y en ambos no se observan grandes diferencias entre las escuelas privadas y pu´ blicas. Por otro lado, Oaxaca y Nuevo Leo´n son estados con caracter´ısticas econo´micas y sociales distintas y en ambos existen diferencias obvias entre escuelas privadas y pu´ blicas. Por tanto, un ana´lisis ma´s profundo y detallado es necesario.
+4Instituto Nacional de Estad´ıstica y Geograf´ıa 2010
+31
+
+Figura 4.2: Funciones de Densidad de Puntajes por Estado y Sostenimiento 32
+
+La literatura econo´mica en educacio´n presenta resultados ambiguos y contradictorios cuando se habla de los factores que afectan al desempen˜ o de los estudiantes en pruebas estandarizadas. Estudios como Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa (2007), De Hoyos, Espino, & Garc´ıa (2010) y Hanushek (2003) indican que las caracter´ısticas socioculturales de los estudiantes tienen un mayor peso que los insumos escolares mientras estudios como Alvare´z, Garc´ıa-Moreno, & Patrinos (2007) y Graddy & Stevens (2005) apuntan en la direccio´n opuesta. La Tabla 4.4 contiene el puntaje promedio en habilidad matema´tica desagregado por los subgrupos que componen a algunas caracter´ısticas individuales. En ella se puede observar que existe una relacio´n positiva entre el promedio obtenido en educacio´n primaria y el puntaje obtenido en la prueba, lo cual puede ser un indicador de que los primeros an˜ os de educacio´n son los ma´s importantes para el desarrollo cognoscitivo de las personas. Respecto a la variable sexo, la literatura (Sohn, 2010) sostiene que los hombres obtienen mejores puntajes en matema´ticas y este caso no es la excepcio´n. Inclusive las aspiraciones de los estudiantes inﬂuyen de forma positiva y esto puede ser consecuencia de una mayor motivacio´n: estudiantes que anhelan alcanzar grados de estudios ma´s altos esta´n conscientes del esfuerzo que conlleva. Adema´s, la relacio´n de fumar y trabajar son las esperadas. Un resultado inesperado, y posiblemente debido a respuestas falsas, es que que el hecho de beber ayuda a mejorar el puntaje.
+33
+
+Tabla 4.4: Media en Puntaje de Habilidad Matema´tica sobre
+Caracter´ısticas Individuales
+
+Variable
+Sexo Hombre Mujer
+
+Media
+0.1418 -0.1505
+
+Variable
+Tipo de Escuela Secundaria Pu´ blica Privada
+
+Media
+-0.0835 0.5353
+
+Fumar No Si
+Beber No Si
+Promedio en Primaria 6.0-6.4 6.5-6.9 7.0-7.4 7.5-7.9 8.0-8.4 8.5-8.9 9.1-9.4 9.5-9.9 10
+
+-0.0060 -0.0474
+-0.0790 0.0470
+-0.7314 -0.7492 -0.6983 -0.5356 -0.3934 -0.1200 0.1986 0.6032 0.8746
+
+Aspiraciones de estudios Bachillerato Te´cnico Universitario Licenciatura Posgrado
+Horas dedicadas a Matema´ticas 1 2 3 4 5 6 7
+Trabajas No S´ı
+
+-0.7282 -0.4032 -0.2083 0.1916
+-0.5322 -0.4354 -0.0438 -0.0142 0.2036 0.1772 0.3846
+0.0214 -0.1290
+
+Fuente: elaboracio´n propia usando informacio´n de los Cuestionario de Contexto ENLACE 2008 para Educacio´n Media Superior. Datos ajustados por pesos muestrales.
+
+La Tabla 4.5 describe el puntaje desagregado respecto a algunas variables a nivel hogar. Por un lado, en ella se observa que tanto la educacio´n de la madre como del padre exhibe una correlacio´n positiva con el promedio de los puntajes y puede reﬂejar herencia de conocimientos de los padres hacia los hijos. En una primera instancia es posible aﬁrmar que la educacio´n de la madre tiene un efecto mayor que la educacio´n del padre. El resultado anterior no es sorprendente pues usualmente la madre se encarga del cuidado de los hijos . Sin embargo, inusual es el hecho que un nivel de posgrado tiene un
+34
+
+promedio menor que estudios de licenciatura. Por otro lado, las variables piso, computadoras y libros en casa son variables relacionadas con la infraestructura del hogar y su relacio´n con el puntaje es positiva.
+
+Tabla 4.5: Diferencias en Puntaje sobre Caracter´ısticas
+del Hogar
+
+Variable Educacio´n de la Madre Sin estudios Primaria Secundaria Bachillerato Carrera Te´cnica Licenciatura Posgrado
+
+Media
+-0.4329 -0.1993 -0.0499 0.0267 0.2580 0.4969 0.3307
+
+Variable Educacio´n del Padre Sin estudios Primaria Secundaria Bachillerato Carrera Te´cnica Licenciatura Posgrado
+
+Media
+-0.3283 -0.2297 -0.1041 0.0238 0.1891 0.4273 0.3841
+
+Piso del Hogar Tierra Cemento Mosaico
+Libros Ninguno 1 a 10 11 a 25 26 a 50 51 a 100 101 a 200 201 a 500 Ma´s de 500
+
+-0.6326 -0.1487 0.1708
+-0.4766 -0.1945 -0.0381 0.0381 0.1407 0.2363 0.3811 0.3619
+
+Cuartos en el Hogar 1 2 3 4 5 6 7
+Computadoras en el Hogar 0 1 2 3 4
+
+-0.3797 -0.1475 -0.0071 0.0679 0.1546 0.1946 0.3579
+-0.2541 0.0975 0.3251 0.5340 0.7941
+
+Fuente: elaboracio´n propia usando informacio´n de los Cuestionario de Contexto ENLACE 2008 para Educacio´n Media Superior. Datos ajustados por pesos muestrales.
+
+35
+
+La Tabla 4.6 muestra variables relacionadas con la infraestructura escolar, docentes y otras. Por un lado, la falta de electricidad, agua potable y un buen nu´ mero de laboratorios presentan signos de un peor desempen˜ o en la prueba. No se observa una correlacio´n directa con el nivel de estudios de los docentes y a pesar de ello las escuelas donde existen profesores con posgrado obtienen las mejores caliﬁcaciones. Adema´s, consideramos que la variable “estado de las aulas” es una buena aproximacio´n para la infraestructura escolar total pues usualmente es prioridad en proyectos como el Programa de Escuelas de Calidad (PEC).
+
+Tabla 4.6: Diferencias en Puntajes sobre Caracter´ısticas de la Escuela
+
+Variable Nu´mero de Laboratorios S´ı son suﬁcientes No son suﬁcientes No hay
+Internet S´ı No
+Director por Examen de Oposicio´n S´ı No
+Tutor´ıas Academicas S`I No
+Agua Potable S`I No
+Luz Electrica S`I No
+
+Media
+0.1228 -0.1226 -0.3499
+0.0317 -0.4212
+-0.0434 -0.0066
+0.0398 -0.1766
+0.0238 -0.4964218
+-0.0141404 -0.5739765
+
+Variable
+Nivel de Estudios de Docentes Bachillerato Normal Ba´sica Normal Superior Lic. en Pedagog´ıa Licenciatura Posgrado
+Asociaciones de Estudiantes S´ı No
+Vigilancia S´ı No
+Estados de las Aulas No hay Malo Regular Bueno Excelente
+
+Media
+0.3508 -0.4029 0.0850 -0.2703 -0.0410 0.2545
+0.0418 -0.0588
+0.0570 -0.1888
+-0.8219812 -0.2499278
+-0.168692 -0.0177502 0.3497249
+
+Fuente: elaboracio´n propia usando informacio´n de los Cuestionario de Contexto ENLACE 2008 para Educacio´n Media Superior. Datos ajustados por pesos muestrales.
+
+36
+
+La variable libertad del profesor en la Tabla 4.7 esta´ ligada al estudio de Alvare´z, Garc´ıa-Moreno, & Patrinos (2007) donde encuentran que variables del tipo institucional afectan de forma positiva el desempen˜ o. La existencia de huelgas e irrupcio´n de porros podr´ıan sen˜ alar problemas en el contexto social entre profesores y alumnos, respectivamente, y su relacio´n con el puntaje es negativa. Las variables relacio´n entre estudiantes y docentes esta´n relacionadas con el ambiente social de la escuela. Adema´s, que la escuela participe en pruebas estandarizadas no centralizadas como PISA no exhibe diferencias signiﬁcativas y sustenta el proceso de aleatorizacio´n del examen.
+
+Tabla 4.7: Diferencias en Puntajes sobre Caracter´ısticas
+Institucionales
+
+Variable Irrupcio´n de Porros S´ı No
+Huelgas S´ı No
+Relacio´n entre estudiantes y docentes Regular Buena Excelente
+PISA S´ı No
+
+Media
+0.0356 -0.0145
+-0.1332 -0.0099
+-0.2479 -0.0141 0.0489
+-0.0258 -0.0075
+
+Variable
+Nivel de Exigencia Nada Exigente Poco Exigente Exigente Muy Exigente
+Estudios de Directores Bachillerato Normal Ba´sica Normal Superior Licenciatura en Licenciatura Especialidad Maestr´ıa Doctorado
+
+Media
+-0.4318 -0.3370 -0.0476 0.3196
+-0.2068 0.0458 -0.0886 -0.0846 -0.0611 0.0851 0.0785 -0.2568
+
+Fuente: elaboracio´n propia usando informacio´n de los Cuestionario de Contexto ENLACE 2008 para Educacio´n Media Superior. Datos ajustados por pesos muestrales.
+
+37
+
+4.3. Diferencia en Caracter´ısticas Observables.
+La hipo´tesis impl´ıcita a la metodolog´ıa desarrollada por DiNardo, Fortin, & Lemieux (1996) es que las caracter´ısticas observables que componen el vector Z son distintas entre los grupos que se pretenden analizar. La Tabla 4.8 resume las diferencias en proporciones de algunas caracter´ısticas observables entre estudiantes de escuelas pu´ blicas y privadas, y se obtienen resultados interesantes. Primero, caracter´ısticas como Sexo y Trabaja no presentan diferencias entre estudiantes de escuelas pu´ blicas y privadas. Segundo, a nivel hogar la diferencia en variables como educacio´n de la madre es importante y con ventaja para las escuelas privadas, es decir, existe una mayor proporcio´n de estudiantes cuyas madres tienen estudios por arriba de la Educacio´n Media Superior. Tercero, se observa que estudiantes de escuelas privadas tienen mayores aspiraciones que los estudiantes de escuelas privadas y probablemente signiﬁcar´ıa que los estudiantes de escuelas privadas se encuentran ma´s motivados. Cuarto, estudiantes de escuelas privadas tienen ventaja en acceso a internet y nu´ mero de laboratorios. Por u´ ltimo, los estudiantes de escuelas privadas tienden a fumar ma´s y con ello repercutir en su desempen˜ o escolar. Dadas las observaciones anteriores se considera que la explicacio´n de la brecha, v´ıa diferencias en las caracter´ısticas, es totalmente factible.
+38
+
+Tabla 4.8: Diferencias en Proporciones sobre Caracter´ısticas Observables
+
+Variable Aspiraciones de Estudios Bachillerato Te´cnico Universitario Licenciatura Posgrado
+Sexo Hombre Mujer
+Trabajas S´ı No
+
+Pu´ blica
+4.28 11.25 28.28 56.19
+46.61 53.39
+23.61 76.39
+
+Privada
+1.97 5.83 22.35 69.85
+46.36 53.64
+23.38 76.62
+
+Variable
+Educacio´n de la Madre No estudio´ Primaria Secundaria Nivel Medio Superior Carrera Te´cnica Licenciatura Posgrado
+Nu´mero de Laboratorios S´ı son suﬁcientes Suﬁcientes No hay
+
+Pu´ blica Privada
+
+6.53 34.11
+28.5 12.21
+9.56 7.18 1.91
+
+2.24 15.66 20.33 18.11 16.61 20.46
+6.58
+
+52.54 33.43 14.04
+
+80.42 8.86
+10.72
+
+Fumas S´ı No
+
+19.16 80.84
+
+Servicio de Internet 29.2 S´ı 70.8 No
+
+89.09 10.91
+
+96.09 3.91
+
+Relacio´n Estudiantes, Docentes Regular Buena Excelente
+PISA S´ı No
+
+4.29 84.97 10.74
+22.22 77.78
+
+0.54 66.34 33.12
+
+Nivel de Exigencia Nada Exigente Poco Exigente Exigente Muy Exigente
+
+18.88 81.12
+
+Asociaciones de Estudiantes S´ı No
+
+0.01 8.98 78.58 12.43
+46.67 53.33
+
+0 3.48 66.1 30.42
+44.38 55.62
+
+Fuente: elaboracio´n propia usando informacio´n de los Cuestionario de Contexto ENLACE 2008 para Educacio´n Media Superior. Datos ajustados por pesos muestrales.
+
+4.4. Especiﬁcacio´n Econome´trica
+La metodolog´ıa desarrollado por DiNardo, Fortin, & Lemieux (1996) es una combinacio´n de me´todos no parame´tricos y parame´tricos y uno de sus beneﬁcioss es no asumir una forma reducida para la funcio´n de produccio´n. Lo anterior imposibilita dar una es-
+39
+
+peciﬁcacio´n econome´trica. La Tabla 4.9 resume todas las variables utilizadas en el vector Zi divididas en caracter´ısticas individuales, familiares, escolares e institucionales. La distincio´n entre variables relacionadas con el estudiante y aquellas relacionadas con la escuela es bastante clara. Sin embargo, hacer una diferencia entre variables institucionales y escolares es ma´s complicado. Es este sentido, seguimos la distincio´n de autores como Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa (2007); De Hoyos, Espino, & Garc´ıa (2010); Fuchs & Woesmann (2004).
+
+Tabla 4.9: Variables Incluidas en el Modelo Logit
+
+Variables Individuales Sexo Trabaja Tipo de Primaria Tipo de Secundaria Fumar Bebidas Alcoholicas Aspiraciones del Estudiante Promedio Primaria Horas de Clase en Matema´ticas Promedio del u´ ltimo an˜ o de secundaria
+Variables Familiares Piso del Hogar Estudios de la Madre Estudios del Padre Nu´ mero de Libros Nu´ mero de Cuartos Computadoras
+
+Variables Escolares Educacio´n de los Docentes Nu´ mero de Laboratorios Internet Examen de Oposicio´n Vigilancia
+Variables Institucionales Asociaciones estudiantiles Participacio´n en PISA Irrupcio´n de Porros Huelgas Relacio´n Estudiantes Profesores Exigencia Tutor´ıas Estudios Director
+
+Fuente: elaboracio´n propia usando informacio´n de los Cuestionario de Contexto ENLACE 2008 para Educacio´n Media Superior.
+
+40
+
+Cap´ıtulo 5
+Resultados
+5.1. Di Nardo, Fortin & Lemieux
+La Figura 5.1 contiene la estimacio´n del contrafactual en habilidad matema´tica usando la metodolog´ıa original de DiNardo, Fortin, & Lemieux (1996). El contrafactual estimado es: ¿cua´l es la distribucio´n de caliﬁcaciones de los estudiantes escuelas pu´ blicas, si tuvieran la distribucio´n de caracter´ısticas de los estudiantes de escuelas privadas y la distribucio´n de puntajes de las escuelas pu´ blicas? y esta´ descrito en la Ecuacio´n 3.9. De la ﬁgura se pueden enunciar dos observaciones. La primera es que la funcio´n de densidad estimada se encuentra a la derecha de la funcio´n de densidad de caliﬁcaciones de escuelas pu´ blicas, indicando que los estudiantes de escuelas pu´ blicas mejorar´ıan su desempen˜ o si tuvieran las caracter´ısticas de los estudiantes de escuelas privadas. El segundo es que la estimacio´n replica casi en su totalidad a la funcio´n de densidad de escuelas privadas, es decir, las caracter´ısticas observables estar´ıan explicando gran parte de la brecha existente. Ma´s adelante resumiremos co´mo cambian las magnitudes de diversos estad´ısticos y que´ tanto se puede explicar de la brecha existente v´ıa caracter´ısti-
+41
+
+cas observables.
+
+Figura 5.1: Funcio´n de Densidad Estimada para el Contrafactual.
+
+-D.0P243241úrueinbvntalsiacdidjaaeassddeEsHtaimbialidad Matemática
+
+-0DEP2.C43214suoecnnutsaeridajleaafsadHcPaEtrubsivatilailmddaadsdaMatemática
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+Densidad Estimada
+
+.2
+
+Densidad Estimada
+
+.1
+
+.1
+
+0
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje de Habilidad Matemática
+
+Públicas
+
+Privadas
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje Habilidad Matemática
+
+Contrafactual
+
+Escuelas Privadas
+
+(a) Densidades Originales
+
+(b) Contrafactual Estimado
+
+Fuente: elaboracio´n propia utilizando datos de los cuestionarios de contexto de la prueba ENLACE 2008 para Habilidad Matema´tica. El contrafactual estimado es: ¿co´mo se distribuyen las caliﬁcaciones de los estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas de escuelas privadas?. Grupo de comparacio´n: escuelas privadas. Las cuatro funciones de densidad estimadas usan el Kernel de Epanechnikov y el bandwidth propuesto por Silvermann (1986). Las muestras para las funciones de densidad originales y el contrafactual contienen 194,230 y 162,423, respectivamente.
+
+5.2. Descomposicio´n Detallada
+En la Figura 5.2 se encuentran las estimaciones resultantes de la metodolog´ıa propuesta por Altonji, Bharadwaj, & Lange (2008) descrita en la Ecuacio´n 3.18. Las ﬁguras muestran la evolucio´n de los contrafactuales cuando se cambia la distribucio´n de los cuatro grupos de varibles. Por ejemplo, la Figura 5.2a contiene dos funciones de densidad estimada. La primera estimacio´n, marcada por la etiqueta “Pu´ blicas”, corresponde a la distribucio´n original de caliﬁcaciones de estudiantes de escuelas pu´ blicas. La segunda estimacio´n (Individual) es la distribucio´n de caliﬁcaciones de estudiantes de
+42
+
+escuelas pu´ blicas si solamente tuvieran la distribucio´n de las caracter´ısticas a nivel individual de estudiantes de escuelas privadas. En la Figura 5.2b, la primera estimacio´n “Individuales” es la segunda estimacio´n de la Figura 5.2a. La segunda estimacio´n (Hogar corresponde a la distribucio´n de caliﬁcaciones de los estudiantes de escuelas pu´ blicas, si tuvieran la distribucio´n de caracter´ısticas a nivel individual y hogar de los estudiantes de escuelas privadas y as´ı sucesivamente.
+Los efectos de las caracter´ısticas a nivel individual y hogar son claros. Cambiar estas caracter´ısticas a estudiantes de escuelas pu´ blicas mueve la funcio´n de densidad hacia la derecha e implica una mejora en los resultados de la prueba. Al incluir las variables escolares la funcio´n de densidad no presenta cambios importantes y por tanto, el efecto de estas variables es casi nulo. Respecto a las variables institucionales, se observa un ligero movimiento de la funcio´n de densidad estimada hacia la izquierda al momento de incluirlas, implicando que este tipo de variables pueden afectar de forma negativa al desempen˜ o de cierto tipo de estudiantes. Las gra´ﬁcas son ilustrativas para observar el efecto general de los grupos de variables sobre la brecha en caliﬁcaciones. Sin embargo, parte de nuestro objetivo es aprovechar la metodolog´ıa para explorar que´ esta´ pasando en diversos puntos de la distribucio´n.
+43
+
+PD4.2I0-n4312uúedbnnivtlsiaiciddjaeuasadelenEssHtaimbialidad Matemática
+
+Figura 5.2: Descomposicio´n Detallada Estimada
+.H0IP-D42n3142uoednngivtsaaiirddjeuaadelenEssHtaimbialidad Matemática
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+Densidad Estimada
+
+.2
+
+Densidad Estimada
+
+.1
+
+.1
+
+0
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje en Habilidad Matemática
+
+Públicas
+
+Individuales
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje en Habilidad Matemática
+
+Individuales
+
+Hogar
+
+(a) Contrafactual a Nivel Individual
+P2D04-.HE2341suoecnngutsaaeirdjleaadenEsHtaimbialidad Matemática
+
+(b) Contrafactual a Nivel Hogar
+240.E-DIPn4321suescnntutistaeiudjleacaidoenEasHlteaismbialidad Matemática
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+Densidad Estimada
+
+.2
+
+Densidad Estimada
+
+.1
+
+.1
+
+0
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+Puntaje en Habilidad Matemática
+
+Hogar
+
+Escuela
+
+4
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje en Habilidad Matemática
+
+Escuela
+
+Institucionales
+
+(c) Contrafactual a Nivel Escuela
+
+(d) Contrafactual a Nivel Institucional
+
+Fuente: elaboracio´n propia utilizando datos de los cuestionarios de contexto de la prueba ENLACE 2008 para habilidad matema´tica.
+
+El contrafactual estimado es: ¿co´mo se distribuyen las caliﬁcaciones de los estudiantes de escuelas pu´ blicas si tuvieran la distribu-
+
+cio´n de caracter´ısticas hasta el nivel “x” de estudiantes de escuelas privadas?, donde x es individual, hogar, escolares e institucio-
+
+nales. Las funciones de densidad estimadas usan el Kernel de Epanechnikov y el bandwidth propuesto por Silvermann (1986)
+
+44
+
+Tabla 5.1: Estad´ısticos de la Descomposicio´n Detallada Original
+
+Pu´ blicas Privadas Diferencia Estudiantes Hogar Escuela Institucionales Residual
+
+P10
+
+-1.3344 -1.1998
+
+0.1346
+
+[0.006] [0.015]
+
+[0.017]
+
+[100 %]
+
+0.0223 [0.020] [17 %]
+
+0.0838 [0.020] [62 %]
+
+0.0243 [0.023] [18 %]
+
+-0.0116 [0.028] [-9 %]
+
+0.0158 [0.028] [12 %]
+
+P25
+
+-0.8135 -0.6420
+
+0.1714
+
+[0.005] [0.016]
+
+[0.017] [100 %]
+
+0.0679
+[0.015] [40 %]
+
+0.0937
+[0.020] [55 % ]
+
+0.0217
+[0.021] [13 %]
+
+-0.0202
+[0.026] [-12 %]
+
+0.0084
+[0.026] [5 %]
+
+P50
+
+-0.1195 0.0933
+
+0.2128
+
+[0.005] [0.019]
+
+[0.020] [100 %]
+
+0.1003
+[0.017] [47 %]
+
+0.0820
+[0.022] [39 %]
+
+0.0078
+[0.022] [4 %]
+
+-0.0101
+[0.030] [-5 %]
+
+0.0328
+[0.028] [15 %]
+
+P75
+
+0.6520 0.8880
+
+0.2360
+
+[0.005] [0.019]
+
+[0.019] [100 %]
+
+0.1311
+[0.019] [56 %]
+
+0.0750
+[0.026] [32 %]
+
+0.0117
+[0.026] [5 %]
+
+0.0103
+[0.032] [4 %]
+
+0.0079
+[0.029] [3 %]
+
+P90
+
+1.3405 1.6222
+
+0.2817
+
+[0.005] [0.021]
+
+[0.022] [100 %]
+
+0.1229
+[0.020] [44 %]
+
+0.0404
+[0.028] [14 %]
+
+0.0066
+[0.030] [2 %]
+
+0.0565
+[0.036] [ 20 %]
+
+0.0553
+[0.035] [20 %]
+
+Media
+
+-0.0501 [0.004]
+
+0.1561 [0.012]
+
+0.2062
+[0.013] [100 %]
+
+0.0892
+[.014] [43 %]
+
+0.0739
+[0.019] [36 %]
+
+0.0134
+[0.020] [7 %]
+
+0.0057
+[0.022] [3 %]
+
+0.0240
+[0.018] [12 %]
+
+Fuente: elaboracio´n propia usando base de datos del disen˜ o muestral del cuestionario de contexto 2008. Todos los resultados son ajustados por los pesos de la muestra. Errores esta´ndar en corchetes y fueron calculados con el me´todo no parame´trico Bootstrap con 250 repeticiones.
+
+La Tabla 5.1 presenta la aportacio´n de los cuatro grupos de variables sobre la brecha existente en diversos puntos de la distribucio´n. La parte de Pu´ blicas y Privadas corresponde a las distribuciones originales de los puntajes. En Diferencia resumimos la brecha original sobre distintos puntos de las distribuciones originales. Por ejemplo, en el percentil 10 la brecha existente entre escuelas pu´ blicas y privadas es de 0.1346 desviaciones esta´ndar, favoreciendo a los estudiantes de escuelas privadas. Las siguientes columnas contienen la contribucio´n de cada grupo usando los contrafactuales estimados en la descomposicio´n propuesta por Altonji, Bharadwaj, & Lange (2008). En Escuela el con-
+45
+
+trafactual estimado es: ¿cua´l es la distribucio´n de caliﬁcaciones de escuelas pu´ blicas si tuvieran la distribucio´n de caliﬁcaciones de caracter´ısticas a nivel individual, hogar y escolar de los estudiantes de escuelas privadas?. Para obtener una medida de la contribucio´n de las variables a nivel escolar se compara con el contrafactual Hogar, que cambia la distribucio´n de las variables hogar e individual, y se divide entre la brecha original. El residual corresponde a la parte no explicada por el modelo.
+De la Tabla 5.1 podemos hacer varias observaciones. Primero, la brecha entre escuelas privadas y pu´ blicas no es un feno´meno u´ nico de la media y se presenta tanto en puntos bajos como altos de la distribucio´n. Adema´s, la brecha observada en otras percentiles (Columna 3) se incrementa conforme avanzamos a puntos ma´s altos de la distribucio´n, es decir, si comparamos a los mejores estudiantes de escuelas privadas y escuelas pu´ blicas (percentil 90), la diferencia en caliﬁcaciones es mayor en aproximadamente un 40 % respecto a la diferencia original en medias (Tabla 4.1). Segundo, la explicacio´n de las diferencias, v´ıa las caracter´ısticas observables, es exitosa pues logra explicar en promedio un 85 % de la brecha en caliﬁcaciones entre escuela pu´ blicas y privadas, encontrando su punto ma´s bajo en el percentil 50 con un residual del 15 % y su punto ma´s alto en el percentil 75 con un 3 % de la brecha no explicada. Tercero, de acuerdo a la Ecuacio´n 3.3, la diferencia en medias o en cualquier percentil puede descomponerse en una parte consecuencia de las diferencias en caracter´ısticas observables y en una segunda parte correspondiente al verdadero beneﬁcio de estar en un grupo, en este caso, el hecho de estudiar en un colegio privado. En la Tabla 5.1, la columna residual resulta ser el verdadero beneﬁcio de estar en una escuela privada y la suma de las columnas Individual, Hogar, Escuela e Institucionales es la parte explicada por las diferencias en caracter´ısticas observables. En la Tabla 5.1 se observa que los verdaderos beneﬁcios de estar en una escuela privada son ma´s importantes para alumnos de alto desempen˜ o (20 %). Sin embargo, tambie´n se observa que los beneﬁcios son importantes para estudiantes ubicados en la parte media y baja de la distribucio´n (12 %-15 %). En
+46
+
+este sentido, se puede aﬁrmar que se obtienen beneﬁcios del hecho de estudiar en una escuela privada aunque estos so´lo representen una fraccio´n de la diferencia en caliﬁcaciones promedio original.
+Tercero, los resultados obtenidos para estudiantes ubicados en la parte media de la distribucio´n se encuentran en l´ınea con los reportados por la literatura, en el sentido de que los factores escolares tienen poco peso sobre el desempen˜ o (Hanushek, 2003). Sobre la media, las caracter´ısticas a nivel estudiante y hogar explican casi 80 % de la diferencia y so´lo un 10 % de la brecha se puede explicar con factores relacionados con la escuela. Al analizar otros puntos de la distribucio´n se obtienen resultados interesantes. Respecto a estudiantes de bajo rendimiento (percentil 10), las caracter´ısticas individuales no tienen tanto peso (17 %) como en otro tipo de estudiantes con mayor rendimiento (40 % - 56 %). En cambio, las caracter´ısticas a nivel hogar son las que contribuyen de forma importante (62 %) en este tipo de estudiantes. En total, para estudiantes de bajo rendimiento las caracter´ısticas individuales y familiares explican casi un 80 % de la brecha existente. Este resultado podr´ıa reﬂejar un contexto familiar complicado o que a nivel individual los estudiantes de escuelas pu´ blicas y privadas son similares (percentil 10). La enorme contribucio´n de factores individuales y familiares en la diferencia en caliﬁcaciones decrece conforme avanzamos en la distribucio´n (Columnas 2 y 3). Por ejemplo, para estudiantes de alto rendimiento las caracter´ısticas individuales y familiares explican so´lo el 58 % de la diferencia en puntajes. Una posible explicacio´n es que los estudiantes de escuelas privadas y pu´ blicas son ma´s parecidos conforme se avanza en la distribucio´n, en otras palabras, los estudiantes de alto rendimiento esta´n inmersos en condiciones familiares ma´s favorables.
+Respecto a los factores escolares, por un lado, la mayor contribucio´n se encuentra en estudiantes de bajo rendimiento (13 %-18 %) y la contribucio´n de estos se reduce en estudiantes localizados en la parte alta de la distribucio´n (3 % - 5 %). El resultado an-
+47
+
+terior apunta a que los retornos de los factores escolares esta´n variando por el tipo de estudiante de una forma importante y resalta la importancia de analizar el efecto de los factores escolares en otros puntos de la distribucio´n distintos a la media. Sin embargo, la gran contribucio´n de los factores escolares en estudiantes de bajo desempen˜ o se reduce por la aportacio´n negativa de los factores institucionales (-9 %). Para ilustrar el porque´ de la contribucio´n negativa se presenta la Tabla 5.2 que contiene las proporciones respecto al tipo de sostenimiento de los factores institucionales para estudiantes que se encuentran por debajo del percentil 10.
+De la Tabla 5.2 tres observaciones son importantes: 1) una ligera mayor proporcio´n de estudiantes de escuelas pu´ blicas reciben tutor´ıas y dado que estamos considerando a los estudiantes de bajo rendimiento existe un claro impacto de tutor´ıas sobre su desempen˜ o. 2) La variable asociaciones estudiantiles reﬂeja el ambiente social entre los compan˜ eros y existe una clara ventaja para estudiantes de escuelas pu´ blicas. 3) Los estudiantes de bajo rendimiento de escuelas pu´ blicas se someten en mayor proporcio´n a pruebas estandarizadas como el examen PISA. De acuerdo con Woesmann (2000), el hecho de someterse a evaluaciones externas inﬂuye de forma positiva sobre el desempen˜ o de los estudiantes. Por tanto, se considera que los estudiantes en el percetil 10 de escuelas pu´ blicas esta´n inmersos en un mejor clima acade´mico. Por tanto, los estudiantes de escuelas privadas esta´n en desventaja en comparacio´n con estudiantes de escuelas pu´ blicas en cuanto a factores institucionales se reﬁere y por ello, se considera que al cambiar las caracter´ısticas institucionales de los estudiantes de escuelas pu´ blicas por las caracter´ısticas institucionales de los estudiantes de escuelas privadas, aunado a la descomposicio´n propuesta, la contribucio´n es negativa. En la siguiente seccio´n se proponen dos enfoques para resolver la dependencia en el orden de la descomposicio´n y obtener estimadores de la contribucio´n en cada grupo.
+48
+
+Tabla 5.2: Diferencia en Factores Institucionales en el Percentil 10
+
+Asociaciones Estudiantiles PISA Tutor´ıas Paros Irrupcio´n de Porros
+Exigencia de la Institucio´n Nada Exigente Poco Exigente Exigente Muy Exigente
+
+Privadas 33.69 % 13.18 % 69.58 %
+1.50 % 0.14 %
+0.00 % 4.24 % 79.25 % 16.51 %
+
+Pu´ blicas 47.21 % 23.57 % 71.07 %
+2.61 % 4.03 %
+0.01 % 14.10 % 77.43 %
+8.47 %
+
+Estudios del Director Bachillerato Normal Ba´sica Normal Superior Pedagogo Licenciatura Especialidad Maestr´ıa Doctorado
+Relaciones Estudiantes-Profesores Regular Buenas Excelentes
+
+Privadas
+1.06 % 0.90 % 2.01 % 4.39 % 47.30 % 5.93 % 35.88 % 2.53 %
+0.46 % 75.48 % 24.06 %
+
+Pu´ blicas
+0.12 % 0.32 % 1.80 % 4.64 % 57.84 % 2.11 % 30.01 % 3.15 %
+5.47 % 83.65 % 10.88 %
+
+Fuente: elaboracio´n propia usando base de datos del disen˜ o muestral de los Cuestionarios de Contexto 2008. Todos los resultados son ajustados por los pesos de la muestra.
+
+En cambio, para estudiantes de alto rendimiento los factores institucionales son muy importantes (20 %) pues contribuyen ma´s que los factores familiares y escolares juntos (16 %). Respecto a estudiantes en la parte media de la distribucio´n la aportacio´n en valor absoluta es pequen˜ a (4 %-5 %). De acuerdo a los resultados anteriores, los factores institucionales juegan un rol importante en estudiantes que se encuentran en las colas de la distribucio´n.
+En resumen, los factores individuales y del hogar contribuyen a explicar buena parte de la brecha pero la proporcio´n var´ıa conforme al rendimiento de los estudiantes. Adema´s, por un lado, variables institucionales importan mucho ma´s en estudiantes con mejor desempen˜ o y afectan de forma negativa a los estudiantes en la parte baja de la distribucio´n. Por otro lado, la aportacio´n de la diferencia en factores escolares es mayor
+49
+
+para estudiantes de bajo rendimiento y decrece conforme avanzamos en la distribucio´n. Todos los resultados anteriores muestran que explorar otros puntos de la distribucio´n aporta informacio´n relevante en temas de educacio´n y proporcionan una mejor perspectiva de co´mo se encuentra conformado el Sistema Educativo Mexicano.
+5.3. Descomposicio´n Independiente
+Uno de las limitaciones de la metodolog´ıa propuesta por Altonji, Bharadwaj, & Lange (2008) es que es dependiente del orden que elegimos. En su art´ıculo sugieren que la eleccio´n del orden de la descomposicio´n se debe elegir con base en argumentos econo´micos y la descomposicio´n de la seccio´n anterior se eligio´ siguiendo la literatura de los modelos jera´rquicos en educacio´n (Backhoff, Bouzas, Contreras, Herna´ndez, & Garc´ıa, 2007). El orden propuesto es: caracter´ısticas individuales, caracter´ısticas del hogar, factores escolares y factores institucionales. La propuesta cla´sica, para resolver el problema de dependencia en el orden, es tomar el orden inverso de la descomposicio´n elegida. En este caso, la descomposicio´n inversa ser´ıa: Institucionales, Escuela, Hogar y Estudiantes. Sin embargo, existe un problema con la descomposicio´n: el impacto de las variables a nivel hogar sobre las caracter´ısticas individuales impide cambiar primero la distribucio´n de caracter´ısticas del hogar y despue´s las caracter´ısticas individuales. Por ello, el presente trabajo propone dos enfoques para resolver la dependencia de la descomposicio´ n.
+En la primera etapa, el primer enfoque estima todas las descomposiciones posibles donde las caracter´ısticas individuales se cambian antes que las caracter´ısticas del hogar. Existen 12 descomposiciones va´lidas bajo este enfoque.1 El segundo enfoque considera
+1(Escuela, Individual, Hogar, Institucional) es un ejemplo de descomposicio´n va´lida mientras que (Hogar, Individual, Institucional, Escuela) es una descomposicio´n no va´lida.
+50
+
+las caracter´ısticas individuales y del hogar como un so´lo grupo, reduciendo los grupos de variables a tres (Individuales, Escuela e Institucionales) y estimando las seis combinaciones posibles para la descomposicio´n. En una segunda etapa, se calcula el promedio de las contribuciones en cada descomposicio´n y el resultado provee una mejor idea de la magnitud de la contribucio´n independiente del orden.
+La Tabla 5.3 resume las contribuciones de cada grupo sobre la brecha de caliﬁcaciones entre estudiantes de escuelas privadas y pu´ blicas bajo el primer enfoque. Si comparamos estos resultados con los obtenidos en la descomposicio´n original (Individual, Hogar, Escuela, Institucional) la mayor´ıa de los resultados se mantienen con la diferencia de que los factores escolares tienen un peso mayor. El primero es que la contribucio´n de los factores escolares y caracter´ısticas del hogar decrece respecto al desempen˜ o de los estudiantes, para estudiantes de bajo rendimiento (percentil 10) la contribucio´n de los factores escolares y caracter´ısticas del hogar es de 41.50 % y 33.80 %, respectivamente, mientras que para estudiantes ubicados en la parte alta de la distribucio´n (percentil 90) el efecto se reduce a 22 % y 14.81 %. El segundo esta relacionado con la magnitud de la contribucio´n de las caracter´ısticas individuales de estudiantes de bajo rendimiento (percentil 10) en comparacio´n con otro tipo de estudiantes. En la Tabla 5.1 las diferencias del percentil 10 con el percentil 25, 50, 75 y 90 son 23 %, 30 %, 39 % y 27 %, respectivamente.2 En la Tabla 5.3 las diferencias son 20 %, 28 %, 37 % y 30 %, respectivamente. Por tanto, a pesar de que la contribucio´n de caracter´ısticas individuales en el percentil 10 cae a 0.02 % los dema´s percentiles se reducen en una magnitud similar.
+2Las diferencias se estimaron como IndividualesP25-IndividualesP10 y as´ı sucesivamente.
+51
+
+Tabla 5.3: Estad´ısticos de la Descomposicio´n
+Detallada Bajo el Primer Enfoque
+
+10 25 50 75 90 Media
+
+Individuales 0.02 % 20.10 % 28.24 % 37.22 % 30.63 % 26.94 %
+
+Hogar 33.80 % 42.37 % 31.32 % 29.75 % 14.81 % 28.26 %
+
+Escuela 41.50 % 34.16 % 23.86 % 26.04 % 22.37 % 26.14 %
+
+Institucionales 12.95 % -0.66 % 2.36 % 5.20 % 13.60 % 8.02 %
+
+Fuente: elaboracio´n propia usando base de datos del disen˜ o muestral de los Cuestionarios de Contexto 2008. Todos los resultados son ajustados por los pesos de la muestra.
+
+El tercer resultado es la contribucio´n de los factores institucionales en estudiantes ubicados en la cola de la distribucio´n (12.95 %-13.60 %), aunque, el signo negativo en estudiantes de bajo desempen˜ o obtenido en la Tabla 5.1 se pierde. El signo negativo de la contribucio´n en estudiantes de bajo rendimiento reﬂejaba la combinacio´n de un clima acade´mico ma´s complicado en escuelas privadas y el orden propuesto y, precisamente, la idea de estimar todos los posibles ordenamientos es eliminar esa dependencia en el orden, resultando en una contribucio´n positiva para los factores institucionales. Respecto a los percentiles de la parte media de la distribucio´n, se observa que las caracter´ısticas institucionales no son relevantes.
+La Tabla 5.4 contiene los resultados bajo el segundo enfoque. La Tabla 5.5 presenta los resultados de la Tabla 5.3 si se tomara´ a las caracter´ısticas del estudiantes y del hogar como una sola. Las tablas no presentan diferencias importantes y por tanto, las observaciones de los pa´rrafos anteriores, como el decaimiento de la contribucio´n de los factores escolares respecto al desempen˜ o, se mantienen. Es de sen˜ alar que la contribucio´n de las caracter´ısticas escolares, en la Tabla 5.4, a la brecha existente es ligeramente
+52
+
+mayor que los resultados obtenidos en las tablas anteriores.
+
+Tabla 5.4: Estad´ısticos de la
+Descomposicio´n Detallada Segundo Enfoque
+
+P10 P25 P50 P75 P90 Media
+
+Individuales 34.71 % 56.54 % 53.11 % 59.31 % 40.26 % 49.79 %
+
+Escuela 39.28 % 35.20 % 25.99 % 27.17 % 23.49 % 27.64 %
+
+Institucionales 14.28 % 3.37 % 5.48 % 10.18 % 16.61 % 10.92 %
+
+Fuente: elaboracio´n propia usando base de datos del disen˜ o muestral de los Cuestionarios de Contexto 2008. Todos los resultados son ajustados por los pesos de la muestra.
+
+Tabla 5.5: Estad´ısticos de la
+Descomposicio´n Detallada Agrupando Resultados de la Tabla 5.3
+
+P10 P25 P50 P75 P90 Media
+
+Individuales 33.83 % 62.47 % 59.55 % 66.97 % 45.44 % 55.20 %
+
+Escuela 41.50 % 34.16 % 23.86 % 26.04 % 22.37 % 26.14 %
+
+Institucionales 12.95 % -0.66 % 2.36 % 5.20 % 13.60 % 8.02 %
+
+Fuente: elaboracio´n propia usando base de datos del disen˜ o muestral de los Cuestionarios de Contexto 2008. Todos los resultados son ajustados por los pesos de la muestra.
+
+5.4. Diferencias en Retornos: McCrary et al. (2010)
+En la seccio´n 3.4 se discute una segunda posible explicacio´n para la brecha existente entre las escuelas privadas y pu´ blicas. De acuerdo con Leibbrandt, Levinsohn, & McCrary (2010) diferentes retornos sobre las caracter´ısticas observables podr´ıa causar la diferencia en caliﬁcaciones entre los grupos. Por ejemplo, se puede pensar que las escuelas privadas, al estar sujetas a competencia, ser´ıan ma´s eﬁcientes al utilizar los recursos escolares. En te´rminos matema´ticos estamos interesados en comprobar si m = l, donde m, l son las funciones de produccio´n educativa para escuelas pu´ blicas y privadas,
+
+53
+
+respectivamente. Es decir:
+
+Ppub = m(Zpub, ξpub)
+
+Ppriv = l(Zpriv, ξpriv).
+
+La Figura 5.3 resume los resultados obtenidos. La Figura 5.3a muestra la distribucio´n original de puntajes tanto de escuelas pu´ blicas como de escuelas privadas. La Figura 5.3b contiene la estimacio´n del contrafactual: ¿cua´l ser´ıa la distibucio´n de caliﬁcaciones de escuelas pu´ blicas si tuvieran los retornos de las caracter´ısticas observables de las escuelas privadas?. El contrafactual se encuentra descrito en la Ecuacio´n 3.18, y se compara con la distribucio´n original de caliﬁcaciones de escuelas pu´ blicas. De acuerdo con la Figura 5.3, se observa que el contrafactual de escuelas pu´ blicas no presenta cambios importantes cuando le imponemos los retornos de las escuelas privadas. Esto sugiere que la hipo´tesis de distintas formas de produccio´n no es suﬁcientemente valida para nuestro caso y apoya la explicacio´n de la diferencia en caliﬁcaciones v´ıa diferencia en caracter´ısticas observables. Una implicacio´n directa de este resultado es que el sistema de educacio´n privada y pu´ blica transforman los insumos en formas muy similares y el hecho de estar sujetos a competencia no repercute, de forma importante, en las caliﬁcaciones.
+
+54
+
+P420-D.4213úureinbvntalsiacdidjaaeassddeEsHtaimbialidad Matemática
+
+Figura 5.3: Funcio´n de Densidad Estimada.
+4-CD.P024123uúoebnntlsiacridajaeafsadecnEtusHatailmbialidad Matemática
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+Densidad Estimada
+
+.2
+
+Densidad Estimada
+
+.1
+
+.1
+
+0
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje de Habilidad Matemática
+
+Públicas
+
+Privadas
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje en Habilidad Matemática
+
+Contrafactual
+
+Públicas
+
+(a) Densidades Originales
+
+(b) Contrafactual Estimado
+
+Fuente: elaboracio´n propia utilizando datos de los cuestionarios de contexto de la prueba ENLACE 2008 para habilidad matema´tica. El contrafactual estimado es: ¿co´mo se distribuyen las caliﬁcaciones de los estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de puntajes de los estudiantes de escuelas privadas?. Grupo de comparacio´n: escuelas pu´ blicas. Las funciones de densidad estimadas usan el Kernel de Epanechnikov y el bandwidth propuesto por Silvermann (1986)
+
+En la Figura 5.3b tambie´n se puede observar que el contrafactual se encuentra ligeramente ubicado a la izquierda de la distribucio´n de escuelas pu´ blicas. El contrafactual estimado tiene una media de -.1072 mientras que la distribucio´n de escuelas pu´ blicas tiene una media de -0.0501 corroborando la u´ ltima aﬁrmacio´n. Esto indica que, a pesar de no presentar cambios importantes, los estudiantes de escuelas pu´ blicas son un poco ma´s eﬁcientes al transformar los insumos disponibles. El resultado concuerda con las observaciones hechas por Duncan & Sandy (2007).
+
+55
+
+5.5. El Impacto del Pasado
+En una serie de art´ıculos, Heckman y coautores describen el rol de las habilidades cognitivas y no cognitivas, en el desarrollo futuro de la persona, y explican co´mo diferencias que se forjan a una edad temprana en este tipo de habilidades son ma´s dif´ıciles de cerrar (Heckman & Masterov, 2007; Heckman, 2008; Cunha, Heckman, Lochner, & Masterov, 2006). Tambie´n sen˜ alan la importancia de las inversiones a una temprana edad para erradicar estas diferencias y los problemas a resolver en su disen˜ o e implementacio´n. En este sentido, la metodolog´ıa desarrollada en el presente trabajo nos permite hacer una extensio´n para analizar la propuesta de Heckman & Masterov (2007); Heckman (2008); Cunha, Heckman, Lochner, & Masterov (2006) . Reclasiﬁcaremos las caracter´ısticas de los estudiantes en dos tipos: caracter´ısticas presentes y caracter´ısticas pasadas.3 Posteriormente se aplico´ la descomposicio´n de Altonji, Bharadwaj, & Lange (2008) para medir la contribucio´n de las variables pasadas sobre la brecha en caliﬁcaciones.
+La Figura 5.4 presenta los resultados obtenidos de la descomposicio´n. La Figura 5.4a compara el contrafacutal “¿cua´l ser´ıa la distribucio´n de caliﬁcaciones de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas pasadas de estudiantes de escuelas privadas?” y la distribucio´n original de caliﬁcaciones de estudiantes de escuelas pu´ blicas. Se oberva que el contrafactual estimado se localiza a la derecha de la distribucio´n original indicando que existe una mejora en las caliﬁcaciones de los estudiantes de escuelas pu´ blicas. En la Figura 5.4b, se presenta el contrafactual: ¿cua´l es la distribucio´n de caliﬁcaciones de estudiantes en escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas pasadas y presentes de estudiantes de escuelas privadas? (l´ınea continua) y el contrafactual cambiando so´lo caracter´ısticas pasadas. De la Figura 5.4b se inﬁere que
+3Caracter´ısticas pasadas: Promedio en Educacio´n Primaria, Tipo de Escuela Primaria, Promedio en Educacio´n Secundaria, Tipo de Escuela Secundaria. Caracter´ısticas Presentes: Nu´ mero de Horas en Clases de Matema´ticas, Sexo, Fumar, Beber, Trabaja y Aspiraciones del Estudiante.
+56
+
+las caracter´ısticas relacionadas con el presente de los estudiantes no contribuyen de forma importante a la brecha existente en caliﬁcaciones.
+
+204P-D.1243úuaesbnnatlsiadcidjaeasdenEsHtaimbialidad Matemática
+
+Figura 5.4: Funcio´n de Densidad Estimada.
+240.-PDIn1423uaedsnniavtsadiiddjoeuaadelenEssHtaimbialidad Matemática
+
+.4
+
+.4
+
+.3
+
+.3
+
+.2
+
+Densidad Estimada
+
+.2
+
+Densidad Estimada
+
+.1
+
+.1
+
+0
+
+0
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje en Habilidad Matemática
+
+Públicas
+
+Pasadas
+
+-4
+
+-2
+
+0
+
+2
+
+4
+
+Puntaje en Habilidad Matemática
+
+Pasado
+
+Individuales
+
+(b) Contribucio´n de Caracter´ısticas Presentes
+
+Fuente: elaboracio´n propia utilizando datos de los cuestionarios de contexto de la prueba ENLACE 2008 para habilidad matema´tica. El contrafactual estimado es: ¿co´mo se distribuyen las caliﬁcaciones de los estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas relacionadas con el pasado de los estudiantes de estudiantes de escuelas privadas?.
+
+En nu´ meros, cambiar so´lo las caracter´ısticas relacionadas con el pasado del estudiante implica un aumento de 0.1 desviaciones esta´ndar sobre la media de caliﬁcaciones de estudiantes de escuelas pu´ blicas4 mientras que incluir las caracter´ısticas presentes reduce el nu´ mero en 0.01 desviaciones esta´ndar sobre la media, comprobando la pequen˜ a contribucio´n de las caracter´ısticas presentes a la diferencia existente. La gran contribucio´n del pasado de los estudiantes sobre la brecha en caliﬁcaciones comprueba las ideas propuestas por Heckman & Masterov (2007); Heckman (2008); Cunha, Heck-
+40.09 desviaciones esta´ndar la contribucio´n de las caracter´ısticas individuales en la descomposicio´n detallada con el modelo jera´rquico
+57
+
+man, Lochner, & Masterov (2006). En el 2009, el gasto por alumno para Educacio´n Primaria, Educacio´n Secundaria y
+Bachillerato fue de 12.2, 18.7 y 25.7 miles de pesos, respectivamente.5 Los resultados de esta seccio´n sugieren una mayor atencio´n durante los primeros an˜ os de educacio´n y con el objetivo de, que un gasto por alumno ma´s equitativo en Educacio´n Primaria y Educacio´n Secundaria sin descuidar los niveles posteriores, ayudar´ıa a cerrar la brecha en caliﬁcaciones, en un futuro, entre estudiantes de escuelas privadas y pu´ blicas.
+5.6. Implicaciones de Pol´ıtica Pu´blica
+La Evaluacio´n Nacional del Logro Acade´mico en Centros Escolares es una fuente valiosa de informacio´n y provee un panorama general del Sistema Educativo Mexicano. Los resultados presentados en las secciones anteriores complementan la informacio´n disponible y generan un margen para el disen˜ o de pol´ıticas pu´ blicas.
+El hecho de que las diferencias en recursos escolares contribuyan de forma importante a la diferencia en caliﬁcaciones en estudiantes de bajo rendimiento (18 %-40 %) es evidencia de la importancia de este grupo sobre el desempen˜ o escolar para este tipo de estudiantes. Lo anterior sugiere que los programas con el objetivo de mejorar la infraestructura escolar, como el Programa Escuelas de Calidad (PEC) en Educacio´n Ba´sica, deben destinarse a escuelas donde la proporcio´n de estudiantes con bajo rendimiento es mayor. Las pol´ıticas pu´ blicas para mejorar las condiciones familiares de los estudiantes se topa con problemas tanto el disen˜ o como su implementacio´n pues implica modiﬁcar el comportamiento de los familias. Sin embargo, debido a la importancia de estos factores sobre el desempen˜ o de los estudiantes ubicados en el percentil 10 (40 %) no se
+5SEP (2010): Principales Cifras Ciclo Escolar 2008-2009
+58
+
+pueden ignorar. El nu´ mero de libros en el hogar se utiliza para aproximar la importancia de la educacio´n en el hogar. Una mayor participacio´n de los padres en actividades escolares ser´ıa un buen comienzo para mejorar las condiciones familiares en el corto plazo.
+Para estudiantes de alto desempen˜ o, los recursos escolares decrecen en importancia y son los factores institucionales los que adquieren relevancia. Dado el conjunto de variables incluidas, un programa educativo enfocado a mejorar el clima escolar es el ma´s adecuado para escuelas con un buen desempen˜ o escolar. Para lograr ese objetivo es necesario mejorar las relaciones entre los profesores y estudiantes y lograr una mayor integracio´n de los estudiantes a actividades acade´micas. Como un segundo objetivo, la implementacio´n de programas educativos ma´s ambiciosos ayudar´ıa a mejorar el factor de exigencia en las escuelas y por tanto afectando el desempen˜ o escolar de los estudiantes en una forma positiva.
+Respecto a la contribucio´n de los factores relacionados con el pasado acade´mico del estudiante, las estimaciones sen˜ alan la importancia de inversiones tempranas en la educacio´n. En este sentido, el desarrollo de programas como Escuelas de Calidad (PEC) y Escuela Segura (PES) es adecuado e indispensable para mejorar el desempen˜ o escolar. As´ı mismo, es necesario revisar si los programas no sufren de disyuntiva entre sus objetivos teo´ricos y su implementacio´n pues, de acuerdo a Hanushek (2003), esto podr´ıa ser la causa de los bajos impactos que presentan sobre los puntajes obtenidos por los estudiantes. Tambie´n es necesario analizar el Sistema de Educacio´n Ba´sica con mayor detalle, en vista de obtener resultados que permitan mejorar la focalizacio´n de los programas a este nivel, mejorar su eﬁciencia y con ello mejorar los resultados de los estudiantes a largo plazo.
+59
+
+Cap´ıtulo 6
+Conclusiones
+El objetivo es analizar la diferencia en caliﬁcaciones, entre estudiantes de escuelas pu´ blicas y escuelas privadas, utilizando los resultados de la Evaluacio´n Nacional del Logro Acade´mico en Centros Escolares para Educacio´n Media Superior. La metodolog´ıa utilizada permite estimar la distribucio´n de caliﬁcaciones de estudiantes de escuelas pu´ blicas si tuvieran la distribucio´n de caracter´ısticas observables de estudiantes de escuelas privadas y, al estimar funciones de densidad, permite analizar de forma natural otros puntos en la distribucio´n distintos a la media.
+El primer resultado de la investigacio´n es que las caracter´ısticas observables logran explicar el 88 % de la diferencia media en caliﬁcaciones y tal porcentaje es mayor en los percentiles 25 y 75 (97 %-95 %). La parte de la diferencia no explicada gracias a las caracter´ısticas no observables corresponde a una aproximacio´n del beneﬁcio real de estudiar en las escuelas privadas. Gracias al tipo de variables que incluimos el beneﬁcio se debe a factores como la competencia en el mercado o mayor grado de libertad para resolver problemas. Los estudiantes de los percentiles 10, 50 y 90 son aquellos en donde el beneﬁcio de estudiar en una escuela privada es mayor (12 %-20 %). Para estudiantes del percentil 25 y 75 el beneﬁcio es menor (3 %-5 %).
+60
+
+Posteriormente, la parte que se logra explicar por las diferencias en caracter´ısticas observables se desagrego´, utilizando la metodolog´ıa desarrollada por Altonji, Bharadwaj, & Lange (2008), en las contribuciones de cuatro grupos que la literatura econo´mica considera relevante para explicar el desempen˜ o de los estudiantes en pruebas estandarizadas: caracter´ısticas individuales, caracter´ısticas del hogar, recursos escolares y factores institucionales. En la media, las caracter´ısticas del estudiantes explican el 43 % y las caracter´ısticas del hogar 36 % de la diferencia mientras los recursos escolares y los factores institucionales so´lo contribuyen en 7 % y 3 %, respectivamente y se encuentran en l´ınea con los resultados reportados por la literatura. No obstante, la contribucio´n de cada grupo var´ıa respecto al rendimiento del estudiante. En estudiantes de bajo rendimiento (percentil 10), los grupos relevantes son las caracter´ısticas del hogar y recursos escolares que contribuyen en un 62 % y 18 % , respectivamente, a la diferencia en caliﬁcaciones. En cuanto a los factores institucionales, su contribucio´n es negativa (-9 %) y se argumenta que podr´ıa reﬂeja un clima acade´mico ma´s complicado de las escuelas privadas en ciertos aspectos. A pesar del signo negativo, es necesario notar que en valor absoluto la contribucio´n es importante. En cambio, las diferencias en factores institucionales y caracter´ısticas del hogar son ma´s importantes para explicar la diferencia en caliﬁcaciones en estudiantes de alto rendimiento (percentil 90).
+Dado que la descomposicio´n propuesta por Altonji, Bharadwaj, & Lange (2008) depende del orden, en la Seccio´n 5.3 se presentan dos enfoques para obtener contribuciones independientes del orden. Bajo estos enfoques, la importancia de los factores institucionales en estudiantes de alto y bajo rendimiento se mantiene junto con otros resultados como la relacio´n negativa entre los factores escolares y el puntaje. Por otro lado, con excepcio´n de los estudiantes de bajo rendimiento, la importancia de las caracter´ısticas individuales en la diferencia en caliﬁcaciones es innegable en la primera descomposicio´n y bajo los dos enfoques. Por ello, siguiendo las ideas propuestas por Heckman & Masterov (2007), en la Seccio´n 5.4 se analiza la contribucio´n de los factores
+61
+
+relacionados con el pasado de los estudiantes. Los resultados indican que la diferencia en factores relacionados con el pasado acade´mico logran explicar pra´cticamente toda la contribucio´n de las caracter´ısticas individuales a la diferencia en caliﬁcaciones (110 %) y por tanto, sen˜ alan la importancia de una mejor calidad educativa durante los primeros an˜ os de estudios.
+En te´rminos de pol´ıticas pu´ blicas, los resultados inducen un margen para la implementacio´n de programas ma´s focalizados. Un programa destinado a mejorar los recursos escolares ser´ıa ma´s adecuado para escuelas con una mayor proporcio´n de estudiantes de bajo rendimiento Para escuelas con un buen desempen˜ o lo indicado es un programa encargado de mejorar los factores institucionales, es decir, mejorar la relacio´n profesor-estudiante, estar sujetos a mayores evaluaciones o programas de estudios ma´s avanzados (mayor exigencia).
+En conclusio´n, se exhibe evidencia de que las escuelas privadas son mejores que las escuelas pu´ blicas. Sin embargo, las estimaciones indican que so´lo un 5 %-20 % de las diferencias en caliﬁcaciones se puede interpretar como un verdadero beneﬁcio. El resto de las estimaciones sen˜ alan la importancia de estudiar los determinantes del desempen˜ o escolar bajo la idea de que no todos los estudiantes son iguales. Omitir este hecho podr´ıa causar la pe´rdida de una fuente valiosa de informacio´n e importante para el disen˜ o de pol´ıticas pu´ blicas. En temas de educacio´n, la falta de informacio´n no esta´ permitida, pues el costo futuro tanto social como econo´mico puede ser ma´s que considerable.
+62
+
+Bibliograf´ıa
+ALTONJI, J. G., P. BHARADWAJ, & F. LANGE (2008): “Changes in the Characteristics of American Youth: Implications for Adult Outcomes,” Discussion Paper 13883, National Bureau of Economic Research.
+ALVARE´Z, J., V. GARC´IA-MORENO, & H. PATRINOS (2007): “Institutional Effects as Determinants of Learning Outcome: Exploring State Variations in Mexico,” Working Paper 4286, The Wold Bank.
+ANGRIST, J., & V. LAVY (1999): “Using Maimonides’ Rule to Estimate the Effect of Class Size on Scholastic Achievement,” Quaterly Journal of Economics, 114, 533–575.
+BACKHOFF, E., A. BOUZAS, C. CONTRERAS, E. HERNA´ NDEZ, & M. GARC´IA (2007): “Factores Escolares y Aprendizaje en Me´xico: El Caso de la Educacio´n Ba´sica,” Discussion paper, Instituto Nacional para la Evaluacio´n de la Educacio´n.
+BEDI, A. S., & A. GARG (2000): “The Effectiveness of Private Versus Public Schools: the Case of Indonesia,” Journal of Development Economics, 61, 463–494.
+BETTINGER, E. P. (2005): “The Effect of Charter Schools on Charter Students and Public Schools,” Economics of Education Review, 24, 133–147.
+CARD, D. (1993): “Using Geographic Variation in College Proximity to Estimate the Return to Schooling,” Working Paper 4483, National Bureau of Economic Research. 63
+
+CARD, D., & A. KRUEGER (1990): “Does School Quality Matter? Returns to Educaction and the Characteristics of Public School in the United States,” Discussion Paper 3358, National Bureau of Economic Research.
+CUNHA, F., J. J. HECKMAN, L. LOCHNER, & D. V. MASTEROV (2006): “Chapter 12 Interpreting the Evidence on Life Cycle Skill Formation,” vol. 1 of Handbook of the Economics of Education, pp. 697 – 812. Elsevier.
+DE GREGORIO, J., & J. LEE (2003): “Growth and Adjusment in East Asia and Latin America,” Working Papers 245, Central Bank of Chile.
+DE HOYOS, R., J. ESPINO, & V. GARC´IA (2010): “Determinantes del Logro Escolar en Me´xico: Primeros Resultados Utilizando la Prueba ENLACE Media Superior,” Discussion paper, Secretar´ıa de Educacio´n Media Superior.
+DEARDEN, L., J. FERRI, & C. MEGHIR (2002): “The Effect of School Quality on Educactional Attainment and Wages,” The Review of Economics and Statistics, 84(1), 1–20.
+DINARDO, J., N. M. FORTIN, & T. LEMIEUX (1996): “Labor Martket Institutions and the Distributions of Wages, 1973-1992: A Semiparametric Approach,” Econometrica, 64(5), 1001–1044.
+DINARDO, J., & J. L. TOBIAS (2001): “Nonparametric Density and Regression Estimation,” Journal of Economic Perspectives, 15(4), 11–28.
+DUNCAN, K., & J. SANDY (2007): “Explaining the Performance Gap Between Public and Private School Students,” Eastern Economic Journal, 33(2), 177–191.
+EVERS, M., R. D. MOOIJ, & D. V. VUUREN (2008): “The Wage Elasticity of Labour Supply: A Synthesis of Empirical Estimates,” The Economist, 156(1), 25–43.
+64
+
+FIRPO, S., N. M. FORTIN, & T. LEMIUX (2009): “Unconditional Quantile Regressions,” Econometrica, 77(Unconditional Quantile Regressions), 953–973.
+FORTIN, N., T. LEMIUX, & S. FIRPO (2010): “Decomposition Methods in Economics,” Working Paper 16045, National Bureau of Economic Research.
+FUCHS, T., & L. WOESMANN (2004): “What Accounts for International Differences in Student Performance? A Re-examination Using PISA Data,” Working Paper 1235, Ifo Institute for Economic Research.
+GRADDY, K., & M. STEVENS (2005): “The Impact of School Resources on Student Performance: A Study of Private Schools in the United Kingdom,” Industrial and Labor Relations Review, 58(2), 435–451.
+GUICHARD, S. (2005): “The Education Challenge in Mexico: Delivering Good Quality Education to All,” Working Paper 447, Organisation for Economic Co-operation and Devolepment.
+HANUSHEK, E. (2003): “The Failure of Input-Based Schooling Policies,” The Economic Journal, 113, 64–98.
+HECKMAN, J. J. (1974): “Shadow Prices, Market Wages, and Labor Supply,” Econometrica, 47(1), 153–161.
+(2008): “Schools, Skills, and Synapses,” Economic Inquiry, 46(3), 289–324.
+HECKMAN, J. J., & D. V. MASTEROV (2007): “The Productivity Argument for Investing in Young Children,” Working Paper 13016, National Bureau of Economic Research.
+HIRANO, K., G. W. IMBES, & G. RIDDER (2003): “Efﬁcient Estimation of Average Treatment Effects Using the Estimated Propensity Score,” Econome, 71(4), 1161–1189.
+65
+
+HOLLAND, P. (1986): “Statistics and Causal Inference,” Journal of the American Statistical Association, 81(396), 945–960.
+KANG, C. (2007): “Does Money Matter? The Effect of Private Educational Expenditures on Academic Performance,” Departmental working papers, National University of Singapore, Department of Economics.
+KRAMARZ, F., S. MACHIN, & A. OUAZAD (2009): “What Makes a Test Score? The Respective Contrbutions of Pupils, Schools and Peers in Achievement in English Primary Education,” Discussion paper, Centre for the Economics of Education.
+LEIBBRANDT, M., J. A. LEVINSOHN, & J. MCCRARY (2010): “Income in South Africa after the Fall of Apartheid,” Journal of Globalization and Development, 1(1), Art´ıculo 2.
+LEMIUX, T. (2010): “Decomposing Changes in Wage Distributions: A Uniﬁed Approach,” Canadian Journal of Economics, 35(4), 646–688.
+LLERAS-MUNEY, A. (2005): “The Relationship Between Education and Adult Mortality in the United States,” Review of Economic Studies, 72(1), 189–221.
+LOCHNER, L., & E. MORETTI (2004): “The Effect of Education on Crime: Evidence from Prison Inmates, Arrests, and Self-Reports,” The American Economic Review, 94(1), 155–189.
+MACHIN, S. (2008): “The New Economics of Education: Methods, Evidence and Policy,” Journal of Population Economics, 21, 1–19.
+MCEWAN, P. J. (2004): “Indigenous Test Score Gap in Bolivia and Chile,” Economic Development and Cultural Change, 53(2), 157–190.
+MROZ, T. A. (1987): “The Sensitivity of an Emperical Model of Married Women’s Hours of Work to Economics and Statical Assumptions,” Econometrica, 55(4), 765–799.
+66
+
+OECD (2010): Pisa 2009 Results: Executive Summary. Organisation for Economic Cooperation and Development.
+PARZEN, E. (1962): “On Estimation of a Probabilidy Density Function and Mode,” The Annals of Mathematical Statistics, 33, 1065–1076.
+PETERSON, P., & E. LLAUDET (2006): “On the Public-Private School Achievement Debate,” Discussion paper, American Political Science Association.
+RIVKIN, S. G., E. HANUSHEK, & J. F. KAIN (2005): “Teachers, Schools and Academic Achievement,” Econometrica, 73(2), 417–458.
+ROSENBLATT, M. (1956): “Remarks on Some Non-parametric Estimates of a Density Function,” The Annals of Mathematical Statistics, 27, 832–837.
+SEP (2010): Principales Cifras Ciclo Escolar 2008-2009. Secretar´ıa de Educacio´n Pu´ blica. SILVERMAN, B. (1986): Density Estimation for Statistics and Data Analysis. Chapman &
+Hall. SOHN, K. (2010): “A New Insight into the Gender Gap in Math,” Bulletin of Economic
+Research, 63. VANDENBERGHE, V., & S. ROBIN (2004): “Evaluating the effectiveness of private educa-
+tion across countries: a comparison of methods,” Labour Economics, 11(4), 487 – 506, European Association of Labour Economists 15th Annual Conference, Universidad Pablo de Olavide, Seville, 18-21 September 2003. WEBBINK, D. (2005): “Causal Effects in Education,” Journal of Economic Surveys, 19, 536– 560.
+67
+
+WOESMANN, L. (2000): “Schooling Resources, Educational Institutions, and Student Performance: The International Evidence,” Working Paper 983, Kiel Institute of World Economics.
+WORLD BANK (2010): Education Data http://data.world.org/topic/education. YAMAUCHI, F. (2005): “Why Do Schooling Returns Differ? Screening, Private Schools,
+and Labor Markets in the Philippines and Thailand,” Economic Development and Cultural Change, 53(4), 959–981.
+68
+
+Ape´ndice A
+Diversos
+Para el trabajo la mayor parte de las variables que se utilizaron en la implementacio´n emp´ırica son las respuestas originales. Algunas variables se construyeron para obtener una respuesta menos detallada y a continuacio´n se describe su construccio´n:
+Fumar. En el cuestionario de contexto se les pregunta a los estudiantes “¿Cua´ntos d´ıas a la semana fumas?”. Se considero que el estudiante fumaba si al menos un d´ıa de la semana realizaba la actividad. Beber. La pregunta original es “¿Cua´ntos d´ıas a la semana ingieres bebidas alcoho´licas?”. Se considero que un estudiante beb´ıa si al menos un d´ıa a la semana inger´ıa bebidas alcoho´licas.
+En el seccio´n 3.2 se describe la estrategia emp´ırica para implementar la metodolog´ıa desarrollada por DiNardo, Fortin, & Lemieux (1996). En la Tabla A.1 se presentan los coeﬁcientes del modelo logit utilizado para estimar P (priv|zi).
+
+Tabla A.1: Modelo Logit Estimado para Calcular Pesos Φ(z)
+
+Sexo Fuma Bebe Trabaja Secundaria Privada Aspiraciones Te´cnico Universitario Licenciatura Posgrado Primaria Privada Promedio Primaria 6.5-6.9 7.0-7.4 7.5-7.9 8.0-8.4 8.5-8.9 9.0-9.4 9.5-9.9 10 Horas de Matema´ticas 1 2 3 4 5 6 7 Promedio Secundaria 6.5-6.9 7.0-7.4 7.5-7.9 8.0-8.4 8.5-8.9 9.0-9.4 9.5-9.9 10
+
+0.2650*** 0.2778*** 0.2928*** -0.2989*** 2.3194
+-0.0368 0.1744 0.2633** 0.0336*
+-0.0946 -0.0449 -0.1470 -0.2244 -0.1904 -0.3467 -0.5066 -0.3151
+0.1845** 0.2014* -0.7102*** 0.0967 -1.0476*** -1.0436*** -0.0775
+-0.3619*** -0.4359*** -0.5036*** -0.6239*** -0.7342*** -0.8125*** -0.9730*** -0.9278***
+
+Estudios Madre No estudio´ Primaria Secundaria Preparatoria Carrera Te´cnica Licenciatura Estudios Padre No estudio´ Primaria Secundaria Preparatoria Carrera Te´cnica Licenciatura Computadora Piso Libros en Casa Ninguno 1 a 10 0 11 a 25 26 a 50 51 a 100 101 a 200 201 a 500 Nu´mero de Cuartos 0 1 2 3 4 5 6
+
+-0.4494*** -0.3993*** -0.2628*** -0.1993** -0.1392* -0.0453
+-0.3777 -0.3873** -0.2776*** 0.715x10−6 -0.0758 -0.0336 0.3005*** 0.7399***
+-0.1296 0.2431** 0.0217 0.0947 0.0680 0.1202 0.1180
+-0.8761*** -0.6224*** -0.5021*** -0.3223*** -0.2282*** -0.1488* -0.1219
+
+Estudios de Profesores Bachillerato Normal Superior Pedagog´ıa Licenciatura Posgrado Estado de los Laboratorios S´ı son suﬁcientes No son suﬁcientes Internet Examen Oposicio´n Asociaciones Estudiantiles PISA Porros Huelgas Tutor´ıas Estudiantes-Profesores Buena Excelente Estudios Director Bachillerato Normal Superior Pedagog´ıa Licenciatura Especialidad Maestr´ıa Doctorado Exigencia Escolar Exigente Muy Exigente Vigilancia
+
+-1.1876 -3.6948*** -1.8558* -3.4879*** -3.1782***
+-0.0454 -1.6510*** -0.8427*** 0.2159*** 0.7562*** 0.3524*** 2.4553*** -0.5314*** 0.9664***
+2.0665*** 3.3257***
+2.8328*** 1.4277*** 1.1624*** 0.7343*** 1.3933*** 0.9167*** 1.6031***
+0.7141*** 1.2438*** -0.5837***
+
+Fuente: elaboracio´n propia usando base de datos del disen˜ o muestral de los Cuestionarios de Contexto 2008. Todos los resultados son ajustados por los pesos de la muestra.
+
+70
+
+´Indice de cuadros
+4.1. Diferencias en Caliﬁcaciones entre Escuelas Privadas y Pu´ blicas: Base Original y Base Construida. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+4.2. Caliﬁcaciones Medias por Estado en Habilidad Matema´tica . . . . . . . . . . . . 28 4.3. Caliﬁcaciones Medias por Estado en Habilidad Lectora . . . . . . . . . . . . . . 29 4.4. Diferencias en Puntajes sobre Caracter´ısticas Individuales . . . . . . . . . . . . 34 4.5. Diferencias en Puntaje sobre Caracter´ısticas del Hogar . . . . . . . . . . . . . . 35 4.6. Diferencias en Puntajes sobre Caracter´ısticas de la Escuela . . . . . . . . . . . . 36 4.7. Diferencias en Puntajes sobre Caracter´ısticas Institucionales . . . . . . . . . . . 37 4.8. Diferencias en Caracter´ısticas Observables entre Privada y Pu´ blicas . . . . . . . 39 4.9. Variables Incluidas en el Modelo Logit . . . . . . . . . . . . . . . . . . . . . . . 40 5.1. Descomposicio´n Detallada Original . . . . . . . . . . . . . . . . . . . . . . . . 45 5.2. Diferencia entre Privadas y Pu´ blicas en Factores Institucionales en el Percentil 10 49 5.3. Descomposicio´n Detallada con Caracter´ısticas Individuales antes que Familiares 52 5.4. Descomposicio´n Detallada Agrupando Caracter´ısticas Individuales y Familiares . 53
+71
+
+5.5. Descomposicio´n Detallada Agrupando Caracter´ısticas Individuales y Familiares de la Tabla 5.3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+A.1. Modelo Logit Estimado para Calcula Pesos Φ(z) . . . . . . . . . . . . . . . . . . 70
+72
+
+´Indice de ﬁguras
+4.1. Funciones de Densidad Originales por Sostenimiento . . . . . . . . . . . . . . . 30 4.2. Funciones de Densidad de Puntajes por Estado y Sostenimiento . . . . . . . . . 32 5.1. Contribucio´n de las Caracter´ısticas Observables . . . . . . . . . . . . . . . . . . 42 5.2. Descomposicio´n Detallada en Caracter´ısticas Individuales, Caracter´ısticas Fa-
+miliares, Recursos Escolares y Factores Institucionales . . . . . . . . . . . . . . . 44 5.3. Diferencias en Funciones de Produccio´n McCrary et al. (2010) . . . . . . . . . . 55 5.4. Descomposicio´n de Caracter´ısticas Individuales en Factores del Pasado y Facto-
+res del Presente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+73
+
+

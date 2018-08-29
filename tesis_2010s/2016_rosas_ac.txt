@@ -1,0 +1,1796 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EL FONDO DE INFRAESTRUCTURA SOCIAL MUNICIPAL (FISM) Y SUS EFECTOS SOBRE
+EL BIENESTAR SOCIAL EN 2005-2010: UNA APROXIMACIÓN A LA EFICACIA SOCIAL
+DEL GASTO FEDERALIZADO EN MÉXICO ALEJANDRO CÉSAR ROSAS GUERRERO
+PROMOCIÓN 1999-2001
+ASESOR:
+DR. CARLOS CHIAPA LABASTIDA
+ENERO 2016
+
+Agradezco a mi esposa Aleida, por su ejemplo de brillantez, fuerza y determinación.
+Agradezco a mis hijos, Andrea y Héctor, fuente infinita de inspiración y promesa de un futuro luminoso.
+i
+
+Resumen
+En este estudio se analizan los efectos del Fondo de Infraestructura Social Municipal (FISM) sobre el bienestar social en México en el periodo 2005-2010. Para ello se selecciona como variable de interés el Índice de Rezago Social (IRS) a nivel municipal que publica el CONEVAL cada cinco años, debido a que dicha variable resume información sobre un conjunto amplio de indicadores carenciales que perfilan las condiciones socioeconómicas de la población en los municipios del país. No obstante, hubo que lidiar con las propiedades estadísticas del IRS, pues al ser calculado mediante la técnica de componentes principales constituye una medición ordinal y por tanto los valores específicos obtenidos por un municipio determinado no son comparables en el tiempo. Esto hizo necesario construir una transformación del IRS en una medición cardinal que denominamos Índice de Rezago Social Absoluto (IRSA), que sí resulta susceptible de comparación en el tiempo y que permitió establecer para cada uno de los municipios del país un cambio de situación entre 2005 y 2010. El análisis de los datos permitió identificar una reducción significativa y generalizada del IRSA. Para analizar los posibles efectos del FISM sobre dicha variación se llevó a cabo un análisis de mínimos cuadrados ordinarios del cambio en el IRSA respecto a las asignaciones de recursos del FISM en términos reales, incluyendo diversas variables de control asociadas a otras fuentes de ingreso de las haciendas municipales, al grado de desarrollo institucional de los ayuntamientos, así como al tamaño de la población y el carácter rural o urbano de los municipios. Los resultados son sugerentes respecto a que el FISM explica en forma significativa los cambios en el bienestar social municipal, medido a través del IRSA. Es decir, que las transferencias a través de dicho fondo están asociadas consistentemente con la reducción del rezago social.
+ii
+
+Índice
+
+1. Introducción
+
+1
+
+2. La inversión de aportaciones federales para la infraestructura social:
+
+5
+
+alcances y limitaciones en el combate a la pobreza
+
+3. Objetivos, mecánica operativa e importancia del FAIS
+
+8
+
+4. Análisis previos sobre los resultados del FISM
+
+13
+
+5. Estrategia empírica
+
+17
+
+5.1 Medición absoluta del Rezago Social…….………………………………… 18
+
+5.2 Cálculo del IRSA 2005 y 2010……………………………………………….. 21
+
+5.3 Análisis por estratos………………….……………………………………….. 26
+
+5.4 Cambio absoluto del IRS………………….…………………….…………….. 28
+
+5.5 Especificación del modelo………………….……..………………………….. 28
+
+6. Resultados
+
+32
+
+7. Conclusiones
+
+39
+
+Apéndices
+
+41
+
+I. Catálogo de Obras y Acciones FAIS………………………………………….. 41
+
+II. Estadística descriptiva de las variables incluidas en el modelo…………. 46
+
+Referencias
+
+47
+
+Índice de tablas y gráficas
+
+48
+
+iii
+
+1. Introducción
+En los últimos 25 años el Estado Mexicano llevó a cabo un proceso de transferencia de responsabilidades en la provisión de servicios, de la federación hacia los gobiernos de los estados y municipios; comenzando en 1989 con la implementación del Programa Nacional de Solidaridad en materia de infraestructura social, pasando en 1992 por la federalización educativa mediante el “Acuerdo Nacional para la Modernización de la Educación Básica” y en 1996 por el Acuerdo Nacional para la Descentralización de Salud.1
+Este proceso ha estado acompañado de una asignación creciente de recursos federales hacia las haciendas públicas estatales y municipales, la cual ha crecido en forma constante e ininterrumpida año con año. Originalmente, las justificaciones para federalizar han apuntado hacia el logro de una mayor eficiencia, debido sobre todo a que se atribuye a los gobiernos locales un conocimiento directo de las necesidades reales de la población y por ende una mayor capacidad para la implementación de soluciones eficaces.
+Sin embargo, actualmente se mantiene en el país una problemática social que dista de resolverse y que se manifiesta principalmente en altos niveles de pobreza y desigualdad. Con ello se alimenta la percepción de que la federalización creciente del gasto no ha tenido beneficios sociales tangibles, sino que podría haber beneficiado principalmente a los agentes políticos locales, mediante la consolidación de estructuras de poder a partir de los recursos y facultades que se han obtenido a partir de la federalización.
+Por ello, resulta relevante analizar qué tanto los recursos que la federación transfiere a los gobiernos locales se traducen en beneficios sociales concretos. Esta es una pregunta que se formula de manera simple, pero contestarla a cabalidad implica realizar un ejercicio de gran alcance y alto grado de complejidad metodológica. Sin embargo, es posible comenzar realizando análisis que se concentren en evaluar la eficacia de algún aspecto o tramo específico del gasto federalizado, sobre todo en aquellos tramos en que el gasto conlleva la responsabilidad para los gobiernos locales de cumplir con ciertos objetivos preestablecidos.
+1 Ver López-Acevedo y Webb (2006).
+1
+
+Dentro del Ramo General 33 de Aportaciones Federales, el Fondo de Aportaciones para la Infraestructura Social (FAIS) tiene características que lo hacen idóneo para analizar los efectos o beneficios sociales del gasto federalizado: cuenta con recursos cuantiosos (2.5 por ciento de la recaudación participable); se ejecuta a nivel nacional por parte de estados y municipios, con el objetivo concreto, establecido por ministerio de Ley, de combatir la pobreza extrema y el rezago social; y el Gobierno Federal tiene asignado un papel de rectoría y direccionamiento del gasto.
+En este estudio se analizan los efectos sociales que pueden vincularse causalmente a la aplicación de los recursos del FAIS por parte de los gobiernos locales. Por razones que más adelante se especifican, el análisis se centra en el ámbito municipal a partir de una estrategia sencilla: vincular los recursos del Fondo de Infraestructura Social Municipal (FISM) con las variaciones en los niveles de rezago social de los municipios. El periodo de análisis abarca del año 2005 al 2010 debido a que para esos años se cuenta con datos sobre el rezago social municipal generados por el Consejo Nacional de Evaluación del Desarrollo Social (CONEVAL) a partir del conteo de población 2005 y el censo 2010.
+El CONEVAL publica cada cinco años el Índice de Rezago Social (IRS), mismo que obtiene a partir de un análisis de componentes principales, y en tal sentido constituye una medición ordinal que clasifica a los municipios en un arreglo decreciente según el resultado numérico obtenido a partir de una suma ponderada de 12 variables estandarizadas que reflejan carencias de los hogares y las personas. Por construcción, los resultados del IRS no son comparables en el tiempo, de modo que no es posible conocer la variación del rezago social para un municipio determinado restando simplemente al resultado de su IRS en 2010 el resultado en obtenido en 2005.
+Para realizar una medición válida de la variación en el rezago social se construye una medición cardinal a la que denominamos Índice de Rezago Social Absoluto (IRSA), tomando un método de transformación desarrollado por Cárdenas (2010) que a partir de un análisis de regresión del IRS respecto a las variables estandarizadas y utilizando la descomposición del coeficiente de determinación, estima un vector de ponderadores ajustados a partir de los cuales el IRSA se obtiene
+2
+
+como la suma ponderada de las mismas variables carenciales con que se calcula el IRS pero sin estandarizar. Este resultado ya resulta comparable en el tiempo.
+Resuelta ya la comparabilidad de los resultados de rezago social se calcula a nivel municipal la variación del IRSA entre 2005 y 2010, misma que será nuestra variable dependiente, y mediante un análisis de mínimos cuadrados se estima en forma robusta el grado en que el monto de recursos del FISM explica las variaciones en el IRSA a nivel municipal.
+Para esto último se especificó un modelo de regresión que incorpora el monto acumulado de recursos del FISM más un conjunto amplio de variables de control, asociadas a los recursos que se asignan por el Fondo de Aportaciones para el Fortalecimiento de los Municipios (FORTAMUN) población de los municipios, grado de ruralidad de los municipios, escenarios de apoyo político a los municipios por parte de la federación y el estado, la escolaridad de los presidentes municipales y la dinámica demográfica de las localidades rurales.
+Los resultados indican un efecto significativo de los recursos acumulados del FISM, en el sentido esperado y el cual es robusto a cambios en la especificación del modelo. Asimismo, al introducir las variables de control se encuentran efectos significativos de las variables que reflejan el apoyo político que la federación y el estado dan a los municipios gobernados por su mismo partido, así como de la escolaridad de los presidentes municipales y del grado de ruralidad de los municipios.
+El hallazgo de que el monto acumulado del FISM tiene una contribución significativa a la reducción del rezago social municipal es de suma relevancia, sobre todo considerando que en el periodo de análisis (2005-2010) el Gobierno Federal no había ejercido una rectoría fuerte sobre los recursos del fondo que se tradujera en un direccionamiento eficaz del gasto de los municipios hacia obras de infraestructura y acciones sociales directamente asociadas con las necesidades objetivas de la población.
+Lo anterior plantea una importante área de oportunidad para la política pública, pues es de esperarse que con un direccionamiento reforzado del gasto, adicional incluso al que estableció la Sedesol a partir de 2014, o bien con acciones coordinadas en los tres órdenes de gobierno
+3
+
+orientadas a la identificación de canastas óptimas de proyectos, se incremente la efectividad del FISM para abatir las condiciones de rezago social en los municipios del país.
+4
+
+2. La inversión de aportaciones federales para la infraestructura social: alcances y limitaciones en el combate a la pobreza
+Si bien el FAIS no está estructurado como un programa social, sí está regulado como un fondo que canaliza recursos federales cuantiosos para la ejecución de proyectos con arreglo a un objetivo definido con precisión en la Ley de Coordinación Fiscal (LCF),2 por lo cual tiene las características de un verdadero mecanismo de intervención pública que se orienta a la solución de un problema relevante para la sociedad que ésta no puede resolver por sí misma. Se trata además de un mecanismo de intervención que funciona a partir de la aplicación de recursos por parte de 2,471 instancias ejecutoras a nivel nacional entre estados y municipios, que tienen características heterogéneas en cuanto a extensión territorial, población, problemática social a resolver, partido político gobernante y grado de desarrollo institucional, entre otras.
+De este modo, la importancia de los montos de recursos federales involucrados y la complejidad práctica de la ejecución de éstos, hace relevante indagar en qué medida el mecanismo de intervención representa un uso adecuado del dinero público; es decir, si los objetivos de una política pública de alcance nacional que recibe fondos considerables año con año se cumplen y si con ello se mejoran las condiciones de vida de la población.
+El objetivo central del FAIS consiste en financiar inversiones que beneficien directamente a sectores de la población que se encuentren en condiciones de rezago social y pobreza extrema. Ahora bien, en las estadísticas nacionales la medición de rezago social que publica el CONEVAL está disponible cada cinco años a nivel municipal y consiste en un índice que resume información amplia acerca de las condiciones de vida de la población general en diversas dimensiones.3 Dicho índice tiene ventajas sobre la medición de pobreza extrema como variable de interés para establecer los resultados o efectos de los recursos del FAIS, pues a diferencia de ésta no se limita a reflejar la situación de un conjunto acotado de población que vive en peores condiciones que todos los
+2 Los recursos asignados al FAIS en 2015 corresponden a 58,383 millones de pesos, los cuales representan más del 50 por ciento del presupuesto de la SEDESOL en el mismo año.
+3 Ver infra, Tabla 1 p. 19.
+5
+
+demás, sino que tiene el potencial de medir cambios en las condiciones generales de vida de todos los segmentos de la población que vive en un determinado ámbito: localidad, municipio o estado.
+Adicionalmente, más del 85% de los recursos del FAIS son gastados por los municipios a través del subfondo denominado FISM, además de que la LCF establece que los municipios aplicarán los recursos del FISM en rubros de gasto que tienen un impacto directo en la vida cotidiana de las personas (agua potable, alcantarillado, drenaje y letrinas, urbanización, electrificación rural y de colonias pobres, infraestructura básica del sector salud y educativo, mejoramiento de vivienda y mantenimiento de infraestructura). Por tanto, el municipal constituye el ámbito relevante para detectar efectos asociados a las aportaciones federales para infraestructura social.
+No obstante, los municipios constituyen también el orden de gobierno con mayores limitantes para operar políticas públicas efectivas, en virtud de factores como el corto lapso que duran las administraciones municipales y a la no reelección de sus autoridades lo que, a falta de un servicio civil de carrera, limita su profesionalización y capacidad de gestión. Esto además de la histórica debilidad de las finanzas municipales y, en no pocos casos, su debilidad política frente a los gobiernos estatal o federal.
+En un primer examen de la situación parece haber buenas razones para proponer, al menos como hipótesis de trabajo, que las decisiones que toman los ayuntamientos acerca de los proyectos a financiar con los recursos del FISM no están orientadas en forma sistemática a resolver la problemática de pobreza extrema o rezago social de sus municipios. Esto se reflejaría necesariamente en una falta de efectos detectables de los recursos en los niveles de rezago social municipal.
+En este contexto, este análisis se propone medir los efectos de los recursos del FISM sobre el grado de rezago social de los municipios del país y con ello indagar si se identifican beneficios sociales significativos en uno de los fondos emblemáticos del federalismo mexicano de las últimas dos décadas del siglo XX y la primera del siglo XXI, lo cual permitiría caracterizar un área de oportunidad relevante para que el Gobierno Federal asuma una política más activa en el
+6
+
+direccionamiento del gasto de estados y municipios hacia canastas de proyectos relacionadas estrechamente con los rezagos específicos que enfrenta cada uno de ellos. Para llevar a cabo lo anterior se analizará si la última medición de rezago social municipal, que corresponde al año 2010, refleja o no un cambio respecto a la situación prevaleciente en la medición previa, que corresponde a 2005. Asimismo, se analizará el sentido del cambio y, utilizando información a nivel municipal, se estudiará si es posible vincular causalmente el cambio con los recursos del FISM transferidos a los municipios en ese periodo. Es decir, para establecer el grado de efectividad de los recursos del FISM se medirá el grado en que el flujo de recursos explica las probables variaciones en el grado de rezago social municipal.
+7
+
+3. Objetivos, mecánica operativa e importancia del FAIS
+El FAIS es uno de los ocho fondos que conforman el Ramo General 33 de Aportaciones Federales para entidades Federativas y Municipios. Éste, a su vez, es un ramo de gasto incorporado al Presupuesto de Egresos de la Federación por mandato de la LCF. El capítulo V de dicha Ley establece el fundamento jurídico de las aportaciones federales, el cálculo de los recursos que se transfieren bajo esta categoría a los estados y municipios, así como la organización de las aportaciones en fondos con características y objetivos específicos.
+En general, el gasto de los recursos que la Federación transfiere a las haciendas públicas de entidades federativas y municipios como aportaciones a través del Ramo 33 conlleva la obligación de dar cumplimiento a objetivos especificados en la LCF. En este sentido, se identifican como aportaciones federales condicionadas, a diferencia de los recursos correspondientes a las participaciones a entidades federativas, municipios y demarcaciones territoriales del Distrito Federal, las cuales se transfieren para el propósito general de fortalecer las finanzas públicas locales sin especificar condicionantes u objetivos a cumplir.
+Para el caso particular del FAIS las aportaciones se destinan al financiamiento de obras, acciones sociales básicas y a inversiones que beneficien directamente a sectores que se encuentren en condiciones de rezago social y pobreza extrema. Asimismo la propia LCF, en su texto que estuvo vigente hasta 2013, establecía el desdoblamiento del FAIS en dos subfondos: el FISM que tenía mandatado destinarse a los rubros de agua potable, alcantarillado, drenaje y letrinas, urbanización municipal, electrificación rural y de colonias pobres, infraestructura básica de salud, infraestructura básica educativa, mejoramiento de vivienda, caminos rurales, e infraestructura productiva rural y el Fondo de Infraestructura Social Estatal (FISE) que se destinaba a obras y acciones con alcance regional o intermunicipal.4
+4 La Ley de Coordinación Fiscal fue reformada en 2014, entre otras disposiciones, en aquellas relacionadas con la operación del FAIS. Dichas reformas estuvieron orientadas a fortalecer el papel de la SEDESOL en la rectoría de los objetivos del fondo y en el direccionamiento del gasto de los recursos por parte de los gobiernos locales. Entre los cambios principales destaca el facultamiento de la SEDESOL para emitir lineamientos de operación del fondo que incluyeran un mecanismo de focalización preciso, así como un catálogo acotado de obras y acciones al que los ejecutores tendrían que limitarse. De igual forma se estableció la obligación para los gobiernos locales de realizar cada año un ejercicio de planeación de proyectos tomando en cuenta un informe anual de pobreza y rezago en sus respectivos territorios, elaborado por la SEDESOL.
+8
+
+El FAIS se conforma año con año por recursos equivalentes al 2.5 % de la recaudación federal participable estimada en la Ley de Ingresos de la Federación para el ejercicio fiscal correspondiente. Asimismo, la LCF establecía una distribución precisa en cada uno de los dos subfondos: al FISE corresponde 0.303% de la recaudación participable, mientras que al FISM corresponde el restante 2.197%. Por otra parte los estados y municipios pueden destinar hasta el 3% de sus asignaciones vía FISE y FISM para sufragar gastos indirectos asociados a la ejecución de las obras, mientras que adicionalmente los municipios pueden destinar hasta el 2% del FISM para la realización de programas de desarrollo institucional municipal, los cuales deben ser convenidos con la Secretaría de Desarrollo Social.
+Finalmente, la LCF de 2013 establecía cinco obligaciones a estados y municipios asociadas con la rendición de cuentas en la ejecución de los recursos del FAIS:
+I. Hacer del conocimiento de sus habitantes, los montos que reciban las obras y acciones a realizar, el costo de cada una, su ubicación, metas y beneficiarios;
+II. Promover la participación de las comunidades beneficiarias en su destino, aplicación y vigilancia, así como en la programación, ejecución, control, seguimiento y evaluación de las obras y acciones que se vayan a realizar;
+III. Informar a sus habitantes, al término de cada ejercicio, sobre los resultados alcanzados;
+IV. Proporcionar a la Secretaría de Desarrollo Social, la información que sobre la utilización del Fondo de Aportaciones para la Infraestructura Social le sea requerida. En el caso de los municipios lo harán por conducto de los estados, y
+V. Procurar que las obras que realicen con los recursos de los Fondos sean compatibles con la preservación y protección del medio ambiente y que impulsen el desarrollo sustentable.
+9
+
+La distribución de los recursos del FAIS a cada uno de los estados se establecía en la LCF vigente hasta 2013 como una participación porcentual de ellos, calculada a partir de la proporción que corresponde a cada estado de la población en pobreza extrema a nivel nacional. Para el cálculo de dicha proporción se procede en dos etapas.5
+Primero se calculaba el Índice Global de Pobreza de un hogar (IGP), que resulta de la suma ponderada de cinco brechas de necesidades básicas (ingreso per cápita, nivel educativo promedio, disponibilidad de espacio de la vivienda, disponibilidad de drenaje y disponibilidad de electricidad-combustible para cocinar), mismas que a su vez se calculan como la diferencia estandarizada respecto a valores de referencia o “normas” establecidos por la SEDESOL para cada una de tales necesidades básicas. La estructura de los ponderadores está definida en la LCF, en donde se asigna el mayor peso específico al ingreso per cápita, seguido de la disponibilidad de espacio de la vivienda, el nivel educativo promedio, la disponibilidad de electricidad y por último de drenaje. Una vez efectuada la suma ponderada, se obtiene para cada hogar el valor del IGP, que se encuentra en el intervalo -.5 a 1, y del total de hogares se seleccionan únicamente aquellos con valor entre 0 y 1, que son los que se considera se encuentran en situación de pobreza extrema.
+En segundo término se calculaba la masa carencial para cada hogar en pobreza extrema, que resulta de elevar al cuadrado el IGP, multiplicado por el tamaño del hogar respectivo, con lo cual se incorpora el factor poblacional. A su vez, la suma de masa carencial de todos los hogares en pobreza extrema de un estado da como resultado la masa carencial estatal y de la agregación de éstas se obtiene la masa carencial nacional. De este modo, la participación porcentual de los recursos del FAIS para un estado en particular se calcula como el cociente de la masa carencial estatal y el agregado carencial nacional.
+Por su parte, para determinar la distribución que correspondía a los municipios respecto al FISM, los estados podían aplicar una fórmula y procedimientos iguales a los señalados en el párrafo anterior, o bien, cuando fuere el caso que la disponibilidad de información no permita aplicarlos,
+5 De igual forma, la reforma de la LCF en 2014 estableció una reestructuración de la fórmula de asignación de recursos que consistió en establecer un piso mínimo de recursos para todos los estados y municipios equivalente al monto nominal que recibieron en 2013 y distribuyendo el resto en forma creciente según la eficacia mostrada por estados y municipios en la reducción de la incidencia de las carencias sociales.
+10
+
+se calcularía un promedio simple de las carencias municipales reflejadas en cuatro variables: i) población ocupada del municipio que perciba menos de dos salarios mínimos, ii) población municipal de 15 años o más que no sepa leer ni escribir, iii) población municipal que habite en viviendas particulares sin disponibilidad de drenaje conectado a fosa séptica o a la calle y iv) población municipal que habite en viviendas particulares sin disponibilidad de electricidad.
+Para el año 1998, primer año de funcionamiento del FAIS, 26 de 31 estados aplicaron la fórmula del promedio simple de las carencias municipales (Scott 2004). En cambio, para el año 2010 la situación había cambiado radicalmente, pues sólo 10 de 31 estados continuaron aplicando dicha fórmula simplificada.6
+La elección de la fórmula específica para distribuir entre los municipios de un estado tiene implicaciones analíticas que se discuten ampliamente en Scott (2004), mientras que en Díaz y Silva (2004) se examinan los efectos prácticos partiendo de la realidad de que la fórmula simplificada es la más utilizada para la asignación municipal, misma que conduce a una focalización geográfica inferior respecto a la que se desprende de la fórmula basada en el cálculo de las masas carenciales.
+Por el lado del gasto, la LCF establece que tanto los estados como los municipios ejercerán lo recursos del Ramo 33 conforme a sus propias leyes. Para el caso del FAIS, esta disposición implica que los gobiernos locales deciden el tipo específico de obras o acciones a financiar siempre que se ubiquen dentro de los rubros previstos para el FISE y el FISM, y determinan libremente también la proporción destinada a cada rubro de gasto. Como resultado de ello, entre un estado y otro varía la mecánica operativa mediante la cual los municipios ejecutan los proyectos, según el grado de control que ejercen los gobiernos estatales a través de los organismos o comités de planeación local y de mecanismos centralizadores como los catálogos de precios unitarios o los padrones autorizados de proveedores y contratistas.7
+6 Información proporcionada por la SEDESOL. 7 Esta disposición no fue reformada en 2014, por lo cual la situación descrita de la mecánica operativa persiste desde
+la creación del Ramo 33 hasta el año de realización de este estudio (2015).
+11
+
+Idealmente, el control estatal sobre los municipios en el gasto de los recursos del FISM promovería el financiamiento de proyectos que atiendan las prioridades sociales identificadas por el estado desde una perspectiva más amplia y con información mejor y más completa que la disponible para un cierto municipio en un momento determinado, o bien promovería la debida coordinación entre órdenes de gobierno o entre municipios para realizar obras y acciones de alto impacto social que requieren inversiones por montos cuantiosos. Sin embargo, en ausencia de controles institucionales estatales o bajo condiciones de debilidad de los mismos, lo cual no es infrecuente en México, inclusive o sobre todo en tiempos de la “transición democrática”, los gobiernos estatales pueden tener el poder y los incentivos para orientar la ejecución del FISM a objetivos de la agenda propia del gobernador, en detrimento de las verdaderas necesidades de los municipios.
+El 9 de junio de 2005 se publicaron en el Diario Oficial de la Federación los “Lineamientos para el Reporte de los recursos del Fondo de Aportaciones para la Infraestructura Social”, en los cuales se especificaron los tipos de obras o acciones que los gobiernos locales podían realizar con los recursos del FAIS. En ellos, además de establecer un formato para el reporte sistemático de la información del ejercicio de los recursos del FAIS, se introdujo un “catálogo de obras y acciones FAIS” que, utilizando como fundamento la obligación legal de estados y municipios para proporcionar información sobre la utilización del fondo, en la práctica establecía un conjunto limitado de usos concretos en que se podían aplicar los rubros de gasto que la propia LCF establecía. Esto debido a que a los ejecutores de gasto les resultaba imposible cumplir con la obligación de reportar el destino de los recursos a menos que éste se correspondiera con las obras y acciones previstas en el catálogo.
+La efectividad de este intento fue muy limitada, debido principalmente a la propia debilidad o ambigüedad de su fundamento jurídico, además de que la ausencia de previsiones sancionatorias en la LCF para la omisión de reportar a la SEDESOL el destino de los recursos facilitaba a los gobiernos locales apartarse del catálogo en la elección de los proyectos con la sencilla práctica de incumplir dicha obligación.8
+8 Se encontró que en 2012 únicamente 852 municipios reportaron algún proyecto del FAIS a la Secretaría de Hacienda, mientras que en 2013 reportaron proyectos 1,898 municipios. Lo anterior se concluyó a partir del análisis de las bases de datos publicadas por el CONEVAL en el informe de Resultados Intermedios de la Cruzada Nacional contra
+12
+
+4. Análisis previos sobre los resultados del FISM
+No se identifica en la literatura reciente algún estudio o artículo que se oriente a establecer los vínculos generales entre los recursos del FAIS y el cumplimiento de los objetivos que asigna la LCF a los mismos, relacionados con la atención al rezago social. Por tanto, un área de oportunidad radica en hacer un análisis inicial de efectos entre dicho fondo y la situación de rezago social de los municipios. Los datos disponibles actualmente no bastan para evaluar en forma rigurosa el impacto del fondo en la situación de los municipios, pues para ello habría que subsanar la falta de registros completos sobre las obras y acciones financiadas por los gobiernos locales, así como tener estadísticas nacionales sobre variables clave del bienestar social (salud/morbilidad, nutrición infantil, rendimiento escolar, empleabilidad, etc.) con periodicidad corta y representatividad, por lo menos, a nivel municipal.
+No obstante, existe información suficiente para realizar un estudio con un alcance intermedio: identificar alguna asociación entre el comportamiento del rezago social a nivel municipal y las asignaciones del FISM. Hasta donde tengo conocimiento esto no ha sido abordado en esos términos en la literatura disponible sobre el Ramo 33.
+No obstante, sí existen diversos artículos relacionados, resultando de particular interés para nuestros propósitos aquellos estudios que analizan al FAIS, ya sea en exclusiva o en el contexto del gasto federalizado.
+Por ejemplo, Chiapa y Velázquez (2011) desarrollan un análisis que forma parte de la “Evaluación Estratégica 2008 del Ramo 33”. El estudio parte de una revisión teórica del federalismo fiscal y caracteriza a las transferencias intergubernamentales en tanto elementos compensadores de desequilibrios verticales y horizontales, además de examinar sucintamente la evolución del federalismo fiscal, desde el siglo XIX hasta la creación del Ramo 33. Asimismo realiza un análisis específico de cada uno de los ocho fondos que comprenden el Ramo 33, destacando que éste se creó con el objetivo de contar con reglas claras y precias bajo las cuales distribuir los recursos
+el Hambre, que incluye un breve análisis sobre los resultados de la direccionalidad de los recursos del FAIS hacia la atención de carencias sociales.
+13
+
+entre los estados y municipios del país. Para el caso del FAIS analizan los atributos de la asignación de recursos a estados y municipios y establecen que ésta tiene la virtud de estar altamente correlacionada con el índice de marginación, además de que dicha correlación ha mejorado en el tiempo, aunque identifican también que la correlación con los indicadores de pobreza extrema y patrimonial no es tan alta, por lo cual la focalización puede todavía ser mejorada.
+En Scott (2004) se analizan las fórmulas de asignación de recursos del FAIS, teniendo en consideración los orígenes del fondo en la historia reciente y su evolución, así como su coherencia analítica. Además se hace una revisión crítica de dicha fórmula y se examina con detalle las consecuencias de ésta sobre la progresividad de las asignaciones, para culminar formulando una propuesta de ajuste en las fórmulas que permita a partir de ellas configurar asignaciones óptimas para una atención efectiva de la pobreza.
+En Díaz y Silva (2004) se discute el proceso de descentralización en México en el contexto del proceso de democratización, con un análisis centrado en el nivel municipal, orientado a evaluar alternativas para orientar los incentivos del gasto público descentralizado hacia bienes y servicios sociales en favor de los más pobres. Asimismo, mediante técnicas econométricas diversas se analizan los efectos sociales del gasto descentralizado sobre la provisión de infraestructura social básica en los municipios, centrado en el comportamiento financiero de los ayuntamientos y la correspondencia que pudiera existir entre el gasto federal descentralizado, las prioridades de gasto de los municipios y las carencias sociales objetivas que éstos enfrentan. La medición de efectos se plantea como una mejora en indicadores censales, pero los resultados no son claros. Refinando un poco el análisis con información de la Encuesta de Ingresos y Gastos de los Hogares, se efectúan estimaciones Logit para la probabilidad de que un hogar disponga o no de un determinado servicio, utilizando como variables explicativas a un conjunto de factores individuales del hogar y agregados del municipio respectivo. El análisis tiene como resultado central que, independientemente de la metodología empleada no se encuentra que los resultados del gasto descentralizado tengan mucho peso sobre una mejora significativa en la provisión de servicios públicos.
+14
+
+Por otra parte, en un artículo posterior, Hernández y Jarillo (2007) analizan los factores determinantes de las transferencias efectuadas a los municipios a través del FISM, con el fin de probar si las asignaciones siguen un criterio redistributivo, tanto de los estados hacia los municipios como de éstos hacia las localidades que los conforman. A partir de un núcleo básico de información de la Encuesta Nacional a Presidentes Municipales 2002 y de un modelo estimado a partir del “método generalizado de momentos”, que permite lidiar con cierta problemática de endogeneidad, se encuentra que si bien la distribución del FISM está determinada por el grado de marginación de los municipios, ello constata un efecto focalizador débil de la pobreza; mientras que la significancia de factores asociados a los niveles de población (asignaciones del FORTAMUN y de participaciones federales) y de variables instrumentales relacionadas con el apoyo político de los gobiernos estatales y el poder de negociación de los ayuntamientos, sugieren la existencia de un espacio de discrecionalidad que resulta desfavorable para los municipios con menor grado de desarrollo o mayores carencias. Asimismo, los autores encuentran que en el gasto de los recursos del FISM al interior de los municipios, la evidencia disponible revela una preeminencia de las cabeceras municipales sobre las localidades con mayor dispersión poblacional y menor cobertura de servicios. De este modo, analizando los determinantes de la asignación de recursos a los municipios y del gasto de éstos, se identifica evidencia concluyente de que el gasto descentralizado no necesariamente se orienta en función de las necesidades locales.
+En otro estudio, Moreno (2011) presenta evidencia empírica sobre las consecuencias del gasto municipal en la cobertura de los servicios básicos que están bajo responsabilidad de los gobiernos locales: agua potable y drenaje. En primer término se analiza en qué medida la distribución territorial de los recursos del FISM está asociada con las condiciones de desarrollo humano de los estados y municipios, y en segundo término se evalúa la efectividad del gasto municipal sobre el crecimiento de cobertura de agua potable y drenaje. Para esto último el autor lleva a cabo dos regresiones del “cambio en la cobertura de servicios en los municipios de México en 2005,”9 una para el agua potable y otra para el drenaje. En ambos casos las covariantes son: la cobertura del servicios en 2000, el gasto municipal por habitante en la nómina del ayuntamiento y en obras
+9 La variable dependiente se construye como el logaritmo natural de la “razón de probabilidades” (log-odds ratio) de la cobertura de agua potable en 2005.
+15
+
+públicas, además de la tasa de crecimiento de la población y el índice de concentración poblacional. En la regresión de la cobertura en agua potable se incluye además el gasto municipal por habitante en agua. El modelo se estima por el método de mínimos cuadrados ponderados por el tamaño de la población del municipio y arroja como resultados que el gasto municipal sobre el crecimiento de la cobertura tiene un impacto significativo en los municipios con mayores rezagos en sus niveles de cobertura en 2000, pero esta efectividad se reduce drásticamente para los municipios que ya contaban con una cobertura media y alta en 2000. Asimismo, los resultados muestran que el gasto municipal por sí mismo no es suficiente para resolver el rezago histórico de la cobertura en estos, sino que se necesitan estrategias que mitiguen el efecto negativo de la dispersión poblacional.
+Finalmente, en el artículo de González-Navarro y Quintana-Domeque se hace un estudio experimental sobre el papel que juega la infraestructura de los municipios para reducir la pobreza en las zonas urbanas. El análisis se realizó en el municipio de Acayucan, Veracruz; donde en forma aleatoria se eligieron cierto número de calles para pavimentar por primera vez y se dio seguimiento a los hogares de las calles que fueron pavimentadas y de las que no. Como efecto atribuible de la pavimentación de las calles se incrementó el consumo de los bienes duraderos y la adquisición de vehículos, esto como resultado de un incremento en la riqueza de los hogares que propició un mayor acceso al crédito e incrementó la utilidad marginal de los vehículos. Asimismo, se realizó un análisis de costo-beneficio que indica, que el rendimiento económico de una calle pavimentada en un medio urbano en desarrollo es al menos tan grande como los costos de la construcción.
+16
+
+5. Estrategia empírica
+En el periodo 2005–2010, los recursos del FISM fueron ejercidos por autoridades municipales en proyectos de “infraestructura social” y otras acciones, dentro de diez rubros de gasto definidos en la LCF. La decisión sobre qué tipo de proyectos fondear y qué proporción del FISM destinar a cada uno de ellos correspondió año con año a más de 2,436 administraciones municipales con características, restricciones e incentivos diversos, que solamente tenían que asegurar que los proyectos fueran razonablemente congruentes con los objetivos de beneficiar a la población en condiciones de rezago social o pobreza extrema y que pudieran caber dentro del “catálogo FAIS” emitido por la SEDESOL en 2005. 10
+Nuestro análisis se orientará a establecer en qué medida los cambios en el nivel de rezago social entre 2005 y 2010 de todos los municipios del país se explican por las asignaciones de recursos del FISM, controlando por los efectos de la profesionalización de las administraciones municipales, la población de los municipios y su grado de urbanización, así como el grado de apoyo político de los ayuntamientos en los gobiernos estatal y federal, entre otros factores.11
+El trabajo empírico es simple. Primero se calcula (en forma válida) la variación en el grado de rezago social de todos los municipios del país entre 2005 y 2010. Posteriormente, mediante análisis de mínimos cuadrados ordinarios, se estiman en forma robusta los efectos de las asignaciones municipales del FISM sobre la variación en el grado de rezago social calculada, incorporando un conjunto de variables de control asociadas a diversos aspectos de la mecánica operativa del fondo.
+Si bien conceptualmente el trabajo es simple, en la práctica éste no es trivial. Para empezar, el Indice de Rezago Social (IRS) que publica el CONEVAL se calcula mediante el método de componentes principales. Así, el IRS constituye una medida ordinal que dispone a los municipios
+10 Ver Apéndice I. 11 La profesionalización de las administraciones municipales es relevante debido a que favorece la selección
+sistemática de proyectos congruentes con las necesidades objetivas de los municipios, así como su gestión eficaz; mientras que el grado de urbanización de los municipios revela bajos niveles de dispersión poblacional que facilita y abarata la construcción de infraestructura. Adicionalmente, el apoyo político que recibe el municipio por alguno de los órdenes de gobierno, estatal o federal, puede potenciar los beneficios de la inversión municipal en infraestructura en la medida que se traduce en inversión concurrente o de carácter regional.
+17
+
+en un arreglo decreciente, según el resultado de una suma ponderada de valores estandarizados de indicadores carenciales de un año determinado. Utilizando los valores numéricos del IRS, los municipios se agrupan en cinco estratos minimizando la varianza dentro de los estratos y maximizando la varianza entre estratos. Estas propiedades del IRS determinan que éste no sea directamente comparable en el tiempo. Por una parte, el valor que determina la posición de un municipio respecto al resto en un momento dado, depende de su desempeño relativo. Además, el peso específico de los indicadores carenciales estandarizados varía de medición a medición, según la proporción de la variabilidad explicada.
+Por lo tanto, para establecer comparaciones del IRS en el tiempo es necesario transformarlo primero en una medición cardinal. Esta transformación es la primera contribución de este estudio a la literatura. Para obtener la medición cardinal, se sigue una técnica desarrollada por Cárdenas (2010) que captura la variabilidad de la primera componente y la refleja en la estructura de un vector de ponderadores que se utiliza para efectuar una suma ponderada de los indicadores carenciales sin estandarizar. A la medición resultante la denominamos Índice de Rezago Social Absoluto (IRSA). EL IRSA se calcula para 2005 y 2010 a fin de establecer el cambio resultante por municipio. Asimismo, se prueba si existe una diferencia estadísticamente significativa entre las distribuciones del IRSA en ambos años. Este ejercicio se lleva a cabo con el fin de mostrar la existencia de variabilidad en los resultados del IRSA entre 2005 y 2010. La existencia de esta variabilidad motiva a explorar, empíricamente, sus factores determinantes. Así, en una segunda etapa, se utilizan mínimos cuadrados ordinarios para estudiar el efecto de las asignaciones del FISM sobre el cambio en el IRSA, controlando por un conjunto de variables relevantes.
+Como se verá al final del estudio, el análisis de regresión permitirá establecer conclusiones sugerentes sobre la efectividad del FISM, y con ello sobre los alcances y limitaciones de un elemento importante del federalismo fiscal en México. Asimismo, veremos que los resultados permiten anticipar algunas líneas de trabajo para avanzar hacia el análisis de impacto, inclusive en el caso de una intervención en la cual todos los municipios reciben tratamiento.
+5.1 Medición absoluta del Rezago Social
+Como se ha discutido, por construcción, no es posible identificar, en forma válida, los cambios que experimentan los municipios en su grado de rezago comparando directamente sus respectivos
+18
+
+valores del IRS en distintos años. Para poder llevar a cabo comparaciones válidas, es necesario, primero, transformar los datos para construir una medición cardinal del IRS, partiendo de los datos disponibles (Cárdenas 2010).
+En primer término, considérese que el IRS procede de una combinación lineal perfecta de los indicadores estandarizados que se emplean para su cálculo, de modo que:
+(1) IRS������ = ������������ = ������1������������1 + ������2������������2 + ⋯ +������������������������������
+donde ������������ es el ponderador del indicador i para determinar el primer componente principal estandarizado, y ������������������ es el indicador estandarizado de la carencia i de la entidad o municipio j.
+Para el cálculo del IRS de 2005 el CONEVAL construyó 12 indicadores carenciales a partir de la base de datos “Principales Resultados por Localidad, 2005” del II Conteo de Población y Vivienda 2005 (ITER 2005). Estos 12 indicadores se enlistan en la Tabla 1.
+Tabla 1: Indicadores carenciales utilizados por el CONEVAL para el cálculo de IRS 2005
+% Viviendas particulares habitadas que no disponen de refrigerador % Viviendas particulares habitadas que no disponen de lavadora % Viviendas particulares habitadas con piso de tierra % Población de 15 años y más analfabeta Promedio de ocupantes por cuarto Hogares con población de 15 a 29 años, con algún habitante con menos de 9 años de educación aprobada % Viviendas particulares habitadas que no disponen de drenaje % Viviendas particulares habitadas que no disponen de agua entubada de la red pública % Población sin derechohabientes a servicios de salud % Viviendas particulares habitadas que no disponen de energía eléctrica % Población de 6 a 14 años que no asiste a la escuela
+% Viviendas particulares habitadas que no disponen de excusado o sanitario
+Fuente: CONEVAL
+19
+
+De este modo, al efectuar una regresión lineal del IRS correspondiente a las J entidades o municipios sobre sus respectivos indicadores zi, los coeficientes obtenidos corresponderán exactamente a los ponderadores ci de la ecuación 1 con una ������2 ≡ 1.
+Efectuando el análisis de descomposición del coeficiente de determinación por variable explicada, se puede obtener fácilmente la expresión:
+
+������
+
+������
+
+(2) ������2 = ∑ ���������������������̂ ��������������� = ∑ ������������ ≡ 1
+
+������=1
+
+������=1
+
+Donde ���������̂ ��������������� es el coeficiente de correlación entre el IRS y el i-ésimo indicador carencial.
+Por tanto, es posible construir un vector wi de ponderadores ajustados que puede emplearse conjuntamente con el vector conformado por los 12 indicadores carenciales sin estandarizar (xi) para expresar el IRSA como:
+
+12
+(3)IRSA������ = ∑ ������������ ������������������
+������=1
+
+En este caso, tanto wi como xi están dentro del intervalo [0,1] de modo que IRSA = 1 representa una situación de total rezago, mientras que IRSA = 0 representa una situación de ausencia de rezago.
+Este método se considera más apropiado que el desarrollado por el Consejo Nacional de Población (CONAPO) para el cálculo del Índice Absoluto de Marginación (IAM) (Almejo et al. 2013). El
+20
+
+IAM para para la j-ésima entidad o municipio considera un vector uniforme de ponderadores
+
+iguales
+
+a
+
+1 9
+
+para
+
+cada
+
+una
+
+de
+
+las
+
+nueve
+
+variables
+
+(mi)
+
+que
+
+intervienen
+
+en
+
+el
+
+cálculo
+
+de
+
+la
+
+marginación, de modo que:
+
+91 IAM������ = ∑ 9 ������������������
+������=1
+
+Por tanto, el método para calcular el IAM utilizado por el CONAPO tiene la desventaja respecto a la metodología de Cárdenas (2010) para calcular el IRSA, de asignar el mismo peso a cada uno de los indicadores que determinan el índice. Es decir, el IAM no hace distinción de las características y efectos que ejercen las variables, diversas entre sí, en el resultado que se resume en el índice de marginación. En cambio, el IRSA, a través del vector de ponderadores wi, sí refleja la contribución específica de cada variable carencial en la determinación de la situación de rezago social.
+
+5.2 Cálculo del IRSA 2005 y 2010
+Utilizando la información disponible sobre el IRSA en 2005, seguimos la técnica de Cárdenas (2010) para estimar el vector de ponderadores ajustados ������2005. Los resultados se muestran en la Tabla 2.
+
+21
+
+Tabla 2: Ponderadores ajustados, 2005
+
+������������������������������������������������������������ % Población de 15 años y más analfabeta
+% Población de 6 a 14 años que no asiste a la escuela
+
+������������ 0.1320 0.0742
+
+���̂��������������������� 0.8692
+
+������������ 0.1147
+
+0.4884 0.0362
+
+Hogares con población de 15 a 29 años, con algún habitante con menos de 9 años de educación aprobada
+
+0.1252
+
+0.8216 0.1029
+
+% Población sin derechohabientes a servicios de salud
+
+0.0946
+
+0.6229 0.0589
+
+% Viviendas particulares habitadas con piso de tierra
+
+0.1321
+
+0.8695 0.1148
+
+% Viviendas particulares habitadas que no disponen de excusado o sanitario
+
+0.0564
+
+0.3716 0.0210
+
+% Viviendas particulares habitadas que no disponen de agua entubada de la red pública
+
+0.0967
+
+0.6366 0.0615
+
+% Viviendas particulares habitadas que no disponen de drenaje
+
+0.1181
+
+0.7779 0.0919
+
+% Viviendas particulares habitadas que no disponen de energía eléctrica
+
+0.0898
+
+0.5910 0.0530
+
+% Viviendas particulares habitadas que no disponen de lavadora
+
+0.1336
+
+0.8800 0.1176
+
+% Viviendas particulares habitadas que no disponen de refrigerador
+
+0.1358
+
+0.8945 0.1215
+
+Promedio de ocupantes por cuarto
+
+0.1270
+
+0.8363 0.1062
+
+Suma 1.0002
+Fuente: Elaboración propia con datos del CONEVAL Nota: La columna ������������ muestra al ponderador del indicador i de las variables carenciales estandarizadas de la primera componente, mientras que la columna ���������̂ ��������������� muestra al coeficiente de correlación entre el IRS y el i-ésimo indicador carencial. Finalmente, la columna ������������ presenta los ponderadores ajustados para calcular el IRSA a partir de las variables carenciales sin estandarizar.
+
+La estructura del vector estimado refleja los pesos diferenciados para cada una de las variables que conforman el IRSA. Si utilizáramos el método simplificado del CONAPO tendríamos que asignar a cada variable un peso uniforme de 112. La técnica de Cárdenas (2010), en cambio, nos permite obtener un vector de ponderadores más informativo acerca de la importancia de las variables
+22
+
+carenciales sobre las condiciones de rezago social. Esto se puede apreciar claramente en la Gráfica
+
+1,
+
+en
+
+donde
+
+la
+
+línea
+
+horizontal
+
+está
+
+fija
+
+en
+
+un
+
+valor
+
+de
+
+1 12
+
+para
+
+todas
+
+las
+
+variables,
+
+mientras
+
+que
+
+la
+
+línea decreciente refleja el valor del vector ������2005 :
+
+Gráfica1: Estructura del vector de ponderadores ajustados w2005
+
+Fuente: Elaboración propia con datos del CONEVAL
+
+Nota: Los ponderadores ajustados ������������ son los obtenidos mediante la técnica de Cárdenas (2010), a partir de la ecuación
+
+2.
+
+A
+
+su
+
+vez
+
+los
+
+ponderadores
+
+uniformes
+
+de
+
+valor
+
+1 12
+
+son
+
+los
+
+que
+
+se
+
+tendrían
+
+que
+
+asignar
+
+a
+
+las
+
+variables
+
+carenciales
+
+si
+
+utilizáramos la técnica del CONAPO.
+
+Específicamente, lo que se desprende de la Gráfica 1 es que si se utilizara el método simplificado del CONAPO se estaría subestimando la relevancia de las siguientes variables: “porcentaje de viviendas particulares que no disponen de refrigerador” y “porcentaje de viviendas particulares que no disponen de lavadora”, que constituyen dos indicadores proxy para el nivel de ingreso de los hogares; de las dos variables que reflejan el nivel educativo: “porcentaje de población de 15 años y más analfabeta” y “hogares con algún habitante de 15 A 29 años con menos de 9 años de educación aprobada”, así como de dos variables relacionadas con la calidad y espacios de la vivienda: “porcentaje de viviendas particulares habitadas con piso de tierra” y “promedio de ocupantes por cuarto”, y de una variable de servicios básicos en la vivienda: “porcentaje de viviendas particulares habitadas que no disponen de drenaje”.
+
+23
+
+Asimismo, se estaría sobre estimando la importancia de las siguientes variables: “porcentaje de viviendas que no disponen de agua entubada a la red pública”, “porcentaje de viviendas que no disponen de energía eléctrica”, y “porcentaje de viviendas que no disponen de excusado o sanitario”, todas relacionadas con la carencia por servicios básicos en la vivienda; así como las variables “porcentaje de población con derechohabiencia a servicios de salud” y “porcentaje de población de 6 a 14 años que no asiste a la escuela”.
+De hecho, las propiedades del vector ������2005 son interesantes para la política pública, pues resultan indicativas sobre la efectividad general de las diversas estrategias que el Estado puede poner en marcha para el combate a la pobreza. Para el caso específico de México en 2005, las variables carenciales asociadas al nivel de ingreso (viviendas sin refrigerador y viviendas sin lavadora) y de calidad y espacios en la vivienda tienen el mayor peso en la generación de las condiciones de rezago social, por lo que una política que hubiera sido eficaz en el direccionamiento del gasto municipal hacia obras y acciones de mejora de las viviendas particulares, podría haber sido costoeficiente en la reducción del rezago social.
+Ahora bien, utilizando nuestro vector estimado de ponderadores ������2005 y los datos de los indicadores carenciales sin estandarizar para el año 2005 en el cálculo del IRS podemos obtener, a partir de la ecuación 3, la medición del IRSA a nivel municipal para 2005. Del mismo modo, utilizando los datos en 2010 de las mismas variables carenciales y el mismo vector de ponderadores podemos construir una medición para este mismo año, la cual mantiene fija la estructura de determinación del IRSA en el año base de comparación. La distribución de ambas mediciones puede visualizarse mediante la estimación de funciones de densidad de Kernel. Las distribuciones resultantes se muestran en la Gráfica 2.
+24
+
+Gráfica 2: Comparación de densidades del IRSA, 2005 vs 2010
+Fuente: Elaboración propia con datos del CONEVAL
+A primera vista se aprecia que los datos correspondientes a los niveles de rezago social absoluto de los municipios en 2005 tienen una distribución asimétrica que está ligeramente concentrada en niveles bajos de rezago. Para la medición correspondiente al año 2010, la distribución está desplazada hacia la izquierda. Es decir, los datos de rezago social de los municipios muestran en 2010 una mayor concentración en niveles más bajos de rezago que en 2005. Esta situación sugiere que durante el periodo de análisis los niveles de rezago social tuvieron una reducción generalizada, lo cual indicaría que, en principio, habría materia suficiente para continuar con un análisis interesante, dado que parece haber una mejora general en la situación de los municipios. Para confirmar esta conjetura efectuamos una prueba Kolmogorov-Smirnov, que nos permite determinar la bondad de ajuste de dos distribuciones de probabilidad entre sí. El valor p de la prueba es 0.000. Así, se rechaza la hipótesis nula de que las distribuciones de probabilidad del IRSA a nivel municipal para los años 2005 y 2010 son iguales. Esto sugiere que, en efecto, se ha identificado una variación generalizada, consistente con una reducción en los niveles de rezago social en 2010 respecto a 2005.
+25
+
+5.3 Análisis por estratos
+Si bien la comparación de las distribuciones del IRSA de 2005 y 2010 nos ha permitido observar que el rezago social disminuyó de 2005 a 2010, a través de esta comparación no podemos identificar cuántos municipios han mejorado, ni qué tanto lo han hecho. Para arrojar un poco de luz al respecto, a continuación analizamos cómo cambió el número de municipios en cada uno de los estratos de rezago social en los que CONEVAL clasifica a los municipios del país: muy alto, alto, medio, bajo y muy bajo. Esta clasificación se construye de manera endógena mediante la técnica de Dalenius y Hodges.12 La Tabla 3 presenta el número de municipios y el porcentaje que dicho número representa en las columnas 2 y 3. Las columnas 4 y 5 muestran el rango del valor del IRS que delimita cada estrato.
+
+Tabla 3: Estratificación del IRS 2005
+
+Grado de rezago social Muy Bajo Bajo Medio Alto Muy Alto
+
+N
+
+%
+
+min
+
+max
+
+682
+
+28% -1.99777
+
+-0.70109
+
+561
+
+23% -0.69910
+
+-0.05496
+
+557
+
+23% -0.05177
+
+0.59779
+
+530
+
+22% 0.60043
+
+1.89728
+
+106
+
+4% 1.90032
+
+4.49541
+
+Total
+
+2,436
+
+Fuente: CONEVAL
+
+100% -1.99777
+
+4.49541
+
+Los umbrales de los estratos del IRS en 2005 se proyectaron en la medición del IRSA, de modo que cada estrato contuviera exactamente al mismo porcentaje de municipios que en la medición del IRS. De este modo, la estratificación quedó del siguiente modo:
+
+12 La metodología de estratificación de Dalenius y Hodges permite que dentro de cada estrato, las unidades sean lo más homogéneas posibles, mientras que entre estratos sean lo más distintas posibles.
+26
+
+Tabla 4: Estratificación del IRSA 2005
+
+Grado de rezago social
+absoluto Muy Bajo Bajo Medio Alto
+Muy Alto
+
+N
+
+%
+
+min
+
+max
+
+682
+
+28% 0.011293
+
+0.232287
+
+561
+
+23% 0.232619
+
+0.345890
+
+557
+
+23% 0.346119
+
+0.458860
+
+530
+
+22% 0.458977
+
+0.671228
+
+106
+
+4% 0.671879
+
+0.910030
+
+Total
+
+2,436
+
+Fuente: elaboración propia.
+
+100% 0.011293
+
+0.910030
+
+Habiendo hecho esto, se mantuvieron fijos los umbrales de 2005 y, utilizando los datos del IRSA calculado para el año 2010, se obtuvo cómo cambió el número, y por ende la proporción, de municipios en cada estrato para 2010. Los resultados se presentan en la Tabla 5.
+
+Tabla 5: Estratificación del IRSA 2010 con umbrales del IRSA 2005
+
+Grado de rezago social
+absoluto Muy Bajo Bajo Medio Alto
+Muy Alto
+
+N 1,197 711 348 179
+1
+
+%
+
+min
+
+max
+
+49%
+
+0.011293
+
+0.232287
+
+29%
+
+0.232619
+
+0.345890
+
+14%
+
+0.346119
+
+0.458860
+
+7%
+
+0.458977
+
+0.671228
+
+0%
+
+0.671879
+
+0.910030
+
+Total
+
+2,436
+
+Fuente: elaboración propia.
+
+100% 0.011293
+
+0.910030
+
+Estos resultados permiten entender, de mejor manera, la mejora de 2005 a 2010 en el rezago social absoluto de los municipios del país, que se había mostrado en la Gráfica 2: una concentración de los municipios en los umbrales de mejor situación de rezago (muy bajo rezago). De hecho, el estrato de rezago muy alto prácticamente se vacía para 2010, mientras que en el de rezago alto el número de municipios se reduce a una tercera parte. Asimismo, prácticamente se duplica el número de municipios con rezago muy bajo. Y en el estrato de bajo rezago los municipios se incrementan en una cuarta parte.
+
+27
+
+5.4 Cambio absoluto del IRS
+La evidencia presentada hasta el momento sugiere la existencia de una mejora estadísticamente significativa en los niveles de rezago social. ¿Qué tanto ha contribuido el FISM en esta mejora? Para dar respuesta a esta pregunta, utilizamos los datos disponibles del conteo de población 2005 y del censo 2010 para construir nuestra variable de interés: el cambio en el índice de rezago social absoluto para cada municipio del país entre 2005 y 2010.
+Para medir la variación en el IRSA entre los dos años para los cuales tenemos datos, se utilizan los ponderadores wi para el año base de comparación (2005) y se calcula en forma directa la variación de los indicadores carenciales entre 2005 y 2010, de modo que:
+������
+Δ IRSA������ = ∑ ���������2��� 005 (���������2���������010 − ���������2���������005).
+������=1
+Esto es, el cálculo del cambio en el IRSA se obtiene de aplicar los ponderadores del año base a las diferencias entre los valores no estandarizados de los indicadores utilizados para calcular el rezago social. En nuestro caso, utilizamos nuestro vector ������2005 y los valores de los 12 indicadores de rezago social para 2005 y 2010. Los valores resultantes del Δ IRSA������ representan el cambio absoluto en el IRSA en el periodo de análisis para el j-ésimo municipio.
+5.5 Especificación del modelo
+Como se ha explicado, nuestro principal interés es establecer la relación causal entre el cambio en el IRSA a nivel municipal (Δ IRSA������) y las asignaciones de recursos del FISM, considerando que con estos recursos se ponen a disposición de los municipios los medios financieros para llevar a cabo inversiones en obras de infraestructura social básica y otras acciones de mejoramiento del entorno. Si bien tales inversiones tuvieron un direccionamiento vago en las disposiciones de la LCF desde el inicio del Ramo 33 en 1997 hasta el ejercicio 2013, al principio del periodo de análisis, específicamente en junio de 2005 hubo un esfuerzo de la Sedesol por establecer un
+28
+
+conjunto acotado de conceptos de gasto orientado a acercar las canastas de proyectos a una distribución óptima. 13
+Dada la fórmula de distribución de los recursos del FISM, resulta complicado pensar que pudieran existir problemas de causalidad inversa: los municipios con mayores mejoras, recibieron mayores recursos del FISM. No obstante, identificar insesgadamente la verdadera aportación del FISM a la mejora en el cambio del IRSA es un reto. Existe una serie de factores que podrían haber influido en la eficacia de las acciones desarrolladas por los municipios, desde las características de las personas o instituciones ejecutoras de los recursos, hasta variables relevantes que pudieran reflejar condicionantes del entorno social, económico y político en que se realizaron las inversiones, así como la disponibilidad de recursos provenientes de fuentes complementarias.
+De este modo, para identificar la importancia de los recursos del FISM en la variación del IRSA a nivel municipal, estimamos la siguiente regresión por mínimos cuadrados ordinarios:
+Δ IRSA������ = ������ + ������������������������������������������2005−2009,������ + ������������′������ + ������������
+donde Δ IRSA������ denota el cambio en el índice de rezago social absoluto entre 2005 y 2010 del municipio j, ������������������������������������2005−2009,������ se refiere al logaritmo natural de los recursos acumulados del FISM en el periodo 2005 – 2009 en pesos constantes, ������������ es un vector de variables control, y ������������ es un error idiosincrático.
+En todas las estimaciones, se utilizan errores estándar robustos agrupados a nivel estado. Esto último con el fin de controlar por aquellos choques que se presentan en cada estado y que afectan de manera específica o uniforme a los municipios que pertenecen al mismo, tales como: cambio de gobierno estatal, normatividad en materia de planeación, retrasos en las ministraciones de recursos, fórmula empleada para distribuir recursos a los municipios, etc.
+13 Ver “Lineamientos para el Reporte del Ejercicio de los recursos del Fondo de Aportaciones para la Infraestructura social (FAIS)” Diario Oficial de la Federación, 9 de junio de 2005.
+29
+
+El coeficiente de interés es ������, el cual indica, en términos porcentuales, cuánto contribuyeron los
+
+recursos acumulados del FISM entre 2005 y 2009 a la reducción en el índice de rezago social
+
+absoluto
+
+entre
+
+2005
+
+y
+
+2010;
+
+es
+
+decir,
+
+������ 100
+
+refleja en cuántas unidades se reduce el rezago social
+
+absoluto cuando los recursos acumulados del FISM aumentan en 1%. A priori, se espera que ������ <
+
+0 es decir, a mayores recursos recibidos, menor rezago social absoluto.
+
+Los controles incluidos en el vector ������ se listan en la Tabla 6. 14 Se incluye en el modelo la asignación municipal de recursos del FORTAMUN con el fin de incorporar los efectos del otro fondo del Ramo 33, además del FISM, que canaliza recursos a través de los municipios. Asimismo, se incorpora la variable de población municipal en 2005 y 2009 con el fin de controlar los efectos del tamaño de los municipios.
+
+El factor de ruralidad de los municipios se incorpora mediante la variable de porcentaje de población que vive en localidades de menos de 5,000 habitantes, mientras que los efectos de la dinámica de esta población se incorporan mediante su tasa de crecimiento.
+
+Para introducir los efectos de las características socioculturales de la población de los municipios en que se ejecutan las obras se considera una variable de rezago educativo bajo la definición del Instituto Nacional para la Educación de los Adultos (INEA),15 así como una variable que identifica si un municipio es predominantemente indígena al grado de que las autoridades municipales se eligen por usos y costumbres.
+
+Por otra parte, los escenarios de apoyo institucional o político a las tareas de los municipios se reflejan mediante variables que identifican si el presidente municipal proviene del mismo partido político que el presidente de la república, que para el periodo de análisis es el PAN, si el partido que gobierna el estado respectivo es el PAN y si tanto el presidente municipal como el gobernador son del mismo partido.
+
+14 En el apéndice II se incluye información detallada de cada una de las variables consideradas en nuestro modelo, especificando la fuente, el método de cálculo en su caso y sus estadísticas descriptivas. Todas las cantidades monetarias están expresadas en pesos de 2010.
+15 El INEA define al rezago educativo como: Población de 15 años y más que no sabe leer ni escribir y/o que no ha iniciado o concluido su educación primaria o secundaria.
+30
+
+Finalmente, como un proxy del grado de competencias profesionales de la administración municipal, se incorporan variables que dan cuenta del grado máximo de estudios del presidente municipal.
+Tabla 6: Variables control incluidas en el modelo
+Asignaciones acumuladas del FORTAMUN en 2005-2009 Población 2005 Población estimada 2009 % Población en localidades menos de 5 mil habitantes % Población en rezago educativo 2005 Autoridades electas por usos y costumbres en 2005 El gobierno estatal es del PAN El gobierno municipal es del PAN El gobierno estatal y el municipal son del mismo partido Grado máximo de estudios del presidente municipal:
+Primaria Secundaria Carrera técnica Preparatoria Licenciatura
+Posgrado Índice de capacidad financiera acumulada 2005-2009 Tasa de crecimiento de la población que habita en localidades de menos de 5000 habitantes
+31
+
+6. Resultados
+Iniciamos corriendo nuestra ecuación de regresión sin incluir controles. La columna 1 de la Tabla 7 muestra los resultados. Se aprecia que este modelo tiene nulo poder explicativo: la variable no resulta significativa, además de que la R-cuadrada es prácticamente cero.
+Veamos cómo se corrige esta situación al incorporar las variables de control en nuestra estimación.16 Los resultados se muestran en la columna 2 de la Tabla 7. Vemos que el coeficiente estimado para el monto acumulado del FISM tiene el signo esperado, pues refleja que a mayores asignaciones del FISM corresponden mejoras (reducciones) en los niveles de rezago social. El efecto es claro y fuerte para las aportaciones del FISM. El coeficiente asociado al FISM sugiere que por cada 1% de recursos adicionales asignados a los municipios, el índice de rezago social absoluto cae 0.000289 puntos.
+Este efecto es estadísticamente significativo al 1% y representa una reducción del 0.085% respecto al valor medio del IRSA en 2005 por cada punto porcentual adicional de recursos asignados a los municipios a través del FISM.17 En el caso del FORTAMUN, los resultados sugieren que las asignaciones acumuladas recibidas de este fondo no tienen ningún efecto sobre el IRSA. Así, los resultados sugieren la existencia de un efecto relevante de las aportaciones del FISM en la mejora de la situación de rezago social experimentada por los municipios del país en el periodo 2005 2009.
+Respecto al resto de los controles incluidos en la regresión, resulta interesante el efecto asociado al grado de ruralidad de los municipios. La variable porcentaje de población en localidades menores de 5,000 habitantes tiene un coeficiente signo negativo y es significativo al 10%.
+Esto indica que a los municipios predominantemente rurales corresponden mayores mejoras en los niveles de rezago social, lo cual se refuerza con el resultado para la tasa de variación de la
+16 Para los montos acumulados del FORTAMUN de 2005 a 2009 y de la población de los municipios en 2005
+tomamos logaritmos naturales.
+17 El valor medio del IRSA 2005 es de .3541.
+32
+
+población que habita en estas localidades de menos de 5,000 habitantes, para la cual se obtuvo un coeficiente significativo y con signo negativo. Esta situación puede deberse a que los municipios rurales tienen mayores incidencias de carencias y por tanto amplios márgenes para mejorar su situación con prácticamente cualesquiera canastas de proyectos, además de una dinámica demográfica que genera una fuerte demanda por servicios e infraestructura social. No obstante, esta conjetura requiere confirmarse con un estudio más detallado.
+Esta misma conjetura puede aplicarse para los municipios que eligen autoridades por usos y costumbres, pues la variable de predominancia indígena es significativa y el coeficiente tiene signo negativo. Tratándose de una variable dicotómica, que toma valor 1 si el municipio elige a sus autoridades mediante usos y costumbres y 0 en otro caso, el signo negativo indica que estos municipios tienen una mayor reducción del rezago social que el resto.
+Las variables que reflejan el escenario de apoyo político configuran un escenario contraintuitivo, pues los resultados indican que la filiación política de los municipios no explica las variaciones en el rezago social, al resultar no significativas las variables dicotómicas que identifican a los municipios encabezados por autoridades del mismo partido que el Presidente de la República (PAN), así como pertenecientes a un estado en que el Gobernador es, al igual que el presidente, de filiación panista. Finalmente, tampoco resultó significativa la variable que identifica aquellos municipios en que el Presidente Municipal es de la misma filiación política que el Gobernador de su estado, la variable resulta significativa pero el signo es positivo.
+Por otra parte la escolaridad de los presidentes municipales muestra efectos significativos, con los signos esperados; aunque sólo para primaria, secundaria y preparatoria. Vistos en conjunto los resultados, indican de forma gruesa que la educación de quien toma las decisiones sobre el destino de las inversiones y la mezcla de proyectos a ejecutar tiene un efecto favorable sobre el cambio en el nivel de rezago social. Sin embargo, se requiere un estudio más refinado o profundo para llegar a resultados concluyentes de utilidad para la política pública.
+Finalmente, otro indicador del desarrollo institucional de las administraciones municipales, el índice de capacidad financiera, resulta no significativo. De acuerdo con este resultado, la capacidad
+33
+
+financiera, estimada mediante la razón entre los ingresos propios de los municipios y su gasto corriente, no es de utilidad para explicar su desempeño en materia de rezago social. De igual forma se puede conjeturar en el sentido de que los municipios con menor índice de capacidad financiera experimentan alta incidencia en todas las variables carenciales, por lo que tienen un amplio margen para mejorar y lo logran con el apoyo de las aportaciones federales exclusivamente.
+En resumen, el modelo estimado constituye una buena aproximación para identificar las variables relevantes en el desempeño de los municipios del país en materia de rezago social. Esto se refleja también en el valor de la R-cuadrada, según el cual el modelo especificado explica casi el 69% de la variabilidad de los datos. Destaca en los resultados que las asignaciones del FISM tienen efectos positivos sobre el rezago social, además de que se identifican relaciones interesantes con el grado de ruralidad y la educación de los presidentes municipales que resultan sugerentes para nuevas investigaciones.
+Por otra parte, con el fin de revisarla robustez del modelo, se realiza una tercera estimación agregando efectos fijos por estado mediante la incorporación de variables dicotómicas para cada uno de los 31 estados que en el periodo 2005-2009 recibieron recursos del FAIS. Los resultados se muestran en la columna 3 de la Tabla 7.
+Se aprecia un cambio marginal en la magnitud del efecto de los recursos acumulados del FIMS sobre el rezago social, conservándose el signo correcto y el nivel de confianza. Esencialmente, los resultados son robustos a esta nueva especificación, aunque es notable que las variables que introducen los escenarios de apoyo político cobran significancia en todos los casos y los coeficientes tienen el signo “correcto”. Esto último implica que introduciendo efectos fijos por estado, se aprecia que la coincidencia de filiación política entre las administraciones municipales y sus contrapartes en los estados y la federación tiene un efecto favorable en el combate al rezago social.
+34
+
+Tabla 7: Estimaciones utilizando el monto acumulado del FISM de 2005 a 2009
+
+Cambio en el índice de rezago social absoluto entre 2010 y 2005
+Ln del monto acumulado del FISM de 2005 a 2009
+Ln del monto acumulado del FORTAMUN de 2005 a 2009 Ln de la población en 2005
+
+(1)
+-0.0030 (0.0042)
+
+Porcentaje de la población en localidades de >5mil habitantes en 2005
+Rezago educativo en 2005, porcentaje
+
+Elección de alcaldes mediante los usos y costumbres de la comunidad
+Gobernador del PAN en 2005
+
+Alcalde del PAN en 2005
+
+Gobierno estatal y municipal del mismo partido político en 2005
+Alcalde cursó hasta primaria
+
+Alcalde cursó hasta secundaria
+
+Alcalde cursó hasta escuela técnica
+
+Alcalde cursó hasta preparatoria
+
+Alcalde cursó hasta licenciatura
+
+Alcalde cursó hasta posgrado
+
+Ingresos propios acumulados de 2005-09/Gasto corriente acumulado de 2005-09
+Incremento porcentual de la población que habita en localidades >5mil habitantes
+Constant
+Observaciones Efectos fijos R2 Errores estándar robustos en paréntesis, agrupados por estado. * p < 0.10, ** p < 0.05, *** p < 0.01
+
+-0.0941*** (0.0220)
+2436 No 0.005
+
+(2)
+-0.0289*** (0.0034)
+0.0002 (0.0024)
+0.0200*** (0.0045)
+-0.0001* (0.0000)
+-0.0020*** (0.0002)
+-0.0132** (0.0049)
+-0.0008 (0.0046)
+-0.0025 (0.0019)
+0.0020 (0.0014)
+-0.0122*** (0.0043)
+-0.0135** (0.0055)
+-0.0092 (0.0059)
+-0.0090** (0.0043)
+-0.0070 (0.0044)
+-0.0073 (0.0049)
+0.0128 (0.0084)
+-2.84e-07*** (6.56e-08)
+-0.0518 (0.0365)
+2436 No 0.688
+
+(3)
+-0.0222*** (0.0031)
+0.0010 (0.0016)
+0.0135*** (0.0030)
+-0.0001*** (2.83e-05)
+-0.0023*** (0.0001)
+-0.0065*** (0.0023)
+-0.0037** (0.0016)
+-0.0026** (0.0010)
+-3.62e-05 (0.0010)
+-0.0101** (0.0038)
+-0.0134*** (0.0048)
+-0.0105* (0.0052)
+-0.0086** (0.0035)
+-0.0074* (0.0040)
+-0.0103** (0.0050)
+-0.0050 (0.0032)
+-1.73e-07*** (3.83e-08)
+0.0017 (0.0263)
+2436 Sí
+0.727
+
+Fuente: elaboración propia.
+
+35
+
+Es posible abundar en los efectos de las asignaciones del FISM si modificamos levemente la especificación del modelo, desagregando las asignaciones del FISM por año y analizando si considerando asignaciones anuales por separado, se identifican efectos significativos y si, en tal caso, estos son uniformes o cambian en el tiempo.
+Primero realizamos la regresión exploratoria del cambio en el rezago social sobre las asignaciones anuales del FISM a los municipios. Los resultados se muestran en la columna 1 de la Tabla 8. Observamos que este modelo inicial tiene limitado poder explicativo, pues únicamente resulta significativo el monto del FISM asignado en el año 2006 y la R-cuadrada es muy baja.
+Al introducir en el modelo todas las variables de control los resultados mostrados en la columna 2 de la Tabla 8 reflejan una situación desconcertante, pues si bien resultan significativas las asignaciones en los años 2005, 2006 y 2009 los coeficientes tienen signos opuestos que se alternan. Esta situación refleja que al desagregar las aportaciones del FISM por año no se añade fuerza explicativa al modelo, al menos en la variable de interés.
+Para las variables de control, los resultados son esencialmente los mismos que en la estimación con montos acumulados del FISM para el periodo 2005-2009. Asimismo, la R-cuadrada del modelo refleja que el modelo explica un razonable 69.2% de la variabilidad de los datos. Estas características del modelo se mantienen al introducir efectos fijos por estado en la estimación, conforme se aprecia en la comuna 3 de la tabla 8. De hecho, la aportación de los efectos fijos en este modelo con montos desagregados es prácticamente la misma que cuando se incorporan en el modelo con montos acumulados del FISM.
+36
+
+Tabla 8: Estimaciones utilizando los montos anuales del FISM de 2005 a 2009
+
+Cambio en el índice de rezago social absoluto entre 2010 y 2005
+Ln del monto del FISM en el año 2005
+Ln del monto del FISM en el año 2006
+Ln del monto del FISM en el año 2007
+Ln del monto del FISM en el año 2008
+Ln del monto del FISM en el año 2009
+Ln del monto acumulado del FORTAMUN de 2005 a 2009 Ln de la población en 2005
+
+(1)
+0.3471 (0.2986)
+-2.2170* (1.2558)
+1.8371 (1.5050)
+0.0219 (0.0861)
+0.0074 (0.0798)
+
+Porcentaje de la población en localidades de >5mil habitantes en 2005
+Rezago educativo en 2005, porcentaje
+
+Elección de alcaldes mediante los usos y costumbres de la comunidad
+Gobernador del PAN en 2005
+
+Alcalde del PAN en 2005
+
+Gobierno estatal y municipal del mismo partido político en 2005
+Alcalde cursó hasta primaria
+
+Alcalde cursó hasta secundaria
+
+Alcalde cursó hasta escuela técnica
+
+Alcalde cursó hasta preparatoria
+
+Alcalde cursó hasta licenciatura
+
+Alcalde cursó hasta posgrado
+
+Ingresos propios acumulados de 2005-09/ Gasto corriente acumulado de 2005-09
+Incremento porcentual de la población que habita en localidades >5mil habitantes
+
+(2)
+-0.2342*** (0.0468)
+0.2317* (0.1146)
+-0.0157 (0.1144)
+0.0045 (0.0078)
+-0.0176* (0.0089)
+0.0004 (0.0023)
+0.0227*** (0.0042)
+-0.0001* (3.07e-05)
+-0.0020*** (0.0002)
+-0.0120** (0.0048)
+-0.0012 (0.0044)
+-0.0025 (0.0017)
+0.0013 (0.0014)
+-0.0115** (0.0044)
+-0.0127** (0.0056)
+-0.0086 (0.0061)
+-0.0078* (0.0045)
+-0.0066 (0.0046)
+-0.0075 (0.0050)
+0.0108 (0.0081)
+-2.99e-07*** (6.57e-08)
+
+(3)
+-0.1531*** (0.0520)
+0.1942*** (0.0669)
+-0.0508 (0.0497)
+-0.0066 (0.0053)
+-0.0089 (0.0055)
+0.0010 (0.0017)
+0.0166*** (0.0033)
+-0.0001*** (2.93e-05)
+-0.0023*** (0.0001)
+-0.0059** (0.0024)
+-0.0038** (0.0016)
+-0.0026** (0.0009)
+-0.0003 (0.0010)
+-0.0099** (0.0038)
+-0.0131** (0.0048)
+-0.0100* (0.0053)
+-0.0081** (0.0035)
+-0.0072* (0.0041)
+-0.0107** (0.0051)
+-0.0067* (0.0035)
+-1.82e07***
+
+37
+
+Constant
+Observaciones Efectos fijos R2 Errores estándar robustos en paréntesis, agrupados por estado. * p < 0.10, ** p < 0.05, *** p < 0.01
+Fuente: elaboración propia.
+
+-0.2297* (0.1212)
+2435 No 0.107
+
+-0.1257*** (0.0409)
+2435 No 0.692
+
+(3.92e-08)
+-0.0584* (0.0321)
+2435 Sí
+0.729
+
+38
+
+7. Conclusiones
+Mediante una transformación de la medición de rezago social hemos podido establecer que entre 2005 y 2010 se registra en los municipios de México una reducción generalizada y estadísticamente significativa de los niveles de rezago social, a grado tal que el estrato de municipios con peor situación en 2005, el de rezago social muy alto, prácticamente se vacía si fijamos en el tiempo los umbrales de la estratificación del IRS 2005 y analizamos el cambio en el IRSA para las mediciones consecutivas de 2005 y 2010.
+Asimismo, el instrumento para transformar la medición ordinal del rezago social: el vector de ponderadores ajustados ������2005 resultó muy informativo acerca de las verdaderas áreas de oportunidad para la política social, que se ubican en la atención a las condiciones de vivienda, sobre todo en los temas relacionados con la calidad y espacios, así como en el abatimiento del rezago educativo. Destacando que por encima de estas áreas se ubica el potencial de la política económica, con la mejora en los niveles de ingreso.
+El resultado más relevante consiste en la identificación robusta de efectos significativos de las asignaciones del FISM en la mencionada mejora generalizada de la situación de rezago social. Efectos que se presentan a pesar de que en el periodo de análisis el Gobierno Federal emprendió tímidos intentos de rectoría o direccionamiento del gasto de los municipios.
+Asimismo, algunos resultados son sugerentes para nuevas investigaciones que profundicen sobre las características de los municipios o de su población que resultan propicias para presentar mejoras rápidas en la superación de rezagos, o bien sobre el potencial de la profesionalización de las administraciones municipales para impulsar mejoras significativas en la situación de rezago, quizá mediante la integración de canastas óptimas de proyectos de inversión y la adecuada gestión de los mismos.
+En resumen, el gasto de una masa cuantiosa de recursos a través de los gobiernos locales, con una rectoría mínima, ha tenido efectos detectables con los datos disponibles. Lo anterior abre una amplia gama de posibilidades para la política pública y para los tres órdenes de gobierno, pues una
+39
+
+intervención que de manera inteligente propicie la conformación de canastas óptimas de proyectos por parte de entidades federativas y municipios parece tener potencial para hacer una contribución decisiva a la superación definitiva de rezagos. Ello podría concretarse en el transcurso de una generación, o en menos tiempo; se requerirá de una masa crítica de información e investigación, con recomendaciones asertivas y el perfeccionamiento de un marco institucional que, dentro de los principios de una república federal, establezca un mandato claro para atender el problema en forma coordinada y suficiente.
+40
+
+APÉNDICE I CATALOGO DE OBRAS Y ACCIONES FAIS (Publicado en el Diario Oficial de la Federación el 9de junio de 2005) En el presente Catálogo de Obras y Acciones del FAIS se numera de forma extensiva el conjunto de claves que describen las acciones que pueden ser utilizadas con los recursos del Fondo. En la parte final de este anexo se presentan las unidades de medida con las cuales deberán reportarse las metas.
+
+NUEVAS CLAVES
+
+01
+
+AGUA POTABLE
+
+0101 Sistema de Agua Potable
+
+01011
+
+Construcción/Introducción
+
+01012
+
+Rehabilitación/Mantenimiento
+
+01013
+
+Ampliación
+
+0102
+
+Pozo Profundo de Agua Potable
+
+01021
+
+Construcción /Perforación
+
+01022
+
+Rehabilitación/Mantenimiento
+
+01024
+
+Equipamiento
+
+0103
+
+Depósito o Tanque de Agua Potable
+
+01031
+
+Construcción
+
+01032
+
+Rehabilitación/Mantenimiento
+
+01034
+
+Equipamiento
+
+0104
+
+Norias 01041 01042 01044
+
+Construcción Rehabilitación/Mantenimiento Equipamiento
+
+0105
+
+1.5 -Bombas y Equipo
+
+01052
+
+Rehabilitación/Mantenimiento
+
+01054
+
+Equipamiento
+
+0136 0140
+
+Proyectos Ejecutivo Otros (especificar)
+
+02
+
+ALCANTARILLADO
+
+0206 Sistema de Alcantarillado
+
+02061
+
+Construcción/Introducción
+
+02062
+
+Rehabilitación/Mantenimiento
+
+02063
+
+Ampliación
+
+0207
+
+Colectores y Subcolectores
+
+02071
+
+Construcción /Introducción
+
+02072
+
+Rehabilitación/Mantenimiento
+
+0236 0240
+
+Proyecto Ejecutivo Otros (especificar)
+
+03
+
+DRENAJE Y LETRINAS
+
+0308 Red de Drenaje Pluvial
+
+03081
+
+Construcción/Introducción
+
+SISTEMA, M SISTEMA, M SISTEMA, M
+POZO POZO POZO
+TANQUE, M3 TANQUE, M3 TANQUE, M3
+NORIA NORIA NORIA
+EQUIPO EQUIPO
+M, POZOS DE VISITA M, POZOS DE VISITA M, POZOS DE VISITA
+M, POZOS DE VISITA M, POZOS DE VISITA PROYECTO
+M, REJILLAS, POZOS DE VISITA
+41
+
+03082 03083
+
+Rehabilitación o Mantenimiento Ampliación
+
+M, REJILLAS, POZOS DE VISITA M, REJILLAS, POZOS DE VISITA
+
+0309
+
+Red de Drenaje Sanitario
+
+03091
+
+Construcción/Introducción
+
+03092
+
+Rehabilitación o Mantenimiento
+
+03093
+
+Ampliación
+
+M, REJILLAS, POZOS DE VISITA M, REJILLAS, POZOS DE VISITA M, REJILLAS, POZOS DE VISITA
+
+0310
+0336 0340
+
+Letrinas
+
+03101
+
+Construcción
+
+03102
+
+Rehabilitación o Mantenimiento
+
+Proyecto Ejecutivo
+
+Otros (especificar)
+
+LETRINA LETRINA
+
+04
+
+URBANIZACION MUNICIPAL
+
+0411 Calles y caminos
+
+04111
+
+Construcción
+
+0411101
+
+0411102
+
+0411103
+
+0411104
+
+0411105
+
+0411106
+
+0411107
+
+0411108
+
+0411109
+
+Concreto Hidráulico Concreto Asfáltico Adoquinamiento o Empedrado Aceras o Banquetas Bacheo Cunetas (instalación) Topes (instalación) Camellones Señalización
+
+M2 M2 M2 M2 M2 M2 M2 M2 SEÑALES
+
+0412 Puentes Peatonales o vehiculares
+
+04121
+
+Construcción
+
+M2
+
+04122
+
+Rehabilitación/Mantenimiento
+
+M2
+
+0413 Pasos Peatonales y/o Vehiculares
+
+04131
+
+Construcción
+
+M2
+
+04132
+
+Rehabilitación/Mantenimiento
+
+M2
+
+0414 Relleno Sanitario
+
+04141
+
+Construcción
+
+M3
+
+04142
+
+Rehabilitación o Mantenimiento
+
+M3
+
+04144
+
+Equipamiento
+
+M3
+
+0415
+
+Tratamiento de Aguas Residuales
+
+04151
+
+Construcción
+
+0415110
+
+0415111
+
+0415112
+
+Planta de Tratamiento
+Laguna de Oxidación Laguna de Estabilización
+
+PLANTA, M2 , M3 PLANTA, M2 , M3
+PLANTA, M2, M3
+
+04152
+
+Mantenimiento/Rehabilitación
+
+0415210
+
+Planta de Tratamiento
+
+0415211 0415212
+
+Laguna de Oxidación
+Laguna de Estabilización
+
+PLANTA, M2, M3 PLANTA, M2, M3
+PLANTA, M2, M3
+
+04153
+
+Ampliación 0415310 0415311
+0415312
+
+Planta de Tratamiento
+Laguna de Oxidación Laguna de Estabilización
+
+PLANTA, M2, M3 PLANTA, M2, M3
+PLANTA, M2, M3
+
+42
+
+0436 0440
+
+Proyecto Ejecutivo Otros (especificar)
+
+PROYECTO
+
+05
+
+ELECTRIFICACION RURAL Y DE COLONIAS POBRES
+
+0519 Red de Electricidad
+
+05191
+
+Construcción (Introducción)
+
+M
+
+05192
+
+Rehabilitación o Mantenimiento
+
+M
+
+05193
+
+Ampliación
+
+M
+
+0520 Alumbrado Público
+
+05201
+
+Construcción (Introducción)
+
+M
+
+05202
+
+Rehabilitación o Mantenimiento
+
+M
+
+05203
+
+Ampliación
+
+M
+
+0540 Otros (especificar)
+
+06
+
+INFRAESTRUCTURA BASICA DE SALUD
+
+0621 Centros de Salud
+
+06211
+
+Construcción
+
+06212
+
+Rehabilitación/Mantenimiento
+
+06213
+
+Ampliación
+
+06214 06215
+
+Equipamiento Otros
+
+M2 M2 M2 APARATOS
+
+0622
+
+Dispensario Médico y Unidades Médicas Rurales
+
+06221
+
+Construcción
+
+06222
+
+Rehabilitación/Mantenimiento
+
+06223 06224 06225
+
+Ampliación Equipamiento Otros
+
+M2 M2 M2 APARATOS
+
+0623
+
+Laboratorios de análisis clínicos
+
+06231
+
+Construcción
+
+06232
+
+Rehabilitación/Mantenimiento
+
+06233
+
+Ampliación
+
+06234 06235
+
+Equipamiento Otros
+
+M2 M2 M2 APARATOS
+
+0636 0640
+
+Proyecto Ejecutivo Otros (especificar)
+
+07
+
+INFRAESTRUCTURA BASICA EDUCATIVA
+
+0724 Aulas
+
+07241
+
+Construcción
+
+0724113
+
+Preescolar
+
+M2
+
+0724114
+
+Primaria
+
+M2
+
+0724115
+
+Secundaria
+
+M2
+
+07242
+
+Mantenimiento/Mejoras Diversas
+
+0724213
+
+Preescolar
+
+M2
+
+0724214
+
+Primaria
+
+M2
+
+0724215
+
+Secundaria
+
+M2
+
+07244
+
+Equipamiento
+
+0724313
+
+Preescolar
+
+M2
+
+0724314
+
+Primaria
+
+M2
+
+0724315
+
+Secundaria
+
+M2
+
+43
+
+0725
+
+Sanitarios dentro de escuelas
+
+07251
+
+Construcción
+
+0725113
+
+0725114
+
+0725115
+
+Preescolar Primaria Secundaria
+
+07252
+
+Mantenimiento/Mejoras Diversas
+
+0725213
+
+Preescolar
+
+0725214
+
+Primaria
+
+0725215
+
+Secundaria
+
+0726
+
+Bardas de escuela
+
+07261
+
+Construcción
+
+0726113
+
+0726114
+
+0726115
+
+Preescolar Primaria Secundaria
+
+07262
+
+Mantenimiento/Mejoras Diversas
+
+0726213
+
+Preescolar
+
+0726214
+
+Primaria
+
+0726215
+
+Secundaria
+
+0727
+
+Escaleras y andadores dentro de escuelas
+
+07271
+
+Construcción
+
+0727113
+
+Preescolar
+
+0727114
+
+Primaria
+
+0727115
+
+Secundaria
+
+07272
+
+Mantenimiento/Mejoras Diversas
+
+0727213
+
+Preescolar
+
+0727214
+
+Primaria
+
+0727215
+
+Secundaria
+
+0736 0740
+
+Proyecto Ejecutivo Otros (especificar)
+
+08
+
+MEJORAMIENTO DE VIVIENDA
+
+0829 Piso Firme
+
+082901
+
+Construcción
+
+082902
+
+Ampliación
+
+0830 Vivienda
+
+08301
+
+Construcción
+
+08302
+
+Rehabilitación/ Mejoras Diversas
+
+08303
+
+Ampliación de Vivienda
+
+09
+
+CAMINOS RURALES
+
+0931 Caminos Rurales
+
+09311
+
+Construcción
+
+09312
+
+Rehabilitación/Mejoras Diversas
+
+09313
+
+Ampliación
+
+0936 0940
+
+Proyecto Ejecutivo Otros (especificar)
+
+M2, INODOROS M2, INODOROS M2, INODOROS
+M2, INODOROS M2, INODOROS M2, INODOROS
+M2 M2 M2
+M2 M2 M2
+M2 M2 M2
+M2 M2 M2
+M2 M2
+M2
+M2 M2 M2
+
+44
+
+10
+
+INFRAESTRUCTURA PRODUCTIVA RURAL
+
+1032 Desarrollo de Areas de Riego
+
+10322
+
+Rehabilitación/Mejoras Diversas
+
+1032216
+
+Nivelación de tierras
+
+HECTAREA
+
+10324
+
+Equipamiento o Instalación
+
+1032417
+
+Perforación y/o equipamiento de pozos
+
+POZO
+
+1033
+
+Desarrollo de Areas de Temporal
+
+10332
+
+Rehabilitación/Mejoras Diversas
+
+1033218
+
+Conservación del Suelo y el Agua
+
+1036 1040
+
+Proyecto Ejecutivo Otros (especificar)
+
+11
+
+GASTOS INDIRECTOS
+
+1134 1135 1136
+1137
+1140
+
+Mantenimiento de Vehículos Estudios de Factibilidad de las Obras Proyecto Ejecutivo
+Evaluación y Seguimiento
+Otros
+
+VEHICULOS ESTUDIOS, PROYECTOS PROYECTO ESTUDIOS, INFORMES, AUDITORIAS, ETC.
+
+12
+
+PROGRAMAS DE DESARROLLO INSTITUCIONAL
+
+1238 1239
+
+Gestión y Administración Servicios (cursos, conferencias, teleconferencias, etc.)
+
+CURSOS
+
+METAS UNIDADES m m2 m3 l pozo bomba tanque noria sistema rejillas inodoros planta agua hectáreas estanque agrupaciones cursos
+
+SIGNIFICADO Metros lineales Metros cuadrados
+Metros cúbicos litros pozo de agua bombas de agua depósito o tanque de agua noria Sistema de drenaje, alcantarillado, agua o electrificación Rejillas de alcantarillado inodoros o sanitarios planta tratamiento de agua
+estanque o embarcadero agrupaciones de productores cursos, seminarios, etc.
+
+45
+
+Apéndice II Estadística descriptiva de las variables incluidas en el modelo
+
+Variable
+Monto acumulado del FORTAMUN de 2005 a 2009 Población en el municipio en 2005 Porcentaje de la población en localidades de >5mil habitantes en 2005 Porcentaje de la población con rezago educativo en 2005 Elección de alcaldes mediante los usos y costumbres de la comunidad Gobernador del PAN en 2005
+Alcalde del PAN en 2005 Gobierno estatal y municipal del mismo partido político en 2005 Alcalde cursó hasta primaria
+Alcalde cursó hasta secundaria
+Alcalde cursó hasta escuela técnica
+Alcalde cursó hasta preparatoria
+Alcalde cursó hasta licenciatura
+Alcalde cursó hasta posgrado Ingresos propios acumulados de 2005-09 / Gasto corriente acumulado de 2005-09 Incremento porcentual de la población que habita en localidades >5mil habitantes
+
+N 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436 2436
+
+Media
+
+Desviación estándar
+
+Mínimo
+
+74.99 221.29 0.47
+
+Máximo 3,367.56
+
+38,721.96 115,582.60 102.00 1,688,258.00
+
+73.66
+
+34.31 0.00
+
+100.00
+
+62.69
+
+13.79 17.90
+
+96.00
+
+0.17
+
+0.38 0.00
+
+1.00
+
+0.19
+
+0.39 0.00
+
+1.00
+
+0.22
+
+0.42 0.00
+
+1.00
+
+0.43
+
+0.49 0.00
+
+1.00
+
+0.21
+
+0.40 0.00
+
+1.00
+
+0.12
+
+0.33 0.00
+
+1.00
+
+0.04
+
+0.21 0.00
+
+1.00
+
+0.11
+
+0.31 0.00
+
+1.00
+
+0.47
+
+0.50 0.00
+
+1.00
+
+0.04
+
+0.19 0.00
+
+1.00
+
+0.22
+
+0.18 0.00
+
+2.63
+
+55.86 2,603.68 -100.00 128,429.00
+
+46
+
+Referencias
+Almejo, R., Y. Téllez y J. López (2013), “Índice Absoluto de Marginación 2000-2010”, México; Consejo Nacional de Población. Cárdenas, O. (2010) “Cardenalización del índice de marginación: una metodología para evaluar la eficiencia del gasto ejercido en el Ramo 33” Guadalajara; EconoQuantum, vol. 7, núm. 1. Chiapa, C. y C. Vázquez (2011), “Evaluación Ramo 33”, en: Estudios del Ramo 33, México; El Colegio de México, Centro de Estudios Económicos: Consejo Nacional de Evaluación de la Política de Desarrollo Social; pp. 17-64. Díaz, A. y Silva, S. (2004), “Descentralización a escala municipal en México: La Inversión en Infraestructura Social”, México; Serie estudios y perspectivas, Comisión Económica para América Latina y el Caribe (CEPAL). Hernández, F. y Jarillo, B. (2007), “Transferencias condicionadas federales en países en desarrollo: El caso del FISM en México”, México; Estudios Económicos, vol. 22, núm. 2, pp. 143-184. Gonzalez-Navarro, M. y C. Quintana – Domeque (2012), “Paving streets for the Poor: Experimental Analysis of Infrastructure Effects,” Working Paper, University of Toronto. pp. 1-49. Lasa, A.J. (1992), “Tres años de estabilización concertada en México, 1988-1990”, México; Investigación Económica 201, julio-septiembre de 1992. López-Acevedo, G. y Webb, S. (2006), “Mexico – Descentralized service delivery for the poor: Core report” México, Banco Mundial. Moreno, C. (2011), “Eficacia de la descentralización en la provisión de servicios municipales”, Estudios del Ramo 33, México; El Colegio de México, Centro de Estudios Económicos: Consejo Nacional de Evaluación de la Política de Desarrollo Social; pp. 145-176. Rojas, C. (1992), “El Programa Nacional de Solidaridad: hechos e ideas en tormo a un esfuerzo”, México; Comercio Exterior, vol. 42, núm. 5. Rojas-Suárez, L. (1993), “De la crisis de la deuda a la estabilidad económica: un análisis de la congruencia de las políticas macroeconómicas en México”, México; Economía Mexicana. Nueva Época, vol. II, núm. 2, julio-diciembre de 1993. Scott J. (2004), “La descentralización, el gasto social y la pobreza en México”, México; Gestión y Política Pública, Vol. XIII, 3. pp. 785-837.
+47
+
+Índice de tablas
+1. Indicadores carenciales utilizados por el CONEVAL para el cálculo de IRS 2005 ………… 19 2. Ponderadores ajustados, 2005…………...…………………………………………………….... 22 3. Estratificación del IRS 2005…..……………………………………………………….…….….. 26 4. Estratificación del IRSA 2005…………………………………………………….….…………. 27 5. Estratificación del IRSA 2010 con umbrales del IRSA 2005…………………….…..……….. 27 6. Variables control incluidas en el modelo……………...……………………….………………. 31 7. Estimaciones utilizando el monto acumulado del FISM de 2005 a 2009 ................................ 35 8. Estimaciones utilizando los montos anuales del FISM de 2005 a 2009…………………….… 37
+Índice de gráficas
+1. Estructura del vector de ponderadores ajustados w2005…..............................,……….............. 23 2. Comparación de densidades del IRSA, 2005 vs 2010………………………………….……….. 25
+48
+
+

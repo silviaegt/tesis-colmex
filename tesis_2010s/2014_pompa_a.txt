@@ -1,0 +1,1438 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+WHAT DOES BANXICO CARE ABOUT? BAYESIAN ESTIMATION OF THE PREFERENCES OF THE MEXICAN CENTRAL BANK
+ANTONIO POMPA RANGEL
+PROMOCIÓN 2012-2014
+ASESOR:
+ALEXANDER MIHAILOV
+JULIO 2014
+
+Agradecimientos Primero que nada, agradezco a El Colegio de México por permitirme formar parte de esta prestigiosa institución. A los profesores del Centro de Estudios Económicos, quienes siempre se mostraron abiertos a la discusión y al diálogo. Quiero agradecer especialmente a Raymundo, porque al mismo tiempo que exigía resultados ofrecía su apoyo incondicional a todos los alumnos; a Gerardo, una fuente invaluable de información e ideas; a Stephen, porque a pesar de la ausencia de su nombre en la portada, sin sus comentarios y su clase esta tesis no hubiera sido posible. A mi asesor, Alexander, quien me dio total libertad de explorar por mi cuenta, y que al mismo tiempo tuvo la paciencia de revisar cada uno de los reportes que le envié. A mis compañeros y amigos, quienes me ayudaron a mantener la cordura durante las semanas más difíciles y de quienes aprendí mucho en estos dos años. La lista es larga pero ustedes saben quiénes son. A mis hermanos, Fernando y Alejandro por acompañarme en cada etapa de mi vida. Espero haber dado un buen ejemplo como hermano mayor. A Mariana, porque nunca dudaste de mis capacidades (incluso cuando yo llegué a dudar). Gracias por tu infinita paciencia. Sé que tuvimos muchas noches en el que el sonido del teclado y mis lamentos ocasionales te solían despertar. Fueron dos años en los que pasamos por algunos baches, algunos momentos felices (y más baches), pero al final lo hicimos juntos, lo logramos. Gracias por crear una atmósfera en la que el trabajo duro se volvió sencillo. A Luna, eres lo más hermoso de mi corta vida. Saber que al final de un día de trabajo tu sonrisa me espera en casa fue, sigue y seguirá siendo mi más grande motivación. Por último, quiero agradecer y dedicar esta tesis a mis padres, Rosaura y Antonio, que a pesar de su humilde origen, vencieron toda estadística económica e hicieron hasta lo imposible para que mi educación y mi entorno fueran mucho mejores que los de ellos. Gracias por su cariño y generosidad, que siempre me han impulsado a seguir mis sueños.
+i
+
+Resumen El objetivo principal de este trabajo es estimar las preferencias que Banco de México tiene sobre cuatro objetivos distintos de política monetaria: estabilización del crecimiento, control de la inflación, “suavizamiento” de la tasa de interés y reducción de la volatilidad del tipo de cambio. Específicamente, analizo el periodo de 2000 a 2013, desde la adopción del régimen de objetivos de inflación por parte de Banco de México. Para esto, utilizo un modelo macroeconómico Nuevo Keynesiano para una economía pequeña y abierta y es estimado utilizando técnicas Bayesianas. Los resultados permiten afirmar que si bien el principal objetivo de política monetaria en México es la estabilización de la inflación, existen otros objetivos subyacentes que también son importantes para el banco central mexicano.
+Abstract The main objective of this work is to estimate the preferences the Mexican Central Bank over four different objectives of monetary policy: growth stabilization, inflation control, interest rate "smoothing", and reduction of exchange rate volatility. Specifically, I analyze the period 20002013, since the adoption of the inflation targeting regime by Banco de México. For this, I use a New Keynesian macroeconomic model for a small open economy and it is estimated using Bayesian techniques. The results show that even if the main objective of monetary policy in Mexico has been inflation stabilization, there are other underlying objectives which are also important for the Mexican central bank.
+ii
+
+Contents
+
+1 Introduction
+
+2
+
+2 Literature Review
+
+4
+
+3 Theoretical Model
+
+7
+
+3.1 Households . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3.2 International Risk Sharing and Relative Prices . . . . . . . . . . . . . . . . . . . 9
+
+3.3 Domestic Producers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+3.4 Import Retail Firms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+3.5 Market Clearing Conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+3.6 Log-linear model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+3.7 Central Bank Optimization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+4 Estimation
+
+18
+
+4.1 Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+4.2 Methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+4.3 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+
+5 Conclusions
+
+22
+
+Appendix A. Dennis (2007) Optimal time-consistent monetary policy
+
+24
+
+Appendix B. Kam, Lees, and Liu (2009) Pseudo-code for MCMC procedure 24
+
+References
+
+26
+
+6 Figures and Tables
+
+32
+
+1
+
+1 Introduction
+Although the Mexican Central Bank (Banxico) was created in 1925, it only acquired its independence in 1994. Along with their autonomy, Banxico received its primary and only objective in terms of monetary policy: to maintain the stability of prices.1 The new institutional framework paved the way for a later implementation of the inﬂation targeting (IT) regime, a system widely used by developed and developing countries.
+Even though there has not been any major problem with inﬂation since the instalment of IT in 2001, Mexico has been struck with some economic recessions and decelerations during this period, the last one of them being in 2013. The Survey on the Expectations of Private Sector Economics Specialists published by Banxico in January of 2013 states that specialists expected a growth rate of 3.55%, but the actual performance, according to oﬃcial estimates, was a modest growth of 1.1%.2 Favoring (recently) the short-term nominal interest rate as policy instrument, Banxico explicitly aims to achieve the convergence of inﬂation to its target level in the medium-run. However, it is plausible that implicit additional objectives also guide policy. During 2013, Banxico reduced three times the interest rate, maybe showing some concern over the negative output gap. Although inﬂation hasn’t gone over the 3% limit, this behavior might suggest some preferences of the Mexican Central Bank over economic growth.
+In this paper, I estimate Banxico’s preferences under the IT regime over four speciﬁc policy objectives: inﬂation control, output stabilization, exchange rate volatility reduction and targeted interest rate smoothing. Speciﬁcally, I follow the work of Kam, Lees and Liu (2009), which uses as a theoretical basis a New Keynesian Dynamic Stochastic General Equilibrium (DSGE) model for a small open economy and Bayesian methods for the estimation stage. I aim to study what policy goals are important for Banxico, assuming a monetary policy that systematically minimizes an intertemporal quadratic loss function under discretion in a forward-looking model.
+How can Banxico aim for other policy objectives when the law clearly states that there shouldn’t be any other objective but reducing inﬂation? As Svensson (1999) argues, IT can be interpreted as the announcement and assignment of a relatively speciﬁc loss function to be minimized by the central bank. The loss function can include other variables, not just inﬂation. However, we don’t know which variables do enter in the loss function. Monetary
+1The exact words are “to maintain the stability of the purchasing power of the local currency”, stated in Article 2 in the Act of Banco de M´exico.
+2As stated by the oﬃcial bulletin number 95/14, published by the National Institute of Statistics and Geography (INEGI) in februrary of 2014.
+2
+
+policy makers are hardly transparent with respect to their preferences. Banxico has a clear price stability mandate and publicly announces a numerical inﬂation target, but it is much less explicit with respect to other goals. This is not particular of the Mexican case, it is easily notable for other countries that work under a “ﬂexible” IT.3 In other words, from the perspective of IT, policymakers use their monetary policy instruments to achieve targets for variables such as inﬂation or output. The weight assigned to each objective depends on the institutional preferences assigned to the achievement of the aforementioned goals. What if Banxico gives a relatively high weight, not only to stabilizing prices, but also to stabilizing output or minimizing exchange rate volatility? Determining the preferences of the central bank allows us to know what variables it does consider relevant. Is the obtained result something which was actually sought by the Central Bank or just a favorable random circumstance?
+This paper contributes to the current literature by oﬀering a ﬁrst study for the Mexican case. As Castelnuovo and Surico (2003) point out, estimating a central bank’s preference parameter can be substantially informative for three reasons. First, it improves our understanding of policy actions. Banxico’s decisions can be more easily interpreted once its objectives are identiﬁed. Second, it helps to evaluate the performance of Banxico’s monetary policy by comparing the actual result to the targeted objectives. Finally, we can compare optimal and observed interest rates, since an optimal rule can only be derived once we know the preference parameters.
+It is important to note that while I intend to show information on Banxico’s policy preferences since IT instalment in 2001, I do not intend to make any value judgement on these preferences. There is plenty of literature that has already studied the performance of IT in Mexico and other countries (e. g. Ball and Reyes, 2004; Capistra´n and Ramos-Francia, 2010; Carrasco and Ferreiro, 2013). The sole objective of this work is to uncover Banxico’s preferences over certain macroeconomic objectives.
+Using DSGE models presents some advantages over other methods used in the current central bank preference estimation literature. By incorporating forward looking variables, DSGE models are not vulnerable to the Lucas critique and they allow us to examine social welfare.
+In this particular work, Kam, Lees and Liu (2009) model of a small open economy with low exchange rate pass-through, based on Monacelli (2005), provides an excellent framework for the Mexican case. Some authors have already shown incomplete exchange rate pass-through
+3As a matter of fact, New Zealand, the ﬁrst country to work under an IT regime, includes a clause in its Policy Targets Agreements, declaring that as the Central Bank implements monetary policy to achieve price stability, it “shall seek to avoid unnecessary instability in output, interest rates and the exchange rate”.
+3
+
+in Mexico. Capistra´n et al. (2011) ﬁnd that exchange rate pass-through to consumer prices is below 20 percent, while Cort´es-Espada (2013) ﬁnds that exchange rate pass-through to the general price level is low and not statistically signiﬁcant.
+In spite of the advantages that DSGE models present, given the highly nonlinear nature of these models, estimation by traditional methods is often diﬃcult if not impossible. As An and Schorfheide (2007) describe, econometrics on DSGE models have to cope with several challenges, including potential model misspeciﬁcations and identiﬁcation problems. A Bayesian framework will allow us to overcome these hurdles.
+The paper is organized as follows. Section 2 describes the related literature. Section 3 introduces the theoretical model. Section 4 describes the data and explains the estimation strategy. Section 5 shows my main results and Section 6 concludes.
+2 Literature Review
+Ever since the seminal work of Taylor (1993), some speciﬁc monetary rules have been proposed to describe the response of central banks to economic variables. In DSGE models, central bank behavior is often modeled by some type of reduced-form monetary rule. Nonetheless, the coeﬃcients estimated for these rules do not necessarily reﬂect the Central Bank’s preferences. Changes in the policy rule could originate because of changes in the economic structure or from changes in policy preferences.
+One of the ﬁrst studies to report estimates of the preferences of a monetary authority is Salemi (1995). He uses a vector autoregressive model to estimate the objectives of the U.S. Federal Reserve (FED). Since then, a considerable number of researchers have focused on policymaker’s preferences for the American case. For example, Favero and Rovelli (2003), Castelnuovo and Surico (2004) and Dennis (2006) use a three-equation New Keynesian framework4 and ﬁnd that during the Volcker-Greenspan period, contrary to the FED’s double mandate, a very small or insigniﬁcant weight was given to output stabilization. Soderlind et al. (2002), show that the low (or zero) weight assigned to output stabilization is necessary to match the low volatility in inﬂation and the high volatility in output that are observed in US data. In addition to these results, Dennis (2006) ﬁnds that the FED assigns a high weight to interest rate smoothing. Using a diﬀerent methodology, Kilian and Manganelli (2008) study the FED’s
+4Namely, an aggregate demand, an aggregate supply equation and a monetary rule equation that solves for central bank’s optimization problem.
+4
+
+policy actions as the outcome of a risk management problem and estimate the risk aversion parameters of the FED during the Greenspan period.
+Even though many papers focus on the FED, there has been a growing literature that tries to estimate central bank preferences for other countries’ central banks. Assenmancher-Wesche (2006) estimates the monetary policy reaction functions for the US, the United Kingdom, and Germany, using a Markov-switching model that allows for shifts in the coeﬃcients of the central bank’s reaction function. This work shows that the Bundesbank has placed a relatively higher weight on inﬂation than the FED. Cecchetti and Ehrmann (1999) estimate preferences for 23 countries (including inﬂation targeters like Australia, Canada, Chile and New Zealand). They ﬁnd evidence that aversion to inﬂation variablility rises substantially immediately after the targeting regime is implemented. Cecchetti et al. (2002) estimate preferences for central banks of countries in the European Monetary Union. In both studies, the authors use a structural VAR that has little dynamic structure. Based on Cecchetti et al. (2002), Arestis et al. (2010) estimate central bank preferences of the Euro area and the UK. They introduce dynamics into the model and allow policy preferences to be asymmetric. They ﬁnd that the Euro countries put more weight on inﬂation than the UK. Tachibana (2003) estimates the preferences for Japan, the UK and the U.S. He puts special attention to the period after the ﬁrst oil shock and shows that these countries increased their aversion to inﬂation volatility due to this shock. Rodriguez (2006) estimates the preferences for the Bank of Canada for diﬀerent subsamples and ﬁnds evidence that the parameter associated with the implicit inﬂation target has signiﬁcantly decreased.
+A small portion of this literature has focused on Latin-American countries, maybe due to the instalment of an IT regime in many of them.5 Silva and Portugal (2009) and Cabrera et al. (2012) identify the preferences of the Central Bank of Brazil and for the Central Reserve Bank of Peru, respectively. They both use a relatively simple calibration process for the Rudebusch and Svensson (1998) four-equation model. As far as I know, nothing of this sort has been done for the Mexican case.
+Despite the recent popularity of DSGE models and Bayesian estimation, few works have used them for central bank’s preferences estimation. Kam, Lees and Liu (2009) is the ﬁrst to estimate the central bank preferences for Australia, New Zealand and Canada; three of the
+5According to Schmidt et al. (2002), IT in Latin-America has been adopted by Chile (in 1990), Peru (1994), Mexico (1999), Brazil (1999), and Colombia (1999).
+5
+
+major small open economies that operate under the IT regime. The authors use a DSGE model based on Monacelli (2005), adding a central bank that minimizes a quadratic loss function under the discretionary case. Similarly, Remo and Vasicek (2009) use the DSGE model based on Gali and Monacelli (2008) for the Czech National Bank. For this paper, I will follow the methodology proposed by Kam, Lees and Liu (2009).
+In DSGE empirical applications, the estimation strategy plays a very importante role. Since the seminal work of Kydland and Prescott (1982), trying to use DSGE models as foundational empirical models, new methodologies were developed. The present empirical methodologies have been used in this literature: calibration, general method of moments, maximum likelihood (ML) estimation, and Bayesian estimation.6
+Similar to my current approach, Ilbas (2010) and Ilbas (2012) estimate the preferences for the European Central Bank (ECB) and the FED using Bayesian techniques, respectively. Ilbas (2010) uses the famous Smets and Wouters (2003) model for the Euro area, while Ilbas (2012) uses Smets and Wouters (2007) model for the US. A key diﬀerence from Kam, Lees and Liu (2009) is that she assumes optimal monetary policy under commitment, while the latter uses discretion.
+Bayesian estimation provides some advantages over the aforementioned methods. Speciﬁcally, Mancini (2013) mentions ﬁve. First, as opposed to other estimation strategies based on particular equilibrium relationships, Bayesian estimation ﬁts the complete, solved DSGE model.
+Second, when using ML, data may not be informative enough and the likelihood function can be ﬂat in some directions, thus presenting a problem of identiﬁcation. Prior distributions used in Bayesian methods allow the posterior distribution to avoid peaking at strange points.
+Third, if we estimate parameters using ML a problem of identiﬁcation may arise. The posterior distribution of a parameter can be ﬂat over a subspace, complicating numerical maximization. As we add prior distributions we also add enough curvature in the posterior distribution to facilitate numerical maximization.
+Fourth, DSGE models are often misspeciﬁed. Bayesian methods addresses this problem by adding shocks, which can be interpreted as observation errors.
+Finally, when using Bayesian estimation with diﬀerent models we can estimate diﬀerent models and determine which model best ﬁts the data.
+6Dennis (2004, 2006) and Ozlale (2003) use maximum likelihood; Favero and Rovelli (2003), on general method of moments; Soderlind et al. (2002) and Castelnuevo and Surico (2003), on a calibration process.
+6
+
+3 Theoretical Model
+As we have described before, the Kam, Lees and Liu (2009) paper is based on Monacelli (2005) and is very similar to Justiniano and Preston (2010) model. This model follows the New Keynesian approach to macroeconomics. Some key elements and properties are monopolistic competition and nominal rigidities. Short run non-neutrality of monetary policy arises as a consequence of these features. Because monetary policy plays a fundamental role, New Keynesian models have emerged as the workhorse for the analysis of monetary policy and its implications for inﬂation, economic ﬂuctuations, and welfare.7
+Particularly, an important feature of this model is the existence of incomplete exchange rate pass-through. Allowing for deviations from the law of one price will generate a trade-oﬀ between the output gap and stabilization of inﬂation. Monacelli’s (2005) original model only assumed an empirical Taylor rule to describe the behavior of the monetary authority. Obviously, as we are interested in Banxico’s preference parameters we will need to add an optimizing monetary authority that minimizes a loss function.
+The model consists of four agents: households, domestic ﬁrms, importing ﬁrms and the central bank. We will now describe the economic behavior of each one of them.
+
+3.1 Households
+
+The economy is populated by inﬁnitely-lived households who maximize the period utility
+
+U (Ct, Ht, Nt)
+
+=
+
+(Ct
+
+− Ht)1−σ 1−σ
+
+−
+
+Nt1+ϕ , 1+ϕ
+
+(1)
+
+where Ct is an index of consumption goods, Nt is the labor input and Ht ≡ hCt−1 is an external habit stock taken as exogenous by the household.8 Parameter h measures the degree of habit persistence. The parameters σ, ϕ > 0 are the inverse elasticities of intertemporal substitution and labor supply, respectively. The consumption composite index Ct is given by
+
+η−1
+
+η−1
+
+Ct =
+
+(1
+
+−
+
+α)
+
+1 n
+
+CHη,t
+
++
+
+α
+
+1 n
+
+CF,ηt
+
+,
+
+(2)
+
+7For an extensive discussion on New Keynesian modelling and their advantages, see Gal´ı and Gertler (2007). 8Past research on household consumption and asset choices has found that habits may be an essential part of household preferences. See for example Campbell and Cochrane (1999) regarding the equity premium puzzle and Fuhrer (2000) for a discussion in the context of consumption behavior.
+
+7
+
+where α ∈ [0, 1] is the share of foreign goods in the domestic consumption bundle. Under this speciﬁcation, η > 0 measures the elasticity of substitution between domestic and foreign goods. CH and CF are the typical Dixit-Stiglitz aggregates of domestic and imported goods:
+
+1
+
+ε−1
+
+ε ε−1
+
+1
+
+ε−1
+
+ε ε−1
+
+CH,t =
+
+CH,t(i) ε di
+
+; CF,t =
+
+CF,t(j) ε dj .
+
+(3)
+
+0
+
+0
+
+Notice that similar to η, ε > 1 measures the elasticity of substitution between types of diﬀerentiated domestic or foreign goods (elasticity of substitution between goods within each good category H and F ).
+Let Bt be an Arrow security that pays out contingent on the state of the world. The stochastic discount factor is EtQt,t+1 and it will be inversely related to the gross return on a nominal riskless one period bond, EtQt,t+1 = Rt−1. Thus, the household solves the following Bellman equation
+
+V (Bt, Ht) = max U (Ct, Ht, Nt) + βEt[V (Bt+1, Ht+1)] where β ∈ (0, 1)
+
+(4)
+
+Ct,Nt
+
+subject to the budget constraint
+
+11
+
+Bt ≥
+
+[PH,t(i)CH,t(i) + PF,t(j)CF,t(j)]didj + EtQt,t+1Bt+1 − WtNt,
+
+(5)
+
+00
+
+for all t > 0, where B0 is given and WtNt is the total wage income. PH,t(i) and PF,t(j) are the prices for each diﬀerentiated home and foreign good of type i ∈ [0, 1] and j ∈ [0, 1], respectively.
+The household optimally decides the expenditures across all types of domestic and foreign goods. First, we obtain the following demand functions for each diﬀerentiated good
+
+CHt (i) =
+
+PH,t(i) PH,t
+
+−ε
+CH,t,
+
+CFt (j) =
+
+PF,t(j) PF,t
+
+−ε
+CH,t
+
+(6)
+
+for all i, j ∈ [0, 1], where the associated aggregate price indexes PH,t and PF,t are given by
+
+1
+
+1
+
+1
+
+1−ε
+
+1
+
+1−ε
+
+PH,t =
+
+PH,t(i)1−εdi
+
+and PF,t =
+
+PF,t(j)1−εdj
+
+.
+
+(7)
+
+0
+
+0
+
+Similarly, we can also obtain the optimal consumption demand for domestic and foreign
+
+8
+
+goods, given by
+
+CH,t = (1 − α)
+
+PH,t Pt
+
+−η
+Ct
+
+,
+
+CF,t = α
+
+PF,t Pt
+
+−η
+Ct
+
+(8)
+
+If we substitute (8) into (2), we obtain the consumer price index (CPI)
+
+1
+
+Pt = (1 − α)PH1−,tη + αPF1,−t η . 1−η
+
+(9)
+
+The next optimality condition relates labor supply to the real wage at any time t (intratem-
+
+porally)
+
+(Ct
+
+− Ht)σNtϕ
+
+=
+
+Wt , Pt
+
+(10)
+
+that is, the marginal rate of substitution between consumption and leisure must be equal to the
+
+marginal product of labor. As households optimize both intratemporally and intertemporally,
+
+we add the last optimality condition
+
+β
+
+Ct+1 − Ht+1 −σ Ct − Ht
+
+Pt Pt+1
+
+= Qt,t+1,
+
+(11)
+
+which is satisﬁed for all dates and states t ∈ N. Taking conditional expectations to (11) yields the next stochastic Euler equation
+
+βRtEt
+
+Ct+1 − Ht+1 −σ Pt
+
+Ct − Ht
+
+Pt+1
+
+= 1.
+
+(12)
+
+3.2 International Risk Sharing and Relative Prices
+
+A representative agent in the rest of the world faces the same optimization problem to the small
+open economy. The only diﬀerence is that the rest of the world is the limiting case of a closed economy, that is α∗ → 1.9
+As the optimization process is the same, ﬁrs-order conditions given by (10) and (11) also
+hold. Remember that the discount factor Qt.t+1 is inversely related to the nominal riskless bond. Denoting foreign variables and parameters with an asterisk, and assuming complete
+9As Monacelli (2005) notes, this is a world of two asymmetric countries in which one is small relative to the other. Small open economy models with incomplete markets traditionally suﬀer a unit-root problem. The setup used in this work overcomes this limitation.
+
+9
+
+international markets and identical global preferences, we get perfect risk sharing from (11)
+
+β
+
+Ct+1 − Ht+1 −σ Ct − Ht
+
+Pt Pt+1
+
+= Qt,t+1 = β
+
+Ct∗+1 − Ht∗+1 −σ Ct∗ − Ht∗
+
+Pt∗ Pt∗+1
+
+e˜t . e˜t+1
+
+(13)
+
+where e˜t is the nominal exchange rate. Real exchange rate q˜ is deﬁned by
+
+q˜t
+
+=
+
+e˜t
+
+Pt∗ . Pt
+
+(14)
+
+I assume identical countries and no preference shocks to rest of the world. This implies that
+
+1
+Ct − hCt−1 = ν∗(Ct∗ − hCt∗−1)q˜tσ
+
+(15)
+
+where ν∗ = 1 imposes zero net foreign asset holdings and symmetry of countries. Using a log-linear approximation10we can transform (15) into
+
+ct
+
+−
+
+hct−1
+
+=
+
+yt∗
+
+−
+
+hyt∗−1
+
++
+
+1
+
+− σ
+
+h qt,
+
+(16)
+
+where ct := ln(Ct/CSS), yt∗ := ln(Yt∗/YS∗S), and qt := ln(q˜t/q˜SS) denote the percentage deviation of home consumption, foreign output, and real exchange rate from their respective steady state XSS. Note that if the rest of the world economy functions like a closed economy, then yt∗ = ct∗.
+Using (13) and (14) we can derive the uncovered interest rate parity condition
+
+Rt
+
+−
+
+Rt∗
+
+e˜t e˜t+1
+
+= 0.
+
+(17)
+
+Equation (17) comes from combining eﬃciency conditions for an optimal portfolio of bonds by both domestic and foreign residents under a complete international asset market. Loglinearizing and taking expectations conditional on information in t, we get
+
+rt − rt∗ = Etet+1 − et
+
+(18)
+
+where et := ln(e˜t/e˜SS), rt = Rt − 1, and rt∗ = Rt∗ − 1. We can deﬁne the terms of trade between
+
+the
+
+domestic
+
+economy
+
+and
+
+the
+
+rest
+
+of
+
+the
+
+world
+
+as
+
+St
+
+=
+
+. PF,t
+PH,t
+
+In
+
+other
+
+words
+
+the
+
+price
+
+of
+
+foreign
+
+10Log-linear approximations are very useful in DSGE models as they allow for analytical solutions. See Campbell (1994) for a primer on log-linearization.
+
+10
+
+goods in terms of home goods. In log-linear terms we have
+
+st = pF,t − pH,t.
+
+(19)
+
+Note that equation (19) holds independently of the degree of pass-through.
+
+3.3 Domestic Producers
+
+In the domestic goods market we assume a continuum of monopolistically competitive ﬁrms,
+
+indexed by i ∈ [0, 1]. Following the usual convention, we assume a Calvo price-setting mech-
+
+anism. We add partial inﬂation indexation for nonoptimizing price setters, which will allow
+
+inﬂation to be a partly jump variable and partly backward looking.
+
+The ﬁrms operate a linear technology YH,t(i) = a,tNt(i) where a,t is an exogenous domestic
+
+technology shock. In any period t, ﬁrms face a signal that allows a fraction 1 − θH to set prices
+
+optimally, while a fraction 0 < θH < 1 adjusts their prices according to the following indexation
+
+rule
+
+PH,t(i) = PH,t−1(i)
+
+PH,t−1 PH,t−2
+
+δH
+,
+
+(20)
+
+where 0 ≤ δH ≤ 1 measures the degree of indexation to the previous period’s inﬂation. Given that at any time t the ﬁrms with the opportunity to reset their price face the same problem,
+
+they set a common price PH,t. Then, we can deﬁne the evolution of the Dixit-Stiglitz aggregate price index as
+
+ PH,t = (1 − θH )(PH,t)1−ε + θH
+
+PH,t−1
+
+PH,t−1 δH PH,t−2
+
+1
+1−ε 1−ε .
+
+(21)
+
+If a ﬁrm oﬀering a product i sets its price at time t, it will face the demand
+
+YH,t(i) =
+
+PH,t(i) · PH,T
+
+PH,T −1 PH,t−1
+
+δH
+
+−ε
+(CH,t + CH∗ ,T )
+
+(22)
+
+for all t and it will take aggregate prices and consumption bundles as parametric.
+
+11
+
+Firms setting prices optimally maximize the expected present discounted value of proﬁts:
+
+∞
+max Et Qt,t+sθHs YH,t+s(i)
+PH,t(i) s=0
+× PH,t(i)
+
+PH,t+s−1 PH,t−1
+
+δH
+− PH,t+sM CH,t+sexp( H,t+s)
+
+(23)
+
+subject to (22) and the technological constraint given by real marginal cost,
+
+M CH,t+s =
+
+Wt+s . a,t+sPH,t+s
+
+(24)
+
+We allow for a structural shock to real marginal cost given by H,t ∼ i.i.d. (0, σH ). This shock has the interpretation of an independent cost-push shock to domestic goods producers. From (23) we get the following ﬁrst order condition characterizing domestic ﬁrms’ optimal pricing
+
+∞
+Et θHs Qt,t+sYH,t+s(i)
+s=0
+× PH˜ ,t
+
+PH,t+s−1 PH,t−1
+
+δH
+−
+
+ε ε−1
+
+PH,t+s(i)M Ch,t+sexp( H,t+s) = 0.
+
+(25)
+
+If we log-linearize expression (25), we get the following Phillips curve for domestic goods inﬂa-
+
+tion11
+
+πH,t − δH πH,t−1 = β(EtπH,t+1) + λH (mcH,t + H,t),
+
+(26)
+
+where λH = (1 − βθH )(1 − θH )θH−1 and
+
+mcH,t
+
+=
+
+ϕyt
+
+− (1 + ϕ)
+
+a,t
+
++ αst
+
++
+
+1
+
+σ −
+
+h
+
+(yt∗
+
+− hyt∗−1) + qt
+
++
+
+c,t.
+
+3.4 Import Retail Firms
+As there are no diﬀerences in global preferences, foreign ﬁrms charge the same price inside and outside of their country. Thus, retail ﬁrms import foreign goods for which the law of one price holds at the docks. However, import retail ﬁrms act as monopolistically competitively resellers, so they determine the domestic currency price of the imported good. Because there is diﬀerence between the price in international markets and the domestic retail price, a violation of the law
+11The procedure for obtaining (26) is detailed in Appendix A.1 of Kam, Lees and Liu (2009).
+
+12
+
+of one price arises. We deﬁne the law of one price gap in log-linear terms as
+
+ψF,t = et + p∗t − pF,t.
+
+(27)
+
+Retail ﬁrms also follow a Calvo-style pricing allowing for indexation to past inﬂation. The evolution of the imports price index is given by
+
+ PF,t = (1 − θF )(PF,t)1−ε + θF
+
+PF,t−1
+
+1
+
+PF,t−1
+
+δF
+
+1−ε 1−ε ,
+
+PF,t−2
+
+(28)
+
+where 1 − θF is the fraction of the ﬁrms that set prices optimally at time t and θF is the fraction of ﬁrms that adjust prices according to the indexation rule in (20). The demand curve faced by
+
+ﬁrm j in time t + s is
+
+YF,t+s(j) =
+
+PF,t(j) PF,t+s
+
+PF,t+s−1 δF . PF,t−1
+
+(29)
+
+The intertemporal optimization problem for the import retail ﬁrm is
+
+∞
+max Et Qt,t+sθFs YF,t+s(j)
+PF,t(j) s=0
+
+× PF,t(j)
+
+PF,t+s−1 PF,t−1
+
+δF
+− e˜t+sPF∗,t+s(j)exp( F,t+s)
+
+(30)
+
+subject to (29) for t, s = 0, 1, . . .. We introduce another structural shock to marginal cost given by F,t ∼ i.i.d. (0,σF ). Similar to H,t we can interpret this shcok as an independent cost-push shock to import retailers. The next ﬁrst order condition follows from (30)
+
+∞
+Et θFs Qt,t+sYF,t+s(j)
+s=0
+× P˜F,t
+
+PF,t+s−1 PF,t−1
+
+δF
+−
+
+ε ε−1
+
+e˜t+sPF,t+s(j)exp( F,t+s) = 0.
+
+(31)
+
+Log-linearizing (31) around its steady state12 yields
+
+πF,t = βEt(πF,t+1 − δF πF,t) + δF πF,t−1 + λF (ψF,t + F,t)
+
+(32)
+
+where
+
+πF,t
+
+:=
+
+ln(
+
+PF,t PF,t−1
+
+)
+
+and
+
+λF
+
+=
+
+(1
+
+− βθF )(1 −
+
+θF )θF−1.
+
+12A detailed procedure for obtaining (32) is detailed in Appendix A.2 of Kam, Lees and Liu (2009).
+
+13
+
+3.5 Market Clearing Conditions
+First, we are going to derive a relationship between the terms of trade, the real exchange rate, and the law of one price gap. If we log-linearize real exchange rate (14) we have
+
+qt = et + p∗t − pt.
+
+(33)
+
+Using law of one price gap deﬁnition (27) and the terms of trade expression (19), we can rewrite (33) as
+
+q = ψF,t + pF,t − pt ≈ ψF,t − (1 − α)(pF,t − pH,t) = ψF,t − (1 − α)st.
+
+(34)
+
+As we said before, the rest of the world works as a closed economy so that yt∗ = ct∗ for all t. The goods market clearing condition in the domestic economy requires that domestic output equals domestic and foreign demand for local goods
+
+yt = cH,t + cH∗ ,t.
+
+(35)
+
+Using log-linear approximation in the demand for home and foreign goods we have that cH,t = (1 − α)[αηst + ct] and c∗H,t = α[η(stψF,t) + yt∗]. Substituting on (35) we get
+
+yt = (2 − α)αηst + (1 − α)ct + αηψF,t + αyt∗.
+
+(36)
+
+3.6 Log-linear model
+This section summarizes the log-linearized equilibrium conditions of the model. We start with the consumption Euler equation. This was obtained by log-linearizing (11) and taking conditional expectations:
+
+1−h
+
+ct − hct−1 = Et(ct+1 − hct) − σ (rt − Etπt + 1).
+
+(37)
+
+Domestic goods inﬂation is given by (26) and substituting out mcH,t:
+
+πH,t = βEt(πH,t+1 − δH πH,t) + δH πH,t−1+ σ
+λH ϕyt − (1 + ϕ) a,t + αst + 1 − h (ct − hct−1) + λH H,t.
+
+(38)
+
+14
+
+Imported goods inﬂation is given by (32) and substituting out the law of one price gap ψF,t with
+
+(34)
+
+πF,t = βEt(πF,t+1 − δF πF,t) + δF πF,t−1 + λF [qt − (1 − α)st] + λF F,t.
+
+(39)
+
+The real interest rate parity condition is obtained by ﬁrst-diﬀerencing (33), taking conditional expectations, and combining with (17)
+
+Et(qt+1 − qt) = (rt − Etπt+1) − (rt∗ − Etπt∗ + 1) + q,t.
+
+(40)
+
+The terms of trade equation is obtained by ﬁrst-diﬀerencing (19)
+
+st − st−1 = πF,t − πH,t + s,t.
+
+(41)
+
+Next, the goods market clearing condition is obtained by combining goods market clearing (36) and the law of one price gap (27)
+
+yt = (1 − α)ct + αηqt + αηst + αyt∗.
+
+(42)
+
+CPI inﬂation comes from log-linearizing consumer price index (9) and taking ﬁrst diﬀerences
+
+yields CPI inﬂation
+
+πt = (1 − α)πH,t + απF,t.
+
+(43)
+
+We assume that the exogeneous shocks to terms-of-trade, technology, and real-interest-parity shocks follow an AR(1) process
+
+s = ρs s,t−1 + vs,t, where vs ∼ i.i.d.(0, σs2)
+
+a = ρa a,t−1 + va,t, where va ∼ i.i.d.(0, σa2)
+
+(44)
+
+q = ρq q,t−1 + vq,t, where vq ∼ i.i.d.(0, σq2).
+
+As was mentioned, the marginal cost shocks in the home goods and import retailers proﬁt functions are H ∼ i.i.d.(0,σH ) and F ∼ i.i.d. (0,σF ) respectively. Following Kam, Lees, and Liu (2009), we also assume that foreign country variables {π∗, y∗, r∗} follow uncorrelated AR(1)
+
+15
+
+processes
+
+ 
+
+  
+
+ 
+
+πt∗
+
+a1 0 0
+
+πt∗−1
+
+σπ∗ 0 0
+
+vπ∗,t
+
+ 
+
+  
+
+ 
+
+  
+
+yt∗
+
+ 
+
+=
+
+ 
+
+
+
+0
+
+b2
+
+0
+
+  
+
+yt∗−1
+
+ 
+
++
+
+ 
+
+
+
+0
+
+σy∗
+
+  0   vy∗,t 
+ 
+
+(45)
+
+ 
+
+  
+
+rt∗
+
+0 0 c3
+
+rt∗−1
+
+0
+
+ 
+
+0 σr∗
+
+vr∗,t
+
+where vπ∗,t, vy∗,t, vr∗,t ∼ N (0, I3). This simpliﬁcation helps to reduce the number of parameters to estimate, resulting in a more parsimonious model.13
+Therefore, the domestic economy is summarized by equations (37) through (43) for the endogenous variables {ct, yt, qt, st, rt, πt, πH,t, πF,t}. We add the exogenous disturbances { s,t, a,t, q,t} described by (44), the marginal cost shocks { H,t, F,t }, and the foreign processes {πt∗, yt∗, rt∗} given by (45). All these combined constitute a linear rational expectations model. The only thing missing is to model how the central bank behaves, which is explained in the next subsection.
+
+3.7 Central Bank Optimization
+Following the literature, and in particular Kam, Lees, and Liu (2009), I assume that the central bank minimizes the next period linear-quadratic loss function
+
+1 L(π˜t, yt, qt, rt − rt−1) = 2
+
+π˜t2 + µyyt2 + µqqt2 + µr(rt − rt−1)2
+
+(46)
+
+where π˜t ≡
+
+3 i=0
+
+πt−i
+
+/4
+
+is
+
+the
+
+annual
+
+inﬂation
+
+rate
+
+(in
+
+a
+
+quarterly
+
+model).
+
+Equation (46) is
+
+a very useful representation of the policy objective for various reason. From a computational
+
+point of view, there exist many tools to analyse linear-quadratic stochastic dynamic optimization
+
+problem (e.g. Dennis, 2007). As Svensson (1999) describes, equation (46) properly reﬂects the
+
+ideas that motivate IT. Finally, this type of policy function is used extensively in the monetary
+
+policy rules literature (e.g. Taylor, 1999, among many others).
+
+The parameters I am interested are µy, µq, µr ∈ [0, +∞), representing the relative importance that the central bank assigns to output stabilization, real exchange rate stabilization and
+
+interest rate smoothing, respectively. For comparison purposes, the weight assigned to annual
+
+inﬂation is normalized to one. Carstens and Werner (2000) explain that since 1996, Banxico’s
+13There is not a usual convention in the literature of how to specify the foreign economy. For example, Justiniano and Preston (2010) use a vector autorregressive processes of order two and Monacelli (2005) speciﬁes the foreign economy as the closed-economy version of his small open economy model.
+
+16
+
+monetary programs have always included the possibility for the central bank to adjust its stance on monetary policy. This element represents the use of discretion in monetary policy, so, naturally, I will assume that monetary policy is performed under discretion14 in this model.15 This is also consistent with the solution algorithm of Dennis (2007) employed in Kam, Lees, and Liu (2009).
+In addition to the common speciﬁcation with only inﬂation and output, I include a weight on exchange rate stabilization. Svensson (2000) mentions that the real exchange rate plays a prominent role in the transmission mechanism of monetary policy in a small open economy. In addition, foreign disturbances such as abrupt changes in foreign inﬂation can be transmitted through the exchange rate channel.
+Following the literature, I also include a nonnegative weight on the interest rate smoothing. This component is meant to capture the observed inertial behavior in the interest rates. Usually, monetary policy gradualism or policy inertia is reﬂected in this term (e.g. Rudebusch, 2006). Nonetheless, as Ilbas (2012) explains, there can be many reasons behind its inclusion. Sack and Wieland (1999) argue that interest rate smoothing could arise from three characteristics of the policymaking environment: forward-looking behavior by market participants, measurement error associated with key macroeconomic variables, and uncertainty regarding relevant structural parameters.
+Note that this loss function encompasses diﬀerent variants of inﬂation targeting. “Strict” CPI-inﬂation targeting would correspond to the case where µy = µq = µr = 0. “Flexible” IT would allow for other positive weights.
+The central bank’s goal is to minimize (46) subject to structural economic equations (37)(45), under discretion. Optimal monetary policy must be time consistent. For the solution, I restrict time consistency to a class of dynamic games characterized by Markov-perfect equilibrium payoﬀs and strategies. The Markov-perfect equilibria problem is described in detail on Appendix A. Speciﬁcally, I use the algorithm proposed by Dennis (2006). Intuitively, the solution considers the central bank contemporaneous decisions as a Stackelberg leader, whereas the private agents and the future Central Bank’s actions are regarded as Stackelberg followers.
+14When solving under discretion, the central bank treats the problem as one of sequential optimization. It makes whatever decision is optimal each period without committing itself to any future actions. When solving under commitment, the central bank credibly commits to a policy plan.
+15In the current literature, there is not a common agreement on modelling monetary policy under discretion or commitment. As it is more in line with “ﬂexible” IT, the great majority assume a discretionary optimization, but there are other works like Ilbas (2010, 2012) and Salemi (2006) where commitment is used.
+17
+
+The resulting solution is an optimal interest rate rule rt(εt, zt−1). I add a noise term r,t ∼ N (0, σr2) to this interest rate rule that will capture the inability of the central bank to control the interest rate perfectly.
+4 Estimation
+4.1 Data
+On the eve of the Mexican crisis, with the intention of tackling inﬂation, Banxico tried to reach an inﬂation target in 1995 and 1996, failing completely in both years.16 Although inﬂation targets were given, as Wynne and Skelton (2011) describe, the monetary policy in that period cannot be considered as full IT. More correctly, its anchor was a monetary growth target, deﬁned as a growth ceiling on net domestic credit. The actual strategy was to limit the expansion of domestic credit and increase the international reserves.
+It was not until 1998 that the monetary policy framework began a real transition toward an explicit full-ﬂedged IT regime. Banxico reinforced the role of the inﬂation target and began raising policy transparency. The monetary base became less relevant and the inﬂation target more important in the conduct of policy. In 1999, Banxico began to announce annual inﬂation targets, aiming to converge to the levels of inﬂation of Mexico’s primary trading partners. Finally, in 2000 Banxico started the publication of its quarterly inﬂation report, which analyses inﬂation prospects, the conduct of monetary policy, and the balance of risks for future inﬂation.
+Although Banxico oﬃcially adopted IT in 2001, I use quarterly data over the period 2000:1 to 2013:4. In 2000, almost all of the elements needed in an IT regime were used in Mexico. In fact, Schmidt et al. (2002) consider that the IT regime started in Mexico in 1999, when Banxico deﬁned a series of annual inﬂation targets.
+As I have nine structural shocks in the model { s, a, q, vπ∗, vy∗, vr∗, H , F , r}, I will need nine observable time series to avoid stochastic singularity. I use a dataset containing the following nine variables: imported goods inﬂation denominated in domestic currency (πF,t), real exchange rate (MXN/US) (qt), the terms of trade (st), real domestic GDP (yt), domestic CPI inﬂation (πt), nominal interest rate (rt), US CPI inﬂation (πt∗), US real output (yt∗), and the US federal funds rate (πt∗).
+All the Mexican series were downloaded from Banxico’s website. US series were obtained
+16The inﬂation target in 1995 was 19%, whereas actual inﬂation rose to 52%. In 1996 Banxico failed again the target of 10%, obtaining an actual inﬂation of 27.7%.
+18
+
+from the FRED system from the Federal Reserve Bank of St. Louis. Inﬂation is calculated as the log diﬀerence of the CPI index. Both inﬂation and real GDP were seasonally corrected for both countries. Following Smets and Wouters (2007), real GDP is expressed in per capita by dividing over the population over 15. Real exchange rate was obtained by multiplying the nominal exchange rate by the price index ratio between US and Mexico. The output gap yt is constructed as the diﬀerence between the seasonally adjusted real GDP and the potential output obtained through the Hodrick-Prescott ﬁlter. In Figure 1 we show the original series. Note the great impact of the 2008 crisis.
+4.2 Methodology
+The adoption of a Bayesian statistical approach in a DSGE context is particularly attractive. From a Bayesian perspective we interpret parameters as random variables (DeJong and Dave, 2007). We can then make some statements about the parametrization conditioned on three factors: the theoretical structure of the model, the observed data, and a prior distribution speciﬁed for the parameters.17
+In order to derive the posterior distributions for the parameters of interest, I use the Metropolis Markov chain Monte Carlo (MCMC) method. The full estimation algorithm is detailed in Appendix B.18 The algorithm is based on 250,000 MCMC draws and a 2,500 Kalman ﬁlter iterations (see Appendix B). I discard 20% of the sample to remove initial condition eﬀects.
+As the posterior density distribution is derived by combining the prior distribution with the likelihood function, the selection of prior distributions for each parameter plays a fundamental role in the estimation stage. Following many of the proposed distributions in Kam, Lees and Liu (2009), I present the priors used in this paper in Table 1. Note that in the selection of the prior distributions I conform to certain conventions, mainly taking into account the interval of variation of each parameter. Speciﬁcally, I use the beta distribution for parameters in the interval [0,1], inverse gamma distribution for those in the interval [0, ∞), and the gamma distribution for the rest.
+Notice that we assume that the prior distribution for the policy parameters µy, µq and µr is exactly the same. Any resulting diﬀerence in the posterior parameters distribution will therefore be due to data.
+17For a detailed discussion on Bayesian methods and their application in DSGE models, look at Smets and Wouters (2003), Schorfheide (2006), and An and Schorfheide (2007).
+18I wish to express my gratitude to Dr. Timothy Kam, who kindly sent me his MATLAB codes.
+19
+
+4.3 Results
+Figure 2 shows both the assumed prior and the estimated posterior distributions for each parameter. Overall, posterior distributions are very diﬀerent to the prior assumptions. The ﬁrst step in our analysis is to check if the estimated parameters have converged to a stable distribution.
+In Table 2 I report the mean estimates, the 95% conﬁdence intervals, and then some diagnostic tests for convergence. NSE in the eighth column stands for numerical standard errors, as proposed by Geweke (1992). The NSE is an approximation to the true posterior standard error. Although the number by itself doesn’t tells us very much about convergence, the p-value reported in column nine does. This test, commonly known as Geweke chi-squared convergence test, compares the mean of the ﬁrst 20% of the sample of the draws versus the mean of the last 50% of the sample. If the Markov chain of draws has converged to a stable distribution, we would expect the means from these two splits to be statistically equal. The null hypothesis of the test is that the means are equal. Thus, a low p-value will show some evidence of problems in convergence. From Table 2 we see that there are ﬁve parameters that fail the test at a 5% level: φ, a1, ρs, σH , σF , and σr∗. Except for σr∗, all of these parameters also fail the test at a 1% level.
+In the last column I show the univariate shrink factor developed by Gelman and Rubin (1992) and retaken by Brooks and Gelman (1998). The basic idea of this test is to run the chain two or more times from a widely-dispersed starting point and see if the chain always converge to the same place. Commonly, a value below 1.1 is considered as little evidence of dispersion. This test is particularly useful in our case. If we check Figure 2, we can easily note that many parameters present bimodal or even multimodal distributions. If we initialize the chain near one of this modes, it may never ﬁnd the other one.
+The test shows that evidence of dispersion for six parameters: σ, c3, ρs, µr, σH and σF . Only σF has a shrink factor above 1.2, consequence of having two modes of almost the same height in its distribution. Despite this results, we can say that overall every parameter converges to an invariant distribution.
+The second step of our analysis is to check if the estimated structural parameters are economically plausible. First, we note that the degree of consumption habit persistence hˆ = 0.93 is incredibly high, very close to one. This is consistent with other literature like Garc´ıa-Cicco (2008) who ﬁnds a value of 0.83 for Mexico. Still, consumption is very sensitive to interest rate changes, represented by the coeﬃcient of relative risk aversion σˆ = 0.77. We also note that
+20
+
+ηˆ = 0.31, which means that there is lower elasticity of substitution of consumption between home and foreign goods in the model. This also means that Mexico’s output gap won’t be so responsive to terms of trade movements. Finally, we take a look at δˆH and δˆF . This parameters represent the backward-lookingness of the price of domesitc and imported goods, respectively. They are pretty low compared to the initial prior mean, especially for the imported goods sector. The parameter values are generally consistent with the values reported by Kam, Lees and Liu (2009) for Australia, Canada and New Zealand.
+Policy Parameters
+As I stated before, we are interested in the parameters associated with the Central Bank loss function. The estimated values for µq, µy, and µr are 0.004, 0.47, and 0.67, respectively. As shown by these results, Banxico gives a greater value to inﬂation stabilization (it is our reference value, weight equal to 1). Inﬂation stabilization is followed in importance by interest rate smoothing (µr = 0.67), output stabilization (µy = 0.47) and ﬁnally exchange rate stabilization (µr = 0.004).
+Although we can aﬃrm that Banxico has not behaved as a ”strict” inﬂation targeter, what else can we say about this preference ordering? Is this kind of behavior normal?
+If we do a small cross-country comparison among other inﬂation targeters, we note that our results are similar to the ones obtained by Kam, Lees and Liu (2009) (Australia, Canada, and New Zealand) and Palma and Portugal (2014) for Brazil.19 You can see this in Table 3. Not surprisingly, inﬂation targeters behave as their name implies: they target inﬂation. Mexico is no exception.
+Relative to the weight assigned to inﬂation, the next more important target for Banxico is interest rate smoothing. Canada and New Zealand assign a higher weight to interest rate smoothing than Mexico. As we have described before, interest rate smoothing has many possible sources. Policymakers may be concerned about to much ﬁnancial volatility. This can be particular to interest rates as there can be maturity mis-matches between banks’ assets and liabilities. Also, even if the policy instrument for central banks is the short term interest rate, monetary policy’s inﬂuence comes through long-term interest rates. Persistent movements in short-term interest rates are required to generate the necessary movements in long-term rates.
+19Strictly, to aﬃrm that these central banks behave similarly, we would need to compare the joint posterior distribution of their policy preferences parameters, not only the mean.
+21
+
+This result is consistent with results in other studies. For example, Dennis (2004) shows that, to describe US data correctly, a much larger weight has to be attached to interest rate smoothing.20
+In terms of output stabilization, Banxico assigns a higher a relative weight of 0.47. We could say that Banxico considers output to be half as important than inﬂation similar to Australia and Brazil. For Canada and New Zealand, the output gap is even less important. There has been a long discussion in the literature if central banks should not only be targeting inﬂation, but also output. For example, Fischer (1996) argues that central bankers downplay the possibilities of counter-cyclical policies in the short-run due to political issues. He adds that under inﬂation targeting, long-run price stability should be the primary goal, with the promotion of full employment and growth being permitted as secondary goals. This seems to be the case for Mexico and many other inﬂation targeters.21
+Lastly, the weight assigned to exchange rate is very close to zero, and has the lowest parameter of the group. This result contrasts with the much higher value that Brazil, a Latinamerican fellow, assigns. This result goes in line with the conclusions of Bergin et al. (2007) model. They ﬁnd that the beneﬁts of pursuing exchange rate stabilization are quite small for small open economies.
+5 Conclusions
+In this work I estimate the parameters of Mexican monetary policy in an optimizing timeconsistent discretionary framework since the instalment of the IT regime. Using Kam, Lees, and Liu (2009) model as the benchmark, I aim to uncover what does Banxico care about. I focus on four goals of monetary policy: inﬂation stabilization, minimizing deviations of output gap, interest rate smoothing and reducing exchange rate volatility. Results obtained by Bayesian estimation indicate that the primary concern for Banxico has indeed been inﬂation, as stated by the Mexican laws. However, other (implicit) goals of monetary policy have been important too, in the following order of relative weights: interest rate stability, output gap diﬀerence, and
+20At ﬁrst sight, the results might not be comparable with the US, as monetary policy does not work under an IT regime and Federal Reserve has a dual mandate. Nonetheless, Bernanke and Mishkin (1997) argue that the Federal Reserve is an implicit inﬂation targeter.
+21Also, a positive weight on output in the central bank’s loss function does not necessarily result in a tradeoﬀ. When dealing with monetary policy, it is commonly accepted that there is a short-term trade-oﬀ in output and inﬂation. Svensson (1997) shows that a positive weight on output stabilization can translate into a more gradualist policy. With a zero weight on output stabilization, the central bank should set the instrument such that the inﬂation forecast for the control lag always equals the inﬂation target. With a positive weight, the inﬂation forecast should be adjusted gradually towards the inﬂation target, at a slower rate the larger the weight.
+22
+
+ﬁnally exchange rate stabilization. This results are compatible with a “ﬂexible” IT regime. A comparison between other small open economies with IT regimes reveals that Banxico’s preferences are ‘normal’. That is, Mexican preference parameters fall in-between the parameter ranges of these countries. The results appear to be robust, though there appears to be some convergence issues for some parameters.
+This work can be improved along various dimensions. The reported results are conditional on the central bank’s loss function speciﬁcation and data. For example, Ilbas (2010) uses a loss function that includes an additional wage-inﬂation component. It could also be possible that preferences were not constant over this period. Persons, and not the institution, could determine the preferences of the central bank. It would be interesting to study separate periods, Guillermo Ortiz era and Agust´ın Carstens era, and compare if the policy parameters are similar.
+23
+
+Appendix A. Dennis (2007) Optimal time-consistent monetary policy
+Deﬁne W (εt, zt−1) as the value function of the central bank’s optimal action at time t given state zt−1 := {ct−1, yt∗−1, πH,t−1, πF,t−1} and t := (πt∗, yt∗, rt∗, {εj,t}), for j = s, a, H, F, q. A strategy of the central bank is a sequence of policy functions {rt(εt, zt−1)}t∞=0 and the private sector’s collective strategy would be the sequence of allocation and pricing functions {ct, πh,t, πF,t, qt, st, yt}∞ t=0.
+In principle, we characterize our Markov-perfect equilibrium as if it were supported by central bank strategies that involve picking a sequence of all pricing and allocation functions, and private sector strategies then would be to pick expectations of such future outcomes under the central bank strategy which are consistent with the equilibrium deﬁnition. More precisely, we deﬁne an equilibrium under time-consistent optimal monetary policy as follows.
+Deﬁnition 1. Linear-quadratic Markov-perfect equilibrium (LQ-MPE). A LQ-MPE in this economy is a sequence of allocation and pricing functions,
+{ut(εt, zt−1)}t∞=0 := {ct, πH,t, πF,t, qt, rt, st, yt}
+that satisﬁes:
+1. The central bank’s Bellman equation,
+
+W ( t, zt−1) = min L(π˜t, yt, qt, rt − rt−1) + βEtW ( t1, zt)
+
+(47)
+
+ut
+
+subject to (37)-(43).
+
+2. Private sector competitive equilibrium conditions (37)-(43) with conditional expectations consistent with the solution to the problem (47).
+
+3. Given the exogenous stochastic processes (44) and (45).
+
+Appendix B. Kam, Lees, and Liu (2009) Pseudo-code for MCMC procedure
+Algorithm. The RW-Metropolis algorithm for a linear rational expectations model: 24
+
+1. Begin with an initial prior θ0 ∈ Θ and its corresponding prior density p(θ0|M ) for model M.
+2. For each candidate Θ, the linear rational expectations system including the optimal monetary policy problem is solved to obtain an aﬃne solution, {A(Θ), C(Θ)}, in terms of the endogenous state variables yt and the central-bank policy decision variables, xt (which is just the scalar rt in our case)
+
+ξt+1 = A(Θ)ξt + C(Θ) t+1
+
+(48)
+
+where ξt := (yt, xt). We can map some of the variables in ξt to a vector of observable variables, yt0 using an observation equation
+
+yt0 = Gξt.
+
+(49)
+
+3. For each n = 0, 1, . . . , N , use (48)-(49), the given data set y = {yt0}Tt=0 and θn to compute
+
+the model likelihood L(θn|y, M ) using a Kalman ﬁlter. Then calculate the associated
+
+posterior density, p(θn|y, M ) =
+
+Θ
+
+p(θn|M )L(θn|y,M ) p(θn|M )L(θn|y,M )dµ(θn
+
+)
+
+.
+
+4. Generate a new candidate draw using a random walk model: θn+1 = θn + zn+1, where we assume zn+1 ∼ N (0, sΣ), and s > 0 is a scalar factor for scaling the size of the jump in the draws. Compute the associated posterior density, p(θn+1|y, M ) by repeating step 3, for θn+1.
+
+5.
+
+Compute the
+
+acceptance
+
+probability,
+
+α(θn,
+
+θn+1|y)
+
+:=
+
+min{
+
+p(θn+1|y,M p(θn|y,M )
+
+)
+
+,
+
+1}.
+
+6. Repeat steps 3–4 for N suﬃciently large to ensure that the sequence θnNn=0 is drawn from an ergodic distribution, π.
+
+7. Under some suﬃcient conditions, we can apply the ergodic theorem of an irreducible
+
+Markov chain and approximate the posterior expected value of a (bounded) function of
+
+interest, f (θ) using the sample mean of the functions, N −1
+
+N n
+
+f (θn).
+
+25
+
+References
+[1] An, S., and Schorfheide, F. (2007) Bayesian Analysis of DSGE Models—Rejoinder, Econometric Reviews, Taylor & Francis Journals, vol. 26(2-4), pages 211-219.
+[2] Arestis, P., Karouglou, M., and Mouratidis, K. (2011) Monetary Policy Preferences of the European Monetary Union and the UK, Working Papers 2011019, The University of Sheﬃeld, Department of Economics.
+[3] Assenmacher-Wesche, K. (2006) Estimating Central Banks’ preferences from a time-varying empirical reaction function, European Economic Review, Elsevier, vol. 50(8), pages 19511974, November.
+[4] Ball, C. P., and Reyes, J. (2004) Inﬂation targeting or fear of ﬂoating in disguise: the case of Mexico, International Journal of Finance & Economics, John Wiley & Sons, Ltd., vol. 9(1), pages 49-69.
+[5] Bergin, P., Shin, H., and Tchakarov, I. (2007) Does Exchange Rate Volatility Matter for Welfare? A Quantitative Investigation of Stabilization Policies. European Economic Review, 51, 1041–58.
+[6] Bernanke, B., & Mishkin, F. (1997) Inﬂation Targeting: A New Framework for Monetary Policy? Journal of Economic Perspectives, American Economic Association, vol. 11(2), pages 97-116, Spring.
+[7] Brooks, S.P. and Gelman, A. (1998) General Methods for Monitoring Convergence of Iterative Simulations. Journal of Computational and Graphical Statistics, 7, p. 434–455.
+[8] Cabrera, N., and Bejarano, E., and Savino-Portugal, M. (2011) Preferences of the Central Reserve Bank of Peru and optimal monetary policy rules in the inﬂation targeting regime. Working Papers 2011-010, Banco Central de Reserva del Peru´.
+[9] Campbell, J. (1994) Inspecting the mechanism: An analytical approach to the stochastic growth model. Journal of Monetary Economics, Elsevier, vol. 33(3), pages 463-506, June.
+[10] Capistra´n, Carlos, Ibarra-Ram´ırez, Rau´l, and Ramos Francia, Manuel (2011) Exchange Rate Pass-Through to Prices: Evidence from Mexico. Working Papers 2011-12, Banco de M´exico.
+26
+
+[11] Capistr´an, C., and Ramos-Francia, M. (2010) Does Inﬂation Targeting Aﬀect the Dispersion of Inﬂation Expectations?, Journal of Money, Credit and Banking, Blackwell Publishing, vol. 42(1), pages 113-134, 02.
+[12] Carrasco, C., and Ferreiro, J. (2013) Inﬂation targeting and inﬂation expectations in Mexico. Applied Economics, Taylor & Francis Journals, vol. 45(23), pages 3295-3304, August.
+[13] Carstens, A., and Werner, A. M. (2000) Mexico’s Monetary Policy Framework Under a Floating Exchange Rate Regime, Money Aﬀairs, Centro de Estudios Monetarios Latinoamericanos, vol. 0(2), pages 113-165, July-Dece.
+[14] Castelnuovo, E., and Surico., P. (2004) Model Uncertainty, Optimal Monetary Policy and the Preferences of the FED. Scottish Journal of Political Economy, 51, issue1, p. 105–26.
+[15] Cecchetti, S. G., McConnell, M. M., and Perez Quiros, G. (1999) Policymakers’ revealed preferences and the output-inﬂation variability trade-oﬀ: implications for the European system of central banks, Proceedings, Federal Reserve Bank of San Francisco.
+[16] Cecchetti, S. G., and Ehrmann, M. M. (2002) Does Inﬂation Targeting Increase Output Volatility?: An International Comparison of Policymakers’ Preferences and Outcomes, Central Banking, Analysis, and Economic Policies Book Series, in: Norman Loayza & Klaus Schmidt-Hebbel & Norman Loayza (Series Editor) & Klaus Schmidt-Hebbel (Series (ed.), Monetary Policy: Rules and Transmission Mechanisms, edition 1, volume 4, chapter 9, pages 247-274 Central Bank of Chile.
+[17] Cochrane, J., and Campbell, J. (1999) By Force of Habit: A Consumption-Based Explanation of Aggregate Stock Market Behavior, Scholarly Articles 3119444, Harvard University Department of Economics.
+[18] Cort´es Espada, J. F. (2013) Estimating the Exchange Rate Pass-Through to Prices in Mexico, Monetaria, I, issue 2, p. 287-316.
+[19] DeJong, D., and Dave, C. (2007) Structural Macroeconometrics. Princeton University Press.
+[20] Dennis, R. (2004) Inferring policy objectives from economic outcomes, Oxford Bulletin of Economic Statistics, 66(1), 735-764.
+[21] Dennis, R. (2006) The policy preferences of the US Federal Reserve, Journal of Applied Econometrics, John Wiley & Sons, Ltd., vol. 21(1), pages 55-77.
+27
+
+[22] Dennis, R. (2007) Optimal Policy In Rational Expectations Models: New Solution Algorithms, Macroeconomic Dynamics, Cambridge University Press, vol. 11(01), pages 31-55, February.
+[23] Favero, C., and Rovelli, R. (2003) Macroeconomic Stability and the Preferences of the Fed: A Formal Analysis, 1961-98, Journal of Money, Credit and Banking, Blackwell Publishing, vol. 35(4), pages 545-56, August.
+[24] Fischer, S. (1996) Why are central banks pursuing long-run price stability?, Proceedings Economic Policy Symposium - Jackson Hole, Federal Reserve Bank of Kansas City, pages 7-34.
+[25] Fuhrer, J. (2000) Habit Formation in Consumption and Its Implications for MonetaryPolicy Models, American Economic Review, American Economic Association, vol. 90(3), pages 367-390, June.
+[26] Gali, J., and Monacelli, T. (2008) Optimal monetary and ﬁscal policy in a currency union, Journal of International Economics, Elsevier, vol. 76(1), pages 116-132, September.
+[27] Garc´ıa-Cicco, J. (2009) Empirical Evaluation of DSGE Models for Emerging Countries, Duke University.
+[28] Gelman, A. and Rubin, D.B. (1992) Inference from Iterative Simulation using Multiple Sequences, Statistical Science, 7, p. 457–511.
+[29] Geweke, J. (1992) Evaluating the Accuracy of Sampling-Based Approaches to Calculating Posterior Moments, In Bayesian Statistics 4 (ed JM Bernardo, JO Berger, AP Dawid, and AFM Smith). Clarendon Press, Oxford, UK.
+[30] Ilbas, P. (2010) Estimation of Monetary Policy Preferences in a Forward-Looking Model: A Bayesian Approach, International Journal of Central Banking, International Journal of Central Banking, vol. 6(3), pages 169-209, September.
+[31] Ilbas, P. (2012) Revealing the preferences of the US Federal Reserve, Journal of Applied Econometrics, 27, issue 3, p. 440-473.
+[32] Justiniano, A., and Preston, B. (2010) Monetary policy and uncertainty in an empirical small open-economy model, Journal of Applied Econometrics, John Wiley & Sons, Ltd., vol. 25(1), pages 93-128.
+28
+
+[33] Kam, T., Lees, K., and Liu, P. (2009) Uncovering the Hit List for Small Inﬂation Targeters: A Bayesian Structural Analysis, Journal of Money, Credit and Banking, 41: 583–618.
+
+[34] Kilian, L., and Manganelli, S., (2007) The Central Banker as a Risk Manager: Estimating the Federal Reserve’s Preferences under Greenspan, CEPR Discussion Papers 6031, C.E.P.R. Discussion Papers.
+
+[35] Kydland, F. E., and Prescott, E. C. (1982) Time to Build and Aggregate Fluctuations, Econometrica, Econometric Society, vol. 50(6), pages 1345-70, November.
+
+[36] Mancini, T. (2013) Dynare User Guide:
+
+An Introduction to
+
+the Solution and Estimation of DSGE Models. Available at
+
+http://www.dynare.org/documentation-and-support/user-guide/Dynare-UserGuide-WebBeta.pdf
+
+[37] Monacelli, T. (2005) Monetary Policy in a Low Pass-through Environment, Journal of Money, Credit and Banking, Vol. 37, No. 6, pp. 1047.
+
+[38] Ozlale, U. (2003) Price stability vs output stability: tales of federal reserve administrations, Journal of Economic Dynamics and Control, Elsevier, vol. 27(9), pages 1595-1610, July.
+
+[39] Palma, A. A., and Portugal, M. S. (2014) Preferences Of The Central Bank Of Brazil Under The Inﬂation Targeting Regime: Estimation Using A Dsge Model For A Small Open Economy, Anais do XLI Encontro Nacional de Economia [Proceedings of the 41th Brazilian Economics Meeting] 055, ANPEC - Associac¸a˜o Nacional dos Centros de P´osgradua¸ca˜o em Economia [Brazilian Association of Graduate Programs in Economics].
+
+[40] Remo, A., and Vas´ıcek, O., (2009) Estimate of the Czech National Bank’s Preferences in NOEM DSGE model, Bulletin of the Czech Econometric Society, 16, issue 26.
+
+[41] Rodriguez, G. (2006) Stability of Central Bank Preferences, Macroeconomic Shocks, and Eﬃciency of the Monetary Policy. Empirical Evidence for Canada, Working Papers 0603E, University of Ottawa, Department of Economics.
+
+[42] Rudebusch, G., and Svensson, L. E. O. (1999) Policy Rules for Inﬂation Targeting, NBER Chapters, in: Monetary Policy Rules, pages 203-262 National Bureau of Economic Research, Inc.
+
+[43] Rudebusch, G. (2006) Monetary Policy Inertia: Fact or Fiction?, International Journal of Central Banking, International Journal of Central Banking, vol. 2(4), December.
+
+29
+
+[44] Sack, B., and Wieland, V. (1999) Interest-rate smoothing and optimal monetary policy: a review of recent empirical evidence, Finance and Economics Discussion Series 1999-39, Board of Governors of the Federal Reserve System (U.S.).
+[45] Salemi, M. K., (1995) Revealed Preference of the Federal Reserve: Using Inverse-Control Theory to Interpret the Policy Equation of a Vector Autoregression, Journal of Business & Economic Statistics, 13, issue 4, p. 419-33.
+[46] Salemi, M. K., (2006) Econometric Policy Evaluation and Inverse Control, Journal of Money, Credit and Banking, Blackwell Publishing, vol. 38(7), pages 1737-1764, October.
+[47] Schmidt-Hebbel, K. and Werner, A. M. (2002) Inﬂation Targeting in Brazil, Chile, and Mexico: Performance, Credibility, and the Exchange Rate, Journal of LACE Economia, LACEA-Latin American and Caribbean Association.
+[48] Schorfheide, F. (2006) Estimation and Evaluation of DSGE Models, Course Notes, University of Pennsylvania.
+[49] da Silva, E. K., and Portugal, M. S. (2010) Central Bank Preferences And Monetary Rules Under The Inﬂation Targeting Regime In Brazil, Working Papers 07-2010, Universidade de S˜ao Paulo, Faculdade de Economia, Administra¸ca˜o e Contabilidade de Ribeir˜ao Preto.
+[50] Smets, F., and Wouters, R. (2003) An estimated dynamic stochastic general equilibrium model of the euro area, Journal of the European Economic Association 1: 1123–1175.
+[51] Smets F., and Wouters, R. (2007) Shocks and frictions in US business cycles: a Bayesian DSGE approach, American Economic Review 97: 586–606.
+[52] So¨derstro¨m, U., S¨oderlind, P., and Vredin, A. (2002) Can a Calibrated New-Keynesian Model of Monetary Policy Fit the Facts?, Working Paper Series 140, Sveriges Riksbank (Central Bank of Sweden).
+[53] Svensson, L. E. O., (1997) Inﬂation forecast targeting: Implementing and monitoring inﬂation targets, European Economic Review, Elsevier, vol. 41(6), pages 1111-1146, June.
+[54] Svensson, L. E. O., (1999) Inﬂation targeting as a monetary policy rule, Journal of Monetary Economics, Elsevier, vol. 43(3), pages 607-654, June.
+30
+
+[55] Svensson, L. E. O., (2000) Open-economy inﬂation targeting, Journal of International Economics, Elsevier, vol. 50(1), pages 155-183, February.
+[56] Tachibana, M., (2004) Central Banks’ preferences in Japan, the UK, and the US, Japan and the World Economy, Elsevier, vol. 16(1), pages 81-93, January.
+[57] Taylor J. (1993) Discretion versus policy rules in practice, Carnegie-Rochester Conference Series on Public Policy 39: 195–214.
+[58] Wynne, M., and Skelton, E. C. (2011) The Conquest of Mexican Inﬂation, Globalization and Monetary Policy Institute 2011 Annual Report. Federal Reserve Bank of Dallas, p. 13-20. Available at http://www.dallasfed.org/assets/documents/institute/annual/2011/annual11c.pdf
+31
+
+6 Figures and Tables
+Figure 1: Raw data 32
+
+Table 1: Parameter Despcription and Prior Selection
+
+Parameter Deﬁnition
+
+β
+
+Intertemporal discount rate
+
+α
+
+Economic openness
+
+h
+
+Habit persistence parameter
+
+σ
+
+Coeﬃcient of relative risk aversion
+
+φ
+
+Inverse of the elasticity of labor supply
+
+Elasticity of substitution between do-
+
+η
+
+mestic and imported goods
+
+δH
+
+Backward-looking parameter of the price of domestic goods
+
+δF
+
+Backward-looking parameter of the price of imported goods
+
+θH
+
+Fraction of non-optimizing producers in the domestic economy
+
+θF
+
+Fraction of non-optimizing importers
+
+a1
+
+Parameter AR(1) of foreign inﬂation
+
+b2
+
+Parameter AR(1) of external output
+
+c3
+
+Parameter AR(1) of foreign interest rate
+
+ρa
+
+Technological inertia
+
+ρq
+
+Inertial eﬀect of exchange rate shock
+
+ρs
+
+Inertial eﬀect of terms of trade shock
+
+Preference for real exchange rate
+
+µq
+
+stabilizationa
+
+µy
+
+Preference for output stabilizationa
+
+µr
+
+Preference for interest rate smoothinga
+
+Standard deviation of the ”cost-push”
+
+σH
+
+shock
+
+Standard deviation of the technology
+
+σF
+
+shock
+
+Standard deviation of the technology
+
+σa
+
+shock
+
+Standard deviation of the exchange
+
+σq
+
+rate shock
+
+Standard deviation of the terms of
+
+σs
+
+trade
+
+σπ∗
+
+Standard deviation of foreign inﬂation
+
+σy∗
+
+Standard deviation of external output
+
+Standard deviation of foreign interest
+
+σr∗
+
+rate
+
+Standard deviation of domestic interest
+
+σr
+
+rate
+
+a Relative to inﬂation.
+
+Prior Distribution 0.99 0.45
+Beta(0.6, 0.2) Gamma (1, 0.5)
+N(1.5, 0.25) Gamma(1, 0.25)
+Beta(0.7, 0.2)
+Beta(0.7, 0.2)
+Beta(0.5, 0.2) Beta(0.5, 0.2) Beta(0.5, 0.1) Beta(0.5, 0.1) Beta(0.5, 0.1) Beta(0.5, 0.1) Beta(0.9, 0.1) Beta(0.25, 0.1) Gamma(0.5,0.09) Gamma(0.5,0.09) Gamma(0.5,0.09) Inv. Gamma(2.67, 2)
+Inv. Gamma(2.67, 2)
+Inv. Gamma(2.67, 2)
+Inv. Gamma(2.67, 2)
+Inv. Gamma(1.19, 2) Inv. Gamma(1.19, 2) Inv. Gamma(1.19, 2) Inv. Gamma(1.19, 2)
+Inv. Gamma(1, 0.4)
+
+Domain (0,1) (0,1) (0,1) R+ R+ R+
+(0,1)
+(0,1)
+(0,1) (0,1) (0,1) (0,1) (0,1) (0,1) (0,1) (0,1) R+ R+ R+ R+
+R+
+R+
+R+
+R+ R+ R+ R+
+R+
+
+33
+
+Table 2: Posterior Parameters and Convergence Diagnostic
+
+Prior 2.5% 97.5%
+
+mean
+
+h
+
+0.60 0.20 0.93
+
+σ 1.00 0.27 2.19
+
+φ 1.50 1.01 1.99
+
+η 1.00 0.27 2.19
+
+δH 0.70 0.25 0.98 δF 0.70 0.25 0.98 θH 0.50 0.13 0.87 θF 0.50 0.13 0.87 a1 0.50 0.19 0.96 b2 0.50 0.19 0.96 c3 0.50 0.19 0.96 ρa 0.50 0.13 0.87 ρq 0.90 0.23 1.00 ρs 0.25 0.01 0.73 µq 0.50 0.09 1.23 µy 0.50 0.09 1.24 µr 0.50 0.10 1.24 σH 2.67 0.92 7.36 σF 2.66 0.91 7.34 σa 1.19 0.52 2.65 σq 0.53 0.32 0.87 σs 1.19 0.52 2.64 σπ∗ 1.19 0.52 2.65 σy∗ 1.19 0.52 2.65 σr∗ 1.19 0.52 2.65 σr 1.19 0.52 2.64
+
+P-value is calculated with an 8% tapering.
+
+Posterior mean 0.93 0.77 1.66 0.31 0.24 0.04 0.80 0.73 0.26 0.74 0.85 0.81 0.70 0.82 0.004 0.47 0.67 1.12 3.55 5.67 0.97 5.54 0.42 0.57 0.21 0.36
+
+2.5%
+0.88 0.36 1.10 0.06 0.08 0.01 0.73 0.63 0.11 0.59 0.49 0.74 0.57 0.71 4.95×10−5 0.17 0.32 0.61 0.54 3.52 0.56 4.52 0.34 0.42 0.14 0.17
+
+97.5%
+0.99 1.16 2.28 0.52 0.43 0.09 0.96 0.99 0.40 0.84 0.98 0.86 0.88 0.90 0.014 0.83 1.05 1.80 6.63 7.17 2.44 6.58 0.50 0.78 0.26 0.47
+
+NSE
+0.0048 0.0393 0.0048 0.0192 0.0103 0.0014 0.0108 0.0181 0.0058 0.0067 0.0225 0.0052 0.0112 0.0048 0.0003 0.0296 0.0354 0.0349 0.3521 0.1601 0.0975 0.0563 0.0020 0.0142 0.0038 0.0094
+
+p-value
+0.7531 0.5695 0.0094 0.7642 0.1701 0.4504 0.3203 0.3547 0.0315 0.1576 0.0564 0.4427 0.1578 0.0018 0.4555 0.1794 0.1494 0.0037 0.000 0.1098 0.1143 0.0746 0.3106 0.0586 0.0296 0.2248
+
+B-G
+1.0002 1.1027 1.0950 1.0091 1.0003 1.0001 1.0430 1.0387 1.0158 1.0103 1.1066 1.0692 1.0777 1.1279 1.0007 1.0554 1.1398 1.1033 1.7430 1.0250 1.0862 1.0765 1.0006 1.0921 1.0681 1.0183
+
+Table 3: Cross-Country Comparison - Estimated Weights in the Policy Objective (relative to inﬂation)
+
+Canada1 Australia1 New Zealand1
+
+µy 0.157 µr 0.855 µq 0.007
+
+0.412 0.611 0.005
+
+0.273 0.850 0.006
+
+1Obtained from Kam, Lees, and Liu (2009).
+
+2Obtained from Palma and Portugal (2014).
+
+Brazil2 0.51 0.63 0.19
+
+Mexico 0.468 0.669 0.004
+
+34
+
+Figure 2: Posterior distributions 35
+
+

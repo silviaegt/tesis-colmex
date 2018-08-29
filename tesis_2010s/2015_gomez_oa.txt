@@ -1,0 +1,1453 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+UN MODELO ASIMÉTRICO DE COMPETENCIA BANCARIA: UN ANÁLISIS DEL CASO MEXICANO
+OSCAR ALEJANDRO GÓMEZ ROMERO
+PROMOCIÓN 2013-2015
+ASESOR:
+DR. JAIME SEMPERE CAMPELLO
+JULIO 2015
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+Agradecimientos
+Al Consejo Nacional de Ciencia y Tecnolog´ıa (CONACYT), por proporcionar los recursos que me permitieron realizar mis estudios de posgrado. A El Colegio de Me´xico, por darme las herramientas que durante y despue´s de esos dos an˜os de maestr´ıa me ayudaron para ser un mejor profesionista. A mi profesor y asesor, el Dr. Jaime Sempere, que con cuyos conocimientos y gu´ıa me permitieron construir este trabajo y por las pla´ticas que me sirvieron para continuar con mi vida profesional. Al Dr. Horacio Sobarzo, que sin pensarlo mucho me hizo pertenecer a la comunidad de El Colegio de Me´xico un an˜o antes de iniciar mis estudios de posgrado. A los hoy Comisionados, Dr. Alejandro Castan˜eda y Mtro. Javier Nu´n˜ez, que sin dudarlo me abrieron las puertas para iniciar una nueva etapa en mi vida. A mis compan˜eros de batalla: Aleida Salguero (chinos) mi gran amiga de maestr´ıa; David Daniel y David Armando (Los Davids) por compartir un u´ltimo semestre lleno de satisfaccio´n, sin duda mi mejor semestre y a Mony y a Chema grandes amigos y compan˜eros de estudio durante el tercer semestre. A Arturo Corral, Edwin Mun˜oz e Isaac Lara grandes amigos durante la maestr´ıa. A Naghielli A´ lvarez Chombo por hacerme rectiﬁcar el camino y alegrar mis d´ıas el u´ltimo an˜o de la maestr´ıa. Por u´ltimo y no por eso los menos importantes, a mis padres, Arturo y Elsa, y a mi hermano Mario por aguantar que los viera una vez al semestre y siempre tuvieran mis cosas listas para cuando fuera a casa.
+ii
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+Oscar Alejandro Go´mez Romero 21 de julio de 2015
+Resumen: El sector bancario mexicano presenta una alta concentracio´n en te´rminos de la red de cajeros automa´ticos. Esto puede generar problemas a la competencia dentro del sector debido a que la red de cajeros automa´ticos y las sucursales son un insumo importante mediante el cual los bancos captan y retienen clientes. Al ser una industria de red, los agentes econo´micos por parte de la demanda tendera´n a preferir aquellos bancos cuya red sea ma´s amplia debido a que el costo de traslado para conseguir efectivo es menor, de manera que las tarjetas y los cajeros automa´ticos se pueden considerar dos productos complementarios. Para analizar el comportamiento de los consumidores y de los bancos, se desarrolla un modelo espacial tipo Hotelling, donde los bancos que esta´n colocados en un espacio entre [0,1] compiten para captar clientes. La principal contribucio´n de este trabajo es modelar la asimetr´ıa en los bancos, cuyo espacio de estrategias son los precios, el taman˜o de la red y el grado de compatibilidad. Las predicciones del modelo indican que los bancos decidira´n ser incompatibles, pero dicha incompatibilidad beneﬁcia en mayor medida al banco ma´s grande, situacio´n similar a la que se ve en el contexto mexicano.
+Palabras clave: Econom´ıas de red, Bancos, cajero automa´tico, interconexio´n.
+iii
+
+I´ndice
+
+1. Introduccio´n
+
+1
+
+2. Tarifas de interconexio´n en cajeros automa´ticos en Me´xico
+
+3
+
+2.1. El cobro de tarifas en cajeros automa´ticos en Me´xico . . . . . . . . . . . . . . . . 3
+
+2.2. Efectos de la reforma de 2010 en Me´xico . . . . . . . . . . . . . . . . . . . . . . 4
+
+3. Modelo de competencia bancaria
+
+6
+
+3.1. Los consumidores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+3.2. Los bancos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+3.3. Equilibrio del Modelo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+3.3.1. Optimizacio´n del precio . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+3.3.2. Optimizacio´n de la red . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+3.3.3. Compatibilidad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+4. Conclusiones
+
+14
+
+5. Anexo
+
+15
+
+6. Referencias
+
+21
+
+7. I´ndice de Cuadros y Figuras
+
+23
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+1. Introduccio´n
+En Me´xico, el 80 por ciento de la red de cajeros automa´ticos pertenece a cinco bancos1. El resto de la red pertenece a treinta bancos. Esta distribucio´n altamente desigual es un problema para la libre competencia, ya que el taman˜o de la red de cajeros es un para´metro muy importante para la eleccio´n de un banco por parte de los consumidores. En consecuencia, bancos con una red grande van a tender a ser ma´s grandes y el resultado puede ser una concentracio´n aun mayor del mercado de depo´sitos bancarios. Esta mayor concentracio´n puede reducir los niveles de competencia y redundar en una reduccio´n del bienestar del consumidor.
+La COFECE (2014) indica que el efectivo representa entre 70 y 80 por ciento de todas las transacciones y 47 por ciento del valor de todas las compras de consumo, a pesar de que otras formas de pago han incrementado su uso. Lo anterior es importante porque la mayor parte del efectivo se obtiene en cajeros y sucursales; e´ste sigue siendo el instrumento de pago ma´s importante para los mexicanos.
+La industria bancaria es considerada como una econom´ıa de red, donde la compatibilidad juega un papel fundamental, porque si un agente limita el acceso puede afectar la competencia dentro de la industria. Una manera de limitar el acceso es establciendo una comisio´n elevada, que en muchas ocasiones busca generar una renta adicional. Sin embargo, hablando de bancos y en espec´ıﬁco de la red de cajeros y sucursales, se puede argumentar que ellos buscan hacer incompatible su red, para que los tarjetahabientes que no pertenecen a su red no la usen.
+Donze y Dubec (2011) analizan el impacto de la entrada de desarrolladores independientes de cajeros automa´ticos despue´s de la reforma realizada en marzo de 2009 en Australia. Ellos usan un modelo tipo Hotelling que analiza el impacto del cobro de la comisio´n sobre el bienestar del consumidor. El resultado pricipal es que la entrada de desarrolladores independientes beneﬁcia a los bancos, situacio´n que mejora al consumidor.
+Donze y Dubec (2006) analizan el desarrollo de cajeros automa´ticos cuando existe una tasa de intercambio. Ellos concluyen que una tasa alta de intercambio suaviza la competencia en el mercado de depo´sitos, pero la aumenta en el de retiros.
+Matutes y Padilla (1993) estudian los incentivos de los bancos a compartir su red cuando compiten por el mercado de depo´sitos. En equilibrio un subconjunto de bancos comparte su red
+1Datos de 2013 segu´n la COFECE
+1
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+o prevalece la completa incompatibilidad. En su modelo evalu´an el costo de oportunidad que le genera a un consumidor el acceso a una red amplia versus una tasa de intere´s baja; adema´s consideran la localizacio´n de los cajeros y el cobro de compatibilidad.
+Noone (2012) usa un modelo espacial circular para analizar la reforma realizada en 2009 en Australia, explicando que hay ciertos costos que son ignorados normalmente en la literatura de este tipo de modelos.
+Esta investigacio´n pretende formar parte de la literatura de modelos espaciales, enfocada al ana´lisis de la competencia en el sector bancario. El modelo incluye la incompatibilidad en los cajeros automa´ticos para evaluar su impacto sobre el taman˜o de la red y sobre la demanda de los bancos. La incompatibilidad provocada por la alta comisio´n que establecen los bancos a los tarjetahabientes de sus competidores cuando usan su red.
+El modelo asume que existe un banco ma´s grande que otro para analizar los efectos que tiene la incompatibilidad sobre la demanda de un banco cuando la industria es concentrada, sobre todo en presencia de econom´ıas de red. Tambie´n considera los costos de traspaso que son muy importantes en la industria bancaria que de acuerdo con la OCDE (2008) estos son: administrativos, venta cruzada de productos, preferencia y eleccio´n de los consumidores y cargos por cierre. Los costos de cambiar de proveedor ﬁnanciero justiﬁcan nuestro supuesto de que existen consumidores cautivos a un determinado banco. La diferencia en el nu´mero de consumidores cautivos que cada banco tiene puede justiﬁcar las asimetr´ıas entre bancos que nuestro modelo va a explotar.
+El documento esta´ organizado de la siguiente manera: en el primer apartado se hara´ un ana´lisis sobre la reforma realizada por el Banco de Me´xico en marzo de 2010 sobre el cobro de comisiones en los cajeros automa´ticos; en el segundo apartado, se presentara´ un modelo bancario de competencia asime´trico, con el objetivo de representar una econom´ıa como la mexicana, donde la industria bancaria es concentrada; en el tercer apartado, se realizan unas conclusiones sobre el modelo y se contrasta con las similitudes que tiene con el comportamiento de los datos para el caso mexicano.
+2
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+2. Tarifas de interconexio´n en cajeros automa´ticos en Me´xico
+2.1. El cobro de tarifas en cajeros automa´ticos en Me´xico
+Previo a mayo de 2010, el sistema de tarifas que se cobraba en Me´xico era poco claro y consist´ıa en tres cobros que se hac´ıan cuando un tarjetahabiente de un banco retiraba de un cajero ajeno: el primero de ellos era la cuota interbancaria, que se cobraba entre los bancos, cuando los tarjetahabientes retiraban efectivo de cajeros ajenos; el segundo cobro que se realizaba antes de la reforma era la cuota de ﬁdelidad, comisio´n que cobraba un banco a sus tarjetahabientes cuando retiraban de otra red; el u´ltimo es la comisio´n que perduro´ desde de marzo de 2010, conocida como sobre cargo, que es el cobro que un banco la hace a un tarjetahabiente que retira de su red, cuando no pertenece a e´l. El Banco de Me´xico elimino´ las primeras dos comisiones y so´lo mantuvo la u´ltima. Da´ndoles libertad a los bancos de ﬁjar el cobro de la comisio´n bajo su supervisio´n. De acuerdo con Moreno y Zamarripa (2013) la comisio´n resulto´ mayor a las anteriores y derivo´ a un equilibrio estrate´gico al estilo del “dilema del prisionero”, situacio´n que redujo el bienestar de los usuarios ﬁnales.
+3
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+2.2. Efectos de la reforma de 2010 en Me´xico
+En la Figura 1 se puede observar una tendencia creciente en el monto total de retiros en cajeros automa´ticos. A primera vista, se puede argumentar que la reforma realizada por el Banco de Me´xico no tuvo efectos sobre la forma en como las personas adquieren efectivo.
+Figura 1: Transacciones totales en cajeros automa´ticos en Me´xico 2002-2014
+Sin embargo, la Figura 2, que hace referencia al monto y nu´mero de transacciones interbancarias, muestra que a partir de 2010, e´stas regresan a niveles de 2006 y de 2002, respectivamente. Es decir, los bancos grandes buscaron hacer incompatible su red, no con el objetivo de obtener una renta extraordinaria, sino con el ﬁn de desincentivar los retiros en sus cajeros automa´ticos por tarjetahabientes de otros bancos. A partir de 2010 las transacciones interbancarias so´lo representaron el 4.6 por ciento del monto total de las operaciones en cajeros automa´ticos, mientras que previo a la reforma e´stas representaban el 11 por ciento.
+4
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano Figura 2: Transacciones interbancarias en Me´xico 2002-2014
+Por otra parte, la Figura 3 muestra la relacio´n que existe entre el taman˜o de la red de un banco y el cobro de comisio´n: aquellos bancos con una comisio´n elevada suelen tener un nu´mero grande de cajeros, reﬂejando una relacio´n positiva entre las dos variables.2
+Figura 3: Comisio´n promedio y taman˜o de la red de los bancos en Me´xico en 2015
+2El Banco ABC es el u´nico que posee una red relativamente pequen˜a y cobra una comisio´n elevada, comisio´n incluso mayor a la que establecen los bancos l´ıderes.
+5
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+3. Modelo de competencia bancaria
+El modelo es una variante del modelo de Hotelling (1929) que considera un duopolio asime´trico, donde los bancos se denotan como i ∈ {1, 2} localizados en un espacio entre [0, 1]. El banco 1, que se considerara´ como el banco grande, esta´ localizado a la derecha del cero a una distancia a, de manera que todos los individuos que esta´n en el espacio [0, a] siempre acudira´n a e´l. El banco 2, que se considerara´ como el banco chico esta´ colocado en el extremo derecho que corresponde al 1 en el espacio mencionado. Si ellos no proporcionan el servicio de cajeros automa´ticos, los consumidores no acudira´n a ningu´n banco y sus beneﬁcios sera´n cero.
+
+3.1. Los consumidores
+
+Los consumidores esta´n distribuidos de manera uniforme en el espacio [0, 1]. Ellos esta´n interesados en tener el servicio de una red de cajeros ya que es donde ellos obtienen efectivo. Contratar el servicio implica incurrir en un costo de transporte t. Dado esto, la utilidad del consumidor es funcio´n del taman˜o de la red del banco, el costo de traslado, el efecto de red y el precio que impone el banco por contratar el servicio. Formalmente, la funcio´n de utilidad de un consumidor se representa como:
+
+1
+
+1
+
+U=
+
+V + α(n12 − φ1n22 ) − t(δ − a) − P1
+
+1
+
+1
+
+si va al banco 1
+
+V + α(n22 − φ2n12 ) − t(1 − δ) − P2 si va al banco 2
+
+V es el excedente bruto del consumidor que es lo suﬁcientemente grande para que la solucio´n
+exista. El para´metro α mide los efectos de red que tiene la industria, externalidad que afecta
+1
+a ambos bancos igual manera. La variable ni2 es el taman˜o de la red del banco i que presenta rendimientos decrecientes a escala. El para´mentro δ es la distancia que hay entre los bancos y
+un consumidor y Pi es el precio que cobra el banco i por pertenecer a e´l. El para´metro φi mide
+el grado de compatibilidad que cada banco le asigna a la red de su competidor, este para´metro
+esta´ entre [0, 1], donde φi = 0 indica que hay completa incompatibilidad, mientras que φi = 1
+indica que existe una completa compatibilidad con su red.
+
+El signo menos dentro del pare´ntesis, que multiplica al para´metro de compatibilidad, considera los efectos de saturacio´n que pueden tener los bancos en su red cuando la hacen compatible a otra. Esto se presenta en situaciones donde existen problemas de reabastecimiento del servicio, debido a que en el modelo se cubre toda la demanda, un tarjetahabiente de un banco se ve afectado cuando tarjetahabientes del otro banco retiran de su red (lo que le genera una externalidad negativa).
+
+6
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+Por la localizacio´n de los bancos se sabe que los consumidores que se encuentran en el espacio [0, a] siempre van a contratar el servicio con el banco 1. Mientras que, los consumidores que se encuentran entre [a, 1] toman la decisio´n de a cual banco quieren ir.
+
+Figura 4: Distribucio´n de los consumidores
+
+Clientes cautivos
+
+Clientes que disputan los bancos
+
+0
+
+a
+
+1
+
+3.2. Los bancos
+La funcio´n de beneﬁcios del banco i se escribe de la siguiente manera:
+
+πi = PiDi − cni ∀i ∈ {1, 2}
+Donde Pi es el precio que cobra el banco por pertenecer a e´l, Di es la demanda de cada banco, que a su vez depende del precio que cobra cada banco y del taman˜o de su red, c es el costo de la red y ni es el taman˜o de la red que tiene cada banco. Para obtener la demanda de los bancos, se toma en consideracio´n al consumidor indiferente que se encuentra en el espacio [a, 1]. Se indica como δ∗ la distancia que hay entre el consumidor indiferente en adquirir el servicio con el banco 1 o con el banco 2, de manera que al igualar la funcio´n de utilidad se tiene:
+
+1
+
+1
+
+1
+
+1
+
+α n12 − φ1n22 − t (δ∗ − a) − P1 = α n22 − φ2n12 − t (1 − δ∗) − P2
+
+Desarrollando se obtiene la demanda del banco 1
+
+1+a 1
+
+1
+
+1
+
+D1 =
+
+2
+
++ 2t
+
+αn12 (1 + φ2) − αn22 (1 + φ1) − P1 + P2
+
+Como se puede observar, el primer te´rmino de la derecha incorpora a los clientes que siempre van con e´l. El segundo, indica que a mayor red la demanda del banco 1 incrementa, mientras que, si el banco 2 aumenta el taman˜o de su red, la demanda de banco 1 disminuye. Esto captura la importancia que le da un consumidor al taman˜o de la red de un banco. De igual manera, si el banco 1 decide incrementar su precio perdera´ clientes, mientras que, si el banco 2 decide incrementarlo
+7
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+la demanda del banco 1 aumentara´.
+
+Para determinar la demanda correspondiente al banco 2, se resuelve de manera ana´loga. Debido a que la demanda del banco 2 es muy similar a la del banco 1, tiene una interpretacio´n similar.
+
+1−a 1
+
+1
+
+1
+
+D2 =
+
+2
+
++ 2t
+
+αn22 (1 + φ1) − αn12 (1 + φ2) − P2 + P1
+
+El desarrollo del juego considera la forma de modelar en dos etapas realizada por Shy (2007) y
+
+Shy, Navon y Thisse (1995), mientras que el desarrollo del juego en la segunda etapa toma en
+
+consideracio´n la idea de Donze y Dubec (2011) sobre simultaneidad. De manera que el desarrollo
+
+del juego es el siguiente: primero, los bancos van a elegir el grado de compatibilidad que desean
+
+tener entre ellos; despue´s, de manera simulta´nea, deciden el taman˜o de la red que desarrollara´n y
+
+el precio que cobrara´n por pertenecer al banco.
+
+3.3. Equilibrio del Modelo
+
+3.3.1. Optimizacio´n del precio
+
+Se debe considerar que la demanda de los bancos es una funcio´n de su propio precio. Para determinar el equilibrio en los precios se tiene que ∂πi/∂Pi = 0, es decir:
+
+∂πi ∂Pi
+
+=
+
+∂Pi ∂Pi
+
+Di
+
++
+
+∂Di ∂Pi
+
+Pi
+
+=
+
+0
+
+∀i = {1, 2}
+
+Al despejar Pi se obtienen las funciones de reaccio´n para cada uno de los bancos:
+
+1+a
+
+1
+
+1
+
+1
+
+P1 =
+
+2
+
+t+ 2
+
+αn12 (1 + φ2) − αn22 (1 + φ1) + P2
+
+(1)
+
+1−a
+
+1
+
+1
+
+1
+
+P2 =
+
+2
+
+t+ 2
+
+αn22 (1 + φ1) − αn12 (1 + φ2) + P1
+
+(2)
+
+Incorporando (2) en (1):
+
+P1∗ =
+
+3+a 3
+
+α1
+
+1
+
+t+ 3
+
+n12 (1 + φ2) − n22 (1 + φ1)
+
+P2∗ =
+
+3−a 3
+
+α1
+
+1
+
+t+ 3
+
+n22 (1 + φ1) − n12 (1 + φ2)
+
+El equilibrio en los precios indica que una parte del precio depende del espacio de clientes que los bancos se disputan. Es decir, bajo simetr´ıa, a cada banco le corresponder´ıa la mitad del mercado.
+
+8
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+No obstante, el precio del banco 1 ya considera el efecto sobre los clientes cautivos. Mientras que la otra parte de su precio depende del taman˜o de la red de cada banco.
+Figura 5: Funciones de reaccio´n y equilibrio en precios P2 P1(P2) P2(P1) P2∗
+
+0
+
+P1∗
+
+P1
+
+3.3.2. Optimizacio´n de la red
+Para los bancos las redes son muy importantes porque son la v´ıa mediante la cual proveen sus servicios y productos. Aquellos bancos que cuentan con un nu´mero de sucursales y cajeros grande tienen mayor ventaja sobre aquellos cuya red es ma´s pequen˜a, situacio´n que puede constituir una barrera para nuevos competidores.
+
+Para determinar el equilibrio de la red se tiene ∂πi/∂ni = 0, o´:
+
+∂πi ∂ni
+
+=
+
+∂Pi ∂ni
+
+Di
+
++
+
+∂Di ∂ni
+
+Pi
+
+−c
+
+=
+
+0
+
+∀i = {1, 2}
+
+La funcio´n de reaccio´n del banco 1 se representa de la siguiente manera:
+
+1
+
+2
+
+n1 =
+
+αt(3 + a)(1 + φ2) − α2n22 (1 + φ2)(1 + φ1)) 18tc − α2(1 + φ2)2
+
+(3)
+
+9
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+Mientras que la funcio´n de reaccio´n del banco 2 es:
+
+1
+
+2
+
+n2 =
+
+αt(3 − a)(1 + φ1) − α2n12 (1 + φ1)(1 + φ2) 18ct − α2(1 + φ1)2
+
+(4)
+
+Sustituyendo (4) en (3) se obtiene el equilibrio de la red:
+
+n1∗ =
+
+αt(3 + a)(1 + φ2)(18ct − α2(1 + φ1)2) − α3t(3 − a)(1 + φ2)(1 + φ1)2 2 (18ct − α2(1 + φ1)2)(18ct − α2(1 + φ2)2) − α4(1 + φ1)2(1 + φ2)2
+
+n2∗ =
+
+αt(3 − a)(1 + φ1)(18ct − α2(1 + φ2)2) − α3t(3 + a)(1 + φ1)(1 + φ2)2 2 (18ct − α2(1 + φ2)2)(18ct − α2(1 + φ1)2) − α4(1 + φ1)2(1 + φ2)2
+
+Figura 6: Funciones de reaccio´n y equilibrio de la red
+n2 n1(n2)
+
+n2∗
+
+0
+
+n1∗
+
+n2(n1) n1
+
+10
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+De manera que la siguiente proposicio´n simpliﬁca los resultados obtenidos.
+
+Proposicio´n 1 En un mercado donde se satisface toda la demanda y un banco tiene clientes cau-
+
+tivos. La demanda, el precio y el taman˜o de la red de equilibrio sera´n:
+
+1+a 1
+
+1
+
+1
+
+1. D1 =
+
+2
+
++ 2t
+
+αn12 (1 + φ2) − αn22 (1 + φ1) − P1 + P2
+
+1−a 1
+
+1
+
+1
+
+2. D2 =
+
+2
+
++ 2t
+
+αn22 (1 + φ1) − αn12 (1 + φ2) − P2 + P1
+
+3. P1∗ =
+
+3+a 3
+
+α1
+
+1
+
+t+ 3
+
+n12 (1 + φ2) − n22 (1 + φ1)
+
+4. P2∗ =
+
+3−a 3
+
+α1
+
+1
+
+t+ 3
+
+n22 (1 + φ1) − n12 (1 + φ2)
+
+5. n1∗ =
+
+αt(3 + a)(1 + φ2)(18ct − α2(1 + φ1)2) − α3t(3 − a)(1 + φ2)(1 + φ1)2 2 (18ct − α2(1 + φ1)2)(18ct − α2(1 + φ2)2) − α4(1 + φ1)2(1 + φ2)2
+
+6. n2∗ =
+
+αt(3 − a)(1 + φ1)(18ct − α2(1 + φ2)2) − α3t(3 + a)(1 + φ1)(1 + φ2)2 2 (18ct − α2(1 + φ2)2)(18ct − α2(1 + φ1)2) − α4(1 + φ1)2(1 + φ2)2
+
+Prueba Anexo A.1
+
+3.3.3. Compatibilidad
+La segunda etapa consiste en obtener el grado de compatibilidad que existe en la red de los bancos, donde pueden elegir las estrategias puras de completa compatibilidad o completa incompatibilidad. Este resultado se representa en la siguiente matriz:
+
+Cuadro 1: Matriz de pagos de los bancos
+
+Banco 1
+
+φ1 = 0 φ1 = 1
+
+Banco 2
+
+φ2 = 0
+
+φ2 = 1
+
+π01,0 , π02,0 π01,1 , π02,1
+
+π11,0 , π12,0 π11,1 , π12,1
+
+Donde π01,0 > π11,0 y π01,1 > π11,1 lo que hace de φ1 = 1 una estrategia estrictamente dominada por la estrategia φ1 = 0. Mientras que π02,0 > π02,1 y π12,0 > π12,1, de manera que para el banco 2, φ2 = 1 es una estrategia estrictamente dominada por la estrategia φ2 = 0. Es decir, ambos bancos van a preferir completa incompatibilidad en su red. El equilibrio perfecto en subjuegos sera´ completa incompatibilidad.
+11
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+Proposicio´n 2 En un mercado donde se satisface toda la demanda, los bancos compiten por cuentahabientes v´ıa cajeros automa´ticos y existen clientes cautivos. El banco con clientes cautivos tendra´ :
+1. Un precio ma´s alto.
+2. Una red ma´s grande.
+3. Una demanda mayor.
+4. Beneﬁcios mayores.
+Prueba Anexo A.2
+El hecho que el banco 1 posea clientes cautivos, dentro del espacio [0, a], le hace tener poder monopo´lico en relacio´n con esos consumidores. Esto impacta sobre los clientes que pertenecen al espacio [a, 1], ya que se les ofrece el servicio de pertenecer al banco 1 a un precio mayor, en comparacio´n con el banco 2, pero se ven compensados por el taman˜o de su red. Es decir, no importa que un banco cobre ma´s que otro por apertura y mantenimiento de una cuenta, ya que el consumidor evaluara´ los beneﬁcios que obtenga de una red ma´s grande. Lo que implica que los cajeros automa´ticos son un insumo relevante para los bancos cuando compiten por la adquisicio´n y retencio´n de clientes.
+Esta es una caracter´ıstica importante de las econom´ıas de red, debido a que cuando hay redes incompatibles, una red grande es ma´s atractiva para un consumidor, de manera que tiene una preferencia a aﬁliarse a ella. Es decir, el modelo captura la idea de econom´ıas de red, ya que de lo contrario la solucio´n ser´ıa la de completa simetr´ıa o una situacio´n donde la demanda del banco 1 fuera menor que la del banco 2, debido a la diferencia en precios.
+Proposicio´n 3 En un mercado con clientes cautivos y demanda cubierta en su totalidad, la incompatibilidad puede generar desplazamientos de demanda en favor de la red ma´s grande.
+Prueba Anexo A.3
+Bajo diferentes grados de compatibilidad, el banco que sea ma´s incompatible es el que tendra´ una mayor demanda, ya que la incompatibilidad incentiva al banco a extender su red, de manera que lo hace ma´s atractivo para los consumidores. Este comportamiento es natural en las econom´ıas de red, donde a pesar que los bancos tengan que proporcionar interconexio´n tienen incentivos a buscar hacerla de tal manera que logren deteriorar la competencia de las redes de sus rivales. Situacio´n que podr´ıa explicar el comportamiento en los datos vistos en el Cap´ıtulo 1.
+12
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano Un comportamiento que captura el modelo es que el banco incompatible desarrollara´ una red mayor cuando el otro banco es compatible en comparacio´n a cuando no lo es. Esta situacio´n podr´ıa reﬂejar el hecho que despue´s de la reforma de 2010 en Me´xico, el crecimiento de la red de cajeros automa´ticos fue impulsada por los bancos grandes, mientras que previo a ella fue impulsada por lo bancos pequen˜os. Ishii (2004) muestra que las tarifas de interconexio´n en industrias de red como la de los cajeros automa´ticos es una discriminacio´n de precios entre aquellos tarjetahabientes del propio banco y aquellos tarjetahabientes que pertenecen a otra red. Laffont y Tirole (1998) indican que esta incompatibilidad parcial puede generar desplazamientos de demanda a favor de la red grande, debido a que los consumidores cambiaran sus preferencias con respecto a una red. Es decir, la incompatibilidad entre redes puede relajar la competencia.
+13
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+4. Conclusiones
+La reforma ﬁnanciera realizada por el Banco de Me´xico en 2010, dio libertad a los bancos para establecer la comisio´n que cobrara´ a un tarjetahabiente de otro banco cuando retire de su red. Esto dio incentivos a los bancos grandes a establecer una discriminacio´n de precios de tal magnitud que cambio´ la tendencia del monto y nu´mero de las transacciones interbancarias, que antes de la reforma de 2010 ten´ıa una tendencia creciente. Despue´s de la reforma, las transacciones interbancarias quedaron estables a un nivel de 4.5 por ciento, con respecto al total.
+Este tipo de incompatibilidad no proviene de negar la interconexio´n entre las redes de cajeros automa´ticos; se genera entre dos productos complementarios: las tarjetas y los cajeros automa´ticos. Esta situacio´n lleva a pensar que los bancos establecieron esa tarifa, con el objetivo de que los tarjetahabientes de otros bancos no usen su red, no por el hecho de conseguir una renta extraordinaria, ya que pueden tener mayores beneﬁcios generando desplazamientos de demanda a su favor.
+El modelo captura la importancia de las econom´ıas de red en el ana´lisis de demanda, donde existe una preferencia por el banco con una red amplia sin importar que e´ste cobre un precio ma´s elevado que un competidor con una red chica. Esta situacio´n, hace evidente que la red de un banco es un insumo importante para captar clientes. De manera que un banco chico o un nuevo competidor se vera´ en desventaja ante los bancos grandes o ya establecidos.
+Los efectos que tuvo la reforma ﬁnanciera de 2010, dada la imporatancia del taman˜o de la red de los bancos debe ser reconsiderada, ya que la pol´ıtica industrial que han llevado a cabo el Banco de Me´xico y la Comisio´n Nacional Bancaria y de Valores, impulsando la creacio´n de nuevos bancos, puede no ser la apropiada debido a que la red de cajeros y sucursales es un insumo muy importante en la captacio´n de clientes.
+14
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+5. Anexo
+Anexo A.1: Prueba de la Proposicio´n 1
+
+La demanda del banco 1 se deﬁne como
+
+1
+
+1
+
+1
+
+1
+
+α n12 − φ1n22 − t (δ∗ − a) − P1 = α n22 − φ2n12 − t (1 − δ∗) − P2
+
+1
+
+1
+
+1
+
+1
+
+αn12 − αφ1n22 − tδ∗ + ta − P1 = αn22 − αφ2n12 − t + tδ∗ − P2
+
+1
+
+1
+
+2tδ∗ = ta + t + αn12 (1 + φ2) + αn22 (1 + φ1) − P1 + P2
+
+1
+
+1
+
+2tδ∗ = (1 + a)t + αn12 (1 + φ2) + αn22 (1 + φ1) − P1 + P2
+
+1+a 1
+
+1
+
+1
+
+D1 =
+
+2
+
++ 2t
+
+αn12 (1 + φ2) − αn22 (1 + φ1) − P1 + P2
+
+La demanda del banco 2 se deﬁne como
+
+1
+
+1
+
+1
+
+1
+
+α n12 − φ1n22 − t (1 − δ∗ − a) − P1 = α n22 − φ2n12 − tδ∗ − P2
+
+1
+
+1
+
+1
+
+1
+
+αn12 − αφ1n22 − t + tδ∗ + ta − P1 = αn22 − αφ2n12 − tδ∗ − P2
+
+1
+
+1
+
+1
+
+2tδ∗ = (1 − a)t + n22 − φ2n12 − αn12 (1 + φ2) − P2 + P1
+
+1−a 1 1
+
+1
+
+1
+
+D2 =
+
+2
+
++ 2t
+
+n22 − φ2n12 − αn12 (1 + φ2) − P2 + P1
+
+El precio de los bancos se obtienen
+
+π1 = P1D1 − cn1
+
+∂π1 = 1 + a + 1
+
+∂P1
+
+2
+
+2t
+
+1
+
+1
+
+αn12 (1 + φ2) − αn22 (1 + φ1) − P1 + P2
+
++ P1 = 0 2t
+
+P1 = 1 + a + 1
+
+t
+
+2 2t
+
+1
+
+1
+
+αn12 (1 + φ2) − αn22 (1 + φ1) + P2
+
+1+a
+
+1
+
+1
+
+1
+
+P1 =
+
+2
+
+t+ 2
+
+αn12 (1 + φ2) − αn22 (1 + φ1) + P2
+
+15
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+De manera ana´loga que obtiene que
+
+1−a
+
+1
+
+1
+
+1
+
+P2 =
+
+2
+
+t+ 2
+
+αn22 (1 + φ1) − αn12 (1 + φ2) + P1
+
+Incorporando la funcio´n de reaccio´n de un precio con respecto al otro
+
+1+a
+
+1
+
+1
+
+1
+
+1−a
+
+1
+
+1
+
+1
+
+P1 =
+
+2
+
+t+ 2
+
+αn12 (1 + φ2) − αn22 (1 + φ1) +
+
+2
+
+t+ 2
+
+αn22 (1 + φ1) − αn12 (1 + φ2) + P1
+
+Multiplicando por un 4
+
+1
+
+1
+
+1
+
+1
+
+4P1 = 2(1 + a)t + 2αn12 (1 + φ2) − 2αn22 (1 + φ1) + 2(1 − a)t + αn22 (1 + φ1) − αn12 (1 + φ2) + P1
+
+1
+
+1
+
+3P1 = (2 + 2a + 1 − a)t + αn12 (1 + φ2) − αn22 (1 + φ1)
+
+P1∗ =
+
+3+a 3
+
+α1
+
+1
+
+t+ 3
+
+n12 (1 + φ2) − n22 (1 + φ1)
+
+De manera ana´loga se opera para obtener el precio o´ptimo del banco 2
+
+P2∗ =
+
+3−a 3
+
+α1
+
+1
+
+t+ 3
+
+n22 (1 + φ1) − n12 (1 + φ2)
+
+Red o´ptima:
+
+π1 = P1D1 − cn1
+
+π1 =
+
+3+a
+
+α1
+
+1
+
+3
+
+t+ 3
+
+n12 (1 + φ2) − n22 (1 + φ1)
+
+3+a α 1
+
+α1
+
+6 + 6t n12 (1 + φ2) − 6t n22 (1 + φ2) − cn1
+
+∂π1 ∂n1
+
+=
+
+α 6
+
+−
+n1
+
+1 2
+
+(1
+
++
+
+φ2
+
+)
+
+3+a 6
+
++
+
+α2 36t
+
+(1
+
++
+
+φ2
+
+)2
+
+−
+
+α2 36t
+
+−
+n1
+
+1 2
+
+1
+n22
+
+(1 +
+
+φ1)(1
+
++
+
+φ2) +
+
+α 12t
+
+−
+n1
+
+1 2
+
+(1
+
++
+
+φ2)
+
+n1−
+
+1 2
+
+(
+
+(3
+
++ a)α (1
+18
+
++
+
+φ2)
+
+−
+
+α2 18t
+
+n−2
+
+1 2
+
+(1
+
++
+
+φ2)(1
+
++
+
+φ1))
+
+=
+
+c
+
+−
+
+α2 (1
+18t
+
++
+
+φ2)2
+
+3+a 3
+
+t
+
++
+
+α− 36t n1
+
+1 2
+
+=0
+
+Multiplicamos todo por 18t
+
+n1−
+
+1 2
+
+((3
+
++
+
+a)(1
+
++
+
+φ2)αt
+
+−
+
+α2n−2
+
+1 2
+
+(1
+
++
+
+φ2)(1
+
++
+
+φ1))
+
+=
+
+18ct
+
+−
+
+α2(1
+
++
+
+φ2)2
+
+((3
+
++
+
+a)(1
+
++
+
+φ2)αt
+
+−
+
+α2
+
+n2−
+
+1 2
+
+(1
+
++
+
+φ2)(1
+
++
+
+φ1))
+
+=
+
+(18ct
+
+−
+
+α2(1
+
++
+
+1
+φ2)2)n12
+
+1
+n12
+
+=
+
+((3
+
++
+
+a)(1
+
++
+
+φ2)αt
+
+−
+
+α2
+
+n2−
+
+1 2
+
+(1
+
++
+
+φ2
+
+)(1
+
++
+
+φ1))
+
+(18ct − α2(1 + φ2)2)
+
+16
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+1
+
+2
+
+n1 =
+
+((3 + a)(1 + φ2)αt − α2n22 (1 + φ2)(1 + φ1)) (18ct − α2(1 + φ2)2)
+
+La optimizacio´n de la red del banco 2 es muy similar:
+
+1
+
+2
+
+n2 =
+
+((3 − a)(1 + φ1)αt − α2n12 (1 + φ1)(1 + φ2)) (18ct − α2(1 + φ1)2)
+
+Al sustituir n2 en n1
+
+1
+n12
+
+=
+
+ ((3 + a)(1 + φ2)αt − α2(1 + φ2)(1 + φ1))
+ 
+
+((3
+
+−
+
+a)(1
+
++
+
+φ1
+
+)αt
+
+−
+
+α2
+
+n1−
+
+1 2
+
+(1
+
++
+
+φ1
+
+)(1
+
++
+
+φ2
+
+))
+
+(18ct − α2(1 + φ1)2)
+
+ 
+
+(18ct − α2(1 + φ2)2)
+
+
+   
+
+
+
+
+
+Simpliﬁcando
+
+
+
+1
+
+
+
+1
+n12
+
+=
+
+
+
+((3
+
++
+
+a)(1
+
++
+
+φ2)(18ct
+
+−
+
+α2(1
+
++
+
+φ1)2)αt (18ct −
+
+− α2(1 α2(1 +
+
++ φ2)(1 + φ1))((3 φ2)2)(18ct − α2(1
+
+− +
+
+a)(1 + φ1)2)
+
+φ1)αt
+
+−
+
+α2 n12
+
+(1
+
++
+
+φ1)(1
+
++
+
+φ2)
+
+
+
+Operando
+
+n∗1 =
+
+αt(3 + a)(1 + φ2)(18ct − α2(1 + φ1)2) − α3t(3 − a)(1 + φ2)(1 + φ1)2 2 (18ct − α2(1 + φ1)2)(18ct − α2(1 + φ2)2) − α4(1 + φ1)2(1 + φ2)2
+
+De manera ana´loga se resuelve para n2
+
+n2∗ =
+
+αt(3 − a)(1 + φ1)(18ct − α2(1 + φ2)2) − α3t(3 + a)(1 + φ1)(1 + φ2)2 2 (18ct − α2(1 + φ2)2)(18ct − α2(1 + φ1)2) − α4(1 + φ1)2(1 + φ2)2
+
+17
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+Anexo A.2: Prueba de la Proposicio´n 2
+
+Caso 1: Cuando los dos bancos eligen completa incompatibilidad se tiene que φ1 = 0 y φ2 = 0
+
+n∗1 = n∗2 =
+
+αt(3 + a)(18ct − α2) − α3t(3 − a) 2 (18ct − α2)(18ct − α2) − α4
+αt(3 − a)(18ct − α2) − α3t(3 + a) 2 (18ct − α2)(18ct − α2) − α4
+
+Se sabe que αt(3 + a)(18ct − α2) > αt(3 − a)(18ct − α2) y que α3t(3 − a) < α3t(3 + a) y considerando que ambas ecuaciones tienen el mismo denominador se tiene que n1 > n2.
+
+Considerando los precios
+
+P1∗ =
+
+3+a 3
+
+α1
+
+1
+
+t+ 3
+
+n12 − n22
+
+El segundo te´rmino sera´ positivo
+
+P2∗ =
+
+3−a 3
+
+α1
+
+1
+
+t+ 3
+
+n22 − n12
+
+El segundo te´rmino sera´ negativo, adema´s que (3 + a) > (3 − a) de manera que P1 > P2.
+
+La demanda del banco 1 sera´:
+
+1+a 1
+
+1
+
+1
+
+D1 =
+
+2
+
++ 2t
+
+αn12 − αn22 − P1 + P2
+
+Resolviendo se obtiene que
+
+1+a a α 1 1
+
+D1 =
+
+2
+
+−+ 3 6t
+
+n12 − n22
+
+3+a α 1 1
+
+D1 =
+
+6
+
++ 6t
+
+n12 − n22
+
+Para la demanda del banco 2
+
+1−a 1
+
+1
+
+1
+
+D2 =
+
+2
+
++ 2t
+
+αn22 − αn12 − P2 + P1
+
+18
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+1−a a α 1 1
+
+D2 =
+
+2
+
+++ 3 2t
+
+n22 − n12
+
+3−a α 1 1
+
+D2 =
+
+6
+
++ 6t
+
+n22 − n12
+
+Dado que el segundo te´rmino en la demanda del banco 1 es positivo, mientras que el segundo te´rmino en la demanda del banco 2 es negativo, se tiene que D1 > D2. Por lo anterior π1 > π2, considerando que P1D1 > P2D2.
+
+Caso 2: Cuando un banco elige completa compatibilidad y otro nula compatibilidad φ1 = 0 y φ2 = 1
+
+n∗1 = n∗2 =
+
+2αt(3 + a)(18ct − α2) − 2α3t(3 − a) 2 (18ct − α2)(18ct − 4α2) − 4α4
+αt(3 − a)(18ct − 4α2) − 4α3t(3 + a) 2 (18ct − 4α2)(18ct − α2) − 4α4
+
+Dado que el denominador es el mismo en ambas redes, se deduce cua´l es la red ma´s grande con base en el numerador. Es decir, 2αt(3 + a)(18ct − α2) > αt(3 − a)(18ct − 4α2) mientras que 2α3t(3 − a) < 4α3t(3 + a) de manera que n1 > n2.
+
+Los precios sera´n
+
+P1∗ = P2∗ =
+
+3+a 3
+3−a 3
+
+α
+
+1
+
+1
+
+t+ 3
+
+2n12 − n22
+
+α1
+
+1
+
+t+ 3
+
+n22 − 2n12 )
+
+Debido a que el segundo te´rmino de P1 es positivo, mientras que el segundo te´rmino de P2 es negativo y considerando que el primer te´rmino de P1 es ma´s grande que el de P2, entonces P1 > P2.
+
+El ana´lisis de la demanda sera´
+
+1 + a 1 2at
+
+1
+
+1 21 21 21
+
+D1 =
+
+2
+
++ 2t
+
+− 3
+
++ αn12 − αn22 − 3 αn12 + 3 αn22 − 3 αn12
+
+3+a α 1 1
+
+D1 =
+
+6
+
+− 6t
+
+n12 + n22
+
+19
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+
+De la misma manera se aplica para la demanda del banco 2
+
+3−a α 1 1
+
+D2 =
+
+6
+
++ 6t
+
+n22 + n12
+
+1
+
+1
+
+1
+
+Se tiene que ni < 1, por lo que 1 > ni2 > ni, entonces n12 + n22 < 2 si a ∈ [0, 1], en un caso
+
+1
+
+1
+
+extremo donde a = 1, se tendr´ıa que 3 − a > n12 + n22 , para ciertos valores de t y α. De manera
+
+que D1 > D2. Por lo tanto π1 > π2.
+
+Caso 3: El caso φ1 = 1 y φ2 = 0 es muy similar dada la similitud en las funciones al Caso 2.
+
+Caso 4: Para el caso φ1 = 1 y φ2 = 1, al igual que en el Caso1, es muy evidente el hecho que n1 > n2, P1 > P2, D1 > D2 y π1 > π2.
+
+Anexo A.3: Prueba de la Proposicio´n 3
+
+Se tiene que
+
+n10,0 = n01,1 =
+
+αt(3 + a)(18ct − α2) − α3t(3 − a) 2 (18ct − α2)(18ct − α2) − α4
+2αt(3 + a)(18ct − α2) − 2α3t(3 − a) 2 (18ct − α2)(18ct − 4α2) − 4α4
+
+Se sabe que (18ct − α2) > (18ct − 4α2) de manera que (18ct − α2)(18ct − α2) − α4 > (18ct − α2)(18ct − 4α2) − 4α4, es decir el denominador de n10,1 es ma´s chico que en n10,0, mientras que el numerador de n10,1 es dos veces ma´s grande que el numerador de n10,0.
+
+En el ana´lisis de los precios se tiene que P01,1 > P01,0, al igual que la demanda D01,1 > D01,0 y por lo tanto los beneﬁcios π01,1 > π01,0.
+
+20
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano
+6. Referencias
+1. COFECE (2014) Trabajo de investigacio´n y recomendaciones sobre las condiciones de competencia en el sector ﬁnanciero y sus mercados
+2. Donze, J., y Dubec, I. (2011) ATM Direct Charging Reform: the Effect of Independent Deployers on Welfare, Review of Network Economics: Vol. 10: Iss. 2, Art. 3
+3. Donze, J., y Dubec, I. (2006) The role of Interchange Fees in ATM Networks, International Journal of Industrial Organization 24, pp. 29-43
+4. Hannan T. (2008) Consumer Switching Costs and Firm Pricing Evidence From Bank Pricing of Deposit Accounts, FEDS
+5. Hotelling, H. (1929) Stability in competition, Economics Journal, 39, pp. 41-57.
+6. Ishii (2004) Interconnection Pricing and Compatibility in Network Industries: ATM Networks in the Banking Industry, Working paper, Harvard
+7. Laffont, J., Rey, P., y Tirole, J. (1998) Network Competition: I. Overview and Nondicriminatory Pricing. RAND Journal of Economics, 29: pp. 1-37
+8. Matutes, C., y Padilla, J., (1993) Shared ATM networks and banking competition, European Economics Review North-Holland, 38, pp. 1113-1138
+9. Moreno, J., y Zamarripa, G. (2013) Redes de cajeros automa´ticos y la estructura en comisiones por conexio´n: Un ana´lisis de transaccionalidad para Me´xico, Me´xico, FUNDEF
+10. Noone, C., (2012) ATM Fees, Pricing and Consumer Behavior: An Analysis of ATM Network Reform in Australia, Reserve Bank of Australia, Research Discussion Paper 2012-03
+11. OCDE (2008) Competition and Regulation Retail Banking, Directorade for Financial and Enterprise affairs Competition Committee
+12. Shy, O. (2007) The Economics of Networks Industries, Graduate Lecture Notes
+21
+
+Un modelo asime´trico de competencia bancaria: un ana´lisis del caso mexicano 13. Shy, O., Navon, A., y Thisse, J. (1995) Product Differentiation in the Presence of Positive and Negative Network Effects, Center for Economic Policy Research CEPR, No. 1306
+22
+
+7. I´ndice de Cuadros y Figuras
+I´ndice de cuadros
+1. Matriz de pagos de los bancos . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+I´ndice de ﬁguras
+1. Transacciones totales en cajeros automa´ticos en Me´xico 2002-2014 . . . . . . . . 4 2. Transacciones interbancarias en Me´xico 2002-2014 . . . . . . . . . . . . . . . . . 5 3. Comisio´n promedio y taman˜o de la red de los bancos en Me´xico en 2015 . . . . . . 5 4. Distribucio´n de los consumidores . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 5. Funciones de reaccio´n y equilibrio en precios . . . . . . . . . . . . . . . . . . . . 9 6. Funciones de reaccio´n y equilibrio de la red . . . . . . . . . . . . . . . . . . . . . 10
+
+

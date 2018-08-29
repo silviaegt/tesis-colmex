@@ -1,0 +1,3000 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+IMPACTO DEL PROGRAMA PESA-GSH SOBRE LOS NIVELES DE POBREZA DE LOS BENEFICIARIOS: UN ANÁLISIS PROPENSITY SCORE RUBÉN SANTOS PÉREZ
+PROMOCIÓN 2002-2004
+ASESOR: JOSÉ JORGE MORA RIVERA
+NOVIEMBRE 2013
+
+AGRADECIMIENTOS
+A mis padres, Josefina y Rosalino A mis hijos, Kiauitzin, Diana y Leonardo A mi hermano, Roberto Carlos Quisiera expresar mi agradecimiento a las personas que de alguna forma hicieron posible la culminación de este trabajo de investigación. En primer lugar a mi asesor, Jorge Mora Rivera, quien me dedicó gran parte de su tiempo en revisar y sugerir correcciones a este trabajo, así como por su aliento en la materialización del mismo. En segundo lugar a mis amigos, Marco Antonio Austria Carlos, Edgar Vargas Dávila por su amistad fraternal; a Leovardo Mata Mata por su amistad y ayuda; a Carlos Gil De Partearroyo Martínez por su gran aprecio y amistad fraternal; a Alejandra García por su amistad y compañía, a Tania Ortega Hernández por su amistad, motivación y apoyo en uno de los momentos más difíciles de mi vida; a Hiram Valdez Flores por su amistad y camaradería; y en especial a mi gran amigo Orlando Parada Vicente no sólo por su valiosa amistad y camaradería, sino por ser un ejemplo constante de disciplina e inquebrantable esfuerzo.
+ii
+
+RESUMEN
+El objetivo de la presente investigación consiste en medir el impacto del Programa PESA-GSH sobre los niveles de pobreza de los beneficiarios empleando la técnica de Propensity Score Matching. Con la metodología propuesta se prueba si el PESA-GSH es un programa altamente efectivo para reducir los niveles de pobreza de los hogares participantes, en especial de los más pobres.
+La información que se emplea para la medición de los impactos proviene de una encuesta que se levantó en el estado de Guerrero y que se diseñó específicamente para evaluar los impactos del PESA-GSH. Los resultados arrojan que el Programa ha tenido un impacto positivo sobre los ingresos netos totales de los hogares beneficiarios, al incrementarlos en 11,303.8 pesos anuales en promedio, que de manera individual equivale a un efecto promedio de 2,260.8 pesos anuales, o bien 188 pesos por persona al mes; por componentes del ingreso, el neto agrícola es el que más aumenta en promedio debido al tratamiento, sin embargo el ingreso neto de traspatio es el más robusto estadísticamente, aunque el impacto promedio del Programa sobre éste resulta ser el más bajo dentro de los cuatro componentes del ingreso neto, a saber de 331 pesos anuales por hogar.
+Posteriormente se mide el impacto del Programa sobre los niveles de pobreza de los hogares, de lo cual se obtiene que el PESA-GSH disminuye las tasas de pobreza alimentaria en un 18%, contrastando con las últimas estimaciones de CONEVAL sobre los cambios en la pobreza por ingreso de los mexicanos, según las cuales el porcentaje de individuos y hogares pobres en México y su número creció considerablemente en 2008 respecto a 2006. De esta forma, los resultados señalan que con el Programa se ha logrado no sólo proteger de la crisis global actual a los hogares que beneficia en Guerrero, sino que además una proporción considerable de éstos ha salido de la pobreza alimentaria. Además, los resultados señalan que el PESA-GSH disminuye la tasa de pobreza de capacidades en 10.2%; mientras que el impacto sobre la pobreza de patrimonio es de 7.9%.
+El análisis se complementa empleando el Índice Foster, Greer y Thorbecke, FGT y construyendo ingresos contrafactuales de los hogares beneficiarios, esto con la finalidad de reforzar los resultados anteriores en lo relativo a la reducción de los niveles de pobreza, en especial de aquellos que se encuentran en condiciones de Pobreza Alimentaria. Para lograr esto último se
+iii
+
+construyen ingresos contrafactuales de los hogares que recibieron el PESA-GSH. Los resultados son contundentes: el Programa reduce la Pobreza Alimentaria en un 12%, ya que de acuerdo con los resultados la pobreza sin el Programa sería de 66%, pero gracias al Programa la pobreza disminuye 12 puntos porcentuales hasta ubicarse en 54%. En lo referente a pobreza de capacidades resulta que el porcentaje de pobres habría sido 8% mayor de no haber recibido el PESA-GSH y en el caso de la Pobreza de Patrimonio el resultado habría sido un 4.7% mayor a lo observado, si no se hubiera otorgado tratamiento.
+Una de las aportaciones más importantes de este estudio consiste en construir una distribución de los ingresos contrafactuales de los beneficiarios del PESA-GSH, con la finalidad de captar los impactos del Programa en función de la ubicación que tengan los beneficiarios dentro de la distribución de los ingresos, y con ello verificar si éste tiene un mayor efecto en las personas con menos ingresos o por el contrario en aquellas con mayores ingresos. El método que se sigue consiste en formar parejas entre individuos del grupo de control y de tratamiento en base a los métodos del Radio y del Vecino más cercano, tomando los ingresos de cada uno de los gemelos como los ingresos contrafactuales para cada individuo; esto es, para cualquier par, el ingreso contrafactual del individuo del grupo de tratamiento resulta ser el ingreso de su pareja que se encuentra en el grupo de control, y viceversa. Empleando la técnica del vecino más cercano, se obtiene que el impacto es mayor en los hogares con ingresos más bajos; por ejemplo para los primeros tres deciles, sus ingresos aumentan debido al programa un 50% y su efecto es a lo más de 10% para los últimos deciles.
+A su vez, al emplear la técnica del Radio, se obtiene un impacto positivo del Programa, que es mayor en los primeros deciles de la distribución, con niveles de hasta un 67%, mientras que en los últimos deciles su efecto es a lo más de 17%. Estos resultados son más parecidos a los que se obtienen con en el vector de ingresos contrafactuales que se derivan de emplear el efecto promedio del tratamiento sobre los tratados, ATT.
+Por tanto, se verifica que el PESA-GSH es un programa altamente efectivo para combatir la pobreza y en particular la de los hogares más desprotegidos. Derivado de ello, en el presente estudio se sugiere que a partir de un programa productivo como el PESA-GSH, se puede generar la capacidad para influir de manera positiva y significativa en el desarrollo del sector rural mexicano.
+iv
+
+Contenido RESUMEN.................................................................................................................................................. iii INTRODUCCIÓN ...................................................................................................................................... 3 CAPÍTULO I ............................................................................................................................................... 9 REVISIÓN DE LA LITERATURA .......................................................................................................... 9
+Literatura que tiene que ver con aspectos teóricos del método Propensity Score Matching............ 9 Aplicaciones del método a diferentes contextos y principales aplicaciones a México..................... 11 CAPÍTULO 2 ............................................................................................................................................ 13 METODOLOGÍA ..................................................................................................................................... 13 Métodos de Matching o pareo.............................................................................................................. 13
+Fundamentos teóricos del Matching................................................................................................... 13 El problema de la evaluación ............................................................................................................. 15 Solución del problema de la evaluación ............................................................................................. 15 a) Solución experimental................................................................................................................. 15 b) Solución no experimental (Método de Matching) ...................................................................... 16 Limitaciones y características importantes del Matching .................................................................. 17 Cuando utilizar el Matching y cuando no........................................................................................... 18 El Propensity Score Matching ............................................................................................................. 18 Estimadores de matching del ATT basados en el Propensity Score................................................. 20 Medidas de pobreza .............................................................................................................................. 22 Enfoque 1: Línea de pobreza (z). ........................................................................................................ 22 Enfoque 2: Necesidades básicas insatisfechas (NBI). ........................................................................ 23 Enfoque 3: Combinado ....................................................................................................................... 23 Enfoque 4: Multidimensional.............................................................................................................. 23 Métodos basados en el enfoque de línea de pobreza .......................................................................... 24 Algunos Índices de Pobreza:............................................................................................................... 24 a) Índice de Pobreza FGT ............................................................................................................... 24 b) Índice de Watts............................................................................................................................ 25 c) Índice de Sen-Shorrocks-Thon:................................................................................................... 26 Propiedades deseables que debe de tener un índice de pobreza ........................................................ 26 CAPÍTULO 3 ............................................................................................................................................ 28
+
+BASE DE DATOS..................................................................................................................................... 28 Cobertura Geográfica........................................................................................................................... 28
+Cuadro 1. Localidades que integran la muestra .......................................................................................... 29 Diseño muestral ..................................................................................................................................... 29 Población objetivo .............................................................................................................................. 29 Marco de muestreo ............................................................................................................................. 30 Esquema de muestreo ......................................................................................................................... 30 Tamaño de la muestra......................................................................................................................... 30 Selección de las unidades de muestreo ............................................................................................... 31 Estadísticas descriptivas ....................................................................................................................... 32 Agricultura .......................................................................................................................................... 32 Ganadería ........................................................................................................................................... 33 Traspatio ............................................................................................................................................. 35 Proyectos PESA-GSH ......................................................................................................................... 37
+CAPÍTULO 4 ............................................................................................................................................ 41 RESULTADOS DEL PROGRAMA SOBRE LA POBREZA .............................................................. 41
+Cálculo del Propensity Score ............................................................................................................... 41 Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del PESA-GSH.. 47 Medición del impacto global del PESA-GSH ..................................................................................... 47 Impacto del PESA-GSH en la pobreza ............................................................................................... 52 Medición del impacto de la reducción de la pobreza a partir de escenarios contrafactuales ........ 55
+Medición del impacto de la pobreza, a partir de la construcción de ingresos contrafactuales empleando el ATT ............................................................................................................................... 55 Medición del impacto de la pobreza, a partir de la construcción de ingresos contrafactuales empleando el ingreso de los gemelos de los individuos...................................................................... 57 CONCLUSIONES Y RECOMENDACIONES...................................................................................... 61 BIBLIOGRAFÍA....................................................................................................................................... 65
+2
+
+INTRODUCCIÓN
+El fenómeno de la pobreza tiene múltiples dimensiones, como son las capacidades humanas, el acceso a la infraestructura, los ingresos, la vulnerabilidad y la inclusión social; de éstas, se derivan complejas interrelaciones con profundas y amplias consecuencias económicas y políticas en la sociedad que lo padece. Aunque la pobreza ha estado presente de manera permanente en la historia de la humanidad, su concepción y contenido han cambiado de acuerdo a los procesos y mecanismos de cohesión social que operan en cada momento del desarrollo social y en consecuencia, las acciones para atenderla también.
+Así, en la medida que la pobreza tiene causas multidimensionales, su superación requiere de estrategias de intervención integrales y un esfuerzo de políticas sociales multisectoriales, con objetivos claros e instrumentos complementarios; que conformen verdaderas redes sociales integrales. Se entiende como políticas gubernamentales contra la pobreza a aquellas orientadas a mejorar el desarrollo social integral, incluyendo el alivio de la pobreza y potenciando el desarrollo de capital humano de la población.
+En este sentido, las políticas sociales de superación de la pobreza han ido evolucionando, en la medida que la concepción de pobreza ha ido cambiando desde una visión centrada en la supervivencia de las personas (en la que se consideraban casi exclusivamente parámetros de medición basados en necesidades materiales básicas, como los requerimientos calóricos y nutricionales), hacia un enfoque más bien multidimensional, donde no sólo se busca cubrir las necesidades básicas de los individuos sino que se persigue su integración social.
+En los últimos años se ha llegado a un consenso internacional sobre la importancia de proveer activos básicos de manera sostenida a los grupos más vulnerables (educación, nutrición, servicios de salud, etc.), así como de mejorar el sistema de derechos individuales para que las personas puedan salir de la pobreza (Adato, Ahmed, y Lund 2004).
+Las políticas de atención a la pobreza, tienen lugar en México a principios de la década de los años setenta y se mantienen hasta nuestros días. En este contexto, el primer programa de atención a la pobreza que se crea en nuestro país surge bajo el nombre de Programa de Inversiones para el Desarrollo Rural (PIDER, 1970-1982), durante el gobierno de Luis Echeverría Álvarez (1970-1976); posteriormente en enero de 1977, bajo la administración del
+3
+
+presidente José López Portillo, se crea por decreto presidencial la Coordinación General del Plan Nacional de Zonas Deprimidas y Grupos Marginados1 (COPLAMAR, 1976-1983), la cual
+estaría integrada por las entidades públicas especializadas para atender los problemas derivados de la marginalidad social y el atraso económico2; en 1983, durante la administración del
+presidente Miguel de la Madrid Hurtado, se crean los Programas de Desarrollo Regional (1983-
+1988), que estaban constituidos a su vez por cinco programas que formaban parte de los Convenios Únicos de Desarrollo3; con lo anterior estaban dadas las bases administrativas para instrumentar el Programa Nacional de Solidaridad4 (Pronasol, 1998-1995), durante el Gobierno
+de Carlos Salinas de Gortari; luego de quedar sentadas las bases de tal modelo, durante la
+administración del presidente Ernesto Zedillo Ponce de León se crea el Programa de Educación, Salud y Alimentación5 (Progresa, 1997-2001); el cual se renombró como Programa de
+Desarrollo Humano Oportunidades (Oportunidades en adelante) a partir del gobierno de Vicente
+Fox Quezada (2000-2006), y cuyo nombre se mantiene hasta la fecha, convirtiéndose de esta
+manera en el programa de atención a la pobreza más importante en el país.
+Oportunidades es una de las principales acciones del Gobierno Federal para atender a las
+familias que viven en condiciones de pobreza, contribuyendo al desarrollo de sus capacidades y
+propiciando su acceso a oportunidades de desarrollo económico y social. Oportunidades entrega
+transferencias monetarias a las familias en condiciones de pobreza extrema con un doble
+objetivo: aliviar su condición de carencia e incentivar el logro educativo, el cuidado de la salud y
+1 Es precisamente en 1980 cuando se inician de forma estructurada en México las políticas de seguridad alimentaria con la puesta en marcha del Sistema Alimentario Mexicano y la Ley de Fomento Agropecuario en 1980, con el objetivo de mejorar la producción y abasto de alimentos y el ingreso de los productores rurales (Olmedo, 1981). Sin embargo, la crisis financiera de 1982 obligó la suspensión de este Programa. 2 Instituto Nacional Indigenista, Comisión Nacional de Zonas Áridas, Patrimonio Indígena del Valle del Mezquital, la Forestal FCI, Fondo Candilillero, Productores Forestales de la Tarahumara, Patronato del Maguey, Fondo Nacional para el Fomento de las Artesanías, Compañía Forestal de la Lacandona y Fideicomiso de Desastres. 3 Los Convenios Únicos de Desarrollo (CUD’s) estaban integrados por los siguientes programas: Programas Sectoriales Concertados (PROSEC); los Programas de Desarrollo Estatal (PRODES); los Programas Estatales de Inversión (PEI); Programa Integral para el Desarrollo Rural (PIDER) y el Programa de Atención a Zonas Marginadas (PAZM), éste último concentraba los recursos ejercidos antes por la COPLAMAR. 4 El Pronasol tenía como objetivo mejorar las condiciones de vida de las comunidades rurales, las comunidades indígenas y los habitantes de las zonas urbano-marginadas. Se trataba de una nueva estrategia que buscaba enfocar el gasto público sólo en aquellos sectores que más lo necesitan. Se dirigía a las zonas consideradas como pobres tanto en al campo como en la ciudad. 5 A diferencia del Pronasol los objetivos de Progresa son más definidos y el método de focalización más preciso. El objetivo principal de Progresa es “mejorar sustancialmente las condiciones de educación, salud y alimentación de las familias pobres, particularmente de los niños, niñas y de sus madres”, Poder Ejecutivo Federal s/f: 39.
+4
+
+la mejora de su alimentación. Como parte de sus apoyos, el Programa entrega becas apoyos para la compra de útiles escolares a más de cinco millones de niños, niñas y jóvenes, que cursan entre el tercer grado de primaria y el bachillerato, así como un incentivo monetario a los jóvenes que concluyen su educación media superior.
+Las familias incorporadas a Oportunidades reciben apoyo alimentario y energético, así como el nuevo apoyo alimentario Vivir Mejor, el paquete básico garantizado de salud, y participan en talleres de autocuidado para la salud, como parte de las corresponsabilidades que deben cumplir para permanecer en el Programa6.
+El Programa Oportunidades ha venido incrementando su cobertura desde su origen en 1997 como Programa de Educación, Salud y Alimentación, cuando atendía a 300 mil familias. Entre 2002 y 2004, el Programa aumentó su cobertura de 3.2 millones a 5 millones de familias. En 2009, el programa atendía a 5 millones 200 mil hogares en todo el país, con ello el programa llega a más de 95 mil localidades, en todos los municipios; en 2010, el programa incorporará 600 mil familias más, para alcanzar una meta de 5 millones 800 mil hogares.
+En este contexto de desarrollo de programas encaminados al combate a la pobreza es que surge PESA-Guerrero Sin Hambre (PESA-GSH en adelante) cuyo objetivo es atacar las causas de la pobreza estructural en el estado de Guerrero a partir de dos acciones: dotación de activos productivos y de capitales físico, humano (capacitación), ambiental y financiero. Dicho programa es promovido por la Organización de las Naciones Unidas para la Agricultura y la Alimentación (FAO) a partir de 1994 cubriendo a quince países de bajos ingresos y con déficit de alimentos.
+Con dicho antecedente y con la finalidad de complementar los esfuerzos del Gobierno mexicano en los temas de combate a la pobreza como uno de sus objetivos centrales en materia de política social, surge el convenio entre la Secretaria de Agricultura, Ganadería y Desarrollo Rural de México (SAGARPA) y la FAO para poner en marcha el PESA. Dicho programa tiene como
+6 Oportunidades está presente en todo el ciclo de vida de las familias que más lo necesitan. Para ser incorporadas al Programa, las familias deben contestar una encuesta que determina sus condiciones socioeconómicas. Evaluaciones externas de impacto muestran que los hogares con Oportunidades obtienen múltiples beneficios y mejoran cotidianamente sus condiciones de vida.
+5
+
+objetivo la promoción de la productividad agropecuaria y el incremento de los ingresos de los pequeños agricultores para coadyuvar a mejorar la seguridad alimentaria en los planos familiar, comunitario y nacional. Uno de los objetivos es que el PESA sea adoptado y adaptado por los gobiernos de los estados de México.
+De esta forma, el PESA-GSH se enmarca conceptualmente dentro del PESA como un programa dirigido a familias en pobreza extrema del medio rural guerrerense. Sin embargo incluye otros componentes para atacar integralmente las causas estructurales de la pobreza. La población beneficiada recibe subsidios para que aumente el conjunto de sus activos (financieros, físicos, humanos, naturales), promoviendo su eficiente utilización a través de capacitación supervisada por técnicos especializados.
+El Programa se focaliza hacia los hogares rurales, pues son en éstos donde se toman las decisiones, y los apoya durante tres años con el fin de darles continuidad a los otorgados en el primer año y reforzarlos durante los siguientes. Los hogares beneficiarios son los que reciben el programa Oportunidades por lo que el PESA-GSH pretende complementar estos apoyos enfocándose en el mejoramiento de los sistemas productivos de milpa y traspatio, fortaleciendo las capacidades técnicas, estableciendo un sistema de microfinanzas y contribuyendo a la conservación y restauración de suelos.
+El presente trabajo tiene como objetivo general la medición del impacto del Programa PESAGSH sobre los niveles de pobreza de los beneficiarios empleando la técnica de Propensity Score Matching.
+Se plantean algunas hipótesis que se buscará verificar con la metodología que se propone en el presente trabajo, éstas se enuncian a continuación: el PESA-GSH es un programa altamente efectivo para reducir los niveles de pobreza de los hogares participantes; otra hipótesis consiste en que el apoyo para la cría de animales por parte del Programa, es el más efectivo para aumentar los ingresos de los beneficiarios. Por último, se hipotetiza que de acuerdo a los apoyos que maneja el Programa, los mayores impactos se presentan en los hogares que se encuentran en situación de Pobreza Alimentaria.
+Incluyendo esta introducción, la presente tesis se compone de seis partes. En el Capítulo I se hace una revisión de los principales autores creadores del método del Propensity Score Matching, así como de sus principales aportaciones al mismo; además se enumeran las
+6
+
+principales aplicaciones del Propensity Score Matching a diversos campos del conocimiento. Asimismo, en esta parte se hace revisión de los principales trabajos aplicados para México, se enumeran sus principales aportaciones, así como las variaciones de la metodología del Propensity Score que emplearon, si ese fue el caso.
+En el Capítulo II se presenta de manera formal la metodología a utilizar en la tesis; la presentación intenta dejar claro el objetivo del método, para ello se menciona cuál es la razón del método. Se expone que el objetivo del método es muy simple a saber, se quiere conocer cuál es el valor de alguna característica individual en dos estados (con programa y sin programa), con lo que la diferencia en los valores de esa característica sería el efecto del programa para esa persona y la diferencia promedio de todos los participantes sería el efecto promedio del programa. No obstante, el problema es que por lo general no se puede observar a un individuo en dos estados; para resolver este problema se proponen dos soluciones, una llamada solución experimental y otra llamada no experimental, esta última es precisamente la que da origen a los métodos de pareo o Matching y de la que posteriormente se deriva el Propensity Score Matching o simplemente Propensity Score, que es un tipo específico de pareo. El capítulo se cierra con una exposición de los principales métodos que existen para medir la pobreza.
+En el Capítulo III se describe la base de datos que se emplea en la tesis, la cual consiste en una encuesta que se aplicó ex profeso para la evaluación del Programa PESA-GSH; en el capítulo se explica cual es su cobertura geográfica, por lo que se enumeran las localidades encuestadas; se explica con suficiente detalle cuál fue el diseño muestral que se empleó para poder llevar a cabo dicha encuesta, para ello se describe cuales fueron las unidades muestrales que se utilizaron; en la última parte del capítulo se realiza un análisis descriptivo de las principales variables que contiene la encuesta, destacando las diferencias entre el grupo de control y tratamiento, permitiendo que esos resultados se puedan verificar estadísticamente en el siguiente capítulo.
+En el capítulo IV se presentan los resultados más importantes de la investigación abordada en esta tesis, esto es, se mide el impacto del PESA-GSH sobre los niveles de pobreza de los beneficiarios; con las técnicas del Propensity Score Matching se demuestra que el Programa ha tenido un impacto positivo sobre los ingresos de los beneficiarios del Programa, y con el Índice Foster, Greer y Thorbecke, FGT, se demuestra que dicho programa ha permitido reducir los niveles de pobreza de manera significativa, en especial de aquellos que se encuentran en
+7
+
+condiciones de pobreza extrema; para cuantificar esto último se construyen ingresos contrafactuales de los hogares que recibieron el PESA-GSH. En la tercera y última parte del capítulo se realiza un ejercicio similar al de la segunda sección, sin embargo para la construcción de los ingresos contrafactuales se emplean las técnicas del Vecino más cercano y del Radio, construyendo el ingreso contrafactual de la unidad de tratamiento como el ingreso de la unidad más parecida que se encuentre en el grupo de control; aunque los efectos del Programa siguen siendo positivos, sobresalen algunas diferencias importantes. En la última parte de este trabajo se presentan las conclusiones del estudio y se realizan algunas recomendaciones encaminadas a fortalecer el PESA-GSH en materia de combate a la pobreza.
+8
+
+CAPÍTULO I REVISIÓN DE LA LITERATURA
+En esta sección se realiza una revisión de los estudios pioneros del Método Propensity Score Matching, asimismo se revisan las principales aportaciones y modificaciones que se han hecho al mismo. Además se realiza un repaso de algunos estudios que han aplicado el método en diferentes contextos; y posteriormente se describen los principales trabajos que se han realizado para México.
+Literatura que tiene que ver con aspectos teóricos del método Propensity Score Matching
+El análisis Propensity Score Matching es un término relativamente nuevo y constituye una clase de métodos estadísticos innovadores, que han probado ser útiles para la evaluación de los efectos de tratamiento cuando se utilizan datos observacionales o experimentales7. Dicho término, apareció por primera vez en 1983 en el artículo de Rosenbaum y Rubin, quienes describieron la estimación de efectos causales a partir de datos observacionales. En el trabajo de Heckman (1978,1979) sobre variables endógenas dummy, utilizando un modelo de ecuaciones simultáneas, él abordó el mismo problema sobre la estimación de los efectos de tratamiento cuando la asignación no es aleatoria; sin embargo, Heckman abordó este problema desde una perspectiva de selección muestral. Aunque el trabajo de Heckman sobre el problema de variables endógenas dummy, empleó diferente terminología, él utilizó el mismo enfoque para la estimación de la probabilidad de recibir una de las dos condiciones8.
+7 Un estudio observacional es una investigación empírica cuyo objetivo es esclarecer relaciones causales (i.e., causa y efecto), cuando no es posible utilizar experimentación controlada y asignar a los participantes de manera aleatoria a los diferentes procedimientos. Los investigadores utilizan el término cuasi experimental la mayoría de las veces, en lugar del primero. El término se utiliza para designar estudios experimentales que permiten comparar grupos, pero en donde se carece del elemento característico de asignación aleatoria (Guo y Fraser, 2010). Además, como señalan Cook y Campbell (2002), los cuasi experimentos comparten algunas características similares a los experimentos, por ejemplo la presencia de grupos de control, medidas previas a la prueba, que intentan respaldar inferencias contrafactuales acerca de lo que hubiera sucedido en la ausencia del tratamiento. La asignación a las condiciones se da por medio de auto selección, mediante la cual las unidades eligen el tratamiento para ellos mismos, o por medio de selección administrada, por los profesores, burócratas, legisladores, terapistas, médicos, u otros deciden que personas deberían de recibir algún tratamiento. 8 Ambas escuelas del pensamiento, han tenido una influencia significativa sobre la dirección del campo, aunque el término análisis Propensity Score, acuñado por Rosenbaum y Rubin, se utiliza más frecuentemente como un término general para la el conjunto de técnicas relacionadas utilizadas para corregir el sesgo por selección en estudios observacionales.
+9
+
+De esta manera, el Propensity Score Matching, se puede emplear para estimar el efecto promedio de un tratamiento o programa. El método compara los resultados de los participantes del programa con aquellos que no participaron, pero que tienen características similares (no participantes pareados), y donde los pares se eligen sobre la base de similitud de características observables. Una de las principales ventajas de los estimadores de matching es que ellos por lo regular no requieren que se especifique una forma funcional para la ecuación de resultado y que por lo tanto no son susceptibles a sesgos por mala especificación, junto con la dimensión. Los estimadores tradicionales de matching, forman una pareja para cada participante en el programa con uno que no haya participado, mientras que los estimadores más recientes, parean a los participantes de un programa con múltiples no participantes, y utilizan un promedio ponderado para construir el resultado del apareamiento (Todd, 2006).
+En los últimos 30 años, los métodos de evaluación de programas9 han experimentado un cambio significativo a medida que los investigadores han reconocido la necesidad de desarrollar enfoques más eficientes para medir los efectos de tratamiento a partir de los estudios basados en datos observacionales y para evaluaciones basadas en diseños cuasi experimentales. Este creciente interés en buscar estimadores consistentes y eficientes de la efectividad de programas llevaron a aumento en el trabajo enfocado en estimar los efectos promedio de tratamientos. Los estadísticos (e.g., Rosenbaum y Rubin, 1983) y los econometristas (e.g., Heckman, 1978, 1979) han realizado contribuciones sustanciales para desarrollar y refinar los nuevos enfoques para la estimación de efectos causales a partir de datos observacionales; conjuntamente, estos enfoques se conocen como análisis Propensity Score10.
+El desarrollo del enfoque Propensity Score significó una convergencia de dos tradiciones al estudiar inferencias causales: la tradición econométrica, que en principio recae en modelos de ecuaciones estructurales y la tradición estadística que en principio se basa en experimentos aleatorizados (Guo y Fraser, 2010). 9 La evaluación de programas, son esencialmente estudios de relaciones causa-efecto. Su objetivo es responder a la pregunta esencial: ¿en qué medida, la diferencia neta observada en los resultados entre los grupos tratados y no tratados se puede atribuir a la intervención, dado que todo lo demás se mantiene constante (ceteris paribus)? La causalidad en este contexto simplemente se refiere a la ganancia o pérdida neta observada en el resultado del grupo de tratamiento que se puede atribuir a las variables manipulables en la intervención (Guo y Fraser, 2010). 10 Los econometristas han integrado los modelos de propensity score a otros modelos econométricos (i.e., variables instrumentales, funciones de control, estimadores de diferencias en diferencias) para realizar evaluaciones no experimentales menos caras y menos intromisorias de programas sociales, educacionales y de salud. Más aún, las críticas recientes y reformulaciones de los enfoques experimentales clásicos en econometría simbolizan un importante cambio en los métodos de evaluación (Guo y Fraser, 2010).
+10
+
+Aplicaciones del método a diferentes contextos y principales aplicaciones a México
+Como muestra de la importancia de estos métodos, el enfoque Propensity Score Matching se ha utilizado en una variedad de disciplinas y profesiones como educación (Morgan, 2001), epidemiología (Normand et. al., 2001), medicina (Earle et. al., 2001; Gum, Thamilarasan, Watanabe, Blackstone, & Lauer, 2001), psicología (Jones, D’Agostino, Gondolf, & Heckert, 2004), trabajo social (Barth, Greeson, Guo, & Green, 2007; Barth, & Guo, 2009), y sociología (Smith, 1997). En estudios de bienestar social, los economistas y otros han utilizado métodos de Propensity Score en la evaluación de programas, entre los que destacan la evaluación del programa de la Ley Nacional de Asociación para el Entrenamiento en el Trabajo, NJTPA (Heckman, Ichimura, & Todd, 1997), la Prueba del Trabajo Nacional Apoyado, NSWD (LaLonde, 1986), y la Evaluación Nacional de Estrategias de Estudio para el Bienestar en el Trabajo, NEW-WSS (Michalopoulos, Bloom, & Hill, 2004).
+Adicionalmente, dichos métodos, se han utilizado para evaluar los impactos de una gran variedad de programas en países en desarrollo. Jyotsna y Ravaillon (1999) miden el impacto de un programa de capacitación laboral en Argentina (el programa Trabajar), y Jyotsna y Ravaillon (2003) estudian los efectos de las inversiones públicas en agua embotellada sobre la salud de los niños en zonas rurales de la india. Galiani, Gertler y Schargrodsky (2005) utilizan los métodos de Matching de diferencias en diferencias para analizar los efectos de la privatización de los servicios de agua sobre la mortalidad en Argentina. Otras aplicaciones incluyen a Gertler, Levine y Ames (2004) quienes estudian los efectos de las muertes de los padres sobre los resultados de los niños; a su vez Lavy (2004) estudia los efectos de un programa de incentivos a profesores en Israel sobre su desempeño; Angrist y Lavy (2001) estudian los efectos de la capacitación de los profesores sobre las calificaciones de los niños en Israel; y Chen y Ravaillon (2003) estudian la reducción de la pobreza en China.
+Existen algunos estudios para México que emplean esta técnica; dentro de éstos destaca el estudio de Fajnzylber, Maloney y Montes (2006), en donde ellos emplean técnicas de Propensity Score Matching y Funciones de Control para medir el impacto de la participación en diferentes instituciones sociales sobre el desempeño de los microestablecimientos; ellos encuentran que las empresas que participan en los mercados de crédito, que reciben capacitación, que pertenecen a organismos empresariales, así como aquellos establecimientos que pagan impuestos presentan
+11
+
+mayores niveles de ganancias. También miden el efecto del crédito formal e informal sobre la permanencia en el mercado. También destaca el estudio de Esquivel y Huerta (2007), en donde analizan los efectos de las remesas sobre las condiciones de pobreza de los hogares mexicanos; ellos obtienen que la recepción de remesas reduce la probabilidad de que los hogares sufran Pobreza Alimentaria en 7.7 y 6.3 puntos porcentuales, de manera respectiva; no obstante la recepción de remesas no tiene efecto alguno sobre la Pobreza Patrimonial de los hogares urbanos, aunque sí para los hogares rurales, ya que para éstos la probabilidad de caer en este tipo de pobreza se reduce en 10 puntos porcentuales. En otro trabajo, Esquivel y Ordaz (2008) estudian los efectos de los programas sociales sobre la informalidad del empleo; en particular ellos refutan la hipótesis de Levy (2008), que tiene que ver con que los programas sociales podrían provocar un aumento de la informalidad en México; ellos descubren que existe un premio salarial al trabajar en el mercado formal, y dado que el mercado laboral en México se encuentra segmentado, los programas sociales no incrementarán la informalidad. En estudio más reciente, Ordaz (2009) evalúa el impacto de la educación primaria y de la secundaria en el sector rural de México sobre los tres niveles de pobreza oficialmente aceptados: alimentaria, capacidades y de patrimonio. Sus resultados muestran que el impacto de la educación es mayor cuando la persona puede terminar la secundaria; por ejemplo, cuando un individuo termina la secundaria, reduce la probabilidad de encontrarse en pobreza alimentaria en 10.1 puntos porcentuales; en contraste si únicamente terminara la primaria, su probabilidad de encontrarse en este tipo de pobreza sólo se reduciría 7.3 puntos porcentuales; con esto, el autor muestra que las tasas de pobreza se reducen en 25% en el primer caso y 16% en el segundo.
+12
+
+CAPÍTULO 2 METODOLOGÍA En esta sección se describe de manera la formal la metodología que se utilizará en este trabajo para medir el impacto del PESA-GSH sobre los niveles de pobreza de los beneficiarios. Se realiza una exposición que permita entender cómo las técnicas para la evaluación de programas desembocan de alguna manera en el Propensity Score Matching.
+Métodos de Matching o pareo El Matching o pareo es un método no experimental ampliamente utilizado que se puede utilizar para estimar el efecto promedio de un tratamiento o programa. El método compara los resultados de los participantes del programa con pares que no participan, en donde los pares se eligen sobre la base de la similitud en características observables. Una de las principales ventajas de los estimadores de pareo es que ellos por lo común no requieren especificar la forma funcional de la ecuación de resultados y por tanto no es susceptible de sesgo por una mala especificación en esa dimensión. Los estimadores tradicionales de Matching parean a cada participante del programa con un solo no participante pareado (e.g. Rosenbaum y Rubin, 1983), mientras los estimadores desarrollados más recientemente parean a los participantes del programa con múltiples no participantes y utilizan un método de promediación ponderada para construir el resultado pareado.
+Fundamentos teóricos del Matching
+El marco supone que un individuo puede tener dos resultados posibles, que se denotan como
+Y0i ,Y1i 
+En donde Y0i es el resultado del individuo i en el estado de no tratamiento (no recibe el programa) y Y1i es el resultado del individuo i en el estado de tratamiento (si recibe el programa). Un individuo sólo puede estar en un estado a la vez, de tal manera que en un momento determinado sólo se puede observar un resultado. El resultado que no se observa se le conoce como resultado
+13
+
+contrafactual o simplemente contrafactual11. El impacto del tratamiento para un individuo está dado por
+  Y1i  Y0i
+Lo cual no se puede observar directamente. De tal manera que para medir el impacto de un programa se requiere inferir el resultado que se hubiera observado en el estado sin programa. Por otro lado, sea W una variable indicadora que permite denotar la participación en el programa, de tal manera que Wi  1 si la persona participa en el programa y Wi  0 si no participa. Sea Yi el resultado observable en un determinado momento para el individuo i, lo cual se puede expresar como
+Yi  WiY1i  (1Wi )Y0i
+Bajo el contexto anterior, se podría construir la distribución de F(Y1 W  1) y F(Y0 W  0) a partir de la información para Y0i y Y1i , pero no se podrían construir las distribuciones conjuntas F(Y0,Y1 W  1) y F(Y0,Y1) , o la distribución del impacto del programa F(W  1) . Debido al problema de datos faltantes que se presenta en estos contextos, los investigadores por lo regular se enfocan en la construcción de algunas características de la distribución del impacto del programa, como puede ser su media. El parámetro en el que se enfocan la mayoría de los estudios de evaluación es el Impacto Promedio del Tratamiento sobre los Tratados o ATT (Average Treatment on the Treated), el cual se define como
+ATT  E Y1 Y0 W 1 E Y1W 1 E Y0 W 1
+Lo cual mide el beneficio del programa para los participantes, aunque ésta medida no es observable directamente (Todd, 2006).
+11 Un contrafactual es el posible resultado que hubiera sucedido en la ausencia de la causa (Shadish, et. al., 2002). Por tanto, como lo señala Guo y Fraser (2010) para un participante en el estado de tratamiento, un contrafactual es el posible resultado que se hubiera observado si hubiera estado en la condición de control; para un participante en el estado de control, un contrafactual es el posible resultado que se hubiera observado si hubiera estado en la condición de tratamiento. Note que la expresión utiliza el modo subjuntivo, “lo que hubiera sucedido”, lo que significa que el contrafactual no se observa en los datos reales, es un valor faltante. Por lo tanto, la tarea fundamental de cualquier evaluación es utilizar la información conocida para imputar un valor faltante para un resultado hipotético no observado.
+14
+
+Otra característica de interés para los evaluadores es el Efecto Promedio del Tratamiento o ATE (Average Treatment Effect), la cual se define como
+ATE  EY1 Y0   EY1 EY0 
+El ATE es el efecto esperado del tratamiento sobre una persona elegida aleatoriamente de la población12, lo cual si es directamente observable.
+El problema de la evaluación
+De acuerdo a Smith (2004), el problema de la evaluación de programas surge porque sólo
+podemos observar uno de los resultados de Y0i ,Y1i  para cada una de las personas, por lo que al
+querer estimar
+ATT  E Y1W 1 E Y0 W 1   Podemos construir E Y1 W  1 a partir de las personas que participan en el programa, pero no   podemos observar E Y0 W  1 .   Sumando y restando E Y0 W  0 en la ecuación anterior, tenemos
+ATT1  E Y1 W  1 E Y0 W  0 EY0 W  0 E Y0 W  1  E Y1 W  1 E Y0 W  0 sesgo
+Al sesgo se le conoce como sesgo de selección, por ello al querer estimar el ATT con los datos observados se incurre en un sesgo.
+Solución del problema de la evaluación
+a) Solución experimental. Los experimentos de asignación aleatoria resuelven el problema de la evaluación, construyendo directamente el contrafactual o grupo de control
+12 Heckman (1997) crítica el uso de esta medida para propósitos de política, debido a que en el promedio se toma en cuenta a unidades que nunca serían elegibles para el tratamiento o programa.
+15
+
+E Y0 W 1
+Como lo señalan Guo y Fraser (2010), la aleatorización permite
+E Y0 W  0 E Y0 W 1
+Con lo cual se puede construir el ATT13. Por tanto, la asignación aleatoria de los participantes en un estudio, ya sea al grupo de tratamiento o al grupo de control, permite que se dé cierta aleatorización física, de tal manera que la condición a la cual se expone el participante i, se considera estadísticamente independientemente de todas las demás variables, incluyendo los posibles resultados Y0i y Y1i Guo y Fraser (2010).
+Y1i ,Y0i  Wi b) Solución no experimental (Método de Matching) Este método crea de manera efectiva un pseudo grupo de control con características observables que son arbitrariamente “similares” al grupo “tratado” (Fajnzylber, Maloney y Montes-Rojas, 2006). De esta manera, como lo señalan Dehejia y Wahba (2002), para suplir la ausencia de unidades experimentales de control (grupo de control), se supone que los datos se pueden obtener de un conjunto de unidades de unidades con las que se pueden comparar, las cuales no necesariamente se extraen de la misma población de las que se extrajeron las unidades tratadas, sin embargo, para ellas observamos el mismo conjunto de variables previas al tratamiento, Xi . Rubin (1977) establece que el condicionar sobre variables observables, podemos tomar la asignación al tratamiento como si fuera aleatoria y que, en particular, las características no observables no juegan ningún papel en la asignación al tratamiento. En notación
+(Y0i  Wi ) Xi En donde Xi es exógena en un sentido particular. Lo anterior se conoce como el Supuesto de Independencia Condicional o Conditional Independence Assumption (CIA).
+13 Como lo muestran varios estadísticos, tales como Fisher (1925), Kempthorne (1952) y Cox (1958), esta condición se alcanza en un experimento aleatorizado.
+16
+
+De acuerdo con Smith (2004), el supuesto CIA se satisfará si Xi incluye todas las variables que afectan tanto la participación en el programa, como los posibles resultados14. Sin embargo Xi no es arbitrario, la teoría y el conocimiento institucional pueden indicar ya sea que se cumpla o no dicho supuesto para un conjunto dado de Xi .
+En suma, la proposición de Rubin se puede enunciar como sigue:
+“El comparar a dos individuos con las mismas características observables, X i uno tratado y otro no, es como comparar a dos individuos en un experimento aleatorizado” (Dehejia y Wahba, 2002).
+Es decir, lo que garantiza que la proposición anterior simule las condiciones bajo las cuales se lleva a cabo un experimento aleatorizado, es que en el contexto no experimental se mantienen constantes explícitamente todos los factores observables, Xi que pudieran afectar el resultado del tratamiento o programa; esto es precisamente lo que hace la aleatorización: mantiene constantes o balancea todos aquellos elementos que pudieran afectar los resultados de un tratamiento15.
+Limitaciones y características importantes del Matching
+Como lo señalan Dehejia y Wahba (2002), una limitación de buscar parejas con características similares es que se requiere un grupo de comparación que contenga bastante información, de tal manera que ninguna unidad de tratamiento se quede sin su unidad de comparación, es decir que se puedan formar parejas “exactas”, limitando con ello la medición de los impactos de un programa. Lo anterior se debe a que al aumentar el número de variables, aumenta la dificultad para encontrar parejas exactas para cada una de las unidades tratadas16.
+14 Por ejemplo, en un programa para Madres Solteras, las variables que determinarían la participación en el programa serían el sexo, el estado civil, la ubicación geográfica, la edad, la escolaridad, el número de hijos, la situación laboral, etc. 15 El investigador que realiza un experimento aleatorizado puede estar seguro de que el supuesto CIA se mantiene porque la aleatorización por lo común balancea los datos entre el grupo de control y el de tratamiento y hace que la asignación del tratamiento sea independiente de los resultados bajo las dos condiciones (Guo y Fraser, 2010). 16 Smith (2004) denomina a este problema como: the curse of dimensionality (la maldición de la dimensionalidad). Por ejemplo, si en un estudio se toman cuatro variables como las que determinan la participación y los resultados de un programa, en donde cada una de ellas toma tres valores, entonces en esa situación se tendrán 34=81 posibles valores; en otro ejemplo, si el número de variables observables fuera 5, y el número de valores que tomaran esas variables fueran 4, entonces se tendrían 45=1024 posibles valores. Como se puede observar, en la medida que
+17
+
+Cuando utilizar el Matching y cuando no.
+Dadas las principales limitaciones del método de pareo o Matching, dicho método se recomienda aplicar cuando se disponga de información muy vasta sobre las características observables que determinan la participación en el programa y los resultados (Smith, 2004).
+El método puede resultar contraproducente si no se dispone de información que contenga todas las variables necesarias para justificar el supuesto CIA.
+Además, los estimadores del método de Matching no son apropiados cuando se presenten efectos importantes de equilibrio general. Y es que si estos efectos son importantes, eso implica que la aplicación de un programa indirectamente afecta a las unidades no tratadas, lo que significa que las unidades no tratadas ya no proporcionan el contrafactual deseado (Smith, 2004). A este supuesto se le conoce en la literatura como Supuesto de Estabilidad del Valor del Tratamiento de las Unidades o Stable Unit Treatment Value Assumption (SUTVA).
+El Propensity Score Matching
+Con datos completos, Rosenbaum y Rubin (1983) definen el Propensity Score para el participante i (i=1,2,…,N) como la probabilidad condicional de asignación a un tratamiento particular (Wi  1) dado un vector de variables observadas, Xi :
+P(Xi )  Pr(Wi 1 Xi )  E(Wi 1 Xi )
+La ventaja del Propensity Score al buscar pares es la reducción de las dimensiones: El vector X i puede incluir muchas variables, las cuales representan muchas dimensiones, y el enfoque del Propensity Score reduce toda esta dimensionalidad a una medida de una sola dimensión17. Como lo menciona Dehejia y Wahba (2002), el punto al utilizar el propensity score es que reduce de manera significativa el problema de la dimensionalidad, permitiendo condicionar sobre una variable escalar en vez del espacio general n.
+aumenta el número de variables y el número de valores que toman esas variables, se vuelve más difícil encontrar una pareja para una persona en el grupo de tratamiento que tenga las mismas características. 17 En el matching convencional, a medida que aumenta el número de variables, el investigador se enfrenta con la dificultad de encontrar un buen par en el grupo de control para un participante dado.
+18
+
+Para estimar el Propensity Score se puede utilizar cualquier modelo estándar de probabilidad. Por ejemplo,
+
+Pr(Wi 1 Xi )  F(h(Xi ))
+
+Donde F() es la distribución acumulada normal o logística y h(Xi ) es una función de las variables, con términos lineales y de mayor orden.
+Rosenbaum y Rubin (1983) derivaron y probaron una serie de teoremas y corolarios mostrando las propiedades del Propensity Score. Los más importantes para los propósitos del presente estudio se enumeran a continuación.
+Lema 1: Balance de las variables observadas antes del tratamiento dado el Propensity Score. Si P(Xi ) es el Propensity Score, entonces
+
+Wi
+
+
+
+Xi
+
+P(X ) i
+
+Esta propiedad liga al Propensity Score al supuesto CIA. En palabras, para las observaciones con el mismo Propensity Score, la distribución de las características antes del tratamiento debe ser igual en los grupos de control y tratamiento. Es decir, cada individuo tiene la misma probabilidad condicional de asignación al tratamiento dado el propensity score, al igual que en un experimento aleatorio.
+
+Lema 2. Inconfundibilidad dado el Propensity Score. Suponga que la asignación al tratamiento es inconfundible, i.e.
+
+Y0i ,Y1i
+
+ Wi
+
+X i
+
+Entonces la asignación al tratamiento es inconfundible dado el Propensity Score, i.e.
+
+Y0i ,Y1i
+
+ Wi
+
+P(X ) i
+
+En palabras, si la información permite buscar parejas en base a un conjunto de variables observables Xi , entonces también se puede buscar parejas en base al P(Xi ) .
+
+19
+
+Una vez calculado el Propensity Score, se puede estimar el Impacto Promedio del Tratamiento sobre los Tratados, ATT como sigue:
+ATT  E[E[Y1i Wi  1,P(X i )]  E[Y0i W i  0, P( X i )]Wi  1]  E[E[Y1i  Y0i Wi  1, P( X i )]]  E[Y1i  Y0i Wi  1]
+Estimadores de matching del ATT basados en el Propensity Score
+El cálculo del Propensity Score no es suficiente para estimar el efecto promedio de tratamiento sobre los tratados. Esto debido a que la probabilidad de observar dos unidades con el mismo valor de Propensity Score es cero, ya que P(Xi ) es una variable continua. Para realizar el pareo hay varios métodos y con cada uno se puede calcular el efecto de tratamiento (Becker e Ichino, 2002). A continuación se presentan los más utilizados en la literatura y con los cuales se medirá el impacto del programa.
+1) Vecino más cercano: Se hace el pareo de cada hogar del grupo tratado con el hogar del grupo de control que tiene la Propensity Score más cercano (pi grupo de tratamiento y pj grupo de control). Después se calcula la diferencia de cada par y el promedio de tratamiento sobre los tratados se obtiene promediando todas esas diferencias. El problema con este método es que cada hogar tratado tiene un par en la vecindad (C) que no es el mejor porque, no obstante en ser el más cercano, la distancia entre el Propensity Score del tratado y de la de control puede ser muy grande.
+
+C(i)
+
+
+
+min j
+
+pi
+
+
+
+pj
+
+vecindad del método Vecino más cercano.
+
+2) Radio: A diferencia del previo, este método define una vecindad (C) acotada a un radio“r", es decir, limita las diferencias que debe haber en las Puntuaciones de la Propensión (pi y pj) para hacer el pareo.
+
+  C(i)  p j pi  p j  r vecindad del método Radio
+
+Para los dos métodos previos, el efecto promedio de tratamiento ( ) sobre los tratados se calcula de la siguiente manera:
+
+20
+
+  
+
+
+
+1 NT
+
+YiT iT 
+
+
+
+wij
+
+Y
+
+C j
+
+ 
+
+jC (i)
+
+
+
+   
+
+1 NT
+
+   iT
+
+YiT
+
+
+
+iT
+
+wijY
+
+C j
+
+ 
+
+jC (i)
+
+
+
+  
+
+1 NT
+
+YiT
+iT
+
+1 NT
+
+w
+
+j
+
+Y
+
+C j
+
+jC
+
+Donde:
+
+Los ponderadores son;
+
+wij
+
+
+
+1
+
+N
+
+C i
+
+si
+
+j C(i) y wij  0 en el resto de los casos
+
+ wj  i wij
+
+y
+
+N
+
+C i
+
+=
+
+Número
+
+de
+
+controles
+
+pareados
+
+con
+
+la
+
+observación
+
+i
+
+que
+
+pertenece
+
+a
+
+T.
+
+N T = Número de unidades tratadas
+
+3) Kernel: Los hogares tratados se comparan con un promedio ponderado de los hogares del grupo de control. Los ponderadores son inversamente proporcionales a la distancia entre los Propensity Score (pi y pj) del grupo de tratamiento y del grupo de control. El promedio de tratamiento  K sobre los tratados se calcula de la siguiente manera:
+
+
+
+ 
+
+  K
+
+
+
+1 NT
+
+YiT iT 
+
+
+
+ 
+
+jC
+
+Y
+
+C j
+
+G
+
+pj  hn
+
+pi
+
+kC G
+
+pk  hn
+
+pi
+
+
+
+
+
+     
+
+Donde: G(.) es una función de Kernel y hn es un parámetro de la amplitud de banda.
+
+21
+
+4) Estratificación: Este método agrupa los Propensity Score en categorías (frecuentemente
+
+quintiles). Dentro de cada categoría "q" se busca el pareo de los individuos que forman al
+
+grupo de control y al grupo de tratamiento. Asimismo dentro de cada categoría el efecto
+
+de
+
+tratamiento
+
+"
+
+
+
+s q
+
+"
+
+o diferencia entre el grupo de control y los tratados se calcula de la
+
+siguiente manera:
+
+  
+
+s q
+
+
+
+YC
+iI (q) i
+
+N
+
+T q
+
+
+
+YC
+jI (q) i
+
+N
+
+C q
+
+Donde:
+
+I(q) es el conjunto de unidades del bloque q
+
+N
+
+T q
+
+,
+
+N qC
+
+son los números de unidades de tratamiento
+
+y de control del bloque q.
+
+El número total de bloques es Q.
+
+Por último, el efecto de tratamiento " s " se obtiene como un promedio ponderado del promedio
+de tratamiento de cada categoría:
+
+Q
+
+   s 
+
+
+
+s q
+
+ q1
+
+D iI (q) i i Di
+
+Medidas de pobreza
+
+Se dice que existe pobreza en una sociedad cuando hay personas que no pueden alcanzar un nivel de bienestar material considerando como mínimo los estándares que caracterizan a esta sociedad. Tampoco existe un método único para medir el nivel de pobreza en una sociedad.
+
+En la exposición que sigue, se describen los cuatro tipos de enfoques reconocidos, que se utilizan para medir la pobreza.
+
+Enfoque 1: Línea de pobreza (z).
+Un Individuo pobre es aquella persona quién proviene de un hogar con ingreso per cápita por debajo de la línea de pobreza.
+z  CBA CNA 22
+
+En donde Por otro lado, sea
+
+CBA = Canasta Básica Alimentaria CNA = Canasta No Alimentaria
+  Gastos Total del Hogar Gastos en Alimentos
+
+En muchos estudios realizados en América Latina, se considera el valor de  = 2. Con lo cual se puede definir
+z   CBA
+
+Enfoque 2: Necesidades básicas insatisfechas (NBI).
+
+Desde este punto de vista, un hogar se considera pobre si sufre de una cualquiera de las
+
+siguientes NBI.
+
+(i) Hacinamiento: Más de 3 personas por cuarto.
+
+(ii) Vivienda con construcción inadecuada.
+
+(iii)
+
+Servicios sanitarios no adecuados en la vivienda.
+
+(iv)Sin enseñanza formal entre niños de 6-12 años de edad.
+
+(v) Baja capacidad para generar ingreso por parte del Jefe del hogar.
+
+Enfoque 3: Combinado
+
+(i) Pobres Estructurales: Hogares clasificados como pobres por NBI y por LP.
+
+(ii) Pobres Recientes: Hogares clasificados como pobres por LP y no por NBI.
+
+(iii)
+
+Pobres Inerciales: Hogares clasificados como pobres por NBI y no por LP.
+
+Enfoque 4: Multidimensional
+Bajo este enfoque, se construye una medida de pobreza que considera en forma simultánea 2 o más variables. Ahora bien, el enfoque de Necesidades Básicas Insatisfechas: (NBI) carece de una base conceptual y en consecuencia han surgido muchas críticas sobre esta metodología. En cambio, el método de línea de pobreza ha sido ampliamente investigado y posee un desarrollo conceptual y
+23
+
+axiomático. El enfoque multidimensional es un método relativamente nuevo y se puede considerar como una extensión multivariante del método de línea de pobreza.
+Métodos basados en el enfoque de línea de pobreza En esta parte se exponen algunos índices que utilizan el método de línea de pobreza.
+Definición de una Medida de Pobreza desde el enfoque de línea de pobreza
+Sea X = (x1, x2, ..., xn)' un vector de ingresos con valores no negativos que se encuentran ordenados en un orden no decreciente. Sea z > 0, el valor de la línea de pobreza. Un Índice de pobreza P(X, z) es una función real valuada cuyo valor indica el nivel de pobreza asociada al vector de ingresos X correspondiente a la línea de pobreza z.
+Algunos Índices de Pobreza:
+Existen muchos índices de pobreza, como por ejemplo: índices: Foster-Greer Thorbecke (FGT), Watts, Sen, Sen-Shorrocks-Thon, Clark-Hemming-Ulph, Blackorby-Donaldson, Chakravarty, Takayama, Hamada-Takayama, Kakwani, y otros. Se comentarán solamente algunos de ellos, éstos se explican a continuación:
+
+a) Índice de Pobreza FGT
+
+Este índice fue propuesto por Foster, Greer y Thorbecke (1984). Éste está dado por la siguiente
+
+fórmula:
+
+ P
+
+
+
+1 n
+
+q  i1 
+
+z  xi z
+
+ 
+
+En el índice de pobreza FGT,  es un parámetro que especifica la sensibilidad del índice, z = línea de pobreza, n = Número total de hogares (o individuos), xi es el ingreso del hogar (o del
+ individuo) i-ésimo, q  (1) es el número de hogares (o individuos) pobres. xi z
+
+24
+
+Es importante destacar que  es un indicador de la aversión a la pobreza y en consecuencia mientras más alto sea el valor de  mayor será la ponderación que se asigna a los más pobres en el cálculo del valor del índice P . Por otro lado, Sean:
+H  q : Proporción de hogares (o individuos) pobres. A H se le conoce con el nombre n
+del Índice de Recuento (o Incidencia). z  xi : Brecha de la pobreza del i-ésimo hogar (individuo). z  xi : Cociente de brecha de pobreza del i-ésimo hogar (o individuo)
+z Se puede verificar que P0  H Además P1: se llama Índice de Brecha de Pobreza. P2 : se llama Índice de Severidad de Pobreza (Brecha de pobreza al cuadrado). Por otra parte, Kakwani (1993) define el índice de pobreza FGT para una población infinita, con la siguiente fórmula:
+z  z  x  g(x)dx
+0 z  Donde g(x) es la función de densidad de probabilidad de la variable aleatoria ingreso X.
+
+b) Índice de Watts
+
+Está dado por la siguiente fórmula:
+
+ W
+
+
+
+1 n
+
+q i1
+
+log
+
+x zi
+
+
+
+En donde q, n, z, xi ya se han definido antes. En el caso continuo, el Índice de Watts se define como:
+
+z  log x g(x)dx
+
+0
+
+z
+
+Donde g(x) es la función de densidad de probabilidad de la variable aleatoria ingreso X.
+
+25
+
+a) Índice de Sen
+
+Está dado por
+
+PS  P0GP  P1(1 GP )
+
+c) Índice de Sen-Shorrocks-Thon:
+
+Se expresa como
+
+PSST  P0P1(1  GP )
+
+Donde P0 es el índice de recuento, P1 es el índice de brecha de la pobreza y GP es el coeficiente de Gini entre los pobres.
+
+Propiedades deseables que debe de tener un índice de pobreza
+
+Es deseable que las medidas de pobreza tengan las siguientes propiedades:
+
+a) P(X, z) es una función creciente en z. es decir, P(x; z') > P(x; z) para todo z' > z.
+
+De acuerdo con lo anterior, se puede observar que un valor mayor de una medida de pobreza
+
+indica que existe más pobreza en la sociedad. Además, esta propiedad implica que el valor de
+
+P(X, z) aumenta cuando crece el valor del la Línea de pobreza z.
+
+b) Simetría: P(X, z) = P(Y, z), sí X se obtiene al permutar los elemento de Y.
+
+La propiedad anterior implica que una medida de pobreza no se altera si se reordenan los
+
+elementos del vector de ingresos.
+
+c) Invariante bajo replicación: P(X, z) = P(Y, z), sí X se obtiene por la replicación de los
+
+elementos de Y. Es decir, que
+
+Y 
+
+X
+
+
+
+Y
+
+ 
+
+ 
+
+Y
+
+ 
+
+d) Foco: P(X, z) = P(Y, z), sí X se obtiene de Y debido a un incremento en el ingreso de un
+
+individuo no pobre.
+
+Esto implica que P(X, z) es independiente de los ingresos de los ricos. Por lo tanto un cambio en
+
+el ingreso de una o más personas ricas no cambia el nivel de pobreza.
+
+26
+
+e) Continuidad: P(X, z) es una función conjuntamente continua en ambas variables X y z. Esta propiedad implica que si se produce un cambio muy pequeño en el ingreso de una persona pobre, entonces se produce una variación también pequeña del nivel de pobreza correspondiente.
+27
+
+CAPÍTULO 3 BASE DE DATOS Dado que el PESA-GSH atiende a hogares de Guerrero18, uno de los estados con mayor índice de marginación de México, para medir el impacto del PESA-GSH sobre la pobreza de las personas que reciben el programa, se aplicó una encuesta a los beneficiarios y no beneficiarios del PESAGSH en ese estado; de esta manera, con los datos obtenidos se construiría un grupo de tratamiento y uno de control. Para la construcción del grupo de tratamiento se eligieron de manera aleatoria a hogares beneficiarios del PESA-GSH; y para construir el grupo de control se tomaron en cuenta a aquellas familias cuya jefa del hogar era miembro del padrón de beneficiarios de Oportunidades en el estado de Guerrero, pero sin haber recibido PESA-GSH durante el periodo de septiembre de 2007 a agosto de 2008. De esta manera se evita que el grupo de control pudiera verse contagiado por los efectos del PESA-GSH en la localidad19. Así, el grupo de control se seleccionó dentro de los mismos municipios y se realizó un muestreo aleatorio simple de 30 encuestas a hogares dentro de localidades que no recibieron el programa, pero que están dentro del padrón de Oportunidades. Debido a que uno de los requisitos para recibir los beneficios del PESA-GSH es pertenecer a Oportunidades, al seleccionar al grupo de control con esta condición se garantizaba que los hogares fueran lo más parecidos posibles. En las siguientes secciones se explica con mayor detalle las características del muestreo empleado.
+Cobertura Geográfica Las localidades a las que da cobertura el PESA-GSH están distribuidas en 7 regiones: Acapulco, Centro, Costa Chica, Costa Grande, Montaña, Norte y Tierra Caliente. Para nuestro periodo de análisis, el mayor número de localidades se encuentra en las regiones de Costa Grande, Montaña
+18 En 2006 la cobertura de este programa fue de 530 familias, para el 2007 el número de familias atendidas aumentó a 5,500 y en 2008 el universo de atención alcanzó a 20,000 hogares en 547 localidades con menos de 500 habitantes. 19 En la literatura esto se conoce como efectos de equilibrio general, mejor conocido como el supuesto SUTVA (Stable Unit Treatment Value Assumption).
+28
+
+y Costa chica. De esta manera, en el siguiente cuadro se describen los municipios encuestados20, así como la distribución de las unidades entre el grupo de control y el grupo de tratamiento:
+
+Cuadro 1. Localidades que integran la muestra
+
+Municipio
+
+Región
+
+Grupo de Tratamiento
+
+Acatepec
+
+Montaña
+
+28
+
+Alcozauca
+
+Montaña
+
+30
+
+Atlixta
+
+Montaña
+
+30
+
+Chilpancingo
+
+Centro
+
+30
+
+Cocula
+
+Norte
+
+30
+
+Tierra
+
+Tlapehuala
+
+Caliente
+
+30
+
+Tierra
+
+Cutzamala
+
+Caliente
+
+30
+
+Heliodoro Castillo
+
+Centro
+
+29
+
+Tlacoachistlahuaca
+
+Costa Chica
+
+29
+
+La Unión Isidoro Montes de
+
+Oca
+
+Costa Grande
+
+30
+
+Leonardo Bravo
+
+Centro
+
+30
+
+Petatlán
+
+Costa Grande
+
+31
+
+José Azueta
+
+Costa Grande
+
+30
+
+Tecoanapa
+
+Costa Chica
+
+30
+
+Tecpan de Galeana
+
+Costa Grande
+
+30
+
+San Marcos
+
+Costa Chica
+
+0
+
+Total
+
+447
+
+Grupo de Control
+30 30 30 30 30
+30
+30 30 8
+30 31 30 30 30 29 23 451
+
+Diseño muestral Población objetivo Para construir el grupo de tratamiento se eligieron de manera probabilística hogares pertenecientes al PESA-GSH del Estado de Guerrero.
+
+20 Inicialmente se eligieron 15 municipios pero debido a que hubo problemas de acceso en el municipio de Tlacoachistlahuaca, no se pudo realizar la encuesta al grupo de control, por lo que se realizó en el municipio de San Marcos.
+29
+
+Marco de muestreo
+El marco muestral está formado de los siguientes elementos: 1) Listado de beneficiarios del Programa, que permitió elegir el grupo de tratamiento. 2) El padrón de beneficiarios del programa Oportunidades de la Secretaría de Desarrollo Social para elegir al grupo de control.
+
+Esquema de muestreo
+El diseño muestral es probabilístico21 y por conglomerados22 en dos etapas, tal como se mencionó anteriormente. En la primera etapa se seleccionaron municipios a partir de los 38 municipios en que operó el programa en el periodo de análisis y en la segunda etapa se seleccionaron los hogares dentro de cada uno de esos municipios.
+
+Tamaño de la muestra
+
+La fórmula que se empleó para calcular el tamaño de la muestra es:
+
+n
+
+
+
+z2Q DEFF r2P(1  TNR)
+
+Donde: n = Tamaño de muestra en viviendas. z = Valor de la abscisa en la distribución normal que garantiza una confianza prefijada. P = Valor aproximado de la proporción que interesa estimar Q = (1-P).
+
+21 Significa que las unidades de selección tienen una probabilidad de entrar en la muestra, conocida y distinta de cero para cada miembro de la población. 22 En el muestreo por conglomerados la unidad muestral es un grupo de elementos de la población que forman una unidad llamada conglomerado.
+30
+
+DEFF = Efecto de diseño, que es la pérdida o ganancia en la eficiencia del diseño por efecto de conglomerar elementos de la población para formar unidades muestrales TNR = Tasa de no respuesta máxima esperada. r = Error relativo máximo esperado en la estimación.
+El tamaño de muestra se calculó considerando una proporción P=0.5 (varianza máxima), con la finalidad de obtener estimaciones conservadoras. El nivel de confiabilidad se fijó en 95%, el efecto del diseño en 1.5, un error máximo esperado del 10% y una tasa de no respuesta máxima esperada igual a 10%. Con base en las consideraciones anteriores, se obtuvo un tamaño de muestra igual a 450 hogares para el grupo de tratamiento. Dada la naturaleza de la metodología econométrica para la evaluación del impacto del PESA-GSH, se seleccionó la misma cantidad de hogares para el grupo de control con el fin de poder realizar estimaciones con las características requeridas. Como resultado se tuvo un total de 900 cuestionarios a aplicar en la encuesta.
+Selección de las unidades de muestreo
+El procedimiento para la selección del grupo de tratamiento se realizó de la siguiente manera: 1. Se seleccionaron 15 municipios, de los 38 en donde operaba el programa en el periodo de análisis, con probabilidades proporcionales al tamaño. 2. En cada municipio seleccionado se eligieron de manera aleatoria en promedio 30 hogares.
+Para recabar la información del grupo de control al menor costo, sin que se viera afectada la representatividad de la muestra, se encuestaron hogares en los mismos municipios en que se encuestaron a los beneficiarios del PESA-GSH pero en localidades que no estaban en el padrón
+31
+
+de PESA-GSH pero que dadas sus características23 hubieran podido ser beneficiarias24. Por lo tanto, el procedimiento para la selección de estos hogares fue el siguiente:
+
+1.
+
+En cada municipio seleccionado para el grupo de tratamiento, se seleccionaron
+
+de manera aleatoria s localidades (unidades primarias).
+
+2.
+
+En cada localidad se eligieron aleatoriamente en promedio 30 hogares
+
+(unidades secundarias).
+
+Estadísticas descriptivas
+El PESA-GSH es un programa integral cuyos componentes están dirigidos a fortalecer las áreas que pueden contribuir a disminuir la pobreza de los beneficiarios. El diseño del Programa parece indicar que dentro de sus fines está complementar al Programa de Desarrollo Humano Oportunidades, ya que incluye puntualmente el fortalecimiento de las capacidades productivas del hogar, la conservación del medio ambiente y la inserción de los hogares al sistema financiero. En este apartado se describen las características más relevantes de los dos grupos de hogares (control y tratamiento) que componen la muestra empleada en el presente trabajo.
+
+Agricultura
+Con base en la muestra proveniente de la encuesta descrita anteriormente, en el cuadro 2 se aprecia que tanto el volumen de producción de maíz, cultivo que siembra el 76 por ciento de los hogares, como el consumo del mismo por parte de los hogares tratados (Hogares con PESAGSH) supera al de los hogares pertenecientes al grupo de control (Hogares sin PESA-GSH); asimismo las ventas de maíz de los hogares del primer grupo son mayores a las de los hogares del grupo de control. Con lo que respecta a la producción y consumo de dicho producto, las diferencias resultan estadísticamente significativas; es decir, éstas no se deben solo al azar, sino que existen factores explicativos, que se estudiarán con rigor más adelante.
+
+23 Localidades entre 50 y 500 habitantes, con niveles de marginación alto y muy alto, que dado su Índice de Potencial Productivo o por pertenecer a la región prioritaria de la Sierra o ser participantes del programa Comunidad DIFerente hubieran podido ser beneficiarias. 24 Debido a que uno de los requisitos para acceder al PESA-GSH es pertenecer a Oportunidades, al seleccionar al grupo de control con esta condición aseguramos que los hogares fueran lo más parecidos posibles.
+32
+
+Cuadro 2. Producción, consumo, venta y rendimientos del maíz de los hogares, de acuerdo a su participación en el Programa PESA-
+GSH, 2007-2008
+
+Actividad
+
+Hogares con Hogares sin PESA-GSH PESA-GSH
+
+Volumen de Producción (Kg)
+
+1,640.30
+
+879.70
+
+(120.41)
+
+(71.51)
+
+Consumo en el Hogar (Kg)
+
+1,093.80
+
+663.20
+
+(62.62)
+
+(43.09)
+
+Venta de Maíz (Kg)
+
+292.40
+
+159.10
+
+(61.04)
+
+(37.47)
+
+Rendimientos de maíz
+
+(kg/ha)
+
+1,084.83
+
+53.97
+
+(61.04)
+
+(37.47)
+
+Nota: Errores estándar entre paréntesis. Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+La diferencia en el volumen de producción de maíz se podría deber al tamaño de la superficie sembrada por los hogares con PESA-GSH, puesto que en promedio es mayor que la que corresponde a los hogares que no cuentan con el Programa. Sin embargo, en el mismo cuadro se muestra que la diferencia en rendimiento del maíz (kg/ha), entre ambos grupos es estadísticamente significativa. Es decir, se rechaza la hipótesis nula de que no exista diferencia en rendimientos.
+
+Ganadería
+Desde hace décadas, las actividades ganaderas han jugado un rol importante en el estado de Guerrero. En particular, la cría de ganado bovino resulta ser la de mayor importancia económica en la región de Tierra Caliente, Costa Chica y Costa Grande, en tanto que la cría de especies menores (cabras, ovinos, aves, etc.) tiene mayor presencia e importancia en la Sierra, la Montaña y en la región Centro (Cervantes et al., 2005).
+De acuerdo con Cervantes et. al (2005), en la economía familiar de los hogares clasificados como de alta y muy alta marginación, los activos ganaderos juegan un papel económico y social
+
+33
+
+fundamental en tanto que ayudan a mitigar condiciones de emergencia o compromisos sociales del hogar.
+Como se muestra en el Cuadro 3, el 45.19 por ciento de los hogares que reciben el Programa posee aves, y en particular gallinas; un 32 por ciento cuenta con cerdos y el resto se reparte entre caprinos, equinos y ovinos, en ese orden. Asimismo, en los hogares que no son beneficiarios del PESA-GSH, las aves y los cerdos son los animales que predominan; además destaca que casi la mitad de éstos no posee ningún tipo de ganado.
+
+Cuadro 3. Porcentaje de hogares según tipo de ganado que poseen, de acuerdo a su participación en el Programa
+PESA-GSH, 2007-2008
+
+Tipo de Animal
+
+Hogares con PESA-GSH
+Porcentaje
+
+Hogares sin PESA-GSH
+Porcentaje
+
+Bovinos
+
+2.01
+
+3.56
+
+Equinos
+
+4.47
+
+4.00
+
+Cerdos
+
+15.88
+
+7.33
+
+Lechones
+
+16.11
+
+8.44
+
+Guajolotes y patos
+
+9.62
+
+2.22
+
+Gallinas
+
+35.12
+
+20.44
+
+Cabras
+
+8.95
+
+2.67
+
+Borregos
+
+2.46
+
+1.33
+
+Ninguno
+
+4.47
+
+48.44
+
+Burros
+
+0.22
+
+0.89
+
+Pichones/Codornices
+
+0.45
+
+0.00
+
+Conejos
+
+0.22
+
+0.00
+
+Mulas
+
+0.00
+
+0.67
+
+Total
+
+100.00
+
+100.00
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+Resulta evidente que un mayor porcentaje de hogares PESA-GSH poseen aves, porcinos y caprinos, con respecto a su contraparte de no participantes. De la misma manera, en promedio los primeros cuentan con un mayor número de unidades animales que los segundos, tanto en 2007 como en 2008 (Cuadro 4). Destaca que en los hogares PESA-GSH, la diferencia entre el número promedio de gallinas en 2007 respecto a 2008 es estadísticamente significativa. Esto puede
+34
+
+deberse al esfuerzo deliberado del Programa por dotar de estos activos a los hogares beneficiados, para cumplir fines alimenticios así como de capitalización vía venta en el mercado local. Este punto se estudiará con rigor en la siguiente sección.
+
+Cuadro 4. Promedio de animales por hogar según especie y de acuerdo a su participación en el Programa PESA-GSH, 2007-
+2008
+
+2007
+
+2008
+
+Especie
+
+Hogares con
+PESAGSH
+
+Hogares sin PESA-
+GSH
+
+Hogares con
+PESAGSH
+
+Hogares sin PESA-
+GSH
+
+Bovinos
+
+2.7
+
+1.0
+
+2.8
+
+1.1
+
+Equinos
+
+0.1
+
+0.1
+
+0.2
+
+0.1
+
+Porcinos
+
+1.2
+
+0.6
+
+1.4
+
+0.7
+
+Guajolotes 0.4
+
+0.1
+
+0.4
+
+0.1
+
+Gallinas
+
+8.9
+
+5.3
+
+13.5
+
+4.7
+
+Caprinos
+
+1.2
+
+0.3
+
+1.9
+
+0.2
+
+Ovinos
+
+0.2
+
+0.0
+
+0.4
+
+0.0
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+Traspatio
+Con la finalidad de generar mejores condiciones de seguridad alimentaria, el objetivo central en la estrategia que sigue el PESA-GSH, consiste en el desarrollo y fortalecimiento de las actividades de traspatio de las unidades familiares, a la vez que ello pueden fortalecer los ingresos familiares a través de venta de excedentes. De acuerdo con los resultados de la encuesta, en los hogares PESA-GSH se realizan un total de 38 actividades productivas diferentes en los traspatios. No obstante, en términos relativos y por mucho, las actividades más importantes son la producción de huevo, leche y hortalizas, ello se muestra en el cuadro 5.
+
+35
+
+Cuadro 5. Actividades Productivas en los Traspatios de los hogares rurales, según su participación en el PESA-GSH
+
+Actividad en el Traspatio
+
+Hogares con Hogares sin PESA-GSH PESA-GSH
+Porcentaje Porcentaje
+
+Producción de huevo
+
+40.72
+
+16.85
+
+Leche
+
+2.23
+
+0.22
+
+Queso
+
+0.45
+
+0
+
+Quelites
+
+0.22
+
+0
+
+Elotes
+
+0.45
+
+0
+
+Rábano
+
+0.67
+
+0
+
+Calabaza
+
+0.22
+
+0
+
+Ejotes
+
+0.22
+
+0
+
+Lechuga
+
+0.22
+
+0
+
+Cilantro
+
+0.67
+
+0.44
+
+Pápalos
+
+0.22
+
+0
+
+Flores
+
+0.22
+
+0
+
+Hortalizas
+
+2.01
+
+0.44
+
+Calabacitas
+
+0.22
+
+0
+
+Col
+
+0.22
+
+0
+
+Elotes
+
+0.22
+
+0
+
+Plátano
+
+0.22
+
+0.22
+
+Gallinas para producir
+
+0
+
+0.22
+
+Milpa
+
+0.22
+
+0.44
+
+Durazno
+
+0.45
+
+0.44
+
+Chile verde
+
+0.22
+
+0
+
+Tomate verde
+
+0.22
+
+0
+
+Aguacate
+
+0.45
+
+0
+
+Noni
+
+0.22
+
+0
+
+Fresas
+
+0.22
+
+0
+
+Maíz
+
+0.22
+
+0
+
+Venta de escobas
+
+0
+
+0.22
+
+Mariscos
+
+0
+
+0.22
+
+Papaya
+
+0.22
+
+0
+
+Ninguna Actividad
+
+46.32
+
+80.04
+
+Total
+
+100
+
+100
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+36
+
+En lo que se refiere a la producción, consumo y venta de bienes generados en el traspatio, se determinó que en promedio la producción, venta y autoconsumo son mayores en el grupo de tratamiento, y que un porcentaje mayor de este tipo de hogares produce en sus traspatios y venden algún excedente de producción en el mercado. Las diferencias en producción y autoconsumo resultaron estadísticamente significativas (Cuadro 6).
+
+Cuadro 6. Actividades Productivas en los Traspatios de los hogares rurales, de acuerdo a su participación en el PESA-GSH
+
+Hogares con PESA-GSH Hogares sin PESA-GSH
+
+Actividad
+
+Porcentaje de hogares
+
+Valor promedio
+de la variable
+
+Porcentaje de Hogares
+
+Valor promedio
+de la variable
+
+Producción
+
+40.7
+
+253.6
+
+16.8
+
+91.6
+
+(32.33)
+
+(16.44)
+
+Venta
+
+22.0
+
+96.8
+
+4.0
+
+19.4
+
+(17.25)
+
+(8.44)
+
+Autoconsumo 40.7
+
+154.8
+
+16.8
+
+69.1
+
+(18.35)
+
+(11.66)
+
+Nota: Errores estándar entre paréntesis. Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+Proyectos PESA-GSH
+
+De acuerdo con las reglas de operación del PESA-GSH, los hogares adscritos al Programa se pueden beneficiar de tres proyectos simultáneamente como máximo. No obstante, la mayoría de los hogares (70.56 por ciento), obtiene apoyo únicamente para un proyecto, mientras que un 22.7 por ciento recibe recursos para dos proyectos, y tan sólo un 6.74 por ciento cuenta con tres proyectos.
+En base a las cifras del Cuadro 7, la mayor parte de los hogares (63.23 por ciento) que emprendieron proyectos PESA destinaron los recursos para la cría de animales; otro 12.15 por ciento empleó las prestaciones del Programa para la siembra en traspatio; y un 10.32 por ciento empleó los apoyos para la construcción de cisterna de ferrocemento. El resto de los proyectos tienen una menor participación, en donde sobresalen la construcción de baños secos y la
+
+37
+
+instalación de estufas Lorena, cuyos impactos deben verse reflejados principalmente en salud y medio ambiente. Cabe destacar que los entrevistados reportan proyectos de negocios (como panaderías) que no están incluidos en las Reglas de Operación del Programa.
+
+Cuadro 7. Proyectos PESA-GSH realizados
+
+Proyecto
+
+Porcentaje de hogares
+
+Cría de animales
+
+63.23
+
+Siembra en traspatio
+
+12.15
+
+Cisterna de ferrocemento
+
+10.32
+
+Construcción de baño seco
+
+5.99
+
+Estufa Lorena
+
+4.33
+
+Siembra de árboles frutales
+
+1.83
+
+Siembra milpa (en parcela)
+
+1.33
+
+Otros
+
+0.5
+
+Panadería
+
+0.33
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+Aunque la percepción de los beneficiarios es subjetiva y no es útil para evaluar el impacto del Programa, ésta puede dar una idea de cuáles son los proyectos que podrían tener mejor desempeño. En las entrevistas que se efectuaron durante el trabajo de campo se preguntó a los beneficiarios si al momento de la encuesta habían obtenido productos o beneficios de los proyectos llevados a cabo. El cuadro 9 muestra que a pesar de que la mayoría de los proyectos son para la cría de animales, no son éstos de los que se derivaron más beneficios. En efecto, solo 65% de los que emprendieron este tipo de proyectos perciben beneficios. Esto puede estar asociado con los problemas detectados en campo, como la distribución de animales enfermos que no alcanzaban a vivir lo suficiente para poder obtener algún beneficio de ellos.
+Por otro lado, en lo que se refiere a los proyectos de construcción de cisterna, estufa Lorena y baño seco, los hogares ven mayores beneficios y esto puede ser porque su impacto es visible e inmediato. Del total de los proyectos relacionados con la seguridad alimentaria, la siembra en traspatio es la que, en opinión de los hogares PESA-GSH, han obtenido mayores beneficios.
+
+38
+
+Cuadro 8. Productos o beneficios de los programas
+
+Proyecto
+
+% con % sin beneficios beneficios
+
+Cisterna de ferrocemento
+
+95.16
+
+4.84
+
+Estufa Lorena
+
+92.31
+
+7.69
+
+Construcción de baño seco 91.67
+
+8.33
+
+Siembra en traspatio
+
+75.34
+
+24.66
+
+Otros
+
+66.67
+
+33.33
+
+Cría de animales
+
+65.00
+
+35.00
+
+Siembra milpa (en parcela) 62.50
+
+37.50
+
+Panadería
+
+50.00
+
+50.00
+
+Siembra de árboles frutales 18.18
+
+81.82
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-GSH.
+
+En el cuadro 9 se muestra la manera en la que se utilizan los recursos provenientes de cada uno de los proyectos auspiciados por el PESA-GSH. Destaca a primera vista, que la mayor proporción de los recursos de los proyectos se destinan a la compra de materiales. En el caso particular de la cría de animales, la compra de materiales y de animales representan las inversiones más importantes (38.40% y 35.58% respectivamente). En la siembra de milpa, las principales inversiones consisten en la compra de equipo, modernización y compra de materiales (38.46%, 30.77% y 30.77% respectivamente). A su vez, la construcción del baño seco, la cisterna de ferrocemento y la estufa Lorena involucran inversiones que se destinan a la compra de materiales, construcción de infraestructura y compra de equipo. Los proyectos de panadería, que no están contemplados en los apoyos del PESA-GSH, realizan como principal inversión la compra de equipo.
+
+39
+
+Cuadro 9. Inversiones realizadas por tipo de proyecto
+
+Proyecto
+
+Compra de
+equipo
+
+Construcción de
+infraestructura
+
+Modernización de la milpa
+
+Compra de
+animales
+
+Compra de
+materiales
+
+%
+
+%
+
+%
+
+%
+
+%
+
+Cría de animales Siembra milpa (en parcela)
+
+6.99 38.46
+
+19.02 0.00
+
+0.00 30.77
+
+35.58 0.00
+
+38.40 30.77
+
+Siembra en traspatio Construcción de baño seco
+
+32.14 5.00
+
+15.18 35.00
+
+13.39 0.00
+
+0.89
+
+38.39
+
+0.00
+
+60.00
+
+Cisterna de ferrocemento 4.69
+
+45.31
+
+0.00
+
+0.00
+
+50.00
+
+Estufa lorena Siembra de árboles frutales
+
+3.33 15.38
+
+36.67 0.00
+
+0.00
+
+0.00
+
+60.00
+
+7.69
+
+0.00
+
+76.92
+
+Panadería
+
+66.67
+
+33.33
+
+0.00
+
+0.00
+
+0.00
+
+Otros
+
+0.00
+
+75.00
+
+0.00
+
+0.00
+
+25.00
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-
+
+GSH.
+
+40
+
+CAPÍTULO 4 RESULTADOS DEL PROGRAMA SOBRE LA POBREZA
+El PESA-GSH es un programa integral cuyos componentes están dirigidos a fortalecer algunas dimensiones que pueden contribuir a reducir la pobreza de los beneficiarios. El diseño del Programa indica que dentro de sus fines está complementar al Programa de Desarrollo Humano Oportunidades, puesto que incluye puntualmente el fortalecimiento de las capacidades productivas del hogar, la conservación del medio ambiente y la inserción de los hogares al sistema financiero.
+En esta sección de la tesis se mide el impacto del PESA-GSH sobre los niveles de pobreza de los individuos. Para esto se aplican los 4 métodos de pareo que se mencionaron anteriormente, a saber: Vecino más cercano, Radio, Kernel y Estratificación, de esta manera se calcula el Efecto Promedio del Tratamiento sobre los Tratados, y posteriormente se mide el impacto sobre la pobreza, construyendo ingresos contrafactuales para los participantes. Enseguida, se construyen dos vectores de ingresos, uno para los individuos que recibieron el tratamiento y otro de sus ingresos contrafactuales, el cual se obtiene simplemente de restar el Efecto Promedio del Tratamiento sobre los Tratados a cada uno de los ingresos de los beneficiarios. Una de las características que distinguen a este trabajo de los otros que ya se han citado, es que se construye un vector de ingresos contrafactuales buscando gemelos para cada unos de los individuos tratados, en base a las técnicas del Vecino más cercano y la del Radio; con esta información se mide el impacto sobre las distintas medidas de pobreza.
+A partir del análisis descriptivo del apartado anterior, se determinó que los valores de los hogares pertenecientes al grupo de tratamiento son mayores respecto a los hogares del grupo de control. No obstante, dicho análisis no permite concluir que las diferencias se atribuyan al Programa. El uso de la metodología Propensity Score permite verificar, de una manera más eficiente y robusta, si el Programa es el responsable de que existan tales diferencias.
+Cálculo del Propensity Score
+Siguiendo a Rosenbaum y Rubin (1983), en el contexto de la metodología del Propensity Score, el primer paso para medir los impactos del Programa consiste en construir esta medida, el cual es un número que resume las características del vector Xi , para cada uno de los hogares.
+41
+
+Cuadro 10. Definición de variables
+
+Nombre de la variable
+
+Descripción
+
+Sociodemográficas
+
+sexjefe
+
+Sexo del jefe del hogar (1=Hombre, 0=Mujer)
+
+lengua_indjefe
+
+Jefe del hogar que habla lengua indígena (1=Si, 0=No)
+
+miemmay12
+
+Número de miembros del hogar mayores de 12 años
+
+Capital Humano
+
+escjefe
+
+Escolaridad del jefe del hogar (años)
+
+edadjefe
+
+Edad del jefe del hogar
+
+perd_enfermeda
+
+Algún miembro del hogar sufrió una enfermedad grave (1=Si,
+
+d
+
+0=No)
+
+escpromsj
+
+Escolaridad promedio del hogar (sin contar al jefe) (años)
+
+Capital Físico
+
+indriq
+
+Índice de riqueza del hogar
+
+molino
+
+Hogar que posee un molino (1=Si, 0=No)
+
+riego
+
+Hogar que tiene riego en sus parcelas (1=Si, 0=No)
+
+Capital Social
+
+min_locprinc
+
+Distancia hacia la localidad principal (minutos)
+
+castelefon
+
+Localidad con caseta telefónica (1=Si, 0=No)
+
+Capital Migratorio
+
+porremmex
+
+Remesas internas como porcentaje del ingreso total
+
+porremusa
+
+Remesas internacionales como porcentaje del ingreso total
+
+Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESA-
+
+GSH.
+
+De acuerdo con Smith (2004), para la estimación del Propensity Score se utilizan aquellas variables que determinan los resultados del programa, así como aquellas que determinan la participación en el mismo; en nuestro caso se emplean variables sociodemográficas, de capital humano, físico, migratorio y social o variables comunitarias. En el cuadro 10 se presentan las variables que se emplean en la estimación.
+En el Cuadro 11 se presentan los valores promedio y sus respectivos errores estándar de cada una de las variables que caracterizan a los grupos de tratamiento y de control, las cuales se utilizarán en la estimación del Propensity Score. Se observa que dentro de las variables sociodemográficas, no hay evidencia de que haya diferencias significativas entre los dos grupos.
+
+42
+
+En lo que se refiere a las variables de capital humano, el promedio de la edad del jefe del hogar es casi dos años superior para el grupo de tratamiento que para el de control y esta diferencia es estadísticamente significativa. Se observa que el 20% de las unidades del grupo de control algún miembro del hogar sufrió una enfermedad grave, mientras que para el grupo de tratamiento, la frecuencia se ubica en 15%, ello significa que los primeros estuvieron más expuestos a este tipo de choques.
+En lo referente a capital físico existen varios aspectos que vale la pena destacar, por ejemplo las características de la vivienda del hogar son mejores para el grupo de tratamiento que para el de control, como lo muestra el índice de riqueza utilizado25. Al mismo tiempo, una mayor proporción de los hogares que participan en el PESA-GSH posee un molino (16.5%) y tiene riego en su parcela (17.7%) en comparación con el grupo de control (8% y 4% respectivamente).
+En cuanto a las características comunitarias se refiere, para los hogares tratados el tiempo que les toma llegar a la localidad principal de destino es mayor (85 min) que para las unidades de control, con un tiempo que ronda los 58 minutos. Por otro lado, el 58% de las localidades de donde se selecciona las unidades de tratamiento cuentan con caseta telefónica, mientras que sólo el 48% de las comunidades en donde se extraen las unidades del grupo de control, tienen este servicio.
+
+Cuadro 11. Promedio y errores estándar de las variables que se emplearán para estimar el Propensity Score (1)
+
+Variable
+
+Tratamiento Control
+
+Sexjefe
+
+0.864
+
+0.871
+
+(0.343)
+
+(0.335)
+
+lengua_indjefe
+
+0.218
+
+0.237
+
+(0.413)
+
+(0.426)
+
+miemmay12
+
+3.572
+
+3.609
+
+(1.448)
+
+(1.59)
+
+Escjefe
+
+2.77
+
+2.808
+
+(2.405)
+
+(2.253)
+
+Edadjefe
+
+47.411
+
+45.482
+
+(13.874)
+
+(13.952)
+
+perd_enfermedad
+
+0.153
+
+0.202
+
+25 Este índice se calculó por el método de Componentes Principales e incluye características de la vivienda.
+
+43
+
+(0.361)
+
+(0.402)
+
+Escpromsj
+
+2.473
+
+2.489
+
+(1.219)
+
+(1.212)
+
+Indriq
+
+0.197
+
+-0.149
+
+(1.799)
+
+(1.752)
+
+Molino
+
+0.165
+
+0.086
+
+(0.372)
+
+(0.281)
+
+Riego
+
+0.177
+
+0.043
+
+(0.382)
+
+(0.203)
+
+min_locprinc
+
+85.277
+
+59.679
+
+(87.155)
+
+(50.257)
+
+Castelefon
+
+0.584
+
+0.480
+
+0.494
+
+(0.5)
+
+Porremmex
+
+0.006
+
+0.008
+
+(0.043)
+
+(0.052)
+
+Porremusa
+
+0.060
+
+0.053
+
+(0.164)
+
+(0.156)
+
+No. de
+
+observaciones
+
+418
+
+396
+
+(1) Incluye solo las observaciones que se
+
+encuentran dentro del área de soporte común
+
+Nota: Errores estándar entre paréntesis.
+
+Fuente: Elaboración propia con datos de de la Encuesta
+
+para la evaluación de impacto del PESA-GSH.
+
+Las variables incluidas para medir el capital migratorio indican que no hay diferencias significativas entre el grupo de tratamiento y el de control.
+Siguiendo con la medición del impacto del programa, se genera el Propensity Score a partir de un modelo logit; con éste se podrá identificar los determinantes de la participación de los hogares en el PESA-GSH, además de que permitirá identificar individuos muy parecidos en ambos grupos.
+En el Cuadro 12 se observa que entre las variables que resultan ser estadísticamente significativas se encuentra el número de miembros del hogar mayores de 12 años (edad a partir de la cual se define la Población Económicamente Activa). El signo negativo del resultado permite inferir que los hogares con mayor número de miembros en edad de trabajar tendrán menores incentivos de participar en el PESA-GSH.
+
+44
+
+Cuadro 12. Modelo logit empleado para el cálculo del Propensty Score
+
+Variable
+
+Coeficiente
+
+Error estándar
+
+Sexjefe
+
+0.003
+
+0.226
+
+lengua_indjefe -0.219
+
+0.197
+
+miemmay12
+
+-0.122 ** 0.059
+
+Escjefe
+
+-0.005
+
+0.036
+
+edadjefe
+
+0.061
+
+0.0387
+
+edadjefe2
+
+0.000
+
+0.0003
+
+perd_enfermedad -0.44 ** 0.202
+
+escpromsj
+
+-0.064
+
+0.067
+
+indriq
+
+0.12 ** 0.048
+
+molino
+
+0.735 *** 0.24
+
+riego
+
+1.496 *** 0.288
+
+min_locprinc
+
+0.006 *** 0.001
+
+castelefon
+
+0.316 ** 0.153
+
+porremmex
+
+-2.433 *
+
+1.339
+
+porremusa
+
+-0.198
+
+0.505
+
+constante
+
+-1.746
+
+0.908
+
+(*) (**) (***)Coeficientes significativos al 10, 5 y 1% respectivamente. Fuente: Elaboración propia con datos de de la Encuesta para la evaluación de impacto del PESAGSH.
+
+Como se puede apreciar en el mismo cuadro, si algún miembro del hogar sufrió una enfermedad grave, su probabilidad de participar en el Programa disminuye. El hallazgo permite inferir que los hogares no utilizan el programa como una estrategia para superar este tipo de choques.
+Los resultados del Propensity Score muestran que los activos físicos (índice de riqueza, posesión de molino y acceso a riego) son los principales determinantes de la participación de los hogares en el PESA-GSH. A medida que aumenta el índice de riqueza de los hogares, se incrementa su probabilidad de participación en el Programa. El resultado puede explicarse al tomar en cuenta que uno de los propósitos del PESA-GSH es el aumento del acervo de capitales y activos de la familia, por lo que los hogares de Oportunidades interesados en el PESA-GSH serán los que ya hayan cubierto al menos sus necesidades básicas y puedan dedicarse a actividades productivas. Asimismo, si el hogar posee un molino entre sus activos, la probabilidad de participar en el
+
+45
+
+Programa se incrementa. El mismo comportamiento presentan los hogares que tienen riego en sus parcelas, lo cual puede deberse a que su producción está más tecnificada y los apoyos PESAGSH pueden ayudarles para hacer posible un mayor aprovechamiento de los recursos de capital físico con los que cuentan.
+En lo que se refiere a capital “social/comunitario” la distancia a la comunidad principal con la que tienen relación los hogares es una variable fundamental para que participen en el Programa. Los hogares que se encuentran más alejados de la localidad principal son los que tienen mayor probabilidad de participar en el Programa. Lo anterior debido a que, al no contar con fácil acceso al mercado de bienes para la producción situado fuera de la localidad, al llegar el Programa a ella permite a sus hogares tener acceso a insumos, materiales y equipo para la producción familiar. Respecto a la última variable sobre capital social, los resultados muestran que si la localidad tiene caseta telefónica (es decir, acceso más eficiente a la comunicación con el exterior), aumenta significativamente la probabilidad de que sus hogares participen en el Programa. Esto pudiera deberse a que la información relacionada con el Programa fluye de mejor manera que en comunidades que no tienen esa comunicación.
+Por último, se incluyen en el modelo dos variables que permiten tomar en cuenta la recepción de remesas y cómo éstas influyen en la decisión de participar en el Programa; en este sentido, si las remesas que recibe el hogar del interior del país (medidas como proporción del ingreso total de los hogares) aumentan, entonces disminuye la probabilidad del hogar de participar en el PESAGSH. Esto sugiere que las remesas internas cubren parte importante de las necesidades del hogar y por tanto desalientan la participación en el Programa (sucede algo parecido con el porcentaje de remesas externas puesto que el coeficiente también tiene signo negativo, aunque en este caso no es significativo).
+En la gráfica 1 se presenta la distribución del Propensity Score; se aprecia que existe un traslape importante entre la distribución del grupo de tratamiento y el de control, es decir el área de soporte común es considerablemente alta. Lo anterior garantiza que se pueden encontrar un número suficiente de parejas con Propensity Scores similares en ambos grupos, y con ello formar parejas que permitan medir el impacto del Programa. Además, ello garantiza que se cumpla la propiedad de balance.
+46
+
+Gráfica 1. Distribución del Propensity Score
+
+3.5
+
+3
+
+Grupo de Tratamiento
+
+2.5
+
+Grupo de Control
+
+2
+
+Densidad
+
+1.5
+
+1
+
+0.5
+
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1.1
+
+Propensity Score
+
+Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del PESA-GSH.
+
+Medición del impacto global del PESA-GSH
+Después de haber calculado el Propensity Score para el grupo de control y para el grupo de tratamiento, el siguiente paso consistirá en calcular el efecto promedio del Programa, para lo cual se tomarán hogares semejantes en la comparación. Para la medición de dicho impacto, tomando hogares semejantes, se emplean los cuatro métodos de pareo que se mencionan en la tercera sección de este trabajo: Vecino más cercano, Radio, Kernel y Estratificación.
+Para la medición del impacto del PESA-GSH, se hace necesario identificar los objetivos de éste con la finalidad de conocer si ha cumplido con los mismos. Entre sus objetivos específicos está lograr un mejor equilibrio monetario por medio del aumento de los ingresos de los hogares, a partir de la venta de productos o de la reducción en compras de alimentos.
+De esta manera, para verificar la medida en la que ha cumplido con estos objetivos, en el cuadro 13 se presenta la medición del impacto del Programa sobre distintas fuentes de ingresos.
+
+47
+
+De acuerdo con los resultados del cuadro 13, los coeficientes obtenidos por los métodos Radio, Kernel y Estratificación resultan ser estadísticamente significativos, con lo cual se puede afirmar que el PESA-GSH ha cumplido satisfactoriamente con uno de sus principales objetivos, esto es, ha logrado incrementar los ingresos netos totales de cada uno de los hogares beneficiarios en 11,303.8 pesos anuales en promedio. De esta manera, el efecto promedio del Programa por individuo es de 2,260.8 pesos anuales y de 188 pesos por persona al mes, esto bajo el supuesto de que el número promedio de integrantes por hogar es de 5 personas.
+
+Cuadro 13. ATT, Impacto promedio anual por hogar del PESA-GSH sobre distintas fuentes de ingresos
+
+Método
+
+Ingreso Neto Total
+
+Ingreso Neto Ingreso Neto
+
+Agrícola
+
+Ganadero
+
+Ingreso Neto de Traspatio
+
+ATT
+
+ATT
+
+ATT
+
+ATT
+
+Vecino más cercano
+Estadístico t t boot.†
+
+-962.656
+-0.158 -0.132
+
+1,239.389 **
+2.419 2.559
+
+-29.943
+-0.035 -0.021
+
+376.529 ***
+3.827 4.014
+
+Unidades de
+
+418
+
+418
+
+418
+
+418
+
+Tratamiento
+
+Unidades de
+
+197
+
+197
+
+197
+
+195
+
+Control
+
+Radio
+
+9,685.280 *** 1,797.751 *** 2,401.289 *** 304.994 ***
+
+Estadístico t t boot.†
+
+2.906 2.532
+
+3.948 3.298
+
+3.554 3.654
+
+3.126 3.096
+
+Unidades de
+
+370
+
+370
+
+370
+
+375
+
+Tratamiento
+
+Unidades de
+
+388
+
+388
+
+388
+
+392
+
+Control
+
+Kernel 11,711.716 *** 1,695.871 *** 1,779.154 * 333.144 ***
+
+Estadístico t t boot.†
+
+2.865
+
+3.834
+
+1.935
+
+4.471
+
+Unidades de
+
+418
+
+418
+
+418
+
+418
+
+Tratamiento
+
+Unidades de
+
+398
+
+398
+
+398
+
+396
+
+Control
+
+Estratificación 12,514.302 *** 1,671.466 *** 1,558.78
+
+309.044 ***
+
+Estadístico t t boot.†
+
+3.144 3.156
+
+3.797 3.399
+
+1.51 1.498
+
+3.329 3.442
+
+Unidades de
+
+418
+
+418
+
+418
+
+400
+
+48
+
+Tratamiento
+
+Unidades de
+
+398
+
+398
+
+398
+
+414
+
+Control † Valor del estadístico t calculado por el método bootstrap.
+
+(*) (**) (***) Coeficientes significativos al 10%, 5% y 1%, respectivamente.
+
+ATT=Average Treatment Effect on the Treated (Efecto Promedio del Tratamiento sobre
+
+los Tratados)
+
+Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del
+
+PESA-GSH.
+
+Cabe destacar que al emplear el primer método de pareo sólo se toman 197 observaciones del grupo de control y se descarta casi la mitad; esto es así ya que mediante este método se busca en el grupo de control una pareja para cada individuo en el grupo de tratamiento que tenga un Propensity Score lo suficientemente parecido al primero, y por lo regular este individuo comparable resulta ser único, además de que se pueden descartar muchas unidades que no cumplen con la condición de la cercanía (vecindad); no obstante si se cambia la condición de cercanía el número de individuos en el grupo de control podrían aumentar, cambiando significativamente los resultados. Este método y el de Radio son muy sensibles a la especificación que se utilice (Becker e Ichino, 2002).
+Otro de los objetivos del PESA-GSH consiste en brindar apoyos para proyectos de siembra de milpa, cría de animales y actividades en traspatio. Para verificar si el Programa ha cumplido con este cometido, así como para conocer la magnitud de dicho impacto, en el cuadro 13 se emplean tres medidas que permiten cuantificar el efecto promedio del Programa, a saber los Ingresos Agrícolas, Ganaderos y de Traspatio. En la tercera columna del cuadro se mide el Efecto Promedio del Tratamiento sobre los Ingresos Netos Agrícolas de los hogares, utilizando los cuatro métodos de pareo. Los resultados resultan ser estadísticamente significativos al 1% por tres de los cuatro métodos, y sólo mediante el método del Vecino más cercano los resultados son estadísticamente significativos al 5%, con ello se concluye que el PESA-GSH tiene un efecto positivo sobre los ingresos netos agrícolas de los hogares beneficiarios, ya que dicho ingreso se incrementa en promedio $1,601 pesos por año.
+Por otro lado, en la cuarta columna del cuadro 13 se presenta la medición del impacto del Programa sobre los Ingresos Netos Ganaderos de los hogares participantes. De acuerdo con los resultados, el ATT que se obtiene por los métodos de Radio y Kernel son significativos (aunque
+49
+
+en el segundo caso esto sucede al 10%); con ello se podría concluir que el ingreso ganadero de los hogares se incrementó en $2,090 pesos en promedio a causa del Programa. Por último, en la cuarta columna se presenta el impacto del Programa sobre el Ingreso Neto de Traspatio, en donde se incluye actividades con menor generación de ingresos; los resultados muestran que los ingresos que se incluyen en este rubro sólo se incrementan en $331 pesos en promedio al año gracias al PESA-GSH. No obstante y a diferencia de los otros tipos de ingreso, todos los resultados que se obtienen por medio de los métodos de pareo son estadísticamente significativos al 1%, con ello se garantiza la robustez de los resultados obtenidos.
+Dentro de los objetivos centrales que persigue el PESA-GSH se encuentra la promoción del autoconsumo y las ventas por parte de los hogares; para verificar este aspecto del Programa en el cuadro 14 se presentan los efectos promedio del tratamiento sobre los ingresos por autoconsumo y sobre las ventas agrícolas, ganaderas y de traspatio. Los resultados muestran que el Programa ha tenido un efecto positivo sobre los ingresos por autoconsumo de los hogares beneficiarios, dado que sus ingresos aumentaron en $1,357 pesos anuales, más aún estos resultados son significativos al aplicar los cuatro métodos de pareo26. La tercera columna del cuadro 14 presenta la medición de los impactos sobre los ingresos por ventas; a la luz de los resultados se puede concluir que gracias al Programa, los ingresos por ventas de los hogares que reciben el tratamiento aumentan en promedio en $1,215 pesos anuales, de acuerdo con tres de los cuatro métodos empleados.
+
+Cuadro 14. ATT, Efecto promedio anual por hogar para las unidades que reciben el PESA-GSH sobre los ingresos por autoconsumo y ventas agrícolas, ganaderas y de traspatio
+
+Modelo
+
+Autoconsumo ATT
+
+Ventas ATT
+
+Vecino más cercano
+Estadístico t t boot.†
+
+1,482.908 *** 3.789 4.168
+
+110.877 0.234 0.145
+
+Unidades de Tratamiento
+
+418
+
+418
+
+Unidades de Control
+
+197
+
+197
+
+Radio
+
+1,413.210 *** 1,559.604 ***
+
+26 De nueva cuenta se aprecia que el número de observaciones del Grupo de Control es muy reducido, lo cual podría ser causante de que los resultados no sean significativos.
+50
+
+Estadístico t t boot.†
+
+3.911 3.686
+
+3.76 3.292
+
+Unidades de Tratamiento
+
+370
+
+370
+
+Unidades de Control
+
+388
+
+388
+
+Kernel
+Estadístico t t boot.†
+
+1,266.709 *** 1,027.521 *
+
+-
+
+-
+
+4.085
+
+1.891
+
+Unidades de Tratamiento
+
+418
+
+418
+
+Unidades de Control
+
+398
+
+398
+
+Estratificación
+Estadístico t t boot.†
+
+1,264.664 *** 1,058.737 *
+
+3.748
+
+1.932
+
+3.5
+
+1.873
+
+Unidades de Tratamiento
+
+418
+
+418
+
+Unidades de Control
+
+398
+
+398
+
+† Valor del estadístico t calculado por el método bootstrap.
+
+(*) (**) (***) Coeficientes significativos al 10%, 5% y 1%,
+
+respectivamente.
+
+ATT=Average Treatment Effect on the Treated (Efecto Promedio
+
+del Tratamiento sobre los Tratados)
+
+Fuente: Elaboración propia con datos de la Encuesta para la
+
+Evaluación de impacto del PESA-GSH.
+
+Una de las características que se resaltaron en el análisis descriptivo de la base de datos, fue lo referente al mayor volumen de producción de maíz, así como la mayor cantidad consumida del mismo por parte de los hogares de tratamiento, en relación a los hogares del grupo de control; se propuso que la razón principal se debería al rendimiento unitario del maíz. Para probar esta hipótesis de manera formal, en el cuadro 15 se mide el impacto del Programa sobre el rendimiento unitario en el cultivo del maíz; los resultados son contundentes, esto es, al emplear cualquier método de pareo, se estima que el PESA-GSH aumenta los rendimientos unitarios en 227kg/ha. El efecto puede atribuirse a una mejor dosis de fertilización promovida deliberadamente por el Programa.
+
+Cuadro 15. ATT, Efecto promedio anual por hogar sobre
+
+el rendimiento del maíz de los hogares que recibieron el
+
+PESA-GSH
+
+Rendimiento del
+
+Modelo
+
+maíz
+
+ATT
+
+Vecino más cercano
+
+262.18 ***
+
+51
+
+Estadístico t t boot.†
+
+2.385 2.28
+
+Unidades de Tratamiento
+
+418
+
+Unidades de Control
+
+195
+
+Radio
+
+226.158 ***
+
+Estadístico t t boot.†
+
+3.624 2.656
+
+Unidades de Tratamiento
+
+375
+
+Unidades de Control
+
+392
+
+Kernel
+
+223.183 ***
+
+Estadístico t t boot.†
+
+2.977
+
+Unidades de Tratamiento
+
+418
+
+Unidades de Control
+
+396
+
+Estratificación
+
+196.611 ***
+
+Estadístico t t boot.†
+
+2.482 2.551
+
+Unidades de Tratamiento
+
+400
+
+Unidades de Control
+
+414
+
+† Valor del estadístico t calculado por el método bootstrap.
+
+(*) (**) (***) Coeficientes significativos al 10%, 5% y 1%,
+
+respectivamente.
+
+ATT=Average Treatment Effect on the Treated (Efecto
+
+Promedio del Tratamiento sobre los Tratados)
+
+Fuente: Elaboración propia con datos de la Encuesta para la
+
+Evaluación de impacto del PESA-GSH.
+
+Impacto del PESA-GSH en la pobreza
+
+Dado que el objetivo central de la presente investigación consiste en estimar el impacto del PESA-GSH en la pobreza de los hogares beneficiarios, en este apartado se emplean los cuatro métodos de pareo para conocer dicho efecto. Para ello se hace necesario conocer los objetivos del Programa en esta materia, con la finalidad de dar respuesta a estas cuestiones.
+
+Así pues, uno de los objetivos del Programa consiste en atacar de manera frontal las causas estructurales de la pobreza otorgando apoyos durante tres años, para que después de ese periodo los hogares incrementen sus posibilidades de salir y mantenerse fuera del círculo de la pobreza por sus propios medios, con autosuficiencia alimentaria, vendiendo sus excedentes de producción y conservando el medio ambiente.
+
+Para llevar a cabo el análisis de los impactos del Programa sobre la pobreza, se considera el periodo de septiembre de 2007 a agosto de 2008, que en realidad es cuando se podrían estar
+
+52
+
+observando resultados del primer año de operación del Programa. En concordancia con los objetivos del primer año, los hogares tendrían que estar rebasando la línea de pobreza alimentaria. El análisis que se lleva a cabo en el resto del presente documento consiste en medir los efectos que ha tenido el PESA-GSH en las líneas de pobreza alimentaria, de capacidades y de patrimonio definidas para el sector rural mexicano (CONEVAL, 2006).
+En el cuadro 16 se presentan los resultados obtenidos de las mediciones de los impactos sobre las tres líneas de pobreza definidas por CONEVAL; de esta forma, con base en las estimaciones que arrojan tres de los cuatro métodos de pareo, Radio, Kernel y Estratificación, la participación en el PESA-GSH reduce en promedio la probabilidad de que los hogares se encuentren en pobreza alimentaria en 11 puntos porcentuales. Debido a que el porcentaje de hogares dentro del área de soporte común que están en pobreza alimentaria es de 62%, el efecto estimado del PESA-GSH en su disminución equivale a una reducción del 18% de las tasas de pobreza para los hogares que reciben el Programa en comparación con los que no lo reciben. Estos resultados contrastan con las últimas estimaciones de CONEVAL sobre los cambios en la pobreza por ingreso de los mexicanos, según las cuales el porcentaje de individuos y hogares pobres en México y su número creció considerablemente en 2008 respecto a 2006 (ver CONEVAL. Comunicado de Prensa No. 006/09, 18 de julio, 2009). Aunque los dos conjuntos de resultados no puedan compararse, las diferencias indican que con el PESA-GSH se ha logrado no sólo proteger de la crisis global actual a los hogares que beneficia en Guerrero, sino que además una proporción considerable de éstos ha salido de la pobreza alimentaria.
+Pese al notable impacto que ejerce el Programa sobre la pobreza alimentaria, su efecto sobre la pobreza de capacidades disminuye. Sin embargo, los resultados muestran que, en promedio, el PESA-GSH tiene un efecto reductor de la probabilidad de que sus beneficiarios estén en pobreza de capacidades de 7 puntos porcentuales. Lo cual quiere decir que una disminución en la tasa de pobreza de alrededor de 10.2%, ya que existe 68.4% de pobres de capacidades dentro del área de soporte común.
+En la última columna del cuadro 16, se miden los impactos del Programa sobre la pobreza de patrimonio; destaca que solamente dos resultados son significativos y al 10% (Kernel y Estratificación). Además, a partir de los resultados del cuadro 15, se puede afirmar que en promedio el efecto del PESA-GSH reduce la probabilidad de encontrarse en pobreza de
+53
+
+patrimonio en 6.25 puntos porcentuales, lo que implica una caída en la pobreza de 7.9% dado que el porcentaje de pobres patrimoniales en la región de comparación es de 78.87%.
+
+Cuadro 16. ATT, Efecto promedio anual por hogar del PESA-GSH en diferentes
+
+medidas de pobreza
+
+Pobreza
+
+Pobreza de Pobreza de
+
+Modelo
+
+Alimentaria Capacidades Patrimonio
+
+ATT
+
+ATT
+
+ATT
+
+Vecino más cercano -0.067
+
+-0.029
+
+0.017
+
+Estadístico t t boot.†
+
+-1.132 -1.009
+
+-0.507 -0.475
+
+0.343 0.276
+
+Unidades de
+
+Tratamiento
+
+418
+
+418
+
+418
+
+Unidades de Control
+
+195
+
+195
+
+195
+
+Radio
+Estadístico t t boot.†
+
+-0.105 *** -2.895 -2.717
+
+-0.06 * -1.724 -1.756
+
+-0.027 -0.891 -0.808
+
+Unidades de
+
+Tratamiento
+
+375
+
+375
+
+375
+
+Unidades de Control
+
+392
+
+392
+
+392
+
+Kernel
+Estadístico t t boot.†
+
+-0.121 *** -
+-2.705
+
+-0.078 ** -
+-1.979
+
+-0.067 * -
+-1.923
+
+Unidades de
+
+Tratamiento
+
+418
+
+418
+
+418
+
+Unidades de Control
+
+396
+
+396
+
+396
+
+Estratificación
+
+-0.111 *** -0.071 *
+
+-0.058 *
+
+Estadístico t t boot.†
+
+-2.758 -2.763
+
+-1.821 -1.732
+
+-1.809 -1.831
+
+Unidades de
+
+Tratamiento
+
+400
+
+400
+
+416
+
+Unidades de Control
+
+414
+
+414
+
+396
+
+† Valor del estadístico t calculado por el método bootstrap.
+
+(*) (**) (***) Coeficientes significativos al 10%, 5% y 1%, respectivamente.
+
+ATT=Average Treatment Effect on the Treated (Efecto Promedio del
+
+Tratamiento sobre los Tratados)
+
+Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de
+
+impacto del PESA-GSH.
+
+54
+
+Medición del impacto de la reducción de la pobreza a partir de escenarios contrafactuales
+Para complementar el análisis del impacto del Programa sobre las tres líneas de pobreza definidas por Coneval, en este apartado se emplea el índice de pobreza de Foster, Greer y Thorbecke [FGT(α)], que incluye el parámetro α de aversión a la pobreza. De esta manera, a medida que más alto sea el valor asignado a α, el índice calculado será más sensible a la situación en la que se encuentran los más pobres dentro de los pobres. No es lo mismo que haya una gran cantidad de pobres cerca de la línea de pobreza a que haya pocos ahí y los demás muy por debajo de tal línea. Si se le asigna a α un valor 0, se está midiendo la proporción de pobres; Por otro lado, si α=1, se está determinando la brecha promedio entre los ingresos de los hogares pobres y la línea de pobreza, indicando la profundidad de la pobreza; y cuando α=2 se está dando mayor ponderación a los hogares más distantes de la línea de pobreza, lo cual permite tener un parámetro sobre la severidad de la pobreza.
+El análisis siguiente se desarrolla en dos partes, en la primera parte se construyen dos vectores de ingresos, a saber, un vector de ingresos observados de los hogares que recibieron el PESA-GSH y un vector de ingresos contrafactuales que hubieran obtenido si dichos hogares no hubieran participado en el Programa, esto se obtiene simplemente restando el Efecto Promedio del Tratamiento (ATT) a cada uno de los elementos del vector de ingresos observados; el objetivo fundamental de este ejercicio será medir el impacto del Programa sobre los niveles de pobreza, empleando el Índice FGT(α). En la segunda parte se realiza un análisis similar; con la diferencia de que el vector de ingresos contrafactuales se obtiene buscando una pareja para cada elemento del grupo de tratamiento, para ello se forman parejas en base a la técnica del Vecino más cercano y otro caso se usa la técnica del Radio; posteriormente se toma el ingreso de cada gemelo como el ingreso contrafactual de la unidad de tratamiento. Como último paso se utiliza el Índice FGT(α) para medir el impacto del Programa sobre la Pobreza.
+Medición del impacto de la pobreza, a partir de la construcción de ingresos contrafactuales empleando el ATT
+Se construyen los índices de pobreza para α = 0,1 y 2 con base en el ingreso observado de los hogares que recibieron el PESA-GSH. El objetivo, como ya se mencionó es poder comparar estas medidas con aquellas que hubieran resultado del ingreso que los hogares tratados hubiesen
+55
+
+tenido de no haber participado en el PESA-GSH. Para ello, se construyó un ingreso contrafactual que reflejara esta situación. Dicho escenario contrafactual se obtuvo restando al ingreso observado el efecto promedio del Programa que resultó de los efectos promedio de tratamiento sobre los tratados (ATT), calculados por medio de los métodos de pareo; Radio, Kernel y Estratificación. Así fue posible obtener una aproximación del ingreso que hubieran tenido los hogares en ausencia del programa. Con esta base se calculó el índice FGT para α=0,1 y 2.
+
+En el cuadro 17 se presentan los impactos del Programa sobre cada una de las medidas de pobreza que define Coneval. En lo referente a Pobreza Alimentaria, el Programa reduce este tipo de pobreza en un 12%, ya que de acuerdo con los resultados la pobreza sin el Programa sería de 66%, pero gracias al Programa la pobreza disminuye 12 puntos porcentuales hasta ubicarse en 54%. Cabe destacar que este efecto es similar al impacto presentado anteriormente utilizando los métodos de pareo (merece enfatizar que las estimaciones son robustas con respeto al método usado). La siguiente definición de Pobreza que se toma es la Pobreza de Capacidades; derivado de las mediciones que se obtienen mediante el Índice FGT, resulta que el porcentaje de pobres habría sido 8% mayor sin el PESA-GSH y en el caso de la Pobreza de Patrimonio el resultado habría sido un 4.7% mayor a lo observado, si no se hubiera otorgado el PESA-GSH. Por lo tanto, se puede afirmar que el Programa coadyuvó a la reducción en el número de personas en condiciones de pobreza, mostrando un efecto mayor en aquellos que se encontraban en pobreza alimentaria, y que esto se ha dado no obstante los fuertes efectos negativos en la pobreza de los mexicanos de la reciente crisis global.
+
+Cuadro 17. Impacto del PESA-GSH en índices de pobreza empleando escenarios
+
+contrafactuales
+
+Pobreza Alimentaria Pobreza de Capacidades Pobreza de Patrimonio
+
+FGT Ingreso
+
+Ingreso
+
+Ingreso
+
+Ingreso
+
+Ingreso
+
+Ingreso
+
+(α) Observad Contrafactual Observad Contrafactual Observad Contrafactual
+
+o
+
+*
+
+o
+
+*
+
+o
+
+*
+
+α=0 0.54402 0.66366
+
+0.6298
+
+0.71106 0.75169
+
+0.7991
+
+α=1 0.2852
+
+0.50121 0.33127 0.53032 0.45902
+
+0.6089
+
+α=2 0.18743
+
+0.4744
+
+0.22207 0.48636 0.32708 0.53728
+
+FGT= Índice de pobreza de Foster, Greer, Thorbecke *El ingreso contrafactual se construyó con base en un promedio de los efectos promedio de tratamiento calculados con los métodos de pareo: Radio, Kernel y Estratificación. Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del PESA-GSH.
+
+56
+
+Al análisis anterior, se debe añadir que al considerar los efectos del índice FGT para α=1 y 2, es posible inferir que los impactos redistributivos, dentro de los hogares que se encuentran por debajo de las distintas líneas de pobreza, han sido también positivos y mayores en la medida en que se asigna una más elevada ponderación a los más pobres de entre los pobres, FGT(2). Es decir, se observa para las tres líneas de pobreza que el efecto del Programa es mucho mayor en la parte inferior de la distribución de los hogares pobres, ya que sin él habrían estado en peores condiciones. A pesar de que aún no han logrado abandonar su condición de pobreza, los resultados indican que el PESA-GSH podría cumplir con esta meta en el futuro cercano.
+Medición del impacto de la pobreza, a partir de la construcción de ingresos contrafactuales empleando el ingreso de los gemelos de los individuos
+Aquí se realiza un análisis similar al de la parte anterior, con la salvedad de que ahora se construyen el vector de ingresos contrafactuales de los beneficiarios del PESA-GSH con la técnica del Vecino más cercano y del Radio. En el cuadro 18 se presentan los impactos del Programa sobre cada una de las medidas de pobreza que define Coneval; los ingresos contrafactuales se dividen en dos columnas, la primera de ellas presenta los resultados obtenidos empleando la técnica del Vecino más cercano, y la segunda presenta los resultados que se obtienen por el método del Radio.
+Empleando la técnica del Vecino más cercano, el nivel de Pobreza Alimentaria solo se reduce en 9 puntos porcentuales, ya que de no haber recibido el Programa, el porcentaje de hogares en esta condición hubiera sido 63%; en lo que se refiere a Pobreza de Capacidades, su nivel disminuye sólo en 5 puntos porcentuales, al pasar de 68% a 63%; el impacto en la Pobreza de Patrimonio también se reduce en 5 puntos porcentuales, ya que esta pasa de 80% a 75%. Con la técnica del Radio los impactos resultan mayores, ya que en el primer caso (Pobreza Alimentaria), la pobreza se reduce en 11 puntos porcentuales, medida que es muy parecida a la obtenida en el cuadro 17 con el Efecto Promedio. Por su parte, los impactos en la Pobreza de Capacidades y de Patrimonio son de 7 puntos porcentuales; el impacto en la Pobreza de Capacidades es bastante parecido al del Efecto Promedio.
+57
+
+Cuadro 18. Impacto del PESA-GSH en índices de pobreza empleando escenarios contrafactuales
+Pobreza Alimentaria Pobreza de Capacidades Pobreza de Patrimonio
+
+FGT (α)
+
+Ingreso Observ
+ado
+
+Ingreso Contrafactual
+
+Vecino *
+
+Radio
+
+Ingreso Observ
+ado
+
+Ingreso Contrafactual
+
+Vecino *
+
+Radio
+
+Ingreso Observ
+ado
+
+Ingreso Contrafactual
+
+Vecino *
+
+Radio
+
+α=0
+
+0.54402
+
+0.6348
+
+0.6553 5
+
+0.6298
+
+0.6801 5
+
+0.7036 6
+
+0.75169
+
+0.7990 2
+
+0.8185 4
+
+α=1
+
+0.2852
+
+0.3937 7
+
+0.3996 8
+
+0.33127
+
+0.4349 1
+
+0.4438 4
+
+0.45902
+
+0.5438 3
+
+0.5589 2
+
+α=2
+
+0.18743
+
+0.2881 4
+
+0.2884 4
+
+0.22207
+
+0.3243 5
+
+0.3267 1
+
+0.32708
+
+0.4235 9
+
+0.4319 5
+
+FGT= Índice de pobreza de Foster, Greer, Thorbecke
+
+*Se refiere al método del vecino más cercano,
+
+Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del PESA-
+
+GSH.
+
+De nueva cuenta, al análisis anterior se puede añadir los efectos del índice FGT para α=1 y 2, con la finalidad de inferir los impactos redistributivos dentro de los hogares que se encuentran por debajo de las distintas líneas de pobreza. Los resultados muestran que los efectos varían muy poco a medida que se asigna una más elevada ponderación a los más pobres de entre los pobres, FGT(2), tanto con la técnica del Vecino más cercano, como con la del Radio, aunque con ésta última, los impactos son los mismos para todos los hogares, es decir el impacto es el mismo entre los pobres más pobres y entre los pobres menos pobres. Además en ambos casos, el efecto sigue siendo menor al obtenido mediante el método anterior.
+Para ilustrar los impactos en los ingresos de los hogares que recibieron el PESA-GSH, en la gráfica 2 se presentan las distribuciones de los ingresos de los hogares beneficiarios y sus ingresos contrafactuales, es decir el los ingresos que hubieran obtenido si no hubieran participado en el Programa, esto con base en la técnica del Vecino más cercano.
+
+58
+
+Gráfica 2. Impacto del PESA-GSH en la distribución de los ingresos de los hogares beneficiarios empleando la técnica del Vecino más cercano
+
+2.50E-05
+
+2.00E-05
+
+Densidad
+
+1.50E-05
+
+1.00E-05 5.00E-06
+
+Ingresos Contrafactuales Ingresos Observados
+
+0.00E+00 -30,000
+
+20,000
+
+70,000 120,000 170,000 220,000 Ingresos
+
+Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del PESA-GSH.
+
+Utilizando la técnica del Vecino más cercano y separando por deciles, el impacto es mayor en los hogares con ingresos más bajos; por ejemplo para los primeros tres deciles el impacto es en promedio de 50%, es decir que en promedio sus ingresos aumentan un 50%. Por el contrario los ingresos de los últimos deciles no se incrementan significativamente; el ingreso de los individuos de los deciles 7, 8 y 9 apenas aumentan 10%, 10% y 9%, respectivamente. Esto es consistente con lo que se obtuvo en la medición del FGT; es decir, el impacto es mayor en los hogares más pobres.
+Por otro lado, en la gráfica 3 se presentan los ingresos de las unidades tratadas y sus ingresos contrafactuales, pero con base en la técnica del Radio. Al igual que en la gráfica anterior, la distribución de los ingresos del grupo de tratamiento se desplaza hacia la derecha, reflejando con ello un impacto positivo del Programa. No obstante el impacto es mucho mayor dependiendo del decil de que se trate; por ejemplo para el primer decil el efecto es de 67%, es decir los ingresos aumentan en promedio un 67%; para el segundo decil el efecto es de 48%, para el tercero el
+
+59
+
+impacto es de 41%, y el efecto es menor en los más altos; el efecto para los individuos del noveno decil es de 17%.
+
+Gráfica 3. Impacto del PESA-GSH en la distribución de los ingresos de los hogares beneficiarios empleando la técnica del Radio
+
+2.50E-05
+
+2.00E-05
+
+Densidad
+
+1.50E-05
+
+1.00E-05 5.00E-06
+
+Ingresos Contrafactuales Ingresos Observados
+
+0.00E+00 -30,000
+
+20,000
+
+70,000 120,000 170,000 220,000 Ingresos
+
+Fuente: Elaboración propia con datos de la Encuesta para la Evaluación de impacto del PESA-GSH.
+
+Lo anterior muestra que el PESA-GSH es un programa que permite mejorar los ingresos, y por lo tanto las condiciones de vida de los hogares, pero sobre todo de aquellos que se encuentran en condiciones de pobreza extrema a moderada (más o menos hasta el sexto decil). En suma, se puede argumentar que el PESA-GSH está cumpliendo con uno de sus principales objetivos al combatir la pobreza y en particular al hacerlo para los hogares más desprotegidos.
+
+60
+
+CONCLUSIONES Y RECOMENDACIONES
+En este trabajo se midió el impacto del PESA-GSH sobre los niveles de pobreza de las personas que reciben el Programa, para ello se emplearon técnicas de pareamiento conocidas como Propensity Score Matching. A la luz de los resultados obtenidos, el análisis arroja que es más evidente identificar impactos completos del PESA-GSH que efectos atribuidos a sus componentes específicos. En este sentido, el énfasis del Programa se encuentra en la Agricultura, y es ahí donde se identifican los efectos más importantes. Independientemente del método de evaluación empleado se encontró un efecto positivo y significativo del PESA-GSH completo sobre el ingreso neto agrícola del hogar, el impacto oscila entre $1,239 y $1,798 pesos anuales.
+De manera específica, el análisis permitió verificar que los apoyos en materia de asesoría otorgados por el Programa coadyuvan al incremento de los niveles de producción de maíz de los hogares beneficiarios; lo que les garantiza a éstos la obtención de volúmenes importantes de dicho producto, que no sólo les permite cubrir sus necesidades de autoconsumo, sino que además les arroja excedentes para su venta. Además con el análisis se pudo comprobar que el mayor volumen de producción no se relaciona directamente con el tamaño de la superficie sembrada por los hogares con PESA-GSH, por el contrario ello se debe al rendimiento unitario en la producción de maíz. Empleando métodos de pareo se estimó el impacto del Programa sobre los rendimientos unitarios, comprobando que gracias al Programa éstos se incrementan en 227kg/ha; el efecto podría atribuirse a una mejor dosis de fertilización promovida deliberadamente por el Programa.
+En lo que respecta al ingreso ganadero, el análisis arrojó que el Programa completo tiene un impacto que oscila entre 1,779 y 2,401, aunque sólo dos de los cuatro resultados resultaron significativos, pese a ello fue posible concluir que los efectos del Programa pueden ser positivos, aunque los resultados no sean completamente robustos.
+A su vez, el análisis permitió determinar que gracias a los apoyos del PESA-GSH para producción de bienes en el traspatio, la producción, venta y autoconsumo de este tipo de bienes se ven incrementados, con lo que los impactos sobre el ingreso neto proveniente de estas actividades resultan positivos y significativos, ubicándose en un rango que va de los 304 a los 377 pesos anuales. A diferencia de los otros tipos de ingreso que se manejan en este estudio,
+61
+
+todos los resultados son estadísticamente significativos al 1%, reflejando con esto la robustez de los estimaciones obtenidas.
+Por otro lado, resulta complicado identificar el cumplimiento de las metas básicas y específicas del PESA-GSH en cuanto a aumentar los ingresos no monetarios, por autoconsumo, y monetarios, a partir de ventas agropecuarias y de traspatio. Sin embargo, los impactos en el autoconsumo son positivos, significativos, y no dependen del método de cálculo empleado y varían relativamente poco, entre 1,264 y 1,483 pesos anuales por hogar según el enfoque usado. En lo referente a las ventas, el impacto del PESA-GSH en las ventas agrícolas, ganaderas y de traspatio fue positivo y además significativo, a partir de tres de los cuatro métodos empleados, variando entre 1,027 y 1,560 pesos anuales.
+Aun cuando los programas sociales aumenten el ingreso en los hogares rurales, su efecto en la pobreza depende de cómo se distribuyan los beneficios entre los hogares pobres y no pobres, así como entre los hogares en diferentes niveles de pobreza. Oportunidades fue diseñado para aliviar las condiciones de pobreza, y hay evidencia que ha tenido éxito en este sentido. Para el caso del PESA-GSH, no era obvio ex ante, esperar que disminuyera la incidencia de la pobreza entre los hogares beneficiados, que fueron seleccionados entre los ya tratados por Oportunidades.
+Las estimaciones arrojan que la participación en el PESA-GSH reduce la probabilidad de que los hogares se encuentren en pobreza alimentaria en 11 puntos porcentuales; de esta manera, el análisis mostró que el impacto estimado del PESA-GSH equivale a una reducción del 18% de las tasas de pobreza para los hogares beneficiarios. Además los resultados son contrarios a las últimas mediciones de Coneval sobre los cambios en la pobreza por ingreso de los mexicanos, según las cuales el porcentaje de individuos y hogares pobres en México y su número creció considerablemente en 2008 respecto a 2006; ya que el análisis permitió concluir que el Programa se puede considerar como un mecanismo de protección para los hogares contra la actual crisis global, convirtiéndose en una estrategia gubernamental altamente efectiva para reducir la pobreza, y en específico la alimentaria.
+En la última parte de la tesis se estimó el impacto del PESA-GSH sobre los niveles de pobreza de los hogares beneficiarios empleando escenarios contrafactuales y con base el Índice FGT; para lo cual se construyeron los ingresos contrafactuales de los hogares PESA-GSH. Los ingresos
+62
+
+contrafactuales de los beneficiarios se obtienen de restar a sus ingresos observados el Efecto Promedio del Tratamiento o ATT. Los resultados son contundentes, ya que de acuerdo con las estimaciones el Programa reduce la Pobreza Alimentaria un 12%, puesto que de no existir el Programa, el nivel de pobreza sería de 66%, pero gracias al Programa la pobreza se ubica en 54%; además las estimaciones son robustas.
+Además, como consecuencia del Programa, la Pobreza de Capacidades se reduce 8 puntos porcentuales, al pasar de 71% en ausencia del Programa a 63% con la presencia de él. Por último, y a la luz del análisis, el Programa reduce la Pobreza de Patrimonio en 5 puntos porcentuales, lo que representa una caída en la pobreza patrimonial de 79.9% a 75.1. Más aún los resultados muestran que el impacto del Programa es mayor en los hogares más pobres, puesto que sin él habrían estado en peores condiciones.
+Empleando una técnica diferente pero con base en el Índice FGT, se construyen dos vectores de ingresos, uno de los hogares tratados y otro de los controles, empleando la técnica del Vecino más cercano y la del Radio. Con esos ingresos se mide el impacto del Programa sobre la pobreza, los resultados con la técnica del Vecino más cercano son los que más difieren en la medición del impacto sobre los niveles de pobreza, ya que los resultados con las técnicas del Radio son bastante similares. No obstante, con ambos métodos los impactos del Programa para los hogares más pobres son menores, aunque al realizar la medición por deciles se aprecia que el impacto del Programa tiene un impacto mayor en los deciles más bajos; además los impactos son mayores empleando la técnica del Radio.
+Los hallazgos de que el PESA-GSH disminuyó los niveles de pobreza de los hogares beneficiarios (especialmente la alimentaria), arroja lo siguiente:
+a) La pobreza sigue existiendo en los hogares beneficiarios de Oportunidades (al menos en los rurales de Guerrero), y
+b) Un programa enfocado como PESA-GSH puede contribuir de manera valiosa y significativa a la estrategia general de abatimiento de la pobreza implícita en el fin y propósito del programa Oportunidades. En este sentido, conviene insistir en que no obstante que el PESA-GSH tiene efectos sobre la diminución en la incidencia de la pobreza, su mayor impacto radica en que ataca la severidad de la misma.
+63
+
+Conviene destacar que en base a los resultados del estudio podría pensarse que los efectos del PESA-GSH no son importantes. Ello sería erróneo si se considera lo corto del periodo cubierto por la misma (de septiembre de 2007 a agosto de 2008) y que los apoyos a los beneficiarios en 2006 y 2007 empezaron a otorgarse hasta finales de 2007. O sea que, los proyectos evaluados apenas empezaban a madurar al final del periodo cubierto. Tiene la misma trascendencia el hallazgo de que el PESA-GSH ha logrado reducir la pobreza de los hogares beneficiados frente a la tendencia contraria experimentada en el sector rural del resto del país durante 2006-2008. Por otro lado, ya que para poder participar en el PESA-GSH se requiere ser beneficiario de Oportunidades, una evaluación de impacto y eficacia de PESA-GSH también es condicional. Por tanto, cabe aclarar que en el presente trabajo no es posible deducir que PESA-GSH tendría efectos similares en aquellos hogares que aún no reciben Oportunidades. Podría ser el caso de los hogares más pobres dentro de los pobres rurales, que por habitar en localidades dispersas que no cuentan con clínica o escuela no han sido cubiertos por Oportunidades. No obstante, la experiencia del PESA-GSH es sumamente valiosa porque agrega beneficios significativos en las áreas productivas a un programa existente. Dado que algunos beneficiarios de Oportunidades no se les otorgó el PESA-GSH, ello significó una ventaja para el presente estudio, ya que permitió medir el impacto del Programa sobre los niveles de pobreza por medio de las técnicas del Propensity Score. Derivado de la presente tesis es posible apuntar que a partir de un programa productivo como el PESA-GSH, se puede generar la capacidad para influir de manera positiva y significativa en el desarrollo del sector rural mexicano.
+64
+
+BIBLIOGRAFÍA
+Angrist Joshua D. y Lavy Victor (1998), “Does teacher training affect pupil learning? Evidence from matched comparisons in Jerusalem public schools”, Working Paper 6781, National Bureau of Economic Research.
+Baca Julio, Vidal Isabel y Chapela Gonzalo (2009), “Desarrollo de políticas para el combate a la pobreza y la inseguridad alimentaria, y en pro de la sustentabilidad de los recursos naturales en el estado de Guerrero” en Ríos Armando, Toledo Carlos Construyendo el desarrollo rural integral y sustentable en guerrero, Vol. I. Nuevas políticas públicas para el campo, Secretaría de Desarrollo Rural y FAO-México.
+Backer Judy L. (2000), “Evaluación del impacto de los proyectos de desarrollo en la pobreza”, Banco Mundial.
+Barajas Gabriela (2002), “Las políticas de atención a la pobreza en México, 1970-2001: de populistas a neoliberales”, Revista Venezolana de Gerencia, Año 7, No. 20, pp. 553-578.
+Barth R. R., Greeson J. K., Guo S., y Green B. (2007), “Outcomes for youth receiving intensive in-home therapy or residential care: A comparison using propensity scores”, American Journal of Orthopsychiatry, Vol. 77, pp. 497-505.
+Becker Sascha e Ichino Andrea (2002), "Estimation of Average Treatment Effects Based on Propensity Scores", The Stata Journal, Vol. 2, No. 4, 2002.
+Blundel Richard y Costa-Dias Monica (2000), “Evaluation Methods for Non-Experimental Data”, Fiscal Studies, Vol. 21, No. 21, pp.427-468.
+Chen Shaohua y Ravallion Martin (2004), “How have the world’s poorest fared since the early 1980s?”, Working paper 3341, World Bank Policy Research.
+Dehejia Rajeev H. y Sadek Wahba (2002), “Propensity Score-Matching Methods for Nonexperimental Causal Studies”, The Review of Economics and Statistics, Vol. 84, No. 1, (Feb., 2002), pp. 151161.
+Earle C. C., Tsai J. S., Gelber R. D., Weinstein M. C., Neumann P. J. y Weeks J. C. (2001), “Effectiviness of chemotherapy for advanced lung cancer in the elderly: Instrumental variable and propensity analysis”, Journal of Clinical Oncology, Vol. 19, pp. 1064-1070.
+Esquivel Gerardo y Huerta-Pineda Alejandra (2007), “Las remesas y la población en México: un enfoque de pareo de puntuación de la propensión”, Integración y Comercio, No. 27, Julio-Diciembre 2007.
+Esquivel Gerardo y Ordaz Juan L. (2008), “¿Es correcto vincular la política social a la informalidad en México? Una prueba simple de las premisas de esta hipótesis”, Serie Estudios y Perspectivas No. 104, Sede Subregional de la CEPAL en México, México, Publicación de las Naciones Unidas, No. de venta: S.08.II.G.96.
+Fajnzylber Pablo, Maloney F. William y Montes-Rojas Gabriel V., (2006), “Releasing Constraints to Growth or Pushing on a String? The Impact of Credit, Training, Business Associations and Taxes on the Performance of Mexican Micro- Firms”, Working Paper No. 3807, World Bank.
+Fisher R. A. (1925), “Statistical methods for research works”, Edinburgh, UK, Oliver & Boyd.
+Foster James, Greer Joel y Thorbecke Erik (1984), “A Class of Decomposable Poverty Measures”, Econometrica, Vol. 52, No. 3 (May, 1984), pp. 761-766.
+65
+
+Foster James y Shorrocks A. F. (1991), “Subgroup consistent poverty indices”, Econometrica, Vol. 59, pp. 687-679.
+Galiani Sebastian, Gertler Paul y Schargrodsky Ernesto (2005), “Water for life: The impact of the privatization of water services on child mortality”, Journal of Political Economy, Vol. 113, pp. 83-120.
+Gertler Paul, Levine David I. y Ames Minnie (2004), “Schooling and parental death”, The Review of Economics and Statistics, Vol. 86, pp. 211-225.
+Gum P. A., Thamilarasan M., Watanabe J., Blackstone E. H. y Lauer, M. S. (2001), “Aspirin use and allcause mortality among patients being evaluated for known or suspected coronary artery disease: A propensity analysis”, Journal of the American Medical Association, Vol. 286, pp. 1187-1194.
+Guo Shenyang y Fraser Mark W. (2010), “Propensity Score Analysis”, Advanced Quantitative Techniques in the Social Sciences Series, Estados Unidos, SAGE.
+Heckman James J., Ichimura Hidehiko y Todd Petra E. (1997), “Matching as an Econometric Evaluation Estimator: Evidence from Evaluating a Job Training Programme”, The Review of Economic Studies, Vol. 64, No. 4, Special Issue: Evaluation of Training and Other Social Programmes, (Oct., 1997), pp. 605-654.
+Heckman James J., Smith Jeffrey, Clements Nancy (1997), “Making the Most Out of Programme Evaluation and Social Experiments: Accounting for Heterogeneity in Programme Impacts”, The Review of Economic Studies, Vol. 64, No. 4, Special Issue: Evaluation of Training and Other Social Programmes, (Oct., 1997), pp. 487-535.
+Heckman James J., LaLonde Robert y Smith Jeffrey A. (1999), “The Economics and Econometrics of Active Labor Market Programs”, en: Ashenfelter, Orley y Card David (eds.) Handbok of Labor Economics, volume III, North-Holland.
+Jyotsna Jalan y Ravallion Martin (2003), “Estimating the benefits of an antipoverty program by propensity score matching”, Journal of Bussiness & Economics Statistics, pp. 20-30.
+Jones A. S., D’Agostino R. B., Gondolf E. W. y Heckert A. (2004), “Assesing the effect of batterer program completion on reassault using propensity scores”, Journal of Interpersonal Violence, Vol. 19, pp. 1002-1020.
+Kakwani, N. (1980), “On a class of poverty measures, Econometrica, Vol. 48, pp. 431-436.
+LaLonde Robert (1986), “Evaluating the econometric evaluations of training programs with experimental data”, American Economic Review, Vol. 76, pp. 604-620.
+Lavy Victor (2002), “Evaluating the effect of teachers’ group performance incentives on pupil achievement”, Journal of Political Economy, Vol. 110, pp. 1286-1317.
+Lechner Michael (2002), “Program Heterogeneity and Propensity Score Matching: An Application to the Evaluation of Active Labor Market Policies”, The Review of Economics and Statistics, Vol. 84, No. 2, (May, 2002), pp. 205-220.
+Lendo Tomislav (2004), “Hacia una política integral de superación de la pobreza: un recuento de los programas focalizados en México”, IX Congreso Internacional del CLAD sobre la Reforma del Estado y de la Administración Pública, Madrid, España, 2-5 Nov. 2004.
+Michalopoulos C., Bloom H. S., y Hill C. J. (2004), “Can propensity-score methods match the findings from a random assignment evaluation of mandatory welfare-to-work programs?”, Review of Economics and Statistics, Vol. 86, pp. 156-179.
+66
+
+Morgan S. L. (2001), “Counterfactuals, causal effect, heterogeneity, and the Catholic school effect on learning”, Sociology of Education, Vol. 74, pp. 341-374.
+Normand S. T., Landrum M. B, Guadagnoli E., Ayanian J.Z., Ryan T. J., Cleary P. D., et. al. (2001), “Validating recommendations for coronary angiography following acute myocardial infarction in the elderly: A matched analysis using propensity scores”, Journal of Clinical Epidemiology, Vol. 54, pp. 387-398.
+Ordaz Juan L. (2007), “México: capital humano e ingresos. Retornos a la educación, 1994-2005”, Serie Estudios y Perspectivas No. 90, Sede Subregional de la CEPAL en México, México, Publicación de las Naciones Unidas, No. de venta: S.07.II.G.143.
+Ravallion Martin y Jyotsna Jalan, (2003), “Estimating the Benefit Incidence of an Antipoverty Program by Propensity Score Matching”, Journal of Business and Economic Statistics, American Statistical Association.
+Rosenbaum P. y D. Rubin (1984), “Reducing bias in observational studies using sub classification on the propensity score”, Journal of the American Statistical Association, Vol. 79, pp. 516-524.
+Rosenbaum P. y D. Rubin (1983), “The central role of the propensity score in observational studies for causal effects”, Biometrika, Vol. 70, pp. 41-55.
+Rubin D. B. (1974), “Estimating causal effects of treatment in randomized and nonrandomized studies,” Journal of Education Psychology, Vol. 66, pp.688-701.
+Shadish W.R., Cook, T. D. y Campbell, D.T. (2002), “Experimental and quasi-experimental designs for generalized causal inference”, Boston: Houghton Mifflin.
+Smith H. L. (1997), “Matching with multiple controls to estimate treatment effects in observational studies”, Sociological Methodology, Vol. 27, pp. 325-353.
+Smith Jeffrey (2004), “Matching Lectures”, Lecture Notes. Todd Petra E. (2006), “Matching Estimators”, Lecture Notes.
+67
+
+Índice de Cuadros
+
+Página
+
+Cuadro 1. Localidades que integran la muestra
+
+29
+
+Cuadro 2. Producción, consumo, venta y rendimientos del maíz de los hogares, de
+
+acuerdo a su participación en el Programa PESA-GSH, 2007-2008
+
+33
+
+Cuadro 3. Porcentaje de hogares según tipo de ganado que poseen, de acuerdo a su participación en el Programa PESA-GSH, 2007-2008
+
+34
+
+Cuadro 4. Promedio de animales por hogar según especie y de acuerdo a su participación en el Programa PESA-GSH, 2007-2008
+
+35
+
+Cuadro 5. Actividades Productivas en los Traspatios de los hogares rurales, según su
+
+participación en el PESA-GSH
+
+36
+
+Cuadro 6. Actividades Productivas en los Traspatios de los hogares rurales, de
+
+acuerdo a su participación en el PESA-GSH
+
+37
+
+Cuadro 7. Proyectos PESA-GSH realizados
+
+38
+
+Cuadro 8. Productos o beneficios de los programas
+
+39
+
+Cuadro 9. Inversiones realizadas por tipo de proyecto
+
+40
+
+Cuadro 10. Definición de variables
+
+42
+
+Cuadro 11. Promedio y errores estándar de las variables que se emplearán para
+
+estimar el Propensity Score
+
+43
+
+Cuadro 12. Modelo logit empleado para el cálculo del Propensty Score
+
+45
+
+Cuadro 13. ATT, Impacto promedio anual por hogar del PESA-GSH sobre distintas
+
+fuentes de ingresos
+
+48
+
+Cuadro 14. ATT, Efecto promedio anual por hogar para las unidades que reciben el
+
+PESA-GSH sobre los ingresos por autoconsumo y ventas agrícolas, ganaderas y de
+
+traspatio
+
+50
+
+Cuadro 15. ATT, Efecto promedio anual por hogar sobre el rendimiento del maíz de
+
+los hogares que recibieron el PESA-GSH
+
+51
+
+Cuadro 16. ATT, Efecto promedio anual por hogar del PESA-GSH en diferentes
+
+medidas de pobreza
+
+54
+
+Cuadro 17. Impacto del PESA-GSH en índices de pobreza empleando escenarios
+
+contrafactuales
+
+56
+
+Cuadro 18. Impacto del PESA-GSH en índices de pobreza empleando escenarios
+
+contrafactuales
+
+58
+
+68
+
+Índice de Gráficas
+
+Página
+
+Gráfica 1. Distribución del Propensity Score
+
+47
+
+Gráfica 2. Impacto del PESA-GSH en la distribución de los ingresos de los hogares
+
+beneficiarios empleando la técnica del Vecino más cercano
+
+59
+
+Gráfica 3. Impacto del PESA-GSH en la distribución de los ingresos de los hogares
+
+beneficiarios empleando la técnica del Radio
+
+60
+
+69
+
+

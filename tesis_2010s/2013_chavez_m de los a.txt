@@ -1,0 +1,1401 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EL IMPACTO DE LAS REMESAS EN LA POBREZA
+DE LOS HOGARES RURALES MEXICANOS
+MARÍA DE LOS ÁNGELES CHÁVEZ ALVARADO
+PROMOCIÓN 2000-2002
+ASESOR:
+JOSÉ JORGE MORA RIVERA
+JUNIO 2013
+
+A la memoria de Fernando, mi hermano.
+
+AGRADECIMIENTOS Antes que a nadie, agradezco a mis padres, María de Jesús y Fernando, por su constante apoyo en todos los aspectos de la vida; sin ellos sería mucho más difícil realizar cualquiera de mis proyectos, incluido éste. De uno u otro modo, también otras personas me animan y me inspiran para a seguir adelante y por tanto han contribuido a la realización de este trabajo de investigación. Por eso, quiero agradecer: A Cristina, mi hermana, simplemente por ser ella. A Gerrit Klüter, por compartir conmigo cada día. A mis amigas Aurora Calderón, Fanny Hasso, Fabiola Rivera, Marlen Martínez, Cristina Godoy, Patricia Alfaro, Miriam Juárez, Pilar Lugo y Rocío Contreras quienes en el tiempo y la distancia siguen de cerca mis pasos. Al Dr. Antonio Yúnez-Naude quien continúa confiando en mí y brindándome su apoyo. Finalmente, a Jorge Mora, por su tiempo y ayuda para concluir este trabajo.
+iii
+
+RESUMEN El objetivo de este trabajo es estudiar el impacto de las remesas nacionales e internacionales en la pobreza del sector rural mexicano. El estudio considera las remesas como un sustituto potencial del ingreso de los hogares, en lugar de una transferencia exógena. La metodología sigue la propuesta por Adams, Cuecuecha y Page (2008): se utiliza un modelo logit de elección múltiple con corrección por selección (Lee, 1983), y a partir de las estimaciones predichas se construye un escenario contrafactual en el que los hogares que recibieron remesas, ya sean nacionales o internacionales, no las reciban. Se calculan los índices de pobreza FGT con base en tres diferentes especificaciones del gasto per cápita por hogar: el gasto observado, el gasto predicho y el gasto estimado en un escenario contrafactual. Después se comparan los resultados obtenidos del gasto predicho versus los de contrafactual. Los datos utilizados provienen de la Encuesta Nacional a Hogares Rurales de México (ENHRUM) 2007. Los resultados señalan que la ausencia de remesas, ya sean éstas nacionales o internacionales, produciría un aumento en el nivel, profundidad y severidad de la pobreza, pero este impacto es mayor para el caso de los hogares que reciben remesas nacionales.
+v
+
+ÍNDICE
+RESUMEN ..................................................................................................................................... v INTRODUCCIÓN .......................................................................................................................... 9
+1. MARCO CONCEPTUAL..................................................................................................... 11 1.1 Migración y remesas........................................................................................................ 11 1.2 El índice de pobreza FGT ................................................................................................ 14
+2. REMESAS Y POBREZA: REVISIÓN DE LA LITERATURA EMPÍRICA...................... 15 3. MODELO ECONOMÉTRICO Y ESCENARIO CONTRAFACTUAL.............................. 18
+3.1 Modelo logit multinomial con corrección por selección (Lee, 1983) ............................. 19 3.2 Identificación del modelo ................................................................................................ 21 3.3 El escenario contrafactual................................................................................................ 22 4. LOS DATOS Y SUS ESTADÍSTICAS DESCRIPTIVAS .................................................. 24 4.1 La Encuesta Nacional a Hogares Rurales de México (ENHRUM)................................. 24 4.2 Estadísticas descriptivas .................................................................................................. 26 5. RESULTADOS ..................................................................................................................... 29 5.1 Estimaciones del modelo logit multinomial (primera etapa)........................................... 29 5.2 Estimaciones del gasto per cápita (segunda etapa).......................................................... 33 5.3 Índice de pobreza FGT: comparación de predicciones versus escenario contrafactual .. 35 6. CONCLUSIONES ................................................................................................................ 38 APÉNDICE................................................................................................................................... 40 REFERENCIAS............................................................................................................................ 43 ÍNDICE DE CUADROS............................................................................................................... 45 ÍNDICE DE GRÁFICAS .............................................................................................................. 46
+7
+
+8
+
+INTRODUCCIÓN
+Las remesas, definidas como las transferencias de dinero o en especie de los migrantes nacionales e internacionales a sus hogares y/o comunidades de origen, representan el impacto positivo directo más importante de la migración en las regiones expulsoras de migrantes. De acuerdo con cifras del Banco Mundial (2012a), el volumen de remesas internacionales recibidas en los países de origen de los migrantes ha estado creciendo desde 1995 y ha ganando también mayor importancia como porcentaje del producto interno bruto (PIB). Véanse gráficas A1 y A2 en el apéndice. En este escenario, México ha estado prácticamente entre los primeros tres países que recibieron el mayor volumen de remesas desde 1996; no obstante, entre 2007 y 2010 México registró una caída en la recepción de remesas internacionales (las cuales provienen principalmente de Estados Unidos) de casi 18% (véase cuadro A1 en el apéndice). Paralelo a la disminución en la percepción de remesas se presentó un aumento en la pobreza del país. Cifras del Banco Mundial (2012b) muestran que los porcentajes de la población que vivía con menos de 1.25 y 2 dólares al día habían estado disminuyendo desde 1998, pero justo de 2006 a 2008 aumentaron. Por su parte, el CONEVAL1 en México publicó recientemente que el porcentaje de individuos que vivía en pobreza multidimensional extrema prácticamente se mantuvo de 2008 a 2010; sin embargo, el porcentaje de individuos que vivía en pobreza multidimensional moderada aumentó casi dos puntos porcentuales en este lapso de tiempo (véase cuadro A2 en el apéndice).2
+A pesar de que los datos presentados muestran una posible correlación entre la pobreza y la recepción de remesas, los investigadores han dado poca atención al análisis del impacto de las remesas internacionales en la pobreza y, casi nula al estudio de los efectos de las remesas nacionales. Más bien, la investigación se ha concentrado en estudiar la relación entre remesas y
+1 Consejo Nacional de Evaluación de la Política de Desarrollo Social. 2 De acuerdo con el CONEVAL (2010) se considera en pobreza multidimensional a la población con ingreso inferior al valor de la línea de bienestar y que padece al menos una de seis carencias sociales: acceso a la alimentación, a servicios de salud, a seguridad social, a servicios básicos en la vivienda, a calidad y espacios de la vivienda y con rezago educativo. En este contexto el CONEVAL define pobreza multidimensional extrema a la población que “dispone de un ingreso tan bajo que, aun si lo dedicase por completo a la adquisición de alimentos, no podría adquirir los nutrientes necesarios para tener una vida sana” (es decir, la población que posee un ingreso por debajo de la línea de bienestar mínimo) y, además, presenta al menos tres de las seis carencias sociales. “A la población pobre multidimensional no incluida dentro de la población pobre multidimensional extrema se le denominará población en situación de pobreza multidimensional moderada.” (CONEVAL, 2010). Esta población presenta al menos dos de las seis carencias sociales y un ingreso por debajo de la línea de bienestar.
+9
+
+desigualdad en las regiones receptoras de dichas transferencias, por cierto, sin llegar a un consenso en los resultados (Lipton, 1980; Stark, Taylor y Yitzhaki, 1986 y 1988; Taylor, 1992; Barham y Boucher, 1998). Las razones de este hueco en la investigación incluyen desde carecer de datos apropiados hasta asumir que las remesas no impactan a la pobreza porque los hogares pobres no tienen la capacidad de cubrir los costos de la migración y por lo tanto no pueden acceder a ellas. Dada la importancia de las remesas en México y sus posibles efectos en la pobreza, así como aprovechando la disponibilidad de datos sobre remesas nacionales e internacionales contenidos en la Encuesta Nacional a Hogares Rurales de México (ENHRUM), esta tesis tiene como objetivo analizar el impacto de las remesas internacionales y nacionales en la pobreza del sector rural mexicano.
+Las remesas pueden analizarse desde dos puntos de vista: 1) como una transferencia exógena, o bien 2) como un sustituto potencial del ingreso (Barham y Boucher, 1998). Como transferencia exógena, el análisis de las remesas nos señala cómo afectan éstas, en total o marginalmente, la pobreza en los hogares receptores. Como un sustituto potencial del ingreso, el análisis de las remesas requiere de un escenario hipotético o contrafactual que compare cómo sería la pobreza de los hogares con y sin recepción de remesas (Barham y Boucher, 1998). Este último enfoque toma en cuenta “el proceso endógeno mediante el cual los individuos y hogares se autoseleccionan para incorporarse o no al proceso migratorio y de envío o recepción de remesas” (Taylor, 1999). En este trabajo se considera que el estudio de las remesas como sustituto potencial del ingreso de los hogares receptores es el apropiado para conocer de manera más adecuada los efectos que éstas tienen en la pobreza.
+Esta investigación responde fundamentalmente a la siguiente pregunta: ¿cuál sería el impacto de las remesas nacionales e internacionales en la pobreza de los hogares del sector rural mexicano ante un escenario contrafactual de no recepción de remesas? Para responder a esta pregunta se construye un escenario contrafactual en el que se imputa el gasto de los hogares que recibieron remesas, ya sean nacionales o internacionales, a partir de las características (observables) de los hogares que no recibieron remesas. Es decir, se trata a los hogares que recibieron remesas cómo si no las hubieran recibido. La tesis sigue la metodología propuesta por Adams, Cuecuecha y Page (2008) y utiliza datos novedosos del sector rural mexicano recabados durante la segunda ronda de la ENHRUM correspondientes a 2007.
+10
+
+La contribución de esta tesis es introducir datos del sector rural mexicano a una metodología que, primero, corrige por el sesgo de selección inherente a la recepción de remesas; y segundo, construye un escenario contrafactual para evaluar el impacto neto de las remesas en la pobreza. De esta forma se obtienen resultados más confiables pues se considera a la recepción de remesas como un sustituto potencial del ingreso en lugar de sólo tratarse como una transferencia exógena. Hasta ahora, la literatura empírica ha analizado el impacto de las remesas en la pobreza en México con el enfoque de estudiarlas como una transferencia exógena (Taylor et al., 2005) o a partir de un ejercicio cuasi-experimental (Esquivel y Huerta, 2007).
+El resultado principal señala que tanto las remesas nacionales como las internacionales ayudan a aliviar la pobreza alimentaria de los hogares rurales mexicanos, es decir, la de los hogares que no están en posibilidad de adquirir una canasta básica alimentaria, pero no recibir remesas nacionales tendría mayor efecto en este tipo de pobreza que no recibir las remesas de Estados Unidos.
+La tesis está organizada como sigue. En el capítulo 1 se presenta el marco conceptual del tema, el cual está constituido por consideraciones teóricas sobre migración y remesas y los detalles del índice de pobreza empleado en este estudio. En el capítulo 2 se hace una revisión de la literatura empírica sobre remesas y pobreza con énfasis en el caso mexicano. En el capítulo 3 se detallan el modelo econométrico utilizado y la construcción del escenario contrafactual. En el capítulo 4 se describen las variables y datos utilizados y se presentan las estadísticas descriptivas de los mismos. En el capítulo 5 se presentan los resultados y, al final, en el 6, las conclusiones.
+1. MARCO CONCEPTUAL
+1.1 Migración y remesas El modelo de desarrollo económico de Lewis (1954) es tal vez el primer modelo económico en el que la migración, sin ser el foco de investigación, juega un papel central. El modelo de Lewis explica los mecanismos mediante los cuales una oferta ilimitada de trabajo en sectores tradicionales de países en desarrollo puede ser absorbida a través de la acumulación de capital y ahorros por un sector moderno en expansión. En la interpretación de este modelo el sector tradicional se ha asociado al sector rural o agropecuario y el sector moderno al sector capitalista,
+11
+
+industrial o urbano de los países en desarrollo. El supuesto clave del modelo de Lewis es que la fuerza de trabajo está disponible al sector industrial en una cantidad ilimitada a salarios reales fijos, medida en bienes agrícolas (Lewis, 1954). Esto implica fuerza de trabajo excedente o redundante en áreas rurales, de tal manera que el producto marginal del trabajo rural es cero, de esta forma la fuerza de trabajo puede salir (emigrar) de las áreas rurales y ser empleada en el sector urbano sin sacrificar ninguna pérdida en la producción agrícola. Es decir, el costo de oportunidad o “precio sombra” del trabajo rural para ocupar trabajos urbanos es cero; o bien, la oferta de trabajo es infinitamente elástica al salario del sector urbano (Taylor y Martin, 2001).
+Posterior al modelo macroeconómico de Lewis (1954), la investigación económica de la emigración rural toma fuerza y se desarrollan modelos explícitos sobre migración desde una perspectiva microeconómica. Estos modelos se pueden clasificar en dos tipos caracterizados básicamente por la unidad de decisión.
+El primer tipo de modelo asume que el individuo es quien toma la decisión de emigrar con el objetivo de maximizar su utilidad en respuesta a diferenciales de ingreso esperados entre sectores o países; el ingreso esperado se define como la probabilidad de encontrar un empleo en el lugar de destino multiplicada por el diferencial de ingreso, neto de costos (Todaro, 1969; Harris y Todaro, 1970).
+El segundo tipo de modelo, propuesto por la llamada Nueva Economía de la Migración Laboral (NELM por sus siglas en inglés), considera que la unidad de análisis y decisión es el hogar (Stark y Bloom, 1985). La NELM señala que no son los individuos de manera aislada quienes toman decisiones sobre migración, sino unidades más grandes de personas relacionadas, es decir, los hogares o familias. De acuerdo con la NELM, los miembros de los hogares actúan colectivamente no sólo para maximizar el ingreso, sino también para minimizar los riesgos y relajar restricciones asociadas a la falta o falla de ciertos mercados, por ejemplo, mercados de crédito, de seguros, de capital e incluso mercados de trabajo (Taylor y Martin, 2001). Es común que los hogares de áreas rurales enfrenten estas restricciones y una estrategia para relajarlas es enviar a uno o más de sus miembros a trabajar ya sea en la ciudad o en el extranjero, donde los salarios y las condiciones de empleo están negativa o débilmente correlacionados con los de áreas locales o de origen de los migrantes. Esta estrategia supone un contrato implícito entre el migrante y el hogar, en el cual los costos y los rendimientos de la migración se comparten: al
+12
+
+inicio el hogar apoya tanto económica como psicológicamente al migrante y cuando éste se establece en el mercado de trabajo dota al hogar con un seguro y liquidez mediante el envío de remesas. En caso de algún evento negativo inesperado y/o las actividades económicas no lograran generar suficiente ingreso, el hogar puede contar con las remesas de los migrantes como apoyo o fuente de ingreso adicional poco correlacionada con las fuentes de ingreso locales. (Stark y Bloom, 1985; y Stark, 1991).
+Tanto en el modelo de desarrollo de Lewis (1954) como en el modelo de migración a nivel de individuo (Todaro, 1969; Harris y Todaro, 1970) la única vía mediante la cual la migración puede impactar la economía rural es a través de los mercados de trabajo, ya que la migración representa una pérdida de recursos humanos para las áreas de origen de los migrantes. De aquí que, estos modelos descartan cualquier relación entre el migrante y su lugar de procedencia al asumir que los hogares rurales cesan de apoyar a los migrantes una vez que ellos se van y viceversa (Taylor y Martin, 2001). Para la NELM, por el contrario, la migración no sólo produce efectos por la pérdida de fuerza de trabajo y de capital, además representa una fuente potencial importante de ingreso y ahorro para los hogares de origen a través de las remesas (Taylor y Martin, 2001); la NELM, de hecho, considera el envío de remesas como un vínculo que el migrante mantiene con su hogar de origen. Al reconocer a las remesas como parte de los efectos del proceso migratorio, la NELM permite explicar la gama de implicaciones que la migración tiene en el sector de origen de los migrantes, no sólo el impacto en el mercado laboral (Lucas y Stark, 1985).
+Taylor y Martin (2001) señalan que las remesas impactan en el sector rural de tres formas: 1) aumentan directamente el ingreso de los hogares receptores, 2) pueden incrementar también indirectamente dicho ingreso al posibilitar a los hogares la superación de las restricciones de liquidez y los riesgos en la producción local; y 3) crean efectos de equilibrio general dentro y fuera de la economía rural.
+El incremento directo e indirecto del ingreso de los hogares debido a las remesas sugiere que el impacto de éstas en la pobreza es obviamente el de reducirla. Lo anterior asume que las remesas actúan como una transferencia exógena en el ingreso del hogar. Sin embargo, si se toman en cuenta la pérdida de la fuerza de trabajo y de capital humano así como la disminución en la producción local que la migración implica, es más apropiado considerar a las remesas como
+13
+
+un sustituto potencial de los ingresos del hogar (Barham y Boucher, 1998), es decir, considerar que las remesas son determinadas de forma endógena. En el presente trabajo se considera la recepción de remesas, sean éstas internacionales o nacionales, como una variable endógena y se formula la hipótesis de que, bajo este supuesto, el efecto neto de las remesas es contribuir a disminuir la pobreza de los hogares rurales. Para probar esta hipótesis se construye un escenario contrafactual sin remesas, en el que a partir de la estimación del gasto de los hogares que reciben remesas de Estados Unidos, hogares que reciben remesas nacionales y hogares que no reciben remesas se imputa un gasto a los hogares que recibieron remesas como si éstos no las hubieran recibido. En otras palabras, un escenario que responda a la pregunta de cómo sería el ingreso y/o gasto de los hogares que recibieron remesas si éstos no las hubieran recibido. Después se calcula el índice de pobreza FGT para cada tipo de hogar y de gasto y se comparan los resultados del gasto estimado versus los del gasto del escenario contrafactual.
+1.2 El índice de pobreza FGT
+Existen diversos métodos para medir la pobreza. En México, por ejemplo, se ha publicado recientemente la nueva medida oficial de pobreza multidimensional basada en la vulnerabilidad por carencias sociales y el nivel de ingreso de los individuos (CONEVAL, 2011). No obstante, las ventajas y desventajas de dicho método, en este trabajo el índice de pobreza que se utiliza es el llamado FGT propuesto por Foster, Greer y Thorbecke (1984), por dos razones fundamentales: primero la información disponible en la ENHRUM no contiene las variables necesarias para la estimación de la pobreza multidimensional y, segundo, el índice FGT es el más usado en las mediciones internacionales de pobreza, así como en otros estudios sobre los efectos de las remesas en la pobreza (Adams, 2004; Adams, Cuecuecha y Page, 2008; Adams y Page, 2005; Taylor et al., 2005).
+El índice FGT es el siguiente:
+
+donde
+
+es un vector de gasto de los hogares en orden creciente;
+
+es la
+
+línea de pobreza predeterminada;
+
+es la diferencia entre la línea de pobreza y el gasto
+
+14
+
+(ingreso) del i-ésimo hogar; q es el número de hogares que tienen un gasto no mayor que z, es decir, el número de hogares que se consideran como pobres; y n es el número total de hogares. El parámetro se puede interpretar como una medida de aversión a la pobreza, es decir, cuanto mayor sea mayor será la ponderación que se da a los más pobres entre los pobres. De esta forma, mide la incidencia de la pobreza, es decir, la proporción de hogares que viven debajo de la línea de pobreza; mide la brecha o profundidad de la pobreza, o bien, qué tan lejos está el hogar pobre promedio de la línea de la pobreza; y, mide la severidad de la pobreza, es decir, su sensibilidad a cambios en la distribución del ingreso entre los pobres (Adams y Page, 2005).
+
+El índice FGT cumple con los axiomas de monotonicidad y de transferencia, los dos axiomas principales que todo índice de pobreza debe cumplir (Sen, 1976), y con el axioma de transferencia sensible (Kakwani, 1977; citado en Foster, Greer y Thorbecke, 1984). A continuación se enuncian estos axiomas.
+
+i) Axioma de monotonicidad: manteniendo constante el resto de las variables, una
+
+reducción en el ingreso de una persona que está por debajo de la línea de pobreza
+
+debe incrementar la medida de pobreza.
+
+ii) Axioma de transferencia: manteniendo constante el resto de las variables, una
+
+transferencia pura del ingreso de una persona por debajo de la línea de pobreza a
+
+cualquier otra más rica debe incrementar la línea de pobreza.
+
+iii) Axioma de transferencia de la sensibilidad (Kakwani, 1977): si una transferencia
+
+del ingreso toma lugar de un hogar pobre con ingreso a un hogar pobre con
+
+ingreso
+
+entonces la magnitud en el incremento de la pobreza debe ser
+
+más pequeño cuanto más grande es .
+
+2. REMESAS Y POBREZA: REVISIÓN DE LA LITERATURA EMPÍRICA
+El estudio del impacto de las remesas en el bienestar de los hogares de origen de los migrantes se ha concentrado hasta ahora básicamente en la desigualdad del ingreso (Barham y Boucher, 1998; Stark, Taylor and Yitzhaki, 1986 y 1988, Taylor, 1992). El efecto que las remesas tienen en la pobreza en las áreas expulsoras de migrantes ha recibido poca atención por parte de los
+15
+
+investigadores. Tres razones podrían explicar este patrón. Primero, asumir que las remesas enviadas por los migrantes a sus hogares de origen contribuyen directamente al incremento del ingreso y por tanto, automáticamente, a disminuir la pobreza. Segundo, asumir que los hogares pobres al enfrentar restricciones de liquidez no están en posibilidades de cubrir los costos y riesgos que implica la migración, en especial la internacional; por tanto, estos hogares no se benefician de forma directa de la migración. En tercer lugar, la falta de datos apropiados para medir de manera adecuada la pobreza, así como las remesas y la migración, obstaculiza el estudio de la relación entre estos factores característicos de países en vías de desarrollo (Adams, 2004). Algunos autores, sin embargo, han contribuido ya con resultados importantes.
+En el caso mexicano, Esquivel y Huerta (2007) estudian el impacto de las remesas internacionales en la pobreza distinguiendo por áreas rurales y urbanas. Los autores usan datos oficiales de la Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) 2002 y el método de puntuación de la propensión (“propensity score matching”) para parear hogares que reciben remesas con hogares que tienen características similares, pero que no reciben remesas. Ellos calculan la probabilidad de que un hogar receptor de remesas esté en cierto nivel de pobreza: pobreza extrema, pobreza o pobreza moderada. Su principal resultado señala que recibir remesas internacionales es un mecanismo importante que ayuda a los hogares rurales a salir de la pobreza, ya sea extrema o moderada, mientras que para los hogares urbanos, recibir remesas internacionales sólo es efectivo para ayudarlos a salir de la pobreza extrema. Taylor et al. (2005) estudian el impacto de las remesas internas e internacionales en la pobreza de los hogares rurales mexicanos distinguiendo por regiones con diferentes niveles de prevalencia de la migración (es decir, la proporción de hogares con migrantes). Para su estudio Taylor et al. (2005) usan los datos de la Encuesta Nacional a Hogares Rurales de México (ENHRUM) de 2002 para calcular el ingreso de los hogares y calcular el índice de pobreza de Foster-Greer-Thorbecke (FGT). Los autores calculan el efecto en la pobreza de un diez por ciento de incremento en las remesas en cada región. Sus principales resultados señalan que las remesas internacionales reducen la pobreza rural en mayor medida que las remesas internas; cuánto más grande es la prevalencia de la migración en una región, más grande es el efecto de mejora en la pobreza rural. LópezCórdova (2006) define hogares en “pobreza extrema” a los hogares que perciben un ingreso menor que un salario mínimo, y en “pobreza” a aquellos hogares cuyo ingreso es menor a dos salarios mínimos. Este autor encuentra que las remesas internacionales no parecen afectar la
+16
+
+incidencia de la pobreza extrema, en una forma estadísticamente significativa, lo que puede reflejar que la migración al ser una empresa costosa no es accesible para los hogares más pobres. Sin embargo, para los hogares pobres, el efecto de las remesas en la pobreza es negativo y significativo.
+En el plano internacional, Adams y Page (2005) examina el impacto de las remesas en la pobreza en una muestra de 71 países en desarrollo. Después de corregir por la posible endogeneidad entre recepción de remesas y pobreza, este autor encuentra que un incremento del 10% en las remesas internacionales oficiales llevarán a una disminución del 3.5% de la proporción de personas que viven en pobreza. En el caso de países en particular, Adams (2004) estudia el impacto de las remesas internas e internacionales en la pobreza en Guatemala. El autor construye un escenario contrafactual de exclusión de remesas para predecir el ingreso per cápita de los hogares; utiliza el índice de pobreza FGT y como resultado principal obtiene que las remesas, tanto internas como internacionales, reducen la pobreza en niveles, profundidad y severidad. Por último, Adams (1991) encuentra que en el sector rural de Egipto, el número de hogares pobres disminuye en 9.8% cuando el ingreso del hogar incluye remesas internacionales.
+Los estudios recién mencionados usan diferentes métodos para calcular el impacto de las remesas en la pobreza y esencialmente, con excepción de López-Córdova (2006) en el caso de la pobreza extrema, encuentran resultados en el mismo sentido: recibir remesas internacionales es útil para disminuir la pobreza de los hogares. Estos resultados, no obstante ilustrativos, no son contundentes ya que, entre otros, el sesgo por selección no se tomó en cuenta, aún cuando esta característica de los migrantes y sus hogares es ampliamente reconocida. Lo anterior nos puede conducir a obtener estimaciones sesgadas sobre el efecto neto de las remesas en la pobreza. Además, a excepción de Adams (2004), las remesas se consideraron como una transferencia exógena, lo cual no permite conocer su efecto neto sobre la pobreza: por un lado la producción de los hogares disminuye al tener una pérdida de capital humano debido a la migración de miembros del hogar, por otro, las remesas pueden compensar por la pérdida de dicho capital al ofrecer un alivio a las restricciones de liquidez de los hogares.
+Para corregir las deficiencias mencionadas arriba, Adams, Cuecuecha y Page (2008) examinan el impacto de las remesas nacionales e internacionales en la pobreza en Ghana. Los autores desarrollan un escenario contrafactual en el que estiman el gasto de los hogares que
+17
+
+reciben remesas, ya sean internas o internacionales, y lo comparan con un escenario no observado en el cual estos hogares no reciben remesas. En la estimación Adams, Cuecuecha y Page corrigen el sesgo de selección y utilizan el índice FGT para medir la pobreza. Sus resultados señalan que tanto las remesas nacionales como las internacionales reducen el nivel, la profundidad y la severidad de la pobreza en Ghana. Sin embargo, las remesas internacionales tienen un mayor impacto en la reducción de la pobreza que las remesas nacionales.
+La presente investigación sigue la metodología utilizada por Adams, Cuecuecha y Page (2008) ya que ésta produce resultados sin sesgo de selección y considera a las remesas como un sustituto potencial de los ingresos del hogar. En el siguiente apartado se describe con detalle dicha metodología.
+3. MODELO ECONOMÉTRICO Y ESCENARIO CONTRAFACTUAL
+La metodología que se sigue para estimar el impacto de las remesas tanto nacionales como internacionales en la pobreza del sector rural mexicano se apega a la propuesta por Adams, Cuecuecha y Page (2008). En esta metodología se utiliza el gasto, en lugar del ingreso, como variable dependiente y como base para identificar el nivel de pobreza de los hogares.3 Éstos últimos son clasificados en tres tipos: hogares que reciben remesas de Estados Unidos o internacionales, hogares que reciben remesas nacionales y hogares que no reciben ningún tipo de remesas. La metodología es como sigue. Primero, se estima el gasto de los hogares mediante tres ecuaciones diferentes, es decir, una para cada tipo de hogar. En esta etapa se utiliza el modelo de Lee (1983), un modelo logit multinomial con corrección por selección, con el cual se obtienen estimaciones insesgadas y consistentes. En el siguiente apartado se explica con detalle este método. Segundo, se construye un escenario contrafactual o no observado. Es decir, a partir del gasto estimado o predicho para cada tipo de hogar se estima cuál sería el gasto de los hogares que recibieron remesas, pero como si éstos no las hubieran recibido. Los detalles de la construcción del gasto contrafactual se explican en el apartado 3.3. Tercero, se calculan los
+3 No existe una razón teórica para usar una u otra variable; no obstante, Skoufias (2005) señala que es preferible medir los estándares de vida basándose en el gasto o el consumo en lugar del ingreso, porque las estimaciones del consumo corriente proporcionan con mayor probabilidad una valoración más confiable del ingreso permanente del hogar que estimaciones de ingreso corriente, el cual está sujeto a altas y bajas. El autor asevera que el gasto mide lo que, de hecho, la gente consume y así provee una mejor evaluación de un estándar de vida del hogar.
+18
+
+índices de pobreza FGT para cada tipo de hogar y con ambos tipos de gasto: el predicho y el contrafactual. Y cuarto, se comparan los resultados usando el gasto predicho y el gasto contrafactual para cada tipo de hogar.
+
+3.1 Modelo logit multinomial con corrección por selección (Lee, 1983) El modelo logit multinomial con corrección por selección desarrollado por Lee (1983) es una generalización del modelo de Heckman (1979) de dos etapas para corregir el sesgo por selección.
+
+Siguiendo a Lee (1983), en la primera etapa de estimación se usa un modelo logit multinomial para estimar los parámetros de la probabilidad de cada hogar asociada a encontrarse en uno de los siguientes tres posibles estados o categorías s: 1) recibir remesas de Estados Unidos o internacionales; 2) recibir remesas nacionales; o 3) no recibir ningún tipo de remesas. En la segunda etapa, una vez que el hogar se ha ubicado en la categoría s, se corrige por selección y se estima su óptimo nivel de gasto . Por lo tanto, se utilizan tres ecuaciones de regresión; una para cada estado s.
+
+En otras palabras, se observará si y sólo si el hogar se encuentra en el estado s, y se elige el estado s de acuerdo con una variable no observable o latente determinada por una ecuación de selección relacionada a su vez con una función indicadora del estado elegido por el hogar. Formalmente el modelo es como sigue:
+
+Sean
+
+(1)
+
+las tres ecuaciones de interés y
+
+(2)
+
+las tres ecuaciones de selección. Donde y son vectores de variables exógenas;
+
+y
+
+; incluye todas las variables de
+
+más las variables instrumentales que afectan la elección del estado s pero no el nivel de gasto
+
+. Con respecto a los errores y se hacen los siguientes supuestos: todas las distribuciones
+
+19
+
+de tienen distribuciones marginales continuas y las distribuciones conjuntas de también quedan especificadas.
+Se observa el ingreso si y sólo si se escoge el estado s y se escoge el estado s si y sólo si
+
+Sea una variable policótoma con valores 1, 2 o 3. Se denota
+
+categoría s. De manera equivalente,
+
+si y sólo si
+
+si se elige la
+
+entonces .
+Si se define
+
+entonces
+
+si y sólo si
+
+Para cada par
+
+las distribuciones marginales de y son
+
+y
+
+,
+
+respectivamente. Al aplicar la transformación
+
+donde es la
+
+función acumulativa normal estándar, se tiene que
+
+se distribuye como una normal
+
+estándar. Asumiendo que el modelo logit multinomial es condicional
+
+entonces las son funciones de utilidad estocásticas y
+
+tal que
+
+,
+
+y asumiendo que tiene una distribución de valor extremo tipo I, Domencich y McFadden (1975; citado en Lee, 1983) demuestran que tiene la siguiente función de distribución:
+
+20
+
+A partir de los supuestos anteriores Lee (1983) demuestra que la ecuación (1) se reescribe de la siguiente forma:
+(3)
+
+Donde
+
+, es la función de densidad de probabilidad de la normal estándar y es
+
+el coeficiente de correlación entre y .
+
+3.2 Identificación del modelo
+Para identificar el modelo multinomial de dos etapas, en específico la ecuación de interés (3), es necesario contar con al menos una variable que esté correlacionada con la probabilidad de recibir remesas, pero no con el nivel de gasto de los hogares. Además, la variable o variables elegidas deben ser exógenas a la recepción de remesas. En este trabajo se usan tres variables instrumentales con el fin de identificar el modelo. La primera, la variable dicotómica llamada “Bracero” que asigna el valor de 1 si algún miembro del hogar, o bien, el padre o la madre del jefe o de su cónyuge participaron en el programa Bracero4; 0 en otro caso. Los datos sobre la participación en el programa Bracero se recabaron durante la primera ronda de la ENHRUM, en 2002. El programa bracero se llevó a cabo de 1942 a 1964 y participar en él pudo ser el comienzo de una red y experiencia migratoria para el hogar así como de la transmisión directa de información sobre el proceso de migración hacia Estados Unidos, por tanto dicha condición afecta la posibilidad de recibir remesas en 2007, pero se asume que ya no tiene influencia sobre las decisiones de gasto del hogar después de haber transcurrido más de cuatro décadas. Siguiendo a Taylor, Rozelle y de Brauw (2003) se construyeron otras dos variables instrumentales adicionales que consisten en el promedio por hogar de remesas de Estados Unidos recibidas en la localidad en 2007 y el promedio por hogar de remesas nacionales recibidas en la localidad en 2007. Estas variables miden la norma de envío de remesas que impera en la
+4 Para una descripción detallada del programa Bracero véase Tuirán y Ávila (2010).
+21
+
+localidad, de esta forma la variable tiene efecto sobre la probabilidad de recibir remesas en el hogar pero se infiere que no influye directamente en el nivel de gasto del mismo.
+Para probar la validez de haber utilizado variables instrumentales en la ecuación de decisión, se realizaron pruebas de endogeneidad Durbin-Wu-Hausman en una versión lineal del modelo. Esta versión implica utilizar la recepción de remesas nacionales e internacionales en términos absolutos en lugar de binarios5. Los resultados obtenidos de esta prueba señalan que es apropiado utilizar el método de variables instrumentales en lugar de mínimos cuadrados ordinarios. Además se realizaron pruebas de sobre-identificación cuyo resultado señala que los instrumentos en conjunto son válidos. Véase cuadro 1.
+
+Cuadro 1. Pruebas de endogeneidad (Durbin-Wu-Hausman) y sobre-identificación
+
+Prueba
+Durbin-Wu-Hausman ( (1))
+
+Hogares que recibieron remesas de
+Estados Unidos
+3.44689 (0.0634)
+
+Hogares que recibieron remesas nacionales
+3.68196 (0.0550)
+
+De sobreidentificación Hansen’s (2)*
+
+0.027535 (0.9863)
+
+1.17676 (0.5552)
+
+Notas: Entre paréntesis el p-value. * El número de restricciones que sobre identifican es 3-1= 2. La hipótesis nula de sobreidentificación es que todos los instrumentos son válidos.
+
+3.3 El escenario contrafactual La idea básica del escenario contrafactual se apoya en el principio de la estimación del efecto promedio de tratamiento (o ATE por sus siglas en inglés “average treatment effect”) el cual a su vez, es la base de la literatura sobre evaluación de programas. El principio del ATE señala que a cada unidad de análisis se le puede asociar un resultado con y sin tratamiento; entonces, el efecto promedio de tratamiento, ATE, será el valor esperado de la diferencia entre el valor del resultado con tratamiento y el valor del resultado sin tratamiento. En el presente estudio el tratamiento que
+5 La cantidad de remesas recibidas está disponible en la ENHRUM a nivel de hogar.
+22
+
+recibe cada hogar o unidad de análisis es el de recibir remesas nacionales o internacionales. No recibir tratamiento significa no recibir remesas de ningún tipo. Por tanto, el efecto promedio de recibir remesas para un hogar será el valor esperado de la diferencia en el ingreso cuando se reciben remesas, ya sean nacionales o internacionales, y cuando no se recibe ningún tipo de remesas.
+Para la construcción del escenario contrafactual se procede como sigue. Dado el gasto observado, es decir, el nivel de gasto reportado por los hogares en la encuesta, se estima el gasto predicho para los hogares de tipo j condicionado a que estos hogares “eligieron” el tipo j. Esto es
+
+(4)
+Después se obtiene el gasto contrafactual definido como el valor esperado del gasto para los hogares de tipo s condicional a que ellos eligieron tipo j. Por ejemplo, dado que un hogar pertenece al tipo de hogares que recibieron remesas internacionales cuál sería el nivel de gasto asociado a que no las hubiese recibido. Esto es
+
+(5)
+
+Donde
+
+; es la función de densidad de probabilidad de la normal estándar y
+
+es el coeficiente de correlación entre and . Es importante aclarar que no se observa, así
+
+que se asume
+
+. La ecuación (5) se estima en dos pasos: primero, se estima la ecuación
+
+(4) para todos los tipos de hogares; y segundo, se substrae de la ecuación (4)
+
+(el
+
+término que corrige por selección a los hogares según su tipo) y posteriormente se suma el término
+
+De este modo se obtiene el segundo término de la ecuación (5). Finalmente, se comparan los resultados de las ecuaciones (4) y (5), lo cual da el efecto de las remesas en los hogares de tratamiento:
+23
+
+Efecto de las remesas en hogares de tipo j =
+
+(6)
+
+Este tipo de escenarios contrafactuales se han empleado de manera regular en la modelación del proceso migratorio (Adams, 2004; Barham y Boucher, 1998; y, Adams, Cuecuecha y Page, 2008), y es equivalente a los utilizados en la literatura de evaluación de impacto (Becker e Ichino, 2002).
+
+Es importante enfatizar que esta medida del efecto de las remesas en los hogares de tratamiento, es decir, los que reciben remesas ya sean éstas nacionales o internacionales, no está contaminada por las diferencias atribuidas a características observables y no observables. Esto pasaría sólo si comparásemos directamente los valores del gasto observado para los hogares que reciben remesas con los valores del gasto observado de los hogares que no reciben remesas.
+
+4. LOS DATOS Y SUS ESTADÍSTICAS DESCRIPTIVAS
+4.1 La Encuesta Nacional a Hogares Rurales de México (ENHRUM)
+Esta investigación utiliza la información de la segunda ronda de la Encuesta Nacional a Hogares Rurales de México (ENHRUM). Esta encuesta se llevó a cabo en 2008 y provee información correspondiente a 2007 sobre los hogares seleccionados y sus miembros. La muestra cubre 80 localidades de 14 estados del país distribuidas en las cinco regiones económicas de México: Centro, Centro-Occidente, Sur-Sureste, Noroeste y Noreste. Los datos incluyen 11,445 individuos de 1,543 hogares (en promedio se entrevistaron a 19 hogares por localidad).
+El Instituto Nacional de Estadística y Geografía (INEGI) realizó el diseño muestral de la ENHRUM con el objetivo de proveer información estadísticamente aceptable y representativa del sector rural de México6. Debido al diseño muestral de la ENHRUM (estratificado y con selección aleatoria sistemática de localidades y hogares) fue posible incluir en la muestra localidades con diferentes niveles de migración tanto interna como internacional. De esta forma, la ENHRUM proporciona información con gran diversidad y variación de las características de la población rural mexicana.
+6 INEGI define como “sector rural” a aquél con localidades de menos de 2 500 habitantes. Por razones de costo y factibilidad, localidades con menos de 500 habitantes no fueron incluidas en la encuesta; sin embargo, la muestra final es representativa de más del 80% de la población rural de México.
+24
+
+La ENHRUM contiene información detallada sobre los hogares y sus miembros. Esta información incluye datos sobre características sociodemográficas, un amplio módulo sobre migración y remesas, activos, costos e ingresos de todas las actividades económicas del hogar, así como los gastos de consumo del mismo. En cuanto a las remesas, la ENHRUM reporta las cantidades recibidas por el hogar de sus migrantes nacionales, así como de los que se encuentran en Estados Unidos. Las remesas incluyen dinero y el valor de los bienes enviados al hogar.
+Los datos sociodemográficos y de migración corresponden a los siguientes individuos que conforman el hogar: 1) el(la) jefe(a) del hogar y su cónyuge; 2) todos los hijos del(a) jefe(a) y su cónyuge; y, 3) otros individuos que vivieron en el hogar durante el 2007 (nietos, padres, etcétera). Para todos los individuos se recabó información sobre el número de meses que vivieron en el hogar durante 2007, y para quienes vivieron menos de 12 meses en el hogar se indagó sobre el lugar donde éstos vivieron en 2007 “la mayor parte del tiempo”, es decir, en la misma localidad, en otras partes de México o en Estados Unidos. En este grupo de personas se encuentra el subconjunto de quienes trabajaron en Estados Unidos o en otras partes de México. Para los elementos de este subconjunto de la ENHRUM se formularon preguntas sobre las remesas enviadas, es decir, sobre el dinero así como el valor de los bienes que éstos trajeron o enviaron al hogar durante 2007.
+Como se señaló en apartados anteriores los hogares se clasificaron en tres tipos: hogares receptores de remesas internacionales, hogares receptores de remesas nacionales y hogares que no recibieron remesas ni nacionales ni internacionales (aún cuando el hogar contara con algún migrante, ya sea nacional o internacional). Los hogares que reportaron haber recibido tanto remesas nacionales como internacionales (49 en total) fueron asignados a un solo tipo, para evitar así una doble contabilización del hogar. El criterio fue el siguiente: si la proporción de remesas provenientes de Estados Unidos rebasaba el 50% de las remesas totales recibidas entonces el hogar fue clasificado como receptor de remesas internacionales y el monto de las remesas nacionales fue anulado. Éste fue el caso de 35 hogares. Cuando las remesas nacionales representaban más del 50% de las remesas totales recibidas por el hogar se procedió de forma análoga; 14 hogares se encontraban en esta situación.
+25
+
+La variable de gasto del hogar es la suma de los gastos en educación, vivienda y servicios, vestido y calzado, transportación, bienes duraderos y gasto en consumo (“el mandado”).
+4.2 Estadísticas descriptivas La variable dependiente en la ecuación de selección es una variable multi-opcional que señala el estatus de los hogares asignando el valor de 1 si el hogar recibió remesas de Estados Unidos, 2 si el hogar recibió remesas nacionales y 3 si el hogar no recibió ningún tipo de remesas. La variable dependiente utilizada en la ecuación de interés es el gasto per cápita mensual promedio por hogar.
+Las variables independientes son a nivel de hogar y comprenden variables de capital humano, de la composición del hogar y redes migratorias. Las variables de capital humano incluyen el número de adultos en el hogar con educación baja (de 0 a 9 años de escolaridad terminada); el número de adultos en el hogar con escolaridad alta (diez años y más de escolaridad concluida) y la edad, así como la escolaridad del jefe del hogar. Las variables que caracterizan la composición del hogar son el tamaño del mismo, el número de hombres de 15 años y más y el número de niños menores de 6 años. Las redes migratorias se refieren a número de miembros del hogar que trabajaron en Estados Unidos en 1997 y al número de miembros del hogar que trabajaron fuera de la localidad en otras partes de México durante 1997.
+En el cuadro 2 se presentan las estadísticas descriptivas de las variables construidas a partir de datos de la ENHRUM 2007. El número total de hogares que se consideran en el estudio es de 1,532, de los cuales el 68.1% no recibieron remesas nacionales ni de Estados Unidos, 18.5% recibieron remesas internacionales o de Estados Unidos y 13.5% recibieron remesas nacionales. Los hogares que recibieron remesas de Estados Unidos no sólo representaron un porcentaje mayor que los hogares que recibieron remesas nacionales sino que también recibieron una mayor cantidad de remesas promedio mensual por hogar que los receptores de remesas nacionales (3,433 pesos vs. 1,838 pesos, respectivamente). Del mismo modo el gasto per cápita mensual es mayor para los hogares que reciben remesas de Estados Unidos (1,469 pesos) que para los hogares que reciben remesas nacionales (1,078 pesos), el gasto de éstos últimos también es menor que el gasto de los hogares que no reciben ningún tipo de remesas (1,228 pesos).
+26
+
+Con respecto a las variables de capital humano en el cuadro 2 se muestra que el número promedio de adultos por hogar con educación baja es ligeramente mayor para los hogares que reciben remesas nacionales (3 adultos en promedio) que para los otros dos tipos de hogares (2.7 para los hogares que no reciben remesas y 2.8 para los hogares que reciben remesas de Estados Unidos). La diferencia en esta variable entre los hogares que reciben remesas nacionales y los que no reciben ningún tipo de remesas es significativa. El número de adultos por hogar con diez años de educación o más es mayor para los hogares que no reciben ningún tipo de remesas, éste es de 0.62 versus 0.45 para los hogares que reciben remesas de Estados Unidos y de 0.56 para los hogares que reciben remesas nacionales. En el caso de esta variable sólo la diferencia entre los hogares que no reciben ningún tipo de remesas y los que reciben remesas de Estados Unidos es significativa. Esta estadística apunta a que los hogares que no reciben remesas no han colocado migrantes ni nacionales ni internacionales porque, posiblemente, su costo de oportunidad es muy alto y de esta forma han conservado e incrementado el capital humano del hogar.
+En promedio, los jefes de hogares que no reciben remesas son más jóvenes (52.1 años en promedio) que los jefes de hogares que reciben remesas de Estados Unidos (57.9 años) o nacionales (56.5 años); ambas diferencias son estadísticamente significativas. La escolaridad de los jefes de hogares que no reciben remesas (5 años en promedio) es mayor que la escolaridad de los jefes de hogares que reciben remesas internacionales (4 años) o nacionales (3.8 años). Estas diferencias son estadísticamente significativas.
+Los hogares que no reciben ningún tipo de remesas son de mayor tamaño que los hogares que reciben remesas de Estados Unidos (4.7 miembros versus 4.4) y ligeramente más pequeños que los hogares que reciben remesas nacionales los cuales cuentan con un promedio de 5 miembros. La significancia estadística sólo se presenta en el primer caso.
+En lo que toca a las redes migratorias, los hogares que reciben remesas de Estados Unidos naturalmente tienen redes más amplias en ese país que los otros dos tipos de hogares. Del mismo modo los hogares que reciben remesas nacionales cuentan con redes más grandes fuera de la localidad en otras partes de México.
+27
+
+Cuadro 2. Estadísticas descriptivas Variables
+
+Hogares que
+reciben remesas de EU
+
+Hogares que
+reciben remesas nacionales
+
+Hogares que no reciben remesas
+
+Prueba t (remesas de EU vs. no
+remesas)
+
+Número de hogares Porcentaje del total (1532
+hogares) Remesas recibidas en promedio
+mensual (pesos)
+
+283 18.47 3,433
+
+206 13.45 1,838
+
+1043 n.a. 68.08 n.a.
+0 n.a.
+
+Variable dependiente Gasto percápita mensual
+promedio
+
+1,469 1,078 1,228 -2.9859*
+
+Capital humano de hogar Número de adultos por hogar con
+educación baja (0-9 años esc.) Número de adultos por hogar con
+educación alta (10 años y más)
+
+2.8
+
+3.0
+
+2.7 -1.1762
+
+0.45
+
+0.56
+
+0.62 2.7628*
+
+Edad del jefe del hogar
+
+57.9
+
+56.5
+
+52.1 -5.6428*
+
+Escolaridad del jefe del hogar
+
+4.0
+
+3.8
+
+5.0 3.9847*
+
+Composición del hogar
+
+Tamaño del hogar Número de hombres de 15 años y
+más Número de niños menores de 6
+años
+
+4.4
+
+5.0
+
+4.7 2.0062*
+
+1.6
+
+1.7
+
+1.7 1.6333
+
+0.37
+
+0.35
+
+0.42 1.0213
+
+Redes migratorias Número de miembros del hogar
+que trabajaron en EU en 1997 Número de miembros del hogar
+que trabajaron fuera de la localidad en otras partes de México en 1997
+
+0.9151 0.1262 0.1371 -13.7385* 0.3887 1.0146 0.2426 -2.9066*
+
+Instrumentos
+
+Hogar con antecedentes de
+
+participación en el programa
+
+Bracero
+
+0.25
+
+0.08
+
+0.13 -5.1347*
+
+Remesas internacionales o de
+
+Estados Unidos recibidas en
+
+promedio por hogar en la
+
+localidad
+
+12,951.35 6,182.69 6,466.48 -8.9976
+
+Remesas internas o nacionales
+
+recibidas en promedio por
+
+hogar en la localidad
+
+2,783.65 5,801.40 2,593.63 -0.5180
+
+Fuente: Encuesta Nacional a Hogares Rurales de México (ENHRUM). Nota: n.a. significa “no aplica”.
+
+Prueba t (remesas nacionales
+vs. no remesas)
+n.a. n.a. n.a.
+1.7040
+-2.4659* 0.7473
+-3.7598* 3.9517* -1.5046 0.0759 1.2791
+0.2399
+-11.9146*
+1.9162
+0.3809
+-6.91*
+
+28
+
+En cuanto a las variables instrumentales, los hogares que reciben remesas de Estados Unidos claramente tienen un mayor antecedente de participación en el programa Bracero que los otros dos tipos de hogares. La norma local de recepción de remesas internacionales o el promedio de remesas internacionales recibidas por hogar en la localidad es mayor para los hogares que reciben remesas de Estados Unidos y del mismo modo la norma local de recepción de remesas nacionales es mayor para los hogares que reciben remesas nacionales.
+5. RESULTADOS
+5.1 Estimaciones del modelo logit multinomial (primera etapa) El cuadro 3 presenta los resultados (incluyendo efectos marginales) de la primera etapa de la estimación, es decir, de la ecuación de selección estimada a partir de un modelo logit multinomial con corrección por selección. Como ya se mencionó, la variable dependiente en este modelo se refiere al estatus de los hogares: 1) si el hogar recibió remesas de Estados Unidos, 2) si el hogar recibió remesas nacionales y 3) si el hogar no recibió ningún tipo de remesas. La categoría base es la de hogares que no recibieron ningún tipo de remesas.
+El cuadro 3 revela que cuanto más edad tiene el jefe es mayor la probabilidad de que el hogar reciba remesas tanto de Estados Unidos como nacionales. En particular, un año más de edad del jefe del hogar incrementa la probabilidad del hogar de recibir remesas de Estados Unidos en 0.012 e incrementa la probabilidad de recibir remesas nacionales en 0.016. Mientras que el cuadrado de la edad del jefe presenta coeficientes negativos y significativos. Mayor edad del jefe del hogar contribuye a mayor experiencia laboral y propicia mayor productividad. Este hecho puede incentivar a los migrantes a enviar remesas ya que la administración o utilización de éstas será más eficiente. Sin embargo, a cierta edad del jefe la probabilidad de recibir remesas disminuye, ya sea porque a edades avanzadas el hogar rural merma su productividad, o bien, porque después de ciertos años el contrato implícito entre el migrante y el hogar de origen caduca (Lucas y Stark, 1985). El tamaño promedio del hogar resulta significativo sólo para los hogares que reciben remesas nacionales; cuanto más grande es el hogar la probabilidad de recibir remesas nacionales aumenta. El efecto marginal de esta variable señala que un miembro más en el hogar incrementa la probabilidad de recibir remesas en 0.0195. No obstante, un niño más
+29
+
+disminuye la probabilidad de recepción de remesas nacionales en 0.0341. Este resultado sugiere que el costo de oportunidad de migrar para enviar remesas nacionales versus permanecer en la localidad es alto.
+Las redes migratorias en Estados Unidos incrementan la probabilidad de recibir remesas de este destino, asimismo las redes nacionales aumentan la probabilidad de recibir remesas de otras partes de México. No obstante, las redes internacionales tiene mayor efecto en la recepción de remesas: una unidad más en las redes internacionales, es decir, un miembro más que haya trabajado en Estados Unidos en 1997 incrementa la probabilidad de recibir remesas en 2007 en 0.1; y una unidad más en las redes nacionales incrementa la probabilidad de recibir remesas en 0.07.
+En cuanto a las variables instrumentales, la participación en el programa bracero no tiene un efecto significativo en la recepción de remesas internacionales, ni nacionales. Las normas locales de recepción de remesas internacionales y nacionales reportan un impacto positivo y significativo, en la recepción de remesas en el hogar; cuanto más fuertes son estás normas, la probabilidad de recibir remesas es mayor.
+30
+
+Cuadro 3. Modelo logit multinomial de la probabilidad de recibir remesas para los hogares
+
+rurales de México (primera etapa de estimación).
+
+Hogares que reciben
+
+Hogares que reciben
+
+remesas internacionales
+
+remesas internas
+
+o de Estados Unidos
+
+o nacionales
+
+Efectos
+
+Efectos
+
+Coeficiente marginales Coeficiente marginales
+
+Capital humano del hogar
+
+Numero de adultos con educación
+
+baja (0-9 años esc.)
+
+0.1399
+
+0.0213 -0.0889
+
+-0.0113
+
+(0.234) (0.0162) (0.474) (0.0119)
+
+Número de adultos con educación alta
+
+(10 años y más)
+
+-0.0539 -0.00482 -0.1474
+
+-0.0134
+
+(0.69) (0.0187) (0.289) (0.0134)
+
+Edad del jefe del hogar
+
+0.1078*** 0.0117** 0.1826*** 0.0159***
+
+(0.003) (0.00503) (0.000) (0.00421)
+
+Edad del jefe del hogar al cuadrado -0.0009*** -9.21e-05** -0.0016*** -0.00014***
+
+(0.005) (4.23E-05) (0.000) (3.60E-05)
+
+Escolaridad del jefe del hogar
+
+0.0015
+
+0.00111 -0.0479 -0.00473*
+
+(0.952) (0.00355) (0.102) (0.00283)
+
+Composición del hogar
+
+Tamaño promedio del hogar
+
+-0.0515
+
+-0.0107 0.1892*** 0.0195***
+
+(0.492) (0.0103) (0.009) (0.00695)
+
+Número de hombres de 15 años y más
+
+-0.136 -1.56E-02 -0.1883
+
+-0.0159
+
+(0.244) (0.0161) (0.139) (0.0123)
+
+Número de niños menores de 6 años
+
+0.1101
+
+0.0215 -0.3269** -0.0341**
+
+(0.417) (0.0187) (0.035) (0.0148)
+
+Redes migratorias
+
+Número de miembros del hogar que
+
+trabajaron en EU en 1997
+
+0.7014*** 0.101*** -0.1383
+
+-0.0266
+
+(0.000) (0.0134) (0.446)
+
+(0.017)
+
+Número de miembros del hogar que
+
+trabajaron fuera de la localidad en
+
+otras partes de México en 1997
+
+0.1829*
+
+0.0126 0.7038*** 0.0656***
+
+(0.055)
+
+(0.000) (0.000) (0.0082)
+
+31
+
+Continúa cuadro 3.
+
+Hogares que reciben
+
+Hogares que reciben
+
+remesas internacionales
+
+remesas internas
+
+o de Estados Unidos
+
+o nacionales
+
+Efectos
+
+Efectos
+
+Coeficiente marginales Coeficiente marginales
+
+Instrumentos
+
+Hogar con antecedentes en el
+
+programa Bracero
+
+0.2703
+
+0.0446
+
+-0.2132
+
+-0.0245
+
+(0.174) (0.0313)
+
+(0.465)
+
+(0.0241)
+
+Remesas internacionales o de
+
+Estados Unidos recibidas en
+
+promedio por hogar en la
+
+localidad
+
+0.0000343*** 4.81e-06*** 3.04E-07 -6.08E-07
+
+(0.000) (8.55E-07)
+
+(0.975) (9.13E-07)
+
+Remesas nacionales o internas
+
+recibidas en promedio por hogar
+
+en la localidad
+
+0.0000171 1.46E-06 0.0001*** 4.65e-06***
+
+(0.207) (1.86E-06)
+
+(0.000) (1.03E-06)
+
+Constante
+
+-5.1086***
+
+-7.0286***
+
+(0.000)
+
+(0.000)
+
+Log likekihood
+
+-1107.701
+
+Likelihood ratio Pseudo R2
+
+369.17 0.1428
+
+Número de observaciones
+
+1,532
+
+1,532
+
+Notas: 1) El cuadro reporta los coeficientes y efectos marginales de las variables con respecto a la probabilidad de un hogar de recibir remesas internas e internacionales. 2) Valores p entre paréntesis.
+*Estadísticamente significativo al 10%. **Estadísticamente significativo al 5% . ***Estadísticamente significativo al 1%.
+
+32
+
+5.2 Estimaciones del gasto per cápita (segunda etapa) En el cuadro 4 se presentan los resultados corregidos por selección de la segunda etapa de estimación, es decir, de la ecuación de interés. El cuadro 4 revela pocas variables significativas, éstas son las siguientes. Un adulto más en el hogar con escolaridad alta produce un incremento en el gasto de 208.9 pesos para los hogares que reciben remesas de Estados Unidos y de 83.3 pesos para los hogares que no reciben remesas de ningún tipo. El aumento de un año en la escolaridad del jefe implica un impacto positivo marginal mayor en el gasto mensual per cápita de los hogares que reciben remesas nacionales (88.1 pesos) que en el gasto de los hogares que no reciben ningún tipo de remesas (43.4 pesos). Este resultado se debe a que individuos más capacitados y/o mejor educados tienden a ser más productivos y por tanto a incrementar su ingreso y el de sus hogares. Además, las remesas, de acuerdo con la NELM, pueden ser utilizadas para relajar las restricciones de liquidez que limitan la producción del hogar. De aquí que hogares que reciben remesas (nacionales) y que poseen mayor capital humano incrementen marginalmente y en mayor medida su ingreso con respecto a hogares con igual nivel de capital humano pero que no reciben remesas. No obstante, la escolaridad del jefe del hogar no es una variable significativa para el gasto de los hogares que reciben remesas de Estados Unidos (Taylor y Yunez, 2000).
+En cuanto al tamaño del hogar, la relación con el gasto es negativa. Un miembro más en un hogar que recibe remesas de Estados Unidos produce la disminución en el gasto per cápita de 233.7 pesos y en un hogar que no recibe remesas la disminución es de 172.6 pesos. También un adulto hombre más en el hogar implica una disminución en el gasto de 221.8 pesos. Por su parte, un miembro más que trabajó en Estados Unidos en 1997 implica un aumento en el gasto de 232. 5 pesos. Por último, el control de selección “Lambda” no reporta significancia estadística en ningún caso, por lo que se puede inferir que no hay problema de selección, es decir, que el problema de sesgo de selección de nuestro modelo se ha corregido.
+33
+
+Cuadro 4. Estimaciones per cápita del gasto de los hogares rurales de México corregidas por
+
+selección, 2007 (segunda etapa de estimación).
+
+Reciben
+
+remesas de Reciben remesas No reciben
+
+Estados Unidos nacionales
+
+remesas
+
+Variables
+
+(1)
+
+(2)
+
+(3)
+
+Capital humano del hogar Número de adultos con escolaridad
+
+baja (0-9 años esc.)
+
+86.9675
+
+-63.4028
+
+50.7357
+
+(0.377)
+
+(0.609)
+
+(0.255)
+
+Número de adultos con escolaridad
+
+alta (10 años y más)
+
+208.9054**
+
+-43.2528
+
+83.3173*
+
+(0.045)
+
+(0.771)
+
+(0.066)
+
+Edad del jefe del hogar
+
+35.5942
+
+76.4196
+
+-4.0719
+
+(0.454)
+
+(0.413)
+
+(0.829)
+
+Cuadrado de la edad del jefe del hogar
+Escolaridad del jefe del hogar
+Composición del hogar Tamaño del hogar
+
+-0.2921 (0.465) 38.7405 (0.416)
+-233.7271*** (0.000)
+
+-0.4517 (0.547) 88.0754** (0.05)
+
+0.0966 (0.55) 43.4364*** (0.001)
+
+-34.0902 -172.5579***
+
+(0.721)
+
+(0.000)
+
+Número de hombres de 15 años y más
+Número de niños menores de 6 años
+Redes migratiorias Número de miembros del hogar que
+trabajaron en Estados Unidos en 1997.
+Número de miembros del hogar que trabajaron fuera de la localidad en otras partes de México en 1997.
+
+-221.8010** (0.014) 19.9923 (0.831)
+184.8135 (0.116)
+-67.3322 (0.404)
+
+-132.7374 (0.313)
+-180.5809 (0.28)
+
+-22.7405 (0.706) 9.4595 (0.852)
+
+-162.1995 (0.68)
+
+232.4600** (0.04)
+
+29.1871 (0.896)
+
+108.6 (0.149)
+
+Lambda (Control de selección)
+Constante
+Notas: valores p entre paréntesis. *Estadísticamente significativo al 10%.
+**Estadísticamente significativo al 5%. ***Estadísticamente significativo al 1%. .
+
+-317.1927 (0.303)
+793.6687 (0.575)
+
+-388.1144 (0.59)
+-1,927.22 (0.611)
+
+379.4743 (0.186)
+1,716.597*** (0.000)
+
+34
+
+5.3 Índice de pobreza FGT: comparación de predicciones versus escenario contrafactual
+El cuadro 5 reporta el efecto de las remesas en la pobreza para los tres tipos de hogares rurales de México: hogares que reciben remesas de Estados Unidos (I), hogares que reciben remesas nacionales (II) y hogares que no reciben remesas de de ningún tipo (III). La línea de pobreza alimentaria utilizada es de 622.84 pesos per cápita mensuales.7 Comparando los tres tipos de hogares mencionados y tomando en cuenta el gasto observado y el porcentaje de hogares pobres (columnas 1, 4 y 7; FGT=0), el cuadro 5 muestra que los hogares que recibieron remesas nacionales reportan el gasto per cápita promedio más bajo (1,078.1 pesos) y el porcentaje de hogares pobres más alto, es decir, 43.2%; mientras que los hogares que recibieron remesas de Estados Unidos reportaron el gasto per cápita promedio más alto (1,469.81 pesos) y el porcentaje de hogares en pobreza más bajo, 28.3 por ciento. Los hogares que no recibieron ningún tipo de remesas reportaron un gasto per cápita mensual de 1,228 pesos y un porcentaje de hogares por debajo de la línea de pobreza de 34.2%.
+El porcentaje de hogares pobres predicho para los hogares que recibieron remesas de Estados Unidos (columna 2) es de 9.2% y si dichos hogares no hubieran recibido este tipo de remesas el porcentaje de hogares en pobreza aumentaría a 11.3% (columna 3). Además, en ausencia de remesas internacionales tanto la profundidad como la severidad de la pobreza aumentarían (véase cuadro 5). En otras palabras, recibir remesas de Estados Unidos tiene un efecto negativo en la pobreza.
+Por su parte, para los hogares que recibieron remesas nacionales el porcentaje de hogares pobres predicho es de 17.5% (columna 5) y si estos hogares no hubieran recibido remesas este porcentaje aumentaría a 34% (véase columna 6). Asimismo, la profundidad y la severidad de la pobreza aumentarían en ausencia de remesas nacionales. Es de notar que el aumento del porcentaje de hogares pobres, la profundidad y severidad de la pobreza es mayor en ausencia de remesas nacionales que de internacionales. Este resultado contrasta con el hallado por Taylor et al. (2005) quienes para el caso del sector rural mexicano encuentran que las remesas internacionales tienen mayor impacto en la reducción de la pobreza que las remesas nacionales.
+7 Esta línea corresponde a la línea de pobreza alimentaria rural de 2006 (CONEVAL, 2009) expresada a precios de 2007, año al que corresponde la información de la base de datos utilizada para este estudio.
+35
+
+Como se resaltó arriba, en la revisión de la literatura, estos autores consideraron las remesas como una transferencia exógena, de ahí los diferentes resultados.
+36
+
+Cuadro 5. Efecto de las remesas en la pobreza de los hogares rurales de México en 2007.
+
+Índice de pobreza FGT
+
+Hogares que reciben remesas de
+
+Estados Unidos
+
+(I)
+
+Contra-
+
+Observado Predicho factual
+
+(1)
+
+(2)
+
+(3)
+
+Hogares que reciben remesas
+
+nacionales
+
+(II)
+
+Contra-
+
+Observado Predicho factual
+
+(4)
+
+(5)
+
+(6)
+
+Hogares que no reciben remesas (III)
+
+Observado Predicho
+
+(7)
+
+(8)
+
+Comparando (2) vs. (3)
+
+Comparando (5) vs. (6)
+
+Porcentaje de pobres (FGT=0)
+
+28.27
+
+9.19 11.31
+
+43.2 17.48
+
+33.98
+
+34.228
+
+7.38
+
+-2.12
+
+-16.5
+
+Profundidad de la
+
+pobreza
+
+(FGT = 1)
+
+0.10076 0.07107 0.09346 0.17184 0.08517 0.200069 0.13029 0.04418 -0.02239 -0.114899
+
+Severidad de la
+
+pobreza
+
+(FGT= 2)
+
+0.05422 0.09290 0.12248 0.09316 0.09263 0.18656 0.06960 0.05759 -0.02958 -0.09393
+
+Gasto per cápita
+
+mensual
+
+promedio por
+
+hogar (pesos)
+
+1,469.81 1,469.81 1,467.92 1,078.10 1,078.10 880.3746 1,227.64 1,227.64
+
+1.89 197.73
+
+Número de
+
+hogares
+
+283
+
+206
+
+1,043
+
+Nota: Las columnas 1, 4 y 7 muestran los índices de pobreza FGT y el gasto per cápita por hogar observados de los hogares de la muestra; las columnas 2, 5 y 8, los índices de
+
+pobreza FGT y gasto predichos, es decir, usando la ecuación de los hogares de tipo j dado que eligieron ser hogares de tipo j (ecuación 4). Y las columnas 3 y 6 muestran los
+
+índices de pobreza FGT y gasto per cápita por hogar después de aplicar la ecuación (5).
+
+37
+
+6. CONCLUSIONES
+El objetivo de este trabajo es estudiar el impacto de las remesas nacionales e internacionales en la pobreza del sector rural mexicano. Para este fin, se sigue la metodología propuesta por Adams, Cuecuecha y Page (2008) quienes consideran a las remesas como un sustituto potencial del ingreso de los hogares, en lugar de una transferencia exógena. La metodología utiliza un modelo logit de elección múltiple con corrección por selección (Lee, 1983). Las opciones del modelo para los hogares son tres: 1) recibir remesas internacionales o de Estados Unidos; 2) recibir remesas nacionales; y, 3) no recibir ningún tipo de remesas. A partir de las estimaciones predichas se construyó un escenario contrafactual en el que los hogares que recibieron remesas, ya sean nacionales o internacionales, no las reciban. Los resultados señalan que la ausencia de remesas, ya sean éstas nacionales o internacionales, produciría un aumento en el nivel, profundidad y severidad de la pobreza, siendo el impacto mayor para el caso de los hogares que reciben remesas nacionales. En específico, si los hogares que recibieron remesas de Estados Unidos no las hubieran recibido, el porcentaje de hogares pobres habría aumentado sólo dos puntos porcentuales, de 9.2% a 11.3%, mientras que en el caso de los hogares que recibieron remesas nacionales, si éstos no las hubieran recibido su nivel de pobreza aumentaría casi el doble, de 17.5% a 34%.
+Lo anterior indica que los efectos atribuidos a las remesas nacionales sobre la reducción de la pobreza son considerablemente mayores a los asociados a las remesas de carácter internacional. En términos de recomendaciones de política este resultado sugiere que para aliviar la pobreza alimentaria del sector rural mexicano los esfuerzos deberían concentrarse en fomentar mecanismos internos de desarrollo; por ejemplo, sería recomendable incentivar mercados laborales al interior del país (locales o regionales).
+El impacto de las remesas en la pobreza ha sido poco estudiado y el caso de México no es la excepción. Además, la poca literatura existente se ha concentrado en el análisis de las remesas internacionales dejando de lado las remesas nacionales. Los resultados de esta investigación contribuyen a llenar estos huecos y abren una agenda de investigación futura. Es bien sabido que el sector rural mexicano es heterogéneo. El sur de México se caracteriza por poseer un mayor flujo de migrantes nacionales mientras que el centro-occidente del país se distingue por el gran
+38
+
+flujo de migrantes hacia Estados Unidos. De esta forma es posible que el impacto de las remesas nacionales y/o internacionales sea diferente según la región dónde se localicen los hogares. Es deseable, por tanto, dirigir la investigación de la relación entre remesas y pobreza hacia estudios por región económica de los hogares; un análisis de este tipo permitiría diseñar políticas precisas, eficientes y mejor focalizadas para mitigar los niveles de pobreza que aún persisten en el México rural.
+39
+
+Billones de dólares
+
+APÉNDICE
+Gráfica A1. Remesas recibidas mundialmente en los países de origen de los migrantes, 1995-2010
+500 450 400 350 300 250 200 150 100
+50 0
+Año
+Gráfica A2. Remesas como porcentaje del PIB a nivel mundial, 1995-2010
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0
+Año
+40
+
+Porcentaj e
+
+Cuadro A1. Países que ocupan los primeros cuatro lugares en recepción de remesas internacionales (billones de dólares), 1995-2010
+
+Primer lugar
+
+Segundo lugar
+
+Remesas
+
+Remesas
+
+internacionales
+
+internacionales
+
+Año País
+
+recibidas
+
+País
+
+recibidas
+
+1995 India
+
+6.22 Filipinas
+
+5.36
+
+1996 India
+
+8.77 México
+
+4.95
+
+1997 Francia
+
+10.02 India
+
+9.48
+
+1998 Francia
+
+10.02 India
+
+9.48
+
+1999 India
+
+11.12 Francia
+
+9.31
+
+2000 India
+
+12.88 Francia
+
+8.61
+
+2001 India
+
+14.27 México
+
+10.15
+
+2002 India
+
+15.74 México
+
+11.03
+
+2003 India
+
+21.00 México
+
+16.65
+
+2004 México
+
+19.86 China
+
+19.58
+
+2005 China
+
+23.48 México
+
+22.74
+
+2006 India
+
+28.33 China
+
+27.44
+
+2007 China
+
+38.59 India
+
+37.22
+
+2008 India
+
+49.98 China
+
+48.41
+
+2009 India
+
+49.47 China
+
+48.85
+
+2010 India
+
+54.03 China
+
+53.04
+
+Fuente: Banco Mundial (2012a).
+
+Tercer lugar
+
+Cuarto lugar
+
+Remesas
+
+Remesas
+
+internacionales
+
+internacionales
+
+País
+
+recibidas
+
+País
+
+recibidas
+
+Bélgica
+
+4.94 Francia
+
+4.64
+
+Bélgica
+
+4.95 Filipinas
+
+4.88
+
+México
+
+6.50 Corea, Rep.
+
+5.60
+
+México
+
+6.50 Corea, Rep.
+
+5.60
+
+Filipinas
+
+6.72 México
+
+6.65
+
+México
+
+7.52 Filipinas
+
+6.96
+
+France
+
+9.19 Filipinas
+
+8.77
+
+Francia
+
+10.36 China
+
+10.29
+
+China
+
+14.54 Francia
+
+11.31
+
+India
+
+18.75 Francia
+
+12.28
+
+India
+
+22.13 Filipinas
+
+13.57
+
+México
+
+26.54 Filipinas
+
+15.25
+
+México
+
+26.87 Filipinas
+
+16.30
+
+México
+
+26.04 Filipinas
+
+18.64
+
+México
+
+22.01 Filipinas
+
+19.77
+
+México
+
+22.05 Filipinas
+
+21.42
+
+41
+
+Cuadro A2. Pobreza en México 1995-2010
+
+Porcentaje de
+
+individuos
+
+pobres por
+
+debajo de
+
+Año
+
+$1.25*
+
+Porcentaje de individuos pobres por
+debajo de $2*
+
+Pobreza multidimensional
+extrema
+(Porcentaje de individuos**)
+
+1996
+
+7.86
+
+20.14
+
+n.d.
+
+1998
+
+8.62
+
+20.09
+
+n.d.
+
+2000
+
+5.53
+
+15.11
+
+n.d.
+
+2002
+
+3.90
+
+13.47
+
+n.d.
+
+2004
+
+1.60
+
+7.60
+
+n.d.
+
+2006
+
+0.68
+
+4.94
+
+n.d.
+
+2008
+
+1.15
+
+5.19
+
+10.6
+
+2010
+
+n.d.
+
+n.d
+
+10.4
+
+Nota: n.d. significa “no disponible”.
+
+Fuentes: *Banco Mundial (2012b). **CONEVAL (2011).
+
+Pobreza multidimensional
+moderada
+(Porcentaje de individuos**)
+n.d. n.d. n.d. n.d. n.d. n.d. 33.9 35.8
+
+42
+
+REFERENCIAS
+
+Adams, Richard. H. Jr. (2004). “Remittances and Poverty in Guatemala”, Policy Research Working Paper
+
+3418, Banco Mundial.
+
+Adams, Richard. H. Jr. (1991). “The Effects of International Remittances on Poverty, Inequality and
+
+Development in Rural Egipt”, en Research Report, No. 86, IFPRI.
+
+Adams, Richard. H. Jr., A. Cuecuecha y J. Page (2008). “The impact of Remittances on Poverty and
+
+Inequality in Ghana”, Policy Research Working Paper 4732, Banco Mundial.
+
+Adams, Richard. H. Jr. y J. Page (2005). “Do International Migration and Remittances Reduce Poverty in
+
+Developing Countries?”, World Development 33(10), pp. 1645–1669.
+
+Banco Mundial (2012a). World Bank Serch. Remittances. “Workers' remittances and compensation of
+
+employees,
+
+received
+
+(current
+
+US$)”
+
+en
+
+:
+
+http://search.worldbank.org/data?qterm=remittances&language=EN&format= (consultado el 13
+
+/11/2012).
+
+Banco Mundial (2012b). World Bank Serch. Poverty. “Poverty headcount ratio at $1.25 a day (PPP) (%
+
+of population)” y “Poverty headcount ratio at $2 a day (PPP) (% of population)” en:
+
+http://search.worldbank.org/data?qterm=poverty&language=EN&format=. (Consultado el
+
+13/11/2012).
+
+Barham, B. y S. Boucher (1998). “Migration, Remittances, and Inequality: Estimating the Net Effects of
+
+Migration on Income Distribution”, Journal of Development Economics, vol. 55: 307-331.
+
+Becker, S. y A. Ichino (2002). “Estimation of Average Treatment Effects Based on Propensity Scores”,
+
+The Stata Journal, vol. 2, núm. 4.
+
+Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL, 2011). “Pobreza en
+
+México y en las Entidades Federativas, 2008-2010”, disponible en
+
+http://web.coneval.gob.mx/Informes/Interactivo/Medicion_pobreza_2010.pdf (Consultado 15-
+
+nov.-2012).
+
+Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL, 2010). “Metodología
+
+para la medición multidimensional de la pobreza en México”, disponible en
+
+http://www.coneval.gob.mx/Informes/Coordinacion/INFORMES_Y_PUBLICACIONES_PDF/M
+
+etodologia_Multidimensional_web.pdf (consultado 15-nov-2012).
+
+Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL, 2009). “Evolución de la
+
+pobreza
+
+en
+
+México”,
+
+disponible
+
+en
+
+http://web.coneval.gob.mx/rw/resource/coneval/med_pobreza/pobreza_ingresos/presentacion_evo
+
+lucion_ingresos.pdf. (Consultado 15-marzo-2012).
+
+Domencich, T. A. and D. McFadden (1975). Urban Travel Demand, Amsterdam: North-Holland Pub. Co.
+
+Esquivel, Gerardo y A. Huerta Pineda (2007). “Las remesas y la pobreza en México: un enfoque de pareo
+
+de puntuación de la propensión”, Integración y comercio, núm. 27, pp. 47-74.
+
+Foster, James, J. Greer y E. Thorbecke (1984). “A Class of Decomposable Poverty Measures”,
+
+Econometrica, 52(3):761-766.
+
+Harris, John R. y Todaro, M. P. (1970). “Migration, Unemployment and Development: A Two-Sector
+
+Analysis”, The American Economic Review, 60(1): 126-142.
+
+Heckman, James J. (1979). “Sample Selection Bias as a Specification Error”, Econometrica, 47(1): 153-
+
+162.
+
+Kakwani, N. C. (1977). “Measurement of Poverty and Negative Income Tax”, Australian Economic
+
+Papers, núm. 16 (19): 423-434.
+
+Lee, L. (1983). “Generalized Econometric Models with Selectivity”, Econometrica, 51(2): 507-512.
+
+Lewis, W. Arthur (1954). “Economic Development with Unlimited Supplies of Labor”, The Manchester
+
+School of Economics and Social Studies, 22 (2): 139-191.
+
+43
+
+Lipton, M. (1980). “Migration from Rural Areas of Poor Countries: The Impact on Rural Productivity and Income Distribution”, World Development, 8(1): 1-24.
+López-Córdoba, E., (2006). “Globalization, Migration and Development: The Role of Mexican Migrant Remittances”, Document de Trabajo núm. 20, Serie INTAL-ITD. Buenos Aires: BID-INTAL.
+Lucas, Robert E. B. and O. Stark (1985). Motivations to Remit: Evidence from Botswana, Journal of Political Economy, 93: 902-28. (Reprinted in Stark, 1991).
+Sen, A. (1976). “Poverty: An Ordinal Approach to Measurement”, Econometrica, 44(2): 219-231. Skoufias, Emmanuel (2005). “PROGRESA and Its Impact on the Welfare of Rural Households in
+Mexico”, Research Report 39, International Food Policy Research Institute, Washington, D.C. Stark, Oded (1991). The Migration of Labor, Cambridge, U.K.: Basil Blackwell. Stark, Oded y D. Bloom (1985). “The New Economics of Labor Migration”, The American Economic
+Review, 75(2): 173-178. (Reprinted in Stark, 1991.) Stark, Oded, J. E. Taylor y S. Yitzhaki (1988). “Migration, Remittances in Inequality: A Sensitivity
+Analysis Using the Extended Gini Index”, Journal of Development Economics, 28:309-22. (Reprinted in Stark, 1991). Stark, Oded, J. E. Taylor y S. Yitzhaki (1986). “Remittances and Inequality”, The Economic Journal, núm. 96: 722-740. Taylor, J. Edward (1999). “The New Economics of Labor Migration and the Role of Remittances in the Migration Process”, International migration, 37(1): 63-88. Taylor, J. Edward (1992). “Remittances and Inequality Reconsidered: Direct, Indirect and Intertemporal Effects”, Journal Policy Modeling, 14(2): 187-280. Taylor, J. Edward y P. Martin (1999). “Human Capital: Migration and Rural Population Change”, en Rausser G. y Gardner B. (ed.), Handbook of Agricultural Economics, Elsevier Science Publishers, New York. Taylor, J. Edward, J. Mora, R. Adams Jr., y A. Lopez-Feldman (2005). “Remittances, Inequality and Poverty: Evidence from Rural Mexico”, Documento de Trabajo No. 05-003, Gianinni Foundation of Agricultural Economics, UC-Davis. Taylor, J. Edward, S. Rozelle y A. de Brauw (2003). “Migration and Incomes in Source Communities: A New Economics of Migration Perspective from China”, Economic Development and Cultural Change, 52(1): 75-101. Taylor, J. Edaward y A. Yúnez-Naude (2000). “The Returns from Schooling in a Diversified Rural Economy”, American Journal of Agricultural Economics, 82: 287-297. Todaro, Michael P. (1969). “A Model of Labor Migration and Urban Unemployment in Less Developed Countries”. American Economic Review, 59 (1): 138-148. Tuirán, Rodolfo y J. L. Ávila (2010). “La migración México-Estados Unidos: 1940-2010”, en Francisco Alba, Manuel Ángel Castillo y Gustavo Verduzco (coodinadores), Migraciones internacionales, Los grandes problemas de México Vol. 3, pp. 93-134.
+44
+
+ÍNDICE DE CUADROS Cuadro 1. Pruebas de endogeneidad (Durbin-Wu-Hausman) y sobre-identificación ……….. 22 Cuadro 2. Estadísticas descriptivas …………..…………………………………………….... 28 Cuadro 3. Estimaciones del modelo logit multinomial de la probabilidad de recibir remesas
+para los hogares rurales de México (primera etapa de la estimación) …………...………. 31 Cuadro 4. . Estimaciones per cápita del gasto de los hogares rurales de México corregidas
+por selección, 2007 (segunda etapa de estimación) …..………………………………….. 34 Cuadro 5. Efecto de las remesas en la pobreza de los hogares rurales de México en
+2007……………………………………………………………………………………….. 37 Cuadro A1. Países que ocupan los primeros cuatro lugares en recepción de remesas
+internacionales (billones de dólares), 1995-2010 ………………………………………… 42 Cuadro A2. Pobreza en México, 1995-2010 ………………………………………………… 43
+45
+
+ÍNDICE DE GRÁFICAS Gráfica A1. Remesas recibidas mundialmente en los países de origen de los migrantes,
+1995-2010….…….……………………………………………………………………………40 Gráfica A2. Remesas como porcentaje del PIB a nivel mundial, 1995-2010…………………....40
+46
+
+

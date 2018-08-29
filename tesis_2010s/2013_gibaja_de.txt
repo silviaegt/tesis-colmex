@@ -1,0 +1,479 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+A THEORETICAL MODEL FOR UNILATERAL MARKETS DAMIÁN EMILIO GIBAJA ROMERO
+PROMOCIÓN 2009-2011 ASESOR:
+DAVID CANTALÁ JULIO 2013
+I
+
+Acknowledges
+This thesis project would not have been possible without the support of many people. I want to express my gratitude to "El Colegio de México" and "Centro de Estudios Económicos" by all the resources put at my disposal in these two years, without whom, this work would not be possible. I would like to express my sincere gratitude to my advisor, Prof. Dr. David Cantalá who offered invaluable motivation, assistance, patience, support and guidance. My sincere thanks also goes to Dr. Miguel Torres for his motivation and comments for improving this project. Special thanks to all my teachers in these two years. I would like to thank my parents Magdalena Romero Plata and Emilio Gibaja Arriaga, for always supporting me and never let me down. Also, I want to thank to my sister, who is a, inspiration in my life. Last but not the least, I would like to thank to my friends: Vanessa and Osvaldo who supporting me spiritually throughout my stay at "El Colegio de México".
+II
+
+Abstract
+This paper constructs a theoretical model about a unilateral market. This work studies a market where agents can buy and sell goods at the same time. Agents have one and only one indivisible good and money. Money is used to trade with other agents. The behavior of the agents is described by a two-stage game. In the first stage of the game agents announce prices and in the second stage agents report a ranking over the baskets after having seen the price vector announced. The Top Trading Cycle is used to allocate the goods and money. The first stage of the game is a non-cooperative game, and in the second stage to report their true ranking is a dominant strategy, so the second stage is no strategic. The solution concept for the game is the Bayesian equilibrium. We compute the Bayesian equilibrium for some probability functions when we have n = 2 agents in the market. For these probability functions, the Bayesian equilibrium exists and is unique. Finally, we discuss the problems that arise when we try to generalize to the case n > 2 or to an arbitrary probability function.
+III
+
+Contents
+1 Introduction.................................................................................................................................5 2 The Model ....................................................................................................................................9
+2.1 Top Trading Cycle Algorithm..............................................................................................10 2.2 The Game .............................................................................................................................11 2.3 The Equilibrium ...................................................................................................................11 3 The Equilibrium for n = 2 ........................................................................................................13 3.1 Two agents uniformly distributed ........................................................................................13 3.2 Two agents exponentially distributed ..................................................................................18 3.3 An agent uniformly distributed and an agent exponentially distributed ..............................20 3.4 Summary ..............................................................................................................................23 4 Two Generalizations .................................................................................................................25 4.1 Two agents uniformly distributed ........................................................................................25 4.2 Two agents exponentially distributed ..................................................................................28 5 Concluding Remarks ................................................................................................................31 Appendix A The Existence of Top Trading Cycle ....................................................................32 Appendix B An Example from Auction Theory........................................................................33 Appendix C A Region of Integration .........................................................................................34
+IV
+
+1 Introduction
+The present work takes as its starting point the price setting behavior observed in the real estate market. When an agent decides to sell her house, is usual that agents set the price. An agent sets the price of her house by many reasons: she knows better than anyone the features of her house, may be cheated if someone else sells her house, or just needs the money to cover debts, or to buy a good at the same time. For example, it is common that a person decides to sell her house because she wants to change their place of residence and needs money to buy a new house. Then, what an agent does is to advertise in the media that your house is for sale, showing her house to those interested and wait for someone to pay the price settled. Agent adjusts the price of her house after a long time has passed without being able to sell her house.
+The real estate market is not the only one where agents sell their goods to buy a new one. For example in the auto-mobile market, people sell their cars to the agencies and get money to buy a new one in the same agency or in another. In recent years this situation has become more common in video games and comic shops. People sell their video games to the shops like Blockbuster, Gamers, Game Planet, etc. Shops have become buyers in the market for video games. These shops pay an amount of money to people for their games and people use money to buy a new game or something else. In comic shops, comic collectors come together to swap cards, comics, etc. Depending on the collectible, the trade may or may not include money. We must emphasize that in the comic case, the shop also serves as a meeting place for people who want to sell their collections and buy special editions. Agents set prices according to their preferences. The existence of different unilateral markets makes increasingly important to study in these markets.
+On the other hand, we know that the government intervenes in the real estate market through taxes or subsidies, even in building, altering the behavior of the agents when they set prices in the housing market. For example, in Mexico there exists Infonavit. Infonavit is a government institution that provides loans to workers to purchase a house, but the role played by Infonavit is more important. Infonavit played two roles: it is a buyer because it is
+5
+
+the owner of the house bought with the "Infonavit credit" until the worker clears the debt. And Infonavit is a seller too: when a loan is cancelled for non-payment, Infonavit seizes the house and then puts it on sale.
+Traditional models related with the real estate market have problems to analyze the government intervention and typically consider bilateral markets. Moreover, the literature related to the real estate market presents theoretical limitations in its applications. This literature can be classified according to the following approaches: the cooperative games whose solution concept is the core; the competitive approach that analyses the competitive equilibrium; and the studies that suggest the existence of a bargaining process. In these areas their solution concept involves serious problems to do comparative statics. The cooperative approach proposes the core as a concept solution. The problem with the core, according to Mas-Colell (1988, 151), is that "it is a concept a little proactive. This greatly facilitates the ability to improve complaints and, consequently, often leads to an empty core. This lack of consistency in the core concept led von Neumann and Morgerstern to reject it (more or less explicitly) to propose a more sophisticated, the stable set". When we work with a competitive approach, we find multiple equilibriums, which is the best? How to determine which to choose? The cooperative approach does not indicate what price vector take and what not. And the problem with bargaining models is that in the real estate market there is no bargaining process: a real estate agent does not change the price of their house because a buyer does not have enough money to pay or because they disagree with the price of a house.
+With this motivation in mind, we construct a more realistic model. We consider agents who have an initial endowment, which consists of money and an indivisible good. We call "basket" to the endowment of an amount of money and a good. To simplify the model, agents have one and only one indivisible good. Money in the economy is use to trade with other agents. Each agent is identified by her valuation of each good in the market. The valuation vector is drawn according to a probability function and captures the fact that goods are substitutes but not homogeneous. Agents value the goods in the market independently and they only know their own valuation vector.
+Agents interact in a two-stage game. In the first stage agents set simultaneously the
+6
+
+price of their goods. Agents observe a price vector according to the prices announced in the first stage, so in the second stage agents report their ranking over the set of available baskets. The agents’ behavior depends on the money and the good obtained after trading with other agents. To end the game, we use the top trading cycle (TTC) algorithm, described in "Shapley and Scarf (1974)", to allocate the baskets. The TTC algorithm assign an amount of money and a good to each agent, so when it stops, agents buy and sell a good. Finally, we propose the Bayesian equilibrium as the solution concept for these situations. For two agents in the market, we found that the Bayesian equilibrium exists and is unique for some specific probability functions.
+The existing literature on real estate market research is intimately related to the classical analyses of matching processes in markets. The classical papers in this area are David Gale and Lloyd Shapley [2], Lloyd Shapley and Herbert Scarf [9], and Lloyd Shapley and Martin Shubik [10]. Gale and Shapley [2] (1962) consider the preferences over the possible matches as exogenous. They proposed the deferred acceptance procedure to show the existence of the core for the marriage and college-admissions games. Later, Shapley and Scarf [9] used the top trading cycles algorithm to find an equilibrium assignment of indivisible goods to people. Gale and Shapley (1962); and Shapley and Scarf (1974) do not consider any compensation between agents that are matched. Shapley and Shubik [10] studied the matching problem in a market where there is a divisible good, and agents compensate each other with money for matching. These three papers consider bilateral markets. Agents are divided into two disjoint sets. In this kind of models, matching is only possible between agents from different sets.
+Corominas-Bosch (2004) and Polanski (2007) propose that prices are set through a bargaining process in a bilateral market. The information between buyers and sellers is represented by a bipartite graph. These papers analyses the importance of the bipartite graph in the competitive equilibrium and establish necessary and sufficient conditions on the network so that the solution is the competitive equilibrium.
+The main differences between our approach and the traditional literature are that prices are set strategically; we do not consider a bargaining process; and the game ends after stage two. As Quinzii (1982), we work with a unilateral market where all agents can sell and
+7
+
+buy at the same time, but, we suppose that each agent has an initial amount of money "large enough". On the same line of this work, Pereira (2012) analyses economies with indivisible goods and budget constrained with the introduction of a dynamic auction mechanism
+This work is organized as follows. Section 2 introduces the necessary notation; explains the Top Trading Cycle Algorithm as an assignment procedure; describes the game played by the agents; and defines the Bayesian equilibrium as our solution concept. Section 3 analyses the Bayesian equilibrium for two agents in the market. Theorem 3.1 is our main result and establishes that the Bayesian equilibrium exists and is unique for three particular probability functions. In Section 4 we discuss the problems that we have found to generalize the results of Section 3. In particular we discuss the geometric problem when the number of agents in the market is greater than two, and we study the theorem 3.1 for an arbitrary probability function. Section 5 concludes the work and we propose some possible extensions.
+8
+
+2 The Model
+
+Consider a market with two sets, a set A of agents and a set B of indivisible goods. Both sets
+
+have n elements. A generic agent is represented by i = 1, 2,…, n and we use b to refer to any
+
+good. There is money in the economy to trade goods between agents. Each agent i has an initial
+
+endowment (mi,bi), where mi is an amount of money ”large enough” and bi denotes the unique
+
+good that the agent has.
+
+The preference relation ≿i of agent i over R×B is represented by her utility function
+
+ui:R×B→R; i.e., ”agent i at least prefers (ω,b) to (ω',b')” is denoted by (,b)i (',b') , where (ω,b), (ω',b') ∈ R × B. Then (,b) i (',b') , and (,b) ~i (',b') indicate strict preference
+
+and indifference respectively.
+
+We suppose a quasi-linear utility function for each agent i : ui (,bj;vi )    vji . So, the
+
+utility function depends on an amount ω of money and over a good bj, given the state of nature vi
+
+for agent i. Each agent i has a valuation vji about the good bj for all j ∈ A. The state of nature for
+
+agent i is her valuation vector vi=(v1i,v2i,…,vni)∈Rn . Let Vi be the set of states of nature of
+
+an agent i. Vi is a subset of n .
+
+The state of nature is a vector v=(v1,…,vn) where vi∈Vi for all i ∈ A. If we use V to
+
+ represent the set of states of nature, then V is the Cartesian product of all sets Vi: V 
+
+V n
+i 1 i
+
+,
+
+so that V is a subset of Rn2. There exists a probability function f over the set of states of nature V.
+
+We assume that the valuation vectors of agents are statistically independent. The state of nature
+
+V is drawn from f; each agent i is told the realization Vi=vi of her state, but she does not know
+
+the states of other agents.
+
+Each agent i sets the price pi of her good bi. Assume that agents put non-negative prices
+
+for their goods. On the other hand, if agents observe the price vector p=(p1,…,pn) , when
+
+agent i sells her own good and buys good bj she obtains an amount of money mi+pi−pj.
+
+9
+
+An assignment is a function Γ that assigns to each agent i an amount of money ωi and a
+
+good b (i) , where σ is a permutation of agents. Then, Γ:A→R×B and the allocation that i receives
+
+  is (i)  (i ,b (i) ) . The assignment Γ is feasible when
+
+ n
+i 1 i
+
+
+
+m n
+i 1 i
+
+1.
+
+2.1 Top Trading Cycle Algorithm
+To describe the top trading algorithm, we first introduce some concepts from Graph Theory. As before, let A = {1,…,n} be a set of agents indexed by i, (mi,bi) the initial endowment for each agent i and p  n a price vector. Each agent has a preference relation over R × B. We define the directed graph G(A, p) = (A, E(A, p)) whose nodes are A and whose (directed) edges E(A, p) consist of the pairs (i, j) such that i, j ∈ A and agent i prefers the basket (mi+pi−pj,bj) to any other basket (mi  pi  pk ,bk ) in the market. The graph G(A,p) is the graph on A which results when each agent in A points to her favorite basket (mi+pi−pj,bj).
+A Top Trading Cycle (TTC) is an ordered subset C={i1,i2,…,ik,ik+1=i1} of A for which (ij,ij+1) is an edge of the graph G(A, p). A cycle may contain only a single node, when some agent i prefers (mi,bi) to all other baskets in the market generated by p. The TTC mechanism always determines an allocation, (see Appendix A).
+The TTC algorithm, attributed to Gale in Shapley and Scarf (1974), is described below. Suppose that agents observe p:
+Step 1: 1. Each agent i points to her most preferred basket (mi+pi−pj,bj), in A, resulting in the graph G1(A, p)  (A, E(A, p)) . 2. In each TTC of G1(A, p) the corresponding trade is performed: the members of each TTC obtain the basket that are pointing to. After it, TTC is removed from the market. Let A1 be the remaining set of agents after we remove the TTC. If A1≠∅ we follow to step 2.
+1 Since goods are not divisible, the set of feasible assignment of goods is described by the set of all permutation over the set B.
+10
+
+Step 2: 1. Each agent i∈A1 points to her most preferred basket (mi+pi−pj,bj) in A1, resulting in the graph G2 (A1, p)  (A1, E(A1, p)) . 2. In each TTC of G2(A, p) the corresponding trade is performed: the members of each TTC obtain the basket that they are pointing to. Then, the TTC is removed from the market. Let A2 be the remaining set of agents after we remove the TTC. If A2≠∅, step 2 is repeated using A2 instead of A1. The algorithm goes on until no agent remains in the market. This algorithm terminates in at most n steps, because of the finiteness of A and the fact that at least one cycle forms at each step (see Appendix A). We use TTC[p] to refer to the allocation generated by the TTC algorithm when agents observe a price vector p.
+2.2 The Game
+We consider a two-stage game. In the first stage, each agent i ∈ A announces the price of her good pi  Pi   . In the second stage, all agents observe the price vector p=(p1,p2,…,pn) and each agent i reports a ranking of the baskets (mi+pi−pj,bj). The TTC mechanism is used to compute the final allocation. Note that the TTC algorithm allows agent i to retain her good when she does not belong to a TTC and she is not interested in any other good than her own; in this case, agent i obtains the basket (mi,bi).
+2.3 The Equilibrium
+For the equilibrium characterization, we need some extra definitions and notation. A decision rule of agent i is a function αi:Vi→Pi mapping states of nature into prices. Let a price vector p, βi(p) denotes the ranking of the baskets (mi+pi−pj,bj) made by agent i. A pure strategy for agent i is a pair (i , i ()) where αi is a decision rule and βi(α) is the ranking corresponding to the price vector α=(α1,α2,…,αn) .
+11
+
+Recalling that in the first stage each agent knows her state of nature, but does not observe
+
+the state of other agents; our solution concept is Bayesian equilibrium.
+
+   Definition 2.1. A Bayesian equilibrium is a profile of pure strategies
+
+i, i  
+
+, n
+i 1
+
+where
+
+  (1,...,n) and  ()  (1(),..., n()) , such that for each agent i
+
+for all αi∈Pi and for all vi∈Vi. Alvin Roth in [¡Error! No se encuentra el origen de la referencia.] showed that the
+TTC algorithm is strategy proof, i.e. it is a dominant strategy for each agent to reveal her true preferences. So, given that in the second stage of the game described in 2.2 the TTC algorithm is used to compute the final assignment, then the next proposition, which will be useful to compute the Bayesian equilibrium, is true:
+Proposition 2.2. In the second stage of the game described in 2.2 each agent reports her true ranking of the baskets (mi+pi−pj,bj).
+Proof. We know that the TTC algorithm is strategy-proof. See [¡Error! No se encuentra el origen de la referencia.] for more details. Then, for each agent to reveal her true preferences is a dominant strategy. So, agents have not incentives to deviate. Therefore, in the second stage each agent reports her true ranking.
+
+12
+
+3 The Equilibrium for n = 2
+In this section we compute the Bayesian equilibrium of the game described in the previous chapter for n = 2, so, we have a set of agents A = {1, 2}. Each agent i has private information about her state of nature vi=(vii,vji) , where vi∈Vi. We suppose that V1=(V11,V21) and V2=(V12,V22) are independent random vectors. The probability function f:V1×V2→R is common knowledge to the two players.
+Remember the game described in the previous chapter. In the first stage, each agent i sets pi the price of her good. As usual pi∈R+. In the second stage agents observe all prices and report a ranking over the baskets (mi+pi−pj,bj). Finally baskets are assigned using the Top Trading Cycle Mechanism. Then, the payment function for each agent i is:
+Since the second stage is strategy-proof2, all agents report their true ranking over the baskets (mi+pi−pj,bj) corresponding to the price vector announced in stage 1. So, to compute the Bayesian equilibrium we only have to solve the non-cooperative game described in the first stage.
+To obtain the Bayesian equilibrium we analyze three different probability functions over V1×V2. First, we suppose two agents uniformly distributed; after it, we suppose that agents exponentially distributed; and, finally, we suppose an agent uniformly distributed and an agent exponentially distributed to capture different behavior.
+3.1 Two agents uniformly distributed
+2 See Proposition 2.1 in Subsection 2.3. 13
+
+First, we recall that the vector of valuations is a random vector Vi=(Vii,Vji) . We now assume that Vii and Vji are independent random variables, valuation’s variables, uniformly distributed, for i, j ∈ {1, 2}. Without loss of generality we suppose that V1=V2=[0,1]×[0,1]. The marginal distribution for each random variable is
+for all i, j ∈ {1, 2}. Given the assumptions made in the previous paragraph, the joint distribution for the
+random variables Vji and Vii is the function
+3
+for all i, j ∈ {1, 2}. By the Bayesian equilibrium definition and the function (1) we need to compute the
+expected utility function for each agent i defined below:
+Note that agent i knows vji, vii and pi, but does not know pj, vij and vjj. Agent i only knows the distribution fViiVji. Rewriting the above expression
+Inspired by the methodology of Auction Theory (see Appendix B), we look for the best response of i when j uses a linear strategy, i.e. agent i supposes that pj=ajvjj−bjvij, where aj, bj are non-negative constants. This assumption is intuitively appealing because, the more I appreciate the good that I have, I want to get more money; so, there exists a positive relationship
+3 [0,1]2  [0,1][0,1]
+14
+
+between pj and the valuation vjj. On the other hand, the more I appreciate a good different from mine, I want to sell my own good fast to obtain the good bi; so, the relation between vij and pj is negative.
+To obtain the expected utility function, we need to calculate the probability P(pj≤vji−vii,vjj−vij≤−pi) . This probability depends on the region on which we are integrating.
+1.0
+
+0.8
+
+0.6
+
+vi j
+
+0.4
+
+0.2
+
+0.0
+
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+vjj
+
+Figure 1. Region 1. This region occurs when the intersection between the sets [0,1]×[0,1], {(vjj,vij):ajvjj−bjvij≤vji−vii} and {(vjj,vij):vjj−vij≤−pi} is equal to the empty set.
+
+We have three possible regions of integration (see figures (1), (2) and (3)). Regions 1 and 3, illustrated in figures (1) and (3), correspond to trivial cases. In Region 1 P(pj≤vji−vii,vjj−vij≤−pi)=0 , so the expected utility is E[ui]=mi+vii. In Region 3 P(pj≤vji−vii,vjj−vij≤−pi)=1 , so the expected utility is E[ui]=mi+pi−pj+vji. When we are in Regions 1 and 3, the first order condition ∂E[ui]/∂p1 is equal to 0 or 1, respectively. This tells us that any response is optimal.
+
+15
+
+Then, we work with the most interesting case to compute the Bayesian equilibrium. We consider the probability over Region 2 illustrated in figure (2). We calculate this probability as follows:
+Figure 2. Region 2. This region occurs when aj/bj≤1, so the intersection between the sets [0,1]×[0,1], {(vjj,vij):ajvjj−bjvij≤vji−vii} and {(vjj,vij):vjj−vij≤−pi} is different from [0,1]×[0,1] and to the empty set.
+substituting the above expression in equation 2, the expected utility function for agent i is: To get the best response, the first order condition is
+16
+
+then, we have to solve the next equation
+Figure 3. Region 3. This region occurs when the intersection between the sets[0,1]×[0,1], {(vjj,vij):ajvjj−bjvij≤vji−vii} and {(vjj,vij):vjj−vij≤−pi} is equal to [0,1]×[0,1].
+Therefore, the best response of i when j uses a linear strategy, pj=ajvjj−bjvij, is: Analogously, we seek the best response of j when i uses a linear strategy pi=aivii−bivji, where ai and bi are positive constants. The best response of j when i uses a linear strategy is Solving the system formed by equations (3) and (4), the equilibrium is given by:
+17
+
+3.2 Two agents exponentially distributed
+The real estate market is a market with substitute goods, then a more realistic assumption is to think that Vji and Vii are not independent for i, j ∈ {1, 2}. So, the valuation vji of agent i about the good bj depends on the valuation of her own good.
+Figure 4. Region of integration for Exponential Case
+An even more general and realistic assumption is to assume that Vji and Vii are not identically distributed. We suppose that Vji and Vii are independent and exponentially distributed with parameters λji, λii≥0 respectively. The parameters λji and λii can be different. Moreover, λji can depend on λii, capturing the fact that there is a relationship between vji and vii. The marginal probability function for each random variable is
+and, by independence, the joint distribution is
+18
+
+The payment function and the expected utility function is the same that in the previous section (see equations (1) and (2). When agents are distributed exponentially, what changes is the probability P(pj≤vji−vii,vjj−vij≤−pi) . Again, we compute this probability, and we suppose that j uses a linear strategy, pj=ajv22−bjv12, with aj, bj non-negative constants. In this case, we do not have trivial probabilities, and we only have one region of integration, see figure (4). So
+substituting the above expression in equation (2), the expected utility function for each agent i is
+for all i, j ∈ {1, 2}. We follow the same process as in section 3.1 to obtain the equilibrium. The first order
+condition is: Then, we have to solve the next equation
+Therefore, the best response of i when j uses a linear strategy, p2=av22−bv12, is:
+19
+
+Analogously, we seek the best response of j when i uses a linear strategy pi=aiv11−biv21 where ai, bi are non-negative constants. Also, we suppose that Vii,Vji are independent and exponentially distributed with parameters λii, λji>0, respectively. Then, the best response of j when i uses a linear strategy is
+
+p j ( pi )
+
+
+
+1
+
+ ji
+
+pi
+
+  jiv jj  ji
+
+
+
+ jivij
+
+(6)
+
+Solving the system formed by the equations (5) and (6), the equilibrium is characterized by:
+
+Note that parameters λii and λjj are not present in the equilibrium. This result may suggest that assuming λij as a function of λjj is feasible. The question is: What is the meaning of the exponential distribution parameter λ in the real estate market?
+We believe that λ measures the agent’s willingness to buy houses with a low valuation. We are not sure about this intuition because λ is commonly used to describe waiting time between counts.
+3.3 An agent uniformly distributed and an agent exponentially distributed
+We can also think that the valuation vectors, Vi and Vj, are independent, but not identically distributed. This is a more realistic assumption because agents do not value goods in the same way.
+In this section we suppose that Vii and Vji are independent uniformly distributed; therefore, the marginal distribution for Vii and Vji is
+
+20
+
+hence, the joint distribution for Vi is
+On the other hand, we suppose that Vjj and Vij are independent and exponentially distributed, with parameters λjj≥0 and λij≥0 respectively. The joint distribution is
+We consider the payment function and the expected utility function described in equations (1) and (2) respectively.
+We look for the best response of i when pj=ajvjj−bjvij, where a j , bj are non-negative constants. To obtain the expected utility for agent i, we integrate over the region illustrated in (4), because Vj is exponentially distributed. Then
+substituting this expression in (2) we get
+The first order condition generates the equation
+The best response of i when j uses a linear strategy is:
+21
+
+Moreover, we seek the best response of j when i uses a linear strategy pi=aivii−bivji, where ai, bi are non-negative constants. By assumption, Vii,Vji are independent and uniformly distributed over [0, 1]. Then, the joint distribution of Vi is the probability over the region indicated in the first case
+To obtain P(vji−pj≥vii,vij−pi≥vjj) we integrate over the region illustrated in figure (2):
+Then, the expected utility function is By the first order condition
+we have to solve the equation: The best response of j when i uses a linear strategy, pi=aivii−bivji, is Solving the system formed by the equations (7) and (8), the equilibrium is given by:
+22
+
+As in Section 2.2, the parameter λjj is not present in the equilibrium, but the intuition respect to the parameter λij remains unclear.
+3.4 Summary
+In previous subsections we find some common features in the Bayesian equilibria calculated. These features are summarized in the following theorem. To state the theorem, we need more notations. To refer to the probability functions over the set V=V1×V2 used in subsections 3.1, 3.2, and 3.3 we use f1, f2, and f3. Also, since the second stage of the game is strategy-proof, we denote by i( p) the true ranking reported by each agent i after see the price vector p. Theorem 3.1. Let set of agents A = {1,2}. Agents play the game described in subsection 2.2. Suppose that the state of nature of each agent is drawn according to a probability function f:V1×V2→R, with f∈{f1,f2,f3}. Then:
+1. When an agent j assumes that the agent i uses a linear strategy on vji and vii, i.e. pi=aivii−bivji with ai, bi∈R+ and ai/bi<1, there exists a unique symmetric Bayesian equilibrium.
+    2. Consider p1, i( p) , p2, 2( p) , where p  ( p1, p2) , the symmetric Bayesian
+equilibrium of the game for f∈{f1,f2,f3}. Then:
+Note that equilibria reflect the basic principles of Nash equilibrium: each agent meets and adopts her best strategy, and everyone do a correct prediction about the strategies of others.
+Also, this theorem shows that there is a positive relation between the price pi and vii, vjj. The positive relation between pi and vii is intuitive. On the other hand, it is obvious that agent i knows that pj increases as vjj increases. Then agent i raises pi when she anticipates an increase in vjj. This can be a measure of i to earn more money when j wants to increase pj through vjj, i.e. when j wants to earn more money. The negative relation between pi and vji can be explained as
+23
+
+follows: agent i wants to sell her house as soon as possible because her interest in j’s house has increased. However, the negative relationship between pi and vij results counter-intuitive. If agent j increases her valuation about bi, it is natural to think that she has more willingness to buy bi, so agent i could take advantage of this situation and increase pi. But theorem shows that, in this case, the price decline. We investigate further on these insights in a future paper.
+24
+
+4 Two generalizations
+The results obtained in Section 3 can be generalized in at least two ways. First, when we tried to find the equilibrium when n is greater than 2, we identify a geometric problem to compute the Bayesian equilibrium. In this Section we illustrate this problem for n = 3.
+The second problem is related to Theorem 3.1. In particular, we analyze whether Theorem 3.1 can be generalized to any probability function f for n = 2.
+4.1 The Equilibrium for n > 2
+We consider the geometric problem with n = 3. Suppose that we have a set of agents A = {i, j, k}. Agent i has private information about her state of nature vi=(vii,vji,vki) , where vi∈Vi is a subset of R3. Also, the valuation vectors of j y k are unknown to agent i. We suppose that V1=(V11,V21,V31) , V2=(V12,V22,V32) and V3=(V13,V23,V33) are independent random vectors. The probability function f:V1×V2×V3→R is common knowledge to the three players.
+Remember the game described in Section 2. In the first stage, each agent i sets pi, the price of her good. As usual pi∈R+. In the second stage, agents observe all prices and report a ranking of the baskets (mi+pi−pj,bj). Since the TTC algorithm is used to allocate the baskets, agents report their true ranking, see Proposition 2.2.
+The payment function for agent i is:
+25
+
+Symbol ∨ means ”or”, i.e. since there are more than two possible ways to earn an amount of money, we must join the possible events.
+Define the sets Δ1, Δ2 and Δ3 as follow
+26
+
+If we follow the procedure to find the equilibrium as in Section 3, we have to calculate the following expected utility function defined below
+To compute the probabilities over Δ1, Δ2 and Δ3 we follow Fubini’s theorem4, if we want to get the probabilities on the sets Δ1, Δ2 and Δ3, we need to visualize the region over the which we should integrate. Appendix C shows a region of integration used in Fubini’s Theorem when n = 3. Remembering the model, agent i does not know vj, vk, pj nor pk. So, agent i does not know 8 variables. Inspired by Auction Theory, we can eliminate variables pj and pk assuming that there is a relationship between how an agent sets the price and her valuation vector, i.e. agent i believes that agents j and k use strategies pj=g(vj) and pk=h(vk) , respectively, where g:Vj→R, h:Vk→R are continuous functions. In Section 3 we suppose that g and h are linear functions as particular case. On the other hand, there is a probability function f:V⊂R6→R of common knowledge and the valuation vectors are independent. Then the sets Δ1, Δ2 and Δ3
+4 Fubini’s Theorem for n=2. Let f, g:X→R be continuous functions such that g(x)≤f(x) for all x∈X, and let
+D  {(x, y)  n1 : x  X , g(x)  y  f (x)}. Let Φ:D→R be a continuous function. Then
+To more information about Fubini’s Theorem and its applications see Jerrold E. Marsden and Anthony Tromba, Vector Calculus, (Madrid, Pearson Educación, 2004) 324-339.
+27
+
+describe the region over which we integrate, so this region are contained in R6. This is our geometric problem: How to describe a region of integration contained in R6? It is impossible to visualize sets in R6 and determine the region on which to integrate. However, that we cannot visualize the region does not imply that the probability of the event described by Δ1, Δ2 and Δ3 does not exist theoretically.
+Therefore, when n > 2, our problem is to determine the region of integration because we have sets of dimension n2−n. We would like to find a way to simplify this region of integration to calculate the probability and verify if the Bayesian equilibrium is also unique when n > 2.
+4.2 Arbitrary probability function
+At the end of Section 3 we raised the question of whether it is possible to generalize Theorem 3.1 for any probability function f. Suppose that A = {1, 2} and we consider the same payment function as in Section 3
+We suppose that V1 and V2 area random independent vectors. There is a probability function f:V1×V2→R.
+  The equilibrium price vector p1, p2 is implicitly defined by the following equation
+system:
+where the expected utility function is defined by
+28
+
+On the other hand, as in the first price auction of Appendix B, to compute the best response, agent i has to believe that the agent j uses a strategy pj=pj(vij,vjj). Since agent i only knows the probability function f, then Pi  Pr( p j (vij , v jj )  v ji  vii , v jj  vij   pi ) represents the probability to trade with agent j when i believes that j uses the strategy pj=p(vij,vjj) .
+Applying the chain rule to (11), we can compute the derivative respect to pi. So we have the following system
+
+Following Section 3, we suppose that agent i believes that agent j acts pj=pj(vj); we can suppose that
+
+where
+
+h1i , h2i
+
+and
+
+g1i
+
+,
+
+g
+
+i 2
+
+.
+
+Also,
+
+h1i ,
+
+h2i ,
+
+g1i
+
+and
+
+g
+
+i 2
+
+are the functions that describe the
+
+region
+
+on
+
+which integrates, when i suppose that j uses a strategy pj=p(vij,vjj) .
+
+To determine the relationship between pi, pj with v11 we have to differentiate (12) with
+
+respect to v11. Then, we solve the following system
+
+29
+
+To determine the sign of p1 and p2 we need to know more about the expressions
+
+v11
+
+v11
+
+ 2 P1 ,  P1 ,  2 P 2 ,  P 2 . Unfortunately, the previous expressions depends on the relation
+
+p12 p1
+
+p22
+
+p2
+
+between P1, P2 and p1, p2. Again, we have a geometric problem because Pi is determined by the
+
+functions
+
+h1i ,
+
+h2i ,
+
+g1i
+
+and
+
+g
+
+i 2
+
+which describe an elemental region.
+
+The previous problem arises when we want to know the sign of the relation between p1
+
+and v22, v21, v12. The same occurs for p2. Also, we need information about the probability
+
+function f. Therefore, if we want to generalize Theorem 3.1, we have to study the elemental
+
+region described by
+
+h1i ,
+
+h2i ,
+
+g1i
+
+and
+
+g
+
+i 2
+
+.
+
+We
+
+will
+
+deal
+
+with
+
+this
+
+problem
+
+in
+
+future
+
+work.
+
+30
+
+5 Concluding Remarks
+We construct a model for the real estate market that considers a non-cooperative behavior between agents. Also, we break with traditional models assuming that agents can act as buyers and sellers. Therefore, our solution concept involves the idea of a matching between agents belonging to the same set.
+For two agents in the market, we calculate the Bayesian equilibrium taking different probability functions and different behavior of the agent. The cases analyzed preserve the relationship between the prices and the valuations of the agents on the goods in the market. Also, the Bayesian equilibrium exists and it is unique.
+When we have more than three agents, to compute the Bayesian equilibrium we faced a geometric visualization problem. We hope to solve this problem in future work.
+31
+
+Appendix A The Existence of Top Trading Cycle
+The Top Trading Cycle algorithm always ends up in an allocation, because we always can find a TTC in each step of the algorithm. Proposition. Let a finite set of agents A = {1,…, n} be indexed by i. Each agent has one and only one indivisible good ωi. Let Ω be a set of indivisible goods. Agent i has a preference relation denoted by ≿i over Ω. After each agent announces her most preferred good in Ω, at least there is a TTC.
+Proof. We proceed by contradiction. After each agent announces her most preferred good in Ω, there is no Top Trading Cycle. Then, agent i1 points to agent i2, where i1≠i2 because there are no cycles. Following this process, we have that ik points to ik+1, where ik+1≠ij for all j∈{1,…,k} because there are no cycles. Hence, in points to in+1 such that in+1≠ij for all j∈{1,2,...,n}, which is a contradiction because there are only n agents.
+The previous proposition tells us that in each step of the TTC algorithm there is at least a Top Trading Cycle. So, the algorithm is well defined. Therefore, the TTC algorithm always generates an allocation.
+32
+
+Appendix B An Example from Auction Theory
+We will sketch the way auction theory looks at the Bayesian equilibrium in first price auctions. We consider only two bidders, 1 and 2. Let v1>0 denote the value for player 1. Suppose that player 1 believes that the other bidder’s values is uniformly distributed over [0, 1]. Each agents bids ai∈Ai=R+. The pay-off function
+Also, player 1 believes that the other bidder uses strategy α(v2)=av2 , so the expected utility function for player 1, if player 1 bids b, is
+Maximizing implies setting the first derivative equal to zero
+Solving for b Therefore, this is the best response for 1 when she believes that 2 uses strategy av2. And it is a Bayesian equilibrium because the best response for 2 when 1 uses the strategy v1/2 is v2/2 by symmetry.
+33
+
+Appendix C A Region of Integration
+Fubini’s Theorem requires of a region to integrate. Let f and g be continuous function from  to
+ . Let a, b ∈  , we say that D  (x, y)  | a  x  b, g(x)  y  f (x) is a region which is
+not a Cartesian product between intervals, this region is illustrated by the next figure
+Figure 5 Elementary Region on n = 2.
+34
+
+References
+[1] Corominas-Bosch, M. (2004) ”Bargaining in a Network of Buyers and Sellers”, Journal of Economic Theory, 115, 35-77.
+[2] Gale, D. and Shapley, L. (1962) ”College Admissions and the Stability of Marriage”, American Mathematical Monthly, 69, 9-15.
+[3] Kelso, A. S. and Crawford, V. P. (1982) ”Job Matching, Coalition Formation, and Gross Substitutes”, Econometrica, 6, 1483-1504.
+[4] Mas-Colell, A. (1988) ”Algunos Comentarios sobre la Teoría Cooperativa de los Juegos”, Cuadernos Económicos, 40, 143-162.
+[5] Pereira, J. S. (2012) “Housing Markets”, Working Paper. [6] Polanski, A. (2007) ”Bilateral Bargaining in Networks”, Journal of Economic Theory, 124,
+557-565. [7] Quinzii, M. (1982) ”Core and Competitive Equilibria with Indivisibilities”, Cowles
+Foundation Discussion Paper, 644, 1-43. [8] Roth, Alvin E. (1982) ”Incentive Compatibility in a Market with Indivisible Goods”,
+Economic Letters, 9, 127-132. [9] Shapley, L. and Scarf, H (1974) ”On Cores and Indivisibility”, Journal of Mathematical
+Economics, 1, 23-37. [10] Shapley, L. and Shubik, M. (1971) ”The Assignment Game I: The Core”, International
+Journal of Game Theory, 1, 111-129. [11] Toda, M. (2005) ”Axiomatization of the Core of Assignment Games”, Games and Economic
+Behavior, 53, 248-261.
+35
+
+

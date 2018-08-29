@@ -1,0 +1,1153 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+LA MAGIA DE LOS PUEBLOS MÁGICOS:
+UNA APROXIMACIÓN A TRAVÉS DEL MÉTODO DE CONTROL SINTÉTICO
+ALEIDA SALGUERO GALDEANO
+PROMOCIÓN 2013-2015
+ASESOR:
+DR. CARLOS CHIAPA LABASTIDA
+JUNIO 2015
+
+Agradezco infinitamente a mi esposo, a mis padres y a mi hermano,
+porque sin su apoyo incondicional, esto no hubiera sido posible.
+Agradezco a mi hijo, Héctor, por ser mi inspiración.
+i
+
+Resumen
+Este estudio analiza el efecto del Programa Pueblos Mágicos implementado en México sobre el bienestar de la población, medido a través del índice de rezago social absoluto. Utilizando el método de control sintético, construyo la unidad de control sintética como el promedio ponderado de las localidades que conforman el grupo de control, la cual asemeja las características relevantes del Pueblo Mágico Promedio previas al inicio de operación del Programa. Encuentro que para el promedio de los Pueblos Mágicos nombrados de 2001 a 2006, el Programa no ha tenido un efecto significativo en la disminución del rezago social. Este resultado es robusto a diversas pruebas placebo aplicadas.
+ii
+
+Índice
+
+1. Introducción
+
+1
+
+2. Turismo, desarrollo y reducción de la pobreza
+
+3
+
+3. El Programa Pueblos Mágicos
+
+4
+
+4. Estrategia empírica: Método de control sintético
+
+7
+
+5. Datos y muestra
+
+11
+
+6. Resultados
+
+14
+
+6.1. Pueblo Mágico Promedio 2001-2006 . . . . . . . . . . . . . . . . . . . . . . . 14
+
+6.2. Pueblo Mágico Promedio 2001 . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+6.3. Pueblo Mágico Promedio 2006 . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+7. Inferencia: Pruebas placebo
+
+19
+
+7.1. Pueblo Mágico Promedio 2001-2006 . . . . . . . . . . . . . . . . . . . . . . . 19
+
+7.2. Pueblo Mágico Promedio 2001 . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+7.3. Pueblo Mágico Promedio 2006 . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+7.4. Pruebas adicionales de robustez . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+8. Conclusiones, limitaciones y retos
+
+24
+
+9. Apéndice
+
+26
+
+10. Referencias
+
+28
+
+11. Anexos
+
+31
+
+1. Introducción
+El turismo en el mundo El sector turismo se caracteriza por ser uno de los más dinámicos en el mundo en las úl-
+timas décadas. De acuerdo a la Organización Mundial del Turismo (OMT, 2014), este sector representa el 9 % del PIB mundial, genera 1 de cada 11 puestos de trabajo, el 6 % de las exportaciones totales (1.4 trillones de dólares) y el 29 % de las exportaciones de servicios. Además, el número de turistas internacionales se ha incrementado de 25 millones en 1950 a 1,087 millones en 2013, generando divisas por 1,159 billones de dólares en 2013.
+Hasta ahora, la mayor parte de la investigación se ha concentrado en estudiar los efectos asociados de la actividad turística en el crecimiento económico a nivel país, la generación de ingresos o la demanda del sector, utilizando dos enfoques de análisis, principalmente. El primero de ellos usa modelos econométricos de series de tiempo con datos macroeconómicos. Chou (2013) proporciona referencias sobre el uso de modelos de series tiempo para analizar los beneﬁcios del turismo en divisas, ingreso, empleo e impuestos y la relación entre el desarrollo turístico y el crecimiento económico.
+El segundo enfoque se reﬁere al uso de distintos tipos de modelos de simulación como Matrices de Insumo-Producto (Polo y Valle, 2008), Matrices de Contabilidad Social (Ferri y Uriel, 2004; Hughes y Shields, 2007; Jones, 2010), Modelos de Equilibrio General Computables a nivel país (Dwyer, Forsyth y Spurr, 2007; Mabugu, 2002; Narayan, 2004; Sahli y Nowak, 2005; Zhang, Madsen y Jensen Butler, 2007) y más recientemente modelos de Equilibrio General a nivel localidad (Dwyer, 2003; Taylor, Yúnez Naude, Dyer, Ardila y Stewart, 2003).
+Pocos son los estudios existentes que evalúan el impacto del turismo a niveles más desagregados o especíﬁcos a proyectos turísticos, debido a los retos técnicos que representan una evaluación de impacto de proyectos turísticos y a la falta de datos existentes a niveles desagregados.1 Existe un primer estudio que analiza el impacto de una política de turismo implementada en la región de Salta, Argentina sobre la creación de empleos en el sector hotelero en dicha región (Castillo, Garone, Mafﬁoli y Salazar, 2015). Este estudio es novedoso en el sentido que utiliza por primera vez el método de control sintético como técnica econométrica para analizar los efectos de una política turística (Castillo et al., 2015).
+El turismo en México México cuenta con una gran diversidad de recursos naturales y culturales que le han permi-
+tido aprovechar el dinamismo global del sector turismo. En 2013 el PIB turístico representó el 8.7 % del PIB nacional y los puestos de trabajo que genera el sector representaron al 5.9 % a nivel nacional (CSTM, 2015). El número de turistas internacionales ha mantenido un crecimiento constante hasta alcanzar 23.7 millones en 2013 que generaron divisas por 13,819 millones de dólares (OMT, 2014). Todo esto aun cuando el país ha experimentado en ciertos puntos en
+1La descripción de estos retos se presentan en la sección Turismo, desarrollo y reducción de la pobreza.
+1
+
+el tiempo una disminución en la llegada de turistas debido a factores económicos y de salud pública.
+Para el caso de México, la evidencia empírica sobre los beneﬁcios del turismo y su relación con el crecimiento económico son escasos (Cruz Chávez, Juárez Mancilla, Urciaga García, Ruiz Cesena, 2014; Durr, 2012; Leatherman, Goodman y Stillman, 2010). Otros estudios analizan el efecto en el empleo, a nivel nacional, del desarrollo turístico dirigido por el Estado mexicano como parte de su estrategia global de desarrollo económico (Clancy, 1999 y Wilson, 2008). Ninguno de estos estudios utilizan los modelos ampliamente aceptados de series de tiempo o de simulación.
+Con la ﬁnalidad de aprovechar más los beneﬁcios del turismo como motor del crecimiento y desarrollo, el Estado mexicano ha buscado diversiﬁcar su oferta más allá del turismo de sol y playa, impulsando otros segmentos turísticos como el cultural, gastronómico y de convenciones, entre otros. En este marco, en 2001 crea el Programa Pueblos Mágicos, como una política para impulsar el turismo de cultura al interior del país en localidades rezagadas que cuentan con atributos turísticos explotables. Con ello se busca promover un mayor dinamismo económico de las localidades apoyadas que les permita mejorar las condiciones de vida de sus habitantes. El programa lleva 15 años en operación, sin embargo, no se ha llevado a cabo alguna evaluación que mida los impactos sociales del mismo en las localidades nombradas Pueblos Mágicos.
+El objeto del presente estudio es evaluar el efecto que el Programa Pueblos Mágicos ha tenido en el bienestar de la población apoyada, medido a través del índice de rezago social absoluto. Utilizando el método de control sintético (MCS) introducido en Abadie y Gardeazabal (2003) y extendido en Abadie, Diamond y Hainmueller (2010), conformo la unidad de control sintética del “Pueblo Mágico Promedio” como el promedio ponderado de las características y realizaciones del rezago social pretratamiento de las localidades que conforman mi grupo de control. Posteriormente, comparo el rezago social contrafactual contra el verdadero valor del rezago social de la unidad tratada y realizo pruebas de robustez utilizando estudios placebo. Encuentro que para el promedio de los Pueblos Mágicos nombrados de 2001 a 2006, los nombrados en 2001 y los nombrados a su vez en 2006, el programa no ha tenido un efecto signiﬁcativo en la disminución del rezago social. El MCS es adecuado cuando las políticas de intervención o eventos de interés suceden a un nivel agregado (países, localidades, regiones) y afectan a un pequeño número de unidades agregadas, que corresponde a situaciones en que la metodología de regresión tradicional no es apropiada.
+En este contexto, la principal contribución de este estudio es ser el primer intento de llevar a cabo una evaluación de impacto cuasiexperimental utilizando análisis contrafactual para los programas de turismo apoyados por el Estado mexicano en lo general, y para el programa Pueblos Mágicos en lo particular.
+El resto del documento está organizado de la siguiente manera: la sección 2 describe la participación del sector turismo en la economía global y de México y su relevancia como promotor del desarrollo y atenuación de la pobreza. La sección 3 describe el Programa Pueblos Mági-
+2
+
+cos. La sección 4 presenta la estrategia empírica y la sección 5 describe los datos y la muestra utilizada para la estimación empírica. La sección 6 describe los resultados empíricos y en la sección 7 se desarrollan un conjunto de estudios placebo y pruebas de robustez respecto los resultados encontrados. La sección 8 presenta las conclusiones, así como los retos y limitaciones del estudio.
+2. Turismo, desarrollo y reducción de la pobreza
+Durante las últimas dos décadas más países han adoptado la hipótesis sobre el potencial que tiene el desarrollo sostenible del turismo como instrumento para la promoción del desarrollo económico y la atenuación de la pobreza en las comunidades y regiones de los países en desarrollo (OMT, 2006). Sin embargo, la literatura existente reconoce que el principal problema es la falta de evidencia empírica que de sustento a dicha hipótesis (Winters, Corral y Moreda, 2013).
+Saber cómo opera la relación entre el turismo y la reducción de la pobreza y en qué grado se ubica la contribución, es particularmente importante para los hacedores de política pública que pretenden implementar políticas o desarrollar proyectos turísticos para incidir en la atenuación de la pobreza.2 En Winters et al. (2013), se señala que la relación entre el turismo y la reducción de la pobreza se da a través de efectos directos, efectos secundarios (indirectos e inducidos) y efectos dinámicos (de largo plazo) generados en la zona de inﬂuencia turística.3 El efecto directo del desarrollo turístico en la gente de bajos recursos dependerá en gran medida de si son dueños de empresas (formales o informales) ligadas al sector turismo o de si trabajan en el sector. Los efectos secundarios en los pobres se darán en la medida que éstos sean propietarios de negocios o trabajen en actividades relacionadas con el sector turismo. Mientras que los efectos de largo plazo pueden convertirse en un determinante principal del crecimiento económico, dependiendo de su magnitud.
+Estos efectos y su relación con la pobreza son bien entendidos, el reto es determinar empíricamente cuáles son las intervenciones más efectivas para potenciar el crecimiento económico y atenuar la pobreza a la vez de optimizar el gasto público en materia turística. Para ello, se requiere realizar evaluaciones de impacto que analicen la relación de causalidad entre turismo y pobreza haciendo uso de análisis contrafactual.
+2Gobiernos de países como Arabia Saudita, Argentina, Chile, China, Honduras, Indonesia, Jordania, Marruecos, México, Nicaragua y Sudáfrica han implementado proyectos o programas turísticos que buscan incidir en el nivel de pobreza y bienestar de la población donde se localizan dichos proyectos (OMT, 2006).
+3Los efectos directos se reﬁeren al ingreso no laboral y laboral generados por la compra de bienes y servicios por parte de los turistas. Los efectos secundarios resultan del gasto de ingresos ganados por el sector turismo. Los efectos indirectos se reﬁeren a la compra de insumos a otras industrias por parte de la industria turística. Los efectos inducidos son los gastos realizados con el ingreso que reciben los dueños de negocios turísticos y trabajadores del sector. Los efectos dinámicos o de largo plazo se reﬁeren a los efectos que permean en las localidades resultado de las inversiones de distintos tipos (infraestructura, recursos humanos, etc.) por parte del sector turístico, impactando en el desarrollo y atenuación de la pobreza del lugar.
+3
+
+Sin embargo, de acuerdo a Winters et al., (2013) y a Taylor y Filipski (2014), realizar evaluaciones de impacto de proyectos turístico presenta dos retos. El primero de ellos es la falta de aleatoriedad de los destinos turísticos, ya que éstos son elegidos por su potencial turístico, diﬁcultando encontrar un contrafactual adecuado. El segundo reto es la medición de los efectos secundarios, los cuales pueden ser tan grandes como los efectos directos, o incluso mayores, debido a que el turismo afecta no sólo los ingresos de las personas, pero también los precios y salarios de los destinos turístico.
+Debido a lo anterior, son pocos los estudios que han intentado medir el impacto del turismo en la reducción de la pobreza en los países subdesarrollados. Algunos usan modelos de series de tiempo (Croes, 2014) y otros modelos de simulación de equilibrio general computables (Klytchnikova y Dorosh, 2012; Wattanakuljarus y Coxhead, 2008). Asimismo, la OMT (2006) presenta ejemplos de proyectos y buenas prácticas en el turismo en varios países en desarrollo que han contribuido eﬁcazmente a reducir los niveles de pobreza, pero que no utilizan análisis contrafactual para la medición del impacto. Por la tanto, la evidencia empírica entre la relación turismo-pobreza es limitada e insuﬁciente para generar lineamientos de política pública para desarrollar proyectos turísticos que pueden generar impactos en la pobreza y en el bienestar de la población de la zona de inﬂuencia del proyecto.
+3. El Programa Pueblos Mágicos
+En el año 2001 el Gobierno Federal de México a través de la Secretaría de Turismo (SECTUR) implementó el Programa Pueblos Mágicos, para apoyar proyectos estratégicos que impulsen la actividad turística a nivel localidad.4 Un Pueblo Mágico es una localidad con atributos culturales y entornos urbanos y naturales de gran impacto con gran oportunidad para el aprovechamiento turístico (SECTUR, 2006). Mediante el otorgamiento del distintivo Pueblo Mágico, se ha buscado crear y consolidar una marca turística reconocida a nivel internacional que garantice al visitante, nacional o extranjero, una oferta de atractivos culturales y naturales única.
+Pueblos Mágicos es un programa de desarrollo turístico integral para localidades que, en un diferente nivel de desarrollo, organizan diversas acciones de carácter económico, social y ambiental con el propósito de mejorar las condiciones de vida de una localidad turística (SECTUR 2006, 2014). Entres sus principales objetivos se encuentran: diversiﬁcar la oferta turística al interior del país, generar y consolidar productos turísticos en las localidades apoyadas aprovechando sus atractivos turísticos, constituir al turismo local como actividad motora de la economía y como una herramienta de desarrollo sustentable en las localidades apoyadas. El programa tiene cobertura nacional y opera bajo un esquema de coordinación entre los sectores
+4El programa se creó como parte del Programa Nacional de Turismo 2001-2006, Capítulo V. Objetivos sectoriales, estrategias y acciones. Apartado 5.3. Eje Rector 3: Destinos Sustentables. Actualmente, el programa forma parte del Programa Nacional de Infraestructura 2014-2018, así como de los 10 Proyectos Estratégicos del Sector Turismo (SECTUR, 2014).
+4
+
+público, privado y social. En él participan la SECTUR, diversas instancias gubernamentales federales,5 los gobiernos estatales y municipales, los prestadores de servicios turísticos locales
+y la comunidad local.
+Para que una localidad sea nombrada Pueblo Mágico y pueda permanecer en el progra-
+ma, debe contar con una serie de atributos (tangibles e intangibles) y cumplir con una serie de
+requisitos establecidos por la SECTUR. En particular, la localidad debe tener atractivos turís-
+ticos culturales o religiosos, tener cercanía a algún destino turístico grande y ser accesible por
+carretera, así como contar con la participación activa de la población y autoridades locales.
+Como parte del proceso para lograr recibir el nombramiento, en primera instancia, la co-
+munidad local deberá conformar un Comité Pueblo Mágico y las autoridades municipales y
+estatales deben solicitar a la SECTUR la incorporación de la localidad al programa. Los miem-
+bros del Comité deben participar en un taller de inducción al programa previo a la integración del expediente, así como a un taller de planeación y gestión del turismo cultural.6 Posterior-
+mente, se lleva a cabo la integración de un expediente de la localidad, donde se fundamenta el
+cumplimiento de los requisitos del programa y se adjuntan los documentos probatorios. En el
+expediente se señala cuáles son los instrumentos de planeación estatal y municipal que esta-
+blecen al desarrollo turístico local como una acción estratégica, así como los instrumentos de regulación municipal de la imagen urbana y del comercio semiﬁjo y ambulante;7 los progra-
+mas y acciones de los tres órdenes de gobierno que beneﬁcian el desarrollo del municipio y de su sector turístico;8 el catálogo de atractivos y servicios turísticos; la tesis sobre la magia de la localidad9 y la declaratoria de zona de monumentos históricos;10 así como las condiciones
+de accesibilidad terrestre a la localidad y la factibilidad de su comercialización como parte de
+circuitos, corredores o rutas turísticas.
+Una vez integrado el expediente, las autoridades locales y el Comité Pueblo Mágico expo-
+nen ante el Comité Interinstitucional de Selección y Evaluación del Programa Pueblos Mágicos
+(CISE) los argumentos por los cuales se debe nombrar a la localidad Pueblo Mágico. La ex-
+posición puede realizarse en la localidad a ﬁn de que los miembros del CISE, mediante visita
+5Secretaría de Desarrollo Social, Secretaría de Educación Pública, Secretaría del Trabajo y Previsión Social, Secretaría de Economía, Secretaría de Medio Ambiente y Recursos Naturales, Fondo Nacional para el Fomento a las Artesanías, Consejo Nacional para la Cultura y las Artes, Banco Nacional de Obras y Servicios, Comisión Federal de Electricidad, Comisión Nacional del Agua y el Instituto Nacional de Antropología e Historia (SECTUR, 2014).
+6Los talleres deben tomarse previo a la valoración del expediente de la localidad por parte del Comité Interinstitucional de Selección y Evaluación del Programa Pueblos Mágicos, o al menos tener una fecha programada para su realización.
+7Entre los instrumentos se encuentran el Plan de Desarrollo Estatal, Plan Municipal de Desarrollo Urbano, Programa de Desarrollo Turístico Municipal, Reglamento de Imagen Urbana y Programas de reordenamiento del comercio semiﬁjo y ambulante en las zonas con mayor aﬂuencia turística en la localidad.
+8Incluye recursos para el desarrollo y mejora de infraestructura e imagen urbana y apoyos para el desarrollo del capital humano con impacto en actividades turísticas.
+9Se trata de un ensayo sobre los atributos histórico culturales de la localidad que justiﬁquen su candidatura y potencial incorporación al programa.
+10Se reﬁere a un documento emitido por alguna instancia federal o estatal que declare al patrimonio de la localidad como zona de monumentos históricos.
+5
+
+de campo, puedan evaluar su potencial turístico y áreas de oportunidad. A continuación, el CI-
+SE dictamina la incorporación de la localidad al programa basado en la exposición de motivos
+y la evaluación del expediente. Si el comité emite una recomendación favorable, la SECTUR nombra a la localidad Pueblo Mágico.11
+Si durante su evaluación por parte del CISE, el expediente no se encuentra completo, el
+Comité puede recomendar nombrar a la localidad Pueblo Mágico, condicionándola a que de cabal cumplimiento a los requisitos faltantes en un plazo determinado de tiempo.12 Si el Pueblo
+Mágico no cumple con los compromisos incompletos en el tiempo acordado, se le puede retirar
+el nombramiento. Si en una fecha posterior, la localidad demuestra que ya cumplió con los
+requisitos pendientes, la SECTUR puede reincorporla al programa.
+Durante el periodo 2001-2006, se nombraron los primeros 30 Pueblos Mágicos. Estas lo-
+calidades se distribuían en 30 municipios de 22 estados del país. De 2007 a 2012, se otorgaron nuevos nombramientos y se retiraron otros,13 por lo que al cierre de 2012, se contaba con 83
+Pueblos Mágicos ubicados en igual número de municipios en los 31 estados del país (Tabla 1,
+Anexos). Del total, sólo en los últimos dos años se nombraron 46 Pueblos Mágicos (11 en 2011 y 35 en 2012), en comparación a los 37 nombramientos otorgados en los 10 años previos.14
+Una vez nombrada Pueblo Mágico, la localidad se beneﬁcia con acciones de promoción y
+recursos para proyectos de inversión que forman parte de otros programas de la SECTUR y su
+sector coordinado. En materia de promoción, la SECTUR y el Consejo de Promoción Turística de México (CPTM)15 llevan a cabo una difusión permanente del programa en sus páginas
+oﬁciales de Internet. Por su parte, el CPTM realiza distintos tipos de campañas publicitarias a
+nivel nacional e internacional en las que se promociona la marca Pueblos Mágicos.
+En materia de inversión, la SECTUR le otorga recursos al Pueblo Mágico para el desarrollo
+de proyectos que mejoren su infraestructura (como cableado subterráneo y sustitución de pisos
+con material original), imagen urbana (como restauración de fachadas rescate de áreas verdes) y equipamiento turístico (como señalética y estacionamientos), principalmente.16 Los recur-
+11Hasta septiembre de 2014, los criterios que regían la operación del programa eran de carácter interno y no se publicaban de manera oﬁcial. El 26 de septiembre de 2014, la SECTUR publicó en el Diario Oﬁcial de la Federación los Lineamientos generales para la incorporación y permanencia al Programa Pueblos Mágicos (SECTUR, 2014), para establecer y reglamentar de manera clara y precisa los procedimientos que las localidades deben cumplir para su incorporación y permanencia en el programa.
+12La localidad cuenta con 12 meses para presentar el Plan de Desarrollo Urbano Turístico, contados a partir de la integración del expendiente; y con un plazo de 6 meses posterior a su nombramiento como Pueblo Mágico, para elaborar y presentar el Reglamento de Imagen Urbana. Asimismo, la localidad debe poner en operación un programa de reordenamiento del comercio semiﬁjo o ambulante (SECTUR, 2006).
+13En 2008 se desincorporó a San Miguel de Allende por ser declarado Patrimonio Cultural de la Humanidad por la UNESCO. En 2009, se les retiró el nombramiento a Mexcaltitlán, Tepoztlán y Papantla por no cumplir con los requisitos de imagen urbana y reordenamiento del comercio semifjo y ambulante. Tepoztlán y Papantla recuperaron el nombramiento en 2010 y 2012, respectivamente.
+14Durante el periodo enero de 2013 a junio de 2015, no se otorgó el distintivo Pueblo Mágico a ninguna localidad.
+15Órgano desconcentrado de la SECTUR a cargo de la promoción de México como destino turístico dentro y fuera del país.
+16Los otros rubros de apoyo son: creación, mejora y rehabilitación de sitios de interés turístico; apoyo a sistemas
+6
+
+sos otorgados por la SECTUR son complementados con recursos que aportan los gobiernos estatales y municipales.17
+Mucho se ha dicho sobre el éxito del programa y los beneﬁcios que generado en las comunidades locales. De acuerdo al Diagnóstico de la evolución y perspectivas del Programa Pueblos Mágicos citado en Armenta (2014), cada año la actividad turística de los Pueblos Mágicos genera una derrama económica de 7,200 millones de pesos en beneﬁcio directo de 2 millones de personas y de otros 3 millones de manera indirecta.18 Lo anterior, resultado de la visita que cerca de 4 millones de viajeros hacen a los Pueblos Mágicos, con una estadía promedio de 1.17 días y un gasto promedio diario de 768 pesos.
+Con el programa Pueblos Mágicos, en conjunto con las acciones de promoción e inversión, se busca convertir al turismo local en una actividad central para la generación de empleos y derrama económica que impulse, a su vez, el bienestar social de los habitantes de las localidades apoyadas. Sin embargo, al día de hoy, no se ha llevado a cabo ninguna evaluación sobre el impacto del programa en las comunidades nombradas Pueblos Mágicos que dé sustento empírico a las aseveraciones sobre la capacidad que tiene el sector turismo para generar crecimiento económico y bienestar social y que son motivos para la creación del programa.19
+4. Estrategia empírica: Método de control sintético
+El objetivo de este estudio es analizar el efecto del programa Pueblos Mágicos sobre el bienestar de la población. El bienestar de la población es medido a través del índice rezago social absoluto. Este índice es una transformación del índice de rezago social (IRS)20 que calcula el Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL)21 y que permite analizar la desigualdad de coberturas sociales en el país.
+Para poder estudiar el efecto del Programa Pueblos Mágicos en la variable de resultado de
+y materiales de información turística; mejora de la calidad de los productos turísticos (como modernización de las pequeñas y medianas empresas, certiﬁcación empresarial y profesionalización de los recursos humanos); y el desarrollo de rutas, circuitos y corredores (Madrid, 2012).
+17Hasta 2013, la aportación de recursos se realizaba a través de los Convenios de Coordinación en materia de Reasignación de Recursos que la SECTUR ﬁrmaba con los gobiernos estatales. A partir de 2014, los recursos se canalizan a través del Programa para el Desarrollo Regional Turístico Sustentable.
+18La población total en los municipios donde se localizan los Pueblos Mágicos es de 5 millones de personas. 19En 2012 se publicó la Evaluación del Desempeño de los Destinos Turísticos en el Marco de los Convenios de Coordinación en materia de Reasignación de Recursos, que incluyó el análisis de 35 Pueblos Mágicos (Madrid, 2012). El estudio consistió en la elaboración de un índice de desempeño turístico global basado en el método de componentes principales. Tambien incluyó un análisis del efecto de los recursos otorgados a través de los convenios en el cambio de los índices de rezago social y de marginación de los Pueblos Mágicos; sin embargo, no es válido comparar el orden de los índices en el tiempo debido a que los índices son calculados con la técnica de componentes principales, cuyo objetivo es ordenar en un punto en el tiempo las unidades observadas según su nivel de rezago o marginación. 20Más detalles del índice de rezago social y del índice de rezago social absoluto se exponen en la sección de Datos y Muestra. 21El CONEVAL es el órgano encargado de generar información objetiva sobre la situación de la política social y la medición de la pobreza en México (CONEVAL, 2015).
+7
+
+interés (Y ), es decir, el bienestar de la población a lo largo del tiempo, necesitamos realizar un análisis contrafactual en el que comparemos los resultados potenciales de las localidades designadas Pueblos Mágicos. Esto es, necesitamos comparar el desempeño de estas localidades dado que recibieron el nombramiento (Y1), versus el desempeño que hubieran tenido si no lo hubieran recibido (Y0). El problema es que no podemos identiﬁcar el impacto del programa sobre una misma localidad porque en la vida real sólo observamos uno de los dos resultados potenciales.
+Por otro lado, los Pueblos Mágicos diﬁeren de otras localidades de México en características que pueden inﬂuir su mejora del bienestar. Por lo que una simple comparación de la evolución del bienestar en el tiempo entre los Pueblos Mágicos y las otras localidades del país, reﬂejaría tanto el efecto del programa Pueblos Mágicos, como el efecto de las diferencias de los determinantes del bienestar. Lo que podemos hacer es comparar el desempeño de las localidades apoyadas con respecto a un grupo de control conformado por una o varias localidades con características similares a las de los Pueblos Mágicos y que no hayan sido apoyadas por el programa.22 Para ello, requerimos el supuesto de independencia estadística entre recibir el nombramiento de Pueblo Mágico y los resultados potenciales y que ambos grupos tengan la misma tendencia en el tiempo.
+Para conformar el grupo de control utilizamos el MCS, introducido por primera vez en Abadie y Gardeazabal (2003) y extendido en Abadie et al. (2010). Este método se basa en la premisa que cuando la intervención o evento de interés ocurre a nivel agregado y las unidades de análisis son pocas unidades agregadas (países, estados, municipios, localidades), una combinación de unidades de comparación (“el control sintético”) puede reproducir mejor las características de la unidad o unidades expuestas a la intervención, que cualquier unidad por sí sola. El control sintético es un promedio ponderado de todas las unidades de control potenciales que más asemejan las características de las unidades de interés.
+El MCS ha sido utilizado para medir el efecto de la actividad del grupo terrorista ETA en el crecimiento económico del País Vasco (Abadie y Gardeazabal, 2003); el efecto de un programa de control de tabaco sobre su consumo en el estado de California, Estados Unidos (Abadie et al., 2010); y el impacto en el ingreso per cápita debido a un desastre natural en la isla Kauai, Hawai (Coffman y Noy, 2012), la liberalización económica en varios países (Billmeier y Tommaso, 2013), la reuniﬁcación alemana de 1990 (Abadie et al., 2015) y la implementación de plantas nucleares en Japón (Ando, 2015). Recientemente, el MCS ha sido utilizado para medir el efecto de una política de turismo en la generación de empleo en la provincia de Salta, Argentina (Castillo et al., 2015).
+Las características del MCS que lo hacen atractivo son: a) Reduce la discrecionalidad en la selección de las unidades de control, al tratarse de un procedimiento estadístico determinado por los datos en el que se demuestra la aﬁnidad en características observables entre la unidad tratada y las unidades de comparación.
+22O al menos, que sus niveles de exposición al programa diﬁeran notablemente.
+8
+
+b) Aumenta la trasparencia al explicitar la contribución relativa de cada unidad de control en el contrafactual, así como las similitudes entre la unidad afectada y el control sintético respecto a los resultados y sus predictores previos a la intervención. c) Evita la extrapolación al restringir los pesos que se asignan a las unidades de control a valores positivos y que sumen uno, en comparación a los métodos tradicionales de regresión. d) Permite que la heterogeneidad no observada varíe en el tiempo, versus el modelo tradicional de datos panel en que las variables no observables son constantes en el tiempo (efectos ﬁjos). e) Propone una nueva forma de hacer inferencia para probar la signiﬁcancia de las estimaciones, sin importar el número de unidades de control o el nivel de agregación de los datos.
+Método de Control Sintético Supongamos que existe una muestra de J + 1 unidades (por ejemplo, municipios), donde
+j = 1 es la unidad expuesta a la intervención (o tratamiento) y las unidades j = 2, ..., J + 1 son las unidades de control potenciales que conforman el grupo de donantes (donor pool).23
+Asumimos que la muestra es un panel balanceado y que exiten t = 1, ..., T periodos de tiempo. Existen un número positivo T0 de periodos pretratamiento y un número positivo T1 de periodos postratamiento, con t = T0 + T1. La unidad 1 es expuesta al tratamiento en los periodos T0 + 1, ..., T y la intervención no causa efectos en el periodo previo a la intervención (1, ..., T0).
+Para la unidad expuesta a la intervención, sea Y1 el resultado potencial que se observaría en caso de recibir el tratamiento, Y0 el resultado potencial que se observaría de no recibir el tratamiento y Y el resultado observado. Entonces, para t > T0 el efecto de la intervención para la unidad 1 en el tiempo t es:
+α1t = Y1t −Y0t = Yt −Y0t .
+Dado que observamos Y1t, para estimar (α1T0+1, ..., α1T ) sólo requerimos estimar Y0t. Por otro lado, para las unidades del donor pool sólo observamos Y0t por no estar expuestas a la intervención. Supongamos que para una unidad i, el valor de Y0t está dado por el siguiente modelo lineal de factores:
+Yi0t = δt + θt Zi + λt µi + εit
+donde δt es un factor desconocido común entre todas las unidades, θt es un vector (1xr) de parámetros desconocidos, Zi es un vector (rx1) de covariantes observadas no afectadas por la intervención, λt es un vector (1xF) de factores comunes no observados, µi es un vector (Fx1) de cargas de factores desconocidos y un término de error εit de choques transitorios inesperados con media cero. Dado que λ puede variar en el tiempo, este modelo extiende el modelo típico de diferencias en diferencias de efectos ﬁjos, en el que se permite la existencia de heterogeneidad no observada pero que es constante en el tiempo.
+23Sin pérdida de generalidad, la explicación del modelo hace referencia a una sola unidad expuesta a la intervención de interés. En el caso donde múltiples unidades son expuestas a la intervención, el MCS puede aplicarse a cada unidad por separado o a un agregado de todas las unidades afectadas (Abadie et al., 2010, 2015).
+9
+
+Ya que el control sintético está deﬁnido como el promedio ponderado de las unidades
+que forman el donor pool, éste puede ser representando por un vector (Jx1) de pesos W = (w2, ..., wJ+1) , con 0 ≤ w j ≤ 1 para j = 2, ..., J + 1 y ∑Jj=+21 w j = 1. Cada valor particular de W corresponde a un control sintético potencial.
+Abadie et al. (2010) demuestra que si escogemos un vector W ∗ = (w∗2, ..., wJ∗+1) , tal que para todo el periodo pretratamiento T0:
+
+J+1
+
+J+1
+
+∑ ∑ w∗jYjT0 = Y1T0 y
+
+w∗j Z jT0 = Z1T0
+
+(1)
+
+j=2
+
+j=2
+
+y el número de periodos preintervención es grande respecto a la escala de los choques transito-
+
+rios, entonces, la diferencia:
+
+J+1
+∑ αˆ it = Y1t − w∗jYjt j=2
+
+es un estimador insesgado del efecto de la intervención (α1t) para t = T0 + 1, ..., T . Para que la ecuación (1) se cumpla exactamente, los valores de la unidad tratada deben
+
+pertenecer a la envolvente convexa conformada por los valores de todas las unidades de control
+
+potenciales, Abadie et al. (2010) propone escoger un valor de W tal que las características de
+
+la unidad sintética sean lo más parecidas a las de la unidad tratada.
+
+Para evitar sesgos causados por la interpolación entre unidades con características muy
+
+diferentes, es recomendable restringir el donor pool a unidades con características similares a
+
+las de la unidad tratada y que no hayan sufrido choques estructurales a la variable de resultado
+
+durante el periodo de la muestra.
+
+Sea X1 un vector (kx1) con los valores pretratamiento de las características de la unidad tratada y X0 una matriz (kxJ) con los valores para las mismas características de las unidades del donor pool (X1 y X0 incluyen valores pretratamiento de la variable de de resultado). Abadie y Gardeazabal (2003) y Abadie et al. (2010) prononen seleccionar al control sintético, W ∗, como el valor de W que minimiza la distancia X1 − X0W , esto es, W ∗ minimiza las diferencias entre los valores pretratamiento de la unidad tratada y del control sintético:
+
+k
+∑ vm(X1m − X0mW )2
+m=1
+donde vm es un peso que reﬂeja la importancia relativa que se asigna a la m-ésima variable cuando medimos la discrepancia entre X1 y X0W . 24
+Dado que la selección de los pesos vm inﬂuyen el error cuadrático medio del estimador, escogemos los pesos vm, tal que el control sintético resultante minimice el error cuadrático
+24Formalmente, W ∗ minimiza X1 − X0W ν = (X1 − X0W ) V (X1 − X0W ) donde V es una matriz simétrica (kxk) positiva semideﬁnida, cuya diagonal reﬂeja la importancia relativa que se asigna a cada uno de los predictores de la variable de resultado.
+
+10
+
+medio estimado (MSPE, por sus siglas en inglés):
+
+∑ ∑ MSPE
+
+=
+
+1 T0
+
+T0
+(Y1t
+t=1
+
+J+1
+− ω∗j Yjt )2
+j=2
+
+Es importante que el control sintético reproduzca lo más posible los valores pretratamiento de la unidad tratada de las variables con mayor poder predictivo en el resultado de interés. La intuición es que sólo aquellas unidades semejantes en los determinantes observables y no observables del resultado de interés y en el efecto de dichos determinantes en la variable de resultado, producirán trayectorias similares de la variable de resultado sobre largos periodos de tiempo (Abadie et al, 2015).25 Si esto es así, posterior al primer periodo de intervención, cualquier divergencia en la trayectoria del resultado de interés se considera que es causada por el tratamiento.
+
+Inferencia utilizando el Método de Control Sintético Una limitante del MCS es que no se puede realizar inferencia estadística tradicional basada
+en muestras grandes, debido principalmente al tamaño pequeño de la muestra y a la falta de aleatorización en la selección de la muestra. Por ello, Abadie y Gardeazabal (2003) y Abadie et al. (2010, 2015) proponen la realización de estudios placebo o pruebas de falsiﬁcación, semejantes a la inferencia con permutaciones, donde la distribución de una prueba estadística se calcula con permutaciones aleatorias de las asignaciones de las unidades de la muestra a los grupos de tratamiento y control. Los estudios placebo se basan en la premisa que el efecto estimado de la intervención de interés por el control sintético se verá disminuida si encontramos estimaciones del efecto de igual o mayor magnitud en las unidades no expuestas a la intervención y a las que se les asigna el tratamiento de manera artiﬁcial.
+
+5. Datos y muestra
+Utilizo datos muncipales de los municipios en los que se localizan los 83 Pueblos Mágicos vigentes. Se trata de datos panel para el periodo 2000-2010 con periodicidad quinquenal, por lo que se cuenta con un periodo pretratamiento y dos periodos posteriores a la intervención. Esto es así porque el CONEVAL comenzó a calcular el IRS a partir del año 2000 utilizando como fuente de datos los Censos y Conteos de Población y Vivienda que se elaboran cada 10 años de manera intercalada.26
+El estudio analiza el efecto promedio del programa en el rezago social de los Pueblos Má-
+25Si el número de periodos preintervención es grande, hacer matching en resultados pretratamiento ayuda a controlar por factores no observables y por la heterogeneidad del efecto de factores no observables y observables en la variable de resultado.
+26Los últimos Censos de Población y Vivienda corresponden a 2000 y 2010. El último Conteo de Población y Vivienda es del año 2005 y el próximo será para 2015.
+
+11
+
+gicos que fueron nombrados durante el sexenio 2001-2006 (30 localidades). La unidad de tratamiento se conforma del promedio simple de los pueblos analizados, para lo cual calculé el promedio de cada uno de los predictores y de la variable de resultado. Toda vez que el modelo asume que la unidad de interés es expuesta al tratamiento de manera interrumpida durante el periodo postratamiento, eliminé de la muestra dos pueblos a los que se les retiró el nombramiento de forma permanente y dos más a los que se les retiró de manera temporal.27 Adicionalmente retiré de la muestra al municipio donde se localiza el Pueblo Mágico Todos Santos, debido a que la cabecera municipal también es la capital del estado28 y también retiré al municipio de Bacalar, cuya creación data desde 2011.29 Como resultado de la depuración, mi conjunto de Pueblos Mágicos analizados se redujo de 30 a 24.
+Analicé el efecto del programa sobre tres unidades de tratamiento, cada una conformada por un grupo de Pueblos Mágicos nombrados en ciertos años. La primera unidad de tratamiento es el Pueblo Mágico Promedio 2001-2006, conformado por el promedio de los 24 Pueblos Mágicos nombrados de 2001 a 2006. La segunda y tercera unidades de tratamiento son el Pueblo Mágico Promedio 2001 y Pueblo Mágico Promedio 2006,los cuales a su vez están conformados por el promedio de las localidades nombradas Pueblo Mágico en 2001 (2 localidades) y en 2006 (4 localidades), respectivamente.30
+Dado que el control sintético es un promedio ponderado de los municipios que conforman el donor pool que mejor reproducen los valores del conjunto de predictores de la unidad tratada para el periodo pretratamiento, de manera que el Pueblo Mágico Sintético reﬂeje la trayectoria del rezago social que el Pueblo Mágico Promedio hubiera experimentado de no haber recibido el nombramiento, debemos restringir al donor pool a unidades con características similares a la unidad tratada y evitar así sesgos por interpolación.
+Las localidades que aspiran a ser Pueblo Mágico deben contar con cierto nivel de potencial turístico que no todas las localidades del país poseen, por lo que el grupo de control ideal debería incluir sólo localidades con atributos turísticos que puedan desarrollarse. Como no se cuenta con una base de datos nacional que establezca el grado de potencial turístico de las localidades, propongo conformar al donor pool con los 55 Pueblos Mágicos que fueron nombrados durante el periodo 2007-2012.31 Dado que 46 de estos Pueblos Mágicos fueron nombrados en 2011 y 2012, se puede considerar que existe una brecha de tiempo suﬁciente para que los Pueblos Mágicos nombrados hasta 2006 hayan internalizado, al menos parcialmente, el efecto del programa.
+27A San Miguel de Allende y Mexcaltitán se les restiró el nombramiento de forma permanente en 2008 y 2009, respectivamente. A Tepoztlán y Papantla se les retiró el nombramiento en 2009, mismo que recuperaron en 2010 y 2012, respectivamente.
+28Los datos municipales se conforman principalmente por los datos de la capital estatal, pudiendo sesgar las estimaciones.
+29Hasta el 1o de febrero de 2011 la localidad de Bacalar estaba incorporada al municipio de Othón P. Blanco. 30El Pueblo Mágico Promedio 2001 se integra por Real de Catorce y Huasca de Ocampo. El Pueblo Mágico Promedio 2006 agrupa a Coatepec,Santiago, Cuitzeo y Real de Asientos. 31Los 55 Pueblos Mágicos pueden consultarse en el Cuadro 1 de los Anexos.
+12
+
+El resultado de interés es el bienestar de la población a nivel municipal medido a través del índice de rezago social absoluto (rezago social). Los datos del rezago social los obtuve de Rosas (2015), en donde se realizó una transformación de los datos que permitió construir una medición cardinal del IRS. El IRS agrega en una sola medición 11 indicadores clasiﬁcados en cuatro carencias sociales relativas a educación, servicios de salud, servicios básicos y espacios en la vivienda. El índice ordena a los estados, municipios y localidades de México en cinco estratos de rezago social: muy bajo, bajo, medio, alto y muy alto.32
+En el vector X1 y en la matrix X0 incluí los valores para el periodo pretratamiento de los predictores del rezago social para el Pueblo Mágico Promedio y los 55 controles potenciales, respectivamente. Siguiendo a Rosas (2015), los predictores que incluí son: población total municipal, el partido del gobierno municipal es igual al partido del gobierno estatal; el partido que postuló al gobernador del estado fue el PRI; el partido que postuló al presidente municipal fue el PRI; el municipio elige autoridades por usos y costumbres; índice de capacidad ﬁnanciera; Fondo de Aportaciones para la Infraestructura Social Municipal (FISM); Fondo de Aportaciones para el Fortalecimiento de los Municipios (FORTAMUN); porcentaje de la población en rezago educativo; y porcentaje de la población que habita en localidades menores a 5000 habitantes. Adicionalmente incluí como predictores: el porcentaje de la población que vive en la localidad Pueblo Mágico y si la localidad Pueblo Mágico es cabecera municipal. Las fuentes de información se señalan en el Apéndice.
+Construí el control sintético que mejor reﬂejara los valores de los predictores del Pueblo Mágico Promedio en el periodo pretratamiento, usando el método de control sintético desarrollado en la sección previa. Posteriormente estimé el efecto del programa Pueblos Mágicos como la diferencia en el valor del rezago social entre el Pueblos Mágico Promedio y su control sintético para los años posteriores al inicio del programa (2005 y 2010).
+32El IRS se elabora con la técnica estadística de componentes principales. No se trata de un medición de pobreza al no incorporar los indicadores de ingreso, seguridad social y alimentación como lo señala la Ley General de Desarrollo Social, ya que dichas variables no estan explícitas en los Censos ni Conteos de Población y Vivienda (CONEVAL, 2010).
+13
+
+6. Resultados
+Para analizar el efecto del programa Pueblos Mágicos, requerimos saber qué hubiera pasado con el Pueblo Mágico Promedio de no haber recibido el nombramiento. Utilizando el método de control sintético, para cada una de los tres Pueblos Mágicos Promedio, construí el contrafactual como el promedio ponderado de los Pueblos Mágicos del donor pool que mejor replican los valores de los predictores del rezago social del Pueblo Mágico Promedio en el periodo pretratamiento.
+
+6.1. Pueblo Mágico Promedio 2001-2006
+
+El cuadro 1 presenta los pesos para cada uno de los 55 Pueblos Mágicos donantes en el Pueblo Mágico Sintético. La unidad sintética le asigna peso a 52 de las 55 unidades del donor pool, lo que podría pensarse razonable ya que todos los integrantes fueron nombrados Pueblos Mágicos en años posteriores, indicativo de que cuentan con ciertos atributos turísticos.
+
+Cuadro 1: Peso de los Pueblos Mágicos 2007-2012
+en el Pueblo Mágico Sintético
+
+Pueblo Mágico
+
+Peso Pueblo Mágico
+
+Peso
+
+Angangueo Arteaga Batopilas Bocoyna Cadereyta de Montes Calvillo Capulálpam de Méndez Chiapa de Corzo Chignahuapan Comitan de Domínguez Cuatro Ciénegas El Fuerte El Oro Huamantla Huichapan Jala Jalpan de Serra Jerez Jiquilpan Lagos de Moreno Loreto Magdalena de Kino Malinalco Mapimi Metepec Mier Mineral del Chico Nochistlán de Mejía
+
+0.196 0.002 0.001 0.001 0.002 0.037
+0 0.002 0.003 0.002 0.002 0.002 0.006 0.004 0.004 0.002 0.002 0.002 0.002 0.002
+0 0.215 0.002 0.002 0.011
+0 0.003 0.003
+
+Pahuatlán Palizada Pinos Purísima del Rincón Rosario Salvador Escalante Salvatierra San Luis de la Paz San Pedro Cholula San Sebastián del Oeste Sombrerete Tacámbaro Tacotalpa Tecate Tequisquiapan Teúl de González Ortega Tlatlauquitepec Tlayacapan Tula Tzintzuntzan Valladolid Viesca Xico Xicotepec Xilitla Yuriria Zacatlán
+
+0.002 0.002 0.003 0.036 0.008 0.003 0.006 0.002 0.008 0.002 0.002 0.005 0.002 0.067 0.003 0.002 0.005 0.022 0.002 0.021 0.004 0.002 0.006 0.005 0.002 0.131 0.135
+
+Una vez calculado el Pueblo Mágico Sintético, éste se compara con el Pueblo Mágico Promedio real en términos de las características pretratamiento. En el cuadro 2 se presenta el valor de los predictores del rezago social en el año previo a la entrada en vigor del programa (2000) para la unidad tratada y su unidad sintética, junto con el promedio simple de las 55 unidades
+14
+
+del donor pool. En comparación con el Pueblo Mágico Promedio, las aportaciones del FISM y del FORTAMUN y la proporción de municipios con presidentes municipales postulados por el PRI fueron mayores para el promedio de las 55 unidades de control potenciales.33 Mientras que previo al inicio del programa en el 2000, las proporciones de municipios con ejecutivo estatal postulado por el PRI y el índice de capacidad ﬁnanciera fueron menores para el promedio de los 55 s mágicos que para la unidad de interés. En cambio, el Pueblo Mágico Sintético es una unidad de control más apropiada en términos de los predictores, ya que sus valores son muy cercanos a los del Pueblo Mágico Promedio.
+
+Cuadro 2: Valor de los predictores del rezago social
+
+Variables
+
+Pueblo Mágico Promedio Promedio de los 55
+
+Real
+
+Sintético
+
+Pueblos Mágicos
+
+Población total del municipio Mismo partido en gobiernos estatal y municipal Gobierno estatal del PRI Gobierno municipal del PRI Autoridades por usos y costumbres Índice de capacidad ﬁnanciera FISM FORTAMUN % Población en rezago educativo % Población en Localidades menos de 5 mil hab. % Población en el Pueblo Mágico El Pueblo Mágico es cabecera municipal
+
+44158 0.625 0.6667 0.5417
+0 0.3346 14671063 11861496 61.33 54.06 51.25 0.958
+
+44123 0.623 0.664 0.54
+0 0.3343 14636006 11852027 61.18 53.95 51.21 0.957
+
+45266 0.527 0.5818 0.7818 0.02 0.2682 15700000 12500000 66.15 59.97 40.08 0.927
+
+Nota: Todas las variables corresponden al año 2000. El FISM y el FORTAMUN están en pesos de 2010.
+
+La ﬁgura 1 muestra la tendencia del rezago social absoluto de 2000 a 2010 para el Pueblo Mágico Promedio y su unidad sintética. Observamos que el Pueblo Mágico Sintético no reproduce de manera precisa el valor del rezago social del Pueblo Mágico Promedio en el año previo a la entrada en vigor del programa, aun cuando las características pretratamiento entre ambas unidades son muy similares. Sin embargo, el supuesto relevante es que, una vez que tenemos un punto de partida para la unidad sintética, ésta sigue una trayectoria determinada. Así, el supuesto clave es que la trayectoria que sigue el Pueblo Mágico Sintético, es la trayectoria que hubiera seguido el Pueblo Mágico Promedio de no haber sido nombrado Pueblo Mágico.
+El efecto estimado del programa Pueblos Mágicos en el rezago social se calcula como la diferencia entre el Pueblo Mágico Promedio y su control sintético en los periodos posteriores a la implementación del programa en 2001. Observamos que para las mediciones de los años 2005 y 2010 el valor del rezago social disminuyó tanto para la unidad tratada como para la unidad sintética. No obstante, la pendiente del Pueblo Mágico Promedio es mayor. Por lo tanto, el rezago social disminuyó más en éste que en el Pueblo Mágico Sintético.
+En la ﬁgura 2 se muestra la brecha del rezago social entre el Pueblo Mágico Promedio y su sintético. Se aprecia cómo la brecha se reduce en el periodo posterior al inicio del programa. Los resultados sugieren que para el periodo 2000-2010 el rezago social disminuyó 2.7 puntos
+33El partido que postuló al titular del Ejecutivo Federal en funciones en el año 2000 fue el PRI.
+
+15
+
+Figura 1: Tendencia del rezago social absoluto: Pueblo Mágico Promedio vs. Pueblo Sintético
+(en una escala del 0 al 100) como consecuencia del programa Pueblos Mágicos, que puede considerarse una reducción marginal.34
+Figura 2: Brecha en el rezago social absoluto entre el Pueblo Mágico Promedio y su sintético
+Para evaluar la robustez de los resultados, incluí predictores adicionales del rezago social para construir el control sintético, de acuerdo a Castillo et al. (2015). Los predictores adicionales fueron: número de unidades económicas, personal ocupado total, total de remuneraciones y la producción bruta total. Los resultados permanecieron prácticamente igual sin importar la cantidad de predictores incluidos.
+34De 2000 a 2010 el rezago social del Pueblo Mágico Promedio 2001-2006 se redujo en 13.07 puntos, mientras que el rezago social a nivel nacional disminuyó en promedio 15.93 puntos.
+16
+
+6.2. Pueblo Mágico Promedio 2001
+Dado que el tiempo de exposición al programa (nombramiento junto con recursos para inversión otorgados y la promoción realizada) podría ser un factor que inﬂuya en su efectividad, analicé el efecto del programa sobre los Pueblos Mágicos nombrados en 2001. Estos pueblos son los que han tenido una mayor exposición al programa y, por lo tanto, podría presuponerse que éstos son los pueblos que más han podido internalizar los beneﬁcios. Para ello, utilicé el Pueblo Mágico Promedio 2001 y su unidad sintética.
+En el Cuadro 2 de los Anexos se presentan los pesos que tienen en el Pueblo Mágico Sintético cada uno de las 55 unidades del donor pool. En el Cuadro 3 se presentan los valores para el año 2000 (pretratamiento) de los predictores del Pueblo Mágico Promedio 2001 real, su sintético y el promedio simple de las 55 unidades del donor pool. Con ello se corrobora que el Pueblo Mágico Sintético es más adecuado como unidad contrafactual que el promedio de todos las unidades del donor pool.
+En la ﬁgura 3 (a) se muestra la tendencia del rezago social de 2000 a 2010 para el Pueblo Mágico Promedio 2001 y su sintético. En la ﬁgura 3 (b) se presenta el efecto del programa para 2005 y 2010, medido como la brecha del rezago social entre las dos unidades. Los resultados sugieren que de 2000 a 2010 en los Pueblos Mágicos nombrados en 2001 el rezago social disminuyó en el promedio casi un punto (0.96) a consecuencia del programa, efecto aún menor que el encontrado para el promedio 2001-2006.
+
+Figura 3: Pueblo Mágico Promedio 2001 vs Pueblo Mágico Sintético
+
+(a) Tendencia del rezago social absoluto
+
+(b) Brecha en el rezago social absoluto
+
+6.3. Pueblo Mágico Promedio 2006
+En las dos situaciones previamente analizadas, encontrar un efecto marginal del programa Pueblos Mágicos podría deberse a la falta de ajuste en las trayectorias entre la unidad tratada y su sintético en el periodo previo al inicio de operaciones del programa. De ser éste el caso, el efecto (o la falta de él) estaría mal estimado. Por ello, procedí a estimar el efecto del programa
+17
+
+en el Pueblo Mágico Promedio 2006. Para este caso cuento con dos periodos preintervención (2000 y 2005) y uno postintervención (2010). La intuición detrás es que, el contar con más observaciones pretratamiento permite minimizar aún más el MSPE, logrando un mejor ajuste en la trayectoria entre la unidad tratata y su control sintético, de manera que el resultado que encuentre sea más preciso.
+En el Cuadro 3 de los Anexos se presentan los pesos para cada uno de los 55 Pueblos Mágicos del donor pool. Mientras que en el Cuadro 4 se presentan el valor promedio de los predictores del rezago social para todo el periodo pretratamiento, tanto para el Pueblo Mágico Promedio 2006 y su unidad sintética, como para el promedio simple de las 55 unidades del donor pool. En este caso como en los dos previos, la unidad sintética es un contrafactual más adecuado para la unidad tratada, debido a la semejanza de los predictores preintervención.
+La ﬁgura 4 (a) muestra la tendencia del rezago social para el Pueblo Mágico Promedio 2006 y su Pueblo Sintético. Podemos apreciar que la tendencia en el rezago social que siguen ambas unidades en el periodo pretratamiento es muy semejante, especialmente para el año 2005, producto de contar con más observaciones previas al inicio del programa. Por lo tanto, para el caso 2006, tenemos un mejor ajuste en el valor de la variable de interés en comparación a los casos de 2001 y 2001-2006. De hecho, mientras que para estas últimas dos situaciones el valor de la raíz cuadrada del MSPE fue de 4.765 y 3.856 puntos, respectivamente, el valor para 2006 fue de sólo 0.724 puntos. La ﬁgura 4 (b) presenta la brecha en el rezago social entre el Pueblo Mágico Promedio y su sintético. Los resultados sugieren que la reducción del rezago social en 1.31 puntos de 2005 a 2010 es debido a la intervención del programa. Este efecto es mayor que el encontrado para 2001 pero menor que para el caso de 2001-2006, por lo que sigue siendo un efecto marginal.
+
+Figura 4: Pueblo Mágico Promedio 2006 vs Pueblo Mágico Sintético
+
+(a) Tendencia del rezago social absoluto
+
+(b) Brecha en el rezago social absoluto
+
+18
+
+7. Inferencia: Pruebas placebo
+Siguiendo a Abadie et al. (2010, 2015) y Castillo et al. (2015), aplico el método de control sintético a cada una de las unidades de control potenciales para estimar los efectos placebo correspondientes. Si el efecto estimado para el Pueblo Mágico Promedio es inusualmente grande respecto a la magnitud del efecto calculado para las unidades no expuestas a la intervención, se interpreta que el análisis realizado da evidencia signiﬁcativa de un efecto negativo sobre el rezago social del Pueblo Mágico Promedio. En cambio, si la magnitud del efecto de los estudios placebo es similar o mayor al efecto estimado para el Pueblo Mágico Promedio, el análisis no provee evidencia signiﬁcativa de un efecto en la disminución del rezago social por parte del programa Pueblos Mágicos.
+Especíﬁcamente, aplico de manera iterativa el método de control sintético a cada una de los 55 municipios que forman el donor pool, como si la localidad ubicada en dicho municipio hubiera recibido el nombramiento de Pueblo Mágico en el periodo 2001-2006 (el placebo). En este proceso, incorporo al Pueblo Mágico Promedio dentro del donor pool. Una vez creado el control sintético de las 55 unidades de control potenciales, estimo el efecto placebo correspondiente y construyo la distribución de las brechas del rezago social estimadas de los Pueblos Mágicos controles. La idea detrás es que la validez de los resultados encontrados para la unidad de interés se verá fuertemente debilitada si los efectos estimados con el MCS para los municipios no tratados, son al menos tan grandes como el efecto del Pueblo Mágico Promedio.
+7.1. Pueblo Mágico Promedio 2001-2006
+En la ﬁgura 5 observamos la brecha del rezago social entre el Pueblo Mágico Promedio y su control sintético (en color negro) y las 55 brechas entre los municipios del donor pool y sus controles sintéticos correspondientes (brechas placebo en color gris). Apreciamos que la brecha estimada del rezago social para el Pueblo Mágico Promedio es negativa, pero no es una brecha inusualmente grande con respecto a las brechas placebo de los municipios controles.
+Si el ajuste de la trayectoria entre la unidad sintética y la unidad tratada durante el periodo pretratamiento no es bueno, podría pensarse que el efecto que se encuentre es debido a esta falta de ajuste y no a la intervención. La misma lógica opera en sentido inverso. Esto signiﬁca que no encontrar un efecto de la intervención en la unidad tratada podría deberse a un mal ajuste de la trayectoria entre las unidades tratada y sintética previo al tratamiento, y no a que la interveción o política carezcan de efecto. Debido que para el Pueblo Mágico Promedio 2001-2006 sólo cuento con un único punto en el tiempo (año 2000) previo a la intervención del programa, no puedo saber si las trayectorias están bien ajustadas o no. Quizás no lo están y es la razón por la cual, no encuentro un efecto inusual del programa Pueblos Mágicos en la unidad tratada.35
+35Una falta de ajuste en las trayectorias del rezago social entre el Pueblo Mágico Promedio y su control sintético, se reﬂeja en el valor alto del error cuadratico medio que estimé.
+19
+
+Figura 5: Brecha del rezago social del Pueblo Mágico
+Promedio y brechas placebo de los 55 controles
+La misma interpretación también puede aplicarse a los municipios que utilicé para realizar los estudios placebo. Si los controles sintéticos no replican satisfactoriamente la trayectoria del rezago social de las unidades tratadas con el placebo, la falta de ajuste de las trayectorias puede generar que encontremos o no un efecto, que no es consecuencia del programa. Por ello, procedí a realizar nuevamente el ejercicio pero excluyendo aquellos municipios placebo con peor ajuste en las trayectorias de la variable de interés previo a la intervención, medido con el valor preprograma del MSPE.
+En la ﬁgura 6 (a )se excluyen 17 municipios cuyo valor del MSPE excede dos veces o más el valor correspondiente al MSPE del Pueblo Mágico Promedio. La trayectoria de la brecha en el rezago social absoluto sigue siendo negativa para el caso de la unidad de interés. Sin embargo, la brecha no es inusualmente grande comparada con las brechas de los municipios a los que se les aplicó el placebo. En la ﬁgura 6 (b) se excluyen los 28 municipios con los valores pretratamiento del MSPE más grandes (retiré de la muestra aquellos municipios con los peores ajustes en sus trayectorias). Con esta restricción, los municipios placebo se reducen a 27. Si comparamos la distribución de la brecha del rezago social del Pueblo Mágico Promedio con las brechas de los restantes 27 municipios controles, ésta no es inusualmente grande.
+Utilizando este último grupo, se puede construir un p-value como la fracción de las brechas placebo estimadas mayores o iguales al efecto estimado para la unidad tratada sobre el total de efectos placebo estimados. Esto es:
+1 J+1
+∑ p − value = Pr(αˆPl > αˆ1) = J + 1 i=1 I(αˆ PliT ≥ αˆ 1T )
+donde αˆ PliT es la brecha estimada para el último periodo postratamiento, T , cuando al municipio i se le asigna el tratamiento placebo. La probabilidad de obtener un efecto al menos tan grande como el obtenido para el Pueblo Mágico Promedio es de 19/27 ∼= 0.70 , un nivel de
+20
+
+Figura 6: Brechas del rezago social del Pueblo Mágico Promedio 2001-2006 y pueblos controles
+(a) Brechas del rezago social de 38 controles (b) Brechas del rezago social de 27 controles
+signiﬁcancia estadística con el que no se encuentra un efecto del programa. Calculé nuevamente el p-value utilizando el efecto de diferencias en diferencias 2000-2010,
+en vez de la brecha del último periodo postratamiento (año 2010). La probabilidad de obtener una disminución del rezago social igual o mayor que para el Pueblo Mágico Promedio es de 5/27 ∼= 0.19, por lo que tampoco se obtiene un nivel de signiﬁcancia estadístico que soporte que el programa tenga un efecto sobre el bienestar del Pueblo Mágico. Este resultado no sorprende dada la falta de ajuste preprograma entre el Pueblo Mágico Promedio y su sintético, respecto al ajuste de los placebos y sus sintéticos correspondientes.
+Otra manera de evaluar el efecto sobre el rezago social, es analizar la distribución del ratio post/pre programa del MSPE de los 55 estudios placebo. La ﬁgura 7 muestra la distribución del ratio post/pre programa del MSPE del rezago social para el Pueblo Mágico Promedio y los 55 municipios del donor pool, donde podemos observar que el ratio del Pueblo Mágico Promedio no sobresale dentro de los ratios de los placebos. La probabilidad de obtener un ratio del MSPE como el del Pueblo Mágico Promedio si se asignara de manera aleatoria el tratamiento entre las 56 unidades, sería de 52/56 =∼ 0.93. La interpretación de este resultado es que el programa no tiene un efecto en la trayectoria del rezago social del Pueblo Mágico Promedio.
+7.2. Pueblo Mágico Promedio 2001
+En la ﬁgura 8 (a) se presenta la brecha del rezago social entre el Pueblo Mágico Promedio 2001 y su sintético (en color negro) y las brechas placebo de los 55 municipios del donor pool y sus controles sintéticos (color gris). De la muestra de 55 municipios controles eliminé aquéllos con los peores ajustes en sus trayectorias, medido por el valor del MSPE preprograma, el grupo de placebos se redujo a 29 municipios. En la ﬁgura 8 (b) se observan las brechas del rezago social de la unidad tratada y los 29 municipios controles. En ambos casos podemos apreciar que la brecha estimada del rezago social para el Pueblo Mágico Promedio es negativa pero no
+21
+
+Figura 7: Ratio del MSPE post y MSPE pre:
+Pueblo Mágico Promedio y 55 Pueblos Mágicos
+es inusualmente grande con respecto a las brechas placebo de los municipios controles. Utilizando este último grupo, calculé el p-value como la fracción de las brechas placebo es-
+timadas mayores o iguales al efecto estimado para el Pueblo Mágico Promedio para el periodo 2000-2010 sobre el total de efectos placebo estimados. La probabilidad de obtener un efecto al menos tan grande como el del Pueblo Mágico Promedio es de 14/29 =∼ 0.48, un nivel de signiﬁcancia estadística con el que no se encuentra un efecto del programa.
+Figura 8: Brechas del rezago social del Pueblo Mágico Promedio 2001 y pueblos controles
+(a) Brechas del rezago social de 55 controles (b) Brechas del rezago social de 29 controles
+Procedí a analizar la distribución del ratio post/pre programa del MSPE del rezago social para el Pueblo Mágico Promedio 2001 y los 55 municipios del donor pool. La probabilidad de obtener un ratio del MSPE como el del Pueblo Mágico Promedio si se asignara de manera aleatoria el tratamiento entre las 56 unidades, sería de 19/56 ∼= 0.34. Este resultado implica que el programa no tiene un efecto en la trayectoria del rezago social del Pueblo Mágico Promedio.
+22
+
+7.3. Pueblo Mágico Promedio 2006
+En la ﬁgura 9 (a) observamos la brecha del rezago social entre el Pueblo Mágico Promedio 2006 y su unidad sintética (en color negro), así como las brechas placebo entre los 55 municipios controles y sus respectivas unidades sintéticas (color gris). De la muestra de 55 municipios controles eliminé aquéllos con los valores más grandes del MSPE preprograma, quedando 8 municipios controles. En la ﬁgura 9 (b) se presentan las brechas del rezago social de la unidad tratada y los 8 municipios controles. En ambas situaciones, apreciamos que la brecha estimada del rezago social para el Pueblo Mágico Promedio 2006 es negativa pero no es inusualmente grande en comparación a las brechas placebo de los municipios controles.
+Utilizando este último grupo, calculé el p-value de tener un efecto en el rezago social al menos tan grande como el de la unidad tratada. La probabilidad de tener una disminución en el rezago social igual o mayor que el del Pueblo Mágico Promedio 2006 es de 3/8 =∼ 0.38, un nivel de signiﬁcancia estadística para el que no se encuentra un efecto del programa.
+Finalmente analicé la distribución del ratio post/pre programa del MSPE del rezago social del Pueblo Mágico Promedio 2006 y los 55 municipios controles. La probabilidad de obtener un ratio del MSPE como el del Pueblo Mágico Promedio si se asignara de manera aleatoria el tratamiento entre las 56 unidades, sería de 49/56 ∼= 0.88. El resultado se interpreta como que el programa no tiene un efecto en la trayectoria del rezago social del Pueblo Mágico Promedio 2006.
+
+Figura 9: Brechas del rezago social del Pueblo Mágico Promedio 2006 y pueblos controles
+
+(a) Brechas del rezago social de 55 controles
+
+(b) Brechas del rezago social de 8 controles
+
+7.4. Pruebas adicionales de robustez
+Con la ﬁnalidad de corroborar los resultados obtenidos con el MCS, realicé una prueba adicional de robustez con la técnica del propensity score matching. Utilizando el método de Nearest Neighbor y un soporte común para las unidades tratadas y las de control, calculé el
+23
+
+efecto TOT (treatment on the treated) para los Pueblos Mágicos que recibieron el nombramiento de 2001 a 2006. La especiﬁcación del propensity score que satisﬁzo la propiedad de balanceo incluyó las siguientes variables: el partido del gobierno municipal es igual al partido del gobierno estatal; el partido que postuló al gobernador del estado fue el PRI; el municipio elige autoridades por usos y costumbres; índice de capacidad ﬁnanciera; porcentaje de la población en rezago educativo; porcentaje de la población que habita en localidades menores a 5000 habitantes; y si la localidad Pueblo Mágico es cabecera municipal.36
+El efecto TOT del programa calculado con matching es una disminución de 1.5 puntos del rezago social de los Pueblos Mágicos designados de 2001 a 2006, aunque no es estadísticamente signiﬁcativo de acuerdo al estadístico t calculado.37 Aun así, el resultado de matching va en consonancia con el efecto calculado de 2.7 puntos para el Pueblos Mágico Promedio 2001-2006 mediante el método de control sintético, efecto que tampoco alcanza un nivel de signiﬁcancia al aplicar las pruebas placebo. Esto quiere decir que el efecto del Programa Pueblos Mágicos sobre el rezago social calculado por ambos métodos es marginal y no signiﬁcativo.
+8. Conclusiones, limitaciones y retos
+Para analizar el efecto del programa Pueblos Mágicos en el rezago social de la población, conformo la unidad contrafactual mediante el MCS, como el promedio ponderado de las características de los predictores y del rezago social para el periodo previo al inicio del programa y luego comparo el resultado contrafactual con el verdadero valor del rezago social. En el promedio para los Pueblos Mágicos nombrados de 2001-2006 y en 2011, no encuentro un efecto signiﬁcativo del programa (en conjunto con la política de promoción e inversión en infraestructura que lo complementa) en el rezago social de la población.
+La ausencia de efecto del programa podría deberse a la falta de ajuste entre las trayectorias del Pueblo Mágico Promedio y su control sintético en el periodo previo a la intervención. Abadie et al. (2015) no recomienda utilizar el control sintético cuando el ajuste pretratamiento es pobre o el número de periodos pretratamiento son pocos,38 debido a que la credibilidad del control sintético depende de qué tan bien replica las características y la variable de resultado de la unidad tratada en un periodo largo de tiempo previo a la intervención. Para subsanar esta deﬁciencia, analicé el efecto del programa sobre el promedio de los Pueblos Mágicos nombrados en 2006; para esta unidad tratada cuento con dos observaciones en el periodo pretratamiento. El ajuste en la trayectoria del rezago social entre la unidad tratada y su control sintético mejora notablemente, pero el efecto del programa sigue siendo marginal.
+36Se eliminaron las siguientes variables: población total municipal, Fondo de Aportaciones para la Infraestructura Social Municipal (FISM), Fondo de Aportaciones para el Fortalecimiento de los Municipios (FORTAMUN) y el partido que postuló al presidente municipal fue el PRI.
+37En el cuadro 6 de los Anexos se presentan los resultados por el método Nearest Neighbor de matching. 38Abadie et al. (2010) demuestra que en un modelo de factor lineal, el sesgo del estimador tiende a cero a medida que el número de periodos pre-tratamiento aumenta.
+24
+
+Este estudio es un primer intento por evaluar en forma rigurosa el impacto de programas gubernamentales en México que promueven el turismo en general, y del Programa Pueblos Mágicos en particular. Mucho queda por hacer para estudiar la efectividad del programa y realizar los ajustes necesarios en su diseño y operación para lograr un verdadero impacto en las localidades apoyadas por el mismo. Entre otras acciones es recomendable: realizar el análisis para cada Pueblo Mágico, a ﬁn de poder medir la heterogeneidad de los efectos del programa entre los diferentes pueblos; realizar el análisis de impacto de los Pueblos Mágicos nombrados de 2007 a 2012, dada la cascada de nombramientos de Pueblos Mágicos que se dio en 2011 y 2012, lo que podría estar relacionado con desvíos en el cumplimiento de los requisitos de ingreso al programa; así como llevar a cabo mediciones sobre el efecto del programa en otras variables de bienestar (educación, salud, ingresos y consumo) y en variables relacionadas directamente con el turismo (creación de empleos en el sector y derrama económica de los turistas). Para lograrlo, y en concordancia con Winters et al., (2013), es requisito indispensable realizar un gran esfuerzo para la recolección de datos y estadísticas a nivel desagregado, que nos permitan concretar un diseño de evaluación de impacto que utilice técnicas econométricas clásicas.
+25
+
+9. Apéndice
+Fuentes de Información
+• Índice de Rezago Social Absoluto. Frecuencia: quinquenal. Fuente: Rosas (2015) para los años 2005 y 2010. El rezago social absoluto (RSA) es una transformación de los datos del Índice de Rezago Social (IRS) para obtener una medición cardinal. El IRS es calculado por el CONEVAL con la base de datos “Principales Resultados por Localidad” (ITER) de los Censos y Conteo de Población y Vivienda del Instituto Nacional de Estadística y Geografía (INEGI). Un RSA = 100 representa una situación de total rezago y un RSA = 0 representa una situación de ausencia de rezago. Fuente: Elaboración propia para el año 2000, a partir de los datos del IRS que calcula el CONEVAL y los ponderadores utilizados en Rosas (2015).
+• Población total municipal (número de personas). Fuente: Censo de Población y Vivienda 2000, INEGI.
+• El partido del gobierno municipal es igual al partido del gobierno estatal (variable dicotómica). Fuente: Elaboración propia a partir de los datos del Sistema Nacional de Información Municipal del Instituto Nacional para el Federalismo y el Desarrollo Municipal (INAFED) y del Instituto de Mercadotecnia y Opinión (IMO). Expresa la coincidencia entre el partido que postuló al presidente municipal y el partido que postuló al gobernador del estado para el año 2000.
+• El partido que postuló al gobernador del estado fue el Partido Revolucionario Institucional (PRI) (variable dicotómica). Fuente: Elaboración propia a partir de los datos del Sistema Nacional de Información Municipal del INAFED y del IMO. Expresa la coincidencia entre el partido que postuló al gobernador del estado con el partido del Gobierno Federal en el año 2000.
+• El partido que postuló al presidente municipal fue el PRI (variable dicotómica). Fuente: Elaboración propia a partir de los datos del Sistema Nacional de Información Municipal del INAFED y del IMO. Expresa la coincidencia entre el partido que postuló al presidente municipal con el partido del Gobierno Federal en el año 2000.
+• El municipio elige autoridades por usos y costumbres (variable dicotómica). Fuente: Elaboración propia a partir de los datos del Sistema Nacional de Información Municipal del INAFED y del IMO. Expresa la elección de los presidentes municipales mediante los usos y costumbres de su comunidad.
+26
+
+• Índice de capacidad ﬁnanciera. Fuente: Elaboración propia a partir de los datos del Sistema de Información Hacendaria. Se obtiene de la razón ingresos propios/gasto corriente del municipio.
+• Fondo de Aportaciones para la Infraestructura Social Municipal (en pesos). Fuente: Secretaría de Desarrollo Social. El fondo forma parte del Fondo de Aportaciones para la Infraestructura Social.
+• Fondo de Aportaciones para el Fortalecimiento de los Municipios (en pesos). Fuente: Secretaría de Desarrollo Social.
+• Porcentaje de la población en rezago educativo. Fuente: Instituto Nacional para la Educación de los Adultos. Se conforma por la población analfabeta de 15 años, la población sin primaria terminada y la población sin secundaria terminada, respecto al total de la población de 15 años y más.
+• Porcentaje de la población municipal que habita en localidades menores a 5000 habitantes. Fuente: Consejo Nacional de Población.
+• Porcentaje de la población que vive en la localidad Pueblo Mágico. Fuente: Elaboración propia a partir del Censo de Población y Vivienda 2000 del INEGI.
+• La localidad Pueblo Mágico es cabecera municipal. (variable dicotómica). Fuente: Elaboración propia a partir del Censo de Población y Vivienda 2000 del INEGI.
+27
+
+10. Referencias
+Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. “Comparative Politics and the Synthetic Control Method.” American Journal of Political Science, 59(2): 495-510.
+——. 2010. “Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program.” Journal of the American Statistical Association, 105(490): 493505.
+Abadie, Alberto and Javier Gardeazabal. 2003.“The Economic Costs of Conﬂict: A Case Study of the Basque Country.” American Economic Review, 93(1): 113-132.
+Ando, Michihito. 2015.“Dreams of Urbanization: Quantitative Case Studies on the Local Impacts of Nuclear Power Facilities using the Synthetic Control Method.” Journal of Urban Economics, 85: 68-85.
+Armenta, Gustavo. 2014. “¿Cuál es la Situación Real de los Pueblos Mágicos?.” Forbes Staff : 29/04/2015 http://www.forbes.com.mx/.
+Billmeier, Andreas and Tommaso Nannicini. 2013. “Assessing Economic Liberalization Episodes: A Synthetic Control Approach.” Review of Economics and Statistics, 95(3): 983-1001.
+Castillo, Victoria, Lucas F. Garone, Alessandro Mafﬁoli, and Lina Salazar. 2015. “Tourism Policy, a Big Push to Employment? Evidence from a Multiple Synthetic Control Approach.” Working Papers Series No. IDB-WP-572, Infrastructure and Environment Sector, Institutions for Development Sector, and Ofﬁce of Strategic Planning and Development Effectiveness. Washington, D.C.: Inter-American Development Bank.
+Chou, Ming C. 2013. “Does Tourism Development Promote Economic Growth in Transition Countries? A Panel Data Analysis.” Economic Modelling, 33: 226-232.
+Clancy, Michael J. 1999. “Tourism and Development Evidence from Mexico.” Annals of Tourism Research, 26: 1-20.
+Coffman, Makena and Ilan Noy. 2012. “Hurricane Iniki: Measuring the Long-Term Economic Impact of a Natural Disaster using Synthetic Control.” Environment and Development Economics, 17(2): 187-205.
+CONEVAL. Consejo Nacional de Evaluación de la Política de Desarrollo Social. 2015. http://www.coneval.gob.mx/ (accessado 01/24).
+Croes, Robertico. 2014. “The Role of Tourism in Poverty Reduction: An Empirical Assessment.” Tourism Economics, 20(2): 207-226.
+Cruz Chavez, Placido R., Judith Juarez Mancilla, Jose Urciaga Garcia, and Francisco I. Ruiz Cesena. 2014. “Perspectivas Del Turismo: Caso México.” Revista Internacional Administración y Finanzas, 7(1): 53-66.
+Dwyer, Larry. 2003. “Tourism’s Contribution to a State Economy: A Multi-Regional General Equilibrium Analysis.” Tourism Economics, 9(4): 431-448.
+Dwyer, Larry, Peter Forsyth, and Ray Spurr. 2007. “Contrasting the Uses of TSAs and CGE Models: Measuring Tourism Yield and Productivity.” Tourism Economics, 13(4): 537-551.
+Ferri, Javier and Ezequiel Uriel. 2004. “Evaluación del Impacto Económico del Turismo: De un Modelo Keynesiano a un Modelo Clásico.” Papeles de Economía Española 102: 68-90.
+Hughes, David W. and Martin Shields. 2007. “Revisiting Tourism Regional Economic Impact: Accounting for Secondary Household Employment.” Review of Regional Studies, 37(2): 186-206.
+28
+
+CSTM. 2013. “Sistema de Cuentas Nacionales de México. Cuenta Satélite del Turismo de México 2013 Preliminar. Año Base 2008.” Instituto Nacional de Estadística y Geografía, México: INEGI.
+Jones, Sam. 2010. “The Economic Contribution of Tourism in Mozambique: Insights from a Social Accounting Matrix.” Development Southern Africa, 27(5): 679-696.
+Klytchnikova, Irina and Paul Dorosh. 2012. “Tourism Sector in Panama: Regional Economic Impacts and the Potential to Beneﬁt the Poor”.
+Leatherman, Thomas L., Alan H. Goodman, and Tobias Stillman. 2010. “Changes in Stature, Weight, and Nutritional Status with Tourism-Based Economic Development in the Yucatan.” Economics and Human Biology, 8(2): 153-158.
+Mabugu, Ramos. 2002. “Short-Term Effects of Policy Reform on Tourism and the Macroeconomy in Zimbabwe: Applied CGE Analysis.” Development Southern Africa, 19(3): 419-430.
+Madrid Flores, Francisco. 2012. “Evaluación de Desempeño de los Destinos Turísticos en el marco de los Convenios de Coordinación en Materia de Reasignación de Recursos (CCRR).” Secretaría de Turismo.
+Madsen, Bjarne, Chris Jensen-Butler, and Jie Zhang. 2003. “Regional Economic Impacts of Trafﬁc Regulation on Tourism: The Case of Denmark.” Review of Urban and Regional Development Studies, 15(2): 148-169.
+Narayan, Paresh K. 2004. “Economic Impact of Tourism on Fiji’s Economy: Empirical Evidence from the Computable General Equilibrium Model.” Tourism Economics, 10(4): 419-433.
+OMT. 2014. “UNWTO Tourism Highlights, 2014 Edition.” Madrid: Organización Mundial del Turismo.
+OMT. 2006. “Reducción de la Pobreza por medio del Turismo. Una compilación de buenas prácticas.” Primera Edición. Madrid: Organización Mundial del Turismo.
+Polo, Clemente and Elisabeth Valle. 2008. “An Assessment of the Impact of Tourism in the Balearic Islands.” Tourism Economics, 14(3): 615-630.
+Rosas, Alejandro. 2015. “El Fondo de Infraestructura Social Municipal y sus efectos sobre el bienestar social 2005-2010, una aproximación a la eﬁcacia social del gasto federalizado en México.” México: El Colegio de México.
+Sahli, Mondher and Jean-Jacques Nowak. 2005. “Migration, Unemployment and Net Beneﬁts of Inbound Tourism in a Developing Country.”
+Secretaría de Turismo. 2014. “Acuerdo por el que se establecen los Lineamientos Generales para la Incorporación y Permanencia al Programa Pueblos Mágicos.” Diario Oﬁcial de la Federación, DCCCXXXII(20): 60.
+Atlas Turístico de México. 2015. http://atlasturistico.sectur.gob.mx/ (accessado 05/01). Secretaría De Turismo. 2015. http://www.sectur.gob.mx/ (accesado 01/24). Secretaría de Turismo. 2006.“Programa Pueblos Mágicos.” Documento de Trabajo. México: SECTUR. Taylor, J. Edward and Masteusz J. Filipski. 2014. “Beyond Experiments in Development Economics. Local Economy-Wide Impact Evaluation.”, 1st ed. United Kingdom: Oxford University Press. Taylor, J. Edward, A. Yúnez-Naude, G. Dyer, and Ardila, S., and Stewart, M. 2003. “The Economics of Eco-Tourism: A Galapagos Island Economy-Wide Perspective.” Economic Development and Cultural
+29
+
+Change, 51(4): 977-997. Wattanakuljarus, Anan and Ian Coxhead. 2008. “Is Tourism-Based Development Good for the Poor?
+A General Equilibrium Analysis for Thailan.” Journal of Policy Modeling, 30(6): 929-955. Wilson, Tamar D. 2008. “Economic and Social Impacts of Tourism in Mexico.” Latin American
+Perspectives, 35(3): 37-52. Winters, Paul, Leonardo Corral, and Adela Moreda Mora. 2013. “Assessing the Role of Tourism in
+Poverty Alleviation: A Research Agenda.” Development Policy Review, 31(2): 177-202. Zhang, Jie, Bjarne Madsen, and Chris Jensen-Butler. 2007. “Regional Economic Impacts of Tou-
+rism: The Case of Denmark.” Regional Studies, 41(6): 839-853.
+30
+
+11. Anexos
+
+Figuras y Tablas
+
+Cuadro 1: Pueblos Mágicos 2001-2012
+
+No.
+
+Estado
+
+Municipio
+
+Pueblo Mágico
+
+Año de No.
+Ingreso
+
+Estado
+
+Municipio
+
+Pueblo Mágico
+
+Año de Ingreso
+
+1 Aguascalientes
+
+Asientos
+
+Real de Asientos
+
+2 Aguascalientes
+
+Calvillo
+
+Calvillo
+
+3 Baja California
+
+Tecate
+
+Tecate
+
+4 Baja California Sur La Paz
+
+Todos Santos
+
+5 Baja California Sur Loreto
+
+Loreto
+
+6 Campeche
+
+Palizada
+
+Palizada
+
+7 Chiapas
+
+Chiapa de Corzo
+
+Chiapa de Corzo
+
+8 Chiapas
+
+Comitán
+
+Comitán de Domínguez
+
+9 Chiapas
+
+San Cristóbal de las Casas San Cristóbal
+
+10 Chihuahua
+
+Batopilas
+
+Batopilas
+
+11 Chihuahua
+
+Bocoyna
+
+Creel
+
+12 Coahuila
+
+Arteaga
+
+Arteaga
+
+13 Coahuila
+
+Cuatro Ciénegas
+
+Cuatro Ciénegas
+
+14 Coahuila
+
+Parras de la Fuente
+
+Parras de la Fuente
+
+15 Coahuila
+
+Viesca
+
+Viesca
+
+16 Colima
+
+Comala
+
+Comala
+
+17 Durango
+
+Mapimí
+
+Mapimi
+
+18 Guanajuato
+
+Dolores Hidalgo
+
+Dolores Hidalgo
+
+19 Guanajuato
+
+Purísima del Rincón
+
+Jalpa de Canovas
+
+20 Guanajuato
+
+Salvatierra
+
+Salvatierra
+
+21 Guanajuato
+
+San Luis de la Paz
+
+Mineral de Pozos
+
+22 Guanajuato
+
+Yuriria
+
+Yuriria
+
+23 Guerrero
+
+Taxco de Alarcón
+
+Taxco de Alarcón
+
+24 Hidalgo
+
+Huasca de Ocampo
+
+Huasca de Ocampo
+
+25 Hidalgo
+
+Huichapan
+
+Huichapan
+
+26 Hidalgo
+
+Mineral del Chico
+
+Mineral del Chico
+
+27 Hidalgo
+
+Mineral del Monte
+
+Real del Monte
+
+28 Jalisco
+
+Lagos de Moreno
+
+Lagos de Moreno
+
+29 Jalisco
+
+Mazamitla
+
+Mazamitla
+
+30 Jalisco
+
+San Sebastián del Oeste San Sebastián del Oeste
+
+31 Jalisco
+
+Tapalpa
+
+Tapalpa
+
+32 Jalisco
+
+Tequila
+
+Tequila
+
+33 México
+
+El Oro
+
+El Oro de Hidalgo
+
+34 México
+
+Malinalco
+
+Malinalco
+
+35 México
+
+Metepec
+
+Metepec
+
+36 México
+
+Tepotzotlán
+
+Tepotzotlán
+
+37 México
+
+Valle de Bravo
+
+Valle de Bravo
+
+38 Michoacán
+
+Angangueo
+
+Angangueo
+
+39 Michoacán
+
+Cuitzeo
+
+Cuitzeo del Porvenir
+
+40 Michoacán
+
+Jiquilpan
+
+Jiquilpan de Juárez
+
+41 Michoacán
+
+Pátzcuaro
+
+Pátzcuaro
+
+42 Michoacán
+
+Salvador Escalante
+
+Santa Clara del Cobre
+
+2006 2012 2012 2006 2012 2011 2012 2012 2003 2012 2007 2012 2012 2004 2012 2002 2012 2002 2012 2012 2012 2012 2002 2001 2012 2011 2004 2012 2005 2011 2002 2003 2011 2010 2012 2002 2005 2012 2006 2012 2002 2010
+
+43 Michoacán
+
+Tacámbaro
+
+Tacámbaro
+
+44 Michoacán
+
+Tlalpujahua
+
+Tlalpujahua
+
+45 Michoacán
+
+Tzintzuntzan
+
+Tzintzuntzan
+
+46 Morelos
+
+Tepoztlán
+
+Tepoztlán
+
+47 Morelos
+
+Tlayacapan
+
+Tlayacapan
+
+48 Nayarit
+
+Jala
+
+Jala
+
+49 Nuevo León Santiago
+
+Santiago
+
+50 Oaxaca
+
+Capulálpam de Méndez Capulálpam
+
+51 Puebla
+
+Chignahuapan
+
+Chignahuapan
+
+52 Puebla
+
+Cuetzalan del Progreso Cuetzalan
+
+53 Puebla
+
+Pahuatlán
+
+Pahuatlán
+
+54 Puebla
+
+San Pedro Cholula
+
+Cholula
+
+55 Puebla
+
+Tlatlauquitepec
+
+Tlatlauquitepec
+
+56 Puebla
+
+Xicotepec
+
+Xicotepec
+
+57 Puebla
+
+Zacatlán
+
+Zacatlán
+
+58 Querétaro
+
+Cadereyta de Montes Cadereyta
+
+59 Querétaro
+
+Ezequiel Montes
+
+Bernal
+
+60 Querétaro
+
+Jalpan de Serra
+
+Jalpan de Serra
+
+61 Querétaro
+
+Tequisquiapan
+
+Tequisquiapan
+
+62 Quintana Roo Bacalar
+
+Bacalar
+
+63 San Luis Potosí Catorce
+
+Real de Catorce
+
+64 San Luis Potosí Xilitla
+
+Xilitla
+
+65 Sinaloa
+
+Cosalá
+
+Cosalá
+
+66 Sinaloa
+
+El Fuerte
+
+El Fuerte
+
+67 Sinaloa
+
+Rosario
+
+El Rosario
+
+68 Sonora
+
+Álamos
+
+Álamos
+
+69 Sonora
+
+Magdalena
+
+Magdalena de Kino
+
+70 Tabasco
+
+Tacotalpa
+
+Tapijulapa
+
+71 Tamaulipas
+
+Mier
+
+Mier
+
+72 Tamaulipas
+
+Tula
+
+Tula
+
+73 Tlaxcala
+
+Huamantla
+
+Huamantla
+
+74 Veracruz
+
+Coatepec
+
+Coatepec
+
+75 Veracruz
+
+Papantla de Olarte
+
+Papantla
+
+76 Veracruz
+
+Xico
+
+Xico
+
+77 Yucatán
+
+Izamal
+
+Izamal
+
+78 Yucatán
+
+Valladolid
+
+Valladolid
+
+79 Zacatecas
+
+Jerez
+
+Jerez
+
+80 Zacatecas
+
+Nochistlán de Mejía
+
+Nochistlán
+
+81 Zacatecas
+
+Pinos
+
+Pinos
+
+82 Zacatecas
+
+Sombrerete
+
+Sombrerete
+
+83 Zacatecas
+
+Teul de González Ortega Teul de Glz Ortega
+
+2012 2005 2012 2002 2011 2012 2006 2007 2012 2002 2012 2012 2012 2012 2011 2011 2005 2010 2012 2006 2001 2011 2005 2009 2012 2005 2012 2010 2007 2011 2007 2006 2006 2011 2002 2012 2007 2012 2012 2012 2011
+
+Fuente: Secretaría de Turismo.
+
+31
+
+Figura 1: Pueblos Mágicos
+Fuente: Atlas Turístico de México. Secretaría de Turismo.
+32
+
+Cuadro 2: Peso de los Pueblos Mágicos 2007-2012
+en el Pueblo Mágico Sintético 2001
+
+Pueblo Mágico
+
+Peso Pueblo Mágico
+
+Peso
+
+Angangueo Arteaga Batopilas Bocoyna Cadereyta de Montes Calvillo Capulálpam de Méndez Chiapa de Corzo Chignahuapan Comitan de Domínguez Cuatro Ciénegas El Fuerte El Oro Huamantla Huichapan Jala Jalpan de Serra Jerez Jiquilpan Lagos de Moreno Loreto Magdalena de Kino Malinalco Mapimi Metepec Mier Mineral del Chico Nochistlán de Mejía
+
+0 0 0.102 0 0 0 0 0 0 0 0 0 0 0 0.101 0 0 0 0 0 0 0 0 0 0 0 0.711 0
+
+Pahuatlán Palizada Pinos Purísima del Rincón Rosario Salvador Escalante Salvatierra San Luis de la Paz San Pedro Cholula San Sebastián del Oeste Sombrerete Tacámbaro Tacotalpa Tecate Tequisquiapan Teúl de González Ortega Tlatlauquitepec Tlayacapan Tula Tzintzuntzan Valladolid Viesca Xico Xicotepec Xilitla Yuriria Zacatlán
+
+0 0 0.006 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.064 0 0 0 0 0 0.013 0.003 0
+
+Cuadro 3: Valor de los predictores del rezago social
+
+Variables
+
+Pueblo Mágico Promedio 2001 Promedio de los 55
+
+Real
+
+Sintético
+
+Pueblos Mágicos
+
+Población total del municipio Mismo partido en gobiernos estatal y municipal Gobierno estatal del PRI Gobierno municipal del PRI Autoridades por usos y costumbres Índice de capacidad ﬁnanciera FISM FORTAMUN % Población en rezago educativo % Población en Localidades menos de 5 mil hab. % Población en el Pueblo Mágico El Pueblo Mágico es cabecera municipal
+
+12599 1 1 1 0
+0.22 7661864 3786439
+71.55 100 6.14 1
+
+13092 0.994 0.991 0.997
+0 0.1165 7105114 3684408 71.48 95.73 10.17
+1
+
+45266 0.527 0.5818 0.7818 0.02 0.02 15700000 12500000 66.15 59.97 42.72 0.927
+
+Nota: Todas las variables corresponden al año 2000. El FISM y el FORTAMUN están en pesos de 2010.
+
+33
+
+Cuadro 4: Peso de los Pueblos Mágicos 2007-2012
+en el Pueblo Mágico Sintético 2006
+
+Pueblo Mágico
+
+Peso Pueblo Mágico
+
+Peso
+
+Angangueo Arteaga Batopilas Bocoyna Cadereyta de Montes Calvillo Capulálpam de Méndez Chiapa de Corzo Chignahuapan Comitan de Domínguez Cuatro Ciénegas El Fuerte El Oro Huamantla Huichapan Jala Jalpan de Serra Jerez Jiquilpan Lagos de Moreno Loreto Magdalena de Kino Malinalco Mapimi Metepec Mier Mineral del Chico Nochistlán de Mejía
+
+0.191 0 0 0 0
+0.355 0.013
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.247 0 0 0.029 0 0 0
+
+Pahuatlán Palizada Pinos Purísima del Rincón Rosario Salvador Escalante Salvatierra San Luis de la Paz San Pedro Cholula San Sebastián del Oeste Sombrerete Tacámbaro Tacotalpa Tecate Tequisquiapan Teúl de González Ortega Tlatlauquitepec Tlayacapan Tula Tzintzuntzan Valladolid Viesca Xico Xicotepec Xilitla Yuriria Zacatlán
+
+0 0 0 0.017 0 0 0 0 0 0 0 0 0 0.038 0 0 0 0 0 0 0 0 0 0 0 0.069 0.042
+
+Cuadro 5: Valor de los predictores del rezago social
+
+Variables
+
+Pueblo Mágico Promedio 2006 Promedio de los 55
+
+Real
+
+Sintético
+
+Pueblos Mágicos
+
+Población total del municipio Mismo partido en gobiernos estatal y municipal Gobierno estatal del PRI Gobieno municipal del PRI Autoridades por usos y costumbres Índice de capacidad ﬁnanciera FISM FORTAMUN % Población en rezago educativo % Población en Localidades menos de 5 mil hab. % Población en el Pueblo Mágico Pueblo Mágico es cabecera municipal
+
+43595 0.75 0.5 0.25
+0 0.305 10600000 12000000 61.1 51.36 52.30
+1
+
+43607.37 0.73 0.509 0.327 0.013
+0.33294 9730781 12100000 61.5508 50.49584
+53.61 0.984
+
+45266 0.527 0.5818 0.7818 0.02 0.2682 15700000 12500000 66.15 59.97 42.72 0.927
+
+Nota: Todas las variables corresponden al año 2000. El FISM y el FORTAMUN están en pesos de 2010.
+
+34
+
+Cuadro 6: Efecto TOT con el método Nearest Neighbor de matching n. Tratados n. Controles Efecto TOT Err. Std. t
+
+24
+
+18
+
+1.493
+
+2.825 0.529
+
+El número de tratados y controles corresponde a las unidades efectivamente emparejadas.
+
+35
+
+Índice de cuadros
+1. Peso de los Pueblos Mágicos 2007-2012 en el Pueblo Mágico Sintético………………. 14 2. Valor de los predictores del rezago social……………………………………………….. 15
+Anexos: 1. Pueblos Mágicos 2001-2012…………………………………………………………….. 31 2. Peso de los Pueblos Mágicos 2007-2012 en el Pueblo Mágico Sintético 2001…………. 33 3. Valor de los predictores del rezago social……………………………………………….. 33 4. Peso de los Pueblos Mágicos 2007-2012 en el Pueblo Mágico…………………………. 34 5. Valor de los predictores del rezago social……………………………………………….. 34 6. Efecto TOT con el método Nearest Neighbor de matching………………………………….. 35
+Índice de figuras
+1. Tendencia del rezago social absoluto: Pueblo Mágico Promedio vs. Pueblo Sintético…... 16 2. Brecha en el rezago social absoluto entre el Pueblo Mágico Promedio y su
+sintético…………………………………………………………………………………... 16 3. Pueblo Mágico Promedio 2001 vs Pueblo Mágico Sintético ……………..…………….. 17 4. Pueblo Mágico Promedio 2006 vs Pueblo Mágico Sintético ……………..…………….. 18 5. Brecha del rezago social del Pueblo Mágico Promedio y brechas placebo de los 55 20
+controles………………………………………………………………………………… 6. Brechas del rezago social del Pueblo Mágico Promedio 2001-2006 y pueblos
+controles………………………………………………………………………………… 21 7. Ratio del MSPE post y MSPE pre: Pueblo Mágico Promedio y 55 Pueblos Mágicos…… 22 8. Brechas del rezago social del Pueblo Mágico Promedio 2001 y pueblos controles…….. 22 9. Brechas del rezago social del Pueblo Mágico Promedio 2006 y pueblos controles…….. 23
+Anexos: 1. Pueblos Mágicos………………………………………………………………………… 32
+36
+
+

@@ -1,0 +1,2499 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+MEXICAN FIXED INCOME MARKET ANALYSIS: THE TERM STRUCTURE OF INTEREST RATES
+AND EXPECTATIONS HYPOTHESIS
+RAÚL ALEJANDRO RODRÍGUEZ MARTÍNEZ PROMOCIÓN 2010-2012
+JOSÉ MIGUEL TORRES GONZÁLEZ JUNIO DE 2012
+1
+
+Agradecimientos:
+A Raúl, mi padre, que siempre me inculcó superarme a mí mismo y destacar en las actividades que realizo siempre bajo principios como la honestidad, responsabilidad y el respeto hacia los demás. Tu entrega en cuerpo y alma a nuestra bella familia representan para mí la receta óptima de un hombre feliz y pleno. Eres la persona a la que más admiro en mi vida.
+A Laura, mi madre, muchas gracias por estar ahí incondicionalmente para mí. Este hermoso trabajo de tiempo completo que llevas dedicando por décadas es crucial para la estabilidad, fortaleza y dirección que hemos emprendido como familia e individualmente. Además, gracias por tu gran oído e innita capacidad de amarnos y aconsejarnos.
+A Renata, mi hermana, que siempre ha caminado y crecido conmigo. Gracias por ser una excelente hermana, amiga y por siempre estar ahí en momentos prósperos y adversos. La dedicación que le imprimes a las actividades profesionales, académicas y culturales que te apasionan han servido como inspiración para mí durante la maestría.
+A Blanquita porque en estos cinco años me has enseñado que el amor es fundamental en la realización personal. Gracias por permitirme ver la vida desde otro punto de vista y enseñarme a no desesperar ante situaciones difíciles. Además de darle luz a mis días, me brindaste estabilidad, amor y alegría que representaron una fuente rica de inspiración para realizar éste proyecto.
+A Jorge, mi primo, por sus consejos y discusiones en torno a las ideas de ésta investigación. Eres una persona que admiro mucho por su dedicación y entrega a la investigación, docencia y desarrollo profesional. También gracias por tu muy apreciada amistad de toda la vida y porque, de una forma u otra, nos hemos apoyado en nuestros proyectos personales.
+A mi asesor de tesis y profesor en la maestría José Miguel Torres por su apoyo constante durante la elaboración de la tesis y las clases. Muchas gracias por siempre estar al pendiente de éste proyecto y extraer lo mejor de mí para desarrollarlo. Le reitero mi respeto y admiración, pues es el ejemplo más claro del amor a la docencia y la investigación.
+A los profesores Isidro Soloaga y Eneas Caldiño, por brindarnos a mis compañeros y a mí las mejores herramientas, profesores y oportunidades para desarrollarnos en la maestría. También, al profesor Raymundo Campos por sus sabios consejos y predicar con el ejemplo que la receta del éxito está en el trabajo constante y en exigirnos cada vez más.
+A Emilio, Andrés y Luis por las interminables sesiones de estudio. Gracias por su amistad y compañerismo. También a mis amigos Gerardo, Miguel, Ramón, Juan Manuel, Daniel y Ricardo por su apoyo y amistad incondicionales.
+2
+
+Mexican Fixed Income Market Analysis: The Term Structure of Interest Rates and Expectations
+Hypothesis
+July 10, 2012
+Abstract
+The Mexican xed income market is analyzed using government bonds with and without coupons; as well as interest rate swaps to estimate the term structure of interest rates from 1998 to 2012 under the Svensson model. To the best of my knowledge, this is the rst paper in the Mexican literature that uses the interest rate swaps and the Svensson model to estimate the term structure of interest rates. The behavior of the curve is explained in terms of the estimation parameters for spot rates and forward rates. The term structure of interest rates is used to analyze the information it provides about the xed income market in Mexico. Following Campbell & Shiller (1991), Cochrane & Piazzesi (1991) and GarcíaVerdú (2011), excess returns on one- to ve- year maturity bonds are estimated to test expectations hypothesis. The term structure of interest rates in Mexico show curves with a negative slope from 1998 to 2001 and a positive ones from 2002 to 2012. Government bonds term structure of interest rates is atter than TIIE swaps term structure, which has a higher hump for shorter maturities. This shows the existence of risk premia. Consequently, the spread between future and current interest rates is able to explain the yield spread in the market money. But the prediction is not consistent with the expectations hypothesis, as risk premia changes across time.
+Keywords: term structure of interest rates, spot curve, Svensson model, interest rate swaps, xed income market, government bonds, bond risk premia.
+3
+
+Contents
+
+1 Introduction
+
+5
+
+2 Theoretical Background About the Term Structure of
+
+Interest Rates Estimation
+
+9
+
+2.1 What is the term structure of interest rates and what is telling us?
+
+9
+
+2.2 Estimation of the term structure of interest rates: The Svensson
+
+model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+3 The Mexican Debt and Interest Rates Swaps Markets
+
+from 1999 to 2012
+
+15
+
+3.1 Bonds Market . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+3.2 The Interest Rate Derivatives Market . . . . . . . . . . . . . . . . . . 20
+
+3.3 Debt and Derivatives Market on the Term Structure of Interest Rates . 23
+
+4 Data
+
+24
+
+5 Methodology
+
+27
+
+5.1 Estimation of the Term Structure of Interest Rates. The Svensson
+
+Model Approach. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+
+5.2 The Svensson Model Estimation Algorithms. . . . . . . . . . . . . . 27
+
+5.2.1 Government Bonds Algorithm. . . . . . . . . . . . . . . . . . . . 28
+
+5.2.2 TIIE Swaps Algorithm. . . . . . . . . . . . . . . . . . . . . . . . 30
+
+6 Results
+
+31
+
+6.1 . 31 The Mexican Term Structure of Interest Rates from 1998 to 2012
+
+6.1.1 The Term Structure of Interest Rates for Government Bonds . . 35
+
+6.1.2 The Term Structure of Interest Rates for TIIE Swaps . . . . . . 36
+
+6.2 Beyond the Term Structure of Interest Rates: a brief bond risk premia
+
+analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+
+6.2.1 Government Bonds Risk Premia . . . . . . . . . . . . . . . . . . 41
+
+6.2.2 The TIIE Swaps Risk Premia . . . . . . . . . . . . . . . . . . . . 43
+
+7 Conclusions
+
+46
+
+8 References
+
+48
+
+9 Appendix
+
+50
+
+4
+
+1 Introduction
+The nancial system plays a key role in the development of an economy. It is built mainly by dierent intermediaries and asset markets in which several instruments manage savings among the most productive purposes. There are many participants in the nancial system who oer very useful services for society. An stable, ecient, competitive and innovative nancial system contributes to increase sustained economic growth and population's wealth. To achieve these objectives, it is very important to have a strong institutional background and nancial regulation that guarantee the integrity of the system and the protection of the public interests. The main function of the nancial system is to match needs among borrowers and lenders. In this matching process, interest rates are very important (Banco de México, 2011).
+The nancial system has several intermediaries such as banks, insurance companies, stock markets, investment managers, nancial leasing companies and hedge funds. Financial markets are integrated by debt markets, stock markets, FX markets and derivative markets. Debt markets are those in which we are interested in. Governments, public rms and private rms may need money for nancing a project or for developing its regular activities. These entities can get money through a loan by requesting a credit to the bank or through the issuance of a debt instrument. Debt market instruments are classied according to its cash-ow pattern (if they are coupon or zero coupon bonds), allocation (public auctions or privately) and to its interest rate, which is key in the analysis developed here. Risk is also relevant in the valuation of the instruments (Banco de México, 2011).
+The current European crisis is related with debt instruments so further research on the determinants of the cost of debt is needed to provide central banks and nancial institutions all over the world with tools for a better decision making according to the behavior that economic agents are showing in the nancial market. This paper is focused on the Mexican debt market because there is scarce evidence of previous studies about the Mexican term structure of interest rates and its ability to predict interest rates movements over time.
+This paper analyzes the debt and interest rate derivatives markets in Mexico from 1998 to 2012 by estimating its term structure of interest rates. A few studies had been made for Mexico because there was an important scarcity of data about the Mexican nancial system1.This is a very useful curve which provides important information for the central bank and also for investors about the behavior the economy will have in the nancial markets. So, it works as a forecast for interest rates, holding period returns of several bonds and also for
+1The Mexican nancial system became stronger during the 1990s with the Central Bank autonomy and the privatization of banks. After the 1995 nancial crisis, the recovery of this sector enhanced a better regulation context (Banco de México, 2011).
+5
+
+other macroeconomic variables. The estimation is parametric, under the Svensson model, and it estimates forward and spot rates using data of zero coupon bonds (CETES), bonds (MBONOS) and TIIE swaps. The research goes beyond the existing Mexican literature being the rst one using the Svensson model and TIIE swaps in the estimation of the term structure, as well as providing a detailed analysis of the Mexican xed income market.
+The model of Nelson-Siegel (1987) and its extension by Svensson (1994) are widely used
+by central banks and other market participants as a model for the term structure of interest
+rates (BIS, 2005). Nelson and Siegel (1987) proposed a parsimonious model to estimate
+yield curves (a special case of the term structure of interest rates) for the United States.
+Diebold and Li (2005) have shown evidence that the model can also be used as a forecasting
+tool of interest rates in the United States. The reason why Svensson model is very popular
+is because, as Svensson (1994) states on his paper, the parametric model is exible in the goodness of t2. The Bank for International Settlements (BIS) published a paper on October
+2005 in which they consolidate all the methodologies and data available from central banks of developed economies3.
+Diez-Cañedo et al. (2003) estimate the term structure of interest rates in Mexico through the parametric Nelson-Siegel model. They adressed some diculties during the estimation of the parameters and suggest a parametric model including an additional parameter. CachoDíaz and Ibañez (2005) estimate a multifactorial model with Mexican data to valuate government bonds from 1995 to 2004. García-Verdú (2011) estimates the term structure of interest rates with the bootstrap method, using CETES and MBONOS data from 2002 to 2011.
+On the other hand, there is a part of the literature focused on the information the term
+structure of interest rates provides. At the beginning of the 1970´s, Sargent (1972) proved
+that empirical evidence do not fulll expectations theory in the United States. Shiller (1979), Shiller, Campbell and Schoenbholtz (1983) ran regressions of excess bond returns on spot rates and they concluded that the expectations theory of the term structure is just wrong in the United States too. Nevertheless, further resarch was focused on explaining what produces the inconsistency of this hypothesis by extracting all the possible information to the term structure of interest rates.
+In this sense, Fama (1984) found some evidence that the slope of the term structure predicts interest rate changes over a few months, but the predictive power seemed to decay rapidly with the horizon. Fama and Bliss (1987) research was about the short-term interest
+2Svensson (1994) estimates and interpret forward interest rates in Sweden from 1992 to 1994. 3See BIS Papers, No. 25, 2005.
+6
+
+rates predictability in the United States too. They regressed the appropriate short rate changes onto forward premia, and found that the forecasting power of the term structure improves as the time horizon increases. Campbell and Shiller (1991) used U.S. term structure data and found that for almost any combination of maturities between one month and ten years, a high yield spread between a longer-term and a shorter-term interest rate forecasts rising shorter-term interest rates over the long term. Once again, inconsistency with the expectations theory appears.
+Cochrane and Piazzesi (2005) studied time variation in expected excess bond returns and found that a single linear combination of forward rates, predicts excess returns on one to ve year maturity bonds. They also found that the return-forecasting factor is countercyclical and forecasts stock returns. On the other hand, Ang and Piazzesi (2003) found that including macroeconomic variables to models that estimate interest rates improve the forecasts in the United States. In particular, they built a dynamic model for GDP growth and yields that completely characterizes expectations of GDP. They found that short rate has more predictive power than any term spread.
+Sod (1995) is the rst paper that analyzes the term structure of interest rates in Mexico. He tested the expectations hypothesis for the Mexican debt market and it is rejected. He argues that risk premia depends on the interest rates volatility. Castellanos and Martinez (2008) studied the development of the Mexican debt market, describing macroeconomic stability, scal discipline, the growth of the exchange market and the expansion of the derivative markets. Cortés et al. (2009), found that the level of the term structure of interest rates is associated with ination and that its slope is correlated with the level of interest rates for one day. Castellanos and Camero (2002) found that interest rates contain information to predict future interest rates in Mexico. The results of these papers were constrained because of the data scarcity and a few maturity dates existing by those days. García-Verdú (2011) also nds evidence against expectations hypothesis running OLS regressions to estimate risk premia and interest rates predictability for the Mexican debt market. He also proves that most of the term structure of interest rates variance is explainable through changes in the level of the structure.
+Taking into consideration the previous context, the research about the term estructure of interest rates is very important for nance and macroeconomics, specially for monetary policy. That is the reason why Mexico has a huge window opportunity of research in these areas. The contribution of this paper is to expand and strength the Mexican research about the term structure of interest rates. Most of this literature, unfortunately, faced an important scarcity of data and a very young nancial market. Nowadays, the Mexican nancial system is bigger, stronger and with better data. In this background, we are able to present a more
+7
+
+innovative estimation methodology. So this will be the rst research using the Svensson model for Mexico. This is very
+important because Mexican literature do not show evidence of a previous use of the most eective methodology among central banks (BIS, 2005). Another important achievement of this research is to consider interest rate swaps on the estimation of the term structure of interest rates. There is not evidence of previous research including these derivatives that are the most important in the market because of their share and the amounts of money nancial agents invest on them. Another contribution is a complete description of the Mexican xed income market. The analysis includes real GDP shares of debt (bonds) and interest rates derivatives markets, outstanding amounts of bonds and TIIE swaps and how the demand for bonds and interest rates derivatives has behaved from 1998 to 2012. The rst nding of this research is that Mexican term structure of interest rates had negative slope curves from 1998 to 2001 and positive ones from 2002 to 2012. The term structure of interest rates for government bonds is, on average, atter than the term structure of TIIE swaps, which has a higher hump in short-term maturities. The second nding is the rejection of expectations hypothesis for Mexican xed income market. The research concludes that there is a bond risk premia for Mexico that changes over time. Consequently, investors and monetary policymakers should be aware of the behavior of the term structure of interest rates in Mexico.
+This paper is divided into seven sections. The rst one introduced and motivated the research providing a quick review of the international and Mexican literature related with the term structure of interest rates and its estimation with the Svensson model. The purpose of this section was to identify the contributions of this research. The second section describes the theoretical background of the term structure of interest rates and the methodology of the estimation. Here, a graphical and algebraic explanation of the Svensson model is given, as well as its advantages and how the estimation must be done. Then, we will nd in the third section an overview of the Mexican debt and interest rate swaps markets from 1999 to 2012 to reinforce the motivation of this paper and to provide the context under which the estimation is done.
+In the fourth section, the data needed to make the estimation is explained. Descriptive statistics and graphics are presented to reect the behavior of interest rates in Mexico. In the fth section, the methodology of the research is shown. First, I explain the algorithm that estimates the parameters of Svensson model, its descriptive statistics, the estimated spot rates, forward rates, excess bond returns and yield spreads. The term structure of interest rates of Mexico is presented in the sixth section to provide results related with the behavior of interest rates in Mexico. Another result of this research is about testing the expectations
+8
+
+hypothesis for the Mexican xed income market. This research follows Cochrane & Piazzesi (2005), Campbell & Shiller (1991) and García-Verdú (2011) to analyze the predictability of interest rates in Mexico. Finally, the seventh section adress the main conclusions of this research and their implications analyzing the Mexican debt market.
+
+2
+
+Theoretical Background About the Term Structure of Interest
+
+Rates Estimation
+
+2.1 What is the term structure of interest rates and what is telling us?
+t The term structure of interest rates denes at a certain time the relation between the
+level of interest rates and their time to maturity4. The term spread, or slope, is the dierence
+t between long-term interest rates and short-term interest rates. It depends on the date
+at which it is computed. Hence, dierent dates correspond to dierent term structures of interest rates, so it is estimated daily, weekly or monthly depending on the purpose of the estimation. Bonds are needed to estimate the curve. As there are several kinds of them, the term structure of interest rates plots maturities and their corresponding interest rates as if all the bonds were zero coupon bonds.5.
+4The spot rate curve and yield curve are special cases of the term structure of interest rates. 5These are bonds that pay only the principal at maturity. In general, short-term bonds are zero coupon bonds and long-term bonds pay coupons over dierent periods (daily, weekly, monthly, quarterly, semiannually, yearly and so on).
+
+9
+
+As Figure 1 shows, the most common shapes of the term structure of interest rates are increasing, decreasing, with hump or inverted hump curves. The term structure of interest rates of December 4th, 2001 barely represents a hump. Why it changes over time in shape and tendency? There are three main concepts that explain the behavior of the term structure
+of interest rates: expectation hypothesis, liquidity preference and segmented markets.
+The expectation hypothesis, following Cochrane & Piazzesi (2005) denition, states that long yields are the average of future expected short yields6. Expectations hypothesis is very useful to analyze the decision making of investors. For example, if a bond investor interprets a positively sloped term structure as an indication of a future increase in yields, then he may be led to sell bonds today to avoid capital losses when interest rates increase. In terms of monetary policy, this is very useful as it provides an overlook about which are the expectations of interest rates in the future for the economy. Nevertheless, to reject this hypothesis implies that investors and monetary policymakers must be careful while interpreting the shapes and
+6See the appendix 1 for a numerical example of how expectation hypothesis works.
+10
+
+slopes the term structure could depict.
+Liquidity preference states that a economical agent prefers liquid securities that allow him
+to get rid o his position in the short-term easily. So, the spread of long-term and shortterm interest rates exists because short-term securities are more liquid. Krishnamurthy and Vissing-Jorgensen (2010) analyzed liquidity and safety of U.S. Treasury bonds and explained
+spreads of long-term and short-term interest rates with it. The segmented markets concept
+explains the behavior of the term structure of interest rates stating that markets demand bonds of dierent maturities. Hence, interest rates dier among markets depending on the investors needs. For example, short-term interest rates are aected by money tables of some nancial institutions and long-term interest rates are aected by insurance companies and pension funds (García-Verdú, 2011). Modigliani & Sutch (1966) proposed the preferred habitat hypothesis. It says that market participants have a preferred habitat, that is, they tend to match the term structure of their assets to its liabilities. Vayanos and Vila (2009) focused this hypothesis to the explanation of bond risk premia.
+2.2 Estimation of the term structure of interest rates: The Svensson model
+The main idea about estimating the term structure of interest rates consists on nding a portfolio of coupon bonds whose cash ows exactly match those of a given zero-coupon bond (Campbell, Lo and MacKinlay, 1997). This is dicult because each investor has dierent preferences among time and return. Consequently, the number of cash ows may exceed the number of instruments and there are several short-term maturity bonds and long-term maturity bonds as well. There are dierent procedures to obtain the term structure of interest
+rates such as bootstrap, regressions and curve tting methods when analyzing zero coupon
+bonds and coupon bonds 7.
+The bootstrap method requires the bonds that we consider have the highest liquidity. For
+longer maturities, not all of the bonds may be available so it is possible to use the bonds that expire a few days earlier or later than the ones in the cycle needed for the bootstrap. This
+n iterative procedure builds a system of bond price equations. Nevertheless, we rarely have
+such nicely spaced data. Sometimes we in fact have too many maturities and sometimes we
+Regressions do not have enough maturities available to carry out the bootstrap procedure. method deals with the case in which there are too many bonds compared to the number of
+maturities. Through OLS, bond prices are estimated as a function of coupon's present value. However, we must have more bonds than maturities, which does not occur always for longer
+7In the appendix 2 there is a more detailed explanation of concepts such as zero coupon bonds, discount bonds, discount factor and the estimation methods of the term structure of interest rates.
+11
+
+maturities8.
+Curve tting . treats some problems that regressions and bootstrap cannot The Nelson-
+Siegel model and its extension proposed by Lars Svensson in 1994 are curve tting estimation models. Nelson and Siegel (1987) assume that the instantaneous forward rate is the solution
+to a second-order dierential equation with two equal roots. Let f (m) denote the instanm t taneous forward rate with time to maturity , for a given trade date . Then Nelson and
+Siegel's forward rate function can be written as
+
+m
+
+m
+
+m
+
+f (m; b) = β1 + β2exp
+
+− τ1
+
++ β3 τ1 exp
+
+− τ1
+
+(1)
+
+where b = (β1, β2, β3, τ1)is a vector of parameters.
+
+Svensson (1994) extended this function by adding a fourth term with two adiditional
+β τ parameters, 4 and 2. This improves the adjustment by allowing a new curvature in the
+function.
+
+m
+
+m
+
+m
+
+m
+
+m
+
+f (m; b) = β1 + β2exp
+
+− τ1
+
++ β3 τ1 exp
+
+− τ1
+
++ β4 τ2 exp
+
+− τ2
+
+(2)
+
+where b = (β1, β2, β3, β4, τ1, τ2).
+
+β Svensson model builds the instantaneous forward rate with four parts. 1 is a constant
+
+and β2exp
+
+−
+
+m τ1
+
+is an exponential term monotonically decreasing (or increasing) towards
+
+zero as a function of m if β2 is positive (or negative).
+
+The
+
+third,β3
+
+m τ1
+
+exp
+
+−
+
+m τ1
+
+, is a term
+
+m β which generates a hump-shape (or a U-shape) as a function of if 3 is positive (or negative).
+
+β4
+
+m τ2
+
+exp
+
+−
+
+m τ2
+
+is the fourth and key element of the Svensson model, allowing a second hump-
+
+shape (or a U-shape) in the curve tting.
+
+The spot rate can be derived by integrating the forward rate according to the next identity:
+
+s (t, T )
+
+≡
+
+´T
+τ =t
+
+f
+
+(t, τ ) dτ
+
+T −τ
+
+where s (t, T )is the sport rate at time t with maturity at time T and f (t, τ )is the forward rate settled at time t for an investment that starts at time τ > t. Hence, the spot rate under
+
+n
+8This equation is a regression of the type: yi = α + βjxij + εj. See the appendix 3 for further details.
+i=1
+
+12
+
+the Svensson model is:
+
+1 − exp
+
+s (m; b) = β1+β2
+
+m
+
+−
+
+m τ1
+
+ 1 − exp
+
++β3 
+
+m
+
+−
+
+m τ1
+
+τ1
+
+τ1
+
+− exp
+
+m −
+τ1
+
+ 1 − exp
+
++β4 
+
+m
+
+−
+
+m τ2
+
+τ2
+
+− exp
+
+(3)
+
+ m − τ2
+
+Figures 2 and 3 shows how the six parameters behave according to the term structure of
+
+interest rates (equation 3).
+
+As we can see, β1 is an estimator of the long-term interest rates. In gure 2, β1 = 0.0687
+
+which means that the term structure of interest rates is giving an expected level of 6.87%
+
+β on the long-term. 2 gives an estimate about the path short-term interest rates are going to
+
+β < 0 follow over time to maturity. If 2
+
+the term structure of interest rates is going to increase
+
+β > 0 in the short-term, but if 2
+
+, long-term interest rates are expected to fall so the short-term
+
+β β side of the curve will increase with a decreasing rate. 3 has the same interpretation than 2
+
+β but it is more sensitive at the long-term side of the curve. That is why 3 is the estimator of
+
+β the path long-term interest rates are going to follow. Finally, 4 has the same behavior than
+
+β2 β and 3,but it turns from a hump into a U-shape for bigger values. Consequently, β4 is a
+
+13
+
+parameter allowing more curvature to the term structure of interest rates. Figure 3 shows
+the eect τ1, τ2 have over the curve. τ1 shows the speed at which short-tem interest rates fall τ and 2 the speed at which they reach long-term interest rate levels.
+
+The parameters of the model can be estimated by minimizing the dierence between
+β observed and theoretical prices (pricing error) subject to a positive 1, as it is the estimator
+of the long-term interest rates9.
+
+n
+
+min b
+
+PiS − PiObs 2
+
+i=1
+
+s.t. β1 > 0
+
+where b = (β1, β2, β3, β4, τ1, τ2) and n is the number of bonds.
+
+The Bank for International Settlements published in 2005 a paper that provided information on the reporting central banks' approaches to the estimation of the term structure of interest rates. The following table summarizes information about the central bank, its estimation method and the frequency of the estimation. Nevertheless, the table in the BIS paper has more details about each estimation10. In most cases, the contributing central banks adopted the Svensson model.
+9Yield error minimization is another way to estimate the parameters.The estimation could also be done with Maximum Likelihood, although Generalized Method of Moments is another possibility.
+10See BIS Papers No.25 (2005) for further details.
+
+14
+
+Table 1. The term structure of interest rates available from the BIS Data Bank
+
+Central Bank Methodology of Estimation
+
+Frequency
+
+Belgium
+
+Svensson
+
+Canada
+
+Svensson
+
+Finland
+
+Nelson-Siegel
+
+France
+
+Svensson and Nelson-Siegel
+
+Germany
+
+Svensson
+
+Italy
+
+Nelson-Siegel
+
+Japan
+
+Smoothing Spline
+
+Norway
+
+Svensson
+
+Spain
+
+Svensson
+
+Sweden
+
+Svensson
+
+Switzerland
+
+Svensson
+
+United Kingdom
+
+Svensson
+
+United States
+
+Svensson
+
+Source: BIS Papers No. 25 (2005)
+
+Daily Daily Weekly Weekly Daily Daily Weekly Monthly Daily Daily Daily Daily Daily
+
+3
+
+The Mexican Debt and Interest Rates Swaps Markets from 1999
+
+to 2012
+
+3.1 Bonds Market
+Macroeconomic stability, capital account liberalization, globalization and a important increase of nancial regulation have been determinant to promote de Mexican nancial sector development and achieve a bigger inuence in the economy. In particular, the Mexican debt market had been showing an important growth in Mexico (García-Verdú, 2011). The
+outstanding amounts in the bonds market was around 7.97% share of real GDP of 1999. Nowadays, this market represents 34.26% of real GDP of 201211. This means that 3, 154.7
+billions of Mexican real pesos outstand in the bonds market. Figure 4 describes the remarkable growth the debt market had since 1999.
+
+11Real GDP is calculated at prices of 2003.
+
+15
+
+The Mexican debt market has participants such as the federal government, local gov-
+ernment, the Instituto para la Protección al Ahorro Bancario (IPAB)12, Banco de México
+(Mexican Central Bank), public and private rms, banks and of course investors. Figure 5 presents weekly data from 1999 to 2012 and shows that the most important bonds in the Mexican debt market are MBONOS, CETES, BONDES, UDIBONOS and BPAT13.
+12IPAB is a public organisation which manages the saving system of banks in Mexico and provides resources to avoid nancial problems of banks.
+13MBONOS and BONDES are bonds issued by the Mexican government with a xed rate. These bonds are like T-notes. CETES are zero coupon bonds issued by the Mexican government. They are like the T-bills in the U.S. Further details are given on the appendix 4.
+16
+
+The gure shows that, during the period 1999-2012, BONDES are the only bonds decreasing in the market. MBONOS, CETES, UDIBONOS and BPAT had shown an important increase, specially MBONOS which are the bonds with the largest outstanding amount
+in the market. It is approximately around 1, 600 billions of pesos. The other bonds have between 390 and 700 billions of pesos. Hence, MBONOS are the most traded bonds in the
+Mexican xed income market by far. Figure 6 shows the average market share from 1999 to
+2012. MBONOS have a market share of 30.67%, followed by CETES with a 15.14% share, BONDES 10.76%, UDIBONOS 9.93%, BPAT 9.41% and BONDES D with 8.23%.
+On the other hand, if we only take into consideration average bonds market share in 2011 (see gure 7) , UDIBONOS shows a bigger share on average up to 14% and BONDES reduces
+a lot its market share (as Figure 5 describes its behavior) meanwhile BONDES D appears
+now as an important one with a share of 13%.
+17
+
+On the demand side we have brokerages, foreign investors, pension funds (SIEFORES), mutual funds, banks, Mexicans living abroad, Banco de México repurchase agreements, insurance companies, and other Mexican households, who are the largest holders.
+Figures 8A to 9C shows, once again, that MBONOS, CETES, BONDES and UDIBONOS are bonds with the biggest market share. Mexican households' bonds demand is more diversied than Mexicans living abroad which prefer MBONOS by far (compare gure 8A with 8C). Mutual funds demand a relatively diversied amount of bonds too. Banks also demand a diversied amount of each bond and MBONOS and CETES are those which hold more money.
+18
+
+In terms of percentages, gure 9 shows that most of the xed income market is held by
+
+44% Mexican households (
+
+). Financial participants such as banks, mutual funds and insurance
+
+company represent 41% and the rest is demanded by Mexicans from abroad and foreigners
+
+living in Mexico. So, the Mexican xed income market is focused mostly to SIEFORES
+
+portfolios.
+
+19
+
+For the last 14 years, the Mexican debt market has been showing an important growth of
+the market size. The outstanding amounts that bonds have are approximately 3, 154 billions of real pesos (at prices of 2003)14. This amount, in real terms, is the 34.26% of the real GDP.
+We can also see how the aggregate bonds holding composition had changed over the last 14 years. Nowadays, UDIBONOS had lost market share while the sectoral holdings preferences are with nominal bonds such as CETES and MBONOS. This fact reduces the propensity to external shocks in the sense that debt in real terms is diminishing (García-Verdú, 2011).
+
+3.2 The Interest Rate Derivatives Market
+
+The derivatives market became very popular during late 1990´s when the nancial sector
+
+achieved an improvement in terms of regulation, stability and a bigger market size. During
+
+this decade, interest rate derivatives have been turning into an attractive option for long-term
+
+investments and credits for economic agents in Mexico. As we are going to consider TIIE
+
+swaps in our estimation of the term structure of interest rates, we are describing the progress of interest rates derivatives market15. Swap contracts are the most demanded products in this
+
+80% market (more than
+
+of the market since 2005). The next gure provides that information
+
+and explains why we are going to focus just in swaps to analyze the term strcuture of interest
+
+14This is, in nominal terms,4, 557 billions of pesos. 15TIIE is the equilibrium interest rate within banks. See the appendix 4 for a detailed explanation about TIIE Swaps characteristics.
+
+20
+
+rates in this market16.
+16Banco de México oldest data of derivatives market is from 2005.
+21
+
+Figure 11 shows which interest rates are secured by swaps and their share in the market.
+As we can see, TIIE swaps represent around 98 and 99% of this market. In this way, we are showing why we are using TIIE swaps. By 2011, foreign investors had the 57% of the TIIE swaps market operations in Mexico. Banks and stock exchange houses had a 28% of
+the share. This is illustrated in gure 12 in which we are gathering the primary market and the OTC market17.
+Figure 13 depicts this idea showing its real GDP share at 2003 prices. From 2005 to 2008,
+money from TIIE swaps in Mexico increased its share on real GDP from 4.8% to 12.1%. It is very interesting that for 2009 the share decreased to 4.52% which was lower than in 2005.
+Despite we are not concerning about empirical evidence about this situation, maybe the fall was caused because the international nancial crisis of 2008. By 2012, TIIE swaps market
+represents 10% of real GDP at 2003 prices. This is about 916.6 billions of pesos. Notice that
+TIIE swaps have not yet reached its 2008 real GDP share but it is growing though.
+17Over the counter markets (OTC) are those which sell nancial products to any kind of investor.
+22
+
+3.3
+
+Debt and Derivatives Market on the Term Structure of Interest Rates
+
+We have analyzed the market share, real GDP's share and growth of debt and interest rates derivative markets in terms of the amount of money invested. However, there is another important fact to take into consideration: market's liquidity. Figure 14 depicts a daily average of buying and selling operations in both markets. Although debt market has a bigger share in the economy and a higher number of participants, interest rates derivatives market has
+more liquidity. Daily operations within buying and selling produce approximidately 1, 007 billions of pesos of TIIE swaps and 151 billions of pesos of government debt. Maybe this
+could be possible because of maturity of the contracts as bonds have longer times to maturity and TIIE swaps oer a wide variety of maturities18.
+
+Debt market is bigger than interest rate derivatives in terms of real GDP share, participants and number of products. Nevertheless, TIIE swaps are more liquid and this implies that is presence in the term structure of interest rate must be very important. According to the last review about the evolution of nancial markets in Mexico, CETES and MBONOS are the xed income bonds with the highest market shares. In the case of interest rate derivatives
+18See the appendix 4 for a better explanation of TIIE swaps and bonds maturities.
+23
+
+market, TIIE swaps practically represent the whole market. So we are going to estimate the term structure of interest rates in Mexico considering MBONOS, CETES and TIIE Swaps.
+
+4 Data
+
+We built a database of interest rates and coupon rates of CETES, MBONOS and TIIE Swaps
+using Banco de México, Valor de Mercado (Valmer) and Bloomberg data. The information is daily from 1998 to 2012. The next table explains the basic properties of this database19.
+
+Table 2. Database main characteristics
+
+Information
+
+CETES
+
+MBONOS
+
+TIIE Swaps
+
+Period
+
+2000-2012
+
+2000-2012
+
+1998-2012
+
+Type
+
+Daily
+
+Daily
+
+Daily
+
+Maturity
+
+1 month to 1 year 1 to 30 years 3 months to 30 years
+
+Number of bonds
+
+4
+
+40
+
+13 (derivatives)
+
+Observations
+
+10,950
+
+46,372
+
+34,908
+
+Mean
+
+8.00
+
+7.70
+
+9.43
+
+Std. Dev.
+
+3.41
+
+1.82
+
+4.42
+
+Min.
+
+0.71
+
+3.490
+
+4.48
+
+Max.
+
+19.15
+
+17.10
+
+40.50
+
+The total number of observations of the database is 92, 230 interest rates observed day-
+by-day from 1998 to 201220. On average, TIIE swaps have higher returns than government bonds because the latter are risk free. Another way to see this is that TIIE swaps interest rates dier more among maturities than CETES or MBONOS. During the late nineties, interest rates were higher (above ten percent). By the end of 2001, interest rates began to fall as macroeconomic stability turned ination into a stationary process21.
+
+19CETES are of 28, 91, 182 and 364 days. MBONOS are classied according to the date of maturity, as well as TIIE Swaps.
+20There is information of CETES since 1995 but were eliminated as MBONOS rst obsevations are from 2000 and the algorithm needs the same dates for the same type of curve. As we estimate another term structure of interest rates for TIIE Swaps, we are able to keep 1998 to 2012 data.
+21Chiquiar, Noriega & Ramos-Francia (2007).
+
+24
+
+Figures 15A and 15B depict the historical behavior of the interest rates of our database. As we can see, CETES, MBONOS and TIIE swaps have the same tendency. Interest rates were very high at the end of the nineties and they begin to fall until they reach more stable levels since 2001. The forty MBONOS were clustered by segments of maturities to improve the look and interpretation of the graph. Interest rates of longer maturities like 5 to 30 years have a similar tendency among them. This is reecting a high correlation. The correlation matrix from below give us a better way to analyze this phenomenon (see tables 3 and 4).
+25
+
+Interest rates are more correlated the more closer their maturities are. This seems to show that probably interest rates are inuenced by common economical facts as long as their bonds have their time to maturity closer. In most of the cases, the correlation is positive. TIIE swaps are also correlated as long as their maturities are closer. However, we are nding that there are more cases in which interest rates are negatively correlated. Probably the intuition is that TIIE swaps have more volatility as they are riskier than government bonds.
+Data analysis shows that both government bonds and TIIE swaps have interest rates that are correlated in time. The closer they are, the more correlation they have. They share the same tendency. From 1998 to 2001 were above 10 percent but when ination became a stationary process, interest rates fell more quickly in 2002 and keeping on average similar levels up to 2012. Now, the estimation process of the term structure of interest rates will be presented as well as the main results of it including the predictability information it can provide to us.
+26
+
+5 Methodology
+In this section, we show the methodology to estimate the term structure of interest rates for Mexico from 1998 to 2012. We begin describing the problem we need to solve to estimate this curve. Then, we are explaining the algorithm used for Svensson model estimation.
+
+5.1
+
+Estimation of the Term Structure of Interest Rates. The Svensson Model Approach.
+
+We need to estimate six parameters to calculate spot and forward rates according to equations (2) and (3) . These parameters are going to be estimated minimizing price errors:
+
+n
+
+min b
+
+PiS − PiObs 2
+
+i=1
+
+where b = (β1, β2, β3, β4, τ1, τ2).
+
+s.t. β1 > 0
+
+The minimization problem is complex so numerical methods are needed. An algorithm capable to process the database described the last section, using it to estimate bonds prices, minimize their errors and extract those parameters was made and now it is going to be shown.
+
+5.2 The Svensson Model Estimation Algorithms.
+The objective of the algorithm is to obtain the six parameters of the spot rate that minimize the bond price error22. As we are going to estimate two term structure of interest rates curve, two algorithms are needed: one for the government bonds and the other one for the TIIE swaps.
+22The price error is between the theoretical price which is the calculated with the Svensson's spot rate and the observed price which is calculated with the spot rates of the database. We used the software Wolfram Mathematica 8.0 to solve the minimization problem.
+27
+
+5.2.1 Government Bonds Algorithm. First, the algorithm needs the following functions to work properly:
+
+1. Equation (3): Svensson spot rate s (m; b). It is needed to calculate the theoretical bond
+price.
+2. Theoretical price of a CETE:
+
+PCS
+
+=
+
+vn
+
+·
+
+m exp
+364 (100)
+
+−s
+
+m ;b
+364
+
+where vn is the face value (10 pesos for a CETE), m is the maturity and s (m; b) is the
+Svensson spot rate.
+
+3. Observed price of a CETE:
+
+PCObs =
+
+vn
+
+1
+
++
+
+y
+
+·
+
+m 360·100
+
+where vn and m are the same described above and y is the observed interest rate.
+
+4. Theoretical price of a MBONO:
+
+PMS B =
+
+C1 · · · Cn
+
+
+
+exp
+
+−s
+
+(1;
+
+b)
+
+·
+
+t 364·100
+
+·
+
+ 
+
+...
+
+
+
+exp
+
+−s
+
+(n;
+
+b)
+
+·
+
+t 364·100
+
+
+
+ 
+
++
+
+vn
+
+·
+
+exp
+
+−s (m; b) ·
+
+m
+
+
+
+364
+
+where
+
+C1 · · · Cn
+
+is a vector of coupons,
+
+exp
+
+−s
+
+(1;
+
+b)
+
+·
+
+t 364·100
+
+...
+
+exp
+
+−s
+
+(1;
+
+b)
+
+·
+
+t 364·100
+
+t is a vector of discount factors considering the Svensson model spot rates, is the time
+
+vn when the bond pays a coupon and
+
+is the face value (100 pesos).
+
+calculated
+
+with:
+
+C
+
+=
+
+vn·c 100
+
+·
+
+t 364
+
+where
+
+c
+
+is
+
+the
+
+coupon
+
+rate
+
+in
+
+data.
+
+The coupon is
+
+28
+
+5. Observed price of a MBONO:
+
+n
+PMObBs =
+i=1
+
+Ci
+
+1
+
++
+
+y
+
+·
+
+182 364·100
+
++
+m−(n−i)·182 182
+
+vn
+
+m
+
+1
+
++
+
+y
+
+·
+
+182 364·100
+
+182
+
+n where is the number of coupons.
+
+6. Price error:
+
+ P E1
+
+P
+
+Er
+
+=
+
+ 
+
+...
+
+ 
+
+
+
+P En
+
+where P Ei = PiS − PiObs for i = 1, . . . , n giving the number of bonds (both CETES and
+MBONOS).
+
+7. Objective function. Squared sum of price errors:
+
+SSP E = P ErT · P Er
+
+n
+
+SSPE =
+
+PiS − PiObs 2
+
+i=1
+
+n where is the total number of bonds.
+
+Once the functions are specied, the algorithm works as follows:
+
+1. Extract from data the maturity dates of the government bonds and the coupon rates of the MBONOS.
+2. Everyday has a completely dierent interest rates composition. That is, some bonds are maturing, others are paying coupons and another ones just had been issued. That is why the algorithm must keep the available interest rates data per day.
+3. Build a matrix with: today's date, dates of maturity, coupon rates (when there are CETES, the blank is lled with a zero), days to maturity and number of coupons.
+29
+
+4. Minimize SSP E subject to β1 > 0 and providing initial guess for the parameters.
+The minimization problem is done everyday so this steps are programmed with a loop. Hence, the process is repeated for each row of the database. The nal result is a matrix with the six parameters minimizing daily bonds price error23.
+
+5.2.2 TIIE Swaps Algorithm.
+
+The algorithm to calculate the six parameters that minimize the swaps price error follows
+
+exactly the same steps the government algorithm follows but the matrix data is easier to get as all the swaps pay monthly coupons. Hence, the matrix data only has the maturity dates and the interest rates. This algorithm is also easier than the government bonds one because there is only one price to calculate24:
+
+PTSS =
+
+n
+
+28
+
+28
+
+Ci · i · exp (−s (b; i)) · 360 · 100 + m · exp (−s (b; m)) · 360 · 100
+
+i=1
+
+n
+
+SSP Er =
+
+PTSS − 1 2
+
+i=1
+
+23See the appendix 6 for a more detailed explanation of the algorithm, including the Wolfram Mathematica algorithm le.
+24The observed price of a swap equals its face value and, without loss of generality, let it be 1.
+
+30
+
+Figure 16 is also useful to explain TIIE swaps algorithm. The only dierence is in the calculation of prices.
+6 Results
+We show the estimated term structure of interest rates for government bonds and TIIE swaps. The explanation of our result includes the estimated forward and spot rates descriptive statistics and the predictability analysis of interest rates. Finally, we test expectations hypothesis estimating bond risk premia for Mexico. We show regressions, its main results and their implications.
+
+6.1 The Mexican Term Structure of Interest Rates from 1998 to 2012
+
+The algorithm gave the parameters of Svensson model for government bonds and TIIE swaps.
+The estimation was daily so there are 3, 023 estimations for each parameter of the government curve and 3, 329 for TIIE swaps curve. Tables 6 and 7 show the descriptive statistics of the
+parameters. They provide, on average, the behavior of interest rates in Mexico from 1998 to 2012 with maturities from 1 month to 30 years.
+
+Table 5. Government bonds parameters
+
+Parameter
+β1 β2 β3 β4 τ1 τ2
+
+Mean 15.47 -7.41 -158.07 188.77 264.25 242.74
+
+Std. Dev. 5.81 7.80 14.81 15.57 9.24 11.61
+
+Min. 0.01 -24.96 -226.91 125.21 208.85 208.39
+
+Max. 30.96 14.81 -125.52 227.27 279.67 280.89
+
+Table 6. TIIE Swaps parameters
+
+Parameter
+β1 β2 β3 β4 τ1 τ2
+
+Mean 10.13 0.24 -171.60 173.81 256.60 255.01
+
+Std. Dev. 2.37 2.95 0.68 0.68 0.19 0.20
+
+Min. 7.51 -4.18 -172.70 172.72 256.06 254.55
+
+Max. 20.18 11.11 -169.76 175.65 257.05 255.56
+
+31
+
+Last tables show that, on average, the long-term interest rate rate estimator is 15.47% for government bonds and 10.13% for TIIE swaps. As database time horizon is from 1998
+
+to 2012 and the longest maturities of bonds and swaps are within 30 years, the parameter
+
+suggest that, under expectations hypothesis, investors expect long-term interest rates higher
+than those in short-term, ceteris paribus. As β2 < 0 for the debt market term structure of
+
+interest rates, an increase in the short-term is expected. On the other hand, TIIE swaps
+
+β term structure of interest rates has a 2 slightly bigger than zero. This suggests that long-
+
+term interest rates are expected to fall so the short-term side of the curve has a positive but
+
+β < 0 decreasing slope. 3
+
+in both curves so they have a hump that in long-term is reducing its
+
+slope.25 Figures 17 to 21 are illustrating the descriptive statistics of the parameters given in
+
+the latter table. The objective is to analyze how the parameters are working in the possible
+β shapes the term structure of interest rates may take. For example, to analyze 1, the rest of β the parameters are xed on its mean values while 1 moves along its minimum and maximum
+values.
+
+All the parameters for government bonds have a positive relationship with spot rate.
+Notice that this relationship is weaker in β3, β4than β1, β2. The rst two parameters adjust 25Recall this analysis is about the average values of the parameters so Mexican term structure of interest
+rates do not behave always that way.
+32
+
+for higher spot rates of longer maturities while the last two parameters do so for higher
+β short-term spot rates. Although 3 has a positive relationship, their negative values allow the β hump. The parameter 4 allows a bigger curvature in the government bonds term structure
+of interest rates. There is also a positive relationship between maturities and spot rates and it has positive values.
+TIIE swaps term structure of interest rates have the same behavior that government
+β β bonds curve has. Nevertheless 3 and 4 depict a more pronounced hump, suggesting bigger β increases of the spot rates in short term than in the case of government bonds. 4 has the
+same behavior for both term structures. As they are positive, the hump is more exible to adjust the highest interest rates in the database (note that it has the opposite eect as it has
+τ , τ positive values and the same shape than the other curve has but with negative values). 1 2
+are positive for both curves, showing that, on average, short-term and long-term interest rates speed of falling are very slow. Figures 19 and 20 describe graphically these ndings.
+33
+
+τ In the government bonds term structure of interest rates, 2 produces a higher curvature τ τ than 1 for lower values. In the case of 1 , the bigger the parameter, the bigger the curvature
+although the dierence is not so big. Hence, this parameter is less sensitive to maturity
+τ τ than 2. That is why we can see that for 2 the curvature becomes atter as the parameter
+increases. But in both cases, the speed at which the slope falls is very slow. Figure 20 shows the tau parameters behavior for TIIE swaps. In this case, tau parameters are producing a dierent shape in the term structure of interest rates than in the government bonds curve.
+τ τ Both 1 and 2 build a similar hump, with a identical speed at which the slope falls. The
+speed is slow, consequently, both term structure of interest rates provide information about long-term interest rates rising but at a lower rate of growth.
+34
+
+6.1.1 The Term Structure of Interest Rates for Government Bonds According to the estimation of the term structure of interest rates from 1998 to 2012, the
+xed income market has curves with negative slopes from 2000 to 2001 and increasing slopes from 2002 to 2012 (see gure 21). Mexico's ination was becoming a stationary process as Banco de México improved its ination management and the Mexican political economy was focused to a downturn of prices (see Chiquiar, Noriega and Ramos-Francia (2007)). Consequently, expectations about interest rates were about lower levels of it. On the other hand, from 2002 to 2012 expectations are completely opposite. The longer the maturity of a bond, the higher its interest rate will be. Intuitively, the market is paying more return to long-term investments suggesting there is some risk premia. Hence, the term structure of interest rates over maturity are positively sloped from 2002 to 2012. Despite the positive slope, future expectations on interest rates are below 2000 and 2001 levels.
+35
+
+Figure 22 shows thirteen term structures of interest rates. It is very important to consider
+that, from 2000 to 2012 interest rates go from 4 to 10% approximately. Another important
+thing to consider is that for each day and each year, the term structure of interest rates has a dierent slope. Somedays it is steeper or atter. The term structure also moves downward or upward. For example, the term structure of interest rates increased from 2007 to 2009.
+Nevertheless, in 2010 the curve moved downward, increased also by 2011 and nally moved downward by 2012. This shows changes in liquidity according to the macroeconomic situation of Mexico year by year. In terms of the slope, 2012 spot curve is steeper than 2008, suggesting that in 2012 the market is providing higher risk premia to long-term investments than in 2008. Figure 22 depicts the adjustment obtained with the Svensson model.
+6.1.2 The Term Structure of Interest Rates for TIIE Swaps Derivatives market on interest rates like TIIE swaps (the most important of this market
+as we saw in section 4), shows, on average, a more humped curve than the government bonds term structure. From 1998 to 2001 the curve presents a inverted hump. This shows that the term structure of interest rates was decreasing at slow rates for shorter maturities and faster
+36
+
+at bigger maturities. From 2002 to 2012, the curve turns into a positive slope with a hump in shorter maturities. In this sense, expectations on future interest rates are higher the longer the maturity is but with bigger increases during shorter maturities. The intuition resides on the fact that swaps with shorter maturities provide higher interest rates to incentive investments and at the longest maturities, the risk premia is higher but its increase is slower.
+Figure 23 illustrates the behavior or the term structure of interest rates for TIIE swaps over time. The curve is downwarding sloping from 1998 to 2001. The curve shows a deeper decrease for longer maturities. From 2002 to 2005 the term structure of interest rates is positively sloped with a rate of growth decreasing the longer the maturity is. It can also be shown the macroeconomic situation in terms of liquidity. For example, interest rates lowered from 2002 to 2003 In 2004, the interest rates were the most low in this period. Finally in 2005, interest rates increased again but to lower levels than previous years.
+Interest rates movements provide some evidence that there were more incentives for liquidity through 2004 but the following year this market was less liquid. The period 2006-2012 is the one in which the term structure of interest rates shows more concavity. It behaves very similar in terms of liquidity in the previous periods. Nevertheless, 2012 is the year with
+37
+
+more liquidity in this market, reinforcing the results we found in section 4 about this market, which seems to be more liquid than the bonds market.
+The term structure of interest rates estimated under the Svensson model for TIIE swaps had a good adjustment to actual data. Figure 24 proves it. In this case, it is shown the term structure of interest rates of February, 28th 2012, which is the last date of the database. Fu-
+ture expectations on interest rates for TIIE swaps are around 8.5% with derivatives maturing
+over 32 years. The highest increases in the spot curve are in the short-term maturitity dates
+around 6 to 7% .
+The estimated Mexican term structure of interest rates from 1998 to 2012 provides the following results:
+1. There are higher returns in the TIIE swaps (derivatives) market than in bonds market. 2. The TIIE swaps term structure of interest rates has a faster increase on its interest
+rates at short maturities and slower at longer maturities, meanwhile government bonds term structure of interest rates seems to have a more steady rate of growth in its rates over time. 3. Both markets show a decrease of their interest rates from 1998 to 2001 and increasing rates from 2002 to 2012. 4. According to the maturities observed, there have been expectations about higher levels of interest rates in the future since 2002. 5. Both term structures of interest rates give evidence that money market is more liquid nowadays than in the past decade. This is because, the level of interest rates of recent
+38
+
+years is lower than in the beginnings of the twenty rst century in Mexico26.
+6. The Svensson model shows a good adjustment to observed spot rates for Mexican data (see gures 24 and 22).
+7. The term structure of interest rates of government bonds has a very similar shape than the one estimated by García-Verdú (2011).
+6.2 Beyond the Term Structure of Interest Rates: a brief bond risk premia analysis
+The estimation of the term structure of interest rates for Mexico from 1998 to 2012, under the Svensson model, provides information related to the behavior of the interest rates and the expectations about them up to thirty years of maturity. The estimation supports ndings such as increasing rates over time associated to bigger maturities. Intuitively, that could be the result of a bond risk premia. That is, higher returns to incentivate longterm investments. The estimation gave a positive slope in both government bonds and TIIE swaps. Nevertheless, government bonds have a atter curve and swaps a more humped curve. What additional information can we obtain from these ndings? In this subsection, we follow Cochrane & Piazzesi (2005) bond risk premia analysis just as García-Verdú (2011) also did for the Mexican case.
+The objective is to perform a regression analysis to determine if the bond risk premia changes over time estimating excess returns on bonds and derivatives as a function of the dierence among forward and spot rates. This is the second result of this research. The motivation goes in the sense that investors make decisions over time as long as their investments give them returns over the time to maturity. If risk premia changes over time, we can say that the term structure of interest rate is a very useful tool for investment decision making. The fact would be that it is not the same to invest, for example, on a 10-year bond than in ten annual bonds.
+Cochrane & Piazzesi (2005) follow Fama and Bliss (1987) regressions. They regressed each excess return against the same maturity forward spread and provided classic evidence against the expectations hypothesis in long-term bonds. Forecasts in terms of yield spreads
+n have a similar behavior. Risk premia is considered as the excess return of a bond with 26Interest rates during late 1990s and early 2000s were above 10 percent and term structure reects expec-
+tations of diminishing interest rates. Since 2002, levels of interest rates have been below 10 percent but with expectations of increasing interest rates.
+39
+
+maturity along its period. Castellanos & Camero (2002) also made an analysis on excess returns of bonds in Mexico27. Bond risk premia, under expectations hypothesis, requires
+that the same equation holds:
+
+E rt(+n)1 − yt(1/12) = k
+
+(4)
+
+where rt(+n)1 ≡ p(t+n−1 1) − p(tn) is the holding period return of a bond and yt(1/12) is the shortk n term interest rate, is a constant reecting the risk premia and is the time to maturity
+(in years).28.
+
+As there is an interest to observe excess returns on bonds and swaps, regressions need the dierence between short-term interest rates and long-term interst rates, that is, forward and spot rates estimated with the algorithm. The regressions are:
+
+rx(t+n)1 = α + β ft(n) − yt(1/12) + ε(t+n)1
+
+(5)
+
+where rx(t+n)1 ≡ rt(+n)1 − yt(1/12) is the excess returns on bonds or swaps and ft(n) − yt(1/12) is the spread between a forward rate from today and short-term spot rate (one month). If β = 0 ,
+the result will be that the term structure of interest rates forecasts time constant risk premia
+for government bonds and TIIE swaps. But if β = 0, Mexican term structure of interest
+rates have time varying risk premia29. As we are following Cochrane & Piazzesi (2005), we are going to calculate forward and spot rates (equations (2) and (3)) from one to ve years to estimate equation (5). That means that we are going to run ve regressions to analyze bond risk premia in Mexico. We are going to estimate them with OLS as García-Verdú (2011) did.
+
+27Castellanos & Camero (2002) used a GARCH(1,1) to estimate bond risk premia. 28Holding period return is the dierence in bond prices as a measure of return obtained for holding a bond. The short-term interest rate considered in this paper is the one-month estimated spot rate. 29See appendix 5 for a more formal explanation about risk premia and expectations hypothesis.
+40
+
+6.2.1 Government Bonds Risk Premia
+
+The calculations of spot curves and forward curves from one to ve years give us the following descriptive statistics for government bonds:
+
+Table 7. Descriptive statistics of spot rates Maturity Mean Std. Dev. Min. Max. (years)
+
+1
+
+8.19
+
+2.79
+
+4.24 16.05
+
+2
+
+8.29
+
+2.72
+
+4.44 16.05
+
+3
+
+8.39
+
+2.65
+
+4.65 16.05
+
+4
+
+8.52
+
+2.57
+
+4.85 16.04
+
+5
+
+8.59
+
+2.51
+
+5.06 16.03
+
+Table 8. Descriptive statistics of forward rates
+
+Maturity Mean Std. Dev. Min.
+
+Max.
+
+(years)
+
+1
+
+8.30
+
+2.72
+
+4.44
+
+16.05
+
+2
+
+8.49
+
+2.58
+
+4.86
+
+16.04
+
+3
+
+8.69
+
+2.45
+
+5.27
+
+16.02
+
+4
+
+8.91
+
+2.32
+
+5.67
+
+16.01
+
+5
+
+9.08
+
+2.22
+
+6.04
+
+16.00
+
+Both forward and spot rates increase over maturity. Forward rates are higher than spot ones as the term structure of interest rate estimated shows expectations of investors for higher interest rates in the future. On the other hand, the volatility of spot and forward rates reduces over maturity because standard deviation diminishes the more the time to maturity increases.
+
+Table 9. Descriptive statistics of Government bonds returns
+
+Mean Std. Dev. Min. Max. Maturity
+
+Risk-Return
+
+(years)
+
+8.23
+
+2.82
+
+4.24 16.16
+
+1
+
+8.33
+
+2.74
+
+4.45 16.15
+
+2
+
+8.43
+
+2.67
+
+4.66 16.15
+
+3
+
+8.53
+
+2.60
+
+4.86 16.14
+
+4
+
+8.63
+
+2.53
+
+5.07 16.14
+
+5
+
+2.92 3.04 3.15 3.28 3.40
+
+Government bonds have a increasing return around 8 and 8.7% . The return stabilizes in
+time and the risk-return column shows that for each unit of risk, a government bond achieves more than 1 unit of return so they could be attractive for investors.
+
+41
+
+Table 10. Descriptive statistics of bond excess returns
+
+Maturity Mean Std. Dev. Min.
+
+Max.
+
+(years)
+
+1
+
+0.05104 0.48902
+
+-1.4
+
+2
+
+0.15257 0.52162 -1.61
+
+3
+
+0.2534
+
+0.57221 -1.83
+
+4
+
+0.35375 0.63729 -2.04
+
+5
+
+0.4534
+
+0.71168 -2.25
+
+1.39 1.48 1.58 1.71 2.01
+
+Table 11. Descriptive statistics of bond spread rates
+
+Maturity Mean Std. Dev. Min.
+
+Max.
+
+(years)
+
+1
+
+0.1916
+
+0.20626 -0.61
+
+2
+
+0.38993 0.41873 -1.23
+
+3
+
+0.58639 0.62907 -1.85
+
+4
+
+0.78069 0.83831 -2.47
+
+5
+
+0.97292 1.04514 -3.08
+
+0.69 1.41 2.11 2.81 3.51
+
+Bond excess returns increase over time and they seem to vary as well. On the other hand, the spread between forward and spot rates increase over the years and they vary more as maturity increases. Intuitively, bonds market is not forecasting the same returns across maturities, which is a way of realizing that risk premia is changing over the term structure of interest rates (see gure 26). Moreover, if forward curves are graphed for several days, their slopes are not always the same, reinforcing the idea of changes in risk premia (see gure 25).
+
+42
+
+However, the regression should provide a better estimation of risk premia.
+
+Table 12. Bond Risk Premia
+
+Years
+β
+
+1 0.80913***
+
+2 0.63888***
+
+3 0.58181***
+
+4 0.55522***
+
+5 0.53957***
+
+(0.263)
+
+(0.124)
+
+(0.080)
+
+(0.059)
+
+(0.047)
+
+α
+
+-0.00104
+
+-0.00097
+
+-0.00088
+
+-0.00080
+
+-0.00072
+
+(0.001)
+
+(0.001)
+
+(0.001)
+
+(0.001)
+
+(0.001)
+
+N
+
+144
+
+R2
+
+0.11647
+
+144 0.26303
+
+144 0.40912
+
+144 0.53342
+
+144 0.62787
+
+OLS estimation with robust standard errors in parentheses. ***p < 0.01
+
+All the estimations of the spread between forward and spot rates is statistically dierent from zero. Consequently, this dierence among interest rates of short-term and long-term is explaining excess bonds returns. The risk premia is changing over years. This is an evidence against the expectation hypothesis. It is also very important to mention that the spread on interest rates explains less of the risk premia changes the more the maturity increases.
+
+6.2.2 The TIIE Swaps Risk Premia
+The calculations of spot curves and forward curves from one to ve years give us the following descriptive statistics for TIIE swaps:
+
+Table 13. Descriptive statistics of spot rates
+
+Maturity Mean Std. Dev. Min.
+
+Max.
+
+(years)
+
+1
+
+10.5788
+
+5.5281
+
+4.4774 30.7005
+
+2
+
+10.5844
+
+5.5205
+
+4.4959 30.6843
+
+3
+
+10.5900 5.51306 4.5143 30.6681
+
+4
+
+10.5956
+
+5.5056
+
+4.5326 30.6519
+
+5
+
+10.6011
+
+5.4981
+
+4.5509 30.6357
+
+43
+
+Table 14. Descriptive statistics of forward rates
+
+Maturity Mean Std. Dev. Min.
+
+Max.
+
+(years)
+
+1
+
+10.5845
+
+5.5205
+
+4.4959 30.6843
+
+2
+
+10.5957
+
+5.5055
+
+4.5328 30.6519
+
+3
+
+10.6068
+
+5.4906
+
+4.5694 30.6195
+
+4
+
+10.6177
+
+5.4758
+
+4.6057 30.5871
+
+5
+
+10.6286 5.46104 4.6418 30.5549
+
+TIIE swaps have higher returns than government bonds on average (recall government
+bonds had a mean around 8.5% ). Both forward and spot rates are increasing the higher the
+maturity is. Both seem to stabilize the level of interest rates over the years to maturity.
+
+Table 15. Descriptive statistics of TIIE Swaps Returns
+
+Maturity
+
+Mean
+
+Std. Dev.
+
+Min.
+
+Max. Risk-Return
+
+(years)
+
+10.6384
+
+5.5988
+
+4.4858 31.0966
+
+1.9001
+
+1
+
+10.6440
+
+5.5912
+
+4.5043 31.0800
+
+1.9037
+
+2
+
+10.6496
+
+5.5836
+
+4.5228 31.0633
+
+1.9073
+
+3
+
+10.6552
+
+5.57605
+
+4.5412 31.0467
+
+1.9109
+
+4
+
+10.6607
+
+5.5685
+
+04.5595 31.030
+
+1.9145
+
+5
+
+TIIE swaps have an increasing return around 10.63 and 10.67% . The return stabilizes in
+maturity and the risk-return column shows that for each unit of risk, a TIIE swap achieves more thhan 1 unit of return so these could provide a safe investment. Nevertheless, this ratio is shorter than government bonds (which was around 3 points), suggesting that TIIE swaps are riskier than government bonds.
+
+44
+
+Although gure 28 is not so helpful to analyze forward curve slope across maturities, gure 29 let us realize the dierence between forward and spot curves in terms of their slopes. TIIE swaps market is not forecasting the same returns across maturities, which is a way of realizing that risk premia is changing over the term strucutre of interest rates. This intuition can get formalized with the results of the regression for TIIE swaps:
+
+Table 16. TIIE Swaps Risk Premia
+
+Years
+β
+
+1
+
+2
+
+1.55496*** 1.60025***
+
+3 1.62739***
+
+4 1.62087***
+
+5 1.60298***
+
+(0.095)
+
+(0.170)
+
+(0.214)
+
+(0.227)
+
+α
+
+-0.00109** -0.00120** -0.00133*** -0.00146***
+
+(0.227) -0.00156***
+
+(0.000)
+
+(0.000)
+
+(0.000)
+
+(0.001)
+
+(0.001)
+
+N
+
+161
+
+161
+
+R2
+
+0.11740
+
+0.13347
+
+161 0.14993
+
+161 0.16262
+
+161 0.17590
+
+OLS estimation with robust standard errors in parentheses. ***p < 0.01, **p < 0.05
+
+All the estimations of the spread between forward and spot rates is statistically dierent
+
+95% from zero. Even the constant in the regression is signicative at a
+
+of condence. Hence,
+
+risk premia is changing over years. Moreover, the estimation is bigger than 1, situation
+
+that allow us to claim that TIIE swaps market is more sensitive to spread among rates over
+
+maturities than government bonds. TIIE swaps also show evidence against the expectation
+
+hypothesis.
+
+This results are consistent with international and domestic literature. Cochrane & Pi-
+
+azzesi (2005) found that interest rate forecasts vary across investment horizon. García-Verdú
+
+45
+
+(2011) also nds evidence against expectations hypothesis in Mexico as well as Castellanos & Camero (2002) and Sod (1995) did. In our case, we also nd evidence against expectations hypothesis applying to the term structure of interest rates a test for risk premia analysis. The term structure of interest rates for government bonds has a risk premia varying over the curve because the spread between short-term and long-term rates is explaining a great part of the bonds excess returns. It is very important to say that the longer the maturity, the lower the predicting power of this spread. On the other hand, TIIE swaps term structure of interest rates also has risk premia varying across time. Nevertheless, we nd that the spread on interest rates is stronger explaining swaps excess returns than in the case of government bonds. Moreover, there is not a tendency of the spread on interest rates predicting the behavior of risk premia as for some years to maturity it increases but for others it decreases.
+7 Conclusions
+The term structure of interest rates is a very useful tool for monetary policy decision making because it provides the behavior that interest rates are having over too many years. Hence, it is very important for a central bank to know as its main variable to enhance a controlled ination is the interest rate in the short-term. This curve is also very important for nancial decisions because it enables interest rates predictions, risk premia across time and a smart approach in the pursuit of high returns on investment. Nowadays, the xed income market and derivatives market in Mexico represent a very important share of Mexico's real GDP. The nancial system is stronger and better regulated, enhancing more certainty to investors and economic agents. In this way, we are observing more liquidity in both markets and more daily transactions in the nancial sector. MBONOS and CETES are the most representative bonds in the Mexican xed income market in terms of their outstanding amounts and daily transactions. On the other hand, TIIE swaps are the most important interest rates derivatives in the market as they almost represent the whole market.
+TIIE swaps are bought and sold in bigger numbers of money and frequency than MBONOS and CETES. Hence, derivatives market is more liquid than government bonds market. So, one contribution to the Mexican literature is that we are including TIIE swaps to the estimation of the term structure of interest rates because of its relevance. We estimated the term structure of interest rates through a dierent model, which is the most popular within central banks all over the world. Hence, another contribution is to use Svensson model for the estimation. The closest methodolgy was employed by Diez-Cañedo (2003) but it was a Nelson-Siegel approach and they do not get involved with all the information the term structure of interest rates can provide. Nevertheless, the curves they obtain have similar shapes
+46
+
+as those from this paper. The term structure of interest rates in Mexico have a negative slope from 1998 to 2001 when the country was focused on reducing ination. Consequently, nominal interest rates were falling. From 2002 to 2012, the curve has a positive slope reecting the existence of risk premia that market pays for long-term investments but also another resasonable explanation is that the xed income market will have a rise in liquidity too.
+The government bond curve is atter than the TIIE swaps curve that is more humped if we analyze the parameters on their mean values. Hence, estimated spot rates for TIIE swaps increase faster during the short-term of maturities than in the long-term side, while government bonds reect almost the same rate of growth of estimated spot rates over the maturity time horizon. The TIIE swaps spot curve expects higher interest rates than government bonds curve. The term structure shape of government bonds is very similar to García-Verdú (2011) estimation and this research is including the TIIE swaps term structure for Mexico, which is something never done before in the Mexican literature. Finally, a more formal analysis was made about the information that the term structure can provide. In particular, we focused on bond risk premia as Cochrane & Piazzesi (2005) and García-Verdú (2011) did. We conclude that the term structure of interest rates in Mexico has a time varying risk premia from 1 to 5 years of maturity in both bonds and interest rate swaps market. This is a very important result because is consistent with the related literature nding evidence against expectations hypothesis. As a consequence, short-term bonds or swaps are not going to give the same return of a long-term one.
+So, investors and monetary policymakers should be very careful on their decision making as the term structure shows that each period over the time horizon has a dierent risk premia. Hence, the expected prot from an investment today can turn into a expected loss the next period. This result is reinforced with other contributions such as the index return-risk that shows that government bonds bring more return per unit of risk than TIIE swaps. This contribution may lead to further research about segmented markets as another explanation of the daily change of the shape the term structure of interest rates have. This area of research has a long way through. For example, to make estimations on risk premia or predictability of interest rates with other econometric techniques such as GMM. This paper shows that Svensson model is a estimation method that makes a good adjustment in spot and forward rates estimation and it will improve as there would be more available data and strength of the nancial sector of Mexico.
+47
+
+8 References
+ Ang, A., M. Piazzesi and M. Wei (2005), What does The Yield Curve Tells Us About
+GDP Growth?, Journal of Econometrics, 131, 359-403.
+ Banco de México (2011), Reporte sobre el Sistema Financiero, Banco de México. Oc-
+tubre 2011. URL: http://www.banxico.org.mx/publicaciones-y-discursos/publicaciones/informesperiodicos/reporte-sf/%7B81B0CEC6-0DF8-5E02-CA52-01AA474BB9B9%7D.pdf
+ Bank for International Settlements (2005), Zero-coupon yield curves: technical docu-
+mentation, BIS papers, pp. 1-34.
+ Cacho-Díaz, J. and A. Ibañez (2005), Estimation with Applications of Two Factor
+Ane Term Structure Models of Mexico, 1995-2004, Mimeo, Princeton University.
+ Campbell, J., A. Lo, and A. Craig MacKinlay (1997), The Econometrics of Financial Markets, Princeton University Press, 611 pp.
+ Campbell, J., and R. Shiller (1991), Yield Spreads and Interest Rates: A Bird's Eye
+Review, Review of Economic Studies 58, 495-514.
+ Castellanos, S.G. and E. Camero (2002), ¾Qué Información sobre las Tasas de In-
+terés Spot Futuras Contiene la Estructura Temporal de Tasas de Interés en México?, Dirección General de Investigación Económica, Banco de México.
+ Castellanos, S.G. and L. Martínez (2008), Development of the Mexican Bond Market
+in Borensztein, E., K. Cowan, B. Eichengreen and U. Panizza, Bond Markets in Latin America: On the Verge of a Big Bang?, MIT Press.
+ Cochrane, J.H. and Piazzesi (2005), Bond Risk Premia, American Economic Review,
+Volume 95, Issue 1, March, pp. 138-160.
+ Diebold, F.X. and Li, C. (2006), Forecasting the Term Structure of Government Bond
+Yields, Journal of Econometrics, 130, 337-364.
+ Diez-Cañedo (2003), Un método eciente para la simulación de curvas de tasas de
+interés, Banco de México, pp. 1-33.
+ Fama, E. (1984), Forward and Spot Exchange Rates, Journal of Monetary Economics,
+14, pp. 319-338
+ Fama, E. and R. Bliss (1987), The Information in Long Maturity Forward Rates,
+American Economic Review, Vol. 77, 680-692.
+ García-Verdú, S. (2011), Algunas Consideraciones Sobre la Estructura Temporal de
+Tasas de Interés del Gobierno en México, Banco de México Working Papers, 2011-18, pp.1-38.
+ Krishnamurthy, A., A. Vissing-Jorgensen (2010), The Aggregate Demand for Treasury
+Debt, NBE Working Paper Series, pp. 1-56.
+48
+
+ Modigliani and Sutch (1966), Innovations in Interest Rate Policy, American Economic
+Review, Vol. 56, pp. 178-197.
+ Nelson, C.R. and A.F. Siegel (1987), Parsimonious Modeling of Yield Curves, Journal
+of Business, 60 (4), pp. 473-489.
+ Sargent, T.J. (1972), Rational Expectations and the Term Structure of Interest Rates,
+Journal of Money, Trading and Banking, Vol. 4, No. 1, Part 1, pp. 74-97.
+ Sod, G. (1995), La Teoría de Expectativas Racionales de la Estructura Temporal de
+Tasas de Interés y el Valor de la Opción de Posponer Inversión, Dirección General de Investigación Económica, Banco de México.
+ Svensson, Lars (1994), Estimating and Interpreting Forward Interest Rates: Sweden
+1992-1994, NBER Working Paper Series, pp. 1-47.
+ Vayanos and Vila (2009), A Preferred-Habitat Model of the Term Structure of Interest
+Rates, NBER Working Paper Series, pp. 1-58
+ Veronesi, P. (2010), Fixed Income Securities. Valuation, Risk and Risk Management,
+John Wiley & Sons, Inc., 805 pp.
+49
+
+9 Appendix
+The appendix is divided into six sections. The rst one provides an example of how expectations theory works for investment strategies and decision making. The second one provides basic concepts of nance that are needed to understand the term structure of interest rates. That is, how to calculate a discount factor and the denition of interest rates under discrete and continous time. This section also shows how to determine the price of zero coupon bonds and coupon bonds; as well as the expected return and yield to maturity which are important concepts for expectation hypothesis too. The third section explains with more detail the several methodologies that exist in the literature to estimate the term structure of interest rates and are dierent than curve tting models (Svensson and Nelson-Siegel models). The fourth section summarizes the most important characteristics of the instruments of the Mexican xed income market that we are analyzing. In particular, it describes CETES, MBONOS and TIIE swaps time to maturity, coupon payments, the way they are traded and placed; and their nominal values. The fth section is useful for a better understanding of the link between the term structure of interest rates and risk premia developing some formal relations derived from expectation hypothesis. In the last section the algorithm code used for this research is shown.
+1. Expectations Theory
+
+Several papers have studied how to make a good forecast about the interest rates for a
+
+better investment decision making process across the time considering a great variety of
+
+bonds in terms of maturity and payo. The expectations theory of the term structure
+
+of interest rate is a relationship between a longer-term n-period interest rate and a
+
+shorter-term m-period interest rate. Suppose today the continously compounded 1-
+
+3% year sport rate is
+
+. Assume that we have perfect foresight and we know that next
+
+5% year the 1-year sport rate will be
+
+. What then should today's 2-year yield be? To
+
+answer this question, we begin in the future and work backward. If we know for sure
+
+5% that next year the 1-year yield will be
+
+, we also know that the price of a zero coupon
+
+bond next year will be
+
+Pz (1, 2) = 100e−r(1,2) = 100e−0.05 = 95.1229
+Discounting this price to today, we have that the price today of a 2-year zero coupon bond is
+
+50
+
+Pz (0, 2) = Pz (1, 2) e−r(1,2) = 95.1229 (0.970445) = 92.3116
+
+Today's
+
+2-year
+
+yield
+
+is
+
+then
+
+r (0, 2)
+
+=
+
+−ln(0.923116) 2
+
+=
+
+4%
+
+,
+
+which
+
+is
+
+the
+
+average
+
+between
+
+today 1-year rate, 3% and next year 1-year rate, 5%.
+
+So we have
+
+Pz (0, 2) = Pz (1, 2) e−r(0,1) = 100e−r(1,2)e−r(0,1) = 100e−r(0,1)−r(1,2)
+and we know by denition that
+
+Pz (0, 2) = 100e−2r(0,2)
+equating both equations implies that under perfect foresight
+
+100e−r(0,1)−r(1,2) = 100e−2r(0,2)
+
+e−r(0,1)−r(1,2) = e−2r(0,2)
+
+−r (0, 1) − r (1, 2) = −2r (0, 2)
+
+⇒ 2r (0, 2) = r (0, 1) + r (1, 2)
+
+1
+
+1
+
+r (0, 2) = r (0, 1) + r (1, 2)
+
+2
+
+2
+
+The long-term yield is a weighted average of the current short-term yield and the short-
+
+term yield next period. This example shows that if market participants are perfectly
+
+certain about the next year's 1-year rate, then the 2-year yield is a weighted average of
+
+today's and next year's 1-year rates. In other words, if market participants are certain
+
+that next year rates will be higher thant today's, then the today's term structure of
+
+interest rates will reect this information by sloping upward. Similarly, if market par-
+
+ticipants are certain that next year rates will be lower than today's then today's yield
+
+curve slopes downward. This positive relation between market participants' expecta-
+
+tions about future rates and the current shape of the yield curve goes under the mame
+
+of expectation hypothesis.
+
+51
+
+2. The Term Structure of Interest Rates: basic concepts.
+(a) Discount factor
+t T The discount factor between two dates, and , provides the terms of exchange t between a given amount of money at versus a (certain) amount of money of a later date T . We denote the discount factor between these two dates by Z (t, T ). t T At any given time , the discount factor is lower, the longer the maturity . That is, given two dates T1 and T2 with T1 < T2, it is always the case that
+Z (t, T1) < Z (t, T2)
+(b) Interest Rates
+The compounding frequency of interest accruals refers to the number of times per year in which interest is paid and reinvested on the invested capital. For a given interest rate, more frequent accrual of interest yields a higher nal payo. For a given nal payo, more frequent accrual of interest implies a lower interest rate
+gure. Let rn (t, T ) denote the n-times compounded interest rate between today (t)and maturity date (T ) . Then rn (t, T )denes a discount factor as
+
+Z (t, T ) =
+
+1
+
+1
+
++
+
+rn(t,T ) n
+
+n(T −t)
+
+The continuosly compounded interest rate r (t, T ) , obtained from rn (t, T ) for n
+that increases to innity, is given by the formula
+
+Z (t, T ) = e−r(t,T )(T −t) Solving for r (t, T ) , we obtain
+
+52
+
+ln (Z (t, T )) r (t, T ) = −
+T −t
+We can nd a interesting relationship between discrete and continous compounding of discount factors and interest rates as follows
+
+e−r(t,T )(T −t) = Z (t, T ) =
+
+1
+
+1
+
++
+
+rn(t,T ) n
+
+n(T −t)
+
+r (t, T ) = n ln 1 + rn (t, T ) n
+
+r(t,T )
+rn (t, T ) = n e n − 1
+
+(c) Zero Coupon Bonds These are securities that pay only the principal at maturity. The knowledge of the
+prices of zero coupon bonds allows us to determine the discount factor Z (t, T ) . t T A government zero coupon bond at time with maturity date has a price equal to the discounted face value of the bond (F ).
+Pz (t, T ) = F Z (t, T ) Let F = 1 for convenience. Nevertheless, most bonds all over the world have a face value of 100 .The subscript ”z” is a mnemonic term for zero in zero coupon
+bond.
+Pz (t, T ) = Z (t, T )
+
+(d) Coupon Bonds
+These are securities that pay a sequence of cash ows over time plus the principal
+at maturity. Consider a coupon bond at time t with coupon rate c, maturity T and payment dates T1, T2, . . . , Tn = T . Let there be discount factors Z (t, Ti)for T each date i .Then the value of the coupon bond can be computed as
+
+53
+
+Pc (t, Tn) = c Z (t, T1) + c Z (t, T2) + . . . + (1 + c) Z (t, Tn)
+n
+Pc (t, Tn) = c Z (t, Ti) + Z (t, Tn)
+i=1 n
+Pc (t, Tn) = c Pz (t, Ti) + Pz (t, Tn)
+i=1
+The subscript ”c” is mnemonic device for coupon in coupon bond. The last
+formula shows that the coupon bond can be considered as a portfolio of zero
+coupon bonds. The value of the coupon bond is also represented by using the
+semi-annual interest rate r2 (t, Ti), where Ti , i = 1, . . . , n, are the coupon payment
+dates. This representation is derived from the basic one above.
+
+n
+
+c
+
+1
+
+Pc (t, Tn) =
+i=1
+
+(1 + rn (t, Ti))n(Ti−t)
+
++ (1 + rn (t, Tn))n(Tn−t)
+
+(e) Expected Return and the Yield to Maturity
+Assuming the investor will hold the bond until maturity, computing the expected return on an investment in a zero coupon bond is relatively straightforward, as the nal payo is known and there are no intermediate cash ows. Thus, the return on zero coupon bond is
+
+1 Rz = Z (t, T ) − 1 This is the return between t and T . It is customary to annualize this amount, so
+that
+
+1
+
+Rz∗ =
+
+1
+
+T −t
+
+−1
+
+Z (t, T )
+
+For coupon bonds it is more complicated. The yield to maturity is the measure of return on investment for coupon bonds.
+Let Pc (t, T )be the price at time t of a bond with coupon c and maturity T . Let Ti denote the coupon payments times, for i = 1, . . . , n. The yield to maturity, or y internal rate of return, is dened as the constant rate that makes the discounted y present value of the bond future cash ows equal to its price. That is, is dened
+by the equation
+
+54
+
+n
+
+c
+
+1
+
+Pc (t, T ) =
+i=1
+
+(1 + yn)n(Ti−t)
+
++ (1 + y)n(Tn−t)
+
+Although this equation and the equation of the value of a coupon bond in terms of the semi-annually compounde interest rate appear the same, it is crucial to note
+y that the yield to maturity is dened as the particular constant rate that makes
+the right-hand side of equation equal to the price of the bond. Instead, the value of a coupon bond in terms of the interest rate is the one dening the price of the
+bond from the discount factors Z (t, T ) .Unless the term structure of interest rates
+is exactly at, the yields at various maturities are dierent, and will not coincide
+y y with the yiel to maturity . Indeed, to some extent, the yield to maturity can be considered an average of the semi-anually compounded spot rates r2 (0, T ), which dene the discount Z (0, T ). However, it is important to note that the average c depends on the coupon level . In fact, two dierent bonds that have the same c y maturity but dierent coupon rates have dierent yield to maturities .
+3. The Term Structure of Interest Rates Estimation: Extracting the Discount Factors from coupon bonds
+It is dicult to build the term structure of interest rates because each investor has dierent preferences among time and return. Consequently, the number of cash ows may exceed the number of instruments and there are several short-term maturity bonds and long-term maturity bonds as well. There are dierent procedures to obtain the term structure of interest rates when analyzing zero coupon bonds and coupon bonds at once. Here we explain bootstrap method and regressions.
+(a) Bootstrap Method
+Let t = 0, for convencience, so that T denotes both maturity date and time to i maturity. Every coupon bond is characterized by a series of cash ows and a maturity T i. We can denote the total cash ow paid at time Tj as ci (Tj ). In particular, denoting ci the coupon rate of bond i , we have ci (Tj ) = ci for Tj < T i
+55
+
+and ci (T i) = 1 + ci and nally ci (Tj ) = 0 for Tj > T i . We can put theses cash
+ows in a row vector as follows:
+
+Ci = ci (T1) ci (T2) · · · ci (Tn)
+We can denote by Z (0) the vector of discount factors for various maturities Ti,
+that is
+
+
+
+
+
+Z (0, T1)
+
+Z (0)
+
+
+
+=
+
+ 
+
+
+
+Z (0, T2)
+...
+
+   
+
+
+
+
+
+Z (0, Tn)
+
+The price of a coupon bond can be written using vector multiplication as:
+
+Pci (0, T ) = CiZ (0)
+We can denote the column vector of bond prices available at time 0 as
+
+
+
+
+
+Pc (0, T1)
+
+
+
+P
+
+(0)
+
+=
+
+ 
+
+
+
+Pc (0, T2)
+...
+
+   
+
+
+
+
+
+Pc (0, Tn)
+
+56
+
+We then obtain a system of n equations with n unknowns
+
+P (0) = CZ (0)
+
+C where is the cash ow matrix:
+
+ c1 (T1) c1 (T2) · · · c1 (Tn) 
+
+C
+
+=
+
+   
+
+c2 (T1)
+...
+
+c2 (T2)
+...
+
+···
+...
+
+c2 (Tn)
+
+ 
+
+...
+
+ 
+
+
+
+
+
+cn (T1) cn (T2) · · · cn (Tn)
+
+Essentially, each row i of C corresponds to the cash ows of bond i for all maturities T1, T2, . . . , Tn. In contrast, each column j describes all the cash ows that occur T n on that partiuclare maturity j from the bonds. The discount factors can then
+be obtained by inverting the cash ow matrix:
+Z (0) = C−1P (0)
+
+(b) Regressions
+
+There are cases in which we nd too many maturities and sometimes we do not
+
+have enough cash ows to carry out bootstrap procedure. The regression method-
+
+ology deals with the case in which there are too many bonds compared to the
+
+number of maturities. For example, if there are 164 bonds with maturity of less
+
+60 than ve years, but there are only
+
+months in ve years, then we have many
+
+C months with multiple bonds maturing in them. So, the cash ows matrix end
+
+up with N rows (N =number of bonds) and n < N columns (n = number of
+
+C maturities). Since the solution to bootstrap involves inverting the matrix and
+
+57
+
+it is impossible for n = N so we can slightly change the bootstrap methodology to deal with this problem. For every bond i = 1, . . . , N let
+Pci 0, T i = CiZ (0) + εi
+ε where i is a random error term that captures any factor that generates the mis-
+pricing. These factor include data staleness, lack of trading or liquidity. So this equation is a regression equation of the type
+n
+yi = α + βjxij + εj
+i=1
+where the data are yi = Pci (0, T i) and xij = Cij , and the regressors are βj = Z (0, Tj ). From basic Ordinary Least Squares (OLS) formulas, we then nd
+Zˆ OLS (0) = (C C)−1 C P (0)
+For this procedure to work, however, we must have more bonds than maturities, which does not occur for longer maturities. Curve tting treats this latter problem.
+4. Details about Mexican Bonds and TIIE Swaps.
+(a) CETES (Certicados de la Tesorería)
+i. Government debt securities. ii. National currency (Mexican pesos). iii. Maturity: 28, 91, 182 and 364 days. iv. Placement: SHCP (Treasury and Public Credit Bureau place them once a
+week through Banco de México with auctions.
+58
+
+v. Nominal value: 10 Mexican pesos.
+(b) MBONOS
+i. Government debt securities. ii. National currency (Mexican pesos). iii. Maturity: anyone as long as it is a multiple of 182 days (up to 30 years) iv. Placement: SHCP (Treasury and Public Credit Bureau place them once a
+week through Banco de México with auctions. v. Nominal value: 100 Mexican pesos. vi. Semiannual coupon: 182 days
+(c) Interest Rate Swaps: TIIE IRS (OTC) A TIIE IRS is the agreement between two parties to exchange the cash ows of xed interest payments for oating interest rate related to a notional amount. IRS hedges against uncertain movements in interest rates in order to x the cost of funding to guarantee a portfolio return or to speculate on interest rate trends.
+i. Trade: according to the number of coupons or interest rate revisions every 28 days.
+ii. Maturity: 3, 6, 9 months and up to 20 years. iii. Placement: for any investor at the OTC market. iv. Monthly coupon: 28 days.
+5. The Term Structure of Interest Rates and Risk Premia In this section of the appendix, I summarize the main ideas that Veronesi (2010) shows in his book. Investors' risk aversion is also very important in determining the shape of the term structure of interest rates. The intuition is related to the risk of investing in long-term bonds versus short-term bonds. Investors in the bond market, on average, are averse to risk. Longer-term bonds have a higher duration than short-term bonds, and thus they are riskier. As a consequence, investors demand a higher yield to hold long-term
+59
+
+bonds over short-term bonds, thereby making the term structure of the insterest rate slope upward, on average.
+Let r (t, T )be the continuously compounded yield between time t and time T . Let today t be and consider one-year-ahead predictions of future yields. Let r (t + 1, T )be the yield T next year for the bond maturing at time . This future yield is obviously unknown to market participants at t . Assume that r (t + 1, T ) has a normal distribution with mean Et (r (t + 1, T ))and variance Vt (r (t + 1, T )), where the subscript t denotes that t this expectation depends on the information up to :
+
+r (t + 1, T ) ∼ N (Et (r (t + 1, T )) , Vt (r (t + 1, T )))
+For given yield r (t + 1, T ), the value of a zero coupon bond at time t + 1 with maturity T will be
+
+Pz (t + 1, T ) = 100e−r(t+1,T )(τ−1)
+where τ = T − t is time to maturity of the bond at t . What is the value today of the zero coupon bond maturing at time T ? Since Pz (t + 1, T )is not known today, we have
+
+Pz (t, T ) = Et [Pz (t + 1, T )] e−(r(t,t+1)+λ)
+λ where denotes a risk premium for investing in long-term bonds for a one-year horizon
+compared to safe 1-year zero coupon bonds. We discuss this premium further below. From the properties of the log-normal distribution, we have
+
+Pz
+
+(t,
+
+T
+
+)
+
+=
+
+100e−(r(t,t+1)+λ)
+
+e−Et(r(t+1,T
+
+))(τ
+
+−1)+
+
+(τ
+
+−1)2 2
+
+Vt
+
+(r(t+1,T
+
+))
+
+Substituting also Pz (t, T ) = 100e−r(t,T )we nally obtain the following decomposition
+for the long-term yield:
+
+1
+
+(τ − 1)
+
+λ (τ − 1)2
+
+r (t, T ) = r (t, t + 1) + τ
+
+τ
+
+Et (r (t + 1, T ))
+
++− τ
+
+2τ
+
+Vt (r (t + 1, T ))
+
+where
+
+1 τ
+
+r
+
+(t,
+
+t
+
++
+
+1)
+
++
+
+(τ
+
+−1) τ
+
+Et
+
+(r
+
+(t
+
++
+
+1,
+
+T
+
+))
+
+is
+
+the
+
+expected
+
+future
+
+yield,
+
+λ τ
+
+the
+
+risk
+
+pre-
+
+mium
+
+and
+
+−
+
+(τ
+
+−1)2 2τ
+
+Vt
+
+(r
+
+(t
+
++
+
+1,
+
+T ))
+
+the
+
+convexity
+
+of
+
+the
+
+curve.
+
+The expected future yield
+
+simply says that if market participants expect future long-term yields to be high, then
+
+60
+
+the current yield is high as well. The risk premium states that market participants re-
+T quire to hold long-term zero coupon bonds with maturity over safe short-term bonds with maturity t + 1 . To understand the role of this term, note that we can rewrite Pz (t, T )equivalently as:
+
+Et
+
+Pz (t + 1, T ) Pz (t, T )
+
+=
+
+100 Pz (t, t + 1)
+
+eλ
+
+The left-hand side is the expected gross return between t and t + 1 from investing in T the zero coupon bond maturing at time , while the term in square parenthesis on the
+
+right-hand side is the return during the same period from investing in a zero coupon
+with maturity t + 1. This latter return is known at time t and thus is riskless. Because eλ > 1 i λ > 0, the last equation says that expected return during t and t + 1 on the long-term bond is higher than the safe one-year return on a bond i λ > 0 . Higher λ
+
+implies the long-term bond has a higher expected return compared to a riskless one-year
+bond return. The last term is related to the variance of the long-term yield r (t + 1, T )
+
+, and it is called convexity term. The source of this term is the nonlinear relation
+that exists gbetween yield r (t + 1, T ) and the price Pz (t + 1, T ) = 100e−r(t+1,T )(τ −1).
+Higher volatility of the future yield implies a higher price. Thus, a higher future yield
+
+volatitliy tends to decrease today's yield.
+
+The Expectation Hypothesis
+In particular, if
+
+(τ − 1)2 λ = 2 Vt (r (t + 1, T ))
+
+then r (t, T ) equation implies that the term structure only depends on expected future
+
+yields.
+
+r (t, T ) =
+
+1 τ
+
+r
+
+(t,
+
+t
+
++
+
+1)
+
++
+
+(τ
+
+−1) τ
+
+Et
+
+(r
+
+(t
+
++
+
+1,
+
+T
+
+))
+
++
+
+1 τ
+
+(τ
+
+−1)2 2
+
+Vt
+
+(r
+
+(t
+
++
+
+1,
+
+T
+
+))
+
+−
+
+(τ
+
+−1)2 2τ
+
+Vt
+
+(r
+
+(t
+
++
+
+1,
+
+T
+
+))
+
+r (t, T ) =
+
+1 τ
+
+r
+
+(t,
+
+t
+
++
+
+1)
+
++
+
+(τ
+
+−1) τ
+
+Et
+
+(r
+
+(t
+
++
+
+1,
+
+T
+
+))
+
+setting T = τ − t and subtracting on both sides r (t, t + τ )
+
+τ −1 τ
+
+, a little algebra yields
+
+the equivalent expression
+
+61
+
+1 Et [r (t + 1, t + τ ) − r (t, t + τ )] = (τ − 1) [r (t, t + τ ) − r (t, t + 1)]
+That is, the slope of the term structure (on the right-hand side) is related to the
+expected change in the yield r (t, t + +τ ) between t and t + 1 (on the left-hand side).
+6. Svensson Model Algorithms
+(*APPENDIX 6. GOVERNMENT BONDS AND TIIE SWAPS ALGORITHMS FOR SVENSSON \ MODEL*)
+(*GOVERNMENT BONDS*)
+(* Data Import *)
+SetDirectory[ "C:\\Users\\RAUL\\Documents\\COLMEX\\TESIS\\Bases de datos\\Bases \ de Datos Finales\\Gubernamental nal"]; datos = Import["BaseDatos.xls", {"Sheets", 1}]; {rd, cd} = Dimensions[datos]
+(* Function Section *)
+svensson[beta_, tau_, m_] := Module[{b1, b2, b3, b4, t1, t2}, b1 = beta[[1]]; b2 = beta[[2]]; b3 = beta[[3]]; b4 = beta[[4]]; t1 = tau[[1]]; t2 = tau[[2]]; N[b1 + (b2 + b3)*((1 - Exp[m/t1])/(m/t1)) - b3*Exp[-m/t1] + b4*(((1 - Exp[-m/t2])/(m/t2)) - Exp[-m/t2])]];
+(*Svensson Model*)
+pceteteo[beta_, tau_, plazo_] := Module[{}, 10*Exp[-svensson[beta, tau, plazo/364]* plazo/364/100]] (* CETE Theoretical Price *) pceteobs[plazo_, yield_] := Module[{}, 10/(1 + yield*plazo/360/100)] (* CETE Price *) pbonoteo[beta_, tau_, plazo_, NumCup_, tc_] := Module[{cupon, VectorCupon, FacDes}, cupon = 100*tc*182/364/100; VectorCupon = Table[cupon, {i, NumCup}]; FacDes = Table[Exp[svensson[beta, tau, (plazo - (NumCup - i)*182)/ 364]*(plazo - (NumCup - i)*182)/364/100], {i, NumCup}]; VectorCupon.FacDes + 100*FacDes[[NumCup]]]; (* Theoretical Price of a MBONO *) pbonoobs[plazo_, NumCup_, tc_, yield_] := Module[{cupon, VectorCupon, FacDes}, cupon = 100*tc*182/364/100; VectorCupon = Table[cupon, {i, NumCup}]; FacDes = Table[1/(1 + yield*182/364/100)^((plazo - (NumCup - i)*182)/ 182), {i, NumCup}]; VectorCupon.FacDes + 100*FacDes[[NumCup]]]; (* MBONO Price *) SSPERROR[b1_, b2_, b3_, b4_, t1_, t2_, data_] := Module[{NuBo, c, beta, tau, PEr}, {NuBo, c} = Dimensions[data]; beta = {b1, b2, b3, b4}; tau = {t1, t2}; PEr = Table[ If[data[[i + 1, 5]] == 0, pceteteo[beta, tau, data[[i + 1, 4]]] - pceteobs[data[[i + 1, 4]], data[[i + 1, 3]]], pbonoteo[beta, tau, data[[i + 1, 4]], data[[i + 1, 5]], data[[i + 1, 2]]] - pbonoobs[data[[i + 1, 4]], data[[i + 1, 5]], data[[i + 1, 2]], data[[i + 1, 3]]]], {i, NuBo - 1}]; PEr.PEr]; (*OBJECTIVE FUNCTION*) datos02 = datos[[2, All]];(* Maturities *)
+62
+
+datos03 = datos[[3, All]];(* Coupons *)
+(*LOOP*)
+For[i = 1, i <= 3023, i++, datos01 = datos[[i, All]];(* Data per day *) r = Dimensions[datos01][[1]]; UnDia = Table[If[j == 1, j, If[NumberQ[datos01[[j]]], j, 0]], {j, r}];(* Available information per day *) UnDia = DeleteCases[UnDia, 0]; (*Drop zero values, which means that this day, this bond did not pay coupon are had matured last period*) n = Dimensions[UnDia][[1]];(*Number of observations per day*) data = Table[ If[j == 1, datos02[[UnDia[[k]]]], If[j == 2, datos03[[UnDia[[k]]]], If[j == 3, datos01[[UnDia[[k]]]], 0]]], {k, n}, {j, 5}]; For[j = 1, j <= n, j++, If[j >= 6, data[[j, 4]] = Floor[DateDierence[datos01[[1]], data[[j, 1]]]], data[[j, 4]] = data[[j, 1]]]; If[j >= 6, data[[j, 5]] = Ceiling[N[data[[j, 4]]/182]], data[[j, 5]] = 0]];(*This part of the loop builds a matrix with information \ related to maturity days, coupon payments and spot rates*) parametros = FindMinimum[{SSPERROR[b1, b2, b3, b4, t1, t2, data], b1 >= 0}, {{b1, 8}, {b2, -.48}, {b3, -172.65}, {b4, 172.76}, {t1, 256.29}, {t2, 255.33}}]; betatau = {b1 /. parametros[[2]], b2 /. parametros[[2]], b3 /. parametros[[2]], b4 /. parametros[[2]], t1 /. parametros[[2]], t2 /. parametros[[2]]}; If[i == 810, CurvaDiaria = {betatau}, CurvaDiaria = Join[CurvaDiaria, {betatau}]] ]; (*Price error minimization and storage of the six parameters \ minimized per day until the 3,023 days are completed*) Dimensions[CurvaDiaria] MatrixForm[CurvaDiaria]
+(*TIIE SWAPS*)
+(*Data Import*)
+datos = Import[ "C:\\Users\\RAUL\\Documents\\COLMEX\\TESIS\\Bases de datos\\Bases \ de Datos Finales\\TIIESwaps.xls", {"Sheets", 1}]; {rd, cd} = Dimensions[datos]
+(*Function Section*)
+svensson[beta_, tau_, m_] := Module[{b1, b2, b3, b4, t1, t2}, b1 = beta[[1]]; b2 = beta[[2]]; b3 = beta[[3]]; b4 = beta[[4]]; t1 = tau[[1]]; t2 = tau[[2]]; N[b1 + (b2 + b3)*((1 - Exp[m/t1])/(m/t1)) - b3*Exp[-m/t1] + b4*(((1 - Exp[-m/t2])/(m/t2)) - Exp[-m/t2])]];
+(*Svensson Model*)
+pbono[beta_, tau_, m_, tc_, vn_] := Module[{cupon, cupones, FacDes, pbono}, cupon = vn*tc*cp/100; cupones = Table[cupon, {i, m}]; FacDes = Table[Exp[-svensson[beta, tau,
+63
+
+m]*i*cp/100], {i, m}]; pbono = cupones.FacDes + vn*FacDes[[m]]; pbono]; (*TIIE Swap Price*) SSPERROR[b1_, b2_, b3_, b4_, t1_, t2_, data_] := Module[{nubo, c, beta, tau, PEr}, {nubo, c} = Dimensions[data]; beta = {b1, b2, b3, b4}; tau = {t1, t2}; PEr = Table[ pbono[beta, tau, data[[i + 1, 1]], data[[i + 1, 2]], 1] - 1, {i, nubo - 1}]; PEr.PEr]; (*OBJECTIVE FUNCTION*) datos02 = datos[[1, All]]; (*Maturities*) cp = N[28/360]; (*Coupon Payments*) For[i = 1, i <= 3329, i++, datos01 = datos[[i, All]]; (*Data per day*) r = Dimensions[datos01][[1]]; UnDia = Table[If[j == 1, j, If[NumberQ[datos01[[j]]], j, 0]], {j, r}];(*Available information*) UnDia = DeleteCases[UnDia, 0];(*Drop missing values per day*) n = Dimensions[UnDia][[1]]; data = Table[ If[j == 1, datos02[[UnDia[[k]]]], datos01[[UnDia[[k]]]]], {k, n}, {j, 2}]; (*This part of the loop builds a matrix with \ information related to maturity days, coupon payments and spot rates*) parametros = FindMinimum[{SSPERROR[b1, b2, b3, b4, t1, t2, data], b1 >= 0}, {{b1, 8}, {b2, -.48}, {b3, -172.65}, {b4, 172.76}, {t1, 256.29}, {t2, 255.33}}]; betatau = {b1 /. parametros[[2]], b2 /. parametros[[2]], b3 /. parametros[[2]], b4 /. parametros[[2]], t1 /. parametros[[2]], t2 /. parametros[[2]]}; If[i == 3219, CurvaDiaria = {betatau}, CurvaDiaria = Join[CurvaDiaria, {betatau}]]]; (*Price error minimization and \ storage of the six parameters minimized per day until the 3,329 days \ are completed*) Dimensions[CurvaDiaria] MatrixForm[CurvaDiaria]
+64
+
+

@@ -1,0 +1,1072 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EL PAPEL DE LAS RESTRICCIONES CREDITICIAS EN
+LA MOVILIDAD ECONÓMICA INTERGENERACIONAL
+EN MÉXICO: UNA PRUEBA INDIRECTA JULIO ALBERTO RAMOS PASTRANA
+PROMOCIÓN 2010-2012
+ASESOR:
+ISIDRO SOLOAGA
+JUNIO 2012
+
+iii Agradecimientos
+A mis padres, sin el apoyo de los cuales completar este esfuerzo no hubiera sido posible. A mi novia, cuyo cariño y consejos me ayudaron a seguir siempre adelante.
+A mi asesor, cuya invaluable guía no sólo sumó a mi investigación sino a mi preparación académica.
+
+v
+RESUMEN
+La presente investigación realiza una prueba para determinar si las restricciones de crédito tienen impacto sobre las decisiones de educación de las familias en México y, por lo tanto, sobre su movilidad económica intergeneracional. La prueba consiste en determinar si existen patrones no lineales en la regresión intergeneracional de bienestar económico, utilizando tanto mínimos cuadrados ordinarios como regresión de cuantiles. Los resultados sugieren que las restricciones efectivamente limitan la movilidad económica de las familias de bajos niveles de bienestar económico. También se presentan resultados diferenciados de acuerdo al ámbito y género que se esté analizando.
+
+ÍNDICE GENERAL INTRODUCCIÓN.................................................................................................................. 1 RELACIÓN ENTRE RESTRICCIONES CREDITICIAS Y MOVILIDAD ECONÓMICA INTERGENERACIONAL: UNA EXPLICACIÓN TEÓRICA ............................................ 3
+Movilidad social y su relevancia económica ...................................................................... 3 Restricciones crediticias: ¿Qué son y a qué se deben? ....................................................... 5 Las decisiones de inversión en educación desde la teoría del capital humano ................... 8 Formalizando el vínculo entre las restricciones de crédito y la movilidad....................... 10 ¿LAS RESTRICCIONES DE CRÉDITO AFECTAN LA MOVILIDAD EN MÉXICO? . 13 Probando el efecto de las restricciones de crédito mediante regresiones no lineales de ingresos ............................................................................................................................. 14 Datos y estadística descriptiva .......................................................................................... 16
+Tabla 1. Porcentaje de posesión de activos de padres e hijos ....................................... 20 Tabla 2. Cargas factoriales de los activos ..................................................................... 21 Tabla 3. Estadística descriptiva del índice de bienestar económico, corregido por el ciclo de vida, para padres e hijos................................................................................... 21 Tabla 4. Subgrupos de población .................................................................................. 22 Metodología ...................................................................................................................... 22 Resultados ......................................................................................................................... 24 Tabla 5. Elasticidad intergeneracional de bienestar económico para la media y cuantiles......................................................................................................................... 24 Figura 1. Relación de bienestar económico entre padres e hijos .................................. 26 Figura 2. Elasticidad intergeneracional de bienestar económico .................................. 26 Tabla 6. Persistencia para la media y cuantiles por subgrupos de población................ 28 ANÁLISIS E IMPLICACIONES DE LOS RESULTADOS EMPÍRICOS: LAS RESTRICCIONES CREDITICIAS Y LA MOVILIDAD EN MÉXICO ............................ 31
+
+Las restricciones operativas .............................................................................................. 31 Las restricciones de crédito y la movilidad en México..................................................... 32 Efecto de las restricciones crediticias en la movilidad por ámbito y género .................... 33 Recomendaciones de política pública ............................................................................... 35 CONCLUSIÓN .................................................................................................................... 37 ANEXO ................................................................................................................................ 39
+Figura 3. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito rural.................................................................................................. 39 Figura 4. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito urbano. ............................................................................................. 39 Figura 5. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijas............................................................................................................................. 40 Figura 6. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos. ........................................................................................................................... 40 Figura 7. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijas del ámbito rural. ................................................................................................. 41 Figura 8. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijas del ámbito urbano. ............................................................................................. 41 Figura 9. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito rural.................................................................................................. 42 Figura 10. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito urbano................................................................................... 42 BIBLIOGRAFÍA .................................................................................................................. 43
+
+1
+INTRODUCCIÓN Invertir en educación reporta beneficios tanto a nivel individual como para la sociedad en su conjunto. La gente invierte en educación puesto que una mayor escolaridad genera aumentos en sus niveles de productividad, lo que se ve reflejado en un incremento de sus ganancias (Patrinos, 2000). Dado que la movilidad económica intergeneracional se refiere a los cambios en el nivel de ingreso de un hijo o hija con respecto al de sus padres, ésta se encuentra muy relacionada con el logro educativo (OECD, 2010). De hecho, estudios empíricos han mostrado que existe una relación positiva entre éste último y la movilidad social (Psacharopoulos, 1977; de Hoyos, et. al., 2010), dicho logro se ve afectado tanto por la transmisión de características culturales o genéticas de padres a hijos como por una serie de factores externos al individuo, v. gr. las imperfecciones del mercado de capital. Cuando las restricciones están activas, los padres que no cuenten con los recursos suficientes para financiar la educación de sus hijos, no serán capaces de conseguir préstamos que les permitan invertir para que estos últimos alcancen sus niveles de educación óptimos. Por lo tanto, como la inversión en los hijos depende de los recursos de los padres, la movilidad económica será menor (Azevedo y Bouillon, 2009).
+Uno de los enfoques empíricos para analizar el impacto de las restricciones de crédito en la educación, y por lo tanto, sobre la movilidad, está basado en la metodología propuesta por Grawe (2001). Para Brasil, Andrade, et. al. (2003) concluyen que las restricciones crediticias tienen un efecto negativo sobre la movilidad económica intergeneracional, mientras que Grawe (2004) concluye que las restricciones no limitan las decisiones de inversión en educación en Canadá. Hasta donde se tiene conocimiento, no se han llevado a cabo estudios similares en México. No obstante, tomando en cuenta las características de baja movilidad económica (Torche, 2010), y del elevado racionamiento de crédito que experimenta la economía mexicana (Marshall, 2007), vale la pena investigar si efectivamente dichas restricciones tienen un impacto sobre la movilidad económica en México. La hipótesis a comprobar es que en México las restricciones crediticias están activas, y tienen un impacto negativo sobre la movilidad económica intergeneracional debido a que limitan la capacidad de los padres de invertir en el capital humano de los hijos. Y dada la relación entre inversión en capital humano y ganancias, como los ingresos futuros de los hijos dependen del nivel de ingreso de los padres y no únicamente de su habilidad o esfuerzo, dichas restricciones reducen la movilidad económica.
+
+2
+Dado que el presente estudio se centra en las implicaciones económicas y de desarrollo humano del nivel de igualdad de oportunidades, se medirá la movilidad intergeneracional. Dentro de ésta, se estudiará la movilidad económica a escala micro, es decir, a nivel de individuos; por lo tanto, la unidad de estudio será la familia en cuanto a sus niveles de ingreso o riqueza alcanzados, utilizandose los niveles de ingreso o riqueza de dos generaciones. Se usará como fuente de datos la Encuesta ESRU de Movilidad Social en México 2011 (EMOVI 2011) elaborada por el Centro de Estudios Espinosa Yglesias.
+Para llevar a efecto el objetivo de la presente investigación, ésta contará con tres secciones además de esta introducción. La primera sección presentará la literatura existente que permite formar el marco teórico para vincular el racionamiento de crédito con la movilidad económica. Además se presentará un modelo económico de agentes representativos maximizadores de la utilidad elaborado por Grawe (2001) basado en el modelo de Becker y Tomes (1994), el cual será la base para interpretar los resultados obtenidos más adelante del análisis econométrico.
+La segunda sección se concentrará en el análisis empírico. Este análisis constará a su vez de dos partes, en la primera, basado en el modelo de Grawe (2001), se utilizarán mínimos cuadrados ordinarios para determinar la elasticidad intergeneracional de bienestar económico. El modelo sugiere que las restricciones de crédito limitan mayormente las decisiones de inversión en educación de los padres con un nivel de bienestar económico bajo, por lo que la elasticidad debe ser mayor en estos estratos y disminuir a medida que aumenta el bienestar de los padres. En segundo lugar se utilizan regresiones de cuantiles para aumentar la confianza de la prueba. Cuando las restricciones crediticias limitan las elecciones del nivel educativo, debe observarse que los cuantiles superiores de bienestar económico de los hijos (y presumiblemente de habilidad) experimenten mayor persistencia económica, pues son estos los que requieren mayores inversiones en educación.
+La tercera sección se centrará en el análisis de resultados y formulación de recomendaciones económicas. En primer lugar se trata de identificar las razones que explican el efecto de las restricciones de crédito en las decisiones de inversión en educación en México. Por último, se hace un análisis por subgrupos de población: por ámbito y por género, para identificar las causas del efecto diferenciado de las restricciones en ellos.
+
+3
+RELACIÓN ENTRE RESTRICCIONES CREDITICIAS Y MOVILIDAD ECONÓMICA INTERGENERACIONAL: UNA EXPLICACIÓN TEÓRICA
+Movilidad social y su relevancia económica El término “movilidad social es utilizado por científicos para referirse a los movimientos de entidades específicas en indicadores de estatus socioeconómicos entre periodos” (Behrman, 2000). Aunque los estudios de movilidad social tuvieron su comienzo en la sociología, desde hace ya varios años las investigaciones referentes a este tema también han ocupado un lugar importante dentro de la agenda de economistas, siendo la creación de modelos para la interpretación y análisis de los resultados una de las principales aportaciones obtenidas de su incorporación. Cabe destacar que el enfoque utilizado por investigadores de ambas disciplinas varía entre unos y otros, mientras que para los sociólogos la movilidad se refiere a la capacidad de los individuos para ascender o descender entre clases sociales o grupos ocupacionales, los estudios de economistas están mayormente enfocados a la movilidad en términos de ingresos (Azevedo y Bouillon, 2009). De esta forma, los economistas han definido la movilidad económica como “la transformación de un vector de ingresos , en un punto determinado del tiempo, en un vector en otro punto en el tiempo” (Fields, 2010).
+Aunque la idea de movilidad económica parece estar homogeneizada entre los investigadores, los estudios que tratan de medirla o contestar preguntas relacionadas con ella (v. gr. su impacto sobre la distribución del ingreso) presentan resultados muy distintos. Esto último se debe a que, en realidad, los conceptos analizados son diferentes. Por ejemplo, Fields ha identificado por lo menos seis distintos tipos de movilidad económica: 1) movimiento de posición, 2) movimiento direccional de los ingresos, 3) movimiento de la participación en el ingreso, 4) flujo de ingresos, 5) movilidad igualadora de ingreso a largo plazo, y 6) dependencia temporal, Cada uno de estos conceptos tiene distintas formas de medición y de implicaciones sobre la distribución del ingreso. Mientras que las primeras cuatro sólo identifican qué tanto se mueven los individuos en la escala socioeconómica, el quinto concepto mide el grado en que la distribución de recursos, derivada del cambio en las posiciones, es más igualitaria y, finalmente, el último concepto mide el grado de asociación entre el nivel económico de los padres y los hijos (Fields, 2009). La presente investigación se centrará en esta última definición, utilizando en lugar de los ingresos de padres e hijos, índices de bienestar económico cuya elaboración se explicará a detalle en la siguiente sección.
+
+4
+La importancia del estudio de la movilidad social radica en que proporciona una medida del grado de igualdad de oportunidades del que goza una sociedad (Becker y Tomes, 1994). Esta última es considerada un rasgo de las sociedades justas, y se refiere a la situación en que aun cuando los individuos provengan de distintas familias, siempre y cuando cuenten con un mismo nivel de habilidad, gozarán de las mismas opciones (Behrman y Taubman, 1982). La consecución de sociedades más igualitarias es fundamental debido, en primera instancia, a que la igualdad de oportunidades es una condición necesaria, más no suficiente, para la igualdad de capacidades, uno de los fines del desarrollo humano. En segunda instancia, su importancia radica en la influencia que la igualdad de oportunidades ejerce sobre el desarrollo económico. Dicha influencia ocurre principalmente a través de dos vías: 1) proporciona un esquema de incentivos para la población, y 2) influye en la asignación eficiente de los recursos.
+Con respecto a la influencia de la igualdad de oportunidades en el desarrollo humano, es preciso hacer una distinción entre ésta y la igualdad de capacidades. Mientras que la primera asegura que todos tengamos la posibilidad de acceder a ciertos bienes y servicios básicos, permitiendo igualar opciones de vida (Beckley, 2002), la segunda implica que cada persona tenga el acceso a dichos bienes en el grado que lo requiera para que todos los individuos tengan las mismas posibilidades de alcanzar el tipo de vida que tienen razones para valorar (Van de Gaer, 2001). Ahora, dado que el fin último del desarrollo humano es expandir las capacidades de los seres humanos para que estos puedan obtener la vida que valoran tener (Sen, 1999), la igualdad de capacidades implicaría que todos tenemos las mismas posibilidades para alcanzar dicho fin, de ahí que la igualdad de capacidades es un fin en si mismo del desarrollo humano.
+Con respecto a la influencia de la igualdad de oportunidades sobre el desarrollo económico, la primera vía se refiere a los efectos positivos sobre el comportamiento de los individuos, por ejemplo baja movilidad puede reducir la productividad, motivación y esfuerzo de los individuos, lo cual tiene implicaciones negativas sobre la eficiencia y el crecimiento de la economía (OECD, 2010). Asumiendo individuos racionales, si ellos tienen la percepción de que se puede mejorar en la escala social a través del esfuerzo e inversiones en capital humano, esto les proporciona los incentivos necesarios para realizar dichas actividades esperando mejorar su situación futura. En cambio, si los individuos tienen la idea de que la sociedad es muy inmóvil, estos no se preocuparán por invertir para mejorar su situación. El problema radica en que sin inversiones en capital humano, estos no podrán avanzar más allá del lugar en que se encuentran,
+
+5
+de tal forma que se generará un círculo vicioso de poca movilidad para los segmentos de la población de bajos ingresos (Azevedo y Bouillon, 2009).
+La segunda vía radica en que, dada la existencia de imperfecciones en el mercado de capital, tanto físico como humano, en muchas ocasiones los recursos no fluyen hacia los proyectos que otorgan los mejores rendimientos, pues la asignación de bienes está condicionada principalmente al poder y la riqueza de los que gozan ciertos grupos de la sociedad. Este hecho puede ser explicado a partir del funcionamiento de las instituciones. Al ser éstas las que determinan el ambiente sobre el cual los mercados operan, el surgimiento de instituciones en sociedades donde el poder o la riqueza están concentrados en un grupo en particular provocará que éstas favorezcan en mayor medida y sistemáticamente a dichos grupos debido a su mayor grado de influencia. Este tipo de comportamiento genera ineficiencias, pues a medida que los individuos reciben un trato diferenciado únicamente basado en sus antecedentes socioeconómicos y, no sobre su nivel de capacidad o habilidad, siempre que haya una preferencia en la asignación hacia los individuos de mayores recursos existirá la posibilidad de dejar fuera a individuos con aportaciones valiosas para la sociedad. Aportaciones que incluso podrían ser superiores a las de los individuos más aventajados económicamente. De nueva cuenta, este tipo de comportamiento generará trampas de desigualdad debidas a la baja expectativa de ingresos futuros y participación en la sociedad para los individuos de estratos sociales bajos (Banco Mundial, 2006).
+A partir de lo expuesto, se puede afirmar que la igualdad de oportunidades determina el papel de las restricciones crediticias en la movilidad. Esto es, dado que sociedades desiguales implican que las imperfecciones del mercado de capital afecten sistemáticamente a los más desaventajados por el simple hecho de ser el sector con menor influencia, el efecto de las restricciones se concentra en este grupo, afectando su movilidad. En cambio, en sociedades igualitarias, las restricciones de crédito afectan en menor medida dado que los recursos fluirían a las personas que más lo merezcan. A continuación se explicará a detalle qué son y cómo surgen las restricciones de crédito, esto para mejorar el entendimiento de su vínculo con la movilidad social
+Restricciones crediticias: ¿Qué son y a qué se deben? En economía estamos acostumbrados a pensar en términos de uno de sus principios fundamentales: en equilibrio oferta es igual a demanda. Esta igualdad se cumple vía el ajuste de
+
+6
+los precios, en cualquier situación en que la demanda sea mayor que la oferta los precios deben aumentar lo necesario para que la segunda se iguale a la primera alcanzando así un punto de equilibrio. Sin embargo, Stiglitz y Weiss (1981) demostraron que en el mercado de crédito puede no ocurrir esta situación, puesto que el aumento de la tasa de interés (el precio del mercado de crédito) con el fin de igualar la oferta y la demanda de préstamos puede no ser la acción óptima para los bancos desde el punto de vista de sus beneficios, dando lugar a lo que se conoce como racionamiento de crédito (Stiglitz y Weiss, 1981). El racionamiento de crédito se define como:
+[la] circunstancia en la cual ya sea que (a) entre aplicantes que parecen idénticos algunos reciben un préstamo y otros no y, aquellos que fueron rechazados no lo recibiría aun si se ofrecieran a pagar una tasa de interés más alta; o (b) hay grupos identificables de individuos en la población quienes, dada una determinada oferta de crédito, son incapaces de obtener préstamos a cualquier tasa de interés, aun cuando con una oferta de crédito más grande lo conseguirían” (Stiglitz y Weiss, 1981: p. 394-395).
+El racionamiento de crédito es ocasionado por la información imperfecta que caracteriza al mercado de crédito. En específico, el problema de información que provoca su surgimiento ha sido modelado de distintas formas. La primera corresponde al trabajo seminal de Stiglitz y Weiss con respecto al racionamiento de crédito que lo explica a partir del surgimiento de dos efectos relacionados con la tasa de interés que cobran los bancos: 1) el efecto selección adversa, 2) el efecto de incentivos (1981). La segunda forma de modelarlo corresponde a trabajos más recientes que lo analizan desde el punto de vista de los efectos relacionados con el problema de riesgo moral (Ghosh, et. al., 2000). Ambos modelos se basan en el supuesto de responsabilidad limitada, el cual se refiere a que si el proyecto para el cual fue solicitado el préstamo fracasa, los individuos que reciben el préstamo no pagarán.
+El efecto de selección adversa se debe a la existencia de individuos con distintos niveles de riesgo. De esta forma, la tasa de interés que cobran los prestamistas funciona como un mecanismo de diferenciación entre los prestatarios: para una tasa de interés muy alta, los solicitantes poco riesgosos se retiran del mercado. Otro punto importante a notar es que los retornos esperados de los prestamistas tienen una relación inversa con el riesgo del préstamo. Así pues, la tasa de interés tiene un efecto opuesto sobre los retornos esperados de los que prestan el dinero. Un aumento de la tasa de interés provoca que la cantidad a pagar por los prestatarios sea mayor, de tal forma que los retornos esperados aumentarán, pero dado que el aumento de la tasa de interés ocasionará que individuos de poco riesgo salgan del mercado, esto causará que los prestamos sean solicitados por individuos más riesgosos, con lo que el retorno esperado de los prestamistas disminuirá. De esta forma, cobrar la tasa de interés que libera el mercado puede que
+
+7
+no sea la acción óptima para los prestamistas, pues si estos bajan la tasa de interés atraerán al menos a la misma cantidad de prestatarios pero los retornos esperados serán mayores.
+Con respecto al segundo efecto, éste se refiere a que un aumento en la tasa de interés provocará que los prestatarios tiendan a elegir proyectos mas riesgosos, de tal forma que de nueva cuenta será mejor para los prestamistas fijar una tasa de interés menor a la que equilibra oferta y demanda, pues aunque la tasa de interés baja le otorgue a prestamistas menores retornos esperados debido al pago de los prestatarios, dado que logra reducir el nivel de riesgo de los proyectos en los que el dinero se utilizará, fijar esta tasa más baja puede ser lo óptimo (Stiglitz y Weiss, 1981).
+Por otra parte, el problema de riesgo moral se debe al efecto que puede tener la tasa de interés sobre el esfuerzo de los individuos. Si un individuo tiene un nivel de deuda elevado y la tasa de interés es alta, éste tendrá menores incentivos para trabajar duro pues la ganancia que obtendrá, una vez que pague sus préstamos, será baja. De esta forma puede ser óptimo para los prestamistas fijar tasas de interés bajas, ya que haciendo esto asegurarán un mayor esfuerzo de los individuos, reduciendo así las probabilidades de que estos no les paguen debido a la quiebra de sus proyectos. En este sentido la tasa de interés cobrada por los prestamistas puede ser menor a la que iguala oferta y demanda de crédito, por lo que habrá individuos que no sean capaces de obtener préstamos y habrá racionamiento. Una de las razones por las que pueden existir diferencias en las tasas de interés cobradas a los individuos se encuentra en las diferencias que tienen estos en el tamaño inicial de activos que poseen que puede ser utilizado como colateral. De esta forma el colateral tiene efectos sobre el nivel de esfuerzo de los individuos. Si los individuos cuentan con suficiente colateral recibirán préstamos a una tasa de interés menor, recibiendo así una ganancia mayor y teniendo mayores incentivos para esforzarse (Ghosh, et. al, 2000).
+El racionamiento de crédito tiene repercusiones negativas sobre el bienestar de los individuos y el comportamiento general de la economía, pues estos demandan crédito para allegarse de recursos o mantener niveles de consumo. Entre las distintas razones por las que se demanda crédito se encuentran: 1) la demanda de capital fijo: utilizado para iniciar nuevos negocios, 2) la demanda de capital de trabajo: utilizado para mantener la actividad productiva una vez puesta en marcha, 3) la demanda de consumo: utilizado por los individuos de bajos recursos para mantener sus niveles de consumo ante choques exógenos (Ray, 1998). Pero
+
+8
+además y, lo más importante para esta investigación, es que el acceso a los mercados de crédito tiene implicaciones importantes sobre los niveles de educación que recibirán los individuos, es decir, sobre su capital humano.
+El acceso limitado a los mercados financieros provoca que los hijos de padres de elevados recursos tengan mayor oportunidad que los hijos de padres pobres de cursar sus estudios sin interrupciones, ya que ante la presencia de choques externos, los hijos de padres de bajos recursos se pueden ver forzados a dejar la escuela (Behrman, et. al., 1999). Esto se debe a que ante fluctuaciones a la baja en el nivel de ingresos del hogar, las familias de bajos recursos que no sean capaces de endeudarse para hacer frente a esta baja en sus percepciones tendrán que buscar la incorporación de sus hijos al mercado laboral para que estos ayuden al sustento familiar aun cuando esto signifique dejar de invertir en su capital humano. Este hecho puede explicar el caso Latinoamericano, en donde el trabajo infantil es una realidad que lamentablemente genera un círculo vicioso de la pobreza al reducir hoy las capacidades de los niños de mejorar su situación futura, provocando que la próxima generación también vea las suyas reducidas (OIT, 2007). En vista de que las restricciones de crédito impactan sobre los niveles de inversión en capital humano de los padres sobre los hijos, es necesario explicar la racionalidad de estas inversiones, así como su impacto sobre el nivel de ingresos de los individuos, lo que permitirá cerrar el vínculo existente entre restricciones crediticias y movilidad económica.
+Las decisiones de inversión en educación desde la teoría del capital humano Usualmente al utilizar el término capital se hace referencia a capital físico, como son fábricas, tractores, herramientas, etc., o al capital financiero, como son las acciones. Sin embargo, iniciando con el trabajo de Theodore Schultz (1961) y recibiendo más tarde diversas aportaciones, entre las que destaca la de Gary Becker, se desarrolló la teoría del capital humano. El capital humano se refiere a aquellas características de los individuos como conocimientos, salud, habilidades, entre otras, que les permiten recibir ingresos o producir bienes y servicios. Las inversiones en capital humano son aquellas que mejoran la salud, ingresos o la capacidad de apreciar y entender la vida de los individuos, éstas se realizan tomando en cuenta los costos y beneficios asociados. Por nombrar un ejemplo, en entornos donde los retornos a la educación son altos más individuos dedicarán recursos para invertir en ella a fin de obtener mayores beneficios una vez finalizada la escuela. En caso de que los retornos no sean suficientemente elevados la gente preferirá dedicarse a trabajar. Es importante resaltar que la educación es considerada la
+
+9
+forma más importante de inversión en capital humano (Becker, 1994). Dado que la educación tiene efectos positivos tanto sobre el nivel de conocimientos de los individuos como sobre su manera de procesarlos, aumentos en ésta les permite enfrentar de mejor manera el mundo que los rodea (Patrinos, 2000). De esa forma, el papel de la educación como la principal inversión en capital humano radica en su capacidad de influir sobre la toma de decisión de los individuos, influyendo así sobre las demás inversiones en capital humano.
+Existen dos tipos de retornos de la educación: 1) sociales, y 2) privados. Con respecto al primer tipo de retornos, en estos se consideran los costos y beneficios desde el punto de vista del país o de la sociedad en general y está más relacionado con las decisiones de política pública que pueden tomar los gobiernos, sin embargo, dado que esta tesis se enfocará en el aspecto micro de la movilidad económica, no se ahondará más en este enfoque. Con respecto al segundo tipo de retornos, un ejemplo claro se puede ver en el párrafo anterior, donde son los mismos estudiantes quienes toman en cuenta los costos y beneficios de realizar la inversión, decidiendo así el nivel de esta última que sea óptimo para ellos. Los costos que tienen que valorar los individuos incluyen el costo de oportunidad de estudiar además de los gastos directos en que se incurre al decidir estudiar (útiles escolares, manutención, colegiatura, entre otros). Los beneficios se refieren a la ganancia monetaria que son capaces de obtener en comparación de individuos con un menor nivel de educación (Psacharopoulos y Patrinos, 2004). Esta ganancia ocurre por los efectos positivos de la educación sobre la productividad y eficiencia de los trabajadores, los que se deben a que la educación aumenta el nivel de capacidad cognitiva de los individuos que puede ser utilizada en actividades económicamente productivas (Olaniyan y Okemakinde, 2008).
+Al introducir una dimensión intergeneracional en el problema, debido a que por razones altruistas los padres se preocupan por el bienestar de sus descendientes, estos deben decidir cómo dividir sus ingresos entre ellos mismos y sus hijos, donde parte de estos estarán destinados a inversiones en capital humano (Mulligan, 1997). Al igual que en el caso anterior los padres escogerán la inversión óptima en capital humano de los hijos considerando los costos y beneficios asociados a ésta. Como aquellos padres de bajos recursos incapaces de conseguir préstamos no podrán financiar niveles de inversión en los hijos que sobrepasen su capacidad financiera, se generará una dependencia de las ganancias futuras de los hijos en la de los padres, disminuyendo la movilidad económica.
+
+10
+A partir de los conceptos presentados y su relación, puede notarse el vínculo teórico existente en la literatura entre restricciones de crédito y movilidad intergeneracional de ingresos. Existen dos distintos escenarios, uno sin restricciones que lleva a la movilidad, y otro con restricciones que lleva a la persistencia intergeneracional de ingresos. Siguiendo a Mulligan (1997), los padres dedican a sus hijos parte de los recursos que poseen por razones altruistas (aunque pueden haber otras razones), y una porción de estos recursos se dedicarán a inversiones en capital humano. Ahora, algunos padres contarán por si mismos con los recursos suficientes para invertir en la cantidad óptima de capital humano de los hijos, pero algunos no podrán financiar dicha inversión, de tal forma que para lograr cubrirla necesitarán solicitar préstamos. De no existir restricciones de crédito, todos los padres invertirán en sus hijos la cantidad de recursos necesarios para que estos alcancen la cantidad óptima de educación, de tal forma que tendrán la escolaridad que sus características heredadas les permitan más allá de cualquier restricción externa. Por tanto, los ingresos de los hijos no dependerán del nivel de ingresos de los padres, sólo dependerán de estos debido a las características heredadas, por ejemplo, el nivel de habilidad, de tal forma que la movilidad intergeneracional económica será elevada.
+Sin embargo, debido a los problemas de información presentes en el mercado de capital, habrá padres incapaces de conseguir los préstamos que requieren, incapacidad que provocará que la inversión en capital humano destinada a los hijos sea menor a la óptima. En particular, los recursos dedicados a la educación de los hijos serán menores y, por lo tanto, también lo será su nivel de escolaridad. Debido a la relación previamente explicada entre educación y nivel de ingresos, las restricciones de crédito actuales de los padres estarán relacionadas con bajos niveles de ingreso futuro de los hijos. Ahora, dado que el nivel de ingresos de los hijos será provocado por el bajo nivel de ingreso de los padres, al no permitir financiar sus niveles de educación óptimos, la persistencia intergeneracional de ingresos será mayor. A continuación se presenta el modelo de Grawe (2001), que permite formalizar el vínculo presentado en estos párrafos.
+Formalizando el vínculo entre las restricciones de crédito y la movilidad Considérese el siguiente modelo elaborado por Grawe (2001)1. Una familia está compuesta por dos agentes, padre e hijo, denotados por y respectivamente. Los padres cuentan con dotaciones iniciales de escolaridad ( ), habilidad ( ) y recursos financieros ( ).
+1 El modelo de Grawe está basado en el modelo de Becker y Tomes (1994).
+
+11
+El padre debe elegir la cantidad de inversión en el hijo tal que se maximice el consumo de ambos ( ). Dicha inversión se divide en capital físico ( ) y humano ( ). De tal forma que el padre resuelve el siguiente problema:
+
+s.a.
+
+()
+
+Bajo el supuesto de retornos decrecientes de la educación, la inversión óptima en educación estará determinada por la condición, donde, los beneficios marginales de invertir en educación y en activos financieros se igualan:
+
+Si se considera a la habilidad como un complemento de la educación, la condición anterior implica que a medida que los individuos tengan mayor habilidad, lo óptimo será recibir mayores inversiones en educación. Como puede notarse, la cantidad de educación que reciban los hijos dependerá únicamente de su habilidad, sin importar el salario o los recursos financieros del padre, por lo tanto, habrá elevada movilidad.
+Ahora, si se introduce en el modelo la posibilidad de que los padres enfrenten restricciones de crédito que no les permitan endeudarse para pagar la educación de sus hijos, lo que implicaría heredarles recursos financieros negativos, el problema a resolver se transforma en lo siguiente:
+
+s.a.
+
+()
+
+Donde
+
+es la restricción que debe estar activa para que las familias experimenten
+
+las restricciones de crédito. En el caso de que esto suceda, la condición de optimalidad para la
+
+elección de la cantidad de educación está determinada por:
+
+donde
+
+y es la derivada de la utilidad con respecto al consumo de los hijos. Por
+
+inspección de la condición anterior, puede notarse que a fin de cumplir esta igualdad, los
+
+12
+retornos de la inversión en educación deben ser mayores que en el primer caso. A su vez, para que esto último se cumpla, debido al supuesto de rendimientos decrecientes de la educación, es necesario que la inversión en educación disminuya. Así, un individuo que provenga de una familia donde las restricciones no limiten las decisiones de inversión en educación, gozará de una mayor escolaridad que un individuo del mismo nivel de habilidad pero de una familia donde dichas restricciones estén activas. Por lo tanto, si las familias están restringidas, el gasto en educación ya no sólo depende del nivel de habilidad de los hijos, sino también del nivel de ingreso de los padres, pues la carencia de recursos monetarios suficientes limitará las decisiones de inversión en educación.
+Como se mencionó anteriormente, debido a los problemas de información presentes en la economía hay individuos que experimentan restricciones de crédito. Las familias con bajos niveles de ingreso se verán afectadas en mayor medida por dichas restricciones, pues ante la falta de recursos se verán forzadas a disminuir su nivel de consumo para financiar la educación de sus hijos. Por otro lado, a medida que las familias tengan hijos con mayores niveles de habilidad, necesitarán realizar mayores inversiones en capital humano a fin de que sus hijos alcancen sus niveles de educación óptimos, por lo que será más probable que las restricciones les afecten.
+Dadas las implicaciones del modelo anterior, la elasticidad intergeneracional de ingresos debe ser positiva pero decreciente, es decir, la relación directa entre los ingresos de padres e hijos debe ser cóncava. Esto debido a que las restricciones deben afectar en mayor medida a los padres de bajos recursos, y relajarse a medida que aumenten los ingresos de los padres. (Becker y Tomes, 1994). Esto provoca que los hijos de padres de bajos recursos tengan menores niveles de educación y, por lo tanto, de ingreso. Dado que el nivel de ingreso de los hijos depende del de sus padres, la persistencia aumenta en comparación con aquellos hijos de padres de elevados recursos a los cuales las restricciones no les afectan, con lo que se genera la concavidad (Grawe, 2004). Esta predicción se conoce como la Conjetura de Becker y Tomes.
+
+13
+¿LAS RESTRICCIONES DE CRÉDITO AFECTAN LA MOVILIDAD EN MÉXICO? Diversos estudios sobre movilidad social realizados para América Latina, han presentado evidencia de que, en general, la región experimenta una baja movilidad económica en comparación con los países desarrollados (Azevedo y Bouillon, 2009). En particular, estudios realizados para México presentan evidencia de la situación antes mencionada, incluso si se le compara con países latinoamericanos que tienen niveles de bienestar socioeconómico similares, como Chile; lo cual puede deberse a que existe una alta asociación entre el nivel educativo de padres e hijos (Torche, 2010). Debido a las consideraciones discutidas en la sección anterior sobre la importancia de la movilidad en la sociedad, resulta relevante ahondar más sobre los determinantes que provocan que ésta sea reducida en nuestro país.
+De acuerdo con el modelo de Grawe presentado previamente, las restricciones crediticias inciden sobre la movilidad económica de las familias al limitar las posibilidades de los hijos de recibir la educación que obtendrían en caso de contar con los medios suficientes para financiar todos los gastos asociados con ella. Basado en la conjetura de Becker y Tomes, es de esperarse que sea en las familias de bajos ingresos donde las restricciones afecten en mayor medida las decisiones de inversión en educación, por lo que se concluye que la movilidad económica en este sector debe ser menor que la de las familias con ingresos elevados.
+Para determinar si las restricciones de crédito juegan un papel importante dentro de la sociedad, comúnmente se comparan el sector restringido y no restringido para determinar si hay diferencias significativas entre ellos que puedan atribuirse a la falta de acceso al mercado de capital. Los diversos enfoques utilizados en la literatura para determinar si un hogar está racionado de crédito o no, se encuentran dentro de dos grupos generales: 1) métodos directos basados en preguntas expresas realizadas en encuestas y 2) métodos indirectos fundamentados en modelos teóricos. El primer enfoque posee muchas características deseables para realizar estudios de restricciones de crédito, pues permite identificar de manera simple y precisa los grupos de individuos racionados dentro de la sociedad. Además, posibilita conocer el motivo de la falta de acceso a crédito de las personas.
+Con respecto al segundo enfoque, uno de los caminos comúnmente utilizado es la separación de la muestra en un grupo potencialmente racionado y uno potencialmente no racionado, basada en las implicaciones de algún modelo teórico. Sin embargo, debido a que la separación de la muestra puede ser arbitraria, los estimadores obtenidos pueden estar sesgados o
+
+14
+ser imprecisos (Gilligan, et. al., 2005). En el caso específico de estudios sobre movilidad económica, Mulligan dividió la muestra utilizando como separación las herencias esperadas de los hijos. Bajo esta lógica, el estudio no encuentra diferencias entre ambos grupos, lo que lo lleva a concluir que las restricciones de crédito no son un determinante importante de la movilidad económica intergeneracional (1997). Por otro lado, Mazumder (2005) separa a las familias por el valor neto de sus activos y, aunque encuentra diferencias en la movilidad intergeneracional para los distintos grupos, éstas no son significativas (Black y Devereux, 2010).
+La EMOVI 2011 no cuenta con información que permita utilizar un método directo, y carece de datos para hacer una separación de la muestra como la utilizada por autores antes mencionados. Por consiguiente, en la presente investigación se utilizará el enfoque indirecto basado en la búsqueda de patrones no lineales en la regresión intergeneracional de ingresos.
+Probando el efecto de las restricciones de crédito mediante regresiones no lineales de ingresos
+El enfoque que se utilizará en la presente investigación consiste en la búsqueda de patrones no lineales en la regresión intergeneracional de ingresos (Behrman y Taubman 1990, Solon 1992, Corak y Heisz 1999). El supuesto fundamental de este enfoque consiste en que bajo mercados perfectos de capital, la elasticidad intergeneracional de ingresos no debe cambiar conforme cambien los ingresos de los padres, ésta debe depender únicamente de la habilidad, es decir, la regresión debe ser lineal (Grawe, 2001).
+Diversos autores han estimado la elasticidad intergeneracional de ingreso a través de mínimos cuadrados ordinarios para el caso de los Estados Unidos y Canadá. En estos estudios, se ha aplicado la siguiente metodología: se ha incluido un término cuadrático en la regresión intergeneracional de ingresos con el objetivo de capturar la no linealidad que implica la conjetura de Becker y Tomes. Efectivamente, dichos estudios han encontrado un patrón no lineal en esta regresión, pero a diferencia de encontrar el patrón cóncavo propuesto por los autores, se han encontrado formas convexas o de “s” (Behrman y Taubman 1990, Solon 1992, Corak y Heisz 1999).
+Aunque los resultados anteriores parecieran contradecir la conjetura de Becker y Tomes, los patrones encontrados pueden justificar un efecto de las restricciones de crédito sobre la decisión educacional, dependiendo del determinante de la movilidad que se haya supuesto. El primer determinante es la forma en que se transmite la habilidad de padres a hijos. Cabe señalar
+
+15
+que a medida que esta transmisión sea mayor, los ingresos de estos últimos dependerán en mayor medida de los de sus padres, debido al impacto de las características heredadas sobre el salario. De esta forma, dado un nivel de transmisión de la habilidad, el patrón en forma de “s” encontrado por Corak y Heisz, es explicado por ellos de la siguiente manera, los individuos de bajos ingresos y habilidad, tendrán hijos con baja habilidad, por lo cual las restricciones no les afectarán, pero a medida que se consideren ingresos y habilidades mayores también lo hará el nivel de habilidad de los hijos y, por lo tanto, las restricciones empezarán a limitar las inversiones en educación. Cuando los ingresos son lo suficientemente elevados, dichas restricciones pierden su efecto sobre la educación puesto que los padres cuentan con los recursos suficientes para financiarla por sí mismos, sin importar que tan elevada pueda ser la habilidad de los hijos (Grawe, 2001).
+El segundo determinante es la función de salarios. Grawe (2001) demuestra, a través de simulaciones, que aún bajo mercados perfectos de capital, la forma específica de dicha función determina el patrón observado en la regresión intergeneracional de ingresos. Por ejemplo, asumiendo la siguiente función:
+con constante, se obtiene un patrón convexo de la regresión, y dado que por supuesto se asumió que los padres podrían adquirir todos los préstamos que quisieran a la tasa de interés vigente del mercado, a diferencia de lo planteado por Becker y Tomes, una regresión intergeneracional de ingresos no lineal no es suficiente para concluir que las imperfecciones del mercado de crédito tienen un efecto sobre la movilidad.
+Tomando en cuenta lo anterior, dado que la hipótesis que sostiene que las restricciones de crédito impactan sobre la educación, puede ser justificada tanto por patrones cóncavos, convexos o en forma de “s”, además de que los patrones no lineales pueden deberse a otros factores que no sean la ineficiencia de los mercados de crédito, utilizar, únicamente, regresiones intergeneracionales de ingreso no constituye una prueba efectiva para determinar si las restricciones efectivamente limitan las decisiones de educación de los individuos. Por lo tanto, ante la inexactitud del enfoque descrito anteriormente, Grawe (2001) propone una ampliación basada en la utilización de regresión de cuantiles bajo la lógica de que, según lo predicho por el modelo, a medida que el nivel de habilidad de un individuo sea mayor, también lo tendrá que ser el gasto en educación destinado a él por parte de sus padres. Así, si tomáramos a dos familias con
+
+16
+el mismo nivel de ingresos, pero distinto nivel de habilidad de los hijos, las restricciones crediticias deben ser experimentadas en mayor medida por la familia con el hijo de mayor habilidad. Por lo tanto, lo que se debe encontrar en la regresión intergeneracional de ingreso es que sean los cuantiles superiores los que presenten un comportamiento no lineal, así como una mayor dependencia de los ingresos de los hijos en los de los padres en comparación con los cuantiles inferiores. El supuesto fundamental bajo el enfoque de Grawe es que la regresión debe ser lineal en caso de que las restricciones de crédito no estén activas.
+La prueba anterior ha sido aplicada para Canadá y Brasil. En el caso canadiense Grawe (2001) concluye que las restricciones de crédito no juegan un papel relevante sobre la educación de los individuos, de tal forma que no inciden sobre sus niveles de ingreso futuro y, por tanto, sobre su movilidad. Para el caso brasileño Andrade et. al (2003) concluyen que las restricciones de crédito sí tienen un rol importante sobre la movilidad intergeneracional económica.
+A partir de las conclusiones que se obtuvieron en los estudios empíricos antes mencionados y, tomando en cuenta la situación de México en términos de movilidad y restricciones de crédito, el objetivo del presente capítulo es determinar el papel de las restricciones de crédito sobre la persistencia intergeneracional de ingresos en México. En lo que sigue, se explicará la encuesta de donde se obtuvieron los datos utilizados, así como se abordará la construcción de las variables dependiente e independiente. Luego, se presentará la metodología empleada para el análisis y, por último, se mostrarán los resultados obtenidos.
+Datos y estadística descriptiva La presente investigación utiliza la Segunda Encuesta de Movilidad Social en México, EMOVI 2011 dado que ésta fue realizada con el objetivo expreso de generar los datos que permitieran estudiar la movilidad social en México a nivel nacional. La encuesta es representativa tanto para hombres y mujeres entre 25 y 64 años de edad, como por tipo de ámbito y jefatura de hogar. A partir de información retrospectiva del entrevistado, es decir, información sobre sus padres y sobre la situación en su hogar cuando éste tenía 14 años de edad, es posible llevar a cabo estudios de movilidad social intergeneracional (Diseño de muestreo EMOVI 2011).
+La encuesta está conformada por 11,240 entrevistas divididas por igual entre ámbito urbano y rural. El diseño muestral es probabilístico, por conglomerados y de selección por etapas. Este diseño responde a que para cumplir el objetivo de estudiar la movilidad es necesario realizar inferencia que tenga validez estadística. Para tomar en cuenta la diferencia en las
+
+17
+condiciones regionales dentro del territorio nacional se utilizó el producto “Regiones socioeconómicas de México” elaborado por el Instituto Nacional de Estadística y Geografía (Diseño de muestreo EMOVI 2011). Éste divide a la población del XII Censo General de Población y Vivienda 2000 en siete estratos dependiendo de sus características sociales y económicas (INEGI, 2012).
+El plan de muestreo consistió de cinco etapas: las unidades primarias de muestreo fueron municipios o localidades no urbanas con menos de 10,000 habitantes. Las unidades secundarias y terciarias de muestreo fueron 1,050 áreas geoestadísticas básicas y 2,100 manzanas dentro ellas respectivamente. La cuarta etapa consistió en las viviendas ubicadas en cada manzana, en específico se escogieron 8,400 viviendas, cuatro dentro de cada una de las manzanas seleccionadas (Diseño de muestreo EMOVI 2011).
+Debido a que la EMOVI 2011 no cuenta con información retrospectiva sobre los ingresos de los padres, a fin de calcular las elasticidades intergeneracionales fue necesario elaborar dos índices de bienestar económico, uno para padres y otro para hijos. Siguiendo a Torche (2010) para la construcción del índice de hijos se utilizó un conjunto de bienes y servicios con los que contaba el hogar actual del entrevistado, mientras que para la construcción del índice de padres fueron utilizados los bienes y servicios disponibles en el hogar del entrevistado cuando éste tenía 14 años de edad. Dicho índice es útil para medir el nivel socioeconómico de los individuos puesto que, tras algunas correcciones, se puede considerar como una proxy del ingreso permanente de los hogares (Torche, 2010). Los bienes y servicios considerados para la construcción de los índices, tanto para padres como para hijos, fueron: un local comercial, un terreno o campo, una casa de vacaciones, una casa/ un departamento para rentar, animales, un tractor, otra máquina o equipo agrícola, un negocio, computadora, estufa de gas o eléctrica, lavadora de ropa, refrigerador, video casetera o DVD, televisor, calentador de agua, teléfono celular, aspiradora, horno de microondas, tostador eléctrico de pan, acceso a internet, agua entubada, baño dentro de la casa, electricidad, servicio doméstico permanente, servicio doméstico algunos días a la semana, teléfono fijo, televisión de cable o satelital, acciones, bonos o fondos mutuos, ahorros en una cuenta de ahorro, cuenta de cheques en un banco y, tarjeta de crédito de un banco. Cabe hacer dos consideraciones: 1) dada la naturaleza del análisis estadístico para la construcción del índice no todos los bienes y servicios fueron utilizados, y 2) debido a que el periodo temporal de padres e hijos es diferente, los bienes y servicios que sirven
+
+18
+para explicar el bienestar económico de los individuos es diferente para cada uno de los grupos, por ejemplo, como se verá más adelante, mientras que en el caso de los padres, el contar con un televisor significaba tener un mayor nivel de bienestar económico, esto no es así para los hijos.
+Como se comentó antes, una de las razones para la utilización de índices de bienestar económico radica en la falta de información de ingreso de los individuos, pero además estos están sujetos a importantes errores de medición que disminuyen su confiabilidad para realizar estudios. Ante estos problemas, y debido a la facilidad para registrar y reportar bienes y servicios con los que cuenta el hogar, estos últimos son comúnmente utilizados como proxies de la riqueza de los hogares. No obstante, dado que la utilización de uno solo de estos bienes o servicios como proxy presentaría un fuerte sesgo, lo que se utiliza en la práctica es un conjunto de bienes y servicios ponderados para conformar un solo índice. Estadísticamente, estos ponderadores pueden ser obtenidos a través de la técnica de Análisis de Componentes Principales (PCA) (Kolenikov y Angeles, 2004).
+El amplio uso del PCA para la construcción de índices de bienestar económico se debe a Filmer y Pritchett (2001); sin embargo, dicha técnica no debe utilizarse con variables discretas debido a que se violan los supuestos sobre la distribución normal de las variables además de presentar sesgo en la correlación y covarianza de las variables categóricas. De tal forma que cuando se cuenta con variables de tipo ordinal, es decir, variables con distintas categorías y un ordenamiento natural, se debe utilizar la técnica de correlaciones policóricas, dado que con ésta se obtiene la verdadera correlación entre dos variables categóricas, resolviéndose el problema de PCA (Kolenikov y Angeles, 2004). Debido a que solo contamos con información sobre si se tiene o no determinado bien, para la construcción del índice se decidió utilizar esta técnica en lugar del análisis de componentes principales estándar.
+Otra consideración que resulta importante hacer es que la utilización de los ingresos de corto plazo como proxy del ingreso permanente de los individuos provoca que se obtengan estimadores sesgados de OLS cuando se estiman regresiones intergeneracionales de ingreso (Solon, 1992). La edad de los individuos en que es observado el ingreso tiene serias implicaciones sobre la magnitud de la elasticidad intergeneracional de ingresos. Diversos estudios muestran que para que los ingresos de corto plazo puedan ser considerados como una proxy efectiva del nivel de ingreso permanente de los individuos, estos deben ser medidos alrededor de los 40 años (Jantti, et. al., 2006).
+
+19
+Siguiendo la metodología empleada por Jantti et. al. (2006), se eliminaron a los padres menores a 35 y mayores a 64 años de edad cuando el hijo tenía 14 años2. Además, al igual que Torche (2010), una vez construido el índice se realizó la corrección empleada por los autores para eliminar el sesgo correspondiente al ciclo de vida, la cual consiste en calcular el bienestar económico, tanto de padres como de hijos, a los 40 años de edad, pues es a esta edad cuando los individuos alcanzan su nivel de ingreso permanente3. Dicha corrección consiste en la realización de la regresión del logaritmo del índice de bienestar económico en función de un polinomio de grado cuarto en la edad de los individuos. Luego, se calcula el índice a los 40 años de edad y se le agregan los residuales obtenidos de la regresión anterior. Finalmente, se le aplica una función exponencial a los resultados para regresar el índice a su escala original. La variable a utilizar durante el análisis es el logaritmo de este índice de bienestar económico corregido (Jantti, et. al., 2006).
+Se utiliza como índice de bienestar económico, tanto para padres como para hijos, el primer factor del análisis de componentes principales, dado que este es considerado como una medida del nivel socioeconómico del hogar (Vyas y Kumaranayake, 2006). El índice es un promedio, ponderado por las cargas factoriales, de las puntuaciones de cada uno de los activos del primer componente (Njong y Ningaye, 2008). En el caso de los hijos éste explica el 62.57% de la varianza y, en el de los padres el 61.96%. Los activos efectivamente utilizados para conformar el índice de hijos fueron: una casa o departamento para rentar, calentador de agua, aspiradora, lavadora de ropa, horno de microondas, tostador eléctrico de pan, computadora, agua entubada, teléfono fijo, televisión de cable o satelital, refrigerador, video casetera o DVD, teléfono celular y, baño dentro de la casa. Para el índice de padres se utilizaron: calentador de agua, lavadora de ropa, agua entubada, teléfono fijo, refrigerador, baño dentro de la casa, estufa de gas o eléctrica, televisor y, electricidad. En la tabla 1, se puede observar el porcentaje de la posesión de activos para padres e hijos. Es notable que dicho porcentaje se ha transformado, en algunas ocasiones, entre las generaciones. Por ejemplo, mientras tan sólo 30% de los padres contaba con lavadora de ropa, únicamente 28% de los hijos no cuentan con ella. También es posible notar que, en todos los activos que forman parte tanto del índice de padres como el de los
+2 Los autores lo hacen a los 16 años de edad, pues es esta la edad del entrevistado para la que cuentan con información retrospectiva. 3 Los resultados no cambian sustancialmente en caso de que el análisis se haga a los 55 años, edad en la que se maximiza la riqueza de los individuos (Diamond y Tung, 2006)
+
+20
+
+hijos, el porcentaje de individuos que poseen los activos es mayor en la generación actual en comparación con la de sus padres.
+
+Tabla 1. Porcentaje de posesión de activos de padres e hijos
+
+Activo
+
+Porcentaje de posesión de activos
+
+Hijos
+
+Padres
+
+No
+
+Si
+
+No
+
+Si
+
+Una casa o departamento para rentar
+
+98.47
+
+1.53
+
+Calentador de agua Aspiradora Lavadora de ropa Horno de microondas
+
+51.40 90.63 27.61 59.33
+
+48.60 9.37 72.39 40.67
+
+75.37 70.15
+
+24.63 29.85
+
+Tostador eléctrico de pan
+
+87.70
+
+12.30
+
+Computadora Agua entubada Teléfono fijo Televisión de cable o satelital Refrigerador Video casetera o DVD Teléfono celular Baño dentro de la casa Estufa de gas o eléctrica Televisor Electricidad
+
+67.03 5.54 65.38
+72.56
+11.37 30.49 40.63 16.76
+
+32.97 94.46 34.62
+27.44
+88.63 69.51 59.37 83.24
+
+27.98 85.97
+47.59
+46.28 33.39 27.68 14.59
+
+72.02 14.03
+52.41
+53.72 66.61 72.32 85.41
+
+Con respecto a los índices, la carga de cada uno de los activos, es decir, su importancia dentro de éste fue:
+
+21
+
+Tabla 2. Cargas factoriales de los activos
+
+Hijos
+
+Cargas factoriales
+
+Padres
+
+Activo
+Una casa o departamento para rentar
+Calentador de agua Aspiradora Lavadora de ropa Horno de microondas
+Tostador eléctrico de pan
+Computadora Agua entubada Teléfono fijo Televisión de cable o satelital Refrigerador Video casetera o DVD Teléfono celular Baño dentro de la casa Número de automoviles
+
+Carga
+
+Activo
+
+Calentador de agua 0.3480 0.7431 Lavadora de ropa 0.6410 Agua entubada 0.6770 Teléfono fijo 0.7107 Refrigerador
+0.6408 Baño dentro de la casa 0.6611 Estufa de gas o eléctrica 0.5930 Televisor 0.6464 Electricidad
+
+0.5772 0.6653 0.5516 0.4888 0.8096 0.4970
+
+Carga
+0.623 0.655 0.7872 0.5423 0.7766
+0.6505 0.8168 0.8659 0.9352
+
+Como se ve en la tabla 3, la media del índice de bienestar económico, corregido por el ciclo de vida, para hijos es menor que en el caso de los padres. Mientras que la variabilidad en el índice de padres, es mayor que en el caso de los hijos.
+
+Tabla 3. Estadística descriptiva del índice de bienestar económico, corregido por el ciclo de
+
+vida, para padres e hijos.
+
+Índice corregido por ciclo de vida hijos Índice corregido por ciclo de vida padres
+
+Observaciones Media
+
+Desviación estándar
+
+Mínimo
+
+Máximo
+
+4064
+
+0.52
+
+0.19
+
+-0.11
+
+0.91
+
+4064
+
+1.01
+
+0.31
+
+0.06
+
+1.67
+
+22
+
+Por último, la muestra está dividida de la siguiente manera:
+
+Tabla 4. Subgrupos de población
+
+Rural
+
+Urbano Total
+
+Mujeres
+
+32.77
+
+67.23
+
+100
+
+Hombres
+
+32.14
+
+67.86
+
+100
+
+Como es de esperarse, el porcentaje de población que habita el ámbito urbano es mayor que el de las zonas rurales, lo cual puede obedecer a los altos niveles de migración, tanto interna como externa, que se experimentan en nuestro país.
+Metodología La elasticidad intergeneracional de ingresos es el cambio porcentual en el índice de bienestar económico de los hijos cuando el índice de bienestar de los padres cambia en un uno por ciento, esta elasticidad es interpretada como una medida de persistencia (Torche, 2010). Empíricamente obtenemos dicha persistencia a través del siguiente modelo:
+
+donde es el índice bienestar económico de hijos, es el índice de bienestar económico de
+
+padres y
+
+son todos aquellos determinantes del bienestar económico de los hijos, que
+
+asumimos no se encuentran relacionados con el bienestar económico de los padres. La
+
+elasticidad del bienestar económico de los hijos con respecto al de sus padres es el estimador de
+
+OLS, es decir, la del modelo de regresión anterior. En principio puede tomar cualquier valor,
+
+sin embargo, empíricamente su valor se ha encontrado entre cero y uno generalmente. Si es
+
+cero, las diferencias en el bienestar económico de los padres no afectan las diferencias en el
+
+bienestar económico de hijos, si es uno cualquier cambio en el bienestar de padres se
+
+transmite exactamente en la misma magnitud a sus hijos. Dado el rango de valores de podemos
+
+interpretar la fracción
+
+como el grado de movilidad social de una sociedad (Mulligan,
+
+1997).
+
+Sin embargo, dado que el objetivo del presente trabajo no es estimar el grado de
+
+movilidad intergeneracional en México, sino si las restricciones crediticias afectan a la sociedad,
+
+23
+se estimará el siguiente modelo utilizado por Solon (1992), Behrman y Taubman 1990, y Grawe (2001, 2004)4:
+
+Esto debido a que se pretende probar la conjetura de Becker y Tomes, según la cual al experimentarse restricciones de crédito, la persistencia variará dependiendo el nivel económico de los padres. El supuesto fundamental detrás de esta prueba radica en que si no se presentan restricciones crediticias las regresiones deben ser lineales. La introducción del término cuadrático en la forma funcional anterior pretende capturar dicho patrón no lineal. Cabe mencionar que, tal como se hizo referencia al principio de esta sección, prácticamente cualquier patrón no lineal puede ser justificado a partir de supuestos sobre la forma en que la habilidad es transmitida de padres a hijos, lo que levanta dudas acerca de la validez de utilizar únicamente este enfoque para probar la hipótesis de restricciones de crédito (Grawe, 2001).
+Bajo la consideración anterior, además se utilizará la metodología propuesta por Grawe (2001) para incrementar la confianza de la prueba. Ésta consiste en la estimación del modelo anterior por medio de regresión de cuantiles, de tal forma que sea posible capturar las diferencias en el nivel de persistencia económica para distintos niveles de bienestar de los hijos. Siguiendo la literatura sobre distribución de ingreso que hace el supuesto de que la habilidad se transforma en ganancias para las personas, este trabajo utiliza el nivel de bienestar económico como proxy del nivel de habilidad de los individuos (Becker y Tomes, 1994). Por lo tanto, dado un mismo nivel socioeconómico familiar, si se consideran las diferencias en el bienestar económico como una proxy de las diferencias de las habilidades de los individuos, mayores niveles de bienestar económico deben estar asociados a una mayor persistencia. Esto es así, ya que las restricciones de crédito limitan las decisiones de educación cuando la inversión óptima en sus hijos supera el nivel de ingreso de las familias.
+Adicionalmente al análisis de toda la muestra elegida para el estudio se analizará el comportamiento a través de subgrupos: En específico, se aplicará la metodología a mujeres, hombres y a la sociedad rural y urbana, así como a combinaciones de ellos, resultando en las
+
+4 Se estimo también el modelo
+
+a fin de buscar algún otro
+
+patrón no lineal, no obstante, el patrón cóncavo se mantiene. También se trató de utilizar “spline functions” para
+
+determinar formas no lineales más complejas, sin embargo, el bajo número de observaciones no permite realizar
+
+dicho análisis de manera adecuada.
+
+24
+siguientes: mujeres rurales, mujeres urbanas, hombres rurales y hombres urbanos. Esto debido a que es probable que las restricciones crediticias afecten de distinta manera en la sociedad. Resultados Se estimó el siguiente modelo:
+
+donde,
+
+es el logaritmo natural del índice de bienestar económico de los hijos corregido
+
+por el ciclo de vida y
+
+es el logaritmo natural del índice de bienestar económico de los
+
+padres corregido por el ciclo de vida. Por medio de mínimos cuadrados y regresión de cuantiles,
+
+se obtuvieron los siguientes resultados:
+
+Tabla 5. Elasticidad intergeneracional de bienestar económico para la media y cuantiles
+
+VARIABLES
+
+Lnibeh
+
+media
+
+q10
+
+q25
+
+q50
+
+q75
+
+q90
+
+lnibep lnibep_cuadrado Constante
+
+0.350*** (0.048) -0.094*** (0.026) 0.276*** (0.021)
+
+0.061 (0.100) 0.095* (0.054) 0.110** (0.043)
+
+0.362*** (0.074) -0.078** (0.040) 0.119*** (0.032)
+
+0.383*** (0.064) -0.102*** (0.034) 0.264*** (0.028)
+
+0.483*** (0.047) -0.179*** (0.025) 0.378*** (0.020)
+
+0.506*** (0.045) -0.226*** (0.024) 0.500*** (0.019)
+
+Observaciones
+
+4,064
+
+4,064
+
+4,064
+
+4,064
+
+4,064
+
+4,064
+
+R-cuadrada
+
+0.089
+
+Errores estándar en paréntesis
+
+*** p<0.01, ** p<0.05, * p<0.1
+El valor mínimo del lnibep es .068, para este nivel la elasticidad intergeneracional en la media fue 0.337, mientras que en el cuantil 10 fue de 0.073 y en el cuantil 90 fue de 0.474. El valor máximo del lnibep es 1.679, la elasticidad en la media fue 0.036, en el cuantil 10 fue 0.381 y en el cuantil 90 fue -0.254.
+
+La estimación por medio de mínimos cuadrados apoya la conjetura de Becker y Tomes. La obtención de un estimador, estadísticamente significativo, negativo para el término cuadrático provoca que la regresión intergeneracional de bienestar económico sea cóncava (ver tabla 5). Esto debido a que, aun cuando un incremento marginal en el índice de padres, ocasionará que el
+
+25
+bienestar económico de los hijos aumente, dicho aumento será cada vez menor. Llamaremos a este comportamiento la hipótesis simple de restricciones de crédito, que consiste en que son los padres con un bajo nivel de bienestar económico los que se encuentran restringidos, siendo incapaces de pagar todos los estudios de sus hijos, por lo que estos enfrenta una mayor persistencia. En otras palabras, la regresión intergeneracional de bienestar económico es cóncava. Como se mencionó anteriormente, dicho patrón puede deberse a factores distintos a la presencia de restricciones de crédito que limiten las decisiones de inversión en educación. Éste podría deberse a las formas de transmisión de la habilidad y la función de salarios en México. Sin embargo, dado que no hay forma de conocer la forma de la función de salarios para el caso mexicano, ni los mecanismos de transmisión de la habilidad entre padres e hijos, se utilizará la metodología propuesta por Grawe (2001) para determinar con mayor precisión el papel de las restricciones de crédito en la sociedad mexicana.
+Tanto en las gráficas siguientes como en el cuadro anterior, el cuantil de menor nivel de bienestar económico es el 10, mientras que el cuantil 90 es el de mayor nivel de bienestar económico. Con respecto a la regresión de cuantiles, el único cuantil que no presenta un patrón cóncavo es el décimo. Para poder hacer inferencias a partir de la metodología propuesta por Grawe deben analizarse tres puntos: primero, implicaciones de la hipótesis simple de restricciones crediticias, la cual sugiere que, como los hijos de mayor habilidad necesitan una mayor inversión en educación, en los cuantiles superiores la persistencia debe ser mayor para niveles bajos de bienestar económico de los padres. Segundo, el patrón generado en la media debe ser provocado por los cuantiles superiores. Tercero, los cuantiles inferiores deben ser lineales mientras que los superiores no. Dado que resulta más sencillo analizar dichas consideraciones a partir de un análisis gráfico, a continuación se presentan dos gráficas, la primera corresponde a la relación en el bienestar entre padres e hijos y, la segunda presenta el valor de la elasticidad intergeneracional de ingresos para distintos niveles de bienestar económico de los padres.
+
+26
+
+Figura 1. Relación de bienestar económico entre padres e hijos
+
+1
+
+Bienestar económico de hijos
+
+0.8 0.6 0.4 0.2
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+media
+
+q10
+
+q25
+
+q50
+
+q75
+
+2
+
+q90
+
+Figura 2. Elasticidad intergeneracional de bienestar económico
+
+Elasticidad intergeneracional de bienestar económico
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0
+
+-0.1 0
+
+0.5
+
+1
+
+1.5
+
+2
+
+-0.2
+
+-0.3 Bienestar económico de padres
+
+bq10 bq25 bq50 bq75 bq90
+
+Como se puede notar a partir de las gráficas anteriores, en los niveles bajos de bienestar económico de los padres la elasticidad intergeneracional de bienestar económico es mayor para los individuos de mayor habilidad. También se puede notar que el patrón cóncavo en la media es provocado por los cuantiles superiores. Por último, aun cuando el cuantil decimo parece ser convexo, y el cuantil 25 parece ser algo cóncavo, en ambos casos el término cuadrático no es significativo, lo que sugiere que en realidad la elasticidad es lineal para estos niveles de bienestar de los hijos.
+Los resultados anteriores parecen indicar que, en general, las restricciones de crédito efectivamente limitan las decisiones de inversión en educación de la sociedad mexicana en los niveles bajos de bienestar económico.
+
+27 Aplicando la metodología anterior a los distintos subgrupos mencionados tenemos resultados variados. Los resultados sugieren que en el sector rural las restricciones crediticias no limitan las decisiones de inversión en educación, en este caso la regresión de mínimos cuadrados es lineal, lo cual contradice el supuesto básico de esta investigación. En el caso del sector urbano, las restricciones crediticias sí afectan los niveles de escolaridad de las familias de bajo bienestar económico, pero sólo lo hacen para aquellas que poseen hijos con un nivel de habilidad por encima de la mediana. En el caso de los hombres, las restricciones también afectan las decisiones de educación, pero sólo lo hacen para niveles de bienestar económico de los padres muy bajos, mientras que para las mujeres la regresión es lineal. Para las distintas combinaciones tenemos que tanto para el caso de hombre como de mujer rural, las restricciones no afectan las decisiones de inversión en educación. Para los primeros, la regresión es lineal, mientras que para las mujeres, el resultado se debe a las implicaciones de la hipótesis simple de restricciones crediticias, ya que en caso de que las restricciones afectaran se requeriría que a mayores niveles de bienestar económico de los padres hubiera mayor persistencia en los cuantiles superiores, lo cual no sucede. En el caso de hombres urbanos sólo afectarían si el nivel de bienestar económico de padres es extremadamente bajo y, por último, para las mujeres urbanas pareciera que las restricciones solo afectan cuando la habilidad de las hijas pertenece al cuantil 90 (ver tabla 6 y anexo). 5
+5 Cabe notar que el número de observaciones se reduce notablemente cuando se hace el análisis por sexo y ámbito.
+
+28
+
+Tabla 6. Persistencia para la media y cuantiles por subgrupos de población
+
+VARIABLES
+
+Media
+
+lnibep lnibep_cuadrado Constante
+
+0.067 (0.078) 0.048 (0.044) 0.314*** (0.032)
+
+q10
+-0.123 -0.179 0.177*
+-0.1 0.109 -0.072
+
+Lnibeh
+
+q25
+
+q50
+
+Rural
+
+-0.057 0.154*
+
+-0.131 (0.088)
+
+0.136* -0.017
+
+-0.074 (0.050)
+
+0.209*** 0.302***
+
+-0.053 (0.036)
+
+q75
+0.177 -0.126 -0.005 -0.07 0.401*** -0.052
+
+q90
+0.232** (0.105) -0.062 (0.058) 0.520*** (0.044)
+
+Observaciones R-cuadrada
+lnibep lnibep_cuadrado Constante
+
+1,317 0.068
+0.389*** -0.057
+-0.138*** -0.03
+0.330*** -0.027
+
+1,317
+
+1,317
+
+Urbano 0.359*** 0.314***
+-0.104 -0.084 -0.091* -0.085* -0.054 -0.043 0.083* 0.232*** -0.048 -0.039
+
+1,317
+0.341*** -0.077
+-0.104*** -0.04
+0.353*** -0.036
+
+1,317
+
+1,317
+
+0.409*** -0.087
+-0.173*** -0.046
+0.479*** -0.039
+
+0.433*** (0.054) -0.208*** (0.029) 0.569*** (0.023)
+
+Observaciones R-cuadrada
+lnibep lnibep_cuadrado Constante
+
+2,747 0.055
+0.218*** -0.073 -0.022 -0.039
+0.321*** -0.032
+
+2,747
+
+2,747
+
+Mujer
+
+-0.123 0.190*
+
+-0.13
+
+-0.1
+
+0.189*** 0.009
+
+-0.07
+
+-0.053
+
+0.188*** 0.192***
+
+-0.056 -0.044
+
+2,747
+0.152 -0.097 0.031 -0.052 0.333*** -0.043
+
+2,747
+
+2,747
+
+0.435*** -0.087
+-0.148*** -0.047
+0.382*** -0.038
+
+0.380*** -0.075
+-0.154*** -0.041
+0.539*** -0.032
+
+Observaciones R-cuadrada
+
+1,718 0.09
+
+lnibep
+
+0.438***
+
+(0.062)
+
+lnibep_cuadrado -0.141***
+
+(0.034)
+
+Constante
+
+0.247***
+
+(0.028)
+
+Observaciones R-cuadrada
+
+2,346 0.089
+
+1,718
+
+1,718
+
+1,718
+
+1,718
+
+1,718
+
+0.246* -0.149 0.002 -0.081 0.029 -0.064
+
+Hombre 0.506*** -0.089 -0.152*** -0.048 0.063 -0.039
+
+0.569*** -0.081
+-0.210*** -0.044
+0.207*** -0.036
+
+0.534*** -0.065
+-0.208*** -0.035
+0.365*** -0.029
+
+0.573*** -0.056
+-0.268*** -0.031
+0.483*** -0.024
+
+2,346
+
+2,346
+
+2,346
+
+2,346
+
+2,346
+
+29
+
+lnibep lnibep_cuadrado Constante
+
+-0.126 (0.124) 0.154** (0.070) 0.390*** (0.050)
+
+Mujer rural
+
+-0.204 -0.067
+
+(0.260) (0.211)
+
+0.201
+
+0.133
+
+(0.152) (0.120)
+
+0.175* 0.227***
+
+(0.100) (0.084)
+
+-0.14 -0.15 0.155* -0.085 0.409*** -0.06
+
+-0.079 -0.16 0.148 -0.091 0.478*** -0.065
+
+-0.058 -0.202 0.093 -0.111 0.641*** -0.085
+
+Observaciones R-cuadrada
+
+563 0.069
+
+lnibep lnibep_cuadrado Constante
+
+0.337*** (0.087) -0.104** (0.045) 0.332*** (0.040)
+
+563
+
+563
+
+563
+
+563
+
+563
+
+Mujer urbano 0.267 0.341** (0.182) (0.145) -0.037 -0.086 (0.093) (0.074) 0.106 0.190*** (0.085) (0.068)
+
+0.237* (0.130) -0.044 (0.067) 0.374*** (0.060)
+
+0.343*** (0.129) -0.133* (0.068) 0.486*** (0.058)
+
+0.469*** (0.083) -0.213*** (0.045) 0.530*** (0.036)
+
+Observaciones R-cuadrada
+
+1,155 0.065
+
+lnibep lnibep_cuadrado Constante
+
+0.180* (0.101) -0.013 (0.057) 0.269*** (0.041)
+
+1,155
+
+1,155
+
+1,155
+
+1,155
+
+1,155
+
+Hombre rural -0.139 -0.056 (0.249) (0.160) 0.196 0.149* (0.137) (0.090) 0.087 0.188*** (0.102) (0.065)
+
+0.289*** (0.097) -0.088 (0.055) 0.246*** (0.040)
+
+0.462** (0.184) -0.187* (0.101) 0.315*** (0.077)
+
+0.336** (0.150) -0.119 (0.086) 0.484*** (0.060)
+
+Observaciones R-cuadrada
+
+754 0.071
+
+lnibep
+
+0.416***
+
+(0.076)
+
+lnibep_cuadrado -0.159***
+
+(0.039)
+
+Constante
+
+0.335***
+
+(0.035)
+
+754
+
+754
+
+754
+
+Hombre urbano
+
+0.432*** 0.285** 0.405***
+
+-0.118 -0.117
+
+-0.09
+
+-0.130** -0.081 -0.139***
+
+-0.062 -0.061 -0.046
+
+0.06 0.266*** 0.334***
+
+-0.055 -0.054 -0.042
+
+754
+0.445*** (0.119) -0.197*** (0.063) 0.478*** (0.054)
+
+754
+0.448*** (0.056) -0.227*** (0.030) 0.580*** (0.024)
+
+Observaciones R-cuadrada
+
+1,592 0.047
+
+1,592
+
+1,592
+
+1,592
+
+Errores estándar en paréntesis *** p<0.01, ** p<0.05, * p<0.1
+
+1,592
+
+1,592
+
+31
+ANÁLISIS E IMPLICACIONES DE LOS RESULTADOS EMPÍRICOS: LAS RESTRICCIONES CREDITICIAS Y LA MOVILIDAD EN MÉXICO
+Las restricciones operativas El enfoque de las restricciones operativas analiza los determinantes que efectivamente impactan directamente en la movilidad intergeneracional, ya sean propios del hogar o correspondientes al medio ambiente. A partir de esta perspectiva se puede determinar cuáles son las restricciones que más afectan en el nivel de bienestar de un hogar y, por lo tanto, en sus decisiones sobre la inversión en capital humano de los hijos (PNUD, 2010).
+En el caso específico de la educación, los factores propios del hogar están relacionados con los costos asociados a la inversión. Existen dos costos principales con efectos sobre la inversión en educación: los directos, tales como colegiatura, útiles, transporte, entre otros y, el costo de oportunidad, que se refiere a la pérdida de ingresos en que se incurre debido a utilizar el tiempo en estudiar en lugar de trabajar (Becker, 1994). Dichos costos varían para cada familia dependiendo de sus características, por ejemplo, su ubicación geográfica. Así, la decisión de inversión en educación está basada en el beneficio neto de ésta, es decir, dado que los retornos a la educación son positivos, el beneficio neto serán los ingresos futuros recibidos menos los costos asociados para cada familia (PNUD, 2010).
+Ahora, dadas las características socioeconómicas de algunos hogares, las restricciones operativas se refieren a la incapacidad de las familias de cubrir los costos directos o de oportunidad. Por otra parte, puede suceder que la educación, a la que pueden acceder, sea de tan baja calidad, que los beneficios esperados no cubran los costos asociados con la inversión presente (PNUD, 2010). Si los mercados de capital no presentarán imperfecciones, estas restricciones no afectarían en la movilidad debido a que los hogares podrían financiar las inversiones en educación a través de préstamos.
+En cuanto a los factores del ambiente, estos se refieren a la disponibilidad de obtener dicha educación, es decir, a su oferta; por ejemplo, localidades rurales aisladas pueden carecer de instituciones educativas a las cuales asista la población, lo que limita la capacidad de los individuos de realizar inversiones en capital humano.
+
+32
+Las restricciones de crédito y la movilidad en México Los resultados del capítulo anterior, realizados con datos de sección cruzada con información para dos generaciones en el año 2011, sugieren que en México, los hogares con un nivel de bienestar económico bajo experimentan el impacto negativo de las restricciones crediticias sobre sus elecciones de educación, lo que limita la movilidad de sus miembros. En específico, los hijos con un nivel de habilidad elevado son los que experimentan en mayor medida dichas restricciones. No obstante, vale la pena aclarar que dado el limitado número de datos no fue posible explorar formas no lineales más complejas en la regresión intergeneracional de ingreso, y tampoco fue posible realizar pruebas directas que permitieran corroborar los resultados aquí obtenidos. Aun así, es importante analizar las posibles causas que están detrás de estos, por lo que cabe preguntarse ¿por qué afectan estas restricciones a la movilidad económica? Y más importante aún, ¿qué se puede hacer para resolverlas?
+Con respecto a la primera pregunta, el impacto de las restricciones sobre la movilidad económica se puede atribuir a la falta de un sistema de subsidios gubernamentales que permita a las familias de bajos recursos mandar a sus hijos a la escuela, aun cuando éstas no cuenten con los suficientes recursos para hacerlo. Esta afirmación se puede sustentar a partir de los datos recabados por el Banco Mundial para el caso mexicano, los que muestran que mientras 98.1% de los niños de 6 a 12 años están matriculados en alguna institución educativa, esta cifra es de tan sólo 76% para jóvenes entre 13 y 17 años y de 33.2% para aquellos entre 18 y 23 (PNUD, 2010)6. Esto sería indicativo de la carencia de mecanismos que permitan a los individuos, que experimentan restricciones, continuar inscritos en el sistema educativo una vez terminada la educación primaria7. Lo anterior puede explicarse a partir del esquema del financiamiento educativo en México. Según el Banco Mundial, “el gasto público en educación comprende el gasto corriente y de capital en educación e incluye el gasto del Gobierno en instituciones educativas (tanto públicas como privadas), administración educativa y subsidios para entidades privadas (estudiantes/hogares y otras entidades privadas)” (Banco Mundial, 2012).
+Aun cuando, durante los últimos 20 años, en México se ha incrementado el gasto educativo como proporción del PIB, el gasto por alumno sigue estando muy por debajo de la
+6 Sólo recientemente se definió a la educación media superior como obligatoria y ha entrado en el esquema de subsidios de transferencias condicionadas lo que, como se abordará más adelante, podría ayudar a incrementar dicha tasa. 7 Cabe destacar que pueden existir otros factores socio-culturales que limiten la inversión en educación (Rao y Walton, 2004).
+
+33
+media de los países de la OCDE, por ejemplo, en 2006 el gasto mexicano en educación superior por alumno ascendió a $5,800 dólares, mientras que los países de la OCDE gastaron en promedio $11,200 dólares (Campos, Jarillo, Santibañez, 2010). Además, la distribución de dicho gasto resulta ineficiente, puesto que un elevado porcentaje del gasto educativo se destina a cubrir gasto corriente, en total, dicho gasto ascendió a 97.2% del total en 2010. (Campos, Jarillo, Santibañez, 2010). Con dicho esquema de asignación de los recursos, la parte que podría cubrir los subsidios para estudiantes/hogares se ve muy limitada, afectando a los grupos más desfavorecidos, quienes, de acuerdo con PNUD, enfrentan las mayores restricciones operativas (2010).
+Tomando en cuenta el efecto de los costos directos y de oportunidad sobre la inversión en educación de las familias, es entendible que ante la falta de mecanismos que las apoyen para cubrir los gastos asociados a ésta, realizar dicha inversión resulte difícil. Si no se presentaran imperfecciones en el mercado de crédito, las familias podrían endeudarse para financiar cualquier nivel de educación que requieran sus hijos. No obstante, ante restricciones crediticias, los padres se ven forzados a disminuir sus niveles de consumo para cubrir los costos de la inversión en educación. Esto aumentará la utilidad marginal del consumo de los padres relativa a la inversión en educación de los hijos, lo que implicará un aumento en el consumo y una disminución en la inversión en educación. Por lo tanto, el equilibrio consistirá en niveles de consumo e inversión menores a los que existirían en caso de contar con suficientes recursos, o bien con suficiente acceso al crédito (Becker y Tomes, 1994).
+El hecho de que México cuente con escasos esquemas de apoyo a la educación que permitan a las familias de bajos recursos financiar íntegramente la educación superior de los hijos, podría estar contribuyendo a que las restricciones de crédito se activen. Por lo tanto, sería útil la expansión de esquemas, ya sea a través de programas de transferencias monetarias condicionadas o subsidios directos, que permitan reducir el costo de la inversión y, de esta forma, disminuir la persistencia en dichos sectores.
+Efecto de las restricciones crediticias en la movilidad por ámbito y género Los resultados obtenidos para los distintos subgrupos de la muestra difieren considerablemente dependiendo del sector específico de la población que se esté analizando. Primero se analizarán los resultados por ámbito, y posteriormente por género.
+En primera instancia, los resultados sugieren que en el ámbito rural las restricciones de crédito no están limitando las decisiones de inversión en educación y, por lo tanto, la movilidad
+
+34
+económica intergeneracional. En cambio, en el ámbito urbano la prueba indica lo contrario. Esto se puede deber a que los costos asociados a la inversión en educación en cada tipo de ámbito son distintos: estudios realizados han identificado que los costos de oportunidad son más altos en el ámbito urbano que en el rural (SEDESOL, 2010). De esta forma, las decisiones de inversión en educación tienen que verse mayormente limitadas por las restricciones de crédito en las zonas urbanas, ya que el gasto en que deben de incurrir las familias es mayor, por lo que hay menores probabilidades de que puedan cubrirlo por si mismas. Además, como se verá más adelante, algunos estudios sugieren que el impacto de programas de transferencias monetarias condicionadas, en específico Oportunidades, es mayor en el ámbito rural que en el urbano. Esto podría estar teniendo algún efecto en el hecho de que las restricciones crediticias se relajen en el ámbito rural, disminuyendo su impacto sobre la movilidad intergeneracional. Debido a que dichas transferencias ayudan a cubrir los costos asociados con la inversión en educación.
+Con respecto al papel de las restricciones de crédito, diferenciando por sexo, la prueba arrojó que si bien, los hombres ven limitadas sus inversiones en educación debido a falta de financiamiento, en el caso de las mujeres las restricciones no afectan su movilidad. Aunque los resultados parecieran contradictorios, dado que estudios han hecho hincapié en la presencia de mayores restricciones operativas (tanto propias a la familia como del ambiente) en el caso de las mujeres (Lakin y Gasperini, 2004), estos podrían explicarse a partir de los programas de apoyo por parte del gobierno mexicano que pretenden fomentar la igualdad entre hombres y mujeres en materia de educación. La estrategia se basa, por una parte, en otorgar mayores facilidades para conseguir becas (además de montos mayores que el de los hombres) y, por la otra, un mayor acceso a los servicios de salud y educación, además de oportunidades laborales, y obtención de créditos, etc. (Matarazzo, 2009). Estos programas podrían estar relajando, en alguna medida, las restricciones operativas que enfrentan las mujeres en México y, por lo tanto, reduciendo el efecto de las restricciones crediticias en las decisiones de inversión en educación. No obstante, es preciso tomar en cuenta que la participación de las mujeres en la fuerza laboral sigue siendo menor en comparación con la de los hombres, 38% contra 62% respectivamente8. De ahí, se puede inferir que la relación de bienestar observada entre padres e hijas puede no estar tan marcada al estar mediada por la influencia de la situación socioeconómica del cónyuge. De esta forma, es importante analizar el caso particular de las mujeres que participan en el mercado
+8 Cálculo propio con base en datos de INEGI (2010).Encuesta Nacional de Ocupación y Empleo.
+
+35
+laboral. No obstante, limitaciones en el tamaño de la muestra no permitieron realizar dicho análisis.
+Recomendaciones de política pública Una vez identificado el papel de los costos en las decisiones de inversión en educación de las familias, vale la pena retomar el caso del programa de Desarrollo Humano Oportunidades, el cual se ha dedicado a reducir el efecto de estas restricciones operativas, como un posible mecanismo para reducir el impacto de las restricciones crediticias sobre la movilidad. Dicho programa tiene como objetivo romper la transmisión intergeneracional de la pobreza, por lo tanto, otorga transferencias monetarias condicionadas a que las familias envíen a sus hijos a la escuela y, asistan a revisiones médicas periódicas.
+La lógica del programa es dotar de incentivos a las familias para invertir en el capital humano de sus hijos, esto bajo la premisa de que la inversión en educación tiene retornos positivos, así la preparación que obtienen en la escuela los dotará de mayores herramientas para entrar al mercado laboral en mejores condiciones (Levy y Rodríguez, 2004). El monto del apoyo se calcula tomando en cuenta el costo de oportunidad de las familias de enviar a sus hijos a la escuela en vez de trabajar (Cohen y Villatoro, 2006). Este programa se empezó a implementar en zonas rurales con alta y muy alta marginación en donde actualmente tiene un porcentaje de cobertura muy elevado (Levy y Rodríguez, 2004). A partir de 2002 se extiende a zonas urbanas con altos niveles de marginación, donde la cobertura es aún algo limitada y el programa tiene algunos problemas de focalización. Las evaluaciones de Oportunidades muestran que el programa ha tenido efectos positivos en el logro educativo de los beneficiarios en las zonas rurales así como en las urbanas, aunque en estas el efecto es mucho más limitado (De la Torre, 2006; Gonzalez de la Rocha, 2008).
+La recomendación de política pública que se deriva del análisis de resultados, es que mientras programas de transferencias monetarias condicionadas como Oportunidades, efectivamente cubran tanto los costos de oportunidad, como los directos (útiles, apoyos en la alimentación, transporte, entre otros), los problemas asociados a las restricciones operativas podrían reducirse. Esto podría disminuir el impacto de las restricciones de crédito sobre la movilidad, puesto que permitiría que las familias de bajos niveles de bienestar económico, puedan realizar las inversiones en educación que requieran sus miembros, incluso estando restringidas y, por lo tanto, que el nivel de bienestar de los hijos dependa menos del de sus
+
+36
+padres. Dado que el descenso en la matriculación ocurre durante el paso de la educación primaria a la secundaria, esto llama a la necesidad de hacer efectiva la expansión de programas de este tipo para los niveles de educación superiores a la primaria.
+
+37
+CONCLUSIÓN Tal como se planteó al inicio de esta investigación, su objetivo fue determinar si las restricciones de crédito estaban afectando o no la movilidad económica intergeneracional en México. La hipótesis a comprobar fue que dichas restricciones afectaban negativamente a la movilidad. Los resultados obtenidos confirman esta hipótesis, aunque sólo para los estratos de bajo bienestar económico. Además, al dividir la muestra por género y ámbito, se encontraron efectos diferenciados de las restricciones crediticias sobre estos subgrupos.
+Los resultados anteriores pueden ser atribuidos, al menos en parte, al papel que desempeñan los distintos costos asociados a la inversión en educación que, además, varían dependiendo el sector de la población que se esté analizando. Dado que las familias con un bajo nivel de bienestar económico no cuentan con los recursos suficientes para cubrir las inversiones en capital humano de sus miembros, i.e. sus costos, el estar racionados de crédito no permite a las familias adquirir los recursos que les harían posible mandar a sus hijos a la escuela. Por lo tanto, dichas restricciones inciden directamente sobre sus decisiones de inversión, influyendo en sus ingresos futuros y, en última instancia, provocando persistencia entre los niveles de bienestar de padres e hijos.
+En cuanto a los efectos diferenciados que se presentaron, estos podrían ser explicados por dos causas principales: el papel de los costos y la influencia de los programas gubernamentales. En el caso de los sectores de la población por ámbito, los resultados pueden deberse a que los costos de oportunidad son mayores en el ámbito urbano y, por ende, las restricciones crediticias limitan en mayor medida las decisiones de inversión en educación, pues es más probable que las familias experimenten dificultades para cubrir los costos. Con respecto al papel del gobierno, los programas de transferencias monetarias condicionadas pueden estar ayudando a solventar los costos asociados con la inversión en educación en mayor medida en el ámbito rural, lo que ayuda a relajar las restricciones de crédito en estas zonas.
+En lo que concierne al género, los resultados obtenidos podrían atribuirse a los programas gubernamentales que buscan una mayor igualdad entre hombres y mujeres, por ejemplo algunos de sus programas de becas. Al igual que en el caso rural, esto puede estar disminuyendo los costos que enfrentan las familias para invertir en educación, disminuyendo el efecto de las restricciones. Otra razón que podría explicar los resultados obtenidos es el grado de participación femenina en la fuerza laboral. Puesto que su participación sigue siendo baja en comparación con
+
+38
+la de los hombres, su nivel de bienestar puede estar influido por el de su cónyuge, reduciendo la relación entre bienestar de padres e hijas.
+Si bien la prueba no está diseñada para medir el nivel de movilidad que una sociedad experimenta, sí es posible inferir que dado que las restricciones están limitando las inversiones en educación de las familias con un bajo nivel de bienestar económico, la movilidad en este sector será baja. Así mismo, como se mencionó en la sección teórica, ya que la movilidad es una medida del grado de igualdad de oportunidades que experimenta la sociedad, se puede afirmar que los sectores de bajo bienestar económico carecen, en mayor medida, de oportunidades para acceder a los bienes y servicios que pudieran mejorar su situación. Debido a esta falta de igualdad de oportunidades, las restricciones no sólo limitan las decisiones de inversión en educación, sino que además generan trampas de desigualdad que perpetúan los niveles bajos de bienestar. Esto se puede deber a las ineficiencias institucionales que dirigen los recursos hacia aquellos grupos de la sociedad que cuentan con mayor bienestar. Como se mencionó, dado que esto tiene implicaciones tanto sobre el desarrollo humano como el económico, es importante explorar mecanismos que permitan reducir los efectos de las restricciones sobre la movilidad.
+Uno de los mecanismos que podrían ayudar a relajar el efecto de estas restricciones consiste en la implementación de programas gubernamentales de transferencias monetarias condicionadas y subsidios que permitan a los individuos cubrir los costos asociados con la inversión en educación. Un ejemplo de estos radica en el programa Oportunidades. Sin embargo, un análisis a detalle de las implicaciones específicas de dichos programas sobre el efecto de las restricciones queda fuera del alcance de esta tesis. Por lo tanto, una ruta de análisis posterior consistiría en analizar a fondo el impacto de programas de transferencias monetarias condicionadas y subsidios sobre el comportamiento de los individuos en torno a sus decisiones de inversión en educación, a fin de comprobar si éstas efectivamente relajan las restricciones crediticias.
+Asimismo, vale la pena señalar que mientras que en el caso de las zonas rurales y urbanas los costos principales son los asociados con la familia, en el caso del género estos, principalmente, se refieren a factores del medio ambiente. Lo que tiene implicaciones en el tipo de mecanismos que se tendrían que promover a fin de disminuir el efecto de las restricciones crediticias sobre la movilidad.
+
+39
+
+ANEXO
+
+Figura 3. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito rural.
+
+Bienestar económico de hijos
+
+0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediarur q10rur q25rur q50rur q75rur q90rur
+2
+
+Figura 4. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito urbano.
+
+Bienestar económico de hijos
+
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediaurb q10urb q25urb q50urb q75urb q90urb
+2
+
+40
+
+Figura 5. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijas.
+
+Bienestar econpomico de hijos
+
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediafem q10fem q25fem q50fem q75fem q90fem
+2
+
+Figura 6. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos.
+
+Bienestar económico de hijos
+
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediamal q10mal q25mal q50mal q75mal q90mal
+2
+
+41
+
+Figura 7. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijas del ámbito rural.
+
+Bienestar económico de hijos
+
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediafemr q10femr q25femr q50femr q75femr q90femr
+2
+
+Figura 8. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijas del ámbito urbano.
+
+Bienestar económico de hijos
+
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediafemu q10femu q25femu q50femu q75femu q90femu
+2
+
+42
+
+Figura 9. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito rural.
+
+Bienestar económico de hijos
+
+0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediamalr q10malr q25malr q50malr q75malr q90malr
+2
+
+Figura 10. Relación de bienestar económico, corregido por el ciclo de vida, entre padres e hijos del ámbito urbano.
+
+Bienestar económico de hijos
+
+0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+0 0
+
+0.5
+
+1
+
+1.5
+
+Bienestar económico de padres
+
+mediamalu q10malu q25malu q50malu q75malu q90malu
+2
+
+43
+BIBLIOGRAFÍA
+Andrade, E. et al. (2004). Do Borrowing Constraints Decrease Intergenerational Mobility? Evidence from Brazil. Sao Paulo, Brazil: Banco Nacional de Desenvolvimento Econômico e Social (BNDES).
+Azevedo, V. y Bouillon, C. P. (2009) Social Mobility in Latin America: A review of Existing Evidence. Documento de trabajo #689. Washington, D.C.: Banco Interamericano de Desarrollo.
+Baiyeghuni, L. J. S., Frase, G. C. G., y Darroch, M. A. G. (2010). Credit constraints and household welfare in the Eastern Cape Province, South Africa. African Journal of Agricultural Research, 5(16), 2243-2252.
+Banco Mundial (2006). Reporte Anual 2006. Igualdad y Desarrollo. Washington D.C. --- (2012). “Datos”. Gasto público en educación total (% del gasto del gobierno). Consultado el 1 de junio
+de 2012 en http://datos.bancomundial.org/indicador /SE.XPD.TOTL.GB.ZS Becker, Gary S. (1994). Human Capital Revisited. En Human Capital: A Theoretical and Empirical
+Analysis with Special Reference to Education (pp.15-28). Chicago, Illinois: The University of Chicago Press. Becker, Gary S. y Tomes, Nigel (1994). Human Capital and the Rise and Fall of Families. En Gary Becker (Ed.), Human Capital: A Theoretical and Empirical analysis with Special Reference to Education (pp. 257-298). Chicago, Illinois: The University of Chicago Press. Beckley, H. (2002). Capability as Opportunity: How Amartya Sen Revises Equal Opportunity. The Journal of Religious Ethics, 30 (1), 107-135. Black, Sandra E. y Devereux, Paul J. (2010). Recent developments in intergenerational mobility. Documento de trabajo No. 4866, Forschungsinstitut zur Zukunft der Arbeit (IZA), Alemania. Campos, M., Jarillo, B. y Santibañez, L. (2010).Gasto en Educación: la eficiencia del financiamiento educativo en México. Documento de trabajo, México Evalúa. Centro de Análisis de Políticas Públicas, Ciudad de México. Behrman, Jere R. y Taubman, Paul (1990). The Intergenerational Correlation Between Childrens Adult Earnings and their Parents Income: Results from the Michigan Panel Survey of Income Dynamics. Review of Income and Wealth, 36(2), 115-127. Behrman, Jere R., Birdsall, Nancy y Székely, Miguel (1999). Intergenerational Mobility in South America. Deeper Markets and Better Schools Make a Difference. Documento de trabajo, Brookings Institution Center on Social and Economic Dynamics/Inter-American Development Bank, Washington D.C. Cohen, E., Franco, R. y Villatoro, P. (2006). “México: El programa de Desarrollo Humano Oportunidades. En Cohen, Ernesto and Franco, Rolando (eds.). Transferencias con corresponsabilidad. Una Mirada Latinoamericana. Ciudad de México: SEDESOL, FLACSO. De hoyos, R., et. al. (2010). Educación y movilidad social en México. En J. S. Espinosa y F. Torche. (Eds.), Movilidad social en México. Población, desarrollo y crecimiento (pp. 135-164). Ciudad de México: Centro de Estudios Espinosa Yglesias. De la Torre et al (2006). Evaluación externa de impacto del Programa Oportunidades 2001-2006. Informe compilatorio. Ciudad de México: Instituto Nacional de Salud Pública. Diamond, J.W. y Tung, J. (Enero 2006). Lifecycle Wealth Holdings by Lifetime Income. The James A. Baker III Institute for Public Policy of Rice University. Documento presentado en la National Tax Associations 98th Annual Conference, Miami, Fl. Fields, G.S. (2005). The Many Facets of Economic Mobility. Documento de Trabajo, N.Y, Cornell University, Ithaca. --- (2009). Does Income Mobility Equaliza Longer-term Incomes? New Measures of an Old Concept. Articles and Chapters, paper 446. Consultado el 10 de marzo de 2012 en http://digitalcommons.ilr.cornell.edu/articles/446 --- (2010). But That Is Not What Economic Mobility Is. Documento de Trabajo, N.Y, Cornell University, Ithaca.
+
+44
+Ghosh, Parikshit, Mookherjee, Dilip y Ray, Debraj (2000). Credit Rationing in Developing Countries: An Overview of the Theory. En Dilip Mookherjee y Debraj Ray (Eds.), A Reader in Development Economics. Londres: Blackwell.
+Gilligan D, Harrower S, Quisumbing A (2005). How accurate are reports of credit constraints? Reconciling theory with respondents’ Claims in Bukidnon, Philippines. Washington D. C.: International Food Policy Research Institute.
+González de la Rocha, M. (2008). “La vida después de Oportunidades: impacto del programa a diez años de su creación.” En A diez años de intervención. Evaluación externa del Programa Oportunidades 2008 en zonas rurales (1997-2007). Tomo I. Efectos de Oportunidades en áreas rurales a diez años de intervención. México D.F.: INSP, 125-198.
+Grawe, N. (2001). Intergenerational Mobility in the US and Abroad: Quantile and Mean Regression Measures. Tesis doctoral. Chicago University.
+--- (2004). Reconsidering the Use of Nonlinearities in Intergenerational Earnings Mobility as a Test for Credit Constraints. The Journal of Human Resources, 39(3), 813-827.
+INEGI (2011). México en cifras. Información nacional por entidad federativa y municipios. Consultado el 10 de junio en http://www.inegi.org.mx/sistemas/mexicocifras/
+--- (2012). Producto “Regiones socioeconómicas de México”. Consultado el 10 de junio en http://www.inegi.org.mx/est/contenidos/espanol/sistemas/regsoc/default.asp?c=5688
+Jantti, M., et. al. (2006). American Exceptionalism in a New Light: A Comparison of Intergenerational Earnings Mobility in the Nordic Countries, the United Kingdom and the United States. Documento de discusión No. 1938. The Institute for the Study of Labor (IZA), Bonn.
+Kolenikov, S. y Angeles, G. (2004). The Use of Discrete Data in PCA: Theory, Simulations, and Applications to Socioeconomic Indices.Documento de trabajo, Carolina Population Center, UNC, North Carolina.
+Kreps, David M. (1990). A Course in Microeconomic Theory. Princeton, N. J.: Princeton University Press.
+Lakin, M. y Gasperini, L. (2004). La educación básica en las áreas rurales: situación, problemática y perspectivas. En D. Atchoarena y L. Gasperini (Eds.), Educación para el desarrollo rural: hacia nuevas respuestas de política (pp. 81-192). España: FAO y UNESCO.
+Levy, S. y Rodríguez, E. (2004). “El programa de Educación, Salud y Alimentación, PROGRESA”. En S. Levy (Comp.). Ensayos sobre el desarrollo económico y social de México. Ciudad de México: FCE, pp. 181-379.
+Marshall, W. (2007). Estructura de mercado, racionamiento crediticio a las Pymes, y a la banca pública. Economía Informa, 349, 93-104.
+Matarazzo, M. C. (2009). La igualdad entre mujeres y hombres en el ámbito educativo nacional. Análisis de las acciones implementadas por la Secretaría de Educación Pública en materia de igualdad entre Mujeres y Hombres. Segundo Informe especial 2008 sobre el derecho de igualdad entre mujeres y hombres. Comisión Nacional de Derechos Humanos. México.
+Mazumder, Bhashkar (2005). Fortunate sons: New estimates of intergenerational mobility in the U.S. using social security earnings data. Review of Economics and Statistics, 87, 235-255.
+OCDE (2010). Economic Policy Reforms Going for Growth. París: Francia. OECD. OIT (2007). Trabajo infantil: causa y efecto de la perpetuación de la pobreza. Programa Internacional
+para la Erradicación del Trabajo Infantil (IPEC). Ginebra, Suiza. Olaniyan, D. A. y Okemakinde, T. (2008). Human Capital Theory: Implications for Educational
+Development. European Journal of Scientific Research, 24(2), 157-162. Organización Internacional del Trabajo (2007). Trabajo infantil: causa y efecto de la perpetuación de la
+pobreza. Programa Internacional para la Erradicación del Trabajo Infantil (IPEC). Ginebra, Suiza. Patrinos, H. A. (2000). Market forces in education. European Journal of Education, 35(1), 61-80. Programa de Naciones Unidas para el Desarrollo, PNUD (2010). Informe Regional sobre Desarrollo
+Humano para América Latina y el Caribe 2010. Actuar sobre el futuro: romper la transmisión intergeneracional de la desigualdad. Costa Rica: PNUD.
+
+45
+Psacharopoulos, George y Patrinos, Harry A. (2004). Human Capital and Rates of Return. En Geraint Johnes y Jill Johnes (Eds.), International Handbook on the Economics of Education, (pp. 1-57). Massachusetts: Edward Elgar Publishing, Inc.
+Rao, V. y Walton, M. (2004) Culture and public action. Washington, D.C.: The International Bank for Reconstruction and Development/The World Bank.
+Ray, D. (1998). Development Economics. Princeton, N.J.: Princeton University Press. Schultz, Theodore W. (1961). Investment in Human Capital. The American Economic Review, 51(1), 1-
+17. SEDESOL (2010a). Oportunidades, un programa de resultados. SEDESOL-Gobierno Federal. México. Sen, A. (1999). Development as Freedom. Nueva York: Alfred A. Knopf. Solon, G. (1992). Intergenerational Income Mobility in the United States. The American Economic
+Review, 82(3), 393-408. Stiglitz, Joseph E. y Weiss Andrew (1981). Credit Rationing in Markets with Imperfect Information. The
+American Economic Review, 71 (3), 393-410. Torche, F. (2010). Cambio y persistencia de la movilidad intergeneracional en México. En J. S. Espinosa
+y F. Torche. (Eds.), Movilidad social en México. Población, desarrollo y crecimiento (pp. 71134). Ciudad de México: Centro de Estudios Espinosa Yglesias. Vyas, S. y Kumaranayake, L. (2006). Constructing socio-economic status índices: how to use principal components analysis. Health, Policy and Planning, 21(6), 459-468. Van de Gaer, D., Schokkaert, E. y Martínez, M. (2001). Three Meanings of Intergenerational Mobility. Economica, New Series, 68 (272), 519-537.
+
+

@@ -1,0 +1,2408 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+MONETARY POLICY AND INFORMALITY: HOW ARE MONETARY POLICY SHOCKS
+TRANSMITTED IN THE PRESENCE OF
+INFORMAL LABOR MARKETS?
+FRANCISCO JAVIER MARTÍNEZ HERNÁNDEZ
+PROMOCIÓN 2013-2015
+ASESOR:
+STEPHEN MCKNIGHT
+JUNIO 2015
+
+Abstract
+Informality and its implications for the macroeconomy have received little attention from the literature. Although there is a growing consensus on the relevance of informality for explaining business cycles, research is still needed to address several key issues. This thesis aims to understand the mechanisms behind macroeconomic adjustment in a model with informality calibrated for Mexico in the presence of monetary policy shocks. We develop a closed economy New Keynesian model which closely follows Castillo and Montoro (2012) and analyze the dynamics produced by an interest rate shock and a productivity shock. Our ﬁndings suggests that with monetary policy shocks formal employment is countercyclical whereas informal employment is procyclical and with productivity shocks formal employment is procyclical whereas informal employment is countercyclical.
+i
+
+Contents
+
+1 Introduction
+
+1
+
+2 Literature Review
+
+7
+
+3 A Sticky Price Model with Informal Labor
+
+12
+
+3.1 Households . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+3.2 Wholesale (Intermediate) goods producing ﬁrms . . . . . . . . . . . . . . . . . 14
+
+3.2.1 Wage Determination . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+3.3 Retail Firms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+3.3.1 Price-setting behavior of retail ﬁrms . . . . . . . . . . . . . . . . . . . 19
+
+3.3.2 Retail marginal cost . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+3.4 Monetary Policy Rules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+3.5 Market Clearing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+3.6 Equilibrium . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+3.7 Log-linearized version of the model . . . . . . . . . . . . . . . . . . . . . . . 24
+
+4 Calibration
+
+30
+
+5 Results - impulse response analysis
+
+33
+
+5.1 Interest rate shocks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+
+5.1.1 Baseline Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+
+5.1.2 Informality Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+
+5.2 Productivity shock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+5.2.1 Baseline Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+5.2.2 Informality Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+6 Conclusions
+
+43
+
+7 Appendix
+
+46
+
+7.1 Interest rate shock. Informality model . . . . . . . . . . . . . . . . . . . . . 46
+
+8 Bibliography
+
+47
+
+List of Tables
+
+49
+
+List of Figures
+
+50
+
+1 Introduction
+A key difference that is observed between the economies of developing and developed countries relates to the size and relevance of the informal economy. For example, estimates suggest that for countries in the top quartile of per capita income informality accounts for around 17.3 percent of total economic activity, whereas for countries in the bottom quartile informality accounts for 35.4 percent of total economic activity (La Porta and Shleifer, 2008). In Latin America, the average share of informal employment relative to total non-agricultural employment is estimated by the International Labor Organization at 51%, with countries varying from 40% in Uruguay to 75% in Bolivia. In Mexico, the informal economy is estimated by INEGI to account for a quarter of GDP, with the share of informal employment close to 60%. However, this high rate of informal employment exists in a context with a low rate of open unemployment suggesting that after a formal job loss the alternative of informal employment is the next best alternative. This thesis aims to understand the mechanisms behind macroeconomic adjustment in a model with informality calibrated for Mexico in the presence of monetary policy shocks.
+Recently, a small literature has emerged aiming to understand the business cycle implications of informality. Ferna´ndez and Meza (2015) develop a RBC small open-economy model with formal and informal labor to analyze the effects of productivity shocks. They ﬁnd that the informal sector has a strong countercyclicality thus implying a low pass-through level of shocks across sectors. Their model generates formal labor procyclicality higher than that of aggregate labor matching the data. Ferna´ndez and Meza (2015) stress that if informal activity was appropriately measured, the volatility of key macroeconomic variables would be lower. Restrepo-Echavarria (2011) develops a RBC small open-economy model with formal and informal sector, the latter not being measured. A key ﬁnding is that countries which have higher cyclical volatility of consumption relative to output have large informal sectors, and that substitution between formal and informal goods is higher than usually accounted for. Other recent studies (e.g.,
+1
+
+Christoffel and Linzert (2005), Castillo and Montoro (2012), Sembeta (2013)) have looked at the transmission of demand and productivity in a New-Keynesian framework with informality. Christoffel and Linzert introduce search and matching frictions and real wage rigidities in an otherwise New Keynesian DSGE model and analyze two types of bargaining (Nash and right to manage) ﬁnding that real wage rigidities and right to manage bargaining inﬂuences marginal costs to adjust slowly obtaining persistence inﬂation dynamics. Castillo and Montoro (2012) develop their model upon the model of Christoffel and Linzert (2005) but use the frictions in the labor market developed by Blanchard and Gali (2010). They analyze a productivity shock and an aggregate demand shock with a key ﬁnding being the buffer effect of informal labor. Castillo and Montoro (2012) argue that due to its lower hiring cost with respect to formal labor, in periods of high demand wholesale ﬁrms increase informal employment without incurring in signiﬁcant increases in marginal costs; however, a key assumption of their framework is the small difference on productivity between the two types of labor. Sembeta (2013) develops a NK small open economy allowing for consumption of tradable and non tradable goods. Tradable domestic goods can be produced either by a formal ﬁrm or by an informal ﬁrm. Nontradable goods are produced entirely by informal ﬁrms. To the best of our knowledge, it is the only research using the frictions proposed by Blanchard and Gali (2010), modeling informal employment, production and consumption and taking into account monetary policy. Sembeta (2013) calibrates the model according to a sub-saharan economy ﬁnding that in low income countries, the existence of an informal sector does not serve as a stabilizing force in the economy after the occurrence of shocks suggesting that there is a higher degree of volatility due to informal activities. However, little attention has been given to the role informality plays in the transmission of monetary policy shocks. The thesis makes a ﬁrst attempt at ﬁlling this gap.
+The modeling framework that we employ is based upon Castillo and Montoro (2012). The model extends a standard closed-economy New Keynesian model with search frictions to allow for an informal labor market.1 Households are assumed to be inﬁnitely-lived and supply labor to both the formal and informal labor markets. The economy is assumed to be comprised of two different goods sectors: a wholesale sector where ﬁrms produce intermediate-goods and
+1See Trigari (2006) for a NK model which integrates labor market search and matching frictions to analyze how these frictions change real marginal costs. Christoffel y Linzert (2005) analyze how real wage rigidities can generate endogenous inﬂation persistence in the NK model with search frictions. Other examples are Walsh (2003) and Thomas (2008).
+2
+
+a retail sector where ﬁrms produce a ﬁnal good. Wholesale ﬁrms produce output using labor as its only production factor offering formal and informal contracts. To hire a worker in the wholesale sector, ﬁrms have to pay a hiring cost which is assumed to be higher for formal workers. Formal workers are assumed to be more productive than informal workers and both types of workers engage in a Nash Bargaining process to determine their wages. Firms in the retail sector produce differentiated ﬁnal goods using wholesale goods as inputs. Each ﬁrm in the retail sector sets its price optimally in a staggered price fashion as in Calvo (1983). The central bank conducts monetary policy by using a Taylor-type rule that responds to forward-looking inﬂation and output.
+It is important to emphasis that we make a number of modiﬁcations to the framework of Castillo and Montoro (2012) in order to make the model more appropriate for the case of Mexico. First, in our set-up, workers do not receive unemployment beneﬁts from household production. In the original formulation by Castillo and Montoro (2012) , workers receive W u from household production. With unemployment beneﬁts, the share of the surplus of the job that goes to the worker is lower because of a higher value of being unemployed. However, unemployment insurance beneﬁts in Mexico are yet to be a reality as there are no full coverage in the country but small schemes particularly in Mexico City. Thus, we consider that it is more realistic to assume that the unemployed do not receive any income. Second, the hiring cost for hiring informal workers has been set to zero. Castillo and Montoro (2012) assume a non-zero hiring cost for informal labor that exerts pressure on informal hiring, increasing the rationing of workers, particularly from informal jobs. In the original framework by Castillo and Montoro (2012), the retail marginal cost is determined by the relative difference of cost between hiring a formal worker relative to an informal one. A ﬁrm may be in compliance with most tax and labor laws, but prefer working with self-employed workers rather than salaried employees to avoid complying with – and paying for – social security. As self-employment has been considered a good proxy for informality (Ferna´ndez and Mesa, 2015), we consider appropriate to set the hiring cost of an informal worker to be zero. Third, monetary policy in our model is given by a forward-looking Taylor rule. Castillo and Montoro (2012) consider a current-looking Taylor rule. Empirical evidence suggests that central banks set the nominal interest rate in a forwardlooking manner (see, for example, Clarida et al. 1998, 2000; Orphanides 2001,2004; Mihailov 2006).
+3
+
+While Castillo and Montoro (2012) investigate the role of informality under aggregate demand and productivity shocks, this thesis aims to understand how the macroeconomy adjusts to monetary policy shocks in the presence of an informal labor market. To uncover the adjustment mechanism we consider two versions of the model, a formal only version and the model with informality. We also look at productivity shocks to show that the adjustment mechanism behaves differently under monetary policy shocks. Our results our also shown to be robust to a current-looking speciﬁcation of the Taylor rule.
+After an interest rate shock, we ﬁnd under the benchmark formal model that unemployment in the economy increases due to an increase in formal wages. Wholesale ﬁrms pay this higher wage, and therefore choose to reduce employment. With regard to the market tightness, which is a measure of the jobs created relative to the unemployed workers, that is, the probability of being hired at time t, an increase in unemployment leads to a decrease in the probability of ﬁnding a job. Thus, the effect of the increase in the interest rate in job ﬁnding is that it lowers this probability, due to the effects on the behavior of the ﬁrms. As there are only formal workers with a higher wage, wholesale marginal cost increases, thus increasing the retail marginal cost. Taking this dynamics into account, retail ﬁrms decrease its production. With lower employment and lower wages, households decrease consumption. Inﬂation, in turn, decreases due to the tightening in monetary policy and the household’s decision to consume less.
+In the informality model, the dynamic response of the economy differs signiﬁcantly to monetary policy shocks. Considering that in equilibrium wholesale ﬁrms hire both types of labor such that the marginal cost for both types of production technologies remains the same there are different responses for each type of labor, the adjustment mechanism lays on the ﬂexibility of the informal labor, that is, no hiring costs for informal workers. The increase in formal employment is not enough to offset the decrease in informal employment. Wholesale ﬁrms adjusts its formal employment to maintain equilibrium. Formal labor is increased after the shock because of the lower wage and its higher productivity compared to the informal workers. Thus, overall employment is lower in the economy. Wages for both type of labor decrease. As labor is the only input for both technologies, production with informal technology decreases whilst the production with formal technology increases. Higher unemployment in the econ-
+4
+
+omy relates to a lower probability of ﬁnding a job in our model, and the results we obtain are consistent with it. Both measures of market tightness (i.e. formal and informal) decrease. Inﬂation decreases due to the tightening in monetary policy and lower retail marginal costs. Upon comparison, inﬂation decreases more in the informality model than in the benchmark model. We argue this occurs because of the response of formal and informal labor and the increase in formal employment as opposed to the decrease in formal employment in the benchmark model.
+With the possibility of informal contracts, wholesale ﬁrms can adjusts its labor employment and marginal costs by adjusting informal labor hired. This occurs because informal labor does not have hiring costs. After a shock, either productivity or monetary, wholesale ﬁrms have the ﬂexibility of dismissing informal labor easier and adjust the optimality condition, that is, equal marginal cost for both type of technologies, without incurring in signiﬁcant costs. Considering the relative difference in productivity between the two types of labor, a decrease in informal employment does not affect wholesale production as much a decrease in formal employment. Our results show that after both shocks ﬁrms ﬁnd proﬁtable to increase formal employment. However, the behavior is different for each type of shock. With a monetary policy shock, formal employment is countercyclical whereas informal employment is procyclical, and with a productivity shock formal employment is procyclical whereas informal employment is countercyclical. In addition, because of the adjustment mechanism in employment, after a productivity shock consumption increases more than after the monetary policy shock because formal wage decreases more in the context of a monetary policy shock. Informal labor decreases more with interest rate shocks; we consider that the effect of the increase in productivity allows informal labor to be a proﬁtable employment option to wholesale ﬁrms. This result occurs because both types of technologies in the wholesale sector are subject to the same productivity. An interesting question will be to have imperfect pass-through of productivity shocks between sectors as in Ferna´ndez and Mesa (2015). Clearly, unemployment is higher when the economy is shocked by productivity. This occurs because hiring costs are a function of productivity, thus affecting directly the employment and wage setting decisions by wholesale ﬁrms and workers. Retail output increases after the productivity shock more than after the interest rate shock. Comparing the response of inﬂation after the two shocks, we see that is lower after the productivity shock than after the monetary policy shock. Even with tight monetary policy, retail marginal cost decrease more by the productivity shock, and it is enough to take inﬂation down more than
+5
+
+the interest rate increase can. The adjustment mechanism under productivity shocks differs because of the substitution of informal labor based on the lower productivity. Partial substitution of informal labor generates a tighter labor market for both types of labor when allowing for informality. Under the benchmark model, unemployment less than in the informality model after the productivity shock. In addition, formal employment is procyclical whereas informal employment is countercyclical because of the reduction of informal workers employed but the increase in retail output. The substitution of informal labor by increasing formal employment occurs of the effect of productivity on hiring costs. With the productivity shock, wholesale ﬁrms ﬁnd proﬁtable to increase formal labor due to its higher productivity. However, two different effects occur while the ﬁrm adjusts its employment. Formal and informal wages decrease and at the same time formal hiring cost increase (informal hiring costs is calibrated at zero), Thus in this context ﬁrms increase its formal employment without affecting the condition for equal marginal costs. The thesis is organized as follows: Section 2 discusses the small literature related to this area of research. The model, including the log-linearized version, is developed in Section 3. Section 4 discusses the calibration employed and motivates the choice of values for the mexican economy, while Section 5 presents the results obtained from the impulse response analysis. Finally, Section 6 brieﬂy concludes.
+6
+
+2 Literature Review
+The dualistic vision of labor markets have been studied since the seminal work of Lewis (1954) of dual economies. So far there are two different views, one which considers informality as an option to avoid tax and law enforcement on regulatory burden (Mitra, 2003, Batini et al., 2011, Leal-Ordon˜ez, 2014), considering that workers have informal jobs because they are being rationed out of the formal sector as proposed by Harris and Todaro (1970). Firms and workers are assumed to comply with regulations in the formal sector but not in the informal sector. Wages in the formal sector are set exogenously and above the competitive equilibrium level. The labor market is then segmented, with only some workers obtaining jobs in the formal sector while others are queuing for formal jobs. The second view considers informality as a legitimate option in which workers value the beneﬁts of an informal contract versus a formal one electing the informal with full conscience and not because of the rationing they are being subject to (Maloney, 2004, Balan et al., 1973).
+Informality and its implications for the economy have received little attention, however, new literature that incorporates informality into DSGE models is increasing. Speciﬁcally, RBC modeling is paying increasing attention to the effects of informality into business cycles. Ferna´ndez and Meza (2015) develop a RBC small open economy model with both formal and informal labor markets. They analyze several empirical facts, particularly the large share of informal employment and its cyclical properties, and argue that these facts help to explain the labor market dynamics. Ferna´ndez and Meza (2015) develop a model with formal and informal labor markets; households derive utility from consumption and leisure and decide how to allocate labor between each market. Consumption is derived from a bundle of formal and informal goods which are highly substitutable. Moreover, households accumulate two different capital stocks, with no adjustment costs, that are market speciﬁc and can trade a one-period non-contingent bonds in foreign capital markets. Goods in the formal sector are produced by ﬁrms and in the
+7
+
+informal sector people are self-employed. Formal ﬁrms pay taxes and have a higher productivity relative to the informal sector that does not pay taxes. Government taxes wages, capital rents and the hiring of labor to ﬁnance its purchases of formal goods. Ferna´ndez and Meza (2015) consider a labor-augmenting shock and an imperfect pass-through across the sectors to analyze the dynamics of their model. They ﬁnd that their model matches the variability of labor, output and consumption. The imperfect propagation of the shock through the sectors is a strong driving force behind their results. In addition, the model capture the moderate procyclicality and volatility of total employment.
+Restrepo-Echavarr´ıa (2011) considers a RBC small open economy where a representative agent decide whether to work formally and paid taxes or informally evading taxes but subject to the risk of a tax audit and consequent punishment. The agents’ consumption is a bundle of formal and informal goods and invest in international capital markets. Government’s revenue is obtained from labor taxes and uses it to increase law enforcement. The formal sector is perfectly competitive maximizing proﬁts by choosing capital and labor. Households decide how time they devote to formal and informal activites. After they decide the amount of time working in the formal sector, the rest is devoted to the informal sector assuming free mobility between sectors. In this model, the informal sector is the one shocked by productivity. Restrepo-Echavarr´ıa (2011) argues that having a relative productivity shock in the informal sector is analogous to having both the formal and the informal sector face a productivity shock that is positively but not perfectly correlated due to ﬁnancial frictions faced by the informal sector. RestrepoEchavarr´ıa (2011) states that formal and informal goods are close substitutes, therefore the elasticity of substitution between them should be high. An important result is that countries with a large informal sector have a higher cyclical volatility of consumption relative to output. Restrepo-Echavarr´ıa (2011) stresses that if aggregate data accounted for informality, consumption would not be more volatile than output.
+There is a small literature that is interested in understanding the implications for monetary policy under informality. Christoffel and Linzert (2005) use a New Keynesian model with labor market frictions and wage rigidities to analyze the effect of a monetary policy shock and how this frictions affects the transmission process of monetary policy. In their set-up households derive utility from consumption and leisure. There are two goods in the economy wholesale
+8
+
+and retail. Households consume retail goods and retail ﬁrms use wholesale good as the input for retail production. The wholesale ﬁrms employ labor as the only input to production. Search frictions are introduced as in Pissarides (2000) and wages are negotiated by the ﬁrms and workers in two possible ways: Nash bargaining process and right to manage bargaining. Retail ﬁrms buy wholesale goods at marginal cost, transform them into differentiated goods and sell them with a mark-up over marginal costs. In addition. retail ﬁrms are subject to price stickiness. Following the empirical evidence on Europe, Christoffel and Linzert (2005) introduce real wage rigidity and analyze the outcome under the Nash bargaining and under right to manage bargaining. A key result is that under right to manage bargaining and assuming a high degree of wage rigidity causes marginal cost to adjust slowly generating more persistence inﬂation dynamics. Under Nash bargaining , in which marginal costs are determined by hours worked, wage rigidity does not lead to higher inﬂation persistence.
+Blanchard and Gali (2010) propose a model in which they allow frictions in the labor market similar to those in the Diamond-Mortensen-Pissarides (DMP) framework. The DMP framework has hiring costs, such as the job searching of a worker and its matching with the job being offered by a ﬁrm. With this frictions, models provide better similarities with the data regarding the unemployment dynamics. However, Blanchard and Gali (2010) use a formulation of their own in order to have a New-Keynesian Model with frictions, to analyze the effects of monetary policy. Addressing the similarities between the DMP tradition and its work, the authors state that
+“vacancies are assumed to be ﬁlled immediately by paying the hiring cost, which is a function of labor market tightness. By contrast, in the DMP model, the hiring cost is uncertain, with its expected value corresponding to the (per period) cost of posting a vacancy times the expected time to ﬁll it. This expected time is an increasing function of the ratio of vacancies to unemployment, which can be expressed in turn as a function of labor market tightness”. Thus, while there is a different formulation of the frictions in the labor market, both approaches share the characteristic that the hiring cost is an increasing function of the labor market tightness.
+Castillo and Montoro (2012) and Sembeta (2013) use the New Keynesian framework with friction as in Blanchard and Gali (2010). Castillo and Montoro (2012) follow the production
+9
+
+structure of Christoffel and Linzert (2005) in which there are two sectors wholesale and retail1 and the consumption of the retail good by the households, however they do not introduce real wage rigidities. In Castillo and Montoro (2012), ﬁrms in the wholesale sector balance the higher productivity and higher costs of formal workers with the lower costs and productivity of the informal workers. Thus, wholesale marginal costs are a function of formal and informal labor in the economy. The frictions in the model are the hiring costs that wholesale ﬁrms have to pay to hire either type of labor. They use an aggregate demand shock and a productivity shock, both lasting only one period, to analyze the effects of informality on the economy. Their results states that in periods of high demand, informal sector, and by consequence informal output, expands more than the formal sector because of the lower costs associated with the informal sector even though the formal sector is more productive. They also found that at the margin, wholesale ﬁrms can substitute formal labor with informal labor without dramatically changing the wholesale marginal cost; in this case, inﬂation dynamics does not depend simply on unemployment but in the ﬂows of workers between formal and informal jobs. Sembeta (2013) uses a multi-sector small open economy with dual labor markets to analyze the effects of both external and domestic shocks. In Sembeta (2013) households derive utility from consumption and leisure, and consumption is a bundle of both tradable and non-tradable goods. Tradable goods are domestically or foreign produced with different types of labor. The economy features statecontingent assets (i.e. complete asset markets) trade by households. Tradable goods production is modeled by a two-step production process but as Blanchard and Gali (2010), labor frictions are introduced in the intermediate ﬁrm while price stickiness is modeled in the ﬁnal good. Intermediate goods can be produced either by a formal ﬁrm or an informal ﬁrm which has a lower productivity compared to its formal counterpart. As opposed to Castillo and Montoro (2012) ﬁrms cannot mix the type of contractual arraignments. In Sembeta (2013) intermediate ﬁrms are ither formal or informal and the wages have a different setting process. Formal wages are negotiated using a Nash bargaining process whereas informal wages are determined by the common competitive mechanisms as there are no hiring costs for informal ﬁrms. In addition, the only ﬁrms that are constantly generating vacancies are the formal ﬁrms, so exiting the unemployment depends on the vacancies created by the formal sector and the unoccupied jobs in the informal sector. Final tradable goods are produced out of formal and informal intermediate
+1Krause and Lubik (2003) embed the two sector structure into a single integrated ﬁrm employing labor to produce intermediate and ﬁnal good.
+10
+
+goods using CES technology. Final tradable goods, both domestic and foreign, are modeled with sticky prices, thus inﬂation in the economy is a combination of domestic and imported inﬂation. A central result of Sembeta (2013) argues that the view of an informal sector and its role as a stabilizing force of the economy in the event of shocks is not supported when informality is not generated by a mix of contractual arraignments by a ﬁrm rather than two different sectors.
+11
+
+3 A Sticky Price Model
+with Informal Labor
+This section discusses the modeling framework used in the thesis, which closely follows the model of Castillo and Montoro (2012). The economy is assumed to be cashless, where there exists inﬁnitely-lived households, a continuum of retail (or ﬁnal) goods producing ﬁrms, wholesale (or intermediate) goods producing ﬁrms, and a central bank. Wholesale ﬁrms sell homogeneous goods to retail ﬁrms who use these intermediate products to create a differentiated ﬁnal good, which is sold to households for consumption purposes. It is assumed that retail ﬁrms are monopolisitically competitive and set prices in a staggered fashion according to Calvo (1983). Wholesale ﬁrms are perfectively competitive and hire labor to produce intermediate goods where two different types of labor, formal and informal, are available. Informal labor is assumed to be cheaper and less productive than its formal counterpart, and wholesale ﬁrms must pay a hiring cost to recruit both formal and informal workers. Both formal and informal wages are determined by Nash bargaining. Monetary policy is governed by a forward-looking Taylor-type rule, where the nominal interest rate reacts to expected future inﬂation and output. The economy faces two types of shocks: a productivity shock in the wholesale sector and a monetary policy (i.e., interest rate) shock.
+
+3.1 Households
+
+The economy is populated by inﬁnitely-lived households which choose consumption Ct to maximize utility. Let the period utility function be given by:
+
+Utj(C, L) =
+
+(Ctj
+
+)1−
+
+1 σ
+
+1
+
+−
+
+1 σ
+
+− η (Ltj)1+ϕ 1+ϕ
+
+(3.1)
+
+12
+
+where σ is intertemporal elasticity of substitution in consumption, ϕ is the inverse of the Frisch elasticity of labor supply and η is a preference parameter representing the marginal disutility from working. It is assumed that the household can supply labor to both the formal LF and informal LI sectors:
+
+Lt = LF,t + LI,t
+
+(3.2)
+
+The household maximizes utility subject to the following period budget constraint (expressed in real terms):
+
+Ctj
+
++
+
+bjt
+
+=
+
+wF,tLFj ,t
+
++
+
+wI ,t LjI ,t
+
++
+
+Πjt
+
++
+
+Rt−1
+
+bjt−1
+
+Pt−1 Pt
+
+(3.3)
+
+where Pt is the price index of retail goods in time t, wF,t = WF,t/Pt is the real wage for formal workers, wI,t = (WI,t/Pt) is the real wage for informal workers, and Ljk,t is the fraction of household labor supply for sector k, where k = F, I (F = formal, I = informal). The household carries bt−1 holdings of real bonds into period t, which pay the nominal interest rate Rt−1 and the household receives real proﬁts Π from the ownership of retail ﬁrms.
+
+Consequently, the household maximization problem can be expressed as:
+
+∞
+
+max E0 βt
+
+Ctj ,Btj
+
+t=0
+
+(Ctj
+
+)1−
+
+1 σ
+
+1
+
+−
+
+1 σ
+
+− η (LFj ,t + LIj,t)1+ϕ 1+ϕ
+
+−τt
+
+Ctj
+
++ btj
+
+− wF,tLFj ,t
+
+− wI,tLIj,t
+
+−
+
+Πjt Pt
+
+−
+
+Rt−1btj−1
+
+Pt−1 Pt
+
+(3.4)
+
+where τt denotes the Lagrange multiplier. The ﬁrst order conditions with respect to consump-
+
+tion and bonds are:
+
+β
+
+t
+
+(Ctj
+
+)−
+
+1 σ
+
+− τt
+
+=0
+
+⇒
+
+β
+
+t
+
+(Ctj
+
+)−
+
+1 σ
+
+= τt
+
+−τt + Et
+
+τt+1Rt
+
+Pt Pt+1
+
+= 0 ⇒ τt = Et
+
+τt+1
+
+Rt
+
+Pt Pt+1
+
+Forwarding equation (3.4a) by one period:
+
+(3.4a) (3.4b)
+
+β
+
+t+1
+
+(Ctj+1)−
+
+1 σ
+
+−
+
+τt+1
+
+=
+
+0
+
+⇒
+
+τt+1
+
+=
+
+β
+
+t+1
+
+(Ctj+1)−
+
+1 σ
+
+and substituting the above into equation (3.4b) and rearranging yields the standard Euler equa-
+
+tion:
+
+(Ctj
+
+)−
+
+1 σ
+
+=
+
+Et
+
+β
+
+(Ctj+1
+
+)−
+
+1 σ
+
+Rt
+
+Pt Pt+1
+
+(3.5)
+
+13
+
+The Euler equation equates the cost of delaying consumption with its expected marginal beneﬁt.
+
+3.2 Wholesale (Intermediate) goods producing ﬁrms
+It is assumed that the economy consists of a large number of intermediate ﬁrms producing wholesale goods, i ∈ [0, 1], who operate under perfect competition. Wholesale ﬁrm i produces output using two types of linear production technology: YF,t and informal YI,t where it is assumed that there is a bias towards the formal sector represented by the parameter γ1 ∈ [0, 0.5):
+
+Ytw(i) = (1 − γ1)YF,t(i) + (γ1)YI,t(i)
+
+(3.6)
+
+The production functions for each sector are given by
+
+YF,t(i) = ZtLF,t(i) and YI,t(i) = ωZtLI,t(i)
+
+(3.7)
+
+where Zt is the level of productivity following the law of motion: lnZt = ρzZt−1 + z,t and
+
+ρz ∈ (0, 1) and
+
+Z,t as an i.i.d error term distributed as
+
+Z,t
+
+∼
+
+N (0, σ2 ). Z
+
+In addition, the
+
+parameter ω < 1 captures the lower productivity of informal sector.
+
+Total employment in the economy is deﬁned as:
+
+Lt = LF,t + LI,t
+
+Let the evolution of employment be represented as:
+
+Lt = (1 − δ)Lt−1 + At and 0 < δ < 1 is the fraction of workers that lose their job and At is the fraction of unemployed workers that get a job. Each type of labor has its own motion given by:
+LF,t = (1 − δ)LF,t−1 + AF,t
+LI,t = (1 − δ)LI,t−1 + AI,t where AF,t denotes newly created formal jobs and AI,t is newly created informal jobs. For simplicity we assume that the job destruction rate δ is the same for both types of labor.
+
+14
+
+Unemployment can be deﬁned at the beginning of the period: Ut = 1 − (1 − δ)(LF,t−1 + LI,t−1)
+with the following conditions LF,t ≥ 0, LI,t ≥ 0, WF,t ≥ WI,t.
+
+(3.8)
+
+Wholesale ﬁrms are required to post vacancies, screen possible employees, ﬁll-out government requirements, etc. Therefore, in line with Blanchard and Gali (2010), we introduce the following cost of hiring formal labor GF,tAF,t(j) and informal labor GI,tAI,t(j), which are expressed in terms of the CES bundle of retail goods. GF,t(GI,t) is the hiring cost per worker and is independent of the vacancies created AF,t(j)(AI,t(j)) and is taken as given by the individual ﬁrm. Formally these costs can be expressed as1:
+
+GF,t = ZtΘF XFα,Ft
+
+and
+
+GI,t = ZtΘI XIα,It
+
+(3.9)
+
+where Zt is the productivity level, ΘF and ΘI are non-negative constants with ΘF > ΘI , αF ≥ 0 and αI ≥ 0 are parameters with αF > αI. XF,t, XI,t ∈ [0, 1] represent the labor market tightness for formal and informal labor. While wholesale ﬁrms face a cost to hiring both formal and informal labor, in our parametrization we will assume that ΘI = 0 so that there are no costs associated with hiring informal labor.
+
+Labor market tightness is deﬁned to be the ratio of aggregate hiring, either formal AF,t or informal AI,t, to unemployment Ut given by:
+
+XF,t
+
+=
+
+AF,t Ut
+
+and
+
+XI,t
+
+=
+
+AI,t Ut
+
+(3.10)
+
+We assume as Castillo and Montoro (2012) that the labor market tightness is different for each kind of labor and that the overall market tightness Xt can be expressed as: Xt = XF,t + XI,t. It is worth noting that the hiring cost is increasing in the labor market tightness. This labor market tightness can be understood as the probability of getting hired as it is the ratio between
+1Blanchard and Gali (2010, p. 8) explain that the motivation for the presence of Zt in the expressions for GF,t and GI,t is to avoid effects of productivity shocks on the cost of hiring relative to the cost of producing.
+15
+
+the vacancies ﬁlled (people hired) to all the people wanting to get a job.
+
+Wholesale ﬁrms maximize their expected discounted proﬁts by selecting sequences for the formal labor LF,t, informal labor LI,t given by:
+
+∞
+
+ET
+
+Ωt,t+j Πt+j (i)
+
+j=0
+
+(3.11)
+
+where:
+
+Ωt,t+j
+
+=
+
+βj u (ct+j) u (ct)
+
+is
+
+the
+
+discount
+
+factor
+
+between
+
+periods
+
+t
+
+and
+
+t
+
++
+
+i.
+
+Πt+j(i) is the proﬁt function of the ﬁrm in real terms, given by:
+
+Πt+j (i)
+
+=
+
+Ptw Pt
+
+[(1 − γ1)ZtLF,t
+
++
+
+γ1ωZtLI,t]
+
+−
+
+[wF,tLF,t
+
++
+
+GF,tAF,t
+
++
+
+wI,tLI,t
+
++ GI,tAI,t]
+
+(3.12)
+
+where Ptw denotes the price of the wholesale goods, Pt is the price of retail goods.
+
+The corresponding ﬁrst order conditions with respect to LF and LI yields the formal and informal labor demand functions:
+
+wF,t
+
+=
+
+Ptw (1 Pt
+
+−
+
+γ1)Zt
+
+−
+
+GF,t
+
++
+
+(1
+
+−
+
+δ)βEt
+
+u (ct+1 u (ct)
+
+)
+
+GF,t+1
+
+(3.13)
+
+and
+
+wI,t
+
+=
+
+Ptw Pt
+
+γ1ωZt
+
+−
+
+GI,t
+
++
+
+(1
+
+−
+
+δ)βEt
+
+u (ct+1 u (ct)
+
+)
+
+GI
+
+,t+1
+
+(3.14)
+
+All wholesale ﬁrms will hire each type of labor up to the point in which the marginal productivity equals the cost of an additional worker, wage and hiring cost, plus the discounted expected saving on the ﬁlled vacancy. The difference between this ﬁrst order condition and the one obtained under a perfect competitive environment is due to hiring costs.
+
+From cost minimization the marginal cost of wholesale ﬁrms mcwt can be expressed as:
+
+Ptw Pt
+
+=
+
+mcwt
+
+(3.15)
+
+16
+
+with
+
+mctw
+
+=
+
+wF,t
+
++
+
+GF,t
+
+−
+
+(1 − δ)βEt
+
+u (ct+1) u (ct)
+
+GF,t+1
+
+(1 − γ1)Zt
+
+wI,t + GI,t − (1 − δ)βEt =
+γ1ωZt
+
+u (ct+1) u (ct)
+
+GI ,t+1
+
+(3.16)
+
+The intuition behind equation (3.16) is as follows. It shows that in equilibrium ﬁrms hire both types of labor such that the marginal cost for both types of production technologies remains the same. Castillo and Montoro (2012) argue that in equilibrium labor moves from one sector into the other or in and out of unemployment in a way that makes real marginal costs for each type of labor equal to each other.
+
+3.2.1 Wage Determination
+
+Following Castillo and Montoro (2012) households and ﬁrms set wages through a Nash Bar-
+
+gaining process. The value functions of being employed under a formal and informal contract,
+
+VF,t and VI,t, are respectively:
+
+VF,t
+
+=
+
+wF,t
+
+−
+
+η
+
+[Lt]ϕ
+
+1
+Ctσ
+
++Et [Ωt,t+1 {(1 − δ + δXF,t+1)VF,t+1 + δXI,t+1VI,t+1 + δ(1 − Xt+1)Vu,t+1}]
+
+(3.17)
+
+VI,t
+
+=
+
+wI,t
+
+−
+
+η
+
+[Lt]ϕ
+
+1
+Ctσ
+
++Et [Ωt,t+1 {(1 − δ + δXI,t+1)VI,t+1 + δXF,t+1VF,t+1 + δ(1 − Xt+1)Vu,t+1}]
+
+(3.18)
+
+The value of the job to a household employed in the formal sector is the real formal wage net of the marginal rate of substitution between consumption and labor plus the discounted future value of these possible states: maintaining the job with probability (1 − δ) and receive VF,t+1, losing the job with probability δ but gaining another formal position with probability XF,t+1 and receiving VF,t+1, losing their job with probability δ but gaining an informal position with probability XI,t+1 and receive VI,t+1, and separated from the job with probability δ and remain unemployed receiving Vu,t+1 while searching for a formal job with probability (1 − XF,t+1). Similar interpretations can be given for the value function for the informal worker.
+
+17
+
+The value of an unemployed household member in the is given by:
+
+Vu,t = Et [Ωt,t+1 {XF,t+1VF,t+1 + XI,t+1VI,t+1 + (1 − Xt+1)Vu,t+1}]
+
+(3.19)
+
+That is, the value of an unemployed member is the discounted expected value of having a formal job in the next period with probability XF,t+1 and receiving VF,t+1, obtaining an informal job with probability XI,t+1 and receiving VI,t+1 or remaining unemployed with probability 1 − Xt+1. In this case we do not assume that the workers receive a payment Wtu while being unemployed as in Castillo and Montoro (2012).
+
+The bargaining power of workers is given by ξ ∈ [0, 1] such that:
+
+ξGF,t = VF,t − Vu,t and ξGI,t = VI,t − Vu,t
+
+Subtracting the value of being unemployed (3.19) from the value of a job under a formal con-
+
+tract equation (3.17) and the value of being unemployed (3.19) from the value of a job under a
+
+informal contract equation (3.18) and solving for wF,t and wI,t we obtain:
+
+wF,t
+
+=
+
+ξΘF ZtXFα,t
+
++
+
+η
+
+[Lt]ϕ
+
+1
+Ctσ
+
+−(1 − δ)ξEt Ωt,t+1 (1 − XF,t+1)ΘF Zt+1XFα,Ft+1 − XI,t+1ΘI Zt+1XIα,It+1
+
+(3.20)
+
+wI,t
+
+=
+
+ξΘI ZtXIα,t
+
++
+
+η
+
+[Lt]ϕ
+
+1
+Ctσ
+
+−(1 − δ)ξEt Ωt,t+1 (1 − XI,t+1)ΘI Zt+1XIα,It+1 − XF,t+1ΘF Zt+1XFα,Ft+1
+
+(3.21)
+
+The interaction between formal and informal labor supply and formal and informal labor demand gives the equilibrium formal and informal wages, and employed workers under both types of contracts.
+
+3.3 Retail Firms
+
+The retail ﬁrms, indexed by l ∈ [0, 1] use wholesale products to create a differentiated ﬁnal good with the following technology:
+
+YtR(l) = Ytw(l)
+
+(3.22)
+
+18
+
+Given the assumption of perfect competition in the wholesale (intermediate) goods sector, the
+
+marginal cost for the retailer ﬁrm is equal to the marginal cost of the wholesale ﬁrm:
+
+mctR
+
+=
+
+Ptw Pt
+
+=
+
+mct
+
+(3.23)
+
+As Ct is the composite good basket for consumption over the j ∈ [0, 1] varieties, it can expressed using the Dixit-Stiglitz aggregator:
+
+Ct =
+
+φ
+
+1
+
+(Ctj
+
+)
+
+φ−1 φ
+
+dj
+
+φ−1
+
+0
+
+(3.24)
+
+where φ is the elasticity of substitution between varieties. Consequently, the demand condition for variety j is:
+
+Ctj =
+
+Pt(j) Pt
+
+−φ
+Ct
+
+(3.25)
+
+3.3.1 Price-setting behavior of retail ﬁrms
+
+Following Blanchard and Gali (2010), we introduce price-stickiness in the ﬁnal goods sector rather than the standard procedure of introducing sticky price in the intermediate goods sector. “ The motivation for the separation between ﬁnal goods producers with monopoly power and perfectly competitive intermediate goods producers is to avoid interactions between price setting and wage bargaining at the ﬁrm level ” Blanchard and Gali (2010, p.6).
+
+It is assumed that retail ﬁrms set prices according to Calvo (1983), where there is a fraction 1−λ of ﬁrms that have the possibility to adjust their prices and the remaining fraction λ that does not have the possibility to adjust their prices. Given the demand function (3.25), the optimal price-setting problem can be expressed as follows, where the ﬁrm must choose P¯t to maximize:
+
+∞
+λiΩt,t+i
+t=0
+
+Pt(j) Pt+i
+
+− mct+i
+
+Ctd+i(j)
+
+(3.26)
+
+where:
+
+Ωt,t+i
+
+=
+
+βi u (ct+i) u (ct)
+
+is
+
+the
+
+discount
+
+factor
+
+between
+
+period
+
+t
+
+and
+
+t
+
++
+
+i
+
+and
+
+it
+
+is
+
+equal
+
+to
+
+the
+
+in-
+
+tertemporal marginal rate of substitution since all ﬁrms are owned by the domestic agents, and
+
+19
+
+Ctd+i(j) is the demand function (3.25).
+
+Substituting the aggregate demand curve (3.25) into equation (3.26)
+
+∞
+λiΩt,t+i
+t=0
+
+Pt(j) Pt+i
+
+1−φ
+− mct+i
+
+Pt(j) Pt+i
+
+−φ
+
+[Ct+i]
+
+Let P¯t(j) denote the optimal price chosen to maximize proﬁts, and obtaining the ﬁrst order condition:
+
+∞
+λiΩt,t+i
+t=0
+
+(1 − φ) Pt+i
+
+P¯t(j) Pt+i
+
+−φ
+
+φ
+
++ Pt+i mct+i
+
+P¯t(j) Pt+i
+
+−φ−1
+
+[Ct+i] = 0
+
+Multiplying
+
+by
+
+P¯t
+
+and
+
+1 1−φ
+
+:
+
+∞
+λiΩt,t+i
+t=0
+
+P¯t(j)
+
+1−φ
++
+
+Pt+i
+
+φ 1−φ
+
+mct+i
+
+P¯t(j) Pt+i
+
+−φ
+
+[Ct+i] = 0
+
+φ φ−1
+
+∞
+λiΩt,t+i
+t=0
+
+P¯t(j) Pt+i
+
+1−φ
+
+[Ct+i] =
+
+∞
+λiΩt,t+i mct+i
+t=0
+
+P¯t(j) Pt+i
+
+−φ
+
+[Ct+i]
+
+Dividing
+
+and
+
+multiplying
+
+the
+
+right
+
+hand
+
+side
+
+by
+
+P¯t(j) Pt+i
+
+yields:
+
+φ φ−1
+
+∞
+λiΩt,t+i
+t=0
+
+P¯t(j) Pt+i
+
+1−φ
+
+[Ct+i] =
+
+∞
+λiΩt,t+i
+t=0
+
+M Ct+i Pt+i
+
+P¯t(j) Pt+i
+
+−φ
+
+[Ct+i]
+
+Further arraignments generate:
+
+P¯t(j) =
+
+φ φ−1
+
+∞
+λiΩt,t+i M Ct+i
+t=0
+
+1 Pt+i
+
+−φ
+[Ct+i]
+
+∞
+λiΩt,t+i
+t=0
+
+1 1−φ
+
+Pt+i
+
+[Ct+i]
+
+(3.27)
+
+20
+
+or equivalently: with
+
+P¯t(j) =
+
+φ φ−1
+
+∞
+Xt,t+iM Ct+i
+t=0
+
+λiΩt,t+i
+Xt,t+i = ∞ λiΩt,t+i t=0
+
+1 −φ
+
+Pt+i
+
+[Ct+i]
+
+1 1−φ
+
+Pt+i
+
+[Ct+i]
+
+(3.28)
+
+From equation (3.28) it is possible to observe that the optimal price set is a markup over a weighted average of current and future nominal marginal costs. If prices are fully ﬂexible, such that λ = 0, it follows from equation (3.28) that:
+
+P¯t(j) =
+
+φ φ−1
+
+M Ct
+
+(3.29)
+
+At time t, all ﬁrms in the economy are facing the problem of price setting, so all ﬁrms have the same optimal price in a ﬂexible price environment: P¯t(j) = P¯t. Thus, each ﬁrm setting its new price chooses the same price as any other ﬁrm. Then:
+
+Pt =
+
+(1 − λ)(P¯t)1−φ + λ(Pt−1)1−φ
+
+1 1−φ
+
+(3.30)
+
+Equation (3.30) is the overall retail price.
+
+3.3.2 Retail marginal cost
+
+In this subsection, I focus in the marginal cost for retail ﬁrms. We follow Castillo and Montoro (2012) in order to obtain the retail marginal cost. Subtracting informal labor demand (3.14) from formal labor demand (3.13) and rearranging yields:
+
+wF,t − wI,t = [(1 − γ1) − γ1ω] ZtmctR − (GF,t − GI,t) + (1 − δ)βEt
+
+Ct Ct+1
+
+1 σ
+(GF,t+1 − GI,t+1)
+
+(3.31)
+
+21
+
+Subtracting informal labor supply (3.21) from formal labor supply (3.20) generates:
+
+wF,t − wI,t = ξ (GF,t − GI,t)) − (1 − δ)βEt
+
+Ct Ct+1
+
+1 σ
+(GF,t+1 − GI,t+1)
+
+(3.32)
+
+With this system of equations formed by (3.31) and (3.32), we solve for the retail marginal
+
+cost:
+
+[(1 − γ1) − γ1ω] ZtmctR = (1 + ξ) (GF,t − GI,t) − (1 − δ)βEt
+
+Ct Ct+1
+
+1 σ
+(GF,t+1 − GI,t+1)
+(3.33)
+
+By inspection of (3.33), marginal cost depends on the difference in cost between hiring a formal worker and an informal worker divided by the gain in productivity of hiring an informal worker.
+
+3.4 Monetary Policy Rules
+
+In setting the nominal interest rate, the Central Bank is assumed to conduct monetary policy using a Taylor-type rule. For this thesis we will evaluate two different Taylor rules: a current-looking speciﬁcation that reacts to contemporaneous inﬂation and (retail) output, and a forward-looking speciﬁcation that responds to expected future inﬂation and output.
+
+• Forward Looking Taylor Rule
+
+Rt = Et R¯ (πt+1)φπ
+
+YtR+1 φY Y¯ R
+
+R,t
+
+• Current Looking Taylor Rule
+
+Rt = R¯ (πt)φπ
+
+YtR φY Y¯ R
+
+R,t
+
+The interest rate shock is modeled as an autoregressive process AR(1) in order to signal the time it takes monetary policy to have any effect in the economy.
+
+22
+
+3.5 Market Clearing
+
+Regarding the labor market we know that total employment equals the number of workers employed under a formal contract plus the number of workers employed under an informal contract:
+
+1
+
+1
+
+Lt = LF,t + LI,t =
+
+LFj ,tdj +
+
+LiI,tdi
+
+0
+
+0
+
+(3.34)
+
+Aggregating the household budget constraint (3.3), and imposing bond market clearing we
+
+obtain:
+
+Ct = wF,tLF,t + wI,tLI,t + Πt
+
+(3.35)
+
+Given the assumption of perfect competition from the intermediate goods sector we know that:
+
+Ptw Pt
+
+Ytw = wF,tLF,t + wI,tLI,t + GF,tAF,t + GI,tAI,t
+
+(3.36)
+
+Consequently, real proﬁts in the retail sector are given by:
+
+Πt = YtR −
+
+Ptw Pt
+
+Ytw
+
+(3.37)
+
+Substituting equation (3.36) into equation (3.37) yields:
+
+Πt = YtR − [wF,tLF,t + wI,tLI,t + GF,tAF,t + GI,tAI,t]
+
+(3.38)
+
+Finally, substituting equation (3.38) into equation (3.35) leads to
+
+YtR = Ct + GF,tAF,t + GI,tAI,t
+
+(3.39)
+
+As explained in the wholesale ﬁrms section, we assume that the hiring costs of the ﬁrms GF,t and GI,t are paid in terms of the CES bundle of retail goods. Therefore, after aggregation, retail production equals retail consumption and the relevant cost of hiring workers. And using equation (3.25) and aggregating over retail producers we can obtain
+
+where ∆ =
+
+Ytw = ∆YtR
+
+φ
+
+1 0
+
+Pt(j) Pt
+
+−(φ−1)
+
+φ−1
+
+dj is a measure of price dispersion.
+
+(3.40)
+
+23
+
+3.6 Equilibrium
+Equilibrium can be deﬁned as as the set of sequences: wF,t, wI,t, mctR, mcwt , Ptw, PtR, Ct, Lt, LF,tLI,t, YF,t, YI,t, Ytw, YtR, Rt
+such that for t ≥ 0 the optimality condition for the household (3.5), optimality conditions for the wholesale ﬁrm, (3.13) and (3.14), the aggregate version of (3.6), marginal cost for the retail sector, equation (3.33), formal and informal labor supply, (3.20) and (3.21), the monetary policy rule, the consumption demand (3.25), the price index (3.30) and the market clearing condition is satisﬁed (3.39).
+
+3.7 Log-linearized version of the model
+
+Due to difﬁculties in computation of non-linear models, to further proceed we need to loglinearize the equilibrium conditions of the model. Log-linearization can be explained as the log-deviation around a steady state value. If xss denotes the steady state value of the variable xt. Deﬁning the log-deviation of variable xt from its steady state xss as:
+x˜t ≡ ln(xt) − ln(xss)
+
+Log deviations of xt from its steady state value are approximately equal to the percentage difference between xt and its steady state value. This approximation is appropriate in a small neighborhood around the steady state. The log linearized version of the relevant equations is:
+
+1. Euler equation
+
+(Ctj
+
+)−
+
+1 σ
+
+=
+
+Et
+
+β
+
+(Ctj+1
+
+)−
+
+1 σ
+
+Rt
+
+Pt Pt+1
+
+→ Et[C˜t+1] = C˜t + σEt[R˜t − (π˜t+1)]
+
+2. Aggregate demand condition
+
+YtR = Ct + GF,tAF,t + GI,tAI,t
+
+→
+
+Y˜tR
+
+=
+
+C Y
+
+ss ss
+
+C˜t
+
++
+
+GFssAsFs Y ss
+
+(G˜ F,t
+
++
+
+A˜F,t)
+
++
+
+GsIsAIss Y ss
+
+(G˜I
+
+,t
+
++
+
+A˜I,t)
+
+24
+
+→
+
+Y˜tR
+
+=
+
+C ss (Y R)ss
+
+C˜t
+
++
+
+ΘF Zss(δLsFs)1+αF (Y R)ss(U ss)αF
+
+Z˜t
+
++
+
+αF X˜F,t
+
++
+
+L˜ F,t δ
+
+−
+
+(1
+
+− δ
+
+δ) L˜F,t−1
+
++ ΘI Zss(δLIss)1+αI (Y R)ss(U ss)αI
+
+Z˜t
+
++
+
+αI X˜I,t
+
++
+
+L˜ I ,t δ
+
+−
+
+(1
+
+− δ
+
+δ) L˜I,t−1
+
+3. Wholesale sector output
+
+Ytw = (1 − γ1)YF,t + γ1YI,t
+
+→
+
+Y˜tw
+
+=
+
+(1
+
+−
+
+γ1)
+
+YFss (Y w)ss
+
+Y˜F,t
+
++
+
+γ1
+
+YIss (Y w)ss
+
+Y˜I,t
+
+4. Formal labor production function
+
+YF,t = ZtLF,t → Y˜F,t = Z˜t + L˜F,t
+
+5. Informal labor production function
+
+YI,t = ωI ZtLI,t → Y˜I,t = Z˜t + L˜I,t
+
+6. Aggregate labor constraint
+
+Lt = LF,t + LI,t
+
+→ Lss(1 + L˜t) = LsFs(1 + L˜F,t) + LIss(1 + L˜I,t)
+
+→
+
+L˜t
+
+=
+
+LFss Lss
+
+L˜ F,t
+
++
+
+LsIs Lss
+
+L˜I
+
+,t
+
+7. Productivity process lnZt = ρZt−1 + Z,t
+→ ln(Z) ∗ eZ˜t = ρln(Z) ∗ eZ˜t−1 + Z,t → ln(Z) + Z˜t = ρ(ln(Z) + Z˜t−1) + Z,t
+
+In the steady state ln(Z) = ρln(Z)
+
+→ Z˜t = ρZ˜t−1 + Z,t
+
+25
+
+8. Formal labor market tightness
+
+XF,t
+
+=
+
+AF,t Ut
+
+→
+
+ln(XF,t)
+
++
+
+X˜F,t
+
+=
+
+ln(LsFs
+
+−
+
+(1
+
+−
+
+δ)LsFs)
+
++
+
+(LFss
+
+−
+
+LFss (1 −
+
+δ)LsFs) L˜F,t
+
+−
+
+(1 − δ)LFss (LFss − (1 − δ)LFss)
+
+L˜ F,t−1
+
+−
+
+ln(Ut)
+
+−
+
+U˜t
+
+→
+
+ln(XF,t)
+
++
+
+X˜F,t
+
+=
+
+ln(LsFs)
+
++
+
+LFss δLsFs
+
+L˜ F,t
+
+−
+
+(1
+
+− δ)LsFs δLsFs
+
+L˜ F,t−1
+
+−
+
+ln(Ut)
+
+−
+
+U˜t
+
+→
+
+X˜F,t
+
+=
+
+1 δ
+
+L˜ F,t
+
+−
+
+(1
+
+− δ
+
+δ) L˜F,t−1
+
+−
+
+U˜t
+
+9. Informal labor market tightness.
+
+XI,t
+
+=
+
+AI,t Ut
+
+→
+
+ln(XI,t)
+
++
+
+X˜I,t
+
+=
+
+ln(LFss
+
+−
+
+(1
+
+−
+
+δ)LsIs)
+
++
+
+(LIss
+
+−
+
+LsIs (1 −
+
+δ)LIss) L˜I,t
+
+−
+
+(1 − δ)LsIs (LIss − (1 − δ)LsIs)
+
+L˜ I ,t−1
+
+−
+
+ln(Ut)
+
+−
+
+U˜t
+
+→
+
+ln(XI,t)
+
++
+
+X˜I,t
+
+=
+
+ln(LIss)
+
++
+
+LsIs δLIss
+
+L˜ I ,t
+
+−
+
+(1
+
+− δ)LIss δLsIs
+
+L˜I
+
+,t−1
+
+−
+
+ln(Ut)
+
+−
+
+U˜t
+
+→
+
+X˜I,t
+
+=
+
+1 δ
+
+L˜I
+
+,t
+
+−
+
+(1
+
+− δ
+
+δ) L˜I,t−1
+
+−
+
+U˜t
+
+10. Unemployment dynamics
+
+Ut = 1 − (1 − δ)(LF,t−1 + LI,t−1) → ln(Ut) = ln(1 − (1 − δ)(LF,t−1 + LI,t−1))
+
+→
+
+ln(Ut)+U˜t
+
+=
+
+ln(1−(1−δ)(LFss +LsIs))−
+
+1
+
+−
+
+(1
+
+(1 − δ) − δ)(LFss
+
++
+
+LsIs)
+
+LsFsL˜F,t−1 + LIssL˜I,t−1
+
+→
+
+U˜t
+
+=
+
+− 1
+
+−
+
+(1
+
+(1 − δ) − δ)(LFss
+
++
+
+LsIs)
+
+LsFsL˜F,t−1 + LsIsL˜I,t−1
+
+11. Aggregate supply condition (New-Keynesian Phillips Curve)
+
+Pt =
+
+(1 − λ)(P¯t)1−φ + λ(Pt−1)1−φ
+
+1 1−φ
+
+26
+
+→ π˜t = κm˜cRt + βπ˜t+1
+
+with (1 − λ)(1 − λβ)
+κ= λ
+
+12. Labor demand for formal workers
+
+wF,t = (1 − γ1)mcRt Zt − GF,t + β(1 − δ)Et
+
+u (ct+1) u (ct)
+
+Gt+1
+
+1 → w˜F,t = wFss
+
+(1 − γ1)(mcR)ssZss(m˜cRt + Z˜t) − ΘF Zss(XFss)αF (Z˜t + αF X˜F,t)
+
++
+
+1 wFss
+
+(1
+
+−
+
+δ)β
+
+ΘF
+
+Z
+
+ss(XFss)αF
+
+Et
+
+(Z˜t+1
+
++
+
+αF
+
+X˜F,t+1
+
+−
+
+1 σ
+
+(C˜t+1
+
+−
+
+C˜t))
+
+With
+
+(mcR)ss
+
+=
+
+φ−1 φ
+
+13. Labor supply of formal workers
+
+wF,t
+
+=
+
+η
+
+[Lt]ϕ
+
+1
+Ctσ
+
++
+
+ξ (GF,t
+
+−
+
+(1 − δ)Et
+
+[Ωt,t+1
+
+{(1
+
+−
+
+XF,t+1)GF,t+1
+
+− XI,t+1GI,t+1}])
+
+1 → w˜F,t = wFss
+
+η
+
+(Lss)ϕ
+
+(C
+
+ss
+
+)
+
+1 σ
+
+(ϕL˜t
+
++
+
+1 σ
+
+C˜t
+
+)
+
+1 + wFss
+
+ξ GsFs G˜ F,t
+
+−
+
+(1
+
+−
+
+δ)βξGsFs(
+
+1 σ
+
+(C˜t
+
+−
+
+C˜t+1)
+
++
+
+G˜ F,t+1 )
+
+1 + wFss ξβ(1 − δ)
+
+XFssGsFs(
+
+1 σ
+
+(C˜t
+
+−
+
+C˜t+1)
+
++
+
+X˜F,t+1
+
++
+
+G˜ F,t+1 )
+
+1 + wFss ξβ(1 − δ)
+
+XIss
+
+GIss
+
+(
+
+1 σ
+
+(C˜t
+
+−
+
+C˜t+1)
+
++
+
+X˜I,t+1
+
++
+
+G˜ I ,t+1 )
+
+14. Labor demand for informal workers
+
+wI,t = mctRγ1ωZt − GI,t + (1 − δ)βEt
+
+u (ct+1) u (ct)
+
+GI ,t+1
+
+1 → w˜I,t = wIss
+
+(γ1)(mcR)ssZss(m˜ctR + Z˜t) − ΘI Zss(XIss)αI (Z˜t + αI X˜I,t)
+
++
+
+1 wIss
+
+(1
+
+−
+
+δ)βΘI
+
+Z ss (XIss )αI
+
+Et
+
+(Z˜t+1
+
++
+
+αI X˜I,t+1
+
+−
+
+1 σ
+
+(C˜t+1
+
+−
+
+C˜t))
+
+With
+
+(mcR)ss
+
+=
+
+φ−1 φ
+
+15. Labor supply for informal workers
+
+wI,t
+
+=
+
+η
+
+[Lt]ϕ
+
+1
+Ctσ
+
++
+
+ξ (GI,t
+
+− (1
+
+−
+
+δ)Et [Ωt,t+1 {(1
+
+−
+
+XI,t+1)GI,t+1
+
+−
+
+XF,t+1GF,t+1}])
+
+27
+
+1 → w˜I,t = wIss
+
+η
+
+(Lss)ϕ
+
+(C
+
+ss
+
+)
+
+1 σ
+
+(ϕL˜t
+
++
+
+1 σ
+
+C˜t
+
+)
+
+1 + wIss
+
+ξ GsIs G˜ I ,t
+
+−
+
+(1
+
+−
+
+δ)βξGIss(
+
+1 σ
+
+(C˜t
+
+−
+
+C˜t+1)
+
++
+
+G˜ I ,t+1 )
+
+1 + wIss ξβ(1 − δ)
+
+XIss
+
+GsIs
+
+(
+
+1 σ
+
+(C˜t
+
+−
+
+C˜t+1)
+
++
+
+X˜I,t+1
+
++
+
+G˜ I ,t+1 )
+
+1 + wIss ξβ(1 − δ)
+
+XFssGsFs(
+
+1 σ
+
+(C˜t
+
+−
+
+C˜t+1)
+
++
+
+X˜F,t+1
+
++
+
+G˜ F,t+1 )
+
+16. Formal hiring cost
+
+17. Informal Hiring Cost
+
+GF,t = ZtΘF XFα,t → G˜F,t = Z˜t + αX˜F,t
+
+GI,t = ZtΘI XIα,t → G˜I,t = Z˜t + αX˜I,t
+
+18. Marginal cost of retail ﬁrms
+
+[(1 − γ1) − γ1ω] ZtmcRt = (1 + ξ) (GF,t − GI,t) − (1 − δ)βEt
+
+Ct Ct+1
+
+1 σ
+(GF,t+1 − GI,t+1)
+
+Let
+
+Φ
+
+=
+
+[(1
+
+−
+
+γ1)
+
+−
+
+γ1ω]
+
+and
+
+knowing
+
+that
+
+(mcR)ss
+
+=
+
+φ−1 φ
+
+the
+
+log
+
+linearized
+
+version
+
+of
+
+the marginal cost becomes:
+
+1 11 → m˜ct = (mcR)ss Φ Zss
+
+(1 + ξ)
+
+(GsFsG˜F,t − GIssGsIs,t)
+
+1 11 − (mcR)ss Φ Zss (1 + ξ)(1 − δ)βEt
+
+GFss(σ−1(C˜t − C˜t+1) + G˜F,t+1
+
+1 11 + (mcR)ss Φ Zss (1 + ξ)(1 − δ)βEt
+
+GIss(σ−1(C˜t − C˜t+1) + G˜I,t+1)
+
+− Z˜t
+
+Taylor Rule 19. Forward Looking
+
+Rt = Et R¯ (πt+1)φπ
+
+YtR+1 φY Y¯ R
+
+R,t
+
+→ R˜t = φπEt [π˜t+1] + φyEt Y˜tR+1 + R,t
+
+28
+
+20. Current Looking
+
+Rt = R¯ (πt)φπ
+
+YtR φY Y¯ R
+
+R,t
+
+→ R˜t = φππ˜t + φyY˜tR + R,t
+
+29
+
+4 Calibration
+
+In order to solve the model we use the DYNARE1 1 package, which is a free toolkit for Matlab, primarily to solve, simulate, and estimate DSGE models. After the equations are log-linearized I use this toolkit to generate impulse-response functions to help understand the dynamic behavior of the economy after a shock. The parameters are especially chosen to calibrate the model for Mexico. The calibration employed is as follows.
+
+The time period is assumed to be a quarter. As is standard in the literature, we set the discount factor β = 0.99, the intertemporal elasticity of substitution in consumption σ = 1 and the inverse of Frisch elasticity of labor supply ϕ = 1. With no direct estimate of the parameter of lower productivity in the informal sector ω, we calibrate it at ω = 0.5 in line with the estimates of Ferna´ndez and Meza (2015) of AF /AI = 2.1901 with AF being the productivity of the formal sector and AI being the productivity of the informal sector.
+
+For simplicity we set η = 1. Regarding the job destruction rate, Bosch and Esteban-Pretel
+
+(2012) estimate that the job destruction rate δ varies from 0.03 to 0.10 in developing countries. Kaplan et al. (2003), using data from I.M.S.S.2, estimates that the average job destruction rate
+
+for formal workers in Mexico during the period 1994-2000 is 0.135 and 0.132 for the year 2000.
+
+Blanchard and Gali (2010) use the job ﬁnding rate (x) and the unemployment rate (u) to ﬁnd
+
+the
+
+job
+
+destruction
+
+rate.
+
+Let
+
+δ
+
+be
+
+the
+
+job
+
+destruction
+
+rate
+
+and
+
+deﬁne
+
+it
+
+as
+
+δ
+
+=
+
+ux (1−u)(1−x)
+
+.
+
+Ball
+
+et
+
+al. (2013) estimate the long run unemployment rate of Mexico at u = 3.28 and Bosch and Mal-
+
+oney (2007) estimate the job ﬁnding rate in Mexico at x = 0.6 implying a job destruction rate
+
+δ = 0.0508 which relates to the ﬁndings of Bosch and Esteban-Pretel (2012). Consequently,
+
+we set δ = 0.05
+
+1DYNARE (version 4.4.3) is used to solve the model in this thesis.http://www.dynare.org 2IMSS stands for Instituto Mexicano del Seguro Social, which creates mandatory insurance for formal workers
+paid in part by the employer and the employee.
+
+30
+
+Regarding the elasticities of hiring costs αF and αI, if we assume a matching function of the
+
+form
+
+H
+
+=
+
+ZUϑV
+
+1−ϑ,
+
+we
+
+have
+
+V /H
+
+=
+
+1
+
+ϑ
+
+Z ϑ−1 (H/U ) 1−ϑ .
+
+With
+
+a
+
+simple
+
+mapping
+
+between
+
+the
+
+model proposed by Blanchard and Gali (2010) and the standard DMP model we can obtain
+
+the value of αF = ϑ/(1 − ϑ). With estimates from Petrongolo and Pissarides (2001), we set
+
+ϑ = 0.5 implying therefore that αF = 1. However, this is only for the relevant elasticity for
+
+formal jobs. Lacking any direct evidence or source to use to estimate the elasticity of hiring
+
+cost regarding informal jobs αI, we set αI = 0.75.
+
+Bargaining power is also relevant in the determination of wages. Botero et al. (2004) estimate bargaining power at ξ = 0.5774. The parameter value used in our simulations is ξ = 0.6 in line with the value from Botero et al. (2004) and the original values from Castillo and Montoro (2012).
+
+For the elasticity of substitution between retail goods φ, estimates vary from 7 (Batini et al., 2011) to 11 (Ce´spedes, et al., 2005). We will choose φ = 11 implying M = 1.1 as the gross steady state markup.
+
+Regarding the parameters of the hiring costs, ΘF and ΘI, to the best of our knowledge no direct empirical estimates exist. Therefore we follow Castillo and Montoro (2012) and set ΘF = 2.5 for the value of the hiring cost for formal contracts. In what follows, we set ΘI = 0, implying that there is no hiring cost for informal labor.
+
+Ramos-Francia and Torres (2006), using monthly data of the Mexican economy for the period January 1992 to June 2006, investigate the degree of price rigidity in Mexico. Using this data, they estimate λ = 0.858 implying that on average prices remain ﬁxed for 2.3 quarters. Therefore, we choose λ = 0.858 in our calibration. We impose γ1 = 0.20 as we lack of any direct evidence of this value.
+
+31
+
+In addition, interest rate shock is modeled as an AR(1) process, therefore we set the ρr = 0.7 as the value for the coefﬁcient for the ﬁrst lag. Productivity is modeled also as an AR(1) process, thus we set the value of ρz = 0.70 for the coefﬁcient. For the Central Bank policy rule, we set φπ = 1.5 and φy = 0.3.
+The complete list of the values used in the calibration of the model is summarized in Table 4.1.
+Table 4.1: Parameter values used for calibration β 0.99 Discount factor σ 1 Intertemporal elasticity of substitution in consumption ϕ 1 Inverse of Frisch elasticity of labour supply η 1 Marginal disutility from working δ 0.05 Job separation rate φ 11 Elasticity of substitution of retail goods γ1 0.2 Informal technology bias ω 0.50 Informal productivity parameter ρZ 0.70 Productivity shock persistence ΘF 2.5 Formal hiring cost parameter ΘI 0 Informal hiring cost parameter αF 1 Labor market tightness parameter for formal hiring cost αI 0.75 Labor market tightness parameter for informal hiring cost ξ 0.6 Bargaining power λ 0.86 Degree of price stickiness φπ 1.5 Taylor rule inﬂation response coefﬁcient φy 0.3 Taylor rule output response coefﬁcient ρr 0.7 Interest Rate Shock persistence coefﬁcient
+32
+
+5 Results - impulse response analysis
+In this section I explore the transmission mechanism of the two exogenous shocks, by means of an impulse response analysis. I investigate two different versions of the model: a benchmark model, in which I will only focus in an economy where the only possibility for hiring a worker is by means of a formal contract. However, in order to fulﬁll its obligations, the ﬁrm must pay the appropriate hiring cost. For the model with informality, wholesale forms have the possibility of hiring informal labor. The aim is to try to understand the role of informality for the macroeconomy and how the mechanism of adjustment differs in economies with large informal sectors.
+I ﬁrst consider the effects of the interest-rate shock and then I study the implications of a productivity shock. Both shocks are analyzed under the forward-looking version of Taylor rule.
+5.1 Interest rate shocks
+5.1.1 Baseline Model
+After the interest-rate shock, a tightening of monetary policy generates a fall in aggregate demand resulting in lower consumption, retail output, and inﬂation. Retail marginal costs increase due to higher formal wages. Given the increase in the cost of labor and the decrease in demand, it is optimal for ﬁrms to reduce labor as is shown in Figure 5.1, which increases unemployment in the economy. This results in an increase in labor market tightness: with higher unemployment, the vacancies the ﬁrm are ﬁlling are less relative to the number of unemployed workers willing to incorporate into jobs. Consequently there is a reduction in the probability of getting hired.
+33
+
+Figure 5.1: Interest rate shock in the benchmark model.
+In this basic framework, where there are only formal labor workers and wholesale ﬁrms have to pay the cost for hiring formal labor, the dynamics of the labor market are not adjusted by hours worked, as in the basic New Keynesian model (see for example Gali, 2010), but by the number of workers employed, that is, at the extensive margin. With the interest rate shock, wholesale ﬁrms have to pay a higher wage. This higher wage causes the wholesale ﬁrm to adjust labor employed and puts pressure in its marginal cost. To adjust wholesale marginal costs, wholesale ﬁrms readjust in the short-run its production, and as labor is the only factor of production, formal labor decrease. Retail ﬁrms buy the wholesale good at its marginal price. With an increase in wholesale marginal cost, retail marginal costs increases as well, so retail ﬁrms adjusts downward their production. We also know that the ﬁrms and workers share the surplus of the vacancy ﬁlled, that is, ﬁrms will not pay in a future period the cost of hiring a worker. Wages are set by the Nash bargaining process and they are above the perfectly competitive level. After the shock and the increase in wages and the adjustment in wholesale marginal costs, unemployment increases and more workers are expecting to ﬁnd a job, thereby there is a lower probability of ﬁnding a job for every unemployed worker. This is observed in the decrease of the labor market tightness, which is
+34
+
+our measure of hiring relative to unemployment. We also observe that although wages are higher, consumption decreases by a higher unemployment. Then, we argue that the monetary policy shock has a negative effect in the economy as ﬁrms, both wholesale and retail, decrease its production, households consume less and the fraction of household members employed is lower.
+5.1.2 Informality Model
+Allowing informal hiring changes the dynamics and analyzing its behavior reveals new mechanisms. By inspection of Figure 5.2, wholesale ﬁrms respond by increasing formal labor employment. We can observe also that both informal employment and informal wage is lower. This could be considered contradictory, but in our set-up formal workers are more productive than informal workers, and by the dynamics of the interest shock, we can argue that ﬁrms increase its formal employment due to the fact of higher productivity and lower wages for both kinds of labor.
+The increase in formal employment does not offset the fall in informal employment, thus increasing unemployment in the economy. Then, by the link between aggregate formal hiring and aggregate informal hiring and unemployment, market tightness for both types of labor decreases. As explained before, it is possible to consider the labor market tightness as the probability of getting hired. Given that unemployment increased, there are more workers queuing for job opportunities. We can discuss about the form of the impulse-response function for informal labor market tightness. We consider that the ﬁrst peak occurs at the same time when unemployment has its maximum. After the economy recovers, unemployment, and by deﬁnition informal labor market tightness, returns to its steady state. The reason for a quick recovery could be considered because of the recovery of total employment which is composed of a steep increase and slow decrease of formal employment and a steady recovery of informal employment.
+35
+
+Figure 5.2: Interest rate shock in the informality model.
+A key difference between the baseline model and the informality model is the behavior of consumption which increases in response to higher interest rates when allowing for informal employment. We consider this effect occurs due to the fact that employment of formal workers increases whereas employment of informal workers falls. This could be considered because although both formal and informal wage falls, the formal wage is still higher than the informal wage allowing for higher consumption. This result suggests that formal labor is countercyclical after an interest rate shock. We argue that the decision of wholesale ﬁrms to hire a combination of formal and informal labor such that in equilibrium marginal cost for both type of technologies remains equal is the driving force behind the dynamics of the economy after the monetary policy shock. Informal wages are lower, thus marginal cost for the informal technology. Wholesale ﬁrms adjusts its formal employment to maintain equilibrium. Formal labor is increased after the shock because of the lower wage and its higher productivity compared to the informal workers. Thus, by balancing the marginal cost for each type of technology, wholesale ﬁrms drives the mecha-
+36
+
+nism and dynamics of the economy.
+Both formal and informal wages decrease, thereby wholesale marginal cost decreases. The increase in output produced by formal labor is not enough to offset the decrease the output produced using informal labor, and as wholesale ﬁrms try to maintain in equilibrium the marginal cost for both technologies, the reduction in informal employment is higher than the increase in formal employment, causing wholesale output and marginal cost to decrease after the shock.
+Retail ﬁrms buy wholesale goods at their marginal price for producing its retail good variety. Because of the reduction in wholesale production and marginal cost, retail production and marginal cost decreases. Consumption increases and we argue that this occurs owing to the fact that formal employment increased.
+With regard to the effects on unemployment under both models, we observe that the effect of the shock on unemployment is almost the same in both models. This can be considered possible because of the substitution of informal labor from formal labor. However, inﬂation decreases more in the informality model than in the benchmark model. We argue this occurs because of the response of formal and informal labor and the increase in formal employment as opposed to the decrease in formal employment in the benchmark model.
+Our results are robust to a current looking Taylor rule, suggesting that the underlying mechanism discussed, that is, the equilibrium condition on marginal cost of the formal and informal technologies helps explaining the dynamics. But there are small differences worth noting. Under a current looking regime1 unemployment is affected less by the change in employment composition due to the central bank acting at the time of the shock. However, under a current looking Taylor rule, formal employment after the shock is higher than in the forward looking version rather than a decrease less steep of informal employment. As formal labor is the only production input for the formal technology, its output increases more when the central bank follows a current looking Taylor rule. Consumption, in turn, increases more under the current looking version because of the higher formal employment when compared to the forward looking Taylor rule.
+1See the appendix for the impulse response function under a current looking Taylor rule.
+37
+
+We believe that it is important to analyze the dynamics of the model under a productivity shock to understand the novelty of your ﬁndings. In the next subsection we present the effects of a positive one-standard-deviation productivity shock on our model with a forward looking Taylor rule.
+5.2 Productivity shock
+In this section we consider a one-standard-deviation positive productivity shock to analyze the mechanisms around its steady state.
+5.2.1 Baseline Model
+When compared to the textbook New Keynesian model (see for example Gali, 2010), this model offers two possible states: either being employed under a formal contract or being unemployed as opposed to adjustment in the hours worked. As workers become more productive real wages fall but by a very small amount and there is less employment. This occurs because the hiring cost is a function of the productivity. When productivity increases, hiring costs increase, thus causing ﬁrms to delay hiring as the cost of hiring surpasses the expected saving on hiring costs of not having to ﬁll that vacancy.
+Retail marginal cost is lower due to lower wages in the wholesale sector, and as workers in that sector are more productive, production in the wholesale sector increases, thus increasing retail output. Regarding the effect on workers, with higher unemployment at the shock affects the economy, the labor market tightness decreases.
+In the case of a productivity shock, dynamics affect directly labor demand and supply from wholesale ﬁrms. Speciﬁcally, labor demand is affected due to optimization taking into account the hiring costs. Labor becomes more productive, and given the transitory nature of the productivity shock, ﬁrms ﬁnd proﬁtable to delay hiring due to lower productivity in the future translating into lower hiring costs. Wholesale ﬁrms require less workers to maintain and increase its production so they lower their labor demand and adjust labor at the extensive margin. The outcome of the shock in the labor market is an increase in unemployment, thereby de-
+38
+
+Figure 5.3: Productivity shock in the benchmark model.
+creasing the value of the labor market tightness, that is, reducing the probability of ﬁnding a job. The wage setting process that sets the labor supply is affected by productivity reducing the formal wage paid by wholesale ﬁrms and their marginal cost. With the productivity shock, the wholesale supply curve shifts downward so that at every price, the supply is higher. Retail ﬁrms pay the wholesale goods at their reduced marginal cost, and by the effect of the productivity shock retail marginal costs are lower. Due to lower marginal cost in the retail sector, caused by the mechanism exposed above, inﬂation in the economy decreases. An interesting difference between the adjustment of a monetary policy shock and a productivity shock in the benchmark model occurs because of hiring costs being a function of productivity. In both cases unemployment increases but this happens with different mechanisms. With a productivity shock, ﬁrms ﬁnd proﬁtable to delay hiring and dismissing workers although the wage is lower but the hiring cost increases; in the case of an interest rate shock formal wage increases and this causes the wholesale ﬁrms to adjust its employment. This effects in turn cause the decrease in the retail marginal cost after a productivity shock and the increase in the retail marginal cost after the central bank tightens its monetary policy.
+39
+
+5.2.2 Informality Model
+With the increase in productivity ﬁrms ﬁnd more proﬁtable to substitute informal labor with formal labor. However, informal employment decreases more than the increase in formal employment. Thus, unemployment in the economy is higher affecting labor market tightness for formal and informal employment. Informal labor market tightness is recovering faster than its formal counterpart because of the absence of hiring costs in informal employment.
+Figure 5.4: Productivity shock in the informality model.
+Wholesale ﬁrms have a lower marginal cost due to the lower wage obtained by Nash bargaining. This occurs after an increase in unemployment and the effect of productivity. In turn, retail marginal cost is lower but production increases. The increase in unemployment affects the labor market tightness in both sectors. As explained before, this market tightness can be considered as the probability of getting hired, then, a decrease in the labor market tightness, or in this case, a negative percentage deviation from its steady state, is considered a negative effect on the labor market.
+40
+
+Retail output is produced from wholesale production, which in turn uses two types of technologies: a formal one and an informal one depending on the type of labor contractual arrangements. Therefore, retail output does not increase by the same amount as the increase in the production using the formal technology because of the diminishing informal technology output. In addition, retail marginal cost is lower because of lower wages in both formal and informal labor. The lower wage in formal sector partially helps the economy to increase the formal employment. The results suggest that formal employment is now procyclical whereas informal employment is countercyclical.
+We consider that the dynamics observed in the informality model is best explained because of the hiring costs being a direct function of the productivity and the effect on labor demand and supply by the wholesale ﬁrms. From the labor demand side, after the transitory increase in productivity, hiring costs for formal labor increase. If this effect was isolated on the formal labor employment, it will decrease as it was shown using the benchmark model. The increase in productivity causes hiring formal costs to increase. Wholesale ﬁrms balance the expected savings of hiring a worker now, which are not enough to offset the higher hiring cost at the time of the shock, and the lower formal wage due to the effect of productivity on the Nash bargaining process. While the informal wage decreases making more attractive to hire informal workers, formal wage decreases more, and considering the higher productivity of formal workers, wholesale ﬁrms reallocate resources towards formal labor maintaining the marginal costs of both type of technologies in equilibrium. Regarding the labor market, the increase in unemployment affects the formal and informal labor market tightness lowering the probability of ﬁnding a job.
+While the main force driving the response of the economy after the productivity shock and the interest rate shock is the decision to maintain in equilibrium the marginal costs of both type of technologies in the wholesale sector, the mechanisms differ by the effect of hiring costs. Hiring costs are increasing in productivity and are affected directly by it, thus causing the dynamics seen in the model. Although unemployment is higher after the productivity shock and causes that formal labor market tightness to decrease more when compared to the effect of the interest rate shock, this is not enough to offset the effect of the increase in productivity in increasing hiring costs. Wages fall more after the interest rate shock allowing formal labor employment
+41
+
+to increase more with respect to the result of the productivity shock. Another key macroeconomic variable is inﬂation, which decreases more after the interest rate shock. In this sense, formal employment beneﬁts of its higher productivity after both shocks and the substitution of informal labor is stronger in the informality model after a productivity shock. We consider that both the choice of ω = 0.5, as it relates to increase the breach in employment after the shocks, and the allocation of labor between technologies based on the costs of each type of labor by the wholesale ﬁrm can account to the differences in the dynamics between the two types of shocks.
+42
+
+6 Conclusions
+The aim of this thesis was to investigate how the macroeconomy adjusts after a monetary policy shock in the presence of an informal labor market.
+Using the model of Castillo and Montoro (2012) the thesis introduced informality into a stickyprice DSGE model. In this model, inﬁnitely-lived households derive utility from consumption and determine the fraction of supply labor they provide to each sector. The retail sector ﬁrms buy wholesale goods at marginal cost, transform them into a differentiated ﬁnal good, which is sold to household for consumption purposes. Retail ﬁrms operate in a monopolistic competition environment and set prices in a staggered fashion according to Calvo (1983). Wholesale ﬁrms are perfectly competitive and hire labor, deciding between formal and informal contracts, to produce intermediate goods. Informal labor is assumed to be cheaper due and less productive than its formal counterpart, and wholesale ﬁrms must pay a hiring cost to recruit both formal and informal workers. In our set-up, informal hiring costs are calibrated to zero. Both formal and informal wages are determined by Nash bargaining. Following empirical evidence (Clarida et al. (1998), (2000); Orphanides (2001),(2004); Mihailov (2006)), we assumed that the central bank uses a forward-looking Taylor-type rule, where the nominal interest rate reacts to expected future inﬂation and output.
+The model proposed in this exercise allowed to include informality in the economy. However, informality arises from informal hiring of the wholesale ﬁrms rather than allowing for an informal sector in the economy. In this model, by hiring informal workers, the ﬁrm does not pay any costs. However this set-up generates dynamics that allow substitution of informal labor with formal labor as it was shown. This effect occurs of a lower productivity of informal workers, a fact that is documented in the literature. In addition, informal employment is a consequence of the rationing exercised by the wholesale ﬁrms because of the hiring costs.
+43
+
+The model of Castillo and Montoro (2012) predicts that adding the informal sector results in different implications for certain important macro variables depending on whether the shock is monetary or productivity. After an interest rate shock unemployment rises, labor market tightness falls but formal wages and retail marginal costs increase. However, with a positive productivity shock, unemployment rises and labor market tightness falls as in the monetary policy shock. But in this case formal wages and retail marginal costs fall. We consider that the Nash Bargaining process allow us to propose an explanation. Workers and ﬁrms take into account current and one-period ahead hiring costs and labor market tightness. Due to a higher unemployment in period t, hiring cost decreases due to lower labor market tightness, but in the next period as economy returns to its steady state hiring cost will increase again. Balancing this effects generates a higher wage rate, thus increasing retail marginal costs. The same bargaining process can be used to analyze the effect after the productivity shock. However, after a productivity shock unemployment increases less than after an interest rate shock, then labor market tightness decreases less in the context of a productivity shock. In Castillo and Montoro (2012) ﬁrms employ both types of labor which allows ﬁrms to immediately change their labor input by increasing or decreasing the informal component of employment. However, this seems to be an inappropriate assumption for Mexico.
+Another interesting result is the different behavior of formal and informal employment after the different shocks. With monetary policy shocks, formal employment is countercyclical whereas informal employment is procyclical. This suggests that the Castillo and Montoro (2012) model is not so good for Mexico. Business cycle statistics for Mexico suggest that over the cycle informal employment is countercyclical but formal employment is cyclical (see Fernandez and Mesa, 2015). There is also the issue of different consumption dynamics. More investigation is needed to see if such behavior is found in the business cycle data for countries with large informal sectors.
+With productivity shocks formal labor is procyclical whereas informal employment is countercylical. I consider that the different mechanisms given the type of the shocks depends on the calibration for the relative difference of productivity between the formal and informal sector and that hiring cost parameter in the in- formal employment is zero. In addition, unemployment
+44
+
+in both models increase in the same quantity after the interest rate shock, but after the productivity shock unemployment increases more in the informality model than in the benchmark model. Further analysis will use a different calibration and undertake sensitivity analysis. We could assume non-zero hiring cost parameter to see the different dynamics. Another possibility could be allowing consumption of both informal and informal goods, which are documented to be highly sustitutable (Restrepo-Echavarr´ıa 2011), and modeling an informal sector rather than allowing informal hiring in the wholesale sector.
+45
+
+7 Appendix
+7.1 Interest rate shock. Informality model
+To reinforce the robustness of our ﬁndings we present the impulse-response function of the informality model under a current-looking version of the Taylor-type rule.
+Figure 7.1: Interest rate shock in the informality model with current looking Taylor Rule.
+46
+
+8 Bibliography
+• Balan, J., Browning, H. L., and Jelin, E.,. (1973). Men in a developing country. Institute of Latin American Studies. University of Texas, Austin.,
+• Ball, L., De Roux, N., and Hofstetter, M. (2013). Unemployment in latin america and the caribbean. Open Economies Review, 24(3), 397-424.
+• Batini, N., P. Levine, E. Lotti, and B. Yang (2011): “Informality, Frictions and Monetary Policy,” Discussion Papers in Economics No. DP 07/11, University of Surrey.
+• Blanchard, O., and Gali, J. (2010). Labor markets and monetary policy: A new keynesian model with unemployment American Economic Association.
+• Bosch, M., and Esteban-Pretel, J. (2015). The labor market effects of introducing unemployment beneﬁts in an economy with high informality. European Economic Review, 75, 1-17.
+• Botero, J. C., Djankov, S., La Porta, R., Lopez-de-Silanes, F., and Shleifer, A. (2004). The regulation of labor. Quarterly Journal of Economics, 119(4), 1339-1382.
+• Calvo, G. A. (1983). Staggered Prices in a Utility-Maximizing Framework, Journal of Monetary Economics, 12, 383–398.
+• Castillo, P. and C. Montoro (2012). Inﬂation Dynamics in the Presence of Informal Labour Markets, BIS Working Paper No. 372, Bank for International Settlements.
+• Ce´spedes, L. F., M. Ochoa, and C. Soto (2005): The New Keynesian Phillips Curve in an Emerging Market Economy: The Case of Chile, Working Paper No. 355, Central Bank of Chile.
+47
+
+• Christoffel, K. and T. Linzert (2005). The Role of Real Wage Ridigities and Labor Market Frictions for Unemployment and Inﬂation Dynamics. ECB Working Paper Series No. 556.
+• Clarida, R., J. Gali and M. Gertler (1998). Monetary Policy Rules in Practice: Some International Evidence. European Economic Review 42, 1033-1067.
+• Clarida, R., J. Gali and M. Gertler (2000). Monetary Policy Rules and Macroeconomic Stability: Evidence and Some Theory, Quarterly Journal of Economics 115, 147- 180.
+• Ferna´ndez, A., and Meza, F. (2015). Informal employment and business cycles in emerging economies: The case of mexico. Review of Economic Dynamics, 18(2), 381-405.
+• Gali, J (2010). Monetary Policy, Inﬂation and the Business Cycle: An Introduction to the New Keynesian Framework. Princeton University Press
+• Harris, J. R., and Todaro, M. P. (1970). Migration, unemployment and development: A two-sector analysis. American Economic Review, 60(1), 126-142.
+• Kaplan, David; G. Martinez and R. Robertson (2003); Worker and Job-Flows in Mexico. Mimeo, Instituto Tecnologico Autonomo de Mexico.
+• Krause, M. U., and T. A. Lubik (2003). The (Ir)relevance of Real Wage Rigidity in the New Keynesian Model with Search Frictions. Mimeo.
+• La Porta, Rafael, and Andrei Shleifer (2008). The Unofﬁcial Economy and Economic Development. Brookings Papers on Economic Activity, Fall: 275–352.
+• Leal Ordonez, J. C. (2014). Tax collection, the informal sector, and productivity. Review of Economic Dynamics, 17(2), 262-286.
+• Maloney, W. F. (2004). Informality revisited. World Development, (7), 1159. • Mihailov, A. (2006). Operational independence, inﬂation targeting, and UK monetary
+policy. Journal of Post Keynesian Economics, 28 (3, Spring). pp. 395-421. • Mitra, S. (2013). Informality, ﬁnancial development and macroeconomic volatility. Eco-
+nomics Letters, 120(3), 454-457.
+48
+
+• Orphanides, A. (2001). Monetary Policy Rules Based on Real-Time Data. American Economic Review 91, 964-985.
+• Orphanides, A. (2004). Monetary policy in deﬂation: the liquidity trap in history and practice. Finance and Economics Discussion Series 2004-01, Board of Governors of the Federal Reserve System (U.S.).
+• Petrongolo, B., and Pissarides, C. A. (2001). Looking into the black box: A survey of the matching function. American Economic Association.
+• Pissarides, C. (2000). Equilibrium Unemployment Theory. MIT Press. • Ramos-Francia, M. and A. Torres Garc´ıa (2006). Inﬂation Dynamics in Mexico: A
+Characterization Using the New Phillips Curve. Banco de Me´xico Working Papers 200615 • Restrepo-Echavarria, P. (2011). Macroeconomic volatility: the role of the informal economy, working paper. • Sembeta, Sisay (2013). Informality and Macroeconomic Fluctuations: A Small Open Economy New Keynesian DSGE Model with Dual Labour Markets. Working Paper D/2013/1169/002. University of Antwerp • Thomas, C. (2008). Search and Matching Frictions and Optimal Monetary Policy. Journal of Monetary Economics 55(5): 936-56. • Trigari, Antonella (2006). The Role of Search Frictions and Bargaining for Inﬂation Dynamics. IGIER Working Paper No. 304 • Walsh, Carl (2003). Labor Market Search and Monetary Shocks, in Elements of Dynamic Macroeconomic Analysis, S. Altug, J. Chadha and C. Nolan eds.
+49
+
+List of Tables
+4.1 Parameter values used for calibration . . . . . . . . . . . . . . . . . . . . . . . 32
+50
+
+List of Figures
+5.1 Interest rate shock in the benchmark model. . . . . . . . . . . . . . . . . . . . 34 5.2 Interest rate shock in the informality model. . . . . . . . . . . . . . . . . . . . 36 5.3 Productivity shock in the benchmark model. . . . . . . . . . . . . . . . . . . . 39 5.4 Productivity shock in the informality model. . . . . . . . . . . . . . . . . . . . 40 7.1 Interest rate shock in the informality model with current looking Taylor Rule. . 46
+51
+
+

@@ -1,0 +1,1431 @@
+MAESTRÍA EN ECONOMÍA
+TRABAJO DE INVESTIGACIÓN PARA OBTENER EL GRADO DE MAESTRO EN ECONOMÍA
+EL SISTEMA BANCARIO SOMBRA: ANÁLISIS DE UN MODELO TEÓRICO
+PARA SU REGULACIÓN ARIEL TORRES MORENO
+PROMOCIÓN 2010-2012
+ASESOR:
+JOSÉ MIGUEL TORRES GONZÁLEZ
+JUNIO 2012
+
+iii
+Agradecimientos
+A mi familia porque en todo este camino recorrido de aprendizaje, su apoyo ha sido incondicional, y en momentos adversos me hicieron sentir que sí se podía. Estoy seguro que en próximos retos en la vida, seguiremos juntos y su apoyo seguirá estando ahí.
+A mi abuela Soledad Pérez, sin usted, este proyecto simplemente no se hubiera podido; lo único que puedo decir es gracias por abrirme las puertas de su casa; gracias por todo.
+A Gabriela Marina Ramírez Javier, porque en estos dos años cada vez que sentía que no podía, tu hombro siempre estuvo para que me apoyara y siguiera adelante. Gracias porque de no ser por ti no estaría donde estoy ahora.
+A mis profesores, porque no sólo me enseñaron cosas de economía, también me enseñaron a aprender, a ser mejor persona y profesionista.
+Al Dr. José Miguel Torres, ya que en estos dos años no sólo fue un muy buen profesor, sino un amigo, un asesor, un consejero. Gracias por todas las enseñanzas de todo tipo por parte de usted.
+A mis compañeros de generación, porque se convirtieron en mis amigos en estos dos años. Estudiando, divirtiéndonos, etc., fueron sólo dos años, pero compartimos mucho tiempo; muchas experiencias.
+
+v
+Resumen
+La crisis financiera que inició en 2007 se originó en el sistema bancario sombra, cuya principal característica es que es un sistema no regulado; el uso de éste por parte de empresas, bancos y otros participantes en él, ha hecho que tenga un crecimiento incluso por encima del sistema bancario tradicional. La creación excesiva de colateral o dinero privado en este sistema sombra se convirtió en una práctica común para sus participantes. La demanda por dinero privado aumenta cuando las condiciones para invertir en proyectos son buenas; sin embargo, al igual que el sistema bancario tradicional, el sistema sombra es vulnerable a pánicos y corridas bancarias. Stein (2012) muestra el primer modelo teórico sobre la creación excesiva de dinero privado, en donde su principal resultado es que esta creación de dinero origina una externalidad negativa, en particular deja al sistema bancario expuesto; cuando una corrida bancaria da a lugar, los bancos tienen que recurrir a ventas de remate para solventar sus obligaciones de corto plazo. Nosotros mostramos la robustez del modelo exponiendo que mientras el ambiente económico sea bueno para invertir ésta aumenta; de la misma forma mostramos que los prestamistas se ven beneficiados por invertir más y hacer uso del dinero privado. También exponemos la forma en que varían los precios de permisos para la creación de dinero privado, en donde encontramos que éstos pueden variar de manera contraintuitiva, en particular si el ambiente económico es bueno para invertir y se invierte más; entonces el precio de los permisos debe aumentar, nosotros encontramos que esto no siempre pasa e incluso llega a pasar lo contrario, es decir, el precio disminuye; esto afecta las decisiones que puede tomar el regulador con respecto a la creación de dinero, ya que si los precios de los permisos varían en sentido contrario, el regulador aumentaría el número de permisos en el mercado para abaratarlos cuando en realidad debería reducirlos para evitar el exceso de creación de dinero. Finalmente cada resultado se da en forma de proposición; además damos ejemplos de cada resultado a través de ejercicios de simulación numérica.
+
+Índice
+
+1. Introducción
+
+1
+
+1.1. Revisión de la literatura. . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+2. El sistema Bancario Sombra
+
+5
+
+2.1. Cómo funciona el sistema bancario sombra . . . . . . . . . . . . . . . . 7
+
+2.2. Breve historia del sistema bancario sombra en Estados Unidos
+
+de Norteamérica. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+2.3. Sistema Bancario Sombra en México. . . . . . . . . . . . . . . . . . . . 10
+
+3. Política Monetaria como mecanismo de estabilización financiera
+
+12
+
+3.1. Marco Teórico. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+3.2. Introducción. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+3.3. Explicación del modelo. . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+3.4. Creación socialmente excesiva de dinero: un rol para la regulación. . . . . 29
+
+4. Conclusiones
+
+46
+
+5. Bibliografía
+
+48
+
+Índice de figuras
+
+50
+
+1
+1. Introducción
+Durante la crisis financiera que comenzó en 2007, el mercado hipotecario de Estados Unidos de América tuvo especial relevancia. Mayer, Pence y Sherlund (2007) elaboran un estudio sobre el aumento de impagos en las hipotecas, muestran que desde mediados de 2005 el mercado hipotecario empezó a sufrir problemas de falta de pagos, creciendo esto muy rápido. Por otro lado Main y Sufi (2009) hablan de las consecuencias de la expansión del crédito hipotecario explorando si los movimientos de precios de las hipotecas son resultado de movimientos en la oferta o demanda en el mercado hipotecario. La explicación de la oferta nos dice que existe una mayor voluntad de los prestamistas a otorgar créditos y la disposición a asumir mayor riesgo. Mientras que la explicación de la demanda nos dice que un aumento en la productividad conduce a una expansión en la demanda de crédito. Ellos concluyen que la evidencia empírica apoya la versión de la oferta. Otro estudio sobre precios de las hipotecas podemos encontrarlo en Case (2008), en donde dan seguimiento a los precios de las casas durante las últimas cuatro décadas mostrando que estos tuvieron un rol importante en la reciente crisis.
+Para comprender de mejor manera esta crisis, Gorton (2009) nos habla del rol del pánico bancario.1 Señala que es importante conocer conceptos como vehículos especiales y derivados financieros para una comprensión de la crisis. Nos enseña que las hipotecas de alto riesgo son una innovación financiera para proporcionar oportunidades de acceso a la propiedad a los prestatarios más riesgosos de Estados Unidos de América; usando la bursatilización elaborando ramificaciones de activos de acuerdo a su calidad (esta acción es conocida como tranches) que son vendidos a un vehículo de propósito especial fuera de balance (SVP por sus siglas en inglés). El nexo entre vehículos fuera de balance, bursatilización y crecimiento del mercado repo constituye lo que se conoce como sistema bancario sombra, lugar donde precisamente se originó la crisis.
+La importancia de poder regular el sistema sombra resulta clara después de la crisis de 2007, pero aún más, primero la comprensión del sistema como tal deberá ser la primera
+1 Pánico significa que el sistema bancario se puede volver insolvente. El sistema bancario no puede cumplir con sus obligaciones, y no hay agentes privados quienes puedan comprar la cantidad de activos necesaria para recapitalizar el sistema bancario. Además la deuda insensible a la información, se vuelve sensible
+
+2
+tarea a realizar, si no entendemos primero cómo funciona será difícil regularlo.2
+Este trabajo se basa en Stein (2012) en donde su principal resultado es la creación excesiva de dinero privado, esta creación de dinero se debe al diferencial de tasas de fondeo de corto y largo plazo. A diferencia de este artículo, nosotros mostramos las condiciones bajo las cuales, variables como inversión y dinero privado pueden variar a través de un análisis de estática comparada. Por otro lado enseñamos que cuando las condiciones para invertir y crear dinero por parte de los bancos son buenas, los prestamistas también se ven beneficiados. También analizamos el otorgamiento de permisos para la creación de dinero, en donde nuestro principal resultado de esta parte es que encontramos que puede haber ocasiones en donde el regulador, en lugar de cobrar por el uso de permisos para la creación de dinero, tiene que pagar para que los bancos creen el dinero e inviertan. Sin embargo, también encontramos que dados nuestros supuestos en el modelo, no podemos determinar los resultados sobre las condiciones de inversión y de creación de dinero para el regulador de manera analítica. Finalmente para cada resultado obtenido elaboramos proposiciones, por otro lado Stein (2012), en su versión publicada, también da proposiciones las cuales no tienen su demostración formal; las cuales seguramente deben estar en algún borrador del artículo, en caso de ser así, no pudimos encontrar una copia de dicho borrador; sin embargo, nosotros incluimos estas demostraciones. A su vez cada resultado es acompañado de una simulación numérica.
+1.1. Revisión de la literatura
+El sistema bancario sombra es un sistema alterno al tradicional en el que los participantes como empresas o bancos buscan colocar recursos de muy corto plazo. En el sistema bancario tradicional las personas depositan sus recursos en él, los bancos asumen que los depositantes no requerirán sus recursos al mismo tiempo; sin embargo, Gorton (2010) nos enseña como históricamente puede ocurrir que los depositantes requieran de sus recursos al mismo tiempo, Diamon y Dybvig (1983) llaman a este suceso corrida bancaria.
+2 Al respecto se puede consultar el artículo escrito en la revista “The Economist”: Too big not to fail 2012 El cual nos habla del hecho de que las finanzas necesitan una mejor regulación
+
+3
+Cuando las corridas bancarias suceden, los bancos deben cumplir con sus obligaciones; así que deben regresar los recursos a sus propietarios, Shleifer y Vishny (2011) nos explican que los bancos recuperan los recursos recurriendo a las ventas de remate, las cuales, generalmente están por debajo del precio al que deberían venderse esos activos.
+Ivashina y Scharfstein (2010) nos hablan de la relación del pánico bancario sobre la oferta de crédito corporativo. Muestran que durante la crisis hubo un efecto sobre la oferta: con bancos con menor acceso al financiamiento de depósitos y mayor riesgo reducen sus préstamos más que otros bancos.
+Resulta importante conocer las consecuencias de corridas bancarias ya que en 2007 el mundo vivió una crisis con esta característica; sin embargo, la gran diferencia es que ésta ocurrió en el sistema bancario sombra. Shleifer y Vinhny (2010) señalan que en la actualidad se tiene que hacer una revisión de la literatura sobre la teoría de la intermediación financiera ya que los bancos afectan la actividad económica real, proponen un modelo de teoría de la intermediación en donde los mercados son influenciados por los sentimientos del inversionista.
+Tobias y Shin (2010) nos muestran la importancia del rol de las instituciones financieras y la importancia del crecimiento del sistema bancario sombra. Nos dicen que aunque este sistema sombra se pronunció más en Estados Unidos de América, éste tiene influencia en el sistema financiero mundial. Describen la naturaleza cambiante de la intermediación financiera en el sistema financiero tras la reciente crisis así como las políticas de respuesta de la Reserva Federal y otros bancos centrales. Enseñan como la bursatilización incrementó la fragilidad del sistema financiero, permitiendo un mayor apalancamiento por parte de bancos y otros intermediarios.
+Respecto a las acciones de la Reserva Federal Bernanke (2009) afirma que la respuesta por parte de ella ante la crisis ha sido agresiva ya que la tasa de descuento - la cual es la tasa a la que la Reserva Federal presta a las instituciones de depósito - como medida de política monetaria. También disminuyó el objetivo de la tasa de fondos federales 50 puntos base en Septiembre de 2007 hasta llegar a un recorte de 325 puntos base en la primavera de 2008. Esas políticas ayudaron a apoyar el empleo e ingresos de las
+
+4
+personas en el primer año de la crisis. Concluye diciendo que vivimos en un mundo de cambios de corto y largo plazo, en donde la Reserva Federal promoverá la recuperación económica global y que está dispuesta a hacer lo necesario para cumplir con ese objetivo.
+En este punto es importante señalar que, salvo evidencia empírica como Gorton (2010) y Zoltan y Tobias (2010), no existía modelación teórica sobre el sistema bancario sombra hasta Stein (2012), en donde nos muestra una modelación teórica del sistema bancario sombra, el resultado principal del modelo es la creación excesiva de dinero privado o como lo llaman Benmelech y Bergman (2008) y Gorton (2010) colateral; lo que genera una externalidad negativa en la economía.
+El documento se organiza de la siguiente manera: En la primera sección damos una explicación de qué es y cómo funciona el sistema bancario sombra tanto en Estados Unidos de América como en México. Posteriormente, en la segunda sección se da la explicación del modelo, detallando el rol para cada uno de los participantes en el mercado, destacando las condiciones bajo las cuales la inversión y la creación de dinero varían. Se muestra la externalidad ocasionada por la creación excesiva de dinero y el uso de permisos para su regulación. Finalmente, en la última sección, se dan las conclusiones.
+
+5
+2. El sistema Bancario Sombra
+El sistema bancario sombra, es de hecho, un sistema bancario real, los depositantes son firmas buscando un lugar seguro para efectivo de corto plazo. Asimismo los que requieren los préstamos de corto plazo son otras firmas, o incluso pueden ser otros bancos.
+La banca sombra actúa en el mercado de venta y recompra, donde el que presta dinero solicita activos como respaldo al dinero prestado, estas garantías reciben el nombre de colateral3 y generalmente son bonos; cabe mencionar que este mercado es de muy corto plazo. En específico al mercado con las características anteriores se le conoce como mercado repo. Por otro lado el sistema bancario sombra combina al mercado repo con la bursatilización. La bursatilización actúa de la siguiente manera: si alguna firma necesita dinero, crea un flujo de efectivo a través de la entrega de garantías, para hacer lo anterior crea una entidad legal (a esta entidad se le llama vehículo de propósito especial, SPV por sus siglas en inglés.) que financia la compra de estas garantías, posteriormente ramifica a estos activos de acuerdo a su calidad (esta acción es conocida como tranches) haciendo portafolios.
+El proceso general de bursatilización tal como lo enseña Gorton (2010) y Gorton (2009) es descrito mediante el diagrama que se muestra en la figura 1; en él se puede observar claramente que siempre hay un flujo en ambos lados de la operación, es decir, cuando se entrega un préstamo de efectivo, siempre se recibe la garantía; es por eso que se colocan dos flechas en sentido contrario en el diagrama.
+Una característica del mercado repo es que las garantías recibidas se pueden reusar, es decir, pueden ser vendidos a alguien más. (El término usado para esto en inglés es: rehypotecated.)
+Por otro lado, como ya se describió, hay una creación de deuda; pero este tipo de deuda tiene una característica especial: es insensible a la información, y esa insensibilidad se debe a que es muy bien aceptada para otras transacciones. Para que quede un poco más clara esta característica podemos compararla con su contraparte en el sistema bancario
+3 Un estudio empírico sobre las obligaciones de deuda colaterizada se puede encontrar en Barnett-Hart 2009
+
+6 tradicional: los depósitos a la vista, estos también son insensibles a la información porque son aceptados por los participantes del mercado. Es decir, se confía ciegamente en los bancos. Ahora sería natural preguntarnos ¿hay algo que sea sensible a la información? La respuesta es sí, y un ejemplo claro son las acciones de una empresa. Supongamos que tenemos en nuestras manos una acción de Apple, si vamos a la tienda de la esquina a comprar algún bien y queremos pagar con la acción de Apple, tal vez el tendero se preguntaría ¿cual es el valor nominal de esa acción justo en ese momento? O ¿el poseedor de esa acción sabrá algo que yo no y por eso la quiere vender? Y es precisamente el hecho de que la acción no es bien aceptada como medio de intercambio entre los participantes del mercado, lo que la hace sensible a la información, al tener esta sensibilidad se pueden tomar diferentes posturas frente al mercado dependiendo la información privada que se tenga respecto a la acción, es decir, la vendo o la compro dependiendo lo qué sé de ella. Lo anterior se puede resumir diciendo que las acciones pueden estar sujetas a problemas de selección adversa.
+En resumen, podemos decir que el sistema bancario sombra se parece al sistema bancario regulado, justo como lo menciona Gorton (2010), en: 1) Crea deuda de corto plazo e insensible a la información. 2) La deuda puede ser reusada en otras transacciones, que para fines prácticos hace la función de dinero, en particular dinero privado. Y por supuesto la gran diferencia es la falta de regulación en el sistema bancario sombra.
+Figura 1: Proceso de bursatilización. Fuente: Gorton(2010)
+
+7
+2.1. Cómo funciona el sistema bancario sombra
+Los préstamos originados por los bancos son vendidos a la entidad legal, el cual financia la compra de créditos emitiendo valores de grado de inversión en el mercado de capitales.
+La bursatilización4 es que los bancos tomen los créditos con deuda de grado de inversión, que se considera insensible a la información, a diferencia de bonos corporativos basados en acciones de la compañía.
+Para entender mejor la bursatilización sinteticemos este proceso como: la entidad legal compra los activos de la empresa, es decir, le da dinero a la empresa, el valor de esos activos depende del flujo de activos a un portafolio de activos (pool), no de un crédito otorgado. Gorton (2009) nos explica como la entidad emite valores a inversionistas, hace la ramificación de acuerdo a una clasificación, digamos que elabora portafolios con diferente calidad ligándolo directamente con las hipotecas de Estados Unidos de América.
+Por otro lado el repo es esencialmente banca de depósito construida alrededor de deuda insensible a la información. En una transacción repo, un lado de la transacción quiere pedir prestado dinero y el otro lado quiere ahorrar dinero depositando en algún lado seguro. Pensemos en los que piden prestado como un banco y el que presta como un depositante, aunque el que presta es otra empresa, tal como un banco, compañía de seguros, sociedades de inversión, etc. El depositante recibe un bono como garantía por su depósito.
+Cuando el depositante deposita dinero, el colateral quizá implique un “haircut” o margen que es el porcentaje de diferencia entre el valor de mercado de la garantía comprometida y la cantidad de fondos prestados. Por ejemplo, un haircut del 5% significa que un banco puede pedir prestado $95 por cada $100 en garantía comprometida. Un haircut protege al depositante contra el riesgo de incumplimiento del que pide prestado, el banco. El tamaño del haircut refleja el riesgo del crédito del que pide prestado y el grado de riesgo de la garantía comprometida.
+Finalmente como ya se menciono, otra característica del repo es que la garantía
+4 La busatilización es banca “fuera de balance”, es decir, son operaciones que no se contabilizan en el balance.
+
+8
+puede ser re-hipotecada. En otras palabras, la garantía recibida por el depositante puede ser usado – vendido – en otra transacción, es decir puede ser usado para garantizar una transacción con otra parte.
+2.2. Breve historia del sistema bancario sombra en Estados Unidos de Norteamérica
+Intuitivamente el sistema bancario sombra fue definido como la combinación del mercado repo y las garantías necesarias para negociar en él, incluyendo la bursatilización de deuda.
+Su evolución fue producto de un incremento en la competencia de no-bancos, menor regulación y la innovación de productos financieros Gorton (2009).
+El aumento de la bursatilización coincide con (¿o fue causada por?) el incremento en la demanda por colateral en el sistema bancario sombra Tobias y Shin (2010). Lo anterior puede observarse en la figura 3 para el caso de Estados Unidos, ya que la deuda creció más, en el sistema sombra que en el tradicional. Mientras que en Federal Reserve Bank of New York Staff Reports No.485 (2010) nos muestran como bancos comerciales y de inversión que patrocinaron bursatilizaciones, frecuentemente compraron portafolios de créditos para vender a entidades legales y entonces tomar los bonos emitidos por éste hasta que ellos pudieran ser vendidos. Esto significa que los balances de los bancos dealer, es decir, los que negocian con sus propios activos, en particular tuvieron un incremento en tamaño y esto había sido financiado de algún modo. Las firmas también, aparentemente, tuvieron un lugar por la necesidad por un lugar para depositar efectivo de corto plazo. Estos factores condujeron a un enorme crecimiento en la venta y recompra, o repo, es decir, un aumento en el comercio del mercado de préstamos de corto plazo bursatilizado. Lo anterior se muestra en la figura 2 y la figura 3. En la figura 2 se muestra el margen promedio sobre repos, en ella se puede observar como se ve una corrida bancaria, es decir, cuando los dueños de los recursos entregados a los bancos son exigidos a ser regresados. En la figura 3 podemos ver la duda bancaria en el sistema sombra contra la deuda del sistema tradicional, en ella se puede observar el crecimiento del sistema sombra.
+
+9 Y ¿Por qué hubo un aumento en la bursatilización? Aunque no estamos seguros Gorton (2010) nos da posibles respuestas a esta pregunta: 1) fue una respuesta a los requerimientos de capital bancario, el cual ha creado un costo sin beneficio compensatorio, es decir, se tenía dinero que no estaba siendo invertido en algún lado. 2) Otra posibilidad es que la demanda por colateral hizo la bursatilización rentable y esto podría no ser realizado sobre el balance porque depósitos seguros eran limitados. Esto es, la demanda por valores insensibles a la información para usar como colateral para varios propósitos que quizá hayan jugado un rol. 3) Los costos de banca rota son minimizados con financiamiento fuera de balance. 4) Finalmente la innovación en la estructura de la entidad legal que financia la deuda como algo fuera de balance. Lo que haya sido, la bursatilización ha llegado a ser una forma importante de financiamiento.
+Figura 2: Margen promedio sobre deuda estrucurada en el mercado repo Fuente: Gorton 2010
+Los depositantes pueden retirar sus fondos simplemente no renovando su repo y devolviendo sus bonos, o pueden retirar incrementando el margen sobre el colateral. Es importante señalar que, como los depósitos a la vista en bancos comerciales, el sistema también es vulnerable a pánicos. Gorton (2009) nos dice que cuando hay pánicos significa que la deuda es sensible a la información y ésta es la razón clave del por qué llegó a ser beneficiable producir información privada sobre la deuda. Esto es, algunos agentes están dispuestos a gastar recursos para aprender información privada para especular sobre el valor de esos valores, una práctica que no fue beneficiable
+
+10 antes del pánico. Esto llevó a un mercado donde se necesita producir información para comerciar. Por otro lado Ivashina y Scharfstein (2010) nos muestran que el pánico afecta los préstamos que otorgan los bancos que tienen menos acceso al financiamiento por parte de los depósitos, y esto afecta la distribución del crédito en la economía.
+Lo anterior es un interruptor devastador del régimen porque los participantes del mercado no están preparados para hacer frente con los repentinos requerimientos de información para su comprensión; valuando y comerciando valores que son repentinamente sensibles a la información. Parte de la crisis es la secuela, en la cual los valores que previamente eran insensibles se convirtieron en sensibles a la información. Cuando lo anterior sucede lleva a los bancos a las ventas de remate de activos, Shleifer y Vishny (2011) describen esto diciendo que los activos se vuelven ilíquidos ya que también es complicado encontrar quien quiera comprarlos. Por otra parte es normal pensar que si este tipo de riesgos existen, ¿Qué es lo que hace que alguien coloque su dinero en el sistema? la respuesta sería simplemente el hecho de que se tiene una confianza ciega. Además, no sólo hizo que la información ahora tuviera que ser producida, sino que existía una habilidad carente para hacerlo, lo que dificultó el comercio entre los participantes y generó desconfianza.
+Figura 3: Deuda del sistema sombra vs sistema tradicional Fuente: Federal Reserve Bank of New York Staff Reports No.485
+2.3. Sistema Bancario Sombra en México
+Aunque es poca la información sobre el sistema bancario sombra en México, podemos ver en la figura 4 algo de evidencia de la existencia de éste sistema en México.
+
+11 En la figura se muestra los reportos en billones de pesos. Un reporto es una operación en la que un intermediario financiero (reportado) transfiere al inversionista (reportador) títulos a cambio de una suma de dinero (precio), con el compromiso de que el reportado, recompre dichos títulos a un plazo determinado (anterior a su vencimiento). Se puede decir que es una transacción colaterizada.5 De este modo resulta claro que México no es ajeno al sistema bancario sombra. En la parte de busatilización, Banco de México dice que las bursatilizaciones en México se realizan con transferencia de propiedad a través de un fideicomiso el cual emite los bonos respaldados por dichos activos, los cuales pueden tener distinta prelación de pagos y por lo tanto distinto riesgo asociado.6 Como se pudo observar, si bien el sistema bancario sombra no es algo completamente nuevo y su relevancia es importante, al menos para sus participantes, después de la crisis de 2007 ha nacido un interés especial en el sentido regulatorio hacia este sistema, Shleifer y Vishny (2010).
+Figura 4: Reportos en México Fuente: Banco de México
+5 Tutorial Reporto: Análisis de deuda privada, Grupo financiero Ixe, 2010 6 Fuente: Banxico
+
+12
+3. Política Monetaria como mecanismo de estabilización financiera
+3.1. Marco Teórico
+La investigación de Stein (2012) nos habla de metas y métodos de políticas de estabilidad financiera y se centra en los siguientes elementos:
+ Creación de dinero privado no regulado, el cual crea un tipo de externalidad que puede dejar vulnerable al sistema financiero. En particular puede haber una corrida bancaria.
+ En una economía simple las herramientas de política monetaria como operaciones de mercado abierto pueden ser usadas para regular la externalidad. Una economía simple sería aquella donde los bancos comerciales son los únicos que prestan.
+ En economías más avanzadas quizá sea útil complementar la política monetaria con otras medidas, es decir en una economía donde existen otras entidades que prestan dinero.
+3.2. Introducción
+El primer paso es definir las características fundamentales del mercado que serán estudiadas. Tenemos un sistema bancario en el cual los bancos se hacen de un financiamiento por parte de los hogares para invertir en proyectos. Hay dos formas de financiarse: emitiendo deuda de corto y largo plazo.
+Existen hogares que son neutrales al riesgo, estos derivan utilidad, además del consumo, de servicios monetarios adicionales proporcionados por sus tenencias de deudas que son completamente no riesgosas. La deuda no riesgosa es fácil de valuar y facilita el intercambio de ella entre hogares.
+El modelo muestra que los bancos pueden manufacturar alguna cantidad de dinero privado sin riesgo, por lo tanto pueden disminuir sus costos de financiamiento.
+El rol de la política monetaria para la estabilidad financiera es importante en el
+
+13
+siguiente sentido: Las decisiones privadas tomadas por parte de los bancos no regulados, que vamos a llamar “bancos sombra”, con respecto a la creación de dinero no son generalmente socialmente óptimas. La creación de deuda de corto plazo más barata captura beneficios sociales, es decir, de los servicios monetarios generados para los hogares se tiene un costo que no internalizan completamente los mismos bancos.
+Si ocurre una crisis financiera, la única forma de cumplir con sus obligaciones (los bancos) es vendiendo sus activos a precios de remate. Se muestra que las ventas de remate generan una externalidad negativa.
+Así en conclusión tenemos lo siguiente: Existen bancos no regulados que participan en la creación de dinero privado, lo cual quizá podría llevar al sistema financiero a ser vulnerable a costosas crisis.
+3.3. Explicación del modelo
+Tenemos 4 agentes en este modelo: hogares, bancos, inversionistas pacientes y el planeador social. En términos muy generales, el rol de cada uno es el siguiente: los hogares, los cuales tienen dotaciones iniciales, son los que proveerán a los bancos de recursos; los bancos, emiten deuda de corto y largo plazo para hacerse de recursos. Para saber cuántos recursos pedirán, resuelven un proceso de optimización a través de un lagrangiano. Aquí es importante destacar que los consumidores siempre están dispuestos a dar los recursos necesarios que los bancos requieren, al respecto es una crítica considerable al modelo, ya que no sabemos de dónde sacan los recursos los consumidores si es que el banco quiere mucho de éstos; lo anterior es un problema típico de la teoría keynesiana tal como lo afirma Clarida, Galí y Gertlet (1999) y Galí y Gertler (2007), ya que antes de la crisis de la década de los 1970’s la política monetaria era una combinación de instinto y juicio. Posteriormente el enfoque Neo Keynesiano y de Ciclos Económicos reales colocó microfundamentos a los conceptos keynesianos clave. Por otro lado, los inversionistas pacientes como en Duffie (2010) esperan a conocer cuales son las mejores oportunidades de inversión, su principal rol será como compradores potenciales de las posibles ventas de remate de los bancos; sin embargo en la realidad, como lo afirman Shleifer y Vishny (2011), encontrar qui´en compre esos activos no es tan sencillo. Finalmente, el planeador social; como sabemos,
+
+14
+maximiza el bienestar de los hogares, comparando su solución con la de los bancos obtenemos si existe una diferencia en términos de optimización para los hogares.
+
+Tal como lo modela Stein (2012), los hogares tienen una dotación inicial y la siguiente
+
+función de utilidad:
+
+U  C0  EC2  M
+
+(1)
+
+(1) nos dice que los hogares obtienen utilidad de consumir en el periodo cero y en el periodo dos, asimismo muestra que obtiene utilidad de servicios monetarios M. Puede observarse que efectivamente el hogar es neutral al riesgo. β es el factor de descuento, mientras que γ es una medida de utilidad para los hogares. Debido a la linealidad de la función de utilidad podemos derivar dos tasa reales:
+RB  1 
+RM  1  
+Donde     1.
+
+La primera tasa es sobre bonos y la segunda es la tasa sobre el dinero. Es importante destacar que el diferencial de rendimiento sobre ambos es independiente de las cantidades de dinero y de bonos.
+
+Notemos que, por ejemplo, si γ vale mucho, significa que el consumidor recibe mucha utilidad del dinero, por lo tanto, la tasa del dinero cae, ya que los bancos pueden ofrecer una tasa más baja porque es muy valioso para los hogares.
+
+Por otro lado los bancos no tienen dotación inicial de recursos y deberán hacerse de ellos a través del financiamiento por parte de los hogares, para lo que emiten deuda de corto y largo plazo. Los recursos obtenidos son invertidos en proyectos reales. Lo anterior es debido a que los hogares no son capaces de invertir directamente.
+
+Para los bancos el hecho de que el diferencial entre tasas sea independiente de las cantidades de bonos y dinero tiene una consecuencia importante para él y para el
+
+15
+regulador: significa que la política monetaria no puede funcionar afectando las tasas reales sobre algún tipo de deuda, si no que lo hace variando las proporciones de deuda que cada banco usa, es decir una relajación de la política monetaria alienta a los bancos a dirigir sus estructuras de capital hacia fuentes de financiamiento más baratos como el dinero.7
+Finalmente, los inversionistas pacientes serán encargados de absorber activos bancarios en caso de ser necesario, de no serlo invertirán en proyectos reales.
+Ahora, la forma en que interactúan los agentes es la siguiente:
+a) Periodo cero
+En este periodo los hogares deben decidir qué hacer con su dotación inicial. Recordemos que es un modelo para bancos, por lo tanto se asume que los consumidores siempre darán los recursos que el banco pida, la pregunta es si es socialmente óptima esa elección, es decir, eligen si la consumen en el periodo cero o en el periodo 2, si eligen consumirlo hasta 2, entonces los recursos deberán ser invertidos en activos financieros. Por otro lado, de (1) sabemos que los hogares obtienen utilidad de servicios monetarios M, los cuales se interpretan: si el hogar tiene M unidades en el periodo cero, garantiza M unidades de consumo en el periodo 2.
+Por otro lado los bancos en el periodo cero no tienen dotación inicial, así que emiten deuda: dinero no riesgoso y bonos riesgosos. A su vez podemos decir que la deuda emitida es de corto y largo plazo, en donde la deuda de corto plazo es hecha sin riesgo, mientras que la deuda de largo plazo es riesgosa. Esto último tomará sentido a lo largo de la exposición del modelo. Finalmente, los recursos obtenidos por los bancos son invertidos.
+b) Periodo uno
+En el periodo 1 hay una señal pública que revela si en el siguiente periodo habrá
+7 Aunque tradicionalmente la política monetaria es el uso de las tasas, tal como se puede ver en Galí y Gertler (2007), Stein (2012) nos da una alternativa de uso de Política Monetaria.
+
+16
+un buen o mal estado. El estado bueno prevalece con probabilidad p mientras que el mal estado lo hace con probabilidad 1 − p. Estas probabilidades son conocidas por todos los agentes desde el periodo cero.
+Aquí notemos que en caso de que ocurra el estado malo, los bancos podrían verse en la necesidad de rematar sus activos para poder cumplir con sus obligaciones de corto plazo que contrajeron hacia los hogares en el periodo anterior. En caso de prevalecer el buen estado, no hay necesidad de recurrir a ventas de remate. La pregunta natural en este momento es saber ¿cómo liquidan a los hogares con deuda de corto plazo en el buen estado? En ese sentido la respuesta es que si prevalece el buen estado y no obtengo utilidad de consumo del periodo uno, puedo volver a contraer deuda en el periodo 1, por supuesto la nueva deuda debe estar ligada a la deuda de largo plazo que emitió el banco en el periodo cero.
+En este periodo entran los inversionistas pacientes, los cuales tienen una dotación inicial de W en el periodo 1, en donde W es exógena e independiente del estado. Estos deben elegir en este periodo qué deben hacer con su dotación inicial, sus opciones son: Invertir en proyectos reales o absorber los activos bancarios a precios de remate.
+c) Periodo dos
+En el periodo cero se dijo que los bancos invierten en proyectos, mientras que en el periodo uno se sabe si habrá un buen o mal estado. Si el estado bueno permanece, entonces en el periodo dos se obtiene:
+f (I)  I En donde f (I ) es una función cóncava. En cambio si el mal estado prevalece, la producción esperada en este periodo dos es I  I λ sirve para especificar el hecho de que en el mal estado, podría recibirse algo menor a lo invertido originalmente. Además, existe una probabilidad positiva de que la producción colapse a cero. En particular, en el mal estado, la producción es I
+q con probabilidad q y cero con probabilidad 1 − q. Es precisamente la probabilidad en el estado malo de que la producción colapse a cero, lo que hace de la deuda
+
+17
+de largo plazo, con vencimiento en el periodo 2, sea riesgosa. Notemos que si la producción pudiera ser mayor que cero, entonces existiría la posibilidad de hacer algo de deuda de largo plazo sin riesgo; entonces ya no hay un mapeo uno a uno entre la madurez de la deuda y la habilidad para que la deuda sea hecha sin riesgo. Aquí es importante señalar que f (I )  I sólo se da si la probabilidad del buen estado es muy alta, para probabilidades muy bajas del buen estado, o muy altas del mal estado, puede ocurrir que f (I )  I , entonces se toma el caso I . Para los inversionistas pacientes tenemos que en el periodo uno dijimos que podían invertir en proyectos reales o absorber activos de los bancos dependiendo del estado que fuera a ocurrir.
+De cualquier manera, lo que invierta en proyectos reales se obtiene en el periodo dos para algún K:
+g(K) en donde g es una función cóncava creciente y K es lo que se invirtió en el periodo uno en los proyectos reales.
+En cambio, si el estado malo fue revelado en el periodo uno, deberán absorber alguna cantidad de activos bancarios.
+Finalmente, los recursos regresan a los hogares. Ya que conocemos el rol de cada agente, veamos los posibles resultados de la interacción entre ellos. Supongamos que el banco decide que va a rematar una cantidad ∆ de activos, él sabe que recurriría a estas ventas sólo si en el periodo uno se revela el mal estado, también sabe que su producción esperada en este caso es I así el ingreso total para el banco será kI , donde 0  k  1 y lo que no se vende entonces da una producción en el periodo dos de (1 )I . De este modo podemos interpretar a k como una medida de descuento al valor esperado asociado con la venta de activos en el periodo 1. Cabe mencionar que k es una variable endógena y depende de la venta total de activos hecha por todos los bancos en la economía. Más adelante se detalla un poco más a k.
+De este modo podemos observar que los bancos pueden verse incentivados a emitir deuda
+
+18
+de corto plazo, porque esta deuda puede ser hecha sin riesgo y representa una forma barata de financiamiento, ya que los bonos dan un mayor rendimiento. Además lo que mantiene segura la deuda de corto plazo es la habilidad del banco para vender activos en el mal estado.8 Sin embargo como se mencionó antes, la creación excesiva de dinero puede crear una externalidad negativa. A continuación vemos como es que la deuda de corto plazo puede ser no riesgosa.
+
+Supongamos que el banco decide crear una fracción m de su inversión total I emitiendo
+
+deuda de corto plazo. Para que la deuda de corto plazo sea hecha sin riesgo notemos lo
+
+siguiente:
+
+Si él aumenta la fracción m deberá pagar en el corto plazo la tasa RM , entonces
+
+el total a regresar en el corto plazo (t=1) será mIRM  M la pregunta obligada es si
+
+¿Puede cumplir con esta obligación en el corto plazo?
+
+Un poco más arriba se mencionó la posibilidad de que el banco vendiera una
+
+fracción de activos ∆, con unos ingresos totales de kI , entonces requerimos lo
+
+siguiente:
+
+kI  mIRM
+
+(2)
+
+o alternativamente:
+
+  mRM k
+
+Y como sabemos que ∆ es una fracción, entonces ∆ ≤ 1 por lo que la cota superior para m
+
+será:
+
+m max
+
+
+
+k RM
+
+(3)
+
+Claramente la ecuación (2) nos dice que mis ingresos deben ser iguales a mis
+
+obligaciones, notemos que ambas cantidades están tomadas en cuenta en el mismo
+
+periodo, es decir para el periodo 1. La ecuación (3) simplemente nos dice que la
+
+fracción m no debe pasar de cierta cantidad para que sea deuda sin riesgo, de lo
+
+contrario podría el banco no cumplir con sus obligaciones de corto plazo y entonces
+
+habría un riesgo para devolver M a los hogares. Recordemos que la deuda de corto
+
+8 Shleifer y Vishny (1992) dan una buena descripción sobre liquidación de activos, muestran que cuando una industria tiene la necesidad de vender activos, generalmente conduce a ventas a precios por debajo de su valor ya que es difícil encontrar quién pueda y quiera comprar dichos activos porque los participantes en el mercado están contagiados de la misma necesidad de venderlos ante una corrida bancaria.
+
+19
+
+plazo tiene vencimiento en el periodo uno. Por otra parte, para los inversionistas pacientes sabemos que si ocurre el buen estado,
+
+invierten toda su dotación inicial en el proyecto g, con lo que obtendrían en t  2 :
+
+g(W )
+
+Sin embargo en el mal estado deberán absorber los activos bancarios a precio de remate.
+
+Recordemos la siguiente ecuación: mIRM  M
+que es lo que requiere el banco para pagar a los hogares la deuda de corto plazo, también puede verse como los recursos que debe vender para poder cumplir sus
+
+obligaciones de corto plazo hacia los hogares, es decir, es la cantidad que necesita de los inversionistas pacientes para pagar a los hogares. De este modo, los inversionistas pacientes sólo invierten en proyectos reales lo siguiente:
+g(W  M )
+
+Para que los inversionistas pacientes estén dispuestos a aceptar estos activos, el rendimiento marginal de los nuevos proyectos debe ser el mismo que el rendimiento de comprar los activos bancarios.
+
+Lo anterior nos ayuda a determinar el factor de descuento de las ventas de remate, en particular:
+
+1  g'(W  M )
+
+(4)
+
+k
+
+ó
+
+k
+
+1
+
+g'(W  M )
+
+Veamos la intuición de la ecuación (4):
+
+Para empezar clarifica el costo real de las ventas de remate, y de la deuda de corto plazo ya que por ejemplo: si M aumenta, hay que vender más activos bancarios, los cuales serán absorbidos por los inversionistas pacientes, los cuales dejarán de invertir en proyectos reales. Entonces:
+dk g'' 
+dM g'2 Y como g'' es negativa entonces:
+dk  0 dM
+
+20
+
+Es decir, el valor presente (para el periodo uno) de los ingresos de las ventas de remate valen menos. Sin embargo, este problema no lo internaliza el banco, es decir, para cada banco k es fija y nada la altera, lo anterior jugará un rol importante más adelante.
+
+Ahora mostraremos el problema de optimización del banco, el cual invierte una cantidad I y se financia con alguna fracción m  mmax de dinero.
+
+En t  0 el beneficio neto esperado del banco en el periodo 2 es el siguiente:
+      pf (I)  (1 p)I  IRB  mI RB  RM  1 pzmIRM (5)
+
+Donde se ha definido:
+
+z  (1  k) k
+como la tasa neta de rendimiento sobre los activos vendidos en remate. Notemos lo siguiente: Si z es muy grande, entonces, esto corresponde a descuentos grandes de las ventas de remate. Veámoslo de la siguiente manera:
+
+z  1 1  g'(W  M ) 1 k
+Ahora interpretemos cada término de la ecuación (5):
+  El primer término es: pf (I )  (1 p)I  IRB El cual simplemente es el valor neto
+
+de invertir solamente financiándose con bonos a una tasa alta, y por lo tanto no necesita vender activos.
+  El segundo término es: mI RB  RM que es el ahorro en costo de financiamiento asociado
+
+con una fracción de dinero m en la estructura de capital, es decir, lo que se ahorra por emitir dinero privado y no bonos.
+Finalmente el último término es 1 pzmIRM el cual captura la pérdida esperada
+
+de las ventas de remate asociadas con esta estructura de capital de corto plazo más
+riesgosa. También puede verse como (1 p)g'(W  M ) 1M , es decir el costo de
+
+la liquidación en caso de que pase el estado malo.
+
+Cada banco elige m e I que maximice la ecuación (5) y como restricción tenemos la
+
+restricción
+
+colateral.
+
+m
+
+m max
+
+
+
+k RM
+
+.
+
+Recordemos que cada banco trata a k como fija, es decir ellos no internalizan el impacto de
+
+sus decisiones sobre las ventas de remate.
+
+Armando el lagrangiano tenemos lo siguiente:
+
+21
+
+  max L 
+mI 0
+
+pf (I )  (1 p)I  IRB
+
+ mI(RB
+
+ RM )  (1 
+
+p) zmIRM
+
+ m  
+
+k RM
+
+ 
+
+(6)
+
+Obteniendo las condiciones de primer orden:
+
+Derivando con respecto a m:
+
+   I RB  RM  (1 p)zRM  
+
+(7)
+
+Derivando con respecto a I:
+
+  pf '(I )  (1 p)  RB  m RB  RM  (1 p)zmRM  0
+
+(8)
+
+Usando la ecuación (7) podemos reescribir (8) como: pf '(I )  (1 p)  R B  m I
+Analicemos (6), si la restricción se tomara, es
+
+decir,
+
+(9) m  mmax , si
+
+(RB  RM )  (1 p)zRM , lo que quiere decir que si el diferencial entre bonos y dinero es
+
+suficientemente grande, o en otras palabras, si lo que se ahorra el banco es mayor a
+
+sus costos. Alternativamente si el spread fuera muy pequeño en equilibrio, o sea, (RB  RM )  (1 p)zRM , entonces el banco elegiría una solución interior para m, y en
+
+el óptimo.   0
+
+Suena completamente lógico pensar que cuando los bancos ahorran grandes
+
+cantidades de costos de financiamiento en deuda de corto plazo, se ven motivados a crear más dinero, es decir, llevarlo al máximo. Analicemos por qué el banco a veces elige una m interior: de (7) podemos ver que si existe un bajo diferencial de tasa entonces tenemos la siguiente igualdad:
+
+RB  RM  (1 p)zRM
+
+Podemos interpretar el lado izquierdo como el ahorro y el lado derecho como el costo esperado de las ventas de remate, si la igualdad anterior se da, el banco puede elegir una m interior por la siguiente razón: Sabemos lo siguiente
+
+z  (1  k) k
+y
+
+1  g'(W  M ) k Si el banco escoge una m máxima tal que la igualdad entre ahorro y costo esperado se cumpla, entonces:
+
+22
+  1  g' W  mIRM  g'W  kI   z  g'W  kI  1
+k el cual es el valor máximo que puede tener z, por lo tanto si el banco escoge una m interior, es decir, más pequeña que la m máxima, el valor de la g' caerá y por consecuencia el valor de la z también, entonces las pérdidas esperadas volverán a ser menores que el ahorro de crear dinero, y es esta precisamente la razón por lo cual se elige una m interior en el caso de diferenciales de tasas pequeños.
+
+Cuando el banco decide tomar una m máxima está escogiendo:
+
+m
+
+
+
+k RM
+
+La pregunta es: ¿cómo se ve la m interior?
+
+Hay que recordar que la m máxima, es, claramente, la cota superior para la creación de una
+
+fracción de dinero, y esta cota se alcanza sólo si el banco está dispuesto a vender una
+
+fracción ∆ = 1 de sus activos físicos. De tal manera que cualquier m interior involucra una
+
+  1, es decir:
+
+con   1
+
+m  k RM
+
+Finalmente si:
+
+RB  RM  (1 p)zRM
+
+Entonces m = 0
+
+Por otro lado hay dos formas de satisfacer (9): si el banco elige una restricción interior entonces η = 0, entonces (9) se transforma en pf '(I )  (1 p)  RB . La otra forma es que si el banco elige la solución de esquina, entonces m  mmax , y   0 , en cuyo caso es claro que pf '(I )  (1 p)  RB . Lo anterior podemos entenderlo de la siguiente manera: si el diferencial de tasas entre bonos y dinero es muy grande, entonces se escoge llevar el dinero hasta la cota superior, esto significa que la I * óptima para este problema será necesariamente mayor que la solución al problema de banco si sólo se financiara con bonos.
+
+Del problema de optimización del banco podemos resumir o destacar lo siguiente:
+
+23
+En regiones de bajo diferencial de tasas, las elecciones de financiamiento y de inversión del banco son decisiones separadas. Esto se debe a que m  mmax y la habilidad del banco para financiarse con dinero no está restringida por la cantidad que invierte. Por el contrario, en la zona de alto diferencial de tasas, en la cual m  mmax , el banco está sobre su restricción colateral, y no puede emitir más dinero si no incrementa la cantidad de activos físicos que respaldan su deuda. De este modo la decisión de inversión y de financiamiento se toman juntas. Lo anterior podemos resumirlo en la siguiente proposición y a diferencia de Stein (2012) nosotros hacemos la prueba formal de ella.
+Proposición 1. Definamos I B como el nivel óptimo de inversión para un banco que se financia exclusivamente en el mercado de bonos de largo plazo: pf '(I B )  (1 p)  RB  0 . La solución al problema del banquero involucra dos regiones. En la región de bajo diferencial de tasas, el banco elige m  mmax e I *  I B . En la región de alto diferencial de tasas el banco elige m  mmax e I *  I B .
+Demostración Tomemos la condición de primer orden del banquero con respecto a la inversión (8).
+Caso 1: Zona de bajo diferencial de tasas. De la definición de bajo diferencial de tasas, sabemos que:
+RB  RM  (1 p)zRM Por lo tanto, la condición de primer orden se reduce a:
+pf '(I * )  (1 p)  RB  0 Que es precisamente la inversión financiada únicamente por bonos de largo plazo, por lo tanto:
+I*  IB
+Caso 2: Zona de alto diferencial de tasas. De la definición de alto diferencial de tasas, sabemos que:
+RB  RM  (1 p)zRM
+
+24
+Y para que se cumpla la condición de primer orden con respecto a la inversión, entonces: pf '(I * )  (1 p)  RB  0  f '(I * )  f '(I B )
+Por lo tanto como f es cóncava, entonces I*  IB
+Además ahora hacemos análisis estático comparativo para el banco junto con sus simulaciones. Hay que resaltar todos los ejemplos de las simulaciones numéricas se toman como base las formas funcionales de Stein (2012). Los valores de los parámetros son diferentes.
+
+Proposición 2: Si la probabilidad del buen estado aumenta, la inversión también debe hacer lo mismo
+
+Demostración Tomemos el caso del problema del banquero, observemos la condición de primer orden con respecto a la inversión:
+
+Sea: Caso 1: bajo diferencial de tasas
+g( p, I )  pf '(I )  p    RB
+
+Nos interesa conocer la siguiente derivada: dI Obteniendo la derivada implícita de la dp
+
+siguiente manera:
+
+dI   g p   f '(I )  
+
+dp g I
+
+pf ''(I )
+
+Ahora necesitamos saber la relación entre f '(I ) y  .
+
+Afirmación: f '(I )    0
+
+p( f '(I )  )    RB  0 tenemos que   RB  0 debido a que RB  1 porque 1  1 
+
+porque   1 y también   1 por lo tanto podemos concluir que: f '(I )    0 .
+
+Regresando a la proposición, ahora podemos determinar el signo de la derivada. Por lo
+
+tanto dI   g p   f '(I )    0
+
+dp g I
+
+pf ''(I )
+
+25
+
+Caso 2: alto diferencial de tasas
+
+g( p, I )  pf '(I )  p    RB  m(RB  RM )  (1 p)zmRM
+
+Entonces:
+
+dI   g p   f '(I )    zmRM
+
+dp g I
+
+pf ''(I )
+
+Una vez más necesitamos el signo del numerador de la fracción. Para esto, nos apoyamos
+
+en la siguiente afirmación.
+
+Afirmación: f '(I )    zmRM  0
+
+Del caso anterior sabemos que f '(I )    0 y a eso le sumamos algo positivo, entonces la
+
+afirmación debe ser verdad. Por lo tanto: dI  g p   f '(I )    zmRM  0
+
+dp g I
+
+pf ''(I )
+
+Ejemplo 1 Con f (I )   log( I )  I ; g(K)   log( K) ; RB  2.00 ; RM  1.5 ;   30 ;   100 ;   0.5; W  200 y p  0.75 .
+
+Este ejemplo refleja una economía con un buen ambiente económico para invertir y un diferencial de tasas que tomará sentido cuando entre el planeador social.
+
+Para esos valores, se obtuvieron los siguientes resultados: La elección de los bancos es: M *  26.2898 e I *  30.2686 Si aumentamos la probabilidad a p  0.9 , y mantenemos todo lo demás constante, de acuerdo a lo demostrado en la proposición, la inversión debe aumentar, además, como la creación de dinero privado depende directamente de la inversión, entonces éste último también debe aumentar. Entonces obtenemos: M *  31.0706 e I *  39.0773
+
+Lo anterior muestra la robustez del modelo de Stein (2012) ya que con diferentes valores de los parámetros, el resultado no se ve afectado.
+
+26
+Figura 5: Variación de la inversión ante movimientos en la probabilidad del buen estado.
+Figura 6: Variación de la creación de dinero privado ante movimientos en la probabilidad del buen estado.
+La figuras 5 y 6 nos muestran como varían la inversión y el dinero privado ante movimientos en la probabilidad del buen estado en la economía. Podemos observar como ambas variables aumentan conforme la economía presenta un buen ambiente para invertir. Proposición 3: Si el parámetro aumenta, la inversión del banquero aumentará también. Notemos de las condiciones de primer orden del banquero para la inversión, que para medir su sensibilidad hacia el parámetro λ no se tiene que hacer por casos, así sólo usaremos el caso de bajo diferencial de tasas.
+
+27
+g(, I )  pf '(I )  p    RB  0 dI    p 1  0 , debido a que f ''(I )  0 y p  1 d pf ''(I ) De lo que podemos concluir que si p  1 existe una sensibilidad hacia el parámetro λ, esto es lógico ya que si p  1 la probabilidad del mal estado es cero y el banco no se preocupa por este estado de la naturaleza. Cuando p  1, existe una probabilidad positiva del mal estado y el banquero debe preocuparse por este posible resultado de la naturaleza.
+
+La intuición es que como el parámetro λ mide que tan “mala” sería la inversión en el estado malo, si aún en este estado adverso de la naturaleza la producción de la inversión es “alta”, el banco puede arriesgarse a invertir más.
+
+A partir de aquí, para todos lo ejemplos usaremos como punto de comparación el ejercicio del ejemplo 1.
+
+Ejemplo 2: Aumentando el parámetro λ a λ = 1 obtenemos: I* . Lo anterior también puede verse en la figura 7. En ella observamos que mientras mayores sean los retornos en la inversión hecha por el banco en el estado malo de la economía, éste está dispuesto a invertir más.
+
+Proposición 4: Si β aumenta, es decir, si la utilidad del consumidor por los bonos de largo plazo es mayor, es más fácil para el banquero financiarse, por lo que la inversión aumenta.
+
+Caso 1: Zona de bajo diferencial de tasas pf '(I )  p    RB  0
+
+Queremos dI recordemos que R B  1 por lo tanto
+
+d
+
+
+
+1 dI    2  0 puesto que f ''(I )  0 d pf ''(I )
+
+28
+
+Figura 7: Variación de la inversión ante movimientos en el parámetro λ Caso 2: Zona de alto diferencias de tasas: Por lo tanto cuando β aumenta la inversión también y es precisamente el hecho de que es más barato financiarse.
+g(, I )  pf '(I )  p    RB  m(RB  RM )  (1 p)zmRM
+
+1  m 1 1 1 m
+
+dI    2
+
+2  2
+
+ 0 puesto que f ''(I )  0 . Además m  1 lo que
+
+d
+
+pf ''(I )
+
+pf ''(I )
+
+garantiza el signo de la derivada.
+
+Ejemplo 3: Con el ejercicio base tenemos:   0.5 Si calculamos a:   0.625 y mantenemos todo lo demás constante, entonces la inversión cambia a: I *  38.4978 La intuición es que como es mas barato para el banco financiarse, entonces él puede invertir más, lo cual se puede observar en la figura 8.
+
+29
+
+Figura 8: Variación de la inversión ante movimientos en β
+
+3.4. Creación socialmente excesiva de dinero: un rol para la regulación
+Ahora mostraremos como a diferencia del problema de optimización del banco, el planeador social sí toma en cuenta que k es una variable endógena, es decir, internaliza los costos de financiamiento.
+
+El trabajo del planeador social es maximizar la utilidad del hogar representativo dada la ecuación (1). Es fácil mostrar la ecuación (1) en unidades de consumo del periodo 2. Tomando como base las ecuaciones de Stein (2012) obtenemos lo siguiente.
+
+Sea:
+con probabilidad p y, con probabilidad (1 p)
+
+C0  Y  I W C2  f (I )  g(W )
+C2  I  g(W  M )  M
+
+Luego, recordaremos que la utilidad del hogar está determinado por:
+C0  EC2  M
+Sustituyendo obtenemos:
+
+30
+
+  U  pf (I )  (1 p)I  IRB  M (RB  RM )  pg(W )  (1 p)g(W  M )  M WRB RM
+
+(10) Por conveniencia notemos lo siguiente:9
+
+M
+
+(RB  RM RM
+
+)
+
+
+
+MR B
+
+De este modo, comparando el beneficio esperado del banco en la ecuación (5) con la ecuación (10). Podemos ver que los dos primeros términos coinciden, la diferencia está en los últimos tres.
+
+Notemos que al planeador social no le interesan las pérdidas esperadas de las ventas de remate como tal, ya que éstas sólo representan una transferencia de los bancos a los inversionistas pacientes. Sin embargo, al planeador social le interesan los rendimientos esperados netos invertidos por los inversionistas pacientes, es decir:
+pg(W )  (1 p)g(W  M )  MWRB
+
+Analicemos estos tres últimos términos. pg(W ) es lo que obtendría el hogar por parte de los inversionistas pacientes si el estado bueno se realizara, en el cual los inversionistas no deben absorber ventas de remate de los bancos y toda su dotación la invierten en g.
+(1 p)g(W  M )  M es lo que obtendría el hogar en el estado malo, en este caso los
+inversionistas sí tienen que absorber las ventas de remate de los bancos y sólo invierten (W  M ) en g, los hogares también reciben una cantidad M que es transferida de los inversionistas a los bancos y de los bancos a los hogares por las liquidaciones de corto plazo; de la cual obtienen una utilidad a la que antes llamamos servicios monetarios o creación de dinero privado. WRB es el costo de oportunidad de ser inversionista paciente.
+
+Vale la pena hacer una aclaración del último término, así que veámoslo de la siguiente manera: los inversionistas pacientes se hacen de los recursos de los hogares en el periodo cero, emitiendo deuda de largo plazo, es decir, que paga una
+9 El desarrollo es parte de la demostración de la proposición 7.
+
+31
+tasa R B , en otras palabras, estamos diciendo que el consumidor en el periodo cero eligió cuánto consumir y cuánto invertir con los inversionistas pacientes y cuánto con los bancos. Sin embargo, es importante notar que del periodo cero al uno, los inversionistas no juegan ningún tipo de rol, por lo que hasta el momento se ha considerado y se seguirá considerando a W de manera exógena ya que no altera de ninguna manera los resultados del modelo.
+
+Regresando al problema del planeador social, éste tiene la misma restricción colateral que
+
+los bancos
+
+m  mmax
+
+
+
+k RM
+
+.
+
+Denotando el valor sombra de la restricción con
+
+p
+
+y
+
+recordando la definición de M  mIRM obtenemos el siguiente lagrangiano:
+    Lp  pf (I )  (1 p)I  IRB  mI RB  RM  pg(W ) 
+
+     (1 p) g W  mIRM
+
+ mIRM
+
+ WR B
+
+
+
+p  m 
+
+
+
+k RB
+
+ 
+
+(11)
+
+Antes de obtener las condiciones de primer orden debemos notar que a diferencia
+
+del problema del banco individual, el planeador social reconoce la dependencia de k
+
+sobre el comportamiento promedio de todos los bancos, es decir, reconoce la existencia
+
+de la ecuación (4), o sea:
+
+1
+  k  g' W  mIRM
+
+Ahora sí, obteniendo las condiciones de primer orden respecto a m obtenemos:
+
+   I
+
+RB  RM
+
+ (1  p)zRM
+
+
+
+p 1  
+
+g'' g'2
+
+m
+
+(12)
+
+De manera similar obtenemos la condición de primer orden para I:
+
+   pf '(I )  (1 p)  RB  m RB  RM  (1 p)zRM   p g'' m
+
+(13)
+
+g'2
+
+Ahora debemos comparar las soluciones del planeador social con las del banco individual, así veamos la diferencia entre la solución de m, es decir, ecuaciones (7) y (12):
+   I RB  RM  (1 p)zRB  
+
+y
+
+   I
+
+RB  RM
+
+ (1  p)zRM
+
+
+
+p
+
+1 
+
+g'' g'2
+
+m
+
+32
+
+La primera ecuación es la solución del banco individual y la segunda del planeador social. Podemos notar que ambas soluciones coinciden en zonas de bajo spread, donde
+  RB  RM  (1 p)zRM donde la restricción colateral no se realiza, es decir, donde
+
+   p  0 y en este mismo caso, la ecuación (13) se reduce a la ecuación (8).
+
+Si  p  0 
+
+   pf '(I )  (1 p)  RB  m RB  RM (1 p)zRM  0
+
+Lo que significa que el planeador social elige el mismo nivel optimo de I que el banco individual así como el mismo nivel de creación de dinero privado m en zonas de bajo diferencial de tasas.
+
+Por otro lado, en la región del alto diferencial de tasas donde  p  0 , o que la restricción es realizada, el término del lado derecho de la ecuación (13):
+ p g'' m g'2
+es el que describe la diferencia entre la solución del banco y la del planeador social.
+
+Notemos lo siguiente: Sabemos que g es una función creciente y cóncava  g' 0 y g'' 0 , lo que implica que el producto marginal de la inversión es más alto en la solución del planeador social, o alternativamente I es más pequeño, es decir, en esta zona de alto diferencial, al planeador social le gustaría contraer la inversión y por lo tanto la creación de dinero privado en relación al resultado privado.
+
+Resumamos lo anterior en la siguiente proposición, una vez más a diferencia de Stein (2012) nosotros daremos la demostración formal de ella.
+Proposición 5 Denotemos los valores óptimos de la inversión privada y social por I * y I ** respectivamente y similarmente para la creación de dinero privado M. Para la región de bajo diferencial de tasas I *  I ** y M *  M ** . En la región de alto diferencial de tasas I *  I ** y M *  M ** .
+
+Demostración
+
+33
+Recordemos las condiciones de primer orden del banco (8) y del planeador social (13) con respecto a la inversión. Y las condiciones de primer orden con respecto a la m para el banco (7) y para el planeador social (12).
+
+Caso 1: Zona de bajo diferencial de tasas.
+
+Entonces:
+
+RB  RM  (1 p)zRM
+  I RB  RM  (1 p)zRM  0
+
+y
+
+ p  0
+
+Entonces la condición de primer orden con respecto a la inversión, en ambos casos se
+
+reduce a:
+
+pf '(I )  (1 p)  RB  0
+
+Por lo tanto
+
+Luego, como
+
+I *  I **
+
+M *  mI *RM
+
+y
+
+M **  mI **R M
+
+Por lo tanto
+
+M *  M **
+
+Caso 2. Zona de alto diferencial de tasas. Entonces.
+RB  RM  (1 p)zRM
+
+entonces las condiciones de primer orden con respecto a la inversión del banco y el planeador social son, respectivamente:
+  pf ' (I * )  (1 p)  R B  m R B  R M  (1 p)zmRM  0
+
+   pf ' (I**)  (1 p)  RB  m
+
+RB  RM
+
+ (1 p)zRM
+
+
+
+ p
+
+g'' g '2
+
+Notemos que g' 0 y g'' 0 entonces, la condición de primer orden del banquero con
+
+respecto a la inversión es cero, mientras que la del planeador social es igual a algo
+
+34 positivo, entonces la única forma de que eso pase es:
+f '(I ** )  f '(I * )  I *  I ** Luego, como
+M *  mI *RM y
+M **  mI **RM Por lo tanto
+M *  M **
+Ejemplo 4 Con el ejercicio base tenemos M *  26.2898 e I *  30.2686 La elección del planeador social es: M **  24.9936 e I *  28.5630 De este modo podemos ver que existe una diferencia en los óptimos entre banco y planeador social. Intuitivamente esto es correcto, ya que el banco no logra internalizar el daño que hace por la creación de dinero, mientras que el planeador social sí lo hace.
+Figura 9: Variación de la utilidad ante movimientos en la probabilidad del buen estado.
+Proposición 6: Si la probabilidad del buen estado aumenta, el hogar esperaría que su utilidad aumentara.
+
+35
+dU  f (I )  I  g(W )  g(W  M )  M dp Sabemos que f (I )  I y que g(W )  g(W  M )  M porque en el buen estado obtengo más que en el mal estado.
+
+Para los bancos:
+
+Ejemplo 5 La utilidad calculada del ejercicio base con una p  0.75 , M *  26.2898 , I *  30.2686 es de U *  184.32 y si aumentamos la probabilidad del buen estado a p  0.90 obtenemos M *  31.0706 , I *  36.7854 que nos da una utilidad para los hogares de U *  200.32
+
+Intuición: Si la probabilidad del buen estado aumenta, sabemos que los bancos aumentan la inversión por la proposición 4 es natural que las personas aumenten la utilidad o mejoran su bienestar porque la probabilidad de obtener un rendimiento mayor sobre su inversión aumenta, es decir, recibir f (I )  I es muy probable; lo anterior se puede corroborar en la figura 9.
+
+Proposición 7: Si γ aumenta entonces la utilidad aumenta, de la ecuación (10) conocemos la función de utilidad, notemos que:
+  M R B  RM  RM 1 1 M    
+1  
+M 1  
+MR B
+
+dU  MR B y M  0 y RB  0 entonces dU  0
+
+d
+
+d
+
+36
+Ejemplo 6 Con el ejercicio base tenemos: Cuando RM  1.5 ,   0.02631, I *  30.2686 , M *  26.2898 , U *  184.32 Cuando RM  1.1,   0.4090 , I *  54.7103 , M *  42.9588 , U *  198.171 La figura 10 nos muestra que entre más utilidad obtenga el consumidor del dinero privado por la proposición 4 la inversión aumenta ya que es más barato para el banco financiarse con deuda de corto plazo.
+
+Figura 10: Variación de la utilidad ante movimientos en el parámetro del dinero privado.
+Proposición 8 Para la solución del planeador social, si el parámetro γ aumenta, la inversión también debe aumentar.
+
+Demostración Debemos obtener dI de (13), entonces:
+d
+
+           dI                d
+
+
+
+(
+
+m   )2
+
+
+
+(1  p)z (   )2
+
+ pg'''
+
+W
+
+ mIRM
+
+ 
+
+mI (   )2
+
+
+
+g ' (W
+
+ mIRM )
+
+2
+
+ pg''
+
+W
+
+ mIRM
+
+(2)
+
+g'
+
+W
+
+ mIRM
+
+pf ' ' (I )   p g ''' W  mIRM  mRM (m) g' W  mIRM 2   p g' ' W  mIRM (m)(2) g' W  mIRM 3
+
+3 g' '
+
+W
+
+ mIRM
+
+
+
+(
+
+
+
+mI 
+
+)
+
+2
+
+ 
+
+g'' W  mIRM  mRM
+
+Notemos que aquí el problema radica en que no tenemos suficiente información sobre la función g, por lo tanto no podemos determinar el signo de g''', además no podemos decir que término es más grande en la derivada, por lo tanto no podemos determinar el
+
+37
+signo de dI . Sin embargo, aunque no podamos sacar una conclusión analítica d
+para este caso, podemos apoyarnos en la simulación numérica.
+Ejemplo 7 Del ejemplo base tenemos: I **  28.563 para una   0.2631; Si aumentamos   0.4090 entonces I **  40.0924
+Intuitivamente pensamos que debido al hecho de que el diferencial de tasas aumenta cuando γ se mueve, las oportunidades de inversión son mejores, por lo cual para el planeador social también debe ser mejor que los bancos inviertan más.
+Ahora entendamos bien cómo es que entra en el modelo la externalidad. La fricción clave del modelo es la restricción colateral, cuando la restricción está operando el impacto de un agente sobre los precios de mercado afecta a otros agentes. La importancia de la restricción colateral puede ser vista en la expresión que diferencia la condición de primer orden del planeador social con la del banco individual, es decir:
+ p g'' m g'2
+La intuición detrás de este resultado es la siguiente:
+En zonas de bajo diferencial de tasas, donde la restricción no se toma; cuando cada banco decide cuanto dinero crear, de acuerdo a (7), cada uno compensa el costo de
+  financiamiento bajo RB  RM asociado con dinero contra el potencial descuento de las
+ventas de remate (1 p)zRM . Y de acuerdo a (12), ésta es exactamente la misma compensación que el planeador social muestra intentando balancear el valor marginal de los servicios monetarios de hogares contra el costo marginal de la desinversión por los inversionistas pacientes.
+En contraste, cuando la restricción se toma cada banco elige m  mmax , un incremento en la creación de dinero tiene un efecto: se reduce el valor de equilibrio de k y efectivamente, como se mencionó antes, cae el valor del colateral de todos los activos bancarios. Así, cuando cualquier banco crea una
+
+38
+unidad adicional de dinero y captura el beneficio privado por hacer eso, el beneficio social es menor que una unidad de dinero, ya que los otros bancos no pueden producir mucho M para un nivel de I dado.
+Ahora se muestran las posibles soluciones a la externalidad
+La herramienta convencional de política monetaria es hacer operaciones de mercado abierto.
+Al problema expuesto antes parece natural pensar que el regulador simplemente debería colocar un cap (tope) al dinero total creado por cada banco. Sin embargo, cuando el regulador está imperfectamente informado sobre las oportunidades de inversión de los bancos, éste no sabría donde colocar el cap, puesto que es deseable para los bancos con fuertes oportunidades de inversión hacer mayor creación de dinero. A lo anterior, es mejor un sistema flexible “cap-and-trade” en donde se conceden permisos comerciables que se negocian, los cuales le permiten al banco crear alguna cantidad de dinero privado y el precio de los permisos revela información, para el regulador, sobre las oportunidades de inversión de los bancos. Por ejemplo, si el precio de los permisos aumenta, entonces eso significa que las oportunidades de inversión son fuertes o mejores, de esta manera el regulador aflojaría el cap colocando más permisos.
+Una manera más realista de ver lo anterior es si suponemos que la deuda de los bancos está sujeta a requerimientos de reservas, de este modo el sistema “cap-and-trade” se vuelve viable, lo anterior puede verse de la siguiente manera: Si el banco central inyecta reservas en el sistema es como si aumentara el número de permisos para crear dinero privado. Ligado a lo anterior, la tasa de interés nominal, la cual captura los costos de las tenencias de reservas, funciona como precio de los permisos.
+De esta manera, las operaciones de mercado abierto que ajustan las reservas en respuesta a cambios en la tasa de interés nominal de corto plazo, pueden usarse para lograr la solución “cap-and-trade”.
+
+39
+Como consecuencia de lo anterior, no es necesario asumir que el Banco Central tiene el monopolio del control sobre todas las formas de medios de cambio. Finalmente para ver las consecuencias de la política monetaria sobre sus efectos en la estabilidad de precios de activos, nos apoyamos en la teoría fiscal del nivel de precios, en donde el nivel de precios está determinado no por la base monetaria sino por la deuda gubernamental total.10
+Hasta ahora resulta claro que hay ocasiones en las que existe una creación excesiva de dinero por parte de los bancos, lo que sugiere un rol para la regulación.
+Primero supongamos que el regulador observa todos los parámetros del modelo, el óptimo social puede ser fácilmente implementado con un “tope” sobre la creación de dinero; simplemente a cada banco se le prohíbe emitir por encima de cierta cantidad de dinero M ** , la cual el regulador puede calcular directamente de (12) y (13).
+Sin embargo, si el regulador está imperfectamente informado, es complicado para el regulador colocar el “tope” adecuado. Consideremos el caso donde los bancos conocen la productividad de sus oportunidades de inversión, es decir, conocen la función f (I ) , pero el regulador no. Como pudimos observar de la ecuación (13), el valor de I ** y por lo tanto el valor de M ** dependen del producto marginal de la inversión f '(I ) . Intuitivamente hace sentido que se les permita a los bancos crear más dinero para financiarse cuando las oportunidades de inversión son mejores. Sin el conocimiento de f '(I ) , es imposible para el regulador elegir la creación de dinero socialmente óptima con un simple “tope”.
+Una manera en que el regulador puede generar la información requerida es a través del sistema “cap and trade”. En particular a cada banco se le concede permisos para emitir cierta cantidad de dinero, la cantidad agregada de permisos le permiten al regulador, como antes, colocar en cierto objetivo la creación de dinero en la economía. Por otra parte, si los permisos pueden ser comerciados entre los bancos, el precio P(M ) (por
+10 Cochrane (1999) utiliza esta teoría para estudiar la inflación de Estados Unidos de Norteamérica en la pos- segunda guerra mundial, en particular usa vectores autorregresivos para identificar si son lo choques de oferta o lo choques monetarios los que afectan el nivel de precios, encuentra que los choques de oferta sí afectan y cuando esto ocurre el gobierno vende deuda en recesiones.
+
+40
+
+unidad de creación de dinero permitida), que limpia el mercado, igualaría el valor sombra de la restricción M para los bancos.
+P(M )  d  1 d dM mRM dI
+Condicionado sobre el hecho de que el regulador conoce los otros parámetros del modelo, observando d , le permitirá inferir el valor de f '(I ) .
+dI Del hecho que el regulador quiere implementar M ** , le sirve hacer los permisos comerciables, y entonces puede variar el precio de esos permisos, variando la cantidad disponible de ellos. Esto es, el regulador ajusta la cantidad de permisos, buscando un punto fijo donde el precio P(M ) que limpia el mercado iguala el valor
+
+objetivo PT (M ) , el cual también depende de la cantidad de permisos. Para calcular
+
+este valor objetivo, recordemos que en zonas de alto diferencial de tasas cuando
+
+m  mmax , el óptimo social involucra:
+
+d   p g'' m
+
+dI
+
+g'2
+
+Lo cual implica colocar
+
+pT
+
+(M
+
+)
+
+
+
+1 mRM
+
+d dI
+
+
+
+1 mRM
+
+*  p
+
+g'' g'2
+
+m
+
+
+
+ p RM
+
+g'' g'2
+
+Usando la ecuación (12), podemos sustituir  p para obtener el siguiente resultado:
+
+  pT
+
+(M )
+
+
+
+  
+
+RB  RM RM
+
+
+
+(1 
+
+p)
+
+z
+
+ 
+
+
+
+I
+
+
+
+1  I
+
+
+
+g'' g'2 g'' g'2
+
+    
+
+(14)
+
+Lo anterior nos lleva a la siguiente proposición, en la cual a diferencia de Stein
+
+(2012) nosotros hacemos la demostración formal de ella.
+
+Proposición 9. Un regulador quien está imperfectamente informado sobre la naturaleza de las oportunidades de inversión, puede implementar el nivel deseado de M ** con un sistema de permisos comerciables para la creación de dinero. Esto involucra el ajuste del número de permisos tal que el precio P(M ) que limpia el mercado, sea igual al siguiente precio objetivo PT (M )
+
+41
+
+  pT
+
+(M )
+
+
+
+  
+
+RB  RM RM
+
+
+
+(1 
+
+ p) z 
+
+
+
+I
+
+1  I
+
+g'' g'2 g''
+
+   
+
+
+
+g'2 
+
+Demostración Empecemos mostrando que:
+
+P(M )  d  1 d dM mRM dI
+Recordemos que en t  0 , el beneficio esperado para t  2 viene dado por (5), es decir
+      pf (I )  (1 p)I  IRB  mI RB  RM  (1 p)zmIRM
+
+Obtenemos d usando el hecho que: mIRM  M  I  M 
+
+dM
+
+mRM
+
+  
+
+
+
+  
+
+pf
+
+ 
+
+M mRM
+
+  (1 
+
+p)
+
+M mRM
+
+M  mRM
+
+R
+
+B
+
+  
+
+
+
+m
+
+M mRM
+
+RB  RM
+
+ (1
+
+M p)zm mRM
+
+RM
+
+
+
+  d
+dM
+
+
+
+  
+
+pf
+
+ 
+
+M mRM
+
+  (1 
+
+p) M mRM
+
+
+
+M mRM
+
+R
+
+B
+
+  
+
+
+
+m
+
+M mRM
+
+RB  RM
+
+ (1  p)zm M RM  mRM
+
+Factorizando
+
+1 mRM
+
+
+
+    d
+dM
+
+
+
+ 
+
+pf
+
+
+
+' 
+
+M mRM
+
+ 
+
+
+
+(1 
+
+p)
+
+
+
+R
+
+B
+
+ 
+
+
+
+
+
+m RB  RM
+
+ (1  p)zmRM
+
+1 mRM
+
+
+
+Luego notemos que si obtenemos la siguiente derivada: d dI
+
+    d  pf '(I )  (1  p)  R B  m R B  RM  (1  p)zmRM
+dI
+
+Que es la expresión entre paréntesis de d entonces sustituyendo dM
+d  1 d  P(M ) dM mRM dI
+
+Lo que nos dice la última expresión es simplemente que el precio de un
+
+permiso (que limpia el mercado) que te deja crear una unidad de dinero debe ser igual al beneficio marginal de crearlo. O como se mencionó antes: el precio por unidad de
+
+dinero creada debe ser igual al valor sombra de la restricción M.
+
+El siguiente paso es obtener el precio objetivo del regulador. De (5) recordemos la solución del planeador social para I ** en la zona de alto diferencial de tasas.
+
+42
+
+   Pf '(I )  (1 p)  R B  m RB  RM  (1 p)zRM   p g'' m  g'2
+
+d dI
+
+
+
+ p
+
+g' ' g'2
+
+m
+
+
+
+Para el planeador social
+
+P(M )T
+
+
+
+d dM
+
+
+
+ p mRM
+
+g'' g'2
+
+Luego de (12) podemos despejar  p
+
+  
+
+p
+
+
+
+ I 
+
+RB  RM RM
+
+  (1  p)z
+
+
+1 I
+
+g'' g'2
+
+P(M )T  d   p  g'' 
+
+dM
+
+mRM g'2
+
+  P(M )T
+
+ 
+
+
+RB  RM RM
+
+
+
+(1 
+
+p)
+
+z
+
+ 
+
+
+
+I
+
+
+
+1  I
+
+
+
+g'' g'2 g'' g'2
+
+    
+
+Notemos que el regulador no necesita conocer f '(I ) en (14) basado en su conocimiento
+
+de M y otros parámetros observables del modelo, el regulador puede calcular P(M )T . Si el precio de mercado de los permisos P(M ) es más alto que P(M )T ,
+
+entonces el regulador incrementa M y viceversa. El óptimo social M ** es el valor de M donde el precio objetivo en (14) coincide con el precio de mercado.
+
+Ejemplo 8 Con el ejercicio base tenemos: Partiendo del equilibrio social, entonces M **  24.9936 , calculando P(M )T obtenemos: P(M )T  0.0550 . Ahora supongamos que hay un choque de productividad y  aumenta a   40 . Si el regulador no modifica el “tope”, el precio que limpia el mercado será P(M )  0.3551. Sin embargo, el nuevo precio revela información al regulador, ya que sabemos que cuando hay mejores oportunidades de inversión causadas por ejemplo, por el choque de productividad, los bancos se ven incentivados a invertir más y por consecuencia a crear más dinero,
+
+43
+lo que hace que el precio suba, como efectivamente pasó. Por lo tanto el regulador puede incrementar el número de permisos en el sistema, aumentando la cantidad privada en el sistema, llevándolo hasta el nuevo valor socialmente óptimo M **  58.9 y el nuevo precio de los permisos dado por P(M )T  0.0676 . Aquí es importante notar que el planeador social no sabe exactamente dónde es el nuevo óptimo social para la creación de dinero, pero sabe por el aumento del precio de los permisos, que hay mejores oportunidades de inversión, entonces incrementa el número de permisos hasta que P(M )  P(M )T .
+
+Proposición 10. Si la probabilidad de buen estado aumenta, el precio objetivo de los permisos aumenta.
+
+Demostración
+
+De (14) debemos obtener dP(M )T entonces: dp
+
+dP(M )T
+
+
+
+ zI
+
+g'' g'2
+
+notemos lo siguiente: z  0 ,   0 , I  0 , g'' 0 , entonces el
+
+dp
+
+1 I g''
+
+g'2
+
+numerador y el denominador son positivos, por lo tanto dP(M )T  0 dp
+
+Ejemplo 9 Con el ejercicio base sabemos: P(M )T  0.0550 Cuando la probabilidad aumenta a 0.90 P(M )T  0.0554
+
+La intuición de estos resultados es la siguiente: Cuando la probabilidad de tener un buen estado es alta, los bancos quieren invertir mucho, por lo que los permisos se comercian más; sin embargo, cuando la probabilidad cae, llega un momento donde el precio es negativo, esto lo podemos interpretar como que el regulador debe pagar a los
+
+44
+bancos para que ellos inviertan, ya que la probabilidad del buen estado es baja en el sentido que los bancos necesitan ser compensados por arriesgarse a invertir.
+Para entender mejor lo que sucede aquí, recordemos que el financiamiento de los bancos viene de deuda de largo y corto plazo. Si por ejemplo el precio de los permisos es -0.002 (como puede observarse en la figura 11) y el regulador no le paga a los bancos para que éstos emitan dinero, entonces observamos lo siguiente: El financiamiento con deuda de largo plazo no se ve afectado y por lo tanto es óptimo; sin embargo, el financiamiento con deuda de corto plazo sería menor al óptimo porque el banco no está siendo compensado por asumir el riesgo de crear dinero dada una probabilidad relativamente baja del buen estado en la economía, por lo tanto, los recursos que vienen del financiamiento de corto plazo son menores y en consecuencia la inversión es menor a la óptima, es decir, se pierden oportunidades de inversión y los prestamistas también se ven afectados porque ya no reciben utilidad derivada de los servicios monetarios del dinero privado como cuando éstos son óptimos.
+Sin embargo, vale la pena destacar otro ejemplo, el siguiente ejercicio es tomado y replicado de Stein (2012).
+Ejemplo 10 f (I )   log( I )  I ; g(K)   log( K) ; RB  1.04; RM  1.01;   3.5 ;   150 ;   1; W  140 y p  0.98 Para el cual el precio de los permisos en el mercado es: P(M )T  0.0056 .
+Ahora, mostramos en la figura 11 la forma en que varía este precio en un rango de 90% a 99% de probabilidad del buen estado.
+La figura 11 nos muestra que hay rangos en la probabilidad del buen estado para los cuales el precio de los permisos para la creación de dinero privado es negativo, esto se puede interpretar como el hecho de que el regulador tendría que pagar al banco para que éste invirtiera.
+
+45 Por otro lado, si hacemos la simulación numérica para el ejercicio base y variando la probabilidad del buen estado, observamos lo que sucede en la figura 12. La figura 12 nos muestra una inconsistencia en la variación del precio de los permisos para crear dinero privado, ya que no es intuitivo que si el ambiente de la economía para invertir es mejor, los precios de los permisos disminuyan, ya que los bancos desearán crear más dinero para poder invertir más.
+Figura 11: Variación de del precio objetivo ante movimientos en la probabilidad del buen estado.
+Figura 12: Variación del precio objetivo ante movimientos en la probabilidad del buen estado.
+
+46
+4. Conclusiones
+En la primera parte de la investigación se mostró algo de evidencia empírica de la existencia del sistema bancario sombra, y de su crecimiento. Pudimos observar que éste último ha crecido más que el sistema bancario tradicional. Dimos una breve descripción de los vehículos especiales y su relación con el sistema sombra. Además de mostrar esa evidencia para el caso de Estados Unidos de América también pudimos observar que México no es ajeno a este sistema a través de los reportos.
+Mostramos la forma en que varían la inversión y la creación de dinero privado cuando las condiciones económicas son buenas para invertir. Encontramos que ambas variables responden creciendo conforme la economía muestra un mejor ambiente económico.
+Pudimos observar que dependiendo de qué tan “mala” pueda resultar la economía en condiciones adversas para la inversión, el banco también responde eligiendo diferentes niveles de ella; entre menos “mala” sea la economía en esas condiciones adversas, la inversión aumentará.
+Cuando los hogares o prestamistas muestran que obtienen mayores beneficios de bonos de largo plazo, entonces los bancos aprovechan esta información y puede obtener un mayor financiamiento por parte de estos bonos y aumentar en general su inversión.
+Por parte de los hogares pudimos observar que ellos también se ven beneficiados cuando la economía muestra buenas condiciones para la inversión, por lo que aunque los bancos les piden más recursos para invertir, a los hogares también les conviene dicha inversión.
+Se mostró que bajo un esquema de permisos para la creación de dinero, el regulador puede controlar dicha variable.
+En cuanto a los permisos, también mostramos que estos aumentan conforme las oportunidades de inversión mejoran; sin embargo, el regulador debe estar al
+
+47
+pendiente de lo que sucede en la economía ya que el precio de mercado y el precio óptimo para él pueden ser diferentes, por lo que deberá intervenir a través del número de permisos en la economía.
+Por otro lado, observamos que puede haber ocasiones en las que el regulador sea el que tiene que pagar a los bancos para emitir dinero privado y poder invertir. Sin embargo las simulaciones numéricas también arrojaron que hay inconsistencia en la forma en que varían los precios, ya que vimos que aunque las condiciones para invertir mejoran y los permisos deberían aumentar su precio, pasa lo contrario, lo cual intuitivamente no es correcto.
+Finalmente el modelo de Stein (2012) es robusto casi en todas partes, como pudimos observar todas las variables responden como la intuición nos lo dice; tales como inversión, dinero privado y beneficios de los prestamistas. Sin embargo en la parte de permisos fue donde se encontró que el modelo puede llegar a fallar. Lo anterior es grave ya que podría verse engañado el regulador, en cuanto a si aumentar o disminuir el número de premisos en la economía; es decir, le revelaría información incorrecta al regulador; sin embargo, da pie a futuras investigaciones como por ejemplo modificar las formas funcionales de la inversión en las simulaciones.
+
+48
+5. Bibliografía
+Adrian, Tobias y Hyun, Shin. 2010. “The Changing Nature Of Financial Intermediation and Financial Crisis of 2007 - 2008.” Annual Review of Economics, 2, 603 - 618.
+Barnett-Hart, Anna Katherine. 2009. “The Story of the CDO Market Meltdown: An Empirical Analysis.” Working Paper. Harvard College
+Benmelech, Efraín y Nittai K. Bergman. 2008. “Collateral Pricing.” Journal of Financial Economics, 91, 339 - 360.
+Bernanke, Ben S. 2009. “The Crisis and the Policy Responce.” Discurso, At Stamp Lecture at The London School of Economics, London, England.
+Banco de México, “Bursatilizacion de Activos” http//www.banxico.org.mx/sistema−financiero/material−educativo/basico/fichas/actividad−fina nciera/%7BE34015C4−BD50− CA0D−B823−4D75ED1E675A%7D.pdf
+Banco de México, “Vehículos de Bursatilización en México” http://www.banxico.org.mx/sistema−financiero/material−educativo/basico/fichas/actividad−fina nciera/%7B15006F 33−707B− 0253− AE16−0561A37F0840%7D.pdf
+Banco Ixe. 2010. “Tutorial Reporto, Análisis de deuda privada.” http://www.ixe.com.mx/storage/TUTORIAL_REPORTO.pdf
+Campbell, John Y.; Stefano, Giglio y Parag, Pathak. 2011. “Forced Sales and House Prices”. American Economic Review, 101, 2108 - 2131.
+Case, Karl E. 2008. “The Central Role of House Prices in the Current Financial Crisis: How Will the Market Clear?” Brooking Papers on Economic Activity, 2, 161 - 194.
+Clarida, Richard; Galí Jordi y Gertler, Mark. 1999. “The Science of Monetary Policy: A New Keynesian Perspective.” Journal of Economic Literature, 37, 1661 -1707.
+Cochrane, John H. 1999. “A Frictionless View of U.S. Inflation” NBER Macro Annual, 13, 323 - 421.
+Diamond, Douglas W. y Dybvig, Philip H. 1983. “Bank Runs, Deposit Insurance and Liquidity.” The Journal of Political Economy, 91, 401 - 419.
+Duffie, Darrell. 2010. “Presidential Address: Asset Price Dynamics with Slow-Moving Capital.” The Journal of Finance, 65, 1237 - 1267.
+Galí, Jordi, y Gertler, Mark. 2007. “Macroeconomic Modeling for Monetary Policy Evaluation.” Journal of Economic Perspectives, 21, 25 - 45.
+Gorton, Gary. 2009. “The Subprime Panic.” Yale School of Managment y NBER, 15, 10 - 46.
+Gorton, Gary. 2010. “Slapped by the Invisible Hand the Panic of 2007.” Oxford University Press.
+Gorton, Gary, y Andrew, Metrick. 2010. “Securitized Banking and the Run on Repo.” Journal of Financial Economics, 104, 425 - 451.
+
+49
+Gorton, Gary, y George Pennachi. 1990. “Financial Intermediaries and Liquidity Creation”. Journal of Financial, 45, 49 - 72.
+Hart, Oliver y Moore, John. 1998. “Default and Renegotiation: A Dymanic Model of Debt.” Quartely Journal of Economics, 113, 1 - 41
+Ivashina, Victoria y Scharftein, David. 2008. “Bank Lending During the Financial Crisis of 2008.” Journal of Financial Economics, 97, 319 - 338.
+Main, Atif y Sufi, Amir. 2009. “The Consequences of Mortgage Credit Expansion: Evidence from de US Mortgage Default Crisis.” Quartely Journal of Economics, 124, 1449 - 1496.
+Mayer, Christopher; Pence, Karen y Sherlund, M. Shane. 2009. “The Rise in Mortgage Defaults.” Journal of Economic Perspective, 23, 27 - 50.
+Pozsar, Zoltan; Adrian, Tobias; Ashcraft, Adam y Boesky, Hayley. “Shadow Banking.” Federal Reserve Bank of New York Staff Reports, 458.
+Shleifer, Andrei y Vishny, Robert. 1992. “Liquidation Values and Debt Capacity: A Market Equilibrium Approach.”The Journal of Finance, 47, 1343 - 1366.
+Shleifer, Andrei y Vishny, Robert. 1992. “The Limits of Arbitrage.” Journal of Finance, 52, 35 - 55.
+Shleifer, Andrei y Vishny, Robert. 2010. “Unstable Banking.” Journal of Financial Economics, 97, 306 - 318.
+Shleifer, Andrei y Vishny, Robert. 2011. “Fire Sales in Finance and Macroeconomics.” Journal of Economic Perspectives, 25, 29 - 48.
+Stein, Jeremy C. 2012. “Monetary Policy as Financial-Stability Regulation”. The Quartely Journal of Economics, 127, 57-95
+The Economist. Feb 18th 2012. “The Dodd-Frank act: Too big not to fail.” http://www.economist.com/node/21547784
+
+Índice de figuras
+1. Proceso de bursatilización. Fuente: Gorton (2010) . . . . . . . . . . . . . . . . . . . 6 2. Margen promedio sobre deuda estructurada en el mercado repo
+Fuente: Gorton 2010. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 3. Deuda del sistema sombra vs sistema tradicional Fuente: Federal Reserve
+Bank of New York Staff Reports No.485. . . . . . . . . . . . . . . . . . . . . . . . 10 4. Reportos en México Fuente: Banco de México. . . . . . . . . . . . . . . . . . . . . 11 5. Variación de la inversión ante movimientos en la probabilidad del buen estado. . . . 26 6. Variación de la creación de dinero privado ante movimientos en la probabilidad
+del buen estado. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 7. Variación de la inversión ante movimientos en el parámetro λ . . . . . . . . . . 28 8. Variación de la inversión ante movimientos en β . . . . . . . . . . . . . . . . . 29 9. Variación de la utilidad ante movimientos en la probabilidad del buen estado. . . . . 34 10. Variación de la utilidad ante movimientos en el parámetro del dinero privado. . . . . 36 11. Variación de del precio objetivo ante movimientos en la probabilidad del buen
+estado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45 12. Variación del precio objetivo ante movimientos en la probabilidad del buen
+estado. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+
+
