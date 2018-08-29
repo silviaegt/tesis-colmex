@@ -1,7 +1,9 @@
-# Tesis de El Colegio de México
+# Tesis de El Colegio de México (1946-2016)
 
 
-Theses from the El Colegio de México (1946-2010) for research and text mining purposes only. 
+Theses from El Colegio de México (1946-2016) for research and text mining purposes only. 
+
+OCRed and released by the [Daniel Cosío Villegas Library](https://biblioteca.colmex.mx/). 
 
 Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
